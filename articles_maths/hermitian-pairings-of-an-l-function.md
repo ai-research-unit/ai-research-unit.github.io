@@ -59,7 +59,7 @@ with the root number $\epsilon$, so the involution $s\mapsto1-\bar s$ acts on th
 
 ## Worked Examples
 
-**Example (the zeta pairing).** For $f=g=\mathbf 1$ the coefficient pairing at $\sigma>1$ is $\varkappa^{\mathrm{crd}}$ and the completed pairing is $\Lambda(\varkappa^{\mathrm{crd}}\times\varkappa^{\mathrm{crd}},s)$, whose pole structure gives the classical Rankin–Selberg identity; the pairing diverges at $\sigma=1$.
+**Example (the zeta pairing).** For $f=g=\mathbf 1$ the coefficient pairing at $\sigma>1$ is $\zeta$ and the completed pairing is $\Lambda(\zeta\times\zeta,s)$, whose pole structure gives the classical Rankin–Selberg identity; the pairing diverges at $\sigma=1$.
 
 **Example (a Dirichlet character).** For $f=\chi$ and $g=\chi$ the coefficient pairing at $\sigma=1$ is the squared norm of the character, and the completed pairing is the product $L(\chi,s)L(\bar\chi,s)$, whose value at the centre is the central value of a self-dual product.
 

@@ -113,7 +113,7 @@ $$
 \zeta_\varphi(s)=\prod_{\gamma}\bigl(1-\exp(-s\ell(\gamma))\bigr)^{-1},
 $$
 
-the product being over the primitive closed geodesics, converges for $\operatorname{Re}s>h^{\mathrm{tpl}}$ and extends meromorphically to the plane, with the poles and the zeros determined by the spectrum of the flow's transfer operator; for a compact hyperbolic surface it is the quotient $\varkappa^{\mathrm{crd}}_\varphi(s)=Z(s+1)/Z(s)$ of two shifts of the **Selberg zeta function** $Z$, the telescoping $\prod_{k\ge0}(1-\exp(-(s+1+k)\ell))/\prod_{k\ge0}(1-\exp(-(s+k)\ell))=(1-\exp(-s\ell))^{-1}$ turning the double product into the single one; the zeros and the poles of $Z$ are located at the spectral parameters of the Laplacian, and its functional equation reflects the symmetry $s\mapsto1-s$. The trace formula that relates the length spectrum to the spectrum of the Laplacian is the **Selberg trace formula**, and it is the arithmetic input of the counting of the closed geodesics; the spectral theory of the Laplacian and the trace formulae belong to the analysis of the operators of *Unbounded Operators and Spectral Measures* and to the analytic number theory of the corpus.
+the product being over the primitive closed geodesics, converges for $\operatorname{Re}s>h^{\mathrm{tpl}}$ and extends meromorphically to the plane, with the poles and the zeros determined by the spectrum of the flow's transfer operator; for a compact hyperbolic surface it is the quotient $\zeta_\varphi(s)=Z(s+1)/Z(s)$ of two shifts of the **Selberg zeta function** $Z$, the telescoping $\prod_{k\ge0}(1-\exp(-(s+1+k)\ell))/\prod_{k\ge0}(1-\exp(-(s+k)\ell))=(1-\exp(-s\ell))^{-1}$ turning the double product into the single one; the zeros and the poles of $Z$ are located at the spectral parameters of the Laplacian, and its functional equation reflects the symmetry $s\mapsto1-s$. The trace formula that relates the length spectrum to the spectrum of the Laplacian is the **Selberg trace formula**, and it is the arithmetic input of the counting of the closed geodesics; the spectral theory of the Laplacian and the trace formulae belong to the analysis of the operators of *Unbounded Operators and Spectral Measures* and to the analytic number theory of the corpus.
 
 **Example (the modular surface).** For the noncompact modular surface $\mathbb{H}/SL(2,\mathbb{Z})$ the closed geodesics correspond to the periodic continued fractions, their lengths are determined by the trace of the corresponding hyperbolic element through $\cosh\tfrac{\ell}{2}=\tfrac12|\operatorname{tr}\gamma|$, the asymptotic form $\ell\sim2\log|\operatorname{tr}\gamma|$ holding as the trace grows, and the counting of the closed geodesics of length at most $T$ has the same main term $e^T/T$ with a logarithmic correction coming from the cusp; the coding of the flow by the continued fractions, the Gauss map as return map and the Lévy constant as mean return time are the subject of *Dynamics and Number Theory*.
 
@@ -158,7 +158,7 @@ The closed geodesics are the periodic orbits of the flow; they satisfy the **pri
 | $\lambda_i$ | Lyapunov exponents of the flow |
 | $h^{\mathrm{tpl}}$, $h_\mu$ | topological and measure-theoretic entropy |
 | $\ell(\gamma)$, $\pi(T)$ | length of a closed geodesic, counting function |
-| $\varkappa^{\mathrm{crd}}_\varphi$, $Z$ | Ruelle and Selberg zeta functions |
+| $\zeta_\varphi$, $Z$ | Ruelle and Selberg zeta functions |
 | $\Gamma\backslash G/K$ | locally symmetric space of rank one |
 
 ## Further Reading

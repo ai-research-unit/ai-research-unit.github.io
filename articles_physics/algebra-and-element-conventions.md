@@ -450,31 +450,31 @@ The two words are the left and the right polar decompositions of the same rotor.
 
 ### The Freed Letter Zeta
 
-**$\zeta$ is the zeta function and nothing else.** Riemann, Hurwitz, Dedekind and the spectral zeta keep the bare letter: $\zeta(s)$, $\zeta(3)$, $\zeta_3(s)$, $\zeta_{\mathcal J}(s)$. Every other role the letter once carried has moved, and the census fell from 666 tokens to 52, all of them zeta functions.
+**$\zeta$ is the zeta function and nothing else.** Riemann, Hurwitz, Dedekind and the spectral zeta keep the bare letter: $\zeta(s)$, $\zeta(3)$, $\zeta_3(s)$, $\zeta_{\mathcal J}(s)$. Every other role the letter once carried has moved. The table below names each retired form in words, since the letter is no longer available to write it with, and the census fell from 666 tokens to 52, all of them the function.
 
-| Role | Was | Now | Tokens | Articles |
+| Role | What was written | Now | Tokens | Articles |
 |---|---|---|---|---|
-| Grassmann generator, coherent-state label | $\zeta$, $\lvert\zeta\rangle$, $d\zeta^*d\zeta$ | $\varkappa$, $\lvert\varkappa\rangle$, $d\varkappa^*d\varkappa$ | 315 | 5 |
-| Stereographic ratio, spinor ratio | $\zeta$ as the ratio of two spinor components | $\varkappa^{\mathrm{stg}}$ | 62 | 3 |
-| Order parameter of a spin-1 condensate | $\vec\zeta$ | $\vec\varkappa^{\mathrm{ord}}$ | 65 | 1 |
-| Coordinates left by a canonical transform | $\zeta=(\zeta_1,\dots,\zeta_{n-s})$ | $\varkappa^{\mathrm{crd}}$ | 5 | 1 |
-| Idempotent label | $\tilde\Pi_\zeta$ | $\tilde\Pi_\varkappa$ | 9 | 1 |
-| Unit complex number on the polar word | $\zeta$, $\lvert\zeta\rvert=1$ | $\varkappa^{\mathrm{phs}}$ | 34 | 4 |
-| Sign vector of the indefinite form | $\zeta=(-1,+1,+1,+1)$, $\zeta_r$ | $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, $\sigma^{\mathrm{met}}_r$ | 62 | 6 |
-| Charge, Coulomb family | $G_\zeta=\zeta\bar w/(z+r)$, $\zeta=4ϙ$ | $G_{\mathrm{ϙ}}=\mathrm{ϙ}\,\bar w/(z+r)$ | 17 | 2 |
-| Displacement of the singularity | $\zeta=-i\varrho$ | $\upsilon=-i\varrho$ | 5 | 1 |
-| Quadratic Zeeman coefficient | $\zeta\propto B^2$ | $q\propto B^2$ | 18 | 1 |
-| Integration variable | $\int G_2(x,\zeta,z_0)\,d\zeta$ | $\int G_2(x,\varrho,z_0)\,d\varrho$ | 2 | 1 |
-| Root of unity, cyclotomic field, idempotent eigenvalue | $\zeta_n$, $\zeta_k$, $\mathbb{Q}(\zeta_n)$ | $\omega_n$, $\omega_k$, $\mathbb{Q}(\omega_n)$ | 1652 | 115 |
-| Point of integration, local coordinate in $\mathbb{C}^m$ | $\zeta\in\mathbb{C}^m$, $\int F(\zeta)\,d\zeta$ | $\varkappa^{\mathrm{crd}}$ | 603 | 54 |
-| Grassmann generator in the mathematics corpus | $\zeta_1,\dots,\zeta_n$ | $\varkappa_1,\dots,\varkappa_n$ | 245 | 3 |
-| Unit complex coefficient | $Q_k=\zeta r_k$ | $\varkappa^{\mathrm{phs}}$ | 6 | 2 |
+| Grassmann generator, coherent-state label | the bare letter, its ket, and the Berezin measure | $\varkappa$, $\lvert\varkappa\rangle$, $d\varkappa^*d\varkappa$ | 315 | 5 |
+| Stereographic ratio, spinor ratio | the bare letter as the ratio of two spinor components | $\varkappa^{\mathrm{stg}}$ | 62 | 3 |
+| Order parameter of a spin-1 condensate | the letter under the vector arrow | $\vec\varkappa^{\mathrm{ord}}$ | 65 | 1 |
+| Coordinates left by a canonical transform | the letter as an $n$-tuple with numeric subscripts | $\varkappa^{\mathrm{crd}}$ | 5 | 1 |
+| Idempotent label | the letter as a subscript on the idempotent | $\tilde\Pi_\varkappa$ | 9 | 1 |
+| Unit complex number on the polar word | the bare letter with modulus one | $\varkappa^{\mathrm{phs}}$ | 34 | 4 |
+| Sign vector of the indefinite form | the letter as a four-tuple of signs, and with a numeric subscript | $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, $\sigma^{\mathrm{met}}_r$ | 62 | 6 |
+| Charge, Coulomb family | the letter inside the Green’s function, and as the charge itself | $G_{\mathrm{ϙ}}=\mathrm{ϙ}\,\bar w/(z+r)$ | 17 | 2 |
+| Displacement of the singularity | the letter set equal to the negative imaginary displacement | $\upsilon=-i\varrho$ | 5 | 1 |
+| Quadratic Zeeman coefficient | the letter in the proportionality to the squared field | $q\propto B^2$ | 18 | 1 |
+| Integration variable | the letter as the second argument and as the differential | $\int G_2(x,\varrho,z_0)\,d\varrho$ | 2 | 1 |
+| Root of unity, cyclotomic field, idempotent eigenvalue | the letter with numeric subscripts, and inside the field bracket | $\omega_n$, $\omega_k$, $\mathbb{Q}(\omega_n)$ | 1652 | 115 |
+| Point of integration, local coordinate in $\mathbb{C}^m$ | the letter as a point of the complex space and as the differential | $\varkappa^{\mathrm{crd}}$ | 603 | 54 |
+| Grassmann generator in the mathematics corpus | the letter with numeric subscripts, $n$ of them | $\varkappa_1,\dots,\varkappa_n$ | 245 | 3 |
+| Unit complex coefficient | the letter as the coefficient of a real factor | $\varkappa^{\mathrm{phs}}$ | 6 | 2 |
 
 **The mark goes after the subscript.** $\varkappa^{\mathrm{stg}}_k$, not $\varkappa_k^{\mathrm{stg}}$, where a subscript is needed at all.
 
-**The mathematics corpus takes $\omega$ for roots of unity.** $\omega=e^{2\pi i/3}$ was already the cube root of unity in *The Cube Roots of Unity* and in the spectral articles, so the letter is not new there: the conversion unifies $\zeta$ and $\omega$ where both were written for the same root. $\mathbb{Q}(\omega_n)$, $\mathbb{Z}[\omega_n]$, $\omega^k$ and $\omega_k=\omega^{k-1}$ all follow.
+**The mathematics corpus takes $\omega$ for roots of unity.** $\omega=e^{2\pi i/3}$ was already the cube root of unity in *The Cube Roots of Unity* and in the spectral articles, so the letter is not new there: the conversion unifies the retired glyph and $\omega$ where both were written for the same root. $\mathbb{Q}(\omega_n)$, $\mathbb{Z}[\omega_n]$, $\omega^k$ and $\omega_k=\omega^{k-1}$ all follow.
 
-**$\varkappa^{\mathrm{crd}}$ is the point.** Every $F(\zeta)$ of the Bochner–Martinelli, Cauchy and Cauchy–Riemann articles is now $F(\varkappa^{\mathrm{crd}})$, and every $d\zeta$ is $d\varkappa^{\mathrm{crd}}$. The caret says coordinate, which is what the census found.
+**$\varkappa^{\mathrm{crd}}$ is the point.** Every function of the point in the Bochner–Martinelli, Cauchy and Cauchy–Riemann articles is now a function of $\varkappa^{\mathrm{crd}}$, and every differential of it is $d\varkappa^{\mathrm{crd}}$. The caret says coordinate, which is what the census found.
 
 **The freed glyph is $\varkappa$.** It carried one object, the nonzero central constant of the relative phase, and that object is now $\varsigma$. The letter is written with a caret in every role except the Grassmann generator, which is the bare glyph because it is the role the letter holds in the mathematics corpus too.
 

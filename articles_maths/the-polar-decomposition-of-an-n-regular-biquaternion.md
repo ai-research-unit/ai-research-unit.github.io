@@ -19,22 +19,22 @@ $$
 and then each of the two is split:
 
 $$
-\Rho=r\,\varkappa^{\mathrm{crd}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+\Rho=r\,\varkappa^{\mathrm{phs}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-The four factors are the **scale** $r>0$, the **central phase** $\varkappa^{\mathrm{crd}}$ of modulus one, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
+The four factors are the **scale** $r>0$, the **central phase** $\varkappa^{\mathrm{phs}}$ of modulus one, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
 
 $$
-\boxed{\;\tilde Q=r\,\varkappa^{\mathrm{crd}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
+\boxed{\;\tilde Q=r\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
 
 The two levels are collected in the table.
 
 | reading | form | factors | real dimensions |
 |---|---|---|---|
-| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(r\tilde U_{\mathrm b})(\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
-| modulus–unit | $\tilde Q=\Rho\tilde U=(r\varkappa^{\mathrm{crd}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
-| word | $\tilde Q=r\varkappa^{\mathrm{crd}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
+| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(r\tilde U_{\mathrm b})(\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
+| modulus–unit | $\tilde Q=\Rho\tilde U=(r\varkappa^{\mathrm{phs}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
+| word | $\tilde Q=r\varkappa^{\mathrm{phs}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
 The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of units (§*The Group of Units*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
 
@@ -83,13 +83,13 @@ and the other root $-\Rho$ lies outside it. On $\mathcal H$ the root is a functi
 **The scale and the phase.** The polar coordinates of the modulus on $\mathcal H$ are
 
 $$
-r=\lvert\Rho\rvert=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad \varkappa^{\mathrm{crd}}=\frac{\Rho}{\lvert\Rho\rvert},\qquad \lvert\varkappa^{\mathrm{crd}}\rvert=1 .
+r=\lvert\Rho\rvert=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad \varkappa^{\mathrm{phs}}=\frac{\Rho}{\lvert\Rho\rvert},\qquad \lvert\varkappa^{\mathrm{phs}}\rvert=1 .
 $$
 
 The phase lies in the half of the unit circle cut by the branch,
 
 $$
-\varkappa^{\mathrm{crd}}\in\{\varkappa^{\mathrm{crd}}\in\mathbb C:\lvert\varkappa^{\mathrm{crd}}\rvert=1,\ \operatorname{Re}\varkappa^{\mathrm{crd}}>0\}\cup\{i\},
+\varkappa^{\mathrm{phs}}\in\{\varkappa^{\mathrm{phs}}\in\mathbb C:\lvert\varkappa^{\mathrm{phs}}\rvert=1,\ \operatorname{Re}\varkappa^{\mathrm{phs}}>0\}\cup\{i\},
 $$
 
 it takes the value $1$ on the positive real axis and $i$ on the positive imaginary axis, and it never takes the values $-1$ or $-i$.
@@ -141,13 +141,13 @@ The two factors of the previous section are each the product of two.
 The modulus splits into the scale and the phase,
 
 $$
-\Rho=r\,\varkappa^{\mathrm{crd}},\qquad r>0,\qquad \lvert\varkappa^{\mathrm{crd}}\rvert=1 .
+\Rho=r\,\varkappa^{\mathrm{phs}},\qquad r>0,\qquad \lvert\varkappa^{\mathrm{phs}}\rvert=1 .
 $$
 
 The two are central and commute with every element. They carry the norm between them,
 
 $$
-r^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert,\qquad {\varkappa^{\mathrm{crd}}}^{2}=\frac{\langle\tilde Q\rangle_{\natural}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
+r^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert,\qquad {\varkappa^{\mathrm{phs}}}^{2}=\frac{\langle\tilde Q\rangle_{\natural}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
 $$
 
 so the scale is the modulus of the norm and the phase is its unimodular direction, read through the branch.
@@ -211,7 +211,7 @@ Both conditions are needed in the reality argument: unitarity alone does not for
 Combining the two splits,
 
 $$
-\boxed{\;\tilde Q=r\,\varkappa^{\mathrm{crd}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
+\boxed{\;\tilde Q=r\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
 
 with the four factors of the table.
@@ -219,7 +219,7 @@ with the four factors of the table.
 | factor | value | defining equation | real dimension | type |
 |---|---|---|---|---|
 | $r$ | scale | $r=\lvert\Rho\rvert$, $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ | $1$ | positive real, central |
-| $\varkappa^{\mathrm{crd}}$ | central phase | $\varkappa^{\mathrm{crd}}=\Rho/r$ | $1$ | unit complex scalar, central |
+| $\varkappa^{\mathrm{phs}}$ | central phase | $\varkappa^{\mathrm{phs}}=\Rho/r$ | $1$ | unit complex scalar, central |
 | $\tilde U_{\mathrm b}$ | boost | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$ | $3$ | Hermitian positive definite, norm one |
 | $\tilde u_{\mathrm r}$ | rotor | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | $3$ | unit real quaternion, $SU(2)$ |
 
@@ -228,14 +228,14 @@ The four dimensions add to eight, $8=1+1+3+3$, the real dimension of the algebra
 **The two readings.** The four factors regroup into the Cartan pair and into the modulus–unit pair:
 
 $$
-\boxed{\;\tilde Q_H=r\,\tilde U_{\mathrm b},\qquad \tilde Q_0=\varkappa^{\mathrm{crd}}\,\tilde u_{\mathrm r},\qquad \Rho=r\varkappa^{\mathrm{crd}},\qquad \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.\;}
+\boxed{\;\tilde Q_H=r\,\tilde U_{\mathrm b},\qquad \tilde Q_0=\varkappa^{\mathrm{phs}}\,\tilde u_{\mathrm r},\qquad \Rho=r\varkappa^{\mathrm{phs}},\qquad \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.\;}
 $$
 
-Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $\varkappa^{\mathrm{crd}}$ and $\tilde u_{\mathrm r}$ are $*$-unitary, so the Hermitian square root is $r\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the $*$-unitary factor the phase and the rotor. The first is Hermitian positive definite, the second $*$-unitary, and the two are the Cartan Hermitian pair of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
+Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $\varkappa^{\mathrm{phs}}$ and $\tilde u_{\mathrm r}$ are $*$-unitary, so the Hermitian square root is $r\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the $*$-unitary factor the phase and the rotor. The first is Hermitian positive definite, the second $*$-unitary, and the two are the Cartan Hermitian pair of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
 
 ### The branch cut
 
-The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\varkappa^{\mathrm{crd}}$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
+The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\varkappa^{\mathrm{phs}}$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
 
 ## The Group of Units
 
@@ -250,7 +250,7 @@ is a bijection: it is injective by the uniqueness theorem, and it is surjective 
 The map is not a group homomorphism. The scale is multiplicative, and the phase is multiplicative only up to a sign,
 
 $$
-r(\tilde Q_1\tilde Q_2)=r(\tilde Q_1)r(\tilde Q_2),\qquad \varkappa^{\mathrm{crd}}(\tilde Q_1\tilde Q_2)=\varepsilon\,\varkappa^{\mathrm{crd}}\varkappa^{\mathrm{crd}},\qquad \varepsilon=\pm1,
+r(\tilde Q_1\tilde Q_2)=r(\tilde Q_1)r(\tilde Q_2),\qquad \varkappa^{\mathrm{phs}}(\tilde Q_1\tilde Q_2)=\varepsilon\,\varkappa^{\mathrm{phs}}\varkappa^{\mathrm{phs}},\qquad \varepsilon=\pm1,
 $$
 
 with $\varepsilon=-1$ exactly when the product $\Rho_1\Rho_2$ leaves the principal half-plane. The sign is central, so it can be absorbed by the phase or by the rotor. The factors multiply, but the parameters of the boost and of the rotor do not add: after the multiplication the middle product $\tilde u_{\mathrm r,1}\tilde U_{\mathrm b,2}$ has to be split again.
@@ -258,10 +258,10 @@ with $\varepsilon=-1$ exactly when the product $\Rho_1\Rho_2$ leaves the princip
 **Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the $*$-unitary group $U(2)$, the set of words with $r=1$ and $\tilde U_{\mathrm b}=e_t$,
 
 $$
-U(2)=\{\varkappa^{\mathrm{crd}}\,\tilde u_{\mathrm r}:\lvert\varkappa^{\mathrm{crd}}\rvert=1,\ \tilde u_{\mathrm r}\in SU(2)\}.
+U(2)=\{\varkappa^{\mathrm{phs}}\,\tilde u_{\mathrm r}:\lvert\varkappa^{\mathrm{phs}}\rvert=1,\ \tilde u_{\mathrm r}\in SU(2)\}.
 $$
 
-*Proof.* The compact part of the word is the phase times the rotor, and both are $*$-unitary, so their product is $*$-unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is $*$-unitary, then $\det V$ is a unit complex number; choose $\varkappa^{\mathrm{crd}}$ in the branch with ${\varkappa^{\mathrm{crd}}}^{2}=\det V$, and $K={\varkappa^{\mathrm{crd}}}^{-1}V$ is $*$-unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal.
+*Proof.* The compact part of the word is the phase times the rotor, and both are $*$-unitary, so their product is $*$-unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is $*$-unitary, then $\det V$ is a unit complex number; choose $\varkappa^{\mathrm{phs}}$ in the branch with ${\varkappa^{\mathrm{phs}}}^{2}=\det V$, and $K={\varkappa^{\mathrm{phs}}}^{-1}V$ is $*$-unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal.
 
 The group retracts onto $U(2)$ by shrinking the scale to one and pushing the boost to $e_t$ along the Hermitian positive elements of norm one. In particular $\mathbb B^{\times}$ is connected, and its fundamental group is that of $U(2)$, namely $\mathbb Z$, generated by the phase loop around the cone (*The Biquaternion Unit Group as a Topological Group*). The rotor contributes the simply connected factor $SU(2)=S^{3}$, so the fundamental group is carried by the phase alone.
 
@@ -289,7 +289,7 @@ $$
 \tilde U_{\mathrm b}=a\,e_t+i\vec w,\qquad a\in\mathbb R,\quad \vec w\in\mathbb R^{3},\qquad a^{2}-\lvert\vec w\rvert^{2}=1 .
 $$
 
-The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is $*$-unitary, that is, on the elements $r\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
+The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is $*$-unitary, that is, on the elements $r\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
 
 This is the precise sense in which the biquaternion case is the complexification of the quaternion one. The scale and the rotor are the quaternion polar decomposition; the complex scalar adds the phase, one compact direction, and the second half adds the boost, three non-compact ones.
 
@@ -300,7 +300,7 @@ The four factors can be bracketed in three ways. Each bracketing is a **pairing*
 ### The quaternion pairing
 
 $$
-\tilde Q=\bigl(r\tilde u_{\mathrm r}\bigr)\bigl(\varkappa^{\mathrm{crd}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr).
+\tilde Q=\bigl(r\tilde u_{\mathrm r}\bigr)\bigl(\varkappa^{\mathrm{phs}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr).
 $$
 
 The first factor is the real quaternion $r\tilde u_{\mathrm r}$: a positive scale times a unit real quaternion. The second is the phase times the boost carried into the rotor frame. The pairing is partial: its construction divides by the part of $\tilde Q$ whose four coefficients are real, so it is available only where that part is nonzero.
@@ -308,7 +308,7 @@ The first factor is the real quaternion $r\tilde u_{\mathrm r}$: a positive scal
 ### The Hamilton root pairing
 
 $$
-\tilde Q=(r\varkappa^{\mathrm{crd}})\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr)=\Rho\,\tilde U .
+\tilde Q=(r\varkappa^{\mathrm{phs}})\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr)=\Rho\,\tilde U .
 $$
 
 The first factor is the complex modulus. The second is the unit factor, read on the root of $-e_t$ parallel to the vector part. With $\tilde Q=Q_te_t+\vec Q$, $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ a chosen square root of $B^{2}$,
@@ -322,7 +322,7 @@ The pairing is partial: the normalisation divides by $B$, so the vector part mus
 ### The Cartan Hermitian pairing
 
 $$
-\tilde Q=\bigl(r\tilde U_{\mathrm b}\bigr)\bigl(\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
+\tilde Q=\bigl(r\tilde U_{\mathrm b}\bigr)\bigl(\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
 $$
 
 The first factor is Hermitian positive definite, the second $*$-unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
@@ -331,9 +331,9 @@ The three pairings are collected in the table.
 
 | pairing | first factor | second factor | available when |
 |---|---|---|---|
-| quaternion | $r\tilde u_{\mathrm r}$ | $\varkappa^{\mathrm{crd}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
+| quaternion | $r\tilde u_{\mathrm r}$ | $\varkappa^{\mathrm{phs}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
 | Hamilton root | $\Rho$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
-| Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
+| Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 
 The two partial domains are not nested, and the Cartan domain contains both. The elements of the $\natural$-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
 
@@ -356,21 +356,21 @@ and the norm-one group is the special linear group.
 The word becomes
 
 $$
-M=r\,\varkappa^{\mathrm{crd}}\,M_{\mathrm b}\,M_{\mathrm r},\qquad M_{\mathrm b}=M_{\mathrm b}^{\dagger},\quad M_{\mathrm b}>0,\quad \det M_{\mathrm b}=1,\quad M_{\mathrm r}\in SU(2),
+M=r\,\varkappa^{\mathrm{phs}}\,M_{\mathrm b}\,M_{\mathrm r},\qquad M_{\mathrm b}=M_{\mathrm b}^{\dagger},\quad M_{\mathrm b}>0,\quad \det M_{\mathrm b}=1,\quad M_{\mathrm r}\in SU(2),
 $$
 
 and the matrix polar decomposition groups it into two:
 
 $$
-M=P\,V,\qquad P=(MM^{\dagger})^{1/2}=r\,M_{\mathrm b},\qquad V=\varkappa^{\mathrm{crd}}\,M_{\mathrm r}.
+M=P\,V,\qquad P=(MM^{\dagger})^{1/2}=r\,M_{\mathrm b},\qquad V=\varkappa^{\mathrm{phs}}\,M_{\mathrm r}.
 $$
 
-The positive factor is the scale times the boost, of determinant $r^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant ${\varkappa^{\mathrm{crd}}}^{2}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
+The positive factor is the scale times the boost, of determinant $r^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant ${\varkappa^{\mathrm{phs}}}^{2}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
 
 | factor | matrix | determinant | action |
 |---|---|---|---|
 | scale | $rI$, $r>0$ | $r^{2}$ | dilation of ratio $r$ |
-| central phase | $\varkappa^{\mathrm{crd}} I$, $\lvert\varkappa^{\mathrm{crd}}\rvert=1$ | ${\varkappa^{\mathrm{crd}}}^{2}$ | central multiplication |
+| central phase | $\varkappa^{\mathrm{phs}} I$, $\lvert\varkappa^{\mathrm{phs}}\rvert=1$ | ${\varkappa^{\mathrm{phs}}}^{2}$ | central multiplication |
 | boost | $M_{\mathrm b}$, Hermitian positive | $1$ | congruence $X\mapsto M_{\mathrm b}XM_{\mathrm b}^{\dagger}$ |
 | rotor | $M_{\mathrm r}\in SU(2)$ | $1$ | conjugation $X\mapsto M_{\mathrm r}XM_{\mathrm r}^{-1}$ |
 
@@ -397,7 +397,7 @@ A **spinor** is a vector of the module, not the operator and not the rotor. The 
 A character of the scaling group is
 
 $$
-\chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=r\varkappa^{\mathrm{crd}},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
+\chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=r\varkappa^{\mathrm{phs}},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
 $$
 
 the last condition making the character single-valued on $\mathbb{C}^{\times}$. The irreducible smooth finite-dimensional modules of the group of units are
@@ -431,7 +431,7 @@ The regular modules themselves are *The Category of Modules*; the sandwich that 
 
 **Theorem.** Every $\natural$-regular biquaternion $\tilde Q$ has exactly one modulus–unit decomposition with modulus in $\mathcal H$, and exactly one four-factor word with that modulus.
 
-*Proof (existence).* Let $\Rho$ be the principal square root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$, and put $\tilde U=\tilde Q/\Rho$. Then $\langle\tilde U\rangle_{\natural}=1$, so $\tilde U$ is invertible and the boost and rotor of §*The Four Factors* are defined. With $r=\lvert\Rho\rvert$ and $\varkappa^{\mathrm{crd}}=\Rho/r$ the word follows by multiplication.
+*Proof (existence).* Let $\Rho$ be the principal square root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$, and put $\tilde U=\tilde Q/\Rho$. Then $\langle\tilde U\rangle_{\natural}=1$, so $\tilde U$ is invertible and the boost and rotor of §*The Four Factors* are defined. With $r=\lvert\Rho\rvert$ and $\varkappa^{\mathrm{phs}}=\Rho/r$ the word follows by multiplication.
 
 *Proof (uniqueness).* Suppose $\tilde Q=\Rho\tilde U=\Rho'\tilde U'$ with $\Rho,\Rho'\in\mathcal H$ and $\langle\tilde U\rangle_{\natural}=\langle\tilde U'\rangle_{\natural}=1$. Taking norms gives $\Rho^{2}=\Rho'^{2}$, so $\Rho'=\pm\Rho$; both lie in $\mathcal H$, which contains no pair of opposite points, so $\Rho'=\Rho$. Dividing, $\tilde U'=\tilde U$. The polar decomposition of $\tilde U$ is unique: $\tilde U\tilde U^{*}$ has exactly one Hermitian positive square root, hence $\tilde U_{\mathrm b}$ is unique, and then $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unique.
 
@@ -447,7 +447,7 @@ The four factors are computed in five steps.
 
 2. **The modulus.** Compute $\Rho$ from the branch formula of §*The Two Factors*. The result satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ and lies in $\mathcal H$.
 
-3. **The scale and the phase.** Put $r=\lvert\Rho\rvert$ and $\varkappa^{\mathrm{crd}}=\Rho/r$.
+3. **The scale and the phase.** Put $r=\lvert\Rho\rvert$ and $\varkappa^{\mathrm{phs}}=\Rho/r$.
 
 4. **The unit factor.** Put $\tilde U=\tilde Q/\Rho$ and check $\langle\tilde U\rangle_{\natural}=1$.
 
@@ -463,7 +463,7 @@ The four factors are computed in five steps.
     $$
     \tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*},\qquad
     \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t,\qquad
-    r\,\varkappa^{\mathrm{crd}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}=\tilde Q .
+    r\,\varkappa^{\mathrm{phs}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}=\tilde Q .
     $$
 
 The five steps use one square root of a complex number and one of a real number, and no spectral decomposition.
@@ -485,7 +485,7 @@ $$
 so $\lvert N\rvert=2$, $a=0$, $b=2$, and the principal root is $\Rho=1+i$. The scale and the phase are
 
 $$
-r=\sqrt2,\qquad \varkappa^{\mathrm{crd}}=\frac{1+i}{\sqrt2}.
+r=\sqrt2,\qquad \varkappa^{\mathrm{phs}}=\frac{1+i}{\sqrt2}.
 $$
 
 The unit factor is
@@ -512,11 +512,11 @@ The four factors are collected in the table.
 | factor | value | quaternionic norm |
 |---|---|---|
 | $r$ | $\sqrt2$ | $r^{2}=2$ |
-| $\varkappa^{\mathrm{crd}}$ | $(1+i)/\sqrt2$ | ${\varkappa^{\mathrm{crd}}}^{2}=i$ |
+| $\varkappa^{\mathrm{phs}}$ | $(1+i)/\sqrt2$ | ${\varkappa^{\mathrm{phs}}}^{2}=i$ |
 | $\tilde U_{\mathrm b}$ | $(3e_t-i\vec e_x+i\vec e_y+i\vec e_z)/\sqrt6$ | $1$ |
 | $\tilde u_{\mathrm r}$ | $\sqrt{2/3}\,e_t+\vec e_x/\sqrt6+\vec e_y/\sqrt6$ | $1$ |
 
-The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $r\varkappa^{\mathrm{crd}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=r\tilde U_{\mathrm b}$, of norm $r^{2}=2$, and the $*$-unitary factor is $\tilde Q_0=\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$, of norm ${\varkappa^{\mathrm{crd}}}^{2}=i$; their product has norm $2i$, the norm of the element.
+The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $r\varkappa^{\mathrm{phs}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=r\tilde U_{\mathrm b}$, of norm $r^{2}=2$, and the $*$-unitary factor is $\tilde Q_0=\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$, of norm ${\varkappa^{\mathrm{phs}}}^{2}=i$; their product has norm $2i$, the norm of the element.
 
 ## Summary
 
@@ -528,12 +528,12 @@ The polar decomposition of an $\natural$-regular biquaternion is the modulus–u
 | Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary |
 | modulus–unit | $\tilde Q=\Rho\tilde U$, $\Rho\in\mathcal H$, $\langle\tilde U\rangle_{\natural}=1$ |
 | modulus | $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$, $\Rho\in\mathcal H$ |
-| scale and phase | $r=\lvert\Rho\rvert$, $\varkappa^{\mathrm{crd}}=\Rho/r$ |
+| scale and phase | $r=\lvert\Rho\rvert$, $\varkappa^{\mathrm{phs}}=\Rho/r$ |
 | boost | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$, Hermitian positive definite, norm one |
 | rotor | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$, unit real quaternion |
-| word | $\tilde Q=r\varkappa^{\mathrm{crd}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| word | $\tilde Q=r\varkappa^{\mathrm{phs}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | dimensions | $8=2+6=1+1+3+3$ |
-| two readings | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$ |
+| two readings | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$ |
 | spinor module | $S\otimes\chi$ with $\chi(\Rho)=\Rho$; the irreducible modules $(j,j')_{(a,b)}$, $a-b\equiv2j+2j'\pmod2$ |
 | unit group | $SL_2(\mathbb C)\cong H^{3}\times S^{3}$ |
 | group of units | $\mathbb B^{\times}\cong GL_2(\mathbb C)$, maximal compact $U(2)$, fundamental group $\mathbb Z$ |
@@ -550,12 +550,12 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, complex and nonzero |
 | $\Rho$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
 | $r$ | the scale, $\lvert\Rho\rvert$ |
-| $\varkappa^{\mathrm{crd}}$ | the central phase, $\Rho/r$ |
+| $\varkappa^{\mathrm{phs}}$ | the central phase, $\Rho/r$ |
 | $\tilde U$ | the unit factor, $\tilde Q/\Rho$, of norm one |
 | $\tilde U_{\mathrm b}$ | the boost, $(\tilde U\tilde U^{*})^{1/2}$ |
 | $\tilde u_{\mathrm r}$ | the rotor, $\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | $\tilde Q_H$ | the Hermitian factor, $r\tilde U_{\mathrm b}$ |
-| $\tilde Q_0$ | the $*$-unitary factor, $\varkappa^{\mathrm{crd}}\tilde u_{\mathrm r}$ |
+| $\tilde Q_0$ | the $*$-unitary factor, $\varkappa^{\mathrm{phs}}\tilde u_{\mathrm r}$ |
 | $s$ | $\operatorname{Sc}(\tilde U\tilde U^{*})$ |
 | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | $H^{3}$ | the Hermitian positive elements of norm one |

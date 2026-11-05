@@ -93,13 +93,13 @@ is rational, the identity being the formula of Bowen and Lanford;
 
 *Proof.* The number of words of length $n$ of $X$ is the sum of the entries of $A^{n-1}$, so its growth rate is $\rho(A)$ by the Perron–Frobenius theorem, and (i) follows from the language formula for the entropy. The fixed points of $\sigma^n$ correspond to the closed paths of length $n$ in the graph of $A$, counted by $\operatorname{tr}(A^n)$, which gives (ii) after expanding the logarithm of the determinant as $\sum_n\frac{\operatorname{tr}(A^n)}{n}t^n$. The asymptotic in (iii) is the Perron–Frobenius asymptotics, which requires primitivity for a single exponential and otherwise gives the periodic factor described there.
 
-**Example (the full shift and the golden-mean shift).** For the full $d$-shift the matrix is the $d\times d$ all-ones matrix, $\operatorname{tr}(A^n)=d^n$, and $\det(I-tA)=1-dt$, so $\varkappa^{\mathrm{crd}}=1/(1-dt)$ and the entropy is $\log d$. For the golden-mean shift the matrix is
+**Example (the full shift and the golden-mean shift).** For the full $d$-shift the matrix is the $d\times d$ all-ones matrix, $\operatorname{tr}(A^n)=d^n$, and $\det(I-tA)=1-dt$, so $\zeta(t)=1/(1-dt)$ and the entropy is $\log d$. For the golden-mean shift the matrix is
 
 $$
 A=\begin{pmatrix}1&1\\1&0\end{pmatrix}, \qquad \det(I-tA)=1-t-t^2,
 $$
 
-so $\varkappa^{\mathrm{crd}}=1/(1-t-t^2)$, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)=1,3,4,7,11,18,29,\dots$, the Lucas numbers, and the spectral radius is the golden ratio, since the characteristic polynomial is $\lambda^2-\lambda-1$; the entropy is $\log\varphi$ computed above.
+so $\zeta(t)=1/(1-t-t^2)$, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)=1,3,4,7,11,18,29,\dots$, the Lucas numbers, and the spectral radius is the golden ratio, since the characteristic polynomial is $\lambda^2-\lambda-1$; the entropy is $\log\varphi$ computed above.
 
 ### Sofic Shifts
 
@@ -151,7 +151,7 @@ and a **block code** is the one-sided analogue. A **conjugacy** is a bijective s
 
 ## Summary
 
-The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h^{\mathrm{tpl}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h^{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h^{\mathrm{tpl}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\varkappa^{\mathrm{crd}}=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\varphi$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
+The **full shift** $\sigma$ on $\Sigma_d=\mathcal A^{\mathbb Z}$ is a homeomorphism of a compact perfect totally disconnected space, homeomorphic to the middle-third Cantor set; it is mixing, its periodic points are dense, the fixed points of $\sigma^n$ number $d^n$, and $h^{\mathrm{tpl}}(\sigma)=\log d$, with the Bernoulli measures as the invariant measures. A **subshift** is a closed invariant subset, determined by its **language** $\mathcal L(X)$ or by its forbidden words, and its entropy is the exponential growth rate of the language, $h^{\mathrm{tpl}}(\sigma|_X)=\lim_n\frac1n\log|\mathcal L_n(X)|$. A **subshift of finite type** $\Sigma_A$ is defined by a $\{0,1\}$-matrix $A$; its entropy is $h^{\mathrm{tpl}}=\log\rho(A)$ by Perron–Frobenius, the fixed points of $\sigma^n$ number $\operatorname{tr}(A^n)$, and the Bowen–Lanford **zeta function** is $\zeta_X(t)=\exp\sum_n\frac{p_n}{n}t^n=1/\det(I-tA)$, rational; the full $d$-shift has $\zeta=1/(1-dt)$ and the golden-mean shift has matrix $\begin{pmatrix}1&1\\1&0\end{pmatrix}$, $\zeta=1/(1-t-t^2)$, $p_n$ the Lucas numbers and entropy $\log\varphi$. A **sofic shift** is the image of an SFT, or the set of labels of the paths of a finite labelled graph, and its entropy is read from a right-resolving presentation.
 
 A **sliding block code** is a shift-commuting map given by a finite block rule, and the theorem of Curtis–Hedlund–Lyndon states that these are exactly the continuous shift-commuting maps; a **Markov partition** of a locally maximal hyperbolic set produces a sliding block code from an SFT onto the set which is finite-to-one and injective on the periodic points, giving $h^{\mathrm{tpl}}=\log\rho(A)$ and the periodic orbit counts. The classification of the shifts of finite type is by **strong shift equivalence**, with **shift equivalence** and the **dimension group** as a decidable invariant; conjugacy implies shift equivalence by Williams and Bowen–Franks, and the converse fails in general, so the shift equivalence conjecture is false. The **complexity** $p(n)$ of a subshift satisfies the Morse–Hedlund theorem — $p(n)\le n$ forces eventual periodicity — and the **Sturmian** words with $p(n)=n+1$ are the minimal zero-entropy codings of irrational rotations; the **substitution** subshifts, the $\beta$-shifts and the **horseshoe** and solenoid models are the standard examples, the arithmetic of the codings belonging.
 
@@ -167,7 +167,7 @@ A **sliding block code** is a shift-commuting map given by a finite block rule, 
 | $X$, $\Sigma_A$ | subshift and subshift of finite type |
 | $A$ | transition (adjacency) matrix |
 | $\rho(A)$, $\varphi$ | spectral radius, golden ratio |
-| $p_n$, $\varkappa^{\mathrm{crd}}_X$ | periodic points of period $n$, zeta function |
+| $p_n$, $\zeta_X$ | periodic points of period $n$, zeta function |
 | $\pi$ | coding map of a Markov partition |
 | $p_X(n)$ | complexity of a subshift |
 | $\tau$ | substitution |
