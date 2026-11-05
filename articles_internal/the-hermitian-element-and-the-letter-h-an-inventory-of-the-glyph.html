@@ -777,6 +777,52 @@ $$</p>
 <h2 id="the-project-migration-one-position-math289-and-its-two-halves">The Project Migration: One Position $\tilde R$ and Its Two Halves</h2>
 <p><strong>Status.</strong> Adopted for the project on 2026-11-05, in the $\tilde R$ form with one flat position letter. <strong>Not yet applied.</strong> No file in <code>articles_physics</code> has been edited, so every count below is current and every symbol below is still printed where it always was. The two carrier lists of §<em>The Carriers</em> are the work list.</p>
 <p><strong>The migration in one line.</strong> One symbol for position, $\tilde R$, read as the position in the biquaternion space. Its two halves are written $\tilde{R}_H$ and $\tilde{R}_A$. $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ are not introduced, and $\tilde H$ retires.</p>
+<p><strong>The target.</strong> The migration reaches these two lines, and nothing else in the algebra moves.</p>
+<p>$$ \tilde{R}_H=r_t\,e_t+i\bigl(r_{x'}\vec e_x+r_{y'}\vec e_y+r_{z'}\vec e_z\bigr)\in\mathbb{M}_+ $$</p>
+<p>$$ \tilde{R}_A=i\,r_{t'}\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\in\mathbb{M}_- $$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>before the migration</th>
+<th>after it</th>
+<th style="text-align: right;">files</th>
+<th style="text-align: right;">occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde H=h_te_t+i\vec h$</td>
+<td>$\tilde{R}_H=r_te_t+i\vec{r}_H$</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>$\tilde R$, the material position</td>
+<td>$\tilde{R}_A=i r_{t'}e_t+\vec{r}_A$</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">665</td>
+</tr>
+<tr>
+<td>$\tilde R_0$, $\tilde R_1$, and the other indexed spellings</td>
+<td>$\tilde{R}_{A,0}$, $\tilde{R}_{A,1}$</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">127</td>
+</tr>
+<tr>
+<td>$\tilde H$ in a flow, $\exp(-iHt'/\hslash)$</td>
+<td>$H$</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>$h_t=ct$ with $h_k=x'_k$</td>
+<td>deleted: $r_t$ and $\vec{r}_H$ are the same letters</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first three rows are the two equations above, read from right to left. The last two are the two places where the letter does not survive at all: the operator keeps $H$, and the dictionary paragraph is deleted rather than rewritten. The 127 of the third row sit inside the 665 of the second, so the two rows are not added.</p>
 <p><strong>One letter, eight subscripts.</strong> The position is written with $r$ and a subscript that names the coordinate, so a slot is $r_u+i r_{u'}$ and never $u+iu'$ with the axis letter standing alone.</p>
 <h3 id="the-object">The Object</h3>
 <p>$\mathbb{B}$ has eight real dimensions, so a point of it carries eight real numbers. In four flat slots with complex values, the general point is</p>
@@ -924,16 +970,22 @@ $$</p>
 <td>$\tilde{R}_{A,0}$ and so on</td>
 </tr>
 <tr>
-<td>$\tilde H$ in a definition</td>
-<td>27</td>
-<td>60</td>
-<td>$\tilde{R}_H$</td>
+<td>$\tilde H$</td>
+<td>56</td>
+<td>950</td>
+<td>split by sentence: $\tilde{R}_H$ as a coordinate, $H$ as an operator</td>
 </tr>
 <tr>
-<td>$\tilde H$ in the operator role</td>
-<td>56</td>
-<td>890</td>
-<td>$H$</td>
+<td>of which the definition $\tilde H=h_te_t+i\vec h$</td>
+<td>27</td>
+<td>60</td>
+<td>$\tilde{R}_H=r_te_t+i\vec{r}_H$</td>
+</tr>
+<tr>
+<td>of which the operator shape $\exp(-iHt'/\hslash)$ and its siblings</td>
+<td>13</td>
+<td>30</td>
+<td>$H$, unchanged</td>
 </tr>
 <tr>
 <td>$\tilde H_Z$, $\tilde H_S$, $\tilde H_0$, $\tilde H_R$, $\tilde H_{ab}$, $\tilde H_m$, $\tilde H_{OAT}$, $\tilde H_{\mathrm H}$, $\tilde H_i$</td>
@@ -1707,10 +1759,10 @@ $$</p>
 </tr>
 <tr>
 <td>P7</td>
-<td>$\tilde H$ in the operator role</td>
-<td>$\tilde H\to H$ where the element generates a flow</td>
-<td>56</td>
-<td>890</td>
+<td>$\tilde H$ in a flow</td>
+<td>$\tilde H\to H$ where the element generates a flow; 13 files carry the operator shape, and the rest of the 950 is read sentence by sentence</td>
+<td>13</td>
+<td>30</td>
 </tr>
 <tr>
 <td>P8</td>
@@ -1723,7 +1775,7 @@ $$</p>
 </table></div>
 <p><strong>P1, the small pass that comes first.</strong> It is six strings in two files, and it must precede the conventions, because the conventions cannot declare $r_x$ to be a position component while two articles use it for a Bloch component. It is the only edit in the plan that changes an existing meaning rather than a letter.</p>
 <p><strong>P3, the mechanical pass.</strong> <code>\tilde R</code> and <code>\tilde{R}</code> become <code>\tilde{R}_A</code>. Two shapes need care and both are countable. A following subscript, 127 occurrences, enters the label as <code>\tilde{R}_{A,0}</code>, because <code>\tilde{R}_A_0</code> renders as a double subscript. The natural conjugate, 46 occurrences of $\tilde R^{\natural}$ and 66 of $\langle\tilde R\rangle_\natural$, keeps its mark, and the material interval reads $\langle\tilde{R}_A\rangle_\natural=\lvert\vec{r}_A\rvert^2-r_{t'}^2$.</p>
-<p><strong>P7, the editorial pass.</strong> The mechanical step converts the 890 occurrences to $\tilde{R}_H$; the reading step returns the operator uses to $H$. An occurrence is the Hamiltonian when it sits in $\exp(-iHt'/\hslash)$, $\exp(-\beta H)$, $H\lvert\psi\rangle$ or a commutator, 19 shapes in all. It is the coordinate when it sits in a definition, in $\tilde{R}_H+\tilde{R}_A$, or in a matrix image. The rest is decided from the sentence.</p>
+<p><strong>P7, the editorial pass.</strong> The glyph prints 950 times in 56 files, and the six mechanical shapes do not decide which of the two letters replaces each one. A worker reads the sentence and asks one question: does the element generate a flow or name a position? A flow keeps $H$, as in $\exp(-iHt'/\hslash)$, $\exp(-\beta H)$, $H\lvert\psi\rangle$ and $[H,\cdot]$, and 30 occurrences in 13 files print one of those shapes. A position becomes $\tilde{R}_H$, as in a definition, in $\tilde{R}_H+\tilde{R}_A$, or in a matrix image. The conventions state the rule, and the 27 files that declare the definition are the seed of the coordinate reading.</p>
 <p><strong>P4, the prose pass.</strong> <em>Material coordinate</em> becomes <em>material coordinate $\tilde{R}_A$</em>. <em>Material four-position</em> becomes the same, or <em>the position $\tilde{R}_A$ of a world line</em>. <em>The two coordinates</em> stays, because the phrase was never wrong.</p>
 <h3 id="the-work-lists">The Work Lists</h3>
 <p>Every pass that touches files, with its list. A link opens the article as it stands, so a worker sees the passage before editing it. P3 and P7 are the 53 and the 56 of §<em>The Carriers</em>; the lists here are the finer cuts, the files where a mechanical rule alone does not decide the edit. The lists here name 75 distinct articles. Written out in full, P3 and P7 carry 53 and 56, and the migration touches 98.</p>
@@ -1785,7 +1837,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>P4 — 35 articles, 52 occurrences of the prose phrase.</strong> The phrase is <em>material coordinate</em> or <em>material four-position</em>, and the edit is local: name the element beside the phrase. The list is alphabetical by title, for the worker, not by count.</p>
-<p><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, <a href="../articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a>, <a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>, <a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>, <a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, <a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>, <a href="../articles_physics/frame-conventions.html">Frame Conventions</a>, <a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, <a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>, <a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>, <a href="../articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a>, <a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>, <a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a>, <a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, <a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>, <a href="../articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html">The Biquaternion Space, the Group of Involutions and the Six Subspaces</a>, <a href="../articles_physics/the-coulomb-path-integral-and-the-duru-kleinert-transformation-in-biquaternionic-form.html">The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form</a>, <a href="../articles_physics/the-four-general-products-composition-probability-causality-gauge.html">The Four General Products: Composition, Probability, Causality, Gauge</a>, <a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>, <a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a>, <a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>, <a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, <a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>, <a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a>, <a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>, <a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a>, <a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a>, <a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a>, <a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a>, <a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a>, <a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></p>
+<p><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, <a href="../articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a>, <a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>, <a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>, <a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, <a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>, <a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a>, <a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, <a href="../articles_physics/hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>, <a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>, <a href="../articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a>, <a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>, <a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a>, <a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, <a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>, <a href="../articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html">The Biquaternion Space, the Group of Involutions and the Six Subspaces</a>, <a href="../articles_physics/the-coulomb-path-integral-and-the-duru-kleinert-transformation-in-biquaternionic-form.html">The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form</a>, <a href="../articles_physics/the-four-general-products-composition-probability-causality-gauge.html">The Four General Products: Composition, Probability, Causality, Gauge</a>, <a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>, <a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a>, <a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>, <a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, <a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>, <a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a>, <a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html">The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form</a>, <a href="../articles_physics/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>, <a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a>, <a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a>, <a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a>, <a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a>, <a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a>, <a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a>, <a href="../articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a></p>
 <p><strong>P5 — 2 articles, 3 occurrences.</strong> The dictionary sentence $h_t=ct$ is deleted and the identity $h_t\equiv r_t$ is stated in the operator reading instead. It precedes P6, or a coordinate sentence keeps the old letter.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1924,7 +1976,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>P7 — 13 articles, 30 occurrences where the operator shape prints.</strong> These are the files where $H$ is the Hamiltonian and the glyph must not survive as a coordinate symbol. The remaining 43 of the 56 carry $\tilde H$ in prose or in a symbol list, with no operator shape, and are read one sentence at a time.</p>
+<p><strong>P7 — 13 articles, 30 occurrences where the operator shape prints.</strong> These are the files a worker must open with the flow question already in mind: the glyph there may be either letter, and the shape beside it is the only evidence. The remaining 43 of the 56 carry $\tilde H$ in prose or in a symbol list, with no operator shape at all, and are read one sentence at a time.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -2068,7 +2120,7 @@ $$</p>
 <p><strong>G6, the links.</strong> The three mirrors serve the same slugs, so no absolute link changes, and the internal article stays out of both menus.</p>
 <h3 id="order-effort-and-rollback">Order, Effort and Rollback</h3>
 <p><strong>Order.</strong> P0, then P1 and P2, because the subscripts must be free before the conventions claim them. P3 and P4 next, because the material half is independent of the open point. P5 before P6, because the dictionary decides what $\tilde{R}_H$ means. P7 last.</p>
-<p><strong>Effort.</strong> P1 is six strings. P3 is 665 edits in 53 files and takes one session with a script and a rendering check. P7 is 890 edits in 56 files, of which 19 shapes are mechanical and the rest need a sentence, so it is the long pole: about fifteen minutes a file. P4 is prose in 35 files. P5 is one deleted paragraph and one sentence.</p>
+<p><strong>Effort.</strong> P1 is six strings. P3 is 665 edits in 53 files and takes one session with a script and a rendering check. P6 is 60 edits in 27 files, and it is scriptable once the definition is the mark. P7 is the judgement pass over 56 files, and it is the long pole: about fifteen minutes a file, because the 30 operator shapes are the only easy ones. P4 is prose in 35 files. P5 is one deleted paragraph and one sentence.</p>
 <p><strong>Rollback.</strong> One commit per pass. P1, P3, P5 and P6 reverse by the inverse substitution, which is exact because the target strings do not occur in the corpus except where the migration put them. P7 does not reverse by substitution, so it is committed per article, and a bad article is restored from the tag. The tag is the only thing that must be made before the first edit.</p>
 <h3 id="acceptance">Acceptance</h3>
 <div class="table-scroll"><table>
