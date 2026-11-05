@@ -334,9 +334,9 @@ $$</p>
 <p>with the retarded-time derivative convention fixed above. This is the relativistic generalization of the Larmor angular distribution. Its integral over the sphere gives the total radiated power. Because $\vec\beta$, $d\vec\beta/dt'_r$ and $\kappa$ are functions of the retarded time, the integral is most transparent in the invariant form: writing $\tilde{V} = d\tilde{Q}_q/d\tau$ for the four-velocity, the radiated power is</p>
 <p>$$
 \boxed{\;P = \frac{ϙ^2}{6\pi\epsilon c^3}\,N\!\left(\frac{d\tilde{V}}{d\tau}\right)
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(-\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\frac{du_\mu}{d\tau}\frac{du_\nu}{d\tau}\right)\;}
+= \frac{ϙ^2}{6\pi\epsilon c^3}\sum_\mu\left(\frac{du_\mu}{d\tau}\right)^2\;}
 $$</p>
-<p>where the second expression writes the contraction out with the frame metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,1,1,1)$, used throughout this article for every contraction of four-vectors. This is the <strong>relativistic Larmor formula</strong>, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the <strong>biquaternion norm of the four-acceleration biquaternion</strong>. The biquaternion norm is non-negative here because the four-acceleration is spacelike in the $(+,-,-,-)$ convention, and it vanishes precisely for unaccelerated motion, as it must.</p>
+<p>where the second expression writes the contraction out in the components of the four-velocity, $u_t=ic\gamma$ and $u_k=\gamma v_k$. The time entry carries the $i$, and its square is the one minus. This is the <strong>relativistic Larmor formula</strong>, and the biquaternion statement is particularly clean: the radiated power is (up to a constant) the <strong>biquaternion norm of the four-acceleration biquaternion</strong>. The biquaternion norm is non-negative here because the four-acceleration is spacelike, and it vanishes precisely for unaccelerated motion, as it must.</p>
 <p>For comparison with the standard literature, the same power can be written in terms of the acceleration measured in the observer's time. With the derivative taken this time with respect to $t'$ (not $t'_r$),</p>
 <p>$$
 P = \frac{ϙ^2\gamma^6}{6\pi\epsilon c}\left[\left(d\vec\beta/dt'\right)^{2} - \left(\vec\beta\times\,d\vec\beta/dt'\right)^2\right].
@@ -383,18 +383,18 @@ $$</p>
 <p>A charge that radiates loses energy and momentum, and the loss must appear as a force acting on the charge itself. In the point-particle idealization the standard result is the <strong>Abraham–Lorentz–Dirac</strong> equation,</p>
 <p>$$
 m\frac{du_\mu}{d\tau} = f_{\text{ext}\,\mu}
-+ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right).
++ \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} - \frac{u_\mu}{c^2}\sum_\nu\left(\frac{du_\nu}{d\tau}\right)^2\right).
 $$</p>
 <p>The bracketed term is the radiation-reaction four-force. In tensor form it reads</p>
 <p>$$
 K_{\mathrm{rad}\,\mu}
-= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} + \frac{u_\mu}{c^2}\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}\right),
+= \frac{ϙ^2}{6\pi\epsilon c^3}\left(\frac{d^2u_\mu}{d\tau^2} - \frac{u_\mu}{c^2}\sum_\nu\left(\frac{du_\nu}{d\tau}\right)^2\right),
 $$</p>
 <p>the radiation-reaction counterpart of the electromagnetic four-force $K_\mu$ of <em>The Lorentz Force in Biquaternion Form</em>. Its defining property is that it is <strong>orthogonal to the worldline</strong>:</p>
 <p>$$
-\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]K_{\mathrm{rad}\,\mu}u_\nu = 0 .
+\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0 .
 $$</p>
-<p>This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]u_\mu u_\nu = c^2$ being constant, which gives $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]u_\mu\,d^2u_\nu/d\tau^2 = -\sum_{\nu,\rho}g_{\nu\rho}[\mathbb{M}_-]\frac{du_\nu}{d\tau}\frac{du_\rho}{d\tau}$.</p>
+<p>This orthogonality is the statement that the reaction force does no work in the instantaneous rest frame; it follows from $\sum_\mu u_\mu^2 = -c^2$ being constant, which gives $\sum_\mu u_\mu\,d^2u_\mu/d\tau^2 = -\sum_\mu\left(du_\mu/d\tau\right)^2$.</p>
 <p>Two caveats should be stated plainly. First, the framework does not resolve the well-known pathologies of the equation — the runaway solutions and the pre-acceleration that follow from treating the self-force as a local differential expression. Second, the equation above is the standard result, not a derivation of the self-force from the biquaternion framework, and the point-charge self-energy divergence is untouched by the change of language. The radiation-reaction problem is thus <strong>represented</strong> cleanly in the framework, but it is not solved by it. A rigorous derivation from Maxwell's theory does exist, however, and it is the subject of the next paragraph.</p>
 <p><strong>A rigorous derivation exists outside the framework.</strong> Whether the point-charge self-force can be derived from Maxwell's theory without adding anything has a positive answer, due to A. Gsponer. The method is to define the retarded potentials, fields and currents as <strong>nonlinear generalized functions</strong> and to carry out every calculation in a <strong>Colombeau algebra</strong> — an algebra in which the product of singular fields is defined, which is indispensable here because the energy–momentum tensor is quadratic in the field and the fields diverge on the worldline. The biquaternion spinor representation of electrodynamics is what makes the four-dimensional integrations exact and closed-form. With those tools the total rate of energy–momentum radiated through a surface enclosing the worldline is shown to be rigorously equal to minus the self-interaction force on the charge,</p>
 <p>$$
@@ -574,7 +574,7 @@ $$</p>
 </tr>
 <tr>
 <td>$K_{\mathrm{rad}\,\mu}$</td>
-<td>Radiation-reaction four-force, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]K_{\mathrm{rad}\,\mu}u_\nu = 0$, the counterpart of the Lorentz four-force $K_\mu$</td>
+<td>Radiation-reaction four-force, $\sum_\mu K_{\mathrm{rad}\,\mu}u_\mu = 0$, the counterpart of the Lorentz four-force $K_\mu$</td>
 </tr>
 <tr>
 <td>$P(\Sigma)$, $\mathcal{Q}$</td>

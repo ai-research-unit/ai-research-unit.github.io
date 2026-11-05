@@ -92,7 +92,7 @@
 </tr>
 <tr>
 <td><strong>(ii) Reproduced independently within the algebra</strong></td>
-<td>the polar form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ with Gram matrix $\mathrm{diag}(-1,1,1,1)$ and $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$; the carrier $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle_{\natural}$ and its surjectivity on symmetric perturbations; the splitting $16 = 10 + 6$ with the local-Lorentz kernel; the gauge image $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial Q_\mu\,\tilde Q_{\mathrm d}$; the trace-reversal frame shift; $\Box = g_{\mu\nu}[\mathbb{M}_-]\partial/\partial Q_\mu\,\partial/\partial Q_\nu$ and the residual condition $\Box\tilde Q_{\mathrm d} = 0$; the collapse $\sum_{\mu\nu} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = (g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu})e_t$; the bivector packaging of the curvature</td>
+<td>the polar form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$, whose natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$ is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$; the carrier $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle_{\natural}$ and its surjectivity on symmetric perturbations; the splitting $16 = 10 + 6$ with the local-Lorentz kernel; the gauge image $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial Q_\mu\,\tilde Q_{\mathrm d}$; the trace-reversal frame shift; $\Box = \sum_\mu\partial^2/\partial Q_\mu^2$ and the residual condition $\Box\tilde Q_{\mathrm d} = 0$; the collapse $\sum_{\mu\nu} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = h\,e_t$ with $h = -h_{00}+h_{11}+h_{22}+h_{33}$; the bivector packaging of the curvature</td>
 <td>Algebraic computations in the framework's own operations, recomputed in the gravity articles</td>
 </tr>
 <tr>
@@ -131,14 +131,14 @@ $$</p>
 \bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu,
 \qquad h = 2\langle\varepsilon_\nu,\delta\tilde{E}_\nu\rangle_{\natural},
 $$</p>
-<p>which carries $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12g_{\mu\nu}[\mathbb{M}_-]h$. In harmonic gauge the vacuum equation reduces to $\Box\bar{h}_{\mu\nu} = 0$, hence to $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed. The linearised Riemann tensor is gauge invariant, and it is carried index by index as a bivector-valued two-form whose values lie in the six-dimensional complex pure-vector subspace.</p>
+<p>which carries $\bar{h}_{00} = h_{00} + \tfrac12h$, $\bar{h}_{0k} = h_{0k}$ and $\bar{h}_{kl} = h_{kl} - \tfrac12h\,\delta_{kl}$, the one minus being the square of the $i$ in $Q_t=ict'$. In harmonic gauge the vacuum equation reduces to $\Box\bar{h}_{\mu\nu} = 0$, hence to $\Box\bar{\delta\tilde{E}}_\mu = 0$ once the local Lorentz freedom is fixed. The linearised Riemann tensor is gauge invariant, and it is carried index by index as a bivector-valued two-form whose values lie in the six-dimensional complex pure-vector subspace.</p>
 <p>There is one sharp negative finding in this article, and it is central to the agenda. The graviton is <strong>not</strong> a material biquaternion. It is not an element of $\mathbb{M}_-$, it is not a single element of $\mathbb{B}$ at all — eight real dimensions cannot hold ten components — and the natural single-biquaternion packaging of a symmetric rank-two object,</p>
 <p>$$
 \tilde{H} = \sum_{\mu,\nu} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu,
 $$</p>
 <p>collapses to the Lorentzian trace,</p>
 <p>$$
-\boxed{\;\tilde{H} = (g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu})\,e_t = h\,e_t\;}.
+\boxed{\;\tilde{H} = h\,e_t\;}.
 $$</p>
 <p>The traceless part of $h_{\mu\nu}$ — nine of the ten components, and the whole of the transverse-traceless content that carries the two polarisations — maps to zero. The correct carrier is the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, not an algebra element.</p>
 <h3 id="the-wave-sector-and-the-quadrupole-formula">The Wave Sector and the Quadrupole Formula</h3>
@@ -148,7 +148,7 @@ $$</p>
 \Box\tilde Q_{\mathrm d} = 0 ,
 $$</p>
 <p>which is a genuine, if modest, piece of framework content: the residual gauge condition is built from the algebra's own operator and the material sector. The physical count is then $10 \to 6 \to 2$. Ten components of the symmetric perturbation; four harmonic conditions leaving six; and, inside those six, a four-dimensional image of the residual gauge freedom whose complement is the two-dimensional transverse-traceless subspace. The split was verified by a rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count of a massless spin-two field.</p>
-<p>The two polarisations were checked on an explicit plane-wave ansatz. For each of the plus amplitude $A_{11} = -A_{22}$ and the cross amplitude $A_{12} = A_{21}$, the wave is transverse, $k_\mu A_{\mu\nu} = 0$, and traceless, $g_{\mu\nu}[\mathbb{M}_-]A_{\mu\nu} = 0$; the Ricci tensor vanishes, $\mathrm{Ric}_{\mu\nu} = 0$, and the Riemann tensor does not, so each carries physical curvature and neither is pure gauge. The gauge-invariant content is the Weyl part of the curvature.</p>
+<p>The two polarisations were checked on an explicit plane-wave ansatz. For each of the plus amplitude $A_{11} = -A_{22}$ and the cross amplitude $A_{12} = A_{21}$, the wave is transverse, $k_\mu A_{\mu\nu} = 0$, and traceless, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$; the Ricci tensor vanishes, $\mathrm{Ric}_{\mu\nu} = 0$, and the Riemann tensor does not, so each carries physical curvature and neither is pure gauge. The gauge-invariant content is the Weyl part of the curvature.</p>
 <p>The quadrupole formula was verified by matching it to an independent result. For the equal-mass circular binary, the traceless quadrupole moment's third derivatives give $d^3\mathcal{Q}_{ij}/d{t'}^3 d^3\mathcal{Q}_{ij}/d{t'}^3 = 128\,m^2R^4\omega^6$, and with Kepler's law and $R = d/2$ the power</p>
 <p>$$\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{t'}^3\,d^3\mathcal{Q}_{ij}/d{t'}^3 \right\rangle\;}$$</p>
 <p>equals $\tfrac{64}{5}\tfrac{G^4}{c^5}\tfrac{m^5}{d^5}$, in agreement with the standard equal-mass binary power $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$. The absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.</p>
@@ -293,12 +293,17 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = g_{\mu\nu}[\mathbb{M}_-]$</td>
+<td>the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the material basis it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ in $\varepsilon_0 = ie_t$</td>
+<td>inherited</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>the unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$, and the natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
 <td>inherited</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$</td>
-<td>biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = g_{\mu\nu}[\mathbb{M}_-]\partial/\partial Q_\mu\,\partial/\partial Q_\nu$</td>
+<td>biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \sum_\mu\partial^2/\partial Q_\mu^2$; on the material reading $Q_t=ict'$ its time term is $-\frac{1}{c^2}\partial^2/\partial t'^2$</td>
 <td>inherited</td>
 </tr>
 <tr>

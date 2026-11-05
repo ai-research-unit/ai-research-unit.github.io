@@ -311,7 +311,7 @@ so that the one-particle term reproduces $D_F=Z/(m^2-p^2-i\epsilon)$ and the res
 - The reduction of the <strong>two-sided</strong> Dirac equation is not written. Its mass is a right multiplication together with the conjugation $\overline{F}$, so the amputation would have to be applied on the right and the conjugation carried through every leg; whether that produces the same residue as the one-sided pair is not settled here.
 - Whether the component-wise structure of the scalar reduction has observable consequences lies outside this article, which only identifies it.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.</p>
 <p>Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_aR_b$ is a cell.</p>
 <p>$$
@@ -331,7 +331,7 @@ the mass-shell operator is minus the product of the two shifted cells,
 $$
 \mathcal{M}(\tilde P)=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^2-p^2 ,
 $$
-a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.</p>
+a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining. Those squares are the weight, $\gamma_\mu^2=\varepsilon_\mu\mathbf 1$, so the contraction gives $\slashed p^{\,2}=\varepsilon_0p_0^2+\sum_{k=x,y,z}\varepsilon_kp_k^2=p_0^2-\vec p^{\,2}$, which is $p^2$, the d'Alembertian's symbol in the $ict'$ coordinate, rather than $-p^2$.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.</p>
 <p>The dictionary is complex-linear, and the frame carries the central $i$ in each $\gamma_\mu$: the four are $i$ times real cells, so together with $i$ they span the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ of the section's first line. The real cells $L_aR_b$ alone, without the $i$, are real matrices and span all of $M_4(\mathbb{R})$; nothing is lost by writing the frame with the $i$ attached.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
@@ -392,8 +392,8 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 <td>The d'Alembertian (<em>Operator and Calculus Conventions</em>), with symbol $p^2$ on the material sector</td>
 </tr>
 <tr>
-<td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
-<td>$ict'$ coordinate metric (level 2); the frame's component metric $g$ is minus it</td>
+<td>$ict'$</td>
+<td>The time coefficient of the material reading; its square, $(ict')^2=-c^2t'^2$, supplies the one minus of the d'Alembertian on the time direction</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>

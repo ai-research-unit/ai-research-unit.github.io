@@ -141,13 +141,13 @@ $$</p>
 c_0^{2}=-1,\qquad c_k^{2}=+1,\qquad \{c_\mu,c_\nu\}=0\quad(\mu\neq\nu),
 $$</p>
 <p>and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_k^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.</p>
-<p><strong>The operator.</strong> With $x_0=t'$ and $x_k$ the three spatial coordinates,</p>
+<p><strong>The operator.</strong> With $x_0=t'$ and $x_k$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_k=x_k$ the material reading of the four coordinates,</p>
 <p>$$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
 \varepsilon=(1,-1,-1,-1),\qquad
-D^{2}=-\frac{\partial^{2}}{\partial {t'}^{2}}+\Delta=\Box .
+D^{2}=\Box=\sum_\mu\frac{\partial^{2}}{\partial Q_\mu^{2}}=-\frac{\partial^{2}}{\partial {t'}^{2}}+\Delta .
 $$</p>
-<p>The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.</p>
+<p>The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=ix_0$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.</p>
 <p><strong>The conjugation.</strong> The charge conjugation of this article is</p>
 <p>$$
 \boxed{\;\Psi^{c}=\mathcal{C}\Psi=i\,\bar\Psi\;},
@@ -346,7 +346,7 @@ $$</p>
 <p><strong>The tempting interpretation, and why it is wrong.</strong> $\mathbb{M}_-$ is the fixed space of the real structure $\flat$, it is four-real-dimensional, and the dimension matches the Majorana count exactly. The temptation is to say that a Majorana field is a field with values in $\mathbb{M}_-$. The framework's own structure refuses it, and the reason is one line: <strong>the operator does not preserve the sector.</strong> The unit $\vec e_x$ is anti-Hermitian, $(\vec e_x)^{*}=-\vec e_x$, so it lies in $\mathbb{M}_-$; its square is $\vec e_x^{2}=-e_t$, which is Hermitian and lies in $\mathbb{M}_+$. A derivative along $x$ therefore carries a field of the material sector into the informational one, and no first-order equation with the algebra's units can be written inside either sector alone.</p>
 <p><strong>The fixed space of the conjugation is not a sector.</strong> The fixed space of $\Psi^{c}=\Psi$ is four-real-dimensional and it is not $\mathbb{M}_-$: it is the real-quaternion form multiplied by the central phase, and both the multiplication by $i$ and the conjugation are needed to state it. The two four-dimensional spaces are different objects, and the coincidence of their dimensions is the coincidence that makes the sector split look like a candidate. The distinction is one of kind: a sector is a fixed space of an antilinear map read on the algebra, and the Majorana real form is the fixed space of an antilinear map read on the field.</p>
 <p><strong>The physical test, and the answer.</strong> The test is the one a physicist would apply: impose the condition, evolve, and see whether the condition survives. The previous section performed it, and the answer is that the condition survives because $\mathcal{C}$ commutes with the operator. A sector, by contrast, is not preserved by the operator at all, so a constraint of the form "the field lies in $\mathbb{M}_-$" cannot be propagated. It would be violated by the first time step. The sector split therefore <strong>obstructs</strong> the reality condition rather than supplying it, and it cannot be used as it stands.</p>
-<p><strong>What survives of the split.</strong> The split is not idle: it is the decomposition that fixes the metric, the signature and the two kinds of physical quantity, and the material sector is where the four-vectors live. What it does not do is supply the charge conjugation. The two decompositions, by $\chi$ and by ${}^{*}$, are different decompositions of one algebra, and an argument that needs one of them cannot borrow the other's dimension.</p>
+<p><strong>What survives of the split.</strong> The split is not idle: it is the decomposition that separates the two kinds of physical quantity, and the material sector is where the four-vectors live. What it does not do is supply the charge conjugation. The two decompositions, by $\chi$ and by ${}^{*}$, are different decompositions of one algebra, and an argument that needs one of them cannot borrow the other's dimension.</p>
 <h2 id="the-neutrino-what-the-framework-does-and-does-not-derive">The Neutrino: What the Framework Does and Does Not Derive</h2>
 <p><strong>The empirical constraints.</strong> The neutrino is electrically neutral, it comes in three species, and it is left-handed in the charged-current interaction. Two consequences follow from the Standard Model alone, and neither depends on a mass mechanism.</p>
 <p>First, the light neutrino cannot carry an ordinary Dirac mass with a Standard-Model Higgs doublet: a right-handed partner is absent, and a bare mass term would break the gauge symmetry.</p>
@@ -443,7 +443,7 @@ $$</p>
 <li><strong>The count of the real forms.</strong> The three antilinear involutions all fix four real dimensions, and the criterion of order selects the bar. Whether the other two have a physical use — $\flat$ for a coupling, ${}^{*}$ for a sector — or whether the selection is the whole of their content, is not settled here.</li>
 </ul>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate and to the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$, not to the array.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In cells they are</p>
 <p>$$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
@@ -539,12 +539,12 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <td>Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$</td>
 </tr>
 <tr>
-<td>$\Box=-\partial^2/\partial {t'}^2+\Delta$</td>
-<td>d'Alembertian of the frame; $\Delta$ is the spatial Laplacian</td>
+<td>$\Box=\sum_\mu\partial^2/\partial Q_\mu^2=-\partial^2/\partial {t'}^2+\Delta$</td>
+<td>d'Alembertian; $\Delta$ is the spatial Laplacian</td>
 </tr>
 <tr>
 <td>$\varepsilon=(1,-1,-1,-1)$</td>
-<td>Sign vector of the frame, with $g=\mathrm{diag}(-,+,+,+)$</td>
+<td>Sign vector of the frame</td>
 </tr>
 <tr>
 <td>$\mathcal{C}:\Psi\mapsto i\bar\Psi$</td>

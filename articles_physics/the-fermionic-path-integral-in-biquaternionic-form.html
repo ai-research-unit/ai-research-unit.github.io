@@ -147,7 +147,7 @@ $$</p>
 <p>Three properties of the action are used below.</p>
 <p><strong>It is even.</strong> The action is quadratic in the fermionic field, hence bosonic: it commutes with fermion parity and is a $c$-number functional of the field. This is why $\exp(iS)$ is a genuine phase and not an operator.</p>
 <p><strong>Its phase is central.</strong> $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.</p>
-<p><strong>Its Hermiticity structure.</strong> $\bar\psi\,\tilde\nabla\,\psi$ is Hermitian up to a total derivative and $\bar\psi\,m\,\psi$ is Hermitian. Both statements use the Dirac adjoint $\bar\psi=\psi^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box_{\mathrm{E}}>0$; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}_{\mathrm{E}}+m)$, with $\mathbb{D}_{\mathrm{E}}$ the pair of §<em>The Pair Operator on the Algebra</em> read at $t'=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §<em>Parity Sectors, the Phase and the Sign Problem</em>.</p>
+<p><strong>Its Hermiticity structure.</strong> $\bar\psi\,\tilde\nabla\,\psi$ is Hermitian up to a total derivative and $\bar\psi\,m\,\psi$ is Hermitian. Both statements use the Dirac adjoint $\bar\psi=\psi^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box>0$, the d'Alembertian being read on the continued slice where it is elliptic; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}+m)$, with $\mathbb{D}$ the pair of §<em>The Pair Operator on the Algebra</em> read at $t'=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §<em>Parity Sectors, the Phase and the Sign Problem</em>.</p>
 <h3 id="sources">Sources</h3>
 <p>The sources are Grassmann-valued: the generating functional</p>
 <p>$$
@@ -169,7 +169,7 @@ $$</p>
 <p>$$
 S_0=\sum_{a,b}\psi_a^{\dagger}M_{ab}\psi_b ,
 $$</p>
-<p>where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In Euclidean signature the kernel is $\mathbb{D}_{\mathrm{E}}+m$, and in Minkowski signature $-i(\mathbb{D}-m)$; the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\mathbb{D}-m$ up to that constant. The Gaussian Berezin integral is the determinant:</p>
+<p>where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In Euclidean signature the kernel is $\mathbb{D}+m$, and in Minkowski signature $-i(\mathbb{D}-m)$; the operator is the same in both, the continuation moving the coordinate and not the operator, and the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\mathbb{D}-m$ up to that constant. The Gaussian Berezin integral is the determinant:</p>
 <p>$$
 \boxed{\;\int\prod_ad\psi_a^{\dagger}\,d\psi_a\;\exp(-\psi^{\dagger}M\psi)=\det M\;}.
 $$</p>
@@ -240,9 +240,9 @@ $$</p>
 <p>$$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\mathrm{Sc}\big(\bar\Psi_L\,\tilde\nabla_{\mathrm{E}}\tilde\Psi_R+\bar\Psi_R\,\tilde\nabla_{\mathrm{E}}^{\natural}\tilde\Psi_L+m\,(\bar\Psi_L\tilde\Psi_L+\bar\Psi_R\tilde\Psi_R)\big),
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\mathrm{Sc}\big(\bar\Psi_L\,\tilde\nabla\tilde\Psi_R+\bar\Psi_R\,\tilde\nabla^{\natural}\tilde\Psi_L+m\,(\bar\Psi_L\tilde\Psi_L+\bar\Psi_R\tilde\Psi_R)\big),
 $$</p>
-<p>with $\tilde\nabla_{\mathrm{E}}$ the same gradient read at $t'=-i\tau$, the kinetic operator anti-Hermitian and the mass term Hermitian, and the plus sign on the mass the one that makes the kernel $M=\mathbb{D}_{\mathrm{E}}+m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.</p>
+<p>with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $t'=-i\tau$: the substitution moves the coordinate $Q_t=ict'$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §<em>The Pair Operator on the Algebra</em> and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.</p>
 <p><strong>Antiperiodic boundary conditions.</strong> The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=1/T$ with the fermions antiperiodic,</p>
 <p>$$
 \psi(\tau+\beta)=-\psi(\tau) ,
@@ -251,7 +251,7 @@ $$</p>
 <p><strong>The partition function.</strong> On the Euclidean circle the free integral is a determinant,</p>
 <p>$$
 Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\psi^{\dagger}\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
-=\det\big(\mathbb{D}_{\mathrm{E}}+m\big)_{\text{AP}} ,
+=\det\big(\mathbb{D}+m\big)_{\text{AP}} ,
 $$</p>
 <p>whose logarithm gives the free energy up to the factor $-\beta$. The identity is the standard finite-temperature reduction of the fermionic integral and is recorded, not recomputed; what the biquaternion framework adds is again only the location of the deformation and the centrality of the phase. The companion article <em>The KMS Condition and the Biquaternion Framework</em> treats the analytic structure that the antiperiodicity generates.</p>
 <h2 id="parity-sectors-the-phase-and-the-sign-problem">Parity Sectors, the Phase and the Sign Problem</h2>
@@ -371,15 +371,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}:\ (\tilde\Psi_L,\tilde\Psi_R)\mapsto(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$</td>
-<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, that is $\mathbb{D}_{\tilde\nabla}$: the factor is the material gradient, which is why no subscript is written; $\mathbb{D}^2=\Box I$</td>
+<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, that is $\mathbb{D}_{\tilde\nabla}$: the factor is the material gradient, which is why no subscript is written; $\mathbb{D}^2=\Box I$, and the same pair read at $t'=-i\tau$ is written $\mathbb{D}$ still</td>
 </tr>
 <tr>
 <td>$S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$</td>
 <td>Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$</td>
-</tr>
-<tr>
-<td>$\mathbb{D}_{\mathrm{E}}:\ (\tilde\Psi_L,\tilde\Psi_R)\mapsto(\tilde\nabla_{\mathrm{E}}\tilde\Psi_R,\ \tilde\nabla_{\mathrm{E}}^{\natural}\tilde\Psi_L)$</td>
-<td>The pair read at $t'=-i\tau$; $\mathbb{D}_{\mathrm{E}}^2=\Box_{\mathrm{E}}I$</td>
 </tr>
 <tr>
 <td>$\det(\mathbb{D}-m)=(p^2-m^2)^4=\det(\Box-m^2)$</td>
@@ -402,8 +398,8 @@ $$</p>
 <td>Antiperiodic thermal boundary condition</td>
 </tr>
 <tr>
-<td>$Z(\beta)=\det(\mathbb{D}_{\mathrm{E}}+m)_{\text{AP}}$</td>
-<td>Finite-temperature free partition function</td>
+<td>$Z(\beta)=\det(\mathbb{D}+m)_{\text{AP}}$</td>
+<td>Finite-temperature free partition function, the pair read at $t'=-i\tau$</td>
 </tr>
 </tbody>
 </table></div>

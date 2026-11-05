@@ -127,16 +127,17 @@ $$</p>
 $$</p>
 <p>so that $\mathbb{M}_+$ has the orthonormal basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ and $\mathbb{M}_-$ the orthogonal basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$.</p>
 <p><em>Proof.</em> The subspaces are the $\pm1$-eigenspaces of the involution ${}^{*}$, hence complementary. If $\tilde Q_1^{*} = \tilde Q_1$ and $\tilde Q_2^{*} = -\tilde Q_2$, then $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = -\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and $g(\tilde Q_2,\tilde Q_1) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1) = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$; by symmetry the two are equal, so both vanish. For the explicit descriptions, write $\tilde Q = a + jb$; then $\tilde{Q}^{*} = a^{\natural} - jb^{\natural}$, and $\tilde{Q}^{*} = \tilde Q$ gives $a^{\natural} = a$ and $b^{\natural} = -b$, while $\tilde{Q}^{*} = -\tilde Q$ gives $a^{\natural} = -a$ and $b^{\natural} = b$.</p>
-<p><strong>Theorem.</strong> The restrictions of the Hermitian scalar form have signatures</p>
+<p><strong>Theorem.</strong> In the coordinates $\tilde Q = a\,e_t + jv$ on $\mathbb{M}_+$ and $\tilde Q = a\,je_t + v$ on $\mathbb{M}_-$, with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the restrictions of the Hermitian scalar form are the intervals</p>
 <p>$$
 \boxed{\;
-g\big|_{\mathbb{M}_+} \sim (1,3), \qquad g\big|_{\mathbb{M}_-} \sim (3,1)
+g(\tilde Q,\tilde Q) = a^2 - \lvert v\rvert^2 \ \text{ on } \mathbb{M}_+, \qquad
+g(\tilde Q,\tilde Q) = \lvert v\rvert^2 - a^2 \ \text{ on } \mathbb{M}_- .
 \;}.
 $$</p>
 <p>Consequently $\mathbb{M}_-$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{M}_-,g)$; $\mathbb{M}_+$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.</p>
 <p><em>Proof.</em> On $\mathbb{M}_+$ the basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ gives diagonal entries $g(e_t,e_t) = +1$ and $g(j\vec e_k,j\vec e_k) = -1$, hence signature $(1,3)$. On $\mathbb{M}_-$ the basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$ gives $g(je_t,je_t) = -1$ and $g(\vec e_k,\vec e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.</p>
 <p>The element $je_t$ is therefore a <strong>timelike</strong> vector of the algebra, of $g$-norm $-1$; the elements $\vec e_x, \vec e_y, \vec e_z$ are <strong>spacelike</strong>, of $g$-norm $+1$; and $\mathbb{M}_-$ is the Lorentzian four-space attached to the split biquaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{M}_{\pm}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.</p>
-<h3 id="neutral-planes-and-the-math180-form">Neutral Planes and the $(2,2)$ Form</h3>
+<h3 id="neutral-planes-and-the-math186-form">Neutral Planes and the $(2,2)$ Form</h3>
 <p><strong>Definition.</strong> A real subspace $W\subset\mathbb{B}^{\mathrm{spl}}$ is <strong>neutral</strong> if $\dim W = 4$ and $g\big|_W$ has signature $(2,2)$. Such a subspace is <strong>totally isotropic</strong> if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{B}^{\mathrm{spl}}$ are four-dimensional.</p>
 <p><strong>Proposition.</strong> Let $\mu\neq\nu$ be two distinct elements of $\{t,x,y,z\}$. The $\mathbb{C}^{\mathrm{spl}}$-span</p>
 <p>$$
@@ -172,7 +173,7 @@ $$</p>
 <p><em>Proof.</em> Multiplicativity of the split-biquaternion norm shows that $\tilde S\tilde{Q}\tilde Q_3^{-1}$ has norm $\langle\tilde S\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}^{-1} = \langle\tilde{Q}\rangle_{\natural}$ when $\tilde S,\tilde Q_3$ have norm $e_t$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in <em>Quaternion Rotations and Reflections</em>.</p>
 <p>The comparison with the quaternion sphere is then as follows. In the quaternion algebra the unit sphere $S^3$ is the whole group of units; in the split biquaternion algebra the unit sphere is $S^3\times S^3$, and the group of all units is four times as large in dimension, $\mathbb{H}^\times\times\mathbb{H}^\times$. The compactness of $S^3$ is not lost but doubled. What is lost is the divisibility: the split biquaternion algebra has zero divisors, so the set of elements of norm one is a proper subset of the units, and the polar decomposition of a unit is governed by the idempotent decomposition rather than by a single unit quaternion.</p>
 <h2 id="realising-the-rotations-in-the-algebra">Realising the Rotations in the Algebra</h2>
-<h3 id="the-math243-unitary-group-and-the-elliptic-rotations">The $*$-Unitary Group and the Elliptic Rotations</h3>
+<h3 id="the-math249-unitary-group-and-the-elliptic-rotations">The $*$-Unitary Group and the Elliptic Rotations</h3>
 <p><strong>Definition.</strong> The <strong>$*$-unitary group</strong> of the Hermitian form is</p>
 <p>$$
 \mathrm{U}(\mathbb{B}^{\mathrm{spl}}) = \{\tilde S\in\mathbb{B}^{\mathrm{spl}} : \tilde S\tilde{S}^{*} = e_t\}.
