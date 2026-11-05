@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left and Right Actions of Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="left-and-right-actions-of-operators"><strong>Left and Right Actions of Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>One operator and two readings.</strong> The gradient $\tilde\nabla$ differentiates the factor written after it: $\tilde\nabla\tilde Q_{\mathrm f}$ is the reading in which the units stand before the differentiated field. The same four units and the same four derivatives can be read with the units standing after the field, and that reading is written with a long arrow over the operator, $\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$. The arrow belongs to the operator and not to the field, and it points at the factor the operator acts on.</p>
+<p><strong>The two readings do not agree, and the difference is one term.</strong> On a general element-valued field the two differ by twice the curl of the vector part,</p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm f}=-2\nabla\times\vec Q_{\mathrm f},
+$$</p>
+<p>with the scalar parts equal. The identity is not an accident of the four units. It follows from one commutator, $\vec e_j\tilde Q-\tilde Q\vec e_j=2\vec e_j\times\vec Q$, summed over the three vector units against the three vector derivatives.</p>
+<p><strong>Neither reading is a derivation of the pointwise product.</strong> Both Leibniz rules fail, and they fail by the same commutator, once on each side. The left rule carries the defect $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right rule carries $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$. The defect vanishes for a central factor and for a constant partner, and for neither reason in general.</p>
+<p><strong>What the article establishes.</strong> Five claims, each computed before it is asserted. First, an element generates two operators and its two products differ by the vector product with the unit. Second, the readings of the gradient differ by exactly the curl, so they agree on the fields whose vector part is curl-free and disagree on the rest. Third, both Leibniz rules need a defect term, and the corrected forms are stated. Fourth, the arrow cannot be replaced by plain juxtaposition, because the plain product is the operator that differentiates the other factor. Fifth, integration by parts joins the two readings rather than one of them: each is the formal adjoint of the other, up to a sign and a boundary term.</p>
+<p><strong>Why the matter is not notational.</strong> The corpus uses both readings and uses them for different jobs. The wave operators are written in the left reading, the integration identities in the right one, and the wedge that extracts the curl silently in the right one as well. A page that writes one where the other is meant loses a sign on the curl and keeps every scalar term, so the error survives a check of the scalar part and shows only in the vector part. That is the failure mode this note exists to close.</p>
+<h2 id="what-an-action-is">What an Action Is</h2>
+<p><strong>An element is not an operator, and it generates two.</strong> The biquaternion algebra $\mathbb{B}$ is a four-dimensional complex vector space with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. Its operators form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$. An element $a$ of $\mathbb{B}$ is not such an operator; it generates one on each side, the left multiplication $L_a\psi=a\psi$ and the right multiplication $R_b\psi=\psi b$, and the two-sided product $L_aR_b\psi=a\psi b$ (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>).</p>
+<p><strong>The side is position, and the glyph does not mark it.</strong> A left action writes its element before the operand and a right action writes it after, $a\psi$ against $\psi a$. No mark on the glyph says which side is meant, because the position already says it, and the operand is itself a glyph so the position is unambiguous.</p>
+<p><strong>The two sides are exchanged by the conjugation.</strong> For the quaternion conjugation $\natural$ the anti-automorphism gives $(a\psi)^{\natural}=\psi^{\natural}a^{\natural}$. A right action on a field is therefore a left action on the conjugate field, and the exchange costs one application of the involution on each object.</p>
+<p><strong>A differential operator carries its derivatives and its units in one glyph.</strong> The gradient is an element whose four coefficients are derivatives, so it generates $L_{\tilde\nabla}$ and $R_{\tilde\nabla}$ in the same way as any element. The difference from a constant element is that the derivative must be told which factor it differentiates. Position does that job: in $\tilde\nabla\tilde Q_{\mathrm f}$ the derivative differentiates $\tilde Q_{\mathrm f}$, and in $\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$ it differentiates $\tilde Q_{\mathrm f}$ as well, from the other side.</p>
+<p><strong>The one case position cannot decide.</strong> In a product of two distinct factors the derivative could belong to either, and position alone leaves the reading open, $F\tilde\nabla G$ being ambiguous. That is why the corpus keeps a name for the right reading, $\nabla^{R}$, used only inside such a product (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). On a single factor the arrow is enough and the name is not needed.</p>
+<h2 id="the-commutator-of-a-unit-with-an-element">The Commutator of a Unit with an Element</h2>
+<p><strong>One identity generates the whole subject.</strong> Write $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Then</p>
+<p>$$
+e_t\tilde Q=\tilde Qe_t,
+\qquad
+\vec e_j\tilde Q-\tilde Q\vec e_j=2\,\vec e_j\times\vec Q\quad (j=x,y,z),
+$$</p>
+<p>where the vector product is taken between the unit and the vector part of $\tilde Q$, in that order. The time unit is the identity, so it commutes with everything; a vector unit anticommutes with the two vector units perpendicular to it and squares to $-e_t$, so its commutator with an element returns the vector product.</p>
+<p><strong>The eight products, in full.</strong> The identity above is easier to trust once the products are written out. The columns are the two sides, and the entries are the four coefficients $(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>unit</th>
+<th>$e_\mu\tilde Q$, the left product</th>
+<th>$\tilde Qe_\mu$, the right product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$(Q_t,\ Q_x,\ Q_y,\ Q_z)$</td>
+<td>$(Q_t,\ Q_x,\ Q_y,\ Q_z)$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$(-Q_x,\ Q_t,\ -Q_z,\ Q_y)$</td>
+<td>$(-Q_x,\ Q_t,\ Q_z,\ -Q_y)$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$(-Q_y,\ Q_z,\ Q_t,\ -Q_x)$</td>
+<td>$(-Q_y,\ -Q_z,\ Q_t,\ Q_x)$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$(-Q_z,\ -Q_y,\ Q_x,\ Q_t)$</td>
+<td>$(-Q_z,\ Q_y,\ -Q_x,\ Q_t)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the two columns differ, and where they do not.</strong> They agree on the time unit, identically. On a vector unit they agree in the two slots belonging to $e_t$ and to that unit, and they differ by a sign in the two slots belonging to the other two units. The sign is the whole of the non-commutativity: it appears exactly where two distinct vector units meet, and nowhere else.</p>
+<p><strong>The consequence for a derivative.</strong> A coefficient differentiates to a scalar factor, so the difference of the two products is linear in the coefficients and the same sign pattern applies term by term. That is why a difference of two readings built from the same four derivatives can only ever produce a vector, never a scalar.</p>
+<h2 id="the-two-readings-of-the-gradient">The Two Readings of the Gradient</h2>
+<p><strong>The left reading is the gradient itself.</strong></p>
+<p>$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+$$</p>
+<p>and $\tilde\nabla\tilde Q_{\mathrm f}$ is the element whose four coefficients are the four directional derivatives combined in the left products. It is one element of $\mathbb{B}$ with derivative coefficients, and it acts on one side.</p>
+<p><strong>The right reading is the same gradient read on the other side.</strong></p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}:=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\tilde Q_{\mathrm f}}{\partial Q_\mu}\,e_\mu ,
+$$</p>
+<p>the same four coefficients in the same four directions, with the unit written after each. It is not a second operator and not a new element: it is the gradient with its two factors exchanged, and the exchange is what the difference below computes.</p>
+<p><strong>The arrow.</strong> The long arrow over a glyph marks that the operator acts on the factor written to its left, and it points at that factor. It is not the short arrow of the pure part, which sits on an element and marks its vector part alone. The two marks never meet: the short arrow sits on $\vec e_x$ and on $\vec p$, the long one on an operator.</p>
+<p><strong>The name in the integration articles.</strong> The integration articles write this object $\nabla^{R}$ and place the name after the factor it differentiates, $F^{\mathrm{fn}}\nabla^{R}$. The name is a position, not a second operator, and it is used only where a derivative meets two distinct factors and the position alone would be ambiguous.</p>
+<h2 id="the-left-reading-expanded">The Left Reading Expanded</h2>
+<p><strong>The four lines.</strong> With $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+Q_{\mathrm{f}x}\vec e_x+Q_{\mathrm{f}y}\vec e_y+Q_{\mathrm{f}z}\vec e_z$ and each coefficient a function of the four coordinates, the left reading is</p>
+<p>$$
+\tilde\nabla\tilde Q_{\mathrm f}=
+\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_t}-\frac{\partial Q_{\mathrm{f}x}}{\partial Q_x}-\frac{\partial Q_{\mathrm{f}y}}{\partial Q_y}-\frac{\partial Q_{\mathrm{f}z}}{\partial Q_z}\Bigr)e_t
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_x}+\frac{\partial Q_{\mathrm{f}x}}{\partial Q_t}-\frac{\partial Q_{\mathrm{f}y}}{\partial Q_z}+\frac{\partial Q_{\mathrm{f}z}}{\partial Q_y}\Bigr)\vec e_x
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_y}+\frac{\partial Q_{\mathrm{f}x}}{\partial Q_z}+\frac{\partial Q_{\mathrm{f}y}}{\partial Q_t}-\frac{\partial Q_{\mathrm{f}z}}{\partial Q_x}\Bigr)\vec e_y
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_z}-\frac{\partial Q_{\mathrm{f}x}}{\partial Q_y}+\frac{\partial Q_{\mathrm{f}y}}{\partial Q_x}+\frac{\partial Q_{\mathrm{f}z}}{\partial Q_t}\Bigr)\vec e_z .
+$$</p>
+<p><strong>Reading the display.</strong> Each line combines four derivatives of the four coefficients, one derivative per coordinate. The pattern is the multiplication table of the units read on the left: the diagonal terms carry the time derivative of the matching coefficient, the terms that mix two distinct vector directions carry a minus, and the terms that mix the time direction with a vector direction carry a plus.</p>
+<p><strong>The first line is a divergence with a sign.</strong> The scalar part is</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde\nabla\tilde Q_{\mathrm f}\bigr)=\frac{\partial Q_{\mathrm{f}t}}{\partial Q_t}-\nabla\cdot\vec Q_{\mathrm{f}},
+$$</p>
+<p>with $\nabla\cdot\vec Q_{\mathrm{f}}$ the divergence in the three vector coordinates. That is the object a conservation law names, and it is why the scalar reading of the gradient is the divergence and not a length.</p>
+<p><strong>The array.</strong> In the coefficient basis the reading has an array whose entries are derivatives, and its four rows are the four lines above,</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde\nabla)=
+\begin{pmatrix}
+\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\[2pt]
+\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}\\[2pt]
+\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}\\[2pt]
+\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}&\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\end{pmatrix}.
+$$</p>
+<p>It is the multiplication table of the units read with derivative coefficients (<em>Matrix Representations Conventions</em>, §<em>The Left Family</em>), and the right reading has the array of §<em>The Right Family</em> there. Its first column is the gradient itself, because $\tilde\nabla e_t=\tilde\nabla$.</p>
+<h2 id="the-right-reading-expanded">The Right Reading Expanded</h2>
+<p><strong>The four lines.</strong> The same expansion with the units on the other side is</p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}=
+\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_t}-\frac{\partial Q_{\mathrm{f}x}}{\partial Q_x}-\frac{\partial Q_{\mathrm{f}y}}{\partial Q_y}-\frac{\partial Q_{\mathrm{f}z}}{\partial Q_z}\Bigr)e_t
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_x}+\frac{\partial Q_{\mathrm{f}x}}{\partial Q_t}+\frac{\partial Q_{\mathrm{f}y}}{\partial Q_z}-\frac{\partial Q_{\mathrm{f}z}}{\partial Q_y}\Bigr)\vec e_x
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_y}-\frac{\partial Q_{\mathrm{f}x}}{\partial Q_z}+\frac{\partial Q_{\mathrm{f}y}}{\partial Q_t}+\frac{\partial Q_{\mathrm{f}z}}{\partial Q_x}\Bigr)\vec e_y
++\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial Q_z}+\frac{\partial Q_{\mathrm{f}x}}{\partial Q_y}-\frac{\partial Q_{\mathrm{f}y}}{\partial Q_x}+\frac{\partial Q_{\mathrm{f}z}}{\partial Q_t}\Bigr)\vec e_z .
+$$</p>
+<p><strong>What changed.</strong> The first line is identical, term for term. In the other three lines the diagonal and the time-mixing terms are also identical; only the terms that mix two distinct vector directions changed sign. There are two such terms per line, six in all, and the six signs are the difference between the two readings.</p>
+<p><strong>The array.</strong> The right reading has its own array, and its rows are the four lines above,</p>
+<p>$$
+R^{\mathrm{axf}}(\tilde\nabla)=
+\begin{pmatrix}
+\frac{\partial}{\partial Q_t}&-\frac{\partial}{\partial Q_x}&-\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}\\[2pt]
+\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_z}&-\frac{\partial}{\partial Q_y}\\[2pt]
+\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_t}&\frac{\partial}{\partial Q_x}\\[2pt]
+\frac{\partial}{\partial Q_z}&\frac{\partial}{\partial Q_y}&-\frac{\partial}{\partial Q_x}&\frac{\partial}{\partial Q_t}
+\end{pmatrix}.
+$$</p>
+<p><strong>The two arrays compared.</strong> The first rows agree. In the remaining nine entries the two arrays differ only in the antisymmetric pattern of the mixed spatial derivatives, and the difference is</p>
+<p>$$
+L^{\mathrm{axf}}(\tilde\nabla)-R^{\mathrm{axf}}(\tilde\nabla)=
+\begin{pmatrix}
+0&0&0&0\\[2pt]
+0&0&-2\frac{\partial}{\partial Q_z}&2\frac{\partial}{\partial Q_y}\\[2pt]
+0&2\frac{\partial}{\partial Q_z}&0&-2\frac{\partial}{\partial Q_x}\\[2pt]
+0&-2\frac{\partial}{\partial Q_y}&2\frac{\partial}{\partial Q_x}&0
+\end{pmatrix},
+$$</p>
+<p>which is twice the array of the curl: applied to the coefficient column it returns $2\nabla\times\vec Q_{\mathrm f}$ and nothing else. The entire content of the transposition is in that block, and the block is antisymmetric, so the transposition can never be mistaken for a sign on the whole operator.</p>
+<h2 id="the-difference-is-the-curl">The Difference Is the Curl</h2>
+<p><strong>The identity.</strong> Subtracting the two readings term by term, and using the commutator of a unit with an element, gives</p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm f}=-2\nabla\times\vec Q_{\mathrm f},
+\qquad
+\tilde\nabla\tilde Q_{\mathrm f}-\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}=2\nabla\times\vec Q_{\mathrm f},
+$$</p>
+<p>with the scalar parts equal, $\mathrm{Sc}(\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla})=\partial Q_{\mathrm{f}t}/\partial Q_t-\nabla\cdot\vec Q_{\mathrm{f}}$. Written out, the difference is</p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm{f}}=
+2\Bigl(\frac{\partial Q_{\mathrm{f}y}}{\partial Q_z}-\frac{\partial Q_{\mathrm{f}z}}{\partial Q_y}\Bigr)\vec e_x
++2\Bigl(\frac{\partial Q_{\mathrm{f}z}}{\partial Q_x}-\frac{\partial Q_{\mathrm{f}x}}{\partial Q_z}\Bigr)\vec e_y
++2\Bigl(\frac{\partial Q_{\mathrm{f}x}}{\partial Q_y}-\frac{\partial Q_{\mathrm{f}y}}{\partial Q_x}\Bigr)\vec e_z ,
+$$</p>
+<p>and each bracket is minus the corresponding component of the curl. The scalar line is untouched, which is the reason a check of the scalar part cannot detect a confusion of the two readings.</p>
+<p><strong>The wedge is the same statement.</strong> Half the difference is the curl, and the corpus writes that half as the wedge (<em>Operator and Calculus Conventions</em>, §<em>The Quaternionic Bilinear Product, Its Form and Its Norm</em>),</p>
+<p>$$
+\tilde\nabla\wedge\tilde Q_{\mathrm f}=\tfrac12\bigl(\tilde\nabla\tilde Q_{\mathrm f}-\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}\bigr)=\nabla\times\vec Q_{\mathrm f}.
+$$</p>
+<p>The second term inside the bracket is the right reading. It has to be: with the plain product $L_{\tilde Q}L_{\tilde\nabla}$ in its place the combination is not the curl, and §<em>The Arrow Cannot Be Replaced</em> computes why. The corpus writes that second term without the arrow; the identity holds for the right reading and for no other, so the arrow is implied there and is better written.</p>
+<p><strong>Worked elements.</strong> With $c=1$ and the four coordinates named after the four units, the two readings are as follows. The last column is the curl, and half the difference of the two middle columns must reproduce it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q_{\mathrm f}$</th>
+<th>$\tilde\nabla\tilde Q_{\mathrm f}$</th>
+<th>$\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$</th>
+<th>$\nabla\times\vec Q_{\mathrm f}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$q_x\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_y$</td>
+<td>$-e_t$</td>
+<td>$-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_z\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_y$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$q_x\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_x$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
+</tr>
+<tr>
+<td>$q_y\vec e_z$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$q_z\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_z\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_z$</td>
+<td>$q_x\vec e_x-q_y\vec e_y$</td>
+<td>$-q_x\vec e_x+q_y\vec e_y$</td>
+<td>$q_x\vec e_x-q_y\vec e_y$</td>
+</tr>
+<tr>
+<td>$q_xq_y\vec e_x$</td>
+<td>$-q_ye_t-q_x\vec e_z$</td>
+<td>$-q_ye_t+q_x\vec e_z$</td>
+<td>$-q_x\vec e_z$</td>
+</tr>
+<tr>
+<td>$q_xq_z\vec e_y$</td>
+<td>$-q_x\vec e_x+q_z\vec e_z$</td>
+<td>$q_x\vec e_x-q_z\vec e_z$</td>
+<td>$-q_x\vec e_x+q_z\vec e_z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the table.</strong> The three diagonal cases agree in the two readings and have no curl: a field whose vector part is parallel to its own coordinate is the case the two readings cannot tell apart. Every off-diagonal monomial reverses sign between the readings, and the curl is what the reversal encodes. The three products show the pattern surviving when two coordinates are live: on $q_xq_y\vec e_x$ the scalar line is the same in both and the vector line is opposite.</p>
+<p><strong>When the two readings coincide.</strong> Exactly when the vector part is curl-free, $\nabla\times\vec Q_{\mathrm f}=0$. A constant, a longitudinal field of the form $\nabla s$, and any field with a scalar part alone belong to that class; a transverse field does not. A transverse field is the case where the confusion bites: the corpus's massless plane waves are transverse, the difference $-2\nabla\times\vec Q_{\mathrm f}$ is nonzero on them, and it is a vector term that a check of the dispersion relation cannot see.</p>
+<h2 id="both-leibniz-rules-carry-a-defect">Both Leibniz Rules Carry a Defect</h2>
+<p><strong>The left rule fails.</strong> Differentiating a product with the units on the left gives</p>
+<p>$$
+\tilde\nabla(\tilde F\tilde G)=\bigl(\tilde\nabla\tilde F\bigr)\tilde G+\sum_\mu e_\mu\tilde F\frac{\partial\tilde G}{\partial Q_\mu},
+$$</p>
+<p>and the second term is not $\tilde F\tilde\nabla\tilde G$. The two differ because the unit does not pass the factor $\tilde F$:</p>
+<p>$$
+\tilde\nabla(\tilde F\tilde G)-\bigl(\tilde\nabla\tilde F\bigr)\tilde G-\tilde F\bigl(\tilde\nabla\tilde G\bigr)=\sum_\mu\bigl[e_\mu,\tilde F\bigr]\frac{\partial\tilde G}{\partial Q_\mu}.
+$$</p>
+<p>The defect is a sum of commutators with the four units, weighted by the derivatives of the second factor. It vanishes when $\tilde F$ is central and when $\tilde G$ is constant; for a generic pair it does not vanish.</p>
+<p><strong>The right rule fails in the same way, on the other side.</strong></p>
+<p>$$
+(\tilde F\tilde G)\overleftarrow{\tilde\nabla}-\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G-\tilde F\bigl(\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_\mu\frac{\partial\tilde F}{\partial Q_\mu}\bigl[\tilde G,e_\mu\bigr].
+$$</p>
+<p>Here the defect is weighted by the derivatives of the first factor, because it is the unit's passage past $\tilde G$ that fails. A rule that moves the unit past the wrong factor, $\sum_\mu(\partial\tilde F/\partial Q_\mu)e_\mu\tilde G$ in place of the first term, is the commonest misquotation of the identity and differs from it by this sum.</p>
+<p><strong>The corrected right rule, in the shape of the definition.</strong> Collect the derivative of the bracket and put the unit after it,</p>
+<p>$$
+(\tilde F\tilde G)\overleftarrow{\tilde\nabla}=\sum_\mu\Bigl(\frac{\partial\tilde F}{\partial Q_\mu}\tilde G+\tilde F\frac{\partial\tilde G}{\partial Q_\mu}\Bigr)e_\mu ,
+$$</p>
+<p>which is the definition of the reading applied to the product, and which holds with no defect because the unit sits at the end and nothing has to pass it. The corresponding form of the left rule is</p>
+<p>$$
+\tilde\nabla(\tilde F\tilde G)=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu}\bigl(\tilde F\tilde G\bigr),
+$$</p>
+<p>with the derivative still bound to the whole bracket.</p>
+<p><strong>Why the defect is a commutator and not a correction term.</strong> The derivative is not the source of the failure; it acts on scalars and commutes with everything. The failure is entirely in the insertion of the unit at a position. A unit inserted before a factor and the same unit inserted after it differ by the commutator, and the size of the difference is the vector product of §<em>The Commutator of a Unit with an Element</em>. That is why the defect is linear in the derivatives and vanishes identically on a central factor.</p>
+<p><strong>What the corpus already says.</strong> The integration articles record the same fact for the left rule: the Leibniz term $\sum_\mu e_\mu\tilde F\,\partial\tilde G/\partial Q_\mu$ equals $\tilde F(\tilde\nabla\tilde G)$ only when $\tilde F$ commutes with every unit, and the right gradient is the transposition that removes the restriction (<em>Split-Biquaternion Integration</em>, §<em>The Vector Case</em>). The defect written above is the size of that restriction, term by term.</p>
+<h2 id="the-arrow-cannot-be-replaced">The Arrow Cannot Be Replaced</h2>
+<p><strong>The plain product is a different operator.</strong> Written without the arrow, $\tilde Q\tilde\nabla$ is the product of the element $\tilde Q$ with the operator $\tilde\nabla$. Applied to a field it gives $\tilde Q(\tilde\nabla\psi)$: it differentiates the field on its right and not the element on its left. The right reading gives $(\tilde Q\overleftarrow{\tilde\nabla})\psi$, which is the element computed from $\tilde Q$ alone multiplied into $\psi$. The two are different elements for generic $\tilde Q$ and $\psi$.</p>
+<p><strong>The difference is not small.</strong> One differentiates $\psi$ and the other does not differentiate $\psi$ at all, so the two cannot be reconciled by a sign. A page that drops the arrow has changed the operator, not its display.</p>
+<p><strong>The wedge shows the cost.</strong> Replacing the right reading by the plain product inside the wedge gives</p>
+<p>$$
+\tfrac12\bigl(\tilde\nabla(\tilde Q_{\mathrm f}\psi)-\tilde Q_{\mathrm f}(\tilde\nabla\psi)\bigr),
+$$</p>
+<p>and this is not $(\nabla\times\vec Q_{\mathrm f})\psi$: the second part of the Leibniz defect of the left rule survives and the expression keeps a term in the derivatives of $\psi$. The wedge is a statement about the field, and it needs the reading that differentiates the field and nothing else.</p>
+<p><strong>What the arrow can be replaced by, and at what price.</strong> The conjugation reproduces the right reading from the left one,</p>
+<p>$$
+\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{\natural}\bigr)^{\natural},
+$$</p>
+<p>with $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. The price is the conjugate gradient and two applications of the involution. That is the corpus's reading of the transposition: a right action is the left action of the conjugate operator on the conjugate field.</p>
+<p><strong>The wrong version of that identity.</strong> With $\tilde\nabla$ in place of $\tilde\nabla^{\natural}$ the identity fails at order one, because the three spatial units would then not be reversed. The reversal of the units is the whole content: the transposition reverses them and the conjugation supplies the reversal.</p>
+<h2 id="integration-by-parts-joins-the-two-readings">Integration by Parts Joins the Two Readings</h2>
+<p><strong>The sandwich identity, and it is exact.</strong> For two element-valued fields,</p>
+<p>$$
+\sum_\mu\frac{\partial}{\partial Q_\mu}\bigl(\tilde F e_\mu\tilde G\bigr)=\bigl(\tilde F\overleftarrow{\tilde\nabla}\bigr)\tilde G+\tilde F\bigl(\tilde\nabla\tilde G\bigr).
+$$</p>
+<p>The derivative here is the ordinary partial derivative of a product, so the identity is the product rule and carries no defect: the sandwich puts the unit between the two factors, where it belongs to neither of them alone. This is the shape the integration articles use, and it is why they can state a divergence theorem without first stating a product rule.</p>
+<p><strong>The scalar pairing gives adjointness.</strong> Pairing two elements by the real scalar part, the same identity reads</p>
+<p>$$
+\mathrm{Sc}\bigl(\bigl(\tilde\nabla\tilde F\bigr)\tilde G\bigr)+\mathrm{Sc}\bigl(\tilde F\,\tilde G\overleftarrow{\tilde\nabla}\bigr)=\sum_\mu\frac{\partial}{\partial Q_\mu}\mathrm{Sc}\bigl(\tilde F\tilde G e_\mu\bigr),
+$$</p>
+<p>which is the divergence of a vector field and integrates to a boundary term. On a domain with no boundary the two terms cancel, so the left reading and the right reading are formal adjoints of one another up to a sign: $-\overleftarrow{\tilde\nabla}$ is the adjoint of $\tilde\nabla$ for this pairing, and $\tilde\nabla$ is the adjoint of $-\overleftarrow{\tilde\nabla}$.</p>
+<p><strong>The two adjoints are not the same adjoint.</strong> The dagger is the adjoint for the Hermitian form and it carries the involution; the transposition is the adjoint for the scalar part and it carries the position. The corpus fixes the first on the gradient as $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (<em>Operator and Calculus Conventions</em>, §<em>The Transposition of the Gradient</em>), and the second is the identity above. A page that uses the arrow where the dagger is meant loses the involution; a page that uses the dagger where the arrow is meant loses the position.</p>
+<p><strong>The boundary term is the same object in both readings.</strong> In the sandwich form the boundary term is $\tilde F\tilde u_{\mathrm n}\tilde G$ with $\tilde u_{\mathrm n}$ the unit normal; in the paired form it is $\mathrm{Sc}(\tilde F\tilde G e_\mu)$ summed against the normal. The two are the same sum, one written inside the algebra and one outside it.</p>
+<h2 id="where-the-corpus-uses-each">Where the Corpus Uses Each</h2>
+<p><strong>Four places, and the reading is not the same in all four.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>place</th>
+<th>glyph</th>
+<th>reading</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the wave operators</td>
+<td>$\tilde\nabla\tilde Q_{\mathrm f}$</td>
+<td>left</td>
+<td>the operator is an element and acts on the factor it precedes</td>
+</tr>
+<tr>
+<td>the d'Alembertian</td>
+<td>$\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>left twice</td>
+<td>the norm is a product of the gradient with its conjugate</td>
+</tr>
+<tr>
+<td>the integration identities</td>
+<td>$\tilde F\overleftarrow{\tilde\nabla}$, $F^{\mathrm{fn}}\nabla^{R}$</td>
+<td>right</td>
+<td>the derivative must be moved off the factor it differentiates</td>
+</tr>
+<tr>
+<td>the wedge</td>
+<td>$\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$</td>
+<td>right</td>
+<td>the curl is the antisymmetric part of the two readings</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The d'Alembertian is a left double reading.</strong> $\Box=\tilde\nabla\tilde\nabla^{\natural}$ applies the gradient to the field and then the conjugate gradient to the result, both from the left. It is scalar and the two orders agree, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ (<em>The Gradient, the D'Alembertian and the Frame Generators</em>, §<em>The D'Alembertian</em>).</p>
+<p><strong>The integration identities are the only place the right reading is forced.</strong> There the derivative meets two distinct factors whose order matters, and the sandwich identity keeps it attached to one of them. Everything the integration articles state follows from that identity and from nothing else.</p>
+<p><strong>The wedge is where the right reading is easiest to lose.</strong> It is written with the second term as the right reading by definition, and a reader who supplies the plain product gets a different operator. The correction costs one arrow.</p>
+<h2 id="the-five-traps">The Five Traps</h2>
+<p><strong>The first trap: the two readings are the same.</strong> They are not, and they differ by twice the curl. They agree on a curl-free field, which includes every constant and every field with a scalar part alone, so a test on a constant field will not detect the confusion.</p>
+<p><strong>The second trap: the scalar part is enough.</strong> Both readings have the same scalar part, $-\nabla\cdot\vec Q_{\mathrm{f}}$ beside the time derivative. A check of the divergence therefore passes whichever reading is used, and the error survives. The vector part is where the two differ, and it must be checked separately.</p>
+<p><strong>The third trap: a product rule without a defect.</strong> Neither reading is a derivation of the pointwise product. The left rule needs $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right rule needs $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$, and the corrected forms put the unit after the bracket on the right and bind the derivative to the bracket on the left. A page that writes either rule without the defect is wrong for every non-central factor, which is every factor of the series.</p>
+<p><strong>The fourth trap: the arrow means "adjoint".</strong> It does not. The arrow marks the side, and the adjoint is the dagger, which carries the involution. A page that treats the arrow as an adjoint writes the transposition where the Hermitian pairing is meant and loses the involution.</p>
+<p><strong>The fifth trap: the arrow can be dropped when it is obvious.</strong> It cannot, because the plain product is the operator that differentiates the other factor. The corpus keeps a second name, $\nabla^{R}$, for the case where the position alone is ambiguous, and using it consistently is cheaper than deciding case by case whether the reader will guess the same side.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>An element generates two operators.</strong> $L_a$ and $R_b$ act from the two sides and the side is position. The gradient is an element with derivative coefficients, so it generates both readings, and the two are told apart by the long arrow or by the name $\nabla^{R}$.</p>
+<p><strong>The two readings differ by the curl.</strong> $\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}-\tilde\nabla\tilde Q_{\mathrm f}=-2\nabla\times\vec Q_{\mathrm f}$, and $\tilde\nabla\wedge\tilde Q_{\mathrm f}=\nabla\times\vec Q_{\mathrm f}$ is half of the same statement. The scalar parts are equal, and the whole difference sits in the antisymmetric block of the two arrays.</p>
+<p><strong>The difference has one origin.</strong> $\vec e_j\tilde Q-\tilde Q\vec e_j=2\vec e_j\times\vec Q$, summed against the three vector derivatives. Nothing else in the algebra contributes.</p>
+<p><strong>Both Leibniz rules carry a commutator defect.</strong> The left rule fails by $\sum_\mu[e_\mu,\tilde F]\partial\tilde G/\partial Q_\mu$ and the right by $\sum_\mu(\partial\tilde F/\partial Q_\mu)[\tilde G,e_\mu]$; both vanish for a central factor and for a constant partner. The corrected forms place the unit after the bracket on the right and bind the derivative to the bracket on the left.</p>
+<p><strong>The arrow is not decoration.</strong> The plain product is the operator that differentiates the factor on its right, so dropping the arrow changes the operator. The conjugation gives the right reading from the left one, at the price of the conjugate gradient.</p>
+<p><strong>Integration by parts joins the two readings.</strong> The sandwich identity is exact and carries no defect, and the scalar pairing makes each reading the formal adjoint of the other up to a sign. The corpus needs both readings for that reason and not for symmetry.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla\tilde Q_{\mathrm f}$</td>
+<td>the left reading, $\sum_\mu e_\mu\partial\tilde Q_{\mathrm f}/\partial Q_\mu$; an element with derivative coefficients</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\mathrm f}\overleftarrow{\tilde\nabla}$</td>
+<td>the right reading, $\sum_\mu(\partial\tilde Q_{\mathrm f}/\partial Q_\mu)e_\mu$; the same gradient with its two factors exchanged</td>
+</tr>
+<tr>
+<td>$\overleftarrow{\ }$</td>
+<td>the long arrow over an operator: it acts on the factor written to its left, and the arrow points at that factor; not the short arrow of the pure part</td>
+</tr>
+<tr>
+<td>$\nabla^{R}$</td>
+<td>the name of the right reading inside a product of two distinct factors, written $F\nabla^{R}$</td>
+</tr>
+<tr>
+<td>$L_a$, $R_b$</td>
+<td>left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$</td>
+</tr>
+<tr>
+<td>$L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$</td>
+<td>the arrays of the two readings in the coefficient basis; their difference is twice the array of the curl</td>
+</tr>
+<tr>
+<td>$\nabla\times\vec Q_{\mathrm{f}}$</td>
+<td>the curl of the vector part, half the difference of the two readings</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part, the coefficient of $e_t$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>the conjugate gradient, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$</td>
+</tr>
+<tr>
+<td>$[\ ,\ ]$</td>
+<td>the commutator, $[a,b]=ab-ba$; the defect of both Leibniz rules is a sum of these against the units</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm n}$</td>
+<td>the unit normal in the boundary term $\tilde F\tilde u_{\mathrm n}\tilde G$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the definition of the transposed gradient, the product rule that carries the defect, and the summary of notation.</li>
+<li><a href="../articles_maths/split-biquaternion-integration.html">Split-Biquaternion Integration</a>, for $\nabla^{R}$ inside the integration-by-parts identities and the remark on the non-commutative correction.</li>
+<li><a href="../articles_maths/quaternion-integration.html">Quaternion Integration</a>, for the same identities in the quaternion case, where the units are real and the conjugation is the identity on them.</li>
+<li><a href="the-gradient-the-dalembertian-and-the-frame-generators.html">The Gradient, the D'Alembertian and the Frame Generators</a>, for the array of the left reading and the operators built from it.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the coefficient-basis arrays $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ and the sixteen two-sided products.</li>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the congruence that carries a left multiplier to a right multiplier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

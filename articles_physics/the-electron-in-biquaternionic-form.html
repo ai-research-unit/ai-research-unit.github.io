@@ -155,10 +155,10 @@ $$</p>
 <p>$$
 \tilde P \to \tilde P - ϙ\tilde A, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
 $$</p>
-<p>with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $D$ of <em>Operator and Calculus Conventions</em> and its conjugate $D^{\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation</p>
+<p>with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which replaces $\tilde\nabla$ and $\tilde\nabla^{\natural}$ by the gauge-covariant derivative $\tilde\nabla^{\mathrm{gco}}$ of <em>Operator and Calculus Conventions</em> and its conjugate $\tilde\nabla^{\mathrm{gco},\natural}$, both carrying $+\frac{iϙ}{\hbar}\tilde{A}$, and derives the coupled equation</p>
 <p>$$
-D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
-D^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+\tilde\nabla^{\mathrm{gco}}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad
+\tilde\nabla^{\mathrm{gco},\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$</p>
 <p>and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore <em>represented</em> in the framework, not derived by it.</p>
 <p>Four statements are worth separating.</p>
@@ -194,11 +194,11 @@ $$</p>
 <p>This is the form in which the chirality is visible, and it is the form the sections on mass and on the two chirality values use.</p>
 <p>The <strong>two-sided equation</strong> is the dictionary form of V. V. Kravchenko: a single equation on the algebra-valued field $F\in\mathbb{B}$,</p>
 <p>$$
-\mathcal{N}F = \Big(i\frac{\partial}{\partial t'}+D_3\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
+\mathcal{N}F = \Big(i\frac{\partial}{\partial t'}+\nabla_{3}\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
 \qquad\text{that is}\qquad
 -\tilde{\nabla}^{\natural}F - m\,i\,\overline{F}\,\vec e_z = 0
 $$</p>
-<p>in natural units, with $D_3 = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.</p>
+<p>in natural units, with $\nabla_{3} = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -226,7 +226,7 @@ $$</p>
 <tr>
 <td>Derivative</td>
 <td>left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$</td>
-<td>left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$ in the mass</td>
+<td>left by $i\partial/\partial t'$ and $\nabla_{3}$; right by $\vec e_z$ in the mass</td>
 </tr>
 <tr>
 <td>Chirality</td>
@@ -508,7 +508,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <td>Electron mass, elementary charge, reduced Planck constant, speed of light</td>
 </tr>
 <tr>
-<td>$\mathcal{N}F = (i\partial/\partial t'+D_3)F - mi\,\overline{F}\,\vec e_z$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$</td>
+<td>$\mathcal{N}F = (i\partial/\partial t'+\nabla_{3})F - mi\,\overline{F}\,\vec e_z$, $\nabla_{3}=\sum_k\vec e_k\partial/\partial Q_k$</td>
 <td>Two-sided Dirac equation of the dictionary form</td>
 </tr>
 <tr>

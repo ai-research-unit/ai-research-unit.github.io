@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Letter D on the Covariant Derivative: An Inventory and a Retirement — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-letter-d-on-the-covariant-derivative-an-inventory-and-a-retirement"><strong>The Letter D on the Covariant Derivative: An Inventory and a Retirement</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The physics corpus writes the covariant derivative with the letter $D$. The conventions give it another glyph. <em>Algebra and Element Conventions</em> calls the operator $\tilde D$ and reserves $D_\mu$ for its component. So the four articles that carry the bar write a letter the corpus does not own, and one of them carries a second mark on the same letter.</p>
+<p>Two substitutions retire both. The conjugation is written with the involution, and the operator is written as the gradient it is built on:</p>
+<p>$$
+D \;\longrightarrow\; \tilde\nabla^{\mathrm{gco}},
+\qquad
+D_\mu \;\longrightarrow\; \tilde\nabla^{\mathrm{gco}}_\mu,
+\qquad
+\bar D \;\longrightarrow\; \tilde\nabla^{\mathrm{gco},\natural}.
+$$</p>
+<p>The reading is the gradient's own. The biquaternionic gradient is $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$. The gauged gradient is the same sum with the derivative replaced by the covariant coefficient:</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu\,\tilde\nabla^{\mathrm{gco}}_\mu,
+\qquad
+\tilde\nabla^{\mathrm{gco}}_\mu = \frac{\partial}{\partial Q_\mu} + \frac{iϙ}{\hbar}A_\mu .
+$$</p>
+<p>One index, one basis element, one scalar coefficient per direction, exactly as for $\tilde\nabla$. The label $\mathrm{gco}$ is new; it appears in neither corpus and collides with nothing.</p>
+<p>The work is done: four articles, 410 tokens on 208 line-touches. No equation changes value.</p>
+<h2 id="the-two-defects">The Two Defects</h2>
+<p><strong>The letter.</strong> The corpus had already answered this. <em>Algebra and Element Conventions</em>, line 376, defined $\tilde D=\tilde\nabla+i\kappa\mathcal A$ as the gauge-covariant derivative and closed the row with the sentence that mattered: <em>"The component $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ carries no tilde."</em> The operator under that convention was $\tilde D$, and the letter $D$ alone was not a name the conventions gave. Four articles used it anyway, 323 times. That row is now $\tilde\nabla^{\mathrm{gco}}$, and §<em>The Gauge-Covariant Gradient</em> of <em>Operator and Calculus Conventions</em> defines it.</p>
+<p><strong>The bar.</strong> The bar is a second mark for a map already named $\natural$. <em>The Minimal Coupling</em> writes $(\tilde\Psi D)^{\natural}=D^{\natural}\tilde\Psi^{\natural}$ and, in the same sentence, $D^{\natural}=\bar D$: the definition of the bar as shorthand. <em>Operator and Calculus Conventions</em>, where the renaming theorem is stated, uses $D^{\natural}$ thirteen times and the bar never. The plain gradient is never barred anywhere in the physics corpus.</p>
+<p>The two defects are independent. The bar sat on the letter $D$; retiring the letter does not retire the bar, and retiring the bar does not retire the letter. Both are retired here.</p>
+<h2 id="the-rule">The Rule</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>as printed</th>
+<th>written as</th>
+<th>note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>the operator</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}_\mu$</td>
+<td>the component, read as the gradient's coefficient</td>
+</tr>
+<tr>
+<td>$D^{\natural}$</td>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}$</td>
+<td>the conjugate, label first, conjugation second</td>
+</tr>
+<tr>
+<td>$D_2$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}_{2}$</td>
+<td>the gauge-transformed copy</td>
+</tr>
+<tr>
+<td>$D_2^{\natural}$</td>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}_{2}$</td>
+<td>the copy, conjugated</td>
+</tr>
+<tr>
+<td>$\bar D$, $\bar{D}$</td>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}$</td>
+<td>the operator under the conjugation</td>
+</tr>
+<tr>
+<td>$\bar D D$</td>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}\tilde\nabla^{\mathrm{gco}}$</td>
+<td>the covariant square</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$, $\bar{e}_\mu$, $\bar{e}_t$, $\bar{e}_\nu$</td>
+<td>$e_\mu^{\natural}$, $e_t^{\natural}$, $e_\nu^{\natural}$</td>
+<td>the conjugate basis</td>
+</tr>
+<tr>
+<td>$D_3$</td>
+<td>$\nabla_{3}$</td>
+<td><strong>not</strong> this operator: the spatial gradient, no connection</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is a refusal, not a substitution. In <em>The Electron</em>, $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three-dimensional Cauchy–Riemann operator, with no connection in it. Writing it $\tilde\nabla^{\mathrm{gco}}_3$ would assert a coupling that the equation does not carry. The corpus writes that object $\nabla$ — <em>Canonical Quantization of the Biquaternion Dirac Field</em>, for instance, "$\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ the spatial gradient" — so the subscript form $\nabla_3$ keeps the family and drops the false label.</p>
+<h2 id="the-census-before">The Census Before</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>$D$</th>
+<th>$D_\mu$</th>
+<th>$D^{\natural}$</th>
+<th>$D_2$</th>
+<th>$D_2^{\natural}$</th>
+<th>$D_3$</th>
+<th>$\bar D$</th>
+<th>$\bar e_\mu$</th>
+<th>tokens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection</a></td>
+<td>84</td>
+<td>64</td>
+<td>29</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>30</td>
+<td>21</td>
+<td>233</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling</a></td>
+<td>54</td>
+<td>11</td>
+<td>23</td>
+<td>5</td>
+<td>4</td>
+<td>0</td>
+<td>28</td>
+<td>0</td>
+<td>125</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom, Relativistic Case</a></td>
+<td>19</td>
+<td>0</td>
+<td>6</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron</a></td>
+<td>4</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>0</td>
+<td>13</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>161</strong></td>
+<td><strong>75</strong></td>
+<td><strong>60</strong></td>
+<td><strong>18</strong></td>
+<td><strong>4</strong></td>
+<td><strong>5</strong></td>
+<td><strong>66</strong></td>
+<td><strong>21</strong></td>
+<td><strong>410</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Of the 323 letter tokens, 153 lines carry one, counted after the bar edit. Of the 87 bar tokens, 55 lines carried one, counted before it. The two edits overlap, so 208 is a sum of line-touches and not a count of distinct lines.</p>
+<h2 id="what-was-written">What Was Written</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>$\tilde\nabla^{\mathrm{gco}}$ now</th>
+<th>$\nabla_3$</th>
+<th>$D$ left</th>
+<th>$\bar D$ left</th>
+<th>$\bar e_\mu$ left</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Covariant Derivative and Gauge Connection</td>
+<td>186</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>The Minimal Coupling</td>
+<td>97</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>The Hydrogen Atom</td>
+<td>31</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>The Electron</td>
+<td>4</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>318</strong></td>
+<td><strong>5</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>318 plus 5 is 323. Every token is accounted for, and no letter $D$ remains as a variable in the four files. The 318 counts each $\tilde\nabla^{\mathrm{gco}}$ once, whether bare, with a component, or with the conjugation.</p>
+<h2 id="the-definition-as-it-now-reads">The Definition as It Now Reads</h2>
+<p>The first article's definition gained the decomposition, so that the glyph is defined the way the gradient is defined:</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu\,\tilde\nabla^{\mathrm{gco}}_\mu = \tilde\nabla + \frac{iϙ}{\hbar}\tilde A,
+\qquad
+\tilde\nabla^{\mathrm{gco}}_\mu = \frac{\partial}{\partial Q_\mu} + \frac{iϙ}{\hbar}A_\mu .
+$$</p>
+<p>The conjugate follows without a second definition, because the component is a central scalar and passes through the involution:</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco},\natural} = \sum_\mu e_\mu^{\natural}\,\tilde\nabla^{\mathrm{gco}}_\mu = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural}.
+$$</p>
+<p>The covariant square reads</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco},\natural}\tilde\nabla^{\mathrm{gco}} = \sum_\mu \tilde\nabla^{\mathrm{gco}}_\mu{}^{2} + \frac{iϙ}{\hbar}\tilde F ,
+$$</p>
+<p>with $\tilde\nabla^{\mathrm{gco}}_\mu{}^2$ meaning $\tilde\nabla^{\mathrm{gco}}_\mu\tilde\nabla^{\mathrm{gco}}_\mu$. The scalar part is the covariant d'Alembertian, the vector part the curvature. The chiral pair reads</p>
+<p>$$
+\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L,
+\qquad
+\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R ,
+$$</p>
+<p>both acting from the left, separated by $\natural$ alone.</p>
+<h2 id="why-the-writing-holds">Why the Writing Holds</h2>
+<p>Four identities were checked after the edit, on 100 random draws of the connection and the field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>identity</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu$ against $\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$</td>
+<td>$0.00$</td>
+</tr>
+<tr>
+<td>$e_\mu^{\natural}e_\nu+e_\nu^{\natural}e_\mu=0$ for $\mu\neq\nu$, and $e_\mu^{\natural}e_\mu=e_t$</td>
+<td>$0.00$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}\tilde\nabla^{\mathrm{gco}}$ against $\sum_\mu\tilde\nabla^{\mathrm{gco}}_\mu{}^2+\frac{iϙ}{\hbar}\tilde F$</td>
+<td>$8.9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$[\,\tilde\nabla^{\mathrm{gco}}_\mu,\tilde\nabla^{\mathrm{gco}}_\nu\,]=\frac{iϙ}{\hbar}F_{\mu\nu}$</td>
+<td>$0.00$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The conjugation is $\mathbb{C}$-linear, so it acts on the basis and leaves the coefficients alone. That is what lets the same component carry through both members of the pair, and it is why the conjugate needs no coefficient of its own. Had the coefficients been valued in the algebra, the last line of the definition would fail and the writing would be wrong — no article of the four does that.</p>
+<p><strong>The bar was not a different map.</strong> $\bar D$ and $D^{\natural}$ were the same array, at residual $0.00$ before the edit. The bar is retired with no change of meaning; only the spelling moves.</p>
+<h2 id="what-remains-in-the-corpus">What Remains in the Corpus</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>occurrences</th>
+<th>where</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar D$</td>
+<td>15</td>
+<td>13 in <em>The Chiral Algebra</em> for the cyclic operator, 2 false positives</td>
+<td>left alone: a different operator</td>
+</tr>
+<tr>
+<td>$\bar e_\mu$</td>
+<td>49</td>
+<td>8 articles carrying no $\bar D$</td>
+<td>same defect, unpatched</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>392</td>
+<td>39 articles</td>
+<td>the conventions' own glyph for the component; not a defect</td>
+</tr>
+<tr>
+<td>$D_3$</td>
+<td>312</td>
+<td>21 articles</td>
+<td>the Cauchy–Riemann and spatial gradient, not this operator</td>
+</tr>
+<tr>
+<td>$D$, gauge sector</td>
+<td>9 further articles</td>
+<td><em>Gauge Principle</em>, <em>Yang–Mills</em>, <em>Non-Abelian Gauge Fields</em>, <em>Gauge Curvature</em>, <em>Fujikawa</em>, <em>Index Theorem</em>, <em>Lattice Gauge Theory</em>, <em>Gauge Redundancy</em>, <em>Relativistic Particle</em></td>
+<td>the same letter defect, unpatched</td>
+</tr>
+<tr>
+<td>$D$, other senses</td>
+<td>many</td>
+<td>electric displacement, Dirac operator in the spectral-triple articles</td>
+<td>not this object</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The letter is overloaded.</strong> $D$ in the physics corpus is the covariant derivative in the gauge sector, the electric displacement in the media articles, and the Dirac operator in <em>The Spectral Triple of the Biquaternion Algebra</em>. That is why the retirement is scoped to the four articles and not run over the corpus: a blind substitution would rewrite Maxwell's $D$ into a derivative.</p>
+<p><strong>The mathematics corpus is untouched.</strong> There the plain operator is $D$ — the Fueter operator of Clifford analysis — and the bar is its standard conjugation, in 26 articles. Nothing there needs a label.</p>
+<h2 id="rollback">Rollback</h2>
+<p>Every substitution is a token for a token. Replacing $\tilde\nabla^{\mathrm{gco},\natural}$ by $\bar D$, then $\tilde\nabla^{\mathrm{gco}}_\mu$ by $D_\mu$, then $\tilde\nabla^{\mathrm{gco}}$ by $D$ restores the four files, except for the $\mathrm{gco}$ label added to the definition and the $\nabla_3$ rename. No sign, order or index moved, so no argument depends on the change.</p>
+<h2 id="summary">Summary</h2>
+<p>The covariant derivative had two spellings in the physics corpus and neither was the conventions'. The letter $D$ replaced $\tilde D$, which <em>Algebra and Element Conventions</em> owns, and the bar doubled the conjugation already named $\natural$.</p>
+<p>Both are retired in four articles: 410 tokens, 323 of the letter and 87 of the bar. The operator is now $\tilde\nabla^{\mathrm{gco}}$, its component $\tilde\nabla^{\mathrm{gco}}_\mu$, its conjugate $\tilde\nabla^{\mathrm{gco},\natural}$, and the conjugation of the basis is $e_\mu^{\natural}$ throughout.</p>
+<p>The writing is the gradient's own: $\tilde\nabla^{\mathrm{gco}}=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu$, one index and one coefficient per direction. Every identity keeps its residual, and the square identity holds at $8.9\times10^{-16}$.</p>
+<p>The letter $D$ stays where it means something else — the electric displacement, the Dirac operator, the Cauchy–Riemann component — and the mathematics corpus keeps its Fueter operator and its bar.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>its conjugate</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>the gauge-covariant derivative, $\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco}}_\mu$</td>
+<td>the component, $\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$: the coefficient of $e_\mu$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\mathrm{gco},\natural}$</td>
+<td>the conjugate, $\sum_\mu e_\mu^{\natural}\tilde\nabla^{\mathrm{gco}}_\mu$</td>
+</tr>
+<tr>
+<td>$e_\mu^{\natural}$</td>
+<td>the conjugate basis, $e_t$ and $-\vec e_k$</td>
+</tr>
+<tr>
+<td>$\nabla_3$</td>
+<td>the spatial gradient, $\sum_k\vec e_k\partial/\partial Q_k$</td>
+</tr>
+<tr>
+<td>$\mathrm{gco}$</td>
+<td>the label of the gauge-covariant family: used nowhere else in either corpus</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, line 376, for $\tilde D$ as the operator and the component without a tilde.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em> and §<em>The Two Sides and the Renaming Theorem</em>, for the gradient's decomposition and for $\natural$ as what separates the two sides.</li>
+<li><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the definition, the square and the curvature.</li>
+<li><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a>, for the chiral pair in the new writing.</li>
+<li><a href="../articles_internal/the-gauge-covariant-derivative-an-inventory-by-type.html">The Gauge-Covariant Derivative: An Inventory by Type</a>, the companion inventory of the derivative types.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

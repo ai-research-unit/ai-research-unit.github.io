@@ -659,18 +659,18 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>Its conjugate $\tilde\nabla^{\natural}=e_t\,\partial/\partial Q_t-\sum_k\,\vec e_k\,\partial/\partial Q_k$ is the second factor of $\Box$</td>
 </tr>
 <tr>
-<td>$\tilde D$</td>
-<td>Gauge-covariant derivative</td>
-<td>$\tilde D=\tilde\nabla+i\kappa\mathcal A$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}$</td>
+<td>Gauge-covariant gradient</td>
+<td>$\tilde\nabla^{\mathrm{gco}}=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu$, $\tilde\nabla^{\mathrm{gco}}_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$</td>
 <td>Operator, $\mathbb{B}$-valued</td>
-<td>The gauge-principle, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. Its $e_t$ coefficient is $\partial/\partial Q_t+i\kappa\mathcal A_t$, so the operator is read with its scalar part; on the curvature it acts as $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$, the Yang–Mills current. The component $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ carries no tilde</td>
+<td>The gauge-principle, covariant-derivative, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. It is the gradient with the coefficient replaced, not a derivative of its own: one index, one basis element, one coefficient per direction, and the basis untouched. Its conjugate is $\tilde\nabla^{\mathrm{gco},\natural}=\sum_\mu e_\mu^{\natural}\tilde\nabla^{\mathrm{gco}}_\mu$, the label before the involution. On the curvature it acts as $\tilde\nabla^{\mathrm{gco}}\tilde F=\tilde\nabla\tilde F+\frac{iϙ}{\hbar}[\tilde A,\tilde F]$, the Yang–Mills current. The coupling is written $\frac{iϙ}{\hbar}$ throughout the series; the older articles write the same operator as $\tilde\nabla+i\kappa\mathcal A$, with $\kappa=ϙ/\hbar$ and $\mathcal A=\tilde A$</td>
 </tr>
 <tr>
 <td>$\tilde K^{\mathrm{ret}}$</td>
 <td>Retarded-time gradient coefficient</td>
 <td>$\tilde K^{\mathrm{ret}}=\tilde\nabla^{\natural}t'_r=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$</td>
 <td>$\mathbb{M}_-$, null</td>
-<td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K^{\mathrm{ret}}\,d\tilde Q/dt'_r$ for a source depending on $t'_r$ alone. It is a zero divisor, $\langle\tilde K^{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not $*$-unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde D$</td>
+<td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K^{\mathrm{ret}}\,d\tilde Q/dt'_r$ for a source depending on $t'_r$ alone. It is a zero divisor, $\langle\tilde K^{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not $*$-unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde\nabla^{\mathrm{gco}}$</td>
 </tr>
 </tbody>
 </table></div>

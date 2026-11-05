@@ -292,7 +292,7 @@ $$
 \{\{q^4,p^4\}\} = 16q^3p^3 - 24\hbar^2 qp.
 $$
 Here the correction is not a constant but the phase-space function $-24\hbar^2 qp$, again of order $\hbar^2$. The pattern is the same, and it was checked on a different pair from the one that suggested it: the first correction in the Moyal bracket is $O(\hbar^2)$, is built from third derivatives of the observables, and is therefore invisible exactly when one of them is at most quadratic.</p>
-<p><strong>The failure already sits at a lower degree than these examples.</strong> The exactness stated for quadratic observables concerns the bracket and not the symbol, and composing two quadratic observables shows the difference. The symbol of the square of a single component is its star square,
+<p><strong>The failure reaches down to the quadratic case.</strong> The exactness stated for quadratic observables concerns the bracket and not the symbol, and composing two quadratic observables shows the difference. The symbol of the square of a single component is its star square,
 $$
 L_z^{\mathrm{orb}}\star L_z^{\mathrm{orb}} = \big(L_z^{\mathrm{orb}}\big)^2 + \tfrac{i\hbar}{2}\{L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\} - \tfrac{\hbar^2}{8}\Lambda^2\big(L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\big) = \big(L_z^{\mathrm{orb}}\big)^2 - \tfrac{\hbar^2}{2},
 $$
@@ -358,7 +358,11 @@ is correct as a <strong>leading-order correspondence</strong>. It was verified h
 $$
 \{\{f,g\}\} = \{f,g\} + O(\hbar^2).
 $$
-The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.</p>
+The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The product fails where the bracket does not: the two checks that came out exact are checks of brackets, and the bracket correspondence is exact for observables at most quadratic, yet the square of a single component already carries the offset
+$$
+\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big)\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big) = \operatorname{weyl}\Big(\big(L_z^{\mathrm{orb}}\big)^2\Big) - \tfrac{\hbar^2}{2},
+$$
+so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.</p>
 <p>In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde H_1,\tilde H_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -402,12 +406,24 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 <td>Quantization map (Weyl ordering)</td>
 </tr>
 <tr>
+<td>$\operatorname{weyl}^{-1}$</td>
+<td>Its inverse, the Weyl symbol of an operator</td>
+</tr>
+<tr>
 <td>$\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$</td>
 <td>Classical angular-momentum Poisson algebra</td>
 </tr>
 <tr>
+<td>$L^2=\sum_i(L_i^{\mathrm{orb}})^2$</td>
+<td>Squared orbital angular momentum</td>
+</tr>
+<tr>
 <td>$\star$</td>
 <td>Star product (deformation of the pointwise product)</td>
+</tr>
+<tr>
+<td>$\Lambda[f,g]=\sum_i(\partial f/\partial q_i\,\partial g/\partial p_i-\partial f/\partial p_i\,\partial g/\partial q_i)$</td>
+<td>Bidifferential operator of the star product, applied slot by slot</td>
 </tr>
 <tr>
 <td>$\{\{f,g\}\}=(1/i\hbar)(f\star g-g\star f)$</td>
@@ -457,6 +473,10 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 <li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.</li>
 <li><a href="quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a>, for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.</li>
 <li><a href="the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a>, for the Heisenberg-picture dynamics $df/dt'=(1/i\hbar)[f,H]$ and the observable/generator split inside the algebra.</li>
+<li><a href="../articles_maths/deformation-quantization.html">Deformation Quantization</a>, for the star product as a formal associative deformation and for the Moyal product as the closed-form constant-coefficient case.</li>
+<li><a href="../articles_maths/semiclassical-analysis.html">Semiclassical Analysis</a>, for the Weyl quantisation $\mathrm{Op}^w_\hbar$, the Moyal product and the Poisson-bracket correspondence in the pseudodifferential calculus.</li>
+<li>H. J. Groenewold, "On the Principles of Elementary Quantum Mechanics", <em>Physica</em> <strong>12</strong> (1946), 405–446, for the theorem that no quantization map carries the Poisson bracket to the commutator exactly over all polynomials.</li>
+<li>J. E. Moyal, "Quantum Mechanics as a Statistical Theory", <em>Mathematical Proceedings of the Cambridge Philosophical Society</em> <strong>45</strong> (1949), 99–124, for the bracket $\{\{f,g\}\}$ and the phase-space formulation it defines.</li>
 </ul>
       </div>
     </main>

@@ -239,31 +239,31 @@ $$</p>
 <p>The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: in the algebra reading the central phase passes through the mass term.</p>
 <p>Let $\lambda = \exp(iϙ\Gamma/\hbar)$ be a central phase, and let $\tilde A_2 = \tilde A - \tilde\nabla\Gamma$ be the transformed connection. The covariant derivative</p>
 <p>$$
-D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde A
+\tilde\nabla^{\mathrm{gco}} = \tilde\nabla + \frac{iϙ}{\hbar}\tilde A
 $$</p>
 <p>transforms homogeneously,</p>
 <p>$$
-D_2(\lambda\tilde\Psi) = \lambda\, D\tilde\Psi ,
+\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde\Psi) = \lambda\, \tilde\nabla^{\mathrm{gco}}\tilde\Psi ,
 \qquad
-D_2 = \tilde\nabla + \frac{iϙ}{\hbar}\tilde A_2 ,
+\tilde\nabla^{\mathrm{gco}}_{2} = \tilde\nabla + \frac{iϙ}{\hbar}\tilde A_2 ,
 $$</p>
 <p>with the connection transformation that the abelian gauge structure of the framework provides. This covariance, together with the Leibniz rule it needs, was machine-checked by finite differences at a point not used to fix the conventions. The mass term of <em>The Dirac Equation in Biquaternionic Form</em> is linear, so it carries the same factor. For the pair</p>
 <p>$$
-D\tilde{\Psi}_R = m\tilde{\Psi}_L ,
+\tilde\nabla^{\mathrm{gco}}\tilde{\Psi}_R = m\tilde{\Psi}_L ,
 \qquad
-D^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
+\tilde\nabla^{\mathrm{gco},\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$</p>
 <p>with</p>
 <p>$$
-D^{\natural} = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural} ,
+\tilde\nabla^{\mathrm{gco},\natural} = \tilde\nabla^{\natural} + \frac{iϙ}{\hbar}\tilde A^{\natural} ,
 $$</p>
-<p>the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed right-hand side is $m\lambda\tilde\Psi_L$, because the central phase commutes with the mass. The two sides transform identically, so the massive coupled equation is <strong>form-invariant</strong> under the local phase and holds in every gauge when it holds in one. <strong>In the algebra reading every local central phase is allowed, and the vector $\mathrm{U}(1)$ (fermion number) is exact for the massive field; in the cell-frame reading of the element the same left multiplication is the axial rotation, and the vector phase is not a left multiplication.</strong></p>
+<p>the transformed left-hand side is $\lambda\,\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R$ and the transformed right-hand side is $m\lambda\tilde\Psi_L$, because the central phase commutes with the mass. The two sides transform identically, so the massive coupled equation is <strong>form-invariant</strong> under the local phase and holds in every gauge when it holds in one. <strong>In the algebra reading every local central phase is allowed, and the vector $\mathrm{U}(1)$ (fermion number) is exact for the massive field; in the cell-frame reading of the element the same left multiplication is the axial rotation, and the vector phase is not a left multiplication.</strong></p>
 <p>The object the phase cannot pass through is not the mass but the algebra's real structure: a coupling built on $\flat = -{}^{*}$, which is antilinear, transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$, so a Majorana-type mass $m\tilde\Psi^\flat$ would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and be form-invariant only for $\lambda = \pm1$. That is a statement about the real structure, not about the linear mass term, and it belongs to the companion articles on the neutrino and on chirality. What the mass breaks is the <strong>axial</strong> symmetry,</p>
 <p>$$
 \sum_\mu\epsilon_\mu\,\frac{\partial j_{5\mu}}{\partial Q_\mu} = 2im\,\tilde\Psi^{\natural}\bigl(-iR_{\vec e_z}^{\mathrm{axf}}\bigr)\tilde\Psi ,
 $$</p>
 <p>with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\vec e_z}^{\mathrm{axf}}$ the chirality cell — the representative on the field of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z}^{\mathrm{axf}})\tilde\Psi$, where $G_\mu$ are the four cell generators of <em>Noether's Theorem in Biquaternionic Form</em>: $G_t$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$ and $G_k$ as $\tilde Q\mapsto i\vec e_k\tilde Q\vec e_y$. These are the frame elements of <em>The Legacy Pauli Gamma Formulation</em>: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_k$ is $\beta\alpha_k$, the Hamiltonian's $\alpha_k$ preceded by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).</p>
-<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $i\hbar\,\partial/\partial t' \to i\hbar\,\partial/\partial t' - ϙ\phi$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
+<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $i\hbar\,\partial/\partial t' \to i\hbar\,\partial/\partial t' - ϙ\phi$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
 <h2 id="the-finite-basis-and-the-balance-of-the-two-parts">The Finite Basis and the Balance of the Two Parts</h2>
 <p>The transcription above is written for continuous fields, and a numerical realization of it needs an object the corpus does not carry: a <strong>finite basis</strong>. The field is expanded in a finite set of functions, the equation is assembled from them, and the levels are read from it. This section states the one condition the framework puts on the choice of basis, says which part of the condition is the framework's and which is input, and records what the condition does not give.</p>
 <h3 id="the-two-expansions">The two expansions</h3>
@@ -302,18 +302,18 @@ $$</p>
 <h3 id="the-field-and-the-phase-of-the-basis">The field, and the phase of the basis</h3>
 <p>With a field present the derivative in that action cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla$ by the covariant derivative</p>
 <p>$$
-D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A ,
+\tilde\nabla^{\mathrm{gco}} = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A ,
 $$</p>
 <p>and the replacement is not optional for the basis. The sign is the corpus's, which the minimal-coupling article records as the opposite of the standard $\partial_\mu-iϙA_\mu/\hbar$; the kinetic momentum written $\vec\pi=\vec p-ϙ\vec A$ above is in the standard convention, so the two are one coupling with the opposite sign of $ϙ$, and every statement below carries $\vec A=0$, where no sign can differ. Write</p>
 <p>$$
-\mathrm{Vect}(D) = \mathrm{Vect}\!\left(\tilde\nabla\right)+\frac{iϙ}{\hbar}\,\mathrm{Vect}\!\left(\tilde A\right)
+\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}}) = \mathrm{Vect}\!\left(\tilde\nabla\right)+\frac{iϙ}{\hbar}\,\mathrm{Vect}\!\left(\tilde A\right)
 $$</p>
 <p>for the part of the covariant derivative that carries the spatial derivatives. Then, with the connection $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$ and the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$,</p>
 <p>$$
-\mathrm{Vect}(D_2)\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(D)f ,
+\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}}_{2})\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}})f ,
 $$</p>
-<p>which is the vector-part form of the covariance identity $D_2(\lambda\tilde\Psi) = \lambda D\tilde\Psi$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $D$ and not from $\tilde\nabla$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.</p>
-<p>The two replacements are the ones the literature makes under the names <strong>restricted magnetic balance</strong>, for the use of the covariant momentum in the balancing operator, and <strong>London atomic orbitals</strong>, for the phase-carrying basis functions (London 1937; Aucar, Saue, Jensen and Visscher 1999; Repisky, Komorovsky, Malkina and Malkin 2009; Komorovsky, Repisky, Malkina and Malkin 2010). Both were checked here at machine precision in the algebra's own notation: on a grid of $64$ points with random bandlimited fields, the identity $D_2(\lambda\tilde\Psi) = \lambda D\tilde\Psi$ and its vector-part form $\mathrm{Vect}(D_2)(\lambda f) = \lambda\,\mathrm{Vect}(D)f$ hold to $8\times10^{-14}$, and the two operator identities above are exact. The covariance could not have failed: $\lambda$ is central, so it passes through every left multiplication, and $\partial \lambda/\partial x_\mu = \tfrac{iϙ}{\hbar}\lambda\,\partial \Gamma/\partial x_\mu$ holds exactly, which makes $(\tilde\nabla\lambda)\Psi$ cancel the $-\tfrac{iϙ}{\hbar}(\tilde\nabla\Gamma)\lambda\Psi$ term line by line. The numerical check verifies the implementation, not a delicate cancellation.</p>
+<p>which is the vector-part form of the covariance identity $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde\Psi) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde\Psi$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla^{\mathrm{gco}}$ and not from $\tilde\nabla$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.</p>
+<p>The two replacements are the ones the literature makes under the names <strong>restricted magnetic balance</strong>, for the use of the covariant momentum in the balancing operator, and <strong>London atomic orbitals</strong>, for the phase-carrying basis functions (London 1937; Aucar, Saue, Jensen and Visscher 1999; Repisky, Komorovsky, Malkina and Malkin 2009; Komorovsky, Repisky, Malkina and Malkin 2010). Both were checked here at machine precision in the algebra's own notation: on a grid of $64$ points with random bandlimited fields, the identity $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde\Psi) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde\Psi$ and its vector-part form $\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}}_{2})(\lambda f) = \lambda\,\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}})f$ hold to $8\times10^{-14}$, and the two operator identities above are exact. The covariance could not have failed: $\lambda$ is central, so it passes through every left multiplication, and $\partial \lambda/\partial x_\mu = \tfrac{iϙ}{\hbar}\lambda\,\partial \Gamma/\partial x_\mu$ holds exactly, which makes $(\tilde\nabla\lambda)\Psi$ cancel the $-\tfrac{iϙ}{\hbar}(\tilde\nabla\Gamma)\lambda\Psi$ term line by line. The numerical check verifies the implementation, not a delicate cancellation.</p>
 <h3 id="what-the-balance-does-and-does-not-give">What the balance does and does not give</h3>
 <p>The condition supplies the basis, not the solution. It gives no radial function, no orbital dynamics, and no value for $\kappa$ or $\alpha$; the radial Dirac–Coulomb solution inside the algebra remains the gap named above, and a balanced basis is the workspace on which such a solution would be expanded rather than the solution itself. Nor is the condition an enlargement of the algebra: the balancing action is the momentum's vector part — the gradient's up to the constant $i$ — and the phase is the $\lambda$ of <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em>; neither is a new element of $\mathbb{B}$.</p>
 <p>What it does give is the statement that the transcription, once discretized, carries the framework's non-relativistic relation and the framework's gauge covariance by construction. Of the two, the relation is the corpus's own used as a condition, and the covariance is the corpus's own identity; the basis sets, and the numerical necessity of imposing them, are input.</p>
@@ -381,7 +381,7 @@ $$</p>
 <tr>
 <td>Magnetic balance and the phase of the basis</td>
 <td>Forced by the covariance identity</td>
-<td>$D_2(\lambda\tilde\Psi) = \lambda D\tilde\Psi$, $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$; minimal-coupling article</td>
+<td>$\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde\Psi) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde\Psi$, $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$; minimal-coupling article</td>
 </tr>
 <tr>
 <td>Basis sets, and the variational collapse of an unbalanced basis</td>
@@ -398,7 +398,7 @@ $$</p>
 <p>Three entries deserve a sentence. The first is that the algebraic content is real but narrow: the framework supplies the spin algebra, the sector placement of the spin–orbit coupling, and the bookkeeping of the levels; it does not supply the orbital dynamics, the radial equation, or the coupling constant. The second is the step that remains: the algebra-level coupling is consistent and covariant in the algebra reading, so the obstacle is no longer the mass term there; what the corpus does not supply is the derivation of the radial Dirac–Coulomb solution inside the algebra, and that is the step that would turn the transcription into a derivation. The third is the finite basis: the balance is a condition on the workspace rather than on the algebra, and the framework supplies the condition — its own non-relativistic relation and its own covariance identity — while the basis sets and the variational argument are input. That is the sense in which the title overpromises if read as "derived", and the article does not sign for it.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
-<li><strong>The algebra-level minimal coupling.</strong> The coupled massive equation $D\tilde\Psi_R = m\tilde\Psi_L$, $D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$ is set out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, and is proved there to be gauge covariant. The choice of matter representation — left versus right action — remains open in that article and in open question 7 of <em>The Dirac Equation in Biquaternionic Form</em>.</li>
+<li><strong>The algebra-level minimal coupling.</strong> The coupled massive equation $\tilde\nabla^{\mathrm{gco}}\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\mathrm{gco},\natural}\tilde\Psi_L = m\tilde\Psi_R$ is set out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, and is proved there to be gauge covariant. The choice of matter representation — left versus right action — remains open in that article and in open question 7 of <em>The Dirac Equation in Biquaternionic Form</em>.</li>
 <li><strong>The nature of the mass term.</strong> The mass term of <em>The Dirac Equation in Biquaternionic Form</em> is the linear, chirality-off-diagonal pair; the algebra's real structure $\flat$ is retained separately, and a coupling built on it — a Majorana-type mass — is a neutral-field pairing. Whether the real form of $\mathbb{B}$ forces a second, neutral massive sector alongside the charged one is open, and the two interpretations have different consequences for the charge sectors.</li>
 <li><strong>A framework derivation of the spectrum.</strong> The radial system has been written in the algebra — as the single biquaternion $R = \tfrac{\sqrt2}{r}(Fq_+ + Gq_-)$ of <em>Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</em> — but that transcription begins from the matrix problem. Can the system be <em>obtained</em> from the algebra's own equation, and can the Sommerfeld formula then follow from the algebra's own operators rather than be matched to them?</li>
 <li><strong>The supercritical regime.</strong> For $\mathfrak{Z}\alpha$ beyond $s_{\mathrm{tot}}+\tfrac12$ the exact formula loses its bound states; how does the framework describe the diving of the level into the negative continuum?</li>
@@ -493,7 +493,7 @@ E_{n s_{\mathrm{tot}}} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
 - \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12}-\frac{3}{4n}\right) + O\bigl((\mathfrak{Z}\alpha)^6\bigr)
 $$</p>
 <p>returns the non-relativistic $E_n$ at leading order and the fine structure at the next, the latter verified by exact rational arithmetic against the kinetic, spin–orbit, and Darwin terms of the companion exercise. The spectrum is the standard one and no deviation is predicted.</p>
-<p>A numerical realization of the transcription needs one further object that the corpus does not carry, a <strong>finite basis</strong>: functions $\{f_\mu\}$ for the large part of the field, the functions of the small part being generated from them. The framework puts one condition on the choice. Its own non-relativistic relation, $\tilde\Psi_{\mathrm{sml}} = \frac{1}{2mc}\sum_k\pi_k\vec e_k\tilde\Psi_{\mathrm{lar}}\vec e_z+O(c^{-3})$, says that the small part is not independent of the large, and read as a condition on the basis it requires the small functions to be generated by the balancing action $\tilde Q\mapsto\frac{1}{2mc}\vec p\,\tilde Q\,\vec e_z$; this is the restricted kinetic balance of relativistic quantum chemistry, and without it a finite basis fails variationally. With a field present the momentum in that action is the kinetic one, $\vec p-ϙ\vec A$, and the basis functions themselves carry the central phase $\lambda$; both are forced by the covariance identity $D_2(\lambda\tilde\Psi) = \lambda D\tilde\Psi$ with $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$, and these are the restricted magnetic balance and the London atomic orbitals of the same literature. The condition is on the workspace and not on the algebra, and it supplies no radial solution.</p>
+<p>A numerical realization of the transcription needs one further object that the corpus does not carry, a <strong>finite basis</strong>: functions $\{f_\mu\}$ for the large part of the field, the functions of the small part being generated from them. The framework puts one condition on the choice. Its own non-relativistic relation, $\tilde\Psi_{\mathrm{sml}} = \frac{1}{2mc}\sum_k\pi_k\vec e_k\tilde\Psi_{\mathrm{lar}}\vec e_z+O(c^{-3})$, says that the small part is not independent of the large, and read as a condition on the basis it requires the small functions to be generated by the balancing action $\tilde Q\mapsto\frac{1}{2mc}\vec p\,\tilde Q\,\vec e_z$; this is the restricted kinetic balance of relativistic quantum chemistry, and without it a finite basis fails variationally. With a field present the momentum in that action is the kinetic one, $\vec p-ϙ\vec A$, and the basis functions themselves carry the central phase $\lambda$; both are forced by the covariance identity $\tilde\nabla^{\mathrm{gco}}_{2}(\lambda\tilde\Psi) = \lambda \tilde\nabla^{\mathrm{gco}}\tilde\Psi$ with $\tilde A_2 = \tilde A-\tilde\nabla\Gamma$, and these are the restricted magnetic balance and the London atomic orbitals of the same literature. The condition is on the workspace and not on the algebra, and it supplies no radial solution.</p>
 <p>One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equation carries the linear, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, through which a local central phase passes in the algebra reading; on the cell-frame reading of the element the same left multiplication is the axial rotation. The massive equation therefore admits the algebra-level minimal coupling in the algebra reading, and the vector $\mathrm{U}(1)$ (fermion number) is exact there, with the axial symmetry broken instead. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra: the algebra-level form of the coupling is set out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, and the spectrum above is obtained in the cell-frame transcription, which is the form in which the standard Dirac–Coulomb solution is known. The relativistic hydrogen atom is therefore, in this framework, an algebraically structured <strong>transcription</strong> of the standard solution — with the spin algebra, the sector placement, the good quantum numbers, and the level bookkeeping genuinely algebraic, and the derivation from the framework's own field equation an open problem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -562,7 +562,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde Q^\natural$</td>
-<td>Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $\tilde\nabla^\natural$, $\tilde A^\natural$, $D^{\natural}$ are its images</td>
+<td>Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $\tilde\nabla^\natural$, $\tilde A^\natural$, $\tilde\nabla^{\mathrm{gco},\natural}$ are its images</td>
 </tr>
 <tr>
 <td>$\tilde A = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$</td>
@@ -621,11 +621,11 @@ $$</p>
 <td>Fine-structure shift</td>
 </tr>
 <tr>
-<td>$D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$</td>
+<td>$\tilde\nabla^{\mathrm{gco}} = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$</td>
 <td>Covariant derivative (minimal-coupling article)</td>
 </tr>
 <tr>
-<td>$D^{\natural} = \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$</td>
+<td>$\tilde\nabla^{\mathrm{gco},\natural} = \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$</td>
 <td>$\natural$-image of the covariant derivative; operator of the second chiral member</td>
 </tr>
 <tr>
@@ -645,7 +645,7 @@ $$</p>
 <td>Balancing action; the image of the large basis is the small basis (kinetic balance)</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(D)$</td>
+<td>$\mathrm{Vect}(\tilde\nabla^{\mathrm{gco}})$</td>
 <td>Vector part of the covariant derivative; balancing operator with a field present (magnetic balance)</td>
 </tr>
 <tr>
