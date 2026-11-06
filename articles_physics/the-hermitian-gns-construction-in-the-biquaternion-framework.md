@@ -129,15 +129,15 @@ $$
 $$
 the **regular representation**, of complex dimension four. The Gram matrix of the four basis elements has rank four.
 
-**The general state.** For $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $\mathrm{rank}\,\tilde{\varsigma}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}}$ and using the eigenvectors of $\tilde{Ϛ}$,
+**The general state.** For $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $\mathrm{rank}\,\tilde{Ϛ}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}}$ and using the eigenvectors of $\tilde{Ϛ}$,
 $$
 \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \lambda_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
 $$
-which vanishes if and only if $\tilde Q_3$ annihilates the range of $\tilde{Ϛ}$. The radical therefore has dimension $2(2-\mathrm{rank}\,\tilde{\varsigma})$ and
+which vanishes if and only if $\tilde Q_3$ annihilates the range of $\tilde{Ϛ}$. The radical therefore has dimension $2(2-\mathrm{rank}\,\tilde{Ϛ})$ and
 $$
-\boxed{\;\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}} = 4 - 2(2-\mathrm{rank}\,\tilde{\varsigma}) = 2\,\mathrm{rank}\,\tilde{\varsigma}\;}
+\boxed{\;\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}} = 4 - 2(2-\mathrm{rank}\,\tilde{Ϛ}) = 2\,\mathrm{rank}\,\tilde{Ϛ}\;}
 $$
-so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{\varsigma}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{\varsigma}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
+so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{Ϛ}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{Ϛ}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
 **Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{jk}=\mathrm{Tr}(\tilde{Ϛ}\,e_j^{*}\vec e_k)$ by row reduction: the vacuum state $\tilde{Ϛ}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}$ and not by how mixed the state is.
 

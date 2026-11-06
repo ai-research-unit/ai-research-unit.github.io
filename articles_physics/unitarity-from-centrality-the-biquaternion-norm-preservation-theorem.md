@@ -34,16 +34,16 @@ $$
 \qquad
 \|\tilde Q_1\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_1\bigr).
 $$
-Writing $\tilde Q_1=x_te_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$ with $x_\mu\in\mathbb{C}$ and using $\tilde Q_1^{*}=x_t^{*}e_t-x_x^{*}\vec e_x-x_y^{*}\vec e_y-x_z^{*}\vec e_z$, one finds
+Writing $\tilde Q_1=Q_{1t}e_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with $Q_{1\mu}\in\mathbb{C}$ and using $\tilde Q_1^{*}=Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z$, one finds
 $$
 \|\tilde Q_1\|_{\dagger}^2
-=2\bigl(|x_t|^2+|x_x|^2+|x_y|^2+|x_z|^2\bigr)>0\quad(\tilde Q_1\neq0).
+=2\bigl(|Q_{1t}|^2+|Q_{1x}|^2+|Q_{1y}|^2+|Q_{1z}|^2\bigr)>0\quad(\tilde Q_1\neq0).
 $$
 This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde R_\psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
-\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\bigl(x_t^2+x_x^2+x_y^2+x_z^2\bigr)e_t\in\mathbb{C}_{\mathbb{B}},
+\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\bigl(Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2\bigr)e_t\in\mathbb{C}_{\mathbb{B}},
 $$
 a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $\langle\tilde Q_1\rangle_{\natural}e_t=\det M(\tilde Q_1)\,e_t$, so $\langle\cdot\rangle_{\natural}$ is multiplicative,
 $$

@@ -45,7 +45,7 @@ Two remarks on the framework belong here. First, a tensor operator need not be a
 
 ### The derivation
 
-Write a general element of $\mathbb{B}$ in components, $x=x_0e_t+x_k\vec e_k$ with $x_\mu\in\mathbb{C}$; a Hermitian element has $x_0\in\mathbb{R}$ and $x_k=i v_k$ with $v_k\in\mathbb{R}$, so that
+Write a general element of $\mathbb{B}$ in components, $\tilde Q=Q_te_t+Q_k\vec e_k$ with $Q_\mu\in\mathbb{C}$; a Hermitian element has $Q_t\in\mathbb{R}$ and $Q_k=i v_k$ with $v_k\in\mathbb{R}$, so that
 
 $$
 \tilde R_\psi=c r_t\,e_t+i v_k\vec e_k,\qquad c r_t,v_k\in\mathbb{R}.

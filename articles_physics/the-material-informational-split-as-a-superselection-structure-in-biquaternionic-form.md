@@ -59,7 +59,7 @@ $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
 \tilde R_\psi = c r_t\,e_t + i\vec r_\psi, \qquad \vec r_\psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
-\tilde R_\varphi = i x_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,x_t,r_x,r_y,r_z\in\mathbb{R},
+\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{M}_-$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
@@ -296,7 +296,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
 | $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ | General Hermitian element, the informational part |
-| $\tilde R_\varphi = ix_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
+| $\tilde R_\varphi = i c r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |

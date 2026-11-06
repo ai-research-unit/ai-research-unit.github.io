@@ -43,7 +43,7 @@ P_\mu=\partial/\partial R_\mu,\qquad D=\sum_\mu Q_\mu\partial/\partial R_\mu,\qq
 M_{\mu\nu}=Q_\mu\partial/\partial R_\nu-Q_\nu\partial/\partial R_\mu,
 $$
 $$
-\mathcal{K}_\mu=2Q_\mu\sum_\nu Q_\nu\partial/\partial R_\nu-r_x^2\partial/\partial R_\mu,
+\mathcal{K}_\mu=2Q_\mu\sum_\nu Q_\nu\partial/\partial R_\nu-x^2\partial/\partial R_\mu,
 $$
 with $x^2=\sum_\mu Q_\mu^2=-c^2{r'_{t}}^2+\vec r^2$. In this basis the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_k]=2\epsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\epsilon_{jkl}K_l$, $[K_j,K_k]=-2\epsilon_{jkl}\vec e_l$ for $\vec e_k$, $K_k=i\vec e_k$. The brackets are
 $$
@@ -166,7 +166,7 @@ Two qualifications belong to the formula. First, it is a fractional (nonlinear) 
 $$
 \delta Q_\mu=a_\mu x^2-2Q_\mu(a\cdot x)=-a_\nu\,\mathcal{K}_\nu Q_\mu,
 $$
-with $\mathcal{K}_\nu=2Q_\nu\sum_\rho Q_\rho\partial/\partial R_\rho-r_x^2\partial/\partial R_\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
+with $\mathcal{K}_\nu=2Q_\nu\sum_\rho Q_\rho\partial/\partial R_\rho-x^2\partial/\partial R_\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
 
 ## The Compactification from the Star
 
@@ -219,7 +219,7 @@ $$
 \langle e_t-\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{4}{1-\langle\tilde{Q}\rangle_{\natural}-2i c r_t},\qquad
 \langle e_t+\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{-4\langle\tilde{Q}\rangle_{\natural}}{1-\langle\tilde{Q}\rangle_{\natural}-2i c r_t},
 $$
-for $\tilde{Q}=c r_t\,e_t+i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{M}_+$, with $c r_t$ the time coordinate, $r^2=r_x^2+r_y^2+r_z^2$ and $\langle\tilde{Q}\rangle_{\natural}=c^2r_t^2-r^2$, both checked to $10^{-15}$. The denominator never vanishes, the first chord never vanishes, and the second vanishes exactly on the light cone. This is the source's Eq. (6), its determinants read as the norms of the two chords. The source's quadratic form is $q(x)=-(x^0)^2+r^2$, which is the material-sector interval of the corpus; on $\mathbb{M}_+$ the same coordinates give $\langle\tilde{Q}\rangle_{\natural}=(x^0)^2-r^2=-q(x)$, so the source's $1+q$ and the denominator above are the same denominator.
+for $\tilde{Q}=c r_t\,e_t+i(r'_x\,\vec e_x+r'_y\,\vec e_y+r'_z\,\vec e_z)\in\mathbb{M}_+$, with $c r_t$ the time coordinate and $\langle\tilde{Q}\rangle_{\natural}=c^2r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$, both checked to $10^{-15}$. The denominator never vanishes, the first chord never vanishes, and the second vanishes exactly on the light cone. This is the source's Eq. (6), its determinants read as the norms of the two chords. The source's quadratic form is $q(x)=-(x^0)^2+r^2$, which is the material-sector interval of the corpus; on $\mathbb{M}_+$ the same coordinates give $\langle\tilde{Q}\rangle_{\natural}=(x^0)^2-r^2=-q(x)$, so the source's $1+q$ and the denominator above are the same denominator.
 
 Two chords, then, and three loci. The boundary is where the first vanishes, with apex at $\tilde{U}_{\mathrm{C}}=e_t$, the image of infinity, where both eigenvalues reach $+1$. The light cone of the origin is where the second vanishes, with apex at $\tilde{U}_{\mathrm{C}}=-e_t$, the image of the origin. The sphere is where both vanish.
 

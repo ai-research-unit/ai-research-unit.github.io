@@ -221,14 +221,14 @@ $$
 both lines acting on the left, with the mass as the pairing of the two chiral parts and $\tilde\nabla^2$ not scalar. In the s-vector carrier the same pair is the source's two chiral parts,
 $$
 \begin{aligned}
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu-ieA_\nu\bigr)R_\lambda-m\,L^*_\mu=0,\\
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu+ieA_\nu\bigr)L_\lambda-m\,R^*_\mu=0,
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu-ieA_\nu\bigr)G^{\mathrm R}_\lambda-m\,G^{\mathrm L*}_\mu=0,\\
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu+ieA_\nu\bigr)G^{\mathrm L}_\lambda-m\,G^{\mathrm R*}_\mu=0,
 \end{aligned}
 $$
-where $R_\mu$ and $L_\mu$ are the two chiral parts of $G_\mu$, the parts on which the chirality takes the values plus one and minus one,
+where $G^{\mathrm R}_\mu$ and $G^{\mathrm L}_\mu$ are the two chiral parts of $G_\mu$, the parts on which the chirality takes the values plus one and minus one,
 $$
-R_\mu=\tfrac12\Bigl(G_\mu-\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),\qquad
-L_\mu=\tfrac12\Bigl(G_\mu+\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),
+G^{\mathrm R}_\mu=\tfrac12\Bigl(G_\mu-\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),\qquad
+G^{\mathrm L}_\mu=\tfrac12\Bigl(G_\mu+\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),
 $$
 with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposite charges of the two lines are those two values, not a second dynamics.
 
@@ -248,18 +248,18 @@ one factor of $i$ spent on $i^2=-1$. Read back, $\tilde{Ξ}^{\mathrm{sp}}_L=F$ a
 $$
 i\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda-m\,G^*_\mu=0,
 $$
-whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $R_\mu$ and $L_\mu$. It is the equation whose mass couples the two values: one line, one mass, two parts. So the elimination of $H_\mu$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the gauge reduction carries into the Chern–Simons term.
+whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two parts, $G^{\mathrm R}_\mu$ and $G^{\mathrm L}_\mu$. It is the equation whose mass couples the two values: one line, one mass, two parts. So the elimination of $H_\mu$ returns the *pair*, not one equation, and the chirality of the mass is the same chirality that the gauge reduction carries into the Chern–Simons term.
 
 ## The Mass as a Non-Integrable Phase
 
-The mass enters as a shift of the covariant derivative, exactly as the charge does. The two chiral equations are the source's Eq. (94), and the star sits on the $R$ line:
+The mass enters as a shift of the covariant derivative, exactly as the charge does. The two chiral equations are the source's Eq. (94), and the star sits on the $G^{\mathrm R}$ line:
 $$
 \begin{aligned}
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]^{*}R_\lambda=0,\\
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]L_\lambda=0 .
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]^{*}G^{\mathrm R}_\lambda=0,\\
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]G^{\mathrm L}_\lambda=0 .
 \end{aligned}
 $$
-The conjugation on the first line is what makes the mass phase of $R$ the conjugate of the mass phase of $L$, and it is the reason the two parts carry opposite phases below.
+The conjugation on the first line is what makes the mass phase of $G^{\mathrm R}$ the conjugate of the mass phase of $G^{\mathrm L}$, and it is the reason the two parts carry opposite phases below.
 
 $K_\mu$ is built from the two chiral parts, as in the source's Eq. (100):
 $$
@@ -271,9 +271,9 @@ The structural role of $K$ is what the article uses: the *same* vector appears i
 
 The derivative shift integrates to a phase,
 $$
-R_\mu=R^0_\mu\exp\Bigl(-i\!\int\bigl(eA_\nu+mK_\nu\bigr)^*dx_\nu\Bigr),
+G^{\mathrm R}_\mu=G^{0\mathrm R}_\mu\exp\Bigl(-i\!\int\bigl(eA_\nu+mK_\nu\bigr)^*dx_\nu\Bigr),
 \qquad
-L_\mu=L^0_\mu\exp\Bigl(i\!\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\Bigr),
+G^{\mathrm L}_\mu=G^{0\mathrm L}_\mu\exp\Bigl(i\!\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\Bigr),
 $$
 which depends on the path from a fixed initial point, and $K$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\tilde{Ξ}^{\mathrm{sp}\dagger}iC_0\tilde{Ξ}^{\mathrm{sp}}$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the field are the two halves of one complex vector.
 
@@ -327,7 +327,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |
-| $R_\mu$, $L_\mu$ | The two chiral parts of the s-vector, of value plus one and minus one: elements, not a right and a left multiplication |
+| $G^{\mathrm R}_\mu$, $G^{\mathrm L}_\mu$ | The two chiral parts of the s-vector, of value plus one and minus one: elements, not a right and a left multiplication |
 | $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $H_\mu$ | Dual (potential) field of the four-dimensional parent action, complex four-vector |
 | $B_\mu$ | Complex potential of the three-dimensional version, axial gauge $B_\mu j^\mu=0$ |
