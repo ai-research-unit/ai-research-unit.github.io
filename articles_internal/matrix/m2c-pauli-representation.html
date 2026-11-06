@@ -477,7 +477,7 @@ $$
 which is the $4Q_t$ of the $4\times4$ article. The factor $2$ is the number of blocks.</p>
 <p><strong>The trace is not the norm.</strong> The trace is additive and complex-valued; it does not detect the vector part. The statement is the matrix form of the split
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B}).
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathrm{Vect}(\mathbb{B}).
 $$</p>
 <h2 id="the-determinant">The Determinant</h2>
 <p><strong>The norm.</strong> The determinant of the general matrix is
@@ -732,7 +732,7 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>$\tilde Q^{\natural}=\tilde Q$</td>
 <td>$A=\lambda\mathrm I_2$</td>
 <td>$2$</td>
@@ -764,7 +764,7 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 <td>$-\sum(q'_\mu)^2$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$\tilde Q^{*}=\tilde Q$</td>
 <td>$A=A^{\dagger}$</td>
 <td>$4$</td>
@@ -772,7 +772,7 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 <td>$q_t^2-\lvert\vec q'\rvert^2$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$\tilde Q^{\flat}=\tilde Q$</td>
 <td>$A=-A^{\dagger}$</td>
 <td>$4$</td>
@@ -827,13 +827,13 @@ The determinant is indefinite with the opposite sign. Neither subspace is a suba
 <h3 id="the-three-splits">The Three Splits</h3>
 <p><strong>The three decompositions.</strong> The six subspaces pair into
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathrm{Vect}(\mathbb{B})
 =\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
-=\mathbb{M}_+\oplus\mathbb{M}_-,
+=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector split, the second the real–imaginary split, the third the Hermitian–anti-Hermitian split. No one refines another.</p>
-<p><strong>The intersections.</strong> The centre meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_2$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_2$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{M}_+$ in $i$ times the real vector triple and $\mathbb{M}_-$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.</p>
-<p><strong>The closure.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<p><strong>The intersections.</strong> The centre meets $\mathbb{B}_{\Psi}$ in the real line $\mathbb{R}\mathrm I_2$ and $\mathbb{B}_{\Phi}$ in the imaginary line $i\mathbb{R}\mathrm I_2$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{B}_{\Psi}$ in $i$ times the real vector triple and $\mathbb{B}_{\Phi}$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.</p>
+<p><strong>The closure.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The $2\times2$ Pauli representation is the compression of the $4\times4$ one. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.</p>
 <p>The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.</p>

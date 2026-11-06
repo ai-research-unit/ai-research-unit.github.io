@@ -119,27 +119,27 @@ $$
 \tilde U\,\vec e_x\,\tilde U^{*} = \vec e_x, \qquad
 \tilde U\,\vec e_y\,\tilde U^{*} = \vec e_y,
 \qquad
-\tilde U\,\vec e_z\,\tilde U^{*} = \cosh\theta^{\mathrm{rpd}}\,\vec e_z - i\sinh\theta^{\mathrm{rpd}},
+\tilde U\,\vec e_z\,\tilde U^{*} = \cosh\theta_{\mathrm{rpd}}\,\vec e_z - i\sinh\theta_{\mathrm{rpd}},
 $$
 (so the candidate does not even preserve the pure-vector subspace on $\vec e_z$, producing a scalar part), hence
 $$
 \tilde U\,\tilde F\,\tilde U^{*} = iE_0\,\vec e_x,
 $$
-which is <strong>not</strong> $\tilde F_{\mathrm D}$: the transverse electric field is left unchanged, with no $\cosh\theta^{\mathrm{rpd}}$ enhancement and no induced magnetic field. The natural candidate fails on a boost. This is the sharpest form of the gap: the four-vector conjugation, which is the only Lorentz action the parents exhibit, is not the Lorentz action of the field strength.</p>
+which is <strong>not</strong> $\tilde F_{\mathrm D}$: the transverse electric field is left unchanged, with no $\cosh\theta_{\mathrm{rpd}}$ enhancement and no induced magnetic field. The natural candidate fails on a boost. This is the sharpest form of the gap: the four-vector conjugation, which is the only Lorentz action the parents exhibit, is not the Lorentz action of the field strength.</p>
 <p><strong>Solution (c).</strong> For the same boost, the transformation
 $$
 \tilde F \mapsto \tilde U^{\natural}\,\tilde F\,\tilde U = \tilde U^{-1}\,\tilde F\,\tilde U
 $$
 does reproduce the standard result:
 $$
-\tilde U^{\natural}\,\vec e_x\,\tilde U = \cosh\theta^{\mathrm{rpd}}\,\vec e_x - i\sinh\theta^{\mathrm{rpd}}\,\vec e_y,
+\tilde U^{\natural}\,\vec e_x\,\tilde U = \cosh\theta_{\mathrm{rpd}}\,\vec e_x - i\sinh\theta_{\mathrm{rpd}}\,\vec e_y,
 \qquad
-\tilde U^{\natural}\,\vec e_y\,\tilde U = \cosh\theta^{\mathrm{rpd}}\,\vec e_y + i\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
+\tilde U^{\natural}\,\vec e_y\,\tilde U = \cosh\theta_{\mathrm{rpd}}\,\vec e_y + i\sinh\theta_{\mathrm{rpd}}\,\vec e_x,
 $$
 so
 $$
 \boxed{\;\tilde U^{\natural}\,\tilde F\,\tilde U
-= i\cosh\theta^{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta^{\mathrm{rpd}}\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
+= i\cosh\theta_{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta_{\mathrm{rpd}}\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
 $$
 The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the rotation of part (a) is reproduced by $\tilde U\tilde F\tilde U^{*}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. <strong>This is the gap this exercise reports in its parent.</strong></p>
 <p><strong>Remaining issue.</strong> Line 318 writes $\tilde U^{-1}\tilde F\tilde U$ and proves it correct. Line 331 says the rotation needs $\tilde U\tilde F\tilde U^{*}$ and the boost needs this other ordering. The inverse cannot become the star: at line 290 the boost rotor is Hermitian, $\tilde U^{*}=\tilde U$, and the star gives $\tilde U\tilde F\tilde U$, which line 312 shows is wrong.</p>
@@ -238,7 +238,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \det\mathsf{M}_2(\tilde Q)$</td>
-<td>The biquaternion norm; the source's $N = 1$, the corpus's $\langle\tilde P\rangle_{\natural} = -m^2$ in $\mathbb{M}_-$</td>
+<td>The biquaternion norm; the source's $N = 1$, the corpus's $\langle\tilde P\rangle_{\natural} = -m^2$ in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$G^+ = \begin{pmatrix} A & -B \\ B & A \end{pmatrix}$</td>
@@ -276,7 +276,7 @@ $$</p>
 <p>where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to e_t$ as $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.</p>
 <p><strong>The current.</strong> The Maurer–Cartan form of the companion article is</p>
 <p>$$
-j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 $$</p>
 <p><strong>Remaining issue.</strong> The Maurer-Cartan current $j_\mu=\tilde U^{-1}\partial_\mu\tilde U$. Line 50 states $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$ for the field.</p>
 <p><strong>Fix.</strong> $\tilde U^{-1}\to\tilde U^{\natural}$ at all six lines (21, 50, 58, 150, 223, 273). Value unchanged. This one changes a standard convention: the left-invariant current is normally written with the inverse.</p>
@@ -322,7 +322,7 @@ $$</p>
 </table></div>
 <p>The sharpest statement is in <em>The Relativistic Particle in an External Field</em>, line 296:</p>
 <blockquote>
-<p>With that convention the four-velocity, the four-momentum, and the four-force all transform by the <strong>vector</strong> rule, $\tilde{Q}^{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$, because all three lie in $\mathbb{M}_-$. The field strength does <strong>not</strong>: it transforms by the <strong>bivector</strong> rule $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, the same rule used in the Lorentz-force article.</p>
+<p>With that convention the four-velocity, the four-momentum, and the four-force all transform by the <strong>vector</strong> rule, $\tilde{Q}^{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$, because all three lie in $\mathbb{B}_{\Phi}$. The field strength does <strong>not</strong>: it transforms by the <strong>bivector</strong> rule $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, the same rule used in the Lorentz-force article.</p>
 </blockquote>
 <p><em>The Lorentz Force</em> states the same distinction at line 504: "The field strength is <em>not</em> a four-vector, and it does not transform like one."</p>
 <p>None of the seven is a defect. They are listed because the earlier version of this file claimed to be complete.</p>
@@ -359,7 +359,7 @@ $$</p>
 <td>1, the algebra</td>
 <td>$\flat=-{}^{*}$</td>
 <td>$\mathbb{B}$, real dim $8$</td>
-<td>the algebra's real structure, fixed space $\mathbb{M}_-$; the <strong>shape</strong> of a charge-conjugation pairing</td>
+<td>the algebra's real structure, fixed space $\mathbb{B}_{\Phi}$; the <strong>shape</strong> of a charge-conjugation pairing</td>
 </tr>
 <tr>
 <td>2, the Clifford algebra</td>
