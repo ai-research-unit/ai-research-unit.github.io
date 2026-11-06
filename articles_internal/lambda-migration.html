@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lambda Migration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lambda-migration"><strong>Lambda Migration</strong></h1>
+<h2 id="scope">Scope</h2>
+<p>This file is an <strong>inventory</strong>, not an article and not an entry of a menu. It names the physics articles in which one of the three lengths can replace a quotient of a mass, a momentum or an energy with $\hbar$ or $h$, and it names them in the order of the menu, under the categories of the menu.</p>
+<p>The rule is already written: in <em>Unit, Index and Notation Conventions</em>, where the letter $\mu$ is retired as an inverse length, and in <em>The Mass Length Scale of a Massive Particle</em>, where the three lengths are read. What is missing is the work list. This file is that list.</p>
+<h2 id="the-three-lengths">The Three Lengths</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Length</th>
+<th>Definition</th>
+<th>Computed from</th>
+<th>Reciprocal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda_m$</td>
+<td>$\lambda_m=\hbar/(mc)$</td>
+<td>the mass</td>
+<td>$\lambda_m^{-1}=mc/\hbar$</td>
+</tr>
+<tr>
+<td>$\lambda_p$</td>
+<td>$\lambda_p=\hbar/p$</td>
+<td>the momentum</td>
+<td>$\lambda_p^{-1}=p/\hbar$</td>
+</tr>
+<tr>
+<td>$\lambda_E$</td>
+<td>$\lambda_E=\hbar c/E$</td>
+<td>the total energy</td>
+<td>$\lambda_E^{-1}=E/(\hbar c)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each is a length. Each reciprocal is the coefficient an equation actually carries, because a gradient carries an inverse length. The three are not independent: the mass shell $E^2=p^2c^2+m^2c^4$, divided by $\hbar^2c^2$, is $\lambda_E^{-2}=\lambda_p^{-2}+\lambda_m^{-2}$.</p>
+<h2 id="the-trigger">The Trigger</h2>
+<p>A quotient of $m$, $p$ or $E$ against $\hbar$ or $h$ is one of these lengths or its reciprocal, and nothing else.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form now written</th>
+<th>Is</th>
+<th>Example of the replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$mc/\hbar$</td>
+<td>$\lambda_m^{-1}$</td>
+<td>$(\Box-m^2c^2/\hbar^2)\tilde{Ξ}=0$ becomes $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$</td>
+</tr>
+<tr>
+<td>$\hbar/(mc)$</td>
+<td>$\lambda_m$</td>
+<td>an amplitude of order $\hbar/(mc)$ becomes one of order $\lambda_m$</td>
+</tr>
+<tr>
+<td>$\hbar/(2mc)$</td>
+<td>$\lambda_m/2$</td>
+<td>the half length that the Zitterbewegung amplitude carries</td>
+</tr>
+<tr>
+<td>$mc^2/\hbar$</td>
+<td>$c\,\lambda_m^{-1}$</td>
+<td>the rest frequency $c/\lambda_m$, the Compton clock</td>
+</tr>
+<tr>
+<td>$p/\hbar$</td>
+<td>$\lambda_p^{-1}$</td>
+<td>a wave number becomes the reciprocal of a length</td>
+</tr>
+<tr>
+<td>$\hbar/p$</td>
+<td>$\lambda_p$</td>
+<td>the reduced de Broglie wavelength</td>
+</tr>
+<tr>
+<td>$h/p$</td>
+<td>$2\pi\lambda_p$</td>
+<td>the ordinary de Broglie wavelength</td>
+</tr>
+<tr>
+<td>$E/\hbar$</td>
+<td>$\lambda_E^{-1}$</td>
+<td>an angular frequency becomes $c/\lambda_E$</td>
+</tr>
+<tr>
+<td>$\hbar c/E$</td>
+<td>$\lambda_E$</td>
+<td>the energy length</td>
+</tr>
+<tr>
+<td>$E/(\hbar c)$</td>
+<td>$\lambda_E^{-1}$</td>
+<td>a temporal wave number $k_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two directions are one statement. A mass coefficient is $\lambda_m^{-1}$ and the length it inverts is $\lambda_m$; nothing else in the pair is a separate convention.</p>
+<h2 id="what-the-substitution-buys">What the Substitution Buys</h2>
+<p><strong>One symbol per statement.</strong> An operator written $\Box-\lambda_m^{-2}$ names the length whose reciprocal it holds. An operator written $\Box-m^2c^2/\hbar^2$ names a mass, a speed and an action, three constants, to say one length.</p>
+<p><strong>The unit is visible.</strong> A gradient carries an inverse length, so the term it is equated to must carry an inverse length. The field $\tilde{Ξ}_{\mathrm{sp}}$ and the coefficient $\lambda_m^{-1}$ share a unit; $mc/\hbar$ has to be recognised as that object before the two can be compared.</p>
+<p><strong>The limits are read off.</strong> The massless limit is $\lambda_m^{-1}\to0$, the non-relativistic limit is $\lambda_p\gg\lambda_m$, and the rest frame is $\lambda_p\to\infty$. Each is a statement about one symbol.</p>
+<h2 id="what-is-not-migrated">What Is Not Migrated</h2>
+<ul>
+<li><strong>$\hbar\omega$ and $\hbar\vec k$.</strong> A frequency is turned into an energy, not into a length. No length is wanted.</li>
+<li><strong>$p=\hbar k$ and $E=\hbar\omega$.</strong> A wave number and a frequency, already inverse length and inverse time. Rewriting them as lengths would put a length where the equation wants a derivative.</li>
+<li><strong>$\mu$ as permeability</strong> in $c=1/\sqrt{\epsilon\mu}$ and <strong>$\mu$ as a direction label</strong> in $e_\mu$ and $Q_\mu$. Neither is an inverse length; the conventions article reads the two by context.</li>
+<li><strong>$h/p=2\pi\lambda_p$.</strong> Written once, deliberately, to relate the ordinary and the reduced wavelength. A definition, not a use.</li>
+<li><strong>The definition sites.</strong> <em>The Mass Length Scale of a Massive Particle</em> and <em>Unit, Index and Notation Conventions</em> carry the quotients on purpose, because they introduce the symbols.</li>
+</ul>
+<h2 id="the-contradiction-now-settled">The Contradiction, Now Settled</h2>
+<p><em>Operator and Calculus Conventions</em> fixed the one d'Alembertian and stated the mass equation as $(\Box-m^2c^2/\hbar^2)\tilde{Ξ}_{\mathrm{sp}}=0$, while <em>The Dirac Equation in Biquaternionic Form</em> states $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$ and derives every mass coefficient as $1/\lambda_m$. Two conventions articles, one equation, two spellings.</p>
+<p>It is settled in favour of the length. The conventions article now writes $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$, and the same substitution is carried through its own statements of the pair operator: the two first-order equations read $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},L}/\lambda_m$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\tilde{Ξ}_{\mathrm{sp},R}/\lambda_m$, the massive equation reads $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$, the mass shell reads $p^2=\lambda_m^{-2}$, and the Green matrix reads $(\Box-\lambda_m^{-2})G=\delta$ with $(\mathbb{D}-\lambda_m^{-1})(\mathbb{D}+\lambda_m^{-1})=\mathbb{D}^2-\lambda_m^{-2}$. The article introduces $\lambda_m$ once, names it in its summary of notation, and states that the mass is a reciprocal length and never a quotient of $m$ and $\hbar$.</p>
+<p>The conventions article is therefore no longer work. It is the second definition site, and the rule it now carries is the one the rest of this list applies.</p>
+<h2 id="the-reference-implementation">The Reference Implementation</h2>
+<p><em>The Dirac Equation in Biquaternionic Form</em> is the model. It writes $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},L}/\lambda_m$, defines $\lambda_m=\hbar/(mc)$ once, and states that below it the mass coefficient is always $1/\lambda_m$ and the mass-squared term always $1/\lambda_m^{2}$. Among the articles that state the Dirac equation it is the only one that carries no quotient of the old spelling. Every other Dirac article is measured against it.</p>
+<h2 id="how-the-count-is-made">How the Count Is Made</h2>
+<p><strong>What counts.</strong> A literal quotient: $mc/\hbar$ in either direction, $m^2c^2/\hbar^2$, $\mu=mc/\hbar$ as a definition, $p/\hbar$, $\hbar/p$, $h/p$, $E/\hbar$, $\hbar/E$, $\hbar c/E$, $E/(\hbar c)$, $h/E$. Each occurrence counts once.</p>
+<p><strong>What is excluded.</strong> Any line that already carries $\lambda_m$, since that line states the rule and not a use of the old spelling; and the three definition sites named above.</p>
+<p><strong>The count is a floor.</strong> A quotient split across two macros, a coefficient carried by a symbol defined elsewhere, and a mass in natural units are not counted here. The second list below gives the natural-units part.</p>
+<p><strong>The menu order.</strong> The tables follow <em>Physics</em> exactly: the same categories, the same order inside each category, and no article moved.</p>
+<h2 id="the-menu">The Menu</h2>
+<h3 id="biquaternion-physical-interpretation-of-mathematics">Biquaternion Physical Interpretation of Mathematics</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-non-relativistic-quantum-theory">Biquaternion Non Relativistic Quantum Theory</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+<td>$E/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets in Biquaternionic Form</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-electromagnetism">Biquaternion Electromagnetism</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$, $\hbar/(mc)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativity">Biquaternion Relativity</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativistic-quantum-theory">Biquaternion Relativistic Quantum Theory</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$mc^2/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $\hbar/(mc)$, $m^2c^2/\hbar^2$, $mc^2/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $p/\hbar$, $E/(\hbar c)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $\hbar/(mc)$, $m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a></td>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $E/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>$m^2c^2/\hbar^2$, $p/\hbar$, $E/(\hbar c)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>6</td>
+<td>0</td>
+<td>2</td>
+<td>$m^2c^2/\hbar^2$, $mc^2/\hbar$, $\hbar/(2mc)$, $E/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$\hbar/(2mc)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>$\hbar/(2mc)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>16</td>
+<td>1</td>
+<td>8</td>
+<td>$\hbar/(mc)$, $mc^2/\hbar$, $\hbar/(2mc)$, $p/\hbar$, $E/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a></td>
+<td>22</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$, $mc^2/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$m^2c^2/\hbar^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-relativistic-non-quantum-theory">Biquaternion Relativistic Non Quantum Theory</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-quantum-fields">Biquaternion Quantum Fields</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$, $m^2c^2/\hbar^2$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>$E/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>$\mu=mc/\hbar$, $mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="biquaternion-particle-physics-and-gauge-fields">Biquaternion Particle Physics and Gauge Fields</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\lambda_m$</th>
+<th>$\lambda_p$</th>
+<th>$\lambda_E$</th>
+<th>Form now written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a></td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>$mc/\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The tables carry <strong>40 articles</strong>, <strong>196 quotients of the mass</strong>, <strong>3 of the momentum</strong> and <strong>18 of the energy</strong>.</p>
+<h2 id="the-second-wave-the-mass-as-a-bare-symbol">The Second Wave: the Mass as a Bare Symbol</h2>
+<p>The counts above are quotients. The same articles also write the mass as a bare symbol in an operator, $-\mu^2\tilde{Ξ}$ or $(\Box-m^2)\tilde{Ξ}$ or $1/(p^2-m^2)$, which is the same statement in units $\hbar=c=1$: there the mass <em>is</em> an inverse length and the length is not written. These are not quotients, so nothing above counts them, and for the field-theory articles they are the larger part of the work. The number beside each title counts the literal forms $-\mu^2$, $-\mu^{2}$, $-m^2$, $-m^{2}$ and $p^2-m^2$.</p>
+<p>The list holds only articles that also carry a quotient, so it is a subset of the tables above and not a second corpus. An article whose mass is the algebraic modulus of an element, and not the mass of a field, is outside the migration and is not listed.</p>
+<h3 id="biquaternion-relativity_1">Biquaternion Relativity</h3>
+<ul>
+<li><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a>, 9</li>
+</ul>
+<h3 id="biquaternion-relativistic-quantum-theory_1">Biquaternion Relativistic Quantum Theory</h3>
+<ul>
+<li><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>, 7</li>
+<li><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a>, 5</li>
+<li><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a>, 20</li>
+<li><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a>, 11</li>
+<li><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a>, 3</li>
+<li><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>, 19</li>
+<li><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a>, 2</li>
+<li><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a>, 14</li>
+<li><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>, 31</li>
+<li><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>, 21</li>
+<li><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a>, 4</li>
+<li><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a>, 9</li>
+<li><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>, 5</li>
+<li><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a>, 44</li>
+<li><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a>, 2</li>
+<li><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a>, 6</li>
+<li><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a>, 4</li>
+<li><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a>, 22</li>
+<li><a href="../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>, 2</li>
+</ul>
+<h3 id="biquaternion-relativistic-non-quantum-theory_1">Biquaternion Relativistic Non Quantum Theory</h3>
+<ul>
+<li><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a>, 5</li>
+<li><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a>, 8</li>
+<li><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a>, 12</li>
+</ul>
+<h3 id="biquaternion-quantum-fields_1">Biquaternion Quantum Fields</h3>
+<ul>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>, 8</li>
+<li><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a>, 5</li>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>, 3</li>
+</ul>
+<h2 id="order-of-work">Order of Work</h2>
+<p><strong>First, the conventions.</strong> Done. <em>Operator and Calculus Conventions</em> now writes $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$ and its pair operator in the same length, so the spelling that every other article should follow is normative and written down.</p>
+<p><strong>Second, the articles that state an operator.</strong> There the mass term is a display and not a remark, so search and replace will not do and the article must be read:</p>
+<ul>
+<li><em>The Klein–Gordon Equation in Biquaternionic Form</em>, seventeen quotients, the operator stated in three frames.</li>
+<li><em>The Proca Equation: Massive Spin 1</em>, twenty-two quotients, and the article whose $\mu$ is a mass parameter from beginning to end.</li>
+<li><em>Klein–Gordon from the Dirac Square</em>, which squares the Dirac operator and must show the square producing $\lambda_m^{-2}$; it carries the largest bare-symbol count of the corpus, forty-four.</li>
+<li><em>The Dirac Oscillator</em>, <em>The Dirac Path Integral</em> and <em>Canonical Quantization of the Biquaternion Dirac Field</em>, which each restate the Dirac operator and inherit the convention of the parent article.</li>
+<li><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, whose subject is the root and which cannot leave the coefficient ambiguous.</li>
+</ul>
+<p><strong>Third, the exercises.</strong> <em>Plane-Wave Solutions of the Biquaternion Dirac Equation</em> and <em>Chirality and the Weyl Spinors</em> carry the mass shell as $k_0^2=\vec k^2+m^2c^2/\hbar^2$, which is $\lambda_E^{-2}=\lambda_p^{-2}+\lambda_m^{-2}$. The exercises ask for the three lengths and currently compute them, so the lengths belong in the statement of the answer.</p>
+<p><strong>Fourth, everything else.</strong> The remaining rows carry one or two quotients each, mostly a mass shell or a rest frequency in a remark, and one pass over them closes the corpus.</p>
+<h2 id="what-this-file-does-not-decide">What This File Does Not Decide</h2>
+<p>It does not decide whether an article should drop $m$ and $c$ altogether in favour of $\lambda_m$, nor whether the natural-units second wave is worth doing. It records where the old spelling is written, so that the decision is taken once and applied in one direction.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

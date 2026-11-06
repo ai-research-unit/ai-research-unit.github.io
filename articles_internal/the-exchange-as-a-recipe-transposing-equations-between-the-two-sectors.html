@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exchange as a Recipe: Transposing Equations Between the Two Sectors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exchange-as-a-recipe-transposing-equations-between-the-two-sectors"><strong>The Exchange as a Recipe: Transposing Equations Between the Two Sectors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Multiplication by the central imaginary $i$ exchanges the material sector $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$. The map is one operation of the algebra and it is exact. Among the central multiples, the maps that swap the two sectors are exactly the non-zero real multiples of $i$. The exchange is the one of them that reverses the norm without changing its size. This note asks a practical question: given an equation written on one sector, what is the equation it becomes on the other.</p>
+<p>The answer has a clean half and an unclean half. The clean half is the kinematics: the interval, the light cone, the wave operator and the dispersion relation transpose exactly, with the roles of the time coordinate and the space coordinates exchanged. The interval and every object built on the quaternionic norm carry one overall minus sign; the wave operator and the dispersion relation do not carry even that. The Hermitian pairing is the exception, and it is preserved exactly. The unclean half is the multiplication: the exchange is not a homomorphism, and a product does not transpose into a product. An $n$-fold product acquires the factor $i^{1-n}$, which depends on $n$, so an equation whose terms carry different degrees does not come out with the same shape.</p>
+<p><strong>The verdict in one line.</strong> Every equation transposes. A linear equation with real coefficients comes out unchanged, a norm comes out with a sign, a product comes out with a phase, and an equation that mixes degrees comes out in pieces.</p>
+<p><strong>What is established and what is proposed.</strong> The identities below are algebra, and each one is checked on random elements. The transpositions in §<em>Kinematics</em> and §<em>Dynamics</em> are substitutions, and their reading is the corpus's. The readings in §<em>What the Transposition Says</em> are interpretation, and the note marks them as such.</p>
+<p>The note is ordered as a recipe. §<em>The Map and Its Coordinates</em> fixes the map. §<em>The Recipe</em> states the rules in order. §<em>Why the Exchange Is Not Multiplicative</em> gives the obstruction and its one repair. §<em>Kinematics</em> and §<em>Dynamics</em> run the recipe on the objects of the two sectors. §<em>One Equation, Step by Step</em> runs it on a worked case. §<em>What the Transposition Says</em> reads the output, and §<em>Limits</em> states what the recipe does not deliver. §<em>The Equations of $\mathbb{B}_{\Phi}$</em> and §<em>The Equations of $\mathbb{B}_{\Psi}$</em> then catalogue the corpus, one formula per subsection, with the transposed form of each.</p>
+<h2 id="the-map-and-its-coordinates">The Map and Its Coordinates</h2>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The two sectors are the fixed spaces of two antilinear involutions,</p>
+<p>$$
+\mathbb{B}_{\Phi}=\{\tilde Q:\ \tilde Q^{\flat}=\tilde Q\},\qquad \mathbb{B}_{\Psi}=\{\tilde Q:\ \tilde Q^{*}=\tilde Q\},
+$$</p>
+<p>with ${}^{*}={}^{\natural}\circ\bar{\cdot}$ the adjoint and $\flat=-{}^{*}$. The exchange is</p>
+<p>$$
+J(\tilde Q)=i\,\tilde Q,\qquad J=\operatorname{diag}(i,i,i,i),
+$$</p>
+<p>multiplication of all four coefficients by the central imaginary. It has four properties, and each one is used below.</p>
+<p><strong>It swaps the sectors.</strong> For $\tilde R_\Phi\in\mathbb{B}_{\Phi}$ the element $\tilde R_\Phi^{*}=-\tilde R_\Phi$, so</p>
+<p>$$
+(i\tilde R_\Phi)^{*}=\bar{i}\,\tilde R_\Phi^{*}=(-i)(-\tilde R_\Phi)=i\tilde R_\Phi ,
+$$</p>
+<p>and $i\tilde R_\Phi\in\mathbb{B}_{\Psi}$. The same computation backwards sends $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$.</p>
+<p><strong>It is of order four, with square minus the identity.</strong> $J^{2}=-\mathbf 1$ and $J^{4}=\mathbf 1$, so the inverse is the negative, $J^{-1}=-J$.</p>
+<p><strong>It is a similarity of the quaternionic norm, with factor minus one.</strong> The norm is multiplicative, $\langle XY\rangle_{\natural}=\langle X\rangle_{\natural}\langle Y\rangle_{\natural}$, and the exchange is multiplication by a central unit, so $\langle JX\rangle_{\natural}=i^{2}\langle X\rangle_{\natural}=-\langle X\rangle_{\natural}$.</p>
+<p><strong>It is an isometry of the Hermitian form.</strong> The adjoint is conjugate-linear, so the two minus signs cancel:</p>
+<p>$$
+\mathrm{Sc}\bigl(JX\,(JY)^{*}\bigr)=\mathrm{Sc}\bigl(iX\,(-i)Y^{*}\bigr)=\mathrm{Sc}(XY^{*}).
+$$</p>
+<p>One form is preserved and the other is reversed. That single difference carries everything the exchange does at the level of forms: the probabilities are untouched and the lengths change sign.</p>
+<p><strong>The coordinates.</strong> Write the two elements as the corpus writes them,</p>
+<p>$$
+\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\qquad
+\tilde R_\Psi=c r_t\,e_t+i\bigl(r'_x\,\vec e_x+r'_y\,\vec e_y+r'_z\,\vec e_z\bigr),
+$$</p>
+<p>with all eight parameters real. Then</p>
+<p>$$
+\boxed{\;c r_t=-c r'_t,\qquad r'_k=r_k\quad (k=x,y,z).\;}
+$$</p>
+<p>Four numbers change place and one of them changes sign. The sign is not a slip. The exchange is a quarter turn of each coefficient's plane, $(a,b)\mapsto(-b,a)$, and the coefficient $c r'_t$ is the real part of $i c r'_t$; when that coefficient becomes imaginary the real part moves to $-c r'_t$. The two senses of the turn, $J$ and its inverse $-J$, give the two signs, and the algebra prefers neither.</p>
+<p><strong>On the centre alone</strong> the exchange is a rotation of the complex time plane by a quarter turn, $z\mapsto iz$ with $z=c r_t+i c r'_t$. Read on a phase, $\exp(i\theta)e_t\mapsto\exp(i(\theta+\pi/2))e_t$: the phase is advanced by a quarter turn and keeps its modulus. The exchange never damps an oscillation. Damping requires the continuation that carries the imaginary time coefficient to a real one, which is a different operation with a different square.</p>
+<h2 id="the-recipe">The Recipe</h2>
+<p>Six rules, applied in this order.</p>
+<p><strong>Rule 1, elements.</strong> Replace every element $\tilde Q_\Phi$ by $\hat{\tilde Q}=J(\tilde Q_\Phi)$, that is multiply its four coefficients by $i$. Equivalently, write $a_t=c r'_t$ and read the four real numbers $a_t,r_x,r_y,r_z$ in the other ledger, with $c r_t=-a_t$ and $r'_k=r_k$.</p>
+<p><strong>Rule 2, numbers.</strong> Two cases, and they must not be confused.</p>
+<p>A number that <strong>multiplies</strong> an element is a coefficient: $c$, $\hbar$, $\lambda$, $\lambda^{-2}$, a complex coupling, a phase factor. It is unchanged, because the central $i$ commutes with it: $J(\zeta\tilde Q)=\zeta\,J(\tilde Q)$ for every central $\zeta$.</p>
+<p>An <strong>element</strong> is multiplied by $i$. In particular a central element $\alpha e_t$ becomes $i\alpha e_t$: a real number used as the value of an equation-valued quantity becomes $i\alpha$, and a phase $e^{i\theta}e_t$ is advanced to $e^{i(\theta+\pi/2)}e_t$. This is Rule 4 with $n=1$ applied to a central element, so the two rules are one rule; the case is stated apart because the arithmetic is easy to get wrong.</p>
+<p><strong>Rule 3, derivatives.</strong> The two sectors carry the same four real parameters under different names, so</p>
+<p>$$
+\partial_{r'_t}=-\partial_{r_t},\qquad \partial_{r_k}=\partial_{r'_k}\qquad(k=x,y,z).
+$$</p>
+<p>The time derivative changes sign because the time coordinate does; the spatial derivatives do not, because the spatial parameters are equal. Squared derivatives are therefore unchanged.</p>
+<p><strong>Rule 4, products.</strong> A product does not transpose into the product of its images. It transposes into that product times a single phase, and the phase depends on how many factors the product has. A product of $n$ elements obeys</p>
+<p>$$
+\boxed{\;\widehat{\tilde A_1\tilde A_2\cdots\tilde A_n}=i^{\,1-n}\,\hat{\tilde A}_1\hat{\tilde A}_2\cdots\hat{\tilde A}_n.\;}
+$$</p>
+<p>The count is of <strong>element</strong> factors only. A real coefficient, a real scalar operator such as $\Box$ and a derivative are not counted, and they pass through the exchange unchanged.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Degree $n$</th>
+<th>Factor $i^{1-n}$</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>a single element transposes with no factor</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$-i$</td>
+<td>a product of two elements</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$-1$</td>
+<td>a product of three elements</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$i$</td>
+<td>a product of four elements</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Rule 5, conjugations.</strong> The quaternion conjugation commutes with the exchange, and the three conjugations that involve the complex conjugation anticommute with it up to a sign:</p>
+<p>$$
+{}^{\natural}\circ J=J\circ{}^{\natural},\qquad
+\overline{JX}=-J\bar X,\qquad (JX)^{*}=-JX^{*},\qquad (JX)^{\flat}=-JX^{\flat}.
+$$</p>
+<p>The rule is read off the coefficient structure: ${}^{\natural}$ reverses the vector signs and leaves the central $i$ alone, while $\bar{\cdot}$ conjugates it.</p>
+<p><strong>Rule 6, equations.</strong> Apply Rules 1 to 5 to every term, then multiply the whole equation by a single constant to put it in the form one wants. Rule 6 is where the recipe can fail: if the terms carry different degrees, the factors of Rule 4 differ from term to term, and no single constant removes them.</p>
+<p><strong>The inverse recipe.</strong> The exchange is invertible with $J^{-1}=-J$, so the recipe runs backwards by the same six rules with $i$ replaced by $-i$ and the two ledgers exchanged: $c r'_t=-c r_t$ and $r_k=r'_k$. Equivalently, transpose and multiply every term by $-1$. There is no asymmetry between the two directions; the arrow that the recipe reverses is a property of the coordinates and not of the rules.</p>
+<p><strong>The round trip.</strong> Two applications give minus the original, at every degree:</p>
+<p>$$
+\widehat{\widehat{\tilde A_1\cdots\tilde A_n}}=i^{1-n}\cdot i^{1-n}(-1)^{n}\,\tilde A_1\cdots\tilde A_n=-\tilde A_1\cdots\tilde A_n .
+$$</p>
+<p>The interior factor $(-1)^{n}$ comes from applying Rule 1 twice to each factor, $\hat{\hat A}=-A$. This is the check on Rule 4: a reader who obtains $+1$ at some degree has mis-counted the element factors or mis-signed the phase.</p>
+<h2 id="why-the-exchange-is-not-multiplicative">Why the Exchange Is Not Multiplicative</h2>
+<p>The exchange is a central unit, and a central unit acts on a product in two ways. For elements $A,B$,</p>
+<p>$$
+(JA)(JB)=iA\,iB=-AB,\qquad J(AB)=iAB,
+$$</p>
+<p>so</p>
+<p>$$
+(JA)(JB)=i\,J(AB),\qquad\text{that is}\qquad J(AB)=-i\,(JA)(JB).
+$$</p>
+<p>The transposition of a product costs one power of $i$ per factor beyond the first, and that is Rule 4.</p>
+<p><strong>The obstruction is structural, not a defect of the choice of map.</strong> No automorphism of $\mathbb{B}$ carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$, and the proof is one line on idempotents. An automorphism preserves idempotency, so it is enough to compare the idempotents of the two sectors. In components the condition $\tilde\Pi^{2}=\tilde\Pi$ reads $2Q_tQ_k=Q_k$ together with $Q_t^{2}-\sum_kQ_k^{2}=Q_t$: if some $Q_k$ is non-zero then $Q_t=\tfrac12$, and if all of them vanish then $Q_t\in\{0,1\}$. The scalar part of an idempotent is therefore always real.</p>
+<p>That closes the argument. $\mathbb{B}_{\Phi}$ is the set of elements whose $Q_t$ is purely imaginary, so it holds no non-zero idempotent, while $\mathbb{B}_{\Psi}$ holds $e_t$. An automorphism carrying $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$ would pull $e_t$ back to a non-zero idempotent of $\mathbb{B}_{\Phi}$, and there is none. The exchange is therefore not an automorphism, and it cannot be replaced by one.</p>
+<p><strong>The one repair, and its price.</strong> Define on $\mathbb{B}_{\Psi}$ the product</p>
+<p>$$
+\hat A\star\hat B:=-i\,\hat A\hat B .
+$$</p>
+<p>Then the exchange is multiplicative for it, $\widehat{AB}=\hat A\star\hat B$, and $\star$ is associative because it is a constant multiple of an associative product. The price is the unit. The unit of $\star$ is the element $E$ with $\hat A\star E=\hat A$, that is $-i\hat AE=\hat A$, that is $E=i e_t$. The unit of the twisted product is not the identity of the algebra and does not lie in $\mathbb{B}_{\Psi}$: it lies in $\mathbb{B}_{\Phi}$. The two sectors are therefore isotopic as algebras and not isomorphic, and the element that twists the product is the element that carries the exchange.</p>
+<h2 id="kinematics-what-transfers-exactly">Kinematics: What Transfers Exactly</h2>
+<p><strong>The interval.</strong> The two quadratic forms are</p>
+<p>$$
+\langle\tilde R_\Phi\rangle_{\natural}=-c^{2}(r'_t)^{2}+r_x^{2}+r_y^{2}+r_z^{2},\qquad
+\langle\tilde R_\Psi\rangle_{\natural}=c^{2}r_t^{2}-(r'_x)^{2}-(r'_y)^{2}-(r'_z)^{2},
+$$</p>
+<p>of signatures $(3,1)$ and $(1,3)$. Under Rule 1 the first becomes the negative of the second:</p>
+<p>$$
+\boxed{\;\langle J\tilde R_\Phi\rangle_{\natural}=-\langle\tilde R_\Phi\rangle_{\natural}=\langle\tilde R_\Psi\rangle_{\natural}.\;}
+$$</p>
+<p>The overall sign is the similarity factor of §<em>The Map and Its Coordinates</em>, read on the interval; the last equality is the coordinate rule, which turns the material interval into the negative of the informational one.</p>
+<p><strong>The cone survives.</strong> A null element stays null, because the similarity factor is a sign. The light cone of $\mathbb{B}_{\Phi}$ transposes onto the light cone of $\mathbb{B}_{\Psi}$, and the causal structure is preserved.</p>
+<p><strong>The signature convention changes and the cone does not.</strong> The two sectors are both Lorentzian, with opposite signs on the time slot: $(3,1)$ against $(1,3)$. The exchange re-labels which slot is positive; it does not make the form definite. A reader who says that it Euclideanises the theory has confused it with the Wick rotation. That rotation carries the time coefficient to an imaginary value, it gives signature $(4,0)$, and it removes the cone.</p>
+<p><strong>The positivity region becomes the past cone.</strong> An element of $\mathbb{B}_{\Psi}$ is positive where $c r_t\ge\lvert\vec r_\Psi\rvert$. Under the coordinate rule this is $-c r'_t\ge\lvert\vec r\rvert$, which is the past cone of $\mathbb{B}_{\Phi}$. The future cone of the material sector is the image of the negative states, not of the states. The orientation is exchanged with the sector, and that is the kinematic form of the missing arrow.</p>
+<p><strong>The mass shell becomes a purity condition.</strong> The mass shell of the material sector is the level set $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ of the four-momentum. Its image is the same set read on the other ledger, $\langle J\tilde P\rangle_{\natural}=+m^{2}c^{2}$; the sign is the similarity factor, and it agrees with the interval computation above.</p>
+<p><strong>The image lands on the negative-trace sheet.</strong> The time coefficient of a four-momentum is $Q_t=iE/c$, so the image has $c r_t=-E/c$, which is negative, while the state slice of the informational sector is the half $c r_t>0$. The state reading of an image therefore uses $-\hat{\tilde P}$ and not $\hat{\tilde P}$: the element $-\tilde P$ will not do, because it is itself a material element and still carries an imaginary time coefficient. That flip is the orientation reversal met above, seen on the four-momentum instead of on the state.</p>
+<p><strong>Normalised, the image is a state whose purity is the velocity.</strong> Scale $-\hat{\tilde P}$ by $c/(2E)$, which puts its trace at one, and write the result as the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$. Its Bloch vector is</p>
+<p>$$
+\vec r=-\frac{c\,\vec p}{E},\qquad
+\lvert\vec r\rvert^{2}=\frac{p^{2}c^{2}}{E^{2}}=1-\frac{m^{2}c^{4}}{E^{2}},
+$$</p>
+<p>so $\lvert\vec r\rvert$ is the speed of the material particle in units of $c$. Three limits follow. At $m=0$ the state is pure, $\lvert\vec r\rvert=1$, on the boundary sphere where it is a zero divisor. In the rest frame the state is the maximally mixed $\tfrac12e_t$. In the ultra-relativistic limit it approaches purity again, $\lvert\vec r\rvert\to1$ as $E\gg mc^{2}$. The quaternionic norm of the state is $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^{2})=\tfrac14m^{2}c^{4}/E^{2}$, which vanishes exactly on the material light cone.</p>
+<p><strong>The reading.</strong> The transposed mass is the departure of the informational state from purity, and the number it is measured by is $mc^{2}/E$, the reciprocal of the Lorentz factor. A material particle at rest is the maximally mixed state of the informational ledger, and a material light ray is a pure state. The corpus states the same correspondence from the other side, where the boundary of the Bloch ball is a slice of the causal cone; the transposition is what turns that geometric remark into a formula. This is a reading of two sets of coordinates and not an equality of two elements, and it is put here because it is the cleanest thing the recipe produces.</p>
+<h2 id="dynamics-what-transfers-in-form">Dynamics: What Transfers in Form</h2>
+<p><strong>The wave operator is invariant.</strong> By Rules 2 and 3 the operator and its derivatives transpose as</p>
+<p>$$
+\Box_\Phi=\Delta_{r}-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial r'^{2}_{t}}
+\qquad\text{into}\qquad
+\Box_\Psi=\Delta_{r'}-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial r^{2}_{t}},
+$$</p>
+<p>with $\Delta_r$ on $r_k$ and $\Delta_{r'}$ on $r'_k$. The two expressions are the same formula on the two sets of coordinates: one sign changes in the first derivative and is squared away, and the spatial derivatives are untouched. The free wave equation $\Box\tilde\xi=0$ therefore transposes into $\Box\hat{\tilde\xi}=0$ with no sign and no factor.</p>
+<p><strong>The dispersion relation is invariant, and the sense of propagation is not.</strong> A material plane wave</p>
+<p>$$
+\exp\Bigl(i\bigl(k_xr_x+k_yr_y+k_zr_z-\omega r'_t\bigr)\Bigr)
+$$</p>
+<p>transposes, because $r'_t=-r_t$ and $r_k=r'_k$, into</p>
+<p>$$
+\exp\Bigl(i\bigl(k_xr'_x+k_yr'_y+k_zr'_z+\omega r_t\bigr)\Bigr).
+$$</p>
+<p>The dispersion relation $\omega^{2}=c^{2}\lvert\vec k\rvert^{2}$ is unchanged, and the sign of the time term is reversed. A material wave travelling forward in material time travels backward in informational time. The recipe is exact here and it says the two ledgers run their clocks in opposite senses. That is the arrow problem stated on a plane wave rather than on the central rotation.</p>
+<p><strong>The phase advances; the damping appears only when the action is transported.</strong> A weight $e^{i\theta}e_t$ is a central element, so it transposes to $e^{i(\theta+\pi/2)}e_t$: the phase advances by a quarter turn and the modulus is untouched. Nothing here damps. The damping appears when the weight is rebuilt from the transposed action: the transposed action is $iS$, so the weight built on it is $e^{i(iS)/\hbar}=e^{-S/\hbar}$. The two disagree, and they disagree exactly because the exchange is not multiplicative. The transposed weight of $S$ is not the weight of the transposed action, and a reader who assumes otherwise will get $e^{iS/\hbar}$ advanced by a quarter turn where the transposed theory has $e^{-S/\hbar}$. That difference is the one place where the recipe is easy to misapply, and it is the non-multiplicativity that Rule 4 states.</p>
+<h2 id="one-equation-step-by-step">One Equation, Step by Step</h2>
+<p>The material equation is the massive scalar wave equation with a source and a norm constraint. Take</p>
+<p>$$
+\Box\tilde\xi+\frac{1}{\lambda^{2}}\tilde\xi=\tilde\Sigma,\qquad \langle\tilde\xi\rangle_{\natural}=\kappa ,
+$$</p>
+<p>with $\tilde\xi,\tilde\Sigma\in\mathbb{B}_{\Phi}$, $\lambda$ a real length and $\kappa$ a real scalar.</p>
+<p><strong>Step 1.</strong> Apply $J$ to every term:</p>
+<p>$$
+J(\Box\tilde\xi)+J\Bigl(\frac{1}{\lambda^{2}}\tilde\xi\Bigr)=J\tilde\Sigma .
+$$</p>
+<p><strong>Step 2, the operator and the coefficient.</strong> $\Box$ is a real scalar operator, so it passes through the exchange and the field alone is multiplied: $J(\Box\tilde\xi)=\Box\hat{\tilde\xi}$. The number $1/\lambda^{2}$ multiplies an element, so by Rule 2 it is a coefficient and also passes. The right-hand side is an element. The transposed equation is</p>
+<p>$$
+\boxed{\;\Box\hat{\tilde\xi}+\frac{1}{\lambda^{2}}\hat{\tilde\xi}=\hat{\tilde\Sigma}.\;}
+$$</p>
+<p>It is the same equation. This is the general outcome for a linear equation with real coefficients: <strong>the transposition is invisible in the coefficients, and every change is a change in the meaning of the four slots.</strong> The length $\lambda$ stays real for one reason only: it multiplies a field, and Rule 2 does not reach it.</p>
+<p><strong>Step 3, the constraint.</strong> The norm is a product of two element factors, so it carries $-i$; the right-hand side is a real number that is the value of an element, so by Rule 2 it carries $i$:</p>
+<p>$$
+-i\,\langle\hat{\tilde\xi}\rangle_{\natural}=i\kappa ,
+\qquad\text{that is}\qquad
+\boxed{\;\langle\hat{\tilde\xi}\rangle_{\natural}=-\kappa .\;}
+$$</p>
+<p>The minus sign is the similarity factor, and it agrees with the interval computation of §<em>Kinematics</em>.</p>
+<p><strong>Step 4, the mismatch.</strong> The wave equation came out unchanged and the constraint came out with a sign. That is the mixed-degree case in miniature: the two lines carry different factors, and no single constant can remove both. Had the constraint been written as the source of the wave equation, the transposed system would have had no common normalisation and no shape to compare with the original.</p>
+<h2 id="what-the-transposition-says">What the Transposition Says</h2>
+<p><strong>The linear theory is a fixed point, and that is why the recipe looks empty.</strong> The transposed wave equation of Step 2 is the original equation, and this is general: for an equation of uniform degree with real coefficients the exchange moves the four slots and leaves the coefficients alone. The content of the transposition is never in the linear part. It is in the objects that are quadratic or multiplicative, and those are the next paragraphs. A reader who transposes only the linear equations will conclude that the two sectors are the same theory. Such a reader is right about the linear part and wrong about every object that measures a length, a norm or a probability.</p>
+<p><strong>The products change phase, and the pure states are not preserved.</strong> A pure state satisfies $\tilde\Pi^{2}=\tilde\Pi$, and its image satisfies $\hat{\tilde\Pi}^{2}=i\hat{\tilde\Pi}$ by Rule 4, a twisted idempotent. No power of $i$ restores idempotency, because the two sides of that equation carry different degrees. The states of one sector are therefore not the states of the other in the strict algebraic sense, which is the idempotent count of §<em>Why the Exchange Is Not Multiplicative</em> read as a statement about states: the informational sector has a non-zero idempotent and the material sector has none. What survives the exchange is the geometry: the boundary of the ball transposes onto the cone, as §<em>Kinematics</em> showed, and the cone keeps its meaning on both sides.</p>
+<p><strong>The action transposes to an imaginary action, and that is a Euclidean weight.</strong> Every action of the corpus is written as the scalar part of an element or of a product. The scalar part transposes as $\mathrm{Sc}(JX)=i\,\mathrm{Sc}(X)$, so a real action $S$ becomes $iS$, and the weight becomes</p>
+<p>$$
+\exp\bigl(i\,(iS)/\hbar\bigr)=\exp(-S/\hbar).
+$$</p>
+<p>Two consequences follow together. The equations of motion are unchanged, because the Euler–Lagrange equation of $iS$ is $i$ times that of $S$ and $i$ is not zero. And the weight is the decaying exponential of the material action. This is why the exchange is the algebraic neighbour of the Euclidean rotation without being it: it preserves the cone, and it still hands back a decaying weight once the action is transported through $\mathrm{Sc}$.</p>
+<p><strong>The trace transposes to an imaginary trace.</strong> The corpus normalises a state by $\mathrm{Sc}\,\tilde{Ϛ}=\tfrac12$. The image in $\mathbb{B}_{\Phi}$ satisfies $\mathrm{Sc}\,\hat{\tilde{Ϛ}}=i\tfrac12$, an imaginary normalisation on a sector whose scalar coefficient is imaginary by construction. This is not a contradiction; it is the statement that the normalisation is a $\Psi$-side convention, and that on the $\Phi$ side it names the phase of the time coefficient.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The recipe is a translation and not a dynamics.</strong> It rewrites an equation; it does not produce one. An equation that holds on the material side because of a physical principle has a transposed twin that holds because of the same principle, read on the other ledger, and the twin is worth looking at only when the two ledgers carry different content. The corpus's ledger assignment is a convention, and a reader who swaps the two names gets the mirrored reading with the same mathematics.</p>
+<p><strong>Mixed degrees do not carry one factor.</strong> This is the one hard limit. Every equation whose terms carry different numbers of element factors comes out with term-dependent phases. Each term still has a transposed value, but the result is no longer the same law on the other ledger, and the eye cannot absorb the discrepancy into one normalisation. The worked example shows the boundary: a wave equation and a constraint transposed with different factors.</p>
+<p><strong>The arrow is not supplied.</strong> The exchange reverses the sense of the time coordinate, and both senses are available because $J$ is invertible with inverse $-J$. The choice between them is a choice of frame, and the recipe has no rule that makes it.</p>
+<p><strong>Nothing is Euclideanised.</strong> The transposed sectors are both Lorentzian. A reader who wants the Euclidean sector, with signature $(4,0)$, needs the rotation that changes the reality condition on the time coefficient, which is a continuation and not an exchange. The two then differ twice: they turn the central plane in opposite senses, and on the three space planes the exchange multiplies by $i$ while the Wick rotation does nothing.</p>
+<p><strong>The readings are interpretation.</strong> The past cone as the image of the positive states, the speed of the material particle as the Bloch vector of the informational state, and the imaginary action as a Euclidean weight are readings of the algebra. They are offered because they are exact as algebra and because they make the two sectors say different things. They are not derived from a physical principle of the corpus.</p>
+<h2 id="the-recipe-in-one-table">The Recipe in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object on $\mathbb{B}_{\Phi}$</th>
+<th>Its image on $\mathbb{B}_{\Psi}$</th>
+<th>Sign or factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i c r'_t\,e_t+\vec r$</td>
+<td>$-c r'_t\,e_t+i\vec r$, that is $c r_t\,e_t+i\vec r'$ with $r_t=-r'_t$, $\vec r'=\vec r$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>An element $\tilde Q$</td>
+<td>$i\tilde Q$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>A coefficient, real or complex, $c$, $m$, $\lambda$, $\zeta$</td>
+<td>the same coefficient</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>The interval $\langle\tilde Q\rangle_{\natural}$</td>
+<td>the interval of the image</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>The Hermitian pairing $\mathrm{Sc}(XY^{*})$</td>
+<td>the pairing of the images</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>A product $\tilde A\tilde B$</td>
+<td>$\hat{\tilde A}\hat{\tilde B}$</td>
+<td>$-i$</td>
+</tr>
+<tr>
+<td>A product of $n$ elements</td>
+<td>the product of the images</td>
+<td>$i^{1-n}$</td>
+</tr>
+<tr>
+<td>$\partial_{r'_t}$, $\partial_{r_k}$</td>
+<td>$-\partial_{r_t}$, $\partial_{r'_k}$</td>
+<td>one sign, squared away</td>
+</tr>
+<tr>
+<td>$\Box=\Delta_r-c^{-2}\partial^{2}_{r'_t}$</td>
+<td>$\Delta_{r'}-c^{-2}\partial^{2}_{r_t}$, the same formula</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>The scalar part $\mathrm{Sc}\,\tilde Q$</td>
+<td>$\mathrm{Sc}\,\hat{\tilde Q}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>The action $S$</td>
+<td>$iS$, with weight $\exp(-S/\hbar)$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>An idempotent $\tilde\Pi$</td>
+<td>$\hat{\tilde\Pi}^{2}=i\hat{\tilde\Pi}$</td>
+<td>twisted</td>
+</tr>
+<tr>
+<td>The positivity $c r_t\ge\lvert\vec r_\Psi\rvert$</td>
+<td>the past cone $-c r'_t\ge\lvert\vec r\rvert$</td>
+<td>orientation reversed</td>
+</tr>
+<tr>
+<td>The mass shell $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$</td>
+<td>the same level set with the sign reversed, read as a state with $\lvert\vec r\rvert=pc/E$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-equations-of-math253">The Equations of $\mathbb{B}_{\Phi}$</h2>
+<p>The two lists below sort the corpus by the sector that owns each formula. The filing rule is the coordinate rule of §<em>The Map and Its Coordinates</em>, applied to the whole corpus: the label attaches to the coordinates and to the values an equation carries, not to the operators that act on them and not to the fields they act on. That rule is why the gradient sits in $\mathbb{B}_{H}$ and a spinor sits in a minimal left ideal, while the equation around them is filed with the coordinates. Each subsection gives one formula and then what the recipe makes of it.</p>
+<p>The material list is dominated by mechanics: four-vectors, interval, wave equations, force laws, rotors, the bracket. It is the list that transposes most cleanly, because its formulas are linear in elements with real coefficients.</p>
+<h3 id="the-sector-condition">The sector condition</h3>
+<p>$$
+\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,\qquad \tilde R_\Phi^{\flat}=\tilde R_\Phi .
+$$</p>
+<p>Imaginary scalar part, real vector part. Because $\flat\circ J=-J\circ\flat$, the exchange carries this fixed space onto the other one, and the two sector conditions are one equation read twice.</p>
+<h3 id="the-four-position-and-the-interval">The four-position and the interval</h3>
+<p>$$
+\tilde R=i c r'_t\,e_t+\vec r,\qquad s^{2}=\langle\tilde R\rangle_{\natural}=-c^{2}{r'_t}^{2}+\lvert\vec r\rvert^{2}.
+$$</p>
+<p>The interval is the quaternionic norm, so it transposes with one overall minus sign, $s^{2}\mapsto-s^{2}$. The light cone $s^{2}=0$ is the fixed set. That is why the cone survives the exchange and the ball does not.</p>
+<h3 id="the-four-velocity">The four-velocity</h3>
+<p>$$
+\tilde V=i\gamma c\,e_t+\gamma\vec v,\qquad \langle\tilde V\rangle_{\natural}=-c^{2}.
+$$</p>
+<p>The image has norm $+c^{2}$. It is not a four-velocity on the other ledger: the normalisation of a world line is a material convention, and the image carries the opposite sign.</p>
+<h3 id="the-four-momentum-and-the-mass-shell">The four-momentum and the mass shell</h3>
+<p>$$
+\tilde P=i\frac{E}{c}\,e_t+\vec p,\qquad \langle\tilde P\rangle_{\natural}=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}=-m^{2}c^{2}.
+$$</p>
+<p>The mass shell is the level set $-m^{2}c^{2}$; its image is the level set $+m^{2}c^{2}$. At $m=0$ the level set is the cone and the image is the pure-state sphere. At $m\neq0$ the image is a level set of positive norm, which lies outside the light cone in the $\Psi$ reading.</p>
+<h3 id="the-four-wavevector-and-the-dispersion-relation">The four-wavevector and the dispersion relation</h3>
+<p>$$
+\tilde K=i\frac{\omega}{c}\,e_t+\vec k,\qquad \langle\tilde K\rangle_{\natural}=-\frac{\omega^{2}}{c^{2}}+\lvert\vec k\rvert^{2}=0.
+$$</p>
+<p>The dispersion relation and the null character are invariant. What changes is the sense of propagation: the phase is $\vec k\cdot\vec r-\omega r'_t$ on one ledger and $\vec k\cdot\vec r'+\omega r_t$ on the other, as §<em>Dynamics</em> derived.</p>
+<h3 id="the-four-potential">The four-potential</h3>
+<p>$$
+\tilde A=i a'_t\,e_t+\vec A,\qquad \tilde A\mapsto\tilde A+\partial\xi .
+$$</p>
+<p>The map is linear, so the recipe passes through both the element and the gauge shift. The image is a Hermitian element and the gauge orbit maps onto a gauge orbit. This is the one entry of the seven whose image is again a potential of a sector.</p>
+<h3 id="the-four-current-and-continuity">The four-current and continuity</h3>
+<p>$$
+\tilde J=i c\rho\,e_t+\vec j,\qquad \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde J\bigr)=0 .
+$$</p>
+<p>The scalar part transposes as $\mathrm{Sc}(JX)=i\,\mathrm{Sc}(X)$, so a vanishing scalar part stays zero and the continuity equation transposes into itself. The image current is Hermitian. With the Maxwell equation below, this is a pair that transfers without a phase.</p>
+<h3 id="the-four-force-and-its-orthogonality">The four-force and its orthogonality</h3>
+<p>$$
+\tilde K_{\mathrm f}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f,\qquad \langle\tilde K_{\mathrm f},\tilde V\rangle_{*}=0 .
+$$</p>
+<p>The Hermitian pairing is an isometry of the exchange, so the orthogonality of force and velocity transfers untouched. It is one of the few structural facts that does.</p>
+<h3 id="the-commutator-bracket">The commutator bracket</h3>
+<p>$$
+[\tilde R_{\Phi,1},\tilde R_{\Phi,2}]=2\,\vec r_1\times\vec r_2 .
+$$</p>
+<p>Two factors, so the bracket of the images is $i$ times the image of the bracket. Here that means the cross product reverses, $[\hat{\tilde R}_1,\hat{\tilde R}_2]=-2\,\vec r_1\times\vec r_2$. The algebra $\mathfrak{u}(2)$ transposes into itself with the orientation reversed.</p>
+<h3 id="the-wave-operator">The wave operator</h3>
+<p>$$
+\Box=\Delta-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial {r'_t}^{2}},\qquad \tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box .
+$$</p>
+<p>A central scalar operator with real coefficients, hence a fixed point. It is what makes the linear half of the corpus sector-blind.</p>
+<h3 id="the-wave-equation">The wave equation</h3>
+<p>$$
+\Box\tilde\xi=0 .
+$$</p>
+<p>A fixed point, with the same solution set. The exchange moves the coordinates and leaves this equation alone.</p>
+<h3 id="the-maxwell-equation">The Maxwell equation</h3>
+<p>$$
+\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J,\qquad \tilde F=\frac{1}{\sqrt{\mu}}\Bigl(\tilde\nabla^{\natural}\tilde A-\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)\Bigr).
+$$</p>
+<p>A fixed point: $\tilde\nabla$ has real coefficients and commutes with $i$, and the equation is linear in elements. One caveat. The field strength is itself in neither sector, so this is a statement about the equation and not about membership.</p>
+<h3 id="the-retarded-solution">The retarded solution</h3>
+<p>$$
+\tilde F(\tilde Q)=\sqrt{\mu}\int_{\text{past cone}}\tilde G_{\tilde\nabla}\bigl(\tilde Q-\tilde R_2\bigr)\,\tilde J(\tilde R_2)\,d^{4}R_2 .
+$$</p>
+<p>The formula is linear and its kernel is built from $\tilde\nabla$, so the shape is fixed. The domain is not. The exchange sends $r'_t\mapsto-r_t$ and reverses the cone, so the transposed solution is advanced. This is the sharpest case of a formula that transposes in form and reverses in content.</p>
+<h3 id="the-lorentz-force">The Lorentz force</h3>
+<p>$$
+\tilde K_{\mathrm f}=-\,q\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\bigl(\tilde V\tilde F\bigr),\qquad P_{\mathbb{B}_{\Phi}}(\tilde Q)=\tfrac12\bigl(\tilde Q-\tilde Q^{*}\bigr).
+$$</p>
+<p>Two factors inside a projection, so the recipe produces $\hat{\tilde K}_{\mathrm f}=i\,P_{\mathbb{B}_{\Phi}}\bigl(\hat{\tilde V}\hat{\tilde F}\bigr)$. The material projection stays material, the images sit inside it, and one factor of $i$ is left over. The outcome is Hermitian, so the result is not a four-force and not the same law on the other ledger. This is the clearest single instance of the mixed-degree limit.</p>
+<h3 id="the-rotor-action">The rotor action</h3>
+<p>$$
+\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*},\qquad \tilde U\tilde U^{*}=e_t .
+$$</p>
+<p>Three factors, and the star brings its own minus, so the two signs cancel and the action transposes exactly: $J(\tilde U\tilde Q\tilde U^{*})=(J\tilde U)(J\tilde Q)(J\tilde U)^{*}$. The sector's action on itself is preserved.</p>
+<h2 id="the-equations-of-math292">The Equations of $\mathbb{B}_{\Psi}$</h2>
+<p>The informational list is where the corpus's own machinery sits: states, observables, channels, entropies. Its formulas are the ones the recipe damages, and the damage is not a fault of notation. A norm transposes with a sign, and every object of this list is built on a norm or on a probability.</p>
+<h3 id="the-sector-condition_1">The sector condition</h3>
+<p>$$
+\tilde R_\Psi=c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z,\qquad \tilde R_\Psi^{*}=\tilde R_\Psi .
+$$</p>
+<p>Real scalar part, imaginary vector part. The line is the image of the condition above, and the two together are what the exchange swaps.</p>
+<h3 id="the-quaternionic-norm">The quaternionic norm</h3>
+<p>$$
+\langle\tilde R_\Psi\rangle_{\natural}=c^{2}r_t^{2}-\lvert\vec r_\Psi\rvert^{2}=\lambda_+\lambda_- .
+$$</p>
+<p>Signature $(1,3)$; the image has $(3,1)$ and the opposite sign. This is the interval statement again, with the labels swapped.</p>
+<h3 id="the-trace">The trace</h3>
+<p>$$
+2\,\mathrm{Sc}\,\tilde R_\Psi=2c r_t=\lambda_++\lambda_- .
+$$</p>
+<p>The image is the imaginary normalisation already noted in §<em>What the Transposition Says</em>, which is the statement that the trace is a $\Psi$-side scalar and has no material reading as a weight.</p>
+<h3 id="the-positivity-condition">The positivity condition</h3>
+<p>$$
+c r_t\ \ge\ \lvert\vec r_\Psi\rvert .
+$$</p>
+<p>The forward cone. Its image is the past cone, and the boundary $\lvert\vec r_\Psi\rvert=c r_t$ goes to the material light cone.</p>
+<h3 id="the-idempotents">The idempotents</h3>
+<p>$$
+\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad \tilde\Pi_1+\tilde\Pi_2=e_t,\quad \tilde\Pi_1\tilde\Pi_2=0 .
+$$</p>
+<p>The image satisfies $\hat{\tilde\Pi}^{2}=i\hat{\tilde\Pi}$, a twisted idempotent. No power of $i$ restores idempotency, so purity has no material image.</p>
+<h3 id="the-state-slice">The state slice</h3>
+<p>$$
+\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr).
+$$</p>
+<p>The image has norm $\tfrac14(\lvert\vec r\rvert^{2}-1)$: positive outside the ball, zero on the sphere, negative inside it. The boundary of the ball maps to the cone and the interior maps to the past cone.</p>
+<h3 id="the-failure-of-idempotency">The failure of idempotency</h3>
+<p>$$
+\tilde{Ϛ}^{2}-\tilde{Ϛ}=-\langle\tilde{Ϛ}\rangle_{\natural}\,e_t .
+$$</p>
+<p>A square and a linear term, so the transposition does not keep the shape. The verified transposed form is $\hat{\tilde{Ϛ}}^{2}-i\hat{\tilde{Ϛ}}=-\langle\hat{\tilde{Ϛ}}\rangle_{\natural}e_t$, and no single factor turns the one into the other.</p>
+<h3 id="the-spectrum">The spectrum</h3>
+<p>$$
+\tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi),\qquad \lambda_\pm=c r_t\pm\lvert\vec r_\Psi\rvert .
+$$</p>
+<p>The product of the eigenvalues is the norm and flips sign; the sum is the trace and becomes imaginary. The pair itself has no material reading.</p>
+<h3 id="the-born-rule">The Born rule</h3>
+<p>$$
+p=\frac{\operatorname{Tr}\bigl(\tilde{Ϛ}\tilde R_\Psi^{*}\bigr)}{\operatorname{Tr}\bigl(\tilde{Ϛ}\bigr)}\in[0,1].
+$$</p>
+<p>The numerator is preserved, because the Hermitian pairing is an isometry. The denominator becomes imaginary. The ratio therefore transposes to $-ip$, and this is the one formula of the corpus that the recipe refuses outright: a probability weight has no material counterpart.</p>
+<h3 id="the-reversible-evolution">The reversible evolution</h3>
+<p>$$
+\frac{\partial\tilde{Ϛ}}{\partial r'_t}=-\frac{i}{\hbar}\bigl[\tilde R_\Psi,\tilde{Ϛ}\bigr].
+$$</p>
+<p>Transposed, $\partial_{r_t}\hat{\tilde{Ϛ}}=+\frac{i}{\hbar}\bigl[\hat{\tilde R}_\Psi,\hat{\tilde{Ϛ}}\bigr]$. The same equation with the other sign of time, which is what the reversed time coordinate means.</p>
+<h3 id="the-kraus-channel">The Kraus channel</h3>
+<p>$$
+\Xi(\tilde{Ϛ})=\sum_l\tilde K_l\,\tilde{Ϛ}\,\tilde K_l^{*},\qquad \sum_l\tilde K_l^{*}\tilde K_l=e_t .
+$$</p>
+<p>Exact: the triple-product factor and the star's minus cancel term by term. Completely positive maps survive the exchange.</p>
+<h3 id="the-gksl-equation">The GKSL equation</h3>
+<p>$$
+\frac{d\tilde{Ϛ}}{dr'_t}=-\frac{i}{\hbar}\bigl[H,\tilde{Ϛ}\bigr]+\sum_k\Bigl(\tilde K_k\tilde{Ϛ}\tilde K_k^{*}-\tfrac12\bigl\{\tilde K_k^{*}\tilde K_k,\tilde{Ϛ}\bigr\}\Bigr).
+$$</p>
+<p>The reversible term transposes with its $i$ absorbed and the dissipator transposes unchanged, so the two do not meet. The image is $\partial_{r_t}\hat{\tilde{Ϛ}}=\frac{1}{\hbar}\bigl[\hat H,\hat{\tilde{Ϛ}}\bigr]-\hat D$: a real coefficient and a flipped dissipator. That is not a GKSL equation.</p>
+<h3 id="the-dephasing-channel">The dephasing channel</h3>
+<p>$$
+\Xi_{\mathrm{deph},p}(\tilde{Ϛ})=(1-p)\,\tilde{Ϛ}+p\bigl(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\bigr).
+$$</p>
+<p>Exact term by term, as every channel is. What does not survive is the pair of projectors it is built from: their images are twisted idempotents, so the transposed operation dephases towards twisted idempotents and not towards pure states.</p>
+<h3 id="the-modular-hamiltonian">The modular Hamiltonian</h3>
+<p>$$
+\tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}\ \in\mathbb{B}_{\Psi},\qquad \Delta=e^{-\tilde K_{\mathrm{mod}}} .
+$$</p>
+<p>The logarithm is not a polynomial, and the rules of §<em>The Recipe</em> do not reach it. Nothing forces the image of a logarithm to be the logarithm of an image, and the natural guess $i\tilde K_{\mathrm{mod}}$ is anti-Hermitian. The recipe stops here, and this entry is left open.</p>
+<h3 id="the-entropy">The entropy</h3>
+<p>$$
+S(\tilde{Ϛ})=h\!\left(\frac{1+\lvert\vec r\rvert}{2}\right),\qquad h(p)=-p\log p-(1-p)\log(1-p).
+$$</p>
+<p>The entropy is a function of the norm alone, so it inherits the sign flip. On the image the same functional reads $h\bigl(\tfrac12(1+\sqrt{1+4\langle\cdot\rangle_{\natural}})\bigr)$ in place of $h\bigl(\tfrac12(1+\sqrt{1-4\langle\cdot\rangle_{\natural}})\bigr)$: the same function, applied outside the ball.</p>
+<h3 id="the-energy-density">The energy density</h3>
+<p>$$
+\tilde W=\tfrac12\tilde F\tilde F^{*}=W+\frac{i}{c}\vec S\ \in\mathbb{B}_{\Psi}.
+$$</p>
+<p>The image is anti-Hermitian, with scalar part $iW$. The transposed energy density is imaginary.</p>
+<h3 id="the-spin-operators">The spin operators</h3>
+<p>$$
+\tilde S_k=\frac{\hbar}{2}i\vec e_k,\qquad \bigl[\tilde S_\mu,\tilde S_\nu\bigr]=i\hbar\,\epsilon_{\mu\nu\lambda}\tilde S_\lambda .
+$$</p>
+<p>Transposed, $\bigl[\hat{\tilde S}_\mu,\hat{\tilde S}_\nu\bigr]=-\hbar\,\epsilon_{\mu\nu\lambda}\hat{\tilde S}_\lambda$, checked on all six pairs. The $i$ drops out and the orientation reverses: the same algebra with $\hbar$ in place of $i\hbar$.</p>
+<h3 id="the-jordan-product">The Jordan product</h3>
+<p>$$
+\tfrac12\{\tilde A,\tilde B\}=\tfrac12\bigl(\tilde A\tilde B+\tilde B\tilde A\bigr).
+$$</p>
+<p>Both terms carry the same factor, so the anticommutator transposes with the uniform factor $i$. The Jordan algebra goes into itself up to a rescaling.</p>
+<p><strong>What neither list holds.</strong> Four objects are used by these equations and belong to neither sector. The gradient has real coefficients and lies in $\mathbb{B}_{H}$. A scalar field and an action sit in the centre $\mathbb{B}_{C}$, which is why the Klein–Gordon equation is filed there and not here: on a $\mathbb{B}$-valued field it is four decoupled copies, one per coefficient, and on a single scalar it is the ordinary complex equation. The field strength has a complex vector part and belongs to no fixed space. The Dirac field and its spinor live in $\mathbb{B}$ and in a minimal left ideal, and a general Lorentz rotor uses all of $\mathbb{B}$. The two lists are therefore a catalogue of coordinates and values, not of fields.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
+<td>the material and informational sectors, fixed spaces of $\flat$ and ${}^{*}$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>the exchange, $J\tilde Q=i\tilde Q=\operatorname{diag}(i,i,i,i)\tilde Q$</td>
+</tr>
+<tr>
+<td>$\hat{\tilde Q}$</td>
+<td>the image $J\tilde Q$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the twisted product $\hat A\star\hat B=-i\hat A\hat B$, with unit $i e_t$ outside the sector</td>
+</tr>
+<tr>
+<td>$\flat$, ${}^{*}$, ${}^{\natural}$, $\bar{\cdot}$</td>
+<td>the four maps: $\flat=-{}^{*}$, ${}^{*}={}^{\natural}\circ\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$</td>
+<td>the quaternionic norm, reversed by $J$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part, multiplied by $i$ by $J$</td>
+</tr>
+<tr>
+<td>$i^{1-n}$</td>
+<td>the factor carried by an $n$-fold product</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
+<td>the normalised state, pure at $\lvert\vec r\rvert=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html">Each Sector Is the Other's Clock: the Sector Exchange as Relational Time</a>, for the exchange as a quarter turn, the two times and the missing arrow.</li>
+<li><a href="../articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html">The Biquaternion Space, the Group of Involutions and the Six Subspaces</a>, for the six subspaces, the four signatures and the central imaginary as the exchange.</li>
+<li><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>, for the interval, the cone and the wave operator.</li>
+<li><a href="../articles_physics/the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the trace, the norm, the Bloch ball and the purity condition.</li>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the coefficient basis, the $i c r'_t$ dictionary and the four conjugations.</li>
+<li><a href="the-split-of-energy-mass-and-information-in-the-two-sectors.html">The Split of Energy: Mass and Information in the Two Sectors</a>, for the two readings of the trace and the norm on the two sectors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
