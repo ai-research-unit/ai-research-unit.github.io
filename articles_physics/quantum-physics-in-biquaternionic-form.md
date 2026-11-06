@@ -33,7 +33,7 @@ $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_k^{*}=\tilde Q_k$ and the form equals the plain form $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$; it is positive definite of signature $(4,0)$ there and on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The **scalar part** is the form against the unit, $\mathrm{Sc}(\tilde R_\Psi)=\langle\tilde R_\Psi,e_t\rangle_{*}$, and the **trace** is its reading in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\Psi)=2\langle\tilde R_\Psi,e_t\rangle_{*}=2c r_t$.
+On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_k^{*}=\tilde Q_k$ and the form equals the plain form $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$; it is positive definite, of signature $(4,0)$ on the sector and $(8,0)$ on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The **scalar part** is the form against the unit, $\mathrm{Sc}(\tilde R_\Psi)=\langle\tilde R_\Psi,e_t\rangle_{*}$, and the **trace** is its reading in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\Psi)=2\langle\tilde R_\Psi,e_t\rangle_{*}=2c r_t$.
 
 **Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{B}_{\Psi}$:
 
@@ -45,7 +45,7 @@ This is the form whose vanishing defines the light cone in $\mathbb{B}_{\Psi}$; 
 
 ### The Forms on $\mathbb{B}_{\Psi}$
 
-The algebra carries four forms, the scalar parts of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*; on $\mathbb{B}_{\Psi}$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
+The algebra carries four forms, the scalar parts of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*; on $\mathbb{B}_{\Psi}$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because on a Hermitian element complex conjugation and $\natural$ coincide. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
 
 **The plain form.** For two Hermitian elements $\tilde{R}_{\Psi,1} = c r_{t,1}\,e_t + i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2} = c r_{t,2}\,e_t + i\vec r_{\Psi,2}$, the plain form is
 
@@ -318,7 +318,7 @@ $$
 p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\operatorname{Tr}(\tilde{Ϛ})}.
 $$
 
-The factor $2$ is the dimension of the image and cancels in the ratio; it is not part of the form. Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\Psi$. On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde R_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\Psi$.
+The factor $2$ is the dimension of the image and cancels in the ratio; it is not part of the form. Written this way the Born rule has the standard density-matrix form $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=c r_t+\vec r\cdot\vec r_\Psi$. On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\operatorname{Tr}(AB)}=\operatorname{Tr}(AB)$; it is non-negative for $0\le\tilde R_\Psi\le e_t$, because $\operatorname{Tr}(AB)=\operatorname{Tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
 
 ## Dynamics
 
@@ -336,12 +336,12 @@ $$
 i\hbar\, \frac{d}{dr'_t}\tilde Q(r'_t) = \tilde R_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
 $$
 
-with $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ a Hermitian element (the Hamiltonian).
+with $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ the Hamiltonian, a Hermitian element. In the evolution formulas the same element is written $H$, so $H:=\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$.
 
 **The solution.** We have $-i\tilde R_\Psi = -ic r_t e_t + \vec r_\Psi$. The scalar part and the vector part commute, so
 
 $$
-\boxed{\;\tilde Q(r'_t) = \exp(-i Hr'_t/\hbar) = \exp(-ic r_t r'_t/\hbar)\left(\cos(|\vec r_\Psi|r'_t/\hbar)\,e_t + \sin(|\vec r_\Psi|r'_t/\hbar)\,\vec u_\Psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-i H r'_t/\hbar) = \exp(-ic r_t r'_t/\hbar)\left(\cos(|\vec r_\Psi|r'_t/\hbar)\,e_t + \sin(|\vec r_\Psi|r'_t/\hbar)\,\vec u_\Psi\right)\;},
 $$
 
 where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$ (for $\vec r_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.
@@ -377,27 +377,27 @@ with the commutator defined in the biquaternion algebra.
 In the **Heisenberg picture**, the state is fixed and the observables evolve:
 
 $$
-\tilde R_\Psi_{\mathrm{H}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde R_\Psi\,\tilde Q(r'_t).
+\tilde R_{\Psi,\mathrm{H}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde R_\Psi\,\tilde Q(r'_t).
 $$
 
 The evolution equation is the **Heisenberg equation**
 
 $$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}}(r'_t) = [\tilde R_\Psi_{\mathrm{H}}(r'_t), \tilde{R}_{\Psi,0}],
+i\hbar\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H],
 $$
 
-where $\tilde{R}_{\Psi,0}$ is the Hamiltonian.
+where $H$ is the Hamiltonian.
 
-**Derivation.** We compute the time derivative of $\tilde R_\Psi_{\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde{R}_{\Psi,0}\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde{R}_{\Psi,0}$:
-
-$$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde{R}_{\Psi,0}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi\tilde{R}_{\Psi,0}\tilde Q = \tilde Q^{*}[\tilde R_\Psi, \tilde{R}_{\Psi,0}]\tilde Q.
-$$
-
-Since $\tilde Q(r'_t) = \exp(-i H_{0} r'_t/\hbar)$ is a function of $\tilde{R}_{\Psi,0}$, it **commutes with $\tilde{R}_{\Psi,0}$**. This is what makes the last expression equal to $[\tilde R_\Psi_{\mathrm{H}}, \tilde Q^{*}\tilde{R}_{\Psi,0}\tilde Q] = [\tilde R_\Psi_{\mathrm{H}}, \tilde{R}_{\Psi,0}]$. So
+**Derivation.** We compute the time derivative of $\tilde R_{\Psi,\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = H\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}H$:
 
 $$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}}(r'_t) = [\tilde R_\Psi_{\mathrm{H}}(r'_t), \tilde{R}_{\Psi,0}].
+i\hbar\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}H\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi H\tilde Q = \tilde Q^{*}[\tilde R_\Psi, H]\tilde Q.
+$$
+
+Since $\tilde Q(r'_t) = \exp(-i H r'_t/\hbar)$ is a function of $H$, it **commutes with $H$**. This is what makes the last expression equal to $[\tilde R_{\Psi,\mathrm{H}}, \tilde Q^{*}H\tilde Q] = [\tilde R_{\Psi,\mathrm{H}}, H]$. So
+
+$$
+i\hbar\, \frac{d}{dr'_t}\tilde R_{\Psi,\mathrm{H}}(r'_t) = [\tilde R_{\Psi,\mathrm{H}}(r'_t), H].
 $$
 
 The two pictures are related by a $*$-unitary transformation and give the same physical predictions.
@@ -523,9 +523,9 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **7. Symmetry group.** The $*$-unitary group $\mathrm{U}(2)$ acts on $\mathbb{B}_{\Psi}$ by conjugation, with $SU(2)$ generating the spin rotations and $SO(3)$ acting on the Bloch sphere.
 
-**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{B}_{\Phi}$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
+**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{B}_{\Phi}$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in *The Dirac Equation in Biquaternionic Form*, and its quantization in *Canonical Quantization of the Biquaternion Dirac Field*.
 
-**9. Classical limit.** The classical limit of the qubit formalism is the classical spin vector, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article.
+**9. Classical limit.** The classical limit of the qubit formalism is the classical spin vector, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article; they are the subject of *Decoherence as Idempotent Projection* and of *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*.
 
 **10. Interpretation.** The biquaternion framework admits several interpretations. The most natural is **algebraic**: the states and observables of a quantum system are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$, and the quantum structure is a consequence of the algebra. This is a structural interpretation, not a metaphysical one, and it is compatible with several of the standard interpretations (Copenhagen, relational, informational) without committing to any of them.
 
@@ -595,9 +595,9 @@ $$
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde{W}\,\tilde U_{\mathrm b}, \qquad \tilde{W} \in SU(2),
 $$
 
-separates a $*$-unitary factor $\tilde{W}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in the companion article on the Lorentz group.
+separates a $*$-unitary factor $\tilde{W}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
-**The shared imaginary unit.** The $i$ of the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde R_\Psi\tilde Q$, the $i$ of the phase $\exp(-i Hr'_t/\hbar)$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
+**The shared imaginary unit.** The $i$ of the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde R_\Psi\tilde Q$, the $i$ of the phase $\exp(-i H r'_t/\hbar)$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
 
 **What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 
@@ -632,21 +632,21 @@ separates a $*$-unitary factor $\tilde{W}$ — the **Thomas–Wigner rotation** 
 
 The idempotent formalism raises several questions.
 
-**1. Extension to many qubits.** The formalism above describes a single qubit. The extension to $n$ qubits requires the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n}$ (over $\mathbb{C}$), which is isomorphic to $M_{2^n}(\mathbb{C})$. How do the idempotents, states, and observables generalize? Is the tensor product natural in the biquaternion framework, or does it require additional structure?
+**1. Extension to many qubits.** The formalism above describes a single qubit. The extension to $n$ qubits requires the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n}$ (over $\mathbb{C}$), which is isomorphic to $M_{2^n}(\mathbb{C})$. How do the idempotents, states, and observables generalize? Is the tensor product natural in the biquaternion framework, or does it require additional structure? The tensor product, the partial trace and the entangled two-qubit states are worked out in *Entangled Subsystems in the Biquaternion Framework*, and the partial trace is computed in *Exercise: Entanglement Entropy and the Partial Trace*.
 
-**2. Second quantization.** The formalism is first-quantized. To describe creation and annihilation of particles, one needs a Fock space and operator-valued fields. How does the biquaternion framework extend to this setting?
+**2. Second quantization.** The formalism is first-quantized. To describe creation and annihilation of particles, one needs a Fock space and operator-valued fields. How does the biquaternion framework extend to this setting? The biquaternion Fock space is built, with its creation and annihilation operators, in *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
-**3. The full dynamics.** The dynamics described here is for a qubit with a fixed Hamiltonian. The general dynamics of an open quantum system — with dissipation, decoherence, and feedback — is described by the Lindblad equation, which extends the von Neumann equation with additional terms. How does the Lindblad equation read in the biquaternion framework?
+**3. The full dynamics.** The dynamics described here is for a qubit with a fixed Hamiltonian. The general dynamics of an open quantum system — with dissipation, decoherence, and feedback — is described by the Lindblad equation, which extends the von Neumann equation with additional terms. How does the Lindblad equation read in the biquaternion framework? It is written in the algebra in *Quantum Channels and the Reversible/Irreversible Dichotomy*, §*The Lindblad Form*.
 
-**4. Relativistic quantum theory.** The biquaternion algebra contains the Lorentz group and the spinor representation, and the biquaternion Dirac equation describes a relativistic spin-1/2 field classically. The quantization of this field, with a Lorentz-covariant state space and a consistent many-particle structure, is the natural next step. The relation between the single-qubit quantum formalism presented here and the relativistic spinor-field theory remains to be worked out in detail.
+**4. Relativistic quantum theory.** The biquaternion algebra contains the Lorentz group and the spinor representation, and the biquaternion Dirac equation describes a relativistic spin-1/2 field classically. The quantization of this field, with a Lorentz-covariant state space and a consistent many-particle structure, is carried out in *Canonical Quantization of the Biquaternion Dirac Field*, on the classical equation of *The Dirac Equation in Biquaternionic Form*. The relation between the single-qubit quantum formalism presented here and the relativistic spinor-field theory remains to be worked out in detail.
 
-**5. The interpretation of the informational sector.** The companion article on $\mathbb{B}_{\Psi}$ proposes an informational interpretation of the Hermitian subspace. Under this interpretation, the idempotents are "pure information states" and the Hermitian elements are "informational observables". The Born rule is the "probability of extracting information". Whether this leads to new structure is an open question.
+**5. The interpretation of the informational sector.** The companion article *The Informational Sector: States, Observables and Probability* proposes an informational interpretation of the Hermitian subspace. Under this interpretation, the idempotents are "pure information states" and the Hermitian elements are "informational observables". The Born rule is the "probability of extracting information". Whether this leads to new structure is an open question.
 
-**6. The measurement problem.** The idempotent formalism makes the Born rule and the state update algebraic, but it does not explain why one idempotent is selected in a given measurement. This is the same measurement problem as in standard quantum physics, in different notation.
+**6. The measurement problem.** The idempotent formalism makes the Born rule and the state update algebraic, but it does not explain why one idempotent is selected in a given measurement. This is the same measurement problem as in standard quantum physics, in different notation. The deformation of an idempotent into a mixed state, and the channel that performs it, are the subject of *Decoherence as Idempotent Projection*; the selection itself is not explained there either.
 
 **7. Empirical content.** The reformulation reproduces standard quantum physics for a single qubit. Does it predict anything new, or does it only reinterpret? If it predicts new physics, at what scale does the deviation from standard QM appear?
 
-**8. The path integral.** The standard path integral formulation of quantum physics is not obviously expressible in the biquaternion framework. Is there a natural path integral in the biquaternion algebra, with a natural measure inherited from the algebra?
+**8. The path integral.** The standard path integral formulation of quantum physics is not obviously expressible in the biquaternion framework. Is there a natural path integral in the biquaternion algebra, with a natural measure inherited from the algebra? A path integral is constructed in *The Path Integral in Biquaternionic Form*, with the Schrödinger, spin-half and Coulomb instances in its companion articles.
 
 ## Summary
 
@@ -654,7 +654,7 @@ Quantum physics in the biquaternion framework is built on the Hermitian subspace
 
 The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the Hermitian form, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.
 
-The biquaternion space carries the structures the relativistic side reads — the bilinear ones, the spinor module, and the material sector of four-vectors, with the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$ — and the quantum formalism presented here and the relativistic structure coexist within the same biquaternion space. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
+The biquaternion space carries the structures the relativistic side reads — the bilinear ones, the spinor module, and the material sector of four-vectors, with the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$ — and the quantum formalism presented here and the relativistic structure coexist within the same biquaternion space. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in *The Dirac Equation in Biquaternionic Form*, and its quantization is carried out in *Canonical Quantization of the Biquaternion Dirac Field*.
 
 The extension to many qubits, the second-quantized version, the connection to quantum field theory, and the question of empirical content are open.
 
@@ -667,6 +667,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators) |
 | $\mathbb{B}_{H}$ | Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ (unit elements: $SU(2)$) |
 | $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | Hermitian element (observable) |
+| $H:=\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | The Hamiltonian: the same element, written $H$ in the evolution |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state) |
 | $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*} = \tfrac12(c r_t + \vec r\cdot\vec r_\Psi)$, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ | Hermitian form on a state |
@@ -682,7 +683,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}(|\vec r|^2-1)e_t$ | Deviation from idempotency |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 
