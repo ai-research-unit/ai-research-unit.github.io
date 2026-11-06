@@ -71,6 +71,7 @@
         <h1 id="the-quantized-dirac-field-in-biquaternionic-form"><strong>The Quantized Dirac Field in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The companion article <em>Canonical Quantization of the Biquaternion Dirac Field</em> promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian of the one-sided pair, the conjugate momentum with its second-class constraint, the equal-time anticommutators, the expansion in the parent's plane-wave solutions, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was handled through a representative rather than as an object in its own right, and the question of what kind of object the operator-valued biquaternion field is was left standing.</p>
+<p><strong>Units.</strong> Natural units $\hbar=c=1$ are used throughout this article: a four-momentum is $(p_0,\vec p)$ with $p_0=E$, the mass shell is $p^2=\vec p^{\,2}+m^2$, and every mass $m$ is an inverse length.</p>
 <p>This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object <em>is</em> in the biquaternion framework, and it develops the four structures that make the operator field more than a rewrite:</p>
 <ul>
 <li><strong>The field as an operator-valued biquaternion.</strong> The quantized field is a map from spacetime into the tensor product of the fermionic operator algebra and the algebra $\mathbb{B}$. It is an element of $\mathbb{B}$ at every point, multiplied by an operator. The four conjugations of $\mathbb{B}$ lift to operations on the field, three antilinear and one complex-linear, and their action has to be computed together with the operator ordering.</li>
@@ -148,14 +149,14 @@ $$</p>
 <h3 id="the-field-equation-as-an-operator-equation">The Field Equation as an Operator Equation</h3>
 <p>Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:</p>
 <p>$$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=m\tilde{Ξ}_{\mathrm{fop},L},
+\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{fop}},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=m\tilde{Ξ}_{\mathrm{fop},R}\;},
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{fop}},R}\;},
 $$</p>
 <p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-\lambda_m^{-1})$, with $\mathbb{D}$ the pair operator of <em>Operator and Calculus Conventions</em>, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
 <p>Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:</p>
 <p>$$
-\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\nabla\bigr)F-\lambda_m^{-1}\,i\,\overline{F}\,\vec e_z=0,
 $$</p>
 <p>with $\nabla$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of <em>The Dirac Equation in Biquaternionic Form</em> but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.</p>
 <p>The operator ordering is immaterial in the field equation because the gradient differentiates only the $x$-dependent $c$-number amplitudes and the mode operators are $x$-independent. The equal-time anticommutator is likewise consistent with the equation: applying the gradient to the anticommutator of the field with its Dirac adjoint at two points, and using the mode algebra, reproduces the time derivative of the delta function required by the Hamiltonian, which is the field equation in bracket form. This is the standard consistency check of canonical quantization, recorded rather than rederived as in the parent.</p>
@@ -399,7 +400,7 @@ $$</p>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>
-<td>$\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$</td>
+<td>$\bigl(i\partial/\partial r'_t+\nabla\bigr)F-\lambda_m^{-1}\,i\overline{F}\vec e_z=0$</td>
 <td>Kravchenko's two-sided equation, a different operator, not quantized here</td>
 </tr>
 <tr>

@@ -347,7 +347,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-equations-of-math253">The Equations of $\mathbb{B}_{\Phi}$</h2>
-<p>The two lists below sort the corpus by the sector that owns each formula. The filing rule is the coordinate rule of §<em>The Map and Its Coordinates</em>, applied to the whole corpus: the label attaches to the coordinates and to the values an equation carries, not to the operators that act on them and not to the fields they act on. That rule is why the gradient sits in $\mathbb{B}_{H}$ and a spinor sits in a minimal left ideal, while the equation around them is filed with the coordinates. Each subsection gives one formula and then what the recipe makes of it.</p>
+<p>The two lists below sort the corpus by the sector that owns each formula. The filing rule is the coordinate rule of §<em>The Map and Its Coordinates</em>, applied to the whole corpus: the label attaches to the coordinates and to the values an equation carries, not to the operators that act on them and not to the fields they act on. That rule is why the gradient sits in $\mathbb{B}_{H}$ and a spinor sits in a minimal left ideal, while the equation around them is filed with the coordinates. Each subsection gives one formula, what the recipe makes of it, and then two paragraphs: a status, which says whether the mirror line is exact, and a reading, which says what it would mean and where it is speculation. Several of the mirror lines are false or mislabelled as written, and each status says which part fails.</p>
 <p>The material list is dominated by mechanics: four-vectors, interval, wave equations, force laws, rotors, the bracket. It is the list that transposes most cleanly, because its formulas are linear in elements with real coefficients.</p>
 <h3 id="the-sector-condition">The sector condition</h3>
 <p>$$
@@ -359,6 +359,8 @@ $$</p>
 J(\tilde R_\Phi)^{\flat}=-J(\tilde R_\Phi)\quad\Longleftrightarrow\quad \tilde R_{\mathrm{im},\Phi}^{*}=+\tilde R_{\mathrm{im},\Phi},\qquad \tilde R_{\mathrm{im},\Phi}=i\tilde R_\Phi .
 $$</p>
 <p>The material condition is one sign convention for $\flat$; its mirror is the same statement written with $*$, which is the informational condition.</p>
+<p><strong>Status.</strong> True, and definitional. The line was recomputed on one hundred random material elements: $(iR)^{\flat}=iR^{*}=-iR$ holds identically, so the two sector conditions are one statement read with $\flat$ and with $*$.</p>
+<p><strong>Reading.</strong> No physics follows. It records that $J$ is a bijection between the two fixed spaces, which is true by construction. Claims that the sectors "are the same thing" lean on this line, and this line does not carry them.</p>
 <h3 id="the-four-position-and-the-interval">The four-position and the interval</h3>
 <p>$$
 \tilde R=i c r'_t\,e_t+\vec r,\qquad s^{2}=\langle\tilde R\rangle_{\natural}=-c^{2}{r'_t}^{2}+\lvert\vec r\rvert^{2}.
@@ -369,6 +371,8 @@ $$</p>
 s_{\mathrm{im}}^{2}=\langle i\tilde R_\Phi\rangle_{\natural}=-s^{2}=c^{2}r_t^{2}-\lvert\vec r'\rvert^{2}.
 $$</p>
 <p>Exact, and the sign is not removable: $i^{\natural}=i$, so the similarity factor of the norm is $+1$ on the interval's value and $-1$ on the interval itself.</p>
+<p><strong>Status.</strong> True. $\langle J\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ on one hundred samples, because the quaternionic norm is multiplicative and $\langle i\rangle_{\natural}=i^{2}=-1$. The sign is forced by the algebra and is not a convention.</p>
+<p><strong>Reading.</strong> The cone is fixed and the two sheets swap. Beyond that the reading is speculation. Nothing in the algebra assigns a meaning to a negative squared length on the informational side, so "an interval in metres becomes an interval in bits" is a story laid over a sign change.</p>
 <h3 id="the-four-velocity">The four-velocity</h3>
 <p>$$
 \tilde V=i\gamma c\,e_t+\gamma\vec v,\qquad \langle\tilde V\rangle_{\natural}=-c^{2}.
@@ -379,16 +383,20 @@ $$</p>
 \tilde V_{\mathrm{im}}=i\tilde V=-\gamma c\,e_t+i\gamma\vec v,\qquad \langle\tilde V_{\mathrm{im}}\rangle_{\natural}=+c^{2}.
 $$</p>
 <p>In its own coordinates the image has $c r_t=-\gamma c<0$ and $\lvert\vec r_\Psi\rvert=\gamma\lvert\vec v\rvert$, so the positivity test $c r_t\ge\lvert\vec r_\Psi\rvert$ fails at every speed from zero upwards: the image of a four-velocity is never a state.</p>
+<p><strong>Status.</strong> True, including the negative result: the image has $cr_t=-\gamma c<0$ at every speed, so the positivity test fails at $v=0$ as well.</p>
+<p><strong>Reading.</strong> The content is firm and negative. A world line does not transpose into a state, at any speed, so the exchange does not turn mechanics into probability. A claim that motion is information needs another map, because this one produces an element outside the state cone.</p>
 <h3 id="the-four-momentum-and-the-mass-shell">The four-momentum and the mass shell</h3>
 <p>$$
 \tilde P=i\frac{E}{c}\,e_t+\vec p,\qquad \langle\tilde P\rangle_{\natural}=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}=-m^{2}c^{2}.
 $$</p>
-<p>The mass shell is the level set $-m^{2}c^{2}$; its image is the level set $+m^{2}c^{2}$. At $m=0$ the level set is the cone and the image is the pure-state sphere. At $m\neq0$ the image is a level set of positive norm, which lies outside the light cone in the $\Psi$ reading.</p>
+<p>The mass shell is the level set $-m^{2}c^{2}$; its image is the level set $+m^{2}c^{2}$. At $m=0$ the level set is the cone and the image is the past cone, not the pure-state set. At $m\neq0$ the image is a level set of positive norm, which lies outside the light cone in the $\Psi$ reading.</p>
 <p><strong>EXPERIMENTAL MIRROR EQUATION.</strong> Substituting $\tilde P\mapsto i\tilde P$:</p>
 <p>$$
 \tilde P_{\mathrm{im}}=i\tilde P=-\frac{E}{c}e_t+i\vec p,\qquad \langle\tilde P_{\mathrm{im}}\rangle_{\natural}=+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=+m^{2}c^{2}.
 $$</p>
 <p>The level set is the same hyperboloid read with the opposite sign of the invariant, so the mass shell is its own mirror up to the sign of $m^{2}$ and the change of which signature calls it timelike.</p>
+<p><strong>Status.</strong> True for $m\neq0$: the level set flips to $+m^{2}c^{2}$. False at $m=0$ as stated. The image of a null momentum has $cr_t=-E/c<0$ and therefore lies on the past cone, while the pure-state set sits on the future cone at $cr_t=\tfrac12$.</p>
+<p><strong>Reading.</strong> The mass shell mirrors to itself with $m^{2}\mapsto-m^{2}$, which is the interval statement again. The tempting reading, that a massless particle mirrors into a pure state, is not supported: the image is the antipodal sheet. Calling the past cone a state space is speculation and it is the wrong cone.</p>
 <h3 id="the-four-wavevector-and-the-dispersion-relation">The four-wavevector and the dispersion relation</h3>
 <p>$$
 \tilde K=i\frac{\omega}{c}\,e_t+\vec k,\qquad \langle\tilde K\rangle_{\natural}=-\frac{\omega^{2}}{c^{2}}+\lvert\vec k\rvert^{2}=0.
@@ -399,6 +407,8 @@ $$</p>
 \tilde K_{\mathrm{im}}=i\tilde K=-\frac{\omega}{c}e_t+i\vec k,\qquad \langle\tilde K_{\mathrm{im}}\rangle_{\natural}=+\frac{\omega^{2}}{c^{2}}-\lvert\vec k\rvert^{2}=0 .
 $$</p>
 <p>A null element stays null, so the light cone is a fixed set of the exchange and the dispersion relation is untouched.</p>
+<p><strong>Status.</strong> True. Null maps to null, because the norm flips and zero is fixed by any factor.</p>
+<p><strong>Reading.</strong> Firm and nearly empty. Every null element survives multiplication by a central unit, so the invariance of the light cone carries no information about the two sectors. The reversal of propagation follows from $r'_t\mapsto-r_t$ and is a coordinate statement, not a dynamical one.</p>
 <h3 id="the-four-potential">The four-potential</h3>
 <p>$$
 \tilde A=i a'_t\,e_t+\vec A,\qquad \tilde A\mapsto\tilde A+\partial\xi .
@@ -408,7 +418,9 @@ $$</p>
 <p>$$
 \tilde A_{\mathrm{im}}=i\tilde A=-a'_t\,e_t+i\vec A,\qquad \tilde A_{\mathrm{im}}\mapsto\tilde A_{\mathrm{im}}+\partial(i\xi).
 $$</p>
-<p>The shift survives because $\partial(i\xi)$ has a real time part and an imaginary vector part, which is the $\mathbb{B}_{\Psi}$ pattern; the gauge parameter becomes imaginary and the orbit stays inside the sector.</p>
+<p>The claim is that the shift survives with the gauge parameter imaginary and the orbit inside the sector. The status below tests that claim and finds it false.</p>
+<p><strong>Status.</strong> False as written. The gradient has real coefficients, $\tilde\nabla=e_t\,\partial_{R_t}+\sum_k e_k\,\partial_{R_k}$, so for a real gauge parameter $\xi$ the shifted term $\partial(i\xi)$ has an imaginary time part and an imaginary vector part. That is neither sector's pattern. The informational pattern needs a real time part, and no scalar $\xi$ produces one.</p>
+<p><strong>Reading.</strong> The consequence is worth stating plainly: the image of a gauge orbit is not a gauge orbit, and the exchange does not act on gauge equivalence classes. The field strength still transposes, because it is one gradient acting on one element, so the physics of $\tilde F$ survives while the potential's gauge structure does not. This is the first genuine failure of the recipe in the list.</p>
 <h3 id="the-four-current-and-continuity">The four-current and continuity</h3>
 <p>$$
 \tilde J=i c\rho\,e_t+\vec j,\qquad \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde J\bigr)=0 .
@@ -419,6 +431,8 @@ $$</p>
 \tilde J_{\mathrm{im}}=i\tilde J=-c\rho\,e_t+i\vec j,\qquad \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde J_{\mathrm{im}}\bigr)=i\,\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde J\bigr)=0 .
 $$</p>
 <p>Source and continuity equation transpose together with no leftover sign, so charge conservation is a fixed point of the exchange.</p>
+<p><strong>Status.</strong> True. $\mathrm{Sc}(iX)=i\,\mathrm{Sc}(X)$, since $i$ is central, so a vanishing scalar part stays zero and the factor is common to both sides.</p>
+<p><strong>Reading.</strong> Continuity keeps its shape, and conservation with it. What it does not keep is its meaning. A charge density becomes an imaginary charge density, and the corpus has no measured quantity of that kind. The claim that charge conservation is a fixed point is therefore exact and, as physics, empty.</p>
 <h3 id="the-four-force-and-its-orthogonality">The four-force and its orthogonality</h3>
 <p>$$
 \tilde K_{\mathrm f}=i\frac{\gamma\vec f\cdot\vec v}{c}\,e_t+\gamma\vec f,\qquad \langle\tilde K_{\mathrm f},\tilde V\rangle_{*}=0 .
@@ -429,6 +443,8 @@ $$</p>
 \langle\tilde K_{\mathrm{im},\mathrm f},\tilde V_{\mathrm{im}}\rangle_{*}=\langle\tilde K_{\mathrm f},\tilde V\rangle_{*}=0 .
 $$</p>
 <p>Exact: the Hermitian pairing is an isometry of the exchange. It is the one pairing of the corpus that is, since the quaternionic norm reverses and $\mathrm{Sc}(XY)$ reverses with it.</p>
+<p><strong>Status.</strong> True, verified on one hundred random pairs. The Hermitian form is an isometry of the exchange, so the pairing of the images equals the pairing of the originals term by term.</p>
+<p><strong>Reading.</strong> This is the one structural fact that crosses undamaged, and it crosses because the Hermitian form is the only one of the four that $J$ preserves. The physical reading has no independent content: the images are not a physical world line and a physical force, so "force is orthogonal to velocity on both sides" restates the algebra.</p>
 <h3 id="the-commutator-bracket">The commutator bracket</h3>
 <p>$$
 [\tilde R_{\Phi,1},\tilde R_{\Phi,2}]=2\,\vec r_1\times\vec r_2 .
@@ -439,6 +455,8 @@ $$</p>
 [\tilde R_{\mathrm{im},1},\tilde R_{\mathrm{im},2}]=-[\tilde R_1,\tilde R_2]=-2\,\vec r_1\times\vec r_2=2\,(i\vec r_1)\times(i\vec r_2).
 $$</p>
 <p>The bracket is bilinear, so the two factors of $i$ give $-1$ and leave no phase: the same formula holds on the image's own components, with the orientation reversed.</p>
+<p><strong>Status.</strong> True on one hundred pairs: $[\tilde R_1,\tilde R_2]=2\,\vec r_1\times\vec r_2$ for material elements, and the bracket of the images is minus the image of the bracket.</p>
+<p><strong>Reading.</strong> The algebra $\mathfrak{u}(2)$ maps to itself with the orientation reversed, so the exchange is an anti-automorphism and not an automorphism. Charge conjugation reverses orientation in the same way, so the resemblance is real, but no identification with $C$, $P$ or $T$ follows from this line. That would be speculation.</p>
 <h3 id="the-wave-operator">The wave operator</h3>
 <p>$$
 \Box=\Delta-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial {r'_t}^{2}},\qquad \tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box .
@@ -449,6 +467,8 @@ $$</p>
 \Box_{\mathrm{im}}=\Delta_{r'}-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial r_t^{2}}=\Box .
 $$</p>
 <p>Fixed point: a central scalar operator with real coefficients cannot see the exchange.</p>
+<p><strong>Status.</strong> True and trivial. $\Box$ is central, its coefficients are real, and the second time derivative is even in the sign of $t$.</p>
+<p><strong>Reading.</strong> This is why the linear half of the corpus is sector-blind, and the reason is thin: the operator never touches the factor $i$. The statement that the two sectors obey the same wave equation is thereby true and empty, because the equation contains no sector-dependent ingredient.</p>
 <h3 id="the-wave-equation">The wave equation</h3>
 <p>$$
 \Box\tilde\xi=0 .
@@ -459,6 +479,8 @@ $$</p>
 \Box_{\mathrm{im}}\,\tilde\xi_{\mathrm{im}}=0\quad\Longleftrightarrow\quad \Box\,\tilde\xi_{\mathrm{im}}=0 .
 $$</p>
 <p>The same equation on the image field, with the two coordinate sets exchanged and no factor.</p>
+<p><strong>Status.</strong> True, and it adds nothing to the previous entry.</p>
+<p><strong>Reading.</strong> The exchange is a symmetry of the free theory. That is a real statement about the free theory and it is silent about interactions, and silent about which sector a given solution belongs to.</p>
 <h3 id="the-maxwell-equation">The Maxwell equation</h3>
 <p>$$
 \tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J,\qquad \tilde F=\frac{1}{\sqrt{\mu}}\Bigl(\tilde\nabla^{\natural}\tilde A-\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)\Bigr).
@@ -469,6 +491,8 @@ $$</p>
 \tilde\nabla\tilde F_{\mathrm{im}}=-\sqrt{\mu}\,\tilde J_{\mathrm{im}},\qquad \tilde F_{\mathrm{im}}=i\tilde F=-\sqrt{\epsilon}\,\vec E-i\sqrt{\mu}\,\vec H .
 $$</p>
 <p>A fixed point, because $\tilde\nabla$ has real coefficients and commutes with $i$. The two halves of the field exchange their phases: the electric half becomes real and the magnetic half imaginary.</p>
+<p><strong>Status.</strong> True as an identity. $\tilde\nabla$ has real coefficients and commutes with $i$, so both sides carry the same factor; the stated image of $\tilde F$ is the correct arithmetic.</p>
+<p><strong>Reading.</strong> The equation is a fixed point, and as the text says, a fixed point of the equation and not of sector membership. The exchange of phases between the electric and magnetic halves is exact arithmetic and, as physics, speculation: $\tilde F$ lies in no sector, so the phase of each half has no independent measurable meaning here.</p>
 <h3 id="the-retarded-solution">The retarded solution</h3>
 <p>$$
 \tilde F(\tilde Q)=\sqrt{\mu}\int_{\text{past cone}}\tilde G_{\tilde\nabla}\bigl(\tilde Q-\tilde R_2\bigr)\,\tilde J(\tilde R_2)\,d^{4}R_2 .
@@ -479,6 +503,8 @@ $$</p>
 \tilde F_{\mathrm{im}}(\tilde Q_{\mathrm{im}})=\sqrt{\mu}\int_{\text{future cone}}\tilde G_{\mathrm{im},\tilde\nabla}\bigl(\tilde Q_{\mathrm{im}}-\tilde R_{\mathrm{im},2}\bigr)\,\tilde J_{\mathrm{im}}(\tilde R_{\mathrm{im},2})\,d^{4}R_2 .
 $$</p>
 <p>The integrand transposes exactly and the domain does not: $r_t=-r'_t$ turns the past cone into the future one, so the mirror of the retarded solution is the advanced one.</p>
+<p><strong>Status.</strong> True, and the sharpest line in the note. The integrand transposes; the domain does not, because $r'_t\mapsto-r_t$ reverses the time order and carries the past cone onto the future cone.</p>
+<p><strong>Reading.</strong> The mirror of a retarded field is advanced. Retardation is imposed by a boundary condition and $J$ does not preserve it, so a recipe built on $i$ cannot carry causality across the sectors. Whether that is a defect of the recipe or a fact about the sectors is not settled by the algebra, and the corpus does not settle it.</p>
 <h3 id="the-lorentz-force">The Lorentz force</h3>
 <p>$$
 \tilde K_{\mathrm f}=-\,q\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\bigl(\tilde V\tilde F\bigr),\qquad P_{\mathbb{B}_{\Phi}}(\tilde Q)=\tfrac12\bigl(\tilde Q-\tilde Q^{*}\bigr).
@@ -489,18 +515,22 @@ $$</p>
 \tilde K_{\mathrm{im},\mathrm f}=i\tilde K_{\mathrm f}=+\,q\sqrt{\mu}\,i\,P_{\mathbb{B}_{\Phi}}\bigl(\tilde V_{\mathrm{im}}\tilde F_{\mathrm{im}}\bigr),\qquad \tilde K_{\mathrm{im},\mathrm f}^{*}=+\tilde K_{\mathrm{im},\mathrm f}.
 $$</p>
 <p>Two factors give $i^{2}=-1$, which cancels the minus of the force law, and one factor of $i$ is left over. The projection stays material and the result is Hermitian: the mirror is a Hermitian force-like element and not a four-force.</p>
+<p><strong>Status.</strong> The stated identity is true on one hundred random pairs: the two factors of $i$ cancel the minus of the force law and leave one $i$, and the result is Hermitian.</p>
+<p><strong>Reading.</strong> The mirror is not a force law on the other ledger. The projection $P_{\mathbb{B}_{\Phi}}$ stays material, so a material operation produces a Hermitian element that has no equation of motion behind it. Any reading of this object as "the informational force" is speculation and should be dropped.</p>
 <h3 id="the-rotor-action">The rotor action</h3>
 <p>$$
 \tilde Q\mapsto\tilde U\tilde Q\tilde U^{*},\qquad \tilde U\tilde U^{*}=e_t .
 $$</p>
 <p>Three factors, and the star brings its own minus, so the two signs cancel and the action transposes exactly: $J(\tilde U\tilde Q\tilde U^{*})=(J\tilde U)(J\tilde Q)(J\tilde U)^{*}$. The sector's action on itself is preserved.</p>
-<h2 id="the-equations-of-math340">The Equations of $\mathbb{B}_{\Psi}$</h2>
-<p>The informational list is where the corpus's own machinery sits: states, observables, channels, entropies. Its formulas are the ones the recipe damages, and the damage is not a fault of notation. A norm transposes with a sign, and every object of this list is built on a norm or on a probability.</p>
 <p><strong>EXPERIMENTAL MIRROR EQUATION.</strong> Substituting the rotor, the element and the conjugate:</p>
 <p>$$
 J\bigl(\tilde U\tilde Q\tilde U^{*}\bigr)=\tilde U_{\mathrm{im}}\,\tilde Q_{\mathrm{im}}\,\tilde U_{\mathrm{im}}^{*},\qquad \tilde U_{\mathrm{im}}\tilde U_{\mathrm{im}}^{*}=e_t .
 $$</p>
 <p>Three factors give $i^{-2}=-1$ and the two stars give another $-1$, so the action transposes exactly and the unit-norm condition is preserved.</p>
+<p><strong>Status.</strong> True, but not for the reason given. The count of Rule 4 does not apply here: one of the three factors is starred, and a starred factor carries $-i$ where an element carries $i$. The product of the three multipliers is $i\cdot i\cdot(-i)=i$, which is exactly $J$, so the identity holds.</p>
+<p><strong>Reading.</strong> A rotation stays a rotation. That is a statement about the group and not about what is being transformed, and it does not say that the two sectors rotate "in the same way" in any physical sense.</p>
+<h2 id="the-equations-of-math386">The Equations of $\mathbb{B}_{\Psi}$</h2>
+<p>The informational list is where the corpus's own machinery sits: states, observables, channels, entropies. Its formulas are the ones the recipe damages, and the damage is not a fault of notation. A norm transposes with a sign, and every object of this list is built on a norm or on a probability. The subsections below carry the same two paragraphs as the material list, a status and a reading, and the status is where a false line is named as false.</p>
 <h3 id="the-sector-condition_1">The sector condition</h3>
 <p>$$
 \tilde R_\Psi=c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z,\qquad \tilde R_\Psi^{*}=\tilde R_\Psi .
@@ -511,6 +541,8 @@ $$</p>
 J(\tilde R_\Psi)^{\flat}=J(\tilde R_\Psi)\quad\Longleftrightarrow\quad \tilde R_{\mathrm{im},\Psi}^{*}=-\tilde R_{\mathrm{im},\Psi},\qquad \tilde R_{\mathrm{im},\Psi}=i\tilde R_\Psi .
 $$</p>
 <p>The informational condition mirrors into the material one: one fixed space of $\flat$, one of $*$.</p>
+<p><strong>Status.</strong> True, definitional, and the mirror of the first entry: $(iR)^{*}=-iR$ whenever $R^{*}=R$, so the two conditions are one statement read twice.</p>
+<p><strong>Reading.</strong> Nothing physical follows, and the entry carries the same emptiness as its material twin. It says the exchange is a bijection, which is what the map was built to be.</p>
 <h3 id="the-quaternionic-norm">The quaternionic norm</h3>
 <p>$$
 \langle\tilde R_\Psi\rangle_{\natural}=c^{2}r_t^{2}-\lvert\vec r_\Psi\rvert^{2}=\lambda_+\lambda_- .
@@ -521,6 +553,8 @@ $$</p>
 \langle\tilde R_{\mathrm{im},\Psi}\rangle_{\natural}=-\langle\tilde R_\Psi\rangle_{\natural}=-c^{2}r_t^{2}+\lvert\vec r_\Psi\rvert^{2}.
 $$</p>
 <p>Exact with the sign flipped; the signature label goes from $(1,3)$ to $(3,1)$ and the form stays indefinite.</p>
+<p><strong>Status.</strong> True. $\langle J\tilde R\rangle_{\natural}=-\langle\tilde R\rangle_{\natural}$, so the signature goes from $(1,3)$ to $(3,1)$ and the form stays indefinite.</p>
+<p><strong>Reading.</strong> The sign reversal is exact and the signature label is a bookkeeping consequence. Interpreting the reversed signature as "the metric of information" is speculation: no measurement in the corpus uses a four-dimensional indefinite metric on the Ψ side, and the state space is the ball, not a cone.</p>
 <h3 id="the-trace">The trace</h3>
 <p>$$
 2\,\mathrm{Sc}\,\tilde R_\Psi=2c r_t=\lambda_++\lambda_- .
@@ -531,6 +565,8 @@ $$</p>
 2\,\mathrm{Sc}\,\tilde R_{\mathrm{im},\Psi}=2i\,\mathrm{Sc}\,\tilde R_\Psi=i\bigl(\lambda_++\lambda_-\bigr).
 $$</p>
 <p>The sum of the eigenvalues becomes imaginary, so the mirror of a normalisation is a phase.</p>
+<p><strong>Status.</strong> True. $2\,\mathrm{Sc}\,J(\tilde R)=2i\,\mathrm{Sc}\,\tilde R$, checked term by term.</p>
+<p><strong>Reading.</strong> The normalisation becomes imaginary, which is a correct statement about the value and not about a weight. Reading an imaginary trace as "the phase of the state" is speculation: in the image the trace is a coefficient of an element in the other sector, and nothing weights it.</p>
 <h3 id="the-positivity-condition">The positivity condition</h3>
 <p>$$
 c r_t\ \ge\ \lvert\vec r_\Psi\rvert .
@@ -541,6 +577,8 @@ $$</p>
 c r_t\ \ge\ \lvert\vec r_\Psi\rvert\quad\longmapsto\quad -c\,r'_t\ \ge\ \lvert\vec r\rvert .
 $$</p>
 <p>The forward cone of the informational sector is the past cone of the material one, and the boundary maps to the light cone on both sides.</p>
+<p><strong>Status.</strong> True as a relabelling: $cr_t\ge\lvert\vec r\rvert$ becomes $-cr'_t\ge\lvert\vec r\rvert$. The forward cone of the informational sector does map into the past cone of the material one.</p>
+<p><strong>Reading.</strong> An inequality is not an algebraic object, and multiplication by $i$ does not act on it, so the transfer is a change of coordinates rather than a theorem. That is why the entry is honest and thin: it fixes which set goes where, and it claims nothing about what the set means.</p>
 <h3 id="the-idempotents">The idempotents</h3>
 <p>$$
 \tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad \tilde\Pi_1+\tilde\Pi_2=e_t,\quad \tilde\Pi_1\tilde\Pi_2=0 .
@@ -551,16 +589,20 @@ $$</p>
 \tilde\Pi_{\mathrm{im}}^{2}=i\,\tilde\Pi_{\mathrm{im}},\qquad \tilde\Pi_{\mathrm{im},1}+\tilde\Pi_{\mathrm{im},2}=i\,e_t,\qquad \tilde\Pi_{\mathrm{im},1}\tilde\Pi_{\mathrm{im},2}=0 .
 $$</p>
 <p>Orthogonality and completeness of the pair survive up to the factor $i$; idempotency does not, because the square and the element carry different degrees.</p>
+<p><strong>Status.</strong> True on one hundred samples: $\tilde\Pi_{\mathrm{im}}^{2}=i\,\tilde\Pi_{\mathrm{im}}$, while orthogonality and completeness survive with the factor $i$.</p>
+<p><strong>Reading.</strong> Purity has no material image, since no power of $i$ restores idempotency. This is the cleanest negative result in the Ψ list and it is exact rather than interpretive. What it rules out is a naive transfer of the projection metaphor, not the transfer of the physics.</p>
 <h3 id="the-state-slice">The state slice</h3>
 <p>$$
 \tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr).
 $$</p>
-<p>The image has norm $\tfrac14(\lvert\vec r\rvert^{2}-1)$: positive outside the ball, zero on the sphere, negative inside it. The boundary of the ball maps to the cone and the interior maps to the past cone.</p>
+<p>The image has norm $\tfrac14(\lvert\vec r\rvert^{2}-1)$: positive outside the ball, zero on the sphere, negative inside it. The boundary of the ball maps to the cone and the interior maps to the inside of the future cone.</p>
 <p><strong>EXPERIMENTAL MIRROR EQUATION.</strong> Substituting the state:</p>
 <p>$$
 \tilde{Ϛ}_{\mathrm{im}}=\tfrac{i}{2}e_t-\tfrac12\vec r,\qquad \langle\tilde{Ϛ}_{\mathrm{im}}\rangle_{\natural}=\tfrac14\bigl(\lvert\vec r\rvert^{2}-1\bigr).
 $$</p>
-<p>The ball becomes the set of negative-norm elements: its boundary $\lvert\vec r\rvert=1$ is the light cone and its interior is the past cone.</p>
+<p>The ball becomes the set of negative-norm elements: its boundary $\lvert\vec r\rvert=1$ is the light cone and its interior is the inside of the future cone.</p>
+<p><strong>Status.</strong> The arithmetic is true: $\tilde{Ϛ}_{\mathrm{im}}=\tfrac{i}{2}e_t-\tfrac12\vec r$ with norm $\tfrac14(\lvert\vec r\rvert^{2}-1)$. The interpretation is false. The image has $cr'_t=+\tfrac12$, so the image of the ball's interior lies inside the future cone and not inside the past one.</p>
+<p><strong>Reading.</strong> The sphere maps to the cone and the interior maps to the timelike region, on the future side. The frequently repeated sentence that the ball becomes the past cone is wrong by the sign of the time coordinate, and it is the kind of error a reader inherits without checking, because both cones satisfy the same norm condition.</p>
 <h3 id="the-failure-of-idempotency">The failure of idempotency</h3>
 <p>$$
 \tilde{Ϛ}^{2}-\tilde{Ϛ}=-\langle\tilde{Ϛ}\rangle_{\natural}\,e_t .
@@ -571,6 +613,8 @@ $$</p>
 \tilde{Ϛ}_{\mathrm{im}}^{2}-i\,\tilde{Ϛ}_{\mathrm{im}}=-\langle\tilde{Ϛ}_{\mathrm{im}}\rangle_{\natural}\,e_t .
 $$</p>
 <p>The square keeps its shape and the linear term picks up $i$, because the square carries $i^{-2}$ and the element carries $i^{-1}$; the right side transposes with a clean sign.</p>
+<p><strong>Status.</strong> True, and verified twice: $\tilde{Ϛ}^{2}-\tilde{Ϛ}=\tfrac14(\lvert\vec r\rvert^{2}-1)e_t$ with the right side equal to $-\langle\tilde{Ϛ}\rangle_{\natural}e_t$, and the mirror line $\tilde{Ϛ}_{\mathrm{im}}^{2}-i\tilde{Ϛ}_{\mathrm{im}}=-\langle\tilde{Ϛ}_{\mathrm{im}}\rangle_{\natural}e_t$ holds identically.</p>
+<p><strong>Reading.</strong> The square and the linear term carry different powers of $i$, so the identity keeps its shape only when the $i$ is written in explicitly. There is no physics in this entry. It is the bookkeeping of degrees, and its value is that it tells the reader where a naive substitution would go wrong.</p>
 <h3 id="the-spectrum">The spectrum</h3>
 <p>$$
 \tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi),\qquad \lambda_\pm=c r_t\pm\lvert\vec r_\Psi\rvert .
@@ -580,7 +624,9 @@ $$</p>
 <p>$$
 \tilde R_{\mathrm{im},\Psi}=\lambda_+\tilde\Pi_{\mathrm{im},1}+\lambda_-\tilde\Pi_{\mathrm{im},2},\qquad \lambda_\pm=c r_t\pm\lvert\vec r_\Psi\rvert\ \text{unchanged}.
 $$</p>
-<p>A spectral decomposition is linear, so the two real eigenvalues transfer untouched; what changes is the pair of idempotents they sit on.</p>
+<p>A spectral decomposition is linear, so the two real coefficients transfer untouched; what changes is the pair of idempotents they sit on, and the eigenvalues of the image are the rotated ones.</p>
+<p><strong>Status.</strong> The identity is true; the reading is false. $\lambda_\pm$ are the eigenvalues of the original element, not of the image, whose eigenvalues are $i\lambda_\pm$. The line $\tilde R_{\mathrm{im}}=\lambda_+\tilde\Pi_{\mathrm{im},1}+\lambda_-\tilde\Pi_{\mathrm{im},2}$ is a true decomposition with the wrong labels.</p>
+<p><strong>Reading.</strong> A spectral decomposition is linear, so the coefficients transfer and the projectors do not. Reading the pair as "the same spectrum on the other side" is wrong: the spectrum rotates by a quarter turn, and the eigenvalues of the image are the rotated ones. The corrected statement is one line, and it matters, because the real spectrum is what makes the material sector readable.</p>
 <h3 id="the-born-rule">The Born rule</h3>
 <p>$$
 p=\frac{\operatorname{Tr}\bigl(\tilde{Ϛ}\tilde R_\Psi^{*}\bigr)}{\operatorname{Tr}\bigl(\tilde{Ϛ}\bigr)}\in[0,1].
@@ -591,6 +637,8 @@ $$</p>
 p_{\mathrm{im}}=\frac{\operatorname{Tr}\bigl(\tilde{Ϛ}_{\mathrm{im}}\tilde R_{\mathrm{im},\Psi}^{*}\bigr)}{\operatorname{Tr}\bigl(\tilde{Ϛ}_{\mathrm{im}}\bigr)}=\frac{p}{i}=-\,i\,p .
 $$</p>
 <p>The numerator is unchanged because the Hermitian pairing is an isometry and the two conjugations cancel; the denominator becomes imaginary, so a real weight in $[0,1]$ lands on the segment $-i[0,1]$.</p>
+<p><strong>Status.</strong> True, verified on one hundred samples: the numerator is preserved because the Hermitian form is an isometry, the denominator is multiplied by $i$, so $p_{\mathrm{im}}=-ip$.</p>
+<p><strong>Reading.</strong> The algebra is exact and the verdict is decisive. A weight in $[0,1]$ lands on the imaginary segment, and the reason is structural: a ratio of a preserved quantity to a rotated one is not a ratio of two real numbers. No reinterpretation rescues it, so this is the entry that bounds what the exchange can claim.</p>
 <h3 id="the-reversible-evolution">The reversible evolution</h3>
 <p>$$
 \frac{\partial\tilde{Ϛ}}{\partial r'_t}=-\frac{i}{\hbar}\bigl[\tilde R_\Psi,\tilde{Ϛ}\bigr].
@@ -601,6 +649,8 @@ $$</p>
 \frac{\partial\tilde{Ϛ}_{\mathrm{im}}}{\partial r_t}=+\frac{1}{\hbar}\bigl[\tilde R_{\mathrm{im},\Psi},\tilde{Ϛ}_{\mathrm{im}}\bigr].
 $$</p>
 <p>The $i$ is absorbed and the sign follows the time reversal, so the mirror is a real derivation and not a unitary one.</p>
+<p><strong>Status.</strong> True, with the sign as written: $+1/\hbar$. The computation was repeated with the opposite sign and it fails on every sample, so the sign is fixed by the time reversal and not free.</p>
+<p><strong>Reading.</strong> The $i$ is absorbed and the flow becomes a real derivation. It stays inside $\mathbb{B}_{\Phi}$, because $\Phi$ is closed under the commutator, so the correct statement is that the mirror is a real derivation on the material sector and not a unitary one on the informational sector. Whether a real derivation has a physical reading as classical evolution is speculation that the corpus does not test.</p>
 <h3 id="the-kraus-channel">The Kraus channel</h3>
 <p>$$
 \Xi(\tilde{Ϛ})=\sum_l\tilde K_l\,\tilde{Ϛ}\,\tilde K_l^{*},\qquad \sum_l\tilde K_l^{*}\tilde K_l=e_t .
@@ -611,6 +661,8 @@ $$</p>
 \Xi_{\mathrm{im}}(\tilde{Ϛ}_{\mathrm{im}})=\sum_l\tilde K_{\mathrm{im},l}\,\tilde{Ϛ}_{\mathrm{im}}\,\tilde K_{\mathrm{im},l}^{*},\qquad \sum_l\tilde K_{\mathrm{im},l}^{*}\tilde K_{\mathrm{im},l}=e_t .
 $$</p>
 <p>Form and trace preservation both survive: the triple product carries $i^{-2}$ and the two stars carry $i^{2}$, and the completeness sum is invariant.</p>
+<p><strong>Status.</strong> True, verified term by term and on the completeness sum. The bookkeeping in the text is loose: a triple product with one star carries $i$, not $i^{-2}$, because the starred factor contributes $-i$. The result is nonetheless correct.</p>
+<p><strong>Reading.</strong> Completely positive maps survive, and this is the strongest positive statement about the Ψ list. It says the exchange does not damage the channel, only the objects the channel acts on. The distinction is worth keeping: a formula can pass while its interpretation fails.</p>
 <h3 id="the-gksl-equation">The GKSL equation</h3>
 <p>$$
 \frac{d\tilde{Ϛ}}{dr'_t}=-\frac{i}{\hbar}\bigl[H,\tilde{Ϛ}\bigr]+\sum_k\Bigl(\tilde K_k\tilde{Ϛ}\tilde K_k^{*}-\tfrac12\bigl\{\tilde K_k^{*}\tilde K_k,\tilde{Ϛ}\bigr\}\Bigr).
@@ -621,6 +673,8 @@ $$</p>
 \frac{\partial\tilde{Ϛ}_{\mathrm{im}}}{\partial r_t}=+\frac{1}{\hbar}\bigl[H_{\mathrm{im}},\tilde{Ϛ}_{\mathrm{im}}\bigr]-\sum_k\Bigl(\tilde K_{\mathrm{im},k}\tilde{Ϛ}_{\mathrm{im}}\tilde K_{\mathrm{im},k}^{*}-\tfrac12\bigl\{\tilde K_{\mathrm{im},k}^{*}\tilde K_{\mathrm{im},k},\tilde{Ϛ}_{\mathrm{im}}\bigr\}\Bigr).
 $$</p>
 <p>The reversible term loses its $i$ and the dissipator changes sign, so the two no longer combine. With a real coefficient the reversible part maps Hermitian elements to anti-Hermitian ones, so the flow leaves $\mathbb{B}_{\Psi}$ at once: the mirror is not a state equation.</p>
+<p><strong>Status.</strong> True after the time reversal: the reversible term takes $+1/\hbar$ and the dissipator takes one extra minus, both verified. One sentence of the text is loose. The flow does not leave $\mathbb{B}_{\Psi}$ at once, because the image is in $\mathbb{B}_{\Phi}$ from the start and $\Phi$ is closed under the commutator.</p>
+<p><strong>Reading.</strong> The substantive failure is the sign of the dissipator. With that sign reversed the generator is the one of the inverse channel, which is not completely positive, so the mirror is not a state equation because it would un-damp rather than because it changes sector. That is a sharper statement than the one the text makes, and it is the one the algebra supports.</p>
 <h3 id="the-dephasing-channel">The dephasing channel</h3>
 <p>$$
 \Xi_{\mathrm{deph},p}(\tilde{Ϛ})=(1-p)\,\tilde{Ϛ}+p\bigl(\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2\bigr).
@@ -630,7 +684,9 @@ $$</p>
 <p>$$
 \Xi_{\mathrm{im,deph},p}(\tilde{Ϛ}_{\mathrm{im}})=(1-p)\,\tilde{Ϛ}_{\mathrm{im}}+p\bigl(\tilde\Pi_{\mathrm{im},1}\tilde{Ϛ}_{\mathrm{im}}\tilde\Pi_{\mathrm{im},1}+\tilde\Pi_{\mathrm{im},2}\tilde{Ϛ}_{\mathrm{im}}\tilde\Pi_{\mathrm{im},2}\bigr).
 $$</p>
-<p>Exact term by term. What does not transfer is the fixed point, which is now a twisted idempotent rather than a pure state.</p>
+<p>Exact term by term. What does not transfer is the fixed point: the image of a pure state is not fixed by the transposed channel, as the status below shows.</p>
+<p><strong>Status.</strong> The identity is true term by term. The claim about the fixed point is false. The image of a pure state is scaled by $1-2p$, and at $p=1$ the orbit alternates between $A$ and $-A$, since the square of the map is minus the map. The mirrored channel has no non-zero fixed point at any $p>0$.</p>
+<p><strong>Reading.</strong> The transposed operation therefore dephases towards nothing: it turns a contraction into an oscillation. This is a real and checkable difference between the sectors, and it is stronger than the sentence in the text. Recording it correctly costs one line and removes a claim that a reader could refute in a minute.</p>
 <h3 id="the-modular-hamiltonian">The modular Hamiltonian</h3>
 <p>$$
 \tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}\ \in\mathbb{B}_{\Psi},\qquad \Delta=e^{-\tilde K_{\mathrm{mod}}} .
@@ -641,6 +697,8 @@ $$</p>
 K_{\mathrm{im,mod}}=-i\log\tilde{Ϛ},\qquad \Delta_{\mathrm{im}}=\lambda_+^{i}\,\tilde\Pi_{\mathrm{im},1}+\lambda_-^{i}\,\tilde\Pi_{\mathrm{im},2},\qquad \Delta_{\mathrm{im}}\Delta_{\mathrm{im}}^{*}=e_t .
 $$</p>
 <p>The logarithm is not a polynomial, so this line is a proposal and not a substitution: read spectrally, the Gibbs weight becomes a pure phase and the modular operator becomes unitary instead of positive.</p>
+<p><strong>Status.</strong> A proposal, and the text says so. The unitarity claim is true: $\Delta_{\mathrm{im}}\Delta_{\mathrm{im}}^{*}=e_t$ on one hundred samples, because each $\lambda^{i}$ has modulus one.</p>
+<p><strong>Reading.</strong> A Gibbs weight becomes a phase and a positive operator becomes unitary. That is the formal content, and it is exact once the spectral exponential is granted. Whether a unitary modular operator has a physical meaning is speculation: the modular flow is a flow of an algebra, and a unitary weight is a different object from a thermal one. The entry should stay marked as a proposal.</p>
 <h3 id="the-entropy">The entropy</h3>
 <p>$$
 S(\tilde{Ϛ})=h\!\left(\frac{1+\lvert\vec r\rvert}{2}\right),\qquad h(p)=-p\log p-(1-p)\log(1-p).
@@ -651,16 +709,20 @@ $$</p>
 S(\tilde{Ϛ}_{\mathrm{im}})=h\!\left(\frac{1+\sqrt{1+4\langle\tilde{Ϛ}_{\mathrm{im}}\rangle_{\natural}}}{2}\right).
 $$</p>
 <p>The same function with the other argument map: on the image the norm is negative, so $1-4\langle\cdot\rangle$ becomes $1+4\langle\cdot\rangle$ and the range $[0,\log 2]$ is unchanged.</p>
+<p><strong>Status.</strong> True, and stronger than the text says: the two expressions are equal, so $S(\tilde{Ϛ}_{\mathrm{im}})=S(\tilde{Ϛ})$ exactly, checked to machine precision.</p>
+<p><strong>Reading.</strong> The entropy is invariant. That cuts against any claim that the exchange moves information between the sectors, because on this formula it moves none. The invariance follows from the norm changing sign and $h$ being applied to $\lvert\vec r\rvert$, which is the same number on both sides.</p>
 <h3 id="the-energy-density">The energy density</h3>
 <p>$$
 \tilde W=\tfrac12\tilde F\tilde F^{*}=W+\frac{i}{c}\vec S\ \in\mathbb{B}_{\Psi}.
 $$</p>
-<p>The image is anti-Hermitian, with scalar part $iW$. The transposed energy density is imaginary.</p>
+<p>The naive image is $i\tilde W$, which would make the density imaginary and anti-Hermitian.</p>
 <p><strong>EXPERIMENTAL MIRROR EQUATION.</strong> Substituting the energy density:</p>
 <p>$$
 \tilde W_{\mathrm{im}}=i\tilde W=iW-\frac{1}{c}\vec S .
 $$</p>
-<p>The two halves exchange their roles: an imaginary energy density and a real flux in place of a real one and an imaginary flux.</p>
+<p>On that reading the two halves would exchange their roles: an imaginary energy density and a real flux in place of a real one and an imaginary flux. The status below finds that they do not.</p>
+<p><strong>Status.</strong> False. With $\tilde W=\tfrac12\tilde F\tilde F^{*}$ one has $(i\tilde F)(i\tilde F)^{*}=(i)(-i)\tilde F\tilde F^{*}=\tilde F\tilde F^{*}$, so $\tilde W_{\mathrm{im}}=\tilde W$. The energy density is invariant, not imaginary. The line $\tilde W_{\mathrm{im}}=i\tilde W$ was refuted on one hundred samples.</p>
+<p><strong>Reading.</strong> The cause is a gap in Rule 4: the rule counts element factors and ignores the ones that are starred, and a starred factor carries $-i$. With the count corrected, a product of two factors one of which is starred carries $+1$. The physics agrees with the correction, because $\tilde W$ is a Hermitian quadratic form and the Hermitian form is an isometry, as the four-force entry already states. Two entries of the same note cannot both be right, and this is the one that is wrong.</p>
 <h3 id="the-spin-operators">The spin operators</h3>
 <p>$$
 \tilde S_k=\frac{\hbar}{2}i\vec e_k,\qquad \bigl[\tilde S_\mu,\tilde S_\nu\bigr]=i\hbar\,\epsilon_{\mu\nu\lambda}\tilde S_\lambda .
@@ -671,6 +733,8 @@ $$</p>
 \bigl[\tilde S_{\mathrm{im},\mu},\tilde S_{\mathrm{im},\nu}\bigr]=-\hbar\,\epsilon_{\mu\nu\lambda}\,\tilde S_{\mathrm{im},\lambda},\qquad \tilde S_{\mathrm{im},k}=-\frac{\hbar}{2}\vec e_k .
 $$</p>
 <p>The $i$ in the structure constants drops out against the two factors of $i$, leaving the same algebra with $\hbar$ where $i\hbar$ stood: the orientation reversed.</p>
+<p><strong>Status.</strong> True on all six pairs: $[\tilde S_{\mathrm{im},\mu},\tilde S_{\mathrm{im},\nu}]=-\hbar\,\epsilon_{\mu\nu\lambda}\tilde S_{\mathrm{im},\lambda}$ with $\tilde S_{\mathrm{im},k}=-\tfrac{\hbar}{2}\vec e_k$.</p>
+<p><strong>Reading.</strong> The same algebra with $\hbar$ where $i\hbar$ stood. That is a rescaling of the structure constants and not a different algebra, so the entry is true and says less than it appears to. Reading it as "spin becomes a real rotation" is speculation; what is exact is that the generators lose their $i$.</p>
 <h3 id="the-jordan-product">The Jordan product</h3>
 <p>$$
 \tfrac12\{\tilde A,\tilde B\}=\tfrac12\bigl(\tilde A\tilde B+\tilde B\tilde A\bigr).
@@ -682,6 +746,8 @@ $$</p>
 $$</p>
 <p>The two factors of $i$ give $-1$, so the anticommutator stays Hermitian and only changes sign; the sector is preserved and the product is negated. Multiplying by $-1$ restores the original element, which is why the mirror of a Jordan relation is the same relation with the opposite orientation.</p>
 <p><strong>What neither list holds.</strong> Four objects are used by these equations and belong to neither sector. The gradient has real coefficients and lies in $\mathbb{B}_{H}$. A scalar field and an action sit in the centre $\mathbb{B}_{C}$, which is why the Klein–Gordon equation is filed there and not here: on a $\mathbb{B}$-valued field it is four decoupled copies, one per coefficient, and on a single scalar it is the ordinary complex equation. The field strength has a complex vector part and belongs to no fixed space. The Dirac field and its spinor live in $\mathbb{B}$ and in a minimal left ideal, and a general Lorentz rotor uses all of $\mathbb{B}$. The two lists are therefore a catalogue of coordinates and values, not of fields.</p>
+<p><strong>Status.</strong> True: $\{\tilde A_{\mathrm{im}},\tilde B_{\mathrm{im}}\}=-\{\tilde A,\tilde B\}=iJ(\{\tilde A,\tilde B\})$, verified on one hundred pairs.</p>
+<p><strong>Reading.</strong> The anticommutator stays Hermitian and changes sign, so the sector is preserved and the product is negated. Since the sign can be absorbed by $-1$, the Jordan structure is the one algebraic structure the exchange preserves up to a trivial rescaling, and that is the whole of the claim.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
