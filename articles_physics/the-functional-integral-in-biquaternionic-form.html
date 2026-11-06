@@ -90,7 +90,7 @@ $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K_{\mathrm{kin}}$ is central it preserves each sector, and the sectors are <strong>orthogonal</strong> under the real form,
 $$
 \big\langle \tilde{Ξ}_-,\tilde{Ξ}_+\big\rangle = 0
-\qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi,\Phi} ,
+\qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} ,
 $$
 checked identically over the sector bases. Hence the free functional integral <strong>factorizes</strong> over the two sectors,
 $$
@@ -124,7 +124,7 @@ with complex coefficients $Ξ_\mu(x)$. The field decomposes along the sectors,
 $$
 \tilde{Ξ} = \tilde{Ξ}_- + \tilde{Ξ}_+ ,
 \qquad
-\tilde{Ξ}_\pm = \tfrac12\big(\tilde{Ξ} \mp \tilde{Ξ}^{\flat}\big)\in \mathbb{B}_{\Psi,\Phi} ,
+\tilde{Ξ}_\pm = \tfrac12\big(\tilde{Ξ} \mp \tilde{Ξ}^{\flat}\big)\in \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} ,
 $$
 where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and <em>The Informational Sector: States, Observables and Probability</em> establish.</p>
 <p><strong>The action must be a scalar, and the algebra supplies the extraction.</strong> A biquaternion is not a number, so a Lagrangian built from $\tilde{Ξ}$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_t$ coefficient,
@@ -142,7 +142,7 @@ where $K_{\mathrm{kin}}$ is built from the central d'Alembertian and a central m
 <ol>
 <li><strong>It is a scalar, obtained by the trace.</strong> The integrand is the real part of a trace, hence a number, and the integral is a number. The plain form, read as the trace pairing, is exactly the operation that converts the algebra-valued field into an action. This is the field-theoretic counterpart of the propagator article's trace formula.</li>
 <li><strong>It is invariant under the biquaternion-norm isometries.</strong> The quadratic term with $K_{\mathrm{kin}}$ central is unchanged by left multiplication $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde V$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde V\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.</li>
-<li><strong>It is sector-blind when $K_{\mathrm{kin}}$ is central.</strong> A central $K_{\mathrm{kin}}$ commutes with the projections onto $\mathbb{B}_{\Psi,\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.</li>
+<li><strong>It is sector-blind when $K_{\mathrm{kin}}$ is central.</strong> A central $K_{\mathrm{kin}}$ commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.</li>
 </ol>
 <p>The mass term requires a word of care, because the framework's <strong>Dirac</strong> mass is not central. As <em>The Dirac Equation in Biquaternionic Form</em> records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$, and it acts as a <em>right</em> multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a <strong>scalar</strong> example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $K_{\mathrm{kin}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs.</p>
 <h2 id="the-gaussian-functional-integral">The Gaussian Functional Integral</h2>
@@ -179,7 +179,7 @@ $$
 using the centrality of $K_{\mathrm{kin}}$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
 $$
 \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_-K_{\mathrm{kin}}\tilde{Ξ}_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_+K_{\mathrm{kin}}\tilde{Ξ}_-\big)
-\qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi,\Phi} .
+\qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$</p>
 <p><strong>Proof.</strong> It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i c r'_t$ and $Q_k=x_k$, in the informational sector $Q_t=c r_t$ and $Q_k=i r'_{x_k}$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}K_{\mathrm{kin}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i c r'_t\cdot c r_t$ on the time slot and $x_k\cdot i r'_{x_k}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is

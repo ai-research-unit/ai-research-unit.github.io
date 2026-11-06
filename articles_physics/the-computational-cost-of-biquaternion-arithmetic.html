@@ -225,7 +225,7 @@ $$</p>
 <p>$$
 \boxed{\;M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
 $$</p>
-<p>In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi,\Phi}$ split, a point returned to below.</p>
+<p>In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, a point returned to below.</p>
 <h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
 <p>The most expensive routine of the source's library is not the product but the diagonalisation of a Hermitian matrix-valued biquaternion, and the arithmetic of the two is coupled through the image. LAPACK and its GPU counterparts provide no eigensolver for biquaternion matrices, so a Hermitian biquaternion array is mapped to its complex Hermitian image and handed to the standard complex Hermitian routine. The mapping costs no information: the image of a Hermitian biquaternion array is a Hermitian complex matrix, because the dagger of the array is the conjugate transpose of its image.</p>
 <p>The economy comes from the blocks. When the image is <strong>block diagonal</strong>,</p>

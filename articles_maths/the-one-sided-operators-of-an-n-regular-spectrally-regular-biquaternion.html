@@ -111,7 +111,7 @@ $$</p>
 $$</p>
 <p>The Hermitian and anti-Hermitian subspaces are</p>
 <p>$$
-\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
 $$</p>
 <p>On $\mathbb{B}_{\Phi}$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{B}_{\Psi}$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central. The <strong>real quaternion subspace</strong> is $\mathbb{B}_{H}=\{\tilde Q:Q_\mu\in\mathbb{R}\ \text{for all}\ \mu\}$; its imaginary multiple $\mathbb{B}_{iH}$ has all coefficients purely imaginary.</p>
 <p>The <strong>norm</strong> is the complex number</p>
@@ -209,7 +209,7 @@ $$</p>
 \operatorname{tr}L_{\tilde Q}=4Q_t\;}.
 $$</p>
 <p><em>Proof.</em> The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.</p>
-<p><strong>Corollary (the complex similarity).</strong> The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{B}_{\Psi,\Phi}$.</p>
+<p><strong>Corollary (the complex similarity).</strong> The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form, $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$.</p>
 <p>The last clause is the subject of the next section: a complex isometry can exchange the two real forms, and the phase does exactly that.</p>
 <h2 id="the-eigenbasis-and-the-two-spinor-spaces">The Eigenbasis and the Two Spinor Spaces</h2>
 <h3 id="the-eigenbasis">The Eigenbasis</h3>
@@ -313,7 +313,7 @@ O_{\tilde Q} & D_{\tilde Q}
 \end{pmatrix}.
 $$</p>
 <p>The diagonal block $D_{\tilde Q}$ maps each sector into itself and the off-diagonal block $O_{\tilde Q}$ maps each sector into the other.</p>
-<p><em>Proof.</em> Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{B}_{\Psi,\Phi}$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so</p>
+<p><em>Proof.</em> Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so</p>
 <p>$$
 (\tilde Q\tilde X)^{*}=\tilde X^{*}\tilde Q^{*}=(\tilde X_+-\tilde X_-)\tilde Q^{*}.
 $$</p>
@@ -360,7 +360,7 @@ $$</p>
 $$</p>
 <p>Taking $\tilde X=ie_t$ gives $i\tilde Q^{*}=-i\tilde Q$, hence $\tilde Q^{*}=-\tilde Q$. Taking $\tilde X=\vec e_x$ gives $\vec e_x(-\tilde Q)=-\tilde Q\vec e_x$, that is $\vec e_x\tilde Q=\tilde Q\vec e_x$; the same holds with $\vec e_y$ and $\vec e_z$. An anti-Hermitian element commuting with the three vector units is a purely imaginary scalar, by the same coefficient argument. The converse is immediate.</p>
 <p><strong>Corollary (the only one-sided Lorentz transformations).</strong> Among the units, the real scalars are the only left multiplications that preserve $\mathbb{B}_{\Phi}$, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore gives no nontrivial real Lorentz transformation of $\mathbb{B}_{\Phi}$; the real Lorentz group is the image of the two-sided sandwich, not of the one-sided operator.</p>
-<h2 id="the-pure-central-phase-of-math286">The Pure Central Phase of $\pi/2$</h2>
+<h2 id="the-pure-central-phase-of-math287">The Pure Central Phase of $\pi/2$</h2>
 <h3 id="the-operator">The Operator</h3>
 <p><strong>Definition.</strong> The <strong>pure central phase of $\pi/2$</strong> is the factor $P=\exp(i\pi/2)=i$, and its operator is</p>
 <p>$$
@@ -516,7 +516,7 @@ $$</p>
 +i a c\,e_t+c\,\vec b+s\,\vec u\times\vec b .
 $$</p>
 <p>The first two terms are in $\mathbb{B}_{\Psi}$: a real scalar and an imaginary vector. The last two terms are in $\mathbb{B}_{\Phi}$: an imaginary scalar and the real vector $c\vec b+s\vec u\times\vec b$. The rotor mixes the two sectors in general. For $a=0$ the $\mathbb{B}_{\Psi}$ part is the real scalar $-s\,\vec u\cdot\vec b$, which vanishes only when $\vec b$ is perpendicular to $\vec u$; the $\mathbb{B}_{\Phi}$ part is the real vector $c\vec b+s\vec u\times\vec b$.</p>
-<p>The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi,\Phi}$.</p>
+<p>The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.</p>
 <h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
 <p><strong>Proposition.</strong> Let $\tilde Q\in\mathbb{B}$.</p>
 <p><strong>(a)</strong> The parameter map $\tilde Q\mapsto L_{\tilde Q}$ is injective. The operator $L_{\tilde Q}$ is injective exactly when $\tilde Q$ is a unit.</p>
@@ -670,7 +670,7 @@ so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is 
 <td>the quaternion and coefficient conjugations</td>
 </tr>
 <tr>
-<td>$\mathbb{B}_{\Psi,\Phi}$</td>
+<td>$\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$</td>
 <td>the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$</td>
 </tr>
 <tr>
