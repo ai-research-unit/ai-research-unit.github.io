@@ -152,7 +152,7 @@ $$</p>
 \qquad
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$</p>
-<p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-m)$, with $\mathbb{D}$ the pair operator of <em>Operator and Calculus Conventions</em>, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
+<p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-\lambda_m^{-1})$, with $\mathbb{D}$ the pair operator of <em>Operator and Calculus Conventions</em>, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
 <p>Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:</p>
 <p>$$
 \bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
@@ -283,12 +283,12 @@ $$</p>
 <p>The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.</p>
 <p><strong>It is a $c$-number and it is local.</strong> Every term of the product $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde{Ξ}_{\mathrm{fop}}(x)$ or $\tilde{Ξ}_{\mathrm{fop}}(x)\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a_{\mathrm{fop}}b_{\mathrm{fop}}$ or $a_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}^{\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,</p>
 <p>$$
-\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
+\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+\lambda_m^{-1})\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
 $$</p>
 <p>an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the operator of the display above applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.</p>
 <p><strong>The commutator is a $c$-number as well, but it is not local.</strong> Replacing the anticommutator by the commutator gives, for every element $\tilde X$,</p>
 <p>$$
-\langle0|\,[\tilde{Ξ}_{\mathrm{fop}}(x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
+\langle0|\,[\tilde{Ξ}_{\mathrm{fop}}(x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+\lambda_m^{-1})\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$</p>
 <p>with $G_{\mathrm{S}}$ the symmetric kernel, which does <em>not</em> vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec y$,</p>
 <p>$$
@@ -340,7 +340,7 @@ $$</p>
 $$</p>
 <p>so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.</p>
 <p>The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.</p>
-<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
+<p>The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+\lambda_m^{-1})\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -388,14 +388,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-m)$ on $(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R})$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$</td>
+<td>Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-\lambda_m^{-1})$ on $(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R})$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$</td>
 </tr>
 <tr>
 <td>$\mathbb{D}_p$</td>
 <td>Momentum symbol at $p_0=E_{\vec p}$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>
@@ -459,7 +459,7 @@ $$</p>
 <td>Single-mode ladder and parity inside $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$</td>
+<td>$\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+\lambda_m^{-1})\Delta_{\mathrm{A}}(x-y)\tilde X$</td>
 <td>Covariant anticommutator ($c$-number), for every element $\tilde X$</td>
 </tr>
 <tr>
@@ -484,6 +484,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<p>Here $\lambda_m=\hbar/(mc)$ is the mass length.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the equation whose quantized field this article describes.</li>

@@ -246,8 +246,9 @@ $$</p>
 \bigl\langle e^{\theta\tilde R}\bigr\rangle_*
 =e^{2\theta R_t}\cosh\bigl(2\lvert\vec r\rvert\theta\bigr),
 $$</p>
-<p>checked to $8.7\times10^{-16}$, which contracts on both sides when $R_t<-\lvert\vec r\rvert$. That is a dilation of the element toward the nilpotent cone of <em>The Exponential, the Logarithm and the Generator</em>, not a loss of probability, and no dynamics in the corpus uses it: the state-vector equation always carries the $-i$. A decay of probability and a shrinking of an element are different events, and only the first is dissipation.</p>
-<p>The statement is stronger one level up. <em>The Exponential, the Logarithm and the Generator</em> records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator; when such a map has a generator, the generator is a Lindbladian superoperator acting on states, not an element of $\mathbb{B}$. Dissipation has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ dissipative?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.</p>
+<p>checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow decays in one direction of $\theta$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking of an element and a loss of probability are different events, and only the second is dissipation.</p>
+<p>One level up the claim changes its subject from elements to maps. <em>The Exponential, the Logarithm and the Generator</em> records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator; when such a map has a generator, the generator is a Lindbladian superoperator acting on states, not an element of $\mathbb{B}$. Dissipation has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ dissipative?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.</p>
+<p>The spectral vocabulary has a boundary of its own, and it is drawn the same way, by asking what a statement is about. <em>Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</em> treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. <em>Exceptional Points and the Nilpotent Regime</em> treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that an element dissipates. The cone itself is out of reach of both sectors: a real vector part gives $B^2=\sum_kQ_k^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_kq_k^2\le0$, vanishing only at $\vec q=0$, so the degeneracy available to either sector is diabolic, and an exceptional point requires a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.</p>
 <p><strong>Where decay does come from: a channel that was eliminated.</strong> The mechanism is in <em>The Unstable State and the Complex Energy Pole</em>. Split the module into the slot under study and the rest, and integrate the rest out. The Green's function of the watched slot becomes</p>
 <p>$$
 G_{\mathrm{c}}(z)=\bigl(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}}(z)\bigr)^{-1},
@@ -292,7 +293,7 @@ i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
 =-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde K_k^{*}\tilde K_k\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
 $$</p>
 <p>The lost norm is exactly the probability that a jump has occurred, checked to $1.0\times10^{-11}$ on a hundred random triples of jump operators. That is the precise sense in which the anti-Hermitian part of an effective Hamiltonian is dissipative: it is the decaying no-jump branch, and the rate it produces is the jump rate.</p>
-<p><strong>The same warning one level up.</strong> On the state space, with the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and damps nothing, the adjoint being its negative with residual $0$. The Lindblad dissipator is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump dissipators the smallest distance to either form was $1.24$. So anti-Hermiticity marks the conservative generator here as elsewhere, and the loss sits outside the Hermitian/anti-Hermitian alternative altogether.</p>
+<p><strong>The same warning on the state space.</strong> With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and damps nothing, the adjoint being its negative with residual $0$. The Lindblad dissipator is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump dissipators the smallest distance to either form was $1.24$. So anti-Hermiticity marks the conservative generator here as elsewhere, and the loss sits outside the Hermitian/anti-Hermitian alternative altogether.</p>
 <p>The derivative form swaps the two labels, and it is worth writing once. With $G=-i\tilde R_{\Psi,\mathrm{eff}}$,</p>
 <p>$$
 G=-\frac12\tilde\Gamma-i\tilde R_\Psi .
@@ -389,12 +390,12 @@ $$</p>
 \tilde P=\Rho\,e^{\vec U\Theta},\qquad
 \Rho=imc,\qquad
 \Theta=-i\theta_{\mathrm{rpd}},\qquad
-\vec U=\hat p,
+\vec U=\vec u_p,
 $$</p>
-<p>where $\hat p$ is the unit along the momentum. Expanding the exponential gives</p>
+<p>where $\vec u_p$ is the unit along the momentum. Expanding the exponential gives</p>
 <p>$$
-\tilde P=imc\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\hat p\bigr)
-=i\,mc\cosh\theta_{\mathrm{rpd}}\,e_t+mc\sinh\theta_{\mathrm{rpd}}\,\hat p,
+\tilde P=imc\bigl(\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p\bigr)
+=i\,mc\cosh\theta_{\mathrm{rpd}}\,e_t+mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p,
 $$</p>
 <p>so that</p>
 <p>$$
@@ -789,7 +790,7 @@ $$</p>
 \Delta=1-(1-r^2)=r^2\ge0 .
 $$</p>
 <p>The eigenvalues are real and positive, and the entropy bound $0\le S\le\log2$ is the statement that they lie in $[0,1]$. The material element has a non-positive discriminant and the informational element a non-negative one. That is the spectral face of the sector split, and it is the reason the informational side carries a positive cone of states and a probability, while the material side carries the causal cone of the interval.</p>
-<h2 id="the-candidate-math372">The Candidate $h_0$</h2>
+<h2 id="the-candidate-math382">The Candidate $h_0$</h2>
 <h3 id="what-the-corpus-has">What the Corpus Has</h3>
 <p>The corpus contains three constants and one unit, and none of them is an information quantum.</p>
 <div class="table-scroll"><table>
@@ -824,7 +825,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The bit is the only informational unit the algebra supplies. The carrier is the defining module of $\mathbb{B}\cong M_2(\mathbb{C})$, of complex dimension two, so at most two orthogonal states fit and the maximum entropy is $\log2$. That number is independent of $\hbar$. The Born rule contains no $\hbar$, and the state space contains no action. The material side carries $\hbar$ in its phase; the informational side does not.</p>
-<h3 id="four-candidate-readings-of-math386">Four Candidate Readings of $h_0$</h3>
+<h3 id="four-candidate-readings-of-math396">Four Candidate Readings of $h_0$</h3>
 <p>If one insists on an $h_0$, four readings are available, and they have different dimensions.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -928,6 +929,11 @@ $$</p>
 <td>the law of <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>; checked to $1.4\times10^{-15}$</td>
 </tr>
 <tr>
+<td>the two sectors meet the discriminant locus only diabolically</td>
+<td>corpus result</td>
+<td>$B^2=\sum_kQ_k^2\ge0$ for a real vector part, $-\sum_kq_k^2\le0$ for a Hermitian element; 200 draws, $\operatorname{Im}B^2=0$</td>
+</tr>
+<tr>
 <td>decay is a loss of tracked probability while the total is conserved</td>
 <td>established</td>
 <td>band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked</td>
@@ -999,7 +1005,7 @@ $$</p>
 <li>The algebra attaches two numbers to an element: the trace, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image.</li>
 <li>On $\mathbb{B}_{\Phi}$ the trace is energy, $E=\frac{c}{2i}\operatorname{Tr}\tilde P$, and the norm is mass, $\langle\tilde P\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.</li>
 <li>The anti-Hermitian sector carries the generators, and no element of either sector is dissipative. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is a unit, and the energy generator $-i\tilde R_\Psi$ is anti-Hermitian. Decay is a loss of tracked probability: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one.</li>
-<li>The material split is a factorisation, not a sum: $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\hat p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.</li>
+<li>The material split is a factorisation, not a sum: $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.</li>
 <li>Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_1,\tilde P_2\rangle_\natural$.</li>
 <li>On $\mathbb{B}_{\Psi}$ the trace is the normalisation, $\operatorname{Tr}\tilde{Ϛ}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.</li>
 <li>Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the trace and the norm, and hence the entropy. Coarse-graining preserves the trace, increases the norm and increases the entropy.</li>
@@ -1099,6 +1105,8 @@ $$</p>
 <li><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a>, for the Hermitian norm and the anti-Hermitian generator of the state-vector equation.</li>
 <li><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible–Irreversible Dichotomy</a>, for the Lindblad form, the trace-preserving flow and the split between the derivation and the dissipator.</li>
 <li><a href="../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the Hermitian norm of the flow, the three quantities that fix it, and the norm deficit $\lVert\rho\rVert^2\ge1$.</li>
+<li><a href="../articles_physics/biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a>, for the left and right eigenbases and the Petermann factor as the norm deficit.</li>
+<li><a href="../articles_physics/exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a>, for the isotropic cone and why the degeneracy available to either sector is diabolic.</li>
 <li><a href="../articles_physics/the-exponential-the-logarithm-and-the-generator.html">The Exponential, the Logarithm and the Generator</a>, for the generator as a logarithm and the boundary between reversible and irreversible processes.</li>
 <li><a href="../articles_physics/von-neumann-entropy-and-the-biquaternion-norm.html">Von Neumann Entropy and the Biquaternion Norm</a>, for the entropy as a function of the quaternionic norm.</li>
 <li><a href="../articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>, for the invariance under reversible flow and the increase under coarse-graining.</li>

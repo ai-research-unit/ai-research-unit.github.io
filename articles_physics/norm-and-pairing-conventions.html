@@ -423,16 +423,16 @@ $$</p>
 <p>The fourth factor of the word, $\tilde u_{\mathrm r}$, is a rotation and not a boost. The word <em>boost</em> alone is not a name: a statement must say whether it means the frame rotor, the four-vector factor, the generator or a rapidity. In the word table the letter $\vec u_{\mathrm b}$ names the axis of the word's factor; for a transformation it coincides with the frame axis, and for a four-vector it is opposite it.</p>
 <p><strong>Linear and bilinear.</strong> The frame rotor acts on a spinor by left multiplication, $\xi\mapsto\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\xi$, and on a four-vector by the congruence $X\mapsto\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})X\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{*}$. A four-vector is bilinear in the spinor, so the factor that the four-vector element itself carries is the inverse square, $\mathcal B=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{-2}=e^{-i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}}$: the same boost, read twice. The word stores the boost in the frame rotor and deposits it twice in the four-vector; its parameter is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$.</p>
 <h3 id="the-four-momentum">The Four-Momentum</h3>
-<p>Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\hat p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then</p>
+<p>Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then</p>
 <p>$$
-\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}_{\mathrm{sp}}\hat p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}_{\mathrm{sp}},\qquad \vec U=\hat p,
+\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}_{\mathrm{sp}}\vec u_p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}_{\mathrm{sp}},\qquad \vec U=\vec u_p,
 $$</p>
 <p>with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are</p>
 <p>$$
 \lambda_\pm=Q_t\pm iB=imc\,e^{\pm\tilde{Ξ}_{\mathrm{sp}}}=\Rho\,e^{\pm i\Theta}.
 $$</p>
-<p>The word's parameter here is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\hat p$. The frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\hat p$.</p>
-<p><strong>Three errors to avoid.</strong> Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\hat p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\hat p$.</p>
+<p>The word's parameter here is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\vec u_p$. The frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\vec u_p$.</p>
+<p><strong>Three errors to avoid.</strong> Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$.</p>
 <h3 id="the-trace-and-the-normalised-state">The Trace and the Normalised State</h3>
 <p>The trace is the trace of the $2\times2$ image and nothing else,</p>
 <p>$$
@@ -520,7 +520,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Rho,\Theta,\vec U,B$</td>
-<td>The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, $\vec U=\hat p$, $B=\lvert\vec p\rvert$ for a four-momentum</td>
+<td>The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$</td>
