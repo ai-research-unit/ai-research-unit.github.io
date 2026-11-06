@@ -8,7 +8,7 @@ The physics is standard and the framework's role is once again delimiting. A bac
 
 Three statements organise the article.
 
-1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
+1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde Q_5(\tilde R_\Phi)=\xi(\tilde R_\Phi)e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
 2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $a_{\mathrm{fop},\vec k}$ with ${b_{\mathrm{fop},-\vec k}}^\dagger$; its generator commutes with the $\mathrm{U}(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\vec k}|^2$. The framework's canonical continuous symmetry — the central $\mathrm{U}(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
 3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the biquaternion-norm interpretation of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
 
@@ -27,7 +27,7 @@ The article is organised as follows. The next section sets up the background and
 A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ shifts the mass term. Write the background as a central-valued classical field,
 
 $$
-\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t\in\mathbb{B}_{C},
+\tilde Q_5(\tilde R_\Phi)=\xi(\tilde R_\Phi)\,e_t\in\mathbb{B}_{C},
 \qquad
 \mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\xi ,
 $$
@@ -35,7 +35,7 @@ $$
 so that the effective equation of motion is
 
 $$
-\left(\Box-\mu^2-g\,\xi(\tilde R_\varphi)\right)\tilde{Ξ}=0 .
+\left(\Box-\mu^2-g\,\xi(\tilde R_\Phi)\right)\tilde{Ξ}=0 .
 $$
 
 If the background is **homogeneous**, $\xi=\xi(r'_t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
@@ -64,7 +64,7 @@ equivalently $\mu^2+g\,\xi(r'_t)=-\mathrm{Sc}(\langle\tilde P_{\vec k}(r'_t)\ran
 
 Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $\frac{d^2u}{d\eta^2}+(\vec k^2+a^2(\eta)\mu^2)u=0$ in conformal time $\eta$ for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(r'_t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
-If the background is not homogeneous, $\xi=\xi(\tilde R_\varphi)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
+If the background is not homogeneous, $\xi=\xi(\tilde R_\Phi)$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
 
 ## In and Out Regions and the Bogoliubov Transformation
 

@@ -73,10 +73,10 @@ It is the source's imaginary unit and not the corpus's central $i$; the central 
 **The decomposition.** Hestenes decomposes the field as a rotation, a density and an angle, and in the biquaternion alphabet the decomposition is the polar word of *Conventions of the Norms and the Pairings* read with a central phase:
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}}=\sqrt{\rho}\,e^{i\theta/2}R\;},\qquad R\tilde R_\varphi=e_t,
+\boxed{\;\tilde{Ξ}_{\mathrm{sp}}=\sqrt{\rho}\,e^{i\theta/2}R\;},\qquad R\tilde R_\Phi=e_t,
 $$
 
-where $R$ is a **rotor**, that is a rotation of norm one, $\tilde R_\varphi$ is its reverse — for an even element the reverse is the quaternion conjugate $R^{\natural}$, a derived form the source's letter $\tilde{}$ requires and the article states here rather than importing — $\rho\ge0$ is a scalar **density**, and $\theta$ is a scalar angle, the Yvon–Takabayasi angle, zero for a pure electron state. The source writes the phase factor with the pseudoscalar, $(\rho e^{\theta v_0v_1v_2v_3})^{1/2}$, which is the same factor: the pseudoscalar is the central imaginary, so $e^{\theta v_0v_1v_2v_3}=e^{i\theta}$, and the factor is central, commutes with $R$, and leaves the order of the two factors immaterial. The counting is exact: $R$ has the six parameters of a rotation, $\rho$ and $\theta$ add two, and the total is the eight real components of the field. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
+where $R$ is a **rotor**, that is a rotation of norm one, $\tilde R_\Phi$ is its reverse — for an even element the reverse is the quaternion conjugate $R^{\natural}$, a derived form the source's letter $\tilde{}$ requires and the article states here rather than importing — $\rho\ge0$ is a scalar **density**, and $\theta$ is a scalar angle, the Yvon–Takabayasi angle, zero for a pure electron state. The source writes the phase factor with the pseudoscalar, $(\rho e^{\theta v_0v_1v_2v_3})^{1/2}$, which is the same factor: the pseudoscalar is the central imaginary, so $e^{\theta v_0v_1v_2v_3}=e^{i\theta}$, and the factor is central, commutes with $R$, and leaves the order of the two factors immaterial. The counting is exact: $R$ has the six parameters of a rotation, $\rho$ and $\theta$ add two, and the total is the eight real components of the field. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
 
 ## The Dirac–Hestenes Equation
 
@@ -96,12 +96,12 @@ These values are fixed once and used throughout. The source writes the derivativ
 
 $$
 \tilde{Ξ}_{\mathrm{sp}}\mapsto R\tilde{Ξ}_{\mathrm{sp}},\qquad
-A\mapsto R A\tilde R_\varphi,\qquad
-v_\mu\mapsto Rv_\mu\tilde R_\varphi,\qquad
-R\tilde R_\varphi=e_t,
+A\mapsto R A\tilde R_\Phi,\qquad
+v_\mu\mapsto Rv_\mu\tilde R_\Phi,\qquad
+R\tilde R_\Phi=e_t,
 $$
 
-with $\tilde R_\varphi$ the reverse of the rotor. The frame is rotated with the field, so that the gradient transforms as $\tilde\nabla\mapsto R\tilde\nabla\tilde R_\varphi$ and the derivative term of the transformed equation is the rotor times the original one.
+with $\tilde R_\Phi$ the reverse of the rotor. The frame is rotated with the field, so that the gradient transforms as $\tilde\nabla\mapsto R\tilde\nabla\tilde R_\Phi$ and the derivative term of the transformed equation is the rotor times the original one.
 
 ### The four-component equation of the older literature
 
@@ -321,7 +321,7 @@ The correspondence with the biquaternion framework is the closest in this series
 | $i\omega=-i\vec e_z$ | The chirality, the frame's volume cell; the two parts of the field are its two values |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | The field of the Dirac–Hestenes equation, an even element |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | Its two parts; their values are the minus one and the plus one |
-| $\tilde{Ξ}_{\mathrm{sp}}=\sqrt{\rho}\,e^{i\theta/2}R$ | Rotation, density and angle; $R\tilde R_\varphi=e_t$ |
+| $\tilde{Ξ}_{\mathrm{sp}}=\sqrt{\rho}\,e^{i\theta/2}R$ | Rotation, density and angle; $R\tilde R_\Phi=e_t$ |
 | $v_0$ | Fixed timelike vector, $v_0^2=+1$; odd, so not an element of $\mathbb B$; mass and current, right multiplication |
 | $J=\tilde{Ξ}_{\mathrm{sp}} v_0\tilde{Ξ}_{\mathrm{sp}}$ | Dirac current, a vector with $J^2=\rho^2$ |
 | $S=\tilde{Ξ}_{\mathrm{sp}}\,\omega\tilde{Ξ}_{\mathrm{sp}}$ | Spin density, a bivector with $\mathrm{Sc}(JS)=0$ at $\theta=0$ |

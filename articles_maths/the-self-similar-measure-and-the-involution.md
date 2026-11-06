@@ -54,7 +54,7 @@ in the self-similar case, the union being that of the top fixed tiles; this is t
 
 ### The Pressure of the Reversible System
 
-**Definition.** The **topological pressure of the reversible system** is the pressure of the quotient dynamical system $\varphi/R$,
+**Definition.** The **topological pressure of the reversible system** is the pressure of the quotient dynamical system $\theta/R$,
 $$
 P_R(t)=\lim_{n\to\infty}\frac1n\log\sum_{R\text{-orbits}}\exp(tS_n W) ,
 $$
@@ -74,7 +74,7 @@ $$
 $$
 where $\omega_{\mathrm{fix}}$ counts the fixed orbits, those of the fixed part.
 
-*Proof sketch.* The orbits of the quotient are the orbits of $\varphi$ modulo the involution, and the quotient map is at most two-to-one, so the exponential growth rates agree; the counting formula is the orbit-stabiliser theorem for the action of the two-element group, and the zeta function factorises because it is the Euler product over the orbits of the quotient. The statements are those of *Ergodic Theory* for a finite group action; the factorisation is the "reversible" case of the zeta function of a reversible system.
+*Proof sketch.* The orbits of the quotient are the orbits of $\theta$ modulo the involution, and the quotient map is at most two-to-one, so the exponential growth rates agree; the counting formula is the orbit-stabiliser theorem for the action of the two-element group, and the zeta function factorises because it is the Euler product over the orbits of the quotient. The statements are those of *Ergodic Theory* for a finite group action; the factorisation is the "reversible" case of the zeta function of a reversible system.
 
 **Corollary (the fixed part of the pressure).** The pressure of the fixed part, the growth rate of the words over the fixed letters, is
 $$
@@ -92,12 +92,12 @@ and it is a lower bound for $P(t)$; the exchanged part contributes the residual 
 
 ### The Symmetric and Antisymmetric Eigenfunctions
 
-**Theorem (the splitting of the spectrum).** Let $\mu$ be an $R$-invariant measure and let $L_\varphi$ be the transfer operator, with $P_\rho f=f\circ R$ the involution. Then $L_\varphi$ commutes with $P_\rho$, the eigenfunctions split into the **symmetric** family, $f\circ R=f$, and the **antisymmetric** family, $f\circ R=-f$, and the invariant density $h$ of the previous article is symmetric:
+**Theorem (the splitting of the spectrum).** Let $\mu$ be an $R$-invariant measure and let $L_\theta$ be the transfer operator, with $P_\rho f=f\circ R$ the involution. Then $L_\theta$ commutes with $P_\rho$, the eigenfunctions split into the **symmetric** family, $f\circ R=f$, and the **antisymmetric** family, $f\circ R=-f$, and the invariant density $h$ of the previous article is symmetric:
 $$
-\boxed{\;P_\rho L_\varphi P_\rho=L_\varphi,\qquad h\circ R=h\;} .
+\boxed{\;P_\rho L_\theta P_\rho=L_\theta,\qquad h\circ R=h\;} .
 $$
 
-*Proof.* The relation $P_\rho L_\varphi P_\rho=L_\varphi$ is the theorem of *Reversible Iterated Function Systems and the Involution*; commuting operators have a common eigenbasis, and the involution has the eigenvalues $\pm1$, so the eigenfunctions split by the symmetry of $f$. The invariant density is an eigenfunction for the eigenvalue $1$ with positive values, hence cannot be antisymmetric, and is symmetric.
+*Proof.* The relation $P_\rho L_\theta P_\rho=L_\theta$ is the theorem of *Reversible Iterated Function Systems and the Involution*; commuting operators have a common eigenbasis, and the involution has the eigenvalues $\pm1$, so the eigenfunctions split by the symmetry of $f$. The invariant density is an eigenfunction for the eigenvalue $1$ with positive values, hence cannot be antisymmetric, and is symmetric.
 
 ### The Density Transformations under $R$
 

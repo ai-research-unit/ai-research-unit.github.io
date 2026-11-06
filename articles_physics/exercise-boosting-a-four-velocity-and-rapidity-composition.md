@@ -113,7 +113,7 @@ For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, w
 
 **(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\theta_{\mathrm{btw}}\in\{0,\pi\}$; for $0<\theta_{\mathrm{btw}}<\pi$ it is not a pure boost.
 
-**(b)** Show that $P$ admits the decomposition $P = \tilde R_\psi\tilde u_{\mathrm r}$ with $\tilde R_\psi$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\theta_{\mathrm{rpd}}$, the Wigner angle $\theta_W$, and the rotation axis.
+**(b)** Show that $P$ admits the decomposition $P = \tilde R_\Psi\tilde u_{\mathrm r}$ with $\tilde R_\Psi$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\theta_{\mathrm{rpd}}$, the Wigner angle $\theta_W$, and the rotation axis.
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
@@ -146,9 +146,9 @@ P P^\dagger = \left(a^2 + |\vec q|^2 + |\vec w|^2\right) + 2i\left(a\vec w + \ve
 \equiv \Sigma + i\vec T.
 \tag{7}
 $$
-The element $PP^\dagger$ is Hermitian and positive (it is $\tilde{R}_\psi^2$ for the required boost), so it has a unique positive Hermitian square root
+The element $PP^\dagger$ is Hermitian and positive (it is $\tilde{R}_\Psi^2$ for the required boost), so it has a unique positive Hermitian square root
 $$
-\tilde R_\psi = \sqrt{PP^\dagger} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
+\tilde R_\Psi = \sqrt{PP^\dagger} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
 \qquad
 \cosh\theta_{\mathrm{rpd}} = \Sigma, \quad \sinh\theta_{\mathrm{rpd}}\,\vec u_4 = \vec T.
 $$
@@ -159,10 +159,10 @@ $$
 $$
 The residual element
 $$
-\tilde u_{\mathrm r} = \tilde R_\psi^{-1}P = \tilde R_\psi^{\natural}P
+\tilde u_{\mathrm r} = \tilde R_\Psi^{-1}P = \tilde R_\Psi^{\natural}P
 = \left(\cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
 $$
-is the $*$-unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde R_\psi\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
+is the $*$-unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde R_\Psi\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
 $$
 \mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\theta_{\mathrm{rpd}}}{2} - \sinh\frac{\theta_{\mathrm{rpd}}}{2}\left(\vec u_4\cdot\vec w\right),
 $$
@@ -194,14 +194,14 @@ $$
 $$
 which we verified numerically in several non-coplanar configurations; it is the direction of the antisymmetric, real-vector part $\vec q$ of $P$ in (5). With this, the decomposition is
 $$
-\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde R_\psi\tilde u_{\mathrm r},
+\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde R_\Psi\tilde u_{\mathrm r},
 \qquad
-\tilde R_\psi = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
+\tilde R_\Psi = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
 \qquad
 \tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
 \tag{12}
 $$
-The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde{R}_{\psi,2}$ with $\tilde{R}_{\psi,2} = \tilde u_{\mathrm r}^{-1}\tilde R_\psi\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\theta_{\mathrm{rpd}}$ but a different axis; only $\theta_{\mathrm{rpd}}$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
+The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde{R}_{\Psi,2}$ with $\tilde{R}_{\Psi,2} = \tilde u_{\mathrm r}^{-1}\tilde R_\Psi\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\theta_{\mathrm{rpd}}$ but a different axis; only $\theta_{\mathrm{rpd}}$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
 **(c)** For equal orthogonal rapidities, $\theta_{\mathrm{rpd},1} = \theta_{\mathrm{rpd},2} = \theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{btw}} = \pi/2$, so $\cosh\theta_{\mathrm{rpd}} = \cosh^2\theta_{\mathrm{rpd}}$ and $a = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2}\big/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, and (10) collapses to
 $$
@@ -218,7 +218,7 @@ which is not Hermitian: the real $\vec e_z$ term $s_1s_2 = 0.125$ is the antisym
 $$
 \tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
 $$
-The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde R_\psi$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde u_{\mathrm r}\vec u_5\tilde u_{\mathrm r}^{-1}$. The two orderings do not agree: $\tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2}$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
+The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde R_\Psi$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde u_{\mathrm r}\vec u_5\tilde u_{\mathrm r}^{-1}$. The two orderings do not agree: $\tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2}$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
 
 ## Problem 4: The Parent's Square-Root Relation and the Direction of the Boost
 
@@ -278,7 +278,7 @@ The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ 
 
 **Statement.** Let the boost parameter vary along a scalar parameter $\tau$ instead of being fixed, and let the material coordinate of the moving frame's origin be
 $$
-\tilde R_\varphi(\tau) = ic\,\tau\cosh\xi(\tau)\,e_t + c\,\tau\sinh\xi(\tau)\,\vec u_y,
+\tilde R_\Phi(\tau) = ic\,\tau\cosh\xi(\tau)\,e_t + c\,\tau\sinh\xi(\tau)\,\vec u_y,
 \qquad \xi = \xi(\tau),
 $$
 so that $r'_t = \tau\cosh\xi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\xi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dr'_t$.
@@ -340,7 +340,7 @@ The following are left to the reader; they extend the same tools and use the sam
 
 5. **Boost in a medium.** Redo Problems 1–3 with the local speed of light $c = 1/\sqrt{\epsilon\mu}$ in place of $c_0$, treating $c$ as a fixed local constant. Which of the results (1)–(12) change, and which are invariant? Discuss the sense in which the rotor becomes a field when $\epsilon$ and $\mu$ vary from point to point.
 
-6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde R_\psi\tilde u_{\mathrm r}$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde u_{\mathrm r}^{-1}(\tilde R_\psi^{\natural})^2\tilde u_{\mathrm r}$, and that $\tilde R_\psi$ alone (a boost) gives a different four-velocity unless $\tilde u_{\mathrm r}$ commutes with $(\tilde R_\psi^{\natural})^2$. Reconcile this with Problem 4(d).
+6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde R_\Psi\tilde u_{\mathrm r}$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde u_{\mathrm r}^{-1}(\tilde R_\Psi^{\natural})^2\tilde u_{\mathrm r}$, and that $\tilde R_\Psi$ alone (a boost) gives a different four-velocity unless $\tilde u_{\mathrm r}$ commutes with $(\tilde R_\Psi^{\natural})^2$. Reconcile this with Problem 4(d).
 
 ## Summary
 
@@ -379,10 +379,10 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\theta_{\mathrm{btw}}$ | Angle between $\vec u_y$ and $\vec u_z$ |
 | $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
-| $\tilde R_\psi$, $\tilde u_{\mathrm r}$ | Boost part and rotation part of $P = \tilde R_\psi\tilde u_{\mathrm r}$ |
+| $\tilde R_\Psi$, $\tilde u_{\mathrm r}$ | Boost part and rotation part of $P = \tilde R_\Psi\tilde u_{\mathrm r}$ |
 | $\theta_{\mathrm{rpd}}$ | Total rapidity, $\cosh\theta_{\mathrm{rpd}} = \cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2}+\sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2}\cos\theta_{\mathrm{btw}}$ |
 | $\theta_W$ | Thomas–Wigner angle |
-| $\vec u_4$ | Axis of the boost part $\tilde R_\psi$ |
+| $\vec u_4$ | Axis of the boost part $\tilde R_\Psi$ |
 | $\vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ | Axis of the Wigner rotation |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 

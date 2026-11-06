@@ -20,7 +20,7 @@ $$
 (i\vec p)(i\vec p)=+\left(\vec p\cdot\vec p\right)e_t ,
 $$
 
-the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R_\varphi$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\theta_{\mathrm{rpd}}$ the rapidity.
+the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors of $i$. Three squares are in play and they must not be confused: the **Euclidean square** $\vec p\cdot\vec p=p_x^2+p_y^2+p_z^2$ is a number and is positive definite; the **algebra square** $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ is an element and is negative definite; and the square of the **vector part**, $(i\vec p)(i\vec p)=+(\vec p\cdot\vec p)e_t$, is the third, positive again. The article writes $\vec p\cdot\vec p$ when a number is meant and $i\vec p$ when an element is meant. The letter $p$ is the source's and is reserved here for paravectors of $\mathcal{P}$; the corpus's canonical momentum is the tilded $\tilde p$, and its position four-vector is $\tilde R_\Phi$. The symbol $c$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec u_v=\vec v/v$ and $\vec u_{\mathrm b}$ the unit directions of the velocity and of the boost, and $\theta_{\mathrm{rpd}}$ the rapidity.
 
 ## The Algebra of Physical Space Inside the Biquaternions
 
@@ -74,7 +74,7 @@ because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corp
 | volume element $e_1e_2e_3$ | central imaginary | $i$ |
 | interval $p\bar p$ | quaternionic norm of the material element, sign reversed | $\langle i\,p^{\natural}\rangle_{\natural}=-(p_t^2-\vec p\cdot\vec p)$ |
 
-The material four-vectors are $\tilde R_\varphi=i\,p^{\natural}$ with $p$ a paravector. In coordinates, $\tilde R_\varphi=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ corresponds to
+The material four-vectors are $\tilde R_\Phi=i\,p^{\natural}$ with $p$ a paravector. In coordinates, $\tilde R_\Phi=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ corresponds to
 
 $$
 p=c r'_{t}e_t+i\left(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\right),

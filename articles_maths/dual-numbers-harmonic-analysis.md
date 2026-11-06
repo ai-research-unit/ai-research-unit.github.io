@@ -422,36 +422,36 @@ where $\zeta = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|
 
 ### Definition
 
-The **dual continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is
+The **dual continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\gamma \in L^2(\mathbb{R})$ is
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
 $$
 
-The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
+The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\gamma$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
 $$
 
-where $\hat{\psi}$ is the ordinary Fourier transform.
+where $\hat{\gamma}$ is the ordinary Fourier transform.
 
 ### The Inversion Formula
 
-**Theorem.** If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then
+**Theorem.** If $\gamma$ is admissible and $f \in L^2(\mathbb{R})$, then
 
 $$
-f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+f(t) = \frac{1}{C_\gamma} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\gamma f(a, b) \frac{1}{\sqrt{|a|}} \gamma\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
 $$
 
 The inversion formula reconstructs $f$ from its wavelet transform.
 
 ### The Dual Wavelet Transform
 
-In the dual setting, the wavelet $\psi$ is allowed to be dual-valued, and the transform becomes
+In the dual setting, the wavelet $\gamma$ is allowed to be dual-valued, and the transform becomes
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}_{\mathrm{dln}}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{C}_{\mathrm{dln}})^\times, \; b \in \mathbb{C}_{\mathrm{dln}}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}_{\mathrm{dln}}} f(Q) \overline{\gamma\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{C}_{\mathrm{dln}})^\times, \; b \in \mathbb{C}_{\mathrm{dln}}.
 $$
 
 The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.
@@ -494,7 +494,7 @@ The section on the structure principle states what organises the subject: whenev
 | $Mf$ | Dual maximal function |
 | $\mathcal{M} f$ | Dual Mellin transform |
 | $Rf$ | Dual Radon transform |
-| $W_\psi f$ | Dual wavelet transform |
+| $W_\gamma f$ | Dual wavelet transform |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 
 ## Further Reading

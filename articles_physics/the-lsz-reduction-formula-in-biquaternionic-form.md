@@ -102,15 +102,15 @@ The external legs carry the framework's plane waves, and this is where the reduc
 
 **Central-phase plane waves.** The biquaternion plane wave
 $$
-\tilde{Ξ}_{\tilde P}(\tilde R_\varphi) = \tilde Q_{\mathrm{amp}}\,\exp\big(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\varphi)\big) ,
+\tilde{Ξ}_{\tilde P}(\tilde R_\Phi) = \tilde Q_{\mathrm{amp}}\,\exp\big(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi)\big) ,
 \qquad
-\tilde R_\varphi = i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z .
+\tilde R_\Phi = i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z .
 $$
 Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box\to p^2=-\tilde P\tilde P^{\natural}$, so
 $$
 \big(\Box-m^2\big)\tilde{Ξ}_{\tilde P} \;\longrightarrow\; -\big(\tilde P\tilde P^{\natural}+m^2\big)\tilde{Ξ}_{\tilde P} = -\,\mathcal{M}(\tilde P)\,\tilde{Ξ}_{\tilde P},
 $$
-which vanishes for $\tilde P\tilde P^{\natural}=-m^2$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde R_\varphi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$, the corpus's four-vector notation, so $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\varphi))=\exp(-ip\cdot x)$ is the positive-frequency mode and the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.
+which vanishes for $\tilde P\tilde P^{\natural}=-m^2$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$, the corpus's four-vector notation, so $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi))=\exp(-ip\cdot x)$ is the positive-frequency mode and the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.
 
 **The one-particle states.** The asymptotic states are one-particle states of the Fock space constructed in *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, labelled by on-shell momenta and by the internal spin label of the one-particle state. The external wavefunction is the constant amplitude $\tilde Q_{\mathrm{amp}}$ times the central phase; for a scalar field it is an element of $\mathbb{B}$, while for a field with spin the same slot carries the spin amplitude $\tilde W^{(r)}$ of the spin case below. The LSZ integral projects a correlation function onto that amplitude.
 
@@ -365,7 +365,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
 | $s_j$, $\varepsilon_j$ | The two signs of leg $j$: $s_j=\pm1$ from the Fourier phase (out/in), $\varepsilon_j=\pm1$ from the numerator ($\tilde{Ξ}_{\mathrm{sp}}$/$\tilde{Ξ}_{\mathrm{sp}}^{\natural}$); independent |
-| $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\varphi))=\exp(-ip\cdot x)$ | Central-phase plane wave (external leg), the positive-frequency mode; complex central, not real |
+| $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi))=\exp(-ip\cdot x)$ | Central-phase plane wave (external leg), the positive-frequency mode; complex central, not real |
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication, right multiplication and the cell (closing section only) |
 | $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=i p_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k i p_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Momentum action, the second writing of the momentum symbol of $\mathbb{D}$; $\mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\tilde{Ξ}_{\mathrm{sp}}$ |

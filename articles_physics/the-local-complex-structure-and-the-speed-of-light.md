@@ -94,9 +94,9 @@ Three features of this definition are the content of its locality.
 - **It is pointwise, not holomorphic.** The local structure is an identification on the local tangent space at each point. It is not a system of holomorphic coordinates and it does not make spacetime a complex manifold, since by the previous section no such structure exists. In flat spacetime with constant $c$ the pointwise identifications fit together and the structure becomes global; in general they do not.
 - **It requires a scale.** The coordinate $i c r'_t$ is a length and $r'_t$ is a time, so the map $r'_t\mapsto i c r'_t$ is dimensionally consistent only because $c$ is a speed. Without a scale, the statement "the temporal direction is imaginary" has no metric content. The local complex structure is therefore not a structure that merely *has* a scale; it is a structure *with* a scale, and that scale is $c$.
 
-At each point the local structure induces the quadratic form of the material sector. With $d\tilde R_\varphi=ic\,dr'_t\,e_t+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
+At each point the local structure induces the quadratic form of the material sector. With $d\tilde R_\Phi=ic\,dr'_t\,e_t+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
 $$
-\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural}=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2\;}.
+\boxed{\;\langle d\tilde R_\Phi\rangle_{\natural}=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2\;}.
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the interval.
 
@@ -193,7 +193,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
-| $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position of the material sector |
+| $\tilde R_\Phi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position of the material sector |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The one metric, on the four $Q_\mu$ |
 | $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |

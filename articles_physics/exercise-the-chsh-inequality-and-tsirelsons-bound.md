@@ -454,7 +454,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathrm{Tr}_\mathbb{B}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace on a single factor |
+| $\mathrm{Tr}_\mathbb{B}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace on a single factor |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $e_t\mapsto I_2,\ \vec e_k\mapsto-i\sigma_k$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_k$ is $\sigma_k$ |
 | $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ | Alice's and Bob's measurement directions |

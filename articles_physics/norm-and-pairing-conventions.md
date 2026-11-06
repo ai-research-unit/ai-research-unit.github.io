@@ -199,7 +199,7 @@ $$
 The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
 
 $$
-p=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)}{\operatorname{Tr}\tilde{Ϛ}},
+p=\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)}{\operatorname{Tr}\tilde{Ϛ}},
 \qquad \operatorname{Tr}\tilde{Ϛ}=1\iff\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12 .
 $$
 
@@ -240,7 +240,7 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\mathrm b}$, $\mathcal B$ | The frame rotor and the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ |
 | $\operatorname{Tr}\tilde Q=2Q_t$ | The trace of the $2\times2$ image; a normalised state has trace one |
-| $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}\tilde{Ϛ}$ | The Born weight, a ratio in which the factor two cancels |
+| $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}\tilde{Ϛ}$ | The Born weight, a ratio in which the factor two cancels |
 
 ## Further Reading
 

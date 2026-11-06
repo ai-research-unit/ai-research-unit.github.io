@@ -87,7 +87,7 @@ Read physically, a job has a **magnitude** and an **order**. The magnitude is th
 
 ## The Four Forms and the Four Jobs
 
-The four forms are read on the material sector $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{B}_{\Psi}$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
+The four forms are read on the material sector $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{B}_{\Psi}$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
 
 | Product | Slots | Form | Signature on $\mathbb{B}_{\Phi}$ | Signature on $\mathbb{B}_{\Psi}$ | Job |
 | --- | --- | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ $$
 and on the material sector the central value is the Minkowski interval,
 
 $$
-\langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+x^{2}+y^{2}+z^{2},
+\langle\tilde R_\Phi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+x^{2}+y^{2}+z^{2},
 $$
 
 of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{B}_{\Phi}$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$, on $\mathbb{B}_{\Phi}$, is the mass shell.
@@ -242,7 +242,7 @@ The physical identification of the material sector with spacetime and of the inf
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the sector sign, the Born form, the interval and the Krein form |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic algebraic norm, the interval on $\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | the material coordinate |
+| $\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | the material coordinate |
 | $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the symmetric plain sesquilinear, symmetric quaternionic bilinear, antisymmetric plain bilinear and antisymmetric quaternionic sesquilinear products |
 
 ## Further Reading

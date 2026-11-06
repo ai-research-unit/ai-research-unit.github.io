@@ -356,7 +356,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $p_\epsilon=\tfrac14$ | Outcome probability |
 | $\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*}$ | Bob's conditional state |
 | $\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac12 e_t$ | Maximally mixed partial trace |
-| $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*}) = 2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}$ | Trace reading at normalisation: the $2\times2$ reading of the Born weight |
+| $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*}) = 2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation: the $2\times2$ reading of the Born weight |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

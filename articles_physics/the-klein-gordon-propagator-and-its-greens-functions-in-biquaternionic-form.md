@@ -14,7 +14,7 @@ is a **central scalar** element of the algebra: the d'Alembertian $\Box=\tilde{\
 
 The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion interpretation of the whole construction, and open questions are recorded.
 
-Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian
+Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and the series d'Alembertian
 
 $$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2 .
@@ -46,9 +46,9 @@ and because both $\Box$ and the mass term are central and scalar, the equation i
 $$
 \tilde P=i\frac{\omega}{c}e_t+\vec k\in\mathbb{B}_{\Phi},
 \qquad
-\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
+\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
-\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t,
+\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t,
 $$
 
 the operator has the symbol obtained from $\partial/\partial r'_t\,\to-i\omega$, so that $\partial/\partial R_t\,\to-\omega/c$, together with $\partial/\partial R_k\,\to ik_k$:
@@ -72,12 +72,12 @@ which is the biquaternion-norm statement of the relativistic dispersion relation
 A Green's function of the Klein–Gordon operator is a distributional inverse. This article fixes the defining equation once,
 
 $$
-\boxed{\;\left(\Box-\mu^2\right)G(\tilde R_\varphi)=-\delta^{(4)}(\tilde R_\varphi),
+\boxed{\;\left(\Box-\mu^2\right)G(\tilde R_\Phi)=-\delta^{(4)}(\tilde R_\Phi),
 \qquad
-\delta^{(4)}(\tilde R_\varphi)=\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
+\delta^{(4)}(\tilde R_\Phi)=\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
 
-with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\varphi,2}$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-\mu^2)G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $\mu=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
+with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-\mu^2)G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $\mu=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
 
 A second convention is fixed at the same time: the whole article works with the operator $\Box-\mu^2$ and never with $-\Box+\mu^2$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$, the defining equation becomes
 
@@ -152,10 +152,10 @@ G_R(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 \frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
 
-a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde{R}_{\varphi,2})$ the convolution
+a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde{R}_{\Phi,2})$ the convolution
 
 $$
-\tilde{Ξ}(\tilde R_\varphi)=\int G_R(\tilde R_\varphi-\tilde{R}_{\varphi,2})\,J(\tilde{R}_{\varphi,2})\,d^3y\,dr'_{t,2}
+\tilde{Ξ}(\tilde R_\Phi)=\int G_R(\tilde R_\Phi-\tilde{R}_{\Phi,2})\,J(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
 $$
 
 then solves $(\Box-\mu^2)\tilde{Ξ}=-J$, by the same translation-invariance argument as in the massless exercise.
@@ -230,7 +230,7 @@ This is the **volume term**: it is the contribution from the interior of the con
 
 $$
 \boxed{\;
-G_R(\tilde R_\varphi)
+G_R(\tilde R_\Phi)
 =\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\left[\delta(r_x^2)
 -\frac{\mu}{2\sqrt{-r_x^2}}\,J_1\!\left(\mu\sqrt{-r_x^2}\right)\mathrm{H}_{\mathrm{hvs}}(-r_x^2)\right]\;},
 \qquad
@@ -268,7 +268,7 @@ The coefficient was checked numerically to twelve digits, and it is the c-explic
 The advanced displacement reverses both pole shifts and produces the mirror kernel
 
 $$
-G_A(\tilde R_\varphi)=G_R(-\tilde R_\varphi\text{ in time})=G_R(-r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+G_A(\tilde R_\Phi)=G_R(-\tilde R_\Phi\text{ in time})=G_R(-r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\frac{\mathrm{H}_{\mathrm{hvs}}(-r'_t)}{2\pi}\left[\delta(r_x^2)-\frac{\mu}{2\sqrt{-r_x^2}}J_1\!\left(\mu\sqrt{-r_x^2}\right)\mathrm{H}_{\mathrm{hvs}}(-r_x^2)\right],
 $$
 
@@ -290,35 +290,35 @@ It is worth stating the two kernels' structure in the algebra. Both are complex 
 The difference of the two kernels is the framework's causal kernel. Define the **Pauli–Jordan** (commutator) function by
 
 $$
-\boxed{\;G_C(\tilde R_\varphi)=G_R(\tilde R_\varphi)-G_A(\tilde R_\varphi)
+\boxed{\;G_C(\tilde R_\Phi)=G_R(\tilde R_\Phi)-G_A(\tilde R_\Phi)
 =\frac{\mathrm{sgn}(r'_t)}{2\pi}\left[\delta(r_x^2)-\frac{\mu}{2\sqrt{-r_x^2}}\,J_1\!\left(\mu\sqrt{-r_x^2}\right)\mathrm{H}_{\mathrm{hvs}}(-r_x^2)\right]\;},
 $$
 
 and normalize the field so that the field commutator, of which $G_C$ is the kernel, reads
 
 $$
-\left[\,\tilde{Ξ}(\tilde R_\varphi),\,\tilde{Ξ}^{*}(\tilde{R}_{\varphi,2})\,\right]
-=G_C(\tilde R_\varphi-\tilde{R}_{\varphi,2})\,e_t .
+\left[\,\tilde{Ξ}(\tilde R_\Phi),\,\tilde{Ξ}^{*}(\tilde{R}_{\Phi,2})\,\right]
+=G_C(\tilde R_\Phi-\tilde{R}_{\Phi,2})\,e_t .
 $$
 
 The overall constant in this normalization is a convention — the relation carries an explicit factor of $i$ in the standard canonical normalization, which the kernels of this article absorb into their defining equation — while the support of $G_C$, and hence microcausality, is not. The commutator vanishes at equal times, since $G_C$ vanishes for purely spatial separation.
 
 ### Microcausality
 
-Microcausality is the statement that the commutator vanishes for spacelike separation. Let $\tilde R_\varphi$ be **spacelike**, so that $r_x^2=-{r'_{t}}^2+\vec r^2>0$. Then two things happen at once in the closed form: $\delta(x^2)=0$ because $x^2\ne0$, and $\mathrm{H}_{\mathrm{hvs}}(-x^2)=0$ because $-x^2<0$. Hence
+Microcausality is the statement that the commutator vanishes for spacelike separation. Let $\tilde R_\Phi$ be **spacelike**, so that $r_x^2=-{r'_{t}}^2+\vec r^2>0$. Then two things happen at once in the closed form: $\delta(x^2)=0$ because $x^2\ne0$, and $\mathrm{H}_{\mathrm{hvs}}(-x^2)=0$ because $-x^2<0$. Hence
 
 $$
-G_C(\tilde R_\varphi)=0
+G_C(\tilde R_\Phi)=0
 \qquad\text{for}\qquad x^2>0,
 $$
 
-and the field operators commute at spacelike separation. For **timelike** $\tilde R_\varphi$ (inside either cone) the kernel is nonzero: $\mathrm{H}_{\mathrm{hvs}}(-x^2)=1$ and the Bessel term contributes, so $G_C$ does not vanish and the commutator carries the causal signal. The two behaviors were checked numerically on the closed form: at the spacelike point $(r'_t,r)=(1,2)$ with $\mu=1.1$ the kernel is exactly zero, and at the timelike point $(r'_t,r)=(2,1)$ it is $-0.0294$, nonzero and of the expected magnitude.
+and the field operators commute at spacelike separation. For **timelike** $\tilde R_\Phi$ (inside either cone) the kernel is nonzero: $\mathrm{H}_{\mathrm{hvs}}(-x^2)=1$ and the Bessel term contributes, so $G_C$ does not vanish and the commutator carries the causal signal. The two behaviors were checked numerically on the closed form: at the spacelike point $(r'_t,r)=(1,2)$ with $\mu=1.1$ the kernel is exactly zero, and at the timelike point $(r'_t,r)=(2,1)$ it is $-0.0294$, nonzero and of the expected magnitude.
 
 The support statement can be read without the Bessel function. The commutator function is a difference of two kernels whose pole displacements place them, respectively, on the future and past cones; the singularities of the two contributions in the $r'_t$-plane cancel for spacelike separations, and what remains is supported on the closed cone. This is the standard causal structure of a scalar field, and it is reproduced here directly from the closed form rather than asserted.
 
 ### What the algebra contributes
 
-The commutator is a **central scalar** times $e_t$. There is no non-central part, because the field is central and the kernel is central. The light cone on which $G_C$ is supported is the zero-divisor cone $\langle\tilde R_\varphi\rangle_{\natural}=0$ of $\mathbb{B}_{\Phi}$: the points of the material sector at which the biquaternion norm vanishes, which are exactly the elements of $\mathbb{B}_{\Phi}$ that fail to be invertible. The mass shell, where the kernel's momentum-space amplitude is singular, is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. Both singular loci are statements about the algebra's biquaternion norm, and the causal structure of the scalar theory is therefore a statement about $\mathbb{B}_{\Phi}$ alone, with the centre as the field's value space and no module in sight. This is the concrete form, for the propagator, of the structural article's verdict that spin $0$ lives in the centre: its causality is the geometry of the cone, not the representation theory of a module.
+The commutator is a **central scalar** times $e_t$. There is no non-central part, because the field is central and the kernel is central. The light cone on which $G_C$ is supported is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of $\mathbb{B}_{\Phi}$: the points of the material sector at which the biquaternion norm vanishes, which are exactly the elements of $\mathbb{B}_{\Phi}$ that fail to be invertible. The mass shell, where the kernel's momentum-space amplitude is singular, is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. Both singular loci are statements about the algebra's biquaternion norm, and the causal structure of the scalar theory is therefore a statement about $\mathbb{B}_{\Phi}$ alone, with the centre as the field's value space and no module in sight. This is the concrete form, for the propagator, of the structural article's verdict that spin $0$ lives in the centre: its causality is the geometry of the cone, not the representation theory of a module.
 
 ## The Feynman Propagator and Time Ordering
 
@@ -330,22 +330,22 @@ $$
 G_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
 =\frac{-1}{p^2-\mu^2+i\epsilon},
 \qquad
-G_F(\tilde R_\varphi)=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) .
+G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)) .
 $$
 
 Its frequency integral was given above; its position-space content is the time-ordered correlation function,
 
 $$
-G_F(\tilde R_\varphi)
-=\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\langle0|\tilde{Ξ}(\tilde R_\varphi)\tilde{Ξ}^{*}(0)|0\rangle
-+\mathrm{H}_{\mathrm{hvs}}(-r'_t)\,\langle0|\tilde{Ξ}^{*}(0)\tilde{Ξ}(\tilde R_\varphi)|0\rangle,
+G_F(\tilde R_\Phi)
+=\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\langle0|\tilde{Ξ}(\tilde R_\Phi)\tilde{Ξ}^{*}(0)|0\rangle
++\mathrm{H}_{\mathrm{hvs}}(-r'_t)\,\langle0|\tilde{Ξ}^{*}(0)\tilde{Ξ}(\tilde R_\Phi)|0\rangle,
 $$
 
 which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $r'_t$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
 
 $$
-\boxed{\;\langle0|\,T\,\tilde{Ξ}(\tilde R_\varphi)\,\tilde{Ξ}^{*}(\tilde{R}_{\varphi,2})\,|0\rangle
-=G_F(\tilde R_\varphi-\tilde{R}_{\varphi,2})\,e_t\;},
+\boxed{\;\langle0|\,T\,\tilde{Ξ}(\tilde R_\Phi)\,\tilde{Ξ}^{*}(\tilde{R}_{\Phi,2})\,|0\rangle
+=G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})\,e_t\;},
 $$
 
 a complex scalar times the identity; the module factor is absent, as it must be for a central field. The identification fixes the field-normalization convention, the kernels throughout being the distributions defined by $(\Box-\mu^2)G=-\delta^{(4)}$; the standard canonical normalization of the complex scalar differs from it by the explicit factor of $i$ carried by the canonical commutation relation, and that constant, unlike the support, is not physical.
@@ -374,11 +374,11 @@ with $K_1$ the modified Bessel function of the second kind. It decays exponentia
 The Feynman propagator is the inverse of the Klein–Gordon operator in the distributional sense, $(\Box-\mu^2)G_F=-\delta^{(4)}$, and the inverse relation between the two reads
 
 $$
-\int d^3y\,dr'_{t,2}\;G_F(\tilde R_\varphi-\tilde{R}_{\varphi,2})\,\left[-\bigl(\Box_{\tilde{R}_{\varphi,2}}-\mu^2\bigr)\right]\delta^{(4)}(\tilde{R}_{\varphi,2}-\tilde Q_3)
-=\delta^{(4)}(\tilde R_\varphi-\tilde Q_3),
+\int d^3y\,dr'_{t,2}\;G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})\,\left[-\bigl(\Box_{\tilde{R}_{\Phi,2}}-\mu^2\bigr)\right]\delta^{(4)}(\tilde{R}_{\Phi,2}-\tilde Q_3)
+=\delta^{(4)}(\tilde R_\Phi-\tilde Q_3),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\varphi-\tilde{R}_{\varphi,2})[-\bigl(\Box_{\tilde{R}_{\varphi,2}}-\mu^2\bigr)]G_F(\tilde{R}_{\varphi,2}-\tilde Q_3)=G_F(\tilde R_\varphi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde R_\Phi-\tilde{R}_{\Phi,2})[-\bigl(\Box_{\tilde{R}_{\Phi,2}}-\mu^2\bigr)]G_F(\tilde{R}_{\Phi,2}-\tilde Q_3)=G_F(\tilde R_\Phi-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 
@@ -386,7 +386,7 @@ Three facts summarize what the framework does and does not contribute to the Kle
 
 **The kernel is central, and the module is a spectator.** The operator $\Box-\mu^2$ is a central scalar, so every Green's function is a central scalar times $e_t$, and the whole construction is the scalar construction tensored with the identity on the state module. This is not a deficiency but the exact statement of spin $0$: a scalar field has no internal index for a non-central kernel to act on. The companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* shows why this must be so, and the present article exhibits it at the level of the kernel.
 
-**The singular loci are the biquaternion norm's geometry.** The light cone is the zero-divisor cone $\langle\tilde R_\varphi\rangle_{\natural}=0$ of the material sector; the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{B}_{\Phi}$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.
+**The singular loci are the biquaternion norm's geometry.** The light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector; the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{B}_{\Phi}$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.
 
 **The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $i c r'_t$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
 
@@ -413,7 +413,7 @@ The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\math
 The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=\mu\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(\mu\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form
 
 $$
-G_R(\tilde R_\varphi)
+G_R(\tilde R_\Phi)
 =\frac{\mathrm{H}_{\mathrm{hvs}}(r'_t)}{2\pi}\left[\delta(r_x^2)-\frac{\mu}{2\sqrt{-r_x^2}}\,J_1\!\left(\mu\sqrt{-r_x^2}\right)\mathrm{H}_{\mathrm{hvs}}(-r_x^2)\right],
 \qquad
 r_x^2=-{r'_{t}}^2+\vec r^2,
@@ -423,7 +423,7 @@ in natural units. The delta term is the massless retarded kernel, whose invarian
 
 The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{Ξ},\tilde{Ξ}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{Ξ}(r_x)\tilde{Ξ}^{*}(r_y)|0\rangle=G_F(r_x-r_y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{\mu}{4\pi^2\sqrt{\rho_E^2}}K_1(\mu\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.
 
-The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $\langle\tilde R_\varphi\rangle_{\natural}=0$ of the material sector and the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.
+The algebra's contribution is the identification of the singular loci with the biquaternion norm: the light cone is the zero-divisor cone $\langle\tilde R_\Phi\rangle_{\natural}=0$ of the material sector and the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The kernel is central, the module is a spectator, and the causal boundary condition is a physical input. The retarded, advanced, commutator and Feynman kernels are the standard scalar kernels, written in the framework's notation and interpreted through its biquaternion norm.
 
 ## Summary of Notation
 
@@ -434,9 +434,9 @@ The algebra's contribution is the identification of the singular loci with the b
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
-| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\in\mathbb{B}_{\Phi}$ |
 | $\tilde P=i\omega/c\,e_t+\vec k$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}$ | Biquaternion norm |
+| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
 | $\tilde{P}_E=ik_{E,0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}=\vec p_E^2$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$ | Biquaternionic gradient |
@@ -448,7 +448,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $G_C=G_R-G_A$ | Pauli–Jordan (commutator) function |
 | $G_F$ | Feynman propagator, time-ordered two-point function |
 | $r_x^2=-{r'_{t}}^2+\vec r^2$ | Invariant separation, natural units |
-| $\langle\tilde R_\varphi\rangle_{\natural}=0$ | Zero-divisor (light) cone of $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde R_\Phi\rangle_{\natural}=0$ | Zero-divisor (light) cone of $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde P\rangle_{\natural}=-\mu^2$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t),\mathrm{sgn}(r'_t)$ | Heaviside step and sign functions |

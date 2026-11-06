@@ -135,13 +135,13 @@ for a closed oriented $n$-manifold $M$ and a local system $\mathcal{L}$, with $\
 
 ### Cohomology with Support
 
-**Definition.** Let $\Phi$ be a family of closed subsets of $X$ closed under finite unions and under passage to closed subsets, such that every member of $\Phi$ has a closed neighbourhood in $\Phi$; the standard examples are the family of all closed subsets, the family of compact subsets when $X$ is locally compact and Hausdorff, and the family of closed subsets of a fixed closed set. For a sheaf $\mathcal{F}$, the group of **sections with support in $\Phi$** is
+**Definition.** Let $\Lambda$ be a family of closed subsets of $X$ closed under finite unions and under passage to closed subsets, such that every member of $\Lambda$ has a closed neighbourhood in $\Lambda$; the standard examples are the family of all closed subsets, the family of compact subsets when $X$ is locally compact and Hausdorff, and the family of closed subsets of a fixed closed set. For a sheaf $\mathcal{F}$, the group of **sections with support in $\Lambda$** is
 
 $$
-\Gamma_\Phi(X,\mathcal{F}) = \{s \in \Gamma(X,\mathcal{F}) : \operatorname{Supp}s \in \Phi\},
+\Gamma_\Lambda(X,\mathcal{F}) = \{s \in \Gamma(X,\mathcal{F}) : \operatorname{Supp}s \in \Lambda\},
 $$
 
-and the **cohomology with support in $\Phi$** is $H^i_\Phi(X,\mathcal{F}) = R^i\Gamma_\Phi(X,\mathcal{F})$. When $\Phi$ is the family of compact subsets of a locally compact space, one writes $H^i_c(X,\mathcal{F})$ and speaks of **cohomology with compact support**; when $\Phi$ is the family of closed subsets of a closed $Z \subseteq X$, one writes $H^i_Z(X,\mathcal{F})$.
+and the **cohomology with support in $\Lambda$** is $H^i_\Lambda(X,\mathcal{F}) = R^i\Gamma_\Lambda(X,\mathcal{F})$. When $\Lambda$ is the family of compact subsets of a locally compact space, one writes $H^i_c(X,\mathcal{F})$ and speaks of **cohomology with compact support**; when $\Lambda$ is the family of closed subsets of a closed $Z \subseteq X$, one writes $H^i_Z(X,\mathcal{F})$.
 
 **Theorem (the sequence of a closed subspace).** Let $i : Z \hookrightarrow X$ be the inclusion of a closed subset and $j : Ζ = X\setminus Z \hookrightarrow X$ the inclusion of its complement. For every sheaf $\mathcal{F}$ on $X$ the sequence of sheaves on $X$
 
@@ -216,7 +216,7 @@ A sheaf is acyclic when its higher cohomology vanishes; flabby sheaves — those
 | soft, fine | sections over closed sets extend; partitions of unity exist; fine $\Rightarrow$ soft $\Rightarrow$ acyclic |
 | $\underline{A}$, $H^i(X,\underline{A})\cong H^i(X;A)$ | constant sheaf; comparison with singular cohomology |
 | $\mathcal{L}$, $\mathcal{L}^{\vee}$ | local system and its dual; representation of $\pi_1$ |
-| $\Gamma_\Phi$, $H^i_\Phi$, $H^i_c$ | sections and cohomology with support in a family; compact support |
+| $\Gamma_\Lambda$, $H^i_\Lambda$, $H^i_c$ | sections and cohomology with support in a family; compact support |
 | $R^qf_*$, $\underline{H}^q(\mathcal{F})$ | higher direct images; Leray presheaf |
 | $E_2^{n,m} = H^p(Y,R^qf_*\mathcal{F})$ | Leray spectral sequence, converging to $H^{p+q}(X,\mathcal{F})$ |
 

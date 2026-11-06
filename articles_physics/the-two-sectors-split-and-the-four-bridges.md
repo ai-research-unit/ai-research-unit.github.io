@@ -32,9 +32,9 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 Every biquaternion decomposes uniquely into a Hermitian and an anti-Hermitian part:
 
 $$
-\tilde Q=\tilde R_\psi+\tilde R_\varphi,\qquad
-\tilde R_\psi=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{B}_{\Psi},\qquad
-\tilde R_\varphi=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{B}_{\Phi} .
+\tilde Q=\tilde R_\Psi+\tilde R_\Phi,\qquad
+\tilde R_\Psi=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{B}_{\Psi},\qquad
+\tilde R_\Phi=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{B}_{\Phi} .
 $$
 
 With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.
@@ -42,10 +42,10 @@ With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tild
 Two properties of the split are used throughout.
 
 - **It is a real subspace, not a complex one.** The sector $\mathbb{B}_{\Psi}$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
-- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\varphi,k}=i c r'_t_k+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
+- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\Phi,k}=i c r'_t_k+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
 
 $$
-\tilde{R}_{\varphi,1}\tilde{R}_{\varphi,2}=\bigl(-c^2r'_{t,1t}'_2-(\vec v_1,\vec v_2)\bigr)
+\tilde{R}_{\Phi,1}\tilde{R}_{\Phi,2}=\bigl(-c^2r'_{t,1t}'_2-(\vec v_1,\vec v_2)\bigr)
 +i\bigl(c r'_{t}_1\vec v_2+c r'_{t}_2\vec v_1\bigr)+\vec v_1\times\vec v_2 .
 $$
 
@@ -77,7 +77,7 @@ so $c(\tilde Q)$ is again material. The argument for $\mathbb{B}_{\Psi}$ is the 
 
 The check is exact and it is narrow. It says that no operation built from the conjugations crosses the split. It says nothing about operations of another type, and the four couplings below are the other operations the corpus uses.
 
-A numerical check makes the narrowness visible. Take $\tilde R_\varphi=2ie_t+3\vec e_x$. Its adjoint is $-2ie_t-3\vec e_x=-\tilde R_\varphi$, as it should be, and every conjugation of it stays anti-Hermitian. But the product $\tilde R_\varphi\tilde R_\varphi=-4e_t-9e_t+12i\vec e_x= -13e_t+12i\vec e_x$ is Hermitian, and $i\tilde R_\varphi=-2e_t+3i\vec e_x$ is Hermitian as well. Neither operation is a conjugation, and both cross.
+A numerical check makes the narrowness visible. Take $\tilde R_\Phi=2ie_t+3\vec e_x$. Its adjoint is $-2ie_t-3\vec e_x=-\tilde R_\Phi$, as it should be, and every conjugation of it stays anti-Hermitian. But the product $\tilde R_\Phi\tilde R_\Phi=-4e_t-9e_t+12i\vec e_x= -13e_t+12i\vec e_x$ is Hermitian, and $i\tilde R_\Phi=-2e_t+3i\vec e_x$ is Hermitian as well. Neither operation is a conjugation, and both cross.
 
 ## The Four Kinds
 
@@ -92,25 +92,25 @@ $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
 $$
 
-For a material element $\tilde R=\tilde R_\varphi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ the value is
+For a material element $\tilde R=\tilde R_\Phi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ the value is
 
 $$
-\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2,
+\langle\tilde R_\Phi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2,
 $$
 
 which is real and therefore lies in the informational sector. The norm square
 
 $$
-\tilde R_\varphi\longmapsto\tilde{R}_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t
+\tilde R_\Phi\longmapsto\tilde{R}_\Phi^{\natural}\tilde R_\Phi=\langle\tilde R_\Phi\rangle_{\natural}e_t
 $$
 
 is a map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ with image the real scalar line $\mathbb{R}e_t$.
 
-**Interpretation.** The norm square is the interval, and the interval is a value of the informational sector. The bridge is the minimal one the product supplies: a process is sent to the scalar that measures it, and no further structure is used. For $\tilde R_\varphi=2ie_t+3\vec e_x$ the interval is $-4+9=5$, and the bridge sends the element to $5e_t$. A lightlike element is sent to $0$: the zero-divisor cone lies in the kernel of the bridge.
+**Interpretation.** The norm square is the interval, and the interval is a value of the informational sector. The bridge is the minimal one the product supplies: a process is sent to the scalar that measures it, and no further structure is used. For $\tilde R_\Phi=2ie_t+3\vec e_x$ the interval is $-4+9=5$, and the bridge sends the element to $5e_t$. A lightlike element is sent to $0$: the zero-divisor cone lies in the kernel of the bridge.
 
-**Boundary.** The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $c^2 r_t^2-\lvert\vec r_\psi\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.
+**Boundary.** The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $c^2 r_t^2-\lvert\vec r_\Psi\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.
 
-**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R=\tilde R_\varphi$, the element $\tilde R_\psi=-\tfrac{i}{2}\tilde R_\varphi$ is Hermitian, with $\operatorname{Tr}\tilde R_\psi=c r'_{t}$ and $\langle\tilde R_\psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\varphi\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
+**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R=\tilde R_\Phi$, the element $\tilde R_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ is Hermitian, with $\operatorname{Tr}\tilde R_\Psi=c r'_{t}$ and $\langle\tilde R_\Psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\Phi\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
 
 ### A Bijection: the Central Imaginary
 
@@ -136,35 +136,35 @@ The algebra limits what such a value can be. The centre is a field, $\mathbb{C}e
 
 ### An Action: the Rotor
 
-A unit-norm Hermitian element $\tilde U\in\mathbb{B}_{\Psi}$ acts on the algebra by the sandwich. For $\tilde R_\varphi\in\mathbb{B}_{\Phi}$,
+A unit-norm Hermitian element $\tilde U\in\mathbb{B}_{\Psi}$ acts on the algebra by the sandwich. For $\tilde R_\Phi\in\mathbb{B}_{\Phi}$,
 
 $$
-(\tilde U\tilde R_\varphi\tilde U^{*})^{*}=\tilde U\tilde{R}_\varphi^{*}\tilde U^{*}
-=-\tilde U\tilde R_\varphi\tilde U^{*},
+(\tilde U\tilde R_\Phi\tilde U^{*})^{*}=\tilde U\tilde{R}_\Phi^{*}\tilde U^{*}
+=-\tilde U\tilde R_\Phi\tilde U^{*},
 $$
 
-because $(\tilde U^{*})^{*}=\tilde U$ and $\tilde{R}_\varphi^{*}=-\tilde R_\varphi$. The result is material: the action preserves the sector it acts on. The computation uses only the involution, so the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves both sectors for every invertible $\tilde U$, not only for the rotors; the restriction to the unit-norm slice is what makes it a frame change.
+because $(\tilde U^{*})^{*}=\tilde U$ and $\tilde{R}_\Phi^{*}=-\tilde R_\Phi$. The result is material: the action preserves the sector it acts on. The computation uses only the involution, so the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves both sectors for every invertible $\tilde U$, not only for the rotors; the restriction to the unit-norm slice is what makes it a frame change.
 
 **Interpretation.** The informational sector supplies the boosts of the material sector. A positive Hermitian rotor is a boost, the sandwich is the change of frame, and the material element is the object transformed. The bridge is an action of one sector on the other, not a map between them; the frame and the object remain in their own sectors.
 
 The positive Hermitian rotors are the boosts. A rotor with an imaginary vector part, $\cosh(\eta/2)+i\sinh(\eta/2)\vec e_x$, has unit norm, is Hermitian, and its sandwich mixes the time and the spatial components. A rotation rotor is a real quaternion, $\cos(\theta/2)+\sin(\theta/2)\vec e_z$; it is $*$-unitary but not Hermitian, it is not an element of $\mathbb{B}_{\Psi}$, and its sandwich rotates the spatial part while fixing the time axis.
 
-The rotation's sandwich preserves both sectors, as every congruence does; what it does not do is supply its parameter from $\mathbb{B}_{\Psi}$. The distinction is the origin of the parameter and not the destination of the image: the boost is generated by an element of the informational sector, the rotation by an element of the material one. The Cartan exponents sharpen the same statement. The logarithm of the Hermitian factor is $\ln\tilde R_\psi=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp}}}{2}\vec u_{\mathrm b}\in\mathbb{B}_{\Psi}$, and the logarithm of the $*$-unitary factor is $\ln\tilde U=i\alpha e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{B}_{\Phi}$: the boost generator is informational, while the rotation and the central phase are both material generators. The split is of the logarithms and not of the factors, because $\tilde U$ is $*$-unitary and not an element of $\mathbb{B}_{\Phi}$. By the polar decomposition, a general unit-norm rotor is the product of a boost and a rotation, so its action composes a bridge with a motion that is not one.
+The rotation's sandwich preserves both sectors, as every congruence does; what it does not do is supply its parameter from $\mathbb{B}_{\Psi}$. The distinction is the origin of the parameter and not the destination of the image: the boost is generated by an element of the informational sector, the rotation by an element of the material one. The Cartan exponents sharpen the same statement. The logarithm of the Hermitian factor is $\ln\tilde R_\Psi=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp}}}{2}\vec u_{\mathrm b}\in\mathbb{B}_{\Psi}$, and the logarithm of the $*$-unitary factor is $\ln\tilde U=i\alpha e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{B}_{\Phi}$: the boost generator is informational, while the rotation and the central phase are both material generators. The split is of the logarithms and not of the factors, because $\tilde U$ is $*$-unitary and not an element of $\mathbb{B}_{\Phi}$. By the polar decomposition, a general unit-norm rotor is the product of a boost and a rotation, so its action composes a bridge with a motion that is not one.
 
 **Boundary.** Only the unit-norm elements are rotors. The general element of $\mathbb{B}_{\Psi}$ acts by a sandwich that is a congruence rescaling the interval and not an isometry, and the full action theory belongs to the geometry block, not here.
 
 ### A Pairing: the Off-Sector Scalar
 
-For $\tilde R_\varphi=i c r'_t+\vec v\in\mathbb{B}_{\Phi}$ and $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi\in\mathbb{B}_{\Psi}$, with real $r'_t$, $\vec v$, $c r_t$ and $\vec r_\psi$, the scalar part of the plain product is
+For $\tilde R_\Phi=i c r'_t+\vec v\in\mathbb{B}_{\Phi}$ and $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi}$, with real $r'_t$, $\vec v$, $c r_t$ and $\vec r_\Psi$, the scalar part of the plain product is
 
 $$
-\boxed{\;\operatorname{Sc}(\tilde R_\varphi\tilde R_\psi)
-=i\bigl(c r'_{t}\,c r_t-(\vec v,\vec r_\psi)\bigr)\;}.
+\boxed{\;\operatorname{Sc}(\tilde R_\Phi\tilde R_\Psi)
+=i\bigl(c r'_{t}\,c r_t-(\vec v,\vec r_\Psi)\bigr)\;}.
 $$
 
 It is purely imaginary, and it is a pairing $\mathbb{B}_{\Phi}\times\mathbb{B}_{\Psi}\to i\mathbb{R}$: it reads one element of each sector and returns a phase.
 
-**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(c r'_{t},\vec v)$ with the informational four-vector $(c r_t,\vec r_\psi)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(c r'_{t}\,c r_t+\vec v\cdot\vec r_\psi)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
+**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(c r'_{t},\vec v)$ with the informational four-vector $(c r_t,\vec r_\Psi)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(c r'_{t}\,c r_t+\vec v\cdot\vec r_\Psi)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
 
 **Boundary.** A pairing is not a product: it produces a scalar, not an element to be fed back into the algebra, and it does not compose. It is an interpretation of two objects, not an operation that turns one into the other. The pairing also depends on the product. The plain product and the product with the adjoint in the second slot give the Minkowski pairing; the product with the adjoint in the first slot gives its negative; the quaternionic product gives the Euclidean pairing, with the spatial sign reversed. The article uses the plain product and does not compare the four.
 
@@ -225,8 +225,8 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | $\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
-| $\tilde R=\tilde R_\varphi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | A material element, the anti-Hermitian part |
-| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | An informational element, the Hermitian part |
+| $\tilde R=\tilde R_\Phi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | A material element, the anti-Hermitian part |
+| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | An informational element, the Hermitian part |
 | $\operatorname{Sc}$ | The scalar part of a biquaternion |
 
 ## Further Reading

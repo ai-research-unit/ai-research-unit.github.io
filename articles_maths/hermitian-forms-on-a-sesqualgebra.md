@@ -14,7 +14,7 @@ $$
 \Psi(x,y) = y^{*}x
 $$
 
-is Hermitian as well, and it is the one whose scalar reductions are the compatible forms of *The Sesquilinear Form and the Conjugation*: a compatible form is $h_{\varphi}(x,y) = \varphi(y^{*}x) = \varphi(\Psi(x,y))$ for one $R$-linear functional $\varphi$, so $\Psi$ is the universal form of the layer and the scalar theory is its reduction by functionals.
+is Hermitian as well, and it is the one whose scalar reductions are the compatible forms of *The Sesquilinear Form and the Conjugation*: a compatible form is $h_{\ell}(x,y) = \ell(y^{*}x) = \ell(\Psi(x,y))$ for one $R$-linear functional $\ell$, so $\Psi$ is the universal form of the layer and the scalar theory is its reduction by functionals.
 
 Two facts organise the article. **The $A$-valued form is read by the annihilators.** The radical of $\Psi$ is the left annihilator $\{x : Ax = 0\}$ and the radical of $\Phi$ is the right annihilator $\{x : xA = 0\}$ of *Left and Right Multiplication in a Ring*, §*The annihilators*, and the involution carries each onto the other, so the two vanish together and the nondegeneracy of the two forms is a single condition; that condition is one of the three clauses in the definition of the objects of full type of *Sesqualgebras*, §*The Collapse at the Identity*, so full type gives the nondegeneracy of both forms, and the converse fails, the clause being only one of the three. And **the two forms are exchanged by the involution**,
 
@@ -112,31 +112,31 @@ and every sesquilinear product $\circ$ on $A$ with the Hermitian property $(x \c
 
 ### The Compatible Forms
 
-**Proposition (the reduction, quoted from *The Sesquilinear Form and the Conjugation*).** Let $\varphi : A \to R$ be $R$-linear. Then
+**Proposition (the reduction, quoted from *The Sesquilinear Form and the Conjugation*).** Let $\ell : A \to R$ be $R$-linear. Then
 
 $$
-h_{\varphi}(x,y) = \varphi(\Psi(x,y)) = \varphi(y^{*}x)
+h_{\ell}(x,y) = \ell(\Psi(x,y)) = \ell(y^{*}x)
 $$
 
-is a sesquilinear form on $A$, compatible with the product in the sense $h_{\varphi}(xy,z) = h_{\varphi}(y,x^{*}z)$, and every compatible form arises from exactly one functional in this way. The passage $\varphi \mapsto \varphi \circ \Psi$ is therefore a bijection from the $R$-linear functionals onto the compatible forms.
+is a sesquilinear form on $A$, compatible with the product in the sense $h_{\ell}(xy,z) = h_{\ell}(y,x^{*}z)$, and every compatible form arises from exactly one functional in this way. The passage $\ell \mapsto \ell \circ \Psi$ is therefore a bijection from the $R$-linear functionals onto the compatible forms.
 
-*Proof.* The form $h_{\varphi}$ is the composite of the $A$-valued form $\Psi$ with the $R$-linear functional $\varphi$, so it is additive in each variable and inherits the two slot rules from the proposition, and the rest is the correspondence of *The Sesquilinear Form and the Conjugation*, §*The Correspondence*: the injectivity is $\varphi(x) = h_{\varphi}(x,1)$, and the surjectivity is the reconstruction $h(x,y) = h(y^{*}x,1)$ of §*The Reconstruction*. The statement is quoted and not reproved, the theory of the scalar forms being that article's.
+*Proof.* The form $h_{\ell}$ is the composite of the $A$-valued form $\Psi$ with the $R$-linear functional $\ell$, so it is additive in each variable and inherits the two slot rules from the proposition, and the rest is the correspondence of *The Sesquilinear Form and the Conjugation*, §*The Correspondence*: the injectivity is $\ell(x) = h_{\ell}(x,1)$, and the surjectivity is the reconstruction $h(x,y) = h(y^{*}x,1)$ of §*The Reconstruction*. The statement is quoted and not reproved, the theory of the scalar forms being that article's.
 
-**Remark.** The proposition separates the two layers of the article: the $A$-valued form $\Psi$ is the universal object, the scalar functional is the measuring device, and the compatible forms of the entry are its scalar reductions. A theory of the scalar forms is therefore a theory of the functionals, which is the reason the classification of *The Sesquilinear Form and the Conjugation* reads on $\varphi$ and not on $h$.
+**Remark.** The proposition separates the two layers of the article: the $A$-valued form $\Psi$ is the universal object, the scalar functional is the measuring device, and the compatible forms of the entry are its scalar reductions. A theory of the scalar forms is therefore a theory of the functionals, which is the reason the classification of *The Sesquilinear Form and the Conjugation* reads on $\ell$ and not on $h$.
 
 ### The Central Case
 
 **Proposition.** The two reductions of the two $A$-valued forms agree,
 
 $$
-\varphi(\Phi(x,y)) = \varphi(\Psi(x,y))
+\ell(\Phi(x,y)) = \ell(\Psi(x,y))
 $$
 
-for all $x, y$, exactly when $\varphi$ is central on products, $\varphi(uv) = \varphi(vu)$.
+for all $x, y$, exactly when $\ell$ is central on products, $\ell(uv) = \ell(vu)$.
 
-*Proof.* The identity for all $x, y$ is $\varphi(xy^{*}) = \varphi(y^{*}x)$, and since $y \mapsto y^{*}$ is a bijection of $A$, writing $v = y^{*}$ turns it into $\varphi(xv) = \varphi(vx)$ for all $x, v$, which is the centrality; conversely the centrality gives the identity by the same substitution.
+*Proof.* The identity for all $x, y$ is $\ell(xy^{*}) = \ell(y^{*}x)$, and since $y \mapsto y^{*}$ is a bijection of $A$, writing $v = y^{*}$ turns it into $\ell(xv) = \ell(vx)$ for all $x, v$, which is the centrality; conversely the centrality gives the identity by the same substitution.
 
-**Remark.** The two $A$-valued forms therefore agree on the scalar side exactly on the central functionals, which is the class for which the trace pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* coincides with the reduction $h_{\tau}(x,y) = \tau(y^{*}x)$, the sesqui-symmetry $\varphi(y,x) = \varsigma(\varphi(x,y))$ of that section being the Hermitian property read on the pairing; the trace of the matrix model is the model of the class.
+**Remark.** The two $A$-valued forms therefore agree on the scalar side exactly on the central functionals, which is the class for which the trace pairing $\ell(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* coincides with the reduction $h_{\tau}(x,y) = \tau(y^{*}x)$, the sesqui-symmetry $\ell(y,x) = \varsigma(\ell(x,y))$ of that section being the Hermitian property read on the pairing; the trace of the matrix model is the model of the class.
 
 ## Nondegeneracy
 
@@ -200,11 +200,11 @@ $$
 \Psi(x,y) = yx, \qquad \Phi(x,y) = xy,
 $$
 
-both $A$-bilinear, and the reduction $\varphi \circ \Psi$ is the bilinear form $\varphi(yx)$ of *Bilinear Forms* associated with the functional $\varphi$; the two radicals are the two annihilators of the algebra.
+both $A$-bilinear, and the reduction $\ell \circ \Psi$ is the bilinear form $\ell(yx)$ of *Bilinear Forms* associated with the functional $\ell$; the two radicals are the two annihilators of the algebra.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the two slot rules coincide and the forms are $A$-bilinear; with $* = \mathrm{id}$ the involution is the identity, so $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$, the two orientations of the multiplication. The reduction is the composite of the product with $\varphi$, which is the form $\varphi(yx)$ of the bilinear layer, and the radicals are the theorem of the previous section with $* = \mathrm{id}$.
+*Proof.* With $\varsigma = \mathrm{id}$ the two slot rules coincide and the forms are $A$-bilinear; with $* = \mathrm{id}$ the involution is the identity, so $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$, the two orientations of the multiplication. The reduction is the composite of the product with $\ell$, which is the form $\ell(yx)$ of the bilinear layer, and the radicals are the theorem of the previous section with $* = \mathrm{id}$.
 
-**Remark.** The collapse is total at the level of the forms: the pair $(\Phi,\Psi)$ becomes the two products of the algebra, the Hermitian property becomes the commutativity of the two orientations, which holds only when $A$ is commutative, and the scalar forms become the forms $\varphi(yx)$ of the bilinear layer. The one thing the collapse does not remove is the asymmetry of the two slots: over a noncommutative algebra the two forms $\Phi$ and $\Psi$ are the two products $xy$ and $yx$, and they agree exactly when the algebra is commutative, which is the bilinear shadow of the exchange relation.
+**Remark.** The collapse is total at the level of the forms: the pair $(\Phi,\Psi)$ becomes the two products of the algebra, the Hermitian property becomes the commutativity of the two orientations, which holds only when $A$ is commutative, and the scalar forms become the forms $\ell(yx)$ of the bilinear layer. The one thing the collapse does not remove is the asymmetry of the two slots: over a noncommutative algebra the two forms $\Phi$ and $\Psi$ are the two products $xy$ and $yx$, and they agree exactly when the algebra is commutative, which is the bilinear shadow of the exchange relation.
 
 ## Examples
 
@@ -226,7 +226,7 @@ the matrix Hermitian with the positive diagonal $(1,5)$. The verdict: the $A$-va
 
 ### The Field and the Split Algebra
 
-**Example (the field with an involution, verdict: nondegenerate and anisotropic).** Let $A = K$ be a field with an involution $\varsigma$ and let $* = \varsigma$ on $K$. Then $\Psi(x,y) = \varsigma(y)x$, the diagonal is $\varsigma(x)x \in K^{\varsigma}$, and the form is nondegenerate: the radical is $\{x : Kx = 0\} = 0$, since $K$ is a field and $y \mapsto \varsigma(y)$ is a bijection. The form is anisotropic as well, $\varsigma(x)x = 0$ forcing $x = 0$, because $\varsigma(x)x = 0$ with $x \neq 0$ would exhibit $x$ as a zero divisor; for $\mathbb{C}$ with the conjugation the diagonal is $\lvert x\rvert^{2}$, and the scalar reductions are $h_{\varphi}(x,y) = \varphi(\varsigma(y)x)$. The verdict: on a field the $A$-valued form is nondegenerate and anisotropic at once, in contrast with the split algebra below, where the two properties separate.
+**Example (the field with an involution, verdict: nondegenerate and anisotropic).** Let $A = K$ be a field with an involution $\varsigma$ and let $* = \varsigma$ on $K$. Then $\Psi(x,y) = \varsigma(y)x$, the diagonal is $\varsigma(x)x \in K^{\varsigma}$, and the form is nondegenerate: the radical is $\{x : Kx = 0\} = 0$, since $K$ is a field and $y \mapsto \varsigma(y)$ is a bijection. The form is anisotropic as well, $\varsigma(x)x = 0$ forcing $x = 0$, because $\varsigma(x)x = 0$ with $x \neq 0$ would exhibit $x$ as a zero divisor; for $\mathbb{C}$ with the conjugation the diagonal is $\lvert x\rvert^{2}$, and the scalar reductions are $h_{\ell}(x,y) = \ell(\varsigma(y)x)$. The verdict: on a field the $A$-valued form is nondegenerate and anisotropic at once, in contrast with the split algebra below, where the two properties separate.
 
 **Example (the split algebra, verdict: nondegenerate and isotropic, the two conditions differ).** Let $A = R \times R$ with the componentwise product and the swap involution $(a,b)^{*} = (b,a)$. Then
 
@@ -254,9 +254,9 @@ vanishes for every zero divisor, $a = 0$ or $b = 0$. The verdict: an $A$-valued 
 
 An associative $R$-algebra $A$ with a $\varsigma$-semilinear involution $*$ carries two $A$-**valued Hermitian forms**, the form of the sesqualgebra $\Psi(x,y) = y^{*}x$ and the form of the product $\Phi(x,y) = xy^{*} = x \star y$, both biadditive, $R$-linear in the first slot and $\varsigma$-semilinear in the second, both Hermitian, $\Psi(y,x) = \Psi(x,y)^{*}$ and the same for $\Phi$, and exchanged by the involution applied to both arguments, $\Psi(x,y) = \Phi(y^{*},x^{*})$. The product of the sesqualgebra **is** the form $\Phi$, so the compatibility of the entry is an identity of the algebra for the companion form and not an extra axiom, and the pair is a single object read through the involution, in the two conventions of the two slots: $\Psi$ is the sesqualgebra convention, linear in the first slot, and the convention of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, which is the same form with the arguments exchanged, is semilinear in the first slot: with the anti-involution $c = *$ that sibling's form is $h_*(x,y) = x^{*}y = \Psi(y,x)$.
 
-The scalar forms of the layer are the reductions of $\Psi$ by the $R$-linear functionals, $h_{\varphi}(x,y) = \varphi(y^{*}x) = \varphi(\Psi(x,y))$, and the passage $\varphi \mapsto \varphi \circ \Psi$ is a bijection onto the compatible forms, with inverse $h \mapsto h(\cdot,1)$; the two $A$-valued forms have the same reduction exactly for the functionals central on products, which is the class for which the trace pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* agrees with the reduction $h_{\tau}$. **The diagonals** are $\Psi(x,x) = x^{*}x$ and $\Phi(x,x) = xx^{*} = x \star x$, both Hermitian, and the polarisation of the form splits into the two mixed terms $\Psi(x,y)$ and $\Psi(x,y)^{*}$.
+The scalar forms of the layer are the reductions of $\Psi$ by the $R$-linear functionals, $h_{\ell}(x,y) = \ell(y^{*}x) = \ell(\Psi(x,y))$, and the passage $\ell \mapsto \ell \circ \Psi$ is a bijection onto the compatible forms, with inverse $h \mapsto h(\cdot,1)$; the two $A$-valued forms have the same reduction exactly for the functionals central on products, which is the class for which the trace pairing $\ell(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* agrees with the reduction $h_{\tau}$. **The diagonals** are $\Psi(x,x) = x^{*}x$ and $\Phi(x,x) = xx^{*} = x \star x$, both Hermitian, and the polarisation of the form splits into the two mixed terms $\Psi(x,y)$ and $\Psi(x,y)^{*}$.
 
-**The radicals are the annihilators**, $\operatorname{rad}(\Psi) = \{x : Ax = 0\}$ and $\operatorname{rad}(\Phi) = \{x : xA = 0\}$, the left and the right annihilators of the algebra in the sense of *Left and Right Multiplication in a Ring*, §*The annihilators*, two-sided ideals carried onto each other by the involution, so that their vanishing — and hence the nondegeneracy of the two forms — is a single condition; the vanishing of the annihilator is one clause of the objects of **full type**, so full type gives the nondegeneracy of both forms and the converse fails, the two-element ring $\mathbb{Z}/2\mathbb{Z}$ over $R = \mathbb{Z}$ with the identity involution being nondegenerate and not of full type because it is not faithful over $R$, and the ideal $(x)$ of $K[x]$ being the non-unital variant; the nondegeneracy of the *scalar* forms is the independent condition, as the zero product shows. A **$*$-invariant two-sided ideal** $J$, $J^{*} = J$, is exactly what is needed to descend the two forms to the quotient $A/J$ and to keep the algebra and the involution on it, and the radical of the descended form is the annihilator of the quotient. At $\varsigma = \mathrm{id}$ and $* = \mathrm{id}$ the pair collapses to the two products $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$ and the scalar forms are the bilinear forms $\varphi(yx)$ of *Bilinear Forms*, the two orientations agreeing only on a commutative algebra.
+**The radicals are the annihilators**, $\operatorname{rad}(\Psi) = \{x : Ax = 0\}$ and $\operatorname{rad}(\Phi) = \{x : xA = 0\}$, the left and the right annihilators of the algebra in the sense of *Left and Right Multiplication in a Ring*, §*The annihilators*, two-sided ideals carried onto each other by the involution, so that their vanishing — and hence the nondegeneracy of the two forms — is a single condition; the vanishing of the annihilator is one clause of the objects of **full type**, so full type gives the nondegeneracy of both forms and the converse fails, the two-element ring $\mathbb{Z}/2\mathbb{Z}$ over $R = \mathbb{Z}$ with the identity involution being nondegenerate and not of full type because it is not faithful over $R$, and the ideal $(x)$ of $K[x]$ being the non-unital variant; the nondegeneracy of the *scalar* forms is the independent condition, as the zero product shows. A **$*$-invariant two-sided ideal** $J$, $J^{*} = J$, is exactly what is needed to descend the two forms to the quotient $A/J$ and to keep the algebra and the involution on it, and the radical of the descended form is the annihilator of the quotient. At $\varsigma = \mathrm{id}$ and $* = \mathrm{id}$ the pair collapses to the two products $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$ and the scalar forms are the bilinear forms $\ell(yx)$ of *Bilinear Forms*, the two orientations agreeing only on a commutative algebra.
 
 ## Summary of Notation
 
@@ -267,7 +267,7 @@ The scalar forms of the layer are the reductions of $\Psi$ by the $R$-linear fun
 | $\Psi(y,x) = \Psi(x,y)^{*}$ | the Hermitian property, and its analogue for $\Phi$ |
 | $\Psi(x,y) = \Phi(y^{*},x^{*})$ | the two forms exchanged by the involution |
 | $\Psi(x,x) = x^{*}x$, $\Phi(x,x) = xx^{*}$ | the diagonals, Hermitian elements |
-| $h_{\varphi}(x,y) = \varphi(y^{*}x) = \varphi(\Psi(x,y))$ | the scalar reduction, the compatible form of a functional $\varphi$ |
+| $h_{\ell}(x,y) = \ell(y^{*}x) = \ell(\Psi(x,y))$ | the scalar reduction, the compatible form of a functional $\ell$ |
 | $\operatorname{rad}(\Psi) = \{x : Ax = 0\}$ | the left annihilator, a two-sided ideal |
 | $\operatorname{rad}(\Phi) = \{x : xA = 0\}$ | the right annihilator, a two-sided ideal |
 | $J^{*} = J$ | the invariant ideal for which the forms descend to $A/J$ |

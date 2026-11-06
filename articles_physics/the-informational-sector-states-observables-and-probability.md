@@ -35,16 +35,16 @@ $$
 the fixed space of the Hermitian conjugation. In coordinates it is the set of elements with a real scalar coefficient and imaginary vector coefficients,
 
 $$
-\tilde R_\psi=c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z,
+\tilde R_\Psi=c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z,
 $$
 
 with $r_t,r'_x,r'_y,r'_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r_t=t$ and $(r'_x,r'_y,r'_z)=(r'_{x},r'_{y},r'_{z})$, so the general element is
 
 $$
-\tilde R_\psi=c r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr).
+\tilde R_\Psi=c r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr).
 $$
 
-The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. Every element of the sector is its own Hermitian part, $\tilde Q=\tilde R_\psi$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
+The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. Every element of the sector is its own Hermitian part, $\tilde Q=\tilde R_\Psi$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
 
 The sector is not a subalgebra: the product of two Hermitian elements is Hermitian exactly when they commute, and the commutator of two of them lies in $\mathbb{B}_{\Phi}$. The sector is a **special Jordan algebra** under the symmetrised product $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and it is not a Lie algebra.
 
@@ -75,32 +75,32 @@ They are the **pure states** of the sector, and they are the biquaternion analog
 The biquaternion norm on the sector is
 
 $$
-\langle\tilde R_\psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\psi\rvert^2=c^2 r_t^2-{r'_{x}}^2-{r'_{y}}^2-{r'_{z}}^2,
+\langle\tilde R_\Psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\Psi\rvert^2=c^2 r_t^2-{r'_{x}}^2-{r'_{y}}^2-{r'_{z}}^2,
 $$
 
 of signature $(1,3)$: one positive temporal direction and three negative spatial ones. It is indefinite, and it is not the positive form that a density matrix would suggest.
 
-Every Hermitian element has a closed-form spectrum. Write $\tilde R_\psi=c r_t e_t+i\vec r_\psi$ with $c r_t$ and $\vec r_\psi$ real, and let $\vec u_\psi=\vec r_\psi/\lvert\vec r_\psi\rvert$ for $\vec r_\psi\neq0$. Then
+Every Hermitian element has a closed-form spectrum. Write $\tilde R_\Psi=c r_t e_t+i\vec r_\Psi$ with $c r_t$ and $\vec r_\Psi$ real, and let $\vec u_\Psi=\vec r_\Psi/\lvert\vec r_\Psi\rvert$ for $\vec r_\Psi\neq0$. Then
 
 $$
-\tilde R_\psi=\bigl(c r_t+\lvert\vec r_\psi\rvert\bigr)\tilde\Pi_1(\vec u_\psi)+\bigl(c r_t-\lvert\vec r_\psi\rvert\bigr)\tilde\Pi_2(\vec u_\psi),
+\tilde R_\Psi=\bigl(c r_t+\lvert\vec r_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_\Psi)+\bigl(c r_t-\lvert\vec r_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_\Psi),
 $$
 
 with the eigenvalues
 
 $$
-\boxed{\;\lambda_\pm=c r_t\pm\lvert\vec r_\psi\rvert\;}.
+\boxed{\;\lambda_\pm=c r_t\pm\lvert\vec r_\Psi\rvert\;}.
 $$
 
 The Hermitian form against the unit and the biquaternion norm read
 
 $$
-\langle\tilde R_\psi,e_t\rangle_{*}=c r_t,\qquad 2\langle\tilde R_\psi,e_t\rangle_{*}=2c r_t=\lambda_++\lambda_-,\qquad \langle\tilde R_\psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\psi\rvert^2=\lambda_+\lambda_-,
+\langle\tilde R_\Psi,e_t\rangle_{*}=c r_t,\qquad 2\langle\tilde R_\Psi,e_t\rangle_{*}=2c r_t=\lambda_++\lambda_-,\qquad \langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\Psi\rvert^2=\lambda_+\lambda_-,
 $$
 
-whose middle entry is the trace in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\psi)=2c r_t$.
+whose middle entry is the trace in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\Psi)=2c r_t$.
 
-The element is **positive** exactly when $c r_t\geq\lvert\vec r_\psi\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: the norm is negative exactly when the two eigenvalues have opposite signs.
+The element is **positive** exactly when $c r_t\geq\lvert\vec r_\Psi\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: the norm is negative exactly when the two eigenvalues have opposite signs.
 
 The **state slice**, which the $2\times2$ reading calls the trace-one slice, is the family
 
@@ -146,7 +146,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle=a_tb_t+(\vec p,\vec q).
 $$
 
-This pair is positive definite of signature $(4,0)$. The Hermitian form is the probability pairing and is defined on the whole algebra; the plain form is its restriction to the sector and needs no matrix: $\mathrm{Sc}$ is the coefficient of $e_t$. Its diagonal is the plain norm, $\langle\tilde R_\psi\rangle=\mathrm{Sc}(\tilde R_\psi^2)=c^2r_t^2+\lvert\vec r_\psi\rvert^2$, positive definite. The Born weight is always written with the star.
+This pair is positive definite of signature $(4,0)$. The Hermitian form is the probability pairing and is defined on the whole algebra; the plain form is its restriction to the sector and needs no matrix: $\mathrm{Sc}$ is the coefficient of $e_t$. Its diagonal is the plain norm, $\langle\tilde R_\Psi\rangle=\mathrm{Sc}(\tilde R_\Psi^2)=c^2r_t^2+\lvert\vec r_\Psi\rvert^2$, positive definite. The Born weight is always written with the star.
 
 **The interval pair.** The quaternionic form and the Krein form coincide on the sector,
 
@@ -154,7 +154,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=a_tb_t-(\vec p,\vec q).
 $$
 
-This pair is indefinite of signature $(1,3)$: the interval. Its diagonal is the biquaternion norm $\langle\tilde R_\psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\psi\rvert^2$. It is a different quadratic form from the diagonal of the plain form: the first is positive definite, the second indefinite, and neither normalises a state.
+This pair is indefinite of signature $(1,3)$: the interval. Its diagonal is the biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\Psi\rvert^2$. It is a different quadratic form from the diagonal of the plain form: the first is positive definite, the second indefinite, and neither normalises a state.
 
 The reason for the collapse is the definition of the sector: the star is the identity on it, so the sesquilinear form equals the bilinear one in the second slot. The sector carries **no scalar area pairing**, because multiplication by $i$ carries $\mathbb{B}_{\Psi}$ out of itself, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; the imaginary parts of the four forms vanish identically.
 
@@ -175,10 +175,10 @@ The sector is the space of the operators of a two-state system, and its four fam
 
 | Family | Condition | Shape |
 | --- | --- | --- |
-| Observables | $\tilde R_\psi\in\mathbb{B}_{\Psi}$ | the whole sector, real dimension four |
-| Effects | $0\leq\tilde R_\psi\leq e_t$, that is $\lvert c r_t-\tfrac12\rvert+\lvert\vec r_\psi\rvert\leq\tfrac12$ | the operator interval |
-| States | $\langle\tilde R_\psi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\tilde R_\psi\geq0$ | the Bloch ball, $\lvert\vec r_\psi\rvert\leq\tfrac12$ |
-| Pure states | $\langle\tilde R_\psi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\langle\tilde R_\psi\rangle_{\natural}=0$ | the Bloch sphere, $\lvert\vec r_\psi\rvert=\tfrac12$ |
+| Observables | $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ | the whole sector, real dimension four |
+| Effects | $0\leq\tilde R_\Psi\leq e_t$, that is $\lvert c r_t-\tfrac12\rvert+\lvert\vec r_\Psi\rvert\leq\tfrac12$ | the operator interval |
+| States | $\langle\tilde R_\Psi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\tilde R_\Psi\geq0$ | the Bloch ball, $\lvert\vec r_\Psi\rvert\leq\tfrac12$ |
+| Pure states | $\langle\tilde R_\Psi,e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ and $\langle\tilde R_\Psi\rangle_{\natural}=0$ | the Bloch sphere, $\lvert\vec r_\Psi\rvert=\tfrac12$ |
 
 The nesting is strict: pure states are states, states are effects, and effects are observables. The roles are not exclusive, and the sector does not partition itself into states and observables. One and the same element can be read as a state, as an effect and as an observable, and the role is fixed by the conditions imposed on it.
 
@@ -224,7 +224,7 @@ $$
 \langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})>0 ,
 $$
 
-and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde R_\psi=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde R_\psi$ are the singular values of $\tilde Q$.
+and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde R_\Psi=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde R_\Psi$ are the singular values of $\tilde Q$.
 
 Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for $*$-unitary $\tilde W$, so the right $*$-unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left $*$-unitary is a change of frame. And it is **stratified** by the rank of the operator:
 
@@ -243,15 +243,15 @@ The direction is the one that is easy to get backwards: the reversible operators
 Every Hermitian element is a real combination of two orthogonal idempotents,
 
 $$
-\tilde R_\psi=\lambda_+\tilde\Pi_1(\vec u_\psi)+\lambda_-\tilde\Pi_2(\vec u_\psi),\qquad \lambda_\pm=c r_t\pm\lvert\vec r_\psi\rvert,
+\tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi),\qquad \lambda_\pm=c r_t\pm\lvert\vec r_\Psi\rvert,
 $$
 
-with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $c r_t e_t$ exactly when $\vec r_\psi=0$.
+with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $c r_t e_t$ exactly when $\vec r_\Psi=0$.
 
 The scalar part and the biquaternion norm read
 
 $$
-2\,\mathrm{Sc}(\tilde R_\psi)=\lambda_++\lambda_-,\qquad \langle\tilde R_\psi\rangle_{\natural}=\lambda_+\lambda_-,
+2\,\mathrm{Sc}(\tilde R_\Psi)=\lambda_++\lambda_-,\qquad \langle\tilde R_\Psi\rangle_{\natural}=\lambda_+\lambda_-,
 $$
 
 the first of which is the trace in the $2\times2$ image. The trace is the sum of the eigenvalues and the biquaternion norm is their product, so that norm is indefinite: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogue of the norm is a sum of squares. **Positivity is a statement about the eigenvalues, not about the norm**, and the spectral decomposition is what makes the statement visible.
@@ -260,7 +260,7 @@ Read physically, the two eigenvalues are the two possible readings of the observ
 
 **The boundary.** The spectrum is the set of possible readings, not the distribution of readings. The distribution requires a state, and the state is a separate element of the same sector.
 
-**Normal is not automatic.** The readout above is the Hermitian case of the eigenvalue decomposition. For an element with distinct eigenvalues, the eigenprojections are Hermitian exactly when the element is normal, $\tilde R_\psi\tilde R_\psi^{*}=\tilde R_\psi^{*}\tilde R_\psi$. Otherwise the pair is still complete and $\tilde\Pi_+\tilde\Pi_-=0$, but the idempotents are not Hermitian, the left and right eigenbases differ, and the coefficients are read with a biorthogonal pairing rather than with the Born form. The probabilities of this article are therefore those of a normal observable, and the positivity statements do not extend to a general element without normality.
+**Normal is not automatic.** The readout above is the Hermitian case of the eigenvalue decomposition. For an element with distinct eigenvalues, the eigenprojections are Hermitian exactly when the element is normal, $\tilde R_\Psi\tilde R_\Psi^{*}=\tilde R_\Psi^{*}\tilde R_\Psi$. Otherwise the pair is still complete and $\tilde\Pi_+\tilde\Pi_-=0$, but the idempotents are not Hermitian, the left and right eigenbases differ, and the coefficients are read with a biorthogonal pairing rather than with the Born form. The probabilities of this article are therefore those of a normal observable, and the positivity statements do not extend to a general element without normality.
 
 The two pairings are worth separating. The **orthogonal** pairing is the Born form $\langle\tilde\Pi_\pm,\tilde{Ϛ}\rangle_{*}$: it uses the Hermitian eigenprojections of a normal element and the Hermitian state, and it is positive on the sector. The **biorthogonal** pairing uses the right and left eigenbases, $\ell_\pm^{\dagger}r_\pm=1$ and $\ell_+^{\dagger}r_-=0$, and the projectors $P_\pm=r_\pm\ell_\pm^{\dagger}$, which are not Hermitian in general; the weights are $\ell_\pm^{\dagger}\tilde{Ϛ} r_\pm$, and they are not positive for every state. The two coincide exactly when the element is normal. The biorthogonal calculus, the Petermann factor and the exceptional-point limit are *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*.
 
@@ -288,16 +288,16 @@ The dichotomy between reversible and irreversible actions is therefore intrinsic
 
 ### The Born Rule Is the Normalised Hermitian Form
 
-For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec u)$ and an observable $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$, the state is normalised against the unit, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, and the Born weight is
+For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec u)$ and an observable $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$, the state is normalised against the unit, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, and the Born weight is
 
 $$
-\langle\tilde R_\psi\rangle_{\tilde{Ϛ},*}
-=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
-=c r_t+\vec u\cdot\vec r_\psi.
+\langle\tilde R_\Psi\rangle_{\tilde{Ϛ},*}
+=\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+=c r_t+\vec u\cdot\vec r_\Psi.
 $$
 
-The star is the Hermitian conjugation. It changes no number here, since $\tilde R_\psi^{*}=\tilde R_\psi$ and $\tilde{Ϛ}^{*}=\tilde{Ϛ}$ on $\mathbb{B}_{\Psi}$, but it is what makes the pairing positive definite on the whole algebra: $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, while the plain form is positive only on $\mathbb{B}_{\Psi}$ and negative on $\mathbb{B}_{\Phi}$. On the sector the two coincide, and the plain form is the restriction of the Hermitian form.
+The star is the Hermitian conjugation. It changes no number here, since $\tilde R_\Psi^{*}=\tilde R_\Psi$ and $\tilde{Ϛ}^{*}=\tilde{Ϛ}$ on $\mathbb{B}_{\Psi}$, but it is what makes the pairing positive definite on the whole algebra: $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$, while the plain form is positive only on $\mathbb{B}_{\Psi}$ and negative on $\mathbb{B}_{\Phi}$. On the sector the two coincide, and the plain form is the restriction of the Hermitian form.
 
 This is the standard spin-1/2 expectation value along the direction $\vec u$. For the two idempotents $\tilde\Pi_{1,2}(\vec u)$ and a general state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, the same pairing gives
 
@@ -338,9 +338,9 @@ The mathematics of the sector and its action on the material sector is structura
 | State space $\mathbb{C}^2$ | spinor module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ |
 | Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ (Hermitian, positive, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$; trace one in the image) |
 | Pure state $\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}\langle\tilde{Ξ}_{\mathrm{sp}}\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
-| Observable (Hermitian operator) | Hermitian element $\tilde R_\psi\in\mathbb{B}_{\Psi}$ |
+| Observable (Hermitian operator) | Hermitian element $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ |
 | $*$-Unitary gate $U$ | matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
-| Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the trace enters only at normalisation |
+| Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$; the trace enters only at normalisation |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}\tilde U^{*}$ |
 | Projective measurement $\rho\mapsto P\rho P$ | Hermitian idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
 
@@ -356,7 +356,7 @@ The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac
 
 The sector carries the algebra of observables of a spin-1/2 system, and the biquaternion algebra widens the carrier without changing the state space. In non-relativistic spin-1/2 physics the state space is $\mathbb{C}^2$, the observables are the Hermitian $2\times2$ matrices, and the group that preserves the state space is the compact $U(2)$. In the biquaternion framework the state space is the spinor module of $\mathbb{B}$, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$, and the group that preserves the state slice is again $U(2)$.
 
-The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{B}_{\Phi}$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec r_\psi\in\mathbb{B}_{\Psi}$, non-compact. The two triples generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a state off the state slice. The central direction $i e_t$ generates the $\mathfrak{u}(1)$ phase and is not part of the Lorentz algebra. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
+The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{B}_{\Phi}$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec r_\Psi\in\mathbb{B}_{\Psi}$, non-compact. The two triples generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a state off the state slice. The central direction $i e_t$ generates the $\mathfrak{u}(1)$ phase and is not part of the Lorentz algebra. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
 
 The framework can therefore be read as a relativistic generalisation of the spin-1/2 formalism at the level of the algebra: the observables of $\mathbb{B}_{\Psi}$ include the boost generators alongside the central scalar, the rotation generators lie in the material sector, and the Lorentz group is generated by the rotations of $\mathbb{B}_{\Phi}$ and the boosts of $\mathbb{B}_{\Psi}$. The state space itself remains the non-relativistic Bloch ball.
 
@@ -385,7 +385,7 @@ Eight statements of this article are not properties of the vector space $\mathbb
 | The Born pairing is the Hilbert–Schmidt pairing | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)^{\dagger}\mathsf{M}_2(\tilde Q_1)\bigr)$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
 | The form makes $\mathbb{B}$ a Hilbert space | $\operatorname{Sc}(\tilde Q_1^{*}\tilde Q_2)$ is positive definite of signature $(8,0)$ | [The Completion of a Sesqualgebra with a Form](../articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html) |
 | The level sets are the groups the physics uses | $\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The operator dictionary is the adjointness dictionary | observables $\mathbb{B}_{\Psi}$, generators $\mathbb{B}_{\Phi}$, unitaries $U(2)$; $\tilde R_\psi=iA$ for $A\in\mathbb{B}_{\Phi}$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
+| The operator dictionary is the adjointness dictionary | observables $\mathbb{B}_{\Psi}$, generators $\mathbb{B}_{\Phi}$, unitaries $U(2)$; $\tilde R_\Psi=iA$ for $A\in\mathbb{B}_{\Phi}$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
 | One operator carries both evolutions | $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a $*$-unitary or an idempotent parameter | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
 | Projections come from one sector only | no non-zero idempotent lies in $\mathbb{B}_{\Phi}$ | [Idempotents](../articles_maths/idempotents.html), [Ideals and the Peirce Decomposition](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html) |
 | Two pairings, because one is not Hermitian | interval $\langle\cdot,\cdot\rangle_{\natural}$, probability $\langle\cdot,\cdot\rangle_{*}$; on $\mathbb{B}_{\Phi}$ they coincide on the space part and differ in the sign of the time part, on $\mathbb{B}_{\Psi}$ they coincide on the time part and differ in the sign of the space part | [Hermitian Forms over Algebras and Norms](../articles_maths/hermitian-forms-over-algebras-and-norms.html), [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
@@ -422,7 +422,7 @@ The open questions are concrete.
 
 **A mixed state.** $\tilde{Ϛ}=\tfrac12(e_t+\tfrac12 i\vec e_z)$ has $\lvert\vec r\rvert=\tfrac12$, so it is positive and mixed, with $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac{3}{16}>0$. It is not a zero divisor. At $\vec r=0$ the state is $\tfrac12e_t$, the maximally mixed state.
 
-**An observable.** $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ has eigenvalues $c r_t\pm\lvert\vec r_\psi\rvert$ and spectral decomposition $\tilde R_\psi=\lambda_+\tilde\Pi_1(\vec u_\psi)+\lambda_-\tilde\Pi_2(\vec u_\psi)$. For $c r_t=1$ and $\lvert\vec r_\psi\rvert=\tfrac12$ the readings are $\tfrac32$ and $\tfrac12$; for $\lvert\vec r_\psi\rvert=2$ they are $3$ and $-1$, and the element is not positive.
+**An observable.** $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ has eigenvalues $c r_t\pm\lvert\vec r_\Psi\rvert$ and spectral decomposition $\tilde R_\Psi=\lambda_+\tilde\Pi_1(\vec u_\Psi)+\lambda_-\tilde\Pi_2(\vec u_\Psi)$. For $c r_t=1$ and $\lvert\vec r_\Psi\rvert=\tfrac12$ the readings are $\tfrac32$ and $\tfrac12$; for $\lvert\vec r_\Psi\rvert=2$ they are $3$ and $-1$, and the element is not positive.
 
 **The identity.** $e_t$ is Hermitian, idempotent, and has scalar part one, which the $2\times2$ reading calls trace two. It is the identity operator, not a state: its scalar part is one, and a state has scalar part $\tfrac12$ (trace one).
 
@@ -434,7 +434,7 @@ The open questions are concrete.
 | $\tilde U_{\mathrm b}$ | Hermitian, unit norm | Lorentz boost rotor |
 | $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, $\mathrm{Sc}=\tfrac12$ (trace one) | pure state |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | Hermitian, positive, $\mathrm{Sc}=\tfrac12$ (trace one) | mixed state |
-| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | Hermitian, eigenvalues $c r_t\pm\lvert\vec r_\psi\rvert$ | observable |
+| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | Hermitian, eigenvalues $c r_t\pm\lvert\vec r_\Psi\rvert$ | observable |
 | $\tilde Q\tilde Q^{*}$ | Hermitian, positive scalar part | weight of an element |
 
 ## Limits
@@ -443,14 +443,14 @@ The article establishes the algebra of the sector and its interpretation as a tw
 
 ## Summary
 
-- The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with a real time and an imaginary space, $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$.
+- The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with a real time and an imaginary space, $\tilde R_\Psi=c r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$.
 - Its biquaternion norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the biquaternion norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
 - The state slice (normalised by $\langle\tilde{Ϛ},e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
 - The Bloch ball is the state slice of the future light cone of the biquaternion norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
 - Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.
-- The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=2\operatorname{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
+- The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=2\operatorname{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
 - The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase.
 - The sector is phase-free in the scalar sense, but its vector product carries the coherence.
 - The physical realisation of the sector is a hypothesis, with eight open questions.
@@ -460,13 +460,13 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}_{\Psi}$ | the Hermitian subspace, the informational sector |
-| $\tilde R_\psi=c r_t e_t+i\vec r_\psi$ | an informational element, the Hermitian part |
+| $\tilde R_\Psi=c r_t e_t+i\vec r_\Psi$ | an informational element, the Hermitian part |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the pure-state idempotents |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state when $\lvert\vec r\rvert\leq1$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$; the Bloch vector $\vec r$ |
-| $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ | an observable, with eigenvalues $c r_t\pm\lvert\vec r_\psi\rvert$ |
+| $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ | an observable, with eigenvalues $c r_t\pm\lvert\vec r_\Psi\rvert$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}$ | the Hermitian form and its norm, positive definite on $\mathbb{B}$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | the plain form and its norm, the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$ |
-| $\langle\tilde R_\psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\psi\rvert^2$ | the quaternionic norm, of signature $(1,3)$ |
+| $\langle\tilde R_\Psi\rangle_{\natural}=c^2r_t^2-\lvert\vec r_\Psi\rvert^2$ | the quaternionic norm, of signature $(1,3)$ |
 | $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})=2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\operatorname{Tr}(\tilde Q)=2\operatorname{Sc}(\tilde Q)$ | the trace, the $2\times2$ reading of the Hermitian form |
 | $\Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich |
 | $\tilde Q\tilde Q^{*}=e_t$ | the matrix-unitary condition, $U(2)$ |

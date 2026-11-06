@@ -34,7 +34,7 @@ The article is organized as follows. The next section fixes the wedge, the Rindl
 Work in the material sector and restrict to the $x$--$r'_t$ plane, setting $y=z=0$. A point is
 
 $$
-\tilde R_\varphi = i\,c r'_{t}\,e_t + r_x\,\vec e_x \in \mathbb{B}_{\Phi}, \qquad \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 + r_x^2 .
+\tilde R_\Phi = i\,c r'_{t}\,e_t + r_x\,\vec e_x \in \mathbb{B}_{\Phi}, \qquad \langle\tilde R_\Phi\rangle_{\natural} = -c^2{r'_{t}}^2 + r_x^2 .
 $$
 
 The **right Rindler wedge** is the region
@@ -46,18 +46,18 @@ $$
 and the **left wedge** is its mirror $L=\{(r'_t,r_x): r_x<-|c r'_{t}|\}$. The boundary
 
 $$
-\langle\tilde R_\varphi\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad x = \pm c r'_{t}
+\langle\tilde R_\Phi\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad x = \pm c r'_{t}
 $$
 
-is the light cone. In the algebra the light cone of $\mathbb{B}_{\Phi}$ is the **zero-divisor cone**: a nonzero $\tilde R_\varphi\in\mathbb{B}_{\Phi}$ satisfies $\tilde R_\varphi\tilde{R}_\varphi^{\natural}=0$ exactly on $\langle\tilde R_\varphi\rangle_{\natural}=0$ (the companion article on $\mathbb{B}_{\Phi}$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
+is the light cone. In the algebra the light cone of $\mathbb{B}_{\Phi}$ is the **zero-divisor cone**: a nonzero $\tilde R_\Phi\in\mathbb{B}_{\Phi}$ satisfies $\tilde R_\Phi\tilde{R}_\Phi^{\natural}=0$ exactly on $\langle\tilde R_\Phi\rangle_{\natural}=0$ (the companion article on $\mathbb{B}_{\Phi}$ establishes this and identifies its two components). The horizon of an accelerated observer is therefore not an extra geometric object imported into the algebra: it is the algebraic null cone of the material sector.
 
-Inside $R$ the biquaternion norm $N=\langle\tilde R_\varphi\rangle_{\natural}$ is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
+Inside $R$ the biquaternion norm $N=\langle\tilde R_\Phi\rangle_{\natural}$ is positive, $N>0$. Introduce **Rindler coordinates** $(\rho,\eta)$ by
 
 $$
 x = \rho\cosh\eta, \qquad c r'_{t} = \rho\sinh\eta, \qquad \rho>0,\ \eta\in\mathbb{R},
 $$
 
-so that $\tilde R_\varphi = i\rho\sinh\eta\,e_t+\rho\cosh\eta\,\vec e_x$ and $\langle\tilde R_\varphi\rangle_{\natural}=\rho^2$. The curves of constant $\rho$ are the orbits of a uniformly accelerated observer. Their proper time $\tau$ and proper acceleration $a$ are
+so that $\tilde R_\Phi = i\rho\sinh\eta\,e_t+\rho\cosh\eta\,\vec e_x$ and $\langle\tilde R_\Phi\rangle_{\natural}=\rho^2$. The curves of constant $\rho$ are the orbits of a uniformly accelerated observer. Their proper time $\tau$ and proper acceleration $a$ are
 
 $$
 c\,d\tau = \rho\,d\eta, \qquad a = \frac{c^2}{\rho},
@@ -90,12 +90,12 @@ $$
 which is Hermitian and of unit norm, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$. It acts on the material sector by **rotor conjugation**
 
 $$
-\tilde R_\varphi \longmapsto \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\,\tilde R_\varphi\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}}),
+\tilde R_\Phi \longmapsto \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\,\tilde R_\Phi\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}}),
 $$
 
 where we have used $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$. This is the two-sided action of the companion article on curved spacetime, not the commutator: for the boost generator the two differ, and it is the two-sided form that implements the boost.
 
-**The direction, computed.** On $\tilde R_\varphi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, $r_x=x$; we drop $r_y,r_z$, which are untouched), rotor conjugation gives
+**The direction, computed.** On $\tilde R_\Phi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, $r_x=x$; we drop $r_y,r_z$, which are untouched), rotor conjugation gives
 
 $$
 c r'_t \longmapsto c r'_t\cosh\theta_{\mathrm{rpd}} - r_x\sinh\theta_{\mathrm{rpd}}, \qquad
@@ -114,7 +114,7 @@ $$
 c r'_t \longmapsto c r'_t - 2s\,r_x, \qquad r_x \longmapsto r_x - 2s\,c r'_t
 $$
 
-for the flow parameter $s=\theta_{\mathrm{rpd}}/2$. This is the sign that has to be fixed before anything else can be done; we record it explicitly and use the inverse orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\varphi\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\theta_{\mathrm{rpd}}$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{B}_{\Phi}$.
+for the flow parameter $s=\theta_{\mathrm{rpd}}/2$. This is the sign that has to be fixed before anything else can be done; we record it explicitly and use the inverse orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\Phi\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\theta_{\mathrm{rpd}}$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{B}_{\Phi}$.
 
 **Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $K_L=-K_R$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
 
@@ -159,14 +159,14 @@ which is the boost by rapidity $2\pi s$. This is established physics and is impo
 The generator $K_{\mathrm{boost}}$ is the boost Hamiltonian, whose biquaternion representative is the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ of the preceding section, up to the normalization of the modular generator (the flow below is conjugation by $\tilde U_{\mathrm b}(-2\pi s)=\exp(-\pi sG_1)$). The one-parameter modular flow therefore acts on the material sector by rotor conjugation,
 
 $$
-\alpha_s:\ \tilde R_\varphi \longmapsto \tilde U_{\mathrm b}(-2\pi s)\,\tilde R_\varphi\,\tilde U_{\mathrm b}(-2\pi s),
+\alpha_s:\ \tilde R_\Phi \longmapsto \tilde U_{\mathrm b}(-2\pi s)\,\tilde R_\Phi\,\tilde U_{\mathrm b}(-2\pi s),
 $$
 
 the argument $-2\pi s$ being the orientation that advances $\eta$ (the opposite sign gives the left wedge). The sign is the one fixed above: the abstract boost by rapidity $2\pi s$ is represented here by the **inverse** rotor $\tilde U_{\mathrm b}(-2\pi s)$ precisely because $\tilde U_{\mathrm b}(+\theta_{\mathrm{rpd}})$ shifts $\eta$ by $-\theta_{\mathrm{rpd}}$. Three features of this are worth separating.
 
 - **The generator is in $\mathbb{B}_{\Psi}$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{B}_{\Psi}$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
 - **The flow is an inner automorphism of the algebra** by a one-parameter family of unit-norm Hermitian rotors in $\mathbb{B}_{\Psi}$. In the finite-dimensional model in which observables are elements of $\mathbb{B}$, this realizes the modular flow as conjugation. In a genuine field theory the observable algebra is infinite-dimensional and the flow is not inner; the identification is a model, and it is flagged as such.
-- **The flow acts on the field algebra, not on spacetime points.** The rotor conjugation above is the Lorentz action on the four-vector representative $\tilde R_\varphi$; identifying the boost flow of spacetime with the modular flow of the field algebra is exactly the content of Bisognano–Wichmann, not a consequence of the notation.
+- **The flow acts on the field algebra, not on spacetime points.** The rotor conjugation above is the Lorentz action on the four-vector representative $\tilde R_\Phi$; identifying the boost flow of spacetime with the modular flow of the field algebra is exactly the content of Bisognano–Wichmann, not a consequence of the notation.
 
 The imaginary-time shift of the KMS condition is a shift along the time direction of $\mathbb{B}_{\Phi}$, which is $i c r'_t$. This is the parent's structural point, and the accelerated frame gives it a geometric meaning: the complexified direction in which the KMS analyticity takes place is the complexification of the Rindler time, $\mathbb{B}_{\Phi}\oplus i\mathbb{B}_{\Phi}=\mathbb{B}$, and the thermal circle lies along the material time axis.
 
@@ -352,7 +352,7 @@ the proper acceleration. This is the statement of the preceding section read on 
 - *The flow generator is in $\mathbb{B}_{\Psi}$.* The modular Hamiltonian of the wedge is represented by the Hermitian boost generator $G_1=i\vec e_x$, up to the normalization of the modular generator noted above. This is the exact form of the parent's statement that $K=-\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ — the same Hermitian element that rotates $\mathbb{B}_{\Phi}$ by rotor conjugation is the generator of the thermal flow — and it is not an analogy.
 - *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the biquaternion norm has one sign; the horizon is where it changes.
 - *The thermal circle lies along the material time.* The KMS analyticity is a continuation in the $i c r'_t$ direction, i.e. the complexification of the Rindler time, and the flow that acts is an inner automorphism by rotors in $\mathbb{B}_{\Psi}$. The material sector supplies the time in which the state is thermal; the informational sector supplies the operator that generates the flow.
-- *The boost is two-sided.* The generator acts on $\mathbb{B}_{\Phi}$ through the rotor anticommutator $G_1\tilde R_\varphi+\tilde R_\varphiG_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
+- *The boost is two-sided.* The generator acts on $\mathbb{B}_{\Phi}$ through the rotor anticommutator $G_1\tilde R_\Phi+\tilde R_\varphiG_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
 - *The horizon is the boundary of the polar chart.* The boost rotor is a unit at every finite rapidity; the renormalised word collapses to a null idempotent as the rapidity diverges, and the surface gravity is the rate of the divergence. The algebra contains the boundary value, not the horizon geometry.
 
 **What it only transcribes.**
@@ -399,7 +399,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 ## Summary
 
-An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{B}_{\Phi}$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ acting on $\mathbb{B}_{\Phi}$ by the two-sided rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\,\tilde R_\varphi\,\tilde U_{\mathrm b}$ with $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$.
+An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{B}_{\Phi}$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ acting on $\mathbb{B}_{\Phi}$ by the two-sided rotor conjugation $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\,\tilde R_\Phi\,\tilde U_{\mathrm b}$ with $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$.
 
 By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $i\vec e_x\in\mathbb{B}_{\Psi}$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
 
@@ -427,8 +427,8 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material-sector coordinate $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material-sector coordinate $\in\mathbb{B}_{\Phi}$ |
+| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{B}_{\Phi}$ |
 | $R=\{x>|c r'_{t}|\}$ | Right Rindler wedge; $L$ its mirror |
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $c r'_{t}=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |
@@ -440,7 +440,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $d\theta_{\mathrm{rpd}}/d\tau=a$ | Rapidity rate along the orbit (units $c=1$); the redshifted rate is $\kappa$ |
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator (Hermitian) |
 | $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
-| $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{B}_{\Phi}$ |
+| $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{B}_{\Phi}$ |
 | $K_{\mathrm{boost}},\ \Delta=\exp(-2\pi K_{\mathrm{boost}})$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
 | $\alpha_s$ | Modular flow = boost by rapidity $2\pi s$ |
 | $K=-\log\Delta$ | Modular Hamiltonian (parent's notation) |

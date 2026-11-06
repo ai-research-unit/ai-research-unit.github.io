@@ -85,7 +85,7 @@ On $k^{2}$ with $h((a,b),(c,d)) = ad + bc$ the form is non-degenerate of Witt in
 
 ### The Matrix Algebra with an Indefinite Form
 
-On $M_{2}(\mathbb{C})$ with $h(X,Y) = \tau(XGY^{*})$, $G = \operatorname{diag}(1,-1)$, the rank-one matrix $E_{11}$ has the positive diagonal $h(E_{11},E_{11}) = 1$ and is **not** isotropic; the sum $E_{11} + E_{22}$ is isotropic, $h(E_{11}+E_{22}, E_{11}+E_{22}) = \tau(G) = 0$, so the null set is not empty although the radical is zero, because the form is non-degenerate. The comparison with the rank-one functional form of the layer, $h_{\varphi}(X,Y) = \varphi(Y^{*}X)$ with $\varphi(Z) = \operatorname{tr}(ZE_{11})$, whose radical is the left ideal $\{X : XE_{11} = 0\}$ of the matrices with the first column zero, separates the two notions.
+On $M_{2}(\mathbb{C})$ with $h(X,Y) = \tau(XGY^{*})$, $G = \operatorname{diag}(1,-1)$, the rank-one matrix $E_{11}$ has the positive diagonal $h(E_{11},E_{11}) = 1$ and is **not** isotropic; the sum $E_{11} + E_{22}$ is isotropic, $h(E_{11}+E_{22}, E_{11}+E_{22}) = \tau(G) = 0$, so the null set is not empty although the radical is zero, because the form is non-degenerate. The comparison with the rank-one functional form of the layer, $h_{\ell}(X,Y) = \ell(Y^{*}X)$ with $\ell(Z) = \operatorname{tr}(ZE_{11})$, whose radical is the left ideal $\{X : XE_{11} = 0\}$ of the matrices with the first column zero, separates the two notions.
 
 ### The Biquaternion Algebra
 

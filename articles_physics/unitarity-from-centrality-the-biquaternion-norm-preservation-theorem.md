@@ -20,7 +20,7 @@ $$
 
 and the intermediate case $\tilde Q^{*}\tilde Q=\lambda e_t$ with central $\lambda$ is a homomorphism up to the central scalar $\lambda$.
 
-The same theme governs the dynamics. The state-vector equation requires a unit $\tilde{Ζ}$ with $\tilde{Ζ}^2=-e_t$ and a Hermitian generator $\tilde R_\psi$; the flow it generates preserves the Hermitian norm **for every Hermitian $\tilde R_\psi$** if and only if $\tilde{Ζ}$ commutes with every Hermitian element, i.e. if and only if $\tilde{Ζ}$ is central. The centre contains exactly the two roots $\pm i$, so the norm-preserving unit of the Schrödinger equation is forced to be the scalar imaginary. This is the precise sense of the title: unitarity follows from centrality.
+The same theme governs the dynamics. The state-vector equation requires a unit $\tilde{Ζ}$ with $\tilde{Ζ}^2=-e_t$ and a Hermitian generator $\tilde R_\Psi$; the flow it generates preserves the Hermitian norm **for every Hermitian $\tilde R_\Psi$** if and only if $\tilde{Ζ}$ commutes with every Hermitian element, i.e. if and only if $\tilde{Ζ}$ is central. The centre contains exactly the two roots $\pm i$, so the norm-preserving unit of the Schrödinger equation is forced to be the scalar imaginary. This is the precise sense of the title: unitarity follows from centrality.
 
 The article is organised as follows. The two norms are written down and their natures contrasted; the conjugation action and its defect are introduced; the two norm-preservation theorems are proved; the norm-preserving groups are identified as $\mathrm{U}(2)$ for the Hermitian norm and $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ for the biquaternion norm, the second containing the first, so that the intersection of the two is $\mathrm{U}(2)$ itself while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$; the flow version and the forced centrality of the unit are proved; and the standard and algebraic parts of the result are separated. Worked counterexamples show what fails when the centrality hypothesis is dropped.
 
@@ -39,7 +39,7 @@ $$
 \|\tilde Q_1\|_{\dagger}^2
 =2\bigl(|Q_{1t}|^2+|Q_{1x}|^2+|Q_{1y}|^2+|Q_{1z}|^2\bigr)>0\quad(\tilde Q_1\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde R_\psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde R_\Psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -49,7 +49,7 @@ a quadratic form with values in the **centre**, not in $\mathbb{R}$. Its coeffic
 $$
 \langle\tilde Q_1\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},
 $$
-and it is indefinite on $\mathbb{B}_{\Psi}$: for $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ one has $\langle\tilde R_\psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\psi|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
+and it is indefinite on $\mathbb{B}_{\Psi}$: for $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ one has $\langle\tilde R_\Psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\Psi|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.
 
 The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.
 
@@ -245,7 +245,7 @@ $$
 $$
 The biquaternion norm scales as $\langle\Gamma_{\tilde Q}\tilde Q_1\rangle_{\natural}=\lambda_t^4\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\bigl|\lambda_t^2\bigr|^2\langle\tilde Q_1\rangle_{\natural}$, in agreement with Theorem 2 with $|\langle\tilde Q\rangle_{\natural}|=|\lambda_t^2|=\lambda_t^2$. The Hermitian norm scales by $\lambda_t^4$ and is not preserved. This example shows that *centrality of the defect is not enough for unitarity*: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_t$ must be normalized to be $\pm i$.
 
-**Example 3: a non-central root of $-e_t$.** Take $\vec{Ζ}=\vec e_z$, so $\vec{Ζ}^2=-e_t$, and take the Hermitian generator $\tilde R_\psi=i \vec e_x$ (i.e. $\vec r_\psi=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}\vec{Ζ}\tilde R_\psi$,
+**Example 3: a non-central root of $-e_t$.** Take $\vec{Ζ}=\vec e_z$, so $\vec{Ζ}^2=-e_t$, and take the Hermitian generator $\tilde R_\Psi=i \vec e_x$ (i.e. $\vec r_\Psi=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}\vec{Ζ}\tilde R_\Psi$,
 $$
 G=-\hbar^{-1}\vec e_z\,i\vec e_x=-\hbar^{-1}i\,\vec e_z \vec e_x=-\hbar^{-1}i\,\vec e_y .
 $$
@@ -269,15 +269,15 @@ The norm-preservation theorem of the preceding sections is algebraic: it is abou
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
-i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}_{\mathrm{sp}} ,
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
-\tilde{Ζ}^2=-e_t,\quad \tilde R_\psi\in\mathbb{B}_{\Psi},
+\tilde{Ζ}^2=-e_t,\quad \tilde R_\Psi\in\mathbb{B}_{\Psi},
 $$
-with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde R_\psi$ Hermitian. The solution, for constant $\tilde R_\psi$, is
+with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde R_\Psi$ Hermitian. The solution, for constant $\tilde R_\Psi$, is
 $$
 \tilde{Ξ}_{\mathrm{sp}}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}_{\mathrm{sp}}(0),
 \qquad
-G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi.
+G=-\hbar^{-1}\tilde{Ζ}\tilde R_\Psi.
 $$
 The norm $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is preserved for all $r'_t$ and all $\tilde{Ξ}_{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
 $$
@@ -287,21 +287,21 @@ $$
 \iff G^{*}=-G .
 $$
 
-**Theorem 3.** Let $\tilde{Ζ}$ be a root of $-e_t$. The flow generated by $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ is norm-preserving for **every** Hermitian $\tilde R_\psi$ if and only if $\tilde{Ζ}$ is central. In that case $\tilde{Ζ}=\pm i$, and the flow is the standard $*$-unitary one.
+**Theorem 3.** Let $\tilde{Ζ}$ be a root of $-e_t$. The flow generated by $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\Psi$ is norm-preserving for **every** Hermitian $\tilde R_\Psi$ if and only if $\tilde{Ζ}$ is central. In that case $\tilde{Ζ}=\pm i$, and the flow is the standard $*$-unitary one.
 
-**Proof.** The hypothesis is that $G^{*}=-G$ for every Hermitian $\tilde R_\psi$. Since $\tilde R_\psi^{*}=\tilde R_\psi$,
+**Proof.** The hypothesis is that $G^{*}=-G$ for every Hermitian $\tilde R_\Psi$. Since $\tilde R_\Psi^{*}=\tilde R_\Psi$,
 $$
-G^{*}=-\hbar^{-1}\tilde R_\psi\tilde{Ζ}^\dagger,
+G^{*}=-\hbar^{-1}\tilde R_\Psi\tilde{Ζ}^\dagger,
 \qquad
--G=+\hbar^{-1}\tilde{Ζ}\tilde R_\psi,
+-G=+\hbar^{-1}\tilde{Ζ}\tilde R_\Psi,
 $$
-so the hypothesis reads $-\tilde R_\psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\psi$ for every Hermitian $\tilde R_\psi$. Evaluating it at $\tilde R_\psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\psi$. This must hold for every Hermitian $\tilde R_\psi$. The Hermitian elements span $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{B}_{C}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde R_\psi$ is anti-Hermitian because $\tilde R_\psi$ Hermitian implies $i\tilde R_\psi$ anti-Hermitian, and the exponential $\exp(Gr'_t)$ is $*$-unitary.
+so the hypothesis reads $-\tilde R_\Psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\Psi$ for every Hermitian $\tilde R_\Psi$. Evaluating it at $\tilde R_\Psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\Psi$. This must hold for every Hermitian $\tilde R_\Psi$. The Hermitian elements span $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{B}_{C}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde R_\Psi$ is anti-Hermitian because $\tilde R_\Psi$ Hermitian implies $i\tilde R_\Psi$ anti-Hermitian, and the exponential $\exp(Gr'_t)$ is $*$-unitary.
 
-**Where the centrality is used.** The hypothesis "for every Hermitian $\tilde R_\psi$" is what forces $\tilde{Ζ}$ into the centre, and it is not a technical convenience. Physically, a dynamics must be norm-preserving for the whole class of Hamiltonians the theory admits, not merely for one particular $\tilde R_\psi$; the theory admits every Hermitian element as a possible generator. Mathematically, one non-central root is enough to violate the norm, and Example 3 exhibits the violation: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\psi=i\vec e_x$, the generator is Hermitian rather than anti-Hermitian, so the exponential is not $*$-unitary.
+**Where the centrality is used.** The hypothesis "for every Hermitian $\tilde R_\Psi$" is what forces $\tilde{Ζ}$ into the centre, and it is not a technical convenience. Physically, a dynamics must be norm-preserving for the whole class of Hamiltonians the theory admits, not merely for one particular $\tilde R_\Psi$; the theory admits every Hermitian element as a possible generator. Mathematically, one non-central root is enough to violate the norm, and Example 3 exhibits the violation: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$, the generator is Hermitian rather than anti-Hermitian, so the exponential is not $*$-unitary.
 
 **The structural interpretation.** Theorem 3 says that the norm-preserving unit of the dynamics is *the* central root of $-e_t$, and the centre's role here is different from its two earlier roles. In the multiplicative theorem the centre was where the defect had to live for the anomaly to be scalar; in the biquaternion-norm theorem the centre was the target space of the biquaternion norm. Here the centre is where the *unit* must live, and it is the only place where a root of $-e_t$ is compatible with invariance under the full symmetry of the state space. The three roles are the same fact seen from three sides: the centre is the maximal commutative subalgebra, and every statement that must hold "uniformly" over a non-commutative family collapses to a statement about the centre.
 
-**A corollary on the field.** The theorem also shows what fixes the scalar field at $\mathbb{C}$: a norm-preserving unit is forced into the centre whenever the Hermitian generators are rich enough to generate the algebra, which is the case here, since $\mathbb{B}_{\Psi}$ together with $i$ spans $\mathbb{B}$. The hypothesis is not idle. Over the real quaternions the conjugation-Hermitian elements are only the reals, too few to generate the algebra, and a non-central root of $-e_t$ — $\vec e_x$, say — generates a norm-preserving flow for the central generators $a e_t$; the same happens within $\mathbb{B}$ itself whenever the Hamiltonian is restricted to the central directions, since $G=-\hbar^{-1}\vec e_x a=-\hbar^{-1}a\,\vec e_x$ is anti-Hermitian and its exponential is $*$-unitary. What a non-central unit cannot do is preserve the norm for **every** Hermitian generator, and that too is visible at once: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\psi=i\vec e_x$ the generator is $-i\vec e_y$, Hermitian rather than anti-Hermitian, and the norm grows as in Example 3. Given the full set of generators the unit is central, and a central unit with $\tilde{Ζ}^2=-1$ exists precisely when the centre contains a square root of $-1$. In $\mathbb{B}$ the centre is $\mathbb{C}$, whose two roots are $\pm i$; this is the algebraic content of the standard statement that the complex numbers are sufficient for quantum theory.
+**A corollary on the field.** The theorem also shows what fixes the scalar field at $\mathbb{C}$: a norm-preserving unit is forced into the centre whenever the Hermitian generators are rich enough to generate the algebra, which is the case here, since $\mathbb{B}_{\Psi}$ together with $i$ spans $\mathbb{B}$. The hypothesis is not idle. Over the real quaternions the conjugation-Hermitian elements are only the reals, too few to generate the algebra, and a non-central root of $-e_t$ — $\vec e_x$, say — generates a norm-preserving flow for the central generators $a e_t$; the same happens within $\mathbb{B}$ itself whenever the Hamiltonian is restricted to the central directions, since $G=-\hbar^{-1}\vec e_x a=-\hbar^{-1}a\,\vec e_x$ is anti-Hermitian and its exponential is $*$-unitary. What a non-central unit cannot do is preserve the norm for **every** Hermitian generator, and that too is visible at once: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$ the generator is $-i\vec e_y$, Hermitian rather than anti-Hermitian, and the norm grows as in Example 3. Given the full set of generators the unit is central, and a central unit with $\tilde{Ζ}^2=-1$ exists precisely when the centre contains a square root of $-1$. In $\mathbb{B}$ the centre is $\mathbb{C}$, whose two roots are $\pm i$; this is the algebraic content of the standard statement that the complex numbers are sufficient for quantum theory.
 
 ## What Is Standard and What Is the Algebra's
 
@@ -315,7 +315,7 @@ First, the **coexistence of the two norms on the same eight-real-dimensional alg
 
 Second, the **centrality criterion for multiplicativity** is the framework's own statement: an inner map of $\mathbb{B}$ given by conjugation is multiplicative exactly when its defect $\tilde Q^{*}\tilde Q$ is the unit, and multiplicative up to a scalar exactly when that defect is central. This is the precise algebraic form of the familiar fact that a non-$*$-unitary conjugation is not an automorphism, and it is what makes the word *centrality* the right one for the phenomenon: the obstruction to multiplicativity is measured by an element of the algebra, and it is scalar exactly when that element lies in the centre.
 
-Third, the **forced centrality of the unit in the dynamics** is algebraic in a way that its complex counterpart is not. In the complex theory one simply postulates $i$ and checks that $i\tilde R_\psi$ is anti-Hermitian; because there is only one imaginary unit available, the question of centrality does not arise. In $\mathbb{B}$ the anti-Hermitian roots of $-e_t$ — the roots that can serve as the unit of a norm-preserving dynamics — are the two central ones $\pm i$ together with the infinitely many unit pure real quaternions, and the requirement of norm preservation for all generators selects the centre. The selection is a theorem in this framework, and it is what connects the norm-preservation theorem to the identification of the centre as the classical sector.
+Third, the **forced centrality of the unit in the dynamics** is algebraic in a way that its complex counterpart is not. In the complex theory one simply postulates $i$ and checks that $i\tilde R_\Psi$ is anti-Hermitian; because there is only one imaginary unit available, the question of centrality does not arise. In $\mathbb{B}$ the anti-Hermitian roots of $-e_t$ — the roots that can serve as the unit of a norm-preserving dynamics — are the two central ones $\pm i$ together with the infinitely many unit pure real quaternions, and the requirement of norm preservation for all generators selects the centre. The selection is a theorem in this framework, and it is what connects the norm-preservation theorem to the identification of the centre as the classical sector.
 
 **A limit.** Theorems 1 and 3 are, at bottom, standard facts about the $*$-unitary group, dressed in the algebra's coordinates. Their value is not that they produce a new group but that they locate the framework's unitarity precisely: it is the unitarity of the matrix model, its group is $\mathrm{U}(2)$ acting by conjugation, and the extra group $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ that preserves the biquaternion norm is the group of elements whose determinant has modulus one — which is not a group of quantum symmetries but a statement about the determinant. A reader should not read the larger group as a larger class of allowed quantum evolutions; the companion article *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions* is concerned to prevent exactly that interpretation.
 
@@ -329,7 +329,7 @@ $$
 
 so it is preserved exactly when $|\langle\tilde Q\rangle_{\natural}|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, which contains $\mathrm{U}(2)$; the intersection is $\mathrm{U}(2)$ itself, while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$.
 
-The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$. The action is multiplicative exactly when $\tilde Q_4=e_t$, i.e. exactly when $\tilde Q$ is $*$-unitary and $\Gamma_{\tilde Q}$ is an automorphism; when $\tilde Q_4$ is central the multiplicative anomaly collapses to the scalar $\tilde Q_4$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ is anti-Hermitian for every Hermitian $\tilde R_\psi$ if and only if the root $\tilde{Ζ}$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.
+The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$. The action is multiplicative exactly when $\tilde Q_4=e_t$, i.e. exactly when $\tilde Q$ is $*$-unitary and $\Gamma_{\tilde Q}$ is an automorphism; when $\tilde Q_4$ is central the multiplicative anomaly collapses to the scalar $\tilde Q_4$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\Psi$ is anti-Hermitian for every Hermitian $\tilde R_\Psi$ if and only if the root $\tilde{Ζ}$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.
 
 ## Summary of Notation
 
@@ -350,7 +350,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$.
 | $SL(2,\mathbb{C})=\{\tilde U_{\mathrm{lor}}:\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\}$ | Unit-norm group; the Lorentz rotor |
 | $G_N=\{\tilde Q:|\langle\tilde Q\rangle_{\natural}|=1\}=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
 | $\tilde{Ζ}$ | Root of $-e_t$, $\tilde{Ζ}^2=-e_t$ |
-| $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ | Generator of the state-vector flow |
+| $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\Psi$ | Generator of the state-vector flow |
 | $M(\tilde Q_1)$ | $2\times2$ matrix model, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathbb{C}$-linear |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on the diagonal $\langle\tilde Q_2,\tilde Q_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |

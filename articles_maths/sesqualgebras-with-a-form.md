@@ -89,7 +89,7 @@ Let $A = M_n(\mathbb{C})$ with $*$ the conjugate transpose and $\varsigma$ the c
 
 ### The Trace Pairing of a Functional
 
-Let $\varphi : A \to R$ be $R$-linear and put $h_{\varphi}(x,y) = \varphi(y^{*}x)$. The compatibility is automatic, $h_{\varphi}(xy,z) = \varphi(z^{*}xy) = h_{\varphi}(y,x^{*}z)$, and $h_{\varphi}$ is Hermitian exactly when $\varphi(z^{*}) = \varsigma(\varphi(z))$ on the span of the products. This is the general compatible form of *The Sesquilinear Form and the Conjugation*, of which the trace form is the case $\varphi = \tau$. For $A = \mathsf{M}_2$ and the rank-one functional $\varphi(Z) = Z_{11}$ the form is degenerate with radical the left ideal of the matrices whose first column is zero.
+Let $\ell : A \to R$ be $R$-linear and put $h_{\ell}(x,y) = \ell(y^{*}x)$. The compatibility is automatic, $h_{\ell}(xy,z) = \ell(z^{*}xy) = h_{\ell}(y,x^{*}z)$, and $h_{\ell}$ is Hermitian exactly when $\ell(z^{*}) = \varsigma(\ell(z))$ on the span of the products. This is the general compatible form of *The Sesquilinear Form and the Conjugation*, of which the trace form is the case $\ell = \tau$. For $A = \mathsf{M}_2$ and the rank-one functional $\ell(Z) = Z_{11}$ the form is degenerate with radical the left ideal of the matrices whose first column is zero.
 
 ### The Biquaternion Algebra
 
@@ -110,7 +110,7 @@ On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *H
 - The two radicals coincide for a Hermitian form; the common radical is a left ideal, its image under $*$ is a right ideal, and it is two-sided exactly when it is $*$-invariant, which holds in particular when the form is associative.
 - An object of full type has a non-degenerate form exactly when its left annihilator vanishes; the converse fails and is refused.
 - At the trivial base involution and the trivial algebra involution the object collapses to a commutative algebra with a symmetric associative form, the layer of *Algebras with a degree-2 form*.
-- Every $R$-linear functional $\varphi$ produces the compatible form $h_{\varphi}(x,y) = \varphi(y^{*}x)$; the trace form of the matrix algebra is the case $\varphi = \tau$.
+- Every $R$-linear functional $\ell$ produces the compatible form $h_{\ell}(x,y) = \ell(y^{*}x)$; the trace form of the matrix algebra is the case $\ell = \tau$.
 - The continuity, the positivity, the norm and the completion of the layer are Part II; the operator theory is the rest of this category.
 
 ## Summary of Notation
@@ -124,7 +124,7 @@ On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *H
 | $L_x$, $R_x$ | the left and the right multiplication by $x$ |
 | $\operatorname{rad}_l$, $\operatorname{rad}_r$ | the left and the right radical |
 | $\operatorname{rad}$ | the common radical of a Hermitian form |
-| $h_{\varphi}$ | the compatible form $\varphi(y^{*}x)$ of a functional |
+| $h_{\ell}$ | the compatible form $\ell(y^{*}x)$ of a functional |
 | $\tau$ | the trace of the matrix algebra |
 | $\operatorname{Sc}$ | the scalar part of a biquaternion |
 

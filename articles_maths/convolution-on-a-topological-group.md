@@ -89,19 +89,19 @@ where $(L_af)(x) = f(a^{-1}x)$ and $(R_bf)(x) = f(xb)$ are the translations of f
 
 ### Convolution as an Operator
 
-**Definition.** For a finitely supported $\phi$ the **convolution operator** $T_\phi$ is the map $f \mapsto \phi * f$ on functions.
+**Definition.** For a finitely supported $\mu$ the **convolution operator** $T_\mu$ is the map $f \mapsto \mu * f$ on functions.
 
-**Proposition.** $T_\phi$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,
+**Proposition.** $T_\mu$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,
 
 $$
-\boxed{\;T_\phi = \sum_{a} \phi(a)\,L_a\;} .
+\boxed{\;T_\mu = \sum_{a} \mu(a)\,L_a\;} .
 $$
 
-**Proof.** $\phi = \sum_a \phi(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\phi * f = \sum_a \phi(a)(\delta_a * f) = \sum_a \phi(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.
+**Proof.** $\mu = \sum_a \mu(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\mu * f = \sum_a \mu(a)(\delta_a * f) = \sum_a \mu(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.
 
-**Corollary.** The assignment $\phi \mapsto T_\phi$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\phi*\psi} = T_\phi \circ T_\psi$.
+**Corollary.** The assignment $\mu \mapsto T_\mu$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\mu*\nu} = T_\mu \circ T_\nu$.
 
-**Proof.** $T_{\phi*\psi}(f) = (\phi*\psi)*f = \phi*(\psi*f) = T_\phi(T_\psi f)$ by associativity, and injectivity follows from $T_\phi(\delta_e) = \phi$.
+**Proof.** $T_{\mu*\nu}(f) = (\mu*\nu)*f = \mu*(\nu*f) = T_\mu(T_\nu f)$ by associativity, and injectivity follows from $T_\mu(\delta_e) = \mu$.
 
 ## Continuity
 
@@ -135,7 +135,7 @@ the integral being taken in the cited sense of Part III.
 
 ## Summary
 
-Convolution of finitely supported functions on a topological group is the product $(f*g)(x) = \sum_{yz=x}f(y)g(z)$; it is bilinear and associative, the deltas satisfy $\delta_a*\delta_b = \delta_{ab}$, and the algebra it generates is the group algebra $k[G]$, commutative exactly when the group is abelian, with centre the class functions and augmentation the sum of the coefficients. Left and right convolution by a delta are the translations, $\delta_a*f = L_af$ and $f*\delta_b = R_{b^{-1}}f$, so the algebra acts on the functions by finite linear combinations of translations, and the assignment $\phi\mapsto T_\phi$ is an injective homomorphism into the continuous operators on $C(G)$. On the finitely supported functions the product is continuous for the topology of uniform convergence on compacta without any hypothesis, while for general continuous functions on a locally compact group the definition uses the Haar integral and the associativity, the continuity and the algebra $L^1(G)$ are Part III's *The Convolution Algebra $L^1(G)$*, cited here and not reproved.
+Convolution of finitely supported functions on a topological group is the product $(f*g)(x) = \sum_{yz=x}f(y)g(z)$; it is bilinear and associative, the deltas satisfy $\delta_a*\delta_b = \delta_{ab}$, and the algebra it generates is the group algebra $k[G]$, commutative exactly when the group is abelian, with centre the class functions and augmentation the sum of the coefficients. Left and right convolution by a delta are the translations, $\delta_a*f = L_af$ and $f*\delta_b = R_{b^{-1}}f$, so the algebra acts on the functions by finite linear combinations of translations, and the assignment $\mu\mapsto T_\mu$ is an injective homomorphism into the continuous operators on $C(G)$. On the finitely supported functions the product is continuous for the topology of uniform convergence on compacta without any hypothesis, while for general continuous functions on a locally compact group the definition uses the Haar integral and the associativity, the continuity and the algebra $L^1(G)$ are Part III's *The Convolution Algebra $L^1(G)$*, cited here and not reproved.
 
 ## Summary of Notation
 
@@ -150,7 +150,7 @@ Convolution of finitely supported functions on a topological group is the produc
 | $\epsilon(f) = \sum_a f(a)$ | the augmentation, an algebra homomorphism |
 | $L_af(x) = f(a^{-1}x)$, $R_bf(x) = f(xb)$ | the translations of functions |
 | $\delta_a*f = L_af$, $f*\delta_b = R_{b^{-1}}f$ | convolution by a delta is a translation |
-| $T_\phi$, $T_\phi = \sum_a\phi(a)L_a$ | the convolution operator by a finitely supported $\phi$ |
+| $T_\mu$, $T_\mu = \sum_a\mu(a)L_a$ | the convolution operator by a finitely supported $\mu$ |
 | $dx$ | the left Haar measure of Part III, cited for the continuous case |
 | $L^1(G)$ | the convolution algebra of Part III, cited |
 

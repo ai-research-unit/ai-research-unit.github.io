@@ -22,7 +22,7 @@ with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$; in natural uni
 
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication, and the mass is the off-diagonal pairing of the two values of the subscript. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
-The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = c r'_{t}$ and $r_k$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*), so that $Q_t = ix_0$.
+The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = c r'_{t}$ and $r_k$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*), so that $Q_t = ix_0$.
 
 ## The Dirac Propagator and the Square
 
@@ -455,7 +455,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra; $e_t$ its unit, $\vec e_x, \vec e_y, \vec e_z$ the three vector units |
-| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; the worldline position $\tilde R_\varphi$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; the worldline position $\tilde R_\Phi$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{D}$ | The pair operator, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = (\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2 = \Box$ |
 | $\Box$ | Series d'Alembertian, $\sum_\mu\partial^2/\partial R_\mu^2$; $\Delta-\partial^2/\partial x_0^2$ on the material reading |

@@ -245,7 +245,7 @@ $$
 
 and the unit is normalised by it, $\langle e_t\rangle_{*} = 1$. The form is positive definite on the whole algebra. Its restriction to $\mathbb{B}_{\Psi}$ is the plain form,
 $$
-\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle = \mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}),
+\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}),
 $$
 of signature $(4,0)$ there, and its restriction to $\mathbb{B}_{\Phi}$ is minus the plain form, of signature $(0,4)$. A state is normalised by the form against the unit,
 
@@ -257,12 +257,12 @@ $$
 and the Born weight of an observable is the normalised Hermitian form,
 
 $$
-p=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
- =\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
- =c r_t+\vec r\cdot\vec r_\psi .
+p=\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+ =\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+ =c r_t+\vec r\cdot\vec r_\Psi .
 $$
 
-The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\psi^{*}=\tilde R_\psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}\ge0$ and an effect $0\le\tilde R_\psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
+The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\Psi^{*}=\tilde R_\Psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}\ge0$ and an effect $0\le\tilde R_\Psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
 
 The scalar part is then a reading of the form against the unit, $\mathrm{Sc}(\tilde Q)=\langle\tilde Q,e_t\rangle_{*}$, and the trace is the reading in the $2\times2$ image, once and last,
 

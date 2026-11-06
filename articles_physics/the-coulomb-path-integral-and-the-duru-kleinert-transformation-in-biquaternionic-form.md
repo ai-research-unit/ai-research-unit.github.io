@@ -117,7 +117,7 @@ which is the action of an **isotropic harmonic oscillator in four dimensions**, 
 
 1. **The Jacobian of the Duru–Kleinert transformation in the algebra.** The transformation is exact because the pseudo-time and the coordinate change have a definite Jacobian, which is the measure-theoretic factor that *The Path Integral in Biquaternionic Form* names in the curved-space case. Can the Jacobian be written as the trace of an algebra element, in the way the Gaussian determinant is the trace of the kinetic operator, so that the transformation's content is algebraic rather than analytic?
 
-2. **The square root as an element of the algebra.** The KS map takes a square root of the position: $r=\langle \varsigma\rangle_{\natural}$, with $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ recovered from $\varsigma$ up to an $O(4)$ frame. Is there a biquaternion element $\tilde U$ with $\langle\tilde U\rangle_{\natural}=\tilde R_\varphi$ for the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, i.e. a square root in the full algebra rather than only in the spatial quaternion, and does the Coulomb problem's hidden $\mathrm{SO}(4)$ act on the space of such roots?
+2. **The square root as an element of the algebra.** The KS map takes a square root of the position: $r=\langle \varsigma\rangle_{\natural}$, with $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ recovered from $\varsigma$ up to an $O(4)$ frame. Is there a biquaternion element $\tilde U$ with $\langle\tilde U\rangle_{\natural}=\tilde R_\Phi$ for the material coordinate $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, i.e. a square root in the full algebra rather than only in the spatial quaternion, and does the Coulomb problem's hidden $\mathrm{SO}(4)$ act on the space of such roots?
 
 3. **The pseudo-time and the propagator's $i\epsilon$.** The pseudo-time lies along the same $i c r'_t$ axis as the propagator's deformation and the phase exponent. Is the pseudo-time's reciprocality — the potential's singularity becoming the pseudo-time's singularity — the configuration-space form of the momentum-space $i\epsilon$ prescription, and can the two be exhibited as one deformation of the $i c r'_t$ line?
 
@@ -151,7 +151,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
-| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $r=\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$ |
+| $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $r=\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb parameter |
 | $\tilde V=-(\kappa/r)e_t\in\mathbb{B}_{C}$ | Coulomb potential; a central scalar |
 | $E_n=-m\kappa^2/(2\hbar^2n^2)$ | Bound-state spectrum (from the hydrogen article) |

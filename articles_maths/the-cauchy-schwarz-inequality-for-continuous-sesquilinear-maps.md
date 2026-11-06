@@ -34,13 +34,13 @@ $$
 
 *Proof.* The first is the Hermitian property at the pair $(x,x)$; the second is the two slot rules applied in sequence, $s(\lambda x,\lambda y) = \lambda\varsigma(\lambda)s(x,y)$.
 
-**Remark (the model).** The canonical example of the article is the pairing of a positive functional, $s(x,y) = f(y^{*}x)$, whose values lie in $\mathbb{C}$, and the canonical example with values in $A$ is $\Psi(x,y) = y^{*}x$ itself, the universal $A$-valued form of *Hermitian Forms on a Sesqualgebra*, §*The Reduction to the Scalars*; the two are related by the reduction of the second along $f$, and the scalar theory of the article is the common part of the two. The scalar reductions $\varphi \circ s$ of a $B$-valued map along the functionals of $B$ are the device by which the algebra-valued statements below are reduced to the scalar ones.
+**Remark (the model).** The canonical example of the article is the pairing of a positive functional, $s(x,y) = f(y^{*}x)$, whose values lie in $\mathbb{C}$, and the canonical example with values in $A$ is $\Psi(x,y) = y^{*}x$ itself, the universal $A$-valued form of *Hermitian Forms on a Sesqualgebra*, §*The Reduction to the Scalars*; the two are related by the reduction of the second along $f$, and the scalar theory of the article is the common part of the two. The scalar reductions $\ell \circ s$ of a $B$-valued map along the functionals of $B$ are the device by which the algebra-valued statements below are reduced to the scalar ones.
 
 ### Positivity
 
-**Proposition (the scalar reductions of a positive map are positive).** Let $s : A \times A \to B$ be a sesquilinear map with values in a $\mathrm{C}^{*}$-algebra $B$. Then $s$ is positive iff every positive functional $\varphi$ of $B$ has $\varphi \circ s$ positive; and a positive map is Hermitian automatically, since its scalar reductions are Hermitian forms and the states separate $B$.
+**Proposition (the scalar reductions of a positive map are positive).** Let $s : A \times A \to B$ be a sesquilinear map with values in a $\mathrm{C}^{*}$-algebra $B$. Then $s$ is positive iff every positive functional $\ell$ of $B$ has $\ell \circ s$ positive; and a positive map is Hermitian automatically, since its scalar reductions are Hermitian forms and the states separate $B$.
 
-*Proof.* If $s$ is positive then $\varphi(s(x,x)) \geq 0$ for every positive functional $\varphi$, so $\varphi \circ s$ is positive; conversely $s(x,x) \geq 0$ in $B$ iff $\varphi(s(x,x)) \geq 0$ for every state $\varphi$ of $B$, by the representation of the order of a $\mathrm{C}^{*}$-algebra through its states. For the Hermitian clause, let $s$ be positive and let $\varphi$ be a state; the scalar form $\varphi \circ s$ is positive, and a scalar-valued positive sesquilinear form is Hermitian, so $\varphi(s(x,y)) = \varsigma(\varphi(s(y,x))) = \varphi(s(y,x)^{*})$ for every state $\varphi$; the states separate the elements of $B$, whence $s(x,y) = s(y,x)^{*}$, the Hermitian property.
+*Proof.* If $s$ is positive then $\ell(s(x,x)) \geq 0$ for every positive functional $\ell$, so $\ell \circ s$ is positive; conversely $s(x,x) \geq 0$ in $B$ iff $\ell(s(x,x)) \geq 0$ for every state $\ell$ of $B$, by the representation of the order of a $\mathrm{C}^{*}$-algebra through its states. For the Hermitian clause, let $s$ be positive and let $\ell$ be a state; the scalar form $\ell \circ s$ is positive, and a scalar-valued positive sesquilinear form is Hermitian, so $\ell(s(x,y)) = \varsigma(\ell(s(y,x))) = \ell(s(y,x)^{*})$ for every state $\ell$; the states separate the elements of $B$, whence $s(x,y) = s(y,x)^{*}$, the Hermitian property.
 
 ## The Inequality
 
@@ -130,13 +130,13 @@ $$
 
 ### The Boundedness Is Not Free
 
-**Example (a positive form that is not continuous).** Let $A = \mathbb{C}[x]$ with the supremum norm on $[0,1]$ and let $\varphi$ be the linear functional with $\varphi(x^{n}) = n!$, well defined and everywhere finite on the polynomials since every element is a finite combination of the monomials. Then
+**Example (a positive form that is not continuous).** Let $A = \mathbb{C}[x]$ with the supremum norm on $[0,1]$ and let $\ell$ be the linear functional with $\ell(x^{n}) = n!$, well defined and everywhere finite on the polynomials since every element is a finite combination of the monomials. Then
 
 $$
-s(p,q) = \varphi(p)\,\varsigma(\varphi(q))
+s(p,q) = \ell(p)\,\varsigma(\ell(q))
 $$
 
-is Hermitian and positive semi-definite — the diagonal is $s(p,p) = \lvert\varphi(p)\rvert^{2} \geq 0$ — and it is not continuous: $\lVert x^{n}\rVert = 1$ while $s(x^{n},x^{n}) = (n!)^{2}$, so the diagonal is unbounded on the unit ball and the inequality of the preceding theorem has no finite constant. The example is the witness that positivity alone does not bound the diagonal, hence does not give continuity, and it is the reason the article states the boundedness of the diagonal as the hypothesis and does not claim the automatic continuity that the layer does not have.
+is Hermitian and positive semi-definite — the diagonal is $s(p,p) = \lvert\ell(p)\rvert^{2} \geq 0$ — and it is not continuous: $\lVert x^{n}\rVert = 1$ while $s(x^{n},x^{n}) = (n!)^{2}$, so the diagonal is unbounded on the unit ball and the inequality of the preceding theorem has no finite constant. The example is the witness that positivity alone does not bound the diagonal, hence does not give continuity, and it is the reason the article states the boundedness of the diagonal as the hypothesis and does not claim the automatic continuity that the layer does not have.
 
 **Remark (where the continuity is free).** On a unital $\mathrm{C}^{*}$-algebra the boundedness of a positive functional is free and the bound is $\lVert f\rVert = f(1)$, *States and Positive Functionals on a Topological Sesqualgebra*, §*The Cauchy–Schwarz Inequality and the Null Space*; on an arbitrary unital Banach sesqualgebra it is not, as that article's remark records, and the layer accordingly restricts to the continuous maps. The example above is the corresponding witness for a general positive map, and the two together are the reason the article's hypotheses are the continuity of the map and its positivity, neither implying the other.
 
@@ -172,7 +172,7 @@ its radical is zero, because $y^{*}x = 0$ at $y = x$ gives $x^{*}x = 0$ and henc
 
 *Proof.* The two slot rules are $s(\lambda x,y) = y^{*}(\lambda x) = \lambda\,s(x,y)$ and $s(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)s(x,y)$, which is the layer's convention; the map is Hermitian, $s(y,x) = x^{*}y = (y^{*}x)^{*} = s(x,y)^{*}$; it is positive, $s(x,x) = x^{*}x \geq 0$ in the $\mathrm{C}^{*}$-order; its diagonal has $\lVert s(x,x)\rVert = \lVert x^{*}x\rVert = \lVert x\rVert^{2}$ by the $\mathrm{C}^{*}$-identity, so the bound of the theorem above is the constant one; and the radical vanishes because $y^{*}x = 0$ for $y = x$ is $x^{*}x = 0$, which forces $x = 0$ in a $\mathrm{C}^{*}$-algebra. The pairing $h_{f}$ of *States and Positive Functionals on a Topological Sesqualgebra*, §*The Sesquilinear Pairing*, reads the same form in the Hilbert convention, conjugate-linear in the first slot, $h_{f}(x,y) = f(x^{*}y) = \varsigma(f(y^{*}x))$.
 
-**Remark (the scalar theory of the layer is the reducible part of the operator theory).** The theorem is the sense in which the scalar forms of the layer, which are the reductions $h_{\varphi}(x,y) = \varphi(y^{*}x)$ of *The Sesquilinear Form and the Conjugation*, are the scalar readings of the one $A$-valued form $\Psi(x,y) = y^{*}x$; the inequality of this article is the common inequality of the two readings, and the operator theory of the two forms is *Adjoints of Bounded Sesquilinear Operators* and *The Adjoint of the Bounded Conjugate Left Multiplication*.
+**Remark (the scalar theory of the layer is the reducible part of the operator theory).** The theorem is the sense in which the scalar forms of the layer, which are the reductions $h_{\ell}(x,y) = \ell(y^{*}x)$ of *The Sesquilinear Form and the Conjugation*, are the scalar readings of the one $A$-valued form $\Psi(x,y) = y^{*}x$; the inequality of this article is the common inequality of the two readings, and the operator theory of the two forms is *Adjoints of Bounded Sesquilinear Operators* and *The Adjoint of the Bounded Conjugate Left Multiplication*.
 
 ## The Collapse at the Trivial Involution
 
@@ -210,7 +210,7 @@ is Hermitian, compatible, nondegenerate and positive definite, so the inequality
 
 ### The Unbounded Positive Form
 
-**Example (positivity without continuity).** The rank-one form $s(p,q) = \varphi(p)\varsigma(\varphi(q))$ of the unbounded functional $\varphi(x^{n}) = n!$ on $\mathbb{C}[x]$ with the supremum norm is the witness of the article: it is positive semi-definite and Hermitian with the diagonal $s(p,p) = \lvert\varphi(p)\rvert^{2}$, and the diagonal is unbounded on the unit ball, so the form is not continuous and the article's inequality has no constant. The example is the counterpart, for a general positive sesquilinear map, of the remark that the boundedness of a positive functional on a Banach sesqualgebra is not automatic.
+**Example (positivity without continuity).** The rank-one form $s(p,q) = \ell(p)\varsigma(\ell(q))$ of the unbounded functional $\ell(x^{n}) = n!$ on $\mathbb{C}[x]$ with the supremum norm is the witness of the article: it is positive semi-definite and Hermitian with the diagonal $s(p,p) = \lvert\ell(p)\rvert^{2}$, and the diagonal is unbounded on the unit ball, so the form is not continuous and the article's inequality has no constant. The example is the counterpart, for a general positive sesquilinear map, of the remark that the boundedness of a positive functional on a Banach sesqualgebra is not automatic.
 
 ## Summary
 
@@ -233,7 +233,7 @@ A Hermitian **positive** sesquilinear map satisfies the Cauchy–Schwarz inequal
 | $\lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$ | the $\mathrm{C}^{*}$-valued inequality, by reduction along the states |
 | $s(y,x)s(x,y) \leq \lVert s(x,x)\rVert s(y,y)$ | the sharp algebraic form, in the module case |
 | $s(x,y) = y^{*}x$, $\lVert s(x,x)\rVert = \lVert x\rVert^{2}$ | the canonical $A$-valued pairing, continuous by the $\mathrm{C}^{*}$-identity |
-| $s(p,q) = \varphi(p)\varsigma(\varphi(q))$, $\varphi(x^{n}) = n!$ | the unbounded positive form: positivity without continuity |
+| $s(p,q) = \ell(p)\varsigma(\ell(q))$, $\ell(x^{n}) = n!$ | the unbounded positive form: positivity without continuity |
 | $\varsigma = \mathrm{id}$ | the collapse: $s(x,y)^{2} \leq s(x,x)s(y,y)$, the classical symmetric case |
 
 ## Further Reading

@@ -241,7 +241,7 @@ The qubit's most characteristic results are properties of $\mathsf{M}_2$ rather 
 | Structure | Qubit, from $\mathbb{B}=M_2(\mathbb{C})$ | Qutrit, in $\mathrm{sym}^2V$ |
 |---|---|---|
 | Number of levels | $2$, the module dimension | $3$, a summand of the tensor square |
-| Biquaternion norm | $\langle\tilde R_\psi\rangle_{\natural}=\det\tilde R_\psi$, a quadratic form of signature $(1,3)$ | the determinant of a $3\times3$ matrix, a cubic |
+| Biquaternion norm | $\langle\tilde R_\Psi\rangle_{\natural}=\det\tilde R_\Psi$, a quadratic form of signature $(1,3)$ | the determinant of a $3\times3$ matrix, a cubic |
 | Positive cone | the future light cone of $\langle\cdot\rangle_{\natural}$; positivity $=$ causality | not a cone of a quadratic form; positivity is $|\vec b|\le1$ with $\det\rho\ge0$ |
 | Pure states | the zero divisors at trace one; the boundary of the ball | rank-one states; a four-real-dimensional manifold, not a sphere |
 | State space | the Bloch ball, a slice of the cone | an eight-dimensional convex body; the inscribed ball has radius $\tfrac12$ |

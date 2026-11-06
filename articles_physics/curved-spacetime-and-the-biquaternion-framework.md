@@ -18,18 +18,18 @@ One family of frames deserves separate mention, because it is the one in which t
 
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{B}_{\Psi}$ has no curved-space treatment at all.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$, with $i^2=-1$, commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. For two observables of the informational sector the plain form is $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})$, read as the trace pairing $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$, with $i^2=-1$, commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. For two observables of the informational sector the plain form is $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$, read as the trace pairing $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 Two conventions govern the indices, and they are stated once. Every spacetime index is low. A repeated Greek label is a sum. The signs of the interval are written, not implied: the one minus of the material sector is the square of the $i$ in $Q_t=i c r'_t$, made once on the time slot. Where the old pair was a contraction — one index up and one down — it is written as a plain sum over the four $Q_\mu$, whose only coefficient is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; where the object was defined by lowering, the dynamical $g_{\mu\nu}$ of the frame field stays inside it, as in the dual frame $\tilde F_\mu = g_{\mu\nu}\tilde E_\nu$ and the inverse vierbein $e_{\mu a}$. The one exception is the external arena: $\epsilon_\mu$ with $\epsilon_0=1$, $\epsilon_k=-1$ is the C-space interval of the review, whose signature $(+,-,-,-)$ is that source's own and is stated where it is used. Where the old pair was a pairing and not a metric contraction — a coordinate differential against a derivative or a frame, as in $\tilde E_\mu dx_\mu$, $\partial/\partial x_\mu$, and $F_{\mathrm{inf},\mu}\partial/\partial x_\mu$ — the sum is plain and no sign vector appears. Latin labels $a,b,c,d$ and $i,j,k$ are frame labels, not spacetime indices: they are never lowered by $g$, and, like every other component, they are written low; a frame slot is never raised. Where slots of different kinds meet the order is fixed: in $e_{\mu a}$ the world slot comes first and the frame slot second; in $\omega_{\mu ba}$ the world slot, then the frame row, then the frame column; in $S_{\alpha\beta\mu\nu}$ the generator pair, then the row and the column. A dual basis is written with a different letter, never by raising: $\varsigma_\mu$ is dual to $s_\mu$, and $\tilde F_\mu$ is dual to $\tilde E_\mu$.
 
 ## What the Flat Machinery Assumes
 
-The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde R_{\varphi,1} = i c r'_{1t}\,e_t + \vec r_{\varphi,1}$ and $\tilde R_{\varphi,2} = i c r'_{2t}\,e_t + \vec r_{\varphi,2}$ in $\mathbb{B}_{\Phi}$,
+The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde R_{\Phi,1} = i c r'_{1t}\,e_t + \vec r_{\Phi,1}$ and $\tilde R_{\Phi,2} = i c r'_{2t}\,e_t + \vec r_{\Phi,2}$ in $\mathbb{B}_{\Phi}$,
 
 $$
 \tfrac{1}{2}\left(\tilde{Q}_1\tilde{Q}_2^{\natural} + \tilde{Q}_2\tilde{Q}_1^{\natural}\right)
 = \mathrm{Sc}\left(\tilde{Q}_1\tilde{Q}_2^{\natural}\right)
-= -c^2r'_{1t}r'_{2t} + \vec r_{\varphi,1}\cdot\vec r_{\varphi,2},
+= -c^2r'_{1t}r'_{2t} + \vec r_{\Phi,1}\cdot\vec r_{\Phi,2},
 $$
 
 a real scalar. Write $\langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural}$ for this form; the units are $e_t, \vec e_x, \vec e_y, \vec e_z$ and the natural form on them is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, so on the material sector, where $Q_t=i c r'_t$, it is the Minkowski inner product of $\mathbb{B}_{\Phi} \cong \mathbb{R}^{1,3}$, its one minus the square of the $i$ in $Q_t$. It is preserved by rotor conjugation,
@@ -42,7 +42,7 @@ because the biquaternion norm is invariant and the conjugation action is linear 
 
 Four assumptions are built into that statement, and each is a flat-space assumption.
 
-**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde R_\varphi$, the four-velocity $\tilde{V}$, and every other four-vector are elements of $\mathbb{B}_{\Phi}$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
+**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde R_\Phi$, the four-velocity $\tilde{V}$, and every other four-vector are elements of $\mathbb{B}_{\Phi}$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
 
 **2. A biquaternion norm with constant coefficients.** The form $\langle \cdot,\cdot \rangle_{\natural}$ is the same at every point, by construction. Nothing in the algebra can vary it.
 
@@ -87,13 +87,13 @@ It is at this point that a genuine ambiguity appears, and it should be stated be
 
 ### The Two Readings
 
-**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
+**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
 
 $$
 d(i c r'_t) = ic\,dr'_t + i\,r'_t\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde R_\varphi = i(c\,dr'_t + r'_t\,dc)e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — still an element of $\mathbb{B}_{\Phi}$ — and the interval is $ds^2 = \langle d\tilde R_\varphi\rangle_{\natural}$, whose time sign comes from $i^2=-1$ and nothing else,
+so the displacement biquaternion is $d\tilde R_\Phi = i(c\,dr'_t + r'_t\,dc)e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — still an element of $\mathbb{B}_{\Phi}$ — and the interval is $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural}$, whose time sign comes from $i^2=-1$ and nothing else,
 
 $$
 ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\,dc - {r'_{t}}^2 (dc)^2 + dr_x^2+dr_y^2+dr_z^2,
@@ -184,10 +184,10 @@ and the line element is exactly the Schwarzschild exterior and exactly Ricci-fla
 The general way to make the embedding of spacetime into the algebra local is to allow the coordinate differentials to be carried into $\mathbb{B}_{\Phi}$ by a point-dependent frame:
 
 $$
-d\tilde R_\varphi = \sum_\mu \tilde{E}_\mu(x)\,dx_\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{B}_{\Phi} .
+d\tilde R_\Phi = \sum_\mu \tilde{E}_\mu(x)\,dx_\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{B}_{\Phi} .
 $$
 
-The interval is $ds^2 = \langle d\tilde R_\varphi\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde R_\varphi = \sum_\mu\tilde{E}_\mu dx_\mu$,
+The interval is $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde R_\Phi = \sum_\mu\tilde{E}_\mu dx_\mu$,
 
 $$
 \boxed{\;g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle_{\natural}
@@ -256,7 +256,7 @@ $$
 
 and the only step worth naming is the one that makes it vanish: $\langle X,\tilde k\rangle_\natural$ is a scalar, hence central, so it passes through $\tilde k$ and leaves the norm behind. The trace carries the same condition, $\mathrm{tr}\,N_{\tilde k} = \langle\tilde k\rangle_\natural = 0$, and the rank is one.
 
-The distinction from **left multiplication**, the map the algebra supplies for nothing, must also be kept. For an element of $\mathbb{B}_{\Phi}$ that map is never square-zero unless $\tilde k = 0$: a null $\tilde k = i c r'_t\,e_t + \vec r_\varphi$ with $r'_t \ne 0$ satisfies $\tilde k^2 = 2i c r'_t\tilde k$, which is the Cayley–Hamilton identity $M^2 = (\mathrm{tr}\,M)M$ of the $2\times2$ image at vanishing determinant, while $r'_t = 0$ forces $\vec r_\varphi = 0$ by the null condition, so the only nilpotent element of $\mathbb{B}_{\Phi}$ is zero. Nilpotent null elements do exist in the algebra at large — $\vec e_x + i\vec e_y$ has square zero and vanishing norm — but they are not material elements, their spatial coefficients being complex. The operator that is square-zero for every null direction of $\mathbb{B}_{\Phi}$ is the rank-one $N_{\tilde k}$, and the distinction is the one *The Square-Zero Element* and *The Light Cone as the Biquaternion Zero-Divisor Cone* already draw between the square-zero cone and the zero-divisor cone. The Kerr–Schild shear is built on the second operator, not the first.
+The distinction from **left multiplication**, the map the algebra supplies for nothing, must also be kept. For an element of $\mathbb{B}_{\Phi}$ that map is never square-zero unless $\tilde k = 0$: a null $\tilde k = i c r'_t\,e_t + \vec r_\Phi$ with $r'_t \ne 0$ satisfies $\tilde k^2 = 2i c r'_t\tilde k$, which is the Cayley–Hamilton identity $M^2 = (\mathrm{tr}\,M)M$ of the $2\times2$ image at vanishing determinant, while $r'_t = 0$ forces $\vec r_\Phi = 0$ by the null condition, so the only nilpotent element of $\mathbb{B}_{\Phi}$ is zero. Nilpotent null elements do exist in the algebra at large — $\vec e_x + i\vec e_y$ has square zero and vanishing norm — but they are not material elements, their spatial coefficients being complex. The operator that is square-zero for every null direction of $\mathbb{B}_{\Phi}$ is the rank-one $N_{\tilde k}$, and the distinction is the one *The Square-Zero Element* and *The Light Cone as the Biquaternion Zero-Divisor Cone* already draw between the square-zero cone and the zero-divisor cone. The Kerr–Schild shear is built on the second operator, not the first.
 
 ### The Frame It Produces, and Four Properties That Are One
 
@@ -345,7 +345,7 @@ $$
 \tilde{Q} \longmapsto \tilde{Q} + \epsilon\left(G\tilde{Q} + \tilde{Q}G^{*}\right) + O(\epsilon^2),
 $$
 
-which is **not** in general the commutator $[G,\tilde{Q}]$. The two agree exactly when $G^{*} = -G$, which is the case for the rotation generators $\vec e_k$; for the boost generators $i\vec e_k$, which are Hermitian, they do not agree. On $\tilde R_\varphi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z$, the boost generator $G = i\vec e_x$ acts to first order as
+which is **not** in general the commutator $[G,\tilde{Q}]$. The two agree exactly when $G^{*} = -G$, which is the case for the rotation generators $\vec e_k$; for the boost generators $i\vec e_k$, which are Hermitian, they do not agree. On $\tilde R_\Phi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z$, the boost generator $G = i\vec e_x$ acts to first order as
 
 $$
 c r'_t \longmapsto c r'_t - 2\epsilon\,r_x, \qquad r_x \longmapsto r_x - 2\epsilon\,c r'_t,
@@ -576,7 +576,7 @@ the Riemann tensor of the Levi-Civita symbols, the two sides differing by a sign
 
 ## The Informational Sector on a Curved Background
 
-The second half of the framework — $\mathbb{B}_{\Psi}$, its states, its observables and the plain form $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})$, read as the trace pairing — has no curved-space treatment, and it is worth saying why the absence is structural rather than a matter of effort.
+The second half of the framework — $\mathbb{B}_{\Psi}$, its states, its observables and the plain form $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$, read as the trace pairing — has no curved-space treatment, and it is worth saying why the absence is structural rather than a matter of effort.
 
 When the spacetime is curved, the elements of $\mathbb{B}_{\Psi}$ would have to become fields of operators, one copy of the algebra being attached at each point. That much is formal: the fibre is defined and the pointwise operator algebra goes through unchanged. What does not go through is the trace. The trace in the trace formula is the $2 \times 2$ matrix trace at a point; it has no volume element and no integration. Every trace in a field theory is an integral over the manifold, with a measure that itself depends on the metric, and the framework's trace cannot play that role. So even the Born rule, which is the most successful piece of the flat construction, has no constructed curved-space analogue here: the pointwise expectation value survives, the global one has nowhere to live.
 
@@ -666,11 +666,11 @@ The four of them are, as cells, the frame cells the Dirac operator of this artic
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde R_\varphi = i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{B}_{\Phi}$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $\mathrm{Ric}_{00} = u\Delta u$, $\mathrm{Ric}_{0i} = 0$, $\mathrm{Ric}_{ij} = -(\partial^2 u/\partial x_i\partial x_j)/u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde R_\Phi = i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{B}_{\Phi}$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $\mathrm{Ric}_{00} = u\Delta u$, $\mathrm{Ric}_{0i} = 0$, $\mathrm{Ric}_{ij} = -(\partial^2 u/\partial x_i\partial x_j)/u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
-A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{B}_{\Phi}$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, a condition that is sufficient and not necessary, so curvature can only come from the part of the frame that is neither a rotor gauge nor a change of chart. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde R_\varphi + \tilde R_\varphiG^{*}$, not the commutator, the two differing precisely for the boosts.
+A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{B}_{\Phi}$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, a condition that is sufficient and not necessary, so curvature can only come from the part of the frame that is neither a rotor gauge nor a change of chart. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde R_\Phi + \tilde R_\varphiG^{*}$, not the commutator, the two differing precisely for the boosts.
 
 One sub-class of frames is worth separating because the algebra contributes more to it than a bilinear form, and it is the Kerr–Schild class, $g_{\mu\nu} = \delta_{\mu\nu} + 2h\,k_\mu k_\nu$ with $\sum_\mu k_\mu^2 = 0$. A null element is a zero divisor, and the operator built from it, $N_{\tilde k}(X) = \tilde k\langle X,\tilde k\rangle_\natural$, is square-zero and traceless for that reason alone; the frame is the rigid frame carried by the unipotent shear $\exp(hN_{\tilde k}) = \mathrm{id} + hN_{\tilde k}$, and $g$ is its Gram matrix. The affineness of the deformation in $h$, the unimodularity $\det g = \det\delta$, the inverse array $\delta_{\mu\nu} - 2h\,k_\mu k_\nu$, and the direction's being fixed and still null are four faces of that vanishing square; the shear is the identity on the three-plane orthogonal to $\tilde k$, and therefore on both totally null planes of the complexification, which is why the null planes of the congruence survive unchanged. With a constant direction and a transverse harmonic $h$ the class contains a vacuum plane-fronted wave, so the frame route carries a vacuum gravitational wave that the local-scale route cannot; with $h$ and $k_\mu$ both constant it is flat, which shows that the rotor criterion for flatness is sufficient and not necessary, since a constant shear is a change of chart rather than a change of frame. None of it is dynamics: the direction and $h$ are three free functions, and for Kerr–Newman they are fixed by the Kerr theorem and the Einstein–Maxwell equations, not by the algebra.
 
@@ -696,7 +696,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $i c r'_t$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_k\,\vec e_k\partial/\partial R_k$ | Biquaternionic gradient, $Q_t=i c r'_t$; needs a global chart |
-| $\tilde{E}_\mu(x) \in \mathbb{B}_{\Phi}$ | Frame field (tetrad): $d\tilde R_\varphi = \sum_\mu\tilde{E}_\mu dx_\mu$ |
+| $\tilde{E}_\mu(x) \in \mathbb{B}_{\Phi}$ | Frame field (tetrad): $d\tilde R_\Phi = \sum_\mu\tilde{E}_\mu dx_\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
 | $k_\mu$, $\tilde k = \sum_\mu k_\mu e_\mu$ | Null covector and the null element it names: $\langle e_\mu,\tilde k\rangle_\natural = k_\mu$ and $\langle\tilde k\rangle_\natural = \sum_\mu k_\mu^2 = 0$; the sign is the square of the $i$ in $Q_t$ |
 | $N_{\tilde k}(X) = \tilde k\langle X,\tilde k\rangle_\natural$ | Rank-one real-linear map of $\mathbb{B}_{\Phi}$ built from a null element; $N_{\tilde k}^2 = 0$, $\mathrm{tr}\,N_{\tilde k} = \langle\tilde k\rangle_\natural = 0$ |
@@ -722,7 +722,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $u = c$, $w = c^2$ | Local scale factor and its square, in the local-scale route |
 | $\mathrm{Ric}_{00}=u\Delta u$, $\mathrm{Ric}_{0i}=0$, $\mathrm{Ric}_{ij}=-(\partial^2 u/\partial x_i\partial x_j)/u$ | Ricci tensor of $g=\mathrm{diag}(-c^2,1,1,1)$, corpus convention |
 | $(m,n)$, $\left(\tfrac12,\tfrac12\right)$, $\left(1,1\right)\oplus\left(0,0\right)$ | Lorentz representations: four-vectors; symmetric rank-2 tensors |
-| $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the Hermitian form (Born rule), pointwise only |
+| $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace reading of the Hermitian form (Born rule), pointwise only |
 
 ## Further Reading
 

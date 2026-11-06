@@ -219,12 +219,12 @@ $$
 the Hermitian subspace with the anti-Hermitian one. The element splits across the coefficient slots,
 
 $$
-\tilde Q = \tilde Q_\psi + \tilde Q_\varphi,\qquad
-\tilde Q_\psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr)\in\mathbb{B}_{\Psi},\qquad
-\tilde Q_\varphi = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\in\mathbb{B}_{\Phi}.
+\tilde Q = \tilde Q_\Psi + \tilde Q_\Phi,\qquad
+\tilde Q_\Psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr)\in\mathbb{B}_{\Psi},\qquad
+\tilde Q_\Phi = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\in\mathbb{B}_{\Phi}.
 $$
 
-$\tilde Q_\psi$ takes the real scalar slot with the imaginary vector slots, and $\tilde Q_\varphi$ the imaginary scalar slot with the real vector slots. The two tokens are those of the two sectors — $\psi$ informational, $\varphi$ material — and not two fields, so no label passes into the coefficients.
+$\tilde Q_\Psi$ takes the real scalar slot with the imaginary vector slots, and $\tilde Q_\Phi$ the imaginary scalar slot with the real vector slots. The two tokens are those of the two sectors — $\psi$ informational, $\varphi$ material — and not two fields, so no label passes into the coefficients.
 
 ## The Conjugations
 
@@ -321,7 +321,7 @@ The conventions below are those used throughout the corpus.
 | $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | The centre and the vector subspace of the biquaternion algebra, the fixed and anti-fixed spaces of the intrinsic conjugate (§*The Remarkable Subspaces of Biquaternions*) |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | The quaternion and antiquaternion subspaces, the real and imaginary halves of the biquaternion algebra |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian subspaces, the fixed and anti-fixed spaces of the star |
-| $\tilde Q_\psi$, $\tilde Q_\varphi$ | The informational and material parts of an element, $\tilde Q=\tilde Q_\psi+\tilde Q_\varphi$, in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (§*The Hermitian and Anti-Hermitian Subspaces*) |
+| $\tilde Q_\Psi$, $\tilde Q_\Phi$ | The informational and material parts of an element, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$, in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (§*The Hermitian and Anti-Hermitian Subspaces*) |
 | $G$; $R$; $k$, $F$; $V$; $M$; $A$ | A group; a ring; a field; a vector space; a module; an algebra |
 | $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras |
 | $\mathrm{M}, \mathrm{P}$ | Ideals and prime ideals |

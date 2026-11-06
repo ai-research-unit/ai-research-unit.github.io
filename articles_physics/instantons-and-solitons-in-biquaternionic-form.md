@@ -29,10 +29,10 @@ $$
 
 where $\partial/\partial R_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{B}_{\Phi}$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
 
-The **Wick rotation** is the substitution $r'_t\mapsto-i\tau$, under which the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
+The **Wick rotation** is the substitution $r'_t\mapsto-i\tau$, under which the material coordinate $\tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
 
 $$
-\tilde{R}_{\varphi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{H},
+\tilde{R}_{\Phi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{H},
 $$
 
 and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=i c r'_t$ becomes $Q_t=c\tau$, and the four terms of

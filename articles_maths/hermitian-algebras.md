@@ -64,13 +64,13 @@ The two identities are the adjoint axiom in operator form, and they are the orig
 
 ### The Correspondence
 
-**Proposition.** The form and the involution determine each other through the functional $\varphi = \langle \cdot, 1\rangle$:
+**Proposition.** The form and the involution determine each other through the functional $\ell = \langle \cdot, 1\rangle$:
 
 $$
 \boxed{\;\langle x, y \rangle = \langle x^{\dagger}y, 1 \rangle\;} .
 $$
 
-**Proof.** Apply the adjoint axiom with $y$ replaced by $x^{\dagger}y$ and $z = 1$, and use $(x^{\dagger}y)^{\dagger} = y^{\dagger}x$. Conversely, a $\sigma$-linear functional $\varphi$ on $A$ produces the Hermitian form $h_\varphi(x, y) = \varphi(y^{\dagger}x)$, and the two constructions are inverse. This is the correspondence of *The Sesquilinear Form and the Conjugation*, stated here for the involution of the algebra; it uses neither positivity nor completeness.
+**Proof.** Apply the adjoint axiom with $y$ replaced by $x^{\dagger}y$ and $z = 1$, and use $(x^{\dagger}y)^{\dagger} = y^{\dagger}x$. Conversely, a $\sigma$-linear functional $\ell$ on $A$ produces the Hermitian form $h_\ell(x, y) = \ell(y^{\dagger}x)$, and the two constructions are inverse. This is the correspondence of *The Sesquilinear Form and the Conjugation*, stated here for the involution of the algebra; it uses neither positivity nor completeness.
 
 ## The Dagger of a Clifford Algebra
 
@@ -153,7 +153,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 
 - A **Hermitian algebra** is an associative algebra with an involution $\bar{\cdot}$ and a non-degenerate Hermitian form tied by the adjoint axiom $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$.
 - The axiom is $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$, equivalently $\langle x^{\dagger}y, z\rangle = \langle y, xz\rangle$; it says that $L_{x^{\dagger}} = L_x^{*}$. The third identity $\langle xy, z\rangle = \langle x, zy^{\dagger}\rangle$, equivalently $R_{x^{\dagger}} = R_x^{*}$, is not a consequence: it is the cyclicity of the functional of the form, and it holds for the trace form.
-- The form and the involution determine each other through $\varphi = \langle \cdot, 1\rangle$, with $\langle x, y\rangle = \langle x^{\dagger}y, 1\rangle$.
+- The form and the involution determine each other through $\ell = \langle \cdot, 1\rangle$, with $\langle x, y\rangle = \langle x^{\dagger}y, 1\rangle$.
 - The dagger of a Clifford algebra is the composite $x^{\dagger} = \sigma(\alpha(x^{r}))$ of reversion and the involution of the base, available with no positivity.
 - Every element splits as $x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger})$ into a self-adjoint and a skew-adjoint part, and the Hermitian squares $x^{\dagger}x$ generate the algebraic positive cone.
 - The left and the right radicals are a left and a right ideal, and they coincide and are two-sided when the form is associative; the form descends to a non-degenerate form on the quotient.
@@ -172,7 +172,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 | $\alpha$ | the grade involution of the $\mathbb{Z}/2$-grading |
 | $\langle \cdot, \cdot \rangle$ | the Hermitian form of the algebra |
 | $\mathfrak{Q}(x)$ | the value at the two equal arguments $\langle x, x\rangle$, valued in $F^\sigma$ |
-| $\varphi$ | the functional $\langle \cdot, 1\rangle$ of the correspondence |
+| $\ell$ | the functional $\langle \cdot, 1\rangle$ of the correspondence |
 | $L_x$, $R_x$ | the left and the right multiplication by $x$ |
 | $T^{*}$ | the adjoint of $T$ for the form |
 | $\operatorname{rad}_l$, $\operatorname{rad}_r$ | the left and the right radical |

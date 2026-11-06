@@ -155,14 +155,14 @@ $$
 a four-**real**-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. Writing
 
 $$
-\tilde R_\varphi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
+\tilde R_\Phi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
 \qquad r'_t, r_k\in\mathbb{R},
 $$
 
 the biquaternion norm is real and indefinite:
 
 $$
-\boxed{\ \langle\tilde R_\varphi\rangle_{\natural} = (i c r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
+\boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i c r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
 The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i c r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
@@ -172,7 +172,7 @@ The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read
 | $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
 | $\mathbb{B}_{\Phi}$ | $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-c^2{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
-| $\mathbb{B}_{\Psi}$ | $c r_t\,e_t+i\vec r_\psi$ | $c^2r_t^2-\vec r_\psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Psi}$ | $c r_t\,e_t+i\vec r_\Psi$ | $c^2r_t^2-\vec r_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
 
 The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
 

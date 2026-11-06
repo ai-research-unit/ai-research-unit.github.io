@@ -404,24 +404,24 @@ The factor $|\sigma|$ is the **ramp filter**, and it is the source of the high-f
 
 ### Definition
 
-The **continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is
+The **continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\gamma \in L^2(\mathbb{R})$ is
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
 $$
 
-The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
+The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\gamma$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty.
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty.
 $$
 
 ### The Inversion Formula
 
-**Theorem.** If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then
+**Theorem.** If $\gamma$ is admissible and $f \in L^2(\mathbb{R})$, then
 
 $$
-f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+f(t) = \frac{1}{C_\gamma} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\gamma f(a, b) \frac{1}{\sqrt{|a|}} \gamma\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
 $$
 
 The inversion formula reconstructs $f$ from its wavelet transform.
@@ -432,10 +432,10 @@ The wavelet transform localizes in both frequency and position, unlike the Fouri
 
 ### The Complex Wavelet Transform
 
-In the complex setting, the wavelet $\psi$ is allowed to be complex-valued, and the transform becomes
+In the complex setting, the wavelet $\gamma$ is allowed to be complex-valued, and the transform becomes
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(Q) \overline{\gamma\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
 $$
 
 The complex wavelet transform is used in image processing, where it provides both magnitude and phase information, and in the analysis of oriented textures.
@@ -468,7 +468,7 @@ The last three sections extend the transform beyond the group setting: the Melli
 | $\mathcal{B}$ | Bloch space |
 | $\mathcal{M} f$ | Mellin transform |
 | $Rf$ | Radon transform |
-| $W_\psi f$ | Wavelet transform |
+| $W_\gamma f$ | Wavelet transform |
 
 ## Further Reading
 

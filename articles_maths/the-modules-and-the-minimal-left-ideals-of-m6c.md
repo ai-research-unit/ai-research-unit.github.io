@@ -20,7 +20,7 @@ $$
 M_6(\mathbb{C})\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*,
 $$
 
-and the minimal left ideals are the columns $M_6P_\varphi$ for the lines $\mathbb{C}\varphi$ of $\mathbb{C}^6$. They are all isomorphic as left modules, but the isomorphism is not canonical: the exchange of two columns is a choice, defined only up to a nonzero scalar.
+and the minimal left ideals are the columns $M_6P_\ell$ for the lines $\mathbb{C}\ell$ of $\mathbb{C}^6$. They are all isomorphic as left modules, but the isomorphism is not canonical: the exchange of two columns is a choice, defined only up to a nonzero scalar.
 
 The Peirce carrier
 
@@ -90,7 +90,7 @@ is well defined and nondegenerate, and it identifies $R$ with the dual $L^*$ of 
 
 **Corollary (the two dualities).** The left module structure on $L$ dualizes to a right module structure on $L^*=R$, and conversely. The column is the left ideal; the row is the right ideal; the transpose exchanges them.
 
-**Proof.** The dual of a left module is a right module by $(\varphi\cdot A)(x)=\varphi(Ax)$; under the trace pairing this is right multiplication by $A$.
+**Proof.** The dual of a left module is a right module by $(\ell\cdot A)(x)=\ell(Ax)$; under the trace pairing this is right multiplication by $A$.
 
 **Remark (the column is not a right ideal).** The column $L$ is not stable under right multiplication by a general matrix: $E_{11}E_{12}=E_{12}\notin L$. The row is not a left ideal. **The column and the row are the two one-sided minimal ideals, and they are different subspaces of the algebra.**
 
@@ -141,15 +141,15 @@ $$
 $$
 \mathbb{C}^6\otimes(\mathbb{C}^6)^*\longrightarrow M_6(\mathbb{C}),
 \qquad
-u\otimes\varphi\longmapsto u\varphi,
+u\otimes\ell\longmapsto u\ell,
 \qquad
-(u\varphi)(v)=\varphi(v)u,
+(u\ell)(v)=\ell(v)u,
 $$
 
 is an isomorphism of vector spaces, and
 
 $$
-(u\otimes\varphi)(v\otimes\psi)=\varphi(v)\,u\otimes\psi .
+(u\otimes\ell)(v\otimes\nu)=\ell(v)\,u\otimes\nu .
 $$
 
 **Proof.** The matrix units are $E_{ij}=e_i\otimes e_j^*$, where $e_j^*(e_k)=\delta_{jk}$; they form a basis of both sides. The product formula is the composition of rank-one maps.
@@ -159,27 +159,27 @@ $$
 $$
 I_6=\sum_{i=1}^{6}e_i\otimes e_i^*,
 \qquad
-\operatorname{tr}(u\otimes\varphi)=\varphi(u).
+\operatorname{tr}(u\otimes\ell)=\ell(u).
 $$
 
-**Proof.** The identity is the sum of the coordinate rank-one projectors; the trace of $u\varphi$ is $\varphi(u)$.
+**Proof.** The identity is the sum of the coordinate rank-one projectors; the trace of $u\ell$ is $\ell(u)$.
 
 ### The Left and Right Actions
 
 **Theorem.** Under the isomorphism $M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*$, the left action of $M_6$ on $\mathbb{C}^6$ is on the first factor, and the right action on $(\mathbb{C}^6)^*$ is on the second:
 
 $$
-A(u\otimes\varphi)=(Au)\otimes\varphi,
+A(u\otimes\ell)=(Au)\otimes\ell,
 \qquad
-(u\otimes\varphi)A=u\otimes(\varphi A).
+(u\otimes\ell)A=u\otimes(\ell A).
 $$
 
-**Proof.** $A(u\varphi)=(Au)\varphi$ and $(u\varphi)A=u(\varphi A)$.
+**Proof.** $A(u\ell)=(Au)\ell$ and $(u\ell)A=u(\ell A)$.
 
-**Corollary (the minimal ideals).** The minimal left ideal $L_\varphi$ is
+**Corollary (the minimal ideals).** The minimal left ideal $L_\ell$ is
 
 $$
-L_\varphi=\mathbb{C}^6\otimes\mathbb{C}\varphi,
+L_\ell=\mathbb{C}^6\otimes\mathbb{C}\ell,
 $$
 
 and the minimal right ideal $R_u$ is
@@ -188,7 +188,7 @@ $$
 R_u=\mathbb{C}u\otimes(\mathbb{C}^6)^*.
 $$
 
-**Proof.** The left ideal of the projector with kernel $\ker\varphi$ is the set of all $u\otimes\varphi$; the right ideal of the projector with image $\mathbb{C}u$ is the set of all $u\otimes\psi$.
+**Proof.** The left ideal of the projector with kernel $\ker\ell$ is the set of all $u\otimes\ell$; the right ideal of the projector with image $\mathbb{C}u$ is the set of all $u\otimes\nu$.
 
 ## The Polarized Module of the Biquaternion Algebra and the Exchange
 
@@ -197,12 +197,12 @@ $$
 **Theorem.** The minimal left ideals of $M_6(\mathbb{C})$ are exactly
 
 $$
-L_\varphi=M_6P_\varphi,
+L_\ell=M_6P_\ell,
 \qquad
-P_\varphi=v\otimes\varphi,\quad \varphi(v)=1,
+P_\ell=v\otimes\ell,\quad \ell(v)=1,
 $$
 
-for the nonzero linear forms $\varphi\in(\mathbb{C}^6)^*$, and $L_\varphi=L_\psi$ if and only if $\mathbb{C}\varphi=\mathbb{C}\psi$. The family is the projective space
+for the nonzero linear forms $\ell\in(\mathbb{C}^6)^*$, and $L_\ell=L_\nu$ if and only if $\mathbb{C}\ell=\mathbb{C}\nu$. The family is the projective space
 
 $$
 \mathbb{P}^5=\{(\mathbb{C}^6)^*\text{ modulo scalars}\},
@@ -210,9 +210,9 @@ $$
 
 of complex dimension $5$.
 
-**Proof.** A minimal left ideal is the set of matrices vanishing on a fixed hyperplane $H$, namely $H=\ker\varphi$; it is $L_\varphi=\mathbb{C}^6\otimes\mathbb{C}\varphi$, and it depends only on the hyperplane, equivalently on the line $\mathbb{C}\varphi$ in the dual. The projector $P_\varphi=v\otimes\varphi$ with $\varphi(v)=1$ has kernel $H$ and image $\mathbb{C}v$; the left ideal $M_6P_\varphi$ is independent of the choice of $v$. The set of lines in the six-dimensional dual is $\mathbb{P}^5$.
+**Proof.** A minimal left ideal is the set of matrices vanishing on a fixed hyperplane $H$, namely $H=\ker\ell$; it is $L_\ell=\mathbb{C}^6\otimes\mathbb{C}\ell$, and it depends only on the hyperplane, equivalently on the line $\mathbb{C}\ell$ in the dual. The projector $P_\ell=v\otimes\ell$ with $\ell(v)=1$ has kernel $H$ and image $\mathbb{C}v$; the left ideal $M_6P_\ell$ is independent of the choice of $v$. The set of lines in the six-dimensional dual is $\mathbb{P}^5$.
 
-**Corollary (the parabolic stabilizer).** The stabilizer in $GL_6$ of a minimal left ideal is the parabolic subgroup of the hyperplane $H=\ker\varphi$, of dimension
+**Corollary (the parabolic stabilizer).** The stabilizer in $GL_6$ of a minimal left ideal is the parabolic subgroup of the hyperplane $H=\ker\ell$, of dimension
 
 $$
 25+5+1=31,
@@ -220,7 +220,7 @@ $$
 
 with Levi $GL_5\times GL_1$ and unipotent radical of dimension $5$.
 
-**Proof.** Preserving $L_\varphi$ is preserving the hyperplane $H$. In a basis with $H=\{x_6=0\}$ the block form is
+**Proof.** Preserving $L_\ell$ is preserving the hyperplane $H$. In a basis with $H=\{x_6=0\}$ the block form is
 
 $$
 \begin{pmatrix}A&B\\0&\lambda\end{pmatrix}
@@ -230,11 +230,11 @@ with $A\in GL_5$ (dimension $25$), $B\in\mathbb{C}^{5\times1}$ (dimension $5$) a
 
 ### The Exchange
 
-**Theorem.** Any two minimal left ideals $L_\varphi$ and $L_\psi$ are isomorphic as left modules. Every isomorphism is the restriction of a matrix $A\in GL_6$ with $AL_\varphi=L_\psi$, and it is unique up to a nonzero scalar.
+**Theorem.** Any two minimal left ideals $L_\ell$ and $L_\nu$ are isomorphic as left modules. Every isomorphism is the restriction of a matrix $A\in GL_6$ with $AL_\ell=L_\nu$, and it is unique up to a nonzero scalar.
 
-**Proof.** Schur's lemma gives the uniqueness up to a scalar. The existence: choose $A\in GL_6$ with $A(\ker\varphi)=\ker\psi$; then $A$ maps $L_\varphi$ to $L_\psi$, and its restriction is an isomorphism.
+**Proof.** Schur's lemma gives the uniqueness up to a scalar. The existence: choose $A\in GL_6$ with $A(\ker\ell)=\ker\nu$; then $A$ maps $L_\ell$ to $L_\nu$, and its restriction is an isomorphism.
 
-**Corollary (the non-canonical exchange).** There is no canonical isomorphism $L_\varphi\cong L_\psi$ for $\varphi\neq\psi$. The set of isomorphisms is a torsor under $\mathbb{C}^\times$, and the choice of an exchange is the choice of a matrix $A$ carrying one hyperplane to the other.
+**Corollary (the non-canonical exchange).** There is no canonical isomorphism $L_\ell\cong L_\nu$ for $\ell\neq\nu$. The set of isomorphisms is a torsor under $\mathbb{C}^\times$, and the choice of an exchange is the choice of a matrix $A$ carrying one hyperplane to the other.
 
 **Proof.** A canonical isomorphism would be a natural section of the $GL_6$-equivariant bundle of isomorphisms; the stabilizer of a line acts nontrivially on the fiber (by the scalar endomorphisms), so no such section exists. The set of isomorphisms is a coset of the stabilizer modulo the scalars.
 
@@ -310,7 +310,7 @@ $$
 \boxed{\ L=M_6P\cong\mathbb{C}^6,\qquad R=PM_6\cong L^*,\qquad M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^* .\ }
 $$
 
-The minimal left ideals are the columns $L_\varphi$ for the lines $\varphi$ of the dual; they form $\mathbb{P}^5$; they are all isomorphic, and the exchange is non-canonical, unique only up to $\mathbb{C}^\times$. The stabilizer of one column is the parabolic of dimension $31$.
+The minimal left ideals are the columns $L_\ell$ for the lines $\ell$ of the dual; they form $\mathbb{P}^5$; they are all isomorphic, and the exchange is non-canonical, unique only up to $\mathbb{C}^\times$. The stabilizer of one column is the parabolic of dimension $31$.
 
 The Peirce carrier
 
@@ -340,8 +340,8 @@ has dimension $1+5=6$; it is the row, the dual of the column. The minimal left i
 | $Q=I_6-P$ | the complementary idempotent |
 | $L=M_6P$ | the minimal left ideal, the column |
 | $R=PM_6$ | the minimal right ideal, the row |
-| $P_\varphi$ | the rank-one projector onto the line $\mathbb{C}\varphi$ |
-| $L_\varphi$ | the minimal left ideal of $P_\varphi$ |
+| $P_\ell$ | the rank-one projector onto the line $\mathbb{C}\ell$ |
+| $L_\ell$ | the minimal left ideal of $P_\ell$ |
 | $C(P)$ | the Peirce carrier $PMP\oplus PMQ$ |
 | $V_{5/2}$ | the six-dimensional highest-weight-$5/2$ module |
 

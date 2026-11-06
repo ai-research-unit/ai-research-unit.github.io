@@ -103,7 +103,7 @@ $$
 The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$
 
 $$
-\tilde R_\psi = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i \vec e_z,
+\tilde R_\Psi = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i \vec e_z,
 $$
 
 with $\omega_L = \gamma B_0$.
@@ -165,9 +165,9 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 ## What the Biquaternion Solution Illustrates
 
-**1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.** The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\psi = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
+**1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.** The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\Psi = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
 
-**2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
+**2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
 **3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
 
@@ -206,7 +206,7 @@ We have solved a second exercise in quantum physics — the Larmor precession of
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(r'_t) = \frac{\hbar}{2}\cos(\omega_L r'_t)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}(r'_t)$, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}(r'_t)$, and the trace formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.
 
@@ -224,7 +224,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\omega_L = \gamma B_0$ | Larmor frequency |
 | $\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
 | $\tilde{S}_x = \tfrac{\hbar}{2} i\vec e_x$ | Spin observable along $x$ |
-| $\tilde R_\psi = -\tfrac{\hbar\omega_L}{2} i\vec e_z$ | Hamiltonian |
+| $\tilde R_\Psi = -\tfrac{\hbar\omega_L}{2} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ | Evolution biquaternion |
 | $\tilde{Ϛ}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}(0)\tilde{U}(r'_t)^{*}$ | Evolved state |
 | $\langle\tilde{S}_x\rangle(r'_t) = \mathrm{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$ | Expectation value |

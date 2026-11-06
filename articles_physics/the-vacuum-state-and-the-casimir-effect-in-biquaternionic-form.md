@@ -10,7 +10,7 @@ A second trap is a factor of two. The bookkeeping of polarisations in the covari
 
 The division between what is established and what is interpretation is stated here and kept throughout.
 
-- **Established, and recomputed below.** The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{B}_{\Psi}$, and the trace formula $\mathrm{Tr}(\tilde\Pi_+\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\psi^{*})$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_+$ is defined below. The zero-point energy of the free Maxwell field is a **central scalar** — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
+- **Established, and recomputed below.** The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{B}_{\Psi}$, and the trace formula $\mathrm{Tr}(\tilde\Pi_+\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\Psi^{*})$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_+$ is defined below. The zero-point energy of the free Maxwell field is a **central scalar** — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
 $$
 \boxed{\;\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}}\;},
@@ -45,9 +45,9 @@ so the **vacuum idempotent** is the complementary one
 $$
 \boxed{\;\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{B}_{\Psi}\;}.
 $$
-Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde R_\psi\in\mathbb{B}_{\Psi}$ is then the trace formula
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ is then the trace formula
 $$
-\langle\tilde R_\psi\rangle_{0}=\mathrm{Tr}\big(|0\rangle_{*}\langle 0|\,\tilde R_\psi\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde R_\psi\big),
+\langle\tilde R_\Psi\rangle_{0}=\mathrm{Tr}\big(|0\rangle_{*}\langle 0|\,\tilde R_\Psi\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde R_\Psi\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.
 
@@ -88,7 +88,7 @@ E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.
 
-**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the **centre** $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ with $\tilde U=\exp(-i Hr'_t/\hbar)$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $c r_t$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$.
+**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the **centre** $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ with $\tilde U=\exp(-i Hr'_t/\hbar)$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $c r_t$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$.
 
 This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A **constant** central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the *variation* of a central scalar observable, and that is all the Casimir effect requires.
 
@@ -258,9 +258,9 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 | Feature | Status in the framework | Where it comes from |
 |---|---|---|
 | Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$; trace formula |
-| Vacuum expectation values (one mode) | Native | $\langle\tilde R_\psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\psi^{*})$ |
+| Vacuum expectation values (one mode) | Native | $\langle\tilde R_\Psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\Psi^{*})$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=i\vec e_z$ |
-| Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde R_\psi$; commutes |
+| Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde R_\Psi$; commutes |
 | Two physical transverse polarisations | Native | $\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ |
 | Indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{B}_{\Phi}$ |
 | Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\sigma_{\mathrm{met},r}=2$; two transverse polarisations |
@@ -285,7 +285,7 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 1. **The regularisation principle.** The algebra contains no criterion selecting a regularisation; both routes above imported the standard analytic continuation. Is there any biquaternion structure — for instance, the uniqueness of the continuation of a sector-valued zeta function — that could select one, or is the choice irreducibly extrinsic? The parents record the same openness for the zero-point energy.
 
-2. **The central-scalar interpretation.** The zero-point energy is a central scalar and its *variation* is observable. Is the identification of "vacuum energy" with "the scalar part of $\tilde R_\psi$" more than an interpretation, or does it have content — for example, a statement about which quantities can appear in a force?
+2. **The central-scalar interpretation.** The zero-point energy is a central scalar and its *variation* is observable. Is the identification of "vacuum energy" with "the scalar part of $\tilde R_\Psi$" more than an interpretation, or does it have content — for example, a statement about which quantities can appear in a force?
 
 3. **Native boundaries.** Can the conducting plate be described as an interface of the local complex structure, so that the boundary condition is derived rather than imposed? This is the most concrete route by which the framework might add something to the standard Casimir calculation, and it is not taken here.
 
@@ -299,7 +299,7 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 ## Summary
 
-The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.
+The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\Psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.
 
 The **zero-point energy** of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.
 

@@ -13,7 +13,7 @@ Positivity of the involution is assumed in this article. For a Clifford algebra 
 
 ## The Completely Positive Maps
 
-**Definition.** Let $A$ be a finite-dimensional $C^{*}$-algebra with involution ${}^{\dagger}$ and let $\Phi : A \to A$ be linear. For $k \ge 1$ let $A\otimes M_k$ carry the involution $(a_{ij})^{\dagger} = (a_{ji}^{\dagger})$ and let $\Phi_k = \Phi\otimes\mathrm{id}_k$ act entrywise. The map $\Phi$ is **positive** if $\Phi(a^{\dagger}a) \in P$ for every $a$, and **completely positive** if $\Phi_k$ is positive for every $k$.
+**Definition.** Let $A$ be a finite-dimensional $C^{*}$-algebra with involution ${}^{\dagger}$ and let $\Lambda : A \to A$ be linear. For $k \ge 1$ let $A\otimes M_k$ carry the involution $(a_{ij})^{\dagger} = (a_{ji}^{\dagger})$ and let $\Lambda_k = \Lambda\otimes\mathrm{id}_k$ act entrywise. The map $\Lambda$ is **positive** if $\Lambda(a^{\dagger}a) \in P$ for every $a$, and **completely positive** if $\Lambda_k$ is positive for every $k$.
 
 **Theorem (the sandwich is completely positive).** For every $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the map
 
@@ -47,29 +47,29 @@ and on $U$ the map is the inner automorphism $\mathrm{Sd}_x = \mathrm{Ad}_x$.
 
 ## Choi's Theorem and the Kraus Form
 
-**Theorem (Choi).** Let $\Phi : M_d(\mathbb{C}) \to M_d(\mathbb{C})$ be linear, and let
+**Theorem (Choi).** Let $\Lambda : M_d(\mathbb{C}) \to M_d(\mathbb{C})$ be linear, and let
 
 $$
-C_{\Phi} = \sum_{i,j=1}^{d} E_{ij}\otimes\Phi(E_{ij}) \in M_d(\mathbb{C})\otimes M_d(\mathbb{C})
+C_{\Lambda} = \sum_{i,j=1}^{d} E_{ij}\otimes\Lambda(E_{ij}) \in M_d(\mathbb{C})\otimes M_d(\mathbb{C})
 $$
 
-be its **Choi matrix**, with $E_{ij}$ the matrix units. Then $\Phi$ is completely positive if and only if $C_{\Phi} \ge 0$; a completely positive $\Phi$ has a **Kraus representation**
+be its **Choi matrix**, with $E_{ij}$ the matrix units. Then $\Lambda$ is completely positive if and only if $C_{\Lambda} \ge 0$; a completely positive $\Lambda$ has a **Kraus representation**
 
 $$
-\boxed{\;\Phi(y) = \sum_{r=1}^{R} V_r\,y\,V_r^{\dagger}\;},
+\boxed{\;\Lambda(y) = \sum_{r=1}^{R} V_r\,y\,V_r^{\dagger}\;},
 $$
 
-of minimal length $R = \operatorname{rank}C_{\Phi}$, and $\Phi$ is unital exactly when $\sum_r V_rV_r^{\dagger} = 1$.
+of minimal length $R = \operatorname{rank}C_{\Lambda}$, and $\Lambda$ is unital exactly when $\sum_r V_rV_r^{\dagger} = 1$.
 
 **Corollary (the Clifford reading).** Under the identification $\mathrm{Cl}_{0,n}\otimes\mathbb{C}\cong M_{2^{m}}(\mathbb{C})$, the sandwich $\mathrm{Sd}_x$ is the completely positive map with Choi matrix of rank one and a single Kraus operator $V = x$, and its complete positivity is the $R=1$ case of the theorem. Every completely positive map of the algebra is a sum of such sandwiches, and every **unital** completely positive map is a sum $\sum_r\mathrm{Sd}_{x_r}$ with $\sum_r x_rx_r^{\dagger} = 1$, the **mixed unitary channels** being the case in which each $x_r$ is unitary.
 
 **Proof.** The Kraus form is the theorem; substituting $R=1$, $V = x$ gives $\mathrm{Sd}_x$, and the unitality condition $\sum_rV_rV_r^{\dagger}=1$ is $\sum_rx_rx_r^{\dagger}=1$.
 
-**Remark (Stinespring).** Equivalently, a completely positive map on the algebra is the compression of a representation on a larger Hilbert space, $\Phi(y) = P\,\pi(y)\,P$ with $P$ a projection; for the sandwich, $\pi$ is the representation on the tensor product with the Kraus space and $P$ the projection onto the range of $x$. The two descriptions are the same statement in two languages, and the one used in the corpus is the Kraus form.
+**Remark (Stinespring).** Equivalently, a completely positive map on the algebra is the compression of a representation on a larger Hilbert space, $\Lambda(y) = P\,\pi(y)\,P$ with $P$ a projection; for the sandwich, $\pi$ is the representation on the tensor product with the Kraus space and $P$ the projection onto the range of $x$. The two descriptions are the same statement in two languages, and the one used in the corpus is the Kraus form.
 
 ## Channels with a Clifford Structure
 
-**Definition.** A **Clifford channel** of the algebra is a completely positive, trace-preserving map $\Phi$ with respect to the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
+**Definition.** A **Clifford channel** of the algebra is a completely positive, trace-preserving map $\Lambda$ with respect to the trace form $T(x,y) = \operatorname{Tr}(m_{xy})$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*.
 
 **Proposition.** The sandwich $\mathrm{Sd}_x$ preserves the trace functional $\mathrm{Sc}$ exactly when $x \in U$:
 
@@ -85,18 +85,18 @@ $$
 
 ## The Biquaternion Instance
 
-The biquaternion algebra is the case $d=2$: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with the Hermitian conjugation ${}^{*}$ and the matrix model $\mathsf{M}_2$. A completely positive map of $\mathbb{B}$ has a $4\times4$ Choi matrix, and its Kraus form has $r=\operatorname{rank}C_{\Phi}\le d^{2}=4$ terms; the maps of $\mathbb{B}$ are therefore the general maps of this article, and the sandwich $\mathrm{Sd}_{\tilde{Q}}$ of an element is the rank-one case.
+The biquaternion algebra is the case $d=2$: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with the Hermitian conjugation ${}^{*}$ and the matrix model $\mathsf{M}_2$. A completely positive map of $\mathbb{B}$ has a $4\times4$ Choi matrix, and its Kraus form has $r=\operatorname{rank}C_{\Lambda}\le d^{2}=4$ terms; the maps of $\mathbb{B}$ are therefore the general maps of this article, and the sandwich $\mathrm{Sd}_{\tilde{Q}}$ of an element is the rank-one case.
 
 **The diagonal projection.** Let
 
 $$
-\Phi=\tfrac12\mathrm{Sd}_{e_t}+\tfrac12\mathrm{Sd}_{i\vec e_z}.
+\Lambda=\tfrac12\mathrm{Sd}_{e_t}+\tfrac12\mathrm{Sd}_{i\vec e_z}.
 $$
 
 Since $\mathsf{M}_2(i\vec e_z)=\sigma_3$,
 
 $$
-\Phi(\tilde Q_2)=\tfrac12\bigl(\tilde Q_2+\sigma_3\tilde Q_2\sigma_3\bigr)=\operatorname{diag}(\tilde Q_2),
+\Lambda(\tilde Q_2)=\tfrac12\bigl(\tilde Q_2+\sigma_3\tilde Q_2\sigma_3\bigr)=\operatorname{diag}(\tilde Q_2),
 $$
 
 the projection onto the diagonal. Its Choi matrix is the sum of two rank-one positive matrices and has rank two; the map is unital and trace preserving, completely positive, and not an automorphism. Its image is the diagonal subalgebra $\mathbb{C}e_t\oplus\mathbb{C}(i\vec e_z)$ in the chosen basis, of complex dimension two; the Hermitian part of that subalgebra is the real span of $e_t$ and $i\vec e_z$, of real dimension two, inside the four-dimensional Hermitian sector $\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}$.
@@ -117,10 +117,10 @@ When the dagger is a positive involution, the Clifford algebra is a finite-dimen
 
 | Symbol | Meaning |
 |---|---|
-| $\Phi_k = \Phi\otimes\mathrm{id}_k$ | Amplification of a map to $A\otimes M_k$ |
+| $\Lambda_k = \Lambda\otimes\mathrm{id}_k$ | Amplification of a map to $A\otimes M_k$ |
 | $\mathrm{Sd}_x(y) = xyx^{\dagger}$ | Sandwich, completely positive of Kraus rank one |
-| $V_r$ | Kraus operators, $\Phi(y)=\sum_rV_ryV_r^{\dagger}$ |
-| $C_{\Phi}$ | Choi matrix, $\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ |
+| $V_r$ | Kraus operators, $\Lambda(y)=\sum_rV_ryV_r^{\dagger}$ |
+| $C_{\Lambda}$ | Choi matrix, $\sum_{ij}E_{ij}\otimes\Lambda(E_{ij})$ |
 | $U$ | Unitary slice, group of unitary channels |
 | $U/Z(U)$ | Group of inner automorphisms |
 | $T(x,y) = \operatorname{Tr}(m_{xy})$ | Trace form, defining trace-preserving channels |

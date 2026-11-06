@@ -80,11 +80,11 @@ The conjugation $\flat$ is the algebra's real structure, not the mass term (§*T
 The plane-wave solutions are
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P\tilde{R}_\varphi^{\natural}\big)/\hbar\Big),
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P\tilde{R}_\Phi^{\natural}\big)/\hbar\Big),
 \qquad
 \frac{\tilde P}{\hbar}=e_t\frac{iE}{\hbar c}+\vec k,
 \qquad
-\tilde R_\varphi=e_t(i c r'_t)+\vec r,
+\tilde R_\Phi=e_t(i c r'_t)+\vec r,
 $$
 
 with $\tilde{Ξ}_{\mathrm{sp},0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
@@ -253,7 +253,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per value of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
-| $\tilde R_\varphi$ | The four-position biquaternion of the parent |
+| $\tilde R_\Phi$ | The four-position biquaternion of the parent |
 | $\tilde P/\hbar$ | The wave biquaternion of the parent, $\vec k=\vec p/\hbar$ |
 | $\tilde P\tilde P^{\natural} = -m^2c^2$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |

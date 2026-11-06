@@ -6,21 +6,21 @@ A quantum system whose Hamiltonian is varied slowly around a closed loop in a pa
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
-This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{\Psi}$ (Hermitian, the informational sector), $\mathbb{B}_{\Phi}$ (anti-Hermitian, the material sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}_{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
+This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{\Psi}$ (Hermitian, the informational sector), $\mathbb{B}_{\Phi}$ (anti-Hermitian, the material sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}_{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\Psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
 2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
 5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
 
-**Which case.** Throughout the article the level is **non-degenerate** and the Berry phase is **abelian** (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec r_\psi|$, and it is required to stay bounded away from zero along the path; at $\vec r_\psi = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section *Degenerate Levels and the Abelian Case* states exactly why, and leaves it as a gap.
+**Which case.** Throughout the article the level is **non-degenerate** and the Berry phase is **abelian** (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec r_\Psi|$, and it is required to stay bounded away from zero along the path; at $\vec r_\Psi = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section *Degenerate Levels and the Abelian Case* states exactly why, and leaves it as a gap.
 
 ## The Adiabatic Setting and the Two Phases
 
-Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde R_\psi(R) \in \mathbb{B}_{\Psi}$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The **adiabatic theorem** states that if the gap
+Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde R_\Psi(R) \in \mathbb{B}_{\Psi}$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The **adiabatic theorem** states that if the gap
 
 $$
 \Delta(R) = \min_{m \neq n}\bigl|E_m(R) - E_n(R)\bigr|
@@ -32,7 +32,7 @@ $$
 |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}} E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle .
 $$
 
-Substituting into the Schrödinger equation $i\hbar\,\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle = \tilde R_\psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
+Substituting into the Schrödinger equation $i\hbar\,\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle = \tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
 
 $$
 d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
@@ -53,14 +53,14 @@ an integer multiple of $2\pi$. The closed-loop phase is therefore well defined *
 For a two-level system in the biquaternion framework, the relevant Hamiltonian is
 
 $$
-\tilde R_\psi(\vec R) = \tfrac12\, i\,\vec R = \tfrac12\, i\,(R_1 \vec e_x + R_2 \vec e_y + R_3 \vec e_z) \in \mathbb{B}_{\Psi} ,
+\tilde R_\Psi(\vec R) = \tfrac12\, i\,\vec R = \tfrac12\, i\,(R_1 \vec e_x + R_2 \vec e_y + R_3 \vec e_z) \in \mathbb{B}_{\Psi} ,
 \qquad \vec R \in \mathbb{R}^3 ,
 $$
 
 which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i_{\mathrm{mat}}\sigma_\mu$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
 
 $$
-\tilde R_\psi = \tfrac{R}{2}\,\tilde\Pi_1(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_2(\vec u_R) ,
+\tilde R_\Psi = \tfrac{R}{2}\,\tilde\Pi_1(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_2(\vec u_R) ,
 \qquad
 \tilde\Pi_{1,2}(\vec u_R) = \tfrac12\bigl(e_t \pm i\vec u_R\bigr) ,
 \qquad
@@ -79,7 +79,7 @@ which is exactly the **Bloch sphere** of pure states of $\mathbb{B}_{\Psi}$. Thi
 
 ## The Eigenstate Is a Spinor, Not an Idempotent
 
-The instantaneous eigenstate of $\tilde R_\psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
+The instantaneous eigenstate of $\tilde R_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
 
 **Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi(\lambda)$ be a smooth family of idempotents with $\mathrm{Tr}(\tilde\Pi) = 1$. Then
 
@@ -220,7 +220,7 @@ It is worth recording that the curvature is a **local** object while the connect
 Take a spin-1/2 in a magnetic field whose direction rotates at a fixed polar angle, so that in the biquaternion framework
 
 $$
-\tilde R_\psi(r'_t) = \tfrac12\,i\,\vec R(r'_t) , \qquad
+\tilde R_\Psi(r'_t) = \tfrac12\,i\,\vec R(r'_t) , \qquad
 \vec R(r'_t) = R\bigl(\sin\theta_0\cos\omega r'_t,\ \sin\theta_0\sin\omega r'_t,\ \cos\theta_0\bigr) ,
 $$
 
@@ -289,7 +289,7 @@ $$
 
 giving $\gamma_- = +\theta_{\mathrm{sol}}/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta_{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta_{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
 
-**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp},+}^{\dagger}\tilde{Ξ}_{\mathrm{sp},+}) = 1$; the reproduction $\tilde{Ξ}_{\mathrm{sp},+}\tilde{Ξ}_{\mathrm{sp},+}^{\dagger} = \tilde\Pi_1(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde R_\psi\tilde{Ξ}_{\mathrm{sp},+} = \tfrac{R}{2}\tilde{Ξ}_{\mathrm{sp},+}$; the spectral decomposition $\tilde R_\psi = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
+**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp},+}^{\dagger}\tilde{Ξ}_{\mathrm{sp},+}) = 1$; the reproduction $\tilde{Ξ}_{\mathrm{sp},+}\tilde{Ξ}_{\mathrm{sp},+}^{\dagger} = \tilde\Pi_1(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde R_\Psi\tilde{Ξ}_{\mathrm{sp},+} = \tfrac{R}{2}\tilde{Ξ}_{\mathrm{sp},+}$; the spectral decomposition $\tilde R_\Psi = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
 
 ## Quantisation on a Closed Surface
 
@@ -365,15 +365,15 @@ make $\pi_z$ a $k$-plane bundle wherever it is defined, and the existence questi
 2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_k(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
 3. **$s_3$, a nowhere-zero eigenvector field.** Given the first two, the spectral bundle $\pi_z$ restricts to a $k$-plane bundle over $B$, and a nowhere-zero cross-section of it is a nowhere-zero eigenvector field. Its existence is the vanishing question for that bundle, and the Chern number computed above is its invariant.
 
-So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = c r_t \pm \lvert\vec r_\psi\rvert$ are continuous and exchange only where $|\vec r_\psi| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
+So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = c r_t \pm \lvert\vec r_\Psi\rvert$ are continuous and exchange only where $|\vec r_\Psi| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
 
 **Boundary.** The classification is a statement of homotopy theory, and this article records it and does not use it. What the corpus takes from it is the sharp form of the assumption it has been making: the "gap does not close along the surface" condition, used above only to make an integral well defined, is the condition that the first two cross-sections extend over the whole surface, and an obstruction at any of the three steps is a topological reason for a phase that cannot be computed. The theory's machinery — the diagram, the lifting spaces, the obstruction classes — is not imported into the algebra, and no biquaternionic statement is claimed to follow from it.
 
 ## Degenerate Levels and the Abelian Case
 
-Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = c r_t \pm |\vec r_\psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{1,2}(\vec u_\psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
+Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = c r_t \pm |\vec r_\Psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{1,2}(\vec u_\Psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
 
-**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $c r_t + |\vec r_\psi| = c r_t - |\vec r_\psi|$, i.e. $|\vec r_\psi| = 0$, i.e. $\vec r_\psi = 0$. So the only degenerate Hamiltonian in $\mathbb{B}_{\Psi}$ is a multiple of the identity, $\tilde R_\psi = c r_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
+**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $c r_t + |\vec r_\Psi| = c r_t - |\vec r_\Psi|$, i.e. $|\vec r_\Psi| = 0$, i.e. $\vec r_\Psi = 0$. So the only degenerate Hamiltonian in $\mathbb{B}_{\Psi}$ is a multiple of the identity, $\tilde R_\Psi = c r_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
 
 This is a case where the framework's smallness is informative rather than limiting: the reason the Berry phase is abelian here is not a choice of convenience but a fact about a two-level algebra, and the reason it cannot be made non-abelian is the same fact.
 
@@ -394,7 +394,7 @@ and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}_{\
 What the framework does supply, beyond the rewriting, is a set of structural placements.
 
 - **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{B}_{\Psi}$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
-- **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
+- **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
 - **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}_{\mathrm{sp}}|d\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i c r'_t$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
@@ -427,7 +427,7 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
 
-In the biquaternion framework the instantaneous eigenstate of $\tilde R_\psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
+In the biquaternion framework the instantaneous eigenstate of $\tilde R_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
 
 $$
 \mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right)} ,
@@ -454,7 +454,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ its $*$-unitary part |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ | Hermitian Hamiltonian (observable) |
+| $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | Hermitian Hamiltonian (observable) |
 | $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Idempotent (pure state / eigen-idempotent) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace formula (Born rule and the pairing used for the connection) |
 | $\mathbb{B}\tilde\Pi$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |

@@ -10,33 +10,33 @@ Throughout, $F$ is a field, $V$ is a finite-dimensional $F$-linear space, $B$ is
 
 ## The Pairing Induced on the Dual
 
-**Definition.** For $\varphi \in V^{*}$ let $x_{\varphi}$ be the unique vector with $B(x_{\varphi},y) = \varphi(y)$ for all $y$, and define
+**Definition.** For $\ell \in V^{*}$ let $\ell^{\sharp}$ be the unique vector with $B(\ell^{\sharp},y) = \ell(y)$ for all $y$, and define
 
 $$
-B^{*}(\varphi,\psi) = B(x_{\varphi},x_{\psi}) .
+B^{*}(\ell,m) = B(\ell^{\sharp},m^{\sharp}) .
 $$
 
-**Proposition.** $B^{*}$ is a non-degenerate reflexive pairing on $V^{*}$ with the same involution $\varsigma$ and the same reflexive sign $\varepsilon$ as $B$; the assignment $\varphi \mapsto x_{\varphi}$ is an isomorphism $V^{*} \to V$ carrying $B^{*}$ to $B$, and it is $\varsigma$-semilinear in the sesquilinear case.
+**Proposition.** $B^{*}$ is a non-degenerate reflexive pairing on $V^{*}$ with the same involution $\varsigma$ and the same reflexive sign $\varepsilon$ as $B$; the assignment $\ell \mapsto \ell^{\sharp}$ is an isomorphism $V^{*} \to V$ carrying $B^{*}$ to $B$, and it is $\varsigma$-semilinear in the sesquilinear case.
 
-**Proof.** Well-definedness and bilinearity are inherited; non-degeneracy follows because $\varphi \mapsto x_\varphi$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto \langle x,\cdot\rangle$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.
+**Proof.** Well-definedness and bilinearity are inherited; non-degeneracy follows because $\ell \mapsto \ell^\sharp$ is a bijection, being the composite of the linear isomorphism $V \to V^{*}$, $x \mapsto \langle x,\cdot\rangle$, with the inverse. The reflexivity and the sign are inherited from $B$, and the semilinearity is that of the identification.
 
-**Lemma (the transpose transported is the adjoint).** For $C \in \operatorname{End}_F(V)$ and $\varphi \in V^{*}$ the representing vector of the transpose is
+**Lemma (the transpose transported is the adjoint).** For $C \in \operatorname{End}_F(V)$ and $\ell \in V^{*}$ the representing vector of the transpose is
 
 $$
-\boxed{\;x_{C^{\mathsf{T}}\varphi} = C^{*}x_{\varphi}\;} .
+\boxed{\;x_{C^{\mathsf{T}}\ell} = C^{*}\ell^{\sharp}\;} .
 $$
 
-**Proof.** For every $z$, $B(C^{*}x_{\varphi}, z) = B(x_{\varphi}, Cz) = \varphi(Cz) = (C^{\mathsf{T}}\varphi)(z)$; the representing vector is unique, giving the identity.
+**Proof.** For every $z$, $B(C^{*}\ell^{\sharp}, z) = B(\ell^{\sharp}, Cz) = \ell(Cz) = (C^{\mathsf{T}}\ell)(z)$; the representing vector is unique, giving the identity.
 
 **Proposition (the transpose as an adjoint).** For $A \in \operatorname{End}_F(V)$ the transpose $A^{\mathsf{T}} : V^{*} \to V^{*}$ satisfies
 
 $$
-\boxed{\;B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}\bigl(\varphi, (A^{*})^{\mathsf{T}}\psi\bigr)\;} ,
+\boxed{\;B^{*}(A^{\mathsf{T}}\ell,m) = B^{*}\bigl(\ell, (A^{*})^{\mathsf{T}}m\bigr)\;} ,
 $$
 
 so the $B^{*}$-adjoint of the transpose is the transpose of the $B$-adjoint; under the identification $V^{*} \cong V$ the transpose of $A$ corresponds to the adjoint of $A$.
 
-**Proof.** By the lemma applied to $C=A$, the left side is $B(A^{*}x_{\varphi},x_{\psi}) = B(x_{\varphi}, A x_{\psi})$; by the lemma applied to $C=A^{*}$ and $(A^{*})^{*}=A$, the right side is $B(x_{\varphi}, A x_{\psi})$. For the last statement, the lemma with $C=A$ says exactly that $A^{\mathsf{T}}$ transported to $V$ is $A^{*}$.
+**Proof.** By the lemma applied to $C=A$, the left side is $B(A^{*}\ell^{\sharp},m^{\sharp}) = B(\ell^{\sharp}, A m^{\sharp})$; by the lemma applied to $C=A^{*}$ and $(A^{*})^{*}=A$, the right side is $B(\ell^{\sharp}, A m^{\sharp})$. For the last statement, the lemma with $C=A$ says exactly that $A^{\mathsf{T}}$ transported to $V$ is $A^{*}$.
 
 ## The Two Dualities Commute
 
@@ -58,22 +58,22 @@ and the assignment $A \mapsto A^{*_B}$ transported to $V^{*}$ by the identificat
 
 ## The Fixed Part and the Self-Adjoint Operators
 
-**Proposition.** A functional $\varphi$ is fixed by the transported involution exactly when its representing vector $x_{\varphi}$ is $B$-self-adjoint in the image of the corresponding operator; the fixed part of the involution on $\operatorname{End}_F(V^{*})$ therefore corresponds to the self-adjoint operators of $\operatorname{End}_F(V)$, and the unitary elements correspond to one another.
+**Proposition.** A functional $\ell$ is fixed by the transported involution exactly when its representing vector $\ell^{\sharp}$ is $B$-self-adjoint in the image of the corresponding operator; the fixed part of the involution on $\operatorname{End}_F(V^{*})$ therefore corresponds to the self-adjoint operators of $\operatorname{End}_F(V)$, and the unitary elements correspond to one another.
 
 **Proof.** The transport is an isomorphism of algebras, and it carries the fixed points and the unitary elements of one involution to those of the other.
 
 ## Summary
 
-A non-degenerate reflexive pairing $B$ on $V$ induces a pairing $B^{*}$ on the dual $V^{*}$ by $B^{*}(\varphi,\psi) = B(x_\varphi,x_\psi)$, with the same involution and reflexive sign, and the assignment $\varphi\mapsto x_\varphi$ is an isomorphism carrying $B^{*}$ to $B$. Under this identification the transpose of an endomorphism corresponds to its adjoint, $B^{*}(A^{\mathsf{T}}\varphi,\psi) = B^{*}(\varphi,A^{*}\psi)$, and consequently the two dualities commute: $(A^{\mathsf{T}})^{*_{B^{*}}} = (A^{*_B})^{\mathsf{T}}$. The $B^{*}$-involution on the endomorphisms of the dual is the transport of the $B$-involution on the endomorphisms of the space, so the two have the same type, the same fixed part and the same unitary elements under the identification; the standard pairing on $F^n$ is the case where the two dualities coincide.
+A non-degenerate reflexive pairing $B$ on $V$ induces a pairing $B^{*}$ on the dual $V^{*}$ by $B^{*}(\ell,m) = B(\ell^\sharp,m^\sharp)$, with the same involution and reflexive sign, and the assignment $\ell\mapsto \ell^\sharp$ is an isomorphism carrying $B^{*}$ to $B$. Under this identification the transpose of an endomorphism corresponds to its adjoint, $B^{*}(A^{\mathsf{T}}\ell,m) = B^{*}(\ell,A^{*}m)$, and consequently the two dualities commute: $(A^{\mathsf{T}})^{*_{B^{*}}} = (A^{*_B})^{\mathsf{T}}$. The $B^{*}$-involution on the endomorphisms of the dual is the transport of the $B$-involution on the endomorphisms of the space, so the two have the same type, the same fixed part and the same unitary elements under the identification; the standard pairing on $F^n$ is the case where the two dualities coincide.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $B$ | the pairing on $V$ |
-| $B^{*}(\varphi,\psi)=B(x_\varphi,x_\psi)$ | the induced pairing on $V^{*}$ |
-| $x_\varphi$ | the $B$-dual vector of $\varphi$, $B(x_\varphi,y)=\varphi(y)$ |
-| $A^{\mathsf{T}}\varphi = \varphi A$ | the transpose on the dual |
+| $B^{*}(\ell,m)=B(\ell^\sharp,m^\sharp)$ | the induced pairing on $V^{*}$ |
+| $\ell^\sharp$ | the $B$-dual vector of $\ell$, $B(\ell^\sharp,y)=\ell(y)$ |
+| $A^{\mathsf{T}}\ell = \ell A$ | the transpose on the dual |
 | $A^{*}$ | the $B$-adjoint on $V$ |
 | $(A^{\mathsf{T}})^{*_{B^{*}}}=(A^{*_B})^{\mathsf{T}}$ | commutation of the two dualities |
 | $\Phi_B, \Phi_{B^{*}}$ | the involutions on the two endomorphism algebras |

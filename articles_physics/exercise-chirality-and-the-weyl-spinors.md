@@ -161,10 +161,10 @@ $$
 
 where the last inclusion uses $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$.
 
-**Biquaternion norm.** Write $H = c r_t\,e_t + i\vec r_\psi$. Then $V = ic r_t\,e_t - \vec r_\psi$, and
+**Biquaternion norm.** Write $H = c r_t\,e_t + i\vec r_\Psi$. Then $V = ic r_t\,e_t - \vec r_\Psi$, and
 
 $$
-\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\langle H\rangle_{\natural} = -c^2 r_t^2 + \vec r_\psi^2 \qquad(\vec r_\psi^2=|\vec r_\psi|^2),
+\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\langle H\rangle_{\natural} = -c^2 r_t^2 + \vec r_\Psi^2 \qquad(\vec r_\Psi^2=|\vec r_\Psi|^2),
 $$
 
 which is the $(3,1)$ Minkowski form of $\mathbb{B}_{\Phi}$. The check is the single-element case: for $v = w$ of one value one has $H = ww^{*}$, whose quaternionic norm vanishes (residual $<10^{-14}$ over $100$ elements), so
@@ -245,7 +245,7 @@ at residual $5\times10^{-15}$, because $\bar{\tilde U}^{\,*} = \tilde U^{-1}$ by
 The solutions have the expected limits.
 
 - **Rapidity limits.** As $\theta_{\mathrm{rpd}}\to0$ both parts become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\theta_{\mathrm{rpd}}$ the parts diverge exponentially, one part stretched by $\exp(\theta_{\mathrm{rpd}}/2)$ and the other contracted by $\exp(-\theta_{\mathrm{rpd}}/2)$.
-- **$v = \pm w$ (one element):** $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -c^2 r_t^2+\vec r_\psi^2$.
+- **$v = \pm w$ (one element):** $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -c^2 r_t^2+\vec r_\Psi^2$.
 - **$\theta = 2\pi$ versus $4\pi$:** the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.
 
 ## What the Solutions Illustrate

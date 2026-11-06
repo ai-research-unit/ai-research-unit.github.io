@@ -67,11 +67,11 @@ $$
 
 **Example (the matrix algebra).** For $X = \mathbb{K}^{n}$ the algebra $B(X)$ is the matrix algebra $M_{n}(\mathbb{K})$, the operator norm is the spectral norm $\lVert A\rVert = \sigma_{1}(A)$ of *Topological Tensor Products*, and the Neumann series is the classical expansion $(\mathrm{id} - A)^{-1} = \sum_{n}A^{n}$ for a matrix with spectral norm below one; the group of invertibles is open and dense.
 
-**Example (the diagonal algebra).** On $\ell^{n}$ the diagonal operators $D_{\varphi}$ with $\varphi \in \ell^{\infty}$ form a closed commutative subalgebra of $B(\ell^{n})$ isometric to $\ell^{\infty}$, with $\lVert D_{\varphi}\rVert = \lVert \varphi\rVert_{\infty}$ and $D_{\varphi}D_{\psi} = D_{\varphi\psi}$; the subalgebra is isomorphic to the $C(K)$ multiplication operators of the compact case.
+**Example (the diagonal algebra).** On $\ell^{n}$ the diagonal operators $D_{u}$ with $u \in \ell^{\infty}$ form a closed commutative subalgebra of $B(\ell^{n})$ isometric to $\ell^{\infty}$, with $\lVert D_{u}\rVert = \lVert u\rVert_{\infty}$ and $D_{u}D_{v} = D_{uv}$; the subalgebra is isomorphic to the $C(K)$ multiplication operators of the compact case.
 
 **Example (the multiplication operators).** On $C(K)$ for a compact Hausdorff space $K$ the operators $M_{f}(g) = fg$ form a commutative subalgebra of $B(C(K))$ isometric to $C(K)$, and $\lVert M_{f}\rVert = \lVert f\rVert_{\infty}$; the subalgebra is closed because convergence in the operator norm is uniform convergence of the multipliers.
 
-**Example (the operators that attain their norm).** The identity attains its norm $1$ at every unit vector, and the right shift on $\ell^{n}$ attains its norm $1$ at every unit vector; the diagonal operator $D_{\varphi}$ with $\varphi_{k} = 1 - 1/k$ has norm $1$, the supremum of $\lvert \varphi_{k}\rvert$ over $k$, and does not attain it at any unit vector, only in the limit. The operator norm is a supremum in general, not a maximum.
+**Example (the operators that attain their norm).** The identity attains its norm $1$ at every unit vector, and the right shift on $\ell^{n}$ attains its norm $1$ at every unit vector; the diagonal operator $D_{u}$ with $u_{k} = 1 - 1/k$ has norm $1$, the supremum of $\lvert u_{k}\rvert$ over $k$, and does not attain it at any unit vector, only in the limit. The operator norm is a supremum in general, not a maximum.
 
 ## Summary
 
@@ -90,7 +90,7 @@ On the bounded operators between normed spaces the operator norm makes $B(X, Y)$
 | $\lVert T'\rVert = \lVert T\rVert$ | Isometry of the transpose |
 | $q : X \to X/M$, $\lVert \overline{T}\rVert = \lVert T\rVert$ | Quotient norm and induced operator |
 | $M_{n}(\mathbb{K})$ | Matrix algebra of $\mathbb{K}^{n}$ |
-| $D_{\varphi}$, $M_{f}$ | Diagonal and multiplication operators |
+| $D_{u}$, $M_{f}$ | Diagonal and multiplication operators |
 
 ## Further Reading
 

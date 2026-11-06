@@ -2,61 +2,61 @@
 
 ## Introduction
 
-The cohomology of a space is a graded ring, and a graded ring is a family of operators: the class $\varphi$ acts on the cohomology by left multiplication $\psi \mapsto \varphi \smile \psi$, and this **multiplication operator** $L_\varphi$ is a degree-$|\varphi|$ endomorphism. The product is recovered from the operators, the associativity of the product is the composition law of the operators, the graded commutativity of the product is the statement that the operators commute up to the Koszul sign, the Leibniz rule of the coboundary is the statement that $\delta$ is a derivation of the operator algebra, and the cap product is the action of the same classes on homology. Reading the cup product as an operator is not a restatement: it is the reading in which the cohomology appears as a ring of operators on itself, the pairing with homology appears as the adjointness of two representations, and the product appears as the operator induced by the diagonal.
+The cohomology of a space is a graded ring, and a graded ring is a family of operators: the class $\ell$ acts on the cohomology by left multiplication $m \mapsto \ell \smile m$, and this **multiplication operator** $L_\ell$ is a degree-$|\ell|$ endomorphism. The product is recovered from the operators, the associativity of the product is the composition law of the operators, the graded commutativity of the product is the statement that the operators commute up to the Koszul sign, the Leibniz rule of the coboundary is the statement that $\delta$ is a derivation of the operator algebra, and the cap product is the action of the same classes on homology. Reading the cup product as an operator is not a restatement: it is the reading in which the cohomology appears as a ring of operators on itself, the pairing with homology appears as the adjointness of two representations, and the product appears as the operator induced by the diagonal.
 
-The article develops the operator algebra of the cup product. It defines the left and right multiplication operators on cochains and on cohomology, proves that the two commute up to the Koszul sign and that the assignment $\varphi \mapsto L_\varphi$ is an injective graded ring homomorphism, exhibits the coboundary as a graded derivation and the multiplication by a cocycle as a chain map, identifies $L_\varphi$ and the cap product with $\varphi$ as adjoint operators under the evaluation pairing, and records the cases in which the operator is nilpotent, square-zero or of infinite order. The product itself — its cochain formula, the shuffle proof of graded commutativity, its naturality and the computations — is that of *Cup and Cap Products*; the evaluation pairing and the universal coefficient theorem are those of *Cohomology and the Universal Coefficient Theorem*; and the differential graded algebra of the cochains, of which these operators are the structure, is the instance in this category of the general theory of the planned *Homological Algebra* of Part I, written in parallel. The further operators that are not given by multiplication, the Steenrod operations, are the subject of *Classifying Spaces and Cohomology Operations*, and the operator that the multiplication by the Euler class defines on the cohomology of a double cover is the subject of *The Gysin Sequence of a Two-Fold Covering*.
+The article develops the operator algebra of the cup product. It defines the left and right multiplication operators on cochains and on cohomology, proves that the two commute up to the Koszul sign and that the assignment $\ell \mapsto L_\ell$ is an injective graded ring homomorphism, exhibits the coboundary as a graded derivation and the multiplication by a cocycle as a chain map, identifies $L_\ell$ and the cap product with $\ell$ as adjoint operators under the evaluation pairing, and records the cases in which the operator is nilpotent, square-zero or of infinite order. The product itself — its cochain formula, the shuffle proof of graded commutativity, its naturality and the computations — is that of *Cup and Cap Products*; the evaluation pairing and the universal coefficient theorem are those of *Cohomology and the Universal Coefficient Theorem*; and the differential graded algebra of the cochains, of which these operators are the structure, is the instance in this category of the general theory of the planned *Homological Algebra* of Part I, written in parallel. The further operators that are not given by multiplication, the Steenrod operations, are the subject of *Classifying Spaces and Cohomology Operations*, and the operator that the multiplication by the Euler class defines on the cohomology of a double cover is the subject of *The Gysin Sequence of a Two-Fold Covering*.
 
-Nothing analytic and nothing geometric is used. The article is the algebra of a graded ring acting on itself and on its dual; the manifold applications of the adjointness belong to *Poincaré Duality* and to the geometry of Part IV, and no distance, no norm and no measure is chosen. Throughout, $R$ is a commutative ring with identity $1 \neq 0$, the cohomology is the singular cohomology of *Cohomology and the Universal Coefficient Theorem*, $H^*(X;R)$ is its graded ring with the product of *Cup and Cap Products*, and $|\varphi|$ is the degree of a homogeneous class. The operators are written $L_\varphi$ and $R_\psi$ and the cap product operator is written $C_\varphi$; the Koszul sign $(-1)^{|\varphi||\psi|}$ is the one fixed in *Cup and Cap Products*.
+Nothing analytic and nothing geometric is used. The article is the algebra of a graded ring acting on itself and on its dual; the manifold applications of the adjointness belong to *Poincaré Duality* and to the geometry of Part IV, and no distance, no norm and no measure is chosen. Throughout, $R$ is a commutative ring with identity $1 \neq 0$, the cohomology is the singular cohomology of *Cohomology and the Universal Coefficient Theorem*, $H^*(X;R)$ is its graded ring with the product of *Cup and Cap Products*, and $|\ell|$ is the degree of a homogeneous class. The operators are written $L_\ell$ and $R_m$ and the cap product operator is written $C_\ell$; the Koszul sign $(-1)^{|\ell||m|}$ is the one fixed in *Cup and Cap Products*.
 
 ## The Multiplication Operators
 
 ### The Left and the Right Operator
 
-**Definition.** For a cohomology class $\varphi \in H^k(X;R)$, the **left multiplication operator** and the **right multiplication operator** are
+**Definition.** For a cohomology class $\ell \in H^k(X;R)$, the **left multiplication operator** and the **right multiplication operator** are
 
 $$
-L_\varphi : H^n(X;R) \longrightarrow H^{n+k}(X;R), \qquad L_\varphi(\psi) = \varphi \smile \psi,
+L_\ell : H^n(X;R) \longrightarrow H^{n+k}(X;R), \qquad L_\ell(m) = \ell \smile m,
 $$
 
 $$
-R_\varphi : H^n(X;R) \longrightarrow H^{n+k}(X;R), \qquad R_\varphi(\psi) = \psi \smile \varphi .
+R_\ell : H^n(X;R) \longrightarrow H^{n+k}(X;R), \qquad R_\ell(m) = m \smile \ell .
 $$
 
 The same symbols denote the operators on the cochain complex, defined by the same formulas on cochains.
 
-The operator $L_\varphi$ is $R$-linear, it raises the degree by $|\varphi|$, and it is determined by $\varphi$ because $L_\varphi(1) = \varphi$ with $1$ the unit class; so the assignment is injective as soon as the cohomology is unital. At the cochain level $L_\varphi$ need not commute with $\delta$, and the computation of the failure is the Leibniz rule.
+The operator $L_\ell$ is $R$-linear, it raises the degree by $|\ell|$, and it is determined by $\ell$ because $L_\ell(1) = \ell$ with $1$ the unit class; so the assignment is injective as soon as the cohomology is unital. At the cochain level $L_\ell$ need not commute with $\delta$, and the computation of the failure is the Leibniz rule.
 
-**Theorem.** The multiplication operator descends to cohomology: if $\varphi$ is a cocycle then $L_\varphi$ is a chain map of the cochain complex, $L_\varphi \delta = \delta L_\varphi$, and it induces the operator $L_{[\varphi]}$ on cohomology. For a general cochain the operator descends to cohomology as well, because the Leibniz rule writes the failure as a coboundary.
+**Theorem.** The multiplication operator descends to cohomology: if $\ell$ is a cocycle then $L_\ell$ is a chain map of the cochain complex, $L_\ell \delta = \delta L_\ell$, and it induces the operator $L_{[\ell]}$ on cohomology. For a general cochain the operator descends to cohomology as well, because the Leibniz rule writes the failure as a coboundary.
 
 *Proof.* The Leibniz rule of *Cup and Cap Products*,
 
 $$
-\delta(\varphi \smile \psi) = (\delta\varphi) \smile \psi + (-1)^{|\varphi|} \varphi \smile (\delta\psi),
+\delta(\ell \smile m) = (\delta\ell) \smile m + (-1)^{|\ell|} \ell \smile (\deltam),
 $$
 
-reads $\delta L_\varphi = L_{\delta\varphi} + (-1)^{|\varphi|} L_\varphi \delta$ as operators on cochains. If $\delta\varphi = 0$ the second term vanishes and $L_\varphi$ commutes with $\delta$; in general the formula shows that $L_\varphi$ carries cocycles to cocycles modulo coboundaries and coboundaries to coboundaries, so it induces a well-defined operator on cohomology.
+reads $\delta L_\ell = L_{\delta\ell} + (-1)^{|\ell|} L_\ell \delta$ as operators on cochains. If $\delta\ell = 0$ the second term vanishes and $L_\ell$ commutes with $\delta$; in general the formula shows that $L_\ell$ carries cocycles to cocycles modulo coboundaries and coboundaries to coboundaries, so it induces a well-defined operator on cohomology.
 
 ### The Composition and the Koszul Sign
 
-**Theorem.** For cohomology classes $\varphi$ and $\psi$,
+**Theorem.** For cohomology classes $\ell$ and $m$,
 
 $$
-\boxed{\;L_\varphi L_\psi = L_{\varphi \smile \psi}, \qquad\qquad
-L_\varphi L_\psi = (-1)^{|\varphi||\psi|}\, L_\psi L_\varphi\;} ,
+\boxed{\;L_\ell L_m = L_{\ell \smile m}, \qquad\qquad
+L_\ell L_m = (-1)^{|\ell||m|}\, L_m L_\ell\;} ,
 $$
 
-and the assignment $\varphi \mapsto L_\varphi$ is an injective homomorphism of graded rings from the graded-commutative ring $H^*(X;R)$ to the graded-commutative ring of endomorphisms of the graded module $H^*(X;R)$.
+and the assignment $\ell \mapsto L_\ell$ is an injective homomorphism of graded rings from the graded-commutative ring $H^*(X;R)$ to the graded-commutative ring of endomorphisms of the graded module $H^*(X;R)$.
 
-*Proof.* The first identity is associativity of the cup product, $(\varphi\smile\psi)\smile\theta = \varphi\smile(\psi\smile\theta)$. The second is graded commutativity: $L_\varphi L_\psi(\theta) = \varphi\smile\psi\smile\theta$ and $L_\psi L_\varphi(\theta)=\psi\smile\varphi\smile\theta$, and moving $\varphi$ past $\psi$ contributes the sign $(-1)^{|\varphi||\psi|}$ while $\theta$ is unaffected because $L_\varphi$ moves with its own sign only against the classes it passes. The two identities are consistent: applying graded commutativity to $\varphi\smile\psi$ gives $L_\varphi L_\psi = L_{\varphi\smile\psi} = (-1)^{|\varphi||\psi|}L_{\psi\smile\varphi} = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$. Injectivity is $L_\varphi(1)=\varphi$.
+*Proof.* The first identity is associativity of the cup product, $(\ell\smilem)\smile\theta = \ell\smile(m\smile\theta)$. The second is graded commutativity: $L_\ell L_m(\theta) = \ell\smilem\smile\theta$ and $L_m L_\ell(\theta)=m\smile\ell\smile\theta$, and moving $\ell$ past $m$ contributes the sign $(-1)^{|\ell||m|}$ while $\theta$ is unaffected because $L_\ell$ moves with its own sign only against the classes it passes. The two identities are consistent: applying graded commutativity to $\ell\smilem$ gives $L_\ell L_m = L_{\ell\smilem} = (-1)^{|\ell||m|}L_{m\smile\ell} = (-1)^{|\ell||m|}L_m L_\ell$. Injectivity is $L_\ell(1)=\ell$.
 
-So the cohomology ring acts on itself by multiplication, the action is faithful, and the only deviation from an honest commutative algebra of operators is the Koszul sign: the operators of odd classes anticommute, and those of even classes commute with everything. When $2$ is not invertible the relation $L_\varphi L_\psi = -L_\psi L_\varphi$ for odd $\varphi,\psi$ is compatible with $L_\varphi^2 = -L_\varphi^2$, so $L_\varphi^2 = 0$ on the classes of odd degree.
+So the cohomology ring acts on itself by multiplication, the action is faithful, and the only deviation from an honest commutative algebra of operators is the Koszul sign: the operators of odd classes anticommute, and those of even classes commute with everything. When $2$ is not invertible the relation $L_\ell L_m = -L_m L_\ell$ for odd $\ell,m$ is compatible with $L_\ell^2 = -L_\ell^2$, so $L_\ell^2 = 0$ on the classes of odd degree.
 
 ### Unitality and the Algebra of Operators
 
 The unit $1 \in H^0(X;R)$ gives $L_1 = \mathrm{id}$, so the image of the homomorphism is a subalgebra containing the identity. The **operator algebra of the cohomology** is the image
 
 $$
-\mathcal{L}(X;R) = \{L_\varphi : \varphi \in H^*(X;R)\} \subseteq \operatorname{End}_R\bigl(H^*(X;R)\bigr),
+\mathcal{L}(X;R) = \{L_\ell : \ell \in H^*(X;R)\} \subseteq \operatorname{End}_R\bigl(H^*(X;R)\bigr),
 $$
 
 isomorphic to $H^*(X;R)$ as a graded ring and acting faithfully and transitively on the left on the module $H^*(X;R)$. The set of all $R$-linear endomorphisms of the graded module is much larger; the operators that are multiplications are exactly the module endomorphisms over the ring, and the two agree with the whole endomorphism ring exactly when the cohomology is generated as a module over itself by the unit, which it is, so that the multiplications are the *left $H^*$-module endomorphisms* of the regular module.
@@ -68,14 +68,14 @@ isomorphic to $H^*(X;R)$ as a graded ring and acting faithfully and transitively
 **Definition.** A **graded derivation** of degree $d$ of the cochain algebra is an $R$-linear operator $D : C^n \to C^{n+d}$ with
 
 $$
-D(\varphi \smile \psi) = (D\varphi)\smile\psi + (-1)^{d|\varphi|}\,\varphi\smile(D\psi).
+D(\ell \smile m) = (D\ell)\smilem + (-1)^{d|\ell|}\,\ell\smile(Dm).
 $$
 
 The graded derivations form a graded Lie algebra under the **graded commutator** $[D,E] = D E - (-1)^{|D||E|} E D$.
 
-**Theorem.** The coboundary $\delta$ is a graded derivation of degree $1$ with $\delta^2 = 0$; the left multiplication $L_\varphi$ is a graded derivation of degree $|\varphi|$ exactly when $\delta\varphi = 0$; and the derivations of the cochain algebra generated by $\delta$ and the multiplications by cocycles have as their induced operators on cohomology the multiplications $L_{[\varphi]}$ and the zero operator for $\delta$.
+**Theorem.** The coboundary $\delta$ is a graded derivation of degree $1$ with $\delta^2 = 0$; the left multiplication $L_\ell$ is a graded derivation of degree $|\ell|$ exactly when $\delta\ell = 0$; and the derivations of the cochain algebra generated by $\delta$ and the multiplications by cocycles have as their induced operators on cohomology the multiplications $L_{[\ell]}$ and the zero operator for $\delta$.
 
-*Proof.* The derivation property of $\delta$ is the Leibniz rule. For $L_\varphi$, its defect as a derivation is measured by $\delta(\varphi\smile\psi) - L_\varphi(\delta\psi) = (\delta\varphi)\smile\psi$, so the defect vanishes identically exactly when $\delta\varphi = 0$. On cohomology $\delta$ induces the zero operator because the cohomology is the quotient by the coboundaries, while a multiplication by a cocycle induces the multiplication by its class.
+*Proof.* The derivation property of $\delta$ is the Leibniz rule. For $L_\ell$, its defect as a derivation is measured by $\delta(\ell\smilem) - L_\ell(\deltam) = (\delta\ell)\smilem$, so the defect vanishes identically exactly when $\delta\ell = 0$. On cohomology $\delta$ induces the zero operator because the cohomology is the quotient by the coboundaries, while a multiplication by a cocycle induces the multiplication by its class.
 
 The operator algebra of the cohomology is therefore the quotient of the differential graded algebra of the cochains by the operators that are coboundaries, and it inherits the graded derivation $\delta$ as the zero operator: the differential that creates the cohomology disappears on passing to it, and what remains is the algebra of the multiplications together with the higher operations that are not derivations.
 
@@ -90,28 +90,28 @@ The derivations of a graded-commutative algebra are themselves a graded Lie alge
 **Definition.** The **bicommutant** of the operator algebra $\mathcal{L}(X;R)$ is the set of $R$-linear endomorphisms $T$ of the graded module $H^*(X;R)$ that commute honestly with every left multiplication,
 
 $$
-\mathcal{L}(X;R)' = \bigl\{T \in \operatorname{End}_R(H^*(X;R)) : T L_\varphi = L_\varphi T \ \text{ for all } \varphi\bigr\},
+\mathcal{L}(X;R)' = \bigl\{T \in \operatorname{End}_R(H^*(X;R)) : T L_\ell = L_\ell T \ \text{ for all } \ell\bigr\},
 $$
 
 which is the ring of endomorphisms of $H^*(X;R)$ as a module over the ring, in the sense of the module theory of Part I.
 
-**Theorem.** The bicommutant is exactly the set of **right multiplications**: an $R$-linear endomorphism $T$ of $H^*(X;R)$ commutes honestly with every $L_\varphi$ if and only if it is $R_\psi$ for the unique class $\psi = T(1)$, so that $\mathcal{L}(X;R)' = \{R_\psi\} \cong H^*(X;R)$ and it is isomorphic to the operator algebra. In particular the multiplications are exactly the module endomorphisms of the regular module, and the ring acts faithfully on itself.
+**Theorem.** The bicommutant is exactly the set of **right multiplications**: an $R$-linear endomorphism $T$ of $H^*(X;R)$ commutes honestly with every $L_\ell$ if and only if it is $R_m$ for the unique class $m = T(1)$, so that $\mathcal{L}(X;R)' = \{R_m\} \cong H^*(X;R)$ and it is isomorphic to the operator algebra. In particular the multiplications are exactly the module endomorphisms of the regular module, and the ring acts faithfully on itself.
 
-*Proof.* A right multiplication commutes honestly with every left multiplication by associativity of the cup product: $R_\psi L_\varphi(\theta) = \varphi\smile\theta\smile\psi = L_\varphi R_\psi(\theta)$, with no sign because both orders multiply the three classes in the same sequence. Conversely, if $TL_\varphi = L_\varphi T$ for all $\varphi$ then $T(\varphi) = T(\varphi\smile1) = TL_\varphi(1) = L_\varphi T(1) = \varphi\smile T(1) = R_{T(1)}(\varphi)$, so $T = R_{T(1)}$; the class $T(1)$ is unique because $R_\psi(1)=\psi$, and the assignment $\psi\mapsto R_\psi$ is an isomorphism of graded rings because $R_\psi R_\theta = R_{\psi\smile\theta}$ by associativity.
+*Proof.* A right multiplication commutes honestly with every left multiplication by associativity of the cup product: $R_m L_\ell(\theta) = \ell\smile\theta\smilem = L_\ell R_m(\theta)$, with no sign because both orders multiply the three classes in the same sequence. Conversely, if $TL_\ell = L_\ell T$ for all $\ell$ then $T(\ell) = T(\ell\smile1) = TL_\ell(1) = L_\ell T(1) = \ell\smile T(1) = R_{T(1)}(\ell)$, so $T = R_{T(1)}$; the class $T(1)$ is unique because $R_m(1)=m$, and the assignment $m\mapsto R_m$ is an isomorphism of graded rings because $R_m R_\theta = R_{m\smile\theta}$ by associativity.
 
 So the honest commutant of the left multiplications is the right multiplications, and it is the ring itself; the module-theoretic structure of the cohomology over itself is thus completely described by the operator algebra.
 
 ### The Two Actions and the Koszul Sign
 
-**Theorem.** A left multiplication $L_\varphi$ is $H^*(X;R)$-linear, that is it lies in the bicommutant, exactly when its Koszul sign against every class is trivial:
+**Theorem.** A left multiplication $L_\ell$ is $H^*(X;R)$-linear, that is it lies in the bicommutant, exactly when its Koszul sign against every class is trivial:
 
 $$
-L_\varphi \in \mathcal{L}(X;R)' \iff (-1)^{|\varphi||\psi|} = 1 \ \text{ for every } \psi \text{ with } L_\psi \neq 0 ,
+L_\ell \in \mathcal{L}(X;R)' \iff (-1)^{|\ell||m|} = 1 \ \text{ for every } m \text{ with } L_m \neq 0 ,
 $$
 
-which holds in particular for every class $\varphi$ of even degree and for every class when the product is honestly commutative. In general $L_\varphi$ commutes with $L_\psi$ only up to the factor $(-1)^{|\varphi||\psi|}$, and the left action lies in the **graded** bicommutant, defined with that sign, whose elements are the signed right multiplications $\varphi \mapsto (-1)^{|\psi||\varphi|}\varphi\smile\psi$.
+which holds in particular for every class $\ell$ of even degree and for every class when the product is honestly commutative. In general $L_\ell$ commutes with $L_m$ only up to the factor $(-1)^{|\ell||m|}$, and the left action lies in the **graded** bicommutant, defined with that sign, whose elements are the signed right multiplications $\ell \mapsto (-1)^{|m||\ell|}\ell\smilem$.
 
-*Proof.* The relation $L_\varphi L_\psi = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$ of the previous section is exactly the assertion that the honest commutator of the two operators is zero precisely when the sign is trivial; the description of the graded bicommutant is the same computation with the sign retained, giving $T(\varphi)=(-1)^{|T||\varphi|}\varphi\smile T(1)$ for a graded-commuting $T$.
+*Proof.* The relation $L_\ell L_m = (-1)^{|\ell||m|}L_m L_\ell$ of the previous section is exactly the assertion that the honest commutator of the two operators is zero precisely when the sign is trivial; the description of the graded bicommutant is the same computation with the sign retained, giving $T(\ell)=(-1)^{|T||\ell|}\ell\smile T(1)$ for a graded-commuting $T$.
 
 So the graded commutativity of the cohomology is precisely the statement that the left action is central in the graded sense, and the honest centre of the operator algebra consists of the multiplications by the classes of even degree together with the odd classes whose multiplication vanishes.
 
@@ -119,47 +119,47 @@ So the graded commutativity of the cohomology is precisely the statement that th
 
 ### The Diagonal and the Cross Product
 
-**Definition.** The **diagonal** of a space $X$ is $\Delta : X \to X \times X$, $\Delta(x) = (x,x)$; the **cross product** of classes is $\varphi \times \psi = \mathrm{pr}_1^*\varphi \smile \mathrm{pr}_2^*\psi \in H^{|\varphi|+|\psi|}(X \times X;R)$ of *Cup and Cap Products*.
+**Definition.** The **diagonal** of a space $X$ is $\Delta : X \to X \times X$, $\Delta(x) = (x,x)$; the **cross product** of classes is $\ell \times m = \mathrm{pr}_1^*\ell \smile \mathrm{pr}_2^*m \in H^{|\ell|+|m|}(X \times X;R)$ of *Cup and Cap Products*.
 
 **Theorem.** The cup product is the pullback of the cross product along the diagonal,
 
 $$
-\boxed{\;\varphi \smile \psi = \Delta^*(\varphi \times \psi)\;},
+\boxed{\;\ell \smile m = \Delta^*(\ell \times m)\;},
 $$
 
 and more generally for a map $f : X \to Y$ the multiplication operators intertwine the pullbacks:
 
 $$
-f^* L_\varphi = L_{f^*\varphi} f^* .
+f^* L_\ell = L_{f^*\ell} f^* .
 $$
 
-Consequently the product is the operator induced by the diagonal, and a continuous map is a morphism of the operator algebra in the sense that $f^*$ is a ring homomorphism carrying $L_\varphi$ to $L_{f^*\varphi}$.
+Consequently the product is the operator induced by the diagonal, and a continuous map is a morphism of the operator algebra in the sense that $f^*$ is a ring homomorphism carrying $L_\ell$ to $L_{f^*\ell}$.
 
-*Proof.* The identity $\Delta^*(\varphi\times\psi)=\varphi\smile\psi$ is the computation of *Cup and Cap Products* from the definition of the cross product and the pullbacks of the projections along the diagonal; the intertwining is the naturality of the cup product, $f^*(\varphi\smile\psi)=f^*\varphi\smile f^*\psi$, read as operators.
+*Proof.* The identity $\Delta^*(\ell\timesm)=\ell\smilem$ is the computation of *Cup and Cap Products* from the definition of the cross product and the pullbacks of the projections along the diagonal; the intertwining is the naturality of the cup product, $f^*(\ell\smilem)=f^*\ell\smile f^*m$, read as operators.
 
 So the whole product structure of the cohomology is encoded in the single operator $\Delta^*$ on the cohomology of the square: the multiplication operators are the images under the pullback along the diagonal of the external multiplications, and the associativity and graded commutativity of the cup product are the corresponding properties of the diagonal $(X\times X)\times X \to X$ and the twist $X\times X\to X\times X$. The operator reading makes the product natural in the strongest sense: any construction that is natural for maps and multiplicative is determined by the diagonal.
 
 ### The Adjoint: the Cap Product
 
-**Definition.** For a class $\varphi$, the **cap product operator** is
+**Definition.** For a class $\ell$, the **cap product operator** is
 
 $$
-C_\varphi : H_n(X;R) \longrightarrow H_{n-|\varphi|}(X;R), \qquad C_\varphi(c) = c \frown \varphi,
+C_\ell : H_n(X;R) \longrightarrow H_{n-|\ell|}(X;R), \qquad C_\ell(c) = c \frown \ell,
 $$
 
 the cap product of *Cup and Cap Products*. The operators pair with the evaluation pairing $\langle-,-\rangle$ of *Cohomology and the Universal Coefficient Theorem*.
 
-**Theorem.** The cap product operator is the adjoint of the left multiplication operator under the evaluation pairing: for cohomology classes $\varphi,\psi$ and a homology class $c$,
+**Theorem.** The cap product operator is the adjoint of the left multiplication operator under the evaluation pairing: for cohomology classes $\ell,m$ and a homology class $c$,
 
 $$
-\boxed{\;\langle L_\varphi \psi,\, c\rangle = \langle \psi,\, C_\varphi c\rangle\;} .
+\boxed{\;\langle L_\ell m,\, c\rangle = \langle m,\, C_\ell c\rangle\;} .
 $$
 
-The operators compose contravariantly, $C_\psi C_\varphi = C_{\varphi\smile\psi}$, so that the assignment $\varphi \mapsto C_\varphi$ is a representation of the ring $H^*(X;R)$ on the graded module $H_*(X;R)$ up to the Koszul sign, and it is the same module structure as the cap product $H_*(X;R) \times H^*(X;R)\to H_*(X;R)$ of *Cup and Cap Products* read with the cohomology acting on the left.
+The operators compose contravariantly, $C_m C_\ell = C_{\ell\smilem}$, so that the assignment $\ell \mapsto C_\ell$ is a representation of the ring $H^*(X;R)$ on the graded module $H_*(X;R)$ up to the Koszul sign, and it is the same module structure as the cap product $H_*(X;R) \times H^*(X;R)\to H_*(X;R)$ of *Cup and Cap Products* read with the cohomology acting on the left.
 
-*Proof.* At the cochain level, for $\varphi\in C^p$, $\psi\in C^q$ and a simplex $\sigma$ of degree $p+q$, the definition of the cup product gives $(\varphi\smile\psi)(\sigma)=\varphi(\sigma_{[0..p]})\psi(\sigma_{[p..p+q]})$, while the cap product is $C_\varphi(\sigma) = \varphi(\sigma_{[0..p]})\,\sigma_{[p..p+q]}$ and hence $\psi(C_\varphi\sigma) = \varphi(\sigma_{[0..p]})\psi(\sigma_{[p..p+q]})$, the same value. The contravariant composition is the associativity $c\frown(\varphi\smile\psi)=(c\frown\varphi)\frown\psi$.
+*Proof.* At the cochain level, for $\ell\in C^p$, $m\in C^q$ and a simplex $\sigma$ of degree $p+q$, the definition of the cup product gives $(\ell\smilem)(\sigma)=\ell(\sigma_{[0..p]})m(\sigma_{[p..p+q]})$, while the cap product is $C_\ell(\sigma) = \ell(\sigma_{[0..p]})\,\sigma_{[p..p+q]}$ and hence $m(C_\ell\sigma) = \ell(\sigma_{[0..p]})m(\sigma_{[p..p+q]})$, the same value. The contravariant composition is the associativity $c\frown(\ell\smilem)=(c\frown\ell)\frownm$.
 
-**Corollary (Poincaré duality).** If $X$ is a closed oriented $n$-manifold, the cap product with the fundamental class, $c \mapsto c \frown [X]$, is an isomorphism $H^k(X;R)\cong H_{n-k}(X;R)$, and under it the operator $C_\varphi$ on homology corresponds to the multiplication $L_{\varphi^*}$ by the Poincaré dual of $\varphi$; the intersection form is the transport of the evaluation pairing. The manifold theory is that of *Poincaré Duality*, where the orientation, the fundamental class and the signature are treated, and the operator statement is used there.
+**Corollary (Poincaré duality).** If $X$ is a closed oriented $n$-manifold, the cap product with the fundamental class, $c \mapsto c \frown [X]$, is an isomorphism $H^k(X;R)\cong H_{n-k}(X;R)$, and under it the operator $C_\ell$ on homology corresponds to the multiplication $L_{\ell^*}$ by the Poincaré dual of $\ell$; the intersection form is the transport of the evaluation pairing. The manifold theory is that of *Poincaré Duality*, where the orientation, the fundamental class and the signature are treated, and the operator statement is used there.
 
 ## Examples
 
@@ -171,25 +171,25 @@ The operators compose contravariantly, $C_\psi C_\varphi = C_{\varphi\smile\psi}
 
 ## Summary
 
-A cohomology class $\varphi$ acts on the cohomology by left multiplication, giving a degree-$|\varphi|$ operator $L_\varphi$; the operator descends to cohomology, and the assignment $\varphi\mapsto L_\varphi$ is an injective homomorphism of graded rings carrying the product to composition and the graded commutativity to the Koszul-sign commutation $L_\varphi L_\psi = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$, so that the cohomology is faithfully represented as a ring of operators on itself. The honest bicommutant of the operator algebra is the ring of right multiplications, isomorphic to $H^*(X;R)$, and the left multiplications are exactly the operators that commute honestly with all the multiplications when the Koszul signs vanish. The coboundary is a graded derivation, $\delta L_\varphi = L_{\delta\varphi} + (-1)^{|\varphi|}L_\varphi\delta$, so the multiplication by a cocycle is a chain map and the multiplication by an arbitrary class still descends to cohomology; the graded derivations form a graded Lie algebra, and the operators that are not multiplications begin with the Steenrod operations. The product is the pullback of the cross product along the diagonal, $\varphi\smile\psi=\Delta^*(\varphi\times\psi)$, so the whole product is induced by the diagonal and is natural; the cap product operator $C_\varphi$ is the adjoint of $L_\varphi$ under the evaluation pairing, $\langle L_\varphi\psi,c\rangle=\langle\psi,C_\varphi c\rangle$, and composes contravariantly, $C_\psi C_\varphi=C_{\varphi\smile\psi}$, so that the cohomology acts on the homology as well as on itself. The product, its cochain formula, its naturality and its computations are those of *Cup and Cap Products*; what this article adds is the operator algebra, its derivation, its adjointness and the diagonal. Nothing analytic and nothing geometric was used.
+A cohomology class $\ell$ acts on the cohomology by left multiplication, giving a degree-$|\ell|$ operator $L_\ell$; the operator descends to cohomology, and the assignment $\ell\mapsto L_\ell$ is an injective homomorphism of graded rings carrying the product to composition and the graded commutativity to the Koszul-sign commutation $L_\ell L_m = (-1)^{|\ell||m|}L_m L_\ell$, so that the cohomology is faithfully represented as a ring of operators on itself. The honest bicommutant of the operator algebra is the ring of right multiplications, isomorphic to $H^*(X;R)$, and the left multiplications are exactly the operators that commute honestly with all the multiplications when the Koszul signs vanish. The coboundary is a graded derivation, $\delta L_\ell = L_{\delta\ell} + (-1)^{|\ell|}L_\ell\delta$, so the multiplication by a cocycle is a chain map and the multiplication by an arbitrary class still descends to cohomology; the graded derivations form a graded Lie algebra, and the operators that are not multiplications begin with the Steenrod operations. The product is the pullback of the cross product along the diagonal, $\ell\smilem=\Delta^*(\ell\timesm)$, so the whole product is induced by the diagonal and is natural; the cap product operator $C_\ell$ is the adjoint of $L_\ell$ under the evaluation pairing, $\langle L_\ellm,c\rangle=\langlem,C_\ell c\rangle$, and composes contravariantly, $C_m C_\ell=C_{\ell\smilem}$, so that the cohomology acts on the homology as well as on itself. The product, its cochain formula, its naturality and its computations are those of *Cup and Cap Products*; what this article adds is the operator algebra, its derivation, its adjointness and the diagonal. Nothing analytic and nothing geometric was used.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\smile$ | Cup product, as in *Cup and Cap Products* |
-| $L_\varphi$ | Left multiplication operator $\psi\mapsto\varphi\smile\psi$ |
-| $R_\psi$ | Right multiplication operator $\varphi\mapsto\varphi\smile\psi$ |
-| $\mathcal{L}(X;R)$ | The operator algebra $\{L_\varphi\}$ of the cohomology |
-| $L_\varphi L_\psi = L_{\varphi\smile\psi}$ | Composition law: the product is composition |
-| $L_\varphi L_\psi = (-1)^{|\varphi||\psi|}L_\psi L_\varphi$ | Graded commutativity as an operator identity |
-| $\delta L_\varphi = L_{\delta\varphi}+(-1)^{|\varphi|}L_\varphi\delta$ | Leibniz rule: $\delta$ is a graded derivation |
+| $L_\ell$ | Left multiplication operator $m\mapsto\ell\smilem$ |
+| $R_m$ | Right multiplication operator $\ell\mapsto\ell\smilem$ |
+| $\mathcal{L}(X;R)$ | The operator algebra $\{L_\ell\}$ of the cohomology |
+| $L_\ell L_m = L_{\ell\smilem}$ | Composition law: the product is composition |
+| $L_\ell L_m = (-1)^{|\ell||m|}L_m L_\ell$ | Graded commutativity as an operator identity |
+| $\delta L_\ell = L_{\delta\ell}+(-1)^{|\ell|}L_\ell\delta$ | Leibniz rule: $\delta$ is a graded derivation |
 | $[D,E]=DE-(-1)^{|D||E|}ED$ | Graded commutator of derivations |
-| $\Delta : X\to X\times X$ | Diagonal; $\varphi\smile\psi=\Delta^*(\varphi\times\psi)$ |
+| $\Delta : X\to X\times X$ | Diagonal; $\ell\smilem=\Delta^*(\ell\timesm)$ |
 | $\times$ | Cross product on a product of spaces |
-| $\frown$, $C_\varphi(c)=c\frown\varphi$ | Cap product and the cap product operator |
-| $\langle L_\varphi\psi,c\rangle=\langle\psi,C_\varphi c\rangle$ | Adjointness under the evaluation pairing |
-| $C_\psi C_\varphi=C_{\varphi\smile\psi}$ | Contravariant composition of the cap operators |
+| $\frown$, $C_\ell(c)=c\frown\ell$ | Cap product and the cap product operator |
+| $\langle L_\ellm,c\rangle=\langlem,C_\ell c\rangle$ | Adjointness under the evaluation pairing |
+| $C_m C_\ell=C_{\ell\smilem}$ | Contravariant composition of the cap operators |
 
 ## Further Reading
 

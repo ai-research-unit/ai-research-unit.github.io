@@ -228,12 +228,12 @@ The warrant is the identity $\tilde U^{*}\bar{\tilde U}=e_t$, which holds for ev
 For two elements of one value, the Hermitian part of their product lands in the Hermitian sector:
 
 $$
-\tilde R_\psi=\tfrac12\bigl(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*}\bigr)\in\mathbb{B}_{\Psi},
+\tilde R_\Psi=\tfrac12\bigl(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*}\bigr)\in\mathbb{B}_{\Psi},
 \qquad
-\tilde R_\psi\longmapsto\tilde U_{\mathrm{lor}}\tilde R_\psi\tilde U_{\mathrm{lor}}{}^{*}.
+\tilde R_\Psi\longmapsto\tilde U_{\mathrm{lor}}\tilde R_\Psi\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
-The element $\tilde R_\psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\psi$ of $\mathbb{B}_{\Phi}$.
+The element $\tilde R_\Psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\Psi$ of $\mathbb{B}_{\Phi}$.
 
 **The single field gives a null element.** For $\tilde Y=\tilde X$ the element is $\tilde X\tilde X^{*}$, it is Hermitian, and it is null: its quaternionic norm vanishes, because a product of two zero divisors is a zero divisor. Its scalar part is half the Hermitian norm of the field,
 

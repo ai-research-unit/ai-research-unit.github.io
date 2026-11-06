@@ -39,11 +39,11 @@ There is a finite criterion hiding in the same place, and it must not be confuse
 
 In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word *independent*.
 
-**Theorem.** There are no $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$.
+**Theorem.** There are no $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\psi,1},\vec r_{\psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$; the cross terms contribute the symmetric $\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
-\boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]\bigr)=0\;}.
+\boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]\bigr)=0\;}.
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
@@ -150,7 +150,7 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$ with $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
 | Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | $\mathbb{B}_{\Psi}$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
@@ -192,7 +192,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ |
+| $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |

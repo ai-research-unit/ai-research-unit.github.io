@@ -26,7 +26,7 @@ $$
 \mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}.
 $$
 
-The subspace $\mathbb{B}_{\Phi}$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{B}_{\Psi}$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde Q=\tilde R_\psi+\tilde R_\varphi$, into its **informational part** $\tilde R_\psi\in\mathbb{B}_{\Psi}$ and its **material part** $\tilde R_\varphi\in\mathbb{B}_{\Phi}$; an element of $\mathbb{B}_{\Psi}$ is its own informational part, and an element of $\mathbb{B}_{\Phi}$ its own material part.
+The subspace $\mathbb{B}_{\Phi}$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{B}_{\Psi}$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$, into its **informational part** $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ and its **material part** $\tilde R_\Phi\in\mathbb{B}_{\Phi}$; an element of $\mathbb{B}_{\Psi}$ is its own informational part, and an element of $\mathbb{B}_{\Phi}$ its own material part.
 
 The two subspaces have distinct physical roles:
 
@@ -38,7 +38,7 @@ Written as elements of the algebra, each sector carries its own four real parame
 - **$\mathbb{B}_{\Phi}$**, the material sector, corresponding to the anti-Hermitian subspace:
 
     $$
-    \tilde R_\varphi = i c\,r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z \in \mathbb{B}_{\Phi},
+    \tilde R_\Phi = i c\,r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z \in \mathbb{B}_{\Phi},
     $$
 
     with $r'_t = t'$ the material time and $(r_x,r_y,r_z) = (x,y,z)$ the material space.
@@ -46,7 +46,7 @@ Written as elements of the algebra, each sector carries its own four real parame
 - **$\mathbb{B}_{\Psi}$**, the informational sector, corresponding to the Hermitian subspace:
 
     $$
-    \tilde R_\psi = c\,r_t\,e_t + i\bigl(r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z\bigr) \in \mathbb{B}_{\Psi},
+    \tilde R_\Psi = c\,r_t\,e_t + i\bigl(r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z\bigr) \in \mathbb{B}_{\Psi},
     $$
 
     with $r_t = t$ the informational time and $(r'_x,r'_y,r'_z) = (r'_{x},r'_{y},r'_{z})$ the informational space.
@@ -58,7 +58,7 @@ Where the prime falls is what distinguishes the sectors: in $\mathbb{B}_{\Phi}$ 
 Writing the biquaternion coordinate in terms of its material and informational parts,
 
 $$
-\tilde{R} = \underbrace{(i c r'_t)\,e_t + (r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z)}_{=\,\tilde R_\varphi\,\in\,\mathbb{B}_{\Phi}} \;+\; \underbrace{(c r_t)\,e_t + (i r'_{x}\,\vec e_x + i r'_{y}\,\vec e_y + i r'_{z}\,\vec e_z)}_{=\,\tilde R_\psi\,\in\,\mathbb{B}_{\Psi}},
+\tilde{R} = \underbrace{(i c r'_t)\,e_t + (r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z)}_{=\,\tilde R_\Phi\,\in\,\mathbb{B}_{\Phi}} \;+\; \underbrace{(c r_t)\,e_t + (i r'_{x}\,\vec e_x + i r'_{y}\,\vec e_y + i r'_{z}\,\vec e_z)}_{=\,\tilde R_\Psi\,\in\,\mathbb{B}_{\Psi}},
 $$
 
 the coefficients $R_t, R_x, R_y, R_z$ take the explicit form
@@ -84,7 +84,7 @@ $$
 
 The unprimed parameter is throughout the **real part** of the complex coefficient and the primed one its **imaginary part**. It is worth noting which is which for the temporal coefficient: the real part of $R_t$ is $c r_t = ct$, an informational quantity, while its imaginary part $c r'_t = cr'_t$ is the material time. The two sectors take disjoint halves of the eight parameters — $\mathbb{B}_{\Phi}$ takes $r'_t$ together with the three $r_k$, $\mathbb{B}_{\Psi}$ takes $r_t$ together with the three $r'_k$ — so four complex coefficients and eight real parameters carry exactly the same information.
 
-**One element, one point, one label.** The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and its informational part $\tilde R_\psi$ supplies the four parameters of its **internal label**; read on its informational part, it is an event of the informational sector, $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$, and its material part $\tilde R_\varphi$ supplies the four parameters of its **spacetime label**. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.
+**One element, one point, one label.** The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and its informational part $\tilde R_\Psi$ supplies the four parameters of its **internal label**; read on its informational part, it is an event of the informational sector, $\tilde R_\Psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$, and its material part $\tilde R_\Phi$ supplies the four parameters of its **spacetime label**. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.
 
 ### The Vacuum Limit
 
@@ -106,16 +106,16 @@ $$
 
 The **real part** of $\langle d\tilde{R}\rangle_{\natural} = \sum_\mu (dR_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i c r'_t$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
-Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde R=d\tilde R_\varphi$ and only $dr'_t$ and the $dr_k$ are non-zero,
+Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde R=d\tilde R_\Phi$ and only $dr'_t$ and the $dr_k$ are non-zero,
 
 $$
-\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural} = -c^2(dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -c^2\,d{r'_{t}}^2 + dr_x^2+dr_y^2+dr_z^2\;},
+\boxed{\;\langle d\tilde R_\Phi\rangle_{\natural} = -c^2(dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -c^2\,d{r'_{t}}^2 + dr_x^2+dr_y^2+dr_z^2\;},
 $$
 
-the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\psi$ and only $dr_t$ and the $dr'_k$ are non-zero,
+the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\Psi$ and only $dr_t$ and the $dr'_k$ are non-zero,
 
 $$
-\boxed{\;\langle d\tilde R_\psi\rangle_{\natural} = c^2 dr_t^2 - (dr'_x)^2 - (dr'_y)^2 - (dr'_z)^2 = c^2\,{dt}^2 - {dx'}^2 - {dy'}^2 - {dz'}^2\;},
+\boxed{\;\langle d\tilde R_\Psi\rangle_{\natural} = c^2 dr_t^2 - (dr'_x)^2 - (dr'_y)^2 - (dr'_z)^2 = c^2\,{dt}^2 - {dx'}^2 - {dy'}^2 - {dz'}^2\;},
 $$
 
 the mirror interval of signature $(1,3)$. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde{R}\rangle_{\natural} = -\langle\tilde{R}\rangle_{\natural}$. In both cases the null cone — the zero divisor set, discussed in the companion articles — has the same two interpretations:
@@ -144,7 +144,7 @@ The main result of the framework so far is that the biquaternion algebra **conta
 A point of the material sector is written in the coordinates of relativistic physics as
 
 $$
-\tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi},
+\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi},
 $$
 
 the imaginary time $i c r'_{t}$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{B}_{\Phi}$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$; its elements are the Lorentz rotors, written $\tilde U_{\mathrm{lor}}$:
@@ -156,7 +156,7 @@ $$
 This group **acts** on the material sector by the **rotor conjugation**
 
 $$
-\tilde R_\varphi \;\longmapsto\; \tilde U_{\mathrm{lor}}\,\tilde R_\varphi\,\tilde U_{\mathrm{lor}}{}^{*}.
+\tilde R_\Phi \;\longmapsto\; \tilde U_{\mathrm{lor}}\,\tilde R_\Phi\,\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
 The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{B}_{\Phi}$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{B}_{\Phi}$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{B}_{\Psi}$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{B}_{H}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
@@ -168,15 +168,15 @@ The relativistic wave equations — **Maxwell's equations** and the **Dirac equa
 A point of the informational sector is written in its own coordinates as
 
 $$
-\tilde R_\psi = (c r_t)\,e_t + (i r'_{x})\,\vec e_x + (i r'_{y})\,\vec e_y + (i r'_{z})\,\vec e_z \in \mathbb{B}_{\Psi},
+\tilde R_\Psi = (c r_t)\,e_t + (i r'_{x})\,\vec e_x + (i r'_{y})\,\vec e_y + (i r'_{z})\,\vec e_z \in \mathbb{B}_{\Psi},
 $$
 
 the real time $c r_t$ together with the three imaginary spatial coordinates $i r'_{x}, i r'_{y}, i r'_{z}$. The informational sector $\mathbb{B}_{\Psi}$ is, exactly, the **Hermitian part** of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. This is established in the companion article *Quantum Physics in Biquaternionic Form*, and it can be summarized as follows.
 
-- The **elements** of $\mathbb{B}_{\Psi}$, of the form $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ — equivalently written $\tilde R_\psi = c r_t\,e_t + ir'_x\vec e_x + ir'_y\vec e_y + ir'_z\vec e_z$ with $c r_t, r'_x, r'_y, r'_z \in \mathbb{R}$, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{B}_{\Psi}$), with spectral decomposition in terms of idempotents.
+- The **elements** of $\mathbb{B}_{\Psi}$, of the form $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ — equivalently written $\tilde R_\Psi = c r_t\,e_t + ir'_x\vec e_x + ir'_y\vec e_y + ir'_z\vec e_z$ with $c r_t, r'_x, r'_y, r'_z \in \mathbb{R}$, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{B}_{\Psi}$), with spectral decomposition in terms of idempotents.
 - The **idempotents** in $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.
 - The **positive elements** in $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, of the form $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, are the mixed states (trace one in the $2\times2$ image), parametrizing the Bloch ball.
-- The **normalised Hermitian form** $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\psi$ gives the Born rule, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ}) = c r_t + \vec r\cdot\vec r_\psi$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real; it is a consequence of the algebra rather than an independent postulate.
+- The **normalised Hermitian form** $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\Psi$ gives the Born rule, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}) = c r_t + \vec r\cdot\vec r_\Psi$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real; it is a consequence of the algebra rather than an independent postulate.
 - The **sandwich operation** $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi/\langle\tilde\Pi\tilde{Ϛ}\tilde\Pi,e_t\rangle_{*}$ gives the projective measurement and state update (the denominator normalises the post-measurement state; its $2\times2$ reading is $\mathrm{Tr}(\tilde\Pi\tilde{Ϛ}\tilde\Pi)$).
 - The **$*$-unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{Ϛ} \mapsto \tilde Q\tilde{Ϛ}\tilde Q^{*}$, give the reversible evolution.
 - The distinction between **reversible evolution** and **irreversible measurement** is a property of the acting element ($*$-unitary vs. idempotent), not an additional postulate.
@@ -205,7 +205,7 @@ What is not established is whether the framework has consequences beyond a refor
 
 1. **Physical reality of the biquaternionic structure.** Is the biquaternion algebra merely a convenient reformulation of known physics, or does the structure of the universe genuinely follow the algebra? A structural hypothesis of this kind can only be evaluated by the richness of the consequences it produces.
 
-2. **Coupling between the two sectors.** Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$? Any such coupling would be where new physical content could reside. One minimal instance is already algebraic and not imposed: the **square**. For a material element the quaternionic square is the interval, $\tilde R_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{B}_{\Psi}$, so squaring is a map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ supplied by the product itself — the interpretation carried by *The Physical Interpretation of the 12 Products*. What remains open is a coupling with a dynamics; the square is a map, not an evolution.
+2. **Coupling between the two sectors.** Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the Hermitian subspace $\mathbb{B}_{\Psi}$? Any such coupling would be where new physical content could reside. One minimal instance is already algebraic and not imposed: the **square**. For a material element the quaternionic square is the interval, $\tilde R_\Phi^{\natural}\tilde R_\Phi=\langle\tilde R_\Phi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{B}_{\Psi}$, so squaring is a map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ supplied by the product itself — the interpretation carried by *The Physical Interpretation of the 12 Products*. What remains open is a coupling with a dynamics; the square is a map, not an evolution.
 
 3. **Extension to many qubits and to quantum field theory.** The quantum formalism presented in the companion article is for a single qubit. The extension to $n$ qubits (via the tensor product $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$), the second-quantized version, and the connection to quantum field theory remain to be developed.
 
@@ -222,15 +222,15 @@ The framework is offered as a structural intuition: that the two natural subspac
 Two interpretations of the introduction are worth separating. Read as a statement about invariance, the universe of the article is the sesquilinear pair: a change of the local complex structure moves the interval and the composition and leaves the probability form, the gauge calibration and the zero-divisor cone where they were (*Algebra and Element Conventions*). Read in time, its two sectors are two clocks reading one hand: the material time and the informational time are the two projections of one central coordinate, so each sector's time is read against the phase of the other (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Four further readings can be named.
 
 - **Amplitude interpretation.** Each complex coefficient $R_\mu$ is one complex number, that is, a magnitude and a phase, so the arena of the framework is complex before any quantum interpretation is imposed: the two sectors are read as the real and the imaginary halves of one amplitude, and an element is a point of the complexified spacetime together with its conjugate amplitude data. Boundary: the interpretation names the shape of the coefficient and supplies neither a quantisation nor a measurement rule.
-- **State-preparation interpretation.** The central map $\tilde R_\psi=-\tfrac{i}{2}\tilde R_\varphi$ carries a material four-vector to an informational element, and on the trace-one slice of the future cone to a state: the four-vector $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is carried to $\tfrac12(c r'_{t}\,e_t-i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with $\mathrm{Tr}(\tilde R_\psi)=c r'_{t}$ and $\langle\tilde R_\psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\varphi\rangle_{\natural}$, so at $c r'_{t}=1$ it is the Hermitian state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $|\vec r|\le1$. Boundary: the map is the mirror dictionary of *The Bloch Ball as the Normalised Slice of the Future Light Cone*, which owns it, and the interpretation names a preparation and not a dynamics.
-- **Cross-sector coupling by the square.** For a material element the quaternionic square is the interval itself, $\tilde R_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{B}_{\Psi}$: squaring is therefore one algebraic map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$, the minimal instance of the coupling asked for in question 2 above, supplied by the product rather than added by hand. The product of *two* material elements is not in general informational, while the *square of one* is. Boundary: one map, with image the real scalar line, and no dynamics; the identity is owned by *The Physical Interpretation of the 12 Products*, and its grid-level pointer is *The Four General Products: Composition, Probability, Causality, Gauge*.
+- **State-preparation interpretation.** The central map $\tilde R_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ carries a material four-vector to an informational element, and on the trace-one slice of the future cone to a state: the four-vector $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is carried to $\tfrac12(c r'_{t}\,e_t-i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with $\mathrm{Tr}(\tilde R_\Psi)=c r'_{t}$ and $\langle\tilde R_\Psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\Phi\rangle_{\natural}$, so at $c r'_{t}=1$ it is the Hermitian state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r=-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $|\vec r|\le1$. Boundary: the map is the mirror dictionary of *The Bloch Ball as the Normalised Slice of the Future Light Cone*, which owns it, and the interpretation names a preparation and not a dynamics.
+- **Cross-sector coupling by the square.** For a material element the quaternionic square is the interval itself, $\tilde R_\Phi^{\natural}\tilde R_\Phi=\langle\tilde R_\Phi\rangle_{\natural}e_t$ with $\langle\cdot\rangle_{\natural}$ real, and the real scalar line lies in $\mathbb{B}_{\Psi}$: squaring is therefore one algebraic map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$, the minimal instance of the coupling asked for in question 2 above, supplied by the product rather than added by hand. The product of *two* material elements is not in general informational, while the *square of one* is. Boundary: one map, with image the real scalar line, and no dynamics; the identity is owned by *The Physical Interpretation of the 12 Products*, and its grid-level pointer is *The Four General Products: Composition, Probability, Causality, Gauge*.
 - **One locus, two lists.** The norm's zero set $\langle\tilde{R}\rangle_{\natural}=0$ is the light cone of the material sector and it is also the locus on which the pure states of the informational sector sit: the idempotents $\tilde\Pi=\tfrac12(e_t\pm i\vec u)$ have $\langle\tilde\Pi\rangle_{\natural}=0$. The causal boundary and the list of pure states are one algebraic locus read twice, the zero-divisor cone. Boundary: the interpretation identifies sets, and it does not make every null element a pure state, the null cone being strictly larger than the set of idempotents; the state side is *The Physical Interpretation of the 12 Products*, and the cone itself *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
 ## Summary
 
 The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ carries the four-vectors of relativity, the material sector, in the coordinates $(i c r'_t,r_x,r_y,r_z)$; the **Hermitian subspace** $\mathbb{B}_{\Psi}$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(c r_t,i r'_{x},i r'_{y},i r'_{z})$. Multiplication by $i$ exchanges the two.
 
-Both sectors are written in the one biquaternion space. A material element is $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and an informational element is $\tilde R_\psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$; the two are the parts of one element, $\tilde R=\tilde R_\psi+\tilde R_\varphi$, and the norm $\langle\tilde{R}\rangle_{\natural}=\sum_\mu R_\mu^2$ is the interval on $\mathbb{B}_{\Phi}$, of signature $(-,+,+,+)$ there, and the Hermitian form $\langle\tilde{R}_1,\tilde{R}_2\rangle_{*}=\sum_\mu R_{1\mu}\overline{R_{2\mu}}$ is the probability weight on $\mathbb{B}_{\Psi}$. The Lorentz rotors are the unit-norm elements $\tilde U_{\mathrm{lor}}$ with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t$ real.
+Both sectors are written in the one biquaternion space. A material element is $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and an informational element is $\tilde R_\Psi=c r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$; the two are the parts of one element, $\tilde R=\tilde R_\Psi+\tilde R_\Phi$, and the norm $\langle\tilde{R}\rangle_{\natural}=\sum_\mu R_\mu^2$ is the interval on $\mathbb{B}_{\Phi}$, of signature $(-,+,+,+)$ there, and the Hermitian form $\langle\tilde{R}_1,\tilde{R}_2\rangle_{*}=\sum_\mu R_{1\mu}\overline{R_{2\mu}}$ is the probability weight on $\mathbb{B}_{\Psi}$. The Lorentz rotors are the unit-norm elements $\tilde U_{\mathrm{lor}}$ with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$ with $c r_t$ real.
 
 The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation, of which the square $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ is the minimal algebraic instance already supplied by the product; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $i c r'_t$ convention the vacuum approximation of a more general local structure.
 
@@ -243,9 +243,9 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{R} = \sum_\mu R_\mu e_\mu$ | Biquaternionic coordinate |
 | $R_t = c\,(r_t+ir'_t)$, $R_k = r_k+ir'_k$ | Complex coefficient: $r_\mu$ its real part (the coefficient of $e_\mu$), $r'_\mu$ its imaginary part (the coefficient of $ie_\mu$); the factor $c$ stands on the time alone |
-| $\tilde R = \tilde R_\psi + \tilde R_\varphi$ | The split of the coordinate into its informational and material parts |
-| $\tilde R_\varphi = i c\,r'_t\,e_t + \vec r = i c\,r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z$ | Material element, both readings, with $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$; $r'_t = t'$, $(r_x,r_y,r_z)=(x,y,z)$ |
-| $\tilde R_\psi = c\,r_t\,e_t + i\vec r_\psi = c\,r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, both readings, with $\vec r_\psi=r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z$; $r_t = t$, $(r'_x,r'_y,r'_z)=(x',y',z')$ |
+| $\tilde R = \tilde R_\Psi + \tilde R_\Phi$ | The split of the coordinate into its informational and material parts |
+| $\tilde R_\Phi = i c\,r'_t\,e_t + \vec r = i c\,r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z$ | Material element, both readings, with $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$; $r'_t = t'$, $(r_x,r_y,r_z)=(x,y,z)$ |
+| $\tilde R_\Psi = c\,r_t\,e_t + i\vec r_\Psi = c\,r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, both readings, with $\vec r_\Psi=r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z$; $r_t = t$, $(r'_x,r'_y,r'_z)=(x',y',z')$ |
 | $\langle\tilde{R}\rangle_{\natural} = \tilde{R}\tilde{R}^{\natural} = \sum_\mu R_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
 | $\langle\tilde{R}_1,\tilde{R}_2\rangle_{*} = \sum_\mu R_{1\mu}\overline{R_{2\mu}}$ | Hermitian form, positive definite; the probability weight, $\langle\tilde{R}_2,\tilde{R}_2\rangle_{*} = \sum_\mu\lvert R_{2\mu}\rvert^{2}$; the coefficient of $e_t$ in $\tilde{R}\tilde{R}^{*}$ |
 | ${}^{\natural}$ | Quaternion conjugate: reverses the quaternion basis, $e_t^{\natural}=e_t$ and $\vec e_k^{\natural}=-\vec e_k$, and leaves the complex coefficients $R_\mu$ untouched; the conjugation of the norm, $\langle\tilde{R}\rangle_{\natural} = \tilde{R}\tilde{R}^{\natural}$ |
@@ -257,7 +257,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\mathbb{B}_{H}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |
 | $\mathbb{B}_{iH}$ | Antiquaternion subspace: the imaginary half, all four coefficients purely imaginary, the partner of $\mathbb{B}_{H}$ in $\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH}$. This split crosses the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split: the scalar of $\mathbb{B}_{\Phi}$ and the vectors of $\mathbb{B}_{\Psi}$ come from here |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of the informational sector) |
-| $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ | Hermitian element (observable of the informational sector); $c r_t \in \mathbb{R}$ is the scalar component and $\vec r_\psi = (r'_x,r'_y,r'_z)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $c\,r_t\,e_t+i\,r'_k\vec e_k$ |
+| $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ | Hermitian element (observable of the informational sector); $c r_t \in \mathbb{R}$ is the scalar component and $\vec r_\Psi = (r'_x,r'_y,r'_z)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $c\,r_t\,e_t+i\,r'_k\vec e_k$ |
 | $(r'_t,r_x,r_y,r_z)$ | Real coordinates of the material sector ($c$ is a scale factor, not a coordinate) |
 | $(t, r'_{x}, r'_{y}, r'_{z})$ | Real coordinates of the informational sector |
 | $\tilde U_{\mathrm{lor}} \in \mathbb{B}$ with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |

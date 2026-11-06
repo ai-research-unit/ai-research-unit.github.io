@@ -240,13 +240,13 @@ The perturbation $h_{\mu\nu}$ is a symmetric rank-two tensor. The parent article
 **The natural single-biquaternion carrier loses exactly the traceless part.** Suppose one tries the most obvious packaging, the biquaternion
 
 $$
-\tilde R_\psi = \sum_{\mu,\nu=0}^{3} h_{\mu\nu}\,\varepsilon_\mu\varepsilon_\nu^{\natural} .
+\tilde R_\Psi = \sum_{\mu,\nu=0}^{3} h_{\mu\nu}\,\varepsilon_\mu\varepsilon_\nu^{\natural} .
 $$
 
-For symmetric $h_{\mu\nu}$ this element is Hermitian, $\tilde R_\psi^{*} = \tilde R_\psi$, and so lies in the informational sector $\mathbb{B}_{\Psi}$ rather than the material sector $\mathbb{B}_{\Phi}$. More importantly, it is not faithful. Computing the products $\varepsilon_\mu\varepsilon_\nu^{\natural}$ from the multiplication rules gives
+For symmetric $h_{\mu\nu}$ this element is Hermitian, $\tilde R_\Psi^{*} = \tilde R_\Psi$, and so lies in the informational sector $\mathbb{B}_{\Psi}$ rather than the material sector $\mathbb{B}_{\Phi}$. More importantly, it is not faithful. Computing the products $\varepsilon_\mu\varepsilon_\nu^{\natural}$ from the multiplication rules gives
 
 $$
-\boxed{\;\tilde R_\psi = h\,e_t\;},
+\boxed{\;\tilde R_\Psi = h\,e_t\;},
 $$
 
 a real multiple of the identity carrying only the **trace** $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i c r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_k h_{kk}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.
@@ -373,7 +373,7 @@ $$
 
 with, for example, $\mathrm{Riem}_{0101} = -\mathrm{Riem}_{0202} \ne 0$ while $\mathrm{Riem}_{0303} = 0$. The curvature is nonzero, so the wave is not pure gauge; the Ricci tensor vanishes, so it solves the vacuum equation. This was checked numerically for both a plus-polarization amplitude ($A_{11} = -A_{22}$) and the corresponding cross-polarization amplitude ($A_{12} = A_{21}$), with the same qualitative result in each case: the Ricci tensor vanishes and the Riemann tensor does not.
 
-The two independent amplitudes are the two polarizations of the linear theory. A displacement of the frame along its own basis, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu + c\,\varepsilon_\mu$, shifts $h_{\mu\nu}$ by $2c\,\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}$ and by nothing else; the part of $h$ along $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}$ is thus exactly the part the frame carries along $\varepsilon_\mu$. A transverse-traceless wave has $h = 0$, so it has no such part at all, and its content sits entirely in the components of $\delta\tilde{E}_\mu$ orthogonal to $\varepsilon_\mu$ in this sense. By the result of *The Graviton Is Not a Material Biquaternion*, the trace is the only thing the natural single-biquaternion packaging can see — that packaging is $\tilde R_\psi = h\,e_t$, which vanishes identically for this wave. So the two propagating degrees of freedom of the graviton are precisely what a single biquaternion cannot represent. This is the clearest statement of the article's structural finding: the framework carries the graviton as a frame perturbation, and the algebra element into which one might try to compress it retains only the trace, which a gravitational wave does not have.
+The two independent amplitudes are the two polarizations of the linear theory. A displacement of the frame along its own basis, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu + c\,\varepsilon_\mu$, shifts $h_{\mu\nu}$ by $2c\,\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}$ and by nothing else; the part of $h$ along $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}$ is thus exactly the part the frame carries along $\varepsilon_\mu$. A transverse-traceless wave has $h = 0$, so it has no such part at all, and its content sits entirely in the components of $\delta\tilde{E}_\mu$ orthogonal to $\varepsilon_\mu$ in this sense. By the result of *The Graviton Is Not a Material Biquaternion*, the trace is the only thing the natural single-biquaternion packaging can see — that packaging is $\tilde R_\Psi = h\,e_t$, which vanishes identically for this wave. So the two propagating degrees of freedom of the graviton are precisely what a single biquaternion cannot represent. This is the clearest statement of the article's structural finding: the framework carries the graviton as a frame perturbation, and the algebra element into which one might try to compress it retains only the trace, which a gravitational wave does not have.
 
 The detailed phenomenology of these waves — their generation, their interaction with matter, and the observational constraints on their polarizations — is not developed here. The linearized kinematics and the gauge structure are the subject of this article; the wave theory is a separate development.
 
@@ -551,7 +551,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial r_x\bar{h}_{1\nu}+\partial/\partial r_y\bar{h}_{2\nu}+\partial/\partial r_z\bar{h}_{3\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |
-| $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
+| $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
 
 ## Further Reading
 

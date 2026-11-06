@@ -122,7 +122,7 @@ a complex number times the identity. It is not a general biquaternion.
 
 3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{B}_{\Psi}$, centrality gives
 $$\tilde{Ϛ}\;\longmapsto\;\frac{\exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-iS/\hbar)}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ},$$
-so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
+so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\Psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
 
@@ -134,9 +134,9 @@ That chain is a structural interpretation of the algebra, not a derivation of an
 
 The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(JS/\hbar)$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.
 
-**The generator need not be anti-Hermitian.** Taking $J\tilde R_\psi$ in place of $i\tilde R_\psi$ changes the generator of the flow from $-i H/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde R_\psi/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\psi$. With $J=\vec e_z$ and $\tilde R_\psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
-$$J\tilde R_\psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
-which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-r'_t J\tilde R_\psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
+**The generator need not be anti-Hermitian.** Taking $J\tilde R_\Psi$ in place of $i\tilde R_\Psi$ changes the generator of the flow from $-i H/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde R_\Psi/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\Psi$. With $J=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
+$$J\tilde R_\Psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
+which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-r'_t J\tilde R_\Psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
 $$\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 
@@ -340,7 +340,7 @@ The path integral $K=\int\mathcal{D}x\,\exp(iS[x]/\hbar)$ is a sum over paths we
 
 Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(iS_1/\hbar)+\exp(iS_2/\hbar)|=2|\cos(\Delta S/2\hbar)|$, with nodes at $\Delta S=(2n+1)\pi\hbar$.
 
-A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-J\tilde R_\psi/\hbar$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\psi=i\vec e_x$ one has $J\tilde R_\psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
+A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-J\tilde R_\Psi/\hbar$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\Psi=i\vec e_x$ one has $J\tilde R_\Psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
 
 The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is central, its phase the classical action over $\hbar$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $r'_t\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(iS/\hbar)=\exp(-S_E/\hbar)$; in the interpretation of the companion article this is the identification $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
@@ -374,7 +374,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
 | $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | State from a spinor; global phase cancels |
-| $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $r'_t\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |
 | $\exp(iS/\hbar)=\exp(-S_E/\hbar)$ | Oscillatory phase becomes decaying weight |

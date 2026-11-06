@@ -42,7 +42,7 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\varphi,2})\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
+**Statement.** (a) Show that with $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
 
 **Solution.** (a) Since $\partial/\partial R_t = \frac{1}{ic}\partial/\partial r'_t = -\frac{i}{c}\partial/\partial r'_t$,
 $$
@@ -66,11 +66,11 @@ with the physical measure $d^3y\,dr'_{t,2}$ for the convolution (the parent writ
 (c) Differentiation under the convolution integral gives
 $$
 \Box_{\tilde{Q}}\tilde{A}(\tilde{Q})
-= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{R}_{\varphi,2})\,\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dr'_{t,2}
-= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{R}_{\varphi,2})\bigr)\tilde J(\tilde{R}_{\varphi,2})\,d^3y\,dr'_{t,2}
+= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{R}_{\Phi,2})\,\tilde J(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
+= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{R}_{\Phi,2})\bigr)\tilde J(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
 = -\mu\,\tilde J(\tilde{Q}),
 $$
-where in the last step the delta picks out $\tilde{R}_{\varphi,2} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{R}_{\varphi,2}) = \Box_{\tilde{R}_{\varphi,2}}G(\tilde{Q}-\tilde{R}_{\varphi,2})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
+where in the last step the delta picks out $\tilde{R}_{\Phi,2} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{R}_{\Phi,2}) = \Box_{\tilde{R}_{\Phi,2}}G(\tilde{Q}-\tilde{R}_{\Phi,2})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
 
 ## Problem 2: The Retarded Green's Function and the Light-Cone Jacobian
 

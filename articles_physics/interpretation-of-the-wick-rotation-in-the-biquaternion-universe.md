@@ -33,13 +33,13 @@ has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic 
 **The material sector $\mathbb{B}_{\Phi}$.** An element has the form
 
 $$
-\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
+\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
 The first coefficient is **imaginary**, the three remaining coefficients are **real**. The quadratic form
 
 $$
-\langle\tilde R_\varphi\rangle_{\natural} = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2
+\langle\tilde R_\Phi\rangle_{\natural} = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2
 $$
 
 has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
@@ -47,13 +47,13 @@ has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a thre
 **The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
 $$
-\tilde R_\psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
+\tilde R_\Psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
 $$
 
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-\langle\tilde R_\psi\rangle_{\natural} = c^2 r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
+\langle\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
@@ -65,7 +65,7 @@ The three subspaces are distinct, and each has its own algebraic and analytic ch
 In relativistic field theory, a point of the material sector is written
 
 $$
-\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
+\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
 $$
 
 where $r'_t = t'$ is the time coordinate and $(r_x,r_y,r_z)=(x,y,z)$ the spatial ones, so that the four coefficients are $i c r'_t, r_x, r_y, r_z$.

@@ -156,7 +156,7 @@ $$
 The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tfrac12\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
 
 $$
-\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\operatorname{Sc}(\tilde\Pi\tilde R_\psi),
+\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=2\operatorname{Sc}(\tilde\Pi\tilde R_\Psi),
 $$
 
 which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{B}_{\Psi}$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.

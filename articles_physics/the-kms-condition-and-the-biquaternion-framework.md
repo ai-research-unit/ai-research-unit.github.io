@@ -88,7 +88,7 @@ So the KMS condition is intrinsically an imaginary-time statement. Without imagi
 The material sector $\mathbb{B}_{\Phi}$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form
 
 $$
-\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
+\tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
 $$
 
 The first coefficient is **imaginary** ($i c r'_t$), and the three remaining coefficients are **real**. In the physical identification, $r'_t = t'$ is the material time, so the first coefficient is $i c r'_t$.

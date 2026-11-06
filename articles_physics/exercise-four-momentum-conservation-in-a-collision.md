@@ -8,13 +8,13 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{B}_{\Phi}$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{B}_{\Phi}$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, a Lorentz rotor, with $\tanh\theta_{\mathrm{rpd}} = v_b/c$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the rotor conjugation $\tilde R_\varphi \mapsto \tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}$; the Poincaré pair $(\tilde U_{\mathrm b},\tilde{R}_{\varphi,0})$ acting by $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}+\tilde{R}_{\varphi,0}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The plain form is the trace formula of *Norm and Pairing Conventions*, and it is inherited unchanged.
+The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, a Lorentz rotor, with $\tanh\theta_{\mathrm{rpd}} = v_b/c$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the rotor conjugation $\tilde R_\Phi \mapsto \tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}^{*}$; the Poincaré pair $(\tilde U_{\mathrm b},\tilde{R}_{\Phi,0})$ acting by $\tilde R_\Phi\mapsto\tilde U_{\mathrm b}\tilde R_\Phi\tilde U_{\mathrm b}^{*}+\tilde{R}_{\Phi,0}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The plain form is the trace formula of *Norm and Pairing Conventions*, and it is inherited unchanged.
 
 **What is to be shown.** The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.
 
@@ -68,7 +68,7 @@ $$
 $$
 If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{B}_{\Phi}$, which transforms as a whole.
 
-*Translation.* A Poincaré translation $(\tilde U_{\mathrm{lor}},\tilde{R}_{\varphi,0})$ acts on the four-position by $\tilde R_\varphi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\varphi,0}$. The four-momentum of a free body is built from its four-velocity, $d\tilde R_\varphi/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
+*Translation.* A Poincaré translation $(\tilde U_{\mathrm{lor}},\tilde{R}_{\Phi,0})$ acts on the four-position by $\tilde R_\Phi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\Phi,0}$. The four-momentum of a free body is built from its four-velocity, $d\tilde R_\Phi/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
 
 **Solution (d).** Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
@@ -399,7 +399,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\tilde{V}_a = \gamma_a(ic\,e_t+\vec v_a)$ | Four-velocity, $\langle\tilde{V}_a\rangle_{\natural}=-c^2$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ |
-| $(\tilde U_{\mathrm{lor}},\tilde{R}_{\varphi,0})$ | Poincaré transformation, $\tilde R_\varphi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\varphi,0}$ |
+| $(\tilde U_{\mathrm{lor}},\tilde{R}_{\Phi,0})$ | Poincaré transformation, $\tilde R_\Phi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\Phi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\Phi,0}$ |
 | $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ | Boost biquaternion, laboratory to COM frame |
 | $\tilde U^{\natural}_{\rm CM}$ | Quaternion conjugate, COM frame to laboratory |
 | $s,t,u$ | Mandelstam invariants, $s=-c^2\langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$, etc. |

@@ -100,12 +100,12 @@ The probability band owns the same centre but reads it as a modulus: it has the 
 The probability band's square is a **ruler**: the Hermitian norm is definite, it measures a length and it supplies the Born weight. The neighbouring quaternionic form is a **clock**: the interval is indefinite, it separates timelike from spacelike, and its zero set is the light cone. One element carries both because the grid carries both metrics. On the material sector the two read
 
 $$
-\langle\tilde R_\varphi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
+\langle\tilde R_\Phi\rangle_{*}=c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 \qquad
-\langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
+\langle\tilde R_\Phi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+\lvert\vec r\rvert^{2},
 $$
 
-so the ruler and the clock differ by twice the squared time, $\langle\tilde R_\varphi\rangle_{*}-\langle\tilde R_\varphi\rangle_{\natural}=2c^{2}{r'_{t}}^{2}$.
+so the ruler and the clock differ by twice the squared time, $\langle\tilde R_\Phi\rangle_{*}-\langle\tilde R_\Phi\rangle_{\natural}=2c^{2}{r'_{t}}^{2}$.
 
 The reading is the instrument pair: the interval tells which events can be causally connected and how much proper time a worldline carries; the Hermitian square tells how long a vector is and, on the state slice, supplies the Born weight. The same algebra carries both because the four general products put the two forms on the same eight real coordinates. The pair is the transversal form of the no-clock theorem: the band has no clock element, but it has the ruler, and the clock is the interval of the neighbouring band.
 

@@ -8,7 +8,7 @@ The framework's answer is a split one, and the split is the subject of the artic
 
 This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The interpretive statements are labelled as interpretations, and where an interpretation is not forced by the algebra, that is said rather than smoothed over.
 
-The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (the trace-one hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde R_\psi\rangle_{\natural}=\tilde R_\psi\tilde R_\psi^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image), with $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{B}_{\Psi}$.
+The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (the trace-one hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=\tilde R_\Psi\tilde R_\Psi^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image), with $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{B}_{\Psi}$.
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological interpretations the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
@@ -80,29 +80,29 @@ Two consequences follow.
 A general observable of the informational sector is an element
 
 $$
-\tilde R_\psi=c r_t e_t+i\,\vec r_\psi,\qquad c r_t\in\mathbb{R},\quad \vec r_\psi\in\mathbb{R}^3,
+\tilde R_\Psi=c r_t e_t+i\,\vec r_\Psi,\qquad c r_t\in\mathbb{R},\quad \vec r_\Psi\in\mathbb{R}^3,
 $$
 
-of the same subspace $\mathbb{B}_{\Psi}$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $c r_t=\tfrac12$ and $\vec r_\psi=\tfrac12\vec r$, positive and normalised, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$. **States are positive normalised observables** (trace one in the $2\times2$ image). The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and normalisation, imposed on elements of one four-dimensional real space.
+of the same subspace $\mathbb{B}_{\Psi}$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $c r_t=\tfrac12$ and $\vec r_\Psi=\tfrac12\vec r$, positive and normalised, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$. **States are positive normalised observables** (trace one in the $2\times2$ image). The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and normalisation, imposed on elements of one four-dimensional real space.
 
-Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ is a positive-definite symmetric form on $\mathbb{B}_{\Psi}$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
-
-$$
-\boxed{\;\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=c r_t+\vec r\cdot\vec r_\psi\;},
-$$
-
-and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=c r_t+\vec r\cdot\vec r_\psi$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
+Two facts make the cohabitation exact. First, the Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$ is a positive-definite symmetric form on $\mathbb{B}_{\Psi}$, with Gram matrix the identity in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; with the state normalised against the unit, the Born weight is
 
 $$
-\tilde{Ϛ}\ \longmapsto\ \left(\tilde R_\psi\mapsto \frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}\right)
+\boxed{\;\frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=c r_t+\vec r\cdot\vec r_\Psi\;},
+$$
+
+and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
+
+$$
+\tilde{Ϛ}\ \longmapsto\ \left(\tilde R_\Psi\mapsto \frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}\right)
 $$
 
 is injective: an element of $\mathbb{B}_{\Psi}$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{B}_{\Psi}$ is its own dual under the plain form (equivalently under the trace in the $2\times2$ image), and there is no second space in which the state lives.
 
-That the state is a *positive* functional is part of the same structure. If $\tilde R_\psi\geq0$, meaning $c r_t\geq|\vec r_\psi|$, then
+That the state is a *positive* functional is part of the same structure. If $\tilde R_\Psi\geq0$, meaning $c r_t\geq|\vec r_\Psi|$, then
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=c r_t+\vec r\cdot\vec r_\psi\ \geq\ |\vec r_\psi|-|\vec r|\,|\vec r_\psi|=\left(1-|\vec r|\right)|\vec r_\psi|\ \geq\ 0 .
+\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi\ \geq\ |\vec r_\Psi|-|\vec r|\,|\vec r_\Psi|=\left(1-|\vec r|\right)|\vec r_\Psi|\ \geq\ 0 .
 $$
 
 Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
@@ -152,10 +152,10 @@ is an ensemble decomposition with two pure states of the same type, distinct fro
 **No outcome index.** The state determines the Born probabilities
 
 $$
-p_\pm=\frac{\langle\tilde\Pi_{1,2}(\vec u_\psi),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})}=\tfrac12\left(1\pm\vec u_\psi\cdot\vec r\right)
+p_\pm=\frac{\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})}=\tfrac12\left(1\pm\vec u_\Psi\cdot\vec r\right)
 $$
 
-of a measurement along $\vec u_\psi$, and nothing about which outcome occurs. No element of $\mathbb{B}_{\Psi}$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.
+of a measurement along $\vec u_\Psi$, and nothing about which outcome occurs. No element of $\mathbb{B}_{\Psi}$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.
 
 **Established, inherited, and not repaired.** Both facts are properties of the element at the single-qubit level. They are stated here because they bound what any ontology of the state can claim: an element that carries neither provenance nor outcome cannot be a complete description of an individual measurement event, whatever else it is. In two clauses: the element is **operationally complete** — it determines every statistic and is determined by them — and **ontically incomplete** — it determines no outcome and records no preparation.
 
@@ -216,7 +216,7 @@ $$
 \tilde{Ϛ}=\tfrac12\left(e_t+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=c r_t+\vec r\cdot\vec r_\psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=c r_t+\vec r\cdot\vec r_\psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=c r_t+\vec r\cdot\vec r_\Psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out. It is the Hermitian square of a positive amplitude, $\tilde{Ϛ}_Q=\tilde Q_{\mathrm n}^{2}$, and the passage from the operator to the state forgets the $*$-unitary fibre.
 
@@ -234,14 +234,14 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar centre |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $\lvert\vec r\rvert\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
-| $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ | Observable (general Hermitian element) |
-| $\langle\tilde R_\psi\rangle_{\natural} = \tilde R_\psi\tilde R_\psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
+| $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ | Observable (general Hermitian element) |
+| $\langle\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\psi$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ | Born rule; form first, trace at normalisation last |
+| $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\Psi$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)$ | Born rule; form first, trace at normalisation last |
 | $\lambda_\pm = \tfrac12(1\pm\lvert\vec r\rvert)$ | Eigenvalues of $\tilde{Ϛ}$ |
-| $\vec u, \vec u, \vec u_\psi, \vec u_r$ | Unit pure real quaternions (directions) |
+| $\vec u, \vec u, \vec u_\Psi, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |
 
 ## Further Reading

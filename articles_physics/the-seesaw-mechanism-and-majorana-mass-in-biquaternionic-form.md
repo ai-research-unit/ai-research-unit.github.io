@@ -180,16 +180,16 @@ $$
 \mathcal{L} = y\,\bar{L}\tilde R_\psiN_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
 $$
 
-where $y$ is the Yukawa coupling, $\tilde R_\psi=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is
+where $y$ is the Yukawa coupling, $\tilde R_\Psi=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is
 
 $$
-\overline{N_R^{c}} = -\frac{y}{M_R}\,\bar{L}\tilde R_\psi ,
+\overline{N_R^{c}} = -\frac{y}{M_R}\,\bar{L}\tilde R_\Psi ,
 $$
 
 which is algebraic, so the heavy field can be eliminated exactly at tree level. Substituting it back gives a dimension-five operator among the light fields alone,
 
 $$
-\mathcal{L}_5 = -\frac{y^2}{M_R}\,(\bar{L}\tilde R_\psi)(\tilde R_\psi^{T}L^{c}) + \text{h.c.},
+\mathcal{L}_5 = -\frac{y^2}{M_R}\,(\bar{L}\tilde R_\Psi)(\tilde R_\Psi^{T}L^{c}) + \text{h.c.},
 $$
 
 the Weinberg operator, with coefficient $c_5/\Lambda = y^2/M_R$. After electroweak symmetry breaking the operator generates the light Majorana mass

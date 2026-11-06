@@ -19,35 +19,35 @@ The cone is self-dual with respect to the Hermitian form (the trace pairing in t
 
 ### Positivity as the biquaternion norm
 
-Let $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ be a general Hermitian element, with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$. Its matrix image is $c r_t\,I_2 + \vec r_\psi\cdot\boldsymbol{\sigma}$, whose eigenvalues are $c r_t\pm|\vec r_\psi|$. Hence
+Let $\tilde R_\Psi = c r_t\,e_t + i\vec r_\Psi$ be a general Hermitian element, with $c r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$. Its matrix image is $c r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}$, whose eigenvalues are $c r_t\pm|\vec r_\Psi|$. Hence
 
 $$
-\tilde R_\psi\geq0 \quad\Longleftrightarrow\quad c r_t \geq |\vec r_\psi| ,
+\tilde R_\Psi\geq0 \quad\Longleftrightarrow\quad c r_t \geq |\vec r_\Psi| ,
 $$
 
 and the biquaternion norm is
 
 $$
-\langle\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural} = \tilde R_\psi\tilde R_\psi^{\natural} = c^2 r_t^2 - |\vec r_\psi|^2 = \det M(\tilde R_\psi),
+\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde R_\Psi),
 $$
 
-a real scalar. The two conditions $\langle\tilde R_\psi\rangle_{\natural}\geq0$ and $c r_t\geq0$ are together equivalent to $c r_t\geq|\vec r_\psi|$, so the set of positive elements is the future light cone of the biquaternion norm:
+a real scalar. The two conditions $\langle\tilde R_\Psi\rangle_{\natural}\geq0$ and $c r_t\geq0$ are together equivalent to $c r_t\geq|\vec r_\Psi|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
-C_+ = \bigl\{c r_t\,e_t + i\vec r_\psi\in\mathbb{B}_{\Psi} : c r_t \geq |\vec r_\psi|\bigr\} .
+C_+ = \bigl\{c r_t\,e_t + i\vec r_\Psi\in\mathbb{B}_{\Psi} : c r_t \geq |\vec r_\Psi|\bigr\} .
 $$
 
-This is the **positive cone** of the algebra. Its boundary $c r_t = |\vec r_\psi|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $c r_t>|\vec r_\psi|$ is the set of positive definite elements.
+This is the **positive cone** of the algebra. Its boundary $c r_t = |\vec r_\Psi|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $c r_t>|\vec r_\Psi|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
 The Hermitian form on $\mathbb{B}_{\Psi}$ is
 
 $$
-\langle\tilde R_\psi,\tilde{E}\rangle_{*} = \mathrm{Sc}(\tilde R_\psi\tilde{E}^{*}) = c r_t\,a_t + \vec r_\psi\cdot\vec a,
+\langle\tilde R_\Psi,\tilde{E}\rangle_{*} = \mathrm{Sc}(\tilde R_\Psi\tilde{E}^{*}) = c r_t\,a_t + \vec r_\Psi\cdot\vec a,
 $$
 
-where $\tilde{E} = a_te_t + i\vec a$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde R_\psi\tilde{E}^{*}) = 2\langle\tilde R_\psi,\tilde{E}\rangle_{*}$. Direct computation of the Hermitian form on the Hermitian basis gives
+where $\tilde{E} = a_te_t + i\vec a$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde R_\Psi\tilde{E}^{*}) = 2\langle\tilde R_\Psi,\tilde{E}\rangle_{*}$. Direct computation of the Hermitian form on the Hermitian basis gives
 
 $$
 \langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_k\rangle = 0, \qquad \langle i\vec e_j,i\vec e_k\rangle = \delta_{jk},
@@ -56,10 +56,10 @@ $$
 so the Hermitian form is the positive definite Euclidean form of signature $(4,0)$ in the coefficients. The **dual cone** is
 
 $$
-C_+^{*} = \bigl\{\tilde R_\psi : \langle\tilde R_\psi,\tilde{E}\rangle_{*}=\mathrm{Sc}(\tilde R_\psi\tilde{E}^{*})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
+C_+^{*} = \bigl\{\tilde R_\Psi : \langle\tilde R_\Psi,\tilde{E}\rangle_{*}=\mathrm{Sc}(\tilde R_\Psi\tilde{E}^{*})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
 $$
 
-and it coincides with $C_+$. To see this, if $c r_t\geq|\vec r_\psi|$ then $c r_t\,a_t+\vec r_\psi\cdot\vec a\geq c r_t\,a_t-|\vec r_\psi|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $c r_t<|\vec r_\psi|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_\psi$ and $a_t = \lambda$; then $c r_t\,a_t+\vec r_\psi\cdot\vec a = \lambda(c r_t-|\vec r_\psi|)<0$ for $\lambda>0$, so $\tilde R_\psi\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the Hermitian form.**
+and it coincides with $C_+$. To see this, if $c r_t\geq|\vec r_\Psi|$ then $c r_t\,a_t+\vec r_\Psi\cdot\vec a\geq c r_t\,a_t-|\vec r_\Psi|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $c r_t<|\vec r_\Psi|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_\Psi$ and $a_t = \lambda$; then $c r_t\,a_t+\vec r_\Psi\cdot\vec a = \lambda(c r_t-|\vec r_\Psi|)<0$ for $\lambda>0$, so $\tilde R_\Psi\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the Hermitian form.**
 
 The self-duality is what makes the Hermitian form the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.
 
@@ -161,21 +161,21 @@ The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}
 The Kraus form has a polar reading. Write each Kraus operator as
 
 $$
-\tilde K_y=\tilde R_\psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y},
+\tilde K_y=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y},
 \qquad
-\tilde R_\psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}},
+\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}},
 $$
 
-with $\tilde R_\psi_{\mathrm{pos},y}$ Hermitian positive semidefinite and $\tilde Q_{\mathrm{p},y}$ a partial isometry. Then
+with $\tilde R_\Psi_{\mathrm{pos},y}$ Hermitian positive semidefinite and $\tilde Q_{\mathrm{p},y}$ a partial isometry. Then
 
 $$
 \tilde E_y=\tilde K_y^{*}\tilde K_y
-=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}.
+=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}.
 $$
 
 The effect is the squared strength conjugated by the backaction. Its eigenvalues are the squares of the singular values of $\tilde K_y$. For an invertible amplitude in the Cartan word $r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the singular values are $r e^{\pm\theta_{\mathrm{rpd},w}/2}$, so the effect has eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$: the scale and the rapidity survive and the angles drop out. The effect therefore sees the strength but not the backaction: $\tilde K_y$ and $\tilde W\tilde K_y$ with $\tilde W$ $*$-unitary have the same effect and different polar factors.
 
-The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=\tilde\Pi$; then $\tilde K_y=\tilde\Pi$, $\tilde R_\psi_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde K_y=\sqrt{\lambda}\,\tilde\Pi$, $\tilde R_\psi_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde E_y>0$; then $\tilde K_y$ is invertible, $\tilde R_\psi_{\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
+The strata are the strata of the effect body. A **sharp** effect is $\tilde E_y=\tilde\Pi$; then $\tilde K_y=\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is a zero divisor on the null cone. A **soft rank-one** effect is $\tilde E_y=\lambda\tilde\Pi$ with $0<\lambda<1$; then $\tilde K_y=\sqrt{\lambda}\,\tilde\Pi$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\lambda}\,\tilde\Pi$ and $\tilde Q_{\mathrm{p},y}=\tilde\Pi$, and the amplitude is again null, although the effect is on the boundary of the cone and not at an extreme point. A **full-rank** effect is $\tilde E_y>0$; then $\tilde K_y$ is invertible, $\tilde R_\Psi_{\mathrm{pos},y}$ is positive definite, $\tilde Q_{\mathrm{p},y}$ is $*$-unitary, and the effect lies in the interior of the effect body. The extreme points of the body are $0$, $e_t$ and the rank-one projectors; the polar form reaches the interior through invertible amplitudes. The null cone of the amplitude is therefore the rank-one boundary of the effect cone, not only the sharp set. The companion article *The Polar Decomposition of a Kraus Operator* works the examples and gives the measurement reading.
 
 ### Naimark dilation
 
@@ -280,7 +280,7 @@ $$
 \tilde{E} = a_te_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_t\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2-|\vec a|^2\geq0,\ a_t\geq0,
 $$
 
-and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_\psi,\tilde E\rangle_{*} = 2(c r_t\,a_t+\vec r_\psi\cdot\vec a)$, whose trace reading is $\operatorname{Tr}(\tilde R_\psi\tilde{E}^{*})$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, whose trace reading is the final step at normalisation.
+and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_\Psi,\tilde E\rangle_{*} = 2(c r_t\,a_t+\vec r_\Psi\cdot\vec a)$, whose trace reading is $\operatorname{Tr}(\tilde R_\Psi\tilde{E}^{*})$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, whose trace reading is the final step at normalisation.
 
 ## Summary of Notation
 
@@ -291,17 +291,17 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $C_+ = \{c r_t\,e_t+i\vec r_\psi: c r_t\ge\lvert\vec r_\psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
+| $C_+ = \{c r_t\,e_t+i\vec r_\Psi: c r_t\ge\lvert\vec r_\Psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
 | $C_+^{*} = C_+$ | Self-duality under the Hermitian form |
-| $\mathrm{Tr}(\tilde R_\psi\tilde{E}) = 2(c r_t\,a_t+\vec r_\psi\cdot\vec a)$ | Trace reading of the Hermitian form |
+| $\mathrm{Tr}(\tilde R_\Psi\tilde{E}) = 2(c r_t\,a_t+\vec r_\Psi\cdot\vec a)$ | Trace reading of the Hermitian form |
 | $0\le\tilde{E}\le e_t$ | Effect (operator interval) |
 | $\lvert\vec a\rvert\le\min(a_t,1-a_t)$ | Effect condition in coefficients |
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |
 | $\{\tilde{E}_y\}$, $\tilde{E}_y\ge0$, $\sum_y\tilde{E}_y = e_t$ | POVM |
 | $p_y = 2\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}$ | Born rule for a POVM; $2\times2$ reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$ |
 | $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ | Kraus form of an effect |
-| $\tilde K_y=\tilde R_\psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde R_\psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}}$ | Polar form of the Kraus operator; $\tilde R_\psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
-| $\tilde E_y=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
+| $\tilde K_y=\tilde R_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde R_\Psi_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}}$ | Polar form of the Kraus operator; $\tilde R_\Psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
+| $\tilde E_y=\tilde Q_{\mathrm{p},y}^{*}\tilde R_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |
 | $\tilde{Ϛ}_y = \tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
 | $\tilde{E}_k = \tfrac23\tilde\Pi_1(\vec u_k)$ | Trine POVM |

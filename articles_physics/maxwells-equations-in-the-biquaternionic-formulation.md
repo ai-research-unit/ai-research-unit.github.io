@@ -273,7 +273,7 @@ where $G_\Box(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R/c)$ is the scalar retarded 
 The solution of the inhomogeneous equation is then the retarded convolution
 
 $$
-\boxed{\;\tilde{F}(\tilde{Q}) = +\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde{R}_{\varphi,2})\,\tilde{J}(\tilde{R}_{\varphi,2})\,d^4R_2\;},
+\boxed{\;\tilde{F}(\tilde{Q}) = +\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde{R}_{\Phi,2})\,\tilde{J}(\tilde{R}_{\Phi,2})\,d^4R_2\;},
 $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.
@@ -282,7 +282,7 @@ The scalar part of that formula is where the integrability condition acts, and i
 
 $$
 \mathrm{Sc}\bigl(\tilde F\bigr)
-=\sqrt{\mu}\int G_\Box(\tilde Q-\tilde{R}_{\varphi,2})\,\mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde J\bigr)(\tilde{R}_{\varphi,2})\,d^4R_2 .
+=\sqrt{\mu}\int G_\Box(\tilde Q-\tilde{R}_{\Phi,2})\,\mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde J\bigr)(\tilde{R}_{\Phi,2})\,d^4R_2 .
 $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.

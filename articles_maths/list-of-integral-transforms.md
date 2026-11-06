@@ -33,7 +33,7 @@ This article lists the integral transforms the corpus constructs and inverts. An
 | the Hilbert transform on the line | kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^{n}$, $1<p<\infty$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Riesz transforms $R_j$ | symbols $-i\zeta_j/\lvert\zeta\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Radon transform | integration over hyperplanes; inversion by the Fourier slice theorem and filtered back-projection | *Complex Harmonic Analysis* |
-| the wavelet transform | kernel $\psi((t-b)/a)/a$; inversion by the admissibility condition $\int \lvert\hat\psi(\omega)\rvert^2/\lvert\omega\rvert\,d\omega < \infty$ | *Complex Harmonic Analysis* |
+| the wavelet transform | kernel $\gamma((t-b)/a)/a$; inversion by the admissibility condition $\int \lvert\hat\gamma(\omega)\rvert^2/\lvert\omega\rvert\,d\omega < \infty$ | *Complex Harmonic Analysis* |
 | the wavelet transform on a hypercomplex system | the same kernel with the system's scalings; inversion by the resolution of the identity | *Biquaternion Continuous Harmonic Analysis* |
 
 ## Transforms Attached to a Group or an Algebra
@@ -74,7 +74,7 @@ The objects are named rather than denoted; the symbols in the tables are collect
 | $\mathcal M f$, $f \star g$ | the Mellin transform and the multiplicative convolution |
 | $Hf$, $R_j$ | the Hilbert transform and the Riesz transforms |
 | $Rf$ | the Radon transform |
-| $W_\psi f$ | the wavelet transform |
+| $W_\gamma f$ | the wavelet transform |
 | $J_\nu$ | the Bessel function of order $\nu$, the Hankel kernel |
 
 ## Further Reading

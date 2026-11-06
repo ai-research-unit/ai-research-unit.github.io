@@ -389,36 +389,36 @@ where $\zeta = \cosh\theta + j \sinh\theta$. The factor $|\sigma|$ is the ramp f
 
 ### Definition
 
-The **split complex continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is
+The **split complex continuous wavelet transform** of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\gamma \in L^2(\mathbb{R})$ is
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
 $$
 
-The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
+The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\gamma$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty,
 $$
 
-where $\hat{\psi}$ is the ordinary Fourier transform.
+where $\hat{\gamma}$ is the ordinary Fourier transform.
 
 ### The Inversion Formula
 
-**Theorem.** If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then
+**Theorem.** If $\gamma$ is admissible and $f \in L^2(\mathbb{R})$, then
 
 $$
-f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+f(t) = \frac{1}{C_\gamma} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\gamma f(a, b) \frac{1}{\sqrt{|a|}} \gamma\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
 $$
 
 The inversion formula reconstructs $f$ from its wavelet transform.
 
 ### The Split Complex Wavelet Transform
 
-In the split complex setting, the wavelet $\psi$ is allowed to be split-complex-valued, and the transform becomes
+In the split complex setting, the wavelet $\gamma$ is allowed to be split-complex-valued, and the transform becomes
 
 $$
-W_\psi f(Q_2, b) = \frac{1}{\sqrt{|\langle Q_2\rangle_{*}|}} \int_{\mathbb{C}_{\mathrm{spl}}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in {\mathbb{C}_{\mathrm{spl}}}^\times, \; b \in \mathbb{C}_{\mathrm{spl}}.
+W_\gamma f(Q_2, b) = \frac{1}{\sqrt{|\langle Q_2\rangle_{*}|}} \int_{\mathbb{C}_{\mathrm{spl}}} f(Q) \overline{\gamma\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in {\mathbb{C}_{\mathrm{spl}}}^\times, \; b \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
 The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.
@@ -445,7 +445,7 @@ The split complex Fourier transform is defined with a kernel built from the spli
 | $Mf$ | Split complex maximal function |
 | $\mathcal{M} f$ | Split complex Mellin transform |
 | $Rf$ | Split complex Radon transform |
-| $W_\psi f$ | Split complex wavelet transform |
+| $W_\gamma f$ | Split complex wavelet transform |
 | $\Pi_+ = (1 + j)/2$ | Positive idempotent |
 | $\Pi_- = (1 - j)/2$ | Negative idempotent |
 

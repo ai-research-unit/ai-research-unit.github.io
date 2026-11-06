@@ -49,7 +49,7 @@ $$
 The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=c r_t$ is real and $Q_k=i r'_k$ with $r'_k$ real, the same formula reads
 
 $$
-\mathsf M_2(\tilde R_\psi)=c r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
+\mathsf M_2(\tilde R_\Psi)=c r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
 $$
 
 with no factor and no sign. The four real numbers of a Hermitian element are the coefficients of the identity and the three Pauli matrices.
@@ -184,12 +184,12 @@ The boundary is that the reading requires a diagonalisable element matrix and a 
 
 ### The Hermitian Elements Are the Observables
 
-An element $\tilde R_\psi\in\mathbb{B}_{\Psi}$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\psi$.
+An element $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\Psi$.
 
 The identification is exact: $\mathbb{B}_{\Psi}$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\psi ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\Psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\Psi ,
 $$
 
 for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
@@ -198,7 +198,7 @@ The boundary is that the word *observable* uses the involution ${}^{*}$, which b
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde R_\psi=i\vec r_\psi$ with $\vec r_\psi\in\mathbb R^3$, and its matrix is $\vec r_\psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator
 
 $$
 [\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k

@@ -55,7 +55,7 @@ $$
 \Big(\mathbb{D}-\frac{mc}{\hbar}\Big)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
 
-whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. From this point the article sets $c=\hbar=1$, so $mc/\hbar$ is written $m$ and every $m$ below means that combination; a dimensionful constant returns only where a dimensional statement is at issue, in the inverse temperature $\beta=\hbar/(k_BT)$, in the plane-wave phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar$, and in the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$.
+whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. From this point the article sets $c=\hbar=1$, so $mc/\hbar$ is written $m$ and every $m$ below means that combination; a dimensionful constant returns only where a dimensional statement is at issue, in the inverse temperature $\beta=\hbar/(k_BT)$, in the plane-wave phase $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar$, and in the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$.
 
 ### The Pair Operator and Its Symbol
 
@@ -256,7 +256,7 @@ $$
 
 with $k\cdot r_y:=E_{\vec k}r'_t-\vec k\cdot Y$, together define the operator-valued field. The **annihilation** operators $a_{\mathrm{fop},r}(\vec p)$ multiply the positive-frequency solutions, and the **creation** operators $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\tilde{Ξ}_{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, each amplitude is a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar\right)$, with $\tilde P$ the wave biquaternion and $\tilde R_\varphi$ the four-position biquaternion of the parent article. The two branches are the two signs of the energy root of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\tilde{Ξ}_{\mathrm{fop}}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, each amplitude is a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar\right)$, with $\tilde P$ the wave biquaternion and $\tilde R_\Phi$ the four-position biquaternion of the parent article. The two branches are the two signs of the energy root of the single biquaternion mass-shell condition
 
 $$
 \tilde P\tilde P^{\natural}=-m^2c^2 ,
@@ -547,7 +547,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $X,Y,\vec\Delta=X-Y$ | Spatial points and their separation |
 | $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=m^2$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in $\mathbb{D}_p$ |
-| $\tilde P$, $\tilde R_\varphi$ | Wave biquaternion and four-position biquaternion of the parent article |
+| $\tilde P$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |

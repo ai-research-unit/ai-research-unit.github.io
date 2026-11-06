@@ -9,7 +9,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 The article develops the following.
 
 - **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_{\mathrm{ret},t} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
-- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde R_\Phi/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$, and the distance is $L = c(r'_{t,3}-r'_{t,1})/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
 - **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta r'_t = \gamma v_b\,\Delta x_2/c^2$.
@@ -87,15 +87,15 @@ If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, th
 
 ### Proper Time from the Biquaternion Norm
 
-A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde R_\varphi(\lambda)$, the **proper time** is defined by
+A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde R_\Phi(\lambda)$, the **proper time** is defined by
 
 $$
-c\,d\tau = \sqrt{-\,\langle d\tilde R_\varphi\rangle_{\natural}}
+c\,d\tau = \sqrt{-\,\langle d\tilde R_\Phi\rangle_{\natural}}
 = \sqrt{-\left(ic\,dr'_t\right)^2 -(dr_x^2+dr_y^2+dr_z^2)}
 = \sqrt{c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2)},
 $$
 
-the positive root being taken because $d\tilde R_\varphi$ is timelike along a physical worldline, so that $\langle d\tilde R_\varphi\rangle_{\natural} < 0$ and $-\langle d\tilde R_\varphi\rangle_{\natural} > 0$. Factoring the coordinate time,
+the positive root being taken because $d\tilde R_\Phi$ is timelike along a physical worldline, so that $\langle d\tilde R_\Phi\rangle_{\natural} < 0$ and $-\langle d\tilde R_\Phi\rangle_{\natural} > 0$. Factoring the coordinate time,
 
 $$
 \boxed{\;d\tau = \sqrt{1 - \frac{\vec v^2}{c^2}}\;dr'_t = \frac{dr'_t}{\gamma},
@@ -108,7 +108,7 @@ $$
 which is the standard time-dilation relation. The interpretation of the clock between two events on the worldline is the integral
 
 $$
-\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,\langle d\tilde R_\varphi\rangle_{\natural}}}{c}
+\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,\langle d\tilde R_\Phi\rangle_{\natural}}}{c}
 = \int_{r'_{t,A}}^{r'_{t,B}}\sqrt{1-\frac{\vec v(r'_t)^2}{c^2}}\;dr'_t .
 $$
 
@@ -119,8 +119,8 @@ The biquaternion form has one structural advantage over the component form: the 
 Differentiating the worldline with respect to proper time gives the **four-velocity**
 
 $$
-\tilde{V} = \frac{d\tilde R_\varphi}{d\tau}
-= \frac{d\tilde R_\varphi}{dr'_t}\frac{dr'_t}{d\tau}
+\tilde{V} = \frac{d\tilde R_\Phi}{d\tau}
+= \frac{d\tilde R_\Phi}{dr'_t}\frac{dr'_t}{d\tau}
 = \gamma\left(ic\,e_t + \vec v\right),
 $$
 
@@ -343,7 +343,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}$.
 
-2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V} = d\tilde R_\Phi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
 3. **Einstein synchronisation is the round trip.** For emission at $r'_{t,1}$, reflection at $r'_{t,2}$, reception at $r'_{t,3}$, the null conditions give $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$ and the distance $L = c(r'_{t,3}-r'_{t,1})/2$. The split of the round trip into one-way times is fixed by the convention $r'_{t,2} = r'_{t,1}+\varepsilon(r'_{t,3}-r'_{t,1})$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
@@ -365,7 +365,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$ | Speed of light (its vacuum value in the numbers quoted here) |
-| $\tilde R_\varphi = i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
+| $\tilde R_\Phi = i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathrm{Sc}$ | Scalar projection |

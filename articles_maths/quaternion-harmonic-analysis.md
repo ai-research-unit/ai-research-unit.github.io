@@ -528,26 +528,26 @@ where $d\theta$ is the surface measure on the unit sphere $\mathbb{S}^3$. The fa
 
 ### Definition
 
-The **quaternion continuous wavelet transform** of $f \in L^2(\mathbb{H})$ with respect to a wavelet $\psi \in L^2(\mathbb{H})$ is
+The **quaternion continuous wavelet transform** of $f \in L^2(\mathbb{H})$ with respect to a wavelet $\gamma \in L^2(\mathbb{H})$ is
 
 $$
-W_\psi f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) (\psi\left(\frac{\tilde q - b}{a} \right))^{\natural} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
+W_\gamma f(a, b) = \frac{1}{|a|^2} \int_{\mathbb{H}} f(\tilde q) (\gamma\left(\frac{\tilde q - b}{a} \right))^{\natural} \, dq, \qquad a \in \mathbb{H}^\times, \; b \in \mathbb{H}.
 $$
 
-The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\psi$ is assumed to satisfy the **admissibility condition**
+The parameter $a$ is the **scale**, and $b$ is the **translation**. The wavelet $\gamma$ is assumed to satisfy the **admissibility condition**
 
 $$
-C_\psi = \int_{\mathbb{H}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|^4} \, d\zeta < \infty,
+C_\gamma = \int_{\mathbb{H}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|^4} \, d\zeta < \infty,
 $$
 
-where $\hat{\psi}$ is the quaternion Fourier transform.
+where $\hat{\gamma}$ is the quaternion Fourier transform.
 
 ### The Inversion Formula
 
-**Theorem.** If $\psi$ is admissible and $f \in L^2(\mathbb{H})$, then
+**Theorem.** If $\gamma$ is admissible and $f \in L^2(\mathbb{H})$, then
 
 $$
-f(\tilde q) = \frac{1}{C_\psi} \int_{\mathbb{H}^\times} \int_{\mathbb{H}} W_\psi f(a, b) \frac{1}{|a|^2} \psi\left(\frac{\tilde q - b}{a} \right) \frac{da \, db}{|a|^4}.
+f(\tilde q) = \frac{1}{C_\gamma} \int_{\mathbb{H}^\times} \int_{\mathbb{H}} W_\gamma f(a, b) \frac{1}{|a|^2} \gamma\left(\frac{\tilde q - b}{a} \right) \frac{da \, db}{|a|^4}.
 $$
 
 The inversion formula reconstructs $f$ from its wavelet transform.
@@ -601,7 +601,7 @@ The section on the structure principle states what organises the subject: whenev
 | $Mf$ | Quaternion maximal function |
 | $\mathcal{M} f$ | Quaternion Mellin transform |
 | $Rf$ | Quaternion Radon transform |
-| $W_\psi f$ | Quaternion wavelet transform |
+| $W_\gamma f$ | Quaternion wavelet transform |
 
 ## Further Reading
 

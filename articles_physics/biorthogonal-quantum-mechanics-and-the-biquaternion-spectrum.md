@@ -196,7 +196,7 @@ The contrast is the conceptual content of the article. The spectral decompositio
 | Case | Element | Metric | Weights |
 | --- | --- | --- | --- |
 | quantum state | $\tilde{Ϛ}$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}\tilde\Pi_\pm)$ |
-| normal observable | $\tilde R_\psi$ normal, distinct spectrum | $\eta=I$ on the eigenbasis | $p_\pm=\lvert c_\pm\rvert^{2}$ |
+| normal observable | $\tilde R_\Psi$ normal, distinct spectrum | $\eta=I$ on the eigenbasis | $p_\pm=\lvert c_\pm\rvert^{2}$ |
 | non-normal operator | $\tilde Q$ with $B\neq0$ | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | $p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ}_{\mathrm{sp}},\eta\tilde{Ξ}_{\mathrm{sp}}\rangle$ |
 | exceptional point | $B=0$, $\vec Q\neq0$ | no eigenbasis | no rule |
 
