@@ -275,13 +275,13 @@ The identity was verified off shell: for random arbitrary fields the divergence 
 The conservation law of the preceding section is not closed: the field's four-momentum changes in the presence of charges. The total energy–momentum of field and matter,
 
 $$
-T_{\mathrm{tot},\mu\nu}^{()} = T_{\mathrm{em},\mu\nu}^{()} + T^{(\mathrm{matter})}_{\mu\nu} ,
+T_{\mathrm{tot},\mu\nu} = T_{\mathrm{em},\mu\nu} + T_{\mathrm{matter},\mu\nu} ,
 $$
 
 is conserved. The matter tensor of a pressureless dust of proper density $n$ and four-velocity $\tilde{V}$ is the tensor form of the particle flux,
 
 $$
-T^{(\mathrm{matter})}_{\mu\nu} = m\,n\,v_\mu v_\nu ,
+T_{\mathrm{matter},\mu\nu} = m\,n\,v_\mu v_\nu ,
 \qquad
 m = \text{particle mass},
 $$
@@ -289,7 +289,7 @@ $$
 whose divergence is the negative of the field's:
 
 $$
-\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{matter}} = +f_\nu
+\sum_\mu\partial/\partial R_\mu T_{\mathrm{matter},\mu\nu} = +f_\nu
 \qquad\Longleftrightarrow\qquad
 \sum_\mu\partial/\partial R_\mu T_{\mathrm{tot},\mu\nu} = 0 .
 $$
@@ -378,7 +378,7 @@ T_{tj}=\frac1cS_j,
 T_{jk}=W\delta_{jk}-\epsilon E_jE_k-\mu H_jH_k ,
 $$
 
-symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mathrm{em},\mu\nu}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{matter}}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
+symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mathrm{em},\mu\nu}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mathrm{matter},\mu\nu}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
 
 ## Summary of Notation
 

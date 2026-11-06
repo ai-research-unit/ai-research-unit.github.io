@@ -118,21 +118,21 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $\tilde S_{\mathrm{adj},k}^{()}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,
+**The operators.** With $\tilde S_{\mathrm{adj},k}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,
 
 $$
-\tilde S_{\mathrm{adj}}^{()\,2}=2\hbar^2\operatorname{id}_V,\qquad
-\tilde S_{\mathrm{adj},3}^{()}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-\tilde S_{\mathrm{adj},3}^{()}\varepsilon_0=0 .
+\tilde S_{\mathrm{adj}}\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S_{\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S_{\mathrm{adj},3}\varepsilon_0=0 .
 $$
 
-The Casimir follows from $C=(\tilde S_{\mathrm{adj},3}^{()})^2+\tfrac12(\tilde S_{\mathrm{adj},+}^{()}\tilde S_{\mathrm{adj},-}^{()}+\tilde S_{\mathrm{adj},-}^{()}\tilde S_{\mathrm{adj},+}^{()})$ and the ladder actions
+The Casimir follows from $C=(\tilde S_{\mathrm{adj},3})^2+\tfrac12(\tilde S_{\mathrm{adj},+}\tilde S_{\mathrm{adj},-}+\tilde S_{\mathrm{adj},-}\tilde S_{\mathrm{adj},+})$ and the ladder actions
 
 $$
-\tilde S_{\mathrm{adj},+}^{()}\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-\tilde S_{\mathrm{adj},+}^{()}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
-\tilde S_{\mathrm{adj},-}^{()}\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-\tilde S_{\mathrm{adj},-}^{()}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
+\tilde S_{\mathrm{adj},+}\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S_{\mathrm{adj},+}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
+\tilde S_{\mathrm{adj},-}\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S_{\mathrm{adj},-}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
 $$
 
 which give $C=2\hbar^2$ on all three states. The value is $\hbar^2s(s+1)$ at $s=1$. There are three states.
@@ -231,8 +231,8 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | The spin-half operators |
-| $\tilde S_{\mathrm{adj},k}^{()}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
-| $C=\tilde S_{\mathrm{adj}}^{()\,2}$ | The Casimir, $\sum_k(\tilde S_{\mathrm{adj},k}^{()})^2$ |
+| $\tilde S_{\mathrm{adj},k}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
+| $C=\tilde S_{\mathrm{adj}}\,2}$ | The Casimir, $\sum_k(\tilde S_{\mathrm{adj},k})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
 | $N=\langle\tilde P\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |

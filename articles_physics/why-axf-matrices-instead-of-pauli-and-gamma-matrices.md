@@ -493,7 +493,7 @@ An article that reaches this pass has no arrays and no ideals in its body, and r
 
 ### The Third Pass: Keep the Axis-Free Array Where an Array Is Required
 
-The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label in the caret: $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent.
+The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label low: $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent, and no label stands in the caret.
 
 A section that survives all three passes has no Pauli object in its body, and any Pauli object it keeps is inside a closing block whose subject is the dictionary.
 

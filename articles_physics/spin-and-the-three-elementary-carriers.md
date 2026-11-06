@@ -370,7 +370,7 @@ The physics corpus states the same three values through different constructions.
 | reading | construction | carrier | value |
 |---|---|---|---|
 | the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
-| the adjoint integer | the halved inner derivations $\tilde S_{\mathrm{adj},k}^{()}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
+| the adjoint integer | the halved inner derivations $\tilde S_{\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
 | the tensor powers of the spinor | the symmetric part of $S^{\otimes 2s}$ | $S^{\otimes 2s}$ | $s$ |
