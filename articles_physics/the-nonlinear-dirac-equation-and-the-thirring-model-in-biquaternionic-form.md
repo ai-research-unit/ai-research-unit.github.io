@@ -90,7 +90,7 @@ The axial bilinear carries $\vec e_z$ in the right slot, before the space unit, 
 The free equation is first order in space and in time, and every bilinear above is quadratic in the field. A Lagrangian term that is a product of two bilinears is therefore quartic in the field, and the field equation obtained from it is cubic: a bilinear coefficient multiplying one more power of the field. That is the whole origin of the name, and the alternative name **cubic Dirac equation** says the same thing.
 
 The generic equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
+$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
 with $Ξ$ cubic. The three standard models differ only in which bilinear builds $Ξ$, and a table is the clearest statement of the difference.
 
 | Model | The bilinear it squares | The interaction in the Lagrangian | The cubic self-term in the equation |
@@ -120,7 +120,7 @@ $$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\fra
 with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.
 
 The integral $\int dt\,dx\,\mathcal{L}$ is the action, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
+$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
 with $\mu$ running over $t$ and $x$. The interaction is a **current–current** interaction: the field at a point multiplies the current at the same point.
 
 **The model is exactly solvable.** The massless Thirring model was solved by Hagen (1964) and by Klaiber (1968): the spectrum is a free boson, and the fermion Green functions are explicit powers of the free ones. The model satisfies the Osterwalder–Schrader axioms with a suitable choice of the coupling (Carey and Ruijsenaars 1984), and the massive model is integrable by Bethe ansatz (Bergknoff and Thacker 1979). The exact solubility is the reason the model is used as a testing ground for approximation schemes: a method that cannot reproduce the Thirring model exactly is known to be wrong before it is applied to QCD.
@@ -132,7 +132,7 @@ with $\mu$ running over $t$ and $x$. The interaction is a **current–current** 
 The **Soler model** (Soler 1970) is the $3+1$-dimensional theory whose interaction is the square of the scalar bilinear:
 $$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
 that is, with $S_{\mathrm d}$ for the scalar density, $\frac{g}{2}S_{\mathrm d}^2$. The interaction is a **scalar–scalar** interaction, and the field equation is
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
+$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
 with the sum over the four indices $t,x,y,z$.
 
 **The pseudoscalar variant.** The same construction with $P_5$ in place of $S_{\mathrm d}$ gives the pseudoscalar–pseudoscalar interaction $\frac{g}{2}P_5^2$. The two variants are not independent under the axial rotation $Q\mapsto Q\exp(\alpha\vec e_z)$: the pair $(S_{\mathrm d},P_5)$ rotates as a two-component object,
@@ -148,7 +148,7 @@ so that $S_{\mathrm d}^2+P_5^2$ is invariant and $S_{\mathrm d}^2$ alone is not.
 ## The Hehl–Datta Interaction from Torsion
 
 With the torsion eliminated, the equation of the field is the Dirac equation plus the axial term, and it is the one model of the three whose coefficient is not fitted but fixed:
-$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
+$$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,

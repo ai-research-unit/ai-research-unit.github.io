@@ -198,7 +198,7 @@ $$
 $$
 and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of the identity by $9\times10^{-16}$, while $\tilde\nabla^2$ departs from one by $0.9$. That $\tilde\nabla^2$ is not $\Box$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$
-iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=m\tilde{Ξ}_{\mathrm{sp}} .
+iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The corpus's equation is the **one-sided** pair

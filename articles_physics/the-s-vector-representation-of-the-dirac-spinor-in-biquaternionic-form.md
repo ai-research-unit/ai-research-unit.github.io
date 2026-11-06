@@ -225,7 +225,7 @@ with the symmetric $r'_t$ pairing each part with itself and the antisymmetric $\
 Passing from the field to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\sum_\mu\epsilon_\mu\bigl[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\tilde{Ξ}_{\mathrm{sp}} - \bigl((\partial/\partial x_\mu + ieA_\mu)\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\bigr) C_\mu\tilde{Ξ}_{\mathrm{sp}}\bigr] - m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}}
+\tfrac12\sum_\mu\epsilon_\mu\bigl[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\tilde{Ξ}_{\mathrm{sp}} - \bigl((\partial/\partial x_\mu + ieA_\mu)\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\bigr) C_\mu\tilde{Ξ}_{\mathrm{sp}}\bigr] - \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}}
 $$
 
 $$

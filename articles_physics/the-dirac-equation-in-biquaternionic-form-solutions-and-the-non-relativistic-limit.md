@@ -29,13 +29,13 @@ written for the wave element $\tilde{\mathcal P}=iEe_t+p_1\vec e_x+p_2\vec e_y+p
 **The equation.** For a field of mass $m$ the equation is
 
 $$
-\boxed{\;\mathcal{D}(\tilde{\mathcal P})\,\tilde{Ξ}_{\mathrm{sp}}=m\,\tilde{Ξ}_{\mathrm{sp}}\;},
+\boxed{\;\mathcal{D}(\tilde{\mathcal P})\,\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}\;},
 $$
 
 read on the two values as the pair
 
 $$
-\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
+\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 Each line is one equation inside one value: the left side of the first is the $L$ part of the action on the $R$ part, which is $L$-valued, and the right side is $m$ times the $L$ part of the field. Here $m$ is the mass in the units of this article, the inverse reduced Compton wavelength $mc/\hbar$; the parent writes that coefficient out because its gradient is an operator in inverse length, and the two are the same number. The mass is the only term of the equation that keeps the value, and $\mathcal{D}$ the only term that carries it. The two lines are not two dynamics. Applying $\mathcal{D}$ to the first and substituting the second gives $\mathcal{D}^2\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R}$, that is $(E^2-\vec p^2-m^2)\tilde{Ξ}_{\mathrm{sp},R}=0$, and the same for the other part: the mass shell $E^2-\vec p^2=m^2$ is the consistency condition of the pair, and each part obeys the Klein–Gordon equation of the companion article. With $\hbar$ and $c$ restored the condition reads $E^2-\vec p^2c^2=m^2c^4$.
@@ -319,7 +319,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}$, with the action $iE\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ written out in products of units. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=m^2$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the units and the numbers $E$ and $\vec p$.
+The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, with the action $iE\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k ip_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ written out in products of units. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=m^2$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the units and the numbers $E$ and $\vec p$.
 
 The solutions are explicit. The two helicity elements of one value are the seed, the corresponding elements of the other value are their images under the action, and the two branches are
 

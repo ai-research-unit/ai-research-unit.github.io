@@ -68,9 +68,9 @@ The usual spin is recovered only on the restriction $\tau^{l\bar l}\to\tau^{l,0}
 The equations are written with the generator matrices $M^{l\bar l}_\mu$ of the representation $\tau^{l\bar l}$, one for each of the four coordinates, and read, for the field $\tilde{Ξ}_{\mathrm{sp}}$ of the representation,
 
 $$
-iM^{l\bar l}_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}+m\tilde{Ξ}_{\mathrm{sp}}=0,
+iM^{l\bar l}_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}+\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}=0,
 \qquad\text{that is}\qquad
-M(p)\tilde{Ξ}_{\mathrm{sp}}=-m\tilde{Ξ}_{\mathrm{sp}},
+M(p)\tilde{Ξ}_{\mathrm{sp}}=-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}},
 $$
 
 with $M(p)=M_0p_0-M_1p_1-M_2p_2-M_3p_3$ for a plane wave of momentum $p$. A nonzero solution requires
@@ -190,7 +190,7 @@ $$
 \boxed{\;
 \begin{aligned}
 \sum_{j=1}^{3}\Pi_j\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial a_j}
-+i\sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial a_j^{*}}+m\tilde{Ξ}_{\mathrm{sp}} &= 0,\\[6pt]
++i\sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial a_j^{*}}+\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}} &= 0,\\[6pt]
 \sum_{j=1}^{3}\Pi_j^{*}\frac{\partial\dot{\tilde{Ξ}}_{\mathrm{sp}}}{\partial\tilde a_j^{*}}
 -i\sum_{j=1}^{3}\Pi_j\frac{\partial\dot{\tilde{Ξ}}_{\mathrm{sp}}}{\partial\tilde a_j}+m\dot{\tilde{Ξ}}_{\mathrm{sp}} &= 0.
 \end{aligned}

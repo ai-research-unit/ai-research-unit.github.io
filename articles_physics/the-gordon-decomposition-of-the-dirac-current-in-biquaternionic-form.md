@@ -64,7 +64,7 @@ The pairing is written on the right of the bar, and it takes the whole product t
 The **field equation** is
 
 $$
-\sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-m\,\tilde{Ξ}_{\mathrm{sp}} .
+\sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 Every factor is written out: the derivative acts on the field, the unit $e_\mu$ multiplies from the left, the frame's unit $\vec e_{\nu(\mu)}$ from the right, and the plain weight $\varepsilon_\mu$ of *Frame and Metric Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
@@ -72,7 +72,7 @@ Every factor is written out: the derivative acts on the field, the unit $e_\mu$ 
 The component form displays the two families at once, because the temporal generator is a single right multiplication and the three spatial generators share their right multiplier:
 
 $$
-\sum_k\vec e_k\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=m\,\tilde{Ξ}_{\mathrm{sp}} .
+\sum_k\vec e_k\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 Each of the four terms exchanges the value, while the mass term keeps it: the equation pairs the two halves of the field, and the mass is what pairs them.
@@ -454,7 +454,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,X=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |
 | $c_\mu$ | The frame's unit in the current, $c_t=e_t$ and $c_k=\vec e_z$ |
 | $\Sigma_{\mu\nu}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |
-| $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-m\tilde{Ξ}_{\mathrm{sp}}$ | The field equation, every factor written out |
+| $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ | The field equation, every factor written out |
 | $\sum_\mu\varepsilon_\mu\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,e_\mu X\vec e_{\nu(\mu)}=m\bar{\tilde{Ξ}}_{\mathrm{sp}}X$ | The adjoint equation, for every element $X$; the mass carries the other sign |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the same operator content by left multiplication |
 | $j_\mu=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}} c_\mu)$, $j_0=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ | The number current and its density |
