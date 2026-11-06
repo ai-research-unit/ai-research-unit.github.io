@@ -14,7 +14,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0,
 $$
 
-one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}_{\mathrm{sp},L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term.
+one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term.
 
 A framework that reformulates known physics can be read in two very different ways. Read generously, every correct statement about the electron becomes a statement the framework "contains"; read carefully, most of those statements are properties of the Dirac equation that the framework merely transcribes, and the specific numbers attached to the electron must be inserted by hand. This article takes the second interpretation and asks a single question: **which properties of the electron are consequences of the biquaternion structure, which are consequences of the Dirac equation the framework contains, which are parameters inserted from outside, and which lie outside the framework altogether?**
 

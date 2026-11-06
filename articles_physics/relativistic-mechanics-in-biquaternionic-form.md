@@ -231,7 +231,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
-| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2)\tilde{Ξ} = 0$ | — |
+| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2})\tilde{Ξ} = 0$ | — |
 | Dirac | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$ | — |
 
 ## Structural Observations

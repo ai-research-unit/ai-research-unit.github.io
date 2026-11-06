@@ -72,10 +72,10 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L} , \qquad
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad\Longrightarrow\qquad
-\bigl(\Box - \mu^2\bigr)\tilde{Ξ}_{\mathrm{sp},R,L} = 0 ,
+\bigl(\Box - \lambda_m^{-2}\bigr)\tilde{Ξ}_{\mathrm{sp},R,L} = 0 ,
 $$
 
-and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side. The programme carries the *same* mass twice on the same side, $(\nabla^\pm + m)(\nabla^\mp + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box - \mu^2$ with $\mu = mc/\hbar$ real, while $2\kappa\partial/\partial R_t$ is first order and cannot be written as $\Box - \mu^2$. The d'Alembertian article states this separation; the present article keeps it.
+and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side; here $\lambda_m=\hbar/(mc)$ is the mass length. The programme carries the *same* mass twice on the same side, $(\nabla^\pm + m)(\nabla^\mp + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box - \lambda_m^{-2}$ with $\lambda_m^{-1}=mc/\hbar$ real, while $2\kappa\partial/\partial R_t$ is first order and cannot be written as $\Box - \lambda_m^{-2}$. The d'Alembertian article states this separation; the present article keeps it.
 
 One identity is the engine of everything that follows. Because the shifted operator is a conjugation of the wave operator,
 
@@ -130,7 +130,7 @@ which is $\exp(-m\tau)$ times the massless retarded kernel $G_{\mathrm{ret}} = \
 
 ### The sharp kernel, and the contrast that makes it interesting
 
-The corpus's massive scalar operator behaves differently, and the difference is the one substantive analytic gain this paper offers. For $\Box - \mu^2$ the retarded and advanced kernels "acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions" — the d'Alembertian article's own words, and the Klein–Gordon propagator article works the tail out. For the KGFSh operator the opposite happens. Because
+The corpus's massive scalar operator behaves differently, and the difference is the one substantive analytic gain this paper offers. For $\Box - \lambda_m^{-2}$ the retarded and advanced kernels "acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions" — the d'Alembertian article's own words, and the Klein–Gordon propagator article works the tail out. For the KGFSh operator the opposite happens. Because
 
 $$
 \Bigl(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau\,\Bigr)G
@@ -213,7 +213,7 @@ and the dispersion relation is **exact and linear**. It was checked against its 
 - **The phase velocity is not**, $V = \omega/|\vec\zeta| = 1 \pm \rho/|\vec\zeta|$. It is superluminal on the upper branch, subluminal on the lower, and the source's "supersonic / subsonic" language is a statement about this phase velocity. The corpus's articles on superluminal phase velocities in other settings make the same point; it is worth repeating here that a superluminal phase velocity is not a superluminal signal, and that the source's own group-velocity content is c.
 - **There is a mode of zero phase velocity.** At $|\vec\zeta| = \rho$ the two branches have $\omega = 2\rho$ and $\omega = 0$: the second is a spatial pattern that does not oscillate in time, and the source's section on static bispinors is that mode. A "mass" $\rho$ that shifts the light cone rather than curving it produces, at one particular wave number, a frozen field.
 
-The source's interpretation of the same formulas is the *shifted cone*, which the d'Alembertian article already verified: the symbol $\bigl(\omega/c - \kappa\bigr)^2 - \|\vec k\|^2$ vanishes on $\omega/c = \kappa \pm \|\vec k\|$, and with $\kappa = \rho$ that is the linear law above. The corpus should be explicit that this is a shift of the massless cone, not the corpus's mass shell: the corpus's on-shell condition is the hyperboloid $\langle\tilde{P}\rangle_{\natural} = -\mu^2$, and a family of plane waves shifted linearly has no hyperboloid and no threshold. The programme's "mass" is a frequency offset, and the corpus's is a curvature; the two agree only at $\rho = 0$.
+The source's interpretation of the same formulas is the *shifted cone*, which the d'Alembertian article already verified: the symbol $\bigl(\omega/c - \kappa\bigr)^2 - \|\vec k\|^2$ vanishes on $\omega/c = \kappa \pm \|\vec k\|$, and with $\kappa = \rho$ that is the linear law above. The corpus should be explicit that this is a shift of the massless cone, not the corpus's mass shell: the corpus's on-shell condition is the hyperboloid $\langle\tilde{P}\rangle_{\natural} = -\lambda_m^{-2}$, and a family of plane waves shifted linearly has no hyperboloid and no threshold. The programme's "mass" is a frequency offset, and the corpus's is a curvature; the two agree only at $\rho = 0$.
 
 ## The Null Harmonic Bispinor, and the Corpus's Idempotent
 

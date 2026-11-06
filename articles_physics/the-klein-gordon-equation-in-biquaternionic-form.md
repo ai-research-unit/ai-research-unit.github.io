@@ -5,12 +5,12 @@
 The Klein–Gordon equation for a relativistic field of rest mass $m$ is
 
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\xi = 0,
+\left(\Box - \lambda_m^{-2}\right)\xi = 0,
 \qquad
 \Box = + \partial^2/\partial R_t^2 + \Delta,
 $$
 
-the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2\right)\tilde{Ξ} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
+the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2}\right)\tilde{Ξ} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
 
 Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\xi$ and its complex conjugate $\xi^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
 
@@ -24,7 +24,7 @@ Write the Klein–Gordon equation in biquaternion form as
 
 $$
 \boxed{\;
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ} = 0,
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2}\right)\tilde{Ξ} = 0,
 \qquad \tilde{Ξ} = Ξ_0 e_t + Ξ_1 \vec e_x + Ξ_2 \vec e_y + Ξ_3 \vec e_z\;}.
 $$
 
@@ -63,37 +63,37 @@ $$
 This is the degenerate form that Gsponer and Hurni record for the spin-zero case, and "degenerate" is literal: a scalar field whose gradient must be scalar cannot vary in space, so this member of the family is one-dimensional. The corpus's spin-0 field does vary in space, and it satisfies the four-dimensional Klein–Gordon equation of the preceding sections,
 
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)A_0 = 0,
+\left(\Box - \lambda_m^{-2}\right)A_0 = 0,
 $$
 
-which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde Q_1=(m^2c^2/\hbar^2)\tilde Q_1$, whose scalar restriction is the equation above.
+which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde Q_1=(\lambda_m^{-2})\tilde Q_1$, whose scalar restriction is the equation above.
 
 ## Second Order in Time and the Conjugate Pair
 
-An equation second order in $r'_t$ does not determine the field from its value alone: two data, $\tilde{Ξ}$ and $\partial/\partial r'_t\tilde{Ξ}$, are required. Equivalently, the operator $\Box - m^2c^2/\hbar^2$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation
+An equation second order in $r'_t$ does not determine the field from its value alone: two data, $\tilde{Ξ}$ and $\partial/\partial r'_t\tilde{Ξ}$, are required. Equivalently, the operator $\Box - \lambda_m^{-2}$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation
 
 $$
-\left(\tilde{\nabla}^{\natural} + \mu\right)\left(\tilde{\nabla} - \mu\right)
-= \Box - \mu\tilde{\nabla}^{\natural} + \mu\tilde{\nabla} - \mu^2
-= \Box + 2\mu\,\vec\nabla - \mu^2,
-\qquad \mu = \frac{mc}{\hbar},
+\left(\tilde{\nabla}^{\natural} + \lambda_m^{-1}\right)\left(\tilde{\nabla} - \lambda_m^{-1}\right)
+= \Box - \lambda_m^{-1}\tilde{\nabla}^{\natural} + \lambda_m^{-1}\tilde{\nabla} - \lambda_m^{-2}
+= \Box + 2\lambda_m^{-1}\,\vec\nabla - \lambda_m^{-2},
+\qquad \lambda_m = \frac{\hbar}{mc},
 $$
 
-where $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ is the vector part of the gradient. The cross term $2\mu\vec\nabla$ is a first-order differential operator and does not vanish, and general constant biquaternion coefficients do not remove it. For constant $A$ and $B$,
+where $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ is the vector part of the gradient. The cross term $2\lambda_m^{-1}\vec\nabla$ is a first-order differential operator and does not vanish, and general constant biquaternion coefficients do not remove it. For constant $A$ and $B$,
 
 $$
 \left(\tilde{\nabla}^{\natural} + A\right)\left(\tilde{\nabla} + B\right)
 = \Box + (A + B)\,\partial/\partial R_t + \sum_{\mu=1}^{3}\left(A \vec e_\mu - \vec e_\mu B\right)\partial/\partial R_\mu + AB,
 $$
 
-so cancellation of the first-order terms requires $B = -A$ together with $A\vec e_\mu + \vec e_\mu A = 0$ for $\mu = 1, 2, 3$. An element that anticommutes with all three units $\vec e_\mu$ must vanish: the condition for $\mu=1$ forces the $e_t$ and $\vec e_x$ coefficients of $A$ to zero, and the conditions for $\mu=2$ and $\mu=3$ remove the remaining two coefficients. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-\mu^2$ for $\mu \neq 0$. Hence the scalar Klein–Gordon operator does not factor into first-order scalar operators in $\mathbb{B}$.
+so cancellation of the first-order terms requires $B = -A$ together with $A\vec e_\mu + \vec e_\mu A = 0$ for $\mu = 1, 2, 3$. An element that anticommutes with all three units $\vec e_\mu$ must vanish: the condition for $\mu=1$ forces the $e_t$ and $\vec e_x$ coefficients of $A$ to zero, and the conditions for $\mu=2$ and $\mu=3$ remove the remaining two coefficients. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-\lambda_m^{-2}$ for a finite mass, $\lambda_m^{-1}\neq0$. Hence the scalar Klein–Gordon operator does not factor into first-order scalar operators in $\mathbb{B}$.
 
 The physical counterpart of this algebraic obstruction is the conjugate pair. The equation has real coefficients, so whenever $\tilde{Ξ}$ is a solution, so is its complex conjugate $\tilde{Ξ}^{*}$:
 
 $$
-\left(\Box - \mu^2\right)\tilde{Ξ} = 0
+\left(\Box - \lambda_m^{-2}\right)\tilde{Ξ} = 0
 \qquad\Longrightarrow\qquad
-\left(\Box - \mu^2\right)\tilde{Ξ}^{*} = 0 ,
+\left(\Box - \lambda_m^{-2}\right)\tilde{Ξ}^{*} = 0 ,
 $$
 
 because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $\xi$ and $\xi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
@@ -147,7 +147,7 @@ $$
 
 with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\tilde{Ξ}_{\mathrm{sp}} * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
 
-**Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + \mu^2$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - \mu^2$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \mu^2$ but $\Box_A + \mu^2$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
+**Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + \lambda_m^{-2}$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - \lambda_m^{-2}$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \lambda_m^{-2}$ but $\Box_A + \lambda_m^{-2}$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
 
 **Reading the two parts of the coefficient.** Write $\vec F = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $\exp(-i(E,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\vec\zeta + \vec F$ — and the imaginary part enters as the exponential $\exp(-(H,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\vec F,\vec F) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in *Twistor Theory and Biquaternions*, where the same operator generates the algebraic twistors.
 
@@ -178,12 +178,12 @@ $$
 = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\tilde{Ξ}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = m^2c^2/\hbar^2$. Since the biquaternion norm of the four-wavevector is $\langle\tilde P/\hbar\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
+The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = \lambda_m^{-2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde P/\hbar\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
 
 $$
-\langle\tilde P/\hbar\rangle_{\natural} = -\frac{m^2c^2}{\hbar^2}
+\langle\tilde P/\hbar\rangle_{\natural} = -\lambda_m^{-2}
 \qquad\Longleftrightarrow\qquad
--\frac{\omega^2}{c^2} + \vec k^2 = -\frac{m^2c^2}{\hbar^2},
+-\frac{\omega^2}{c^2} + \vec k^2 = -\lambda_m^{-2},
 $$
 
 that is,
@@ -201,7 +201,7 @@ $$
 
 are the two frequency branches. They are the same dispersion relation with opposite signs, not two different equations, and no choice of $\vec k$ or $m$ makes the negative root disappear.
 
-**Case checked.** As a case chosen independently of the derivation, take dimensionless units $\hbar = 1$, $c = 2$, $m = 0.7$, $\vec k = (0.9,-0.5,0.3)$. Then $c^2\vec k^2 = 4(1.15) = 4.6$, $m^2c^4/\hbar^2 = 0.49\cdot16 = 7.84$, so $\omega^2 = 12.44$ and $\omega \approx 3.5270$. Substituting $\tilde{Ξ} = \cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)$ and $\cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\omega r'_t)$ into $\Box\tilde{Ξ} - \mu^2\tilde{Ξ}$ by second-order finite differences on a grid with step $10^{-4}$ gives a residual of order $10^{-7}$ at random points for **both** branches, which is the discretization error $O(h^2)$ and confirms that both signs solve the equation. The check was made on a numerically chosen case and not on the special value $\vec k = 0$, where the two branches coincide up to sign and a sign error would hide.
+**Case checked.** As a case chosen independently of the derivation, take dimensionless units $\hbar = 1$, $c = 2$, $m = 0.7$, $\vec k = (0.9,-0.5,0.3)$. Then $c^2\vec k^2 = 4(1.15) = 4.6$, $m^2c^4/\hbar^2 = 0.49\cdot16 = 7.84$, so $\omega^2 = 12.44$ and $\omega \approx 3.5270$. Substituting $\tilde{Ξ} = \cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)$ and $\cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\omega r'_t)$ into $\Box\tilde{Ξ} - \lambda_m^{-2}\tilde{Ξ}$ by second-order finite differences on a grid with step $10^{-4}$ gives a residual of order $10^{-7}$ at random points for **both** branches, which is the discretization error $O(h^2)$ and confirms that both signs solve the equation. The check was made on a numerically chosen case and not on the special value $\vec k = 0$, where the two branches coincide up to sign and a sign error would hide.
 
 ## The Conserved Current and the Two Defects
 
@@ -249,9 +249,9 @@ so $\tilde{Ξ}$ solves the Klein–Gordon equation if and only if $\tilde{Ξ}_+$
 
 $$
 \boxed{\;
-\left(\Box-\mu^2\right)\tilde{Ξ}_+ = 0
+\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_+ = 0
 \qquad\Longrightarrow\qquad
-\left(\Box-\mu^2\right)(i\tilde{Ξ}_+) = i\left(\Box-\mu^2\right)\tilde{Ξ}_+ = 0,
+\left(\Box-\lambda_m^{-2}\right)(i\tilde{Ξ}_+) = i\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_+ = 0,
 \qquad i\tilde{Ξ}_+\in\mathbb{B}_{\Phi}\;}.
 $$
 
@@ -275,7 +275,7 @@ $$
 \tilde{Ξ} = \exp(-imc^2r'_t/\hbar)\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2i\frac{mc^2}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \frac{m^2c^4}{\hbar^2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
+with the exponential central. Substituting into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2i\frac{mc^2}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \frac{m^2c^4}{\hbar^2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
 
 $$
 \frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \frac{2im}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
@@ -324,7 +324,7 @@ The honest bottom line is a negative result about the framework's central struct
 The Klein–Gordon equation in biquaternionic form is
 
 $$
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ} = 0,
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2}\right)\tilde{Ξ} = 0,
 \qquad
 \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta,
 $$
@@ -360,7 +360,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\tilde{J} = ic\rho\,e_t + \vec j$ | Conserved four-current |
 | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ | Conservation law |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
-| $\mu = mc/\hbar$ | Mass parameter |
+| $\lambda_m$ | The mass length, $\hbar/(mc)$; the coefficient $\lambda_m^{-1}=mc/\hbar$ is its reciprocal |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec F$, $\nabla^\pm = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_A$ is minus this article's $\Box$ |

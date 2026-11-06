@@ -322,7 +322,7 @@ $$
 the sign change being $i^2=-1$. The dispersion relation is $\omega^2=c^2\vec k^2+m^2c^4/\hbar^2$, and substituting it,
 
 $$
-\langle\tilde P/\hbar\rangle_{\natural}=-\frac{1}{c^2}\left(c^2\vec k^2+\frac{m^2c^4}{\hbar^2}\right)+\vec k^2=-\frac{m^2c^2}{\hbar^2},
+\langle\tilde P/\hbar\rangle_{\natural}=-\frac{1}{c^2}\left(c^2\vec k^2+\frac{m^2c^4}{\hbar^2}\right)+\vec k^2=-\lambda_m^{-2},
 $$
 
 which is the parent's condition
@@ -331,9 +331,9 @@ $$
 \boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2\;}.
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-\lambda_m^{-2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum.
 
-The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to the digits shown.
+The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\lambda_m^{-2}$ to the digits shown.
 
 ## Problem 7: The helicity pieces and the piece determinant
 
@@ -390,7 +390,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P-m)\tilde{Ξ}$ read as products of elements; the closure $\tilde\nabla^{\natural}\tilde\nabla=\Box$ gives $\Box=m^2$ on the shell, and $\tilde P^{\natural}\tilde P=-m^2$.
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla$ keeps one helicity and the field annihilated by $\tilde\nabla^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
-6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the quaternionic-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
+6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the quaternionic-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-\lambda_m^{-2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
 7. **Helicity pieces.** The scalar square of the wave is $\tilde K^{\natural}\tilde K=p^2$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^2-p^2$; the pieces are isospectral, the determinant of the pair is $(m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not given in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-reading element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.

@@ -44,14 +44,14 @@ $$
 The quaternion conjugate removes that term, because $\tilde\nabla^{\natural}$ enters with $-\vec\nabla$ and the two mixed terms cancel. The root of $\Box$ inside the algebra is therefore the **pair** $(\tilde\nabla,\tilde\nabla^{\natural})$, never one gradient alone. Consequently the free equation stays first order in one field, $\tilde\nabla\tilde F=0$, and the massive equation needs two fields, the **chiral pair**
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\mu\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\mu\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\mu=\frac{mc}{\hbar},
+\lambda_m=\frac{\hbar}{mc},
 $$
 
-in which each member sets the gradient of one chiral half equal to $\mu$ times the other. No single field carries a mass in this algebra, and no display below writes one.
+in which each member sets the gradient of one chiral half equal to $\lambda_m^{-1}$ times the other. No single field carries a mass in this algebra, and no display below writes one.
 
 **The pair operator.** The two lines are one operator on $\mathbb{B}\oplus\mathbb{B}$. With $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
 
@@ -60,7 +60,7 @@ $$
 \qquad
 \mathbb{D}^2=\Box\,I,
 \qquad
-(\mathbb{D}-\mu)\tilde{Ξ}_{\mathrm{sp}}=0,
+(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
 
 the operator $\mathbb{D}$ is the pair written once. Nothing in it acts on the right: it is built from the two gradients, one in each slot, and nothing else enters.
@@ -395,7 +395,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $p_k=-i\hbar\,\partial/\partial R_k$, $\vec p=\sum_k\vec e_kp_k$ | Corpus momentum operator, the spatial gradient in disguise |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution, the frame-odd shift |
 | $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; $\mathbb{D}^2=\Box I$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\mu\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\mu\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, $\mu=mc/\hbar$ |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, $\lambda_m=\hbar/(mc)$ |
 | $\tilde{Ξ}_{\mathrm{sp},+}$, $\tilde{Ξ}_{\mathrm{sp},-}$ | The two frame parts, $\beta\tilde{Ξ}_{\mathrm{sp},\pm}=\pm\tilde{Ξ}_{\mathrm{sp},\pm}$; large and small |
 | $\mathcal{Q}_\pm:\ \tilde{Ξ}_{\mathrm{sp}}\mapsto i\hbar(\vec\nabla_\mp\tilde{Ξ}_{\mathrm{sp}})\omega$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\hbar^2\vec\nabla_-\vec\nabla_+$ |
 | $\mathcal{Q}_+\mathcal{Q}_- = \vec p^{\,2}+m^2\omega^2\vec r^{\,2}-3m\hbar\omega-2m\omega S$ | Operator identity |

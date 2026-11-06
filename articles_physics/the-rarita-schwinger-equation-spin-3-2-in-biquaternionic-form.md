@@ -257,7 +257,7 @@ $$
 $$
 with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}=-m^2c^2$ in the normalization of the companion Dirac article, that is,
 $$
-\frac{\varpi^2}{c^2} - \vec k^2 = \frac{m^2c^2}{\hbar^2},
+\frac{\varpi^2}{c^2} - \vec k^2 = \lambda_m^{-2},
 \qquad\text{i.e.}\qquad
 \varpi^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2},
 $$

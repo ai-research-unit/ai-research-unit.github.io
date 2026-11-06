@@ -192,13 +192,13 @@ $$
 and it obeys the Klein–Gordon equation in the form of the companion article,
 
 $$
-\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ}=0,
+\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0,
 $$
 
 with $\Box$ the d'Alembertian, central and scalar. Because $\Box$ is central and scalar, it acts coefficient by coefficient, and on a central field the equation is the ordinary complex scalar Klein–Gordon equation
 
 $$
-\left(\Box-\frac{m^2c^2}{\hbar^2}\right)\xi_{\mathrm{scl}}=0,
+\left(\Box-\lambda_m^{-2}\right)\xi_{\mathrm{scl}}=0,
 $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.
@@ -216,10 +216,10 @@ $$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
-and setting it to the negative constant $-m^2c^2/\hbar^2$ gives the dispersion relation
+and setting it to the negative constant $-\lambda_m^{-2}$ gives the dispersion relation
 
 $$
--\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-\frac{m^2c^2}{\hbar^2}
+-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-\lambda_m^{-2}
 \quad\Longleftrightarrow\quad
 \omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+\frac{m^2c^4}{\hbar^2},
 $$
@@ -301,7 +301,7 @@ A scalar field carries the trivial action of the Lorentz group: the transformati
 
 The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
-For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}$ complex, obeying $(\Box-m^2c^2/\hbar^2)\tilde{Ξ}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
+For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}$ complex, obeying $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
 
 ## Summary of Notation
 

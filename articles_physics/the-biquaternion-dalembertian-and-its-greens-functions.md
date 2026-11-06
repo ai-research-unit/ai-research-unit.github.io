@@ -93,13 +93,13 @@ $$
 \qquad
 \Box \to \frac{\omega^2}{c^2} - \vec k^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \lambda_m^{-2}$ is the shifted cone.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$, the operator above is $\Box = \Delta - c^{-2}\partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
-\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
+\left(\Box - \lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box - m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\mu^2$ with $\mu = mc/\hbar$.
+whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box - m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\lambda_m^{-2}$ with $\lambda_m = \hbar/(mc)$.
 
 ### Self-adjointness
 
@@ -239,26 +239,26 @@ whose Fourier transform is $1/(k_4^2 + \vec k^2 - i\epsilon)$. Two facts make th
 
 Adding the mass term shifts the operator by a central scalar,
 $$
-\Box - \mu^2 , \qquad \mu = \frac{mc}{\hbar} ,
+\Box - \lambda_m^{-2} , \qquad \lambda_m = \frac{\hbar}{mc} ,
 $$
-and the defining equation becomes $(\Box - \mu^2)G = -\delta$. In the $i c r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_4 + \mu^2$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
+and the defining equation becomes $(\Box - \lambda_m^{-2})G = -\delta$. In the $i c r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_4 + \lambda_m^{-2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
 \boxed{\;
-G^{(\mu)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
+G^{(\lambda_m)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{\lambda_m^{-1}}{4\pi^2\rho}\,K_1(\rho/\lambda_m) ,
 \qquad
-\left(-\Delta_4 + \mu^2\right) G^{(\mu)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
+\left(-\Delta_4 + \lambda_m^{-2}\right) G^{(\lambda_m)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
-G^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
+G^{(\lambda_m)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \lambda_m^{-2}} .
 $$
-The short-distance behaviour is the massless kernel, $G^{(\mu)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\mu\rho \to 0$, and the large-distance behaviour is exponentially damped, $G^{(\mu)}_{\mathrm{inv}} \sim \frac{\sqrt{\mu}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-\mu\rho)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
+The short-distance behaviour is the massless kernel, $G^{(\lambda_m)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\rho/\lambda_m \to 0$, and the large-distance behaviour is exponentially damped, $G^{(\lambda_m)}_{\mathrm{inv}} \sim \frac{\lambda_m^{-1/2}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-\rho/\lambda_m)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
 
 The mass shell is the symbol condition
 $$
-\langle\tilde P\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - \vec k^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
+\langle\tilde P\rangle_{\natural} = -\!\left(\frac{\omega^2}{c^2} - \vec k^2\right)\Big|_{\text{on shell}} = -\lambda_m^{-2} ,
 $$
-which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec k$ in $\mathbb{B}_{\Phi}$, the biquaternion norm returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
+which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec k$ in $\mathbb{B}_{\Phi}$, the biquaternion norm returning $-\lambda_m^{-2}$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
 
 ## The First-Order Kernel
 
@@ -417,7 +417,7 @@ G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta\!\left(r'_t + \frac{R}{c}\right) ,
 $$
 obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2cR$ and selected by the time boundary condition; the Jacobian and the off-cone annihilation of the kernel were verified numerically, and their difference $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ is the commutator function. The causal kernel is $G_F = (4\pi^2)^{-1}(\rho^2 - i\epsilon)^{-1}$, whose Wick rotation is $G_{\mathrm{inv}}$.
 
-The massive operator $\Box - \mu^2$ has the invariant kernel $\frac{\mu}{4\pi^2\rho}K_1(\mu\rho)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
+The massive operator $\Box - \lambda_m^{-2}$ has the invariant kernel $\frac{\lambda_m^{-1}}{4\pi^2\rho}K_1(\rho/\lambda_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
 \tilde{G}_{\tilde{\nabla}} = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{B}_{\Phi} ,
 \qquad
@@ -447,7 +447,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R/c)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |
 | $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box\Delta_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
-| $G^{(\mu)}_{\mathrm{inv}} = \frac{\mu}{4\pi^2\rho}K_1(\mu\rho)$ | Massive invariant kernel; $\mu = mc/\hbar$ |
+| $G^{(\lambda_m)}_{\mathrm{inv}} = \frac{\lambda_m^{-1}}{4\pi^2\rho}K_1(\rho/\lambda_m)$ | Massive invariant kernel; the label $\lambda_m$ names the massive case, whose coefficient is $\lambda_m^{-1}=\hbar/(mc)$ |
 | $\tilde{G}_{\tilde{\nabla}} = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde{\nabla}\tilde{G}_{\tilde{\nabla}} = -\delta$ |
 | $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
 | $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k\|^2$ |
