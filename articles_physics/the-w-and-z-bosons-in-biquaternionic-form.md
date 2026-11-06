@@ -116,7 +116,7 @@ the axial and vector couplings of the fermion $f$ to the Z; the measured left–
 $$
 \sin^2\theta^{\rm eff}_{\rm lept}=0.23148\pm0.00016 ,
 \qquad
-\sin^2\hat\theta_W(M_Z)=0.23122\pm0.00004 ,
+\sin^2\theta_{\mathrm{msb},W}(M_Z)=0.23122\pm0.00004 ,
 \qquad
 \sin^2\theta_{\mathrm{OS}}=1-\frac{M_W^2}{M_Z^2}=0.22305 ,
 $$

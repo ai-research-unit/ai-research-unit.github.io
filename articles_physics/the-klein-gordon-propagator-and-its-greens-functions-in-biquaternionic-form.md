@@ -62,7 +62,7 @@ $$
 The symbol vanishes precisely on the **mass shell** $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-\lambda_m^{-2}$, that is, on
 
 $$
-\omega^2=c^2\vec k^2+\frac{m^2c^4}{\hbar^2},
+\omega^2=c^2\vec k^2+c^2\lambda_m^{-2},
 $$
 
 which is the biquaternion-norm statement of the relativistic dispersion relation: the mass shell is the level set of the biquaternion norm at the fixed negative value $-\lambda_m^{-2}$, a two-sheeted hyperboloid in the material sector. In natural units it reads $\omega^2=\vec k^2+\lambda_m^{-2}$. The zero level set $\langle\tilde P\rangle_{\natural}=0$ is the **zero-divisor cone**, the light cone; it is the set of four-wavevectors that are nilpotent in the algebra, and the massless kernel will be supported on its position-space image.

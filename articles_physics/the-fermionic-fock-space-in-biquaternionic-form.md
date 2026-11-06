@@ -132,7 +132,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums and duals. (It does not turn a tensor product into a tensor product; only the direct sum has the tensor-product rule.)
 
-The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_i\zeta$, and the induced operator $\hat S_i=\Gamma(\tilde S_i)$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\hat S_i$: the rotor $\exp(\theta\,\vec u\cdot\tilde S)$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\hat S_i(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\hat S^2=\sum_i\hat S_i^2$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the spin generators are the algebra elements $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, whose action is $\zeta\mapsto\tilde S_i\zeta$, and the induced operator $\tilde S_{\mathrm{fop},i}=\Gamma(\tilde S_i)$ acts as $0$ on the vacuum, as that same action on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. The top power is annihilated by every $\tilde S_{\mathrm{fop},i}$: the rotor $\exp(\theta\,\vec u\cdot\tilde S)$ is a unit element at every $\theta$, so by the antisymmetric-product identity of §*The Lorentz Action and the Covering Sign* it carries $\zeta\wedge\eta$ to itself, and differentiating at $\theta=0$ gives $\tilde S_{\mathrm{fop},i}(\zeta\wedge\eta)=0$. The top power is therefore a Lorentz **singlet**, and the vacuum is the other. On $\Lambda^1S$ the quadratic Casimir is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of $\tilde S_{\mathrm{fop}}^{2}=\sum_i\tilde S_{\mathrm{fop},i}^{2}$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -146,7 +146,7 @@ $$
 0\oplus\tfrac12\oplus 0\;}.
 $$
 
-They were recomputed on the four-dimensional space $\Lambda S$ by building the mode representation explicitly: diagonalising $\hat S^2$ returns the spectrum $\{0,\tfrac34,\tfrac34,0\}$, with $N_{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and the projection of the spin along the declared direction with eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+They were recomputed on the four-dimensional space $\Lambda S$ by building the mode representation explicitly: diagonalising $\tilde S_{\mathrm{fop}}^{2}$ returns the spectrum $\{0,\tfrac34,\tfrac34,0\}$, with $N_{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and the projection of the spin along the declared direction with eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
 The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, every generator vanishes by the antisymmetric-product identity, so the top power is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the invariant two-particle state is the line of pure L parts, which is the reason the antisymmetric-product identity appears in the same role.
 
@@ -307,7 +307,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\hat S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because a Lorentz rotor — every Lorentz transformation, not only the rotations — has quaternionic norm one, so it carries the two-particle state to itself, with the residual of the antisymmetric-product identity checked on random rotors. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N_{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the parent's one-mode parity, multiplication by $i\vec u$ at the direction $\vec u$ the mode declares; for the field it is the tensor product over modes and external to $\mathbb{B}$.
+with $\tilde S_{\mathrm{fop}}^{2}$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because a Lorentz rotor — every Lorentz transformation, not only the rotations — has quaternionic norm one, so it carries the two-particle state to itself, with the residual of the antisymmetric-product identity checked on random rotors. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N_{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the parent's one-mode parity, multiplication by $i\vec u$ at the direction $\vec u$ the mode declares; for the field it is the tensor product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$, verified by dimension for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). Pure one-mode states are Hermitian idempotents of $\mathbb{B}_{\Psi}$, the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace.
 
@@ -326,7 +326,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $N_{\mathrm{fop}}$, $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ | Number operator; one-mode ladder |
 | $\Gamma(\rho)=\bigoplus_n\Lambda^n\rho$ | Exterior-power (Fock) functor |
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
-| $\hat S_i=\Gamma(\tilde S_i)$ | Spin operators on $\Lambda S$, the images of $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, in units $\hbar=1$ |
+| $\tilde S_{\mathrm{fop},i}=\Gamma(\tilde S_i)$ | Spin operators on $\Lambda S$, the images of $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, in units $\hbar=1$ |
 | $\Gamma(-I)=(-1)^{N_{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
 | $(-1)^{N_{\mathrm{mode}}}=i\vec u$ (one mode) | Parity as the element $i\vec u$ at the declared direction, acting by $Q\mapsto i\vec uQ$ |
 | $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |

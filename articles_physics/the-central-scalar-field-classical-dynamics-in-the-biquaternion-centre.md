@@ -111,7 +111,7 @@ $$
 with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
-\omega^2=c^2k^2+c^2\lambda_m^{-2}=c^2k^2+\frac{m^2c^4}{\hbar^2} .
+\omega^2=c^2k^2+c^2\lambda_m^{-2}=c^2k^2+c^2\lambda_m^{-2} .
 $$
 
 The wave speed is frequency-dependent and exceeds $c$ for every finite $\lambda_m$, $\omega/k=c\sqrt{1+\lambda_m^{-2}/k^2}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.

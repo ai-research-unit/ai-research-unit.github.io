@@ -60,7 +60,7 @@ The construction is transcribed, and the algebra's contribution is identified wi
 $$
 |\theta_{\mathrm{vac}}\rangle = \sum_{Ϙ\in\mathbb{Z}} \exp(\,i\theta Ϙ)\,|Ϙ\rangle,
 $$
-and its defining property is that the topological charge operator acts on it by a phase, $\hat{Ϙ}|\theta_{\mathrm{vac}}\rangle = -i\frac{\partial}{\partial\theta}|\theta_{\mathrm{vac}}\rangle$; the vacuum is an eigenstate of the large gauge transformation that shifts $Ϙ$ by one, with eigenvalue $\exp(-i\theta)$. This is standard, and it is the statement that the large gauge transformation is implemented on the vacuum by a phase rather than by the identity.
+and its defining property is that the topological charge operator acts on it by a phase, $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle = -i\frac{\partial}{\partial\theta}|\theta_{\mathrm{vac}}\rangle$; the vacuum is an eigenstate of the large gauge transformation that shifts $Ϙ$ by one, with eigenvalue $\exp(-i\theta)$. This is standard, and it is the statement that the large gauge transformation is implemented on the vacuum by a phase rather than by the identity.
 
 **The weighting is central.** The phase $\exp(i\theta Ϙ)$ is built from the central $i$, and the central scalars are exactly the centre of the algebra:
 $$

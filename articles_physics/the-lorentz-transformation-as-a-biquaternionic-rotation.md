@@ -331,12 +331,12 @@ $$
 
 carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U_{\mathrm{lor}}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
-**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\hat{\mathcal E}_\mu\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are
+**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal E_{\mathrm{du},\mu}\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are
 
 $$
 \mathcal{E}_0 = e_t,\quad \mathcal{E}_k = \vec e_k,
 \qquad
-\hat{\mathcal E}_0 = e_t,\quad \hat{\mathcal E}_k = -\vec e_k,
+\mathcal E_{\mathrm{du},0} = e_t,\quad \mathcal E_{\mathrm{du},k} = -\vec e_k,
 $$
 
 the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $i c r'_t$, the pair $(q_0, q_k) = (i c r'_t, x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm{lor}}$, the components transform as
@@ -344,7 +344,7 @@ the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the du
 $$
 q_{2\mu} = \sum_{\nu} \Lambda_{\mu\nu}\, q_{\nu},
 \qquad
-\Lambda_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm{lor}}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm{lor}}{}^{*}\right),
+\Lambda_{\mu\nu} = \mathrm{Sc}\!\left(\mathcal E_{\mathrm{du},\mu}\,\tilde U_{\mathrm{lor}}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm{lor}}{}^{*}\right),
 $$
 
 and the matrix $\Lambda_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis, the same one the opening line calls $\Lambda_{\mu\nu}$.

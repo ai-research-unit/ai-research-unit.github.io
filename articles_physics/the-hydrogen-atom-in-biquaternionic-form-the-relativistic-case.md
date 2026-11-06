@@ -19,6 +19,8 @@ The article asks what the biquaternion framework contributes to this problem, an
 
 The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.
 
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
+
 ## The Dirac–Coulomb Problem
 
 ### The potential in the framework's notation
@@ -337,7 +339,7 @@ in which the small part carries the momentum of the large one. **The small part 
 Generate the small functions from the large ones by the action that stands in that relation. In the framework's terms the gradient's vector part, scaled by $\hbar/2mc$, is
 
 $$
-\frac{\hbar}{2mc}\sum_k \vec e_k\,\frac{\partial}{\partial x_k}
+\frac{\lambda_m}{2}\sum_k \vec e_k\,\frac{\partial}{\partial x_k}
 = \frac{i}{2mc}\sum_k p_k\vec e_k ,
 $$
 

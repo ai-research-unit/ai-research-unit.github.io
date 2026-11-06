@@ -42,11 +42,11 @@ The three are often conflated because their compact parts all involve $SU(2)$. T
 A $*$-unitary biquaternion is a scalar multiple of a unit quaternion:
 
 $$
-\tilde U=\lambda\,\hat u,
+\tilde U=\lambda\,\tilde u,
 \qquad
 \lvert\lambda\rvert=1,
 \qquad
-\hat u\in Sp(1)\cong SU(2).
+\tilde u\in Sp(1)\cong SU(2).
 $$
 
 The scalar phase and the rotor commute, and the intersection is $\{\pm e_t\}$, so

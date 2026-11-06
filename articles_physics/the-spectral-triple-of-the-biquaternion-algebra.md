@@ -431,7 +431,6 @@ The dictionary is complex-linear. Writing $c(M)$ for the coefficient array of $M
 
 The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real operators of *The Majorana Equation in Biquaternionic Form* are right multiplication by $\vec e_x$ and the three maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is that frame with the first multiplied by $i$ and the three spatial operators negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $i$ times those, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same operators with the powers of $i$ collected — $\gamma_0$ is $E_4$ and $\gamma_k$ is $-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\xi$, not a second algebra.
 
-
 ## Summary
 
 The spectral triple of the biquaternion algebra is the candidate $(\mathbb{B}_{\mathbb{R}},\mathcal{H},\mathcal{D})$, with $\mathcal{H}$ the completion of the algebra under the Hermitian form

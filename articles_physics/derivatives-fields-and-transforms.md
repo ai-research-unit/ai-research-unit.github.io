@@ -8,6 +8,8 @@ The article states these results in brief and gives the physical interpretations
 
 The article is the analysis article of *Biquaternion Physical Interpretation of Mathematics*. It links the mathematics, not the physics companions. The interpretations it states are the ones the physics corpus has built, restated as interpretations of the mathematics, each with its boundary.
 
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
+
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |

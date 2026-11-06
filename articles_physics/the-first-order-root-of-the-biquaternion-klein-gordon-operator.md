@@ -36,6 +36,8 @@ Three results:
 
 The four components are the four coefficients of a biquaternion. The count of sixteen maps is elementary linear algebra, and the identification of the field with an element of the algebra is the corpus's dictionary. Nothing in the article predicts a mass or a coupling.
 
+Here $\lambda_m=\hbar/(mc)$, $\lambda_p=\hbar/p$ and $\lambda_E=\hbar c/E$ are the mass, momentum and energy lengths.
+
 ## The Equation
 
 $\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=c r'_{t}$ and $r_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=r_k$. Derived from that relation, its Lorentz form is
@@ -90,7 +92,7 @@ k_0^2-\lvert\vec k\rvert^2=\lambda_m^{-2}
 E^2=\vec p^{\,2}c^2+m^2c^4 ,
 $$
 
-with $k_0=E/(\hbar c)$ and $\vec k=\vec p/\hbar$.
+with $k_0=\lambda_E^{-1}$ and $\vec k=\vec p\,\lambda_p^{-1}$.
 
 The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $\lambda_m^{-2}$. The symbol of the gradient is a zero divisor on exactly the same set: left multiplication by $\tilde K$ is invertible off the cone and has rank two on it. The equation $\tilde\nabla\tilde{Ξ}=0$ therefore has a nonzero plane-wave solution exactly where the massless Klein–Gordon equation does, and it halves the solution space there, as §*What the Root Does Not Carry* records.
 

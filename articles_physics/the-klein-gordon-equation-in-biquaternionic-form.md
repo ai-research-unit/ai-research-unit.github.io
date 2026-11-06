@@ -18,6 +18,8 @@ The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathb
 
 The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta$, and $\partial^2/\partial R_t^2 = -c^{-2}\,\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
+Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
+
 ## The Equation and Its Operator
 
 Write the Klein–Gordon equation in biquaternion form as
@@ -158,7 +160,7 @@ with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equat
 The plane-wave solutions are written with the four-wavevector of the read list,
 
 $$
-\tilde P/\hbar = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
+\tilde P\,\lambda_p^{-1} = i\frac{\omega}{c}e_t + \vec k\in\mathbb{B}_{\Phi},
 \qquad
 \tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi} ,
 $$
@@ -178,10 +180,10 @@ $$
 = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\tilde{Ξ}.
 $$
 
-The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = \lambda_m^{-2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde P/\hbar\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
+The Klein–Gordon equation therefore requires $\omega^2/c^2 - \vec k^2 = \lambda_m^{-2}$. Since the biquaternion norm of the four-wavevector is $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = \tilde P\tilde P^{\natural}/\hbar^{2} = -\omega^2/c^2 + \vec k^2$, this is exactly the mass-shell condition
 
 $$
-\langle\tilde P/\hbar\rangle_{\natural} = -\lambda_m^{-2}
+\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = -\lambda_m^{-2}
 \qquad\Longleftrightarrow\qquad
 -\frac{\omega^2}{c^2} + \vec k^2 = -\lambda_m^{-2},
 $$
@@ -190,18 +192,18 @@ that is,
 
 $$
 \boxed{\;
-\omega^2 = c^2\vec k^2 + \frac{m^2c^4}{\hbar^2}\;}.
+\omega^2 = c^2\vec k^2 + c^2\lambda_m^{-2}\;}.
 $$
 
 This is the standard relativistic dispersion relation $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$, and in biquaternion language it is exactly the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ — the biquaternion norm of the four-wavevector fixed to a negative constant, the same statement as $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ for the four-momentum. The two roots
 
 $$
-\omega = \pm\sqrt{c^2\vec k^2 + m^2c^4/\hbar^2}
+\omega = \pm\sqrt{c^2\vec k^2 + c^2\lambda_m^{-2}}
 $$
 
 are the two frequency branches. They are the same dispersion relation with opposite signs, not two different equations, and no choice of $\vec k$ or $m$ makes the negative root disappear.
 
-**Case checked.** As a case chosen independently of the derivation, take dimensionless units $\hbar = 1$, $c = 2$, $m = 0.7$, $\vec k = (0.9,-0.5,0.3)$. Then $c^2\vec k^2 = 4(1.15) = 4.6$, $m^2c^4/\hbar^2 = 0.49\cdot16 = 7.84$, so $\omega^2 = 12.44$ and $\omega \approx 3.5270$. Substituting $\tilde{Ξ} = \cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)$ and $\cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\omega r'_t)$ into $\Box\tilde{Ξ} - \lambda_m^{-2}\tilde{Ξ}$ by second-order finite differences on a grid with step $10^{-4}$ gives a residual of order $10^{-7}$ at random points for **both** branches, which is the discretization error $O(h^2)$ and confirms that both signs solve the equation. The check was made on a numerically chosen case and not on the special value $\vec k = 0$, where the two branches coincide up to sign and a sign error would hide.
+**Case checked.** As a case chosen independently of the derivation, take dimensionless units $\hbar = 1$, $c = 2$, $m = 0.7$, $\vec k = (0.9,-0.5,0.3)$. Then $c^2\vec k^2 = 4(1.15) = 4.6$, $c^2\lambda_m^{-2} = 0.49\cdot16 = 7.84$, so $\omega^2 = 12.44$ and $\omega \approx 3.5270$. Substituting $\tilde{Ξ} = \cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t)$ and $\cos(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)+\omega r'_t)$ into $\Box\tilde{Ξ} - \lambda_m^{-2}\tilde{Ξ}$ by second-order finite differences on a grid with step $10^{-4}$ gives a residual of order $10^{-7}$ at random points for **both** branches, which is the discretization error $O(h^2)$ and confirms that both signs solve the equation. The check was made on a numerically chosen case and not on the special value $\vec k = 0$, where the two branches coincide up to sign and a sign error would hide.
 
 ## The Conserved Current and the Two Defects
 
@@ -275,19 +277,19 @@ $$
 \tilde{Ξ} = \exp(-imc^2r'_t/\hbar)\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-with the exponential central. Substituting into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2i\frac{mc^2}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \frac{m^2c^4}{\hbar^2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
+with the exponential central. Substituting into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2ic\lambda_m^{-1}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - c^2\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
 
 $$
 \frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \frac{2im}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
 
-in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $\hbar/(mc^2)$, leaves
+in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $\lambda_m/c$, leaves
 
 $$
 i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{\hbar^2}{2m}\Delta\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{B}_{\Psi}$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = mc^2/\hbar + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
+the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{B}_{\Psi}$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = c\lambda_m^{-1} + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
 
 One qualification belongs with the limit. The field reduced here is a **scalar**, so the limit lands on the scalar Schrödinger equation, which is the spin-$0$ special case of the parent article's two-component spinor equation, not an identification of the full spinor module. The scalar sector is consistent with the parent, not identical to it.
 
@@ -331,7 +333,7 @@ $$
 
 with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
 
-Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
+Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2\vec k^2 + c^2\lambda_m^{-2}$, which is the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit recovers the parent article's free Schrödinger equation with the same central scalar imaginary $i$, so the two articles use one complex structure and no competing unit.
 
@@ -354,7 +356,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
 | $\tilde{Ξ}$ | Biquaternion-valued Klein–Gordon field |
 | $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
-| $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
+| $\tilde P\,\lambda_p^{-1} = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 | $\tilde{J} = ic\rho\,e_t + \vec j$ | Conserved four-current |

@@ -197,7 +197,7 @@ r_{,k} = \frac{r_k}{r},$$
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is
 
 $$
-\tilde J_{\mathrm{eg},00}^{\,\hat e}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},00,\mathrm{ax}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\left(\hat e, \vec u_x\right)
 + \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),$$
 

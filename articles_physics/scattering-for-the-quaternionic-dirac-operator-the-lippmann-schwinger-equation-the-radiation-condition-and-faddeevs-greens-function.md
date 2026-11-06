@@ -38,7 +38,7 @@ The source writes the same pair with a single letter $M$, the side carried by th
 
 ### Notation for the function spaces
 
-Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $\hat u$ satisfies $\lVert(1+\lvert\zeta\rvert^{2})^{\alpha/2}\hat u\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
+Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $u_{\mathrm{fou}}$ satisfies $\lVert(1+\lvert\zeta\rvert^{2})^{\alpha/2}u_{\mathrm{fou}}\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
 
 ## Maxwell's Equations as a Dirac-Type System
 

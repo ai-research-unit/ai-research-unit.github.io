@@ -28,6 +28,8 @@ The conventions are those of the series: the algebra and the element glyphs of *
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the biquaternion norm.
 - Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pure states, and the trace formula.
 
+Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
+
 ## The Carrier of States and the Spin It Carries
 
 ### A State Is an Element
@@ -203,7 +205,7 @@ $$
 
 with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.
 
-The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P/\hbar$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P\,\lambda_p^{-1}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
 
 $$
 \tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar\right)e_t
@@ -213,7 +215,7 @@ $$
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
 
 $$
-\langle\tilde P/\hbar\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
+\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
 and setting it to the negative constant $-\lambda_m^{-2}$ gives the dispersion relation
@@ -221,7 +223,7 @@ and setting it to the negative constant $-\lambda_m^{-2}$ gives the dispersion r
 $$
 -\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-\lambda_m^{-2}
 \quad\Longleftrightarrow\quad
-\omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+\frac{m^2c^4}{\hbar^2},
+\omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2\lambda_m^{-2},
 $$
 
 which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
@@ -294,7 +296,6 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
-
 ## Summary
 
 A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_k$ has Casimir $\tfrac{3\hbar^2}{4}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
@@ -321,7 +322,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde{Ξ}_{\mathrm{sp}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde\xi)$ | Mixed pairing of two states of opposite labels |
-| $\tilde R_\Phi$, $\tilde P/\hbar$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
+| $\tilde R_\Phi$, $\tilde P\,\lambda_p^{-1}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box$ | d'Alembertian, central and scalar (cited) |
 | $c$, $\hbar$, $m$ | Speed of light in the medium, reduced Planck constant, mass |

@@ -64,6 +64,8 @@ $$
 
 both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla\tilde\nabla^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.
 
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
+
 ## The Dirac Hamiltonian and the Odd/Even Split
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion
@@ -305,7 +307,7 @@ $$
 [S_1,Q_k]F=-\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y,
 \qquad
 -i[S_1,Q_k]F=i\cdot\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y
-=-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y,
+=-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y,
 $$
 
 where $i\cdot i=-1$ once more. Hence
@@ -313,10 +315,10 @@ where $i\cdot i=-1$ once more. Hence
 $$
 \vec X=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y+\cdots .
+X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots .
 $$
 
-The correction is of the order of the half reduced Compton wavelength $\hbar/(2mc)$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
+The correction is of the order of the half reduced Compton wavelength $\lambda_m/2$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
 \frac{d\vec X}{dr'_t}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
@@ -325,14 +327,14 @@ $$
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
 
 $$
-\vec q-\vec X=\frac{\hbar}{2mc}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
+\vec q-\vec X=\frac{\lambda_m}{2}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
 $$
 
 The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
-The correction $\frac{\hbar}{2mc}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
+The correction $\frac{\lambda_m}{2}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
@@ -455,7 +457,7 @@ checked to machine precision by direct computation. The mean position is the ope
 $$
 \vec X=U^\dagger\vec q\,U=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y+\cdots ,
+X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots ,
 $$
 
 whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.
@@ -486,7 +488,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_kQ_k\vec e_k$ | Material position |
-| $X_kF = Q_kF-\frac{\hbar}{2mc}\vec e_kF\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
+| $X_kF = Q_kF-\frac{\lambda_m}{2}\vec e_kF\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
 | $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$ | Fixed $*$-unitary of the frame, the right multiplication $F\mapsto Fw$; $w^2=e_t$, and $w\beta w=\Gamma$ |
 
 ## Further Reading

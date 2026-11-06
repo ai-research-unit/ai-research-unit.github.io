@@ -10,6 +10,8 @@ The article is organised as follows. The next section writes the Dirac equation 
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.
 
+Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
+
 ## The Dirac Equation at a Potential Step
 
 ### Minimal coupling and the step
@@ -126,7 +128,7 @@ The free mass shell is
 $$
 \tilde P\tilde P^{\natural}=-m^2c^2,
 \qquad
-\tilde P/\hbar = i\frac{\omega}{c}e_t + \vec e_x k ,
+\tilde P\,\lambda_p^{-1} = i\frac{\omega}{c}e_t + \vec e_x k ,
 $$
 
 whose two roots $\omega = \pm\sqrt{k^2c^2 + m^2c^4}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
@@ -190,7 +192,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
-| $\tilde P/\hbar$, $\tilde P\tilde P^{\natural} = -m^2c^2$ | Wave biquaternion and mass shell |
+| $\tilde P\,\lambda_p^{-1}$, $\tilde P\tilde P^{\natural} = -m^2c^2$ | Wave biquaternion and mass shell |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading

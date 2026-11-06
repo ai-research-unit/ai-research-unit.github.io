@@ -17,6 +17,8 @@ The scope is relativistic and quantum, and it is the worked application that clo
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the photon states whose polarizations are counted.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved current and the stress tensor of the fields being scattered.
 
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
+
 ## The Polarization Biquaternions
 
 ### Linear and circular polarizations in the material sector
@@ -267,7 +269,7 @@ The opposite limit is also elementary and is worth recording because it shows th
 $$
 \sigma_{\mathrm{KN}}(x) \approx \frac{\pi r_e^2}{x}\Bigl(\ln 2x + \tfrac12\Bigr) ,
 $$
-the standard high-energy asymptotics. It was verified numerically against the analytic total at five energies: the ratio of the exact value to the asymptotic form is $0.989$ at $x = 100$, $0.997$ at $x = 500$, and $0.999$ at $x = 1000$ ($0.9893$, $0.9975$, $0.9987$ before rounding), so the asymptotic law is approached from below. The two pieces of the asymptotic form have different origins. The $1/x$ is dimensional: $r_e^2/x = r_e^2\,mc^2/\hbar\omega$ is the only combination of the two lengths available once the photon wavelength is short compared with the Compton wavelength. The logarithm comes from angles, not from the forward peak: with $r = 1/(1+x\sin^2(\theta/2))$ the band $1/\sqrt x\ll\theta\ll1$ contributes a term of order $\frac{r_e^2}{x}\int_1^{x}du/u = \frac{r_e^2}{x}\ln x$, each decade of angle contributing equally, and that band carries $63\%$ of the total at $x=100$ and $73\%$ at $x=1000$ (verified by numerical integration). The Thomson constant $8\pi r_e^2/3$ is entirely gone, and the only trace of the electron mass is the argument $x = \hbar\omega/mc^2$ of the logarithm. The two limits together, $\sigma_T$ at $x\to0$ and $\pi r_e^2(\ln 2x+\frac12)/x$ at $x\to\infty$, are the two ends of the one function $\sigma_{\mathrm{KN}}(x)$, and the whole energy dependence of the process is the single dimensionless scale the mass supplies.
+the standard high-energy asymptotics. It was verified numerically against the analytic total at five energies: the ratio of the exact value to the asymptotic form is $0.989$ at $x = 100$, $0.997$ at $x = 500$, and $0.999$ at $x = 1000$ ($0.9893$, $0.9975$, $0.9987$ before rounding), so the asymptotic law is approached from below. The two pieces of the asymptotic form have different origins. The $1/x$ is dimensional: $r_e^2/x = r_e^2\,c\lambda_m^{-1}\omega$ is the only combination of the two lengths available once the photon wavelength is short compared with the Compton wavelength. The logarithm comes from angles, not from the forward peak: with $r = 1/(1+x\sin^2(\theta/2))$ the band $1/\sqrt x\ll\theta\ll1$ contributes a term of order $\frac{r_e^2}{x}\int_1^{x}du/u = \frac{r_e^2}{x}\ln x$, each decade of angle contributing equally, and that band carries $63\%$ of the total at $x=100$ and $73\%$ at $x=1000$ (verified by numerical integration). The Thomson constant $8\pi r_e^2/3$ is entirely gone, and the only trace of the electron mass is the argument $x = \hbar\omega/mc^2$ of the logarithm. The two limits together, $\sigma_T$ at $x\to0$ and $\pi r_e^2(\ln 2x+\frac12)/x$ at $x\to\infty$, are the two ends of the one function $\sigma_{\mathrm{KN}}(x)$, and the whole energy dependence of the process is the single dimensionless scale the mass supplies.
 
 ### Polarization in Compton scattering
 

@@ -144,7 +144,6 @@ in agreement with the standard value. With $A_3=1.181241456\ldots$ the electron 
 $$a_e=1.1596522320\times10^{-3}$$
 against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}$ in $a_e$, nine significant figures. That comparison tests the standard calculation and not this framework; it is reproduced here because it is the numerical reference the conventions are checked against. With the two-loop term alone the prediction is $1.1596374278\times10^{-3}$, short by about $1.5\times10^{-8}$, which is the size of the three-loop term. Beyond QED, the same decomposition organizes the muon anomaly into its QED, electroweak and hadronic parts; that is particle physics and lies outside this subcategory.
 
-
 ## What the Algebra Supplies and What It Does Not
 
 **Standard, transcribed.** The vertex decomposition into $F_1$ and $F_2$; the tree-level $g=2$; the Gordon decomposition; the one-loop diagram and its Feynman-parameter representation; the Ward-identity confinement of the divergence to the $F_1$ structure; the value $a=\alpha/2\pi$; the higher-order coefficients; the comparison with the measured electron anomaly; the trace and contraction identities of the operators; and the four directions with their squares.
