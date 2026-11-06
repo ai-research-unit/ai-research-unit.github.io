@@ -7,13 +7,13 @@ The companion article *The Klein–Gordon Equation in Biquaternionic Form* close
 Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.
 
 - **The standard part.** The Lagrangian, the Legendre transform, the equal-time commutators, the mode expansion, the mode algebra, the Hamiltonian, the normal-ordering constant and the conserved charge are textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
-- **The structural finding.** The scalar field takes values in the **centre** $\mathbb{C}_{\mathbb{B}}$ of the algebra, and the algebra supplies no bosonic ladder of its own. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The mode algebra of the quantized scalar field is therefore the Weyl algebra of an imported module, not an object of $\mathbb{B}$. Where the Dirac field needed a $\mathbb{Z}/2$ grading that the algebra does not contain, and the Maxwell field needed a gauge-fixing principle that the algebra does not supply, the scalar field needs nothing from the algebra at all — and that is itself the finding.
+- **The structural finding.** The scalar field takes values in the **centre** $\mathbb{B}_{C}$ of the algebra, and the algebra supplies no bosonic ladder of its own. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The mode algebra of the quantized scalar field is therefore the Weyl algebra of an imported module, not an object of $\mathbb{B}$. Where the Dirac field needed a $\mathbb{Z}/2$ grading that the algebra does not contain, and the Maxwell field needed a gauge-fixing principle that the algebra does not supply, the scalar field needs nothing from the algebra at all — and that is itself the finding.
 - **The open part.** The $\mathbb{B}$-intrinsic operator field, the intrinsic Lagrangian and conjugate momentum, the biquaternion Fock space, and the regularization of the vacuum energy are not settled here, exactly as in the two parent quantizations.
 
 The article is organised as follows. The next section fixes the classical field, its action and its conjugate momentum, and records why the Legendre transform is regular here — unlike both the Dirac and the Maxwell cases. The following section reads the field as a central-valued object and fixes the mass shell as a level set of the biquaternion norm. The next section states the equal-time commutation relations and the reasons they are commutators. The section after that carries out the expansion in the plane waves of the parent equation. The next section derives the mode algebra and the Fock space, and states the bosonic obstruction. A section gives the Hamiltonian, the four-momentum and the charge. The following section treats the commutator function and microcausality. The article closes with an explicit accounting of what is standard and what is open.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two frequency branches, the mass-shell condition, and the conserved current.
-- Companion article *Noether's Theorem in Biquaternionic Form*, for the scalar Lagrangian, its central scalar form, the $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$, and the energy–momentum tensor.
+- Companion article *Noether's Theorem in Biquaternionic Form*, for the scalar Lagrangian, its central scalar form, the $\mathrm{U}(1)$ current $\tilde J\in\mathbb{B}_{\Phi}$, and the energy–momentum tensor.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector, the biquaternion norm, and the $i c r'_t$ coordinate.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument against a bosonic mode in $\mathbb{B}$, and for the exterior and symmetric algebras as the fermionic and bosonic Fock spaces.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the choice of bracket.
@@ -28,7 +28,7 @@ $$
 \tilde{Ξ}(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t,\qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
@@ -62,7 +62,7 @@ $$
 The value space of the field is the centre, and the reason is structural rather than chosen. A field of spin $0$ carries no Lorentz index; the framework's scalar field is therefore taken to be central-valued, so that its values commute with every element of the algebra. Written in real components, the complex scalar is two real scalars, one in each sector's scalar direction,
 
 $$
-\tilde{Ξ}=\frac{1}{\sqrt2}\Big(\underbrace{\xi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{M}_-}\Big),
+\tilde{Ξ}=\frac{1}{\sqrt2}\Big(\underbrace{\xi_1\,e_t}_{\in\,\mathbb{B}_{\Psi}}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{B}_{\Phi}}\Big),
 \qquad
 \mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)=\frac12\left(\xi_1^2+\xi_2^2\right),
 $$
@@ -72,7 +72,7 @@ with $\xi_1,\xi_2$ the two real scalar fields of the sector in the normalization
 The quadratic form of the theory is the biquaternion norm. The material four-wavevector is
 
 $$
-\tilde P/\hbar=i\frac{\omega}{c}\,e_t+\vec k\in\mathbb{M}_-,
+\tilde P/\hbar=i\frac{\omega}{c}\,e_t+\vec k\in\mathbb{B}_{\Phi},
 \qquad
 \tilde P^{\natural}/\hbar=i\frac{\omega}{c}\,e_t-\vec k,
 \qquad
@@ -205,7 +205,7 @@ $$
 Ϙ_{\mathrm{fop}}=\int\!\frac{d^3p}{(2\pi)^3}\left({a_{\mathrm{fop},\vec p}}^\dagger a_{\mathrm{fop},\vec p}-{b_{\mathrm{fop},\vec p}}^\dagger b_{\mathrm{fop},\vec p}\right),
 $$
 
-with $Ϙ_{\mathrm{fop}}$ the Noether charge of the parent's $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$; particles and antiparticles carry opposite charge. The normal-ordered charge is the difference of two non-negative operators and is therefore unbounded above and below, as it must be for a conserved charge; the normal-ordered Hamiltonian, being their sum, is non-negative after the vacuum energy is removed.
+with $Ϙ_{\mathrm{fop}}$ the Noether charge of the parent's $\mathrm{U}(1)$ current $\tilde J\in\mathbb{B}_{\Phi}$; particles and antiparticles carry opposite charge. The normal-ordered charge is the difference of two non-negative operators and is therefore unbounded above and below, as it must be for a conserved charge; the normal-ordered Hamiltonian, being their sum, is non-negative after the vacuum energy is removed.
 
 The vacuum energy has the same status in this framework as in the parent quantizations. The c-number is a **central scalar**, a multiple of $e_t$, hence commutes with every element of the algebra and with every operator built from the field; as a constant it is unobservable, and its dependence on boundary conditions — the finite, observable part — is the subject of the companion article *The Vacuum State and the Casimir Effect in Biquaternionic Form*, which reaches it for the scalar and electromagnetic cases. The framework's contribution is to identify the vacuum energy as the trace part of the Hamiltonian, not to select a regularization of it.
 
@@ -273,7 +273,7 @@ $$
 
 the phases being central unitaries $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar)$ built from the material four-wavevector $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
-The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
+The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
 ## Summary of Notation
 
@@ -282,9 +282,9 @@ The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
-| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
+| $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |

@@ -234,11 +234,11 @@ The Hamilton domain and the quaternion construction domain are not nested, and t
 
 ### What This Pairing Carries
 
-The quaternion row is the only one whose first factor is a real quaternion: it is the polar decomposition of the ordinary quaternions, and the only modulus that lies in $\mathbb{H}_{\mathbb{B}}$. Its second factor is the only one whose exponent is a real quaternion. These two facts, and not the domain, are what the pairing contributes to the series: the factorisation is a regrouping of the word, while the construction is the formula from the parts, and §*The Domains and the Witnesses* separates their conditions.
+The quaternion row is the only one whose first factor is a real quaternion: it is the polar decomposition of the ordinary quaternions, and the only modulus that lies in $\mathbb{B}_{H}$. Its second factor is the only one whose exponent is a real quaternion. These two facts, and not the domain, are what the pairing contributes to the series: the factorisation is a regrouping of the word, while the construction is the formula from the parts, and §*The Domains and the Witnesses* separates their conditions.
 
 ## Behaviour Under the Three Conjugations
 
-The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{C}_{\mathbb{B}}$; complex conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the two operations commuting because one acts on the coefficients and the other on the units. The three act on the quaternion pairing below as a computation rather than as a contrast of styles; their action on the Hamilton data is computed in *The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, and the contrast between the two is what the closing subsection records.
+The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{B}_{C}$; complex conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the two operations commuting because one acts on the coefficients and the other on the units. The three act on the quaternion pairing below as a computation rather than as a contrast of styles; their action on the Hamilton data is computed in *The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, and the contrast between the two is what the closing subsection records.
 
 ### The Quaternion Data
 
@@ -297,7 +297,7 @@ Two exact statements identify which classical polar form each named pairing gene
 | non-scalar real quaternion | $q_te_t+\vec q$, $\vec q\neq0$ | $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\in\mathbb{R}_{>0}$ and $\Theta$ real, $\vec U=\vec q/\lvert\vec q\rvert$ | $\tilde q=\tilde Q$, $\tilde\Theta=0$ | the quaternion polar form |
 | complex scalar | $ze_t$, $\operatorname{Re}z\neq0$ | unavailable, $B=0$ | $\tilde q=\lvert z\rvert e_t$, $\tilde\Theta=(\arg z)e_t$ | the complex polar form |
 
-**A real quaternion.** If all four coefficients of $\tilde{Q}$ are real and the vector part is nonzero then $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, the biquaternion norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, and with the principal branch of the square root
+**A real quaternion.** If all four coefficients of $\tilde{Q}$ are real and the vector part is nonzero then $\tilde{Q}\in\mathbb{B}_{H}$, the biquaternion norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, and with the principal branch of the square root
 
 $$
 \Rho = \sqrt{\langle\tilde Q\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{\Rho}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{\Rho}\in[0,1] ,

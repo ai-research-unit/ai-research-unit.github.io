@@ -94,7 +94,7 @@ $$
 $$
 and a state is an element
 $$
-\tilde{Ϛ}_n\in\big(\mathbb{M}_+^{\otimes n}\big),\qquad
+\tilde{Ϛ}_n\in\big(\mathbb{B}_{\Psi}^{\otimes n}\big),\qquad
 \tilde{Ϛ}_n\ge0,\qquad
 \mathrm{Tr}(\tilde{Ϛ}_n)=1 .
 $$
@@ -284,7 +284,7 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 **3. The continuum limit.** The region statement is a relative-entropy statement. Does the framework's closed-form relative entropy, applied to a regulated lattice and continued to the continuum, reproduce the standard monotonicity of entanglement entropy under region inclusion?
 
-**4. The operation count.** The partial trace is one completely positive map; the data-processing inequality holds for all of them. Which completely positive maps on $\mathbb{B}^{\otimes n}$ are native to the framework's sector structure, in the sense of the reversible/irreversible dichotomy of $\mathbb{M}_+$?
+**4. The operation count.** The partial trace is one completely positive map; the data-processing inequality holds for all of them. Which completely positive maps on $\mathbb{B}^{\otimes n}$ are native to the framework's sector structure, in the sense of the reversible/irreversible dichotomy of $\mathbb{B}_{\Psi}$?
 
 **5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
@@ -303,7 +303,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
 | $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde Q_i)$ | Product trace; $\mathrm{Tr}(e_t^{\otimes n})=2^n$ |

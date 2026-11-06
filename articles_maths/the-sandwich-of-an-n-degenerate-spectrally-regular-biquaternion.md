@@ -103,7 +103,7 @@ Thus the image is the line $\mathbb{C}u u^{\dagger}=\mathbb{C}P$ and the value i
 
 **(c)** $\mathrm{Sd}_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$;
 
-**(d)** $\mathrm{Sd}_{\tilde Q}$ preserves the real forms $\mathbb{M}_+$ and $\mathbb{M}_-$;
+**(d)** $\mathrm{Sd}_{\tilde Q}$ preserves the real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$;
 
 **(e)** the adjoint is $\mathrm{Sd}_{\tilde Q}^{*}=\mathrm{Sd}_{\tilde Q^{*}}$;
 

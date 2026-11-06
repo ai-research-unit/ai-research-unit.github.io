@@ -18,18 +18,18 @@ The article assumes the algebra and the conjugations of *The Biquaternion Algebr
 
 ## Notational Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar unit $e_t=1$, vector units $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_te_t\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_k\vec e_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$. The coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\mu=\varepsilon_\mu Q_\mu$ and sign vector $\varepsilon=(1,-1,-1,-1)$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar unit $e_t=1$, vector units $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_te_t\in\mathbb{B}_{C}$ and $v=\sum_{k=1}^{3}Q_k\vec e_k\in\mathbb{B}_{V}$. The scalar part is $\mathrm{Sc}$. The coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\mu=\varepsilon_\mu Q_\mu$ and sign vector $\varepsilon=(1,-1,-1,-1)$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$.
 
 The six subspaces and their real bases are these.
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | blocks |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\vec Q=0$ | $e_t,\ ie_t$ | $2$ | $A_1\oplus A_2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $Q_t=0$ | $\vec e_x,\ i\vec e_x,\ \vec e_y,\ i\vec e_y,\ \vec e_z,\ i\vec e_z$ | $6$ | $B_1\oplus B_2$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $Q_\mu\in\mathbb{R}$ | $e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | $4$ | $A_1\oplus B_1$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $Q_\mu\in i\mathbb{R}$ | $ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | $4$ | $A_2\oplus B_2$ |
-| $\mathbb{M}_+$ | $Q_t\in\mathbb{R}$, $Q_k\in i\mathbb{R}$ | $e_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | $4$ | $A_1\oplus B_2$ |
-| $\mathbb{M}_-$ | $Q_t\in i\mathbb{R}$, $Q_k\in\mathbb{R}$ | $ie_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | $4$ | $A_2\oplus B_1$ |
+| $\mathbb{B}_{C}$ | $\vec Q=0$ | $e_t,\ ie_t$ | $2$ | $A_1\oplus A_2$ |
+| $\mathbb{B}_{V}$ | $Q_t=0$ | $\vec e_x,\ i\vec e_x,\ \vec e_y,\ i\vec e_y,\ \vec e_z,\ i\vec e_z$ | $6$ | $B_1\oplus B_2$ |
+| $\mathbb{B}_{H}$ | $Q_\mu\in\mathbb{R}$ | $e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | $4$ | $A_1\oplus B_1$ |
+| $\mathbb{B}_{iH}$ | $Q_\mu\in i\mathbb{R}$ | $ie_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | $4$ | $A_2\oplus B_2$ |
+| $\mathbb{B}_{\Psi}$ | $Q_t\in\mathbb{R}$, $Q_k\in i\mathbb{R}$ | $e_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | $4$ | $A_1\oplus B_2$ |
+| $\mathbb{B}_{\Phi}$ | $Q_t\in i\mathbb{R}$, $Q_k\in\mathbb{R}$ | $ie_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | $4$ | $A_2\oplus B_1$ |
 
 The four **coordinate blocks** of *Subspaces and Decompositions* are
 
@@ -39,7 +39,7 @@ B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad
 B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-the two scalar blocks of dimension one and the two vector blocks of dimension three. The centre and the vector subspace are **complex subspaces**, with $iU=U$; the other four are **real-type subspaces**, with $iU\cap U=\{0\}$. The two sectors are $\mathbb{M}_+$, the informational sector, and $\mathbb{M}_-$, the material sector.
+the two scalar blocks of dimension one and the two vector blocks of dimension three. The centre and the vector subspace are **complex subspaces**, with $iU=U$; the other four are **real-type subspaces**, with $iU\cap U=\{0\}$. The two sectors are $\mathbb{B}_{\Psi}$, the informational sector, and $\mathbb{B}_{\Phi}$, the material sector.
 
 The four **general products** are the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear,
 
@@ -103,16 +103,16 @@ f_{\mathrm{pl}*}(U,U)=UU^{*}=U\cdot U,\qquad
 f_{\natural*}(U,U)=U^{\natural}U^{*}=U\cdot U,
 $$
 
-so the four products take the same set of values on $U\times U$, and their common span is the span of the general plain bilinear product. The common spans are the subspace itself for the centre and for the quaternion subspace, the whole algebra for the vector subspace, the quaternion subspace for the anti-quaternion subspace, and $\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{B})$ for the two Hermitian subspaces.
+so the four products take the same set of values on $U\times U$, and their common span is the span of the general plain bilinear product. The common spans are the subspace itself for the centre and for the quaternion subspace, the whole algebra for the vector subspace, the quaternion subspace for the anti-quaternion subspace, and $\mathbb{R}e_t\oplus\mathbb{B}_{V}$ for the two Hermitian subspaces.
 
 | subspace | common span of the four products | $\dim_{\mathbb{R}}$ |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\mathbb{C}_{\mathbb{B}}=A_1\oplus A_2$ | $2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B}$ | $8$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{H}_{\mathbb{B}}=A_1\oplus B_1$ | $4$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{H}_{\mathbb{B}}$ | $4$ |
-| $\mathbb{M}_+$ | $A_1\oplus B_1\oplus B_2$ | $7$ |
-| $\mathbb{M}_-$ | $A_1\oplus B_1\oplus B_2$ | $7$ |
+| $\mathbb{B}_{C}$ | $\mathbb{B}_{C}=A_1\oplus A_2$ | $2$ |
+| $\mathbb{B}_{V}$ | $\mathbb{B}$ | $8$ |
+| $\mathbb{B}_{H}$ | $\mathbb{B}_{H}=A_1\oplus B_1$ | $4$ |
+| $\mathbb{B}_{iH}$ | $\mathbb{B}_{H}$ | $4$ |
+| $\mathbb{B}_{\Psi}$ | $A_1\oplus B_1\oplus B_2$ | $7$ |
+| $\mathbb{B}_{\Phi}$ | $A_1\oplus B_1\oplus B_2$ | $7$ |
 
 The table is the first statement of the article: **the four products differ in the structure they leave on the value, not in the value set itself**. The product keeps a subspace inside itself for exactly two of the remarkable subspaces, the centre and the quaternion subspace, and for all four products at once. The vector, anti-quaternion, Hermitian and anti-Hermitian subspaces are closed under none of the four.
 
@@ -131,14 +131,14 @@ The result of the three tests, subspace by subspace, is this.
 
 | subspace | closed under the product | Jordan algebra for | Lie algebra for |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | all four | general plain bilinear, general quaternionic bilinear | all four |
-| $\mathrm{Vect}(\mathbb{B})$ | none | none | general plain bilinear, general quaternionic bilinear |
-| $\mathbb{H}_{\mathbb{B}}$ | all four | general plain bilinear | general plain bilinear, general quaternionic sesquilinear |
-| $i\mathbb{H}_{\mathbb{B}}$ | none | none | none |
-| $\mathbb{M}_+$ | none | general plain bilinear, general plain sesquilinear | none |
-| $\mathbb{M}_-$ | none | none | general plain bilinear, general plain sesquilinear |
+| $\mathbb{B}_{C}$ | all four | general plain bilinear, general quaternionic bilinear | all four |
+| $\mathbb{B}_{V}$ | none | none | general plain bilinear, general quaternionic bilinear |
+| $\mathbb{B}_{H}$ | all four | general plain bilinear | general plain bilinear, general quaternionic sesquilinear |
+| $\mathbb{B}_{iH}$ | none | none | none |
+| $\mathbb{B}_{\Psi}$ | none | general plain bilinear, general plain sesquilinear | none |
+| $\mathbb{B}_{\Phi}$ | none | none | general plain bilinear, general plain sesquilinear |
 
-The table is the answer; the six sections that follow carry the formulas and the witnesses. Three features of it are worth naming now. The **centre** is the only subspace that is a Lie algebra for all four products. The **quaternion subspace** is the only four-dimensional subspace that is at once closed under the product, a Jordan algebra and a Lie algebra. The **Hermitian and anti-Hermitian subspaces** divide the two halves of the product between them: the symmetrisation survives on $\mathbb{M}_+$ and the bracket on $\mathbb{M}_-$, and neither survives on the other.
+The table is the answer; the six sections that follow carry the formulas and the witnesses. Three features of it are worth naming now. The **centre** is the only subspace that is a Lie algebra for all four products. The **quaternion subspace** is the only four-dimensional subspace that is at once closed under the product, a Jordan algebra and a Lie algebra. The **Hermitian and anti-Hermitian subspaces** divide the two halves of the product between them: the symmetrisation survives on $\mathbb{B}_{\Psi}$ and the bracket on $\mathbb{B}_{\Phi}$, and neither survives on the other.
 
 ## The Four Forms
 
@@ -167,14 +167,14 @@ The remarkable subspaces fall into two classes, and the class decides whether th
 
 | subspace | $iU=U$ | $\dim_{\mathbb{R}}$ | field of the values | imaginary part |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | yes | $2$ | $\mathbb{C}$ | non-zero, rank $2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | yes | $6$ | $\mathbb{C}$ | non-zero, rank $6$ |
-| $\mathbb{H}_{\mathbb{B}}$ | no | $4$ | $\mathbb{R}$ | zero |
-| $i\mathbb{H}_{\mathbb{B}}$ | no | $4$ | $\mathbb{R}$ | zero |
-| $\mathbb{M}_+$ | no | $4$ | $\mathbb{R}$ | zero |
-| $\mathbb{M}_-$ | no | $4$ | $\mathbb{R}$ | zero |
+| $\mathbb{B}_{C}$ | yes | $2$ | $\mathbb{C}$ | non-zero, rank $2$ |
+| $\mathbb{B}_{V}$ | yes | $6$ | $\mathbb{C}$ | non-zero, rank $6$ |
+| $\mathbb{B}_{H}$ | no | $4$ | $\mathbb{R}$ | zero |
+| $\mathbb{B}_{iH}$ | no | $4$ | $\mathbb{R}$ | zero |
+| $\mathbb{B}_{\Psi}$ | no | $4$ | $\mathbb{R}$ | zero |
+| $\mathbb{B}_{\Phi}$ | no | $4$ | $\mathbb{R}$ | zero |
 
-On the two **complex subspaces**, the centre and the vector subspace, all four forms are complex-valued, their imaginary parts are non-zero and non-degenerate, and the multiplication by $i$ is available inside the subspace, so the alternating companion is read off the real part by the Kähler identity below. On the four **real-type subspaces**, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$, all four forms are real-valued, their imaginary parts vanish, and each form is a real symmetric bilinear form recovered from its algebraic norm.
+On the two **complex subspaces**, the centre and the vector subspace, all four forms are complex-valued, their imaginary parts are non-zero and non-degenerate, and the multiplication by $i$ is available inside the subspace, so the alternating companion is read off the real part by the Kähler identity below. On the four **real-type subspaces**, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, all four forms are real-valued, their imaginary parts vanish, and each form is a real symmetric bilinear form recovered from its algebraic norm.
 
 **The four forms carry a phase structure on the two complex subspaces and none on the four real-type subspaces.** The rest of the article verifies this subspace by subspace and draws its consequences.
 
@@ -227,25 +227,25 @@ The values are these, in the coordinates of each subspace.
 
 | subspace | element | plain | Hermitian | quaternionic | Krein |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $Ae_t$ | $A^{2}$ | $\lvert A\rvert^{2}$ | $A^{2}$ | $\lvert A\rvert^{2}$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\vec P$ | $-\sum_kP_k^{2}$ | $\sum_k\lvert P_k\rvert^{2}$ | $\sum_kP_k^{2}$ | $-\sum_k\lvert P_k\rvert^{2}$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $h$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $ih$ | $-h_t^{2}+\lvert\vec h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $-\lvert h\rvert^{2}$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ |
-| $\mathbb{M}_+$ | $a_te_t+i\vec p$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ |
-| $\mathbb{M}_-$ | $ib_te_t+\vec q$ | $-b_t^{2}-\lvert\vec q\rvert^{2}$ | $b_t^{2}+\lvert\vec q\rvert^{2}$ | $-b_t^{2}+\lvert\vec q\rvert^{2}$ | $b_t^{2}-\lvert\vec q\rvert^{2}$ |
+| $\mathbb{B}_{C}$ | $Ae_t$ | $A^{2}$ | $\lvert A\rvert^{2}$ | $A^{2}$ | $\lvert A\rvert^{2}$ |
+| $\mathbb{B}_{V}$ | $\vec P$ | $-\sum_kP_k^{2}$ | $\sum_k\lvert P_k\rvert^{2}$ | $\sum_kP_k^{2}$ | $-\sum_k\lvert P_k\rvert^{2}$ |
+| $\mathbb{B}_{H}$ | $h$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ |
+| $\mathbb{B}_{iH}$ | $ih$ | $-h_t^{2}+\lvert\vec h\rvert^{2}$ | $\lvert h\rvert^{2}$ | $-\lvert h\rvert^{2}$ | $h_t^{2}-\lvert\vec h\rvert^{2}$ |
+| $\mathbb{B}_{\Psi}$ | $a_te_t+i\vec p$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ |
+| $\mathbb{B}_{\Phi}$ | $ib_te_t+\vec q$ | $-b_t^{2}-\lvert\vec q\rvert^{2}$ | $b_t^{2}+\lvert\vec q\rvert^{2}$ | $-b_t^{2}+\lvert\vec q\rvert^{2}$ | $b_t^{2}-\lvert\vec q\rvert^{2}$ |
 
 The signatures are these.
 
 | subspace | plain | Hermitian | quaternionic | Krein |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $(2,0)$ | $(1,1)$ | $(2,0)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $(6,0)$ | $(3,3)$ | $(0,6)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $(4,0)$ | $(4,0)$ | $(1,3)$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $(4,0)$ | $(0,4)$ | $(1,3)$ |
-| $\mathbb{M}_+$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
-| $\mathbb{M}_-$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
+| $\mathbb{B}_{C}$ | $(1,1)$ | $(2,0)$ | $(1,1)$ | $(2,0)$ |
+| $\mathbb{B}_{V}$ | $(3,3)$ | $(6,0)$ | $(3,3)$ | $(0,6)$ |
+| $\mathbb{B}_{H}$ | $(1,3)$ | $(4,0)$ | $(4,0)$ | $(1,3)$ |
+| $\mathbb{B}_{iH}$ | $(3,1)$ | $(4,0)$ | $(0,4)$ | $(1,3)$ |
+| $\mathbb{B}_{\Psi}$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
+| $\mathbb{B}_{\Phi}$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
 
-**The collapses.** The four norms collapse on every subspace, to two functions or to two pairs of opposites, and the pattern of the collapse is the signature pattern. On the centre $\langle\cdot\rangle=\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural*}$; on the quaternion subspace $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural}$; on the anti-quaternion subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural}$; on the vector subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$; on $\mathbb{M}_+$ $\langle\cdot\rangle=\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{\natural*}$; on $\mathbb{M}_-$ $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$. The collapses are not an accident of the coordinates: they are the fixed- and anti-fixed-space conditions of the four conjugations read on the norms. The signatures are the record of the signs, and the definiteness of each norm is the record of the signatures.
+**The collapses.** The four norms collapse on every subspace, to two functions or to two pairs of opposites, and the pattern of the collapse is the signature pattern. On the centre $\langle\cdot\rangle=\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural*}$; on the quaternion subspace $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural}$; on the anti-quaternion subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural}$; on the vector subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Psi}$ $\langle\cdot\rangle=\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Phi}$ $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$. The collapses are not an accident of the coordinates: they are the fixed- and anti-fixed-space conditions of the four conjugations read on the norms. The signatures are the record of the signs, and the definiteness of each norm is the record of the signatures.
 
 ## The Centre Subspace
 
@@ -335,7 +335,7 @@ The two bilinear norms coincide and are the complex square; the two sesquilinear
 
 ## The Vector Subspace
 
-**The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathrm{Vect}(\mathbb{B}),[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
+**The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathbb{B}_{V},[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
 
 A pure vector is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_k\in\mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and the complex analogue of the imaginary quaternions. In the blocks it is $B_1\oplus B_2$. The three operations behave here as differently as anywhere: the product leaves the subspace at once, the symmetrisation collapses to the centre or to the Hermitian subspace, and only the bracket stays.
 
@@ -379,8 +379,8 @@ again outside the vector subspace. The vector subspace is therefore a **Jordan a
 **The bracket.** The commutator keeps the vector subspace inside itself, because the scalar part is symmetric and cancels:
 
 $$
-[\vec P,\vec Q]=2\,\vec P\times\vec Q\in\mathrm{Vect}(\mathbb{B}),\qquad
-[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B}).
+[\vec P,\vec Q]=2\,\vec P\times\vec Q\in\mathbb{B}_{V},\qquad
+[\mathbb{B}_{V},\mathbb{B}_{V}]=\mathbb{B}_{V}.
 $$
 
 The bracket of two pure vectors is twice their complex cross product, and the cross products fill the whole subspace, so the algebra is perfect. It is the complex **Lie algebra $\mathfrak{sl}(2,\mathbb{C})$**, of complex dimension three, read in the coordinates $\vec e_x,\vec e_y,\vec e_z$ against the Pauli matrices. The general quaternionic bilinear bracket is the negative of the commutator,
@@ -389,13 +389,13 @@ $$
 [\vec P,\vec Q]_{\natural}=(-\vec P)\vec Q-(-\vec Q)\vec P=-[\vec P,\vec Q],
 $$
 
-so it is a **Lie algebra** too, the same one with the opposite sign. The two sesquilinear brackets leave the subspace: their values are anti-Hermitian and fill $\mathbb{M}_-$,
+so it is a **Lie algebra** too, the same one with the opposite sign. The two sesquilinear brackets leave the subspace: their values are anti-Hermitian and fill $\mathbb{B}_{\Phi}$,
 
 $$
-[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]_{*}=[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]_{\natural*}=\mathbb{M}_-,
+[\mathbb{B}_{V},\mathbb{B}_{V}]_{*}=[\mathbb{B}_{V},\mathbb{B}_{V}]_{\natural*}=\mathbb{B}_{\Phi},
 $$
 
-with the witness $[\vec e_x,i\vec e_x]_{*}=-2ie_t\notin\mathrm{Vect}(\mathbb{B})$. The vector subspace is therefore a **Lie algebra for exactly the two bilinear products** and a **Jordan algebra for none**; of the three operations only the antisymmetric half is carried by the subspace, and there it reproduces the classical Lie algebra of the whole algebra.
+with the witness $[\vec e_x,i\vec e_x]_{*}=-2ie_t\notin\mathbb{B}_{V}$. The vector subspace is therefore a **Lie algebra for exactly the two bilinear products** and a **Jordan algebra for none**; of the three operations only the antisymmetric half is carried by the subspace, and there it reproduces the classical Lie algebra of the whole algebra.
 
 ### The Four Forms
 
@@ -454,10 +454,10 @@ A quaternion element is $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ with all 
 **All four keep the quaternion subspace inside itself**; on the real quaternions they read $hg$, $\bar h g$, $h\bar g$ and $\bar h\bar g=\overline{gh}$:
 
 $$
-\boxed{\;\mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},\quad
-\mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},\quad
-\mathbb{H}_{\mathbb{B}}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}},\quad
-\mathbb{H}_{\mathbb{B}}^{\natural}\mathbb{H}_{\mathbb{B}}^{*}=\mathbb{H}_{\mathbb{B}}\;}.
+\boxed{\;\mathbb{B}_{H}\mathbb{B}_{H}=\mathbb{B}_{H},\quad
+\mathbb{B}_{H}^{\natural}\mathbb{B}_{H}=\mathbb{B}_{H},\quad
+\mathbb{B}_{H}\mathbb{B}_{H}^{*}=\mathbb{B}_{H},\quad
+\mathbb{B}_{H}^{\natural}\mathbb{B}_{H}^{*}=\mathbb{B}_{H}\;}.
 $$
 
 It is therefore closed under all four products at once, and it is an associative subalgebra for exactly one of them, the general plain bilinear product; under that product it is the division algebra of the real quaternions, since the norm is a sum of four real squares and vanishes only at the origin. The other three products are not associative there: their counterexamples in *The Four General Products and Their Relations over the Biquaternion Algebra* §*The Failure of Associativity* are triples of the quaternion subspace, so each of them fails associativity inside the subspace already.
@@ -465,7 +465,7 @@ It is therefore closed under all four products at once, and it is an associative
 **The symmetrisation.** Only the general plain bilinear symmetrisation gives a **Jordan algebra**:
 
 $$
-\mathbb{H}_{\mathbb{B}}\bullet_{\mathrm{pl}}\mathbb{H}_{\mathbb{B}}=\mathbb{H}_{\mathbb{B}},
+\mathbb{B}_{H}\bullet_{\mathrm{pl}}\mathbb{B}_{H}=\mathbb{B}_{H},
 $$
 
 the symmetrisation of the real quaternion algebra, a commutative Jordan algebra of real dimension four. The other three symmetrisations stay inside the subspace but **fail the Jordan identity**, so the quaternion subspace, closed under all four products, is a Jordan algebra for exactly one of them. The general plain sesquilinear and the general quaternionic bilinear symmetrisations coincide there and collapse to the centre:
@@ -479,14 +479,14 @@ the trace form of the general quaternionic bilinear product; the general quatern
 **The bracket.** The commutator stays inside the subspace and gives a **Lie algebra**:
 
 $$
-\boxed{\;[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]=B_1,\qquad
-(\mathbb{H}_{\mathbb{B}},[\cdot,\cdot])\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)\;},
+\boxed{\;[\mathbb{B}_{H},\mathbb{B}_{H}]=B_1,\qquad
+(\mathbb{B}_{H},[\cdot,\cdot])\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)\;},
 $$
 
 the bracket of two real quaternions being twice the real cross product of their vector parts, a pure real quaternion, which is why the subspace closes. The derived subalgebra is $B_1$, the imaginary quaternions, which under the cross product is the Lie algebra $\mathfrak{su}(2)$ of $SU(2)$; the line $\mathbb{R}e_t$ is central, because $e_t$ is central in the algebra, so the Lie algebra of the subspace is $\mathbb{R}e_t\oplus\mathfrak{su}(2)$. The general quaternionic sesquilinear bracket is the commutator itself, the two conjugations cancelling on the subspace,
 
 $$
-[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]_{\natural*}=[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}],
+[\mathbb{B}_{H},\mathbb{B}_{H}]_{\natural*}=[\mathbb{B}_{H},\mathbb{B}_{H}],
 $$
 
 so the quaternion subspace is a Lie algebra for the general plain bilinear product and for the general quaternionic sesquilinear product. The general plain sesquilinear and general quaternionic bilinear brackets stay inside — their values are pure vectors — but **fail the Jacobi identity**, at the triple $(e_t,\vec e_x,\vec e_y)$, where the cyclic sum is $+4\vec e_z$ for the general quaternionic bilinear bracket and $-4\vec e_z$ for the general plain sesquilinear one. The quaternion subspace is thus, with the centre, one of the two subspaces that are at once closed under the product, a Jordan algebra and a Lie algebra; of the four products the general plain bilinear one carries both structures, and the general quaternionic sesquilinear one the Lie structure alone.
@@ -519,7 +519,7 @@ The bilinear plain norm and the quaternionic sesquilinear norm coincide and are 
 
 **The anti-quaternion subspace carries no algebra at all.** It is neither a Jordan nor a Lie algebra, for any product, any symmetrisation or any bracket; its only structure is that of a two-sided module over the quaternion subspace.
 
-An anti-quaternion element is $ih$ with $h$ a real quaternion. The subspace equals $i\mathbb{H}_{\mathbb{B}}$, has real dimension four, and is the anti-fixed set of the coefficientwise conjugation, $\overline{ih}=-ih$. In the blocks it is $A_2\oplus B_2$, and it is the odd part of the $\mathbb{Z}/2$-grading whose even part is the quaternion subspace.
+An anti-quaternion element is $ih$ with $h$ a real quaternion. The subspace equals $\mathbb{B}_{iH}$, has real dimension four, and is the anti-fixed set of the coefficientwise conjugation, $\overline{ih}=-ih$. In the blocks it is $A_2\oplus B_2$, and it is the odd part of the $\mathbb{Z}/2$-grading whose even part is the quaternion subspace.
 
 ### The Four General Products
 
@@ -532,7 +532,7 @@ $$
 (ih)^{\natural}(ik)^{*}=\bar h\bar k=\overline{kh}.
 $$
 
-Each of the four **spans $\mathbb{H}_{\mathbb{B}}$**, so the anti-quaternion subspace is closed under none of the four products. The product of two odd elements is even, which is the statement that $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ is a grading, and the anti-quaternion subspace is a two-sided module over the quaternion subspace, the module structure being the only structure it carries.
+Each of the four **spans $\mathbb{B}_{H}$**, so the anti-quaternion subspace is closed under none of the four products. The product of two odd elements is even, which is the statement that $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ is a grading, and the anti-quaternion subspace is a two-sided module over the quaternion subspace, the module structure being the only structure it carries.
 
 **The symmetrisation.** **No symmetrisation keeps the anti-quaternion subspace inside itself** either; every value is even:
 
@@ -540,7 +540,7 @@ $$
 (ih)\bullet_{\mathrm{pl}}(ik)=-h\bullet_{\mathrm{pl}}k,\qquad
 (ih)\bullet(ik)=-\bigl(h\bullet k\bigr)\in\mathbb{R}e_t,\qquad
 (ih)\bullet_{*}(ik)=h\bullet_{*}k\in\mathbb{R}e_t,\qquad
-(ih)\bullet_{\natural*}(ik)=\bigl(h\bullet_{\mathrm{pl}}k\bigr)^{\natural}\in\mathbb{H}_{\mathbb{B}},
+(ih)\bullet_{\natural*}(ik)=\bigl(h\bullet_{\mathrm{pl}}k\bigr)^{\natural}\in\mathbb{B}_{H},
 $$
 
 the first and the fourth lying in the quaternion subspace, the second and the third in the centre. The anti-quaternion subspace is therefore a **Jordan algebra for none** of the four products.
@@ -554,7 +554,7 @@ $$
 [ih,ik]_{\natural*}=[h,k],
 $$
 
-each lying in $B_1\subset\mathbb{H}_{\mathbb{B}}$. The subspace has an imaginary scalar part and an imaginary vector part, and every value above is real, so nothing returns. It is a **Lie algebra for none** of the four products and, with the symmetrisations, the subspace carries **no algebra at all**: not for the product and not for either of its two halves.
+each lying in $B_1\subset\mathbb{B}_{H}$. The subspace has an imaginary scalar part and an imaginary vector part, and every value above is real, so nothing returns. It is a **Lie algebra for none** of the four products and, with the symmetrisations, the subspace carries **no algebra at all**: not for the product and not for either of its two halves.
 
 ### The Four Forms
 
@@ -599,7 +599,7 @@ $$
 (a_te_t+i\vec p)(c_te_t+i\vec q)=\bigl(a_tc_t+(\vec p,\vec q)\bigr)e_t-\vec p\times\vec q+i(a_t\vec q+c_t\vec p),
 $$
 
-has a real scalar part and a vector part that runs over the whole complex vector subspace, and the middle term $-\vec p\times\vec q$ is a real pure vector, which no Hermitian element has: the witness is $(i\vec e_x)(i\vec e_y)=-\vec e_z$. The four products come in two pairs on the subspace, $f_{\mathrm{pl}}=f_{\mathrm{pl}*}$ and $f_{\natural}=f_{\natural*}$, and each of the four **spans $\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{B})$**, of real dimension seven. It is the failure of the interior term that does the work: the Hermitian subspace has no real vector part, and that is precisely what the product of two of its elements supplies.
+has a real scalar part and a vector part that runs over the whole complex vector subspace, and the middle term $-\vec p\times\vec q$ is a real pure vector, which no Hermitian element has: the witness is $(i\vec e_x)(i\vec e_y)=-\vec e_z$. The four products come in two pairs on the subspace, $f_{\mathrm{pl}}=f_{\mathrm{pl}*}$ and $f_{\natural}=f_{\natural*}$, and each of the four **spans $\mathbb{R}e_t\oplus\mathbb{B}_{V}$**, of real dimension seven. It is the failure of the interior term that does the work: the Hermitian subspace has no real vector part, and that is precisely what the product of two of its elements supplies.
 
 **The symmetrisation.** This is the operation that stays. **All four symmetrisations keep the Hermitian subspace inside itself**, the special feature of this subspace: the cross-product term is antisymmetric and cancels, and the Hermitian conjugation fixes a Hermitian element, so the general plain bilinear and the general plain sesquilinear symmetrisations agree:
 
@@ -610,7 +610,7 @@ $$
 This is the **Jordan product**, and
 
 $$
-\boxed{\;(\mathbb{M}_{+},\bullet_{\mathrm{pl}})\cong H_{2}(\mathbb{C})=J(\mathbb{B})\;}
+\boxed{\;(\mathbb{B}_{\Psi},\bullet_{\mathrm{pl}})\cong H_{2}(\mathbb{C})=J(\mathbb{B})\;}
 $$
 
 is the Hermitian Jordan algebra of degree two, with two orthogonal idempotents and Peirce dimensions $1+2+1$ (*Symmetric and Antisymmetric Decomposition of the Four General Products*). The two quaternionic symmetrisations also stay inside but are central,
@@ -621,13 +621,13 @@ $$
 
 and give **no Jordan algebra**, the identity failing at $x=i\vec e_x$, where $x\bullet x=e_t$ and the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_t$ and $0$. The Hermitian subspace is therefore a **Jordan algebra for the general plain bilinear product and for the general plain sesquilinear product**, which coincide there, and for neither of the two quaternionic products.
 
-**The bracket.** **No bracket keeps the Hermitian subspace inside itself.** The bracket of two Hermitian elements has zero scalar part, because the scalar part of every product is symmetric and real on $\mathbb{M}_+$, so it is a pure vector; and the values are not all imaginary, so the subspace does not close. The commutator and the general plain sesquilinear bracket fill the real vector triple, and the two quaternionic brackets the whole complex vector subspace:
+**The bracket.** **No bracket keeps the Hermitian subspace inside itself.** The bracket of two Hermitian elements has zero scalar part, because the scalar part of every product is symmetric and real on $\mathbb{B}_{\Psi}$, so it is a pure vector; and the values are not all imaginary, so the subspace does not close. The commutator and the general plain sesquilinear bracket fill the real vector triple, and the two quaternionic brackets the whole complex vector subspace:
 
 $$
-[\mathbb{M}_+,\mathbb{M}_+]=B_1,\qquad
-[\mathbb{M}_+,\mathbb{M}_+]_{\natural}=\mathrm{Vect}(\mathbb{B}),\qquad
-[\mathbb{M}_+,\mathbb{M}_+]_*=B_1,\qquad
-[\mathbb{M}_+,\mathbb{M}_+]_{\natural*}=\mathrm{Vect}(\mathbb{B}).
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]=B_1,\qquad
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]_{\natural}=\mathbb{B}_{V},\qquad
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]_*=B_1,\qquad
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]_{\natural*}=\mathbb{B}_{V}.
 $$
 
 The commutator of two Hermitian elements is twice the cross product of their two imaginary vector parts, a real pure vector outside the subspace, so the Hermitian subspace is a **Lie algebra for none** of the four products. It is the exact counterpart of the vector subspace: there the bracket is carried and the symmetrisation is not, here the symmetrisation is carried and the bracket is not, and the two are the subspaces on which the two halves of the product each find their richest expression.
@@ -668,12 +668,12 @@ $$
 (ib_te_t+\vec q)(id_te_t+\vec r)=\bigl(-b_td_t-(\vec q,\vec r)\bigr)e_t+\vec q\times\vec r+i(b_t\vec r+d_t\vec q),
 $$
 
-has a real scalar part and a vector part that runs over the whole complex vector subspace, and it is the real scalar part that leaves the subspace: the witness is $(ie_t)(ie_t)=-e_t$, whereas an anti-Hermitian element has a purely imaginary scalar part. Each of the four **spans $\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{B})$**, of real dimension seven, and the subspace is closed under no product.
+has a real scalar part and a vector part that runs over the whole complex vector subspace, and it is the real scalar part that leaves the subspace: the witness is $(ie_t)(ie_t)=-e_t$, whereas an anti-Hermitian element has a purely imaginary scalar part. Each of the four **spans $\mathbb{R}e_t\oplus\mathbb{B}_{V}$**, of real dimension seven, and the subspace is closed under no product.
 
 **The symmetrisation.** **No symmetrisation keeps the anti-Hermitian subspace inside itself.** The general plain bilinear symmetrisation is Hermitian-valued,
 
 $$
-(ib_te_t+\vec q)\bullet_{\mathrm{pl}}(id_te_t+\vec r)=\bigl(-b_td_t-(\vec q,\vec r)\bigr)e_t+i(b_t\vec r+d_t\vec q)\in\mathbb{M}_+,
+(ib_te_t+\vec q)\bullet_{\mathrm{pl}}(id_te_t+\vec r)=\bigl(-b_td_t-(\vec q,\vec r)\bigr)e_t+i(b_t\vec r+d_t\vec q)\in\mathbb{B}_{\Psi},
 $$
 
 with a real scalar part and an imaginary vector part, and the general plain sesquilinear symmetrisation is its negative, since ${}^{*}$ negates an anti-Hermitian element. The two quaternionic symmetrisations are central, and are the negative of each other:
@@ -683,28 +683,28 @@ $$
 (ib_te_t+\vec q)\bullet_{\natural*}(id_te_t+\vec r)=\bigl(b_td_t-(\vec q,\vec r)\bigr)e_t.
 $$
 
-The anti-Hermitian subspace is therefore a **Jordan algebra for none** of the four products, and the symmetrised product of two anti-Hermitian elements is never anti-Hermitian. This is the sign reversal that separates the two sectors: multiplication by the central imaginary exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, but it does not carry the symmetrisation of one to the symmetrisation of the other, and only $\mathbb{M}_+$ is closed under it.
+The anti-Hermitian subspace is therefore a **Jordan algebra for none** of the four products, and the symmetrised product of two anti-Hermitian elements is never anti-Hermitian. This is the sign reversal that separates the two sectors: multiplication by the central imaginary exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, but it does not carry the symmetrisation of one to the symmetrisation of the other, and only $\mathbb{B}_{\Psi}$ is closed under it.
 
 **The bracket.** This is the operation that stays. **The commutator keeps the anti-Hermitian subspace inside itself**, and gives a Lie algebra:
 
 $$
-\boxed{\;[\mathbb{M}_-,\mathbb{M}_-]=B_1,\qquad
-(\mathbb{M}_-,[\cdot,\cdot])\cong\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1\;},
+\boxed{\;[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=B_1,\qquad
+(\mathbb{B}_{\Phi},[\cdot,\cdot])\cong\mathfrak{u}(2)\cong\mathbb{R}(ie_t)\oplus B_1\;},
 $$
 
 the bracket of two anti-Hermitian elements being twice the real cross product of their two real vector parts, a real pure vector. The derived subalgebra is $B_1$, which under the cross product is $\mathfrak{su}(2)$, and the line $\mathbb{R}(ie_t)$ is central; the algebra is therefore the direct sum of a central line and $\mathfrak{su}(2)$, which is the **Lie algebra $\mathfrak{u}(2)$** of $\mathrm{U}(2)$, the skew-Hermitian complex $2\times2$ matrices, with centre $\mathbb{R}(ie_t)$ and derived subalgebra $\mathfrak{su}(2)$. The general plain sesquilinear bracket is the negative of the commutator, since ${}^{*}$ negates an anti-Hermitian element:
 
 $$
-[\mathbb{M}_-,\mathbb{M}_-]_{*}=-[\mathbb{M}_-,\mathbb{M}_-],
+[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]_{*}=-[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}],
 $$
 
 so the anti-Hermitian subspace is a **Lie algebra for the general plain bilinear product and for the general plain sesquilinear product**. The two quaternionic brackets leave the subspace: their values are complex pure vectors and fill the whole complex vector subspace,
 
 $$
-[\mathbb{M}_-,\mathbb{M}_-]_{\natural}=[\mathbb{M}_-,\mathbb{M}_-]_{\natural*}=\mathrm{Vect}(\mathbb{B}),
+[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]_{\natural}=[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]_{\natural*}=\mathbb{B}_{V},
 $$
 
-with the witness $[ie_t,\vec e_x]_{\natural}=2i\vec e_x\notin\mathbb{M}_-$. The anti-Hermitian subspace is therefore a **Lie algebra for exactly the two products** whose brackets reproduce the commutator up to sign, and a **Jordan algebra for none**.
+with the witness $[ie_t,\vec e_x]_{\natural}=2i\vec e_x\notin\mathbb{B}_{\Phi}$. The anti-Hermitian subspace is therefore a **Lie algebra for exactly the two products** whose brackets reproduce the commutator up to sign, and a **Jordan algebra for none**.
 
 ### The Four Forms
 
@@ -743,12 +743,12 @@ The null set of each form on each subspace is this.
 
 | subspace | plain | Hermitian | quaternionic | Krein |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ |
-| $\mathrm{Vect}(\mathbb{B})$ | the complex cone, real dimension $4$ | $\{0\}$ | the complex cone, real dimension $4$ | $\{0\}$ |
-| $\mathbb{H}_{\mathbb{B}}$ | the null cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | the null cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ |
-| $\mathbb{M}_+$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
-| $\mathbb{M}_-$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
+| $\mathbb{B}_{C}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ |
+| $\mathbb{B}_{V}$ | the complex cone, real dimension $4$ | $\{0\}$ | the complex cone, real dimension $4$ | $\{0\}$ |
+| $\mathbb{B}_{H}$ | the null cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ |
+| $\mathbb{B}_{iH}$ | the null cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ |
+| $\mathbb{B}_{\Psi}$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
+| $\mathbb{B}_{\Phi}$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
 
 The rule behind the table is one line: **off the centre a form has a complex null cone on a subspace exactly when the real part of its restriction is indefinite there**, and the signature table of $\S$*The Four Algebraic Norms* says which are. On the centre the complex zeros are trivial for all four forms even though the real part of the two bilinear forms is indefinite, and it is the real zeros of the real part that form the cone there; the two kinds of zero are separated in $\S$*The Realified Form on the Subspaces*. The count of forms with a complex null cone is none on the centre, two on the vector subspace, the bilinear pair of signature $(3,3)$, and two on each of the four real-type subspaces: the plain and the Krein forms on the quaternion subspace and on its imaginary translate, the quaternionic and the Krein forms on the two sectors.
 
@@ -768,12 +768,12 @@ It is the real orthogonal group of the signature of $g_{\mathrm{pl}}$ on $U$, an
 
 | subspace | signature of $g_{\mathrm{pl}}$ | isometry group | real dimension |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $O(1,1)$ | $1$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $O(3,3)$ | $15$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $O(1,3)$ | $6$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $O(3,1)\cong O(1,3)$ | $6$ |
-| $\mathbb{M}_+$ | $(4,0)$ | $O(4)$ | $6$ |
-| $\mathbb{M}_-$ | $(0,4)$ | $O(4)$ | $6$ |
+| $\mathbb{B}_{C}$ | $(1,1)$ | $O(1,1)$ | $1$ |
+| $\mathbb{B}_{V}$ | $(3,3)$ | $O(3,3)$ | $15$ |
+| $\mathbb{B}_{H}$ | $(1,3)$ | $O(1,3)$ | $6$ |
+| $\mathbb{B}_{iH}$ | $(3,1)$ | $O(3,1)\cong O(1,3)$ | $6$ |
+| $\mathbb{B}_{\Psi}$ | $(4,0)$ | $O(4)$ | $6$ |
+| $\mathbb{B}_{\Phi}$ | $(0,4)$ | $O(4)$ | $6$ |
 
 The same rows with the signatures of the Hermitian, the quaternionic and the Krein forms give the isometry groups of their real parts, since each of the four forms is non-degenerate on $U$ and its group depends on the signature alone.
 
@@ -781,14 +781,14 @@ The same rows with the signatures of the Hermitian, the quaternionic and the Kre
 
 ## The Realified Form on the Subspaces
 
-**The maximal definite subspaces.** The real part $g_{\mathrm{pl}}$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{M}_+$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{M}_-$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a hyperbolic plane, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
+**The maximal definite subspaces.** The real part $g_{\mathrm{pl}}$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{B}_{\Psi}$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a hyperbolic plane, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
 
 **The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the signatures adding to $(4,4)$ in each:
 
 $$
-\boxed{\;\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),\qquad
-\mathbb{B}=\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}},\qquad
-\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_-\;}
+\boxed{\;\mathbb{B}=\mathbb{B}_{C}\perp\mathbb{B}_{V},\qquad
+\mathbb{B}=\mathbb{B}_{H}\perp \mathbb{B}_{iH},\qquad
+\mathbb{B}=\mathbb{B}_{\Psi}\perp\mathbb{B}_{\Phi}\;}
 $$
 
 of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only the third splits the realified form into a positive definite and a negative definite piece; in the first two both sides carry isotropic vectors. The two restricted forms of the third split are exchanged by the central scalar, $\langle i\tilde Q_1,i\tilde Q_2\rangle=-\langle\tilde Q_1,\tilde Q_2\rangle$.
@@ -797,18 +797,18 @@ of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only t
 
 | subspace | signature | null element | real null cone, real dimension |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $e_t+ie_t$ | $1$, the two lines $\mathbb{R}(e_t\pm ie_t)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $\vec e_x+i\vec e_x$ | $5$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $e_t+\vec e_x$ | $3$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $ie_t+i\vec e_x$ | $3$ |
+| $\mathbb{B}_{C}$ | $(1,1)$ | $e_t+ie_t$ | $1$, the two lines $\mathbb{R}(e_t\pm ie_t)$ |
+| $\mathbb{B}_{V}$ | $(3,3)$ | $\vec e_x+i\vec e_x$ | $5$ |
+| $\mathbb{B}_{H}$ | $(1,3)$ | $e_t+\vec e_x$ | $3$ |
+| $\mathbb{B}_{iH}$ | $(3,1)$ | $ie_t+i\vec e_x$ | $3$ |
 
-Each element is null because the real part of its value vanishes, $1-1$ on the centre and on the vector and quaternion subspaces, $-1+1$ on the anti-quaternion subspace. On the centre, of real dimension two, the cone is the pair of lines $\mathbb{R}(e_t\pm ie_t)$. The two definite rows, $\mathbb{M}_+$ and $\mathbb{M}_-$, contribute no null element, so the isotropic rows are four and not six. These are the real zeros of $g_{\mathrm{pl}}$, and they are distinct from the complex null sets of the table above, which are the complex zeros of the plain form: on the four real-type subspaces the two agree, because there the plain form is real-valued, while on the centre and the vector subspace they do not — the complex null set of the plain form is the origin on the centre and the complex cone of real dimension $4$ on the vector subspace, against the two real lines and the cone of real dimension $5$ found here. On the vector subspace the cone $\sum_kp_k^2=\sum_kq_k^2$ contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{\vec e_x+i\vec e_x,\vec e_y+i\vec e_y\}$, and the three elements $\vec e_k+i\vec e_k$ span a totally isotropic subspace of real dimension $3$, the maximum for signature $(3,3)$.
+Each element is null because the real part of its value vanishes, $1-1$ on the centre and on the vector and quaternion subspaces, $-1+1$ on the anti-quaternion subspace. On the centre, of real dimension two, the cone is the pair of lines $\mathbb{R}(e_t\pm ie_t)$. The two definite rows, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, contribute no null element, so the isotropic rows are four and not six. These are the real zeros of $g_{\mathrm{pl}}$, and they are distinct from the complex null sets of the table above, which are the complex zeros of the plain form: on the four real-type subspaces the two agree, because there the plain form is real-valued, while on the centre and the vector subspace they do not — the complex null set of the plain form is the origin on the centre and the complex cone of real dimension $4$ on the vector subspace, against the two real lines and the cone of real dimension $5$ found here. On the vector subspace the cone $\sum_kp_k^2=\sum_kq_k^2$ contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{\vec e_x+i\vec e_x,\vec e_y+i\vec e_y\}$, and the three elements $\vec e_k+i\vec e_k$ span a totally isotropic subspace of real dimension $3$, the maximum for signature $(3,3)$.
 
 ## The Two Splits and the Two Interpretations
 
-The remarkable subspaces of this article are the homes of the parts of the four products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
+The remarkable subspaces of this article are the homes of the parts of the four products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 
-The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde Q_1,\tilde Q_2)=\overline{f(\tilde Q_2,\tilde Q_1)}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. This is the **adapted** reading, against the **plain** exchange of the first paragraph. For $f_{\mathrm{pl}*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $f_{\natural*}$ the skew half is the cross product $\vec Q_1\times\overline{\vec Q_2}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the Krein form in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
+The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde Q_1,\tilde Q_2)=\overline{f(\tilde Q_2,\tilde Q_1)}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. This is the **adapted** reading, against the **plain** exchange of the first paragraph. For $f_{\mathrm{pl}*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{B}_{C}$ and in the **vector subspace** $\mathbb{B}_{V}$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $f_{\natural*}$ the skew half is the cross product $\vec Q_1\times\overline{\vec Q_2}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the Krein form in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
 
 So three of the passages of the adapted reading land in the list — the centre and the vector subspace for $f_{\mathrm{pl}*}$, the vector subspace again for $f_{\natural*}$ — against the Hermitian and the anti-Hermitian subspace, where the plain reading of the same two products lands. The two readings are of one pair of products each and neither is the other; the twelve names of *Symmetric and Antisymmetric Decomposition of the Four General Products* belong to the **adapted** reading and not to the plain one tabulated here, and the plain reading's own four halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*.
 
@@ -822,7 +822,7 @@ Three facts summarise the separation. **Only the Hermitian norm is definite on e
 
 The interpretation is an interpretation and not a theorem; it is the one the corpus gives to the four forms and it is sharpened here by the remarkable subspaces.
 
-- On the **material sector** $\mathbb{M}_-$ the four forms are real and the article adds nothing to the four algebraic norms: the interval $\langle\cdot\rangle_{\natural}$, the Euclidean square $\langle\cdot\rangle_{*}$ and their negatives $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle$. The material sector carries no imaginary part, so it carries no phase pairing, and the null cone there is the interval's.
+- On the **material sector** $\mathbb{B}_{\Phi}$ the four forms are real and the article adds nothing to the four algebraic norms: the interval $\langle\cdot\rangle_{\natural}$, the Euclidean square $\langle\cdot\rangle_{*}$ and their negatives $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle$. The material sector carries no imaginary part, so it carries no phase pairing, and the null cone there is the interval's.
 - On the **two complex subspaces** the four forms carry, besides the intervals and the squares of their algebraic norms, a second real form: symmetric for the two bilinear forms and alternating for the two sesquilinear ones. The alternating companion is non-degenerate, so the centre carries one canonical pair and the vector subspace three, one to a spatial direction.
 - The alternating companion is the **phase**, or area, pairing: the object a canonical pair needs, and the one the corpus has so far read only through the imaginary part of the Hermitian form. On the centre it is the pairing of the complex line with itself, of rank $2$; on the vector subspace it is the pairing of the three complex directions, of rank $6$; on the four real-type subspaces, and in particular on the material sector, it is absent.
 
@@ -831,7 +831,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 
 ## Summary
 
-**One chain.** The four general products, their scalar-part forms and their algebraic norms are read on the six remarkable subspaces. The four products have the same value set on each subspace, because ${}^{\natural}$ and ${}^{*}$ preserve every subspace of the list; they differ in the structure they leave on the value. The product keeps a subspace inside itself for exactly the centre and the quaternion subspace, for all four products. The symmetrisation keeps it for exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket for exactly the centre (all four products), the quaternion subspace (the general plain bilinear and general quaternionic sesquilinear products), the vector subspace (the two bilinear products) and the anti-Hermitian subspace (the general plain bilinear and general plain sesquilinear products). The resulting algebras are: the centre, the field $\mathbb{C}$ for the two bilinear products and a Lie algebra for all four; the vector subspace, $\mathfrak{sl}(2,\mathbb{C})$ for the two bilinear products and no Jordan algebra; the quaternion subspace, a Jordan algebra for the general plain bilinear product and the Lie algebra $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ for the general plain bilinear and general quaternionic sesquilinear products; the anti-quaternion subspace, no algebra at all; $\mathbb{M}_+$, the Jordan algebra $H_2(\mathbb{C})$ for the two plain products and no Lie algebra; and $\mathbb{M}_-$, the Lie algebra $\mathfrak{u}(2)$ for the two plain products and no Jordan algebra.
+**One chain.** The four general products, their scalar-part forms and their algebraic norms are read on the six remarkable subspaces. The four products have the same value set on each subspace, because ${}^{\natural}$ and ${}^{*}$ preserve every subspace of the list; they differ in the structure they leave on the value. The product keeps a subspace inside itself for exactly the centre and the quaternion subspace, for all four products. The symmetrisation keeps it for exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket for exactly the centre (all four products), the quaternion subspace (the general plain bilinear and general quaternionic sesquilinear products), the vector subspace (the two bilinear products) and the anti-Hermitian subspace (the general plain bilinear and general plain sesquilinear products). The resulting algebras are: the centre, the field $\mathbb{C}$ for the two bilinear products and a Lie algebra for all four; the vector subspace, $\mathfrak{sl}(2,\mathbb{C})$ for the two bilinear products and no Jordan algebra; the quaternion subspace, a Jordan algebra for the general plain bilinear product and the Lie algebra $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ for the general plain bilinear and general quaternionic sesquilinear products; the anti-quaternion subspace, no algebra at all; $\mathbb{B}_{\Psi}$, the Jordan algebra $H_2(\mathbb{C})$ for the two plain products and no Lie algebra; and $\mathbb{B}_{\Phi}$, the Lie algebra $\mathfrak{u}(2)$ for the two plain products and no Jordan algebra.
 
 **The forms.** All twenty-four restrictions are non-degenerate. Each form splits as $\varphi=g+i\sigma$, with $g$ real symmetric and $\sigma$ symmetric for the two bilinear forms, alternating for the two sesquilinear forms. The imaginary part vanishes on the four real-type subspaces and is non-degenerate on the two complex subspaces, of rank $2$ on the centre and rank $6$ on the vector subspace. The Kähler identity $\omega(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,i\tilde Q_2)$ holds for the two sesquilinear forms on the complex subspaces, and the companion identity $\sigma=-g(\cdot,i\cdot)$ for the two bilinear forms.
 
@@ -843,7 +843,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the centre, the vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the centre, the vector, quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces |
 | $A_1=\mathbb{R}e_t$, $A_2=\mathbb{R}(ie_t)$, $B_1$, $B_2$ | the two scalar and the two vector coordinate blocks |
 | $f_{\mathrm{pl}}$, $f_{\natural}$, $f_{\mathrm{pl}*}$, $f_{\natural*}$ | the four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear |
 | $\bullet_{\mathrm{pl}}$, $\bullet$, $\bullet_{*}$, $\bullet_{\natural*}$ | their symmetrisations |

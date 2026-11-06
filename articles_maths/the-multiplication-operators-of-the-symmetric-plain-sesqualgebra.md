@@ -10,7 +10,7 @@ $$
 
 This article studies the family $\{L^{\star}_{\tilde Q_3}, R^{\star}_{\tilde Q_3}\}$ as a family of operators: their linearity — **the left family is conjugate-linear and the right family is $\mathbb{C}$-linear**, because the second slot of the product carries the conjugation — their rank, image, kernel and traces, their adjoints with respect to the form $H$, their composition laws and the failure of multiplicativity, and the groups of linear maps that preserve the form and the product.
 
-The result that organises the article is the pair of facts that the operators are **rank one** and that the adjoint question has a **negative answer**. Every nonzero operator of the block has image the centre $\mathbb{C}_{\mathbb{B}}$, kernel the hyperplane $H(\tilde Q_3,\cdot\,) = 0$, and trace the scalar part of the parameter — $\overline{Q_{3t}}$ for the right family and $Q_{3t}$ for the left one in the conjugate-linear convention — so the right family carries the conjugation of the parameter and the left family does not, the trace-level mark of the sesquilinear class in contrast with the bilinear quaternionic block whose traces are both linear. And the adjoint of $L^{\star}_{\tilde Q_3}$ with respect to $H$ is **not** $L^{\star}_{\tilde Q_3}$, and it is **not** $R^{\star}_{\tilde Q_3}$ either: it is the conjugate-linear map $\tilde Q_4\mapsto \overline{Q_{4t}}\,\tilde Q_3$, which is not a multiplication operator of the block. The failure is the operator expression of the conjugate-linearity, and it is the sharpest difference from the one-sided operators of the general sesqualgebra, where the adjoint of a multiplication is again a multiplication.
+The result that organises the article is the pair of facts that the operators are **rank one** and that the adjoint question has a **negative answer**. Every nonzero operator of the block has image the centre $\mathbb{B}_{C}$, kernel the hyperplane $H(\tilde Q_3,\cdot\,) = 0$, and trace the scalar part of the parameter — $\overline{Q_{3t}}$ for the right family and $Q_{3t}$ for the left one in the conjugate-linear convention — so the right family carries the conjugation of the parameter and the left family does not, the trace-level mark of the sesquilinear class in contrast with the bilinear quaternionic block whose traces are both linear. And the adjoint of $L^{\star}_{\tilde Q_3}$ with respect to $H$ is **not** $L^{\star}_{\tilde Q_3}$, and it is **not** $R^{\star}_{\tilde Q_3}$ either: it is the conjugate-linear map $\tilde Q_4\mapsto \overline{Q_{4t}}\,\tilde Q_3$, which is not a multiplication operator of the block. The failure is the operator expression of the conjugate-linearity, and it is the sharpest difference from the one-sided operators of the general sesqualgebra, where the adjoint of a multiplication is again a multiplication.
 
 ## The Operators and Their Linearity
 
@@ -40,13 +40,13 @@ the bar acting on the central value. Equivalently $R^{\star}_{\tilde Q_3} = \ove
 
 **Theorem (rank one, image the centre, kernel a hyperplane).** Let $\tilde Q_3\neq0$. Then:
 
-1. $L^{\star}_{\tilde Q_3}$ and $R^{\star}_{\tilde Q_3}$ have **rank one**, their image being the centre $\mathbb{C}_{\mathbb{B}}$;
+1. $L^{\star}_{\tilde Q_3}$ and $R^{\star}_{\tilde Q_3}$ have **rank one**, their image being the centre $\mathbb{B}_{C}$;
 2. the kernel of each is the hyperplane $\{\tilde{Q}_2 : \langle\tilde Q_3,\tilde{Q}_2\rangle_{*} = 0\}$, of complex dimension three and real dimension six;
 3. neither operator is injective, and each is surjective onto the centre.
 
 *Proof.* Every value is a complex multiple of $e_t$, and the value $\langle\tilde Q_3,\tilde{Q}_2\rangle_{*}e_t$ runs over the whole centre as $\tilde{Q}_2$ runs over $\mathbb{B}$ because $H(\tilde Q_3,\cdot\,)$ is a nonzero conjugate-linear functional for $\tilde Q_3\neq0$: the form is non-degenerate, so its kernel is a hyperplane and its image is $\mathbb{C}e_t$.
 
-**Corollary (the operators see the centre alone).** The image of every operator of the block is the one-dimensional complex space $\mathbb{C}_{\mathbb{B}}$, whatever the parameter; the block has no operator whose image contains a vector part, which is the operator form of the central image of the product.
+**Corollary (the operators see the centre alone).** The image of every operator of the block is the one-dimensional complex space $\mathbb{B}_{C}$, whatever the parameter; the block has no operator whose image contains a vector part, which is the operator form of the central image of the product.
 
 ## The Traces
 
@@ -163,7 +163,7 @@ The multiplication operators of the block are $L^{\star}_{\tilde Q_3}\tilde{Q}_2
 | $L^{\star}_{\tilde Q_3}\tilde{Q}_2 = \langle\tilde Q_3,\tilde{Q}_2\rangle_{*}e_t$ | the left multiplication; conjugate-linear |
 | $R^{\star}_{\tilde Q_3}\tilde{Q}_2 = \langle\tilde{Q}_2,\tilde Q_3\rangle_{*}e_t$ | the right multiplication; $\mathbb{C}$-linear |
 | $R^{\star}_{\tilde Q_3} = \overline{L^{\star}_{\tilde Q_3}}$ | the two families are pointwise conjugate |
-| $\mathbb{C}_{\mathbb{B}}$, $\{H(\tilde Q_3,\cdot\,) = 0\}$ | the image and the kernel of a nonzero operator; rank one |
+| $\mathbb{B}_{C}$, $\{H(\tilde Q_3,\cdot\,) = 0\}$ | the image and the kernel of a nonzero operator; rank one |
 | $\operatorname{Tr}(R^{\star}_{\tilde Q_3}) = \overline{Q_{3t}}$, $\operatorname{Tr}(L^{\star}_{\tilde Q_3}) = Q_{3t}$ | the traces |
 | $(L^{\star}_{\tilde Q_3})^{\dagger}\tilde Q_4 = \overline{Q_{4t}}\tilde Q_3$ | the adjoint in the conjugate-linear convention |
 | $L^{\star}_{\tilde Q_3}L^{\star}_{\tilde Q_1} = Q_{3t}R^{\star}_{\tilde Q_1}$, etc. | the four composition laws |

@@ -35,7 +35,7 @@ The article develops three threads. The first is the manifold structure of the c
 $$
 \tilde U_{\mathrm{lor}} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
 \qquad
-\tilde u_{\mathrm r}\in SU(2)\subset\mathbb{H}_{\mathbb{B}},
+\tilde u_{\mathrm r}\in SU(2)\subset\mathbb{B}_{H},
 \qquad
 B_{\mathrm{right}}\ \text{a pure boost},
 $$
@@ -50,7 +50,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 $$
 B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\,\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
-B\in\mathbb{M}_+,
+B\in\mathbb{B}_{\Psi},
 \qquad
 B = B^\dagger ,
 $$
@@ -84,7 +84,7 @@ $$
 For a unit-norm rotor the two factors are themselves unit-norm: $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle B_{\mathrm{right}}\rangle_{\natural} = 1$. The $*$-unitary factor lives in the compact subgroup
 
 $$
-SU(2) = \{\,\tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}} : \langle\tilde u_{\mathrm r}\rangle_{\natural} = e_t\,\}\cong S^3,
+SU(2) = \{\,\tilde u_{\mathrm r}\in\mathbb{B}_{H} : \langle\tilde u_{\mathrm r}\rangle_{\natural} = e_t\,\}\cong S^3,
 $$
 
 which is the unit sphere in the four-dimensional real-quaternion space and therefore diffeomorphic to the three-sphere. The positive Hermitian factor is a boost matrix, and we will see that the boosts form a space diffeomorphic to $\mathbb{R}^3$. The polar decomposition therefore gives a **diffeomorphism**
@@ -118,7 +118,7 @@ $$
 B_{\mathrm{right}} = (\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}})^{1/2},
 $$
 
-using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
+using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{B}_{H}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
 
 ## The Two-Sheeted Cover
 
@@ -134,7 +134,7 @@ $$
 \ker\pi = \{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
 
-as established by the automorphism article: $\pm e_t$ act identically on $\mathbb{M}_-$ and no other unit-norm element does. Hence
+as established by the automorphism article: $\pm e_t$ act identically on $\mathbb{B}_{\Phi}$ and no other unit-norm element does. Hence
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
@@ -153,7 +153,7 @@ The statement is worth making twice, because it is the algebraic heart of the ma
 The generating loop is explicit. Let $\vec u_{\mathrm r}$ be any unit real vector and define the rotation rotor
 
 $$
-R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}\,\in\mathbb{H}_{\mathbb{B}},
+R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}\,\in\mathbb{B}_{H},
 \qquad
 \langle R(\theta)\rangle_{\natural} = \cos^2\frac{\theta}{2} + \sin^2\frac{\theta}{2} = 1 .
 $$
@@ -326,13 +326,13 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 
 1. **The full Lorentz group and its cover.** The two-to-one cover established here is that of the identity component $SO^+(1,3)$. The full group $O(1,3)$ has four components, and its covering groups are extensions involving the discrete transformations. Whether the biquaternion algebra supplies a single algebraic object covering all four components, and how parity and time reversal act on rotors, is not settled by the conjugation action alone.
 
-2. **The Euclidean real form and its topology.** The same algebra contains the Euclidean real form on $\mathbb{H}_{\mathbb{B}}$, whose group is compact and whose topology is different. The relation between the two real forms' topologies, and whether the informational sector prefers the compact one, is an open question connecting this article to *The Lorentz Group as Biquaternion Norm Automorphisms*.
+2. **The Euclidean real form and its topology.** The same algebra contains the Euclidean real form on $\mathbb{B}_{H}$, whose group is compact and whose topology is different. The relation between the two real forms' topologies, and whether the informational sector prefers the compact one, is an open question connecting this article to *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
 3. **Gravity and the boost manifold.** The boost manifold is hyperbolic three-space, which is also the spatial slice of a cosmological or hyperbolic geometry. Whether the framework's boost space has any relation to a physical spatial geometry, or merely shares the homogeneous-space structure, is not addressed here.
 
-4. **The Wigner angle at the level of fields.** For a field on $\mathbb{M}_-$ the Wigner rotation acts by rotor conjugation like any other Lorentz transformation. Does the composition of two boosts, with its rotation factor, have an observable consequence for a classical field configuration beyond the standard relativistic one? This question shades into the spin-direction effects treated in the sibling subcategories and is not pursued here.
+4. **The Wigner angle at the level of fields.** For a field on $\mathbb{B}_{\Phi}$ the Wigner rotation acts by rotor conjugation like any other Lorentz transformation. Does the composition of two boosts, with its rotation factor, have an observable consequence for a classical field configuration beyond the standard relativistic one? This question shades into the spin-direction effects treated in the sibling subcategories and is not pursued here.
 
-5. **The $2\pi$ sign and the sector structure.** The sign acquired by a rotor under a $2\pi$ rotation is invisible on $\mathbb{M}_-$ and would be visible on an object acted on one-sidedly. A non-quantum classical object with that property is not exhibited in this article; whether one exists is open.
+5. **The $2\pi$ sign and the sector structure.** The sign acquired by a rotor under a $2\pi$ rotation is invisible on $\mathbb{B}_{\Phi}$ and would be visible on an object acted on one-sidedly. A non-quantum classical object with that property is not exhibited in this article; whether one exists is open.
 
 The conventions of the construction are those of the following companion articles:
 
@@ -383,10 +383,10 @@ with $\theta_{\mathrm{wgn}}\approx\tfrac{(\theta_{\mathrm{rpd}})^{2}}{2}\sin\the
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (centre) |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex scalar line (centre) |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ | Unit-norm biquaternion; Lorentz rotor |
-| $\pi(\tilde U_{\mathrm{lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Conjugation action on $\mathbb{M}_-$ |
+| $\pi(\tilde U_{\mathrm{lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Conjugation action on $\mathbb{B}_{\Phi}$ |
 | $\ker\pi = \{\pm e_t\}$, $\pi_1(SO^+(1,3))=\mathbb{Z}/2$ | Two-sheeted universal cover |
 | $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}:\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
 | $R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor; $R(2\pi)=-e_t$, $R(4\pi)=e_t$ |

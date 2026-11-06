@@ -25,7 +25,7 @@ This article develops the idempotent bases of the algebra, derives the unbiasedn
 
 ### Rank-one idempotents
 
-A **rank-one idempotent** is an element $\tilde\Pi\in\mathbb{M}_+$ with
+A **rank-one idempotent** is an element $\tilde\Pi\in\mathbb{B}_{\Psi}$ with
 
 $$
 \tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 1, \qquad \tilde\Pi\geq0 .
@@ -142,7 +142,7 @@ The pattern — identity blocks on the diagonal, constant blocks off it — is t
 
 ### The reconstruction formula
 
-Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative. Then
+Let $\mathcal{B}_1,\dots,\mathcal{B}_{d+1}$ be a complete set of mutually unbiased bases of a state space of dimension $d$, with idempotents $\tilde\Pi_i^{(b)}$ and outcome probabilities $p_i^{(b)}=\langle\tilde{Ϛ},\tilde\Pi_i^{(b)}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}}^{*})=\operatorname{Tr}(\tilde{Ϛ}{\tilde\Pi_i^{(b)}})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative. Then
 
 $$
 \boxed{\;\tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t\;},
@@ -253,7 +253,7 @@ not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}_{\mathrm{sp}}\rangle\otim
 
 ## Summary
 
-A basis of the defining module is an idempotent basis of $\mathbb{M}_+$: a complete orthogonal family of rank-one idempotents, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$. Two bases are mutually unbiased when the normalised Hermitian form of any idempotent of one with any idempotent of the other equals $1/d$; equivalently, when every ray of one has squared overlap $1/d$ with every ray of the other. For the native qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and they are the eigenbases of the three imaginary units:
+A basis of the defining module is an idempotent basis of $\mathbb{B}_{\Psi}$: a complete orthogonal family of rank-one idempotents, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$. Two bases are mutually unbiased when the normalised Hermitian form of any idempotent of one with any idempotent of the other equals $1/d$; equivalently, when every ray of one has squared overlap $1/d$ with every ray of the other. For the native qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and they are the eigenbases of the three imaginary units:
 
 $$
 \mathcal{B}_k = \bigl\{\tfrac12(e_t+i\vec u_k),\ \tfrac12(e_t-i\vec u_k)\bigr\}, \qquad k=1,2,3 .
@@ -272,7 +272,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents along $\vec u$ |

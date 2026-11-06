@@ -4,7 +4,7 @@
 
 This is an exercise in the electromagnetism series. It applies *The Field-Strength Biquaternion and Its Invariants* and its parent *Maxwell's Equations in the Biquaternionic Formulation*: the field-strength biquaternion, the Riemann–Silberstein vector, the two invariants, the duality rotation, the energy density and the Poynting vector are inherited from those articles unchanged. The universal three — *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — supply the algebra and the fixed-point subspace names.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and the product rule $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ (material) and the Hermitian subspace $\mathbb{M}_+$ (informational), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex-scalar subspace $\mathbb{C}_{\mathbb{B}}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $\tilde\nabla^{\natural}$ and the d'Alembertian $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$; the field-strength biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and the product rule $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (material) and the Hermitian subspace $\mathbb{B}_{\Psi}$ (informational), with $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the real-quaternion subspace $\mathbb{B}_{H}$ and the complex-scalar subspace $\mathbb{B}_{C}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $\tilde\nabla^{\natural}$ and the d'Alembertian $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$; the field-strength biquaternion
 $$
 \tilde F = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 \qquad \mathrm{Sc}(\tilde F)=0,
@@ -19,7 +19,7 @@ $$
 W = \tfrac12\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad \vec S = \vec E\times\vec H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde R_\psi$, $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the star is inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ is real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde R_\psi$, $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ is real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
 
 **What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec N\mapsto \exp(-i\theta)\vec N$, hence $\tilde F\mapsto \exp(-i\theta)\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $\exp(-2i\theta)$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph pairs $\vec N$ with its complex conjugate $\vec N^*$ and not with the quaternion conjugate $\vec N^{\natural}$; the two carry opposite duality phases and must not be interchanged. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
@@ -221,7 +221,7 @@ The duality rotation is thus an internal $\mathrm{U}(1)$ symmetry generated by t
 
 **Solution (c).** With sources, the equation is $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$, where the electric four-current is
 $$
-\tilde J = ic\rho\,e_t + \vec J \in \mathbb M_- .
+\tilde J = ic\rho\,e_t + \vec J \in \mathbb{B}_{\Phi} .
 $$
 If $\tilde F\mapsto \exp(-i\theta)\tilde F$ is to solve the sourced equation, the source must transform as $\sqrt{\mu}\,\tilde J\mapsto \exp(-i\theta)\sqrt{\mu}\,\tilde J$, since
 $$
@@ -365,8 +365,8 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex-scalar subspace (centre) |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; complex-scalar subspace (centre) |
 | ${}^{\natural}, \bar{\cdot}, {}^{*} = ({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
 | $\tilde\nabla, \tilde\nabla^{\natural}, \Box = \tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\tilde U \in \mathbb{B}$, $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
@@ -379,7 +379,7 @@ One defect in the parent is recorded, and one earlier reading of it is withdrawn
 | $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural} = -\epsilon(I_1 + 2icI_2)$ | Biquaternion norm (complex scalar) |
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Lorentz invariants (scalar, pseudoscalar) |
 | $W = \tfrac12(\epsilon\vec E^2 + \mu\vec H^2)$, $\vec S = \vec E\times\vec H$ | Energy density, Poynting vector |
-| $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{M}_+$) |
+| $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{B}_{\Psi}$) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Electric four-current; enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$ | Biquaternionic Maxwell equation |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace reading at normalisation (Born rule) |

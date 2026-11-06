@@ -130,7 +130,7 @@ $$
 
 **The two conjugate-linear conjugations.** The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ act on the coefficients, so they are conjugate-linear and lie outside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. They are real-linear operators of the carrier, of real dimension eight, and they are not elements of the complex operator algebra. The star is the composite of the bar and the natural sign, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so the two conjugate-linear maps differ by $D$.
 
-**Their fixed spaces.** The bar fixes the elements with real coefficients, the real quaternions $\mathbb{H}$; the star fixes the Hermitian subspace $\mathbb{M}_+$. The two fixed spaces are not the same, and neither is a complex subspace of $\mathbb{B}$: a conjugate-linear map has a real fixed space, and the complex structure carries it to the anti-fixed space. The natural conjugation $D$ fixes the centre and reverses the vector part, and its fixed space is the centre, again real.
+**Their fixed spaces.** The bar fixes the elements with real coefficients, the real quaternions $\mathbb{H}$; the star fixes the Hermitian subspace $\mathbb{B}_{\Psi}$. The two fixed spaces are not the same, and neither is a complex subspace of $\mathbb{B}$: a conjugate-linear map has a real fixed space, and the complex structure carries it to the anti-fixed space. The natural conjugation $D$ fixes the centre and reverses the vector part, and its fixed space is the centre, again real.
 
 **Why the distinction is kept.** An operator built with the bar or the star is a real-linear operator, and a statement about it is a statement over $\mathbb{R}$. An operator built with the natural sign is complex-linear, and a statement about it is a statement over $\mathbb{C}$. The four adjoints of Part V separate along this line: the plain and the quaternionic adjoints are complex-linear, the Hermitian and the Krein adjoints are conjugate-linear. Writing a dagger over the distinction, as *Operator and Calculus Conventions* records, does not make the four one.
 
@@ -155,7 +155,7 @@ The **natural conjugation** $D$ is the one conjugation that is complex-linear. I
 | $\operatorname{ad}_{\tilde Q}$ | The inner derivation, $\operatorname{ad}_{\tilde Q}(x)=\tilde Qx-x\tilde Q$ |
 | $D$ | The natural conjugation, $\operatorname{diag}(1,-1,-1,-1)$ |
 | $\bar{\cdot}$, ${}^{*}$ | The conjugate-linear conjugations |
-| $\mathbb{H}$, $\mathbb{M}_+$ | The fixed spaces of the bar and of the star |
+| $\mathbb{H}$, $\mathbb{B}_{\Psi}$ | The fixed spaces of the bar and of the star |
 
 ## Further Reading
 

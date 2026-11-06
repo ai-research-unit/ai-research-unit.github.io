@@ -11,7 +11,7 @@ The biquaternion algebra contributes two things to the discussion.
 1. **The action is central-valued.** For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.
 2. **The rotor action and its geodesic principle.** For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.
 
-The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dr'_t\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.
+The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dr'_t\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.
 
 The companion articles used below are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
@@ -29,7 +29,7 @@ $$
 S[\tilde q]=\int_{r'_{t,1}}^{r'_{t,2}}\mathrm{Lag}(\tilde q,d\tilde q/dr'_t,r'_t)\,dr'_t .
 $$
 
-Because $\mathrm{Lag}$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(iS/\hbar)$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
+Because $\mathrm{Lag}$ takes values in the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(iS/\hbar)$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
 
 ### The Domain of the Principle: Discrete and Continuous
 
@@ -215,7 +215,7 @@ $$
 S_0[\tilde q]=\frac{m}{2}\int \langle\,d\tilde q/dr'_t\rangle_{\natural}\,dr'_t ,
 $$
 
-is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $d^2\tilde q/d{r'_{t}}^2=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{\langle d\tilde q\rangle_{\natural}}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
+is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{B}_{H}$. Its extremals are the straight lines $d^2\tilde q/d{r'_{t}}^2=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{\langle d\tilde q\rangle_{\natural}}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
 
 The geodesic interpretation has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
@@ -225,7 +225,7 @@ $$
 
 the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dr'_t=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dr'_t=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
-The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ has the indefinite norm $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=i c r'_t$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
+The biquaternion norm is positive definite on $\mathbb{B}_{H}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{B}_{\Phi}$ of the complexified algebra, where the four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ has the indefinite norm $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=i c r'_t$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
 ### The Rotor Action
 
@@ -253,7 +253,7 @@ $$
 the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dr'_t$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dr'_t}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/d{r'_{t}}^2=d\vec\eta/dr'_t+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dr'_t$ vanishes, and since $\vec\eta$ is pure real for all $r'_t$ this is $d\vec\eta/dr'_t=0$. Equivalently, the equation with the constraint is $\frac{d}{dr'_t}(\tilde u^{\natural}d\tilde u/dr'_t)=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
-\boxed{\;\tilde u(r'_t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b r'_t\right),\qquad \vec\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-\;},
+\boxed{\;\tilde u(r'_t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b r'_t\right),\qquad \vec\omega_b\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}\;},
 $$
 
 with $\vec\omega_b$ constant in the body frame. This is the free rigid body's motion, and it is derived here purely from the stationarity of the rotor action. The same calculation with the body-frame angular velocity replaced by the space-frame one gives the equivalent form $\tilde u(r'_t)=\exp(+\tfrac12\vec\omega_s r'_t)\tilde u(0)$. The rigid-body article takes this result as its starting point and adds the inertia and the torque.
@@ -375,7 +375,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\mathcal{J}$ | Jacobi (fluctuation) operator |
 | $\zeta$ | Deviation field; $\mathcal{J}\zeta=0$ is the Jacobi/geodesic-deviation equation |
 | $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
-| $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotor configuration |
+| $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotor configuration |
 | $\vec\omega_b,\vec\omega_s$ | Body- and space-frame angular velocities |
 | $W(\tilde q,r'_t)$ | Hamilton's principal function |
 | $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |

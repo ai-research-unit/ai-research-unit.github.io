@@ -26,7 +26,7 @@ $$
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2.
 $$
 
-The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde{Ζ}$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
+The remarkable subspaces $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are *Subspaces and Decompositions*. A root of a central value is written $\tilde{Ζ}$ (§*The Root Convention* of *Special Element and Peirce Conventions*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
@@ -283,18 +283,18 @@ In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Repre
 
 ### The Nilpotents and the Remarkable Subspaces
 
-**The nilpotent cone lies in the vector subspace and in no other remarkable subspace: the centre, the quaternion subspace, the anti-quaternion subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$ contain no nilpotent.**
+**The nilpotent cone lies in the vector subspace and in no other remarkable subspace: the centre, the quaternion subspace, the anti-quaternion subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ contain no nilpotent.**
 
-Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the scalar part is the defining condition of the vector subspace $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part (*Subspaces and Decompositions*). The nilpotents therefore lie in $\mathrm{Vect}(\mathbb{B})$ and nowhere else.
+Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the scalar part is the defining condition of the vector subspace $\mathbb{B}_{V}$, the kernel of the scalar part (*Subspaces and Decompositions*). The nilpotents therefore lie in $\mathbb{B}_{V}$ and nowhere else.
 
 | remarkable subspace | nilpotents |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | none |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | none |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | none |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | the nilpotent cone, of real dimension four |
-| $\mathbb{M}_+$, the Hermitian subspace | none |
-| $\mathbb{M}_-$, the anti-Hermitian subspace | none |
+| $\mathbb{B}_{C}$, the centre | none |
+| $\mathbb{B}_{H}$, the quaternion subspace | none |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | none |
+| $\mathbb{B}_{V}$, the vector subspace | the nilpotent cone, of real dimension four |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | none |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | none |
 
 The entries are forced: the centre, the quaternion subspace and the anti-quaternion subspace consist of units and $0$ and carry no zero divisor; in the two Hermitian subspaces the square of an element is $2a_0\tilde Q$ and the Hermitian part of a nilpotent is $0$, so a Hermitian nilpotent vanishes. The vector subspace is thus the only remarkable subspace with a nonzero nilpotent, and every nonzero nilpotent lies in it. The vector subspace is not a subalgebra, but it is exactly the union of the scalar multiples of the nilpotents together with the origin, as the criterion shows.
 

@@ -33,7 +33,7 @@ $$
 \Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^2),
 $$
 where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
-- **The vacuum condition.** The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a **minimal idempotent** of $\mathbb{M}_+$, selected by the sign of the quadratic term, as *The Biquaternion Vacuum as a Minimal Idempotent* establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.
+- **The vacuum condition.** The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a **minimal idempotent** of $\mathbb{B}_{\Psi}$, selected by the sign of the quadratic term, as *The Biquaternion Vacuum as a Minimal Idempotent* establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.
 
 The article proceeds as follows. The next section defines the connected functional and its derivatives. A section defines the classical field and the Legendre transform, with the convexity in the real form. A section gives the effective action and the loop expansion, and a section the sector factorization. A section treats the effective potential and its relation to the vacuum, and a section the one-loop term and the determinant. A section separates what is established from what is interpretation, and the article closes with open questions.
 
@@ -150,9 +150,9 @@ At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\lo
 
 **The factorized one-loop structure.** For the free biquaternion scalar the one-loop effective action is the sum
 $$
-\Gamma_1 = \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{M}_-} + \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{M}_+} ,
+\Gamma_1 = \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{B}_{\Phi}} + \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{B}_{\Psi}} ,
 $$
-and, because the two sectors are isomorphic as real vector spaces and the operator is the same central scalar, the two terms are equal. The two sectors are not independent field copies — they are related by multiplication by the central $i$, $\mathbb{M}_-=i\mathbb{M}_+$ — so this is a component count and not a doubling of the field content; the same caution applies as in *The Functional Integral in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*.
+and, because the two sectors are isomorphic as real vector spaces and the operator is the same central scalar, the two terms are equal. The two sectors are not independent field copies — they are related by multiplication by the central $i$, $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$ — so this is a component count and not a doubling of the field content; the same caution applies as in *The Functional Integral in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*.
 
 ## The Effective Potential and the Vacuum
 
@@ -173,7 +173,7 @@ $$
 V(\tilde{Ξ}_{\mathrm{cl}}) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_{\mathrm{cl}}\tilde{Ξ}_{\mathrm{cl}}\big)
 = \tfrac12 m^2\,\big\langle \tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\big\rangle ,
 $$
-whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
+whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
 
 **The one-loop potential and convexity.** The one-loop correction
 $$
@@ -243,14 +243,14 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 
 The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},K_{\mathrm{kin}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $K_{\mathrm{kin}}=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
 
-Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point $\tilde{Ξ}_{\mathrm{cl}}=0$; in a one-mode truncation the ground state is a minimal idempotent of $\mathbb{M}_+$, the field-theoretic counterpart of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
+Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point $\tilde{Ξ}_{\mathrm{cl}}=0$; in a one-mode truncation the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$, the field-theoretic counterpart of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form; positive definite on the algebra, with the sectors orthogonal |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{Ξ}\,\exp(iS/\hbar+\langle\tilde J,\tilde{Ξ}\rangle)$ | Generating functional |
 | $W[\tilde J]=-i\hbar\log Z[\tilde J]$ | Connected generating functional |

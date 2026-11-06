@@ -8,7 +8,7 @@ This article takes up that question. It does not repeat the quantization, which 
 
 - **The field as an operator-valued biquaternion.** The quantized field is a map from spacetime into the tensor product of the fermionic operator algebra and the algebra $\mathbb{B}$. It is an element of $\mathbb{B}$ at every point, multiplied by an operator. The four conjugations of $\mathbb{B}$ lift to operations on the field, three antilinear and one complex-linear, and their action has to be computed together with the operator ordering.
 - **The field as the odd generator.** Under fermion parity the field is odd and a bilinear is even. The observable algebra is the even part, and the field is the object whose square generates it. This is the operator-level content of the grading the parents supply on the modes.
-- **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{M}_-$, the charge in the centre $\mathbb{C}_{\mathbb{B}}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
+- **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
 - **The two-point function as an operator-valued distribution.** The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.
 
 The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, $\hbar$ is kept explicit only in the spin operator, and every derivative of the field is the corpus gradient $\tilde\nabla$ with its natural conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
@@ -207,7 +207,7 @@ was verified exactly, with spectra $\{-1,0,0,1\}$ for the left side and $\{0,1,1
 Because $i$ and the $\vec e_k$ are anti-Hermitian and $i$ is central, the four-momentum assembles into an operator-valued element of the material sector,
 
 $$
-\boxed{\;\tilde P_{\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},k}\,\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-\;},
+\boxed{\;\tilde P_{\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},k}\,\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}\;},
 $$
 
 whose square is the operator mass shell
@@ -219,7 +219,7 @@ $$
 the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}=-m^2$, where $\tilde P$ is the $c$-number wave biquaternion of the two-point function below. The charge is different in kind: $Ϙ_{\mathrm{fop}}$ is Hermitian and scalar in the algebra factor, hence central there,
 
 $$
-Ϙ_{\mathrm{fop}}=Ϙ_{\mathrm{fop}}^{\dagger}\in\mathcal{A}\otimes\mathbb{C}_{\mathbb{B}},
+Ϙ_{\mathrm{fop}}=Ϙ_{\mathrm{fop}}^{\dagger}\in\mathcal{A}\otimes\mathbb{B}_{C},
 $$
 
 and it is the generator of the algebra's central $\mathrm{U}(1)$, the same phase that the minimal-coupling companion localizes. The energy–momentum is a material-sector operator and the charge is a central one; that is the operator-level form of the sector assignments the framework uses for the classical field, and it is the statement that the generator of translations is material while the generator of the internal phase is central.
@@ -237,7 +237,7 @@ $$
 
 normal-ordered, Hermitian for all four components, and even under fermion parity. Each component is the frame's bilinear reduced at the place of use. The spatial member carries $\vec e_k$ before the field and $\vec e_y$ after it; the timelike member carries no factor before the field. The fixed factor $i\vec e_x$ of the conjugate follows in both, so the right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ for the spatial component and as $\vec e_x\vec e_x=-\vec e_t$ for the timelike one, and the two phases contribute $i^2=-1$; for the timelike component the minus of $i^2$ and the minus of $\vec e_x\vec e_x=-\vec e_t$ cancel and leave the density with a plus sign. The timelike component is the density, a Hermitian form of the field with itself; each spatial component is the same form with the unit $\vec e_k$ inserted before the field and the fixed unit $\vec e_z$ after it.
 
-Writing $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, the conservation law is the operator equation
+Writing $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, the conservation law is the operator equation
 
 $$
 \langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)=0,
@@ -254,7 +254,7 @@ $$
 
 with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ displayed above.
+In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J\rangle_{\natural}=0$ displayed above.
 
 ### Spin
 
@@ -324,7 +324,7 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 
 **What the biquaternion structure supplies.**
 
-- *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ elements $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.
+- *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{B}_{\Phi}$; spin is built from the $\mathbb{B}_{\Psi}$ elements $i\vec e_k$; the charge is central. The classical sector interpretation survives quantization.
 - *The field as the odd generator, with the structure realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $(-1)^F=i\vec e_z$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
 - *The biquaternion form of the two-point function*, inheriting the deformed mass-shell denominator.
 - *The separation of the four conjugations*, so that the particle–antiparticle exchange is Hermitian conjugation of the operator field and not the algebra's real structure.
@@ -358,7 +358,7 @@ $$
 
 so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.
 
-The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
+The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
 The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
@@ -370,8 +370,8 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $x=(r'_t,\vec r)$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}$ | Spacetime point, plane-wave phase, and energy component |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its natural conjugate, and the d'Alembertian |
@@ -388,9 +388,9 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
 | $(-1)^F$ | Fermion parity; $(-1)^F\tilde{Ξ}_{\mathrm{fop}}(-1)^F=-\tilde{Ξ}_{\mathrm{fop}}$ |
 | $H,P_{\mathrm{fop}},Ϙ_{\mathrm{fop}},J_\mu,S_k$ | Operator-valued energy, momentum, charge, current, spin |
-| $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator current biquaternion |
+| $\tilde J=iJ_t e_t+\sum_kJ_k\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
-| $\tilde P_{\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
+| $\tilde P_{\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_-/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |

@@ -4,7 +4,7 @@
 
 The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$, with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = Q_{1t}\overline{Q_{2t}} + (\vec Q_1,\overline{\vec Q_2})$ (*Introduction to the Symmetric Plain Sesqualgebra*). Its product and its form are the same data: the block is the Hermitian form of the corpus *read as a multiplication*, and every statement about the product is a statement about the form and conversely. This article develops the block from the side of the form: the identification and the rank-one structure it forces, the Gram matrix and the positivity, the Cauchy and Schwarz inequality with its equality case, the trace functional and the trace form, the failure of the invariance of the form under the product, the restriction of the form to the remarkable subspaces, and the bridge to the form of the quaternionic row.
 
-The result that organises the article is that the form is the **definite** form of the algebra, of signature $(8,0)$ on the real space, while the product it defines is **rank one** and central: the image is the centre $\mathbb{C}_{\mathbb{B}}$, the form is recovered as the trace form $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the invariance that the trace form of the symmetric plain block enjoys — the invariance of a Jordan product — **fails** here. The two facts are one: a product whose values are central and whose form is definite cannot carry an associative or Jordan invariance, because the invariance is exactly the identity that forces the product to have a vector part.
+The result that organises the article is that the form is the **definite** form of the algebra, of signature $(8,0)$ on the real space, while the product it defines is **rank one** and central: the image is the centre $\mathbb{B}_{C}$, the form is recovered as the trace form $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the invariance that the trace form of the symmetric plain block enjoys — the invariance of a Jordan product — **fails** here. The two facts are one: a product whose values are central and whose form is definite cannot carry an associative or Jordan invariance, because the invariance is exactly the identity that forces the product to have a vector part.
 
 ## The Identification and the Rank-One Structure
 
@@ -14,7 +14,7 @@ $$ \boxed{\; \tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}
 
 and the assignment $\tilde Q_1\star\tilde Q_2 \mapsto \langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is a bijection between the products of the block and the values of the form; the block carries no information beyond the form.
 
-**Proposition (the image is the centre, the product has rank one).** The image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}}$; as a map $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}} \to \mathbb{B}$ the product has rank one over $\mathbb{C}$, its single non-zero value direction being $e_t$. The kernel is the hyperplane of pairs with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = 0$.
+**Proposition (the image is the centre, the product has rank one).** The image of the multiplication is the centre $\mathbb{B}_{C}$; as a map $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}} \to \mathbb{B}$ the product has rank one over $\mathbb{C}$, its single non-zero value direction being $e_t$. The kernel is the hyperplane of pairs with $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = 0$.
 
 *Proof.* Every value is a complex multiple of $e_t$; the value $e_t$ is attained at $(\tilde Q_1,\tilde Q_2) = (e_t,e_t)$, and no value has a vector part; the condition for vanishing is the single scalar equation $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = 0$.
 
@@ -106,22 +106,22 @@ The form $\langle\cdot,\cdot\rangle_{*}$ restricts to each of the remarkable sub
 
 | subspace | real dimension | $\langle\cdot,\cdot\rangle_{*}$ restricted | rank over $\mathbb{R}$ | positivity |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $\lambda\overline{\mu}$ on the coordinate | $2$ | positive definite |
-| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $\sum_{k} Q_{1,k}\overline{Q_{2,k}}$ | $6$ | positive definite |
-| $\mathbb{H}_{\mathbb{B}}$ | $4$ | $\sum_\mu Q_{1,\mu} Q_{2,\mu}$ on real coordinates | $4$ | positive definite |
-| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ on imaginary coordinates | $4$ | positive definite |
-| $\mathbb{M}_+$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, real-valued | $4$ | positive definite |
-| $\mathbb{M}_-$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, real-valued | $4$ | positive definite |
+| $\mathbb{B}_{C}$ | $2$ | $\lambda\overline{\mu}$ on the coordinate | $2$ | positive definite |
+| $\mathbb{B}_{V}$ | $6$ | $\sum_{k} Q_{1,k}\overline{Q_{2,k}}$ | $6$ | positive definite |
+| $\mathbb{B}_{H}$ | $4$ | $\sum_\mu Q_{1,\mu} Q_{2,\mu}$ on real coordinates | $4$ | positive definite |
+| $\mathbb{B}_{iH}$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ on imaginary coordinates | $4$ | positive definite |
+| $\mathbb{B}_{\Psi}$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, real-valued | $4$ | positive definite |
+| $\mathbb{B}_{\Phi}$ | $4$ | $\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, real-valued | $4$ | positive definite |
 
-**Proposition (the restrictions).** On each of the remarkable subspaces the restriction of $\langle\cdot,\cdot\rangle_{*}$ is positive definite, of rank equal to the real dimension of the subspace, and it is real-valued with the identity form in the natural real basis on $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$.
+**Proposition (the restrictions).** On each of the remarkable subspaces the restriction of $\langle\cdot,\cdot\rangle_{*}$ is positive definite, of rank equal to the real dimension of the subspace, and it is real-valued with the identity form in the natural real basis on $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
-*Proof.* $\langle\cdot,\cdot\rangle_{*}$ is positive definite on the whole real space, so its restriction to every real subspace is positive definite, hence non-degenerate of rank the real dimension; on the four real subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ the natural real bases give the identity form, and on the two complex subspaces $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ the real bases $e_t,ie_t$ and $\vec e_k,i\vec e_k$ do the same.
+*Proof.* $\langle\cdot,\cdot\rangle_{*}$ is positive definite on the whole real space, so its restriction to every real subspace is positive definite, hence non-degenerate of rank the real dimension; on the four real subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the natural real bases give the identity form, and on the two complex subspaces $\mathbb{B}_{C}$ and $\mathbb{B}_{V}$ the real bases $e_t,ie_t$ and $\vec e_k,i\vec e_k$ do the same.
 
 **Corollary (the block and the remarkable subspaces).** Because the values of the product are central, the product of two elements of any one of the remarkable subspaces is a scalar multiple of $e_t$, real precisely on the four subspaces on which $\langle\cdot,\cdot\rangle_{*}$ is real-valued; and the subspace is closed under the product exactly when it contains the idempotent $e_t$: the centre, the quaternion subspace and the Hermitian subspace are closed, and the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace are not. The restriction of the form is positive definite in every case; only the closure of the product separates the remarkable subspaces. This is the reading of the remarkable subspaces of *Remarkable Subspaces under the Symmetric Plain Sesqualgebra*, and the flatness of the table — every restriction positive, only the closure differing — is the mark of the central image.
 
 ## The Bridge to the Quaternion Form
 
-**Theorem (the coincidence on the real subspace).** On the real elements, $\tilde Q_1,\tilde Q_2 \in \mathbb{H}_{\mathbb{B}}$,
+**Theorem (the coincidence on the real subspace).** On the real elements, $\tilde Q_1,\tilde Q_2 \in \mathbb{B}_{H}$,
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2) ,
@@ -159,7 +159,7 @@ The symmetric plain sesqualgebra is the Hermitian form $\langle\tilde Q_1,\tilde
 | $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the trace form is the form |
 | $\operatorname{Tr}\mathsf{M}_2(\tilde Q_1\star\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the matrix trace of a value |
 | $\langle \vec e_x\star \vec e_x,e_t\rangle_{*} = 1 \neq 0 = \langle \vec e_x,\vec e_x\star e_t\rangle_{*}$ | the failure of the invariance |
-| $H = N$ on $\mathbb{H}_{\mathbb{B}}$ | the bridge to the quaternion form |
+| $H = N$ on $\mathbb{B}_{H}$ | the bridge to the quaternion form |
 
 ## Further Reading
 

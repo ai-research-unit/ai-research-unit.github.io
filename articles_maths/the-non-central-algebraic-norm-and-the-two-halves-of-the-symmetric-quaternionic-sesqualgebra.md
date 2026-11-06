@@ -24,7 +24,7 @@ The scalar part is real and the vector part is $-2\mathrm{Re}(Q_t\overline{\vec 
 
 *Proof.* Put $\tilde Q_1=\tilde Q_2=\tilde Q$ in the scalar–vector form of *Introduction to the Symmetric Quaternionic Sesqualgebra*: the scalar part becomes $Q_t\overline{Q_t}-(\vec Q,\overline{\vec Q})=|Q_t|^{2}-\sum_{\mu\in\{x,y,z\}}|Q_\mu|^{2}$, a real number, and the vector part becomes $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q=-2\mathrm{Re}(Q_t\overline{\vec Q})$, a real vector.
 
-**Remark (the algebraic norm is a real element).** Both the scalar and the vector part of the algebraic norm are real, so the algebraic norm always lies in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, whatever element one starts from. A general element of the block has two complex components in each slot, but its square has only real ones. The reason is the conjugate-commutativity: the algebraic norm is its own conjugate, $\tilde Q\star\tilde Q=\overline{\tilde Q\star\tilde Q}$, and the fixed elements of the coefficientwise conjugation are exactly the real quaternions.
+**Remark (the algebraic norm is a real element).** Both the scalar and the vector part of the algebraic norm are real, so the algebraic norm always lies in the real quaternion subspace $\mathbb{B}_{H}$, whatever element one starts from. A general element of the block has two complex components in each slot, but its square has only real ones. The reason is the conjugate-commutativity: the algebraic norm is its own conjugate, $\tilde Q\star\tilde Q=\overline{\tilde Q\star\tilde Q}$, and the fixed elements of the coefficientwise conjugation are exactly the real quaternions.
 
 ## The Criterion of Centrality
 

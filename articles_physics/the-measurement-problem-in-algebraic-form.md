@@ -12,7 +12,7 @@ The residue is stated below as the algebraic form of the problem. The companion 
 
 The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{B}_{\Psi}$ is the Hermitian subspace of states and observables, $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace of generators, and $\mathbb{B}_{H}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$.
 
 ## The Problem in Standard Terms
 
@@ -52,7 +52,7 @@ $$
 p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_\psi),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\psi)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u_\psi\cdot\vec r\right),
 $$
 
-where $\vec u_\psi = \vec r_\psi/|\vec r_\psi|$ is the measurement direction. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
+where $\vec u_\psi = \vec r_\psi/|\vec r_\psi|$ is the measurement direction. The star in the trace is inert on $\mathbb{B}_{\Psi}$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
 **Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde R_\psi\tilde R_\psi^{*}=\tilde R_\psi^{*}\tilde R_\psi$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
 
@@ -73,7 +73,7 @@ $$
 \Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}) = \tilde\Pi_{1,2}\,\tilde{Ϛ}\,\tilde\Pi_{1,2} = p_\pm \tilde\Pi_{1,2},
 $$
 
-using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*} = \tfrac12 p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_t$, and it is not invertible.
+using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*} = \tfrac12 p_\pm$. As a linear map on the four-dimensional real space $\mathbb{B}_{\Psi}$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_t$, and it is not invertible.
 
 The measurement update of *Quantum Physics in Biquaternionic Form* is the normalized version of the idempotent case,
 
@@ -110,7 +110,7 @@ The two classes are therefore not an exhaustive partition of the acting elements
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ} \in \mathbb{B}_{\Psi}$ and an observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde Q_3}(\tilde{Ϛ}) = \tilde Q_3\tilde{Ϛ}\tilde Q_3^{*}$, with $\tilde Q_3\tilde Q_3^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -126,7 +126,7 @@ The third object is the fully dephased state of *Decoherence as Idempotent Proje
 
 > The algebra contains both classes of acting element and both operations. It contains no element and no operation that selects the $*$-unitary case over the idempotent case, that selects $\tilde\Pi_1$ over $\tilde\Pi_2$, or that carries the index $\pm$ of the realised outcome. The state $\tilde{Ϛ}$ determines the *numbers* $p_\pm$ but not *which* of $\tilde\Pi_{1,2}$ occurs.
 
-The last sentence is the selection strand of the problem in algebraic form, and it is worth making exact. The outcome-indexed candidate states are the two idempotents $\tilde\Pi_{1,2}$, with weights $p_\pm$. Among elements of $\mathbb{M}_+$ that (i) are diagonal in the pointer basis of $\vec u_\psi$ — that is, carry no coherence between the $\tilde\Pi_{1,2}$ — and (ii) reproduce the Born probabilities, there is exactly one:
+The last sentence is the selection strand of the problem in algebraic form, and it is worth making exact. The outcome-indexed candidate states are the two idempotents $\tilde\Pi_{1,2}$, with weights $p_\pm$. Among elements of $\mathbb{B}_{\Psi}$ that (i) are diagonal in the pointer basis of $\vec u_\psi$ — that is, carry no coherence between the $\tilde\Pi_{1,2}$ — and (ii) reproduce the Born probabilities, there is exactly one:
 
 $$
 \tfrac{1}{2}\left(1 + \vec u_\psi\cdot\vec r\right)\tilde\Pi_1 + \tfrac{1}{2}\left(1 - \vec u_\psi\cdot\vec r\right)\tilde\Pi_2 = \tilde{Ϛ}_d .
@@ -158,7 +158,7 @@ $$
 Ξ_{\mathrm{deph},1}(\tilde{Ϛ}) = \tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2 = p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \tilde{Ϛ}_d ,
 $$
 
-the diagonal part of $\tilde{Ϛ}$ in the pointer basis. As the preceding section showed, no other element of $\mathbb{M}_+$ carries the Born statistics and is simultaneously coherence-free in that basis.
+the diagonal part of $\tilde{Ϛ}$ in the pointer basis. As the preceding section showed, no other element of $\mathbb{B}_{\Psi}$ carries the Born statistics and is simultaneously coherence-free in that basis.
 
 **Second, $\tilde{Ϛ}_d$ is the outcome-weighted average of the two selection operations.** Let $\Lambda_\pm$ denote the constant (reset) channels onto the two outcomes,
 
@@ -191,9 +191,9 @@ and its two summands are the two unnormalized branches, with traces $p_\pm$. The
 
 Three observations keep this honest.
 
-**The statistics are a function of the state; the outcome is not.** The element $\tilde{Ϛ}$ determines the pair $(p_+, p_-)$ — a point of the probability simplex — but not the realised index $\pm$. No element of $\mathbb{M}_+$ at the single-qubit level carries that index: the two outcomes are the endpoints $\pm\vec u$ of the pointer diameter, they exist as elements of the state space, and $\tilde{Ϛ}$ carries no label saying which of them occurred. This is the algebraic interpretation of the standard observation that a mixture (proper or improper) does not single out an outcome.
+**The statistics are a function of the state; the outcome is not.** The element $\tilde{Ϛ}$ determines the pair $(p_+, p_-)$ — a point of the probability simplex — but not the realised index $\pm$. No element of $\mathbb{B}_{\Psi}$ at the single-qubit level carries that index: the two outcomes are the endpoints $\pm\vec u$ of the pointer diameter, they exist as elements of the state space, and $\tilde{Ϛ}$ carries no label saying which of them occurred. This is the algebraic interpretation of the standard observation that a mixture (proper or improper) does not single out an outcome.
 
-**Enlarging the algebra does not remove the demand; it relocates it.** The index can be carried by a record — an apparatus, or an environment — and in the framework a record is another element of the algebra, which means passing to a tensor product $\mathbb{B}\otimes\mathbb{B}$ (equivalently, a state in $\mathbb{M}_+^{(A)}\otimes\mathbb{M}_+^{(B)}$). The joint state can be taken pure, and its reduced states can be the mixtures $\tilde{Ϛ}_d$. But the same structure then reappears one level up: the joint object contains the correlations and no rule selecting a definite record value. This is the von Neumann chain in algebraic form. The framework has no algebraic fixed point that terminates it, because the operation that would terminate it — selection — is exactly what is missing.
+**Enlarging the algebra does not remove the demand; it relocates it.** The index can be carried by a record — an apparatus, or an environment — and in the framework a record is another element of the algebra, which means passing to a tensor product $\mathbb{B}\otimes\mathbb{B}$ (equivalently, a state in $\mathbb{B}_{\Psi}^{(A)}\otimes\mathbb{B}_{\Psi}^{(B)}$). The joint state can be taken pure, and its reduced states can be the mixtures $\tilde{Ϛ}_d$. But the same structure then reappears one level up: the joint object contains the correlations and no rule selecting a definite record value. This is the von Neumann chain in algebraic form. The framework has no algebraic fixed point that terminates it, because the operation that would terminate it — selection — is exactly what is missing.
 
 **The framework's treatment is single-qubit.** The apparatus, the environment, and the macroscopic record are many-body objects; the framework as developed is a single-qubit formalism extended to finite tensor products, and the many-particle, field-theoretic setting in which a realistic apparatus would live is listed among its open problems (*Quantum Physics in Biquaternionic Form*, *The Informational Sector: States, Observables and Probability*). The algebraic statement of the selection problem given here is therefore the selection problem *for a qubit*; the apparatus version is inherited by tensor product and not developed. This limitation is recorded rather than papered over: the strand of the measurement problem that concerns a macroscopic apparatus is not addressed at the level the framework currently supports.
 
@@ -213,7 +213,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 3. **The statistics-preserving and selection operations are separated exactly.** $Ξ_{\mathrm{deph},1}$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{Ϛ}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
 
-4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{M}_+$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{Ϛ}$. This is inherited from *Quantum Physics in Biquaternionic Form* and *The Informational Sector: States, Observables and Probability*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
+4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{B}_{\Psi}$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{Ϛ}$. This is inherited from *Quantum Physics in Biquaternionic Form* and *The Informational Sector: States, Observables and Probability*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
 
 5. **The form of the Born rule is algebraic.** The probabilities $p_\pm$ are the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})$ in the $2\times2$ image. As the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* argues, this derives the **form** of the rule and the objects it relates, not its empirical content: the identification of the pairing with observed frequency is not an algebraic consequence.
 
@@ -221,7 +221,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 The reformulation does not, and is not presented as, resolving the measurement problem. Explicitly, it does **not**:
 
-- **Select an outcome.** No element of $\mathbb{M}_+$ and no operation in the algebra makes the realised outcome a function of the state. The statistics are determined; the outcome is not. This is the selection problem, restated and not solved.
+- **Select an outcome.** No element of $\mathbb{B}_{\Psi}$ and no operation in the algebra makes the realised outcome a function of the state. The statistics are determined; the outcome is not. This is the selection problem, restated and not solved.
 - **Derive the preferred basis.** The pointer direction $\vec u$ is an input; the framework represents einselection's structure but not its dynamics.
 - **Fix the cut.** The choice of acting element is the framework's form of the cut, and it is not derived.
 - **Explain probability.** The trace formula gives the numbers; it does not explain why they are frequencies or why a deterministic formalism has probabilities. This is the same division of labour as in the Born-rule article.
@@ -244,9 +244,9 @@ What the reformulation changes is the form of the statement: two dynamics become
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (generators of reversible evolution) |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |

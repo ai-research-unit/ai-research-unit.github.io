@@ -199,7 +199,7 @@ which is precisely the stereographic coordinate of the Majorana construction. Th
 
 ### The Biquaternion Reading
 
-In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the plain form supplying the energy, read as the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u(0)$ into $\vec u(r'_t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
+In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the plain form supplying the energy, read as the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{B}_{H}$ — the unit real quaternion that carries $\vec u(0)$ into $\vec u(r'_t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
 
 ## Topological Consequences
 
@@ -272,8 +272,8 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_+$ | Hermitian (informational) subspace |
-| $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the classical rotors |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
+| $\mathbb{B}_{H}$ | Unit real quaternions; the classical rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
 | $|\varkappa_{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa_{\mathrm{stg}})$ |
 | $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ | Stereographic coordinate |

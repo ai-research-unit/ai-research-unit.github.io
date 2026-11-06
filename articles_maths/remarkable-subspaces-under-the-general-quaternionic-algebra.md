@@ -13,12 +13,12 @@ The restriction of the form to a subspace is the real symmetric form obtained by
 
 | Subspace | Real basis | Restricted norm | Gram matrix | Signature |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $q_t^2-(q'_t)^2$ | $\operatorname{diag}(1,-1)$ | $(1,1)$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_k,\,i\vec e_k$ | $\sum_k\bigl(q_k^2-(q'_k)^2\bigr)$ | $\operatorname{diag}(I_3,-I_3)$ | $(3,3)$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_\mu q_\mu^2$ | $I_4$ | $(4,0)$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-\sum_\mu(q'_\mu)^2$ | $-I_4$ | $(0,4)$ |
-| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $q_t^2-\sum_k(q'_k)^2$ | $\operatorname{diag}(1,-1,-1,-1)$ | $(1,3)$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_kq_k^2-(q'_t)^2$ | $\operatorname{diag}(-1,1,1,1)$ | $(3,1)$ |
+| Centre $\mathbb{B}_{C}$ | $e_t,\,ie_t$ | $q_t^2-(q'_t)^2$ | $\operatorname{diag}(1,-1)$ | $(1,1)$ |
+| Vector $\mathbb{B}_{V}$ | $\vec e_k,\,i\vec e_k$ | $\sum_k\bigl(q_k^2-(q'_k)^2\bigr)$ | $\operatorname{diag}(I_3,-I_3)$ | $(3,3)$ |
+| Quaternion $\mathbb{B}_{H}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_\mu q_\mu^2$ | $I_4$ | $(4,0)$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-\sum_\mu(q'_\mu)^2$ | $-I_4$ | $(0,4)$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $q_t^2-\sum_k(q'_k)^2$ | $\operatorname{diag}(1,-1,-1,-1)$ | $(1,3)$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_kq_k^2-(q'_t)^2$ | $\operatorname{diag}(-1,1,1,1)$ | $(3,1)$ |
 
 **Proposition (the matrices).** In the natural real basis displayed, the Gram matrix of the restricted form is the one tabulated; each restriction is non-degenerate, and its determinant is $\pm1$.
 
@@ -62,8 +62,8 @@ Three of the restrictions are indefinite with an isotropic cone; the centre is i
 | Vector $\mathrm{Vect}(\mathbb B)$ | the complex cone $\sum_kQ_k^2=0$ | $4$ | the conic in $\mathbb{P}^2$ | $1$ over $\mathbb{C}$, $3$ over $\mathbb{R}$ |
 | Quaternion $\mathbb H_{\mathbb B}$ | $\{0\}$ | $0$ | none | $0$ |
 | Anti-quaternion $i\mathbb H_{\mathbb B}$ | $\{0\}$ | $0$ | none | $0$ |
-| Hermitian $\mathbb M_+$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
-| Anti-Hermitian $\mathbb M_-$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
 
 ## The Automorphism Group of Each Restriction
 
@@ -83,8 +83,8 @@ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion
 | Vector $\mathrm{Vect}(\mathbb B)$ | $(3,3)$ | $O(3,3)$ | $15$ | no |
 | Quaternion $\mathbb H_{\mathbb B}$ | $(4,0)$ | $O(4)$ | $6$ | yes |
 | Anti-quaternion $i\mathbb H_{\mathbb B}$ | $(0,4)$ | $O(4)$ | $6$ | yes |
-| Hermitian $\mathbb M_+$ | $(1,3)$ | $O(1,3)$ | $6$ | no |
-| Anti-Hermitian $\mathbb M_-$ | $(3,1)$ | $O(3,1)$ | $6$ | no |
+| Hermitian $\mathbb{B}_{\Psi}$ | $(1,3)$ | $O(1,3)$ | $6$ | no |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $(3,1)$ | $O(3,1)$ | $6$ | no |
 
 **Remark (the restriction group is not induced by the ambient group).** The automorphism groups of the table are the largest groups preserving the restricted form, and they are not the restrictions of the automorphism group of the ambient form: an automorphism of a subspace need not extend to the algebra, and conversely an automorphism of the whole form need not preserve a subspace. The ambient group is the complex orthogonal group $O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Quaternionic Norm*); the group of real-linear automorphisms of the realified form is the larger $O(4,4)$, of real dimension $28$, and is not the subject of this article. The two definite rows of the table are the quaternion and anti-quaternion ones, and the four rows that carry an isotropic cone have indefinite automorphism groups.
 
@@ -98,15 +98,15 @@ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion
 
 **The twist on a definite row.** For $\tilde Q=e_t+\vec e_x$ the quaternion form gives $2$ and the $\varepsilon$-twisted form gives $1-1=0$, so the same element is a unit of the first form and a null element of the second: the exchange of the definite rows is visible on a single element, and it is the sign of the second coordinate that is responsible.
 
-**A non-pure zero divisor.** For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=1+i^{2}=0$, and the element lies on the real null cone of the Hermitian subspace $\mathbb{M}_+$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+**A non-pure zero divisor.** For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=1+i^{2}=0$, and the element lies on the real null cone of the Hermitian subspace $\mathbb{B}_{\Psi}$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **A maximal definite subspace of an indefinite row.** In the vector subspace, of signature $(3,3)$, the span $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ is a maximal positive definite subspace of dimension $3$ and the span $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ a maximal negative definite one; the two are orthogonal for the realified form, since the pairing of a real direction with its imaginary companion is purely imaginary, and are exchanged by multiplication by $i$, which is the local form of the exchange of the two definite rows of the whole algebra.
 
 **An automorphism of a restriction that does not extend.** The real orthogonal group $O(4)$ of the quaternion subspace contains the reflection in the direction $\vec e_x$, but no element of the ambient automorphism group $O_4(\mathbb{C})$ restricts to it and fixes the anti-quaternion subspace pointwise, because the two definite rows are not orthogonal for the general quaternionic bilinear form (the pairing of $\vec e_x$ with $i\vec e_x$ is $i$); a form-preserving map that fixes one row pointwise is therefore constrained on the other, and the restriction groups of the table are larger than the restrictions of the ambient group.
 
-**The definite rows are not the real forms.** The two definite rows are $\mathbb{H}_{\mathbb B}$, on which the form is $\sum_\mu q_\mu^{2}$, all signs $+1$, and $i\mathbb{H}_{\mathbb B}$, on which it is $-\sum_\mu q_\mu^{2}$, all signs $-1$; the Hermitian and anti-Hermitian subspaces, by contrast, are indefinite of signatures $(1,3)$ and $(3,1)$. The reason is that the Hermitian subspace $\mathbb{M}_+=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ collects the single positive direction $e_t$ with the three negative directions $i\vec e_k$, while the anti-Hermitian subspace $\mathbb{M}_-=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ collects the single negative direction $ie_t$ with the three positive directions $\vec e_k$; neither is spanned by directions of a single sign, which is what definiteness requires.
+**The definite rows are not the real forms.** The two definite rows are $\mathbb{H}_{\mathbb B}$, on which the form is $\sum_\mu q_\mu^{2}$, all signs $+1$, and $i\mathbb{H}_{\mathbb B}$, on which it is $-\sum_\mu q_\mu^{2}$, all signs $-1$; the Hermitian and anti-Hermitian subspaces, by contrast, are indefinite of signatures $(1,3)$ and $(3,1)$. The reason is that the Hermitian subspace $\mathbb{B}_{\Psi}=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ collects the single positive direction $e_t$ with the three negative directions $i\vec e_k$, while the anti-Hermitian subspace $\mathbb{B}_{\Phi}=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ collects the single negative direction $ie_t$ with the three positive directions $\vec e_k$; neither is spanned by directions of a single sign, which is what definiteness requires.
 
-**A null element of the anti-Hermitian subspace.** For $\tilde Q=ie_t+\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=i^{2}+1=0$, on the real null cone of $\mathbb{M}_-$, of signature $(3,1)$; the sign of the null direction is the one the swapped table prescribes.
+**A null element of the anti-Hermitian subspace.** For $\tilde Q=ie_t+\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=i^{2}+1=0$, on the real null cone of $\mathbb{B}_{\Phi}$, of signature $(3,1)$; the sign of the null direction is the one the swapped table prescribes.
 
 ## Summary
 

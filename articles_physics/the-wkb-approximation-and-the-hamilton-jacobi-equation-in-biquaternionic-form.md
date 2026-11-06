@@ -10,11 +10,11 @@ $$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
 $$
 
-which is the same biquaternion norm whose vanishing defines the zero divisor cone and whose value on $\mathbb{M}_+$ measures the purity of a state. The semiclassical limit is thus the regime in which the dynamics is carried by a real vector of the algebra, the phase gradient, and in which the biquaternion norm of that vector is the energy. This article derives that statement, its first correction, and its consequences.
+which is the same biquaternion norm whose vanishing defines the zero divisor cone and whose value on $\mathbb{B}_{\Psi}$ measures the purity of a state. The semiclassical limit is thus the regime in which the dynamics is carried by a real vector of the algebra, the phase gradient, and in which the biquaternion norm of that vector is the energy. This article derives that statement, its first correction, and its consequences.
 
 The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm interpretation, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The Hamiltonian for a scalar potential is $H = [-\frac{\hbar^2}{2m}\nabla^2 + V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $\vec e_\mu^2=-e_t$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{H}$ is the real-quaternion subspace; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The Hamiltonian for a scalar potential is $H = [-\frac{\hbar^2}{2m}\nabla^2 + V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $\vec e_\mu^2=-e_t$.
 
 ## The WKB Ansatz in Biquaternionic Form
 
@@ -45,7 +45,7 @@ $$
 \nabla S = \sum_k (\partial S/\partial R_k)\,\vec e_k .
 $$
 
-The leading term $\nabla S$ is a **real quaternion**, an element of the algebra's spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$; the correction is imaginary-scalar times a real vector, and is the first term of the expansion in $\hbar$. At leading order the state is an approximate eigenstate of the momentum with the real eigenvalue $\nabla S$, which is the classical momentum of the trajectory through the point.
+The leading term $\nabla S$ is a **real quaternion**, an element of the algebra's spatial-vector subspace $\mathbb{B}_{H}$; the correction is imaginary-scalar times a real vector, and is the first term of the expansion in $\hbar$. At leading order the state is an approximate eigenstate of the momentum with the real eigenvalue $\nabla S$, which is the classical momentum of the trajectory through the point.
 
 ### The two real equations
 
@@ -121,7 +121,7 @@ d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = \frac{\vec p}{m},
 \,d\vec p/dr'_t = -\nabla V .
 $$
 
-The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dr'_t = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
+The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dr'_t = \vec p\cdot\,d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{B}_{C}$.
 
 ### The free and separable cases
 
@@ -186,11 +186,11 @@ The transport equation involves only the real amplitude and the real phase gradi
 $$
 \tilde{Ξ}_{\mathrm{sp},\mathrm{wkb}} = A\,\exp(iS/\hbar)\,\xi,
 \qquad
-A\in\mathbb{C}_{\mathbb{B}}|_{\mathbb{R}}=\mathbb{R}e_t,
+A\in\mathbb{B}_{C}|_{\mathbb{R}}=\mathbb{R}e_t,
 \quad
-\exp(iS/\hbar)\in\mathbb{C}_{\mathbb{B}},
+\exp(iS/\hbar)\in\mathbb{B}_{C},
 \quad
-\nabla S\in\mathbb{H}_{\mathbb{B}},
+\nabla S\in\mathbb{B}_{H},
 \qquad
 \xi \ \text{constant}.
 $$
@@ -203,7 +203,7 @@ The module element $\xi$ is untouched, as for every central Hamiltonian. The fir
 
 The WKB solutions fail at the turning points, where $p(x)\to0$ and the amplitude diverges. The repair is the standard one: near a simple turning point the equation is approximated by Airy's equation, and the Airy functions provide the connection between the oscillatory solution on the allowed side and the exponential solution on the forbidden side. In the biquaternion interpretation nothing changes in the analysis, because the equation being approximated is the scalar equation for the envelope; what the framework contributes is the location of the phase in the centre and the identity of the imaginary unit under the square roots that the connection formulas contain.
 
-Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive WKB phase; across a hard wall (a Dirichlet boundary) it acquires $-\pi$, twice as much, which is the statement that the wall carries Maslov index two where a soft turning point carries one. These are the **Maslov phases**. In the framework they are operations on the central $i$: the connection formulas contain $\sqrt{2\pi i\hbar}$ and the factor $i^{-1/2}$, and the square root is taken inside the centre $\mathbb{C}_{\mathbb{B}}$, which is a copy of $\mathbb{C}$. This is the same observation that the path-integral article records for the semiclassical kernel, and it is the reason the Maslov phases are unambiguous here: the central $i$ is supplied by the algebra and does not require a chosen complex structure.
+Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive WKB phase; across a hard wall (a Dirichlet boundary) it acquires $-\pi$, twice as much, which is the statement that the wall carries Maslov index two where a soft turning point carries one. These are the **Maslov phases**. In the framework they are operations on the central $i$: the connection formulas contain $\sqrt{2\pi i\hbar}$ and the factor $i^{-1/2}$, and the square root is taken inside the centre $\mathbb{B}_{C}$, which is a copy of $\mathbb{C}$. This is the same observation that the path-integral article records for the semiclassical kernel, and it is the reason the Maslov phases are unambiguous here: the central $i$ is supplied by the algebra and does not require a chosen complex structure.
 
 ### Bohr–Sommerfeld quantisation
 
@@ -251,11 +251,11 @@ $$
 
 which is exact for any state written in the form $A\exp(iS/\hbar)$. The equation has the same shape as Hamilton–Jacobi with the potential shifted by $Q$; consequently the trajectories defined by $\vec p=\nabla S$ are those of a particle moving in $V+Q$, not in $V$. The quantum potential is the entire difference between the classical and the quantum descriptions in this rewriting, and it is of order $\hbar^2$: the semiclassical expansion is the expansion of $Q$ in powers of $\hbar$, and the WKB approximation is the truncation at $Q=0$.
 
-The quantum potential is central: $A$ is real and central, $\nabla^2A$ is real and central, so $Q\in\mathbb{C}_{\mathbb{B}}|_{\mathbb{R}}=\mathbb{R}e_t$. The phase is central and the amplitude is central, and the exact rewriting of the Schrödinger equation into a Hamilton–Jacobi equation plus a transport equation therefore involves only the centre of the algebra at every order. This is the sharpest statement of what the semiclassical expansion is in this framework: **the entire expansion lives in the centre**, the phase as a central $*$-unitary element and the amplitude as a central real one. The non-central structure of the algebra does not enter the semiclassical limit of a spin-0 particle at any order.
+The quantum potential is central: $A$ is real and central, $\nabla^2A$ is real and central, so $Q\in\mathbb{B}_{C}|_{\mathbb{R}}=\mathbb{R}e_t$. The phase is central and the amplitude is central, and the exact rewriting of the Schrödinger equation into a Hamilton–Jacobi equation plus a transport equation therefore involves only the centre of the algebra at every order. This is the sharpest statement of what the semiclassical expansion is in this framework: **the entire expansion lives in the centre**, the phase as a central $*$-unitary element and the amplitude as a central real one. The non-central structure of the algebra does not enter the semiclassical limit of a spin-0 particle at any order.
 
 ### Why the amplitude is real
 
-The reality of $A$ is not an assumption but a choice of gauge. Any state can be written $A\exp(iS/\hbar)$ with a complex $A$; imposing that $A$ be real and positive is the choice that makes the transport equation take its divergence form. In the biquaternion setting, a complex $A$ would place the amplitude in $\mathbb{C}_{\mathbb{B}}$ rather than in $\mathbb{R}e_t$, and the separation into real and imaginary parts would have to be redone. The standard convention, and the one used here, is the real positive amplitude; it is also the one that makes $A^2$ a probability density and the transport equation a continuity equation.
+The reality of $A$ is not an assumption but a choice of gauge. Any state can be written $A\exp(iS/\hbar)$ with a complex $A$; imposing that $A$ be real and positive is the choice that makes the transport equation take its divergence form. In the biquaternion setting, a complex $A$ would place the amplitude in $\mathbb{B}_{C}$ rather than in $\mathbb{R}e_t$, and the separation into real and imaginary parts would have to be redone. The standard convention, and the one used here, is the real positive amplitude; it is also the one that makes $A^2$ a probability density and the transport equation a continuity equation.
 
 ## What the Biquaternion Form Adds
 
@@ -263,8 +263,8 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 **What the biquaternion notation provides.**
 
-- **The Hamilton–Jacobi equation as a biquaternion norm.** The leading-order equation is $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$: the kinetic energy is the biquaternion norm of the phase gradient, the same algebraic object whose vanishing defines the zero divisor cone and which on $\mathbb{M}_+$ measures purity. The forbidden region is where the biquaternion norm of the real phase gradient would have to be negative, which no real vector allows; that is the algebraic statement of the imaginary momentum.
-- **The phase gradient as a real quaternion.** The leading-order momentum is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of space, while the momentum operator is Hermitian in $\mathbb{M}_+$. The correspondence is the semiclassical statement that the operator's expectation is the classical vector.
+- **The Hamilton–Jacobi equation as a biquaternion norm.** The leading-order equation is $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$: the kinetic energy is the biquaternion norm of the phase gradient, the same algebraic object whose vanishing defines the zero divisor cone and which on $\mathbb{B}_{\Psi}$ measures purity. The forbidden region is where the biquaternion norm of the real phase gradient would have to be negative, which no real vector allows; that is the algebraic statement of the imaginary momentum.
+- **The phase gradient as a real quaternion.** The leading-order momentum is an element of the real-quaternion subspace $\mathbb{B}_{H}$, the algebra's copy of space, while the momentum operator is Hermitian in $\mathbb{B}_{\Psi}$. The correspondence is the semiclassical statement that the operator's expectation is the classical vector.
 - **A central phase and a central amplitude.** The WKB state is $A\exp(iS/\hbar)\xi$ with $A$ real and central and the phase central; the quantum potential is central; the whole semiclassical expansion lives in the centre, and the module factor is a constant. The Maslov phases are operations on the central $i$, and the square roots under the connection formulas are taken inside the centre.
 - **The same amplitude as the path integral.** The van Vleck determinant appears here from the transport equation and in the companion path-integral article from the stationary phase of the path integral; the framework exhibits them as one object.
 
@@ -287,7 +287,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 ## Summary
 
-The WKB ansatz in the biquaternion framework is $\tilde{Ξ}_{\mathrm{sp}}=A\,\exp(iS/\hbar)\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla S - i\hbar\nabla\ln A]\tilde{Ξ}_{\mathrm{sp}}$, with the leading term the real quaternion $\nabla S$ in the spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
+The WKB ansatz in the biquaternion framework is $\tilde{Ξ}_{\mathrm{sp}}=A\,\exp(iS/\hbar)\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla S - i\hbar\nabla\ln A]\tilde{Ξ}_{\mathrm{sp}}$, with the leading term the real quaternion $\nabla S$ in the spatial-vector subspace $\mathbb{B}_{H}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
 
 $$
 \nabla\cdot(A^2\nabla S) = 0,
@@ -316,14 +316,14 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the phase and the amplitude |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the phase gradient |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; home of the phase and the amplitude |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the phase gradient |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\tilde{Ξ}_{\mathrm{sp}}=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
 | $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla S-i\hbar\nabla\ln A]\tilde{Ξ}_{\mathrm{sp}}$ | Action of the momentum on the WKB state |
-| $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
+| $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{B}_{H}$ |
 | $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |
 | $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
 | $\vec p=\nabla S$, $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$, $d\vec p/dr'_t=-\nabla V$ | Characteristics; classical trajectories |

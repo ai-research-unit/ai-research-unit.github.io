@@ -149,7 +149,7 @@ Convolution in the coordinate becomes biquaternion multiplication in the frequen
 
 ### The Factorization
 
-In a basis adapted to the root, the transform splits into four ordinary complex Fourier transforms, one for each coefficient. For a non-trivial root and a signal that takes values in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in its imaginary translate $i\mathbb{H}_{\mathbb{B}}$, two complex transforms suffice; for a general biquaternion signal, four are required. The factorization is the precise sense in which the biquaternion transform is ordinary complex analysis applied entrywise, dressed in the algebra; the genuinely biquaternionic content is the choice of root and the basis change it induces.
+In a basis adapted to the root, the transform splits into four ordinary complex Fourier transforms, one for each coefficient. For a non-trivial root and a signal that takes values in the real quaternion subspace $\mathbb{B}_{H}$ or in its imaginary translate $\mathbb{B}_{iH}$, two complex transforms suffice; for a general biquaternion signal, four are required. The factorization is the precise sense in which the biquaternion transform is ordinary complex analysis applied entrywise, dressed in the algebra; the genuinely biquaternionic content is the choice of root and the basis change it induces.
 
 ### The Symbol
 
@@ -173,7 +173,7 @@ The discrete transform replaces the integral by a sum over $N$ samples, with ker
 
 ### The Vanishing Norm and the Measure
 
-Two features of the transform are genuinely biquaternionic. The first is the **vanishing norm**: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{H}_{\mathbb{B}}$ is sufficient, and on $\mathbb{M}_-$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.
+Two features of the transform are genuinely biquaternionic. The first is the **vanishing norm**: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{B}_{H}$ is sufficient, and on $\mathbb{B}_{\Phi}$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.
 
 The second is the **positivity of the transform of a measure**. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_k$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity
 
@@ -218,7 +218,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\h
 
 - **The positivity of the transform is the positivity of the Hermitian form, not of the norm.** With the biquaternion norm the value at the central coefficient $i$ is $\langle i\rangle_{\natural}=-1$, for every root, so the norm is indefinite and negative on the centre. With the Hermitian form the quadratic form of the transform is positive definite exactly for the degenerate roots, and it fails for every genuinely complex root. Boundary: the repair is a definite form and not the norm of the product; the criterion needs central coefficients and a single root; the norm failure and the root failure are different statements.
 
-- **The vanishing norm is where the transform ceases to be invertible.** The transform is invertible on functions of non-vanishing norm; on functions that take zero-divisor values on a set of positive measure, invertibility is not guaranteed. The zero-divisor cone is therefore the locus where the Fourier description can lose information. Boundary: restricting to $\mathbb{H}_{\mathbb{B}}$ is sufficient, and on $\mathbb{M}_-$ the transform is invertible exactly for values off the cone; the precise condition for a general function that takes zero-divisor values on a set of positive measure is open, and the article does not claim the transform is non-invertible on every cone-valued function.
+- **The vanishing norm is where the transform ceases to be invertible.** The transform is invertible on functions of non-vanishing norm; on functions that take zero-divisor values on a set of positive measure, invertibility is not guaranteed. The zero-divisor cone is therefore the locus where the Fourier description can lose information. Boundary: restricting to $\mathbb{B}_{H}$ is sufficient, and on $\mathbb{B}_{\Phi}$ the transform is invertible exactly for values off the cone; the precise condition for a general function that takes zero-divisor values on a set of positive measure is open, and the article does not claim the transform is non-invertible on every cone-valued function.
 
 ## Limits
 
@@ -230,7 +230,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\h
 - **The transform is not a measurement.** It is invertible where the transform pair holds, it loses no information there, and it does not make the informational sector the Fourier dual of the material one.
 - **The imaginary directions are conjugate, not spatial.** The article does not add dimensions and does not identify an imaginary direction with a direction of propagation.
 - **The positivity repair is a form, not the norm.** The Hermitian form is definite; the biquaternion norm is indefinite, and the two failures are distinct.
-- **The vanishing-norm condition is open in general.** The article states the $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$ restrictions and does not claim a necessary and sufficient criterion for a general function that takes zero-divisor values on a set of positive measure.
+- **The vanishing-norm condition is open in general.** The article states the $\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$ restrictions and does not claim a necessary and sufficient criterion for a general function that takes zero-divisor values on a set of positive measure.
 - **The discrete case is cited, not developed.** The interpretations are the continuous ones; the discrete transform has the same shape, and the $\mathrm Z$ transform is left to its mathematics article.
 
 ## Summary
@@ -256,9 +256,9 @@ The Fourier transform is generated by a root of $-1$: the root is the clock, the
 | $\rho$, $\rho^2=-e_t$ | Root of $-1$; families $\pm i$, $\pm\hat\mu$, $b\hat\mu+d\hat\nu i$ |
 | $W(r'_t,\omega)=\exp(-2\pi\rho\omega r'_t)$ | Fourier kernel; $\cos(2\pi\omega r'_t)e_t-\sin(2\pi\omega r'_t)\rho$ |
 | $F(\omega)$, $f(r'_t)$ | Transform and inverse transform |
-| $\mathbb{M}_-$, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | Material sector and material coordinate |
+| $\mathbb{B}_{\Phi}$, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | Material sector and material coordinate |
 | $\omega_\mu$; $\omega$, $\vec k$ | Frequencies conjugate to $Q_\mu$; physical frequency and wavevector |
-| $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace and its imaginary translate |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | Real quaternion subspace and its imaginary translate |
 
 ## Further Reading
 

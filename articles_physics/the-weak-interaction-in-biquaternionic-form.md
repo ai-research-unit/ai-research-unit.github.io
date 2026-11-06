@@ -18,7 +18,7 @@ $$
 \Gamma_t:=iR_{\mathrm{axf},\vec e_x},\qquad \Gamma_k:=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y},\qquad \xi:=-iR_{\mathrm{axf},\vec e_z}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=c r'_{t}$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{B}_{\Phi}$ throughout**, the material frame with $x_0=c r'_{t}$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -97,7 +97,7 @@ Normalising the right multiplier to the Peirce element $\vec\Upsilon_1=\tfrac12(
 | $\Gamma_yP_R$ | $L_{+i\vec e_y}R_{\vec\Upsilon_2}$ | $+i\vec e_y$ | $\vec\Upsilon_2$ |
 | $\Gamma_zP_R$ | $L_{+i\vec e_z}R_{\vec\Upsilon_2}$ | $+i\vec e_z$ | $\vec\Upsilon_2$ |
 
-Every left multiplier in the table lies in the informational sector $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and every right multiplier is one of the two Peirce nilpotents, which lie on the null cone and in neither sector. The normalisation is not unique: $(a,b)$ and $(\lambda a,b/\lambda)$ give the same cell, so the entries are fixed by the stated choice of right multiplier, and a different choice rescales the left column without changing any statement about the right one. What the table says is that the chiral weak vertex is a cell of **mixed type** — an element of the informational sector on the left and a null element on the right — and that the two chiralities differ only in the sign of the left multiplier.
+Every left multiplier in the table lies in the informational sector $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and every right multiplier is one of the two Peirce nilpotents, which lie on the null cone and in neither sector. The normalisation is not unique: $(a,b)$ and $(\lambda a,b/\lambda)$ give the same cell, so the entries are fixed by the stated choice of right multiplier, and a different choice rescales the left column without changing any statement about the right one. What the table says is that the chiral weak vertex is a cell of **mixed type** — an element of the informational sector on the left and a null element on the right — and that the two chiralities differ only in the sign of the left multiplier.
 
 ### The square identity
 
@@ -226,7 +226,7 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the spatial units |
 | $i$ | Central imaginary, $i^2=-1$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $L_aR_b$ | Cell, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; applying it twice gives $a^2\tilde{Ξ}_{\mathrm{sp}} b^2$ |
 | $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\xi=-iR_{\vec e_z}$ | Chirality cell, $\xi^2=I_4$, the image of $\gamma_5$ |

@@ -52,7 +52,7 @@ D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R
 \qquad
 \langle\tilde{V}/\gamma\rangle_{\natural} = -\frac{c^2}{\gamma^2},
 $$
-with $iR\,e_t + \vec R \in \mathbb{M}_-$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(r'_{\mathrm{ret},t})\right) \in \mathbb{M}_-$. (c) Extract $\xi_{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\xi_{\mathrm{scp}}$.
+with $iR\,e_t + \vec R \in \mathbb{B}_{\Phi}$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(r'_{\mathrm{ret},t})\right) \in \mathbb{B}_{\Phi}$. (c) Extract $\xi_{\mathrm{scp}}$ and $\vec A$ and verify $\vec A = \frac{\vec v}{c^2}\xi_{\mathrm{scp}}$.
 
 **Solution (a).** Differentiate $r'_{\mathrm{ret},t} = r'_t - R/c$ at fixed field point. Since $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(r'_{\mathrm{ret},t})|$,
 $$
@@ -97,7 +97,7 @@ $$
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\left[(ic)^2 + |\vec v|^2\right] = -c^2\gamma^2\left(1-\beta^2\right) = -c^2 ,
 $$
 so that the coordinate velocity $\tilde{V}/\gamma$ has $\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2/\gamma^2$.
-Thus the whole construction is built from one null and one timelike element of $\mathbb{M}_-$, paired through the single scale $D$.
+Thus the whole construction is built from one null and one timelike element of $\mathbb{B}_{\Phi}$, paired through the single scale $D$.
 
 **Solution (c).** Writing $\tilde{A} = i\,a'_te_t + \vec A$ and using $\epsilon\mu c^2 = 1$,
 $$
@@ -282,7 +282,7 @@ $$
 $$
 whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$ generates the inverse (moving-to-lab) transformation.
 
-**Solution (b).** The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ is defined for four-vectors, and it does *not* give the correct field transformation. The correct law for a pure boost is the similarity
+**Solution (b).** The field strength is a rank-two object, not an element of $\mathbb{B}_{\Phi}$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ is defined for four-vectors, and it does *not* give the correct field transformation. The correct law for a pure boost is the similarity
 $$
 \tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
 = \tilde U_{\mathrm b}^{-1}\tilde{F}\,\tilde U_{\mathrm b} ,
@@ -325,7 +325,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 **1. The differentiation is asserted, not displayed.** The parent states that "differentiating the Liénard–Wiechert potential is the standard computation" and records the two component results, with the normalization caveat that fixes $\tilde{F} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ as the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. It does not carry out the differentiation, and in particular it does not display the two biquaternion brackets of Problem 2 or the role of the null gradient $\tilde{\nabla}^{\natural}r'_{\mathrm{ret},t}$. This exercise supplies the missing computation; nothing in the parent's results is changed.
 
-**2. The field transformation law is not given, and rotor conjugation is not it.** The parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor $\tilde U_{\mathrm b}$ of the Maxwell article to the Coulomb field of the charge at rest" is correct in content but silent on the law. The framework's rotor conjugation is defined for four-vectors in $\mathbb{M}_-$; the field strength is a rank-two object and transforms by the similarity $\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^{-1}\tilde{F}\tilde U_{\mathrm b}$ (Problem 5). The Lorentz-transformation article's "Open Questions", item 1, asks precisely how the biquaternion formulation extends to higher-rank tensors such as $F_{\mu\nu}$; this exercise supplies the answer for the field strength and a pure boost, so it is a recognized boundary and not a defect introduced here. We record it because a reader who reaches for $\tilde U_{\mathrm b}\tilde{F}\tilde U_{\mathrm b}^{*}$ will get a wrong field.
+**2. The field transformation law is not given, and rotor conjugation is not it.** The parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor $\tilde U_{\mathrm b}$ of the Maxwell article to the Coulomb field of the charge at rest" is correct in content but silent on the law. The framework's rotor conjugation is defined for four-vectors in $\mathbb{B}_{\Phi}$; the field strength is a rank-two object and transforms by the similarity $\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^{-1}\tilde{F}\tilde U_{\mathrm b}$ (Problem 5). The Lorentz-transformation article's "Open Questions", item 1, asks precisely how the biquaternion formulation extends to higher-rank tensors such as $F_{\mu\nu}$; this exercise supplies the answer for the field strength and a pure boost, so it is a recognized boundary and not a defect introduced here. We record it because a reader who reaches for $\tilde U_{\mathrm b}\tilde{F}\tilde U_{\mathrm b}^{*}$ will get a wrong field.
 
 **3. The subluminal restriction and the caustic.** The retarded formulas assume $\kappa>0$. As $\vec u_R\cdot\vec\beta\to1$, the denominator $\kappa\to0$ and the field diverges; this is the caustic where the retarded-time equation has a double root. For superluminal worldlines the construction fails outright, and a naive numerical retarded-time solver can return a spurious root. The parent does not state the restriction, and it is not inferable from the displayed formulas. The exercise leaves the caustic and the superluminal case open.
 
@@ -366,8 +366,8 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
@@ -385,7 +385,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\kappa = 1-\vec u_R\cdot\vec\beta$ | Retarded denominator; $D = R\kappa$ |
 | $\tilde{V} = \gamma\left(ic\,e_t+\vec v(r'_{\mathrm{ret},t})\right)$ | Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}/\gamma = ic\,e_t+\vec v(r'_{\mathrm{ret},t})$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
-| $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{M}_-$ |
+| $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{B}_{\Phi}$ |
 | $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}r'_{\mathrm{ret},t} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
 | $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |

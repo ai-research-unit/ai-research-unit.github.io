@@ -20,7 +20,7 @@ The article is classical throughout, and the scope is the *relativistic* quadrup
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Quadrupole as a Higher Multipole
 
@@ -53,7 +53,7 @@ with $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$, $ϙ$ the total ch
 The biquaternion algebra, regarded as a module for the rotation group acting by rotor conjugation, decomposes as
 
 $$
-\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = D^{(0)} \oplus D^{(1)} ,
+\mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V} = D^{(0)} \oplus D^{(1)} ,
 $$
 
 the centre being the trivial representation and the vector part the vector representation. The reason is a dimension count: a four-dimensional complex space decomposes into representations of dimensions $1, 3, 5, \ldots$, and the only partitions of $4$ are $4 = 1 + 3$ and $4 = 1 + 1 + 1 + 1$. A $D^{(2)}$ alone would already require dimension five. More than that, the algebra cannot *reach* the quadrupole by multiplication either: the quaternion product of two vectors,
@@ -78,7 +78,7 @@ $$
 r'_{\mathrm{ret},t} = r'_t - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}{c} ,
 $$
 
-with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{M}_-$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.
+with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{B}_{\Phi}$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.
 
 For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\omega r'_t)$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to
 
@@ -208,7 +208,7 @@ $$
 \tilde{F}_2 = \tilde{U}^{\natural}\,\tilde{F}\,\tilde{U} ,
 $$
 
-with $\tilde{U}$ the boost biquaternion of $\mathbb{M}_+$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.
+with $\tilde{U}$ the boost biquaternion of $\mathbb{B}_{\Psi}$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.
 
 The **order** $l$ is a different matter, and here the boost does not behave simply. The order is a label of the angular decomposition in a fixed frame; the rotation subgroup preserves it, but a boost does not. The reason is that a boost acts on the field in two ways at once — it mixes the field components **and** it transforms the argument, so the field is read on another time slice and at an aberrated direction — and a pure multipole of one frame therefore acquires other orders in another. The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $Ξ \propto (3z^2-r^2)/r^5$, and a boost along $z$ turns it into
 
@@ -296,7 +296,7 @@ For radiation the angular momentum is carried jointly by the multipole order and
 The resolution of the apparent paradox — that the quadrupole is not an algebra element yet its field is biquaternion-valued — is the separation of two spaces. At each point of space–time the field strength takes a value in the algebra,
 
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathrm{Vect}(\mathbb{B}) ,
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathbb{B}_{V} ,
 $$
 
 a pure-vector biquaternion, and the **value** is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The **angular content** of the field, however, is a property of the function $\tilde{F}(\cdot,r'_t)$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.
@@ -310,9 +310,9 @@ Two algebraic decompositions of $\tilde{F}$ organise the multipole series, and b
 The **Hermitian decomposition** separates the electric and magnetic halves,
 
 $$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+ ,
+\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi} ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_- .
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{B}_{\Phi} .
 $$
 
 The electric and magnetic quadrupole **fields** are the two summands. For a static source the correspondence with the quadrupole types is exact — a static charge distribution gives a purely Hermitian field strength, so the electric quadrupole field is Hermitian, and a stationary current gives a purely anti-Hermitian one, so the magnetic quadrupole field is anti-Hermitian. A radiating quadrupole of either type has both a Hermitian and an anti-Hermitian part. A boost does not preserve this split: it mixes the electric and magnetic fields. The same boost mixes the multipole types, and that is a statement about parity rather than about the two fields: $E_2$ and $\mathsf{M}_2$ have opposite parity, and a boost does not preserve parity.
@@ -380,11 +380,11 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Centre and complex vector part of $\mathbb{B}$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\tilde{A} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
+| $\tilde{A} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |
 | $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ for the real field |
@@ -401,7 +401,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $k = \omega/c$ | Wavenumber |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial vector |
 | $\gamma$, $\beta = |\vec v|/c$ | Lorentz factor and speed ratio |
-| $\tilde{U}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
+| $\tilde{U}\in\mathbb{B}_{\Psi}$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B,-\vec E/c)$ |
 | $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ | Biquaternion norm; vanishes for a radiation field |
 

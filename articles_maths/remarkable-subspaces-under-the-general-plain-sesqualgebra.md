@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
+The general plain sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{B}_{C}$, the vector subspace $\mathbb{B}_{V}$, the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 
 The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its $*$-unitary automorphism group $\mathrm{U}(4)$ are the matter of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the remarkable subspaces and their bases are *Subspaces and Decompositions*; and the companion readings of the same remarkable subspaces by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
@@ -12,12 +12,12 @@ The form is positive definite on the whole algebra, so **every restriction is po
 
 | Subspace | Natural real basis | Restricted form | Restriction matrix | Signature |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $\lvert Q_t\rvert^{2}=q_t^{2}+(q'_t)^{2}$ | $\mathrm{I}_2$ | $(2,0)$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | $\sum_k\lvert Q_k\rvert^{2}$ | $\mathrm{I}_6$ | $(6,0)$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_\mu q_\mu^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\sum_\mu(q'_\mu)^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
-| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $q_t^{2}+\sum_k(q'_k)^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $(q'_t)^{2}+\sum_kq_k^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
+| Centre $\mathbb{B}_{C}$ | $e_t,\,ie_t$ | $\lvert Q_t\rvert^{2}=q_t^{2}+(q'_t)^{2}$ | $\mathrm{I}_2$ | $(2,0)$ |
+| Vector $\mathbb{B}_{V}$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | $\sum_k\lvert Q_k\rvert^{2}$ | $\mathrm{I}_6$ | $(6,0)$ |
+| Quaternion $\mathbb{B}_{H}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $\sum_\mu q_\mu^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\sum_\mu(q'_\mu)^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $q_t^{2}+\sum_k(q'_k)^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $(q'_t)^{2}+\sum_kq_k^{2}$ | $\mathrm{I}_4$ | $(4,0)$ |
 
 **Proposition (the matrices).** In the natural real basis displayed the restriction of the form is the identity matrix of the stated size; in particular every restriction is non-degenerate, with Gram determinant $1$.
 
@@ -50,12 +50,12 @@ It is the real orthogonal group of the dimension of $V$.
 
 | Subspace | Signature | Real-linear automorphism group | Real dimension | Complex-linear subgroup |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $(2,0)$ | $O(2)$ | $1$ | $\mathrm{U}(1)$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $(6,0)$ | $O(6)$ | $15$ | $\mathrm{U}(3)$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $(4,0)$ | $O(4)$ | $6$ | — |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $(4,0)$ | $O(4)$ | $6$ | — |
-| Hermitian $\mathbb{M}_+$ | $(4,0)$ | $O(4)$ | $6$ | — |
-| Anti-Hermitian $\mathbb{M}_-$ | $(4,0)$ | $O(4)$ | $6$ | — |
+| Centre $\mathbb{B}_{C}$ | $(2,0)$ | $O(2)$ | $1$ | $\mathrm{U}(1)$ |
+| Vector $\mathbb{B}_{V}$ | $(6,0)$ | $O(6)$ | $15$ | $\mathrm{U}(3)$ |
+| Quaternion $\mathbb{B}_{H}$ | $(4,0)$ | $O(4)$ | $6$ | — |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $(4,0)$ | $O(4)$ | $6$ | — |
+| Hermitian $\mathbb{B}_{\Psi}$ | $(4,0)$ | $O(4)$ | $6$ | — |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $(4,0)$ | $O(4)$ | $6$ | — |
 
 **Proof.** The restriction is the standard positive definite form of $\mathbb{R}^{n}$, whose automorphism group is $O(n)$ of real dimension $n(n-1)/2$, giving $1$, $15$ and $6$ for $n=2,6,4$. The complexes of the centre and the vector subspace are preserved by the complex structure $i$, and the complex-linear automorphisms of $\lvert Q\rvert^{2}$ on $\mathbb{C}^{1}$ and $\mathbb{C}^{3}$ are $\mathrm{U}(1)$ and $\mathrm{U}(3)$; on the four real subspaces a complex-linear map need not preserve the real subspace, so no complex-linear subgroup is singled out.
 
@@ -75,7 +75,7 @@ The definite norm of the algebra is $\lVert\tilde Q\rVert_E$, of *The Euclidean 
 
 **The anti-quaternion row.** For $\tilde Q=i\tilde q$ the restriction is $\sum_\mu q_\mu^{2}$, again the Euclidean square; it is the negative of the general quaternionic bilinear restriction, which is $(0,4)$ on this row, and the two differ by the sign $i^{2}=-1$.
 
-**The two Hermitian rows.** On $\mathbb{M}_+$ the restriction is $q_t^{2}+(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ and on $\mathbb{M}_-$ it is $(q'_t)^{2}+q_x^{2}+q_y^{2}+q_z^{2}$, the standard inner products of $\mathbb{R}^{4}$ in the two orders of the coordinates; each is the square of the definite norm of the subspace, and neither has a null direction.
+**The two Hermitian rows.** On $\mathbb{B}_{\Psi}$ the restriction is $q_t^{2}+(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ and on $\mathbb{B}_{\Phi}$ it is $(q'_t)^{2}+q_x^{2}+q_y^{2}+q_z^{2}$, the standard inner products of $\mathbb{R}^{4}$ in the two orders of the coordinates; each is the square of the definite norm of the subspace, and neither has a null direction.
 
 **The vector row and the vanishing of the cross terms.** On the vector subspace the restriction is $\sum_k(q_k^{2}+(q'_k)^{2})$, the Euclidean square of the six real coordinates: a real vector direction $\vec e_k$ and its imaginary companion $i\vec e_k$ are orthogonal, since the mixed value $\langle \vec e_k,ie_l\rangle_{*}$ has real part zero.
 

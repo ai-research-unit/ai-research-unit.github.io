@@ -38,7 +38,7 @@ and the two equations $\tilde Q^2=0$ and $\langle\tilde Q\rangle_{\natural}=0$ a
 - **The nilpotents** are the nonzero roots of $0$. They are exactly the nonzero pure elements with $(\vec Q,\vec Q)=0$, they have index two, and each lies in its own annihilator.
 - **The zero-divisor cone** is the vanishing set of the norm, $\langle\tilde Q\rangle_{\natural}=0$. An element of the cone with a nonzero scalar part is a zero divisor but not a nilpotent; it is a complex multiple of a non-trivial idempotent.
 
-| set | equation | real dimension | contains a physical null vector of $\mathbb{M}_-$ |
+| set | equation | real dimension | contains a physical null vector of $\mathbb{B}_{\Phi}$ |
 | --- | --- | --- | --- |
 | roots of $0$ | $\tilde Q^2=0$ | $4$, plus the origin | no |
 | nilpotent cone | $\tilde Q^2=0$, $\tilde Q\neq0$ | $4$ | no |
@@ -81,7 +81,7 @@ $$
 \langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+\lvert r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\rvert^2,
 $$
 
-of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the **null cone** $c^2{r'_{t}}^2=\lvert\vec r\rvert^2$.
+of signature $(-,+,+,+)$. The cone cut by $\mathbb{B}_{\Phi}$ is the **null cone** $c^2{r'_{t}}^2=\lvert\vec r\rvert^2$.
 
 The mass shell is a level set of the norm of the **four-momentum**, not of the position. With
 
@@ -141,7 +141,7 @@ That division is the article's reading of the word *spectrum*. The cone is the p
 
 The distinction of §*Three Sets and One Nesting* deserves its own section, because the two objects are easy to identify and the identification is wrong.
 
-A physical null vector $\tilde P\in\mathbb{M}_-$ has $\operatorname{Sc}\tilde P\neq0$ whenever the energy is nonzero, so it is not pure and cannot be a nilpotent. What it is, exactly, is an imaginary multiple of a Hermitian idempotent:
+A physical null vector $\tilde P\in\mathbb{B}_{\Phi}$ has $\operatorname{Sc}\tilde P\neq0$ whenever the energy is nonzero, so it is not pure and cannot be a nilpotent. What it is, exactly, is an imaginary multiple of a Hermitian idempotent:
 
 $$
 \tilde P=2i\frac{E}{c}\,\tilde\Pi(-\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
@@ -221,7 +221,7 @@ $$
 \tilde P=2i\frac{E}{c}\tilde\Pi(-\vec u),
 $$
 
-and it lies on the idempotent stratum. A null field is a nilpotent and lies on the nilpotent stratum. The two are on the same cone and are not the same kind of element: the momentum is a real null vector of $\mathbb{M}_-$, the field is a pure isotropic vector of the whole algebra. The cone is the common locus, not a common object.
+and it lies on the idempotent stratum. A null field is a nilpotent and lies on the nilpotent stratum. The two are on the same cone and are not the same kind of element: the momentum is a real null vector of $\mathbb{B}_{\Phi}$, the field is a pure isotropic vector of the whole algebra. The cone is the common locus, not a common object.
 
 **The reading.** The null field is the radiative field: the two invariant scalars vanish, the field is rank one, and its state is pure. The reading is the algebraic form of the statement that a null field has no rest frame and no invariant intensity; the energy density is frame-dependent.
 
@@ -263,7 +263,7 @@ The massless limit of a massive family is the physical instance of the theorem; 
 ## Limits
 
 - **Not every zero divisor squares to $0$.** The non-pure family does not, and it is the family the physical null momenta belong to. The roots of $0$ are the pure part of the cone together with the origin.
-- **The metric enters only with the sector.** On the whole algebra the cone is the zero set of a complex quadratic form; the Minkowski interval appears when $\mathbb{M}_-$ is cut out. The cone is not derived from a metric.
+- **The metric enters only with the sector.** On the whole algebra the cone is the zero set of a complex quadratic form; the Minkowski interval appears when $\mathbb{B}_{\Phi}$ is cut out. The cone is not derived from a metric.
 - **No mass values and no particle spectrum.** The article reads the mass shell as a level set and the massless case as the zero level. It does not predict which masses occur, and it does not derive the particle content.
 - **No spin and no gauge structure.** The cone fixes the shell, the rank and the direction. The helicity, the value of the spin and the removal of the lower helicities are representation and gauge data, owned by the particle articles.
 - **The complex cone and the real cone are different objects.** The projective geometry of $\mathbb{P}^1\times\mathbb{P}^1$ is the complexified cone; the real celestial sphere is a real slice. The article uses the complex picture only for the two chiralities and sends the reader to the article that owns it.
@@ -286,7 +286,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$ |
 | $\sigma=\lVert\tilde Q\rVert_{\mathrm F}$ | the Frobenius scale of a nonzero null element |
 | $\tilde\Pi_{\mathrm i},\tilde\Pi_{\mathrm f}$ | the initial and final projections of the partial isometry |
-| $\mathbb{M}_-$ | the material sector, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ |
+| $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$ |
 | $\langle\tilde R_\varphi\rangle_{\natural}=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
 | $-m^2c^2$ | the mass-shell level of the four-momentum norm |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |

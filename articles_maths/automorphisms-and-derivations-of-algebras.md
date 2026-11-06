@@ -255,7 +255,7 @@ $$
 
 the commutator Lie algebra of the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$ computed above. The identification of this three-dimensional Lie algebra with the Lie algebra of the rotations of $\mathbb{R}^3$ is made in *Quaternion Rotations and Reflections*, where a form is available; the structure constants alone are what this article computes.
 
-**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
+**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{B}_{C}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
 
 ## The Exponential Correspondence
 
@@ -338,7 +338,7 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $\mathbb{H}/\mathbb{R}$, $\mathrm{SL}_n(k)$ | Commutator Lie algebra of the imaginary quaternions and traceless matrices |
 | $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Complex, split complex and dual numbers |
 | $\mathbb{H}$, $\mathbb{B}$ | Quaternions and biquaternions |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace of $\mathbb{B}$ |
+| $\mathbb{B}_{H}$ | Real quaternion subspace of $\mathbb{B}$ |
 
 
 

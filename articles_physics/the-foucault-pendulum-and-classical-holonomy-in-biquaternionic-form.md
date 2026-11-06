@@ -6,7 +6,7 @@ In 1851 Léon Foucault suspended a long pendulum in the Panthéon and watched it
 
 The effect is peculiar among the systems of this subcategory in that it is **geometric**. The precession angle does not depend on the mass of the bob, on the length of the wire, on the local value of $g$, or on the amplitude of the swing, as long as the pendulum is long and the amplitude small. It depends only on the path that the pivot is carried along by the rotating Earth — a circle of latitude — and on nothing else. It is a **holonomy**: the net rotation accumulated by a frame when it is carried around a closed loop, an angle fixed by the geometry of the loop rather than by the details of the transport.
 
-This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(r'_t)$ acting on it by the adjoint action. The **Coriolis and centrifugal forces are commutators** with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dr'_t]$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\theta_{\mathrm{foc}}$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.
+This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{B}_{\Phi}$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(r'_t)$ acting on it by the adjoint action. The **Coriolis and centrifugal forces are commutators** with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dr'_t]$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\theta_{\mathrm{foc}}$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.
 
 The treatment is classical and non-quantum. The geometric phase of a quantum system, the Berry phase, and its biquaternion formulation belong to the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*; the classical Hannay angle is a separate construction. What is used here is the elementary holonomy of a frame carried around a loop on a sphere, and the pendulum that realizes it. The particle is structureless — the bob carries no intrinsic angular momentum and no magnetic moment — so the effect is one of the spin-zero subcategory, and it is the purely geometric end of it.
 
@@ -23,7 +23,7 @@ A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is impleme
 Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
 
 $$
-R(r'_t) = \cos\frac{\theta_{\mathrm{rat}}}{2} + \sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(r'_t) = R^{\natural}(r'_t) = R^{-1}(r'_t) ,
+R(r'_t) = \cos\frac{\theta_{\mathrm{rat}}}{2} + \sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u \in \mathbb{B}_{H}, \qquad R^{*}(r'_t) = R^{\natural}(r'_t) = R^{-1}(r'_t) ,
 $$
 
 so that after a time $r'_t$ the frame has turned by the angle $\theta_{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components
@@ -70,7 +70,7 @@ $$
 \boxed{\;-m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right]\;},
 $$
 
-since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.
+since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{B}_{\Phi}$, and the adjoint action of its exponential produces the correction terms.
 
 ## The Pendulum in the Rotating Frame
 
@@ -299,8 +299,8 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\theta_{\mathrm{foc}}}\vec e_{\mathrm{foc},\theta}$ $(\mu\neq\nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian), informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra (rotation rotors) |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian), informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subalgebra (rotation rotors) |
 | $\vec\Omega$ | Angular velocity of the rotating frame; real vector |
 | $\Omega = |\vec\Omega|$, $\vec u = \vec\Omega/\Omega$ | Angular speed; rotation axis |
 | $R(r'_t) = \cos\frac{\theta_{\mathrm{rat}}}{2} + \sin\frac{\theta_{\mathrm{rat}}}{2}\vec u$ | Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$ |

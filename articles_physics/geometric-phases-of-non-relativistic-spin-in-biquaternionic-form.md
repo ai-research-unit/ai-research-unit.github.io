@@ -54,7 +54,7 @@ $$
 \theta_{\mathrm{pha},\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}(0)^\dagger\tilde{Ξ}_{\mathrm{sp}}(T)) .
 $$
 
-The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde R_\psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.
+The star in the first trace is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\tilde R_\psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.
 
 ### The Berry Phase as the Adiabatic Limit
 
@@ -172,8 +172,8 @@ $$
 
 for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde R_\psi\rangle dr'_t)$. The two faces are:
 
-- the **rotor** $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;
-- the **central phase** $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.
+- the **rotor** $\tilde{u}\in\mathbb{B}_{H}$, which rotates the Bloch vector and is observable through the orientation of the state;
+- the **central phase** $\exp(i\alpha)\in\mathbb{B}_{C}$, which multiplies the spinor and is observable only through interference with another amplitude.
 
 The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.
 
@@ -229,9 +229,9 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 **What the algebra organises.**
 
-- **The double cover is explicit.** The rotor group is $\mathbb{H}_{\mathbb{B}}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.
+- **The double cover is explicit.** The rotor group is $\mathbb{B}_{H}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.
 - **The phase lives in the spinor.** The idempotent contains no phase, as the Berry article records; the Hermitian form on the spinor, read through the trace, carries the Pancharatnam connection. The geometric phase is thus a property of the lift of the Bloch vector, not of the Bloch vector.
-- **The holonomy is a rotor with two faces.** The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{H}_{\mathbb{B}}\to SO(3)$.
+- **The holonomy is a rotor with two faces.** The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{B}_{H}\to SO(3)$.
 - **A common rotating-frame structure.** The rotating-field problem has the same effective Hamiltonian form as the Rabi problem, with the detuning replaced by $\omega_L\cos\theta_0-\omega$ and the transverse coupling by $\omega_L\sin\theta_0$. The framework makes the identity of the two problems visible.
 
 **What the algebra does not supply.** The field amplitude, the gyromagnetic ratio and the rate $\omega$ are external data. The algebra does not select the loop or the protocol; it describes the holonomy of whatever spinor path the protocol produces. And the numerical value of the geometric phase, being an angle, is defined modulo $2\pi$; the framework does not remove that ambiguity, which is physical.
@@ -264,11 +264,11 @@ $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
 $$
 
-in the corpus Larmor sense (clockwise about $+\vec u_z$), which agrees with the general formula because the oriented solid angle is $-\theta_{\mathrm{sol}}$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{u}(2\pi) = -e_t$, the nontrivial element of the kernel of the double cover $\mathbb{H}_{\mathbb{B}}\to SO(3)$.
+in the corpus Larmor sense (clockwise about $+\vec u_z$), which agrees with the general formula because the oriented solid angle is $-\theta_{\mathrm{sol}}$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{u}(2\pi) = -e_t$, the nontrivial element of the kernel of the double cover $\mathbb{B}_{H}\to SO(3)$.
 
 The **Berry phase** is the adiabatic limit of the same holonomy. For the field rotating about $\vec u_z$ at rate $\omega$, the rotating frame gives the static effective spin field $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ with gap $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$; in the limit $\omega\ll\omega_L$ the holonomy is $-\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$ with the sign fixed by the traversal, and at $\omega = \omega_L\cos\theta_0$ the effective field is purely transverse.
 
-The geometric phase is carried by the spinor, not by the idempotent: the density matrix is quadratic in the spinor and the phase cancels in it. The holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ whose rotation angle is twice the spinor phase, and this factor of two is the statement that the spinor representation is the double cover of the rotation group.
+The geometric phase is carried by the spinor, not by the idempotent: the density matrix is quadratic in the spinor and the phase cancels in it. The holonomy is a rotor in $\mathbb{B}_{H}$ whose rotation angle is twice the spinor phase, and this factor of two is the statement that the spinor representation is the double cover of the rotation group.
 
 ## Summary of Notation
 
@@ -277,8 +277,8 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_+$ | Hermitian (informational) subspace |
-| $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the rotation/holonomy rotors |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
+| $\mathbb{B}_{H}$ | Unit real quaternions; the rotation/holonomy rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\tilde R_\psi = -\tfrac{\hbar\omega_L}{2}i\vec e_z$ | Fixed-field Hamiltonian |
 | $\omega_L = \gamma B$ | Larmor frequency |

@@ -89,8 +89,8 @@ The pure condition is what separates the nilpotent from the rest of the zero-div
 | object | equation | where it lives | physical interpretation |
 |---|---|---|---|
 | nilpotent | $X^2=0$, $X\neq0$ | pure vector subspace, complex isotropic | one fermionic mode; null symbol; contraction limit |
-| physical null four-momentum | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P^2\neq0$ | material sector $\mathbb{M}_-$ | photon or other massless carrier |
-| state | $\tilde\Pi^2=\tilde\Pi$ | all of $\mathbb{B}$; the Hermitian ones in $\mathbb{M}_+$ | rung, vacuum, occupied level |
+| physical null four-momentum | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P^2\neq0$ | material sector $\mathbb{B}_{\Phi}$ | photon or other massless carrier |
+| state | $\tilde\Pi^2=\tilde\Pi$ | all of $\mathbb{B}$; the Hermitian ones in $\mathbb{B}_{\Psi}$ | rung, vacuum, occupied level |
 | Grassmann label | $\varkappa^2=0$ | outside $\mathbb{B}$ | odd label of a coherent state |
 
 The second row is derived in §*The Excluded Case: The Physical Null Momentum*, the third is the rung of §*The Mode*, and the fourth is the label of §*The Label*. The table is a map of the neighbourhood, not a list of nilpotents: only the first row is a nilpotent of $\mathbb{B}$.
@@ -534,7 +534,7 @@ Two entries deserve comment.
 
 **The chirality is not inner.** It is a two-valued label on the field, carried on an action by the right multiplication by $\vec e_z$ with a phase. No element of $\mathbb{B}$ carries it, and that is why an odd supercharge is never an element of $\mathbb{B}$ while the ladder is an odd element of the algebra under the inner parity.
 
-**The sector splitting is not an algebra grading.** $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation, and the product of two Hermitian elements need not be Hermitian. It grades the symmetrized product and not the associative one. It must not be used as if it were the fermionic parity.
+**The sector splitting is not an algebra grading.** $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation, and the product of two Hermitian elements need not be Hermitian. It grades the symmetrized product and not the associative one. It must not be used as if it were the fermionic parity.
 
 The two $\mathbb{Z}/2$ structures in play are therefore the inner occupation parity and the chirality label. Every element of $\mathbb{B}$ carries one value of the second, and only the zero element carries both; the ladder is odd under the first, and the supercharge is odd under the second.
 
@@ -706,7 +706,7 @@ The physical null momentum, $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$
 
 The nine interpretations use the object as a mode, a lattice null point and a limit: the Dirac hole as a difference and not a nilpotent, Jordan–Wigner as a one-site square root with the string as its branch cut, the Grassmann coherent state as the minimal odd extension, the WKB phase gradient off the cone, the graphene Dirac point as a null momentum with the nilpotent as its chiral corner, Nielsen–Ninomiya as the topological pairing of lattice zeros, the exact one-mode Wick theorem, the two-rung cap that puts the qutrit outside the algebra, and squeezing as a contraction to the cone.
 
-The two $\mathbb{Z}/2$ structures in play are the inner occupation parity, carried by $i\vec e_z$, and the chirality, a two-valued label carried on an action by the right multiplication by $\vec e_z$. The ladder is odd under the first and the supercharge under the second; no element of the algebra is odd under the second. The sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ is not an algebra grading; the number grading lives on the Fock space.
+The two $\mathbb{Z}/2$ structures in play are the inner occupation parity, carried by $i\vec e_z$, and the chirality, a two-valued label carried on an action by the right multiplication by $\vec e_z$. The ladder is odd under the first and the supercharge under the second; no element of the algebra is odd under the second. The sector splitting $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is not an algebra grading; the number grading lives on the Fock space.
 
 The classification is a map, not a derivation. It adds no physics, and it leaves open the Grassmann envelope, the BRST charge as an algebraic object, the supercharge as an element, and the naturality of the tensor product.
 
@@ -716,7 +716,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | biquaternion algebra |
 | $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2=-e_t$ |
-| $\mathbb{M}_\pm$ | Hermitian (informational) and anti-Hermitian (material) sectors |
+| $\mathbb{B}_{\Psi,\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $X$ | a nilpotent, $X^2=0$, $X\neq0$; pure when it has no scalar part |
 | $\tilde\Pi$ | a state, $\tilde\Pi^2=\tilde\Pi$ |
 | $\langle\tilde Q\rangle_{\natural}$ | the natural norm $\sum_\mu Q_\mu^2$; the element spelling is $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ |

@@ -44,9 +44,9 @@ the **complex hyperbolic space** $\mathbb{CH}^{3}$.
 
 **Theorem (the definite subspaces).** A positive definite complex subspace of $\mathbb{B}$ has complex dimension at most one, and a positive definite real subspace has real dimension at most two.
 
-*Proof.* A positive definite subspace meets $\mathbb{V}_{\mathbb{B}}$ only at the origin, because the form is negative definite there. It therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}_{\mathbb{B}}$, of real dimension two and complex dimension one, so a complex positive definite subspace has complex dimension at most one and a real one has real dimension at most two. The bound is attained by the positive lines and their realifications.
+*Proof.* A positive definite subspace meets $\mathbb{V}_{\mathbb{B}}$ only at the origin, because the form is negative definite there. It therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}\cong\mathbb{B}_{C}$, of real dimension two and complex dimension one, so a complex positive definite subspace has complex dimension at most one and a real one has real dimension at most two. The bound is attained by the positive lines and their realifications.
 
-**Remark (real positive planes that are not complex).** Over $\mathbb{R}$ the positive index is two, and the realifications of the positive lines are not the only positive definite planes: the graph of a real-linear contraction $\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$ is another. The complex classification is the one used by the operator theory, where all maps are $\mathbb{C}$-linear.
+**Remark (real positive planes that are not complex).** Over $\mathbb{R}$ the positive index is two, and the realifications of the positive lines are not the only positive definite planes: the graph of a real-linear contraction $\mathbb{B}_{C}\to\mathbb{V}_{\mathbb{B}}$ is another. The complex classification is the one used by the operator theory, where all maps are $\mathbb{C}$-linear.
 
 **Theorem (the phase action and the real scaling).** The phase circle $S^{1}$ acts on $\mathbb{B}$ by $\tilde{Q}\mapsto\lambda\tilde{Q}$, $\lvert\lambda\rvert=1$, preserving the form and each level set; the action is free on $\mathbb{B}\setminus\{0\}$, and its quotient on the positive level set is the complex hyperbolic space $\mathbb{CH}^{3}$ of positive lines. Real scaling by $s>0$ relates the levels $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=t\}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=s^{2}t\}$, so the positive region is the union of the positive levels over $t>0$. The positive level set is a principal $S^{1}$-bundle over $\mathbb{CH}^{3}\cong\mathbb{R}^{6}$, hence diffeomorphic to $S^{1}\times\mathbb{R}^{6}$.
 
@@ -66,13 +66,13 @@ which is Kähler, complete, of constant negative holomorphic sectional curvature
 
 *Proof.* This is the Bergman metric of the unit ball of $\mathbb{C}^{3}$ (*Hermitian Symmetric Spaces and the Bergman Metric*), invariant under the biholomorphisms of the ball; the isometry group of the form acts on the ball through $PU(1,3)$, which is its full biholomorphism group, so the metric is invariant under $\mathrm{U}(1,3)$. Completeness and constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde Q_1\|_E=1$.
 
-**Theorem (the complex geodesics and the real slices).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde Q_1\neq0$ is the disc $\{z\,\tilde Q_1/\|\tilde Q_1\|_E:\lvert z\rvert<1\}$. The Lorentzian slice $\mathbb{H}_{\mathbb{B}}$ meets the ball in the real unit ball of $\mathbb{R}^{3}$, on which the Bergman metric restricts to the Poincaré metric of $H^{3}$; the slice is totally geodesic and totally real in $\mathbb{CH}^{3}$.
+**Theorem (the complex geodesics and the real slices).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde Q_1\neq0$ is the disc $\{z\,\tilde Q_1/\|\tilde Q_1\|_E:\lvert z\rvert<1\}$. The Lorentzian slice $\mathbb{B}_{H}$ meets the ball in the real unit ball of $\mathbb{R}^{3}$, on which the Bergman metric restricts to the Poincaré metric of $H^{3}$; the slice is totally geodesic and totally real in $\mathbb{CH}^{3}$.
 
 *Proof.* A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:\lvert z\rvert<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde Q_1$ under an isometry because $\mathrm{U}(1,3)$ is transitive on the complex lines that carry positive vectors. On the slice the form is the interval form, and the ball meets $\mathbb{R}^{3}$ in the real unit ball, on which the Bergman metric is the hyperbolic metric of the disc model; a real subspace of maximal dimension on which the form is real is totally real, and the standard totally geodesic submanifolds of $\mathbb{CH}^{3}$ are the complex lines and the real hyperbolic spaces (*Hermitian Symmetric Spaces and the Bergman Metric*).
 
 ## The Lorentzian Slices
 
-**Theorem (the real hyperboloids).** On the Hermitian subspace $\mathbb{M}_{+}$ and on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the interval form of Lorentzian space, and with the real coordinates $q$,
+**Theorem (the real hyperboloids).** On the Hermitian subspace $\mathbb{B}_{\Psi}$ and on the real quaternion subspace $\mathbb{B}_{H}$ the general quaternionic sesquilinear form is the interval form of Lorentzian space, and with the real coordinates $q$,
 
 $$ \langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}. $$
 
@@ -104,7 +104,7 @@ The positive level set is the two-sheeted hyperboloid, whose sheet $q_t>0$ is gi
 
 **A line inside the ball and a line on its boundary.** $\mathbb{C}(e_t+\tfrac12\vec e_x)$ has $\|\tilde Q_1\|_E=\tfrac12<1$ and is a point of the ball; $\mathbb{C}(e_t+\vec e_x)$ has $\|\tilde Q_1\|_E=1$ and is a point of the boundary sphere $S^{5}$.
 
-**A real timelike point.** $\tilde{Q}=e_t+\tfrac12\vec e_x$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Lorentzian hyperboloid sheet.
+**A real timelike point.** $\tilde{Q}=e_t+\tfrac12\vec e_x$ in $\mathbb{B}_{H}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Lorentzian hyperboloid sheet.
 
 **A phase orbit.** $e_t$ and $ie_t$ are both on the unit positive level set and on the same positive line; the phase circle acts on the level set with the orbit as the fibre of the bundle over $\mathbb{CH}^{3}$.
 

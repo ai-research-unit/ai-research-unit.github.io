@@ -30,7 +30,7 @@ $$
 V(r) = -\frac{\kappa}{r}, \qquad \vec F = -\nabla V = -\frac{\kappa}{r^2}\,\vec u_r .
 $$
 
-The potential is a central scalar, $\tilde{Ξ} = V(r)e_t \in \mathbb{M}_+$, and the force is a real vector in $\mathbb{M}_-$ commuting with the position, $[\vec r,\vec F] = 0$, so the angular momentum is conserved by the mechanism of the central-scalar limit. The parameter $\kappa > 0$ for attraction; the same mathematics with $\kappa < 0$ describes repulsion, and the general conic classification below covers both signs through the energy.
+The potential is a central scalar, $\tilde{Ξ} = V(r)e_t \in \mathbb{B}_{\Psi}$, and the force is a real vector in $\mathbb{B}_{\Phi}$ commuting with the position, $[\vec r,\vec F] = 0$, so the angular momentum is conserved by the mechanism of the central-scalar limit. The parameter $\kappa > 0$ for attraction; the same mathematics with $\kappa < 0$ describes repulsion, and the general conic classification below covers both signs through the energy.
 
 The two-body problem reduces to this one-body form by separating the centre-of-mass motion, with $m$ the reduced mass and $\vec r$ the relative coordinate. For the Sun–planet system the reduced mass is close to the planetary mass and $\kappa = GM_\odot m$; the correction to the one-body picture is the small motion of the Sun about the barycentre, which the reduction removes.
 
@@ -264,7 +264,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian), material (anti-Hermitian) sectors |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian), material (anti-Hermitian) sectors |
 | $\vec r, \vec p, \vec v, \vec F$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\kappa$ | Inverse-square coupling; $\kappa = GMm$ for gravity |
 | $V(r) = -\kappa/r$ | Kepler potential; central scalar $\tilde{Ξ} = V(r)e_t$ |

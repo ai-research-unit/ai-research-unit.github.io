@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
+For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
@@ -10,7 +10,7 @@ $$
 
 the state space is the closed unit ball, purity is its boundary, and the pure states are at once the idempotents, the extreme rays of the positive cone, and the zero divisors at trace one. The Bloch ball is a canonical object of the algebra because the algebra supplies the cone.
 
-This article asks what survives for spin $1$. The question is well posed because the framework does contain spin-$1$ operators: the adjoint action of the spin algebra on the traceless part of $\mathbb{B}$ is a three-dimensional rotation algebra, and the symmetric sector of $\mathbb{B}\otimes\mathbb{B}$ carries a second realisation. Both give the same spin-$1$ operators, and the companion problem of two spin-$\tfrac12$ particles gives the idempotents that select the sector. What does not survive is the cone picture. The state space of a three-level system is eight-dimensional, the positive cone of $\mathbb{M}_+$ is four-dimensional, and no cone of a quadratic form carves out the qutrit state space. The generalisation of the Bloch ball is therefore not another cone slice; it is a genuinely convex eight-dimensional body, and the article's task is to describe it exactly and to say precisely what the algebra does and does not supply.
+This article asks what survives for spin $1$. The question is well posed because the framework does contain spin-$1$ operators: the adjoint action of the spin algebra on the traceless part of $\mathbb{B}$ is a three-dimensional rotation algebra, and the symmetric sector of $\mathbb{B}\otimes\mathbb{B}$ carries a second realisation. Both give the same spin-$1$ operators, and the companion problem of two spin-$\tfrac12$ particles gives the idempotents that select the sector. What does not survive is the cone picture. The state space of a three-level system is eight-dimensional, the positive cone of $\mathbb{B}_{\Psi}$ is four-dimensional, and no cone of a quadratic form carves out the qutrit state space. The generalisation of the Bloch ball is therefore not another cone slice; it is a genuinely convex eight-dimensional body, and the article's task is to describe it exactly and to say precisely what the algebra does and does not supply.
 
 The results are as follows. The state space of spin $1$ is the face of the two-qubit state space whose support lies in the symmetric subspace, equivalently the positive unit-trace part of the symmetric sector of $\mathbb{B}\otimes\mathbb{B}$. Its states are parametrised by a real eight-vector $\vec b$, the **generalized Bloch vector**, normalised here so that the pure states have $|\vec b|=1$; the state space is the intersection of the unit ball with the region $\det\rho\ge0$, whose boundary is a cubic hypersurface. The unit ball is necessary but not sufficient, and the largest ball contained in the state space — the **generalized Bloch ball** — has radius exactly $\tfrac{1}{2}$. The pure states form a four-real-dimensional manifold, the complex projective plane $\mathbb{CP}^2$, which is a proper subset of the seven-sphere $|\vec b|=1$; the coherent (or classical) states form a two-sphere inside it, and they are exactly the symmetrised products of two fundamental idempotents. A second three-ball, the **polarization ball** $|\langle\vec F\rangle|\le1$, is the shadow of the state space on the spin directions; it is not the state space, and confusing the two is the main trap in the geometry of a three-level system.
 
@@ -20,13 +20,13 @@ Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices h
 
 ## The Qubit Bloch Ball as the Reference Point
 
-It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$; its biquaternion norm is
+It is worth stating the reference result in the form that will be generalised. In $\mathbb{B}_{\Psi}$, an element is written $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
 \langle\tilde R_\psi\rangle_{\natural}=c^2 r_t^2-|\vec r_\psi|^2 ,
 $$
 
-of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde R_\psi\rangle_{\natural}\ge0$ with $c r_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde R_\psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
+of signature $(1,3)$, and the positive elements of $\mathbb{B}_{\Psi}$ are exactly the elements of the closed future cone, $\langle\tilde R_\psi\rangle_{\natural}\ge0$ with $c r_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde R_\psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec r_\psi,\qquad |\vec r|^2\le1 ,
@@ -264,9 +264,9 @@ For the qubit the two coincide, because the Bloch ball is at once the state spac
 
 **Supplies.** The spin-$1$ operators, as the adjoint action on the traceless part of $\mathbb{B}$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the idempotent $\tilde\Pi_{\mathrm{sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary trace formula.
 
-**Does not supply.** A cone whose trace-one slice is the state space. The qubit state space was the slice of the future cone of the biquaternion norm on $\mathbb{M}_+$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{M}_+$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic biquaternion norm has no spin-$1$ analogue.
+**Does not supply.** A cone whose trace-one slice is the state space. The qubit state space was the slice of the future cone of the biquaternion norm on $\mathbb{B}_{\Psi}$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{B}_{\Psi}$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic biquaternion norm has no spin-$1$ analogue.
 
-**The reason.** This is not an accident of the algebra but a consequence of its module structure. The Hermitian subspace $\mathbb{M}_+$ is the state space of the fundamental module, and the framework's positivity cone is the cone of that module. A three-level system is not a module of $\mathbb{B}$; it is a sector of the tensor square of two fundamental modules, obtained by a projector. The geometry of a projector's range is not the geometry of the algebra's own cone, and the difference is exactly the loss of the ball.
+**The reason.** This is not an accident of the algebra but a consequence of its module structure. The Hermitian subspace $\mathbb{B}_{\Psi}$ is the state space of the fundamental module, and the framework's positivity cone is the cone of that module. A three-level system is not a module of $\mathbb{B}$; it is a sector of the tensor square of two fundamental modules, obtained by a projector. The geometry of a projector's range is not the geometry of the algebra's own cone, and the difference is exactly the loss of the ball.
 
 ## Summary
 
@@ -289,7 +289,7 @@ The article established the following.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
 | $\langle\tilde R_\psi\rangle_{\natural}=c^2 r_t^2-\lvert\vec r_\psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |

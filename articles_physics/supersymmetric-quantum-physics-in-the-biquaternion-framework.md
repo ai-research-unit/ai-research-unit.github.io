@@ -16,7 +16,7 @@ This article argues that the biquaternion framework is the natural home of that 
 
 **The two Dirac equations.** The corpus carries two forms of the Dirac equation, and this article keeps them apart. The **one-sided** equation is the chiral pair: both gradients act from the left, and the mass pairs the two values. It is the definition, and it is the form from which the supersymmetry is read. The **two-sided** equation is a single equation on an element $F\in\mathbb{B}$ in which the derivative acts from the left and the mass from the right through the chirality cell; it is the form in which the two-sided operator algebra acts by cells, and its mass term is antilinear in $F$. §*The One-Sided and the Two-Sided Equation* below splits the two, and the rest of the article uses the one-sided pair.
 
-The article develops the correspondence in both directions. It first states the standard supersymmetric quantum physics and derives the partner potentials; it then identifies the biquaternionic first-order operator with the supercharge and the pair with the superalgebra; it exhibits the 1+1-dimensional realisation, where the superpotential is a position-dependent mass and the two partner potentials are the two values of a Hermitian element of $\mathbb{M}_+$; it reads the Dirac oscillator as the exactly solvable relativistic realisation of the partner structure; and it identifies the Witten index with the imbalance of the zero modes between the two values. The quantised theory, the superfield formalism and the bona fide supersymmetric field theories are not treated; the subject here is the quantum physics, in the single-particle sense. The general graded-algebra framework behind the supercharges, the graded commutator and the boundary of what the biquaternion algebra supplies rather than imports is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the interpretation of the parity as the grading of the ambient algebra is *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*.
+The article develops the correspondence in both directions. It first states the standard supersymmetric quantum physics and derives the partner potentials; it then identifies the biquaternionic first-order operator with the supercharge and the pair with the superalgebra; it exhibits the 1+1-dimensional realisation, where the superpotential is a position-dependent mass and the two partner potentials are the two values of a Hermitian element of $\mathbb{B}_{\Psi}$; it reads the Dirac oscillator as the exactly solvable relativistic realisation of the partner structure; and it identifies the Witten index with the imbalance of the zero modes between the two values. The quantised theory, the superfield formalism and the bona fide supersymmetric field theories are not treated; the subject here is the quantum physics, in the single-particle sense. The general graded-algebra framework behind the supercharges, the graded commutator and the boundary of what the biquaternion algebra supplies rather than imports is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the interpretation of the parity as the grading of the ambient algebra is *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form*.
 
 ## The Frame, the Values and the Equation
 
@@ -171,9 +171,9 @@ Both terms of $\tilde Q$ are Hermitian: the derivative and $\vec e_y$ each contr
 Two features of this square are the algebraic content of the section.
 
 - The **central part** is $(-\partial^2/\partial R_x^2+W^2)e_t$: it is the common Hamiltonian of the two values, and it is central because the cross terms of the two factors cancel exactly as in the free case.
-- The **splitting** is $-\frac{dW}{dx}(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = i^2\vec e_z^2 = +e_t$, an element of $\mathbb{M}_+$ with the two values $\pm1$. The two values of the square — the two partner potentials — are therefore $-\partial^2/\partial R_x^2+W^2\mp dW/dx$, and each belongs to one of the two values of the subscript.
+- The **splitting** is $-\frac{dW}{dx}(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = i^2\vec e_z^2 = +e_t$, an element of $\mathbb{B}_{\Psi}$ with the two values $\pm1$. The two values of the square — the two partner potentials — are therefore $-\partial^2/\partial R_x^2+W^2\mp dW/dx$, and each belongs to one of the two values of the subscript.
 
-The superpotential is thus the coefficient of the mass-like term, the partner splitting is the value of a Hermitian element, and the two partner Hamiltonians are the two values of a single algebra-valued square. This is the cleanest sense in which the biquaternion framework **contains** supersymmetric quantum physics: the partner structure is the two values of the $\mathbb{M}_+$ remainder of a first-order operator's square.
+The superpotential is thus the coefficient of the mass-like term, the partner splitting is the value of a Hermitian element, and the two partner Hamiltonians are the two values of a single algebra-valued square. This is the cleanest sense in which the biquaternion framework **contains** supersymmetric quantum physics: the partner structure is the two values of the $\mathbb{B}_{\Psi}$ remainder of a first-order operator's square.
 
 ## The Dirac Oscillator as a Supersymmetric System
 
@@ -309,7 +309,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, with $i^2=-1$ |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the subscript; $L$ is the minus value, $R$ the plus value |
 | $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The chirality cell of the frame, whose two values the subscript takes |
@@ -329,7 +329,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $(-1)^F$ | Grading operator |
 | $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
 | $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
-| $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
+| $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{B}_{\Psi}$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |
 | $S=\sum_k L_{\mathrm{orb},k}\tilde S_k$ | Spin–orbit element of the oscillator, with the two values $\hbar l$ and $-\hbar(l+1)$ |
 ## Further Reading

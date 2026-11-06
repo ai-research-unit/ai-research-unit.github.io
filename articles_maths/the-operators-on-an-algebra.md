@@ -331,7 +331,7 @@ $$
 
 the automorphism group being the inner automorphisms modulo the scalars by Skolem–Noether.
 
-**The biquaternions over $\mathbb{R}$.** Reading the same set over $\mathbb{R}$ changes the ambient space to $M_8(\mathbb{R})$, of dimension $64$, while the centre becomes the two-dimensional $\mathbb{C}_{\mathbb{B}}$, so the formula gives $8 - 2 = 6$ and
+**The biquaternions over $\mathbb{R}$.** Reading the same set over $\mathbb{R}$ changes the ambient space to $M_8(\mathbb{R})$, of dimension $64$, while the centre becomes the two-dimensional $\mathbb{B}_{C}$, so the formula gives $8 - 2 = 6$ and
 
 $$
 \operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})_{\mathbb{R}},

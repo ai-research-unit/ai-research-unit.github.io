@@ -97,7 +97,7 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma^{*}=-[\tilde Q_1,\tilde Q_2]_\varsigma ,
 $$
 
-so the bracket is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{M}_-$ into the anti-Hermitian half.
+so the bracket is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}_{\Phi}$ into the anti-Hermitian half.
 
 **Proof.** The conjugate of a product reverses it, $(\tilde Q_1\star\tilde Q_2)^{*}=\tilde Q_2\star\tilde Q_1$, by the anti-multiplicativity of the involution; hence $[\tilde Q_1,\tilde Q_2]_\varsigma^{*}=[\tilde Q_2,\tilde Q_1]_\varsigma=-[\tilde Q_1,\tilde Q_2]_\varsigma$, which is the proposition of *The Sesquilinear Commutator*, §*The Values in the Skew-Hermitian Part*.
 
@@ -105,7 +105,7 @@ so the bracket is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{M}_-$ into the ant
 
 ### The Two Halves
 
-**Theorem (the bracket on the two halves).** For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$ and $\tilde Q_3,\tilde Q_4\in\mathbb{M}_-$,
+**Theorem (the bracket on the two halves).** For $\tilde H_1,\tilde H_2\in\mathbb{B}_{\Psi}$ and $\tilde Q_3,\tilde Q_4\in\mathbb{B}_{\Phi}$,
 
 $$
 [\tilde H_1,\tilde H_2]_\varsigma=[\tilde H_1,\tilde H_2] , \qquad [\tilde Q_3,\tilde Q_4]_\varsigma=-[\tilde Q_3,\tilde Q_4] , \qquad [\tilde Q_3,\tilde H_1]_\varsigma=\tilde Q_3\tilde H_1+\tilde H_1\tilde Q_3 ,
@@ -115,9 +115,9 @@ where the brackets on the right are the ordinary commutator of the algebra.
 
 **Proof.** For Hermitian $\tilde H_1$ the derived operation is the algebra product in both slots, $\tilde H_1\star\tilde H_2=\tilde H_1\tilde H_2$, so the bracket is the ordinary commutator; for skew-Hermitian $\tilde Q_3$ the involution contributes a sign, $\tilde Q_3^{*}=-\tilde Q_3$, so $[\tilde Q_3,\tilde Q_4]_\varsigma=-(\tilde Q_3\tilde Q_4-\tilde Q_4\tilde Q_3)$; and for the mixed pair $[\tilde Q_3,\tilde H_1]_\varsigma=\tilde Q_3\tilde H_1^{*}-\tilde H_1\tilde Q_3^{*}=\tilde Q_3\tilde H_1+\tilde H_1\tilde Q_3$. This is the theorem of *The Sesquilinear Commutator*, §*The Two Halves*.
 
-**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the $*$-unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
+**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{B}_{\Phi}$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the $*$-unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
 
-**Proof.** The theorem gives $[\tilde Q_3,\tilde Q_4]_\varsigma=-[\tilde Q_3,\tilde Q_4]$ on $\mathbb{M}_-$, and the commutator of an associative algebra is a Lie bracket; the sign carries through the three terms of the Jacobi identity.
+**Proof.** The theorem gives $[\tilde Q_3,\tilde Q_4]_\varsigma=-[\tilde Q_3,\tilde Q_4]$ on $\mathbb{B}_{\Phi}$, and the commutator of an associative algebra is a Lie bracket; the sign carries through the three terms of the Jacobi identity.
 
 ### The Failure of the Jacobi Identity
 
@@ -195,7 +195,7 @@ $$
 (\tilde Q_1\circ\tilde Q_2)^{*}=\tilde Q_1\circ\tilde Q_2 ,
 $$
 
-so the symmetrised product is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{M}_+$ into the Hermitian half; its scalar part is the real part of the Hermitian form,
+so the symmetrised product is a map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}_{\Psi}$ into the Hermitian half; its scalar part is the real part of the Hermitian form,
 
 $$
 \mathrm{Sc}(\tilde Q_1\circ\tilde Q_2)=\mathrm{Re}\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}=\mathrm{Re}\,\langle\tilde Q_1,\tilde Q_2\rangle_* .
@@ -207,13 +207,13 @@ $$
 
 ### The Hermitian Half
 
-**Theorem (the symmetrisation on the Hermitian half).** For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$,
+**Theorem (the symmetrisation on the Hermitian half).** For $\tilde H_1,\tilde H_2\in\mathbb{B}_{\Psi}$,
 
 $$
 \tilde H_1\circ\tilde H_2=\tfrac12\bigl(\tilde H_1\tilde H_2+\tilde H_2\tilde H_1\bigr) ,
 $$
 
-the plain symmetrisation, and with this product $\mathbb{M}_+$ is a commutative Jordan algebra over $\mathbb{R}$, with the Jordan identity
+the plain symmetrisation, and with this product $\mathbb{B}_{\Psi}$ is a commutative Jordan algebra over $\mathbb{R}$, with the Jordan identity
 
 $$
 \boxed{\;(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ\bigl(\tilde H_2\circ(\tilde H_1\circ\tilde H_1)\bigr)\;}.
@@ -289,8 +289,8 @@ The bilinear commutator $\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$ and the bili
 |---|---|---|---|
 | $\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$ | bilinear | holds on $\mathbb{B}$ | not asked |
 | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | bilinear | not asked | holds on $\mathbb{B}$ |
-| $[\tilde Q_1,\tilde Q_2]_\varsigma$ | sesquilinear | fails; holds on $\mathbb{M}_-$ | not asked |
-| $\tilde Q_1\circ\tilde Q_2$ | sesquilinear | not asked | holds on $\mathbb{M}_+$, fails off it |
+| $[\tilde Q_1,\tilde Q_2]_\varsigma$ | sesquilinear | fails; holds on $\mathbb{B}_{\Phi}$ | not asked |
+| $\tilde Q_1\circ\tilde Q_2$ | sesquilinear | not asked | holds on $\mathbb{B}_{\Psi}$, fails off it |
 
 **Remark.** The table is the biquaternion form of the general dichotomy: the bilinear operations are $\mathbb{C}$-bilinear and carry their identities everywhere, the sesquilinear operations are $\mathbb{R}$-bilinear, and their identities survive exactly on the half where the derived operation coincides with the algebra product. On the Hermitian half the four rows collapse to two, the sesquilinear operations agreeing with the bilinear ones there; the failure of the Jordan identity of §*The Failure of the Jordan Identity* uses the element $\tilde Q_3$ off the half, and the failure of the Jacobi identity of §*The Failure of the Jacobi Identity* uses the symmetrised rule that the outer brackets obey on the skew-Hermitian values.
 
@@ -310,8 +310,8 @@ The symmetrised product is the polarisation of the square, takes its values in t
 | $\tilde Q_1\circ\tilde Q_1=\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ | the diagonal is the square |
 | $\mathbb{R}=\mathbb{C}^{\varsigma}$ | the fixed field, the ring of scalars of the two operations |
 | $[\tilde H_1,\tilde H_2]_\varsigma=[\tilde H_1,\tilde H_2]$ | the bracket on the Hermitian half |
-| $[\tilde Q_1,\tilde Q_2]_\varsigma=-[\tilde Q_1,\tilde Q_2]$, $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ | the bracket on the skew-Hermitian half, the $*$-unitary Lie algebra |
-| $(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ(\tilde H_2\circ(\tilde H_1\circ\tilde H_1))$ | the Jordan identity, on $\mathbb{M}_+$ |
+| $[\tilde Q_1,\tilde Q_2]_\varsigma=-[\tilde Q_1,\tilde Q_2]$, $\tilde Q_1,\tilde Q_2\in\mathbb{B}_{\Phi}$ | the bracket on the skew-Hermitian half, the $*$-unitary Lie algebra |
+| $(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ(\tilde H_2\circ(\tilde H_1\circ\tilde H_1))$ | the Jordan identity, on $\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z),i\vec e_x$ | the Hermitian triple whose Jacobi sum is $2\vec e_y$ |
 | $\tfrac12(i\vec e_x-\vec e_y),\tfrac12(e_t-i\vec e_z)$ | the pair whose Jordan identity fails, $\tfrac{i}{4}\vec e_x$ against $0$ |
 | $e_\mu\circ e_\nu=\delta_{\mu\nu}e_t$ | the symmetrised product on the basis |

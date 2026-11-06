@@ -4,19 +4,19 @@
 
 The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $r'_t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
 
-This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real one.
+This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{B}_{H}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real one.
 
-This interpretation explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{H}_{\mathbb{B}}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{H}_{\mathbb{B}}$ is easier.
+This interpretation explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{B}_{H}$ is better behaved than $\mathbb{B}_{\Phi}$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{B}_{H}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{B}_{H}$ is easier.
 
-The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$, and the material sector $\mathbb{M}_-$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{H}_{\mathbb{B}}$ is developed, with the properties of the two subspaces compared. Then the interpretation is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the interpretation.
+The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{B}_{H}$, the informational sector $\mathbb{B}_{\Psi}$, and the material sector $\mathbb{B}_{\Phi}$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{B}_{H}$ is developed, with the properties of the two subspaces compared. Then the interpretation is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the interpretation.
 
 Throughout, $c$ denotes the speed of light in the medium, and the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
 ## The Three Subspaces of $\mathbb{B}$
 
-The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
+The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the two-dimensional centre $\mathbb{B}_{C}$, the six-dimensional vector subspace $\mathbb{B}_{V}$, and the four four-dimensional ones — the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the informational sector $\mathbb{B}_{\Psi}$ and the material sector $\mathbb{B}_{\Phi}$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
 
-**The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
+**The quaternion subspace $\mathbb{B}_{H}$.** An element has the form
 
 $$
 \tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (c r_t)\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
@@ -30,7 +30,7 @@ $$
 
 has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.
 
-**The material sector $\mathbb{M}_-$.** An element has the form
+**The material sector $\mathbb{B}_{\Phi}$.** An element has the form
 
 $$
 \tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
@@ -44,7 +44,7 @@ $$
 
 has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
 
-**The informational sector $\mathbb{M}_+$.** An element has the form
+**The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
 $$
 \tilde R_\psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
@@ -56,7 +56,7 @@ $$
 \langle\tilde R_\psi\rangle_{\natural} = c^2 r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
 $$
 
-has signature $(1, 3)$, the mirror image of the signature on $\mathbb{M}_-$.
+has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
 
 The three subspaces are distinct, and each has its own algebraic and analytic character. The specific form of the differential operators on each subspace — the gradient, the d'Alembertian, and the square of the gradient — has been developed in the companion articles on the biquaternion analysis.
 
@@ -65,7 +65,7 @@ The three subspaces are distinct, and each has its own algebraic and analytic ch
 In relativistic field theory, a point of the material sector is written
 
 $$
-\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{M}_-,
+\tilde R_\varphi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
 $$
 
 where $r'_t = t'$ is the time coordinate and $(r_x,r_y,r_z)=(x,y,z)$ the spatial ones, so that the four coefficients are $i c r'_t, r_x, r_y, r_z$.
@@ -93,12 +93,12 @@ with **all four coefficients real**. In the notation of the quaternion subspace 
 So the standard Wick rotation is the identification
 
 $$
-\boxed{\;\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (i c r'_t, r_x, r_y, r_z) \;\longmapsto\; (c\tau, r_x, r_y, r_z)\;},
+\boxed{\;\mathbb{B}_{\Phi} \;\longrightarrow\; \mathbb{B}_{H}, \qquad (i c r'_t, r_x, r_y, r_z) \;\longmapsto\; (c\tau, r_x, r_y, r_z)\;},
 $$
 
 obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.
 
-## The Trick as a Transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$
+## The Trick as a Transfer from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$
 
 The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral
 
@@ -114,13 +114,13 @@ $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{M}_-$ is transferred to a field $\xi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $i c r'_t \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is transferred to a field $\xi_\mathbb{H}$ on $\mathbb{B}_{H}$ by the relabeling $i c r'_t \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{B}_{\Phi}$,
 
 $$
-\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
+\Box_{\mathbb{B}_{\Phi}} = -\frac{1}{c^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
 $$
 
-becomes the elliptic d'Alembertian on $\mathbb{H}_{\mathbb{B}}$,
+becomes the elliptic d'Alembertian on $\mathbb{B}_{H}$,
 
 $$
 \boxed{\;\Box_{\mathbb{H}} = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta\;}.
@@ -128,13 +128,13 @@ $$
 
 The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.
 
-So the Wick rotation is a **trick** in the strict sense: it is a change of variable that is useful for some problems and not for others, and it does not correspond to a physical transformation. Its biquaternion content is that the material sector $\mathbb{M}_-$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are two four-dimensional subspaces of the same algebra, related by relabeling the imaginary first coefficient as a real one.
+So the Wick rotation is a **trick** in the strict sense: it is a change of variable that is useful for some problems and not for others, and it does not correspond to a physical transformation. Its biquaternion content is that the material sector $\mathbb{B}_{\Phi}$ and the quaternion subspace $\mathbb{B}_{H}$ are two four-dimensional subspaces of the same algebra, related by relabeling the imaginary first coefficient as a real one.
 
-## Why the Transfer Works: the Properties of $\mathbb{H}_{\mathbb{B}}$
+## Why the Transfer Works: the Properties of $\mathbb{B}_{H}$
 
-The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$ in every relevant respect.
+The reason the transfer is useful is that $\mathbb{B}_{H}$ is better behaved than $\mathbb{B}_{\Phi}$ in every relevant respect.
 
-| Property | $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_-$ |
+| Property | $\mathbb{B}_{H}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
 | d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$ (hyperbolic) |
@@ -143,23 +143,23 @@ The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better be
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
 | Analytic theory | Fueter quaternionic analysis | Lorentzian Clifford analysis |
 
-The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{H}_{\mathbb{B}}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.
+The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{B}_{H}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.
 
-The transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ therefore replaces a problem in a hyperbolic setting (with an indefinite quadratic form) by a problem in an elliptic setting (with a positive-definite quadratic form). The elliptic problem is easier: it has fewer pathologies, it has more structure, and its solutions behave better at infinity.
+The transfer from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$ therefore replaces a problem in a hyperbolic setting (with an indefinite quadratic form) by a problem in an elliptic setting (with a positive-definite quadratic form). The elliptic problem is easier: it has fewer pathologies, it has more structure, and its solutions behave better at infinity.
 
 ## Why the Transfer Sometimes Fails
 
-The same transfer also destroys part of the structure of the original problem. The Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering of events, the phase $\exp(iS/\hbar)$ with its specific oscillation — is not preserved by the transfer to $\mathbb{H}_{\mathbb{B}}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears (there are no zero divisors on $\mathbb{H}_{\mathbb{B}}$).
+The same transfer also destroys part of the structure of the original problem. The Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering of events, the phase $\exp(iS/\hbar)$ with its specific oscillation — is not preserved by the transfer to $\mathbb{B}_{H}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears (there are no zero divisors on $\mathbb{B}_{H}$).
 
 When the physics of the problem depends on this Lorentzian structure, the transfer is fatal. The transferred problem is then not equivalent to the original one; it is a different problem, with a different physical content. This is the reason the Wick rotation sometimes fails: not because the calculation is technically difficult, but because the transfer changes the physics.
 
-The two facts — that the transfer is useful (because $\mathbb{H}_{\mathbb{B}}$ is better behaved) and that the transfer changes the physics (because the Lorentzian structure is lost) — are two sides of the same coin. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved precisely because it has given up the Lorentzian structure. So the usefulness of the trick and the possibility of its failure are the same fact, seen from two sides.
+The two facts — that the transfer is useful (because $\mathbb{B}_{H}$ is better behaved) and that the transfer changes the physics (because the Lorentzian structure is lost) — are two sides of the same coin. The subspace $\mathbb{B}_{H}$ is better behaved precisely because it has given up the Lorentzian structure. So the usefulness of the trick and the possibility of its failure are the same fact, seen from two sides.
 
 ## A Classification: Which Applications Transfer, Which Resist
 
 The interpretation above suggests a classification of the applications of the Wick rotation by whether the physics of the problem depends on the Lorentzian structure or not.
 
-**Applications that are essentially insensitive to the Lorentzian structure** (and therefore transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$):
+**Applications that are essentially insensitive to the Lorentzian structure** (and therefore transfer harmlessly to $\mathbb{B}_{H}$):
 
 - The Euclidean path integral, in its role as a generating functional of correlation functions.
 - Finite-temperature field theory, in its equilibrium aspects: the Matsubara formalism and the thermal partition function.
@@ -167,7 +167,7 @@ The interpretation above suggests a classification of the applications of the Wi
 - The correspondence between quantum field theory and statistical mechanics, as a formal identity of partition functions.
 - Stochastic quantization, as a stochastic process on the Euclidean sector.
 
-**Applications that are essentially sensitive to the Lorentzian structure** (and therefore transfer problematically to $\mathbb{H}_{\mathbb{B}}$):
+**Applications that are essentially sensitive to the Lorentzian structure** (and therefore transfer problematically to $\mathbb{B}_{H}$):
 
 - Real-time dynamics: transport coefficients, relaxation, response functions.
 - Massless-particle physics, where the light cone is essential.
@@ -178,24 +178,24 @@ The interpretation above suggests a classification of the applications of the Wi
 
 **The exactness is one subgroup at a time.** The relabeling $i c r'_t\mapsto c\tau$ is exact on each one-parameter subgroup taken alone: on a translation in $r'_t$ it is the analytic continuation $r'_t\mapsto-i\tau$; on the central phase it turns the oscillation into a real exponential; on a spatial rotation about a fixed axis it does not act at all, because the rotation lives in the spatial units. It fails when two non-commuting factors are present, because the continuation of a product is not the product of the continuations. The polar word $e^{i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}/2}e^{\theta\vec u_{\mathrm r}/2}$ is the example: the boost continues to a rotation and the rotor stays a rotation, but the continued product is not the product of the two continued factors. That is the BCH defect of *The Exponential Word and Its Boundary*.
 
-The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
+The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{B}_{H}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
 
-The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ accounts for this pattern.
+The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$ accounts for this pattern.
 
 ## Status of the Reading
 
-The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ is an **interpretation**, not an established result. What is established is the following.
+The interpretation of the Wick rotation as a transfer from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$ is an **interpretation**, not an established result. What is established is the following.
 
-- The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$. Three of them — $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ — are involved in the Wick rotation.
+- The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{\Phi}$. Three of them — $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ — are involved in the Wick rotation.
 - The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.
-- The standard Wick rotation acts on a point of $\mathbb{M}_-$ by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$, leaving the spatial coefficients unchanged.
-- The resulting point lies in $\mathbb{H}_{\mathbb{B}}$.
+- The standard Wick rotation acts on a point of $\mathbb{B}_{\Phi}$ by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$, leaving the spatial coefficients unchanged.
+- The resulting point lies in $\mathbb{B}_{H}$.
 
 What is an **interpretation** is the following.
 
-- That the standard Wick rotation is best read as the identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$.
-- That the usefulness of the trick is explained by the better-behaved character of $\mathbb{H}_{\mathbb{B}}$.
-- That the failure of the trick is explained by the loss of the Lorentzian structure of $\mathbb{M}_-$ under the transfer.
+- That the standard Wick rotation is best read as the identification of $\mathbb{B}_{\Phi}$ with $\mathbb{B}_{H}$.
+- That the usefulness of the trick is explained by the better-behaved character of $\mathbb{B}_{H}$.
+- That the failure of the trick is explained by the loss of the Lorentzian structure of $\mathbb{B}_{\Phi}$ under the transfer.
 - That the split of applications into "transfer harmlessly" and "resist" follows from the structural properties of the two subspaces.
 
 The interpretation is consistent with the known behavior of the Wick rotation. It is not derived from established physics, and it does not constitute a prediction of new physics. It is a structural interpretation that clarifies the operation and organizes the applications.
@@ -204,33 +204,33 @@ The interpretation is consistent with the known behavior of the Wick rotation. I
 
 The standard Wick rotation is the analytic continuation $r'_t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
 
-In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.
+In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than the material sector $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic d'Alembertian, and a compact symmetry group. The Wick rotation is useful because the transferred problem on $\mathbb{H}_{\mathbb{B}}$ is easier than the original problem on $\mathbb{M}_-$.
+The quaternion subspace $\mathbb{B}_{H}$ is better behaved than the material sector $\mathbb{B}_{\Phi}$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic d'Alembertian, and a compact symmetry group. The Wick rotation is useful because the transferred problem on $\mathbb{B}_{H}$ is easier than the original problem on $\mathbb{B}_{\Phi}$.
 
-The same transfer destroys the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.
+The same transfer destroys the Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.
 
-The interpretation organizes the applications into a split between those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
+The interpretation organizes the applications into a split between those that transfer harmlessly to $\mathbb{B}_{H}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$ | The centre, the vector subspace, and the remaining four-dimensional subspace; not involved in the Wick rotation |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
-| $\mathbb{M}_+$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
-| $\mathbb{M}_-$ | Material sector: signature $(3, 1)$, hyperbolic |
-| $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{iH}$ | The centre, the vector subspace, and the remaining four-dimensional subspace; not involved in the Wick rotation |
+| $\mathbb{B}_{H}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
+| $\mathbb{B}_{\Psi}$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
+| $\mathbb{B}_{\Phi}$ | Material sector: signature $(3, 1)$, hyperbolic |
+| $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{B}_{H}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
 | $(c r_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = c r_t$ and $(q_x,q_y,q_z) = (x,y,z)$ |
-| $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $r'_t = t'$ |
-| $r_t, r'_x, r'_y, r'_z$ | Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $r_t = t$ |
+| $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $r'_t = t'$ |
+| $r_t, r'_x, r'_y, r'_z$ | Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $r_t = t$ |
 | $c$ | Speed of light in the medium |
-| $r'_t$ | Time coordinate on $\mathbb{M}_-$ |
-| $\tau$ | Euclidean coordinate on $\mathbb{H}_{\mathbb{B}}$ |
-| $i c r'_t$ | Imaginary time coefficient on $\mathbb{M}_-$ |
+| $r'_t$ | Time coordinate on $\mathbb{B}_{\Phi}$ |
+| $\tau$ | Euclidean coordinate on $\mathbb{B}_{H}$ |
+| $i c r'_t$ | Imaginary time coefficient on $\mathbb{B}_{\Phi}$ |
 | $r'_t \to -i\tau$ | Standard Wick rotation |
-| $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ | The transfer as an identification of subspaces |
+| $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ | The transfer as an identification of subspaces |
 
 ## Further Reading
 
@@ -240,9 +240,9 @@ The interpretation organizes the applications into a split between those that tr
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), for the finite-temperature imaginary-time formalism.
 - M. Creutz, *Quarks, Gluons and Lattices* (Cambridge, 1983), for lattice gauge theory.
 - A. M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for instantons and non-perturbative effects.
-- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{H}_{\mathbb{B}}$.
+- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{B}_{H}$.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 18 and 33, for the complex structure of spacetime.
-- V. V. Kassandrov, "Urusovskii's Geometry, Algebrodynamics and Universal Quantum-like Kinematics in Complex Space", arXiv:1209.2377 [physics.gen-ph] (2012), for an arrival at the same two-subspace split from kinematics, with the priority reversed: there the physical half is $\mathbb{H}_{\mathbb{B}}$ and the Lorentzian sector is the derived one, which is the reverse of this article's reading. The comparison is drawn in *The SO(4) Route to the Euclidean Frame*.
+- V. V. Kassandrov, "Urusovskii's Geometry, Algebrodynamics and Universal Quantum-like Kinematics in Complex Space", arXiv:1209.2377 [physics.gen-ph] (2012), for an arrival at the same two-subspace split from kinematics, with the priority reversed: there the physical half is $\mathbb{B}_{H}$ and the Lorentzian sector is the derived one, which is the reverse of this article's reading. The comparison is drawn in *The SO(4) Route to the Euclidean Frame*.
 
 ---
 

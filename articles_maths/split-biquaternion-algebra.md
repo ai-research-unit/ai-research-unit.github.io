@@ -306,7 +306,7 @@ $$
 \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
 $$
 
-This is the **Hermitian subspace** $\mathbb{M}_+$, a real vector space of dimension 4. It consists of split biquaternions with real scalar part and purely split-imaginary vector part. It is not a subalgebra of $\mathbb{B}_{\mathrm{spl}}$.
+This is the **Hermitian subspace** $\mathbb{B}_{\Psi}$, a real vector space of dimension 4. It consists of split biquaternions with real scalar part and purely split-imaginary vector part. It is not a subalgebra of $\mathbb{B}_{\mathrm{spl}}$.
 
 ### The Anti-Hermitian Subspace
 
@@ -328,7 +328,7 @@ $$
 \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad r_0, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-This is the **anti-Hermitian subspace** $\mathbb{M}_-$, a real vector space of dimension 4. It consists of split biquaternions with purely split-imaginary scalar part and real vector part. It is not a subalgebra of $\mathbb{B}_{\mathrm{spl}}$.
+This is the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$, a real vector space of dimension 4. It consists of split biquaternions with purely split-imaginary scalar part and real vector part. It is not a subalgebra of $\mathbb{B}_{\mathrm{spl}}$.
 
 ## Quaternion Decomposition
 
@@ -388,10 +388,10 @@ is an algebra isomorphism, and it is the reason the algebra is semisimple.
 
 ## Hermitian Decomposition
 
-The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are the two eigenspaces of the Hermitian conjugation ${}^{*}$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
+The Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ are the two eigenspaces of the Hermitian conjugation ${}^{*}$. Every split biquaternion decomposes uniquely as the sum of a Hermitian part and an anti-Hermitian part:
 
 $$
-\tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{M}_+, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{M}_-.
+\tilde{Q} = \tilde{Q}_{\mathrm{H}} + \tilde{Q}_{\mathrm{A}}, \qquad \tilde{Q}_{\mathrm{H}} \in \mathbb{B}_{\Psi}, \quad \tilde{Q}_{\mathrm{A}} \in \mathbb{B}_{\Phi}.
 $$
 
 The two components are obtained from the Hermitian conjugation:
@@ -403,16 +403,16 @@ $$
 This gives the direct sum decomposition
 
 $$
-\mathbb{B}_{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi},
 $$
 
-where $\mathbb{M}_+$ is the Hermitian subspace and $\mathbb{M}_-$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4.
+where $\mathbb{B}_{\Psi}$ is the Hermitian subspace and $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace. Both are real vector spaces of dimension 4.
 
 ## Relation Between the Three Decompositions
 
-The quaternion decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation $\bar{\cdot}$, and the Hermitian decomposition is associated with the Hermitian conjugation ${}^{*}$.
+The quaternion decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ are two different decompositions of the same eight-dimensional real vector space. They are associated with two different involutions: the quaternion decomposition is associated with the split complex conjugation $\bar{\cdot}$, and the Hermitian decomposition is associated with the Hermitian conjugation ${}^{*}$.
 
-The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{M}_+$ to $\mathbb{M}_-$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_{1,2}$, and it is the one that reveals the semisimple structure of the algebra.
+The two decompositions are related by multiplication by the split complex unit $j$, which maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and vice versa. The idempotent decomposition is a third decomposition, associated with the idempotents $\tilde\Pi_{1,2}$, and it is the one that reveals the semisimple structure of the algebra.
 
 ## The Lie Algebra Structure
 
@@ -432,7 +432,7 @@ The algebra is isomorphic to the direct sum $\mathbb{H} \oplus \mathbb{H}$ via t
 
 There are four natural conjugations: quaternion conjugation, split complex conjugation, Hermitian conjugation, and anti-Hermitian conjugation. Each has a fixed-point set, which is a four-dimensional real subspace (or two-dimensional in the case of the split complex subspace). The four subspaces are the split complex subspace, the quaternion subspace, the Hermitian subspace, and the anti-Hermitian subspace.
 
-There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{M}_+ \oplus \mathbb{M}_-$.
+There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$.
 
 The four forms of the layer — the plain, the quaternionic, the Hermitian and the Krein — the four norms they carry, and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of units are also established.
 
@@ -458,8 +458,8 @@ The four forms of the layer — the plain, the quaternionic, the Hermitian and t
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace |
-| $\mathbb{M}_+$ | Hermitian subspace |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace |
 | $\tilde{Q}_{\mathrm{H}}, \tilde{Q}_{\mathrm{A}}$ | Hermitian and anti-Hermitian parts of $\tilde{Q}$ |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components of $\tilde{Q}$, in $\mathbb{H}$ |
 | $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | Idempotent ideals |

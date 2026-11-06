@@ -149,7 +149,7 @@ The two factors are the two chiral halves of the complexified rotation group; in
 The Lorentz group is selected by the algebra's real structure. The **anti-Hermitian slice** is
 
 $$
-\mathbb{M}_- = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*} = -\tilde{Q}\},
+\mathbb{B}_{\Phi} = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*} = -\tilde{Q}\},
 $$
 
 a four-**real**-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. Writing
@@ -165,31 +165,31 @@ $$
 \boxed{\ \langle\tilde R_\varphi\rangle_{\natural} = (i c r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $R_t=i c r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i c r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
-| $\mathbb{H}_{\mathbb{B}}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
-| $i\mathbb{H}_{\mathbb{B}}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
-| $\mathbb{M}_-$ | $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-c^2{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
-| $\mathbb{M}_+$ | $c r_t\,e_t+i\vec r_\psi$ | $c^2r_t^2-\vec r_\psi^{2}$ | $(1,3)$, the mirror of $\mathbb{M}_-$ |
+| $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
+| $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
+| $\mathbb{B}_{\Phi}$ | $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-c^2{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
+| $\mathbb{B}_{\Psi}$ | $c r_t\,e_t+i\vec r_\psi$ | $c^2r_t^2-\vec r_\psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
 
-The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{M}_-$.
+The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
 
-The real structure is not decoration: it is what tells the complex group which real form of the algebra is physical. A $\mathbb{C}$-linear automorphism of the complexification need not map $\mathbb{M}_-$ to itself. The automorphisms that do are the ones the physical theory uses.
+The real structure is not decoration: it is what tells the complex group which real form of the algebra is physical. A $\mathbb{C}$-linear automorphism of the complexification need not map $\mathbb{B}_{\Phi}$ to itself. The automorphisms that do are the ones the physical theory uses.
 
 ## The Lorentz Group as the Automorphisms of the Slice
 
 Consider the automorphisms of $\langle\cdot\rangle_{\natural}$ that preserve the real slice:
 
 $$
-\mathcal{G} = \{\,T\in O(4,\mathbb{C}) : T(\mathbb{M}_-)\subseteq\mathbb{M}_-\,\}.
+\mathcal{G} = \{\,T\in O(4,\mathbb{C}) : T(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}\,\}.
 $$
 
-On $\mathbb{M}_-$ the map $T$ is a real-linear transformation, and the condition
+On $\mathbb{B}_{\Phi}$ the map $T$ is a real-linear transformation, and the condition
 
 $$
-\langle T\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\ \text{ for all }\tilde{Q}\in\mathbb{M}_-
+\langle T\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\ \text{ for all }\tilde{Q}\in\mathbb{B}_{\Phi}
 $$
 
 says exactly that $T$ preserves the Minkowski interval $\langle\tilde Q\rangle_\natural$ on the slice. Hence
@@ -249,7 +249,7 @@ $$
 \pi:\ SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
 $$
 
-Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{M}_-$. Since $-e_t$ is central,
+Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{B}_{\Phi}$. Since $-e_t$ is central,
 
 $$
 (-e_t)\,\tilde{Q}\,(-e_t)^{*} = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\big|_{\tilde U_{\mathrm{lor}} = -e_t}
@@ -264,7 +264,7 @@ $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}.
 $$
 
-The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{M}_-$ arises as a Hermitian sandwich is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:
+The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{B}_{\Phi}$ arises as a Hermitian sandwich is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:
 
 $$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
@@ -472,7 +472,7 @@ This is what makes each combination close on itself with the same structure cons
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
-3. **Real forms and the two sectors.** Both $\mathbb{M}_-$ and $\mathbb{M}_+$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{H}_{\mathbb{B}}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Informational Sector: States, Observables and Probability*.
+3. **Real forms and the two sectors.** Both $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{B}_{H}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Informational Sector: States, Observables and Probability*.
 
 4. **The biquaternion norm and curved spacetime.** The automorphism characterization is pointwise and flat. Whether it globalizes to a bundle of algebra automorphisms over a curved base, and what plays the role of the form there, is the same open question the foundational articles record for the whole framework.
 
@@ -503,7 +503,7 @@ $$
 SO(4,\mathbb{C}) \cong \frac{SL(2,\mathbb{C})\times SL(2,\mathbb{C})}{\{\pm(e_t,e_t)\}},
 $$
 
-realized by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$ with $A,B\in SL(2,\mathbb{C})$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
+realized by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$ with $A,B\in SL(2,\mathbb{C})$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{B}_{\Phi}$, on which the form restricts to
 
 $$
 \langle i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2 ,
@@ -566,9 +566,9 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $T=\lvert\vec p\rvert^2+\lvert\vec q\rvert^2$, $\vec X=2\,\vec p\times\vec q$, $z_a=p_a+iq_a$ | Bilinear real coordinates of the diagonal route |
 | $\sigma\sigma^*=T^2-\lvert\vec X\rvert^2$ | Induced Minkowski interval; $\ge0$ by the Lagrange identity and AM–GM |
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) slices |
-| $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, signature $(3,1)$ |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) slices |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |

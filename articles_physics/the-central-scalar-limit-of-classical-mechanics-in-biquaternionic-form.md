@@ -5,10 +5,10 @@
 The two preceding articles of this subcategory treat systems whose configuration is a real vector — the free particle and the harmonic oscillator — and in both the energy, the frequency and the phase are scalars. The present article isolates the common structure and gives it a name. The **central-scalar limit** of classical mechanics is the restriction of the biquaternion framework in which
 
 1. every scalar quantity of the system — the energy, the potential, the mass, the time, the orbital frequency — is a **central** scalar, that is, a real multiple of the identity $e_t$;
-2. every configuration quantity — the position, the velocity, the momentum, the force, the angular momentum — is a **real vector**, an element of the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ inside the material sector $\mathbb{M}_-$; and
-3. no vector direction of the informational sector $\mathbb{M}_+$ is occupied.
+2. every configuration quantity — the position, the velocity, the momentum, the force, the angular momentum — is a **real vector**, an element of the real three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ inside the material sector $\mathbb{B}_{\Phi}$; and
+3. no vector direction of the informational sector $\mathbb{B}_{\Psi}$ is occupied.
 
-The name records the first two conditions; the third is what makes the limit the home of **structureless particles**. A nonzero element of the form $i\vec s \in \mathbb{M}_+$ is an internal vector degree of freedom, and the direction of such an element is a spin-like variable with its own precession. The central-scalar limit excludes it by construction, and that is exactly the spin-zero condition of the present subcategory: a point particle with no intrinsic angular momentum, no intrinsic magnetic moment, and no multipole structure.
+The name records the first two conditions; the third is what makes the limit the home of **structureless particles**. A nonzero element of the form $i\vec s \in \mathbb{B}_{\Psi}$ is an internal vector degree of freedom, and the direction of such an element is a spin-like variable with its own precession. The central-scalar limit excludes it by construction, and that is exactly the spin-zero condition of the present subcategory: a point particle with no intrinsic angular momentum, no intrinsic magnetic moment, and no multipole structure.
 
 The article is the frame around the two central-force articles that follow. It does three things. It fixes the kinematic setting — how the non-relativistic world is realized in the algebra and where each mechanical quantity sits. It develops the general central-force structure: the algebraic criterion for a force to be central, the identification of angular momentum with the commutator of position and momentum, the conservation law that follows, the reduction to a radial problem, and Binet's equation for the orbit. And it delimits the limit, recording what is excluded and what the informational sector contributes when it is reduced to a central scalar.
 
@@ -21,7 +21,7 @@ The treatment is classical and non-quantum throughout. The companion articles *T
 The full worldline is the material-sector curve $\tilde R_\varphi(r'_t) = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
 
 $$
-ie_t\mathbb{R} \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \;\subset\; \mathbb{M}_- ,
+ie_t\mathbb{R} \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \;\subset\; \mathbb{B}_{\Phi} ,
 $$
 
 that is, one scalar direction for time and three real vector directions for space. This is the algebra's realization of $\mathbb{R} \times \mathbb{R}^3$, and it is the setting of every classical problem in this subcategory.
@@ -38,7 +38,7 @@ each obtained from the others by differentiation with respect to the scalar para
 
 Every quantity in the list above that is not a vector is a central scalar. The mass is $m e_t$; the kinetic energy is $\tfrac12m|\vec v|^2 e_t$; the potential of a central force will be $V(r)e_t$; the time is the parameter multiplying $ie_t$. In each case the algebra element is a multiple of the identity, hence commutes with everything, and hence transforms trivially under every rotation and every frame change. This triviality is a feature and not a defect: it is why the scalar quantities of non-relativistic mechanics are frame-independent numbers and why the rotation group acts on the vector quantities alone.
 
-The placement of the scalars along $e_t$ also fixes their sector. A real scalar multiple of $e_t$ is Hermitian and lies in $\mathbb{M}_+$, so the energy and the potential are elements of the **informational** sector, while the configuration — position, momentum, force — lies in the vector part of the **material** sector. The central-scalar limit is therefore not a confinement to one sector: it uses the central direction of $\mathbb{M}_+$ for the scalar data and the vector directions of $\mathbb{M}_-$ for the configuration, and it leaves the vector directions of $\mathbb{M}_+$ untouched.
+The placement of the scalars along $e_t$ also fixes their sector. A real scalar multiple of $e_t$ is Hermitian and lies in $\mathbb{B}_{\Psi}$, so the energy and the potential are elements of the **informational** sector, while the configuration — position, momentum, force — lies in the vector part of the **material** sector. The central-scalar limit is therefore not a confinement to one sector: it uses the central direction of $\mathbb{B}_{\Psi}$ for the scalar data and the vector directions of $\mathbb{B}_{\Phi}$ for the configuration, and it leaves the vector directions of $\mathbb{B}_{\Psi}$ untouched.
 
 ### A Digression on the Kinetic Sign
 
@@ -60,15 +60,15 @@ which is the biquaternion norm of the velocity, up to the mass. The sign is the 
 
 The conditions of the introduction can be stated as a restriction on the algebra elements a problem is allowed to use. A classical central-force problem in the limit is specified by:
 
-- a real vector $\vec r(r'_t) \in \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$ for the position;
+- a real vector $\vec r(r'_t) \in \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{B}_{\Phi}$ for the position;
 - a real vector $\vec p(r'_t)$ for the momentum, equal to $md\vec r/dr'_t$;
 - a real vector $\vec F = d\vec p/dr'_t$ for the force;
-- a **central scalar** potential $\tilde{Ξ} = V(|\vec r|)e_t \in \mathbb{M}_+$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
+- a **central scalar** potential $\tilde{Ξ} = V(|\vec r|)e_t \in \mathbb{B}_{\Psi}$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
 - a central scalar energy $\tilde{E} = E e_t$.
 
-No element of this list has a nonzero vector part in $\mathbb{M}_+$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{M}_-$; the scalar data are entirely in the central part of $\mathbb{M}_+$.
+No element of this list has a nonzero vector part in $\mathbb{B}_{\Psi}$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{B}_{\Phi}$; the scalar data are entirely in the central part of $\mathbb{B}_{\Psi}$.
 
-The reason the potential may depend on the position only through $|\vec r|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{H}_{\mathbb{B}}$ with $R R^{\natural} = e_t$ — so that $R^{*}=R^{\natural}=R^{-1}$ — the position transforms as $\vec r \mapsto R\vec rR^{*}$, and the biquaternion norm is invariant,
+The reason the potential may depend on the position only through $|\vec r|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{B}_{H}$ with $R R^{\natural} = e_t$ — so that $R^{*}=R^{\natural}=R^{-1}$ — the position transforms as $\vec r \mapsto R\vec rR^{*}$, and the biquaternion norm is invariant,
 
 $$
 \langle R\vec rR^{*}\rangle_{\natural} = R\,\langle \vec r\rangle_{\natural}\,R^{*} = \langle \vec r\rangle_{\natural} ,
@@ -82,7 +82,7 @@ The name "central-scalar limit" combines two restrictions that are logically ind
 
 **The non-relativistic limit** is a limit of the kinematics: the ratio $v/c$ is small, the boost rotor of the frame contractions degenerates into a shear, the scalar direction $ie_t$ becomes an inert parameter, and the configuration space reduces to $\mathbb{R}\times\mathbb{R}^3$. It is a statement about the **transformation law** and about which terms in an expansion are retained. A relativistic central-force problem — the relativistic Kepler problem, for instance — takes the limit in the other direction while remaining central and scalar.
 
-**The central-scalar restriction** is a statement about which **directions of the algebra are occupied**. It says that the scalar data are central and the configuration is a real vector, and that no vector direction of $\mathbb{M}_+$ is excited. It does not by itself require small velocities. A rigid body with an intrinsic spin is excluded by this restriction even when its centre of mass moves non-relativistically, because its state carries an element of $\mathbb{M}_+$ with a nonzero vector part.
+**The central-scalar restriction** is a statement about which **directions of the algebra are occupied**. It says that the scalar data are central and the configuration is a real vector, and that no vector direction of $\mathbb{B}_{\Psi}$ is excited. It does not by itself require small velocities. A rigid body with an intrinsic spin is excluded by this restriction even when its centre of mass moves non-relativistically, because its state carries an element of $\mathbb{B}_{\Psi}$ with a nonzero vector part.
 
 The articles of this subcategory take **both** restrictions at once: they are non-relativistic and spin-zero. That combination is what makes the framework's description of them so economical — the algebra contributes the real three-space, its rotations, and the central scalars, and nothing else — and it is also what defines the boundary with the sibling subcategories. A non-relativistic problem with intrinsic magnetism violates the central-scalar restriction while respecting the non-relativistic limit; a relativistic structureless problem violates the non-relativistic limit while respecting the central-scalar restriction.
 
@@ -234,7 +234,7 @@ Several identities used above were verified by explicit computation with complex
 
 The central-scalar limit is a restriction, and it is worth recording exactly what is left out, because the omitted structures are the subjects of the sibling subcategories.
 
-**Internal vectors are excluded.** An element $i\vec s \in \mathbb{M}_+$ with $\vec s$ a real vector is an internal vector degree of freedom. It would transform as a vector under rotations, it would precess under torques, and its coupling to the orbital motion would produce the spin-orbit and magnetic phenomena. The limit sets it to zero. This is the spin-zero restriction, and it is why the effects of this subcategory carry no intrinsic magnetism.
+**Internal vectors are excluded.** An element $i\vec s \in \mathbb{B}_{\Psi}$ with $\vec s$ a real vector is an internal vector degree of freedom. It would transform as a vector under rotations, it would precess under torques, and its coupling to the orbital motion would produce the spin-orbit and magnetic phenomena. The limit sets it to zero. This is the spin-zero restriction, and it is why the effects of this subcategory carry no intrinsic magnetism.
 
 **Noncentral scalars are excluded.** A potential that is a scalar but not central, or a scalar that depends on direction, would break the rotation invariance and would not be a central scalar. Such terms belong to the generalities of the framework rather than to the central-force problems.
 
@@ -244,7 +244,7 @@ The central-scalar limit is a restriction, and it is worth recording exactly wha
 
 ## Summary
 
-The central-scalar limit of classical mechanics is the restriction of the biquaternion framework in which the scalar quantities of a problem are central scalars — real multiples of $e_t$, hence Hermitian and in $\mathbb{M}_+$ — and the configuration quantities are real vectors in the three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$. The non-relativistic configuration space is the direct sum $ie_t\mathbb{R} \oplus \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, and no vector direction of $\mathbb{M}_+$ is occupied; this last condition is the spin-zero restriction.
+The central-scalar limit of classical mechanics is the restriction of the biquaternion framework in which the scalar quantities of a problem are central scalars — real multiples of $e_t$, hence Hermitian and in $\mathbb{B}_{\Psi}$ — and the configuration quantities are real vectors in the three-space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{B}_{\Phi}$. The non-relativistic configuration space is the direct sum $ie_t\mathbb{R} \oplus \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, and no vector direction of $\mathbb{B}_{\Psi}$ is occupied; this last condition is the spin-zero restriction.
 
 A central force is defined by $\vec F \parallel \vec r$, equivalently $[\vec r, \vec F] = 0$, equivalently $\vec F\vec r$ central. The angular momentum is the commutator and the vector part of the product,
 
@@ -276,14 +276,14 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
-| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{M}_\pm = \mathbb{M}_\mp$ |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector |
-| $\mathbb{M}_+$ | Hermitian (informational) sector |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra; unit elements are rotation rotors |
-| $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre |
-| $ie_t\mathbb{R} \oplus \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | Non-relativistic configuration space in $\mathbb{M}_-$ |
+| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector |
+| $\mathbb{B}_{H}$ | Real-quaternion subalgebra; unit elements are rotation rotors |
+| $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre |
+| $ie_t\mathbb{R} \oplus \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | Non-relativistic configuration space in $\mathbb{B}_{\Phi}$ |
 | $\vec r, \vec p, \vec F$ | Position, momentum, force: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
-| $m e_t$, $E e_t$, $V(r)e_t$ | Mass, energy, potential: central scalars in $\mathbb{M}_+$ |
+| $m e_t$, $E e_t$, $V(r)e_t$ | Mass, energy, potential: central scalars in $\mathbb{B}_{\Psi}$ |
 | $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ | Quaternion product of two real vectors |
 | $[\vec a,\vec b] = 2\,\vec a\times\vec b$ | Commutator of two real vectors |
 | $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ | Angular momentum; vector part of $\vec r\vec p$ |

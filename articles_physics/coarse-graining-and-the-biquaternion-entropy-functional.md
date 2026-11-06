@@ -4,7 +4,7 @@
 
 A **coarse-graining** is a description that discards fine-grained distinctions. The state of a physical system is replaced by a record of which cell of a partition it occupies, and the information the record carries is measured by the entropy of the induced cell distribution. Coarse-graining is the operation that makes entropy increase: the fine-grained descriptions of classical mechanics are conserved by the reversible flow, while the coarse-grained ones are not, and the difference between the two is the content of the second law.
 
-This article develops the coarse-grained entropy functional of the informational sector $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive elements $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{M}_+$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the biquaternion norm, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
+This article develops the coarse-grained entropy functional of the informational sector $\mathbb{B}_{\Psi}$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive elements $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{B}_{\Psi}$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the biquaternion norm, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
 
 $$
 \mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right).
@@ -24,7 +24,7 @@ The treatment is **classical**. The entropy here is the Shannon entropy of a coa
 
 The probabilities the functional is built from are themselves readings of the Hermitian form, with the trace as their final reading at normalisation. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{1,2}(\vec u_r),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading is $\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ})$, the star being inert and the unstarred trace real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$.
 
 ## The State Space of the Informational Sector
 
@@ -34,7 +34,7 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z, \quad \vec r \in \mathbb{R}^3,
 $$
 
-of the Hermitian subspace $\mathbb{M}_+$. The scalar part of $\tilde{Ϛ}$ is real, its vector part is purely imaginary, and its trace is
+of the Hermitian subspace $\mathbb{B}_{\Psi}$. The scalar part of $\tilde{Ϛ}$ is real, its vector part is purely imaginary, and its trace is
 
 $$
 \mathrm{Tr}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde{Ϛ}) = 1 .
@@ -52,7 +52,7 @@ $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad |\vec u| = 1, \qquad \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} ,
 $$
 
-and conversely every idempotent of $\mathbb{M}_+$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.
+and conversely every idempotent of $\mathbb{B}_{\Psi}$ has this form. The complementary idempotents are orthogonal and complete, $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.
 
 ### The Biquaternion Norm of a State
 
@@ -62,7 +62,7 @@ $$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tilde{Ϛ}\tilde{Ϛ}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
 $$
 
-This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{M}_+$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
+This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{B}_{\Psi}$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
 
 Two further identities follow from the multiplication table and are used throughout. Squaring the state gives
 
@@ -119,7 +119,7 @@ $$
 \log\tilde{Ϛ} = \left(\log\lambda_+\right)\tilde\Pi_1(\vec u_r) + \left(\log\lambda_-\right)\tilde\Pi_2(\vec u_r),
 $$
 
-which is the principal branch on the positive part of $\mathbb{M}_+$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore
+which is the principal branch on the positive part of $\mathbb{B}_{\Psi}$; on the general algebra the logarithm is multivalued, and positivity of the state removes the ambiguity by fixing the branch. Multiplying and taking the scalar part, using $\mathrm{Sc}(\tilde\Pi_{1,2}) = \tfrac{1}{2}$, gives $\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ}) = \tfrac{1}{2}(\lambda_+\log\lambda_+ + \lambda_-\log\lambda_-)$, and therefore
 
 $$
 \mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right)
@@ -207,7 +207,7 @@ so the whole information content of the coarse description is likewise carried b
 A coarse-graining is a description that remembers less. In the language of the sector it is a map
 
 $$
-Ξ : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad \tilde{Ϛ} \longmapsto Ξ(\tilde{Ϛ}),
+Ξ : \mathbb{B}_{\Psi} \longrightarrow \mathbb{B}_{\Psi}, \qquad \tilde{Ϛ} \longmapsto Ξ(\tilde{Ϛ}),
 $$
 
 subject to four conditions, each of which has an operational interpretation.
@@ -233,7 +233,7 @@ annihilating the component transverse to the axis and retaining the component al
 
 ### The Binary Limitation
 
-It must be said plainly that a coarse-graining of a single qubit is **binary**. The reason is algebraic and not a shortcoming of the treatment: $\mathbb{M}_+$ has only two orthogonal idempotents at a time, so a commutative subalgebra of $\mathbb{B}$ is at most two-dimensional, and a conditional expectation can retain at most one classical bit. A partition of the state space into three or more cells is not a conditional expectation of $\mathbb{B}$ and has no image in the sector; it requires the tensor product $\mathbb{B}^{\otimes n}$, whose states are treated in the sibling quantum category. What the single-qubit framework supplies is the *mechanism* of coarse-graining — the conditional expectation, its idempotency, its contraction of the ball — and the mechanism is what the entropy functional needs. The many-cell case is a matter of enlarging the algebra, not of changing the argument.
+It must be said plainly that a coarse-graining of a single qubit is **binary**. The reason is algebraic and not a shortcoming of the treatment: $\mathbb{B}_{\Psi}$ has only two orthogonal idempotents at a time, so a commutative subalgebra of $\mathbb{B}$ is at most two-dimensional, and a conditional expectation can retain at most one classical bit. A partition of the state space into three or more cells is not a conditional expectation of $\mathbb{B}$ and has no image in the sector; it requires the tensor product $\mathbb{B}^{\otimes n}$, whose states are treated in the sibling quantum category. What the single-qubit framework supplies is the *mechanism* of coarse-graining — the conditional expectation, its idempotency, its contraction of the ball — and the mechanism is what the entropy functional needs. The many-cell case is a matter of enlarging the algebra, not of changing the argument.
 
 ### The Coarse-Grained Entropy
 
@@ -393,7 +393,7 @@ The framework's own coarse-grainings sit in this picture as the conditional expe
 
 ## Summary
 
-A coarse-graining of the informational sector is a conditional expectation $Ξ$ on $\mathbb{M}_+$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
+A coarse-graining of the informational sector is a conditional expectation $Ξ$ on $\mathbb{B}_{\Psi}$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
 
 The **biquaternion entropy functional** is
 
@@ -422,7 +422,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector, Bloch vector $\vec r$ |

@@ -30,7 +30,7 @@ $$
 
 are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde Q_1=\tilde Q=\tilde Q_3$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*$M_2(\mathbb{C})$ Pauli Representation*).
 
-**The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{M}_+$. These are different theories; neither is the theory of this article.
+**The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{B}_{\Psi}$. These are different theories; neither is the theory of this article.
 
 | reading of the square | the map | kind | the theory |
 |---|---|---|---|
@@ -116,13 +116,13 @@ $$
 \boxed{\;\det dF_{\tilde Q_5}|_{\tilde Q} \;=\; 4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2\;}.
 $$
 
-Hence the critical set is the union of the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ and the vector subspace $\{Q_t=0\}=\mathrm{Vect}(\mathbb{B})$.
+Hence the critical set is the union of the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ and the vector subspace $\{Q_t=0\}=\mathbb{B}_{V}$.
 
 **Proof.** The family is $\tilde Q^2$ plus a constant, so its derivative is that of the general plain bilinear square, which is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ by the product rule. Transport along the algebra isomorphism $\mathsf{M}_2$ to $M_2(\mathbb{C})$: in the coordinates $(M_{11},M_{12},M_{21},M_{22})$ the linear map $V\mapsto MV+VM$ has matrix $I\otimes M+M^{\mathsf{T}}\otimes I$, whose determinant is $\det(M)\operatorname{tr}(M)^2\cdot 4$; substituting $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$ gives the formula. The determinant is a polynomial in $\tilde Q$ that is not identically zero, so its zero set is a hypersurface of the complex four-space; by the product formula that zero set is the union of the quadric $\langle\tilde Q\rangle_{\natural}=0$ and the hyperplane $Q_t=0$, which is the statement. 
 
 Counting the coordinates, the critical set is the zero set of that one non-zero polynomial, hence a hypersurface of the complex four-space, with the two components named. The zero-divisor cone is the quadric $\langle\tilde Q\rangle_{\natural}=0$ and the vector subspace is the hyperplane $Q_t=0$.
 
-**Remark.** The critical set is larger than the zero-divisor cone: it also contains the whole vector subspace $\mathrm{Vect}(\mathbb{B})$ of pure biquaternions, where the derivative degenerates because $Q_t=0$ makes the two eigenvalues of $\mathsf{M}_2(\tilde Q)$ opposite. **The derivative is singular exactly on the union of the zero divisors and the pure vectors, a hypersurface with two components.** The singular set governs the Fatou theory (*The Biquaternion Holomorphic Dynamics and the Jacobian*).
+**Remark.** The critical set is larger than the zero-divisor cone: it also contains the whole vector subspace $\mathbb{B}_{V}$ of pure biquaternions, where the derivative degenerates because $Q_t=0$ makes the two eigenvalues of $\mathsf{M}_2(\tilde Q)$ opposite. **The derivative is singular exactly on the union of the zero divisors and the pure vectors, a hypersurface with two components.** The singular set governs the Fatou theory (*The Biquaternion Holomorphic Dynamics and the Jacobian*).
 
 ## The Central Parameter and the Eigenvalue Reduction
 

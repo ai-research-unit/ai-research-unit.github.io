@@ -280,7 +280,7 @@ $$
 $$
 whose velocity is $-c\tanh\theta_{\mathrm{rpd},b}\,\vec u = -\vec v_b$. So the rotor built with $+\vec v_b$ carries the lab to the frame moving with $+\vec v_b$; a particle at rest in the lab appears in that frame to move with $-\vec v_b$.
 
-**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
+**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ that acts on $\mathbb{B}_{\Phi}$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
 \tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\,\tilde{F}\,\tilde U_{\vec v_b}
 = \tilde U_{\vec v_b}^{-1}\tilde{F}\,\tilde U_{\vec v_b}
@@ -395,8 +395,8 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |

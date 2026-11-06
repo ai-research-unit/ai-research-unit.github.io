@@ -64,7 +64,7 @@ $$
 \tilde S_{\mathrm{tot},k}=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
-which is a Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$. Because the cross-commutators vanish, the total operators close on the same algebra as one-particle spin:
+which is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. Because the cross-commutators vanish, the total operators close on the same algebra as one-particle spin:
 
 $$
 [\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=\tfrac{\hbar^2}{4}\left([ie_i,ie_j]\otimes e_t+e_t\otimes[ie_i,ie_j]\right)=i\hbar\,\epsilon_{ijk}\tilde S_{\mathrm{tot},k} ,
@@ -273,7 +273,7 @@ $$
 =-\frac{J_{\mathrm{ex}}\hbar^2}{2}\,F+\frac{J_{\mathrm{ex}}\hbar^2}{4}\,e_t\otimes e_t .
 $$
 
-This is a Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$ — a legitimate observable — and its spectral decomposition is immediate from that of $F$, on using $F=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}$ and $e_t\otimes e_t=\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}$:
+This is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ — a legitimate observable — and its spectral decomposition is immediate from that of $F$, on using $F=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}$ and $e_t\otimes e_t=\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}$:
 
 $$
 \tilde R_\psi=-\frac{J_{\mathrm{ex}}\hbar^2}{2}\left(\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}\right)+\frac{J_{\mathrm{ex}}\hbar^2}{4}\left(\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}\right)

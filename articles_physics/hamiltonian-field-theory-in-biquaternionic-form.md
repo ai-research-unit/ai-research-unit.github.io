@@ -6,7 +6,7 @@ The companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Fo
 
 Two objects are built here, and they answer two different questions. The first is the **Hamiltonian density** $\mathcal H$, the Legendre transform of the Lagrangian density, which is also the energy density of the companion article on stress–energy; the second is the **field Poisson bracket**, the bracket on functionals of the field and its conjugate momentum, together with the continuity equation that the density satisfies along the motion. Their sum is the classical Hamiltonian field theory in biquaternion form. The article then says where the algebra's contribution stops: for a central field the bracket is the standard one, and the biquaternion content is the packaging of the density and the flux rather than a change of the bracket. The genuinely different Hamiltonian formalism for a field — the covariant one, in which the conjugate object is a *quadruple* of momenta rather than one momentum field — is named at the end and developed in the mathematical corpus.
 
-The conventions are those of the read list: the algebra, the units, the sectors, the material coordinate, the $i c r'_t$ metric, the d'Alembertian and the conjugations are those of *Algebra and Element Conventions*, *Unit, Index and Notation Conventions* and *Operator and Calculus Conventions*, and none is restated here. The central scalar field is $\tilde{Ξ}(\tilde R_\varphi)=\xi(\tilde R_\varphi)e_t$ with $\tilde R_\varphi\in\mathbb{M}_-$, its Lagrangian density is the one fixed by *Noether's Theorem in Biquaternionic Form* and used by *Canonical Quantization of the Biquaternion Klein–Gordon Field*,
+The conventions are those of the read list: the algebra, the units, the sectors, the material coordinate, the $i c r'_t$ metric, the d'Alembertian and the conjugations are those of *Algebra and Element Conventions*, *Unit, Index and Notation Conventions* and *Operator and Calculus Conventions*, and none is restated here. The central scalar field is $\tilde{Ξ}(\tilde R_\varphi)=\xi(\tilde R_\varphi)e_t$ with $\tilde R_\varphi\in\mathbb{B}_{\Phi}$, its Lagrangian density is the one fixed by *Noether's Theorem in Biquaternionic Form* and used by *Canonical Quantization of the Biquaternion Klein–Gordon Field*,
 
 $$
 \mathcal{L}=-\mathrm{Sc}\!\left[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\right]-\mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
@@ -114,10 +114,10 @@ time-independent, the statement that the flux of the companion stress–energy a
 The field is central-valued, $\tilde{Ξ}=\xi e_t$, and its conjugate momentum is central-valued for the same reason: the momentum field is obtained from the field by a central operation, so it lives in the centre. Writing
 
 $$
-\tilde\Pi=\pi e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde\Pi=\pi e_t\in\mathbb{B}_{C},
 $$
 
-the pair $(\tilde{Ξ},\tilde\Pi)$ is the field-theoretic analogue of the pair $(\tilde q,\tilde p)$ of the finite-dimensional article, with one difference that is worth stating: $\tilde q$ was a real quaternion in $\mathbb{H}_{\mathbb{B}}$ and $\tilde p$ its conjugate momentum in the same subspace, while $\tilde{Ξ}$ and $\tilde\Pi$ are central, in $\mathbb{C}_{\mathbb{B}}$. The value space is smaller because the spin of the field is zero. A field that carried a spinor index would take its values in the spinor module, and its conjugate momentum would carry the same index; the central scalar is the case in which the index is absent, and in that case the momentum field is a second complex number at each point rather than a second biquaternion.
+the pair $(\tilde{Ξ},\tilde\Pi)$ is the field-theoretic analogue of the pair $(\tilde q,\tilde p)$ of the finite-dimensional article, with one difference that is worth stating: $\tilde q$ was a real quaternion in $\mathbb{B}_{H}$ and $\tilde p$ its conjugate momentum in the same subspace, while $\tilde{Ξ}$ and $\tilde\Pi$ are central, in $\mathbb{B}_{C}$. The value space is smaller because the spin of the field is zero. A field that carried a spinor index would take its values in the spinor module, and its conjugate momentum would carry the same index; the central scalar is the case in which the index is absent, and in that case the momentum field is a second complex number at each point rather than a second biquaternion.
 
 ### The Hamiltonian Density as a Hermitian Bilinear
 
@@ -127,14 +127,14 @@ $$
 \boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})\right]+\mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;}.
 $$
 
-The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})]=c^{-2}|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2$ is where the $i c r'_t$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial R_t\,\xi=-ic^{-1}\partial\xi/\partial r'_t$, so $|\partial/\partial R_t\,\xi|^2=c^{-2}|\partial\xi/\partial r'_t|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$; a reader who computes $|\partial/\partial R_t\,\xi|^2$ as $-\frac{1}{c^2}|\partial\xi/\partial r'_t|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is *this* form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
+The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})]=c^{-2}|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2$ is where the $i c r'_t$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial R_t\,\xi=-ic^{-1}\partial\xi/\partial r'_t$, so $|\partial/\partial R_t\,\xi|^2=c^{-2}|\partial\xi/\partial r'_t|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$; a reader who computes $|\partial/\partial R_t\,\xi|^2$ as $-\frac{1}{c^2}|\partial\xi/\partial r'_t|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{B}_{\Psi}$ — and it is *this* form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
 
 ### The Energy–Momentum Biquaternion
 
 The density and the flux are the scalar and vector parts of one Hermitian biquaternion:
 
 $$
-\tilde W=\mathcal{H}\,e_t+\frac{i}{c}\vec S\in\mathbb{M}_+,
+\tilde W=\mathcal{H}\,e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi},
 \qquad
 \tilde\nabla\tilde W=0
 \ \ \text{on shell}.
@@ -146,14 +146,14 @@ The static limit makes the arrangement visible. For a time-independent field the
 
 ### The Brackets in the Algebra
 
-The canonical bracket is read in the algebra as the scalar part of a pairing. Since $\xi$ and $\pi$ are the coefficients of central elements, the bracket of the algebra's central directions is the bracket of the two complex numbers, and the field bracket above is its integral over space. The biquaternion content of the brackets is therefore not a new bracket but the **sector bookkeeping** of the fields being bracketed: $\tilde{Ξ}\in\mathbb{C}_{\mathbb{B}}$ while its gradient is not, and the momentum $\tilde\Pi$ is central whereas the momentum of a bivector-valued field would lie in $\mathbb{M}_-$ or $\mathbb{M}_+$. The scalar field brackets with itself in the centre, and this is the classical face of the fact, recorded by the quantization article, that the scalar field's canonical structure is taken over from the classical theory without modification.
+The canonical bracket is read in the algebra as the scalar part of a pairing. Since $\xi$ and $\pi$ are the coefficients of central elements, the bracket of the algebra's central directions is the bracket of the two complex numbers, and the field bracket above is its integral over space. The biquaternion content of the brackets is therefore not a new bracket but the **sector bookkeeping** of the fields being bracketed: $\tilde{Ξ}\in\mathbb{B}_{C}$ while its gradient is not, and the momentum $\tilde\Pi$ is central whereas the momentum of a bivector-valued field would lie in $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. The scalar field brackets with itself in the centre, and this is the classical face of the fact, recorded by the quantization article, that the scalar field's canonical structure is taken over from the classical theory without modification.
 
 ## The Sector Reading of the Hamiltonian Density
 
-The field of spin zero is the field of the centre, and the centre is the direct sum of the two sectors' scalar lines, $\mathbb{C}_{\mathbb{B}}=T_{\mathrm i}\oplus T_{\mathrm m}$ with $T_{\mathrm i}=\mathbb{R}e_t$ and $T_{\mathrm m}=\mathbb{R}(ie_t)$. Writing the complex scalar as two real scalars, one in each sector's scalar direction,
+The field of spin zero is the field of the centre, and the centre is the direct sum of the two sectors' scalar lines, $\mathbb{B}_{C}=T_{\mathrm i}\oplus T_{\mathrm m}$ with $T_{\mathrm i}=\mathbb{R}e_t$ and $T_{\mathrm m}=\mathbb{R}(ie_t)$. Writing the complex scalar as two real scalars, one in each sector's scalar direction,
 
 $$
-\tilde{Ξ}=\frac{1}{\sqrt2}\left(\underbrace{\xi_1\,e_t}_{\in\,\mathbb{M}_+}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{M}_-}\right),
+\tilde{Ξ}=\frac{1}{\sqrt2}\left(\underbrace{\xi_1\,e_t}_{\in\,\mathbb{B}_{\Psi}}+\underbrace{\xi_2\,ie_t}_{\in\,\mathbb{B}_{\Phi}}\right),
 \qquad
 \mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]=\frac12\left(\xi_1^2+\xi_2^2\right),
 $$
@@ -189,7 +189,7 @@ are the four-fold statement of the Klein–Gordon equation. Nothing is singled o
 What the algebra gives the Hamiltonian field theory is short and definite.
 
 - **The Hamiltonian density is a Hermitian form.** The kinetic, gradient and mass contributions are each the scalar part of a form built from the field and its gradient, and the assembled density is $\mathrm{Sc}[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})]+\mu^2\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The form is the algebra's own Hermitian pairing, not a transcription of a foreign object, and the $i c r'_t$ convention makes its kinetic term positive.
-- **The energy density and the flux are one sector element.** They are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the same element, in the same sector and the same arrangement, that the electromagnetic field's energy–momentum occupies.
+- **The energy density and the flux are one sector element.** They are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\tilde\nabla\tilde W=0$ on shell — the same element, in the same sector and the same arrangement, that the electromagnetic field's energy–momentum occupies.
 - **The sector split is the energy–charge split.** The two real scalars in the two sectors' scalar directions contribute to the energy with the same sign and to the charge with opposite signs, and the split of the density is the field version of the phase-space biquaternion's real and imaginary parts.
 
 What the algebra does not give, and what a reader should not expect, is a modification of the bracket. The scalar field is central, its conjugate momentum is central, and the bracket on functionals of the pair is the standard one; the Jacobi identity holds for the same local reason it holds for a finite system, and no algebraic anomaly appears. The interesting brackets — those in which the algebra's non-commutativity and the sector structure are load-bearing — are those of the fields that carry an index, and those lie beyond the scalar case: the Dirac field on the spinor module, whose conjugate momentum is constrained, and the gauge fields, whose conjugate momenta are constrained and which are naturally described in the covariant formalism named above. The scalar field is the case in which the Hamiltonian transcription is complete and uninteresting, which is exactly why it is the case in which the classical canonical structure can be handed to the quantization article untouched.
@@ -202,7 +202,7 @@ The Hamiltonian field theory of the central scalar field is built from three obj
 
 **The equations and the bracket.** Hamilton's field equations, $\partial\xi/\partial r'_t=\delta H/\delta\pi^\dagger$ and $\partial\pi/\partial r'_t=-\delta H/\delta\xi^\dagger$, are the Klein–Gordon equation; the field Poisson bracket is the integral over space of the local canonical bracket, with $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and its Jacobi identity is inherited locally from the canonical pair. The density satisfies the continuity equation $\partial/\partial r'_t\mathcal{H}+\nabla\cdot\vec S=0$ with flux $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$, positive-directed along the wavevector for a plane wave.
 
-**The packaging and the sector interpretation.** Density and flux are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the electromagnetic arrangement. Splitting the central field into its two sector scalars, the energy is the sum of the two sectors' kinetic, gradient and mass terms with the same sign, whereas the charge is their difference with opposite signs.
+**The packaging and the sector interpretation.** Density and flux are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\tilde\nabla\tilde W=0$ on shell — the electromagnetic arrangement. Splitting the central field into its two sector scalars, the energy is the sum of the two sectors' kinetic, gradient and mass terms with the same sign, whereas the charge is their difference with opposite signs.
 
 The formalism is the instantaneous one. The covariant formalism treats the four derivatives alike, conjugates to the field a quadruple of polymomenta, and has no unique bracket and no unique pairing with a time; it is the multisymplectic geometry of the mathematical corpus, and the instantaneous density is its time component.
 
@@ -210,18 +210,18 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$ |
+| $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ |
 | $\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-\mu^2|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
 | $\mu=mc/\hbar$ | The inverse reduced Compton wavelength, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=c^{-2}\partial\xi/\partial r'_t$ its conjugate |
-| $\tilde\Pi=\pi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | The conjugate momentum field as a central biquaternion |
+| $\tilde\Pi=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
 | $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $c^{-2}|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+\mu^2|\xi|^2$ and equals the energy density $T_{00}$ |
 | $H=\int\mathcal{H}\,d^3r$ | The total Hamiltonian |
 | $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})]+\mu^2\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | The Hamiltonian density as the sum of two Hermitian forms |
 | $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ | The canonical field bracket, with the mirrored brackets for the conjugates |
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |
 | $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$ | The energy flux; $\partial/\partial r'_t\mathcal{H}+\nabla\cdot\vec S=0$ |
-| $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
+| $\tilde W=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
 | $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_\mu\,\xi)=\partial/\partial R_\mu\xi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
 | $H_{DW}=\sum_\mu p_\mu\partial/\partial R_\mu\,\xi-\mathcal{L}=\frac12\sum_\mu p_\mu p_\mu+\frac12\mu^2\xi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

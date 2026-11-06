@@ -172,7 +172,7 @@ $$
 u(r_x) = -\int_{\partial G}\Bigl[(-D_3F_k)(r_x-r_y)\,n(r_y)u(r_y) + n(r_y)u(r_y)\,F_k(r_x-r_y)\,k\Bigr]dy ,
 $$
 
-with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statements are the same Cauchy-type formula the corpus states on $\mathbb{H}_{\mathbb{B}}$ in *Biquaternion Regular Functions* and quotes for the shifted family in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; what is new here is only that the kernel is the **outgoing** one and that the representation is used, below, to force a field to vanish at infinity.
+with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statements are the same Cauchy-type formula the corpus states on $\mathbb{B}_{H}$ in *Biquaternion Regular Functions* and quotes for the shifted family in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; what is new here is only that the kernel is the **outgoing** one and that the representation is used, below, to force a field to vanish at infinity.
 
 ### The radiation condition
 
@@ -385,7 +385,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 ## Open Questions
 
-1. **Is there a four-variable scattering theory for $\tilde\nabla$?** The corpus's *Biquaternion Regular Functions* works on $\mathbb{H}_{\mathbb{B}}$ in four variables and its integral theory is complete there. The source's scattering theory is three-dimensional and spatial, with the frequency entering through $k$; the four-dimensional analogue, in which the radiation condition would be a condition on the two cones of the null quadric, is not in the corpus and is not in this source. Is the spatial reduction a convenience of the optical setting, or is the four-variable problem genuinely different?
+1. **Is there a four-variable scattering theory for $\tilde\nabla$?** The corpus's *Biquaternion Regular Functions* works on $\mathbb{B}_{H}$ in four variables and its integral theory is complete there. The source's scattering theory is three-dimensional and spatial, with the frequency entering through $k$; the four-dimensional analogue, in which the radiation condition would be a condition on the two cones of the null quadric, is not in the corpus and is not in this source. Is the spatial reduction a convenience of the optical setting, or is the four-variable problem genuinely different?
 
 2. **Does the corpus's zero-divisor algebra improve the isotropic case?** The source adds $u_{\mathrm{sc}}=o(1)$ when $k$ is isotropic. The corpus knows the geometry of the null cone: an isotropic $k$ has vanishing norm, $\langle k\rangle_{\natural}=0$, the elements $\tfrac12(1\pm i\vec u_x)$ are idempotents and zero divisors on it, and the cone carries the light-cone structure and the sphere of idempotents (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Idempotents*, *The Light Cone as the Biquaternion Zero-Divisor Cone*). Is there a radiation condition adapted to the degenerate direction, rather than a hypothesis that avoids it?
 

@@ -76,9 +76,9 @@ The symmetry is the antisymmetry of the block read through the conjugate of the 
 
 ### The Pure-Vector Image and the Absence of a Unit
 
-**Proposition.** The values of the block are **pure vector**, so its image is contained in $\mathrm{Vect}(\mathbb{B})$, and it is $\mathrm{Vect}(\mathbb{B})$ itself.
+**Proposition.** The values of the block are **pure vector**, so its image is contained in $\mathbb{B}_{V}$, and it is $\mathbb{B}_{V}$ itself.
 
-*Proof.* The rule has no scalar term, so every value has scalar part zero. Conversely every vector $\vec V$ is attained, since for a real $\vec Q_1$ the map $\vec Q\mapsto\vec Q_1\times\overline{\vec Q}$ is the cross product with a fixed nonzero real vector, whose values fill the two-dimensional subspace orthogonal to $\vec Q_1$; taking $\vec Q_1$ over two independent real directions fills $\mathrm{Vect}(\mathbb{B})$.
+*Proof.* The rule has no scalar term, so every value has scalar part zero. Conversely every vector $\vec V$ is attained, since for a real $\vec Q_1$ the map $\vec Q\mapsto\vec Q_1\times\overline{\vec Q}$ is the cross product with a fixed nonzero real vector, whose values fill the two-dimensional subspace orthogonal to $\vec Q_1$; taking $\vec Q_1$ over two independent real directions fills $\mathbb{B}_{V}$.
 
 **Proposition.** The block has **no unit**: there is no element $\tilde E$ with $\tilde E\diamond\tilde Q=\tilde Q$ for all $\tilde Q$, on either side.
 
@@ -199,7 +199,7 @@ $$
 \tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2},
 $$
 
-the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2i\vec e_z$ at $\vec e_x+i\vec e_y$. The Jacobi identity fails, with the witness $(\vec e_x,\vec e_x,i\vec e_y)$ whose declared cyclic sum is $-2i\vec e_y$; the witness needs a complex element, and on the real elements the block coincides with $\tilde Q_1\wedge\tilde Q_2$, so the failure is invisible there. The product reconstructs as $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
+the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathbb{B}_{V}$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2i\vec e_z$ at $\vec e_x+i\vec e_y$. The Jacobi identity fails, with the witness $(\vec e_x,\vec e_x,i\vec e_y)$ whose declared cyclic sum is $-2i\vec e_y$; the witness needs a complex element, and on the real elements the block coincides with $\tilde Q_1\wedge\tilde Q_2$, so the failure is invisible there. The product reconstructs as $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
 
 ## Summary of Notation
 

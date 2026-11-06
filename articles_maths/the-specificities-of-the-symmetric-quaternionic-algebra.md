@@ -9,7 +9,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
-in which $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form, symmetric, non-degenerate, of Gram matrix the identity on the basis. The formula makes the algebra element-theoretically the poorest of the twelve: it is commutative with vanishing commutator, its image is the central line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, it has no unit, its radical is $\{0\}$ because the form is non-degenerate, and its idempotents are $0$ and $e_t$ alone (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
+in which $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form, symmetric, non-degenerate, of Gram matrix the identity on the basis. The formula makes the algebra element-theoretically the poorest of the twelve: it is commutative with vanishing commutator, its image is the central line $\mathbb{B}_{C}=\mathbb{C}e_t$, it has no unit, its radical is $\{0\}$ because the form is non-degenerate, and its idempotents are $0$ and $e_t$ alone (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
 
 Its **operator** theory is nevertheless exactly computable, and again in one line, because the value of the product reads its two arguments only through the form: the left multiplication is the rank-one operator $L_{\tilde Q_1}:\tilde Q_2\mapsto \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, and its square is
 
@@ -17,7 +17,7 @@ $$
 L_{\tilde Q_1}^{2}=X_t\,L_{\tilde Q_1},
 $$
 
-with $X_t$ the scalar coordinate of $\tilde Q_1$. This article reads the two consequences. The elements whose left multiplication is a **projector** are those of the affine hyperplane $X_t=1$, together with the origin: the first are pairwise distinct rank-one projections onto the central line, the second is the zero operator. The elements whose left multiplication is **square-zero** are those of the hyperplane $X_t=0$, which is the vector subspace $\mathrm{Vect}(\mathbb{B})$, the orthogonal complement of the central line; the nonzero ones have rank one, and the zero elements of this family are distinct from the square-zero elements of the algebra, which are the isotropic cone.
+with $X_t$ the scalar coordinate of $\tilde Q_1$. This article reads the two consequences. The elements whose left multiplication is a **projector** are those of the affine hyperplane $X_t=1$, together with the origin: the first are pairwise distinct rank-one projections onto the central line, the second is the zero operator. The elements whose left multiplication is **square-zero** are those of the hyperplane $X_t=0$, which is the vector subspace $\mathbb{B}_{V}$, the orthogonal complement of the central line; the nonzero ones have rank one, and the zero elements of this family are distinct from the square-zero elements of the algebra, which are the isotropic cone.
 
 The article states and proves the exclusive law of the block on the same model as the articles that began the family: the **scalar law**, which demands that the product be commutative and that its values be central, is satisfied by the block and by no other operation of the twelve, and the classification of the block's operators is read from it. The projectors do not come from isolated elements and not from the unit: they come from a hyperplane, they are indexed by that hyperplane and not by the idempotents of the algebra, and even the element $e_t$ gives the projection onto the central line and not the identity, because the algebra has no unit. The algebra therefore produces a full family of projectors and disowns all but one of their indices, exactly as the general quaternionic product does; the difference is the size and the shape of the family.
 
@@ -28,7 +28,7 @@ The family of specificities articles states, for each block, one law that the bl
 **Definition (the scalar law).** Let $\circ$ be a product on $\mathbb{B}$. The product satisfies the **scalar law** when
 
 1. it is **commutative**, $\tilde Q_1\circ\tilde Q_2=\tilde Q_2\circ\tilde Q_1$ for all $\tilde Q_1,\tilde Q_2$; and
-2. its **values are central**, $\tilde Q_1\circ\tilde Q_2\in\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ for all $\tilde Q_1,\tilde Q_2$.
+2. its **values are central**, $\tilde Q_1\circ\tilde Q_2\in\mathbb{B}_{C}=\mathbb{C}e_t$ for all $\tilde Q_1,\tilde Q_2$.
 
 **Theorem (the equivalent form).** A product $\circ$ satisfies the scalar law if and only if there is a symmetric $\mathbb{C}$-bilinear form $\beta$ on $\mathbb{B}$ with
 
@@ -108,7 +108,7 @@ The theorem is the specialisation of the composition law $L^{\bullet}_{\tilde Q_
 
 **Proof.** By §*The Operator Identity* $L_{\tilde Q_1}^{2}=X_tL_{\tilde Q_1}$, which vanishes when $X_t=0$. Conversely if $L_{\tilde Q_1}^{2}=0$ and $X_t\neq0$ then $L_{\tilde Q_1}=0$, hence $\tilde Q_1=0$ by faithfulness, and $0$ has scalar coordinate $0$, a contradiction.
 
-**Corollary (the set and its shape).** The square-zero operators are the operators $L_{\tilde Q_1}$ with $X_t=0$, that is with $\tilde Q_1$ in the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$, which is the orthogonal complement of the central line and is of complex dimension three; the operator is zero at $\tilde Q_1=0$ and of rank one elsewhere, and it is a two-step flag $\{0\}\subseteq\mathbb{C}e_t\subseteq\ker \langle\tilde Q_1,\cdot\rangle_{\natural}$.
+**Corollary (the set and its shape).** The square-zero operators are the operators $L_{\tilde Q_1}$ with $X_t=0$, that is with $\tilde Q_1$ in the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$, which is the orthogonal complement of the central line and is of complex dimension three; the operator is zero at $\tilde Q_1=0$ and of rank one elsewhere, and it is a two-step flag $\{0\}\subseteq\mathbb{C}e_t\subseteq\ker \langle\tilde Q_1,\cdot\rangle_{\natural}$.
 
 **Proof.** The vanishing of $X_t$ is the vanishing of the scalar coordinate, that is membership in the vector subspace; the rank statement is §*The Left Multiplication Is Rank One*, and the flag is the image inside the kernel, which is the shape of a square-zero operator.
 
@@ -169,7 +169,7 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 | $\langle\cdot,\cdot\rangle_{\natural}$ | the quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=X_tY_t+(\vec X,\vec Y)$, symmetric, non-degenerate, of Gram matrix the identity |
 | $L_{\tilde Q_1}$ | the left multiplication $\tilde Q_2\mapsto\tilde Q_1\bullet\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, rank one for $\tilde Q_1\neq0$ |
 | $E$ | the projection $E:\tilde Q_2\mapsto Y_te_t$ onto the central line, the operator of $e_t$ |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the central line and the vector subspace, the eigenspaces of the scalar coordinate |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | the central line and the vector subspace, the eigenspaces of the scalar coordinate |
 | idempotent, projector | an element, and an operator, equal to its own square |
 | $\mathbb{B}$ | the complex space $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 

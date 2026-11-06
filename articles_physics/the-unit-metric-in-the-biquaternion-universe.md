@@ -8,7 +8,7 @@ $$
 \delta_{\mu\nu}=(1,1,1,1),
 $$
 
-diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. It is the same in the $\mathbb{B}$ frame and in the $\mathbb{M}_-$ frame, and neither frame carries a second one.
+diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. It is the same in the $\mathbb{B}$ frame and in the $\mathbb{B}_{\Phi}$ frame, and neither frame carries a second one.
 
 The claim of this article is that this is the efficient object and not a minimal notation. It is read off the multiplication table instead of being postulated. It leaves no index to raise. And it makes the Lorentzian minus a fact of arithmetic instead of a convention that each article must declare.
 
@@ -56,7 +56,7 @@ and the four units are pairwise orthogonal, since $\mathrm{Sc}(e_x^\natural e_y)
 
 **It has no free parameter.** A symmetric $4\times4$ real matrix has ten independent entries. Here four are fixed at $+1$ by the norms of the four units, six at $0$ by their orthogonality, and every one of the ten by the multiplication. There is no signature to pick, no scale to fix and no convention to declare.
 
-**A frame carries a coordinate, not a metric.** Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{M}_-$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.
+**A frame carries a coordinate, not a metric.** Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{B}_{\Phi}$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.
 
 ## The Metric Is Read Off the Product
 
@@ -119,14 +119,14 @@ One positive direction and three negative, $(1,3)$. The mirror of the material c
 
 ### The general reading
 
-On $\mathbb{B}$ the four coefficients are complex and the value of the norm is complex. On the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, it is $q_t^2+q_x^2+q_y^2+q_z^2$, positive definite, signature $(4,0)$: the ordinary Euclidean form.
+On $\mathbb{B}$ the four coefficients are complex and the value of the norm is complex. On the real-quaternion subspace $\mathbb{B}_{H}$, where the coefficients are real, it is $q_t^2+q_x^2+q_y^2+q_z^2$, positive definite, signature $(4,0)$: the ordinary Euclidean form.
 
 | reading | coordinate | interval | signature |
 |---|---|---|---|
 | $\mathbb{B}$ | $Q_\mu\in\mathbb{C}$ | complex in general | none until a sector is imposed |
-| $\mathbb{H}_{\mathbb{B}}$ | $q_\mu\in\mathbb{R}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ |
-| $\mathbb{M}_-$ | $Q_t=i c r'_t$, $Q_k=x_k$ | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
-| $\mathbb{M}_+$ | $Q_t=c r_t$, $Q_k=i r'_{x_k}$ | $c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
+| $\mathbb{B}_{H}$ | $q_\mu\in\mathbb{R}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ |
+| $\mathbb{B}_{\Phi}$ | $Q_t=i c r'_t$, $Q_k=x_k$ | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
+| $\mathbb{B}_{\Psi}$ | $Q_t=c r_t$, $Q_k=i r'_{x_k}$ | $c^2 r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
 
 **The metric did not move.** In all four rows the coefficient tuple is $\delta_{\mu\nu}=(1,1,1,1)$; the column that changes is the coordinate. So the answer to the question *how does a metric of $1,1,1,1$ give $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$* is: it gives the four coefficients $+1$, and the sign is delivered by the coordinate. The metric does its work as a coefficient, and the $i$ does the rest.
 
@@ -144,7 +144,7 @@ The answer has three steps.
 
 **Therefore the sign is checkable in one and not in the other.** In the unit scheme a reader checks the minus by squaring: $(i c r'_t)^2=-c^2{r'_{t}}^2$, and $i^2=-1$ is arithmetic. In the absorbed scheme the minus is an entry of an array, and the reader can only check it against the author's declaration. One of the two can be audited by a reader who does not trust the author.
 
-**What the signature still is.** The interval on $\mathbb{M}_-$ has signature $(3,1)$ and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ has signature $(4,0)$, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
+**What the signature still is.** The interval on $\mathbb{B}_{\Phi}$ has signature $(3,1)$ and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ has signature $(4,0)$, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
 
 ## What the Choice Buys
 
@@ -199,7 +199,7 @@ None of the three is a gain in content. Each is a gain in familiarity, and famil
 
 1. **The $i$ is relocated, not removed.** With the original generators the relation reads $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}I_4$, carrying a stray minus; with the rescaled generators the $i$ sits inside each matrix, $\gamma'=i\gamma$. In both writings the $i$ is inside an object, where a reader cannot see it.
 2. **Two metrics instead of one.** The frame carries a metric again, so each frame must be declared with its metric and every display must say which is in force. That is a convention at the head of each article, and a convention can be stated wrongly.
-3. **A congruence law in place of a substitution.** The change of frame becomes a matrix statement, $g_{\mathbb{M}_-}=\Lambda^{\mathsf T}g_{\mathbb{B}}\Lambda$, with a matrix, a transpose and a law. The unit scheme writes $Q_t=ix_0$ and stops.
+3. **A congruence law in place of a substitution.** The change of frame becomes a matrix statement, $g_{\mathbb{B}_{\Phi}}=\Lambda^{\mathsf T}g_{\mathbb{B}}\Lambda$, with a matrix, a transpose and a law. The unit scheme writes $Q_t=ix_0$ and stops.
 4. **Index machinery returns.** With $g\neq\delta$ raising and lowering are live operations, so every index question acquires two parts: is it up or down, and in which metric.
 5. **The sign loses its provenance.** In the unit scheme the minus is checked by squaring. In the absorbed scheme it is a number in an array, checked only against the author's word, so a reader cannot audit it.
 6. **The material reading loses its anchor.** The imaginary temporal coefficient is what marks time as measured but not touched; a metric with $g_{00}=-1$ turns the same sign into a property of a matrix, and the reading has nothing algebraic left to stand on.

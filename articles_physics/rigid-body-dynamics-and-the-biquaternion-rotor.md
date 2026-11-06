@@ -6,7 +6,7 @@ The rotation group of three-dimensional space is the group $SO(3)$ of orientatio
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains the real quaternions as a subalgebra, so the rotor description of rotations is available inside the framework, and the algebra's additional structure — the two sectors and the complex structure — supplies the language for the angular velocity and the angular momentum. This article develops the rigid-body dynamics in that language. The main results are these.
 
-1. **Orientation is a rotor.** A rotation is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting on a vector by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u \vec e_k\tilde u^{*}$.
+1. **Orientation is a rotor.** A rotation is $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting on a vector by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u \vec e_k\tilde u^{*}$.
 2. **Angular velocity is the logarithmic derivative of the rotor.** The body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$ and the space-frame angular velocity is $\vec\omega_s=+2d\tilde u/dr'_t\tilde u^{\natural}$; both are real pure quaternions, and $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{*}$.
 3. **The kinetic energy is the inertia form of the angular velocity; for the free isotropic top it is the biquaternion norm.** For a spherical top, $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.
 4. **Euler's equations are one quaternion equation.** In the body frame, $d\vec L/dr'_t=\frac12[\vec L,\vec\omega_b]+\vec\tau$; the commutator is the cross product.
@@ -67,11 +67,11 @@ Two integrals are immediate for a torque-free body: the energy $T$ and the squar
 
 ### The Double Cover
 
-A unit real quaternion $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, defines a rotation by conjugation,
+A unit real quaternion $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, defines a rotation by conjugation,
 
 $$
 \tilde{Q}\longmapsto\tilde u\,\tilde{Q}\,\tilde u^{*},
-\qquad \tilde{Q}\in\mathbb{H}_{\mathbb{B}} .
+\qquad \tilde{Q}\in\mathbb{B}_{H} .
 $$
 
 For a pure vector $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
@@ -106,7 +106,7 @@ $$
 so $\tilde u^{\natural}d\tilde u/dr'_t$ has no scalar part; the same argument applies to $d\tilde u/dr'_t\tilde u^{\natural}$. Hence
 
 $$
-\vec\omega_b,\vec\omega_s\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_- ,
+\vec\omega_b,\vec\omega_s\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi} ,
 $$
 
 the real vector part, exactly the space in which ordinary three-vectors live in this algebra.
@@ -319,7 +319,7 @@ The construction shows the two canonical quadratic forms of the algebra at work 
 
 **Structurally the algebra's.**
 
-1. The orientation is a rotor $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, and the composition of rotations is quaternion multiplication; the double cover is visible as the spinor sign $\tilde u\to-\tilde u$ at $2\pi$.
+1. The orientation is a rotor $\tilde u\in\mathbb{B}_{H}$ with $\langle\tilde u\rangle_{\natural}=e_t$, and the composition of rotations is quaternion multiplication; the double cover is visible as the spinor sign $\tilde u\to-\tilde u$ at $2\pi$.
 2. The angular velocity is the logarithmic derivative of the rotor, $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$ and $\vec\omega_s=+2d\tilde u/dr'_t\tilde u^{\natural}$, and both lie in the real vector part, which is exactly where three-vectors live in the algebra.
 3. The spherical top's kinetic energy is the **biquaternion norm** $\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; a general inertia tensor is a positive-definite symmetric deformation of the biquaternion norm on the real vector part.
 4. Euler's equations are one quaternion equation with a commutator, $d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]+\vec\tau$, the commutator being twice the cross product.
@@ -342,7 +342,7 @@ The rigid body is described in the biquaternion algebra as follows.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Orientation rotor (unit real quaternion) |
+| $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Orientation rotor (unit real quaternion) |
 | $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ | Rotation by rotor conjugation |
 | $\vec e_{k,b}=\tilde u\vec e_k\tilde u^{*}$ | Body axes |
 | $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dr'_t$ | Body-frame angular velocity |

@@ -41,7 +41,7 @@ $$
 X\longmapsto i\,e_\mu\,X\,\vec e_{\nu(\mu)},
 $$
 
-where $\vec e_{\nu(\mu)}$ is the unit the frame pairs with $x_\mu$ (*Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, for the coordinate and the metric, and §*The Rules* for the index). The current carries the label $L$: only the $L$ part of the down field enters, and the label is the one of *Special Element Conventions*, §*The Chirality Convention*. The adjoint is the dagger of *Operator and Calculus Conventions*, §*The Operators*, and the current's factor $i\vec e_x$ sits after it, which is what the display writes.
+where $\vec e_{\nu(\mu)}$ is the unit the frame pairs with $x_\mu$ (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, for the coordinate and the metric, and §*The Rules* for the index). The current carries the label $L$: only the $L$ part of the down field enters, and the label is the one of *Special Element Conventions*, §*The Chirality Convention*. The adjoint is the dagger of *Operator and Calculus Conventions*, §*The Operators*, and the current's factor $i\vec e_x$ sits after it, which is what the display writes.
 
 **The two factors.** The vertex is therefore a product of two factors that do not mix: the generator above, read with the label $L$, and the mixing $V$. The framework supplies the first exactly — it is the algebra's own generator — and the second is an arbitrary $*$-unitary operator on $\mathcal{F}$. The only requirement is $V\in\mathrm{U}(N_g)$: it comes from the framework, because the flavour rotation must preserve the norm on $\mathcal{F}$, and it says nothing about which $V$. The companion articles write the same placement with the unit on the algebra factor, which states that the algebra factor is untouched; that is what the product with the number $V_{ab}$ says here. The gauge sector does not select the pattern.
 
@@ -73,7 +73,7 @@ the split of the $N_g^2$ coordinates of $\mathrm{U}(N_g)$ into the $\frac{N_g(N_
 
 ## Why the CP Phase Is Not Central
 
-**The centre acts on all generations alike.** The companion article on the number of generations establishes that the algebra acting on the $N_g$ fields is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})\cong M_{2N_g}(\mathbb{C})$ and that its centre is $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$: a **single** central phase, acting on every generation with the same phase. A phase that distinguishes one generation from another — which is what a flavour-mixing phase does — cannot sit in the centre. It must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra.
+**The centre acts on all generations alike.** The companion article on the number of generations establishes that the algebra acting on the $N_g$ fields is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})\cong M_{2N_g}(\mathbb{C})$ and that its centre is $\mathbb{B}_{C}\otimes I_{N_g}\cong\mathbb{C}$: a **single** central phase, acting on every generation with the same phase. A phase that distinguishes one generation from another — which is what a flavour-mixing phase does — cannot sit in the centre. It must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra.
 
 **The consequence for the CKM phase.** The CKM phase is therefore a **flavour-factor** phase: it is an entry of the $*$-unitary matrix on $\mathcal{F}$, and its CP-odd character is a property of that matrix, not of the algebra's central structure. This is a structural statement of the framework and one of its few definite contributions to the flavour sector: the algebra's centre is generation-blind, so the framework's own central phases — the vector phase and the volume element — are CP-even in the flavour sense, and the observed CP violation must be carried by the flavour factor. The companion article on the electric dipole moment draws the consequence: the CP-odd phase that the EDM would measure sits on the same factor, and the framework's algebra supplies no phase of its own.
 
@@ -230,7 +230,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 | The CKM matrix as an operator on the generation label | **Supplied**; the algebra factor untouched |
 | Gauge-sector flavour universality and the GIM mechanism | **Supplied**; the gauge vertex is the unit in flavour space |
 | The count $(N_g-1)^2$, and $N_g\ge3$ for a CP phase | **Supplied** by the $*$-unitary group of the flavour factor; standard counting |
-| The non-centrality of the CP phase | **Supplied**; the centre is $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ and acts on all generations alike |
+| The non-centrality of the CP phase | **Supplied**; the centre is $\mathbb{B}_{C}\otimes I_{N_g}$ and acts on all generations alike |
 | The Jarlskog invariant as a flavour-factor commutator | **Supplied** in form; standard in content |
 | The mass-matrix origin of the mixing, $V=X_u^\dagger X_d$ | **Transcribed**; standard |
 | The Wolfenstein parametrisation and the unitarity triangle | **Transcribed**; standard |
@@ -255,7 +255,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the cells that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
-**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
+**The frame and the signs.** The names below are the $\mathbb{B}_{\Phi}$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -346,14 +346,14 @@ so it enters with the central $i$, and the real algebra generated by the four $\
 
 The CKM matrix is a $*$-unitary operator on the framework's generation factor, multiplying the label and leaving the algebra factor untouched, and arising from the mismatch of the up- and down-type mass operators, $V=X_u^\dagger X_d$, both of which act on the labels while the algebra factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current term is the generator $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ read with the label $L$ and multiplied by the number $V_{ab}$, and the neutral currents are the unit on the labels and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
 
-The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is the imaginary part of the determinant of the commutator of the two mass-matrix products, normalised by the six mass-squared differences; the recomputation with the standard parameters gave $J=3.00\times10^{-5}$, consistent with the quoted $3.1\times10^{-5}$ to the rounding of the inputs, with unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
+The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{B}_{C}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is the imaginary part of the determinant of the commutator of the two mass-matrix products, normalised by the six mass-squared differences; the recomputation with the standard parameters gave $J=3.00\times10^{-5}$, consistent with the quoted $3.1\times10^{-5}$ to the rounding of the inputs, with unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_-,\mathbb{C}_{\mathbb{B}}$ | Material sector (the frame of the closing section); centre |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{C}$ | Material sector (the frame of the closing section); centre |
 | $\tilde{Ξ}_{\mathrm{sp},t,a}\in\mathbb{B}$ | The field of type $t$ and generation $a$; an element of the algebra |
 | $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ | The generator of the coordinate $x_\mu$, written as the action it is |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, by the label $L$ or $R$ |
@@ -366,7 +366,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm u,a}$, $\tilde{Ξ}_{\mathrm{sp},\mathrm d,b}$; $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, with the factor $i\vec e_x$ | Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i(ie_\mu\tilde{Ξ}_{\mathrm{sp},L}\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$ | The charged-current term |
 | the unit on the labels | Gauge vertices; flavour universality (GIM) |
-| $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
+| $\mathbb{B}_{C}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |
 | $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})$ | Jarlskog invariant |
 | $J=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$ | Jarlskog invariant, three-angle form |

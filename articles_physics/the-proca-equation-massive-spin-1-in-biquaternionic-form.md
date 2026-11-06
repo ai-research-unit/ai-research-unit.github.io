@@ -4,7 +4,7 @@
 
 The Maxwell field is massless, and its masslessness is what reduces four potential components to two physical transverse polarizations: the gauge freedom removes one combination and the field equation removes another. Give the vector field a mass and the gauge freedom disappears. The equation of motion then becomes the **Proca equation**, and the third, longitudinal polarization becomes physical, with the two helicities no longer Lorentz-invariant labels. The Proca field is the prototype of a massive spin-one field, and it is the first field equation that the self-dual split of the material sector supports.
 
-The purpose of this article is to write the Proca system in biquaternionic form and to read its content from the algebra. The equation is a single biquaternion equation for the four-potential $\tilde{A}\in\mathbb{M}_-$ and its field strength $\tilde{F}\in\mathrm{Vect}(\mathbb{B})$. Two structural facts organise everything. First, the equation is **homogeneous but not gauge invariant**: the source that the companion Maxwell equation attributes to an external current is supplied here by the potential itself, so the equation is linear in $\tilde{A}$ and the gauge freedom of the massless theory is absent. Second, the divergence of the equation is not an identity: applying the conjugate gradient to the equation and taking its scalar part forces the **Lorenz condition** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$, exactly as taking the divergence of the standard Proca equation forces $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$. The Lorenz condition is a consequence of the equation, not a gauge choice, and that is the algebraic statement of the disappearance of the gauge freedom.
+The purpose of this article is to write the Proca system in biquaternionic form and to read its content from the algebra. The equation is a single biquaternion equation for the four-potential $\tilde{A}\in\mathbb{B}_{\Phi}$ and its field strength $\tilde{F}\in\mathbb{B}_{V}$. Two structural facts organise everything. First, the equation is **homogeneous but not gauge invariant**: the source that the companion Maxwell equation attributes to an external current is supplied here by the potential itself, so the equation is linear in $\tilde{A}$ and the gauge freedom of the massless theory is absent. Second, the divergence of the equation is not an identity: applying the conjugate gradient to the equation and taking its scalar part forces the **Lorenz condition** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$, exactly as taking the divergence of the standard Proca equation forces $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$. The Lorenz condition is a consequence of the equation, not a gauge choice, and that is the algebraic statement of the disappearance of the gauge freedom.
 
 Once the Lorenz condition is available, the Proca equation collapses to the Klein–Gordon equation for each component, and the physical content is transparent: three real polarization directions at each wavevector — two transverse and one longitudinal — with the dispersion relation $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The counting is done here explicitly, and it is contrasted with the massless case, where the same calculation leaves two real directions because a residual gauge transformation removes the third. The article closes by locating the massive field relative to the self-dual split of the companion article: the field strength remains a pure vector of the algebra and so keeps its self-dual and anti-self-dual coordinates, but it is no longer harmonic, and the mass term is precisely what the biquaternion Maxwell equation calls a source.
 
@@ -210,7 +210,7 @@ $$
 A_t = i\,\frac{c}{\omega}\,\vec k\cdot\vec a.
 $$
 
-For real $\vec k$ and real $\vec a$ this $A_t$ is purely imaginary, so the potential remains in the material sector $\mathbb{M}_-$, as it must. No condition is placed on the direction of $\vec a$.
+For real $\vec k$ and real $\vec a$ this $A_t$ is purely imaginary, so the potential remains in the material sector $\mathbb{B}_{\Phi}$, as it must. No condition is placed on the direction of $\vec a$.
 
 ### Counting
 
@@ -327,7 +327,7 @@ $$
 \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right),
 $$
 
-with $\tilde{A}\in\mathbb{M}_-$ and $\tilde{F}\in\mathrm{Vect}(\mathbb{B})$. Unlike the massless Maxwell equation, it is not gauge invariant: the mass term couples the potential to itself, and the gauge freedom of the massless theory is absent.
+with $\tilde{A}\in\mathbb{B}_{\Phi}$ and $\tilde{F}\in\mathbb{B}_{V}$. Unlike the massless Maxwell equation, it is not gauge invariant: the mass term couples the potential to itself, and the gauge freedom of the massless theory is absent.
 
 The divergence of the equation is not an identity. Applying $\tilde{\nabla}^{\natural}$ and taking the scalar part, the d'Alembertian is central and scalar, the field strength is a pure vector, and the left-hand side vanishes identically; the mass then forces the **Lorenz condition** $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ as a consequence of the equation of motion. With the constraint in hand, the field strength is the conjugate gradient of the potential and the equation reduces to the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{A}=0$ for each component. The two together — Klein–Gordon and Lorenz — are equivalent to the Proca equation.
 
@@ -340,10 +340,10 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathrm{Vect}(\mathbb{B})$ | Complex three-dimensional vector part |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{V}$ | Complex three-dimensional vector part |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and conjugate, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{M}_-$ |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |
 | $\mu = mc/\hbar$ | Inverse Compton wavevector of the mass; $\mu^2=m^2c^2/\hbar^2$ |

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the Casimir $\tilde S_{\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{M}_+$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
+The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the Casimir $\tilde S_{\mathrm{tot}}^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{B}_{\Psi}$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
 
 This article develops that remark into the general machinery. Its subject is the **addition of angular momenta and the Clebsch–Gordan coefficients** as they appear inside the biquaternion framework: the coupled operators, the coupled basis, the decomposition of a tensor product of rotation multiplets, and the explicit coefficients for the two cases the framework itself supports, $\tfrac12\otimes\tfrac12$ and $1\otimes1$.
 
-The distinction between what is algebraic and what is imported runs through everything below and is worth stating at the outset. The Clebsch–Gordan coefficients are pure numbers; they belong to the representation theory of the rotation group and are independent of any particular realisation of the spin operators. What the biquaternion framework supplies is three things: the spin-$\tfrac12$ factor as the fundamental module of $\mathbb{B}$, with its operators $\tilde S_k$ as elements of $\mathbb{M}_+$; the two-factor arena $\mathbb{B}\otimes\mathbb{B}$, in which a composite of two fundamental systems lives; and the identification of the $s=1$ and $s=0$ coupled subspaces with the symmetric and antisymmetric parts of the tensor square, which are canonically defined subspaces of the algebra. What the framework does not supply is a module of any dimension other than two. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, so it realises $s=0$ and $s_{\mathrm{tot}}=\tfrac12$ as modules and reaches $s\ge1$ only through tensor products, symmetric powers, or the adjoint action. The coupling of two spin-$\tfrac12$ factors is therefore the central case, and the coupling of two spin-$1$ factors is available only because each spin-$1$ factor is itself built from two fundamental ones.
+The distinction between what is algebraic and what is imported runs through everything below and is worth stating at the outset. The Clebsch–Gordan coefficients are pure numbers; they belong to the representation theory of the rotation group and are independent of any particular realisation of the spin operators. What the biquaternion framework supplies is three things: the spin-$\tfrac12$ factor as the fundamental module of $\mathbb{B}$, with its operators $\tilde S_k$ as elements of $\mathbb{B}_{\Psi}$; the two-factor arena $\mathbb{B}\otimes\mathbb{B}$, in which a composite of two fundamental systems lives; and the identification of the $s=1$ and $s=0$ coupled subspaces with the symmetric and antisymmetric parts of the tensor square, which are canonically defined subspaces of the algebra. What the framework does not supply is a module of any dimension other than two. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, so it realises $s=0$ and $s_{\mathrm{tot}}=\tfrac12$ as modules and reaches $s\ge1$ only through tensor products, symmetric powers, or the adjoint action. The coupling of two spin-$\tfrac12$ factors is therefore the central case, and the coupling of two spin-$1$ factors is available only because each spin-$1$ factor is itself built from two fundamental ones.
 
 The article is organised as follows. The next section recalls the angular-momentum algebra and fixes the notation for the coupled problem. The section after that sets up two independent systems inside $\mathbb{B}\otimes\mathbb{B}$ and defines the total operators. Then the Clebsch–Gordan series is stated and its dimension count checked. The two cases are then worked out: $\tfrac12\otimes\tfrac12$, where the coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square and the coefficients are obtained by a one-line ladder computation; and $1\otimes1$, where the coefficients are tabulated. The following section treats the Clebsch–Gordan transformation as an element of the algebra and identifies the sense in which it is not a product of one-factor transformations. The recursion relations satisfied by the coefficients and the Condon–Shortley phase convention are then recorded, and a closing section separates the algebraic content from the imported content.
 
@@ -14,7 +14,7 @@ The article is organised as follows. The next section recalls the angular-moment
 
 The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Unit, Index and Notation Conventions*, and none is restated here.
 
-An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{M}_+$ satisfying
+An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{B}_{\Psi}$ satisfying
 
 $$
 [\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\,\epsilon_{ijk}\tilde S_{\mathrm{tot},k} .
@@ -35,7 +35,7 @@ $$
 [\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}]=2\hbar\tilde S_{\mathrm{tot},3} .
 $$
 
-The ladder operators are not Hermitian and do not lie in $\mathbb{M}_+$: they satisfy $\tilde S_{\mathrm{tot},\pm}^{*}=\tilde S_{\mathrm{tot},\mp}$, so that $\tilde S_{\mathrm{tot},\pm}^{*}\ne\tilde S_{\mathrm{tot},\pm}$ and $\tilde S_{\mathrm{tot},\pm}$ lies in the full algebra. The Casimir may be written
+The ladder operators are not Hermitian and do not lie in $\mathbb{B}_{\Psi}$: they satisfy $\tilde S_{\mathrm{tot},\pm}^{*}=\tilde S_{\mathrm{tot},\mp}$, so that $\tilde S_{\mathrm{tot},\pm}^{*}\ne\tilde S_{\mathrm{tot},\pm}$ and $\tilde S_{\mathrm{tot},\pm}$ lies in the full algebra. The Casimir may be written
 
 $$
 \tilde S_{\mathrm{tot}}^2=\tilde S_{\mathrm{tot},3}^2+\tfrac{1}{2}\left(\tilde S_{\mathrm{tot},+}\tilde S_{\mathrm{tot},-}+\tilde S_{\mathrm{tot},-}\tilde S_{\mathrm{tot},+}\right).
@@ -57,7 +57,7 @@ $$
 For the fundamental case $s_{\mathrm{tot}}=\tfrac12$ the algebra supplies the operators as algebra elements,
 
 $$
-\tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k\in\mathbb{M}_+,
+\tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k\in\mathbb{B}_{\Psi},
 $$
 
 with $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ following from the quaternion product rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\epsilon_{\mu\nu\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
@@ -401,7 +401,7 @@ Two consistency checks are worth recording. First, the recursion relations repro
 
 It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.
 
-**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde S_{1,k}+\tilde S_{2,k}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
+**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde S_{1,k}+\tilde S_{2,k}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{B}_{\Psi}$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
 
 **Imported.** The Clebsch–Gordan coefficients themselves, including their numerical values, their orthogonality and completeness, the recursion relations, the closed Wigner formula, and the Condon–Shortley phase convention. These belong to the representation theory of the rotation group. The framework changes nothing about them; it supplies the objects on which they act.
 
@@ -441,11 +441,11 @@ The article established the following.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_+$ | Hermitian subspace (observables, states) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables, states) |
 | $\tilde S_{\mathrm{tot},k}$ | Angular-momentum operators, $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ |
 | $\tilde S_{\mathrm{tot},\pm}=\tilde S_{\mathrm{tot},1}\pm i\tilde S_{\mathrm{tot},2}$ | Ladder operators |
 | $\tilde S_{\mathrm{tot}}^2=\sum_k\tilde S_{\mathrm{tot},k}^2$ | Casimir |
-| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{M}_+$ |
+| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{B}_{\Psi}$ |
 | $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
 | $\tilde S_{1,k}=\tilde S_k\otimes e_t,\ \tilde S_{2,k}=e_t\otimes\tilde S_k$ | Factor operators |

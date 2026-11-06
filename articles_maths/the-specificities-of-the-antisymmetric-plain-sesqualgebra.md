@@ -21,7 +21,7 @@ $$
 so the right multiplication by $e_t$ is the **projection onto the vector subspace** along the centre. The block is the **only** one of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* in which some element multiplies on the right as that projection, and the element is necessarily $e_t$. Equivalently, the block is the only one in which the canonical splitting
 
 $$
-\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}
+\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}
 $$
 
 is realised by the multiplication on the right by a single element, the element being the unit of the ambient algebra, which is not a unit of the block. The criterion is stated as the identity $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$, it is proved equivalent to the projector classification $R^{\diamond}_{\tilde Q_1}{}^{2}=R^{\diamond}_{\tilde Q_1}\Leftrightarrow\tilde Q_1\in\{0,e_t\}$, and it isolates the block among the twelve. The model is *The Biquaternion Algebra*, which states left alternativity as its criterion; the twins are *The Specificities of the General Quaternionic Algebra*, *The Specificities of the Symmetric Quaternionic Algebra* and *The Specificities of the Symmetric Plain Algebra*.
@@ -40,7 +40,7 @@ L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2,
 R^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1,
 $$
 
-and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{C}_{\mathbb{B}}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{C}_{\mathbb{B}}$, the vector subspace is $\operatorname{Vect}(\mathbb{B})$, and the two meet at the origin. The **twelve** are $\tilde Q_1\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{B}_{C}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{B}_{C}$, the vector subspace is $\mathbb{B}_{V}$, and the two meet at the origin. The **twelve** are $\tilde Q_1\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Governing Identity
 
@@ -98,7 +98,7 @@ So the identity holds exactly when $B\in\{0,I\}$, that is $\tilde Q_1\in\{0,e_t\
 
 **Corollary (no other projector realises the splitting).** The projection onto the vector subspace is a right multiplication of the block for the element $e_t$ and for no other element, and the projection onto the centre is not a right multiplication of the block at all.
 
-*Proof.* If $R^{\diamond}_{\tilde Q_1}=P_{\operatorname{Vect}}$ then it is a projector, so $\tilde Q_1\in\{0,e_t\}$ by the theorem, and $R^{\diamond}_{0}=0\neq P_{\operatorname{Vect}}$, leaving $\tilde Q_1=e_t$. If instead $R^{\diamond}_{\tilde Q_1}=P_{\mathbb{C}_{\mathbb{B}}}$, the projection onto the centre, then this operator is a projector too, so again $\tilde Q_1\in\{0,e_t\}$, and neither $R^{\diamond}_{0}=0$ nor $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ is the projection onto the centre.
+*Proof.* If $R^{\diamond}_{\tilde Q_1}=P_{\operatorname{Vect}}$ then it is a projector, so $\tilde Q_1\in\{0,e_t\}$ by the theorem, and $R^{\diamond}_{0}=0\neq P_{\operatorname{Vect}}$, leaving $\tilde Q_1=e_t$. If instead $R^{\diamond}_{\tilde Q_1}=P_{\mathbb{B}_{C}}$, the projection onto the centre, then this operator is a projector too, so again $\tilde Q_1\in\{0,e_t\}$, and neither $R^{\diamond}_{0}=0$ nor $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ is the projection onto the centre.
 
 The criterion is therefore an **operator criterion**: the splitting is realised on the right, and the projector that realises it is unique.
 
@@ -142,13 +142,13 @@ The identity $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$, with the projector cl
 - **One idempotent.** The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ is solved by the parity, not by the projection: an idempotent is a pure vector, and the diagonal of a pure vector is $-\vec p\times\overline{\vec p}$, purely imaginary, so the equation has the origin alone for its solution (*Idempotents of the Antisymmetric Plain Sesqualgebra*). The projection explains why the element calculus has no other ingredient to offer here: the projector $R^{\diamond}_{e_t}$ is not the multiplication of an idempotent.
 - **No root of $-1$ or $+1$.** Every value is a pure vector, being the image of the projection; the diagonal is a value, so it has zero scalar part, while $\pm e_t$ is central with scalar part $\pm1$ (*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*).
 - **Thin nilpotents.** The diagonal is $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, the Hermitian square read through the projection, and it vanishes on the cone over the real unit sphere; the index of the block is two (*Nilpotents of the Antisymmetric Plain Sesqualgebra*).
-- **Every nonzero element a zero divisor.** The equation $\tilde Q_1\diamond\tilde Q_2=0$ asks for $\tilde Q_1\tilde Q_2^{*}\in\mathbb{C}_{\mathbb{B}}$, and the projection makes the central membership attainable from every nonzero $\tilde Q_1$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+- **Every nonzero element a zero divisor.** The equation $\tilde Q_1\diamond\tilde Q_2=0$ asks for $\tilde Q_1\tilde Q_2^{*}\in\mathbb{B}_{C}$, and the projection makes the central membership attainable from every nonzero $\tilde Q_1$ (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 ## The Boundary of the Criterion
 
 The criterion is sharp and it has one neighbour on each side.
 
-**The antisymmetric quaternionic algebra.** The product $\tilde Q_1\wedge_{\natural}\tilde Q_2$ realises the splitting by its left multiplication, $L_{e_t}=P_{\operatorname{Vect}}$, and by its right multiplication it acts by $-P_{\operatorname{Vect}}$; it is the left twin of the block, and its operator layer is *Introduction to the Antisymmetric Quaternionic Algebra* together with *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, the article of its own specificities being outside the register of the present menu. The block is the right twin, and the two together say that the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ is realised by a single element in exactly two of the twelve structures, on opposite sides.
+**The antisymmetric quaternionic algebra.** The product $\tilde Q_1\wedge_{\natural}\tilde Q_2$ realises the splitting by its left multiplication, $L_{e_t}=P_{\operatorname{Vect}}$, and by its right multiplication it acts by $-P_{\operatorname{Vect}}$; it is the left twin of the block, and its operator layer is *Introduction to the Antisymmetric Quaternionic Algebra* together with *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, the article of its own specificities being outside the register of the present menu. The block is the right twin, and the two together say that the splitting $\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}$ is realised by a single element in exactly two of the twelve structures, on opposite sides.
 
 **The conjugate-commutative structures.** $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ are conjugate-commutative, and their right multiplication by $e_t$ is the projection onto the centre for $\tilde Q_1\bullet_{*}\tilde Q_2$ and the natural conjugation for $\tilde Q_1\bullet_{\natural*}\tilde Q_2$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
 
@@ -164,7 +164,7 @@ R^{\diamond}_{e_t}=P_{\operatorname{Vect}},
 \tilde Q_1\diamond e_t=\operatorname{Vect}\tilde Q_1,
 $$
 
-the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\tilde Q_1\wedge_{\natural}\tilde Q_2$ realises the splitting on the left and is the twin.
+the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\tilde Q_1\wedge_{\natural}\tilde Q_2$ realises the splitting on the left and is the twin.
 
 The identity is equivalent to the projector classification of the block: a right multiplication is a projector exactly for the elements $0$ and $e_t$, the second being the projection onto the vector subspace and the first the zero operator. The companion law, conjugate-alternation, isolates the block together with $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the projection criterion separates the pair. Each Common Theory article of the block — the absence of the unit and the inverse, the unique idempotent, the absent roots of $\pm1$, the thin nilpotents and the full zero-divisor set — is a consequence of the one identity.
 
@@ -175,7 +175,7 @@ The identity is equivalent to the projector classification of the block: a right
 | $\star$, $\diamond$ | a generic product and the product of the block |
 | $L^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde Q_1}$ | the left and the right multiplication by $\tilde Q_1$ |
 | $P_{\operatorname{Vect}}$ | the projection onto the vector subspace along the centre |
-| $P_{\mathbb{C}_{\mathbb{B}}}$ | the projection onto the centre along the vector subspace |
+| $P_{\mathbb{B}_{C}}$ | the projection onto the centre along the vector subspace |
 | $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ | the criterion, the splitting realised on the right |
 | $L^{\diamond}_{e_t}=-\overline{\cdot}\circ P_{\operatorname{Vect}}$ | the left multiplication by the ambient unit |
 | $\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2}$ | the companion law, conjugate-alternation |

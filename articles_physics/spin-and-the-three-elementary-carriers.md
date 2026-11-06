@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}$ has three elementary carrier types, represented by four spaces, and their spins are $0$, $\tfrac12$ and $1$. The centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ carries $0$ under the adjoint action; each Peirce plane $S_\pm=\mathbb{B}\tilde\Pi_\pm$ carries $\tfrac12$ under left multiplication; the traceless part $V=\ker\operatorname{tr}$ carries $1$ under the adjoint action. There is no fourth elementary value. Every finite-dimensional associative module of $\mathbb{B}\cong M_2(\mathbb{C})$ is a direct sum of copies of the two-dimensional simple module, so the left action sees only $\tfrac12$; the adjoint action adds the trivial centre and the three-dimensional traceless part, so it sees $0$ and $1$.
+The biquaternion algebra $\mathbb{B}$ has three elementary carrier types, represented by four spaces, and their spins are $0$, $\tfrac12$ and $1$. The centre $\mathbb{B}_{C}=\mathbb{C}e_t$ carries $0$ under the adjoint action; each Peirce plane $S_\pm=\mathbb{B}\tilde\Pi_\pm$ carries $\tfrac12$ under left multiplication; the traceless part $V=\ker\operatorname{tr}$ carries $1$ under the adjoint action. There is no fourth elementary value. Every finite-dimensional associative module of $\mathbb{B}\cong M_2(\mathbb{C})$ is a direct sum of copies of the two-dimensional simple module, so the left action sees only $\tfrac12$; the adjoint action adds the trivial centre and the three-dimensional traceless part, so it sees $0$ and $1$.
 
 These are also the spins of every observed elementary particle. The Higgs boson is $0$; the six quarks and the six leptons are $\tfrac12$; the photon, the $W^\pm$, the $Z$ and the eight gluons are $1$. No observed elementary particle carries another spin. The graviton of spin $2$ is not an observed particle, and the hadrons of spin $\tfrac32$, $2$ and higher are bound states. The match is a match of labels: the algebra supplies the set, and it does not select which particle carries which spin.
 
@@ -32,7 +32,7 @@ The article has two theses. First, the **three carrier types are the elementary 
 
 | carrier | action | complex dimension | weights of $\vec u\cdot\vec S$ | $s$ | physical reading |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | $\operatorname{ad}$ | $1$ | $0$ | $0$ | scalar, no internal index |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | $\operatorname{ad}$ | $1$ | $0$ | $0$ | scalar, no internal index |
 | $S_+=\mathbb{B}\tilde\Pi_+$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | two-state spinor |
 | $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
 | $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
@@ -41,7 +41,7 @@ Spin is the intrinsic angular momentum of a particle; in the rest frame it is th
 
 ## Why There Is No Fourth
 
-Here *elementary* means an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb{B}$ under one of the two actions, left multiplication or the commutator. Two subspaces define the same carrier when the actions are isomorphic. A general Lie-algebra module is not of this form. The left action has one irreducible type: every minimal left ideal is isomorphic to $S$, and $S_+$ and $S_-$ are two representatives. The adjoint action has two: the centre $\mathbb{C}_{\mathbb{B}}$ and the traceless part $V$. The algebra itself is reducible under both.
+Here *elementary* means an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb{B}$ under one of the two actions, left multiplication or the commutator. Two subspaces define the same carrier when the actions are isomorphic. A general Lie-algebra module is not of this form. The left action has one irreducible type: every minimal left ideal is isomorphic to $S$, and $S_+$ and $S_-$ are two representatives. The adjoint action has two: the centre $\mathbb{B}_{C}$ and the traceless part $V$. The algebra itself is reducible under both.
 
 The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the spin element $\vec u\cdot\vec S=\vec{Ζ}/2$ is a traceless $2\times2$ matrix with $(2\,\vec u\cdot\vec S)^2=1$; its weights are $\pm\tfrac12$ and $s=\tfrac12$. The associative left action therefore sees only $s=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $s=0$.
 
@@ -59,7 +59,7 @@ and no other value occurs on $\mathbb{B}$ alone. Higher spin is not forbidden. I
 
 | spin | established elementary particles | carrier in $\mathbb{B}$ |
 |---|---|---|
-| $0$ | Higgs boson $H$ | centre $\mathbb{C}_{\mathbb{B}}$ |
+| $0$ | Higgs boson $H$ | centre $\mathbb{B}_{C}$ |
 | $\tfrac12$ | quarks $u,d,c,s,t,b$; leptons $e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau$ | Peirce plane $S_\pm$ |
 | $1$ | photon $\gamma$; $W^+,W^-,Z$; eight gluons $g$ | traceless part $V$ |
 
@@ -134,7 +134,7 @@ Three module-theoretic facts carry the reading.
 - **The algebra is the endomorphism algebra.** $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, and the left regular module splits as $\mathbb{B}\cong S\oplus S$. The algebra is the algebra of all linear maps of the carrier, and the regular module is two copies of it.
 - **The Lorentz action is the left action.** A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$, and the action is the defining representation of $SL(2,\mathbb{C})$.
 
-The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{M}_-$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
+The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{B}_{\Phi}$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
 
 One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the chirality. The chirality is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, whose two eigenspaces on $\Delta$ are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
 
@@ -159,7 +159,7 @@ $$
 \operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\operatorname{Sc}(\tilde\Pi\tilde R_\psi),
 $$
 
-which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{M}_+$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
+which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{B}_{\Psi}$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
 
 The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}_{\mathrm{sp}}$ and $e^{i\alpha}\tilde{Ξ}_{\mathrm{sp}}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
 
@@ -313,9 +313,9 @@ Three negative statements keep the reading exact.
 
 - **It is not the dual.** The dual of $S$ is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}$, the first row of the matrix model, reached by the Hermitian conjugation ${}^{*}$. The complement is a left ideal reached by right multiplication. A bra is not an antiparticle.
 - **It is not a second representation.** The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiralities are the two eigenspaces of the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ on $\Delta$, that is $S$ and its conjugate $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling is a **copy**, not a second representation.
-- **It is not a second sector.** Each ideal meets each sector in exactly one real dimension: $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, and similarly for the complement. Neither ideal is material or informational, and the sector split cuts across both. There is, in particular, no nonzero idempotent in $\mathbb{M}_-$, so the complement cannot be the material sector.
+- **It is not a second sector.** Each ideal meets each sector in exactly one real dimension: $S\cap\mathbb{B}_{\Psi}=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{B}_{\Phi}=\mathbb{R}\{i\tilde\Pi_+\}$, and similarly for the complement. Neither ideal is material or informational, and the sector split cuts across both. There is, in particular, no nonzero idempotent in $\mathbb{B}_{\Phi}$, so the complement cannot be the material sector.
 
-The independence is sharper than the dimension count. Multiplication by the central imaginary exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so a complex subspace contained in one sector is zero; the two ideals are complex two-dimensional and can never be split along $\mathbb{M}_\pm$. The sector content of an ideal sits entirely on its **diagonal** corner: $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent line $\mathbb{C}\vec\Upsilon_y$ meets both sectors in $\{0\}$. The sector label therefore attaches to the idempotent and not to the ladder: the doubling is an **informational** doubling, two idempotents of $\mathbb{M}_+$, and not a material–informational pair.
+The independence is sharper than the dimension count. Multiplication by the central imaginary exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so a complex subspace contained in one sector is zero; the two ideals are complex two-dimensional and can never be split along $\mathbb{B}_{\Psi,\Phi}$. The sector content of an ideal sits entirely on its **diagonal** corner: $\mathbb{C}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{C}\tilde\Pi_+\cap\mathbb{B}_{\Phi}=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent line $\mathbb{C}\vec\Upsilon_y$ meets both sectors in $\{0\}$. The sector label therefore attaches to the idempotent and not to the ladder: the doubling is an **informational** doubling, two idempotents of $\mathbb{B}_{\Psi}$, and not a material–informational pair.
 
 The map that does carry $S$ onto the complement at the level of the ring is the **coefficient conjugation** $\bar{\cdot}$, which fixes the four basis elements and negates $i$:
 
@@ -325,7 +325,7 @@ $$
 \bar S=\mathbb{B}\tilde\Pi_- .
 $$
 
-It is anti-linear and involutive; it is not the algebra's real structure $\flat$, whose fixed space is $\mathbb{M}_-$, and it is not multiplication by an element of the algebra. The complement is therefore reached by two different maps: the $\mathbb{B}$-linear right multiplication by the nilpotent, and the anti-linear coefficient conjugation. The first is the module isomorphism; the second is the ring-level conjugation. They agree on the subspace and differ in what they preserve.
+It is anti-linear and involutive; it is not the algebra's real structure $\flat$, whose fixed space is $\mathbb{B}_{\Phi}$, and it is not multiplication by an element of the algebra. The complement is therefore reached by two different maps: the $\mathbb{B}$-linear right multiplication by the nilpotent, and the anti-linear coefficient conjugation. The first is the module isomorphism; the second is the ring-level conjugation. They agree on the subspace and differ in what they preserve.
 
 ## What the Structures Do Not Carry
 
@@ -335,7 +335,7 @@ Three separations keep the article honest.
 - **No Born rule.** The probability pairing is the scalar part of the sesquilinear product, not of the plain product. It belongs to the second structure.
 - **No pairing of the carrier by the product.** The sesquilinear products do not preserve $S$: they couple a state to a conjugate slot and land outside the ideal. A sesquilinear product pairs the space; it does not act on it.
 
-A fourth separation is about the sectors. The carrier meets each of $\mathbb{M}_\pm$ in one real dimension, so **the spinor space is not a sector**, and its two structures are not the material–informational split. The sector split is a third structure, real and independent, and it cuts across the ideal.
+A fourth separation is about the sectors. The carrier meets each of $\mathbb{B}_{\Psi,\Phi}$ in one real dimension, so **the spinor space is not a sector**, and its two structures are not the material–informational split. The sector split is a third structure, real and independent, and it cuts across the ideal.
 
 The doubling adds its own separations:
 
@@ -371,7 +371,7 @@ The physics corpus states the same three values through different constructions.
 |---|---|---|---|
 | the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
 | the adjoint integer | the halved inner derivations $\tilde S_{\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
-| the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
+| the scalar | the rotations act trivially on the centre | $\mathbb{B}_{C}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
 | the tensor powers of the spinor | the symmetric part of $S^{\otimes 2s}$ | $S^{\otimes 2s}$ | $s$ |
 | the tensor powers of the vector | symmetric traceless rank-$s$ tensors of $V$ | $V^{\otimes s}$ | integer $s$ |
@@ -433,7 +433,7 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 
 | symbol | meaning |
 | --- | --- |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, the spin-$0$ carrier |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre, the spin-$0$ carrier |
 | $V=\ker\operatorname{tr}$ | the traceless part, the spin-$1$ carrier |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=e_t-\tilde\Pi_+$ | the vacuum idempotent and its Peirce complement |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | the nilpotent matrix units $E_{12}$ and $E_{21}$ |

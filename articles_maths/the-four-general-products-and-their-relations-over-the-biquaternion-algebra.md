@@ -73,7 +73,7 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu} Q_{2\mu}$, and the vector part is the one displayed.
 
-**The natural sign in the first slot.** The first factor is read through ${}^{\natural}$, which is a $\mathbb{C}$-linear anti-automorphism and an involution, with $+1$-eigenspace the centre $\mathbb{C}_{\mathbb{B}}$ and $-1$-eigenspace the vector subspace $\mathbb{V}_{\mathbb{B}}$; in the coefficient basis it is $\operatorname{diag}(1,-1,-1,-1)$. The insertion separates the scalar part of the first factor from its vector part, $\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2$, and it is the whole difference from the plain case, which differs by the vector part of the first factor alone. The case is $\mathbb{C}$-bilinear and has $e_t$ as a left unit alone.
+**The natural sign in the first slot.** The first factor is read through ${}^{\natural}$, which is a $\mathbb{C}$-linear anti-automorphism and an involution, with $+1$-eigenspace the centre $\mathbb{B}_{C}$ and $-1$-eigenspace the vector subspace $\mathbb{V}_{\mathbb{B}}$; in the coefficient basis it is $\operatorname{diag}(1,-1,-1,-1)$. The insertion separates the scalar part of the first factor from its vector part, $\tilde Q_1^{\natural}\tilde Q_2=(Q_{1t}e_t)\tilde Q_2-\vec Q_1\tilde Q_2$, and it is the whole difference from the plain case, which differs by the vector part of the first factor alone. The case is $\mathbb{C}$-bilinear and has $e_t$ as a left unit alone.
 
 ### The General Plain Sesquilinear Product $\tilde Q_1\tilde Q_2^{*}$
 
@@ -106,7 +106,7 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
 
-**The star in the second slot.** The second factor is read through ${}^{*}$, which is conjugate-linear over $\mathbb{C}$ and an anti-automorphism, with $+1$-eigenspace the Hermitian subspace $\mathbb{M}_+$ and $-1$-eigenspace the anti-Hermitian subspace $\mathbb{M}_-$. The insertion makes the rule conjugate-linear in the second argument, so the case is sesquilinear and not bilinear; it is the **derived operation** of $\mathbb{B}$ with its involution, and $e_t$ is a right unit alone. Its scalar part is the Hermitian form, the one definite form of the four.
+**The star in the second slot.** The second factor is read through ${}^{*}$, which is conjugate-linear over $\mathbb{C}$ and an anti-automorphism, with $+1$-eigenspace the Hermitian subspace $\mathbb{B}_{\Psi}$ and $-1$-eigenspace the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The insertion makes the rule conjugate-linear in the second argument, so the case is sesquilinear and not bilinear; it is the **derived operation** of $\mathbb{B}$ with its involution, and $e_t$ is a right unit alone. Its scalar part is the Hermitian form, the one definite form of the four.
 
 ### The General Quaternionic Sesquilinear Product $\tilde Q_1^{\natural}\tilde Q_2^{*}$
 
@@ -145,7 +145,7 @@ The bridge between the indefinite and the definite form is
 $$
 \boxed{\;\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}=\langle\tilde Q_2,\tilde Q_1^{\natural}\rangle_{*}\;}
 $$
-The eigenspaces of $J$ are the centre and the vector subspace, of complex dimensions $1$ and $3$; they are definite of the two signs and Krein-orthogonal, so $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{V}_{\mathbb{B}}$ is a fundamental decomposition. Among the fundamental symmetries, $J$ is the unique one that is a unital $\mathbb{C}$-algebra anti-automorphism: such a symmetry fixes $e_t$, so its $+1$-eigenspace is a positive line containing $e_t$, of complex dimension one, and is therefore the centre; it is ${}^{\natural}$. It is not the only fundamental symmetry: every positive definite line $\mathbb{C}(e_t+\tilde V)$ gives the reflection in it, and $J$ is the member $\tilde V=0$.
+The eigenspaces of $J$ are the centre and the vector subspace, of complex dimensions $1$ and $3$; they are definite of the two signs and Krein-orthogonal, so $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{V}_{\mathbb{B}}$ is a fundamental decomposition. Among the fundamental symmetries, $J$ is the unique one that is a unital $\mathbb{C}$-algebra anti-automorphism: such a symmetry fixes $e_t$, so its $+1$-eigenspace is a positive line containing $e_t$, of complex dimension one, and is therefore the centre; it is ${}^{\natural}$. It is not the only fundamental symmetry: every positive definite line $\mathbb{C}(e_t+\tilde V)$ gives the reflection in it, and $J$ is the member $\tilde V=0$.
 
 ## The Two Choices and the Remaining Conjugations
 
@@ -382,7 +382,7 @@ $$
 
 ## The Restriction to the Quaternion Subspace
 
-On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the elements whose coefficients are real, the complex conjugation is the identity, so the star coincides with the natural sign: the two sesquilinear rules then read as the natural conjugates of the two bilinear ones with the slots exchanged, and the two conjugate-linear scalar parts become linear.
+On the real quaternion subspace $\mathbb{B}_{H}$, the elements whose coefficients are real, the complex conjugation is the identity, so the star coincides with the natural sign: the two sesquilinear rules then read as the natural conjugates of the two bilinear ones with the slots exchanged, and the two conjugate-linear scalar parts become linear.
 
 For $\bar{\tilde Q}_1=\tilde Q_1$ and $\bar{\tilde Q}_2=\tilde Q_2$, the two sesquilinear products coincide with the natural twists of the two bilinear ones,
 
@@ -574,7 +574,7 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 | $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | the left and right multiplications of the general plain bilinear product |
 | $L^{\natural}_{\tilde Q_1}$, $L^{*}_{\tilde Q_1}$, $L^{\natural*}_{\tilde Q_1}$ | the left multiplications of the three other products |
 | $A(\tilde Q)=\ker L_{\tilde Q}$, $B(\tilde Q)=\ker R_{\tilde Q}$ | the left and the right annihilator of the general plain bilinear product |
-| $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace, the elements with real coefficients |
+| $\mathbb{B}_{H}$ | the real quaternion subspace, the elements with real coefficients |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, the scalar part of the ${}^{\natural}$-square |
 
 ## Further Reading

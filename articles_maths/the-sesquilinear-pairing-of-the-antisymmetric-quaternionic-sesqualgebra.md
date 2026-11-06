@@ -109,12 +109,12 @@ The form $\langle\cdot,\cdot\rangle_{\natural*}$ is non-degenerate of signature 
 
 | Subspace | Restricted form | Signature |
 |---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $\lvert Q_{1t}\rvert^{2}$ | $(2,0)$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $-\sum_{\mu\in\{x,y,z\}}\lvert Q_{1\mu}\rvert^{2}$ | $(0,6)$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $(1,3)$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $(q'_t)^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $(1,3)$ |
-| Hermitian $\mathbb{M}_+$ | $q_t^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $(1,3)$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $(q'_t)^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $(1,3)$ |
+| Centre $\mathbb{B}_{C}$ | $\lvert Q_{1t}\rvert^{2}$ | $(2,0)$ |
+| Vector $\mathbb{B}_{V}$ | $-\sum_{\mu\in\{x,y,z\}}\lvert Q_{1\mu}\rvert^{2}$ | $(0,6)$ |
+| Quaternion $\mathbb{B}_{H}$ | $q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $(1,3)$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $(q'_t)^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $(1,3)$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $q_t^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $(1,3)$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $(q'_t)^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $(1,3)$ |
 
 **Remark (the row the block reads).** The values of the block lie in the vector subspace, so the pairing of the block reads the **negative definite** row of the table and no other: on the vector subspace the form is $-\lvert\vec V\rvert^{2}$, and the pairing of a value with a third element is the complex bilinear dot product of the value with the conjugate of the vector part of the third element, with the sign $-$ and the conjugation on the third argument. The centre is the positive definite row, which the block does not reach; the four remaining rows are indefinite of signature $(1,3)$ and are reached only through their vector parts. The reading of the block on the remarkable subspaces themselves, with the vanishing on the centre and the failure of closure, is *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*.
 

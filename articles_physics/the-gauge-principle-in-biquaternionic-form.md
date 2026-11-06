@@ -12,7 +12,7 @@ Two results in the corpus are the point of departure. *Maxwell's Equations in th
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit throughout.
 
-- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde A_2=\tilde A-\tilde\nabla\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
+- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the one-sided chiral pair, massive or massless. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde A_2=\tilde A-\tilde\nabla\Gamma$, and a covariant derivative whose action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}+\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$, under which the field equation is gauge covariant. The element $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of the components of $D$, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
 - **Interpretation.** Reading $\tilde{A}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
 - **Gap, left visible.** The extension to non-abelian gauge fields, and the question of whether the framework supplies a gauge-fixing principle, are not settled here. They are stated as gaps in the sections where they arise and collected in the open questions.
 
@@ -20,7 +20,7 @@ The article is organized as follows. The next section identifies the global symm
 
 ## The Global Phase Symmetry
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its **centre** — the set of elements that commute with every biquaternion — is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ of *Algebra and Element Conventions*: the complex line through the identity $e_t$, with $i$ the single scalar imaginary of the algebra, $i^2=-1$. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **$*$-unitary** elements are the phases
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its **centre** — the set of elements that commute with every biquaternion — is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*: the complex line through the identity $e_t$, with $i$ the single scalar imaginary of the algebra, $i^2=-1$. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **$*$-unitary** elements are the phases
 
 $$
 \lambda = \exp(i\theta), \qquad \theta \in \mathbb{R},
@@ -116,13 +116,13 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 
 **The transformation law is the one already in the corpus.** The law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of *Maxwell's Equations in the Biquaternionic Formulation*. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.
 
-**The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
+**The gauge function must have constant imaginary part to preserve $\mathbb{B}_{\Phi}$.** If $\tilde{A} \in \mathbb{B}_{\Phi}$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_2$ is again in $\mathbb{B}_{\Phi}$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
 \tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial R_k\,\Gamma,
 $$
 
-and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -\frac{i}{c}\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{M}_-$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
+and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -\frac{i}{c}\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
 
 **The coupling constant.** The number $ϙ$ is the charge of the field. It is introduced by the principle as a parameter; the algebra does not supply its value. Setting $ϙ = 0$ restores the global theory. The minimal-coupling form of the standard Dirac equation is recovered in this sense, as a biquaternionic statement whose representation conventions the Dirac article left open.
 
@@ -150,7 +150,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 
 **3. Its gauge group is the $*$-unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ is central, so multiplication by it on the left and on the right agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
 
-**4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}$ in $\mathbb{M}_-$; the connection is a material-sector object.
+**4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}$ in $\mathbb{B}_{\Phi}$; the connection is a material-sector object.
 
 **A preview of the non-abelian case, and its gap.** If the phase is allowed to be a *non-central* invertible biquaternion $\lambda$, then the covariance of the field equation forces $\tilde{A}$ to be algebra-valued, and order matters: the product $\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ no longer equals $\tilde{Ξ}_{\mathrm{sp}}\tilde{A}$, so the transformation law of $\tilde{A}$ acquires the conjugated $\lambda\tilde{A}\lambda^{-1}$ term rather than remaining additive. The full treatment belongs to the planned companion articles. What can already be said, and is verified below, is that the curvature then acquires a commutator term, and that the algebra already contains the non-commutativity needed for it. The gap is not the non-commutativity; it is the *reality condition* that would select a compact gauge algebra, and that is taken up at the end.
 
@@ -186,7 +186,7 @@ $$
 
 the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial/\partial R_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial R_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial R_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,dx_\mu\wedge dx_\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
 
-This also explains, structurally, why the field strength is not a four-vector. The vector part of $\mathbb{B}$ has six real dimensions, the number of independent components of a 2-form, and the field strength has a vanishing scalar part, so its six real components sit in the vector part. It is a bivector of the algebra, not a four-vector, exactly as *The Material Sector: Four-Vectors, Interval and Lorentz Action* states when it notes that the field strength is not in $\mathbb{M}_-$.
+This also explains, structurally, why the field strength is not a four-vector. The vector part of $\mathbb{B}$ has six real dimensions, the number of independent components of a 2-form, and the field strength has a vanishing scalar part, so its six real components sit in the vector part. It is a bivector of the algebra, not a four-vector, exactly as *The Material Sector: Four-Vectors, Interval and Lorentz Action* states when it notes that the field strength is not in $\mathbb{B}_{\Phi}$.
 
 ### The field strength as a commutator
 
@@ -216,7 +216,7 @@ The construction now meets the two parent articles.
 
 **The gauge redundancy is not removed by the principle.** The Lorenz gauge $S = 0$ is a *choice*: it sets the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ to zero, and the parent states plainly that $S$ is not physical. The gauge principle produces the connection but does not select a representative. Here the second parent enters. *Canonical Quantization of the Biquaternion Maxwell Field* finds that the framework **cannot fix the gauge**: the Legendre transform is singular, the conjugate momenta give the primary constraint $\mathrm{Sc}(\tilde{\pi}) \approx 0$ and the secondary Gauss-law constraint $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi}) \approx 0$, both first class, and the first-class constraints *generate* the gauge transformations. The freedom derived here from a global symmetry is the same freedom that the quantization article finds the algebra unable to remove. The two results are consistent and complementary: the gauge principle explains the *origin* of the connection and of its redundancy; the quantization article shows that the redundancy is not an artifact that the algebra can eliminate. Neither supplies a gauge-fixing principle, and that remains a gap.
 
-**The sector question is not resolved here.** The quantization article records a "sector straddle": the potential sits in $\mathbb{M}_-$ while the canonical momentum biquaternion $\tilde{\pi}$ sits in $\mathbb{M}_+$, and it leaves undecided whether this has algebraic content. The present derivation locates the *connection* in $\mathbb{M}_-$ (for a real gauge function) and the *phase* in the centre, which is shared by both sectors and therefore does not resolve the straddle. The asymmetry — a material connection and an informational momentum — is inherited as an open question, not explained.
+**The sector question is not resolved here.** The quantization article records a "sector straddle": the potential sits in $\mathbb{B}_{\Phi}$ while the canonical momentum biquaternion $\tilde{\pi}$ sits in $\mathbb{B}_{\Psi}$, and it leaves undecided whether this has algebraic content. The present derivation locates the *connection* in $\mathbb{B}_{\Phi}$ (for a real gauge function) and the *phase* in the centre, which is shared by both sectors and therefore does not resolve the straddle. The asymmetry — a material connection and an informational momentum — is inherited as an open question, not explained.
 
 ## What the Algebra Supplies and What It Only Transcribes
 
@@ -226,7 +226,7 @@ It is worth separating the two, because they are easily conflated.
 
 - *A canonical abelian gauge group.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
 - *A home for the curvature.* The field strength is a 2-form, with six independent components in four dimensions, and the vector part of $\mathbb{B}$ has exactly six real dimensions. The identification "field strength $=$ curvature" is thus structural rather than accidental.
-- *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{M}_-$, so the gauge structure respects the sector decomposition that the framework is built on.
+- *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{B}_{\Phi}$, so the gauge structure respects the sector decomposition that the framework is built on.
 - *The same scalar imaginary.* The phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $i c r'_t$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $i c r'_t$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
 
 **What it only transcribes.**
@@ -300,7 +300,7 @@ Two things should be said about this, one established and one open.
 
 An independent construction reaches the abelian principle of this article from the opposite direction, and it is worth recording because it confirms the corpus's intuition that the algebra carries a natural $\mathrm{U}(1)$.
 
-J. Fredsted (*Spinor fields without Lorentz frames in curved spacetime using complexified quaternions*, arXiv:0811.1357v4 [math-ph], 2009) builds a coordinate-covariant and locally Lorentz-invariant formalism for tensor fields and for the field of the pair in curved spacetime that uses no local Lorentz frame and no vierbein, carrying instead a basis $s_\mu \in \mathbb{M}_-$ and a single connection $\omega_\mu \in \mathbb{B}$ subject to the reality condition $\mathrm{Sc}(\omega_\mu + \bar\omega_\mu^\ast) = 0$. The connection's imaginary-scalar part is a local $\mathrm{U}(1)$ freedom, and in the source's words a local $\mathrm{U}(1)$ gauge symmetry "emerges naturally", which the source speculates "might be related to electromagnetism". The transformation is the corpus's own. In the corpus's notation it reads:
+J. Fredsted (*Spinor fields without Lorentz frames in curved spacetime using complexified quaternions*, arXiv:0811.1357v4 [math-ph], 2009) builds a coordinate-covariant and locally Lorentz-invariant formalism for tensor fields and for the field of the pair in curved spacetime that uses no local Lorentz frame and no vierbein, carrying instead a basis $s_\mu \in \mathbb{B}_{\Phi}$ and a single connection $\omega_\mu \in \mathbb{B}$ subject to the reality condition $\mathrm{Sc}(\omega_\mu + \bar\omega_\mu^\ast) = 0$. The connection's imaginary-scalar part is a local $\mathrm{U}(1)$ freedom, and in the source's words a local $\mathrm{U}(1)$ gauge symmetry "emerges naturally", which the source speculates "might be related to electromagnetism". The transformation is the corpus's own. In the corpus's notation it reads:
 
 $$
 \omega_{2,\mu} = \omega_\mu - i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}, \qquad
@@ -380,7 +380,7 @@ The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ 
 
 ## Summary
 
-The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. The centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{Ξ}_{\mathrm{sp}} \mapsto \lambda\tilde{Ξ}_{\mathrm{sp}}$ is a symmetry of the one-sided chiral pair, massive or massless, because a central constant passes through the gradient and through the linear mass term.
+The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. The centre is the complex scalar subspace $\mathbb{B}_{C}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{Ξ}_{\mathrm{sp}} \mapsto \lambda\tilde{Ξ}_{\mathrm{sp}}$ is a symmetry of the one-sided chiral pair, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
 Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, adds the term $\frac{iϙ}{\hbar}\lambda(\tilde{\nabla}\Gamma)\tilde{Ξ}_{\mathrm{sp}}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
 
@@ -394,7 +394,7 @@ $$
 \boxed{\;D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} + \frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu\;},
 $$
 
-under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A} \in \mathbb{M}_-$.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A} \in \mathbb{B}_{\Phi}$.
 
 The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$, with the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ as its pure-gauge scalar part, and it satisfies the exact **curvature identity**
 
@@ -426,13 +426,13 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | the two elements of the Dirac pair; $L$ and $R$ are the two values of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}} \mapsto -i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ | the chirality cell written as an action; applied twice it returns the element unchanged |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | the Dirac adjoint, a pairing of two states and not an action on one |
-| $\mathbb{M}_-, \mathbb{M}_+$ | the material and informational sectors |
-| $\mathbb{C}_{\mathbb{B}}$ | the complex scalar subspace, the centre of the algebra |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | the material and informational sectors |
+| $\mathbb{B}_{C}$ | the complex scalar subspace, the centre of the algebra |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
 | $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_k$ |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{M}_-$ |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | the gauge transformation of the connection |
 | $D\tilde{Ξ}_{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} + \frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ | the covariant derivative, written as an action |
 | $D_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ | its components |

@@ -18,14 +18,14 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The framework's scalar is the complex central field $\tilde{Ξ} = \xi\,e_t$; the potential $V(\xi^*\xi)$ has a circle of minima at $|\xi| = v/\sqrt{2}$, which the central $\mathrm{U}(1)$ moves and therefore does not leave invariant; the covariant derivative at the vacuum is $\frac{iϙ}{\hbar}A_\mu\langle\tilde{Ξ}\rangle$; the scalar kinetic term therefore produces the gauge-field quadratic form $-\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$, which is a Proca mass term with mass-squared $M_A^2 = ϙ^2v^2/\hbar^2$; the kinetic term is gauge invariant while a put-in mass term is not; and the degree-of-freedom count balances, $2+2 = 1+3$.
 - **Interpretation.** Interpreting the phase of $\xi$ as a would-be Goldstone mode, the set of minima as a circle of degenerate vacua, and the removal of the phase as the unitary gauge is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
-- **Gap, left visible.** The framework supplies its scalar in the **centre** $\mathbb{C}_{\mathbb{B}}$, where it is a singlet of the non-abelian factor $\mathrm{SU}(2)$ of the material sector; a central scalar cannot break $SU(2)$. The framework does not supply a scalar in a non-trivial representation, an electroweak doublet, or the hypercharge assignments of the Standard Model, and the reality condition on a non-abelian connection is itself open. The non-abelian and electroweak Higgs mechanism is therefore **not constructed here**, and no quantum numbers are invented to bridge the gap.
+- **Gap, left visible.** The framework supplies its scalar in the **centre** $\mathbb{B}_{C}$, where it is a singlet of the non-abelian factor $\mathrm{SU}(2)$ of the material sector; a central scalar cannot break $SU(2)$. The framework does not supply a scalar in a non-trivial representation, an electroweak doublet, or the hypercharge assignments of the Standard Model, and the reality condition on a non-abelian connection is itself open. The non-abelian and electroweak Higgs mechanism is therefore **not constructed here**, and no quantum numbers are invented to bridge the gap.
 
 ## The Scalar, the Phase, and the Covariant Derivative
 
 The scalar of the framework is the complex central field
 
 $$
-\tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \;\in\; \mathbb{C}_{\mathbb{B}}, \qquad \xi \in \mathbb{C},
+\tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \;\in\; \mathbb{B}_{C}, \qquad \xi \in \mathbb{C},
 $$
 
 which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\alpha)\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
@@ -120,7 +120,7 @@ $$
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu .
 $$
 
-Written with the corpus's biquaternion norm, using $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_{\mu}A_\mu^2$ for the connection $\tilde{A}\in\mathbb{M}_-$ (whose $A_0$ is imaginary, so $A_0^2 = -|A_0|^2$),
+Written with the corpus's biquaternion norm, using $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_{\mu}A_\mu^2$ for the connection $\tilde{A}\in\mathbb{B}_{\Phi}$ (whose $A_0$ is imaginary, so $A_0^2 = -|A_0|^2$),
 
 $$
 -\,\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)\Big|_{\text{vac}}
@@ -196,7 +196,7 @@ The count balances, $4 = 4$, and it balances *only because* the gauge field gain
 
 The mechanism above is the abelian one. The physically realized Higgs mechanism of the Standard Model is non-abelian: it breaks $SU(2)_L\times \mathrm{U}(1)_Y$ to $\mathrm{U}(1)_{\mathrm{em}}$, giving mass to the $W^\pm$ and $Z$ and leaving the photon massless. This section states, without smoothing it over, why the biquaternion framework as developed in the read list does not yet supply that structure. It is a gap, and leaving it labelled is the honest position.
 
-**The framework has a non-abelian algebra but not a settled non-abelian connection.** *Non-Abelian Gauge Fields in Biquaternionic Form* shows that the vector part of the material sector, $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, is $\mathrm{SU}(2)$ under the commutator, and that the material sector decomposes as $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ — an abelian factor and a compact simple factor. But the reality condition on the *connection* is obstructed in the time direction by the $i c r'_t$ derivative, and the representation carried by the matter field is not fixed. Until those are settled, a non-abelian covariant derivative on the scalar is not available to evaluate.
+**The framework has a non-abelian algebra but not a settled non-abelian connection.** *Non-Abelian Gauge Fields in Biquaternionic Form* shows that the vector part of the material sector, $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, is $\mathrm{SU}(2)$ under the commutator, and that the material sector decomposes as $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ — an abelian factor and a compact simple factor. But the reality condition on the *connection* is obstructed in the time direction by the $i c r'_t$ derivative, and the representation carried by the matter field is not fixed. Until those are settled, a non-abelian covariant derivative on the scalar is not available to evaluate.
 
 **The framework's scalar is a singlet of the non-abelian factor.** This is the sharpest obstacle. The scalar the framework supplies, $\tilde{Ξ} = \xi\,e_t$, lies in the centre; it commutes with every element, and in particular it is annihilated by the $SU(2)$ action (left multiplication by a unit real quaternion $U$ acts on $\xi e_t$ as $U\xi e_t = \xi U$; a scalar is by definition the singlet). A field that is invariant under a group **cannot break it** — the vacuum $\langle\xi\rangle e_t$ is invariant under $SU(2)$, so it is not a vacuum of broken $SU(2)$, and no $SU(2)$ gauge boson acquires a mass from it. To break the non-abelian factor one needs a scalar that transforms non-trivially — in the adjoint $\tilde{Ξ}\mapsto U\tilde{Ξ}U^{-1}$, or in a module of $\mathbb{B}$ — and the framework does not supply a canonical one. This is not a technicality to be papered over; it is the statement that the scalar that gives mass must carry the same symmetry the gauge fields carry, and the central scalar does not.
 
@@ -283,20 +283,20 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t/c$ |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Connection; $A_0$ imaginary, $\vec A$ real |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_\mu$ | Complex connection coefficients (central, abelian) |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase |
 | $ϙ, \hbar, \kappa = ϙ/\hbar$ | Charge, reduced Planck constant, coupling |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$ | Covariant derivative |
-| $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar field |
+| $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar field |
 | $\xi$ | Complex scalar amplitude; $|\xi| = v/\sqrt{2}$ at the vacuum |
 | $v$ | Vacuum expectation value parameter (so $\langle|\xi|\rangle = v/\sqrt{2}$) |
 | $V(\xi^*\xi) = \beta(\xi^*\xi - v^2/2)^2$ | Scalar potential; $\beta > 0$ is the quartic coupling |
@@ -307,7 +307,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\mathcal{L}_\text{scalar} = -\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi) - V$ | Gauge-invariant scalar Lagrangian |
 | $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)\big|_\text{vac} = -\frac{ϙ^2v^2}{2\hbar^2}\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ | Kinetic term at the vacuum = mass term |
 | $M_A^2 = ϙ^2v^2/\hbar^2$ | Gauge boson mass-squared from the kinetic term |
-| $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_\mu A_\mu^2$ | Biquaternion norm of the connection in $\mathbb{M}_-$ |
+| $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \sum_\mu A_\mu^2$ | Biquaternion norm of the connection in $\mathbb{B}_{\Phi}$ |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ | Inherited informational trace reading |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
@@ -317,7 +317,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the complex scalar realization $\tilde{Ξ} = \xi\,e_t$, the transformation law, and the covariant derivative inherited here.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative as an operator, the gauge orbit, the curvature, and the covariant square used in the gap discussion.
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{M}_-$, its reality gap, and the non-abelian connection whose absence bounds this article.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{B}_{\Phi}$, its reality gap, and the non-abelian connection whose absence bounds this article.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the mass selection rule $ϙ_L = ϙ_R$, the charge operator, and the naming of this article as the compensating-scalar companion.
 - [Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions](left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html) — the external interpretation in which the volume element of the complex split biquaternion algebra $\mathrm{Cl}(3)$ plays the chirality-flipping role of the scalar, together with the limits of that interpretation.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation whose gauging and vacuum this article uses.

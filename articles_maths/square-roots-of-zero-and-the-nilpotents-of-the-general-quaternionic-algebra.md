@@ -162,7 +162,7 @@ The four conjugations of the algebra act on the nilpotent cone, and their action
 
 **Proof.** The natural conjugation is a plain anti-automorphism and an involution, so $\langle\tilde Q^{\natural}\rangle_{\natural}=\tilde Q^{\natural}(\tilde Q^{\natural})^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}$. The coefficientwise conjugation conjugates every coefficient, hence the sum of their squares. The Hermitian conjugation is the composite of the two, so it sends $\langle\cdot\rangle_{\natural}$ to its complex conjugate, and the complex structure multiplies the algebraic norm by $i^2=-1$. In each case the vanishing set is preserved.
 
-**Remark.** The complex structure sends a pure element to a pure element and exchanges no family, while the natural conjugation fixes the scalar part and negates the vector part, so it fixes the pure family and sends a non-pure nilpotent to a non-pure nilpotent. The two Hermitian subspaces $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are exchanged by the natural conjugation, which is why the nilpotents they carry are parametrised in the same way; the coefficientwise conjugation fixes $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ and fixes no nonzero nilpotent of the vector subspace.
+**Remark.** The complex structure sends a pure element to a pure element and exchanges no family, while the natural conjugation fixes the scalar part and negates the vector part, so it fixes the pure family and sends a non-pure nilpotent to a non-pure nilpotent. The two Hermitian subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged by the natural conjugation, which is why the nilpotents they carry are parametrised in the same way; the coefficientwise conjugation fixes $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and fixes no nonzero nilpotent of the vector subspace.
 
 ## The Matrix Model
 
@@ -196,14 +196,14 @@ The nilpotents are the elements of algebraic norm zero, so their distribution am
 
 | remarkable subspace | nilpotents of $\star$ |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | none |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | none |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | none |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | the pure nilpotents, an isotropic cone of real dimension four |
-| $\mathbb{M}_{+}$, the Hermitian subspace | the isotropic cone of $\mathbb{M}_{+}$, of real dimension three, all of it non-pure |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | the isotropic cone of $\mathbb{M}_{-}$, of real dimension three, all of it non-pure |
+| $\mathbb{B}_{C}$, the centre | none |
+| $\mathbb{B}_{H}$, the quaternion subspace | none |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | none |
+| $\mathbb{B}_{V}$, the vector subspace | the pure nilpotents, an isotropic cone of real dimension four |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | the isotropic cone of $\mathbb{B}_{\Psi}$, of real dimension three, all of it non-pure |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | the isotropic cone of $\mathbb{B}_{\Phi}$, of real dimension three, all of it non-pure |
 
-The entries are forced by the definiteness of the algebraic norm: it is positive definite on the quaternion subspace and negative definite on the anti-quaternion subspace, so neither carries a nonzero nilpotent, and it vanishes on the centre only at the origin. The vector subspace carries the whole pure family, and the two Hermitian subspaces carry the non-pure nilpotents whose scalar and vector contributions cancel, the elements $e_t\pm i\vec e_x$ in $\mathbb{M}_{+}$ and the elements $\vec e_x\pm ie_t$ in $\mathbb{M}_{-}$ being the standard witnesses.
+The entries are forced by the definiteness of the algebraic norm: it is positive definite on the quaternion subspace and negative definite on the anti-quaternion subspace, so neither carries a nonzero nilpotent, and it vanishes on the centre only at the origin. The vector subspace carries the whole pure family, and the two Hermitian subspaces carry the non-pure nilpotents whose scalar and vector contributions cancel, the elements $e_t\pm i\vec e_x$ in $\mathbb{B}_{\Psi}$ and the elements $\vec e_x\pm ie_t$ in $\mathbb{B}_{\Phi}$ being the standard witnesses.
 
 **Remark (the nilpotents outside the six subspaces).** Unlike the plain nilpotents, which all lie in the vector subspace, the nilpotents of $\star$ are not confined to the six remarkable subspaces. The elements $\vec e_x+i\vec e_y$ and $e_t+i\vec e_x$ lie in the vector and in the Hermitian subspace respectively, but the element $\tilde Q=e_t+i\vec e_x+\vec e_y+i\vec e_z$ has $N=1-1+1-1=0$ and is neither pure, its scalar part being $1$, nor Hermitian, its vector part having the real coordinate $1$ in the second place, nor anti-Hermitian, its scalar part being real; so it lies in none of the six. The cone is strictly larger than the union of its traces on the remarkable subspaces, and the plain picture, in which the vector subspace contains the cone, does not extend.
 
@@ -224,7 +224,7 @@ In the general quaternionic bilinear product the square is the central element $
 | $2Ζ_t\tilde\Pi$ | a non-pure root of $0$ over a nontrivial plain idempotent $\tilde\Pi$ |
 | $\tilde\Pi_+(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | the Hermitian idempotent, a nilpotent of $\star$ |
 | $\mathsf{M}_2(\tilde Q)$ | the two-by-two matrix model, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ |
-| $\mathbb{M}_{+},\mathbb{M}_{-}$ | the Hermitian and the anti-Hermitian subspaces, each carrying an isotropic cone |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the Hermitian and the anti-Hermitian subspaces, each carrying an isotropic cone |
 
 ## Further Reading
 

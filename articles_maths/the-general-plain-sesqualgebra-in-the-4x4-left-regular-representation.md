@@ -65,7 +65,7 @@ so the Frobenius norm of the regular matrix is twice the definite norm of the el
 
 **The isometry group.** The Hilbert–Schmidt form on the left copy has isometry group the unitary group $\mathrm U(4)$. The algebra automorphisms that are isometries are the inner maps $X\mapsto UXU^{\dagger}$ with $U\in\mathrm U(2)$, forming $PU(2)$. The larger family $X\mapsto UXV^{\dagger}$ with $U,V\in\mathrm U(2)$, forming $\mathrm U(2)\times\mathrm U(2)$ modulo the common centre, preserves the two-sided module structure but not the product.
 
-**The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb M_+$ a definite space of real dimension $4$, and the norm-one group $G=SL_2(\mathbb C)$ acts on it by $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{*}$, preserving the norm:
+**The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb{B}_{\Psi}$ a definite space of real dimension $4$, and the norm-one group $G=SL_2(\mathbb C)$ acts on it by $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{*}$, preserving the norm:
 $$
 \langle\tilde A\tilde Q\tilde A^{*},\tilde A\tilde Q\tilde A^{*}\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural},\qquad \tilde A\in G.
 $$

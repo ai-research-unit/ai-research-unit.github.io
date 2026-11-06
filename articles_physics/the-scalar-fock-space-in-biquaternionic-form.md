@@ -34,8 +34,8 @@ and it is a complex Hilbert space on which the orthochronous Lorentz group acts 
 The module-theoretic statement is worth making precisely, because it is where the framework's structure enters the state space. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one irreducible module: the two-dimensional spinor module on which it acts by matrix multiplication. The scalar one-particle space is **not** that module. Since the scalar state transforms trivially under the Lorentz group, no non-central element of $\mathbb{B}$ can act on it without mixing it into a higher-spin sector; the only elements that preserve the spin-$0$ subspace are the central scalars. Hence
 
 $$
-\boxed{\;\tilde Q\in\mathbb{C}_{\mathbb{B}}\ \text{acts as a scalar},\qquad
-\tilde Q\notin\mathbb{C}_{\mathbb{B}}\ \text{does not act on a spin-}0\ \text{state}\;},
+\boxed{\;\tilde Q\in\mathbb{B}_{C}\ \text{acts as a scalar},\qquad
+\tilde Q\notin\mathbb{B}_{C}\ \text{does not act on a spin-}0\ \text{state}\;},
 $$
 
 and the scalar one-particle space is a module over the centre. At the level of the generators every commutator $[\tilde Q_2,\tilde Q_1]$ acts as zero, so only the central part of an element contributes and the spin part of the algebra is invisible on a spin-$0$ state. In the associative sense no nonzero action of the whole algebra exists, and the reason is one line: the trace-free part generates $\mathbb{B}$, so if $\vec e_x$ acted as zero then $\vec e_x^2=-e_t$ would force the identity to act as zero as well, and with it every element. The irreducible biquaternion modules are the spinor modules; the scalar state space is a module for the centre and for the mode algebra, not for $\mathbb{B}$. This is the representation-theoretic content of "spin $0$ lives in the centre", stated at the level of the state space rather than the field.
@@ -122,7 +122,7 @@ $$
 
 with the phase fixed by convention. It is the unique normalizable state of zero total number, and (for the complex field) of zero charge. Every finite-particle state of the Fock space is obtained from it by a polynomial in the creation operators, and the whole Fock space is the closure of those states, so the vacuum is cyclic for the field algebra; this is the standard Fock property and is what makes the Fock representation the natural one. The distinction between the algebraic direct sum and its completion, recorded above, is the precise sense in which "obtained from it" is meant: the finite combinations are dense, and the general state is their limit.
 
-The framework-specific question is whether the vacuum is an object of $\mathbb{B}$, and the answer is negative, in contrast with the fermionic one-mode case. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records the contrast sharply: for one **fermionic** mode the vacuum state is the rank-one idempotent $\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$, whose trace is one, and the Born rule pairs it with the number operator $\tfrac12(e_t-i\vec e_z)$ to give the occupation probability, zero for the vacuum and one for the occupied state; the Fock space of one fermionic mode is the fundamental module $\mathbb{C}^2$ of $\mathbb{B}\cong\mathrm{End}(\mathbb{C}^2)$. For a **bosonic** mode there is no such element: the number operator is not idempotent, its spectrum is $\{0,1,2,\dots\}$ unbounded, and no pair in $\mathbb{B}$ realizes the ladder. The scalar vacuum is therefore a Fock vector constructed on an imported module, not a minimal idempotent of the algebra, and the contrast with the fermionic case is the difference between a finite-dimensional realization and an infinite-dimensional one.
+The framework-specific question is whether the vacuum is an object of $\mathbb{B}$, and the answer is negative, in contrast with the fermionic one-mode case. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records the contrast sharply: for one **fermionic** mode the vacuum state is the rank-one idempotent $\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$, whose trace is one, and the Born rule pairs it with the number operator $\tfrac12(e_t-i\vec e_z)$ to give the occupation probability, zero for the vacuum and one for the occupied state; the Fock space of one fermionic mode is the fundamental module $\mathbb{C}^2$ of $\mathbb{B}\cong\mathrm{End}(\mathbb{C}^2)$. For a **bosonic** mode there is no such element: the number operator is not idempotent, its spectrum is $\{0,1,2,\dots\}$ unbounded, and no pair in $\mathbb{B}$ realizes the ladder. The scalar vacuum is therefore a Fock vector constructed on an imported module, not a minimal idempotent of the algebra, and the contrast with the fermionic case is the difference between a finite-dimensional realization and an infinite-dimensional one.
 
 One point of contact survives and is treated in a later section: a **truncated** bosonic mode, restricted to finitely many levels, can be represented by finite matrices, and the vacuum of the truncation is a vector in a finite-dimensional space; the trace formula then gives occupation probabilities for the truncated observables. The truncation is a computational device, not an object of $\mathbb{B}$.
 
@@ -209,7 +209,7 @@ The consequence for the title of the article is plain. The scalar Fock space is 
 
 ## The Informational Sector and the Trace Formula
 
-The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde R_\psi\in\mathbb{M}_+$ is
+The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde R_\psi\in\mathbb{B}_{\Psi}$ is
 
 $$
 \boxed{\;\langle\tilde R_\psi\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde R_\psi)\;}.
@@ -223,7 +223,7 @@ $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle N\rangle=1$; the trace formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.
 
-The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{M}_+$ is the space of states of the framework's finite-dimensional quantum physics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Informational Sector: States, Observables and Probability* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
+The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{B}_{\Psi}$ is the space of states of the framework's finite-dimensional quantum physics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Informational Sector: States, Observables and Probability* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
 
 ## Coherent States and the Central Phase
 
@@ -245,7 +245,7 @@ and the **displacement** $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\alph
 
 - **The module the Fock space starts from.** Whether the scalar one-particle space, a module for the centre rather than for the algebra, is the only module available for a spin-$0$ Fock space, or whether a larger structure carrying the algebra can be attached, is not decided. The spin argument says that no non-central element can act on a spin-$0$ state; it does not say that no larger structure is relevant.
 - **The bosonic gap.** The obstruction to a bosonic mode in $\mathbb{B}$ is the finite dimension of the algebra. Whether an infinite-dimensional algebra canonically attached to $\mathbb{B}$ — a completion, a crossed product, or a von Neumann algebra of the field net — carries the scalar ladder in a way that is intrinsic to the framework, rather than imported, is the structural question.
-- **The vacuum.** Whether the framework's notion of a minimal idempotent, which gives the fermionic vacuum as an element of $\mathbb{M}_+$, has a scalar analogue in an enlarged structure is open; in $\mathbb{B}$ it does not.
+- **The vacuum.** Whether the framework's notion of a minimal idempotent, which gives the fermionic vacuum as an element of $\mathbb{B}_{\Psi}$, has a scalar analogue in an enlarged structure is open; in $\mathbb{B}$ it does not.
 - **The gradings.** Whether the charge grading, which is $\mathbb{Z}$-valued, is the only grading the scalar sector supports, or whether a hidden $\mathbb{Z}/2$ structure exists in an extension, is not settled.
 - **Empirical content.** Whether the Fock construction as written yields a prediction distinguishing the framework from standard scalar field theory is open.
 
@@ -255,7 +255,7 @@ The scalar Fock space is the symmetric algebra of the one-particle space, $\math
 
 The scalar Fock space is not an object of $\mathbb{B}$. The obstruction is the trace of a commutator: a canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ inside the algebra would force $2c=\mathrm{Tr}([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}])=0$, hence $c=0$, so no bosonic mode exists in the four-dimensional algebra; the companion Fock-space article's fermionic one-mode result is the contrasting case, in which the vacuum is the idempotent $\tfrac12(e_t+i\vec e_z)$. The dimension count says the same thing: the $d$-mode truncation to total occupation $n_{\max}$ has dimension $\binom{d+n_{\max}}{n_{\max}}$, which for a single mode reaches $4$ at $n_{\max}=3$ and exceeds it from $n_{\max}=4$ onward, and the symmetric algebra is infinite-dimensional.
 
-The state space carries two gradings, an $\mathbb{N}$-grading by total number and, for the complex field, a $\mathbb{Z}$-grading by charge whose sectors are the superselection sectors of the $\mathrm{U}(1)$; there is no $\mathbb{Z}/2$ parity grading, because the bosonic modes commute and no graded-commutativity is imposed. The informational sector's trace formula applies to finite truncations only; the scalar vacuum is not a density operator in $\mathbb{M}_+$, and the coherent states are the imported bosonic construction on the module the algebra supplies.
+The state space carries two gradings, an $\mathbb{N}$-grading by total number and, for the complex field, a $\mathbb{Z}$-grading by charge whose sectors are the superselection sectors of the $\mathrm{U}(1)$; there is no $\mathbb{Z}/2$ parity grading, because the bosonic modes commute and no graded-commutativity is imposed. The informational sector's trace formula applies to finite truncations only; the scalar vacuum is not a density operator in $\mathbb{B}_{\Psi}$, and the coherent states are the imported bosonic construction on the module the algebra supplies.
 
 ## Summary of Notation
 
@@ -264,8 +264,8 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; its scalars are the only elements acting on the scalar one-particle space |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; its scalars are the only elements acting on the scalar one-particle space |
 | $\mathcal{H}_1=L^2(\mathbb{R}^3,\frac{d^3p}{(2\pi)^3 2E_{\vec p}})$ | Scalar one-particle space |
 | $\mathcal{F}=\bigoplus_n\mathrm{sym}^n\mathcal{H}_1$ | Scalar Fock space (symmetric algebra) |
 | $a_{\mathrm{fop},\vec p},a_{\mathrm{fop},\vec p}^{\dagger},b_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}^{\dagger}$ | Mode operators (particle and antiparticle) |

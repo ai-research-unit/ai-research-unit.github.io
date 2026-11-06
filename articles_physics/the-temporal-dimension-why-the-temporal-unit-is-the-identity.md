@@ -47,7 +47,7 @@ $$
 because $e_t$ is central and a unit real quaternion has $\tilde u^{*} = \tilde u^{\natural} = \tilde u^{-1}$; a rotation moves the three vector units among themselves and leaves $e_t$ where it is. A **boost** is the other kind of rotor, and on the temporal unit it is not trivial. A pure boost of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$ is $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$, and on the temporal unit it acts as
 
 $$
-B\,e_t\,B^{*} = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u \in \mathbb{M}_+ ,
+B\,e_t\,B^{*} = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u \in \mathbb{B}_{\Psi} ,
 $$
 
 which is Hermitian of unit biquaternion norm: the boost carries the unit out of the centre and into the informational sector. The temporal direction is therefore fixed by the rotations and moved by the boosts, and it is the axis the rotations share. The boost does not exchange $e_t$ for one of the vector units; it mixes the temporal direction with a spatial one, and that mixing is what makes the temporal direction a coordinate of the element rather than a parameter outside the algebra.
@@ -55,7 +55,7 @@ which is Hermitian of unit biquaternion norm: the boost carries the unit out of 
 The algebraic content of the three properties is one statement: **$e_t$ spans the real line in the centre of the algebra.** The centre of $\mathbb{B}$ is the complex plane
 
 $$
-\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\} = \{Q_t\,e_t : Q_t \in \mathbb{C}\},
+\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\} = \{Q_t\,e_t : Q_t \in \mathbb{C}\},
 $$
 
 which *Algebra and Element Conventions* calls the complex time sector and *The Biquaternion Space, the Group of Involutions and the Six Subspaces* lists among the remarkable subspaces. The centre is the set of elements that commute with the whole algebra, its real direction is $e_t$, and its complex coordinate is the one the next sections read. The temporal dimension, in this framework, is not one of four peers; it is the direction along which the element is a **scalar**, the direction every rotation fixes.
@@ -88,10 +88,10 @@ The four statements are one statement: **time is the scalar dimension.** It is t
 
 ## The Material Reading: Time Is Imaginary
 
-The material sector is the fixed space of the anti-Hermitian conjugation, $\mathbb{M}_- = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$, and its general element is the four-position of a relativistic system,
+The material sector is the fixed space of the anti-Hermitian conjugation, $\mathbb{B}_{\Phi} = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$, and its general element is the four-position of a relativistic system,
 
 $$
-\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_- ,
+\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi} ,
 $$
 
 with $r'_t, r_x, r_y, r_z$ real. This is the $i c r'_t$ dictionary of *Algebra and Element Conventions* and of *Why Complexify Spacetime?*: the temporal coefficient is $i c r'_t$, purely imaginary, and the three spatial coefficients are real.
@@ -130,17 +130,17 @@ $$
 
 whose real part is the informational time and whose imaginary part is the material time, in the dictionary of *Algebra and Element Conventions*, where the complex coefficient $Q_t$ has real part $c r_t = ct$ and imaginary part $c r'_t = cr'_t$. The reading of the plane as a clock — the exchange by the central imaginary as a quarter turn, the two times as the two projections of one hand — is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*.
 
-The informational sector is the fixed space of the Hermitian conjugation, $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$, and its general element is
+The informational sector is the fixed space of the Hermitian conjugation, $\mathbb{B}_{\Psi} = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$, and its general element is
 
 $$
-\tilde Q_+ = c r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{M}_+ ,
+\tilde Q_+ = c r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{B}_{\Psi} ,
 $$
 
 with $t, r'_{x}, r'_{y}, r'_{z}$ real. The placement of the $i$ is the mirror of the material one: here the **temporal** coefficient is real and the three **spatial** coefficients are imaginary. The scalar direction carries a real number and the vector directions carry imaginary ones, exactly opposite to the material element $i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$.
 
 Two norms of the informational element are read together, and they place the informational time on the positive side of both.
 
-The first is the biquaternion norm, which on $\mathbb{M}_+$ is
+The first is the biquaternion norm, which on $\mathbb{B}_{\Psi}$ is
 
 $$
 \boxed{\;\langle\tilde Q_+\rangle_{\natural} = (c r_t)^2 - {r'_{x}}^2 - {r'_{y}}^2 - {r'_{z}}^2\;},
@@ -160,7 +160,7 @@ which is positive definite, with every direction counting with a plus and the te
 
 This section is an interpretation, and it is the reason the article was written. It is stated as a reading and its boundaries are given in the section that follows.
 
-The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the normalised Hermitian form $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, read as the trace formula, is the Born rule; the star is inert on $\mathbb{M}_+$ and the unstarred trace is real, and non-negative when $\tilde R_\psi\ge0$ (*The Informational Sector: States, Observables and Probability*, *POVMs and the Positive Cone in Biquaternionic Form*, *Roots, Idempotents and Observables*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
+The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the normalised Hermitian form $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, read as the trace formula, is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde R_\psi\ge0$ (*The Informational Sector: States, Observables and Probability*, *POVMs and the Positive Cone in Biquaternionic Form*, *Roots, Idempotents and Observables*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
 
 The reading this article adds concerns the temporal coordinate of that record. The four coordinates of the informational element are $(c r_t, r'_{x}, r'_{y}, r'_{z})$ — one temporal and real, three spatial and imaginary — and the vector directions $i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ are the ones the biquaternion norm reads *negatively*. The temporal direction $c r_t$ is the one both forms of the sector weigh with a plus: it is the single positive direction of the natural norm and a positive direction of the Hermitian form.
 
@@ -176,7 +176,7 @@ The reading is offered as a physical interpretation of the algebraic placement, 
 
 ## What the Reading Does Not Claim
 
-**It does not claim that the informational sector is observed.** The physical realisation of $\mathbb{M}_+$ as a sector of the world is the standing **hypothesis** of *The Informational Sector: States, Observables and Probability*, and this article inherits it. The mathematics of the sector is established; whether the world carries it as a distinct sector is not.
+**It does not claim that the informational sector is observed.** The physical realisation of $\mathbb{B}_{\Psi}$ as a sector of the world is the standing **hypothesis** of *The Informational Sector: States, Observables and Probability*, and this article inherits it. The mathematics of the sector is established; whether the world carries it as a distinct sector is not.
 
 **It does not claim that a memory is a coordinate.** The reading says that the temporal coefficient of the informational sector is the direction along which records are held; it does not identify a particular psychological or biological memory with the coordinate $c r_t$, and it offers no dynamics by which a record is written or read. The informational sector has no specified dynamics beyond the quantum formalism itself, as the sector article states.
 
@@ -202,24 +202,24 @@ On the material sector the temporal coefficient is imaginary. The four-position 
 
 The framework carries a second temporal coefficient, the real $c r_t$ of the informational sector, whose element is $c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ — the mirror of the material one, with the $i$ on the spatial directions instead of the temporal one. The informational time $c r_t$ is the single positive direction of the sector's natural norm and a positive direction of its probability form, and the reading this article offers is that it is the sector's **storage direction**: the record can be touched and recovered because $c r_t$ is real, and the time cannot because $i c r'_t$ is imaginary. The reading is an interpretation, it inherits the informational-sector hypothesis, it adds no dynamics, and it claims no arrow.
 
-All of the mathematics the article uses is verified: $e_t$ is the identity and central, the rotations fix it while the boosts carry it into $\mathbb{M}_+$ and the Lorentz action preserves the norm, the material element is anti-Hermitian with imaginary scalar coefficient, the informational element is Hermitian with real scalar coefficient, the natural norm has the signatures claimed on the two sectors, and the Hermitian form is positive definite with the informational time positive. What remains an interpretation is what the placements are worth physically, and that is what the article's three readings state.
+All of the mathematics the article uses is verified: $e_t$ is the identity and central, the rotations fix it while the boosts carry it into $\mathbb{B}_{\Psi}$ and the Lorentz action preserves the norm, the material element is anti-Hermitian with imaginary scalar coefficient, the informational element is Hermitian with real scalar coefficient, the natural norm has the signatures claimed on the two sectors, and the Hermitian form is positive definite with the informational time positive. What remains an interpretation is what the placements are worth physically, and that is what the article's three readings state.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The quaternion base; the temporal unit is the identity, $\vec e_k^2 = -e_t$ |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $c r_t = ct$ and $c r'_t = cr'_t$ |
+| $\mathbb{B}_{C} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $c r_t = ct$ and $c r'_t = cr'_t$ |
 | $Q_t = c r_t + i c r'_t$ | The central coordinate, the coefficient of $Q_te_t$: real part the informational time $c r_t$, imaginary part the material time $i c r'_t$ |
-| $\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material element, $\mathbb{M}_-$: imaginary scalar coefficient, real vector coefficients |
-| $\tilde Q_+ = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, $\mathbb{M}_+$: real scalar coefficient, imaginary vector coefficients |
-| $\mathbb{M}_- = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$ | Anti-Hermitian subspace, the material sector |
-| $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ | Hermitian subspace, the informational sector |
-| $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$ | Biquaternion norm; $(1,3)$ on $\mathbb{M}_+$, the temporal direction positive |
+| $\tilde Q_- = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material element, $\mathbb{B}_{\Phi}$: imaginary scalar coefficient, real vector coefficients |
+| $\tilde Q_+ = c r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, $\mathbb{B}_{\Psi}$: real scalar coefficient, imaginary vector coefficients |
+| $\mathbb{B}_{\Phi} = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\}$ | Anti-Hermitian subspace, the material sector |
+| $\mathbb{B}_{\Psi} = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ | Hermitian subspace, the informational sector |
+| $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$ | Biquaternion norm; $(1,3)$ on $\mathbb{B}_{\Psi}$, the temporal direction positive |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian (probability) form; positive definite, $\sum_\mu\lvert Q_\mu\rvert^2$ |
 | $\mathrm{Sc}(\tilde Q) = Q_t$ | Scalar part, the temporal coefficient of the element |
 | $\tilde U \in \mathbb{B}^\times_1$, $\langle\tilde U\rangle_{\natural} = e_t$ | Rotor of the Lorentz action $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$, which preserves $\langle\tilde Q\rangle_{\natural}$ |
-| $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{M}_+$ |
+| $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{B}_{\Psi}$ |
 | $\partial/\partial R_t$ | The temporal derivative in the biquaternionic gradient |
 
 ## Further Reading

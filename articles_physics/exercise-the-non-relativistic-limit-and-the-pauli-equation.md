@@ -9,7 +9,7 @@ Five problems are worked:
 1. the Foldy–Wouthuysen elimination of the small component, carried out step by step and to the order at which the first corrections appear;
 2. the minimal substitution $p\to p-q\vec A$ and the electromagnetic terms it produces, including the spin term and the coefficient that fixes $g=2$;
 3. the next order in $1/c$: the relativistic kinetic correction, the Darwin term, and the spin–orbit coupling;
-4. the Hermiticity of every term, and which terms lie in the Hermitian subspace $\mathbb M_+$ and which do not;
+4. the Hermiticity of every term, and which terms lie in the Hermitian subspace $\mathbb{B}_{\Psi}$ and which do not;
 5. the physical dimensions of every term.
 
 **The operators, fixed once.** Every derivative in this exercise is the biquaternionic gradient
@@ -31,11 +31,11 @@ $$
 On the material sector, where $Q_t=i c r'_t$, the gradient and its conjugate read
 
 $$
-\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\Box\big|_{\mathbb M_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
+\Box\big|_{\mathbb{B}_{\Phi}}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
 $$
 
 and the pure part of the gradient is written $D_3=\sum_k\vec e_k\partial/\partial r_k$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-iqA_\mu/\hbar$, and with it the gradient:
@@ -74,7 +74,7 @@ $$
 
 so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
 
-**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
+**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp},\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb{B}_{\Psi,\Phi}$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
 All the derivatives below are $\tilde\nabla$, $\tilde\nabla^{\natural}$ and their pure part $D_3$, and no other differential operator appears. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made. Fixing the frame, the chirality is the operator that multiplies on the right by $-i\vec e_z$ and takes the two values $\mp1$; the field is one element $F\in\mathbb B$ split into its two parts, $F=F_L+F_R$, of value $-1$ and $+1$. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Since $\vec e_z=-\omega$ with $\omega$ the pseudoscalar of the frame, $\omega^2=-e_t$, the chirality is also written $F\mapsto iF\omega$; the $i$ in front of it is the central scalar $i$ of the algebra and not $\omega$.
 
@@ -344,10 +344,10 @@ whose magnitude at $S_z=\hbar/2$ is one Bohr magneton $\mu_B=e\hbar/2m_e$. The m
 *Step 5: the biquaternion form.* Under the isomorphism $\mathsf M_2(\vec e_k)=-i\sigma_k$ the spin components are the elements $\tilde S_k=\tfrac\hbar2i\vec e_k$, and a magnetic field written as the pure real quaternion $\vec B=\sum_kB_k\vec e_k$ maps the spin term to
 
 $$
--\frac{q\hbar}{2m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{q\hbar}{2m}\,i\vec B\ \in\ \mathbb M_+ ,
+-\frac{q\hbar}{2m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{q\hbar}{2m}\,i\vec B\ \in\ \mathbb{B}_{\Psi} ,
 $$
 
-the Hermitian element of the informational sector, exactly as the parent states: $(i\vec B)^{*}=i\vec B$, because $(\vec e_k)^{*}=-\vec e_k$ and the coefficient is imaginary. The kinetic and electrostatic terms are the scalar multiples $(\vec\pi^2/2m)e_t$ and $qΞ e_t$ of $\mathbb M_+$.
+the Hermitian element of the informational sector, exactly as the parent states: $(i\vec B)^{*}=i\vec B$, because $(\vec e_k)^{*}=-\vec e_k$ and the coefficient is imaginary. The kinetic and electrostatic terms are the scalar multiples $(\vec\pi^2/2m)e_t$ and $qΞ e_t$ of $\mathbb{B}_{\Psi}$.
 
 *Numerical check.* The commutator identity of Step 2 was verified by finite differences on a $41\times41$ grid with spacing $h=0.1$ on $[-2,2]^2$, with $\vec A=(-y,0,0)$, for which $\vec B=(0,0,1)$, and with the smooth test function $\tilde{Ξ}_{\mathrm{sp}}=\exp(-(x^2+y^2))\cos(2x)\sin(3y)$. With $q=\hbar=1$, the identity $[\pi_x,\pi_y]\tilde{Ξ}_{\mathrm{sp}}=iB_z\tilde{Ξ}_{\mathrm{sp}}$ was confirmed at the interior points with a maximum absolute error $4.8\times10^{-2}$; halving the spacing to $h=0.05$ gave $1.2\times10^{-2}$, the factor four of the second-order central difference.
 
@@ -453,9 +453,9 @@ $$
 
 with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with $j$ the total angular momentum, $j=\ell\pm\tfrac12$ and one value at $\ell=0$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.
 
-## Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition
+## Problem 4: Hermiticity and the $\mathbb{B}_{\Psi,\Phi}$ decomposition
 
-**Statement.** Check the Hermiticity of every term and determine which terms lie in $\mathbb M_+$.
+**Statement.** Check the Hermiticity of every term and determine which terms lie in $\mathbb{B}_{\Psi}$.
 
 **Solution.**
 
@@ -474,26 +474,26 @@ $$
 
 so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
-*Step 2: the $\mathbb M_+$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $c r_t\,I_2+\vec r_\psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $c r_t\,e_t+i\vec r_\psi\in\mathbb M_+$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
+*Step 2: the $\mathbb{B}_{\Psi}$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $c r_t\,I_2+\vec r_\psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $c r_t\,e_t+i\vec r_\psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,
 
 | Term of $H$ | Biquaternion representative | Sector |
 |---|---|---|
-| $\vec\pi^2/2m$ | $(\vec\pi^2/2m)\,e_t$ | $\mathbb M_+$ |
-| $qΞ$ | $(qΞ)\,e_t$ | $\mathbb M_+$ |
-| $-\dfrac{q\hbar}{2m}\boldsymbol\sigma\cdot\vec B$ | $-\dfrac{q\hbar}{2m}\,i\vec B$ | $\mathbb M_+$ |
-| $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-\hbar q\,i\vec B\bigr)^2$ | $\mathbb M_+$ |
-| $\dfrac{\hbar^2}{8m^2c^2}\nabla^2V$ | $\dfrac{\hbar^2}{8m^2c^2}(\nabla^2V)\,e_t$ | $\mathbb M_+$ |
-| $-\dfrac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\dfrac{q\hbar}{4m^2c^2}\,i(\vec E\times\vec\pi)$ | $\mathbb M_+$ |
+| $\vec\pi^2/2m$ | $(\vec\pi^2/2m)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $-\dfrac{q\hbar}{2m}\boldsymbol\sigma\cdot\vec B$ | $-\dfrac{q\hbar}{2m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
+| $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-\hbar q\,i\vec B\bigr)^2$ | $\mathbb{B}_{\Psi}$ |
+| $\dfrac{\hbar^2}{8m^2c^2}\nabla^2V$ | $\dfrac{\hbar^2}{8m^2c^2}(\nabla^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $-\dfrac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\dfrac{q\hbar}{4m^2c^2}\,i(\vec E\times\vec\pi)$ | $\mathbb{B}_{\Psi}$ |
 
-Every term of the reduced, two-component Hamiltonian is Hermitian, hence every term lands in $\mathbb M_+$. This is the precise content of the parent's remark that the spin term is an observable of the informational sector; the remark applies term by term. Each representative is a left multiplication by an element, which is what makes the identification possible at all.
+Every term of the reduced, two-component Hamiltonian is Hermitian, hence every term lands in $\mathbb{B}_{\Psi}$. This is the precise content of the parent's remark that the spin term is an observable of the informational sector; the remark applies term by term. Each representative is a left multiplication by an element, which is what makes the identification possible at all.
 
-*Step 3: what does not land in $\mathbb M_+$.* Three classes of object in the reduction do not.
+*Step 3: what does not land in $\mathbb{B}_{\Psi}$.* Three classes of object in the reduction do not.
 
-1. **The right multiplications.** The mass term $\beta mc^2$ multiplies by $i\vec e_x$ on the right, and the odd operator $O$ ends in a right multiplication by $\vec e_y$. The two multipliers are $i\vec e_x$, which is Hermitian, and $\vec e_y$, which is anti-Hermitian; each operator is Hermitian anyway, because the left factor $\vec e_k$ is anti-Hermitian too and a product of two anti-Hermitian factors with a Hermitian $\pi_k$ between them is Hermitian. What matters is that neither operator is a left multiplication, so no element of $\mathbb B$ represents either. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that replaces the two-sided operators by left multiplications and leaves a sum of elements of $\mathbb M_+$. A right multiplication is a different operator from the left multiplication by the same element, and neither may be substituted for the other.
+1. **The right multiplications.** The mass term $\beta mc^2$ multiplies by $i\vec e_x$ on the right, and the odd operator $O$ ends in a right multiplication by $\vec e_y$. The two multipliers are $i\vec e_x$, which is Hermitian, and $\vec e_y$, which is anti-Hermitian; each operator is Hermitian anyway, because the left factor $\vec e_k$ is anti-Hermitian too and a product of two anti-Hermitian factors with a Hermitian $\pi_k$ between them is Hermitian. What matters is that neither operator is a left multiplication, so no element of $\mathbb B$ represents either. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that replaces the two-sided operators by left multiplications and leaves a sum of elements of $\mathbb{B}_{\Psi}$. A right multiplication is a different operator from the left multiplication by the same element, and neither may be substituted for the other.
 
-2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from right multiplications and is not a left multiplication by an element. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O$ is Foldy–Wouthuysen-odd and Hermitian, yet it is not the left multiplication by the element $\hbar c\vec\pi$ — that element acts on one side and is even — and the identification of "odd" with "not in $\mathbb M_+$" is incorrect.
+2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb{B}_{\Phi}$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb{B}_{\Phi}$. It is not itself in $\mathbb{B}_{\Phi}$, because it is built from right multiplications and is not a left multiplication by an element. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb{B}_{\Psi,\Phi}$ grading is by ${}^{*}$. Thus the odd operator $O$ is Foldy–Wouthuysen-odd and Hermitian, yet it is not the left multiplication by the element $\hbar c\vec\pi$ — that element acts on one side and is even — and the identification of "odd" with "not in $\mathbb{B}_{\Psi}$" is incorrect.
 
-3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb M_+$ to $\mathbb M_-$ and fixes $\mathbb M_-$: if $F\in\mathbb M_+$ then $F^\flat=-F\in\mathbb M_-$, and if $F\in\mathbb M_-$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=mc^2r'_t/\hbar$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb M_+$ nor $\mathbb M_-$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb M_+$ and its pure part in $\mathbb M_-$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb M_+$) description of the dynamics is reached.
+3. **The real structure and the mass term.** In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and fixes $\mathbb{B}_{\Phi}$: if $F\in\mathbb{B}_{\Psi}$ then $F^\flat=-F\in\mathbb{B}_{\Phi}$, and if $F\in\mathbb{B}_{\Phi}$ then $F^\flat=F$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $mF^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla F_R=mF_L$, $\tilde\nabla^{\natural}F_L=mF_R$, which couples the two values of the chirality and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy factor that is removed before the reduction, the central element $\cos\theta-i\sin\theta$ with $\theta=mc^2r'_t/\hbar$, is not Hermitian either: the conjugation inverts $\theta$, so the element is fixed by ${}^{*}$ neither as it stands nor after multiplication by $-1$, and it lies in neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$. The phase that removes the mass term from a $\beta$-diagonal equation, $\exp(-i\beta\theta)=\cos\theta\,e_t+\sin\theta\,\vec e_x$, is a right multiplication, and it splits the other way: its scalar part lies in $\mathbb{B}_{\Psi}$ and its pure part in $\mathbb{B}_{\Phi}$, since $\vec e_x$ is anti-Hermitian. Either way the rest-energy factor is a phase and not an observable, and it must be factored out before a two-component (hence $\mathbb{B}_{\Psi}$) description of the dynamics is reached.
 
 *Step 4: the sides, one line per operator.* Every operator of the reduction is listed with the element that multiplies on the left and the element that multiplies on the right. The column headed "side" is the answer to the only question that matters here: whether the operator is a single multiplication or a product of two.
 
@@ -506,7 +506,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 | $O_1$ | the element $\vec E$ | $\vec e_z$ | two-sided |
 | $S_2$ | the element $\vec E$ | $\vec e_y$ | two-sided |
 | $O^2$ | $\vec e_j\vec e_k$, with $\pi_j\pi_k$ | $e_t$, the two $\vec e_y$ having collapsed | left multiplication by an element |
-| $\vec\pi^2$, $qΞ$, $\boldsymbol\sigma\cdot\vec B$, the $c^{-2}$ terms | an element of $\mathbb M_+$ | $e_t$ | left multiplication by an element |
+| $\vec\pi^2$, $qΞ$, $\boldsymbol\sigma\cdot\vec B$, the $c^{-2}$ terms | an element of $\mathbb{B}_{\Psi}$ | $e_t$ | left multiplication by an element |
 
 No other right multiplication and no other differential operator occurs in the reduction: the only derivative is the pure part of the gradient, $\sum_k\vec e_k\pi_k=-i\hbar D_3^A$, and it always appears with the single left element $\vec e_k$ shown. The elements $\vec e_y$ and $\vec e_z$ that close $O$, $S_1$, $O_1$ and $S_2$ are the only right multipliers, and no symbol of the article stands for an operator whose sides are left unstated.
 
@@ -539,7 +539,7 @@ $$
 
 produces the Pauli Hamiltonian $i\hbar\,\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2/2m+qΞ-(q\hbar/2m)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{sp},\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla\to\tilde\nabla-iq\tilde A/\hbar$, gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-q\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
-Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
+Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi,\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 
 ## Summary of Notation
 
@@ -547,7 +547,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 |---|---|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
-| $\mathbb M_+,\mathbb M_-$ | Hermitian / anti-Hermitian subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian / anti-Hermitian subspaces |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$ | Isomorphism, Pauli matrices |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian |

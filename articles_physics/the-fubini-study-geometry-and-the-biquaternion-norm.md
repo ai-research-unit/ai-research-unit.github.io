@@ -6,7 +6,7 @@ The state space of the qubit is a ball, and the geometry of its boundary is the 
 
 The result is a division of labour between the two forms, and it is worth stating before any algebra is written.
 
-- The **Hermitian form** (the plain form on $\mathbb{M}_+$), whose $2\times2$ reading is the trace pairing, fixes the *transition probability*. On pure states the normalised form gives $2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*} = \tfrac12(1+\vec{u}_1\cdot\vec{u}_2) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
+- The **Hermitian form** (the plain form on $\mathbb{B}_{\Psi}$), whose $2\times2$ reading is the trace pairing, fixes the *transition probability*. On pure states the normalised form gives $2\langle\tilde\Pi(\vec{u}_1),\tilde\Pi(\vec{u}_2)\rangle_{*} = \tfrac12(1+\vec{u}_1\cdot\vec{u}_2) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
 - The **biquaternion norm** fixes the *metric*. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is
 
 $$
@@ -27,7 +27,7 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 An element of the Hermitian subspace is $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi$ with $c r_t\in\mathbb{R}$ and $\vec r_\psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
-\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{M}_+:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
+\{\text{states}\}=\left\{\tilde{Ϛ}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}\rangle_{\natural}\geq0\right\},
 \qquad
 \tilde{Ϛ}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 ,
 $$
@@ -87,7 +87,7 @@ $$
 $$
 and the physical equivalence of $\tilde{Ξ}_{\mathrm{sp}}$ and $\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $\mathrm{U}(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
 
-Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_+$, not on $\mathbb{M}_+$: multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
+Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_+$, not on $\mathbb{B}_{\Psi}$: multiplication by $i$ exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
 
 ## The Transition Probability from the Trace Pairing
 
@@ -129,7 +129,7 @@ Differentiate the idempotent along the boundary. Since $\tilde\Pi(\vec{u})=\tfra
 $$
 \delta\tilde\Pi=\tfrac12\,i\,\delta\vec{u},\qquad \vec{u}\cdot\delta\vec{u}=0 ,
 $$
-the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde\Pi\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_t$:
+the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde\Pi\in\mathbb{B}_{\Psi}$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_t$:
 $$
 \langle\delta\tilde\Pi\rangle_{\natural}
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)}
@@ -151,7 +151,7 @@ $$
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
-The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
+The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{B}_{\Psi}$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
 ### The spinor computation
 
@@ -192,7 +192,7 @@ $$
 ds^2_{\mathrm{FS}}=\tfrac14\,d\theta^2+\sin^2\tfrac{\theta}{2}\Bigl(1-\sin^2\tfrac{\theta}{2}\Bigr)d{\theta_{\mathrm{azm}}}^2
 =\tfrac14\,d\theta^2+\tfrac14\sin^2\theta\,d{\theta_{\mathrm{azm}}}^2 ,
 $$
-which is the result of the idempotent computation. The two derivations use different objects — the Hermitian idempotent in $\mathbb{M}_+$ and the spinor in the module — and meet in the same line element, as they must, since the Hermitian idempotent is the bilinear companion $\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ of the spinor.
+which is the result of the idempotent computation. The two derivations use different objects — the Hermitian idempotent in $\mathbb{B}_{\Psi}$ and the spinor in the module — and meet in the same line element, as they must, since the Hermitian idempotent is the bilinear companion $\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ of the spinor.
 
 ### The spinorial factor of four
 
@@ -312,7 +312,7 @@ Five statements summarize the result, and two of them are limitations that a rea
 
 2. **The Hermitian form supplies the probability, not the distance.** The transition probability $2\langle\tilde\Pi_1,\tilde\Pi_2\rangle_{*}$ is the two-point function of the Hermitian form, whose $2\times2$ reading is $\mathrm{Tr}(\tilde\Pi_1\tilde\Pi_2^{*})$, and the Fubini–Study distance is its arccosine-square-root. The two forms divide the geometry between them: the Hermitian form gives the overlap, the biquaternion norm gives the length, and the Kähler structure relates them.
 
-3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{M}_+$ through the bilinear map $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. The complex structure does **not** live on $\mathbb{M}_+$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{M}_+$ itself as a complex vector space is the characteristic error that this separation avoids.
+3. **The geometry is that of the state *module*, descended to the state space.** The complex structure, the Hopf fibration and the projective line belong to the module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$; the metric descends to the boundary of $\mathbb{B}_{\Psi}$ through the bilinear map $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. The complex structure does **not** live on $\mathbb{B}_{\Psi}$, where multiplication by $i$ exchanges the two sectors; treating $\mathbb{B}_{\Psi}$ itself as a complex vector space is the characteristic error that this separation avoids.
 
 4. **The interior metric is imported.** The Bures metric of the mixed states is the standard monotone metric of quantum information theory. The algebra determines its boundary value and its value at the centre, and it determines the flat alternative that it is not; it does not determine the interpolation. This is a limit on the algebra's reach, not a defect of the derivation, and it is stated to prevent an overclaim.
 
@@ -338,8 +338,8 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}$ | Hermitian conjugation, ${}^{*}={}^{\natural}\circ\bar{\cdot}$ |
-| $\mathbb{M}_+$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, the $2\times2$ reading, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | State, $|\vec r|\leq1$ |

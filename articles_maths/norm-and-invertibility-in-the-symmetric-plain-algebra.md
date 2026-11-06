@@ -36,7 +36,7 @@ which is the general plain bilinear form of *The Four Forms and the Four Algebra
 
 **Basic properties.** Each is a direct reading of the definition.
 
-- $\langle\tilde Q\rangle$ is **complex-valued** in general; it is real exactly on the union of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary translate $i\mathbb{H}_{\mathbb{B}}$.
+- $\langle\tilde Q\rangle$ is **complex-valued** in general; it is real exactly on the union of the quaternion subspace $\mathbb{B}_{H}$ and its imaginary translate $\mathbb{B}_{iH}$.
 - $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde Q_1+\tilde Q_2\rangle-\langle\tilde Q_1\rangle-\langle\tilde Q_2\rangle=2\langle\tilde Q_1,\tilde Q_2\rangle$.
 - $\langle\cdot\rangle$ is **not positive definite** and **not definite**.
 - Its Gram matrix on the basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $\langle\cdot\rangle$ is non-degenerate of signature $(4,4)$ on $\mathbb{B}\cong\mathbb{R}^{8}$.

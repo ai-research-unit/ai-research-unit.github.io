@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The material sector is the anti-Hermitian subspace $\mathbb{M}_-$. It is the fixed space of the reversal $\flat=-{}^{*}$, the half of the algebra in which the scalar coefficient is imaginary and the three vector coefficients are real. Its elements are the four-vectors of relativistic physics: the four-position, the four-velocity, the four-momentum, the four-wavevector, the four-potential, the four-current and the four-force. The quaternionic norm on the sector is the Minkowski interval; its zero set is the light cone; its set of units, the material elements that are units of the algebra, is the complement of the cone; its commutator is the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase; and the Lorentz group acts on it by rotor conjugation.
+The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. It is the fixed space of the reversal $\flat=-{}^{*}$, the half of the algebra in which the scalar coefficient is imaginary and the three vector coefficients are real. Its elements are the four-vectors of relativistic physics: the four-position, the four-velocity, the four-momentum, the four-wavevector, the four-potential, the four-current and the four-force. The quaternionic norm on the sector is the Minkowski interval; its zero set is the light cone; its set of units, the material elements that are units of the algebra, is the complement of the cone; its commutator is the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase; and the Lorentz group acts on it by rotor conjugation.
 
 This article interprets the mathematics of that subspace. It states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
 
@@ -26,7 +26,7 @@ The results used are these.
 The material sector is
 
 $$
-\mathbb{M}_-=\{\tilde Q\in\mathbb{B}:\tilde Q^{\flat}=\tilde Q\},\qquad \tilde Q^{\flat}=-{}^{*}\tilde Q,
+\mathbb{B}_{\Phi}=\{\tilde Q\in\mathbb{B}:\tilde Q^{\flat}=\tilde Q\},\qquad \tilde Q^{\flat}=-{}^{*}\tilde Q,
 $$
 
 the fixed space of the reversal. In coordinates it is the set of elements with an imaginary scalar coefficient and real vector coefficients,
@@ -43,7 +43,7 @@ $$
 
 The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the imaginary scalar block $A_2=\mathbb{R}(ie_t)$ and the real vector block $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.
 
-The sector is **not a subalgebra**. The product of two anti-Hermitian elements is Hermitian, because ${}^{*}$ is an anti-automorphism: $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=(-\tilde Q_2)(-\tilde Q_1)=\tilde Q_2\tilde Q_1$. The square of an element is therefore in $\mathbb{M}_+$, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The commutator nevertheless stays in $\mathbb{M}_-$, so the sector is closed under the bracket; the anticommutator goes to $\mathbb{M}_+$. In coordinates,
+The sector is **not a subalgebra**. The product of two anti-Hermitian elements is Hermitian, because ${}^{*}$ is an anti-automorphism: $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=(-\tilde Q_2)(-\tilde Q_1)=\tilde Q_2\tilde Q_1$. The square of an element is therefore in $\mathbb{B}_{\Psi}$, and a product of two elements of $\mathbb{B}_{\Phi}$ is Hermitian exactly when the two commute. The commutator nevertheless stays in $\mathbb{B}_{\Phi}$, so the sector is closed under the bracket; the anticommutator goes to $\mathbb{B}_{\Psi}$. In coordinates,
 
 $$
 [\tilde R_{\varphi,1},\tilde R_{\varphi,2}]=2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2},
@@ -69,7 +69,7 @@ so an element is $N$-regular exactly when its norm is non-zero. The **set of uni
 
 ### The Four Forms
 
-The four forms of the algebra are all real on $\mathbb{M}_-$. Every element of the sector is its own material part, $\tilde Q=\tilde R_\varphi$, so writing $\tilde R_{\varphi,1}=i c r'_{1t} e_t+\vec r_{\varphi,1}$ and $\tilde R_{\varphi,2}=i c r'_{2t} e_t+\vec r_{\varphi,2}$, they read
+The four forms of the algebra are all real on $\mathbb{B}_{\Phi}$. Every element of the sector is its own material part, $\tilde Q=\tilde R_\varphi$, so writing $\tilde R_{\varphi,1}=i c r'_{1t} e_t+\vec r_{\varphi,1}$ and $\tilde R_{\varphi,2}=i c r'_{2t} e_t+\vec r_{\varphi,2}$, they read
 
 $$
 \langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle=-c^2r'_{1t}r'_{2t}-(\vec r_{\varphi,1},\vec r_{\varphi,2}),
@@ -87,7 +87,7 @@ $$
 \langle\tilde R_{\varphi,1},\tilde R_{\varphi,2}\rangle_{\natural*}=+c^2r'_{1t}r'_{2t}-(\vec r_{\varphi,1},\vec r_{\varphi,2}).
 $$
 
-The first is negative definite of signature $(0,4)$, the second is the interval of signature $(3,1)$, the third is positive definite of signature $(4,0)$, and the fourth is the negative interval of signature $(1,3)$. The two sesquilinear forms are the negatives of the two bilinear ones, because the star is minus the identity on the sector. The sector carries **no area pairing**: the alternating companion of the forms vanishes identically on it, since multiplication by the central imaginary carries $\mathbb{M}_-$ out of itself, $i\mathbb{M}_-=\mathbb{M}_+$, and no conjugate pair of directions lies inside the sector.
+The first is negative definite of signature $(0,4)$, the second is the interval of signature $(3,1)$, the third is positive definite of signature $(4,0)$, and the fourth is the negative interval of signature $(1,3)$. The two sesquilinear forms are the negatives of the two bilinear ones, because the star is minus the identity on the sector. The sector carries **no area pairing**: the alternating companion of the forms vanishes identically on it, since multiplication by the central imaginary carries $\mathbb{B}_{\Phi}$ out of itself, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, and no conjugate pair of directions lies inside the sector.
 
 ### The Lorentz Action
 
@@ -97,7 +97,7 @@ $$
 \tilde Q\longmapsto\tilde Q_2=\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}
 $$
 
-carries $\mathbb{M}_-$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})\tilde Q(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})^{*}=\tilde U_{\mathrm{lor},2}(\tilde U_{\mathrm{lor},1}\tilde Q\tilde U_{\mathrm{lor},1}{}^{*})\tilde U_{\mathrm{lor},2}{}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,
+carries $\mathbb{B}_{\Phi}$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})\tilde Q(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1})^{*}=\tilde U_{\mathrm{lor},2}(\tilde U_{\mathrm{lor},1}\tilde Q\tilde U_{\mathrm{lor},1}{}^{*})\tilde U_{\mathrm{lor},2}{}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,
 
 $$
 \boxed{\;\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
@@ -115,7 +115,7 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
 $$
 
-The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{lor}}$ names the general Lorentz rotor, $\tilde U_{\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{M}_+$, a rotation rotor in $\mathbb{H}_{\mathbb{B}}$, and only a general rotor uses the whole algebra.
+The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{lor}}$ names the general Lorentz rotor, $\tilde U_{\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{B}_{\Psi}$, a rotation rotor in $\mathbb{B}_{H}$, and only a general rotor uses the whole algebra.
 
 ## Interpretations
 
@@ -221,17 +221,17 @@ $$
 [\tilde R_{\varphi,1},\tilde R_{\varphi,2}]=2\,\vec r_{\varphi,1}\times\vec r_{\varphi,2}.
 $$
 
-It has no time component, so the time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$, and the anticommutator goes to $\mathbb{M}_+$; the product of two material elements is Hermitian exactly when their spatial parts are collinear, because the cross product vanishes then and only then.
+It has no time component, so the time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$. The commutator stays in $\mathbb{B}_{\Phi}$, and the anticommutator goes to $\mathbb{B}_{\Psi}$; the product of two material elements is Hermitian exactly when their spatial parts are collinear, because the cross product vanishes then and only then.
 
-The bracket is the compact Lie algebra $\mathfrak{u}(2)$, whose traceless part is the Lie algebra of the spatial rotations; it is not the full Lorentz algebra. The boost generators do not lie in $\mathbb{M}_-$; they lie in $\mathbb{M}_+$ as the Hermitian elements $i\vec r_\psi$, and the full Lorentz algebra is generated by the rotations of $\mathbb{M}_-$ together with the boosts of $\mathbb{M}_+$. The material sector is therefore a Lie algebra for the compact part and not for the full group.
+The bracket is the compact Lie algebra $\mathfrak{u}(2)$, whose traceless part is the Lie algebra of the spatial rotations; it is not the full Lorentz algebra. The boost generators do not lie in $\mathbb{B}_{\Phi}$; they lie in $\mathbb{B}_{\Psi}$ as the Hermitian elements $i\vec r_\psi$, and the full Lorentz algebra is generated by the rotations of $\mathbb{B}_{\Phi}$ together with the boosts of $\mathbb{B}_{\Psi}$. The material sector is therefore a Lie algebra for the compact part and not for the full group.
 
-The square of a material element is in $\mathbb{M}_+$, because $\{\tilde Q,\tilde Q\}=2\tilde Q^2$ and the two arguments lie in one sector. Its scalar part is the negative Euclidean square, $-c^2(r'_t)^2-\lvert\vec r_\varphi\rvert^2$, not the interval; the interval is the quaternionic norm, which is a different form. The two must not be conflated: the square is an informational element, and its scalar part is a Euclidean weight, not a causal interval.
+The square of a material element is in $\mathbb{B}_{\Psi}$, because $\{\tilde Q,\tilde Q\}=2\tilde Q^2$ and the two arguments lie in one sector. Its scalar part is the negative Euclidean square, $-c^2(r'_t)^2-\lvert\vec r_\varphi\rvert^2$, not the interval; the interval is the quaternionic norm, which is a different form. The two must not be conflated: the square is an informational element, and its scalar part is a Euclidean weight, not a causal interval.
 
 **The boundary.** The bracket is not the physical composition of four-vectors. Its traceless part is the Lie algebra of the spatial part, and the time direction is central to it. The failure of the material sector to be closed under the product is the algebraic reason a product of two four-vectors is not generally a four-vector.
 
 ### The Sector Is Phase-Free and Carries the Metric
 
-All four forms are real on $\mathbb{M}_-$, so each is its own real part and the sector carries no scalar area pairing. The pairing that carries the physics is symmetric: the interval is the quaternionic form of signature $(3,1)$, the Euclidean square is the Hermitian form of signature $(4,0)$, and the two sesquilinear forms are the negatives of the two bilinear ones.
+All four forms are real on $\mathbb{B}_{\Phi}$, so each is its own real part and the sector carries no scalar area pairing. The pairing that carries the physics is symmetric: the interval is the quaternionic form of signature $(3,1)$, the Euclidean square is the Hermitian form of signature $(4,0)$, and the two sesquilinear forms are the negatives of the two bilinear ones.
 
 The absence of the area pairing is exact and has a simple reason: every canonical pair of directions of the framework has one leg in each sector. The two times $e_t$ and $ie_t$ form one pair, the material time being the imaginary leg; the three spatial pairs $(\vec e_k,i\vec e_k)$ form three more, the material space being the real leg. The multiplication by $i$ carries a material direction to its informational partner, so no pair lies inside the material sector. The sector is phase-free: it carries the metric and the interval, not the symplectic area.
 
@@ -241,11 +241,11 @@ This is not the statement that the sector has no antisymmetric structure. The **
 
 ### The Material Object Is Acted Upon
 
-The sector is the space of configurations, and the informational sector acts on it by the sandwich $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$. The asymmetry is the physical content of the names: the material element is what is acted upon, and the informational element is what acts. A material element is the object observed, and its observable representative is $i\tilde Q\in\mathbb{M}_+$; the factor $i$ is the map from the object to the operator that reads it.
+The sector is the space of configurations, and the informational sector acts on it by the sandwich $\tilde Q_-\mapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*}$. The asymmetry is the physical content of the names: the material element is what is acted upon, and the informational element is what acts. A material element is the object observed, and its observable representative is $i\tilde Q\in\mathbb{B}_{\Psi}$; the factor $i$ is the map from the object to the operator that reads it.
 
-The action preserves the norm when the acting element has unit norm, and then it is the Lorentz action, a change of frame. When the acting element is an idempotent, the action is a projection, and it is a measurement; but the idempotent lies in $\mathbb{M}_+$, not in $\mathbb{M}_-$. The material sector itself owns no non-trivial idempotent: if $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the star to the first relation gives $-\tilde\Pi=\tilde\Pi^2=\tilde\Pi$, so $\tilde\Pi=0$. The measurement projection therefore runs through the informational sector, and the material sector supplies the object, not the outcome.
+The action preserves the norm when the acting element has unit norm, and then it is the Lorentz action, a change of frame. When the acting element is an idempotent, the action is a projection, and it is a measurement; but the idempotent lies in $\mathbb{B}_{\Psi}$, not in $\mathbb{B}_{\Phi}$. The material sector itself owns no non-trivial idempotent: if $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the star to the first relation gives $-\tilde\Pi=\tilde\Pi^2=\tilde\Pi$, so $\tilde\Pi=0$. The measurement projection therefore runs through the informational sector, and the material sector supplies the object, not the outcome.
 
-**The boundary.** The action is established algebra. The interpretation of $\mathbb{M}_+$ as a distinct physical sector is the hypothesis stated in the informational article. The material sector is the acted-upon side of the action whether or not that hypothesis is realised.
+**The boundary.** The action is established algebra. The interpretation of $\mathbb{B}_{\Psi}$ as a distinct physical sector is the hypothesis stated in the informational article. The material sector is the acted-upon side of the action whether or not that hypothesis is realised.
 
 ## Examples
 
@@ -271,14 +271,14 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Summary
 
-- The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$.
+- The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, with an imaginary time and a real space, $\tilde Q=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
 - The light cone is the $N$-degenerate set; its non-zero points are the zero divisors; on it the elements have no inverse; and it is the characteristic cone of the wave operator.
 - The set of units of the sector is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.
-- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{M}_+$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
+- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{B}_{\Psi}$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{B}_{H}$.
 - The boost factor is positive definite, so the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm{lor}}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
 - The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the compact part, the spatial rotations together with the central phase.
 - The sign of the interval is the product of the signs of the factors, and it is data of the embedding: a change of local complex structure moves it, while the mass is read off the modulus of the norm.
@@ -288,9 +288,9 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector |
+| $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace, the material sector |
 | $\tilde R_\varphi=i c r'_t e_t+\vec r_\varphi$ | a material element, with $r'_t = t'$; it is its own material part |
-| $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
+| $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |
 | $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the general Lorentz rotor, $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ |
@@ -304,7 +304,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Further Reading
 
-- [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the definition and the basis of $\mathbb{M}_-$.
+- [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the definition and the basis of $\mathbb{B}_{\Phi}$.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its signature and the inverse formula.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the degenerate case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the cone and the zero divisors.

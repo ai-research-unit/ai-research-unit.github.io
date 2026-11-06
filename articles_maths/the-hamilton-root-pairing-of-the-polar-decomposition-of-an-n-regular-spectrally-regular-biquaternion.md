@@ -266,7 +266,7 @@ The Hamilton row is the only one whose modulus is central. Its modulus and angle
 
 ## Behaviour Under the Three Conjugations
 
-The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{C}_{\mathbb{B}}$; complex conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the two operations commuting because one acts on the coefficients and the other on the units. The three act on the Hamilton data as follows.
+The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{B}_{C}$; complex conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the two operations commuting because one acts on the coefficients and the other on the units. The three act on the Hamilton data as follows.
 
 ### The Hamilton Data
 
@@ -336,8 +336,8 @@ $$
 
 | exponent | formula | kind | square | exponential |
 |---|---|---|---|---|
-| $\mathcal H$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Hermitian, in $\mathbb{M}_+$ | $\frac{\theta_{\mathrm{rpd}}^2}{4}e_t$ | the boost $\tilde U_{\mathrm b}$ |
-| $\mathcal R$ | $\frac{\theta}{2}\vec u_{\mathrm r}$ | real pure, in $\mathbb{M}_-\cap\mathrm{Vect}(\mathbb{B})$ | $-\frac{\theta^2}{4}e_t$ | the rotor $\tilde u_{\mathrm r}$ |
+| $\mathcal H$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Hermitian, in $\mathbb{B}_{\Psi}$ | $\frac{\theta_{\mathrm{rpd}}^2}{4}e_t$ | the boost $\tilde U_{\mathrm b}$ |
+| $\mathcal R$ | $\frac{\theta}{2}\vec u_{\mathrm r}$ | real pure, in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{V}$ | $-\frac{\theta^2}{4}e_t$ | the rotor $\tilde u_{\mathrm r}$ |
 
 The Hermitian exponent is the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* reads at the level of the element.
 
@@ -660,15 +660,15 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 | $\tilde{Ζ}$ | a root of one, $\tilde{Ζ}^2 = e_t$; the pure root attached to the Hamilton axis is $\vec{Ζ}=-i\vec U$ |
 | $\tilde\Pi_- = \tfrac12(e_t-\tilde{Ζ})$ | the halving idempotent of a root of one, whose exponential is the root |
 | $-i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the product of the last two factors of the polar word, read from a root of norm $-e_t$ |
-| $\mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the exponent of the boost, Hermitian, in $\mathbb{M}_+$, the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$ |
-| $\mathcal R = \frac{\theta}{2}\vec u_{\mathrm r}$ | the exponent of the rotor, real pure, in $\mathbb{M}_-\cap\mathrm{Vect}(\mathbb{B})$, the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$ |
+| $\mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the exponent of the boost, Hermitian, in $\mathbb{B}_{\Psi}$, the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$ |
+| $\mathcal R = \frac{\theta}{2}\vec u_{\mathrm r}$ | the exponent of the rotor, real pure, in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{V}$, the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$ |
 | $[\mathcal H,\mathcal R] = i\frac{\theta_{\mathrm{rpd}}\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$ | the bracket of the two exponents, vanishing exactly on the aligned words |
 | $\Theta\vec U$ | the exponent of the single exponential, a complex multiple of a root of $-e_t$; it equals $\mathcal H+\mathcal R$ exactly on the aligned words, and otherwise differs from the sum by the Baker–Campbell–Hausdorff series |
 | $\vec u_{\mathrm b} = \epsilon\vec u_{\mathrm r} = \epsilon\vec u$ | the aligned case, in which $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\bigl((\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2})\vec u\bigr)$ |
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit pure real quaternions |
 | $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm n}$ | rapidity, rotation angle, and axis of a Hermitian root of one |
-| $\mathbb{M}_\pm$ | the Hermitian and the anti-Hermitian subspaces of $\mathbb{B}$ |
-| $\mathrm{Sp}(1)$, $\mathbb{H}_{\mathbb{B}}$, $\mathcal{A}$ | the unit real quaternions, the real quaternion subspace, the unit pure real quaternions |
+| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and the anti-Hermitian subspaces of $\mathbb{B}$ |
+| $\mathrm{Sp}(1)$, $\mathbb{B}_{H}$, $\mathcal{A}$ | the unit real quaternions, the real quaternion subspace, the unit pure real quaternions |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
 
 ## Further Reading

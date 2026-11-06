@@ -12,7 +12,7 @@ Here $S_{\mathrm d}$ and $V_\mu$ are the two scalar parts
 $$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr),
 \qquad
 V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\bigr),$$
-with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{M}_-$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
+with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
 
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the bilinears they use, and gives the biquaternion interpretation. Its contribution is a **placement of the channels**. The scalar density $S_{\mathrm d}$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. The vector current $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. The axial current $A_\mu$ is the channel the linear mass breaks, so an axial-axial self-interaction is a coupling conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
@@ -22,7 +22,7 @@ The article is organised as follows. The next section fixes the field, the pairi
 
 ## The Field, the Pairing and the Two Equations
 
-The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla$, the d'Alembertian $\Box$, the two values of the subscript, and the two sectors $\mathbb{M}_\pm$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
+The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla$, the d'Alembertian $\Box$, the two values of the subscript, and the two sectors $\mathbb{B}_{\Psi,\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
 $$\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The **slot action** of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_\mu\tilde Q\vec e_{\nu(\mu)},$$
@@ -212,7 +212,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{M}_-$ frame of the conventions article, whose metric has $g_{tt}=+1$ and $g_{xx}=-1$.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric has $g_{tt}=+1$ and $g_{xx}=-1$.
 
 ### The Two Slot Actions
 
@@ -359,7 +359,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | $\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$ | Hehl–Datta term in the equation ($\frac{3\kappa}{16}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ as a Lagrangian term) |
 | $X$, $M$ | Spin–torsion coupling and torsion mass (propagating-torsion case) |
 | $\sum_\mu\varepsilon_\mu A_\mu A_\mu = -\sum_\mu\varepsilon_\mu V_\mu V_\mu$ | Two-dimensional current duality (verified exactly) |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational and material sectors |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational and material sectors |
 
 ## Further Reading
 

@@ -4,13 +4,13 @@
 
 The path integral is the third formulation of the same quantum dynamics, alongside the state-vector equation and the operator algebra. It represents the transition amplitude as a sum over histories weighted by the phase $\exp(iS/\hbar)$, and it makes the classical limit, the semiclassical expansion, and the fluctuation determinants visible in a way the operator formalism does not. This article derives the **Schrödinger path integral** from the biquaternion state-vector equation and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
-The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(iS/\hbar)$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{M}_-$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
+The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(iS/\hbar)$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
 
 The biquaternion content of the Schrödinger path integral is therefore a statement about the **kernel** rather than about the phase. The Hamiltonian is central, so the evolution operator is central, so the position kernel is a complex scalar times $e_t$, so the path integral acts on the state module as scalar multiplication. The entire path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$. This article makes that precise and then computes with it.
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi,\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
 
 ## From the State-Vector Equation to a Sum over Paths
 
@@ -215,7 +215,7 @@ $$
 K_\omega^E(r_x,\tau;r_{0x},0) = \sum_n \tilde{Ξ}_{\mathrm{sp},n}(r_x)\tilde{Ξ}_{\mathrm{sp},n}(r_{0x})\,\exp(-\omega\tau(n+\frac12)) ,
 $$
 
-so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $\exp(-\omega\tau/2)$ times the ground-state projector. In the interpretation of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
+so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $\exp(-\omega\tau/2)$ times the ground-state projector. In the interpretation of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
 
 ## The Path Integral Reproduces the Schrödinger Equation
 
@@ -305,7 +305,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Open Questions
 
-**1. Is there a distinguished measure on the zero divisor cone?** The endpoints of the paths are points of the material sector's configuration space, whose light cone is the zero divisor cone of $\mathbb{M}_-$. Whether that cone supports a natural measure for the path integral is open, and the companion article states the same question.
+**1. Is there a distinguished measure on the zero divisor cone?** The endpoints of the paths are points of the material sector's configuration space, whose light cone is the zero divisor cone of $\mathbb{B}_{\Phi}$. Whether that cone supports a natural measure for the path integral is open, and the companion article states the same question.
 
 **2. Can the module factor be made dynamical within the path integral?** A path integral that couples to the module would need non-central phases along the path; the framework contains such couplings but does not select one, and the spin subcategories treat them.
 
@@ -343,8 +343,8 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_j^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the phase and the kernel |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; home of the phase and the kernel |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
 | $\tilde Q(r'_t)=\exp(-iHr'_t/\hbar)$ | Evolution operator; central $*$-unitary, semigroup |
@@ -357,7 +357,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega r'_t}[(r_x^2+r_{0x}^2)\cos\omega r'_t-2r_xr_{0x}]$ | Oscillator classical action |
 | $K_\omega^E$ | Mehler kernel; image of $K_\omega$ under $r'_t\to-i\tau$ |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |
-| $r'_t\mapsto-i\tau$ | Wick rotation; $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ |
+| $r'_t\mapsto-i\tau$ | Wick rotation; $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ |
 | $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

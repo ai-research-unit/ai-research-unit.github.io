@@ -144,8 +144,8 @@ The fixed space and the anti-fixed space of each of the three are the six subspa
 
 | subgroup | involution | fixed space | anti-fixed space |
 |---|---|---|---|
-| $\{\mathrm{id},{}^{\natural}\}$ | ${}^{\natural}$ | the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the vector part |
-| $\{\mathrm{id},{}^{\natural}{}^{*}\}$ | ${}^{\natural}{}^{*}$ | the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ |
+| $\{\mathrm{id},{}^{\natural}\}$ | ${}^{\natural}$ | the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ | the vector part |
+| $\{\mathrm{id},{}^{\natural}{}^{*}\}$ | ${}^{\natural}{}^{*}$ | the quaternion subspace $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the anti-quaternion subspace $\mathbb{B}_{iH}$ |
 | $\{\mathrm{id},{}^{*}\}$ | ${}^{*}$ | the Hermitian elements | the anti-Hermitian elements |
 
 The Hermitian elements are those with real scalar coefficient and purely imaginary vector coefficients; the anti-Hermitian ones have purely imaginary scalar coefficient and real vector coefficients. The three fixed spaces meet pairwise in the real line $\mathbb{R}e_t$.
@@ -156,7 +156,7 @@ The group acts on the algebra through its four maps, and the orbit of an element
 
 **Theorem.** The orbit of $\tilde Q$ under $G$ has size $1$, $2$ or $4$. The size is $1$ on the real line $\mathbb{R}e_t$; it is $2$ on the elements of the centre, of the quaternion subspace or of the Hermitian elements that are not on that line; and it is $4$ on all other elements.
 
-*Proof.* The stabilizer of $\tilde Q$ is the set of maps of $G$ fixing it, a subgroup, so its order is $1$, $2$ or $4$ and the orbit has size $4$, $2$ or $1$ by orbit–stabilizer. The element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by ${}^{\natural}{}^{*}$, since ${}^{*}$ is their composite; that intersection is $\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t$, which gives orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of the three non-identity maps and by no second one; the three fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and the Hermitian elements, and their pairwise intersections are all $\mathbb{R}e_t$. This gives orbit size $2$ on the stated set and orbit size $4$ on its complement.
+*Proof.* The stabilizer of $\tilde Q$ is the set of maps of $G$ fixing it, a subgroup, so its order is $1$, $2$ or $4$ and the orbit has size $4$, $2$ or $1$ by orbit–stabilizer. The element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by ${}^{\natural}{}^{*}$, since ${}^{*}$ is their composite; that intersection is $\mathbb{B}_{C}\cap\mathbb{B}_{H}=\mathbb{R}e_t$, which gives orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of the three non-identity maps and by no second one; the three fixed spaces are $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ and the Hermitian elements, and their pairwise intersections are all $\mathbb{R}e_t$. This gives orbit size $2$ on the stated set and orbit size $4$ on its complement.
 
 **Example.** For $\tilde Q=e_t+2\vec e_x+3i\vec e_x+4i\vec e_y$ the images are
 

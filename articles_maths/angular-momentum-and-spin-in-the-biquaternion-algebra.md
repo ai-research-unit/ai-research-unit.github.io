@@ -33,11 +33,11 @@ $$
 and $\mathsf{M}_2(X^*)=\mathsf{M}_2(X)^\dagger$. The two sectors are
 
 $$
-\mathbb{M}_+=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad
-\mathbb{M}_-=\operatorname{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Psi}=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad
+\mathbb{B}_{\Phi}=\operatorname{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
 
-the Hermitian and anti-Hermitian subspaces; $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_+=\mathbb{M}_-$.
+the Hermitian and anti-Hermitian subspaces; $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$.
 
 The trace form is
 
@@ -48,10 +48,10 @@ $$
 with $\operatorname{tr}$ the matrix trace. It is positive definite and $\mathbb{C}$-linear in $Y$. The group of unit real quaternions is
 
 $$
-G=\{u\in\mathbb{H}_{\mathbb{B}}:uu^*=e_t\},
+G=\{u\in\mathbb{B}_{H}:uu^*=e_t\},
 $$
 
-which is $SU(2)$; its Lie algebra is $\mathfrak{g}=\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. The complexification $\mathfrak{g}_{\mathbb{C}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is $\mathfrak{sl}_2(\mathbb{C})$, the traceless part under $\mathsf{M}_2$.
+which is $SU(2)$; its Lie algebra is $\mathfrak{g}=\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. The complexification $\mathfrak{g}_{\mathbb{C}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is $\mathfrak{sl}_2(\mathbb{C})$, the traceless part under $\mathsf{M}_2$.
 
 **Proposition.** $\mathsf{M}_2$ is an isomorphism of complex algebras, carries $*$ to the conjugate transpose, and carries the trace form to the Hilbert–Schmidt form.
 
@@ -68,7 +68,7 @@ $$
 and the Hermitian basis
 
 $$
-\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
+\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{B}_{\Psi},\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$
 
 They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
@@ -425,7 +425,7 @@ $$
 
 The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *The Unpolarized Module of the Biquaternion Algebra*. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
 
-The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
+The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi,\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
 
 ## The Four Uses of the Word Spin
 
@@ -518,7 +518,7 @@ The word spin has four uses in this corpus, and only the first two record a valu
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Its basis; $\vec e_k^2=-e_t$ |
-| $\mathbb{M}_\pm$ | The Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{\Psi,\Phi}$ | The Hermitian and anti-Hermitian sectors |
 | $Z=\mathbb{C}e_t$ | The centre |
 | $V=\ker\operatorname{tr}$ | The traceless part |
 | $G=SU(2)$ | The unit real quaternions |

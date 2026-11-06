@@ -129,7 +129,7 @@ is the positive definite scalar part of the layer. The form $h$ is thus the modu
 
 **Definition.** The **associated quadratic form** of $h$ is $\mathfrak{Q}(\tilde Q_1)=h(\tilde Q_1,\tilde Q_1)=\tilde Q_1\tilde Q_1^{*}$, the Hermitian form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-**Proposition.** The quadratic form satisfies $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\,\mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$, so it is not $\mathbb{C}$-linear but equivariant; it takes its values in the Hermitian subspace $\mathbb{M}_+$, since $\mathfrak{Q}(\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1)$; it vanishes only at $\tilde Q_1=0$, its scalar part being the sum of the squared moduli; and it determines $h$ by the polarisation identity
+**Proposition.** The quadratic form satisfies $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\,\mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$, so it is not $\mathbb{C}$-linear but equivariant; it takes its values in the Hermitian subspace $\mathbb{B}_{\Psi}$, since $\mathfrak{Q}(\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1)$; it vanishes only at $\tilde Q_1=0$, its scalar part being the sum of the squared moduli; and it determines $h$ by the polarisation identity
 
 $$
 \boxed{\;h(\tilde Q_1,\tilde Q_2)+h(\tilde Q_2,\tilde Q_1)^{*}=\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)=2\,h(\tilde Q_1,\tilde Q_2)\;},
@@ -137,7 +137,7 @@ $$
 
 so that $h(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde Q_1+\tilde Q_2)-\mathfrak{Q}(\tilde Q_1)-\mathfrak{Q}(\tilde Q_2)\bigr)$.
 
-**Proof.** The equivariance is $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\tilde Q_1(\tilde Q_4\tilde Q_1)^{*}=\tilde Q_4\tilde Q_1\tilde Q_1^{*}\tilde Q_4^{*}=\tilde Q_4 \mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$. Hermitianity of the values is $(\tilde Q_1\tilde Q_1^{*})^{*}=\tilde Q_1\tilde Q_1^{*}$, which is the statement that the general plain sesquilinear form of an element lies in $\mathbb{M}_+$. Vanishing only at zero and the scalar part are computed in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. For the polarisation, expanding $\mathfrak{Q}(\tilde Q_1+\tilde Q_2)$ gives $\mathfrak{Q}(\tilde Q_1)+\mathfrak{Q}(\tilde Q_2)+\tilde Q_1\tilde Q_2^{*}+\tilde Q_2\tilde Q_1^{*}$; the last two terms are $h(\tilde Q_1,\tilde Q_2)$ and $h(\tilde Q_1,\tilde Q_2)^{*}$, so their sum is $2h(\tilde Q_1,\tilde Q_2)$ by Hermitianity, and $2$ is invertible in $\mathbb{B}$.
+**Proof.** The equivariance is $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\tilde Q_1(\tilde Q_4\tilde Q_1)^{*}=\tilde Q_4\tilde Q_1\tilde Q_1^{*}\tilde Q_4^{*}=\tilde Q_4 \mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$. Hermitianity of the values is $(\tilde Q_1\tilde Q_1^{*})^{*}=\tilde Q_1\tilde Q_1^{*}$, which is the statement that the general plain sesquilinear form of an element lies in $\mathbb{B}_{\Psi}$. Vanishing only at zero and the scalar part are computed in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. For the polarisation, expanding $\mathfrak{Q}(\tilde Q_1+\tilde Q_2)$ gives $\mathfrak{Q}(\tilde Q_1)+\mathfrak{Q}(\tilde Q_2)+\tilde Q_1\tilde Q_2^{*}+\tilde Q_2\tilde Q_1^{*}$; the last two terms are $h(\tilde Q_1,\tilde Q_2)$ and $h(\tilde Q_1,\tilde Q_2)^{*}$, so their sum is $2h(\tilde Q_1,\tilde Q_2)$ by Hermitianity, and $2$ is invertible in $\mathbb{B}$.
 
 ## The Automorphisms Are the $*$-Unitary Elements
 
@@ -175,7 +175,7 @@ For an involution $\sigma$ of the biquaternion algebra and the left regular modu
 | $h(\tilde Q_1,\tilde Q_2)=\tilde Q_1\tilde Q_2^{*}$ | the canonical Hermitian form on ${}_{\mathbb{B}}\mathbb{B}$ |
 | $h(\tilde Q_4\tilde Q_1,\tilde Q_2)=\tilde Q_4 h$, $h(\tilde Q_1,\tilde Q_4\tilde Q_2)=h\tilde Q_4^{*}$ | ${}^{*}$-sesquilinearity |
 | $h(\tilde Q_2,\tilde Q_1)=h(\tilde Q_1,\tilde Q_2)^{*}$ | Hermitianity |
-| $\mathfrak{Q}(\tilde Q_1)=\tilde Q_1\tilde Q_1^{*}$, $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$ | the associated quadratic form, in $\mathbb{M}_+$ |
+| $\mathfrak{Q}(\tilde Q_1)=\tilde Q_1\tilde Q_1^{*}$, $\mathfrak{Q}(\tilde Q_4\tilde Q_1)=\tilde Q_4\mathfrak{Q}(\tilde Q_1)\tilde Q_4^{*}$ | the associated quadratic form, in $\mathbb{B}_{\Psi}$ |
 | $\mathrm{Sc}\,h(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the scalar part is the inner product of the layer |
 | $U_{{}^{*}}(\mathbb{B})=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the $*$-unitary group, the automorphisms $R_{\tilde Q}$ |
 | $L_{\tilde Q}$ is a form-preserving map $\iff \tilde Q=\lambda e_t$, $\lvert\lambda\rvert=1$ | the central $*$-unitary elements only |

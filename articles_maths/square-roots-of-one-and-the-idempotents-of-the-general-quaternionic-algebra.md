@@ -58,7 +58,7 @@ The set is a nondegenerate complex quadric of complex dimension three, hence of 
 
 The roots of $+1$ split into three entries according to the vector part.
 
-- **The central roots $\pm e_t$.** These have $\vec{Ζ}=0$ and $Ζ_t=\pm1$, and $Ζ_t^2=1$. They are the two elements of the root set in the centre $\mathbb{C}_{\mathbb{B}}$.
+- **The central roots $\pm e_t$.** These have $\vec{Ζ}=0$ and $Ζ_t=\pm1$, and $Ζ_t^2=1$. They are the two elements of the root set in the centre $\mathbb{B}_{C}$.
 - **The real vector roots.** These have $Ζ_t=0$ and $\vec{Ζ}$ a real vector with $(\vec{Ζ},\vec{Ζ})=1$. They are the elements $\vec u$ over the real unit vectors, a quadric of real dimension two in the real vector subspace; the complex solutions with $Ζ_t=0$ form a family of real dimension four, the solutions of $\sum_\mu(p_\mu^2-(p'_\mu)^2)=1$ together with $\sum_\mu p_\mu p'_\mu=0$.
 - **The mixed roots.** These have both $Ζ_t$ and the vector part nonzero, and they fill the rest of the quadric.
 
@@ -140,7 +140,7 @@ The two propositions are the whole of the relation between the roots of one and 
 
 ### The Standard Idempotents of the Algebra
 
-**The plain Hermitian idempotents $\tilde\Pi_+(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ over the real unit vectors are nontrivial plain idempotents in $\mathbb{M}_{+}$, and they are square-zero in $\star$, $\tilde\Pi_+(\tilde{Ζ})\star\tilde\Pi_+(\tilde{Ζ})=0$, so the product fails to keep them.**
+**The plain Hermitian idempotents $\tilde\Pi_+(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ over the real unit vectors are nontrivial plain idempotents in $\mathbb{B}_{\Psi}$, and they are square-zero in $\star$, $\tilde\Pi_+(\tilde{Ζ})\star\tilde\Pi_+(\tilde{Ζ})=0$, so the product fails to keep them.**
 
 The idempotents of the plain product are the standard family of the algebra, and they are the elements the product fails to keep.
 
@@ -150,9 +150,9 @@ $$
 \tilde\Pi_+(\tilde{Ζ})=\tfrac12\bigl(e_t+\tilde{Ζ}\bigr) .
 $$
 
-**Proposition.** Every Hermitian idempotent is a nontrivial idempotent of the plain product and lies in the Hermitian subspace: $\tilde\Pi_+(\tilde{Ζ})\tilde\Pi_+(\tilde{Ζ})=\tilde\Pi_+(\tilde{Ζ})$ and $\tilde\Pi_+(\tilde{Ζ})\in\mathbb{M}_{+}$.
+**Proposition.** Every Hermitian idempotent is a nontrivial idempotent of the plain product and lies in the Hermitian subspace: $\tilde\Pi_+(\tilde{Ζ})\tilde\Pi_+(\tilde{Ζ})=\tilde\Pi_+(\tilde{Ζ})$ and $\tilde\Pi_+(\tilde{Ζ})\in\mathbb{B}_{\Psi}$.
 
-**Proof.** The vector $\tilde{Ζ}$ has $(\tilde{Ζ})^2=\tilde{Ζ}^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde{Ζ}+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{M}_{+}$ (*Subspaces and Decompositions*). It is not $0$ and not $e_t$.
+**Proof.** The vector $\tilde{Ζ}$ has $(\tilde{Ζ})^2=\tilde{Ζ}^{2}=(-1)(-e_t)=e_t$, so $\tilde\Pi^2=\tfrac14(e_t+2\tilde{Ζ}+e_t)=\tilde\Pi$; and the element has real scalar part and purely imaginary vector part, which is the coordinate condition of $\mathbb{B}_{\Psi}$ (*Subspaces and Decompositions*). It is not $0$ and not $e_t$.
 
 By *Idempotents* the nontrivial idempotents of the plain product are exactly these, one for each real unit vector, so the plain idempotent set is the family $\tilde\Pi_+(\tilde{Ζ})$, a quadric of complex dimension two, together with $0$ and $e_t$. The general quaternionic product answers differently.
 
@@ -230,16 +230,16 @@ Since the square is always central, the equation $\tilde\Pi\star\tilde\Pi=\tilde
 
 | subspace | element | $\tilde\Pi\star\tilde\Pi$ | idempotents |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | $Ae_t$ | $A^2e_t$ | $0$, $e_t$ |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | $\vec Q$ | $(\vec Q,\vec Q)e_t$ | $0$ |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | $h$ | $\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$ | $0$, $e_t$ |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | $ih$ | $-\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$ | $0$ |
-| $\mathbb{M}_{+}$, the Hermitian subspace | $a_te_t+i\vec p$ | $\bigl(a_t^2-(\vec p,\vec p)\bigr)e_t$ | $0$, $e_t$ |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | $ib_te_t+\vec q$ | $\bigl(-b_t^2+(\vec q,\vec q)\bigr)e_t$ | $0$ |
+| $\mathbb{B}_{C}$, the centre | $Ae_t$ | $A^2e_t$ | $0$, $e_t$ |
+| $\mathbb{B}_{V}$, the vector subspace | $\vec Q$ | $(\vec Q,\vec Q)e_t$ | $0$ |
+| $\mathbb{B}_{H}$, the quaternion subspace | $h$ | $\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$ | $0$, $e_t$ |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | $ih$ | $-\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$ | $0$ |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | $a_te_t+i\vec p$ | $\bigl(a_t^2-(\vec p,\vec p)\bigr)e_t$ | $0$, $e_t$ |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | $ib_te_t+\vec q$ | $\bigl(-b_t^2+(\vec q,\vec q)\bigr)e_t$ | $0$ |
 
-**Proof.** Each entry is the algebraic norm on the subspace of the same row, by the table of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. In the centre the equation leaves $A^2=A$, hence $A\in\{0,1\}$. In the vector subspace a central element equals a vector only at $0$; a nonzero isotropic element has square $0$ and is not idempotent. In the quaternion subspace the square is a **real** scalar multiple of $e_t$, so an idempotent is a real multiple of $e_t$ with $h_t^2=h_t$. In the anti-quaternion subspace the square is a real multiple of $e_t$ with the opposite sign, so $h=0$. In $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the scalar parts are constrained to be real combinations, and the equation forces the vector part to vanish, then leaves the trivial pair or the origin as displayed.
+**Proof.** Each entry is the algebraic norm on the subspace of the same row, by the table of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. In the centre the equation leaves $A^2=A$, hence $A\in\{0,1\}$. In the vector subspace a central element equals a vector only at $0$; a nonzero isotropic element has square $0$ and is not idempotent. In the quaternion subspace the square is a **real** scalar multiple of $e_t$, so an idempotent is a real multiple of $e_t$ with $h_t^2=h_t$. In the anti-quaternion subspace the square is a real multiple of $e_t$ with the opposite sign, so $h=0$. In $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the scalar parts are constrained to be real combinations, and the equation forces the vector part to vanish, then leaves the trivial pair or the origin as displayed.
 
-**Remark.** Three subspaces, the centre, the quaternion subspace and the Hermitian subspace, carry the two trivial idempotents, and three, the vector, the anti-quaternion and the anti-Hermitian subspaces, carry only $0$; no remarkable subspace carries a nontrivial idempotent. The plain reading is the opposite: there the nontrivial idempotents are the Hermitian idempotents and lie in $\mathbb{M}_{+}$. The change of product moves them out of the idempotent set altogether.
+**Remark.** Three subspaces, the centre, the quaternion subspace and the Hermitian subspace, carry the two trivial idempotents, and three, the vector, the anti-quaternion and the anti-Hermitian subspaces, carry only $0$; no remarkable subspace carries a nontrivial idempotent. The plain reading is the opposite: there the nontrivial idempotents are the Hermitian idempotents and lie in $\mathbb{B}_{\Psi}$. The change of product moves them out of the idempotent set altogether.
 
 ### The Peirce Decomposition It Does Not Carry
 
@@ -268,7 +268,7 @@ In the general quaternionic bilinear product the square of every element is the 
 | $\tilde\Pi$ | an idempotent of the product; the nonzero ones are $e_t$ alone |
 | $\tilde\Pi_+(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ | the Hermitian idempotent over a real unit vector $\vec u$ |
 | $L_{\tilde Q}$ | the left multiplication $\tilde Q_1\mapsto\tilde Q\star\tilde Q_1$, a projector iff $\tilde Q$ is a plain idempotent |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_{+},\mathbb{M}_{-}$ | the remarkable subspaces |
+| $\mathbb{B}_{C},\mathbb{B}_{V},\mathbb{B}_{H},\mathbb{B}_{iH},\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the remarkable subspaces |
 
 ## Further Reading
 

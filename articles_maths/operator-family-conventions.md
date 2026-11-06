@@ -144,9 +144,9 @@ The first bit records the norm $N$ of *Product and Form Conventions* and the sec
 
 **The label is not an algebra.** No arithmetic is done on the two bits: $\Sigma_{11}$ is not the sum of $\Sigma_{10}$ and $\Sigma_{01}$, and the subscripts are not exponents. A stratum is a name for a domain on which an operator is read, and it is not an index of the operator.
 
-### $\mathbb{M}_+$ and $\mathbb{M}_-$
+### $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$
 
-**Fixed and anti-fixed.** The two halves of the algebra are $\mathbb{M}_+$ and $\mathbb{M}_-$, the Hermitian and anti-Hermitian subspaces of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*. The plus records the fixed space of the star and the minus the anti-fixed space; the two signs record fixed and anti-fixed, and never positivity or negativity.
+**Fixed and anti-fixed.** The two halves of the algebra are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the Hermitian and anti-Hermitian subspaces of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*. The plus records the fixed space of the star and the minus the anti-fixed space; the two signs record fixed and anti-fixed, and never positivity or negativity.
 
 ## The Words
 
@@ -195,7 +195,7 @@ The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mat
 
 The units of the algebra are $e_t,\vec e_x,\vec e_y,\vec e_z$ and its identity is $e_t$; the units of the operator space are the matrix units $E_{ij}$ and its identity is $\mathrm{I}_4$. The two alphabets are never exchanged. The bracket carries its frame and never omits it, and the Peirce change is $C_{\Pi}$, written with its inverse. Every display declares its frame.
 
-The strata are labelled by two bits, the norm first and the square of the vector part second, and the label is not an algebra. The two halves $\mathbb{M}_+$ and $\mathbb{M}_-$ record fixed and anti-fixed under the star, not positivity and negativity. Rank is written of an operator, length of a two-sided operator and dimension of a set with its field; the unit of the algebra is $e_t$, the identity of the operator space is $\mathrm{I}_4$, and the closed ray of the identity is written as a set. The four adjoint signs are ${}^{\approx}$, ${}^{N}$, ${}^{\ast}$ and ${}^{\natural\ast}$; the quaternionic sign is the capital letter $N$ and not the natural sign; and the dagger is the general adjoint, not a fifth of them.
+The strata are labelled by two bits, the norm first and the square of the vector part second, and the label is not an algebra. The two halves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ record fixed and anti-fixed under the star, not positivity and negativity. Rank is written of an operator, length of a two-sided operator and dimension of a set with its field; the unit of the algebra is $e_t$, the identity of the operator space is $\mathrm{I}_4$, and the closed ray of the identity is written as a set. The four adjoint signs are ${}^{\approx}$, ${}^{N}$, ${}^{\ast}$ and ${}^{\natural\ast}$; the quaternionic sign is the capital letter $N$ and not the natural sign; and the dagger is the general adjoint, not a fifth of them.
 
 ## Summary of Notation
 
@@ -216,7 +216,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The units of the algebra; $e_t$ is its identity |
 | $E_{ij}$, $\mathrm{I}_4$, $\mathrm{I}_2$ | The matrix units and the two identities |
 | $\Sigma_{11}$, $\Sigma_{10}$, $\Sigma_{01}$, $\Sigma_{00}$ | The four strata, norm bit first |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | The two halves, fixed and anti-fixed under the star |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two halves, fixed and anti-fixed under the star |
 | $\operatorname{rank}$, $\ell$, $\dim_{\mathbb{C}}$, $\dim_{\mathbb{R}}$ | Rank, length and dimension with its field |
 | $\{\lambda\,\mathrm{I}_4:\lambda\geq0\}$ | The closed ray of the identity |
 | ${}^{\approx}$, ${}^{N}$, ${}^{\ast}$, ${}^{\natural\ast}$ | The four adjoint signs, plain, quaternionic, Hermitian and Krein |

@@ -280,12 +280,12 @@ signatures are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 | remarkable subspace | zero divisors |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | none |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | none |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | none |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | the pure family, an isotropic cone of real dimension four |
-| $\mathbb{M}_{+}$, the Hermitian subspace | the non-pure Hermitian elements with $Q_t^2=-(\vec Q,\vec Q)$ |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | the non-pure anti-Hermitian elements with the same condition |
+| $\mathbb{B}_{C}$, the centre | none |
+| $\mathbb{B}_{H}$, the quaternion subspace | none |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | none |
+| $\mathbb{B}_{V}$, the vector subspace | the pure family, an isotropic cone of real dimension four |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | the non-pure Hermitian elements with $Q_t^2=-(\vec Q,\vec Q)$ |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | the non-pure anti-Hermitian elements with the same condition |
 
 The centre, the quaternion subspace and the anti-quaternion subspace carry no zero divisor: the
 algebraic norm is definite on the last two and vanishes on the first only at the origin. The vector

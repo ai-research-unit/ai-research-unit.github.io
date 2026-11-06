@@ -218,7 +218,7 @@ $$
 (-1)^F(-1)^F=i^2\,\vec e_z^2=(-1)(-e_t)=e_t ,
 $$
 
-by $i^2=-1$ and $\vec e_z^2=-e_t$, so it is a parity operator of a $*$-unitary theory, $(-1)^F\in\mathbb{M}_+$. The parity of a field, the product of the element over the modes, $\prod_{\text{modes}}(i\vec e_z)$, is not an element of the algebra.
+by $i^2=-1$ and $\vec e_z^2=-e_t$, so it is a parity operator of a $*$-unitary theory, $(-1)^F\in\mathbb{B}_{\Psi}$. The parity of a field, the product of the element over the modes, $\prod_{\text{modes}}(i\vec e_z)$, is not an element of the algebra.
 
 **Remark (the count of what is adjoined).** One odd generator, and its products with the even elements, exhaust the odd slot: the extension is not a second algebra but one more generator, and the rule odd times odd is even that it brings with it.
 
@@ -386,7 +386,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\mathcal{Q}=su$, $\mathcal{Q}^{*}=-u s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$ | The supercharge in the module $A^1=\mathbb{B}u$ |
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing when $s^{*}s$ has no part of $u$-parity $-1$, in particular for an even $s$ of definite $u$-parity |
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
-| $(-1)^F=i\vec e_z\in\mathbb{M}_+$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
+| $(-1)^F=i\vec e_z\in\mathbb{B}_{\Psi}$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
 | $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
 | $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |

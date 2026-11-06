@@ -257,7 +257,7 @@ The twelve compared give three divisions: the family, the values and the law. Re
 | $\mathcal{N}$ | the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ |
 | $\mathbb{B}^{\times}$ | the unit group of the plain product, $\{\langle\tilde Q\rangle_{\natural}\neq0\}$ |
 | $\tilde\Pi$, $\tilde\Upsilon$ | an idempotent and a nilpotent |
-| $\mathbb{C}_{\mathbb{B}}$ | the centre $\mathbb{C}e_t$, the classical sector |
+| $\mathbb{B}_{C}$ | the centre $\mathbb{C}e_t$, the classical sector |
 | the vector subspace | the values of the four brackets |
 
 ## Further Reading

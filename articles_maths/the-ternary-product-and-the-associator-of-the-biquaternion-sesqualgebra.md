@@ -25,7 +25,7 @@ and it satisfies the Jordan triple identity; equivalently, $\mathbb{B}$ with thi
 
 The article is the fourth of the structural batch, and it is the biquaternion reading of the general pair *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*, whose parity theorems, vanishing criteria and Jordan triple identity are quoted. The operator forms of the ternary product are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, and the sibling reading whose ternary product fails the identity is *Introduction to the General Quaternionic Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$ with $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ and the cross product $\vec Q_1\times\vec Q_2$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$ with $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ and the cross product $\vec Q_1\times\vec Q_2$, and the two halves of the involution are the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of *Hermitian and Skew-Hermitian Elements*.
 
 ## The Associator
 
@@ -190,7 +190,7 @@ The multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ has the 
 | $\{\tilde Q_1,\tilde Q_2,e_t\}=\tilde Q_1\star\tilde Q_2$, $\{e_t,\tilde Q,e_t\}=\tilde Q^{*}$ | the recovery of the binary product and the involution |
 | Jordan triple identity | the defining axiom of an algebraic $J^{*}$-algebra |
 | middle model $xy^{*}z$, left model $x^{*}yz$ | the two placements of the involution in the ternary product |
-| $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces |
 
 ## Further Reading
 

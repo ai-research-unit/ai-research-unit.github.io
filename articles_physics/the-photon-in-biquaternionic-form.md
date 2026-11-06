@@ -8,8 +8,8 @@ A framework that reformulates known physics can be read generously or carefully.
 
 The answer, stated at the outset, has three positive parts and four negative ones. The positive parts are these.
 
-1. **The polarization space is the material sector.** The four polarization vectors of the covariant treatment are the four directions of $\mathbb{M}_-$, and the indefinite form $\sigma_{\mathrm{met}}$ of Gupta–Bleuler, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm $\sum_\mu Q_\mu^2$ of $\mathbb{M}_-$ that the framework already carries, its one minus being the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$.
-2. **Circular polarization is the algebra's complex structure acting on the propagation direction.** The two circular polarization vectors are the eigenvectors of left multiplication by $\vec u_k$ with eigenvalues $\mp i$. The **helicity operator** is $\lambda = \vec u_k\cdot\vec S = i\,\mathrm{Vect}(\vec u_k\,\cdot\,) = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the Hermitian element $i\vec u_k$ of the informational sector $\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$. Its $\pm1$ eigenvectors are exactly the two physical polarizations, and its $0$ eigenvector is the longitudinal direction $\vec u_k$, which the gauge structure removes.
+1. **The polarization space is the material sector.** The four polarization vectors of the covariant treatment are the four directions of $\mathbb{B}_{\Phi}$, and the indefinite form $\sigma_{\mathrm{met}}$ of Gupta–Bleuler, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm $\sum_\mu Q_\mu^2$ of $\mathbb{B}_{\Phi}$ that the framework already carries, its one minus being the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_k$.
+2. **Circular polarization is the algebra's complex structure acting on the propagation direction.** The two circular polarization vectors are the eigenvectors of left multiplication by $\vec u_k$ with eigenvalues $\mp i$. The **helicity operator** is $\lambda = \vec u_k\cdot\vec S = i\,\mathrm{Vect}(\vec u_k\,\cdot\,) = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the Hermitian element $i\vec u_k$ of the informational sector $\mathbb{B}_{\Psi}$, with spectral values $\{+1,0,-1\}$. Its $\pm1$ eigenvectors are exactly the two physical polarizations, and its $0$ eigenvector is the longitudinal direction $\vec u_k$, which the gauge structure removes.
 3. **The two helicities are the two halves of the field strength.** They are the self-dual and anti-self-dual parts of $\tilde{F}$, in the decomposition established in *The Field-Strength Biquaternion and Its Invariants*.
 
 The negative parts are equally specific.
@@ -22,12 +22,12 @@ The negative parts are equally specific.
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the photon" is a statement about a general massless spin-one field. The algebra does not single the photon out; it describes a massless gluon in the abelian idealization, a massive Proca field if a mass is added, and any other spin-one field by the same objects.
 
 $$
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{i c r'_t\,e_t, \vec e_x, \vec e_y, \vec e_z\},
+\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \mathrm{span}_\mathbb{R}\{i c r'_t\,e_t, \vec e_x, \vec e_y, \vec e_z\},
 \qquad
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{c r_t\,e_t, i r'_{x}\,\vec e_x, i r'_{y}\,\vec e_y, i r'_{z}\,\vec e_z\},
+\mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{c r_t\,e_t, i r'_{x}\,\vec e_x, i r'_{y}\,\vec e_y, i r'_{z}\,\vec e_z\},
 $$
 
-with $r'_t,r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i c r'_t$ and $Q_k=x_k$.
+with $r'_t,r'_{x},r'_{y},r'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i c r'_t$ and $Q_k=x_k$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -45,15 +45,15 @@ The dictionary that places the photon's data in the algebra is the following.
 |---|---|
 | The field | $\tilde{F}=i\sqrt{\epsilon}\,\vec N\in\mathbb{B}$, vanishing scalar part, mixed real/imaginary vector part |
 | Free equation | $\tilde{\nabla}\tilde{F}=0$ |
-| Potential | $\tilde{A}=i\,a'_t\,e_t+\vec A\in\mathbb{M}_-$ |
-| Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{M}_-$, the time coefficient carrying $Q_t=i c r'_t$ |
-| Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\vec u_k$ |
-| Helicity states | the $\pm1$ eigenvectors $\varepsilon_{\mathrm{fop},\pm}$ of the $\mathbb{M}_+$ element $i\vec u_k$ |
-| Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the $\mathbb{M}_+$ element $i\vec u_k$ |
-| Conserved energy–momentum | $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{M}_+$, with $\vec S$ the **Poynting vector** |
+| Potential | $\tilde{A}=i\,a'_t\,e_t+\vec A\in\mathbb{B}_{\Phi}$ |
+| Polarization directions | the four directions $e_t,\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{B}_{\Phi}$, the time coefficient carrying $Q_t=i c r'_t$ |
+| Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to $\vec u_k$ |
+| Helicity states | the $\pm1$ eigenvectors $\varepsilon_{\mathrm{fop},\pm}$ of the $\mathbb{B}_{\Psi}$ element $i\vec u_k$ |
+| Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented by the $\mathbb{B}_{\Psi}$ element $i\vec u_k$ |
+| Conserved energy–momentum | $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
 | Photon number | $N_\gamma$ (transverse sum) — **not** in $\mathbb{B}$ |
 
-Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{M}_-$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
+Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{B}_{\Phi}$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
 
 ## The Polarization Space Is the Material Sector
 
@@ -65,7 +65,7 @@ $$
 
 with $\langle\epsilon^{(r)},\epsilon^{(s)}\rangle_{\natural}=\sigma_{\mathrm{met},r}\delta_{rs}$ and $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$, the one minus being the square of the $i$ that the time coefficient carries, $Q_t=i c r'_t$; the natural form on the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\delta_{\mu\nu}$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_k$, $\epsilon^{(3)}=\vec u_k$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 
-The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=Q_te_t+\vec q$ with $Q_t=i c r'_t$ and $\vec q$ a real pure quaternion, its biquaternion norm is
+The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{B}_{\Phi}$ as $\tilde{Q}=Q_te_t+\vec q$ with $Q_t=i c r'_t$ and $\vec q$ a real pure quaternion, its biquaternion norm is
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = |\vec q|^2 - c^2{r'_{t}}^2 ,
@@ -73,11 +73,11 @@ $$
 
 an indefinite quadratic form whose one minus is the square of the $i$ in $Q_t=i c r'_t$. The four directions are $e_t$ (the timelike direction, matching $\epsilon^{(0)}$, with the coefficient $Q_t=i c r'_t$) and $\vec e_x,\vec e_y,\vec e_z$ (the spatial directions, matching $\epsilon^{(1)},\epsilon^{(2)},\epsilon^{(3)}$). So:
 
-> **The polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=i c r'_t$.**
+> **The polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{B}_{\Phi}$, and the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i c r'_t$.**
 
 This is the precise sense in which the polarization space is native. The framework does not merely "also have" an indefinite four-dimensional space; it is the same space, with the same indefinite form, that appears in the Gupta–Bleuler expansion.
 
-The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_k$ be the unit vector along $\vec k$, and let $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ be a right-handed orthonormal pair with $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_k)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_k$ inside the vector part of $\mathbb{M}_-$, whose projector is
+The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\vec u_k$ be the unit vector along $\vec k$, and let $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ be a right-handed orthonormal pair with $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_k)$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\vec u_k$ inside the vector part of $\mathbb{B}_{\Phi}$, whose projector is
 
 $$
 \boxed{\;P_{ij} = \delta_{ij} - \vec {u_k}_i \vec {u_k}_j, \qquad \sum_{r=1}^{2}\varepsilon_{\mathrm{fop},i}^{( r)} \varepsilon_{\mathrm{fop},j}^{(r)} = P_{ij}\;}.
@@ -95,7 +95,7 @@ $$
 \varepsilon_{\mathrm{fop},\pm} = \frac{1}{\sqrt 2}\bigl(\varepsilon_{\mathrm{fop},1} \pm i\,\varepsilon_{\mathrm{fop},2}\bigr),
 $$
 
-which are complex combinations and therefore do not lie in $\mathbb{M}_-$ itself, but in its complexification, the vector part of $\mathbb{B}$. Their defining property is a statement about quaternion multiplication by the propagation direction. Using $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ together with the definition of the circular combination, one computes
+which are complex combinations and therefore do not lie in $\mathbb{B}_{\Phi}$ itself, but in its complexification, the vector part of $\mathbb{B}$. Their defining property is a statement about quaternion multiplication by the propagation direction. Using $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ together with the definition of the circular combination, one computes
 
 $$
 \boxed{\;\vec u_k\,\varepsilon_{\mathrm{fop},\pm} = \mp\, i\,\varepsilon_{\mathrm{fop},\pm}\;}.
@@ -117,13 +117,13 @@ Both the eigenvalue relation and the circular completeness relation were checked
 
 ## Helicity as an Observable in the Informational Sector
 
-The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_k\in\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$, acting by $\mathrm{ad}_{\vec e_k}/2 = \vec e_k\times$ (the angular-momentum article normalizes the same generators as $g_k=-\tfrac12 \vec e_k$, so its generator is $-\vec e_k/2$ where this section uses $\vec e_k$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\tfrac{\hbar}{2}i\vec e_k$ in the angular-momentum article. The helicity observable is therefore
+The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_k\in\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$, acting by $\mathrm{ad}_{\vec e_k}/2 = \vec e_k\times$ (the angular-momentum article normalizes the same generators as $g_k=-\tfrac12 \vec e_k$, so its generator is $-\vec e_k/2$ where this section uses $\vec e_k$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\tfrac{\hbar}{2}i\vec e_k$ in the angular-momentum article. The helicity observable is therefore
 
 $$
 \lambda = \frac{i}{2}\,\mathrm{ad}_{\vec u_k} = i\,\mathrm{Vect}(\vec u_k\,\cdot\,) = \vec u_k\cdot\vec S,
 $$
 
-where $\vec S$ is the **spin** vector of the angular-momentum article (a different object from the Poynting vector $\vec S$ of the energy–momentum table above, which this auxiliary symbol unfortunately shares). On the complexified vector part, $\lambda$ is the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{M}_+$: $\lambda = \mathrm{Vect}\circ(\text{left multiplication by } i\vec u_k)$. Its action on the circular basis is diagonal:
+where $\vec S$ is the **spin** vector of the angular-momentum article (a different object from the Poynting vector $\vec S$ of the energy–momentum table above, which this auxiliary symbol unfortunately shares). On the complexified vector part, $\lambda$ is the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{B}_{\Psi}$: $\lambda = \mathrm{Vect}\circ(\text{left multiplication by } i\vec u_k)$. Its action on the circular basis is diagonal:
 
 $$
 \boxed{\;\lambda\,\varepsilon_{\mathrm{fop},\pm} = \pm\,\varepsilon_{\mathrm{fop},\pm}, \qquad \lambda\,\vec u_k = 0\;}.
@@ -137,7 +137,7 @@ First, **the two physical polarizations are the two nonzero-helicity states**, a
 
 Second, **there is no physical helicity-zero photon**. For a massless field the helicity is Lorentz invariant, and only the $\pm1$ states are physical; the helicity-zero state is the longitudinal mode removed by the gauge. The algebra exhibits the third eigenvector — it is the propagation direction — but the algebra does not, by itself, remove it. That removal is the gauge-fixing step that the canonical-quantization article identifies as unavailable from inside the algebra. The contrast is sharpened by the massive alternative: for a Proca field the gauge freedom is absent and the longitudinal, helicity-zero polarization becomes physical, with helicity no longer Lorentz invariant. The framework writes both cases equally well; masslessness, which selects the two-state spectrum, is an input.
 
-A structural observation about *where* the objects sit. For spin-$\tfrac12$ the states are idempotents of $\mathbb{M}_+$ and the observables are Hermitian elements of $\mathbb{M}_+$; state and observable live in the same sector. For the photon the helicity observable has its representative in $\mathbb{M}_+$, but the polarization states $\varepsilon_{\mathrm{fop},\pm}$ are not idempotents and are not in $\mathbb{M}_+$: the linear polarizations are in the vector part of $\mathbb{M}_-$ and the circular combinations in its complexification. The reason is that the spin-one representation appears in the biquaternion framework as the **adjoint action** on the imaginary quaternions, which is not a module over $\mathbb{B}$, whereas the spin-$\tfrac12$ representation is the fundamental module. The angular-momentum article states this distinction; here it has a concrete face: the photon's "state" space and its "observable" space are not the same subspace, and the familiar spin-$\tfrac12$ state/observable dictionary does not transfer. I record this as a structural finding, and I flag that it is not a defect of the polarization description but a property of the representation.
+A structural observation about *where* the objects sit. For spin-$\tfrac12$ the states are idempotents of $\mathbb{B}_{\Psi}$ and the observables are Hermitian elements of $\mathbb{B}_{\Psi}$; state and observable live in the same sector. For the photon the helicity observable has its representative in $\mathbb{B}_{\Psi}$, but the polarization states $\varepsilon_{\mathrm{fop},\pm}$ are not idempotents and are not in $\mathbb{B}_{\Psi}$: the linear polarizations are in the vector part of $\mathbb{B}_{\Phi}$ and the circular combinations in its complexification. The reason is that the spin-one representation appears in the biquaternion framework as the **adjoint action** on the imaginary quaternions, which is not a module over $\mathbb{B}$, whereas the spin-$\tfrac12$ representation is the fundamental module. The angular-momentum article states this distinction; here it has a concrete face: the photon's "state" space and its "observable" space are not the same subspace, and the familiar spin-$\tfrac12$ state/observable dictionary does not transfer. I record this as a structural finding, and I flag that it is not a defect of the polarization description but a property of the representation.
 
 All of the helicity statements were checked exactly on the same three independent directions as the circular basis. On each, $\lambda\varepsilon_{\mathrm{fop},\pm}=\pm\varepsilon_{\mathrm{fop},\pm}$, $\lambda\vec u_k=0$, and the identity $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ hold as exact algebraic identities, not merely on the axis.
 
@@ -178,7 +178,7 @@ Two things are conspicuously absent, and both were established by the parent art
 
 **The ladder.** The photon creation and annihilation operators satisfy $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)$, a bosonic canonical relation. The Fock article proves that no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$: a commutator has vanishing trace, while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $N_\gamma=\sum_{r=1}^{2}\int a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
 
-**The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{M}_-$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
+**The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{B}_{\Phi}$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
 
 A third imported ingredient is the operator-valued character of the field. The parent articles leave undecided whether the quantized field should be $\mathbb{B}$-valued or valued in a complex-vector module; the polarization results here are indifferent to that choice, because they concern the classical polarization vectors, which are the same either way.
 
@@ -186,10 +186,10 @@ A third imported ingredient is the operator-valued character of the field. The p
 
 | Feature of the photon | Status in the framework | Where it comes from |
 |---|---|---|
-| The transverse polarization plane (the space of the two physical polarizations) | Derived | the $\vec u_k$-orthogonal plane in the vector part of $\mathbb{M}_-$ |
-| Polarization space and its indefinite form | Derived | $\mathbb{M}_-$ and its biquaternion norm, $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$ |
+| The transverse polarization plane (the space of the two physical polarizations) | Derived | the $\vec u_k$-orthogonal plane in the vector part of $\mathbb{B}_{\Phi}$ |
+| Polarization space and its indefinite form | Derived | $\mathbb{B}_{\Phi}$ and its biquaternion norm, $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$ |
 | Circular polarizations as $\pm i$ eigenstates | Derived | left multiplication by $\vec u_k$; $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ |
-| Helicity operator $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, spectral values $\{+1,0,-1\}$ | Derived | adjoint action on imaginary quaternions; representative $i\vec u_k\in\mathbb{M}_+$; $i$ as sector exchange |
+| Helicity operator $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, spectral values $\{+1,0,-1\}$ | Derived | adjoint action on imaginary quaternions; representative $i\vec u_k\in\mathbb{B}_{\Psi}$; $i$ as sector exchange |
 | Two helicities = self-dual/anti-self-dual halves | Derived (from the field-strength article) | $\vec B=\vec u_k\times\vec E$; $\vec u_k\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$ |
 | Transverse polarization sum $\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$ | Derived | orthogonality in the material sector |
 | Mode expansion, commutators, Fock space | Transcribed | standard canonical quantization on a module |
@@ -206,7 +206,7 @@ A third imported ingredient is the operator-valued character of the field. The p
 
 Two rows of the table are short statements of one division, and the division is worth one sentence. The
 algebra **owns** the transverse polarization plane, the two-dimensional space in the vector part of
-$\mathbb{M}_-$ orthogonal to $\vec u_k$, together with its indefinite form; the algebra does
+$\mathbb{B}_{\Phi}$ orthogonal to $\vec u_k$, together with its indefinite form; the algebra does
 **not own** the reduction that selects that plane out of the four polarization directions. The plane is
 *Derived*, and the reduction is *Imported*, the subsidiary condition of the gauge row. The same division, an
 object the algebra owns against a value it only represents, is the whole content of *The Null
@@ -221,7 +221,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 **Represented quantities.** Masslessness is the sharpest. The photon is defined by $m=0$, and $m=0$ is what makes helicity Lorentz invariant and what removes the helicity-zero state; the framework represents $m=0$ and $m\neq0$ on the same footing and does not prefer either. The reason is structural rather than bookkeeping: the norm is homogeneous, so the cone is scale-invariant and the algebra carries no preferred scale with which to fix $m$. *The Null Four-Momentum: What the Cone Derives and What It Does Not* gives that argument, and gathers what the cone nevertheless derives — the massless shell as the zero-divisor cone, the frame-independence of $c$ from the multiplicativity of the norm, the absence of a rest frame for a null four-momentum, and the motion at $c$ for every momentum. The neutrality that makes the photon its own antiparticle is likewise an input. The unit $\hbar$ and the identification of the one-particle states as photons are inputs.
 
-**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{M}_+$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
+**Representation-theoretic caveats.** The spin-one representation appears as the adjoint action on the imaginary quaternions, not as a module over $\mathbb{B}$; the consequent separation of the photon's state space (material-sector vector part) from its observable space ($\mathbb{B}_{\Psi}$) is a real structural feature, but whether the state/observable pairing of the adjoint representation can be given a probability interpretation analogous to $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ is not settled here. The transverse polarization states are not idempotents, so the Born rule of the informational sector does not apply to them directly.
 
 **Empirical gap.** As with every article in this series, none of the framework's statements distinguishes it from standard electrodynamics. The photon is represented, not explained.
 
@@ -237,9 +237,9 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Summary
 
-The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=|\vec q|^2-c^2{r'_{t}}^2$ of that sector, its one minus the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon_{\mathrm{fop},i}^{(r)}\varepsilon_{\mathrm{fop},j}^{(r)}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
+The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{B}_{\Phi}$, and the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=|\vec q|^2-c^2{r'_{t}}^2$ of that sector, its one minus the square of the $i$ in $Q_t=i c r'_t$. The two physical polarizations are the plane in the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\varepsilon_{\mathrm{fop},i}^{(r)}\varepsilon_{\mathrm{fop},j}^{(r)}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$.
 
-Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\varepsilon_{\mathrm{fop},\pm}=\tfrac{1}{\sqrt2}(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})$ are the eigenvectors of left multiplication by $\vec u_k$, with $\vec u_k\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$. The helicity operator is $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}=i\,\mathrm{Vect}(\vec u_k\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\vec u_k$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\vec E+ic\vec B$ or on $\vec E-ic\vec B$, never both.
+Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\varepsilon_{\mathrm{fop},\pm}=\tfrac{1}{\sqrt2}(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})$ are the eigenvectors of left multiplication by $\vec u_k$, with $\vec u_k\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$. The helicity operator is $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}=i\,\mathrm{Vect}(\vec u_k\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\vec u_k\in\mathbb{B}_{\Psi}$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\vec u_k$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\vec E+ic\vec B$ or on $\vec E-ic\vec B$, never both.
 
 What the framework does not supply is the ladder and the gauge. There is no bosonic creation or annihilation operator in $\mathbb{B}$, so the photon number operator is imported; and nothing in the algebra selects a gauge, so the reduction from four polarizations to two is imposed from outside even though the space in which it happens is native. Masslessness, the neutrality that makes the photon its own antiparticle, the unit $\hbar$, and the identification of the states as photons are all inputs. The photon is therefore represented in the biquaternion framework with a genuinely native polarization and helicity structure, but not derived, and the gauge-fixing gap remains open.
 
@@ -250,18 +250,18 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{i c r'_t\,e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{c r_t\,e_t,i r'_{x}\,\vec e_x,i r'_{y}\,\vec e_y,i r'_{z}\,\vec e_z\}$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{i c r'_t\,e_t,\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{c r_t\,e_t,i r'_{x}\,\vec e_x,i r'_{y}\,\vec e_y,i r'_{z}\,\vec e_z\}$ |
+| $\mathbb{B}_{H}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{M}_-$ |
+| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |
 | $\vec u_k$ | Unit propagation direction (pure real quaternion) |
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$; $\varepsilon_{\mathrm{fop},\pm}$ | Linear and circular polarization vectors |
-| $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=i c r'_t$ |
-| $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ | Helicity operator; representative $i\vec u_k\in\mathbb{M}_+$ |
+| $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},k}=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i c r'_t$ |
+| $\lambda=\vec u_k\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ | Helicity operator; representative $i\vec u_k\in\mathbb{B}_{\Psi}$ |
 | $\vec S$ (in $\tilde W=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
 | $\vec S$ (in $\lambda=\vec u_k\cdot\vec S$) | Spin vector (angular-momentum article) |
 | $g_k=-\tfrac12 \vec e_k$ | Rotation generators in the angular-momentum article; this article writes the same generators as $\vec e_k$ |

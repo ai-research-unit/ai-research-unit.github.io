@@ -19,7 +19,7 @@ $$
 g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{*}\right),
 $$
 
-which is non-degenerate of signature $(4,4)$. In coordinates the split-biquaternion norm splits as $\langle\tilde Q\rangle_{\natural} = \lvert\tilde Q\rvert^2 + j\,I(\tilde Q)$ with $I(\tilde Q) = 2\sum_\mu q_\mu q'_\mu$. The involution ${}^{*}$ and its two eigenspaces $\mathbb{M}_{\pm}$ are those of *Split-Biquaternion Rotations and the Lorentz Group*.
+which is non-degenerate of signature $(4,4)$. In coordinates the split-biquaternion norm splits as $\langle\tilde Q\rangle_{\natural} = \lvert\tilde Q\rvert^2 + j\,I(\tilde Q)$ with $I(\tilde Q) = 2\sum_\mu q_\mu q'_\mu$. The involution ${}^{*}$ and its two eigenspaces $\mathbb{B}_{\Psi,\Phi}$ are those of *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ## The Zero Divisor Cone
 
@@ -188,7 +188,7 @@ with the second factor a point of the Euclidean unit sphere of $\mathbb{B}_{\mat
 
 ## The Imaginary Span and the Split Form of Signature $(3,3)$
 
-The two quadratic forms used in this article are the Euclidean form of signature $(8,0)$ and the Hermitian form $g$ of signature $(4,4)$, whose eigenspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ carry the Lorentzian restrictions $(1,3)$ and $(3,1)$. There is a third form used here, obtained by restricting $g$ to the subspace left when the two scalar directions are removed, and its signature is neither definite nor Lorentzian but split. This section describes that restriction and the transformations of it that the multiplication of the algebra realises.
+The two quadratic forms used in this article are the Euclidean form of signature $(8,0)$ and the Hermitian form $g$ of signature $(4,4)$, whose eigenspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ carry the Lorentzian restrictions $(1,3)$ and $(3,1)$. There is a third form used here, obtained by restricting $g$ to the subspace left when the two scalar directions are removed, and its signature is neither definite nor Lorentzian but split. This section describes that restriction and the transformations of it that the multiplication of the algebra realises.
 
 ### The Scalar Plane and the Imaginary Span
 
@@ -214,15 +214,15 @@ so that $g$ restricted to $V$ has signature $(3,3)$ in the orthogonal basis $(\v
 
 *Proof.* Direct computation from $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, with ${}^{*}$ fixing $e_t$, negating each $e_r$, negating $j$ and fixing each $je_r$. On the first triple, $g(e_r,e_s) = \mathrm{Sc}(e_re_s^{\dagger}) = -\mathrm{Sc}(e_re_s) = \delta_{rs}$, since $e_re_s = -\delta_{rs}e_t + \sum_t\varepsilon_{rst}e_t$ has scalar part $-\delta_{rs}$. On the second, $g(je_r,je_s) = \mathrm{Sc}(je_r(je_s)^{\dagger}) = \mathrm{Sc}(je_rje_s) = \mathrm{Sc}(e_re_s) = -\delta_{rs}$. Across the two, $g(e_r,je_s) = \mathrm{Sc}(e_rje_s) = \mathrm{Sc}(je_re_s) = 0$, because the scalar part of $j$ times a quaternion vanishes. The statement for the scalar plane, and the two signatures together, follow by complementation: $\mathbb{B}_{\mathrm{spl}} = S\oplus V$ is an orthogonal direct sum, the signature $(1,1)$ of $S$ is read from $g(e_t,e_t) = +1$ and $g(je_t,je_t) = -1$, and $8 - 2 = 6$ with signature $(4,4) - (1,1) = (3,3)$.
 
-**Remark (the same statement in the Clifford description).** Under the identification of the algebra with $\mathrm{Cl}_{0,3}$ recorded in *The Number Systems as Clifford Algebras*, the three elements $\vec e_x,\vec e_y,\vec e_z$ are the bivectors of the Clifford algebra and the three elements $j\vec e_x,j\vec e_y,j\vec e_z$ are its vectors, while $e_t$ is the scalar and $je_t$ the trivector. In that description the proposition says that $g$ is positive definite on the bivectors, negative definite on the vectors, and orthogonal across the two, so the split form of signature $(3,3)$ is the form of the Clifford algebra on the direct sum of its one- and two-vector parts. This is the same mechanism by which $\mathbb{M}_-$ and $\mathbb{M}_+$ acquire opposite Lorentzian signatures, applied one degree away: the sign of $g$ is carried by the conjugation ${}^{*}$, which fixes the vectors of the Clifford algebra and negates its bivectors.
+**Remark (the same statement in the Clifford description).** Under the identification of the algebra with $\mathrm{Cl}_{0,3}$ recorded in *The Number Systems as Clifford Algebras*, the three elements $\vec e_x,\vec e_y,\vec e_z$ are the bivectors of the Clifford algebra and the three elements $j\vec e_x,j\vec e_y,j\vec e_z$ are its vectors, while $e_t$ is the scalar and $je_t$ the trivector. In that description the proposition says that $g$ is positive definite on the bivectors, negative definite on the vectors, and orthogonal across the two, so the split form of signature $(3,3)$ is the form of the Clifford algebra on the direct sum of its one- and two-vector parts. This is the same mechanism by which $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ acquire opposite Lorentzian signatures, applied one degree away: the sign of $g$ is carried by the conjugation ${}^{*}$, which fixes the vectors of the Clifford algebra and negates its bivectors.
 
 **Remark (relation to the eigenspaces).** The imaginary span meets each eigenspace of ${}^{*}$ in a three-dimensional space,
 
 $$
-V\cap\mathbb{M}_+ = \operatorname{span}\{j\vec e_x,j\vec e_y,j\vec e_z\}, \qquad V\cap\mathbb{M}_- = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\},
+V\cap\mathbb{B}_{\Psi} = \operatorname{span}\{j\vec e_x,j\vec e_y,j\vec e_z\}, \qquad V\cap\mathbb{B}_{\Phi} = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\},
 $$
 
-so that $V$ is the direct sum of a spacelike triple of $\mathbb{M}_-$ and a negative definite triple of $\mathbb{M}_+$. On a single eigenspace the scalar direction has the sign opposite to the remaining three, as recorded above; removing the two scalar directions leaves the two triples with those opposite signs, and the split signature $(3,3)$ is the result.
+so that $V$ is the direct sum of a spacelike triple of $\mathbb{B}_{\Phi}$ and a negative definite triple of $\mathbb{B}_{\Psi}$. On a single eigenspace the scalar direction has the sign opposite to the remaining three, as recorded above; removing the two scalar directions leaves the two triples with those opposite signs, and the split signature $(3,3)$ is the result.
 
 ### The Two Splittings of the Imaginary Span
 
@@ -303,7 +303,7 @@ The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mat
 | $R = \lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ | Euclidean form, signature $(8,0)$ |
 | $I = 2\sum_\mu q_\mu q'_\mu$ | Split part of the split-biquaternion norm |
 | $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor cone, the two ideals |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, signature $(4,4)$ |
 | $S(\mathbb{B}_{\mathrm{spl}}) = \{\tilde Q : \langle\tilde Q\rangle_{\natural} = e_t\}\cong S^3\times S^3$ | Unit sphere, compact group |
 | $d_{S^3}(u,v) = \arccos\mathrm{Sc}(uv^{\natural})$ | Geodesic distance on $S^3$ |

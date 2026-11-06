@@ -160,7 +160,7 @@ $$
 
 ## Geometry
 
-**Theorem (the sector as a product).** Let $C=\{\vec Q\in\operatorname{Vect}(\mathbb{B}):\vec Q^2=0\}$ be the isotropic cone of the vector subspace. Then
+**Theorem (the sector as a product).** Let $C=\{\vec Q\in\mathbb{B}_{V}:\vec Q^2=0\}$ be the isotropic cone of the vector subspace. Then
 
 $$
 \mathcal S=\mathbb{C}e_t\times C.

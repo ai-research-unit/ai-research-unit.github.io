@@ -72,10 +72,10 @@ Moreover, for every $*$-unitary biquaternion $\tilde Q$ the inner conjugation $\
 **Corollary (the fixed subspaces).** The centre, the vector subspace, the Hermitian subspace, the anti-Hermitian subspace, the quaternion subspace and the anti-quaternion subspace are each contractible, the homotopy above preserving every linear subspace, so each is a point as far as homotopy is concerned:
 
 $$
-\boxed{\; \mathbb{C}_{\mathbb{B}}\cong\mathbb{R}^{2},\qquad
+\boxed{\; \mathbb{B}_{C}\cong\mathbb{R}^{2},\qquad
 \mathbb{V}_{\mathbb{B}}\cong\mathbb{R}^{6},\qquad
-\mathbb{H}_{\mathbb{B}}\cong i\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4},\qquad
-\mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4} \;}.
+\mathbb{B}_{H}\cong \mathbb{B}_{iH}\cong\mathbb{R}^{4},\qquad
+\mathbb{B}_{\Psi}\cong\mathbb{B}_{\Phi}\cong\mathbb{R}^{4} \;}.
 $$
 
 **Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *Subspaces and Decompositions*.

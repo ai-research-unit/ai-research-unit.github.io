@@ -53,7 +53,7 @@ The theorem is not an isolated statement; its consequences are the reasons it is
 
 ### Cyclicity Is Automatic
 
-The Hermitian GNS construction of the companion article associates to every state $\tilde{Ϛ}\in\mathbb{M}_+$ a Hilbert space
+The Hermitian GNS construction of the companion article associates to every state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ a Hilbert space
 $$
 \mathcal H_{\tilde{Ϛ}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
@@ -140,7 +140,7 @@ with $J\Delta J\Delta=1$ and $\Delta>0$, and with the modular Hamiltonian
 $$
 \tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}
 =-\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t-i\,\mathrm{artanh}\big(|\vec r|\big)\vec u_r
-\in\mathbb{M}_+ .
+\in\mathbb{B}_{\Psi} .
 $$
 The modular flow and its generator are
 $$
@@ -164,7 +164,7 @@ the orientation convention of the KMS companion article, in which the correlatio
 $$
 F_{\tilde Q_3\tilde Q_1}(r'_t+i)=F_{\tilde Q_1\tilde Q_3}(-r'_t).
 $$
-This was checked on the faithful state with $\vec r=(0.3,-0.2,0.5)$ and the Hermitian pair $\tilde Q_3=i \vec e_x$, $\tilde Q_1=i \vec e_y$, both in $\mathbb{M}_+$: at $r'_t=0.4$ both sides are $-0.4668024589-0.4724537771\,i$, the difference between them being below $10^{-14}$. The finite model thus exhibits the whole chain — a cyclic and separating vector, a modular flow, and the KMS property — for the faithful states of the biquaternion algebra.
+This was checked on the faithful state with $\vec r=(0.3,-0.2,0.5)$ and the Hermitian pair $\tilde Q_3=i \vec e_x$, $\tilde Q_1=i \vec e_y$, both in $\mathbb{B}_{\Psi}$: at $r'_t=0.4$ both sides are $-0.4668024589-0.4724537771\,i$, the difference between them being below $10^{-14}$. The finite model thus exhibits the whole chain — a cyclic and separating vector, a modular flow, and the KMS property — for the faithful states of the biquaternion algebra.
 
 For the field vacuum the same chain holds with the inverse temperature fixed to $2\pi$ in units in which the modular flow is the boost: the state is KMS at $\beta=2\pi$ for the wedge modular flow, which is the Bisognano–Wichmann statement, and the thermal interpretation is the Unruh effect. Those are the companion articles' subjects and are referred to, not re-derived.
 
@@ -221,7 +221,7 @@ The proof in the free case is the standard free-field proof: the vacuum two-poin
 
 ## Open Questions
 
-**1. A finite analogue of the spectrum condition.** Separating is a consequence of positive energy. Is there a framework-internal positivity — the Hermiticity of $\mathbb{M}_+$, the reality of the trace — that plays the same role for a regulated model, and that could be made into a finite spectral condition for a chain of mode algebras?
+**1. A finite analogue of the spectrum condition.** Separating is a consequence of positive energy. Is there a framework-internal positivity — the Hermiticity of $\mathbb{B}_{\Psi}$, the reality of the trace — that plays the same role for a regulated model, and that could be made into a finite spectral condition for a chain of mode algebras?
 
 **2. The faithful-state interpretation.** The modular structure of a faithful biquaternion state is available in finite dimension, and its modular flow is known. Is the whole Reeh–Schlieder/modular programme of a region reproduced by a one-parameter family of faithful states whose limit is the pure vacuum, in the spirit of an epsilon-regulator?
 
@@ -246,7 +246,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal A(O)$ | Local algebra of the region $O$ |
 | $\Omega$ | Vacuum vector; cyclic and separating |

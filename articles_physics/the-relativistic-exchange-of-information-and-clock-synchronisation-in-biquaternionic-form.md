@@ -16,7 +16,7 @@ The article develops the following.
 - **A transported clock runs slow.** The interpretation of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dr'_t \le r'_{t,B}-r'_{t,A}$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
 - **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta r'_t \simeq 4\vec\Omega\cdot\vec A/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
-The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
+The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{B}_{\Phi}$.
 
 ## Signals as Null Displacements
 
@@ -124,13 +124,13 @@ $$
 = \gamma\left(ic\,e_t + \vec v\right),
 $$
 
-an element of $\mathbb{M}_-$ whose biquaternion norm is fixed:
+an element of $\mathbb{B}_{\Phi}$ whose biquaternion norm is fixed:
 
 $$
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+\vec v^2\right) = -c^2 .
 $$
 
-Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
+Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{B}_{\Phi}$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
 
 ## The Radar Method and Einstein Synchronisation
 
@@ -248,7 +248,7 @@ $$
 \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
-of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
+of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{B}_{\Phi}$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
 a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
@@ -360,8 +360,8 @@ The exchange of information and the synchronisation of clocks are built from the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$ | Speed of light (its vacuum value in the numbers quoted here) |

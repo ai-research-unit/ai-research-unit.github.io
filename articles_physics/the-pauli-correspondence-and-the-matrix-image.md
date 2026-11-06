@@ -13,7 +13,7 @@ The article states the correspondence and reads its invariants: the trace as the
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
-| The Hermitian subspace $\mathbb M_+$ as the Hermitian matrices, the anti-Hermitian $\mathbb M_-$ as the anti-Hermitian matrices, and $\mathbb M_-=i\mathbb M_+$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
+| The Hermitian subspace $\mathbb{B}_{\Psi}$ as the Hermitian matrices, the anti-Hermitian $\mathbb{B}_{\Phi}$ as the anti-Hermitian matrices, and $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The regular image $\mathsf M_{4L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | The sandwich operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html) |
@@ -184,9 +184,9 @@ The boundary is that the reading requires a diagonalisable element matrix and a 
 
 ### The Hermitian Elements Are the Observables
 
-An element $\tilde R_\psi\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\psi$.
+An element $\tilde R_\psi\in\mathbb{B}_{\Psi}$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde R_\psi$.
 
-The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
+The identification is exact: $\mathbb{B}_{\Psi}$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,
 
 $$
 \operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde R_\psi)\bigr)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=c r_t+\vec r\cdot\vec r_\psi ,
@@ -194,7 +194,7 @@ $$
 
 for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.
 
-The boundary is that the word *observable* uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb M_+$: it carries $\mathbb M_+$ and $\mathbb M_-$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.
+The boundary is that the word *observable* uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb{B}_{\Psi}$: it carries $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.
 
 ### The Three Directions Are the Three Spin Axes
 
@@ -336,7 +336,7 @@ Read together, the three readings say what a matrix image can carry: a norm, a f
 ## Physical Interpretations
 
 - **The three Hermitian units are the three Pauli matrices.** The correspondence is the identity $\mathsf M_2(i\vec e_k)=\sigma_k$; the factor $i$ is the complex structure that turns generators into observables.
-- **The Hermitian elements are the observables.** $\mathbb M_+$ is carried onto the Hermitian matrices; the spectral theorem gives the outcomes, and the trace gives the expectation.
+- **The Hermitian elements are the observables.** $\mathbb{B}_{\Psi}$ is carried onto the Hermitian matrices; the spectral theorem gives the outcomes, and the trace gives the expectation.
 - **The three directions are the spin axes.** The traceless Hermitian elements close under the commutator into $\mathfrak{su}(2)$; the exponentials are the rotations of the state space.
 - **The trace is the weight.** $\operatorname{Tr}=2Q_t$; the factor two is the dimension of the spinor module.
 - **The determinant is the norm.** The same function is the interval on the material slice, the causal type and positivity on the informational slice, and the mixedness on the state slice.

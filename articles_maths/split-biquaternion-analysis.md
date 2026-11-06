@@ -192,8 +192,8 @@ where $\{f_0, f_1, f_2, f_3\}$ is a basis of $V$ and $Q_t, Q_x, Q_y, Q_z \in \ma
 
 In the applications below, the basis $\{f_\mu\}$ is one of:
 - $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ (the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$).
-- $\{j e_t, \vec e_x, \vec e_y, \vec e_z\}$ (the anti-Hermitian subspace $\mathbb{M}_-$).
-- $\{e_t, j \vec e_x, j \vec e_y, j \vec e_z\}$ (the Hermitian subspace $\mathbb{M}_+$).
+- $\{j e_t, \vec e_x, \vec e_y, \vec e_z\}$ (the anti-Hermitian subspace $\mathbb{B}_{\Phi}$).
+- $\{e_t, j \vec e_x, j \vec e_y, j \vec e_z\}$ (the Hermitian subspace $\mathbb{B}_{\Psi}$).
 - $\{e_t, j e_t, \vec e_x, \vec e_y\}$ or similar (subspaces involving the split complex subspace).
 
 The general theory is independent of the choice of basis; only the interpretation of the coordinates and the algebraic properties of the subspace depend on it.
@@ -438,8 +438,8 @@ The zero divisor set of $\mathbb{B}_{\mathrm{spl}}$ is the union of two four-dim
 
 **In the restriction to four-dimensional subspaces.** On a four-dimensional subspace $V$, the intersection with the zero divisor set is:
 - $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap (Z_+ \cup Z_-) = \{0\}$ (the quaternion subspace contains no zero divisors).
-- $\mathbb{M}_+ \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $q_t e_t + \sum_\mu q'_\mu (j \vec e_\mu)$ has idempotent components $q_t \pm \sum_\mu q'_\mu \vec e_\mu$, both nonzero).
-- $\mathbb{M}_- \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $j q'_t e_t + \sum_\mu q_\mu \vec e_\mu$ has idempotent components $\pm q'_t + \sum_\mu q_\mu \vec e_\mu$, both nonzero).
+- $\mathbb{B}_{\Psi} \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $q_t e_t + \sum_\mu q'_\mu (j \vec e_\mu)$ has idempotent components $q_t \pm \sum_\mu q'_\mu \vec e_\mu$, both nonzero).
+- $\mathbb{B}_{\Phi} \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $j q'_t e_t + \sum_\mu q_\mu \vec e_\mu$ has idempotent components $\pm q'_t + \sum_\mu q_\mu \vec e_\mu$, both nonzero).
 - $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap (Z_+ \cup Z_-)$ is a one-dimensional subset (the zero divisors of the split complex algebra).
 
 **In the integration theory.** The fundamental solution of the gradient has singularities on the zero divisor set, and the integral formulas require careful treatment on or near the zero divisors.
@@ -495,7 +495,7 @@ The formulas for the operators are **identical** to the biquaternion case, becau
 
 The **idempotent decomposition** is the most important structural tool in the split biquaternion analysis. In the idempotent basis, the differential operators act componentwise, and the split biquaternion analysis is the quaternion analysis applied to each of the two components separately. This is a consequence of the semisimple structure of the algebra.
 
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split biquaternion integration.
+The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the Hermitian subspace $\mathbb{B}_{\Psi}$, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split biquaternion integration.
 
 ## Summary of Notation
 

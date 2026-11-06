@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spin-$\tfrac12$ chain and a chain of fermionic modes obey different commutation rules, and in one dimension the two are one algebra read through two lists of generators. The change from one list to the other is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp reading: the transformation is the **extension over sites of a one-site identity that is already inside the algebra**, and the object that extends it — the Jordan–Wigner string — is the product of the one-site parities, the element $i\vec e_z$ that the parents isolate in $\mathbb{M}_+$.
+A spin-$\tfrac12$ chain and a chain of fermionic modes obey different commutation rules, and in one dimension the two are one algebra read through two lists of generators. The change from one list to the other is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp reading: the transformation is the **extension over sites of a one-site identity that is already inside the algebra**, and the object that extends it — the Jordan–Wigner string — is the product of the one-site parities, the element $i\vec e_z$ that the parents isolate in $\mathbb{B}_{\Psi}$.
 
 This article establishes:
 
@@ -33,7 +33,7 @@ $$
 \tilde S_-=\tilde S_x-i\tilde S_y=\tfrac{\hbar}{2}\bigl(i\vec e_x+\vec e_y\bigr) .
 $$
 
-**The two squares vanish, and the two products are two elements of $\mathbb{M}_+$.** From $i^2=-1$, $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
+**The two squares vanish, and the two products are two elements of $\mathbb{B}_{\Psi}$.** From $i^2=-1$, $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
 
 $$
 (i\vec e_x\pm\vec e_y)^2=i^2\vec e_x^2\pm i\bigl(\vec e_x\vec e_y+\vec e_y\vec e_x\bigr)+\vec e_y^2=(-1)(-e_t)\pm0-e_t=0 ,
@@ -57,7 +57,7 @@ $$
 [\tilde S_+,\tilde S_-]=\hbar^2 i\vec e_z\;}.
 $$
 
-**The pair is fermionic, and the commutator is not central.** The anticommutator is a multiple of the identity and the commutator is not: the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, while $i\vec e_z$ is a Hermitian element of $\mathbb{M}_+$ outside it. The ladder therefore cannot satisfy a bosonic relation with a scalar right-hand side, and there is nothing here to bosonize. Two nilpotent elements that anticommute to the identity are all the algebra needs for one mode.
+**The pair is fermionic, and the commutator is not central.** The anticommutator is a multiple of the identity and the commutator is not: the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, while $i\vec e_z$ is a Hermitian element of $\mathbb{B}_{\Psi}$ outside it. The ladder therefore cannot satisfy a bosonic relation with a scalar right-hand side, and there is nothing here to bosonize. Two nilpotent elements that anticommute to the identity are all the algebra needs for one mode.
 
 **The one-site transformation is an identity.** The mode of one site is $\tilde S_+/\hbar$. This is the one-site Jordan–Wigner transformation, and it is an identity inside $\mathbb{B}$ rather than a transformation: the spin ladder and the mode are one element. The reason it needs no string is structural — the string is a product of the *other* sites' parities, and at one site there are no other sites, so the product is empty and equals $e_t$. The algebra's contribution to the story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the mode are two readings of one element, and a difference appears only when a *second* site is present.
 
@@ -157,7 +157,7 @@ $$
 (-1)^{n}=i\vec e_z=\frac{2\tilde S_z}{\hbar} ,
 $$
 
-the one-site factor being the parity element the parents isolate in $\mathbb{M}_+$. The Jordan–Wigner string is therefore the tensor product of the one-site biquaternion parities,
+the one-site factor being the parity element the parents isolate in $\mathbb{B}_{\Psi}$. The Jordan–Wigner string is therefore the tensor product of the one-site biquaternion parities,
 
 $$
 \tilde Z_{<j}\;\in\;\bigotimes_{k=1}^{j-1}\mathbb{B}_k ,

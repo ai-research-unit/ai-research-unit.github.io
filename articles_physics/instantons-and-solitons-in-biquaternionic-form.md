@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The companion article *Non-Abelian Gauge Fields in Biquaternionic Form* closes with an open question: whether the biquaternion framework supplies a preferred connection with finite action and nonzero topological charge, and whether the zero-divisor structure of $\mathbb{M}_-$ plays any role in it. This article takes that question up. Its subject is **localised finite-energy solutions** of the framework's field equations, and it treats the two families that the phrase covers separately, because they differ in three things at once — signature, boundary conditions, and what makes them stable.
+The companion article *Non-Abelian Gauge Fields in Biquaternionic Form* closes with an open question: whether the biquaternion framework supplies a preferred connection with finite action and nonzero topological charge, and whether the zero-divisor structure of $\mathbb{B}_{\Phi}$ plays any role in it. This article takes that question up. Its subject is **localised finite-energy solutions** of the framework's field equations, and it treats the two families that the phrase covers separately, because they differ in three things at once — signature, boundary conditions, and what makes them stable.
 
 - **Instantons** are **Euclidean** objects. They are defined on the Euclidean continuation of spacetime, they are classified by an integer topological charge, and the classical route to them is the **self-duality** condition $F=\star F$, which replaces the second-order equation of motion by a first-order equation. The word "instanton" is not a synonym for "localised solution of the Lorentzian theory"; an instanton is not a configuration that propagates in time.
 - **Solitons** are **Lorentzian** objects. They are static, finite-energy, localised field configurations of the Lorentzian theory. Calling one *stable* is a claim that requires an argument — a conserved topological sector or a Bogomolny bound — and this article gives the argument or records its absence; it does not call a configuration stable for being stationary.
 
-The distinction is not a matter of taste. In Lorentzian signature the Hodge star on two-forms satisfies $\star^2=-1$, so $F=\star F$ forces $F=0$ on real fields: there are no nonzero real self-dual two-forms, and therefore no instantons, in the Lorentzian theory. In Euclidean signature the star satisfies $\star^2=+1$, the six-dimensional space of two-forms splits into a self-dual and an anti-self-dual three-dimensional half, and the instanton exists. The framework's own $i c r'_t$ convention makes the point concrete: the factor $i$ in the time coordinate *is* the Lorentzian structure, and the Wick rotation of the companion article — the identification of $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ by relabelling $i c r'_t$ as a real coordinate — is exactly the passage from the Lorentzian star to the Euclidean one.
+The distinction is not a matter of taste. In Lorentzian signature the Hodge star on two-forms satisfies $\star^2=-1$, so $F=\star F$ forces $F=0$ on real fields: there are no nonzero real self-dual two-forms, and therefore no instantons, in the Lorentzian theory. In Euclidean signature the star satisfies $\star^2=+1$, the six-dimensional space of two-forms splits into a self-dual and an anti-self-dual three-dimensional half, and the instanton exists. The framework's own $i c r'_t$ convention makes the point concrete: the factor $i$ in the time coordinate *is* the Lorentzian structure, and the Wick rotation of the companion article — the identification of $\mathbb{B}_{\Phi}$ with the real-quaternion subspace $\mathbb{B}_{H}$ by relabelling $i c r'_t$ as a real coordinate — is exactly the passage from the Lorentzian star to the Euclidean one.
 
 The article is organised around four questions, and it keeps the affirmative answers and the gaps apart.
 
@@ -27,12 +27,12 @@ $$
 = + \partial^2/\partial R_t^2+\nabla^2,
 $$
 
-where $\partial/\partial R_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
+where $\partial/\partial R_t=\partial/\partial(i c r'_t)$, so that $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{B}_{\Phi}$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
 
 The **Wick rotation** is the substitution $r'_t\mapsto-i\tau$, under which the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ becomes the real-quaternion element
 
 $$
-\tilde{R}_{\varphi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
+\tilde{R}_{\varphi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{H},
 $$
 
 and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=i c r'_t$ becomes $Q_t=c\tau$, and the four terms of
@@ -47,7 +47,7 @@ $$
 \Box=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2
 $$
 
-on that slice, elliptic where it was hyperbolic. This is the setting for **instantons**. The identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$ under the rotation is the subject of the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
+on that slice, elliptic where it was hyperbolic. This is the setting for **instantons**. The identification of $\mathbb{B}_{\Phi}$ with $\mathbb{B}_{H}$ under the rotation is the subject of the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
 
 The signature enters the solution theory through the **Hodge star on two-forms**. On the six-dimensional space of two-forms $\star$ is an involution up to a sign,
 
@@ -66,7 +66,7 @@ $$
 which was checked on a generic field (the two conditions are exact identities in the two opposite cases).
 - **Lorentzian.** Because $\star^2=-1$, a real two-form obeying $F=\star F$ obeys $F=\star F=\star^2F=-F$, hence $F=0$. There is no nonzero real self-dual two-form, and the self-dual route to instantons is unavailable in the Lorentzian theory. What *is* available in Lorentzian signature is the complex combination $F\pm i\star F$ — the Riemann–Silberstein halves of the field-strength article — but these are two complex halves of one real field, not independent real solutions.
 
-This is the sharp form of the warning that governs the subject: **an instanton is a Euclidean object.** A configuration obeying $F=\star F$ on the Lorentzian slice would be, on real fields, the zero field, and calling a self-dual Euclidean configuration a solution of the Lorentzian equation of motion would be a defect of signature, not a mild abuse. The framework accommodates both signatures — the algebra $\mathbb{B}$ is the same in both, and the field strength keeps its position in the complex vector part $\mathrm{Vect}(\mathbb{B})$ — but the metric-dependent star, and with it the meaning of the field equation, is not signature-neutral.
+This is the sharp form of the warning that governs the subject: **an instanton is a Euclidean object.** A configuration obeying $F=\star F$ on the Lorentzian slice would be, on real fields, the zero field, and calling a self-dual Euclidean configuration a solution of the Lorentzian equation of motion would be a defect of signature, not a mild abuse. The framework accommodates both signatures — the algebra $\mathbb{B}$ is the same in both, and the field strength keeps its position in the complex vector part $\mathbb{B}_{V}$ — but the metric-dependent star, and with it the meaning of the field equation, is not signature-neutral.
 
 The two families are contrasted in the following table.
 
@@ -78,7 +78,7 @@ The two families are contrasted in the following table.
 | Boundary data | finite action; gauge field a map $S^3\to SU(2)$ at infinity | static, finite energy; fields approach vacuum at spatial infinity |
 | Charge | Pontryagin number $Ϙ\in\mathbb Z$ | topological sector; e.g. magnetic charge |
 | What makes it stable | $Ϙ$ fixed by continuity; Bogomolny bound saturated | a topological sector, or a Bogomolny bound |
-| Framework home | the $\mathrm{SU}(2)$ factor inside $\mathbb{M}_-$ | the singular static sector only |
+| Framework home | the $\mathrm{SU}(2)$ factor inside $\mathbb{B}_{\Phi}$ | the singular static sector only |
 
 ## The Topological Charge and Its Density
 
@@ -153,7 +153,7 @@ and the boundary is the three-sphere at infinity. The total-derivative property 
 
 Two consequences deserve to be stated because they are the traps of the subject.
 
-- **No abelian instanton on $\mathbb R^4$.** For a smooth abelian field of finite action, $A_\mu$ falls off at infinity and $J_{\mathrm{CS},\mu}$ falls off faster, so the surface term at infinity vanishes and $Ϙ=0$ for every such field. Equivalently, the density integrates to zero on $\mathbb R^4$ (or on its one-point compactification $S^4$, where $H^2(S^4;\mathbb Z)=0$). A nonzero abelian charge requires a nontrivial line bundle, which a four-sphere does not admit; it can occur only on a manifold with nonzero second cohomology, such as $\mathbb{CP}^2$, where the field is not a single globally defined connection. On the framework's flat background, therefore, the Maxwell sector has **no instanton**. Instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ factor, not in the $\mathrm{U}(1)$ scalar sector.
+- **No abelian instanton on $\mathbb R^4$.** For a smooth abelian field of finite action, $A_\mu$ falls off at infinity and $J_{\mathrm{CS},\mu}$ falls off faster, so the surface term at infinity vanishes and $Ϙ=0$ for every such field. Equivalently, the density integrates to zero on $\mathbb R^4$ (or on its one-point compactification $S^4$, where $H^2(S^4;\mathbb Z)=0$). A nonzero abelian charge requires a nontrivial line bundle, which a four-sphere does not admit; it can occur only on a manifold with nonzero second cohomology, such as $\mathbb{CP}^2$, where the field is not a single globally defined connection. On the framework's flat background, therefore, the Maxwell sector has **no instanton**. Instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ factor, not in the $\mathrm{U}(1)$ scalar sector.
 - **The charge is metric independent.** The density $\mathrm{Tr}(F\wedge F)$ is built from the field strength and the totally antisymmetric symbol alone; no metric enters. The action $\int\mathrm{Tr}(F\wedge\star F)$, by contrast, uses the star and hence the metric. The charge is therefore the same on any conformally related metric, which is one way to see why the instanton problem is conformally invariant and why the moduli of instantons on $\mathbb R^4$ and on $S^4$ coincide.
 
 ## Self-Duality in Euclidean Signature
@@ -350,13 +350,13 @@ This is a gap in the framework's field content, not a defect in its algebra. The
 
 This article has treated the localised finite-energy solutions of the biquaternion framework in the two settings in which they occur, and has kept the settings apart.
 
-- **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$, is the passage between the two stars, and the explicit factor $i$ of the $i c r'_t$ convention is the Lorentzian structure that the Euclidean solution does not carry.
+- **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{H}$, is the passage between the two stars, and the explicit factor $i$ of the $i c r'_t$ convention is the Lorentzian structure that the Euclidean solution does not carry.
 - **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $i c r'_t$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
 - **The framework's invariants supply the abelian density.** $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4iI_2/c$ (Lorentzian) and $=4I_2$ (Euclidean) were recomputed; the imaginary part of the biquaternion norm, $I_2=\vec E\cdot\vec B$, *is* the abelian topological density. In the non-abelian case the density needs the matrix trace, and the rank-two, single-slot biquaternion norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$; this was checked numerically. That the framework's invariant apparatus does not produce the non-abelian topological density is recorded as a gap.
-- **There is no abelian instanton.** For finite-action abelian fields on $\mathbb R^4$ the charge is a vanishing surface term; instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)$ factor inside $\mathbb{M}_-$.
+- **There is no abelian instanton.** For finite-action abelian fields on $\mathbb R^4$ the charge is a vanishing surface term; instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)$ factor inside $\mathbb{B}_{\Phi}$.
 - **An explicit solution exists and was checked.** The $SU(2)$ BPST instanton in the framework's $\mathrm{SU}(2)$ satisfies $F=\pm\star F$ (residual at the arithmetic level) and $D_\mu F_{\mu\nu}=0$ (to finite-difference accuracy). It saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$ that self-duality establishes, and its charge is $|Ϙ|=1$.
 - **There is no soliton.** A soliton's stability requires a topological sector with a finite-energy representative, or a Bogomolny bound; the framework has the topological charge $Ϙ_m$ but only a singular, infinite-energy configuration to carry it, and its free scalar sector provides no potential in which a Bogomolny square can be completed. The absence is stated as a gap, and no configuration is called stable.
-- **What is left open.** The exact placement of the factor $i$ in the Euclidean continuation of the framework's non-abelian curvature; whether a scalar potential can be constructed inside the framework so that a finite-energy topological configuration exists; and whether the zero-divisor structure of $\mathbb{M}_-$, which the parent flagged, plays any role in the instanton sector. A fourth item is the axial anomaly: the topological density derived here is the object that appears in it, and the chiral-fermion article names this article as its natural home, but the anomaly itself — its coefficient, its relation to the $\theta$-angle — is a separate subject and is not treated here. None of the items was needed for the results above, and none is closed here.
+- **What is left open.** The exact placement of the factor $i$ in the Euclidean continuation of the framework's non-abelian curvature; whether a scalar potential can be constructed inside the framework so that a finite-energy topological configuration exists; and whether the zero-divisor structure of $\mathbb{B}_{\Phi}$, which the parent flagged, plays any role in the instanton sector. A fourth item is the axial anomaly: the topological density derived here is the object that appears in it, and the chiral-fermion article names this article as its natural home, but the anomaly itself — its coefficient, its relation to the $\theta$-angle — is a separate subject and is not treated here. None of the items was needed for the results above, and none is closed here.
 
 ## Summary of Notation
 
@@ -365,10 +365,10 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$ | The biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
-| $\mathbb{M}_-$ | Material sector, anti-Hermitian, signature $(3,1)$ |
-| $\mathbb{M}_+$ | Informational sector, Hermitian, signature $(1,3)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, the Euclidean slice |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
+| $\mathbb{B}_{\Phi}$ | Material sector, anti-Hermitian, signature $(3,1)$ |
+| $\mathbb{B}_{\Psi}$ | Informational sector, Hermitian, signature $(1,3)$ |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace, the Euclidean slice |
+| $\mathbb{B}_{C}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i c r'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
@@ -398,7 +398,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the covariant derivative $D_\mu$ and the gauge connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $\langle\tilde{F}\rangle_{\natural}$.
 - [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
-- [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the identification $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{H}$ and the Euclidean slice.
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html), [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) and [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) — the contractibility of $\mathbb{B}$, the unit group and the null cone.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the field equation and the Riemann–Silberstein structure of the abelian sector.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the central $\mathrm{U}(1)$ and the local gauge structure.

@@ -8,7 +8,7 @@ The division of labour among the path-integral articles of the corpus must be st
 
 Three statements organise the article.
 
-1. **The integration variable is a central-valued c-number field.** The field configurations are functions into the centre $\mathbb{C}_{\mathbb{B}}$; the action, the source and the measure are central; and the weight is a central phase. Because the scalar field is bosonic, the sum over configurations is an ordinary (functional) integral over complex functions; it is the fermionic case that would require anticommuting values. This is the path-integral form of the statement that spin $0$ lives in the centre.
+1. **The integration variable is a central-valued c-number field.** The field configurations are functions into the centre $\mathbb{B}_{C}$; the action, the source and the measure are central; and the weight is a central phase. Because the scalar field is bosonic, the sum over configurations is an ordinary (functional) integral over complex functions; it is the fermionic case that would require anticommuting values. This is the path-integral form of the statement that spin $0$ lives in the centre.
 2. **The functional integral is the operator formalism's generating functional.** Its functional derivatives reproduce the time-ordered correlation functions of the field operator of the companion article *The Quantized Scalar Field in Biquaternionic Form*; the free two-point function is the Feynman propagator; the vacuum functional is the norm of the vacuum-to-vacuum amplitude. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi_{\mathrm{scl}}$.
 3. **The algebra contributes the same three things it contributes elsewhere in the scalar sector.** The centrality of the field and the source; the biquaternion-norm interpretation of the quadratic form, whose momentum-space symbol is the biquaternion norm of the material four-wavevector shifted by the mass; and the identification of the Wick rotation with a sector relabelling. No new mechanism and no native ladder; the bosonic gap of the companion Fock-space article persists.
 
@@ -201,7 +201,7 @@ $$
 Z_E=\int\mathcal{D}\tilde{Ξ}\;\exp(-S_E[\tilde{Ξ}]/\hbar),
 $$
 
-a sum of positive weights. The step from the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
+a sum of positive weights. The step from the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
 
 **The lattice regulator.** Discretizing the Euclidean direction on a lattice of spacing $h$, the quadratic form of one degree of freedom is a tridiagonal matrix with diagonal $a=2/h^2+\mu^2$ and off-diagonal $b=-1/h^2$, and its determinant obeys the recursion
 
@@ -268,7 +268,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 **The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(\langle\tilde P\rangle_{\natural}+\mu^2)$ with $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$, and it vanishes on the mass shell, the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three interpretations of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
 
-**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central $*$-unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
+**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central $*$-unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
 **The algebra supplies nothing beyond the centre.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.
 
@@ -300,7 +300,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde J=J\,e_t$, $\xi_{\mathrm{scl}}=(\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2})/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |

@@ -42,7 +42,7 @@ U_{\mathrm{fop},\alpha}\,\tilde{Ξ}_{\mathrm{fop}}\,U_{\mathrm{fop},\alpha}{}^{-
 U_{\mathrm{fop},\alpha}\,\tilde{Ξ}_{\mathrm{fop}}^{{*}}\,U_{\mathrm{fop},\alpha}{}^{-1}=\exp(+i\alpha)\,\tilde{Ξ}_{\mathrm{fop}}^{{*}} ,
 $$
 
-with $Ϙ_{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J\in\mathbb{M}_-$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a **central** $*$-unitary. The group is $\mathrm{U}(1)$, one generator, one phase.
+with $Ϙ_{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J\in\mathbb{B}_{\Phi}$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a **central** $*$-unitary. The group is $\mathrm{U}(1)$, one generator, one phase.
 
 A symmetry is **spontaneously broken** when it is a symmetry of the action but not of the vacuum. For a $\mathrm{U}(1)$ acting on a complex scalar, breaking means that the vacuum expectation value
 
@@ -50,7 +50,7 @@ $$
 \langle0|\,\tilde{Ξ}_{\mathrm{fop}}\,|0\rangle=v\,\exp(i\alpha_0)\,e_t
 $$
 
-is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the component normalisation below, in which $\tilde{Ξ}=(\xi_1+i\xi_2)e_t/\sqrt2$ and the symmetry-breaking minimum sits at $\xi_1=\sqrt2\,v$, the expectation of the complex component is $\langle\xi\rangle=v$, so the order parameter's modulus is $v$. The freedom to rotate $\alpha_0$ is the degeneracy, and the choice of one value is the breaking. The order parameter is the central element $v\exp(i\alpha_0)e_t$: it lies in $\mathbb{C}_{\mathbb{B}}$, it commutes with the algebra, and it carries no spinor index. The symmetry multiplies the field by the central phase, $\tilde{Ξ}_{\mathrm{fop}}\mapsto \exp(-i\alpha)\tilde{Ξ}_{\mathrm{fop}}$ (equivalently $\tilde{Ξ}_{\mathrm{fop}}\mapsto U_{\mathrm{fop},\alpha}\tilde{Ξ}_{\mathrm{fop}}U_{\mathrm{fop},\alpha}{}^{-1}$ with $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$), and it acts on the vacua by carrying the one with phase $\alpha_0$ into the one with phase $\alpha_0+\alpha$; the transformed vacuum is a different but energetically equivalent state, and the vacuum manifold is the circle of phases.
+is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the component normalisation below, in which $\tilde{Ξ}=(\xi_1+i\xi_2)e_t/\sqrt2$ and the symmetry-breaking minimum sits at $\xi_1=\sqrt2\,v$, the expectation of the complex component is $\langle\xi\rangle=v$, so the order parameter's modulus is $v$. The freedom to rotate $\alpha_0$ is the degeneracy, and the choice of one value is the breaking. The order parameter is the central element $v\exp(i\alpha_0)e_t$: it lies in $\mathbb{B}_{C}$, it commutes with the algebra, and it carries no spinor index. The symmetry multiplies the field by the central phase, $\tilde{Ξ}_{\mathrm{fop}}\mapsto \exp(-i\alpha)\tilde{Ξ}_{\mathrm{fop}}$ (equivalently $\tilde{Ξ}_{\mathrm{fop}}\mapsto U_{\mathrm{fop},\alpha}\tilde{Ξ}_{\mathrm{fop}}U_{\mathrm{fop},\alpha}{}^{-1}$ with $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$), and it acts on the vacua by carrying the one with phase $\alpha_0$ into the one with phase $\alpha_0+\alpha$; the transformed vacuum is a different but energetically equivalent state, and the vacuum manifold is the circle of phases.
 
 Three consequences must be distinguished, because they are often conflated.
 
@@ -162,7 +162,7 @@ $$
 
 which is the statement that the current interpolates the Goldstone boson with strength $f$ and that no massive state contributes at zero momentum.
 
-The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{M}_-$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\xi_{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.
+The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{B}_{\Phi}$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\xi_{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.
 
 $$
 -(\xi_1d\xi_{2}/dr'_t-\xi_2d\xi_{1}/dr'_t)=-fd\vartheta_{\mathrm{fld}}/dr'_t-\big(h\,d\vartheta_{\mathrm{fld}}/dr'_t-\vartheta_{\mathrm{fld}}\,dh/dr'_t\big),
@@ -242,7 +242,7 @@ the second relation being a statement about the vacuum expectation value, since 
 
 Four statements summarise what the framework contributes to Goldstone's theorem.
 
-**The symmetry is the central phase.** The broken symmetry is the $\mathrm{U}(1)$ generated by the charge of the current $\tilde J\in\mathbb{M}_-$; its parameter multiplies the field by a central $*$-unitary, and it commutes with the Poincaré action. The Goldstone boson is therefore the scalar that moves along the orbit of the central phase, and it is central-valued like every other scalar of the sector.
+**The symmetry is the central phase.** The broken symmetry is the $\mathrm{U}(1)$ generated by the charge of the current $\tilde J\in\mathbb{B}_{\Phi}$; its parameter multiplies the field by a central $*$-unitary, and it commutes with the Poincaré action. The Goldstone boson is therefore the scalar that moves along the orbit of the central phase, and it is central-valued like every other scalar of the sector.
 
 **The order parameter is a central condensate.** The vacuum expectation value $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ lies in the centre and commutes with the algebra; it carries no spinor index, and the breaking is a breaking of a symmetry acting on the centre. The Goldstone field inherits this: it is a scalar, not a spinor, and the framework's state module is not involved in the breaking.
 
@@ -266,7 +266,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## Summary
 
-The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
+The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{B}_{\Phi}$, acting on the central-valued field by $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$, the order parameter $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\xi_1=\sqrt2v+h$ and $\xi_2=\vartheta_{\mathrm{fld}}$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\vartheta_{\mathrm{fld}}$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
 
 The Goldstone field's current is $\tilde J=-f\tilde\nabla\vartheta_{\mathrm{fld}}+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\xi_{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$; the low-energy couplings of $\vartheta_{\mathrm{fld}}$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
 
@@ -277,14 +277,14 @@ The Goldstone field's current is $\tilde J=-f\tilde\nabla\vartheta_{\mathrm{fld}
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the order parameter and the Goldstone mode |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the order parameter and the Goldstone mode |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Central scalar and its real components |
 | $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})-v^2)^2$ | Invariant potential |
 | $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=v^2$ | Vacuum manifold ($\mathbb{S}^1$) |
 | $\langle\tilde{Ξ}_{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ | Order parameter (central condensate; modulus $v$) |
 | $\xi_1=\sqrt2v+h$, $\xi_2=\vartheta_{\mathrm{fld}}$ | Radial (Higgs) and angular (Goldstone) fields |
 | $m_h^2=\lambda v^2$, $m_G^2=0$ | Mass matrix entries; Goldstone exactly massless |
-| $\tilde J\in\mathbb{M}_-$, $\tilde J=i(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$ | Noether current, in the material sector |
+| $\tilde J\in\mathbb{B}_{\Phi}$, $\tilde J=i(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$ | Noether current, in the material sector |
 | $\tilde J=-f\tilde\nabla\vartheta_{\mathrm{fld}}+\ldots$, $f=\sqrt2v$ | Current and decay constant |
 | $\langle0\vert\tilde J(0)\vert\vartheta_{\mathrm{fld}}(p)\rangle=ifp_\mu$ | Defining matrix element of the decay constant |
 | $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$, $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |

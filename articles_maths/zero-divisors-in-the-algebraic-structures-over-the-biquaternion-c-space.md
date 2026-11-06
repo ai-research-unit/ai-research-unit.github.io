@@ -355,7 +355,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 | $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}$ | the quaternionic norm, the general quaternionic bilinear algebraic norm, the scalar of the central square $\tilde Q_2\tilde Q_2^{\natural}=\mathrm{Norm}(\tilde Q_2)e_t$ |
 | $\mathcal{N}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)=0\}$ | the zero-divisor cone, of complex dimension three and real dimension six |
 | $\mathcal{N}\setminus\{0\}$ | the zero-divisor set of the four general products |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, where the central square lies |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre, where the central square lies |
 | pure, non-pure | scalar part zero, scalar part nonzero |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$ | the inverse of an element with $\mathrm{Norm}(\tilde Q_1)\neq0$ |

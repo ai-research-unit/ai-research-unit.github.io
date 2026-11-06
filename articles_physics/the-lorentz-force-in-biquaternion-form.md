@@ -2,16 +2,16 @@
 
 ## Introduction
 
-A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{M}_-$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
+A charged particle moving in an electromagnetic field is acted on by the **Lorentz force**. In the four-dimensional language of relativity this force is the contraction of the field-strength tensor with the four-velocity, $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$; in three-vector language it reads $ϙ(\vec E + \vec v\times\vec B)$ for the spatial part, together with the power $ϙ\,\vec E\cdot\vec v$ in the time part. The companion article *Relativistic Mechanics in Biquaternionic Form* recorded the biquaternion component form of this four-force and identified it as an element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. That article also recorded, explicitly and twice, an open problem: the expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde{F}$ and the four-velocity $\tilde{V}$ is *not* simply the real part of $\tilde{F}\circ\tilde{V}$, the correct expression "involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$", and it "remains to be worked out cleanly".
 
 This article carries out that work. The result is a two-term product formula, bilinear in the field and the four-velocity, that reproduces the component form exactly. In its most compact shape the formula is a single projection:
 
 $$
-\boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\,\tilde{F}\right),\qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right)\;}.
+\boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\,\tilde{F}\right),\qquad
+P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right)\;}.
 $$
 
-The projection $P_{\mathbb{M}_-}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{M}_-$ automatically. Written out, the formula is
+The projection $P_{\mathbb{B}_{\Phi}}$ is the anti-Hermitian part, and it lands in the material sector $\mathbb{B}_{\Phi}$ automatically. Written out, the formula is
 
 $$
 \tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\,\tilde{F} + \tilde{F}^{*}\,\tilde{V}\right),
@@ -49,7 +49,7 @@ $$
 \gamma = \frac{1}{\sqrt{1 - \vec v^2/c^2}}
 $$
 
-is the Lorentz factor. The scalar part is purely imaginary and the vector part is real, so $\tilde{K}_{\mathrm{f}}$ lies in the anti-Hermitian subspace $\mathbb{M}_-$, like the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and the four-momentum $\tilde{P} = m\tilde{V}$. Writing $\vec f = ϙ(\vec E + \vec v\times\vec B)$ for the (relativistic) three-force and $P_{\text{mech}} = \vec f\cdot\vec v = ϙ\,\vec E\cdot\vec v$ for the mechanical power, the component form reads
+is the Lorentz factor. The scalar part is purely imaginary and the vector part is real, so $\tilde{K}_{\mathrm{f}}$ lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and the four-momentum $\tilde{P} = m\tilde{V}$. Writing $\vec f = ϙ(\vec E + \vec v\times\vec B)$ for the (relativistic) three-force and $P_{\text{mech}} = \vec f\cdot\vec v = ϙ\,\vec E\cdot\vec v$ for the mechanical power, the component form reads
 
 $$
 \tilde{K}_{\mathrm{f}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
@@ -85,7 +85,7 @@ $$
 
 which is exactly the vector part above. The component form and the tensor contraction are the same statement.
 
-## The Four-Force as an Element of $\mathbb{M}_-$
+## The Four-Force as an Element of $\mathbb{B}_{\Phi}$
 
 The four-force is a four-vector, and it lives in the same subspace as the four-velocity and the four-momentum. Two structural facts make this precise.
 
@@ -95,13 +95,13 @@ $$
 \tilde{K}_{\mathrm{f}}^{*} = -\tilde{K}_{\mathrm{f}}.
 $$
 
-This is the defining property of $\mathbb{M}_-$. Equivalently, $\tilde{K}_{\mathrm{f}}$ has no Hermitian part:
+This is the defining property of $\mathbb{B}_{\Phi}$. Equivalently, $\tilde{K}_{\mathrm{f}}$ has no Hermitian part:
 
 $$
 \tfrac{1}{2}\left(\tilde{K}_{\mathrm{f}} + \tilde{K}_{\mathrm{f}}^{*}\right) = 0.
 $$
 
-The whole content of the four-force is in its anti-Hermitian half. The same is true of $\tilde{V}$ and $\tilde{P}$, and this is why $\mathbb{M}_-$ is called the material sector: it is the subspace of four-vectors.
+The whole content of the four-force is in its anti-Hermitian half. The same is true of $\tilde{V}$ and $\tilde{P}$, and this is why $\mathbb{B}_{\Phi}$ is called the material sector: it is the subspace of four-vectors.
 
 **2. Orthogonality to the four-momentum.** The four-momentum has fixed biquaternion norm, $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$, along the worldline. Differentiating and using $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ gives
 
@@ -131,7 +131,7 @@ $$
 \tilde{F}\tilde{V} - \tilde{V}\tilde{F} = 2\gamma\left(\tilde{F}\times\vec v\right).
 $$
 
-The product $\tilde{F}\tilde{V}$ has scalar part $-\gamma\,\tilde{F}\cdot\vec v$, which is a **complex** number in general, and vector part $i\gamma c\,\tilde{F} + \gamma\,\tilde{F}\times\vec v$. Its real part therefore has a **real** scalar part, whereas the four-force has a **purely imaginary** scalar part. Consequently $\operatorname{Re}(\tilde{F}\tilde{V})$ does not lie in $\mathbb{M}_-$ at all: it cannot be the four-force, for the elementary reason that it is the wrong kind of biquaternion. This is the precise content of the statement in the relativistic-mechanics article that the four-force is "not simply the real part of $\tilde{F}\circ\tilde{V}$".
+The product $\tilde{F}\tilde{V}$ has scalar part $-\gamma\,\tilde{F}\cdot\vec v$, which is a **complex** number in general, and vector part $i\gamma c\,\tilde{F} + \gamma\,\tilde{F}\times\vec v$. Its real part therefore has a **real** scalar part, whereas the four-force has a **purely imaginary** scalar part. Consequently $\operatorname{Re}(\tilde{F}\tilde{V})$ does not lie in $\mathbb{B}_{\Phi}$ at all: it cannot be the four-force, for the elementary reason that it is the wrong kind of biquaternion. This is the precise content of the statement in the relativistic-mechanics article that the four-force is "not simply the real part of $\tilde{F}\circ\tilde{V}$".
 
 There is a second obstruction. The field strength mixes $\vec E$ and $\vec B$ with the fixed weights $\sqrt{\epsilon}$, $\sqrt{\mu}$ and with opposite reality properties — the electric part imaginary, the magnetic part real — whereas the four-force requires $\vec E$ and the magnetic force $\vec v\times\vec B$ to enter with the *same* coefficient $\gamma ϙ$. A single product of $\tilde{F}$ with $\tilde{V}$ keeps these weights locked together. Separating them requires the conjugate field $\tilde{F}^{*}$, in which the relative sign of the electric and magnetic parts is reversed:
 
@@ -143,7 +143,7 @@ $$
 
 The combination that extracts $\vec E$ is $\tilde{F} + \tilde{F}^{*} = 2i\sqrt{\epsilon}\,\vec E$; the combination that extracts $\vec B$ is $\tilde{F}^{*} - \tilde{F} = 2\sqrt{\mu}\,\vec H = 2\vec B/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.
 
-**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde U(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $d\tilde U/d\tau = \tfrac12\vec\Omega_{\mathrm{LT}}\tilde U$ with $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\vec\Omega_{\mathrm{LT}}\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
+**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde U(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $d\tilde U/d\tau = \tfrac12\vec\Omega_{\mathrm{LT}}\tilde U$ with $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}/d\tau = P_{\mathbb{B}_{\Phi}}(\vec\Omega_{\mathrm{LT}}\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
 
 ## The Biquaternion Product Formula
 
@@ -247,7 +247,7 @@ $$
 \tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V}\right).
 $$
 
-**Step 6: the projection form.** Because $\tilde{V}\in\mathbb{M}_-$ and $\tilde{V}^{*} = -\tilde{V}$, the Hermitian conjugate of the product is
+**Step 6: the projection form.** Because $\tilde{V}\in\mathbb{B}_{\Phi}$ and $\tilde{V}^{*} = -\tilde{V}$, the Hermitian conjugate of the product is
 
 $$
 \left(\tilde{V}\tilde{F}\right)^\dagger = \tilde{F}^{*}\tilde{V}^{*} = -\,\tilde{F}^{*}\tilde{V}.
@@ -258,27 +258,27 @@ The bracket is therefore twice the anti-Hermitian part of $\tilde{V}\tilde{F}$:
 $$
 \tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}
 = \tilde{V}\tilde{F} - \left(\tilde{V}\tilde{F}\right)^\dagger
-= 2\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+= 2\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right),
 $$
 
 and the formula becomes the single statement
 
 $$
-\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).
+P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).
 $$
 
-This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $ϙ\sqrt{\mu}$, the **projection of the product $\tilde{V}\tilde{F}$ onto the material sector** $\mathbb{M}_-$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
+This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $ϙ\sqrt{\mu}$, the **projection of the product $\tilde{V}\tilde{F}$ onto the material sector** $\mathbb{B}_{\Phi}$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
 
 **Reading by sector.** The projection form has a transparent **physical interpretation**. Split the field strength into its Hermitian and anti-Hermitian parts,
 
 $$
 \tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E
-\;\in\;\mathbb{M}_+,
+\;\in\;\mathbb{B}_{\Psi},
 \qquad
 \tilde{F}^{(-)} = \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H
-\;\in\;\mathbb{M}_-,
+\;\in\;\mathbb{B}_{\Phi},
 $$
 
 the electric part in the informational (Hermitian) sector and the magnetic part in the material (anti-Hermitian) sector. Then
@@ -321,11 +321,11 @@ $$
 
 which is the magnetic part of the component form, with vanishing scalar part: a pure magnetic field does no work.
 
-*General case.* For arbitrary $\vec E$, $\vec B$, $\vec v$, the identity $\tilde{K}_{\mathrm{f}} = -ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ was checked numerically against the component form at random field configurations, with agreement to machine precision (maximum discrepancy of order $10^{-15}$ relative to terms of order unity). It is an algebraic identity, not an approximation.
+*General case.* For arbitrary $\vec E$, $\vec B$, $\vec v$, the identity $\tilde{K}_{\mathrm{f}} = -ϙ\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}(\tilde{V}\tilde{F})$ was checked numerically against the component form at random field configurations, with agreement to machine precision (maximum discrepancy of order $10^{-15}$ relative to terms of order unity). It is an algebraic identity, not an approximation.
 
 ## The Force, the Four-Velocity, and the Four-Momentum
 
-The product formula makes the relation between the four-force and the kinematic four-vectors of $\mathbb{M}_-$ explicit.
+The product formula makes the relation between the four-force and the kinematic four-vectors of $\mathbb{B}_{\Phi}$ explicit.
 
 The four-velocity and four-momentum are
 
@@ -346,11 +346,11 @@ $$
 The four-force is the proper-time derivative $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$, and the product formula expresses it directly in terms of $\tilde{V}$ and the field:
 
 $$
-\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
+\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)
 = -\,\frac{ϙ}{2c\sqrt{\epsilon}}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).
 $$
 
-The four-force is thus built from the same ingredients as the four-momentum — the four-velocity and the field — and inherits its membership in $\mathbb{M}_-$ from the projection.
+The four-force is thus built from the same ingredients as the four-momentum — the four-velocity and the field — and inherits its membership in $\mathbb{B}_{\Phi}$ from the projection.
 
 Three consequences follow at once.
 
@@ -363,7 +363,7 @@ $$
 
 since $\vec f\cdot\vec v = ϙ(\vec E + \vec v\times\vec B)\cdot\vec v = ϙ\,\vec E\cdot\vec v = P_{\text{mech}}$. The cancellation is exact.
 
-**Conservation of rest mass.** Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{M}_-$ but cannot change its biquaternion norm.
+**Conservation of rest mass.** Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, the rest mass is unchanged by the Lorentz force. The force can rotate the four-momentum in $\mathbb{B}_{\Phi}$ but cannot change its biquaternion norm.
 
 **The non-relativistic limit.** For $|\vec v| \ll c$ the scalar part of $\tilde{K}_{\mathrm{f}}$ is negligible relative to the vector part, and the four-force reduces to the Newtonian Lorentz force $ϙ(\vec E + \vec v\times\vec B)$.
 
@@ -393,7 +393,7 @@ $$
 \tilde{P}\tilde{P}^{\natural} = -m^2c^2,
 $$
 
-which, as shown above, is preserved by the Lorentz force because the force is orthogonal to the four-momentum. This invariant is independent of the field: every charged particle retains its rest mass, whatever the field. In the biquaternion framework this is the statement that the four-force lies in $\mathbb{M}_-$ and is orthogonal to $\tilde{P}$ in the biquaternion norm.
+which, as shown above, is preserved by the Lorentz force because the force is orthogonal to the four-momentum. This invariant is independent of the field: every charged particle retains its rest mass, whatever the field. In the biquaternion framework this is the statement that the four-force lies in $\mathbb{B}_{\Phi}$ and is orthogonal to $\tilde{P}$ in the biquaternion norm.
 
 ### The force's Lorentz scalar
 
@@ -473,7 +473,7 @@ so $k\cdot P$ is constant along the worldline. This is the invariant of the moti
 
 ## The Transformation of the Force under Boosts
 
-Because the four-force is a four-vector, it transforms under the Lorentz group by the same **rotor conjugation** as every other element of $\mathbb{M}_-$:
+Because the four-force is a four-vector, it transforms under the Lorentz group by the same **rotor conjugation** as every other element of $\mathbb{B}_{\Phi}$:
 
 $$
 \tilde{K}_{\mathrm{f},2} = \tilde U\,\tilde{K}_{\mathrm{f}}\,\tilde U^{*},
@@ -491,7 +491,7 @@ $$
 \gamma_b = \cosh\theta_{\mathrm{rpd}} = \frac{1}{\sqrt{1 - \vec v_b^2/c^2}},
 $$
 
-an element of $\mathbb{M}_+$ (Hermitian, unit norm). The rotor conjugation then reproduces the standard component transformation
+an element of $\mathbb{B}_{\Psi}$ (Hermitian, unit norm). The rotor conjugation then reproduces the standard component transformation
 
 $$
 K_2^0 = \gamma_b\left(K_0 - i\,\frac{\vec v_b\cdot\vec K}{c}\right),
@@ -519,13 +519,13 @@ $$
 \vec B_2 = \gamma_b\left(\vec B - \frac{1}{c^2}\,\vec v_b\times\vec E\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b,
 $$
 
-and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{M}_-$ while the field strength does not.
+and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{B}_{\Phi}$ while the field strength does not.
 
 **Covariance of the product formula.** The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}_2 = \tilde U\tilde{V}\tilde U^{*}$, and the bivector rule to the field, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$. Then the right-hand side of the product formula transforms into the right-hand side computed with the transformed fields, and equals $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$:
 
 $$
--ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}_2\tilde{F}_2\right)
-= \tilde U\left[-ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)\right]\tilde U^{*}
+-ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_2\tilde{F}_2\right)
+= \tilde U\left[-ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)\right]\tilde U^{*}
 = \tilde{K}_{\mathrm{f},2}.
 $$
 
@@ -620,10 +620,10 @@ $$
 \tilde{K}_{\mathrm{f}} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
-which is the contraction $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{M}_-$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{M}_-$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:
+which is the contraction $K_\mu = ϙ\sum_\nu F_{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{B}_{\Phi}$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:
 
 $$
-\boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
+\boxed{\;\tilde{K}_{\mathrm{f}} = -\,ϙ\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)
 = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right)\;}.
 $$
 
@@ -640,10 +640,10 @@ At the level of densities the companion programme replaces the per-particle forc
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\tilde{Q}^{*} = \bar{\tilde Q}^{\natural}$ | Hermitian conjugate |
 | $\bar{\tilde Q}$, $\tilde{Q}^{\natural}$ | Complex conjugate, quaternion conjugate |
-| $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^{*})$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
+| $P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^{*})$ | Projection onto $\mathbb{B}_{\Phi}$ (anti-Hermitian part) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H$ | Hermitian conjugate of the field strength |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |

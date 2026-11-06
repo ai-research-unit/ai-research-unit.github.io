@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde Q_1\mapsto \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{*}HS$ acts, that is, the objects the two-sided operators are made to transform.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{B}_{\Psi}$ and anti-fixed space $\mathbb{B}_{\Phi}$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde Q_1\mapsto \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{*}HS$ acts, that is, the objects the two-sided operators are made to transform.
 
 The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, **the invariant is the inertia** (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{n},-1_{m},0_{r})$, the automorphism group of the unit form is the $*$-unitary slice $U=\mathrm{U}(2)$, and the forms modulo the hyperbolic ones form the **$*$-unitary Witt group** $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.
 
@@ -14,17 +14,17 @@ $$
 h(\tilde Q_2,\tilde Q_1) = h(\tilde Q_1,\tilde Q_2)^{*}.
 $$
 
-The form is **non-degenerate** if $h(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_2$ implies $\tilde Q_1=0$, and **positive definite** if $h(\tilde Q_1,\tilde Q_1)\in\mathbb{M}_+$ for $\tilde Q_1\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*).
+The form is **non-degenerate** if $h(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_2$ implies $\tilde Q_1=0$, and **positive definite** if $h(\tilde Q_1,\tilde Q_1)\in\mathbb{B}_{\Psi}$ for $\tilde Q_1\neq0$, that is, if its values are positive in the sense of the Hermitian cone (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*).
 
 **Proposition (the forms of the rank-one module).** Let $M=\mathbb{B}$ with the right action of the algebra on itself. Every Hermitian form on $M$ is
 
 $$
-h_{H}(\tilde Q_1,\tilde Q_2) = \tilde Q_1^{*}H\,\tilde Q_2\qquad\text{with } H\in\mathbb{M}_+,
+h_{H}(\tilde Q_1,\tilde Q_2) = \tilde Q_1^{*}H\,\tilde Q_2\qquad\text{with } H\in\mathbb{B}_{\Psi},
 $$
 
 and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\mathsf{M}_2(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde Q_1,\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)^{*}\mathsf{M}_2(H)\mathsf{M}_2(\tilde Q_2)$.
 
-*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}h(e_{t},\tilde Q_2)=\tilde Q_1^{*}h(e_{t},e_{t})\tilde Q_2$, with $H=h(e_{t},e_{t})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
+*Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}h(e_{t},\tilde Q_2)=\tilde Q_1^{*}h(e_{t},e_{t})\tilde Q_2$, with $H=h(e_{t},e_{t})\in\mathbb{B}_{\Psi}$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
 
 **Example (the unit form).** $\langle\cdot,\cdot\rangle_{*}=e_{t}$ gives $h_{e_{t}}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}\tilde Q_2$, of scalar part $\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)=\sum_{\mu}Q_{1,\mu}^{*}Q_{2,\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
 
@@ -56,7 +56,7 @@ the **$*$-unitary slice**, of real dimension four, with determinant-one part $\m
 
 ## Sylvester's Law of Inertia
 
-**Definition.** For $H\in\mathbb{M}_+$ the **inertia** is the triple $(n,m,r)$ of the numbers of positive, negative and zero eigenvalues of the matrix $\mathsf{M}_2(H)$, that is of the positive, negative and null dimensions of the form $h_{H}$.
+**Definition.** For $H\in\mathbb{B}_{\Psi}$ the **inertia** is the triple $(n,m,r)$ of the numbers of positive, negative and zero eigenvalues of the matrix $\mathsf{M}_2(H)$, that is of the positive, negative and null dimensions of the form $h_{H}$.
 
 **Theorem (Sylvester's law of inertia).** Congruence preserves the inertia:
 
@@ -102,13 +102,13 @@ $$\boxed{\; W(\mathbb{B},{}^{*}) \;\cong\; \mathbb{Z},\qquad \text{generated by 
 
 *Proof.* The signature is additive, vanishes on the hyperbolic plane and changes sign under the negation, so it descends to a group homomorphism $W\to\mathbb{Z}$. It is injective because a form with signature zero has $n=m$, hence is hyperbolic, hence is the zero class; and it is surjective because the class of the unit form has signature $2$, so its multiples realise every even integer, while the class of the form $\mathrm{diag}(1,-1,-1,-1)$ has signature $-2$ and realises the negative ones. In the rank-two module the same argument applies with the signature of a $4\times4$ Hermitian matrix.
 
-**Remark (what the group is not).** Over the complex numbers the signature classification collapses, since scaling by $i$ exchanges the signs and there is only one class up to congruence: the interesting group is the one of the **real** involution, which is the one used here since $\mathbb{M}_+$ is a real form. The Witt group is therefore $\mathbb{Z}$ and not $\mathbb{Z}/2$, and the invariant is the full signature, not only the parity of the rank.
+**Remark (what the group is not).** Over the complex numbers the signature classification collapses, since scaling by $i$ exchanges the signs and there is only one class up to congruence: the interesting group is the one of the **real** involution, which is the one used here since $\mathbb{B}_{\Psi}$ is a real form. The Witt group is therefore $\mathbb{Z}$ and not $\mathbb{Z}/2$, and the invariant is the full signature, not only the parity of the rank.
 
 ## $\varepsilon$-Hermitian Forms and the Signed Involution
 
 **Definition.** Let $\theta$ be an involution of $\mathbb{B}$ and let $\varepsilon=\pm1$. A form is **$\varepsilon$-Hermitian** for $\theta$ if $h(\tilde Q_2,\tilde Q_1)=\varepsilon\,\theta(h(\tilde Q_1,\tilde Q_2))$. The case $\varepsilon=+1$ is the Hermitian case of the article; the case $\varepsilon=-1$ is the **skew-Hermitian** case, and for $\theta=\mathrm{id}$ the two cases are the symmetric and the alternating bilinear forms, whose classification over a field of characteristic not two is again by congruence but with the alternating forms contributing the hyperbolic class.
 
-**Remark (the four combinations of the corpus).** The corpus's four two-sided operators are the four combinations of the left twist, identity or signed, and the right factor, inverse or dagger: $\mathrm{Sd}_{\tilde Q_1}$ for the twisted cases and $\mathrm{H}_{\tilde Q_1}$ for the Hermitian ones (*Mixed Inner Conjugation and Hermitian Adjoint*). Each of them acts on the forms of the corresponding type: the congruence $H\mapsto S^{*}HS$ is the Hermitian case, the congruence $H\mapsto S^{*}HS$ with the twist $\alpha$ is the signed case, and the two have the same inertia theory because the twist is an isomorphism of $\mathbb{M}_+$.
+**Remark (the four combinations of the corpus).** The corpus's four two-sided operators are the four combinations of the left twist, identity or signed, and the right factor, inverse or dagger: $\mathrm{Sd}_{\tilde Q_1}$ for the twisted cases and $\mathrm{H}_{\tilde Q_1}$ for the Hermitian ones (*Mixed Inner Conjugation and Hermitian Adjoint*). Each of them acts on the forms of the corresponding type: the congruence $H\mapsto S^{*}HS$ is the Hermitian case, the congruence $H\mapsto S^{*}HS$ with the twist $\alpha$ is the signed case, and the two have the same inertia theory because the twist is an isomorphism of $\mathbb{B}_{\Psi}$.
 
 ## Worked Examples
 
@@ -128,7 +128,7 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 
 | Symbol | Meaning |
 |---|---|
-| $h_{H}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}H\tilde Q_2$ | Hermitian form of the rank-one module, $H\in\mathbb{M}_+$ |
+| $h_{H}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}H\tilde Q_2$ | Hermitian form of the rank-one module, $H\in\mathbb{B}_{\Psi}$ |
 | $h_{e_{t}}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}\tilde Q_2$ | The unit form; positive definite; trace form of the dagger |
 | $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\sum_{\mu}Q_{1,\mu}^{2}$ | The quaternion norm; **not** a Hermitian form of the dagger |
 | $H'\sim H \iff H'=S^{*}HS$ | Congruence; the two-sided operator on the form matrix |

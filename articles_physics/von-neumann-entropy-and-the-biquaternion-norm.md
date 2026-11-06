@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The von Neumann entropy of a state is the fundamental quantitative measure of the information a quantum state fails to hold: it vanishes on the pure states, is maximal on the maximally mixed state, and quantifies the compression achievable in the quantum source coding theorem. In the biquaternion framework the state space of a qubit is the normalised hyperplane of the positive cone of $\mathbb{M}_+$, and the cone is defined by the algebra's biquaternion norm. The question this article answers is what the entropy is, in that geometry.
+The von Neumann entropy of a state is the fundamental quantitative measure of the information a quantum state fails to hold: it vanishes on the pure states, is maximal on the maximally mixed state, and quantifies the compression achievable in the quantum source coding theorem. In the biquaternion framework the state space of a qubit is the normalised hyperplane of the positive cone of $\mathbb{B}_{\Psi}$, and the cone is defined by the algebra's biquaternion norm. The question this article answers is what the entropy is, in that geometry.
 
 The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the biquaternion norm alone. For a state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ one has
 
@@ -75,7 +75,7 @@ $$
 
 The state is pure, $\tilde{Ϛ}^2 = \tilde{Ϛ}$, exactly when $|\vec r|=1$; it is idempotent exactly when its purity is one. Everything that follows is a statement about the single real number $\mathrm{Sc}(\tilde{Ϛ}^2-\tilde{Ϛ}) = \tfrac14(|\vec r|^2-1)\leq0$.
 
-### The biquaternion norm on $\mathbb{M}_+$
+### The biquaternion norm on $\mathbb{B}_{\Psi}$
 
 The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with real coefficients it is the real scalar
 
@@ -99,7 +99,7 @@ $$
 
 a scalar element of the centre. Three interpretations of this single identity organize the rest of the article:
 
-- $\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{M}_+$.
+- $\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{B}_{\Psi}$.
 - Comparing with the deviation from idempotency, $\tilde{Ϛ}^2-\tilde{Ϛ} = -\langle\tilde{Ϛ}\rangle_{\natural}e_t$: **the deviation from idempotency is minus the biquaternion norm**. There is no other mixedness parameter.
 - The purity is an affine function of the biquaternion norm, $P(\tilde{Ϛ}) = 2\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{*} = 1 - 2\langle\tilde{Ϛ}\rangle_{\natural}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}^2) = 1 - 2\langle\tilde{Ϛ}\rangle_{\natural}$.
 
@@ -148,7 +148,7 @@ As $N\to0$ this derivative diverges to $+\infty$: the entropy leaves the pure st
 
 ### The logarithm as an element of the algebra
 
-The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{M}_+$:
+The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{B}_{\Psi}$:
 
 $$
 \log \tilde{Ϛ} = \log\lambda_+\, \tilde\Pi_1(\vec u_r) + \log\lambda_-\, \tilde\Pi_2(\vec u_r) .
@@ -245,7 +245,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 **1. Entropy from the algebra alone.** The entropy is a function of the biquaternion norm, but the function $h$ is not algebraic. Is there a characterization of the entropy as the unique (up to scale) quantity on the cone slice that is monotone, concave, and $*$-unitary invariant? For the qubit this is plausible; a derivation from algebraic axioms alone has not been given.
 
-**2. The many-qubit case.** For $n$ qubits the state space is the positive cone slice of $\mathbb{M}_+^{\otimes n}$, and the biquaternion norm is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the biquaternion norm of the tensor product play the role the single norm plays here?
+**2. The many-qubit case.** For $n$ qubits the state space is the positive cone slice of $\mathbb{B}_{\Psi}^{\otimes n}$, and the biquaternion norm is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the biquaternion norm of the tensor product play the role the single norm plays here?
 
 **3. Entropy and the trace pairing.** Entropy is a function of the biquaternion norm; the Born rule is a function of the Hermitian form, whose trace reading is taken last, at normalisation. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?
 
@@ -255,7 +255,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 ## Summary
 
-The state space of the qubit is the normalised hyperplane of the positive cone of the Hermitian subspace $\mathbb{M}_+$, and the cone is defined by the algebra's biquaternion norm
+The state space of the qubit is the normalised hyperplane of the positive cone of the Hermitian subspace $\mathbb{B}_{\Psi}$, and the cone is defined by the algebra's biquaternion norm
 
 $$
 \langle\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\psi|^2 = \det M(\tilde R_\psi), \qquad
@@ -279,7 +279,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |

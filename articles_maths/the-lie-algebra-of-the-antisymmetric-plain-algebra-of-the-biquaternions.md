@@ -14,7 +14,7 @@ $$
 \mathfrak{g}=\bigl(\mathbb{B},\wedge\bigr),
 $$
 
-of complex dimension four and real dimension eight. This article develops the structure of that Lie algebra: its centre, which is the centre $\mathbb{C}_{\mathbb{B}}$ of the biquaternion algebra, and the quotient by it; its derived algebra $\mathrm{Vect}(\mathbb{B})$, stable under the bracket, of complex dimension three and real dimension six; the identifications of that derived algebra with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$; the readings of the quaternion subspace and the anti-Hermitian subspace on the real forms, carrying $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathfrak{u}(2)$; the derived series, the readings of solvability, nilpotency and simplicity; the ideals and the quotients; and the enveloping algebra.
+of complex dimension four and real dimension eight. This article develops the structure of that Lie algebra: its centre, which is the centre $\mathbb{B}_{C}$ of the biquaternion algebra, and the quotient by it; its derived algebra $\mathbb{B}_{V}$, stable under the bracket, of complex dimension three and real dimension six; the identifications of that derived algebra with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$; the readings of the quaternion subspace and the anti-Hermitian subspace on the real forms, carrying $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathfrak{u}(2)$; the derived series, the readings of solvability, nilpotency and simplicity; the ideals and the quotients; and the enveloping algebra.
 
 The bracket and its Jacobi identity are established in *Introduction to the Antisymmetric Plain Algebra* and are used here, not reproved. The general theory of Lie algebras, of their ideals, of their solvable and nilpotent series, of simplicity and of the enveloping algebra is *Lie Algebras* and *Structure of Lie Algebras*; the associativity of the plain product, from which the Jacobi identity descends, is *Associative Algebras* and *The Commutator Operator*; the remarkable subspaces and their names are *Subspaces and Decompositions*, and their readings under the four general products are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the skew-Hermitian elements and the group of linear maps preserving their form are *The Unitary Lie Algebra*; and the splitting of the plain product into the two halves is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The article reads the Lie algebra as a module over $\mathbb{C}$ with an alternating bracket, and no group, no exponential and no space enters.
 
@@ -28,9 +28,9 @@ $$
 \mathfrak{z}(\mathfrak{g})=\{\tilde Q_1\in\mathbb{B}:\tilde Q_1\wedge\tilde Q_2=0\text{ for all }\tilde Q_2\in\mathbb{B}\}.
 $$
 
-**Theorem (the centre is the centre of the algebra).** For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\tilde Q_1$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec Q_1=0$; and $\tilde Q_1$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the centre of the biquaternion algebra. Hence
+**Theorem (the centre is the centre of the algebra).** For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\tilde Q_1$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec Q_1=0$; and $\tilde Q_1$ lies in $\mathbb{B}_{C}=\mathbb{C}e_t$, the centre of the biquaternion algebra. Hence
 
-$$ \boxed{\; \mathfrak{z}(\mathfrak{g})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t \;}, $$
+$$ \boxed{\; \mathfrak{z}(\mathfrak{g})=\mathbb{B}_{C}=\mathbb{C}e_t \;}, $$
 
 of complex dimension one and real dimension two.
 
@@ -40,14 +40,14 @@ of complex dimension one and real dimension two.
 
 ### The Quotient
 
-**Proposition.** The bracket induced on the quotient $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the cross product, and the projection $\mathbb{B}\to\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is a morphism of Lie algebras with kernel the centre.
+**Proposition.** The bracket induced on the quotient $\mathbb{B}/\mathbb{B}_{C}$ is the cross product, and the projection $\mathbb{B}\to\mathbb{B}/\mathbb{B}_{C}$ is a morphism of Lie algebras with kernel the centre.
 
 *Proof.* The bracket of two cosets is well defined because the bracket vanishes on the centre in each slot; the representatives differ from one another by central elements and the bracket of a central element with anything is zero. The quotient is identified with the vector space of the vector parts, on which the induced bracket is the cross product.
 
-**Remark (the bracket is the direct sum of a trivial centre and the vector part).** The centre and the vector subspace are complementary, $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$, and the bracket never leaves the vector subspace. Hence $\mathfrak{g}$ is the direct sum of Lie algebras
+**Remark (the bracket is the direct sum of a trivial centre and the vector part).** The centre and the vector subspace are complementary, $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$, and the bracket never leaves the vector subspace. Hence $\mathfrak{g}$ is the direct sum of Lie algebras
 
 $$
-\mathfrak{g}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B}),
+\mathfrak{g}=\mathbb{B}_{C}\oplus\mathbb{B}_{V},
 $$
 
 the first an abelian Lie algebra of complex dimension one and the second the cross-product algebra of complex dimension three. **The bracket is a cross product on the vector part, and the scalar direction is a central summand.**
@@ -59,20 +59,20 @@ the first an abelian Lie algebra of complex dimension one and the second the cro
 **Theorem.** The image of the bracket is the vector subspace, and it is the derived algebra of $\mathfrak{g}$:
 
 $$
-[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z,
+[\mathfrak{g},\mathfrak{g}]=\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z,
 $$
 
 of complex dimension three and real dimension six; the bracket restricted to it is again the cross product, so $[\mathfrak{g},\mathfrak{g}]$ is stable under the bracket and is a Lie subalgebra of $\mathfrak{g}$.
 
 *Proof.* Every value of the bracket has scalar part zero, by the scalar-part computation of *Introduction to the Antisymmetric Plain Algebra*, so the image lies in the vector subspace; conversely $\vec e_x\wedge \vec e_y=\vec e_z$, $\vec e_y\wedge \vec e_z=\vec e_x$ and $\vec e_z\wedge \vec e_x=\vec e_y$ generate the vector subspace, so the image and the derived algebra are equal to it. The bracket of two vector elements is a cross product and so a vector element, which is the stability. Computed exactly on the units and on general elements.
 
-**Corollary.** The derived algebra is perfect for the vector part, $[\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B})$, and the derived algebra of the whole algebra is reached in one step, $[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B})$.
+**Corollary.** The derived algebra is perfect for the vector part, $[\mathbb{B}_{V},\mathbb{B}_{V}]=\mathbb{B}_{V}$, and the derived algebra of the whole algebra is reached in one step, $[\mathfrak{g},\mathfrak{g}]=\mathbb{B}_{V}$.
 
 ### The Identification with the Cross Product and with $\mathfrak{sl}(2,\mathbb{C})$
 
 **Theorem.** The derived algebra is isomorphic, as a complex Lie algebra, to the cross-product algebra of $\mathbb{C}^3$ and hence to $\mathfrak{sl}(2,\mathbb{C})$:
 
-$$ \boxed{\; \bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
+$$ \boxed{\; \bigl(\mathbb{B}_{V},\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
 
 of complex dimension three and real dimension six.
 
@@ -82,31 +82,31 @@ of complex dimension three and real dimension six.
 
 ### The Real Forms
 
-**Theorem (the quaternion subspace).** On the real span $\mathbb{H}_{\mathbb{B}}$ of $e_t,\vec e_x,\vec e_y,\vec e_z$, the quaternion subspace, the bracket is real and takes values in the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$. Hence $\mathbb{H}_{\mathbb{B}}$ is a real Lie subalgebra of real dimension four, and
+**Theorem (the quaternion subspace).** On the real span $\mathbb{B}_{H}$ of $e_t,\vec e_x,\vec e_y,\vec e_z$, the quaternion subspace, the bracket is real and takes values in the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$. Hence $\mathbb{B}_{H}$ is a real Lie subalgebra of real dimension four, and
 
 $$
-\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2),
+\mathbb{B}_{H}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2),
 $$
 
 with $\mathbb{R}e_t$ central and $\mathbf{B}_1$ identified with $\mathfrak{su}(2)$.
 
-*Proof.* The bracket of two real quaternions is the cross product of two real vectors and is therefore a real vector, so $\mathbb{H}_{\mathbb{B}}$ is stable and $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]=\mathbf{B}_1$. The real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of the derived algebra, and the scalar direction is central; the sum is direct. Computed on the real basis.
+*Proof.* The bracket of two real quaternions is the cross product of two real vectors and is therefore a real vector, so $\mathbb{B}_{H}$ is stable and $[\mathbb{B}_{H},\mathbb{B}_{H}]=\mathbf{B}_1$. The real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of the derived algebra, and the scalar direction is central; the sum is direct. Computed on the real basis.
 
 **Theorem (the anti-Hermitian subspace).** On the anti-Hermitian subspace
 
 $$
-\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in\mathbb{R}^3\},
+\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in\mathbb{R}^3\},
 $$
 
-of real dimension four, the bracket is real, takes values in $\mathbf{B}_1$ and makes $\mathbb{M}_-$ a real Lie subalgebra,
+of real dimension four, the bracket is real, takes values in $\mathbf{B}_1$ and makes $\mathbb{B}_{\Phi}$ a real Lie subalgebra,
 
 $$
-\mathbb{M}_-\cong\mathfrak{u}(2),
+\mathbb{B}_{\Phi}\cong\mathfrak{u}(2),
 $$
 
-whose derived algebra is $[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak{su}(2)$.
+whose derived algebra is $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathbf{B}_1\cong\mathfrak{su}(2)$.
 
-*Proof.* An element of $\mathbb{M}_-$ has scalar part purely imaginary and vector part real. The bracket sees only the vector parts, so it is the cross product of two real vectors, a real vector in $\mathbf{B}_1$; hence $\mathbb{M}_-$ is stable and its derived algebra is $\mathbf{B}_1$. The real Lie algebra with a one-dimensional central direction and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, the Lie algebra of the skew-Hermitian matrices, by its standard description in *The Unitary Lie Algebra*, §*The Skew-Hermitian Part as a Lie Algebra*; the identification is read there on the skew-Hermitian elements, of which $\mathbb{M}_-$ is the biquaternion case. Computed on the real basis.
+*Proof.* An element of $\mathbb{B}_{\Phi}$ has scalar part purely imaginary and vector part real. The bracket sees only the vector parts, so it is the cross product of two real vectors, a real vector in $\mathbf{B}_1$; hence $\mathbb{B}_{\Phi}$ is stable and its derived algebra is $\mathbf{B}_1$. The real Lie algebra with a one-dimensional central direction and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, the Lie algebra of the skew-Hermitian matrices, by its standard description in *The Unitary Lie Algebra*, §*The Skew-Hermitian Part as a Lie Algebra*; the identification is read there on the skew-Hermitian elements, of which $\mathbb{B}_{\Phi}$ is the biquaternion case. Computed on the real basis.
 
 **Remark.** The two theorems are two real forms of the same complex situation: **the complex derived algebra $\mathfrak{sl}(2,\mathbb{C})$ restricts to $\mathfrak{su}(2)$ on the real vector triple, and the two real subspaces that contain that triple are the quaternion subspace and the anti-Hermitian subspace, carrying the central extension $\mathbb{R}e_t$ and the central extension $\mathbb{R}(ie_t)$ respectively.** The quaternion subspace is $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace is $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$; the two differ only in which central direction the scalar part occupies. The group of the linear maps preserving the form of the skew elements is not read here: it is *The Unitary Lie Algebra*.
 
@@ -116,16 +116,16 @@ whose derived algebra is $[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak
 
 **Theorem.** The ideals of $\mathfrak{g}$ are exactly
 
-$$ \boxed{\; 0,\qquad \mathbb{C}_{\mathbb{B}},\qquad \mathrm{Vect}(\mathbb{B}),\qquad \mathfrak{g} \;}. $$
+$$ \boxed{\; 0,\qquad \mathbb{B}_{C},\qquad \mathbb{B}_{V},\qquad \mathfrak{g} \;}. $$
 
-*Proof.* The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde Q_1\in\mathfrak{a}$. If $\vec Q_1=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\vec Q_1\neq0$, then $[\mathfrak{g},\tilde Q_1]$ is the span of the cross products $\vec X\times\vec Q_1$ over all vectors $\vec X$, which is the plane orthogonal to $\vec Q_1$; and $[\mathfrak{g},[\mathfrak{g},\tilde Q_1]]$ is all of $\mathrm{Vect}(\mathbb{B})$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathrm{Vect}(\mathbb{B})$, and then either it stops at $\mathrm{Vect}(\mathbb{B})$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_t$, by $\vec e_x$ and by $e_t+\vec e_x$, of complex dimensions one, three and four.
+*Proof.* The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde Q_1\in\mathfrak{a}$. If $\vec Q_1=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\vec Q_1\neq0$, then $[\mathfrak{g},\tilde Q_1]$ is the span of the cross products $\vec X\times\vec Q_1$ over all vectors $\vec X$, which is the plane orthogonal to $\vec Q_1$; and $[\mathfrak{g},[\mathfrak{g},\tilde Q_1]]$ is all of $\mathbb{B}_{V}$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathbb{B}_{V}$, and then either it stops at $\mathbb{B}_{V}$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_t$, by $\vec e_x$ and by $e_t+\vec e_x$, of complex dimensions one, three and four.
 
 **Corollary (the quotients).** The quotients of $\mathfrak{g}$ by its ideals are
 
 $$
-\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C}),\qquad
-\mathfrak{g}/\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}_{\mathbb{B}},\qquad
-\mathrm{Vect}(\mathbb{B})/0\cong\mathfrak{sl}(2,\mathbb{C}),
+\mathfrak{g}/\mathbb{B}_{C}\cong\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C}),\qquad
+\mathfrak{g}/\mathbb{B}_{V}\cong\mathbb{B}_{C},\qquad
+\mathbb{B}_{V}/0\cong\mathfrak{sl}(2,\mathbb{C}),
 $$
 
 the first semisimple and the second abelian of complex dimension one.
@@ -135,30 +135,30 @@ the first semisimple and the second abelian of complex dimension one.
 **Theorem.** The derived series of $\mathfrak{g}$ is
 
 $$
-\mathfrak{g}^{(0)}=\mathfrak{g},\qquad \mathfrak{g}^{(1)}=[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B}),\qquad \mathfrak{g}^{(2)}=[\mathfrak{g}^{(1)},\mathfrak{g}^{(1)}]=\mathrm{Vect}(\mathbb{B}),
+\mathfrak{g}^{(0)}=\mathfrak{g},\qquad \mathfrak{g}^{(1)}=[\mathfrak{g},\mathfrak{g}]=\mathbb{B}_{V},\qquad \mathfrak{g}^{(2)}=[\mathfrak{g}^{(1)},\mathfrak{g}^{(1)}]=\mathbb{B}_{V},
 $$
 
-and it is constant from the first step; the lower central series is likewise constant from the second step. Hence $\mathfrak{g}$ is neither solvable nor nilpotent, and it is not semisimple, its radical being the centre $\mathbb{C}_{\mathbb{B}}$.
+and it is constant from the first step; the lower central series is likewise constant from the second step. Hence $\mathfrak{g}$ is neither solvable nor nilpotent, and it is not semisimple, its radical being the centre $\mathbb{B}_{C}$.
 
-*Proof.* The derived algebra is $\mathrm{Vect}(\mathbb{B})$ and it is perfect, so the derived series stabilises there and never reaches zero. The lower central series begins $\mathfrak{g}\supseteq\mathrm{Vect}(\mathbb{B})$ and $[\mathfrak{g},\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B})$ again, so it also stabilises away from zero. The radical is the largest solvable ideal; the only nonzero proper ideals are the centre, abelian and so solvable, and $\mathrm{Vect}(\mathbb{B})$, not solvable; hence the radical is the centre. Computed on the basis.
+*Proof.* The derived algebra is $\mathbb{B}_{V}$ and it is perfect, so the derived series stabilises there and never reaches zero. The lower central series begins $\mathfrak{g}\supseteq\mathbb{B}_{V}$ and $[\mathfrak{g},\mathbb{B}_{V}]=\mathbb{B}_{V}$ again, so it also stabilises away from zero. The radical is the largest solvable ideal; the only nonzero proper ideals are the centre, abelian and so solvable, and $\mathbb{B}_{V}$, not solvable; hence the radical is the centre. Computed on the basis.
 
 **Remark.** **The algebra is reductive and not semisimple.** It is the direct sum of an abelian Lie algebra and a simple one, so its radical is the centre and its quotient by the radical is simple; the Cartan reading of the same fact through the Killing form is *The Killing Form of the Antisymmetric Plain Algebra*, where the form is shown to be degenerate with the centre as its radical.
 
 ### Simplicity
 
-**Theorem.** $\mathfrak{g}$ is not simple, because $\mathbb{C}_{\mathbb{B}}$ is a nonzero proper ideal. The derived algebra $\mathrm{Vect}(\mathbb{B})$ is simple: it has no nonzero proper ideal.
+**Theorem.** $\mathfrak{g}$ is not simple, because $\mathbb{B}_{C}$ is a nonzero proper ideal. The derived algebra $\mathbb{B}_{V}$ is simple: it has no nonzero proper ideal.
 
-*Proof.* The centre is a nonzero proper ideal, so $\mathfrak{g}$ is not simple. In the identification $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, the simplicity of $\mathfrak{sl}(2,\mathbb{C})$ is the first case of the classification of *Structure of Lie Algebras*; it is also read directly from the cross product, since a nonzero ideal of the cross-product algebra contains a plane of directions and the bracket of two directions in that plane generates the third. Computed on the ideal generated by $\vec e_x$, which is the whole vector subspace.
+*Proof.* The centre is a nonzero proper ideal, so $\mathfrak{g}$ is not simple. In the identification $\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C})$, the simplicity of $\mathfrak{sl}(2,\mathbb{C})$ is the first case of the classification of *Structure of Lie Algebras*; it is also read directly from the cross product, since a nonzero ideal of the cross-product algebra contains a plane of directions and the bracket of two directions in that plane generates the third. Computed on the ideal generated by $\vec e_x$, which is the whole vector subspace.
 
 ## The Enveloping Algebra
 
-**Theorem.** By the Poincaré–Birkhoff–Witt theorem, applied to the direct sum $\mathfrak{g}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$, the enveloping algebra of $\mathfrak{g}$ is, as a complex vector space,
+**Theorem.** By the Poincaré–Birkhoff–Witt theorem, applied to the direct sum $\mathfrak{g}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$, the enveloping algebra of $\mathfrak{g}$ is, as a complex vector space,
 
 $$
 \mathrm{U}(\mathfrak{g})\cong\mathbb{C}[z]\otimes_{\mathbb{C}}U\bigl(\mathfrak{sl}(2,\mathbb{C})\bigr),
 $$
 
-where $z$ is the central generator coming from the centre $\mathbb{C}_{\mathbb{B}}$.
+where $z$ is the central generator coming from the centre $\mathbb{B}_{C}$.
 
 *Proof.* The centre is an abelian Lie algebra of complex dimension one, and its enveloping algebra is the polynomial algebra $\mathbb{C}[z]$ in one indeterminate; the vector part has enveloping algebra $\mathrm{U}(\mathfrak{sl}(2,\mathbb{C}))$. The Lie algebra is a direct sum, so the enveloping algebra of the sum is the tensor product of the enveloping algebras, by the Poincaré–Birkhoff–Witt theorem of *Lie Algebras*.
 
@@ -186,15 +186,15 @@ is the numerical form of the count, with $\binom{k+2}{2}$ the degree-$k$ part of
 
 **The derived algebra in one step.** $(e_t+\vec e_x)\wedge \vec e_x=0$ and $\vec e_x\wedge \vec e_y=\vec e_z$: the central direction of $\tilde Q_1=e_t+\vec e_x$ contributes nothing, and the derived algebra is generated by the vector parts alone.
 
-**The quaternion real form.** For $\tilde q=e_t+\vec e_x$ and $\tilde q_1=e_t+\vec e_y$ in $\mathbb{H}_{\mathbb{B}}$ the bracket is $\tilde q\wedge\tilde q_1=\vec e_z$, a real vector element: the quaternion subspace is stable, and its derived algebra is the real vector triple.
+**The quaternion real form.** For $\tilde q=e_t+\vec e_x$ and $\tilde q_1=e_t+\vec e_y$ in $\mathbb{B}_{H}$ the bracket is $\tilde q\wedge\tilde q_1=\vec e_z$, a real vector element: the quaternion subspace is stable, and its derived algebra is the real vector triple.
 
-**The anti-Hermitian real form.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{M}_-$ the bracket is $x\wedge y=\vec e_z$, again a real vector element: the scalar directions $ie_t$ commute with everything and the derived algebra is again the real vector triple, which is the identification $\mathfrak{u}(2)$ with derived algebra $\mathfrak{su}(2)$.
+**The anti-Hermitian real form.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{B}_{\Phi}$ the bracket is $x\wedge y=\vec e_z$, again a real vector element: the scalar directions $ie_t$ commute with everything and the derived algebra is again the real vector triple, which is the identification $\mathfrak{u}(2)$ with derived algebra $\mathfrak{su}(2)$.
 
 **An element with rank-two adjoint.** For $\tilde Q_1=\vec e_x+i\vec e_y$ the adjoint is the complex matrix of rank two on the four-dimensional space, with kernel the complex plane spanned by $e_t$ and $\vec e_x+i\vec e_y$, of complex dimension two; the rank and the kernel are read in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
 ## Summary
 
-The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathfrak{g}$ of dimension four, whose centre is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ of the algebra, of dimension one, and whose derived algebra is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three and real dimension six, stable under the bracket and identified with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$. The algebra is the direct sum $\mathfrak{g}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$, its quotient by the centre is $\mathfrak{sl}(2,\mathbb{C})$, its quotient by the derived algebra is the abelian centre, and its only ideals are $0$, the centre, the derived algebra and the whole algebra. The derived series and the lower central series stabilise at the derived algebra, so the algebra is neither solvable nor nilpotent; it is reductive and not semisimple, with the centre as radical, and its derived algebra is simple. On the real forms the quaternion subspace is $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace is $\mathfrak{u}(2)$, of derived algebra $\mathfrak{su}(2)$. By Poincaré–Birkhoff–Witt the enveloping algebra is $\mathbb{C}[z]\otimes_{\mathbb{C}}\mathrm{U}(\mathfrak{sl}(2,\mathbb{C}))$ as a complex vector space, with associated graded object $\mathbb{C}[z]\otimes\mathbb{C}[w_1,w_2,w_3]$ and degree-$n$ dimension $\binom{n+3}{3}$.
+The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathfrak{g}$ of dimension four, whose centre is the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ of the algebra, of dimension one, and whose derived algebra is the vector subspace $\mathbb{B}_{V}$, of complex dimension three and real dimension six, stable under the bracket and identified with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$. The algebra is the direct sum $\mathfrak{g}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$, its quotient by the centre is $\mathfrak{sl}(2,\mathbb{C})$, its quotient by the derived algebra is the abelian centre, and its only ideals are $0$, the centre, the derived algebra and the whole algebra. The derived series and the lower central series stabilise at the derived algebra, so the algebra is neither solvable nor nilpotent; it is reductive and not semisimple, with the centre as radical, and its derived algebra is simple. On the real forms the quaternion subspace is $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace is $\mathfrak{u}(2)$, of derived algebra $\mathfrak{su}(2)$. By Poincaré–Birkhoff–Witt the enveloping algebra is $\mathbb{C}[z]\otimes_{\mathbb{C}}\mathrm{U}(\mathfrak{sl}(2,\mathbb{C}))$ as a complex vector space, with associated graded object $\mathbb{C}[z]\otimes\mathbb{C}[w_1,w_2,w_3]$ and degree-$n$ dimension $\binom{n+3}{3}$.
 
 ## Summary of Notation
 
@@ -202,13 +202,13 @@ The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathf
 |---|---|
 | $\mathfrak{g}=(\mathbb{B},\wedge)$ | the Lie algebra of the antisymmetric plain algebra |
 | $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | the bracket, the cross product of the vector parts |
-| $\mathfrak{z}(\mathfrak{g})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the Lie algebra, the centre of the algebra |
-| $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ | the splitting of the Lie algebra into the centre and the derived algebra |
-| $[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B})$ | the derived algebra, of complex dimension three and real dimension six |
-| $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$ with $\times$ $\cong\mathfrak{sl}(2,\mathbb{C})$ | the identification of the derived algebra |
-| $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ | the quaternion subspace as a real Lie subalgebra |
-| $\mathbb{M}_-\cong\mathfrak{u}(2)$, $[\mathbb{M}_-,\mathbb{M}_-]\cong\mathfrak{su}(2)$ | the anti-Hermitian subspace and its derived algebra |
-| $0,\ \mathbb{C}_{\mathbb{B}},\ \mathrm{Vect}(\mathbb{B}),\ \mathfrak{g}$ | the ideals of $\mathfrak{g}$ |
+| $\mathfrak{z}(\mathfrak{g})=\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre of the Lie algebra, the centre of the algebra |
+| $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$ | the splitting of the Lie algebra into the centre and the derived algebra |
+| $[\mathfrak{g},\mathfrak{g}]=\mathbb{B}_{V}$ | the derived algebra, of complex dimension three and real dimension six |
+| $\mathbb{B}_{V}\cong\mathbb{C}^3$ with $\times$ $\cong\mathfrak{sl}(2,\mathbb{C})$ | the identification of the derived algebra |
+| $\mathbb{B}_{H}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ | the quaternion subspace as a real Lie subalgebra |
+| $\mathbb{B}_{\Phi}\cong\mathfrak{u}(2)$, $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]\cong\mathfrak{su}(2)$ | the anti-Hermitian subspace and its derived algebra |
+| $0,\ \mathbb{B}_{C},\ \mathbb{B}_{V},\ \mathfrak{g}$ | the ideals of $\mathfrak{g}$ |
 | $\mathrm{U}(\mathfrak{g})\cong\mathbb{C}[z]\otimes_{\mathbb{C}}\mathrm{U}(\mathfrak{sl}(2,\mathbb{C}))$ | the enveloping algebra as a complex vector space |
 | $\operatorname{gr}\mathrm{U}(\mathfrak{g})\cong\mathbb{C}[z,w_1,w_2,w_3]$ | the associated graded object, of degree-$n$ dimension $\binom{n+3}{3}$ |
 

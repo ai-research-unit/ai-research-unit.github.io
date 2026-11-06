@@ -105,7 +105,7 @@ The norm-one group is the compact part of the unit group: every unit is a positi
 
 **Proof.** $\vec u^2 = -e_t$ gives the trigonometric form directly; and $(j\vec u)^2 = j^2\vec u^2 = (+1)(-e_t) = -e_t$, so the same form applies to $j\vec u$. Both elements have unit norm.
 
-The elliptic subgroups are the compact rotations: the group generated is a copy of $SO(2)$ in each case, and the two-sphere of roots of $-e_t$ in $\mathbb{M}_-$, namely the unit imaginary quaternions, parametrises them, as treated in *Split-Biquaternion Roots of Minus One*.
+The elliptic subgroups are the compact rotations: the group generated is a copy of $SO(2)$ in each case, and the two-sphere of roots of $-e_t$ in $\mathbb{B}_{\Phi}$, namely the unit imaginary quaternions, parametrises them, as treated in *Split-Biquaternion Roots of Minus One*.
 
 ### The Hyperbolic Subgroups
 

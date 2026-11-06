@@ -4,7 +4,7 @@
 
 Fisher information is the geometric measure of information. For a family of probability distributions labelled by a parameter, it measures how sharply the parameter can be resolved by sampling the distribution, and the Cramér–Rao bound turns it into a limit on the precision of any estimator. Read as a quadratic form, it is the metric of the family: the statistical distance between two nearby members, and the second derivative of the relative entropy.
 
-This article develops the Fisher information of the informational sector $\mathbb{M}_+$ of the biquaternion algebra, and its relation to the sector's biquaternion norm. The result is a **reciprocity**. The classical Fisher information of the state's own (spectral) two-outcome family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
+This article develops the Fisher information of the informational sector $\mathbb{B}_{\Psi}$ of the biquaternion algebra, and its relation to the sector's biquaternion norm. The result is a **reciprocity**. The classical Fisher information of the state's own (spectral) two-outcome family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
 
 $$
 g_{rr} = \frac{1}{1-|\vec r|^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural}},
@@ -18,7 +18,7 @@ The article proceeds as follows. First the biquaternion norm is set down as a qu
 
 The treatment is **classical**. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{M}_+$ and the material sector is the anti-Hermitian subspace $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; and a state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r|\le 1$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary is $i$ and is central; the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$ and the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; and a state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r|\le 1$.
 
 ## The Biquaternion Norm on States
 
@@ -70,7 +70,7 @@ $$
 \left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2\right) = -4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural}.
 $$
 
-Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}_1-\tilde{Ϛ}_2 = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
+Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{B}_{\Psi}$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}_1-\tilde{Ϛ}_2 = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
 
 This is the quadratic form that the Fisher information will refine: the biquaternion norm of a difference gives a **global** distance between two states, and the Fisher information gives the **local** quadratic form whose square root is the infinitesimal distance. The reciprocity is the statement that the two are inverses rather than multiples of one another, which is why it carries information beyond the geometry.
 
@@ -307,7 +307,7 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |

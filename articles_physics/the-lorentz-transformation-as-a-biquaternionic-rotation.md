@@ -87,9 +87,9 @@ is the Lorentz factor.
 
 The boost biquaternion $\tilde U_{\mathrm b}$ has the following properties.
 
-**1. It lies in the Hermitian subspace $\mathbb{M}_+$.** The scalar part $\cosh(\theta_{\mathrm{rpd}}/2)$ is **real**, and the vector part $i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is **purely imaginary**. So $\tilde U_{\mathrm b} \in \mathbb{M}_+$.
+**1. It lies in the Hermitian subspace $\mathbb{B}_{\Psi}$.** The scalar part $\cosh(\theta_{\mathrm{rpd}}/2)$ is **real**, and the vector part $i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is **purely imaginary**. So $\tilde U_{\mathrm b} \in \mathbb{B}_{\Psi}$.
 
-**2. It is Hermitian.** Since $\tilde U_{\mathrm b} \in \mathbb{M}_+$, its Hermitian conjugate is
+**2. It is Hermitian.** Since $\tilde U_{\mathrm b} \in \mathbb{B}_{\Psi}$, its Hermitian conjugate is
 
 $$
 \tilde U_{\mathrm b}^{*} = \overline{\tilde U_{\mathrm b}^{\natural}} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = \tilde U_{\mathrm b}.
@@ -135,7 +135,7 @@ $$
 
 For a pure boost, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ (Hermitian rotor), so the conjugation reduces to $\tilde{Q}_2 = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$. For a general Lorentz transformation (boost plus spatial rotation), $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is not Hermitian and the formula $\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ must be used.
 
-The same conjugation applies to any four-vector, i.e., to any element of the anti-Hermitian subspace $\mathbb{M}_-$:
+The same conjugation applies to any four-vector, i.e., to any element of the anti-Hermitian subspace $\mathbb{B}_{\Phi}$:
 
 $$
 \tilde{A}_2 = \tilde U_{\mathrm b}\,\tilde{A}\,\tilde U_{\mathrm b}^{*}, \qquad \tilde{V}_2 = \tilde U_{\mathrm b}\,\tilde{V}\,\tilde U_{\mathrm b}^{*}, \qquad \tilde{P}_2 = \tilde U_{\mathrm b}\,\tilde{P}\,\tilde U_{\mathrm b}^{*}, \qquad \tilde{J}_2 = \tilde U_{\mathrm b}\,\tilde{J}\,\tilde U_{\mathrm b}^{*}.
@@ -143,7 +143,7 @@ $$
 
 ### Properties of the Conjugation
 
-**1. It preserves the subspace $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ and $\tilde U_{\mathrm b}$ is a unit-norm biquaternion, then $\tilde U_{\mathrm b}\tilde{A}\tilde U_{\mathrm b}^{*} \in \mathbb{M}_-$.
+**1. It preserves the subspace $\mathbb{B}_{\Phi}$.** If $\tilde{A} \in \mathbb{B}_{\Phi}$ and $\tilde U_{\mathrm b}$ is a unit-norm biquaternion, then $\tilde U_{\mathrm b}\tilde{A}\tilde U_{\mathrm b}^{*} \in \mathbb{B}_{\Phi}$.
 
 **2. It preserves the biquaternion norm.** Since $\tilde U_{\mathrm b}$ has unit norm, we have
 
@@ -180,7 +180,7 @@ $$
 = \pm\,\tilde U_{\mathrm{lor}}\tilde{Q}_1\tilde U_{\mathrm{lor}}{}^{*},
 $$
 
-so $Ξ_{\tilde U_{\mathrm{lor}}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself.
+so $Ξ_{\tilde U_{\mathrm{lor}}}$ maps $\mathbb{B}_{\Phi}$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{B}_{\Psi}$ to itself.
 
 **It is not an algebra automorphism.** For a product,
 
@@ -315,7 +315,7 @@ which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(
 
 **Pure boosts** are the **Hermitian** elements of $SL(2,\mathbb{C})$: those satisfying $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$. They do **not** form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.
 
-**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
+**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{B}_{H}$, the real quaternion subalgebra), satisfying $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
 
 The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.
 
@@ -450,9 +450,9 @@ $$
 \tilde U_{\mathrm b} = \exp\!\left(\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}.
 $$
 
-For a pure boost, $\tilde U_{\mathrm b} \in \mathbb{M}_+$ (Hermitian, unit norm). The rapidity $\theta_{\mathrm{rpd}}$ is related to the velocity $\vec v_b$ by $\tanh\theta_{\mathrm{rpd}} = v_b/c$.
+For a pure boost, $\tilde U_{\mathrm b} \in \mathbb{B}_{\Psi}$ (Hermitian, unit norm). The rapidity $\theta_{\mathrm{rpd}}$ is related to the velocity $\vec v_b$ by $\tanh\theta_{\mathrm{rpd}} = v_b/c$.
 
-The **four-velocity biquaternion** $\tilde{V} = \gamma(ic\,e_t + \vec v)$, which lives in $\mathbb{M}_-$, is related to the boost biquaternion by
+The **four-velocity biquaternion** $\tilde{V} = \gamma(ic\,e_t + \vec v)$, which lives in $\mathbb{B}_{\Phi}$, is related to the boost biquaternion by
 
 $$
 \tilde U_{\mathrm b} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}
@@ -462,7 +462,7 @@ the square root being multivalued by sign, with the physical branch selected by 
 
 The rotation is **complex** in the sense that the rotation angle (the rapidity) is imaginary in the $i c r'_t$ convention. The Euclidean character of the metric is only apparent: the real slice on which the Lorentz transformations act is a complex subspace of $\mathbb{C}^4$, not a real Euclidean space. The Lorentz group $SO(1,3)$ is the subgroup of the complex rotation group $SO(4,\mathbb{C})$ that preserves this slice.
 
-The **same rotor conjugation applies to all four-vectors** in the anti-Hermitian subspace $\mathbb{M}_-$: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current. The unit-norm biquaternions form the group $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$.
+The **same rotor conjugation applies to all four-vectors** in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current. The unit-norm biquaternions form the group $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$.
 
 The transformation itself is fixed by experiment, not by the algebra: aberration, the Fizeau drag and the Michelson–Morley null result select the group $SO^+(1,3)$, and the biquaternion form is a faithful reformulation of that group, so it reproduces those experiments by construction rather than by prediction.
 
@@ -471,9 +471,9 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace (real scalar, imaginary vector) |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (imaginary scalar, real vector) |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (home of the spatial rotation rotors) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (real scalar, imaginary vector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (imaginary scalar, real vector) |
+| $\mathbb{B}_{H}$ | Quaternion subspace (home of the spatial rotation rotors) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\beta = v/c$ | Velocity ratio of a frame or particle |

@@ -29,7 +29,7 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 
 **Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_t\tilde Q=0$, so $Q_t=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi\rangle_{\natural}=0$ and is non-zero.
 
-**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=\vec e_x+i\vec e_y$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
+**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathbb{B}_{V}$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=\vec e_x+i\vec e_y$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
 ## The Dynamics on the Cone
 
@@ -49,13 +49,13 @@ so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\
 
 ## The Singular Julia Set
 
-**Definition.** Let $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ be the critical set of $F_{\tilde Q_2}$, the union of the cone and the vector subspace (*The Biquaternion Quadratic Map and Its Julia Sets*). The **singular Julia set** of the parameter is
+**Definition.** Let $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ be the critical set of $F_{\tilde Q_2}$, the union of the cone and the vector subspace (*The Biquaternion Quadratic Map and Its Julia Sets*). The **singular Julia set** of the parameter is
 
 $$
 \Sigma_{\tilde Q_2}=J_{\tilde Q_2}\cap\Sigma(\mathbb{B}),
 $$
 
-and its two parts are the **zero-divisor part** $J_{\tilde Q_2}\cap\mathscr{Z}$ and the **pure part** $J_{\tilde Q_2}\cap\mathrm{Vect}(\mathbb{B})$.
+and its two parts are the **zero-divisor part** $J_{\tilde Q_2}\cap\mathscr{Z}$ and the **pure part** $J_{\tilde Q_2}\cap\mathbb{B}_{V}$.
 
 The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde Q_2}$ is singular, so the local dynamics is not locally invertible and the Julia set there is not a complex manifold; every quantitative statement about the fractal — the escape radius, the Green's function, the dimension — needs a separate argument on the singular set.
 
@@ -105,8 +105,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 |---|---|
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\mathscr{Z}=\{\langle\tilde Q\rangle_{\natural}=0,\ \tilde Q\neq0\}$ | the zero-divisor cone |
-| $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector part, the pure subspace |
-| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde Q_2}$ |
+| $\mathbb{B}_{V}=\{Q_t=0\}$ | the vector part, the pure subspace |
+| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ | the critical set of $F_{\tilde Q_2}$ |
 | $\Sigma_{\tilde Q_2}=J_{\tilde Q_2}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tau=2Q_t$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |

@@ -20,7 +20,7 @@ This exercise also serves to test the parent. The direction of the boost biquate
 
 **Statement.** For $A \to 1+2$ with the parent at rest, derive the daughter energies $E_1^*, E_2^*$, the common momentum magnitude $p^*$, the speeds $v_a^*$, and the released energy $Q$. Show that the decay is allowed exactly when $M \ge m_1 + m_2$.
 
-**Solution.** The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^{\rm CM} = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
+**Solution.** The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^{\rm CM} = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{B}_{\Phi}$, into
 $$
 E_1^* + E_2^* = Mc^2, \qquad \vec p_1^* + \vec p_2^* = 0 .
 $$
@@ -96,7 +96,7 @@ $$
 = \frac{E}{Mc^2}e_t + i\frac{\vec P}{Mc}
 = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u_V,
 $$
-with $\cosh\theta_{\mathrm{rpd}} = E/(Mc^2) = \Gamma$, $\sinh\theta_{\mathrm{rpd}} = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\theta_{\mathrm{rpd}} = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
+with $\cosh\theta_{\mathrm{rpd}} = E/(Mc^2) = \Gamma$, $\sinh\theta_{\mathrm{rpd}} = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\theta_{\mathrm{rpd}} = V/c$. This is an element of $\mathbb{B}_{\Psi}$ of unit norm, since $\cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
 $$
 \tilde U_{\rm CM} = \sqrt{-\frac{i}{Mc}\tilde{P}^{\natural}_A}
 = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_V,
@@ -170,7 +170,7 @@ and with $\langle\tilde{P}_i\rangle_{\natural} = -m_i^2c^2$ this gives
 $$
 M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle \tilde{P}_i, \tilde{P}_j\rangle .
 $$
-This is the parent's definition of the invariant mass of a pair, applied to a partial sum of three four-momenta. It requires only that $\mathbb{M}_-$ is a real vector space closed under addition and that $\langle\cdot\rangle_{\natural}$ be a quadratic form; no new primitive is needed. (The parent defines the pair mass for a two-body total; the same definition applied to a subset of a three-body system is the natural extension used in Dalitz-plot kinematics.)
+This is the parent's definition of the invariant mass of a pair, applied to a partial sum of three four-momenta. It requires only that $\mathbb{B}_{\Phi}$ is a real vector space closed under addition and that $\langle\cdot\rangle_{\natural}$ be a quadratic form; no new primitive is needed. (The parent defines the pair mass for a two-body total; the same definition applied to a subset of a three-body system is the natural extension used in Dalitz-plot kinematics.)
 
 **Solution (b).** In the parent rest frame the three momenta sum to zero, $\vec p_1^* + \vec p_2^* + \vec p_3^* = 0$, so with $\tilde{P}_{12} = \tilde{P}_1 + \tilde{P}_2$,
 $$
@@ -411,13 +411,13 @@ We have worked the relativistic kinematics of a two-body decay as an application
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\langle\tilde Q_2,\tilde{Q}_1\rangle = \mathrm{Sc}(\tilde Q_2\tilde{Q}_1^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\langle\tilde Q_2,\tilde{Q}_1\rangle = \mathrm{Sc}(\tilde Q_2\tilde{Q}_1^{\natural})$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ |
 | $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)}$ | Boost biquaternion, lab to COM frame |
 | $\tilde U^{\natural}_{\rm CM}$ | Quaternion conjugate, COM to lab |

@@ -29,11 +29,11 @@ $$
 and on the material sector, where $Q_t=i c r'_t$, the two gradients and the norm read
 
 $$
-\tilde\nabla\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+D_3,
+\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}+D_3,
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb M_-}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-D_3,
+\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
-\Box\big|_{\mathbb M_-}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
+\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial q_k}.
 $$
@@ -108,7 +108,7 @@ $$
 
 The odd part $O$ is what exchanges the $+1$ and $-1$ parts of the mass grading, and hence what makes the positive- and negative-frequency sectors talk to each other. The FW transformation is the $*$-unitary transformation that removes $O$ order by order.
 
-It is important to say at once which split this is, because several $\mathbb{Z}/2$'s are in play. Conjugation by the mass grading defines the **frame grading**, the large/small split of the Foldy–Wouthuysen transformation; it is a frame-dependent split and not one of the algebra's own gradings. It is **not** the split by the conjugation $\natural$: the kinetic operator $O$ is frame-odd and yet Hermitian, hence in $\mathbb{M}_+$, so "odd" is not another word for "anti-Hermitian". The parity of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form* is a third thing again.
+It is important to say at once which split this is, because several $\mathbb{Z}/2$'s are in play. Conjugation by the mass grading defines the **frame grading**, the large/small split of the Foldy–Wouthuysen transformation; it is a frame-dependent split and not one of the algebra's own gradings. It is **not** the split by the conjugation $\natural$: the kinetic operator $O$ is frame-odd and yet Hermitian, hence in $\mathbb{B}_{\Psi}$, so "odd" is not another word for "anti-Hermitian". The parity of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form* is a third thing again.
 
 Nor is the frame grading the subscript. The chirality is $\Gamma F=-iF\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*), and it anticommutes with $\beta$. The parent article states the value as a label and computes no operator (*The Dirac Equation in Biquaternionic Form*, §*The Two Values of the Subscript*). The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, the difference of the two central idempotents, is a different object and defines a different split, and must not be read as this one (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*). The chirality is a right multiplication, an element of the algebra and not an array. The mass term is even under the frame grading, and it exchanges the $L$ part and the $R$ part: a reader who identifies "odd" with "value-changing" will misread the transformation the whole way through.
 
@@ -467,7 +467,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_\pm$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{M}_-$ is the material sector |
+| $\mathbb{B}_{\Psi,\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector |

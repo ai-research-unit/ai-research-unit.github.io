@@ -17,7 +17,7 @@ $$
 \varepsilon=(1,-1,-1,-1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 
@@ -50,7 +50,7 @@ Considered as a classical label, the phase is a continuum: the vacuum family is 
 
 Two facts of the framework make the actual situation different, and they are the reason the title's word needs the qualification this section supplies.
 
-**The phase is not an observable.** The action is invariant under $\xi\mapsto \exp(i\alpha)\xi$, and the action of the central phase on a state of the informational sector is trivial. The framework's sharpest statement of this is the one made in the gauge-orbit companion: a central phase acts on $\tilde{Ϛ}\in\mathbb{M}_+$ by $\tilde{Ϛ}\mapsto\lambda\tilde{Ϛ}\lambda^\dagger = |\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$, so it is not merely that no measurement distinguishes the phases — no Hermitian observable is conjugate to the phase at all. The phase is a **non-variable** of the informational sector.
+**The phase is not an observable.** The action is invariant under $\xi\mapsto \exp(i\alpha)\xi$, and the action of the central phase on a state of the informational sector is trivial. The framework's sharpest statement of this is the one made in the gauge-orbit companion: a central phase acts on $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ by $\tilde{Ϛ}\mapsto\lambda\tilde{Ϛ}\lambda^\dagger = |\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$, so it is not merely that no measurement distinguishes the phases — no Hermitian observable is conjugate to the phase at all. The phase is a **non-variable** of the informational sector.
 
 **The gauge-invariant content of the vacuum is a single number.** Because $\xi$ is central, the product $\tilde{Ξ}\tilde{Ξ}^{*} = |\xi|^2 e_t$ is the entire gauge-invariant content of the vacuum, and it is independent of the phase. This was checked for the generic complex value $\xi = 0.8 - 0.35i$ under phase rotations $\exp(i\alpha)$ for $\alpha = 0.3, 1.7, -2.2$: $\tilde{Ξ}\tilde{Ξ}^{*}$ was unchanged to within $3\times10^{-16}$ in every case. The circle of vacua collapses, for every observable, to the single number $|\xi| = v/\sqrt{2}$.
 
@@ -162,7 +162,7 @@ $$
 = -\,\frac{ϙ^2v^2}{2\hbar^2}\,\mathrm{Sc}\!\left(\tilde{A}^{\natural}\tilde{A}\right),
 $$
 
-the last step using the material-sector reality condition $\tilde{A}\in\mathbb{M}_-$, which makes $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = A_0^2+\vec A^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides would differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ gives the mass
+the last step using the material-sector reality condition $\tilde{A}\in\mathbb{B}_{\Phi}$, which makes $\sum_{\mu,\nu}g_{\mu\nu}A_\mu^*A_\nu = A_0^2+\vec A^2 = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ — the two sides would differ for a connection with four unconstrained complex components, so the reality condition is what lets the covariant-derivative form and the biquaternion form be identified. Comparing with the Proca normalization $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ gives the mass
 
 $$
 \boxed{\;M_A^2 = \frac{ϙ^2v^2}{\hbar^2},
@@ -170,7 +170,7 @@ $$
 M_A = \frac{ϙv}{\hbar}\;}.
 $$
 
-This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = ϙ/\hbar = 0.7$ and $v = 1.3$. Directly from $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\langle\tilde{A}\rangle_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = ϙ^2v^2/\hbar^2$, with $ϙv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
+This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{B}_{\Phi}$ requires — at the generic parameter values $\kappa = ϙ/\hbar = 0.7$ and $v = 1.3$. Directly from $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\langle\tilde{A}\rangle_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = ϙ^2v^2/\hbar^2$, with $ϙv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
 
 The informational interpretation is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
 
@@ -184,7 +184,7 @@ $$
 \boxed{\;S\bigl(U\tilde{Ϛ}_1\,U^\dagger \,\big\|\, U\tilde{Ϛ}_2\,U^\dagger\bigr) = S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)\;},
 $$
 
-which was checked on explicit superpositions: with the Bloch vectors $\vec r = (0.41,-0.52,0.23)$ and $\vec s = (-0.33,0.61,0.47)$ and a rotation by $2.0$ radians about the axis $(0.55,0.31,-0.77)$ — a generic $*$-unitary of the informational sector; the central phase itself acts on $\mathbb{M}_+$ by $|\lambda|^2 = 1$, so for the re-encoding proper the invariance is immediate — the relative entropy took the same value $1.375407856007$ before and after the rotation, agreeing to machine precision. So no distinguishability between states is destroyed by the re-encoding in which the Goldstone mode is absorbed. The relocation is information-preserving on the full description.
+which was checked on explicit superpositions: with the Bloch vectors $\vec r = (0.41,-0.52,0.23)$ and $\vec s = (-0.33,0.61,0.47)$ and a rotation by $2.0$ radians about the axis $(0.55,0.31,-0.77)$ — a generic $*$-unitary of the informational sector; the central phase itself acts on $\mathbb{B}_{\Psi}$ by $|\lambda|^2 = 1$, so for the re-encoding proper the invariance is immediate — the relative entropy took the same value $1.375407856007$ before and after the rotation, agreeing to machine precision. So no distinguishability between states is destroyed by the re-encoding in which the Goldstone mode is absorbed. The relocation is information-preserving on the full description.
 
 ### Many-to-One on the Observable Description
 
@@ -272,15 +272,15 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material and informational sectors |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the complex scalar subspace |
-| $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material and informational sectors |
+| $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the complex scalar subspace |
+| $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar |
 | $\xi^*\xi = \mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}] = |\xi|^2$ | Gauge-invariant content of the scalar |
 | $V = \beta(\xi^*\xi - v^2/2)^2$ | Potential; minimum the circle $|\xi| = v/\sqrt{2}$ |
 | $v$ | Vacuum expectation value; the gauge-invariant record of the breaking |
 | $h,\ \vartheta_{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
-| $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
+| $\tilde{A}\in\mathbb{B}_{\Phi}$, $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
 | $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
 | $\Gamma = -(\hbar/ϙv)\vartheta_{\mathrm{fld}}$ | Gauge function of the unitary gauge |

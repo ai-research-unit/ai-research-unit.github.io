@@ -85,7 +85,7 @@ $$
 \boxed{\;\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S}\;},
 $$
 
-because a left ideal containing a unit is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{M}_+$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{M}_-$, and $ie_t$ is in the anti-quaternion subspace.
+because a left ideal containing a unit is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{B}_{\Psi}$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{B}_{\Phi}$, and $ie_t$ is in the anti-quaternion subspace.
 
 **Theorem (the annihilators of the zero divisors).** Let $\tilde Q_1 \neq 0$ be a zero divisor of $\mathbb{B}$, so that $Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2 = 0$. Write $I_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_2\tilde Q_1 = 0$ and $J_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_1\tilde Q_2 = 0$. Then $I_{\tilde Q_1}$ is a minimal left ideal, $J_{\tilde Q_1}$ is a minimal right ideal, and each has real dimension $4$.
 
@@ -97,20 +97,20 @@ $$
 
 **Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde Q_3\vec P)\vec P = \tilde Q_3\vec P^2 = 0$ for every $\tilde Q_3$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde Q_3)\vec P = 0$ on the left instead.
 
-The subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by *Subspaces and Decompositions*; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
+The subspaces that carry a zero divisor are the vector subspace, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, by *Subspaces and Decompositions*; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
 
 | subspace | left ideal generated | units in it | minimal one-sided ideals determined |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\mathbb{B}$ | all $Ae_t$ with $A \neq 0$ | none |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B}$ | $\vec e_x$ | $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$, $\vec P$ a nonzero nilpotent |
-| $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B}$ | $e_t$ | none |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B}$ | $ie_t$ | none |
-| $\mathbb{M}_+$ | $\mathbb{B}$ | $e_t$ | $\mathbb{B}\tilde\Pi$, $I_{\tilde\Pi} = \mathbb{B}(e_t-\tilde\Pi)$ and their right-hand twins, $\tilde\Pi$ a Hermitian idempotent |
-| $\mathbb{M}_-$ | $\mathbb{B}$ | $\vec e_x$ | the same four, unchanged |
+| $\mathbb{B}_{C}$ | $\mathbb{B}$ | all $Ae_t$ with $A \neq 0$ | none |
+| $\mathbb{B}_{V}$ | $\mathbb{B}$ | $\vec e_x$ | $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$, $\vec P$ a nonzero nilpotent |
+| $\mathbb{B}_{H}$ | $\mathbb{B}$ | $e_t$ | none |
+| $\mathbb{B}_{iH}$ | $\mathbb{B}$ | $ie_t$ | none |
+| $\mathbb{B}_{\Psi}$ | $\mathbb{B}$ | $e_t$ | $\mathbb{B}\tilde\Pi$, $I_{\tilde\Pi} = \mathbb{B}(e_t-\tilde\Pi)$ and their right-hand twins, $\tilde\Pi$ a Hermitian idempotent |
+| $\mathbb{B}_{\Phi}$ | $\mathbb{B}$ | $\vec e_x$ | the same four, unchanged |
 
-Every one of the minimal ideals determined by the remarkable subspaces meets the remarkable subspaces in the same way, two real dimensions in the vector subspace, one in $\mathbb{M}_+$ and one in $\mathbb{M}_-$:
+Every one of the minimal ideals determined by the remarkable subspaces meets the remarkable subspaces in the same way, two real dimensions in the vector subspace, one in $\mathbb{B}_{\Psi}$ and one in $\mathbb{B}_{\Phi}$:
 
-| minimal ideal | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| minimal ideal | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|---|---|---|---|
 | each $\mathbb{B}\vec P$, $\vec P\mathbb{B}$, $\mathbb{B}\tilde\Pi$, $\mathbb{B}\tilde\Pi'$, $\tilde\Pi\mathbb{B}$, $\tilde\Pi'\mathbb{B}$ | $0$ | $2$ | $0$ | $0$ | $1$ | $1$ |
 

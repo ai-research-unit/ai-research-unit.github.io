@@ -135,7 +135,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}=\rho\,e^{i\theta}=\rho\cos\theta+\rho\sin\theta\,i ,
 $$
 
-whose scalar part is $\rho\cos\theta$ and whose central-imaginary part is $\rho\sin\theta$; the density is the modulus $\rho$, and $\theta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb M_-$ of the Maxwell article, and the minimal-coupling article records that it is not a product of two elements of $\mathbb B$: it needs one factor the even alphabet does not supply, written there as the right multiplication by $i\vec e_x$. The Dirac–Hestenes current $J=\tilde{Ξ}_{\mathrm{sp}} v_0\tilde{Ξ}_{\mathrm{sp}}$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.
+whose scalar part is $\rho\cos\theta$ and whose central-imaginary part is $\rho\sin\theta$; the density is the modulus $\rho$, and $\theta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb{B}_{\Phi}$ of the Maxwell article, and the minimal-coupling article records that it is not a product of two elements of $\mathbb B$: it needs one factor the even alphabet does not supply, written there as the right multiplication by $i\vec e_x$. The Dirac–Hestenes current $J=\tilde{Ξ}_{\mathrm{sp}} v_0\tilde{Ξ}_{\mathrm{sp}}$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.
 
 ## The Two Equations of the Corpus
 

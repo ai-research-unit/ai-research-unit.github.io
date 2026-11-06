@@ -93,7 +93,7 @@ with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: th
 **The two rules are one right multiplication.** The action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$, by the element
 
 $$
-b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\in\; \mathbb{M}_+ ,
+b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\in\; \mathbb{B}_{\Psi} ,
 $$
 
 a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
@@ -131,13 +131,13 @@ which has solutions for special charge ratios (for instance $(n_L,n_R)=(1,2)$ re
 
 The reason the bound composite is unavailable is structural, and the QCD research agenda of this series states it precisely. Three of its established findings carry over unchanged.
 
-**No colour group.** The compact algebra available inside $\mathbb{B}$ under the commutator is at most $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$, of real dimension four: $\mathbb{M}_-$ decomposes as a Lie algebra into $\mathbb{R}(ie_t)\oplus\mathrm{su}(2)$. No $\mathrm{SU}(3)$ subalgebra is available, and the three quaternion units $\vec e_x,\vec e_y,\vec e_z$ span the *adjoint* of $\mathrm{SU}(2)$, not a complex triplet. Counting three basis vectors is not constructing colour.
+**No colour group.** The compact algebra available inside $\mathbb{B}$ under the commutator is at most $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$, of real dimension four: $\mathbb{B}_{\Phi}$ decomposes as a Lie algebra into $\mathbb{R}(ie_t)\oplus\mathrm{su}(2)$. No $\mathrm{SU}(3)$ subalgebra is available, and the three quaternion units $\vec e_x,\vec e_y,\vec e_z$ span the *adjoint* of $\mathrm{SU}(2)$, not a complex triplet. Counting three basis vectors is not constructing colour.
 
 **No three-dimensional carrier.** The algebra $\mathbb{B}$ is simple, so every carrier is a sum of copies of the unique simple one, of complex dimension two: every carrier has complex dimension $2k$. A colour triplet — a three-complex-dimensional internal space for a quark — is not a carrier of $\mathbb{B}$. The ceiling is a statement about the carrier, not about the arithmetic.
 
 **No confinement.** The framework has no non-perturbative formulation, no Wilson loop, no gauge-invariant regulator, no gauge-fixing principle, and no mass gap; the agenda records confinement as an obstacle with **no mechanism proposed**, not merely an unproven one.
 
-Consequently the neutron's defining structural facts — baryon number one, three constituent quarks, a colour singlet, a bound state with a mass gap above it — lie outside the framework. The framework cannot say what the neutron is made of, and it cannot explain why a colourless composite of charged constituents exists at all. Its own closest apparatus is the zero-divisor cone of $\mathbb{M}_-$ and the non-abelian curvature it does contain, neither of which is a confinement mechanism. On the fermion-number question the framework is also not equipped: the parent's linear mass conserves the vector $\mathrm{U}(1)$, while the separate Majorana-type coupling built on the real structure $\flat$ reduces a continuous fermion-number phase to a sign on that interpretation; neither supplies the quark model's baryon number as a conserved $\mathrm{U}(1)$.
+Consequently the neutron's defining structural facts — baryon number one, three constituent quarks, a colour singlet, a bound state with a mass gap above it — lie outside the framework. The framework cannot say what the neutron is made of, and it cannot explain why a colourless composite of charged constituents exists at all. Its own closest apparatus is the zero-divisor cone of $\mathbb{B}_{\Phi}$ and the non-abelian curvature it does contain, neither of which is a confinement mechanism. On the fermion-number question the framework is also not equipped: the parent's linear mass conserves the vector $\mathrm{U}(1)$, while the separate Majorana-type coupling built on the real structure $\flat$ reduces a continuous fermion-number phase to a sign on that interpretation; neither supplies the quark model's baryon number as a conserved $\mathrm{U}(1)$.
 
 The composite character is thus not a gap of the article; it is the framework's boundary. What is left, for the neutron, is a representation of a structureless spin-$\tfrac12$ field with two inserted parameters and a neutrality constraint — and, as the next section shows, even the most basic measured consequence of compositeness falls outside it.
 
@@ -255,7 +255,7 @@ The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquat
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
-The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)\in\mathbb{M}_+$. The neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
+The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)\in\mathbb{B}_{\Psi}$. The neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
 
 The framework does have a Fock space, so a neutral many-particle **state** is not ruled out in principle. But no neutral **bound composite** is expressible: there is no colour, no confinement, no binding, and no selection rule fixing three constituents. The neutrality is therefore stateable as a constraint on unfixed charges but not derived, and manufacturing it from the standard quark charges would be an import.
 
@@ -268,18 +268,18 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, simple, of complex dimension four |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient, the Dirac operator, acting on the left |
 | $\nabla$, $Q_t=i c r'_t$ | Spatial gradient; imaginary time of the material sector |
 | $\Box$ | d'Alembertian, the quaternionic norm of the gradient |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
-| $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{M}_+$; the charge is the right multiplication by $b$ |
+| $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
 | $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}_{\mathrm{sp}} b$ | Covariant derivative of the chiral charge; the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}} b$ |
 | $\tilde{Ξ}_{\mathrm{sp}} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\nabla)F-m_n i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
-| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
+| $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |
@@ -294,7 +294,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 - [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html) — the charged partner, the isospin section from which the Gürsey construction above is quoted, and the single-field equation this article shares.
 - [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html) — the many-particle space (the antisymmetric tensor algebra of the one-particle space) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
 - [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact gauge algebra inside $\mathbb{M}_-$ and the non-abelian machinery that stops short of colour.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the compact gauge algebra inside $\mathbb{B}_{\Phi}$ and the non-abelian machinery that stops short of colour.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector decomposition, the four-vectors, and the $i c r'_t$ convention.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector, the rotor action, and the trace formula.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.

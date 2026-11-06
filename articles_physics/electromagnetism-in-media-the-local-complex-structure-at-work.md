@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{M}_-$ is coordinatised by $(i c r'_t,\,r_x,\,r_y,\,r_z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
+Maxwell's equations in a material medium are usually introduced as a small modification of the vacuum equations: replace $\epsilon_0$ and $\mu_0$ by the permittivity $\epsilon$ and the permeability $\mu$ of the medium, and read off the consequences. In the biquaternionic formulation the emphasis is reversed. The medium is the general case and the vacuum is its limit, because the complex structure of the algebra is **local**. The material subspace $\mathbb{B}_{\Phi}$ is coordinatised by $(i c r'_t,\,r_x,\,r_y,\,r_z)$, and the factor $i$ that marks the temporal direction is paired with the **speed of light in the medium**,
 $$
 c=\frac{1}{\sqrt{\epsilon\mu}},
 $$
@@ -66,7 +66,7 @@ $$
 $$
 the d'Alembertian of a medium with speed $c$. This is the vacuum value with $c$ in place of $c_0$.
 
-The medium enters this operator in exactly one way: through $c$ in $\partial/\partial R_t$. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ — is fixed and medium-independent. What the medium changes is the **embedding of physical spacetime into the algebra**. The material time coordinate is $i c r'_t=i\,c\,r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
+The medium enters this operator in exactly one way: through $c$ in $\partial/\partial R_t$. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ — is fixed and medium-independent. What the medium changes is the **embedding of physical spacetime into the algebra**. The material time coordinate is $i c r'_t=i\,c\,r'_t$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
 Because $c>0$ is real, the medium rescales the imaginary axis but does not rotate it. The phase of the complex structure is the fixed $i$; its scale is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local scale factor of the complex structure, and the constant vacuum value $c_0$ is the special case in which that scale does not vary. The classical $i c r'_t$ convention of Minkowski space is the vacuum limit of the local structure.
 
@@ -103,9 +103,9 @@ exactly as in the parent article.
 **The two halves.** Because the electric and magnetic fields are real, the two terms of $\tilde{F}$ land in the two complementary subspaces:
 $$
 \tilde{F}
-=\underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{M}_+}
+=\underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{B}_{\Psi}}
 \;+\;
-\underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{M}_-}.
+\underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{B}_{\Phi}}.
 $$
 The electric half is a pure imaginary vector and is therefore Hermitian; the magnetic half is a pure real vector and is therefore anti-Hermitian. Equivalently,
 $$
@@ -113,9 +113,9 @@ $$
 \qquad
 \tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right)=-\sqrt{\mu}\,\vec H,
 $$
-so the projection of $\tilde{F}$ onto the informational sector $\mathbb{M}_+$ measures the electric field, and its projection onto the material sector $\mathbb{M}_-$ measures the magnetic field.
+so the projection of $\tilde{F}$ onto the informational sector $\mathbb{B}_{\Psi}$ measures the electric field, and its projection onto the material sector $\mathbb{B}_{\Phi}$ measures the magnetic field.
 
-The split into the two sectors is structural and does not depend on the medium: $i\sqrt{\epsilon}\,\vec E$ lies in $\mathbb{M}_+$ and $-\sqrt{\mu}\,\vec H$ lies in $\mathbb{M}_-$ for every real $\epsilon,\mu>0$. What the medium fixes is the **relative weight** of the two halves, through the ratio $\sqrt{\mu}/\sqrt{\epsilon}=Z$. This is one concrete sense in which the local complex structure is at work: the field strength is not a vector of a single sector but the sum of a Hermitian and an anti-Hermitian piece, and the medium sets their balance.
+The split into the two sectors is structural and does not depend on the medium: $i\sqrt{\epsilon}\,\vec E$ lies in $\mathbb{B}_{\Psi}$ and $-\sqrt{\mu}\,\vec H$ lies in $\mathbb{B}_{\Phi}$ for every real $\epsilon,\mu>0$. What the medium fixes is the **relative weight** of the two halves, through the ratio $\sqrt{\mu}/\sqrt{\epsilon}=Z$. This is one concrete sense in which the local complex structure is at work: the field strength is not a vector of a single sector but the sum of a Hermitian and an anti-Hermitian piece, and the medium sets their balance.
 
 The energy is carried by the Hermitian form. In the parent article,
 $$
@@ -223,7 +223,7 @@ because $\partial/\partial r'_t\to-i\omega$ in the $\exp(-i\omega r'_t)$ convent
 
 Two caveats delimit what the framework as written supports.
 
-First, the normalisation $\sqrt{\epsilon(\omega)}$, $\sqrt{\mu(\omega)}$ is real only in a transparent frequency window, away from absorption lines. As long as it is real, the split of $\tilde{F}$ into a Hermitian electric half and an anti-Hermitian magnetic half survives at each frequency, and the invariants are defined at each frequency with $c(\omega)$. Near a resonance, however, $\epsilon$ and $\mu$ become complex, and with them $\sqrt{\epsilon}$ and $\sqrt{\mu}$. The electric and magnetic contributions are then no longer purely imaginary and purely real, the two halves of $\tilde{F}$ no longer lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ separately, and $\tilde{F}$ becomes fully complex. The complexified extension of the parent article, in which the coefficients of $\tilde{F}$ are unrestricted complex numbers, is the natural arena for that case; but the identification of the physical field with a particular real slice is a further choice which the framework as written does not fix. The absorbing case is therefore not pursued here.
+First, the normalisation $\sqrt{\epsilon(\omega)}$, $\sqrt{\mu(\omega)}$ is real only in a transparent frequency window, away from absorption lines. As long as it is real, the split of $\tilde{F}$ into a Hermitian electric half and an anti-Hermitian magnetic half survives at each frequency, and the invariants are defined at each frequency with $c(\omega)$. Near a resonance, however, $\epsilon$ and $\mu$ become complex, and with them $\sqrt{\epsilon}$ and $\sqrt{\mu}$. The electric and magnetic contributions are then no longer purely imaginary and purely real, the two halves of $\tilde{F}$ no longer lie in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ separately, and $\tilde{F}$ becomes fully complex. The complexified extension of the parent article, in which the coefficients of $\tilde{F}$ are unrestricted complex numbers, is the natural arena for that case; but the identification of the physical field with a particular real slice is a further choice which the framework as written does not fix. The absorbing case is therefore not pursued here.
 
 Second, the energy density of the parent, $W=\tfrac{1}{2}(\epsilon\,\vec E^2+\mu\,\vec H^2)$, is the non-dispersive expression. For a monochromatic field in a dispersive medium the standard energy density is the Brillouin expression
 $$
@@ -938,7 +938,7 @@ The medium enters the biquaternionic structure in two places and nowhere else. F
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,
 $$
-which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian electric half in $\mathbb{M}_+$ and an anti-Hermitian magnetic half in $\mathbb{M}_-$; the medium sets the relative weight $Z=\sqrt{\mu/\epsilon}$ of the two halves.
+which is fixed by the parent article and splits $\tilde{F}$ into a Hermitian electric half in $\mathbb{B}_{\Psi}$ and an anti-Hermitian magnetic half in $\mathbb{B}_{\Phi}$; the medium sets the relative weight $Z=\sqrt{\mu/\epsilon}$ of the two halves.
 
 The single biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ is the same in every medium: the field factors cancel through $\sqrt{\epsilon}/(c\sqrt{\mu})=\epsilon$ and $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$, and the only medium factor left explicit in the equation is $\sqrt{\mu}$. Dispersion makes the local complex structure spectral: each frequency carries its own speed $c(\omega)=1/\sqrt{\epsilon(\omega)\mu(\omega)}$, refractive index $n(\omega)=c_0/c(\omega)$, dispersion relation $k^2=\omega^2\epsilon(\omega)\mu(\omega)$, and group velocity $v_g=c_0/(n+\omega\,dn/d\omega)$, at least while the normalisation is real. At an interface the local complex structure jumps, and the field strength is discontinuous even though the physical fields satisfy the standard tangential and normal continuity conditions. The vacuum limit $c\to c_0$, $Z\to Z_0$ recovers every object of the parent article, and the zero-divisor cone of the algebra coincides with the wave cone of the medium at every value of $c$.
 
@@ -986,8 +986,8 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is one of a series of **worked exercises** on quantum physics in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. Earlier exercises treated the kinematics of a qubit and of a pair of qubits; each was a single problem solved twice, once in the standard Hilbert-space formulation and once in the biquaternion formulation of the Hermitian subspace $\mathbb{M}_+$. This exercise is different in structure. Its parent is the article *Quantum Channels and the Reversible/Irreversible Dichotomy*, which develops the general state map on $\mathbb{M}_+$ — the quantum channel, its Kraus representation, complete positivity, the Choi matrix, and the reversible/irreversible dichotomy. The reader is assumed to have that formalism and is asked to apply it.
+This is one of a series of **worked exercises** on quantum physics in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. Earlier exercises treated the kinematics of a qubit and of a pair of qubits; each was a single problem solved twice, once in the standard Hilbert-space formulation and once in the biquaternion formulation of the Hermitian subspace $\mathbb{B}_{\Psi}$. This exercise is different in structure. Its parent is the article *Quantum Channels and the Reversible/Irreversible Dichotomy*, which develops the general state map on $\mathbb{B}_{\Psi}$ — the quantum channel, its Kraus representation, complete positivity, the Choi matrix, and the reversible/irreversible dichotomy. The reader is assumed to have that formalism and is asked to apply it.
 
 The article is therefore a sequence of independent problems, each in its own section. We work throughout in the notation of the parent, returning to the standard matrix formulation only where the parent itself does (the transpose map, the Choi matrix, and the standard Kraus operators of amplitude damping). The problems are:
 
@@ -13,7 +13,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ with real $c r_t$ and $\vec r_\psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*}) = c r_t + \vec r\cdot\vec r_\psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the Choi matrix is $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
+The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{B}_{\Psi}$ consists of the elements $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ with real $c r_t$ and $\vec r_\psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*}) = c r_t + \vec r\cdot\vec r_\psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the Choi matrix is $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
 $$
 Ξ_{\mathrm{deph},p}(\tilde{Ϛ})
 := (1-p)\,\tilde{Ϛ}
@@ -182,11 +182,11 @@ K_1 = \begin{pmatrix}0 & \sqrt{\gamma}\\ 0 & 0\end{pmatrix} = \sqrt{\gamma}\,|0\
 $$
 Writing $s = \sqrt{1-\gamma} \in [0,1]$ and using $\sigma_3 = i\vec e_z$ and $|0\rangle\langle 1| = \tfrac{1}{2}(i\vec e_x - \vec e_y)$, these translate to
 $$
-\boxed{\;\tilde{K}_0 = \frac{1+s}{2}\,e_t + i\,\frac{1-s}{2}\,\vec e_z \;\in \mathbb{M}_+,
+\boxed{\;\tilde{K}_0 = \frac{1+s}{2}\,e_t + i\,\frac{1-s}{2}\,\vec e_z \;\in \mathbb{B}_{\Psi},
 \qquad
 \tilde{K}_1 = \frac{\sqrt{\gamma}}{2}\left(i \vec e_x - \vec e_y\right) \in \mathbb{B}\;}.
 $$
-Here $\tilde{K}_0$ is Hermitian (it is an element of $\mathbb{M}_+$), while $\tilde{K}_1$ is not. Trace preservation follows from
+Here $\tilde{K}_0$ is Hermitian (it is an element of $\mathbb{B}_{\Psi}$), while $\tilde{K}_1$ is not. Trace preservation follows from
 $$
 \tilde{K}_0^{*}\tilde{K}_0 = \frac{1+s^2}{2}\,e_t + i\,\frac{1-s^2}{2}\,\vec e_z,
 \qquad
@@ -298,7 +298,7 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 
 ## Summary
 
-We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.
+We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{B}_{\Psi}$.
 
 1. **Dephasing as a Kraus sum.** The channel $Ξ_{\mathrm{deph},p}$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
 2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_t$, $\sqrt{\tfrac{p}{2}}\,i\vec u_x$ is a minimal set.
@@ -314,7 +314,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State; $\vec r$ the Bloch vector |

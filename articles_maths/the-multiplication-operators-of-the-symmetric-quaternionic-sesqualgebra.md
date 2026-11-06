@@ -200,7 +200,7 @@ acting on the block.
 
 **A kernel.** For $\tilde Q_4=\vec e_x$ the kernel is $\mathrm{span}_{\mathbb{R}}\{\vec e_y,\vec e_z,i\vec e_y,i\vec e_z\}$, of real dimension four, since $\vec e_x\star \vec e_y=\vec e_x\star \vec e_z=0$.
 
-**A self-adjoint element.** $\tilde Q_4=ie_t\in\mathbb{C}e_t$: $\tilde Q_4^{\natural}=ie_t=\tilde Q_4$, so the left multiplication is self-adjoint with respect to $K$. An element of $\mathbb{M}_{+}$, for instance $e_t+i\vec e_x$, is not self-adjoint, since $(e_t+i\vec e_x)^{\natural}=e_t-i\vec e_x\neq e_t+i\vec e_x$.
+**A self-adjoint element.** $\tilde Q_4=ie_t\in\mathbb{C}e_t$: $\tilde Q_4^{\natural}=ie_t=\tilde Q_4$, so the left multiplication is self-adjoint with respect to $K$. An element of $\mathbb{B}_{\Psi}$, for instance $e_t+i\vec e_x$, is not self-adjoint, since $(e_t+i\vec e_x)^{\natural}=e_t-i\vec e_x\neq e_t+i\vec e_x$.
 
 **An automorphism.** ${}^{\natural}(\vec e_x\star \vec e_y)={}^{\natural}(0)=0$ and $\vec e_x^{\natural}\star \vec e_y^{\natural}=(-\vec e_x)\star(-\vec e_y)=\vec e_x\star \vec e_y=0$; the natural conjugation respects the product.
 

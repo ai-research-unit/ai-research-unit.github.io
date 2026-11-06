@@ -4,7 +4,7 @@
 
 The gauge field's own field strength is not an observable. In the abelian theory $\tilde{F}$ is gauge invariant, but in the non-abelian theory it transforms by conjugation, $\tilde{F}\mapsto Q\tilde{F}Q^{-1}$, and only its gauge-invariant combinations carry physical meaning. The simplest observable built from the connection is its **holonomy** around a closed curve — the Wilson loop — and it is the object that this article treats in the biquaternion framework.
 
-The Wilson loop is the path-ordered exponential of the connection integrated around a closed curve, traced to make it gauge invariant. It is the phase acquired by a charged particle transported around the curve, the continuum generalization of the Aharonov–Bohm phase, and the order parameter of confinement: its expectation value in the gauge-field path integral of the preceding article distinguishes a perimeter law from an area law. Its biquaternion rendition is unusually direct, because the two ingredients it combines are the two objects the framework already distinguishes. The connection is a material-sector biquaternion, $\tilde{A}\in\mathbb{M}_-$; the gauge group is realized inside the informational sector $\mathbb{M}_+$; and the holonomy, being a group element, is an element of that realization — for $\mathrm{SU}(2)$ realized by the imaginary units, a unit quaternion, whose trace is a scalar part.
+The Wilson loop is the path-ordered exponential of the connection integrated around a closed curve, traced to make it gauge invariant. It is the phase acquired by a charged particle transported around the curve, the continuum generalization of the Aharonov–Bohm phase, and the order parameter of confinement: its expectation value in the gauge-field path integral of the preceding article distinguishes a perimeter law from an area law. Its biquaternion rendition is unusually direct, because the two ingredients it combines are the two objects the framework already distinguishes. The connection is a material-sector biquaternion, $\tilde{A}\in\mathbb{B}_{\Phi}$; the gauge group is realized inside the informational sector $\mathbb{B}_{\Psi}$; and the holonomy, being a group element, is an element of that realization — for $\mathrm{SU}(2)$ realized by the imaginary units, a unit quaternion, whose trace is a scalar part.
 
 The article is organized as follows. The holonomy is defined for the abelian and the non-abelian cases and its gauge transformation is computed. The gauge invariance of the trace is verified, together with the abelian Stokes relation that equates the loop integral to the enclosed flux, and the non-abelian statement that the holonomy transforms by conjugation at the base point. The small-loop expansion is given, in which the loop exponentiates the field strength and the two Lorentz invariants of the Maxwell field appear as the real and imaginary scalar parts of $\tilde{F}^2$. The loop's role as an observable — its expectation value, the perimeter and area laws, and the rectangular-loop potential — is then stated, and the loop equation is recorded. The article closes with the accounting of what the algebra supplies and what is imported.
 
@@ -131,7 +131,7 @@ $$
 \;\sim\; -\frac{i\,\kappa_{\mathrm{div}}}{2}\,\mathrm{perim}(C),
 $$
 
-with $\kappa_{\mathrm{div}}$ a real divergent coefficient, so that the divergent part of the loop is a phase proportional to the perimeter, the Minkowski form of the perimeter law. The physical statement is that this divergence is absorbed by the mass renormalization of the external sources that the loop describes, and the renormalized loop is finite; the free theory thus produces the perimeter law, while the area law requires the nonperturbative dynamics. The biquaternion content is that the propagator whose double integral appears is the material-sector propagator and the line current is a material-sector current, so the loop's self-interaction is a statement entirely within $\mathbb{M}_-$.
+with $\kappa_{\mathrm{div}}$ a real divergent coefficient, so that the divergent part of the loop is a phase proportional to the perimeter, the Minkowski form of the perimeter law. The physical statement is that this divergence is absorbed by the mass renormalization of the external sources that the loop describes, and the renormalized loop is finite; the free theory thus produces the perimeter law, while the area law requires the nonperturbative dynamics. The biquaternion content is that the propagator whose double integral appears is the material-sector propagator and the line current is a material-sector current, so the loop's self-interaction is a statement entirely within $\mathbb{B}_{\Phi}$.
 
 ## The Aharonov–Bohm Phase
 
@@ -191,7 +191,7 @@ $$
 \langle W(C)\rangle = \left\langle \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C \sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu\right)\right\rangle ,
 $$
 
-with the trace over the informational realization of the gauge group and the average over the material-sector configurations. The two fixed-point sectors appear in the two operations: the average is over $\mathbb{M}_-$ configurations, and the trace is over the $\mathbb{M}_+$ realization of the group. The order parameter is thus the expectation of a two-sector bilinear, and the confinement transition is a statement about its long-distance behaviour.
+with the trace over the informational realization of the gauge group and the average over the material-sector configurations. The two fixed-point sectors appear in the two operations: the average is over $\mathbb{B}_{\Phi}$ configurations, and the trace is over the $\mathbb{B}_{\Psi}$ realization of the group. The order parameter is thus the expectation of a two-sector bilinear, and the confinement transition is a statement about its long-distance behaviour.
 
 ### The Loop as the Phase of a Charged Worldline
 
@@ -222,9 +222,9 @@ the statement that the area derivative inserts the field strength at a point of 
 
 The constructions of this article can be collected into a single statement about the framework. A Wilson loop is built from three operations, and each of them is an operation the algebra already provides.
 
-The first is the integration of a **material** one-form along a curve: the holonomy's logarithm, $\oint\sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu$, is an element built from the material sector. The second is the **exponentiation** of that element into the group generated by the informational realization of the gauge algebra; for $\mathrm{SU}(2)$ that group is the unit quaternions, and the exponentiation is the usual exponential of an imaginary quaternion, an element of $\mathbb{M}_+$. The third is the **trace**, which in the quaternion realization is twice the scalar part; it is the operation that turns the group element into a gauge-invariant number. The loop is therefore the scalar part of the holonomy of a material connection in an informational group element, and its gauge invariance is the invariance of the scalar part under the adjoint action.
+The first is the integration of a **material** one-form along a curve: the holonomy's logarithm, $\oint\sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu$, is an element built from the material sector. The second is the **exponentiation** of that element into the group generated by the informational realization of the gauge algebra; for $\mathrm{SU}(2)$ that group is the unit quaternions, and the exponentiation is the usual exponential of an imaginary quaternion, an element of $\mathbb{B}_{\Psi}$. The third is the **trace**, which in the quaternion realization is twice the scalar part; it is the operation that turns the group element into a gauge-invariant number. The loop is therefore the scalar part of the holonomy of a material connection in an informational group element, and its gauge invariance is the invariance of the scalar part under the adjoint action.
 
-Three consequences are worth stating separately. The untraced holonomy is an element of $\mathbb{M}_+$ — a unit quaternion — and is not gauge invariant; it transforms by the adjoint action, which is the conjugation of a quaternion by another. The traced loop is invariant because the scalar part is what the adjoint action preserves. And the abelian loop is the degenerate case in which the group element lies in the centre, so that the holonomy is a phase and the trace is trivial. The framework thus orders the three cases — central, adjoint, and the general representation — by the sector in which the group element lies, and the Wilson loop of a given gauge theory is a trace over exactly one of them.
+Three consequences are worth stating separately. The untraced holonomy is an element of $\mathbb{B}_{\Psi}$ — a unit quaternion — and is not gauge invariant; it transforms by the adjoint action, which is the conjugation of a quaternion by another. The traced loop is invariant because the scalar part is what the adjoint action preserves. And the abelian loop is the degenerate case in which the group element lies in the centre, so that the holonomy is a phase and the trace is trivial. The framework thus orders the three cases — central, adjoint, and the general representation — by the sector in which the group element lies, and the Wilson loop of a given gauge theory is a trace over exactly one of them.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -236,7 +236,7 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 ## Open Questions
 
-1. **A sector-theoretic interpretation of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{M}_+$ trace of an object whose logarithm is in $\mathbb{M}_-$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
+1. **A sector-theoretic interpretation of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{B}_{\Psi}$ trace of an object whose logarithm is in $\mathbb{B}_{\Phi}$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
 
 2. **The order parameter and the sector split.** The confinement transition is a change in the long-distance behaviour of $\langle W(C)\rangle$. Is there a biquaternionic order parameter — an element whose norm measures the transition, rather than a functional of loops — and does the transition appear as a change in a property of the algebra's own objects?
 
@@ -250,7 +250,7 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 ## Summary
 
-The Wilson loop is the trace of the holonomy of the gauge connection around a closed curve. In the biquaternion framework the connection is a material-sector one-form, $\tilde{A}\in\mathbb{M}_-$, and the holonomy is an element of the gauge group realized in the informational sector $\mathbb{M}_+$ — for $\mathrm{SU}(2)$ a unit quaternion — so that the loop is the scalar part of that element and couples the two fixed-point sectors.
+The Wilson loop is the trace of the holonomy of the gauge connection around a closed curve. In the biquaternion framework the connection is a material-sector one-form, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the holonomy is an element of the gauge group realized in the informational sector $\mathbb{B}_{\Psi}$ — for $\mathrm{SU}(2)$ a unit quaternion — so that the loop is the scalar part of that element and couples the two fixed-point sectors.
 
 For the abelian theory the loop is $\exp(i\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
@@ -267,12 +267,12 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | Symbol | Meaning |
 |---|---|
 | $C$ | Closed curve (loop); $S$ a surface it bounds |
-| $\tilde{A}=\sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu$ | Connection one-form; $\tilde{A}_\mu\in\mathbb{M}_-$ |
+| $\tilde{A}=\sum_\mu\varepsilon_\mu\tilde{A}_\mu dx_\mu$ | Connection one-form; $\tilde{A}_\mu\in\mathbb{B}_{\Phi}$ |
 | $W(C)=\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Abelian Wilson loop; a phase |
 | $U(C)=\mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy (group element), non-abelian |
 | $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(i\oint_C \sum_{\mu,a}\varepsilon_\mu A_{\mu a}T_a dx_\mu)$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
-| $T_a=i\vec e_a\in\mathbb{M}_+$ | Gauge generators realized in the informational sector |
+| $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ | Gauge generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu=\frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}d\Sigma_{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
 | $W=1+i \ell^2F_{\mu\nu}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |

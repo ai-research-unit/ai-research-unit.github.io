@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is simple, and it has one simple module. The Lorentz group acts on that module by multiplication on one side. Those two facts are the subject of this article.
 
-Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{M}_-$ and the Lorentz group as acting on it by the **Hermitian sandwich**,
+Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the Lorentz group as acting on it by the **Hermitian sandwich**,
 
 $$
 \tilde Q\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*}.
@@ -16,7 +16,7 @@ $$
 \tilde X\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde X .
 $$
 
-The difference is not a matter of notation. The element $-e_t$ acts trivially by the sandwich on $\mathbb{M}_-$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
+The difference is not a matter of notation. The element $-e_t$ acts trivially by the sandwich on $\mathbb{B}_{\Phi}$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
 
 **The field is an element of the algebra.** An element multiplies an element, and the module structure is the multiplication of the algebra; no array and no list of components enters the statement. The field carries four complex numbers, and they are the coefficients of one element.
 
@@ -74,8 +74,8 @@ The subgroups relevant to the series sit inside it as follows.
 
 | Element | Characterization | Sector |
 |---|---|---|
-| Pure boost $\tilde U_{\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{M}_+$ |
-| Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{H}_{\mathbb{B}}$ |
+| Pure boost $\tilde U_{\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{B}_{\Psi}$ |
+| Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{B}_{H}$ |
 | General $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
 
 A boost is Hermitian and satisfies $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$; boosts do not form a subgroup, because the product of two non-collinear boosts is a boost and a rotation. A rotation is a real quaternion, and the rotations form the subgroup $SU(2)=SL(2,\mathbb{C})\cap U(2)$.
@@ -84,7 +84,7 @@ A boost is Hermitian and satisfies $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b
 
 $$
 \pi:\;SL(2,\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad
-\pi(\tilde U_{\mathrm{lor}}):\;\tilde Q\longmapsto\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*},\qquad \tilde Q\in\mathbb{M}_- .
+\pi(\tilde U_{\mathrm{lor}}):\;\tilde Q\longmapsto\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*},\qquad \tilde Q\in\mathbb{B}_{\Phi} .
 $$
 
 It is well defined, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian; it preserves the quaternionic norm; and it is a homomorphism, because the star reverses the order. Its kernel is
@@ -147,7 +147,7 @@ $$
 \mathfrak{sl}(2,\mathbb{C})=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\;\oplus\;\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}.
 $$
 
-The first summand is the compact part, the pure quaternions, and its three elements square to $-e_t$; the second is the non-compact part, in $\mathbb{M}_+$, and its three elements square to $+e_t$. The two summands are the rotations and the boosts. On the module the six generators act by left multiplication, and that action is the defining action of the group: the module is of complex dimension two, the algebra acts on it as all its $\mathbb{C}$-linear endomorphisms, and the representation is the fundamental one. No further object is needed to say so.
+The first summand is the compact part, the pure quaternions, and its three elements square to $-e_t$; the second is the non-compact part, in $\mathbb{B}_{\Psi}$, and its three elements square to $+e_t$. The two summands are the rotations and the boosts. On the module the six generators act by left multiplication, and that action is the defining action of the group: the module is of complex dimension two, the algebra acts on it as all its $\mathbb{C}$-linear endomorphisms, and the representation is the fundamental one. No further object is needed to say so.
 
 ### The Compact Subgroup
 
@@ -228,12 +228,12 @@ The warrant is the identity $\tilde U^{*}\bar{\tilde U}=e_t$, which holds for ev
 For two elements of one value, the Hermitian part of their product lands in the Hermitian sector:
 
 $$
-\tilde R_\psi=\tfrac12\bigl(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*}\bigr)\in\mathbb{M}_+,
+\tilde R_\psi=\tfrac12\bigl(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*}\bigr)\in\mathbb{B}_{\Psi},
 \qquad
 \tilde R_\psi\longmapsto\tilde U_{\mathrm{lor}}\tilde R_\psi\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
-The element $\tilde R_\psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\psi$ of $\mathbb{M}_-$.
+The element $\tilde R_\psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\psi$ of $\mathbb{B}_{\Phi}$.
 
 **The single field gives a null element.** For $\tilde Y=\tilde X$ the element is $\tilde X\tilde X^{*}$, it is Hermitian, and it is null: its quaternionic norm vanishes, because a product of two zero divisors is a zero divisor. Its scalar part is half the Hermitian norm of the field,
 
@@ -257,7 +257,7 @@ The preceding sections separate two actions that are often conflated. The compar
 
 | Question | One-sided action | Hermitian sandwich |
 |---|---|---|
-| Object acted on | $\tilde X\in\mathbb{B}$ | $\tilde Q\in\mathbb{M}_-$ |
+| Object acted on | $\tilde X\in\mathbb{B}$ | $\tilde Q\in\mathbb{B}_{\Phi}$ |
 | Action | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ |
 | Factors of $\tilde U_{\mathrm{lor}}$ | one | two |
 | Action of $-e_t$ | $-\mathrm{id}$ | $+\mathrm{id}$ |
@@ -284,9 +284,9 @@ Both are group actions; they are actions on different objects, and neither reduc
 
 The one-sided action is not a device of this article. It is the multiplication of the algebra, and the algebra acts on itself on the left whatever else is written.
 
-**A sandwich has three factors and a module action has two.** A sandwich is a product of three: one factor on each side of the field. A module action is a product of two: one factor on one side. The difference is the difference between an endomorphism of a module and an endomorphism of the algebra, and the two are not the same object. That is why the sandwich acts on $\mathbb{M}_-$ and the one-sided action acts on the module, and why neither can be read as the other.
+**A sandwich has three factors and a module action has two.** A sandwich is a product of three: one factor on each side of the field. A module action is a product of two: one factor on one side. The difference is the difference between an endomorphism of a module and an endomorphism of the algebra, and the two are not the same object. That is why the sandwich acts on $\mathbb{B}_{\Phi}$ and the one-sided action acts on the module, and why neither can be read as the other.
 
-**Each action has its own invariant subspace.** The sandwich carries $\mathbb{M}_-$ into itself, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian and the star reverses the order. The one-sided action carries each value into itself, because a left multiplication keeps the value. Each action has the invariant subspace it deserves, and the two invariant subspaces are different.
+**Each action has its own invariant subspace.** The sandwich carries $\mathbb{B}_{\Phi}$ into itself, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian and the star reverses the order. The one-sided action carries each value into itself, because a left multiplication keeps the value. Each action has the invariant subspace it deserves, and the two invariant subspaces are different.
 
 **Equal real dimension, different kind.** Both actions are of four real dimensions, and they differ in kind. The vector action is a real form: it is real four-dimensional, and its complexification is $S\otimes\bar S=(\tfrac12,\tfrac12)$, of complex dimension four. The one-sided action is genuinely complex two-dimensional, and it carries no invariant real structure, because such a structure would be an isomorphism $S\cong\bar S$ and the two labels are inequivalent. Equal real dimension, different kind.
 
@@ -294,7 +294,7 @@ The one-sided action is not a device of this article. It is the multiplication o
 
 ## Open Questions
 
-1. **The informational sector.** The companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) identifies $\mathbb{M}_+$ with the Hermitian observables of a two-state system. The module constructed here is the carrier on which those observables act, but the identification of a **state** with an element of the module is not made in this article. A pure state is an element of the form $\tilde X\tilde X^{*}$ up to a positive factor, and the field $\tilde X$ is a square root of it, defined up to a phase. Whether the phase is physical, and whether the informational sector requires the double cover or only its image in $SO^{+}(1,3)$, is left open.
+1. **The informational sector.** The companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) identifies $\mathbb{B}_{\Psi}$ with the Hermitian observables of a two-state system. The module constructed here is the carrier on which those observables act, but the identification of a **state** with an element of the module is not made in this article. A pure state is an element of the form $\tilde X\tilde X^{*}$ up to a positive factor, and the field $\tilde X$ is a square root of it, defined up to a phase. Whether the phase is physical, and whether the informational sector requires the double cover or only its image in $SO^{+}(1,3)$, is left open.
 
 2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
 
@@ -373,7 +373,7 @@ The module is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$. It 
 - **The algebra is simple.** It has one simple module, of complex dimension two, and the regular module is the direct sum of two copies of it. The field of the article is an element of the algebra, and the algebra acts on it by the product $\tilde a\tilde X$.
 - **The two copies are the two values.** Every element is the sum of one part of each value, each part is of complex dimension two, and only the zero element is both. A product takes the value of its right factor, and a left multiplication keeps the value.
 - **The action is one-sided.** $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$; the four-vector action is the sandwich $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$.
-- **The double cover is the kernel.** $\ker\pi=\{\pm e_t\}$ acts trivially on $\mathbb{M}_-$ and as $-\mathrm{id}$ on the module; the one-sided action is faithful, the vector action is not.
+- **The double cover is the kernel.** $\ker\pi=\{\pm e_t\}$ acts trivially on $\mathbb{B}_{\Phi}$ and as $-\mathrm{id}$ on the module; the one-sided action is faithful, the vector action is not.
 - **The two halves are $S$ and $\bar S$.** They are the two labels $(\tfrac12,0)$ and $(0,\tfrac12)$, the second carrying the action of $\bar{\tilde U}_{\mathrm{lor}}$. They are not the two values of one element: the algebra is simple, both values are copies of $S$, and the conjugate module is not a module for the algebra.
 - **The module carries four invariant forms.** The quaternionic form is invariant under the whole group and pairs one value with the other; the Hermitian form $h$ is positive definite and invariant exactly on the compact $SU(2)$; the indefinite form $[\,\cdot\,|\,\cdot\,]$ is invariant exactly on the stabiliser of a direction, the group $SU(1,1)$; and $h$ with the conjugate action on the second factor pairs the two labels.
 - **The map to the Hermitian sector.** A pair of fields gives the Hermitian element $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$, equivariant under the sandwich, and a single field gives a null Hermitian element whose scalar part is half its Hermitian norm. The vector action is the tensor square of the one-sided action.
@@ -388,17 +388,17 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\bar{\tilde{Q}}$, $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}$ | Coefficientwise complex, quaternion, and Hermitian conjugates; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian sectors; material and informational |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian and Hermitian sectors; material and informational |
 | $\tilde X_L,\tilde X_R$ | The two values of the subscript; $L$ is the minus value; a product takes the value of its right factor, and a left multiplication keeps it |
 | $S$, $\bar S$ | The defining module $(\tfrac12,0)$ and its conjugate $(0,\tfrac12)$ |
 | $\tilde U_{\mathrm{lor}}$ | Element of norm one, $SL(2,\mathbb{C})$ |
 | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | The one-sided action on the module |
 | $\tilde X\mapsto\bar{\tilde U}_{\mathrm{lor}}\tilde X$ | The conjugate action on $\bar S$ |
-| $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{M}_-$ |
+| $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic form; the invariant bilinear form of the module |
 | $h(\tilde X,\tilde Y)=2\,\mathrm{Sc}(\tilde X^{*}\tilde Y)$ | The positive definite Hermitian form of a value; invariant on $SU(2)$ |
 | $[X\,\vert\,Y]=2\,\mathrm{Sc}(\tilde X^{*}\tilde W\tilde Y)$, $\tilde W=i\vec e_z$ | The indefinite Hermitian form of a value; invariant on the stabiliser of $\tilde W$, $SU(1,1)$ |
-| $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$ | The map to $\mathbb{M}_+$; the four-vector is $i$ times it |
+| $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$ | The map to $\mathbb{B}_{\Psi}$; the four-vector is $i$ times it |
 
 ## Further Reading
 
@@ -406,7 +406,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 
 **Companion articles.**
 
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the two-sided action on $\mathbb{M}_-$ and the identification of the four-vector.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the two-sided action on $\mathbb{B}_{\Phi}$ and the identification of the four-vector.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian observables and the two-state system.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the classification $(\tfrac12,0)$ and $(0,\tfrac12)$ used here.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the one-sided chiral pair and its two-sided Kravchenko form.

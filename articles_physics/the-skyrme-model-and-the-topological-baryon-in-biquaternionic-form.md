@@ -55,7 +55,7 @@ where the last identities hold because $\tilde U$ is a unit real quaternion. The
 **The current.** The Maurer–Cartan form of the companion article is
 
 $$
-j_\mu = \tilde U^{-1}\partial/\partial R_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+j_\mu = \tilde U^{-1}\partial/\partial R_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 $$
 
 and it is **flat**,
@@ -267,7 +267,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $e_a e_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}^1_{\mathbb{B}}$ | Unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$; the skyrmion target |
 | $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrmion field; $\tilde U = \exp(\vec\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_t$ |
 | $j_\mu = \tilde U^{-1}\partial/\partial R_\mu\,\tilde U$ | Flat Maurer–Cartan current |

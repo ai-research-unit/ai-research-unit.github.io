@@ -149,7 +149,7 @@ The two vector relations are of different kinds: the first constrains $\vec a$ a
 **Theorem (the classification).** The idempotents of the multiplication are exactly
 
 $$
-\boxed{\; 0 , \qquad e_t , \qquad\text{and}\qquad \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 \;}.
+\boxed{\; 0 , \qquad e_t , \qquad\text{and}\qquad \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathbb{B}_{V,\mathbb{R}} , \qquad (\vec u,\vec u)=1 \;}.
 $$
 
 **Proof.** Let $\tilde Q_2$ be idempotent and write $\tilde Q_2 = u + \vec a + i\vec b$ as above. The proof splits on whether the real vector $\vec a$ vanishes.
@@ -158,7 +158,7 @@ Suppose first that $\vec a \neq 0$. The relation $(2u+1)\vec a = 0$ forces $u = 
 
 Suppose next that $\vec a = 0$. The relation $(2u+1)\vec a = 0$ is vacuous, and the relation $\vec a\times\vec b = -\tfrac12\vec b$ reads $\vec b = 0$. Then $\vec Q_2 = 0$ and the coordinate equation gives $u = u^{2}$, that is $u = 0$ or $u = 1$. These are the two trivial idempotents.
 
-**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Introduction to the General Quaternionic Sesqualgebra* states the classification on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the criterion reads $\tilde Q_2^{2} = \tilde Q_2^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the family has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
+**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Introduction to the General Quaternionic Sesqualgebra* states the classification on the quaternion subspace $\mathbb{B}_{H}$, where the coefficients are real and the criterion reads $\tilde Q_2^{2} = \tilde Q_2^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the family has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
 
 ## The Idempotents and the Roots of One
 
@@ -280,7 +280,7 @@ because its square is the central scalar $\bigl(\sum_\mu Q_{2,\mu}^{2}\bigr)e_t$
 
 ### The Parametrisation
 
-The family of idempotents is the image of the set $(\vec u,\vec u)=1$ in the real three-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$ under the map $\vec u\mapsto-\tfrac12 e_t+\tfrac{\sqrt3}{2}\vec u$. Writing $\vec u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ with **real** coefficients $u_\mu$, the constraint is the single real quadratic equation
+The family of idempotents is the image of the set $(\vec u,\vec u)=1$ in the real three-dimensional vector subspace $\mathbb{B}_{V,\mathbb{R}}$ under the map $\vec u\mapsto-\tfrac12 e_t+\tfrac{\sqrt3}{2}\vec u$. Writing $\vec u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ with **real** coefficients $u_\mu$, the constraint is the single real quadratic equation
 
 $$
 u_x^2+u_y^2+u_z^2=1 ,
@@ -316,7 +316,7 @@ and $\tilde\Pi^{2} = -\tfrac12 e_t - \tfrac{\sqrt3}{2} \vec e_x$ is not $\tilde\
 
 **Proposition.** The group of unit quaternions acts transitively on the family of idempotents by conjugation.
 
-**Proof.** Let $\tilde U$ be a unit of the quaternion subspace, $\tilde U \in \mathbb{H}_{\mathbb{B}}$ with $C(\tilde U) = 1$; conjugation by $\tilde U$ in the quaternion division algebra is a real orthogonal map $\rho$ of the real vector subspace. Conjugation is a $\mathbb{C}$-algebra automorphism of the plain product, it commutes with both conjugations ${}^{\natural}$ and ${}^{*}$, and it therefore commutes with the multiplication $\star$ by the rule $\tilde U(\tilde Q_1 \star \tilde Q_2)\tilde U^{-1} = (\tilde U\tilde Q_1\tilde U^{-1}) \star (\tilde U\tilde Q_2\tilde U^{-1})$. Reading this on the criterion shows that it preserves the idempotent set and maps $\tilde\Pi(\vec u)$ to $\tilde\Pi(\rho\vec u)$. Since these real orthogonal maps act transitively on the set $(\vec u,\vec u)=1$, the action on the idempotent family is transitive.
+**Proof.** Let $\tilde U$ be a unit of the quaternion subspace, $\tilde U \in \mathbb{B}_{H}$ with $C(\tilde U) = 1$; conjugation by $\tilde U$ in the quaternion division algebra is a real orthogonal map $\rho$ of the real vector subspace. Conjugation is a $\mathbb{C}$-algebra automorphism of the plain product, it commutes with both conjugations ${}^{\natural}$ and ${}^{*}$, and it therefore commutes with the multiplication $\star$ by the rule $\tilde U(\tilde Q_1 \star \tilde Q_2)\tilde U^{-1} = (\tilde U\tilde Q_1\tilde U^{-1}) \star (\tilde U\tilde Q_2\tilde U^{-1})$. Reading this on the criterion shows that it preserves the idempotent set and maps $\tilde\Pi(\vec u)$ to $\tilde\Pi(\rho\vec u)$. Since these real orthogonal maps act transitively on the set $(\vec u,\vec u)=1$, the action on the idempotent family is transitive.
 
 **Remark.** The idempotent family is therefore a single class under the action of the unit quaternions, and the linear maps of the real vector subspace preserving the form $(\vec u,\vec u)$ are the structure group of the action. The two trivial idempotents are the fixed elements of the action, since a $\mathbb{C}$-algebra automorphism fixes $0$ and $e_t$.
 
@@ -336,7 +336,7 @@ for $\vec u \neq 0$, and it is not skew-Hermitian either.
 
 **Proof.** The element $\tilde\Pi(\vec u)$ has real coordinates, so $\overline{\tilde\Pi(\vec u)} = \tilde\Pi(\vec u)$ and $\tilde\Pi(\vec u)^{*} = \tilde\Pi(\vec u)^{\natural} = -\tfrac12 e_t - \tfrac{\sqrt3}{2}\vec u$. This differs from $\tilde\Pi(\vec u)$ exactly when $\vec u \neq 0$, and it differs from $-\tilde\Pi(\vec u) = \tfrac12 e_t - \tfrac{\sqrt3}{2}\vec u$ because the scalar coordinates $\pm\tfrac12$ do not vanish.
 
-**Remark.** The Hermitian subspace $\mathbb{M}_{+}$ is where the sibling product finds its idempotents and where this product finds none beyond the centre; the family of this product is cut out of the quaternion subspace instead, the fixed space of the other conjugation. This is the element-theoretic form of the fact that the two products differ by which slot carries the conjugation, and it is developed into the reading of the two halves in *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
+**Remark.** The Hermitian subspace $\mathbb{B}_{\Psi}$ is where the sibling product finds its idempotents and where this product finds none beyond the centre; the family of this product is cut out of the quaternion subspace instead, the fixed space of the other conjugation. This is the element-theoretic form of the fact that the two products differ by which slot carries the conjugation, and it is developed into the reading of the two halves in *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
 
 **Remark (the complementary spherical family, and the absence of complementation).** The two infinite families are **complementary** in the following sense and in no other. The sibling product's idempotents are the **Hermitian spherical family** $\tilde\Pi_+(\tilde{Ζ}) = \tfrac12(e_t+\tilde{Ζ})$ over the real unit vectors $\vec u$, and they are exactly the elements of the square-zero family of this product with scalar part $\tfrac12$: for such an element $\overline{\tilde\Pi_1}\tilde\Pi_1 = C(\tilde\Pi_1)e_t = 0$, so $\tilde\Pi_1 \star \tilde\Pi_1 = 0$; the idempotents of this product are the elements $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$, of scalar part $-\tfrac12$. The two families are therefore on the two signs of the scalar part and neither is a translate or a conjugate of the other. There is **no nontrivial complementation**: the relations $\tilde\Pi \star \tilde\Pi_2 = 0$ and $\tilde\Pi+\tilde\Pi_2 = e_t$ hold, in either order, for the trivial pair $\{\tilde\Pi,\tilde\Pi_2\} = \{e_t,0\}$ and for no other pair of idempotents. Indeed two nontrivial idempotents both have scalar part $-\tfrac12$, so their sum has scalar part $-1$ and not $1$; on the vector parts the relation would read $\tfrac{\sqrt3}{2}(\vec u + \vec u') = 2e_t$, impossible since $\vec u$ and $\vec u'$ lie in the real vector subspace and their sum has no scalar part. The block has no unit and is not associative either, so the complementation and the Peirce decomposition of the plain product are not available to it, and the absence is one of the specificities recorded in *The Specificities of the General Quaternionic Sesqualgebra*.
 
@@ -349,7 +349,7 @@ A root of the central value $\lambda$ exists only for real $\lambda$, and for re
 The idempotents are the solutions of $\overline{\tilde Q}_2\tilde Q_2 = \tilde Q_2^{\natural}$, equivalently of the four coordinate equations $Q_{2t} = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q_2\rvert^{2}$, $(2u+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q_2 = \vec a + i\vec b$. Their list is the two trivial idempotents $0$ and $e_t$ together with the family
 
 $$
-\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 ,
+\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathbb{B}_{V,\mathbb{R}} , \qquad (\vec u,\vec u)=1 ,
 $$
 
 and each nontrivial idempotent has central square $1$, so that it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12 e_t - \tfrac{\sqrt3}{2}\vec u$. The family is a single class under the action of the unit quaternions of the quaternion subspace, and it lies outside the Hermitian subspace, since a nontrivial idempotent is neither Hermitian nor skew-Hermitian. The idempotents are not the roots of one halved: the halving map carries the roots of one to idempotents only at the two trivial roots $\pm e_t$, and the two sets meet at $e_t$ alone. The idempotent sets of the four general products are four different sets: the plain product and the sibling sesquilinear product have infinite families of zero divisors, the sibling bilinear product has only the two trivial idempotents, and this product alone has a family of units of the plain algebra. The idempotents of the sibling sesquilinear product are isotropic for this multiplication, each of them having square zero, so the two infinite families are disjoint beyond $0$ and $e_t$.
@@ -371,7 +371,7 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 | $Q_{2t} = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q_2\rvert^{2}$ | the scalar coordinate equations |
 | $(2u+1)\vec a = 0$, $\vec a\times\vec b = -\tfrac12\vec b$ | the vector coordinate equations, $\vec Q_2 = \vec a + i\vec b$ |
 | $\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | a nontrivial idempotent |
-| $\vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$, $(\vec u,\vec u)=1$ | the parameter and its constraint: a two-dimensional family |
+| $\vec u\in\mathbb{B}_{V,\mathbb{R}}$, $(\vec u,\vec u)=1$ | the parameter and its constraint: a two-dimensional family |
 | $C(\tilde\Pi(\vec u)) = 1$ | every nontrivial idempotent is a unit of the plain algebra |
 | $\tilde\Pi(\vec u)^{-1} = \tilde\Pi(\vec u)^{\natural} = -\tfrac12 e_t - \tfrac{\sqrt3}{2}\vec u$ | the inverse of a nontrivial idempotent |
 | $\tilde\Pi_+(\tilde{Ζ}) = \tfrac12(e_t + \tilde{Ζ})$ | the idempotents of the sibling sesquilinear product, isotropic here |

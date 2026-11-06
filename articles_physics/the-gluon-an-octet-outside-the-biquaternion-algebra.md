@@ -124,11 +124,11 @@ Two qualifications keep the statement exact.
 
 ### The Dimension of the Compact Algebra
 
-The decisive obstruction is the dimension of the compact part. The algebra is eight-dimensional over the reals, but its elements do not all generate compact one-parameter subgroups. The anti-Hermitian part of $\mathbb{B}$ is the material sector $\mathbb{M}_-$ of real dimension four,
+The decisive obstruction is the dimension of the compact part. The algebra is eight-dimensional over the reals, but its elements do not all generate compact one-parameter subgroups. The anti-Hermitian part of $\mathbb{B}$ is the material sector $\mathbb{B}_{\Phi}$ of real dimension four,
 $$
-\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
-\dim_\mathbb{R}\mathbb{M}_-=4 ,
+\dim_\mathbb{R}\mathbb{B}_{\Phi}=4 ,
 $$
 and the maximal compact subalgebra of $\mathbb{B}$ under the commutator is
 $$
@@ -152,7 +152,7 @@ The octet itself, however, has complex dimension eight, which is even, so the mo
 
 ### The Symmetric Invariant
 
-The third obstruction is the invariant tensor. The framework's products supply the antisymmetric structure constants and only those. The commutator of two generators is antisymmetric by construction, and its coefficients are the $f_{abc}$, read off in the compact factor as $f_{abc}=2\varepsilon_{abc}$ in the unnormalized basis $e_a$ in which the connection components are taken, equivalently $f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12e_a$, and $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ for the Hermitian generators $T_a=ie_a\in\mathbb{M}_+$; there is no symmetric object in a commutator. The anticommutator can in principle carry a symmetric part, but for the algebra's compact factor it does not: with $T_a=\tfrac12 e_a$ one has
+The third obstruction is the invariant tensor. The framework's products supply the antisymmetric structure constants and only those. The commutator of two generators is antisymmetric by construction, and its coefficients are the $f_{abc}$, read off in the compact factor as $f_{abc}=2\varepsilon_{abc}$ in the unnormalized basis $e_a$ in which the connection components are taken, equivalently $f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12e_a$, and $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ for the Hermitian generators $T_a=ie_a\in\mathbb{B}_{\Psi}$; there is no symmetric object in a commutator. The anticommutator can in principle carry a symmetric part, but for the algebra's compact factor it does not: with $T_a=\tfrac12 e_a$ one has
 $$
 \{T_a,T_b\}=\tfrac14\big(e_ae_b+e_be_a\big)=-\tfrac12\delta_{ab}\,e_t=\mathrm{Tr}(T_aT_b)\,e_t ,
 $$
@@ -231,7 +231,7 @@ The interpretation of the strong-sector results is not this article's. Confineme
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathrm{U}(2)$ of real dimension four, computed from $\mathbb{B}=\mathrm{U}(2)\oplus i\mathrm{U}(2)$ and from $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, against $\dim_\mathbb{R}\mathrm{SU}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ and hence $d_{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.
+**Supplied by the algebra, and recomputed here.** The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathrm{U}(2)$ of real dimension four, computed from $\mathbb{B}=\mathrm{U}(2)\oplus i\mathrm{U}(2)$ and from $\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, against $\dim_\mathbb{R}\mathrm{SU}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ and hence $d_{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.
 
 **Imported, and left visible.** The group $SU(3)$ and its adjoint octet; the Gell-Mann matrices, the tensors $f_{abc}$ and $d_{abc}$ and their values; the colour triplet of the quarks; the QCD action, the self-couplings and the beta function; asymptotic freedom and confinement; the enlarged-carrier embedding $SU(3)\subset \mathrm{U}(3)\subset \mathrm{U}(4)$ of $M_4(\mathbb{C})$; and the explicit closed forms of the embedded $\mathrm{SU}(3)$ elements in biquaternion parameters, which write $\mathcal{A}_\mu$ and the finite gauge transformations out but do not put them in $\mathbb{B}$. The algebra supplies the ceiling and the free kinematics; the colour data are standard and external.
 
@@ -251,7 +251,7 @@ The framework does not reach the **octet**, and the failure has an algebraic roo
 $$
 \dim_\mathbb{R}\mathbb{B}=8,
 \qquad
-\dim_\mathbb{R}\mathrm{U}(2)=4=\dim_\mathbb{R}\mathbb{M}_-,
+\dim_\mathbb{R}\mathrm{U}(2)=4=\dim_\mathbb{R}\mathbb{B}_{\Phi},
 \qquad
 \dim_\mathbb{R}\mathrm{SU}(3)=8,
 $$
@@ -276,8 +276,8 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra; real dimension 8 |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Compact part of the algebra; real dimension 4 |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Compact part of the algebra; real dimension 4 |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Maximal compact subalgebra; real dimension 4 |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ | Compact factor and its structure constants |
 | $f_{abc}=2\varepsilon_{abc}$, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ | Antisymmetric invariant of the compact factor, in the unnormalized basis $e_a$; vanishing symmetric invariant $d_{abc}=0$ |

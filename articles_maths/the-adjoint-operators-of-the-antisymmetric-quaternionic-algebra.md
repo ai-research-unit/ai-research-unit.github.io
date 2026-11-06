@@ -58,7 +58,7 @@ where $P$ is the projection onto the vector part and the vector block of $\Lambd
 
 $$ \boxed{\; \operatorname{Tr}L_{\tilde Q_3} = 3Q_{3t} \;}, $$
 
-the sum of the three diagonal entries $Q_{3t}$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathrm{Vect}(\mathbb{B})$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ is zero.
+the sum of the three diagonal entries $Q_{3t}$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathbb{B}_{V}$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathbb{B}_{V}$ is zero.
 
 *Proof.* The diagonal is $0,Q_{3t},Q_{3t},Q_{3t}$ from the matrix, and the sum is $3Q_{3t}$. The scalar-part functional is the quotient map, and the operator lowers the scalar part to zero, so the induced map on the quotient is zero and has trace zero.
 
@@ -87,7 +87,7 @@ The rank therefore drops exactly on the isotropic cone of the norm, where $\lang
 
 **Proposition.** The kernel of $L_{\tilde Q_3}$ always contains $\tilde Q_3$, since $\tilde Q_3\diamond\tilde Q_3=0$; the image is always contained in the vector subspace, since the values of the operation are pure vectors. Off the isotropic cone, with $\langle\tilde Q_3\rangle_{\natural}\neq0$,
 
-$$ \boxed{\; \ker L_{\tilde Q_3} = \mathbb{C}\tilde Q_3 , \qquad \operatorname{Im}L_{\tilde Q_3} = \mathrm{Vect}(\mathbb{B}) \;}, $$
+$$ \boxed{\; \ker L_{\tilde Q_3} = \mathbb{C}\tilde Q_3 , \qquad \operatorname{Im}L_{\tilde Q_3} = \mathbb{B}_{V} \;}, $$
 
 of complex dimensions one and three; on the isotropic cone, for $\langle\tilde Q_3\rangle_{\natural}=0$ and $\tilde Q_3\neq0$, the kernel and the image are both of dimension two.
 
@@ -181,7 +181,7 @@ The left multiplication operator of the block is $L_{\tilde Q_3}\tilde Q_2=Q_{3t
 | $\langle\tilde Q_3\rangle_{\natural}=Q_{3t}^2+\sum_{\mu\in\{x,y,z\}}Q_{3\mu}^2$ | the norm; the rank drops on its vanishing |
 | $\chi_{L_{\tilde Q_3}}(\lambda)=\lambda(\lambda-Q_{3t})(\lambda^2-2Q_{3t}\lambda+\langle\tilde Q_3\rangle_{\natural})$ | the characteristic polynomial |
 | $\ker L_{\tilde Q_3}=\mathbb{C}\tilde Q_3$ | the kernel for a regular element $\langle\tilde Q_3\rangle_{\natural}\neq0$ |
-| $\operatorname{Im}L_{\tilde Q_3}=\mathrm{Vect}(\mathbb{B})$ | the image for a regular element |
+| $\operatorname{Im}L_{\tilde Q_3}=\mathbb{B}_{V}$ | the image for a regular element |
 | $D(\tilde Q_3,\tilde Q_1)=[L_{\tilde Q_3},L_{\tilde Q_1}]-L_{\tilde Q_3\diamond\tilde Q_1}$ | the deviation, the operator form of the Jacobi failure |
 | $\operatorname{Der}(\diamond)=$ the skew maps of the vector subspace | the derivation algebra, three-dimensional, all outer |
 | $\operatorname{Aut}(\diamond)=$ the maps fixing $e_t$ and preserving the cross product | the automorphism group of the bracket, of complex dimension three |

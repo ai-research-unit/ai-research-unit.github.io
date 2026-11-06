@@ -20,13 +20,13 @@ This article asks what the biquaternion framework supplies for this derivation. 
 
 A section fixes the gradient, the pseudoscalar and the two values, and gives the translation once. A section sets up the measure and the chiral rotation. A section computes the Jacobian with the heat-kernel regulator. A section proves that the four-index symbol is not an algebra trace and states the consequence. A section states what the symbol does on the null cone and computes the bivector kernel. A section states what the regulator must preserve and why the anomaly does not depend on it. A section compares the result with the triangle. A section extracts the coefficient and identifies the density. A section gives the integrated form and the index, and a section reads the rotation in the algebra. A section tabulates what is supplied, transcribed, and missing; the open questions follow; the summary and the notation table close the article.
 
-**The frame and the symbols.** Every display below is read in the $\mathbb{M}_-$ frame: its derivative, its coordinates and its metric are *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and are not restated here. The biquaternion gradient is
+**The frame and the symbols.** Every display below is read in the $\mathbb{B}_{\Phi}$ frame: its derivative, its coordinates and its metric are *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and are not restated here. The biquaternion gradient is
 $$
 \tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 \qquad
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
-and on $\mathbb{M}_-$ the time derivative reads $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{M}_-$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
+and on $\mathbb{B}_{\Phi}$ the time derivative reads $\partial/\partial R_t=-\frac{i}{c}\,\partial/\partial r'_t$ (*Operator and Calculus Conventions*, §*The Gradient*). The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, which on $\mathbb{B}_{\Phi}$ is $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The pseudoscalar is $\omega=-\vec e_z$, with $\omega^2=-e_t$; it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*). A contraction of the derivative with a field is the quaternionic form $\langle\tilde\nabla,\tilde J\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$, an explicit sum over the four coordinates. The pair operator is the corpus's own,
 $$
 \mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 \qquad
@@ -371,9 +371,9 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra (*Algebra and Element Conventions*) |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | The biquaternion fermion field, one element of $\mathbb{B}$, with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ its Dirac-conjugate bilinear |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors (*Frame and Metric Conventions*) |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors (*Frame and Metric Conventions*) |
 | $\tilde\nabla,\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate (*Operator and Calculus Conventions*, §*The Gradient*) |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{M}_-$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$ on $\mathbb{B}_{\Phi}$ |
 | $\tilde K=k_0-i\vec k$ | The symbol of the gradient on a plane wave |
 | $\omega=-\vec e_z$ | The pseudoscalar, the volume element; $\omega^2=-e_t$, $\omega^{\natural}=-\omega$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |

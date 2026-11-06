@@ -123,16 +123,16 @@ which is the identity of the source article read with the doubled adjoint. Both 
 adjoints are kept apart.
 
 **Corollary (the kernel and the image).** The adjoint representation of the block has kernel the
-centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and image the inner derivations, identified with the
-derived algebra $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$:
+centre $\mathbb{B}_{C}=\mathbb{C}e_t$ and image the inner derivations, identified with the
+derived algebra $\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C})$:
 $$
-\ker\mathrm{ad}=\mathbb{C}_{\mathbb{B}},\qquad
+\ker\mathrm{ad}=\mathbb{B}_{C},\qquad
 \operatorname{Inn}(\mathfrak{g})=\{\mathrm{ad}_{\tilde Q_1}\}
-=\{\mathrm{ad}_{\vec Q_1}:\vec Q_1\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}).
+=\{\mathrm{ad}_{\vec Q_1}:\vec Q_1\in\mathbb{B}_{V}\}\cong\mathfrak{sl}(2,\mathbb{C}).
 $$
 
 *Proof.* An adjoint vanishes exactly when the element brackets to zero with everything, which is
-the centre $\mathbb{C}_{\mathbb{B}}$ (*The Lie Algebra of the Antisymmetric Plain Algebra*,
+the centre $\mathbb{B}_{C}$ (*The Lie Algebra of the Antisymmetric Plain Algebra*,
 §*The Centre of the Bracket*); the image is the inner derivations, of complex dimension three
 (*The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*,
 §*The Inner Derivations*).
@@ -162,10 +162,10 @@ The whole Lie theory of the block is a consequence of the criterion. Alternation
 - **The bracket is a Lie algebra.** The block is alternating and satisfies the Jacobi identity, so
 $(\mathbb{B},\wedge)$ is a complex Lie algebra, the complexification of the cross product of
 $\mathbb{R}^{3}$.
-- **The centre and the quotient.** The centre is the central line $\mathbb{C}_{\mathbb{B}}$ and the
-quotient is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three
+- **The centre and the quotient.** The centre is the central line $\mathbb{B}_{C}$ and the
+quotient is the vector subspace $\mathbb{B}_{V}$, of complex dimension three
 (*The Lie Algebra of the Antisymmetric Plain Algebra*).
-- **The derived algebra and the identifications.** The derived algebra is $\mathrm{Vect}(\mathbb{B})$,
+- **The derived algebra and the identifications.** The derived algebra is $\mathbb{B}_{V}$,
 isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, with the real form $\mathfrak{su}(2)$ on the
 anti-Hermitian subspace (*The Lie Algebra of the Antisymmetric Plain Algebra*).
 - **The invariant form.** The Killing form is $\kappa(\tilde Q_1,\tilde Q_2)=-2\,\vec Q_1\cdot\vec Q_2$,
@@ -208,7 +208,7 @@ identity is then demanded at one element and not at all of them. The zero elemen
 operator, a derivation, in all twelve; in the associative general plain product the derivation is
 the commutator $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$, the difference of the two
 multiplications and not $L_{\tilde Q_1}$ alone, and it exists for every element; and the derived
-subalgebra $\mathrm{Vect}(\mathbb{B})$ of the antisymmetric quaternionic product is a Lie algebra
+subalgebra $\mathbb{B}_{V}$ of the antisymmetric quaternionic product is a Lie algebra
 under the restriction, although the product on the whole space is not (*The Jacobi Failure and the
 Associator Defect of the Antisymmetric Quaternionic Algebra*).
 
@@ -253,8 +253,8 @@ elements.
 | $L^{\star}_{\tilde Q_1}(\tilde Q_2\star\tilde Q_3)=(L^{\star}_{\tilde Q_1}\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(L^{\star}_{\tilde Q_1}\tilde Q_3)$ | the Leibniz identity, the criterion |
 | $\Lambda=-J$ | the Leibniz defect is the negative of the cyclic sum, for an alternating product |
 | $\tilde Q_1\tilde Q_2\dots\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the kernel of the adjoint representation, the centre of the bracket |
-| $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$ | the image of the adjoint representation, the inner derivations |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the kernel of the adjoint representation, the centre of the bracket |
+| $\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C})$ | the image of the adjoint representation, the inner derivations |
 
 ## Further Reading
 

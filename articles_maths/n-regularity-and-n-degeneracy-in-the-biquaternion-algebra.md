@@ -214,16 +214,16 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 | remarkable subspace | realified signature of $\langle\cdot\rangle_{\natural}$ | elements of norm zero |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | $(1,1)$ | $0$ alone |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | $(3,3)$ | the isotropic cone of the vector subspace |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | $(4,0)$ | $0$ alone |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | $(0,4)$ | $0$ alone |
-| $\mathbb{M}_{+}$, the Hermitian subspace | $(1,3)$ | the isotropic cone of $\mathbb{M}_{+}$, all of it non-pure |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | $(3,1)$ | the isotropic cone of $\mathbb{M}_{-}$, all of it non-pure |
+| $\mathbb{B}_{C}$, the centre | $(1,1)$ | $0$ alone |
+| $\mathbb{B}_{V}$, the vector subspace | $(3,3)$ | the isotropic cone of the vector subspace |
+| $\mathbb{B}_{H}$, the quaternion subspace | $(4,0)$ | $0$ alone |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | $(0,4)$ | $0$ alone |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | $(1,3)$ | the isotropic cone of $\mathbb{B}_{\Psi}$, all of it non-pure |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | $(3,1)$ | the isotropic cone of $\mathbb{B}_{\Phi}$, all of it non-pure |
 
 **Corollary.** Every non-zero element of the centre, the quaternion subspace and the anti-quaternion subspace is a unit. The vector, Hermitian and anti-Hermitian subspaces contain zero divisors, and the origin is the only element of norm zero in those subspaces that is not one.
 
-*Proof.* The signatures give the values, and the criterion above converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{M}_{+}$ or $\mathbb{M}_{-}$ has non-zero scalar part and is non-pure.
+*Proof.* The signatures give the values, and the criterion above converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$ has non-zero scalar part and is non-pure.
 
 **Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $\langle\cdot\rangle_{\natural}|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$.
 

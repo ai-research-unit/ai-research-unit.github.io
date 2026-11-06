@@ -58,11 +58,11 @@ The real part of the scalar coefficient is the informational time and the imagin
 
 | Sector | Condition on the coefficients | Four-vector | Physical object |
 | --- | --- | --- | --- |
-| Material $\mathbb{M}_-$ | $Q_t$ purely imaginary, $Q_k$ real | $(i c r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
-| Informational $\mathbb{M}_+$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
-| Real quaternion $\mathbb{H}_{\mathbb{B}}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
+| Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_k$ real | $(i c r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
+| Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
+| Real quaternion $\mathbb{B}_{H}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
 
-The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{M}_-$ and to its negative on $\mathbb{M}_+$.
+The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{B}_{\Phi}$ and to its negative on $\mathbb{B}_{\Psi}$.
 
 ## The Element Representations
 
@@ -99,7 +99,7 @@ $$
 \operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t, \qquad \det\mathsf{M}_2(\tilde Q)=N.
 $$
 
-In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{M}_+$ and $\mathbb{M}_-$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.
+In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.
 
 The matrix acts on a two-component column. That column is the **spinor**, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus reads as the two **Peirce copies**; the older name **column index**, kept below as a label for the column index, is a copy index and not the chirality. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.
 
@@ -182,7 +182,7 @@ The operator's trace and determinant remember only the time coordinate and the m
 On the material sector the sandwich is the frame action
 
 $$
-\operatorname{H}_{\tilde Q}(\tilde W)=\tilde Q\tilde W\tilde Q^{*}, \qquad \tilde W\in\mathbb{M}_-.
+\operatorname{H}_{\tilde Q}(\tilde W)=\tilde Q\tilde W\tilde Q^{*}, \qquad \tilde W\in\mathbb{B}_{\Phi}.
 $$
 
 It is linear in the four-vector and quadratic in the frame. On the identity it returns $\tilde Q\tilde Q^{*}$, whose scalar part is $\sum_\mu|Q_\mu|^2$, the Euclidean square of the Born form, and not the indefinite interval $\sum_\mu Q_\mu^2$. The two numbers answer different questions: the positive one is a probability weight, the indefinite one a spacetime length. The operator carries the positive one because it acts on the algebra and not on the metric.
@@ -267,7 +267,7 @@ The identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$. A frame change is spec
 
 The sandwich has three properties that the general two-sided operator does not.
 
-**It preserves the two sectors.** For $X\in\mathbb{M}_\pm$,
+**It preserves the two sectors.** For $X\in\mathbb{B}_{\Psi,\Phi}$,
 
 $$
 (\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\pm\,\tilde QX\tilde Q^{*},
@@ -283,7 +283,7 @@ $$
 \bigl(\operatorname{H}_{\tilde Q}\bigr)^{\dagger}=\operatorname{H}_{\tilde Q^{*}},
 $$
 
-so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.
+so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.
 
 On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.
 
@@ -352,8 +352,8 @@ so that $R_J$ exchanges the two columns and $R_J^2=\mathrm I$. The element has t
 | Norm data | $\sum_\mu Q_\mu^2$ | $\det=N$ | $\det=N^2$ | $\det=\lvert N\rvert^4$ |
 | Unit group | $N\neq0$ | $\mathrm{GL}(2,\mathbb{C})$ | invertible iff $N\neq0$ | invertible off the cone |
 | Centre | $\mathbb{C}e_t$ | scalar matrices | scalar matrices | scalars |
-| Material sector | $i\mathbb{R}\oplus\mathbb{R}^3$ | anti-Hermitian matrices | the subspace $Q\,\mathbb{M}_-$ | invariant subspace |
-| Informational sector | $\mathbb{R}\oplus i\mathbb{R}^3$ | Hermitian matrices | the subspace $Q\,\mathbb{M}_+$ | invariant subspace |
+| Material sector | $i\mathbb{R}\oplus\mathbb{R}^3$ | anti-Hermitian matrices | the subspace $Q\,\mathbb{B}_{\Phi}$ | invariant subspace |
+| Informational sector | $\mathbb{R}\oplus i\mathbb{R}^3$ | Hermitian matrices | the subspace $Q\,\mathbb{B}_{\Psi}$ | invariant subspace |
 | Chirality | — | the grading $\gamma_5$ on the column | the block grading $\gamma_5$ | — |
 | Pure state | idempotent | rank-one projection | block projector | rank-one projector |
 
@@ -386,7 +386,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - The one-sided composition laws are $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.
 - The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.
 - A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.
-- The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the $*$-unitary slice it is an inner automorphism.
+- The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. On the $*$-unitary slice it is an inner automorphism.
 - The acting maps form a monoid; the reversible maps are the units off the cone, the states are the idempotents, and the cone is the boundary between them.
 - The Peirce decomposition gives the four corners: populations on the diagonal, coherences off it.
 - No picture is more fundamental than another; each is a choice of what to make visible, and the correspondence table is the translation between them.
@@ -406,8 +406,8 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 | $L_{\tilde Q}(X)=\tilde Q X$, $R_{\tilde Q}(X)=X\tilde Q$ | the left and right multiplications |
 | $T^{\approx}$ | the associate, the adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ |
 | $T^{\dagger}$ | the Hermitian adjoint, the adjoint for $\langle X,Y\rangle_{*}=\operatorname{Sc}(X^{*}Y)$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and informational sectors |
-| $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the real quaternion and imaginary quaternion subspaces |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the material and informational sectors |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | the real quaternion and imaginary quaternion subspaces |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the minimal idempotents and the two column indices |
 | $\lambda_i$ | the eigenvalues of $\mathsf{M}_2(\tilde Q)$ |
 

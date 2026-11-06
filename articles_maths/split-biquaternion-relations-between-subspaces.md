@@ -15,9 +15,9 @@ The three commuting involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ each
 |---|---|---|---|
 | ${}^{\natural}$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ |
 | $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{B}_{\mathrm{spl}} = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ |
-| ${}^{*}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{B}_{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
+| ${}^{*}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\mathrm{spl}} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ |
 
-The fourth conjugation, the anti-Hermitian conjugation $\flat = -{}^{*}$, has the same eigenspaces as ${}^{*}$ with the signs exchanged: its fixed space is $\mathbb{M}_-$ and its anti-fixed space is $\mathbb{M}_+$, so it produces no subspace beyond those of the table. The three decompositions are the **scalar–vector**, the **split complex** and the **Hermitian** decomposition of the algebra, and every element has three readings, one per row.
+The fourth conjugation, the anti-Hermitian conjugation $\flat = -{}^{*}$, has the same eigenspaces as ${}^{*}$ with the signs exchanged: its fixed space is $\mathbb{B}_{\Phi}$ and its anti-fixed space is $\mathbb{B}_{\Psi}$, so it produces no subspace beyond those of the table. The three decompositions are the **scalar–vector**, the **split complex** and the **Hermitian** decomposition of the algebra, and every element has three readings, one per row.
 
 ## The Four Subspaces at a Glance
 
@@ -25,10 +25,10 @@ The fourth conjugation, the anti-Hermitian conjugation $\flat = -{}^{*}$, has th
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_t, j$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $Q_t^2$, split complex; real part $(2,0)$, Hermitian form $(1,1)$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | yes, $\cong \mathbb{H}$ | $q_t^2+q_x^2+q_y^2+q_z^2$, definite positive |
-| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_t,j\vec e_x,j\vec e_y,j\vec e_z$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
-| $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
+| $\mathbb{B}_{\Psi}$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_t,j\vec e_x,j\vec e_y,j\vec e_z$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
+| $\mathbb{B}_{\Phi}$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
 
-Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of remarkable subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{M}_\pm$ carry an **indefinite** norm of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
+Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of remarkable subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{B}_{\Psi,\Phi}$ carry an **indefinite** norm of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
 
 ## The Four Coordinate Blocks
 
@@ -36,9 +36,9 @@ The eight real coordinates of $\mathbb{B}_{\mathrm{spl}}$ are $(q_t,q_x,q_y,q_z,
 
 | block | basis | $\dim_{\mathbb{R}}$ | as an intersection |
 |---|---|---|---|
-| the real scalar line | $e_t$ | $1$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+ = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+$ |
-| the split-imaginary scalar line | $je_t$ | $1$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$ |
-| the real vector triple | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$ |
+| the real scalar line | $e_t$ | $1$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Psi} = \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Psi}$ |
+| the split-imaginary scalar line | $je_t$ | $1$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}$ |
+| the real vector triple | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}$ |
 | the split-imaginary vector triple | $j\vec e_x,j\vec e_y,j\vec e_z$ | $3$ | — (not an intersection of two of the four) |
 
 The four subspaces are sums of blocks:
@@ -48,57 +48,57 @@ $$
 $$
 
 $$
-\mathbb{M}_+ = \langle e_t \rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle, \qquad \mathbb{M}_- = \langle je_t \rangle \oplus \langle \vec e_x,\vec e_y,\vec e_z\rangle.
+\mathbb{B}_{\Psi} = \langle e_t \rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle, \qquad \mathbb{B}_{\Phi} = \langle je_t \rangle \oplus \langle \vec e_x,\vec e_y,\vec e_z\rangle.
 $$
 
-The two anti-fixed spaces that complete the pattern are also sums of blocks, $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}}) = \langle \vec e_x,\vec e_y,\vec e_z\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \langle je_t\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$. Every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple: two subspaces meet in a block if they share a block, in a sum of blocks if they share two, and in the origin if they share none. The split-imaginary vector triple is the one block that is not the intersection of two of the four subspaces; it is $\mathbb{M}_+ \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$.
+The two anti-fixed spaces that complete the pattern are also sums of blocks, $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}}) = \langle \vec e_x,\vec e_y,\vec e_z\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \langle je_t\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$. Every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple: two subspaces meet in a block if they share a block, in a sum of blocks if they share two, and in the origin if they share none. The split-imaginary vector triple is the one block that is not the intersection of two of the four subspaces; it is $\mathbb{B}_{\Psi} \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$.
 
 ## The Intersections
 
 The pairwise intersections, with dimensions:
 
-| | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $2$ | $1$ | $1$ | $1$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $1$ | $4$ | $1$ | $3$ |
-| $\mathbb{M}_+$ | $1$ | $1$ | $4$ | $0$ |
-| $\mathbb{M}_-$ | $1$ | $3$ | $0$ | $4$ |
+| $\mathbb{B}_{\Psi}$ | $1$ | $1$ | $4$ | $0$ |
+| $\mathbb{B}_{\Phi}$ | $1$ | $3$ | $0$ | $4$ |
 
 The diagonal carries the dimensions of the subspaces themselves. Three features deserve to be isolated, because they are the relations the individual articles use:
 
-- the two members of each decomposition meet in the origin, and of the four subspaces only the pair $(\mathbb{M}_+,\mathbb{M}_-)$ is a decomposition, so it is the only pair with intersection $0$;
+- the two members of each decomposition meet in the origin, and of the four subspaces only the pair $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$ is a decomposition, so it is the only pair with intersection $0$;
 - the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ meets each of the others in one of the two scalar lines, $e_t$ for the quaternion and Hermitian spaces and $je_t$ for the anti-Hermitian space;
 - the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple.
 
-The last two rows encode the same information as the block table: $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{M}_-$ share the real vector triple, while $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{M}_-$ share the split-imaginary scalar line.
+The last two rows encode the same information as the block table: $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{B}_{\Phi}$ share the real vector triple, while $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{B}_{\Phi}$ share the split-imaginary scalar line.
 
 ## The Sums
 
 The sums of the pairs, with the same ordering:
 
-| | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $2$ | $5$ | $5$ | $5$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $5$ | $4$ | $7$ | $5$ |
-| $\mathbb{M}_+$ | $5$ | $7$ | $4$ | $8$ |
-| $\mathbb{M}_-$ | $5$ | $5$ | $8$ | $4$ |
+| $\mathbb{B}_{\Psi}$ | $5$ | $7$ | $4$ | $8$ |
+| $\mathbb{B}_{\Phi}$ | $5$ | $5$ | $8$ | $4$ |
 
-The dimension of a sum is the sum of the dimensions minus the dimension of the intersection. Exactly one pair has sum $8$ and so spans the algebra: the Hermitian pair $(\mathbb{M}_+,\mathbb{M}_-)$. The pair $(\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}},\mathbb{M}_+)$ has dimension $7$, the pairs whose intersection is a scalar line have dimension $5$, and the pair $(\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}},\mathbb{M}_-)$ has intersection a vector triple and sum $4+4-3=5$. Note that the centre and the quaternion subspace together span only a five-dimensional subspace, so neither the scalar–vector nor the split complex decomposition is obtained from the four subspaces alone.
+The dimension of a sum is the sum of the dimensions minus the dimension of the intersection. Exactly one pair has sum $8$ and so spans the algebra: the Hermitian pair $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$. The pair $(\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}},\mathbb{B}_{\Psi})$ has dimension $7$, the pairs whose intersection is a scalar line have dimension $5$, and the pair $(\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}},\mathbb{B}_{\Phi})$ has intersection a vector triple and sum $4+4-3=5$. Note that the centre and the quaternion subspace together span only a five-dimensional subspace, so neither the scalar–vector nor the split complex decomposition is obtained from the four subspaces alone.
 
 ## The Involutions as Sign Patterns
 
 Each of the four involutions preserves each of the four subspaces, and its restriction to a subspace is diagonal in the displayed bases, with signs $+1$ and $-1$ only. The following table records the multiplicity of the sign $-1$ on each subspace, in the basis of the article of that subspace:
 
-| involution | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| involution | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|---|---|
 | ${}^{\natural}$ | $0$ of $2$ | $3$ of $4$ | $3$ of $4$ | $3$ of $4$ |
 | $\bar{\cdot}$ | $1$ of $2$ | $0$ of $4$ | $3$ of $4$ | $1$ of $4$ |
 | ${}^{*}$ | $1$ of $2$ | $3$ of $4$ | $0$ of $4$ | $4$ of $4$ |
 | $\flat$ | $1$ of $2$ | $1$ of $4$ | $4$ of $4$ | $0$ of $4$ |
 
-The vanishing entries are the definitions: ${}^{\natural}$ acts as the identity exactly on the centre, $\bar{\cdot}$ exactly on the quaternion subspace, ${}^{*}$ exactly on $\mathbb{M}_+$, and $\flat$ exactly on $\mathbb{M}_-$; the full multiplicities are the definitions of the complementary spaces, with $\flat$ acting as minus the identity exactly on $\mathbb{M}_+$ and ${}^{*}$ as minus the identity exactly on $\mathbb{M}_-$, as the last column shows.
+The vanishing entries are the definitions: ${}^{\natural}$ acts as the identity exactly on the centre, $\bar{\cdot}$ exactly on the quaternion subspace, ${}^{*}$ exactly on $\mathbb{B}_{\Psi}$, and $\flat$ exactly on $\mathbb{B}_{\Phi}$; the full multiplicities are the definitions of the complementary spaces, with $\flat$ acting as minus the identity exactly on $\mathbb{B}_{\Psi}$ and ${}^{*}$ as minus the identity exactly on $\mathbb{B}_{\Phi}$, as the last column shows.
 
-Two consequences follow from the table alone. First, no subspace other than the centre is fixed pointwise by more than one of the four involutions, and the four subspaces are pairwise distinct as sets. Second, the composition rule ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ is visible row by row: the coordinates negated by ${}^{*}$ are exactly those negated by one of $\bar{\cdot}$ and ${}^{\natural}$ but not by both, so the multiplicities compose by symmetric difference. On $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, for instance, $\bar{\cdot}$ negates none and ${}^{\natural}$ negates the three real vector units, so ${}^{*}$ negates the same three; on $\mathbb{M}_+$, $\bar{\cdot}$ and ${}^{\natural}$ negate the same three split-imaginary vector units, and those cancel, leaving multiplicity $0$. The counterpart in $\mathbb{B}$ has a six-column table, the two extra columns being the vector subspace $\mathrm{Vect}(\mathbb{B})$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and this is the reduction discussed below.
+Two consequences follow from the table alone. First, no subspace other than the centre is fixed pointwise by more than one of the four involutions, and the four subspaces are pairwise distinct as sets. Second, the composition rule ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ is visible row by row: the coordinates negated by ${}^{*}$ are exactly those negated by one of $\bar{\cdot}$ and ${}^{\natural}$ but not by both, so the multiplicities compose by symmetric difference. On $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, for instance, $\bar{\cdot}$ negates none and ${}^{\natural}$ negates the three real vector units, so ${}^{*}$ negates the same three; on $\mathbb{B}_{\Psi}$, $\bar{\cdot}$ and ${}^{\natural}$ negate the same three split-imaginary vector units, and those cancel, leaving multiplicity $0$. The counterpart in $\mathbb{B}$ has a six-column table, the two extra columns being the vector subspace $\mathbb{B}_{V}$ and the anti-quaternion subspace $\mathbb{B}_{iH}$, and this is the reduction discussed below.
 
 ## How the Operations Act on the Splits
 
@@ -108,11 +108,11 @@ Since the centre is central and the four subspaces are the fixed spaces of invol
 
 | pair | product lies in | symmetrized product | commutator |
 |---|---|---|---|
-| $\mathbb{M}_+, \mathbb{M}_+$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\mathbb{M}_-, \mathbb{M}_-$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\mathbb{M}_+, \mathbb{M}_-$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{M}_-$ | $\mathrm{span}\{j\vec e_x,j\vec e_y,j\vec e_z\}$ |
+| $\mathbb{B}_{\Psi}, \mathbb{B}_{\Psi}$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Phi}$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{B}_{\Phi}$ | $\mathrm{span}\{j\vec e_x,j\vec e_y,j\vec e_z\}$ |
 
-The entries are read off the expansions of the product. For $\tilde{Q}_1 = Q_{1t} e_t + j\vec Q_1$ and $\tilde{Q}_2 = Q_{2t} e_t + j\vec Q_2$ in $\mathbb{M}_+$,
+The entries are read off the expansions of the product. For $\tilde{Q}_1 = Q_{1t} e_t + j\vec Q_1$ and $\tilde{Q}_2 = Q_{2t} e_t + j\vec Q_2$ in $\mathbb{B}_{\Psi}$,
 
 $$
 \boxed{\;
@@ -120,14 +120,14 @@ $$
 \;},
 $$
 
-which has real scalar part, real vector part $\vec Q_1\times\vec Q_2$ and split-imaginary vector part $j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$; the commutator keeps only $2\,\vec Q_1\times\vec Q_2$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec Q_1\times\vec Q_2$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
+which has real scalar part, real vector part $\vec Q_1\times\vec Q_2$ and split-imaginary vector part $j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$; the commutator keeps only $2\,\vec Q_1\times\vec Q_2$, a real vector, so it lies in $\mathbb{B}_{\Phi}$, and the symmetrized product drops $\vec Q_1\times\vec Q_2$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{B}_{\Psi}$. The other rows follow from the analogous expansion for $\mathbb{B}_{\Phi}$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
 
 ### The Reduction from Remarkable Subspaces to Four
 
-In $\mathbb{B}$ the fixed spaces of ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ are complemented by naming the two **anti-fixed** spaces of ${}^{\natural}$ and $\bar{\cdot}$, namely $\mathrm{Vect}(\mathbb{B})$ and $i\mathbb{H}_{\mathbb{B}}$, which gives remarkable subspaces. In $\mathbb{B}_{\mathrm{spl}}$ only four are named. The reason is the sign in the central square:
+In $\mathbb{B}$ the fixed spaces of ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ are complemented by naming the two **anti-fixed** spaces of ${}^{\natural}$ and $\bar{\cdot}$, namely $\mathbb{B}_{V}$ and $\mathbb{B}_{iH}$, which gives remarkable subspaces. In $\mathbb{B}_{\mathrm{spl}}$ only four are named. The reason is the sign in the central square:
 
 - $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ is the six-dimensional complement of the centre in the scalar–vector split; it is treated inside the algebra article rather than as a subspace of its own, because it is larger than the other members and is not a fixed space of any of the four involutions.
-- $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the split-biquaternion norm, $\langle j\tilde{Q}\rangle_{\natural} = j^2 \langle\tilde{Q}\rangle_{\natural}$, so $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the split-biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = i^2 \langle\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is negative definite and is genuinely distinct from $\mathbb{H}_{\mathbb{B}}$.
+- $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the anti-fixed space of split complex conjugation, is the image of $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under the central scalar $j$. Since $j^2 = +1$, multiplication by $j$ **preserves** the split-biquaternion norm, $\langle j\tilde{Q}\rangle_{\natural} = j^2 \langle\tilde{Q}\rangle_{\natural}$, so $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and carries no new structure. In $\mathbb{B}$ the corresponding multiplication by the central unit $i$ **negates** the split-biquaternion norm, $\langle i\tilde{Q}\rangle_{\natural} = i^2 \langle\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so the anti-quaternion subspace $\mathbb{B}_{iH}$ is negative definite and is genuinely distinct from $\mathbb{B}_{H}$.
 
 The four named subspaces are therefore the four fixed spaces of the four involutions, and the two anti-fixed spaces are omitted: one because it is a degenerate six-dimensional object, the other because it is isometric to a named subspace.
 
@@ -135,11 +135,11 @@ The four named subspaces are therefore the four fixed spaces of the four involut
 
 ### An Intersection of Dimension Three
 
-The element $\vec e_x$ has real coefficients, so it lies in $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, and it has real vector part with zero scalar part, so it lies in $\mathbb{M}_-$; hence it lies in the intersection $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$, which is the three-dimensional space $\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The same holds for $\vec e_y$ and $\vec e_z$, and no element of the intersection has a nonzero real scalar part, by the defining conditions $Q_t = 0$ and $Q_k$ real.
+The element $\vec e_x$ has real coefficients, so it lies in $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, and it has real vector part with zero scalar part, so it lies in $\mathbb{B}_{\Phi}$; hence it lies in the intersection $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}$, which is the three-dimensional space $\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The same holds for $\vec e_y$ and $\vec e_z$, and no element of the intersection has a nonzero real scalar part, by the defining conditions $Q_t = 0$ and $Q_k$ real.
 
 ### The Hermitian Decomposition
 
-For an arbitrary element, $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ is Hermitian and $\tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*})$ is anti-Hermitian — these being fixed by ${}^{*}$ and by $\flat = -{}^{*}$ respectively — and they sum to $\tilde{Q}$. For instance $e_t \in \mathbb{M}_+$ and $j = je_t \in \mathbb{M}_-$; therefore $\mathbb{M}_+ + \mathbb{M}_- = \mathbb{B}_{\mathrm{spl}}$, and since the two meet only at the origin, the sum is direct.
+For an arbitrary element, $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ is Hermitian and $\tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*})$ is anti-Hermitian — these being fixed by ${}^{*}$ and by $\flat = -{}^{*}$ respectively — and they sum to $\tilde{Q}$. For instance $e_t \in \mathbb{B}_{\Psi}$ and $j = je_t \in \mathbb{B}_{\Phi}$; therefore $\mathbb{B}_{\Psi} + \mathbb{B}_{\Phi} = \mathbb{B}_{\mathrm{spl}}$, and since the two meet only at the origin, the sum is direct.
 
 ### A Mixed Element and Its Blocks
 
@@ -147,7 +147,7 @@ For the element $\tilde{Q} = (1 + j) + \vec e_x + j\vec e_y$ the four coordinate
 
 $$
 \boxed{\;
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + j\vec e_y \in \mathbb{M}_+, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + \vec e_x \in \mathbb{M}_-
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + j\vec e_y \in \mathbb{B}_{\Psi}, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + \vec e_x \in \mathbb{B}_{\Phi}
 \;},
 $$
 
@@ -159,11 +159,11 @@ The four distinguished subspaces are read in four ways, and the comparison is th
 
 ### The Algebra
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the only subalgebra, and it is a division algebra; the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is a commutative subalgebra with zero divisors; $\mathbb{M}_+$ is a Jordan algebra with respect to the symmetrized product; and $\mathbb{M}_-$ is a Lie algebra with respect to the commutator. The product of two elements closes inside a subspace exactly for the quaternion subspace and the centre, and the two Hermitian sectors instead exchange under the product.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the only subalgebra, and it is a division algebra; the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is a commutative subalgebra with zero divisors; $\mathbb{B}_{\Psi}$ is a Jordan algebra with respect to the symmetrized product; and $\mathbb{B}_{\Phi}$ is a Lie algebra with respect to the commutator. The product of two elements closes inside a subspace exactly for the quaternion subspace and the centre, and the two Hermitian sectors instead exchange under the product.
 
 ### The Topology
 
-The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{M}_+$ and on $\mathbb{M}_-$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, restricts to $q_t^2-q'^2_0$ of signature $(1,1)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
+The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}_{\Phi}$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, restricts to $q_t^2-q'^2_0$ of signature $(1,1)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ### The Analysis
 
@@ -175,7 +175,7 @@ Geometrically the four subspaces are the four invariant planes of the four conju
 
 ## Summary
 
-The four distinguished subspaces of $\mathbb{B}_{\mathrm{spl}}$ are the fixed spaces of the four involutions: the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ of dimension $2$, and the quaternion, Hermitian and anti-Hermitian subspaces of dimension $4$. Three of the involutions give direct-sum decompositions — the scalar–vector, the split complex and the Hermitian decomposition, of which only the last is a decomposition into two of the four named subspaces. The eight real coordinates split into four blocks: the real and split-imaginary scalar lines and the real and split-imaginary vector triples; two subspaces meet in a sum of the blocks they share, and the intersection and sum tables are computed from these. The centre meets the others in a scalar line, the quaternion subspace meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple, and only the Hermitian pair $(\mathbb{M}_+,\mathbb{M}_-)$ spans the algebra. Each involution acts diagonally on each subspace with signs $\pm 1$, its multiplicities of $-1$ composing by symmetric difference under ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The product of two Hermitian or two anti-Hermitian elements lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$, a mixed product lies in $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$; the symmetrized products respect the sectors, while the commutators give pure quaternions and the algebra $\mathrm{SO}(3)$. The family reduces from the remarkable subspaces of $\mathbb{B}$ to four because $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ is a six-dimensional non-fixed space and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under $j^2 = +1$, whereas in $\mathbb{B}$ the corresponding anti-fixed space $i\mathbb{H}_{\mathbb{B}}$ is negative definite and genuinely new.
+The four distinguished subspaces of $\mathbb{B}_{\mathrm{spl}}$ are the fixed spaces of the four involutions: the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ of dimension $2$, and the quaternion, Hermitian and anti-Hermitian subspaces of dimension $4$. Three of the involutions give direct-sum decompositions — the scalar–vector, the split complex and the Hermitian decomposition, of which only the last is a decomposition into two of the four named subspaces. The eight real coordinates split into four blocks: the real and split-imaginary scalar lines and the real and split-imaginary vector triples; two subspaces meet in a sum of the blocks they share, and the intersection and sum tables are computed from these. The centre meets the others in a scalar line, the quaternion subspace meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple, and only the Hermitian pair $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$ spans the algebra. Each involution acts diagonally on each subspace with signs $\pm 1$, its multiplicities of $-1$ composing by symmetric difference under ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The product of two Hermitian or two anti-Hermitian elements lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$, a mixed product lies in $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$; the symmetrized products respect the sectors, while the commutators give pure quaternions and the algebra $\mathrm{SO}(3)$. The family reduces from the remarkable subspaces of $\mathbb{B}$ to four because $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ is a six-dimensional non-fixed space and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under $j^2 = +1$, whereas in $\mathbb{B}$ the corresponding anti-fixed space $\mathbb{B}_{iH}$ is negative definite and genuinely new.
 
 ## Summary of Notation
 
@@ -185,7 +185,7 @@ The four distinguished subspaces of $\mathbb{B}_{\mathrm{spl}}$ are the fixed sp
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace, fixed space of ${}^{\natural}$, dimension $2$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace, fixed space of $\bar{\cdot}$, dimension $4$ |
-| $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, dimension $4$ |
+| $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, dimension $4$ |
 | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | Vector subspace, anti-fixed space of ${}^{\natural}$, dimension $6$ |
 | $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Anti-fixed space of $\bar{\cdot}$, dimension $4$ |
 | $\langle e_t\rangle, \langle je_t\rangle, \langle \vec e_x,\vec e_y,\vec e_z\rangle, \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ | The four coordinate blocks |

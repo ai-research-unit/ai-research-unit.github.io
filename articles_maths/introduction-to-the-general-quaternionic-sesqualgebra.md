@@ -6,7 +6,7 @@ The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}
 
 The consequences differ from the sibling reading in every place where the first slot matters. There the product is the derived operation, the unit is a right unit, the involution exchanges the two slots, the idempotents are the Hermitian idempotents of the algebra, the squares generate the algebraic positive cone and the ternary product is an algebraic $J^{*}$-algebra. Here the product carries the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot as well: **there is no unit on either side**, the two one-sided actions of $e_t$ being the two conjugations of the algebra; the involution does not exchange the slots, and what it produces instead is the plain product in the reversed order; the idempotents are not the Hermitian ones, and they form a two-parameter family in the quaternion subspace; the square is not fixed by the involution in general and its scalar part carries the signs of the four coordinates, the three vector squares entering negatively; and the ternary product, although it has the parity of an algebraic $J^{*}$-algebra, **fails the Jordan triple identity**. The article is therefore the record of what the sesquilinear axioms alone force, read on the product of the four that fails to be the derived one.
 
-The boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products and Their Relations over the Biquaternion Algebra*, the identities that link the four general products are *The Four General Products and Their Relations over the Biquaternion Algebra*, and their properties are compared in *The Four General Products and Their Relations over the Biquaternion Algebra*, whose sesquilinear row is the one read below. The other three readings and the general theory that each of them uses are the three articles *The Biquaternion Algebra*, *Introduction to the General Plain Sesqualgebra* and *Introduction to the General Quaternionic Algebra*, and nothing of theirs is repeated here; where the present product differs from the general plain sesquilinear one, the difference is stated and the sibling is named. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternion Algebra* and *Subspaces and Decompositions*, the two halves cut out by the involution being the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, the idempotents of the algebra are *Idempotents of the General Plain Algebra*, the simplicity of the ring is *Peirce Decompositions of the Biquaternion Algebra*, and the two bilinear articles are the ones named in the sentence above. The general theory is the sesquilinear block: the definition is *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the operator readings are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, the two halves are *Hermitian and Skew-Hermitian Elements*, and the ideals are *Ideals and Quotients of a Sesqualgebra*.
+The boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products and Their Relations over the Biquaternion Algebra*, the identities that link the four general products are *The Four General Products and Their Relations over the Biquaternion Algebra*, and their properties are compared in *The Four General Products and Their Relations over the Biquaternion Algebra*, whose sesquilinear row is the one read below. The other three readings and the general theory that each of them uses are the three articles *The Biquaternion Algebra*, *Introduction to the General Plain Sesqualgebra* and *Introduction to the General Quaternionic Algebra*, and nothing of theirs is repeated here; where the present product differs from the general plain sesquilinear one, the difference is stated and the sibling is named. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternion Algebra* and *Subspaces and Decompositions*, the two halves cut out by the involution being the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of *Hermitian and Skew-Hermitian Elements*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, the idempotents of the algebra are *Idempotents of the General Plain Algebra*, the simplicity of the ring is *Peirce Decompositions of the Biquaternion Algebra*, and the two bilinear articles are the ones named in the sentence above. The general theory is the sesquilinear block: the definition is *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the operator readings are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, the two halves are *Hermitian and Skew-Hermitian Elements*, and the ideals are *Ideals and Quotients of a Sesqualgebra*.
 
 $$
 \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}
@@ -159,15 +159,15 @@ The two witnesses show that the associator is **not confined to one grade**: one
 
 The underlying space of $\mathbb{B}$ is the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the two $\mathbb{R}$-algebras $\mathbb{C}$ and $\mathbb{H}$, and the general plain bilinear product is the product of the tensor product of algebras, $(A_1\otimes h_1)(A_2\otimes h_2)=(A_1A_2)\otimes(h_1h_2)$, read under the identification $1\otimes \vec e_k\mapsto \vec e_k$, $i\otimes \vec e_k\mapsto i\vec e_k$ (*The Biquaternion Algebra*, §*The Multiplication as a Scalar Extension*). The multiplication of this article is **not** a product of the tensor product: a product induced by the tensor product of the two $\mathbb{R}$-algebras is $\mathbb{C}$-bilinear, since the imaginary scalar is central in the first factor, whereas $\star$ is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second (§*The Two Scalar Rules*). What the tensor product gives the block is the underlying space, its two factor embeddings, and the statement that a product additive in each variable is determined by its values on a basis.
 
-**Proposition.** The multiplication is $\mathbb{R}$-bilinear, and it is determined by its values on the eight real basis elements $e_t,\dots,\vec e_z,ie_t,\dots,i\vec e_z$; equivalently, by its values on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ together with the two slot parities.
+**Proposition.** The multiplication is $\mathbb{R}$-bilinear, and it is determined by its values on the eight real basis elements $e_t,\dots,\vec e_z,ie_t,\dots,i\vec e_z$; equivalently, by its values on the real quaternion subspace $\mathbb{B}_{H}$ together with the two slot parities.
 
-**Proof.** Additivity in each variable and the two scalar rules give $\mathbb{R}$-bilinearity. For the determination, write $\tilde Q_1=p+ip'$ and $\tilde Q_2=q+iq'$ with $p,p',q,q'\in\mathbb{H}_{\mathbb{B}}$; expanding by additivity and the parities, $(\lambda\tilde Q_1)\star\tilde Q_2=\lambda(\tilde Q_1\star\tilde Q_2)$ and $\tilde Q_1\star(\lambda\tilde Q_2)=\bar\lambda(\tilde Q_1\star\tilde Q_2)$ for $\lambda=i$, gives
+**Proof.** Additivity in each variable and the two scalar rules give $\mathbb{R}$-bilinearity. For the determination, write $\tilde Q_1=p+ip'$ and $\tilde Q_2=q+iq'$ with $p,p',q,q'\in\mathbb{B}_{H}$; expanding by additivity and the parities, $(\lambda\tilde Q_1)\star\tilde Q_2=\lambda(\tilde Q_1\star\tilde Q_2)$ and $\tilde Q_1\star(\lambda\tilde Q_2)=\bar\lambda(\tilde Q_1\star\tilde Q_2)$ for $\lambda=i$, gives
 
 $$
 \tilde Q_1\star\tilde Q_2=p\star q-i\,(p\star q')+i\,(p'\star q)+p'\star q' ,
 $$
 
-so that the four values on $\mathbb{H}_{\mathbb{B}}$ determine the value everywhere. The sixteen products of the complex basis $e_\mu\star e_\nu$ are the table of §*The Multiplication Table* and are the same determination read on the complex basis.
+so that the four values on $\mathbb{B}_{H}$ determine the value everywhere. The sixteen products of the complex basis $e_\mu\star e_\nu$ are the table of §*The Multiplication Table* and are the same determination read on the complex basis.
 
 ### The Two Factor Embeddings
 
@@ -178,9 +178,9 @@ $$
 \mathbb{H}\longrightarrow\mathbb{B}, \quad h\longmapsto 1\otimes h ,
 $$
 
-have images that do **not** commute here. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ of *Subspaces and Decompositions*, and on it the multiplication is the conjugate of the reversed quaternion product. The failure of the images to commute is the failure of the structure map read on the two embeddings: for $\lambda\in\mathbb{C}$ and a real quaternion $q$ one has $(\lambda e_t)\star q=\lambda q^{\natural}=\lambda\overline{q}$ and $q\star(\lambda e_t)=\overline{\lambda}\,q^{\natural}=\overline{\lambda}\,\overline{q}$, which agree for every $q$ only when $\lambda$ is real. In the plain algebra the two images commute and the scalar is central; here they do not, and the scalar line is not the centre.
+have images that do **not** commute here. The second image is the real quaternion subspace $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ of *Subspaces and Decompositions*, and on it the multiplication is the conjugate of the reversed quaternion product. The failure of the images to commute is the failure of the structure map read on the two embeddings: for $\lambda\in\mathbb{C}$ and a real quaternion $q$ one has $(\lambda e_t)\star q=\lambda q^{\natural}=\lambda\overline{q}$ and $q\star(\lambda e_t)=\overline{\lambda}\,q^{\natural}=\overline{\lambda}\,\overline{q}$, which agree for every $q$ only when $\lambda$ is real. In the plain algebra the two images commute and the scalar is central; here they do not, and the scalar line is not the centre.
 
-**Proposition.** For $p,q\in\mathbb{H}_{\mathbb{B}}$,
+**Proposition.** For $p,q\in\mathbb{B}_{H}$,
 
 $$
 p\star q=p^{\natural}q^{*}=\overline{p}\,\overline{q}=\overline{qp} ,
@@ -230,7 +230,7 @@ $$
 Z(\mathbb{B})=\{\tilde Q_1:\tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1 \text{ for every } \tilde Q_2\}=0 .
 $$
 
-**Proof.** Let $\tilde Q_1$ be central. Testing against $\tilde Q_2=e_t$ and using the two one-sided actions, $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$ and $e_t\star\tilde Q_1=\tilde Q_1^{*}$, so $\tilde Q_1^{\natural}=\tilde Q_1^{*}$; on the four coordinates this reads $\varepsilon_\nu X_\nu=\varepsilon_\nu\overline{X_\nu}$, hence every $X_\nu$ is real and $\tilde Q_1\in\mathbb{H}_{\mathbb{B}}$. For a real $\tilde Q_1=x_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$ one has $\tilde Q_1^{\natural}=\overline{\tilde Q_1}=x_t-x_x\vec e_x-x_y\vec e_y-x_z\vec e_z$ (the natural conjugation is the quaternion conjugation on the real subspace) and $\tilde Q_1^{*}=\overline{\tilde Q_1}$, while $(i\vec e_y)^{\natural}=-i\vec e_y$ and $(i\vec e_y)^{*}=i\vec e_y$. Testing against $\tilde Q_2=i\vec e_y$ gives $\tilde Q_1\star i\vec e_y=\overline{\tilde Q_1}\,i\vec e_y$ and $i\vec e_y\star\tilde Q_1=-i\vec e_y\overline{\tilde Q_1}$, so centrality forces $\overline{\tilde Q_1}\vec e_y+\vec e_y\overline{\tilde Q_1}=0$. The quaternion product is $\overline{\tilde Q_1}\vec e_y+\vec e_y\overline{\tilde Q_1}=2x_t\vec e_y+2x_y e_t$, hence $x_t=x_y=0$; the tests against $i\vec e_x$ and $i\vec e_z$ give $x_x=x_z=0$ in the same way. Therefore $\tilde Q_1=0$, and no nonzero element is central.
+**Proof.** Let $\tilde Q_1$ be central. Testing against $\tilde Q_2=e_t$ and using the two one-sided actions, $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$ and $e_t\star\tilde Q_1=\tilde Q_1^{*}$, so $\tilde Q_1^{\natural}=\tilde Q_1^{*}$; on the four coordinates this reads $\varepsilon_\nu X_\nu=\varepsilon_\nu\overline{X_\nu}$, hence every $X_\nu$ is real and $\tilde Q_1\in\mathbb{B}_{H}$. For a real $\tilde Q_1=x_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$ one has $\tilde Q_1^{\natural}=\overline{\tilde Q_1}=x_t-x_x\vec e_x-x_y\vec e_y-x_z\vec e_z$ (the natural conjugation is the quaternion conjugation on the real subspace) and $\tilde Q_1^{*}=\overline{\tilde Q_1}$, while $(i\vec e_y)^{\natural}=-i\vec e_y$ and $(i\vec e_y)^{*}=i\vec e_y$. Testing against $\tilde Q_2=i\vec e_y$ gives $\tilde Q_1\star i\vec e_y=\overline{\tilde Q_1}\,i\vec e_y$ and $i\vec e_y\star\tilde Q_1=-i\vec e_y\overline{\tilde Q_1}$, so centrality forces $\overline{\tilde Q_1}\vec e_y+\vec e_y\overline{\tilde Q_1}=0$. The quaternion product is $\overline{\tilde Q_1}\vec e_y+\vec e_y\overline{\tilde Q_1}=2x_t\vec e_y+2x_y e_t$, hence $x_t=x_y=0$; the tests against $i\vec e_x$ and $i\vec e_z$ give $x_x=x_z=0$ in the same way. Therefore $\tilde Q_1=0$, and no nonzero element is central.
 
 **Corollary.** The block is **not a central sesqualgebra**: its scalar line and its centre are disjoint but for $0$, since the first is $\mathbb{C}e_t$ and the second is $0$. This is the sharpest structural difference from the plain row, whose centre is $\mathbb{C}e_t$ (*The Biquaternion Algebra*, §*The Scalars Are the Centre*); there the scalars are the centre, here the scalar action is one-sided and reaches no centre.
 
@@ -312,7 +312,7 @@ $$
 The two halves that the involution cuts out of the algebra are the Hermitian and the skew-Hermitian subspaces
 
 $$
-\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\} , \qquad \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\} ,
+\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\} , \qquad \mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=-\tilde Q\} ,
 $$
 
 of *Hermitian and Skew-Hermitian Elements* and *Subspaces and Decompositions*, the fixed and the anti-fixed sets of ${}^{*}$.
@@ -320,13 +320,13 @@ of *Hermitian and Skew-Hermitian Elements* and *Subspaces and Decompositions*, t
 **Proposition.** The multiplication does not preserve the two halves: the product of two Hermitian elements can be skew-Hermitian. The square of an element of either half is a scalar, the central scalar $\tilde Q_1^{\natural}\tilde Q_1$ with the sign of the half,
 
 $$
-\tilde Q_1\star\tilde Q_1=\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^2\Bigr)e_t \ \ (\tilde Q_1\in\mathbb{M}_+) , \qquad
-\tilde Q_1\star\tilde Q_1=-\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^2\Bigr)e_t \ \ (\tilde Q_1\in\mathbb{M}_-) ,
+\tilde Q_1\star\tilde Q_1=\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^2\Bigr)e_t \ \ (\tilde Q_1\in\mathbb{B}_{\Psi}) , \qquad
+\tilde Q_1\star\tilde Q_1=-\Bigl(\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}^2\Bigr)e_t \ \ (\tilde Q_1\in\mathbb{B}_{\Phi}) ,
 $$
 
 so in particular the square of an element of either half is fixed by the involution.
 
-**Proof.** For the first clause take $\tilde Q_1=i\vec e_x$ and $\tilde Q_2=i\vec e_y$, both Hermitian; then $\tilde Q_1\star\tilde Q_2=(-i\vec e_x)(i\vec e_y)=\vec e_z$, and $\vec e_z$ is skew-Hermitian, $\vec e_z^{*}=-\vec e_z$. For the second, let $\tilde Q_1=Q_{1t}+\vec Q_1\in\mathbb{M}_+$, so that $Q_{1t}$ is real, $\vec Q_1$ is purely imaginary and $\overline{\tilde Q_1}=\tilde Q_1^{\natural}$, while $\tilde Q_1^{*}=\tilde Q_1$; then $\tilde Q_1\star\tilde Q_1=\tilde Q_1^{\natural}\tilde Q_1^{*}=\tilde Q_1^{\natural}\tilde Q_1=\bigl(\sum_\mu Q_{1\mu}^2\bigr)e_t$, the two factors commuting and $\tilde Q_1^{\natural}\tilde Q_1$ being the central scalar on which the square turns. Let $\tilde Q_1\in\mathbb{M}_-$: then $Q_{1t}$ is purely imaginary and $\vec Q_1$ is real, so $\overline{\tilde Q_1}=-\tilde Q_1^{\natural}$ and $\tilde Q_1^{*}=-\tilde Q_1$, whence $\tilde Q_1\star\tilde Q_1=\tilde Q_1^{\natural}\tilde Q_1^{*}=-\tilde Q_1^{\natural}\tilde Q_1=-\bigl(\sum_\mu Q_{1\mu}^2\bigr)e_t$.
+**Proof.** For the first clause take $\tilde Q_1=i\vec e_x$ and $\tilde Q_2=i\vec e_y$, both Hermitian; then $\tilde Q_1\star\tilde Q_2=(-i\vec e_x)(i\vec e_y)=\vec e_z$, and $\vec e_z$ is skew-Hermitian, $\vec e_z^{*}=-\vec e_z$. For the second, let $\tilde Q_1=Q_{1t}+\vec Q_1\in\mathbb{B}_{\Psi}$, so that $Q_{1t}$ is real, $\vec Q_1$ is purely imaginary and $\overline{\tilde Q_1}=\tilde Q_1^{\natural}$, while $\tilde Q_1^{*}=\tilde Q_1$; then $\tilde Q_1\star\tilde Q_1=\tilde Q_1^{\natural}\tilde Q_1^{*}=\tilde Q_1^{\natural}\tilde Q_1=\bigl(\sum_\mu Q_{1\mu}^2\bigr)e_t$, the two factors commuting and $\tilde Q_1^{\natural}\tilde Q_1$ being the central scalar on which the square turns. Let $\tilde Q_1\in\mathbb{B}_{\Phi}$: then $Q_{1t}$ is purely imaginary and $\vec Q_1$ is real, so $\overline{\tilde Q_1}=-\tilde Q_1^{\natural}$ and $\tilde Q_1^{*}=-\tilde Q_1$, whence $\tilde Q_1\star\tilde Q_1=\tilde Q_1^{\natural}\tilde Q_1^{*}=-\tilde Q_1^{\natural}\tilde Q_1=-\bigl(\sum_\mu Q_{1\mu}^2\bigr)e_t$.
 
 **Remark.** The sibling proves that its product is Hermitian-symmetric, that is that the involution exchanges its two slots, and then reads the two halves as the involution's fixed and anti-fixed subspaces of the multiplication. Here the involution does not exchange the slots, and the halves are the halves of the algebra; the multiplication reads them by the proposition above, which is what is left of the sibling's theorem when the first slot carries the natural conjugation.
 
@@ -359,7 +359,7 @@ $$
 \mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu\overline{Q_\mu}=|Q_t|^2-|Q_x|^2-|Q_y|^2-|Q_z|^2 ,
 $$
 
-the three vector squares entering negatively; and on the two halves the square is the central scalar $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, with the sign $+$ on $\mathbb{M}_+$ and the sign $-$ on $\mathbb{M}_-$.
+the three vector squares entering negatively; and on the two halves the square is the central scalar $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, with the sign $+$ on $\mathbb{B}_{\Psi}$ and the sign $-$ on $\mathbb{B}_{\Phi}$.
 
 **Proof.** The first display is the two conjugations of the rule read on equal arguments, and the second is the scalar–vector form: the dot product enters negatively and the two vector terms cancel. The scalar part is the scalar part $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ of the four-general-products article with the first factor read through ${}^{\natural}$, which is $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ at $\tilde Q_1=\tilde Q_2$. The last clause is the proposition of §*The Product Does Not Exchange the Halves*, where the two signs are computed.
 
@@ -373,10 +373,10 @@ $$
 \overline{\tilde Q}\,\tilde Q=\tilde Q^{\natural} ,
 $$
 
-and among the elements of the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ they are $0$, $e_t$, and the **two-parameter family**
+and among the elements of the quaternion subspace $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ they are $0$, $e_t$, and the **two-parameter family**
 
 $$
-\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \quad (\vec u,\vec u)=1 ,
+\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathbb{B}_{V,\mathbb{R}} , \quad (\vec u,\vec u)=1 ,
 $$
 
 a two-parameter family in the real three-dimensional vector subspace.
@@ -501,14 +501,14 @@ Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on t
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | complex basis; $e_t$ the unit, $\vec e_k$ the quaternion units |
 | $i$ | scalar imaginary, $i^2=-1$; central for the plain product, not for the multiplication of this article |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_kQ_k\vec e_k$ |
-| $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the real quaternion subspace, on which $p\star q=\overline{qp}$ |
+| $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the real quaternion subspace, on which $p\star q=\overline{qp}$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the natural, the coefficientwise and the star conjugation |
 | $\varsigma(z)=\bar z$ | the base involution of the sesqualgebra |
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugations on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ and $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
 | $\sigma$ | the first row, $\sigma(\tilde Q)=e_t\star\tilde Q=\tilde Q^{*}$ |
 | $[\tilde Q_1,\tilde Q_2,\tilde Q_3]$ | the associator, $\overline{\tilde Q_2}\tilde Q_1\tilde Q_3^{*}-\tilde Q_1^{\natural}\tilde Q_3\overline{\tilde Q_2}$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the skew-Hermitian subspaces, the fixed and the anti-fixed sets of ${}^{*}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and the skew-Hermitian subspaces, the fixed and the anti-fixed sets of ${}^{*}$ |
 | $Z(\mathbb{B})=0$ | the centre of the multiplication, trivial |
 | $\varphi(A)=Ae_t$ | the scalar action; its image $\mathbb{C}e_t$ is a subalgebra but is not central |
 | $\sum_\mu Q_\mu^{2}$ | the central scalar of the square on either half, $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ |

@@ -19,7 +19,7 @@ The article is organised as follows. The next section sets up the background and
 - Companion article *The Scalar Fock Space in Biquaternionic Form*, for the Fock space, the vacuum, and the charge superselection sectors.
 - Companion article *Bogoliubov Transformations in Biquaternionic Form*, for the general theory of the mixing, its canonical normalization, and its realization as a squeezing of the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation and its frequency branches.
-- Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$ and the charge.
+- Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $\mathrm{U}(1)$ current $\tilde J\in\mathbb{B}_{\Phi}$ and the charge.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
 
 ## The Background and the Mode Equation
@@ -27,7 +27,7 @@ The article is organised as follows. The next section sets up the background and
 A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ shifts the mass term. Write the background as a central-valued classical field,
 
 $$
-\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde Q_5(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t\in\mathbb{B}_{C},
 \qquad
 \mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\xi ,
 $$
@@ -225,11 +225,11 @@ which is symmetric in $\omega_1\leftrightarrow\omega_2$, vanishes when the frequ
 
 Four statements summarise what the framework contributes to scalar pair creation.
 
-**The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the centre, and the state module is not acted on by the background.
+**The background is central.** The driving field is a classical element of $\mathbb{B}_{C}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the centre, and the state module is not acted on by the background.
 
 **The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde P\rangle_{\natural}=-\mu^2-g\xi_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
-**The charge selects pairs.** The framework's canonical continuous symmetry is the central $\mathrm{U}(1)$, whose Noether current $\tilde J$ lies in $\mathbb{M}_-$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
+**The charge selects pairs.** The framework's canonical continuous symmetry is the central $\mathrm{U}(1)$, whose Noether current $\tilde J$ lies in $\mathbb{B}_{\Phi}$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
 **The algebra supplies no mechanism of its own.** The mixing is a Bogoliubov transformation on the Fock space built from an imported module; the scalar sector has no native ladder in $\mathbb{B}$, because no pair in the algebra realizes $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. The framework contributes the central-valued background, the biquaternion-norm interpretation of the asymptotic frequencies, and the notation; it contributes no new creation mechanism. The process is standard scalar quantum field theory in an external background, transcribed.
 
@@ -262,7 +262,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde Q_5=\xi\,e_t$ | Scalar field and central background |
 | $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})\xi$ | Central interaction |
 | $\omega_{\vec k}^2(r'_t)=\vec k^2+\mu^2+g\xi(r'_t)$ | Time-dependent frequency |

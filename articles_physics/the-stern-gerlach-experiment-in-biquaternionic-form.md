@@ -8,13 +8,13 @@ This article carries the experiment into the biquaternion algebra $\mathbb{B} = 
 
 The findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The field coupling is a Hermitian element of $\mathbb{M}_+$.** The magnetic Hamiltonian $\tilde R_\psi = -\gamma B_z\,\tilde{S}_3$ is an element of the Hermitian subspace, as are the force operator and the observable whose measurement the apparatus performs. The field does not couple to the material sector directly; it couples to the informational sector, and the material sector carries only the resulting centre-of-mass motion.
+1. **The field coupling is a Hermitian element of $\mathbb{B}_{\Psi}$.** The magnetic Hamiltonian $\tilde R_\psi = -\gamma B_z\,\tilde{S}_3$ is an element of the Hermitian subspace, as are the force operator and the observable whose measurement the apparatus performs. The field does not couple to the material sector directly; it couples to the informational sector, and the material sector carries only the resulting centre-of-mass motion.
 2. **The two beams are the two idempotents of $\tilde{S}_3$.** The spin part of the apparatus performs the spectral decomposition $\tilde{S}_3 = \tfrac{\hbar}{2}\tilde\Pi_1(\vec u_z) - \tfrac{\hbar}{2}\tilde\Pi_2(\vec u_z)$, and the two outgoing beams are the two idempotents, correlated with the two spatial directions of deflection. The force eigenvalues are the eigenvalues of $\tilde{S}_3$, which is the algebraic content of space quantisation.
-3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})=\tfrac12(1\pm r_3)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative.
+3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})=\tfrac12(1\pm r_3)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative.
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec r = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
-5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ acting by conjugation.
+5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{B}_{H}$ acting by conjugation.
 
-The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde R_\psi = c r_t e_t + i\vec r_\psi \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the trace formula is $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ with $\mathrm{Tr}(e_t) = 2$.
+The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the observables are $\tilde R_\psi = c r_t e_t + i\vec r_\psi \in \mathbb{B}_{\Psi}$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the trace formula is $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ with $\mathrm{Tr}(e_t) = 2$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
@@ -76,16 +76,16 @@ Two remarks on the classical limit clarify what is and is not quantum about the 
 In the biquaternion framework the spin operators are the Hermitian elements
 
 $$
-\tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k \in \mathbb{M}_+, \qquad k = 1,2,3,
+\tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k \in \mathbb{B}_{\Psi}, \qquad k = 1,2,3,
 $$
 
 which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\tfrac{\hbar}{2}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
 
 $$
-\tilde R_\psi = -\gamma B(z)\,\tilde{S}_3 = -\frac{\hbar\gamma B(z)}{2}\,i \vec e_z \in \mathbb{M}_+ .
+\tilde R_\psi = -\gamma B(z)\,\tilde{S}_3 = -\frac{\hbar\gamma B(z)}{2}\,i \vec e_z \in \mathbb{B}_{\Psi} .
 $$
 
-That the Hamiltonian is an element of $\mathbb{M}_+$ is the first structural fact of the article: the field couples to the **informational sector**, not to the material sector. The observable it multiplies, $\tilde{S}_3$, is a Hermitian element of the same subspace, and its eigenvectors are idempotents. The centre-of-mass coordinate $z$, by contrast, is a real spatial coordinate, hence a component of the material sector $\mathbb{M}_-$; the field gradient acts on the spin through $\mathbb{M}_+$ and the deflection is read in $\mathbb{M}_-$.
+That the Hamiltonian is an element of $\mathbb{B}_{\Psi}$ is the first structural fact of the article: the field couples to the **informational sector**, not to the material sector. The observable it multiplies, $\tilde{S}_3$, is a Hermitian element of the same subspace, and its eigenvectors are idempotents. The centre-of-mass coordinate $z$, by contrast, is a real spatial coordinate, hence a component of the material sector $\mathbb{B}_{\Phi}$; the field gradient acts on the spin through $\mathbb{B}_{\Psi}$ and the deflection is read in $\mathbb{B}_{\Phi}$.
 
 ### The Force Operator
 
@@ -95,7 +95,7 @@ $$
 \tilde{F}_3 = -\frac{\partial \tilde R_\psi}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,i \vec e_z .
 $$
 
-So the force is $\gamma (dB/dz)$ times the spin observable, exactly as in the standard account, and it is again a Hermitian element of $\mathbb{M}_+$. Its spectral decomposition is inherited from that of $\tilde{S}_3$:
+So the force is $\gamma (dB/dz)$ times the spin observable, exactly as in the standard account, and it is again a Hermitian element of $\mathbb{B}_{\Psi}$. Its spectral decomposition is inherited from that of $\tilde{S}_3$:
 
 $$
 \tilde{F}_3 = \gamma (dB/dz)\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar\gamma (dB/dz)}{2}\,\tilde\Pi_2(\vec u_z).
@@ -126,7 +126,7 @@ and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_3\tilde\
 
 ### The General State and Its Resolution
 
-An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive element of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image),
+An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image),
 
 $$
 \tilde{Ϛ} = \tfrac12\left(e_t + i\vec r\right), \qquad \vec r\in\mathbb{R}^3, \quad |\vec r|\leq 1,
@@ -216,7 +216,7 @@ $$
 The rotation that carries the $z$-direction into $\vec u$ is the real-quaternion rotor
 
 $$
-\tilde u(\theta) = \exp\!\left(\frac{\theta}{2}\vec e_y\right) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec e_y \in \mathbb{H}_{\mathbb{B}},
+\tilde u(\theta) = \exp\!\left(\frac{\theta}{2}\vec e_y\right) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec e_y \in \mathbb{B}_{H},
 $$
 
 and it acts on the observables by conjugation. Direct multiplication gives
@@ -270,12 +270,12 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
+**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{B}_{\Psi}$.
 
 **What the biquaternion notation provides.**
 
-- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the normalised Hermitian form, read through the trace. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
-- **Space quantisation as a spectral decomposition.** The finite number of beams is the finite number of terms in the spectral decomposition of the observable, and the deflection of each beam is the corresponding eigenvalue. In the algebra this is a statement about the rank-one idempotents of $\mathbb{M}_+$, which are automatically complete and orthogonal.
+- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{B}_{\Psi}$; the states are the idempotents of that subspace; and the outcome probabilities are the normalised Hermitian form, read through the trace. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
+- **Space quantisation as a spectral decomposition.** The finite number of beams is the finite number of terms in the spectral decomposition of the observable, and the deflection of each beam is the corresponding eigenvalue. In the algebra this is a statement about the rank-one idempotents of $\mathbb{B}_{\Psi}$, which are automatically complete and orthogonal.
 - **Decoherence as a partial trace with orthogonal labels.** The loss of the transverse Bloch components is the vanishing of the cross terms between two orthogonal spatial wavepackets. The algebra makes it visible that what is destroyed is exactly the coherence term $\tfrac12 i(r_1\vec e_x+r_2\vec e_y)$, and that the surviving component is the one along the field.
 - **The rotation of the apparatus is a rotor.** The analyser direction is the axis $\vec u$ of the idempotent, and the passage from one axis to another is conjugation by a unit real quaternion. The analyser's parameter space is the Bloch sphere, the same sphere on which the states live.
 
@@ -285,7 +285,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 1. **The continuous Stern–Gerlach effect.** When the field is not perfectly aligned and the beam is not perfectly collimated, the two spots acquire a small asymmetry and the measurement is weak rather than projective. Does the algebra's description of the weak-measurement limit — a partial entanglement with the position — have structural content beyond the partial trace used above?
 
-2. **The spatial wavepacket as a material-sector object.** The deflection lives in the spatial part of $\mathbb{M}_-$, while the spin lives in $\mathbb{M}_+$. Is there a formulation in which the spin–position entanglement is written as an element of a single algebra, rather than as a tensor product of an informational and a material factor? The companion article *The Informational Sector: States, Observables and Probability* leaves the coupling between the sectors open, and the Stern–Gerlach entanglement is a concrete instance of it.
+2. **The spatial wavepacket as a material-sector object.** The deflection lives in the spatial part of $\mathbb{B}_{\Phi}$, while the spin lives in $\mathbb{B}_{\Psi}$. Is there a formulation in which the spin–position entanglement is written as an element of a single algebra, rather than as a tensor product of an informational and a material factor? The companion article *The Informational Sector: States, Observables and Probability* leaves the coupling between the sectors open, and the Stern–Gerlach entanglement is a concrete instance of it.
 
 3. **The role of the field gradient in the algebra.** The coupling $\tilde R_\psi = -\gamma B(z)\tilde{S}_3$ uses the material coordinate $z$ as a parameter multiplying an informational observable. Is there an algebraic object that generates this parameter dependence, or is the gradient an external field in the strict sense?
 
@@ -295,7 +295,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## Summary
 
-The Stern–Gerlach experiment passes a beam of spin-1/2 atoms through an inhomogeneous magnetic field and finds it split into two. In the biquaternion framework the magnetic coupling is the Hermitian element $\tilde R_\psi = -\gamma B(z)\tilde{S}_3 \in \mathbb{M}_+$, with $\tilde{S}_3 = \tfrac{\hbar}{2}i\vec e_z$; the force is $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$; and the two beams are the two idempotents in the spectral decomposition
+The Stern–Gerlach experiment passes a beam of spin-1/2 atoms through an inhomogeneous magnetic field and finds it split into two. In the biquaternion framework the magnetic coupling is the Hermitian element $\tilde R_\psi = -\gamma B(z)\tilde{S}_3 \in \mathbb{B}_{\Psi}$, with $\tilde{S}_3 = \tfrac{\hbar}{2}i\vec e_z$; the force is $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$; and the two beams are the two idempotents in the spectral decomposition
 
 $$
 \tilde{S}_3 = \frac{\hbar}{2}\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\tilde\Pi_2(\vec u_z),
@@ -316,9 +316,9 @@ A rotated analyser measures $\tilde{S}(\vec u) = \tfrac{\hbar}{2}i\vec u$ for $\
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -1$ |
-| $\mathbb{M}_+$ | Hermitian (informational) subspace: observables, states, Hamiltonians |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) subspace: the centre-of-mass coordinate |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the rotation rotors |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace: observables, states, Hamiltonians |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) subspace: the centre-of-mass coordinate |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the rotation rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\tilde R_\psi = -\gamma B(z)\tilde{S}_3$ | Magnetic Hamiltonian in the field $\vec B = B\vec u_z$ |
 | $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$ | Stern–Gerlach force operator |

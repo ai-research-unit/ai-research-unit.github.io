@@ -70,7 +70,7 @@ This is why restriction to the centre governs the automorphism group; it is used
 | $\mathbb{B}$ | $\mathbb{C}\cdot 1$ | the central scalar imaginary $i$ commutes with everything |
 | $M_n(k)$ | $k \cdot I_n$ | the scalar matrices |
 
-The entries for $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$ and $\mathbb{B}$ follow from the scalar-vector multiplication formula: an element commutes with every pure vector precisely when its vector part is zero, and the scalars that commute with the quaternion units are exactly the coefficients in the ground ring. In $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the centre is the copy of $\mathbb{C}$ spanned by $e_t$, of real dimension $2$; in the eight-dimensional real view this is the subspace $\mathbb{C}_{\mathbb{B}}$.
+The entries for $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$ and $\mathbb{B}$ follow from the scalar-vector multiplication formula: an element commutes with every pure vector precisely when its vector part is zero, and the scalars that commute with the quaternion units are exactly the coefficients in the ground ring. In $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the centre is the copy of $\mathbb{C}$ spanned by $e_t$, of real dimension $2$; in the eight-dimensional real view this is the subspace $\mathbb{B}_{C}$.
 
 **Example (matrix and endomorphism algebras).** For a commutative ring $R$ and $n \geq 1$, the centre of $M_n(R)$ is the set of scalar matrices $\{r I_n : r \in R\}$, isomorphic to $R$. Indeed a matrix commuting with every matrix unit $E_{ij}$ is scalar. More generally, for a faithful module $M$ over a ring $A$, the centre of $\operatorname{End}_A(M)$ need not be the scalars; for $A$ central simple and $M$ the regular module it is.
 

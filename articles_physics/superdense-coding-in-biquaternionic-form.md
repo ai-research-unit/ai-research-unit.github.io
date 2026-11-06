@@ -207,11 +207,11 @@ read in the two directions. It is a statement about the tensor-product algebra: 
 
 **1. The encoding group in higher dimensions.** For a qudit the encoding group is larger and the codewords form an orthonormal basis of the composite. In the framework, is the encoding for $n$ qubits the action of a finite group — a Weyl–Heisenberg group in the Pauli/tensor structure — on an idempotent basis of $\mathbb{B}^{\otimes n}$?
 
-**2. The resource and the biquaternion norm.** The Bell idempotent has the property that both its reduced states are maximally mixed, which is a statement about the partial traces rather than about the biquaternion norm. Is there an algebraic invariant of $\mathbb{M}_+^{\otimes2}$ that quantifies "how much" entanglement is available as a resource, and how does it relate to the biquaternion norm of the two-qubit state?
+**2. The resource and the biquaternion norm.** The Bell idempotent has the property that both its reduced states are maximally mixed, which is a statement about the partial traces rather than about the biquaternion norm. Is there an algebraic invariant of $\mathbb{B}_{\Psi}^{\otimes2}$ that quantifies "how much" entanglement is available as a resource, and how does it relate to the biquaternion norm of the two-qubit state?
 
 **3. Duality with teleportation.** Superdense coding and teleportation are duals: one exchanges a qubit for two bits, the other two bits for a qubit, both using a Bell pair. Is there a single algebraic statement — a kind of channel duality on $\mathbb{B}\otimes\mathbb{B}$ — from which both protocols follow?
 
-**4. The role of the two sectors.** The protocol uses only $\mathbb{M}_+^{\otimes2}$. Does the material sector $\mathbb{M}_-$ play any role in the resource theory of entanglement, or is it inert for communication tasks?
+**4. The role of the two sectors.** The protocol uses only $\mathbb{B}_{\Psi}^{\otimes2}$. Does the material sector $\mathbb{B}_{\Phi}$ play any role in the resource theory of entanglement, or is it inert for communication tasks?
 
 **5. Empirical content.** Superdense coding is standard and experimentally realized; the framework reproduces it and adds no prediction.
 

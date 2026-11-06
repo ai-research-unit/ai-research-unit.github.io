@@ -72,7 +72,7 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde{U}\in\mathbb{B}_{H}$ a real unit quaternion. Under this action the centre $\mathbb{B}_{C} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
 
 $$
 \boxed{\;\mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
@@ -266,10 +266,10 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\dim_{\mathbb{C}} = 4$, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t+\epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
+| $\mathbb{B}_{C} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_t) = 2$ (the conventions article) |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\tilde{U}\in\mathbb{B}_{H}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $\operatorname{sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |

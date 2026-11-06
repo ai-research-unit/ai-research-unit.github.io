@@ -7,7 +7,7 @@ The equations of relativistic mechanics — the four-position, the invariant int
 The purpose is not to derive new physics. The purpose is to rewrite the established equations of relativistic mechanics in the biquaternion language, so that the algebraic structure of the theory is manifest. The biquaternion formulation makes the following structural facts explicit:
 
 - The invariant interval is the **biquaternion norm of the displacement biquaternion**.
-- The four-velocity and four-momentum are **biquaternions of the anti-Hermitian subspace** $\mathbb{M}_-$.
+- The four-velocity and four-momentum are **biquaternions of the anti-Hermitian subspace** $\mathbb{B}_{\Phi}$.
 - The mass-shell relation is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant.
 - The conserved current is characterized by the **scalar part of the quaternion-conjugate gradient** vanishing.
 
@@ -29,13 +29,13 @@ $$
 \tilde R_\varphi = i c r'_{t}\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
 $$
 
-The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{M}_-$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x_\mu = (i c r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in the $i c r'_t$ convention.
+The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x_\mu = (i c r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in the $i c r'_t$ convention.
 
-It is a **material element**; it is what is observed. Its **observable** is the Hermitian representative $i\tilde R_\varphi\in\mathbb{M}_+$, whose eigenvalues are the readings.
+It is a **material element**; it is what is observed. Its **observable** is the Hermitian representative $i\tilde R_\varphi\in\mathbb{B}_{\Psi}$, whose eigenvalues are the readings.
 
 ## The Invariant Interval
 
-The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde R_\varphi \in \mathbb{M}_-$:
+The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde R_\varphi \in \mathbb{B}_{\Phi}$:
 
 $$
 \boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -c^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
@@ -45,7 +45,7 @@ Here $\overline{d\tilde R_\varphi} = ic\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec 
 
 The displacement $d\tilde R_\varphi$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 
-**The biquaternion norm on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t = i q'_t$ imaginary and $\vec Q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ real, the biquaternion norm is
+**The biquaternion norm on $\mathbb{B}_{\Phi}$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t = i q'_t$ imaginary and $\vec Q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ real, the biquaternion norm is
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + |\vec Q|^2 = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2,
@@ -69,7 +69,7 @@ $$
 \gamma = \frac{1}{\sqrt{1 - \vec v^2/c^2}}
 $$
 
-is the Lorentz factor. The scalar part of $\tilde{V}$ is **imaginary** ($i\gamma c$) and the vector part is **real** ($\gamma\vec v$), so $\tilde{V}$ lies in the anti-Hermitian subspace $\mathbb{M}_-$, like the four-position. In compact form,
+is the Lorentz factor. The scalar part of $\tilde{V}$ is **imaginary** ($i\gamma c$) and the vector part is **real** ($\gamma\vec v$), so $\tilde{V}$ lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like the four-position. In compact form,
 
 $$
 \tilde{V} = ic\,\gamma\,e_t + \gamma\vec v.
@@ -91,7 +91,7 @@ $$
 \tilde{P} = m\tilde{V} = \gamma m\left(ic\,e_t + \vec v\right) = i\frac{E}{c}\,e_t + \vec p,
 $$
 
-where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $\vec p = \gamma m\vec v$ is the relativistic three-momentum. The scalar part of $\tilde{P}$ is $iE/c$ and the vector part is $\vec p$, so $\tilde{P}$ also lies in the anti-Hermitian subspace $\mathbb{M}_-$.
+where $m$ is the rest mass, $E = \gamma m c^2$ is the relativistic energy, and $\vec p = \gamma m\vec v$ is the relativistic three-momentum. The scalar part of $\tilde{P}$ is $iE/c$ and the vector part is $\vec p$, so $\tilde{P}$ also lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 
 ## The Mass-Shell Relation
 
@@ -123,7 +123,7 @@ $$
 \tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}}{d\tau},
 $$
 
-where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{M}_-$, like $\tilde{P}$.
+where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like $\tilde{P}$.
 
 Since $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is constant along the worldline, differentiating gives
 
@@ -141,7 +141,7 @@ $$
 
 where $ϙ$ is the charge, $\vec E$ and $\vec B$ are the electric and magnetic fields, and $\vec v$ is the particle velocity. The scalar part is the **power** delivered to the particle (imaginary, as required by the $i c r'_t$ convention for a four-vector), and the vector part is the **relativistic three-force** $\gamma ϙ(\vec E + \vec v\times\vec B)$.
 
-**Note on the biquaternion expression.** The component formula above is standard and unambiguous. The expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{M}_-$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde F$ and $\tilde{V}$ is deferred.
+**Note on the biquaternion expression.** The component formula above is standard and unambiguous. The expression of the same four-force as a **biquaternion product** of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it needs to be worked out carefully. This is left as an open question, to be addressed when the relevant literature on the biquaternion formulation of the Lorentz force is reviewed. The structural fact — that the four-force is an element of $\mathbb{B}_{\Phi}$ built from the field strength and the four-velocity — is correct; the explicit formula in terms of $\tilde F$ and $\tilde{V}$ is deferred.
 
 ## The Action
 
@@ -167,7 +167,7 @@ $$
 \tilde{J} = ic\,\rho\,e_t + \vec j,
 $$
 
-where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{M}_-$ (imaginary scalar part, real vector part). The **conservation of charge** is expressed by the biquaternion equation
+where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). The **conservation of charge** is expressed by the biquaternion equation
 
 $$
 \boxed{\;\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0\;}
@@ -236,7 +236,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 
 ## Structural Observations
 
-**The four-vectors live in $\mathbb{M}_-$.** The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).
+**The four-vectors live in $\mathbb{B}_{\Phi}$.** The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).
 
 **The mass-shell relation is a norm condition.** The statement $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\tilde{P}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **zero divisor set** of the algebra.
 
@@ -264,7 +264,7 @@ which reduces to the Lorentz force law under continuity conditions on the four-c
 
 ## Open Questions
 
-1. **The Lorentz transformation of four-vectors.** The four-vectors in $\mathbb{M}_-$ transform under the Lorentz group by a **rotor conjugation** involving the boost biquaternion. The precise form of this transformation, and its relation to the standard four-vector transformation, is the subject of the companion article on the Lorentz transformation.
+1. **The Lorentz transformation of four-vectors.** The four-vectors in $\mathbb{B}_{\Phi}$ transform under the Lorentz group by a **rotor conjugation** involving the boost biquaternion. The precise form of this transformation, and its relation to the standard four-vector transformation, is the subject of the companion article on the Lorentz transformation.
 
 2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{K}_{\mathrm{f}} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ(\vec E + \vec v\times\vec B)$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde F$ and the four-velocity $\tilde{V}$ is **not** simply the real part of $\tilde F\circ\tilde{V}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
@@ -283,7 +283,7 @@ These questions are open.
 The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $i c r'_t$ convention. The biquaternion formulation makes the following structural facts explicit:
 
 - The invariant interval is the biquaternion norm of the four-position displacement biquaternion.
-- The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{M}_-$.
+- The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 - The mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$.
 - The light cone is the zero divisor set of the algebra.
 - The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.
@@ -296,7 +296,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (four-vectors) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (four-vectors) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec v$ | Particle three-velocity |

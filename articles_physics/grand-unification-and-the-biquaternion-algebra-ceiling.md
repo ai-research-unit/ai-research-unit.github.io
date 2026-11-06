@@ -18,7 +18,7 @@ into a single simple group $G_{\mathrm{GUT}}$, so that the three independent cou
 The preceding article of this group, *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, proved that the biquaternion algebra's intrinsic compact gauge structure is
 
 $$
-\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
+\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
 \qquad
 \text{rank}=2,
 \qquad
@@ -70,10 +70,10 @@ The failure to reach grand unification is not a failure to unify. The algebra do
 The compact sector is
 
 $$
-\mathbb M_-=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
+\mathbb{B}_{\Phi}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
 $$
 
-and the two summands are the algebra's non-abelian and abelian gauge algebras. A gauge field valued in $\mathbb M_-$ is, in components,
+and the two summands are the algebra's non-abelian and abelian gauge algebras. A gauge field valued in $\mathbb{B}_{\Phi}$ is, in components,
 
 $$
 \mathcal A_\mu=\sum_a\mathcal A_{\mu a}T_a+\mathcal A_{\mu 0}T_0 ,
@@ -214,7 +214,7 @@ $$
 \dim_{\mathbb R}\mathrm{U}(2)=4<12=\dim G_{\mathrm{SM}}\;}.
 $$
 
-The framework does unify its two gauge factors, and the unification is electroweak: the $W$ triplet and the $B$ singlet are the coefficients of a single $\mathbb M_-$-valued field, and their generators close in one Lie algebra with $[T_a,T_b]=\varepsilon_{abc}T_c$ and $[T_a,T_0]=0$. But the two couplings remain separate, because the abelian factor is central and the algebra is not simple; and the framework does not quantise the hypercharge by itself, since the central $\mathrm{U}(1)$ has continuous charge, so quantisation must be imposed through the Dirac condition or through embedding into the non-abelian factor.
+The framework does unify its two gauge factors, and the unification is electroweak: the $W$ triplet and the $B$ singlet are the coefficients of a single $\mathbb{B}_{\Phi}$-valued field, and their generators close in one Lie algebra with $[T_a,T_b]=\varepsilon_{abc}T_c$ and $[T_a,T_0]=0$. But the two couplings remain separate, because the abelian factor is central and the algebra is not simple; and the framework does not quantise the hypercharge by itself, since the central $\mathrm{U}(1)$ has continuous charge, so quantisation must be imposed through the Dirac condition or through embedding into the non-abelian factor.
 
 A biquaternionic grand unification would require enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$, whose intrinsic group $\mathrm{U}(2n)$ has rank $2n$ and dimension $4n^2$ and contains $SU(3)\times SU(2)\times \mathrm{U}(1)$ for $n\ge3$ and $SU(5),SO(10),E_6,E_7,E_8$ from the defining representations of dimensions $5,10,27,56,248$, that is for $n=3,5,14,28,124$. The costs are that the gauge group ceases to be the algebra's own, that unwanted commuting factors appear, and that the even-dimensional modules obstruct the odd-dimensional unified representations. The rank ladder runs $2<4<5<6<7<8<16$, the last rung being $E_8\times E_8$; the exceptional rungs require carriers of $\mathbb C^{56}$, $\mathbb C^{248}$ and $\mathbb C^{496}$, the $E_8$ adjoint being its own smallest faithful representation, and the $E_8$ rung is closed independently of the framework by the no-go of Distler and Garibaldi, who showed that the chiral fermions of the Standard Model do not fit in $E_8$ in the required way. The proton-decay scale is therefore an import, and the framework's particle programme is a programme about colour singlets. The framework's unification is electroweak and not grand, and this is a structural result about the algebra.
 
@@ -223,7 +223,7 @@ A biquaternionic grand unification would require enlarging the carrier to $M_n(\
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$ | Biquaternion algebra |
-| $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)$ | Compact sector; intrinsic gauge algebra |
+| $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)$ | Compact sector; intrinsic gauge algebra |
 | $\mathrm{SU}(2)\oplus\mathrm{U}(1)$ | Decomposition; electroweak and abelian factors |
 | $T_a=\tfrac12\vec e_a$, $T_0=\tfrac12ie_t$ | Generators; $[T_a,T_b]=\varepsilon_{abc}T_c$, $[T_a,T_0]=0$ |
 | $S\cong\mathbb C^2$ | Defining module; $\dim_{\mathbb C}=2r$ for any module |

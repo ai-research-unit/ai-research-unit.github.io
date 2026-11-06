@@ -6,12 +6,12 @@ This is one of the worked exercises in the relativity series. It applies the boo
 
 The discrete Thomas–Wigner rotation is already in the corpus: the product of two non-collinear boost rotors is a boost times a rotation, and its angle is known. This exercise takes only the distinct part of the subject — the **continuous limit**. A particle that is accelerated has a different instantaneous rest frame at every instant. Two rest frames a lab-time interval $dr'_t$ apart are related by a Wigner rotation, and the limit $dr'_t\to0$ defines an angular velocity, the **Thomas precession** $\vec\omega_T$. The exercise derives that rate, fixes its direction by a computation on a geometry that can actually see the direction, and connects it to the factor $\tfrac12$ in the spin–orbit coupling.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the trace formula are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here; no object of the informational sector arises below, so the trace reading is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
+**What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the trace formula are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here; no object of the informational sector arises below, so the trace reading is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau \in \mathbb{B}_{\Phi}$. The boost biquaternion
 $$
 \tilde U_{\vec v_b}=\cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u,
 \qquad \tanh\theta_{\mathrm{rpd},b}=\frac{v_b}{c},
 $$
-which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dr'_t$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
+which is Hermitian, lies in $\mathbb{B}_{\Psi}$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dr'_t$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
 **The boost-rotor direction, stated once.** In this series the rotor $\tilde U_{\vec v_b}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde U_{\vec v_b}\tilde{Q}\tilde U_{\vec v_b}^{*}$, it carries the lab to the frame moving with $+\vec v_b$, and for the particle four-velocity $\tilde{V}$ it is the lab-to-rest rotor that satisfies $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*} = ic\,e_t$. Its quaternion conjugate is the inverse, $\tilde U_{\vec v_b}^{\natural}=\tilde U_{\vec v_b}^{-1}=\tilde U_{-\vec v_b}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
 
@@ -30,7 +30,7 @@ $$
 
 **(b)** Show that $\tilde U_{\mathrm{int}}$ is a unit-norm biquaternion and admits the polar decomposition
 $$
-\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u},\qquad \tilde U_{\mathrm b}\in\mathbb{M}_+\ \text{a pure boost},\qquad \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation},
+\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u},\qquad \tilde U_{\mathrm b}\in\mathbb{B}_{\Psi}\ \text{a pure boost},\qquad \tilde{u}\in\mathbb{B}_{H}\ \text{a rotation},
 \tag{2}
 $$
 and identify $\tilde{u}$ as the Thomas–Wigner rotation of the interval $dr'_t$.
@@ -183,7 +183,7 @@ The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the 
 
 **(d)** Record the numerical verification.
 
-**Solution. (a)** If $\vec a\parallel\vec v$ then $\vec a\times\vec v=0$, and (5) gives $\vec\omega_T=0$ with either sign convention. A single boost likewise produces no rotation — a lone boost rotor is Hermitian and lies in $\mathbb{M}_+$, and only the composition of two non-collinear boosts leaves a rotation — so a check performed on one boost, or on any collinear case, verifies nothing about the sign: a formula fitted to the case that suggested it is confirmed by that case and by no other.
+**Solution. (a)** If $\vec a\parallel\vec v$ then $\vec a\times\vec v=0$, and (5) gives $\vec\omega_T=0$ with either sign convention. A single boost likewise produces no rotation — a lone boost rotor is Hermitian and lies in $\mathbb{B}_{\Psi}$, and only the composition of two non-collinear boosts leaves a rotation — so a check performed on one boost, or on any collinear case, verifies nothing about the sign: a formula fitted to the case that suggested it is confirmed by that case and by no other.
 
 **(b)** Take $\vec v=v\,\vec e_x$ and $\vec a=a\,\vec e_y$ with $v,a>0$, so $\vec a_\perp=\vec a$ and
 $$
@@ -250,7 +250,7 @@ $$
 $$
 i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma^2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).
 
-**(c)** The four-force of the parent article is $\tilde{K}_{\mathrm{f}}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_t+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{M}_-$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. *Exercise: The Non-Relativistic Limit and the Pauli Equation* records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.
+**(c)** The four-force of the parent article is $\tilde{K}_{\mathrm{f}}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_t+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{B}_{\Phi}$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. *Exercise: The Non-Relativistic Limit and the Pauli Equation* records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.
 
 ## Problem 5: What the Parents Supply, and Where the Gap Is
 
@@ -262,7 +262,7 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 *The rate is not in the parents.* The parents give the Wigner angle of a **finite pair of given boosts**. The Thomas precession is an **angular velocity**; its input is the acceleration, which the two-boost formula does not contain. The bridge is the limit taken in Problem 2, $\theta_W/dr'_t$ with $d\vec v=\vec a\,dr'_t$, and it appears nowhere in the parents. A reader who needs $\vec\omega_T$ finds in the parents only the discrete angle and its leading approximation, the phrase in the Lorentz-group article that calls $\theta_{\mathrm{dfl}}\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$ "the familiar leading Thomas-precession angle". That phrase is accurate only in the infinitesimal limit in which the velocity change is $\vec v_2-\vec v_1=\vec a\,dr'_t$; for two finite boosts the angle $\theta_{\mathrm{dfl}}$ is not the *accumulated* precession angle along any particle's worldline, because there is no worldline, and the two quantities agree only to leading order. The rate stands in the corpus only here and in the companion article *Thomas Precession as a Biquaternion Rotor Effect*, where it is obtained from the interval rotor directly; what it is absent from is the parents, and (5) derives it from their own formula (4).
 
-*The direction of the boost rotor is unstated.* The parent Lorentz-transformation article writes $\tilde U_{\mathrm b}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$ without saying that it is the lab-to-rest rotor; the $\mathbb{M}_+$ article says only that the boost biquaternion "acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost", again without a direction; the boosting exercise's Problem 4 records this as a genuine gap in the parent's statement. For the Thomas precession the gap is real but, as Problem 3(c) shows, benign when the ambiguity is applied consistently: inverting each boost rotor together leaves the first-order precession unchanged, and only the composition order in (1) reverses the sign. The gap does not by itself corrupt $\vec\omega_T$; what it does mean is that the sign cannot be checked from the parents' statements alone, and it is the non-collinear computation that supplies the missing information.
+*The direction of the boost rotor is unstated.* The parent Lorentz-transformation article writes $\tilde U_{\mathrm b}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$ without saying that it is the lab-to-rest rotor; the $\mathbb{B}_{\Psi}$ article says only that the boost biquaternion "acts on $\mathbb{B}_{\Phi}$ by rotor conjugation, implementing a Lorentz boost", again without a direction; the boosting exercise's Problem 4 records this as a genuine gap in the parent's statement. For the Thomas precession the gap is real but, as Problem 3(c) shows, benign when the ambiguity is applied consistently: inverting each boost rotor together leaves the first-order precession unchanged, and only the composition order in (1) reverses the sign. The gap does not by itself corrupt $\vec\omega_T$; what it does mean is that the sign cannot be checked from the parents' statements alone, and it is the non-collinear computation that supplies the missing information.
 
 *Summary of the gap.* It is a gap of scope and of statement, not an error: the parents contain the discrete rotation and get it right, but they contain neither the precession rate nor the direction of the boost rotor. The rate is the object the parents lack, and this exercise derives it from their own angle formula; the direction is a statement the parents leave implicit, and the sign it bears is only visible on a non-collinear geometry.
 
@@ -270,7 +270,7 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 We have taken the discrete Thomas–Wigner rotation of the parent articles to its continuous limit.
 
-1. **The interval rotor.** The rest frame at lab time $r'_t+dr'_t$ is obtained from the rest frame at $r'_t$ by the unit-norm rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u}$ separates a pure boost $\tilde U_{\mathrm b}\in\mathbb{M}_+$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ of the interval.
+1. **The interval rotor.** The rest frame at lab time $r'_t+dr'_t$ is obtained from the rest frame at $r'_t$ by the unit-norm rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u}$ separates a pure boost $\tilde U_{\mathrm b}\in\mathbb{B}_{\Psi}$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{B}_{H}$ of the interval.
 
 2. **The rate.** Expanding the parent's Wigner-angle formula to first order in $dr'_t$ gives the Thomas precession
 $$
@@ -289,8 +289,8 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; scalar (central) subspace |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; scalar (central) subspace |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
@@ -298,10 +298,10 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Quaternion conjugate, Hermitian conjugate |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
-| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{M}_-$ |
+| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{B}_{\Phi}$ |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
-| $\tilde U_{\vec v}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
+| $\tilde U_{\vec v}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\vec a=d\vec v/dr'_t$, $\vec a_\perp$ | Lab acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |
 | $\tilde U_{\mathrm b}$, $\tilde{u}$ | Boost and rotation factors of $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u}$ |
@@ -315,8 +315,8 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 ## Further Reading
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and the two sectors.
-- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the rotor conjugation on $\mathbb{M}_-$.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boost biquaternion as an element of $\mathbb{M}_+$.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the rotor conjugation on $\mathbb{B}_{\Phi}$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the boost biquaternion as an element of $\mathbb{B}_{\Psi}$.
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and four-force.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the square-root relation, and the polar decomposition.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Wigner angle, its axis, and its leading approximation.

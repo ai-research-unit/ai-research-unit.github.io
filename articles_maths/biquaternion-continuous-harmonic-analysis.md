@@ -272,9 +272,9 @@ The number of complex Fourier transforms required depends on the choice of root 
 
 **Scalar imaginary, $\rho = i$.** The kernel reduces to the ordinary complex exponential, and the transform requires **four** complex Fourier transforms, one for each complex coefficient of $f$ in the standard basis.
 
-**Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.** The kernel is a real quaternion exponential. If $f$ takes values in $\mathbb{H}_{\mathbb{B}}$ or in $i \mathbb{H}_{\mathbb{B}}$, the transform requires **two** complex Fourier transforms. If $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
+**Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.** The kernel is a real quaternion exponential. If $f$ takes values in $\mathbb{B}_{H}$ or in $\mathbb{B}_{iH}$, the transform requires **two** complex Fourier transforms. If $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
 
-**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and $f$ takes values in $\mathbb{H}_{\mathbb{B}}$ or in $i \mathbb{H}_{\mathbb{B}}$, the transform requires **two** complex Fourier transforms.
+**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and $f$ takes values in $\mathbb{B}_{H}$ or in $\mathbb{B}_{iH}$, the transform requires **two** complex Fourier transforms.
 
 **Non-trivial root, fully biquaternion signal.** If $\rho$ is a non-trivial root and $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
 
@@ -417,7 +417,7 @@ More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a no
 
 The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
 
-The issue can be avoided by restricting to functions whose values lie in a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero value is invertible, and the transform is invertible on all functions. On the anti-Hermitian subspace $\mathbb{M}_-$, the functions with vanishing norm lie on a cone, and the transform is invertible only for functions whose values lie off the cone.
+The issue can be avoided by restricting to functions whose values lie in a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{B}_{H}$. On $\mathbb{B}_{H}$, every nonzero value is invertible, and the transform is invertible on all functions. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the functions with vanishing norm lie on a cone, and the transform is invertible only for functions whose values lie off the cone.
 
 ### The Open Question
 
@@ -487,7 +487,7 @@ $$
 
 Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.
 
-**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa_{\mathrm{crd},k} e_t$, $\varkappa_{\mathrm{crd},k} \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
+**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{B}_{C}$ (the complex scalars $A_k = \varkappa_{\mathrm{crd},k} e_t$, $\varkappa_{\mathrm{crd},k} \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
 $$
 \sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} \langle Z(\tilde{Q})\rangle_{\natural} \, d\mu(\tilde{Q}),

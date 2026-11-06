@@ -71,7 +71,7 @@ $$
 \langle\tilde{Ζ}\rangle_{\natural}=Ζ_t^2+(\vec{Ζ},\vec{Ζ}).
 $$
 
-The root set of a central value $\lambda e_t$ is the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$. On the material sector $\mathbb{M}_-$, write the four-momentum as
+The root set of a central value $\lambda e_t$ is the level set $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$. On the material sector $\mathbb{B}_{\Phi}$, write the four-momentum as
 
 $$
 \tilde P=i\frac{E}{c}e_t+\vec p .
@@ -103,7 +103,7 @@ $$
 \tilde{Ζ}\tilde{Ζ}^{*},
 $$
 
-a positive semidefinite element of $\mathbb{M}_+$, with non-negative eigenvalues. For a positive semidefinite value $\tilde Q$ the roots are $\tilde Q^{1/2}$ times a $*$-unitary element, one root for each such element: a family of amplitudes that share the value and differ by a $*$-unitary right factor, the analogue of the sign of a scalar root. This is the band in which the mass-squared operator of a doublet lives. The three squares are three root problems: the plain square for the algebraic multiplicity, the natural square for the interval, the Hermitian square for the mass operator.
+a positive semidefinite element of $\mathbb{B}_{\Psi}$, with non-negative eigenvalues. For a positive semidefinite value $\tilde Q$ the roots are $\tilde Q^{1/2}$ times a $*$-unitary element, one root for each such element: a family of amplitudes that share the value and differ by a $*$-unitary right factor, the analogue of the sign of a scalar root. This is the band in which the mass-squared operator of a doublet lives. The three squares are three root problems: the plain square for the algebraic multiplicity, the natural square for the interval, the Hermitian square for the mass operator.
 
 ## The Sign and the Causal Class
 
@@ -315,8 +315,8 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\tilde P$ | a material four-momentum |
 | $(\vec v,\vec v)$ | the vector-part square $v_x^2+v_y^2+v_z^2$; the element $\vec v$ squares to $-(\vec v,\vec v)e_t$ |
 | $\hat p$ | the direction of $\vec p$, $\hat p=\vec p/\lvert\vec p\rvert$ |
-| $\mathbb{M}_-$ | the material sector, the anti-Hermitian subspace |
-| $\mathbb{M}_+$ | the informational sector, the Hermitian subspace |
+| $\mathbb{B}_{\Phi}$ | the material sector, the anti-Hermitian subspace |
+| $\mathbb{B}_{\Psi}$ | the informational sector, the Hermitian subspace |
 | $\tilde E$ | the mass field, a biquaternion |
 | $\tilde\nabla$ | the biquaternionic gradient, with d'Alembertian $\Box$, of *Operator and Calculus Conventions* |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | the two chiral components of the gradient equation |

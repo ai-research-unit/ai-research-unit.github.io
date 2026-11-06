@@ -86,11 +86,11 @@ $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
 
-*Proof.* Every value of the block is a pure vector, $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})\in\operatorname{Vect}(\mathbb{B})$, of scalar part zero for every pair; the diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
+*Proof.* Every value of the block is a pure vector, $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})\in\mathbb{B}_{V}$, of scalar part zero for every pair; the diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
 
 **Remark (the diagonal of the block).** The sesquilinear product is not alternating in the bilinear sense — its second slot is conjugate-linear — so the diagonal need not vanish as an element of the block:
 
-$$ \boxed{\; \tilde Q\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\in\operatorname{Vect}(\mathbb{B}) \;}, $$
+$$ \boxed{\; \tilde Q\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\in\mathbb{B}_{V} \;}, $$
 
 the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$; it is central exactly when it is zero, that is exactly when $\tilde Q\tilde Q^{*}$ is central. The witness $\tilde Q=\vec e_x+i\vec e_y$ gives $\tilde Q\diamond\tilde Q=2i\vec e_z\neq0$. The diagonal is a value and not a norm, and it is not central in general, so no central-valued quadratic map is built from the product.
 
@@ -108,7 +108,7 @@ $$
 
 has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot.
 
-*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec Q_3)=0\}$, and the dimension count gives the bijection.
+*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\mathbb{B}_{V},\ (\vec W,\vec Q_3)=0\}$, and the dimension count gives the bijection.
 
 So the equation $\tilde Q_3\diamond\tilde Q_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
@@ -133,7 +133,7 @@ The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the Hermitian square |
 | $L_{\tilde Q_3}\tilde Q_2=\tilde Q_3\diamond\tilde Q_2$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, $\operatorname{Vect}(\mathbb{B})$ | the centre, the vector subspace |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$, $\mathbb{B}_{V}$ | the centre, the vector subspace |
 | no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading

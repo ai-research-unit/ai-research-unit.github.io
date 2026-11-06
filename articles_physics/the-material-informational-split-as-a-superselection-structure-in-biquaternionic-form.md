@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a four-real-dimensional subspace $\mathbb{M}_-$ whose elements are the anti-Hermitian biquaternions and a complementary four-real-dimensional subspace $\mathbb{M}_+$ whose elements are the Hermitian ones,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a four-real-dimensional subspace $\mathbb{B}_{\Phi}$ whose elements are the anti-Hermitian biquaternions and a complementary four-real-dimensional subspace $\mathbb{B}_{\Psi}$ whose elements are the Hermitian ones,
 $$
-\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
+\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}, \qquad \mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
 $$
-A general element splits as $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{M}_-$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{M}_+$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{M}_-$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
+A general element splits as $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{B}_{\Phi}$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{B}_{\Psi}$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{B}_{\Phi}$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
 
 The question is sharp because the two things that a superselection structure is expected to supply are both present in a weak form and both absent in the strong form. Present: the split is the eigenspace decomposition of an involutive charge, no operation of the framework of the conjugation type maps one summand into the other, and the relative phase between the two summands is unobservable. Absent: the framework is central simple, its only central idempotents are $0$ and $e_t$, and it therefore admits no decomposition into non-interfering branches of the standard algebraic kind. The thesis of this article is that both statements are exact, that they do not conflict, and that the correct interpretation of the split is as a **superselection structure of a real form** — a grading carried by the algebra's antilinear real structure $\flat = -{}^{*}$ rather than by its centre.
 
@@ -14,7 +14,7 @@ The distinction matters for the relativistic quantum information that this subca
 
 The article proceeds as follows. The standard algebraic notion of a superselection structure is recalled, in the form in which it will be tested. Then the two sectors are described as the eigenspaces of an involution, and the algebra's own operations are examined: which of them preserve the sectors and which mix them. Then the factor property is derived and its consequence stated: there is no central-projection superselection structure. Then the structure that does survive is isolated — the real-structure grading, its invariance under the conjugation action, and the unobservability of the relative phase. Then the same split is read on the Lie algebra, where it becomes the Cartan decomposition of $\mathrm{SL}(2,\mathbb{C})$ and acquires the sharpest algebraic content available. The **physical interpretation** and the framing of the subcategory close the article.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, central scalar imaginary $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\tilde{Q}^{*}$, quaternion conjugate $\tilde{Q}^{\natural}$, and the real structure $\flat = -{}^{*}$ with fixed space $\mathbb{M}_-$. The matrix model is $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_k\mapsto -i\sigma_k$ and $i\mapsto iI_2$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, central scalar imaginary $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation $\tilde{Q}^{*}$, quaternion conjugate $\tilde{Q}^{\natural}$, and the real structure $\flat = -{}^{*}$ with fixed space $\mathbb{B}_{\Phi}$. The matrix model is $\mathbb{B}\cong M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_k\mapsto -i\sigma_k$ and $i\mapsto iI_2$.
 
 The companion articles supply the pieces:
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vector content, the interval, and the anti-Hermitian sector.
@@ -41,7 +41,7 @@ A vector that is a superposition of a vector from each summand therefore carries
 
 **The kinematic form.** For the purpose of testing a candidate structure that is not presented as an algebra of operators on a fixed Hilbert space, it is convenient to record the kinematic form of the same statement. A decomposition $\mathcal{V} = \mathcal{V}_1\oplus\mathcal{V}_2$ of a complex vector space into two real subspaces is a superselection structure if there is an involutive charge $\theta$ with $\mathcal{V}_j$ the eigenspace of eigenvalue $(-1)^{j+1}$, if every operation of the theory commutes with $\theta$ and hence preserves the $\mathcal{V}_j$, and if the only complex structure available for forming a relative phase acts trivially on the rays of the theory. The first two conditions are algebraic and are checked by direct computation; the third is what converts the grading into an obstruction to coherence.
 
-The remainder of the article tests the split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ against both forms.
+The remainder of the article tests the split $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ against both forms.
 
 ## The Two Sectors as the Eigenspaces of an Involution
 
@@ -49,43 +49,43 @@ The remainder of the article tests the split $\mathbb{B} = \mathbb{M}_-\oplus\ma
 
 Hermitian conjugation $\tilde{Q}\mapsto\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ is an antilinear involution of $\mathbb{B}$: it is additive, it satisfies $(\lambda\tilde{Q})^{*} = \lambda^{*}\tilde{Q}^{*}$ for $\lambda\in\mathbb{C}$, and it satisfies $(\tilde{Q}^{*})^{*} = \tilde{Q}$. Its two eigenspaces are exactly the two sectors,
 $$
-\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = +\tilde{Q}\}, \qquad
-\mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\},
+\mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = +\tilde{Q}\}, \qquad
+\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\},
 $$
 and the eigenspace property gives at once
 $$
-\mathbb{M}_+\cap\mathbb{M}_- = \{0\}, \qquad \mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_- .
+\mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi} = \{0\}, \qquad \mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi} .
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
 \tilde R_\psi = c r_t\,e_t + i\vec r_\psi, \qquad \vec r_\psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
 \tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad c r_t,r'_x,r'_y,r'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
 $$
-so that $\mathbb{M}_+$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{M}_-$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
+so that $\mathbb{B}_{\Psi}$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{B}_{\Phi}$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
 \flat = -{}^{*}, \qquad \flat(\tilde{Q}) = -\tilde{Q}^{*} ,
 $$
-is the involution whose fixed space is $\mathbb{M}_-$ and whose $(-1)$-eigenspace is $\mathbb{M}_+$.
+is the involution whose fixed space is $\mathbb{B}_{\Phi}$ and whose $(-1)$-eigenspace is $\mathbb{B}_{\Psi}$.
 
 ### The sector exchange is the complex structure
 
 The subspaces are *not* complex subspaces of $\mathbb{B}$, because the algebra's complex structure does not preserve them. Multiplication by the central scalar,
 $$
-i\,\mathbb{M}_+ = \mathbb{M}_-, \qquad i\,\mathbb{M}_- = \mathbb{M}_+,
+i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}, \qquad i\,\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi},
 $$
-is immediate from the definitions: multiplying a Hermitian element by $i$ produces an anti-Hermitian one and conversely. Hence the complex structure $i$ is exactly the operation that exchanges the sectors. Geometrically, $\mathbb{M}_+$ is a **maximally real** subspace of the complex vector space $(\mathbb{B}, i)$:
+is immediate from the definitions: multiplying a Hermitian element by $i$ produces an anti-Hermitian one and conversely. Hence the complex structure $i$ is exactly the operation that exchanges the sectors. Geometrically, $\mathbb{B}_{\Psi}$ is a **maximally real** subspace of the complex vector space $(\mathbb{B}, i)$:
 $$
-\dim_\mathbb{R}\mathbb{M}_+ = \tfrac12\dim_\mathbb{R}\mathbb{B}, \qquad \mathbb{M}_+\cap i\,\mathbb{M}_+ = \mathbb{M}_+\cap\mathbb{M}_- = \{0\}.
+\dim_\mathbb{R}\mathbb{B}_{\Psi} = \tfrac12\dim_\mathbb{R}\mathbb{B}, \qquad \mathbb{B}_{\Psi}\cap i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi} = \{0\}.
 $$
 Every element of $\mathbb{B}$ therefore has a unique decomposition into a part in the real form and a part in its image, and the map that effects the decomposition is the real-linear projection
 $$
-P_\pm = \tfrac12\bigl(\mathrm{id} \pm {}^{*}\bigr), \qquad P_+\mathbb{B} = \mathbb{M}_+, \quad P_-\mathbb{B} = \mathbb{M}_- .
+P_\pm = \tfrac12\bigl(\mathrm{id} \pm {}^{*}\bigr), \qquad P_+\mathbb{B} = \mathbb{B}_{\Psi}, \quad P_-\mathbb{B} = \mathbb{B}_{\Phi} .
 $$
 These projections are **not** elements of $\mathbb{B}$. They are real-linear operators on the eight-dimensional real vector space $\mathbb{B}$, built from an antilinear involution, and they do not arise from left multiplication by any element:
 
-**Proposition.** If $\tilde Q_4\in\mathbb{B}$ satisfies $\tilde Q_4\mathbb{M}_+ \subseteq \mathbb{M}_+$, then $\tilde Q_4\in\mathbb{R}e_t$; the same holds with $\mathbb{M}_-$ in place of $\mathbb{M}_+$. Consequently no element of $\mathbb{B}$ implements a sector projection by left multiplication.
+**Proposition.** If $\tilde Q_4\in\mathbb{B}$ satisfies $\tilde Q_4\mathbb{B}_{\Psi} \subseteq \mathbb{B}_{\Psi}$, then $\tilde Q_4\in\mathbb{R}e_t$; the same holds with $\mathbb{B}_{\Phi}$ in place of $\mathbb{B}_{\Psi}$. Consequently no element of $\mathbb{B}$ implements a sector projection by left multiplication.
 
-**Proof.** Let $\tilde R_\psi\in\mathbb{M}_+$, so that $\tilde R_\psi^{*} = \tilde R_\psi$. The condition reads $(\tilde Q_4\tilde R_\psi)^{*} = \tilde Q_4\tilde R_\psi$, that is $\tilde R_\psi\tilde Q_4^{*} = \tilde Q_4\tilde R_\psi$. Taking $\tilde R_\psi = e_t$ gives $\tilde Q_4^{*} = \tilde Q_4$, so $\tilde Q_4\in\mathbb{M}_+$, and then $\tilde R_\psi\tilde Q_4 = \tilde Q_4\tilde R_\psi$ for every Hermitian $\tilde R_\psi$, which says $\tilde Q_4$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde Q_4$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{M}_-$ is identical after $\tilde Q_4\to i\tilde Q_4$.
+**Proof.** Let $\tilde R_\psi\in\mathbb{B}_{\Psi}$, so that $\tilde R_\psi^{*} = \tilde R_\psi$. The condition reads $(\tilde Q_4\tilde R_\psi)^{*} = \tilde Q_4\tilde R_\psi$, that is $\tilde R_\psi\tilde Q_4^{*} = \tilde Q_4\tilde R_\psi$. Taking $\tilde R_\psi = e_t$ gives $\tilde Q_4^{*} = \tilde Q_4$, so $\tilde Q_4\in\mathbb{B}_{\Psi}$, and then $\tilde R_\psi\tilde Q_4 = \tilde Q_4\tilde R_\psi$ for every Hermitian $\tilde R_\psi$, which says $\tilde Q_4$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde Q_4$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{B}_{\Phi}$ is identical after $\tilde Q_4\to i\tilde Q_4$.
 
 The proposition says that the sector decomposition, although it decomposes the algebra as a real vector space, is invisible to the algebra's own left action: there is no element whose module action measures the sectors, and the only elements that preserve a sector by left multiplication are the real scalars.
 
@@ -93,7 +93,7 @@ The proposition says that the sector decomposition, although it decomposes the a
 
 A superselection structure in its algebraic form requires the sectors to be the summands of an algebra decomposition, and that fails at the first product. The product of two Hermitian elements is Hermitian only when they commute,
 $$
-\tilde{Q}_1, \tilde{Q}_2\in\mathbb{M}_+ \ \Longrightarrow\ (\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1 = \tilde{Q}_1\tilde{Q}_2 \iff [\tilde{Q}_1,\tilde{Q}_2] = 0 ,
+\tilde{Q}_1, \tilde{Q}_2\in\mathbb{B}_{\Psi} \ \Longrightarrow\ (\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1 = \tilde{Q}_1\tilde{Q}_2 \iff [\tilde{Q}_1,\tilde{Q}_2] = 0 ,
 $$
 and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi(\vec u_\nu) = \tfrac12(e_t+i\vec u_\nu)$ with $\vec u\cdot\vec u_\nu = 0$,
 $$
@@ -105,7 +105,7 @@ $$
 $$
 a non-zero element of the anti-Hermitian sector. The product of two informational elements is therefore not informational; it has a material component. Equivalently,
 $$
-\mathbb{M}_+\mathbb{M}_+ \not\subseteq \mathbb{M}_+, \qquad \mathbb{M}_+\mathbb{M}_- \not\subseteq \mathbb{M}_-\cup\mathbb{M}_+ .
+\mathbb{B}_{\Psi}\mathbb{B}_{\Psi} \not\subseteq \mathbb{B}_{\Psi}, \qquad \mathbb{B}_{\Psi}\mathbb{B}_{\Phi} \not\subseteq \mathbb{B}_{\Phi}\cup\mathbb{B}_{\Psi} .
 $$
 The sectors are a grading of the vector space and not a splitting of the algebra, and multiplication mixes them. This is the first genuine obstruction, and it is the reason that the standard central-projection route cannot be taken for granted.
 
@@ -128,7 +128,7 @@ Z(\mathbb{B}) = \mathbb{C}e_t = \{Q_{4t}e_t : Q_{4t}\in\mathbb{C}\}.
 $$
 The centre is two-real-dimensional and consists of the complex scalars. It splits along the sectors as
 $$
-Z(\mathbb{B}) = \bigl(Z(\mathbb{B})\cap\mathbb{M}_+\bigr)\oplus\bigl(Z(\mathbb{B})\cap\mathbb{M}_-\bigr) = \mathbb{R}e_t \oplus \mathbb{R}(ie_t),
+Z(\mathbb{B}) = \bigl(Z(\mathbb{B})\cap\mathbb{B}_{\Psi}\bigr)\oplus\bigl(Z(\mathbb{B})\cap\mathbb{B}_{\Phi}\bigr) = \mathbb{R}e_t \oplus \mathbb{R}(ie_t),
 $$
 so the centre itself carries the material-informational grading: the real scalar $e_t$ is informational, the imaginary scalar $ie_t$ is material. This is the only place in the algebra where a central element of each sector occurs, and the fact that the sector-carrying central element $ie_t$ is imaginary is the algebraic seed of the phase discussion below.
 
@@ -168,17 +168,17 @@ $$
 $$
 so
 $$
-\boxed{\;\tilde U\,\mathbb{M}_\pm\,\tilde U^{*} \subseteq \mathbb{M}_\pm\;}.
+\boxed{\;\tilde U\,\mathbb{B}_{\Psi,\Phi}\,\tilde U^{*} \subseteq \mathbb{B}_{\Psi,\Phi}\;}.
 $$
 The Lorentz transformations on four-vectors, the $*$-unitary evolution of states, and the reversible operations of the quantum formalism are all congruences of this type, and none of them moves an element from one sector to the other. This is the precise sense in which the grading is a symmetry of the *operations* of the theory.
 
 **The module action does not preserve the sectors.** The contrast with left multiplication is what makes the statement non-trivial. Left multiplication is the action of the algebra on its defining module, and it mixes the sectors:
 $$
-\vec e_x\,e_t = \vec e_x, \qquad \vec e_x\in\mathbb{M}_-, \quad e_t\in\mathbb{M}_+,
+\vec e_x\,e_t = \vec e_x, \qquad \vec e_x\in\mathbb{B}_{\Phi}, \quad e_t\in\mathbb{B}_{\Psi},
 $$
 so a material element carries an informational element to a material one. The two actions organise the framework differently, and the difference is worth naming: the **congruence action** — conjugation by invertible elements, under which the relativistic and the quantum transformations both fall — is sector-preserving, while the **module action** — left multiplication, which builds the algebra out of the module — is sector-mixing. A superselection statement concerns operations, and the operations of this framework are congruences; the module action is the algebraic structure that produces the objects on which the operations act, not an operation in the physical sense.
 
-**The non-trivial central charge.** The centre contains one element of each sector, $e_t$ and $ie_t$. The imaginary scalar $ie_t$ is central and lies in $\mathbb{M}_-$; it is the algebra's continuous superselection-type charge. As an operator on the module it is the scalar $i$ on every irreducible representation — in the matrix model it is $iI_2$ — so it acts trivially on every ray. Its expectation is the same in every state, and the one-parameter group it generates is the unobservable global phase. The sector-carrying central charge is thus a charge whose eigenvalue is the same everywhere: the strictest possible superselection charge, in the sense that it provides no label at all, and simultaneously the only non-trivial central charge the algebra has.
+**The non-trivial central charge.** The centre contains one element of each sector, $e_t$ and $ie_t$. The imaginary scalar $ie_t$ is central and lies in $\mathbb{B}_{\Phi}$; it is the algebra's continuous superselection-type charge. As an operator on the module it is the scalar $i$ on every irreducible representation — in the matrix model it is $iI_2$ — so it acts trivially on every ray. Its expectation is the same in every state, and the one-parameter group it generates is the unobservable global phase. The sector-carrying central charge is thus a charge whose eigenvalue is the same everywhere: the strictest possible superselection charge, in the sense that it provides no label at all, and simultaneously the only non-trivial central charge the algebra has.
 
 **The scalar regime as the algebraic model.** The degenerate case of the eigenvalue decomposition is the scalar regime, $\vec Q=0$: the element is central, its minimal polynomial is linear, the spectrum has one value, and the decomposition has one term. That is the algebraic model of a superselection charge in its strictest form. The charge commutes with every operation, so it distinguishes nothing and produces no interference term, because there is no second eigenvalue for a relative phase to sit between. The two sectors remain the eigenspaces of $\flat$, but a central element cannot separate them, and the relative phase it would label is unobservable. The non-scalar element with distinct eigenvalues is the other case: it has two eigenvalues and a two-term decomposition, and the relative phase is a physical observable exactly when the element is non-central. The spectral classification is that of *The Biquaternion Eigenvalue Decomposition*.
 
@@ -192,14 +192,14 @@ $$
 = \bigl(\cos\theta\,\tilde{Q}_{\mathrm H} + \sin\theta\, i\tilde{Q}_{\mathrm A}\bigr)
 + \bigl(\cos\theta\,\tilde{Q}_{\mathrm A} + \sin\theta\, i\tilde{Q}_{\mathrm H}\bigr),
 $$
-using $\exp(i\theta) = \cos\theta\,e_t + \sin\theta\,(ie_t)$ and $i\tilde{Q}_{\mathrm H}\in\mathbb{M}_-$ and $i\tilde{Q}_{\mathrm A}\in\mathbb{M}_+$. The central phase does mix the sectors — it is that mixing — but it is an element of the centre, and on the defining module it acts as the scalar $\exp(i\theta)$:
+using $\exp(i\theta) = \cos\theta\,e_t + \sin\theta\,(ie_t)$ and $i\tilde{Q}_{\mathrm H}\in\mathbb{B}_{\Phi}$ and $i\tilde{Q}_{\mathrm A}\in\mathbb{B}_{\Psi}$. The central phase does mix the sectors — it is that mixing — but it is an element of the centre, and on the defining module it acts as the scalar $\exp(i\theta)$:
 $$
 \rho_S\bigl(\exp(i\theta)\tilde{Q}\bigr)\,|u\rangle = \exp(i\theta)\,\rho_S(\tilde{Q})\,|u\rangle .
 $$
 Here $\rho_S$ is the action on the defining module and $|u\rangle$ a module vector.
 It therefore fixes every ray of the state space. No state, and no expectation value of any observable in any state, distinguishes $\tilde{Q}$ from $\exp(i\theta)\tilde{Q}$: the relative phase generated by the sector exchange is a gauge redundancy. The forbidden coherence is unobservable not because the algebra is too small to contain the exchange, but because the exchange is central and the centre acts trivially on rays.
 
-**The pairing separates the sectors.** The same conclusion can be read off the Born pairing, which is the operational content of the framework. For a state $\tilde{Ϛ}\in\mathbb{M}_+$ and an element $\tilde{Q} = \tilde{Q}_{\mathrm H} + \tilde{Q}_{\mathrm A}$,
+**The pairing separates the sectors.** The same conclusion can be read off the Born pairing, which is the operational content of the framework. For a state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ and an element $\tilde{Q} = \tilde{Q}_{\mathrm H} + \tilde{Q}_{\mathrm A}$,
 $$
 \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_{\mathrm H}\bigr) + \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_{\mathrm A}\bigr),
 $$
@@ -217,22 +217,22 @@ The material element is read through the factor $i$, not through the untwisted p
 
 The sharpest positive content of the split is not on the algebra but on its Lie algebra, where the material summand becomes a subalgebra and the split becomes a genuine $\mathbb{Z}_2$ grading.
 
-**Traceless parts.** Let $\mathbb{M}_\pm^{0}$ denote the traceless elements of the two sectors. Since $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, the traceless elements are exactly those with vanishing scalar part along $e_t$:
+**Traceless parts.** Let $\mathbb{B}_{\Psi,\Phi}^{0}$ denote the traceless elements of the two sectors. Since $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, the traceless elements are exactly those with vanishing scalar part along $e_t$:
 $$
-\mathbb{M}_+^{0} = \mathrm{span}_\mathbb{R}\{i\vec e_x, i\vec e_y, i\vec e_z\}, \qquad
-\mathbb{M}_-^{0} = \mathrm{span}_\mathbb{R}\{\vec e_x, \vec e_y, \vec e_z\}.
+\mathbb{B}_{\Psi}^{0} = \mathrm{span}_\mathbb{R}\{i\vec e_x, i\vec e_y, i\vec e_z\}, \qquad
+\mathbb{B}_{\Phi}^{0} = \mathrm{span}_\mathbb{R}\{\vec e_x, \vec e_y, \vec e_z\}.
 $$
 These six elements span the traceless part of $\mathbb{B}$, and the traceless part is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$, which acts as the Lorentz algebra. Hence
 $$
-\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0},
+\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0},
 $$
-with $\mathbb{M}_+^{0}$ Hermitian (traceless) and $\mathbb{M}_-^{0}$ anti-Hermitian (traceless).
+with $\mathbb{B}_{\Psi}^{0}$ Hermitian (traceless) and $\mathbb{B}_{\Phi}^{0}$ anti-Hermitian (traceless).
 
 **The brackets.** With $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$ and $\mu\neq\nu$, the commutators close on the two summands as
 $$
-\boxed{\;[\mathbb{M}_-^{0}, \mathbb{M}_-^{0}]\subseteq\mathbb{M}_-^{0}, \qquad
-[\mathbb{M}_-^{0}, \mathbb{M}_+^{0}]\subseteq\mathbb{M}_+^{0}, \qquad
-[\mathbb{M}_+^{0}, \mathbb{M}_+^{0}]\subseteq\mathbb{M}_-^{0}\;}.
+\boxed{\;[\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Phi}^{0}, \qquad
+[\mathbb{B}_{\Phi}^{0}, \mathbb{B}_{\Psi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0}, \qquad
+[\mathbb{B}_{\Psi}^{0}, \mathbb{B}_{\Psi}^{0}]\subseteq\mathbb{B}_{\Phi}^{0}\;}.
 $$
 Explicitly, the rotation generators and the boost generators satisfy
 $$
@@ -246,21 +246,21 @@ $$
 [\text{even},\text{odd}]\subseteq\text{odd}, \qquad
 [\text{odd},\text{odd}]\subseteq\text{even},
 $$
-with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
+with even part $\mathbb{B}_{\Phi}^{0}$ and odd part $\mathbb{B}_{\Psi}^{0}$.
 
-**The Cartan involution.** The involution that effects this grading is $\flat = -{}^{*}$ restricted to real-linear combinations: it acts as $+1$ on $\mathbb{M}_-^{0}$ and $-1$ on $\mathbb{M}_+^{0}$, and on the Lie algebra it is a linear involution because the combinations are real. It is the **Cartan involution** of $\mathrm{SL}(2,\mathbb{C})$, its fixed subalgebra is the compact $\mathrm{SU}(2)$ of rotations, and its $(-1)$-eigenspace is the non-compact complement of boosts. The material-informational split restricted to the generators is the Cartan decomposition of the Lorentz algebra, and the compact/non-compact dichotomy — the reason the Lorentz group is non-compact while the rotation group is compact — is the sector dichotomy.
+**The Cartan involution.** The involution that effects this grading is $\flat = -{}^{*}$ restricted to real-linear combinations: it acts as $+1$ on $\mathbb{B}_{\Phi}^{0}$ and $-1$ on $\mathbb{B}_{\Psi}^{0}$, and on the Lie algebra it is a linear involution because the combinations are real. It is the **Cartan involution** of $\mathrm{SL}(2,\mathbb{C})$, its fixed subalgebra is the compact $\mathrm{SU}(2)$ of rotations, and its $(-1)$-eigenspace is the non-compact complement of boosts. The material-informational split restricted to the generators is the Cartan decomposition of the Lorentz algebra, and the compact/non-compact dichotomy — the reason the Lorentz group is non-compact while the rotation group is compact — is the sector dichotomy.
 
-**Consequence for the framework.** Two conclusions follow, one negative and one positive. Negatively, the subalgebra property holds only on the traceless part; it does not extend to the sectors themselves, because the trace directions $e_t\in\mathbb{M}_+$ and $ie_t\in\mathbb{M}_-$ are central and their products stay in the centre, while the products of the non-central parts leave the sectors. Positively, on the generators the split is exactly a $\mathbb{Z}_2$ grading with a compact even part, and this is the algebraic locus of the interaction between the relativistic and the quantum structures: a boost is an informational generator, a rotation is a material one, and the failure of the boosts to close — the bracket $[\text{boost},\text{boost}] = \text{rotation}$ — is the algebraic origin of the Thomas–Wigner rotation and of the non-commutativity of the boosts. The next three articles of this subcategory are computations of that failure and of its information-theoretic consequences.
+**Consequence for the framework.** Two conclusions follow, one negative and one positive. Negatively, the subalgebra property holds only on the traceless part; it does not extend to the sectors themselves, because the trace directions $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ are central and their products stay in the centre, while the products of the non-central parts leave the sectors. Positively, on the generators the split is exactly a $\mathbb{Z}_2$ grading with a compact even part, and this is the algebraic locus of the interaction between the relativistic and the quantum structures: a boost is an informational generator, a rotation is a material one, and the failure of the boosts to close — the bracket $[\text{boost},\text{boost}] = \text{rotation}$ — is the algebraic origin of the Thomas–Wigner rotation and of the non-commutativity of the boosts. The next three articles of this subcategory are computations of that failure and of its information-theoretic consequences.
 
 ## The Physical Reading
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R}=\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{B}_{\Phi}$ carries the four-vectors: the four-position $\tilde{R}=\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{B}_{\Psi}$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
-Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
+Each observable is the representative $iA$ of a **material element** $A\in\mathbb{B}_{\Phi}$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
-**What the superselection statement forbids.** Because the conjugation action preserves the sectors and the relative phase is central, there is no operation of the framework that converts material data into informational data or the reverse, and there is no observable coherence between the two. A change of frame is a congruence, so it acts on both sectors simultaneously and preserves the grading: it rotates a four-vector in $\mathbb{M}_-$ and a state in $\mathbb{M}_+$ by the same rotor, and it never turns one into the other. This is the structural reason that a Lorentz transformation can rearrange the information carried by a system but cannot create it from kinematic data or destroy it into kinematic data.
+**What the superselection statement forbids.** Because the conjugation action preserves the sectors and the relative phase is central, there is no operation of the framework that converts material data into informational data or the reverse, and there is no observable coherence between the two. A change of frame is a congruence, so it acts on both sectors simultaneously and preserves the grading: it rotates a four-vector in $\mathbb{B}_{\Phi}$ and a state in $\mathbb{B}_{\Psi}$ by the same rotor, and it never turns one into the other. This is the structural reason that a Lorentz transformation can rearrange the information carried by a system but cannot create it from kinematic data or destroy it into kinematic data.
 
 **What it does not forbid.** Because the sectors are not central summands, the framework has no preferred basis in which the material and informational contents are separately stored, and no conserved charge that counts them. The split is a grading of the operations, not a decomposition of the state space; the state space is irreducible, and its single sector is the whole of it. A reader who expects the two sectors to behave like electric-charge sectors — with superselection labels, additive charges, and a decomposition of the Hilbert space — will not find them, and their absence is a property of the algebra rather than a missing ingredient of the physical description. What the two sectors supply is a structural distinction between the kinematic and the informational faces of one algebraic object, sharp enough to organise the transformations of the theory and honest enough to make no claim to a decomposition that the algebra cannot support. 
 **Which quantities the frame cannot change.** The frame interpretation has an invariant content, and naming it is what makes the split a statement about a frame rather than about two worlds. A change of the local complex structure — the choice of which central element is written $i$, which is what a medium supplies — acts on the four forms as the central imaginary does: it reverses the sign of the two bilinear forms and leaves the two sesquilinear forms unchanged (*Product and Form Conventions*, §*The Involutions and the Four Forms*). The interval and the composition therefore move with the frame, while the probability form and the gauge calibration do not, and read on the split this is one statement in two sectors: the material data are the frame-dependent pair, their sign and their normalisation being data of the embedding, and the informational data are the invariants. An invariant of the framework is accordingly an invariant of the sesquilinear pair and of the zero-divisor cone, and a claim that the material description is privileged is a claim about a choice of slice and not about the algebra.
@@ -269,15 +269,15 @@ Each observable is the representative $iA$ of a **material element** $A\in\mathb
 
 ## Summary
 
-The decomposition $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ into anti-Hermitian and Hermitian elements is the eigenspace decomposition of the real structure $\flat = -{}^{*}$, and it satisfies the two operational conditions of a superselection structure. The operations of the framework are the congruences $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and every one of them preserves both sectors, since $(\tilde U\tilde{Q}\tilde U^{*})^{*} = \tilde U\tilde{Q}^{*}\tilde U^{*}$. The relative phase between the two components is generated by the central scalar $i$, which exchanges the sectors and acts on every irreducible module as the scalar $\exp(i\theta)$, hence fixes every ray; operationally, the informational component supplies the real part of the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}^{*})$ and the material component only its imaginary part, which no Hermitian observable reads.
+The decomposition $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ into anti-Hermitian and Hermitian elements is the eigenspace decomposition of the real structure $\flat = -{}^{*}$, and it satisfies the two operational conditions of a superselection structure. The operations of the framework are the congruences $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and every one of them preserves both sectors, since $(\tilde U\tilde{Q}\tilde U^{*})^{*} = \tilde U\tilde{Q}^{*}\tilde U^{*}$. The relative phase between the two components is generated by the central scalar $i$, which exchanges the sectors and acts on every irreducible module as the scalar $\exp(i\theta)$, hence fixes every ray; operationally, the informational component supplies the real part of the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}^{*})$ and the material component only its imaginary part, which no Hermitian observable reads.
 
 The split does not satisfy the standard algebraic realisation of a superselection structure. The centre is $Z(\mathbb{B}) = \mathbb{C}e_t$, its only central idempotents are $0$ and $e_t$, and $\mathbb{B}$ is central simple; the defining module is the unique simple module and is irreducible. There is consequently no central-projection decomposition into non-interfering branches, and the framework has no intrinsic superselection sectors of the standard kind. The centre itself is graded by the split, into the informational real scalar $e_t$ and the material imaginary scalar $ie_t$; the latter is the algebra's only non-trivial central charge, and because it acts as a scalar on the module it labels nothing.
 
 The sharpest positive content of the split is on the Lie algebra. The traceless parts furnish the Cartan decomposition
 $$
-\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}, \qquad
-[\mathbb{M}_\pm^{0},\mathbb{M}_\pm^{0}]\subseteq\mathbb{M}_\mp^{0}, \qquad
-[\mathbb{M}_+^{0},\mathbb{M}_-^{0}]\subseteq\mathbb{M}_+^{0},
+\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}, \qquad
+[\mathbb{B}_{\Psi,\Phi}^{0},\mathbb{B}_{\Psi,\Phi}^{0}]\subseteq\mathbb{B}_{\Phi,\Psi}^{0}, \qquad
+[\mathbb{B}_{\Psi}^{0},\mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0},
 $$
 with the material part the compact $\mathrm{SU}(2)$ of rotations and the informational part the non-compact complement of boosts, and with $\flat$ the Cartan involution. The bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic origin of the Wigner rotation, and it is the point at which the two sectors of the relativistic and quantum structures meet.
 
@@ -289,19 +289,19 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | ${}^{*}$ | Hermitian conjugation, antilinear involution |
-| $\flat = -{}^{*}$ | Real structure; fixed space $\mathbb{M}_-$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector, fixed space of ${}^{*}$ |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector, fixed space of $\flat$ |
-| $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Hermitian decomposition |
+| $\flat = -{}^{*}$ | Real structure; fixed space $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, fixed space of ${}^{*}$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector, fixed space of $\flat$ |
+| $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
 | $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ | General Hermitian element, the informational part |
 | $\tilde R_\varphi = i c r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
-| $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |
-| $\mathbb{M}_-^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
-| $\mathbb{M}_+^{0}$ | Informational traceless part, non-compact boosts |
+| $\mathbb{B}_{\Psi,\Phi}^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}$ |
+| $\mathbb{B}_{\Phi}^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
+| $\mathbb{B}_{\Psi}^{0}$ | Informational traceless part, non-compact boosts |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

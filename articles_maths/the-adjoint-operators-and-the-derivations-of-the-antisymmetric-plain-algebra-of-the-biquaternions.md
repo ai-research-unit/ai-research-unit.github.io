@@ -47,13 +47,13 @@ so the halved adjoint coincides with the operator $\vec Q_1\times$ on the vector
 
 ### The Vanishing on the Centre
 
-**Theorem.** For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\operatorname{ad}_{\tilde Q_1}=0$; $\operatorname{ad}^{\wedge}_{\tilde Q_1}=0$; $\tilde Q_1$ is central; and $\tilde Q_1\in\mathbb{C}_{\mathbb{B}}$. Hence
+**Theorem.** For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\operatorname{ad}_{\tilde Q_1}=0$; $\operatorname{ad}^{\wedge}_{\tilde Q_1}=0$; $\tilde Q_1$ is central; and $\tilde Q_1\in\mathbb{B}_{C}$. Hence
 
 $$
-\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t,
+\ker\operatorname{ad}=\mathbb{B}_{C}=\mathbb{C}e_t,
 $$
 
-the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=0$ for $\tilde Q_3\in\mathbb{C}_{\mathbb{B}}$.
+the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=0$ for $\tilde Q_3\in\mathbb{B}_{C}$.
 
 *Proof.* $\operatorname{ad}_{\tilde Q_1}=0$ exactly when $[\tilde Q_1,\tilde Q_3]=0$ for all $\tilde Q_3$, which by the cross-product formula is $\vec Q_1\times\vec Q_3=0$ for all $\vec Q_3$, forcing $\vec Q_1=0$, that is $\tilde Q_1\in\mathbb{C}e_t$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*.
 
@@ -107,12 +107,12 @@ $$
 The inner derivations are the adjoints of the vector subspace; the adjoints of the centre vanish, so
 
 $$
-\operatorname{Inn}(\mathfrak{g})=\{\operatorname{ad}_{\tilde Q_1}:\tilde Q_1\in\mathbb{B}\}=\{\operatorname{ad}_{\vec Q_1}:\vec Q_1\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}),
+\operatorname{Inn}(\mathfrak{g})=\{\operatorname{ad}_{\tilde Q_1}:\tilde Q_1\in\mathbb{B}\}=\{\operatorname{ad}_{\vec Q_1}:\vec Q_1\in\mathbb{B}_{V}\}\cong\mathfrak{sl}(2,\mathbb{C}),
 $$
 
 of complex dimension three and real dimension six.
 
-*Proof.* The Leibniz rule for the commutator is the associativity of the product, $\operatorname{ad}_{\tilde Q_1}(\tilde Q_2\tilde Q_4)=(\operatorname{ad}_{\tilde Q_1}\tilde Q_2)\tilde Q_4+\tilde Q_2(\operatorname{ad}_{\tilde Q_1}\tilde Q_4)$, and the halving carries it to the bracket; this is *Associative Algebras* and *Derivations of a Lie Algebra*. The inner derivations are the image of the adjoint representation, which by the previous section has kernel the centre, so its image is isomorphic to $\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$; the isomorphism is $\operatorname{ad}_{[\,\tilde Q_1,\tilde Q_2\,]}=[\operatorname{ad}_{\tilde Q_1},\operatorname{ad}_{\tilde Q_2}]$.
+*Proof.* The Leibniz rule for the commutator is the associativity of the product, $\operatorname{ad}_{\tilde Q_1}(\tilde Q_2\tilde Q_4)=(\operatorname{ad}_{\tilde Q_1}\tilde Q_2)\tilde Q_4+\tilde Q_2(\operatorname{ad}_{\tilde Q_1}\tilde Q_4)$, and the halving carries it to the bracket; this is *Associative Algebras* and *Derivations of a Lie Algebra*. The inner derivations are the image of the adjoint representation, which by the previous section has kernel the centre, so its image is isomorphic to $\mathfrak{g}/\mathbb{B}_{C}\cong\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C})$; the isomorphism is $\operatorname{ad}_{[\,\tilde Q_1,\tilde Q_2\,]}=[\operatorname{ad}_{\tilde Q_1},\operatorname{ad}_{\tilde Q_2}]$.
 
 **Remark.** **The inner derivations are the adjoints, and there are as many of them as the derived algebra has dimensions: three complex and six real.** The identification of the inner derivations with $\mathfrak{sl}(2,\mathbb{C})$ is the same identification as the one of the derived algebra, read through the adjoint representation; the two are the same space, one acting on the algebra and one acted upon.
 
@@ -120,7 +120,7 @@ of complex dimension three and real dimension six.
 
 **Theorem.** The outer derivations form a complex line, spanned by the derivation
 
-$$ \boxed{\; D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde Q_3)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}) \;}, $$
+$$ \boxed{\; D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde Q_3)=0\ \text{ on }\ \mathbb{B}_{V} \;}, $$
 
 which scales the centre and annihilates the derived algebra; it is the derivation induced by the dual number $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ acting on the centre in the description below. Hence
 
@@ -149,13 +149,13 @@ for all $\tilde Q_1,\tilde Q_2$; the automorphisms form the group $\operatorname
 **Theorem.** Every automorphism preserves the centre and the derived algebra, and it is the direct sum of an invertible scalar on the centre and an automorphism of the derived algebra:
 
 $$
-T(\tilde Q_1)=\alpha\,Q_{1t}e_t\oplus A(\vec Q_1),\qquad \alpha\in\mathbb{C}^{\times},\qquad A\in\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
+T(\tilde Q_1)=\alpha\,Q_{1t}e_t\oplus A(\vec Q_1),\qquad \alpha\in\mathbb{C}^{\times},\qquad A\in\operatorname{Aut}\bigl(\mathbb{B}_{V},\wedge\bigr),
 $$
 
 so that
 
 $$
-\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C}),
+\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times\operatorname{Aut}\bigl(\mathbb{B}_{V},\wedge\bigr)\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C}),
 $$
 
 of complex dimension four.
@@ -184,10 +184,10 @@ $$
 \operatorname{ad}^{\wedge}_{\tilde Q_1\wedge\tilde Q_2}=[\operatorname{ad}^{\wedge}_{\tilde Q_1},\operatorname{ad}^{\wedge}_{\tilde Q_2}],
 $$
 
-its kernel is the centre $\mathbb{C}_{\mathbb{B}}$, and its image is the Lie algebra of the inner derivations, identified with the derived algebra:
+its kernel is the centre $\mathbb{B}_{C}$, and its image is the Lie algebra of the inner derivations, identified with the derived algebra:
 
 $$
-\operatorname{ad}(\mathfrak{g})\cong\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C}),
+\operatorname{ad}(\mathfrak{g})\cong\mathfrak{g}/\mathbb{B}_{C}\cong\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C}),
 $$
 
 of complex dimension three and real dimension six.
@@ -228,7 +228,7 @@ $$
 \operatorname{Der}(\mathfrak{g})\oplus\mathbb{C}\,D_{\mathrm{dil}},
 $$
 
-where $D_{\mathrm{dil}}$ is the **dilation** of the derived algebra (the identity on $\mathrm{Vect}(\mathbb{B})$ and zero on the centre), a map that is not a derivation but obeys the infinitesimal similarity rule. **The structure group of the bracket is the automorphism group times the dilations, of complex dimension four plus one; the extra dimension is the one that scales the bracket itself.** The central scalars form the subgroup that scales only the centre, and they are already automorphisms, which is why the structure group contributes two scalar factors and the automorphism group only one.
+where $D_{\mathrm{dil}}$ is the **dilation** of the derived algebra (the identity on $\mathbb{B}_{V}$ and zero on the centre), a map that is not a derivation but obeys the infinitesimal similarity rule. **The structure group of the bracket is the automorphism group times the dilations, of complex dimension four plus one; the extra dimension is the one that scales the bracket itself.** The central scalars form the subgroup that scales only the centre, and they are already automorphisms, which is why the structure group contributes two scalar factors and the automorphism group only one.
 
 ## Worked Examples
 
@@ -258,10 +258,10 @@ The adjoint of the block is $\operatorname{ad}_{\tilde Q_1}=[\tilde Q_1,\cdot]$,
 |---|---|
 | $\operatorname{ad}_{\tilde Q_1}(\tilde Q_3)=[\tilde Q_1,\tilde Q_3]=\tilde Q_1\tilde Q_3-\tilde Q_3\tilde Q_1$ | the adjoint of the block, twice $\vec Q_1\times$ on the vector subspace |
 | $\operatorname{ad}^{\wedge}_{\tilde Q_1}(\tilde Q_3)=\tilde Q_1\wedge\tilde Q_3=\vec Q_1\times\vec Q_3$ | the halved adjoint, the adjoint of the block's own bracket |
-| $\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}$ | the kernel of the adjoint representation, the centre |
+| $\ker\operatorname{ad}=\mathbb{B}_{C}$ | the kernel of the adjoint representation, the centre |
 | $\operatorname{Tr}\operatorname{ad}_{\tilde Q_1}=0$ | every adjoint has vanishing trace |
 | $\operatorname{Der}(\mathfrak{g})$ | the derivation algebra |
-| $\operatorname{Inn}(\mathfrak{g})=\operatorname{ad}(\mathrm{Vect}(\mathbb{B}))\cong\mathfrak{sl}(2,\mathbb{C})$ | the inner derivations, the adjoints |
+| $\operatorname{Inn}(\mathfrak{g})=\operatorname{ad}(\mathbb{B}_{V})\cong\mathfrak{sl}(2,\mathbb{C})$ | the inner derivations, the adjoints |
 | $D_0$ | the outer derivation scaling the centre, annihilating the derived algebra |
 | $\operatorname{Der}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ | the derivation algebra, of complex dimension four |
 | $\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ | the automorphism group of the bracket |

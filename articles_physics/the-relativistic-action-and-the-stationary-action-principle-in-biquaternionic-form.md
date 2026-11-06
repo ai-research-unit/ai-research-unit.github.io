@@ -90,7 +90,7 @@ as the companion *Relativistic Mechanics in Biquaternionic Form* records. The re
 
 Parametrising by proper time and writing $\tilde{V} = d\tilde R_\varphi/d\tau$, the four-velocity obeys
 $$
-\tilde{V} = \gamma\bigl(ic\,e_t + \vec v\bigr) \in \mathbb{M}_- ,
+\tilde{V} = \gamma\bigl(ic\,e_t + \vec v\bigr) \in \mathbb{B}_{\Phi} ,
 \qquad
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\bigl(-c^2 + \vec v^2\bigr) = -c^2 .
 $$
@@ -135,13 +135,13 @@ $$
 \qquad
 \langle\tilde{P}\rangle_{\natural} = \gamma^2\bigl(-m^2c^2 + m^2\vec v^2\bigr) = -m^2c^2 .
 $$
-The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, which was verified on a random on-shell momentum to machine precision, and it is the particle counterpart of the field symbol condition of the operator article. The four-momentum lies in $\mathbb{M}_-$ and so does the four-force, both requiring the material sector of the involution lattice; the mass shell is the single scalar invariant the sector carries.
+The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, which was verified on a random on-shell momentum to machine precision, and it is the particle counterpart of the field symbol condition of the operator article. The four-momentum lies in $\mathbb{B}_{\Phi}$ and so does the four-force, both requiring the material sector of the involution lattice; the mass shell is the single scalar invariant the sector carries.
 
 ## The Relativistic Field
 
 ### The real Lagrangian and the second-order equation
 
-For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
+For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$. Its action is
 $$
 \boxed{\;
 S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
@@ -189,7 +189,7 @@ The components therefore decouple for exactly the fields that are **central**. F
 $$
 \mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] = \sum_\mu\bigl|\partial/\partial R_\mu\xi\bigr|^2 ,
 $$
-the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{Ξ} = \mu^2\tilde{Ξ}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
+the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$, and for it the variation separates and returns the single equation $\Box\tilde{Ξ} = \mu^2\tilde{Ξ}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
 The centrality of the mass is the structural point to carry forward. The companion *The Dirac Equation in Biquaternionic Form* records that the first-order (Dirac) mass is instead the chirality-off-diagonal coupling, a non-central term; the two mass terms are different objects, and the second-order action above can only produce the central one. This is the variational statement of the same distinction the involution lattice draws between the two kinds of mass.
 
@@ -236,7 +236,7 @@ with the mass entering as the chirality-off-diagonal coupling of the companion *
 
 The stationary-action principle is only half the content of an action; the other half is what leaves it invariant. The companion *Noether's Theorem in Biquaternionic Form* develops the theorem in full, and this article supplies the functionals it differentiates. The three symmetries of the actions above are worth naming here because they fix the structure of the theory.
 
-**The central phase.** The action of the complex field is invariant under $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, because the central factor cancels between the two members of the Hermitian pairing and between $\tilde{Ξ}^{*}\tilde{Ξ}$; the invariance holds for the massive as well as the massless field. The associated conserved current is the material-sector four-current $\tilde{J} = i[\tilde{Ξ}^{*}(\tilde{\nabla}\tilde{Ξ}) - (\tilde{\nabla}\tilde{Ξ}^{*})\tilde{Ξ}]$, whose scalar part $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ vanishes on shell. The statement that the current lies in $\mathbb{M}_-$ is the sector statement of the involution lattice; the statement that it is conserved is the variation statement of this article.
+**The central phase.** The action of the complex field is invariant under $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, because the central factor cancels between the two members of the Hermitian pairing and between $\tilde{Ξ}^{*}\tilde{Ξ}$; the invariance holds for the massive as well as the massless field. The associated conserved current is the material-sector four-current $\tilde{J} = i[\tilde{Ξ}^{*}(\tilde{\nabla}\tilde{Ξ}) - (\tilde{\nabla}\tilde{Ξ}^{*})\tilde{Ξ}]$, whose scalar part $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ vanishes on shell. The statement that the current lies in $\mathbb{B}_{\Phi}$ is the sector statement of the involution lattice; the statement that it is conserved is the variation statement of this article.
 
 **Translations.** The actions depend on $\tilde R_\varphi$ only through the fields and their gradients, so a constant shift of the argument is a symmetry, and the conserved quantity is the four-momentum. For the field the conserved density is the stress–energy tensor
 $$

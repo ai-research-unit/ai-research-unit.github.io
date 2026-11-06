@@ -8,7 +8,7 @@ This article asks that question for the biquaternion framework developed in the 
 
 The article is organized as follows. First, the biquaternion description of an entangled subsystem is recalled: the singlet as a single algebraic object, the reduced state as a partial trace, the correlation function as a bilinear pairing, and no-signaling as an identity satisfied by the partial trace. Then the five debates are revisited one by one, with a clear statement of what the framework does and does not contribute to each. Then the structural features of the framework that are genuinely new — as structure, not as physics — are collected. The article closes with the open questions that would have to be answered before the framework could be said to bring more than a change of notation.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Entangled Subsystem in the Biquaternion Language
 
@@ -124,7 +124,7 @@ Whether this structural interpretation satisfies a local realist depends on what
 
 Bell's theorem says that no local hidden-variable model can reproduce the quantum correlations of the singlet. The framework reproduces the standard correlation function $E(\vec u_a, \vec u_b) = -\vec u_a\cdot\vec u_b$ and the standard Tsirelson bound $2\sqrt{2}$ for the CHSH combination. Bell's theorem is untouched.
 
-What the framework changes is the *location* of the non-classicality. In the Hilbert-space formalism, the Born rule is a postulate, and the violation of Bell's inequality is a fact about joint probabilities that follows from that postulate. In the biquaternion framework, the Born rule is the normalised Hermitian form on $\mathbb{M}_+$, read as the trace pairing, and the correlation function is a bilinear pairing between a state idempotent and a tensor-product observable. The non-classicality is then a fact about the *pairing rule* of the algebra, not about an independent probabilistic postulate.
+What the framework changes is the *location* of the non-classicality. In the Hilbert-space formalism, the Born rule is a postulate, and the violation of Bell's inequality is a fact about joint probabilities that follows from that postulate. In the biquaternion framework, the Born rule is the normalised Hermitian form on $\mathbb{B}_{\Psi}$, read as the trace pairing, and the correlation function is a bilinear pairing between a state idempotent and a tensor-product observable. The non-classicality is then a fact about the *pairing rule* of the algebra, not about an independent probabilistic postulate.
 
 This is a clarification of where the quantum character sits, not a resolution of the tension. Bell's theorem stands: the algebra is not a local hidden-variable model, and its correlations cannot be simulated by any local classical model.
 
@@ -155,7 +155,7 @@ The most contested debate in the list is whether "entanglement" is a strictly qu
 
 The framework has something to say here, and the development is extensive enough to require a separate article. In brief, the framework contributes at two levels.
 
-**Structurally**, the split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ suggests a candidate home for the distinction. Quantum entanglement is a property of states in the informational sector $\mathbb{M}_+$; classical non-separability is a property of classical field configurations, which live in the material sector $\mathbb{M}_-$ or in its complexification. Under this interpretation, the quantum state is a *fundamental* element of $\mathbb{M}_+^{\otimes n}$, while the classical coherence matrix is a *derived* element of the same space, obtained as a second-order correlation of a deeper classical field configuration.
+**Structurally**, the split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$ suggests a candidate home for the distinction. Quantum entanglement is a property of states in the informational sector $\mathbb{B}_{\Psi}$; classical non-separability is a property of classical field configurations, which live in the material sector $\mathbb{B}_{\Phi}$ or in its complexification. Under this interpretation, the quantum state is a *fundamental* element of $\mathbb{B}_{\Psi}^{\otimes n}$, while the classical coherence matrix is a *derived* element of the same space, obtained as a second-order correlation of a deeper classical field configuration.
 
 **Operationally**, the framework has a natural algebraic home for the criterion recently proposed by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024): the distinction between quantum and classical non-separability is the **number of idempotent operations** applied to the two partitions of the state.
 
@@ -188,7 +188,7 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **6. The reversible/irreversible dichotomy is algebraic.** $*$-Unitary and idempotent elements are two classes of elements of one algebra, not two separate postulates.
 
-**7. The quantum/classical divide has a candidate structural home.** The split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ suggests a structural criterion for where entanglement lives, and the reversible/irreversible dichotomy gives the operational criterion an algebraic home. The development of this criterion is treated in the companion article.
+**7. The quantum/classical divide has a candidate structural home.** The split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$ suggests a structural criterion for where entanglement lives, and the reversible/irreversible dichotomy gives the operational criterion an algebraic home. The development of this criterion is treated in the companion article.
 
 ## What the Reformulation Does Not Claim
 
@@ -214,13 +214,13 @@ The questions raised by this article are open, and they constitute a research ag
 
 **1. Empirical contact.** What quantitative prediction distinguishes the biquaternion framework from standard quantum physics? This is the central question, and the one on which the eventual evaluation of the framework depends. Without it, the framework remains a reformulation.
 
-**2. The dynamics of the two sectors.** The framework describes the algebraic structure of $\mathbb{M}_-$ and $\mathbb{M}_+$, but it does not specify a dynamics that couples them beyond the standard Lorentz coupling via rotor conjugation. A genuinely new coupling would be where new physical content could reside.
+**2. The dynamics of the two sectors.** The framework describes the algebraic structure of $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, but it does not specify a dynamics that couples them beyond the standard Lorentz coupling via rotor conjugation. A genuinely new coupling would be where new physical content could reside.
 
 **3. The quantum/classical criterion.** Can the operational criterion of Korolkova, Sánchez-Soto, and Leuchs — two idempotents is quantum, one idempotent and one $*$-unitary is classical — be turned into a criterion with dynamical content, rather than a criterion about which operations are available? The companion article discusses this and the open questions it raises. The central open problem is whether the *number of available idempotents* can itself become a dynamical variable, and whether a state can transition from quantum to classical through the loss of an idempotent measurement channel.
 
 **4. The measurement problem in the framework.** Does the algebraic dichotomy between $*$-unitary and idempotent elements suggest a resolution of the selection problem, or does it merely restate it?
 
-**5. The status of the informational sector.** Is $\mathbb{M}_+$ physically realised as a distinct sector, or is it only a mathematical structure that happens to describe the operator algebra of a qubit? This is the question on which the interpretive content of the framework depends.
+**5. The status of the informational sector.** Is $\mathbb{B}_{\Psi}$ physically realised as a distinct sector, or is it only a mathematical structure that happens to describe the operator algebra of a qubit? This is the question on which the interpretive content of the framework depends.
 
 **6. Extension to many qubits and quantum field theory.** The framework is developed for a single qubit and for two-qubit systems. The extension to $n$ qubits, to second quantization, and to quantum field theory is the natural continuation, and it is the setting in which questions about entanglement, locality, and information acquire their full content.
 
@@ -237,7 +237,7 @@ It reformulates:
 - Steering as a factorization of the joint idempotent under a local projector.
 - No-signaling as the cyclicity of the partial trace.
 - The reversible/irreversible dichotomy as the algebraic dichotomy between $*$-unitary and idempotent elements.
-- The quantum/classical divide as a candidate structural distinction between $\mathbb{M}_-$ and $\mathbb{M}_+$, and as a natural algebraic home for the operational criterion of Korolkova, Sánchez-Soto, and Leuchs, as developed in the companion article.
+- The quantum/classical divide as a candidate structural distinction between $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, and as a natural algebraic home for the operational criterion of Korolkova, Sánchez-Soto, and Leuchs, as developed in the companion article.
 
 It does not:
 
@@ -255,8 +255,8 @@ The honest position is this. The framework makes certain structural features of 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Material sector (anti-Hermitian): four-vectors of relativity |
-| $\mathbb{M}_+$ | Informational sector (Hermitian): states and observables |
+| $\mathbb{B}_{\Phi}$ | Material sector (anti-Hermitian): four-vectors of relativity |
+| $\mathbb{B}_{\Psi}$ | Informational sector (Hermitian): states and observables |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |

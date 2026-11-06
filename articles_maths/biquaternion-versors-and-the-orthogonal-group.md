@@ -6,23 +6,23 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 
 This article works the biquaternion case of the Clifford group. It fixes the two slots of the envelope and identifies the odd slot as a copy of the algebra containing the Lorentzian space; it reads the grading of the versors by the parity of their length, which is the reflection count; it tabulates the four components of $O(1,3)$ against the operations that reach them; it identifies the volume element with the central scalar imaginary up to sign and shows that it acts on Lorentzian space as minus the identity through the inner automorphism while acting as the identity through the sandwich; and it separates the two involutions in play, the Hermitian dagger of the algebra and the Clifford conjugation of the envelope, which agree on the real-quaternion slice and nowhere else.
 
-The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, the reflection $\rho_\zeta(\eta)=-\zeta\eta\zeta^{-1}$ and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The versor, the rotor and the sandwich action in general are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the volume element and the Clifford dictionary are established in §*The Two Slots of the Envelope* and §*The Volume Element*. The sandwich, its kernel, its failure to be an automorphism and the contrast with the inner automorphism are *The Sandwich of an N-Regular, Spectrally Regular Biquaternion*, which owns the sandwich. The isometries read on the algebra itself, the rotor and the double covers, are *Biquaternion Rotations and Lorentz Transformations*; the reflections of that article are the reflections of the vector subspace $\mathrm{Vect}(\mathbb{B})$, a three-dimensional subspace of the algebra, and the reflections of this article are the Lorentz transformations of Lorentzian space, which are different maps on a different carrier. The group of units read against its matrix images is *$M_2(\mathbb{C})$ Pauli Representation*.
+The general theory is cited and not restated. The Clifford group, its norm, the groups Pin and Spin, the signed inner conjugation $\mathrm{Ad}^{\alpha}_{\tilde U}(\eta)=\alpha(\tilde U)\eta\tilde U^{-1}$, the reflection $\rho_\zeta(\eta)=-\zeta\eta\zeta^{-1}$ and the Cartan–Dieudonné theorem are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The versor, the rotor and the sandwich action in general are *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*. The even-part identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the volume element and the Clifford dictionary are established in §*The Two Slots of the Envelope* and §*The Volume Element*. The sandwich, its kernel, its failure to be an automorphism and the contrast with the inner automorphism are *The Sandwich of an N-Regular, Spectrally Regular Biquaternion*, which owns the sandwich. The isometries read on the algebra itself, the rotor and the double covers, are *Biquaternion Rotations and Lorentz Transformations*; the reflections of that article are the reflections of the vector subspace $\mathbb{B}_{V}$, a three-dimensional subspace of the algebra, and the reflections of this article are the Lorentz transformations of Lorentzian space, which are different maps on a different carrier. The group of units read against its matrix images is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Form and its Isometries
 
 **Definition.** The Hermitian sector is
 $$
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
+\mathbb{B}_{\Psi}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 of real dimension four. On it the biquaternion norm restricts to a quadratic form of signature $(1,3)$: for $\tilde{Q}=te_t+i\vec u$ with $t\in\mathbb{R}$ and $\vec u\in\mathbb{R}^3$ one has $\langle \tilde{Q}\rangle_{\natural}=t^2-\lvert\vec u\rvert^2$. The anti-Hermitian sector is the mirror,
 $$
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Phi}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
 and the norm restricts to it with signature $(3,1)$.
 
 **Definition.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$ — the abstract Lorentzian space, realised inside the algebra by the sector of the definition above — and let $O(q)=O(1,3)$ be its group of linear isometries. An isometry is **proper** when its determinant is $+1$ and **orthochronous** when it does not reverse the time orientation, that is when its $(0,0)$ entry is positive in a basis with the timelike coordinate first. The four combinations of the two signs are the four components of $O(1,3)$, and the identity component is the proper orthochronous group $SO^{+}(1,3)$.
 
-**Remark.** Replacing $q$ by $-q$ does not change $O(q)$, and it exchanges the two sectors; $\mathbb{M}_+$ with $O(1,3)$ and $\mathbb{M}_-$ with $O(3,1)$ are the same statement in the two sign conventions, and every statement below holds for both with the roles of the timelike and spacelike directions exchanged. The corpus writes the form of $\mathbb{M}_+$ in the mostly-minus convention, and that is the one used here.
+**Remark.** Replacing $q$ by $-q$ does not change $O(q)$, and it exchanges the two sectors; $\mathbb{B}_{\Psi}$ with $O(1,3)$ and $\mathbb{B}_{\Phi}$ with $O(3,1)$ are the same statement in the two sign conventions, and every statement below holds for both with the roles of the timelike and spacelike directions exchanged. The corpus writes the form of $\mathbb{B}_{\Psi}$ in the mostly-minus convention, and that is the one used here.
 
 ## The Two Slots of the Envelope
 
@@ -36,9 +36,9 @@ for every non-isotropic $\zeta\in V$, and the odd slot $\mathbb{B}\zeta$ is a se
 
 **Remark (verified).** The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the standard matrix representatives of the mostly-minus generators: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}\zeta$ has real dimension $8$ for a unit $\zeta$, the four generators lie in $\mathbb{B}\zeta$, and the two together span the $16$-dimensional envelope.
 
-**Remark (the Lorentzian space is odd, and its copy is inside the algebra).** The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Lorentzian vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{M}_+$, which carries the form of signature $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{M}_+$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.
+**Remark (the Lorentzian space is odd, and its copy is inside the algebra).** The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Lorentzian vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{B}_{\Psi}$, which carries the form of signature $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{B}_{\Psi}$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.
 
-**Remark (the labelling).** The two labellings of the signature, $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$, give the same even part and different ambient algebras, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, as the matrix model of the envelope records. This article uses the mostly-minus labelling, which is the one in which the form on $\mathbb{M}_+$ has signature $(1,3)$ and the orthogonal group is $O(1,3)$; under the other labelling the two families of bivectors are exchanged, the quaternion units becoming products of two generators of square $+1$ instead of two of square $-1$, and nothing else in the article changes.
+**Remark (the labelling).** The two labellings of the signature, $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$, give the same even part and different ambient algebras, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, as the matrix model of the envelope records. This article uses the mostly-minus labelling, which is the one in which the form on $\mathbb{B}_{\Psi}$ has signature $(1,3)$ and the orthogonal group is $O(1,3)$; under the other labelling the two families of bivectors are exchanged, the quaternion units becoming products of two generators of square $+1$ instead of two of square $-1$, and nothing else in the article changes.
 
 ## The Grading of the Versors
 
@@ -65,7 +65,7 @@ $$
 $$
 The only part of the Pin group that is an object of the biquaternion algebra is the spin group, which is its even part.
 
-**Remark (which reflections).** The reflections of this article are the Lorentz reflections, that is the maps $\rho_\zeta$ of the Lorentzian space. The reflections of *Biquaternion Rotations and Lorentz Transformations* are the maps $\rho_\eta(\tilde U)=-\eta\tilde U\eta^{-1}$ for $\langle \eta\rangle_{\natural}=1$ acting on the three-dimensional subspace $\mathrm{Vect}(\mathbb{B})$ of the algebra, where orthogonality and anticommutation coincide; those maps are realised by elements of the algebra, whereas the Lorentz reflections are not, which is the distinction that article records in the sentence that the Lorentz reflections live in the Clifford layer.
+**Remark (which reflections).** The reflections of this article are the Lorentz reflections, that is the maps $\rho_\zeta$ of the Lorentzian space. The reflections of *Biquaternion Rotations and Lorentz Transformations* are the maps $\rho_\eta(\tilde U)=-\eta\tilde U\eta^{-1}$ for $\langle \eta\rangle_{\natural}=1$ acting on the three-dimensional subspace $\mathbb{B}_{V}$ of the algebra, where orthogonality and anticommutation coincide; those maps are realised by elements of the algebra, whereas the Lorentz reflections are not, which is the distinction that article records in the sentence that the Lorentz reflections live in the Clifford layer.
 
 ## What the Algebra Reaches on the Hermitian Sector
 
@@ -73,15 +73,15 @@ The only part of the Pin group that is an object of the biquaternion algebra is 
 $$
 \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}
 $$
-be the bilinear sandwich of *Biquaternion Rotations and Lorentz Transformations*. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to $\mathbb{M}_+$ is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a sandwich of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_t\}$.
+be the bilinear sandwich of *Biquaternion Rotations and Lorentz Transformations*. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to $\mathbb{B}_{\Psi}$ is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a sandwich of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_t\}$.
 
 **Proof.** Under $\mathsf{M}_2$ the sandwich is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the sandwich because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of *Biquaternion Rotations and Lorentz Transformations*.
 
 **Remark (the isometry condition is exactly the unit norm).** The sandwich multiplies the norm by $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(\langle \tilde{Q}\rangle_{\natural})^{\natural}$ and the norm is multiplicative; so $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, which parametrises the same operators because $\langle i\tilde{Q}\rangle_{\natural}=-\langle \tilde{Q}\rangle_{\natural}$ and the operator is blind to the scalar imaginary.
 
-**Theorem (the four components, and the two discrete operations).** On $\mathbb{M}_+$ the following operations are isometries, and they fall in the four components of $O(1,3)$:
+**Theorem (the four components, and the two discrete operations).** On $\mathbb{B}_{\Psi}$ the following operations are isometries, and they fall in the four components of $O(1,3)$:
 
-| operation on $\mathbb{M}_+$ | determinant | time orientation | component |
+| operation on $\mathbb{B}_{\Psi}$ | determinant | time orientation | component |
 |---|---|---|---|
 | $\tilde U\mapsto \tilde{Q}\tilde U\tilde{Q}^{*}$, with $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ | $+1$ | $+$ | the identity component $SO^{+}(1,3)$ |
 | $\tilde U\mapsto \tilde{Q}\tilde U^{\natural}\tilde{Q}^{*}$, the argument quaternion-conjugated | $-1$ | $+$ | the improper orthochronous coset |
@@ -90,7 +90,7 @@ be the bilinear sandwich of *Biquaternion Rotations and Lorentz Transformations*
 
 The two operations beyond the sandwich are quaternion conjugation of the argument and the negation; they are the discrete parity and the product of parity with time reversal, and with the sandwich they generate the whole of $O(1,3)$.
 
-**Proof.** The first row is the theorem above. Quaternion conjugation fixes $e_t$ and negates $\vec e_x,\vec e_y,\vec e_z$, so on $\mathbb{M}_+$ it sends $te_t+i\vec u$ to $te_t-i\vec u$, which is the parity $\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$ and orthochronous; a determinant $-1$ isometry followed by a proper orthochronous one is improper orthochronous, and the determinant multiplies. The negation sends $te_t+i\vec u$ to $-te_t-i\vec u$, of determinant $+1$ and anti-orthochronous. The four signs are distinct, and the table is complete because $O(1,3)$ has exactly four components.
+**Proof.** The first row is the theorem above. Quaternion conjugation fixes $e_t$ and negates $\vec e_x,\vec e_y,\vec e_z$, so on $\mathbb{B}_{\Psi}$ it sends $te_t+i\vec u$ to $te_t-i\vec u$, which is the parity $\mathrm{diag}(1,-1,-1,-1)$, of determinant $-1$ and orthochronous; a determinant $-1$ isometry followed by a proper orthochronous one is improper orthochronous, and the determinant multiplies. The negation sends $te_t+i\vec u$ to $-te_t-i\vec u$, of determinant $+1$ and anti-orthochronous. The four signs are distinct, and the table is complete because $O(1,3)$ has exactly four components.
 
 **Remark (verified).**
 
@@ -125,7 +125,7 @@ $$
 
 **Remark (verified).** The composite was recomputed: the reversion of the volume element is the volume element, the reversion of $i\vec e_x$ is $-i\vec e_x$, the dagger of $i$ is $-i$, and the identity $\mathrm{rev}={}^{*}\circ\sigma$ held on random elements of the algebra to machine precision. The equality $\mathrm{rev}(\tilde{Q})=\tilde{Q}^{*}$ holds exactly on the real-quaternion slice, since it is equivalent to $\sigma$ fixing the element and $\sigma$ conjugates the four coefficients.
 
-**Corollary (they agree on the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the sandwich is the inner automorphism scaled by the norm,
+**Corollary (they agree on the real-quaternion slice).** On $\mathbb{B}_{H}$, the elements with four real coefficients, the coefficient conjugation is the identity and the two involutions coincide. Consequently on that slice the sandwich is the inner automorphism scaled by the norm,
 $$
 \boxed{\;\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\cdot\mathrm{Ad}_{\tilde{Q}},\qquad
 \mathrm{Ad}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}\;},
@@ -174,7 +174,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors, of signatures $(1,3)$ and $(3,1)$; the Hermitian one is the copy of Lorentzian space inside the algebra |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors, of signatures $(1,3)$ and $(3,1)$; the Hermitian one is the copy of Lorentzian space inside the algebra |
 | $V$ | The four-dimensional space of signature $(1,3)$ whose Clifford algebra is the envelope; it is odd, and it lies in the odd slot |
 | $\mathrm{Cl}_{1,3},\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ | The envelope, of real dimension $16$; its even part, the algebra, of real dimension $8$; its odd part, $\mathbb{B}\zeta$, a second copy of the algebra |
 | $\zeta$ | A non-isotropic vector of $V$; the odd slot is $\mathbb{B}\zeta$ and the inverse of $Q\mapsto Q\zeta$ is $Q\mapsto Q\zeta^{-1}$ |
@@ -184,7 +184,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Lorentzian 
 | $\Gamma$, $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$ | The Clifford group and the Clifford norm; $\mathrm{Pin}=\{\langle\tilde U\rangle_{\natural}=\pm1\}$ and $\mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}\cong\mathbb{B}^{\times}_1$ |
 | $\Omega=\eta_t\eta_x\eta_y\eta_z$ | The volume element of $\mathrm{Cl}_{1,3}$, the product of an ordered orthonormal frame of $V$; $\Omega^2=-1$, central in the even part and anticommuting with every vector; the central scalar imaginary is $-\Omega$ |
 | $\mathrm{rev},\sigma$ | The reversion of $\mathrm{Cl}_{1,3}$ fixing every vector; the automorphism conjugating the coefficients, $A\otimes h\mapsto\bar{A}\otimes h$; $\mathrm{rev}={}^{*}\circ\sigma$ |
-| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}$ |
+| $\mathbb{B}_{H}$ | The real-quaternion slice, four real coefficients; the slice on which ${}^{*}$ and $\mathrm{rev}$ coincide and $\mathrm{H}_{\tilde{Q}}=\langle \tilde{Q}\rangle_{\natural}\mathrm{Ad}_{\tilde{Q}}$ |
 | $P,PT$ | Parity, the quaternion conjugation of the argument; the product of parity and time reversal, the negation; neither is a sandwich |
 | $O(1,3),SO^{+}(1,3)$ | The orthogonal group of the form and its identity component; their components are indexed by the determinant and the time orientation |
 

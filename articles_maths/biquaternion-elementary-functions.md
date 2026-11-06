@@ -304,7 +304,7 @@ $$
 \exp(\theta\vec u) = \cos\theta\, e_t + \sin\theta\, \vec u,
 $$
 
-a unit quaternion in $\mathbb{H}_{\mathbb{B}}$, since $\langle\exp(\theta\vec u)\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_t$, and at the half-period $\exp(\pi\vec u) = -e_t$.
+a unit quaternion in $\mathbb{B}_{H}$, since $\langle\exp(\theta\vec u)\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$. The family is periodic with period $2\pi$, since $\exp(2\pi\vec u) = e_t$, and at the half-period $\exp(\pi\vec u) = -e_t$.
 
 **The vector directions.** With $(i\vec u)^2 = +e_t$ and real parameter $\theta_{\mathrm{rpd}} \in \mathbb{R}$,
 
@@ -312,7 +312,7 @@ $$
 \exp(\theta_{\mathrm{rpd}}\, i\vec u) = \cosh\theta_{\mathrm{rpd}}\, e_t + \sinh\theta_{\mathrm{rpd}}\, i\vec u.
 $$
 
-This element is Hermitian, lies in $\mathbb{M}_+$, and has $\langle\exp(\theta_{\mathrm{rpd}}\,i\vec u)\rangle_{\natural} = \cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Unlike the bivector family it is not periodic and is unbounded as $\theta_{\mathrm{rpd}} \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
+This element is Hermitian, lies in $\mathbb{B}_{\Psi}$, and has $\langle\exp(\theta_{\mathrm{rpd}}\,i\vec u)\rangle_{\natural} = \cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Unlike the bivector family it is not periodic and is unbounded as $\theta_{\mathrm{rpd}} \to \pm\infty$. The set of these elements is not a subgroup: the product of two of them in non-parallel directions is the product of an element of the same family and one of the bivector family.
 
 **Comparison.** A general exponent is $\tilde{Q} = \vec q + i\vec q'$ with $\vec q, \vec q'$ real vector parts; the two families commute only when $\vec q$ and $\vec q'$ are parallel, since $[\vec q, i\vec q'] = 2i\,(\vec q \times \vec q')$, and in general the closed form of §*The Exponential* with $Q_t = 0$ mixes the two families.
 
@@ -1182,7 +1182,7 @@ In the nilpotent regime the logarithm is the formula of §*The Degenerate Regime
 
 ### The Quaternion Case
 
-The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the real slice $\mathbb{H}_{\mathbb{B}}$, the fixed-point set of complex conjugation. For a quaternion $\tilde q=q_t e_t+\vec q$ with real coefficients, the complex norm is $B=\sqrt{\langle\vec q\rangle_{\natural}}$, a real non-negative number, and the elementary functions reduce to the ordinary quaternion elementary functions:
+The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the real slice $\mathbb{B}_{H}$, the fixed-point set of complex conjugation. For a quaternion $\tilde q=q_t e_t+\vec q$ with real coefficients, the complex norm is $B=\sqrt{\langle\vec q\rangle_{\natural}}$, a real non-negative number, and the elementary functions reduce to the ordinary quaternion elementary functions:
 
 $$
 \exp(\tilde q)=\exp(q_t)\bigl(\cos\rho+\sin\rho\,\vec u\bigr),
@@ -1200,7 +1200,7 @@ with $\vec u$ defined for $\vec q\neq0$; for a positive real quaternion the seco
 
 ### The Complex Case
 
-The biquaternion algebra contains the complex numbers as the subspace $\mathbb{C}_{\mathbb{B}}$, which is the fixed-point set of quaternion conjugation (the scalar part). For a complex scalar $\tilde{Q} = Q_t e_t$, the vector part vanishes, and the elementary functions reduce to the ordinary complex elementary functions:
+The biquaternion algebra contains the complex numbers as the subspace $\mathbb{B}_{C}$, which is the fixed-point set of quaternion conjugation (the scalar part). For a complex scalar $\tilde{Q} = Q_t e_t$, the vector part vanishes, and the elementary functions reduce to the ordinary complex elementary functions:
 
 $$
 \exp(Q_t e_t) = \exp(Q_t) e_t, \qquad \operatorname{Log}(Q_t e_t) = \operatorname{Log}(Q_t) e_t,

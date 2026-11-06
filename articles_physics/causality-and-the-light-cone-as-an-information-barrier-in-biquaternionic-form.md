@@ -4,7 +4,7 @@
 
 The special theory of relativity does more than relate the measurements of moving observers. It fixes which events can influence which other events, and it does so with a structure that is rigid, local, and independent of the particular interaction. Relative to a given event, spacetime divides into three regions: the events that can be reached from it, the events from which it can be reached, and the events that are causally disconnected from it. The boundary between them is the light cone. The interpretation of this structure adopted here is information-theoretic. The light cone is the barrier that separates the events a given event can signal, or be signalled by, from those it can neither signal nor be signalled by, and the causal order it defines is the order of possible influence.
 
-The biquaternion framework expresses this structure in the algebra. In the material sector $\mathbb{M}_-$ the interval between two events is the biquaternion norm $\langle\cdot\rangle_{\natural}$ of their displacement biquaternion, and the light cone is the set on which $\langle\cdot\rangle_{\natural}$ vanishes. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* establishes that this vanishing set is the material-sector part of the algebra's zero-divisor cone, and that the null directions are the directions in which the biquaternion wave operator propagates without dispersion. That result is taken as given below: the cone is not re-derived. What is developed here is what the cone does, and why it acts as a barrier to information.
+The biquaternion framework expresses this structure in the algebra. In the material sector $\mathbb{B}_{\Phi}$ the interval between two events is the biquaternion norm $\langle\cdot\rangle_{\natural}$ of their displacement biquaternion, and the light cone is the set on which $\langle\cdot\rangle_{\natural}$ vanishes. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* establishes that this vanishing set is the material-sector part of the algebra's zero-divisor cone, and that the null directions are the directions in which the biquaternion wave operator propagates without dispersion. That result is taken as given below: the cone is not re-derived. What is developed here is what the cone does, and why it acts as a barrier to information.
 
 The interval $\langle\tilde{Q}_{qp}\rangle_{\natural}$ classifies each pair of events as spacelike, null or timelike, and the null set is the light cone. On that structure the article establishes the following, all of it classical:
 
@@ -17,7 +17,7 @@ The interval $\langle\tilde{Q}_{qp}\rangle_{\natural}$ classifies each pair of e
 
 The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.
 
-The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two interpretations share the algebra and nothing else.
+The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{B}_{\Psi}$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two interpretations share the algebra and nothing else.
 
 ## Events, Displacements and the Causal Order
 
@@ -29,7 +29,7 @@ $$
 \tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 $$
 
-with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
+with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{B}_{\Phi}$. The displacement from an event $p$ to an event $q$ is
 
 $$
 \tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
@@ -78,7 +78,7 @@ The relation $\preceq$ is the **causal order**. It is reflexive, since $\tilde{Q
 The vanishing set of the biquaternion norm on the material sector is the double cone
 
 $$
-\mathcal{Z} = \{\, \tilde{Q}_1 \in \mathbb{M}_- : \tilde{Q}_1 \ne 0,\ \langle\tilde{Q}_1\rangle_{\natural} = 0 \,\}
+\mathcal{Z} = \{\, \tilde{Q}_1 \in \mathbb{B}_{\Phi} : \tilde{Q}_1 \ne 0,\ \langle\tilde{Q}_1\rangle_{\natural} = 0 \,\}
 = \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|r'_t| \,\},
 $$
 
@@ -104,7 +104,7 @@ so every nonzero displacement is invertible except the null ones.
 
 **The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ solves the massless dispersion relation $\langle\tilde P\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
-Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
+Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{B}_{\Phi}$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
 ## The Barrier That the Rotor Group Preserves
 
@@ -130,7 +130,7 @@ because $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ as a coefficien
 
 ### The Three Regions Are Orbits
 
-The invariance is sharpened by the orbit structure. Under the restricted Lorentz group $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$, realized by the rotor conjugation, the future-directed nonzero null elements of $\mathbb{M}_-$ form a single orbit and their past-directed counterparts form a second, the future-directed timelike elements of a fixed biquaternion norm form a single orbit, the past-directed timelike elements of that biquaternion norm form a single orbit, and the spacelike elements of a fixed biquaternion norm form a single orbit. The automorphism interpretation of the group is developed in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, and the covering and topology in *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
+The invariance is sharpened by the orbit structure. Under the restricted Lorentz group $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$, realized by the rotor conjugation, the future-directed nonzero null elements of $\mathbb{B}_{\Phi}$ form a single orbit and their past-directed counterparts form a second, the future-directed timelike elements of a fixed biquaternion norm form a single orbit, the past-directed timelike elements of that biquaternion norm form a single orbit, and the spacelike elements of a fixed biquaternion norm form a single orbit. The automorphism interpretation of the group is developed in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, and the covering and topology in *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
 
 The orbit statement is exactly the statement that the regions are the algebra's invariant strata. Two events with a timelike separation can be brought to a standard form by a rotor; two events with a spacelike separation cannot be brought to that form, and no rotor relates them. There is no continuous Lorentz transformation that interpolates between the two cases, because the invariant $\langle\cdot\rangle_{\natural}$ would have to change sign while remaining equal to itself.
 
@@ -329,7 +329,7 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde R_\varphi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde{R}_{\varphi,\mathrm d} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde R_\varphi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde{R}_{\varphi,\mathrm d} \in \mathbb{B}_{\Phi}$:
 
 $$
 \tilde R_\varphi \;\longmapsto\; \tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*} + \tilde{R}_{\varphi,\mathrm d}.
@@ -348,7 +348,7 @@ J^+(p) = \{\, q : p \preceq q \,\},
 \qquad
 J^-(p) = \{\, q : q \preceq p \,\},
 \qquad
-E(p) = \mathbb{M}_- \setminus \big(J^+(p) \cup J^-(p)\big).
+E(p) = \mathbb{B}_{\Phi} \setminus \big(J^+(p) \cup J^-(p)\big).
 $$
 
 $J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and $E(p)$ is its **elsewhere**, the set of events with a spacelike separation from $p$. In terms of the displacement $\tilde{Q}_{qp}$, membership in $J^+(p)$ is the condition $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp}) \ge 0$; membership in $J^-(p)$ is the same norm condition with the opposite sign of the scalar part; and $E(p)$ is the set on which $\langle\tilde{Q}_{qp}\rangle_{\natural} > 0$. Each of the three sets is a union of orbits of the rotor group, and their common boundary is the light cone through $p$.
@@ -359,7 +359,7 @@ The information-theoretic content is the following pair of statements.
 
 **What cannot be exchanged.** No admissible signal connects $p$ to any event of $E(p)$. A process that starts inside the cone and is built from continuous causal steps remains inside the cone, as the connectivity and invariance arguments of the preceding sections show, so it cannot arrive at a spacelike-separated event. Equivalently, an influence that reached $E(p)$ would have to leave the cone at some intermediate event, which is the negation of the causal postulate.
 
-The honest qualification is that the second statement is a physical postulate, not a theorem of the algebra. The algebra contains spacelike elements of $\mathbb{M}_-$ with $N > 0$, and it assigns them an inverse and a well-defined norm; it does not by itself exclude a process that propagates on them. What the algebra does is fix the structure on which the postulate is imposed: the three invariant strata, the partial order, the relative-velocity bound and the characteristic cone. Given the postulate that physical signals travel on or inside the cone, the barrier is then complete: the elsewhere is informationally inert, the cone is its boundary, and no change of frame moves the boundary. The sharpness of the barrier is the sharpness of the postulate, and the clean separation of the two — the algebra's invariant structure on the one hand, the causal postulate on the other — is the contribution of the biquaternion interpretation.
+The honest qualification is that the second statement is a physical postulate, not a theorem of the algebra. The algebra contains spacelike elements of $\mathbb{B}_{\Phi}$ with $N > 0$, and it assigns them an inverse and a well-defined norm; it does not by itself exclude a process that propagates on them. What the algebra does is fix the structure on which the postulate is imposed: the three invariant strata, the partial order, the relative-velocity bound and the characteristic cone. Given the postulate that physical signals travel on or inside the cone, the barrier is then complete: the elsewhere is informationally inert, the cone is its boundary, and no change of frame moves the boundary. The sharpness of the barrier is the sharpness of the postulate, and the clean separation of the two — the algebra's invariant structure on the one hand, the causal postulate on the other — is the contribution of the biquaternion interpretation.
 
 There is no corresponding barrier for observers at a single event: two observers may coincide at an event and separate thereafter, and each later event of either worldline lies in the causal future of that coincidence, though events on the two worldlines after the coincidence need not be causally related to one another. The barrier is between events and between velocities, not between observers as such. What the relative-velocity bound adds is that the relative speed of the two observers remains below $c$, and no finite sequence of frame changes can make it reach $c$.
 
@@ -379,7 +379,7 @@ The conventions and the results taken over from the relativity series are those 
 
 ## Summary
 
-The causal structure of the material sector $\mathbb{M}_-$ is the structure of the biquaternion norm $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ and of its vanishing set, the light cone.
+The causal structure of the material sector $\mathbb{B}_{\Phi}$ is the structure of the biquaternion norm $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ and of its vanishing set, the light cone.
 
 1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the interval is $\langle\tilde{Q}_{qp}\rangle_{\natural} = -c^2(\Delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
 
@@ -404,18 +404,18 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q}_1^{\natural}$, $\bar{\tilde{Q}_1}$, $\tilde{Q}_1^{*} = \overline{\tilde{Q}_1^{\natural}}$ | Quaternion, complex and Hermitian conjugation |
 | $\tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
-| $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; the interval on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; the interval on $\mathbb{B}_{\Phi}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i c r'_t$ the material interval is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
-| $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{M}_-$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
+| $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{B}_{\Phi}$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta r'_t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |

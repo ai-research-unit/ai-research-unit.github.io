@@ -107,8 +107,8 @@ $$
 with the two real $3$-planes
 
 $$
-P_+=P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad
-P_-=P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}.
+P_+=P\cap\mathbb{B}_{H}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad
+P_-=P\cap \mathbb{B}_{iH}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}.
 $$
 
 **Proposition (the cone meets a definite plane only at the apex).** $\mathcal{N}\cap P_+=\{0\}$ and $\mathcal{N}\cap P_-=\{0\}$.
@@ -120,15 +120,15 @@ $$
 The two planes sit inside the **Lorentzian slices**
 
 $$
-\mathbb{M}_+=\{Q_t\in\mathbb{R},\ Q_x,Q_y,Q_z\in i\mathbb{R}\},\qquad
-\mathbb{M}_-=\{Q_t\in i\mathbb{R},\ Q_x,Q_y,Q_z\in\mathbb{R}\},
+\mathbb{B}_{\Psi}=\{Q_t\in\mathbb{R},\ Q_x,Q_y,Q_z\in i\mathbb{R}\},\qquad
+\mathbb{B}_{\Phi}=\{Q_t\in i\mathbb{R},\ Q_x,Q_y,Q_z\in\mathbb{R}\},
 $$
 
-the Hermitian and anti-Hermitian subspaces of signatures $(1,3)$ and $(3,1)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Four Algebraic Norms*). Thus $P_-\subset\mathbb{M}_+$ and $P_+\subset\mathbb{M}_-$: each Lorentzian slice contains a definite plane, and the cone meets that plane only at the apex; the rest of the slice carries a genuine null cone.
+the Hermitian and anti-Hermitian subspaces of signatures $(1,3)$ and $(3,1)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Four Algebraic Norms*). Thus $P_-\subset\mathbb{B}_{\Psi}$ and $P_+\subset\mathbb{B}_{\Phi}$: each Lorentzian slice contains a definite plane, and the cone meets that plane only at the apex; the rest of the slice carries a genuine null cone.
 
-**Proposition (the Lorentzian link).** On $\mathbb{M}_+$ and $\mathbb{M}_-$ the cone cuts the three-dimensional null cone of the slice, whose link in $S^{7}_{E}$ is $S^{2}\sqcup S^{2}$, one sphere per nappe.
+**Proposition (the Lorentzian link).** On $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the cone cuts the three-dimensional null cone of the slice, whose link in $S^{7}_{E}$ is $S^{2}\sqcup S^{2}$, one sphere per nappe.
 
-*Proof.* On $\mathbb{M}_+$ write $\tilde Q=a e_t+i\vec p$ with $a\in\mathbb{R}$ and $\vec p\in\mathbb{R}^{3}$. Then $N=a^{2}-\lvert\vec p\rvert^{2}$, so the null cone is $a=\pm\lvert\vec p\rvert$; intersecting it with the unit sphere $a^{2}+\lvert\vec p\rvert^{2}=1$ gives $a=\pm1/\sqrt2$ and $\lvert\vec p\rvert=1/\sqrt2$, that is two copies of $S^{2}$. The slice $\mathbb{M}_-$ is the image of $\mathbb{M}_+$ under multiplication by $i$, and the argument is the same.
+*Proof.* On $\mathbb{B}_{\Psi}$ write $\tilde Q=a e_t+i\vec p$ with $a\in\mathbb{R}$ and $\vec p\in\mathbb{R}^{3}$. Then $N=a^{2}-\lvert\vec p\rvert^{2}$, so the null cone is $a=\pm\lvert\vec p\rvert$; intersecting it with the unit sphere $a^{2}+\lvert\vec p\rvert^{2}=1$ gives $a=\pm1/\sqrt2$ and $\lvert\vec p\rvert=1/\sqrt2$, that is two copies of $S^{2}$. The slice $\mathbb{B}_{\Phi}$ is the image of $\mathbb{B}_{\Psi}$ under multiplication by $i$, and the argument is the same.
 
 **Proposition (the sphere of real roots of $-1$).** The unit sphere of $P_+$ is
 
@@ -146,7 +146,7 @@ the sphere of **real roots of $-1$**; it is compact, connected and simply connec
 - The apex is the only singular point of $\mathcal{N}$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
 - $\mathcal{N}$ is the cone on its **link** $L=\mathcal{N}\cap S^{7}_{E}$, hence contractible; the interesting topology is that of $L$.
 - The link is $L\cong S^{2}\times S^{3}\cong V_{2}(\mathbb{R}^{4})$, a closed connected $5$-manifold with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; it is not $S^{5}$, so the apex is genuinely singular.
-- The cone meets the definite planes $P_+$ and $P_-$ of the pure subspace only at the apex, while on the Lorentzian slices $\mathbb{M}_\pm$ it cuts a three-dimensional null cone with link $S^{2}\sqcup S^{2}$. The unit sphere of $P_+$ is the sphere of real roots of $-1$, $S^{2}$, the base of the Hopf fibration.
+- The cone meets the definite planes $P_+$ and $P_-$ of the pure subspace only at the apex, while on the Lorentzian slices $\mathbb{B}_{\Psi,\Phi}$ it cuts a three-dimensional null cone with link $S^{2}\sqcup S^{2}$. The unit sphere of $P_+$ is the sphere of real roots of $-1$, $S^{2}$, the base of the Hopf fibration.
 
 ## Summary of Notation
 
@@ -165,7 +165,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 | $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$ | Projectivised cone |
 | $P=\{Q_t=0\}\cong\mathbb{C}^{3}$ | Pure subspace |
 | $P_+$, $P_-$ | The definite $3$-planes in $P$; unit spheres $S^{2}$ each |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Lorentzian slices, signatures $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Lorentzian slices, signatures $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
 | $\mathbb{B}^{\times}$ | Group of units; complement of $\mathcal{N}$ |
 
 ## Further Reading

@@ -88,7 +88,7 @@ The choice of the root $\rho$ is not neutral. The four cases are the following.
 
 **Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.** The kernel is a real quaternion exponential, and the transform is the ordinary quaternion Fourier transform. The quaternion Fourier transform itself has several conventions (left, right, two-sided), and the choice of convention must be stated.
 
-**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and the signal takes values in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the transform reduces to **two** ordinary complex Fourier transforms. The two complex transforms are coupled by the real and imaginary parts of the signal.
+**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and the signal takes values in the real quaternion subspace $\mathbb{B}_{H}$ or in the imaginary translate $\mathbb{B}_{iH}$, the transform reduces to **two** ordinary complex Fourier transforms. The two complex transforms are coupled by the real and imaginary parts of the signal.
 
 **Non-trivial root, fully biquaternion signal.** If $\rho$ is a non-trivial root and the signal takes values in the full biquaternion algebra, the transform requires **four** ordinary complex Fourier transforms. This is the generic case.
 
@@ -365,7 +365,7 @@ More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion
 
 The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras: every nonzero element has an inverse. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
 
-The issue can be avoided by restricting the signals to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$, every nonzero sample is invertible, and the transform is invertible on all signals. On the anti-Hermitian subspace $\mathbb{M}_-$, the samples with vanishing norm lie on a cone, and the transform is invertible only for signals whose samples lie off this cone.
+The issue can be avoided by restricting the signals to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{B}_{H}$. On $\mathbb{B}_{H}$, every nonzero sample is invertible, and the transform is invertible on all signals. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the samples with vanishing norm lie on a cone, and the transform is invertible only for signals whose samples lie off this cone.
 
 ### The Open Question
 

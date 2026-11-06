@@ -7,14 +7,14 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
+H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{B}_{C},
 $$
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the Hermitian form, read through the trace. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -83,7 +83,7 @@ $$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$
 
-The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ with $\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
+The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ with $\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{B}_{\Phi}$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{B}_{\Psi}$. As in the free case, the continuity equation pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
 ## The Scattering Problem
 
@@ -436,8 +436,8 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_j^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; the Hamiltonian multiplies $e_t$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; the Hamiltonian multiplies $e_t$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
 | $H = [-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |

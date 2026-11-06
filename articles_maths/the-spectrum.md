@@ -292,7 +292,7 @@ $$
 **Theorem (the geometry).** The spectral-degenerate cone is the product of the scalar line and the isotropic cone of the vector subspace,
 
 $$
-\mathcal S=\mathbb{C}e_t\times\{\vec Q\in\operatorname{Vect}(\mathbb{B}):\vec Q^2=0\}.
+\mathcal S=\mathbb{C}e_t\times\{\vec Q\in\mathbb{B}_{V}:\vec Q^2=0\}.
 $$
 
 It is a complex cone of complex dimension $3$ and real dimension $6$. Its singular locus is the **vertex** $\{\vec Q=0\}$, the whole scalar line; off the vertex it is a smooth hypersurface.
@@ -367,16 +367,16 @@ The unordered spectrum therefore determines the similarity class off the spectra
 
 | remarkable subspace | real basis | restriction of $B^2$ | elements with $B^2=0$ |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | $e_t,\,ie_t$ | $0$ | the whole centre |
-| $\operatorname{Vect}(\mathbb{B})$, the vector subspace | $\vec e_k,\,i\vec e_k$ | $\sum_kQ_k^2$ | the isotropic cone, complex dimension $2$ |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $q_x^2+q_y^2+q_z^2$ | $\mathbb{R}e_t$ |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(q_x^2+q_y^2+q_z^2)$ | $\mathbb{R}ie_t$ |
-| $\mathbb{M}_{+}$, the Hermitian subspace | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(a_x^2+a_y^2+a_z^2)$ | $\mathbb{R}e_t$ |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $a_x^2+a_y^2+a_z^2$ | $\mathbb{R}ie_t$ |
+| $\mathbb{B}_{C}$, the centre | $e_t,\,ie_t$ | $0$ | the whole centre |
+| $\mathbb{B}_{V}$, the vector subspace | $\vec e_k,\,i\vec e_k$ | $\sum_kQ_k^2$ | the isotropic cone, complex dimension $2$ |
+| $\mathbb{B}_{H}$, the quaternion subspace | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $q_x^2+q_y^2+q_z^2$ | $\mathbb{R}e_t$ |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(q_x^2+q_y^2+q_z^2)$ | $\mathbb{R}ie_t$ |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-(a_x^2+a_y^2+a_z^2)$ | $\mathbb{R}e_t$ |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $a_x^2+a_y^2+a_z^2$ | $\mathbb{R}ie_t$ |
 
 **Corollary.** Every element of the centre is spectrally degenerate, and the centre is the only remarkable subspace contained in $\mathcal S$. On the quaternion and anti-Hermitian subspaces $B^2$ is a sum of squares, on the anti-quaternion and Hermitian subspaces it is the negative of a sum of squares; in each case the zero set is the real or the imaginary scalar line. Only on the vector subspace is the condition a genuine cone, the isotropic cone of complex dimension $2$ and real dimension $4$.
 
-*Proof.* The values are read from the displayed real bases: on the centre all three vector coefficients vanish; on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the coefficients $Q_k$ are real or purely imaginary; on $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ the scalar coefficient is real or purely imaginary and the vector coefficients are purely imaginary or real. Each non-central restriction is a sum of three squares with a sign, so its zero set is the scalar line of the subspace.
+*Proof.* The values are read from the displayed real bases: on the centre all three vector coefficients vanish; on $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ the coefficients $Q_k$ are real or purely imaginary; on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the scalar coefficient is real or purely imaginary and the vector coefficients are purely imaginary or real. Each non-central restriction is a sum of three squares with a sign, so its zero set is the scalar line of the subspace.
 
 **Corollary (the strata on the remarkable subspaces).** The centre and the four real-type subspaces meet only the scalar stratum; the vector subspace meets the scalar stratum at the origin and the nilpotent stratum elsewhere; the unipotent stratum meets none of the remarkable subspaces.
 

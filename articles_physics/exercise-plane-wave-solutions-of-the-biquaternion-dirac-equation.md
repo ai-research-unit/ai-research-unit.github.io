@@ -107,7 +107,7 @@ $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
 
-**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{B}_{\Phi}$ frame of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the gradient with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the element $i\tilde P$ for the symbol and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 
@@ -313,7 +313,7 @@ $$
 \tilde P/\hbar=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z ,
 $$
 
-an element of the material sector $\mathbb{M}_-$: imaginary scalar part and real vector part. Its quaternionic norm is the norm of *Algebra and Element Conventions*, §*The Conjugations*, so
+an element of the material sector $\mathbb{B}_{\Phi}$: imaginary scalar part and real vector part. Its quaternionic norm is the norm of *Algebra and Element Conventions*, §*The Conjugations*, so
 
 $$
 \langle\tilde P/\hbar\rangle_{\natural}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\vec k^2 ,
@@ -331,7 +331,7 @@ $$
 \boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2\;}.
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{M}_-$ with the same quaternionic norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to the digits shown.
 

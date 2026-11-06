@@ -4,9 +4,9 @@
 
 This article introduces the integration theory of biquaternion-valued functions. It follows the article on biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace of $\mathbb{B}$. The goal here is to define the integral of a biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences in complex analysis.
 
-Throughout the main body of this article, we work on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coordinates $q_t, q_x, q_y, q_z$ are all real. On this subspace, the framework's partial derivatives coincide with the ordinary real partial derivatives, and the framework's gradient $\tilde{\nabla}$ coincides with the Cauchy–Riemann operator on $\mathbb{R}^4$. The integration theory on $\mathbb{H}_{\mathbb{B}}$ is therefore the standard Clifford analysis of $\mathbb{R}^4$, with the biquaternion algebra $\mathbb{B}$ (isomorphic to $\mathrm{Cl}_{1,3}^+$) playing the role of the Clifford algebra. The extension to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, where the partial derivatives carry factors of $-i$, is not developed here; it is discussed in the open questions. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the one further case of the same kind as $\mathbb{H}_{\mathbb{B}}$: every coefficient is purely imaginary, so the theory there is the theory below carried through the central rotation $\tilde{Q} \mapsto i\tilde{Q}$, with the Cauchy kernel scaled by $i$ and the sign of the d'Alembertian reversed. That case therefore needs no separate treatment, and the questions left open below concern the indefinite subspaces, where the kernel does change.
+Throughout the main body of this article, we work on the **quaternion subspace** $\mathbb{B}_{H}$, whose four coordinates $q_t, q_x, q_y, q_z$ are all real. On this subspace, the framework's partial derivatives coincide with the ordinary real partial derivatives, and the framework's gradient $\tilde{\nabla}$ coincides with the Cauchy–Riemann operator on $\mathbb{R}^4$. The integration theory on $\mathbb{B}_{H}$ is therefore the standard Clifford analysis of $\mathbb{R}^4$, with the biquaternion algebra $\mathbb{B}$ (isomorphic to $\mathrm{Cl}_{1,3}^+$) playing the role of the Clifford algebra. The extension to the indefinite subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, where the partial derivatives carry factors of $-i$, is not developed here; it is discussed in the open questions. The anti-quaternion subspace $\mathbb{B}_{iH}$ is the one further case of the same kind as $\mathbb{B}_{H}$: every coefficient is purely imaginary, so the theory there is the theory below carried through the central rotation $\tilde{Q} \mapsto i\tilde{Q}$, with the Cauchy kernel scaled by $i$ and the sign of the d'Alembertian reversed. That case therefore needs no separate treatment, and the questions left open below concern the indefinite subspaces, where the kernel does change.
 
-The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of $\mathbb{H}_{\mathbb{B}}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of $\mathbb{B}_{H}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
@@ -16,13 +16,13 @@ The biquaternion algebra $\mathbb{B}$, its conjugations, its remarkable subspace
 
 ### Definition
 
-Let $F_{\mathrm{fn}} : \mathbb{H}_{\mathbb{B}} \to \mathbb{B}$ be a biquaternion-valued function, written in components as
+Let $F_{\mathrm{fn}} : \mathbb{B}_{H} \to \mathbb{B}$ be a biquaternion-valued function, written in components as
 
 $$
 F_{\mathrm{fn}}(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} F_\mu(q_t, q_x, q_y, q_z) e_\mu, \qquad F_\mu \in \mathbb{C}.
 $$
 
-Let $\Omega \subset \mathbb{H}_{\mathbb{B}}$ be a domain. The **integral** of $F_{\mathrm{fn}}$ over $\Omega$ is
+Let $\Omega \subset \mathbb{B}_{H}$ be a domain. The **integral** of $F_{\mathrm{fn}}$ over $\Omega$ is
 
 $$
 \int_\Omega F_{\mathrm{fn}} \, dV = \sum_{\mu\in\{t,x,y,z\}} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
@@ -214,7 +214,7 @@ $$
 
 homogeneous of degree $-2$. It is a different object from the gradient kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the preceding sections, which is homogeneous of degree $-3$ and inverts the first-order operator $\tilde{\nabla}$ rather than the second-order $\Box$. The companion physics article *The Biquaternion D'Alembertian and Its Green's Functions* writes the corresponding kernel, with the opposite overall sign because its fourth coordinate is $iq'_t$, as $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ with $-\Box G_{\mathrm{inv}} = \delta^{(4)}$.
 
-**Theorem (representation formula).** Let $\Omega \subset \mathbb{H}_{\mathbb{B}}$ be a bounded domain with piecewise smooth boundary, let $\varphi$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_\Box$ be as above; write $G_\Box(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
+**Theorem (representation formula).** Let $\Omega \subset \mathbb{B}_{H}$ be a bounded domain with piecewise smooth boundary, let $\varphi$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_\Box$ be as above; write $G_\Box(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
 
 $$
 \varphi(\tilde{Q}_0) = \int_\Omega G_\Box(\tilde{Q}_0 - \tilde{Q})\,(\Box \varphi)(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ \varphi(\tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} G_\Box(\tilde{Q}_0 - \tilde{Q}) - G_\Box(\tilde{Q}_0 - \tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} \varphi(\tilde{Q}) \right] dS .
@@ -230,14 +230,14 @@ $$
 
 so a function annihilated by the four-dimensional Laplacian is determined at every interior point by its boundary values and its normal derivative. This is the second-order companion of the Cauchy integral formula above, which represents a function annihilated by the first-order operator $\tilde{\nabla}$ by its boundary values alone; here it is the vanishing of $\Box \varphi$, not the size of the kernel's singularity, that removes the volume term.
 
-**The Kirchhoff–Green reading.** For the wave operator the same identity is the **Kirchhoff–Green representation**: on a domain whose boundary is split into two complementary surfaces, the volume integral is the source term and the surface integral carries the boundary data, and the low-dimensional cases are the classical d'Alembert, Poisson and Kirchhoff formulas of the companion *Partial Differential Equations*. The operator $\Box$ of this article is the four-dimensional Laplacian in the real coordinates of $\mathbb{H}_{\mathbb{B}}$; its wave reading, in which the fourth coordinate is $iq'_t$, is the one used by the companion physics articles, and the biquaternionic analogue of the Kirchhoff and Green formulas for that wave ("biwave") operator is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading, whose biwave family also unifies the Maxwell- and Dirac-equivalent second-order equations in one operator.
+**The Kirchhoff–Green reading.** For the wave operator the same identity is the **Kirchhoff–Green representation**: on a domain whose boundary is split into two complementary surfaces, the volume integral is the source term and the surface integral carries the boundary data, and the low-dimensional cases are the classical d'Alembert, Poisson and Kirchhoff formulas of the companion *Partial Differential Equations*. The operator $\Box$ of this article is the four-dimensional Laplacian in the real coordinates of $\mathbb{B}_{H}$; its wave reading, in which the fourth coordinate is $iq'_t$, is the one used by the companion physics articles, and the biquaternionic analogue of the Kirchhoff and Green formulas for that wave ("biwave") operator is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading, whose biwave family also unifies the Maxwell- and Dirac-equivalent second-order equations in one operator.
 
 
 ## The Fundamental Solution
 
 ### Definition
 
-The **fundamental solution** of the gradient operator $\tilde{\nabla}$ on $\mathbb{H}_{\mathbb{B}}$ is the biquaternion-valued function
+The **fundamental solution** of the gradient operator $\tilde{\nabla}$ on $\mathbb{B}_{H}$ is the biquaternion-valued function
 
 $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4},
@@ -245,17 +245,17 @@ $$
 
 where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
 
-The function $G_{\mathrm{fn}}$ is defined for $\tilde{Q} \neq 0$ in $\mathbb{H}_{\mathbb{B}}$. It is homogeneous of degree $-3$: $G_{\mathrm{fn}}(\lambda \tilde{Q}) = \lambda^{-3} G_{\mathrm{fn}}(\tilde{Q})$ for $\lambda > 0$.
+The function $G_{\mathrm{fn}}$ is defined for $\tilde{Q} \neq 0$ in $\mathbb{B}_{H}$. It is homogeneous of degree $-3$: $G_{\mathrm{fn}}(\lambda \tilde{Q}) = \lambda^{-3} G_{\mathrm{fn}}(\tilde{Q})$ for $\lambda > 0$.
 
 ### The Gradient of the Fundamental Solution
 
-**Theorem (on $\mathbb{H}_{\mathbb{B}}$).** For $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$ with $\tilde{Q} \neq 0$,
+**Theorem (on $\mathbb{B}_{H}$).** For $\tilde{Q} \in \mathbb{B}_{H}$ with $\tilde{Q} \neq 0$,
 
 $$
 \tilde{\nabla} G_{\mathrm{fn}}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$ (all $Q_\mu$ are real, since $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$). The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_{\mu\in\{x,y,z\}} Q_\mu \vec e_\mu$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$ (all $Q_\mu$ are real, since $\tilde{Q} \in \mathbb{B}_{H}$). The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_{\mu\in\{x,y,z\}} Q_\mu \vec e_\mu$. So
 
 $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{Q_t e_t - \sum_{\mu\in\{x,y,z\}} Q_\mu \vec e_\mu}{(\sum_\mu Q_\mu^2)^2}.
@@ -271,7 +271,7 @@ where we have used the product rule and the fact that $\tilde{Q}^{\natural}$ and
 
 The first term is $\tilde{\nabla}\tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = 4 e_t$. (Here we used $\partial/\partial q_\mu\,\tilde{Q}^{\natural} = e_\mu^{\natural}$, which holds because the coefficients $Q_\mu$ are real: $\partial/\partial q_t\,\tilde{Q}^{\natural} = e_t$ and $\partial/\partial q_\nu\,\tilde{Q}^{\natural} = -\vec e_\nu$.)
 
-For the second term, on $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\partial/\partial q_\mu\|\tilde Q\|_E^2 = \partial/\partial q_\mu(\sum_\nu Q_\nu^2) = 2Q_\mu$. Hence
+For the second term, on $\mathbb{B}_{H}$ the coefficients are real, so $\partial/\partial q_\mu\|\tilde Q\|_E^2 = \partial/\partial q_\mu(\sum_\nu Q_\nu^2) = 2Q_\mu$. Hence
 
 $$
 \partial/\partial q_\mu\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{2}{\|\tilde Q\|_E^6} \partial/\partial q_\mu\|\tilde Q\|_E^2 = -\frac{2 \cdot 2 Q_\mu}{\|\tilde Q\|_E^6} = -\frac{4 Q_\mu}{\|\tilde Q\|_E^6}.
@@ -289,7 +289,7 @@ $$
 \tilde{Q}^{\natural} \tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4\tilde{Q}^{\natural}\tilde Q}{\|\tilde Q\|_E^6}.
 $$
 
-On $\mathbb{H}_{\mathbb{B}}$, $\tilde{Q}^{\natural}\tilde Q = \sum_\mu Q_\mu^2 e_t = \|\tilde Q\|_E^2 e_t$. So this term is $-4\|\tilde Q\|_E^2 e_t/\|\tilde Q\|_E^6 = -4e_t/\|\tilde Q\|_E^4$.
+On $\mathbb{B}_{H}$, $\tilde{Q}^{\natural}\tilde Q = \sum_\mu Q_\mu^2 e_t = \|\tilde Q\|_E^2 e_t$. So this term is $-4\|\tilde Q\|_E^2 e_t/\|\tilde Q\|_E^6 = -4e_t/\|\tilde Q\|_E^4$.
 
 Combining both terms:
 
@@ -299,7 +299,7 @@ $$
 
 ### The Distributional Gradient
 
-**Theorem.** In the sense of distributions on $\mathbb{H}_{\mathbb{B}}$,
+**Theorem.** In the sense of distributions on $\mathbb{B}_{H}$,
 
 $$
 \boxed{\; \tilde{\nabla} G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t \;},
@@ -347,7 +347,7 @@ $$
 
 ### Statement
 
-**Theorem (Cauchy integral formula).** Let $F_{\mathrm{fn}}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega \subset \mathbb{H}_{\mathbb{B}}$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
+**Theorem (Cauchy integral formula).** Let $F_{\mathrm{fn}}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega \subset \mathbb{B}_{H}$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
 
 $$
 F_{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}F_{\mathrm{fn}})(\tilde{Q}) \, dV(\tilde{Q}),
@@ -417,7 +417,7 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### Liouville's Theorem
 
-**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on all of $\mathbb{H}_{\mathbb{B}}$ and $\|F_{\mathrm{fn}}\|_E$ is bounded, then $F_{\mathrm{fn}}$ is constant.
+**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on all of $\mathbb{B}_{H}$ and $\|F_{\mathrm{fn}}\|_E$ is bounded, then $F_{\mathrm{fn}}$ is constant.
 
 **Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centred at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $F_{\mathrm{fn}}$. The kernel $G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero, so $F_{\mathrm{fn}}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$.
 
@@ -481,7 +481,7 @@ The integration theory developed in this article is the biquaternion analogue of
 
 The following questions are not answered in this article and are left for later work:
 
-1. **The extension to $\mathbb{M}_+$ and $\mathbb{M}_-$.** The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ requires modifying the fundamental solution, because the kernel $\tilde{Q}^{\natural}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_+$ and $\mathbb{M}_-$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\tilde{Q}^{\natural}\tilde Q = \|\tilde Q\|_E^2 e_t$ fails, so the proof of $\tilde\nabla G_{\mathrm{fn}} = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.
+1. **The extension to $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.** The integration theory presented here is for functions on the quaternion subspace $\mathbb{B}_{H}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ requires modifying the fundamental solution, because the kernel $\tilde{Q}^{\natural}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\tilde{Q}^{\natural}\tilde Q = \|\tilde Q\|_E^2 e_t$ fails, so the proof of $\tilde\nabla G_{\mathrm{fn}} = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.
 
 2. **The residue theory in the non-commutative case.** The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?
 
@@ -489,13 +489,13 @@ The following questions are not answered in this article and are left for later 
 
 4. **Applications.** What are the applications of the biquaternion integration theory to the solution of partial differential equations?
 
-6. **The general subspace.** Can the integration theory be extended from $\mathbb{H}_{\mathbb{B}}$ to the full biquaternion algebra $\mathbb{B}$ and to its indefinite subspaces, with a canonical choice of fundamental solution for each?
+6. **The general subspace.** Can the integration theory be extended from $\mathbb{B}_{H}$ to the full biquaternion algebra $\mathbb{B}$ and to its indefinite subspaces, with a canonical choice of fundamental solution for each?
 
 ## Summary
 
-The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.
+The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{B}_{H}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} G_{\mathrm{fn}} = 0$ away from the origin and $\tilde{\nabla} G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box$ is the central function $G_\Box = -e_t/(4\pi^2\|\tilde{Q}\|_E^2)$.
+The **fundamental solution** of the gradient operator on $\mathbb{B}_{H}$ is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} G_{\mathrm{fn}} = 0$ away from the origin and $\tilde{\nabla} G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box$ is the central function $G_\Box = -e_t/(4\pi^2\|\tilde{Q}\|_E^2)$.
 
 The **Green formula for $\Box$** and its **representation formula** express a biquaternion-valued function at an interior point by the volume integral of its $\Box$ against $G_\Box$ together with a surface integral of its boundary values and normal derivative; when $\Box \varphi = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic **Kirchhoff–Green representation**, the analogue of the classical Kirchhoff and Green formulas.
 
@@ -505,15 +505,15 @@ The Cauchy integral formula implies the **mean value property**, the **maximum p
 
 The **residue theory** for biquaternion-valued functions is more delicate than in the complex case, because of the non-commutativity of the algebra. The residue at an isolated singularity is defined as a boundary integral, and the residue theorem expresses the integral over the boundary of a domain in terms of the residues at the singularities inside.
 
-The integration theory is related to complex analysis, Fueter's quaternionic analysis, and the general Clifford analysis. The biquaternion case on $\mathbb{H}_{\mathbb{B}}$ is the case $n = 4$ with complex coefficients, and enriches the structure with the four conjugations and the two polar forms.
+The integration theory is related to complex analysis, Fueter's quaternionic analysis, and the general Clifford analysis. The biquaternion case on $\mathbb{B}_{H}$ is the case $n = 4$ with complex coefficients, and enriches the structure with the four conjugations and the two polar forms.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (real coordinates $q_t, q_x, q_y, q_z$) |
-| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Point in $\mathbb{H}_{\mathbb{B}}$ (all $Q_\mu$ real) |
+| $\mathbb{B}_{H}$ | Quaternion subspace (real coordinates $q_t, q_x, q_y, q_z$) |
+| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Point in $\mathbb{B}_{H}$ (all $Q_\mu$ real) |
 | $\partial/\partial q_\mu$ | Ordinary real partial derivative |
 | $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial q_\mu$ | Biquaternionic gradient (Cauchy–Riemann operator) |
 | $F_{\mathrm{fn}}\nabla^{R} = \sum_\mu (\partial F_{\mathrm{fn}}/\partial q_\mu) e_\mu$ | Right gradient of $F_{\mathrm{fn}}$ |
@@ -523,7 +523,7 @@ The integration theory is related to complex analysis, Fueter's quaternionic ana
 | $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$ | Scalar normal derivative in the outward direction |
 | $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Fundamental solution of the gradient |
 | $G_\Box(\tilde{Q}) = -e_t/(4\pi^2\|\tilde{Q}\|_E^2)$ | Fundamental solution of $\Box$ |
-| $dV$ | Lebesgue measure on the four real coordinates of $\mathbb{H}_{\mathbb{B}}$ |
+| $dV$ | Lebesgue measure on the four real coordinates of $\mathbb{B}_{H}$ |
 
 ## Further Reading
 

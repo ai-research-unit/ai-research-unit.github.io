@@ -5,7 +5,7 @@
 The companion articles *Non-Abelian Gauge Fields in Biquaternionic Form* and *Instantons and Solitons in Biquaternionic Form* build their non-abelian gauge theory on the compact factor
 
 $$
-\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb M_- ,
+\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 $$
 
 and the abelian factor on the central phase $\mathbb C_{\mathbb B}$. The reason is not a choice of convenience, and it is not that nobody has tried the alternative: the biquaternion algebra reaches $SU(2)$ and it does not reach $SU(3)$. This article states that ceiling precisely, proves it from the algebra's own structure, and identifies what has to be added to pass it. The result is a **result**, not a failure: a framework that knows exactly which gauge groups it can carry and which it cannot is more informative than one that leaves the question open.
@@ -47,17 +47,17 @@ with the centre $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ co
 The group that acts **unitarily** on the algebra is built from its anti-Hermitian part. The anti-Hermitian conjugation $\flat$ and the Hermitian conjugation ${}^{*}$ of *Algebra and Element Conventions* split the algebra into the two four-dimensional real subspaces
 
 $$
-\mathbb M_-=\bigl\{x\in\mathbb B:x^\flat=x\bigr\}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Phi}=\bigl\{x\in\mathbb B:x^\flat=x\bigr\}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
-\mathbb M_+=\bigl\{x\in\mathbb B:x^{*}=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
+\mathbb{B}_{\Psi}=\bigl\{x\in\mathbb B:x^{*}=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
 of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_k\mapsto-\vec e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, $*$-unitary direction: exponentiating it gives the $*$-unitary group of the defining module,
 
 $$
-\boxed{\;\exp\bigl(\mathbb M_-\bigr)=\mathrm{U}(2),
+\boxed{\;\exp\bigl(\mathbb{B}_{\Phi}\bigr)=\mathrm{U}(2),
 \qquad
-\mathbb M_-\;=\;\mathrm{U}(2)\;=\;\mathrm{SU}(2)\oplus\mathrm{U}(1) ,
+\mathbb{B}_{\Phi}\;=\;\mathrm{U}(2)\;=\;\mathrm{SU}(2)\oplus\mathrm{U}(1) ,
 \qquad
 \dim_{\mathbb R}\mathrm{U}(2)=4\;}.
 $$
@@ -115,23 +115,23 @@ $$
 \theta^2=\mathrm{id} ,
 $$
 
-whose fixed space is the anti-Hermitian sector $\mathbb M_-$ and whose $(-1)$-eigenspace is the Hermitian sector $\mathbb M_+$. The algebra therefore decomposes as a real vector space,
+whose fixed space is the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and whose $(-1)$-eigenspace is the Hermitian sector $\mathbb{B}_{\Psi}$. The algebra therefore decomposes as a real vector space,
 
 $$
-\mathbb B = \mathbb M_-\oplus\mathbb M_+ ,
+\mathbb B = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi} ,
 $$
 
 with the bracket relations
 
 $$
-[\mathbb M_-,\mathbb M_-]\subset\mathbb M_- ,
+[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]\subset\mathbb{B}_{\Phi} ,
 \qquad
-[\mathbb M_-,\mathbb M_+]\subset\mathbb M_+ ,
+[\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}]\subset\mathbb{B}_{\Psi} ,
 \qquad
-[\mathbb M_+,\mathbb M_+]\subset\mathbb M_- .
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subset\mathbb{B}_{\Phi} .
 $$
 
-This is a **Cartan decomposition**: $\mathbb M_-$ is a maximal compact subalgebra, $\mathbb M_+$ its complement, and the relations are the standard ones of a symmetric pair. The bracket relations were verified on the eight basis elements, with no violation, in the defining two-dimensional representation. The Killing form of $\mathbb B$, read as a real Lie algebra, is negative **semi**definite on $\mathbb M_-$ and positive semidefinite on $\mathbb M_+$, with the kernel in each case the two-dimensional centre $\mathbb C_{\mathbb B}$:
+This is a **Cartan decomposition**: $\mathbb{B}_{\Phi}$ is a maximal compact subalgebra, $\mathbb{B}_{\Psi}$ its complement, and the relations are the standard ones of a symmetric pair. The bracket relations were verified on the eight basis elements, with no violation, in the defining two-dimensional representation. The Killing form of $\mathbb B$, read as a real Lie algebra, is negative **semi**definite on $\mathbb{B}_{\Phi}$ and positive semidefinite on $\mathbb{B}_{\Psi}$, with the kernel in each case the two-dimensional centre $\mathbb C_{\mathbb B}$:
 
 $$
 K(\vec e_a,\vec e_b)=-16\,\delta_{ab},
@@ -141,13 +141,13 @@ K(i\vec e_a,i\vec e_b)=+16\,\delta_{ab}\ \ (a,b=1,2,3),
 K(ie_t,\cdot)=K(e_t,\cdot)=0 ,
 $$
 
-evaluated in that representation. It is definite on the semisimple parts $\mathrm{SU}(2)=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$ and $i\mathrm{SU}(2)=\mathrm{span}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, and the degeneracy is exactly the centre, which is what a reductive algebra gives. Since negative semidefiniteness on a subalgebra is what compactness of a real Lie algebra means, a compact subalgebra must be contained in a conjugate of $\mathbb M_-$. Every maximal compact subalgebra is conjugate to $\mathbb M_-$, and therefore every compact subalgebra of $\mathbb B$ has dimension at most
+evaluated in that representation. It is definite on the semisimple parts $\mathrm{SU}(2)=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$ and $i\mathrm{SU}(2)=\mathrm{span}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, and the degeneracy is exactly the centre, which is what a reductive algebra gives. Since negative semidefiniteness on a subalgebra is what compactness of a real Lie algebra means, a compact subalgebra must be contained in a conjugate of $\mathbb{B}_{\Phi}$. Every maximal compact subalgebra is conjugate to $\mathbb{B}_{\Phi}$, and therefore every compact subalgebra of $\mathbb B$ has dimension at most
 
 $$
-\dim_{\mathbb R}\mathbb M_- = 4 .
+\dim_{\mathbb R}\mathbb{B}_{\Phi} = 4 .
 $$
 
-The largest compact subgroup therefore has dimension four, and it is the $\mathrm{U}(2)$ of the intrinsic gauge structure. A compact eight-dimensional subalgebra cannot exist, not because of any particular choice of basis but because the maximal compact dimension is four; this is the Lie-theoretic content of the first of the three arguments. The Cartan relations also expose the non-compact directions: the four-dimensional complement $\mathbb M_+$ fails to be a subalgebra, since $[\mathbb M_+,\mathbb M_+]\subset\mathbb M_-$ takes it out of itself, and it is precisely this non-closure that prevents the eight real dimensions of $\mathbb B$ from organising into a compact eight-dimensional algebra.
+The largest compact subgroup therefore has dimension four, and it is the $\mathrm{U}(2)$ of the intrinsic gauge structure. A compact eight-dimensional subalgebra cannot exist, not because of any particular choice of basis but because the maximal compact dimension is four; this is the Lie-theoretic content of the first of the three arguments. The Cartan relations also expose the non-compact directions: the four-dimensional complement $\mathbb{B}_{\Psi}$ fails to be a subalgebra, since $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subset\mathbb{B}_{\Phi}$ takes it out of itself, and it is precisely this non-closure that prevents the eight real dimensions of $\mathbb B$ from organising into a compact eight-dimensional algebra.
 
 For comparison, the matrix algebra over the complex numbers shows how the ceiling lifts. In $M_n(\mathbb C)$ the involution $x\mapsto -x^{*}$ has maximal compact fixed space $\mathrm{U}(n)$, of real dimension $n^2$, so the largest compact subalgebra grows quadratically. For the biquaternion algebra $n=2$ and the maximum is $4$, which is $SU(2)\times \mathrm{U}(1)$ and no more; for the enlarged carrier $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ the maximum is $(2n)^2$, and $\mathrm{SU}(3)$ of dimension $8$ fits once $(2n)^2\ge8$, i.e. $n\ge2$. The ceiling is thus exactly the statement $n=1$ in this family.
 
@@ -196,7 +196,7 @@ Two consequences follow, and both are genuine results for the framework's partic
 The biquaternion algebra's intrinsic compact gauge structure is the anti-Hermitian sector
 
 $$
-\boxed{\;\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
+\boxed{\;\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
 \qquad
 \dim_{\mathbb R}=4\;},
 $$
@@ -215,8 +215,8 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ | Centre; $\mathrm{U}(1)$ factor; fixed space of $\tilde Q^{\natural}$ |
-| $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Anti-Hermitian, compact sector; $\mathrm{U}(2)$; fixed space of $\flat$ |
-| $\mathbb M_+=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | Hermitian, informational sector; fixed space of ${}^{*}$ |
+| $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Anti-Hermitian, compact sector; $\mathrm{U}(2)$; fixed space of $\flat$ |
+| $\mathbb{B}_{\Psi}=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | Hermitian, informational sector; fixed space of ${}^{*}$ |
 | $\flat=-(\cdot)^\dagger$, ${}^{*}=\tilde Q^{*}$ | Anti-Hermitian and Hermitian conjugations |
 | $[x,y]=xy-yx$ | Commutator |
 | $[\mathbb B,\mathbb B]=\mathrm{SL}(2,\mathbb C)$ | Derived algebra; real dimension $6$ |

@@ -4,7 +4,7 @@
 
 Entanglement is not the whole of quantum correlation. There are separable states — states that can be prepared by local operations and classical communication, with no entanglement at all — whose correlations still cannot be reproduced by any classical probability distribution over local measurement outcomes. The quantity that measures this residual quantumness is the **quantum discord**, defined as the difference between two ways of quantifying the mutual information of a bipartite state: the quantum mutual information, which is symmetric, and the classical mutual information, which requires a measurement and is not. Discord is zero exactly for the states that are classically correlated, and it is positive for many separable states.
 
-This article develops discord in the biquaternion framework. The bipartite arena is the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose states are the trace-one positive elements of $\mathbb{M}_+^{\otimes2}$; the partial trace, the marginal states, and the bipartite entropy are fixed by the companion articles on entanglement in this subcategory. The mutual information is
+This article develops discord in the biquaternion framework. The bipartite arena is the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose states are the trace-one positive elements of $\mathbb{B}_{\Psi}^{\otimes2}$; the partial trace, the marginal states, and the bipartite entropy are fixed by the companion articles on entanglement in this subcategory. The mutual information is
 
 $$
 I(A:B) = S(\tilde{Ϛ}_A) + S(\tilde{Ϛ}_B) - S(\tilde{Ϛ}_{AB}),
@@ -26,13 +26,13 @@ $$
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$
 
-are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde{R}_{\psi,j}^{*})$ with $\tilde{R}_{\psi,j} = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
+are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde{R}_{\psi,j}^{*})$ with $\tilde{R}_{\psi,j} = -\vec e_j\otimes\vec e_j \in \mathbb{B}_{\Psi}^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
 
 ## Bipartite States and Their Mutual Information
 
-### States in $\mathbb{M}_+^{\otimes2}$
+### States in $\mathbb{B}_{\Psi}^{\otimes2}$
 
-A two-qubit state is an element $\tilde{Ϛ}_{AB}\in\mathbb{M}_+^{\otimes2}$ with $\tilde{Ϛ}_{AB}\geq0$ and $\mathrm{Tr}(\tilde{Ϛ}_{AB}) = 1$, where the trace is the tensor trace $\mathrm{Tr} = \mathrm{Tr}_A\otimes\mathrm{Tr}_B$. The **partial traces** are defined by
+A two-qubit state is an element $\tilde{Ϛ}_{AB}\in\mathbb{B}_{\Psi}^{\otimes2}$ with $\tilde{Ϛ}_{AB}\geq0$ and $\mathrm{Tr}(\tilde{Ϛ}_{AB}) = 1$, where the trace is the tensor trace $\mathrm{Tr} = \mathrm{Tr}_A\otimes\mathrm{Tr}_B$. The **partial traces** are defined by
 
 $$
 \mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}(b), \qquad \mathrm{Tr}_1(a\otimes b) = b\,\mathrm{Tr}(a),
@@ -212,7 +212,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 
 **What it does.**
 
-- It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the plain form, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
+- It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the plain form, and the entropies of elements of $\mathbb{B}_{\Psi}^{\otimes2}$.
 - It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde{R}_{\psi,j}^{*})$ with $\tilde{R}_{\psi,j} = -\vec e_j\otimes\vec e_j$.
 - It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.
 - It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.
@@ -227,9 +227,9 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 
 ## Open Questions
 
-**1. Discord and the two-qubit biquaternion norm.** For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three plain-form readings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
+**1. Discord and the two-qubit biquaternion norm.** For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three plain-form readings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{B}_{\Psi}^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
 
-**2. The geometry of the Bell-diagonal tetrahedron.** The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?
+**2. The geometry of the Bell-diagonal tetrahedron.** The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{B}_{\Psi}^{\otimes2}$, and where does the discord vanish on it?
 
 **3. Discord and the local $*$-unitary orbit.** The Bell states form one local-$*$-unitary orbit; the discord is invariant under local unitaries. Is the discord constant on the orbits of the local $*$-unitary group, and does the algebra's structure — the tensor product of two $\mathbb{B}$'s and its inner automorphisms — organize those orbits?
 
@@ -264,7 +264,7 @@ with marginals $\tilde{Ϛ}_A = \tilde{Ϛ}_B = \tfrac12 e_t$ and entropy a functi
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra, module dimension four |
-| $\mathbb{M}_+^{\otimes2}$ | Two-qubit Hermitian subspace (states) |
+| $\mathbb{B}_{\Psi}^{\otimes2}$ | Two-qubit Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (idempotent basis) |
 | $\tilde{Ϛ}_A = \mathrm{Tr}_B\tilde{Ϛ}_{AB}$, $\tilde{Ϛ}_B = \mathrm{Tr}_A\tilde{Ϛ}_{AB}$ | Marginal states |

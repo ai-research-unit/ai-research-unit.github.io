@@ -138,7 +138,7 @@ $$
 \boxed{\; \tilde Q\bullet\tilde Q=0\iff Q_t=0\ \text{and}\ (\vec Q,\vec Q)=0 \;},
 $$
 
-that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$ on which the norm vanishes. They are a proper subset of the isotropic cone.
+that is, exactly the elements of the vector subspace $\mathbb{B}_{V}$ on which the norm vanishes. They are a proper subset of the isotropic cone.
 
 *Proof.* By the square of the block, $\tilde Q\bullet\tilde Q=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)e_t+2Q_t\vec Q$. Its vanishing gives the two scalar conditions $Q_t^2=(\vec Q,\vec Q)$ and $Q_t\vec Q=0$. If $Q_t\neq0$ the second gives $\vec Q=0$, and the first gives $Q_t=0$, a contradiction; so $Q_t=0$, and the first condition becomes $(\vec Q,\vec Q)=0$. Conversely a pure element with $(\vec Q,\vec Q)=0$ has zero square.
 

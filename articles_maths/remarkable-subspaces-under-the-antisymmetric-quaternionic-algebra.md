@@ -8,7 +8,7 @@ The outcome is a short and asymmetric table. The operation **vanishes identicall
 
 ## The Centre
 
-**Proposition.** The centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is closed under the operation, and the operation vanishes identically on it: $Ae_t\diamond Be_t=0$ for all $A,B\in\mathbb{C}$. A nonzero central element is not an annihilator of the operation: $Ae_t\diamond\tilde Q=A\vec Q$ and $\tilde Q\diamond Ae_t=-A\vec Q$.
+**Proposition.** The centre $\mathbb{B}_{C}=\mathbb{C}e_t$ is closed under the operation, and the operation vanishes identically on it: $Ae_t\diamond Be_t=0$ for all $A,B\in\mathbb{C}$. A nonzero central element is not an annihilator of the operation: $Ae_t\diamond\tilde Q=A\vec Q$ and $\tilde Q\diamond Ae_t=-A\vec Q$.
 
 *Proof.* A central element has zero vector part, so both mixed terms and the cross term vanish in $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$. A central element in one slot is not an annihilator: $Ae_t\diamond\tilde Q=A\vec Q$ and $\tilde Q\diamond Ae_t=-A\vec Q$, which vanish for all $\tilde Q$ only when $A=0$, since the vector subspace is not zero.
 
@@ -16,7 +16,7 @@ The centre is thus an abelian subalgebra of the block, of complex dimension one,
 
 ## The Vector Subspace
 
-**Proposition.** The vector subspace $\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\tilde Q^{\natural}=-\tilde Q\}$ is closed under the operation; on it the operation is the negative of the cross product,
+**Proposition.** The vector subspace $\mathbb{B}_{V}=\{\tilde Q:\tilde Q^{\natural}=-\tilde Q\}$ is closed under the operation; on it the operation is the negative of the cross product,
 
 $$ \boxed{\; \tilde Q_1\diamond\tilde Q_2 = -\,\vec Q_1\times\vec Q_2 \qquad (\vec Q_1,\vec Q_2 \text{ pure}) \;}, $$
 
@@ -28,43 +28,43 @@ Apart from the centre, whose operation vanishes, the vector subspace and the qua
 
 ## The Quaternion Subspace
 
-**Proposition.** The quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is closed under the operation and its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, of real dimension three. On it the operation is the real mixed term with the real cross term subtracted,
+**Proposition.** The quaternion subspace $\mathbb{B}_{H}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is closed under the operation and its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, of real dimension three. On it the operation is the real mixed term with the real cross term subtracted,
 
 $$ \boxed{\; \tilde Q_1\diamond\tilde Q_2 = p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2 , \qquad p_t,q_t\in\mathbb{R},\ \vec Q_1,\vec Q_2\in\mathbb{R}^3 \;}, $$
 
 and the Jacobi identity fails on it, at the triple $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$.
 
-*Proof.* A real quaternion has real scalar and vector parts, so the value has a real vector part and zero scalar part and lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{H}_{\mathbb{B}}$; the image is reached by the cross product of the real vectors, which fills $\mathbb{R}^3$. The witness is the one of the block, and its three elements are real.
+*Proof.* A real quaternion has real scalar and vector parts, so the value has a real vector part and zero scalar part and lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{H}$; the image is reached by the cross product of the real vectors, which fills $\mathbb{R}^3$. The witness is the one of the block, and its three elements are real.
 
 The quaternion subspace is the largest of the remarkable subspaces on which the operation is a real operation with the same shape as the complex one: the formula reads with the real scalars $p_t,q_t$ and the real cross product, and the operation is closed. It is not a Lie algebra, because the mixed terms survive.
 
 ## The Anti-Quaternion Subspace
 
-**Proposition.** The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ is **not** closed under the operation. It maps into the quaternion subspace,
+**Proposition.** The anti-quaternion subspace $\mathbb{B}_{iH}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ is **not** closed under the operation. It maps into the quaternion subspace,
 
-$$ \boxed{\; (i\mathbb{H}_{\mathbb{B}})\diamond(i\mathbb{H}_{\mathbb{B}}) \subseteq \mathbb{H}_{\mathbb{B}} , \qquad (i\mathbb{H}_{\mathbb{B}})\diamond\mathbb{H}_{\mathbb{B}} \subseteq i\mathbb{H}_{\mathbb{B}} \;}, $$
+$$ \boxed{\; (\mathbb{B}_{iH})\diamond(\mathbb{B}_{iH}) \subseteq \mathbb{B}_{H} , \qquad (\mathbb{B}_{iH})\diamond\mathbb{B}_{H} \subseteq \mathbb{B}_{iH} \;}, $$
 
 its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, and the smallest witness of the failure of closure is $i\vec e_x\diamond i\vec e_y=\vec e_z$.
 
-*Proof.* For $\tilde Q_1=i\tilde q_1$, $\tilde Q_2=i\tilde q_2$ with $\tilde q_1,\tilde q_2$ real, the explicit form gives $i\tilde q_1\diamond i\tilde q_2 = -q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$, which has zero scalar part and a real vector part, so it lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{H}_{\mathbb{B}}$; at $\tilde q_1=\vec e_x$, $\tilde q_2=\vec e_y$ it is $\vec e_z$, which is not in $i\mathbb{H}_{\mathbb{B}}$, since its coefficients are real and it is nonzero. The second inclusion is the graded statement: $i\tilde q_1\diamond\tilde q_2 = i(q_{1t}\vec q_2-q_{2t}\vec q_1-\vec q_1\times\vec q_2)\in i\mathbb{H}_{\mathbb{B}}$.
+*Proof.* For $\tilde Q_1=i\tilde q_1$, $\tilde Q_2=i\tilde q_2$ with $\tilde q_1,\tilde q_2$ real, the explicit form gives $i\tilde q_1\diamond i\tilde q_2 = -q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$, which has zero scalar part and a real vector part, so it lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{H}$; at $\tilde q_1=\vec e_x$, $\tilde q_2=\vec e_y$ it is $\vec e_z$, which is not in $\mathbb{B}_{iH}$, since its coefficients are real and it is nonzero. The second inclusion is the graded statement: $i\tilde q_1\diamond\tilde q_2 = i(q_{1t}\vec q_2-q_{2t}\vec q_1-\vec q_1\times\vec q_2)\in \mathbb{B}_{iH}$.
 
-The anti-quaternion subspace is the odd part of a $\mathbb{Z}/2$-grading of the algebra, $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, and the operation respects the grading: the even part is a subalgebra, the mixed products go to the odd part, and the square of the odd part lands back in the even part. The failure of closure is exactly the statement that the odd part is not a subalgebra, and the failure is total, not marginal: every pair of non-parallel imaginary vectors produces a real vector outside the subspace.
+The anti-quaternion subspace is the odd part of a $\mathbb{Z}/2$-grading of the algebra, $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, and the operation respects the grading: the even part is a subalgebra, the mixed products go to the odd part, and the square of the odd part lands back in the even part. The failure of closure is exactly the statement that the odd part is not a subalgebra, and the failure is total, not marginal: every pair of non-parallel imaginary vectors produces a real vector outside the subspace.
 
 ## The Hermitian Subspace
 
-**Proposition.** The Hermitian subspace $\mathbb{M}_{+}=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ is **not** closed under the operation. Its image is the whole vector subspace $\mathrm{Vect}(\mathbb{B})$, and the smallest witness of the failure of closure is $i\vec e_x\diamond i\vec e_y=\vec e_z$, whose product has a real vector part.
+**Proposition.** The Hermitian subspace $\mathbb{B}_{\Psi}=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ is **not** closed under the operation. Its image is the whole vector subspace $\mathbb{B}_{V}$, and the smallest witness of the failure of closure is $i\vec e_x\diamond i\vec e_y=\vec e_z$, whose product has a real vector part.
 
-*Proof.* For $\tilde Q_1=a_te_t+i\vec p$, $\tilde Q_2=b_te_t+i\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real, the explicit form gives $i(a_t\vec q-b_t\vec p)+\vec p\times\vec q$. The first term is a purely imaginary vector, which lies in $\mathbb{M}_{+}$, and the second is a real vector, which does not; the value lies in $\mathbb{M}_{+}$ exactly when $\vec p\times\vec q=0$, that is when the two vector parts are parallel. At $\vec p=\vec e_x$, $\vec q=\vec e_y$ the cross term is $\vec e_z\notin\mathbb{M}_{+}$. The image is the whole vector subspace, the imaginary part ranging over $\mathbb{R}^3$ through $a_t\vec q-b_t\vec p$ and the real part over $\mathbb{R}^3$ through the cross product.
+*Proof.* For $\tilde Q_1=a_te_t+i\vec p$, $\tilde Q_2=b_te_t+i\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real, the explicit form gives $i(a_t\vec q-b_t\vec p)+\vec p\times\vec q$. The first term is a purely imaginary vector, which lies in $\mathbb{B}_{\Psi}$, and the second is a real vector, which does not; the value lies in $\mathbb{B}_{\Psi}$ exactly when $\vec p\times\vec q=0$, that is when the two vector parts are parallel. At $\vec p=\vec e_x$, $\vec q=\vec e_y$ the cross term is $\vec e_z\notin\mathbb{B}_{\Psi}$. The image is the whole vector subspace, the imaginary part ranging over $\mathbb{R}^3$ through $a_t\vec q-b_t\vec p$ and the real part over $\mathbb{R}^3$ through the cross product.
 
 The failure of the Hermitian subspace is the failure of the real cross term to stay in the subspace. Its elements carry a real scalar and a purely imaginary vector, and the operation produces a real vector, which is exactly the direction the subspace lacks. The failure is not symmetric in the two slots beyond the antisymmetry of the operation, but it is present for every pair of non-parallel vector parts, so the subspace is as far from closed as the pair of non-parallel imaginary vectors allows.
 
 ## The Anti-Hermitian Subspace
 
-**Proposition.** The anti-Hermitian subspace $\mathbb{M}_{-}=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ is **not** closed under the operation. Its image is the whole vector subspace $\mathrm{Vect}(\mathbb{B})$, and the smallest witness of the failure of closure is $ie_t\diamond \vec e_x=i\vec e_x$, whose product has a purely imaginary vector part.
+**Proposition.** The anti-Hermitian subspace $\mathbb{B}_{\Phi}=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ is **not** closed under the operation. Its image is the whole vector subspace $\mathbb{B}_{V}$, and the smallest witness of the failure of closure is $ie_t\diamond \vec e_x=i\vec e_x$, whose product has a purely imaginary vector part.
 
-*Proof.* For $\tilde Q_1=ia_te_t+\vec p$, $\tilde Q_2=ib_te_t+\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real, the explicit form gives $-\vec p\times\vec q+i(a_t\vec q-b_t\vec p)$. The first term is a real vector, which lies in $\mathbb{M}_{-}$, and the second is a purely imaginary vector, which does not; the value lies in $\mathbb{M}_{-}$ exactly when $a_t\vec q=b_t\vec p$. At $\vec p=0$, $\vec q=\vec e_x$, $a_t=1$ the value is $i\vec e_x\notin\mathbb{M}_{-}$. The image is the whole vector subspace, the real part ranging over $\mathbb{R}^3$ through the cross product and the imaginary part over $\mathbb{R}^3$ through $a_t\vec q-b_t\vec p$.
+*Proof.* For $\tilde Q_1=ia_te_t+\vec p$, $\tilde Q_2=ib_te_t+\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real, the explicit form gives $-\vec p\times\vec q+i(a_t\vec q-b_t\vec p)$. The first term is a real vector, which lies in $\mathbb{B}_{\Phi}$, and the second is a purely imaginary vector, which does not; the value lies in $\mathbb{B}_{\Phi}$ exactly when $a_t\vec q=b_t\vec p$. At $\vec p=0$, $\vec q=\vec e_x$, $a_t=1$ the value is $i\vec e_x\notin\mathbb{B}_{\Phi}$. The image is the whole vector subspace, the real part ranging over $\mathbb{R}^3$ through the cross product and the imaginary part over $\mathbb{R}^3$ through $a_t\vec q-b_t\vec p$.
 
-The two Hermitian subspaces fail by the two complementary mixed terms, the real cross term for $\mathbb{M}_{+}$ and the imaginary mixed term for $\mathbb{M}_{-}$, and they are exchanged by multiplication by the central unit $i$; the operation is not central-linear in the required way, and the exchange reverses the sign of the two mixed terms. The pair of failures is the mirror image of the pair of the quaternion and anti-quaternion subspaces, where the even part is closed and the odd part is not.
+The two Hermitian subspaces fail by the two complementary mixed terms, the real cross term for $\mathbb{B}_{\Psi}$ and the imaginary mixed term for $\mathbb{B}_{\Phi}$, and they are exchanged by multiplication by the central unit $i$; the operation is not central-linear in the required way, and the exchange reverses the sign of the two mixed terms. The pair of failures is the mirror image of the pair of the quaternion and anti-quaternion subspaces, where the even part is closed and the odd part is not.
 
 ## The Elements Whose Bracket Vanishes
 
@@ -92,12 +92,12 @@ The two notions of isotropy separate. The block's own square vanishes on every e
 
 | subspace | $\dim_{\mathbb{C}}/\dim_{\mathbb{R}}$ | $\diamond$ on the subspace | image | closed | Jacobi |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $1/2$ | identically $0$ | $0$ | yes | holds |
-| $\mathrm{Vect}(\mathbb{B})$ | $3/6$ | $-\vec Q_1\times\vec Q_2$ | $\mathrm{Vect}(\mathbb{B})$ | yes | holds |
-| $\mathbb{H}_{\mathbb{B}}$ | $-/4$ | $p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | yes | fails |
-| $i\mathbb{H}_{\mathbb{B}}$ | $-/4$ | $-q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | no | fails |
-| $\mathbb{M}_{+}$ | $-/4$ | $i(a_t\vec q-b_t\vec p)+\vec p\times\vec q$ | $\mathrm{Vect}(\mathbb{B})$ | no | fails |
-| $\mathbb{M}_{-}$ | $-/4$ | $-\vec p\times\vec q+i(a_t\vec q-b_t\vec p)$ | $\mathrm{Vect}(\mathbb{B})$ | no | fails |
+| $\mathbb{B}_{C}$ | $1/2$ | identically $0$ | $0$ | yes | holds |
+| $\mathbb{B}_{V}$ | $3/6$ | $-\vec Q_1\times\vec Q_2$ | $\mathbb{B}_{V}$ | yes | holds |
+| $\mathbb{B}_{H}$ | $-/4$ | $p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | yes | fails |
+| $\mathbb{B}_{iH}$ | $-/4$ | $-q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | no | fails |
+| $\mathbb{B}_{\Psi}$ | $-/4$ | $i(a_t\vec q-b_t\vec p)+\vec p\times\vec q$ | $\mathbb{B}_{V}$ | no | fails |
+| $\mathbb{B}_{\Phi}$ | $-/4$ | $-\vec p\times\vec q+i(a_t\vec q-b_t\vec p)$ | $\mathbb{B}_{V}$ | no | fails |
 
 **Remark.** Three of the remarkable subspaces are closed — the centre, the vector subspace and the quaternion subspace — and three are not. Of the three closed ones the centre carries the zero operation, the vector subspace the negative of the cross product and the quaternion subspace the real instance of the block; all three are subspaces on which the operation is again a $\mathbb{C}$- or $\mathbb{R}$-bilinear alternating operation with the same shape, and only the vector subspace carries the Jacobi identity. Of the three that fail, the anti-quaternion subspace fails into the quaternion subspace and the two Hermitian subspaces fail into the vector subspace, so no failure leaves the algebra and every failure is a failure of the subspace to contain a value it produces.
 
@@ -110,16 +110,16 @@ The remarkable subspaces read the antisymmetric quaternionic multiplication as f
 | Symbol | Meaning |
 |---|---|
 | $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\tilde Q_1\wedge_{\natural}\tilde Q_2$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, on which the operation vanishes |
-| $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, closed, the image, the isotropic cone of the form |
-| $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the quaternion subspace, closed, the even part of the grading |
-| $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | the anti-quaternion subspace, the odd part, not closed |
-| $\mathbb{M}_{+}=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | the Hermitian subspace, not closed |
-| $\mathbb{M}_{-}=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | the anti-Hermitian subspace, not closed |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre, on which the operation vanishes |
+| $\mathbb{B}_{V}$ | the vector subspace, closed, the image, the isotropic cone of the form |
+| $\mathbb{B}_{H}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the quaternion subspace, closed, the even part of the grading |
+| $\mathbb{B}_{iH}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | the anti-quaternion subspace, the odd part, not closed |
+| $\mathbb{B}_{\Psi}=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | the Hermitian subspace, not closed |
+| $\mathbb{B}_{\Phi}=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | the anti-Hermitian subspace, not closed |
 | $(e_t,\vec e_x,\vec e_y)$ | the witness of the Jacobi failure, cyclic sum $-\vec e_z$ |
-| $(i\vec e_x,i\vec e_y)$ | the witness of the failure of closure of $i\mathbb{H}_{\mathbb{B}}$ and of $\mathbb{M}_{+}$, value $\vec e_z$ |
-| $(ie_t,\vec e_x)$ | the witness of the failure of closure of $\mathbb{M}_{-}$, value $i\vec e_x$ |
-| $\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}$ | the invariant form, whose isotropic elements are $\mathrm{Vect}(\mathbb{B})$ |
+| $(i\vec e_x,i\vec e_y)$ | the witness of the failure of closure of $\mathbb{B}_{iH}$ and of $\mathbb{B}_{\Psi}$, value $\vec e_z$ |
+| $(ie_t,\vec e_x)$ | the witness of the failure of closure of $\mathbb{B}_{\Phi}$, value $i\vec e_x$ |
+| $\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}$ | the invariant form, whose isotropic elements are $\mathbb{B}_{V}$ |
 
 ## Further Reading
 

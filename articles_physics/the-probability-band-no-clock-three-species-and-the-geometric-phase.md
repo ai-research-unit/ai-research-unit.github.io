@@ -225,7 +225,7 @@ The taxonomy is the reading. The algebra fixes the grades; the identification of
 The informational sector is the fixed set of the star:
 
 $$
-\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}.
+\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}.
 $$
 
 It is also of real dimension four, and it is not the real grade. Its coordinates are a real central coefficient and three purely imaginary spatial coefficients; the real grade's are four real coefficients. The two forms intersect in $\mathbb{R}e_t$ and are otherwise distinct.
@@ -311,7 +311,7 @@ The gap is therefore $P-I=\tfrac{1}{2}-S_{\mathrm{lin}}$, and the half-gap is $\
 
 ### The Sector Crossing
 
-The material sector is the anti-Hermitian subspace, $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$. For an element of that sector the square is Hermitian:
+The material sector is the anti-Hermitian subspace, $\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$. For an element of that sector the square is Hermitian:
 
 $$
 (\tilde Q^{2})^{*}=(\tilde Q^{*})^{2}=(-\tilde Q)^{2}=\tilde Q^{2}.
@@ -319,10 +319,10 @@ $$
 
 The crossing alternates with the power:
 
-| power | sector of $\tilde Q^{n}$ for $\tilde Q\in\mathbb{M}_-$ |
+| power | sector of $\tilde Q^{n}$ for $\tilde Q\in\mathbb{B}_{\Phi}$ |
 | --- | --- |
-| odd | $\mathbb{M}_-$ |
-| even | $\mathbb{M}_+$ |
+| odd | $\mathbb{B}_{\Phi}$ |
+| even | $\mathbb{B}_{\Psi}$ |
 
 The square is the **minimal** even power, and every even power factors through it:
 
@@ -377,7 +377,7 @@ $$
 
 The square gives the weight and the axis; the norm gives the interval.
 
-**The square vanishes only at zero on the material sector.** If $\tilde Q^{2}=0$ then $-\tilde Q^{2}=\tilde Q\tilde Q^{*}=0$, and the positive definite Hermitian norm forces $\tilde Q=0$. The square has no nonzero kernel on $\mathbb{M}_-$, although it is not injective there: two distinct purely spatial vectors of equal length have the same square, $-\lvert\vec r\rvert^{2}e_t$. The light cone is the zero set of the interval, not of the square: a null four-vector has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q^{2}\neq0$ in general.
+**The square vanishes only at zero on the material sector.** If $\tilde Q^{2}=0$ then $-\tilde Q^{2}=\tilde Q\tilde Q^{*}=0$, and the positive definite Hermitian norm forces $\tilde Q=0$. The square has no nonzero kernel on $\mathbb{B}_{\Phi}$, although it is not injective there: two distinct purely spatial vectors of equal length have the same square, $-\lvert\vec r\rvert^{2}e_t$. The light cone is the zero set of the interval, not of the square: a null four-vector has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q^{2}\neq0$ in general.
 
 ### The Arrow Reading
 
@@ -483,7 +483,7 @@ The three grades of coefficient reality are the complex, central and real specie
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the quaternionic form, the interval |
 | $\langle\tilde Q\rangle_{*}$ | the Hermitian norm, the probability norm |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, the interval norm |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian and Hermitian sectors |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian and Hermitian sectors |
 | $\tilde\Upsilon$ | a nilpotent of the probability band |
 | $\{Q_1,Q_2,Q_3\}=Q_1Q_2^{*}Q_3$ | the ternary product of the band |
 | $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |

@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats **successive measurements**: what happens when a spin state is measured twice in a row, along different directions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -84,7 +84,7 @@ $$
 
 ### Step 1: The initial state
 
-In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
+In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form
 
 $$
 \tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
@@ -201,7 +201,7 @@ $$
 p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
 $$
 
-The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{M}_+$, whose trace reading is the final step at normalisation.
+The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{B}_{\Psi}$, whose trace reading is the final step at normalisation.
 
 **2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
 
@@ -220,7 +220,7 @@ The first factor is the Born rule for the initial measurement; the second factor
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas |
 | Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L r'_t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ |
 
-These exercises illustrate three fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), and **sequential measurement** (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.
+These exercises illustrate three fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), and **sequential measurement** (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.
 
 ## Summary
 
@@ -237,7 +237,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |

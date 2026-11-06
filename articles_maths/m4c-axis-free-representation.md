@@ -536,12 +536,12 @@ because the product of the two conjugates has scalar part $K$. The norm is posit
 
 | Subspace | Defining condition | Condition on $M$ in the image | Real dim. | Trace | $\det\mathsf M_2(\tilde Q)$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\tilde Q^{\natural}=\tilde Q$ | $M=\lambda\mathrm I_4$ | $2$ | $4Q_t$ | $Q_t^2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}M=0$ | $6$ | $0$ | $B^2$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=\tilde Q$ | $M=\overline M$ | $4$ | $4q_t$ | $\sum q_\mu^2$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=-\tilde Q$ | $M=-\overline M$ | $4$ | $4iq'_t$ | $-\sum(q'_\mu)^2$ |
-| $\mathbb{M}_+$ | $\tilde Q^{*}=\tilde Q$ | $M=M^{\dagger}$ | $4$ | $4q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ |
-| $\mathbb{M}_-$ | $\tilde Q^{\flat}=\tilde Q$ | $M=-M^{\dagger}$ | $4$ | $4iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ |
+| $\mathbb{B}_{C}$ | $\tilde Q^{\natural}=\tilde Q$ | $M=\lambda\mathrm I_4$ | $2$ | $4Q_t$ | $Q_t^2$ |
+| $\mathbb{B}_{V}$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}M=0$ | $6$ | $0$ | $B^2$ |
+| $\mathbb{B}_{H}$ | $\overline{\tilde Q}=\tilde Q$ | $M=\overline M$ | $4$ | $4q_t$ | $\sum q_\mu^2$ |
+| $\mathbb{B}_{iH}$ | $\overline{\tilde Q}=-\tilde Q$ | $M=-\overline M$ | $4$ | $4iq'_t$ | $-\sum(q'_\mu)^2$ |
+| $\mathbb{B}_{\Psi}$ | $\tilde Q^{*}=\tilde Q$ | $M=M^{\dagger}$ | $4$ | $4q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ |
+| $\mathbb{B}_{\Phi}$ | $\tilde Q^{\flat}=\tilde Q$ | $M=-M^{\dagger}$ | $4$ | $4iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ |
 
 **The determinant of $M$.** On every row the determinant of the $4\times4$ matrix is the square of the last column, $\det M=(\det\mathsf M_2(\tilde Q))^2$. The last column is the quadratic determinant of the $2\times2$ image; the determinant of the $4\times4$ matrix is the quartic obtained by squaring it.
 
@@ -556,7 +556,7 @@ L_{\mathrm{axf}}(Q_te_t)=Q_t\mathrm I_4,\qquad
 \det M=Q_t^4,\qquad
 \det\mathsf M_2(\tilde Q)=Q_t^2.
 $$
-The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_4$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_4$. It is the only subspace of real dimension $2$ and the only commutative one.
+The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It meets $\mathbb{B}_{\Psi}$ in the real line $\mathbb{R}\mathrm I_4$ and $\mathbb{B}_{\Phi}$ in the imaginary line $i\mathbb{R}\mathrm I_4$. It is the only subspace of real dimension $2$ and the only commutative one.
 
 ### The Vector Subspace
 
@@ -616,15 +616,15 @@ The image is the space of anti-Hermitian matrices of this form, of real dimensio
 
 **The three decompositions.** The six subspaces pair into the three decompositions
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
-=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
-=\mathbb{M}_+\oplus\mathbb{M}_-,
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}
+=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}
+=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector split. The second is the real–imaginary split. The third is the Hermitian–anti-Hermitian split. No one of the three refines another.
 
-**The intersections.** The centre meets $\mathbb{M}_+$ in $\mathbb{R}\mathrm I_4$ and $\mathbb{M}_-$ in $i\mathbb{R}\mathrm I_4$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{M}_+$ in $i$ times the real vector triple, and $\mathbb{M}_-$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.
+**The intersections.** The centre meets $\mathbb{B}_{\Psi}$ in $\mathbb{R}\mathrm I_4$ and $\mathbb{B}_{\Phi}$ in $i\mathbb{R}\mathrm I_4$. The vector subspace meets $\mathbb{B}_{H}$ in the real pure quaternions, of real dimension $3$, and $\mathbb{B}_{iH}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{B}_{\Psi}$ in $i$ times the real vector triple, and $\mathbb{B}_{\Phi}$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.
 
-**The closure.** The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.
+**The closure.** The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, and it exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
 ## Summary
 

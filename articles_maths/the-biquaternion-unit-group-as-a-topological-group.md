@@ -75,7 +75,7 @@ the kernel of the determinant.
 
 **Its subgroups.** The determinant-one group contains
 
-- the **unit quaternions** $S^3=\{\tilde{q}\in\mathbb{H}_{\mathbb{B}}:\tilde{q}\tilde{q}^{*}=e_t\}$, the compact part, which is a maximal compact subgroup of $\mathbb{B}^\times_1$;
+- the **unit quaternions** $S^3=\{\tilde{q}\in\mathbb{B}_{H}:\tilde{q}\tilde{q}^{*}=e_t\}$, the compact part, which is a maximal compact subgroup of $\mathbb{B}^\times_1$;
 - the centre $\{\pm e_t\}$ of order two, which is the common part of $S^3$ and of the centre circle $\mathrm{U}(1)e_t$; it lies in every finite subgroup of $S^3$ of even order, in particular in every binary polyhedral group, and not in the cyclic groups of odd order;
 - the **centre circle** $S^1=\mathrm{U}(1)e_t\subset\mathbb{B}^\times$, of elements $Ae_t$ with $|A|=1$, which does not lie in $\mathbb{B}^\times_1$ because $\det\mathsf{M}_2(Ae_t)=A^{2}\in S^1$ is not $1$ in general.
 
@@ -132,7 +132,7 @@ of degree one; the class of the central circle $Ae_t$ with $|A|=1$ is twice a ge
 
 **A non-central unit.** For $\tilde{Q}=e_t+\vec e_x$ the determinant is $2$, so the element is a unit; it is not central, and its inverse is $(e_t-\vec e_x)/2$, as $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$ shows.
 
-**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement in $\mathbb{M}_+$ of its null cone.
+**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{B}_{\Psi}$ are the complement in $\mathbb{B}_{\Psi}$ of its null cone.
 
 **A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is $\natural$-degenerate, a zero divisor on the null cone, and is not a unit; it is therefore an element of none of the three groups above.
 

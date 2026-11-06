@@ -126,7 +126,7 @@ The products themselves — their coordinates, their laws, their units and their
 
 The algebra carries the identity and three conjugations, four maps in all, and on it there are four forms, each applying one map to each of its two arguments, so the two lists are one list read twice. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
 
-**The setting.** $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = Q_t$ is $\mathbb{C}$-linear. The centre is treated in *The Biquaternion Space, the Group of Involutions and the Six Subspaces*, §*The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$*, and the forms of the algebra in *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
+**The setting.** $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = Q_t$ is $\mathbb{C}$-linear. The centre is treated in *The Biquaternion Space, the Group of Involutions and the Six Subspaces*, §*The Complex Time Sector $\mathbb{B}_{C}$*, and the forms of the algebra in *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
 **The four maps.** The tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is built from two rings that each carry two involutions, the identity and the conjugation, so it carries $2\times 2 = 4$, together with the derived anti-Hermitian sign:
 
@@ -150,7 +150,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{M}_-$ it is $-c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(0,4)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(0,4)$.
 
 The **quaternionic form** applies the quaternion conjugation to the first argument and the identity to the second:
 
@@ -158,7 +158,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = Q_{1t}Q_{2t} + Q_{1x}Q_{2x} + Q_{1y}Q_{2y} + Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{M}_-$ it is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(3,1)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(3,1)$.
 
 The **Hermitian form** applies the identity to the first argument and the Hermitian conjugation to the second:
 
@@ -166,7 +166,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} + Q_{1x}\bar{Q}_{2x} + Q_{1y}\bar{Q}_{2y} + Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{M}_-$ it is $c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(4,0)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is $c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(4,0)$.
 
 The **Krein form** applies the quaternion conjugation to the first argument and the Hermitian conjugation to the second:
 
@@ -174,9 +174,9 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} - Q_{1x}\bar{Q}_{2x} - Q_{1y}\bar{Q}_{2y} - Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{M}_-$ it is $c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(1,3)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is $c^2{r'_{t}}^2-x^2-y^2-z^2$, signature $(1,3)$.
 
-Each form is the scalar part of its own product. The Hermitian form is the pairing that carries probability; the plain form is its restriction to $\mathbb{M}_+$ and the primary computational form on the sector; the other two are read by choosing the conjugation of a slot, and the trace is a reading of the Hermitian form in the $2\times2$ image.
+Each form is the scalar part of its own product. The Hermitian form is the pairing that carries probability; the plain form is its restriction to $\mathbb{B}_{\Psi}$ and the primary computational form on the sector; the other two are read by choosing the conjugation of a slot, and the trace is a reading of the Hermitian form in the $2\times2$ image.
 
 **The four formulas are written on the biquaternion glyph, whose two marks are independent; when one mark degenerates the brackets collapse two-and-two, and in the reduced biquaternions no mark degenerates and the four remain distinct.** Each table below gives only the brackets that survive on the layer, with the norm they carry.
 
@@ -243,11 +243,11 @@ $$
 \langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2},
 $$
 
-and the unit is normalised by it, $\langle e_t\rangle_{*} = 1$. The form is positive definite on the whole algebra. Its restriction to $\mathbb{M}_+$ is the plain form,
+and the unit is normalised by it, $\langle e_t\rangle_{*} = 1$. The form is positive definite on the whole algebra. Its restriction to $\mathbb{B}_{\Psi}$ is the plain form,
 $$
 \langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle = \mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}),
 $$
-of signature $(4,0)$ there, and its restriction to $\mathbb{M}_-$ is minus the plain form, of signature $(0,4)$. A state is normalised by the form against the unit,
+of signature $(4,0)$ there, and its restriction to $\mathbb{B}_{\Phi}$ is minus the plain form, of signature $(0,4)$. A state is normalised by the form against the unit,
 
 $$
 \langle\tilde{Ϛ},e_t\rangle_{*} = \tfrac12\langle e_t\rangle_{*},
@@ -262,7 +262,7 @@ p=\frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle
  =c r_t+\vec r\cdot\vec r_\psi .
 $$
 
-The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{M}_+$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{M}_+$ and on $\mathbb{B}$ alike. On $\mathbb{M}_+$ both arguments are Hermitian, so $\tilde R_\psi^{*}=\tilde R_\psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}\ge0$ and an effect $0\le\tilde R_\psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
+The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde R_\psi^{*}=\tilde R_\psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}\ge0$ and an effect $0\le\tilde R_\psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The trace is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.
 
 The scalar part is then a reading of the form against the unit, $\mathrm{Sc}(\tilde Q)=\langle\tilde Q,e_t\rangle_{*}$, and the trace is the reading in the $2\times2$ image, once and last,
 
@@ -271,7 +271,7 @@ $$
 \qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q).
 $$
 
-The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{M}_+$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}\rangle_{*}=\tfrac14(1+|\vec r|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
+The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{B}_{\Psi}$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}\rangle_{*}=\tfrac14(1+|\vec r|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
 
 **In the $2\times2$ image.** The four forms are the traces of their products up to that factor,
 

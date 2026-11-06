@@ -287,7 +287,7 @@ $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.
 
-The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{M}_-$, where $Q_t=i c r'_t$ turns it into $\Delta-c^{-2}\partial^2/\partial r'_t^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
+The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ turns it into $\Delta-c^{-2}\partial^2/\partial r'_t^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
 
 ## The Three-Vector Form
 
@@ -604,7 +604,7 @@ $$
 W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$
 
-The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i c r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.
+The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i c r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.
 
 The energy law is the scalar part of the biquaternionic equation
 
@@ -797,7 +797,7 @@ The corpus records the invariance and the three interpretations as the source's 
 
 ## Beyond the Minkowski Subspace: Complexified Spacetime
 
-Up to this point the potential has been taken in the **anti-Hermitian subspace** $\mathbb{M}_-$ (the material sector): with $A_0 = i\,a'_t$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.
+Up to this point the potential has been taken in the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}$ (the material sector): with $A_0 = i\,a'_t$ and $\vec A$ real, the time coefficient is purely imaginary and the three spatial coefficients are real. The field strength is in neither subspace, and its two halves are the two physical halves of $\tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$.
 
 The electric half $i\sqrt{\epsilon}\,\vec E$ is the Hermitian part of the field and the magnetic half $-\sqrt{\mu}\,\vec H$ the anti-Hermitian part, which is the sector split of *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, read on $\tilde F$. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
 
@@ -809,7 +809,7 @@ with complex coefficients that are not restricted to either subspace. Restrictin
 
 The biquaternionic formulation extends naturally to this setting. The gradient $\tilde{\nabla}$ becomes an operator on the complexified coordinates, and the factorization $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box\,e_t$ continues to hold, with $\Box$ now the complexified d'Alembertian. The single equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ remains valid, but the fields and sources are now fully complex. The integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural} \sqrt{\mu}\,\tilde{J}) = 0$ remains the conservation law for the complexified source.
 
-This is the natural generalization of the $i c r'_t$ structure. The electromagnetic field is the material slice of a complex field, just as the material sector $\mathbb{M}_-$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
+This is the natural generalization of the $i c r'_t$ structure. The electromagnetic field is the material slice of a complex field, just as the material sector $\mathbb{B}_{\Phi}$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -883,7 +883,7 @@ Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into 
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The potential $\tilde{A}$ is subject to the gauge transformation $\tilde{A}_{\mathrm g} = \tilde{A} - \tilde{\nabla}\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $S_2 = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A} = -\mu\tilde J$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla\tilde W) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_2 = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\xi_{\mathrm{scp}}$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla\tilde W) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_2 = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\xi_{\mathrm{scp}}$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 
@@ -892,8 +892,8 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$, commutes with $\vec e_\mu$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\tilde{A}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
 | $G_\Box$, $\tilde G_{\tilde\nabla}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R/c)$ and the first-order kernel $\tilde\nabla^{\natural}G_\Box$ |
@@ -904,7 +904,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\rho_f$ | Mass density of the fluid (not the charge density $\rho$) |
 | $\tilde J = ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde Q^{*}$ | Hermitian conjugate: complex conjugation followed by the quaternion conjugate |
-| $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*}$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
+| $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*}$ | Energy–momentum biquaternion, in $\mathbb{B}_{\Psi}$ |
 | $\tilde U$ | Boost biquaternion (unit-norm biquaternion) |
 | $\tilde{q}_0$ | Constant unit quaternion; the internal (right-multiplication) freedom of the vacuum equation, in $\mathrm{SU}(2)$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric quaternionic sesquilinear product of *Introduction to the Symmetric Quaternionic Sesqualgebra* is defined on the whole complex space of the biquaternion algebra, and the remarkable real subspaces of the algebra carry it in six different ways. The remarkable subspaces are the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the **vector subspace** $\mathbf{e}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z\}$, the **real quaternion subspace** $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, the **Hermitian subspace** $\mathbb{M}_{+}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and the **anti-Hermitian subspace** $\mathbb{M}_{-}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. They are defined and compared in *Subspaces and Decompositions*, and the product of the general quaternionic sesquilinear row is read on them in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
+The symmetric quaternionic sesquilinear product of *Introduction to the Symmetric Quaternionic Sesqualgebra* is defined on the whole complex space of the biquaternion algebra, and the remarkable real subspaces of the algebra carry it in six different ways. The remarkable subspaces are the **centre** $\mathbb{B}_{C}=\mathbb{C}e_t$, the **vector subspace** $\mathbf{e}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z\}$, the **real quaternion subspace** $\mathbb{B}_{H}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the **anti-quaternion subspace** $\mathbb{B}_{iH}=\mathrm{span}_{\mathbb{R}}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, the **Hermitian subspace** $\mathbb{B}_{\Psi}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and the **anti-Hermitian subspace** $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. They are defined and compared in *Subspaces and Decompositions*, and the product of the general quaternionic sesquilinear row is read on them in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
 The product of the block is the half-sum of the two orders of the general product, so the cross product vanishes on its diagonal and survives only in the difference between the two orders; the consequence for the remarkable subspaces is a closure pattern different from the one of the general product. The centre is closed; so are the real quaternion subspace and the Hermitian subspace, the only two of the
 four four-dimensional subspaces that keep the product inside themselves. The other three are not closed, and
@@ -122,7 +122,7 @@ an element of the Hermitian subspace. The anti-Hermitian subspace is not closed;
 
 *Proof.* Here $Q_{1t}=ia_t$ and $\vec Q_1=\vec\alpha$, so $\overline{Q_{2t}}=-ib_t$ and $\overline{\vec Q_2}=\vec\beta$. The scalar part is $K=(ia_t)(-ib_t)-\sum_k\alpha_k\beta_k=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1=-(ia_t)\vec\beta-(-ib_t)\vec\alpha=i(b_t\vec\alpha-a_t\vec\beta)$, purely imaginary. So the value is Hermitian, and the span of the values is the Hermitian subspace.
 
-**Remark.** The anti-Hermitian subspace carries the product out of itself into the Hermitian subspace, exactly as the anti-quaternion subspace carries it into the real quaternion subspace; the pattern is that the three not-closed subspaces each lose one level, in the chain $\mathbf{e}\to\mathbb{C}e_t$, $i\mathbb{H}_{\mathbb{B}}\to\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{-}\to\mathbb{M}_{+}$.
+**Remark.** The anti-Hermitian subspace carries the product out of itself into the Hermitian subspace, exactly as the anti-quaternion subspace carries it into the real quaternion subspace; the pattern is that the three not-closed subspaces each lose one level, in the chain $\mathbf{e}\to\mathbb{C}e_t$, $\mathbb{B}_{iH}\to\mathbb{B}_{H}$, $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$.
 
 ## The Table of the Remarkable Subspaces
 
@@ -132,10 +132,10 @@ an element of the Hermitian subspace. The anti-Hermitian subspace is not closed;
 |---|---|---|---|
 | centre $\mathbb{C}e_t$ | yes | centre | $2$ |
 | vector $\mathbf{e}$ | no | centre | $2$ |
-| real quaternion $\mathbb{H}_{\mathbb{B}}$ | yes | $\mathbb{H}_{\mathbb{B}}$ | $4$ |
-| anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | no | $\mathbb{H}_{\mathbb{B}}$ | $4$ |
-| Hermitian $\mathbb{M}_{+}$ | yes | $\mathbb{M}_{+}$ | $4$ |
-| anti-Hermitian $\mathbb{M}_{-}$ | no | $\mathbb{M}_{+}$ | $4$ |
+| real quaternion $\mathbb{B}_{H}$ | yes | $\mathbb{B}_{H}$ | $4$ |
+| anti-quaternion $\mathbb{B}_{iH}$ | no | $\mathbb{B}_{H}$ | $4$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | yes | $\mathbb{B}_{\Psi}$ | $4$ |
+| anti-Hermitian $\mathbb{B}_{\Phi}$ | no | $\mathbb{B}_{\Psi}$ | $4$ |
 
 *Proof.* The rows are the six theorems above, each of which computes the image and its real dimension; the closed rows are those whose image is the subspace itself.
 
@@ -155,7 +155,7 @@ $$
 
 for the centre, the vector subspace, the real quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces respectively.
 
-*Proof.* On the centre the value is $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$, which spans $\mathbb{C}e_t$, of real dimension two as $\lambda\overline{\mu}$ ranges over $\mathbb{C}$; on the vector subspace the value is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t$, and $K=-(\vec Q_1,\overline{\vec Q_2})$ likewise ranges over $\mathbb{C}$, so the span is again the centre, of real dimension two. On each of the four four-dimensional subspaces the values span a space of real dimension four, read from pairs that lie in the subspace itself: $e_t\star e_t=e_t$ and $e_t\star \vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$, the image of the real quaternion subspace; $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span $\mathbb{M}_{+}$, the image of the Hermitian subspace; and $ie_t\star ie_t=e_t$, $ie_t\star i\vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$ for the anti-quaternion subspace, while $ie_t\star ie_t=e_t$, $ie_t\star \vec e_k=-i\vec e_k$ span $\mathbb{M}_{+}$ for the anti-Hermitian one.
+*Proof.* On the centre the value is $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$, which spans $\mathbb{C}e_t$, of real dimension two as $\lambda\overline{\mu}$ ranges over $\mathbb{C}$; on the vector subspace the value is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t$, and $K=-(\vec Q_1,\overline{\vec Q_2})$ likewise ranges over $\mathbb{C}$, so the span is again the centre, of real dimension two. On each of the four four-dimensional subspaces the values span a space of real dimension four, read from pairs that lie in the subspace itself: $e_t\star e_t=e_t$ and $e_t\star \vec e_k=-\vec e_k$ span $\mathbb{B}_{H}$, the image of the real quaternion subspace; $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span $\mathbb{B}_{\Psi}$, the image of the Hermitian subspace; and $ie_t\star ie_t=e_t$, $ie_t\star i\vec e_k=-\vec e_k$ span $\mathbb{B}_{H}$ for the anti-quaternion subspace, while $ie_t\star ie_t=e_t$, $ie_t\star \vec e_k=-i\vec e_k$ span $\mathbb{B}_{\Psi}$ for the anti-Hermitian one.
 
 **Remark (the image is not among the remarkable subspaces).** The values of a general pair lie in no subspace of the remarkable subspaces, and their span is the whole algebra; this is the content of the first theorem, and it is the reason the block's image is not one of the remarkable subspaces — unlike the image of the sibling sesquilinear symmetrisation $\tilde Q_1\bullet_{*}\tilde Q_2$, which is the centre. The corresponding statement for the general quaternionic sesquilinear row is in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
@@ -181,12 +181,12 @@ The product of the block is read on the remarkable subspaces by the single rule 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre; closed, image rank $2$ |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre; closed, image rank $2$ |
 | $\mathbf{e}$ | the vector subspace; image the centre, rank $2$ |
-| $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace; closed, image rank $4$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | the anti-quaternion subspace; image $\mathbb{H}_{\mathbb{B}}$, rank $4$ |
-| $\mathbb{M}_{+}$ | the Hermitian subspace; closed, image rank $4$ |
-| $\mathbb{M}_{-}$ | the anti-Hermitian subspace; image $\mathbb{M}_{+}$, rank $4$ |
+| $\mathbb{B}_{H}$ | the real quaternion subspace; closed, image rank $4$ |
+| $\mathbb{B}_{iH}$ | the anti-quaternion subspace; image $\mathbb{B}_{H}$, rank $4$ |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace; closed, image rank $4$ |
+| $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace; image $\mathbb{B}_{\Psi}$, rank $4$ |
 | $\mathrm{span}_{\mathbb{R}}\{\tilde Q_1\star\tilde Q_2:\tilde Q_1,\tilde Q_2\in\mathbb{B}\}=\mathbb{B}$ | the smallest real span, of the values of all pairs, of real dimension eight |
 
 ## Further Reading

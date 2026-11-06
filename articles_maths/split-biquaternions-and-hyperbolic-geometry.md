@@ -3,12 +3,12 @@
 
 ## Introduction
 
-This article is the hyperbolic-geometric slot of the split biquaternion system. It presents hyperbolic three-space as a model carried by the split biquaternion algebra: the points are the elements of the anti-Hermitian four-plane $\mathbb{M}_-$ whose Hermitian norm is $-1$, the isometry group is the restricted Lorentz group realised on that plane, and the boundary and the geodesics are read off from the null cone and from the two-dimensional subspaces of the algebra. The article continues the geometry of the same system from *Split-Biquaternion Geometry* and uses the Lorentz group of *Split-Biquaternion Rotations and the Lorentz Group*; it does not restate the forms, the invariant subspaces or the classification of isometries that are established there, but develops from them the metric geometry of the hyperbolic space itself.
+This article is the hyperbolic-geometric slot of the split biquaternion system. It presents hyperbolic three-space as a model carried by the split biquaternion algebra: the points are the elements of the anti-Hermitian four-plane $\mathbb{B}_{\Phi}$ whose Hermitian norm is $-1$, the isometry group is the restricted Lorentz group realised on that plane, and the boundary and the geodesics are read off from the null cone and from the two-dimensional subspaces of the algebra. The article continues the geometry of the same system from *Split-Biquaternion Geometry* and uses the Lorentz group of *Split-Biquaternion Rotations and the Lorentz Group*; it does not restate the forms, the invariant subspaces or the classification of isometries that are established there, but develops from them the metric geometry of the hyperbolic space itself.
 
 The two-dimensional analogue is the hyperbolic geometry of the split complex plane, treated in *Hyperbolic Rotations* and in *Hyperbolic Geometry* in Part II; the general theory of hyperbolic manifolds, of their geodesics and of their boundaries is the subject of *Hyperbolic Geometry* and of *Pseudo-Riemannian and Lorentzian Geometry*, written in parallel, and is cited rather than reproduced. The corresponding construction for the biquaternion algebra, in which hyperbolic three-space appears through Hermitian matrices and $SL_2(\mathbb{C})$, is the subject of *Topology in the Space of Biquaternions* and of the written biquaternion articles; the present article is the split biquaternion realisation and not that one. The quaternion sphere $S^3$ is used as the comparison object throughout, as in *Quaternion Geometry*.
 
 $$
-\mathbb{M}_- = \left\{a\,je_t + v : a\in\mathbb{R},\ v\in\operatorname{Im}\mathbb{H}\right\}
+\mathbb{B}_{\Phi} = \left\{a\,je_t + v : a\in\mathbb{R},\ v\in\operatorname{Im}\mathbb{H}\right\}
 = \left\{a\,je_t + v_1\vec e_x + v_2\vec e_y + v_3\vec e_z\right\},
 $$
 
@@ -18,7 +18,7 @@ $$
 g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2 .
 $$
 
-**Definition.** An element of $\mathbb{M}_-$ of $g$-norm $-1$ is called a **split biquaternion of unit norm**; this is the indefinite unit condition, and it is the condition that selects the points of the hyperbolic space.
+**Definition.** An element of $\mathbb{B}_{\Phi}$ of $g$-norm $-1$ is called a **split biquaternion of unit norm**; this is the indefinite unit condition, and it is the condition that selects the points of the hyperbolic space.
 
 ## The Hyperboloid Model
 
@@ -27,12 +27,12 @@ $$
 **Definition.** The **hyperboloid model** of hyperbolic three-space is
 
 $$
-H^3 = \left\{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\right\},
+H^3 = \left\{\tilde{Q}\in\mathbb{B}_{\Phi} : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\right\},
 $$
 
 where $\tilde{Q} = a\,je_t + v$; the sign condition $a > 0$ selects one of the two connected components of the level set $g = -1$.
 
-**Theorem.** $H^3$ is a connected smooth three-dimensional submanifold of $\mathbb{M}_-$, diffeomorphic to $\mathbb{R}^3$; the diffeomorphism is
+**Theorem.** $H^3$ is a connected smooth three-dimensional submanifold of $\mathbb{B}_{\Phi}$, diffeomorphic to $\mathbb{R}^3$; the diffeomorphism is
 
 $$
 \boxed{\;
@@ -42,7 +42,7 @@ $$
 
 with inverse $\tilde{Q}\mapsto\mathrm{Vect}(\tilde{Q})$. The tangent space at $\tilde{Q}\in H^3$ is the $g$-orthogonal complement of $\tilde{Q}$, and $g$ is positive definite on it.
 
-*Proof.* The map displayed has $g$-norm $-(1+\lvert v\rvert^2) + \lvert v\rvert^2 = -1$ and $a = \sqrt{1+\lvert v\rvert^2} > 0$, so it lands in $H^3$; its inverse is the vector part, and the two are smooth and mutually inverse, so $H^3\cong\mathbb{R}^3$. For the tangent space, differentiate the relation $g(\tilde{Q},\tilde{Q}) = -1$ along a curve in $H^3$ to obtain $g(\tilde{Q},d\tilde{Q}/dt) = 0$, so the tangent space lies in the orthogonal complement, which has dimension three because $g(\tilde{Q},\tilde{Q})\neq0$; hence they agree. The form is positive definite on that complement: the index of a form is additive over orthogonal direct sums of non-degenerate subspaces, the ambient form on $\mathbb{M}_-$ has index one, and the line $\mathbb{R}\tilde{Q}$ already carries the negative direction, so the orthogonal complement has index zero.
+*Proof.* The map displayed has $g$-norm $-(1+\lvert v\rvert^2) + \lvert v\rvert^2 = -1$ and $a = \sqrt{1+\lvert v\rvert^2} > 0$, so it lands in $H^3$; its inverse is the vector part, and the two are smooth and mutually inverse, so $H^3\cong\mathbb{R}^3$. For the tangent space, differentiate the relation $g(\tilde{Q},\tilde{Q}) = -1$ along a curve in $H^3$ to obtain $g(\tilde{Q},d\tilde{Q}/dt) = 0$, so the tangent space lies in the orthogonal complement, which has dimension three because $g(\tilde{Q},\tilde{Q})\neq0$; hence they agree. The form is positive definite on that complement: the index of a form is additive over orthogonal direct sums of non-degenerate subspaces, the ambient form on $\mathbb{B}_{\Phi}$ has index one, and the line $\mathbb{R}\tilde{Q}$ already carries the negative direction, so the orthogonal complement has index zero.
 
 The second component of the level set $g = -1$ is the image of $H^3$ under the central reflection $\tilde{Q}\mapsto-\tilde{Q}$, and is the second sheet; the two sheets together form the full level set and are interchanged by the group $O(3,1)$. The manifold $H^3$ is non-compact and simply connected, and its curvature is constant and negative.
 
@@ -54,7 +54,7 @@ $$
 d_H(\tilde{Q},\tilde Q_3) = \operatorname{arcosh}\!\left(-g(\tilde{Q},\tilde Q_3)\right), \qquad \tilde{Q},\tilde Q_3\in H^3 .
 $$
 
-**Theorem.** The hyperbolic distance is a metric on $H^3$, it is invariant under every linear isometry of $(\mathbb{M}_-,g)$ that preserves the sheet, and $H^3$ with this metric is a complete Riemannian manifold of constant sectional curvature $-1$. Its isometry group is
+**Theorem.** The hyperbolic distance is a metric on $H^3$, it is invariant under every linear isometry of $(\mathbb{B}_{\Phi},g)$ that preserves the sheet, and $H^3$ with this metric is a complete Riemannian manifold of constant sectional curvature $-1$. Its isometry group is
 
 $$
 \boxed{\;
@@ -80,7 +80,7 @@ as a homogeneous space, and the stabiliser of a point acts on the tangent space 
 
 ### Geodesics and Two-Dimensional Subspaces
 
-**Theorem.** The geodesics of $H^3$ through a point $\tilde{Q}$ are the intersections of $H^3$ with the two-dimensional real subspaces of $\mathbb{M}_-$ through the origin that are spanned by $\tilde{Q}$ and a tangent vector, and are therefore the curves
+**Theorem.** The geodesics of $H^3$ through a point $\tilde{Q}$ are the intersections of $H^3$ with the two-dimensional real subspaces of $\mathbb{B}_{\Phi}$ through the origin that are spanned by $\tilde{Q}$ and a tangent vector, and are therefore the curves
 
 $$
 t\longmapsto \cosh t\,\tilde{Q} + \sinh t\,\tilde S, \qquad \tilde{Q}\in H^3,\ \tilde S\in T_{\tilde{Q}}H^3,\ g(\tilde S,\tilde S) = 1,\ g(\tilde{Q},\tilde S) = 0 .
@@ -88,7 +88,7 @@ $$
 
 Every geodesic is the orbit of a hyperbolic one-parameter subgroup of $SO^{+}(3,1)$, and the intersection of the geodesic with the plane $\operatorname{span}(\tilde{Q},\tilde S)$ is the hyperbola $\{-a^2 + \text{(one coordinate)}^2 = -1\}$ in that plane.
 
-*Proof.* A geodesic of the hyperboloid model is the intersection of $H^3$ with a two-dimensional linear subspace $P$ on which the ambient form has signature $(1,1)$, because the second fundamental form of the hyperboloid in $\mathbb{M}_-$ is minus the ambient form and the geodesic curvature vanishes on such intersections. Parametrising the plane $P$ by an orthonormal pair $(\tilde{Q},\tilde S)$ with $g(\tilde{Q},\tilde{Q}) = -1$, $g(\tilde S,\tilde S) = +1$, $g(\tilde{Q},\tilde S) = 0$ gives the displayed curve, which has $g$-norm $-1$ and is the unit hyperbola in the plane. The one-parameter group statement is the classification of the hyperbolic generators of $\mathrm{SO}(3,1)$; it is the second row of the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
+*Proof.* A geodesic of the hyperboloid model is the intersection of $H^3$ with a two-dimensional linear subspace $P$ on which the ambient form has signature $(1,1)$, because the second fundamental form of the hyperboloid in $\mathbb{B}_{\Phi}$ is minus the ambient form and the geodesic curvature vanishes on such intersections. Parametrising the plane $P$ by an orthonormal pair $(\tilde{Q},\tilde S)$ with $g(\tilde{Q},\tilde{Q}) = -1$, $g(\tilde S,\tilde S) = +1$, $g(\tilde{Q},\tilde S) = 0$ gives the displayed curve, which has $g$-norm $-1$ and is the unit hyperbola in the plane. The one-parameter group statement is the classification of the hyperbolic generators of $\mathrm{SO}(3,1)$; it is the second row of the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ## The Boundary and the Conformal Model
 
@@ -97,10 +97,10 @@ Every geodesic is the orbit of a hyperbolic one-parameter subgroup of $SO^{+}(3,
 **Definition.** The **boundary at infinity** of the hyperboloid model is the set of rays of the null cone,
 
 $$
-\partial H^3 = \left\{[\tilde{Q}] : \tilde{Q}\in\mathbb{M}_-,\ \tilde{Q}\neq 0,\ g(\tilde{Q},\tilde{Q}) = 0\right\},
+\partial H^3 = \left\{[\tilde{Q}] : \tilde{Q}\in\mathbb{B}_{\Phi},\ \tilde{Q}\neq 0,\ g(\tilde{Q},\tilde{Q}) = 0\right\},
 $$
 
-the projectivisation of the null cone in $\mathbb{M}_-$.
+the projectivisation of the null cone in $\mathbb{B}_{\Phi}$.
 
 **Theorem.** The boundary is a two-sphere,
 
@@ -118,7 +118,7 @@ and the map $\tilde{Q} = a\,je_t + v\mapsto v/\lvert v\rvert$ realises the bound
 
 The boundary sphere has a preferred conformal structure, and it is the same structure that the complex projective line carries.
 
-**Proposition.** The boundary sphere $\partial H^3$ is conformally equivalent to the Riemann sphere $\mathbb{C}P^1$; the equivalence is realised by stereographic projection from the null cone of $\mathbb{M}_-$ onto the plane $\{a = 1\}$ in the coordinates $\tilde{Q} = a\,je_t + v$, which is a copy of $\mathbb{R}^2$ completed by one point. Under this equivalence the action of $SO^{+}(3,1)$ on $\partial H^3$ becomes the action of $PSL_2(\mathbb{C})$ on $\mathbb{C}P^1$ by Möbius transformations,
+**Proposition.** The boundary sphere $\partial H^3$ is conformally equivalent to the Riemann sphere $\mathbb{C}P^1$; the equivalence is realised by stereographic projection from the null cone of $\mathbb{B}_{\Phi}$ onto the plane $\{a = 1\}$ in the coordinates $\tilde{Q} = a\,je_t + v$, which is a copy of $\mathbb{R}^2$ completed by one point. Under this equivalence the action of $SO^{+}(3,1)$ on $\partial H^3$ becomes the action of $PSL_2(\mathbb{C})$ on $\mathbb{C}P^1$ by Möbius transformations,
 
 $$
 A\longmapsto\frac{\alpha A + \beta}{\gamma A + \delta}, \qquad \begin{pmatrix}\alpha & \beta\\ \gamma & \delta\end{pmatrix}\in SL_2(\mathbb{C}),
@@ -150,7 +150,7 @@ The classification of one-parameter subgroups established in *Split-Biquaternion
 - **Hyperbolic.** The element fixes no point of $H^3$ and fixes exactly two points of $\partial H^3$; it translates along the geodesic joining them, by a distance $\ell > 0$ called the translation length, and the geodesic is the unique invariant geodesic.
 - **Parabolic.** The element fixes no point of $H^3$ and fixes exactly one point of $\partial H^3$; it translates every point by an unbounded amount and preserves the horospheres based at the fixed boundary point.
 
-*Proof.* The fixed points of an element of $SO^{+}(3,1)$ on $H^3\cup\partial H^3$ correspond to the lines in $\mathbb{M}_-$ spanned by eigenvectors of the corresponding linear map, and the type is determined by the sign of the $g$-norm of such an eigenvector: timelike (a point of $H^3$), spacelike (a geodesic, whose endpoints are two null eigenvectors) or null (a boundary point). The normal forms are those of the generator, given by the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
+*Proof.* The fixed points of an element of $SO^{+}(3,1)$ on $H^3\cup\partial H^3$ correspond to the lines in $\mathbb{B}_{\Phi}$ spanned by eigenvectors of the corresponding linear map, and the type is determined by the sign of the $g$-norm of such an eigenvector: timelike (a point of $H^3$), spacelike (a geodesic, whose endpoints are two null eigenvectors) or null (a boundary point). The normal forms are those of the generator, given by the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
 
 **Proposition.** The elliptic type is realised inside the split biquaternion algebra by the $*$-unitary group of *Split-Biquaternion Rotations and the Lorentz Group*, which acts on $H^3$ by rotations about the fixed point $je_t$; the hyperbolic type is realised by the split complex hyperbolic units acting on the neutral planes, transported to $H^3$; the parabolic type is not realised by an element of the algebra, because $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
@@ -178,7 +178,7 @@ The split biquaternion hyperbolic geometry is the three-dimensional member of a 
 
 | Feature | $\mathbb{C}_{\mathrm{spl}}$ (dimension $1$) | $\mathbb{B}_{\mathrm{spl}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
 |---|---|---|---|
-| Ambient form | $a^2 - b^2$ on $\mathbb{C}_{\mathrm{spl}}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert\tilde q\rvert^2$ on $\mathbb{H}$ |
+| Ambient form | $a^2 - b^2$ on $\mathbb{C}_{\mathrm{spl}}$ | $g$ on $\mathbb{B}_{\Phi}\sim(3,1)$ | $\lvert\tilde q\rvert^2$ on $\mathbb{H}$ |
 | Level set | hyperbola $c^2 - s^2 = 1$ | hyperboloid $g = -1$ | sphere $S^3$ |
 | Space | $H^1\cong\mathbb{R}$ | $H^3\cong\mathbb{R}^3$ | $S^3$ |
 | Curvature | $-1$ | $-1$ | $+1$ |
@@ -195,7 +195,7 @@ The relation to the split complex plane is not merely an analogy: the split comp
 
 ## Summary
 
-The anti-Hermitian four-plane $\mathbb{M}_-$ of the split biquaternion algebra, with the Hermitian form $g$ of signature $(3,1)$, carries the hyperboloid model of hyperbolic three-space: the points are the elements of Hermitian norm $-1$ with a positive $je_t$-coordinate, the space is diffeomorphic to $\mathbb{R}^3$, and its metric is $d_H(\tilde{Q},\tilde Q_3) = \operatorname{arcosh}(-g(\tilde{Q},\tilde Q_3))$, complete of constant curvature $-1$. Its isometry group is the sheet-preserving subgroup $O^{\uparrow}(3,1)$, of index two in $O(3,1)$, acting transitively with isotropy $SO(3)$, so that $H^3\cong SO^{+}(3,1)/SO(3)$.
+The anti-Hermitian four-plane $\mathbb{B}_{\Phi}$ of the split biquaternion algebra, with the Hermitian form $g$ of signature $(3,1)$, carries the hyperboloid model of hyperbolic three-space: the points are the elements of Hermitian norm $-1$ with a positive $je_t$-coordinate, the space is diffeomorphic to $\mathbb{R}^3$, and its metric is $d_H(\tilde{Q},\tilde Q_3) = \operatorname{arcosh}(-g(\tilde{Q},\tilde Q_3))$, complete of constant curvature $-1$. Its isometry group is the sheet-preserving subgroup $O^{\uparrow}(3,1)$, of index two in $O(3,1)$, acting transitively with isotropy $SO(3)$, so that $H^3\cong SO^{+}(3,1)/SO(3)$.
 
 The geodesics are the intersections of $H^3$ with the two-dimensional subspaces of signature $(1,1)$, equivalently the orbits of the hyperbolic one-parameter subgroups, and they are hyperbolas in their planes. The boundary at infinity is the projectivised null cone and is a two-sphere, conformally equivalent to the Riemann sphere, on which $SO^{+}(3,1)$ acts as $PSL_2(\mathbb{C})$ by Möbius transformations. The Klein model is the open unit ball with chords as geodesics; the Poincaré ball and upper half-space models are obtained conformally.
 
@@ -210,15 +210,15 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $j$ | Split complex unit, $j^2 = +e_t$, central |
-| $\tilde{Q} = a\,je_t + v$ | General element of $\mathbb{M}_-$, $a\in\mathbb{R}$, $v\in\operatorname{Im}\mathbb{H}$ |
+| $\tilde{Q} = a\,je_t + v$ | General element of $\mathbb{B}_{\Phi}$, $a\in\mathbb{R}$, $v\in\operatorname{Im}\mathbb{H}$ |
 | $\mathrm{Sc}$, $\mathrm{Vect}$ | Scalar and vector part |
 | $\operatorname{Im}\mathbb{H}$ | Pure quaternion subspace, $\cong\mathbb{R}^3$ |
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |
 | $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, signature $(4,4)$ |
-| $\mathbb{M}_+$ | Hermitian subspace, $g$ of signature $(1,3)$ |
-| $\mathbb{M}_- = \{a\,je_t + v\}$ | Anti-Hermitian subspace, $g$ of signature $(3,1)$ |
-| $g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{M}_-$ |
-| $H^3 = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\}$ | Hyperboloid model of hyperbolic three-space |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace, $g$ of signature $(1,3)$ |
+| $\mathbb{B}_{\Phi} = \{a\,je_t + v\}$ | Anti-Hermitian subspace, $g$ of signature $(3,1)$ |
+| $g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{B}_{\Phi}$ |
+| $H^3 = \{\tilde{Q}\in\mathbb{B}_{\Phi} : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\}$ | Hyperboloid model of hyperbolic three-space |
 | $\tilde S$ | Tangent vector, $g(\tilde S,\tilde S) = 1$, $g(\tilde{Q},\tilde S) = 0$ |
 | $d_H(\tilde{Q},\tilde Q_3) = \operatorname{arcosh}(-g(\tilde{Q},\tilde Q_3))$ | Hyperbolic distance |
 | $O(3,1)$, $SO^{+}(3,1)$, $O^{\uparrow}(3,1)$ | Lorentz group, restricted Lorentz group, sheet-preserving subgroup |

@@ -79,7 +79,7 @@ The symmetric plain sesqualgebra satisfies the **conjugate-commutative law** $\t
 | $(\lambda e_t)\star(\mu e_t) = \lambda\overline{\mu}e_t$ | the product on the centre, the field rule the law is read through |
 | $\{0, e_t\}$ | the idempotents, read in *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 | $\{0\}$ | the two-sided annihilator, read in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
-| $\mathrm{Vect}(\mathbb{B})$ | the index-three nilpotents, read in *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\mathbb{B}_{V}$ | the index-three nilpotents, read in *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 

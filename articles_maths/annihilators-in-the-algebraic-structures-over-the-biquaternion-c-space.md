@@ -19,7 +19,7 @@ and the **two-sided annihilator** is their intersection. Each is the kernel of o
 **Three words, each with its equation.**
 - The **cone** is the single complex equation $\mathrm{Norm}(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=0$, the vanishing of the norm $\langle\cdot\rangle_{\natural}$ of the element, which the owner articles write $\mathrm{Norm}(\tilde Q)$ or $C(\tilde Q)$. An element off the cone is invertible, $\tilde Q^{-1}=\tilde Q^{\natural}/\mathrm{Norm}(\tilde Q)$; a nonzero element on the cone is a zero divisor of the plain product.
 - A **complex plane** is a two-dimensional complex subspace, written $\mathbb{C}\{u,v\}$ with its two generators displayed; a **complex line** is written $\mathbb{C}u$. A plane is checked by multiplying its two generators into the product and finding zero.
-- The **centre** is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$.
+- The **centre** is $\mathbb{B}_{C}=\mathbb{C}e_t$ and the **vector subspace** is $\mathbb{B}_{V}=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$.
 
 **Four algebraic norms, and the one that decides.** The twelve products carry four **algebraic norms** and no more (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
 $$
@@ -210,7 +210,7 @@ The product is the antisymmetrisation of the plain sesquilinear product, the vec
 **The antisymmetrisation carries no algebraic norm, and the norm $\langle\tilde Q\rangle_{\natural}$ decides.**
 
 **The common annihilator is the set of the Hermitian conjugates of the $\tilde Q_2$ with $\tilde Q\tilde Q_2$ central.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is not zero, it is the line $\mathbb{C}\overline{\tilde Q}$.** **When the norm $\langle\tilde Q\rangle_{\natural}$ is zero at a nonzero element, it is the plane $A_{\text{plain}}(\tilde Q)^{*}$.** At $\tilde Q=0$ it is all of $\mathbb{B}$:
-$$ \boxed{\; A_\diamond(\tilde Q)=\{\tilde Q_2^{*}:\tilde Q\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\} \;}. $$
+$$ \boxed{\; A_\diamond(\tilde Q)=\{\tilde Q_2^{*}:\tilde Q\tilde Q_2\in\mathbb{B}_{C}\} \;}. $$
 At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the single solution line is $\mathbb{C}\overline{\tilde Q}$, the conjugate of the element, which at the real element $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ is the line of the element itself; at the element $\vec e_x+i\vec e_y$, of norm zero, the annihilator is the plane
 $$
 A_\diamond(e_t+2\vec e_x+3\vec e_y+4\vec e_z)=\mathbb{C}\{e_t+2\vec e_x+3\vec e_y+4\vec e_z\},\qquad A_\diamond(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x-i\vec e_y,\ e_t+i\vec e_z\}.
@@ -305,7 +305,7 @@ The annihilator of an element in a product is the set of partners that it kills 
 Five facts summarize the twelve structures.
 
 - The two one-sided annihilators are equal in ten of the twelve structures. They differ in exactly two, the plain product and the general quaternionic sesquilinear product, and only at an element of norm zero. There they are two distinct planes that share the line $\mathbb{C}\tilde Q^{\natural}$ in the plain product and the line $\mathbb{C}\tilde Q^{*}$ in the general quaternionic sesquilinear product. In the plain product at $\vec e_x+i\vec e_y$, for example, the left annihilator is $\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\}$ and the right annihilator is $\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t-i\vec e_z\}$.
-- In two structures some element kills every partner. The two are the antisymmetric plain algebra and the antisymmetric quaternionic sesqualgebra, and the elements that kill every partner are exactly the scalar ones, the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.
+- In two structures some element kills every partner. The two are the antisymmetric plain algebra and the antisymmetric quaternionic sesqualgebra, and the elements that kill every partner are exactly the scalar ones, the centre $\mathbb{B}_{C}=\mathbb{C}e_t$.
 - In two structures the annihilator of every nonzero element is a hyperplane of dimension three. In the symmetric quaternionic algebra it is the hyperplane $Q_tQ_{1t}+(\vec Q,\vec Q_1)=0$, and in the symmetric plain sesqualgebra it is the hyperplane $Q_t\overline{Q_{1t}}+(\vec Q,\overline{\vec Q_1})=0$.
 - In the two alternating structures every element lies in its own annihilator, because $\tilde Q\diamond\tilde Q=0$, and the two are the antisymmetric plain algebra and the antisymmetric quaternionic algebra. In the two conjugate-alternating structures, the antisymmetric plain sesqualgebra and the antisymmetric quaternionic sesqualgebra, the element lies in its own annihilator exactly when $\tilde Q\diamond\tilde Q$ vanishes, which is so at every element with real coefficients and can fail at an element with complex coefficients. In the other eight structures only some elements do.
 - In the four general products an element of nonzero norm $\langle\cdot\rangle_{\natural}$ is invertible and its annihilator is $\{0\}$. At an element of norm $\langle\cdot\rangle_{\natural}$ zero the four planes are one plane read through the two conjugations, $A_{\natural}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural})$, $A_{*}(\tilde Q)=A_{\text{plain}}(\tilde Q)^{*}$ and $A_{\natural*}(\tilde Q)=A_{\text{plain}}(\tilde Q^{\natural})^{*}$.
@@ -327,7 +327,7 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 | $\langle\tilde Q,\tilde Q_2\rangle_{\natural}=Q_tQ_{2t}+(\vec Q,\vec Q_2)$ | the general quaternionic bilinear form, the product of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ up to $e_t$ |
 | $\langle\tilde Q,\tilde Q_2\rangle_{*}=Q_t\overline{Q_{2t}}+(\vec Q,\overline{\vec Q_2})$ | the Hermitian form, the product of $\tilde Q_1\bullet_{*}\tilde Q_2$ up to $e_t$ |
 | $\tilde Q^{\perp}$ | the hyperplane $\{\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0\}$ or $\{\langle\tilde Q,\tilde Q_1\rangle_{*}=0\}$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, $\mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$, $\mathbb{B}_{V}$ | the centre and the vector subspace |
 | $\tilde Q_1\tilde Q_2,\dots,\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the twelve structures, read in the table of §*The Twelve Annihilators* |
 | ${}^{*}$, ${}^{\natural}$ | the Hermitian conjugation, $\overline{Q_{1t}}e_t-\sum_{\mu\in\{x,y,z\}}\overline{Q_{1\mu}}\vec e_\mu$, and the natural conjugation, $Q_{1t}e_t-\vec Q_1$ |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |

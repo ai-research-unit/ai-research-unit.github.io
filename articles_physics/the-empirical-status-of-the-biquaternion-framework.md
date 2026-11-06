@@ -14,7 +14,7 @@ The temptation this article exists to resist is the opposite of that conclusion:
 
 A candidate that traces to an undetermined parameter or an unverified claim is **not a signature**, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.
 
-Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
+Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the informational sector the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
 
 ## What Would Count as a Signature
 
@@ -28,7 +28,7 @@ A measurement $M$ is a **signature** of the framework relative to a standard the
 
 **(S4) Resolution.** An existing or feasible experimental bound on $O-O_S$ is tighter than the predicted $\delta$. A deviation smaller than the best bound is not a test; it is an aspiration.
 
-The four conditions cannot all be met, for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{M}_-\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{M}_+$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $\langle\cdot\rangle_{\natural}$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.
+The four conditions cannot all be met, for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{B}_{\Psi}$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $\langle\cdot\rangle_{\natural}$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.
 
 The consequence is a barrier that this article will meet repeatedly. Any quantity the framework fixes **by its algebra alone** is a quantity that the standard theory, using the same algebra, fixes identically. A signature therefore requires an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle. The series has supplied such inputs in the places where a transcription needed them (the Dirac mass term, the gauge fixing of the Maxwell field, the frame field of the curved-spacetime construction), but in no case has it supplied one whose value the algebra forces. That is the central structural reason the framework currently makes no distinguishing prediction.
 
@@ -59,7 +59,7 @@ It is worth naming what these results are checks *of*. They are checks that the 
 
 A reformulation and its target are not two theories that happen to agree; they are one theory written twice. When the dictionary is exact, agreement is a consistency condition on the dictionary, and it cannot discriminate between the framework and the standard formalism, because on the shared structure the two are the same.
 
-The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{M}_-$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{M}_-$ as *material* and $\mathbb{M}_+$ as *informational*, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational interpretation has read the evidence backwards.
+The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{B}_{\Phi}$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{B}_{\Phi}$ as *material* and $\mathbb{B}_{\Psi}$ as *informational*, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational interpretation has read the evidence backwards.
 
 Two examples show how narrowly the agreement should be read.
 
@@ -107,7 +107,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_t^2+\vec q^2$ and $q_t^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the mirror quadratic forms $-q_t^2+\vec q^2$ and $q_t^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 
@@ -119,7 +119,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework complexifies spacetime, so each point carries four real and four imaginary coordinates. A reader might expect the imaginary directions to be observable extra dimensions, with Kaluza–Klein-like consequences.
 
-**The framework-specific quantity.** None. The companion article on $\mathbb{M}_+$ states explicitly that the imaginary directions are **not** claimed to be extra space; the informational sector reinterprets the same four-dimensional arena, and no field is taken to propagate in the imaginary directions. No compactification radius is defined.
+**The framework-specific quantity.** None. The companion article on $\mathbb{B}_{\Psi}$ states explicitly that the imaginary directions are **not** claimed to be extra space; the informational sector reinterprets the same four-dimensional arena, and no field is taken to propagate in the imaginary directions. No compactification radius is defined.
 
 **Derived or posited.** The complexification is a property of the algebra; the *observability* of the extra directions is not claimed at all, not even as a hypothesis.
 
@@ -129,9 +129,9 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### A New Material–Informational Coupling
 
-**The candidate.** The framework's central interpretive claim is that $\mathbb{M}_+$ is a physical sector. A coupling between the sectors beyond the standard Lorentz action would be new physics: a fifth force, a new field, a mass mixing.
+**The candidate.** The framework's central interpretive claim is that $\mathbb{B}_{\Psi}$ is a physical sector. A coupling between the sectors beyond the standard Lorentz action would be new physics: a fifth force, a new field, a mass mixing.
 
-**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
+**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, the standard Lorentz action. The companion article on $\mathbb{B}_{\Psi}$ states that no dynamics for $\mathbb{B}_{\Psi}$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
 
 **Derived or posited.** Posited as a question. There is no field equation, no action, and no coupling constant.
 
@@ -167,11 +167,11 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### Unverified Framework Claims: the Entropy Functional
 
-**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{M}_+$, written $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and recorded in the companion article as *needing verification*.
+**The candidate.** The corpus floats a small number of framework-specific proposals that are not yet verified. The clearest is an entropy functional on the states of $\mathbb{B}_{\Psi}$, written $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and recorded in the companion article as *needing verification*.
 
 **The framework-specific quantity.** The functional $S(\tilde{Ϛ})$, if it were well defined.
 
-**Derived or posited.** Posited, and not yet verified: the biquaternion logarithm is multivalued, and no article shows that the expression is real, concave, or additive on the states of $\mathbb{M}_+$. Even if all of that were established, it is a transcription of the standard von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ and would agree with the standard theory rather than deviate from it.
+**Derived or posited.** Posited, and not yet verified: the biquaternion logarithm is multivalued, and no article shows that the expression is real, concave, or additive on the states of $\mathbb{B}_{\Psi}$. Even if all of that were established, it is a transcription of the standard von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ and would agree with the standard theory rather than deviate from it.
 
 **The existing bound.** None applies, because a transcribed entropy functional makes no new prediction.
 
@@ -181,7 +181,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** A programme outside the framework — the electro-gravimagnetic model of L. A. Alexeyeva, recorded in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* — adopts the framework's dual field strength $-i\tilde F$ and adds a hypothesis: magnetic charge density is gravitational mass density. It then claims three consequences: a solenoidal electric field from rotating mass (the Earth's electric axis), an orbital shift from an "electromass" force, and a comparison with the cogravity term used by Matos and Tajmar for the perihelion of Mercury.
 
-**The framework-specific quantity.** None of the framework's. The claims do not use $\mathbb{M}_+$, the rotor action, or any structure of $\mathbb{B}$ beyond the dual field strength $-i\tilde F$, which the framework itself reads as $-i$ times the field strength and not as an independent object. The distinctive input is the magnetic-charge–mass identification, which the algebra does not force.
+**The framework-specific quantity.** None of the framework's. The claims do not use $\mathbb{B}_{\Psi}$, the rotor action, or any structure of $\mathbb{B}$ beyond the dual field strength $-i\tilde F$, which the framework itself reads as $-i$ times the field strength and not as an independent object. The distinctive input is the magnetic-charge–mass identification, which the algebra does not force.
 
 **Derived or posited.** Posited, and by an external author, not by the framework. The identification is a hypothesis; no article of the corpus derives a magnetic mass, and the Dirac condition constrains only the product of the two charges.
 
@@ -232,7 +232,7 @@ The question would be settled affirmatively by a single candidate meeting all fo
 **The barrier restated.** To break empirical equivalence the framework must deploy a structure not already contained in the pair $(M_2(\mathbb{C}),\ \text{Minkowski space})$. Three routes are available, and the series has touched all three without deriving any of them:
 
 1. **A scale.** A fundamental length or energy, whether by deforming the algebra (a quantum group, a non-commutative spacetime) or by adding a dimensionful parameter. This would make the modified-dispersion candidate real, but the bound it must beat is severe: a linear dispersion scale must already lie above the Planck scale, and $v_\mathrm{GW}-v_\mathrm{EM}$ is constrained to a few parts in $10^{15}$ of $c$. **A concrete picture for this route**, which the corpus previously named without exemplifying: the non-commutative arena of *Maxwell's Theory on Non-Commutative Spaces and Quaternions* is a deformation of exactly this kind, and it shows what one delivers — the vacuum becomes a non-linear medium, the dual symmetry is broken, and the propagation velocity acquires a dependence on a background field, so that the speed of light is no longer universal. It also shows the price in its sharpest form: the deformation is **inserted**, not forced — the background $\mathring{g}_{\mu\nu}$ is put in by hand, is not a Lorentz scalar, and is precisely the kind of object that every Lorentz-violation bound constrains. Route 1 is therefore not empty; what it delivers is a deformation that tests the insertion and not the algebra, which is this section's general point in a worked case.
-2. **A dynamics.** An action coupling $\mathbb{M}_+$ and $\mathbb{M}_-$ beyond the Lorentz rotor. This is the most natural completion of the framework's own hypothesis, and it would make the material–informational candidate real. The task is to write the coupling, quantize it, and compute the leading observable.
+2. **A dynamics.** An action coupling $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ beyond the Lorentz rotor. This is the most natural completion of the framework's own hypothesis, and it would make the material–informational candidate real. The task is to write the coupling, quantize it, and compute the leading observable.
 3. **A selection principle.** A boundary or quantization condition, or a symmetry, that singles out one structure among the many the algebra permits. The curved-spacetime construction illustrates the need: the frame field is inserted by hand and every Lorentzian metric is representable, so the algebra excludes nothing and predicts nothing there.
 
 In each route the decisive question is whether the new input is **forced** by the algebra or **inserted**. If forced, the signature tests the framework; if inserted, it tests the insertion, and the framework's contribution is the language in which the insertion is written — a real contribution, but not an empirical signature of the algebra.
@@ -249,7 +249,7 @@ The interpretation that matters for this article is which interpretations are te
 
 ## Summary
 
-The biquaternion framework is a reformulation of standard physics, and on every domain the companion articles have developed it is currently empirically equivalent to what it reformulates: the single-qubit formalism, relativistic kinematics, Maxwell and Dirac theory, the hydrogen spectrum, the Casimir force, and the Unruh effect are all reproduced, not modified. This equivalence is structural. The framework's established content — the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the material sector $\mathbb{M}_-\cong\mathbb{R}^{3,1}$, the Hermitian sector $\mathbb{M}_+$ — is shared with the standard formalism, while its distinctive additions are interpretive labels that enter no formula producing a number. Any quantity fixed by the algebra alone is fixed identically by the standard theory, so a signature requires a non-algebraic input: a scale, a coupling, or a selection principle.
+The biquaternion framework is a reformulation of standard physics, and on every domain the companion articles have developed it is currently empirically equivalent to what it reformulates: the single-qubit formalism, relativistic kinematics, Maxwell and Dirac theory, the hydrogen spectrum, the Casimir force, and the Unruh effect are all reproduced, not modified. This equivalence is structural. The framework's established content — the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the material sector $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$, the Hermitian sector $\mathbb{B}_{\Psi}$ — is shared with the standard formalism, while its distinctive additions are interpretive labels that enter no formula producing a number. Any quantity fixed by the algebra alone is fixed identically by the standard theory, so a signature requires a non-algebraic input: a scale, a coupling, or a selection principle.
 
 The candidates examined here supply none. Modified dispersion has no scale in the framework to act on, and the bounds that would test it (a linear Lorentz-violation scale above the Planck scale; $v_\mathrm{GW}-v_\mathrm{EM}$ within a few parts in $10^{15}$ of $c$) constrain only proposals that supply a scale. The local complex structure is a re-reading of the standard medium speed $c=1/\sqrt{\epsilon\mu}$. Birefringence and a second light cone are foreclosed by the single norm. A material–informational coupling is unspecified — no field, no action, no constant — and is the framework's largest gap. Quaternionic quantum-statistical deviations are unavailable, because the algebra is complex and associative. Derived dimensionless relations, the one class that needs no new scale, are absent. And the celebrated reproductions — $g=2$, the hydrogen spectrum, the Casimir force, the Unruh temperature — are reproductions of standard results.
 
@@ -262,8 +262,8 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (single quadratic form on $\mathbb{B}$) |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light in the medium |
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |

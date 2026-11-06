@@ -12,7 +12,7 @@ the constitutive relations $\vec D = \epsilon\vec E$ and $\vec B = \mu\vec H$, s
 $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S;
 $$
-and the Hermitian form with its trace reading is that of *Norm and Pairing Conventions*, with the star inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. 
+and the Hermitian form with its trace reading is that of *Norm and Pairing Conventions*, with the star inert on $\mathbb{B}_{\Psi}$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v$ is reserved for particle and frame velocities. 
 
 **What is to be shown.** Five things. (1) The four algebraic plane-wave conditions the parent states, and the dispersion relation $k = \omega/c$, follow from the single biquaternionic equation $\tilde{\nabla}\tilde{F} = 0$. (2) The amplitude $\tilde{F}_0$ is a null field, hence a zero divisor, and it is annihilated by the (null) four-wavevector biquaternion. (3) The impedance relation and the balance of the two normalised halves of $\tilde{F}_0$. (4) The energy density, the energy flux, their time averages, and the energy–momentum biquaternion of the wave. (5) The dispersive case: phase velocity, group velocity, the spectral complex structure, and the vacuum limit. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
@@ -66,7 +66,7 @@ The bracket is $i\tilde P$, where
 $$
 \tilde P = \frac{i\omega}{c}\,e_t + \vec k
 $$
-is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k$ is real, so that $\tilde P \in \mathbb{M}_-$. The operator eigenvalue identity is therefore
+is exactly the **four-wavevector** of the material space, whose scalar part $i\omega/c$ is purely imaginary and whose vector part $\vec k$ is real, so that $\tilde P \in \mathbb{B}_{\Phi}$. The operator eigenvalue identity is therefore
 $$
 \tilde{\nabla} \;\longrightarrow\; i\tilde P = -\frac{\omega}{c}\,e_t + i\vec k,
 $$
@@ -164,7 +164,7 @@ by the dispersion relation of Problem 1. So $\tilde P$ is a nonzero null element
 $$
 \tilde P\tilde{F}_0 = 0 .
 $$
-The statement has a clean interpretation: the field-strength amplitude is annihilated by the four-wavevector of the wave. Both objects lie on the zero-divisor cone, and their product vanishes. This is the algebraic content of the parent's sentence that a free plane wave is a zero divisor, made explicit: neither the nullness of $\tilde P$ nor the nullness of $\tilde{F}_0$ alone is the whole statement — it is the annihilation $\tilde P\tilde{F}_0 = 0$ of one null element by another. Since $\tilde P \in \mathbb{M}_-$ and $\tilde{F}_0$ is a pure vector with one Hermitian and one anti-Hermitian half, the product mixes the sectors; its two parts vanishing separately is exactly the transversality condition and the two curl relations.
+The statement has a clean interpretation: the field-strength amplitude is annihilated by the four-wavevector of the wave. Both objects lie on the zero-divisor cone, and their product vanishes. This is the algebraic content of the parent's sentence that a free plane wave is a zero divisor, made explicit: neither the nullness of $\tilde P$ nor the nullness of $\tilde{F}_0$ alone is the whole statement — it is the annihilation $\tilde P\tilde{F}_0 = 0$ of one null element by another. Since $\tilde P \in \mathbb{B}_{\Phi}$ and $\tilde{F}_0$ is a pure vector with one Hermitian and one anti-Hermitian half, the product mixes the sectors; its two parts vanishing separately is exactly the transversality condition and the two curl relations.
 
 **Solution (c).** Superpose two counter-propagating waves of the same frequency in the same medium, choosing a linear polarisation:
 $$
@@ -228,7 +228,7 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \boxed{\;\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
 $$
-This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\theta_{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\theta_{\mathrm{pha}} = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P = \frac{i\omega}{c}e_t + \vec k$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P$. Since $e_t + i\vec u_k$ is constant,
 $$
 \tilde{\nabla}\tilde{W} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
 = W_{\mathrm{pha},\theta}\,\tilde P\left(e_t + i\vec u_k\right).
@@ -246,7 +246,7 @@ Finally, the biquaternion norm of $\tilde{W}$ is
 $$
 \langle\tilde{W}\rangle_{\natural} = W^2\left(1 + (i\vec u_k)^2\right) = W^2\left(1 - \vec u_k\cdot\vec u_k\right) = W^2\left(1 - 1\right) = 0 .
 $$
-So the energy–momentum biquaternion of the wave is itself a **zero divisor**, on the null cone of $\mathbb{M}_+$. The wave is null in the field strength and null in its energy–momentum simultaneously, and this is a consequence of the single null direction $\vec u_k$ that the plane wave carries.
+So the energy–momentum biquaternion of the wave is itself a **zero divisor**, on the null cone of $\mathbb{B}_{\Psi}$. The wave is null in the field strength and null in its energy–momentum simultaneously, and this is a consequence of the single null direction $\vec u_k$ that the plane wave carries.
 
 ## Problem 4: Dispersion and the Spectral Complex Structure
 
@@ -320,7 +320,7 @@ An exercise that only confirms its parent has not tested it. The computations ab
 
 **1. The conditions are asserted, not derived.** The parent writes that for a source-free plane wave "$\tilde{\nabla}\tilde{F} = 0$ is equivalent to the four algebraic conditions", and then lists them. The exercise has derived them (Problem 1), and the derivation shows that the four conditions are not four independent inputs: the scalar part of $\tilde P\tilde{F}_0 = 0$ and the vector part give two equations, from which the two curl relations follow, and the two transversality conditions then follow from the curl relations. The parent's phrasing suggests four parallel conditions; the algebra gives two, with the others as consequences. This is a difference of presentation, not of content, but it matters for a reader who wants to know what is assumed and what is derived.
 
-**2. The normalisation must be real, and the absorbing case is outside the framework as written.** Every result above uses $\sqrt{\epsilon(\omega)}$ and $\sqrt{\mu(\omega)}$ as real numbers, which holds in a transparent frequency window. Near a resonance $\epsilon$ and $\mu$ become complex, the electric and magnetic halves of $\tilde{F}$ are no longer purely imaginary and purely real, the split into $\mathbb{M}_+$ and $\mathbb{M}_-$ fails, and $\tilde{F}$ becomes fully complex. The parent states this boundary and declines to pursue the absorbing case; the exercise does not close it either. The consequence for this exercise is explicit: the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ of Problem 2, and with it the zero-divisor interpretation of a plane wave, are established for the *real* normalisation only. Whether they survive for complex $\sqrt{\epsilon},\sqrt{\mu}$, and which real slice is physical, are not determined here.
+**2. The normalisation must be real, and the absorbing case is outside the framework as written.** Every result above uses $\sqrt{\epsilon(\omega)}$ and $\sqrt{\mu(\omega)}$ as real numbers, which holds in a transparent frequency window. Near a resonance $\epsilon$ and $\mu$ become complex, the electric and magnetic halves of $\tilde{F}$ are no longer purely imaginary and purely real, the split into $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ fails, and $\tilde{F}$ becomes fully complex. The parent states this boundary and declines to pursue the absorbing case; the exercise does not close it either. The consequence for this exercise is explicit: the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ of Problem 2, and with it the zero-divisor interpretation of a plane wave, are established for the *real* normalisation only. Whether they survive for complex $\sqrt{\epsilon},\sqrt{\mu}$, and which real slice is physical, are not determined here.
 
 **3. The energy density is the non-dispersive one.** The parent's $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ is the non-dispersive expression, and the parent notes that the standard dispersive energy density is the Brillouin form $W = \frac{1}{2}\big(\frac{d(\omega\epsilon)}{d\omega}\vec E^2 + \frac{d(\omega\mu)}{d\omega}\vec H^2\big)$. Problems 3 and 4 therefore prove the conservation law $\tilde{\nabla}\tilde{W} = 0$ and the relation $|\langle\vec S\rangle| = c\langle W\rangle$ for the non-dispersive case, and the group-velocity statement of Problem 4(b) is a statement about the envelope of a superposition rather than about a modification of $\tilde{W}$. How the Brillouin density sits with $\tilde{W}$, and whether the dispersive correction also modifies the power–force density $\tilde{\mathcal F}$, are not worked out in the parent and are not worked out here.
 
@@ -334,7 +334,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 **2. Evanescent waves.** In total internal reflection the transmitted wavevector has a component normal to the interface that is imaginary, so $\vec k$ is no longer real. Repeat Problem 1 with one component of $\vec k$ imaginary, and determine which of the parent's statements — transversality, the curl relations, the dispersion relation, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ — survive. The decay of the amplitude in the transverse direction is not radiative transport, and the energy relation of Problem 3 is expected to change; state precisely how.
 
-**3. The absorbing case.** Let $\epsilon$ and $\mu$ be complex. Show explicitly that the electric and magnetic halves of $\tilde{F}$ leave $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, identify the obstacle to defining a real field strength, and determine what the framework's complexified extension requires to fix a physical real slice. This is the parent's declared boundary; it is not a computation with a settled answer in the framework as written.
+**3. The absorbing case.** Let $\epsilon$ and $\mu$ be complex. Show explicitly that the electric and magnetic halves of $\tilde{F}$ leave $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ respectively, identify the obstacle to defining a real field strength, and determine what the framework's complexified extension requires to fix a physical real slice. This is the parent's declared boundary; it is not a computation with a settled answer in the framework as written.
 
 **4. The Brillouin energy and the conservation law.** Replace the non-dispersive $W$ by the Brillouin expression and determine whether the biquaternionic energy–momentum and the source-free law $\tilde{\nabla}\tilde{W} = 0$ still hold for a monochromatic wave in a dispersive medium, and what additional term the dispersive correction forces. This is the natural continuation of gap 3.
 
@@ -346,7 +346,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P\tilde{F}_0 = 0$, where $\tilde P = \frac{i\omega}{c}e_t + \vec k \in \mathbb{M}_-$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P\tilde{F}_0 = 0$, where $\tilde P = \frac{i\omega}{c}e_t + \vec k \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad
@@ -365,8 +365,8 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_j \vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}\vec e_m$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$ | Temporal component of the gradient (medium) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
@@ -377,7 +377,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $Z = \sqrt{\mu/\epsilon}$, $Z_0$ | Wave impedance of the medium; in vacuum |
 | $n(\omega) = c_0/c(\omega)$ | Refractive index |
 | $\vec k, \omega, \vec u_k = \vec k/\lvert\vec k\rvert$ | Wavevector, angular frequency, unit wavevector |
-| $\tilde P = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{M}_-$ |
+| $\tilde P = \frac{i\omega}{c}e_t + \vec k$ | Four-wavevector biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{A} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |
 | $k = \omega/c$ | Wave number |
@@ -388,7 +388,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $I_1 = \vec E^2 - c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | Field invariants (see gap 4 on the medium setting) |
 | $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
-| $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
+| $\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Energy–momentum biquaternion, in $\mathbb{B}_{\Psi}$ |
 | $v_p = \omega/k = c(\omega)$, $v_g = c_0/(n + \omega\,dn/d\omega)$ | Phase and group velocities |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace formula |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

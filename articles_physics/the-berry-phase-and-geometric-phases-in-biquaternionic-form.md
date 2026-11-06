@@ -6,12 +6,12 @@ A quantum system whose Hamiltonian is varied slowly around a closed loop in a pa
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
-This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}_{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
+This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{\Psi}$ (Hermitian, the informational sector), $\mathbb{B}_{\Phi}$ (anti-Hermitian, the material sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}_{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
-2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
+1. **The Berry connection is not visible in the state of $\mathbb{B}_{\Psi}$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
 5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
@@ -20,7 +20,7 @@ The article's findings are stated here in advance, so that the reader can hold t
 
 ## The Adiabatic Setting and the Two Phases
 
-Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde R_\psi(R) \in \mathbb{M}_+$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The **adiabatic theorem** states that if the gap
+Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde R_\psi(R) \in \mathbb{B}_{\Psi}$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The **adiabatic theorem** states that if the gap
 
 $$
 \Delta(R) = \min_{m \neq n}\bigl|E_m(R) - E_n(R)\bigr|
@@ -53,7 +53,7 @@ an integer multiple of $2\pi$. The closed-loop phase is therefore well defined *
 For a two-level system in the biquaternion framework, the relevant Hamiltonian is
 
 $$
-\tilde R_\psi(\vec R) = \tfrac12\, i\,\vec R = \tfrac12\, i\,(R_1 \vec e_x + R_2 \vec e_y + R_3 \vec e_z) \in \mathbb{M}_+ ,
+\tilde R_\psi(\vec R) = \tfrac12\, i\,\vec R = \tfrac12\, i\,(R_1 \vec e_x + R_2 \vec e_y + R_3 \vec e_z) \in \mathbb{B}_{\Psi} ,
 \qquad \vec R \in \mathbb{R}^3 ,
 $$
 
@@ -75,7 +75,7 @@ $$
 \mathcal{P} = \{\vec u_R \in \mathbb{R}^3 : |\vec u_R| = 1\} = S^2 ,
 $$
 
-which is exactly the **Bloch sphere** of pure states of $\mathbb{M}_+$. This is a structural feature of the two-level framework: the parameter space of the Hamiltonians modulo their trivial parts is the space of idempotents of the informational sector, i.e. the state space of the qubit itself.
+which is exactly the **Bloch sphere** of pure states of $\mathbb{B}_{\Psi}$. This is a structural feature of the two-level framework: the parameter space of the Hamiltonians modulo their trivial parts is the space of idempotents of the informational sector, i.e. the state space of the qubit itself.
 
 ## The Eigenstate Is a Spinor, Not an Idempotent
 
@@ -134,7 +134,7 @@ $$
 \mathrm{Tr}\!\left(\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde{Ξ}_{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right) = 0 .
 $$
 
-The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.
+The first term is the conjugate of the second (complex conjugation in $\mathbb{B}_{C}$ reverses the order under the trace), so $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{B}_{\Phi}$ and not a biquaternion: it is a real number attached to each direction in parameter space.
 
 **Gauge transformation.** Let $\alpha(R)$ be a real function and let $\tilde{Ξ}_{\mathrm{sp}} \mapsto \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$. Because $\exp(i\alpha)$ is central and $*$-unitary, it multiplies $\tilde{Ξ}_{\mathrm{sp}}$ from the left without ordering ambiguity, and
 
@@ -157,10 +157,10 @@ This is the transformation law of an **abelian gauge connection**. It is the sam
 
 ### Why the Analogy Is Structural and Not Decorative
 
-The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
+The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
 
 $$
-\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}}) \subset \mathbb{C}_{\mathbb{B}} \subset \mathbb{B} ,
+\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
 $$
 
 and the same additive transformation law. In this precise sense the Berry connection is a gauge connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
@@ -168,13 +168,13 @@ and the same additive transformation law. In this precise sense the Berry connec
 | | Gauge-principle connection $\tilde{A}$ | Berry connection $\mathcal{A}$ |
 |---|---|---|
 | Base space | spacetime (the material sector) | parameter space $\mathcal{P} = S^2$ (the Bloch sphere) |
-| Kind of object | a biquaternion in $\mathbb{M}_-$ | a real scalar one-form on $\mathcal{P}$ |
-| Structure group | $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$ | $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$ |
+| Kind of object | a biquaternion in $\mathbb{B}_{\Phi}$ | a real scalar one-form on $\mathcal{P}$ |
+| Structure group | $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ | $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ |
 | Origin | localizing the central phase symmetry of a field equation | the rephasing freedom of an instantaneous eigenstate |
 | Transformation | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | $\mathcal{A}_2 = \mathcal{A} - d\alpha$ |
 | Curvature | $\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ |
 
-The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}$, does not live on spacetime, and is not $\mathbb{M}_-$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
+The two connections share their structure group, their transformation law, and their definition of curvature; they are not the same field. The Berry connection is not obtained from $\tilde{A}$, does not live on spacetime, and is not $\mathbb{B}_{\Phi}$-valued. It is literally the standard Berry connection, and its relation to the framework's electromagnetic connection is an analogy — an exact analogy of gauge-theoretic type, but an analogy nonetheless. The question is returned to in the section *What the Framework Supplements and What Is Only Analogy*.
 
 ### The Integer Ambiguity
 
@@ -373,7 +373,7 @@ So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists becaus
 
 Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = c r_t \pm |\vec r_\psi|$ of the Hamiltonian are distinct, the eigen-idempotents $\tilde\Pi_{1,2}(\vec u_\psi)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a $*$-unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
 
-**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $c r_t + |\vec r_\psi| = c r_t - |\vec r_\psi|$, i.e. $|\vec r_\psi| = 0$, i.e. $\vec r_\psi = 0$. So the only degenerate Hamiltonian in $\mathbb{M}_+$ is a multiple of the identity, $\tilde R_\psi = c r_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
+**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $c r_t + |\vec r_\psi| = c r_t - |\vec r_\psi|$, i.e. $|\vec r_\psi| = 0$, i.e. $\vec r_\psi = 0$. So the only degenerate Hamiltonian in $\mathbb{B}_{\Psi}$ is a multiple of the identity, $\tilde R_\psi = c r_t e_t$, for which the two levels coincide and the eigen-idempotents are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no level of multiplicity greater than one** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
 
 This is a case where the framework's smallness is informative rather than limiting: the reason the Berry phase is abelian here is not a choice of convenience but a fact about a two-level algebra, and the reason it cannot be made non-abelian is the same fact.
 
@@ -389,13 +389,13 @@ $$
 
 and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle/\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ξ}_{\mathrm{sp}}\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
 
-**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
+**The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
 
 What the framework does supply, beyond the rewriting, is a set of structural placements.
 
-- **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{M}_+$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
+- **The parameter space is the state space.** For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{B}_{\Psi}$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
-- **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
+- **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
 - **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}_{\mathrm{sp}}|d\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i c r'_t$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
@@ -438,11 +438,11 @@ $$
 \mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$
 
-The structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
+The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
 
 On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta_{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta_{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.
 
-The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{M}_+$, that the connection and the Born rule come from one plain form, read as the trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.
+The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{B}_{\Psi}$, that the connection and the Born rule come from one plain form, read as the trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.
 
 ## Summary of Notation
 
@@ -451,9 +451,9 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, central; complex structure of the state module |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$ its $*$-unitary part |
-| $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; $\mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C})$ its $*$-unitary part |
+| $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ | Hermitian Hamiltonian (observable) |
 | $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Idempotent (pure state / eigen-idempotent) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace formula (Born rule and the pairing used for the connection) |
@@ -461,7 +461,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\tilde{Ξ}_{\mathrm{sp},\pm}$ | Normalized instantaneous eigen-spinor |
 | $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
 | $\vec R$, $R = \lvert\vec R\rvert$, $\vec u_R$ | Parameter vector, its magnitude, its direction; $\vec u_R \in S^2$ |
-| $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{M}_+$ |
+| $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{B}_{\Psi}$ |
 | $\theta, \theta_{\mathrm{azm}}$ | Polar and azimuthal angles on the Bloch sphere |
 | $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}})/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ |
 | $\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha$ | Gauge transformation of the Berry connection |

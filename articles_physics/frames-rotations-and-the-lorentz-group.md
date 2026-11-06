@@ -40,13 +40,13 @@ Sp(1)=S^{3}\cong SU(2),
 \qquad
 Sp(1)/\{\pm e_t\}\cong SO(3),
 $$
-the double cover of the spatial rotations. The full unit group $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ has real dimension eight; the norm-one slice has dimension six; the quaternion layer $\mathbb{H}_{\mathbb{B}}$ has real dimension four.
+the double cover of the spatial rotations. The full unit group $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ has real dimension eight; the norm-one slice has dimension six; the quaternion layer $\mathbb{B}_{H}$ has real dimension four.
 
-**The Lorentz group is a quotient, not a subgroup.** A Lorentz transformation has six real parameters, and the quaternion layer has only four real dimensions; there is no smooth embedding of $SO^{+}(1,3)$ into $\mathbb{H}_{\mathbb{B}}$. The group manifold does not fit in the layer, while its action on the four-dimensional material sector does. The algebra contains the double cover $\mathbb{B}^{\times}_{1}$, and the Lorentz group is the quotient by the central sign. The group itself sits in the projective space, where the classes of the units form the complement of the null quadric and are $PGL_2(\mathbb{C})\cong SO^{+}(1,3)$.
+**The Lorentz group is a quotient, not a subgroup.** A Lorentz transformation has six real parameters, and the quaternion layer has only four real dimensions; there is no smooth embedding of $SO^{+}(1,3)$ into $\mathbb{B}_{H}$. The group manifold does not fit in the layer, while its action on the four-dimensional material sector does. The algebra contains the double cover $\mathbb{B}^{\times}_{1}$, and the Lorentz group is the quotient by the central sign. The group itself sits in the projective space, where the classes of the units form the complement of the null quadric and are $PGL_2(\mathbb{C})\cong SO^{+}(1,3)$.
 
 **The algebra carries the spin frame.** A frame of the material sector is a norm-one unit up to sign, and the double cover is the spin frame. The sign is the spinor sign: a frame and its negative are the same frame, while a spinor and its negative are not the same spinor. Interpreted physically, the Lorentz group is the group of frames, and the norm-one group is its spin cover; the algebra carries the cover, not the quotient.
 
-**The boundary of the interpretation.** The frame is an algebraic frame, not a laboratory. The identification uses the action on $\mathbb{M}_{-}$ and the norm; it does not fix a reference frame and it does not supply a metric beyond the norm. The projective description is a description of the group, not of a physical space of states.
+**The boundary of the interpretation.** The frame is an algebraic frame, not a laboratory. The identification uses the action on $\mathbb{B}_{\Phi}$ and the norm; it does not fix a reference frame and it does not supply a metric beyond the norm. The projective description is a description of the group, not of a physical space of states.
 
 ### The Automorphism Group
 
@@ -62,7 +62,7 @@ the second component consisting of the conjugate-linear automorphisms.
 
 **The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the bilinear sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
 
-**The boundary of the interpretation.** The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{M}_{-}$, not the inner automorphism, and the article does not identify the two.
+**The boundary of the interpretation.** The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{B}_{\Phi}$, not the inner automorphism, and the article does not identify the two.
 
 ## The Sandwich and the Change of Frame
 
@@ -82,7 +82,7 @@ $$
 \qquad
 \mathrm{H}_{A}=|A|^{2}\mathrm{id}\ \text{for central }A,
 $$
-it preserves the two sectors $\mathbb{M}_{\pm}$, and it scales the norm by
+it preserves the two sectors $\mathbb{B}_{\Psi,\Phi}$, and it scales the norm by
 $$
 \boxed{\;\langle\mathrm{H}_{\tilde Q}(\tilde Q_3)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde Q_3\rangle_{\natural}\;}.
 $$
@@ -100,11 +100,11 @@ On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the
 
 **The interval is the frame-independent object.** On the norm-one slice the sandwich preserves $\langle\tilde Q\rangle_{\natural}$, and off the slice it multiplies $\langle\tilde Q\rangle_{\natural}$ by the positive factor $|\langle\tilde Q\rangle_{\natural}|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Interpreted physically, the interval is objective and the scale is a similarity, not a change of causal type.
 
-**The two sectors are preserved.** The sandwich preserves $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ for every unit, because the sectors are the eigenspaces of the dagger. Interpreted physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.
+**The two sectors are preserved.** The sandwich preserves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ for every unit, because the sectors are the eigenspaces of the dagger. Interpreted physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.
 
 **The central phase is not a frame.** The kernel of the sandwich on the whole algebra is the central circle, so an overall phase acts trivially. Interpreted physically, a global phase is a redundancy of the action, not a change of frame; two units that differ by a phase give the same transformation of the algebra.
 
-**The boundary of the interpretations.** The sandwich preserves $\mathbb{M}_{+}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a $*$-unitary representation of the Lorentz group on a finite-dimensional state space.
+**The boundary of the interpretations.** The sandwich preserves $\mathbb{B}_{\Psi}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a $*$-unitary representation of the Lorentz group on a finite-dimensional state space.
 
 ## Rotations
 
@@ -158,7 +158,7 @@ The boost moves the time axis. On the algebra unit,
 $$
 \mathrm{H}_{\tilde U}(e_t)=\tilde U^{2}=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u,
 $$
-which is Hermitian and lies in $\mathbb{M}_{+}$; on the time axis,
+which is Hermitian and lies in $\mathbb{B}_{\Psi}$; on the time axis,
 $$
 \mathrm{H}_{\tilde U}(ie_t)=i\tilde U^{2}=i\cosh\theta_{\mathrm{rpd}}\,e_t-\sinh\theta_{\mathrm{rpd}}\,\vec u,
 $$
@@ -177,7 +177,7 @@ for $\theta_{\mathrm{rpd}}\neq0$, because the missing factor is $\tilde Q^{*}\ti
 
 **A boost is a motion, not an automorphism.** The boost preserves the interval and the two sectors, but it does not preserve the product, the centre or the vector subspace. Interpreted physically, a boost is a motion of the form which is not a symmetry of the algebraic structure; a rotation is both, and a boost is only the former. The time axis and the spatial axis are mixed, and the mixing is exactly the failure of multiplicativity.
 
-**The time axis is frame-dependent.** The image of $ie_t$ is a four-vector with a spatial part $\sinh\theta_{\mathrm{rpd}}$, and the image of $e_t$ leaves the centre for $\mathbb{M}_{+}$. Interpreted physically, the rest frame's time axis is not invariant; a boost carries it to the four-velocity of the moving frame, and the simultaneity plane tilts. The interval is what survives; the product of two events is not a frame-independent object.
+**The time axis is frame-dependent.** The image of $ie_t$ is a four-vector with a spatial part $\sinh\theta_{\mathrm{rpd}}$, and the image of $e_t$ leaves the centre for $\mathbb{B}_{\Psi}$. Interpreted physically, the rest frame's time axis is not invariant; a boost carries it to the four-velocity of the moving frame, and the simultaneity plane tilts. The interval is what survives; the product of two events is not a frame-independent object.
 
 **Two boosts are not a boost.** The product of two non-collinear boost rotors is a rotor whose polar decomposition has a rotation factor, the Wigner rotation. Interpreted physically, two successive non-collinear boosts are a boost followed by a rotation, and the rotation is the Thomas precession. The set of boosts is not a subgroup; the group is generated by the boosts and the rotations together.
 
@@ -218,7 +218,7 @@ For a real unit vector $v\in\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, so that $
 $$
 \boxed{\;\rho_v(\tilde Q_3)=v\,\tilde Q_3\,v^{*}\;}.
 $$
-The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\mathrm{Sd}_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\mathrm{Sd}_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathbb{B}_{V}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$
 v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
 $$
@@ -254,7 +254,7 @@ A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halve
 | $Sp(1)=S^{3}\cong SU(2)$ | unit quaternions; double cover of $SO(3)$ |
 | $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | bilinear sandwich; the change of frame |
 | $\mathrm{U}(1)e_t$ | kernel of the sandwich on the algebra |
-| $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
+| $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{B}_{\Phi}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
 | $\tilde U=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$ | boost rotor; Hermitian and norm-one |
 | $\rho_v(\tilde Q_3)=v\tilde Q_3v^{*}$ | reflection in $v^{\perp}$; $v$ real spatial unit vector |

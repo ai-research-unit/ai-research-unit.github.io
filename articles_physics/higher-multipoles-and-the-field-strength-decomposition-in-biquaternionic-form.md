@@ -8,7 +8,7 @@ The result is a clean division of labour and a sharp compatibility statement, an
 
 - The **multipole series** is a decomposition of the **function space**. The field at each point is a biquaternion value, but the order $l$ is a property of the field's angular map, and the tower lives in the infinite-dimensional space of functions on the sphere, $L^2(S^2) = \bigoplus_{l\ge0}D^{(l)}$. The value algebra is finite, $\mathbb{B} = D^{(0)}\oplus D^{(1)}$, and it carries the monopole and the dipole and no higher order.
 
-- The **Hermitian decomposition** of $\tilde{F}$ separates the electric and magnetic **fields**: the electric part is the Hermitian summand $\mathbb{M}_+$ and the magnetic part the anti-Hermitian summand $\mathbb{M}_-$. It is a decomposition of the field components, and it is not the same distinction as the electric and magnetic **multipole types**. For a static source the two agree — a static charge distribution gives a Hermitian field strength and a stationary current an anti-Hermitian one — but a radiating multipole of either type has both a Hermitian and an anti-Hermitian part.
+- The **Hermitian decomposition** of $\tilde{F}$ separates the electric and magnetic **fields**: the electric part is the Hermitian summand $\mathbb{B}_{\Psi}$ and the magnetic part the anti-Hermitian summand $\mathbb{B}_{\Phi}$. It is a decomposition of the field components, and it is not the same distinction as the electric and magnetic **multipole types**. For a static source the two agree — a static charge distribution gives a Hermitian field strength and a stationary current an anti-Hermitian one — but a radiating multipole of either type has both a Hermitian and an anti-Hermitian part.
 
 - The **self-dual decomposition** is the split into the two chiralities and is the Lorentz-covariant one. For radiation the two halves are the two helicities of the field, and a circularly polarised multipole of definite helicity lies entirely in one half. The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicities; since a boost does not preserve parity, it mixes the two types while it preserves the chiralities.
 
@@ -107,14 +107,14 @@ $$
 \vec H = \frac{\vec B}{\mu} ,
 $$
 
-with vanishing scalar part. It is an element of the vector part of $\mathbb{B}$, which is three complex dimensions, six real dimensions, and it carries the six real field components of $(\vec E,\vec B)$. Its two pieces are the electric piece, which is imaginary and lies in the Hermitian sector $\mathbb{M}_+$, and the magnetic piece, which is real and lies in the anti-Hermitian sector $\mathbb{M}_-$:
+with vanishing scalar part. It is an element of the vector part of $\mathbb{B}$, which is three complex dimensions, six real dimensions, and it carries the six real field components of $(\vec E,\vec B)$. Its two pieces are the electric piece, which is imaginary and lies in the Hermitian sector $\mathbb{B}_{\Psi}$, and the magnetic piece, which is real and lies in the anti-Hermitian sector $\mathbb{B}_{\Phi}$:
 
 $$
-i\sqrt{\epsilon}\,\vec E \in \mathbb{M}_+ ,
+i\sqrt{\epsilon}\,\vec E \in \mathbb{B}_{\Psi} ,
 \qquad
--\sqrt{\mu}\,\vec H \in \mathbb{M}_- ,
+-\sqrt{\mu}\,\vec H \in \mathbb{B}_{\Phi} ,
 \qquad
-\mathbb{M}_+ \cap \mathbb{M}_- = \{0\} .
+\mathbb{B}_{\Psi} \cap \mathbb{B}_{\Phi} = \{0\} .
 $$
 
 This is the first of the two decompositions, and it is the algebraic form of the distinction between the two fields.
@@ -171,7 +171,7 @@ so that the self-dual half is the field strength itself and the anti-self-dual h
 
 The two decompositions are different, and it is their difference that organises the multipole series.
 
-- The **Hermitian** split is a decomposition over the **real** field space: it separates the two real three-dimensional subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, it is rotation-covariant, and it is not boost-covariant.
+- The **Hermitian** split is a decomposition over the **real** field space: it separates the two real three-dimensional subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, it is rotation-covariant, and it is not boost-covariant.
 - The **self-dual** split is a decomposition over the **complexified** field space: it separates the two complex three-dimensional eigenspaces of $\star$, it is boost-covariant (in fact Lorentz-covariant), and it is not the same splitting as the first.
 
 The two ways of cutting the same six dimensions are related by the definition $\vec N = \vec E + ic\vec B$, so that the electric and magnetic fields are recovered as
@@ -199,7 +199,7 @@ and the biquaternion norm of the field-strength biquaternion vanishes exactly wh
 The multipole order $l$ lives in the function space, and this is the first thing to keep straight. The field is a biquaternion-valued function, $\tilde{F}:\mathbb{R}^{3,1}\to\mathbb{B}$, and its angular content is a decomposition of the space of functions on the sphere, $L^2(S^2) = \bigoplus_l D^{(l)}$. The value algebra is much smaller:
 
 $$
-\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = D^{(0)}\oplus D^{(1)} ,
+\mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V} = D^{(0)}\oplus D^{(1)} ,
 \qquad
 \dim_{\mathbb{C}}\mathbb{B} = 4 .
 $$
@@ -254,7 +254,7 @@ and the field is purely self-dual; the opposite helicity gives $\vec N = 0$ and 
 
 ### How the Two Halves Transform
 
-Under a Lorentz boost with biquaternion $\tilde{U}\in\mathbb{M}_+$ the field strength transforms in the bivector representation,
+Under a Lorentz boost with biquaternion $\tilde{U}\in\mathbb{B}_{\Psi}$ the field strength transforms in the bivector representation,
 
 $$
 \tilde{F}_2 = \tilde{U}^{\natural}\,\tilde{F}\,\tilde{U} ,
@@ -280,7 +280,7 @@ $$
 \vec B_2 = \gamma\left(\vec B - \frac{1}{c^2}\,\vec v\times\vec E\right) - \frac{\gamma-1}{v^2}\left(\vec v\cdot\vec B\right)\vec v ,
 $$
 
-with $\gamma = (1-v^2/c^2)^{-1/2}$, so a purely electric field acquires a magnetic part and vice versa. This is the algebraic content of the statement that the two summands $\mathbb{M}_+$ and $\mathbb{M}_-$ are not separately Lorentz-covariant.
+with $\gamma = (1-v^2/c^2)^{-1/2}$, so a purely electric field acquires a magnetic part and vice versa. This is the algebraic content of the statement that the two summands $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are not separately Lorentz-covariant.
 
 ### The Mixing of the Electric and Magnetic Multiplets
 
@@ -325,11 +325,11 @@ Both are standard, and they answer different questions. The first says that the 
 
 ### $l = 0$: The Monopole Is Purely Electric
 
-The monopole is the total charge, and it has no magnetic partner at any order. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
+The monopole is the total charge, and it has no magnetic partner at any order. Its field is the spherically symmetric Coulomb field, it radiates nothing by charge conservation, and in the algebra it is the electric piece $i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi}$ with no anti-Hermitian part. The self-dual decomposition assigns it a Riemann–Silberstein vector that is purely radial and, being non-radiating, not null. The monopole is the one multipole whose Hermitian half is the whole field.
 
 ### $l = 1$: The Electric and Magnetic Dipoles
 
-The dipole is the first order with two multiplet types. In a static or stationary setting the electric dipole field is purely Hermitian and the magnetic dipole field purely anti-Hermitian, so the two types sit in the two sectors $\mathbb{M}_\pm$; in radiation each type has both parts. In the radiation vector they are the two lowest contributions,
+The dipole is the first order with two multiplet types. In a static or stationary setting the electric dipole field is purely Hermitian and the magnetic dipole field purely anti-Hermitian, so the two types sit in the two sectors $\mathbb{B}_{\Psi,\Phi}$; in radiation each type has both parts. In the radiation vector they are the two lowest contributions,
 
 $$
 \vec F_{E1} = -i\omega\,\vec p ,
@@ -359,7 +359,7 @@ The pattern of the lowest orders is the pattern for all of them.
 
 - At each order $l\ge1$ there is an electric multiplet $E_l$ and a magnetic multiplet $M_l$, each of complex dimension $2l+1$, of opposite parity.
 - The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicity amplitudes; a boost rotates the two types into one another and preserves the helicities. Their covariant packaging is the covariant multipole tensor, and the self-dual field strength is the corresponding covariant object on the field side. The order $l$ itself is a rest-frame label, not a Lorentz invariant.
-- In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{M}_\pm$; in radiation each type has both parts.
+- In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{B}_{\Psi,\Phi}$; in radiation each type has both parts.
 - In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$; a multiplet of order $l$ radiates with power $\propto\omega^{2l+2}$.
 - For radiation the field is null, $\langle\tilde{F}\rangle_{\natural} = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
 
@@ -372,9 +372,9 @@ The multipole series of a bounded source is the decomposition of the field's ang
 The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ admits two decompositions of its six-real-dimensional vector part. The **Hermitian decomposition** separates the electric and magnetic fields,
 
 $$
-\boxed{\;\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+ ,
+\boxed{\;\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi} ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_-\;}
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{B}_{\Phi}\;}
 $$
 
 and is rotation-covariant but not boost-covariant. It coincides with the electric/magnetic multipole distinction only in the static limit: a static charge distribution gives a purely Hermitian field strength and a stationary current a purely anti-Hermitian one, while a radiating multipole of either type has both parts. The **self-dual decomposition** uses the Hodge dual $\star:(\vec E,\vec B)\mapsto(c\vec B,-\vec E/c)$, $\star^2 = -1$, and the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$ with $\star\vec N = -i\vec N$; its two halves are $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ and $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ with $\vec N^* = \vec E-ic\vec B$. It is Lorentz-covariant, and for radiation its two halves are the two helicities, so that a circularly polarised multipole of definite helicity lies entirely in one half.
@@ -390,8 +390,8 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\dim_{\mathbb{C}} = 4$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Centre and complex vector part of $\mathbb{B}$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
@@ -411,7 +411,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $k = \omega/c$ | Wavenumber |
 | $\vec p$, $\vec m$ | Electric and magnetic dipole moments |
 | $\mathcal{Q}_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |
-| $\tilde{U}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
+| $\tilde{U}\in\mathbb{B}_{\Psi}$ | Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
 | $\Lambda\in SO(3,\mathbb{C})$ | Complex rotation of the self-dual vector, $\vec N_2 = \Lambda\vec N$ |
 
 ## Further Reading

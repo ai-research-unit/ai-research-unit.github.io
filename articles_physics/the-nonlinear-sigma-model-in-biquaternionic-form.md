@@ -105,13 +105,13 @@ and that the nonlinear Lagrangian is the biquaternion norm of its derivative, up
 The framework's non-abelian compact group is the set of unit real quaternions
 
 $$
-\mathbb{H}^1_{\mathbb{B}} = \left\{\tilde U \in \mathbb{H}_{\mathbb{B}} \;:\; \tilde U\tilde U^{\natural} = e_t\right\},
+\mathbb{H}^1_{\mathbb{B}} = \left\{\tilde U \in \mathbb{B}_{H} \;:\; \tilde U\tilde U^{\natural} = e_t\right\},
 $$
 
-which is $SU(2)$, and whose manifold is the unit sphere $\mathbb{S}^3\subset\mathbb{H}_{\mathbb{B}}$. It is the framework's natural **group manifold**, and its Lie algebra is the span of the three anti-Hermitian generators $e_a$, so that the Goldstone field of the non-abelian case is
+which is $SU(2)$, and whose manifold is the unit sphere $\mathbb{S}^3\subset\mathbb{B}_{H}$. It is the framework's natural **group manifold**, and its Lie algebra is the span of the three anti-Hermitian generators $e_a$, so that the Goldstone field of the non-abelian case is
 
 $$
-\vec\pi = \sum_a\pi_a e_a \in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+\vec\pi = \sum_a\pi_a e_a \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 \qquad
 \tilde U = \exp\!\left(\frac{\vec\pi}{f}\right),
 \qquad
@@ -236,7 +236,7 @@ The other target the framework supplies is the centre.
 The central phase group is $\mathrm{U}(1) = \{\exp(i\alpha)e_t\}$, and its group-valued field is the exponential of a central Goldstone field,
 
 $$
-\tilde U = \exp\!\left(\frac{i\,\pi}{f}\right)e_t \in \mathbb{C}_{\mathbb{B}} ,
+\tilde U = \exp\!\left(\frac{i\,\pi}{f}\right)e_t \in \mathbb{B}_{C} ,
 \qquad
 \tilde U\tilde U^{\natural} = e_t ,
 $$
@@ -296,7 +296,7 @@ where $\Lambda$ is the scale of the sector that was integrated out — in the fr
 
 ## Summary
 
-The nonlinear sigma model is the low-energy theory of a spontaneously broken continuous symmetry, with fields valued in a coset $G/H$, a Lagrangian built from the invariant metric of the target, and derivative couplings enforced by the non-linear realisation. The framework's algebra supplies two compact targets: the central phase $\mathrm{U}(1)\cong\mathbb{S}^1$ and the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)\cong\mathbb{S}^3$, the non-abelian one carrying the Goldstone field $\vec\pi = \sum_a\pi_a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$ and the group-valued field $\tilde U = \exp(\vec\pi/f)$.
+The nonlinear sigma model is the low-energy theory of a spontaneously broken continuous symmetry, with fields valued in a coset $G/H$, a Lagrangian built from the invariant metric of the target, and derivative couplings enforced by the non-linear realisation. The framework's algebra supplies two compact targets: the central phase $\mathrm{U}(1)\cong\mathbb{S}^1$ and the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)\cong\mathbb{S}^3$, the non-abelian one carrying the Goldstone field $\vec\pi = \sum_a\pi_a e_a\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ and the group-valued field $\tilde U = \exp(\vec\pi/f)$.
 
 The two-derivative Lagrangian is the biquaternion norm of the derivative,
 
@@ -322,11 +322,11 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\nu \vec e_\mu = \sum_\lambda\varepsilon_{\nu\mu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; the abelian target's group |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; the abelian target's group |
+| $\mathbb{B}_{H}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde U(\tilde{Q}_1)$ | Group-valued sigma-model field |
-| $\vec\pi = \sum_a\pi_a e_a \in\mathfrak{su}(2)\subset\mathbb{M}_-$ | Goldstone field (non-abelian) |
+| $\vec\pi = \sum_a\pi_a e_a \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Goldstone field (non-abelian) |
 | $\tilde U = \exp(\vec\pi/f)$ | Non-linear field; $\tilde U\tilde U^{\natural} = e_t$ |
 | $f$ | Decay constant of the broken symmetry |
 | $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$, $V = \frac{\lambda}{4}(\rho-v_0^2)^2$ | Linear-model invariant and potential |

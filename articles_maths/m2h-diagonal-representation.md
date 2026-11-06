@@ -358,8 +358,8 @@ whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}
 |---|---|---|---|---|
 | split-complex $\mathbb{C}_{\mathrm{spl}}$ | $\tilde Q^{\natural}=\tilde Q$, vector part zero | $\tilde Q_{+}=\tilde Q_{-}=Q_{t}\in\mathbb{C}_{\mathrm{spl}}$ | $\mathrm{diag}(Q_{t},Q_{t})$ | $2$ |
 | quaternion $\mathbb{H}$ | $\bar{\tilde Q}=\tilde Q$, coefficients real | $\tilde Q_{+}=\tilde Q_{-}=q\in\mathbb{H}$ | $\mathrm{diag}(q,q)$ | $4$ |
-| Hermitian $\mathbb{M}_{+}$ | $\tilde Q^{*}=\tilde Q$ | $\tilde Q_{-}=\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,u^{\natural})$ | $4$ |
-| anti-Hermitian $\mathbb{M}_{-}$ | $\tilde Q^{\flat}=\tilde Q$ | $\tilde Q_{-}=-\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,-u^{\natural})$ | $4$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $\tilde Q^{*}=\tilde Q$ | $\tilde Q_{-}=\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,u^{\natural})$ | $4$ |
+| anti-Hermitian $\mathbb{B}_{\Phi}$ | $\tilde Q^{\flat}=\tilde Q$ | $\tilde Q_{-}=-\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,-u^{\natural})$ | $4$ |
 | the centre | $[\tilde Q,\cdot]=0$ | both blocks central, $\tilde Q_{\pm}\in\mathbb{R}$ | $\mathrm{diag}(a,b)$, $a,b\in\mathbb{R}$ | $2$ |
 | the zero divisors | one block zero | $\tilde Q_{+}=0$ or $\tilde Q_{-}=0$ | rank $4$ | $4$, two components |
 | the units | both blocks nonzero | $\tilde Q_{\pm}\neq0$ | rank $8$ | open, dense |
@@ -368,7 +368,7 @@ whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}
 
 **The three decompositions.** The algebra splits in three canonical ways, and the model sees two of them as the same decomposition:
 $$
-\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}=\mathbb{M}_{+}\oplus\mathbb{M}_{-},
+\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 the first into the quaternion subspace and its translate, the second into the two ideals, the third into the Hermitian and the anti-Hermitian subspaces. The first and the third are decompositions into two subspaces with no algebra structure preserved, the second is a decomposition into two ideals and is the only one that is an isomorphism of algebras. The model diagonalises with respect to the second and reads the first and the third as the equal-blocks and conjugate-blocks conditions.
 
@@ -402,7 +402,7 @@ the first into the quaternion subspace and its translate, the second into the tw
 | $N(u)=uu^{\natural}$ | the quaternion norm, a nonnegative real | this article |
 | $\langle\tilde Q\rangle_{\natural}$ | the split-biquaternion norm, anisotropic, split-complex valued | *Split-Biquaternion Norm and Invertibility* |
 | ${}^{\natural},{}^{-},{}^{*},{}^{\flat}$ | the quaternion, split-complex, Hermitian and anti-Hermitian conjugations | *Split-Biquaternion Involution Lattice* |
-| $\mathbb{M}_{+},\mathbb{M}_{-}$ | the Hermitian and the anti-Hermitian subspaces | *Split-Biquaternion Algebra* |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the Hermitian and the anti-Hermitian subspaces | *Split-Biquaternion Algebra* |
 | $P$ | the passage matrix $\begin{pmatrix}1&1\\ 1&-1\end{pmatrix}$, $P^{2}=2\,\mathrm I_{2}$ | this article |
 
 ## Further Reading

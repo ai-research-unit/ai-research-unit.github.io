@@ -12,9 +12,9 @@ which likewise depends on the path and the field but not on the speed at which t
 
 This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effect is standard and is reproduced exactly. What the framework contributes is the placement of the AC phase within the same algebraic structure as the geometric phases of spin:
 
-1. **The AC phase is a holonomy of the spinor.** It is the integral of a spin-space connection whose values are Hermitian elements of $\mathbb{M}_+$ built from the electric field and the spin operator. It is therefore the same kind of object as the Berry and Aharonov–Anandan phases of non-relativistic spin.
+1. **The AC phase is a holonomy of the spinor.** It is the integral of a spin-space connection whose values are Hermitian elements of $\mathbb{B}_{\Psi}$ built from the electric field and the spin operator. It is therefore the same kind of object as the Berry and Aharonov–Anandan phases of non-relativistic spin.
 2. **The coupling is a rest-frame magnetic field.** A magnetic dipole moving through an electric field sees, in its rest frame, the effective magnetic field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$; the AC phase is the first-order term in $v/c$ of the Zeeman coupling to that field. The derivation uses only the first-order rest-frame transformation, which is the non-relativistic approximation; the exact treatment belongs to the relativistic series.
-3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
+3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{B}_{H}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
 4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
 
@@ -82,13 +82,13 @@ $$
 \boxed{\;\mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r\;},
 $$
 
-a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
+a one-form with values in the Hermitian subspace $\mathbb{B}_{\Psi}$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
 
 $$
 \theta_{\mathrm{pha},AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
 $$
 
-evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}_{AC}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\mathcal{A}_{AC}^{*})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC}^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\mathcal{A}_{AC}\ge0$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
+evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}_{AC}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\mathcal{A}_{AC}^{*})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC}^{*})$. The star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\mathcal{A}_{AC}\ge0$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
 
 ### The Adiabatic Limit and the Solid Angle
 
@@ -135,11 +135,11 @@ $$
 = \mathcal{P}\exp\!\left(\frac{i\gamma}{2c^2}\oint \vec E\times i\mathbf e\cdot d\vec r\right),
 $$
 
-where the factor $i$ makes the exponent anti-Hermitian: the connection $\mathcal{A}_{AC}$ is $\mathbb{M}_+$-valued, and it is $i\mathcal{A}_{AC}$ that generates a $*$-unitary transport, exactly as $-i H/\hbar$ does for the Schrödinger evolution. The holonomy is therefore a genuine $*$-unitary, and the cycle-averaged phase for each eigen-component is the corresponding diagonal entry, while the off-diagonal entries rotate the superpositions. On an eigenstate the holonomy reduces to the phase factor $\exp(i\theta_{\mathrm{pha},AC})$, with $\theta_{\mathrm{pha},AC}$ the real eigenvalue of $\oint\mathcal{A}_{AC}$. In the biquaternion language $\tilde Q$ is a general element of $\mathbb{H}_{\mathbb{B}}$ up to a central phase: a rotor in $\mathrm{SU}(2)$ that acts on the two-component spinor. The abelian AC phase measured with a polarised beam is the trace of $\tilde Q$ in the eigenbasis; the non-abelian content appears when the spin is prepared in a superposition and recombined.
+where the factor $i$ makes the exponent anti-Hermitian: the connection $\mathcal{A}_{AC}$ is $\mathbb{B}_{\Psi}$-valued, and it is $i\mathcal{A}_{AC}$ that generates a $*$-unitary transport, exactly as $-i H/\hbar$ does for the Schrödinger evolution. The holonomy is therefore a genuine $*$-unitary, and the cycle-averaged phase for each eigen-component is the corresponding diagonal entry, while the off-diagonal entries rotate the superpositions. On an eigenstate the holonomy reduces to the phase factor $\exp(i\theta_{\mathrm{pha},AC})$, with $\theta_{\mathrm{pha},AC}$ the real eigenvalue of $\oint\mathcal{A}_{AC}$. In the biquaternion language $\tilde Q$ is a general element of $\mathbb{B}_{H}$ up to a central phase: a rotor in $\mathrm{SU}(2)$ that acts on the two-component spinor. The abelian AC phase measured with a polarised beam is the trace of $\tilde Q$ in the eigenbasis; the non-abelian content appears when the spin is prepared in a superposition and recombined.
 
 ### The AC Connection in Spin-Orbit Form
 
-In a crystal or atomic system with spin-orbit coupling, the electric field seen by a moving electron produces an effective magnetic field of exactly the AC form, and the spin dynamics it drives is the **spin-orbit interaction**. The Rashba coupling of a two-dimensional electron gas, $\tilde{R}_{\psi,R} = \alpha_R(\vec p\times\boldsymbol{\sigma})\cdot\vec u_z$, and the Dresselhaus coupling have the same structure: a spin operator contracted with a momentum-dependent effective field. The AC connection is the non-relativistic limit of the spin connection of the Dirac electron, and the solid-angle phase it produces underlies the spin-orbit geometric phases used in spintronics and in the design of spin transistors. The framework does not add to this standard picture; it records that the spin-orbit Hamiltonian and the AC connection are the same $\mathbb{M}_+$ element written in different variables.
+In a crystal or atomic system with spin-orbit coupling, the electric field seen by a moving electron produces an effective magnetic field of exactly the AC form, and the spin dynamics it drives is the **spin-orbit interaction**. The Rashba coupling of a two-dimensional electron gas, $\tilde{R}_{\psi,R} = \alpha_R(\vec p\times\boldsymbol{\sigma})\cdot\vec u_z$, and the Dresselhaus coupling have the same structure: a spin operator contracted with a momentum-dependent effective field. The AC connection is the non-relativistic limit of the spin connection of the Dirac electron, and the solid-angle phase it produces underlies the spin-orbit geometric phases used in spintronics and in the design of spin transistors. The framework does not add to this standard picture; it records that the spin-orbit Hamiltonian and the AC connection are the same $\mathbb{B}_{\Psi}$ element written in different variables.
 
 ## The Duality with Aharonov–Bohm
 
@@ -174,7 +174,7 @@ $$
 
 The coupling is to the **motional electric field** $\vec E_{\mathrm{mot}} = \vec v\times\vec B$ seen by the dipole in its own rest frame. The asymmetry with the AC case is the asymmetry of the Lorentz field transformation in SI: the motional magnetic field is $\vec v\times\vec E/c^2$, while the motional electric field is $\vec v\times\vec B$, so the magnetic-dipole coupling carries the $1/c^2$ and the electric-dipole coupling does not.
 
-The three effects — AB, AC and HMW — form the electric–magnetic dual triangle: charge is dual to magnetic flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. In the biquaternion framework all three are integrals of $\mathbb{M}_+$-valued or central connections; the spin-1/2 content is the AC case, and the HMW case couples to the electric dipole, which for a bare spin-1/2 vanishes by parity, as the treatment of the Zeeman and Stark effects records.
+The three effects — AB, AC and HMW — form the electric–magnetic dual triangle: charge is dual to magnetic flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. In the biquaternion framework all three are integrals of $\mathbb{B}_{\Psi}$-valued or central connections; the spin-1/2 content is the AC case, and the HMW case couples to the electric dipole, which for a bare spin-1/2 vanishes by parity, as the treatment of the Zeeman and Stark effects records.
 
 ## The Lagrangian Route
 
@@ -185,7 +185,7 @@ L_{AC} = \frac{1}{c^2}\,\vec\mu\cdot\left(\vec v\times\vec E\right)
 = \frac{1}{c^2}\left(\vec E\times\vec\mu\right)\cdot\vec v,
 $$
 
-whose action integral over a closed path is exactly $\hbar\theta_{\mathrm{pha},AC}$. The electric dipole coupling in a magnetic field is $L_{HMW} = \vec d\cdot(\vec v\times\vec B)$, with no $1/c^2$, consistently with the phase above. In each case the coupling is a one-form in velocity contracted with the appropriate moment and field, and the phase is its holonomy. In the biquaternion framework the couplings are elements of $\mathbb{M}_+$ for the dipole cases (they involve the spin or dipole operator) and central for the charge case; the path integral of the companion article *The Path Integral in Biquaternionic Form* is the natural home for the action formulation, and the AC phase is the holonomy that survives the sum over paths.
+whose action integral over a closed path is exactly $\hbar\theta_{\mathrm{pha},AC}$. The electric dipole coupling in a magnetic field is $L_{HMW} = \vec d\cdot(\vec v\times\vec B)$, with no $1/c^2$, consistently with the phase above. In each case the coupling is a one-form in velocity contracted with the appropriate moment and field, and the phase is its holonomy. In the biquaternion framework the couplings are elements of $\mathbb{B}_{\Psi}$ for the dipole cases (they involve the spin or dipole operator) and central for the charge case; the path integral of the companion article *The Path Integral in Biquaternionic Form* is the natural home for the action formulation, and the AC phase is the holonomy that survives the sum over paths.
 
 ## Explicit Geometries
 
@@ -250,8 +250,8 @@ The geometric character of the phase is established by the **reversal tests**. R
 
 **What the algebra organises.**
 
-- **A common holonomy language.** The AC phase is the integral of an $\mathbb{M}_+$-valued connection, exactly as the Berry and Aharonov–Anandan phases of the preceding article are integrals of a spinor connection. The three are the same kind of object, distinguished by which field couples to the spin.
-- **The spin-1/2 $SU(2)$ structure.** With $\vec\mu = \gamma\vec S$ and $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, the AC connection is proportional to the spin operator, so its holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ and its abelian part is the central phase. The abelian/non-abelian distinction is the eigenstate/superposition distinction, as in the geometric-phase article.
+- **A common holonomy language.** The AC phase is the integral of an $\mathbb{B}_{\Psi}$-valued connection, exactly as the Berry and Aharonov–Anandan phases of the preceding article are integrals of a spinor connection. The three are the same kind of object, distinguished by which field couples to the spin.
+- **The spin-1/2 $SU(2)$ structure.** With $\vec\mu = \gamma\vec S$ and $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, the AC connection is proportional to the spin operator, so its holonomy is a rotor in $\mathbb{B}_{H}$ and its abelian part is the central phase. The abelian/non-abelian distinction is the eigenstate/superposition distinction, as in the geometric-phase article.
 - **The dual triangle is visible.** AB, AC and HMW all have the form of a coupling constant times a field integral; the algebra collects them as integrals of connections built from the field and the appropriate moment operator.
 - **Parity selects the coupling.** A bare spin-1/2 has a magnetic moment but no electric dipole; hence it exhibits AC and not HMW. The selection is the parity argument of the Zeeman–Stark article.
 
@@ -279,7 +279,7 @@ $$
 
 which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B_2$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.
 
-In the biquaternion algebra the phase is the integral of the $\mathbb{M}_+$-valued connection
+In the biquaternion algebra the phase is the integral of the $\mathbb{B}_{\Psi}$-valued connection
 
 $$
 \mathcal{A}_{AC} = \frac{1}{\hbar c^2}\left(\vec E\times\vec\mu\right)\cdot d\vec r
@@ -297,8 +297,8 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_+$ | Hermitian (informational) subspace; home of the AC connection |
-| $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the holonomy rotors |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of the AC connection |
+| $\mathbb{B}_{H}$ | Unit real quaternions; the holonomy rotors |
 | $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
 | $\vec\mu = \gamma\vec S$ | Magnetic dipole moment |
 | $\vec B_2 = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |

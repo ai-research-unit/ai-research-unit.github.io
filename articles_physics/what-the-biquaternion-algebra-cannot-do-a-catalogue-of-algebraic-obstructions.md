@@ -14,7 +14,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 *Finite dimension and zero divisors.* The algebra is four-complex-dimensional, so it has zero divisors, is not a division algebra, and describes one two-level system; tensor products and canonical commutation relations take one outside it, and a unit that preserves the norm for every Hermitian generator is forced into the centre. The consequences concern composite systems, field theory, and any genuinely infinite-dimensional structure.
 
-*The sector structure.* The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a grading of the Lie algebra but not of the associative algebra; the Hermitian sector $\mathbb{M}_+$ is not a subalgebra and carries no intrinsic complex structure. The consequence is that material and informational sectors cannot be treated as independent algebras.
+*The sector structure.* The split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a grading of the Lie algebra but not of the associative algebra; the Hermitian sector $\mathbb{B}_{\Psi}$ is not a subalgebra and carries no intrinsic complex structure. The consequence is that material and informational sectors cannot be treated as independent algebras.
 
 *The action by multiplication.* Every operation the algebra supplies is a product $\tilde Q\mapsto a\tilde Qb$, and a left multiplication acts by the same element on the two parts $\tilde Q_L$ and $\tilde Q_R$ of an element. The consequence is that the framework's apparatus is vector-like by construction, that the chiral gauge structure, the discrete operations and the energy-sign split have no left-multiplicative representative, and that the vector-like obstruction is a fact about the algebra rather than about any chosen gauge group.
 
@@ -86,9 +86,9 @@ so the solutions are exactly $0$ and $e_t$. A direct sum decomposition would nee
 
 ### O5. The biquaternion norm is not positive definite
 
-**Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, where definiteness is not defined. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
+**Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{B}_{\Psi}$, and on the full algebra the form is complex-valued, where definiteness is not defined. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** The norm is the element $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$, and $\langle\tilde{Q}\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is its scalar coefficient. On $\mathbb{M}_+$ it is $\langle c r_t\,e_t+i\vec r_\psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\psi|^2)e_t$, of signature $(1,3)$; on the whole algebra the coefficient is complex for complex coefficients, and definiteness is not defined on $\mathbb{C}$. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde R_\psi=e_t+i\vec e_x$ is null, $\tilde R_\psi\tilde R_\psi^{\natural}=\langle\tilde R_\psi\rangle_{\natural}e_t=(1-1)e_t=0$ with $\tilde R_\psi\neq0$, and $\tilde R_\psi=i\vec e_x$ has $\langle\tilde R_\psi\rangle_{\natural}=-1$, so neither sign is definite there.
+**Proof.** The norm is the element $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$, and $\langle\tilde{Q}\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is its scalar coefficient. On $\mathbb{B}_{\Psi}$ it is $\langle c r_t\,e_t+i\vec r_\psi\rangle_{\natural}=(c^2 r_t^2-|\vec r_\psi|^2)e_t$, of signature $(1,3)$; on the whole algebra the coefficient is complex for complex coefficients, and definiteness is not defined on $\mathbb{C}$. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde R_\psi=e_t+i\vec e_x$ is null, $\tilde R_\psi\tilde R_\psi^{\natural}=\langle\tilde R_\psi\rangle_{\natural}e_t=(1-1)e_t=0$ with $\tilde R_\psi\neq0$, and $\tilde R_\psi=i\vec e_x$ has $\langle\tilde R_\psi\rangle_{\natural}=-1$, so neither sign is definite there.
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
@@ -214,19 +214,19 @@ and the dimension of the tensor square is the product of the two dimensions.
 
 ### O15. The two sectors do not form an algebra grading
 
-**Statement.** The decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is not a grading of the associative algebra: $\mathbb{M}_+$ is not a subalgebra, and the product of two Hermitian elements need not be Hermitian. The decomposition is a grading of the commutator only.
+**Statement.** The decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is not a grading of the associative algebra: $\mathbb{B}_{\Psi}$ is not a subalgebra, and the product of two Hermitian elements need not be Hermitian. The decomposition is a grading of the commutator only.
 
 **Proof.** For the Hermitian elements $i\vec e_x,i\vec e_y$,
 $$
-(i\vec e_x)(i\vec e_y)=i^2\vec e_x \vec e_y=-\vec e_z\in\mathbb{M}_-,
+(i\vec e_x)(i\vec e_y)=i^2\vec e_x \vec e_y=-\vec e_z\in\mathbb{B}_{\Phi},
 $$
-which is anti-Hermitian; so $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$. More precisely, products and commutators behave as
+which is anti-Hermitian; so $\mathbb{B}_{\Psi}\mathbb{B}_{\Psi}\not\subseteq\mathbb{B}_{\Psi}$. More precisely, products and commutators behave as
 $$
-\boxed{\;\mathbb{M}_+\mathbb{M}_+\subseteq\mathbb{M}_++\mathbb{M}_-,
+\boxed{\;\mathbb{B}_{\Psi}\mathbb{B}_{\Psi}\subseteq\mathbb{B}_{\Psi}+\mathbb{B}_{\Phi},
 \qquad
-[\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-,
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subseteq\mathbb{B}_{\Phi},
 \qquad
-[\mathbb{M}_+,\mathbb{M}_-]\subseteq\mathbb{M}_+\;},
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}]\subseteq\mathbb{B}_{\Psi}\;},
 $$
 the last two verified numerically on random elements of each sector. The commutator therefore grades the real Lie algebra $\mathbb{B}$ under $[\cdot,\cdot]$, while the product mixes the sectors.
 
@@ -236,16 +236,16 @@ the last two verified numerically on random elements of each sector. The commuta
 
 ### O16. The Hermitian sector carries no intrinsic complex structure
 
-**Statement.** Multiplication by $i$ exchanges the two sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ is not a complex vector space. The Hermitian elements cannot be a complex Hilbert space in their own right.
+**Statement.** Multiplication by $i$ exchanges the two sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so $\mathbb{B}_{\Psi}$ is not a complex vector space. The Hermitian elements cannot be a complex Hilbert space in their own right.
 
-**Proof.** For every basis element of $\mathbb{M}_+$, $i(i\vec e_k)=-\vec e_k$ for $k=x,y,z$ and $i e_t=ie_t$, so
+**Proof.** For every basis element of $\mathbb{B}_{\Psi}$, $i(i\vec e_k)=-\vec e_k$ for $k=x,y,z$ and $i e_t=ie_t$, so
 $$
-\boxed{\;i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_-\;}.
+\boxed{\;i\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{B}_{\Phi}\;}.
 $$
 
 Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.
 
-**Consequence.** The complex structure is carried by the elements themselves: $i\tilde{Q}$ is another element, and the Hermitian form pairs two elements. The observables are the Hermitian elements, a real vector space, and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
+**Consequence.** The complex structure is carried by the elements themselves: $i\tilde{Q}$ is another element, and the Hermitian form pairs two elements. The observables are the Hermitian elements, a real vector space, and must be handled as such. Treating $\mathbb{B}_{\Psi}$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
 
 **Remedy.** Keep the complex structure on the elements and the real structure on the observables; the two are related by the map $\tilde{Q}\mapsto\tilde{Q}\tilde{Q}^{*}$, which sends an element to a Hermitian element.
 
@@ -323,7 +323,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Proof.** The failure is the **associator defect** of the parent product and not an accident of the witness.
 
-**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ (*The Physical Interpretation of the 12 Products*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state pairing there is no derived rescue: interference has no Lie algebra, so the antisymmetric pairing of two states cannot be the generator of a group.
+**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathbb{B}_{V}$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ (*The Physical Interpretation of the 12 Products*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state pairing there is no derived rescue: interference has no Lie algebra, so the antisymmetric pairing of two states cannot be the generator of a group.
 
 **Remedy.** Read the failure measurements as the low operations of a **higher structure**: the associator and the Jacobi defect are the first terms of an $A_\infty$ and an $L_\infty$ algebra, and the repair is to state the higher identities rather than to look for a bracket that closes (*The Physical Interpretation of the 12 Products*; *A-Infinity and L-Infinity Algebras*).
 
@@ -335,7 +335,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 | O2 no central split | the only central elements equal to their square are $0$ and $e_t$ | adjoin a label algebra |
 | O3 centre acts trivially on states | $Z(\mathbb{B})\cong\mathbb{C}$ | none needed |
 | O4 parameters not determined | centrality of the parameters | import the data |
-| O5 biquaternion norm indefinite | signature $(1,3)$ on $\mathbb{M}_+$ | use the Hermitian form for positivity |
+| O5 biquaternion norm indefinite | signature $(1,3)$ on $\mathbb{B}_{\Psi}$ | use the Hermitian form for positivity |
 | O6 biquaternion norm vanishes on states | null cone of the boundary | read the metric from the second variation |
 | O7 no form both canonical and positive | scale-free relations | state the normalization |
 | O8 no Bures metric | flat quadratic form | import the Fisher metric |
@@ -345,8 +345,8 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 | O12 no commutator with a central value | cyclicity of the trace | pass to function spaces |
 | O13 no internal tensor factorisation | dimension count | use $\mathbb{B}^{\otimes n}$ |
 | O14 unit forced central | norm preservation for all $\tilde R_\psi$ | accept the complex scalar field |
-| O15 sectors not an algebra grading | $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$ | use commutators or the trace |
-| O16 no complex structure on $\mathbb{M}_+$ | $i\mathbb{M}_+=\mathbb{M}_-$ | put it on the elements |
+| O15 sectors not an algebra grading | $\mathbb{B}_{\Psi}\mathbb{B}_{\Psi}\not\subseteq\mathbb{B}_{\Psi}$ | use commutators or the trace |
+| O16 no complex structure on $\mathbb{B}_{\Psi}$ | $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ | put it on the elements |
 | O17 the two parts are not canonical | transitive action on the directions | declare the direction and check invariance |
 | O18 no time or Hamiltonian | inner derivations only | import the dynamics |
 | O19 measurement problem untouched | O1, O2, O18 together | add interpretive structure |
@@ -376,7 +376,7 @@ Each obstruction has a positive interpretation, and the catalogue is best read a
 Read as a whole, the catalogue is the framework's **ledger of forbidden structures**: each entry is a structure the algebra cannot host, and the ledger is what a proposed addition must be checked against. It is a ledger of prohibitions and not a list of conservation laws — a forbidden structure is not a conserved quantity — and the interpretation is offered in that precise sense. A further reading of the catalogue as a whole can be named.
 
 - **No-go set for internal symmetry.** The catalogue read as a no-go set says which internal structures the algebra cannot host, and among them is the gauge ceiling: the algebra reaches $SU(2)$ but not $SU(3)$, and it has no central split, so a Standard-Model-like internal group cannot be generated from the algebra alone and must be carried by an enlarged algebra. Boundary: the ceiling is the result of *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, and the comparison of the catalogue with a Coleman–Mandula-type ceiling is an interpretation and not a theorem.
-- **Canonical-versus-positive interpretation.** The three quadratic obstructions O5–O7 are one trade-off: the form the algebra fixes canonically, the norm, is indefinite and vanishes on non-zero elements, while the positive form is fixed only up to its scale. Read physically, the canonical form of a relativistic element is indefinite — the norm is the interval, of signature $(3,1)$ on the material sector — so a positive probability cannot be read from the algebra's own form and must be added, which is the algebraic shape of why a relativistic one-particle description needs an added positive structure rather than an available one. Boundary: the obstructions and the scale-relative repair are proved above and in *Algebra and Element Conventions*; the indefinite inner product of a quantised gauge field is imported, and whether its identification with the norm on $\mathbb{M}_-$ has content beyond the coincidence of signatures is asked and not settled in *Canonical Quantization of the Biquaternion Maxwell Field*; the interpretation adds no derivation.
+- **Canonical-versus-positive interpretation.** The three quadratic obstructions O5–O7 are one trade-off: the form the algebra fixes canonically, the norm, is indefinite and vanishes on non-zero elements, while the positive form is fixed only up to its scale. Read physically, the canonical form of a relativistic element is indefinite — the norm is the interval, of signature $(3,1)$ on the material sector — so a positive probability cannot be read from the algebra's own form and must be added, which is the algebraic shape of why a relativistic one-particle description needs an added positive structure rather than an available one. Boundary: the obstructions and the scale-relative repair are proved above and in *Algebra and Element Conventions*; the indefinite inner product of a quantised gauge field is imported, and whether its identification with the norm on $\mathbb{B}_{\Phi}$ has content beyond the coincidence of signatures is asked and not settled in *Canonical Quantization of the Biquaternion Maxwell Field*; the interpretation adds no derivation.
 - **One-mode interpretation.** O12 and O13 read together say that the algebra carries one mode and no internal composition: it has no canonical commutation relation and no internal tensor factorisation, while the two-mode arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Read physically, the biquaternion algebra is intrinsically a **one-mode (one-qubit) theory**: the single-mode truncation is exact, the many-mode theory is the tensor tower built over it, and the framework's finite content is exactly one fermionic mode (*Fock Space and Creation/Annihilation Operators in Biquaternionic Form*). Boundary: the interpretation names the mode count and does not supply a field algebra, whose brackets are imported (O12).
 - **Basis-freedom interpretation.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and an element no canonical split into two parts, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the interpretation states its algebraic origin and does not address the selection rule (O19).
 - **Mass is a breaking, not a product.** O22 read forwards: since a left multiplication acts by the same element on the two parts and cannot couple them, a mass term is not a left multiplication but a breaking, which the conventions realise as the right multiplication by $\tfrac12(i\vec e_x-\vec e_y)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
@@ -405,7 +405,7 @@ The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. A single product 
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B}$, of four complex dimensions, is the structural spine of the non-relativistic theory, and this article has catalogued its algebraic obstructions in seven groups. In commutativity and the centre: there is no canonical maximal commutative subalgebra, no non-trivial central split, no observable central data, and no internal determination of the theory's parameters, because the centre is the two-real-dimensional $\mathbb{C}e_t$ and it acts trivially on states. In the quadratic forms: the biquaternion norm is indefinite and vanishes on non-zero states, the Hermitian form is positive but fixed only up to its scale, no single form is both canonical and positive, and the statistically distinguished metric of mixed states is not the algebra's flat form; the invariance group of the biquaternion norm, $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, is strictly larger than the $*$-unitary group. In finite dimension and zero divisors: the algebra is not a division algebra, it carries no canonical commutation relation, it admits no internal tensor factorisation, and a unit that preserves the norm for every Hermitian generator is forced into the centre, so no genuinely biquaternionic quantum physics with a uniform norm-preserving evolution exists. In the sector structure: the split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ grades the commutator but not the product, the Hermitian sector carries no intrinsic complex structure, and the split of an element into its two parts depends on a declared direction. In dynamics and interpretation: the algebra contains no time, no Hamiltonian, no preferred basis, no scale, and no stable classical sector under a generic evolution. In the action by multiplication: every operation the algebra supplies is a product, and a left multiplication acts by the same element on the two parts of an element, so the framework's apparatus is vector-like by construction and the chiral structure, the discrete operations and the energy-sign split are external. In the brackets: the one Lie product of the twelve is the plain bracket, and the three brackets that carry a conjugation fail, so no bracket the framework's interference and quantum pairings need is a Lie algebra, and the failures are read as the first operations of a higher structure.
+The biquaternion algebra $\mathbb{B}$, of four complex dimensions, is the structural spine of the non-relativistic theory, and this article has catalogued its algebraic obstructions in seven groups. In commutativity and the centre: there is no canonical maximal commutative subalgebra, no non-trivial central split, no observable central data, and no internal determination of the theory's parameters, because the centre is the two-real-dimensional $\mathbb{C}e_t$ and it acts trivially on states. In the quadratic forms: the biquaternion norm is indefinite and vanishes on non-zero states, the Hermitian form is positive but fixed only up to its scale, no single form is both canonical and positive, and the statistically distinguished metric of mixed states is not the algebra's flat form; the invariance group of the biquaternion norm, $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, is strictly larger than the $*$-unitary group. In finite dimension and zero divisors: the algebra is not a division algebra, it carries no canonical commutation relation, it admits no internal tensor factorisation, and a unit that preserves the norm for every Hermitian generator is forced into the centre, so no genuinely biquaternionic quantum physics with a uniform norm-preserving evolution exists. In the sector structure: the split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ grades the commutator but not the product, the Hermitian sector carries no intrinsic complex structure, and the split of an element into its two parts depends on a declared direction. In dynamics and interpretation: the algebra contains no time, no Hamiltonian, no preferred basis, no scale, and no stable classical sector under a generic evolution. In the action by multiplication: every operation the algebra supplies is a product, and a left multiplication acts by the same element on the two parts of an element, so the framework's apparatus is vector-like by construction and the chiral structure, the discrete operations and the energy-sign split are external. In the brackets: the one Lie product of the twelve is the plain bracket, and the three brackets that carry a conjugation fail, so no bracket the framework's interference and quantum pairings need is a Lie algebra, and the failures are read as the first operations of a higher structure.
 
 Each obstruction is proved from the defining relations and is stated with its consequence and its remedy. The catalogue's purpose is not to fault the framework but to locate exactly where the algebra's resources end: at a chosen context, an extended space of functions, an imported statistical metric, or a physical posit. Most of the obstructions are shared with ordinary complex quantum physics and are not peculiar to the biquaternion setting; the distinctive ones concern the coexistence of two forms, the non-algebraic nature of the sector split, the centralisation of the unit, the minimality of the classical sector, and the chirality-blindness of left multiplication — and these are the items on which the framework should be judged.
 
@@ -417,8 +417,8 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ for $k=x,y,z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
+| $Z(\mathbb{B})=\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{B}_{C}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\mathbb{B}^{\times}=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form, positive definite with $\langle e_t\rangle_{*}=1$ |

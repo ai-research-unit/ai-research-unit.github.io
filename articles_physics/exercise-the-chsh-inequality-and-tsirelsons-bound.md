@@ -240,7 +240,7 @@ For any state $\rho$, the expectation $\langle S\rangle=\mathrm{Tr}(\rho S)$ is 
 
 ### Step 1: The CHSH element
 
-In the biquaternion framework the two-qubit observables live in $\mathbb{M}_+\otimes\mathbb{M}_+\subset\mathbb{B}\otimes\mathbb{B}$. The single-qubit observable along $\vec a_1$ is the Hermitian element $i\vec a_1=i\sum_j a_{1j} \vec e_j$, whose image under the isomorphism is $\vec a_1\cdot\boldsymbol{\sigma}$. The correlation observable of the parent exercise is
+In the biquaternion framework the two-qubit observables live in $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\subset\mathbb{B}\otimes\mathbb{B}$. The single-qubit observable along $\vec a_1$ is the Hermitian element $i\vec a_1=i\sum_j a_{1j} \vec e_j$, whose image under the isomorphism is $\vec a_1\cdot\boldsymbol{\sigma}$. The correlation observable of the parent exercise is
 
 $$
 H_{ab} = (i\vec a_1)\otimes(i\vec b_1),
@@ -256,7 +256,7 @@ $$
 + (i\vec a_2)\otimes(i\vec b_1) + (i\vec a_2)\otimes(i\vec b_2),
 $$
 
-a single Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_k\mapsto-i\sigma_k$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,
+a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_k\mapsto-i\sigma_k$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,
 
 $$
 S = \mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\mathcal{S}\bigr),
@@ -377,7 +377,7 @@ The CHSH combination is confined by three different values, and the gap between 
 | Bound | Value of $|S|$ | Assumption |
 |---|---|---|
 | Classical (CHSH) | $2$ | pre-existing local outcomes, shared $\lambda$ |
-| Quantum (Tsirelson) | $2\sqrt{2}$ | states in $\mathbb{M}_+\otimes\mathbb{M}_+$, observables with spectrum $\{\pm1\}$ |
+| Quantum (Tsirelson) | $2\sqrt{2}$ | states in $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, observables with spectrum $\{\pm1\}$ |
 | No-signaling (algebraic) | $4$ | each $E\in[-1,1]$, marginals well defined |
 
 The classical value is attained by deterministic local models (Step 2). The quantum value is attained by every Bell state (Step 4), and cannot be exceeded by any quantum state (Step 5). The no-signaling value $4$ is attained by the Popescu–Rohrlich box, the hypothetical device whose correlators, in the sign convention used here, are
@@ -390,7 +390,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 
 ## What the Biquaternion Solution Illustrates
 
-**1. The CHSH combination is one element of the algebra.** In the standard formulation the Bell operator is a sum of four tensor products of Pauli observables. In the framework it is the single Hermitian element $\mathcal{S}\in\mathbb{M}_+\otimes\mathbb{M}_+$, and the CHSH quantity is its Born pairing with the state. The inequality is a statement about the spectrum of one algebraic element.
+**1. The CHSH combination is one element of the algebra.** In the standard formulation the Bell operator is a sum of four tensor products of Pauli observables. In the framework it is the single Hermitian element $\mathcal{S}\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, and the CHSH quantity is its Born pairing with the state. The inequality is a statement about the spectrum of one algebraic element.
 
 **2. Its square is the identity plus one cross term.** The identity $\mathcal{S}^2=4\bigl(e_t\otimes e_t+(\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\bigr)$ is the biquaternion content of Tsirelson's bound. The cross products are the only place the two parties' settings meet, and it is their bounded length, $|\vec a_1\times\vec a_2|\le1$ and $|\vec b_1\times\vec b_2|\le1$, that caps the violation.
 
@@ -398,7 +398,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 
 **4. The Born rule applied twice gives the joint statistics.** The joint probabilities $p(\pm,\pm\mid\vec a_1,\vec b_1)$ are readings of the Hermitian form, with products of two idempotents, and the correlator is their signed sum. This is the pattern the companion article on the quantum–classical divide cites.
 
-**5. The framework reproduces, and does not explain, the bound.** The derivation is the standard operator-norm argument in a different notation. The framework supplies a clean home for the statement — the square of one element of $\mathbb{M}_+\otimes\mathbb{M}_+$ — but not a new reason for the value. Where the framework's own norm is used, it yields only the trivial bound $4$; the sharp value comes from the spectral norm of the matrix representation.
+**5. The framework reproduces, and does not explain, the bound.** The derivation is the standard operator-norm argument in a different notation. The framework supplies a clean home for the statement — the square of one element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ — but not a new reason for the value. Where the framework's own norm is used, it yields only the trivial bound $4$; the sharp value comes from the spectral norm of the matrix representation.
 
 ## Further Problems
 
@@ -419,7 +419,7 @@ Compute its correlation matrix and show that the maximal CHSH value is $2\sqrt{2
 
 **Problem 5 (The correlation matrix and the stabilisers).** Using $T_{jj}=-\epsilon_j$ and the stabiliser operators $S_j=-\vec e_j\otimes\vec e_j$ of the Bell-basis parent article, express the CHSH combination for a Bell state in terms of the stabiliser eigenvalues. Confirm that the optimal directions for each state are those that weight the two equal-sign eigenvalues equally.
 
-**Problem 6 (Open: a framework-internal reason for $2\sqrt{2}$).** The derivation above obtains the bound from the spectral norm of the matrix image of $\mathcal{S}$. Is there a principle internal to the biquaternion algebra — a condition on elements of $\mathbb{M}_+\otimes\mathbb{M}_+$ stated without passing to $M_4(\mathbb{C})$ — from which $2\sqrt{2}$, and not $4$, follows? The framework's own quadratic form does not do it (Step 4). This is left open; it is the framework's version of the standard question of why nature does not permit the no-signaling maximum.
+**Problem 6 (Open: a framework-internal reason for $2\sqrt{2}$).** The derivation above obtains the bound from the spectral norm of the matrix image of $\mathcal{S}$. Is there a principle internal to the biquaternion algebra — a condition on elements of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ stated without passing to $M_4(\mathbb{C})$ — from which $2\sqrt{2}$, and not $4$, follows? The framework's own quadratic form does not do it (Step 4). This is left open; it is the framework's version of the standard question of why nature does not permit the no-signaling maximum.
 
 ## Summary
 
@@ -441,7 +441,7 @@ $$
 \mathcal{S}^2 = 4\Bigl(e_t\otimes e_t + (\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\Bigr),
 $$
 
-whose image has eigenvalues $4(1\mp|u||v|)$; the bound $|u||v|\le1$ gives Tsirelson's value $2\sqrt2$. The CHSH quantity is thus a statement about the square of one element of $\mathbb{M}_+\otimes\mathbb{M}_+$, and the four Bell states, being a single local-$*$-unitary orbit, all attain the bound.
+whose image has eigenvalues $4(1\mp|u||v|)$; the bound $|u||v|\le1$ gives Tsirelson's value $2\sqrt2$. The CHSH quantity is thus a statement about the square of one element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, and the four Bell states, being a single local-$*$-unitary orbit, all attain the bound.
 
 Two limitations are recorded rather than smoothed over. First, the framework reproduces Tsirelson's bound without explaining why the physical value is $2\sqrt2$ and not the no-signaling maximum $4$. Second, the sharp bound is obtained by the spectral norm of the matrix representation $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$; the framework's own Euclidean form gives only $|S|\le4$, as $\mathrm{Tr}(\mathcal{S}^2)=16$ shows. The framework contains the algebra whose representation carries Tsirelson's bound; it does not contain that bound as a property of its quadratic form alone.
 
@@ -451,7 +451,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
-| $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathrm{Tr}_\mathbb{B}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$ | Trace on a single factor |
@@ -465,7 +465,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $S=E(\vec a_1,\vec b_1)-E(\vec a_1,\vec b_2)+E(\vec a_2,\vec b_1)+E(\vec a_2,\vec b_2)$ | CHSH combination |
 | $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$ | Bell operator |
 | $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]=4I-4(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})$ | Operator identity behind the bound |
-| $\mathcal{S}$ | CHSH element of $\mathbb{M}_+\otimes\mathbb{M}_+$ |
+| $\mathcal{S}$ | CHSH element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $\mathcal{S}^2=4(e_t\otimes e_t+(\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2))$ | Biquaternion square identity |
 | $u=\vec a_1\times\vec a_2,\ v=\vec b_1\times\vec b_2$ | Cross products controlling the bound |
 | $\lvert S\rvert\le2$ | Classical (CHSH) bound |

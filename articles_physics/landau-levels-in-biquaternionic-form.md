@@ -4,7 +4,7 @@
 
 A charged particle in a uniform magnetic field has a discrete energy spectrum — the Landau levels — even though it is free in the field direction. The problem is the simplest exactly solvable system in which the Hamiltonian depends on a gauge potential, and it is the non-relativistic cornerstone of the quantum Hall effect. This article solves it in the biquaternion framework and reads the result algebraically.
 
-The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ is Hermitian in $\mathbb{M}_+$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
+The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ is Hermitian in $\mathbb{B}_{\Psi}$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
 
 $$
 [\tilde\pi_x,\tilde\pi_y]=\frac{i\hbar ϙ}{c}B_z\,e_t ,
@@ -14,7 +14,7 @@ so the field strength is a central element of the algebra even though the field 
 
 The article is organised as follows. The next section sets up the minimal coupling in the biquaternion framework and derives the central commutator for the field strength. The third section solves the problem in the Landau gauge, reducing it to a shifted harmonic oscillator. The fourth treats the symmetric gauge, the guiding centre, and the angular momentum. The fifth counts the degeneracy and identifies the flux quantum. The sixth states precisely what is absent because the particle has spin 0. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. Gaussian units are used, with the electric charge denoted $ϙ$ and the mechanical momentum distinguished from the canonical momentum.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{\Psi,\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. Gaussian units are used, with the electric charge denoted $ϙ$ and the mechanical momentum distinguished from the canonical momentum.
 
 ## The Charged Particle in the Biquaternion Framework
 
@@ -250,7 +250,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 **2. Does the guiding-centre algebra have a sector interpretation?** The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.
 
-**3. What happens at the zero divisor cone?** The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{M}_-$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.
+**3. What happens at the zero divisor cone?** The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{B}_{\Phi}$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.
 
 **4. Empirical content.** Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum physics.
 
@@ -281,9 +281,9 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_j^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the field strength and the spectrum |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of $\vec B$ and $\vec A$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; home of the field strength and the spectrum |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace; home of $\vec B$ and $\vec A$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ | Mechanical momentum; central Hermitian |
 | $[\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar ϙ}{c}\varepsilon_{klm}B_me_t$ | Central field-strength commutator |

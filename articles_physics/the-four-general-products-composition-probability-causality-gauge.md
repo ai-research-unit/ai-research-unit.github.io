@@ -87,9 +87,9 @@ Read physically, a job has a **magnitude** and an **order**. The magnitude is th
 
 ## The Four Forms and the Four Jobs
 
-The four forms are read on the material sector $\mathbb{M}_-$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{M}_+$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
+The four forms are read on the material sector $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{B}_{\Psi}$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
 
-| Product | Slots | Form | Signature on $\mathbb{M}_-$ | Signature on $\mathbb{M}_+$ | Job |
+| Product | Slots | Form | Signature on $\mathbb{B}_{\Phi}$ | Signature on $\mathbb{B}_{\Psi}$ | Job |
 | --- | --- | --- | --- | --- | --- |
 | $\tilde Q_1\tilde Q_2$ | $(\mathrm{id},\mathrm{id})$ | $\langle\cdot,\cdot\rangle$ | $(0,4)$ | $(4,0)$ | composition |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $({}^{\natural},\mathrm{id})$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $(3,1)$ | $(1,3)$ | causality |
@@ -104,7 +104,7 @@ The plain product is the composition of two operations. Associativity is read as
 
 The invertible elements are the reversible operations. The zero-divisor cone is the wall of the reversible region, and the algebra is the disjoint union of the two. The criterion of invertibility is the multiplicative norm of the causal row, not the scalar form of this one: $e_t+\vec e_x$ is a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$, and $e_t+i\vec e_x$ is a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$. The scalar form of composition decides no inverse.
 
-The form of the composition is the **sector sign**, not the metric. It is negative definite on $\mathbb{M}_-$ and positive definite on $\mathbb{M}_+$; it says which half an element belongs to and measures neither. The metric of the material sector is the quaternionic form of the causal row, and the two must not be exchanged. The step from one to the other is the first slot's dial: it changes the product with the form, so the metric is not a second structure added to the composition but the same rule at the other setting.
+The form of the composition is the **sector sign**, not the metric. It is negative definite on $\mathbb{B}_{\Phi}$ and positive definite on $\mathbb{B}_{\Psi}$; it says which half an element belongs to and measures neither. The metric of the material sector is the quaternionic form of the causal row, and the two must not be exchanged. The step from one to the other is the first slot's dial: it changes the product with the form, so the metric is not a second structure added to the composition but the same rule at the other setting.
 
 Composition is associative, but the twisted products are not. A non-vanishing associator is the algebraic image of an irreducible term in three operations: a three-way interaction that cannot be assembled from two-body pieces. The reading pairs with the corpus's ternary-product articles, and its boundary is that what fails to associate is the twist, not the elements.
 
@@ -134,7 +134,7 @@ $$
 \langle\tilde R_\varphi\rangle_{\natural}=-c^{2}{r'_{t}}^{2}+x^{2}+y^{2}+z^{2},
 $$
 
-of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{M}_-$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$, on $\mathbb{M}_-$, is the mass shell.
+of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{B}_{\Phi}$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$, on $\mathbb{B}_{\Phi}$, is the mass shell.
 
 The form is **multiplicative**,
 
@@ -150,7 +150,7 @@ The product is not associative, and the norm does not notice. The composite of t
 
 On the informational sector the same form has signature $(1,3)$: one sign and three of the other, with the inertia reversed by the sector. The interval and the informational metric are one form, and the sign of the inertia is what the sector decides.
 
-**The boundary.** The metric is $\langle\cdot,\cdot\rangle_{\natural}$, not $\langle\cdot,\cdot\rangle$; the causal structure lives on $\mathbb{M}_-$, not on the whole algebra. On the whole algebra the zero set is the zero-divisor cone, which is larger than the light cone, and the form is complex on the centre and the vector subspace. The reading does not derive a propagation equation, a speed or a mass spectrum; it identifies the level sets that such an equation would use.
+**The boundary.** The metric is $\langle\cdot,\cdot\rangle_{\natural}$, not $\langle\cdot,\cdot\rangle$; the causal structure lives on $\mathbb{B}_{\Phi}$, not on the whole algebra. On the whole algebra the zero set is the zero-divisor cone, which is larger than the light cone, and the form is complex on the centre and the vector subspace. The reading does not derive a propagation equation, a speed or a mass spectrum; it identifies the level sets that such an equation would use.
 
 ### Gauge
 
@@ -199,7 +199,7 @@ The four names are not attached to four unrelated structures. They are attached 
 
 **The first slot separates a measure from a metric.** Read as it stands, the form is definite on each sector and carries no cone; read through ${}^{\natural}$, it is indefinite on each sector and carries a cone. The dial is a reflection: it negates the three vector coordinates and fixes the scalar direction. It is an involutive anti-automorphism of the algebra. It is not the central Wick rotation, which is an automorphism of order four and exchanges the two sectors; the dial is an involution, the rotation is a quarter turn, and only the dial is a slot of a product.
 
-**The sector sign is visible in the bilinear layer and invisible in the sesquilinear one.** On $\mathbb{M}_-$ one has $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle$, and on $\mathbb{M}_+$ the two forms coincide. The bilinear form is negative definite on the material sector and the sesquilinear form positive definite there; the difference of sign is exactly the sector. The corpus's rule that the material sector is visible in the bilinear layer and invisible in the sesquilinear one is this identity, and it is why the naming must say which form it means.
+**The sector sign is visible in the bilinear layer and invisible in the sesquilinear one.** On $\mathbb{B}_{\Phi}$ one has $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle$, and on $\mathbb{B}_{\Psi}$ the two forms coincide. The bilinear form is negative definite on the material sector and the sesquilinear form positive definite there; the difference of sign is exactly the sector. The corpus's rule that the material sector is visible in the bilinear layer and invisible in the sesquilinear one is this identity, and it is why the naming must say which form it means.
 
 **The four readings are one group.** The two insertions are commuting involutions, so the four settings are the four elements of $\mathbb{Z}_2\times\mathbb{Z}_2$. The grid is not a list of four constructions but one construction with two dials. The four products are the four elements of the group read on one rule, and the four jobs are the four readings of that group.
 
@@ -209,7 +209,7 @@ The four names are not attached to four unrelated structures. They are attached 
 
 The naming is a reading of a proved algebra. The algebra proves the four settings, the property table, the two slots, the scalar square and the two squares; it does not prove that the four jobs are these four, and it does not prove that no other assignment of the four is possible. The claim is that the four jobs are independent and that the four forms supply one candidate for each; it is offered as a claim about the framework, not as a consequence of the algebra.
 
-The four jobs are form-level statements and are read on the sectors. For a general element the four forms are four and do not agree; an identity on a real-type subspace does not make two products equal. In particular, $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ does not make the quaternionic sesquilinear product a bilinear one there, and $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle$ on $\mathbb{M}_-$ does not make the plain product a pairing.
+The four jobs are form-level statements and are read on the sectors. For a general element the four forms are four and do not agree; an identity on a real-type subspace does not make two products equal. In particular, $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ does not make the quaternionic sesquilinear product a bilinear one there, and $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle$ on $\mathbb{B}_{\Phi}$ does not make the plain product a pairing.
 
 No product is derived from its job. The products are the algebra's; the jobs are the readings. The article does not derive a dynamics, a state space, a mass spectrum, a gauge group or a measurement postulate. Those are the subjects of the articles named at the end, and each of them states its own hypothesis and its own boundary.
 
@@ -240,8 +240,8 @@ The physical identification of the material sector with spacetime and of the inf
 | $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, causality |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product, gauge |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the sector sign, the Born form, the interval and the Krein form |
-| $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic algebraic norm, the interval on $\mathbb{M}_-$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
+| $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic algebraic norm, the interval on $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | the material coordinate |
 | $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the symmetric plain sesquilinear, symmetric quaternionic bilinear, antisymmetric plain bilinear and antisymmetric quaternionic sesquilinear products |
 

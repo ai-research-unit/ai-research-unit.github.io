@@ -6,7 +6,7 @@ The companion article *Canonical Quantization of the Biquaternion Dirac Field* c
 
 This article is that treatment for the electromagnetic field of *Maxwell's Equations in the Biquaternionic Formulation*. It has to answer a question the Dirac article could not pose, because there was nothing to compare it with: **does Maxwell behave better or worse than Dirac did?** The answer given here, stated at the outset, is that it behaves neither better nor worse in a simple ranking, but differently, and that the difference is instructive.
 
-- **Better in one respect.** Maxwell needs no new algebraic structure. The field is bosonic, so ordinary commutators suffice. No grading has to be imposed on the algebra, and the indefinite inner product that the covariant quantization requires is, up to convention, the one the material sector $\mathbb{M}_-$ already carries, its one minus the square of the $i$ in $Q_t=i c r'_t$. Where the Dirac case had to bolt on a $\mathbb{Z}/2$ structure the algebra does not supply, Maxwell bolts on nothing.
+- **Better in one respect.** Maxwell needs no new algebraic structure. The field is bosonic, so ordinary commutators suffice. No grading has to be imposed on the algebra, and the indefinite inner product that the covariant quantization requires is, up to convention, the one the material sector $\mathbb{B}_{\Phi}$ already carries, its one minus the square of the $i$ in $Q_t=i c r'_t$. Where the Dirac case had to bolt on a $\mathbb{Z}/2$ structure the algebra does not supply, Maxwell bolts on nothing.
 - **Worse in another.** In the Dirac case the field appearing in the biquaternion equation is, through its spinor-module representative, the field that is canonically quantized: its momentum is tied to it by a second-class constraint. In the Maxwell case the natural variable is the **field strength** $\tilde{F}$, which is gauge invariant and has no canonical partner; the equation for it is first order and cannot be obtained from a local Lagrangian in which $\tilde{F}$ alone is varied. Canonical quantization therefore forces a return to the potential $\tilde{A}$, and with it a gauge redundancy that the algebra does not resolve. The framework **cannot fix the gauge naturally**, and that is a finding, not an inconvenience to be smoothed over.
 
 The article has the same standard/open division as its parent, and it is worth stating before the formalism.
@@ -145,7 +145,7 @@ The gauge freedom, correspondingly, is the freedom to add $\tilde{\nabla}\Gamma$
 
 Two points about this interpretation must be kept separate.
 
-The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{M}_-$. The conjugate momentum $\tilde{\pi}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i c r'_t$ convention it is an element of the complementary sector $\mathbb{M}_+$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{M}_+$ describes for its action on $\mathbb{M}_-$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i c r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
+The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}=i\,a'_t\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{B}_{\Phi}$. The conjugate momentum $\tilde{\pi}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $i c r'_t$ convention it is an element of the complementary sector $\mathbb{B}_{\Psi}$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{B}_{\Psi}$ describes for its action on $\mathbb{B}_{\Phi}$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $i c r'_t$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
 
 The second is the **finding**. Nothing in the algebra selects a gauge. The gauge-invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every gauge transformation; so no gauge-invariant functional of $\tilde{A}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal gauge) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
 
@@ -203,7 +203,7 @@ $$
 
 which makes the physical field transverse: the polarization sum annihilates every component along $\vec u_k$.
 
-This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma_{\mathrm{met},0}=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=i c r'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
+This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma_{\mathrm{met},0}=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma_{\mathrm{met}}$, with $\sigma_{\mathrm{met},0}=-1$ and $\sigma_{\mathrm{met},k}=+1$, is the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i c r'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.
 
 The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$ removes the gauge freedom non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.
 
@@ -238,7 +238,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 - **The intrinsic Lagrangian and pairings.** The parent Dirac article records that the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are not fixed by the algebra. The same is true here, and more sharply, because the natural variable $\tilde{F}$ has no canonical partner at all. Whether a real-scalar Lagrangian built from the trace and norm pairings reproduces the standard constraint structure is not shown.
 - **The biquaternion Fock space.** Whether there is a Fock space native to $\mathbb{B}$, rather than the exterior (fermionic) or symmetric (bosonic) algebra of a module's solution space, is the subject of the planned companion article on the Fock space.
 - **The photon.** Whether the two transverse polarizations have a native meaning in the algebra — for instance, in the vector part of the material sector — is the subject of the planned article on the photon.
-- **The sector straddle.** Whether $\tilde{A}\in\mathbb{M}_-$ and $\tilde{\pi}\in\mathbb{M}_+$ has algebraic content or is a convention effect is undecided.
+- **The sector straddle.** Whether $\tilde{A}\in\mathbb{B}_{\Phi}$ and $\tilde{\pi}\in\mathbb{B}_{\Psi}$ has algebraic content or is a convention effect is undecided.
 - **The vacuum energy.** As in the Dirac case, whether the algebra singles out a regularization or a geometric meaning for the zero-point energy is open.
 - **Empirical content.** Whether any of this yields a prediction distinguishing it from standard quantum electrodynamics is the unanswered framework-level question.
 
@@ -259,18 +259,18 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion-conjugate gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (vanishing scalar part) |
 | $\tilde J=ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Gauge function, $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ |
 | $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2=S-\Box\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
-| $\delta_{\mu\nu}$ | Unit metric, all four coefficients $+1$; $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$ is the biquaternion norm on $\mathbb{M}_-$, with $Q_t=i c r'_t$ |
+| $\delta_{\mu\nu}$ | Unit metric, all four coefficients $+1$; $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$ is the biquaternion norm on $\mathbb{B}_{\Phi}$, with $Q_t=i c r'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |
 | $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |

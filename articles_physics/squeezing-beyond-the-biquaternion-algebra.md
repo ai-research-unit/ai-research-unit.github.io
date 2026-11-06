@@ -14,7 +14,7 @@ The article states each boundary, computes what can be computed, and marks the r
 
 The article is organised as follows. The next section sets up squeezing inside the algebra and verifies the squeezed-vacuum uncertainty product. The third section explains why the module cannot be squeezed centrally and where spin squeezing lives. The fourth treats contractions and the degeneration of the biquaternion norm. The fifth treats q-deformations, Clifford and octonionic enlargements, and infinite-dimensional or non-$*$-unitary extensions. The sixth collects the boundary statements, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$; and the biquaternion norm is $\langle x\rangle_{\natural}=x x^{\natural}$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi,\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{H}$ is the real-quaternion subspace; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$; and the biquaternion norm is $\langle x\rangle_{\natural}=x x^{\natural}$.
 
 ## Squeezing Inside the Algebra
 
@@ -268,9 +268,9 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the squeeze operator |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; home of the squeeze operator |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\langle x\rangle_{\natural}=x x^{\natural}$ | Biquaternion norm |
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_t$ |

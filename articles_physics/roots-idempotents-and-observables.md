@@ -15,7 +15,7 @@ The article owns no theorem. Every classification, bijection and count is stated
 | The classification of the roots of $+1$: the two central roots, the purely imaginary family and the non-trivial family | [Idempotents](../articles_maths/idempotents.html) |
 | The halving map, the pair map and the spectral resolution of a root | [Idempotents](../articles_maths/idempotents.html) |
 | The idempotents, orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| The sectors $\mathbb{M}_\pm$, the Hermitian conjugation and the trace | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| The sectors $\mathbb{B}_{\Psi,\Phi}$, the Hermitian conjugation and the trace | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms to the remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The roots of $-1$ and their relation to the roots of $+1$ | [Idempotents](../articles_maths/idempotents.html) |
 | The root sets and idempotent sets of the twelve structures | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
@@ -113,7 +113,7 @@ The central root $i$ is the distinguished one. It commutes with every element, s
 
 **The boundary with the local complex structure.** The corpus's *local complex structure* of the material sector is a different object again: it is the fixed central $i$ with a point-dependent real scale $c(x)$, the writing $i c r'_t$ of the material time, and its locality is the locality of the scale, not of the root. A non-central root of $-1$ is not that structure, and the two must not be conflated. In particular, a root of $-1$ is not a *local* complex structure: the root is a constant element of the algebra, and the point-dependence belongs to the physical identification with the medium.
 
-One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, so a Hermitian root of $+1$ is carried to an **anti-Hermitian** root of $-1$. The observables of the article lie in the informational sector $\mathbb{M}_+$; the roots of $-1$ read off them lie in the material sector $\mathbb{M}_-$. The sign of the radicand separates the sectors. That is the algebraic reason those complex structures are material objects and not observables. Conversely, a root of $-1$ in $\mathbb{M}_-$ is $\pm i$ or a real unit vector, so the material roots of $-1$ are exactly the images of the Hermitian roots of $+1$. The general non-Hermitian root $-\vec\zeta'+i\vec\zeta$ is not in $\mathbb{M}_-$: it has zero scalar part and a vector part with a nonzero imaginary piece.
+One sign statement belongs here. The central $i$ is anti-Hermitian, $i^{*}=-i$, so a Hermitian root of $+1$ is carried to an **anti-Hermitian** root of $-1$. The observables of the article lie in the informational sector $\mathbb{B}_{\Psi}$; the roots of $-1$ read off them lie in the material sector $\mathbb{B}_{\Phi}$. The sign of the radicand separates the sectors. That is the algebraic reason those complex structures are material objects and not observables. Conversely, a root of $-1$ in $\mathbb{B}_{\Phi}$ is $\pm i$ or a real unit vector, so the material roots of $-1$ are exactly the images of the Hermitian roots of $+1$. The general non-Hermitian root $-\vec\zeta'+i\vec\zeta$ is not in $\mathbb{B}_{\Phi}$: it has zero scalar part and a vector part with a nonzero imaginary piece.
 
 ## The Same Equation Across the Twelve Structures
 
@@ -123,7 +123,7 @@ The equation is relative to the product, so the twelve structures carry twelve r
 | --- | --- | --- | --- |
 | gpa, composition | $\pm e_t$, the purely imaginary roots and the non-Hermitian roots | the trivial pair and the halving image of every nontrivial root | the involutions and the idempotents |
 | gps, probability | the $*$-unitary group $\mathrm{U}(2)$ | the trivial pair and the Hermitian states | the reversible symmetries of the pairing |
-| gqa, causality | the quadric $C=+1$, with $C=\langle\tilde{Ζ}\rangle_{\natural}$ | the trivial pair only | on $\mathbb{M}_-$, the spacelike unit shell of the interval |
+| gqa, causality | the quadric $C=+1$, with $C=\langle\tilde{Ζ}\rangle_{\natural}$ | the trivial pair only | on $\mathbb{B}_{\Phi}$, the spacelike unit shell of the interval |
 | gqs, gauge | the slope family $c(\vec u+it)$ with $\lvert\vec u\rvert=1$, $\lvert t\rvert>1$ and $(t^2-1)\lvert c\rvert^2=1$, and the central circle $\lvert a\rvert^2=1$ | the trivial pair and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | its idempotents are units of the algebra, hence reversible |
 | the four brackets | none | the origin only | an infinitesimal transformation has no involution and no state |
 
@@ -163,7 +163,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 | $\tilde\Pi$, $\tilde\Pi_\pm$ | an idempotent and the two members of a complete pair |
 | $\tilde{Ϛ}$ | a general state |
 | $\tilde\Pi_\pm(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | the halving map and its two branches |
-| $\mathbb{M}_\pm$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
+| $\mathbb{B}_{\Psi,\Phi}$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |

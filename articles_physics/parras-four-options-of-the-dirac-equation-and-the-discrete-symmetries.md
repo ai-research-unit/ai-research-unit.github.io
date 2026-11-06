@@ -126,10 +126,10 @@ The discrete group $D$ of the previous section is the quotient of the group of u
 | map | sign on $(T_{\mathrm m},T_{\mathrm i},X_{\mathrm m},X_{\mathrm i})$ | fixed space | type |
 |---|---|---|---|
 | $1$ | $(+,+,+,+)$ | $\mathbb{B}$ | identity |
-| $\bar{\cdot}$ | $(-,+,+,-)$ | $\mathbb{H}_{\mathbb{B}}$, the real quaternions | anti-linear automorphism |
-| ${}^{\natural}$ | $(+,+,-,-)$ | $\mathbb{C}_{\mathbb{B}}$, the centre | linear anti-automorphism |
-| ${}^{*}={}^{\natural}\bar{\cdot}$ | $(-,+,-,+)$ | $\mathbb{M}_+$, the informational sector | anti-linear anti-automorphism |
-| $\flat=-{}^{*}$ | $(+,-,+,-)$ | $\mathbb{M}_-$, the material sector | anti-linear, reverses products with a twist: $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$ |
+| $\bar{\cdot}$ | $(-,+,+,-)$ | $\mathbb{B}_{H}$, the real quaternions | anti-linear automorphism |
+| ${}^{\natural}$ | $(+,+,-,-)$ | $\mathbb{B}_{C}$, the centre | linear anti-automorphism |
+| ${}^{*}={}^{\natural}\bar{\cdot}$ | $(-,+,-,+)$ | $\mathbb{B}_{\Psi}$, the informational sector | anti-linear anti-automorphism |
+| $\flat=-{}^{*}$ | $(+,-,+,-)$ | $\mathbb{B}_{\Phi}$, the material sector | anti-linear, reverses products with a twist: $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$ |
 
 The first four rows are the Klein four $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$, and the four blocks are indexed by its four characters: each block is a joint eigenspace, and the sign pattern on it is the value of the character that indexes it. That is why the block decomposition is canonical. The last row is **not** a fifth group element: $\flat$ differs from ${}^{*}$ by the central sign, and its sign pattern is the negative of the row of ${}^{*}$. It is the fifth pattern and not a fifth character, and the charge-conjugation pairing is read on it below. The entries and the fixed spaces belong to *The Biquaternion Space, the Group of Involutions and the Six Subspaces*; the table is restated here because the discrete symmetries are read on it.
 
@@ -168,7 +168,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp},\{r\}}=\tilde q_{r1}+i\,\tilde q_{r2},
 $$
 
-the sum of a real quaternion $\tilde q_{r1}\in\mathbb{H}_{\mathbb{B}}$ and the central $i$ times a real quaternion $\tilde q_{r2}$ — the decomposition of an element into the two halves $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ fixed in *Algebra and Element Conventions*. (Parra writes the second quaternion through its quaternion conjugation, which is the natural sign on the real quaternions and names the same four real coefficients.)
+the sum of a real quaternion $\tilde q_{r1}\in\mathbb{B}_{H}$ and the central $i$ times a real quaternion $\tilde q_{r2}$ — the decomposition of an element into the two halves $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ fixed in *Algebra and Element Conventions*. (Parra writes the second quaternion through its quaternion conjugation, which is the natural sign on the real quaternions and names the same four real coefficients.)
 
 **Proposition (the Parra field is the corpus's field).** The map $q_{r1}+i\bar q_{r2}\mapsto\tilde{Ξ}_{\mathrm{sp},\{r\}}$ sends the Parra field of each option into the algebra $\mathbb{B}$, and a general element of $\mathbb{B}$ has eight real parameters — exactly the eight real fields of the source.
 
@@ -225,7 +225,7 @@ The options are permuted by the quotient of the group of units by its identity c
 | $D=\Gamma_{1,3}/\Gamma^{0}_{1,3}$ | The discrete quotient; order four, permuting the four options |
 | $e^{\pm}_{\uparrow\downarrow}$ | Parra's particle labels: electron and positron, spin up and down |
 | $\Pi$, $J_2$, $J_1$ | The three maps relating the four fields, in the source's letters; $\Pi$ is the permutation of the four coordinates and not an element of the algebra, and it acts complex-linearly, $(Q_t,Q_x,Q_y,Q_z)\mapsto(Q_y,Q_z,Q_t,Q_x)$; $J_2$ and $J_1$ after the coefficient conjugation, by $(-Q_x,Q_t,Q_z,-Q_y)$ and $(Q_z,-Q_y,-Q_x,Q_t)$ |
-| $\tilde q_{r1}+i\tilde q_{r2}$ | The two quaternion halves of the Parra field, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ |
+| $\tilde q_{r1}+i\tilde q_{r2}$ | The two quaternion halves of the Parra field, $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ |
 | $T_{\mathrm m},T_{\mathrm i},X_{\mathrm m},X_{\mathrm i}$ | The four blocks: material time $\mathbb R(ie_t)$, informational time $\mathbb R(e_t)$, material space, informational space $iX_{\mathrm m}$ |
 | $\eta=\vec e_x$ | The element of the charge-conjugation bilinear, $\tilde{Ξ}_{\mathrm{sp}}^{\mathsf T}\eta\tilde{Ξ}_{\mathrm{sp}}$, a right multiplier; $\eta^2=-e_t$ |
 | $\eta_C:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The element of the operation $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=\eta_C\tilde{Ξ}_{\mathrm{sp}}^*$; $\eta_C^2=e_t$ |

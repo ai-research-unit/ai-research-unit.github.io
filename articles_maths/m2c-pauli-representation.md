@@ -474,7 +474,7 @@ which is the $4Q_t$ of §*The Trace* of the $4\times4$ article. The factor $2$ i
 
 **The trace is not the norm.** The trace is additive and complex-valued; it does not detect the vector part. The statement is the matrix form of the split
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B}).
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}.
 $$
 
 ## The Determinant
@@ -725,12 +725,12 @@ and write $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$. In the first row $
 
 | Subspace | Defining condition | Condition on $A$ | Real dim. | Trace | $\det A$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $\tilde Q^{\natural}=\tilde Q$ | $A=\lambda\mathrm I_2$ | $2$ | $2Q_t$ | $Q_t^2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}A=0$ | $6$ | $0$ | $B^2$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=\tilde Q$ | $A=A_{\mathbb{H}}(a,b)$ | $4$ | $2q_t$ | $\sum q_\mu^2$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\overline{\tilde Q}=-\tilde Q$ | $A=A_{i\mathbb{H}}(a,b)$ | $4$ | $2iq'_t$ | $-\sum(q'_\mu)^2$ |
-| $\mathbb{M}_+$ | $\tilde Q^{*}=\tilde Q$ | $A=A^{\dagger}$ | $4$ | $2q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ |
-| $\mathbb{M}_-$ | $\tilde Q^{\flat}=\tilde Q$ | $A=-A^{\dagger}$ | $4$ | $2iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ |
+| $\mathbb{B}_{C}$ | $\tilde Q^{\natural}=\tilde Q$ | $A=\lambda\mathrm I_2$ | $2$ | $2Q_t$ | $Q_t^2$ |
+| $\mathbb{B}_{V}$ | $\tilde Q^{\natural}=-\tilde Q$ | $\operatorname{Tr}A=0$ | $6$ | $0$ | $B^2$ |
+| $\mathbb{B}_{H}$ | $\overline{\tilde Q}=\tilde Q$ | $A=A_{\mathbb{H}}(a,b)$ | $4$ | $2q_t$ | $\sum q_\mu^2$ |
+| $\mathbb{B}_{iH}$ | $\overline{\tilde Q}=-\tilde Q$ | $A=A_{i\mathbb{H}}(a,b)$ | $4$ | $2iq'_t$ | $-\sum(q'_\mu)^2$ |
+| $\mathbb{B}_{\Psi}$ | $\tilde Q^{*}=\tilde Q$ | $A=A^{\dagger}$ | $4$ | $2q_t$ | $q_t^2-\lvert\vec q'\rvert^2$ |
+| $\mathbb{B}_{\Phi}$ | $\tilde Q^{\flat}=\tilde Q$ | $A=-A^{\dagger}$ | $4$ | $2iq'_t$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ |
 
 **No warning is needed.** In the $4\times4$ article the conditions in the third column are exact only inside the image, because the ambient $M_4(\mathbb{C})$ contains matrices that are not left regular matrices. In the $2\times2$ model the image is the whole of $M_2(\mathbb{C})$, so every condition is exact on the whole matrix algebra. The table is the compression of the $4\times4$ table, and the warning of the $4\times4$ article disappears.
 
@@ -792,15 +792,15 @@ The determinant is indefinite with the opposite sign. Neither subspace is a suba
 
 **The three decompositions.** The six subspaces pair into
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
-=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
-=\mathbb{M}_+\oplus\mathbb{M}_-,
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}
+=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}
+=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector split, the second the real–imaginary split, the third the Hermitian–anti-Hermitian split. No one refines another.
 
-**The intersections.** The centre meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_2$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_2$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{M}_+$ in $i$ times the real vector triple and $\mathbb{M}_-$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.
+**The intersections.** The centre meets $\mathbb{B}_{\Psi}$ in the real line $\mathbb{R}\mathrm I_2$ and $\mathbb{B}_{\Phi}$ in the imaginary line $i\mathbb{R}\mathrm I_2$. The vector subspace meets $\mathbb{B}_{H}$ in the real pure quaternions, of real dimension $3$, and $\mathbb{B}_{iH}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{B}_{\Psi}$ in $i$ times the real vector triple and $\mathbb{B}_{\Phi}$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.
 
-**The closure.** The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.
+**The closure.** The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, and it exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
 ## Summary
 

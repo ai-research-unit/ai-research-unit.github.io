@@ -5,8 +5,8 @@
 The biquaternion algebra splits into the eigenspaces of Hermitian conjugation,
 
 $$
-\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+,\qquad
-\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\},
+\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi},\qquad
+\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\},
 $$
 
 and the two summands are the material and the informational sectors of the framework. The preceding articles give each sector its physics. This one asks the question that neither of them owns: which operations of the algebra couple the two sectors, and which do not.
@@ -33,15 +33,15 @@ Every biquaternion decomposes uniquely into a Hermitian and an anti-Hermitian pa
 
 $$
 \tilde Q=\tilde R_\psi+\tilde R_\varphi,\qquad
-\tilde R_\psi=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{M}_+,\qquad
-\tilde R_\varphi=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{M}_- .
+\tilde R_\psi=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{B}_{\Psi},\qquad
+\tilde R_\varphi=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{B}_{\Phi} .
 $$
 
 With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.
 
 Two properties of the split are used throughout.
 
-- **It is a real subspace, not a complex one.** The sector $\mathbb{M}_+$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
+- **It is a real subspace, not a complex one.** The sector $\mathbb{B}_{\Psi}$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
 - **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\varphi,k}=i c r'_t_k+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
 
 $$
@@ -53,7 +53,7 @@ The first two terms are Hermitian and the last is anti-Hermitian, so the product
 
 The second property is the reason the coupling question exists. If the sectors were ideals, every product would stay in its sector and there would be nothing to catalogue.
 
-The centre does not supply a central decomposition. A central element $ze_t$ is Hermitian for real $z$ and anti-Hermitian for imaginary $z$, so the **real** centre splits along the sectors: $\mathbb{R}e_t\subset\mathbb{M}_+$ and $i\mathbb{R}e_t\subset\mathbb{M}_-$. A general central element is the sum of one part in each, so the complex centre straddles the split and supplies no complex central projection. The split is a real-structure decomposition of the underlying real vector space, not a grading of the algebra and not a central projection, and this is the algebraic fact behind the superselection interpretation at the end.
+The centre does not supply a central decomposition. A central element $ze_t$ is Hermitian for real $z$ and anti-Hermitian for imaginary $z$, so the **real** centre splits along the sectors: $\mathbb{R}e_t\subset\mathbb{B}_{\Psi}$ and $i\mathbb{R}e_t\subset\mathbb{B}_{\Phi}$. A general central element is the sum of one part in each, so the complex centre straddles the split and supplies no complex central projection. The split is a real-structure decomposition of the underlying real vector space, not a grading of the algebra and not a central projection, and this is the algebraic fact behind the superselection interpretation at the end.
 
 ### The Computational Split Is Not the Physical Split
 
@@ -61,19 +61,19 @@ The algebra also carries the **computational split** into its real and imaginary
 
 The **sector split** is a different structure. It is the eigenspace decomposition of the involution ${}^{*}$, and it is not a grading of the algebra: the product of two material elements is not material. It is the split that carries the superselection rule, and its two halves are the physical sectors.
 
-The two cannot be aligned. A sector would have to be homogeneous under the computational grading if the two splits agreed, but $\mathbb{M}_+$ contains the even element $e_t$ and the odd element $i\vec e_x$, and $\mathbb{M}_-$ contains the even element $\vec e_x$ and the odd element $i e_t$. Multiplication by $i$ is odd for the computational grading and exchanges the two sectors, so it relates the two structures without making them one. The four intersections are all nonzero — the real scalar line, the real vector subspace, the imaginary vector subspace and the imaginary scalar line — so neither split refines the other. A computation may use the real and imaginary parts, but the physical statement must use the sector split; the two $\mathbb{Z}_2$ structures are distinct, and multiplication by $i$ is the map that shows it.
+The two cannot be aligned. A sector would have to be homogeneous under the computational grading if the two splits agreed, but $\mathbb{B}_{\Psi}$ contains the even element $e_t$ and the odd element $i\vec e_x$, and $\mathbb{B}_{\Phi}$ contains the even element $\vec e_x$ and the odd element $i e_t$. Multiplication by $i$ is odd for the computational grading and exchanges the two sectors, so it relates the two structures without making them one. The four intersections are all nonzero — the real scalar line, the real vector subspace, the imaginary vector subspace and the imaginary scalar line — so neither split refines the other. A computation may use the real and imaginary parts, but the physical statement must use the sector split; the two $\mathbb{Z}_2$ structures are distinct, and multiplication by $i$ is the map that shows it.
 
 **The boundary.** The computational split is a grading of the algebra over the real form; the sector split is a real-structure decomposition with a superselection reading. Neither is an ideal decomposition, and the caution is against reading a real/imaginary bookkeeping as the physical split.
 
 ### The Conjugations Preserve the Split
 
-**Check.** Each of the four conjugations $1,\bar{\cdot},{}^{\natural},{}^{*}$ maps each sector into itself, and so does the real structure $\flat=-{}^{*}$. A sector is defined by the sign of the adjoint, and every conjugation commutes with ${}^{*}$: the four maps form the Klein four-group, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$. For $c$ in that group and $\tilde Q\in\mathbb{M}_-$,
+**Check.** Each of the four conjugations $1,\bar{\cdot},{}^{\natural},{}^{*}$ maps each sector into itself, and so does the real structure $\flat=-{}^{*}$. A sector is defined by the sign of the adjoint, and every conjugation commutes with ${}^{*}$: the four maps form the Klein four-group, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$. For $c$ in that group and $\tilde Q\in\mathbb{B}_{\Phi}$,
 
 $$
 c(\tilde Q)^{*}=c(\tilde Q^{*})=c(-\tilde Q)=-c(\tilde Q),
 $$
 
-so $c(\tilde Q)$ is again material. The argument for $\mathbb{M}_+$ is the same with the opposite sign, and $\flat$ inherits the property because $\flat(\tilde Q)=-{}^{*}\tilde Q$ and ${}^{*}$ commutes with every $c$.
+so $c(\tilde Q)$ is again material. The argument for $\mathbb{B}_{\Psi}$ is the same with the opposite sign, and $\flat$ inherits the property because $\flat(\tilde Q)=-{}^{*}\tilde Q$ and ${}^{*}$ commutes with every $c$.
 
 The check is exact and it is narrow. It says that no operation built from the conjugations crosses the split. It says nothing about operations of another type, and the four couplings below are the other operations the corpus uses.
 
@@ -104,7 +104,7 @@ $$
 \tilde R_\varphi\longmapsto\tilde{R}_\varphi^{\natural}\tilde R_\varphi=\langle\tilde R_\varphi\rangle_{\natural}e_t
 $$
 
-is a map $\mathbb{M}_-\to\mathbb{M}_+$ with image the real scalar line $\mathbb{R}e_t$.
+is a map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ with image the real scalar line $\mathbb{R}e_t$.
 
 **Interpretation.** The norm square is the interval, and the interval is a value of the informational sector. The bridge is the minimal one the product supplies: a process is sent to the scalar that measures it, and no further structure is used. For $\tilde R_\varphi=2ie_t+3\vec e_x$ the interval is $-4+9=5$, and the bridge sends the element to $5e_t$. A lightlike element is sent to $0$: the zero-divisor cone lies in the kernel of the bridge.
 
@@ -120,7 +120,7 @@ $$
 \boxed{\;(i\tilde Q)^{*}=\tilde Q^{*}i^{*}=-i\tilde Q^{*}\;},
 $$
 
-so multiplication by $i$ flips the sign of the adjoint and with it the sector: $i\mathbb{M}_+=\mathbb{M}_-$ and $i\mathbb{M}_-=\mathbb{M}_+$. The map is a bijection of the algebra, of order four, and it reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$.
+so multiplication by $i$ flips the sign of the adjoint and with it the sector: $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The map is a bijection of the algebra, of order four, and it reverses the norm, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$.
 
 **Interpretation.** The two sectors carry the two times, the real and the imaginary parts of one central coordinate, and the exchange reads one time against the other. Multiplication by $i$ is the relational clock: the quarter turn is the tick, and each sector is the other's clock.
 
@@ -136,7 +136,7 @@ The algebra limits what such a value can be. The centre is a field, $\mathbb{C}e
 
 ### An Action: the Rotor
 
-A unit-norm Hermitian element $\tilde U\in\mathbb{M}_+$ acts on the algebra by the sandwich. For $\tilde R_\varphi\in\mathbb{M}_-$,
+A unit-norm Hermitian element $\tilde U\in\mathbb{B}_{\Psi}$ acts on the algebra by the sandwich. For $\tilde R_\varphi\in\mathbb{B}_{\Phi}$,
 
 $$
 (\tilde U\tilde R_\varphi\tilde U^{*})^{*}=\tilde U\tilde{R}_\varphi^{*}\tilde U^{*}
@@ -147,22 +147,22 @@ because $(\tilde U^{*})^{*}=\tilde U$ and $\tilde{R}_\varphi^{*}=-\tilde R_\varp
 
 **Interpretation.** The informational sector supplies the boosts of the material sector. A positive Hermitian rotor is a boost, the sandwich is the change of frame, and the material element is the object transformed. The bridge is an action of one sector on the other, not a map between them; the frame and the object remain in their own sectors.
 
-The positive Hermitian rotors are the boosts. A rotor with an imaginary vector part, $\cosh(\eta/2)+i\sinh(\eta/2)\vec e_x$, has unit norm, is Hermitian, and its sandwich mixes the time and the spatial components. A rotation rotor is a real quaternion, $\cos(\theta/2)+\sin(\theta/2)\vec e_z$; it is $*$-unitary but not Hermitian, it is not an element of $\mathbb{M}_+$, and its sandwich rotates the spatial part while fixing the time axis.
+The positive Hermitian rotors are the boosts. A rotor with an imaginary vector part, $\cosh(\eta/2)+i\sinh(\eta/2)\vec e_x$, has unit norm, is Hermitian, and its sandwich mixes the time and the spatial components. A rotation rotor is a real quaternion, $\cos(\theta/2)+\sin(\theta/2)\vec e_z$; it is $*$-unitary but not Hermitian, it is not an element of $\mathbb{B}_{\Psi}$, and its sandwich rotates the spatial part while fixing the time axis.
 
-The rotation's sandwich preserves both sectors, as every congruence does; what it does not do is supply its parameter from $\mathbb{M}_+$. The distinction is the origin of the parameter and not the destination of the image: the boost is generated by an element of the informational sector, the rotation by an element of the material one. The Cartan exponents sharpen the same statement. The logarithm of the Hermitian factor is $\ln\tilde R_\psi=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp}}}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$, and the logarithm of the $*$-unitary factor is $\ln\tilde U=i\alpha e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$: the boost generator is informational, while the rotation and the central phase are both material generators. The split is of the logarithms and not of the factors, because $\tilde U$ is $*$-unitary and not an element of $\mathbb{M}_-$. By the polar decomposition, a general unit-norm rotor is the product of a boost and a rotation, so its action composes a bridge with a motion that is not one.
+The rotation's sandwich preserves both sectors, as every congruence does; what it does not do is supply its parameter from $\mathbb{B}_{\Psi}$. The distinction is the origin of the parameter and not the destination of the image: the boost is generated by an element of the informational sector, the rotation by an element of the material one. The Cartan exponents sharpen the same statement. The logarithm of the Hermitian factor is $\ln\tilde R_\psi=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp}}}{2}\vec u_{\mathrm b}\in\mathbb{B}_{\Psi}$, and the logarithm of the $*$-unitary factor is $\ln\tilde U=i\alpha e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{B}_{\Phi}$: the boost generator is informational, while the rotation and the central phase are both material generators. The split is of the logarithms and not of the factors, because $\tilde U$ is $*$-unitary and not an element of $\mathbb{B}_{\Phi}$. By the polar decomposition, a general unit-norm rotor is the product of a boost and a rotation, so its action composes a bridge with a motion that is not one.
 
-**Boundary.** Only the unit-norm elements are rotors. The general element of $\mathbb{M}_+$ acts by a sandwich that is a congruence rescaling the interval and not an isometry, and the full action theory belongs to the geometry block, not here.
+**Boundary.** Only the unit-norm elements are rotors. The general element of $\mathbb{B}_{\Psi}$ acts by a sandwich that is a congruence rescaling the interval and not an isometry, and the full action theory belongs to the geometry block, not here.
 
 ### A Pairing: the Off-Sector Scalar
 
-For $\tilde R_\varphi=i c r'_t+\vec v\in\mathbb{M}_-$ and $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi\in\mathbb{M}_+$, with real $r'_t$, $\vec v$, $c r_t$ and $\vec r_\psi$, the scalar part of the plain product is
+For $\tilde R_\varphi=i c r'_t+\vec v\in\mathbb{B}_{\Phi}$ and $\tilde R_\psi=c r_t\,e_t+i\vec r_\psi\in\mathbb{B}_{\Psi}$, with real $r'_t$, $\vec v$, $c r_t$ and $\vec r_\psi$, the scalar part of the plain product is
 
 $$
 \boxed{\;\operatorname{Sc}(\tilde R_\varphi\tilde R_\psi)
 =i\bigl(c r'_{t}\,c r_t-(\vec v,\vec r_\psi)\bigr)\;}.
 $$
 
-It is purely imaginary, and it is a pairing $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$: it reads one element of each sector and returns a phase.
+It is purely imaginary, and it is a pairing $\mathbb{B}_{\Phi}\times\mathbb{B}_{\Psi}\to i\mathbb{R}$: it reads one element of each sector and returns a phase.
 
 **Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(c r'_{t},\vec v)$ with the informational four-vector $(c r_t,\vec r_\psi)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(c r'_{t}\,c r_t+\vec v\cdot\vec r_\psi)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
 
@@ -176,10 +176,10 @@ One operation of the algebra mixes the sectors and is not in the catalogue: left
 
 | Operation | Kind | Source and target | Boundary |
 | --- | --- | --- | --- |
-| Norm square | Map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | A map, not an evolution; the product of two material elements is not informational in general |
-| Central multiplication | Bijection | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | Invertible, order four; no arrow |
-| Rotor action | Action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ and preserves it | Unit-norm rotors only; a congruence rescaling the interval off the slice |
-| Off-sector scalar | Pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | A pairing, produces a scalar, does not compose |
+| Norm square | Map | $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$, image $\mathbb{R}e_t$ | A map, not an evolution; the product of two material elements is not informational in general |
+| Central multiplication | Bijection | $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ | Invertible, order four; no arrow |
+| Rotor action | Action | $\mathbb{B}_{\Psi}$ acts on $\mathbb{B}_{\Phi}$ and preserves it | Unit-norm rotors only; a congruence rescaling the interval off the slice |
+| Off-sector scalar | Pairing | $\mathbb{B}_{\Phi}\times\mathbb{B}_{\Psi}\to i\mathbb{R}$ | A pairing, produces a scalar, does not compose |
 
 The table is exhaustive for the couplings the corpus uses. It is not exhaustive for every operation of the algebra: left multiplication is excluded above, and a map built by hand crosses the split by construction. Neither counts as a physical coupling.
 
@@ -187,7 +187,7 @@ The table is exhaustive for the couplings the corpus uses. It is not exhaustive 
 
 ### The Superselection Statement
 
-The four entries are maps, bijections, actions and pairings. None of the four operations is a measurement. An observable is a Hermitian element, and an expectation value is computed inside $\mathbb{M}_+$; no bridge is a process whose outcome could prepare or detect a coherence between the sectors.
+The four entries are maps, bijections, actions and pairings. None of the four operations is a measurement. An observable is a Hermitian element, and an expectation value is computed inside $\mathbb{B}_{\Psi}$; no bridge is a process whose outcome could prepare or detect a coherence between the sectors.
 
 The precise statement is the **superselection interpretation** of the split. The algebra is central simple, so there is no central projection that would split it into two ideals. What survives is a real-structure grading carried by $\flat=-{}^{*}$: the sectors are its eigenspaces, no congruence carries one into the other, and the only relative phase the algebra offers is the central phase $\exp(i\theta)$, which acts as a scalar on the module and is invisible on every ray. Because the conjugation action preserves the sectors, no congruence converts material data into informational data or the reverse, and there is no observable coherence between the two. The module action, left multiplication, does mix the sectors, and it is not an operation in the physical sense.
 
@@ -210,11 +210,11 @@ Two further interpretations belong to the same split and are not new bridges. Th
 - **No dynamics.** Every entry is a map, a bijection, an action or a pairing. None is an equation of motion, and the arrow of time is not among them.
 - **The tensor product is not used.** The article stays in the algebra. Composite systems, where a sector structure could be tensored, are outside its scope.
 - **The scalar product is one of four.** The off-sector pairing is computed with the plain product. The quaternionic product gives $i$ times the Euclidean pairing, and the two sesquilinear products give $i$ times the Minkowski pairing up to sign; the article does not compare them.
-- **The thermal reading is not a Wick rotation.** The Matsubara formalism complexifies the material time inside $\mathbb{M}_-$; it does not rotate the material sector into the informational one. The exchange here is the thermodynamic bookkeeping of the two ledgers, not a rotation of the time axis.
+- **The thermal reading is not a Wick rotation.** The Matsubara formalism complexifies the material time inside $\mathbb{B}_{\Phi}$; it does not rotate the material sector into the informational one. The exchange here is the thermodynamic bookkeeping of the two ledgers, not a rotation of the time axis.
 
 ## Summary
 
-The algebra splits into the material and the informational sectors, the eigenspaces of Hermitian conjugation. The split is a real subspace decomposition and not an ideal decomposition: the sectors are not complex subspaces, the product of two material elements is not in general material, and the real centre splits along the sectors. The conjugations preserve each sector, because each conjugation commutes with the involution that defines the sectors. That is the rigidity half of the answer. The bridge half is a catalogue of four kinds. The norm square is a map from the material sector to the real scalar line, and on a material element it is the interval. Multiplication by the central $i$ is a bijection that exchanges the sectors and reverses the norm, and it is the relational clock. A unit-norm Hermitian rotor acts by the sandwich; the sandwich preserves both sectors for every invertible parameter, so preservation alone does not single out the boost. What does is the sector of the generator: the boost's generator lies in $\mathbb{M}_+$, the rotation's in $\mathbb{M}_-$, so the boost is a bridge supplied by the informational sector and the rotation is a material motion. The boost factor itself is Hermitian and the rotation factor itself is a real quaternion: the boost factor shares the sector of its generator, the rotation factor does not. The off-sector scalar part is a pairing that returns a phase. None of the four operations is a measurement, and none supplies a dynamics. The superselection interpretation of the split and the four couplings are the two halves of one statement: the split is rigid for congruences and bridged by the four operations. The computational split into real and imaginary halves is a $\mathbb{Z}_2$ grading and not the sector split; the central scalar is read as a $c$-number background value, not as a projector.
+The algebra splits into the material and the informational sectors, the eigenspaces of Hermitian conjugation. The split is a real subspace decomposition and not an ideal decomposition: the sectors are not complex subspaces, the product of two material elements is not in general material, and the real centre splits along the sectors. The conjugations preserve each sector, because each conjugation commutes with the involution that defines the sectors. That is the rigidity half of the answer. The bridge half is a catalogue of four kinds. The norm square is a map from the material sector to the real scalar line, and on a material element it is the interval. Multiplication by the central $i$ is a bijection that exchanges the sectors and reverses the norm, and it is the relational clock. A unit-norm Hermitian rotor acts by the sandwich; the sandwich preserves both sectors for every invertible parameter, so preservation alone does not single out the boost. What does is the sector of the generator: the boost's generator lies in $\mathbb{B}_{\Psi}$, the rotation's in $\mathbb{B}_{\Phi}$, so the boost is a bridge supplied by the informational sector and the rotation is a material motion. The boost factor itself is Hermitian and the rotation factor itself is a real quaternion: the boost factor shares the sector of its generator, the rotation factor does not. The off-sector scalar part is a pairing that returns a phase. None of the four operations is a measurement, and none supplies a dynamics. The superselection interpretation of the split and the four couplings are the two halves of one statement: the split is rigid for congruences and bridged by the four operations. The computational split into real and imaginary halves is a $\mathbb{Z}_2$ grading and not the sector split; the central scalar is read as a $c$-number background value, not as a projector.
 
 ## Summary of Notation
 
@@ -222,7 +222,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | ${}^{*}$ | Hermitian conjugation, with $\vec e_k^{*}=-\vec e_k$ and $i^{*}=-i$ |
-| $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
+| $\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
 | $\tilde R=\tilde R_\varphi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | A material element, the anti-Hermitian part |

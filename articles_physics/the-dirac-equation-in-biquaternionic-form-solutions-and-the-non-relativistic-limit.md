@@ -147,7 +147,7 @@ $$
 
 Each sum is an operator written as an element times a scalar: the symbol $\tilde w\langle\tilde w,\cdot\rangle_{\mathrm D}$ is the action sending $\tilde{Ξ}$ to $\tilde w\,\langle\tilde w,\tilde{Ξ}\rangle_{\mathrm D}$, a product of an element with a number, and no matrix enters it. The two identities are the algebraic statement that the four solutions at fixed momentum span the amplitude space, and they are what a sum over spins uses.
 
-**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{M}_-$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
+**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ and $j_k=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
 
 ## The bilinears
 
@@ -168,7 +168,7 @@ j_0=\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\right)
 j_k=\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\right)=2p_k
 $$
 
-on a normalized positive-frequency solution: the first is positive, since $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J=ic\,j_0e_t+\vec j\in\mathbb{M}_-$.
+on a normalized positive-frequency solution: the first is positive, since $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J=ic\,j_0e_t+\vec j\in\mathbb{B}_{\Phi}$.
 
 **The spin bilinear and the informational sector.** There is a second bilinear, of a different kind: the spin state of one part. With $\vec u$ a unit vector, the element
 
@@ -176,7 +176,7 @@ $$
 \tilde\rho=\tfrac12\left(e_t+i\vec u\right)
 $$
 
-is Hermitian, satisfies $\tilde\rho^2=\tilde\rho$ and $\mathrm{Tr}\,\tilde\rho=1$, and its components read back as $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$. It is the pure state of the informational sector $\mathbb{M}_+$ with Bloch vector $\vec u$, and it is what a spin state is in this framework: not a column paired with its adjoint, but one element of $\mathbb{M}_+$. The spin of a solution is described by it, and the spin–magnetic coupling of the non-relativistic section is a Hermitian element of the same sector.
+is Hermitian, satisfies $\tilde\rho^2=\tilde\rho$ and $\mathrm{Tr}\,\tilde\rho=1$, and its components read back as $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$. It is the pure state of the informational sector $\mathbb{B}_{\Psi}$ with Bloch vector $\vec u$, and it is what a spin state is in this framework: not a column paired with its adjoint, but one element of $\mathbb{B}_{\Psi}$. The spin of a solution is described by it, and the spin–magnetic coupling of the non-relativistic section is a Hermitian element of the same sector.
 
 **The axial and tensor bilinears.** The remaining two families are built the same way, one product deeper, and they are recorded in *Chiral Fermions in the Biquaternion Framework* together with the axial anomaly. Their components are not used below.
 
@@ -249,7 +249,7 @@ $$
 
 The factor is not put in by hand: it is the coefficient $1/2m$ that the elimination produced, and the elimination is the one the mass term of the biquaternionic equation allows. For the electron $ϙ=-e$ and $\vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S$ with $g=2$, of magnitude one Bohr magneton $\mu_B=e\hbar/2m_e$ at $S_z=\hbar/2$. The observed value differs from $2$ by the anomalous part $a=(g-2)/2\approx\alpha/2\pi$, a radiative correction outside the classical equation treated here.
 
-**The spin coupling and the precession.** The spin term is the Hermitian element $-\frac{ϙ\hbar}{2m}i\vec B$ of the informational sector $\mathbb{M}_+$, and the spin state is the pure state $\tilde\rho=\frac12(e_t+i\vec u)$ of the bilinear section. Under the Pauli Hamiltonian the state evolves by the rotor conjugation generated by that element, and for a uniform magnetic field only the spin term contributes to the motion of $\vec u$: the precession frequency is the Larmor frequency $\omega_L=gϙB/2m=ϙB/m$ at $g=2$ in natural units, which is the familiar spin precession up to the sign of $ϙ$. The description by one part of two complex dimensions, the Pauli equation and the precession are thus one consequence of the biquaternionic equation, read on one element and one multiplication.
+**The spin coupling and the precession.** The spin term is the Hermitian element $-\frac{ϙ\hbar}{2m}i\vec B$ of the informational sector $\mathbb{B}_{\Psi}$, and the spin state is the pure state $\tilde\rho=\frac12(e_t+i\vec u)$ of the bilinear section. Under the Pauli Hamiltonian the state evolves by the rotor conjugation generated by that element, and for a uniform magnetic field only the spin term contributes to the motion of $\vec u$: the precession frequency is the Larmor frequency $\omega_L=gϙB/2m=ϙB/m$ at $g=2$ in natural units, which is the familiar spin precession up to the sign of $ϙ$. The description by one part of two complex dimensions, the Pauli equation and the precession are thus one consequence of the biquaternionic equation, read on one element and one multiplication.
 
 ## Massless case: the Weyl equations and chirality
 
@@ -330,7 +330,7 @@ $$
 
 with $E=+\sqrt{\vec p^2+m^2}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.
 
-The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{M}_-$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{M}_+$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$.
+The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_k)=u_k$.
 
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
@@ -350,7 +350,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\tilde Q=a_te_t+\vec a$ | General element; $\mathrm{Sc}\,\tilde Q=a_t$, $\mathrm{Tr}\,\tilde Q=2a_t$ |
 | coefficient bar | Conjugates the four coefficients, leaves the units |
 | $\tilde Q^{*}$ | $\overline{\tilde Q^{\natural}}$, the Hermitian conjugate |
-| $\mathbb{M}_-,\ \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde Q_L,\ \tilde Q_R$ | The element of value minus one and the element of value plus one |
 | $\tilde{\mathcal P}=iEe_t+\vec p$ | Wave element of a plane wave |
 | $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-(E^2-\vec p^2)$ | Wave-element square; mass shell $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2$ |
@@ -361,7 +361,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\tilde\zeta_{R\pm},\ \tilde\zeta_{L\pm}$ | Helicity elements of the two values, $\mathrm{Tr}(\tilde\zeta^{*}\tilde\zeta)=1$ |
 | $\tilde w_\pm(\vec p),\ \tilde v_\pm(\vec p)$ | Positive- and negative-frequency solutions |
 | $\tilde{Ξ},\ \tilde{Ξ}_{\mathrm{sp}}$ | Large and small part, the values plus one and minus one under right multiplication by $i\vec e_x$ |
-| $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{M}_+$; $\vec u$ the Bloch vector |
+| $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{B}_{\Psi}$; $\vec u$ the Bloch vector |
 | $S,\ P$ | Scalar and pseudoscalar bilinears |
 | $j_0,\ \vec j$, $\tilde J=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
 | $\vec S=\tfrac{\hbar}{2}i\vec e_k$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |

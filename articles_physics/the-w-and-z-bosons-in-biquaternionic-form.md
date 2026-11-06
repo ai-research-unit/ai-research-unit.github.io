@@ -12,9 +12,9 @@ We use the conventions of the companion articles: the algebra, the units, the se
 $$
 \mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2),
 \qquad
-\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
+\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 $$
-of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplication table of *Algebra and Element Conventions* and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
+of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplication table of *Algebra and Element Conventions* and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
 Spacetime indices are written low and every contraction is an explicit sum, in the $i c r'_t$ device of *Unit, Index and Notation Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i c r'_t$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
@@ -193,7 +193,7 @@ where the coefficients are the double-$i$ collapse and nothing else: $[i\vec e_z
 
 ### The W and Z as Proca Fields
 
-A free W or Z of mass $M$ is the Proca field $\tilde A\in\mathbb{M}_-$ of the companion articles; its component vector is written $V_\mu$ here, so that $A_\mu$ stays the photon of the mixing,
+A free W or Z of mass $M$ is the Proca field $\tilde A\in\mathbb{B}_{\Phi}$ of the companion articles; its component vector is written $V_\mu$ here, so that $A_\mu$ stays the photon of the mixing,
 $$
 \mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12 M^2 \sum_\mu V_\mu V_\mu,
 \qquad
@@ -216,7 +216,7 @@ $$
 $$
 The metric contraction $\sum_{\mu,\nu}\delta_{\mu\nu}\mathcal{P}_{\mu\nu}=3$ counts the polarizations, and the timelike sign $\sum_\mu p_\mu p_\mu=-M^2$ on shell, whose one minus is the square of the $i$ that $p_t$ carries, is what makes the sum reproduce itself, so that the three polarizations are complete.
 
-In the framework the massive vector is an element of the material sector, $\tilde{A}\in\mathbb{M}_-$, whose massive wave equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge; the Proca companion writes it in that form. The W and Z are therefore carried by the same object as the photon — a material vector — with the mass term added; the difference between the photon and the Z is that the photon is the massless (self-dual) combination and the Z the massive one, and the difference between the Z and the W is the charge eigenvalue of the adjoint action.
+In the framework the massive vector is an element of the material sector, $\tilde{A}\in\mathbb{B}_{\Phi}$, whose massive wave equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge; the Proca companion writes it in that form. The W and Z are therefore carried by the same object as the photon — a material vector — with the mass term added; the difference between the photon and the Z is that the photon is the massless (self-dual) combination and the Z the massive one, and the difference between the Z and the W is the charge eigenvalue of the adjoint action.
 
 ### The Mixing as a Rotation of the Neutral Plane
 
@@ -276,7 +276,7 @@ with the repeated $\mu,\nu$ summed, which are the three- and four-gauge-boson ve
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The carrier of the massive vector field, as an element of the material sector $\mathbb{M}_-$; the three polarizations and the Proca equation, from the Proca companions; the charge eigenvalues of the charged W, as the eigenvalues $\pm1$ of the adjoint action of the Cartan generator $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}$ on $\vec e_x\pm i\vec e_y$, verified in the defining representation; the neutral plane of $\mathrm{U}(2)$ and the mixing rotation within it; the non-abelian self-couplings, as the expansion of the quaternion commutator with $f_{abc}=2\varepsilon_{abc}$; and the absence of self-coupling for the central factor.
+**Supplied by the algebra, and recomputed here.** The carrier of the massive vector field, as an element of the material sector $\mathbb{B}_{\Phi}$; the three polarizations and the Proca equation, from the Proca companions; the charge eigenvalues of the charged W, as the eigenvalues $\pm1$ of the adjoint action of the Cartan generator $\tilde S_{\mathrm{adj},3}=\tfrac12\mathrm{ad}_{i\vec e_z}$ on $\vec e_x\pm i\vec e_y$, verified in the defining representation; the neutral plane of $\mathrm{U}(2)$ and the mixing rotation within it; the non-abelian self-couplings, as the expansion of the quaternion commutator with $f_{abc}=2\varepsilon_{abc}$; and the absence of self-coupling for the central factor.
 
 **Imported, and left visible.** The group $SU(2)_L\times \mathrm{U}(1)_Y$ and its hypercharge assignments; the Weinberg angle and the mixing; the Higgs doublet, its potential and its vacuum value; the mass relations $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$ and $\rho=1$; the chiral charged and neutral currents and the fermion content; the electromagnetic coupling $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$; the measured masses and mixing angle; and the radiative corrections. All of these are transcribed from the standard electroweak theory and cited as standard.
 
@@ -380,8 +380,8 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The coefficient basis of the algebra; $e_t$ is its unit |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}$ | The centre of the algebra; the abelian factor |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}$ | The centre of the algebra; the abelian factor |
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame cells, written as actions on a field: the time cell, a generator cell, and the volume cell whose two values are the chirality |
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm L}=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, $\tilde{Ξ}_{\mathrm{sp},\mathrm R}=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}_{\mathrm{vol}}$, $R$ the $+1$ value |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |

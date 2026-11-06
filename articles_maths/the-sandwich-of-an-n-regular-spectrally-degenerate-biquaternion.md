@@ -122,7 +122,7 @@ The central phase is invisible in the sandwich, as in the regular sector: $\math
 
 The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\times\vec B/a^2$, so that $\lvert\vec c\rvert=1$, and $X=e_t+i\vec c$.
 
-*Proposition.* $\mathrm{Sd}_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{M}_-$ the fixed null vector is $iX=ie_t-\vec c$.
+*Proposition.* $\mathrm{Sd}_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{B}_{\Phi}$ the fixed null vector is $iX=ie_t-\vec c$.
 
 *Proof.* From $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$,
 

@@ -68,7 +68,7 @@ the **scalar triple product**: for $v=b\times c$ it is $a\wedge b\wedge c=(a\cdo
 
 ### The Frames of a Rotor
 
-**Definition.** Let $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ be the real quaternion subspace and let $r\in\mathbb{H}_{\mathbb{B}}$ have $r^{\dagger}r=e_t$, where $^{\dagger}$ is the Hermitian conjugation of the algebra, which on real quaternions is the quaternion conjugation. The **frame of $r$** is
+**Definition.** Let $\mathbb{B}_{H}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ be the real quaternion subspace and let $r\in\mathbb{B}_{H}$ have $r^{\dagger}r=e_t$, where $^{\dagger}$ is the Hermitian conjugation of the algebra, which on real quaternions is the quaternion conjugation. The **frame of $r$** is
 
 $$
 v_k=r\,(i\vec e_k)\,r^{\dagger},\qquad k=1,2,3 .
@@ -96,7 +96,7 @@ $$
 
 **Theorem (the frame equation).** $\mathrm dv_k=r\,(\mathrm D v_k)\,r^{\dagger}$, and the connection one-form is pure grade two, $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, with no scalar or pseudoscalar part.
 
-**Proof.** Differentiate $v_k=r(i\vec e_k)r^{\dagger}$ and use $\mathrm dr^{\dagger}=-r^{\dagger}\,\mathrm dr\,r^{\dagger}$, which is the differential of $r^{\dagger}r=e_t$. This gives $\mathrm dv_k=\tfrac{i}{2}r(\mathrm d\iota\,\vec e_k-\vec e_k\,\mathrm d\iota)r^{\dagger}$, the displayed equation. For the purity, $\mathrm d\iota=2r^{\dagger}\mathrm dr$ and $r$ a real quaternion, so that $r^{\dagger}\mathrm dr$ is a product of two elements of the real quaternion subspace, which is the even part $\mathbb{H}_{\mathbb{B}}=\mathbb{G}_0\oplus\mathbb{G}_2$ of the grade decomposition; the scalar part of $r^{\dagger}\mathrm dr$ vanishes because $r^{\dagger}\mathrm dr=-\mathrm dr^{\dagger}r$, which is the differential of $r^{\dagger}r=e_t$. So $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, as claimed.
+**Proof.** Differentiate $v_k=r(i\vec e_k)r^{\dagger}$ and use $\mathrm dr^{\dagger}=-r^{\dagger}\,\mathrm dr\,r^{\dagger}$, which is the differential of $r^{\dagger}r=e_t$. This gives $\mathrm dv_k=\tfrac{i}{2}r(\mathrm d\iota\,\vec e_k-\vec e_k\,\mathrm d\iota)r^{\dagger}$, the displayed equation. For the purity, $\mathrm d\iota=2r^{\dagger}\mathrm dr$ and $r$ a real quaternion, so that $r^{\dagger}\mathrm dr$ is a product of two elements of the real quaternion subspace, which is the even part $\mathbb{B}_{H}=\mathbb{G}_0\oplus\mathbb{G}_2$ of the grade decomposition; the scalar part of $r^{\dagger}\mathrm dr$ vanishes because $r^{\dagger}\mathrm dr=-\mathrm dr^{\dagger}r$, which is the differential of $r^{\dagger}r=e_t$. So $\mathrm d\iota\in\mathbb{G}_2\otimes\Omega^1$, as claimed.
 
 **Definition.** Write the connection in the basis of $\mathbb{G}_2$ and its components in the basis of the parameters,
 
@@ -475,7 +475,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 | $i$ | Central scalar imaginary; the pseudoscalar |
 | $i\vec e_x,i\vec e_y,i\vec e_z$, $(i\vec e_\mu)^2=e_t$ | Grade-one units |
 | $\mathbb{G}_1,\mathbb{G}_2,\mathbb{G}_3$ | Grades one, two and three |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\mathbb{G}_0\oplus\mathbb{G}_2$ |
+| $\mathbb{B}_{H}$ | Real quaternion subspace, $\mathbb{G}_0\oplus\mathbb{G}_2$ |
 | $[v]$ | The grade-two element of coefficient vector $v$ |
 | $a\wedge b=-\tfrac12(ab-ba)=[a\times b]$ | Exterior product, this article's sign |
 | $a\cdot b=\tfrac12(ab+ba)$ | Interior product on $\mathbb{G}_1$ |

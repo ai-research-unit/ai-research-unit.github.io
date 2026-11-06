@@ -142,7 +142,7 @@ The table is a table of the full algebra. A physical four-momentum is a point of
 
 ### The Material Slice
 
-On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(r_x,r_y,r_z)$ real. Hence
+On $\mathbb{B}_{\Phi}$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(r_x,r_y,r_z)$ real. Hence
 
 $$
 B^2=r_x^2+r_y^2+r_z^2\ge0,
@@ -152,7 +152,7 @@ $$
 
 The vector square is non-negative and vanishes exactly at the spatial origin. The material slice therefore meets the four cells as follows.
 
-| cell | intersection with $\mathbb{M}_-$ |
+| cell | intersection with $\mathbb{B}_{\Phi}$ |
 | --- | --- |
 | $\Sigma_{11}$ | timelike momenta with $\vec p\neq0$, and spacelike momenta |
 | $\Sigma_{10}$ | the scalar line $Q_t\neq0$, $\vec p=0$: the rest frame |
@@ -165,7 +165,7 @@ The table also shows what is **not** on the real slice: the Jordan part of $\Sig
 
 ### The Informational Slice
 
-On $\mathbb{M}_+$ the coordinates are $Q_t=c r_t$ real and $\vec Q=i(r'_{x},r'_{y},r'_{z})$. Hence
+On $\mathbb{B}_{\Psi}$ the coordinates are $Q_t=c r_t$ real and $\vec Q=i(r'_{x},r'_{y},r'_{z})$. Hence
 
 $$
 B^2=-(r'_{x}^2+r'_{y}^2+r'_{z}^2)\le0,
@@ -245,8 +245,8 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 | $\mathcal N=\{N=0\}$ | the null cone, the zero-divisor cone |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{ij}$ | the cell with $N=0$ iff $i=0$ and $B^2=0$ iff $j=0$ |
-| $\mathbb{M}_-$ | the material slice, $Q_t=i c r'_t$, $\vec Q$ real |
-| $\mathbb{M}_+$ | the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary |
+| $\mathbb{B}_{\Phi}$ | the material slice, $Q_t=i c r'_t$, $\vec Q$ real |
+| $\mathbb{B}_{\Psi}$ | the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the four-momentum chart |
 | $m$, $\vec p$, $\theta_{\mathrm{rpd}}$ | mass, momentum, rapidity |
 

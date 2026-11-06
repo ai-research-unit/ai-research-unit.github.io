@@ -39,13 +39,13 @@ There is a finite criterion hiding in the same place, and it must not be confuse
 
 In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word *independent*.
 
-**Theorem.** There are no $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$.
+**Theorem.** There are no $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$.
 
 **Proof.** Write $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\psi,1},\vec r_{\psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$; the cross terms contribute the symmetric $\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\psi,1}$ and $\tilde{R}_{\psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]\bigr)=0\;}.
 $$
-The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
+The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
 **The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter $*$-unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
 
@@ -55,11 +55,11 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, 
 
 Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.
 
-**What $\mathbb{M}_+$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Its states are the elements $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
+**What $\mathbb{B}_{\Psi}$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Its states are the elements $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
 
 **An internal algebra.** The algebra describes **internal** degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.
 
-**The spin analogy, stated exactly.** In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\hbar\sum_k\epsilon_{ijk}S_k$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{M}_+$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.
+**The spin analogy, stated exactly.** In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\hbar\sum_k\epsilon_{ijk}S_k$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{B}_{\Psi}$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.
 
 **What the framework does have.** It has the rotation bracket, the state space, the Born pairing, the $*$-unitary dynamics on its state module, and the Fourier transform. None of these is a position operator, and none of them requires one. That is the whole content of the word *internal*.
 
@@ -77,13 +77,13 @@ The independence claim can now be stated in one paragraph, with its one-directio
 
 The framework is not without commutators, and the one it carries is worth naming so that "no canonical relation" is not read as "no commutation relation".
 
-**Angular momentum.** With the spin elements $\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{M}_+$ one has
+**Angular momentum.** With the spin elements $\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{B}_{\Psi}$ one has
 $$
 [\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_{k}\epsilon_{ijk}\tilde{S}_k,
 $$
 the bracket of internal rotations, verified on the matrix model. The algebra therefore carries a non-abelian commutation relation of an observable pair, and it carries it exactly, for every value of $\hbar$.
 
-**Rotation, not translation.** The bracket of $\mathbb{M}_+$ closes on the rotation generators because internal structure rotates. It does not close on translation generators because internal structure has no space in which to translate. This is the sharpest way to put the distinction: **the framework holds the bracket of the compact group and not the bracket of the non-compact one.** The canonical relation is the algebra of the translation group, and the translation group is where the continuum enters.
+**Rotation, not translation.** The bracket of $\mathbb{B}_{\Psi}$ closes on the rotation generators because internal structure rotates. It does not close on translation generators because internal structure has no space in which to translate. This is the sharpest way to put the distinction: **the framework holds the bracket of the compact group and not the bracket of the non-compact one.** The canonical relation is the algebra of the translation group, and the translation group is where the continuum enters.
 
 The framework also carries the Jordan and sesquilinear structures catalogued elsewhere in the series, and the bracket that fails to be a Lie bracket — the conjugate commutator — is recorded as a separate structural fact. None of these is the canonical relation, and none of them is obtained by weakening it.
 
@@ -150,12 +150,12 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$ with $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{M}_+$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=\lambda\,i\,e_t$ with $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
 | Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
-| $\mathbb{M}_+$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
+| $\mathbb{B}_{\Psi}$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
 | Position operator inside $\mathbb{B}$ | None; $\mathbb{B}$ has no element of continuous spectrum |
-| Angular-momentum bracket in $\mathbb{M}_+$ | Holds exactly, $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ |
+| Angular-momentum bracket in $\mathbb{B}_{\Psi}$ | Holds exactly, $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ |
 | Momentum in the framework | The dual (Fourier) variable, an argument and not an algebra element |
 | Position in the framework | The argument of the field, external structure |
 | Unitarity of the transform | Holds exactly for the roots with $\rho^{*}=-\rho$; the assembly of the carrier is root-independent and the isometry is not |
@@ -178,7 +178,7 @@ The claim must not be overread, and the following are not asserted.
 
 ## Summary
 
-The biquaternion framework and the canonical commutation relation are **independent**, in the precise sense that the framework's internal algebra is unchanged whether the relation holds or not, while the framework decides an exact fact about the relation itself. The relation is the algebraic fingerprint of a continuum of configurations: the translation identity forces the spectrum of position to be all of $\mathbb{R}$, and the trace argument forbids any finite-dimensional carrier, since $\mathrm{Tr}([\tilde{Q}_1,\tilde{Q}_2])=0$ while $\mathrm{Tr}(i\hbar\,e_t)=2i\hbar\neq0$. In the framework the obstruction is immediate: for $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{M}_+$ the scalar parts of the two products coincide, so the commutator has no scalar part, while $i\hbar\,e_t$ is purely scalar imaginary. The Hermitian hypothesis is unnecessary for the trace identity, and the same argument applies in every finite-dimensional module. The observable algebra $\mathbb{M}_+$ is the Hermitian part of $M_2(\mathbb{C})$, the observable space of one two-state system, and it carries **no position operator**; the framework is therefore in the position of the spin algebra, which carries the rotation bracket $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ and not the canonical one, and no one describes spin as failing the former. Position and momentum, where the framework uses them, enter as the **argument of the field** and as the **dual variable of the transform**, not as operators of the algebra; the transform presents the carrier as an assembly of copies of the finite algebra — invertibly for every root and isometrically for the degenerate ones — so the carrier can be infinite-dimensional while the algebra is not. A finite carrier does carry a clock-and-shift pair with a root-of-unity phase in place of $i\hbar$, but that is a different relation and the framework is no more dependent on it than on the canonical one. Historically, the canonical relation has never been the ground of a rejection: finite internal algebras were always accepted, and the quaternionic programme's decisive objection was **composition**, the tensor-product obstruction, which is a different entry. The framework's independence from the relation is therefore neither a failure nor a silence: it is a boundary of scope, drawn by the algebra, and the empirical question of whether the continuum is fundamental lies outside it, because the framework supplies no scale with which to ask.
+The biquaternion framework and the canonical commutation relation are **independent**, in the precise sense that the framework's internal algebra is unchanged whether the relation holds or not, while the framework decides an exact fact about the relation itself. The relation is the algebraic fingerprint of a continuum of configurations: the translation identity forces the spectrum of position to be all of $\mathbb{R}$, and the trace argument forbids any finite-dimensional carrier, since $\mathrm{Tr}([\tilde{Q}_1,\tilde{Q}_2])=0$ while $\mathrm{Tr}(i\hbar\,e_t)=2i\hbar\neq0$. In the framework the obstruction is immediate: for $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}_{\Psi}$ the scalar parts of the two products coincide, so the commutator has no scalar part, while $i\hbar\,e_t$ is purely scalar imaginary. The Hermitian hypothesis is unnecessary for the trace identity, and the same argument applies in every finite-dimensional module. The observable algebra $\mathbb{B}_{\Psi}$ is the Hermitian part of $M_2(\mathbb{C})$, the observable space of one two-state system, and it carries **no position operator**; the framework is therefore in the position of the spin algebra, which carries the rotation bracket $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ and not the canonical one, and no one describes spin as failing the former. Position and momentum, where the framework uses them, enter as the **argument of the field** and as the **dual variable of the transform**, not as operators of the algebra; the transform presents the carrier as an assembly of copies of the finite algebra — invertibly for every root and isometrically for the degenerate ones — so the carrier can be infinite-dimensional while the algebra is not. A finite carrier does carry a clock-and-shift pair with a root-of-unity phase in place of $i\hbar$, but that is a different relation and the framework is no more dependent on it than on the canonical one. Historically, the canonical relation has never been the ground of a rejection: finite internal algebras were always accepted, and the quaternionic programme's decisive objection was **composition**, the tensor-product obstruction, which is a different entry. The framework's independence from the relation is therefore neither a failure nor a silence: it is a boundary of scope, drawn by the algebra, and the empirical question of whether the continuum is fundamental lies outside it, because the framework supplies no scale with which to ask.
 
 ## Summary of Notation
 
@@ -190,13 +190,13 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ |
+| $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})=c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
-| $\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin (rotation) generators in $\mathbb{M}_+$ |
+| $\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin (rotation) generators in $\mathbb{B}_{\Psi}$ |
 | $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ | Angular-momentum bracket |
 | $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=\exp(2\pi i/N)$ | Clock of the finite Weyl pair |
 | $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ | Shift of the finite Weyl pair |

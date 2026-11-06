@@ -6,7 +6,7 @@
 
 This article writes that protocol in the biquaternion language of the companion articles. The protocol is worth writing out because it is the one place in the framework where four of its constructions meet at once, and where the difference between them is forced into the open:
 
-- the **state** is a positive element $\tilde{Ϛ}$ of the Hermitian subspace $\mathbb{M}_+\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image);
+- the **state** is a positive element $\tilde{Ϛ}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image);
 - the **entangled resource** is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but *not* $*$-unitary;
 - the **Bell measurement** is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;
 - the **corrections** are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
@@ -39,7 +39,7 @@ $$
 with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maximally mixed. The initial three-qubit state is the single element
 
 $$
-\tilde{Ϛ}^{(0)}=\tilde{Ϛ}_{\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}\in\mathbb{M}_+\otimes\mathbb{M}_+\otimes\mathbb{M}_+ ,
+\tilde{Ϛ}^{(0)}=\tilde{Ϛ}_{\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} ,
 \qquad
 \mathrm{Tr}\left(\tilde{Ϛ}^{(0)}\right)=1\cdot 1=1 ,
 $$
@@ -50,9 +50,9 @@ It is worth stating explicitly which algebra each object belongs to, because the
 
 | Object | Algebra | Algebraic type |
 |---|---|---|
-| $\tilde{Ϛ}_{\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image); $\mathbb{M}_+$ |
-| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of trace one; $\mathbb{M}_+\otimes\mathbb{M}_+$ |
-| $S_1,S_3$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian involutions; $\mathbb{M}_+\otimes\mathbb{M}_+$ |
+| $\tilde{Ϛ}_{\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image); $\mathbb{B}_{\Psi}$ |
+| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of trace one; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
+| $S_1,S_3$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian involutions; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi_\epsilon\otimes e_t$ | $\mathbb{B}^{\otimes3}$ | Hermitian idempotent on factors $(1,2)$ |
 | $\tilde Q_\epsilon$ | $\mathbb{B}$ | $*$-Unitary (Hermitian Pauli); a gate |
 | the classical record | — | two bits, not an element of any of the above |
@@ -68,7 +68,7 @@ $$
 \qquad \epsilon=(-1,+1,-1),
 $$
 
-an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ with $\tilde\Pi_{Ξ^+}^2=\tilde\Pi_{Ξ^+}$, $\tilde\Pi_{Ξ^+}^{*}=\tilde\Pi_{Ξ^+}$ and $\mathrm{Tr}(\tilde\Pi_{Ξ^+})=1$. Its defining property for the protocol is that both its partial traces are maximally mixed, $\mathrm{Tr}_1(\tilde\Pi_{Ξ^+})=\mathrm{Tr}_2(\tilde\Pi_{Ξ^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
+an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ with $\tilde\Pi_{Ξ^+}^2=\tilde\Pi_{Ξ^+}$, $\tilde\Pi_{Ξ^+}^{*}=\tilde\Pi_{Ξ^+}$ and $\mathrm{Tr}(\tilde\Pi_{Ξ^+})=1$. Its defining property for the protocol is that both its partial traces are maximally mixed, $\mathrm{Tr}_1(\tilde\Pi_{Ξ^+})=\mathrm{Tr}_2(\tilde\Pi_{Ξ^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
 
 **The measurement.** Alice measures the pair $(1,2)$ in the Bell basis, that is, she measures the four projectors
 
@@ -290,7 +290,7 @@ The three interpretations are not in conflict; they are the instrument, its bran
 
 **It does provide:**
 
-- A single algebraic home for every object of the protocol: the unknown state in $\mathbb{M}_+$, the resource as a Bell idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$, the measurement idempotents as $\tilde\Pi_\epsilon\otimes e_t$, and the corrections as $*$-unitary Pauli elements of $\mathbb{B}$.
+- A single algebraic home for every object of the protocol: the unknown state in $\mathbb{B}_{\Psi}$, the resource as a Bell idempotent of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the measurement idempotents as $\tilde\Pi_\epsilon\otimes e_t$, and the corrections as $*$-unitary Pauli elements of $\mathbb{B}$.
 - The teleportation identity as an algebraic identity per outcome, $(\tilde\Pi_\epsilon\otimes e_t)\tilde{Ϛ}^{(0)}(\tilde\Pi_\epsilon\otimes e_t)=\tfrac14 \tilde\Pi_\epsilon\otimes(\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*})$, with the four outcomes and the four Pauli corrections displayed in one table and the record expressed as stabiliser eigenvalues.
 - The uniform probability $\tfrac14$ for every outcome and the conditional state $\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*}$ as direct traces and partial traces of that identity.
 - No-signalling and the absence of a copy as two partial-trace computations, and the channel interpretation of the protocol as the rank-four instrument, its rank-one branches, and its rank-one completion.
@@ -323,7 +323,7 @@ A source in the literature (Obojska, *Journal of Physics Communications* **4** (
 
 Quantum teleportation in the biquaternion framework is the following chain of algebraic statements.
 
-The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{M}_+\otimes\mathbb{M}_+$, whose partial traces are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\mathrm{sp}}=\tfrac12(e_t+i\vec r)\in\mathbb{M}_+$, and the initial state is $\tilde{Ϛ}^{(0)}=\tilde{Ϛ}_{\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.
+The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, whose partial traces are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\mathrm{sp}}=\tfrac12(e_t+i\vec r)\in\mathbb{B}_{\Psi}$, and the initial state is $\tilde{Ϛ}^{(0)}=\tilde{Ϛ}_{\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.
 
 Alice measures the pair $(1,2)$ with the four Bell idempotents $\tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t$, equivalently with the commuting stabiliser observables $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, whose outcome pair is $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$. The teleportation identity
 
@@ -341,7 +341,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$ | Three-qubit arena |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |

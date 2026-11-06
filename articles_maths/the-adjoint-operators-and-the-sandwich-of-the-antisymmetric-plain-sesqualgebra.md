@@ -91,10 +91,10 @@ with the two scalar entries zero (the scalar coordinates $e_t$ and $ie_t$ are no
 **Theorem (the kernel).** For a nonzero $\tilde Q_5$,
 
 $$
-\ker L^{\diamond}_{\tilde Q_5}=\bigl\{\tilde Q_1:\ \tilde Q_5\tilde Q_1^{*}\in\mathbb{C}_{\mathbb{B}}\bigr\},
+\ker L^{\diamond}_{\tilde Q_5}=\bigl\{\tilde Q_1:\ \tilde Q_5\tilde Q_1^{*}\in\mathbb{B}_{C}\bigr\},
 $$
 
-the set of the elements whose left product with $\tilde Q_5$ is central. In particular $\ker L^{\diamond}_{e_t}=\mathbb{C}_{\mathbb{B}}$, the centre, of real dimension two; and $\ker L^{\diamond}_{\vec e_\mu}=\mathbb{C}\,\vec e_\mu$, the complex line of $\vec e_\mu$, of real dimension two.
+the set of the elements whose left product with $\tilde Q_5$ is central. In particular $\ker L^{\diamond}_{e_t}=\mathbb{B}_{C}$, the centre, of real dimension two; and $\ker L^{\diamond}_{\vec e_\mu}=\mathbb{C}\,\vec e_\mu$, the complex line of $\vec e_\mu$, of real dimension two.
 
 *Proof.* $L^{\diamond}_{\tilde Q_5}(\tilde Q_1)=0$ is the vanishing of the vector part of $\tilde Q_5\tilde Q_1^{*}$, which is the centrality of $\tilde Q_5\tilde Q_1^{*}$. At $\tilde Q_5=e_t$ the centrality of $\tilde Q_1^{*}$ is the centrality of $\tilde Q_1$, which is the centre. At $\tilde Q_5=\vec e_\mu$, the product $\vec e_\mu\tilde Q_1^{*}$ central forces $\tilde Q_1^{*}\in\mathbb{C}\vec e_\mu$, that is $\tilde Q_1\in\mathbb{C}\vec e_\mu$.
 

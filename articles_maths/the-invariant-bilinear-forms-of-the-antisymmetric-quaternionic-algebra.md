@@ -60,11 +60,11 @@ The vanishing is the structural difference from the plain row. The plain product
 
 ## The Radical
 
-**Proposition (the radical).** The radical of $\varphi$, the set of $\tilde Q_3$ with $\varphi(\tilde Q_3,\tilde Q_2)=0$ for all $\tilde Q_2$, is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three; the isotropic elements of $\varphi$, those with $\varphi(\tilde Q_3,\tilde Q_3)=0$, are the same set.
+**Proposition (the radical).** The radical of $\varphi$, the set of $\tilde Q_3$ with $\varphi(\tilde Q_3,\tilde Q_2)=0$ for all $\tilde Q_2$, is the vector subspace $\mathbb{B}_{V}$, of complex dimension three; the isotropic elements of $\varphi$, those with $\varphi(\tilde Q_3,\tilde Q_3)=0$, are the same set.
 
 *Proof.* $\varphi(\tilde Q_3,\tilde Q_2)=Q_{3t}Q_{2t}$ vanishes for all $\tilde Q_2$ exactly when $Q_{3t}=0$, that is when $\tilde Q_3$ is a pure vector; and $\varphi(\tilde Q_3,\tilde Q_3)=Q_{3t}^2$ vanishes exactly when $Q_{3t}=0$. The radical and the isotropic cone therefore coincide with the kernel of the scalar part.
 
-The form is thus as degenerate as it can be without being zero: its rank is one, its radical is the three-dimensional image of the block, and the isotropic elements are exactly the elements the block produces. The form reads only the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ and is non-degenerate there, so it is the pull-back of a one-dimensional form along the scalar-part map.
+The form is thus as degenerate as it can be without being zero: its rank is one, its radical is the three-dimensional image of the block, and the isotropic elements are exactly the elements the block produces. The form reads only the one-dimensional quotient $\mathbb{B}/\mathbb{B}_{V}$ and is non-degenerate there, so it is the pull-back of a one-dimensional form along the scalar-part map.
 
 ## The Adjoint of the Operator with Respect to a Form
 
@@ -108,16 +108,16 @@ The operator trace form is thus the natural substitution for the Killing form an
 
 | subspace | the scalar coordinate | $\varphi$ | signature on the real basis | radical |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $Q_{7t}\in\mathbb{C}$ | $Q_{7t}Q_{1t}$ | $(1,1)$ | $0$ |
-| $\mathrm{Vect}(\mathbb{B})$ | none | $0$ | $(0,0)$ | all |
-| $\mathbb{H}_{\mathbb{B}}$ | $a_t\in\mathbb{R}$ | $a_tb_t$ | $(1,0)$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $ia_t$, $a_t\in\mathbb{R}$ | $-a_tb_t$ | $(0,1)$ | $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ |
-| $\mathbb{M}_{+}$ | $a_t\in\mathbb{R}$ | $a_tb_t$ | $(1,0)$ | $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ |
-| $\mathbb{M}_{-}$ | $ia_t$, $a_t\in\mathbb{R}$ | $-a_tb_t$ | $(0,1)$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathbb{B}_{C}$ | $Q_{7t}\in\mathbb{C}$ | $Q_{7t}Q_{1t}$ | $(1,1)$ | $0$ |
+| $\mathbb{B}_{V}$ | none | $0$ | $(0,0)$ | all |
+| $\mathbb{B}_{H}$ | $a_t\in\mathbb{R}$ | $a_tb_t$ | $(1,0)$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathbb{B}_{iH}$ | $ia_t$, $a_t\in\mathbb{R}$ | $-a_tb_t$ | $(0,1)$ | $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| $\mathbb{B}_{\Psi}$ | $a_t\in\mathbb{R}$ | $a_tb_t$ | $(1,0)$ | $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| $\mathbb{B}_{\Phi}$ | $ia_t$, $a_t\in\mathbb{R}$ | $-a_tb_t$ | $(0,1)$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 
-*Proof.* The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (*Subspaces and Decompositions*). The centre has the scalar line $e_t,ie_t$ and no vector line, so the form is the complex product $Q_{7t}Q_{1t}$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_tb_t$, positive for $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}$, whose scalar line is real, and negative for $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{-}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_tb_t$ on the one-dimensional scalar line.
+*Proof.* The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (*Subspaces and Decompositions*). The centre has the scalar line $e_t,ie_t$ and no vector line, so the form is the complex product $Q_{7t}Q_{1t}$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_tb_t$, positive for $\mathbb{B}_{H}$ and $\mathbb{B}_{\Psi}$, whose scalar line is real, and negative for $\mathbb{B}_{iH}$ and $\mathbb{B}_{\Phi}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_tb_t$ on the one-dimensional scalar line.
 
-The restriction is therefore definite wherever it is not zero, and the two negative cases are the two subspaces on which the scalar line is imaginary. The radical of the restriction is the vector part of the subspace in every case in which the subspace has a vector part, and the whole subspace in the case of $\mathrm{Vect}(\mathbb{B})$.
+The restriction is therefore definite wherever it is not zero, and the two negative cases are the two subspaces on which the scalar line is imaginary. The radical of the restriction is the vector part of the subspace in every case in which the subspace has a vector part, and the whole subspace in the case of $\mathbb{B}_{V}$.
 
 ## The Comparison with the Lie Case
 
@@ -137,7 +137,7 @@ The invariant bilinear forms of the block, the $\beta$ with $\beta(\tilde Q_1\di
 | $\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}$ | the unique invariant bilinear form of the block, up to a factor |
 | $\beta(\tilde Q_1\diamond\tilde Q_2,\tilde{Q}_6)+\beta(\tilde Q_2,\tilde Q_1\diamond\tilde{Q}_6)=0$ | the invariance condition of the block |
 | $\operatorname{diag}(1,0,0,0)$ | the Gram matrix of $\varphi$ in the coefficient basis |
-| $\mathrm{Vect}(\mathbb{B})$ | the radical and the isotropic cone of $\varphi$ |
+| $\mathbb{B}_{V}$ | the radical and the isotropic cone of $\varphi$ |
 | $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ | the vanishing of the trace form of the block |
 | $L_{\tilde Q_7}\tilde{Q}_6=\tilde Q_7\diamond\tilde{Q}_6$ | the left multiplication operator of the block |
 | $\langle\tilde Q_7,\tilde Q_1\rangle_{\natural*}=\operatorname{Tr}(L_{\tilde Q_7}L_{\tilde Q_1})=3Q_{7t}Q_{1t}-2\sum_{\mu\in\{x,y,z\}}Q_{7\mu} Q_{1\mu}$ | the operator trace form, non-degenerate and not invariant |

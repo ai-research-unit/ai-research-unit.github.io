@@ -22,7 +22,7 @@ The article develops five things.
 - **The exterior algebra.** Occupation-number states, the wedge product, the Koszul sign, and the reason that sign appears in the state space rather than in the operators.
 - **The Lorentz content.** $\Lambda S$ is the reducible representation $\Gamma(\rho)$; its decomposition into irreducibles is computed, and it is one doublet $\tfrac12$ plus two singlets, the vacuum and the antisymmetric pair. The $2\pi$ rotation acts as $(-1)^{N_{\mathrm{fop}}}$, tying the state-space grading to the parity of the number operator.
 - **The functor $\Gamma$ and the grading.** $\Gamma(-I)=(-1)^{N_{\mathrm{fop}}}$ is derived and recomputed. The Fock space is $\mathbb{Z}/2$-graded, and the grading is the one the observable algebra commutes with.
-- **The sector content.** Pure one-mode states are $\mathbb{M}_+$ elements; the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$; the Born rule is the normalised Hermitian form, read through the trace; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
+- **The sector content.** Pure one-mode states are $\mathbb{B}_{\Psi}$ elements; the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$; the Born rule is the normalised Hermitian form, read through the trace; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
 
@@ -205,7 +205,7 @@ $$
 \operatorname{Tr}\tilde{Ϛ}=1 ,
 $$
 
-the Bloch element $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, where the direction $\vec r$ is the one the state itself supplies; it is an element of $\mathbb{M}_+$. The four-dimensional $\Lambda S$ of the two spin states is not an element of $\mathbb{B}$ and has no state element of the algebra; only its one-mode restrictions do. For one mode, the Born rule is the normalised Hermitian form of the framework, read at normalisation through the trace (*Norm and Pairing Conventions*, §*The Trace and the Normalised State*),
+the Bloch element $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, where the direction $\vec r$ is the one the state itself supplies; it is an element of $\mathbb{B}_{\Psi}$. The four-dimensional $\Lambda S$ of the two spin states is not an element of $\mathbb{B}$ and has no state element of the algebra; only its one-mode restrictions do. For one mode, the Born rule is the normalised Hermitian form of the framework, read at normalisation through the trace (*Norm and Pairing Conventions*, §*The Trace and the Normalised State*),
 
 $$
 \langle H_{\mathrm{fop}}\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},H_{\mathrm{fop}}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} ,
@@ -213,7 +213,7 @@ $$
 
 and the trace reading of the same ratio is the one the conventions fix, since the scalar part and the trace are one reading of the form; the number is a probability, by the positivity of the form. Two remarks fix the interpretation.
 
-First, the state and the observable are both in $\mathbb{M}_+$; the material sector $\mathbb{M}_-$ carries the anti-Hermitian Lie-algebra generators, the $\vec e_k$ and their multiples, and it carries the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it, mode by mode.
+First, the state and the observable are both in $\mathbb{B}_{\Psi}$; the material sector $\mathbb{B}_{\Phi}$ carries the anti-Hermitian Lie-algebra generators, the $\vec e_k$ and their multiples, and it carries the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it, mode by mode.
 
 Second, the trace reading is the *algebraic* trace on $\mathbb{B}$, which for the one-mode Fock space is the Hilbert-space trace of the two-dimensional space. For the four-dimensional $\Lambda S$ the state is not an element of $\mathbb{B}$, and the biquaternion formula applies after restriction to a mode. For the field's Fock space the identification is formal — the Hilbert space is infinite-dimensional and the algebraic trace is not defined — and the framework's finite-algebra formulas are used mode by mode, where the algebra is finite-dimensional. The companion article *The KMS Condition and the Biquaternion Framework* discusses the thermal state on that passage, and the algebraic completion of a finite Fock space is the standard GNS construction; here the finite one-mode statement is what is used.
 
@@ -225,7 +225,7 @@ Second, the trace reading is the *algebraic* trace on $\mathbb{B}$, which for th
 
 - *The one-particle space as the space of L parts*, with the two structures on it: the Hermitian form for probabilities and the antisymmetric product for invariants, while the algebra's quaternionic norm degenerates on the whole space and does not descend to it. The distinction is a framework convention and is kept explicit.
 - *The one-mode identification of the state space with the algebra's own spin structure*: the one-mode Fock space is two-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the one-mode parity are all statements about $\mathbb{B}$. Over the two spin states of one momentum the state space is the four-dimensional $\Lambda S$, which is not an element of $\mathbb{B}$.
-- *The sector assignment of states and observables*, both in $\mathbb{M}_+$ for one mode, with the normalised Hermitian form, read through the trace, as the Born rule.
+- *The sector assignment of states and observables*, both in $\mathbb{B}_{\Psi}$ for one mode, with the normalised Hermitian form, read through the trace, as the Born rule.
 
 **Open.**
 
@@ -309,7 +309,7 @@ $$
 
 with $\hat S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because a Lorentz rotor — every Lorentz transformation, not only the rotations — has quaternionic norm one, so it carries the two-particle state to itself, with the residual of the antisymmetric-product identity checked on random rotors. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N_{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the parent's one-mode parity, multiplication by $i\vec u$ at the direction $\vec u$ the mode declares; for the field it is the tensor product over modes and external to $\mathbb{B}$.
 
-The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$, verified by dimension for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). Pure one-mode states are Hermitian idempotents of $\mathbb{M}_+$, the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace.
+The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathcal{A}_N\cong M_{2^N}(\mathbb{C})$, verified by dimension for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). Pure one-mode states are Hermitian idempotents of $\mathbb{B}_{\Psi}$, the four-dimensional $\Lambda S$ is not an element of $\mathbb{B}$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace.
 
 ## Summary of Notation
 

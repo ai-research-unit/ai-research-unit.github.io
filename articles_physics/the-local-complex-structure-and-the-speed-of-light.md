@@ -10,7 +10,7 @@ is, in this interpretation, the sign of $i^2$; it is not put into the metric by 
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
-Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $e_t^2=e_t$ and $\vec e_k^2=-e_t$ for $k=x,y,z$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the scalar subspace is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. Two symbols are introduced here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
+Throughout, the notation is inherited unchanged from the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $e_t^2=e_t$ and $\vec e_k^2=-e_t$ for $k=x,y,z$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian: imaginary scalar, real vector; the material sector) and $\mathbb{B}_{\Psi}$ (Hermitian: real scalar, imaginary vector; the informational sector), with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. The real-quaternion subspace is $\mathbb{B}_{H}$, the scalar subspace is $\mathbb{B}_{C}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; in vacuum $c=c_0$. Two symbols are introduced here: $J$ denotes an abstract complex structure, and $J_{\mathbb{B}}$ the specific map $\tilde{Q}\mapsto i\tilde{Q}$ on $\mathbb{B}$.
 
 ## Two Senses of "Complex Structure"
 
@@ -29,7 +29,7 @@ This $J_{\mathbb{B}}$ is defined on all of $\mathbb{B}$ and is the same everywhe
 The question of this article is whether $J_{\mathbb{B}}$ — or any other complex structure — is a complex structure **on spacetime**. Three distinct levels must be kept apart, because a statement at one level is easily mistaken for a statement at another.
 
 1. **The algebra $\mathbb{B}$.** Here $J_{\mathbb{B}}$ is a complex structure, globally and exactly.
-2. **Spacetime, the material sector $\mathbb{M}_-$.** This is a four-dimensional *real* vector space carrying the biquaternion norm of signature $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
+2. **Spacetime, the material sector $\mathbb{B}_{\Phi}$.** This is a four-dimensional *real* vector space carrying the biquaternion norm of signature $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
 3. **The complexified local tangent space.** Here multiplication by $i$ is again a complex structure, but on a larger space; it is not a structure *on* the real tangent space.
 
 A local statement can be true while the corresponding global statement is false, and the two are not interchangeable. The next two sections separate the levels.
@@ -38,15 +38,15 @@ A local statement can be true while the corresponding global statement is false,
 
 ### The algebra's complex structure does not preserve spacetime
 
-The material sector $\mathbb{M}_-$ consists of the elements with imaginary scalar part and real vector part, so a real basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Multiplication by $i$ exchanges the two sectors:
+The material sector $\mathbb{B}_{\Phi}$ consists of the elements with imaginary scalar part and real vector part, so a real basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Multiplication by $i$ exchanges the two sectors:
 $$
-i\,\mathbb{M}_-=\mathbb{M}_+, \qquad i\,\mathbb{M}_+=\mathbb{M}_- .
+i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}, \qquad i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi} .
 $$
-A general element $i q_te_t+\vec q$ of $\mathbb{M}_-$ is sent to $-q_te_t+i\vec q$, which has a real scalar part and an imaginary vector part, hence lies in $\mathbb{M}_+$ and not in $\mathbb{M}_-$ unless it vanishes. Therefore $J_{\mathbb{B}}$ is not an endomorphism of $\mathbb{M}_-$: it does not map spacetime to itself, so it cannot be a complex structure *on* spacetime. Geometrically it is the map that exchanges the material and informational sectors.
+A general element $i q_te_t+\vec q$ of $\mathbb{B}_{\Phi}$ is sent to $-q_te_t+i\vec q$, which has a real scalar part and an imaginary vector part, hence lies in $\mathbb{B}_{\Psi}$ and not in $\mathbb{B}_{\Phi}$ unless it vanishes. Therefore $J_{\mathbb{B}}$ is not an endomorphism of $\mathbb{B}_{\Phi}$: it does not map spacetime to itself, so it cannot be a complex structure *on* spacetime. Geometrically it is the map that exchanges the material and informational sectors.
 
 ### The Minkowski metric admits no compatible complex structure
 
-The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ on $\mathbb{M}_-$ satisfied both $J^2=-I$ and the compatibility
+The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ on $\mathbb{B}_{\Phi}$ satisfied both $J^2=-I$ and the compatibility
 $$
 \langle J\tilde{Q},J\tilde Q_3\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
 $$
@@ -66,7 +66,7 @@ Hence on the two-dimensional plane $\mathrm{span}\{\tilde{Q},J\tilde{Q}\}$, when
 $$
 \langle J\tilde Q_3,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
 $$
-using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
+using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{B}_{\Phi}$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
 The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.
 
@@ -86,7 +86,7 @@ What is available at every point is the following. The material tangent space at
 $$
 \boxed{\;r'_t \;\longmapsto\; i\,c\,r'_t\,e_t\;},
 $$
-with $c>0$ a local scale. Equivalently, the temporal coordinate of $\mathbb{M}_-$ is $i c r'_t$, with $c$ allowed to depend on the point — and, in a dispersive medium, on the frequency. This is the **local complex structure**: the phase is the algebra's fixed $i$, and the scale is the local $c$.
+with $c>0$ a local scale. Equivalently, the temporal coordinate of $\mathbb{B}_{\Phi}$ is $i c r'_t$, with $c$ allowed to depend on the point — and, in a dispersive medium, on the frequency. This is the **local complex structure**: the phase is the algebra's fixed $i$, and the scale is the local $c$.
 
 Three features of this definition are the content of its locality.
 
@@ -171,7 +171,7 @@ The medium interpretation extends in three directions. First, $\log\lvert\langle
 
 The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
 
-A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$. The $i c r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
+A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{B}_{\Phi}$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{B}_{\Phi}$ has signature $(3,1)$. The $i c r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
 
 A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $i c r'_t$ with $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.
 
@@ -186,9 +186,9 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian (informational), anti-Hermitian (material) subspaces |
-| $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$ |
+| $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian (informational), anti-Hermitian (material) subspaces |
+| $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Sector decomposition; $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
@@ -206,7 +206,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
 - [Why Complexify Spacetime?](why-complexify-spacetime.html), for the $i c r'_t$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
-- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the complementary sector and the exchange $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ by multiplication by $i$.
 - [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html), for the displacement of the $i c r'_t$ convention and its relation to the abandonment of the complex formalism.
 - [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.

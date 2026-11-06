@@ -82,9 +82,9 @@ and it is the quaternionic norm of the algebra, the determinant of the $2\times2
 
 ## The Forms on the Two Sectors
 
-The physical dictionary places the material element $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ in the anti-Hermitian sector $\mathbb{M}_-$ and the informational element $\tilde R_\psi$ in the Hermitian sector $\mathbb{M}_+$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
+The physical dictionary places the material element $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ in the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the informational element $\tilde R_\psi$ in the Hermitian sector $\mathbb{B}_{\Psi}$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
 
-| Form | Signature on $\mathbb{M}_-$, material | Signature on $\mathbb{M}_+$, informational |
+| Form | Signature on $\mathbb{B}_{\Phi}$, material | Signature on $\mathbb{B}_{\Psi}$, informational |
 | --- | --- | --- |
 | $P$: $\langle\cdot,\cdot\rangle$, the sector sign | $(0,4)$, negative definite | $(4,0)$, positive definite |
 | $N$: $\langle\cdot,\cdot\rangle_{\natural}$, the interval | $(3,1)$ | $(1,3)$ |
@@ -97,7 +97,7 @@ $$
 \langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle
 \qquad\text{and}\qquad
 \langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{\natural}
-\quad\text{on }\mathbb{M}_-,
+\quad\text{on }\mathbb{B}_{\Phi},
 $$
 
 while on the informational sector the two pairs coincide,
@@ -106,12 +106,12 @@ $$
 \langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle
 \qquad\text{and}\qquad
 \langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle_{\natural}
-\quad\text{on }\mathbb{M}_+.
+\quad\text{on }\mathbb{B}_{\Psi}.
 $$
 
 The four forms collapse to two pairs on each sector, and these identities are form-level statements read on the sector. They do not say that the four products agree there.
 
-The collapse to two pairs holds on every remarkable subspace, but the pairing is not the same on all of them. On the centre $\mathbb{C}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$; on the vector subspace $\mathrm{Vect}(\mathbb{B})$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle_{\natural*}$; on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{*}$; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$; on the informational sector, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{\natural*}$; and on the material sector, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{\natural*}$. The grouping of the four into the two pairs therefore depends on the subspace, and it is the subspace's fingerprint. The Hermitian form is positive definite on every one of the six subspaces; the other three are indefinite on the algebra and may be definite on a restriction. The Krein form, for instance, is positive definite of signature $(2,0)$ on the centre, negative definite of signature $(0,6)$ on the vector subspace, and of signature $(1,3)$ on each of the other four.
+The collapse to two pairs holds on every remarkable subspace, but the pairing is not the same on all of them. On the centre $\mathbb{B}_{C}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$; on the vector subspace $\mathbb{B}_{V}$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle_{\natural*}$; on the quaternion subspace $\mathbb{B}_{H}$, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{*}$; on the anti-quaternion subspace $\mathbb{B}_{iH}$, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$; on the informational sector, $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{\natural*}$; and on the material sector, $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{\natural*}$. The grouping of the four into the two pairs therefore depends on the subspace, and it is the subspace's fingerprint. The Hermitian form is positive definite on every one of the six subspaces; the other three are indefinite on the algebra and may be definite on a restriction. The Krein form, for instance, is positive definite of signature $(2,0)$ on the centre, negative definite of signature $(0,6)$ on the vector subspace, and of signature $(1,3)$ on each of the other four.
 
 **The boundary.** The signatures in the table are the signatures of the **restrictions** and not new forms. A restriction may be definite where the form is indefinite, and its definiteness says nothing about the form. The complex cone, the zero-divisor cone and the Krein cone are the null sets of the three indefinite forms on the whole algebra; the light cone is the cut of the zero-divisor cone by the material sector, not the null set of the form on the algebra.
 
@@ -244,12 +244,12 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the natural conjugation |
 | $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$ | the Gram matrices of the four forms |
 | $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the signatures of the realifications of the four forms |
-| $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{M}_-$, in the same order |
-| $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{M}_+$, in the same order |
+| $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Phi}$, in the same order |
+| $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Psi}$, in the same order |
 | $\mathcal{N}$, $\mathcal{K}$ | the $N$-degenerate set, the zero-divisor cone, and the Krein cone |
 | $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
 | $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde R_\varphi$, $\tilde R_\psi$ | the material and informational parts, $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ |
 
 ## Further Reading

@@ -8,7 +8,7 @@ This article treats the Klein step in the biquaternion framework. The framework 
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
@@ -139,7 +139,7 @@ This is the algebraic content of the phrase "the far side is reached by an antip
 
 ### The current lives in the material sector
 
-The conserved current of the framework is the material-sector object $\tilde J = ic\,j_0e_t + \vec j \in \mathbb{M}_-$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
+The conserved current of the framework is the material-sector object $\tilde J = ic\,j_0e_t + \vec j \in \mathbb{B}_{\Phi}$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
 
 ### What the biquaternion form does not supply
 
@@ -164,7 +164,7 @@ The reflection **decreases** as the step rises, from $0.177$ at $V_0 = 5m$ to $0
 
 2. **The steepness.** Sauter showed that a step smoothed over a Compton wavelength removes the paradox. How does the smoothing enter the biquaternion equation — as a position-dependent central shift of the mass shell, or as a modification of the gradient itself?
 
-3. **The sector of the transmitted component.** In the material-sector picture the current is $\mathbb{M}_-$-valued. The transmitted "antiparticle" component of the far-side wave is a negative-frequency solution; is there a sector statement that distinguishes it from the incident component, or is the distinction purely one of the sign of $\omega$?
+3. **The sector of the transmitted component.** In the material-sector picture the current is $\mathbb{B}_{\Phi}$-valued. The transmitted "antiparticle" component of the far-side wave is a negative-frequency solution; is there a sector statement that distinguishes it from the incident component, or is the distinction purely one of the sign of $\omega$?
 
 4. **The graphene transcription.** In graphene the Dirac points are massless and the potential step is a $p$–$n$ junction. The massless limit here is a clean $T = 1$; whether the biquaternion framework supplies anything beyond the massless Weyl equation for the two Dirac points is the question taken up in the companion article on Dirac matter.
 
@@ -191,7 +191,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
 | $\tilde P/\hbar$, $\tilde P\tilde P^{\natural} = -m^2c^2$ | Wave biquaternion and mass shell |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector; home of the current |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading
 

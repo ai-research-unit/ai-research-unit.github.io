@@ -66,7 +66,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^* = -\overline{\tilde{Ξ}_{\mathrm{sp}}^{\natural}}
 $$
 
-is an antilinear involution whose fixed space is the material sector $\mathbb{M}_-$. It is the algebra's real structure, and it is not the mass.
+is an antilinear involution whose fixed space is the material sector $\mathbb{B}_{\Phi}$. It is the algebra's real structure, and it is not the mass.
 
 **The phase symmetry to be localized.** The symmetry that minimal coupling localizes is the algebra's central $\mathrm{U}(1)$, established in the gauge principle article. A **constant** central phase
 
@@ -133,13 +133,13 @@ $$
 
 with $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ and $\partial/\partial R_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.
 
-**The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iϙ}{\hbar}\tilde{A}$ in $\tilde\nabla_{\mathrm{gco}}$ is Hermitian:
+**The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{B}_{\Phi}$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iϙ}{\hbar}\tilde{A}$ in $\tilde\nabla_{\mathrm{gco}}$ is Hermitian:
 
 $$
 \left(i\tilde{A}\right)^{*} = -i\,\tilde{A}^{*} = i\tilde{A},
 $$
 
-since $\tilde{A}^{*} = -\tilde{A}$ on $\mathbb{M}_-$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
+since $\tilde{A}^{*} = -\tilde{A}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
 
 **Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $\tilde\nabla_{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_\mu \to \partial/\partial R_\mu - iϙA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
@@ -302,7 +302,7 @@ $$
 \left(\lambda\tilde{Ξ}_{\mathrm{sp}}\right)\left(\lambda\tilde{Ξ}_{\mathrm{sp}}\right)^{*} = \lambda\,\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*\,\lambda^{*} = |\lambda|^2\,\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^* = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^* ,
 $$
 
-and it is **anti-Hermitian**, $\tilde J_{\mathrm{sp}}^{*} = -\tilde J_{\mathrm{sp}}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the four-current $ic\rho\,e_t + \vec J$ of the Maxwell article. The third property makes it a density candidate: the bilinear before the $i$ has the real scalar part
+and it is **anti-Hermitian**, $\tilde J_{\mathrm{sp}}^{*} = -\tilde J_{\mathrm{sp}}$, hence an element of the material sector $\mathbb{B}_{\Phi}$ — the same sector as the four-current $ic\rho\,e_t + \vec J$ of the Maxwell article. The third property makes it a density candidate: the bilinear before the $i$ has the real scalar part
 
 $$
 \mathrm{Sc}\!\left(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*\right) = \|\tilde{Ξ}_{\mathrm{sp}}\|_E^2 \ \ge 0 ,
@@ -383,7 +383,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 - *The covariant derivative as the localization of the phase.* The interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ is not added by hand: it is the term the localized phase forces, and the connection it forces is exactly the potential biquaternion of the Maxwell article.
 - *Exact covariance of the coupled equation*, in the massive case as well as the massless one, with the component operators $\tilde\nabla_{\mathrm{gco},\mu}$ and the phase law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ inherited unchanged.
 - *The second-order equation with its curvature term.* The operator identity $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}} = \sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^2 + \frac{iϙ}{\hbar}\tilde{F}$ turns the coupled pair into a covariant wave equation carrying $\frac{iϙ}{\hbar}\tilde{F}$ as a term, the curvature entering as an element and not as an extra structure.
-- *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{M}_-$, so the coupling respects the sector decomposition the framework is built on.
+- *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{B}_{\Phi}$, so the coupling respects the sector decomposition the framework is built on.
 
 **What it only transcribes.**
 
@@ -401,7 +401,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which side is the physical Dirac field multiplied from? The second member of the pair is the $\natural$-image of the first, so the algebra relates the two sides without choosing between them, and the choice is made where the field is placed, not by the equation. What fixes it inside the algebra?
 
-3. **The interaction current.** The gauge-invariant bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{M}_-$ but is not conserved: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\mathrm{sp}}) = -2i\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
+3. **The interaction current.** The gauge-invariant bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\mathrm{sp}}) = -2i\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}_{\mathrm{sp}}$, so it does not by itself close the corpus's system.
 
@@ -518,8 +518,8 @@ One external result is recorded on the source side, and it is not a development 
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part: the coefficient of $e_t$, and half the trace in the frame of the closing section |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Quaternion-conjugate gradient |
 | $\vec u$ | The declared unit of the frame, in the parent's two-sided form |
@@ -528,7 +528,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field; the subscript takes two values and no more |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^* = \overline{\tilde{Ξ}_{\mathrm{sp}}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$ | Free biquaternion Dirac equation (massive chiral pair) |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $\varsigma$ | A second central constant, in the relative phase $\tilde{Ξ}_{\mathrm{sp},R}\mapsto\varsigma\tilde{Ξ}_{\mathrm{sp},R}$, $\tilde{Ξ}_{\mathrm{sp},L}\mapsto\varsigma^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ |
@@ -541,7 +541,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\|\tilde{Ξ}_{\mathrm{sp}}\|_E^2 = \mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
-| $\tilde J_{\mathrm{sp}} = i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
+| $\tilde J_{\mathrm{sp}} = i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J$ |
 | $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

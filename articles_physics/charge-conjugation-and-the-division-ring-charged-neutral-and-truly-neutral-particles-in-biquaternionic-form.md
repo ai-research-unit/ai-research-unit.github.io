@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. On the biquaternion algebra it is written on the element, $Q^{\mathrm c}=-e_y\bar Qe_y$: the coefficient conjugation, followed by a two-sided product by a fixed product of units. The companion article *The CPT Theorem in Biquaternionic Form* builds the same operation and finds that its internal factor is the single spatial unit $-e_y$, which is anti-Hermitian, so it lies in the material sector $\mathbb{M}_-$ and not in the Hermitian one $\mathbb{M}_+$. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on the algebra exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\eta$ and the phi meson.
+Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. On the biquaternion algebra it is written on the element, $Q^{\mathrm c}=-e_y\bar Qe_y$: the coefficient conjugation, followed by a two-sided product by a fixed product of units. The companion article *The CPT Theorem in Biquaternionic Form* builds the same operation and finds that its internal factor is the single spatial unit $-e_y$, which is anti-Hermitian, so it lies in the material sector $\mathbb{B}_{\Phi}$ and not in the Hermitian one $\mathbb{B}_{\Psi}$. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on the algebra exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\eta$ and the phi meson.
 
 The classification of the algebra literature answers the question with a single algebraic datum. The field of the article is valued in a module, and a module has a **division ring** of scalars, which is $\mathbb{R}$, $\mathbb{H}$ or $\mathbb{C}$ and nothing else. Over a real division ring the fixed product that implements the conjugation is central, so the conjugation reduces to the coefficient conjugation and exchanges no two states. Over a quaternionic division ring it is a genuine product of units and exchanges an element with a distinct partner; over the complex one it relates the module to its conjugate. The division ring, in other words, is what decides whether a particle can be its own antiparticle. (The literature writes the operation with a star on the element; here the star is reserved for the Hermitian conjugation of the corpus, and the bar is the coefficient conjugation.)
 
@@ -127,7 +127,7 @@ The dictionary is coarse and it is adequate. It says what the division ring is f
 
 The biquaternion algebra has two readings, and the trichotomy uses both. Read over $\mathbb{C}$, its scalars are $\mathbb{C}$, so the division ring of the module is $\mathbb{C}$: the charged case, by the table itself. Read as a **real** algebra, it carries two real subalgebras of real dimension four, and they carry the other two cases.
 
-- **The coefficient conjugation** fixes the subspace of real coefficients, $\mathbb{H}_{\mathbb{B}}$. That subspace is a division ring isomorphic to $\mathbb{H}$, so a module over it has $\mathbb{H}$ for division ring: the neutral case.
+- **The coefficient conjugation** fixes the subspace of real coefficients, $\mathbb{B}_{H}$. That subspace is a division ring isomorphic to $\mathbb{H}$, so a module over it has $\mathbb{H}$ for division ring: the neutral case.
 - **The charge conjugation** fixes the elements whose time and $y$ coefficients are real and whose $x$ and $z$ coefficients are imaginary. That set is a real subalgebra of real dimension four; it is not a division ring, since the two nonzero elements $\tfrac12(e_t+i\vec e_x)$ and $\tfrac12(e_t-i\vec e_x)$ multiply to zero; and its scalars are $\mathbb{R}$: the truly neutral case.
 
 **The third subalgebra is read off the conjugation.** It is written here as a fixed set and not by naming its basis, because the conjugation is the datum the article is about and the subalgebra is what that datum leaves alone. The two real forms are the two conjugations the algebra carries, one for each.
@@ -146,7 +146,7 @@ That is the whole of the axis. The change from one display to the other is the c
 The three cases are realised by the choice of the module the field is valued in.
 
 - **Charged fields** are carried by the algebra itself, read over $\mathbb{C}$. Their conjugation is the conjugate-linear map of the first section, and it relates the field to its conjugate.
-- **Neutral fields** are carried by the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, which is a division ring. Their conjugation is the non-trivial exchange of a particle with a distinct partner.
+- **Neutral fields** are carried by the real-quaternion subspace $\mathbb{B}_{H}$, which is a division ring. Their conjugation is the non-trivial exchange of a particle with a distinct partner.
 - **Truly neutral fields** are carried by the fixed set of the conjugation. On it the conjugation is the identity, and the field is its own antiparticle, with the sign $\pm1$ allowed as a parity.
 
 The interpretation is not a derivation, and it adds no field content. Its value is that it locates the three charge classes in the same algebra: the complex algebra carries the charged case, and its two real subalgebras of real dimension four carry the two neutral cases. The photon article's finding that the free photon is a real, self-conjugate field is the case of the real division ring; the neutron article's finding that the neutron is neutral but distinguishable from the antineutron is the case of the quaternionic one.
@@ -160,13 +160,13 @@ Each statement below is a computation and not an analogy.
 - **The conjugation on the element.** $Q^{\mathrm c}=-e_y\bar Qe_y$ is conjugate-linear, preserves products, and squares to the identity.
 - **The multiplier and the values.** The two-sided product $-e_yQe_y$ exchanges the two values of the subscript, the coefficient conjugation exchanges them as well, and the conjugation keeps them.
 - **The two signs.** The one-sided form is the right multiplication by $e_x$ and its square is minus the argument; the two-sided product squares to the identity. The sign is the square of the unit.
-- **The two fixed sets.** The fixed set of the coefficient conjugation is the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$; the fixed set of the conjugation is a real subalgebra of real dimension four that is not a division ring.
+- **The two fixed sets.** The fixed set of the coefficient conjugation is the real-quaternion subspace $\mathbb{B}_{H}$; the fixed set of the conjugation is a real subalgebra of real dimension four that is not a division ring.
 
 ### Transcribed, not derived
 
 - **The classification theorem.** The form of the fixed product is governed by the division ring of the module, and the three division rings give the three cases. The theorem is the algebra literature's, and the article organises the charge classes by it.
 - **The physical identifications.** The assignments — charged for the complex ring, neutral for the quaternionic one, truly neutral for the real one — are the standard reading of the classification. Their translation into the framework's presentation is the present article's contribution; the physics itself is not.
-- **The biquaternion realisation.** That the algebra is complex with $\mathbb{C}_{\mathbb{B}}$ for centre, and that it carries a real-quaternion subspace and a real subalgebra of real type, is the corpus's own structure. Reading the three classes through those subalgebras is the article's organisation, not a theorem the algebra forces.
+- **The biquaternion realisation.** That the algebra is complex with $\mathbb{B}_{C}$ for centre, and that it carries a real-quaternion subspace and a real subalgebra of real type, is the corpus's own structure. Reading the three classes through those subalgebras is the article's organisation, not a theorem the algebra forces.
 
 ### Gap, left visible
 
@@ -275,13 +275,13 @@ Charge conjugation is the conjugate-linear map $Q^{\mathrm c}=-e_y\bar Qe_y$ of 
 
 The three charge classes are the three division rings of the module. Over $\mathbb{R}$ the fixed product is central, the conjugation is the coefficient conjugation, and no element of the module moves: the truly neutral particles, at $Ϙ=\bar0$, with the parity $-1$ for the photon and the phi meson and $+1$ for the $\pi^0$ and the $\eta$. Over $\mathbb{H}$ the fixed product is not central and an element is carried to a distinct partner: the neutral particles, at $Ϙ=0$, the neutron among them. Over $\mathbb{C}$ the conjugation relates the module to its conjugate: the charged particles, at $Ϙ=\pm1$.
 
-The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so its division ring is $\mathbb{C}$: the charged case, by the table itself. Its two real subalgebras of real dimension four carry the other two cases: the real-coefficient subspace $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ is the fixed set of the coefficient conjugation and carries the neutral case, and the fixed set of the charge conjugation is a real subalgebra of real type and carries the truly neutral case. The division ring therefore places the three classes in one algebra: the photon's self-conjugacy is the case of the real ring, the neutron's neutrality the case of the quaternionic one, and the charged fields are the complex algebra itself. What is transcribed is the classification and the physical assignments; what is recomputed here is the conjugation on the element, its two squares, and the two fixed sets.
+The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so its division ring is $\mathbb{C}$: the charged case, by the table itself. Its two real subalgebras of real dimension four carry the other two cases: the real-coefficient subspace $\mathbb{B}_{H}\cong\mathbb{H}$ is the fixed set of the coefficient conjugation and carries the neutral case, and the fixed set of the charge conjugation is a real subalgebra of real type and carries the truly neutral case. The division ring therefore places the three classes in one algebra: the photon's self-conjugacy is the case of the real ring, the neutron's neutrality the case of the quaternionic one, and the charged fields are the complex algebra itself. What is transcribed is the classification and the physical assignments; what is recomputed here is the conjugation on the element, its two squares, and the two fixed sets.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; complex dimension four, complex centre $\mathbb{C}_{\mathbb{B}}$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; complex dimension four, complex centre $\mathbb{B}_{C}$ |
 | $\mathbb{R}$, $\mathbb{H}$, $\mathbb{C}$ | The three division rings a module can carry; one per charge class |
 | $Q^{\mathrm c}=-e_y\bar Qe_y$ | Charge conjugation on the element; $\bar{\cdot}$ is the coefficient conjugation |
 | $-e_y$ | The fixed product; its square is $-e_t$, and it is fixed only up to a scalar |
@@ -289,7 +289,7 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 | $Q\mapsto Qe_x$ | The one-sided form; its square is $-e_t$, its order is four |
 | $Q_L$, $Q_R$ | The two values of the subscript, the minus one and the plus one |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two lines of the free equation, one per value |
-| $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
+| $\mathbb{B}_{H}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
 | the fixed set of $Q^{\mathrm c}$ | Time and $y$ real, $x$ and $z$ imaginary; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |
 | $C_{\Pi}$ | The change of display; keeps trace, determinant, spectrum, rank and products |

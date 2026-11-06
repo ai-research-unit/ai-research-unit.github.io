@@ -28,7 +28,7 @@ $$
 \lambda=\vec u_p\cdot\vec S ,
 $$
 
-and the **helicity** of a state is its eigenvalue $\hbar h$, in units of $\hbar$. The operator is Hermitian and belongs to $\mathbb{M}_+$; the number $h$ is real and labels the state, not the carrier.
+and the **helicity** of a state is its eigenvalue $\hbar h$, in units of $\hbar$. The operator is Hermitian and belongs to $\mathbb{B}_{\Psi}$; the number $h$ is real and labels the state, not the carrier.
 
 **Proposition (the spectrum, and what the two words mean).** On a carrier of spin $s$ the spectrum of $\lambda$ is $\hbar h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.
 
@@ -62,7 +62,7 @@ In the algebra this is one line. The orbital operator is the vector part of the 
 On the spin-$\tfrac12$ carrier the generator is $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, so the operator is the left multiplication by
 
 $$
-\lambda=\tfrac{\hbar}{2}\,i\vec u_p\in\mathbb{M}_+ .
+\lambda=\tfrac{\hbar}{2}\,i\vec u_p\in\mathbb{B}_{\Psi} .
 $$
 
 The carrier is a minimal left ideal, and the two helicity values are its two weights. The vectors that carry them are named by the idempotents at the axis.
@@ -100,7 +100,7 @@ $$
 \lambda=\hbar\cdot\tfrac{i}{2}\,\mathrm{ad}_{\vec u_p},
 $$
 
-whose representative is the Hermitian element $\hbar\,i\vec u_p\in\mathbb{M}_+$, with the spectrum $\{+\hbar,0,-\hbar\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (*The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*) or $\tilde S_{\mathrm{adj},3}$ (*Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*); the two are the same operator in different units, and the $\hbar$ above restores the units of the spin-$\tfrac12$ case. The $\pm\hbar$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{M}_+$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.
+whose representative is the Hermitian element $\hbar\,i\vec u_p\in\mathbb{B}_{\Psi}$, with the spectrum $\{+\hbar,0,-\hbar\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (*The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*) or $\tilde S_{\mathrm{adj},3}$ (*Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*); the two are the same operator in different units, and the $\hbar$ above restores the units of the spin-$\tfrac12$ case. The $\pm\hbar$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{B}_{\Psi}$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.
 
 **The massive field.** The same carrier carries the Proca field, and there all three states are physical. Along the momentum the two transverse states carry $\pm1$ and the longitudinal one carries $0$, and a boost rotates a transverse polarization into the longitudinal one. The label is therefore not invariant at $m\neq0$, which is the massive case of the boost law below (*The Proca Equation: Massive Spin 1 in Biquaternionic Form*, §*The Massive Field Strength and the Self-Dual Split*). The algebra represents both cases on the same carrier, and the value of $m$ decides which states are physical.
 
@@ -149,11 +149,11 @@ The rest of the article is the second level, where helicity is a weight. It begi
 A nonzero biquaternion is a zero divisor if and only if its biquaternion norm vanishes, $\langle\tilde Q\rangle_{\natural}=0$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); since the norm is the determinant of the matrix realisation, the nonzero zero divisors are exactly the rank-one elements of $\mathsf{M}_2(\mathbb{C})$. The four-momentum is
 
 $$
-\tilde P=\frac{iE}{c}\,e_t+\vec p\in\mathbb{M}_-,\qquad
+\tilde P=\frac{iE}{c}\,e_t+\vec p\in\mathbb{B}_{\Phi},\qquad
 \langle\tilde P\rangle_{\natural}=-\frac{E^2}{c^2}+\vec p^{\,2}=-m^2c^2 .
 $$
 
-**At $m=0$ it is a zero divisor.** Then $E=c\lvert\vec p\rvert$, the norm vanishes, and $\tilde P\neq0$ whenever $E\neq0$. The light cone of $\mathbb{M}_-$ *is* the zero-divisor cone (*The Material Sector: Four-Vectors, Interval and Lorentz Action*). The divisor is of the **non-pure** kind, its scalar part $iE/c$ being nonzero, so it obeys $\tilde P^2=2P_t\tilde P$, the square relation of the non-pure family.
+**At $m=0$ it is a zero divisor.** Then $E=c\lvert\vec p\rvert$, the norm vanishes, and $\tilde P\neq0$ whenever $E\neq0$. The light cone of $\mathbb{B}_{\Phi}$ *is* the zero-divisor cone (*The Material Sector: Four-Vectors, Interval and Lorentz Action*). The divisor is of the **non-pure** kind, its scalar part $iE/c$ being nonzero, so it obeys $\tilde P^2=2P_t\tilde P$, the square relation of the non-pure family.
 
 **At $m\neq0$ it is not.** Then $\langle\tilde P\rangle_{\natural}=-m^2c^2\neq0$, the element is invertible, and the matrix has rank two. That asymmetry is the whole of the singular limit treated below.
 
@@ -163,7 +163,7 @@ $$
 \mathsf{M}_2(\tilde P)=i\left(\frac{E}{c}I_2-\vec p\cdot\boldsymbol\sigma\right),
 $$
 
-of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i c r'_t$ convention; with $\tilde R_\psi=-i\tilde P\in\mathbb{M}_+$ one has $\mathsf{M}_2(\tilde R_\psi)=p_{\alpha\bar\beta}$ exactly.
+of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i c r'_t$ convention; with $\tilde R_\psi=-i\tilde P\in\mathbb{B}_{\Psi}$ one has $\mathsf{M}_2(\tilde R_\psi)=p_{\alpha\bar\beta}$ exactly.
 
 ## Rank One Is Factorisability
 
@@ -182,15 +182,15 @@ $$
 
 with $\lambda$ in the spinor module and $\bar\lambda$ in its conjugate. This is the spinor-helicity factorisation $p_{\alpha\bar\beta}=\lambda_\alpha\bar\lambda_{\bar\beta}$, and it is not an analogy: it is the rank-one condition of the zero-divisor cone written in coordinates. The two factors are the two rulings of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ (*The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*, §*The Factorisation*).
 
-**Here the letter $\lambda$ is a spinor.** In this section and the next two, $\lambda$ and $\bar\lambda$ are the two factors, elements of $S$ and of $\bar S$, one of them barred. Everywhere else in the article $\lambda$ is the helicity operator, an element of $\mathbb{M}_+$ with no index.
+**Here the letter $\lambda$ is a spinor.** In this section and the next two, $\lambda$ and $\bar\lambda$ are the two factors, elements of $S$ and of $\bar S$, one of them barred. Everywhere else in the article $\lambda$ is the helicity operator, an element of $\mathbb{B}_{\Psi}$ with no index.
 
-**Reality.** For a real momentum $\tilde P\in\mathbb{M}_-$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P)$ is anti-Hermitian and of the form $i\,uu^{\dagger}$; the two factors are then conjugate up to a phase,
+**Reality.** For a real momentum $\tilde P\in\mathbb{B}_{\Phi}$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P)$ is anti-Hermitian and of the form $i\,uu^{\dagger}$; the two factors are then conjugate up to a phase,
 
 $$
 \bar\lambda\sim\lambda^{*},
 $$
 
-which is the reality condition of the real slice. For a complexified momentum the components are complex and the two factors become independent, which is an extension off $\mathbb{M}_-$ and is flagged as such.
+which is the reality condition of the real slice. For a complexified momentum the components are complex and the two factors become independent, which is an extension off $\mathbb{B}_{\Phi}$ and is flagged as such.
 
 ## The Brackets as the Invariant Pairing
 
@@ -264,7 +264,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 **Supplied by the algebra.**
 
-- The operator $\lambda=\vec u_p\cdot\vec S$ as a Hermitian element of $\mathbb{M}_+$ on every carrier, and its action as a left multiplication.
+- The operator $\lambda=\vec u_p\cdot\vec S$ as a Hermitian element of $\mathbb{B}_{\Psi}$ on every carrier, and its action as a left multiplication.
 - Its spectrum, the weight string $\hbar h$ of the carrier, and the two carrier vectors of the fundamental case: the pure state at the axis and its companion nilpotent.
 - The reversal law and the rotation law, as statements about the idempotents at an axis.
 - The identification of the null momentum with a zero divisor, of the zero divisor with a rank-one matrix, and of the rank-one matrix with the factorisation into two spinors.
@@ -283,7 +283,7 @@ In the algebra the mass is the off-diagonal pair that exchanges the two chiral p
 
 ## Summary
 
-Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{M}_+$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\hbar h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\tfrac{\hbar}{2}$, carried by the pure state $\tilde\Pi_+(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\hbar$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
+Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\hbar h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\tfrac{\hbar}{2}$, carried by the pure state $\tilde\Pi_+(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\hbar$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.
 
 At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bar\lambda}-d_\lambda)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.
 
@@ -293,7 +293,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 |---|---|
 | $\vec u_p=\vec p/\lvert\vec p\rvert$ | The unit along the momentum, declared; a pure real quaternion, $\vec u_p^2=-e_t$ |
 | $\vec u_k=\vec k/\lvert\vec k\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=\hbar\vec k$ |
-| $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{M}_+$, acting by left multiplication; $\hbar$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
+| $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\hbar$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
 | $\vec S$ | The rotation generator read as one vector, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ on the fundamental carrier |
 | $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\tfrac{\hbar}{2}$ in $S_+(\vec u_p)$ |
 | $S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_\pm(\vec u_p)$ | The minimal left ideals at the axis; an elementary spinor is an element of one of them |

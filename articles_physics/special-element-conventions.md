@@ -12,10 +12,10 @@ The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb
 
 | Subspace | $i\,\cdot$ | The name |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the complex time sector | Itself | The global phase |
-| $\mathrm{Vect}(\mathbb{B})$, the complex space sector | Itself | The duality rotation |
-| $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ | Each other | The Wick rotation |
-| $\mathbb{M}_-$ and $\mathbb{M}_+$ | Each other | The material–informational exchange |
+| $\mathbb{B}_{C}$, the complex time sector | Itself | The global phase |
+| $\mathbb{B}_{V}$, the complex space sector | Itself | The duality rotation |
+| $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ | Each other | The Wick rotation |
+| $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Each other | The material–informational exchange |
 
 The rule that ties the names is a rule about the generator and not about the subspaces: the map is central, so it acts the same way in every subspace, and it is a scalar that acts through the centre and never through the quaternion directions; a non-central generator would give one rotation per carrier. It is a rotation and not a projection, a collapse or a measurement — a loss of information is a non-invertible map and belongs to *The Operators: One-Sided, Two-Sided, Sandwich*.
 
@@ -56,7 +56,7 @@ The root glyph is therefore **split by the case rule**, and the split is the rea
 
 The convention of *The Elements and their Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
 
-An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$. An idempotent fixed by the star, $\tilde{\Pi}^{*} = \tilde{\Pi}$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{M}_+$ are the **pure states** of the informational sector.
+An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$. An idempotent fixed by the star, $\tilde{\Pi}^{*} = \tilde{\Pi}$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{B}_{\Psi}$ are the **pure states** of the informational sector.
 
 **The case rule splits the glyph, as it does in the mathematical corpus.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Pi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\pi}$; those of the complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor; those of the split-complex and reduced biquaternion layers write the complete pair with the signs, $\Pi_\pm$. The series works in $\mathbb{B}$ and writes $\tilde{\Pi}$ throughout; the other glyphs are the mathematical corpus's, and the layer fixes the glyph.
 

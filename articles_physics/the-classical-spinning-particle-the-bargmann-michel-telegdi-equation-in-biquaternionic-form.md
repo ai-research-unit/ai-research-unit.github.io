@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{M}_-$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $\langle\tilde{S},\tilde{V}\rangle=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
+A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{B}_{\Phi}$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $\langle\tilde{S},\tilde{V}\rangle=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
 
-The equation of motion of $\tilde{S}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $\langle\tilde{S},\tilde{V}\rangle=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{M}_-$.
+The equation of motion of $\tilde{S}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $\langle\tilde{S},\tilde{V}\rangle=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{B}_{\Phi}$.
 
 The equation has exactly two terms, and their coefficients are not free. A covariant equation of the form
 
@@ -36,10 +36,10 @@ $$
 where
 
 $$
-\mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
+\mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)
 $$
 
-is the **field action**, the element of $\mathbb{M}_-$ whose four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
+is the **field action**, the element of $\mathbb{B}_{\Phi}$ whose four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
 
 Two boundaries are respected. The **spin-0 and multipole sectors** are excluded: the relativistic central-force problem belongs to `Biquaternion Relativistic Non Quantum Theory`, subcategory on effects without intrinsic magnetism, and the quadrupole and higher multipoles to the subcategory on higher multipole origins. The **quantum and informational sectors** are excluded: the spinor and Dirac treatments belong to `Biquaternion Relativistic Quantum Theory`, and the information-theoretic interpretation of the Wigner rotation to its subcategory on informational aspects. The **Thomas precession**, which is the free-field kinematic piece of the same physics, is treated in the companion article of the present subcategory and is not re-derived here.
 
@@ -61,11 +61,11 @@ $$
 
 and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
-Here $\tau$ is proper time, $r'_t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{M}_+$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+Here $\tau$ is proper time, $r'_t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spin Four-Vector
 
-The **spin vector** of a classical particle is a four-vector $\tilde{S}\in\mathbb{M}_-$ subject to the **orthogonality condition**
+The **spin vector** of a classical particle is a four-vector $\tilde{S}\in\mathbb{B}_{\Phi}$ subject to the **orthogonality condition**
 
 $$
 \langle\tilde{S},\tilde{V}\rangle=\mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
@@ -107,11 +107,11 @@ $$
 S_\mu=\frac{1}{2c}\,\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
 $$
 
-which makes the orthogonality automatic (the contraction of an antisymmetric tensor with the four-velocity). The spin-tensor description is the one that extends to extended bodies and higher multipoles; for the point particle treated here the four-vector description is equivalent and is the one adapted to the material sector $\mathbb{M}_-$.
+which makes the orthogonality automatic (the contraction of an antisymmetric tensor with the four-velocity). The spin-tensor description is the one that extends to extended bodies and higher multipoles; for the point particle treated here the four-vector description is equivalent and is the one adapted to the material sector $\mathbb{B}_{\Phi}$.
 
 ## The Covariant Equation from the Two Available Structures
 
-We now assemble the equation of motion. The right-hand side must be an element of $\mathbb{M}_-$ (a four-vector), linear in the field strength $F$ and in the spin $S$, and built from the covariant objects available: $F$, $v$, and $S$, subject to $\langle\tilde{S},\tilde{V}\rangle=0$. The possible contractions are limited.
+We now assemble the equation of motion. The right-hand side must be an element of $\mathbb{B}_{\Phi}$ (a four-vector), linear in the field strength $F$ and in the spin $S$, and built from the covariant objects available: $F$, $v$, and $S$, subject to $\langle\tilde{S},\tilde{V}\rangle=0$. The possible contractions are limited.
 
 The contraction of the field with the spin gives the four-vector
 
@@ -204,17 +204,17 @@ Two comments on the content of the equation. First, the invariant $B=\sum_{\lamb
 It remains to write the two structures in $\mathbb{B}$. The key object is the **field action**
 
 $$
-\mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+\mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
+P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
-the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
+the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{B}_{\Phi}$ by construction; that its four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
 
 **Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$, one has
 
 $$
-\mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
+\mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right)
 \;=\;\tilde{W},
 \qquad
 W_\mu=\sum_\nu F_{\mu\nu}V_\nu .
@@ -241,9 +241,9 @@ $$
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle\,\tilde{V}\right],
 $$
 
-in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\langle\tilde{S},\tilde{V}\rangle=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS_{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
+in which every object is an element of $\mathbb{B}_{\Phi}$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $\langle\tilde{S},\tilde{V}\rangle=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS_{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.
 
-The transcription is a statement about the **structure** of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{M}_-$.
+The transcription is a statement about the **structure** of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{B}_{\Phi}$.
 
 ## The Rest Frame and the Meaning of $g$
 
@@ -342,7 +342,7 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 - The orthogonality constraint on the spin is the invariant pairing $\mathrm{Sc}(\tilde{S}\tilde{V}^{\natural})=0$, and its preservation under the evolution is the single algebraic relation $\alpha+\beta c^{2}=1$.
 - The field coupling is the anti-Hermitian projection of the product $\tilde{V}\tilde{F}$, rescaled by $-\sqrt{\mu}$; the four Maxwell components enter through the two self-dual halves of $\tilde{F}$.
 - The invariant $B$ is the material pairing of the spin with the field action on the four-velocity, $\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$.
-- The equation is a statement inside $\mathbb{M}_-$ and is automatically sector-preserving; the reality structure that the Lorentz force made delicate, the separation of the electric and magnetic halves, is here handled by the same projection.
+- The equation is a statement inside $\mathbb{B}_{\Phi}$ and is automatically sector-preserving; the reality structure that the Lorentz force made delicate, the separation of the electric and magnetic halves, is here handled by the same projection.
 
 **Standard relativistic physics transcribed.**
 
@@ -366,7 +366,7 @@ It is useful to separate the contribution of the biquaternion algebra from the s
 
 ## Summary
 
-The **classical spinning particle** is a point particle with four-velocity $\tilde{V}$ and an intrinsic spin four-vector $\tilde{S}\in\mathbb{M}_-$ subject to
+The **classical spinning particle** is a point particle with four-velocity $\tilde{V}$ and an intrinsic spin four-vector $\tilde{S}\in\mathbb{B}_{\Phi}$ subject to
 
 $$
 \langle\tilde{S},\tilde{V}\rangle=0 ,
@@ -400,9 +400,9 @@ $$
 with the **field action**
 
 $$
-\mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+\mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
-P_{\mathbb{M}_-}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
+P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac{1}{2}\left(\tilde{Q}-\tilde{Q}^{*}\right),
 $$
 
 whose four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$, and the invariant material pairing
@@ -428,14 +428,14 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Quaternion conjugate, Hermitian conjugate |
-| $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
+| $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
-| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
-| $\tilde{S}=iS_0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $\langle\tilde{S},\tilde{V}\rangle=0$ |
+| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{B}_{\Phi}$ |
+| $\tilde{S}=iS_0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{B}_{\Phi}$, $\langle\tilde{S},\tilde{V}\rangle=0$ |
 | $\tilde U_{\mathrm{lor},\vec v}$ | Lorentz boost rotor to the momentary rest frame |
 | $\vec s$ | Rest-frame spin, $\langle\tilde{S}\rangle_\natural=\vec s^2$ |
 | $S_{\mu\nu}$ | Antisymmetric spin tensor, $S_\mu=\frac{1}{2c}\epsilon_{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
@@ -443,8 +443,8 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $i c r'_t$: $F_{tk}=iE_k/c$) |
-| $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{B}_{\Phi}}(\tilde{V}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |

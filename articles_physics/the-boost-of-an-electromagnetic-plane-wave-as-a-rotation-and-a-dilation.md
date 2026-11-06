@@ -22,7 +22,7 @@ $$
 
 Since $\tilde{u}$ is a real quaternion, $\tilde{u}^{*} = \tilde{u}^{-1}$ and the action $\tilde{u}\,\cdot\,\tilde{u}^{*}$ is a **rotation of physical space**; the scalar $\exp(d)$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.
 
-The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*, and none is restated here. A **real vector** is $\vec v=v_1\vec e_x+v_2\vec e_y+v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k=-e_t$. The material sector $\mathbb{M}_-$ carries the four-vectors and the Hermitian sector $\mathbb{M}_+$ the boost rotors. The field is taken in vacuum, $c=c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*, and none is restated here. A **real vector** is $\vec v=v_1\vec e_x+v_2\vec e_y+v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k=-e_t$. The material sector $\mathbb{B}_{\Phi}$ carries the four-vectors and the Hermitian sector $\mathbb{B}_{\Psi}$ the boost rotors. The field is taken in vacuum, $c=c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
 
 ## The Null Wave Element and the Pacwoman Property
 
@@ -222,7 +222,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 |---|---|
 | $\mathbb{B}$, $e_t = 1, \vec e_k$ | Biquaternion algebra, quaternion basis with $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi,\Phi}$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
 | $\vec k = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |
 | $\tilde P = \frac{\omega}{c}(i+\vec u_k)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P\rangle_{\natural} = 0$ |
 | $\tilde{F}$ | Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P\tilde{F}=0$ |

@@ -137,18 +137,18 @@ the insertion being in the first slot and the derived operation being $\tilde Q_
 
 ## The Actions on the Remarkable Subspaces
 
-The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ (*Subspaces and Decompositions*). Each of the two conjugations preserves each of the remarkable subspaces (*Remarkable Subspaces and the Four General Products, Forms and Norms* §*The four general products have the same value set*), so each action of $e_t$ restricts to each subspace, and the two restrictions are computed below.
+The remarkable subspaces are the centre $\mathbb{B}_{C}$, the vector subspace $\mathbb{B}_{V}$, the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (*Subspaces and Decompositions*). Each of the two conjugations preserves each of the remarkable subspaces (*Remarkable Subspaces and the Four General Products, Forms and Norms* §*The four general products have the same value set*), so each action of $e_t$ restricts to each subspace, and the two restrictions are computed below.
 
 **Theorem (the two actions on the remarkable subspaces).**
 
 | subspace | left action $e_t \star \cdot = {}^{*}$ | right action $\cdot \star e_t = {}^{\natural}$ |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $A e_t \mapsto \bar A e_t$ | identity |
-| $\mathrm{Vect}(\mathbb{B})$ | $\vec Q \mapsto -\overline{\vec Q}$ | $\vec Q \mapsto -\vec Q$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q \mapsto -\tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
-| $\mathbb{M}_{+}$ | identity | $\tilde Q \mapsto \tilde Q^{\natural}$ |
-| $\mathbb{M}_{-}$ | $-\mathrm{id}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
+| $\mathbb{B}_{C}$ | $A e_t \mapsto \bar A e_t$ | identity |
+| $\mathbb{B}_{V}$ | $\vec Q \mapsto -\overline{\vec Q}$ | $\vec Q \mapsto -\vec Q$ |
+| $\mathbb{B}_{H}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
+| $\mathbb{B}_{iH}$ | $\tilde Q \mapsto -\tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
+| $\mathbb{B}_{\Psi}$ | identity | $\tilde Q \mapsto \tilde Q^{\natural}$ |
+| $\mathbb{B}_{\Phi}$ | $-\mathrm{id}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 
 **Proof.** The left column is the star conjugation, $Q^{*}_t = \overline{Q_t}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the natural conjugation, $\tilde Q^{\natural} = Q_t - \vec Q$.
 
@@ -156,10 +156,10 @@ The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector su
 - On the vector subspace, $Q_t = 0$, so ${}^{*}$ sends $\vec Q$ to $-\overline{\vec Q}$ and ${}^{\natural}$ sends it to $-\vec Q$.
 - On the quaternion subspace the coordinates are real, so the coefficientwise conjugation is the identity and the two conjugations coincide, both negating the vector part: this is the quaternionic conjugation of the real quaternion subspace.
 - On the anti-quaternion subspace write $\tilde Q = i\tilde q$ with $\tilde q$ in the quaternion subspace, so that $\tilde q^{*} = \tilde q^{\natural}$ there and the star is conjugate-linear while ${}^{\natural}$ is $\mathbb{C}$-linear: $\tilde Q^{*} = (i\tilde q)^{*} = -i\,\tilde q^{*} = -i\,\tilde q^{\natural} = -(i\tilde q)^{\natural} = -\tilde Q^{\natural}$, while the right action is $\tilde Q^{\natural}$.
-- On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_t + i\vec p \mapsto a_t - i\vec p$, which stays in $\mathbb{M}_{+}$.
-- On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_t + \vec q \mapsto i b_t - \vec q$, which stays in $\mathbb{M}_{-}$.
+- On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_t + i\vec p \mapsto a_t - i\vec p$, which stays in $\mathbb{B}_{\Psi}$.
+- On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_t + \vec q \mapsto i b_t - \vec q$, which stays in $\mathbb{B}_{\Phi}$.
 
-**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{H}_{\mathbb{B}}$, and where they differ by a sign, on $i\mathbb{H}_{\mathbb{B}}$ and on $\mathbb{M}_{\pm}$.
+**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{B}_{H}$, and where they differ by a sign, on $\mathbb{B}_{iH}$ and on $\mathbb{B}_{\Psi,\Phi}$.
 
 ## The Unit Candidate as an Idempotent
 
@@ -228,7 +228,7 @@ The two one-sided actions of $e_t$ under the general quaternionic sesquilinear m
 | (i) | $\sigma$ is a conjugate-linear involution of the algebra |
 | (ii) | $\tilde Q_1 \star \tilde Q_2 = \tilde Q_1\,\sigma(\tilde Q_2)$ |
 | $\tilde Q_1 \star \tilde Q_2 = {}^{\natural}(\tilde Q_1)\,\tilde Q_2^{*}$ | the product as the isotope of the derived operation |
-| $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_{+}, \mathbb{M}_{-}$ | the remarkable subspaces |
+| $\mathbb{B}_{C}, \mathbb{B}_{V}, \mathbb{B}_{H}, \mathbb{B}_{iH}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | the remarkable subspaces |
 | $e_t \star e_t = e_t$ | the unit candidate as the trivial idempotent of the multiplication |
 | $\langle e_t \star \tilde Q\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$ | the left action conjugates the norm |
 | $\langle\tilde Q \star e_t\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}$ | the right action preserves the norm |

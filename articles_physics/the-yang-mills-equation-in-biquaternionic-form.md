@@ -172,7 +172,7 @@ The ordinary divergence does not vanish. For a generic non-abelian connection it
 
 ## The Abelian Limit
 
-The abelian case is the case of a **commuting generator set**: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{C}_{\mathbb{B}}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.
+The abelian case is the case of a **commuting generator set**: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{B}_{C}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.
 
 Write $\mathcal{A}_\mu = a_\mu\,g$ for a fixed generator $g$ with $a_\mu$ scalar functions (for the centre, $g = ie_t$; for a single spatial generator, $g = \vec e_x$). Then
 
@@ -352,7 +352,7 @@ with $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ and $F_{\mu\nu} 
 - The field equation acquires the commutator term $i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$, with the derivative index contracted with the first index of the curvature and with the connection of the same index inside the commutator. This is the only placement that makes the equation covariant and the current conserved; the three alternatives tested fail at order unity.
 - The current is **covariantly** conserved, $\sum_\nu D_\nu J_\nu = 0$, not ordinarily conserved: $\langle\tilde\nabla,\tilde J\rangle_{\natural} = -i\kappa[\mathcal{A}_\nu,J_\nu] \neq 0$. The conservation follows from the field equation and the antisymmetry of the curvature, through $\tfrac12\sum_{\mu,\nu}[D_\nu,D_\mu]F_{\mu\nu} = \tfrac12 i\kappa\sum_{\mu,\nu}[F_{\nu\mu},F_{\mu\nu}] = 0$; the differential Bianchi identity is the independent homogeneous half and is not what makes it true.
 
-In the abelian limit — a commuting generator set, whether the centre $\mathbb{C}_{\mathbb{B}}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F_{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J_\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = J_\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.
+In the abelian limit — a commuting generator set, whether the centre $\mathbb{B}_{C}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F_{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J_\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = J_\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.
 
 The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J_{2,\nu} = \tilde UJ_\nu \tilde U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.
 
@@ -365,14 +365,14 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
-| $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{M}_-$ |
+| $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
+| $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |

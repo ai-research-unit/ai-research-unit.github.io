@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is one of the exercises in the relativity series. It applies the apparatus of two companion articles: *The Lorentz Transformation as a Biquaternionic Rotation*, which defines the boost biquaternion, the rotor conjugation, and the square-root relation between the rotor and the four-velocity; and *Relativistic Mechanics in Biquaternionic Form*, which fixes the four-velocity and the four-momentum in $\mathbb{M}_-$. Those two articles are the parents of this exercise: every result below is obtained from the tools already defined there, and no new formalism is introduced. The sequence is: boost a general four-velocity (Problem 1); compose two collinear boosts and recover rapidity addition and velocity addition (Problem 2); compose two non-collinear boosts and extract the Thomas–Wigner rotation (Problem 3); and examine the parent's square-root relation between the four-velocity and the boost rotor, whose direction the parent does not state (Problem 4). A set of further problems is left to the reader.
+This is one of the exercises in the relativity series. It applies the apparatus of two companion articles: *The Lorentz Transformation as a Biquaternionic Rotation*, which defines the boost biquaternion, the rotor conjugation, and the square-root relation between the rotor and the four-velocity; and *Relativistic Mechanics in Biquaternionic Form*, which fixes the four-velocity and the four-momentum in $\mathbb{B}_{\Phi}$. Those two articles are the parents of this exercise: every result below is obtained from the tools already defined there, and no new formalism is introduced. The sequence is: boost a general four-velocity (Problem 1); compose two collinear boosts and recover rapidity addition and velocity addition (Problem 2); compose two non-collinear boosts and extract the Thomas–Wigner rotation (Problem 3); and examine the parent's square-root relation between the four-velocity and the boost rotor, whose direction the parent does not state (Problem 4). A set of further problems is left to the reader.
 
 **What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the rotor conjugation are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here. The pure boost is written $\tilde U_{\mathrm b}$ and the rotation factor $\tilde u_{\mathrm r}$, with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. No object of the informational sector arises below, so the trace formula of *Norm and Pairing Conventions* is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
 $$
@@ -10,15 +10,15 @@ $$
 \qquad
 \tanh\theta_{\mathrm{rpd},b} = \frac{v_b}{c},
 $$
-which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\vec u_x, \vec u_y$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
+which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\mathbb{B}_{\Psi}$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\vec u_x, \vec u_y$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
-**What is to be shown.** Problem 1 computes $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ for arbitrary $\vec v_b,\vec v$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
+**What is to be shown.** Problem 1 computes $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ for arbitrary $\vec v_b,\vec v$ and shows that it is again a four-velocity of $\mathbb{B}_{\Phi}$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
 
 ## Problem 1: The Boost of a General Four-Velocity
 
 **Statement.** Let $\tilde{V} = \gamma(ic\,e_t + \vec v)$ be the four-velocity of a particle, and let $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$, with $\tanh\theta_{\mathrm{rpd},b} = v_b/c$, be a boost biquaternion. Compute $\tilde{V}_2 = \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ and show that:
 
-**(a)** $\tilde{V}_2$ lies in $\mathbb{M}_-$ and has $\langle\tilde{V}_2\rangle_{\natural} = -c^2$;
+**(a)** $\tilde{V}_2$ lies in $\mathbb{B}_{\Phi}$ and has $\langle\tilde{V}_2\rangle_{\natural} = -c^2$;
 
 **(b)** its scalar part is $ic\,\gamma_2$ with $\gamma_2 = \gamma_b\gamma\left(1 - \vec v_b\cdot\vec v/c^2\right)$, where $\gamma_b = (1-v_b^2/c^2)^{-1/2}$;
 
@@ -44,11 +44,11 @@ $$
 $$
 The identity $\sinh\theta_{\mathrm{rpd},b} = \gamma_b v_b/c$ and the expansion of the parallel component have been used. The result is the biquaternion form of the standard Lorentz transformation of a four-velocity from the lab to the frame moving with velocity $\vec v_b$.
 
-**(a)** In (1) the scalar coefficient is purely imaginary and the vector coefficient is real, so $\tilde{V}_2\in\mathbb{M}_-$. Its biquaternion norm is preserved because $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\vec v_b}\rangle_{\natural} = 1$:
+**(a)** In (1) the scalar coefficient is purely imaginary and the vector coefficient is real, so $\tilde{V}_2\in\mathbb{B}_{\Phi}$. Its biquaternion norm is preserved because $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\vec v_b}\rangle_{\natural} = 1$:
 $$
 \langle\tilde{V}_2\rangle_{\natural} = \langle\tilde U_{\vec v_b}\rangle_{\natural}\,\langle\tilde{V}\rangle_{\natural}\,\langle\tilde U_{\vec v_b}\rangle_{\natural}^{*} = 1\cdot(-c^2)\cdot 1 = -c^2 .
 $$
-The transformation therefore maps four-velocities to four-velocities; this is the algebraic content of Lorentz covariance in $\mathbb{M}_-$.
+The transformation therefore maps four-velocities to four-velocities; this is the algebraic content of Lorentz covariance in $\mathbb{B}_{\Phi}$.
 
 **(b)** Reading off the scalar coefficient of (1), $\gamma_2 = \gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$. This is positive for $v_b,v<c$, since $\vec v_b\cdot\vec v\le v_b v < c^2$. It is the standard transformation of energy, $E_2/c = \gamma_b(E/c - \vec v_b\cdot\vec p/c)$, written for the four-velocity.
 
@@ -95,7 +95,7 @@ $$
 = \tilde U_{\mathrm b}(\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}).
 \tag{3}
 $$
-The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\vec u_y$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
+The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{B}_{\Psi}$, and has unit norm, so it is a pure boost along $\vec u_y$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
 
 **(b)** The product rotor has rapidity $\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$, and the velocity it represents is $w = c\tanh(\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2})$. Using $\tanh\theta_{\mathrm{rpd},i} = v_{b_i}/c$,
 $$
@@ -129,7 +129,7 @@ P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
 + i\underbrace{\left(c_2s_1\vec u_y + c_1s_2\vec u_z\right)}_{\vec w},
 \tag{5}
 $$
-where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\theta_{\mathrm{btw}}$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\theta_{\mathrm{btw}} = 0$. For nonzero rapidities this means $\sin\theta_{\mathrm{btw}} = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
+where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\theta_{\mathrm{btw}}$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\theta_{\mathrm{btw}} = 0$. For nonzero rapidities this means $\sin\theta_{\mathrm{btw}} = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{B}_{\Psi}$.
 
 **(b)** Write $P = a + \vec q + i\vec w$. Its biquaternion norm is, using $\vec q\cdot\vec w=0$,
 $$
@@ -346,7 +346,7 @@ The following are left to the reader; they extend the same tools and use the sam
 
 We have applied the boost biquaternion and the rotor conjugation to four-velocities and to the composition of boosts.
 
-1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v_2 = (v-v_b)/(1-v_b v/c^2)$.
+1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{B}_{\Phi}$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v_2 = (v-v_b)/(1-v_b v/c^2)$.
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (v_{b_1}+v_{b_2})/(1+v_{b_1}v_{b_2}/c^2)$.
 
@@ -363,8 +363,8 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (rotation rotors) |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace (rotation rotors) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |

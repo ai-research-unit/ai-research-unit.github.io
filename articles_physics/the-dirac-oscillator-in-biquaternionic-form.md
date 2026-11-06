@@ -32,7 +32,7 @@ $$
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial R_k^2$. Write $\vec\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{M}_-$, where $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, the d'Alembertian is $\Box=\Delta-c^{-2}\partial^2/\partial r'_t^2$.
+with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial R_k^2$. Write $\vec\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, the d'Alembertian is $\Box=\Delta-c^{-2}\partial^2/\partial r'_t^2$.
 
 **Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
 
@@ -332,7 +332,7 @@ $$
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k ,
 $$
 
-a Hermitian element of $\mathbb{M}_+$: $i\vec e_k$ is Hermitian, $L_{\mathrm{orb},k}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},k}$, and the coupling is their contraction, which is the operator $\sum_kL_{\mathrm{orb},k}\tilde S_k$ of the hydrogen article up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
+a Hermitian element of $\mathbb{B}_{\Psi}$: $i\vec e_k$ is Hermitian, $L_{\mathrm{orb},k}$ is Hermitian, and the two commute. The spin is the Hermitian element $i\vec e_k$, the orbital angular momentum is the scalar operator $L_{\mathrm{orb},k}$, and the coupling is their contraction, which is the operator $\sum_kL_{\mathrm{orb},k}\tilde S_k$ of the hydrogen article up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and not central is the algebraic statement that the oscillator's product is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian element to the product.
 
 **The zero point is a commutator.** The constant $-3m\hbar\omega$ comes from the commutator of position and momentum. The shift carries $\vec e_k\,(Q_k\tilde{Ξ}_{\mathrm{sp}})\,\vec e_y$ against the momentum $p_k$, and the two do not commute: their commutator is the central scalar $[Q_k,p_k]=i\hbar$, and the sum over the three directions is $3i\hbar$. The factor $im\omega$ of the substitution turns it into $-3m\hbar\omega$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
 
@@ -377,12 +377,12 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian (informational) sector |
-| $\mathbb{M}_-$ | Material sector, with $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector |
+| $\mathbb{B}_{\Phi}$ | Material sector, with $Q_t=i c r'_t$ and $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$ |
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$, $\vec e_y\vec e_x = -\vec e_z$ |
 | $\tilde\nabla$ | The corpus gradient, $e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box = \tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{M}_-$, $\Delta-c^{-2}\partial^2/\partial r'_t^2$ |
+| $\Box = \tilde\nabla\tilde\nabla^{\natural} = \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta-c^{-2}\partial^2/\partial r'_t^2$ |
 | $\vec\nabla = \sum_k\vec e_k\,\partial/\partial R_k$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
 | $\vec\nabla_\pm = \vec\nabla\pm\frac{m\omega}{\hbar}\vec r$ | The two non-minimal shifts of the spatial gradient |
 | $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |

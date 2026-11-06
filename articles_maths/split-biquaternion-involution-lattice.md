@@ -105,20 +105,20 @@ The practical content is that the four conjugations can be applied in any order 
 |---|---|---|
 | ${}^{\natural}$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ |
 | $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ |
-| ${}^{*}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\flat$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+| ${}^{*}$ | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\flat$ | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 
 The eight labels stand for six distinct subspaces, because the Hermitian pair is counted twice: the anti-Hermitian conjugation has the same eigenspaces as Hermitian conjugation with the signs exchanged, so
 
 $$
 \boxed{\;
-\left\{ \tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \mathbb{M}_- , \qquad \left\{ \tilde{Q} : \tilde{Q}^{\flat} = -\tilde{Q} \right\} = \mathbb{M}_+
+\left\{ \tilde{Q} : \tilde{Q}^{\flat} = \tilde{Q} \right\} = \mathbb{B}_{\Phi} , \qquad \left\{ \tilde{Q} : \tilde{Q}^{\flat} = -\tilde{Q} \right\} = \mathbb{B}_{\Psi}
 \;}.
 $$
 
 **Proof.** Each row is the comparison-of-coefficients computation recorded in the article of the corresponding subspace. For the last row, the equations $-\tilde{Q}^{*} = \tilde{Q}$ and $-\tilde{Q}^{*} = -\tilde{Q}$ are those of ${}^{*}$ read with the opposite labels.
 
-The four subspaces that are **named** as the distinguished subspaces — the fixed spaces of the four involutions — are $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$. The two remaining distinct sets, $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ of dimension $6$ and the anti-fixed space $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ of split complex conjugation, are sums of coordinate blocks; the second is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under multiplication by the central scalar $j$, as explained in *Split-Biquaternion Relations Between Subspaces*.
+The four subspaces that are **named** as the distinguished subspaces — the fixed spaces of the four involutions — are $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The two remaining distinct sets, $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ of dimension $6$ and the anti-fixed space $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ of split complex conjugation, are sums of coordinate blocks; the second is isometric to $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ under multiplication by the central scalar $j$, as explained in *Split-Biquaternion Relations Between Subspaces*.
 
 ### The Lattice
 
@@ -127,14 +127,14 @@ The fixed spaces are related by inclusion with the coordinate blocks, in the fol
 | level | subspaces |
 |---|---|
 | $\mathbb{B}_{\mathrm{spl}}$ | the whole algebra, dimension $8$ |
-| the sums | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} + \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} + j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{M}_+ + \mathbb{M}_-$ — all equal to $\mathbb{B}_{\mathrm{spl}}$ |
-| the four-dimensional spaces | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
-| the three-dimensional triples | $\langle \vec e_x,\vec e_y,\vec e_z\rangle = \mathrm{Vect} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\langle j\vec e_x,j\vec e_y,j\vec e_z\rangle = \mathrm{Vect} \cap \mathbb{M}_+$ |
+| the sums | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} + \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} + j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi} + \mathbb{B}_{\Phi}$ — all equal to $\mathbb{B}_{\mathrm{spl}}$ |
+| the four-dimensional spaces | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ |
+| the three-dimensional triples | $\langle \vec e_x,\vec e_y,\vec e_z\rangle = \mathrm{Vect} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\langle j\vec e_x,j\vec e_y,j\vec e_z\rangle = \mathrm{Vect} \cap \mathbb{B}_{\Psi}$ |
 | the two-dimensional centre | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \langle e_t \rangle \oplus \langle je_t\rangle$ |
 | the one-dimensional lines | $\langle e_t\rangle$, $\langle je_t\rangle$ |
 | the origin | $0$ |
 
-The lattice is not a chain, and it is not closed under sum, being the union of the three decompositions of the algebra rather than a single distributive lattice. Its skeleton is the three decompositions of the first table of *Split-Biquaternion Relations Between Subspaces*, and the diagram records how the remarkable subspaces distinct fixed and anti-fixed spaces sit over the four coordinate blocks. The comparison with the biquaternion lattice is the replacement of the complex scalar line $\langle ie_t\rangle$ by the split scalar line $\langle je_t\rangle$, and of the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ by the isometric copy $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$.
+The lattice is not a chain, and it is not closed under sum, being the union of the three decompositions of the algebra rather than a single distributive lattice. Its skeleton is the three decompositions of the first table of *Split-Biquaternion Relations Between Subspaces*, and the diagram records how the remarkable subspaces distinct fixed and anti-fixed spaces sit over the four coordinate blocks. The comparison with the biquaternion lattice is the replacement of the complex scalar line $\langle ie_t\rangle$ by the split scalar line $\langle je_t\rangle$, and of the anti-quaternion subspace $\mathbb{B}_{iH}$ by the isometric copy $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$.
 
 ## Involutions on the Involution Group
 
@@ -144,9 +144,9 @@ $$
 1 \quad \text{or} \quad 2 \quad \text{or} \quad 4 ,
 $$
 
-the size being $1$ for the real line $\langle e_t\rangle$, $2$ for the elements lying in $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, in $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ or in $\mathbb{M}_+$ but not in $\langle e_t\rangle$, and $4$ otherwise.
+the size being $1$ for the real line $\langle e_t\rangle$, $2$ for the elements lying in $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, in $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ or in $\mathbb{B}_{\Psi}$ but not in $\langle e_t\rangle$, and $4$ otherwise.
 
-**Proof.** An element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by $\bar{\cdot}$, since ${}^{*}$ is their composite; that is $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \langle e_t\rangle$, giving orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of ${}^{\natural}, \bar{\cdot}, {}^{*}$ and by no second one — fixed by two it is fixed by the third and falls back into $\langle e_t\rangle$ — and the three fixed spaces of those maps are $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_t\rangle$; that gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.
+**Proof.** An element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by $\bar{\cdot}$, since ${}^{*}$ is their composite; that is $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \langle e_t\rangle$, giving orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of ${}^{\natural}, \bar{\cdot}, {}^{*}$ and by no second one — fixed by two it is fixed by the third and falls back into $\langle e_t\rangle$ — and the three fixed spaces of those maps are $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ and $\mathbb{B}_{\Psi}$, whose pairwise intersections are all $\langle e_t\rangle$; that gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.
 
 ## Examples
 
@@ -179,7 +179,7 @@ Geometrically the four conjugations are four linear involutions of $\mathbb{R}^8
 
 ## Summary
 
-The split biquaternion algebra carries four conjugations — quaternion conjugation ${}^{\natural}$, split complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation $\flat = -{}^{*}$ — with the same coordinate sign patterns as in the biquaternion algebra. Quaternion conjugation is $\mathbb{C}_{\mathrm{spl}}$-linear and an antiautomorphism; split complex conjugation is split-antilinear and an automorphism; Hermitian conjugation is split-antilinear and an antiautomorphism; the anti-Hermitian conjugation satisfies $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$. The maps ${}^{\natural}, \bar{\cdot}, {}^{*}$ generate the Klein four-group $\{ \mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*} \}$, whose composition table is identical to that of the biquaternion conjugations; a composite involving $\flat$ may be minus a member of the group. The conjugation action of the group on itself is trivial because the group is abelian. Each involution has a fixed and an anti-fixed space, giving eight labels but six distinct sets: the fixed spaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and the anti-fixed spaces $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. The lattice over the four coordinate blocks records how these sit among each other; it is the biquaternion lattice with the complex scalar line replaced by the split scalar line and the anti-quaternion subspace by the isometric copy $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. Under the action of the group an element has orbit size $1$ on the real line, $2$ in $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cup \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cup \mathbb{M}_+$ away from it, and $4$ otherwise. The family of named subspaces is four, whereas the biquaternion family is six, because the split anti-fixed spaces are a six-dimensional non-fixed space and an isometric copy of the quaternion subspace.
+The split biquaternion algebra carries four conjugations — quaternion conjugation ${}^{\natural}$, split complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation $\flat = -{}^{*}$ — with the same coordinate sign patterns as in the biquaternion algebra. Quaternion conjugation is $\mathbb{C}_{\mathrm{spl}}$-linear and an antiautomorphism; split complex conjugation is split-antilinear and an automorphism; Hermitian conjugation is split-antilinear and an antiautomorphism; the anti-Hermitian conjugation satisfies $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$. The maps ${}^{\natural}, \bar{\cdot}, {}^{*}$ generate the Klein four-group $\{ \mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*} \}$, whose composition table is identical to that of the biquaternion conjugations; a composite involving $\flat$ may be minus a member of the group. The conjugation action of the group on itself is trivial because the group is abelian. Each involution has a fixed and an anti-fixed space, giving eight labels but six distinct sets: the fixed spaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ and the anti-fixed spaces $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ and $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. The lattice over the four coordinate blocks records how these sit among each other; it is the biquaternion lattice with the complex scalar line replaced by the split scalar line and the anti-quaternion subspace by the isometric copy $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. Under the action of the group an element has orbit size $1$ on the real line, $2$ in $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cup \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cup \mathbb{B}_{\Psi}$ away from it, and $4$ otherwise. The family of named subspaces is four, whereas the biquaternion family is six, because the split anti-fixed spaces are a six-dimensional non-fixed space and an isometric copy of the quaternion subspace.
 
 ## Summary of Notation
 
@@ -190,7 +190,7 @@ The split biquaternion algebra carries four conjugations — quaternion conjugat
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Centre and quaternion subspace, fixed spaces of ${}^{\natural}$ and $\bar{\cdot}$ |
 | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}}), j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Anti-fixed spaces of ${}^{\natural}$ and $\bar{\cdot}$ |
-| $\mathbb{M}_+, \mathbb{M}_-$ | Sectors, the fixed and anti-fixed spaces of ${}^{*}$ and $\flat$ |
+| $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Sectors, the fixed and anti-fixed spaces of ${}^{*}$ and $\flat$ |
 | $\langle e_t\rangle, \langle je_t\rangle, \langle \vec e_x,\vec e_y,\vec e_z\rangle, \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ | The four coordinate blocks |
 | $\bar{\lambda}$ | Split complex conjugate of a scalar $\lambda \in \mathbb{C}_{\mathrm{spl}}$ |
 | orbit size $1, 2, 4$ | Sizes under the Klein group, by the orbit–stabilizer theorem |

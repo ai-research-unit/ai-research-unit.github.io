@@ -18,7 +18,7 @@ where $\tilde{Ξ}_{\mathrm{sp}}$ is a field of the biquaternion algebra $\mathbb
 
 **The chirality cell.** The chirality cell is the corpus's right multiplication by $-i\vec e_z$ (*Special Element Conventions*), and it is the object that carries one insertion of a pair into the other: composed after a bivector it returns the insertion of the EDM family, and composed after that insertion it returns the bivector. It is an involution, because $(-i)^2=-1$ and $\vec e_z\vec e_z=-e_t$ cancel, and it is Hermitian; its involution and the $(-i)^2$ of the dual are the two factors of the article's $\mathcal{D}^{2}=-1$.
 
-**The structural statement.** The framework places the EDM operator in a definite half of its algebra. The EDM insertion multiplies by $-\vec e_k$, an **anti-Hermitian** element, and it therefore belongs to the material sector $\mathbb{M}_-$; the magnetic-moment insertion multiplies by $i\vec e_k$, a **Hermitian** element, and it belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other: the dual exchanges the two insertions with the sign of the central $-i$, so it flips the Hermiticity class, and the $i$ of the exchange flips it back. That $i$ is the $i$ in front of $d$. The article establishes this and states what it does and does not buy.
+**The structural statement.** The framework places the EDM operator in a definite half of its algebra. The EDM insertion multiplies by $-\vec e_k$, an **anti-Hermitian** element, and it therefore belongs to the material sector $\mathbb{B}_{\Phi}$; the magnetic-moment insertion multiplies by $i\vec e_k$, a **Hermitian** element, and it belongs to the informational sector $\mathbb{B}_{\Psi}$. The two are Hodge duals of each other: the dual exchanges the two insertions with the sign of the central $-i$, so it flips the Hermiticity class, and the $i$ of the exchange flips it back. That $i$ is the $i$ in front of $d$. The article establishes this and states what it does and does not buy.
 
 - **Established, and recomputed below.** The Hermiticity of the four insertions, from the classes of their two factors under the star; the Hodge duality, as the exchange of the two families; and the resulting sector placement. The $\vec E$-coupling insertion multiplies by $-\vec e_k$ and is anti-Hermitian, hence material; the $\vec B$-coupling insertion multiplies by $i\vec e_k$ and is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
 - **Standard, transcribed.** The definition of the EDM, its $\mathbf{P}$-, $\mathbf{T}$-, and $\mathbf{CP}$-odd character, the nonrelativistic limit, the form-factor decomposition of the electromagnetic vertex, the Standard Model prediction (CKM-suppressed and tiny), the $\theta$-term contribution, and the experimental bounds are standard. They are stated in the framework's notation.
@@ -75,7 +75,7 @@ $$
 H_{\mathrm{NR}} = -\,d\sum_k E_k\,i\vec e_k ,
 $$
 
-the left multiplication by the element $-d\sum_kE_k\,i\vec e_k$ of $\mathbb{M}_+$. The explicit $i$ is required for a Hermitian Lagrangian, and it is the first appearance of the article's central point: the insertion multiplies by $-\vec e_k$, which is anti-Hermitian, and the coefficient must be multiplied by $i$ to give a real interaction.
+the left multiplication by the element $-d\sum_kE_k\,i\vec e_k$ of $\mathbb{B}_{\Psi}$. The explicit $i$ is required for a Hermitian Lagrangian, and it is the first appearance of the article's central point: the insertion multiplies by $-\vec e_k$, which is anti-Hermitian, and the coefficient must be multiplied by $i$ to give a real interaction.
 
 **The dimension and the size.** The EDM has the dimensions of electric charge times length. In natural units, $d$ is dimensionless times a length, i.e. $[\mathrm{GeV}^{-1}]$, with the conversion given in the Introduction. For a fermion of mass $m_f$ and a new-physics scale $\Lambda$, the standard dimensional estimate of a CP-violating contribution is
 
@@ -101,10 +101,10 @@ because the star reverses the order of the three factors, $(aQb)^{*}=b^{*}Q^{*}a
 
 | insertion | action | left factor | right factor | class | sector |
 |---|---|---|---|---|---|
-| magnetic moment | $Q\mapsto i\vec e_kQ$ | $i\vec e_k$, Hermitian | $e_t$, Hermitian | Hermitian | $\mathbb{M}_+$ |
-| pseudotensor | $Q\mapsto \vec e_kQ\vec e_z$ | $\vec e_k$, anti-Hermitian | $\vec e_z$, anti-Hermitian | Hermitian | $\mathbb{M}_+$ |
-| EDM | $Q\mapsto -\vec e_kQ$ | $-\vec e_k$, anti-Hermitian | $e_t$, Hermitian | anti-Hermitian | $\mathbb{M}_-$ |
-| bare electric | $Q\mapsto i\vec e_kQ\vec e_z$ | $i\vec e_k$, Hermitian | $\vec e_z$, anti-Hermitian | anti-Hermitian | $\mathbb{M}_-$ |
+| magnetic moment | $Q\mapsto i\vec e_kQ$ | $i\vec e_k$, Hermitian | $e_t$, Hermitian | Hermitian | $\mathbb{B}_{\Psi}$ |
+| pseudotensor | $Q\mapsto \vec e_kQ\vec e_z$ | $\vec e_k$, anti-Hermitian | $\vec e_z$, anti-Hermitian | Hermitian | $\mathbb{B}_{\Psi}$ |
+| EDM | $Q\mapsto -\vec e_kQ$ | $-\vec e_k$, anti-Hermitian | $e_t$, Hermitian | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
+| bare electric | $Q\mapsto i\vec e_kQ\vec e_z$ | $i\vec e_k$, Hermitian | $\vec e_z$, anti-Hermitian | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
 
 **The bivectors.** The six bivectors are indexed by the six pairs of the basis, and each is an action of the same shape:
 
@@ -167,18 +167,18 @@ $$
 
 so it agrees with the dual on the bare electric family and differs by a sign on the rotations, and it squares to $+1$ where the dual squares to $-1$. The plain contraction is therefore not the duality; the weights are what turn it into one.
 
-**The sector placement.** The four units and the central $i$ generate $\mathbb{B}$, and the insertions are built from them: a bivector adds $i\vec e_k$ on the left and, for the timelike pair, $\vec e_z$ on the right, and the chirality cell adds $\vec e_z$ on the right and the scalar $-i$. The sector split is the Hermiticity split of $\mathbb{B}$: Hermitian elements are the informational sector $\mathbb{M}_+$ and anti-Hermitian elements the material sector $\mathbb{M}_-$. Complexified, the algebra is $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the two chiral halves, because the chirality cell commutes with every bivector and splits the algebra; the sector split is not that split, it is the split by Hermiticity. Applied to the insertions:
+**The sector placement.** The four units and the central $i$ generate $\mathbb{B}$, and the insertions are built from them: a bivector adds $i\vec e_k$ on the left and, for the timelike pair, $\vec e_z$ on the right, and the chirality cell adds $\vec e_z$ on the right and the scalar $-i$. The sector split is the Hermiticity split of $\mathbb{B}$: Hermitian elements are the informational sector $\mathbb{B}_{\Psi}$ and anti-Hermitian elements the material sector $\mathbb{B}_{\Phi}$. Complexified, the algebra is $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the two chiral halves, because the chirality cell commutes with every bivector and splits the algebra; the sector split is not that split, it is the split by Hermiticity. Applied to the insertions:
 
 | Insertion | Term it carries | Hermiticity | Sector |
 |---|---|---|---|
-| $\mathcal{G}_{ij}$ | the magnetic moment, $\vec B$ | Hermitian | $\mathbb{M}_+$ |
-| $\mathcal{O}_{ij}$, the bivector composed with the chirality cell | the pseudotensor, $i$ times the dual of the rotation | Hermitian | $\mathbb{M}_+$ |
-| $\mathcal{O}_{0k}$, the bivector composed with the chirality cell | the EDM, $\vec E$ | anti-Hermitian | $\mathbb{M}_-$ |
-| $\mathcal{G}_{0k}$ | the bare electric component | anti-Hermitian | $\mathbb{M}_-$ |
+| $\mathcal{G}_{ij}$ | the magnetic moment, $\vec B$ | Hermitian | $\mathbb{B}_{\Psi}$ |
+| $\mathcal{O}_{ij}$, the bivector composed with the chirality cell | the pseudotensor, $i$ times the dual of the rotation | Hermitian | $\mathbb{B}_{\Psi}$ |
+| $\mathcal{O}_{0k}$, the bivector composed with the chirality cell | the EDM, $\vec E$ | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
+| $\mathcal{G}_{0k}$ | the bare electric component | anti-Hermitian | $\mathbb{B}_{\Phi}$ |
 
 The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and its Hermitian partner in the informational sector is the magnetic-moment insertion, one duality passage and one factor of $i$ away. This is the article's central structural statement. The bare electric bivector is anti-Hermitian as well, and it is listed only for completeness: it is not gauge invariant by itself, and only its contraction with $F$ is an operator.
 
-**No dictionary is needed.** On the timelike pair the EDM insertion is not merely an operator that happens to be anti-Hermitian: it is the left multiplication by the element $-\vec e_k$, and $-\vec e_k$ is itself an element of the material sector. The placement is an identity, not a match. The rotation insertion is the left multiplication by $i\vec e_k$, an element of the informational sector; and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{M}_-=\mathbb{M}_+$, the EDM insertion is the central imaginary times the rotation insertion about the same axis,
+**No dictionary is needed.** On the timelike pair the EDM insertion is not merely an operator that happens to be anti-Hermitian: it is the left multiplication by the element $-\vec e_k$, and $-\vec e_k$ is itself an element of the material sector. The placement is an identity, not a match. The rotation insertion is the left multiplication by $i\vec e_k$, an element of the informational sector; and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, the EDM insertion is the central imaginary times the rotation insertion about the same axis,
 
 $$
 \mathcal{O}_{0k}=i\,\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=i\,\mathcal{G}_{\lambda\mu},
@@ -236,7 +236,7 @@ $$
 
 the stated nonrelativistic limit. The chain is a derivation of the limit from the covariant operator, and it exhibits the $i$ of the Lagrangian turning into the $i$ of the EDM insertion. The magnetic-moment coupling reduces in the same way with $\mathcal{G}_{ij}$ and the field $\vec B$, but with a Hermitian insertion and no compensating $i$.
 
-**The spin operator and the sector.** The spin $i\vec e_k$ is Hermitian and lies in the informational sector $\mathbb{M}_+$, and the EDM insertion is $i$ times it: the material-sector insertion is the central imaginary times the informational-sector spin. This is the algebraic statement of the CP-odd character of the EDM in the framework's language — the observable couples to the spin, and the coupling is made CP-odd by the central imaginary that moves the operator into the material sector.
+**The spin operator and the sector.** The spin $i\vec e_k$ is Hermitian and lies in the informational sector $\mathbb{B}_{\Psi}$, and the EDM insertion is $i$ times it: the material-sector insertion is the central imaginary times the informational-sector spin. This is the algebraic statement of the CP-odd character of the EDM in the framework's language — the observable couples to the spin, and the coupling is made CP-odd by the central imaginary that moves the operator into the material sector.
 
 ## The Discrete Symmetries of the Insertions
 
@@ -354,11 +354,11 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 | Item | Status |
 |---|---|
-| The biquaternion algebra as the algebra of the insertions, and the Hermiticity sector split | **Supplied**; Hermitian is $\mathbb{M}_+$, anti-Hermitian is $\mathbb{M}_-$ |
+| The biquaternion algebra as the algebra of the insertions, and the Hermiticity sector split | **Supplied**; Hermitian is $\mathbb{B}_{\Psi}$, anti-Hermitian is $\mathbb{B}_{\Phi}$ |
 | The EDM insertion $Q\mapsto-\vec e_kQ$ as anti-Hermitian, material-sector | **Supplied**, recomputed from the classes of the two factors under the star |
 | The magnetic-moment insertion $Q\mapsto i\vec e_kQ$ as Hermitian, informational-sector | **Supplied**, recomputed |
 | The Hodge duality of the insertions, $\mathcal{D}(\mathcal{G}_{0k})=+\mathcal{G}_{\lambda\mu}$ and $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0k}$, with $\mathcal{D}^{2}=-1$ on the six bivectors | **Supplied**, recomputed for all six |
-| The EDM insertion $Q\mapsto-\vec e_kQ$ as the left multiplication by the element $-\vec e_k\in\mathbb{M}_-$ | **Supplied**, recomputed for the three spatial directions |
+| The EDM insertion $Q\mapsto-\vec e_kQ$ as the left multiplication by the element $-\vec e_k\in\mathbb{B}_{\Phi}$ | **Supplied**, recomputed for the three spatial directions |
 | The explicit $i$ in the EDM Lagrangian as the marker of the anti-Hermitian insertion | **Supplied** by the algebra |
 | The definition of the EDM and its $\mathbf{P}$-, $\mathbf{T}$-, $\mathbf{CP}$-odd character | **Transcribed**; standard |
 | The form-factor decomposition and the nonrelativistic limit | **Transcribed**; standard |
@@ -370,7 +370,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 ## Open Questions
 
-1. **The placement's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ is the framework's stated dictionary. For the EDM insertion the placement is exact: the insertion is the left multiplication by the element $-\vec e_k$ of $\mathbb{M}_-$, and nothing is compared. The rotation insertion is the left multiplication by $i\vec e_k$, and the central imaginary times it is read in the material sector through $i\mathbb{M}_-=\mathbb{M}_+$. The insertions that carry a right factor as well — the bare electric bivector and the pseudotensor — are placed by the rule on the two factors and not by an element of $\mathbb{B}$ alone; a sector assignment of a two-sided multiplication is a statement about the operator, and the article makes it as one.
+1. **The placement's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ is the framework's stated dictionary. For the EDM insertion the placement is exact: the insertion is the left multiplication by the element $-\vec e_k$ of $\mathbb{B}_{\Phi}$, and nothing is compared. The rotation insertion is the left multiplication by $i\vec e_k$, and the central imaginary times it is read in the material sector through $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The insertions that carry a right factor as well — the bare electric bivector and the pseudotensor — are placed by the rule on the two factors and not by an element of $\mathbb{B}$ alone; a sector assignment of a two-sided multiplication is a statement about the operator, and the article makes it as one.
 
 2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian gauge-sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general gauge apparatus.
 
@@ -466,7 +466,7 @@ $$
 H_{\mathrm{NR}} = -\,d\sum_k E_k\,i\vec e_k .
 $$
 
-In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion multiplies by $-\vec e_k$, an **anti-Hermitian** element, and it therefore lies in the material sector $\mathbb{M}_-$; the $\vec B$-coupling magnetic-moment insertion multiplies by $i\vec e_k$, a **Hermitian** element, and it lies in the informational sector $\mathbb{M}_+$. Both statements follow from the star-signs of the two factors of the insertion, and both were recomputed. The two are Hodge duals, the dual exchanging the two members of a pair with the sign of the central $-i$,
+In the biquaternion framework its insertion has a definite algebraic character: the $\vec E$-coupling insertion multiplies by $-\vec e_k$, an **anti-Hermitian** element, and it therefore lies in the material sector $\mathbb{B}_{\Phi}$; the $\vec B$-coupling magnetic-moment insertion multiplies by $i\vec e_k$, a **Hermitian** element, and it lies in the informational sector $\mathbb{B}_{\Psi}$. Both statements follow from the star-signs of the two factors of the insertion, and both were recomputed. The two are Hodge duals, the dual exchanging the two members of a pair with the sign of the central $-i$,
 
 $$
 \boxed{\;\mathcal{D}\bigl(\mathcal{G}_{0k}\bigr)=+\,\mathcal{G}_{\lambda\mu},\quad
@@ -477,7 +477,7 @@ $$
 \mathcal{D}^{2}=-\,1\;}
 $$
 
-and the sign is the product of the cell's involution with $(-i)^2=-1$, verified for all six bivectors. The dual exchanges the two families with a sign, so two passages return minus the bivector; the EDM insertion is $i$ times the dual of the rotation, and that $i$ is what keeps the Hermiticity class while making the coefficient real. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian, and it is the algebra's marker of the CP-odd coefficient; the collapse of the composition, $\mathcal{O}_{0k}(Q)=i\vec e_k(-iQ\vec e_z)\vec e_z=-\vec e_kQ$, makes the placement exact, the insertion being the left multiplication by the element $-\vec e_k$ of $\mathbb{M}_-$.
+and the sign is the product of the cell's involution with $(-i)^2=-1$, verified for all six bivectors. The dual exchanges the two families with a sign, so two passages return minus the bivector; the EDM insertion is $i$ times the dual of the rotation, and that $i$ is what keeps the Hermiticity class while making the coefficient real. The explicit $i$ in the EDM Lagrangian is what makes $i\times(\text{anti-Hermitian})$ Hermitian, and it is the algebra's marker of the CP-odd coefficient; the collapse of the composition, $\mathcal{O}_{0k}(Q)=i\vec e_k(-iQ\vec e_z)\vec e_z=-\vec e_kQ$, makes the placement exact, the insertion being the left multiplication by the element $-\vec e_k$ of $\mathbb{B}_{\Phi}$.
 
 The form-factor decomposition
 
@@ -495,12 +495,12 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra of *Algebra and Element Conventions*; the even part of the frame's real algebra, the part generated by the six bivectors |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The four units of the basis (*Algebra and Element Conventions*); the star fixes $e_t$ and reverses the three spatial units |
 | $i\vec e_k$ | Twice the spin (*Special Element Conventions*), $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$: Hermitian, of square $e_t$, traceless, the three closing on the commutator |
 | $Q\mapsto aQb$ | A two-sided insertion; its adjoint multiplies by $a^{*}$ on the left and $b^{*}$ on the right |
-| $Q\mapsto i\vec e_kQ$ | The magnetic-moment insertion, Hermitian, $\mathbb{M}_+$ |
-| $Q\mapsto-\vec e_kQ$ | The EDM insertion, anti-Hermitian, $\mathbb{M}_-$ |
+| $Q\mapsto i\vec e_kQ$ | The magnetic-moment insertion, Hermitian, $\mathbb{B}_{\Psi}$ |
+| $Q\mapsto-\vec e_kQ$ | The EDM insertion, anti-Hermitian, $\mathbb{B}_{\Phi}$ |
 | the chirality cell | The corpus's right multiplication by $-i\vec e_z$ (*Special Element Conventions*); an involution, Hermitian |
 | $\mathcal{G}_{0k}:\ Q\mapsto i\vec e_kQ\vec e_z$; $\mathcal{G}_{ij}:\ Q\mapsto i\vec e_kQ$ | The six bivectors; $k$ is the index complementary to the spatial pair $(i,j)$ |
 | $\mathcal{O}_{0k}:\ Q\mapsto-\vec e_kQ$; $\mathcal{O}_{ij}:\ Q\mapsto\vec e_kQ\vec e_z$ | The six EDM insertions; each is the bivector of its pair composed with the chirality cell |

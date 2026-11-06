@@ -247,7 +247,7 @@ The mass is read from the product, not from either eigenvalue. No numerical mass
 
 The pair is frame-dependent. Only the product is invariant, and a statement about one member of the pair is a statement about a frame.
 
-The reading needs the material sector. The four-momentum, the real vector part and the imaginary scalar are the data of $\mathbb{M}_-$, and the identification of the element with a physical four-momentum is the interpretive step of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
+The reading needs the material sector. The four-momentum, the real vector part and the imaginary scalar are the data of $\mathbb{B}_{\Phi}$, and the identification of the element with a physical four-momentum is the interpretive step of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
 
 The two-term writing is not unique at rest and not two-term in the massless limit. The labels $\pm$ are conventional, and the decomposition is canonical only as an unordered pair.
 

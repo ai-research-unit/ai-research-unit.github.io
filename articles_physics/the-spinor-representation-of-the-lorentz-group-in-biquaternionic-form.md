@@ -8,7 +8,7 @@ Three claims organize the discussion. First, the spinor representation is the de
 
 The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(s,s_2)$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.
 
-Notation is that of the read-list companions. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace on the Hermitian sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+Notation is that of the read-list companions. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{B}_{\Psi}$ the Hermitian subspace (the informational sector), $\mathbb{B}_{H}$ the real-quaternion subspace, and $\mathbb{B}_{C}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace on the Hermitian sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spinor Representation and Its Carrier
 
@@ -31,7 +31,7 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is irreducible.** Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, and Schur's lemma gives $\mathrm{End}_{\mathbb{B}}(S)=\mathbb{C}$. The module $S$ carries no proper submodule, so the spinor representation is irreducible.
 
-**It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm{lor}}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
+**It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm{lor}}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ on $\mathbb{B}_{\Phi}$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
 **It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=i\vec e_k$ is represented by $\rho(K_k)=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
 
@@ -95,7 +95,7 @@ $$
 \qquad \tilde{Q}\in\mathbb{B},
 $$
 
-and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\tilde{Ξ}_{\mathrm{sp}}\otimes\bar{\xi}\mapsto \tilde{Q}=\tilde{Ξ}_{\mathrm{sp}}\,\xi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\xi^{\dagger}+\xi\tilde{Ξ}_{\mathrm{sp}}^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself. On $S\otimes\bar{S}$ the corresponding rotation generator has eigenvalues
+and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\tilde{Ξ}_{\mathrm{sp}}\otimes\bar{\xi}\mapsto \tilde{Q}=\tilde{Ξ}_{\mathrm{sp}}\,\xi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\xi^{\dagger}+\xi\tilde{Ξ}_{\mathrm{sp}}^{\dagger})$ is the element of $\mathbb{B}_{\Psi}$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself. On $S\otimes\bar{S}$ the corresponding rotation generator has eigenvalues
 $$
 -i s_a + i s_b, \qquad s_a,s_b\in\{+1,-1\},
 \qquad\text{i.e.}\qquad \{0,\,0,\,+2i,\,-2i\}.
@@ -152,7 +152,7 @@ $$
 \overline{(s,s_2)}=(s_2,s).
 $$
 
-So $(s,s_2)$ is self-conjugate if and only if $s=s_2$. For $s\neq s_2$ the representation is of **complex type**: it is not isomorphic to its conjugate, it cannot be made real, and $(s,s_2)$ and $(s_2,s)$ form a conjugate pair, as the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ do. For $s=s_2$ the representation is of **real type**: it occurs as the totally symmetric traceless tensors of rank $2s$ over the real four-vector space, and the symmetric traceless tensors of a real vector space are real. The first cases check out: $(\tfrac12,\tfrac12)$ has the real form $\mathbb{M}_-$, of real dimension $4$, equal to its complex dimension; $(1,1)$ has the real form of symmetric traceless real rank-2 tensors, of real dimension $9$, again equal to its complex dimension. No $(s,s_2)$ is of quaternionic type: the self-conjugate ones are all of real type, and the others are complex.
+So $(s,s_2)$ is self-conjugate if and only if $s=s_2$. For $s\neq s_2$ the representation is of **complex type**: it is not isomorphic to its conjugate, it cannot be made real, and $(s,s_2)$ and $(s_2,s)$ form a conjugate pair, as the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ do. For $s=s_2$ the representation is of **real type**: it occurs as the totally symmetric traceless tensors of rank $2s$ over the real four-vector space, and the symmetric traceless tensors of a real vector space are real. The first cases check out: $(\tfrac12,\tfrac12)$ has the real form $\mathbb{B}_{\Phi}$, of real dimension $4$, equal to its complex dimension; $(1,1)$ has the real form of symmetric traceless real rank-2 tensors, of real dimension $9$, again equal to its complex dimension. No $(s,s_2)$ is of quaternionic type: the self-conjugate ones are all of real type, and the others are complex.
 
 **Descent to the Lorentz group.** Since $-e_t$ acts on $(s,s_2)$ by $(-1)^{2s+2s_2}$, the representation descends to $SO^+(1,3)$ when $s+s_2\in\mathbb{Z}$ and is a genuine spin representation of the double cover otherwise. The vector representation and the two-form representations descend; the two chiralities and the $(\tfrac32,0)$ do not.
 
@@ -218,8 +218,8 @@ The higher representations are $(s,s_2)=V_s\boxtimes V_{s_2}$, $\dim=(2s+1)(2s_2
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, commuting with $\vec e_k$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and scalar subspaces |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion and scalar subspaces |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix isomorphism, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$ | Biquaternion norm |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Primitive idempotent; $\mathbb{B}\tilde\Pi_+\cong S$ |

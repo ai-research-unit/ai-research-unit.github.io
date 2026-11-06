@@ -124,13 +124,13 @@ The adapted basis and its scale. The mixed units are defined only up to $\vec\Up
 
 The minimal left ideal. $\mathbb{B}\tilde\Pi_+$ is the two-dimensional carrier of the older literature. It is built from the unit, and it is the idempotent of the unit that selects it.
 
-The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_+$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.
+The projector and the block split. The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ has rank two and its range is the ideal $\mathbb{B}\tilde\Pi_+$. The four-dimensional array is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$: two identical blocks, and the split of the array is the split of the ideal, written twice.
 
 The two-component column, and the spinor. A column of two components is an element of the ideal written in the basis $(\tilde\Pi_+,i\tilde\Pi_+)$, and the spinor of the older literature is that column. This is a consequence of the frame and not of the algebra: a state is an element of $\mathbb{B}$, which needs no ideal, no column and no frame, and it becomes a column only after the ideal has been chosen. The column is the most consequential item of the list, because a whole literature is written in it.
 
 The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth cell. Neither fact is stated anywhere on a page that prints the five matrices.
 
-The Dirac adjoint. The adjoint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
+The Dirac adjoint. The adjoint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0[\mathbb{B}_{\Phi}]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
 
 The charge conjugation. The cell $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one cell serves is a fact of the frame; which cell it is, is a choice.
 
@@ -148,7 +148,7 @@ The sentences. "The third member is the diagonal one." "The upper half of the co
 | the two-component column, and the spinor | the basis of that ideal | a different column |
 | the block split | the split of the ideal, twice | a different block split |
 | the gamma set | $\vec e_y$ as the common right multiplier, $\vec e_z$ as the axis of the fifth cell | a different five-element set |
-| the Dirac adjoint | the chosen time generator $\gamma_0[\mathbb{M}_-]$ | a different $\gamma_0[\mathbb{M}_-]$ |
+| the Dirac adjoint | the chosen time generator $\gamma_0[\mathbb{B}_{\Phi}]$ | a different $\gamma_0[\mathbb{B}_{\Phi}]$ |
 | the charge conjugation | the cell $L_{e_t}R_{\vec e_x}$ | a different cell |
 | the third component of spin | the diagonal member of the triplet | the diagonal moves |
 
@@ -159,27 +159,27 @@ The sentences. "The third member is the diagonal one." "The upper half of the co
 The gamma set is five cells of the operator algebra:
 
 $$
-\gamma_0[\mathbb{M}_-]=iR_{\vec e_x},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}R_{\vec e_y},\qquad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}R_{\vec e_y},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}R_{\vec e_y},\qquad
-\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}.
+\gamma_0[\mathbb{B}_{\Phi}]=iR_{\vec e_x},\qquad
+\gamma_1[\mathbb{B}_{\Phi}]=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma_2[\mathbb{B}_{\Phi}]=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma_3[\mathbb{B}_{\Phi}]=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5[\mathbb{B}_{\Phi}]=-iR_{\vec e_z}.
 $$
 
-The frame is named in brackets and it is $\mathbb{M}_-$ throughout this article; below the label is dropped, and every $\gamma_\mu[\mathbb{M}_-]$ is $\gamma_\mu[\mathbb{M}_-]$. Two of the five are single multipliers, because $L_{e_t}$ is the identity of the operator algebra: $e_t$ is the unit of $\mathbb{B}$. The five satisfy the cell relation of that frame, with $\delta_{\mu\nu}=(1,1,1,1)$ the unit metric,
+The frame is named in brackets and it is $\mathbb{B}_{\Phi}$ throughout this article; below the label is dropped, and every $\gamma_\mu[\mathbb{B}_{\Phi}]$ is $\gamma_\mu[\mathbb{B}_{\Phi}]$. Two of the five are single multipliers, because $L_{e_t}$ is the identity of the operator algebra: $e_t$ is the unit of $\mathbb{B}$. The five satisfy the cell relation of that frame, with $\delta_{\mu\nu}=(1,1,1,1)$ the unit metric,
 
 $$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm I_4,\qquad
+\{\gamma_\mu[\mathbb{B}_{\Phi}],\gamma_\nu[\mathbb{B}_{\Phi}]\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm I_4,\qquad
 \varepsilon=(1,-1,-1,-1),$$
 
-so that $\gamma_0[\mathbb{M}_-]^2=+\mathrm I_4$ and $\gamma_k[\mathbb{M}_-]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, with $\gamma_5[\mathbb{M}_-]^2=\mathrm I_4$. All of this was verified on the arrays.
+so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_k[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
 
 In the Pauli display of the previous section the five become
 
 $$
-\gamma_0[\mathbb{M}_-]=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
-\gamma_k[\mathbb{M}_-]=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
-\gamma_5[\mathbb{M}_-]=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
+\gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
+\gamma_k[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
+\gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
 $$
 
 This is the block form that the Peirce frame produces. It is not a form chosen afterwards, and that is the point of the section.
@@ -210,15 +210,15 @@ The distinction is worth stating exactly, because it is easy to overstate. The C
 
 The choice cannot be removed by choosing a better gamma basis, and the reason is a one-line argument.
 
-Suppose a display made both $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ diagonal. Both are invertible, so their diagonal entries are nonzero. They anticommute, and two diagonal matrices anticommute only if the entrywise product of their diagonals vanishes in every slot. That product vanishes, so $\gamma_0[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]=0$, which contradicts invertibility. Hence at most one of the two is diagonal.
+Suppose a display made both $\gamma_0[\mathbb{B}_{\Phi}]$ and $\gamma_5[\mathbb{B}_{\Phi}]$ diagonal. Both are invertible, so their diagonal entries are nonzero. They anticommute, and two diagonal matrices anticommute only if the entrywise product of their diagonals vanishes in every slot. That product vanishes, so $\gamma_0[\mathbb{B}_{\Phi}]\gamma_5[\mathbb{B}_{\Phi}]=0$, which contradicts invertibility. Hence at most one of the two is diagonal.
 
-The two standard displays are the two ways of spending that one allowance. The Dirac display makes $\gamma_0[\mathbb{M}_-]$ diagonal and $\gamma_5[\mathbb{M}_-]$ off-diagonal: it writes the time direction, which the plain weight does distinguish, into the array. The block display, and the Pauli display of this corpus, makes $\gamma_5[\mathbb{M}_-]$ diagonal and $\gamma_0[\mathbb{M}_-]$ off-diagonal: it writes a spatial direction, which the plain weight does not distinguish, into the array. A page that prints gammas has made the choice before it prints anything, and the notation gives the reader no way to tell which choice was made.
+The two standard displays are the two ways of spending that one allowance. The Dirac display makes $\gamma_0[\mathbb{B}_{\Phi}]$ diagonal and $\gamma_5[\mathbb{B}_{\Phi}]$ off-diagonal: it writes the time direction, which the plain weight does distinguish, into the array. The block display, and the Pauli display of this corpus, makes $\gamma_5[\mathbb{B}_{\Phi}]$ diagonal and $\gamma_0[\mathbb{B}_{\Phi}]$ off-diagonal: it writes a spatial direction, which the plain weight does not distinguish, into the array. A page that prints gammas has made the choice before it prints anything, and the notation gives the reader no way to tell which choice was made.
 
 ### The Split the Pauli Display Shows
 
 The fifth cell is $i$ times a real signed permutation with zeros on the whole diagonal in $\mathrm{axf}$, and it is $\operatorname{diag}(-1,-1,1,1)$ in the Pauli display. Its eigenvalues are $\pm1$ in both, its square is the identity in both, and its trace is zero in both. What changes is whether the array splits into two blocks, and the split is the Peirce split of the same unit.
 
-The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ is $\operatorname{diag}(1,1,0,0)$ and the projector $\tfrac12(\mathrm I+\gamma_5[\mathbb{M}_-])$ is $\operatorname{diag}(0,0,1,1)$, both of rank two. Their ranges are the two left ideals of the frame: the eigenvalue $-1$ holds on $\mathbb{B}\tilde\Pi_+$ and the eigenvalue $+1$ on $\mathbb{B}\tilde\Pi_-$, as verified on both ideals. So the block, the left ideal, the two-component column and the projector are one object seen four times, and one choice of unit produces all four.
+The projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(1,1,0,0)$ and the projector $\tfrac12(\mathrm I+\gamma_5[\mathbb{B}_{\Phi}])$ is $\operatorname{diag}(0,0,1,1)$, both of rank two. Their ranges are the two left ideals of the frame: the eigenvalue $-1$ holds on $\mathbb{B}\tilde\Pi_+$ and the eigenvalue $+1$ on $\mathbb{B}\tilde\Pi_-$, as verified on both ideals. So the block, the left ideal, the two-component column and the projector are one object seen four times, and one choice of unit produces all four.
 
 The three cells $-iR_{\vec e_x}$, $-iR_{\vec e_y}$ and $-iR_{\vec e_z}$ are conjugate to one another, and the conjugation is implemented by an operator of the algebra. For $s$ the quarter-turn versor about $\vec e_y$, the conjugation $L_sR_{s^{-1}}$ carries $\vec e_z$ to $\vec e_x$ and carries $-iR_{\vec e_z}$ to $-iR_{\vec e_x}$ exactly. So the choice of which spatial unit carries the fifth cell is a labelling, and every labelling gives a split of the same kind. Only one of the three is diagonal in the display, and it is the one the frame was built on.
 
@@ -394,7 +394,7 @@ The five gammas are not marked out. In this display they are $i$ times five of t
 
 The neutrality has a price, and the price should be stated in the same breath.
 
-The Pauli display shows the block, the ideal and the column as diagonal entries. The axis-free display shows none of them. A reader of an $\mathrm{axf}$ page who wants the Peirce split must be told which cell produces it, and must apply the projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ explicitly. The information is not absent, but it is not free either: it costs one sentence.
+The Pauli display shows the block, the ideal and the column as diagonal entries. The axis-free display shows none of them. A reader of an $\mathrm{axf}$ page who wants the Peirce split must be told which cell produces it, and must apply the projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ explicitly. The information is not absent, but it is not free either: it costs one sentence.
 
 That trade is the whole content of the choice between the two displays. The Pauli display gives the block for free and charges a silent direction. The axis-free display charges a sentence and gives no direction. For a formula of general physics the second price is the lower one, because general physics has no direction to give.
 
@@ -505,11 +505,11 @@ The three passes need a table, and one table serves all three. Each row gives th
 |---|---|---|---|
 | the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
-| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
-| $\gamma_k[\mathbb{M}_-]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
-| $\gamma_5[\mathbb{M}_-]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
+| $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
+| $\gamma_k[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
+| $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
 | the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\tilde{Ξ}_{\mathrm{sp}}$ |
-| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
+| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 
 The last row is the one that has no action, and that is the honest answer: the adjoint is not an operator on the element but a pairing of two elements.
@@ -577,7 +577,7 @@ The Pauli matrices carry a direction and do not say so. The asymmetry is one-aga
 
 The gamma matrices carry the same direction in the frame. The five cells use the three spatial units in three different jobs, and a relabelling of the units produces a different five-element set. The Clifford relations do not notice the change, because a permutation of the units is an automorphism; the list of five does notice it.
 
-No gamma display can avoid the choice. The two gammas $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ anticommute, so at most one of them is diagonal, and the display spends that allowance on the time direction or on a spatial one. The Pauli display of this corpus spends it on the spatial one.
+No gamma display can avoid the choice. The two gammas $\gamma_0[\mathbb{B}_{\Phi}]$ and $\gamma_5[\mathbb{B}_{\Phi}]$ anticommute, so at most one of them is diagonal, and the display spends that allowance on the time direction or on a spatial one. The Pauli display of this corpus spends it on the spatial one.
 
 The defect is a formal defect, and its source is physical. Physical space has no preferred spatial direction, and a fundamental equation therefore contains none. A display that singles one out adds a datum the equation does not have, and the addition is unmarked, so the reader cannot subtract it. It also hides what depends on that direction: the orbit of the three spatial cells, the basis-free form of the adjoint, and the correspondence between two frames become invisible on the page, which is worse than a stray datum. A frame is legitimate when a measurement, an apparatus or a background supplies the direction, and then it is named; the defect is the default frame no problem asked for.
 
@@ -612,7 +612,7 @@ The migration has three passes — arrays to cells, cells to actions, keep the a
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the mixed Peirce units, defined up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$ |
 | $\vec{Ζ}=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
-| $\gamma_\mu[\mathbb{M}_-]$ | the five frame cells, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{M}_-$ and the index is low |
+| $\gamma_\mu[\mathbb{B}_{\Phi}]$ | the five frame cells, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{B}_{\Phi}$ and the index is low |
 | $\mathrm{axf}$ | the label of the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
 | $\mathrm{pau}$ | the label of the Pauli display, the Peirce frame of the root $i\vec e_z$ |
 | $\langle\tilde Q\rangle_\natural$ | the natural norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; its square is the determinant of the left array |

@@ -70,14 +70,14 @@ Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quatern
 
 | Map | Formula | $\mathbb{C}$-linearity | What it touches | Fixed space | Anti-fixed space |
 | --- | --- | --- | --- | --- | --- |
-| $\bar{\cdot}$ | $Q_\mu\mapsto\bar Q_\mu$ | antilinear | the complex coefficients | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
-| ${}^{\natural}$ | $Q_te_t-\sum_k Q_k\vec e_k$ | linear | the quaternion directions | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ |
-| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_k \bar Q_k\vec e_k$ | antilinear | both | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_k \bar Q_k\vec e_k$ | antilinear | both, with a sign | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+| $\bar{\cdot}$ | $Q_\mu\mapsto\bar Q_\mu$ | antilinear | the complex coefficients | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
+| ${}^{\natural}$ | $Q_te_t-\sum_k Q_k\vec e_k$ | linear | the quaternion directions | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
+| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_k \bar Q_k\vec e_k$ | antilinear | both | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_k \bar Q_k\vec e_k$ | antilinear | both, with a sign | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 
 Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space. The six distinct spaces so obtained are the six remarkable subspaces. Each of the four maps preserves every remarkable subspace: no conjugation carries an element out of a subspace into another one.
 
-The orbit of an element under the Klein four-group has size one, two or four. It is one on the real line $\mathbb{R}e_t$; it is two on the elements of $\mathbb{C}_{\mathbb{B}}$, of $\mathbb{H}_{\mathbb{B}}$ or of $\mathbb{M}_+$ that are not on that line; it is four elsewhere, and a generic material element is in that last case.
+The orbit of an element under the Klein four-group has size one, two or four. It is one on the real line $\mathbb{R}e_t$; it is two on the elements of $\mathbb{B}_{C}$, of $\mathbb{B}_{H}$ or of $\mathbb{B}_{\Psi}$ that are not on that line; it is four elsewhere, and a generic material element is in that last case.
 
 ### The Six Subspaces and the Four Blocks
 
@@ -91,12 +91,12 @@ two scalar blocks of dimension one and two vector blocks of dimension three. Eve
 
 | Subspace | Blocks | Dimension over $\mathbb{R}$ | The quaternionic norm on it | Physical object |
 | --- | --- | --- | --- | --- |
-| $\mathbb{C}_{\mathbb{B}}$ | $A_1\oplus A_2$ | $2$ | not real | the clock plane and the global phase |
-| $\mathrm{Vect}(\mathbb{B})$ | $B_1\oplus B_2$ | $6$ | not real | the complex three-vector: field strength, Lorentz generators, phase space |
-| $\mathbb{H}_{\mathbb{B}}$ | $A_1\oplus B_1$ | $4$ | $(4,0)$ | the Euclidean four-coordinate space; the rotation rotors |
-| $i\mathbb{H}_{\mathbb{B}}$ | $A_2\oplus B_2$ | $4$ | $(0,4)$ | the negative-definite four-coordinate space; the boost generators |
-| $\mathbb{M}_+$ | $A_1\oplus B_2$ | $4$ | $(1,3)$ | the operator space: states and observables |
-| $\mathbb{M}_-$ | $A_2\oplus B_1$ | $4$ | $(3,1)$ | the four-vector space: events and the interval |
+| $\mathbb{B}_{C}$ | $A_1\oplus A_2$ | $2$ | not real | the clock plane and the global phase |
+| $\mathbb{B}_{V}$ | $B_1\oplus B_2$ | $6$ | not real | the complex three-vector: field strength, Lorentz generators, phase space |
+| $\mathbb{B}_{H}$ | $A_1\oplus B_1$ | $4$ | $(4,0)$ | the Euclidean four-coordinate space; the rotation rotors |
+| $\mathbb{B}_{iH}$ | $A_2\oplus B_2$ | $4$ | $(0,4)$ | the negative-definite four-coordinate space; the boost generators |
+| $\mathbb{B}_{\Psi}$ | $A_1\oplus B_2$ | $4$ | $(1,3)$ | the operator space: states and observables |
+| $\mathbb{B}_{\Phi}$ | $A_2\oplus B_1$ | $4$ | $(3,1)$ | the four-vector space: events and the interval |
 
 The first two are the two complex subspaces, with $iU=U$; the last four are the four real-type subspaces, with $iU\cap U=\{0\}$.
 
@@ -108,9 +108,9 @@ Each of the three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ splits
 
 | Involution | Decomposition | The two pairs of blocks | What the split separates | The operation that preserves it |
 | --- | --- | --- | --- | --- |
-| ${}^{\natural}$ | $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ | $\{A_1,A_2\}$ against $\{B_1,B_2\}$ | time from space | spatial rotation |
-| $\bar{\cdot}$ | $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ | $\{A_1,B_1\}$ against $\{A_2,B_2\}$ | the definite from the anti-definite | phase conjugation |
-| ${}^{*}$ | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | $\{A_1,B_2\}$ against $\{A_2,B_1\}$ | the informational from the material | Lorentz transformation |
+| ${}^{\natural}$ | $\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}$ | $\{A_1,A_2\}$ against $\{B_1,B_2\}$ | time from space | spatial rotation |
+| $\bar{\cdot}$ | $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ | $\{A_1,B_1\}$ against $\{A_2,B_2\}$ | the definite from the anti-definite | phase conjugation |
+| ${}^{*}$ | $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | $\{A_1,B_2\}$ against $\{A_2,B_1\}$ | the informational from the material | Lorentz transformation |
 
 There are exactly three, because a four-element set has exactly three pairings into two pairs.
 
@@ -145,12 +145,12 @@ The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed 
 
 | Subspace | Physical object | What it carries |
 | --- | --- | --- |
-| $\mathbb{C}_{\mathbb{B}}$ | the clock plane | the two times on one complex axis; the global phase; the time–energy pair in the Fourier reading |
-| $\mathrm{Vect}(\mathbb{B})$ | the complex three-vector | the electromagnetic field strength, the six Lorentz generators, the phase space of a spatial direction |
-| $\mathbb{H}_{\mathbb{B}}$ | the Euclidean four-coordinate space | the Wick-rotated reading; the rotation rotors |
-| $i\mathbb{H}_{\mathbb{B}}$ | the negative-definite four-coordinate space | the material time with the informational space; the boost generators |
-| $\mathbb{M}_+$ | the operator space | states, observables, probability |
-| $\mathbb{M}_-$ | the four-vector space | events, four-vectors, the interval |
+| $\mathbb{B}_{C}$ | the clock plane | the two times on one complex axis; the global phase; the time–energy pair in the Fourier reading |
+| $\mathbb{B}_{V}$ | the complex three-vector | the electromagnetic field strength, the six Lorentz generators, the phase space of a spatial direction |
+| $\mathbb{B}_{H}$ | the Euclidean four-coordinate space | the Wick-rotated reading; the rotation rotors |
+| $\mathbb{B}_{iH}$ | the negative-definite four-coordinate space | the material time with the informational space; the boost generators |
+| $\mathbb{B}_{\Psi}$ | the operator space | states, observables, probability |
+| $\mathbb{B}_{\Phi}$ | the four-vector space | events, four-vectors, the interval |
 
 **The complex time sector is the clock plane.** Its two coordinates are the two times, $c r_t$ on the real axis and $i c r'_t$ on the imaginary one, and its element is $z e_t=(c r_t+i c r'_t)e_t$. It is the sector of a number rather than of an operator: a central scalar is the one quantity that can take a definite value at the same time as every other, and its phase $\exp(i\theta)e_t$ is a global phase that no interference experiment can detect. The area pairing has rank $2$ here, and its one non-zero entry pairs the two times. This is a different object from the global phase, and the two must not be conflated: the phase is a number, the area pairing is what makes the two times conjugate. In the Fourier reading the imaginary axis is read as the energy component of the four-momentum conjugate to the real time, and the same entry is the time–energy pairing; that is a second reading of the block, not the sector dictionary, and the two must not be conflated.
 
@@ -160,22 +160,22 @@ The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed 
 
 **The imaginary sector is the negative-definite four-coordinate space.** Every coefficient carries the central imaginary, and its element is $i c r'_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$. It carries the material time with the informational space, the reverse assignment to the real sector, and its norm is negative definite of signature $(0,4)$. It is where the infinitesimal generators of the boosts lie, the three imaginary vector units. **The boundary:** a finite boost does not lie in the sector, because its scalar part is real; the sector holds the generators, and the boosts themselves are obtained by leaving it.
 
-**The two sectors** are the two halves of the Hermitian split. The material sector $\mathbb{M}_-$ is the space of four-vectors and the interval, and the informational sector $\mathbb{M}_+$ is the space of states and observables. Each has its own article in this category, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and this article only places them in the table.
+**The two sectors** are the two halves of the Hermitian split. The material sector $\mathbb{B}_{\Phi}$ is the space of four-vectors and the interval, and the informational sector $\mathbb{B}_{\Psi}$ is the space of states and observables. Each has its own article in this category, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and this article only places them in the table.
 
 ### The Four Real-Type Subspaces Carry the Four Signatures
 
-The quaternionic norm is one complex quadratic form. On the four real-type subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ it restricts to four real quadratic forms, and the signature depends only on which subspace is taken.
+The quaternionic norm is one complex quadratic form. On the four real-type subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it restricts to four real quadratic forms, and the signature depends only on which subspace is taken.
 
 $$
-\boxed{\;\mathbb{H}_{\mathbb{B}}:(4,0),\quad i\mathbb{H}_{\mathbb{B}}:(0,4),\quad \mathbb{M}_-:(3,1),\quad \mathbb{M}_+:(1,3)\;}
+\boxed{\;\mathbb{B}_{H}:(4,0),\quad \mathbb{B}_{iH}:(0,4),\quad \mathbb{B}_{\Phi}:(3,1),\quad \mathbb{B}_{\Psi}:(1,3)\;}
 $$
 
 | Subspace | Blocks | Norm on the subspace | Signature | Reading |
 | --- | --- | --- | --- | --- |
-| $\mathbb{H}_{\mathbb{B}}$ | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |
-| $i\mathbb{H}_{\mathbb{B}}$ | $A_2\oplus B_2$ | $-\bigl((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\bigr)$ | $(0,4)$ | anti-Euclidean |
-| $\mathbb{M}_-$ | $A_2\oplus B_1$ | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ | Lorentzian |
-| $\mathbb{M}_+$ | $A_1\oplus B_2$ | $c^2 r_t^2-{r'_{x}}^2-{r'_{y}}^2-{r'_{z}}^2$ | $(1,3)$ | anti-Lorentzian |
+| $\mathbb{B}_{H}$ | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |
+| $\mathbb{B}_{iH}$ | $A_2\oplus B_2$ | $-\bigl((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\bigr)$ | $(0,4)$ | anti-Euclidean |
+| $\mathbb{B}_{\Phi}$ | $A_2\oplus B_1$ | $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ | Lorentzian |
+| $\mathbb{B}_{\Psi}$ | $A_1\oplus B_2$ | $c^2 r_t^2-{r'_{x}}^2-{r'_{y}}^2-{r'_{z}}^2$ | $(1,3)$ | anti-Lorentzian |
 
 The two definite slices are the two coefficient halves; the two indefinite slices are the two physical sectors. The Lorentzian signature of the material sector is not an independent axiom: it is what the norm becomes on the slice that carries the $i$ in the time slot, and the sign of the time direction is the sign of $i^2$. The light cone is the zero set of that form, and the causal structure is the sign of the form.
 
@@ -200,7 +200,7 @@ Each of the four maps preserves every remarkable subspace, so the involutions ac
 | ${}^{*}$ | $\theta\mapsto-\theta$ | $\vec v\mapsto-\vec v$ | the combined operation; self-adjointness |
 | $\flat=-{}^{*}$ | a sign and a phase reflection | fixes $B_1$ | the real structure |
 
-The orbit is the set of descriptions that the discrete operations produce from one element. Size one is the real line: the classical scale, on which no discrete operation acts. Size two is an element of the centre, of $\mathbb{H}_{\mathbb{B}}$ or of $\mathbb{M}_+$: one operation is invisible on it, so two of the four descriptions coincide. For a central element $z$ the pair is $z$ and $\bar z$. Size four is the generic element, and a generic material element is in this class: the four descriptions are distinct.
+The orbit is the set of descriptions that the discrete operations produce from one element. Size one is the real line: the classical scale, on which no discrete operation acts. Size two is an element of the centre, of $\mathbb{B}_{H}$ or of $\mathbb{B}_{\Psi}$: one operation is invisible on it, so two of the four descriptions coincide. For a central element $z$ the pair is $z$ and $\bar z$. Size four is the generic element, and a generic material element is in this class: the four descriptions are distinct.
 
 **The boundary.** The size of the orbit is not the size of a multiplet, and it carries no statistics. The assignment of parity, time reversal, $PT$ and charge conjugation to the four non-trivial sign patterns is a separate labelling, and it is not a consequence of the group structure. The next section states it.
 
@@ -211,10 +211,10 @@ The three involutions of the group, with the identity, act on the four coordinat
 | map | sign pattern $(A_1,A_2,B_1,B_2)$ | fixed space |
 | --- | --- | --- |
 | $1$ | $(+,+,+,+)$ | $\mathbb{B}$ |
-| $\bar{\cdot}$ | $(+,-,+,-)$ | $\mathbb{H}_{\mathbb{B}}$ |
-| ${}^{\natural}$ | $(+,+,-,-)$ | $\mathbb{C}_{\mathbb{B}}$ |
-| ${}^{*}$ | $(+,-,-,+)$ | $\mathbb{M}_+$ |
-| $\flat=-{}^{*}$ | $(-,+,+,-)$ | $\mathbb{M}_-$ |
+| $\bar{\cdot}$ | $(+,-,+,-)$ | $\mathbb{B}_{H}$ |
+| ${}^{\natural}$ | $(+,+,-,-)$ | $\mathbb{B}_{C}$ |
+| ${}^{*}$ | $(+,-,-,+)$ | $\mathbb{B}_{\Psi}$ |
+| $\flat=-{}^{*}$ | $(-,+,+,-)$ | $\mathbb{B}_{\Phi}$ |
 
 The first four rows are the group; the fifth is the fourth non-trivial sign pattern, the negative of ${}^{*}$, and it is not a group element. The labels are read on those four non-trivial sign patterns:
 
@@ -235,10 +235,10 @@ Multiplication by $i$ is one map, and its restrictions to the subspaces carry fo
 
 | Subspace | Action of $J$ | Name |
 | --- | --- | --- |
-| $\mathbb{C}_{\mathbb{B}}$ | itself | the global phase |
-| $\mathrm{Vect}(\mathbb{B})$ | itself | the duality rotation |
-| $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ | each other | the Wick rotation |
-| $\mathbb{M}_+$ and $\mathbb{M}_-$ | each other | the material–informational exchange |
+| $\mathbb{B}_{C}$ | itself | the global phase |
+| $\mathbb{B}_{V}$ | itself | the duality rotation |
+| $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ | each other | the Wick rotation |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | each other | the material–informational exchange |
 
 One generator gives a phase, a duality rotation, a Wick rotation and a sector exchange, because the generator is central and acts through the centre in every subspace. A non-central generator would give a different rotation in each carrier.
 
@@ -252,11 +252,11 @@ Two subspaces meet in the blocks they share, and each shared block is one physic
 
 | Intersection | Shared block | The common object |
 | --- | --- | --- |
-| $\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ | $B_1$ | the real space |
-| $\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+$ | $A_1$ | the real time |
-| $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-$ | $A_2$ | the material time |
-| $\mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_+$ | $B_2$ | the informational space |
-| $\mathbb{M}_+\cap\mathbb{M}_-$ | $\{0\}$ | nothing: an element is material or informational, never both |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$ | $B_1$ | the real space |
+| $\mathbb{B}_{H}\cap\mathbb{B}_{\Psi}$ | $A_1$ | the real time |
+| $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}$ | $A_2$ | the material time |
+| $\mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$ | $B_2$ | the informational space |
+| $\mathbb{B}_{\Psi}\cap\mathbb{B}_{\Phi}$ | $\{0\}$ | nothing: an element is material or informational, never both |
 
 The table lists one row for each of the four blocks; every intersection of two distinct subspaces is one of these blocks or zero. The pattern is the dictionary's grammar. A shared vector block has dimension three: two descriptions agree on a space. A shared scalar block has dimension one: they agree on a time. An empty intersection means the two descriptions are complementary, and the decomposition they form is a decomposition of the whole algebra. The three decompositions are the three complementary pairs, and their sums are all of $\mathbb{B}$.
 
@@ -307,9 +307,9 @@ The article interprets the linear structure, the involutions, the four real-type
 | $J(\tilde Q)=i\tilde Q$ | the complex structure, $J^2=-\mathrm{id}$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | quaternion, complex and Hermitian conjugation |
 | $\flat=-{}^{*}$ | the reversal, outside the Klein four |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
-| $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | the centre and the vector subspace |
+| $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | the quaternion and anti-quaternion subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces |
 | $\tilde R_\psi$, $\tilde R_\varphi$ | the informational and material parts of an element, $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ |
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |

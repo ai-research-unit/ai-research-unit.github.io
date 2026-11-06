@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\omega\mapsto\omega^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde Q_2$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathrm{Vect}(\mathbb{B})$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
+The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\omega\mapsto\omega^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde Q_2$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathbb{B}_{V}$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
 
 The quadratic family, its filled Julia set, its Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*, and its derivative and holomorphy are *The Biquaternion Holomorphic Dynamics and the Jacobian*. The classical theory is *The Mandelbrot Set and the Quadratic Family*, *The Real Quadratic Family and Its Bifurcations* and *The Julia Sets of a Complex Polynomial*; the quaternion case is *The Quaternion Mandelbrot Set*; the two-variable complex theory is *Several Complex Variables* and the holomorphic dynamics of Part III. All are used here and none is restated.
 
@@ -90,7 +90,7 @@ the complex Mandelbrot set.
 
 **Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde Q_2=Ce_t$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde Q_2}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
 
-**Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_t$.
+**Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{B}_{C}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_t$.
 
 ## The Commutative Plane and the Product Locus
 
@@ -134,7 +134,7 @@ For $\tilde Q_2=Ce_t$ with $C\in\mathbb{C}$ the slice is the whole classical Man
 
 ### The Quaternion Slice
 
-For $\tilde Q_2\in\mathbb{H}_{\mathbb{B}}$, the real quaternion subspace, the algebra is not commutative and the reduction to the centre does not apply; but the parameter lies in a division subalgebra, the norm is real and positive definite there, and the slice reproduces the quaternion Mandelbrot set of *The Quaternion Mandelbrot Set*. The slice is the computable three-dimensional picture, and it is the one on which the classical escape radius is available, since the quaternion subspace is a division algebra.
+For $\tilde Q_2\in\mathbb{B}_{H}$, the real quaternion subspace, the algebra is not commutative and the reduction to the centre does not apply; but the parameter lies in a division subalgebra, the norm is real and positive definite there, and the slice reproduces the quaternion Mandelbrot set of *The Quaternion Mandelbrot Set*. The slice is the computable three-dimensional picture, and it is the one on which the classical escape radius is available, since the quaternion subspace is a division algebra.
 
 **Remark (the warning).** The three slices are different sets, and a picture of "the biquaternion Mandelbrot set" is a picture of a slice. **Every visualisation must state its slice, and no slice is canonical.** The warning is made in full in *The Slices of the Biquaternion Julia Sets*, where it belongs.
 

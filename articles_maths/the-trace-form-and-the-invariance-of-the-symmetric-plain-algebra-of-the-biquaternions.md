@@ -174,12 +174,12 @@ The trace form is the general plain bilinear form, so its restrictions to the re
 
 | Subspace | Natural real basis | Restriction matrix | Signature | Rank |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ | $(1,1)$ | $2$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | $\operatorname{diag}(-1,-1,-1,1,1,1)$ | $(3,3)$ | $6$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $D=\operatorname{diag}(1,-1,-1,-1)$ | $(1,3)$ | $4$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-D=\operatorname{diag}(-1,1,1,1)$ | $(3,1)$ | $4$ |
-| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\mathrm{I}_4=\operatorname{diag}(1,1,1,1)$ | $(4,0)$ | $4$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $-\mathrm{I}_4=\operatorname{diag}(-1,-1,-1,-1)$ | $(0,4)$ | $4$ |
+| Centre $\mathbb{B}_{C}$ | $e_t,\,ie_t$ | $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$ | $(1,1)$ | $2$ |
+| Vector $\mathbb{B}_{V}$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | $\operatorname{diag}(-1,-1,-1,1,1,1)$ | $(3,3)$ | $6$ |
+| Quaternion $\mathbb{B}_{H}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $D=\operatorname{diag}(1,-1,-1,-1)$ | $(1,3)$ | $4$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $-D=\operatorname{diag}(-1,1,1,1)$ | $(3,1)$ | $4$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\mathrm{I}_4=\operatorname{diag}(1,1,1,1)$ | $(4,0)$ | $4$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $-\mathrm{I}_4=\operatorname{diag}(-1,-1,-1,-1)$ | $(0,4)$ | $4$ |
 
 The matrices are the same six as in *Remarkable Subspaces and the Four General Products, Forms and Norms*, because the trace form is the general plain bilinear form; the table is reproduced here with the reading of the block.
 

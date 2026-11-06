@@ -18,7 +18,7 @@ $$
 
 The root is relative to the product, and this article uses the one of $\star$ throughout; the general definition of the square and of the roots of an element is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*.
 
-**Theorem (the square is central).** For every $\tilde{Ζ}\in\mathbb{B}$ the square $\tilde{Ζ}\star\tilde{Ζ}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$, and
+**Theorem (the square is central).** For every $\tilde{Ζ}\in\mathbb{B}$ the square $\tilde{Ζ}\star\tilde{Ζ}$ lies in the scalar line $\mathbb{B}_{C}$, and
 
 $$
 \boxed{\; \tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t \;}.
@@ -32,7 +32,7 @@ $$
 \langle\tilde{Ζ}\rangle_{\natural}=\lambda .
 $$
 
-**Proof.** A square is central by the preceding theorem, so a solution forces $\tilde Q\in\mathbb{C}_{\mathbb{B}}$; conversely if $\tilde Q=\lambda e_t$ the equation reads $\langle\tilde{Ζ}\rangle_{\natural}e_t=\lambda e_t$, which is $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ because $e_t\neq0$.
+**Proof.** A square is central by the preceding theorem, so a solution forces $\tilde Q\in\mathbb{B}_{C}$; conversely if $\tilde Q=\lambda e_t$ the equation reads $\langle\tilde{Ζ}\rangle_{\natural}e_t=\lambda e_t$, which is $\langle\tilde{Ζ}\rangle_{\natural}=\lambda$ because $e_t\neq0$.
 
 **Absence (the non-central radicands).** An element of $\mathbb{B}$ whose vector part is nonzero **has no square root** in the general quaternionic product. The witness $\vec e_x$ shows it: a root would satisfy $\langle\tilde{Ζ}\rangle_{\natural}e_t=\vec e_x$, and the two sides differ in the coefficient of $\vec e_x$. This is not a deficiency of a particular element but of the product, whose squaring map has image the scalar line; the plain product has a wider image, and its squaring map reaches every element, which is why the plain problem has a solution for an arbitrary radicand.
 
@@ -52,7 +52,7 @@ $$
 
 **Proof.** The identification with the level set is the reduction. With $Ζ_\mu=p_\mu+ip'_\mu$, the equation $N=\sum_\mu(p_\mu^2-(p'_\mu)^2)+2i\sum_\mu p_\mu p'_\mu=\lambda$ is a pair of real equations, the gradient of $N$ does not vanish off the origin, and the level set has real dimension $8-2=6$ in the two cases; for $\lambda=0$ it is a cone because $\langle\cdot\rangle_{\natural}$ is homogeneous. The displayed central element has $\langle \sqrt\lambda\,e_t\rangle_{\natural}=(\sqrt\lambda)^2=\lambda$.
 
-**Corollary (the central roots).** The root set of every central value contains the two central roots $\pm\sqrt\lambda\,e_t$, and they coincide exactly when $\lambda=0$; for $\lambda\neq0$ the two are distinct and lie in the scalar line $\mathbb{C}_{\mathbb{B}}$.
+**Corollary (the central roots).** The root set of every central value contains the two central roots $\pm\sqrt\lambda\,e_t$, and they coincide exactly when $\lambda=0$; for $\lambda\neq0$ the two are distinct and lie in the scalar line $\mathbb{B}_{C}$.
 
 ## The Scaling of the Root Set
 
@@ -74,7 +74,7 @@ The root set of a general central value is therefore not a new object: it is the
 
 | radicand $\tilde Q$ | condition | root set |
 |---|---|---|
-| $\tilde Q\notin\mathbb{C}_{\mathbb{B}}$ | $\tilde Q$ not central | empty; the absence of §*The Reduction* |
+| $\tilde Q\notin\mathbb{B}_{C}$ | $\tilde Q$ not central | empty; the absence of §*The Reduction* |
 | $\tilde Q=\lambda e_t$, $\lambda\neq0$ | a non-zero central value | the nondegenerate quadric $N=\lambda$, real dimension six, the scaled root set of $1$ |
 | $\tilde Q=0$ | the central value $0$ | the zero-divisor cone $N=0$, real dimension six |
 
@@ -116,7 +116,7 @@ The square-root equation $\tilde{Ζ}\star\tilde{Ζ}=\tilde Q$ of the general qua
 |---|---|
 | $\tilde{Ζ}\star\tilde Q=\tilde{Ζ}^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | $\langle\tilde{Ζ}\rangle_{\natural}=\sum_\mu Ζ_\mu^2=Ζ_t^2+(\vec{Ζ},\vec{Ζ})$ | the algebraic norm |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the scalar line, the set of the central values |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the scalar line, the set of the central values |
 | $\lambda e_t$ | a central value, $\lambda=\lambda_1+i\lambda_2$ |
 | $\tilde{Ζ}\star\tilde{Ζ}=\langle\tilde{Ζ}\rangle_{\natural}e_t$ | the central square |
 | $R(\lambda)=\{N=\lambda\}$ | the root set of the central value $\lambda$ |

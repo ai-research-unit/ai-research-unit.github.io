@@ -234,10 +234,10 @@ This is the **real decomposition** of a real number. It expresses $q$ as a real 
 There is no Hermitian subspace and no anti-Hermitian subspace, because there is no Hermitian conjugation. The decomposition
 
 $$
-\mathbb{R} = \mathbb{M}_+ \oplus \mathbb{M}_-
+\mathbb{R} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}
 $$
 
-does not exist, because $\mathbb{M}_+$ and $\mathbb{M}_-$ are not defined. There is only one subspace, and it is the whole algebra.
+does not exist, because $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are not defined. There is only one subspace, and it is the whole algebra.
 
 ## Order-Theoretic Structure
 

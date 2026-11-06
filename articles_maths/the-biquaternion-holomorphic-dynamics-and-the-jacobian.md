@@ -8,7 +8,7 @@ The quadratic family, its critical set and its derivative are *The Biquaternion 
 
 The article owns the Jacobian and its determinant, the local biholomorphism off the critical set, the definition of the Fatou and Julia sets, the exceptional set and the small Julia set, the central-parameter theorem identifying the two Julia sets, the fixed-point multiplier computation, and the local picture at the cone. It does not re-derive the derivative.
 
-**Standing convention.** $F=F_{\tilde Q_3}$ is the quadratic family in the general plain bilinear product, $dF|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.
+**Standing convention.** $F=F_{\tilde Q_3}$ is the quadratic family in the general plain bilinear product, $dF|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ is the critical set.
 
 ## Holomorphy and the Jacobian
 
@@ -30,7 +30,7 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q_1\ran
 
 ## The Critical Set, the Critical Values and the Local Picture
 
-**Proposition (the critical values).** The critical set $\Sigma(\mathbb{B})$ is the union of the cone $\mathscr{Z}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, both of complex dimension three. The image of the cone is the translate of the cone, $F(\mathscr{Z})=\mathscr{Z}+\tilde Q_3$, and the image of the vector subspace is the complex line through the parameter in the scalar direction, $F(\mathrm{Vect}(\mathbb{B}))=\tilde Q_3+\mathbb{C}e_t$; hence the set of critical values is $(\mathscr{Z}+\tilde Q_3)\cup(\tilde Q_3+\mathbb{C}e_t)$.
+**Proposition (the critical values).** The critical set $\Sigma(\mathbb{B})$ is the union of the cone $\mathscr{Z}$ and the vector subspace $\mathbb{B}_{V}$, both of complex dimension three. The image of the cone is the translate of the cone, $F(\mathscr{Z})=\mathscr{Z}+\tilde Q_3$, and the image of the vector subspace is the complex line through the parameter in the scalar direction, $F(\mathbb{B}_{V})=\tilde Q_3+\mathbb{C}e_t$; hence the set of critical values is $(\mathscr{Z}+\tilde Q_3)\cup(\tilde Q_3+\mathbb{C}e_t)$.
 
 **Proof.** On the cone $F(\tilde Q_1)=\tilde Q_1^2+\tilde Q_3=2Q_{1t}\tilde Q_1+\tilde Q_3$ with $\tilde Q_1^2=2Q_{1t}\tilde Q_1$ by Cayley–Hamilton, and $2Q_{1t}\tilde Q_1$ ranges over the cone as $\tilde Q_1$ does, so the image is the cone translated by $\tilde Q_3$. On the vector subspace, $\vec P^2=-(\vec P,\vec P)e_t$ is central, and $-(\vec P,\vec P)$ ranges over all of $\mathbb{C}$ as $\vec P$ ranges over the pure vectors, so the image is the scalar line through $\tilde Q_3$.
 
@@ -48,7 +48,7 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q_1\ran
 
 ## The Exceptional Set and the Small Julia Set
 
-**Definition.** The **exceptional set** of the biquaternion map is the set of the points whose orbit fails to have the generic local behaviour: the critical set $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$, together with the set where the Green's function fails to be plurisubharmonic.
+**Definition.** The **exceptional set** of the biquaternion map is the set of the points whose orbit fails to have the generic local behaviour: the critical set $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$, together with the set where the Green's function fails to be plurisubharmonic.
 
 **Remark (the small Julia set).** In the several-variable theory the support of the equilibrium measure is the **small Julia set**, contained in the Julia set and possibly strictly smaller, and it is the closure of the union of the backward images of the critical set. For the biquaternion map the critical set is the union of the cone and the vector subspace, so the small Julia set is the closure of the union of the backward images of that union; whether it equals the Julia set is open, because the equidistribution it rests on is obstructed by the cone. **The article states the small Julia set as the support of the measure and does not identify it with the Julia set.**
 
@@ -104,7 +104,7 @@ The biquaternion quadratic map is holomorphic, its derivative at a point is the 
 |---|---|
 | $dF|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ | the complex derivative |
 | $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ | the Jacobian determinant |
-| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set |
+| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathbb{B}_{V}$ | the critical set |
 | $\mathcal{F}_{\tilde Q_3}$, $\mathcal{J}_{\tilde Q_3}$ | the Fatou set and the dynamical Julia set |
 | $\mathcal K_{\tilde Q_3}$, $J_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}$ | the filled Julia set and the set-theoretic Julia set |
 | $\mathcal{F}_C$, $\mathcal{J}_C$, $K_C$, $J_C$ | the one-variable Fatou, Julia, filled and boundary sets |

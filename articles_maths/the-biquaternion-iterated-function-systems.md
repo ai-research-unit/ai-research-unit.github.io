@@ -32,7 +32,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde Q_3=e
 
 **Proof.** $\|f(\tilde Q_4)-f(\tilde Q_3)\|_E=\|\tilde Q_1(\tilde Q_4-\tilde Q_3)\|_E\le\|L_{\tilde Q_1}\|\|\tilde Q_4-\tilde Q_3\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde Q_1}\|\le\sqrt2\|\tilde Q_1\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
-**Theorem (the similarity multipliers).** Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,
+**Theorem (the similarity multipliers).** Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{B}_{H}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
 $$
 \boxed{\;\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q\;},

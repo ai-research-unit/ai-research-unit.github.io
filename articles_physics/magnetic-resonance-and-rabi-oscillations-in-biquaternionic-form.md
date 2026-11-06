@@ -6,11 +6,11 @@ A spin-1/2 placed in a static magnetic field $B_0\vec u_z$ precesses at the Larm
 
 This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles. The physical content is standard and is reproduced here exactly. What the article establishes is **where** the driven problem lives in the algebra and which of the framework's structures the resonance condition and the Rabi formula expose:
 
-1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_1 = \tfrac{\hbar}{2}i\vec e_x$ and $\tilde{S}_2 = \tfrac{\hbar}{2}i\vec e_y$, both in $\mathbb{M}_+$; the total Hamiltonian remains in $\mathbb{M}_+$ for all times. No element of the material sector enters the spin dynamics.
-2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)\in\mathbb{H}_{\mathbb{B}}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
+1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_1 = \tfrac{\hbar}{2}i\vec e_x$ and $\tilde{S}_2 = \tfrac{\hbar}{2}i\vec e_y$, both in $\mathbb{B}_{\Psi}$; the total Hamiltonian remains in $\mathbb{B}_{\Psi}$ for all times. No element of the material sector enters the spin dynamics.
+2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)\in\mathbb{B}_{H}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
 3. **The effective Hamiltonian is static and traceless**,
    $$
-   \tilde{R}_{\psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{M}_+,
+   \tilde{R}_{\psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{B}_{\Psi},
    $$
    and the generalized Rabi frequency is its spectral gap, $\Omega = \sqrt{(\omega_0-\omega)^2+\omega_1^2}$.
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
@@ -43,7 +43,7 @@ $$
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$
 
-Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{M}_+$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
+Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
 
 The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos\omega_0 r'_t, -\sin\omega_0 r'_t, 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
 
@@ -54,7 +54,7 @@ With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-i H_{0}r'_t/\hbar)$ w
 $$
 \tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2}\vec e_z\right)
 = \cos\frac{\omega_0 r'_t}{2}\,e_t - \sin\frac{\omega_0 r'_t}{2}\,\vec e_z
-\;\in \mathbb{H}_{\mathbb{B}} .
+\;\in \mathbb{B}_{H} .
 $$
 
 This is a unit real quaternion, a rotor; it acts on states and observables by conjugation and generates the Larmor precession. The key algebraic point is the one the Schrödinger article makes: the generator of the *physical* rotation is a real quaternion $\vec e_z$, obtained from the Hermitian observable $i\vec e_z$ by multiplication by the central $i$. The imaginary unit that makes the observable Hermitian is the same one that converts its exponential into a rotation rather than a boost.
@@ -67,7 +67,7 @@ $$
 \tilde{U}(r'_t) = \mathcal{T}\exp\!\left(-\frac{i}{\hbar}\int_0^{r'_{t}} \tilde R_\psi(\tau)\,d\tau\right),
 $$
 
-which in the algebra is a product of unitaries in the limit of infinitesimal steps, $\tilde Q(r'_t) = \lim_{N\to\infty}\prod_{k=0}^{N-1}\exp(-\tfrac{i}{\hbar}\tilde R_\psi(r'_{t,k})\Delta r'_t)$. Each factor is a $*$-unitary element of $\mathbb{B}$; the product is $*$-unitary too, and lies in the group generated by $\mathbb{M}_+$ together with the central $i$, which is the $\mathrm{U}(2)$ of the informational sector. The rotating frame below turns this time-ordered product into a single exponential.
+which in the algebra is a product of unitaries in the limit of infinitesimal steps, $\tilde Q(r'_t) = \lim_{N\to\infty}\prod_{k=0}^{N-1}\exp(-\tfrac{i}{\hbar}\tilde R_\psi(r'_{t,k})\Delta r'_t)$. Each factor is a $*$-unitary element of $\mathbb{B}$; the product is $*$-unitary too, and lies in the group generated by $\mathbb{B}_{\Psi}$ together with the central $i$, which is the $\mathrm{U}(2)$ of the informational sector. The rotating frame below turns this time-ordered product into a single exponential.
 
 ## The Rotating Frame
 
@@ -101,7 +101,7 @@ $$
 so the drive becomes a static transverse field. The fictitious term computes to $-i\hbar\tilde u_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r} = +\tfrac{\hbar\omega}{2}i\vec e_z$. Adding the three contributions,
 
 $$
-\boxed{\;\tilde{R}_{\psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{M}_+ \;}
+\boxed{\;\tilde{R}_{\psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in \mathbb{B}_{\Psi} \;}
 $$
 
 which is time independent. Writing $\Delta = \omega_0-\omega$ for the **detuning**, the effective Hamiltonian is a fixed Hermitian element of the informational sector,
@@ -150,7 +150,7 @@ $$
 = \cos\frac{\Omega r'_t}{2}\,e_t - \sin\frac{\Omega r'_t}{2}\;\frac{\omega_1 \vec e_x + \Delta \vec e_z}{\Omega} .
 $$
 
-The exponent is a real quaternion, so $\tilde u_H\in\mathbb{H}_{\mathbb{B}}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_R(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
+The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_R(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
 
 $$
 \boxed{\;P_{\downarrow}(r'_t) = \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u_z)\,\tilde{Ϛ}(r'_t)\right)
@@ -213,9 +213,9 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 
 **What the algebra organises.**
 
-- **A single sector.** The drive, the static field and the effective field are all Hermitian elements of $\mathbb{M}_+$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde u_{\mathrm r}$, which is a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
+- **A single sector.** The drive, the static field and the effective field are all Hermitian elements of $\mathbb{B}_{\Psi}$, and the whole problem is the conjugation of a state in that sector by a product of unitaries. The material sector does not appear, except in the frame rotor $\tilde u_{\mathrm r}$, which is a real quaternion in $\mathbb{B}_{H}$.
 - **The rotor as the natural variable.** The rotating frame is not an ad hoc complex exponential; it is conjugation by the unit real quaternion $\exp(-\tfrac{\omega r'_t}{2}\vec e_z)$, the same rotor that carries the Larmor precession. The effective Hamiltonian is the transformed observable, and the resonance condition is the vanishing of its longitudinal component.
-- **The spectral gap as the Rabi frequency.** The generalized Rabi frequency is the difference of the two eigenvalues of the effective Hamiltonian, $\pm\hbar\Omega/2$, so it is a spectral quantity of a Hermitian element of $\mathbb{M}_+$. The maximum transition amplitude $\omega_1^2/(\omega_1^2+\Delta^2)$ is the square of the transverse fraction of the effective field, i.e. the geometric tilt of $\vec u_R$ from the equator.
+- **The spectral gap as the Rabi frequency.** The generalized Rabi frequency is the difference of the two eigenvalues of the effective Hamiltonian, $\pm\hbar\Omega/2$, so it is a spectral quantity of a Hermitian element of $\mathbb{B}_{\Psi}$. The maximum transition amplitude $\omega_1^2/(\omega_1^2+\Delta^2)$ is the square of the transverse fraction of the effective field, i.e. the geometric tilt of $\vec u_R$ from the equator.
 - **No privileged counter-rotating terms.** Because the drive is written as a Hermitian element with an explicit time dependence, the RWA is exposed as a physical approximation about which rotor the drive tracks, not as an algebraic necessity.
 
 **What the algebra does not supply.** The Rabi frequency $\omega_1 = \gamma B_1$ and the Larmor frequency $\omega_0 = \gamma B_0$ contain the gyromagnetic ratio $\gamma$ and the field amplitudes; these are external data, like the mass and the action in the other articles of the series. The algebra also does not supply the time $r'_t$ or the drive frequency $\omega$; the rotating frame is defined by inserting them. Finally, dissipation and relaxation — the Bloch $T_1$ and $T_2$ times — lie outside the Hamiltonian evolution entirely and are not addressed by the framework, which is $*$-unitary.
@@ -237,7 +237,7 @@ The Bloch picture is the material of the companion article *Quantum Physics in B
 A spin-1/2 driven by $\vec B(r'_t) = B_0\vec u_z + B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ has the biquaternion Hamiltonian
 
 $$
-\tilde R_\psi(r'_t) = -\frac{\hbar\omega_0}{2}i\vec e_z - \frac{\hbar\omega_1}{2}\left(i\vec e_x\cos\omega r'_t - i\vec e_y\sin\omega r'_t\right) \in \mathbb{M}_+,
+\tilde R_\psi(r'_t) = -\frac{\hbar\omega_0}{2}i\vec e_z - \frac{\hbar\omega_1}{2}\left(i\vec e_x\cos\omega r'_t - i\vec e_y\sin\omega r'_t\right) \in \mathbb{B}_{\Psi},
 $$
 
 with $\omega_0 = \gamma B_0$ and $\omega_1 = \gamma B_1$. The transformation to the frame rotating with the drive is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2}\vec e_z)$, and it produces the static effective Hamiltonian
@@ -264,8 +264,8 @@ which reduces to $\sin^2(\omega_1r'_t/2)$ on resonance. The $\pi$-pulse $r'_t = 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_+$ | Hermitian (informational) subspace; home of all Hamiltonians here |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the frame rotor |
+| $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of all Hamiltonians here |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the frame rotor |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\vec B(r'_t) = B_0\vec u_z+B_1(\cos\omega r'_t\,\vec u_x-\sin\omega r'_t\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |

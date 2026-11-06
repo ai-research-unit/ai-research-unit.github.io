@@ -24,7 +24,7 @@ It is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, involutive, and multiplic
 $$
 \overline{ab}=\bar a\,\bar b .
 $$
-It fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and anti-fixes its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$.
+It fixes the real quaternion subspace $\mathbb{B}_{H}$ and anti-fixes its imaginary multiple $\mathbb{B}_{iH}$.
 
 **The quaternion conjugation.** The **natural** conjugation is
 $$
@@ -34,7 +34,7 @@ It is $\mathbb{C}$-linear and involutive, and it is an antiautomorphism:
 $$
 (ab)^{\natural}=b^{\natural}a^{\natural}.
 $$
-It fixes the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\operatorname{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$.
+It fixes the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$.
 
 **The star.** The **star** is the composite
 $$
@@ -44,15 +44,15 @@ It is $\mathbb{C}$-antilinear, involutive, and an antiautomorphism:
 $$
 (ab)^{*}=b^{*}a^{*}.
 $$
-It fixes the Hermitian subspace $\mathbb{M}_+$ and anti-fixes the anti-Hermitian subspace $\mathbb{M}_-$.
+It fixes the Hermitian subspace $\mathbb{B}_{\Psi}$ and anti-fixes the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
 
 **The table.**
 
 | map | linearity | multiplicativity | fixed | anti-fixed |
 |---|---|---|---|---|
-| bar $\bar{\cdot}$ | antilinear | automorphism | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
-| natural ${}^{\natural}$ | linear | antiautomorphism | $\mathbb{C}_{\mathbb{B}}$ | $\operatorname{Vect}(\mathbb{B})$ |
-| star $*$ | antilinear | antiautomorphism | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
+| bar $\bar{\cdot}$ | antilinear | automorphism | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
+| natural ${}^{\natural}$ | linear | antiautomorphism | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
+| star $*$ | antilinear | antiautomorphism | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
 
 **The central imaginary.** The three maps act on $i$ as
 $$
@@ -369,7 +369,7 @@ The difference between the frames is the difference between the bar and the cell
 
 ## Summary
 
-The biquaternion algebra carries three involutions: the bar (antilinear automorphism, fixed space $\mathbb{H}_{\mathbb{B}}$), the natural conjugation (linear antiautomorphism, fixed space $\mathbb{C}_{\mathbb{B}}$) and the star (antilinear antiautomorphism, fixed space $\mathbb{M}_+$). The star is the composite of the bar and the natural conjugation. In the real basis the bar is $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$ and the star is $S=D_8J$; both have trace zero and determinant one. In the complex coefficient basis the natural conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and it has the two-sided expansion
+The biquaternion algebra carries three involutions: the bar (antilinear automorphism, fixed space $\mathbb{B}_{H}$), the natural conjugation (linear antiautomorphism, fixed space $\mathbb{B}_{C}$) and the star (antilinear antiautomorphism, fixed space $\mathbb{B}_{\Psi}$). The star is the composite of the bar and the natural conjugation. In the real basis the bar is $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$ and the star is $S=D_8J$; both have trace zero and determinant one. In the complex coefficient basis the natural conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and it has the two-sided expansion
 $$
 {}^{\natural}=-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}).
 $$

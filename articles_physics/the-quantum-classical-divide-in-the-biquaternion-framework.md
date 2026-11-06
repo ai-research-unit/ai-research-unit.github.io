@@ -10,11 +10,11 @@ This article asks a specific question: does the biquaternion framework developed
 
 The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
-The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
+The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
 The article is organized as follows. Section 2 presents the operational criterion in the paper's own terms. Section 3 gives the criterion in the framework's language: idempotent/$*$-unitary on the two partitions. Section 4 maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. Section 5 discusses the *fundamental versus derived* distinction that the framework suggests but the operational criterion does not require. Section 6 states what the framework adds and what remains open. Section 7 concludes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Operational Criterion
 
@@ -61,7 +61,7 @@ $$
 $$
 The action is reversible. The $*$-unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
-- **Idempotent elements** $\tilde\Pi \in \mathbb{M}_+$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **sandwich**:
+- **Idempotent elements** $\tilde\Pi \in \mathbb{B}_{\Psi}$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **sandwich**:
 $$
 \tilde{Ϛ} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}\,\tilde\Pi.
 $$
@@ -107,7 +107,7 @@ The paper's Figure 1 partitions non-separable states into nested subsets accordi
 
 ### Subset I: Two objects
 
-Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{M}_+^{(A)} \otimes \mathbb{M}_+^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the trace pairing.
+Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{B}_{\Psi}^{(A)} \otimes \mathbb{B}_{\Psi}^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the trace pairing.
 
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
@@ -121,7 +121,7 @@ and the joint probability is the normalised Hermitian form, read as the normalis
 
 A single photon is incident on a beam splitter. The output state is a superposition of "photon in mode 1, vacuum in mode 2" and "vacuum in mode 1, photon in mode 2." Korolkova, Sánchez-Soto, and Leuchs emphasize that despite the single photon, both output modes carry definite excitation structure: the excited output mode contains a photon, and the other output mode contains vacuum fluctuations in a definite mode.
 
-In the framework, both output modes are states of $\mathbb{M}_+$. The photon mode is an excited state; the vacuum mode is the ground state. Both can be acted on by idempotents in the appropriate basis. The measurement of quadratures via homodyne detection is a projective measurement on the mode's state. The framework as developed in the companion articles is finite-dimensional; the continuous-variable case requires extension, in which the projective measurements of homodyne detection correspond to the appropriate limits of idempotent operations. Two idempotents are available, one per output mode.
+In the framework, both output modes are states of $\mathbb{B}_{\Psi}$. The photon mode is an excited state; the vacuum mode is the ground state. Both can be acted on by idempotents in the appropriate basis. The measurement of quadratures via homodyne detection is a projective measurement on the mode's state. The framework as developed in the companion articles is finite-dimensional; the continuous-variable case requires extension, in which the projective measurements of homodyne detection correspond to the appropriate limits of idempotent operations. Two idempotents are available, one per output mode.
 
 The framework reads this case as quantum, consistent with the resolution of the 2004 debate noted in the paper.
 
@@ -137,36 +137,36 @@ The framework reads this case as quantum. The paper's point that non-locality is
 
 The case is a vector light beam with a non-separable structure between its transverse spatial mode and its polarization. The beam has a definite excitation (the electromagnetic wave), but the excitation is not attached to either partition — it can be assigned to either partition by a choice of measurement scheme. The mode functions are frames for the excitation, not excitations themselves.
 
-In the framework, the mode functions are **not** states of $\mathbb{M}_+$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{M}_-$) and an imaginary part (in $\mathbb{M}_+$), but the mode function per se is a structural feature of the field, not a state of either sector.
+In the framework, the mode functions are **not** states of $\mathbb{B}_{\Psi}$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{B}_{\Phi}$) and an imaginary part (in $\mathbb{B}_{\Psi}$), but the mode function per se is a structural feature of the field, not a state of either sector.
 
 This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a $*$-unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a $*$-unitary element $\tilde Q_A$.
 
 The framework reads this case as classical: one idempotent, one $*$-unitary.
 
-The paper's distinction between "mode functions" and "excitations" is thus given a natural home in the framework: an excitation is a state of $\mathbb{M}_+$; a mode function is not. The framework's split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ is the algebraic expression of the paper's observation that mode functions and excitations are different kinds of object.
+The paper's distinction between "mode functions" and "excitations" is thus given a natural home in the framework: an excitation is a state of $\mathbb{B}_{\Psi}$; a mode function is not. The framework's split $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$ is the algebraic expression of the paper's observation that mode functions and excitations are different kinds of object.
 
 ## Fundamental versus Derived
 
 The operational criterion, as Korolkova, Sánchez-Soto, and Leuchs present it, is a criterion about *operations*: count the idempotents. It does not require any commitment to the *role* of the state in the algebra. The framework suggests a refinement, which the paper's criterion does not require, and which is the place where the framework goes beyond the operational criterion.
 
-**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}$ is a *fundamental* element of $\mathbb{M}_+^{(A)}\otimes \mathbb{M}_+^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the normalised Hermitian form, read through the trace.
+**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}$ is a *fundamental* element of $\mathbb{B}_{\Psi}^{(A)}\otimes \mathbb{B}_{\Psi}^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the normalised Hermitian form, read through the trace.
 
-**Classical non-separability lives in a derived element.** In the classical case, the non-separable object — say, the coherence matrix $W_{ij}$ of a vector light beam — is a *derived* element of $\mathbb{M}_+^{\otimes 2}$ (after the appropriate reduction to a 2×2 problem). It is obtained as a second-order correlation of a classical field configuration:
+**Classical non-separability lives in a derived element.** In the classical case, the non-separable object — say, the coherence matrix $W_{ij}$ of a vector light beam — is a *derived* element of $\mathbb{B}_{\Psi}^{\otimes 2}$ (after the appropriate reduction to a 2×2 problem). It is obtained as a second-order correlation of a classical field configuration:
 
 $$
 W_{ij} = \langle E_i^*\,E_j\rangle,
 $$
 
-where $E_i$ is a component of the classical field amplitude. The field configuration $E_i$ lives elsewhere in the algebra — it is a complex 3-vector, which decomposes into a real part (in $\mathbb{M}_-$) and an imaginary part (in $\mathbb{M}_+$) — and the coherence matrix is a *bilinear* summary of it.
+where $E_i$ is a component of the classical field amplitude. The field configuration $E_i$ lives elsewhere in the algebra — it is a complex 3-vector, which decomposes into a real part (in $\mathbb{B}_{\Phi}$) and an imaginary part (in $\mathbb{B}_{\Psi}$) — and the coherence matrix is a *bilinear* summary of it.
 
-The reason the operational criterion works — why only one idempotent is available in the classical case — is precisely this: the classical field configuration is not itself a state of $\mathbb{M}_+$ in the same sense. It carries the excitation, but the excitation is not attached to a partition. The partitions are mode decompositions of a field, and the field is the fundamental object.
+The reason the operational criterion works — why only one idempotent is available in the classical case — is precisely this: the classical field configuration is not itself a state of $\mathbb{B}_{\Psi}$ in the same sense. It carries the excitation, but the excitation is not attached to a partition. The partitions are mode decompositions of a field, and the field is the fundamental object.
 
 In the quantum case, by contrast, the state is the fundamental object, and the two partitions carry independent excitation structures. There is no deeper field configuration from which the state is derived. The two idempotents act directly on a fundamental state of the tensor-product algebra.
 
 So the operational criterion and the structural refinement are two faces of the same distinction:
 
 - The **operational criterion** says: count the idempotents.
-- The **structural refinement** says: the count reflects whether the non-separable element is a fundamental state of $\mathbb{M}_+^{\otimes n}$ (in which case two idempotents are available) or a derived coherence matrix of a deeper classical field configuration (in which case only one is available).
+- The **structural refinement** says: the count reflects whether the non-separable element is a fundamental state of $\mathbb{B}_{\Psi}^{\otimes n}$ (in which case two idempotents are available) or a derived coherence matrix of a deeper classical field configuration (in which case only one is available).
 
 The structural refinement is not part of the paper's criterion, and the paper does not need it. But it is the framework's way of *explaining* why the criterion holds, and it is the place where the framework goes beyond the criterion as an operational prescription.
 
@@ -178,7 +178,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 **2. A structural reason for the criterion.** The framework suggests that the count of idempotents reflects whether the non-separable element is fundamental (quantum) or derived (classical). This is not required by the operational criterion, and the criterion does not depend on it, but it gives the criterion a structural interpretation in terms of the material/informational split of the algebra.
 
-**3. A candidate interpretation of "excitation" vs. "mode function."** The paper's distinction — an excitation is measurable, a mode function is a frame — is expressed in the framework as the distinction between elements of $\mathbb{M}_+$ (excitations) and elements of the general algebra $\mathbb{B}$ (mode functions and field configurations). This is a clean home for the paper's central observation.
+**3. A candidate interpretation of "excitation" vs. "mode function."** The paper's distinction — an excitation is measurable, a mode function is a frame — is expressed in the framework as the distinction between elements of $\mathbb{B}_{\Psi}$ (excitations) and elements of the general algebra $\mathbb{B}$ (mode functions and field configurations). This is a clean home for the paper's central observation.
 
 ### What remains open
 
@@ -203,8 +203,8 @@ The paper and the framework are complementary. The paper tells us what to look f
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Material sector (anti-Hermitian): four-vectors, classical fields |
-| $\mathbb{M}_+$ | Informational sector (Hermitian): states, observables, excitations |
+| $\mathbb{B}_{\Phi}$ | Material sector (anti-Hermitian): four-vectors, classical fields |
+| $\mathbb{B}_{\Psi}$ | Informational sector (Hermitian): states, observables, excitations |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
@@ -215,7 +215,7 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
 | $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one $*$-unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |
-| Fundamental element | Joint state of $\mathbb{M}_+^{\otimes n}$ (quantum) |
+| Fundamental element | Joint state of $\mathbb{B}_{\Psi}^{\otimes n}$ (quantum) |
 | Derived element | Coherence matrix from a classical field configuration (classical) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

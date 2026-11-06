@@ -152,7 +152,7 @@ the Matsubara function on the discrete grid, the retarded function on the real a
 
 **The thermal states of the companions.** The Unruh and Hawking states are equilibrium states at $\beta=2\pi c/a$ and $\beta=2\pi c/\kappa$; their CTP description is the equilibrium one above, with the Keldysh component carrying the thermal factor and the retarded/advanced functions carrying the causal response. The framework adds no new ingredient: the imaginary material time is intrinsic, which is why the KMS strip has a preferred direction, and the temperature is the input that the Unruh and Hawking articles state it to be.
 
-**Consistency with the KMS article.** The modular Hamiltonian $K=-\log\rho$ is a Hermitian element of $\mathbb{M}_+$ in the KMS article's finite-dimensional setting, and the Keldysh component is $\rho$-dependent through the thermal factor; for a Gibbs state $\rho=\exp(-\beta H)/Z$ the two agree. The same caveat as in the Matsubara article applies: the field-algebra modular operator is not constructed in the framework, and the equilibrium CTP function is used as the standard one.
+**Consistency with the KMS article.** The modular Hamiltonian $K=-\log\rho$ is a Hermitian element of $\mathbb{B}_{\Psi}$ in the KMS article's finite-dimensional setting, and the Keldysh component is $\rho$-dependent through the thermal factor; for a Gibbs state $\rho=\exp(-\beta H)/Z$ the two agree. The same caveat as in the Matsubara article applies: the field-algebra modular operator is not constructed in the framework, and the equilibrium CTP function is used as the standard one.
 
 ## The Non-Equilibrium Case
 

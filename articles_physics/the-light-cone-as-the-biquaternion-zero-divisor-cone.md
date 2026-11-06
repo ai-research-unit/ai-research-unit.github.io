@@ -15,7 +15,7 @@ so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation
 Three threads are developed below.
 
 - **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
-- **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone, and the $\mathbb{M}_-$ cone is the physical light cone.
+- **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ each contain a cone, and the $\mathbb{B}_{\Phi}$ cone is the physical light cone.
 - **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
 ## The Biquaternion Norm and Its Vanishing Set
@@ -64,7 +64,7 @@ $$
 \boxed{\ \tilde{Q}^2 = \vec Q\vec Q = -\vec Q\cdot\vec Q = -\langle\tilde{Q}\rangle_{\natural} = 0\ } ,
 $$
 
-where the middle equality uses $\vec Q\vec Q = -\vec Q\cdot\vec Q + \vec Q\times\vec Q$ and $\vec Q\times\vec Q = 0$. A pure zero divisor is therefore **nilpotent**, $\tilde{Q}^2 = 0$, and the pure zero divisors form the nilpotent cone $\vec Q\cdot\vec Q = 0$ inside the complex vector space $\mathrm{Vect}(\mathbb{B})\cong\mathbb{C}^3$. The simplest example is $\tilde{Q} = \vec e_x + i\vec e_y$, for which $N = 1^2 + i^2 = 0$ and $\tilde{Q}^2 = 0$.
+where the middle equality uses $\vec Q\vec Q = -\vec Q\cdot\vec Q + \vec Q\times\vec Q$ and $\vec Q\times\vec Q = 0$. A pure zero divisor is therefore **nilpotent**, $\tilde{Q}^2 = 0$, and the pure zero divisors form the nilpotent cone $\vec Q\cdot\vec Q = 0$ inside the complex vector space $\mathbb{B}_{V}\cong\mathbb{C}^3$. The simplest example is $\tilde{Q} = \vec e_x + i\vec e_y$, for which $N = 1^2 + i^2 = 0$ and $\tilde{Q}^2 = 0$.
 
 **Non-pure family.** If $Q_t\neq 0$, write $\tilde{Q} = Q_t(e_t + \vec w)$ with $\vec w = \vec Q/Q_t$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = Q_t^2(1 + \vec w\cdot\vec w)$, so vanishing requires
 
@@ -129,9 +129,9 @@ which is the form in which it appears in the boost of a plane wave. The name, du
 
 Which real subspaces meet $\mathcal{Z}$ is the question that gives the cone its **physical interpretation**.
 
-**The scalar line and the real quaternions are division subalgebras.** On $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ a general element is $\tilde{Q} = (a + ib)e_t$ and $\langle\tilde{Q}\rangle_{\natural} = (a+ib)^2$, which vanishes only at $a = b = 0$. On $\mathbb{H}_{\mathbb{B}}$ a general element is a real quaternion $\tilde{Q} = a_0e_t + \vec a$ with $\langle\tilde{Q}\rangle_{\natural} = a_0^2 + \vec a^2$, a sum of real squares, which likewise vanishes only at the origin. Neither subspace contains a zero divisor: they are the division subalgebras of $\mathbb{B}$, and on them the biquaternion norm is anisotropic. The set $\mathcal{Z}$ lives in the complement of those two subspaces.
+**The scalar line and the real quaternions are division subalgebras.** On $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ a general element is $\tilde{Q} = (a + ib)e_t$ and $\langle\tilde{Q}\rangle_{\natural} = (a+ib)^2$, which vanishes only at $a = b = 0$. On $\mathbb{B}_{H}$ a general element is a real quaternion $\tilde{Q} = a_0e_t + \vec a$ with $\langle\tilde{Q}\rangle_{\natural} = a_0^2 + \vec a^2$, a sum of real squares, which likewise vanishes only at the origin. Neither subspace contains a zero divisor: they are the division subalgebras of $\mathbb{B}$, and on them the biquaternion norm is anisotropic. The set $\mathcal{Z}$ lives in the complement of those two subspaces.
 
-**The material cone.** On $\mathbb{M}_-$ the general element is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $r'_t, r_x, r_y, r_z$ real, and
+**The material cone.** On $\mathbb{B}_{\Phi}$ the general element is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $r'_t, r_x, r_y, r_z$ real, and
 
 $$
 \langle\tilde R_\varphi\rangle_{\natural} = (i c r'_t)^2 +r_x^2+r_y^2+r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2 .
@@ -147,9 +147,9 @@ $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde R_\varphi = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} =r_x^2+r_y^2+r_z^2 = 0$ with $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
 
-**The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with $r_t, \vec r_\psi$ real, and $\langle\tilde R_\psi\rangle_{\natural} = c^2r_t^2 - \vec r_\psi^{2}$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Informational Sector: States, Observables and Probability*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
+**The informational cone.** On $\mathbb{B}_{\Psi}$ the general element is $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with $r_t, \vec r_\psi$ real, and $\langle\tilde R_\psi\rangle_{\natural} = c^2r_t^2 - \vec r_\psi^{2}$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Informational Sector: States, Observables and Probability*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
 
-The distribution is therefore forced by the topology of the four real slices: the two division slices $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are anisotropic, and the two slices on which $i$ appears with a relative sign — $\mathbb{M}_-$ and $\mathbb{M}_+$ — carry the cone. The physical light cone is the branch of $\mathcal{Z}$ that lies in the material sector.
+The distribution is therefore forced by the topology of the four real slices: the two division slices $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ are anisotropic, and the two slices on which $i$ appears with a relative sign — $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ — carry the cone. The physical light cone is the branch of $\mathcal{Z}$ that lies in the material sector.
 
 ## The Cone and the Wave Operator
 
@@ -161,7 +161,7 @@ $$
 
 because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $\tilde{\nabla}^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
-Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{M}_-$ written as
+Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
 
 $$
 \tilde P = i\,\frac{\omega}{c}\,e_t + \vec k,
@@ -223,7 +223,7 @@ $$
 = \langle\tilde{Q}\rangle_{\natural}\ } ,
 $$
 
-using the multiplicativity of the biquaternion norm and $\langle\tilde{U}\rangle_{\natural} = 1$, $\langle\tilde{U}^{*}\rangle_{\natural} = 1$, the action carries a null element to a null element and a timelike (or spacelike) element to one of the same type. The rotor also maps $\mathbb{M}_-$ to itself, because $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$ for $\tilde{Q}\in\mathbb{M}_-$. The cone is therefore a Lorentz-invariant set, and the causal classification is frame-independent. Conversely, the cone determines the causal structure, and the group that preserves the cone is the group generated by the rotors together with the discrete transformations that do not preserve the arrows of time and space; the identity component is exactly the connected Lorentz group.
+using the multiplicativity of the biquaternion norm and $\langle\tilde{U}\rangle_{\natural} = 1$, $\langle\tilde{U}^{*}\rangle_{\natural} = 1$, the action carries a null element to a null element and a timelike (or spacelike) element to one of the same type. The rotor also maps $\mathbb{B}_{\Phi}$ to itself, because $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$ for $\tilde{Q}\in\mathbb{B}_{\Phi}$. The cone is therefore a Lorentz-invariant set, and the causal classification is frame-independent. Conversely, the cone determines the causal structure, and the group that preserves the cone is the group generated by the rotors together with the discrete transformations that do not preserve the arrows of time and space; the identity component is exactly the connected Lorentz group.
 
 Two consequences are worth stating because they are the reason the cone is a physical object and not a coordinate artefact. First, the cone has an intrinsic characterization: it is the set where the algebra's biquaternion norm degenerates, and this characterization is invariant under every algebra automorphism, not merely under the rotors. Second, the cone is the boundary of the region in which the free particle of the companion article *The Relativistic Particle in Biquaternionic Form* can move: its timelike worldline stays strictly inside, and the mass-shell hyperboloid $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ approaches the cone as $m\to 0$. In this precise sense the zero-divisor cone is the boundary of the massive, invertible, subluminal sector of the algebra.
 
@@ -265,7 +265,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 2. **Complexified spacetime.** The Maxwell article complexifies $\tilde{A}$ and $\tilde{F}$. In the fully complexified theory the cone of the algebra and the real light cone of the material slice are different subsets — the complex null cone is larger. Which of the two is the causal cone of the complexified theory is not settled by the algebra alone.
 
-3. **The cone and the medium.** The propagation speed is $c = 1/\sqrt{\epsilon\mu}$, so the biquaternion norm and the cone it defines are local in a medium. Does a spatially varying medium deform the cone into a field of cones, and can this be written as a position-dependent biquaternion norm on $\mathbb{M}_-$ without leaving the algebra?
+3. **The cone and the medium.** The propagation speed is $c = 1/\sqrt{\epsilon\mu}$, so the biquaternion norm and the cone it defines are local in a medium. Does a spatially varying medium deform the cone into a field of cones, and can this be written as a position-dependent biquaternion norm on $\mathbb{B}_{\Phi}$ without leaving the algebra?
 
 4. **The nilpotent family in physics.** The real light cone is entirely of the idempotent type; the nilpotent family requires genuinely complex spatial components. Are there classical configurations — complexified momenta, geometric-optics rays, Regge-type constructions — for which the nilpotent branch of $\mathcal{Z}$ is the physically relevant one?
 
@@ -288,7 +288,7 @@ $$
 \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
 
-so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
+so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
 The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
@@ -302,14 +302,14 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (level 1: identity on $\mathbb{C}$) |
 | $\mathcal{Z} = \{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set: the cone |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Division subalgebras: complex scalar line (centre); real quaternions |
-| $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\mathbb{M}_-$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}, \mathbb{B}_{H}$ | Division subalgebras: complex scalar line (centre); real quaternions |
+| $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate, $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural} = -c^2{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Interval; zero set is the light cone |
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
-| $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |
+| $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + \vec k^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |

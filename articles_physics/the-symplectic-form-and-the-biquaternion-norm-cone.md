@@ -10,9 +10,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ car
 2. The holomorphic biquaternion norm is the symmetric general plain bilinear form of the same complex structure; its isotropic cone is the biquaternion-norm cone. On the material sector that cone is the light cone, and it is the characteristic cone of the d'Alembertian.
 3. On the coadjoint orbit of the companion articles, the symplectic form is the Souriau form and the orbit is a level set of the biquaternion norm; the cone is the degenerate orbit at zero level.
 
-The article is classical throughout. The Hermitian pairing is the form that the companion articles on $\mathbb{M}_+$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
+The article is classical throughout. The Hermitian pairing is the form that the companion articles on $\mathbb{B}_{\Psi}$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i c r'_t$, and the d'Alembertian of the series is $\Box=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i c r'_t$, and the d'Alembertian of the series is $\Box=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta$.
 
 The companion articles are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the phase-space biquaternion and the Poisson bracket.
@@ -264,11 +264,11 @@ $$
 
 The cone is the locus where the configuration and momentum magnitudes are equal and the two vectors are orthogonal; it is isotropic for the holomorphic form, $\langle\vec Z,\vec Z\rangle=\langle\vec Z\rangle_{\natural}=0$. Two remarks are needed. First, the condition equates the magnitudes of $\vec q$ and $\vec p$, which carry different physical dimensions unless a scale is fixed; the cone is therefore a statement about the complexified phase space after a symplectic normalization, and it is not by itself a physically invariant locus. Second, the cone meets the real phase space $\vec q,\vec p$ real only at $\vec Z=0$: the general plain bilinear form is definite there, and its real zero set is a single point. The cone is a genuinely complex object.
 
-The algebra's reason for caring about the cone is that its points are the **zero divisors**: the biquaternions with $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=0$ are exactly the elements $\tilde Q\neq0$ for which multiplication by $\tilde Q$ is not invertible, so the biquaternion norm's cone is the singular locus of the algebra's product. This is the same cone that the companion articles identify as the boundary of the idempotent (state) manifold in $\mathbb{M}_+$ and as the light cone of the material sector.
+The algebra's reason for caring about the cone is that its points are the **zero divisors**: the biquaternions with $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=0$ are exactly the elements $\tilde Q\neq0$ for which multiplication by $\tilde Q$ is not invertible, so the biquaternion norm's cone is the singular locus of the algebra's product. This is the same cone that the companion articles identify as the boundary of the idempotent (state) manifold in $\mathbb{B}_{\Psi}$ and as the light cone of the material sector.
 
 ### The Material Light Cone
 
-The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$,
+The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$,
 
 $$
 \boxed{\;\langle\tilde R_\varphi\rangle_{\natural}=(i c r'_t)^2+r_x^2+r_y^2+r_z^2=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;},
@@ -294,7 +294,7 @@ so $\Box\tilde{Ξ}=0$ is exactly $\langle\tilde P\rangle_{\natural}=0$; the over
 
 ## The Coadjoint Orbit and the Biquaternion-Norm Level Sets
 
-The biquaternion norm's level sets carry the symplectic structure in the case the companion articles develop. Let $\vec S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ be a pure real quaternion, and consider the level sets
+The biquaternion norm's level sets carry the symplectic structure in the case the companion articles develop. Let $\vec S\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$ be a pure real quaternion, and consider the level sets
 
 $$
 \langle\vec S\rangle_{\natural}=|\vec S|^2=S^2 .
@@ -317,7 +317,7 @@ The biquaternion norm enters in two ways. First, the orbits are the level sets o
 
 In the biquaternion phase space the coordinates $\vec q,\vec p$ are already Darboux coordinates: the form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$ is constant, and the Poisson brackets are the canonical ones, $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$. A rotor conjugation $\vec Z\mapsto\tilde u\vec Z\tilde u^{*}$ with $\langle\tilde u\rangle_{\natural}=e_t$, restricted to the phase space, is a rotation of the phase-space coordinates; it preserves $\langle\cdot,\cdot\rangle_{\natural}$ and $g$ and, when it acts as an algebra automorphism commuting with $i$, it preserves $\omega$ as well. The cubic terms that would obstruct Darboux coordinates in a curved symplectic manifold are absent here because the phase space is linear; the only non-triviality is the noncommutativity of the quaternion product, which affects the interpretation of the coordinates but not the constancy of the form.
 
-A point worth stating precisely: the phase-space biquaternion $\vec Z=\vec q+i\vec p$ is a complexification of the phase-space point, and the symplectic form is the imaginary part of the Hermitian pairing on that complexification. The complexification is not an extra structure added to mechanics; it is the algebra's own complex structure, the same $i$ that appears in the sector decomposition $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and that exchanges the sectors.
+A point worth stating precisely: the phase-space biquaternion $\vec Z=\vec q+i\vec p$ is a complexification of the phase-space point, and the symplectic form is the imaginary part of the Hermitian pairing on that complexification. The complexification is not an extra structure added to mechanics; it is the algebra's own complex structure, the same $i$ that appears in the sector decomposition $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ and that exchanges the sectors.
 
 ## What Is Structural and What Is Familiar
 

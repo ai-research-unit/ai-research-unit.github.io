@@ -29,7 +29,7 @@ The article develops both interpretations, then treats approximate cloning, wher
 A **cloning machine** for a family of states $\{\tilde{Ϛ}_x\}$ is a physical process, described in the framework by a completely positive trace-preserving map
 
 $$
-Ξ : \mathbb{M}_+ \otimes \mathbb{M}_+ \longrightarrow \mathbb{M}_+ \otimes \mathbb{M}_+ ,
+Ξ : \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} \longrightarrow \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} ,
 \qquad
 Ξ\bigl(\tilde{Ϛ}_x \otimes \tilde{Ϛ}_0\bigr) = \tilde{Ϛ}_x \otimes \tilde{Ϛ}_x
 \ \text{ for all } x,
@@ -136,7 +136,7 @@ $$
 
 whenever the cross terms do not cancel, i.e. whenever the states are not orthogonal. The two sides agree only if $t(1-t)(\tilde{Ϛ}_1\otimes\tilde{Ϛ}_2+\tilde{Ϛ}_2\otimes\tilde{Ϛ}_1 - \tilde{Ϛ}_1\otimes\tilde{Ϛ}_1-\tilde{Ϛ}_2\otimes\tilde{Ϛ}_2) = 0$, which for non-commuting or non-orthogonal states fails. Hence no affine map clones a non-orthogonal family.
 
-**Linearity is the algebraic content of no-cloning.** The state space of the framework is a convex set, the cone slice of $\mathbb{M}_+$; physical evolution is affine on it; and the cloning target is quadratic. The obstruction is the mismatch of degrees: an affine map is determined by its values on the extreme points with a linearity constraint, while the cloning target imposes a quadratic relation among those values.
+**Linearity is the algebraic content of no-cloning.** The state space of the framework is a convex set, the cone slice of $\mathbb{B}_{\Psi}$; physical evolution is affine on it; and the cloning target is quadratic. The obstruction is the mismatch of degrees: an affine map is determined by its values on the extreme points with a linearity constraint, while the cloning target imposes a quadratic relation among those values.
 
 ## Approximate Cloning
 
@@ -207,7 +207,7 @@ In the framework's terms, all three are the statement that the normalised Hermit
 
 - It expresses the distinguishability of two rays as the normalised Hermitian form of their idempotents, read as the trace pairing, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
 - It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}) = (\mathrm{Tr}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
-- It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{M}_+$, while the cloning target is quadratic.
+- It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, while the cloning target is quadratic.
 - It expresses the fidelity of approximate cloning as the normalised Hermitian form, read through the trace, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
 
 **What it does not.**
@@ -221,7 +221,7 @@ In the framework's terms, all three are the statement that the normalised Hermit
 
 **1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the normalised Hermitian form. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{Q}_3\tilde{Q}_1\rangle_{\natural} = \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the $*$-unitary argument?
 
-**2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
+**2. Cloning and the two sectors.** The algebra splits into $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$; the obstruction is stated entirely in $\mathbb{B}_{\Psi}$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 
 **3. Correlated inputs.** The theorem forbids cloning an unknown state. What is the algebraic characterization of the correlations that a cloning machine can exploit, and does the entanglement of the blank with the input modify the bound?
 
@@ -245,7 +245,7 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}.
 $$
 
-Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{M}_+$, and the mismatch is the obstruction.
+Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, and the mismatch is the obstruction.
 
 Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde{Ϛ}_{\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
@@ -254,7 +254,7 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra (input and blank) |
-| $\mathbb{M}_+$ | Hermitian subspace (states) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})$ | Rank-one idempotent of a pure state |
 | $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = |\langle\tilde{Ξ}_{\mathrm{sp}}|\xi_{\mathrm{alt}}\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |

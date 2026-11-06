@@ -187,7 +187,7 @@ They are the two one-sided multiplications of §3, their kernels are the two ann
 
 The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and the norms *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*The Biquaternion Algebra*).
+**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{B}_{C}=\mathbb{C}e_t$ (*The Biquaternion Algebra*).
 
 **Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 
@@ -232,7 +232,7 @@ A definition of the element theory names a product. This article states, once an
 | $[x,y]_\star$, $x\circ_\star y$ | the commutator and the symmetrisation of $\star$ |
 | $(x,y,z)_\star$ | the associator of $\star$ |
 | $L_a^{\star},R_a^{\star}$ | the left and the right multiplication by $a$ in $\star$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the plain product |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre of the plain product |
 
 ## Further Reading
 

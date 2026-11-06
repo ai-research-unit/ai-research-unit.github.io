@@ -30,7 +30,7 @@ $$
 
 The division between what is established and what is interpretation is kept explicit, as in the companion articles.
 
-- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}$ in $\mathbb{M}_-$; and the observation that the connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion.
+- **Established, and recomputed below.** The identities of the four bullets above; the flatness of pure-gauge connections; the reality condition that keeps $\tilde{A}$ in $\mathbb{B}_{\Phi}$; and the observation that the connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion.
 - **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
@@ -56,7 +56,7 @@ The two descriptions agree because $\sum_\mu e_\mu A_\mu = \tilde{A}$ and $\sum_
 
 Two points about the nature of $\tilde\nabla_{\mathrm{gco}}$ are worth stating before its algebra is used.
 
-**$\tilde\nabla_{\mathrm{gco}}$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $\tilde\nabla_{\mathrm{gco},\mu}$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{M}_-$ — and it is the *coefficient* of the new term, not the derivative itself.
+**$\tilde\nabla_{\mathrm{gco}}$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $\tilde\nabla_{\mathrm{gco},\mu}$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{B}_{\Phi}$ — and it is the *coefficient* of the new term, not the derivative itself.
 
 **The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_\mu$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{iϙ}{\hbar}A_\mu$ agree, and the derivation below never has to choose an order. This is the algebraic signature of the abelian gauge group: the phase lies in the centre, and the connection has central coefficients.
 
@@ -65,7 +65,7 @@ The following table collects the components and their meanings.
 | Object | Expression | Role |
 |---|---|---|
 | Gradient | $\tilde{\nabla}$ | The ordinary derivative of *Operator and Calculus Conventions* |
-| Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ | Compensating field |
+| Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{B}_{\Phi}$ | Compensating field |
 | Covariant derivative | $\tilde\nabla_{\mathrm{gco}} = \sum_\mu e_\mu \tilde\nabla_{\mathrm{gco},\mu}$ | $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ |
 | Time component $\mu = t$ | $\tilde\nabla_{\mathrm{gco},t} = \partial/\partial R_t + \frac{iϙ}{\hbar}A_t = \partial/\partial R_t - \frac{ϙ a'_t}{\hbar}$ | $A_t = i\,a'_t$ |
 | Space components $\mu = k$ | $\tilde\nabla_{\mathrm{gco},k} = \partial/\partial r_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
@@ -154,7 +154,7 @@ and the linear mass term passes the central phase through, so the left action is
 
 The centrality of $\lambda$ is what makes the transformation law *additive*. Left and right multiplication by $\lambda$ agree, so no conjugation appears and the gauge group is abelian. It is the centre of $\mathbb{B}$ that supplies the group, and the centre is one complex dimension; the gauge group is $\mathrm{U}(1)$.
 
-The reality of the gauge function is inherited as well. A real $\Gamma$ keeps $\tilde{A}$ in the material sector: $\tilde{\nabla}\Gamma$ has an imaginary scalar coefficient and real vector coefficients, exactly the membership condition of $\mathbb{M}_-$; a complex $\Gamma$ would move the connection out of it.
+The reality of the gauge function is inherited as well. A real $\Gamma$ keeps $\tilde{A}$ in the material sector: $\tilde{\nabla}\Gamma$ has an imaginary scalar coefficient and real vector coefficients, exactly the membership condition of $\mathbb{B}_{\Phi}$; a complex $\Gamma$ would move the connection out of it.
 
 ## The Connection as a Gauge Orbit
 
@@ -195,7 +195,7 @@ $$
 d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{B}_{H}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -222,7 +222,7 @@ $$
 
 with $e_t^{\natural} = e_t$ and $e_\mu^{\natural} = -\vec e_\mu$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
 
-**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{M}_-$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
+**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{B}_{\Phi}$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
 
 Because $\tilde{F}$ is built from $\tilde{A}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde{\nabla}\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the gauge principle companion so that it is not written by mistake.)
 
@@ -309,7 +309,7 @@ which is $\Box$ with the sign of $\Delta_Q$ reversed and a vector part added. Th
 
 The boundary can be drawn as in the companion articles.
 
-**What it supplies.** The centre $\mathbb{C}_{\mathbb{B}}$ supplies the abelian gauge group $\mathrm{U}(1)$ canonically. The algebra makes the transformation law forced rather than assumed, makes the connection a material-sector object, makes the commutator of covariant derivatives an element of the algebra, and makes the covariant square split into a wave operator and a curvature term without any extra structure. It also preserves the sector decomposition under a real gauge function.
+**What it supplies.** The centre $\mathbb{B}_{C}$ supplies the abelian gauge group $\mathrm{U}(1)$ canonically. The algebra makes the transformation law forced rather than assumed, makes the connection a material-sector object, makes the commutator of covariant derivatives an element of the algebra, and makes the covariant square split into a wave operator and a curvature term without any extra structure. It also preserves the sector decomposition under a real gauge function.
 
 **What it only transcribes.** The global-to-local argument itself, the form of minimal coupling, and the covariant derivative are the standard constructions, written in the algebra's notation. The algebra provides a home and makes the identities transparent; it does not supply a reason for a connection to exist, and it does not fix the coupling constant $ϙ$.
 
@@ -319,7 +319,7 @@ The boundary can be drawn as in the companion articles.
 
 The word "connection" is used in the framework for two different objects, and conflating them is an error worth naming.
 
-The connection of this article is **one-sided**: $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $\tilde\nabla_{\mathrm{gco},\mu}\tilde{Q} = \partial/\partial R_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
+The connection of this article is **one-sided**: $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $\tilde\nabla_{\mathrm{gco},\mu}\tilde{Q} = \partial/\partial R_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{B}_{\Phi}$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
 The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force, the abelian case of this article, the substitution $\partial/\partial R_\mu \to \tilde\nabla_{\mathrm{gco},\mu}$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the connection is central: it multiplies from the side the derivative already multiplies from, and it passes through every unit. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term between the frame element and the Lorentz generator, which the substituted equation does not have. The difference is settled by one test, whether the generator commutes with the four units, and the test separates the two cases cleanly. The centre of $\mathbb{B}$ is the real span of $e_t$ and $ie_t$, so the six-dimensional traceless subspace, where the Lorentz generator lives, contains no central element at all; the traceless units themselves do not even commute with one another, $[\vec e_x,\vec e_y]=2\vec e_z$ and cyclically, whereas the central element commutes with everything,
 
@@ -331,7 +331,7 @@ $$
 
 J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and reads it as a tension with the equivalence principle; the construction is recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*. It is the sharpest available answer to the question this section raises: the one-sided central connection of this article is exactly the case in which localization is unambiguous, and the two-sided gravitational connection is exactly the case in which it is not.
 
-A second external source goes further and puts the two objects into one. J. Fredsted (arXiv:0811.1357v4 [math-ph], 2009) constructs a formalism on a biquaternionic basis $s_\mu \in \mathbb{M}_-$ with the metric $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$ and a **single** connection $\omega_\mu \in \mathbb{C}\otimes\mathbb{H}$ subject only to $\mathrm{Sc}(\omega_\mu + \bar{\omega}_\mu^*) = 0$; the imaginary-scalar part of $\omega_\mu$ is a local $\mathrm{U}(1)$ and its vector part is the Lorentz connection, so the two connections of this section are two parts of one algebra-valued object. The corpus records the construction — it is the same frame route the curved-spacetime article builds, reached from the other end — but does not adopt it, and continues to assert no relation between its central $\mathrm{U}(1)$ connection and its traceless gravitational connection. What the external construction shows is that the two are not forbidden to be one; what the corpus lacks is any reason to identify them.
+A second external source goes further and puts the two objects into one. J. Fredsted (arXiv:0811.1357v4 [math-ph], 2009) constructs a formalism on a biquaternionic basis $s_\mu \in \mathbb{B}_{\Phi}$ with the metric $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$ and a **single** connection $\omega_\mu \in \mathbb{C}\otimes\mathbb{H}$ subject only to $\mathrm{Sc}(\omega_\mu + \bar{\omega}_\mu^*) = 0$; the imaginary-scalar part of $\omega_\mu$ is a local $\mathrm{U}(1)$ and its vector part is the Lorentz connection, so the two connections of this section are two parts of one algebra-valued object. The corpus records the construction — it is the same frame route the curved-spacetime article builds, reached from the other end — but does not adopt it, and continues to assert no relation between its central $\mathrm{U}(1)$ connection and its traceless gravitational connection. What the external construction shows is that the two are not forbidden to be one; what the corpus lacks is any reason to identify them.
 
 ## Open Questions
 
@@ -359,7 +359,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-with $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco}}(f\tilde{Ξ}_{\mathrm{sp}}) = f\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} + (\tilde{\nabla} f)\tilde{Ξ}_{\mathrm{sp}}$ and commutator $[\tilde\nabla_{\mathrm{gco},\mu},f] = \partial/\partial R_\mu f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\mu} - \partial/\partial R_\mu = \frac{iϙ}{\hbar}A_\mu$.
+with $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{B}_{\Phi}$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco}}(f\tilde{Ξ}_{\mathrm{sp}}) = f\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} + (\tilde{\nabla} f)\tilde{Ξ}_{\mathrm{sp}}$ and commutator $[\tilde\nabla_{\mathrm{gco},\mu},f] = \partial/\partial R_\mu f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\mu} - \partial/\partial R_\mu = \frac{iϙ}{\hbar}A_\mu$.
 
 Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde{\nabla}\lambda)\lambda^{-1}$, which for $\lambda = \exp(iϙ\Gamma/\hbar)$ is the inherited law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
 
@@ -382,15 +382,15 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k}$ | Square of the gradient; not scalar, and not $\Box$ |
 | $\Delta_Q=\sum_k\partial^2/\partial R_k^2$ | Laplacian in the three vector coordinates |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase (abelian) |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |

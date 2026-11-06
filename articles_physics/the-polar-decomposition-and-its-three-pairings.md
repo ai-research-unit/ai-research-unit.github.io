@@ -172,15 +172,15 @@ A split is a direct-sum decomposition of the algebra, not a bracketing of a prod
 
 | split | pieces | used by | physical reading |
 | --- | --- | --- | --- |
-| real vs. imaginary coefficients | $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ | the quaternion construction | the real quaternion frame and the imaginary-coefficient part |
-| Hermitian vs. anti-Hermitian | $\mathbb{M}_+\oplus\mathbb{M}_-$ | the physical sectors; the Cartan exponents | the informational and material generators |
-| scalar vs. vector | $\mathbb{C}_{\mathbb{B}}\oplus\operatorname{Vect}(\mathbb{B})$ | the four-vector reading; the eigenvalue decomposition | time and space; the spectral axis |
+| real vs. imaginary coefficients | $\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ | the quaternion construction | the real quaternion frame and the imaginary-coefficient part |
+| Hermitian vs. anti-Hermitian | $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | the physical sectors; the Cartan exponents | the informational and material generators |
+| scalar vs. vector | $\mathbb{B}_{C}\oplus\mathbb{B}_{V}$ | the four-vector reading; the eigenvalue decomposition | time and space; the spectral axis |
 
-The quaternion construction uses the **first** split. The physical sectors are the **second**. Conflating them would identify the real part with the informational sector and the imaginary part with the material sector, and that is wrong: the material sector $\mathbb{M}_-$ has an imaginary scalar and a real vector, so it mixes the real and imaginary coefficient splits. A table of the sector action of the central $i$ is in *Special Element Conventions*, §*The Central Map and Its Restrictions*.
+The quaternion construction uses the **first** split. The physical sectors are the **second**. Conflating them would identify the real part with the informational sector and the imaginary part with the material sector, and that is wrong: the material sector $\mathbb{B}_{\Phi}$ has an imaginary scalar and a real vector, so it mixes the real and imaginary coefficient splits. A table of the sector action of the central $i$ is in *Special Element Conventions*, §*The Central Map and Its Restrictions*.
 
 The three splits and the three pairings are different structures with the same number. A split asks what the algebra is made of; a pairing asks how the product is grouped. The word's four factors are grouped by the pairings and typed by the splits, and neither classification implies the other.
 
-The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is $*$-unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
+The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b}\in\mathbb{B}_{\Psi}$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{B}_{\Phi}$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is $*$-unitary and not an element of the linear subspace $\mathbb{B}_{\Phi}$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{B}_{\Psi}\times\mathbb{B}_{\Phi}$.
 
 ## The Action on the Sectors and the Subspaces
 
@@ -190,10 +190,10 @@ The four factors act by four different operations, and the table records which s
 | --- | --- | --- |
 | scale $r$ | dilation by $r^2$ | all six |
 | phase $\exp(i\alpha)$ | multiplication by the scalar | centre, vector space |
-| boost $\tilde U_{\mathrm b}$ | congruence | $\mathbb{M}_+$, $\mathbb{M}_-$ |
+| boost $\tilde U_{\mathrm b}$ | congruence | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ |
 | rotor $\tilde u_{\mathrm r}$ | conjugation | all six |
 
-The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\operatorname{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
+The six subspaces are the centre $\mathbb{B}_{C}$, the vector space $\mathbb{B}_{V}$, the real quaternion space $\mathbb{B}_{H}$, the imaginary quaternion space $\mathbb{B}_{iH}$, and the two sectors $\mathbb{B}_{\Psi,\Phi}$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
 
 On the material sector the boost reads
 
@@ -295,7 +295,7 @@ The pairings read the same data under different headings, and the readings are d
 - The factors are three products of the same element, not three terms; none is conserved, none is a field, and none evolves on its own.
 - The domains are not nested: $i\vec e_x+i\vec e_y$ has no quaternion construction, $e_t+\vec e_x+i\vec e_y$ has no Hamilton pairing, and $e_t+i\vec e_x$ needs the generalized Cartan form.
 - The algebra has three splits — real/imaginary, Hermitian/anti-Hermitian, scalar/vector — and they are not the three pairings.
-- The Cartan factors do not split one per sector: $\tilde Q_H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde Q_0$ is $*$-unitary and not in $\mathbb{M}_-$, and $\ln\tilde Q_H$ and $\ln\tilde Q_0$ lie in the two sectors.
+- The Cartan factors do not split one per sector: $\tilde Q_H$ is Hermitian and lies in $\mathbb{B}_{\Psi}$, $\tilde Q_0$ is $*$-unitary and not in $\mathbb{B}_{\Phi}$, and $\ln\tilde Q_H$ and $\ln\tilde Q_0$ lie in the two sectors.
 - The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the two sectors and moves the centre.
 - A four-vector transforms by the congruence and a spinor by the left multiplication; the first is bilinear in the spinor, the second linear.
 
@@ -315,7 +315,7 @@ The pairings read the same data under different headings, and the readings are d
 | $\Rho=\sqrt N$, $\vec{Ζ}$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
 | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
-| $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and anti-Hermitian sectors |
 
 ## Further Reading
 

@@ -12,7 +12,7 @@ $$
 \boxed{\;\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\;},
 $$
 
-and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. The cone is written $\mathcal N$; the letter $\mathcal C$ is kept for the celestial sphere of the next section, which is its projectivisation and not the cone itself. On the material sector $\mathbb{M}_-$, with $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the norm is the interval,
+and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. The cone is written $\mathcal N$; the letter $\mathcal C$ is kept for the celestial sphere of the next section, which is its projectivisation and not the cone itself. On the material sector $\mathbb{B}_{\Phi}$, with $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the norm is the interval,
 
 $$
 \langle\tilde R_\varphi\rangle_{\natural} = -c^2{r'_{t}}^2 + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2,
@@ -25,7 +25,7 @@ so the null cone of the algebra restricts to the **light cone** of the material 
 The cone is a cone over its own directions. Two nonzero null elements define the **same direction** when one is a nonzero scalar multiple of the other; the set of directions is the **projectivisation** of the null cone, and on the material sector it is a two-dimensional sphere,
 
 $$
-\boxed{\;\mathcal{C} \;=\; \mathbb{P}(\mathcal{N}) \;=\; \bigl\{\text{null directions of }\mathbb{M}_-\bigr\} \;\cong\; S^2\;},
+\boxed{\;\mathcal{C} \;=\; \mathbb{P}(\mathcal{N}) \;=\; \bigl\{\text{null directions of }\mathbb{B}_{\Phi}\bigr\} \;\cong\; S^2\;},
 $$
 
 which is the **celestial sphere** of the light cone: the sphere of lightlike directions at a point, the sphere a photon's momentum points along, swept by the two angles $(\theta,\theta_{\mathrm{azm}})$. The Lorentz group acts on it transitively: the future lightlike directions form one orbit of the proper orthochronous Lorentz group, the past directions the other, and time reversal exchanges the two. No direction is preferred, which is the statement that the sphere is a single orbit. A **massless element** is determined by its direction and its scale, and the scale is not a Lorentz datum of the direction; so the sphere, and not the cone, is the Lorentz-homogeneous object.
@@ -48,7 +48,7 @@ so that over the complexified cone the phase is a circle over the two spheres to
 
 ## The Spinor Coordinates
 
-The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde R_\psi = -i\tilde P \in \mathbb{M}_+$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
+The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde R_\psi = -i\tilde P \in \mathbb{B}_{\Psi}$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
 
 $$
 \tilde{\Pi}_\zeta = \zeta\,\zeta^{\dagger}, \qquad \zeta \in \mathbb{C}^2,
@@ -96,7 +96,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $\langle\tilde{Q}\rangle_{\natural}=0$ is the null cone |
-| $\mathbb{M}_-$ | the material sector, $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
+| $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
 | $\zeta \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\zeta\mapsto \exp(i\alpha)\zeta$ |

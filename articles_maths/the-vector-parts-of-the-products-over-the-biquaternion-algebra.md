@@ -4,11 +4,11 @@
 
 The twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products* split every value into a scalar part and a vector part. The scalar parts are the four forms of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, together with the zero form of the four antisymmetric products, and they are studied as forms. The vector parts are the other half, and this article treats them as what they are: vector-valued maps, one per product, with a table, a diagonal, an image, a symmetry and a behaviour on the remarkable subspaces.
 
-The vector part is not a scalar form. It is a map into the three-dimensional complex vector subspace $\mathrm{Vect}(\mathbb{B})$, and the scalar theory applies to its three contractions with the basis vectors. The article states this distinction first, then reads the twelve vector parts one by one, then develops the properties that are common to them. The two results that organise the table are the **two-bit rule** for the four general products and the **three coincidences**: there are twelve products and therefore twelve vector parts, but three identities make some of them equal, so only nine distinct maps occur on the complex space.
+The vector part is not a scalar form. It is a map into the three-dimensional complex vector subspace $\mathbb{B}_{V}$, and the scalar theory applies to its three contractions with the basis vectors. The article states this distinction first, then reads the twelve vector parts one by one, then develops the properties that are common to them. The two results that organise the table are the **two-bit rule** for the four general products and the **three coincidences**: there are twelve products and therefore twelve vector parts, but three identities make some of them equal, so only nine distinct maps occur on the complex space.
 
 The article assumes the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*, the twelve products of *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the four forms of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The element, the basis and the three conjugations are those of *The Biquaternion Algebra*; the remarkable subspaces are those of *Subspaces and Decompositions*; the two switches, the coefficient conjugation and the natural conjugation, are those of *Introduction to the Operators of the Biquaternion Algebra*. The diagonal of the plain product is also computed in *The Square of an Element*, the diagonal of the general quaternionic sesquilinear product in *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, and the diagonal of the block in *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 
-Throughout, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $Q_{1t},Q_{2t}\in\mathbb{C}$ and $\vec Q_1,\vec Q_2\in\mathrm{Vect}(\mathbb{B})$. The coefficientwise conjugation is $\overline{\cdot}$, the natural conjugation is ${}^{\natural}$, the Hermitian conjugation is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, the complex bilinear dot product is $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$, and the complex bilinear cross product is $\vec Q_1\times\vec Q_2$. The vector subspace is $\mathrm{Vect}(\mathbb{B})$, the centre is $\mathbb{C}_{\mathbb{B}}$, the real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$. The products are written with their operators, as in the decomposition article: $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ for the four general products, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ for their symmetric parts, and $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ for their antisymmetric parts.
+Throughout, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $Q_{1t},Q_{2t}\in\mathbb{C}$ and $\vec Q_1,\vec Q_2\in\mathbb{B}_{V}$. The coefficientwise conjugation is $\overline{\cdot}$, the natural conjugation is ${}^{\natural}$, the Hermitian conjugation is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, the complex bilinear dot product is $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$, and the complex bilinear cross product is $\vec Q_1\times\vec Q_2$. The vector subspace is $\mathbb{B}_{V}$, the centre is $\mathbb{B}_{C}$, the real quaternion subspace is $\mathbb{B}_{H}$, and the Hermitian and anti-Hermitian subspaces are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The products are written with their operators, as in the decomposition article: $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ for the four general products, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ for their symmetric parts, and $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ for their antisymmetric parts.
 
 ## The Vector Part of a Product
 
@@ -37,9 +37,9 @@ $$
 f(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(f(\tilde Q_1,\tilde Q_2)\bigr)e_t+V_f(\tilde Q_1,\tilde Q_2),
 $$
 
-and the scalar part is one of the four forms, while $V_f$ is the new object. The map $V_f$ is $\mathbb{C}$-bilinear when $f$ is one of the six products of the two bilinear families, and sesquilinear over $(\mathbb{C},\bar{\cdot})$ when $f$ is one of the six products of the two sesquilinear families. Its values lie in $\mathrm{Vect}(\mathbb{B})$.
+and the scalar part is one of the four forms, while $V_f$ is the new object. The map $V_f$ is $\mathbb{C}$-bilinear when $f$ is one of the six products of the two bilinear families, and sesquilinear over $(\mathbb{C},\bar{\cdot})$ when $f$ is one of the six products of the two sesquilinear families. Its values lie in $\mathbb{B}_{V}$.
 
-**The vector part is not a form.** A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear in both slots for the two bilinear families and sesquilinear in the second slot for the two sesquilinear families. The vector part is vector-valued, so it has no scalar Gram matrix and no signature of its own. What replaces the scalar form is a family of three scalar forms, one for each vector of the subspace: for $w\in\mathrm{Vect}(\mathbb{B})$ put
+**The vector part is not a form.** A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear in both slots for the two bilinear families and sesquilinear in the second slot for the two sesquilinear families. The vector part is vector-valued, so it has no scalar Gram matrix and no signature of its own. What replaces the scalar form is a family of three scalar forms, one for each vector of the subspace: for $w\in\mathbb{B}_{V}$ put
 
 $$
 \varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
@@ -98,18 +98,18 @@ The table lists the twelve products with their operators, their vector parts, th
 
 | product | operator | vector part | diagonal | symmetry | image |
 |---|---|---|---|---|---|
-| the general plain bilinear product | $\tilde Q_1\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $2Q_t\vec Q$ | neither | $\mathrm{Vect}(\mathbb{B})$ |
-| the general quaternionic bilinear product | $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathrm{Vect}(\mathbb{B})$ |
-| the general plain sesquilinear product | $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathrm{Vect}(\mathbb{B})$ |
-| the general quaternionic sesquilinear product | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$ | neither | $\mathrm{Vect}(\mathbb{B})$ |
-| the symmetric plain bilinear product | $\tilde Q_1\bullet\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ | $2Q_t\vec Q$ | symmetric | $\mathrm{Vect}(\mathbb{B})$ |
+| the general plain bilinear product | $\tilde Q_1\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $2Q_t\vec Q$ | neither | $\mathbb{B}_{V}$ |
+| the general quaternionic bilinear product | $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathbb{B}_{V}$ |
+| the general plain sesquilinear product | $\tilde Q_1\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathbb{B}_{V}$ |
+| the general quaternionic sesquilinear product | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$ | neither | $\mathbb{B}_{V}$ |
+| the symmetric plain bilinear product | $\tilde Q_1\bullet\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ | $2Q_t\vec Q$ | symmetric | $\mathbb{B}_{V}$ |
 | the symmetric quaternionic bilinear product | $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $0$ | $0$ | zero | $\{0\}$ |
 | the symmetric plain sesquilinear product | $\tilde Q_1\bullet_{*}\tilde Q_2$ | $0$ | $0$ | zero | $\{0\}$ |
-| the symmetric quaternionic sesquilinear product | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ | $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$ | conjugate-symmetric | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric plain bilinear product | $\tilde Q_1\wedge\tilde Q_2$ | $\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric quaternionic bilinear product | $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric plain sesquilinear product | $\tilde Q_1\wedge_{*}\tilde Q_2$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric quaternionic sesquilinear product | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | $\vec Q_1\times\overline{\vec Q_2}$ | $\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathrm{Vect}(\mathbb{B})$ |
+| the symmetric quaternionic sesquilinear product | $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ | $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$ | conjugate-symmetric | $\mathbb{B}_{V}$ |
+| the antisymmetric plain bilinear product | $\tilde Q_1\wedge\tilde Q_2$ | $\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathbb{B}_{V}$ |
+| the antisymmetric quaternionic bilinear product | $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $0$ | alternating | $\mathbb{B}_{V}$ |
+| the antisymmetric plain sesquilinear product | $\tilde Q_1\wedge_{*}\tilde Q_2$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathbb{B}_{V}$ |
+| the antisymmetric quaternionic sesquilinear product | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | $\vec Q_1\times\overline{\vec Q_2}$ | $\vec Q\times\overline{\vec Q}$ | conjugate-alternating | $\mathbb{B}_{V}$ |
 
 The **vector part** column is $V_f$; the **diagonal** column is $V_f$ at the two equal arguments; the **symmetry** column is the class of the map under the exchange of the arguments, with the coefficientwise conjugation in the sesquilinear families; and the **image** column is the image of $V_f$ on the whole space. Ten rows have image the whole vector subspace, and two rows, $\tilde Q_1\bullet_{\natural}\tilde Q_2$ and $\tilde Q_1\bullet_{*}\tilde Q_2$, are the zero map. The table has repetitions: the rows $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural}\tilde Q_2$ are identical, the rows $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1\wedge_{*}\tilde Q_2$ are identical, and the two zero rows are identical. The next section proves that these are the only repetitions on the complex space.
 
@@ -153,7 +153,7 @@ $$
 V(\tilde Q_1\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
 $$
 
-It is $\mathbb{C}$-bilinear and neither symmetric nor alternating: its symmetric part is $V(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ and its alternating part is $V(\tilde Q_1\wedge\tilde Q_2)=\vec Q_1\times\vec Q_2$, so $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)+V(\tilde Q_1\wedge\tilde Q_2)$. Its diagonal is $2Q_t\vec Q$, which vanishes exactly on the union of the centre and the vector subspace; it is the vector part of the square computed in *The Square of an Element*. Its image is all of $\mathrm{Vect}(\mathbb{B})$, since at $\tilde Q_1=e_t$ and $\tilde Q_2=\vec w$ it is $\vec w$. On pure vectors it is the cross product $\vec Q_1\times\vec Q_2$. Its scalar part is the plain form $P$. When one argument is central, only the mixed term of the other survives, and the vector part is a complex multiple of the other vector part.
+It is $\mathbb{C}$-bilinear and neither symmetric nor alternating: its symmetric part is $V(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ and its alternating part is $V(\tilde Q_1\wedge\tilde Q_2)=\vec Q_1\times\vec Q_2$, so $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)+V(\tilde Q_1\wedge\tilde Q_2)$. Its diagonal is $2Q_t\vec Q$, which vanishes exactly on the union of the centre and the vector subspace; it is the vector part of the square computed in *The Square of an Element*. Its image is all of $\mathbb{B}_{V}$, since at $\tilde Q_1=e_t$ and $\tilde Q_2=\vec w$ it is $\vec w$. On pure vectors it is the cross product $\vec Q_1\times\vec Q_2$. Its scalar part is the plain form $P$. When one argument is central, only the mixed term of the other survives, and the vector part is a complex multiple of the other vector part.
 
 ### The General Quaternionic Bilinear Product
 
@@ -163,7 +163,7 @@ $$
 V(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$
 
-It is $\mathbb{C}$-bilinear and **alternating**, $V(\tilde Q_2^{\natural}\tilde Q_1)=-V(\tilde Q_1^{\natural}\tilde Q_2)$, and its diagonal is zero. It equals $V(\tilde Q_1\wedge_{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $-\vec Q_1\times\vec Q_2$. It is the reflection of the plain vector part in $Q_{1t}\vec Q_2$,
+It is $\mathbb{C}$-bilinear and **alternating**, $V(\tilde Q_2^{\natural}\tilde Q_1)=-V(\tilde Q_1^{\natural}\tilde Q_2)$, and its diagonal is zero. It equals $V(\tilde Q_1\wedge_{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its image is all of $\mathbb{B}_{V}$. On pure vectors it is $-\vec Q_1\times\vec Q_2$. It is the reflection of the plain vector part in $Q_{1t}\vec Q_2$,
 
 $$
 V(\tilde Q_1^{\natural}\tilde Q_2)=2Q_{1t}\vec Q_2-V(\tilde Q_1\tilde Q_2),\qquad
@@ -186,7 +186,7 @@ $$
 V(\tilde Q_1\tilde Q_2^{*})=-\overline{V(\tilde Q_2\tilde Q_1^{*})}.
 $$
 
-Its diagonal is the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$, hence a purely imaginary vector; it vanishes exactly when $\tilde Q\tilde Q^{*}$ is central, that is, when the Hermitian square has no vector part. It equals $V(\tilde Q_1\wedge_{*}\tilde Q_2)$ because $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. It is the plain vector part read at the conjugated second argument, which is the vector form of the slot identity. Its scalar part is the Hermitian form $H$.
+Its diagonal is the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$, hence a purely imaginary vector; it vanishes exactly when $\tilde Q\tilde Q^{*}$ is central, that is, when the Hermitian square has no vector part. It equals $V(\tilde Q_1\wedge_{*}\tilde Q_2)$ because $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its image is all of $\mathbb{B}_{V}$. On pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. It is the plain vector part read at the conjugated second argument, which is the vector form of the slot identity. Its scalar part is the Hermitian form $H$.
 
 ### The General Quaternionic Sesquilinear Product
 
@@ -206,7 +206,7 @@ V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=-Q_{1t}\overline{\vec Q_2}-\overline{
 V(\tilde Q_1\wedge_{\natural*}\tilde Q_2)=\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$; its real part is the real vector $-2(a\vec p+b\vec q)$ and its imaginary part is $-2i\,\vec p\times\vec q$ for $Q_t=a+ib$ and $\vec Q=\vec p+i\vec q$, so the two parts are orthogonal. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. It is the quaternionic vector part read on $(\tilde Q_1,\tilde Q_2^{*})$,
+Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$; its real part is the real vector $-2(a\vec p+b\vec q)$ and its imaginary part is $-2i\,\vec p\times\vec q$ for $Q_t=a+ib$ and $\vec Q=\vec p+i\vec q$, so the two parts are orthogonal. Its image is all of $\mathbb{B}_{V}$. On pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. It is the quaternionic vector part read on $(\tilde Q_1,\tilde Q_2^{*})$,
 
 $$
 V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2^{*}),
@@ -230,7 +230,7 @@ $$
 V(\tilde Q_1\bullet\tilde Q_2)=\tfrac12\bigl(V(\tilde Q_1\tilde Q_2)+V(\tilde Q_2\tilde Q_1)\bigr).
 $$
 
-Its diagonal is $2Q_t\vec Q$, the same as that of $\tilde Q_1\tilde Q_2$; it vanishes on the union of the centre and the vector subspace. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it vanishes identically. Its scalar part is the plain form $P$. The zero set is $Q_{1t}\vec Q_2=-Q_{2t}\vec Q_1$; off the centre and the vector subspace it forces the two vector parts to be proportional.
+Its diagonal is $2Q_t\vec Q$, the same as that of $\tilde Q_1\tilde Q_2$; it vanishes on the union of the centre and the vector subspace. Its image is all of $\mathbb{B}_{V}$. On pure vectors it vanishes identically. Its scalar part is the plain form $P$. The zero set is $Q_{1t}\vec Q_2=-Q_{2t}\vec Q_1$; off the centre and the vector subspace it forces the two vector parts to be proportional.
 
 ### The Symmetric Quaternionic Bilinear Product
 
@@ -272,7 +272,7 @@ $$
 V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=\tfrac12\bigl(V(\tilde Q_1^{\natural}\tilde Q_2^{*})+\overline{V(\tilde Q_2^{\natural}\tilde Q_1^{*})}\bigr).
 $$
 
-Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, a real vector. It vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ a real vector. Its image is all of $\mathrm{Vect}(\mathbb{B})$, and its diagonal image is the real vector subspace $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. On pure vectors it vanishes. Its scalar part is the Krein form $K$; the values of the product itself lie in no remarkable subspace of *Subspaces and Decompositions*.
+Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, a real vector. It vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ a real vector. Its image is all of $\mathbb{B}_{V}$, and its diagonal image is the real vector subspace $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. On pure vectors it vanishes. Its scalar part is the Krein form $K$; the values of the product itself lie in no remarkable subspace of *Subspaces and Decompositions*.
 
 ## The Four Antisymmetric Vector Parts
 
@@ -284,7 +284,7 @@ $$
 V(\tilde Q_1\wedge\tilde Q_2)=\vec Q_1\times\vec Q_2.
 $$
 
-It is alternating and satisfies the Jacobi identity; it is the Lie bracket of the vector subspace, which is isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the article that develops it is *The Lie Algebra of the Antisymmetric Plain Algebra*. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is the cross product. Its scalar part is zero. Its quadratic invariant is the Lagrange identity
+It is alternating and satisfies the Jacobi identity; it is the Lie bracket of the vector subspace, which is isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the article that develops it is *The Lie Algebra of the Antisymmetric Plain Algebra*. Its diagonal is zero, its image is all of $\mathbb{B}_{V}$, and on pure vectors it is the cross product. Its scalar part is zero. Its quadratic invariant is the Lagrange identity
 
 $$
 \bigl(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2\bigr)
@@ -301,7 +301,7 @@ $$
 V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$
 
-It is alternating, and it equals $V(\tilde Q_1^{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $-\vec Q_1\times\vec Q_2$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$, as *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* records. It is the antisymmetric part of the quaternionic bilinear product.
+It is alternating, and it equals $V(\tilde Q_1^{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its diagonal is zero, its image is all of $\mathbb{B}_{V}$, and on pure vectors it is $-\vec Q_1\times\vec Q_2$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$, as *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* records. It is the antisymmetric part of the quaternionic bilinear product.
 
 ### The Antisymmetric Plain Sesquilinear Product
 
@@ -311,7 +311,7 @@ $$
 V(\tilde Q_1\wedge_{*}\tilde Q_2)=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-It is conjugate-alternating, and it equals $V(\tilde Q_1\tilde Q_2^{*})$ because the symmetric part $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its diagonal is the vector part of $\tilde Q\tilde Q^{*}$, a purely imaginary vector; its image is all of $\mathrm{Vect}(\mathbb{B})$; on pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* records. It is the antisymmetric part of the general plain sesquilinear product.
+It is conjugate-alternating, and it equals $V(\tilde Q_1\tilde Q_2^{*})$ because the symmetric part $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its diagonal is the vector part of $\tilde Q\tilde Q^{*}$, a purely imaginary vector; its image is all of $\mathbb{B}_{V}$; on pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* records. It is the antisymmetric part of the general plain sesquilinear product.
 
 ### The Antisymmetric Quaternionic Sesquilinear Product
 
@@ -328,7 +328,7 @@ $$
 \qquad \vec Q=\vec p+i\vec q,
 $$
 
-a purely imaginary vector, and it vanishes exactly when $\vec Q$ is a complex multiple of a real vector. Its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra* records. On the real subspace it equals $V(\tilde Q_1\wedge\tilde Q_2)$. It is the antisymmetric part of the general quaternionic sesquilinear product.
+a purely imaginary vector, and it vanishes exactly when $\vec Q$ is a complex multiple of a real vector. Its image is all of $\mathbb{B}_{V}$, and on pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra* records. On the real subspace it equals $V(\tilde Q_1\wedge\tilde Q_2)$. It is the antisymmetric part of the general quaternionic sesquilinear product.
 
 ## The Diagonal and the Square
 
@@ -342,7 +342,7 @@ It is the vector part of the square of the element under $f$. The table groups t
 
 | products | diagonal | image |
 |---|---|---|
-| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$ | $2Q_t\vec Q$ | $\mathrm{Vect}(\mathbb{B})$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$ | $2Q_t\vec Q$ | $\mathbb{B}_{V}$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $0$ | $\{0\}$ |
 | $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1\wedge_{*}\tilde Q_2$ | $-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$ | $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$ | $\{r+is:\ r,s\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B}),\ r\cdot s=0\}$ |
@@ -373,12 +373,12 @@ and its real and imaginary parts are orthogonal. Conversely, every pair of ortho
 
 | central argument | the surviving vector parts |
 |---|---|
-| $\tilde Q_1\in\mathbb{C}_{\mathbb{B}}$ | $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=Q_{1t}\vec Q_2$; $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=V(\tilde Q_1\wedge_{*}\tilde Q_2)=-Q_{1t}\overline{\vec Q_2}$; the other four vanish |
-| $\tilde Q_2\in\mathbb{C}_{\mathbb{B}}$ | $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)=Q_{2t}\vec Q_1$; $V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=-Q_{2t}\vec Q_1$; $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1\wedge_{*}\tilde Q_2)=\overline{Q_{2t}}\vec Q_1$; $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=-\overline{Q_{2t}}\vec Q_1$; the other four vanish |
+| $\tilde Q_1\in\mathbb{B}_{C}$ | $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=Q_{1t}\vec Q_2$; $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=V(\tilde Q_1\wedge_{*}\tilde Q_2)=-Q_{1t}\overline{\vec Q_2}$; the other four vanish |
+| $\tilde Q_2\in\mathbb{B}_{C}$ | $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)=Q_{2t}\vec Q_1$; $V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=-Q_{2t}\vec Q_1$; $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1\wedge_{*}\tilde Q_2)=\overline{Q_{2t}}\vec Q_1$; $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=-\overline{Q_{2t}}\vec Q_1$; the other four vanish |
 
 **The vector subspace.** On pure vectors, $\tilde Q_1=\vec Q_1$ and $\tilde Q_2=\vec Q_2$, the mixed terms drop and only the cross term survives. The twelve restrictions take five distinct values:
 
-| products | vector part on $\mathrm{Vect}(\mathbb{B})$ |
+| products | vector part on $\mathbb{B}_{V}$ |
 |---|---|
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$ | $\vec Q_1\times\vec Q_2$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $-\vec Q_1\times\vec Q_2$ |
@@ -388,7 +388,7 @@ and its real and imaginary parts are orthogonal. Conversely, every pair of ortho
 
 Each general vector part coincides with its antisymmetric part on the vector subspace, and each symmetric part vanishes there. On the vector subspace the vector part is therefore the cross product alone.
 
-**The real subspace.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the coefficientwise conjugation is the identity and the twelve restrictions take eight distinct values. The collisions are
+**The real subspace.** On the real quaternion subspace $\mathbb{B}_{H}$, the coefficientwise conjugation is the identity and the twelve restrictions take eight distinct values. The collisions are
 
 $$
 V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2),\qquad
@@ -399,7 +399,7 @@ $$
 
 and the eight representatives are
 
-| product | vector part on $\mathbb{H}_{\mathbb{B}}$ |
+| product | vector part on $\mathbb{B}_{H}$ |
 |---|---|
 | $\tilde Q_1\tilde Q_2$ | $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ |
@@ -410,9 +410,9 @@ and the eight representatives are
 | $\tilde Q_1\wedge\tilde Q_2$ | $\vec Q_1\times\vec Q_2$ |
 | $0$ | $0$ |
 
-**The Hermitian subspace.** On $\mathbb{M}_+$, write $\tilde Q_1=a+i\vec p$ and $\tilde Q_2=b+i\vec q$ with $a,b\in\mathbb{R}$ and $\vec p,\vec q\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. The twelve restrictions take seven distinct values:
+**The Hermitian subspace.** On $\mathbb{B}_{\Psi}$, write $\tilde Q_1=a+i\vec p$ and $\tilde Q_2=b+i\vec q$ with $a,b\in\mathbb{R}$ and $\vec p,\vec q\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. The twelve restrictions take seven distinct values:
 
-| class | vector part on $\mathbb{M}_+$ |
+| class | vector part on $\mathbb{B}_{\Psi}$ |
 |---|---|
 | $\tilde Q_1\tilde Q_2=\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\wedge_{*}\tilde Q_2$ | $-\vec p\times\vec q+i(a\vec q+b\vec p)$ |
 | $\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\vec p\times\vec q+i(a\vec q-b\vec p)$ |
@@ -422,7 +422,7 @@ and the eight representatives are
 | $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | $\vec p\times\vec q$ |
 | $\tilde Q_1\bullet_{\natural}\tilde Q_2=\tilde Q_1\bullet_{*}\tilde Q_2$ | $0$ |
 
-The identities behind the table are $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1\tilde Q_2)$ and $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2)$ on $\mathbb{M}_+$, because $\tilde Q^{*}=\tilde Q$ there, together with $V(\tilde Q_1\bullet_{*}\tilde Q_2)=V(\tilde Q_1\tilde Q_2^{*})-V(\tilde Q_1\wedge_{*}\tilde Q_2)=0$. On the anti-Hermitian subspace $\mathbb{M}_-$ the same argument with $\tilde Q^{*}=-\tilde Q$ gives $V(\tilde Q_1\tilde Q_2^{*})=-V(\tilde Q_1\tilde Q_2)$ and $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=-V(\tilde Q_1^{\natural}\tilde Q_2)$.
+The identities behind the table are $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1\tilde Q_2)$ and $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=V(\tilde Q_1^{\natural}\tilde Q_2)$ on $\mathbb{B}_{\Psi}$, because $\tilde Q^{*}=\tilde Q$ there, together with $V(\tilde Q_1\bullet_{*}\tilde Q_2)=V(\tilde Q_1\tilde Q_2^{*})-V(\tilde Q_1\wedge_{*}\tilde Q_2)=0$. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ the same argument with $\tilde Q^{*}=-\tilde Q$ gives $V(\tilde Q_1\tilde Q_2^{*})=-V(\tilde Q_1\tilde Q_2)$ and $V(\tilde Q_1^{\natural}\tilde Q_2^{*})=-V(\tilde Q_1^{\natural}\tilde Q_2)$.
 
 ## The Symmetries of the Vector Parts
 
@@ -445,7 +445,7 @@ The exchange of the two arguments classifies the vector parts by the same four s
 
 ## The Component Forms
 
-**Definition (the component forms).** For $f$ of the twelve and $w\in\mathrm{Vect}(\mathbb{B})$, the **component form** is
+**Definition (the component forms).** For $f$ of the twelve and $w\in\mathbb{B}_{V}$, the **component form** is
 
 $$
 \varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
@@ -529,7 +529,7 @@ Each product was read with its own properties: its diagonal, its image, its valu
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Vec}(\tilde Q)=\vec Q$ | the vector part of an element |
-| $\mathrm{Vect}(\mathbb{B})$ | the complex vector subspace, the image of the vector parts |
+| $\mathbb{B}_{V}$ | the complex vector subspace, the image of the vector parts |
 | $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$ | the real vector subspace, the real vectors |
 | $V_f(\tilde Q_1,\tilde Q_2)=\mathrm{Vec}(f(\tilde Q_1,\tilde Q_2))$ | the vector part of the product $f$ |
 | $D_f(\tilde Q)=V_f(\tilde Q,\tilde Q)$ | the diagonal, the vector part of the square |
@@ -539,7 +539,7 @@ Each product was read with its own properties: its diagonal, its image, its valu
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products |
 | $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | the four symmetric parts |
 | $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the four antisymmetric parts |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the centre, the real quaternion subspace and the Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the centre, the real quaternion subspace and the Hermitian and anti-Hermitian subspaces |
 
 ## Further Reading
 

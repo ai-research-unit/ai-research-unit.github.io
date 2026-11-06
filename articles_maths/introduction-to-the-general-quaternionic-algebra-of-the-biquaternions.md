@@ -83,7 +83,7 @@ $$
 
 ### The Four Quaternionic Scalar Laws
 
-The space $\mathbb{B}$ is a module over $\mathbb{C}$ and also, by restriction of scalars along $\mathbb{R}\subset\mathbb{C}$, a real vector space of dimension eight carrying the left and the right action of the subalgebra $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. Four laws ask whether a multiplication is linear for those two actions, and they are the four a product must satisfy to define an algebra over the skew field $\mathbb{H}$ rather than over the field $\mathbb{C}$.
+The space $\mathbb{B}$ is a module over $\mathbb{C}$ and also, by restriction of scalars along $\mathbb{R}\subset\mathbb{C}$, a real vector space of dimension eight carrying the left and the right action of the subalgebra $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. Four laws ask whether a multiplication is linear for those two actions, and they are the four a product must satisfy to define an algebra over the skew field $\mathbb{H}$ rather than over the field $\mathbb{C}$.
 
 **Definition.** Let $\cdot$ be a multiplication on $\mathbb{B}$. Then $\cdot$ is **left $\mathbb{H}$-linear in the first slot**, **left $\mathbb{H}$-linear in the second**, **right $\mathbb{H}$-linear in the second** and **compatible with the $\mathbb{H}$-ring structure** when, for all $h\in\mathbb{H}$ and all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
@@ -280,13 +280,13 @@ The remarkable subspaces and the exact span table of the plain product on them a
 
 ### The Quaternion Subspace and Its Imaginary
 
-Let $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ be the real quaternion subspace and $i\mathbb{H}_{\mathbb{B}}$ its imaginary, so that $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ as real vector spaces (*The Biquaternion Algebra*).
+Let $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ be the real quaternion subspace and $\mathbb{B}_{iH}$ its imaginary, so that $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ as real vector spaces (*The Biquaternion Algebra*).
 
-**Proposition.** The product respects the splitting: $\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$. The splitting is therefore a $\mathbb{Z}/2$-grading for the multiplication.
+**Proposition.** The product respects the splitting: $\mathbb{B}_{H}\star\mathbb{B}_{H}\subseteq\mathbb{B}_{H}$, $\mathbb{B}_{H}\star \mathbb{B}_{iH}\subseteq \mathbb{B}_{iH}$, $\mathbb{B}_{iH}\star\mathbb{B}_{H}\subseteq \mathbb{B}_{iH}$ and $\mathbb{B}_{iH}\star \mathbb{B}_{iH}\subseteq\mathbb{B}_{H}$. The splitting is therefore a $\mathbb{Z}/2$-grading for the multiplication.
 
 **Proof.** The complex structure is $J(\tilde Q_2)=i\tilde Q_2$, and $\natural$ commutes with $J$, being $\mathbb{C}$-linear; the plain product is compatible with $J$ in both slots, $J(\tilde Q_1\tilde Q_2)=(J\tilde Q_1)\tilde Q_2=\tilde Q_1(J\tilde Q_2)$, since $i$ is central. Hence $\star$, which is the plain product with $\natural$ in the first slot, is compatible with $J$ in the same way, and the four inclusions are that statement read on the two halves.
 
-**Proposition.** On the quaternion subspace the multiplication is the plain product with the quaternionic conjugate in the first slot, $h\star g=\bar h\,g$ for real $h,g$, and its square is $h\star h=\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$. It is not associative there: on the subspace spanned by $e_t$ and one vector unit it fails the associative law, as in §*Associativity*. Its square vanishes on $\mathbb{H}_{\mathbb{B}}$ only at $0$, a sum of squares of real coordinates vanishing only when every coordinate vanishes, and in this it agrees with the record of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* that the real quaternion subspace carries no zero divisor.
+**Proposition.** On the quaternion subspace the multiplication is the plain product with the quaternionic conjugate in the first slot, $h\star g=\bar h\,g$ for real $h,g$, and its square is $h\star h=\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$. It is not associative there: on the subspace spanned by $e_t$ and one vector unit it fails the associative law, as in §*Associativity*. Its square vanishes on $\mathbb{B}_{H}$ only at $0$, a sum of squares of real coordinates vanishing only when every coordinate vanishes, and in this it agrees with the record of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* that the real quaternion subspace carries no zero divisor.
 
 **Proof.** On real coordinates the natural conjugation is the quaternionic conjugation $\bar h$, so $h\star g=\bar hg$; the square is the sum of the squares of the four real coordinates; and the failure of associativity is the witness of §*Associativity*.
 
@@ -345,7 +345,7 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ |
 | $[\tilde Q_1,\tilde Q_2,\tilde Q_4]$ | the associator, $(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural})\tilde Q_4$ |
 | $L_{\tilde Q_1}$ | the left multiplication $\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, with $L_{\tilde Q_1}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1}$ |
-| $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the quaternion subspace, on which $\star$ is $\bar hg$ |
+| $\mathbb{B}_{H}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the quaternion subspace, on which $\star$ is $\bar hg$ |
 | $\sum_\mu Q_\mu^2$ | the scalar coefficient of the square, $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$ |
 
 ## Further Reading

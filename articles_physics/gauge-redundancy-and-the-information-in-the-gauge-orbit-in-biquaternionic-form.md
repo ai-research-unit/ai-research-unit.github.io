@@ -30,7 +30,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta = \Delta + \partial^2/\partial R_t^2 ,
 $$
 
-the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
+the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -151,7 +151,7 @@ treating the $x_\mu$ as independent coordinates. Then $\partial/\partial R_\mu\,
 
 The count of physical degrees of freedom now follows from the rank of the pure-gauge map.
 
-- The connection has **four real components** per point: the material-sector condition $\tilde{A}\in\mathbb{M}_-$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
+- The connection has **four real components** per point: the material-sector condition $\tilde{A}\in\mathbb{B}_{\Phi}$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.
 - The gauge function is one real function, and its gradient removes one real direction from the four per mode, as the rank of the pure-gauge map established above.
 - Off shell the physical content is therefore $4 - 1 = 3$ real components per mode.
 - The field equation supplies one further constraint. The $\nu = 0$ component of $\sum_\mu\varepsilon_\mu\,\partial F_{\mu\nu}/\partial R_\mu = J_\nu$ — the Gauss law — contains no second time derivative, so it constrains the initial data rather than evolving it, and it removes one of the three components, leaving $4 - 1 - 1 = 2$ per mode: the two transverse polarizations.
@@ -193,7 +193,7 @@ Three consequences of the invariance spell out the redundancy.
 
 **The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under $*$-unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local $*$-unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
 
-**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}\in\mathbb{M}_+$ its action is
+**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ its action is
 
 $$
 \tilde{Ϛ} \longmapsto \lambda\,\tilde{Ϛ}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ} = \tilde{Ϛ},
@@ -213,7 +213,7 @@ $$
 \boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
 $$
 
-and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{M}_-$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
+and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
 
 **The holonomy is the orbit's global invariant.** The orbit of a connection is its gauge group; the holonomy is a functional of the connection that is constant on the orbit and is not a local function of the curvature. It is therefore exactly the part of the orbit's information that survives the local triviality. The framework's ordering of the object is clean:
 
@@ -245,9 +245,9 @@ The middle row is the subject of the companion article on confinement, and the b
 
 The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.
 
-**The orbit is a material-sector structure.** The connection lies in $\mathbb{M}_-$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{M}_-$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{M}_-$ is a shift by the identity direction.
+**The orbit is a material-sector structure.** The connection lies in $\mathbb{B}_{\Phi}$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{B}_{\Phi}$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{B}_{\Phi}$ is a shift by the identity direction.
 
-**The informational sector is blind to the orbit.** As established above, a central phase acts trivially on $\mathbb{M}_+$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational interpretation of *The Informational Sector: States, Observables and Probability*, the gauge orbit is not an unmeasured variable; it is a **non-variable**. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.
+**The informational sector is blind to the orbit.** As established above, a central phase acts trivially on $\mathbb{B}_{\Psi}$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational interpretation of *The Informational Sector: States, Observables and Probability*, the gauge orbit is not an unmeasured variable; it is a **non-variable**. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.
 
 **The one place the two sectors meet is the holonomy.** The Wilson loop is the trace of the holonomy — a material connection integrated along a curve and exponentiated into the informational realization of the group — and its gauge invariance is the invariance of the scalar part under the adjoint action. It is the single object in which the orbit's global structure is paired with an informational trace. The interpretation of that pairing is the open question the Wilson-loop article records; here it is enough to note that the pairing is where the redundancy stops being invisible and starts being a physical number.
 
@@ -297,7 +297,7 @@ $$
 S(\tilde{Ϛ}_{\tilde{A}_2}\|\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
 $$
 
-For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{M}_+$ by $\tilde{Ϛ}\mapsto|\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
+For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{B}_{\Psi}$ by $\tilde{Ϛ}\mapsto|\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
 
 The orbit's only non-empty content is global. A connection can be gauged to zero at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the gauge orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.
 
@@ -308,12 +308,12 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group $\mathrm{U}(1)$ |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group $\mathrm{U}(1)$ |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_k\,\vec e_k\partial/\partial R_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_k\,\vec e_k\partial/\partial R_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{M}_-$ | Connection, a material-sector one-form |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase |
 | $\kappa = ϙ/\hbar$ | Coupling |

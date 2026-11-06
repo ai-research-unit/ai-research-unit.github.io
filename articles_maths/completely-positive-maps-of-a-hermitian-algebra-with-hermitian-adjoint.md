@@ -99,7 +99,7 @@ $$
 \Phi(\tilde Q_2)=\tfrac12\bigl(\tilde Q_2+\sigma_3\tilde Q_2\sigma_3\bigr)=\operatorname{diag}(\tilde Q_2),
 $$
 
-the projection onto the diagonal. Its Choi matrix is the sum of two rank-one positive matrices and has rank two; the map is unital and trace preserving, completely positive, and not an automorphism. Its image is the diagonal subalgebra $\mathbb{C}e_t\oplus\mathbb{C}(i\vec e_z)$ in the chosen basis, of complex dimension two; the Hermitian part of that subalgebra is the real span of $e_t$ and $i\vec e_z$, of real dimension two, inside the four-dimensional Hermitian sector $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}$.
+the projection onto the diagonal. Its Choi matrix is the sum of two rank-one positive matrices and has rank two; the map is unital and trace preserving, completely positive, and not an automorphism. Its image is the diagonal subalgebra $\mathbb{C}e_t\oplus\mathbb{C}(i\vec e_z)$ in the chosen basis, of complex dimension two; the Hermitian part of that subalgebra is the real span of $e_t$ and $i\vec e_z$, of real dimension two, inside the four-dimensional Hermitian sector $\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}$.
 
 **The null sandwich.** Let $\tilde Q_1=e_t+i\vec e_z$; then $\mathsf{M}_2(\tilde Q_1)=\operatorname{diag}(2,0)$, $\tilde Q_1=\tilde Q_1^{*}$, and $\tilde Q_1^{2}=2\tilde Q_1$. The sandwich $\mathrm{Sd}_{\tilde Q_1}$ has Kraus rank one, but
 

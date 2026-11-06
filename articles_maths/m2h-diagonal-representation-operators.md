@@ -142,7 +142,7 @@ N\bigl(uxu^{\natural}\bigr)=N(u)\,N(x)\,N(u^{\natural})=N(u)^{2}N(x),
 $$
 so the operator is a **conformal** map of the quaternionic norm, with factor $N(u)^{2}$ in each block. This is the analogue of the modulus sandwich of the reduced biquaternion category, and it is strictly richer: there the sandwich was a scalar on each block, whereas here it is a full quaternionic conjugation followed by a scaling, so it rotates as well as scales.
 
-**The invariant cone.** On the Hermitian subspace $\mathbb{M}_{+}$ the Hermitian sandwich
+**The invariant cone.** On the Hermitian subspace $\mathbb{B}_{\Psi}$ the Hermitian sandwich
 $$
 \Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad \tilde X^{*}=\tilde X,
 $$
@@ -359,7 +359,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 | $\Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\natural}$ | the quaternionic sandwich, conformal | this article |
 | $N(u)=uu^{\natural}$ | the quaternion norm | *$M_{2}(\mathbb{H})$ Diagonal Representation* |
 | $\{\pm1,\pm j\}$ | the kernel of the sandwich | this article |
-| $\mathbb{M}_{+}$ | the Hermitian subspace, the Minkowski space of signature $(1,3)$ | *Split-Biquaternion Algebra* |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace, the Minkowski space of signature $(1,3)$ | *Split-Biquaternion Algebra* |
 
 ## Further Reading
 

@@ -6,8 +6,8 @@
 
 The starting position is stated at the outset, because the whole agenda depends on it and because it is easy to overstate.
 
-- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its $*$-unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
-- **The framework has a compact non-abelian gauge algebra inside the material sector.** The material sector decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and on the $\mathrm{SU}(2)$ factor the full non-abelian gauge construction — a connection transforming in the adjoint, a curvature containing the commutator term, the Bianchi identity, and a gauge-invariant Yang–Mills density — is built. This is established in *Non-Abelian Gauge Fields in Biquaternionic Form* and is recalled in the next section.
+- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its $*$-unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
+- **The framework has a compact non-abelian gauge algebra inside the material sector.** The material sector decomposes as a Lie algebra, $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and on the $\mathrm{SU}(2)$ factor the full non-abelian gauge construction — a connection transforming in the adjoint, a curvature containing the commutator term, the Bianchi identity, and a gauge-invariant Yang–Mills density — is built. This is established in *Non-Abelian Gauge Fields in Biquaternionic Form* and is recalled in the next section.
 - **The framework has not derived the Standard Model's gauge group, its chiral weak-isospin action, its hypercharge, or its scalar sector.** No source in the series derives a colour group or any three-valued internal structure. The $\mathrm{SU}(2)$ that is present acts vector-like on the field and is therefore not weak isospin. No source derives a hypercharge assignment; the word "hypercharge" does not occur in any of the sources this agenda builds on. The scalar and symmetry-breaking sector is not built.
 
 The discipline this forces on the article is the one the genre requires: **an agenda that quietly assumes its way to the Standard Model has fabricated its premise.** Each Standard Model structure is therefore carried as an **open item throughout**, never as a working assumption. Wherever a standard statement is written down — $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, the mixing angle, the Higgs doublet, a generation — it is flagged as standard input, not as a framework result.
@@ -28,10 +28,10 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 The read-list article *The Gauge Principle in Biquaternionic Form* derives the framework's abelian gauge structure from the centre of the algebra. Its results are established and are recalled here unchanged.
 
-The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
+The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
 
 $$
-\mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{C}_{\mathbb{B}} .
+\mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
 $$
 
 Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}_{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, forces a connection with the transformation law
@@ -59,13 +59,13 @@ $$
 \qquad T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad \mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}.
 $$
 
-The scalar part of $\mathbb{M}_-$ is the central line $\mathbb{R}(ie_t)$, so the material sector decomposes as a direct sum of Lie algebras,
+The scalar part of $\mathbb{B}_{\Phi}$ is the central line $\mathbb{R}(ie_t)$, so the material sector decomposes as a direct sum of Lie algebras,
 
 $$
-\boxed{\;\mathbb{M}_- \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2) \qquad \text{(direct sum of Lie algebras)}\;}
+\boxed{\;\mathbb{B}_{\Phi} \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2) \qquad \text{(direct sum of Lie algebras)}\;}
 $$
 
-which is $\mathrm{U}(1)\oplus\mathrm{SU}(2) = \mathrm{U}(2)$ of real dimension $4$. The gauge group generated by the compact factor is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
+which is $\mathrm{U}(1)\oplus\mathrm{SU}(2) = \mathrm{U}(2)$ of real dimension $4$. The gauge group generated by the compact factor is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{B}_{H} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
 
 $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
@@ -83,13 +83,13 @@ $$
 
 is **not** gauge invariant but transforms in the adjoint representation, $F_{2,\mu\nu} = \tilde U F_{\mu\nu} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}\bigr)$ is a gauge-invariant density, with the matrix trace on the $\mathrm{SU}(2)$ factor and not the informational trace formula. What this construction supplies is the **general machinery of a non-abelian gauge theory**; what it does not supply is a chiral action of the factor on matter, because left multiplication acts vector-like on the field (the chiral structure is treated below).
 
-One gap in the construction is carried here unchanged, because it bears on how a Standard Model factor could ever be identified. The reality class of the connection is **not** gauge invariant in a single Hermitian-conjugation eigenspace: the $i c r'_t$ derivative makes the Maurer–Cartan form $(\partial/\partial R_\mu \tilde U)\tilde U^{-1}$ anti-Hermitian in the spatial directions and Hermitian in the time direction, so a condition placing all four components $\mathcal{A}_\mu$ in one eigenspace cannot survive a gauge transformation. A consistent **mixed** assignment exists — $\mathcal{A}_0$ anti-Hermitian (in $\mathrm{SU}(2)\subset\mathbb{M}_-$), $\mathcal{A}_k$ Hermitian (in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$) — but whether it is the intended physical one is open. The obstruction is a property of the $i c r'_t$ derivative, not of the gauge algebra.
+One gap in the construction is carried here unchanged, because it bears on how a Standard Model factor could ever be identified. The reality class of the connection is **not** gauge invariant in a single Hermitian-conjugation eigenspace: the $i c r'_t$ derivative makes the Maurer–Cartan form $(\partial/\partial R_\mu \tilde U)\tilde U^{-1}$ anti-Hermitian in the spatial directions and Hermitian in the time direction, so a condition placing all four components $\mathcal{A}_\mu$ in one eigenspace cannot survive a gauge transformation. A consistent **mixed** assignment exists — $\mathcal{A}_0$ anti-Hermitian (in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$), $\mathcal{A}_k$ Hermitian (in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) — but whether it is the intended physical one is open. The obstruction is a property of the $i c r'_t$ derivative, not of the gauge algebra.
 
 ### The ceiling on the gauge algebra
 
 The available gauge algebra is determined by the algebra, not chosen, and it is bounded. The reasoning is inherited from the read list and from *Modules over the Biquaternion Algebra*.
 
-- **The compact subalgebra has dimension at most four.** The compact algebra present in $\mathbb{M}_-$ is $\mathrm{U}(2)$, and $\mathbb{B}\cong M_2(\mathbb{C})$ has the Cartan decomposition
+- **The compact subalgebra has dimension at most four.** The compact algebra present in $\mathbb{B}_{\Phi}$ is $\mathrm{U}(2)$, and $\mathbb{B}\cong M_2(\mathbb{C})$ has the Cartan decomposition
 $$\boxed{\;\mathrm{GL}(2,\mathbb{C}) = \mathrm{U}(2)\oplus i\,\mathrm{U}(2), \qquad \dim_\mathbb{R} = 4+4 = 8\;},$$
 with $[\mathrm{U}(2),\mathrm{U}(2)]\subseteq\mathrm{U}(2)$ and $[\mathrm{U}(2),i\mathrm{U}(2)]\subseteq i\mathrm{U}(2)$. Because every compact subalgebra of a real Lie algebra lies in a maximal compact subalgebra, and the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is a conjugate of $\mathrm{U}(2)$, **any compact gauge algebra that is a subalgebra of $\mathbb{B}$ under the commutator, on the present construction, has real dimension at most $4$.**
 - **Every module has even complex dimension.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and Artinian, so every module is a direct sum of copies of its unique simple module, which is $\mathbb{C}^2$. Consequently every $\mathbb{B}$-module has complex dimension divisible by two, and a three-dimensional internal space for a quark is not a $\mathbb{B}$-module.
@@ -123,7 +123,7 @@ where $\tilde{Ξ}_{\mathrm{sp}}^*i\,\cdot\,\vec e_x$ is the framework's adjoint 
 **The chiral abelian symmetry.** On the field, a chiral abelian gauge symmetry with independent charges is consistent. The charge is one right action, by the element
 
 $$
-b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{M}_+,
+b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{B}_{\Psi},
 $$
 
 so that $\tilde{Ξ}_{\mathrm{sp},L}b=ϙ_L\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}b=ϙ_R\tilde{Ξ}_{\mathrm{sp},R}$, and the covariant derivative and its curvature are the maps
@@ -160,7 +160,7 @@ The framework's abelian factor supplies neither. Its action is a scalar multipli
 
 ### $SU(2)$: the algebra is present, weak isospin is not
 
-**Source.** *Non-Abelian Gauge Fields in Biquaternionic Form*, on the decomposition $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. **Status.** The compact algebra, the connection, and the full non-abelian gauge construction are established; the identification with $SU(2)_L$ is not, and is blocked on the chirality problem.
+**Source.** *Non-Abelian Gauge Fields in Biquaternionic Form*, on the decomposition $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. **Status.** The compact algebra, the connection, and the full non-abelian gauge construction are established; the identification with $SU(2)_L$ is not, and is blocked on the chirality problem.
 
 The $\mathrm{SU}(2)$ factor is genuinely there: $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ closes under the commutator with $[e_a,e_b] = 2\varepsilon_{abc}e_c$, the connection transforms in the adjoint, and the Yang–Mills density is gauge invariant. So the framework supplies a compact simple gauge factor of exactly the dimension and rank that $SU(2)$ has, with the general machinery attached. It is tempting to conclude that $SU(2)$ — and therefore, with the abelian factor, the electroweak gauge group — has been derived. **It has not, and the reason is the trap the subject of this article exists to mark.**
 
@@ -186,7 +186,7 @@ There is a second reason to treat the exceptional rungs differently from the oth
 
 **Trap (b).** It is tempting to assemble the two available factors, add colour, and write the Standard Model's gauge group. That would be naming the target and calling it the result.
 
-What the framework's compact algebra actually is, as a Lie algebra, is $\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2)$ — locally the same direct sum $\mathrm{SU}(2)\oplus\mathrm{U}(1)$ that the electroweak sector has. The resemblance is real and it is where it stops. The framework's $\mathrm{U}(1)$ is the **centre** of the full algebra and acts as a scalar on the algebra's module, giving equal charges to all components; the Standard Model's $\mathrm{U}(1)_Y$ is chiral, with independent left and right eigenvalues and a definite assignment pattern. The framework's $\mathrm{SU}(2)$ acts vector-like, not as $SU(2)_L$. No **mixing angle** exists, because a mixing angle is a relation between two independent couplings and the framework supplies no relation; even the relative normalization of the two factors is unconstrained. No scalar, and therefore no symmetry breaking, is present. And the reality-class gap means that even the connection's placement in $\mathbb{M}_-\oplus\mathbb{M}_+$ is not settled.
+What the framework's compact algebra actually is, as a Lie algebra, is $\mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2)$ — locally the same direct sum $\mathrm{SU}(2)\oplus\mathrm{U}(1)$ that the electroweak sector has. The resemblance is real and it is where it stops. The framework's $\mathrm{U}(1)$ is the **centre** of the full algebra and acts as a scalar on the algebra's module, giving equal charges to all components; the Standard Model's $\mathrm{U}(1)_Y$ is chiral, with independent left and right eigenvalues and a definite assignment pattern. The framework's $\mathrm{SU}(2)$ acts vector-like, not as $SU(2)_L$. No **mixing angle** exists, because a mixing angle is a relation between two independent couplings and the framework supplies no relation; even the relative normalization of the two factors is unconstrained. No scalar, and therefore no symmetry breaking, is present. And the reality-class gap means that even the connection's placement in $\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ is not settled.
 
 So the honest statement of the electroweak gap, built from the two read-list sources, is: **the framework reaches the Lie algebra of the electroweak pair as a direct sum of a vector-like abelian factor and a vector-like $\mathrm{SU}(2)$, and it does not reach the pair as a theory.** The factors are present; the chiral action, the hypercharge assignments, the relative coupling, and the scalar are all absent. This account is built from the gauge-principle and non-abelian articles alone, and no separate electroweak agenda is relied upon; the gap stated here rests only on those two sources.
 
@@ -198,7 +198,7 @@ The Standard Model's matter is chiral: the left-handed quarks and leptons sit in
 
 Established and inherited: the field as one element with its two values; the mixed, chirality-odd mass bilinear $B$; the chiral abelian charge as one right multiplication, by $b$, with the covariant derivative it gives; and the selection rule $ϙ_L = ϙ_R$ for a gauge-invariant bare mass. These are exact and are the framework's form of the statement that a chiral fermion is massless in the unbroken phase.
 
-Not established: a **chiral gauge group**. The framework's canonical gauge group is the scalar centre, which assigns one charge to every element; the abelian chiral charge is one right multiplication, by $b\in\mathbb{M}_+$, and a charge of that form coincides with a left multiplication by an element of $\mathbb{B}$ — the form the framework's connection takes — only when $b$ is central, that is when $ϙ_L=ϙ_R$; and a non-abelian chiral action requires non-commuting generators that are not supplied. The chiral article's summary is that without those conditions **the framework has no chiral gauge group at all**. The neutrino article reaches the same place from the weak-interaction side and calls the chiral assignment an empirical input. The item is **no route yet**.
+Not established: a **chiral gauge group**. The framework's canonical gauge group is the scalar centre, which assigns one charge to every element; the abelian chiral charge is one right multiplication, by $b\in\mathbb{B}_{\Psi}$, and a charge of that form coincides with a left multiplication by an element of $\mathbb{B}$ — the form the framework's connection takes — only when $b$ is central, that is when $ϙ_L=ϙ_R$; and a non-abelian chiral action requires non-commuting generators that are not supplied. The chiral article's summary is that without those conditions **the framework has no chiral gauge group at all**. The neutrino article reaches the same place from the weak-interaction side and calls the chiral assignment an empirical input. The item is **no route yet**.
 
 ### Hypercharge is underived
 
@@ -230,8 +230,8 @@ The table collects the agenda's items and sorts each into the three-way classifi
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
-| Abelian gauge principle: centre $\mathbb{C}_{\mathbb{B}}$, $*$-unitary $\mathrm{U}(1)$, connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
-| Compact algebra in the material sector: $[e_a,e_b]=2\varepsilon_{abc}e_c$, $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Established (source 5) | — |
+| Abelian gauge principle: centre $\mathbb{B}_{C}$, $*$-unitary $\mathrm{U}(1)$, connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
+| Compact algebra in the material sector: $[e_a,e_b]=2\varepsilon_{abc}e_c$, $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Established (source 5) | — |
 | Non-abelian machinery: adjoint connection law, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density | Established (source 5) | — |
 | Ceiling: compact subalgebra of $\mathbb{B}$ has dimension $\le 4$; every $\mathbb{B}$-module has complex dimension $2k$ | Established | — |
 | Chiral structure on the field: the volume cell of the frame, the two values of the subscript, the chirality-odd bilinear $B$, the chiral abelian charge $b$, selection rule $ϙ_L=ϙ_R$ | Established | — |
@@ -340,7 +340,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 This article is a research agenda for the Standard Model inside the biquaternion framework. Its finding is that the framework reaches the general machinery of an abelian and a non-abelian gauge theory, on the largest compact algebra the algebra admits, together with an exact chiral structure on its field — and that it stops before the Standard Model, whose gauge group, chiral action, hypercharge, and scalar sector it does not derive.
 
-What is established is recalled: the abelian gauge principle on the centre, with $\mathrm{U}(1)$ canonically attached and the connection law $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$; the compact algebra inside the material sector, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, with the full non-abelian construction — adjoint connection, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density; the ceiling, that a compact subalgebra of $\mathbb{B}$ on the present construction has real dimension at most $4$ and every $\mathbb{B}$-module has even complex dimension; and the chiral structure on the field, with the two values of the subscript, the chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$.
+What is established is recalled: the abelian gauge principle on the centre, with $\mathrm{U}(1)$ canonically attached and the connection law $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$; the compact algebra inside the material sector, $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, with the full non-abelian construction — adjoint connection, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density; the ceiling, that a compact subalgebra of $\mathbb{B}$ on the present construction has real dimension at most $4$ and every $\mathbb{B}$-module has even complex dimension; and the chiral structure on the field, with the two values of the subscript, the chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$.
 
 What is not established is everything Standard-Model-specific.
 
@@ -362,16 +362,16 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
-| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Abelian gauge transformation |
 | $D = \tilde{\nabla} + \tfrac{iϙ}{\hbar}\tilde{A}$ | Abelian covariant derivative |
-| $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{M}_-$ |
-| $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Material-sector Lie-algebra decomposition (dimension $4$) |
+| $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Material-sector Lie-algebra decomposition (dimension $4$) |
 | $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Non-abelian connection and coupling |
 | $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
 | $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ | Adjoint transformation law and curvature identity |
@@ -395,7 +395,7 @@ The article commits throughout to the agenda's central discipline: no section as
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge principle, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this agenda follows.
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the gauge-invariant density, and the open reality-class gap.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the gauge-invariant density, and the open reality-class gap.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension the parent builds.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the field's chirality structure, the vector-like centre, the mass selection rule, the linear mass and the real structure, and the statement that the framework has no chiral gauge group.
 

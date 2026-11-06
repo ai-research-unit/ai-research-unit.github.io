@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats **dynamics**: the time evolution of a spin state under a time-independent Hamiltonian.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -86,7 +86,7 @@ $$
 
 ### Step 1: The state
 
-In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
+In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form
 
 $$
 \tilde\Pi(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
@@ -100,7 +100,7 @@ $$
 
 ### Step 2: The Hamiltonian
 
-The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{M}_+$
+The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$
 
 $$
 \tilde R_\psi = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i \vec e_z,
@@ -165,7 +165,7 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 ## What the Biquaternion Solution Illustrates
 
-**1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.** The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde R_\psi = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
+**1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.** The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\psi = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a **Hermitian element of the same subspace** as the observables and the states.
 
 **2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
@@ -185,9 +185,9 @@ $$
 \langle\tilde{S}_x\rangle(r'_t) = \frac{\langle\tilde{Ϛ}(r'_t),\tilde{S}_x\rangle_{*}}{\langle\tilde{Ϛ}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(r'_t)\,\tilde{S}_x\right),
 $$
 
-whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{M}_+$.
+whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.
 
-**6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-iHr'_t/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
+**6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-iHr'_t/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
 
 ## Comparison with Exercise: Measuring Spin Along an Arbitrary Direction
 
@@ -198,7 +198,7 @@ whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(r'_t)\tilde{S}_x)$, the sam
 | Rule used | Trace reading at normalisation (Born rule) | Trace formula (expectation value) |
 | Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L r'_t)$ |
 
-These two exercises illustrate the two fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction) and **evolution** (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.
+These two exercises illustrate the two fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction) and **evolution** (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.
 
 ## Summary
 
@@ -208,14 +208,14 @@ In the **standard formulation**, the solution proceeds through ket vectors, Paul
 
 In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}(r'_t)$, and the trace formula, giving the same result.
 
-The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.
+The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace (states, observables, Hamiltonians) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables, Hamiltonians) |
 | $\mathbb{H}_\mathbb{B}$ | Quaternion subspace (home of the real rotation rotors) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |

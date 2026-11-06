@@ -87,8 +87,8 @@ The four distinguished subspaces appear as coefficient conditions:
 |---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $Q_x = Q_y = Q_z = 0$ | $q_x,q_y,q_z,q'_x,q'_y,q'_z = 0$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $Q_\mu \in \mathbb{R}$ for all $\mu$ | $q'_\mu = 0$ for all $\mu$ |
-| $\mathbb{M}_+$ | $Q_t \in \mathbb{R}$, $Q_k \in j\mathbb{R}$ | $q'_t = 0$, $q_k = 0$ for $k = 1,2,3$ |
-| $\mathbb{M}_-$ | $Q_t \in j\mathbb{R}$, $Q_k \in \mathbb{R}$ | $q_t = 0$, $q'_k = 0$ for $k = 1,2,3$ |
+| $\mathbb{B}_{\Psi}$ | $Q_t \in \mathbb{R}$, $Q_k \in j\mathbb{R}$ | $q'_t = 0$, $q_k = 0$ for $k = 1,2,3$ |
+| $\mathbb{B}_{\Phi}$ | $Q_t \in j\mathbb{R}$, $Q_k \in \mathbb{R}$ | $q_t = 0$, $q'_k = 0$ for $k = 1,2,3$ |
 
 The centre is the set of elements whose vector components vanish; the quaternion subspace is the real part of the coefficient space; the Hermitian subspace has real scalar component and split-imaginary vector components; the anti-Hermitian subspace has split-imaginary scalar component and real vector components. The four coordinate blocks of *Split-Biquaternion Relations Between Subspaces* are the coordinate sets selected by these conditions.
 
@@ -133,7 +133,7 @@ The criterion shows directly that the **zero divisors** are the elements whose s
 
 ## Summary
 
-The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}_{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.
+The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{B}_{\Psi}$, and the reverse for $\mathbb{B}_{\Phi}$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}_{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,
 | $Q_{\mu\pm} = q_\mu \pm q'_\mu$ | Idempotent components of a coefficient |
 | $P_\mu = (Q_1Q_2)_\mu$ | Components of the product, quaternion structure constants |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations on the column |
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | Distinguished subspaces as coefficient conditions |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Distinguished subspaces as coefficient conditions |
 | $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, anisotropic |
 | $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(4,4)$ |
 | $Z_\pm$ | The two four-dimensional zero divisor subspaces |

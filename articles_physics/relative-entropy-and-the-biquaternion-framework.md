@@ -10,7 +10,7 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 
 The answer has three parts, and they should be separated at the outset.
 
-1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{M}_+$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
+1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
 
 2. **The quantity is exactly computable.** Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.
 
@@ -57,9 +57,9 @@ The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\
 
 ## The States of the Biquaternion Algebra
 
-### Density Matrices in $\mathbb{M}_+$
+### Density Matrices in $\mathbb{B}_{\Psi}$
 
-By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
+By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ positive and of trace one. Writing
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
@@ -97,7 +97,7 @@ $$
 +i\,\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 \qquad |\vec r|<1 .
 $$
-The formula was checked by exponentiating it and recovering $\tilde{Ϛ}$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $\exp(b_0)\cosh|\vec b|=\tfrac12$ and $\exp(b_0)\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde{Ϛ}\in\mathbb{M}_+$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
+The formula was checked by exponentiating it and recovering $\tilde{Ϛ}$ coefficient by coefficient: with $b_0=\tfrac12\log\frac{1-r^2}{4}$ and $|\vec b|=\mathrm{artanh}(r)$ one has $\exp(b_0)\cosh|\vec b|=\tfrac12$ and $\exp(b_0)\sinh|\vec b|=r/2$, which is the state. The logarithm is **real**: $\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$, as the modular-theory companion requires, since $b_0$ is real and the vector part is imaginary. Its scalar part is negative and tends to $-\infty$ as the state approaches the pure boundary, while its vector part has magnitude $\mathrm{artanh}(|\vec r|)$, which diverges on the boundary in every direction.
 
 The domain is the open Bloch ball. On the pure boundary the state is a **zero divisor**, $\langle\tilde{Ϛ}\rangle_{\natural}=0$, and $\log\tilde{Ϛ}$ does not exist as an element of $\mathbb{B}$; the formal expression above diverges. This is not a defect of the framework but its zero-divisor structure appearing in the logarithm, and it is the reason the relative entropy is handled in two steps below: first as a finite expression in the interior, then by its continuous extension to the boundary.
 
@@ -195,7 +195,7 @@ $$
 =\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_{\mathrm{alt},\xi}
 =\tilde Q_2\,\tilde{K}_{\mathrm{mod},\xi_{\mathrm{alt}}}-\tilde{K}_{\mathrm{mod},\omega}\,\tilde Q_2,
 \qquad
-\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}_{\mathrm{mod},\xi_{\mathrm{alt}}}=-\log\tilde{Ϛ}_{\mathrm{alt},\xi}\in\mathbb{M}_+ .
+\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{B}_{\Psi},\qquad \tilde{K}_{\mathrm{mod},\xi_{\mathrm{alt}}}=-\log\tilde{Ϛ}_{\mathrm{alt},\xi}\in\mathbb{B}_{\Psi} .
 $$
 Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$ then returns
 $$
@@ -233,7 +233,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_2$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_1$ only when $\tilde{Ϛ}_1=\tilde{Ϛ}_2$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
 
-**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{ir'_t}\tilde{Ϛ}_{\xi_{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
+**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{ir'_t}\tilde{Ϛ}_{\xi_{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{B}_{\Psi}$-valued generator in the framework, as the modular flow does, is not worked out here.
 
 **4. The relation to the first law.** The expansion of the relative entropy near coincidence, which is the quantum Fisher information, is the quadratic form whose vanishing controls the first law of entanglement. Whether the framework's closed form makes that law exact, rather than asymptotic, is the subject of the companion article on the modular Hamiltonian.
 
@@ -243,7 +243,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic interpretation of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.
 
-The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
+The states of the biquaternion algebra are the elements of $\mathbb{B}_{\Psi}$ of the form $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
 S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
@@ -260,7 +260,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
@@ -269,7 +269,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec r\cdot\vec s/(|\vec r||\vec s|)$ | Bloch-vector angle |
 | $\Delta_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
-| $\log\tilde{Ϛ}\in\mathbb{M}_+$ | Biquaternion logarithm of a faithful state |
+| $\log\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ | Biquaternion logarithm of a faithful state |
 | $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_t$ | Trace state (maximally mixed) |
 

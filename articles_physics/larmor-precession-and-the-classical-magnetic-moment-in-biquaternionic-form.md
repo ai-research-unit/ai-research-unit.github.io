@@ -8,7 +8,7 @@ This article treats the magnetic moment and its precession as **classical** and 
 
 The biquaternion algebra contributes three things to the classical subject, and they are the reason the article is in this framework rather than in three-vector notation. First, the moment and the field are both pure real quaternions, and a **single quaternion product** yields the two bilinears of the magnetic coupling at once: its scalar part is the energy $-\vec\mu\cdot\vec B$, and its vector part is the torque $\vec\mu\times\vec B$. Second, the precession equation acquires the form of a **commutator**, $d\vec\mu/dr'_t = \tfrac{1}{2}[\vec\mu,\vec\omega_G]$, which is the classical Poisson-bracket evolution realized inside the algebra. Third, the solution is a **rotor conjugation**, $\vec\mu(r'_t) = \tilde u(r'_t)\,\vec\mu(0)\,\tilde u(r'_t)^{*}$, with a unit real quaternion whose half-angle is the same half-angle that appears throughout the series. The third point is what ties this article to the two that follow it: the rotor is the same object in the classical and in the spin-$\tfrac{1}{2}$ description, which is why the classical moment and the intrinsic moment obey the same precession law.
 
-The conventions are those of the foundational articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector is the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotation rotors. The magnetic induction is $\vec B = \mu\vec H$, and the field strength is written in the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the article *The Field-Strength Biquaternion and Its Invariants*.
+The conventions are those of the foundational articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ and the informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}$. The real-quaternion subspace $\mathbb{B}_{H}$ is the fixed space of complex conjugation, the home of the rotation rotors. The magnetic induction is $\vec B = \mu\vec H$, and the field strength is written in the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the article *The Field-Strength Biquaternion and Its Invariants*.
 
 ## The Magnetic Moment of a Current Distribution
 
@@ -39,9 +39,9 @@ Both are the standard formulae of magnetostatics, and both will be used below. T
 The axial vectors of the material sector are represented in the biquaternion algebra by the **pure real quaternions**,
 
 $$
-\vec\mu = \mu_1 \vec e_x + \mu_2 \vec e_y + \mu_3 \vec e_z \in \mathbb{H}_{\mathbb{B}},
+\vec\mu = \mu_1 \vec e_x + \mu_2 \vec e_y + \mu_3 \vec e_z \in \mathbb{B}_{H},
 \qquad
-\vec B = B_x \vec e_x + B_y \vec e_y + B_z \vec e_z \in \mathbb{H}_{\mathbb{B}} .
+\vec B = B_x \vec e_x + B_y \vec e_y + B_z \vec e_z \in \mathbb{B}_{H} .
 $$
 
 This is the same slot that carries the three real spatial directions $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ of the material coordinate $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The moment and the induction are therefore elements of the *same* real subspace, and their bilinears can be formed with the ordinary quaternion product.
@@ -86,7 +86,7 @@ The mechanical angular momentum is $\vec L = I\,\vec\omega$. The two tensors are
 A body may also carry an **intrinsic** magnetic moment, one that is not the moment of any rigid motion of its charge. Such a moment is attributed to the body rather than computed from a current distribution, and it is the intrinsic case that the later articles of this subcategory treat. Its biquaternion representative is the vector slot with the central factor,
 
 $$
-i\,\vec\mu = \mu_k\,i \vec e_k = \mu_1\,i \vec e_x + \mu_2\,i \vec e_y + \mu_3\,i \vec e_z \in \mathbb{M}_+ ,
+i\,\vec\mu = \mu_k\,i \vec e_k = \mu_1\,i \vec e_x + \mu_2\,i \vec e_y + \mu_3\,i \vec e_z \in \mathbb{B}_{\Psi} ,
 $$
 
 the imaginary pure quaternion being the informational-sector twin of the real pure quaternion $\vec\mu = \sum_k \mu_k\vec e_k$. The two descriptions are exchanged by multiplication by $i$, exactly as the two sectors are; both describe the same physical moment, and the choice between them is a choice of which sector's representative is being written. For a moment tied to an intrinsic angular momentum $\vec S$, the coefficient is the gyromagnetic ratio,
@@ -170,7 +170,7 @@ $$
 so that, defining the **Larmor generator**
 
 $$
-\vec\omega_G = \gamma\,B_x\vec e_x + \gamma\,B_y\vec e_y + \gamma\,B_z\vec e_z = \gamma\,\vec B \in \mathbb{H}_{\mathbb{B}},
+\vec\omega_G = \gamma\,B_x\vec e_x + \gamma\,B_y\vec e_y + \gamma\,B_z\vec e_z = \gamma\,\vec B \in \mathbb{B}_{H},
 $$
 
 the Larmor equation reads
@@ -224,7 +224,7 @@ $$
 \tilde u\,\tilde u^{*} = e_t .
 $$
 
-The conjugation rotates $\vec v$ through the angle $\theta$ about $\vec u$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $\langle\tilde u\rangle_{\natural} = \tilde u\tilde u^{\natural} = e_t$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde u(\theta + 2\pi,\vec u) = -\tilde u(\theta,\vec u)$, and the two rotors $\pm\tilde u$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_t\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.
+The conjugation rotates $\vec v$ through the angle $\theta$ about $\vec u$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $\langle\tilde u\rangle_{\natural} = \tilde u\tilde u^{\natural} = e_t$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde u(\theta + 2\pi,\vec u) = -\tilde u(\theta,\vec u)$, and the two rotors $\pm\tilde u$ produce the same rotation. The rotation group is therefore $\mathbb{B}_{H}^1/\{\pm e_t\}$, with $\mathbb{B}_{H}^1$ the group of unit real quaternions, which is $SU(2)$.
 
 ### The Precession as a Rotor
 
@@ -325,13 +325,13 @@ For a rigid rotor with proportional charge and mass densities, the moment and th
 
 ## Relation to the Quantum Treatment
 
-The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde R_\psi = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}(0)\tilde{U}(r'_t)^{*}$ with $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_x\rangle=\langle\tilde{Ϛ},\tilde S_x\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{S}_x^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{S}_x^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde S_x\ge0$. The evolved Bloch vector is $\vec r(r'_t) = \cos(\gamma B r'_t)\vec e_x - \sin(\gamma B r'_t)\vec e_y$, which is the precession derived here, with the same frequency and the same sense.
+The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{B}_{\Psi}$, the Hamiltonian is the Hermitian element $\tilde R_\psi = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}(0)\tilde{U}(r'_t)^{*}$ with $\tilde{U}(r'_t) = \exp(-i Hr'_t/\hbar)$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_x\rangle=\langle\tilde{Ϛ},\tilde S_x\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{S}_x^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{S}_x^{*})$. The star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\tilde S_x\ge0$. The evolved Bloch vector is $\vec r(r'_t) = \cos(\gamma B r'_t)\vec e_x - \sin(\gamma B r'_t)\vec e_y$, which is the precession derived here, with the same frequency and the same sense.
 
-The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{H}_{\mathbb{B}}$ as a real pure quaternion and is rotated by $\tilde u_L(r'_t) = \exp(-\tfrac{1}{2}\gamma B r'_t\,\vec u_{B,k} \vec e_k)$; the quantum state lives in $\mathbb{M}_+$ and is rotated by $\tilde{U}(r'_t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
+The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{B}_{H}$ as a real pure quaternion and is rotated by $\tilde u_L(r'_t) = \exp(-\tfrac{1}{2}\gamma B r'_t\,\vec u_{B,k} \vec e_k)$; the quantum state lives in $\mathbb{B}_{\Psi}$ and is rotated by $\tilde{U}(r'_t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
 
 ## Summary
 
-The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \sum_k \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = \sum_k B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,
+The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \sum_k \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{B}_{H}$, the same slot that carries the magnetic induction $\vec B = \sum_k B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,
 
 $$
 \vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B,
@@ -372,8 +372,8 @@ The gyromagnetic ratio is $\gamma = g\,ϙ/2m$, with $g = 1$ for a convective mom
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\vec\mu = \sum_k \mu_k \vec e_k$ | Classical magnetic moment (pure real quaternion) |
 | $i\,\vec\mu = \mu_k\,i \vec e_k$ | Intrinsic moment's informational-sector representative |
 | $\vec B = \sum_k B_k \vec e_k = \mu\vec H$ | Magnetic induction (pure real quaternion) |

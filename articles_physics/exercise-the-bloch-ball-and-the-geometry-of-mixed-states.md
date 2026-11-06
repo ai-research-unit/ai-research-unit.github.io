@@ -4,7 +4,7 @@
 
 This article is a **worked exercise** on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, and $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$ and the centre is $\mathbb{B}_{C}$. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 **Assumed results.** From the parent article we take, without rederivation, the following. A state is an element
 
@@ -178,7 +178,7 @@ so the purity is $\tfrac12(1 + \tfrac58) = \tfrac{13}{16}$ and the linear entrop
 **Solution.** (a) The difference of two states is
 
 $$
-\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{H}_{\mathbb{B}} \text{ a pure real quaternion.}
+\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{B}_{H} \text{ a pure real quaternion.}
 $$
 
 For a pure real quaternion $\vec q = \vec r - \vec s$ one has $\vec q^2 = -|\vec q|^2 e_t$, hence
@@ -195,7 +195,7 @@ $$
 |\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \sqrt{(\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2} = \tfrac12|\vec r-\vec s|\,e_t,
 $$
 
-the positive square root in $\mathbb{M}_+$. Hence
+the positive square root in $\mathbb{B}_{\Psi}$. Hence
 
 $$
 \boxed{\;D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|
@@ -344,10 +344,10 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre of $\mathbb{B}$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{C}$ | Centre of $\mathbb{B}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent, $|\vec u| = 1$ |
 | $\vec r\in B^3$, $|\vec r|\leq 1$ | Bloch ball |

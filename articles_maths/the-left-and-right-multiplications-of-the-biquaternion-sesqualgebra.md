@@ -15,7 +15,7 @@ The consequence is an asymmetry between the two families. The left multiplicatio
 
 The subject is the operator theory of the biquaternion sesqualgebra, read from the general article *The Left and Right Multiplication Operators of a Sesqualgebra*, whose parity theorem, regular maps and obstruction to a linear representation are quoted. The ternary operator forms are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*; the two-sided operator produced by the left compositions is *The Sesquilinear Sandwich on the Biquaternion*; and the comparison with the bilinear readings is *The Four General Products and Their Relations over the Biquaternion Algebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde Q\tilde Q_2$ makes $\mathbb{M}_+$ a Jordan algebra, by *Symmetric and Antisymmetric Decomposition of the Four General Products*.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$, and the two halves of the involution are the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde Q\tilde Q_2$ makes $\mathbb{B}_{\Psi}$ a Jordan algebra, by *Symmetric and Antisymmetric Decomposition of the Four General Products*.
 
 ## The Two Operators
 
@@ -185,15 +185,15 @@ The two bilinear multiplications $\tilde Q\tilde Q_2$ and $\tilde Q^{\natural}\t
 
 ## The Action on the Two Halves
 
-**Proposition.** For the Hermitian subspace $\mathbb{M}_+$ of *Hermitian and Skew-Hermitian Elements*, every left multiplication restricts to the ordinary left multiplication on the Hermitian half,
+**Proposition.** For the Hermitian subspace $\mathbb{B}_{\Psi}$ of *Hermitian and Skew-Hermitian Elements*, every left multiplication restricts to the ordinary left multiplication on the Hermitian half,
 
 $$
-\tilde Q_1\in\mathbb{M}_+ \implies L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1 , \qquad \tilde Q_1\in\mathbb{M}_+ \implies R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*} ,
+\tilde Q_1\in\mathbb{B}_{\Psi} \implies L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1 , \qquad \tilde Q_1\in\mathbb{B}_{\Psi} \implies R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*} ,
 $$
 
-whatever the parity of the parameter $\tilde Q_5$; and $L_{\tilde Q_5}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde Q_5$ is a real scalar, so that the only left multiplications preserving the Hermitian half are the real scalar multiples of the identity.
+whatever the parity of the parameter $\tilde Q_5$; and $L_{\tilde Q_5}$ carries $\mathbb{B}_{\Psi}$ into $\mathbb{B}_{\Psi}$ exactly when $\tilde Q_5$ is a real scalar, so that the only left multiplications preserving the Hermitian half are the real scalar multiples of the identity.
 
-**Proof.** For $\tilde Q_1\in\mathbb{M}_+$ one has $\tilde Q_1^{*}=\tilde Q_1$, so $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}=\tilde Q_5\tilde Q_1$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$, with no sign entering from the parity of $\tilde Q_5$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde Q_5}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde Q_5\tilde Q_1$ is Hermitian for every Hermitian $\tilde Q_1$, that is when $\tilde Q_5\tilde Q_1=\tilde Q_1\tilde Q_5^{*}$ for every Hermitian $\tilde Q_1$; taking $\tilde Q_1=e_t$ gives $\tilde Q_5=\tilde Q_5^{*}$, so $\tilde Q_5$ is Hermitian, and the condition is then that $\tilde Q_5$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde Q_5$ is central and Hermitian, that is a real scalar.
+**Proof.** For $\tilde Q_1\in\mathbb{B}_{\Psi}$ one has $\tilde Q_1^{*}=\tilde Q_1$, so $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}=\tilde Q_5\tilde Q_1$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$, with no sign entering from the parity of $\tilde Q_5$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde Q_5}$ carries $\mathbb{B}_{\Psi}$ into $\mathbb{B}_{\Psi}$ exactly when $\tilde Q_5\tilde Q_1$ is Hermitian for every Hermitian $\tilde Q_1$, that is when $\tilde Q_5\tilde Q_1=\tilde Q_1\tilde Q_5^{*}$ for every Hermitian $\tilde Q_1$; taking $\tilde Q_1=e_t$ gives $\tilde Q_5=\tilde Q_5^{*}$, so $\tilde Q_5$ is Hermitian, and the condition is then that $\tilde Q_5$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde Q_5$ is central and Hermitian, that is a real scalar.
 
 **Remark.** On the Hermitian half the left multiplication coincides with the ordinary multiplication, and the derived product and the algebra product agree there; but the Hermitian half is not closed under the ordinary product — it is a Jordan algebra, by *Symmetric and Antisymmetric Decomposition of the Four General Products* — so the coincidence is a coincidence of the two products on the half and not the statement that the half is a subalgebra. The half is carried into itself only by the real scalars, and off the half the difference between the two products is the involution carried by the variable, which is the obstruction of §*The Left Family Does Not Close*. The right multiplication has the same reading with the parameter rather than the variable restricted.
 
@@ -220,7 +220,7 @@ The left family does not close: $L_{\tilde Q_5}L_{\tilde Q_2}=L_{\tilde Q_5}R_{\
 | $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}$ | the composite of two right multiplications |
 | $L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2}$, $R_{\tilde Q_5}L_{\tilde Q_2}=\mathcal{T}_{\tilde Q_2,\tilde Q_5}$ | the mixed composites |
 | $\lambda,\rho$ | the left and the right regular maps |
-| $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the Hermitian and the anti-Hermitian halves |
 
 ## Further Reading
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries a distinguished two-dimensional real subspace that commutes with everything: the **centre** $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, the fixed-point set of quaternion conjugation. It is the algebra's rotationally invariant subspace, and it is the only place a field with a single Lorentz-scalar component can live. The companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* established that result representation-theoretically: the state module is the two-dimensional defining module of the algebra and carries spin $\tfrac12$, so a trivial-representation field has no module to occupy and must be valued in the centre instead.
+The biquaternion algebra carries a distinguished two-dimensional real subspace that commutes with everything: the **centre** $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, the fixed-point set of quaternion conjugation. It is the algebra's rotationally invariant subspace, and it is the only place a field with a single Lorentz-scalar component can live. The companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* established that result representation-theoretically: the state module is the two-dimensional defining module of the algebra and carries spin $\tfrac12$, so a trivial-representation field has no module to occupy and must be valued in the centre instead.
 
 This article develops the **classical dynamics** of that field. The field is $\tilde{Ξ}=\xi e_t$, a single complex (or, in the real case, real) scalar function of the event; because it is valued in the centre, it commutes with the biquaternionic gradient, with every rotation rotor and with every element of the algebra, and its dynamics is the classical field theory of one scalar degree of freedom. No quantization is used anywhere below: the field equation is a wave equation, the source is a prescribed classical density, and the objects computed are the classical field, its energy and its force on a test source.
 
@@ -28,14 +28,14 @@ The article closes by identifying why a central scalar field carries no intrinsi
 The centre is the centralizer of the quaternion units,
 
 $$
-\mathbb{C}_{\mathbb{B}}=\{\tilde{Q}\in\mathbb{B} : [\tilde{Q},\vec e_\mu]=0,\ \mu=1,2,3\}=\{Q_te_t : Q_t\in\mathbb{C}\}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
+\mathbb{B}_{C}=\{\tilde{Q}\in\mathbb{B} : [\tilde{Q},\vec e_\mu]=0,\ \mu=1,2,3\}=\{Q_te_t : Q_t\in\mathbb{C}\}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}.
 $$
 
 It is a subalgebra isomorphic to $\mathbb{C}$, it is two-dimensional over $\mathbb{R}$, and it meets the two sectors in one real direction each:
 
 $$
-\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}\,e_t, \qquad
-\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}\,ie_t .
+\mathbb{B}_{C}\cap\mathbb{B}_{\Psi}=\mathbb{R}\,e_t, \qquad
+\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}=\mathbb{R}\,ie_t .
 $$
 
 The first property to record is that the centre is not merely a subspace: it is **closed under multiplication**, because $Q_te_t\cdot Q_{t,2}e_t=Q_tQ_{t,2}e_t$. A scalar field valued in the centre therefore admits polynomial self-interactions without leaving the centre, a fact used in the open questions below. The second is that its elements commute with the rotation generators, so a centrally valued field is a **rotational scalar**: rotations act on it trivially, and there is no internal direction for a rotation to move.
@@ -179,7 +179,7 @@ $$
 T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2>0 ,
 $$
 
-positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
+positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
 
 ### The Energy of the Static Field
 
@@ -318,13 +318,13 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 5. **The relation to the gauge principle.** The central phase is a global symmetry of the central scalar field. Whether it can be gauged, and whether a gauged central phase has a biquaternionic interpretation distinct from ordinary $\mathrm{U}(1)$ electromagnetism, is a question for the articles on the gauge principle rather than for a classical scalar field.
 
-6. **Coupling to the informational sector.** The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{M}_+$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Informational Sector: States, Observables and Probability*.
+6. **Coupling to the informational sector.** The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{B}_{\Psi}$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Informational Sector: States, Observables and Probability*.
 
 7. **Curved spacetime and the range.** The Yukawa range $\mu^{-1}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.
 
 ## Summary
 
-The central scalar field in the biquaternion framework is a field valued in the centre $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$,
+The central scalar field in the biquaternion framework is a field valued in the centre $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$,
 
 $$
 \tilde{Ξ}(r_x)=\xi(r_x)e_t ,
@@ -364,9 +364,9 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; central $i$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
-| $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}_{\mathbb{B}}\cap\mathbb{M}_-=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
+| $\mathbb{B}_{C}\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$, $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |

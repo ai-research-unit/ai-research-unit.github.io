@@ -21,7 +21,7 @@ The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composit
 | The roots of $+1$, the halving map and the idempotents | [Idempotents](../articles_maths/idempotents.html) |
 | Orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The positive cone, the order interval and its extreme points | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
-| The plain form and the Hilbert–Schmidt pairing (the same on $\mathbb{M}_+$, with $\operatorname{Tr}=2\operatorname{Sc}$) | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
+| The plain form and the Hilbert–Schmidt pairing (the same on $\mathbb{B}_{\Psi}$, with $\operatorname{Tr}=2\operatorname{Sc}$) | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html) |
 | The $*$-unitary group and the matrix-unitary condition | [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The tensor product and the isomorphism $M_m\otimes M_n\cong M_{mn}$ | [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html) |
 
@@ -59,7 +59,7 @@ Each row and each column is a commuting triple. The product of every row is $e_t
 A **sharp effect** is an idempotent: a projection whose only values are $0$ and $1$. The sharp effects are the extreme points of the operator interval
 
 $$
-[\tilde 0,e_t]=\{\tilde E\in\mathbb{M}_+:\tilde 0\le\tilde E\le e_t\},
+[\tilde 0,e_t]=\{\tilde E\in\mathbb{B}_{\Psi}:\tilde 0\le\tilde E\le e_t\},
 $$
 
 where the order is the positivity of $e_t-\tilde E$. The proposition that the extreme points are exactly the idempotents is the Jordan-algebra statement proved in the linked article.
@@ -70,7 +70,7 @@ $$
 \tilde E=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2,\qquad 0\le\lambda_1,\lambda_2\le 1,
 $$
 
-in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde E_a\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_a^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative.
+in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde E_a\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_a^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative.
 
 **Interpretation.** A measurement is a resolution of the identity into effects. The sharp outcomes are the idempotents, the unsharp ones are their convex combinations, and the state space is the same in both cases. Naimark's dilation theorem makes every POVM a projective measurement on a larger module, so the sharp idempotent remains the primitive object and the soft effect is a shadow of a projection on an enlarged space.
 
@@ -164,7 +164,7 @@ The defining module of $\mathbb{B}\cong M_2(\mathbb{C})$ is $\mathbb{C}^2$, and 
 
 ## Entanglement Is Not a Fifth Product
 
-The four products are the four jobs of one algebra. Entanglement is a property of the **tensor square**, not a fifth product. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a new arena, not a new product: it carries the induced involution, whose Hermitian part is $\mathbb{M}_+\otimes\mathbb{M}_+\oplus\mathbb{M}_-\otimes\mathbb{M}_-$, and the tensor products of the forms on $\mathbb{B}$. The correlations the framework can describe are therefore between the two tensor factors — between the two factors, not inside one — and the partial trace is taken over one factor and lands in the other.
+The four products are the four jobs of one algebra. Entanglement is a property of the **tensor square**, not a fifth product. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a new arena, not a new product: it carries the induced involution, whose Hermitian part is $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}\otimes\mathbb{B}_{\Phi}$, and the tensor products of the forms on $\mathbb{B}$. The correlations the framework can describe are therefore between the two tensor factors — between the two factors, not inside one — and the partial trace is taken over one factor and lands in the other.
 
 The partial trace is not one of the four products. It uses the trace pairing on the factor that is traced out and the identity on the factor that remains; it is a map on the tensor square, and it has no analogue inside a single algebra. This is why entanglement is not a fifth row of the grid: the grid classifies products on $\mathbb{B}$, and the partial trace lives one level up.
 
@@ -204,7 +204,7 @@ The nontrivial Hermitian idempotents are the pure states and the Hermitian roots
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | The Hermitian (informational) sector |
+| $\mathbb{B}_{\Psi}$ | The Hermitian (informational) sector |
 | $\tilde\Pi$ | An idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The two rank-one Hermitian idempotents along a unit vector $\vec u$ |
 | $\tilde{Ζ}$ | A root of $+1$; $\tilde\Pi=\tfrac12(e_t+\tilde{Ζ})$ |

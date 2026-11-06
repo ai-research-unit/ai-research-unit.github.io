@@ -224,34 +224,34 @@ Only the bar is an automorphism. The other two reverse the order, and the third 
 **What each one fixes.** The fixed spaces separate the three antilinear ones, and they are why the count alone decides nothing.
 
 $$
-\{\tilde{Ξ}_{\mathrm{sp}}:\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{H}_{\mathbb{B}},\qquad
-\{\tilde{Ξ}_{\mathrm{sp}}:\tilde{Ξ}_{\mathrm{sp}}^*=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{M}_+,\qquad
-\{\tilde{Ξ}_{\mathrm{sp}}:\tilde{Ξ}_{\mathrm{sp}}^{\flat}=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{M}_-,
+\{\tilde{Ξ}_{\mathrm{sp}}:\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{B}_{H},\qquad
+\{\tilde{Ξ}_{\mathrm{sp}}:\tilde{Ξ}_{\mathrm{sp}}^*=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{B}_{\Psi},\qquad
+\{\tilde{Ξ}_{\mathrm{sp}}:\tilde{Ξ}_{\mathrm{sp}}^{\flat}=\tilde{Ξ}_{\mathrm{sp}}\}=\mathbb{B}_{\Phi},
 $$
 
 each of real dimension four. So all three antilinear involutions fix a four-dimensional space, and the count that a Majorana field needs is met by all three. What distinguishes them is what the fixed space is and whether the conjugation respects the order. The bar fixes the real quaternions, and the fixed space of the charge conjugation is that space multiplied by the central phase $(1+i)/\sqrt2$, because $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ reads $\tilde{Ξ}_{\mathrm{sp}}=i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ and not $\tilde{Ξ}_{\mathrm{sp}}=\bar{\tilde{Ξ}}_{\mathrm{sp}}$. The phase is a relabelling of the same four-dimensional real form.
 
 **The conjugate field and its action.** Under a Lorentz rotor $U$ the field goes to $U\tilde{Ξ}_{\mathrm{sp}}$, and the conjugation carries that into $\bar U\,\bar{\tilde{Ξ}}_{\mathrm{sp}}$: the conjugate field carries the conjugate rotor and not the same one. For a rotor of unit norm $(\bar U)^{\natural}=U^{-1}$, so the conjugate action is the inverse one read through the quaternion conjugation. The two roles are different and neither replaces the other: the coefficient conjugation is the real structure, and the conjugate rotor is what the conjugate field transforms by.
 
-**$\flat$ is a different conjugation, and the difference is the order.** The parent articles retain $\flat=-{}^{*}$ as the algebra's real structure. It is antilinear and involutive, so it is a real structure on the algebra read as a real vector space, and its fixed space is the material sector $\mathbb{M}_-$. But it is order-reversing, and its fixed space is a sector of the algebra and not a real form of the field. It is the map that pairs a field with its conjugate in a Majorana-type coupling; it is not the map that identifies a field with its own antiparticle, and it is not the parent's mass term, which is the linear chiral pair. Mixing the two is the natural error, and it is the error the next section tests. The four levels at which the corpus uses the name charge conjugation — the algebra's real structure $\flat$, the Clifford pseudoautomorphism, the operation on the carrier, and the real structure $\mathcal{C}$ — are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
+**$\flat$ is a different conjugation, and the difference is the order.** The parent articles retain $\flat=-{}^{*}$ as the algebra's real structure. It is antilinear and involutive, so it is a real structure on the algebra read as a real vector space, and its fixed space is the material sector $\mathbb{B}_{\Phi}$. But it is order-reversing, and its fixed space is a sector of the algebra and not a real form of the field. It is the map that pairs a field with its conjugate in a Majorana-type coupling; it is not the map that identifies a field with its own antiparticle, and it is not the parent's mass term, which is the linear chiral pair. Mixing the two is the natural error, and it is the error the next section tests. The four levels at which the corpus uses the name charge conjugation — the algebra's real structure $\flat$, the Clifford pseudoautomorphism, the operation on the carrier, and the real structure $\mathcal{C}$ — are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
 
 ## Does the Material/Informational Split Help or Obstruct?
 
 **The split.** The algebra carries a second decomposition, by the Hermitian conjugation, and it must not be conflated with the one used above. It is real,
 
 $$
-\mathbb{M}_-=\{Q:Q^{*}=-Q\},\qquad
-\mathbb{M}_+=\{Q:Q^{*}=Q\},\qquad
-\dim_{\mathbb{R}}\mathbb{M}_-=\dim_{\mathbb{R}}\mathbb{M}_+=4,
+\mathbb{B}_{\Phi}=\{Q:Q^{*}=-Q\},\qquad
+\mathbb{B}_{\Psi}=\{Q:Q^{*}=Q\},\qquad
+\dim_{\mathbb{R}}\mathbb{B}_{\Phi}=\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4,
 $$
 
 and it is the algebra's own, the anti-Hermitian part carrying the four-vectors and the interval and the Hermitian part carrying the observables and the states. The question is whether the Majorana real form can be located there.
 
-**The tempting interpretation, and why it is wrong.** $\mathbb{M}_-$ is the fixed space of the real structure $\flat$, it is four-real-dimensional, and the dimension matches the Majorana count exactly. The temptation is to say that a Majorana field is a field with values in $\mathbb{M}_-$. The framework's own structure refuses it, and the reason is one line: **the operator does not preserve the sector.** The unit $\vec e_x$ is anti-Hermitian, $(\vec e_x)^{*}=-\vec e_x$, so it lies in $\mathbb{M}_-$; its square is $\vec e_x^{2}=-e_t$, which is Hermitian and lies in $\mathbb{M}_+$. A derivative along $x$ therefore carries a field of the material sector into the informational one, and no first-order equation with the algebra's units can be written inside either sector alone.
+**The tempting interpretation, and why it is wrong.** $\mathbb{B}_{\Phi}$ is the fixed space of the real structure $\flat$, it is four-real-dimensional, and the dimension matches the Majorana count exactly. The temptation is to say that a Majorana field is a field with values in $\mathbb{B}_{\Phi}$. The framework's own structure refuses it, and the reason is one line: **the operator does not preserve the sector.** The unit $\vec e_x$ is anti-Hermitian, $(\vec e_x)^{*}=-\vec e_x$, so it lies in $\mathbb{B}_{\Phi}$; its square is $\vec e_x^{2}=-e_t$, which is Hermitian and lies in $\mathbb{B}_{\Psi}$. A derivative along $x$ therefore carries a field of the material sector into the informational one, and no first-order equation with the algebra's units can be written inside either sector alone.
 
-**The fixed space of the conjugation is not a sector.** The fixed space of $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ is four-real-dimensional and it is not $\mathbb{M}_-$: it is the real-quaternion form multiplied by the central phase, and both the multiplication by $i$ and the conjugation are needed to state it. The two four-dimensional spaces are different objects, and the coincidence of their dimensions is the coincidence that makes the sector split look like a candidate. The distinction is one of kind: a sector is a fixed space of an antilinear map read on the algebra, and the Majorana real form is the fixed space of an antilinear map read on the field.
+**The fixed space of the conjugation is not a sector.** The fixed space of $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ is four-real-dimensional and it is not $\mathbb{B}_{\Phi}$: it is the real-quaternion form multiplied by the central phase, and both the multiplication by $i$ and the conjugation are needed to state it. The two four-dimensional spaces are different objects, and the coincidence of their dimensions is the coincidence that makes the sector split look like a candidate. The distinction is one of kind: a sector is a fixed space of an antilinear map read on the algebra, and the Majorana real form is the fixed space of an antilinear map read on the field.
 
-**The physical test, and the answer.** The test is the one a physicist would apply: impose the condition, evolve, and see whether the condition survives. The previous section performed it, and the answer is that the condition survives because $\mathcal{C}$ commutes with the operator. A sector, by contrast, is not preserved by the operator at all, so a constraint of the form "the field lies in $\mathbb{M}_-$" cannot be propagated. It would be violated by the first time step. The sector split therefore **obstructs** the reality condition rather than supplying it, and it cannot be used as it stands.
+**The physical test, and the answer.** The test is the one a physicist would apply: impose the condition, evolve, and see whether the condition survives. The previous section performed it, and the answer is that the condition survives because $\mathcal{C}$ commutes with the operator. A sector, by contrast, is not preserved by the operator at all, so a constraint of the form "the field lies in $\mathbb{B}_{\Phi}$" cannot be propagated. It would be violated by the first time step. The sector split therefore **obstructs** the reality condition rather than supplying it, and it cannot be used as it stands.
 
 **What survives of the split.** The split is not idle: it is the decomposition that separates the two kinds of physical quantity, and the material sector is where the four-vectors live. What it does not do is supply the charge conjugation. The two decompositions, by $\xi$ and by ${}^{*}$, are different decompositions of one algebra, and an argument that needs one of them cannot borrow the other's dimension.
 
@@ -286,7 +286,7 @@ The framework transcribes both facts, and neither is a derivation.
 | The mass shell stays $p^{2}=m^{2}$ | supplied | $D^{2}=\Box$ and $\mathcal{C}^{2}=1$ |
 | The vector current of the self-conjugate field vanishes | supplied | the anticommutation of the components |
 | A commuting element gives the opposite pattern | recorded | the same computation without anticommutation |
-| The sector split is not the Majorana real form | supplied | the operator does not preserve $\mathbb{M}_-$ |
+| The sector split is not the Majorana real form | supplied | the operator does not preserve $\mathbb{B}_{\Phi}$ |
 | The chiral gauge group is vector-like | supplied | the centre multiplies the two values alike |
 | The left-handedness of the neutrino | transcribed | experiment |
 | The mass values, mixings and phases | not supplied | measurement |
@@ -375,11 +375,11 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element, and its two values |
 | $\xi=-iR_{\mathrm{axf},\vec e_z}$ | Chirality operator of the frame; $\xi\tilde{Ξ}_{\mathrm{sp},L}=-\tilde{Ξ}_{\mathrm{sp},L}$, $\xi\tilde{Ξ}_{\mathrm{sp},R}=+\tilde{Ξ}_{\mathrm{sp},R}$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}} = \{Q:\bar{Q}=Q\}$ | Real-quaternion subspace, fixed space of $\bar{\cdot}$ |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H} = \{Q:\bar{Q}=Q\}$ | Real-quaternion subspace, fixed space of $\bar{\cdot}$ |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex and Hermitian conjugations |
-| $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{M}_-$ |
+| $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
 | $c_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $c_k:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
 | $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
 | $\Box=\sum_\mu\partial^2/\partial R_\mu^2=-\partial^2/\partial {r'_{t}}^2+\Delta$ | d'Alembertian; $\Delta$ is the spatial Laplacian |

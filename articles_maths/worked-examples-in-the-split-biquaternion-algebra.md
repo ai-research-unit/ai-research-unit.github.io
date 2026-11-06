@@ -109,8 +109,8 @@ Each conjugation has a fixed-point subspace, and the projection onto the fixed-p
 |---|---|---|---|
 | ${}^{\natural}$ | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $Q_x = Q_y = Q_z = 0$ | $2$ |
 | $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $q'_\mu = 0$ for all $\mu$ | $4$ |
-| ${}^{*}$ | $\mathbb{M}_+$ | $q_t$ real and $Q_x, Q_y, Q_z$ purely split-imaginary | $4$ |
-| ${}^{\flat}$ | $\mathbb{M}_-$ | $Q_t$ purely split-imaginary and $q_x, q_y, q_z$ real | $4$ |
+| ${}^{*}$ | $\mathbb{B}_{\Psi}$ | $q_t$ real and $Q_x, Q_y, Q_z$ purely split-imaginary | $4$ |
+| ${}^{\flat}$ | $\mathbb{B}_{\Phi}$ | $Q_t$ purely split-imaginary and $q_x, q_y, q_z$ real | $4$ |
 
 Projecting $\tilde{Q}$ onto the four fixed-point subspaces gives
 
@@ -123,11 +123,11 @@ $$
 $$
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 - j \vec e_y \in \mathbb{M}_+,
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 - j \vec e_y \in \mathbb{B}_{\Psi},
 $$
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^\flat) = (2 \vec e_x + \vec e_y) + j \in \mathbb{M}_-.
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^\flat) = (2 \vec e_x + \vec e_y) + j \in \mathbb{B}_{\Phi}.
 $$
 
 The four projections do not sum to $\tilde{Q}$: the four subspaces overlap — for example $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{R}$, the real scalars — so they are four distinct fixed-point sets rather than the four summands of a single decomposition.
@@ -204,7 +204,7 @@ $$
 \tilde{Q} = (1 + j) + 2 \vec e_x + (1 - j) \vec e_y
 $$
 
-the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_2$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
+the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_2$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
 
 ## Summary of Notation
 
@@ -217,7 +217,7 @@ the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 -
 | $\tilde{Q} = \tilde q + j \tilde q'$ | Concrete element, $\tilde q, \tilde q' \in \mathbb{H}$ |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components in $\mathbb{H}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | The four involution fixed-point subspaces |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The four involution fixed-point subspaces |
 | $\mathbb{H} \tilde\Pi_{1,2}$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 

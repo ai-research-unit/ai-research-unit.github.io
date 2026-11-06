@@ -33,7 +33,7 @@ $$
 \qquad T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad \mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}.
 $$
 
-The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
+The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{B}_{H} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
 
 $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial R_\mu \tilde U)\,\tilde U^{-1},
@@ -58,7 +58,7 @@ What this construction is, for the purposes of this agenda, is the **general mac
 The available gauge algebra is determined by the algebra, not chosen. The material sector decomposes as a Lie algebra under the commutator,
 
 $$
-\mathbb{M}_- \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2),
+\mathbb{B}_{\Phi} \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2),
 $$
 
 so the compact algebra present is $\mathrm{U}(1)\oplus\mathrm{SU}(2) = \mathrm{U}(2)$, of real dimension $4$. This is exactly the anti-Hermitian subspace of $\mathbb{B}\cong M_2(\mathbb{C})$: anti-Hermitian $2\times2$ complex matrices *are* the Lie algebra $\mathrm{u}(2)$, and the Cartan decomposition of the real Lie algebra $\mathrm{GL}(2,\mathbb{C})$ is
@@ -114,7 +114,7 @@ and it is odd under the exchange of the two values: it changes sign when $\tilde
 
 Two further results of that article are the ones that bear on QCD.
 
-- **The canonically available gauge group is vector-like.** The framework's own abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, which acts as a *scalar* on $M_2(\mathbb{C})$; every part of the field receives the same charge. A chiral gauge group requires a non-central action, hence a non-abelian gauge structure — the structure the non-abelian article supplies for $\mathrm{SU}(2)$ but does not dress with matter.
+- **The canonically available gauge group is vector-like.** The framework's own abelian gauge group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, which acts as a *scalar* on $M_2(\mathbb{C})$; every part of the field receives the same charge. A chiral gauge group requires a non-central action, hence a non-abelian gauge structure — the structure the non-abelian article supplies for $\mathrm{SU}(2)$ but does not dress with matter.
 - **The framework's mass term exchanges the two values.** The mass is the off-diagonal pairing of the chiral pair, and it is the real-form expression of an ordinary Dirac mass. Because it couples the two values it breaks the **axial** symmetry, while the vector phase $\mathrm{U}(1)$ — fermion number — passes through the linear mass and is exact for the massive field. With the axial current $j_{5\mu}$,
 
     $$
@@ -178,7 +178,7 @@ Four things that would be needed are all absent.
 - **A gauge-invariant regulator.** The renormalization-group article records that the algebra's natural cutoff is central, sector-blind, and breaks gauge invariance, while dimensional regularisation leaves the four-dimensional algebra; a biquaternionic gauge-invariant regulator is itself an open problem. Non-perturbative gauge theory, on the lattice or otherwise, requires such a regulator, so confinement cannot even be posed before that gap is closed.
 - **A gauge-fixing principle and a mass gap.** The canonical-quantization article on the Maxwell field records that the framework cannot fix the gauge naturally, and no gauge-fixing principle is supplied. No mass gap — the statement that the spectrum has a lowest positive mass — is established or even formulated.
 
-The framework's closest structures are the zero divisor cone and the null four-vectors of $\mathbb{M}_-$. It is worth saying why they do not help. The light cone is a statement about the biquaternion norm of a biquaternion; it classifies momenta and propagation directions. Confinement is a statement about the energy of a *configuration of colour sources* — a potential that grows with separation. A null direction is not an area law, and the fact that a massless field propagates on the light cone says nothing about the force between two colour charges. The zero-divisor structure is a genuine feature of the algebra, but reading confinement from it would be an analogy, not a derivation, and the analogy is not made here.
+The framework's closest structures are the zero divisor cone and the null four-vectors of $\mathbb{B}_{\Phi}$. It is worth saying why they do not help. The light cone is a statement about the biquaternion norm of a biquaternion; it classifies momenta and propagation directions. Confinement is a statement about the energy of a *configuration of colour sources* — a potential that grows with separation. A null direction is not an area law, and the fact that a massless field propagates on the light cone says nothing about the force between two colour charges. The zero-divisor structure is a genuine feature of the algebra, but reading confinement from it would be an analogy, not a derivation, and the analogy is not made here.
 
 **What would settle it.** A framework-internal object whose computed behaviour establishes either the area law or its absence. Concretely: define a biquaternionic Wilson loop on the enlarged carrier that the colour-group question settles, and compute its large-loop asymptotics, exhibiting a string tension $\sigma>0$; or exhibit a mass gap in the framework's spectrum; or prove that no such object can be defined in $\mathbb{B}$, which settles the question negatively and shows that confinement, like the colour group, must be imported. All three require, as a prerequisite, the action, measure, and gauge-invariant regulator that the series does not yet have — which is why confinement is downstream of apparatus as well as of the colour group.
 
@@ -217,7 +217,7 @@ This is the one obstacle for which the series has already built the machinery an
 
 What the article also records, in its own words, is that this is a **transcription**: the effective action, the measure, the regulator, the gauge group, the matter content, and the value of the coupling are all inputs; the beta functions are standard field theory written in biquaternion notation and would not change if $\mathbb{B}$ were replaced by any other notation. Two framework-specific limitations follow directly.
 
-- **The flow acts on central scalars.** The scale $\mu$, the couplings, and the beta functions are real multiples of $e_t$, i.e. central, hence in $\mathbb{M}_+$. The flow rescales central coefficients and does not rotate one sector into the other. It cannot, for example, generate a sector-sensitive scale, and it gives no handle on the medium-dependent local complex structure $c=1/\sqrt{\epsilon\mu}$, which the article records as an open question.
+- **The flow acts on central scalars.** The scale $\mu$, the couplings, and the beta functions are real multiples of $e_t$, i.e. central, hence in $\mathbb{B}_{\Psi}$. The flow rescales central coefficients and does not rotate one sector into the other. It cannot, for example, generate a sector-sensitive scale, and it gives no handle on the medium-dependent local complex structure $c=1/\sqrt{\epsilon\mu}$, which the article records as an open question.
 - **The regulator is external, and the natural one breaks gauge invariance.** The algebra hosts the central invariant $\tilde{Q}\tilde{Q}^{\natural}$ on which a cutoff is imposed, but not the cutoff; the sharp cutoff is not gauge invariant, and dimensional regularisation leaves the four-dimensional algebra. A biquaternionic gauge-invariant regulator is an open problem. For a *perturbative* one- and two-loop running this is manageable in transcription; for anything non-perturbative it is disabling.
 
 So the running coupling and asymptotic freedom are an obstacle with a **known route** — the route is the standard one-loop computation, and it has been carried out in the framework's notation — but the route's *inputs* are exactly the missing objects: the colour group (obstacle 1) and the quark content (obstacle 3). In addition, the route reaches only the perturbative ultraviolet; it says nothing about confinement, which is the infrared companion of asymptotic freedom and is the obstacle with no route.
@@ -259,7 +259,7 @@ Finally, the genre's standing caution applies here in its strongest form. *The E
 
 This article is a research agenda for quantum chromodynamics inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory and stops before colour.
 
-What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the two values of the field, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
+What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the two values of the field, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
 
 What is not established is everything QCD-specific.
 
@@ -275,9 +275,9 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$, $e_t,\vec e_x,\vec e_y,\vec e_z$, $i$ | The biquaternion algebra, its four units and the central imaginary (*Algebra and Element Conventions*) |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | The informational and material sectors (*Algebra and Element Conventions*) |
-| $\mathbb{C}_{\mathbb{B}}$ | The centre of the algebra; the vector-like abelian factor |
-| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The informational and material sectors (*Algebra and Element Conventions*) |
+| $\mathbb{B}_{C}$ | The centre of the algebra; the vector-like abelian factor |
+| $\mathbb{B}_{H}$ | The real-quaternion subspace |
 | $\tilde\nabla$, $\Box$ | The biquaternionic gradient and the d'Alembertian (*Operator and Calculus Conventions*) |
 | $\mathbb{D}$ | The pair operator on the pair $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ (*Operator and Calculus Conventions*) |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field and its two values, $L$ of value $-1$ and $R$ of value $+1$ (*Special Element Conventions*) |

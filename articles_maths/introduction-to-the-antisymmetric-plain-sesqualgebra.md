@@ -86,11 +86,11 @@ $$
 
 ## The Image and the Absence of a Unit
 
-**Proposition (the image is the vector subspace; the centre is not in it).** The image of $\diamond$ is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three over $\mathbb{C}$; the operation is central-free, so no value lies in the centre $\mathbb{C}_{\mathbb{B}}$ except $0$. The two one-sided actions of the unit are
+**Proposition (the image is the vector subspace; the centre is not in it).** The image of $\diamond$ is the vector subspace $\mathbb{B}_{V}$, of complex dimension three over $\mathbb{C}$; the operation is central-free, so no value lies in the centre $\mathbb{B}_{C}$ except $0$. The two one-sided actions of the unit are
 
 $$ \boxed{\; \tilde Q_1\diamond e_t=\vec Q_1,\qquad e_t\diamond\tilde Q=-\overline{\vec Q} \;}. $$
 
-*Proof.* Every value is a vector part, so the image is contained in $\mathrm{Vect}(\mathbb{B})$. The first display gives the whole vector subspace, since $\vec Q_1$ is an arbitrary vector part, and it is the computation of $\mathrm{Vect}(\tilde Q_1 e_t^{*})=\mathrm{Vect}(\tilde Q_1)$. The second is $\mathrm{Vect}(\tilde Q^{*})=\mathrm{Vect}(-\overline{\vec Q})=-\overline{\vec Q}$. The scalar part vanishing with a nonzero vector part is not central, and the zero value is central.
+*Proof.* Every value is a vector part, so the image is contained in $\mathbb{B}_{V}$. The first display gives the whole vector subspace, since $\vec Q_1$ is an arbitrary vector part, and it is the computation of $\mathrm{Vect}(\tilde Q_1 e_t^{*})=\mathrm{Vect}(\tilde Q_1)$. The second is $\mathrm{Vect}(\tilde Q^{*})=\mathrm{Vect}(-\overline{\vec Q})=-\overline{\vec Q}$. The scalar part vanishing with a nonzero vector part is not central, and the zero value is central.
 
 **Remark (the unit is not a unit of the block).** The sesqualgebra has a unit on the right alone, by *Introduction to the General Plain Sesqualgebra*, and the block inherits neither side. A left unit $\tilde u$ would give $\tilde u\diamond e_t=e_t$, but $\tilde u\diamond e_t=\vec q$ has zero scalar part while $e_t$ has scalar part $1$: no left unit. A right unit $\tilde u$ would give $\tilde Q_6\diamond\tilde u=\tilde Q_6$ for all $\tilde Q_6$; the left member is a value of the block and so has zero scalar part, while the right member $e_t$ has scalar part $1$, so the condition already fails at $\tilde Q_6=e_t$. So the block has no unit on either side, and the two displays of the proposition are the two one-sided actions that replace it.
 
@@ -160,7 +160,7 @@ the symmetric half being central-valued and the antisymmetric half pure-vector. 
 
 | name | the product | scalar part | vector part | law | unit | image |
 |---|---|---|---|---|---|---|
-| $\tilde Q_1\wedge_{*}\tilde Q_2$ | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)$ | $\bigl[0\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
+| $\tilde Q_1\wedge_{*}\tilde Q_2$ | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)$ | $\bigl[0\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | conjugate-alternating, no Jacobi | none | $\mathbb{B}_{V}$ |
 
 and it is the plain-sesqualgebra sibling of three other antisymmetrisations: $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$, which is the one Lie product of the twelve, $\tilde Q_1\wedge_{\natural}\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$, which fails on the associator, and $\tilde Q_1\wedge_{\natural*}\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$, which fails as the block does. On the **real** part of the space the block is its own operation: it is $\tilde Q_1\diamond\tilde Q_2=-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, which coincides with no other of the twelve, while on the real **vectors** alone it is the cross product up to sign, $\vec Q_1\diamond\vec Q_2=-\vec Q_1\times\vec Q_2$. The ten operations of the real part, and the two coincidences $\tilde Q_1\wedge\tilde Q_2=\tilde Q_1\wedge_{\natural*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2=\tilde Q_1\bullet_{*}\tilde Q_2$ that reduce the twelve to ten there, are tabulated in *Symmetric and Antisymmetric Decomposition of the Four General Products*; the block is not one of the coincidences.
 
@@ -184,7 +184,7 @@ The antisymmetric part of the general plain sesquilinear product is $\tilde Q_1\
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise, the natural and the Hermitian conjugations, $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
 | $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$ | the operation of the block, the antisymmetric plain sesqualgebra $\tilde Q_1\wedge_{*}\tilde Q_2$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* |
-| $\mathrm{Vect}(\mathbb{B}),\mathbb{C}_{\mathbb{B}}$ | the vector subspace and the centre of the remarkable subspaces |
+| $\mathbb{B}_{V},\mathbb{B}_{C}$ | the vector subspace and the centre of the remarkable subspaces |
 | $\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}$ | conjugate-alternation, the law the block satisfies |
 | $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the square |
 | $\mathrm{cyc}\,b$ | the cyclic sum $b(\mathfrak{b}(\tilde Q_3,\tilde Q_4),\tilde Q_5)+b(\mathfrak{b}(\tilde Q_4,\tilde Q_5),\tilde Q_3)+b(\mathfrak{b}(\tilde Q_5,\tilde Q_3),\tilde Q_4)$ |

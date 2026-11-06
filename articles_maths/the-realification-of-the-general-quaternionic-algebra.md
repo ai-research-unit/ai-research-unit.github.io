@@ -12,7 +12,7 @@ The general construction is not repeated here. The realification of a vector spa
 
 ## The Change of Scalars
 
-$\mathbb{B}$ is the complex vector space of dimension four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, and the field of scalars is read in the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. Read over $\mathbb{R}$ the same set is the real vector space
+$\mathbb{B}$ is the complex vector space of dimension four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, and the field of scalars is read in the centre $\mathbb{B}_{C}=\mathbb{C}e_t$. Read over $\mathbb{R}$ the same set is the real vector space
 $$
 \mathbb{R}^8=\operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
@@ -28,15 +28,15 @@ by the centrality of $i$: $J$ commutes with itself, so the criterion for $\mathb
 
 Every property written with the addition, the product and quantification over the elements is a statement about the **ring** and does not move when the scalars are restricted to $\mathbb{R}$. For this product the inventory is short and it is worth recalling in one paragraph. The product is **neither associative nor commutative**; $e_t$ is a **left unit** and there is **no right unit**, so there is no two-sided unit and no group of units of the product; the **centre** of the product is trivial; the **idempotents** are $0$ and $e_t$; the **zero divisors** are the nonzero solutions of $N=0$; the **nilpotents** coincide with the zero divisors, the square being $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; and the **left ideals** of the product are exactly the left ideals of the plain product (*Introduction to the General Quaternionic Algebra*, *The Specificities of the General Quaternionic Algebra*). Each of these is the same set, with the same proof, in the two readings.
 
-What moves is every notion that names the field or the linear structure. The dimension is $8$ over $\mathbb{R}$ against $4$ over $\mathbb{C}$. The centre of the ring, which is $\mathbb{C}_{\mathbb{B}}$ and not the product's own centre, is a field of real dimension two, strictly larger than $\mathbb{R}e_t$; the ring is therefore **central simple over $\mathbb{C}$** and **simple but not central over $\mathbb{R}$**, while the product's own centre is trivial in both readings.
+What moves is every notion that names the field or the linear structure. The dimension is $8$ over $\mathbb{R}$ against $4$ over $\mathbb{C}$. The centre of the ring, which is $\mathbb{B}_{C}$ and not the product's own centre, is a field of real dimension two, strictly larger than $\mathbb{R}e_t$; the ring is therefore **central simple over $\mathbb{C}$** and **simple but not central over $\mathbb{R}$**, while the product's own centre is trivial in both readings.
 
 ## The Second Slot and the Centre
 
-Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an **algebra** and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$ the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{C}_{\mathbb{B}}$-linear: for every $\tilde Q_1$ the left multiplication
+Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an **algebra** and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$ the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{B}_{C}$-linear: for every $\tilde Q_1$ the left multiplication
 $$
 L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2
 $$
-is $\mathbb{C}$-linear over $\mathbb{C}$ — since ${}^{\natural}$ is $\mathbb{C}$-linear and the plain product is $\mathbb{C}$-bilinear, $\tilde Q_1\star(\lambda\tilde Q_2)=\lambda(\tilde Q_1\star\tilde Q_2)$ for $\lambda\in\mathbb{C}$ — and it is therefore $\mathbb{R}$-linear on $\mathbb{R}^8$ and commutes with the complex structure, $L_{\tilde Q_1}J=JL_{\tilde Q_1}$, which is the criterion for $\mathbb{C}_{\mathbb{B}}$-linearity (*The Realification and the Effect of the Change of Scalars*, §*The Realification of a Linear Map*). The passage therefore **does not change the kind** of this product.
+is $\mathbb{C}$-linear over $\mathbb{C}$ — since ${}^{\natural}$ is $\mathbb{C}$-linear and the plain product is $\mathbb{C}$-bilinear, $\tilde Q_1\star(\lambda\tilde Q_2)=\lambda(\tilde Q_1\star\tilde Q_2)$ for $\lambda\in\mathbb{C}$ — and it is therefore $\mathbb{R}$-linear on $\mathbb{R}^8$ and commutes with the complex structure, $L_{\tilde Q_1}J=JL_{\tilde Q_1}$, which is the criterion for $\mathbb{B}_{C}$-linearity (*The Realification and the Effect of the Change of Scalars*, §*The Realification of a Linear Map*). The passage therefore **does not change the kind** of this product.
 
 Both slots are $\mathbb{C}$-linear here, so the right multiplication $R_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1$ commutes with $J$ as well, $R_{\tilde Q_1}J=JR_{\tilde Q_1}$, and the pair of commutations is the mark of the $A$ family. In the six $S$ structures of the twelve the second slot is conjugate-linear, so $L_{\tilde Q_1}$ anticommutes with $J$ there, and the two block shapes of the passage separate the families exactly as the criterion does.
 
@@ -96,16 +96,16 @@ Three things exist over $\mathbb{R}$ for this product and have no complex counte
 
 **The real form closed under the product.** The quaternion subspace
 $$
-\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}
+\mathbb{B}_{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}
 $$
-is a real form of $\mathbb{B}$ — a real subspace of dimension four with $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus J\mathbb{H}_{\mathbb{B}}$ — and it is **closed under the product**, on which the product is $h\star g=\bar h\,g$ (*The Quaternionic Product on the Quaternion Subspace*). The closure, together with the $\mathbb{C}$-bilinearity of the two slots, gives the four inclusions
+is a real form of $\mathbb{B}$ — a real subspace of dimension four with $\mathbb{B}=\mathbb{B}_{H}\oplus J\mathbb{B}_{H}$ — and it is **closed under the product**, on which the product is $h\star g=\bar h\,g$ (*The Quaternionic Product on the Quaternion Subspace*). The closure, together with the $\mathbb{C}$-bilinearity of the two slots, gives the four inclusions
 $$
-\boxed{\; \mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}},\qquad
-\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}},\qquad
-i\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}},\qquad
-i\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}} \;},
+\boxed{\; \mathbb{B}_{H}\star\mathbb{B}_{H}\subseteq\mathbb{B}_{H},\qquad
+\mathbb{B}_{H}\star \mathbb{B}_{iH}\subseteq \mathbb{B}_{iH},\qquad
+\mathbb{B}_{iH}\star\mathbb{B}_{H}\subseteq \mathbb{B}_{iH},\qquad
+\mathbb{B}_{iH}\star \mathbb{B}_{iH}\subseteq\mathbb{B}_{H} \;},
 $$
-so that $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ is a $\mathbb{Z}/2$-grading for the product (*Introduction to the General Quaternionic Algebra*, §*The Quaternion Subspace and Its Imaginary*). Closure under the product is what makes a real form a real **subalgebra**, and the grading is the real reading of the complex structure exchanging the two summands; the complex reading has neither, because it cannot single out a real subspace.
+so that $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ is a $\mathbb{Z}/2$-grading for the product (*Introduction to the General Quaternionic Algebra*, §*The Quaternion Subspace and Its Imaginary*). Closure under the product is what makes a real form a real **subalgebra**, and the grading is the real reading of the complex structure exchanging the two summands; the complex reading has neither, because it cannot single out a real subspace.
 
 **The odd-dimensional subalgebras.** A subalgebra of the complex reading is a complex subspace, of even real dimension; over $\mathbb{R}$ there is no parity restriction. The three-dimensional real subspace
 $$
@@ -123,7 +123,7 @@ The other two real objects of the ring — the Galois-twisted automorphism group
 
 ## Summary
 
-Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ that is neither associative nor commutative, has the left unit $e_t$ and no right one, has trivial centre, and has $0$ and $e_t$ for its only idempotents; the zero divisors are the nonzero solutions of $N=0$, and the left ideals are the left ideals of the plain product. Its second slot is $\mathbb{C}_{\mathbb{B}}$-linear, and both multiplications commute with $J$. It carries the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, whose realification has Gram matrix $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ and signature $(4,4)$, is reversed by $J$, and has a null cone of dimension $7$ strictly larger than the complex nilpotent cone of dimension $6$. Its trace form is $8\operatorname{Re}B$, the same real form as the plain algebra's, and the conjugation twist is invisible to it. Three things are genuinely real: the real form $\mathbb{H}_{\mathbb{B}}$ closed under the product with the grading $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, the odd-dimensional subalgebras such as $\mathbb{R}\{e_t,\vec e_x+i\vec e_y,i\vec e_x-\vec e_y\}$, and the trace form itself, which exists only as a form of the real regular representation.
+Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ that is neither associative nor commutative, has the left unit $e_t$ and no right one, has trivial centre, and has $0$ and $e_t$ for its only idempotents; the zero divisors are the nonzero solutions of $N=0$, and the left ideals are the left ideals of the plain product. Its second slot is $\mathbb{B}_{C}$-linear, and both multiplications commute with $J$. It carries the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, whose realification has Gram matrix $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ and signature $(4,4)$, is reversed by $J$, and has a null cone of dimension $7$ strictly larger than the complex nilpotent cone of dimension $6$. Its trace form is $8\operatorname{Re}B$, the same real form as the plain algebra's, and the conjugation twist is invisible to it. Three things are genuinely real: the real form $\mathbb{B}_{H}$ closed under the product with the grading $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, the odd-dimensional subalgebras such as $\mathbb{R}\{e_t,\vec e_x+i\vec e_y,i\vec e_x-\vec e_y\}$, and the trace form itself, which exists only as a form of the real regular representation.
 
 ## Summary of Notation
 
@@ -131,14 +131,14 @@ Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on t
 |---|---|
 | $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the product of the General Quaternionic Algebra |
 | $\mathbb{R}^8$ | the realification of $\mathbb{B}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the ring, the field of scalars read over $\mathbb{R}$ |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre of the ring, the field of scalars read over $\mathbb{R}$ |
 | $J=L_i$ | multiplication by $i$, the complex structure, of square $-1$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form carried by the product |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | the general plain bilinear form, the form of the trace form |
 | $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ | Gram matrix of the realified form $\langle\cdot,\cdot\rangle_{\natural}$, of signature $(4,4)$ |
-| $L_{\tilde Q_3}$, $R_{\tilde Q_3}$ | the left and the right multiplications, $\mathbb{C}_{\mathbb{B}}$-linear on $\mathbb{R}^8$ |
+| $L_{\tilde Q_3}$, $R_{\tilde Q_3}$ | the left and the right multiplications, $\mathbb{B}_{C}$-linear on $\mathbb{R}^8$ |
 | $\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})$ | the trace form, $=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$, signature $(4,4)$ |
-| $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the real form closed under the product, with $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ |
+| $\mathbb{B}_{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the real form closed under the product, with $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ |
 
 ## Further Reading
 

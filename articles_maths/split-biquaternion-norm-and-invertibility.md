@@ -143,10 +143,10 @@ For the two split-complex-valued norms the table gives the real part and its sig
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 - q'^2_t$ $(1,1)$ | $q_t^2 - q'^2_t$ $(1,1)$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $q'_\mu = 0$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ |
-| $\mathbb{M}_+$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
-| $\mathbb{M}_-$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
+| $\mathbb{B}_{\Psi}$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
+| $\mathbb{B}_{\Phi}$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
 
-On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, while the Krein form is $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on $\mathbb{M}_-$.
+On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, while the Krein form is $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$.
 
 ## The Hermitian and Krein Forms
 
@@ -222,7 +222,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
 $$
 
-which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{M}_+$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{M}_-$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
+which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
 
 ### The Four Forms and Their Norms
 
@@ -514,9 +514,9 @@ $$
 
 This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a copy of the division algebra $\mathbb{H}$.
 
-### The Hermitian Subspace $\mathbb{M}_+$
+### The Hermitian Subspace $\mathbb{B}_{\Psi}$
 
-An element of $\mathbb{M}_+$ has the form
+An element of $\mathbb{B}_{\Psi}$ has the form
 
 $$
 \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
@@ -530,17 +530,17 @@ $$
 
 Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$.
 
-So the split-biquaternion norm on $\mathbb{M}_+$ is
+So the split-biquaternion norm on $\mathbb{B}_{\Psi}$ is
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2,
 $$
 
-which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_+$ contains no zero divisors and every nonzero element of $\mathbb{M}_+$ is invertible.
+which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Psi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Psi}$ is invertible.
 
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
+### The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$
 
-An element of $\mathbb{M}_-$ has the form
+An element of $\mathbb{B}_{\Phi}$ has the form
 
 $$
 \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad r_0, q_x, q_y, q_z \in \mathbb{R}.
@@ -552,7 +552,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = (j r_0)^2 + q_x^2 + q_y^2 + q_z^2 = r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
-which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_-$ contains no zero divisors and every nonzero element of $\mathbb{M}_-$ is invertible.
+which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Phi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Phi}$ is invertible.
 
 ### Summary of the Distribution
 
@@ -560,8 +560,8 @@ Of the four fixed-point subspaces:
 
 - $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ contains zero divisors (inherited from $\mathbb{C}_{\mathrm{spl}}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{C}_{\mathrm{spl}}$.
 - $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a division algebra: every nonzero element is invertible.
-- $\mathbb{M}_+$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
-- $\mathbb{M}_-$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
+- $\mathbb{B}_{\Psi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
+- $\mathbb{B}_{\Phi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 
 ## Summary
 
@@ -611,8 +611,8 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace |
-| $\mathbb{M}_+$ | Hermitian subspace |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace |
 
 ## Further Reading
 

@@ -113,7 +113,7 @@ which is real and **positive definite**, vanishing only at $\tilde{Q} = 0$.
 
 **Proof.** With $Q_\mu = q_\mu$ real, $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \sum_\mu q_\mu^2$.
 
-Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{M}_\pm$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
+Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi,\Phi}$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
 
 ### Units and Idempotents
 
@@ -153,8 +153,8 @@ The intersections of $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ with the other dis
 | pair | intersection | $\dim_{\mathbb{R}}$ |
 |---|---|---|
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$ | $\mathbb{R} \vec e_x \oplus \mathbb{R} \vec e_y \oplus \mathbb{R} \vec e_z$ | $3$ |
+| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Psi}$ | $\mathbb{R}$ | $1$ |
+| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}$ | $\mathbb{R} \vec e_x \oplus \mathbb{R} \vec e_y \oplus \mathbb{R} \vec e_z$ | $3$ |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\mathbb{R} \vec e_x \oplus \mathbb{R} \vec e_y \oplus \mathbb{R} \vec e_z$ | $3$ |
 
 The subspace meets the split complex subspace and the Hermitian subspace each in the real line $\mathbb{R}$, the line of real scalars; it meets the anti-Hermitian subspace and the vector subspace each in the three-dimensional space of pure real quaternions. Consequently the quaternion subspace and the anti-Hermitian subspace together span a subspace of dimension $4 + 4 - 3 = 5$, not the whole algebra, while the quaternion and split complex subspaces together span $4 + 2 - 1 = 5$. The full intersection and sum tables are in *Split-Biquaternion Relations Between Subspaces*.
@@ -184,7 +184,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed sp
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q \times \vec v$ | Commutator, a pure quaternion |
 | $S^2$ | The roots of $-1$ within the subspace, unit pure quaternions |
 | $\varphi(\tilde{Q}) = (\tilde{Q}, \tilde{Q})$ | Diagonal image in $\mathbb{H} \oplus \mathbb{H}$ |
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | The other distinguished subspaces |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The other distinguished subspaces |
 | $\sum_\mu \partial^2/\partial q_\mu^2$ | Quaternion Laplace operator on the subspace |
 | $SO(4)$, $S^3\times S^3$ | Rotations and unit group acting on the quaternion subspace |
 

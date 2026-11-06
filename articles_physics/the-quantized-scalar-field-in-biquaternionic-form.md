@@ -18,7 +18,7 @@ The article is organised as follows. The next section treats the field as an ope
 
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the Lagrangian, the equal-time commutators, the mode algebra, and the Hamiltonian.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two branches, and the mass-shell condition.
-- Companion article *Noether's Theorem in Biquaternionic Form*, for the $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$ and the energy–momentum tensor.
+- Companion article *Noether's Theorem in Biquaternionic Form*, for the $\mathrm{U}(1)$ current $\tilde J\in\mathbb{B}_{\Phi}$ and the energy–momentum tensor.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector, the biquaternion norm, and the plane-wave phase.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the c-number commutator.
@@ -47,7 +47,7 @@ $$
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
 
 - **The field commutes with the algebra.** For every $\tilde Q\in\mathbb{B}$ and every test function, $[\tilde{Ξ}_{\mathrm{fop}}(f),\tilde Q]=0$ in the sense that the field carries no value-space index on which $\tilde Q$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
-- **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{M}_+$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde{Ξ}\tilde U^{*}=\tilde{Ξ}$, because $\tilde{Ξ}$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_t$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
+- **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{B}_{\Psi}$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde{Ξ}\tilde U^{*}=\tilde{Ξ}$, because $\tilde{Ξ}$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_t$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
 - **The field is not an element of $\mathbb{B}$.** Its coefficients $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ are not in the algebra, as the trace argument below shows; the field is an operator on the Fock space built from a module, and the centre is only its value space.
 
 ## The Positive- and Negative-Frequency Parts
@@ -78,7 +78,7 @@ so $\xi_{\mathrm{fop}}^{(+)}$ is the **annihilation part** and $\xi_{\mathrm{fop
 
 The framework admits both cases, and their difference is the standard one, sharpened by the algebra's conjugation structure.
 
-**The complex (charged) field.** Here $\xi_{\mathrm{fop}}^{\dagger}\ne\xi_{\mathrm{fop}}$, and the expansion contains two independent operator sets, $a_{\mathrm{fop},\vec p}$ and $b_{\mathrm{fop},\vec p}$. The field carries a conserved $\mathrm{U}(1)$ charge, with $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$ and $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}^{\dagger}]=+\xi_{\mathrm{fop}}^{\dagger}$, so the field operator has a definite charge and its conjugate has the opposite one. The charge is the Noether charge of the current $\tilde J\in\mathbb{M}_-$ of the companion article *Noether's Theorem in Biquaternionic Form*.
+**The complex (charged) field.** Here $\xi_{\mathrm{fop}}^{\dagger}\ne\xi_{\mathrm{fop}}$, and the expansion contains two independent operator sets, $a_{\mathrm{fop},\vec p}$ and $b_{\mathrm{fop},\vec p}$. The field carries a conserved $\mathrm{U}(1)$ charge, with $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$ and $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}^{\dagger}]=+\xi_{\mathrm{fop}}^{\dagger}$, so the field operator has a definite charge and its conjugate has the opposite one. The charge is the Noether charge of the current $\tilde J\in\mathbb{B}_{\Phi}$ of the companion article *Noether's Theorem in Biquaternionic Form*.
 
 **Charge conjugation.** The map that exchanges particles and antiparticles is
 
@@ -177,7 +177,7 @@ U(\Lambda,a)\,\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\varphi)\,U(\Lambda,a)^{-1}
 =\tilde{Ξ}_{\mathrm{fop}}\big(\Lambda\tilde R_\varphi+a\big),
 $$
 
-the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde R_\varphi\mapsto\tilde U\tilde R_\varphi\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
+the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{B}_{\Psi}$ acting on the material coordinate by conjugation, $\tilde R_\varphi\mapsto\tilde U\tilde R_\varphi\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
 
 The internal symmetry acts by the central phase,
 
@@ -191,7 +191,7 @@ U_{\mathrm{fop},\alpha}\,\tilde{Ξ}_{\mathrm{fop}}^{{*}}\,U_{\mathrm{fop},\alpha
 =\exp(+i\alpha)\,\tilde{Ξ}_{\mathrm{fop}}^{{*}} ,
 $$
 
-and it commutes with the Poincaré action. The generator $Ϙ_{\mathrm{fop}}$ is the Noether charge of the current $\tilde J\in\mathbb{M}_-$; the phase is central, so it multiplies the field by a central $*$-unitary and does not act on the state module's spinor structure. In this sense the framework's canonical internal symmetry is the group of central phases, and the scalar field is its simplest charged representation.
+and it commutes with the Poincaré action. The generator $Ϙ_{\mathrm{fop}}$ is the Noether charge of the current $\tilde J\in\mathbb{B}_{\Phi}$; the phase is central, so it multiplies the field by a central $*$-unitary and does not act on the state module's spinor structure. In this sense the framework's canonical internal symmetry is the group of central phases, and the scalar field is its simplest charged representation.
 
 Two statements must be kept apart, because the corpus uses both. The phase $\exp(-i\alpha)$ is the **active** $\mathrm{U}(1)$ transformation of the field operator, generated by the charge. The Wick-rotated weight $\exp(-S_E/\hbar)$ is a **weight** in a functional integral on the centre, not a transformation of the field; the two are distinct and are not to be identified. The former is a symmetry, the latter is a convergence factor.
 
@@ -230,7 +230,7 @@ where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave
 
 ## Summary
 
-The quantized scalar field of the framework is an operator-valued distribution whose value space is the centre $\mathbb{C}_{\mathbb{B}}$: at each event it is an operator times $e_t$, it commutes with every element of $\mathbb{B}$, and the Lorentz rotors act on it trivially, which is the algebraic content of spin $0$. It splits into an annihilation part $\xi_{\mathrm{fop}}^{(+)}$, which annihilates the vacuum and is the positive-frequency transport of the central phase, and a creation part $\xi_{\mathrm{fop}}^{(-)}$, its adjoint; the split is Lorentz invariant because the sign of the energy is. The complex field carries a $\mathrm{U}(1)$ charge, with $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$, and charge conjugation is the exchange $a_{\mathrm{fop}}\leftrightarrow b_{\mathrm{fop}}$; the real field is the Hermitian case $b_{\mathrm{fop}}=a_{\mathrm{fop}}$ with vanishing charge. The algebra's real structure $\flat=-{}^{*}$ is not charge conjugation.
+The quantized scalar field of the framework is an operator-valued distribution whose value space is the centre $\mathbb{B}_{C}$: at each event it is an operator times $e_t$, it commutes with every element of $\mathbb{B}$, and the Lorentz rotors act on it trivially, which is the algebraic content of spin $0$. It splits into an annihilation part $\xi_{\mathrm{fop}}^{(+)}$, which annihilates the vacuum and is the positive-frequency transport of the central phase, and a creation part $\xi_{\mathrm{fop}}^{(-)}$, its adjoint; the split is Lorentz invariant because the sign of the energy is. The complex field carries a $\mathrm{U}(1)$ charge, with $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$, and charge conjugation is the exchange $a_{\mathrm{fop}}\leftrightarrow b_{\mathrm{fop}}$; the real field is the Hermitian case $b_{\mathrm{fop}}=a_{\mathrm{fop}}$ with vanishing charge. The algebra's real structure $\flat=-{}^{*}$ is not charge conjugation.
 
 The defining property of the field is that its commutator is a c-number,
 
@@ -251,8 +251,8 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\,\partial/\partial R_k$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\varphi)=\xi_{\mathrm{fop}}(r_x)e_t$ | Quantized scalar field (central-valued) |
@@ -266,7 +266,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P\rangle_{\natural}=-\mu^2$ |
 | $\tilde P=i\omega\,e_t+\vec p$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$, $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
-| $\tilde U\in\mathbb{M}_+$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
+| $\tilde U\in\mathbb{B}_{\Psi}$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading

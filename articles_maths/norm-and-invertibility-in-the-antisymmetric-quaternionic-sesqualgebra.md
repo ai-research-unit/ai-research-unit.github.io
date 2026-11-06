@@ -101,7 +101,7 @@ $$
 
 has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot.
 
-*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec Q_3)=0\}$, and the dimension count gives the bijection.
+*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\mathbb{B}_{V},\ (\vec W,\vec Q_3)=0\}$, and the dimension count gives the bijection.
 
 So the equation $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 

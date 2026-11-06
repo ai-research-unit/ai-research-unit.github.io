@@ -48,7 +48,7 @@ so, on the vector subspace, its matrix is the conjugate-linear map given by the 
 $$
 \boxed{\;
 \ker L_{\tilde Q_3}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3},\qquad
-\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\}
+\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathbb{B}_{V}:(\vec Q_3,\vec V)=0\}
 \;},
 $$
 
@@ -90,7 +90,7 @@ $$
 
 **Theorem (the derivations).** The derivations of the block form a real vector space of dimension $7$, the direct sum
 
-$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$
+$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$
 
 where the first summand consists of the maps $\tilde Q_2\mapsto\lambda(Q_{2t})e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
 
@@ -148,7 +148,7 @@ and it vanishes exactly when $L_{\tilde Q_3}\tilde Q_2=0$.
 
 ## Summary
 
-The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ and image the complex plane orthogonal to $\vec Q_3$; its adjoint with respect to the Krein form is its negative, $L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec Q_3}(\vec Q_3,\vec R)-(\vec Q_3,\overline{\vec Q_3})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde Q_3}\tilde Q_2,L_{\tilde Q_3}\tilde Q_2\rangle_{\natural*}=-|\vec Q_3\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
+The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ and image the complex plane orthogonal to $\vec Q_3$; its adjoint with respect to the Krein form is its negative, $L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec Q_3}(\vec Q_3,\vec R)-(\vec Q_3,\overline{\vec Q_3})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde Q_3}\tilde Q_2,L_{\tilde Q_3}\tilde Q_2\rangle_{\natural*}=-|\vec Q_3\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
 
 ## Summary of Notation
 
@@ -159,7 +159,7 @@ The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R
 | $\mathrm{im}\,L_{\tilde Q_3}=\{\vec V:(\vec Q_3,\vec V)=0\}$ | the image, a complex plane |
 | rank $4$, nullity $4$, trace $0$ | the invariants of the operator |
 | $L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3}$ | the adjoint, conjugate-linear |
-| $\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$ | the derivations, of real dimension $7$ |
+| $\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R})$ | the derivations, of real dimension $7$ |
 | $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ | the structure group |
 | $L_{\tilde Q_3}^2\tilde Q_2=\overline{\vec Q_3}(\vec Q_3,\vec R)-(\vec Q_3,\overline{\vec Q_3})\vec R$ | the square of the operator |
 | $\overline{L}_{\tilde Q_3}=L_{\overline{\vec Q_3}}$, $L_{\tilde Q_3}L_{\overline{\vec Q_3}}\tilde Q_2=\vec Q_3\times(\vec Q_3\times\vec R)$ | the conjugate operator and the two products |

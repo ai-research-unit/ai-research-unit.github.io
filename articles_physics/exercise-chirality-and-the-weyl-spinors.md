@@ -8,7 +8,7 @@ The following are assumed.
 
 - The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two values of the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
 - The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ carry the two values of the subscript, and they are named in Problem 1.
-- The group $SL(2,\mathbb{C})$ is the set of unit elements, and $\pi$ is its double cover of $SO^{+}(1,3)$, acting on $\mathbb{M}_-$ (*Norm and Unitary Conventions*, §*The Unitary Convention*; the parent article).
+- The group $SL(2,\mathbb{C})$ is the set of unit elements, and $\pi$ is its double cover of $SO^{+}(1,3)$, acting on $\mathbb{B}_{\Phi}$ (*Norm and Unitary Conventions*, §*The Unitary Convention*; the parent article).
 - The two actions. On one part the group acts by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$; on the other by left multiplication with the coefficient conjugate, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde U}\,\tilde{Ξ}_{\mathrm{sp}}$ (the parent article, §*The Two Halves*).
 - The forms. The quaternionic form $\langle X,Y\rangle_{\natural}$, the Hermitian form $\langle X,Y\rangle_{*}$ and the biquaternion norm $\langle X\rangle_{\natural}$ (*Product and Form Conventions*, §*The Form Convention*; *Norm and Unitary Conventions*, §*The Norm Convention*). Their formulas are theirs and are not restated here.
 
@@ -68,7 +68,7 @@ $$
 
 and with $\hbar$ and $c$ restored the same statement is $(\Box - m^2c^2/\hbar^2)\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{M}_-$ and $k = P/\hbar$, whose components are $(k_0,\vec k) = (E/(\hbar c),\vec p/\hbar)$,
+**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k = P/\hbar$, whose components are $(k_0,\vec k) = (E/(\hbar c),\vec p/\hbar)$,
 
 $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
@@ -84,7 +84,7 @@ $$
 
 in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by the declared unit $\vec u$. At $\vec u=\vec e_z$ this is the form the parent article prints. The two equations are related by the dictionary and are not the same operator: the mass of the pair is the coupling of one value to the other; the mass of the two-sided equation is a conjugation together with a direction. Chirality is why the second side is needed at all: left multiplication preserves each value, so no left multiplication, and no sum of left multiplications, carries one value into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression.
 
-Three conjugations must not be confused. The coefficient conjugation $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde{Ξ}}_{\mathrm{sp}}$ is the antilinear map that relates the defining action to its conjugate; the Hermitian star $\tilde{Ξ}_{\mathrm{sp}}^*=\bar{\tilde{Ξ}}_{\mathrm{sp}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, with fixed space $\mathbb{M}_-$. None of the three is the mass. The exercise therefore treats the mass term in the explicit pair, where it is unambiguous.
+Three conjugations must not be confused. The coefficient conjugation $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde{Ξ}}_{\mathrm{sp}}$ is the antilinear map that relates the defining action to its conjugate; the Hermitian star $\tilde{Ξ}_{\mathrm{sp}}^*=\bar{\tilde{Ξ}}_{\mathrm{sp}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, with fixed space $\mathbb{B}_{\Phi}$. None of the three is the mass. The exercise therefore treats the mass term in the explicit pair, where it is unambiguous.
 
 ## Problem 3: A Boost and a Rotation of Each Half
 
@@ -147,19 +147,19 @@ $$
 (w\,v^{*})\;\longmapsto\;(Uw)(Uv)^{*}=U\,(w\,v^{*})\,U^{*}.
 $$
 
-**Hermiticity and the general four-vector map.** The element $w v^{*}$ is Hermitian if and only if $w$ and $v$ are proportional by a real factor; in general it is an element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the **Hermitian part**
+**Hermiticity and the general four-vector map.** The element $w v^{*}$ is Hermitian if and only if $w$ and $v$ are proportional by a real factor; in general it is an element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{B}_{\Psi}$ (real dimension four) is the **Hermitian part**
 
 $$
-H(w,v) = \tfrac12\left(w\,v^{*} + v\,w^{*}\right)\in\mathbb{M}_+ .
+H(w,v) = \tfrac12\left(w\,v^{*} + v\,w^{*}\right)\in\mathbb{B}_{\Psi} .
 $$
 
 For $v = \pm w$ this reduces to $H = \pm ww^{*}$, and the parent's unsymmetrised $\tilde{Q} = wv^{*}$ is then already Hermitian. In general one must symmetrize. The four-vector associated with the pair is
 
 $$
-V(w,v) = i\,H(w,v) \in \mathbb{M}_- ,
+V(w,v) = i\,H(w,v) \in \mathbb{B}_{\Phi} ,
 $$
 
-where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.
+where the last inclusion uses $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$.
 
 **Biquaternion norm.** Write $H = c r_t\,e_t + i\vec r_\psi$. Then $V = ic r_t\,e_t - \vec r_\psi$, and
 
@@ -167,7 +167,7 @@ $$
 \langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\langle H\rangle_{\natural} = -c^2 r_t^2 + \vec r_\psi^2 \qquad(\vec r_\psi^2=|\vec r_\psi|^2),
 $$
 
-which is the $(3,1)$ Minkowski form of $\mathbb{M}_-$. The check is the single-element case: for $v = w$ of one value one has $H = ww^{*}$, whose quaternionic norm vanishes (residual $<10^{-14}$ over $100$ elements), so
+which is the $(3,1)$ Minkowski form of $\mathbb{B}_{\Phi}$. The check is the single-element case: for $v = w$ of one value one has $H = ww^{*}$, whose quaternionic norm vanishes (residual $<10^{-14}$ over $100$ elements), so
 
 $$
 \langle V\rangle_{\natural} = 0 .
@@ -216,7 +216,7 @@ and $SL(2,\mathbb{C})$ is the double cover.
 
 ## Problem 7: The One-Sided Action and the Sandwich
 
-**From the one-sided action to the sandwich.** Let $w,v$ be of one value and form $V = V(w,v) = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{M}_-$. Under the field action $w\mapsto Uw$, $v\mapsto Uv$, the bilinear transforms as
+**From the one-sided action to the sandwich.** Let $w,v$ be of one value and form $V = V(w,v) = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$. Under the field action $w\mapsto Uw$, $v\mapsto Uv$, the bilinear transforms as
 
 $$
 V \;\longmapsto\; U\,V\,U^{*},
@@ -224,7 +224,7 @@ $$
 
 which is exactly the sandwich of the material sector. One element of the field contributes one factor, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ (linear, one-sided); the four-vector is built from two of them and therefore carries two factors, $UVU^{*}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a *pair* of elements.
 
-**The sign that cancels and the sign that does not.** Replace $\tilde U$ by $-\tilde U$. On four-vectors $(-U)V(-U)^{*} = UVU^{*}$, because the two signs cancel; on the field $(-U)\tilde{Ξ}_{\mathrm{sp}} = -U\tilde{Ξ}_{\mathrm{sp}}\neq U\tilde{Ξ}_{\mathrm{sp}}$ for every nonzero field. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{M}_-$ but the kernel of the field action is trivial: the field action does not descend to $SO^{+}(1,3)$.
+**The sign that cancels and the sign that does not.** Replace $\tilde U$ by $-\tilde U$. On four-vectors $(-U)V(-U)^{*} = UVU^{*}$, because the two signs cancel; on the field $(-U)\tilde{Ξ}_{\mathrm{sp}} = -U\tilde{Ξ}_{\mathrm{sp}}\neq U\tilde{Ξ}_{\mathrm{sp}}$ for every nonzero field. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{B}_{\Phi}$ but the kernel of the field action is trivial: the field action does not descend to $SO^{+}(1,3)$.
 
 **Composition.** Successive rotors compose by multiplication in both pictures: $\tilde U_2(\tilde U_1\tilde{Ξ}_{\mathrm{sp}}) = (\tilde U_2\tilde U_1)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde U_2(\tilde U_1V\tilde U_1^{*})\tilde U_2^{*} = (\tilde U_2\tilde U_1)V(\tilde U_2\tilde U_1)^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.
 
@@ -254,7 +254,7 @@ The solutions have the expected limits.
 
 **2. Chirality is a real-structure notion.** The two values are invisible to the algebra as a complex algebra, where a left multiplication acts on both alike; they become visible only through the conjugate action, which the coefficient conjugation supplies.
 
-**3. The four-vector is the bilinear shadow of the field.** The sandwich on $\mathbb{M}_-$ arises from the one-sided action through the Hermitian part; the vector action is two factors of the field, and that is why it is quadratic where the field action is linear.
+**3. The four-vector is the bilinear shadow of the field.** The sandwich on $\mathbb{B}_{\Phi}$ arises from the one-sided action through the Hermitian part; the vector action is two factors of the field, and that is why it is quadratic where the field action is linear.
 
 **4. The double cover is a kernel statement.** $\ker\pi = \{\pm e_t\}$ on the four-vectors, but trivial on the field; the difference is one factor of the rotor versus two.
 
@@ -264,7 +264,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 1. **Right-handed action, exact form.** The parent says the right-handed action is "equivalent to the coefficientwise-conjugate action, the two differing by conjugation with the invariant tensor"; it does not give the identity. The precise identity is $\bar{\tilde U}=(\tilde U^{*})^{-1}$, verified numerically, and it is a statement about elements and needs no tensor: the bar and the natural sign commute, and at norm one the natural sign is the inverse. Two points of notation had to be settled for it. The conjugation that carries the conjugate action is the **coefficientwise** one, $\bar{\tilde U} = (\tilde U^{*})^{\natural}$; the star by itself is the Hermitian conjugation, which gives $\tilde U^{*}$ and not the inverse. And the inverse is what the conjugate action needs, since only $(\tilde U^{*})^{-1}$ leaves the Hermitian pairing invariant.
 
-2. **The field-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{*}$ (its $u,v$ are the $w,v$ used here) and warns that for a generic pair $iuv^{*}$ does not lie in $\mathbb{M}_-$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(wv^{*}+vw^{*})\in\mathbb{M}_+$, with four-vector image $V = iH\in\mathbb{M}_-$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = wv^{*}$ is general, but the identification of $i\tilde{Q}$ with a four-vector is not, and neither is the rank-one property, which needs the two elements to share a value.
+2. **The field-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{*}$ (its $u,v$ are the $w,v$ used here) and warns that for a generic pair $iuv^{*}$ does not lie in $\mathbb{B}_{\Phi}$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Psi}$, with four-vector image $V = iH\in\mathbb{B}_{\Phi}$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = wv^{*}$ is general, but the identification of $i\tilde{Q}$ with a four-vector is not, and neither is the rank-one property, which needs the two elements to share a value.
 
 3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term couples the two values, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
 
@@ -343,7 +343,7 @@ The four contraction sums are fixed by the metric, because a cell's square is. W
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\mathrm b}=\tilde U_{\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{M}_-$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+m^2c^2/\hbar^2$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\mathrm b}=\tilde U_{\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 
@@ -351,8 +351,8 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
-| $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Complex subspace (centre), real-quaternion subspace |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material), Hermitian (informational) subspaces |
+| $\mathbb{B}_{C}, \mathbb{B}_{H}$ | Complex subspace (centre), real-quaternion subspace |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material), Hermitian (informational) subspaces |
 | $\langle X\rangle_{\natural} = XX^{\natural}$ | Biquaternion norm; $\langle X,Y\rangle_{\natural}=\mathrm{Sc}(X^{\natural}Y)$ its form |
 | $\langle X,Y\rangle_{*} = \mathrm{Sc}(XY^{*})$ | Hermitian form |
 | $\vec u$ | The declared unit vector of the frame, $\vec u^2=-e_t$ |
@@ -361,8 +361,8 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
-| $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
+| $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |
 | $H = \tfrac12(wv^{*}+vw^{*})$, $V = iH$ | Hermitian part and four-vector from a pair of elements |
 | $SL(2,\mathbb{C})$, $\pi$ | Unit elements; double cover of $SO^{+}(1,3)$ |

@@ -7,7 +7,7 @@ The **pion** is the lightest hadron and the clearest realisation in nature of a 
 This article constructs the pion and the chiral Lagrangian in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The framework's available compact group is the group of unit quaternions, the elements $\tilde u$ with $\langle\tilde u\rangle_\natural = e_t$, isomorphic to $SU(2)$ and to $\mathbb{S}^3$, and the pion triplet is naturally carried by the adjoint of its Lie algebra, which lies in the material sector:
 
 $$
-\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{M}_- , \qquad k = 1,2,3 ,
+\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} , \qquad k = 1,2,3 ,
 $$
 
 an isovector whose three components are simultaneously the three components of a material-sector vector. The chiral field is the unit element
@@ -90,10 +90,10 @@ $$
 \mathrm{Sc}\!\left(\vec\pi^{\natural}\vec\pi\right) = \sum_k\pi_k\pi_k ,
 $$
 
-so the triplet's invariant length is the quaternion norm, the same norm that the free-field articles use. The pions are therefore carried by the material sector $\mathbb{M}_-$, exactly as the framework's four-current and its gauge fields are, and the assignment is
+so the triplet's invariant length is the quaternion norm, the same norm that the free-field articles use. The pions are therefore carried by the material sector $\mathbb{B}_{\Phi}$, exactly as the framework's four-current and its gauge fields are, and the assignment is
 
 $$
-\vec\pi\in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+\vec\pi\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 \qquad
 \vec\pi^{*} = -\vec\pi ,
 \qquad
@@ -293,7 +293,7 @@ $$
 \langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{kl} ,
 $$
 
-which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{C}_{\mathbb{B}}$. The volume cell is an operator of the frame and not an element of the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
+which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The volume cell is an operator of the frame and not an element of the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
 
 **The soft limit.** Because every pion coupling is a derivative, the amplitude for a process with an additional pion of momentum $k$ is proportional to $k$ as $k\to0$, and the amplitude with an extra soft pion vanishes: the Adler zero. The statement follows from the form of $\mathcal{L}_\pi^{(2)}$ alone and is therefore inherited by the framework's chiral Lagrangian unchanged. It is the reason the pion is weakly coupled at low energy even though the underlying theory is strongly coupled.
 
@@ -307,7 +307,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## The Biquaternion Reading
 
-**The pion is a material-sector adjoint.** The framework's pion field is $\vec\pi = \sum_k\pi_k\vec e_k$, an element of the compact subalgebra $\mathfrak{su}(2)$ that lies in $\mathbb{M}_-$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\vec\pi^{\natural}\vec\pi)=-\mathrm{Sc}(\vec\pi^2)=\sum_k\pi_k\pi_k$ is the quaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
+**The pion is a material-sector adjoint.** The framework's pion field is $\vec\pi = \sum_k\pi_k\vec e_k$, an element of the compact subalgebra $\mathfrak{su}(2)$ that lies in $\mathbb{B}_{\Phi}$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\vec\pi^{\natural}\vec\pi)=-\mathrm{Sc}(\vec\pi^2)=\sum_k\pi_k\pi_k$ is the quaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
 
 **The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\vec\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{*}$ is one left multiplication and one right multiplication. The unbroken isospin is the diagonal, conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
 
@@ -381,7 +381,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector,
 
 $$
-\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{M}_- ,
+\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 \qquad
 \left[\vec e_j,\vec e_k\right] = 2\sum_l\epsilon_{jkl}\vec e_l ,
 \qquad
@@ -417,10 +417,10 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Coefficient basis, $\vec e_k^2 = -e_t$, $\vec e_j\vec e_k = -\delta_{jk}e_t+\sum_l\epsilon_{jkl}\vec e_l$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathrm{Sc}$, ${}^{\natural}$, ${}^{*}$ | Scalar part, intrinsic conjugation, Hermitian conjugation; $\vec e_k^{\natural} = \vec e_k^{*} = -\vec e_k$, $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$ |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternions; the unit elements are those with $\langle\tilde u\rangle_\natural = e_t$, $\cong SU(2)\cong\mathbb{S}^3$ |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the condensate and of every scalar singlet |
-| $\vec\pi = \sum_k\pi_k\vec e_k\in\mathfrak{su}(2)\subset\mathbb{M}_-$ | Pion triplet; isovector adjoint |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{H}$ | Real quaternions; the unit elements are those with $\langle\tilde u\rangle_\natural = e_t$, $\cong SU(2)\cong\mathbb{S}^3$ |
+| $\mathbb{B}_{C}$ | Centre; home of the condensate and of every scalar singlet |
+| $\vec\pi = \sum_k\pi_k\vec e_k\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Pion triplet; isovector adjoint |
 | $[\vec e_j,\vec e_k] = 2\sum_l\epsilon_{jkl}\vec e_l$ | Compact algebra of the framework |
 | $T_k = \tfrac{i}{2}\vec e_k$ | Hermitian generators of the triplet |
 | $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$, $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$ | The identities fixing the normalisation |

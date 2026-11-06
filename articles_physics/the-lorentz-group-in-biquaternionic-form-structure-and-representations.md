@@ -14,10 +14,10 @@ Three questions organize the discussion.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the scalar imaginary is $i$, which commutes with the quaternion units. The anti-Hermitian and Hermitian subspaces are
 $$
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
+\mathbb{B}_{\Phi}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
+\mathbb{B}_{\Psi}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec v_b$ (or $\vec u_{\mathrm b}$) denotes a boost direction and $\theta_{\mathrm{rpd}}$ a rapidity.
+and $\mathbb{B}_{H}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec v_b$ (or $\vec u_{\mathrm b}$) denotes a boost direction and $\theta_{\mathrm{rpd}}$ a rapidity.
 
 ## Rotors, Boosts, and Rotations
 
@@ -25,9 +25,9 @@ A **Lorentz rotor** $\tilde U_{\mathrm{lor}}$ is a biquaternion of unit norm,
 $$
 \tilde U_{\mathrm{lor}}\in\mathbb{B},\qquad \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t,
 $$
-where $\tilde U_{\mathrm{lor}}{}^{\natural}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by **rotor conjugation**
+where $\tilde U_{\mathrm{lor}}{}^{\natural}$ is the quaternion conjugate. It acts on the material sector $\mathbb{B}_{\Phi}$ by **rotor conjugation**
 $$
-\tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{Q}\,\tilde U_{\mathrm{lor}}{}^{*},\qquad \tilde{Q}\in\mathbb{M}_-.
+\tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{Q}\,\tilde U_{\mathrm{lor}}{}^{*},\qquad \tilde{Q}\in\mathbb{B}_{\Phi}.
 $$
 The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$) it is exactly
 $$
@@ -38,24 +38,24 @@ because the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\nat
 
 Two families of rotors have a direct geometric meaning.
 
-A **pure boost** along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\vec u_{\mathrm b}^2=-e_t$) with **rapidity** $\theta_{\mathrm{rpd}}$ is
+A **pure boost** along the unit direction $\vec u_{\mathrm b}\in\mathbb{B}_{H}$ (a pure real unit quaternion, $\vec u_{\mathrm b}^2=-e_t$) with **rapidity** $\theta_{\mathrm{rpd}}$ is
 $$
 \tilde U_{\mathrm b}=\exp\!\left(\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right)
 =\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 \qquad \tanh\theta_{\mathrm{rpd}}=\frac{v_b}{c},
 $$
-where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, hence lies in $\mathbb{M}_+$, and it has unit norm; with the positivity required by the polar word it is the boost factor of a general rotor. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
+where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, hence lies in $\mathbb{B}_{\Psi}$, and it has unit norm; with the positivity required by the polar word it is the boost factor of a general rotor. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{B}_{H}$ by angle $\theta$ is
 $$
 \tilde u_{\mathrm r}=\exp\!\left(\frac{\theta}{2}\,\vec u_{\mathrm r}\right)
 =\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
 $$
-a real quaternion of unit norm, lying in $\mathbb{H}_{\mathbb{B}}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\vec u_{\mathrm r})^2=-e_t$ for a rotation, $(i\vec u_{\mathrm b})^2=+e_t$ for a boost.
+a real quaternion of unit norm, lying in $\mathbb{B}_{H}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\vec u_{\mathrm r})^2=-e_t$ for a rotation, $(i\vec u_{\mathrm b})^2=+e_t$ for a boost.
 
-The group $\mathsf{M}_2^{-1}(SU(2))=SL(2,\mathbb{C})\cap\mathbb{H}_{\mathbb{B}}$ of unit real quaternions is the group of rotations; it is the double cover of $SO(3)$. The sets
+The group $\mathsf{M}_2^{-1}(SU(2))=SL(2,\mathbb{C})\cap\mathbb{B}_{H}$ of unit real quaternions is the group of rotations; it is the double cover of $SO(3)$. The sets
 $$
-\mathcal{B}=\{\text{Hermitian unit-norm biquaternions}\}\subset\mathbb{M}_+,
+\mathcal{B}=\{\text{Hermitian unit-norm biquaternions}\}\subset\mathbb{B}_{\Psi},
 \qquad
-\mathcal{R}=SU(2)\subset\mathbb{H}_{\mathbb{B}}
+\mathcal{R}=SU(2)\subset\mathbb{B}_{H}
 $$
 are the boosts and the rotations. The parametrisation of a single transformation by a rotor, its verification against the standard component formulas, and the relation $\tilde U_{\mathrm b}=\sqrt{-(i/c)\tilde{V}^{\natural}}$ between a boost rotor and a four-velocity $\tilde{V}$ are established in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*; they are not repeated here.
 
@@ -187,7 +187,7 @@ of real dimension $6$. In the biquaternion basis it is
 $$
 \mathrm{G}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\ \oplus\ \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-the first summand being the **rotation generators** (anti-Hermitian, in $\mathbb{H}_{\mathbb{B}}$) and the second the **boost generators** (Hermitian, in $\mathbb{M}_+$). The rotation generators are the vector units, and the boost generators are their $i$-multiples,
+the first summand being the **rotation generators** (anti-Hermitian, in $\mathbb{B}_{H}$) and the second the **boost generators** (Hermitian, in $\mathbb{B}_{\Psi}$). The rotation generators are the vector units, and the boost generators are their $i$-multiples,
 $$
 \vec e_k,\qquad K_k=i \vec e_k \qquad (k=1,2,3),
 $$
@@ -328,7 +328,7 @@ the four-complex-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries t
 $$
 \mathbb{B}\;\cong\;M_2(\mathbb{C})\;\cong\;S\otimes\bar S\;\cong\;(\tfrac12,\tfrac12),
 $$
-where $S=\mathbb{C}^2$ is the defining (left-handed) module and $\bar S$ its conjugate. The material subspace $\mathbb{M}_-$ is a real form of this complex representation: complexifying it gives $\mathbb{M}_-\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, and the anti-Hermitian elements are exactly the four-vectors of the companion articles. In this sense the biquaternion algebra **is** the complexified four-vector representation, and $\mathbb{M}_-$ is its real slice.
+where $S=\mathbb{C}^2$ is the defining (left-handed) module and $\bar S$ its conjugate. The material subspace $\mathbb{B}_{\Phi}$ is a real form of this complex representation: complexifying it gives $\mathbb{B}_{\Phi}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, and the anti-Hermitian elements are exactly the four-vectors of the companion articles. In this sense the biquaternion algebra **is** the complexified four-vector representation, and $\mathbb{B}_{\Phi}$ is its real slice.
 
 **As the defining module, twice.** Regarded instead as a left module over itself and acted on by left multiplication, the algebra decomposes as
 $$
@@ -422,7 +422,7 @@ the first from one Weyl spinor with the definite pairing, the second from one We
 
 The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ is the covering homomorphism, with kernel $\{\pm e_t\}$. The same abstract group is known in geometry as the group of motions of hyperbolic three-space, as the Möbius group $\mathrm{PSL}(2,\mathbb{C})$, and as the Laguerre group of the plane.
 
-Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
+Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{B}_{H}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{B}_{\Psi}$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
 \tan\frac{\theta_{\mathrm{wgn}}}{2}
 =\frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta}
@@ -441,14 +441,14 @@ The group that carries the transformations is represented as follows. The group 
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector), home of four-vectors |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector), home of boost rotors |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace, home of rotation rotors |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\tilde U_{\mathrm{lor}}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\tilde U_{\mathrm b}=\cosh\frac\theta_{\mathrm{rpd}}2+i\sinh\frac\theta_{\mathrm{rpd}}2\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm b}=\cosh\frac\theta_{\mathrm{rpd}}2+i\sinh\frac\theta_{\mathrm{rpd}}2\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r}=\cos\frac\theta2+\sin\frac\theta2\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}}=v_b/c$ |
 | $\theta_{\mathrm{wgn}}$ | Thomas–Wigner rotation angle |

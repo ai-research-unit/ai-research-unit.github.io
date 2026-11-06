@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The bracket of the antisymmetric plain algebra, $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$, meets the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and this article reads the bracket on each of the remarkable subspaces, one to a section.
+The bracket of the antisymmetric plain algebra, $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$, meets the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{B}_{C}$, the vector subspace $\mathbb{B}_{V}$, the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ — and this article reads the bracket on each of the remarkable subspaces, one to a section.
 
-Because the bracket is the cross product of the vector parts and nothing else, the readings are read off a single fact: the sector, real or purely imaginary, that the vector part of an element of the subspace occupies. The result is a table of four stabilities and two failures. The centre, the vector subspace, the quaternion subspace and the anti-Hermitian subspace are **stable** under the bracket, hence Lie subalgebras; the anti-quaternion subspace and the Hermitian subspace are **not**, and the bracket of two of their elements is always a real vector. The identifications of the Lie subalgebras are $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$; the two failures have image the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, identified with $\mathfrak{su}(2)$. The centre is where the bracket vanishes and the vector subspace is where it takes its values; the two together are the whole algebra.
+Because the bracket is the cross product of the vector parts and nothing else, the readings are read off a single fact: the sector, real or purely imaginary, that the vector part of an element of the subspace occupies. The result is a table of four stabilities and two failures. The centre, the vector subspace, the quaternion subspace and the anti-Hermitian subspace are **stable** under the bracket, hence Lie subalgebras; the anti-quaternion subspace and the Hermitian subspace are **not**, and the bracket of two of their elements is always a real vector. The identifications of the Lie subalgebras are $\mathbb{B}_{V}\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{B}_{H}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathbb{B}_{\Phi}\cong\mathfrak{u}(2)$; the two failures have image the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, identified with $\mathfrak{su}(2)$. The centre is where the bracket vanishes and the vector subspace is where it takes its values; the two together are the whole algebra.
 
 The bracket is introduced in *Introduction to the Antisymmetric Plain Algebra* and its Lie structure on the whole algebra is *The Lie Algebra of the Antisymmetric Plain Algebra*, where the centre and the identifications of the vector, quaternion and anti-Hermitian subspaces are established; this article owns the reading of the bracket on each of the remarkable subspaces and the two failures, and it defers the whole-algebra structure to that article and the invariant form to *The Killing Form of the Antisymmetric Plain Algebra*. The remarkable subspaces themselves and their relations are *Subspaces and Decompositions*; their reading under the four general products is *Remarkable Subspaces and the Four General Products, Forms and Norms*; the pattern of the reading is the one established there; and the operators of the block are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
@@ -24,14 +24,14 @@ $$
 
 *Proof.* Write $\vec Q_1=i^{\varepsilon}\vec p$, $\vec Q_2=i^{\eta}\vec q$ with $\vec p,\vec q$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\vec Q_1\times\vec Q_2=i^{\varepsilon+\eta}(\vec p\times\vec q)$, and $\vec p\times\vec q\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement.
 
-**Remark (the two gradings).** The rule is a $\mathbb{Z}/2$-grading of the real algebra in two ways. With the two real subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the brackets are $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$, $[\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq i\mathbb{H}_{\mathbb{B}}$ and $[i\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$; with the two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ they are $[\mathbb{M}_-,\mathbb{M}_-]\subseteq\mathbb{M}_-$, $[\mathbb{M}_-,\mathbb{M}_+]\subseteq\mathbb{M}_+$ and $[\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-$. **Both decompositions of the real algebra, $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, are gradings of the bracket**, the first with subalgebra $\mathbb{H}_{\mathbb{B}}$ and the second with subalgebra $\mathbb{M}_-$.
+**Remark (the two gradings).** The rule is a $\mathbb{Z}/2$-grading of the real algebra in two ways. With the two real subspaces $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ the brackets are $[\mathbb{B}_{H},\mathbb{B}_{H}]\subseteq\mathbb{B}_{H}$, $[\mathbb{B}_{H},\mathbb{B}_{iH}]\subseteq \mathbb{B}_{iH}$ and $[\mathbb{B}_{iH},\mathbb{B}_{iH}]\subseteq\mathbb{B}_{H}$; with the two subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ they are $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]\subseteq\mathbb{B}_{\Phi}$, $[\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}]\subseteq\mathbb{B}_{\Psi}$ and $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]\subseteq\mathbb{B}_{\Phi}$. **Both decompositions of the real algebra, $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ and $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$, are gradings of the bracket**, the first with subalgebra $\mathbb{B}_{H}$ and the second with subalgebra $\mathbb{B}_{\Phi}$.
 
 ## The Centre
 
 **Theorem.** The bracket vanishes identically on the centre:
 
 $$
-\tilde Q_1\wedge\tilde Q_2=0\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t).
+\tilde Q_1\wedge\tilde Q_2=0\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{B}_{C}=\mathbb{C}e_t).
 $$
 
 The centre is a Lie subalgebra of $\mathfrak{g}$, abelian of complex dimension one and real dimension two; it is the kernel of the adjoint of every element and the radical of the bracket, and it is the radical of the Killing form of *The Killing Form of the Antisymmetric Plain Algebra*.
@@ -42,15 +42,15 @@ The centre is a Lie subalgebra of $\mathfrak{g}$, abelian of complex dimension o
 
 ## The Vector Subspace
 
-**Theorem.** The vector subspace $\mathrm{Vect}(\mathbb{B})$ is stable under the bracket:
+**Theorem.** The vector subspace $\mathbb{B}_{V}$ is stable under the bracket:
 
 $$
-\vec Q_1\times\vec Q_2\in\mathrm{Vect}(\mathbb{B})\qquad(\vec Q_1,\vec Q_2\in\mathrm{Vect}(\mathbb{B})),
+\vec Q_1\times\vec Q_2\in\mathbb{B}_{V}\qquad(\vec Q_1,\vec Q_2\in\mathbb{B}_{V}),
 $$
 
 and it is a Lie subalgebra of complex dimension three and real dimension six, an ideal, and the derived algebra of the whole block. It is identified with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$,
 
-$$ \boxed{\; \bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
+$$ \boxed{\; \bigl(\mathbb{B}_{V},\wedge\bigr)\cong\bigl(\mathbb{C}^3,\times\bigr)\cong\mathfrak{sl}(2,\mathbb{C}) \;}, $$
 
 and it is simple: it has no nonzero proper ideal.
 
@@ -63,78 +63,78 @@ and it is simple: it has no nonzero proper ideal.
 **Theorem.** The quaternion subspace
 
 $$
-\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in\mathbb{R},\ \vec Q\in\mathbb{R}^3\}
+\mathbb{B}_{H}=\mathbb{R}e_t\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in\mathbb{R},\ \vec Q\in\mathbb{R}^3\}
 $$
 
 is stable under the bracket: the bracket of two of its elements is the cross product of their real vector parts, a real vector. It is a real Lie subalgebra of dimension four,
 
 $$
-\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2),
+\mathbb{B}_{H}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2),
 $$
 
 with the scalar direction $\mathbb{R}e_t$ central and the vector triple $\mathbf{B}_1$ identified with $\mathfrak{su}(2)$, and its derived algebra is $\mathbf{B}_1$.
 
-*Proof.* An element of $\mathbb{H}_{\mathbb{B}}$ has real scalar and real vector parts; the bracket sees only the vector parts and is the cross product of two real vectors, which is a real vector, so the subspace is stable. Its derived algebra is $\mathbf{B}_1$, since $\vec e_x\wedge \vec e_y=\vec e_z$ and cyclically; the real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of $\mathfrak{sl}(2,\mathbb{C})$, and the scalar direction is central. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
+*Proof.* An element of $\mathbb{B}_{H}$ has real scalar and real vector parts; the bracket sees only the vector parts and is the cross product of two real vectors, which is a real vector, so the subspace is stable. Its derived algebra is $\mathbf{B}_1$, since $\vec e_x\wedge \vec e_y=\vec e_z$ and cyclically; the real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of $\mathfrak{sl}(2,\mathbb{C})$, and the scalar direction is central. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
 
-**Remark.** The quaternion subspace is one of the two real forms of the block that carry the real vector triple as their derived algebra; the other is the anti-Hermitian subspace below. **The scalar direction is central and the vector triple is simple, so the quaternion subspace is the direct sum of an abelian line and $\mathfrak{su}(2)$.** In the grading $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ it is the subalgebra, and $i\mathbb{H}_{\mathbb{B}}$ is the complement, read next.
+**Remark.** The quaternion subspace is one of the two real forms of the block that carry the real vector triple as their derived algebra; the other is the anti-Hermitian subspace below. **The scalar direction is central and the vector triple is simple, so the quaternion subspace is the direct sum of an abelian line and $\mathfrak{su}(2)$.** In the grading $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ it is the subalgebra, and $\mathbb{B}_{iH}$ is the complement, read next.
 
 ## The Anti-Quaternion Subspace
 
 **Theorem.** The anti-quaternion subspace
 
 $$
-i\mathbb{H}_{\mathbb{B}}=\mathbb{R}(ie_t)\oplus i\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in i\mathbb{R}^3\}
+\mathbb{B}_{iH}=\mathbb{R}(ie_t)\oplus i\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in i\mathbb{R}^3\}
 $$
 
 is **not** stable under the bracket. The bracket of two of its elements is a real vector, and
 
 $$
-[i\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]=\mathbf{B}_1\cong\mathfrak{su}(2).
+[\mathbb{B}_{iH},\mathbb{B}_{iH}]=\mathbf{B}_1\cong\mathfrak{su}(2).
 $$
 
-A witness of the failure is the pair $i\vec e_x,i\vec e_y$: both lie in $i\mathbb{H}_{\mathbb{B}}$ and
+A witness of the failure is the pair $i\vec e_x,i\vec e_y$: both lie in $\mathbb{B}_{iH}$ and
 
 $$
 (i\vec e_x)\wedge(i\vec e_y)=(i)(i)\,(\vec e_x\wedge \vec e_y)=-\vec e_z,
 $$
 
-which is a real vector and does not lie in $i\mathbb{H}_{\mathbb{B}}$.
+which is a real vector and does not lie in $\mathbb{B}_{iH}$.
 
-*Proof.* Write the vector parts of two elements of $i\mathbb{H}_{\mathbb{B}}$ as $i\vec p$ and $i\vec q$ with $\vec p,\vec q\in\mathbf{B}_1$; then $(i\vec p)\times(i\vec q)=-(\vec p\times\vec q)\in\mathbf{B}_1$, by the sector rule. The bracket therefore leaves the subspace and its image is spanned by the cross products of real vectors, which is the whole of $\mathbf{B}_1$; the witness is the explicit computation.
+*Proof.* Write the vector parts of two elements of $\mathbb{B}_{iH}$ as $i\vec p$ and $i\vec q$ with $\vec p,\vec q\in\mathbf{B}_1$; then $(i\vec p)\times(i\vec q)=-(\vec p\times\vec q)\in\mathbf{B}_1$, by the sector rule. The bracket therefore leaves the subspace and its image is spanned by the cross products of real vectors, which is the whole of $\mathbf{B}_1$; the witness is the explicit computation.
 
-**Remark.** The anti-quaternion subspace is one of the two failures, and the failure is total: **its bracket is not merely outside it, it is in the other grading half.** With the quaternion subspace it forms the grading $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ in which $\mathbb{H}_{\mathbb{B}}$ is the subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the module, and the module is large enough that its own bracket fills the vector triple of the subalgebra.
+**Remark.** The anti-quaternion subspace is one of the two failures, and the failure is total: **its bracket is not merely outside it, it is in the other grading half.** With the quaternion subspace it forms the grading $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ in which $\mathbb{B}_{H}$ is the subalgebra, $\mathbb{B}_{iH}$ the module, and the module is large enough that its own bracket fills the vector triple of the subalgebra.
 
 ## The Hermitian and the Anti-Hermitian Subspaces
 
 **Theorem (the Hermitian subspace is not stable).** The Hermitian subspace
 
 $$
-\mathbb{M}_+=\mathbb{R}e_t\oplus i\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in\mathbb{R},\ \vec Q\in i\mathbb{R}^3\}
+\mathbb{B}_{\Psi}=\mathbb{R}e_t\oplus i\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in\mathbb{R},\ \vec Q\in i\mathbb{R}^3\}
 $$
 
 is **not** stable under the bracket. The bracket of two of its elements is a real vector, and
 
 $$
-[\mathbb{M}_+,\mathbb{M}_+]=\mathbf{B}_1\cong\mathfrak{su}(2).
+[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]=\mathbf{B}_1\cong\mathfrak{su}(2).
 $$
 
-A witness is the pair $i\vec e_x,i\vec e_y$: both lie in $\mathbb{M}_+$ and $(i\vec e_x)\wedge(i\vec e_y)=-\vec e_z$, which does not lie in $\mathbb{M}_+$.
+A witness is the pair $i\vec e_x,i\vec e_y$: both lie in $\mathbb{B}_{\Psi}$ and $(i\vec e_x)\wedge(i\vec e_y)=-\vec e_z$, which does not lie in $\mathbb{B}_{\Psi}$.
 
 *Proof.* Write the vector parts as $i\vec p,i\vec q$ with $\vec p,\vec q\in\mathbf{B}_1$; the sector rule gives $(i\vec p)\times(i\vec q)=-(\vec p\times\vec q)\in\mathbf{B}_1$, outside $i\mathbf{B}_1$, and the image is the whole of $\mathbf{B}_1$.
 
 **Theorem (the anti-Hermitian subspace is stable).** The anti-Hermitian subspace
 
 $$
-\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in\mathbb{R}^3\}
+\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathbf{B}_1=\{Q_te_t+\vec Q:Q_t\in i\mathbb{R},\ \vec Q\in\mathbb{R}^3\}
 $$
 
 is stable under the bracket: the bracket of two of its elements is the cross product of two real vectors. It is a real Lie subalgebra of dimension four,
 
-$$ \boxed{\; \mathbb{M}_-\cong\mathfrak{u}(2),\qquad[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak{su}(2) \;}. $$
+$$ \boxed{\; \mathbb{B}_{\Phi}\cong\mathfrak{u}(2),\qquad[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]=\mathbf{B}_1\cong\mathfrak{su}(2) \;}. $$
 
-*Proof.* An element of $\mathbb{M}_-$ has purely imaginary scalar part and real vector part; the bracket sees only the vector parts, so it is a real vector in $\mathbf{B}_1$, which lies in $\mathbb{M}_-$. The derived algebra is $\mathbf{B}_1$, and the real Lie algebra with a central line and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, read on the skew-Hermitian elements in *The Unitary Lie Algebra*. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
+*Proof.* An element of $\mathbb{B}_{\Phi}$ has purely imaginary scalar part and real vector part; the bracket sees only the vector parts, so it is a real vector in $\mathbf{B}_1$, which lies in $\mathbb{B}_{\Phi}$. The derived algebra is $\mathbf{B}_1$, and the real Lie algebra with a central line and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, read on the skew-Hermitian elements in *The Unitary Lie Algebra*. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
 
-**Remark.** The two Hermitian halves are the second grading of the block: **$\mathbb{M}_-$ is the subalgebra and $\mathbb{M}_+$ the module, and $\mathbb{M}_+$ is the second of the two failures, of image again $\mathfrak{su}(2)$.** The quaternion grading and the Hermitian grading share the failure pattern — in each, one half is a subalgebra and the other half is not — and they differ in which central direction, real or imaginary, the subalgebra's scalar part occupies. The identification $\mathbb{M}_-\cong\mathfrak{u}(2)$ is the biquaternion case of the skew-Hermitian Lie algebra; the group of linear maps preserving the form of those elements, and the exponential that relates it to this algebra, are *The Unitary Lie Algebra* and are not read here.
+**Remark.** The two Hermitian halves are the second grading of the block: **$\mathbb{B}_{\Phi}$ is the subalgebra and $\mathbb{B}_{\Psi}$ the module, and $\mathbb{B}_{\Psi}$ is the second of the two failures, of image again $\mathfrak{su}(2)$.** The quaternion grading and the Hermitian grading share the failure pattern — in each, one half is a subalgebra and the other half is not — and they differ in which central direction, real or imaginary, the subalgebra's scalar part occupies. The identification $\mathbb{B}_{\Phi}\cong\mathfrak{u}(2)$ is the biquaternion case of the skew-Hermitian Lie algebra; the group of linear maps preserving the form of those elements, and the exponential that relates it to this algebra, are *The Unitary Lie Algebra* and are not read here.
 
 ## The Isotropic Elements
 
@@ -150,14 +150,14 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 | Subspace | Vector part | Stable under $\wedge$ | Image of $\wedge$ | Identification |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $0$ | yes, trivially | $0$ | abelian, the radical |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | complex | yes | itself | $\mathfrak{sl}(2,\mathbb{C})$, simple |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | real | yes | $\mathbf{B}_1$ | $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | imaginary | **no** | $\mathbf{B}_1$ | $\mathfrak{su}(2)$ image, not a subalgebra |
-| Hermitian $\mathbb{M}_+$ | imaginary | **no** | $\mathbf{B}_1$ | $\mathfrak{su}(2)$ image, not a subalgebra |
-| Anti-Hermitian $\mathbb{M}_-$ | real | yes | $\mathbf{B}_1$ | $\mathfrak{u}(2)$, derived $\mathfrak{su}(2)$ |
+| Centre $\mathbb{B}_{C}$ | $0$ | yes, trivially | $0$ | abelian, the radical |
+| Vector $\mathbb{B}_{V}$ | complex | yes | itself | $\mathfrak{sl}(2,\mathbb{C})$, simple |
+| Quaternion $\mathbb{B}_{H}$ | real | yes | $\mathbf{B}_1$ | $\mathbb{R}e_t\oplus\mathfrak{su}(2)$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | imaginary | **no** | $\mathbf{B}_1$ | $\mathfrak{su}(2)$ image, not a subalgebra |
+| Hermitian $\mathbb{B}_{\Psi}$ | imaginary | **no** | $\mathbf{B}_1$ | $\mathfrak{su}(2)$ image, not a subalgebra |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | real | yes | $\mathbf{B}_1$ | $\mathfrak{u}(2)$, derived $\mathfrak{su}(2)$ |
 
-**Remark.** **Four of the remarkable subspaces are Lie subalgebras and two are not**, and the two failures are exactly the two subspaces whose vector part is the imaginary triple $i\mathbf{B}_1$, $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$. The two are exchanged by the central scalar $i$, which reverses the sector of the vector part and the sector of the scalar part together and carries the quaternion subalgebra to the anti-quaternion failure and the anti-Hermitian subalgebra to the Hermitian failure; the table is therefore symmetric under $i$ with the stability column exchanged.
+**Remark.** **Four of the remarkable subspaces are Lie subalgebras and two are not**, and the two failures are exactly the two subspaces whose vector part is the imaginary triple $i\mathbf{B}_1$, $\mathbb{B}_{iH}$ and $\mathbb{B}_{\Psi}$. The two are exchanged by the central scalar $i$, which reverses the sector of the vector part and the sector of the scalar part together and carries the quaternion subalgebra to the anti-quaternion failure and the anti-Hermitian subalgebra to the Hermitian failure; the table is therefore symmetric under $i$ with the stability column exchanged.
 
 ## Worked Examples
 
@@ -169,15 +169,15 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 **A mixed bracket.** $\vec e_x\wedge(i\vec e_y)=i\vec e_z$: one real and one imaginary vector give an imaginary vector, the second line of the sector rule.
 
-**A quaternion bracket.** For $\tilde Q=e_t+\vec e_x$ and $\tilde{Q}_1=e_t+\vec e_y$ in $\mathbb{H}_{\mathbb{B}}$ the bracket is $\tilde Q\wedge\tilde{Q}_1=\vec e_z$, inside the subspace: the quaternion subspace is stable.
+**A quaternion bracket.** For $\tilde Q=e_t+\vec e_x$ and $\tilde{Q}_1=e_t+\vec e_y$ in $\mathbb{B}_{H}$ the bracket is $\tilde Q\wedge\tilde{Q}_1=\vec e_z$, inside the subspace: the quaternion subspace is stable.
 
-**An anti-Hermitian bracket.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{M}_-$ the bracket is $x\wedge y=\vec e_z$, inside the subspace: the anti-Hermitian subspace is stable, and the imaginary scalar direction $ie_t$ is central in it.
+**An anti-Hermitian bracket.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{B}_{\Phi}$ the bracket is $x\wedge y=\vec e_z$, inside the subspace: the anti-Hermitian subspace is stable, and the imaginary scalar direction $ie_t$ is central in it.
 
-**A failure.** For $x=i\vec e_x$ and $y=i\vec e_y$ in $i\mathbb{H}_{\mathbb{B}}$, and also in $\mathbb{M}_+$, the bracket is $x\wedge y=-\vec e_z$, outside both; the image lies in $\mathbf{B}_1$, the derived algebra of both subalgebras $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$.
+**A failure.** For $x=i\vec e_x$ and $y=i\vec e_y$ in $\mathbb{B}_{iH}$, and also in $\mathbb{B}_{\Psi}$, the bracket is $x\wedge y=-\vec e_z$, outside both; the image lies in $\mathbf{B}_1$, the derived algebra of both subalgebras $\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$.
 
 ## Summary
 
-The bracket of the antisymmetric plain algebra is the cross product of the vector parts, and its reading on the remarkable subspaces is the reading of the sector of the vector part. The centre is the zero subspace, on which the bracket vanishes; the vector subspace is stable, is the derived algebra of the whole block and is identified with $\mathfrak{sl}(2,\mathbb{C})$; the quaternion subspace is stable and identified with $\mathbb{R}e_t\oplus\mathfrak{su}(2)$; the anti-Hermitian subspace is stable and identified with $\mathfrak{u}(2)$, of derived algebra $\mathfrak{su}(2)$; and the anti-quaternion subspace and the Hermitian subspace are not stable, with brackets $(i\vec e_x)\wedge(i\vec e_y)=-\vec e_z$ in each case and image the real vector triple $\mathbf{B}_1\cong\mathfrak{su}(2)$. Four of the remarkable subspaces are Lie subalgebras and two are not, the two failures being the subspaces with vector part the imaginary triple $i\mathbf{B}_1$; the two decompositions $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ are $\mathbb{Z}/2$-gradings of the bracket. The isotropic elements are the whole centre, the two scalar directions on the four real subspaces, and the complex null cone on the vector subspace.
+The bracket of the antisymmetric plain algebra is the cross product of the vector parts, and its reading on the remarkable subspaces is the reading of the sector of the vector part. The centre is the zero subspace, on which the bracket vanishes; the vector subspace is stable, is the derived algebra of the whole block and is identified with $\mathfrak{sl}(2,\mathbb{C})$; the quaternion subspace is stable and identified with $\mathbb{R}e_t\oplus\mathfrak{su}(2)$; the anti-Hermitian subspace is stable and identified with $\mathfrak{u}(2)$, of derived algebra $\mathfrak{su}(2)$; and the anti-quaternion subspace and the Hermitian subspace are not stable, with brackets $(i\vec e_x)\wedge(i\vec e_y)=-\vec e_z$ in each case and image the real vector triple $\mathbf{B}_1\cong\mathfrak{su}(2)$. Four of the remarkable subspaces are Lie subalgebras and two are not, the two failures being the subspaces with vector part the imaginary triple $i\mathbf{B}_1$; the two decompositions $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$ and $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ are $\mathbb{Z}/2$-gradings of the bracket. The isotropic elements are the whole centre, the two scalar directions on the four real subspaces, and the complex null cone on the vector subspace.
 
 ## Summary of Notation
 
@@ -185,13 +185,13 @@ The bracket of the antisymmetric plain algebra is the cross product of the vecto
 |---|---|
 | $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | the bracket of the block, the cross product of the vector parts |
 | $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ | the real vector triple, the image of the two failures |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, the subspace on which the bracket vanishes |
-| $\mathrm{Vect}(\mathbb{B})$ | the stable image of the bracket $\cong\mathfrak{sl}(2,\mathbb{C})$ |
-| $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ | the quaternion subalgebra |
-| $i\mathbb{H}_{\mathbb{B}}$, $[\ ,\ ]=\mathbf{B}_1$ | the anti-quaternion subspace, not stable |
-| $\mathbb{M}_+\cong$ image $\mathbf{B}_1$ | the Hermitian subspace, not stable |
-| $\mathbb{M}_-\cong\mathfrak{u}(2)$, $[\mathbb{M}_-,\mathbb{M}_-]\cong\mathfrak{su}(2)$ | the anti-Hermitian subalgebra |
-| $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}=\mathbb{M}_-\oplus\mathbb{M}_+$ | the two $\mathbb{Z}/2$-gradings of the bracket |
+| $\mathbb{B}_{C}=\mathbb{C}e_t$ | the centre, the subspace on which the bracket vanishes |
+| $\mathbb{B}_{V}$ | the stable image of the bracket $\cong\mathfrak{sl}(2,\mathbb{C})$ |
+| $\mathbb{B}_{H}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ | the quaternion subalgebra |
+| $\mathbb{B}_{iH}$, $[\ ,\ ]=\mathbf{B}_1$ | the anti-quaternion subspace, not stable |
+| $\mathbb{B}_{\Psi}\cong$ image $\mathbf{B}_1$ | the Hermitian subspace, not stable |
+| $\mathbb{B}_{\Phi}\cong\mathfrak{u}(2)$, $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]\cong\mathfrak{su}(2)$ | the anti-Hermitian subalgebra |
+| $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ | the two $\mathbb{Z}/2$-gradings of the bracket |
 | $\kappa(\tilde Q,\tilde Q)=-2\,\vec Q\cdot\vec Q$ | the form whose isotropic elements are tabulated |
 
 ## Further Reading

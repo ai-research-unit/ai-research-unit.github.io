@@ -137,7 +137,7 @@ $$
 \mathbb{H} \longrightarrow \mathbb{B}, \quad h \longmapsto 1 \otimes h ,
 $$
 
-are unital algebra homomorphisms over $\mathbb{R}$ with commuting images (*Tensor Products of Algebras*); the commuting of the images is the statement that the scalars are central, used in the next section. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$, and on it the multiplication is the quaternion product of *Quaternion Algebra*.
+are unital algebra homomorphisms over $\mathbb{R}$ with commuting images (*Tensor Products of Algebras*); the commuting of the images is the statement that the scalars are central, used in the next section. The second image is the real quaternion subspace $\mathbb{B}_{H} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$, and on it the multiplication is the quaternion product of *Quaternion Algebra*.
 
 ## The Scalars, the Centre and the Structure Map
 
@@ -149,7 +149,7 @@ $$
 \varphi : \mathbb{C} \longrightarrow Z(\mathbb{B}) , \qquad \varphi(A) = Ae_t ,
 $$
 
-with image the scalar line $\mathbb{C}e_t = \mathbb{C}_{\mathbb{B}}$, and the scalar action is $A \tilde Q = \varphi(A)\tilde Q$, applied to the four complex coefficients. The image is central, so the action is compatible with the product,
+with image the scalar line $\mathbb{C}e_t = \mathbb{B}_{C}$, and the scalar action is $A \tilde Q = \varphi(A)\tilde Q$, applied to the four complex coefficients. The image is central, so the action is compatible with the product,
 
 $$
 A(\tilde Q_1 \tilde Q_2) = (A \tilde Q_1)\tilde Q_2 = \tilde Q_1(A \tilde Q_2) , \qquad A \in \mathbb{C} ,
@@ -172,7 +172,7 @@ the compatibility demanded at the product being exactly the formula above. Centr
 **Proposition.** The centre of $\mathbb{B}$ is the complex line spanned by $e_t$:
 
 $$
-Z(\mathbb{B}) = \mathbb{C} \otimes_{\mathbb{R}} Z(\mathbb{H}) = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{R} = \mathbb{C} = \mathbb{C}_{\mathbb{B}} .
+Z(\mathbb{B}) = \mathbb{C} \otimes_{\mathbb{R}} Z(\mathbb{H}) = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{R} = \mathbb{C} = \mathbb{B}_{C} .
 $$
 
 **Proof.** The centre of a tensor product of algebras over a field is the tensor product of their centres, and $Z(\mathbb{C}) = \mathbb{C}$ while $Z(\mathbb{H}) = \mathbb{R}$. In coordinates, $[\tilde Q, \vec e_x] = 2Q_z \vec e_y - 2Q_y \vec e_z$ vanishes exactly when $Q_y = Q_z = 0$, and $[\tilde Q, \vec e_y]$ vanishes exactly when $Q_x = Q_z = 0$, so centrality forces $Q_x = Q_y = Q_z = 0$; conversely every $Q_t e_t$ is central because $i$ commutes with the units.
@@ -271,8 +271,8 @@ The algebra is central simple of dimension four. The element, its three coordina
 | $(\vec Q_1, \vec Q_2) = \sum_k Q_{1k} Q_{2k}$ | complex bilinear dot product of the vector parts |
 | $\vec Q_1 \times \vec Q_2$ | complex bilinear cross product of the vector parts |
 | $\varphi : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_t$ | the structure map of the complex algebra |
-| $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ | the centre, equal to the scalar line |
-| $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace |
+| $\mathbb{B}_{C} = \mathbb{C}e_t$ | the centre, equal to the scalar line |
+| $\mathbb{B}_{H} = \mathbb{R}e_t + \mathbb{R}\vec e_x + \mathbb{R}\vec e_y + \mathbb{R}\vec e_z$ | the quaternion subspace |
 | ${}^{\natural}$, $\bar{\cdot}$ | the natural and the coefficient conjugation |
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural} = \natural \circ \bar{\cdot}$ | the Hermitian conjugation |
 | ${}^{\flat} = -{}^{*}$ | the anti-Hermitian conjugation, outside the Klein group |

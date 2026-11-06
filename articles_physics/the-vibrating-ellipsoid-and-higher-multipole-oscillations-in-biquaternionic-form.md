@@ -6,7 +6,7 @@ An isolated body of finite size that is not perfectly spherical has a shape with
 
 This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is **non-relativistic** and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.
 
-The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(r'_t)$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(r'_t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{*}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
+The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(r'_t)$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(r'_t)\in\mathbb{B}_{H}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{*}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Algebra and Element Conventions*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the material sector is $\mathbb{M}_-$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -25,7 +25,7 @@ The rotor algebra used below is stated explicitly, from first principles.
 A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\vec u = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$, with $\vec u^2 = -e_t$, is represented by the **rotor**
 
 $$
-\tilde U(\theta,\vec u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}} ,
+\tilde U(\theta,\vec u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u \in \mathbb{B}_{H} ,
 $$
 
 a real quaternion of unit norm,
@@ -228,9 +228,9 @@ so that a rigidly rotating deformed body emits a tower of harmonics up to $l\Ome
 
 Two structural comments belong here, because they are where the framework's bookkeeping becomes visible.
 
-**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(r'_t)$ are central elements of the algebra, $a_{lm}(r'_t)e_t\in\mathbb{C}_{\mathbb{B}}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
+**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(r'_t)$ are central elements of the algebra, $a_{lm}(r'_t)e_t\in\mathbb{B}_{C}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
 
-**The algebra supplies the rotor.** The orientation of the body is a single rotor $\tilde U(r'_t)\in\mathbb{H}_{\mathbb{B}}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.
+**The algebra supplies the rotor.** The orientation of the body is a single rotor $\tilde U(r'_t)\in\mathbb{B}_{H}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.
 
 ## The Velocity Field and the Mode Energy
 
@@ -239,10 +239,10 @@ Two structural comments belong here, because they are where the framework's book
 The motion of the medium is described by a velocity field $\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)$, and in the algebra it is a pure real vector element,
 
 $$
-\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
+\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{B}_{H} ,
 $$
 
-lying in the vector part, hence in $\mathbb{M}_-$. For a small surface deformation of an incompressible body the velocity field is obtained from the shape function by the kinematic boundary condition, and to leading order its angular dependence follows that of the mode that drives it, so that the deformation of order $l$ drives a velocity field whose angular content is of the same order. What sits in the algebra is the **value** of the velocity field, and that value is a vector, an element of the vector part; the angular order $l$ is a property of the field as a function, and the function space, not the algebra, is what carries it. The algebra holds the velocity's value, and the function space holds the mode's order.
+lying in the vector part, hence in $\mathbb{B}_{\Phi}$. For a small surface deformation of an incompressible body the velocity field is obtained from the shape function by the kinematic boundary condition, and to leading order its angular dependence follows that of the mode that drives it, so that the deformation of order $l$ drives a velocity field whose angular content is of the same order. What sits in the algebra is the **value** of the velocity field, and that value is a vector, an element of the vector part; the angular order $l$ is a property of the field as a function, and the function space, not the algebra, is what carries it. The algebra holds the velocity's value, and the function space holds the mode's order.
 
 The continuity equation relates the shape to the velocity in the usual way. For an incompressible medium, $\vec\nabla\cdot\vec v = 0$, and the surface displacement follows by integrating the normal velocity. In the algebra the divergence is the central part of the gradient acting on the velocity element,
 
@@ -293,7 +293,7 @@ A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its sha
 
 The quadrupole moment of a homogeneous ellipsoid is $\mathrm{Sd}_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\mathrm{Sd}_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m_2 = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
 
-In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(r'_t)e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(r'_t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
+In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(r'_t)e_t\in\mathbb{B}_{C}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(r'_t)\in\mathbb{B}_{H}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
 
 ## Summary of Notation
 
@@ -302,9 +302,9 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
+| $\mathbb{B}_{H}$ | Real-quaternion subspace |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\tilde U = \cos(\theta/2) + \sin(\theta/2)\vec u$ | Rotation rotor, a real unit quaternion |
 | $\vec w_2 = \tilde U\vec w\tilde U^{*}$ | Rotor action on a vector |

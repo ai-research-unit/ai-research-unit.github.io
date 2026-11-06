@@ -7,10 +7,10 @@ The **effective potential** is the part of the quantum effective action that sur
 This article works the effective potential of the scalar sector of the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the notation of the companion articles, and derives the Coleman–Weinberg result for the framework's scalar. The scalar sector has already been fixed by the read list. The framework's scalar is the **complex central field**
 
 $$
-\tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\},
+\tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \in \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\},
 $$
 
-with $\xi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus
+with $\xi$ a complex function and $\mathbb{B}_{C}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus
 
 $$
 \rho = \mathrm{Sc}\!\left(\tilde{Ξ}^{*} \tilde{Ξ}\right) = |\xi|^2 ,
@@ -300,10 +300,10 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
+| $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_k\,\vec e_k\,\partial/\partial R_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
-| $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
+| $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar |
 | $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
 | $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = \lvert\xi\rvert^2$ | Central invariant; the potential's argument |

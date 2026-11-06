@@ -64,9 +64,9 @@ and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The 
 
 ### The Wall of the State Space
 
-**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $\langle\tilde\Pi\rangle_{\natural}=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$, and on $\mathbb{M}_{+}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.
+**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{B}_{\Psi}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $\langle\tilde\Pi\rangle_{\natural}=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{B}_{\Phi}$, and on $\mathbb{B}_{\Psi}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.
 
-**The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
+**The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{B}_{\Phi}$ the cone is the light cone; on $\mathbb{B}_{\Psi}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
 
 ### The Pairings and the Wall
 
@@ -202,7 +202,7 @@ It is not $S^{5}$, so the apex is a genuine singularity of the cone.
 
 **The wall has no topology of its own.** The cone is contractible, so its only topological invariant is the link. Interpreted physically, the radial extent of the light cone carries no topology; the directions carry it. The cone is a wall without holes, and the holes live in its link.
 
-**The boundary of the interpretation.** The statement is about the full complex cone in the eight-dimensional real algebra. The light cone of the material sector is a real three-dimensional cone inside $\mathbb{M}_{-}$; it is also contractible, but its link is the ordinary $S^{2}$ of null directions, not the five-manifold $L$.
+**The boundary of the interpretation.** The statement is about the full complex cone in the eight-dimensional real algebra. The light cone of the material sector is a real three-dimensional cone inside $\mathbb{B}_{\Phi}$; it is also contractible, but its link is the ordinary $S^{2}$ of null directions, not the five-manifold $L$.
 
 ### The Link as Null Directions
 
@@ -210,7 +210,7 @@ The link is the space of complex null directions at fixed scale. A nonzero null 
 
 **The link is the space of complex null directions.** Interpreted physically, a complex null four-vector is a pair of chiral spinors together with a relative phase; the two $S^{2}$ factors are the two celestial spheres and the $S^{1}$ fibre is the little-group phase. On the real material sector the null four-vector is anti-Hermitian of rank one, the two spinors are conjugate, and the pair collapses to one projective spinor: the link becomes the $S^{2}$ of null directions, with the phase as the fibre of $S^{3}\to S^{2}$.
 
-**The boundary of the interpretation.** The five-manifold $L$ is the complexified object. The physical null cone of $\mathbb{M}_{-}$ has the two-sphere link, and the two-sphere pair of $L$ is the complexification, not two physical directions.
+**The boundary of the interpretation.** The five-manifold $L$ is the complexified object. The physical null cone of $\mathbb{B}_{\Phi}$ has the two-sphere link, and the two-sphere pair of $L$ is the complexification, not two physical directions.
 
 ### The Singular Apex
 
@@ -240,7 +240,7 @@ $$
 \qquad
 (\mathcal{L}_{\mathrm{H}})^{\times}\cong 2T\;},
 $$
-the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\tilde Q_1\mapsto v\tilde Q_1v^{*}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
+the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{B}_{H}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\tilde Q_1\mapsto v\tilde Q_1v^{*}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
 
 **The order is the discrete skeleton.** An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its unit group is the set of lattice operations that are reversible inside the lattice. The quaternion units are the rotations by $\pi$ of the lattice, and the binary groups are their lifts; read against the continuous groups, the orders are what survives when the frame is restricted to integral elements. Interpreted physically, the order is the discrete skeleton of the material sector, and the finite unit group is its discrete symmetry. Read on a lattice, the orders are the arithmetic counterpart of a lattice gauge theory and of a quantum simulation of the framework; the real slice is the Euclidean lattice and its imaginary translate the thermal direction, so the arithmetic of the orders is also the arithmetic of the thermal circle. The algebra supplies the arithmetic, not the gauge field or the temperature.
 

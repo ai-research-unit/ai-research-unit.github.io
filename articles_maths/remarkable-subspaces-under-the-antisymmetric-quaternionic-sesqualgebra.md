@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The block $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* depends on its two arguments through their vector parts alone, with the vector part of the second argument conjugated. This article reads the block on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and answers three questions for each: whether the block is stable on it, that is whether the value of two of its elements stays in it; what the diagonal of the block does on it; and which of its elements give the value zero. The block kills the centre in both slots, so the centre is the one subspace on which the product vanishes identically, and the values of the block always lie in the vector subspace, so closure of any other subspace requires its intersection with the vector subspace to receive those values; that requirement separates the remarkable subspaces into the four on which the block is stable and the two on which it is not.
+The block $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* depends on its two arguments through their vector parts alone, with the vector part of the second argument conjugated. This article reads the block on the remarkable real subspaces of *Subspaces and Decompositions* — the centre $\mathbb{B}_{C}$, the vector subspace $\mathbb{B}_{V}$, the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ — and answers three questions for each: whether the block is stable on it, that is whether the value of two of its elements stays in it; what the diagonal of the block does on it; and which of its elements give the value zero. The block kills the centre in both slots, so the centre is the one subspace on which the product vanishes identically, and the values of the block always lie in the vector subspace, so closure of any other subspace requires its intersection with the vector subspace to receive those values; that requirement separates the remarkable subspaces into the four on which the block is stable and the two on which it is not.
 
 The remarkable subspaces and their bases are *Subspaces and Decompositions*; the same six are read by the other pairings in *Remarkable Subspaces under the General Quaternionic Sesqualgebra* and its companions; the form that the block pairs with is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; and the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*. This article owns the reading of the block on the remarkable subspaces themselves.
 
@@ -16,27 +16,27 @@ $$ \boxed{\; \tilde Q_3\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde Q_3=
 
 **Proposition.** The image of the block on every subspace is contained in the vector subspace, and on the vector subspace the block is stable with image the whole vector subspace.
 
-*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathrm{Vect}(\mathbb{B})$. On $\mathrm{Vect}(\mathbb{B})$ the vector parts are the elements themselves, so the value $\vec Q_1\times\overline{\vec Q_2}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions.
+*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathbb{B}_{V}$. On $\mathbb{B}_{V}$ the vector parts are the elements themselves, so the value $\vec Q_1\times\overline{\vec Q_2}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions.
 
 ## Remarkable Subspaces
 
-### The Centre $\mathbb{C}_{\mathbb{B}}$
+### The Centre $\mathbb{B}_{C}$
 
 The centre is the complex line of the multiples of $e_t$. The block vanishes on it identically, so the centre is **stable** and is in fact contained in the annihilator of the block; its diagonal is zero, and every element of the centre gives the value zero with every element of the space on either side. The centre is the only subspace of the remarkable subspaces on which the block vanishes identically in both arguments.
 
-### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
+### The Vector Subspace $\mathbb{B}_{V}$
 
 The vector subspace is the complex span of $\vec e_x,\vec e_y,\vec e_z$, with real basis $\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z$. The block is **stable** on it and its image is the whole subspace: for two complex vectors $\vec Q_1,\vec Q_2$ the value $\vec Q_1\times\overline{\vec Q_2}$ is a complex vector, and the cross product with a fixed real direction already fills a complex plane. The diagonal is the conjugate cross product $\vec Q\times\overline{\vec Q}$, which is **not identically zero** on the subspace: it vanishes exactly when $\vec Q$ is a complex multiple of a real vector, that is on the union of the complex lines through the real directions, a quadric cone of real dimension $4$ and a proper subset; the witness $\vec e_x+i\vec e_y$ lies in the vector subspace and has diagonal $-2i\vec e_z$. The vector subspace is the one stable subspace on which the diagonal does not vanish identically.
 
-### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
+### The Quaternion Subspace $\mathbb{B}_{H}$
 
-The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
+The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{B}_{H}\cap\mathbb{B}_{V}$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
 
-$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\tilde Q_1\wedge\tilde Q_2(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}) \;}, $$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\tilde Q_1\wedge\tilde Q_2(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{B}_{H}) \;}, $$
 
 the real coincidence of the block, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
-### The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
+### The Anti-Quaternion Subspace $\mathbb{B}_{iH}$
 
 The anti-quaternion subspace is the real span of $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, of imaginary coefficients. The block is **not stable** on it: for two imaginary elements $\tilde Q_1=i\vec a$, $\tilde Q_2=i\vec b$ with $\vec a,\vec b$ real, the value is
 
@@ -44,13 +44,13 @@ $$
 (i\vec a)\diamond(i\vec b)=i\vec a\times\overline{i\vec b}=i\vec a\times(-i\vec b)=\vec a\times\vec b,
 $$
 
-a **real** vector, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$ and not in $i\mathbb{H}_{\mathbb{B}}$. The value of two elements of the subspace therefore leaves the subspace, and the intersection of the subspace with the vector subspace is the imaginary vector directions, which the block never reaches from the subspace. The diagonal is **identically zero**.
+a **real** vector, which lies in $\mathbb{B}_{H}\cap\mathbb{B}_{V}$ and not in $\mathbb{B}_{iH}$. The value of two elements of the subspace therefore leaves the subspace, and the intersection of the subspace with the vector subspace is the imaginary vector directions, which the block never reaches from the subspace. The diagonal is **identically zero**.
 
-### The Hermitian Subspace $\mathbb{M}_+$
+### The Hermitian Subspace $\mathbb{B}_{\Psi}$
 
 The Hermitian subspace is the real span of $e_t,i\vec e_x,i\vec e_y,i\vec e_z$, with real scalar coordinate and imaginary vector coordinates. The block is **not stable** on it: for two elements $i\vec a,i\vec b$ with real vector parts, the same computation as for the anti-quaternion subspace gives the real vector $\vec a\times\vec b$, which is not Hermitian, the vector part of a Hermitian element being imaginary. Its intersection with the vector subspace is the imaginary vector directions, which the block does not reach. The diagonal is **identically zero**, an imaginary vector being a complex multiple of a real vector.
 
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
+### The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$
 
 The anti-Hermitian subspace is the real span of $ie_t,\vec e_x,\vec e_y,\vec e_z$, with imaginary scalar coordinate and real vector coordinates. The block is **stable** on it: for two elements with real vector parts the value is the real vector $\vec a\times\vec b$, which is anti-Hermitian. On this subspace the block is again the ordinary cross product of the real vector parts, with the scalar coordinates ignored, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
@@ -60,12 +60,12 @@ The anti-Hermitian subspace is the real span of $ie_t,\vec e_x,\vec e_y,\vec e_z
 
 | Subspace | Natural real basis | Value of the block on two of its elements | Stable | Diagonal |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $0$ | yes | $0$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | a complex vector | yes | not identically zero |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
-| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
+| Centre $\mathbb{B}_{C}$ | $e_t,\,ie_t$ | $0$ | yes | $0$ |
+| Vector $\mathbb{B}_{V}$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | a complex vector | yes | not identically zero |
+| Quaternion $\mathbb{B}_{H}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
+| Anti-quaternion $\mathbb{B}_{iH}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
+| Hermitian $\mathbb{B}_{\Psi}$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
+| Anti-Hermitian $\mathbb{B}_{\Phi}$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
 
 **Remark (the four subspaces with a vanishing diagonal).** The diagonal of the block is identically zero on the centre and on the four four-dimensional subspaces, and it is not identically zero on the vector subspace alone. The four four-dimensional subspaces have their vector part real or purely imaginary, and a real or purely imaginary vector is a complex multiple of a real vector, so the diagonal vanishes; on the vector subspace the vector part ranges over all complex vectors and the diagonal does not vanish identically.
 
@@ -95,7 +95,7 @@ On the remarkable subspaces the block vanishes identically on the centre, has it
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the remarkable real subspaces |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the remarkable real subspaces |
 | $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ | the block on the remarkable subspaces |
 | stable | the value of two elements of the subspace stays in the subspace |
 | the four stable subspaces | centre, vector, quaternion, anti-Hermitian |

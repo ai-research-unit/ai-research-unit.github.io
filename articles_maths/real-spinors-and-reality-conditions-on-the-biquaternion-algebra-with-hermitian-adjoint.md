@@ -18,7 +18,7 @@ Four statements are the article. First, **the internal module has no reality str
 
 **Proposition (the algebra's own antilinear involutions are not reality structures).** Among the four conjugations of $\mathbb{B}$ there are three that are conjugate-linear, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$, with fixed spaces of real dimension $4$, $4$ and $4$, and one that is $\mathbb{C}$-linear, the quaternion conjugation ${}^{\natural}$, with fixed space of real dimension $2$. None of them is a reality structure on $S$; an involution of the algebra and a conjugation of the module are different objects, and the discipline of keeping them apart is the one the applications of the algebra insist on.
 
-*Proof.* The fixed spaces are computed on the coefficients: ${}^{\natural}$ fixes the scalars $\mathbb{C}e_t$ and negates $\vec e_x,\vec e_y,\vec e_z$, while $\bar{\cdot}$ fixes $\mathbb{H}_{\mathbb{B}}$, ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ and ${}^{\flat}$ the anti-Hermitian sector $\mathbb{M}_-$ (*Subspaces and Decompositions*). Each is a map of the algebra, whereas a reality structure is a map of the module.
+*Proof.* The fixed spaces are computed on the coefficients: ${}^{\natural}$ fixes the scalars $\mathbb{C}e_t$ and negates $\vec e_x,\vec e_y,\vec e_z$, while $\bar{\cdot}$ fixes $\mathbb{B}_{H}$, ${}^{*}$ the Hermitian sector $\mathbb{B}_{\Psi}$ and ${}^{\flat}$ the anti-Hermitian sector $\mathbb{B}_{\Phi}$ (*Subspaces and Decompositions*). Each is a map of the algebra, whereas a reality structure is a map of the module.
 
 ## The Type of the Internal Module Is Complex
 

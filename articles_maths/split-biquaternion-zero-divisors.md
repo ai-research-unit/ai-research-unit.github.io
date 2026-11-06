@@ -222,25 +222,25 @@ These zero divisors are in $Z_+$ (if $Q_t$ is a multiple of $1 - j$) or in $Z_-$
 
 An element of $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ has real coefficients, so it has the form $\tilde{Q} = \tilde{q}$ with $\tilde{q} \in \mathbb{H}$, and its idempotent components correspond to $\tilde{q}$ in both summands. Both components vanish only when $\tilde{Q} = 0$, so the quaternion subspace contains no zero divisors.
 
-### The Hermitian Subspace $\mathbb{M}_+$
+### The Hermitian Subspace $\mathbb{B}_{\Psi}$
 
-An element of $\mathbb{M}_+$ has the form
+An element of $\mathbb{B}_{\Psi}$ has the form
 
 $$
 \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z = \tilde q + j\tilde q', \qquad \tilde q = q_t, \quad \tilde q' = q'_x \vec e_x + q'_y \vec e_y + q'_z \vec e_z.
 $$
 
-Its idempotent components correspond to the quaternions $\tilde q \pm \tilde q' = q_t \pm (q'_x \vec e_x + q'_y \vec e_y + q'_z \vec e_z)$, each of which vanishes only when its four real coefficients do. The component $\tilde q + \tilde q'$ vanishes exactly when $q_t = q'_x = q'_y = q'_z = 0$, and $\tilde q - \tilde q'$ likewise, so both components vanish only at the origin. Hence $\mathbb{M}_+$ contains no zero divisors.
+Its idempotent components correspond to the quaternions $\tilde q \pm \tilde q' = q_t \pm (q'_x \vec e_x + q'_y \vec e_y + q'_z \vec e_z)$, each of which vanishes only when its four real coefficients do. The component $\tilde q + \tilde q'$ vanishes exactly when $q_t = q'_x = q'_y = q'_z = 0$, and $\tilde q - \tilde q'$ likewise, so both components vanish only at the origin. Hence $\mathbb{B}_{\Psi}$ contains no zero divisors.
 
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
+### The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$
 
-An element of $\mathbb{M}_-$ has the form
+An element of $\mathbb{B}_{\Phi}$ has the form
 
 $$
 \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = \tilde q + j\tilde q', \qquad \tilde q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \quad \tilde q' = r_0.
 $$
 
-Its idempotent components correspond to $\tilde q \pm \tilde q' = (q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) \pm r_0$, each vanishing only when $q_x = q_y = q_z = r_0 = 0$. Hence $\mathbb{M}_-$ contains no zero divisors.
+Its idempotent components correspond to $\tilde q \pm \tilde q' = (q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) \pm r_0$, each vanishing only when $q_x = q_y = q_z = r_0 = 0$. Hence $\mathbb{B}_{\Phi}$ contains no zero divisors.
 
 ### Summary of the Distribution
 
@@ -248,8 +248,8 @@ Of the four fixed-point subspaces:
 
 - $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ contains zero divisors, which are the images of the zero divisors of $\mathbb{C}_{\mathrm{spl}}$.
 - $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ contains no zero divisors.
-- $\mathbb{M}_+$ contains no zero divisors.
-- $\mathbb{M}_-$ contains no zero divisors.
+- $\mathbb{B}_{\Psi}$ contains no zero divisors.
+- $\mathbb{B}_{\Phi}$ contains no zero divisors.
 
 In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and the intersection of any fixed-point subspace with the zero divisor set is a subset of $Z_+ \cup Z_-$.
 

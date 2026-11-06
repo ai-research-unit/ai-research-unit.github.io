@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The most general measurement that quantum physics admits is not a projective measurement. It is a **positive operator-valued measure**: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{M}_+$, and the condition that a measurement be possible is the condition that they lie in the **positive cone** of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.
+The most general measurement that quantum physics admits is not a projective measurement. It is a **positive operator-valued measure**: a family of positive elements summing to the identity, each paired with the state by the Born rule. In the biquaternion framework these elements are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$, and the condition that a measurement be possible is the condition that they lie in the **positive cone** of the algebra. This article develops the cone, the effects it contains, and the general measurement, in the framework's own terms.
 
-The central observation is that the positive cone of $\mathbb{M}_+$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_te_t + i\vec a$ with $a_t\in\mathbb{R}$, $\vec a\in\mathbb{R}^3$, positivity of the operator is
+The central observation is that the positive cone of $\mathbb{B}_{\Psi}$ is the positive cone of the biquaternion norm. For a Hermitian element $\tilde{E} = a_te_t + i\vec a$ with $a_t\in\mathbb{R}$, $\vec a\in\mathbb{R}^3$, positivity of the operator is
 
 $$
 \boxed{\;\tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
@@ -34,14 +34,14 @@ $$
 a real scalar. The two conditions $\langle\tilde R_\psi\rangle_{\natural}\geq0$ and $c r_t\geq0$ are together equivalent to $c r_t\geq|\vec r_\psi|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
-C_+ = \bigl\{c r_t\,e_t + i\vec r_\psi\in\mathbb{M}_+ : c r_t \geq |\vec r_\psi|\bigr\} .
+C_+ = \bigl\{c r_t\,e_t + i\vec r_\psi\in\mathbb{B}_{\Psi} : c r_t \geq |\vec r_\psi|\bigr\} .
 $$
 
 This is the **positive cone** of the algebra. Its boundary $c r_t = |\vec r_\psi|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $c r_t>|\vec r_\psi|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
-The Hermitian form on $\mathbb{M}_+$ is
+The Hermitian form on $\mathbb{B}_{\Psi}$ is
 
 $$
 \langle\tilde R_\psi,\tilde{E}\rangle_{*} = \mathrm{Sc}(\tilde R_\psi\tilde{E}^{*}) = c r_t\,a_t + \vec r_\psi\cdot\vec a,
@@ -119,7 +119,7 @@ $$
 p=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E})=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde{E}^{*})}{\operatorname{Tr}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde{E})}{\operatorname{Tr}(\tilde{Ϛ})}.
 $$
 
-On $\mathbb{M}_+$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E})$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde E\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde{E})/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$, the usual $\mathrm{Tr}(\rho E)$. No additional postulate is required for the general measurement: functions of effects are obtained by the same Hermitian form.
+On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E})$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde E\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde{E})/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$, the usual $\mathrm{Tr}(\rho E)$. No additional postulate is required for the general measurement: functions of effects are obtained by the same Hermitian form.
 
 ## POVMs
 
@@ -131,7 +131,7 @@ $$
 \tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t .
 $$
 
-Given a state $\tilde{Ϛ}$, the outcome probabilities are $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$; on $\mathbb{M}_+$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}\tilde E_y)/\mathrm{Sc}(\tilde{Ϛ})$, and the trace is the final reading at normalisation, $p_y=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$. They are non-negative and sum to one:
+Given a state $\tilde{Ϛ}$, the outcome probabilities are $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$; on $\mathbb{B}_{\Psi}$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}\tilde E_y)/\mathrm{Sc}(\tilde{Ϛ})$, and the trace is the final reading at normalisation, $p_y=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$. They are non-negative and sum to one:
 
 $$
 \sum_y p_y = \mathrm{Sc}\!\left(\tilde{Ϛ}\sum_y\tilde{E}_y\right)\Big/\mathrm{Sc}(\tilde{Ϛ}) = \frac{\mathrm{Sc}(\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = 1 ,
@@ -234,7 +234,7 @@ which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination
 
 ## The Positive Cone and the Meaning of a Measurement
 
-Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{M}_+$:
+Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{B}_{\Psi}$:
 
 - **States** are the elements of the cone $C_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image); the cone is the future light cone of the biquaternion norm.
 - **Effects** are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.
@@ -248,7 +248,7 @@ The general measurement is a convex decomposition of the identity into effects t
 
 **What it does.**
 
-- It identifies the positive cone of $\mathbb{M}_+$ with the future light cone of the biquaternion norm and derives the effect condition $|\vec a|\leq\min(a_t,1-a_t)$.
+- It identifies the positive cone of $\mathbb{B}_{\Psi}$ with the future light cone of the biquaternion norm and derives the effect condition $|\vec a|\leq\min(a_t,1-a_t)$.
 - It shows that the cone is self-dual with respect to the Hermitian form, so that one pairing serves both the Born rule and the state-effect duality.
 - It identifies the idempotents as the extreme effects and the projective measurements as the extreme resolutions, with the general POVM as a convex decomposition.
 - It expresses the general measurement, its Kraus form, and its post-measurement state entirely in terms of elements of $\mathbb{B}$.
@@ -264,7 +264,7 @@ The general measurement is a convex decomposition of the identity into effects t
 
 **1. The effect body in higher dimensions.** The characterization $|\vec a|\leq\min(a_t,1-a_t)$ is special to $M_2(\mathbb{C})$. For $\mathbb{B}\otimes\mathbb{B}$ and its effects, what is the analogous coefficient condition, and does the biquaternion norm of the tensor product define the cone?
 
-**2. Instruments and information.** A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{M}_\pm$?
+**2. Instruments and information.** A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{B}_{\Psi,\Phi}$?
 
 **3. The self-duality and the two pairings.** The cone is self-dual under the plain form; the biquaternion norm defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the biquaternion norm's cone and the measurement pairing is the normalised Hermitian form, read through the trace?
 
@@ -274,7 +274,7 @@ The general measurement is a convex decomposition of the identity into effects t
 
 ## Summary
 
-A general measurement of a qubit is a resolution of the identity into positive elements of the Hermitian subspace. The positive cone of $\mathbb{M}_+$ is the future light cone of the biquaternion norm:
+A general measurement of a qubit is a resolution of the identity into positive elements of the Hermitian subspace. The positive cone of $\mathbb{B}_{\Psi}$ is the future light cone of the biquaternion norm:
 
 $$
 \tilde{E} = a_te_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_t\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2-|\vec a|^2\geq0,\ a_t\geq0,
@@ -287,7 +287,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde R_
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and effects) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |

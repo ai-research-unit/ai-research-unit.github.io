@@ -125,7 +125,7 @@ $$
 $$
 so the two reduced states have the same spectrum, $S_A=S_B$, and the same replica moments $Z_n=\sum_i\lambda_i^n$. In the biquaternion framework the bipartite algebra $\mathbb{B}\otimes\mathbb{B}$ has complex dimension sixteen and the modules on which pure states live are smaller; for a two-qubit pure state the Schmidt decomposition has at most two terms, which is why the worked example below has two eigenvalues and why the reduced state is a Bloch-ball state.
 
-The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_A=\exp(-K)$ and $Z_n=\mathrm{Tr}\,\exp(-nK)$, and writing $F(T)=-T\log\mathrm{Tr}\,\exp(-K/T)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{M}_+$ element.
+The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_A=\exp(-K)$ and $Z_n=\mathrm{Tr}\,\exp(-nK)$, and writing $F(T)=-T\log\mathrm{Tr}\,\exp(-K/T)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{B}_{\Psi}$ element.
 
 ## Worked Example: a Two-Qubit Biquaternion State
 
@@ -237,7 +237,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; $n$ replicas |
 | $\rho_A=\mathrm{Tr}_B\rho_{AB}$ | Reduced state |

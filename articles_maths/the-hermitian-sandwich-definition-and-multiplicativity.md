@@ -12,7 +12,7 @@ It is the two-sided operator $L_{\tilde Q}R_{\tilde Q^{*}}$: the second slot is 
 
 **The results.** The article states five things. The sandwich is multiplicative up to the order of the factors, $\mathrm{Sd}_{\tilde Q}\mathrm{Sd}_{\tilde Q_2}=\mathrm{Sd}_{\tilde Q\tilde Q_2}$, and its defect from an algebra automorphism is the operator $e_t-\tilde Q^{*}\tilde Q$. It preserves the Hermitian and anti-Hermitian halves for every parameter, and it preserves the finer subspace structure exactly when the parameter is a central multiple of a real unit quaternion. It scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$. Its parameter is defined modulo the central phase, which gives the real dimension seven. It meets each one-sided family in the closed ray of nonnegative multiples of the identity, and its spectrum is the four products of the eigenvalues of the $2\times2$ model with their conjugates. On the unit-norm slice the parameter map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$; on the full unit group it has kernel $U(1)$ and image $CO^{+}(1,3)$.
 
-**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Operator Family Conventions*: $\mathrm{Sd}_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde Q_2}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{M}_+$ and $\mathbb{M}_-$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
+**Verification.** The matrix verification of the spectrum and of the Lorentz action is in *The Hermitian Sandwich: Definition and Multiplicativity* and *The Hermitian Sandwich: Definition and Multiplicativity*. The present article states the operator results and sketches the proofs; no case study is cited as proof. The notation of the families is that of *Operator Family Conventions*: $\mathrm{Sd}_{\tilde Q}$ is the sandwich, $L_{\tilde Q}R_{\tilde Q_2}$ the two-sided operator, $L(\mathbb{B})$ and $R(\mathbb{B})$ the two regular families, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian halves, $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm, and $\operatorname{End}_{LR\ast}(\mathbb{B})$ the set of sandwiches. The involution is the algebra's conjugation, the one whose matrix is the dagger in the matrix models.
 
 **The real cone.** The set $\operatorname{End}_{LR\ast}(\mathbb{B})=\{\mathrm{Sd}_{\tilde Q}:\tilde Q\in\mathbb{B}\}$ is a cone: it is closed under multiplication by nonnegative real numbers, and it is not closed under addition. It is a real cone of real dimension seven, not a complex cone. The two-sided cone $\operatorname{End}_{LR}(\mathbb{B})$ is complex of complex dimension seven, and the sandwich is a real slice of it, a proper subset, the slice on which the two parameters are conjugate.
 
@@ -107,13 +107,13 @@ so the sandwich is a scalar multiple of an algebra automorphism; it is an automo
 
 ## The Two Halves
 
-### Preservation of $\mathbb{M}_+$ and $\mathbb{M}_-$
+### Preservation of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$
 
 **The halves.** The Hermitian half and the anti-Hermitian half are
 
 $$
-\mathbb{M}_+=\{\tilde X:\tilde X^{*}=\tilde X\},\qquad
-\mathbb{M}_-=\{\tilde X:\tilde X^{*}=-\tilde X\}.
+\mathbb{B}_{\Psi}=\{\tilde X:\tilde X^{*}=\tilde X\},\qquad
+\mathbb{B}_{\Phi}=\{\tilde X:\tilde X^{*}=-\tilde X\}.
 $$
 
 They are the real eigenspaces of the involution. Each is a real subspace of real dimension four; they are exchanged by multiplication by the central $i$, and their sum is the real algebra of real dimension eight. They are not complex subspaces: multiplication by $i$ moves one to the other.
@@ -128,11 +128,11 @@ $$
 
 So $\mathrm{Sd}_{\tilde Q}$ preserves each half for every $\tilde Q$, without a unit or norm-one hypothesis. The two statements are consequences of the involution, not of the norm.
 
-**The exchange.** Multiplication by the central $i$ exchanges the halves: $\tilde X\in\mathbb{M}_+$ iff $i\tilde X\in\mathbb{M}_-$. The sandwich commutes with the exchange, because $i$ is central:
+**The exchange.** Multiplication by the central $i$ exchanges the halves: $\tilde X\in\mathbb{B}_{\Psi}$ iff $i\tilde X\in\mathbb{B}_{\Phi}$. The sandwich commutes with the exchange, because $i$ is central:
 $$
 \mathrm{Sd}_{\tilde Q}(i\tilde X)=i\,\mathrm{Sd}_{\tilde Q}(\tilde X).
 $$
-The two halves are one action read in two real forms; the Lorentz transformation on $\mathbb{M}_-$ is the congruence on $\mathbb{M}_+$ composed with the exchange.
+The two halves are one action read in two real forms; the Lorentz transformation on $\mathbb{B}_{\Phi}$ is the congruence on $\mathbb{B}_{\Psi}$ composed with the exchange.
 
 ### The Criterion on $\tilde Q$
 
@@ -297,7 +297,7 @@ The Hermitian sandwich is $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\til
 |---|---|
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
 | $L_{\tilde Q}R_{\tilde Q_2}$ | the two-sided operator; $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian halves, real dimension four each |
+| $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian halves, real dimension four each |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm; $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde X\rangle_{\natural}$ |
 | $\mathrm{U}(1)$ | the central phase $\{\omega e_t:|\omega|=1\}$ |
 | $\operatorname{End}_{LR\ast}(\mathbb{B})$ | the real cone of sandwiches, real dimension seven |

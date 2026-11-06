@@ -371,7 +371,7 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; central $i$ |
-| $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
+| $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\vec r,\vec p,\vec v,\vec F$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, $L=|\vec L|$ | Angular momentum and its magnitude; vector part of $\vec r\vec p$ |
 | $V(r)$, $F(r)=-dV/dr$ | Central potential energy; radial force component |

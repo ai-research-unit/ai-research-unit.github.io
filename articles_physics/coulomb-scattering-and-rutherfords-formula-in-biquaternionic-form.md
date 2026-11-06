@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi,\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $r$ is the argument of the field.
 
 ## The Coulomb Problem in Biquaternion Form
 
@@ -157,7 +157,7 @@ $$
 
 independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.
 
-In the biquaternion interpretation, the amplitude $f(\theta)$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{C}_{\mathbb{B}}$.
+In the biquaternion interpretation, the amplitude $f(\theta)$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{B}_{C}$.
 
 ### Rutherford's formula
 
@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
+In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 
@@ -259,7 +259,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 **What the biquaternion notation provides.**
 
-- **Centrality of the whole problem.** The potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, and the amplitude and every phase are elements of $\mathbb{C}_{\mathbb{B}}$. No module index appears anywhere, which is the precise statement that the problem is spin-0.
+- **Centrality of the whole problem.** The potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, and the amplitude and every phase are elements of $\mathbb{B}_{C}$. No module index appears anywhere, which is the precise statement that the problem is spin-0.
 - **The phases as central $*$-unitary elements.** The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.
 - **The momentum transfer as a real quaternion.** The Born amplitude is the Fourier transform of a central scalar at a momentum transfer that is a real quaternion, the difference of two real wave vectors; the Fourier integral produces a central scalar.
 - **Continuity with the bound problem.** The radial equation is the same central scalar equation as in the hydrogen article, at positive energy. The framework exhibits the bound and continuum problems as one central problem.
@@ -308,8 +308,8 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the amplitude and the phases |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{C}$ | Centre; home of the amplitude and the phases |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $V(r)=\alpha/r$, $\alpha=Z_1Z_2e^2$ | Coulomb potential, central |
 | $\eta=m\alpha/\hbar^2k=\alpha/\hbar v$ | Coulomb parameter |

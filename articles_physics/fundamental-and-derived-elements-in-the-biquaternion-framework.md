@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
+The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
 
 The question is not decorative. Every derivation in the framework inherits the status of its inputs. If an object is silently promoted from derived to fundamental — or quietly derived in one place and posited in another — then the framework's account of *why* it has the structure it has is wrong, even when every formula is right. The purpose of this article is to fix a sorting criterion, state the base to which it applies, and apply the criterion to the framework's objects one at a time.
 
@@ -46,7 +46,7 @@ $$
 \mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}.
 $$
 
-The algebra $\mathbb{B}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, with the multiplication extended $\mathbb{C}$-bilinearly from that of $\mathbb{H}$. Its centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.
+The algebra $\mathbb{B}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, with the multiplication extended $\mathbb{C}$-bilinearly from that of $\mathbb{H}$. Its centre is $\mathbb{B}_{C}=\mathbb{C}e_t$.
 
 Nothing else is posited. In particular, no conjugation other than the two that the base supplies (${}^{\natural}$ from $\mathbb{H}$ and the real structure below) is assumed; no pairing, trace, norm, subspace, root of $-1$, or polar form is assumed.
 
@@ -60,10 +60,10 @@ $$
 (Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z)^{*}=Q_{1t}^{*}e_t+Q_{1x}^{*}\vec e_x+Q_{1y}^{*}\vec e_y+Q_{1z}^{*}\vec e_z,
 $$
 
-where $Q_{1,\mu}^{*}$ is the complex conjugate of the coefficient. This is the **real structure**: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace
+where $Q_{1,\mu}^{*}$ is the complex conjugate of the coefficient. This is the **real structure**: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{B}_{H}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace
 
 $$
-\mathbb{H}_{\mathbb{B}}=\{q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_\mu\in\mathbb{R}\},
+\mathbb{B}_{H}=\{q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_\mu\in\mathbb{R}\},
 $$
 
 a real form of the complex algebra, isomorphic to $\mathbb{H}$. Given the complexification (B2), the real structure is canonical: it is the complex conjugation of the scalar factor. The posit is the complexification, and the real structure is the certificate of that posit.
@@ -74,7 +74,7 @@ $$
 \rho_1(\tilde{Q}_1)=\tilde{Q}_1^{\natural}, \qquad \rho_2(\tilde{Q}_1)=J\tilde{Q}_1^{\natural}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
 
-are both $\mathbb{C}$-antilinear algebra involutions; the fixed set of $\rho_1$ is $M_2(\mathbb{R})$, while the fixed set of $\rho_2$ is the copy of $\mathbb{H}$ of matrices $\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, whose determinant $|a|^2+|b|^2$ vanishes only at zero. The two real forms are not isomorphic: one is a division algebra, the other has zero divisors. So the algebra alone does not determine the real form, and the framework's choice — the complexification of $\mathbb{H}$, whose real form is the division algebra $\mathbb{H}_{\mathbb{B}}$ — is a genuine posit, not a consequence of dimension or simplicity. This choice is what will fix the two-sector split in the section after next.
+are both $\mathbb{C}$-antilinear algebra involutions; the fixed set of $\rho_1$ is $M_2(\mathbb{R})$, while the fixed set of $\rho_2$ is the copy of $\mathbb{H}$ of matrices $\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, whose determinant $|a|^2+|b|^2$ vanishes only at zero. The two real forms are not isomorphic: one is a division algebra, the other has zero divisors. So the algebra alone does not determine the real form, and the framework's choice — the complexification of $\mathbb{H}$, whose real form is the division algebra $\mathbb{B}_{H}$ — is a genuine posit, not a consequence of dimension or simplicity. This choice is what will fix the two-sector split in the section after next.
 
 ## Derived: The Conjugations
 
@@ -97,7 +97,7 @@ a central element, so the product of a biquaternion with its quaternion conjugat
 **Complex conjugation.** The real structure $\bar{\cdot}$ of the previous section. It is an involution and an algebra automorphism, and it is $\mathbb{C}$-antilinear. In the base it is derived from the complexification. Its two eigenspaces,
 
 $$
-\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}},
+\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH},
 $$
 
 are the fixed set and the $(-1)$-eigenspace, both of real dimension $4$; this **quaternion decomposition** is thus derived from the real structure.
@@ -137,12 +137,12 @@ whereas an anti-automorphism would give $\tilde{Q}_2^{\flat}\tilde Q_1^{\flat}$ 
 The Hermitian conjugation ${}^{*}$ is an involution, so it has a $\pm1$ eigenspace decomposition. Define
 
 $$
-\mathbb{M}_+=\{\tilde Q_1:\tilde Q_1^{*}=\tilde Q_1\}, \qquad \mathbb{M}_-=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}.
+\mathbb{B}_{\Psi}=\{\tilde Q_1:\tilde Q_1^{*}=\tilde Q_1\}, \qquad \mathbb{B}_{\Phi}=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}.
 $$
 
 Both are derived: they are the eigenspaces of the derived involution ${}^{*}$, and they are preserved by every automorphism of the base (which commutes with ${}^{\natural}$ and $\bar{\cdot}$, hence with ${}^{*}$). The coordinate forms are obtained by solving the eigen-equations, and this is a derivation, so it is written out.
 
-**Solving for $\mathbb{M}_+$.** Write $\tilde Q_1=\sum_\mu Q_{1,\mu} e_\mu$. The condition $\tilde Q_1^{*}=\tilde Q_1$ reads
+**Solving for $\mathbb{B}_{\Psi}$.** Write $\tilde Q_1=\sum_\mu Q_{1,\mu} e_\mu$. The condition $\tilde Q_1^{*}=\tilde Q_1$ reads
 
 $$
 Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z.
@@ -151,10 +151,10 @@ $$
 Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
 
 $$
-\mathbb{M}_+=\{c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
+\mathbb{B}_{\Psi}=\{c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
 $$
 
-**Solving for $\mathbb{M}_-$.** The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads
+**Solving for $\mathbb{B}_{\Phi}$.** The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads
 
 $$
 -Q_{1t}^{*}e_t+Q_{1x}^{*}\vec e_x+Q_{1y}^{*}\vec e_y+Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z,
@@ -163,30 +163,30 @@ $$
 so $Q_{1t}$ is purely imaginary and the vector coefficients are real:
 
 $$
-\mathbb{M}_-=\{i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
+\mathbb{B}_{\Phi}=\{i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
 $$
 
 Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,
 
 $$
-\boxed{\;\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-\;}.
+\boxed{\;\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}\;}.
 $$
 
-**Neither sector is a subalgebra.** This is a derived negative fact, with witnesses: $(e_t+i\vec e_x)(e_t+i\vec e_y)=e_t+i\vec e_x+i\vec e_y-\vec e_z\notin\mathbb{M}_+$, because the vector part contains the real term $-\vec e_z$; and $(ie_t+\vec e_x)^2=-2e_t+2i\vec e_x\notin\mathbb{M}_-$, because the scalar part is real. The sector decomposition is a decomposition of vector spaces, not of algebras, and this too follows from the multiplication table rather than being posited.
+**Neither sector is a subalgebra.** This is a derived negative fact, with witnesses: $(e_t+i\vec e_x)(e_t+i\vec e_y)=e_t+i\vec e_x+i\vec e_y-\vec e_z\notin\mathbb{B}_{\Psi}$, because the vector part contains the real term $-\vec e_z$; and $(ie_t+\vec e_x)^2=-2e_t+2i\vec e_x\notin\mathbb{B}_{\Phi}$, because the scalar part is real. The sector decomposition is a decomposition of vector spaces, not of algebras, and this too follows from the multiplication table rather than being posited.
 
 **The exchange between the sectors.** Multiplication by the central scalar $i$ exchanges the sectors,
 
 $$
-i\,\mathbb{M}_+=\mathbb{M}_-, \qquad i\,\mathbb{M}_-=\mathbb{M}_+,
+i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}, \qquad i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},
 $$
 
-since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q_1)^{*}=-i\tilde Q_1^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{M}_-$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $\langle i\tilde Q_1\rangle_{\natural}=i^2\langle\tilde Q_1\rangle_{\natural}=-\langle\tilde Q_1\rangle_{\natural}$, it identifies them only as anti-isometric real quadratic spaces.
+since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q_1)^{*}=-i\tilde Q_1^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{B}_{\Phi}$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $\langle i\tilde Q_1\rangle_{\natural}=i^2\langle\tilde Q_1\rangle_{\natural}=-\langle\tilde Q_1\rangle_{\natural}$, it identifies them only as anti-isometric real quadratic spaces.
 
 **Is the split forced or chosen?** Relative to the base, the split is forced: it is the eigenspace decomposition of the derived involution ${}^{*}$, and no automorphism of the base can move it. It is not an independent posit, and no further choice enters.
 
-But the split is forced only *relative to the base*, and the real form the base fixes is a posit (it is the content of the complexification). If the algebra is regarded as a bare real algebra, its real structures include one whose fixed set is $M_2(\mathbb{R})$; that real form is not isomorphic to $\mathbb{H}_{\mathbb{B}}$, since $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}_{\mathbb{B}}$ does not, so no algebra automorphism carries it to the framework's real form. The Hermitian conjugation ${}^{*}$ is built from the real structure, so the sector decomposition inherits this dependence. The correct statement is therefore: **the two-sector split is a theorem about the algebra together with its real form, and the real form is an input.** The split is a consequence of the framework's posit of the quaternion real form, not a consequence of the algebra alone. This is the fact about the framework that the title of this section asks for.
+But the split is forced only *relative to the base*, and the real form the base fixes is a posit (it is the content of the complexification). If the algebra is regarded as a bare real algebra, its real structures include one whose fixed set is $M_2(\mathbb{R})$; that real form is not isomorphic to $\mathbb{B}_{H}$, since $M_2(\mathbb{R})$ has zero divisors and $\mathbb{B}_{H}$ does not, so no algebra automorphism carries it to the framework's real form. The Hermitian conjugation ${}^{*}$ is built from the real structure, so the sector decomposition inherits this dependence. The correct statement is therefore: **the two-sector split is a theorem about the algebra together with its real form, and the real form is an input.** The split is a consequence of the framework's posit of the quaternion real form, not a consequence of the algebra alone. This is the fact about the framework that the title of this section asks for.
 
-**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i c r'_t$ to $\mathbb{M}_-$ rather than to $\mathbb{M}_+$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{M}_-$ and of the qubit operators with $\mathbb{M}_+$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
+**The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i c r'_t$ to $\mathbb{B}_{\Phi}$ rather than to $\mathbb{B}_{\Psi}$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{B}_{\Phi}$ and of the qubit operators with $\mathbb{B}_{\Psi}$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
 
 ## Derived: The Trace Form
 
@@ -212,22 +212,22 @@ $$
 
 This is the trace formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$ in $\mathbb{M}_+$,
+**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$ in $\mathbb{B}_{\Psi}$,
 
 $$
 \mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\bigl(c^2 r_{t,1}r_{t,2}+\vec r_{\psi,1}\cdot\vec r_{\psi,2}\bigr),
 $$
 
-which is real and positive definite; for $\tilde{R}_{\varphi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\varphi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{M}_-$,
+which is real and positive definite; for $\tilde{R}_{\varphi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\varphi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{B}_{\Phi}$,
 
 $$
 \mathrm{Tr}(\tilde{R}_{\varphi,1}\tilde{R}_{\varphi,2})=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
 $$
 
-which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{M}_+$, negative definite on $\mathbb{M}_-$, and the two sectors are orthogonal for it:
+which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{B}_{\Psi}$, negative definite on $\mathbb{B}_{\Phi}$, and the two sectors are orthogonal for it:
 
 $$
-\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-
+\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}
 $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
@@ -266,7 +266,7 @@ Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the 
 
 **Verdict.** Relative to the framework's base — the complexified algebra $\mathbb{B}$ together with its real structure — the scalar imaginary is **derived**, up to the presentational sign. It is not an independent fundamental element. It is the certificate of the complexification: the posit is "adjoin a central square root of $-1$," and once that is done the square roots are the derived objects. The only honest qualification is that this is base-relative: if one insisted on a base of $\mathbb{H}$ alone, the complexification could not be derived and $i$ would be counted fundamental. The framework does not use that base, and this article does not either.
 
-**A gap, flagged.** What the framework does *not* supply is a derivation of the complexification itself from $\mathbb{H}$, or any argument that the quaternion real form $\mathbb{H}_{\mathbb{B}}$ should be preferred to the alternative real form $M_2(\mathbb{R})$ available on the same abstract algebra. The sorting below therefore records the complexification as fundamental, with the real-form choice as its content. Whether that choice is physically motivated or merely conventional is not decidable from the algebra, and is left as an open question rather than smoothed over.
+**A gap, flagged.** What the framework does *not* supply is a derivation of the complexification itself from $\mathbb{H}$, or any argument that the quaternion real form $\mathbb{B}_{H}$ should be preferred to the alternative real form $M_2(\mathbb{R})$ available on the same abstract algebra. The sorting below therefore records the complexification as fundamental, with the real-form choice as its content. Whether that choice is physically motivated or merely conventional is not decidable from the algebra, and is left as an open question rather than smoothed over.
 
 ## Derived: The Polar Decompositions
 
@@ -308,14 +308,14 @@ The results are collected in one place. The statuses are those of the criterion,
 | Its standard involution ${}^{\natural}$ | Derived (rigid) | The unique involution fixing $e_t$ and negating $\vec e_x,\vec e_y,\vec e_z$; intrinsic to $\mathbb{H}$. |
 | The complexification of $\mathbb{H}$ | **Fundamental** | $i\notin\mathbb{H}$; adjoined in (B2). This is the substantive posit. |
 | The scalar imaginary $i$ | Derived (up to sign) | Unique central element with $i^2=-e_t$, up to the presentational sign exchanged by $\bar{\cdot}$. |
-| The real structure $\bar{\cdot}$ | Derived from the complexification | Canonical $\mathbb{C}$-antilinear involution with fixed set $\mathbb{H}_{\mathbb{B}}$. |
+| The real structure $\bar{\cdot}$ | Derived from the complexification | Canonical $\mathbb{C}$-antilinear involution with fixed set $\mathbb{B}_{H}$. |
 | The quaternion units $\vec e_x,\vec e_y,\vec e_z$ | Presentation | A basis of the pure imaginary subspace; rotated by automorphisms of $\mathbb{H}$. |
-| The real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ | Derived | Fixed set of $\bar{\cdot}$. |
-| The complex subspace $\mathbb{C}_{\mathbb{B}}$ | Derived | Centre of $\mathbb{B}$; fixed set of ${}^{\natural}$. |
+| The real quaternion subspace $\mathbb{B}_{H}$ | Derived | Fixed set of $\bar{\cdot}$. |
+| The complex subspace $\mathbb{B}_{C}$ | Derived | Centre of $\mathbb{B}$; fixed set of ${}^{\natural}$. |
 | Hermitian conjugation ${}^{*}$ | Derived (rigid) | Defined as ${}^{\natural}\circ\bar{\cdot}$. |
 | Anti-Hermitian conjugation $\flat$ | Derived (rigid) | Defined as $-{}^{*}$; the central sign is a definitional convention, not a presentation — no automorphism of the base moves it. |
-| The sectors $\mathbb{M}_+,\mathbb{M}_-$ | Derived | Eigenspaces of the derived involution ${}^{*}$. |
-| The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Forced relative to the base | Eigen-decomposition of ${}^{*}$; the real form it uses is an input. |
+| The sectors $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Derived | Eigenspaces of the derived involution ${}^{*}$. |
+| The split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Forced relative to the base | Eigen-decomposition of ${}^{*}$; the real form it uses is an input. |
 | The biquaternion norm $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ | Derived | Multiplication plus ${}^{\natural}$. |
 | The trace $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
 | The trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Derived | Consequence of the trace. |
@@ -330,7 +330,7 @@ The framework's objects sort into a small fundamental core and a large derived f
 The two sorting questions raised in the Introduction are answered as follows.
 
 - **The scalar imaginary is derived, not fundamental.** It is not in $\mathbb{H}$, so the complexification is a real posit; but within the complexified algebra it is the unique central square root of $-1$ up to sign, and the sign is exchanged by the real structure. What is fundamental is the complexification, of which $i$ is the certificate.
-- **The two-sector split is forced relative to the base, but the base contains a substantive choice.** The split is the eigenspace decomposition of the derived Hermitian conjugation, so it is not an extra posit; but the choice of real form (equivalently, the complexification) that makes that conjugation available is a posit, and the same abstract algebra admits other real structures whose real forms are not isomorphic to $\mathbb{H}_{\mathbb{B}}$. The split is a theorem about the algebra *with its real structure*, not about the algebra alone.
+- **The two-sector split is forced relative to the base, but the base contains a substantive choice.** The split is the eigenspace decomposition of the derived Hermitian conjugation, so it is not an extra posit; but the choice of real form (equivalently, the complexification) that makes that conjugation available is a posit, and the same abstract algebra admits other real structures whose real forms are not isomorphic to $\mathbb{B}_{H}$. The split is a theorem about the algebra *with its real structure*, not about the algebra alone.
 
 The one gap is left visible rather than closed. The complexification — equivalently, the preference for the quaternion real form — is recorded as fundamental and not derived, and no algebraic argument for that preference is offered, because none is available from the algebra itself.
 
@@ -346,10 +346,10 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\bar{\cdot}$ | Complex conjugation (real structure); derived from the complexification |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation; derived |
 | ${}^{\flat}=-{}^{*}$ | Anti-Hermitian conjugation; derived up to sign |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; fixed set of $\bar{\cdot}$ |
-| $\mathbb{C}_{\mathbb{B}}$ | Complex subspace; centre; fixed set of ${}^{\natural}$ |
-| $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
+| $\mathbb{B}_{H}$ | Real quaternion subspace; fixed set of $\bar{\cdot}$ |
+| $\mathbb{B}_{C}$ | Complex subspace; centre; fixed set of ${}^{\natural}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace: real scalar, imaginary vector |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace: imaginary scalar, real vector |
 | $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; derived |
 | $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; rigidly derived |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace form; derived |
@@ -360,6 +360,6 @@ The one gap is left visible rather than closed. The complexification — equival
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the definitions of $\mathbb{B}$, the four conjugations, and the four fixed-point subspaces whose derivation is sorted here.
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html), for the automorphism group $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})=PGL(2,\mathbb{C})$ and the conjugate-linear coset, which are the source of the non-uniqueness of the real structure used in "The Stipulated Base."
 - *The Polar Decomposition in Subspaces*, for the Hamilton, complex and Cartan representations whose status as derived constructions is settled here.
-- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$ and the 4×4 regular image, and [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Operator Reading: the Twist*, for the spinor realization.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{B}_{H}$ and $M_2(\mathbb{R})$ and the 4×4 regular image, and [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Operator Reading: the Twist*, for the spinor realization.
 - [Algebras: A General Introduction](../articles_maths/algebras-a-general-introduction.html), for the notions of algebra, centre, simplicity, and base change that the criterion and the base presuppose.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) and [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the physical interpretations that this article records as posits rather than derivations.

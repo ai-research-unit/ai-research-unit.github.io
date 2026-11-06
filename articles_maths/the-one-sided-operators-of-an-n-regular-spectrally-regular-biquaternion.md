@@ -22,7 +22,7 @@ with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\ma
 
 The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
-The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{M}_+$ and $\mathbb{M}_-$. Its block form in the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is
+The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. Its block form in the splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is
 
 $$
 L_{\tilde Q}=
@@ -44,7 +44,7 @@ The diagonal block $D_{\tilde Q}$ preserves each sector and the off-diagonal blo
 The clearest case is the pure central phase of $\pi/2$. The factor is $i$, or $-i$, and the operator is
 
 $$
-L_i(\tilde X)=i\tilde X,\qquad i\mathbb{M}_-=\mathbb{M}_+,\qquad i\mathbb{M}_+=\mathbb{M}_- .
+L_i(\tilde X)=i\tilde X,\qquad i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},\qquad i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi} .
 $$
 
 It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided sandwich cancels: $\mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
@@ -64,10 +64,10 @@ $$
 The Hermitian and anti-Hermitian subspaces are
 
 $$
-\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
 $$
 
-On $\mathbb{M}_-$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{M}_+$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central. The **real quaternion subspace** is $\mathbb{H}_{\mathbb{B}}=\{\tilde Q:Q_\mu\in\mathbb{R}\ \text{for all}\ \mu\}$; its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$ has all coefficients purely imaginary.
+On $\mathbb{B}_{\Phi}$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{B}_{\Psi}$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central. The **real quaternion subspace** is $\mathbb{B}_{H}=\{\tilde Q:Q_\mu\in\mathbb{R}\ \text{for all}\ \mu\}$; its imaginary multiple $\mathbb{B}_{iH}$ has all coefficients purely imaginary.
 
 The **norm** is the complex number
 
@@ -173,7 +173,7 @@ $$
 
 *Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
 
-**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{M}_\pm$.
+**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{B}_{\Psi,\Phi}$.
 
 The last clause is the subject of the next section: a complex isometry can exchange the two real forms, and the phase does exactly that.
 
@@ -283,7 +283,7 @@ D_{\tilde Q}(\tilde X)=\tfrac12\bigl(\tilde Q\tilde X+\tilde X\tilde Q^{*}\bigr)
 O_{\tilde Q}(\tilde X)=\tfrac12\bigl(\tilde Q\tilde X-\tilde X\tilde Q^{*}\bigr).
 $$
 
-**Proposition (the block form).** In the real splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the left multiplication has the block form
+**Proposition (the block form).** In the real splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, the left multiplication has the block form
 
 $$
 L_{\tilde Q}=
@@ -295,7 +295,7 @@ $$
 
 The diagonal block $D_{\tilde Q}$ maps each sector into itself and the off-diagonal block $O_{\tilde Q}$ maps each sector into the other.
 
-*Proof.* Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{M}_\pm$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so
+*Proof.* Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{B}_{\Psi,\Phi}$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so
 
 $$
 (\tilde Q\tilde X)^{*}=\tilde X^{*}\tilde Q^{*}=(\tilde X_+-\tilde X_-)\tilde Q^{*}.
@@ -341,9 +341,9 @@ the entry $i\operatorname{Im}(c)$ being the multiplication by $i$ on a sector ti
 
 ### The Sector Criterion
 
-**Proposition (which parameters preserve a sector).** The left multiplication $L_{\tilde Q}$ preserves each of $\mathbb{M}_+$ and $\mathbb{M}_-$ exactly when $\tilde Q$ is a real scalar. It exchanges the two sectors exactly when $\tilde Q$ is a nonzero purely imaginary scalar. For every other parameter it mixes them.
+**Proposition (which parameters preserve a sector).** The left multiplication $L_{\tilde Q}$ preserves each of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ exactly when $\tilde Q$ is a real scalar. It exchanges the two sectors exactly when $\tilde Q$ is a nonzero purely imaginary scalar. For every other parameter it mixes them.
 
-*Proof.* Suppose first that $L_{\tilde Q}(\mathbb{M}_-)\subseteq\mathbb{M}_-$. For every anti-Hermitian $\tilde X$,
+*Proof.* Suppose first that $L_{\tilde Q}(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$. For every anti-Hermitian $\tilde X$,
 
 $$
 (\tilde Q\tilde X)^{*}=-\tilde Q\tilde X .
@@ -357,7 +357,7 @@ $$
 
 for every anti-Hermitian $\tilde X$. Taking $\tilde X=ie_t$ gives $i\tilde Q^{*}=i\tilde Q$, hence $\tilde Q^{*}=\tilde Q$. Taking $\tilde X=\vec e_x$ gives $\vec e_x\tilde Q=\tilde Q\vec e_x$, so $\tilde Q$ commutes with $\vec e_x$; the same holds with $\vec e_y$ and $\vec e_z$. A Hermitian element commuting with the three vector units is a real scalar: commuting with $\vec e_x$ forces the $\vec e_y$ and $\vec e_z$ coefficients to vanish, and then commuting with $\vec e_y$ forces the $\vec e_x$ coefficient to vanish. The converse is immediate.
 
-Suppose next that $L_{\tilde Q}(\mathbb{M}_-)\subseteq\mathbb{M}_+$. Then $(\tilde Q\tilde X)^{*}=+\tilde Q\tilde X$ for every anti-Hermitian $\tilde X$, so $-\tilde X\tilde Q^{*}=\tilde Q\tilde X$, that is
+Suppose next that $L_{\tilde Q}(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Psi}$. Then $(\tilde Q\tilde X)^{*}=+\tilde Q\tilde X$ for every anti-Hermitian $\tilde X$, so $-\tilde X\tilde Q^{*}=\tilde Q\tilde X$, that is
 
 $$
 \tilde X\tilde Q^{*}=-\tilde Q\tilde X .
@@ -365,7 +365,7 @@ $$
 
 Taking $\tilde X=ie_t$ gives $i\tilde Q^{*}=-i\tilde Q$, hence $\tilde Q^{*}=-\tilde Q$. Taking $\tilde X=\vec e_x$ gives $\vec e_x(-\tilde Q)=-\tilde Q\vec e_x$, that is $\vec e_x\tilde Q=\tilde Q\vec e_x$; the same holds with $\vec e_y$ and $\vec e_z$. An anti-Hermitian element commuting with the three vector units is a purely imaginary scalar, by the same coefficient argument. The converse is immediate.
 
-**Corollary (the only one-sided Lorentz transformations).** Among the units, the real scalars are the only left multiplications that preserve $\mathbb{M}_-$, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore gives no nontrivial real Lorentz transformation of $\mathbb{M}_-$; the real Lorentz group is the image of the two-sided sandwich, not of the one-sided operator.
+**Corollary (the only one-sided Lorentz transformations).** Among the units, the real scalars are the only left multiplications that preserve $\mathbb{B}_{\Phi}$, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore gives no nontrivial real Lorentz transformation of $\mathbb{B}_{\Phi}$; the real Lorentz group is the image of the two-sided sandwich, not of the one-sided operator.
 
 ## The Pure Central Phase of $\pi/2$
 
@@ -381,7 +381,7 @@ The phase of $-\pi/2$ is $-i$ and its operator is $J^{-1}=L_{-i}$. On the princi
 
 **Proposition.** The operator $J$ is $\mathbb{C}$-linear, exchanges the two real forms,
 
-$$ J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-, $$
+$$ J(\mathbb{B}_{\Phi})=\mathbb{B}_{\Psi},\qquad J(\mathbb{B}_{\Psi})=\mathbb{B}_{\Phi}, $$
 
 and satisfies
 
@@ -389,17 +389,17 @@ $$
 J^{2}=-\mathrm{id},\qquad J^{4}=\mathrm{id},\qquad J^{-1}=J^{3}=L_{-i}.
 $$
 
-*Proof.* For $\tilde X\in\mathbb{M}_-$,
+*Proof.* For $\tilde X\in\mathbb{B}_{\Phi}$,
 
 $$
 (i\tilde X)^{*}=-i\tilde X^{*}=-i(-\tilde X)=i\tilde X,
 $$
 
-so $i\tilde X\in\mathbb{M}_+$. The map $\tilde X\mapsto i\tilde X$ is injective and $\mathbb{M}_-$ and $\mathbb{M}_+$ are both real four-dimensional, so $i\mathbb{M}_-=\mathbb{M}_+$. The same computation with $\tilde X\in\mathbb{M}_+$ gives $i\mathbb{M}_+=\mathbb{M}_-$. The powers follow from $i^{2}=-1$ and the centrality of $i$.
+so $i\tilde X\in\mathbb{B}_{\Psi}$. The map $\tilde X\mapsto i\tilde X$ is injective and $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are both real four-dimensional, so $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The same computation with $\tilde X\in\mathbb{B}_{\Psi}$ gives $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The powers follow from $i^{2}=-1$ and the centrality of $i$.
 
 **Remark (the sign).** Both $i$ and $-i$ exchange the sectors, and they are inverse to each other. The sign selects which of the two inverse swaps is used; both exchange the same pair of sectors. The square of either is $-\mathrm{id}$, and the fourth power is the identity.
 
-**Remark (the block matrix).** In the ordered splitting $(\mathbb{M}_+,\mathbb{M}_-)$ the operator is
+**Remark (the block matrix).** In the ordered splitting $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$ the operator is
 
 $$
 J=
@@ -411,33 +411,33 @@ $$
 
 the off-diagonal blocks being the multiplication by $i$ on each real four-dimensional sector. It is the block matrix of a swap times the complex structure. Its square is $-I_8$ and its fourth power is $I_8$.
 
-**Remark (the complex structure).** Since $i$ is central, $J$ is the multiplication by the complex scalar $i$. As a complex-linear map it is the scalar $i$; as a real-linear map it is a complex structure on the eight-dimensional real space. The exchange of $\mathbb{M}_+$ and $\mathbb{M}_-$ is invisible to the complex-linear structure and visible only over $\mathbb{R}$. This is the precise sense in which the phase is a real operation and not a complex one.
+**Remark (the complex structure).** Since $i$ is central, $J$ is the multiplication by the complex scalar $i$. As a complex-linear map it is the scalar $i$; as a real-linear map it is a complex structure on the eight-dimensional real space. The exchange of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ is invisible to the complex-linear structure and visible only over $\mathbb{R}$. This is the precise sense in which the phase is a real operation and not a complex one.
 
 ### The Coordinate Form
 
-Let $\tilde X\in\mathbb{M}_-$ be written as $\tilde X=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b\in\mathbb{R}^{3}$. Then
+Let $\tilde X\in\mathbb{B}_{\Phi}$ be written as $\tilde X=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b\in\mathbb{R}^{3}$. Then
 
 $$
 i\tilde X=i(ia\,e_t+\vec b)=-a\,e_t+i\vec b .
 $$
 
-The result is the element of $\mathbb{M}_+$ with scalar coordinate $-a$ and vector coordinate $\vec b$. In the pair $(a,\vec b)$ the exchange is therefore the **time reflection**
+The result is the element of $\mathbb{B}_{\Psi}$ with scalar coordinate $-a$ and vector coordinate $\vec b$. In the pair $(a,\vec b)$ the exchange is therefore the **time reflection**
 
 $$
 (a,\vec b)\longmapsto(-a,\vec b).
 $$
 
-The following table records the two coordinate descriptions; the first column is the element of $\mathbb{M}_-$ and the second its image in $\mathbb{M}_+$.
+The following table records the two coordinate descriptions; the first column is the element of $\mathbb{B}_{\Phi}$ and the second its image in $\mathbb{B}_{\Psi}$.
 
-| $\tilde X\in\mathbb{M}_-$ | $i\tilde X\in\mathbb{M}_+$ |
+| $\tilde X\in\mathbb{B}_{\Phi}$ | $i\tilde X\in\mathbb{B}_{\Psi}$ |
 |---|---|
 | $ia\,e_t+\vec b$ | $-a\,e_t+i\vec b$ |
 
 The Minkowski form on the two sectors is
 
 $$
-g(\tilde X)=a^{2}-\lvert\vec b\rvert^{2}\quad(\tilde X\in\mathbb{M}_-),\qquad
-g(\tilde Y)=a^{2}-\lvert\vec b\rvert^{2}\quad(\tilde Y=a\,e_t+i\vec b\in\mathbb{M}_+).
+g(\tilde X)=a^{2}-\lvert\vec b\rvert^{2}\quad(\tilde X\in\mathbb{B}_{\Phi}),\qquad
+g(\tilde Y)=a^{2}-\lvert\vec b\rvert^{2}\quad(\tilde Y=a\,e_t+i\vec b\in\mathbb{B}_{\Psi}).
 $$
 
 With this convention
@@ -446,7 +446,7 @@ $$
 g(i\tilde X)=g(\tilde X),
 $$
 
-so $J$ is an isometry between $(\mathbb{M}_-,g)$ and $(\mathbb{M}_+,g)$. In the coordinates above its determinant is $-1$: it is the improper isometry that reverses the time direction and fixes the three space directions. It is the discrete symmetry that exchanges the two real forms, not a proper Lorentz transformation of either one.
+so $J$ is an isometry between $(\mathbb{B}_{\Phi},g)$ and $(\mathbb{B}_{\Psi},g)$. In the coordinates above its determinant is $-1$: it is the improper isometry that reverses the time direction and fixes the three space directions. It is the discrete symmetry that exchanges the two real forms, not a proper Lorentz transformation of either one.
 
 **Remark (the norm sign).** The complex norm changes sign,
 
@@ -454,9 +454,9 @@ $$
 \langle i\tilde X\rangle_{\natural}=i^{2}\langle\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}.
 $$
 
-On $\mathbb{M}_-$ one has $\langle\tilde X\rangle_{\natural}=-g$, and on $\mathbb{M}_+$ one has $\langle\tilde X\rangle_{\natural}=+g$. The minus sign in $\langle i\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}$ is therefore the change of the sector convention, not a failure of the isometry: the form $g$ is preserved.
+On $\mathbb{B}_{\Phi}$ one has $\langle\tilde X\rangle_{\natural}=-g$, and on $\mathbb{B}_{\Psi}$ one has $\langle\tilde X\rangle_{\natural}=+g$. The minus sign in $\langle i\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}$ is therefore the change of the sector convention, not a failure of the isometry: the form $g$ is preserved.
 
-**Remark (physical interpretation).** In the physical interpretation of the corpus, $\mathbb{M}_-$ is the material sector and $\mathbb{M}_+$ the informational sector. The phase of $\pi/2$ exchanges the two: it turns an anti-Hermitian element into a Hermitian one and back. The exchange is the discrete operation of the algebra that the two-sided sandwich cannot see, because the sandwich multiplies by $i$ on the left and by $-i$ on the right. The full Wick rotation of the physics articles is a different operation: it acts on the time coefficient alone and maps $\mathbb{M}_-$ to the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, not to $\mathbb{M}_+$. The operator $J$ is the sector exchange, not the whole Wick rotation.
+**Remark (physical interpretation).** In the physical interpretation of the corpus, $\mathbb{B}_{\Phi}$ is the material sector and $\mathbb{B}_{\Psi}$ the informational sector. The phase of $\pi/2$ exchanges the two: it turns an anti-Hermitian element into a Hermitian one and back. The exchange is the discrete operation of the algebra that the two-sided sandwich cannot see, because the sandwich multiplies by $i$ on the left and by $-i$ on the right. The full Wick rotation of the physics articles is a different operation: it acts on the time coefficient alone and maps $\mathbb{B}_{\Phi}$ to the quaternion subspace $\mathbb{B}_{H}$, not to $\mathbb{B}_{\Psi}$. The operator $J$ is the sector exchange, not the whole Wick rotation.
 
 ### The General Phase
 
@@ -466,7 +466,7 @@ $$
 L_{P_\alpha}=R_{P_\alpha}=\exp(i\alpha)\,\mathrm{id},
 $$
 
-and in the splitting $(\mathbb{M}_+,\mathbb{M}_-)$ its block matrix is
+and in the splitting $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$ its block matrix is
 
 $$
 L_{P_\alpha}=
@@ -476,13 +476,13 @@ i\sin\alpha & \cos\alpha
 \end{pmatrix}.
 $$
 
-For $\tilde X\in\mathbb{M}_-$ the image $\tilde Y=\exp(i\alpha)\tilde X$ satisfies
+For $\tilde X\in\mathbb{B}_{\Phi}$ the image $\tilde Y=\exp(i\alpha)\tilde X$ satisfies
 
 $$
 \tilde Y^{*}=-\exp(-2i\alpha)\,\tilde Y .
 $$
 
-Hence $\tilde Y\in\mathbb{M}_+$ exactly when $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, and $\tilde Y\in\mathbb{M}_-$ exactly when $\alpha\equiv0\pmod{\pi}$. For every other $\alpha$ the image lies in the real four-dimensional subspace $\exp(i\alpha)\mathbb{M}_-$, on which $*$ acts by the scalar $-\exp(-2i\alpha)$; that subspace is neither $\mathbb{M}_+$ nor $\mathbb{M}_-$.
+Hence $\tilde Y\in\mathbb{B}_{\Psi}$ exactly when $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, and $\tilde Y\in\mathbb{B}_{\Phi}$ exactly when $\alpha\equiv0\pmod{\pi}$. For every other $\alpha$ the image lies in the real four-dimensional subspace $\exp(i\alpha)\mathbb{B}_{\Phi}$, on which $*$ acts by the scalar $-\exp(-2i\alpha)$; that subspace is neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$.
 
 *Proof.* The scalar is central, so $L_{P_\alpha}=R_{P_\alpha}=\exp(i\alpha)\mathrm{id}$. The block matrix is the corollary of the block decomposition with $c=\exp(i\alpha)$. For the eigenvalue, $\tilde Y^{*}=\exp(-i\alpha)\tilde X^{*}=-\exp(-i\alpha)\tilde X=-\exp(-2i\alpha)\tilde Y$. The two sector values are the two solutions of $-\exp(-2i\alpha)=\pm1$.
 
@@ -492,7 +492,7 @@ $$
 L_{\exp(i\pi/4)}^{2}=L_i,
 $$
 
-and the image of $\mathbb{M}_-$ is the mixed real four-dimensional subspace on which $*$ acts by $i$.
+and the image of $\mathbb{B}_{\Phi}$ is the mixed real four-dimensional subspace on which $*$ acts by $i$.
 
 *Proof.* The values at the four angles are immediate from the block matrix. The square is $L_{\exp(i\pi/2)}=L_i$ by the composition law.
 
@@ -553,7 +553,7 @@ $$
 \qquad \theta_{\mathrm{rpd}}\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
 $$
 
-It is Hermitian and of norm one. Write $c=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $s=\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
+It is Hermitian and of norm one. Write $c=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $s=\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{B}_{\Phi}$. Then
 
 $$
 \tilde U_{\mathrm b}\tilde X
@@ -561,9 +561,9 @@ $$
 +c\,\vec b-s a\,\vec u .
 $$
 
-The term $i s\,\vec u\times\vec b$ is the whole $\mathbb{M}_+$ part, an imaginary vector. The remaining terms $i(ac-s\,\vec u\cdot\vec b)e_t+c\vec b-s a\,\vec u$ are the $\mathbb{M}_-$ part, an imaginary scalar plus the real vector $c\vec b-s a\,\vec u$. The boost therefore mixes the two sectors in general. For $a=0$ the $\mathbb{M}_-$ part is $c\vec b-i s(\vec u\cdot\vec b)e_t$ and the $\mathbb{M}_+$ part is $i s\,\vec u\times\vec b$, which vanishes only when $\vec b$ is parallel to $\vec u$. For $\vec b=0$ the image is $i a(c\,e_t+i s\,\vec u)=i a c\,e_t-s a\,\vec u$, entirely in $\mathbb{M}_-$: the central imaginary line is mapped into the two-plane spanned by $i e_t$ and $\vec u$.
+The term $i s\,\vec u\times\vec b$ is the whole $\mathbb{B}_{\Psi}$ part, an imaginary vector. The remaining terms $i(ac-s\,\vec u\cdot\vec b)e_t+c\vec b-s a\,\vec u$ are the $\mathbb{B}_{\Phi}$ part, an imaginary scalar plus the real vector $c\vec b-s a\,\vec u$. The boost therefore mixes the two sectors in general. For $a=0$ the $\mathbb{B}_{\Phi}$ part is $c\vec b-i s(\vec u\cdot\vec b)e_t$ and the $\mathbb{B}_{\Psi}$ part is $i s\,\vec u\times\vec b$, which vanishes only when $\vec b$ is parallel to $\vec u$. For $\vec b=0$ the image is $i a(c\,e_t+i s\,\vec u)=i a c\,e_t-s a\,\vec u$, entirely in $\mathbb{B}_{\Phi}$: the central imaginary line is mapped into the two-plane spanned by $i e_t$ and $\vec u$.
 
-The boost is of norm one, so $L_{\tilde U_{\mathrm b}}$ preserves the complex norm, $\langle L_{\tilde U_{\mathrm b}}\tilde X\rangle_{\natural}=\langle \tilde X\rangle_{\natural}$, and is $\mathbb{C}$-orthogonal. It is not a real Lorentz transformation of $\mathbb{M}_-$: it does not preserve the sector, and the only one-sided real Lorentz transformations are $\pm\mathrm{id}$, by the sector criterion.
+The boost is of norm one, so $L_{\tilde U_{\mathrm b}}$ preserves the complex norm, $\langle L_{\tilde U_{\mathrm b}}\tilde X\rangle_{\natural}=\langle \tilde X\rangle_{\natural}$, and is $\mathbb{C}$-orthogonal. It is not a real Lorentz transformation of $\mathbb{B}_{\Phi}$: it does not preserve the sector, and the only one-sided real Lorentz transformations are $\pm\mathrm{id}$, by the sector criterion.
 
 ### The Rotor
 
@@ -575,7 +575,7 @@ $$
 \qquad \theta\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
 $$
 
-It is a real quaternion, of norm one, and $*$-unitary. Write $c=\cos\tfrac{\theta}{2}$, $s=\sin\tfrac{\theta}{2}$, $\vec u=\vec u_{\mathrm r}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
+It is a real quaternion, of norm one, and $*$-unitary. Write $c=\cos\tfrac{\theta}{2}$, $s=\sin\tfrac{\theta}{2}$, $\vec u=\vec u_{\mathrm r}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{B}_{\Phi}$. Then
 
 $$
 \tilde u_{\mathrm r}\tilde X
@@ -583,9 +583,9 @@ $$
 +i a c\,e_t+c\,\vec b+s\,\vec u\times\vec b .
 $$
 
-The first two terms are in $\mathbb{M}_+$: a real scalar and an imaginary vector. The last two terms are in $\mathbb{M}_-$: an imaginary scalar and the real vector $c\vec b+s\vec u\times\vec b$. The rotor mixes the two sectors in general. For $a=0$ the $\mathbb{M}_+$ part is the real scalar $-s\,\vec u\cdot\vec b$, which vanishes only when $\vec b$ is perpendicular to $\vec u$; the $\mathbb{M}_-$ part is the real vector $c\vec b+s\vec u\times\vec b$.
+The first two terms are in $\mathbb{B}_{\Psi}$: a real scalar and an imaginary vector. The last two terms are in $\mathbb{B}_{\Phi}$: an imaginary scalar and the real vector $c\vec b+s\vec u\times\vec b$. The rotor mixes the two sectors in general. For $a=0$ the $\mathbb{B}_{\Psi}$ part is the real scalar $-s\,\vec u\cdot\vec b$, which vanishes only when $\vec b$ is perpendicular to $\vec u$; the $\mathbb{B}_{\Phi}$ part is the real vector $c\vec b+s\vec u\times\vec b$.
 
-The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{H}_{\mathbb{B}}$ and the module $i\mathbb{H}_{\mathbb{B}}$. On $\mathbb{H}_{\mathbb{B}}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{M}_\pm$.
+The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi,\Phi}$.
 
 ## The Image and the Kernel
 
@@ -626,7 +626,7 @@ The following table collects the comparison. The rank is the complex rank of the
 | kernel on the units | trivial | $U(1)$ |
 | nonzero null parameter | rank $2$, right ideal | rank $1$, complex line |
 
-**Corollary (the real forms are two-sided).** The only one-sided multiplications that preserve $\mathbb{M}_-$ are the real scalars, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore does not give the Lorentz group on $\mathbb{M}_-$. The norm-one one-sided operators are $\mathbb{C}$-orthogonal. The proper orthochronous Lorentz group is not among them: it is the image of the two-sided sandwich on the norm-one slice, the identity component of the subgroup of the $\mathbb{C}$-orthogonal group that also preserves the two real forms.
+**Corollary (the real forms are two-sided).** The only one-sided multiplications that preserve $\mathbb{B}_{\Phi}$ are the real scalars, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore does not give the Lorentz group on $\mathbb{B}_{\Phi}$. The norm-one one-sided operators are $\mathbb{C}$-orthogonal. The proper orthochronous Lorentz group is not among them: it is the image of the two-sided sandwich on the norm-one slice, the identity component of the subgroup of the $\mathbb{C}$-orthogonal group that also preserves the two real forms.
 
 ## The Null Cone
 
@@ -657,7 +657,7 @@ $$
 
 with $L_{\Rho}=\Rho\,\mathrm{id}$; the right multiplication is the mirror.
 
-In the real splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ the left multiplication has the block form
+In the real splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ the left multiplication has the block form
 
 $$
 L_{\tilde Q}=
@@ -675,7 +675,7 @@ The diagonal block preserves the sectors and the off-diagonal block carries each
 The pure central phase of $\pi/2$ is the exchange. The factor is $i$ or $-i$, the operator is $J(\tilde X)=i\tilde X$, and
 
 $$
-J(\mathbb{M}_-)=\mathbb{M}_+,\qquad J(\mathbb{M}_+)=\mathbb{M}_-,\qquad J^{2}=-\mathrm{id},\qquad J^{-1}=L_{-i}.
+J(\mathbb{B}_{\Phi})=\mathbb{B}_{\Psi},\qquad J(\mathbb{B}_{\Psi})=\mathbb{B}_{\Phi},\qquad J^{2}=-\mathrm{id},\qquad J^{-1}=L_{-i}.
 $$
 
 In coordinates, $\tilde X=ia\,e_t+\vec b$ is sent to $-a\,e_t+i\vec b$: the time reflection $(a,\vec b)\mapsto(-a,\vec b)$, an improper isometry of the Minkowski form $g=a^{2}-\lvert\vec b\rvert^{2}$. The complex norm changes sign, $\langle i\tilde X\rangle_{\natural}=-\langle\tilde X\rangle_{\natural}$, because the two sectors carry opposite signs in $\langle\cdot\rangle_{\natural}$. For a general phase the block matrix is
@@ -687,7 +687,7 @@ i\sin\alpha & \cos\alpha
 \end{pmatrix},
 $$
 
-the image of $\mathbb{M}_-$ has $*$-eigenvalue $-\exp(-2i\alpha)$, and the sectors are reached exactly at $\alpha\equiv0$ and $\alpha\equiv\pi/2$ modulo $\pi$.
+the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\alpha)$, and the sectors are reached exactly at $\alpha\equiv0$ and $\alpha\equiv\pi/2$ modulo $\pi$.
 
 The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\alpha)$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
@@ -716,7 +716,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $i$ | the central scalar imaginary, $i^{2}=-1$ |
 | $\tilde Q^{*}$ | the Hermitian conjugation $\overline{\tilde Q^{\natural}}$ |
 | $\natural$, $\bar\cdot$ | the quaternion and coefficient conjugations |
-| $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
+| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian sandwich |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
@@ -733,7 +733,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
-| $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_+$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{M}_-$ |
+| $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Phi}$ |
 | $GL(2,\mathbb{C})$ | the image of the one-sided action on the units |
 | $CO^{+}(1,3)$ | the image of the two-sided action on the units |
 | $U(1)$ | the kernel of the two-sided action, the central unit circle |

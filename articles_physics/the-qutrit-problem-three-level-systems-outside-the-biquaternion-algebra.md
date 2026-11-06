@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and its state space is the Bloch ball, the state slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
+The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and its state space is the Bloch ball, the state slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
 
 Three-level systems are the next step, and they are physically unavoidable: a spin-one atom, a qutrit, a three-level ladder, the internal states of a nitrogen-vacancy centre. The question this article addresses is whether the biquaternion algebra can describe them, and if not, exactly where the obstruction lies. The answer has two halves, and both are useful.
 
@@ -135,10 +135,10 @@ The three-dimensional representation is therefore available in the framework's *
 
 A second way to see the obstruction is to count the operations available on the three levels.
 
-The observables of the algebra are the Hermitian elements of $\mathbb{M}_+$, a real vector space of dimension four; their $*$-unitary exponentials form $\mathrm{U}(2)$, of real dimension four, which is the full group of $*$-unitary operations on two levels. A three-level system admits $\mathrm{U}(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
+The observables of the algebra are the Hermitian elements of $\mathbb{B}_{\Psi}$, a real vector space of dimension four; their $*$-unitary exponentials form $\mathrm{U}(2)$, of real dimension four, which is the full group of $*$-unitary operations on two levels. A three-level system admits $\mathrm{U}(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
 
 $$
-\dim_{\mathbb{R}}\mathbb{M}_+=4<9=\dim_{\mathbb{R}}\mathrm{U}(3),\qquad
+\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4<9=\dim_{\mathbb{R}}\mathrm{U}(3),\qquad
 \dim_{\mathbb{R}}\mathbb{B}=8<9,\qquad
 \dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6<8=\dim_{\mathbb{R}}\mathrm{SU}(3) .
 $$
@@ -191,7 +191,7 @@ Three prices are paid for this construction, and they are worth stating plainly.
 - **A larger algebra.** The algebra grows from $\mathbb{B}\cong M_2(\mathbb{C})$ to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$: complex dimension $4$ to $16$. The qutrit's ten-real-dimensional block of operators involving the third level exists, but in $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, not in $\mathbb{B}$.
 - **A changed notion of elementary.** In $\mathbb{B}$ the observable algebra, the state space and the biquaternion norm are all properties of one algebra element. In the tensor square the qutrit's observables are elements of a sector selected by a projector, and the sector is not closed under multiplication by the whole algebra — $P_{\mathrm{sym}}xP_{\mathrm{sym}}$ is a qutrit operator for every $x$, but the intermediate objects are four-dimensional.
 
-The last point is the one that controls the geometry. The state space of the qutrit is the positive unit-trace part of the projected sector, and it is not the trace-one slice of a cone in $\mathbb{M}_+$; its boundary is cut by the cubic $\det\rho=0$, and the largest ball it contains has half the radius of the pure-state sphere. The cone picture, which was exact for the qubit, is what the third level costs.
+The last point is the one that controls the geometry. The state space of the qutrit is the positive unit-trace part of the projected sector, and it is not the trace-one slice of a cone in $\mathbb{B}_{\Psi}$; its boundary is cut by the cubic $\det\rho=0$, and the largest ball it contains has half the radius of the pure-state sphere. The cone picture, which was exact for the qubit, is what the third level costs.
 
 ### Comparison with the standard qutrit formalism
 
@@ -261,7 +261,7 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 - **Nilpotency ceiling.** By Cayley–Hamilton every nilpotent element of $\mathbb{B}$ has square zero, $n^2=0$, and the algebra's raising element satisfies $(\tilde S_+)^2=0$ and $(i\vec e_x-\vec e_y)^2=0$. A three-level ladder has nilpotency index three, $J_+^3=0$ with $J_+^2\neq0$; no such element exists in $\mathbb{B}$. The index of nilpotency equals the number of levels.
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
 - **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.
-- **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{M}_+=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
+- **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
 - **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
 - **General counting.** $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.

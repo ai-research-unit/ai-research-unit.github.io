@@ -192,10 +192,10 @@ the bracket being the commutator in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})
 
 ### The Ternary Product on the Remarkable Subspaces
 
-**Proposition.** On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the coefficientwise conjugation is the identity, the ternary product is the plain product read with the middle argument first,
+**Proposition.** On the quaternion subspace $\mathbb{B}_{H}$, where the coefficients are real and the coefficientwise conjugation is the identity, the ternary product is the plain product read with the middle argument first,
 
 $$
-\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \tilde Q_2\tilde Q_1\tilde Q_3 \qquad (\tilde Q_1,\tilde Q_2,\tilde Q_3 \in \mathbb{H}_{\mathbb{B}}) ,
+\{\tilde Q_1,\tilde Q_2,\tilde Q_3\} = \tilde Q_2\tilde Q_1\tilde Q_3 \qquad (\tilde Q_1,\tilde Q_2,\tilde Q_3 \in \mathbb{B}_{H}) ,
 $$
 
 which is an associative triple product; the Jordan triple identity nevertheless fails there.
@@ -214,9 +214,9 @@ which is an associative triple product; the Jordan triple identity nevertheless 
 
 ### The Failure Is Not Repaired on the Real Subspaces
 
-**Proposition.** The identity fails on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where all the coefficients are real and the two sesquilinear products coincide with the two bilinear ones.
+**Proposition.** The identity fails on the quaternion subspace $\mathbb{B}_{H}$, where all the coefficients are real and the two sesquilinear products coincide with the two bilinear ones.
 
-**Proof.** The witness $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ already has all its coefficients real, so it is a witness inside $\mathbb{H}_{\mathbb{B}}$; the failure is therefore not a phenomenon of the complex coefficients and survives the restriction to the real quaternion subspace. The identity fails there by the same computation.
+**Proof.** The witness $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ already has all its coefficients real, so it is a witness inside $\mathbb{B}_{H}$; the failure is therefore not a phenomenon of the complex coefficients and survives the restriction to the real quaternion subspace. The identity fails there by the same computation.
 
 **Remark.** The failure is therefore not a phenomenon of the complex coefficients, and it survives the restriction to every real subspace on which the two conjugations differ: the witness has real coordinates, so it lives in the quaternion subspace and in each of the remarkable subspaces that contains it, and the identity fails there as it fails on the whole algebra. The sibling sesquilinear product, by contrast, is the middle model on the whole algebra and on every subspace, and its identity is not lost by restriction. The failure is recorded by the group article as the reason the general theorems of *Algebraic J\*-Algebras* do not apply to the fourth product's ternary reading.
 

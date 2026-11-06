@@ -150,13 +150,13 @@ The intersections of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ with 
 |---|---|---|
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\{0\}$ | $0$ |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$ | $j\mathbb{R}$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Psi}$ | $\mathbb{R}$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}$ | $j\mathbb{R}$ | $1$ |
 
 The two lines $\mathbb{R}$ and $j\mathbb{R}$ are the **coordinate blocks** of the centre, and it is their direct sum:
 
 $$
-\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathbb{R} \oplus j\mathbb{R}, \qquad \mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+, \qquad j\mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-.
+\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathbb{R} \oplus j\mathbb{R}, \qquad \mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Psi}, \qquad j\mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{B}_{\Phi}.
 $$
 
 The intersection with the vector subspace is the origin, so $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ is the split scalar–vector decomposition of the algebra; with each of the other two subspaces the intersection is one-dimensional, so no pair among them spans $\mathbb{B}_{\mathrm{spl}}$. The same pattern is recorded for all four subspaces in *Split-Biquaternion Relations Between Subspaces*.
@@ -206,7 +206,7 @@ The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_{1,2}$ |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace, the centre, fixed space of ${}^{\natural}$ |
 | $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | Vector subspace, the anti-fixed space of ${}^{\natural}$, $\dim 6$ |
-| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | Quaternion, Hermitian, anti-Hermitian subspaces |
+| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Quaternion, Hermitian, anti-Hermitian subspaces |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, restricting to $Q_t^2$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |

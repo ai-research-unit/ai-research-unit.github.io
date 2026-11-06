@@ -34,7 +34,7 @@ It is the symmetric part of the general plain sesquilinear product $\tilde Q_1\t
 
 $$ \boxed{\; \tilde Q_1 \star \tilde Q_2 = \mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)\, e_t = \langle\tilde Q_1,\tilde Q_2\rangle_{*}\, e_t , \qquad \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} Q_{1,\mu} \overline{Q_{2,\mu}} = Q_{1t} \overline{Q_{2t}} + (\vec Q_1, \overline{\vec Q_2}) \;}, $$
 
-so the image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}} = \{\lambda e_t\}$. Equivalently, in the two other forms of the same identity,
+so the image of the multiplication is the centre $\mathbb{B}_{C} = \{\lambda e_t\}$. Equivalently, in the two other forms of the same identity,
 
 $$
 \tilde Q_1 \star \tilde Q_2 = \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*} + \overline{\tilde Q_2}\,\tilde Q_1^{\natural}\bigr) = \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*} + \overline{\tilde Q_2\tilde Q_1^{*}}\bigr) .
@@ -166,7 +166,7 @@ with $\tilde Q_1\star\tilde Q_2 = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t$ the 
 **Proposition (the placement).** Among the twelve operations the block is the symmetric part of the third product, and it is determined by exactly four of its properties:
 
 - its class is **sesquilinear** over $(\mathbb{C},\bar{\cdot}\,)$, not $\mathbb{C}$-bilinear, so it is one of the six operations of the two sesqualgebra rows;
-- its image is the **centre** $\mathbb{C}_{\mathbb{B}}$, one of the two central operations of the twelve, the other being the symmetric quaternionic block;
+- its image is the **centre** $\mathbb{B}_{C}$, one of the two central operations of the twelve, the other being the symmetric quaternionic block;
 - its law is **conjugate-commutative**, not commutative, and it has **no unit**;
 - it **fails** the Jordan identity, so it is not a classical nonassociative product.
 
@@ -202,7 +202,7 @@ The symmetric plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2 = \
 | ${}^{\natural}$, $\overline{\cdot}$, ${}^{*} = \overline{\cdot}\circ{}^{\natural}$ | natural conjugation, coefficientwise conjugation, Hermitian conjugation |
 | $\tilde Q_1 \star \tilde Q_2 = \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*} + (\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)$ | the multiplication of the block; the symmetric part of the plain sesquilinear product |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}} = Q_{1t}\overline{Q_{2t}} + (\vec Q_1,\overline{\vec Q_2})$ | the Hermitian form, read as the coefficient of $e_t$ |
-| $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ | the value is central; image $\mathbb{C}_{\mathbb{B}}$ |
+| $\tilde Q_1\star\tilde Q_2 = \langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ | the value is central; image $\mathbb{B}_{C}$ |
 | $e_\mu\star e_\nu = \delta_{\mu\nu}e_t$ | the sixteen products of the basis |
 | $\tilde Q\star\tilde Q = \bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)e_t$ | the square; real and positive off the origin |
 | $\tilde Q_1\star\tilde Q_2 = \overline{\tilde Q_2\star\tilde Q_1}$ | the conjugate-commutative law |

@@ -21,9 +21,9 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | Item | Status in the corpus | Owner |
 |---|---|---|
 | The algebra $\mathbb{B}$, its product and its conjugations | postulated | *Introduction to the Algebra of Biquaternions* |
-| The interval and the four-vectors of relativity | derived from $\mathbb{M}_-$ | *The Material Sector: Four-Vectors, Interval and Lorentz Action* |
+| The interval and the four-vectors of relativity | derived from $\mathbb{B}_{\Phi}$ | *The Material Sector: Four-Vectors, Interval and Lorentz Action* |
 | The Lorentz group and its action | derived as the norm-one group | *The Lorentz Group as Biquaternion Norm Automorphisms* |
-| The state space and the Born form | derived from $\mathbb{M}_+$ | *The Informational Sector: States, Observables and Probability* |
+| The state space and the Born form | derived from $\mathbb{B}_{\Psi}$ | *The Informational Sector: States, Observables and Probability* |
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
 | The gauge principle | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
@@ -139,7 +139,7 @@ That is still the deepest of the costs, because the corpus's quantum sector rest
 
 ### The Real Slice Is Not Natural
 
-The programme's rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them, so the programme calls the restriction to the real slice artificial. The corpus makes the natural conjugation primitive instead, with $\mathbb{M}_+\oplus\mathbb{M}_-$ as its fixed and anti-fixed spaces. The argument for the programme's side is in *The Algebrodynamical Programme*, §*The Induced Causal Minkowski Geometry with Phase*.
+The programme's rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them, so the programme calls the restriction to the real slice artificial. The corpus makes the natural conjugation primitive instead, with $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ as its fixed and anti-fixed spaces. The argument for the programme's side is in *The Algebrodynamical Programme*, §*The Induced Causal Minkowski Geometry with Phase*.
 
 This is not a difference of taste: it is the point at which the two cannot both have the primitive object.
 
@@ -169,7 +169,7 @@ both real. So the product-first route recovers a Minkowski-type interval, and it
 
 | | Conjugation first | Product first, with the phase extension |
 |---|---|---|
-| Primitive | $\natural$, the split $\mathbb{M}_+\oplus\mathbb{M}_-$ | the product, its automorphisms and the complex three-vector |
+| Primitive | $\natural$, the split $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | the product, its automorphisms and the complex three-vector |
 | The real slice | the physical sector | induced, and only the causal domain |
 | The Hermitian form | the probability form | outside the theory |
 | What a boost is | a motion, not an automorphism | an automorphism of the three-vector, not of the algebra |
@@ -203,8 +203,8 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | The informational and material sectors, the fixed spaces of ${}^{*}$ and $\flat$ |
-| $\natural$ | The natural conjugation, $\mathbb{C}$-linear, fixing $\mathbb{H}_{\mathbb{B}}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The informational and material sectors, the fixed spaces of ${}^{*}$ and $\flat$ |
+| $\natural$ | The natural conjugation, $\mathbb{C}$-linear, fixing $\mathbb{B}_{H}$ |
 | $\tilde\nabla$ | The biquaternionic gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ |
 | $N(\tilde Q)$ | The biquaternion norm $\sum_\mu Q_\mu^2$, zero on the cone |
 | $\Sigma$ | One component of a differentiable function |

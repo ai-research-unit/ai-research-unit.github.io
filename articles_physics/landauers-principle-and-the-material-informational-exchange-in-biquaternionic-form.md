@@ -10,7 +10,7 @@ $$
 
 of heat into an environment at temperature $T$. It is the bridge between the informational and the material descriptions of a physical process. It is also the reason the two descriptions cannot be kept apart: a memory is a physical system, its logical states are physical states, and the reset of those states has a thermodynamic price.
 
-This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The **material sector** $\mathbb{M}_-$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The **informational sector** $\mathbb{M}_+$ is the Hermitian subspace; its states are $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional*,
+This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The **material sector** $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The **informational sector** $\mathbb{B}_{\Psi}$ is the Hermitian subspace; its states are $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional*,
 
 $$
 \mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right) = h(|\vec r|),
@@ -22,7 +22,7 @@ The biquaternion content of the article is structural. The two ledgers of the ex
 
 The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian states) and $\mathbb{M}_-$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian states) and $\mathbb{B}_{\Phi}$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
 
 ## Landauer's Principle
 
@@ -88,7 +88,7 @@ $$
 \tilde{P} = i\,\frac{E}{c}\,e_t + \vec p, \qquad \vec p = p_1\vec e_x + p_2\vec e_y + p_3\vec e_z ,
 $$
 
-an element of $\mathbb{M}_-$: an imaginary scalar component $iE/c$ and a real vector component. The energy is the timelike component, $E = -i\,c\,\mathrm{Sc}(\tilde{P})$, and heat is a change of it. The material ledger of a thermodynamic process is the energy account
+an element of $\mathbb{B}_{\Phi}$: an imaginary scalar component $iE/c$ and a real vector component. The energy is the timelike component, $E = -i\,c\,\mathrm{Sc}(\tilde{P})$, and heat is a change of it. The material ledger of a thermodynamic process is the energy account
 
 $$
 \Delta E_{\rm env} = Q ,
@@ -100,7 +100,7 @@ $$
 \Delta S_{\rm th,env} = \frac{Q}{T} .
 $$
 
-The temperature is the conversion factor between the two ledgers: it converts energy in $\mathbb{M}_-$ into entropy in the informational currency.
+The temperature is the conversion factor between the two ledgers: it converts energy in $\mathbb{B}_{\Phi}$ into entropy in the informational currency.
 
 ### The Sector Exchange
 
@@ -113,7 +113,7 @@ $$
 = -\langle\tilde{Q}\rangle_{\natural} .
 $$
 
-That is, multiplication by $i$ maps $\mathbb{M}_-$ to $\mathbb{M}_+$ and reverses the sign of the biquaternion norm. The energy-momentum vector of a material body, whose biquaternion norm is non-positive, is carried by $i$ to an element of the informational sector whose biquaternion norm is non-negative — the same sign convention that makes the state space of $\mathbb{M}_+$ the future cone of $\langle\cdot\rangle_{\natural}$. The two ledgers of the exchange are mirror images under the algebra's imaginary unit.
+That is, multiplication by $i$ maps $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Psi}$ and reverses the sign of the biquaternion norm. The energy-momentum vector of a material body, whose biquaternion norm is non-positive, is carried by $i$ to an element of the informational sector whose biquaternion norm is non-negative — the same sign convention that makes the state space of $\mathbb{B}_{\Psi}$ the future cone of $\langle\cdot\rangle_{\natural}$. The two ledgers of the exchange are mirror images under the algebra's imaginary unit.
 
 This is a structural statement and it should not be over-read. The factor $i$ exchanges the sectors and their quadratic forms; it does not by itself produce the conversion factor $T$, and it does not produce the value $\log 2$ per bit. Those are thermodynamic facts about the memory and its environment, and the framework expresses them rather than deriving them. What the factor $i$ does supply is the reason the exchange is natural in this algebra: the quantity that carries the entropy and the quantity that carries the heat are the two real forms of the same complexified object.
 
@@ -229,7 +229,7 @@ and the entropy of the gas falls by $k_B\log2$ while that of the bath rises by $
 
 The exactness is special to the **degenerate** memory, and the qualification matters. The two cells of the box are degenerate, so the free-energy cost of the compression is exactly $\Delta F = k_BT\log 2$. Give the two logical states an energy separation $\epsilon$ and start the memory in maximal ignorance, and the free-energy argument shows that the *work* falls to $k_BT\log 2 - \epsilon/2$ — the second term being the energy the memory releases as it settles into its lower state — while the *heat* delivered to the bath is unchanged at $k_BT\log 2$. If the memory is instead in thermal equilibrium at temperature $T$, its entropy is no longer a full bit, and both quantities fall; the minimum **work** is then the free-energy difference, $k_BT\log(1 + \exp(-\beta\epsilon))$, while the **heat** is $k_BT$ times the smaller entropy, $k_BT\left(\log(1 + \exp(-\beta\epsilon)) + \beta\epsilon\,\exp(-\beta\epsilon)/(1 + \exp(-\beta\epsilon))\right)$. The two coincide only in the degenerate limit, where both return $k_BT\log2$ as $\epsilon\to0$. The universal statement, and the one the framework's ledger expresses, is that the cost is $k_BT$ per nat of entropy erased; the number of nats is the memory's own entropy, and a gap reduces it. The ideal-gas compression is used above because it is the degenerate case in which the work and the heat coincide, and it exposes the mechanical work directly.
 
-The model also shows what the framework's sectors are doing. The gas and the bath are material, carrying energy in $\mathbb{M}_-$; the record is informational, carrying its entropy in $\mathbb{M}_+$; and the compression converts the informational debit into a material credit at the rate $T$.
+The model also shows what the framework's sectors are doing. The gas and the bath are material, carrying energy in $\mathbb{B}_{\Phi}$; the record is informational, carrying its entropy in $\mathbb{B}_{\Psi}$; and the compression converts the informational debit into a material credit at the rate $T$.
 
 ## Reversible and Irreversible Operations
 
@@ -278,7 +278,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary; exchanges the sectors |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ | State of the informational sector |

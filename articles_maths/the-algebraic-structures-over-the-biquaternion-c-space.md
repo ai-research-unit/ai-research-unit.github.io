@@ -161,7 +161,7 @@ Of the twelve, two are the product of a classical nonassociative algebra and bot
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | the six structures of the two algebras over $\mathbb{C}$ |
 | $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=Q_{1,t}Q_{2,t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the scalar part of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | the centre, the vector subspace and the Hermitian and anti-Hermitian subspaces |
+| $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the centre, the vector subspace and the Hermitian and anti-Hermitian subspaces |
 | Jacobi, Jordan | the two identities that single out $\tilde Q_1\wedge\tilde Q_2$ and $\tilde Q_1\bullet\tilde Q_2$ |
 | $\overline{\vec Q_2}$, $(\vec Q_1,\vec Q_2)$, $\vec Q_1\times\vec Q_2$ | the coefficientwise conjugate of the vector part, the bilinear dot product and the bilinear cross product |
 

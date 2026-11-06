@@ -277,16 +277,16 @@ The restriction of the Krein norm to each of the six remarkable subspaces has th
 
 | remarkable subspace | non-zero Krein-null elements | algebraic status |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the centre | none | — |
-| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | none | — |
-| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | a cone of dimension $3$ | every one is a unit |
-| $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | a cone of dimension $3$ | every one is a unit |
-| $\mathbb{M}_{+}$, the Hermitian subspace | a cone of dimension $3$ | every one is a zero divisor |
-| $\mathbb{M}_{-}$, the anti-Hermitian subspace | a cone of dimension $3$ | every one is a zero divisor |
+| $\mathbb{B}_{C}$, the centre | none | — |
+| $\mathbb{B}_{V}$, the vector subspace | none | — |
+| $\mathbb{B}_{H}$, the quaternion subspace | a cone of dimension $3$ | every one is a unit |
+| $\mathbb{B}_{iH}$, the anti-quaternion subspace | a cone of dimension $3$ | every one is a unit |
+| $\mathbb{B}_{\Psi}$, the Hermitian subspace | a cone of dimension $3$ | every one is a zero divisor |
+| $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | a cone of dimension $3$ | every one is a zero divisor |
 
 **Theorem (the restrictions).** On the centre the Krein norm is positive definite and on the vector subspace negative definite, so neither carries a non-zero null element; on each of the four four-dimensional subspaces it is Lorentzian, and each carries a null cone of real dimension $3$. The non-zero null elements are units on the quaternion and anti-quaternion subspaces and zero divisors on the Hermitian and anti-Hermitian subspaces. On the last two the null cone is exactly the trace of the doubly null Peirce lines.
 
-*Proof.* The signatures are the restriction table of the cited article. The algebraic status is read from the coefficients. On the quaternion subspace $Q_t=q_t$ and $Q_k=q_k$ are real, so $\langle\tilde Q\rangle_{\natural}=q_t^2+\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$; a null element has $q_t^2=\sum_kq_k^2$, hence $\langle\tilde Q\rangle_{\natural}=2q_t^2\neq0$ off the origin, and it is a unit. On the anti-quaternion subspace $Q_t=iq_t$ and $Q_k=iq_k$ with $q_\mu$ real, so $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural}=-(q_t^2+\sum_kq_k^2)$, which is non-zero off the origin. On the Hermitian subspace $Q_t=a_0$ is real and $Q_k=ia_k$ with $a_k$ real, so $\langle\tilde Q\rangle_{\natural}=a_0^2-\sum_ka_k^2$, which vanishes exactly with $\langle\tilde Q\rangle_{\natural*}=a_0^2-\sum_ka_k^2$; a non-zero null element there is a zero divisor. The anti-Hermitian subspace is $i$ times the Hermitian one and has the same property. The traces are the Peirce lines because a null element of $\mathbb{M}_{+}$ is $a_0(e_t+i\vec u)$ with $\vec u=\vec a/|a_0|$ a real unit vector, and $\mathbb{M}_{-}=i\mathbb{M}_{+}$.
+*Proof.* The signatures are the restriction table of the cited article. The algebraic status is read from the coefficients. On the quaternion subspace $Q_t=q_t$ and $Q_k=q_k$ are real, so $\langle\tilde Q\rangle_{\natural}=q_t^2+\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$; a null element has $q_t^2=\sum_kq_k^2$, hence $\langle\tilde Q\rangle_{\natural}=2q_t^2\neq0$ off the origin, and it is a unit. On the anti-quaternion subspace $Q_t=iq_t$ and $Q_k=iq_k$ with $q_\mu$ real, so $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural}=-(q_t^2+\sum_kq_k^2)$, which is non-zero off the origin. On the Hermitian subspace $Q_t=a_0$ is real and $Q_k=ia_k$ with $a_k$ real, so $\langle\tilde Q\rangle_{\natural}=a_0^2-\sum_ka_k^2$, which vanishes exactly with $\langle\tilde Q\rangle_{\natural*}=a_0^2-\sum_ka_k^2$; a non-zero null element there is a zero divisor. The anti-Hermitian subspace is $i$ times the Hermitian one and has the same property. The traces are the Peirce lines because a null element of $\mathbb{B}_{\Psi}$ is $a_0(e_t+i\vec u)$ with $\vec u=\vec a/|a_0|$ a real unit vector, and $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$.
 
 **Corollary.** Every non-zero element of the centre, the quaternion subspace and the anti-quaternion subspace is a unit of the plain product. The vector subspace, the Hermitian subspace and the anti-Hermitian subspace contain zero divisors; on the last two a non-zero element is a zero divisor exactly when it is Krein-null, while the vector subspace has no non-zero Krein-null element.
 

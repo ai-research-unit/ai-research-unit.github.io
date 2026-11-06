@@ -43,13 +43,13 @@ are $(\vec e_x \bullet \vec e_x) \bullet e_t = e_t \bullet e_t = e_t$ on the lef
 **Definition.** The **Hermitian subspace** and the **anti-Hermitian subspace** of the conjugation ${}^{\natural}$ are
 
 $$
-\mathbb{M}_+ = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = \tilde q\} , \qquad \mathbb{M}_- = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = -\tilde q\} .
+\mathbb{B}_{\Psi} = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = \tilde q\} , \qquad \mathbb{B}_{\Phi} = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = -\tilde q\} .
 $$
 
-**Theorem (the two subspaces).** $\mathbb{M}_+$ is the scalar line $\mathbb{R}e_t$, of real dimension one; $\mathbb{M}_-$ is the vector subspace $\mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting
+**Theorem (the two subspaces).** $\mathbb{B}_{\Psi}$ is the scalar line $\mathbb{R}e_t$, of real dimension one; $\mathbb{B}_{\Phi}$ is the vector subspace $\mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting
 
 $$
-\boxed{\;\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde q = q_te_t + \vec q\;},
+\boxed{\;\mathbb{H} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \tilde q = q_te_t + \vec q\;},
 $$
 
 the scalar part being Hermitian and the vector part anti-Hermitian.
@@ -60,7 +60,7 @@ Over $\mathbb{R}$ the scalar sector has **no** nontrivial involution — the bar
 
 ## Positivity on the Hermitian Subspace
 
-**Theorem (positivity).** The symmetrised product is positive definite: $\tilde q \bullet \tilde q = \langle\tilde q\rangle_{\natural}e_t$, which is a non-negative multiple of $e_t$ vanishing only at $\tilde q = 0$. On the Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = q_{1t}q_{2t}e_t$, positive definite there; on the anti-Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = (\vec q_1 \cdot \vec q_2)e_t$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.
+**Theorem (positivity).** The symmetrised product is positive definite: $\tilde q \bullet \tilde q = \langle\tilde q\rangle_{\natural}e_t$, which is a non-negative multiple of $e_t$ vanishing only at $\tilde q = 0$. On the Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = q_{1t}q_{2t}e_t$, positive definite there; on the anti-Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = (\vec q_1 \cdot \vec q_2)e_t$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}) = 0$.
 
 *Proof.* On the scalar line $\vec q_1 = \vec q_2 = 0$, so $\beta = q_{1t}q_{2t}$; on the vector subspace $q_{1t} = q_{2t} = 0$, so $\beta = \vec q_1 \cdot \vec q_2$; the mixed value has $q_{1t} = 0$ or $q_{2t} = 0$ together with the corresponding vector part zero, so it vanishes.
 
@@ -76,8 +76,8 @@ The symmetrised quaternionic product $\tilde q_1 \bullet \tilde q_2 = \tfrac12(\
 |---|---|
 | $\tilde q_1 \bullet \tilde q_2 = \tfrac12(\tilde q_1 \star \tilde q_2 + \tilde q_2 \star \tilde q_1)$ | the symmetrised quaternionic product |
 | $\beta(\tilde q_1,\tilde q_2) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2$ | the quaternion form, the central coefficient |
-| $\mathbb{M}_+ = \{\tilde q : \tilde q^{\natural} = \tilde q\}$ | the Hermitian subspace, the scalar line $\mathbb{R}e_t$ |
-| $\mathbb{M}_- = \{\tilde q : \tilde q^{\natural} = -\tilde q\}$ | the anti-Hermitian subspace, the vector subspace |
+| $\mathbb{B}_{\Psi} = \{\tilde q : \tilde q^{\natural} = \tilde q\}$ | the Hermitian subspace, the scalar line $\mathbb{R}e_t$ |
+| $\mathbb{B}_{\Phi} = \{\tilde q : \tilde q^{\natural} = -\tilde q\}$ | the anti-Hermitian subspace, the vector subspace |
 | $\langle\tilde q\rangle_{\natural} = \beta(\tilde q,\tilde q)$ | the quaternionic bilinear algebraic norm |
 | $\tilde q^{\bullet 2} = \tilde q \bullet \tilde q$ | the square in the symmetrised product |
 

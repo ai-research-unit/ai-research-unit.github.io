@@ -100,7 +100,7 @@ Quaternionic Algebra of Biquaternions*, and this vanishes exactly when $\langle\
 the set $N=0$ with the zero divisors and its description as a quadric cone are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **Example (the standard isotropic elements).** For $\tilde Q=e_t+i\vec e_x$ the norm is $N=1+i^2=0$, so the
-element is isotropic; it lies on the Hermitian subspace $\mathbb{M}_+$ and is a non-pure zero divisor. For
+element is isotropic; it lies on the Hermitian subspace $\mathbb{B}_{\Psi}$ and is a non-pure zero divisor. For
 $\tilde Q=\vec e_x+i\vec e_y$ the norm is $N=1+i^2=0$ as well, and the element is a pure zero divisor, lying in the
 vector subspace. For $\tilde Q=\vec e_x+\vec e_y+\vec e_z$ the norm is $N=1+1+1=3\ne0$, and the element is not isotropic.
 
@@ -121,7 +121,7 @@ $$ \boxed{\; [\tilde Q_1,\tilde Q_2]_{\star} = \tilde Q_1\star\tilde Q_2-\tilde 
 
 so the operation has no derived Lie structure: the derived operation of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is the zero operation
 on the whole space. The derived object of the operation is therefore the one-dimensional algebra
-$\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$, with the multiplication of $\mathbb{C}$.
+$\mathbb{C}e_t=\mathbb{B}_{C}$, with the multiplication of $\mathbb{C}$.
 
 *Proof.* The operation is commutative. The image is the central line, on which the operation is the
 multiplication of $\mathbb{C}$ by the proposition of *Introduction to the Symmetric Quaternionic Algebra of
@@ -168,16 +168,16 @@ composition with the bracket.
 The identification of the isotropic elements with the zero divisors makes the element theory of the operation
 a small chapter of the zero-divisor geometry of $\mathbb{B}$, which is algebraic: the cone $N=0$ is a quadric
 cone, cut by the remarkable subspaces into the pieces recorded in *Remarkable Subspaces under the
-Symmetric Quaternionic Algebra of Biquaternions*. On the two definite rows $\mathbb{H}_{\mathbb{B}}$ and
-$i\mathbb{H}_{\mathbb{B}}$ the norm is strictly signed and the cone meets the row only at the origin; on the
+Symmetric Quaternionic Algebra of Biquaternions*. On the two definite rows $\mathbb{B}_{H}$ and
+$\mathbb{B}_{iH}$ the norm is strictly signed and the cone meets the row only at the origin; on the
 vector subspace the cone is the pure zero-divisor cone; on the two Hermitian subspaces the cone is their real
 null cone.
 
-**Proposition (the operation kills nothing on the definite rows).** No nonzero element of $\mathbb{H}_{\mathbb{B}}$
-or of $i\mathbb{H}_{\mathbb{B}}$ is isotropic for $\star$.
+**Proposition (the operation kills nothing on the definite rows).** No nonzero element of $\mathbb{B}_{H}$
+or of $\mathbb{B}_{iH}$ is isotropic for $\star$.
 
-*Proof.* On $\mathbb{H}_{\mathbb{B}}$ the form is positive definite, $N=\sum_\mu q_\mu^2\ge0$, vanishing only
-at the origin; on $i\mathbb{H}_{\mathbb{B}}$ it is negative definite, $N=-\sum_\mu(q'_\mu)^2\le0$, vanishing
+*Proof.* On $\mathbb{B}_{H}$ the form is positive definite, $N=\sum_\mu q_\mu^2\ge0$, vanishing only
+at the origin; on $\mathbb{B}_{iH}$ it is negative definite, $N=-\sum_\mu(q'_\mu)^2\le0$, vanishing
 only at the origin (*Remarkable Subspaces under the General Quaternionic Algebra*).
 
 **Remark (the radical again, from the subspaces).** The triviality of the radical is compatible with a large
@@ -213,7 +213,7 @@ contain no nonzero isotropic element.
 | $[\tilde Q_1,\tilde Q_2]_{\natural}$ | the quaternionic bracket $\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$ |
 | $[\tilde Q_1,\tilde Q_2]_{\star}$ | the commutator of the operation, identically zero |
 | $T(\tilde Q_1,\tilde Q_2,\tilde Q_3)=\langle[\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\rangle_{\natural}e_t$ | the ternary object of the operation |
-| $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
+| $\mathbb{B}_{C},\mathbb{B}_{V},\mathbb{B}_{H},\mathbb{B}_{iH},\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the remarkable subspaces |
 
 ## Further Reading
 

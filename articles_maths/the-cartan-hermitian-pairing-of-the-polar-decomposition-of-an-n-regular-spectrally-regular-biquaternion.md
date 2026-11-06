@@ -21,7 +21,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 
 **The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and the two equations that determine its factors, the two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It then records the two exponents, which are the precise sense in which the pairing is a Hermitian pairing, the Cartan decomposition of the unit group, and the published form. Each result is collected in a table, and each imported proof is cited rather than repeated.
 
-**The result.** For every biquaternion with $\langle\tilde Q\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde Q_H\,\tilde Q_0$ is unique with $\tilde Q_H$ Hermitian positive and $\tilde Q_0$ $*$-unitary; the first factor is the Hermitian positive square root $\tilde Q_H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde Q_0 = \tilde Q_H^{-1}\tilde{Q}$, and the two exponents $\ln \tilde Q_H$ and $\ln \tilde Q_0$ lie in the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The pairing is collected in the table.
+**The result.** For every biquaternion with $\langle\tilde Q\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde Q_H\,\tilde Q_0$ is unique with $\tilde Q_H$ Hermitian positive and $\tilde Q_0$ $*$-unitary; the first factor is the Hermitian positive square root $\tilde Q_H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde Q_0 = \tilde Q_H^{-1}\tilde{Q}$, and the two exponents $\ln \tilde Q_H$ and $\ln \tilde Q_0$ lie in the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The pairing is collected in the table.
 
 | item | the Cartan pairing |
 |---|---|
@@ -29,7 +29,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 | first factor | $\tilde Q_H=r\tilde U_{\mathrm b}=\sqrt{\tilde Q\tilde Q^{*}}$, Hermitian positive |
 | second factor | $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}=\tilde Q_H^{-1}\tilde Q$, $*$-unitary |
 | equation | $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
-| exponents | $\ln\tilde Q_H\in\mathbb{M}_+$, $\ln\tilde Q_0\in\mathbb{M}_-$ |
+| exponents | $\ln\tilde Q_H\in\mathbb{B}_{\Psi}$, $\ln\tilde Q_0\in\mathbb{B}_{\Phi}$ |
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$, the complement of the null cone |
 | classical limit | the matrix polar decomposition |
 | position among the three | the only total pairing, and the only pairing whose two factors are of the two involutive kinds |
@@ -47,10 +47,10 @@ The article takes the following results as established and does not prove them a
 | the four factors, their ranges and their order | *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
 | the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
-| the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{M}_\pm$ and the two exponents |
+| the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi,\Phi}$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
 | the positive cone and the positive square root | *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition* | $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ and its positivity |
-| the Cartan decomposition | *The Cartan Involution and the Cartan Decomposition*, §*The Cartan Decomposition* | the split of the exponents into $\mathbb{M}_+\oplus\mathbb{M}_-$ |
+| the Cartan decomposition | *The Cartan Involution and the Cartan Decomposition*, §*The Cartan Decomposition* | the split of the exponents into $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 
 The central computation of the article is the product $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ and the recovery $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$; the theorem is the matrix polar decomposition read through these results, and §*The Matrix Proof* reduces it to the matrix theorem.
 
@@ -61,7 +61,7 @@ The central computation of the article is the product $\tilde Q\tilde Q^{*}=\til
 The **Cartan pairing** of the polar decomposition is the regrouping in which the scale and the boost form the first factor and the phase and the rotor the second:
 
 $$
-\tilde{Q} = \tilde Q_H\,\tilde Q_0 , \qquad \tilde Q_H = r\,\tilde U_{\mathrm b} \in \mathbb{M}_+ , \qquad \tilde Q_0 = \exp(i\alpha)\,\tilde u_{\mathrm r} \in \mathrm{U}(\mathbb{B}) .
+\tilde{Q} = \tilde Q_H\,\tilde Q_0 , \qquad \tilde Q_H = r\,\tilde U_{\mathrm b} \in \mathbb{B}_{\Psi} , \qquad \tilde Q_0 = \exp(i\alpha)\,\tilde u_{\mathrm r} \in \mathrm{U}(\mathbb{B}) .
 $$
 
 The first factor is a positive real times a Hermitian positive unit-norm element, hence Hermitian positive; the second is a central phase times a unit real quaternion, hence $*$-unitary. The word is the polar word with the two parentheses inserted after the boost, and the two non-central factors keep their order: the boost stays on the left of the rotor, and no conjugation appears.
@@ -125,17 +125,17 @@ and the two factors of $\tilde{Q}^{*}$ in the Cartan shape are therefore $\tilde
 The Hermitian conjugation ${}^{*}$ is an involution, so the algebra splits into its fixed space and its anti-fixed space,
 
 $$
-\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\} .
+\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\} .
 $$
 
 This is the split of *Hermitian and Skew-Hermitian Elements*, §*The Two Halves*.
 
 | subspace | condition | scalar part | vector part | matrix model | role |
 |---|---|---|---|---|---|
-| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | real | purely imaginary | Hermitian matrices | the boosts and the scales |
-| $\mathbb{M}_-$ | $\tilde{Q}^{*} = -\tilde{Q}$ | purely imaginary | real | anti-Hermitian matrices | the four-vectors and the exponents |
+| $\mathbb{B}_{\Psi}$ | $\tilde{Q}^{*} = \tilde{Q}$ | real | purely imaginary | Hermitian matrices | the boosts and the scales |
+| $\mathbb{B}_{\Phi}$ | $\tilde{Q}^{*} = -\tilde{Q}$ | purely imaginary | real | anti-Hermitian matrices | the four-vectors and the exponents |
 
-The first factor of the Cartan pairing is the element $\tilde Q_H = r\tilde U_{\mathrm b} = r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t + ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$: its scalar part $r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$ is real and its vector part $ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ is purely imaginary, so $\tilde Q_H$ lies in $\mathbb{M}_+$.
+The first factor of the Cartan pairing is the element $\tilde Q_H = r\tilde U_{\mathrm b} = r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t + ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$: its scalar part $r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$ is real and its vector part $ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ is purely imaginary, so $\tilde Q_H$ lies in $\mathbb{B}_{\Psi}$.
 
 ### Positivity
 
@@ -172,7 +172,7 @@ a compact group of real dimension four, the product of the central phase circle 
 
 ### The Phase and the Rotor
 
-The second factor contains the **phase** and the **rotor**. The phase $\exp(i\alpha)$ is central, so it lies in the centre and commutes with everything; the rotor $\tilde u_{\mathrm r}$ is the unit real quaternion of the polar word, the only factor that lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ on the unit sphere, and the only one that is compact and non-central. The two constituents of the second factor commute with each other, the phase being central, so the second factor is itself a product of two exponentials that add, $\exp(i\alpha\,e_t)\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$.
+The second factor contains the **phase** and the **rotor**. The phase $\exp(i\alpha)$ is central, so it lies in the centre and commutes with everything; the rotor $\tilde u_{\mathrm r}$ is the unit real quaternion of the polar word, the only factor that lies in the quaternion subspace $\mathbb{B}_{H}$ on the unit sphere, and the only one that is compact and non-central. The two constituents of the second factor commute with each other, the phase being central, so the second factor is itself a product of two exponentials that add, $\exp(i\alpha\,e_t)\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$.
 
 | aspect | value |
 |---|---|
@@ -198,7 +198,7 @@ The two dimensions add to $8 = \dim_{\mathbb{R}}\mathbb{B}$, and each factor car
 
 ### The Theorem
 
-**Theorem (the Cartan pairing).** Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. There are a unique $\tilde Q_H\in\mathbb{M}_+$ positive definite and a unique $\tilde Q_0\in \mathrm{U}(\mathbb{B})$ with $\tilde{Q} = \tilde Q_H\,\tilde Q_0$, and they are $\tilde Q_H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde Q_0 = \tilde Q_H^{-1}\tilde{Q}$.
+**Theorem (the Cartan pairing).** Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. There are a unique $\tilde Q_H\in\mathbb{B}_{\Psi}$ positive definite and a unique $\tilde Q_0\in \mathrm{U}(\mathbb{B})$ with $\tilde{Q} = \tilde Q_H\,\tilde Q_0$, and they are $\tilde Q_H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ and $\tilde Q_0 = \tilde Q_H^{-1}\tilde{Q}$.
 
 ### Uniqueness
 
@@ -274,7 +274,7 @@ The non-commutativity of the boost and the rotor shows up only between the two f
 
 ### The Three Conjugations
 
-The algebra has three nontrivial conjugations: the quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{C}_{\mathbb{B}}$; the coefficientwise conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and the Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the composite. The three act on the pairing in three different ways, and the difference is the difference between preserving the order and reversing it: the coefficientwise conjugation is an automorphism and keeps the order of the two factors, while the quaternion and the Hermitian conjugations are anti-automorphisms and reverse it.
+The algebra has three nontrivial conjugations: the quaternion conjugation ${}^{\natural}$, the anti-automorphism fixing the centre $\mathbb{B}_{C}$; the coefficientwise conjugation $\bar{\cdot}$, the automorphism conjugating every coefficient; and the Hermitian conjugation ${}^{*} = {}^{\natural}\circ\bar{\cdot}$, the composite. The three act on the pairing in three different ways, and the difference is the difference between preserving the order and reversing it: the coefficientwise conjugation is an automorphism and keeps the order of the two factors, while the quaternion and the Hermitian conjugations are anti-automorphisms and reverse it.
 
 ### The Quaternion Conjugation
 
@@ -310,20 +310,20 @@ the first exponent has a real scalar part $\ln r$ and a purely imaginary vector 
 
 | exponent | scalar part | vector part | subspace | related factor |
 |---|---|---|---|---|
-| $\mathcal H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | real | purely imaginary | $\mathbb{M}_+$, Hermitian | $\tilde Q_H = \exp \mathcal H$, Hermitian positive |
-| $\mathcal K = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | purely imaginary | real | $\mathbb{M}_-$, anti-Hermitian | $\tilde Q_0 = \exp \mathcal K$, $*$-unitary |
+| $\mathcal H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | real | purely imaginary | $\mathbb{B}_{\Psi}$, Hermitian | $\tilde Q_H = \exp \mathcal H$, Hermitian positive |
+| $\mathcal K = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | purely imaginary | real | $\mathbb{B}_{\Phi}$, anti-Hermitian | $\tilde Q_0 = \exp \mathcal K$, $*$-unitary |
 
-The first exponent is the sum of two Hermitian terms, $(\ln r)e_t\in\mathbb{M}_+$ and $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$; the second is the sum of two anti-Hermitian terms, $i\alpha\,e_t\in\mathbb{M}_-$ and $\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$. The split of the four factors two and two is the split of the four exponents two and two, and it is exactly the Cartan grouping. The two exponents do not commute in general, so the element is not the exponential of their sum; the two factors are computed from the element and not by adding the four exponents of the companion article.
+The first exponent is the sum of two Hermitian terms, $(\ln r)e_t\in\mathbb{B}_{\Psi}$ and $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\in\mathbb{B}_{\Psi}$; the second is the sum of two anti-Hermitian terms, $i\alpha\,e_t\in\mathbb{B}_{\Phi}$ and $\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{B}_{\Phi}$. The split of the four factors two and two is the split of the four exponents two and two, and it is exactly the Cartan grouping. The two exponents do not commute in general, so the element is not the exponential of their sum; the two factors are computed from the element and not by adding the four exponents of the companion article.
 
 ### The Factors Are Not the Sectors
 
-The two exponents lie in the two subspaces, but the two **factors** do not. The Hermitian exponent exponentiates to a Hermitian positive element, and the anti-Hermitian exponent exponentiates to a $*$-unitary element; the anti-Hermitian object of the pair is therefore the logarithm $\ln \tilde Q_0 = \mathcal K$, not the factor $\tilde Q_0$ itself. The distinction is worth stating because the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ are linear subspaces and the second factor is not.
+The two exponents lie in the two subspaces, but the two **factors** do not. The Hermitian exponent exponentiates to a Hermitian positive element, and the anti-Hermitian exponent exponentiates to a $*$-unitary element; the anti-Hermitian object of the pair is therefore the logarithm $\ln \tilde Q_0 = \mathcal K$, not the factor $\tilde Q_0$ itself. The distinction is worth stating because the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are linear subspaces and the second factor is not.
 
 | object | Hermitian? | anti-Hermitian? | where it lies |
 |---|---|---|---|
-| $\mathcal H = \ln \tilde Q_H$ | yes | no | $\mathbb{M}_+$ |
-| $\tilde Q_H = \exp \mathcal H$ | yes, and positive | no | $\mathbb{M}_+$, the positive cone |
-| $\mathcal K = \ln \tilde Q_0$ | no | yes | $\mathbb{M}_-$ |
+| $\mathcal H = \ln \tilde Q_H$ | yes | no | $\mathbb{B}_{\Psi}$ |
+| $\tilde Q_H = \exp \mathcal H$ | yes, and positive | no | $\mathbb{B}_{\Psi}$, the positive cone |
+| $\mathcal K = \ln \tilde Q_0$ | no | yes | $\mathbb{B}_{\Phi}$ |
 | $\tilde Q_0 = \exp \mathcal K$ | not in general | not in general | $\mathrm{U}(\mathbb{B})$, not a subspace |
 
 The Hermitian factor $\exp \mathcal H$ is the exponential of a Hermitian element of one sign, the positive one; the $*$-unitary factor $\exp \mathcal K$ is the exponential of an anti-Hermitian element of compact type. This is the same asymmetry that the matrix polar decomposition exhibits between the positive definite factor and the $*$-unitary factor.
@@ -349,14 +349,14 @@ The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements,
 For an element of unit norm, $\langle\tilde Q\rangle_{\natural} = e_t$, the scale and the phase are trivial, $r = 1$ and $\exp(i\alpha) = e_t$, and the Cartan pairing reduces to the product of the boost and the rotor,
 
 $$
-\boxed{\;\tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{M}_+ , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1)\;}.
+\boxed{\;\tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{B}_{\Psi} , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1)\;}.
 $$
 
 This is the **Cartan decomposition** of the unit group, $SL(2,\mathbb{C}) = \exp(\mathfrak{p}_0)SU(2)$ with $\mathfrak{p}_0=\mathfrak{p}\cap\mathfrak{sl}(2,\mathbb{C})$ the traceless Hermitian elements, read in the algebra: the unit-norm elements are the products of a Hermitian positive element of determinant one and an element of the maximal compact subgroup $SU(2) = \mathrm{Sp}(1)$.
 
 ### The Physical Interpretation
 
-In the physics articles the unit-norm element is a Lorentz rotor, the Hermitian positive factor is a pure boost and the $*$-unitary real quaternion is a spatial rotation; the pairing is then the statement that every element of the restricted Lorentz group is a boost times a rotation, in that order. The two factors land in the two involutive sectors: the boost in the Hermitian subspace $\mathbb{M}_+$, which the physics articles call the informational sector, and the rotor's exponent in the anti-Hermitian subspace $\mathbb{M}_-$, which they call the material sector. The pairing is the algebraic home of the composition of a boost and a rotation, and the non-commutativity of the boosts is the reason the product of two boosts is a boost and a rotation and not a pure boost. The group statement is developed in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
+In the physics articles the unit-norm element is a Lorentz rotor, the Hermitian positive factor is a pure boost and the $*$-unitary real quaternion is a spatial rotation; the pairing is then the statement that every element of the restricted Lorentz group is a boost times a rotation, in that order. The two factors land in the two involutive sectors: the boost in the Hermitian subspace $\mathbb{B}_{\Psi}$, which the physics articles call the informational sector, and the rotor's exponent in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, which they call the material sector. The pairing is the algebraic home of the composition of a boost and a rotation, and the non-commutativity of the boosts is the reason the product of two boosts is a boost and a rotation and not a pure boost. The group statement is developed in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
 ## The Published Form of the Pairing
 
@@ -471,10 +471,10 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
 | $\langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$ | the quaternionic bilinear square of the vector part |
 | $\tilde q_r$ | the real quaternion part of $\tilde{Q}$, the element with the real parts of the four coefficients |
-| $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | the Hermitian and the anti-Hermitian subspaces |
+| $\mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | the Hermitian and the anti-Hermitian subspaces |
 | $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)\cong \mathrm{U}(1)\cdot\mathrm{Sp}(1)$ | the $*$-unitary group of the algebra, home of the second factor |
-| $\mathcal H = \ln \tilde Q_H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the Hermitian exponent, in $\mathbb{M}_+$ |
-| $\mathcal K = \ln \tilde Q_0 = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | the anti-Hermitian exponent, in $\mathbb{M}_-$ |
+| $\mathcal H = \ln \tilde Q_H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the Hermitian exponent, in $\mathbb{B}_{\Psi}$ |
+| $\mathcal K = \ln \tilde Q_0 = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | the anti-Hermitian exponent, in $\mathbb{B}_{\Phi}$ |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and unit axis of the boost |
 | $\theta$, $\vec u_{\mathrm r}$ | rotation angle and unit axis of the rotor |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
@@ -487,7 +487,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 - [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) and [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
-- [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and the two sectors.
+- [Hermitian and Skew-Hermitian Elements](hermitian-and-skew-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and the structure of the $*$-unitary elements.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone of the Hermitian elements in which the first factor lies.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.
