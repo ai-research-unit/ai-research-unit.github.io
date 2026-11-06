@@ -71,7 +71,7 @@
         <h1 id="exercise-the-relativistic-doppler-effect"><strong>Exercise: The Relativistic Doppler Effect</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{B}_{\Phi}$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.</p>
-<p><strong>What is assumed.</strong> The algebra, the sectors and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The four-wavevector $\tilde P = \hbar\,(i\omega/c\,e_t + \vec k)$ from the table of four-vectors in <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm b}$, with $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the boost biquaternion
+<p><strong>What is assumed.</strong> The algebra, the sectors and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The four-wavevector $\tilde P = mc/k_m\,(i\omega/c\,e_t + \vec k)$ from the table of four-vectors in <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm b}$, with $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$, and the boost biquaternion
 $$
 \tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
@@ -106,7 +106,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 \langle\tilde P\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a <strong>null</strong> element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and the mass-shell relation of <em>Relativistic Mechanics in Biquaternionic Form</em>). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural} = -(mc/\hbar)^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\hbar/(mc)$ is the mass length.</p>
+the four-wavevector of light is a <strong>null</strong> element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and the mass-shell relation of <em>Relativistic Mechanics in Biquaternionic Form</em>). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural} = -k_m^{2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $1/k_m$ is the mass length.</p>
 <p><strong>Solution (b).</strong> Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$
 Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{R}_\Phi^{\natural}\right)
@@ -383,7 +383,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 <h2 id="summary">Summary</h2>
 <ol>
 <li>
-<p><strong>Four-wavevector.</strong> $\tilde P = \hbar\,(i\omega/c\,e_t + \vec k)$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$ is invariant under rotor conjugation.</p>
+<p><strong>Four-wavevector.</strong> $\tilde P = mc/k_m\,(i\omega/c\,e_t + \vec k)$ is an element of $\mathbb{B}_{\Phi}$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $Ξ = \mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$ is invariant under rotor conjugation.</p>
 </li>
 <li>
 <p><strong>Frequency invariant.</strong> An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.</p>
@@ -450,7 +450,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 <td>Four-position</td>
 </tr>
 <tr>
-<td>$\tilde P = \hbar\,(i\omega/c\,e_t + \vec k)$</td>
+<td>$\tilde P = mc/k_m\,(i\omega/c\,e_t + \vec k)$</td>
 <td>Four-wavevector, $\langle\tilde P\rangle_{\natural} = 0$ for light</td>
 </tr>
 <tr>

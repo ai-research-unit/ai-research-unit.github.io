@@ -78,7 +78,7 @@
 \qquad
 H_{\mathrm{NR}} = -\,d\sum_k E_k\,i\vec e_k ,
 $$</p>
-<p>where $\tilde{Ξ}_{\mathrm{sp}}$ is a field of the biquaternion algebra $\mathbb{B}$, $d$ is the EDM, the three $\vec e_k$ are the spatial units of the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, and $i\vec e_k$ is twice the spin of <em>Special Element Conventions</em>, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, the element that the magnetic and electric dipole couplings multiply by. The coefficient has the dimensions of charge times length, it is the canonical <strong>CP-odd</strong> observable of a spin-$\tfrac12$ system, and its measurement is a search for physics beyond the Standard Model: its present bounds are among the tightest in particle physics.</p>
+<p>where $\tilde{Ξ}_{\mathrm{sp}}$ is a field of the biquaternion algebra $\mathbb{B}$, $d$ is the EDM, the three $\vec e_k$ are the spatial units of the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, and $i\vec e_k$ is twice the spin of <em>Special Element Conventions</em>, $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$, the element that the magnetic and electric dipole couplings multiply by. The coefficient has the dimensions of charge times length, it is the canonical <strong>CP-odd</strong> observable of a spin-$\tfrac12$ system, and its measurement is a search for physics beyond the Standard Model: its present bounds are among the tightest in particle physics.</p>
 <p><strong>The insertion is an element.</strong> Every interaction of this article multiplies the field by an element of the algebra, and that element is the whole of the structure. An action that multiplies by $a$ on the left has the adjoint that multiplies by $a^{*}$ on the left, so the Hermiticity of the interaction is the class of one element under the star: the EDM insertion multiplies by $-\vec e_k$, the magnetic insertion multiplies by $i\vec e_k$, the spatial unit is anti-Hermitian and $i\vec e_k$ is Hermitian, and the two insertions therefore lie on opposite sides of the framework's split. The other two insertions of the article carry a right factor as well, $\vec e_z$, and the classes of the two factors under the star decide their class by the same rule.</p>
 <p><strong>The chirality cell.</strong> The chirality cell is the corpus's right multiplication by $-i\vec e_z$ (<em>Special Element Conventions</em>), and it is the object that carries one insertion of a pair into the other: composed after a bivector it returns the insertion of the EDM family, and composed after that insertion it returns the bivector. It is an involution, because $(-i)^2=-1$ and $\vec e_z\vec e_z=-e_t$ cancel, and it is Hermitian; its involution and the $(-i)^2$ of the dual are the two factors of the article's $\mathcal{D}^{2}=-1$.</p>
 <p><strong>The structural statement.</strong> The framework places the EDM operator in a definite half of its algebra. The EDM insertion multiplies by $-\vec e_k$, an <strong>anti-Hermitian</strong> element, and it therefore belongs to the material sector $\mathbb{B}_{\Phi}$; the magnetic-moment insertion multiplies by $i\vec e_k$, a <strong>Hermitian</strong> element, and it belongs to the informational sector $\mathbb{B}_{\Psi}$. The two are Hodge duals of each other: the dual exchanges the two insertions with the sign of the central $-i$, so it flips the Hermiticity class, and the $i$ of the exchange flips it back. That $i$ is the $i$ in front of $d$. The article establishes this and states what it does and does not buy.</p>
@@ -289,7 +289,7 @@ $$</p>
 \qquad
 [i\vec e_i,i\vec e_j]=2i\,\epsilon_{ijk}\,(i\vec e_k).
 $$</p>
-<p>The element $i\vec e_k$ is twice the spin of <em>Special Element Conventions</em>, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$: Hermitian, of square one, traceless, and the three close on the commutator. The identity shows both facts at once — that the EDM insertion is $i$ times a Hermitian multiplication, hence anti-Hermitian, and that the multiplication it is $i$ times is the spin. The square $(i\vec e_k)^2=e_t$ is what gives $i\vec e_k$ the two eigenvalues $\pm1$; scaled by $\tfrac{\hbar}{2}$, they are the two values $\pm\tfrac{\hbar}{2}$ of a spin-$\tfrac12$ component.</p>
+<p>The element $i\vec e_k$ is twice the spin of <em>Special Element Conventions</em>, $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$: Hermitian, of square one, traceless, and the three close on the commutator. The identity shows both facts at once — that the EDM insertion is $i$ times a Hermitian multiplication, hence anti-Hermitian, and that the multiplication it is $i$ times is the spin. The square $(i\vec e_k)^2=e_t$ is what gives $i\vec e_k$ the two eigenvalues $\pm1$; scaled by $\tfrac{mc}{2k_m}$, they are the two values $\pm\tfrac{mc}{2k_m}$ of a spin-$\tfrac12$ component.</p>
 <p><strong>The factor of two and the sign.</strong> The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,k)$ and as $(k,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0k}=E_k$ the Lagrangian therefore contains</p>
 <p>$$
 \mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_k\,\tilde{Ξ}_{\mathrm{sp}}^*i\,\bigl(\mathcal{O}_{0k}\tilde{Ξ}_{\mathrm{sp}}\bigr)\vec e_x
@@ -370,8 +370,8 @@ $$</p>
 <p>$$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
-+ \frac{i c}{2\hbar\,k_m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
-+ \frac{i c}{2\hbar\,k_m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
++ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
++ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
 $$</p>
 <p>with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,</p>
 <p>$$
@@ -603,8 +603,8 @@ $$</p>
 <p>$$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1
-+ \frac{i c}{2\hbar\,k_m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
-+ \frac{i c}{2\hbar\,k_m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
++ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
++ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
 $$</p>
 <p>exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta_{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -630,7 +630,7 @@ $$</p>
 </tr>
 <tr>
 <td>$i\vec e_k$</td>
-<td>Twice the spin (<em>Special Element Conventions</em>), $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$: Hermitian, of square $e_t$, traceless, the three closing on the commutator</td>
+<td>Twice the spin (<em>Special Element Conventions</em>), $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$: Hermitian, of square $e_t$, traceless, the three closing on the commutator</td>
 </tr>
 <tr>
 <td>$Q\mapsto aQb$</td>

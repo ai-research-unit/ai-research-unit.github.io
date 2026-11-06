@@ -80,13 +80,13 @@
 \vec u_p=\frac{\vec p}{\lvert\vec p\rvert}
 $$</p>
 <p>be the unit along it, a pure real quaternion of square $-e_t$. The axis is <strong>declared</strong>: it is a datum of the state and not a property of the algebra, and no statement below is about the algebra until an axis is named.</p>
-<p>Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ on the fundamental carrier (<em>Angular Momentum and Spin in Biquaternionic Form</em>, §<em>The Spin Operators Under the Isomorphism</em>) and the corresponding generator on any other.</p>
+<p>Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$ on the fundamental carrier (<em>Angular Momentum and Spin in Biquaternionic Form</em>, §<em>The Spin Operators Under the Isomorphism</em>) and the corresponding generator on any other.</p>
 <p><strong>Definition (helicity).</strong> With the axis $\vec u_p$ declared, the <strong>helicity operator</strong> is the projection</p>
 <p>$$
 \lambda=\vec u_p\cdot\vec S ,
 $$</p>
-<p>and the <strong>helicity</strong> of a state is its eigenvalue $\hbar h$, in units of $\hbar$. The operator is Hermitian and belongs to $\mathbb{B}_{\Psi}$; the number $h$ is real and labels the state, not the carrier.</p>
-<p><strong>Proposition (the spectrum, and what the two words mean).</strong> On a carrier of spin $s$ the spectrum of $\lambda$ is $\hbar h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.</p>
+<p>and the <strong>helicity</strong> of a state is its eigenvalue $mc/k_m h$, in units of $mc/k_m$. The operator is Hermitian and belongs to $\mathbb{B}_{\Psi}$; the number $h$ is real and labels the state, not the carrier.</p>
+<p><strong>Proposition (the spectrum, and what the two words mean).</strong> On a carrier of spin $s$ the spectrum of $\lambda$ is $mc/k_m h$ with $h\in\{-s,-s+1,\dots,s\}$. The largest $h$ is the spin.</p>
 <p><em>Proof.</em> The spectrum of $\vec u\cdot\vec S$ is independent of the unit vector $\vec u$, and its maximum is the spin by the definition of spin (<em>Angular Momentum and Spin in the Biquaternion Algebra</em>, §<em>The Casimir and the Definition of Spin</em>). The operator at the declared axis is that same operator, so it has that same string, ordered along $\vec u_p$ rather than along a fixed axis.</p>
 <p>Two consequences are worth naming. <strong>Spin is a property of the carrier; helicity is a property of the state.</strong> The carrier fixes the list, the axis orders it, the state selects a member. <strong>The list is the same at every axis</strong>, so a rotation cannot change the values available, only which of them a given state carries; that is the content of the rotation law below.</p>
 <p>$\lambda$ is an observable and not a generator: its action on an element of the carrier is a left multiplication, and that is the sense in which the algebra supplies it as an element rather than as a matrix.</p>
@@ -95,46 +95,46 @@ $$</p>
 <li>$\vec S$ is the spin vector of <em>Angular Momentum and Spin in Biquaternionic Form</em>. <em>The Photon in Biquaternionic Form</em> records that the same glyph is also the Poynting vector of its energy–momentum table. The two are distinguished by the carrier: the spin vector acts on a state, the Poynting vector is a density of the field.</li>
 <li>$\lambda$ is used below in two senses, and the factorisation sections say which is in force. Here it is the operator, an element of the algebra carrying no index; there it is a spinor, one of the two factors of a null momentum, with a spinor index and a bar on its conjugate.</li>
 </ul>
-<p><strong>Two subscripts, one object.</strong> The subscript names the element whose direction is taken, the third rule of the arrow in <em>Algebra and Element Conventions</em>, §<em>The Remarkable Subspaces of Biquaternions</em>: $\vec u_p$ for the momentum $\vec p$ and $\vec u_k$ for the wave vector $\vec k$. The two are the same element, since $\vec p=\hbar\vec k$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_k$ and the Dirac articles $\vec u_p$.</p>
+<p><strong>Two subscripts, one object.</strong> The subscript names the element whose direction is taken, the third rule of the arrow in <em>Algebra and Element Conventions</em>, §<em>The Remarkable Subspaces of Biquaternions</em>: $\vec u_p$ for the momentum $\vec p$ and $\vec u_k$ for the wave vector $\vec k$. The two are the same element, since $\vec p=mc/k_m\vec k$; the subscript records which symbol the article in hand uses, the photon article writing $\vec u_k$ and the Dirac articles $\vec u_p$.</p>
 <h2 id="why-the-orbital-part-drops-out">Why the Orbital Part Drops Out</h2>
 <p>The total angular momentum is $\vec J=\vec L+\vec S$, and its projection on the momentum is the helicity plus the projection of the orbital part. The orbital part contributes nothing:</p>
 <p>$$
 \vec L\cdot\vec p=(\vec r\times\vec p)\cdot\vec p=0 .
 $$</p>
-<p>In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-i\hbar\nabla$ (<em>Angular Momentum and Spin in Biquaternionic Form</em>, §<em>The Orbital Angular Momentum Operator</em>), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.</p>
+<p>In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-i mc/k_m\nabla$ (<em>Angular Momentum and Spin in Biquaternionic Form</em>, §<em>The Orbital Angular Momentum Operator</em>), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.</p>
 <p><strong>The consequence for the slots.</strong> The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_k$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.</p>
 <h2 id="the-fundamental-carrier">The Fundamental Carrier</h2>
-<p>On the spin-$\tfrac12$ carrier the generator is $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, so the operator is the left multiplication by</p>
+<p>On the spin-$\tfrac12$ carrier the generator is $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$, so the operator is the left multiplication by</p>
 <p>$$
-\lambda=\tfrac{\hbar}{2}\,i\vec u_p\in\mathbb{B}_{\Psi} .
+\lambda=\tfrac{mc}{2k_m}\,i\vec u_p\in\mathbb{B}_{\Psi} .
 $$</p>
 <p>The carrier is a minimal left ideal, and the two helicity values are its two weights. The vectors that carry them are named by the idempotents at the axis.</p>
-<p><strong>Proposition (the two weights and their vectors).</strong> In the carrier $S_+(\vec u_p)=\mathbb{B}\tilde\Pi_+(\vec u_p)$, with $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$, the operator has the two values $\pm\tfrac{\hbar}{2}$, once each. The vector of the value $+\tfrac{\hbar}{2}$ is $\tilde\Pi_+(\vec u_p)$; the vector of $-\tfrac{\hbar}{2}$ is the companion corner $\tilde\Pi_-(\vec u_p)\,\mathbb{B}\,\tilde\Pi_+(\vec u_p)$, which is one-dimensional and nilpotent.</p>
+<p><strong>Proposition (the two weights and their vectors).</strong> In the carrier $S_+(\vec u_p)=\mathbb{B}\tilde\Pi_+(\vec u_p)$, with $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$, the operator has the two values $\pm\tfrac{mc}{2k_m}$, once each. The vector of the value $+\tfrac{mc}{2k_m}$ is $\tilde\Pi_+(\vec u_p)$; the vector of $-\tfrac{mc}{2k_m}$ is the companion corner $\tilde\Pi_-(\vec u_p)\,\mathbb{B}\,\tilde\Pi_+(\vec u_p)$, which is one-dimensional and nilpotent.</p>
 <p><em>Proof.</em> For the first, $i\vec u_p\,\tilde\Pi_+=\tfrac12\bigl(i\vec u_p+(i\vec u_p)^2\bigr)=\tfrac12\bigl(i\vec u_p+e_t\bigr)=\tilde\Pi_+$, using $(i\vec u_p)^2=e_t$ for a unit pure direction. For the second, every $\nu$ of the companion corner satisfies $\nu=\tilde\Pi_-(\vec u_p)\nu$ and $\nu=\nu\tilde\Pi_+(\vec u_p)$; the first gives $i\vec u_p\nu=-\nu$, the second gives $\nu^2=\nu\tilde\Pi_+\tilde\Pi_-\nu=0$, and the corner is one-dimensional because two idempotents of rank one, one on each side, leave a single matrix entry. Two independent vectors exhaust a two-dimensional carrier.</p>
-<p>This is the proposition of <em>Spinors and Dirac Spinors in the Biquaternion Algebra</em>, §<em>The Elementary Spinor</em>, read at the momentum axis, and the vocabulary there is the one to keep: the <strong>elementary spinor</strong> is an element of a minimal left ideal $S_\pm(\vec u_p)$, of complex dimension two, with the weights $\pm\tfrac12$, and the factor $\hbar$ is the only difference of units between the two statements. The idempotent $\tilde\Pi_+(\vec u_p)$ is the <strong>pure state</strong> of the carrier, its rank-one Hermitian projector (<em>Special Element Conventions</em>, §<em>The Idempotent Convention</em>); it is not the only element that carries the weight, since every element of $S_+(\vec u_p)$ does.</p>
+<p>This is the proposition of <em>Spinors and Dirac Spinors in the Biquaternion Algebra</em>, §<em>The Elementary Spinor</em>, read at the momentum axis, and the vocabulary there is the one to keep: the <strong>elementary spinor</strong> is an element of a minimal left ideal $S_\pm(\vec u_p)$, of complex dimension two, with the weights $\pm\tfrac12$, and the factor $mc/k_m$ is the only difference of units between the two statements. The idempotent $\tilde\Pi_+(\vec u_p)$ is the <strong>pure state</strong> of the carrier, its rank-one Hermitian projector (<em>Special Element Conventions</em>, §<em>The Idempotent Convention</em>); it is not the only element that carries the weight, since every element of $S_+(\vec u_p)$ does.</p>
 <p><strong>One refinement, on the word eigenvector.</strong> The operator is a left multiplication, and on the whole algebra its eigenspaces are not the left ideals but the right ideals $\tilde\Pi_\pm(\vec u_p)\mathbb{B}$, each of complex dimension two. The left ideals are the eigenspaces of the right multiplier $R(i\vec u_p)$, with the value $+1$ on $S_+(\vec u_p)$ and $-1$ on $S_-(\vec u_p)$ (<em>Spinors and Dirac Spinors in the Biquaternion Algebra</em>, §<em>The Pair Is a Multiplicity</em>). A state lives in a left ideal, so the statement above is the physical one: inside its own carrier the state's operator has the two values, and their vectors are the pure state and its companion nilpotent.</p>
 <p><strong>The Dirac carrier.</strong> A Dirac spinor is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (<em>Spinors and Dirac Spinors in the Biquaternion Algebra</em>, §<em>The Dirac Spinor</em>). Two things follow, and the second is the one usually got wrong.</p>
 <ul>
 <li>The two parts are two copies of one carrier, not two different carriers: the index that separates them is a copy index, and in adapted bases the same left multiplication has the same matrix on both.</li>
-<li>The two helicity values <strong>cut each part into two lines</strong>; they do not name the two parts. Inside $\tilde{Ξ}_{\mathrm{sp},L}$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}_{\mathrm{sp},R}$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. <strong>A helicity eigenstate is a line in a part, not a part.</strong></li>
+<li>The two helicity values <strong>cut each part into two lines</strong>; they do not name the two parts. Inside $\tilde{Ξ}_{\mathrm{sp},L}$, which is two-dimensional, the operator has the values $\pm\tfrac{mc}{2k_m}$ once each, and the same inside $\tilde{Ξ}_{\mathrm{sp},R}$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. <strong>A helicity eigenstate is a line in a part, not a part.</strong></li>
 </ul>
 <p><strong>Why the mass does not undo the cut.</strong> The mass term is the only term of the Dirac equation that names the other part, and it does so on the right, while the helicity element multiplies on the left (<em>Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</em>, §<em>The Gradient and the Two Parts</em>). Left and right multiplications commute, so the mass couples the two parts and leaves the helicity split of each intact. At $m=0$ the parts decouple altogether into two Weyl equations, one per part, and the helicity is then locked to the part.</p>
 <p><strong>The spinor form.</strong> The same element is written in that exercise with the root $\tilde{Ζ}=i\vec u_p$ of the central value $+1$, and the two are proportional,</p>
 <p>$$
-\lambda=\tfrac{\hbar}{2}\,\tilde{Ζ} .
+\lambda=\tfrac{mc}{2k_m}\,\tilde{Ζ} .
 $$</p>
-<p>The values $\pm1$ of $\tilde{Ζ}$ are therefore the helicity values in units of $\tfrac{\hbar}{2}$, and the exercise quotes them under the name of the helicity. The pair is the same pair; the factor is a unit.</p>
+<p>The values $\pm1$ of $\tilde{Ζ}$ are therefore the helicity values in units of $\tfrac{mc}{2k_m}$, and the exercise quotes them under the name of the helicity. The pair is the same pair; the factor is a unit.</p>
 <h2 id="the-higher-carriers">The Higher Carriers</h2>
 <p>The fundamental carrier is a minimal left ideal. The integer carriers are not: spin one is the adjoint action on the imaginary quaternions, and spin two is the symmetric traceless square of that space. The rule for the operator is the same on each, and only the carrier changes.</p>
 <p><strong>Spin one.</strong> In the adjoint action, with $\vec u_p$ the axis,</p>
 <p>$$
-\lambda=\hbar\cdot\tfrac{i}{2}\,\mathrm{ad}_{\vec u_p},
+\lambda=mc/k_m\cdot\tfrac{i}{2}\,\mathrm{ad}_{\vec u_p},
 $$</p>
-<p>whose representative is the Hermitian element $\hbar\,i\vec u_p\in\mathbb{B}_{\Psi}$, with the spectrum $\{+\hbar,0,-\hbar\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (<em>The Photon in Biquaternionic Form</em>, §<em>Helicity as an Observable in the Informational Sector</em>) or $\tilde S_{\mathrm{adj},3}$ (<em>Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</em>); the two are the same operator in different units, and the $\hbar$ above restores the units of the spin-$\tfrac12$ case. The $\pm\hbar$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{B}_{\Psi}$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.</p>
+<p>whose representative is the Hermitian element $mc/k_m\,i\vec u_p\in\mathbb{B}_{\Psi}$, with the spectrum $\{+mc/k_m,0,-mc/k_m\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (<em>The Photon in Biquaternionic Form</em>, §<em>Helicity as an Observable in the Informational Sector</em>) or $\tilde S_{\mathrm{adj},3}$ (<em>Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</em>); the two are the same operator in different units, and the $mc/k_m$ above restores the units of the spin-$\tfrac12$ case. The $\pm mc/k_m$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{B}_{\Psi}$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.</p>
 <p><strong>The massive field.</strong> The same carrier carries the Proca field, and there all three states are physical. Along the momentum the two transverse states carry $\pm1$ and the longitudinal one carries $0$, and a boost rotates a transverse polarization into the longitudinal one. The label is therefore not invariant at $m\neq0$, which is the massive case of the boost law below (<em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>, §<em>The Massive Field Strength and the Self-Dual Split</em>). The algebra represents both cases on the same carrier, and the value of $m$ decides which states are physical.</p>
 <p><strong>The self-dual split.</strong> For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_k\times\vec E$ and $\vec u_k\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$, so each half carries one sign of $\lambda$ (<em>The Photon in Biquaternionic Form</em>, §<em>Helicity and the Self-Dual Split of the Field Strength</em>). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.</p>
-<p><strong>Spin two.</strong> On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $\hbar$, and the gauge and trace removals leave the two of $\pm2$ (<em>Canonical Quantization of the Biquaternion Graviton Field</em>, §<em>Helicity and the Massless Little Group</em>). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.</p>
-<p><strong>General $s$.</strong> On any carrier the spectrum is the weight string $\hbar h$ with $h\in\{-s,\dots,s\}$, and the largest $h$ is the spin. Nothing in the operator depends on the carrier: it is the same projection, on a different module.</p>
+<p><strong>Spin two.</strong> On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $mc/k_m$, and the gauge and trace removals leave the two of $\pm2$ (<em>Canonical Quantization of the Biquaternion Graviton Field</em>, §<em>Helicity and the Massless Little Group</em>). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.</p>
+<p><strong>General $s$.</strong> On any carrier the spectrum is the weight string $mc/k_m h$ with $h\in\{-s,\dots,s\}$, and the largest $h$ is the spin. Nothing in the operator depends on the carrier: it is the same projection, on a different module.</p>
 <h2 id="reversal-rotation-and-boost">Reversal, Rotation and Boost</h2>
 <p>Three laws hold on every carrier. The first two cost no computation; the third is where the label stops being invariant.</p>
 <p><strong>Reversal.</strong> The unit along $-\vec p$ is $-\vec u_p$, so</p>
@@ -200,7 +200,7 @@ $$</p>
 <p>$$
 h=\tfrac12\bigl(d_{\bar\lambda}-d_\lambda\bigr).
 $$</p>
-<p>The spinor $\lambda$ has $d_\lambda=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\lambda=\pm\tfrac{\hbar}{2}$ on the two lines of the carrier. <strong>The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.</strong></p>
+<p>The spinor $\lambda$ has $d_\lambda=+1$ and therefore $h=-\tfrac12$; its conjugate has $h=+\tfrac12$. The fundamental carrier is the object of weight $\pm\tfrac12$, which is the operator's own statement at the momentum axis, $\lambda=\pm\tfrac{mc}{2k_m}$ on the two lines of the carrier. <strong>The two levels agree because both are the projection on $\vec u_p$, read in the two descriptions of the same spinor: as an element of a left ideal, and as a factor of a null momentum.</strong></p>
 <p>Two qualifications are kept explicit. The full little group of a massless particle is $ISO(2)$ and not $U(1)$; the compact part is what acts nontrivially on finite-helicity states, and it is the part the factorisation exhibits. And the identification of helicity with the $U(1)$ weight is standard representation theory: the algebra supplies the $U(1)$ action through its rotation rotors, and it does not select which weight is physical.</p>
 <h2 id="the-massless-limit-is-singular">The Massless Limit Is Singular</h2>
 <p>It is tempting to say that the massive case follows from the massless one by continuity. It does not, and the algebra shows why in one line.</p>
@@ -226,7 +226,7 @@ $$</p>
 <p><strong>Supplied by the algebra.</strong></p>
 <ul>
 <li>The operator $\lambda=\vec u_p\cdot\vec S$ as a Hermitian element of $\mathbb{B}_{\Psi}$ on every carrier, and its action as a left multiplication.</li>
-<li>Its spectrum, the weight string $\hbar h$ of the carrier, and the two carrier vectors of the fundamental case: the pure state at the axis and its companion nilpotent.</li>
+<li>Its spectrum, the weight string $mc/k_m h$ of the carrier, and the two carrier vectors of the fundamental case: the pure state at the axis and its companion nilpotent.</li>
 <li>The reversal law and the rotation law, as statements about the idempotents at an axis.</li>
 <li>The identification of the null momentum with a zero divisor, of the zero divisor with a rank-one matrix, and of the rank-one matrix with the factorisation into two spinors.</li>
 <li>The brackets as the invariant symplectic pairing, and their antisymmetry as the antisymmetry of that pairing.</li>
@@ -243,7 +243,7 @@ $$</p>
 <li><strong>A massive spinor-helicity extension.</strong> The two-term bispinor and its $SU(2)$ little group are not developed.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $\hbar h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\tfrac{\hbar}{2}$, carried by the pure state $\tilde\Pi_+(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $\hbar$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.</p>
+<p>Helicity is the projection of the spin on the direction of motion, $\lambda=\vec u_p\cdot\vec S$, a Hermitian element of $\mathbb{B}_{\Psi}$ acting by left multiplication on every carrier of the algebra. On a carrier of spin $s$ its spectrum is the weight string $mc/k_m h$, $h\in\{-s,\dots,s\}$, and the largest value is the spin: the carrier fixes the list, the axis orders it, the state selects a member. The orbital part drops out identically, $\vec L\cdot\vec p=0$, which is why the projection is a name and not a component of $\vec J$. On the fundamental carrier the two values are $\pm\tfrac{mc}{2k_m}$, carried by the pure state $\tilde\Pi_+(\vec u_p)$ and its companion nilpotent; on the adjoint the spectrum is $\{+1,0,-1\}$ in units of $mc/k_m$, with the propagation direction at zero; on the symmetric square it is $\{-2,-1,0,1,2\}$. The reversal law is exact and the rotation law is a conjugation by the rotor; a boost is what breaks the label, and only for a particle slower than light.</p>
 <p>At $m=0$ a second description opens. The null momentum is a zero divisor, hence a rank-one matrix, hence a product of two spinors, and the ambiguity of that product is the little-group scaling, a $U(1)$ for real momenta, realized as the rotation about $\vec p$. Helicity is the weight of that scaling, $h=\tfrac12(d_{\bar\lambda}-d_\lambda)$, and the factors $\lambda$ and $\bar\lambda$ carry $\mp\tfrac12$: the two levels of the article agree. The limit $m\to0$ is singular in the factorisation — rank, number of terms and little group all change — while the operator passes through it untouched, so the weight is not derived from the operator but identified with it where both exist. Chirality is a different object: a right multiplier, a slot, invariant at every mass, coinciding with helicity only in the massless case.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -260,19 +260,19 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec u_k=\vec k/\lvert\vec k\rvert$</td>
-<td>The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=\hbar\vec k$</td>
+<td>The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=mc/k_m\vec k$</td>
 </tr>
 <tr>
 <td>$\lambda=\vec u_p\cdot\vec S$</td>
-<td>The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\hbar$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint</td>
+<td>The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $mc/k_m$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint</td>
 </tr>
 <tr>
 <td>$\vec S$</td>
-<td>The rotation generator read as one vector, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ on the fundamental carrier</td>
+<td>The rotation generator read as one vector, $\tilde S_k=\tfrac{mc}{2k_m}i\vec e_k$ on the fundamental carrier</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$</td>
-<td>The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\tfrac{\hbar}{2}$ in $S_+(\vec u_p)$</td>
+<td>The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\tfrac{mc}{2k_m}$ in $S_+(\vec u_p)$</td>
 </tr>
 <tr>
 <td>$S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_\pm(\vec u_p)$</td>
@@ -280,7 +280,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{Ζ}=i\vec u_p$</td>
-<td>The root of $+1$ on the fundamental carrier; $\lambda=\tfrac{\hbar}{2}\tilde{Ζ}$</td>
+<td>The root of $+1$ on the fundamental carrier; $\lambda=\tfrac{mc}{2k_m}\tilde{Ζ}$</td>
 </tr>
 <tr>
 <td>$\tilde P=\frac{iE}{c}e_t+\vec p$</td>
@@ -300,7 +300,7 @@ $$</p>
 </tr>
 <tr>
 <td>$h$</td>
-<td>The helicity, the weight; the operator's eigenvalue is $\hbar h$</td>
+<td>The helicity, the weight; the operator's eigenvalue is $mc/k_m h$</td>
 </tr>
 <tr>
 <td>$\xi=-iR_{\mathrm{axf},\vec e_z}$</td>

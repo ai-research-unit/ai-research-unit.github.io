@@ -131,7 +131,7 @@ $$</p>
 <h2 id="the-adjoint-representation-is-a-lie-algebra-module">The Adjoint Representation Is a Lie-Algebra Module</h2>
 <p>There is a three-dimensional space in the framework that carries spin one: the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$, on which the adjoint action</p>
 <p>$$
-\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m)
+\mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i mc/k_m\,\epsilon_{klm}\,(ie_m)
 $$</p>
 <p>is a spin-one angular momentum. Since a three-dimensional module of $\mathbb{B}$ does not exist, something must distinguish this action from a module action, and the difference is exactly the multiplicativity of the map $x\mapsto\mathrm{ad}_x$.</p>
 <p>A representation of the <em>algebra</em> requires $\mathrm{ad}_{xy}=\mathrm{ad}_x\mathrm{ad}_y$. The adjoint action is a derivation instead,</p>
@@ -170,13 +170,13 @@ P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_k\vec e_k\otimes \vec 
 $$</p>
 <p>and the spin-one operators are the symmetric combinations</p>
 <p>$$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{mc}{2k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$</p>
 <p>which act on $\mathrm{sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,</p>
 <p>$$
-\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\hbar\, J_+
+\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=mc/k_m\, J_+
 $$</p>
-<p>with the standard matrix elements $J_+|1,0\rangle=\sqrt2\hbar\,|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt2\hbar\,|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.</p>
+<p>with the standard matrix elements $J_+|1,0\rangle=\sqrt2mc/k_m\,|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt2mc/k_m\,|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.</p>
 <p>The observables of the qutrit are equally available. The spin-one operators generate the full matrix algebra: the real span of the products of $I_3,F_1,F_2,F_3$ of length up to three has real dimension $18$, which is $\dim_{\mathbb{R}}M_3(\mathbb{C})$, as required by the density theorem for an irreducible representation. Every operator connecting the three levels — including the shifts whose absence was the obstruction — is therefore a polynomial in the spin-one operators of the tensor square.</p>
 <h3 id="the-cost">The cost</h3>
 <p>Three prices are paid for this construction, and they are worth stating plainly.</p>
@@ -352,7 +352,7 @@ $$</p>
 <li><strong>Idempotent ceiling.</strong> At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.</li>
 <li><strong>The adjoint representation.</strong> The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.</li>
 <li><strong>The absent dynamical algebra.</strong> $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.</li>
-<li><strong>The construction.</strong> $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.</li>
+<li><strong>The construction.</strong> $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=mc/k_m J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.</li>
 <li><strong>The cost.</strong> One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.</li>
 <li><strong>General counting.</strong> $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.</li>
 </ul>

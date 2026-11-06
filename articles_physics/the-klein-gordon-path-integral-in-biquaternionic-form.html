@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="the-kleingordon-path-integral-in-biquaternionic-form"><strong>The Klein–Gordon Path Integral in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the <strong>functional integral over field configurations</strong>, weighted by the phase $\exp(iS[\xi]/\hbar)$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em>, and states what the algebra contributes.</p>
-<p>The division of labour with the companion path-integral article must be stated at once. The companion article <em>The Path Integral in Biquaternionic Form</em> analyses the <strong>algebraic status of the phase</strong>: it shows that the $i$ of $\exp(iS/\hbar)$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the <strong>relativistic field-theoretic</strong> one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.</p>
+<p>The path integral is the third formulation of a quantum theory, alongside the equation of motion and the operator algebra. For a relativistic scalar field it is the <strong>functional integral over field configurations</strong>, weighted by the phase $\exp(iS[\xi]\,k_m/(mc))$, and it organises the whole of the free and perturbative theory: the generating functional is a Gaussian in the presence of a source, the free two-point function is the inverse of the quadratic form, the classical field is the stationary point, and the loop expansion is the expansion of the determinant about that point. This article derives the Klein–Gordon functional integral in biquaternionic form, evaluates the free Gaussian exactly, identifies its two-point function with the propagator of the companion article <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em>, and states what the algebra contributes.</p>
+<p>The division of labour with the companion path-integral article must be stated at once. The companion article <em>The Path Integral in Biquaternionic Form</em> analyses the <strong>algebraic status of the phase</strong>: it shows that the $i$ of $\exp(iS\,k_m/(mc))$ is the central scalar imaginary, that the exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis; it takes the centrality of the phase as established and addresses the complementary case, the <strong>relativistic field-theoretic</strong> one: a functional integral over a field configuration space, not a single-particle sum over paths, with the Klein–Gordon quadratic form in the exponent. The non-relativistic single-particle scalar case, which is a sum over paths with a central kernel, belongs to the Schrödinger setting and is not treated here.</p>
 <p>The biquaternion content of the Klein–Gordon path integral is a statement about the <strong>configuration space and the quadratic form</strong> rather than about the phase. The field is a function into the centre $\mathbb{B}_{C}$, as the companion article <em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em> establishes; the action is therefore a central scalar functional; the measure is a measure on a space of central-valued functions; and every object built from the Gaussian — the two-point function, the determinant, the effective action — is central and acts on the state module as scalar multiplication. The two structural points that are genuinely the algebra's are the identification of the <strong>mass shell</strong> with a level set of the biquaternion norm, so that the quadratic form in the exponent is the biquaternion norm read on the material sector, and the identification of the <strong>Wick rotation</strong> with the passage from the material sector to the quaternion subspace, which is exactly the passage that makes the Euclidean quadratic form positive definite. The path integral's convergence, and its failure for a negative mass squared, are properties of the biquaternion norm.</p>
 <p>The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.</p>
 <p>Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_k \vec e_k\partial/\partial R_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.</p>
@@ -137,9 +137,9 @@ $$</p>
 <p>$$
 \frac{\omega^2}{c^2}-\vec k^2-k_m^{2}=0
 \qquad\Longleftrightarrow\qquad
-\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -\hbar^2k_m^2,
+\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}= -m^{2}c^{2},
 $$</p>
-<p>a level set of the biquaternion norm on the material four-wavevector $\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.</p>
+<p>a level set of the biquaternion norm on the material four-wavevector $\tilde P=mc/k_m\,(i\omega/c\,e_t+\vec k)$. The quadratic form of the path integral is thus the biquaternion norm of $\mathbb{B}_{\Phi}$, shifted by the mass: the exponent's saddle is the biquaternion norm's level set, and the Gaussian's width is the operator whose symbol is that biquaternion norm minus the mass. This is the sense in which the framework's contribution to the scalar path integral is geometry rather than a new mechanism.</p>
 <h2 id="the-generating-functional-and-the-free-gaussian">The Generating Functional and the Free Gaussian</h2>
 <h3 id="definitions">Definitions</h3>
 <p>The generating functional is</p>
@@ -229,7 +229,7 @@ S_E[\tilde{Ξ}]=\frac{1}{2}\int d^4r_E\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(-
 $$</p>
 <p>and the phase factor becomes a decaying weight,</p>
 <p>$$
-\exp(\,iS/\hbar)\;\longmapsto\;\exp(-S_E/\hbar),
+\exp(\,iS\,k_m/(mc))\;\longmapsto\;\exp(-S_E\,k_m/(mc)),
 \qquad
 S_E\ge 0 .
 $$</p>
@@ -325,7 +325,7 @@ $$</p>
 <td>Scalar (spin-$0$) field, valued in the centre</td>
 </tr>
 <tr>
-<td>$\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$</td>
+<td>$\tilde P=mc/k_m\,(i\omega/c\,e_t+\vec k)$</td>
 <td>Material four-wavevector, $\in\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@ $$</p>
 </tr>
 <tr>
 <td>$1/k_m$</td>
-<td>The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter ($k_m=m$ in natural units)</td>
+<td>The mass length, $1/k_m$; its reciprocal $k_m=mc/\hbar$ is the mass parameter ($k_m=m$ in natural units)</td>
 </tr>
 <tr>
 <td>$\Omega_{\vec k}=\sqrt{\vec k^2+k_m^{2}}$</td>

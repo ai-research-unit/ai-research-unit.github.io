@@ -183,8 +183,8 @@ $$</p>
 <p>$$
 \boxed{\;
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
+= \frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
 $$</p>
 <p>The spin generator $\Sigma_{\mu\nu}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and $\nu$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of <em>Matrix Representations Conventions</em>, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\mu\nu}$ is what makes it one.</p>
 <h3 id="proof">Proof</h3>
@@ -207,8 +207,8 @@ $$</p>
 $$</p>
 <p>The weight collapses the sum, because $\varepsilon_\nu\varepsilon_\mu\delta_{\mu\nu}$ is $\varepsilon_\mu^2=1$ at $\nu=\mu$ and $0$ otherwise, so only the term $\nu=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\mu\nu}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,</p>
 <p>$$
-j_\mu=\frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+j_\mu=\frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$</p>
 <p>which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.</p>
 <p>The algebra was checked numerically, on at most a hundred elements. The sixteen cells of the coefficient basis are signed permutations of the four coefficients, each of determinant $1$, of Euclidean norm two and mutually orthogonal, exactly; the four diagonal actions are the four squares, with the eigenvalues tabled above, exactly; the product of two generators and the two mixed products of the proof hold with residual zero. The field equation holds to $10^{-16}$ and the adjoint to $5\times10^{-16}$, on a three-mode superposition of on-shell plane waves. The derived form of the current is exact; the position-space identity holds to $7\times10^{-17}$ in all four components; the momentum-space form to $8\times10^{-16}$ over twenty-five random on-shell pairs, its parent identity to $2\times10^{-15}$ and its axial companion to $7\times10^{-16}$. The four components of the current are real on every solution, and the temporal one is positive.</p>
@@ -239,7 +239,7 @@ $$</p>
 <p>Equivalently, with the momentum transfer $k_\nu=(p_2-p)_\nu$ and the average momentum $P_\mu=\tfrac12(p+p_2)_\mu$,</p>
 <p>$$
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-= \frac{c}{\hbar\,k_m}\Big(P_\mu\,\bar w_2w
+= \frac{1}{m}\Big(P_\mu\,\bar w_2w
 + i\sum_\nu\varepsilon_\nu\,k_\nu\,\bar w_2\Sigma_{\mu\nu}w\Big).
 $$</p>
 <p>The first term is proportional to the scalar bilinear $\bar w_2w$, the second to the tensor bilinear $\bar w_2\Sigma_{\mu\nu}w$, and the two coefficients are fixed: $P_\mu/m$ and $ik_\nu/m$. This is the form in which the vertex decomposition of the companion article on the anomalous magnetic moment is stated.</p>
@@ -283,10 +283,10 @@ $$</p>
 <h3 id="the-magnetic-moment-and-math171">The magnetic moment and $g=2$</h3>
 <p>Contract the spin term with the photon field. The interaction is $-\sum_\mu\varepsilon_\mu A_\mu j_\mu$, and the spin-dependent part contributes, up to a total divergence,</p>
 <p>$$
--\frac{e\hbar}{2mc}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu A_\mu\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\nu\mu}\tilde{Ξ}_{\mathrm{sp}}
-= -\frac{e\hbar}{2mc}\cdot\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,F_{\mu\nu}\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}},
+-\frac{e mc}{2mc k_m}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu A_\mu\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\nu\mu}\tilde{Ξ}_{\mathrm{sp}}
+= -\frac{e mc}{2mc k_m}\cdot\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,F_{\mu\nu}\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}},
 $$</p>
-<p>which is an effective <strong>Pauli moment term</strong>, of the form $-\frac{e\hbar}{2mc}\vec B\cdot\vec S$ with $\vec S$ the spin density of the previous subsection. Its coefficient is the Dirac value $g=2$. The companion article on the anomalous magnetic moment writes the vertex as</p>
+<p>which is an effective <strong>Pauli moment term</strong>, of the form $-\frac{e mc}{2mc k_m}\vec B\cdot\vec S$ with $\vec S$ the spin density of the previous subsection. Its coefficient is the Dirac value $g=2$. The companion article on the anomalous magnetic moment writes the vertex as</p>
 <p>$$
 i\,e_\mu\,\cdot\,\vec e_{\nu(\mu)}\;F_1(k^2)+\frac{2i\sum_\nu\varepsilon_\nu\,\Sigma_{\mu\nu}k_\nu}{2m}\,F_2(k^2),
 \qquad
@@ -301,7 +301,7 @@ $$</p>
 \vec S=\big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{23}\tilde{Ξ}_{\mathrm{sp}},\;\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{31}\tilde{Ξ}_{\mathrm{sp}},\;\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{12}\tilde{Ξ}_{\mathrm{sp}}\big),
 $$</p>
 <p>so the spin term is a curl in the massless case exactly as it is in the massive one. What changes is the coefficient: $1/m$ in the massive identity, and $1/E$ in the massless regime, where $E$ is the only scale that can multiply a density to give a current.</p>
-<p>For a massless particle of one value the spin is locked to the direction $\vec u_k$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(\hbar\vec u_k/2)$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.</p>
+<p>For a massless particle of one value the spin is locked to the direction $\vec u_k$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(mc/k_m\vec u_k/2)$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.</p>
 <h2 id="the-angular-momentum-and-stress-tensor-relatives">The Angular-Momentum and Stress-Tensor Relatives</h2>
 <p>The same split appears in the energy–momentum tensor, and the comparison is instructive because the numerical coefficients differ.</p>
 <p>The symmetric <strong>Belinfante–Rosenfeld</strong> tensor is</p>
@@ -390,8 +390,8 @@ $$</p>
 <p>The Gordon decomposition splits the on-shell current of the field as</p>
 <p>$$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+= \frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$</p>
 <p>into a convection part and the divergence of a spin density, $\Sigma_{\mu\nu}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_\mu$. In momentum space the same statement is</p>
 <p>$$
@@ -483,7 +483,7 @@ $$</p>
 <td>The Belinfante–Rosenfeld and canonical stress tensors</td>
 </tr>
 <tr>
-<td>$\frac{e\hbar}{2mc}\cdot\frac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>$\frac{e mc}{2mc k_m}\cdot\frac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}\bar{\tilde{Ξ}}_{\mathrm{sp}}\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$</td>
 <td>The effective Pauli moment term, $g=2$</td>
 </tr>
 </tbody>

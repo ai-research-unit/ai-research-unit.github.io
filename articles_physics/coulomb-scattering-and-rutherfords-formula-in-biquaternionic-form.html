@@ -77,7 +77,7 @@ $$</p>
 <p>the differential cross section that Rutherford obtained from classical mechanics and that non-relativistic quantum physics reproduces exactly. It is the one scattering problem of the subcategory with a long-range potential, and it is the problem in which the partial-wave expansion and the Born approximation can be compared on a case in which both are available: the first Born amplitude already has the modulus that Rutherford's formula requires, and the exact amplitude differs from it only by a phase — the Coulomb phase.</p>
 <p>This article treats the continuum of the same central potential whose bound states the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em> solves. It does not repeat the bound-state derivation. The biquaternion content is the by-now-familiar consequence of centrality: the potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, the scattering amplitude is a scalar function of the angle and the energy, and the phase shifts are central. The radial problem is the same scalar radial problem as in the bound case, continued to positive energy. The framework's contribution is the algebraic location of the amplitude and the phases, and the sector interpretation of the flux; it is not a new solution of the Coulomb equation.</p>
 <p>The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.</p>
-<p>The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar c}{2\,k_m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$. The coordinate $r$ is the argument of the field.</p>
+<p>The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{mc^{2}}{2\,k_m^{2}}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$. The coordinate $r$ is the argument of the field.</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <h2 id="the-coulomb-problem-in-biquaternion-form">The Coulomb Problem in Biquaternion Form</h2>
 <h3 id="the-central-hamiltonian-and-the-reduction">The central Hamiltonian and the reduction</h3>
@@ -89,33 +89,33 @@ V(r)=\frac{Z_1Z_2e^2}{r}=\frac{\alpha}{r},
 $$</p>
 <p>attractive for opposite charges ($\alpha<0$) and repulsive for like charges ($\alpha>0$). The Hamiltonian</p>
 <p>$$
-H=\left[-\frac{\hbar c}{2\,k_m}\nabla^2+\frac{\alpha}{r}\right]e_t
+H=\left[-\frac{mc^{2}}{2\,k_m^{2}}\nabla^2+\frac{\alpha}{r}\right]e_t
 $$</p>
 <p>is central, so the stationary equation $H\tilde{Ξ}_{\mathrm{sp}}=E\tilde{Ξ}_{\mathrm{sp}}$ reduces to the scalar equation for the envelope, and every stationary state is $\tilde{Ξ}_{\mathrm{sp}}=\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\xi_{\mathrm{scl}}$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.</p>
 <h3 id="the-coulomb-parameter">The Coulomb parameter</h3>
-<p>For a scattering state of energy $E=\hbar^2k^2/2m>0$ the natural dimensionless coupling is the <strong>Coulomb parameter</strong></p>
+<p>For a scattering state of energy $E=mc/k_m^2k^2/2m>0$ the natural dimensionless coupling is the <strong>Coulomb parameter</strong></p>
 <p>$$
-\eta=\frac{\alpha\,k_m}{\hbar c k}=\frac{\alpha}{\hbar v},
+\eta=\frac{\alpha\,k_m^{2}}{mc^{2}k}=\frac{\alpha k_m}{mcv},
 \qquad
 v=c\,k/k_m,
 $$</p>
-<p>the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\hbar,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.</p>
+<p>the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,mc/k_m,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.</p>
 <h2 id="partial-wave-decomposition">Partial-Wave Decomposition</h2>
 <h3 id="the-radial-equation">The radial equation</h3>
 <p>Writing the envelope in spherical coordinates and separating the angular part with the spherical harmonic $Y_{lm}$, the radial function $R_l(r)$ obeys</p>
 <p>$$
--\frac{\hbar c}{2\,k_m}\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dR_l}{dr}\right)
-+\left[\frac{\hbar^2l(l+1)}{2mr^2}+\frac{\alpha}{r}-E\right]R_l=0 ,
+-\frac{mc^{2}}{2\,k_m^{2}}\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dR_l}{dr}\right)
++\left[\frac{mc^{2}l(l+1)}{2r^2k_m^{2}}+\frac{\alpha}{r}-E\right]R_l=0 ,
 $$</p>
 <p>and with the substitution $u_l(r)=rR_l(r)$ the equation takes the one-dimensional form</p>
 <p>$$
-\frac{d^2u_l}{dr^2}(r)+\left[k^2-\frac{2\alpha\,k_m}{\hbar c r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
+\frac{d^2u_l}{dr^2}(r)+\left[k^2-\frac{2\alpha\,k_m^{2}}{mc^{2}r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
 $$</p>
 <p>In the dimensionless variable $\rho=kr$ this is the <strong>Coulomb wave equation</strong></p>
 <p>$$
 \frac{d^2u_l}{d\rho^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0 ,
 \qquad
-\eta=\frac{\alpha\,k_m}{\hbar c k},
+\eta=\frac{\alpha\,k_m^{2}}{mc^{2}k},
 $$</p>
 <p>the same equation that the hydrogen article solves for bound states, now at positive energy. The angular momentum barrier $l(l+1)/\rho^2$ and the Coulomb term $-2\eta/\rho$ are both central scalars; the module does not enter the equation. The reduction of a three-dimensional central problem to a one-dimensional radial equation is thus a reduction of the scalar envelope, and the biquaternion state is the product of that envelope with a constant module element.</p>
 <h3 id="the-regular-coulomb-function">The regular Coulomb function</h3>
@@ -175,7 +175,7 @@ $$</p>
 <h3 id="rutherfords-formula">Rutherford's formula</h3>
 <p>The Coulomb parameter and the wave vector combine as</p>
 <p>$$
-\frac{\eta^2}{4k^2}=\frac{\alpha^2\,k_m^{2}}{4\hbar^2c^2k^4}=\frac{\alpha^2}{16E^2},
+\frac{\eta^2}{4k^2}=\frac{\alpha^2\,k_m^{4}}{4m^{2}c^{4}k^4}=\frac{\alpha^2}{16E^2},
 $$</p>
 <p>and therefore</p>
 <p>$$
@@ -195,8 +195,8 @@ $$</p>
 <h3 id="the-phase-only-difference-from-the-born-amplitude">The phase-only difference from the Born amplitude</h3>
 <p>The first Born amplitude for the same potential is (next section)</p>
 <p>$$
-f_B(\theta)=-\frac{2\alpha\,k_m}{\hbar c\lvert\vec k_2-\vec k\rvert^2}
-=-\frac{\alpha\,k_m}{2\hbar c k^2\sin^2(\theta/2)}
+f_B(\theta)=-\frac{2\alpha\,k_m^{2}}{mc^{2}\lvert\vec k_2-\vec k\rvert^2}
+=-\frac{\alpha\,k_m^{2}}{2mc^{2}k^2\sin^2(\theta/2)}
 =-\frac{\eta}{2k\sin^2(\theta/2)},
 \qquad
 \lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
@@ -210,7 +210,7 @@ $$</p>
 <h3 id="the-first-born-amplitude">The first Born amplitude</h3>
 <p>The first Born amplitude is the Fourier transform of the potential at the momentum transfer,</p>
 <p>$$
-f_B(\theta)=-\frac{2\,k_m}{\hbar c}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k_2-\vec k)\cdot\vec r)\,V(r),
+f_B(\theta)=-\frac{2\,k_m^{2}}{mc^{2}}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k_2-\vec k)\cdot\vec r)\,V(r),
 \qquad
 \lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
 $$</p>
@@ -220,8 +220,8 @@ $$</p>
 $$</p>
 <p>so</p>
 <p>$$
-f_B(\theta)=-\frac{2\,k_m}{\hbar c}\,\frac{\alpha}{\lvert\vec k_2-\vec k\rvert^2}
-=-\frac{2\alpha\,k_m}{\hbar c\lvert\vec k_2-\vec k\rvert^2},
+f_B(\theta)=-\frac{2\,k_m^{2}}{mc^{2}}\,\frac{\alpha}{\lvert\vec k_2-\vec k\rvert^2}
+=-\frac{2\alpha\,k_m^{2}}{mc^{2}\lvert\vec k_2-\vec k\rvert^2},
 $$</p>
 <p>and squaring with $\lvert\vec k_2-\vec k\rvert^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.</p>
 <h3 id="why-the-first-born-amplitude-is-already-exact-in-modulus">Why the first Born amplitude is already exact in modulus</h3>
@@ -229,7 +229,7 @@ $$</p>
 <p>The biquaternion framework has nothing to add to this argument except the observation that it is an argument about scalars: the amplitude is central, the phase is central, and the scale-free property of the $1/r$ potential is a property of the central potential, not of the module. The spin-0 state module plays no role.</p>
 <h2 id="the-long-range-tail-and-the-coulomb-phase">The Long-Range Tail and the Coulomb Phase</h2>
 <h3 id="the-logarithm-and-the-energy-dependence">The logarithm and the energy dependence</h3>
-<p>The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.</p>
+<p>The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha\,k_m/(mc) v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.</p>
 <p>In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.</p>
 <h3 id="the-scattering-length-and-the-infrared-analogy">The scattering length and the infrared analogy</h3>
 <p>The logarithmic phase is the non-relativistic analogue of an infrared divergence: the long-range tail produces a phase that grows without bound with the distance, so the asymptotic form of the wave function never becomes a pure plane wave plus a scattered wave with a constant phase. The cure in practice is to define the cross section from the flux, which is insensitive to the divergent phase, and to use the Coulomb-modified asymptotic form consistently in any interference problem. The algebra records the same fact as the centrality of a phase that cannot be removed by a module transformation.</p>
@@ -255,7 +255,7 @@ $$</p>
 <p><strong>3. Does the continuum problem inherit the zero divisor structure of the bound problem?</strong> The bound-state wave functions and the continuum functions are the two branches of the same equation; whether the algebra's null cone plays a role in either is not established.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the Coulomb-scattering reformulation distinguishes it from scalar Coulomb scattering.</p>
 <h2 id="summary">Summary</h2>
-<p>The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{\hbar c}{2\,k_m}\nabla^2+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=m\alpha/\hbar^2k=\alpha/\hbar v$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation</p>
+<p>The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{mc^{2}}{2\,k_m^{2}}\nabla^2+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=m\alpha\,k_m/(mc)^2k=\alpha\,k_m/(mc) v$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation</p>
 <p>$$
 \frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
 $$</p>
@@ -264,7 +264,7 @@ $$</p>
 <p>$$
 f_C(\theta)=-\frac{\eta}{2k\sin^2(\theta/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
 $$</p>
-<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k_2-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
+<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(m^{2}c^{2}/k_m^{2}\lvert\vec k_2-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
 <p>The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central $*$-unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -304,7 +304,7 @@ $$</p>
 <td>Coulomb potential, central</td>
 </tr>
 <tr>
-<td>$\eta=m\alpha/\hbar^2k=\alpha/\hbar v$</td>
+<td>$\eta=m\alpha\,k_m/(mc)^2k=\alpha\,k_m/(mc) v$</td>
 <td>Coulomb parameter</td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ $$</p>
 <td>Momentum transfer</td>
 </tr>
 <tr>
-<td>$f_B=-\frac{2\alpha\,k_m}{\hbar c\lvert\vec k_2-\vec k\rvert^2}$</td>
+<td>$f_B=-\frac{2\alpha\,k_m^{2}}{mc^{2}\lvert\vec k_2-\vec k\rvert^2}$</td>
 <td>First Born amplitude</td>
 </tr>
 <tr>

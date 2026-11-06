@@ -73,7 +73,7 @@
 <p>A <strong>chiral fermion</strong> is a fermion whose left and right parts carry <em>inequivalent</em> representations of the gauge group. The <strong>vector-like</strong> alternative is a fermion whose two parts carry the same representation; a vector-like fermion may have a mass term that pairs the two parts, and a chiral fermion may not. The distinction is not a technicality: the matter content of the Standard Model is chiral, with the left-handed quarks and leptons in $SU(2)$ doublets and their right-handed partners in singlets, and the immediate kinematic consequence is that no bare fermion mass is gauge invariant. The electron mass appears only after electroweak symmetry breaking, through the coupling of the two parts to the Higgs field, whose vacuum expectation value carries the charge that the mass term lacks.</p>
 <p>This article asks what the biquaternion framework, in the notation of the companion articles, supplies for that structure. The presentation is organized around one question — <em>can the framework distinguish the two parts in a gauge interaction?</em> — and the answer is split, at the outset, into the three categories the corpus uses.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The state of a fermion is an element of $\mathbb{B}$, and its chirality is a subscript with two values. The two values are read from one operator, the chirality operator of the frame $\xi=-iR_{\mathrm{axf},\vec e_z}$ — a pure right multiplier — which carries the $L$ part to minus itself and the $R$ part to plus itself. The mass bilinear of the corpus pairs one part of each value and vanishes on an element of one value. A <em>chiral</em> abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the action $Q\mapsto Qb$ by the charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges, the covariant derivative is covariant for arbitrary charges, and the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.</li>
+<li><strong>Established, and recomputed below.</strong> The state of a fermion is an element of $\mathbb{B}$, and its chirality is a subscript with two values. The two values are read from one operator, the chirality operator of the frame $\xi=-iR_{\mathrm{axf},\vec e_z}$ — a pure right multiplier — which carries the $L$ part to minus itself and the $R$ part to plus itself. The mass bilinear of the corpus pairs one part of each value and vanishes on an element of one value. A <em>chiral</em> abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the action $Q\mapsto Qb$ by the charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges, the covariant derivative is covariant for arbitrary charges, and the curvature is $\tfrac{i k_m}{mc}F_{\mu\nu}Qb$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.</li>
 <li><strong>Established from the read list, and sharpened here.</strong> The gauge group of the biquaternionic abelian gauge principle is the $*$-unitary part of the centre $\mathbb{B}_{C}$. A group drawn from the centre multiplies the two values alike, so it assigns them equal charges: it is vector-like and cannot be chiral. A chiral abelian group needs a right multiplication by an element off the centre, and $b$ is that element whenever $ϙ_L\neqϙ_R$ — the structure whose algebraic status the gauge article leaves open.</li>
 <li><strong>Gap, left visible.</strong> The algebra's real structure $\flat=-{}^{*}$ supplies the shape of a conjugate pairing with the quantum numbers of a Majorana-type mass, but the single-field equation built on it is not a physical mass: its central-phase plane waves sit on the spacelike locus (the companion <em>Antilinear Structure and the Two Kinds of Mass</em> shows this). The operation that exchanges the two values is the coefficient bar, and a physical Majorana pairing must be built on a conjugation of that kind. The parent's own mass term is the linear chiral pair, through which the continuous central phase passes and which conserves the vector $\mathrm{U}(1)$; it is not the antilinear pairing. Whether a given fermion uses the bar is the question of the companion <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em>. It is recorded here only for its consequence: the framework's vector-like gauge structure and the real structure's antilinear pairing do not naturally meet.</li>
 </ul>
@@ -103,11 +103,11 @@ b=\tfrac{ϙ_L+ϙ_R}{2}\,e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\,\vec e_z ,
 $$</p>
 <p>and the symmetry acts by the right multiplication</p>
 <p>$$
-Q\longmapsto Q\,e^{\frac{i}{\hbar}\Gamma b},
+Q\longmapsto Q\,e^{\frac{i k_m}{mc}\Gamma b},
 \qquad
-Q_L\,e^{\frac{i}{\hbar}\Gamma b}=e^{\frac{i}{\hbar}ϙ_L\Gamma}\,Q_L,
+Q_L\,e^{\frac{i k_m}{mc}\Gamma b}=e^{\frac{i k_m}{mc}ϙ_L\Gamma}\,Q_L,
 \qquad
-Q_R\,e^{\frac{i}{\hbar}\Gamma b}=e^{\frac{i}{\hbar}ϙ_R\Gamma}\,Q_R .
+Q_R\,e^{\frac{i k_m}{mc}\Gamma b}=e^{\frac{i k_m}{mc}ϙ_R\Gamma}\,Q_R .
 $$</p>
 <p>The two identities are the definition of the value read twice. For a part of value $L$ one has $Q\vec e_z=-iQ$, so</p>
 <p>$$
@@ -119,14 +119,14 @@ $$</p>
 <p><strong>Why the action is written on the right.</strong> A left multiplication keeps the letter of both parts, so an action $Q\mapsto aQ$ applies one element to the two parts and can give them no separate charges, whatever $a$ is. Independent charges therefore need the right slot. They also need an element of two unequal parts, because a right multiplication by an element of a single value multiplies both parts by the same factor. The two conditions are one: the element $b$ has two unequal parts exactly when $ϙ_L\neqϙ_R$.</p>
 <p><strong>The covariant derivative.</strong> With the connection $A_\mu$ and the transformation</p>
 <p>$$
-D_\mu Q=\frac{\partial Q}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,Q\,b,
+D_\mu Q=\frac{\partial Q}{\partial R_\mu}+\frac{i k_m}{mc}A_\mu\,Q\,b,
 \qquad
 A_\mu\longmapsto A_\mu-\frac{\partial\Gamma}{\partial R_\mu},
 $$</p>
-<p>one has $(D_\mu Q)'=(D_\mu Q)\,e^{\frac{i}{\hbar}\Gamma b}$ for arbitrary $ϙ_L,ϙ_R$. The warrant is that the derivative of the transformation is $\frac{i}{\hbar}\bigl(\partial\Gamma/\partial R_\mu\bigr)\,b$ times the same factor, since $b$ commutes with the exponential it generates; the term that would spoil the covariance then cancels against the shift of $A_\mu$, which is also on the right.</p>
+<p>one has $(D_\mu Q)'=(D_\mu Q)\,e^{\frac{i k_m}{mc}\Gamma b}$ for arbitrary $ϙ_L,ϙ_R$. The warrant is that the derivative of the transformation is $\frac{i k_m}{mc}\bigl(\partial\Gamma/\partial R_\mu\bigr)\,b$ times the same factor, since $b$ commutes with the exponential it generates; the term that would spoil the covariance then cancels against the shift of $A_\mu$, which is also on the right.</p>
 <p><strong>The curvature.</strong> The element $b$ is constant, and left and right multiplications commute, so $b$ factors out on the right and the commutator acts on the scalar alone:</p>
 <p>$$
-[D_\mu,D_\nu]Q=\frac{i}{\hbar}F_{\mu\nu}\,Q\,b,
+[D_\mu,D_\nu]Q=\frac{i k_m}{mc}F_{\mu\nu}\,Q\,b,
 \qquad
 F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
 $$</p>
@@ -177,7 +177,7 @@ $$</p>
 <ul>
 <li><em>The two-valued structure and its invariance.</em> Every element carries the subscript; the value is Lorentz invariant with or without a mass; the bar exchanges the two values and the star does not preserve them.</li>
 <li><em>The oddness of the mass.</em> The Dirac bilinear is odd in the value and vanishes on an element of one value; the parent's mass term is the linear chiral pair, the operation that exchanges the values is the bar, and $\flat$ neither preserves nor exchanges them. This is established.</li>
-<li><em>The chiral gauge covariant derivative on the element.</em> For independent charges $ϙ_L,ϙ_R$ the action $Q\mapsto Qe^{\frac{i}{\hbar}\Gamma b}$ and the derivative $D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i}{\hbar}A_\mu Qb$ are covariant, with curvature $\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The charge element multiplies on the right, so the parent's left-multiplied form is recovered only in the vector-like case.</li>
+<li><em>The chiral gauge covariant derivative on the element.</em> For independent charges $ϙ_L,ϙ_R$ the action $Q\mapsto Qe^{\frac{i k_m}{mc}\Gamma b}$ and the derivative $D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i k_m}{mc}A_\mu Qb$ are covariant, with curvature $\tfrac{i k_m}{mc}F_{\mu\nu}Qb$. The charge element multiplies on the right, so the parent's left-multiplied form is recovered only in the vector-like case.</li>
 <li><em>The mass selection rule.</em> A bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$; a chiral fermion is massless in the unbroken phase. This is established by direct computation and is the algebraic content of the Standard Model's need for a Higgs field.</li>
 <li><em>The vector-like character of the centre.</em> The only canonically available abelian gauge group is the scalar centre, which cannot be chiral.</li>
 </ul>
@@ -274,7 +274,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <h2 id="summary">Summary</h2>
 <p>A chiral fermion is one whose two parts carry inequivalent gauge representations. In the biquaternion framework the two parts are read from one operator and named by one subscript. Operator chirality is the side on which an operator multiplies, and the state is an element of $\mathbb{B}$; the subscript takes the values $L$ and $R$, $L$ being the minus value and $R$ the plus one; and the operator is the frame's chirality operator $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier acting $\xi Q=-iQ\vec e_z$ and carrying $Q_L$ to $-Q_L$ and $Q_R$ to $+Q_R$. Every element is one part of each value and only zero is both; a product takes the letter of its right factor, and a left multiplication keeps the letter; the value is Lorentz invariant with or without a mass, because $\xi$ commutes with the six Lorentz cells; the coefficient bar exchanges the two values, and the Hermitian conjugation preserves neither of them.</p>
 <p>The Dirac mass bilinear pairs one part of each value, because the timelike frame cell it carries anticommutes with $\xi$; it changes sign under $\tilde{Ξ}_{\mathrm{sp}}\mapsto\xi\tilde{Ξ}_{\mathrm{sp}}$ and vanishes on an element of one value. The gauge phases enter it as a product, so the mass term is invariant under the central phase and, under the axial rotation, only for $\alpha\in\pi\mathbb{Z}$: it conserves the vector $\mathrm{U}(1)$ and breaks the axial one.</p>
-<p>A chiral abelian gauge symmetry with independent charges is consistent. The charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges; the action $Q\mapsto Qe^{\frac{i}{\hbar}\Gamma b}$ and the covariant derivative $D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i}{\hbar}A_\mu Qb$ satisfy $(D_\mu Q)'=(D_\mu Q)e^{\frac{i}{\hbar}\Gamma b}$ for arbitrary charges, with curvature $[D_\mu,D_\nu]Q=\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The element $b$ is central only when $ϙ_L=ϙ_R$, and then the action coincides with the parent's left multiplication. That is also the condition for the mass bilinear to be gauge invariant, and the two occurrences of it — one for the mass, one for the side of the connection — are one statement seen twice.</p>
+<p>A chiral abelian gauge symmetry with independent charges is consistent. The charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges; the action $Q\mapsto Qe^{\frac{i k_m}{mc}\Gamma b}$ and the covariant derivative $D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i k_m}{mc}A_\mu Qb$ satisfy $(D_\mu Q)'=(D_\mu Q)e^{\frac{i k_m}{mc}\Gamma b}$ for arbitrary charges, with curvature $[D_\mu,D_\nu]Q=\tfrac{i k_m}{mc}F_{\mu\nu}Qb$. The element $b$ is central only when $ϙ_L=ϙ_R$, and then the action coincides with the parent's left multiplication. That is also the condition for the mass bilinear to be gauge invariant, and the two occurrences of it — one for the mass, one for the side of the connection — are one statement seen twice.</p>
 <p>The framework's own abelian gauge group is the $*$-unitary part of the centre, and a central element multiplies the two parts alike. The canonically available abelian sector is therefore <strong>vector-like</strong> and cannot be chiral; a chiral gauge group needs a right multiplication by an element off the centre. The axial rotation $e^{\alpha\vec e_z}$ is such an element, but it is not central, and the centre can act axially only with the charges locked in the ratio $ϙ_R=-ϙ_L$.</p>
 <p>Two gaps are left visible. Without a non-central gauge structure the framework has no chiral gauge group. And the algebra's $\flat$ supplies the shape of a conjugate pairing, but its single-field equation is spacelike and not a physical mass; whether a given fermion uses the bar is open. The chiral structure itself — the two values, the oddness of the mass, the selection rule — is established and exact.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -343,11 +343,11 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <td>Charge element; central if and only if $ϙ_L=ϙ_R$</td>
 </tr>
 <tr>
-<td>$Q\mapsto Qe^{\frac{i}{\hbar}\Gamma b}$</td>
+<td>$Q\mapsto Qe^{\frac{i k_m}{mc}\Gamma b}$</td>
 <td>Chiral gauge transformation, a right multiplication</td>
 </tr>
 <tr>
-<td>$D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i}{\hbar}A_\mu Qb$</td>
+<td>$D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i k_m}{mc}A_\mu Qb$</td>
 <td>Chiral covariant derivative</td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <td>Abelian curvature</td>
 </tr>
 <tr>
-<td>$[D_\mu,D_\nu]Q=\tfrac{i}{\hbar}F_{\mu\nu}Qb$</td>
+<td>$[D_\mu,D_\nu]Q=\tfrac{i k_m}{mc}F_{\mu\nu}Qb$</td>
 <td>Chiral curvature identity</td>
 </tr>
 <tr>
