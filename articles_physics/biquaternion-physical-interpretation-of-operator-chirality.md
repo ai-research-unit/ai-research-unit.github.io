@@ -83,13 +83,13 @@ with $\tilde{Ξ}_{\mathrm{sp},\pm}=\tfrac12(\mathrm I\pm\mathsf{V}_{\mathrm{vol}
 
 **The equation.** The biquaternion Dirac equation is the chiral pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 in which both operators act by left multiplication: the first by $\tilde\nabla$, the second by its natural conjugate $\tilde\nabla^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is the point recorded where the corpus separates its three forms of the equation — the pair written on the algebra holds without any choice of module.
+so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is the point recorded where the corpus separates its three forms of the equation — the pair written on the algebra holds without any choice of module. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The massless case, and the chirality split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $\mathsf{V}_{\mathrm{vol}}$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under $\mathsf{V}_{\mathrm{vol}}$, so a solution of definite chirality can be chosen.
 

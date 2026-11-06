@@ -7,7 +7,7 @@ This is a worked exercise on the biquaternion Dirac equation, written in the biq
 **One operator, two members.** The gradient is the one first-order operator of the equation, and the mass couples two members,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and only that product is the wave operator.
@@ -102,7 +102,7 @@ $$
 one equation on each part, and the two are one statement: the second is the first with the gradient replaced by its conjugate and the two parts exchanged, so the mass stands with the same sign on both sides. Eliminating the second part gives
 
 $$
-\tilde P^{\natural}\tilde P\,\tilde{Ξ}_{\mathrm{sp},R}=-m^2\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde P^{\natural}\tilde P\,\tilde{Ξ}_{\mathrm{sp},R}=-\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
@@ -113,7 +113,7 @@ which is the mass shell of Problem 6 and the Klein–Gordon equation of the firs
 
 **Statement.** Solve the pair for the positive-frequency branch $\tilde w$ and for the negative-frequency branch $\tilde v$, explicitly at rest and at general momentum, in the two readings.
 
-**Solution.** Eliminating the second part gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell
+**Solution.** Eliminating the second part gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell
 
 $$
 E^2=\vec p^{\,2}+m^2 .
@@ -226,7 +226,7 @@ $$
 **The second-order closure.** The two sums are complementary, and eliminating between the members gives the closure
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The scalar square is the interval, and the collapse is two lines:

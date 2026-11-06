@@ -37,11 +37,11 @@ This problem works in the natural units $\hbar=c=1$; the factors of $\hbar$ and 
 **The chiral pair.** The dynamics is the one-sided chiral pair of the parent article: two equations, one per value,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} ,
 $$
 
 $$
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The first acts on the part $\tilde{Ξ}_{\mathrm{sp},R}$, the second on the part $\tilde{Ξ}_{\mathrm{sp},L}$, and the second is the quaternion conjugate of the first. The mass is the term that carries one value to the other; it is the only such term, because a left multiplication preserves each value.
@@ -57,13 +57,13 @@ Each is a one-sided equation for one value, and neither contains the other part.
 **The massive case.** Apply $\tilde\nabla^{\natural}$ to the first equation and use the second:
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m^2\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The product $\tilde\nabla^{\natural}\tilde\nabla$ is the d'Alembertian $\Box$, the quaternionic norm of the gradient, an operator of the algebra and not of a sector (*Operator and Calculus Conventions*, §*The Quaternionic Bilinear Product, Its Form and Its Norm*, where it is defined and where the uniqueness of the operator is stated). Hence
 
 $$
-\left(\Box - m^2\right)\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \left(\Box - m^2\right)\tilde{Ξ}_{\mathrm{sp},L} = 0,
+\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp},L} = 0,
 $$
 
 and with $\hbar$ and $c$ restored the same statement is $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $\lambda_m=\hbar/(mc)$ is the mass length.
@@ -266,7 +266,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 2. **The field-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{*}$ (its $u,v$ are the $w,v$ used here) and warns that for a generic pair $iuv^{*}$ does not lie in $\mathbb{B}_{\Phi}$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Psi}$, with four-vector image $V = iH\in\mathbb{B}_{\Phi}$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = wv^{*}$ is general, but the identification of $i\tilde{Q}$ with a four-vector is not, and neither is the rank-one property, which needs the two elements to share a value.
 
-3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term couples the two values, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
+3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term couples the two values, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
 
 A fourth point, the form of the invariant pairing inside the algebra, is the parent's open question 3; Problem 4 answers it, and the answer is the quaternionic form.
 
@@ -343,7 +343,7 @@ The four contraction sums are fixed by the metric, because a cell's square is. W
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+\lambda_m^{-2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\mathrm b}=\tilde U_{\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_0^2 = \vec k^2+\lambda_m^{-2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\mathrm b}=\tilde U_{\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the sandwich $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The sandwich is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 

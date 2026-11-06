@@ -99,7 +99,7 @@ The sign convention deserves a paragraph of its own, because it is the series' m
 $$
 \left(\Box - \lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k^2 + c^2\lambda_m^{-2}$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box - m^2)\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\lambda_m^{-2}$ with $\lambda_m = \hbar/(mc)$.
+whose symbol reproduces $\omega^2 = c^2\vec k^2 + c^2\lambda_m^{-2}$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\lambda_m^{-2}$ with $\lambda_m = \hbar/(mc)$.
 
 ### Self-adjointness
 

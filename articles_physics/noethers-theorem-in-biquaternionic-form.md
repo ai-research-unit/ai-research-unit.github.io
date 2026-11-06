@@ -192,8 +192,8 @@ The same phase is a symmetry of the massive Dirac field. For the Dirac field the
 
 $$
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} &= m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= m\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} &= \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 
@@ -525,7 +525,7 @@ $$
 
 zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $\hbar/2m$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\sqrt{\mu}\,\tilde{J}) = 0$.
 
-The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, equivalently the one equation on the algebra $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=-mi\bar{\tilde{Ξ}}_{\mathrm{sp}}\vec e_z$. The vector current has the components $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
+The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, equivalently the one equation on the algebra $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=-mi\bar{\tilde{Ξ}}_{\mathrm{sp}}\vec e_z$. The vector current has the components $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
 
 For a **spacetime** symmetry, translation invariance gives the four-momentum
 

@@ -146,20 +146,20 @@ The structure is the algebraic form of a **light ray**:
 On the material slice, the massless momentum is
 
 $$
-\tilde P=i\frac{E}{c}e_t+\frac{E}{c}\,\hat p,
+\tilde P=i\frac{E}{c}e_t+\frac{E}{c}\,\vec u_p,
 \qquad
 B=\frac{E}{c},
 \qquad
 N=0,
 $$
 
-with $\hat p$ a real unit vector. The idempotent is
+with $\vec u_p$ a real unit vector. The idempotent is
 
 $$
-\tilde\Pi=\frac{1}{2}\left(e_t-i\hat p\right).
+\tilde\Pi=\frac{1}{2}\left(e_t-i\vec u_p\right).
 $$
 
-The idempotent is the Hermitian rank-one projector along $\hat p$; the opposite sign belongs to the opposite null direction. The spectrum is
+The idempotent is the Hermitian rank-one projector along $\vec u_p$; the opposite sign belongs to the opposite null direction. The spectrum is
 
 $$
 \lambda_+=2i\frac{E}{c},
@@ -177,7 +177,7 @@ with the other coefficient zero.
 
 The massless limit of the Doppler pair is a limit of the eigenvalues, not a failure of the decomposition: $\lambda_-\to0$ and $\lambda_+\to2iE/c$. The cell is the boundary of the two-mode cell at $N=0$, and the limit is continuous in the element.
 
-On the material slice the idempotent is Hermitian: $\tilde\Pi=\tfrac12(e_t-i\hat p)$ satisfies $\tilde\Pi^*=\tilde\Pi$, and it is rank one and trace one. It is a pure boundary state of the informational sector: a rank-one Hermitian density matrix of zero norm. The element $\tilde P=2iE/c\,\tilde\Pi$ is anti-Hermitian, so the momentum is not a state; the state is the idempotent, and the momentum is an imaginary multiple of it.
+On the material slice the idempotent is Hermitian: $\tilde\Pi=\tfrac12(e_t-i\vec u_p)$ satisfies $\tilde\Pi^*=\tilde\Pi$, and it is rank one and trace one. It is a pure boundary state of the informational sector: a rank-one Hermitian density matrix of zero norm. The element $\tilde P=2iE/c\,\tilde\Pi$ is anti-Hermitian, so the momentum is not a state; the state is the idempotent, and the momentum is an imaginary multiple of it.
 
 ## The Zero Divisor
 

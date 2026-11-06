@@ -90,12 +90,12 @@ The external states satisfy the massive Dirac equation, and in the biquaternion 
 **The chiral pair.** It is the pair of one-sided equations of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.
+with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The two-sided form.** Read on the whole algebra rather than one-sidedly, the same physics is the single equation
 

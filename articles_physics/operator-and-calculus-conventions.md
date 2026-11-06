@@ -126,7 +126,7 @@ so the two arrays differ and neither may be substituted for the other at sight. 
 2. **A carrier without $\natural$.** On a column $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{C}^{4}$ there is no natural conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
 3. **The side itself on display.** For the two-sided action $a\tilde{Ξ}_{\mathrm{sp}} b$, the mirror coupling, or the exchange of the two slots of a cell, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
 
-**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $Ξ=\tilde{Ξ}_{\mathrm{sp}}^{\natural}$, the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $Ξ=\tilde{Ξ}_{\mathrm{sp}}^{\natural}$, the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
 
 ## Conventions for Derivation
 
@@ -539,7 +539,7 @@ with $\tilde F=\mathrm{Vect}(\tilde\nabla^{\natural}\tilde A)$ the curvature. Th
 
 ## The Pair Operator and Its Symbol
 
-**The pair.** The two first-order equations of the series, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\,\tilde{Ξ}_{\mathrm{sp},R}$, are one operator on $\mathbb{B}\oplus\mathbb{B}$. With $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ it is
+**The pair.** The two first-order equations of the series, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R}$, are one operator on $\mathbb{B}\oplus\mathbb{B}$. With $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ it is
 
 $$
 \mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
@@ -547,7 +547,7 @@ $$
 \mathbb{D}^2=\Box I ,
 $$
 
-and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$, with massless limit $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=0$. The operator is the pair written once: it carries no matrix generator, no Clifford index and no chart, and its only content is which gradient acts on which part. The mass is the off-diagonal coupling of the two parts and is the identity on $\mathbb{B}$ in each place it acts. Every component equation of the series is a **coordinate form** of that pair and not a second dynamics.
+and the massive equation is $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$, with massless limit $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=0$. The operator is the pair written once: it carries no matrix generator, no Clifford index and no chart, and its only content is which gradient acts on which part. The mass is the off-diagonal coupling of the two parts and is the identity on $\mathbb{B}$ in each place it acts. Every component equation of the series is a **coordinate form** of that pair and not a second dynamics. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **Neither gradient squares to the d'Alembertian, and their composition does.** Written as a product of elements, $\tilde\nabla^2$ is not $\Box$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive and the square is not scalar. Only the composition with the conjugate is scalar, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, and this is why the pair is the least object that carries a first-order massive equation: one gradient on one field is first order and cannot equal a second-order operator, so no one-field first-order massive equation exists in this algebra. The free equation stays first order on one field, and the mass is what needs the pair.
 
@@ -567,9 +567,9 @@ $$
 \mathbb{D}_p^2=p^2 I ,
 $$
 
-and on one element it reads $\mathbb{D}_p:\tilde X\mapsto iE\,\tilde X\vec e_x-i\sum_kp_k\,\vec e_k\tilde X\vec e_y$. The square of the element is not the scalar: $\tilde K^2$ has scalar part $E^2+\lvert\vec p\rvert^2$ and a vector part that does not cancel, and only the composition with the conjugate returns $p^2$. On the mass shell $p^2=m^2$ the symbol of $\mathbb{D}-m$ is therefore singular exactly there and nowhere else, and the two chiral slots share the one condition.
+and on one element it reads $\mathbb{D}_p:\tilde X\mapsto iE\,\tilde X\vec e_x-i\sum_kp_k\,\vec e_k\tilde X\vec e_y$. The square of the element is not the scalar: $\tilde K^2$ has scalar part $E^2+\lvert\vec p\rvert^2$ and a vector part that does not cancel, and only the composition with the conjugate returns $p^2$. On the mass shell $p^2=m^2$ the symbol of $\mathbb{D}-\lambda_m^{-1}$ is therefore singular exactly there and nowhere else, and the two chiral slots share the one condition.
 
-**The inverse is a Green matrix.** With $G$ the Green's function of the d'Alembertian, $(\Box-m^2)G=\delta$, the Green matrix of the pair is $\mathcal{S}=(\mathbb{D}+m)G$, and $(\mathbb{D}-m)\mathcal{S}=(\mathbb{D}^2-m^2)G=\delta I$. The inverse introduces no new object: the scalar mass commutes with $\mathbb{D}$, and the factorization is the algebraic identity $(\mathbb{D}-m)(\mathbb{D}+m)=\mathbb{D}^2-m^2$.
+**The inverse is a Green matrix.** With $G$ the Green's function of the d'Alembertian, $(\Box-\lambda_m^{-2})G=\delta$, the Green matrix of the pair is $\mathcal{S}=(\mathbb{D}+\lambda_m^{-1})G$, and $(\mathbb{D}-\lambda_m^{-1})\mathcal{S}=(\mathbb{D}^2-m^2)G=\delta I$. The inverse introduces no new object: the scalar mass commutes with $\mathbb{D}$, and the factorization is the algebraic identity $(\mathbb{D}-\lambda_m^{-1})(\mathbb{D}+\lambda_m^{-1})=\mathbb{D}^2-m^2$.
 
 **The glyph and its marks.** The glyph is $\mathbb{D}$, and it takes a mark for the factor and never for the chart. A subscript names the factor when that factor is not the material gradient — $\mathbb{D}_p$ for the constant momentum covector, which is the symbol — and an element in parentheses is an argument, $\mathbb{D}(\tilde K)$, because a letter on the right without parentheses, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}$, is the field acted on. The gradient follows the same rule: $\tilde\nabla$ bare, $\natural$ or a sector label only where a second gradient is in play. The pair is never written $\mathbb{D}_{\mathbb{B}_{\Phi}}$ or $\mathbb{D}^{\natural}$; the sector enters through the coordinate, and the conjugate of the pair is the pair with its two gradients exchanged.
 
@@ -599,15 +599,15 @@ $$
 
 **With a connection nothing changes.** The components of $\tilde\nabla_{\mathrm{gco}}$ are central scalars, so the same term-by-term computation gives $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla_{\mathrm{gco}}}\bigr)^{\natural}=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde Q_1^{\natural}$, at the same residual, with $\natural$ again fixing the coefficients and reading the units alone.
 
-**The instance that hides the generality.** The chiral pair is the case usually quoted. From $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, transposing with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $m^{\natural}=m$,
+**The instance that hides the generality.** The chiral pair is the case usually quoted. From $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, transposing with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $m^{\natural}=m$,
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\,\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\Longrightarrow\qquad
-\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\overleftarrow{\tilde\nabla}=m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural},
+\tilde{Ξ}_{\mathrm{sp},L}^{\natural}\overleftarrow{\tilde\nabla}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural},
 $$
 
-one line, with the derivative now written to the right of $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and the same mass in place. Read alone, the pair suggests that the right action is a property of the Dirac equation. It is not: the two lines hold of $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ as well, of a massless field, and of any equation in which one field stands to the right of a derivative. The equation supplies the right-hand side; the identity does not depend on it.
+one line, with the derivative now written to the right of $\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and the same mass in place. Read alone, the pair suggests that the right action is a property of the Dirac equation. It is not: the two lines hold of $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ as well, of a massless field, and of any equation in which one field stands to the right of a derivative. The equation supplies the right-hand side; the identity does not depend on it.
 
 **Why the superscript $R$ is nevertheless written.** The identity holds for a field, and a product of fields is a field. What it does not do is move the derivative off one factor of a product while the other stays. On $\tilde Q_1\tilde Q_2$ the Leibniz rule gives
 

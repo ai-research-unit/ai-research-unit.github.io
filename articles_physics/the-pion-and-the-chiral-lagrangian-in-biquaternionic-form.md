@@ -271,12 +271,12 @@ $$
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays.
+one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 In the isospin limit the divergence is the mass bilinear,
 
@@ -436,7 +436,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame cell of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the volume cell, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |

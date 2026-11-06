@@ -172,10 +172,10 @@ The fourth factor of the word, $\tilde u_{\mathrm r}$, is a rotation and not a b
 
 ### The Four-Momentum
 
-Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\hat p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then
+Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then
 
 $$
-\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}_{\mathrm{sp}}\hat p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}_{\mathrm{sp}},\qquad \vec U=\hat p,
+\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}_{\mathrm{sp}}\vec u_p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}_{\mathrm{sp}},\qquad \vec U=\vec u_p,
 $$
 
 with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are
@@ -184,9 +184,9 @@ $$
 \lambda_\pm=Q_t\pm iB=imc\,e^{\pm\tilde{Ξ}_{\mathrm{sp}}}=\Rho\,e^{\pm i\Theta}.
 $$
 
-The word's parameter here is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\hat p$. The frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\hat p$.
+The word's parameter here is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\vec u_p$. The frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\vec u_p$.
 
-**Three errors to avoid.** Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\hat p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\hat p$.
+**Three errors to avoid.** Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$.
 
 ### The Trace and the Normalised State
 
@@ -236,7 +236,7 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | The biquaternion norm, the multiplicative one; its zero set is the zero-divisor cone |
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | The Hermitian norm, real and non-negative |
 | $Ξ$-regular, $Ξ$-degenerate | $Ξ(\tilde Q)\neq0$ and $Ξ(\tilde Q)=0$; only the $N$ pair is the unit partition |
-| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, $\vec U=\hat p$, $B=\lvert\vec p\rvert$ for a four-momentum |
+| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\mathrm b}$, $\mathcal B$ | The frame rotor and the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ |
 | $\operatorname{Tr}\tilde Q=2Q_t$ | The trace of the $2\times2$ image; a normalised state has trace one |

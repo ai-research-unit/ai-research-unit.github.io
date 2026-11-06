@@ -172,10 +172,10 @@ The equation is first order in the time derivative, so the deviation is fixed by
 **The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box$,
 
 $$
-\Box\,\tilde{Ξ}_{\mathrm{sp}}=D^{2}\tilde{Ξ}_{\mathrm{sp}}=m\,D\,\tilde{Ξ}_{\mathrm{sp}}^c=m^{2}\,\tilde{Ξ}_{\mathrm{sp}} ,
+\Box\,\tilde{Ξ}_{\mathrm{sp}}=D^{2}\tilde{Ξ}_{\mathrm{sp}}=m\,D\,\tilde{Ξ}_{\mathrm{sp}}^c=\lambda_m^{-2}\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-so a plane wave of the field sits on $p^{2}=m^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$.
+so a plane wave of the field sits on $p^{2}=m^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **No single mode is self-conjugate.** At fixed momentum the equation reads $D_p u=m\,\mathcal{C}u$, and $\mathcal{C}$ anticommutes with $D_p$, so it carries the kernel of $D_p-m$ to the kernel of $D_p+m$. A solution of definite frequency therefore has a conjugate of the opposite frequency, and no one mode is its own conjugate. The self-conjugate field is a pair of opposite frequencies, one amplitude at $p$ and its conjugate at $-p$, and each amplitude solves its own equation. That is the standard statement that the charge conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the condition does not quantise the theory into nothing.
 

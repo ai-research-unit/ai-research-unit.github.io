@@ -72,12 +72,12 @@ The square of the operator is not scalar either. What is scalar is the compositi
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The square root of the d'Alembertian is the pair operator $\mathbb{D}$ of *Operator and Calculus Conventions*, with $\mathbb{D}^2=\Box I$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form.
+and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The square root of the d'Alembertian is the pair operator $\mathbb{D}$ of *Operator and Calculus Conventions*, with $\mathbb{D}^2=\Box I$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
 

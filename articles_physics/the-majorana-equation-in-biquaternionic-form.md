@@ -159,7 +159,7 @@ sixteen real equations in the sixteen real parameters of the two amplitudes. The
 
 **The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is free and the conjugate amplitude $\tilde{Ξ}_{\mathrm{sp},1}$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
 
-**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table.
+**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **What the pair is not.** The pair is not a second equation. The two lines are the two exponentials of one equation, and a reader who counts them as two fields counts the field and its conjugate twice.
 

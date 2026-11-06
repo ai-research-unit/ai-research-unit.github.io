@@ -15,7 +15,7 @@ The article is organised as follows. The next section recalls the standard pictu
 The dynamics in the algebra is the pair of the parent,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}
 $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
@@ -68,8 +68,8 @@ The biquaternionic Dirac equation is the parent's linear pair, off-diagonal in t
 
 $$
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} &= m\tilde{Ξ}_{\mathrm{sp},L},\\[2pt]
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} &= \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\\[2pt]
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 

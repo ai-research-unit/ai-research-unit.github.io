@@ -61,7 +61,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\big\r
 \qquad\text{equivalently}\qquad
 W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\langle\tilde J(-k),\tilde J(k)\rangle}{\tilde P\tilde P^{\natural}+m^2},
 $$
-using the wave biquaternion $\tilde P=iEe_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$; the action's operator is $K_{\mathrm{kin}}=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $K_{\mathrm{kin}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$, as before.
+using the wave biquaternion $\tilde P=iEe_t+\vec p$ and $\tilde P\tilde P^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box-\lambda_m^{-2}$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$; the action's operator is $K_{\mathrm{kin}}=\Box-\lambda_m^{-2}$, whose symbol is $-\mathcal{M}$, so the kernel of $K_{\mathrm{kin}}{}^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$, as before. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -150,7 +150,7 @@ At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\lo
 
 **The factorized one-loop structure.** For the free biquaternion scalar the one-loop effective action is the sum
 $$
-\Gamma_1 = \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{B}_{\Phi}} + \frac12\mathrm{Tr}\log\big(-\Box+m^2\big)\Big|_{\mathbb{B}_{\Psi}} ,
+\Gamma_1 = \frac12\mathrm{Tr}\log\big(-\Box-\lambda_m^{-2}\big)\Big|_{\mathbb{B}_{\Phi}} + \frac12\mathrm{Tr}\log\big(-\Box-\lambda_m^{-2}\big)\Big|_{\mathbb{B}_{\Psi}} ,
 $$
 and, because the two sectors are isomorphic as real vector spaces and the operator is the same central scalar, the two terms are equal. The two sectors are not independent field copies — they are related by multiplication by the central $i$, $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$ — so this is a component count and not a doubling of the field content; the same caution applies as in *The Functional Integral in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*.
 
@@ -241,7 +241,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},K_{\mathrm{kin}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $K_{\mathrm{kin}}=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,K_{\mathrm{kin}}{}^{-1}\tilde J\rangle$ and $\Gamma[\tilde{Ξ}_{\mathrm{cl}}]=\tfrac12\langle\tilde{Ξ}_{\mathrm{cl}},K_{\mathrm{kin}}\tilde{Ξ}_{\mathrm{cl}}\rangle$, with $K_{\mathrm{kin}}=\Box-\lambda_m^{-2}$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde{Ξ}_{\mathrm{cl}}\rangle$ at $\tilde{Ξ}_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point $\tilde{Ξ}_{\mathrm{cl}}=0$; in a one-mode truncation the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$, the field-theoretic counterpart of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
@@ -264,7 +264,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $\Gamma=\Gamma_-+\Gamma_+$ | Sector factorization for a central (sector-diagonal) action |
 | $V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}})=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde{Ξ}_{\mathrm{cl}}=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde{Ξ}^{2}_{\mathrm{cl}}\ge0$ | Vacuum condition; stability (convexity) |
-| $K_{\mathrm{kin}}=\Box-m^2$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Central kinetic operator |
+| $K_{\mathrm{kin}}=\Box-\lambda_m^{-2}$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Central kinetic operator |
 | $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading

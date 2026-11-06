@@ -141,12 +141,12 @@ The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass biline
 **The mass term is the linear pair.** The framework's **mass term** is the linear chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*.
+through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ## The Three Gauge Factors
 
@@ -382,7 +382,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | every $\mathbb{B}$-module | complex dimension $2k$; a three-dimensional internal space is not a module |
 | $-iR_{\mathrm{axf},\vec e_z}$ | The volume cell of the frame: a pure right multiplication, and the source of the two values of the subscript |
 | $B=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; selection rule $ϙ_L=ϙ_R$ |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |

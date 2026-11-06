@@ -9,8 +9,10 @@ Natural units $\hbar=c=1$ are used throughout, so the four-momentum is $\tilde P
 The dynamics is the one-sided chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two values of the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
 
@@ -26,7 +28,7 @@ $$
 \mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z .
 $$
 
-That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ with $\mathcal{N}F=0$ reads the second field as $\tilde{Ξ}_{\mathrm{sp},R}=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The change of variable is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
+That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ with $\mathcal{N}F=0$ reads the second field as $\tilde{Ξ}_{\mathrm{sp},R}=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The change of variable is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
 
 Everything below is written for the one-sided pair, whose plane-wave solutions are elements of $\mathbb{B}$: the element $\tilde{Ξ}_{\mathrm{sp}}$, split by the subscript into its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and no second carrier is introduced to hold them.
 
@@ -324,14 +326,14 @@ It matters that $S_F$ is a distribution, and not only because the statement is t
 The two-point action of the chiral pair satisfies
 
 $$
-(\mathbb{D}-m)\,S_F=i\,\delta^{(4)}(x-y),
+(\mathbb{D}-\lambda_m^{-1})\,S_F=i\,\delta^{(4)}(x-y),
 \qquad
-S_F=(\mathbb{D}+m)\,G_F,
+S_F=(\mathbb{D}+\lambda_m^{-1})\,G_F,
 \qquad
-(\Box-m^2)\,G_F=i\,\delta^{(4)},
+(\Box-\lambda_m^{-2})\,G_F=i\,\delta^{(4)},
 $$
 
-in the distributional sense, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, acting on the value of the action. The pair operator and the momentum action are two writings of one first-order symbol, the first on pairs of values of the subscript and the second by the four cell actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. The overall factor is a normalization: the conventions article writes $\mathcal{S}=(\mathbb{D}+m)G$ with $(\mathbb{D}-m)\mathcal{S}=\delta I$ and $(\Box-m^2)G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
+in the distributional sense, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, acting on the value of the action. The pair operator and the momentum action are two writings of one first-order symbol, the first on pairs of values of the subscript and the second by the four cell actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. The overall factor is a normalization: the conventions article writes $\mathcal{S}=(\mathbb{D}+\lambda_m^{-1})G$ with $(\mathbb{D}-\lambda_m^{-1})\mathcal{S}=\delta I$ and $(\Box-\lambda_m^{-2})G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
 
 This is the sharpest way to see why the question "does the algebra supply the $i\epsilon$?" cannot be answered by finding an $i$ in the algebra. The equation of motion supplies a differential operator, and a differential operator has many distributional inverses; the algebra supplies the operator $\tilde{\nabla}$ (or its second-order companion $\tilde{\nabla}\tilde{\nabla}^{\natural}$) and hence the same many inverses. Distinguishing the Feynman one requires a condition that is not an equation of motion. The complex structure enters when that condition is *represented* — as a contour in $\mathbb{B}_{C}$, or as a point in the complexified time plane — and not when it is *chosen*.
 
@@ -343,7 +345,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point actions $W_+$ and $W_-$ and their numerators; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(\mathbb{D}-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
+**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point actions $W_+$ and $W_-$ and their numerators; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(\mathbb{D}-\lambda_m^{-1})S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 
 **What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde P\tilde P^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and a place for the added term in the centre $\mathbb{B}_{C}$, along the $i c r'_t$ axis of the material sector $\mathbb{B}_{\Phi}$ — a place, not a necessity, for the reason recorded above.
 

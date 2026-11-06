@@ -121,16 +121,16 @@ $$
 \boxed{\;\tilde P=\Rho e^{\vec U\Theta}\;},
 $$
 
-with the data of *Norm and Pairing Conventions*, §*The Four-Momentum*: $\Rho=imc$, $\vec U=\hat p$ and $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, where $\hat p=\vec p/\lvert\vec p\rvert$ for $\vec p\neq0$; at rest the direction drops out, because $\sinh\theta_{\mathrm{rpd}}=0$ there. Since $\hat p^2=-e_t$ while $(\hat p,\hat p)=1$, the exponential is trigonometric,
+with the data of *Norm and Pairing Conventions*, §*The Four-Momentum*: $\Rho=imc$, $\vec U=\vec u_p$ and $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, where $\vec u_p=\vec p/\lvert\vec p\rvert$ for $\vec p\neq0$; at rest the direction drops out, because $\sinh\theta_{\mathrm{rpd}}=0$ there. Since $\vec u_p^2=-e_t$ while $(\vec u_p,\vec u_p)=1$, the exponential is trigonometric,
 
 $$
-\exp(\hat p\Theta)=\cos\Theta+\hat p\sin\Theta ,
+\exp(\vec u_p\Theta)=\cos\Theta+\vec u_p\sin\Theta ,
 $$
 
-and the imaginary angle $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$ turns it into $\cosh\theta_{\mathrm{rpd}}-i\hat p\sinh\theta_{\mathrm{rpd}}$. Multiplying by $\Rho=imc$ and reducing $i^2=-1$,
+and the imaginary angle $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$ turns it into $\cosh\theta_{\mathrm{rpd}}-i\vec u_p\sinh\theta_{\mathrm{rpd}}$. Multiplying by $\Rho=imc$ and reducing $i^2=-1$,
 
 $$
-\tilde P=imc\cosh\theta_{\mathrm{rpd}}+mc\,\hat p\sinh\theta_{\mathrm{rpd}} .
+\tilde P=imc\cosh\theta_{\mathrm{rpd}}+mc\,\vec u_p\sinh\theta_{\mathrm{rpd}} .
 $$
 
 The mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the union of the two sheets of the shell, the two orbits of the restricted Lorentz group: the orbit of $\Rho e^{\vec U\Theta}$ and the orbit of its central negative. Every point of the shell has the same $\lvert\Rho\rvert$ and its own pair $(\vec U,\Theta)$: the same modulus, a different direction and rapidity.
@@ -190,7 +190,7 @@ $$
 
 The two mass-squareds of the doublet are the eigenvalues of $\tilde E\tilde E^{*}$, equivalently of $\tilde E^{*}\tilde E$ for the nonzero spectrum. The mass is no longer a number multiplying the field; it is the element $\tilde E\tilde E^{*}$ multiplying the field from the right.
 
-Three cases show the range the corpus uses. A real scalar $\tilde E=s e_t$ gives $\tilde E\tilde E^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E=\tfrac12(e_t+i\hat n)$ with $\hat n$ a real vector of unit square, gives $\tilde E\tilde E^{*}=\tilde E$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E\rangle_{\natural}\bigr|^2$, because the natural norm is multiplicative and $\langle\tilde E^{*}\rangle_{\natural}=\overline{\langle\tilde E\rangle_{\natural}}$, and for the Hermitian element $\tilde E\tilde E^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
+Three cases show the range the corpus uses. A real scalar $\tilde E=s e_t$ gives $\tilde E\tilde E^{*}=s^2e_t$, a degenerate doublet of mass $|s|$. A Hermitian mass field of unit square, $\tilde E=\tfrac12(e_t+i\vec u_n)$ with $\vec u_n$ a real vector of unit square, gives $\tilde E\tilde E^{*}=\tilde E$, with eigenvalues $1$ and $0$: one massive mode and one massless mode. A singular mass field leaves a massless mode whatever else it does: the two mass-squareds multiply to $\bigl|\langle\tilde E\rangle_{\natural}\bigr|^2$, because the natural norm is multiplicative and $\langle\tilde E^{*}\rangle_{\natural}=\overline{\langle\tilde E\rangle_{\natural}}$, and for the Hermitian element $\tilde E\tilde E^{*}$ that product is the product of its two eigenvalues; a vanishing norm therefore forces a zero eigenvalue. The example $\tilde E=\vec e_x+i\vec e_y$ is singular, with mass-squareds $4$ and $0$. A general mass field gives two distinct nonzero mass-squareds; the three cases above do not.
 
 **The boundary.** The framework derives no numerical mass. The algebra is scale-free, and the mass field is put in by hand in the Einstein–Mayer system; the Petiau system closes it by giving the mass field its own equation, at the cost of nonlinearity. The construction shows that the algebra can carry a mass that is a field with its own equation, and that the mass-squareds of a doublet are the eigenvalues of the element $\tilde E\tilde E^{*}$. It does not produce the electron mass or any other.
 
@@ -199,11 +199,11 @@ Three cases show the range the corpus uses. A real scalar $\tilde E=s e_t$ gives
 The corpus carries two first-order writings, and the condensate is a bilinear of the second. The **gradient equation** is the one-sided chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $i\tilde P\,\lambda_p^{-1}$, so the mass shell above is the level set of $\langle\tilde P\rangle_{\natural}$. Here $\lambda_p=\hbar/p$ is the momentum length.
+with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $i\tilde P\,\lambda_p^{-1}$, so the mass shell above is the level set of $\langle\tilde P\rangle_{\natural}$. Here $\lambda_p=\hbar/p$ is the momentum length. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The **pair equation** is the same dynamics written once on the pair of fields,
 
@@ -314,7 +314,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\langle\tilde Q\rangle_{\natural}$ | the natural norm of *Norm and Pairing Conventions* |
 | $\tilde P$ | a material four-momentum |
 | $(\vec v,\vec v)$ | the vector-part square $v_x^2+v_y^2+v_z^2$; the element $\vec v$ squares to $-(\vec v,\vec v)e_t$ |
-| $\hat p$ | the direction of $\vec p$, $\hat p=\vec p/\lvert\vec p\rvert$ |
+| $\vec u_p$ | the direction of $\vec p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ |
 | $\mathbb{B}_{\Phi}$ | the material sector, the anti-Hermitian subspace |
 | $\mathbb{B}_{\Psi}$ | the informational sector, the Hermitian subspace |
 | $\tilde E$ | the mass field, a biquaternion |

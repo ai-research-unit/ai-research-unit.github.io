@@ -322,8 +322,8 @@ by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempoten
 **The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
@@ -339,6 +339,8 @@ with the derivative acting from the left, the bar the antilinear entry, and $\ve
 $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\,\vec e_z\right),
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of *The Dirac Equation in Biquaternionic Form*. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.
 
@@ -390,7 +392,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Legacy Pauli Gamma Formulation*: letters for the cells, used in that section only |
 | $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial r'_t+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 
 ## Further Reading

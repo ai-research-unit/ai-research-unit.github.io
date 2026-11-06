@@ -69,8 +69,8 @@ $$
 This is the KGFSh operator the d'Alembertian article owns, and it is where the programme and the corpus part company in a way worth naming. The corpus's Dirac pair is chirality off-diagonal,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L} , \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} , \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad\Longrightarrow\qquad
 \bigl(\Box - \lambda_m^{-2}\bigr)\tilde{Ξ}_{\mathrm{sp},R,L} = 0 ,
 $$
@@ -221,33 +221,33 @@ The source's most quotable result is about the amplitude of the plane-wave bispi
 
 $$
 \begin{aligned}
-\bigl(\nabla^\pm + i\rho\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} &= \mp\,|\vec\zeta|\,\bigl(i + \hat\zeta\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} ,\\[2pt]
-\bigl(\nabla^\pm + i\rho\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\mp} &= \pm\,|\vec\zeta|\,\bigl(i - \hat\zeta\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\mp} ,
+\bigl(\nabla^\pm + i\rho\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} &= \mp\,|\vec\zeta|\,\bigl(i + \vec u_\zeta\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} ,\\[2pt]
+\bigl(\nabla^\pm + i\rho\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\mp} &= \pm\,|\vec\zeta|\,\bigl(i - \vec u_\zeta\bigr)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\mp} ,
 \end{aligned}
-\qquad \hat\zeta = \vec\zeta/|\vec\zeta| ,
+\qquad \vec u_\zeta = \vec\zeta/|\vec\zeta| ,
 $$
 
-the two signs being independent, each line carrying one sign throughout: the sign in $\nabla$ is the sign in the bracket, and the branch label on $\tilde{Ξ}_{\mathrm{sp}}$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\zeta|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\zeta|\,i\tilde\Pi_2(\hat\zeta)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\hat\zeta)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\zeta|\,i\tilde\Pi_1(\hat\zeta)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
+the two signs being independent, each line carrying one sign throughout: the sign in $\nabla$ is the sign in the bracket, and the branch label on $\tilde{Ξ}_{\mathrm{sp}}$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\zeta|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\zeta|\,i\tilde\Pi_2(\vec u_\zeta)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\vec u_\zeta)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\zeta|\,i\tilde\Pi_1(\vec u_\zeta)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
 
 $$
-S^{\pm}_{\vec\zeta} = \tfrac{1}{2}\bigl(i + \hat\zeta\bigr)\,\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} ,
+S^{\pm}_{\vec\zeta} = \tfrac{1}{2}\bigl(i + \vec u_\zeta\bigr)\,\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} ,
 $$
 
 and the identification is exact and worth writing without a factor of $i$ out of place:
 
 $$
 \boxed{\;
-\tfrac{1}{2}\bigl(i + \hat\zeta\bigr) = i\,\tilde{\Pi}_2(\hat\zeta) ,
+\tfrac{1}{2}\bigl(i + \vec u_\zeta\bigr) = i\,\tilde{\Pi}_2(\vec u_\zeta) ,
 \qquad
 \tilde{\Pi}_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr)\;},
 $$
 
-where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent, the **pure state** of the informational sector, and $\vec u$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_t$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \hat\zeta) = i\tilde{\Pi}_2(\hat\zeta)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
+where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent, the **pure state** of the informational sector, and $\vec u$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_t$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \vec u_\zeta) = i\tilde{\Pi}_2(\vec u_\zeta)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
 
-1. **The harmonic bispinor lies in a Peirce carrier, a minimal left ideal here.** Since $S = i\tilde{\Pi}_2(\hat\zeta)\tilde{Ξ}_{\mathrm{sp}}$ and the phase $i\tilde{Ξ}_{\mathrm{sp}}$ is central, $S \in \mathbb{B}\tilde{\Pi}_2(\hat\zeta)$: checked as $S\tilde{\Pi}_2 = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
+1. **The harmonic bispinor lies in a Peirce carrier, a minimal left ideal here.** Since $S = i\tilde{\Pi}_2(\vec u_\zeta)\tilde{Ξ}_{\mathrm{sp}}$ and the phase $i\tilde{Ξ}_{\mathrm{sp}}$ is central, $S \in \mathbb{B}\tilde{\Pi}_2(\vec u_\zeta)$: checked as $S\tilde{\Pi}_2 = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
 2. **The amplitude is in the material sector.** $\tilde{\Pi}_2$ is Hermitian, $\tilde{\Pi}_2^{*} = \tilde{\Pi}_2$, hence in $\mathbb{B}_{\Psi}$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{B}_{\Phi}$, the material sector — which is the statement $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
-3. **The harmonic bispinor is $N$-degenerate.** With the corpus's norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$, $\langle S\rangle_{\natural} = \tfrac14(i^2) + \tfrac14|\hat\zeta|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either interpretation the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
-4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \hat\zeta)\,\tilde{Ξ}_{\mathrm{sp}} = \sqrt2\,i\,\tilde{\Pi}_2(\hat\zeta)\,\tilde{Ξ}_{\mathrm{sp}}$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
+3. **The harmonic bispinor is $N$-degenerate.** With the corpus's norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$, $\langle S\rangle_{\natural} = \tfrac14(i^2) + \tfrac14|\vec u_\zeta|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either interpretation the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
+4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \vec u_\zeta)\,\tilde{Ξ}_{\mathrm{sp}} = \sqrt2\,i\,\tilde{\Pi}_2(\vec u_\zeta)\,\tilde{Ξ}_{\mathrm{sp}}$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
 5. **The stationary family has the same structure.** For $B = B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega\tau)$ the source sets $\nabla^\pm_\omega = \omega \pm \nabla$ and obtains the $\omega$-spinors
 
 $$
@@ -280,7 +280,7 @@ Established, and verified above by recomputation.
 2. The exponential-substitution identity, hence the fundamental solution of the KGFSh operator as $\exp(-m\tau)$ times the wave kernel, hence the **sharp, light-cone-supported kernel** with a $\delta$ profile — the source's Eq. (36), with the correction that both light-cone terms carry the common factor $\exp(-m\tau)$ and the advanced term therefore carries $\exp(+mR)$.
 3. The general solution of the inhomogeneous equation, $B = B_0 + (\nabla^\mp + m)(F * \tilde{Ξ}_{\mathrm{sp},m})$, by the defining property of the kernel, with $B_0$ in the kernel of the first-order operator $(\nabla^\pm + m)$ — a space populated in both cases the programme treats, by plane waves on the shifted cone and by the singular solutions of the real-mass case, so that it is not the trivial space of the class question.
 4. The monogenic completion of a scalar potential into a bispinor, and the exact plane-wave family: the linear dispersion $\omega = \rho \pm |\vec\zeta|$, unit group velocity, phase velocities $1 \pm \rho/|\vec\zeta|$, and the stationary mode $\omega = 0$ at $|\vec\zeta| = \rho$.
-5. The nullity of the harmonic bispinor's amplitude; its identity with $i\tilde{\Pi}_2(\hat\zeta)$; its membership in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, a minimal left ideal here; and its placement in the material sector $\mathbb{B}_{\Phi}$.
+5. The nullity of the harmonic bispinor's amplitude; its identity with $i\tilde{\Pi}_2(\vec u_\zeta)$; its membership in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, a minimal left ideal here; and its placement in the material sector $\mathbb{B}_{\Phi}$.
 6. The stationary route, the Helmholtz kernel with its exponent restored, and the $\omega$-spinors with the same null amplitude.
 
 Not established, or corrected in the source.
@@ -297,7 +297,7 @@ The immediate problem is set by the companion article. *The Biquaternion D'Alemb
 
 The operator's square, $(\nabla^\mp+m)(\nabla^\pm+m) = (\partial/\partial\tau+m)^2-\Delta$, is a conjugation of the wave operator, $\exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$. That single identity gives everything in this article. It makes the fundamental solution $\exp(-m\tau)$ times the massless kernel, hence supported exactly on the light cone with a $\delta$ profile where the corpus's massive scalar kernel carries a Bessel tail inside the cone: the programme's first-order term buys Huygens' principle at the price of self-adjointness. It makes the general solution of the homogeneous equation $\exp(-m\tau)$ times an arbitrary wave, which is why the source's theorem that no non-trivial homogeneous solution exists for $\operatorname{Re}m \neq 0$ holds only in the tempered class, and why the counterexample is one line. And it makes the plane-wave family's dispersion exactly linear, $\omega = \rho \pm |\vec\zeta|$: a shifted cone, not a curved mass shell, with unit group velocity, phase velocities $1 \pm \rho/|\vec\zeta|$ and a stationary mode at $|\vec\zeta| = \rho$.
 
-The bispinors carry the algebra's own content. The amplitude of a plane-wave bispinor is $\tfrac12(i+\hat\zeta)$, which is $i\tilde{\Pi}_2(\hat\zeta)$, the central phase times one of the corpus's rank-one Hermitian idempotents — a pure state of the informational sector. So the programme's harmonic bispinor lies in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, which is the minimal left ideal here; it is anti-Hermitian and therefore in the material sector $\mathbb{B}_{\Phi}$, and it is null, hence a zero divisor, under the corpus's norm and under the source's pseudonorm alike. A bispinor of a "massive" first-order equation is an element of the null cone: that, and not the borrowed words *boson* and *lepton*, is what the algebra says. The normalisation the source states is off by $\sqrt2$, the static amplitude it prints does not follow from its own formula, and the exponent of its Helmholtz kernel has lost an $i$; the corpus records the corrections and keeps the structure.
+The bispinors carry the algebra's own content. The amplitude of a plane-wave bispinor is $\tfrac12(i+\vec u_\zeta)$, which is $i\tilde{\Pi}_2(\vec u_\zeta)$, the central phase times one of the corpus's rank-one Hermitian idempotents — a pure state of the informational sector. So the programme's harmonic bispinor lies in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, which is the minimal left ideal here; it is anti-Hermitian and therefore in the material sector $\mathbb{B}_{\Phi}$, and it is null, hence a zero divisor, under the corpus's norm and under the source's pseudonorm alike. A bispinor of a "massive" first-order equation is an element of the null cone: that, and not the borrowed words *boson* and *lepton*, is what the algebra says. The normalisation the source states is off by $\sqrt2$, the static amplitude it prints does not follow from its own formula, and the exponent of its Helmholtz kernel has lost an $i$; the corpus records the corrections and keeps the structure.
 
 ## Summary of Notation
 
@@ -312,7 +312,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 | $B = B_0 + (\nabla^\mp+m)(F*\tilde{Ξ}_{\mathrm{sp},m})$ | General solution of the inhomogeneous equation, $B_0$ solving the first-order equation |
 | $\tilde{Ξ}_{\mathrm{sp},\rho} = (\nabla^\mp + i\rho)\tilde{Ξ}_{\mathrm{sp},\rho}$ | Bispinor of the scalar potential $\tilde{Ξ}_{\mathrm{sp},\rho}$ (monogenic completion) |
 | $\omega = \rho \pm\lvert\vec\zeta\rvert$ | Exact linear dispersion of the plane-wave family; unit group velocity |
-| $S^{\pm}_{\vec\zeta} = \tfrac12(i+\hat\zeta)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} = i\tilde{\Pi}_2(\hat\zeta)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{B}_{\Phi}$ |
+| $S^{\pm}_{\vec\zeta} = \tfrac12(i+\vec u_\zeta)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm} = i\tilde{\Pi}_2(\vec u_\zeta)\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | The corpus's idempotents: pure states, Hermitian, null |
 | $D_j$, $j=0,\dots,3$ | The source's $4\times4$ matrices: $D_0=I$, $D_j$ the matrix of left multiplication by $ie_j$; $D_j^2=I$ |
 | $\nabla^\pm_\omega = \omega \pm \nabla$, $k = \omega+\rho$ | Stationary (monochromatic) operators and wave number |

@@ -259,7 +259,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 | Result | Content |
 |---|---|
 | Maxwell's equations | The four collapse into one, $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, with the field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, of vanishing scalar part and mixed real and imaginary vector part, so it lies in neither sector |
-| The Klein–Gordon and Dirac equations | The two relativistic wave equations are the one factorisation $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$: the Dirac pair $\mathcal{D}_{\mp}$ is the first-order factor, a $2\times2$ matrix of gradients with $\mathcal{D}_{-}\mathcal{D}_{+} = (\Box - m^{2})I$, and the mass is the term that splits the massive case from the massless one |
+| The Klein–Gordon and Dirac equations | The two relativistic wave equations are the one factorisation $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$: the Dirac pair $\mathcal{D}_{\mp}$ is the first-order factor, a $2\times2$ matrix of gradients with $\mathcal{D}_{-}\mathcal{D}_{+} = (\Box-\lambda_m^{-2})I$, and the mass is the term that splits the massive case from the massless one |
 | The interval and its group | $\langle i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} = -c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; **the unit-norm elements are $SL(2,\mathbb{C})$ acting by $\Gamma$**, the double cover of the Lorentz group |
 | The light cone | $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone; its nonzero points are the zero divisors of $\mathbb{B}$ |
 | The state module | Left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi},\tilde\Upsilon\}$, Gram matrix $\tfrac12I_2$, amplitudes add |
@@ -268,6 +268,8 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 | The entropy is the biquaternion norm | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)$, so the von Neumann entropy is a function of the biquaternion norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the $*$-unitary group that acts on states, and it is a complete invariant of that orbit |
 | Spin one is the adjoint action | The inner derivations of $\mathbb{B}$, the maps $X\mapsto[\tilde{Q},X]$, acting on the vector part of $\mathbb{B}_{\Phi}$ span the three-dimensional spin-one representation, with quadratic Casimir $2 = s(s+1)$ at $s = 1$, and its weight basis is the polarisation triad of a massive vector; the identification with polarisation is an interpretation, not a theorem |
 | The invariant and the normalised concurrence | The antisymmetric bilinear pairing of two spinors is exactly invariant under a boost, because the boost acts on each spinor with unit determinant. The frame dependence of entanglement enters only through the normalisation, so it appears only when the momentum is spread: the boost changes the norm that normalises the state, and not the invariant pairing |
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ### In mathematics
 

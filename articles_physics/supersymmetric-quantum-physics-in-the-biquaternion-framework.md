@@ -25,8 +25,10 @@ The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec 
 The equation under study is the chiral pair that the corpus states as its dynamics (*Operator and Calculus Conventions*, §*The Dynamics*), printed once because the whole article is a reading of it:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The pair operator that writes it once is $\mathbb{D}$, of the same article, with $\mathbb{D}^2=\Box$, and the article uses the pair and the operator as that article fixes them. At $m=0$ the pair decouples into one equation per value, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
@@ -98,7 +100,7 @@ The dictionary is not an analogy imposed from outside; it is the statement that 
 Two formulations carry the name *Dirac equation*, and the supersymmetry above is read from the first. The **one-sided** form is the chiral pair written with both gradients on the left,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\text{(one-sided)},
 $$
 
@@ -113,7 +115,7 @@ the right multiplier $\vec e_z$ carrying the cell of the two values and the conj
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ |
+| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by the gradient, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R} \in \mathbb{B}$ | $F\in\mathbb{B}$ |
 | Mass | the pairing of the two values | the right multiplication by $\vec e_z$, applied to the conjugate field |
@@ -316,7 +318,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $\tilde{\nabla}$ | Biquaternionic gradient (the supercharge) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient; $(\tilde\nabla)^{\dagger}=-\tilde\nabla^{\natural}$ |
 | $\Box$ | The d'Alembertian of the series (the Hamiltonian), the square of the gradient |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
 | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ | Two-sided equation |
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |

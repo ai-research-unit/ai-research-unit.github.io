@@ -12,7 +12,7 @@ This article is a first attempt at that extension. Its subject is the canonical 
 
 The article has to be read with a clear division in mind, and we state it at the outset because it governs everything that follows.
 
-- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the single equation $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$ on the element, where $\mathbb{D}$ is the pair operator of *Operator and Calculus Conventions*, defined on $\mathbb{B}\oplus\mathbb{B}$ by the gradient and its conjugate. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
+- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the single equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$ on the element, where $\mathbb{D}$ is the pair operator of *Operator and Calculus Conventions*, defined on $\mathbb{B}\oplus\mathbb{B}$ by the gradient and its conjugate. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
 - **The open part.** What is *not* standard, and what this article cannot settle, is the intrinsic formulation of the quantization in the algebra $\mathbb{B}$ itself: which pairing of the algebra the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are built from, since the algebra alone does not single one out; what the biquaternion Fock space is; and how the $\mathbb{Z}/2$ grading required by fermionic statistics is to be embedded in $\mathbb{B}$.
 
 We therefore make no claim that the extension is canonical in the biquaternion framework. The claim is narrower: the extension can be carried out on the elements of $\mathbb{B}$ with the parent article's solutions, and it supplies exactly the operator structure — anticommuting modes and a fermion-parity grading — that the KMS article identifies as missing. Whether that structure lifts to a genuinely biquaternionic one is the open question this article is meant to expose.
@@ -28,8 +28,8 @@ Every derivative of the field in this article is the corpus gradient $\tilde\nab
 The biquaternion Dirac field of the companion article is an element-valued map $\tilde{Ξ}_{\mathrm{sp}}:\mathbb{R}^{1,3}\to\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ for its two chiral halves, and satisfying the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of the element of one chirality value and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of the other, as the parent article splits them. At $m=0$ the pair decouples into
@@ -39,7 +39,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-one equation per chirality. The single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the right-handed member, not the whole massless field.
+one equation per chirality. The single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the right-handed member, not the whole massless field. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 Two formulations now carry the name *Dirac equation*, and they must not be read as one. The pair above is the corpus's **one-sided** equation: both gradients act from the left, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation, for a biquaternion field $F$,
 
@@ -100,7 +100,7 @@ with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components, so that $p^2=p
 The classical field theory is defined by the Lagrangian density
 
 $$
-\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,(\mathbb{D}-m)\,\tilde{Ξ}_{\mathrm{sp}}
+\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,(\mathbb{D}-\lambda_m^{-1})\,\tilde{Ξ}_{\mathrm{sp}}
 =i\,\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{sp}}^*\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}\Big)
 +i\sum_k\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}\vec e_z\Big)
 -m\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\big),
@@ -112,7 +112,7 @@ $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}X:=\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\big),
 $$
 
-the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of $\mathbb{D}$ carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_k$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the Dirac equation $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
+the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of $\mathbb{D}$ carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_k$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the Dirac equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is real outright, because $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ is real for every element — verified at $4.4\times10^{-16}$ over fifty random elements — and $m$ is real. Each derivative term differs from its conjugate by a total derivative, both identities holding exactly, and the sum of the two differences is
 
@@ -481,7 +481,7 @@ Because the question addressed here is itself an open question of the framework,
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}$ and the conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$, together with the second-class constraint $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$.
+- The Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}$ and the conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$, together with the second-class constraint $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$.
 - The equal-time anticommutation relations, imposed and verified, and the three reasons anticommutation rather than commutation is forced.
 - The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{\mathrm D}=2m$, $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})=2E$, and the parent's spin sums.
 - The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(a_{\mathrm{fop}}^{\dagger})^2=0$.
@@ -502,7 +502,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 
 ## Summary
 
-The biquaternion Dirac field is quantized by promoting its element-valued classical field to an operator-valued field. The equation quantized is the one-sided chiral pair, which on the element is the single equation $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}$ built from the corpus gradient and its conjugate; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}$ and conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators on the four coefficients of the element,
+The biquaternion Dirac field is quantized by promoting its element-valued classical field to an operator-valued field. The equation quantized is the one-sided chiral pair, which on the element is the single equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}$ built from the corpus gradient and its conjugate; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}$ and conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^*$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators on the four coefficients of the element,
 
 $$
 \{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}=\delta_{\mu\nu}\delta^{(3)}(X-Y)
@@ -541,7 +541,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_k$ for $\mu=k$ |
 | $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$ | Pair operator on one element; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$ | Momentum symbol on a plane wave; $\mathbb{D}_p^2=p^2$ |
-| $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}$ | Dirac Lagrangian density |
+| $\mathcal{L}=\bar{\tilde{Ξ}}_{\mathrm{sp}}(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t)=i\tilde{Ξ}_{\mathrm{sp}}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
 | $X,Y,\vec\Delta=X-Y$ | Spatial points and their separation |

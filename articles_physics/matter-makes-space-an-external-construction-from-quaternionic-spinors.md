@@ -20,7 +20,7 @@ $$
 \qquad
 \Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
-which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order.
+which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The source's four generators act on the field, and they are written here as the actions they are:
 $$
@@ -203,9 +203,9 @@ $$
 
 The corpus's equation is the **one-sided** pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
 \tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu ,
 $$
@@ -325,9 +325,9 @@ written here with every index low; raising the free index costs one sign, $\epsi
 
 **The wave equation itself is not derived.** The chain that produces $\Box T=0$ runs: apply $D_\nu D^\nu$ to the Dirac equation, obtain
 $$
-(\Box-m^2)\tilde{Ξ}_{\mathrm{sp}}=-\tfrac14 \mathrm{Riem}_{\mu\nu\alpha\beta}\,C^{\mu\nu}\sigma^{\alpha\beta}\tilde{Ξ}_{\mathrm{sp}}-\tfrac12 T^\rho{}_{\mu\nu}\,C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}} ,
+(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=-\tfrac14 \mathrm{Riem}_{\mu\nu\alpha\beta}\,C^{\mu\nu}\sigma^{\alpha\beta}\tilde{Ξ}_{\mathrm{sp}}-\tfrac12 T^\rho{}_{\mu\nu}\,C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}} ,
 $$
-pair the result with $C_\lambda\tilde{Ξ}_{\mathrm{sp}}$, and invoke the Fierz relation $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\rangle=2\kappa T_\lambda{}^{\mu\nu}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12 T^\rho{}_{\mu\nu}\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda(\Box-m^2)\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is not $\Box$ of any bilinear either; $\Box T$ would be $2\,\partial^\alpha\langle\tilde{Ξ}_{\mathrm{sp}},\partial_\alpha\tilde{Ξ}_{\mathrm{sp}}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\partial_\mu\partial^\mu\tilde{Ξ}_{\mathrm{sp}}$ is a term proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}$. Substituting gives $\Box T$ proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}$ and to $(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
+pair the result with $C_\lambda\tilde{Ξ}_{\mathrm{sp}}$, and invoke the Fierz relation $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\rangle=2\kappa T_\lambda{}^{\mu\nu}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12 T^\rho{}_{\mu\nu}\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is not $\Box$ of any bilinear either; $\Box T$ would be $2\,\partial^\alpha\langle\tilde{Ξ}_{\mathrm{sp}},\partial_\alpha\tilde{Ξ}_{\mathrm{sp}}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\partial_\mu\partial^\mu\tilde{Ξ}_{\mathrm{sp}}$ is a term proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}$. Substituting gives $\Box T$ proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}$ and to $(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
 
 The implication does not hold, and the failure is an index count. The divergence is an epsilon contraction of the gradient,
 $$

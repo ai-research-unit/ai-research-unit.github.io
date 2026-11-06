@@ -230,7 +230,7 @@ On the fundamental doublet the Bhabha equation is the Dirac equation. At that me
 **The equation.** On the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ the equation is the pair
 
 $$
-\boxed{\;\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m_e\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_e\tilde{Ξ}_{\mathrm{sp},R}\;}
+\boxed{\;\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}\;}
 $$
 
 Each member is one left multiplication, by the gradient or by its natural conjugate; one equation per value; the mass is the only term that couples them. At $m_e=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m_e^2\tilde{Ξ}_{\mathrm{sp},R}$, that is
@@ -336,7 +336,7 @@ The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lore
 
 The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$. The printed bivector metric is the componentwise image of the Minkowski metric under the boost-first collective order $10,20,30,23,31,12$; the order printed in the source interleaves the two classes and does not reproduce it. With the corrected order, the three boosts carry $-1$ and the three rotations $+1$, which is the $(3,3)$ split of the Lorentz parameter space. The $\mathbb{R}^6$ equation keeps the source's explicit $i$ in its second sum: the source's two relations for the conjugate coordinate are mutually inconsistent, so the reduction of that pair of imaginary units by $i^2=-1$ is stated as a consequence of one reading and left open, rather than performed silently.
 
-The first chain member is the electron's Dirac doublet, and its Dirac equation is the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m_e\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_e\tilde{Ξ}_{\mathrm{sp},R}$, one left multiplication per member and one equation per value of the subscript. The two members are two equations on one element, and the mass is the only term that couples them. The single gradient cannot do the work alone: $\tilde\nabla^2$ is not scalar, the mixed derivatives through $e_t$ survive, so no first-order equation on one value has a scalar square, and the massive equation is necessarily a pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
+The first chain member is the electron's Dirac doublet, and its Dirac equation is the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, one left multiplication per member and one equation per value of the subscript. The two members are two equations on one element, and the mass is the only term that couples them. The single gradient cannot do the work alone: $\tilde\nabla^2$ is not scalar, the mixed derivatives through $e_t$ survive, so no first-order equation on one value has a scalar square, and the massive equation is necessarily a pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
 
 The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's Weyl pair, with the Maxwell field as the programme writes it as the companion identification. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.
 
@@ -358,7 +358,9 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The gradient, its natural conjugate and the d'Alembertian, all of *Operator and Calculus Conventions* |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac pair: each member one left multiplication, one equation per value |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac pair: each member one left multiplication, one equation per value |
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ## Further Reading
 

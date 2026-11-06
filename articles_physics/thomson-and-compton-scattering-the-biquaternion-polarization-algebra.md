@@ -157,7 +157,7 @@ $$
 M_{++} = {\varepsilon_{\mathrm{fop},\mathrm{out},+}}^*\cdot\varepsilon_{\mathrm{fop},+} , \qquad
 M_{+-} = {\varepsilon_{\mathrm{fop},\mathrm{out},-}}^*\cdot\varepsilon_{\mathrm{fop},+} ,
 $$
-and with the real basis of each transverse plane chosen the same way — $\hat{\vec\varepsilon}_1$ in the scattering plane and $\hat{\vec\varepsilon}_2$ normal to it, primed for the outgoing plane — they evaluate exactly, with no phase left over, to
+and with the real basis of each transverse plane chosen the same way — $\vec u_{\varepsilon,1}$ in the scattering plane and $\vec u_{\varepsilon,2}$ normal to it, primed for the outgoing plane — they evaluate exactly, with no phase left over, to
 $$
 \lvert M_{++}\rvert = \frac{1+\cos\theta}{2} , \qquad
 \lvert M_{+-}\rvert = \frac{1-\cos\theta}{2} ,
@@ -496,8 +496,8 @@ verified for the four directions. The covariant forms are recovered by raising o
 
 **The two Dirac equations.** Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's **one-sided** chiral pair,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol cell of the spin section,
 $$
@@ -526,7 +526,7 @@ in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|
-| Form | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-mi\,\overline{F}\,\vec e_z=0$ |
+| Form | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-mi\,\overline{F}\,\vec e_z=0$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-mi\,\overline{F}\,\vec e_z$ |
 | Chirality | the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ | the chirality cell $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ the volume cell; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |

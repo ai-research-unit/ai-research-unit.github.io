@@ -27,7 +27,7 @@ The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word a
 | the Hamilton pairing, its theorem and its domain | **The Hamilton Root Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
 | the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
 | the four factors and the branch of the modulus | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
-| the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\hat p$ |
+| the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$ |
 | the four objects called a boost and the factor of two | [*Norm and Pairing Conventions*](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost* | the $\theta_{\mathrm{rpd}}/2$ versus $\theta_{\mathrm{rpd}}$ warning |
 | multiplicativity of the norm | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Two Factors* | the modulus of a product |
 | the generalized pairing on the null cone | [*The Polar Decomposition of an N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Vanishing of the Modulus* | the massless limit |
@@ -108,7 +108,7 @@ The pair $(\Theta,\vec U)$ is the invariant data of the second factor; $\Theta$ 
 | $\Theta$ | second factor | process | example |
 |---|---|---|---|
 | real | a rotation | compact rotation | $e^{\theta\vec u/2}$ |
-| imaginary | a boost | non-compact boost | $e^{-i\theta_{\mathrm{rpd}}\hat p}$ |
+| imaginary | a boost | non-compact boost | $e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ |
 | complex | a rotation composed with a boost | general Lorentz element | aligned or skew word |
 
 The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enters $\sin\Theta$, and a real $B$ with an imaginary $\Rho$ gives an imaginary angle. The four-momentum is the standard case: $B=\lvert\vec p\rvert$ is real, $\Rho=i mc$ is imaginary, and $\Theta=-i\theta_{\mathrm{rpd}}$ is imaginary, which is the boost.
@@ -118,7 +118,7 @@ The classification is of the angle, not of $B$. The ratio $B/\Rho$ is what enter
 The angle depends on which factor of the word the element carries, and the factor of two is the most common error in the corpus.
 
 - The **spinor word** of a transformation carries the frame rotor $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$, whose exponent is $\theta_{\mathrm{rpd}}/2$, the half rapidity. On an aligned word with a rotation, $\Theta=\tfrac{\theta}{2}+\epsilon i\tfrac{\theta_{\mathrm{rpd}}}{2}$.
-- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\theta_{\mathrm{rpd}}\hat p)$, whose exponent is $-\theta_{\mathrm{rpd}}$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\theta_{\mathrm{rpd}}$, not $-i\theta_{\mathrm{rpd}}/2$.
+- The **four-vector factor** is $\mathcal B=\tilde U_{\mathrm b}^{-2}=\exp(-i\theta_{\mathrm{rpd}}\vec u_p)$, whose exponent is $-\theta_{\mathrm{rpd}}$, the rapidity. A four-momentum carries this factor, and its Hamilton angle is $\Theta=-i\theta_{\mathrm{rpd}}$, not $-i\theta_{\mathrm{rpd}}/2$.
 - The **word parameter** of a four-vector element is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$, because the word stores the boost twice.
 
 Three statements follow, and each is a check. Do not write $\Theta=i\theta_{\mathrm{rpd}}$ for a four-momentum; the sign is negative for the axis along the momentum. Do not write $\theta_{\mathrm{rpd}}/2$ for the angle of a four-momentum; the four-vector factor carries the full rapidity. Do not identify the exponent of the spinor word with the exponent of the four-vector word; they differ by a factor of two and a sign.
@@ -136,7 +136,7 @@ The second factor is a unit-norm element, and it is the frame. Its action depend
 - On a **spinor**, the unit factor acts by left multiplication, $\xi\mapsto\tilde U\xi$. This is the linear action and it carries the double cover and the sign of the spinor.
 - On a **four-vector**, it acts by congruence, $X\mapsto\tilde U X\tilde U^{*}$. This is the bilinear action, and the four-vector element carries the inverse square of the spinor factor.
 
-For a four-momentum the frame factor is $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\hat p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\hat p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
+For a four-momentum the frame factor is $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ and the congruence by $\mathcal B$ is the boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it. Both statements describe the same boost, and the sign is bookkeeping.
 
 The rapidity is fixed by the ratio of the two invariants,
 
@@ -219,7 +219,7 @@ The reading that changes the theory most is the identification of the modulus wi
 - The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.
 - The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.
 - The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.
-- For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\hat p$, and the eigenvalues are $i mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
+- For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, and the eigenvalues are $i mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
 - The energy is $mc^{2}\cosh\theta_{\mathrm{rpd}}$ and depends on the frame; the modulus is the invariant and does not.
 - The angle is real for a rotation, imaginary for a boost and complex in general; the pair $(\Theta,\vec U)$ is the invariant data.
 - The spinor word stores $\theta_{\mathrm{rpd}}/2$, the four-vector factor stores $\theta_{\mathrm{rpd}}$, and the four-momentum angle is $-i\theta_{\mathrm{rpd}}$.

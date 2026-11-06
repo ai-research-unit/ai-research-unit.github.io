@@ -66,11 +66,11 @@ which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2
 
 **The consequence for the mass.** A single field cannot carry a mass at first order, because there is no scalar to subtract from a square that is not scalar. The massive equation is therefore the chiral pair, and it is the same dynamics written for the two values and not a second one:
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
-Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box\tilde{Ξ}_{\mathrm{sp}}=m^2\tilde{Ξ}_{\mathrm{sp}}$ on each value, because $\tilde\nabla\tilde\nabla^{\natural}=\Box$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none.
+Each member acts by left multiplication, and the mass pairs the two values. Applied twice, the pair gives the scalar equation $\Box\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}$ on each value, because $\tilde\nabla\tilde\nabla^{\natural}=\Box$. That is the whole of the mass, and it is why the article never writes a one-field first-order equation with a mass: in this algebra there is none. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The pseudoscalar.** The chirality of the frame is the element
 $$
@@ -110,7 +110,7 @@ Z[A] = \int \mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\bigl(\mathbb{D}-m\bigr) .
+Z[A] = \det\bigl(\mathbb{D}-\lambda_m^{-1}\bigr) .
 $$
 The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the pair operator with its derivative made covariant, whose square is $\Box$, and whose determinant is the product over modes of $\det\ell_{\tilde K}=(k_0^2-\lvert\vec k\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
@@ -326,7 +326,7 @@ so the axial charge transported in a background is twice the index, the minus be
 | Item | Status |
 |---|---|
 | The massless equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, one field, first order | **Supplied** by the gradient |
-| The chiral pair, and $\Box\tilde{Ξ}_{\mathrm{sp}}=m^2\tilde{Ξ}_{\mathrm{sp}}$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla^2$ is not scalar |
+| The chiral pair, and $\Box\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}$ as its consequence | **Supplied**; the mass needs two values because $\tilde\nabla^2$ is not scalar |
 | $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ | **Supplied**; recomputed with residual $3\times10^{-6}$ |
 | The pseudoscalar $\omega=-\vec e_z$, with $\omega^2=-e_t$ | **Supplied** by the algebra |
 | The two values as the two eigenspaces of right multiplication by $\vec e_z$, of dimensions $2$ and $2$ | **Supplied**; recomputed |
@@ -354,7 +354,7 @@ so the axial charge transported in a background is twice the index, the minus be
 
 ## Summary
 
-The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ — because $\tilde\nabla^2$ is not scalar while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is — and the chiral rotation is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} e^{\alpha\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
+The Fujikawa method derives the axial anomaly as the Jacobian of the fermion measure under a chiral rotation. In the biquaternion algebra the massless equation is one first-order equation in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ — because $\tilde\nabla^2$ is not scalar while $\tilde\nabla\tilde\nabla^{\natural}=\Box$ is — and the chiral rotation is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} e^{\alpha\omega}$ by the pseudoscalar $\omega=-\vec e_z$. The two values are the two eigenspaces of right multiplication by $\vec e_z$, of complex dimension two each, and the rotation multiplies them by $e^{+i\alpha}$ and $e^{-i\alpha}$. The local rotation adds the axial-current term; the measure does not add it, and the Jacobian is $(\det U)^{-2}=\exp(-2i\int\alpha a)$, with the regulated trace $a=\lim_{M\to\infty}\mathrm{tr}[\rho_\omega e^{-\mathcal{H}/M^2}]$ as the index density, the insertion taken on the right, and $A=2a$ as the anomaly density.
 
 **The one thing the algebra does not give.** The regulated trace that produces the four-index symbol in the standard computation vanishes here identically: $\mathrm{tr}(\ell_h\rho_\omega)=0$ for every element, so all $24$ orders of four distinct units contribute exactly zero. The coefficient is therefore transcribed, $a=-(ϙ^2/32\pi^2)\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, and the article states it as transcribed.
 
@@ -387,7 +387,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-2i\int d^4r\,\alpha a)$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det(\mathbb{D}-m)$ | Fermion determinant |
+| $Z[A]=\det(\mathbb{D}-\lambda_m^{-1})$ | Fermion determinant |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Vector current |
 | $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\omega\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Axial current |

@@ -90,7 +90,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$
 
-the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-m)$, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
+the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-\lambda_m^{-1})$, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
 
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
@@ -285,7 +285,7 @@ The covariant anticommutator of the free quantized field is the object that carr
 **It is a $c$-number and it is local.** Every term of the product $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde{Ξ}_{\mathrm{fop}}(x)$ or $\tilde{Ξ}_{\mathrm{fop}}(x)\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a_{\mathrm{fop}}b_{\mathrm{fop}}$ or $a_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}^{\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,
 
 $$
-\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
+\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+\lambda_m^{-1})\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
 $$
 
 an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the operator of the display above applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
@@ -293,7 +293,7 @@ an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field a
 **The commutator is a $c$-number as well, but it is not local.** Replacing the anticommutator by the commutator gives, for every element $\tilde X$,
 
 $$
-\langle0|\,[\tilde{Ξ}_{\mathrm{fop}}(x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
+\langle0|\,[\tilde{Ξ}_{\mathrm{fop}}(x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+\lambda_m^{-1})\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$
 
 with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec y$,
@@ -360,7 +360,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+\lambda_m^{-1})\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -375,9 +375,9 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its natural conjugate, and the d'Alembertian |
-| $\mathbb{D}$ | Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-m)$ on $(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R})$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}$ | Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-\lambda_m^{-1})$ on $(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R})$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p$ | Momentum symbol at $p_0=E_{\vec p}$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$ |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
 | $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$, $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |
@@ -393,12 +393,14 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde P_{\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_k\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_+/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_-/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
-| $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
+| $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathbb{D}+\lambda_m^{-1})\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
 | $\Delta_{\mathrm{A}}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric kernel of the commutator's vacuum expectation |
 | $F(\vec\Delta)=\int\frac{d^3p}{(2\pi)^3}\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_k i\vec e_k\tilde X\vec e_y p_k+m\tilde X)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
 | $\tilde P=iE_{\vec p}\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ## Further Reading
 

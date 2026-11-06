@@ -265,10 +265,12 @@ Two biquaternionic forms of the massive Dirac equation are in play here, and the
 **The one-sided pair.** The corpus's equation is the chiral pair on the element-valued field,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}_{\mathrm{sp},L}$ carries the $L$ value and $\tilde{Ξ}_{\mathrm{sp},R}$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
 
@@ -487,7 +489,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}$ | The trace, twice the scalar part, *Norm and Pairing Conventions* |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_k\vec e_k\partial/\partial R_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |

@@ -208,10 +208,10 @@ It is closed, star-shaped and contractible, but it is neither convex nor pointed
 The Krein null set is not the zero-divisor cone. The Krein null set has real dimension $7$; the zero-divisor cone $\{N=0\}$ has real dimension $6$. Neither contains the other. The element $e_t+\vec e_x$ is Krein-null with interval $2$; the element $\vec e_x+i\vec e_y$ has interval $0$ and Krein square $-2$. The two cones meet exactly on the doubly-null lines
 
 $$
-\mathbb{C}(e_t\pm i\hat\mu),
+\mathbb{C}(e_t\pm i\vec u_\mu),
 $$
 
-with $\hat\mu$ a real unit direction; these are the Peirce lines of the rank-one Hermitian idempotents. On the material sector, where the Krein form is minus the interval, the two null sets coincide with the light cone. The distinction is therefore a property of the complex algebra and not of a sector.
+with $\vec u_\mu$ a real unit direction; these are the Peirce lines of the rank-one Hermitian idempotents. On the material sector, where the Krein form is minus the interval, the two null sets coincide with the light cone. The distinction is therefore a property of the complex algebra and not of a sector.
 
 The Krein cone is a cone of indefinite positivity and not a state space. It is not convex, it is not pointed, and it carries no trace. A state space needs the positive definite Born form and the trace-one slice; the Krein cone supplies the sign condition in which the gauge form is read.
 
@@ -254,7 +254,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - The positive lines form the complex hyperbolic ball $\mathbb{CH}^3=\mathrm{U}(1,3)/(\mathrm{U}(1)\times\mathrm{U}(3))$, with boundary $S^5$; the Lorentzian slice gives the real hyperbolic space $H^3$.
 - The $J$-contractions form an open set invariant under the isometries, not the ball; the model contraction is $\pi_y=\tfrac12(\mathrm{id}-J)$ with defect $\pi_x$.
 - The Krein cone is closed and star-shaped but neither convex nor pointed; it is an indefinite positivity cone, not a state space.
-- The Krein null set (dimension $7$) and the zero-divisor cone (dimension $6$) are different; they meet on the doubly-null lines $\mathbb{C}(e_t\pm i\hat\mu)$.
+- The Krein null set (dimension $7$) and the zero-divisor cone (dimension $6$) are different; they meet on the doubly-null lines $\mathbb{C}(e_t\pm i\vec u_\mu)$.
 - The Lorentz group is the subgroup of $\mathrm{U}(1,3)$ that preserves the material real slice; the gauge group of the form is the whole $\mathrm{U}(1,3)$.
 - The form is a reading and no gauge field is derived; the hyperbolic geometry is kinematic and no dynamics is supplied.
 
@@ -275,7 +275,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 | $H^3$ | the real hyperbolic space of the Lorentzian slice |
 | $P_K=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$ | the Krein cone |
 | $\mathcal{K}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ | the Krein null set |
-| $\mathbb{C}(e_t\pm i\hat\mu)$ | the doubly-null lines |
+| $\mathbb{C}(e_t\pm i\vec u_\mu)$ | the doubly-null lines |
 | $\mathcal{P}_J=J\cdot\{S\ge0\}$ | the $J$-positive operator cone |
 | $\pi_x=\tfrac12(\mathrm{id}+J)$, $\pi_y=\tfrac12(\mathrm{id}-J)$ | the projections onto the centre and the vector space |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the informational and material sectors |

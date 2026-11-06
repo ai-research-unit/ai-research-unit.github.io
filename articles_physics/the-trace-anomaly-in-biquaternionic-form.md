@@ -228,7 +228,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $Q_t=i c r'_t$, $Q_k=x_k$ | The material reading; the substitution is carried by $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{B}_{\Phi}$, $Q_t=i c r'_t$ and $Q_k=x_k$, so $\partial/\partial R_t=\partial/\partial i c r'_t$ |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
@@ -239,6 +239,8 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ## Further Reading
 

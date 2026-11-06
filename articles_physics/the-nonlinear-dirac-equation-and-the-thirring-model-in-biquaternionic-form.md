@@ -60,10 +60,10 @@ The composite of the time slot action with the $k$-th space slot action is the l
 ### The Two Writings of the Free Equation
 
 The free field obeys the linear chiral pair
-$$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+$$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},$$
-in which the gradient acts by left multiplication on the field and the mass couples the two values. This is the **one-sided** writing.
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},$$
+in which the gradient acts by left multiplication on the field and the mass couples the two values. This is the **one-sided** writing. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The **two-sided** writing is the action
 $$\tilde Q\longmapsto i\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
@@ -152,7 +152,7 @@ $$i\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$i\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=m\tilde{Ξ}_{\mathrm{sp}},$$
+$$i\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}},$$
 with $A_0=0$, and the two parts are read separately.
 
 **Why the square is the d'Alembertian.** The three spatial slot actions composed with one another give $-\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $-\sum_k\partial_k^2$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.

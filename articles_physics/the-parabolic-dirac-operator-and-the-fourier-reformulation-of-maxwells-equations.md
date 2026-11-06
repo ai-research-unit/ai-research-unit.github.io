@@ -162,7 +162,7 @@ $$
 \bigl|\exp(\mp 2\pi k r'_t)\bigr| = 1 \qquad \text{for every } (k,r'_t),
 $$
 
-with reason $\exp(\mp 2\pi k r'_t) = \exp\bigl(\mp 2\pi|k|r'_t\,\hat{g_k}\bigr)$ for the unit vector $\hat{g_k} = k/|k|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $k$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi k G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
+with reason $\exp(\mp 2\pi k r'_t) = \exp\bigl(\mp 2\pi|k|r'_t\,\vec u_k\bigr)$ for the unit vector $\vec u_k = k/|k|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $k$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi k G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
 
 ## The Parabolic Teodorescu Transform and the Right Inverse
 

@@ -422,10 +422,10 @@ Two rays determine a rotation, and the rotation has an axis. In the algebra the 
 
 $$
 [\tilde\Pi_1,\tilde\Pi_2]=\tilde\Pi_1\tilde\Pi_2-\tilde\Pi_2\tilde\Pi_1
-=-\tfrac{1}{2}\,\hat r_1\times\hat r_2 .
+=-\tfrac{1}{2}\,\vec u_{r,1}\times\vec u_{r,2} .
 $$
 
-The axis $\hat r_1\times\hat r_2$ is perpendicular to both Bloch vectors and is the pole of the great circle that joins them. The amplitude is a complex number and has no vector part; the axis belongs to the pair of states.
+The axis $\vec u_{r,1}\times\vec u_{r,2}$ is perpendicular to both Bloch vectors and is the pole of the great circle that joins them. The amplitude is a complex number and has no vector part; the axis belongs to the pair of states.
 
 For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta$ is the angle between the two Bloch vectors, twice the angle between the rays. The argument is the phase about the axis, and the half-angle is the double cover: a rotation of the ray by $2\pi$ returns the spinor to minus itself.
 

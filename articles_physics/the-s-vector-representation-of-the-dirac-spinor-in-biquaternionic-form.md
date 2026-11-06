@@ -262,13 +262,13 @@ Two features are worth naming. The kinetic operator is not symmetric in $G$ and 
 
 The mass is not carried by the square of a first-order derivative operator. The derivative of the article is the gradient, and the gradient's square is not scalar, because $e_t$ commutes with the spatial units and the mixed time–space derivatives survive in $\tilde\nabla^2=\Box+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$. Only the paired product $\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar, and it conjugates one factor instead of squaring it. The free equation is therefore first order in one field, $i\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,\tilde\nabla_\nu G_\lambda=0$ at $m=0$; the massive system is the pair of §The Chiral Pair, and the mass sits between the two values rather than inside one square.
 
-The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, applying $\tilde\nabla^\natural$ to the first equation and $\tilde\nabla$ to the second gives $\tilde\nabla^\natural\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde\nabla\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m^2\tilde{Ξ}_{\mathrm{sp},L}$, that is
+The pair does imply the Klein–Gordon equation, and the implication runs through the paired product. On the element, from $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, applying $\tilde\nabla^\natural$ to the first equation and $\tilde\nabla$ to the second gives $\tilde\nabla^\natural\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde\nabla\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},L}$, that is
 
 $$
-\bigl(\Box-m^2\bigr)\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad\bigl(\Box-m^2\bigr)\tilde{Ξ}_{\mathrm{sp},L}=0,
+\bigl(\Box-\lambda_m^{-2}\bigr)\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad\bigl(\Box-\lambda_m^{-2}\bigr)\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-since $\tilde\nabla^\natural\tilde\nabla=\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator.
+since $\tilde\nabla^\natural\tilde\nabla=\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The bosonization is not canonical. It depends on the choice of the neutral elements $j_\mu$ and $k_\mu$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\mu\nu\lambda}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
 
@@ -304,9 +304,9 @@ $$
 is the compact form of the same pair at $A_\mu=0$: the two equations above are its two values, and every $G_\mu$ is their sum. Both halves are quoted in the source's letters, $\partial/\partial x_\nu$ its index partial and $A_\nu$ its gauge field; the compact line writes the same equation in the corpus gradient, whose $\nu$-th leg stands in that slot. This is the two-value structure of the element's equation, carried to the four-vector carrier. On the element the same pair reads
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 with the mass $me_t$ central, $e_t$ being the identity of the algebra. Nothing in the mass term flips the value by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each value is carried into the other by the mass. The pair on $G$ and the pair on $\tilde{Ξ}_{\mathrm{sp}}$ are the same two equations in two carriers.

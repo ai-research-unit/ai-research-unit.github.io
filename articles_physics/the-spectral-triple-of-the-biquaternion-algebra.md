@@ -88,9 +88,9 @@ so $i\tilde\nabla$ is not self-adjoint for that form. The criterion is fixed by 
 
 **The Dirac equation in two forms.** The framework writes the Dirac equation in two forms, and the displays should be kept separate because they answer different questions. The defining form is the chiral pair,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is one operator, the pair operator of *Operator and Calculus Conventions*,
 $$
@@ -98,11 +98,11 @@ $$
 \qquad
 \mathbb{D}^2=\Box e_t,
 $$
-and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$, whose two components are the pair. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
+and the massive equation is $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$, whose two components are the pair. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
 \mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
-with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added.
+with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The chirality.** The chirality is the right action by the element $-i\vec e_z$,
 $$

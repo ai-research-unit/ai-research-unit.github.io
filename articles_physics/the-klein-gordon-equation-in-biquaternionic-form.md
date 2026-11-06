@@ -49,15 +49,15 @@ which is a genuine algebraic statement: the d'Alembertian is the **biquaternion 
 The free Klein–Gordon equation is the spin-0 member of a first-order family the corpus already writes. Lanczos's coupled biquaternion system
 
 $$
-\tilde{\nabla}\tilde Q_1 = m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = m\tilde Q_1
+\tilde{\nabla}\tilde Q_1 = \lambda_m^{-1}\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = \lambda_m^{-1}\tilde Q_1
 $$
 
-is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields.
+is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields. The coefficient on the right is the reciprocal mass length, $\lambda_m^{-1}=mc/\hbar$, because $\tilde\nabla$ carries an inverse length; the natural-unit writing of the same system, with $\hbar=c=1$, puts the bare letter $m$ there, and it is the same quantity.
 
 **The scalar restriction.** Take $\tilde Q_1=A_0e_t$ and $\tilde Q_2=be_t$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $i c r'_t$ alone; the pair then collapses to
 
 $$
-\partial/\partial R_t\,A_0 = b, \qquad \partial/\partial R_t\,b = m^2A_0, \qquad\text{hence}\qquad \left(\partial^2/\partial R_t^2 - m^2\right)A_0 = 0 .
+\partial/\partial R_t\,A_0 = \lambda_m^{-1}b, \qquad \partial/\partial R_t\,b = \lambda_m^{-1}A_0, \qquad\text{hence}\qquad \left(\partial^2/\partial R_t^2 - \lambda_m^{-2}\right)A_0 = 0 .
 $$
 
 This is the degenerate form that Gsponer and Hurni record for the spin-zero case, and "degenerate" is literal: a scalar field whose gradient must be scalar cannot vary in space, so this member of the family is one-dimensional. The corpus's spin-0 field does vary in space, and it satisfies the four-dimensional Klein–Gordon equation of the preceding sections,
@@ -261,7 +261,7 @@ What, then, is the doubling that the second-order structure actually needs? Two 
 
 The first is the **Hamiltonian doubling** of the second-order equation: to write it as a first-order system one introduces the conjugate momentum, so the state becomes a pair (field, rate of change of field). This is a genuine enlargement of the state space by a factor of two, and it cannot be avoided. Its relation to the sector split is only the intertwiner of the parent article: the rate $\partial/\partial R_t\,\tilde{Ξ}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ stays in the sector of $\tilde{Ξ}$, while $i\partial/\partial R_t\,\tilde{Ξ}$ moves to the other sector. That is the observable/generator structure of the Schrödinger article reappearing — the central $i$ converts a Hermitian object into a generator in the material sector — and it does not produce a particle–antiparticle pair. It is the same $i$-intertwiner, not a new algebraic ingredient.
 
-The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$.
+The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$.
 
 The square root acts on the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here, and on its complex conjugate, whose direct sum is the four-component Dirac spinor — two spin states for the particle and two for the antiparticle. *This* is the doubling that the second-order structure needs, and it is a representation-theoretic doubling of a complex module, not the real vector-space decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$.
 

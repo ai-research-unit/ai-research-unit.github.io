@@ -160,10 +160,10 @@ The corpus carries two Dirac equations, and the Daviau equation is a **third for
 **The one-sided equation, and chirality.** The corpus's own equation is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values.
+in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The two-sided equation, and the mass direction.** Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with
 
@@ -178,7 +178,7 @@ where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i 
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
+| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, a general element | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | $F\in\mathbb{B}$ |
 | Mass | $m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear | the pairing of the two values | $-mi\overline{F}\vec e_z$ |

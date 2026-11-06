@@ -174,7 +174,7 @@ $$
 \qquad
 \Rho=imc,
 \qquad
-\vec U=\hat p,
+\vec U=\vec u_p,
 \qquad
 \Theta=-i\theta_{\mathrm{rpd}} .
 $$
@@ -183,12 +183,12 @@ The expansion checks the identification. With $\vec U^{2}=-e_t$ and $\Theta=-i\t
 
 $$
 \Rho e^{\vec U\Theta}
-=imc\left(\cosh\theta_{\mathrm{rpd}}-i\hat p\sinh\theta_{\mathrm{rpd}}\right)
-=i\frac{mc^{2}\cosh\theta_{\mathrm{rpd}}}{c}+mc\sinh\theta_{\mathrm{rpd}}\,\hat p
+=imc\left(\cosh\theta_{\mathrm{rpd}}-i\vec u_p\sinh\theta_{\mathrm{rpd}}\right)
+=i\frac{mc^{2}\cosh\theta_{\mathrm{rpd}}}{c}+mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p
 =i\frac{E}{c}e_t+\vec p .
 $$
 
-The three slots divide the data. The modulus $\Rho=imc$ is the mass; the angle $\Theta=-i\theta_{\mathrm{rpd}}$ is the rapidity; the axis $\vec U=\hat p$ is the direction of motion. The energy is not a slot: it is $mc^{2}\cosh\theta_{\mathrm{rpd}}$, the modulus times the frame factor. A boost changes $\theta_{\mathrm{rpd}}$ and leaves $\Rho$ fixed.
+The three slots divide the data. The modulus $\Rho=imc$ is the mass; the angle $\Theta=-i\theta_{\mathrm{rpd}}$ is the rapidity; the axis $\vec U=\vec u_p$ is the direction of motion. The energy is not a slot: it is $mc^{2}\cosh\theta_{\mathrm{rpd}}$, the modulus times the frame factor. A boost changes $\theta_{\mathrm{rpd}}$ and leaves $\Rho$ fixed.
 
 The modulus is central, and that is the algebraic reason the mass is frame-independent while the energy is not. A change of frame conjugates the second factor and commutes with the first. The spectrum sees the same division: the product $\lambda_+\lambda_-=\Rho^{2}=-m^{2}c^{2}$ is the modulus, and the ratio $\lambda_+/\lambda_-=e^{2\theta_{\mathrm{rpd}}}$ is the frame.
 
@@ -263,7 +263,7 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 - The terms are not two particles and not two energies; their sum is twice the energy and their difference is twice the momentum.
 - A boost along $\vec p$ rescales the pair reciprocally; the product is invariant. A rotation leaves the pair unchanged and rotates the axis.
 - At rest the pair coalesces and the two-term writing is not unique; at $m=0$ one coefficient vanishes and the writing has one term.
-- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and $\vec U=\hat p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
+- The Hamilton reading is $\tilde P=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and $\vec U=\vec u_p$: the mass is the modulus, the rapidity is the angle and the direction is the axis.
 - The spectrum fixes the energy and the magnitude of the momentum, not the direction; it is blind to rotations and to the reality of the vector part, and it leaves the eigenprojections free at a degeneracy.
 - The algebra gives the frequencies, not a particle count, a numerical mass, a dynamics or a mass spectrum.
 

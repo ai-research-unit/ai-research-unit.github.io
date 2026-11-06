@@ -66,7 +66,7 @@ so multiplying by $\mathcal{M}(p^2)=m^2-p^2$, equivalently by $-(p^2-m^2)$, and 
 
 **The biquaternion form of the amputation.** The wave operator's momentum symbol is the negative of the central mass-shell operator,
 $$
-\big(\Box-m^2\big) \;\longrightarrow\; p^2-m^2 \;=\; -\big(\tilde P\tilde P^{\natural}+m^2\big) \;=\; -\,\mathcal{M}(\tilde P) ,
+\big(\Box-\lambda_m^{-2}\big) \;\longrightarrow\; p^2-m^2 \;=\; -\big(\tilde P\tilde P^{\natural}+m^2\big) \;=\; -\,\mathcal{M}(\tilde P) ,
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde P)$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde P)=0$, i.e. $\tilde P\tilde P^{\natural}=-m^2$. The remaining sections spell out the consequence: the amputation is a real central scalar for a scalar field and an action on the element for a field with spin, while the pole $\mathcal{M}(\tilde P)=0$ is the same central scalar in both cases.
 
@@ -82,7 +82,7 @@ so that, off the shell and with the prescription removed,
 $$
 \boxed{\;\lim_{\epsilon\to0^{+}}\mathcal{M}(\tilde P)\,D_F(\tilde P) = \lim_{\epsilon\to0^{+}}\frac{m^2-p^2}{m^2-p^2-i\epsilon} = 1 \qquad (\mathcal{M}\neq0)\;}
 $$
-and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde P)$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde P)$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box-m^2)G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $1/(p^2-m^2+i\epsilon)$ is its negative.
+and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde P)$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde P)$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box-\lambda_m^{-2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $1/(p^2-m^2+i\epsilon)$ is its negative.
 
 **The centrality is a real centrality.** Because $\mathcal{M}(\tilde P)$ is central, the amputation commutes with the left and right multiplications of the algebra and does not disturb any internal index; it multiplies every component of the field by the same complex number. On real momenta $\mathcal{M}=m^2-p^2$ is also **real**, and a real central scalar commutes with the conjugation $\flat=-{}^{*}$,
 $$
@@ -108,7 +108,7 @@ $$
 $$
 Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box\to p^2=-\tilde P\tilde P^{\natural}$, so
 $$
-\big(\Box-m^2\big)\tilde{Ξ}_{\tilde P} \;\longrightarrow\; -\big(\tilde P\tilde P^{\natural}+m^2\big)\tilde{Ξ}_{\tilde P} = -\,\mathcal{M}(\tilde P)\,\tilde{Ξ}_{\tilde P},
+\big(\Box-\lambda_m^{-2}\big)\tilde{Ξ}_{\tilde P} \;\longrightarrow\; -\big(\tilde P\tilde P^{\natural}+m^2\big)\tilde{Ξ}_{\tilde P} = -\,\mathcal{M}(\tilde P)\,\tilde{Ξ}_{\tilde P},
 $$
 which vanishes for $\tilde P\tilde P^{\natural}=-m^2$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$, the corpus's four-vector notation, so $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R_\Phi))=\exp(-ip\cdot x)$ is the positive-frequency mode and the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.
 
@@ -169,15 +169,15 @@ where the left factor of the energy term is $e_t$ and is not written. It is the 
 
 **The two Dirac equations.** The corpus carries two, and they are not the same operator (see *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The **one-sided** form is the pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The **two-sided** form is the single equation
 $$
 -\tilde\nabla^{\natural}F-m\,i\,\overline{F}\,\vec e_z=0 ,
 $$
-in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it.
+in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The pole is central; the residue is an action.** On a central-phase plane wave the four coefficients $p_\mu$ are constants, so $\mathcal{A}_p$ is a constant action and $\mathcal{A}_p^2$ is multiplication by $p^2$. The equation $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}$ then gives
 $$
@@ -361,7 +361,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian and Hermitian sectors (*Algebra and Element Conventions*); $\tilde{Ξ}_\pm$ are the two sector parts |
 | $\flat$ | The anti-Hermitian conjugation (*Algebra and Element Conventions*), antilinear |
 | $D_F(\tilde P)=1/(\mathcal{M}(\tilde P)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$ | Feynman propagator (momentum space) |
-| $p^2-m^2=-\mathcal{M}(\tilde P)$ | Symbol of the wave operator $(\Box-m^2)$; amputation uses $\mathcal{M}$ |
+| $p^2-m^2=-\mathcal{M}(\tilde P)$ | Symbol of the wave operator $(\Box-\lambda_m^{-2})$; amputation uses $\mathcal{M}$ |
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
 | $s_j$, $\varepsilon_j$ | The two signs of leg $j$: $s_j=\pm1$ from the Fourier phase (out/in), $\varepsilon_j=\pm1$ from the numerator ($\tilde{Ξ}_{\mathrm{sp}}$/$\tilde{Ξ}_{\mathrm{sp}}^{\natural}$); independent |

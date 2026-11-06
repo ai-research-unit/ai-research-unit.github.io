@@ -29,9 +29,9 @@ $$
 whose two parts carry the two values of the chirality, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the declared axis $\vec u$ (*Special Element Conventions*, §*The Chirality Convention*); every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality cell is the volume cell of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m_p\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_p\,\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 In this section we record what is structural about placing it there and what is not.
@@ -45,7 +45,7 @@ The article carries two Dirac equations, and they must not be read as one. They 
 **The two-sided equation** writes the same pair once, on the same element. The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
 
 $$
-\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=m_p\,\tilde{Ξ}_{\mathrm{sp}},
+\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}},
 \qquad
 \mathbb{D}^2=\Box
 $$
@@ -53,14 +53,16 @@ $$
 on each value, so the pair reads
 
 $$
-\left(\mathbb{D}-m_p\right)\tilde{Ξ}_{\mathrm{sp}}=0 .
+\left(\mathbb{D}-\lambda_m^{-1}\right)\tilde{Ξ}_{\mathrm{sp}}=0 .
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The operator is a single object acting on the element: it is the pair written once, and it contains no matrix generator. What the one-operator reading adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of the operator, not by a change of physics.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m_p\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_p\tilde{Ξ}_{\mathrm{sp},R}$ | $(\mathbb{D}-m_p)\tilde{Ξ}_{\mathrm{sp}}=0$ |
+| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values | the same element, the same two values |
 | Mass | the off-diagonal pairing of the two values | the same coefficient, off-diagonal in the two values |
 | Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator, $\mathbb{D}^2=\Box$ on each value |
@@ -69,7 +71,7 @@ The operator is a single object acting on the element: it is the pair written on
 
 **The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}_{\mathrm{sp}}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V\mapsto\tilde U\tilde V\tilde U^{-1}$, returns $+\tilde V$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
 
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient $m_p$ of the linear term that couples the two values, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m_p\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_p\tilde{Ξ}_{\mathrm{sp},R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ with $\tilde{Ξ}_{\mathrm{sp},\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient $m_p$ of the linear term that couples the two values, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ with $\tilde{Ξ}_{\mathrm{sp},\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
@@ -79,7 +81,7 @@ $$
 
 in the corpus's four-momentum convention $\tilde{P}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-m_p)\tilde{Ξ}_{\mathrm{sp}}=0$ contains a coupling. The mass coefficient $m_p$ is the only parameter, and it is central.
+**The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$ contains a coupling. The mass coefficient $m_p$ is the only parameter, and it is central.
 
 Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge element to *carry* the value $+1$, not an ability to produce it.
 
@@ -109,7 +111,7 @@ $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality cell $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(iϙ_L\lambda/\hbar)$ and the R value the phase $\exp(iϙ_R\lambda/\hbar)$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m_p\tilde{Ξ}_{\mathrm{sp},L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality cell $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(iϙ_L\lambda/\hbar)$ and the R value the phase $\exp(iϙ_R\lambda/\hbar)$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
@@ -323,7 +325,7 @@ With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m_p\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m_p\tilde{Ξ}_{\mathrm{sp},R}$ and as the single equation $(\mathbb{D}-m_p)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}^2=\Box$. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ and as the single equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathbb{D}^2=\Box$. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
@@ -357,7 +359,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
-| $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-m_p)\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
+| $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality cell, the cell that reads the two values; the legacy section writes it $\gamma_5$ |
 | $\tilde J=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
