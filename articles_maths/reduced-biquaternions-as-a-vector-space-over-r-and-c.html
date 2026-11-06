@@ -78,7 +78,7 @@
 <p><strong>The reduced biquaternion space over $\mathbb{C}$ is two-dimensional, and its natural complex basis is the pair $1,j$.</strong></p>
 <p><strong>Definition.</strong> The reduced biquaternion space, read over the complex scalars, is the set
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
 $$
 with the addition of the algebra and the scalar action
 $$
@@ -104,7 +104,7 @@ and the pair $(Q_{+},Q_{-})$ is the <strong>idempotent coordinate pair</strong>.
 <p><strong>Read over the real scalars the space is four-dimensional, and its natural real basis is the quadruple $1,i,j,ij$.</strong></p>
 <p><strong>Definition.</strong> The reduced biquaternion space, read over the real scalars, is the set
 $$
-\mathbb{B}^{\mathrm{red}}=\{q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij:q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R}\},
+\mathbb{B}_{\mathrm{red}}=\{q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij:q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R}\},
 $$
 with the addition of the algebra and the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$ for $\lambda\in\mathbb{R}$.</p>
 <p><strong>Proposition (the real coordinates).</strong> Every element is a unique real combination of $1,i,j,ij$,
@@ -135,11 +135,11 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>realification</strong> of the complex space is the same set with the scalar action restricted to the reals; the <strong>restriction of scalars</strong> from $\mathbb{C}$ to $\mathbb{R}$ is that passage, and its inverse, the complexification of the real space, is the passage that inserts the operator $J$.</p>
 <p><strong>Proposition (the dimensions).</strong> The realification has real dimension twice the complex dimension,
 $$
-\boxed{\; \dim_{\mathbb{R}}\mathbb{B}^{\mathrm{red}}=2\dim_{\mathbb{C}}\mathbb{B}^{\mathrm{red}}=4 \;},
+\boxed{\; \dim_{\mathbb{R}}\mathbb{B}_{\mathrm{red}}=2\dim_{\mathbb{C}}\mathbb{B}_{\mathrm{red}}=4 \;},
 $$
 and the passage is exactly the reading of the complex basis $\{1,j\}$ on the real basis $\{1,i,j,ij\}$, namely $1=1$ and $j=j$ with the two complex scalar coordinates split into four real ones by $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$.</p>
 <p><em>Proof.</em> The real basis is obtained from the complex one by replacing each complex basis element by its real and imaginary parts: $1$ is already real, and $j$ gives $j$ and $ij$. The two complex coordinates $Q_{\blacktriangle},Q_{\blacktriangledown}$ give the four real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ of the proposition on the real coordinates. The inverse passage is the insertion of $J$, which reads two real directions as one complex one.</p>
-<p><strong>Remark (the ring-based readings are not this).</strong> The realification and the complexification are passages between the two <strong>field-based</strong> readings of the same set. The set read as a module over the ring $\mathbb{B}^{\mathrm{red}}$ itself, with the scalar action the multiplication of the algebra, is a different object, and it is not part of this article. The warning is the one of the introduction, and the distinction is the same as in the biquaternion category between the complex vector space and the module over the algebra.</p>
+<p><strong>Remark (the ring-based readings are not this).</strong> The realification and the complexification are passages between the two <strong>field-based</strong> readings of the same set. The set read as a module over the ring $\mathbb{B}_{\mathrm{red}}$ itself, with the scalar action the multiplication of the algebra, is a different object, and it is not part of this article. The warning is the one of the introduction, and the distinction is the same as in the biquaternion category between the complex vector space and the module over the algebra.</p>
 <h2 id="the-coordinate-systems">The Coordinate Systems</h2>
 <p><strong>The same element is written in three coordinate systems, of four, two and four real or complex numbers, and they are the real, the complex and the idempotent readings of the space.</strong></p>
 <div class="table-scroll"><table>
@@ -189,7 +189,7 @@ $$</p>
 <p><strong>Proof.</strong> The bar conjugates the two complex coordinates, and the conjugate of a product of complex numbers is the product of the conjugates, so it is antilinear; the tessarine sign negates the second coordinate and leaves the first, $(\lambda Q_{\blacktriangle})-(\lambda Q_{\blacktriangledown})j=\lambda(Q_{\blacktriangle}-jQ_{\blacktriangledown})$, so it is linear; the star is the composite of the bar and the tessarine sign and is antilinear as the composite of an antilinear and a linear map; and the flat is $-{}^{*}$, which is antilinear as well since $-1$ is real.</p>
 <p><strong>Corollary (which slot carries which conjugation).</strong> A product whose first slot carries the tessarine sign and whose second slot carries the star,
 $$
-\breve Q_{1,\mathrm{ts}}\breve Q_{2}\quad\text{and}\quad \breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*},
+\breve Q_{\mathrm{ts},1}\breve Q_{2}\quad\text{and}\quad \breve Q_{\mathrm{ts},1}\breve Q_{2}^{*},
 $$
 is $\mathbb{C}$-<strong>linear in the first</strong> variable and, for the star, $\mathbb{C}$-<strong>antilinear in the second</strong>; a product whose first slot carries the identity is $\mathbb{C}$-linear in the first variable. This is the definitional clause of <em>The Four Products, Their Forms and Their Algebraic Norms</em>, and it is the reason the two sesquilinear products are the ones carrying the star.</p>
 <p>The map $J$ of §<em>The Complex Structure</em> is the other side of the same coin: it is the real-linear operator of the complex structure, and it is the scalar action that the antilinear maps fail to commute with. The distinction <em>linear against antilinear</em> over $\mathbb{C}$ and the distinction <em>real structure against complex structure</em> are two readings of the same fact, and the corpus keeps both.</p>
@@ -199,7 +199,7 @@ is $\mathbb{C}$-<strong>linear in the first</strong> variable and, for the star,
 <ul>
 <li>the fixed space of the <strong>tessarine sign</strong> is the <strong>scalar line</strong> $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;</li>
 <li>the anti-fixed space of the <strong>tessarine sign</strong> is the <strong>$j$-line</strong>, of real dimension two, spanned by $j,ij$;</li>
-<li>the fixed space of the <strong>bar</strong> is the <strong>real subalgebra</strong> $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}^{\mathrm{red}}$.</li>
+<li>the fixed space of the <strong>bar</strong> is the <strong>real subalgebra</strong> $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}_{\mathrm{red}}$.</li>
 </ul>
 <p><strong>Remark (the algebra is commutative, so its ring centre is not a proper subspace).</strong> Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its <strong>ring centre is the whole algebra</strong> and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a <em>central</em> subspace, this category reads the <strong>scalar line</strong>, and the difference is taken up in <em>Subspaces and Decompositions</em>. The warning is stated here because it bears on every later use of the word <em>central</em>: in this category <em>central</em> names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.</p>
 <h2 id="summary">Summary</h2>
@@ -276,7 +276,7 @@ and the passage between them is the realification and the restriction of scalars
 <li><a href="the-four-vector-element-representation-of-the-reduced-biquaternions.html">The Four-Vector Element Representation of the Reduced Biquaternions</a>, for the real quadruple and the complex pair as element representations.</li>
 <li><a href="algebra-and-element-conventions.html">Conventions in Mathematics</a>, §<em>The Elements and their Coefficients</em>, for the scalar part, the $j$-part and the two complex coordinates.</li>
 <li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.</li>
-<li><a href="the-split-complexoid-as-a-vector-space-over-r.html">The Split-Complexoid as a Vector Space over $\mathbb{R}$</a>, for the real companion $\mathbb{C}^{\mathrm{spl}}$ and its self-interpretation over the algebra.</li>
+<li><a href="the-split-complexoid-as-a-vector-space-over-r.html">The Split-Complexoid as a Vector Space over $\mathbb{R}$</a>, for the real companion $\mathbb{C}_{\mathrm{spl}}$ and its self-interpretation over the algebra.</li>
 </ul>
       </div>
     </main>

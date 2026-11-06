@@ -74,9 +74,9 @@
 <p>Every element of $\Sigma_{11}$ is the ordered product of a positive real scale, a central phase and two unit factors,</p>
 <p>$$
 \tilde{Q} = r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
+= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$</p>
-<p>The four factors are those of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Four Factors</em>, and their exponential forms those of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>The Decomposition</em>: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta^{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the phase.</p>
+<p>The four factors are those of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Four Factors</em>, and their exponential forms those of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>The Decomposition</em>: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the phase.</p>
 <p><strong>The Hamilton root pairing</strong> is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $\Rho = r\exp(i\alpha)$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec U\Theta)$ of a <strong>root</strong> of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec U$ is the root proportional to $\vec Q$, normalised by $\vec U^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/\Rho$ and $\sin\Theta = B/\Rho$, where $B^2 = \langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$.</p>
 <p>$$
 \tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\alpha), \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
@@ -131,7 +131,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The second half reads the same word at the roots of one, where it closes; the roots of one carry a second exponential form, a single exponential of the halving idempotent, and the two forms are tied by the product of the last two factors. The two exponents of the non-central factors, $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, are one Hermitian and one real pure element; they do not commute in general, and the exponent of the single exponential is their sum exactly when the axes are parallel or one factor is central.</p>
+<p>The second half reads the same word at the roots of one, where it closes; the roots of one carry a second exponential form, a single exponential of the halving idempotent, and the two forms are tied by the product of the last two factors. The two exponents of the non-central factors, $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, are one Hermitian and one real pure element; they do not commute in general, and the exponent of the single exponential is their sum exactly when the axes are parallel or one factor is central.</p>
 <h2 id="the-results-used">The Results Used</h2>
 <p>The article takes the following results as established and does not prove them again.</p>
 <div class="table-scroll"><table>
@@ -203,7 +203,7 @@ $$</p>
 \tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\alpha) = \sqrt{\langle\tilde Q\rangle_{\natural}}, \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
 $$</p>
 <p>The modulus is the complex scalar $\Rho$ of the polar decomposition, and the exponential is the whole rotor part, boost and rotation together. The identification of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with a single exponential is the content of the construction of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, and it is why the Hamilton representation generalises the quaternion polar decomposition: when all four coefficients are real, $\tilde U_{\mathrm b} = e_t$, $\tilde u_{\mathrm r}$ is the unit quaternion, and the representation reduces to $\tilde Q = r\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ term by term.</p>
-<p>Both non-central factors of the polar word are themselves exponentials of a single element, so the Hamilton factor is the single exponential of a <strong>product of two exponentials</strong>: the boost is $\tilde U_{\mathrm b}=\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and the rotor is $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u_{\mathrm r})$, with the closed forms of §<em>The Decomposition</em> of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>. Each exponent is a parameter times a root of $\pm e_t$: $i\vec u_{\mathrm b}$ is a Hermitian root of $+e_t$ and $\vec u_{\mathrm r}$ a real pure root of $-e_t$. Their product is again a single exponential because it has unit norm, and on the domain of the representation its angle and axis are read from the element as the complex $\Theta$ and the root $\vec U$; on aligned words $\Theta=\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}$, while in general the two parameters do not separate. The exponent of that single exponential is a complex multiple $\Theta\vec U$ of a root of $-e_t$, and it is the sum $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ of the two exponents of the factors exactly when the two axes are parallel or one of the two factors is central, as the second half shows.</p>
+<p>Both non-central factors of the polar word are themselves exponentials of a single element, so the Hamilton factor is the single exponential of a <strong>product of two exponentials</strong>: the boost is $\tilde U_{\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and the rotor is $\tilde u_{\mathrm r}=\exp(\frac{\theta}{2}\vec u_{\mathrm r})$, with the closed forms of §<em>The Decomposition</em> of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>. Each exponent is a parameter times a root of $\pm e_t$: $i\vec u_{\mathrm b}$ is a Hermitian root of $+e_t$ and $\vec u_{\mathrm r}$ a real pure root of $-e_t$. Their product is again a single exponential because it has unit norm, and on the domain of the representation its angle and axis are read from the element as the complex $\Theta$ and the root $\vec U$; on aligned words $\Theta=\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$, while in general the two parameters do not separate. The exponent of that single exponential is a complex multiple $\Theta\vec U$ of a root of $-e_t$, and it is the sum $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ of the two exponents of the factors exactly when the two axes are parallel or one of the two factors is central, as the second half shows.</p>
 <h3 id="the-statement">The Statement</h3>
 <p><strong>Theorem (the representation).</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$, and put</p>
 <p>$$
@@ -263,10 +263,10 @@ $$</p>
 <h2 id="the-second-factor-the-lorentz-transformation">The Second Factor: The Lorentz Transformation</h2>
 <p>The second factor is the whole non-central part of the polar word, the boost and the rotor multiplied,</p>
 <p>$$
-\tilde U^{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\Rho} ,
-\qquad \tilde U^{\mathrm{lor}}\,\tilde U^{\mathrm{lor}}{}^{\natural} = e_t .
+\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\Rho} ,
+\qquad \tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor}}{}^{\natural} = e_t .
 $$</p>
-<p>It is a boost of rapidity $\theta^{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U^{\mathrm{lor}}$ is the <strong>Lorentz transformation</strong>: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear sandwich of the physics articles is this factor, written $\tilde U$ there.</p>
+<p>It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the <strong>Lorentz transformation</strong>: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear sandwich of the physics articles is this factor, written $\tilde U$ there.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -277,7 +277,7 @@ $$</p>
 <tbody>
 <tr>
 <td>formula</td>
-<td>$\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/\Rho$</td>
+<td>$\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/\Rho$</td>
 </tr>
 <tr>
 <td>kind</td>
@@ -285,11 +285,11 @@ $$</p>
 </tr>
 <tr>
 <td>norm</td>
-<td>$\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$</td>
+<td>$\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$</td>
 </tr>
 <tr>
 <td>constituents</td>
-<td>the boost of rapidity $\theta^{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and the rotor of angle $\theta$ about $\vec u_{\mathrm r}$</td>
+<td>the boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and the rotor of angle $\theta$ about $\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>exponent</td>
@@ -315,7 +315,7 @@ $$</p>
 \tilde Q\vec\Upsilon_+=\lambda_-\vec\Upsilon_+ ,\qquad
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_- ,
 $$</p>
-<p>with $\lambda_\pm=\Rho\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\Rho$ is central, $L_{\tilde U^{\mathrm{lor}}}=\Rho^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.</p>
+<p>with $\lambda_\pm=\Rho\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\Rho$ is central, $L_{\tilde U_{\mathrm{lor}}}=\Rho^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.</p>
 <p><strong>The two spinor spaces.</strong> The two Peirce carriers, which here are the minimal left ideals,</p>
 <p>$$
 S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+ ,\qquad
@@ -332,7 +332,7 @@ $$</p>
 <p>the two spinor spaces are the two columns, and</p>
 <p>$$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-),\qquad
-\mathsf M_2^Q(\tilde U^{\mathrm{lor}})=\operatorname{diag}\bigl(\exp(i\Theta),\exp(-i\Theta)\bigr).
+\mathsf M_2^Q(\tilde U_{\mathrm{lor}})=\operatorname{diag}\bigl(\exp(i\Theta),\exp(-i\Theta)\bigr).
 $$</p>
 <p>Both columns are acted on by the same diagonal matrix, which is the matrix form of the statement that $L_{\tilde Q}$ preserves each left ideal and has the same spectrum on each. The pairing of this article is the scalar reading of that diagonal.</p>
 <h2 id="existence-uniqueness-and-the-domain">Existence, Uniqueness and the Domain</h2>
@@ -579,7 +579,7 @@ $$</p>
 <tr>
 <td>two exponents</td>
 <td>$\mathcal H,\mathcal R$</td>
-<td>$i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\frac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>the factors are exponentials; their bracket measures the failure of additivity</td>
 </tr>
 <tr>
@@ -617,7 +617,7 @@ $$</p>
 <tr>
 <td>$e_t$</td>
 <td>$\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
-<td>$\theta^{\mathrm{rpd}}=0$ and $\theta\in\{0,2\pi\}$</td>
+<td>$\theta_{\mathrm{rpd}}=0$ and $\theta\in\{0,2\pi\}$</td>
 </tr>
 <tr>
 <td>$-e_t$</td>
@@ -626,7 +626,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first row is the central pair. A root of unit norm has $r=1$ and $\alpha=0$, so its word is the unit product itself, and the only roots of unit norm are $\pm e_t$. The second row is the non-central family: the norm $-e_t$ forces $\exp(2i\alpha)=-1$, hence $\exp(i\alpha)=i$, and the unit product must itself square to $-e_t$, which on the two axes is the orthogonality of the axes together with the half-turn of the rotor, $\tilde u_{\mathrm r}=\vec u_{\mathrm r}$. The family has four real parameters, the rapidity $\theta^{\mathrm{rpd}}$, the rotor axis (two) and the boost axis in the plane orthogonal to it (one), which is the dimension of the classification.</p>
+<p>The first row is the central pair. A root of unit norm has $r=1$ and $\alpha=0$, so its word is the unit product itself, and the only roots of unit norm are $\pm e_t$. The second row is the non-central family: the norm $-e_t$ forces $\exp(2i\alpha)=-1$, hence $\exp(i\alpha)=i$, and the unit product must itself square to $-e_t$, which on the two axes is the orthogonality of the axes together with the half-turn of the rotor, $\tilde u_{\mathrm r}=\vec u_{\mathrm r}$. The family has four real parameters, the rapidity $\theta_{\mathrm{rpd}}$, the rotor axis (two) and the boost axis in the plane orthogonal to it (one), which is the dimension of the classification.</p>
 <h3 id="the-root-from-its-coordinates">The Root From Its Coordinates</h3>
 <p>The coordinates give the two factors directly. Write $Ζ_\mu=\zeta_\mu+i\zeta'_\mu$ and collect the real triples $\vec\zeta=(\zeta_x,\zeta_y,\zeta_z)$ and $\vec\zeta'=(\zeta'_x,\zeta'_y,\zeta'_z)$. The single complex equation $Ζ_x^2+Ζ_y^2+Ζ_z^2=-1$ is the pair</p>
 <p>$$
@@ -636,11 +636,11 @@ $$</p>
 <p>$$
 \cosh t=\lvert\vec\zeta'\rvert,\qquad \sinh t=\lvert\vec\zeta\rvert,\qquad \vec u_{\mathrm n}=\frac{\vec\zeta'}{\lvert\vec\zeta'\rvert},\qquad \vec u_{\mathrm b}=\Bigl(\frac{\vec\zeta}{\lvert\vec\zeta\rvert}\Bigr)\vec u_{\mathrm n}.
 $$</p>
-<p>The imaginary triple therefore carries the rotor axis, $\vec u_{\mathrm r}=\vec u_{\mathrm n}$, and the real triple the boost axis; the rapidity of the polar word is $\theta^{\mathrm{rpd}}=2t$. The reconstruction of the root from the two triples is the hyperbolic form itself, which the cited article proves. The polar word names the same two factors and adds nothing on the root set.</p>
+<p>The imaginary triple therefore carries the rotor axis, $\vec u_{\mathrm r}=\vec u_{\mathrm n}$, and the real triple the boost axis; the rapidity of the polar word is $\theta_{\mathrm{rpd}}=2t$. The reconstruction of the root from the two triples is the hyperbolic form itself, which the cited article proves. The polar word names the same two factors and adds nothing on the root set.</p>
 <h3 id="the-two-exponents">The Two Exponents</h3>
 <p>The two non-central factors are exponentials, and the elements whose exponentials they are, rather than the factors themselves, are the primitive data of the word. The two exponents are</p>
 <p>$$
-\mathcal H=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\qquad \mathcal R=\frac{\theta}{2}\vec u_{\mathrm r},\qquad \tilde U_{\mathrm b}=\exp(\mathcal H),\qquad \tilde u_{\mathrm r}=\exp(\mathcal R).
+\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\qquad \mathcal R=\frac{\theta}{2}\vec u_{\mathrm r},\qquad \tilde U_{\mathrm b}=\exp(\mathcal H),\qquad \tilde u_{\mathrm r}=\exp(\mathcal R).
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -655,9 +655,9 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathcal H$</td>
-<td>$i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>Hermitian, in $\mathbb{M}_+$</td>
-<td>$\frac{\theta^{\mathrm{rpd}}^2}{4}e_t$</td>
+<td>$\frac{\theta_{\mathrm{rpd}}^2}{4}e_t$</td>
 <td>the boost $\tilde U_{\mathrm b}$</td>
 </tr>
 <tr>
@@ -669,36 +669,36 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The Hermitian exponent is the real $\frac{\theta^{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which <em>The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em> reads at the level of the element.</p>
+<p>The Hermitian exponent is the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which <em>The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em> reads at the level of the element.</p>
 <p><strong>The root on the exponents.</strong> On the root set the rotor is pure, so $\theta=\pi$ and the rotor exponent is the same quarter turn $\mathcal R=\frac{\pi}{2}\vec u_{\mathrm r}$ for every root; the roots are separated by the rapidity inside $\mathcal H$ and by the two directions, and the closing condition $\tilde{Ζ}^2=e_t$ is exactly their orthogonality,</p>
 <p>$$
 \tilde{Ζ}=i\exp(\mathcal H)\exp(\mathcal R),\qquad \tilde\Pi_\pm=\frac12\bigl(e_t\pm i\exp(\mathcal H)\exp(\mathcal R)\bigr).
 $$</p>
 <p><strong>The bracket.</strong> The two exponents do not commute in general, and their bracket is</p>
 <p>$$
-[\mathcal H,\mathcal R]=i\frac{\theta^{\mathrm{rpd}}\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr),
+[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr),
 $$</p>
-<p>nonzero as soon as $\theta^{\mathrm{rpd}}\theta\neq0$ and the two axes are not parallel. On the root set, where the axes are orthogonal and $\theta=\pi$, it is the Hermitian root $i\vec u_{\mathrm b}\vec u_{\mathrm r}$ of $+e_t$ multiplied by the real $\frac{\pi\theta^{\mathrm{rpd}}}{2}$,</p>
+<p>nonzero as soon as $\theta_{\mathrm{rpd}}\theta\neq0$ and the two axes are not parallel. On the root set, where the axes are orthogonal and $\theta=\pi$, it is the Hermitian root $i\vec u_{\mathrm b}\vec u_{\mathrm r}$ of $+e_t$ multiplied by the real $\frac{\pi\theta_{\mathrm{rpd}}}{2}$,</p>
 <p>$$
-[\mathcal H,\mathcal R]=i\frac{\pi\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \bigl(i\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr)^2=e_t .
+[\mathcal H,\mathcal R]=i\frac{\pi\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \bigl(i\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr)^2=e_t .
 $$</p>
-<p>A non-zero bracket is exactly what forbids adding the exponents, and the roots of norm $-e_t$ are the elements on which it does not vanish, except at the Hermitian root $\theta^{\mathrm{rpd}}=0$.</p>
+<p>A non-zero bracket is exactly what forbids adding the exponents, and the roots of norm $-e_t$ are the elements on which it does not vanish, except at the Hermitian root $\theta_{\mathrm{rpd}}=0$.</p>
 <h3 id="the-single-exponential">The Single Exponential</h3>
 <p>Whether the word adds is decided by the bracket of the two factors, and the non-Hermitian roots of one are its extreme case. The bracket of the two factors is</p>
 <p>$$
-[\tilde U_{\mathrm b},\tilde u_{\mathrm r}] = 2i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr) ,
+[\tilde U_{\mathrm b},\tilde u_{\mathrm r}] = 2i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr) ,
 $$</p>
 <p>so the two factors commute exactly when the two axes are parallel or one of the two factors is central,</p>
 <p>$$
-[\tilde U_{\mathrm b},\tilde u_{\mathrm r}] = 0 \iff \vec u_{\mathrm b}\parallel\vec u_{\mathrm r} \ \text{ or } \ \theta^{\mathrm{rpd}} = 0 \ \text{ or } \ \theta\in\{0,2\pi\} .
+[\tilde U_{\mathrm b},\tilde u_{\mathrm r}] = 0 \iff \vec u_{\mathrm b}\parallel\vec u_{\mathrm r} \ \text{ or } \ \theta_{\mathrm{rpd}} = 0 \ \text{ or } \ \theta\in\{0,2\pi\} .
 $$</p>
 <p>Call such a word <strong>aligned</strong>. The parallelism is a condition of codimension two on the element, the two axes being two independent directions of the axis sphere, while the central cases are lower-dimensional; a generic element is therefore not aligned. The worked example below is aligned because its two axes were chosen collinear, which is a special choice.</p>
-<p><strong>The roots of norm $-e_t$ are aligned only at the Hermitian root.</strong> The axes of a root of norm $-e_t$ are orthogonal, so the bracket of a root is $2i\sinh\frac{\theta^{\mathrm{rpd}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$, which vanishes only at $\theta^{\mathrm{rpd}} = 0$, the Hermitian root $i\vec u_{\mathrm r}$ whose boost is trivial. Apart from that root, the roots of norm $-e_t$ sit at one extreme of the bracket and the aligned elements at the other.</p>
+<p><strong>The roots of norm $-e_t$ are aligned only at the Hermitian root.</strong> The axes of a root of norm $-e_t$ are orthogonal, so the bracket of a root is $2i\sinh\frac{\theta_{\mathrm{rpd}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$, which vanishes only at $\theta_{\mathrm{rpd}} = 0$, the Hermitian root $i\vec u_{\mathrm r}$ whose boost is trivial. Apart from that root, the roots of norm $-e_t$ sit at one extreme of the bracket and the aligned elements at the other.</p>
 <p><strong>An aligned word is a single exponential with a complex number inside.</strong> With $\vec u_{\mathrm b} = \epsilon\vec u_{\mathrm r} = \epsilon\vec u$ and $\epsilon = \pm1$, the two exponents add, their sum is one complex number times the common direction, and the product of the two factors is the single exponential</p>
 <p>$$
-\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\mathcal H+\mathcal R) = \exp\Bigl(\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}\Bigr)\vec u\Bigr) = \cos\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}\Bigr)e_t+\sin\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}\Bigr)\vec u .
+\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\mathcal H+\mathcal R) = \exp\Bigl(\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}\Bigr)\vec u\Bigr) = \cos\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}\Bigr)e_t+\sin\Bigl(\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}\Bigr)\vec u .
 $$</p>
-<p>The number inside is the rotation half-angle plus $i$ times the rapidity half-angle, and it is exactly the complex angle of the Hamilton representation of that element: on the aligned words $\Theta = \frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}$ and $\vec U = \vec u$ up to sign. The aligned line is where the two halves of the article meet term by term, the complex angle of the element degenerating into the sum of its two exponents.</p>
+<p>The number inside is the rotation half-angle plus $i$ times the rapidity half-angle, and it is exactly the complex angle of the Hamilton representation of that element: on the aligned words $\Theta = \frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$ and $\vec U = \vec u$ up to sign. The aligned line is where the two halves of the article meet term by term, the complex angle of the element degenerating into the sum of its two exponents.</p>
 <p><strong>Away from the aligned line the exponents do not add.</strong> The product is then not the exponential of the sum, and the gap is the Baker–Campbell–Hausdorff series of the two exponents,</p>
 <p>$$
 \Theta\vec U = \mathcal H+\mathcal R+\frac{1}{2}[\mathcal H,\mathcal R]+\frac{1}{12}\bigl[\mathcal H,[\mathcal H,\mathcal R]\bigr]-\frac{1}{12}\bigl[\mathcal R,[\mathcal H,\mathcal R]\bigr]+\cdots ,
@@ -735,7 +735,7 @@ $$</p>
 <p>$$
 -i\tilde{Ζ} = \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\Bigl(\vec U'\frac{\pi}{2}\Bigr) = \vec U' , \qquad \vec U' = -i\tilde{Ζ} .
 $$</p>
-<p>The non-Hermitian roots of one are therefore the elements furthest from the aligned case and, at the same time, the elements whose single exponential carries a real number in place of the complex one. The complex angle is not lost with them: it is the aligned words that carry the genuinely complex number $\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}$ of the subsection above.</p>
+<p>The non-Hermitian roots of one are therefore the elements furthest from the aligned case and, at the same time, the elements whose single exponential carries a real number in place of the complex one. The complex angle is not lost with them: it is the aligned words that carry the genuinely complex number $\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$ of the subsection above.</p>
 <h3 id="the-idempotent-exponential-form">The Idempotent Exponential Form</h3>
 <p>Every root of one is the exponential of its halving idempotent. Since $\tilde\Pi_-$ is idempotent the exponential series truncates,</p>
 <p>$$
@@ -755,12 +755,12 @@ i\pi\tilde\Pi_-=\tfrac{i\pi}{2}e_t+\tfrac{\pi}{2}\tilde U_{\mathrm b}\tilde u_{\
 $$</p>
 <p>The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §<em>The Idempotent Exponential Form of a Root</em>; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\Rho=i$ on the norm $-e_t$ family,</p>
 <p>$$
-\tilde U^{\mathrm{lor}}=\frac{\tilde{Ζ}}{\Rho}=-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde U_{\mathrm{lor}}=\frac{\tilde{Ζ}}{\Rho}=-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$</p>
 <h3 id="the-hermitian-roots">The Hermitian Roots</h3>
 <p>The roots of one that are Hermitian, $\tilde{Ζ}^{*}=\tilde{Ζ}$, are the zero-rapidity case. On a root of norm $-e_t$ the word is $\tilde{Ζ}=i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ pure and the axes orthogonal, and</p>
 <p>$$
-\tilde{Ζ}^{*}-\tilde{Ζ}=2\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},
+\tilde{Ζ}^{*}-\tilde{Ζ}=2\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},
 $$</p>
 <p>which vanishes exactly when the boost is trivial. The Hermitian roots are therefore the central pair and the purely imaginary family,</p>
 <p>$$
@@ -768,9 +768,9 @@ $$</p>
 $$</p>
 <p>as in <em>Idempotents</em>, §<em>The Roots of One</em>. In the idempotent form the halving element of a Hermitian root is Hermitian.</p>
 <h3 id="the-two-pure-elements">The Two Pure Elements</h3>
-<p><strong>The two directions.</strong> The root set is generated by two orthogonal unit pure real quaternions and one rapidity: the rotor axis $\vec u_{\mathrm r}$, the boost axis $\vec u_{\mathrm b}$ and $\theta^{\mathrm{rpd}}\ge0$. Their product $\vec u_{\mathrm b}\vec u_{\mathrm r}$ is the third unit pure direction, perpendicular to both, and</p>
+<p><strong>The two directions.</strong> The root set is generated by two orthogonal unit pure real quaternions and one rapidity: the rotor axis $\vec u_{\mathrm r}$, the boost axis $\vec u_{\mathrm b}$ and $\theta_{\mathrm{rpd}}\ge0$. Their product $\vec u_{\mathrm b}\vec u_{\mathrm r}$ is the third unit pure direction, perpendicular to both, and</p>
 <p>$$
-\tilde{Ζ}=i\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde{Ζ}^2=e_t,\qquad \langle\tilde{Ζ}\rangle_{\natural}=-e_t
+\tilde{Ζ}=i\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde{Ζ}^2=e_t,\qquad \langle\tilde{Ζ}\rangle_{\natural}=-e_t
 $$</p>
 <p>(§<em>The Root From Its Coordinates</em> above, and <em>Idempotents</em>, §<em>The Non-Hermitian Roots</em>). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.</p>
 <p><strong>The element.</strong> The same two non-central factors, dialled by the central scale and the central phase, are the general element of the domain,</p>
@@ -825,14 +825,14 @@ $$</p>
 <td>$\vec Q=0$</td>
 </tr>
 <tr>
-<td>root of norm $-e_t$, $\theta^{\mathrm{rpd}}=1.386294$</td>
+<td>root of norm $-e_t$, $\theta_{\mathrm{rpd}}=1.386294$</td>
 <td>yes</td>
 <td>$i$</td>
 <td>$\tfrac{\pi}{2}e_t$</td>
 <td>$1.25\,\vec u_{\mathrm r}+0.75\,i\,\vec e_z$</td>
 </tr>
 <tr>
-<td>skew axes, $\theta=1.2$, $\theta^{\mathrm{rpd}}=0.8$</td>
+<td>skew axes, $\theta=1.2$, $\theta_{\mathrm{rpd}}=0.8$</td>
 <td>yes</td>
 <td>$e_t$</td>
 <td>$0.551851+0.307926i$</td>
@@ -852,13 +852,13 @@ $$</p>
 <p>so that $\tilde{Q} = \Rho(\cos\Theta+\vec U\sin\Theta)$; the identity $\exp(\vec U\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ then holds term by term, both sides being $\tilde{Q}/\Rho$, and with it the equality of the Hamilton representation with the first pairing of the four factors.</p>
 <p><em>The two exponents.</em> The polar data also give the two exponents of the word,</p>
 <p>$$
-\mathcal H = i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = -0.169107833\,i\,\vec e_x-0.338215666\,i\,\vec e_y , \qquad \mathcal R = \frac{\theta}{2}\vec u_{\mathrm r} = 0.483363900\,\vec e_x+0.966727800\,\vec e_y ,
+\mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = -0.169107833\,i\,\vec e_x-0.338215666\,i\,\vec e_y , \qquad \mathcal R = \frac{\theta}{2}\vec u_{\mathrm r} = 0.483363900\,\vec e_x+0.966727800\,\vec e_y ,
 $$</p>
 <p>and here $\vec u_{\mathrm b} = -\vec u_{\mathrm r}$, so the word is aligned and the exponents add. Their sum is</p>
 <p>$$
 \mathcal H+\mathcal R = \bigl(0.483363900-0.169107833i\bigr)\vec e_x+\bigl(0.966727800-0.338215666i\bigr)\vec e_y ,
 $$</p>
-<p>the complex number $\frac{\theta}{2}-i\frac{\theta^{\mathrm{rpd}}}{2} = 1.080834538-0.378136610i$ times the rotor axis, and it is exactly the Hamilton exponent: $\Theta\vec U = \mathcal H+\mathcal R$ to machine precision, with $\Theta = 1.080834538-0.378136610i$ and $\vec U = \vec u_{\mathrm r}$. The alignment here is an accident of the example, whose two axes were chosen collinear; the last example has the skew case.</p>
+<p>the complex number $\frac{\theta}{2}-i\frac{\theta_{\mathrm{rpd}}}{2} = 1.080834538-0.378136610i$ times the rotor axis, and it is exactly the Hamilton exponent: $\Theta\vec U = \mathcal H+\mathcal R$ to machine precision, with $\Theta = 1.080834538-0.378136610i$ and $\vec U = \vec u_{\mathrm r}$. The alignment here is an accident of the example, whose two axes were chosen collinear; the last example has the skew case.</p>
 <h3 id="the-element-with-a-null-vector-part">The Element with a Null Vector Part</h3>
 <p>Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the degenerate case of <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Three Strata</em>, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.</p>
 <h3 id="the-element-with-a-vanishing-real-part">The Element with a Vanishing Real Part</h3>
@@ -870,9 +870,9 @@ $$</p>
 <h3 id="the-scalar-imaginary">The Scalar Imaginary</h3>
 <p>Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>, §<em>The Boundary</em>. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.</p>
 <h3 id="an-element-at-a-root-of-one">An Element at a Root of One</h3>
-<p>Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$ and a boost axis orthogonal to it, $\vec u_{\mathrm b} = (\vec e_x-\vec e_y)/\sqrt2$, with the rapidity fixed by $\cosh\tfrac{\theta^{\mathrm{rpd}}}{2} = \tfrac{5}{4}$ and $\sinh\tfrac{\theta^{\mathrm{rpd}}}{2} = \tfrac{3}{4}$. The two axes multiply to the third pure direction, $\vec u_{\mathrm b}\vec u_{\mathrm r} = \vec e_z$, and the root is</p>
+<p>Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$ and a boost axis orthogonal to it, $\vec u_{\mathrm b} = (\vec e_x-\vec e_y)/\sqrt2$, with the rapidity fixed by $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2} = \tfrac{5}{4}$ and $\sinh\tfrac{\theta_{\mathrm{rpd}}}{2} = \tfrac{3}{4}$. The two axes multiply to the third pure direction, $\vec u_{\mathrm b}\vec u_{\mathrm r} = \vec e_z$, and the root is</p>
 <p>$$
-\tilde{Ζ} = i\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r} = 0.883883476\,i\,\vec e_x+0.883883476\,i\,\vec e_y-0.75\,\vec e_z , \qquad \tilde{Ζ}^2 = e_t , \qquad \langle\tilde{Ζ}\rangle_{\natural} = -e_t .
+\tilde{Ζ} = i\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r} = 0.883883476\,i\,\vec e_x+0.883883476\,i\,\vec e_y-0.75\,\vec e_z , \qquad \tilde{Ζ}^2 = e_t , \qquad \langle\tilde{Ζ}\rangle_{\natural} = -e_t .
 $$</p>
 <p>Its halving idempotent and the product of the last two factors of the word are</p>
 <p>$$
@@ -881,17 +881,17 @@ $$</p>
 <p>and the root is the single exponential of its halving idempotent, $\tilde{Ζ} = \exp(i\pi\tilde\Pi_-)$. The element is Hermitian only at zero rapidity, where it reduces to $i\vec u_{\mathrm r}$.</p>
 <p><em>The two exponents and the bracket.</em> The exponents of the word are</p>
 <p>$$
-\mathcal H = i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = 0.490129072\,i\,\vec e_x-0.490129072\,i\,\vec e_y , \qquad \mathcal R = \frac{\pi}{2}\vec u_{\mathrm r} = 1.110720735\,\vec e_x+1.110720735\,\vec e_y ,
+\mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = 0.490129072\,i\,\vec e_x-0.490129072\,i\,\vec e_y , \qquad \mathcal R = \frac{\pi}{2}\vec u_{\mathrm r} = 1.110720735\,\vec e_x+1.110720735\,\vec e_y ,
 $$</p>
-<p>with $\theta^{\mathrm{rpd}} = 1.386294361$, and their bracket is $[\mathcal H,\mathcal R] = i\frac{\pi\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\vec u_{\mathrm r} = 2.177586090\,i\,\vec e_z$, of length $2.177586090$. The two axes are orthogonal, so the root is not aligned and the exponents do not add. The Hamilton data of the root show the gap: its complex angle is the real quarter turn $\Theta = \frac{\pi}{2}$, and $\Theta\vec U$ differs from $\mathcal H+\mathcal R$ by $1.178097$ in the largest coefficient, against $1.088793$ for half the bracket, the leading term of the Baker–Campbell–Hausdorff series.</p>
+<p>with $\theta_{\mathrm{rpd}} = 1.386294361$, and their bracket is $[\mathcal H,\mathcal R] = i\frac{\pi\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\vec u_{\mathrm r} = 2.177586090\,i\,\vec e_z$, of length $2.177586090$. The two axes are orthogonal, so the root is not aligned and the exponents do not add. The Hamilton data of the root show the gap: its complex angle is the real quarter turn $\Theta = \frac{\pi}{2}$, and $\Theta\vec U$ differs from $\mathcal H+\mathcal R$ by $1.178097$ in the largest coefficient, against $1.088793$ for half the bracket, the leading term of the Baker–Campbell–Hausdorff series.</p>
 <h3 id="an-element-with-skew-axes">An Element with Skew Axes</h3>
-<p>Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$, the boost axis $\vec u_{\mathrm b} = \vec e_y$, the rotation angle $\theta = 1.2$ and the rapidity $\theta^{\mathrm{rpd}} = 0.8$. The two directions meet at $45$ degrees, so the word is neither aligned nor orthogonal, and the product of the two factors is</p>
+<p>Take the rotor axis $\vec u_{\mathrm r} = (\vec e_x+\vec e_y)/\sqrt2$, the boost axis $\vec u_{\mathrm b} = \vec e_y$, the rotation angle $\theta = 1.2$ and the rapidity $\theta_{\mathrm{rpd}} = 0.8$. The two directions meet at $45$ degrees, so the word is neither aligned nor orthogonal, and the product of the two factors is</p>
 <p>$$
 \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \bigl(0.892247531-0.163998009i\bigr)e_t+0.431631682\,\vec e_x+\bigl(0.431631682+0.339008523i\bigr)\vec e_y-0.163998009\,i\,\vec e_z .
 $$</p>
 <p>The exponents and their bracket are</p>
 <p>$$
-\mathcal H = 0.4\,i\,\vec e_y , \qquad \mathcal R = 0.424264069\,\vec e_x+0.424264069\,\vec e_y , \qquad [\mathcal H,\mathcal R] = i\frac{\theta^{\mathrm{rpd}}\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr) = -0.339411255\,i\,\vec e_z ,
+\mathcal H = 0.4\,i\,\vec e_y , \qquad \mathcal R = 0.424264069\,\vec e_x+0.424264069\,\vec e_y , \qquad [\mathcal H,\mathcal R] = i\frac{\theta_{\mathrm{rpd}}\theta}{2}\bigl(\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr) = -0.339411255\,i\,\vec e_z ,
 $$</p>
 <p>and the exponents do not add: the difference $\exp(\mathcal H+\mathcal R)-\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ has Euclidean norm $0.168866$ in the coefficients. The single exponential is nevertheless there, with the genuinely complex angle and the root of $-e_t$</p>
 <p>$$
@@ -1002,13 +1002,13 @@ $$</p>
 <td>$-e_t$</td>
 <td>$i\tilde U_{\mathrm b}\,\vec u_{\mathrm r}$</td>
 <td>$\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$</td>
-<td>$i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>$\tfrac{\pi}{2}\vec u_{\mathrm r}$</td>
 <td>no</td>
 </tr>
 </tbody>
 </table></div>
-<p>The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta^{\mathrm{rpd}}\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent.</p>
+<p>The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1031,7 +1031,7 @@ $$</p>
 <td>the Hamilton representation, the root pairing</td>
 </tr>
 <tr>
-<td>$\tilde U^{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>the second factor, the Lorentz transformation</td>
 </tr>
 <tr>
@@ -1072,7 +1072,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Theta$</td>
-<td>the complex angle of the single exponential; it is $\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2}$ on aligned words and does not separate in general</td>
+<td>the complex angle of the single exponential; it is $\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$ on aligned words and does not separate in general</td>
 </tr>
 <tr>
 <td>$\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
@@ -1119,15 +1119,15 @@ $$</p>
 <td>the product of the last two factors of the polar word, read from a root of norm $-e_t$</td>
 </tr>
 <tr>
-<td>$\mathcal H = i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
-<td>the exponent of the boost, Hermitian, in $\mathbb{M}_+$, the real $\frac{\theta^{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$</td>
+<td>$\mathcal H = i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>the exponent of the boost, Hermitian, in $\mathbb{M}_+$, the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$</td>
 </tr>
 <tr>
 <td>$\mathcal R = \frac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>the exponent of the rotor, real pure, in $\mathbb{M}_-\cap\mathrm{Vect}(\mathbb{B})$, the real $\frac{\theta}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$</td>
 </tr>
 <tr>
-<td>$[\mathcal H,\mathcal R] = i\frac{\theta^{\mathrm{rpd}}\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$</td>
+<td>$[\mathcal H,\mathcal R] = i\frac{\theta_{\mathrm{rpd}}\theta}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$</td>
 <td>the bracket of the two exponents, vanishing exactly on the aligned words</td>
 </tr>
 <tr>
@@ -1136,14 +1136,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\vec u_{\mathrm b} = \epsilon\vec u_{\mathrm r} = \epsilon\vec u$</td>
-<td>the aligned case, in which $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\bigl((\frac{\theta}{2}+\epsilon i\frac{\theta^{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
+<td>the aligned case, in which $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\bigl((\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
 </tr>
 <tr>
 <td>$\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
 <td>the boost and rotor axes, unit pure real quaternions</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm n}$</td>
+<td>$\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm n}$</td>
 <td>rapidity, rotation angle, and axis of a Hermitian root of one</td>
 </tr>
 <tr>
@@ -1167,7 +1167,7 @@ $$</p>
 <li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-regular-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Regular Biquaternion</a>, for the unit factor $\tilde U=\tilde Q/(r\exp(i\alpha))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.</li>
 <li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a>, for the four exponentials, the existence and uniqueness of the word, and the logarithms that fix the branches.</li>
-<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §<em>The Algorithm</em> of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §<em>The Order of the Factors</em> of that article, for the exponents $i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §<em>The Single Exponential</em> above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §<em>The Algorithm</em> of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §<em>The Order of the Factors</em> of that article, for the exponents $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §<em>The Single Exponential</em> above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.</li>
 <li><a href="the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a>, for the quaternion grouping, the other partial pairing, and the comparison of the two domains.</li>
 <li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a>, for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.</li>
 <li><a href="idempotents.html">Idempotents</a>, for the classification of the roots of one and the halving map to the idempotents.</li>

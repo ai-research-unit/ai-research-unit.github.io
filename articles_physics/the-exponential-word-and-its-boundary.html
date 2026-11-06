@@ -76,11 +76,11 @@
 <p>$$
 \tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},
 \qquad
-\tilde B=\exp\left(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
+\tilde B=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$</p>
-<p>with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$. The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\alpha}$, and the element is a unit exactly when $r\neq0$.</p>
+<p>with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$. The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\alpha}$, and the element is a unit exactly when $r\neq0$.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -151,10 +151,10 @@ $$</p>
 </tr>
 <tr>
 <td>3</td>
-<td>$\tilde B=e^{i\theta^{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
+<td>$\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
 <td>boost</td>
-<td>$i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
-<td>$\theta^{\mathrm{rpd}}\ge0$</td>
+<td>$i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$\theta_{\mathrm{rpd}}\ge0$</td>
 <td>$3$</td>
 <td>congruence by $\tilde B$</td>
 </tr>
@@ -169,7 +169,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The parameters count $1+1+3+3=8$, the real dimension of $\mathbb{B}$. The map from the parameter space to the units is surjective. It is not injective: the boost axis is undefined at $\theta^{\mathrm{rpd}}=0$, the rotor axis is undefined at $\theta=0$, and the phase branch identifies the two square roots of the norm. Apart from those degeneracies, the word is unique once the branch is fixed.</p>
+<p>The parameters count $1+1+3+3=8$, the real dimension of $\mathbb{B}$. The map from the parameter space to the units is surjective. It is not injective: the boost axis is undefined at $\theta_{\mathrm{rpd}}=0$, the rotor axis is undefined at $\theta=0$, and the phase branch identifies the two square roots of the norm. Apart from those degeneracies, the word is unique once the branch is fixed.</p>
 <p>The word is a <strong>section of the word map</strong>, not a section of the exponential. It cuts the fibre of the parameter-to-element map to one point, up to the axis degeneracies. It does not cut the fibre of the exponential: the four exponents sum to the formal exponent, and that sum is not a logarithm.</p>
 <h2 id="the-two-regimes">The Two Regimes</h2>
 <p>The word carries two exponential factors, and they have opposite characters.</p>
@@ -195,11 +195,11 @@ $$</p>
 </tr>
 <tr>
 <td>boost $\tilde B$</td>
-<td>$i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>imaginary</td>
 <td>Hermitian positive</td>
 <td>none</td>
-<td>$2\cosh\frac{\theta^{\mathrm{rpd}}}{2}$</td>
+<td>$2\cosh\frac{\theta_{\mathrm{rpd}}}{2}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -209,7 +209,7 @@ $$</p>
 <h2 id="the-defect">The Defect</h2>
 <p>The formal exponent is the sum of the four exponents,</p>
 <p>$$
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
 $$</p>
 <p>It is the element that the quaternion case would call the logarithm. Here it is not one:</p>
 <p>$$
@@ -217,17 +217,17 @@ $$</p>
 \qquad\text{unless}\qquad
 [\vec u_{\mathrm b},\vec u_{\mathrm r}]=0
 \quad\text{or}\quad
-\theta^{\mathrm{rpd}}\theta=0\;}.
+\theta_{\mathrm{rpd}}\theta=0\;}.
 $$</p>
 <p>The defect is the Baker–Campbell–Hausdorff correction. To first order,</p>
 <p>$$
 \operatorname{Log}\left(\exp\tilde R_\psi\exp\tilde K\right)
 =\tilde R_\psi+\tilde K+\frac12[\tilde R_\psi,\tilde K]+\cdots,
 $$</p>
-<p>and for $\tilde R_\psi=i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde K=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is</p>
+<p>and for $\tilde R_\psi=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\tilde K=\frac{\theta}{2}\vec u_{\mathrm r}$ the first correction is</p>
 <p>$$
 \frac12[\tilde R_\psi,\tilde K]
-=\frac{i\theta^{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+=\frac{i\theta_{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$</p>
 <p>which is again a boost. The sum of a boost exponent and a rotor exponent is corrected by another boost, and the true logarithm is not the sum of the four exponents.</p>
 <div class="table-scroll"><table>
@@ -245,12 +245,12 @@ $$</p>
 <td>the exponents commute</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}=0$ or $\theta=0$</td>
+<td>$\theta_{\mathrm{rpd}}=0$ or $\theta=0$</td>
 <td>zero</td>
 <td>one factor is the identity</td>
 </tr>
 <tr>
-<td>general axes, $\theta^{\mathrm{rpd}}\theta\neq0$</td>
+<td>general axes, $\theta_{\mathrm{rpd}}\theta\neq0$</td>
 <td>nonzero</td>
 <td>the commutator is a boost</td>
 </tr>
@@ -260,11 +260,11 @@ $$</p>
 <h3 id="the-complex-angle">The Complex Angle</h3>
 <p>When the two axes coincide, the exponents commute and the defect vanishes. The word is then a single exponential,</p>
 <p>$$
-\tilde Q=r e^{i\alpha}\exp\left(\vec u\left(\frac{\theta}{2}+i\frac{\theta^{\mathrm{rpd}}}{2}\right)\right),
+\tilde Q=r e^{i\alpha}\exp\left(\vec u\left(\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\right)\right),
 \qquad
 \vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec u,
 $$</p>
-<p>and the exponent is a complex angle on one axis. Its real part is the stored rotation angle and its imaginary part is the stored rapidity. This is the Hamilton angle of the element, up to the factor of two: the word stores $\theta/2$ and $\theta^{\mathrm{rpd}}/2$, while the four-vector factor carries $\theta$ and $\theta^{\mathrm{rpd}}$, as the conventions article warns.</p>
+<p>and the exponent is a complex angle on one axis. Its real part is the stored rotation angle and its imaginary part is the stored rapidity. This is the Hamilton angle of the element, up to the factor of two: the word stores $\theta/2$ and $\theta_{\mathrm{rpd}}/2$, while the four-vector factor carries $\theta$ and $\theta_{\mathrm{rpd}}$, as the conventions article warns.</p>
 <p>When the axes differ, no single complex angle on a real axis exists. The sum of the two exponents is not a logarithm, and the element needs both axes as well as the two angles. A complex angle on a fixed real axis is two real parameters and the axis is two more; the unit group is six-dimensional, so a general element needs a second axis. The single complex angle covers the aligned four-dimensional submanifold, not the group.</p>
 <p><strong>The element is still a single exponential, with a complex axis.</strong> What fails is the reality of the axis, not the exponential. A unit is $\exp(\vec U\Theta)$ with a complex $\Theta$ and a complex root $\vec U$ of $-e_t$ on the whole domain of the word, as <em>The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em> shows; the identities $\cos^2\Theta+\sin^2\Theta=1$ and $\vec U^2=-e_t$ hold for complex values as well, so the exponential needs nothing real. The distinction is the one this article is about: the <strong>word</strong> carries a complex angle on a real axis only on the aligned submanifold, while the <strong>element</strong> is one exponential whatever the axes.</p>
 <p><strong>The boundary.</strong> The complex angle is not a Lorentz invariant and not a rapidity in general. Its imaginary part is the rapidity only on the four-momentum chart, and only when the axis is the momentum direction.</p>
@@ -310,17 +310,17 @@ $$</p>
 <p>The idempotent stratum is open and dense in the cone; the nilpotent stratum is a closed subvariety of codimension two and lies in its closure. The two are disjoint, and the scalar part distinguishes them pointwise.</p>
 <p>The two strata are the two ways a word can degenerate. The idempotent stratum is the limit of a boost that diverges while the scale collapses; the nilpotent stratum is the limit of a unipotent line after rescaling.</p>
 <h2 id="the-boundary-limits">The Boundary Limits</h2>
-<p>Take a unit complex number $\varkappa^{\mathrm{phs}}$, a scale $R>0$, and the family</p>
+<p>Take a unit complex number $\varkappa_{\mathrm{phs}}$, a scale $R>0$, and the family</p>
 <p>$$
-\tilde Q(\theta^{\mathrm{rpd}})=R\,e^{-\theta^{\mathrm{rpd}}/2}\,\varkappa^{\mathrm{phs}}\,e^{i\theta^{\mathrm{rpd}}/2\,\vec u_{\mathrm b}}\,\tilde u_{\mathrm r},
+\tilde Q(\theta_{\mathrm{rpd}})=R\,e^{-\theta_{\mathrm{rpd}}/2}\,\varkappa_{\mathrm{phs}}\,e^{i\theta_{\mathrm{rpd}}/2\,\vec u_{\mathrm b}}\,\tilde u_{\mathrm r},
 \qquad
-\theta^{\mathrm{rpd}}>0.
+\theta_{\mathrm{rpd}}>0.
 $$</p>
 <p>Every member is a unit, and the limit is</p>
 <p>$$
-\boxed{\;\tilde Q(\theta^{\mathrm{rpd}})\longrightarrow
-\frac{R\varkappa^{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
-\qquad(\theta^{\mathrm{rpd}}\to\infty)\;}.
+\boxed{\;\tilde Q(\theta_{\mathrm{rpd}})\longrightarrow
+\frac{R\varkappa_{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}
+\qquad(\theta_{\mathrm{rpd}}\to\infty)\;}.
 $$</p>
 <p>The limit is a nonzero null element of rank one. Its stratum is decided by the rotor. Write</p>
 <p>$$
@@ -330,7 +330,7 @@ a,b\in\mathbb{R},
 \qquad
 \tilde u_\perp\ \text{orthogonal to}\ \vec u_{\mathrm b}.
 $$</p>
-<p>Then the trace of the limit is $R\varkappa^{\mathrm{phs}}(a-ib)$, and</p>
+<p>Then the trace of the limit is $R\varkappa_{\mathrm{phs}}(a-ib)$, and</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -355,15 +355,15 @@ $$</p>
 <p>The second row is the case in which the rotor anticommutes with the boost axis. The first is the case in which it does not. The relative orientation of the boost and the rotor therefore decides which stratum the boundary value lands on, and the rate is the same for both.</p>
 <p>The norm of the family is</p>
 <p>$$
-\langle\tilde Q(\theta^{\mathrm{rpd}})\rangle_{\natural}=R^2e^{-\theta^{\mathrm{rpd}}}\varkappa^{\mathrm{phs}}^2,
+\langle\tilde Q(\theta_{\mathrm{rpd}})\rangle_{\natural}=R^2e^{-\theta_{\mathrm{rpd}}}\varkappa_{\mathrm{phs}}^2,
 $$</p>
 <p>so the distance to the cone is exponential in the rapidity. The word approaches the boundary along the exponential coordinate line of the boost, with the scale line compensating. The boost is the non-compact factor that drives the word to the boundary, and the scale is the factor that keeps the element finite.</p>
 <h2 id="the-exponential-limit">The Exponential Limit</h2>
 <p>The idempotents are not values of the exponential, because every exponential is a unit and an idempotent is not. They are limits of values:</p>
 <p>$$
 \boxed{\;\tilde\Pi_+=\frac12\left(e_t+i\vec u\right)
-=\lim_{\theta^{\mathrm{rpd}}\to\infty}\frac{\exp\left(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u\right)}{2\cosh\frac{\theta^{\mathrm{rpd}}}{2}}
-=\lim_{\theta^{\mathrm{rpd}}\to\infty}e^{-\theta^{\mathrm{rpd}}/2}\exp\left(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u\right)\;}.
+=\lim_{\theta_{\mathrm{rpd}}\to\infty}\frac{\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u\right)}{2\cosh\frac{\theta_{\mathrm{rpd}}}{2}}
+=\lim_{\theta_{\mathrm{rpd}}\to\infty}e^{-\theta_{\mathrm{rpd}}/2}\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u\right)\;}.
 $$</p>
 <p>The idempotent is the direction of an infinite boost, with the scale removed. The nilpotent stratum has its own version. For $N^2=0$,</p>
 <p>$$
@@ -386,7 +386,7 @@ The physical limit that realises the theorem, with the mass and the energy of th
 <p><strong>The two strata are two kinds of boundary point.</strong> The idempotent stratum is a complex multiple of a minimal idempotent, the algebraic form of the photon; the nilpotent stratum is a lightlike displacement, not a four-momentum. The reading is the massless spectrum's two boundary behaviours, and they must not be identified.</p>
 </li>
 <li><strong>The stratum is selected by the rotor, not by the rate.</strong> The same divergence reaches an idempotent or a nilpotent according to the relative orientation of the rotor and the boost axis. The reading is that the boundary value depends on the path, not only on the point.</li>
-<li><strong>The rate is not selected by the algebra.</strong> The family can approach the cone at any exponential rate that keeps $re^{\theta^{\mathrm{rpd}}/2}$ finite. The reading is that the algebra supplies the boundary values, not the approach.</li>
+<li><strong>The rate is not selected by the algebra.</strong> The family can approach the cone at any exponential rate that keeps $re^{\theta_{\mathrm{rpd}}/2}$ finite. The reading is that the algebra supplies the boundary values, not the approach.</li>
 </ul>
 <h2 id="limits">Limits</h2>
 <p>The word is not a homomorphism. The product of two words is not the word of the product, and the four parameters of a product are not the sums of the four parameters. The defect is the Baker–Campbell–Hausdorff correction, and it is not a rounding effect.</p>
@@ -401,11 +401,11 @@ The physical limit that realises the theorem, with the mass and the energy of th
 <li>The formal exponent is the sum of the four exponents, and its exponential is not the element; the defect is the Baker–Campbell–Hausdorff correction, whose first term is a boost.</li>
 <li>The defect vanishes when the boost and rotor axes commute or when one of the two parameters vanishes.</li>
 <li>The rotor is the compact factor and the boost the non-compact one; the word is their product, and the element itself is neither compact nor non-compact.</li>
-<li>On aligned axes the word is one exponential with a complex angle $\theta/2+i\theta^{\mathrm{rpd}}/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a <strong>real</strong> axis exists, while the element is still one exponential on a complex axis.</li>
+<li>On aligned axes the word is one exponential with a complex angle $\theta/2+i\theta_{\mathrm{rpd}}/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a <strong>real</strong> axis exists, while the element is still one exponential on a complex axis.</li>
 <li>The defect is the non-additivity of generators, the same structure as the Wigner rotation and the field-strength commutator, but it is not a coupling and not a dynamics.</li>
 <li>The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.</li>
 <li>The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.</li>
-<li>The boundary limit of the family $R e^{-\theta^{\mathrm{rpd}}/2}\varkappa^{\mathrm{phs}} e^{i\theta^{\mathrm{rpd}}\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\varkappa^{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.</li>
+<li>The boundary limit of the family $R e^{-\theta_{\mathrm{rpd}}/2}\varkappa_{\mathrm{phs}} e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}\tilde u_{\mathrm r}$ is $\frac{R\varkappa_{\mathrm{phs}}}{2}(e_t+i\vec u_{\mathrm b})\tilde u_{\mathrm r}$; it is an idempotent when the rotor does not anticommute with the boost axis and a nilpotent when it does.</li>
 <li>The rate of approach is exponential and is not selected by the algebra.</li>
 <li>The idempotent is the direction of an infinite boost; the nilpotent is the rescaled limit of the unipotent line.</li>
 <li>The word is a parametrization, not a homomorphism, and the boundary value is not a value.</li>
@@ -428,7 +428,7 @@ The physical limit that realises the theorem, with the mass and the energy of th
 <td>the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$</td>
 </tr>
 <tr>
-<td>$\tilde B=e^{i\theta^{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
+<td>$\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
 <td>the Hermitian positive boost factor</td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ The physical limit that realises the theorem, with the mass and the energy of th
 <td>the boost and rotor axes, unit real pure quaternions</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}$, $\theta$</td>
+<td>$\theta_{\mathrm{rpd}}$, $\theta$</td>
 <td>the stored rapidity and the rotation angle</td>
 </tr>
 <tr>

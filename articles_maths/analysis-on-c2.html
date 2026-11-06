@@ -185,15 +185,15 @@ $$
 oriented by the increasing arguments of $Q_{\blacktriangle}-Q_{0\blacktriangle}$ and $Q_{\blacktriangledown}-Q_{0\blacktriangledown}$.</p>
 <p><strong>Theorem (the iterated Cauchy formula).</strong> Let $f$ be holomorphic on a neighbourhood of the closed polydisc $\overline{\Delta(Q_0,r)}$. Then for every $Q\in\Delta(Q_0,r)$,
 $$
-f(Q)=\frac{1}{(2\pi i)^2}\int_{T(Q_0,r)}\frac{f(\varkappa^{\mathrm{crd}})}{(\varkappa^{\mathrm{crd}}_{\blacktriangle}-Q_{\blacktriangle})(\varkappa^{\mathrm{crd}}_{\blacktriangledown}-Q_{\blacktriangledown})}\,d\varkappa^{\mathrm{crd}}_{\blacktriangledown}\,d\varkappa^{\mathrm{crd}}_{\blacktriangle}.
+f(Q)=\frac{1}{(2\pi i)^2}\int_{T(Q_0,r)}\frac{f(\varkappa_{\mathrm{crd}})}{(\varkappa_{\mathrm{crd},\blacktriangle}-Q_{\blacktriangle})(\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{\blacktriangledown})}\,d\varkappa_{\mathrm{crd},\blacktriangledown}\,d\varkappa_{\mathrm{crd},\blacktriangle}.
 $$</p>
-<p><em>Proof.</em> For fixed $Q_{\blacktriangle}$ with $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1$, the function $\varkappa^{\mathrm{crd}}_{\blacktriangledown}\mapsto f(Q_{\blacktriangle},\varkappa^{\mathrm{crd}}_{\blacktriangledown})$ is holomorphic near the closed disc $\lvert\varkappa^{\mathrm{crd}}_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert\le r_2$, so the one-variable Cauchy formula gives
+<p><em>Proof.</em> For fixed $Q_{\blacktriangle}$ with $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert<r_1$, the function $\varkappa_{\mathrm{crd},\blacktriangledown}\mapsto f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})$ is holomorphic near the closed disc $\lvert\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{0\blacktriangledown}\rvert\le r_2$, so the one-variable Cauchy formula gives
 $$
-f(Q_{\blacktriangle},Q_{\blacktriangledown})=\frac{1}{2\pi i}\int_{\lvert\varkappa^{\mathrm{crd}}_{\blacktriangledown}-Q_{0\blacktriangledown}\rvert=r_2}\frac{f(Q_{\blacktriangle},\varkappa^{\mathrm{crd}}_{\blacktriangledown})}{\varkappa^{\mathrm{crd}}_{\blacktriangledown}-Q_{\blacktriangledown}}\,d\varkappa^{\mathrm{crd}}_{\blacktriangledown}.
+f(Q_{\blacktriangle},Q_{\blacktriangledown})=\frac{1}{2\pi i}\int_{\lvert\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{0\blacktriangledown}\rvert=r_2}\frac{f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})}{\varkappa_{\mathrm{crd},\blacktriangledown}-Q_{\blacktriangledown}}\,d\varkappa_{\mathrm{crd},\blacktriangledown}.
 $$
-The integrand is holomorphic in $Q_{\blacktriangle}$ near $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert\le r_1$, uniformly in $\varkappa^{\mathrm{crd}}_{\blacktriangledown}$, so the one-variable formula applies again in the first variable:
+The integrand is holomorphic in $Q_{\blacktriangle}$ near $\lvert Q_{\blacktriangle}-Q_{0\blacktriangle}\rvert\le r_1$, uniformly in $\varkappa_{\mathrm{crd},\blacktriangledown}$, so the one-variable formula applies again in the first variable:
 $$
-f(Q_{\blacktriangle},\varkappa^{\mathrm{crd}}_{\blacktriangledown})=\frac{1}{2\pi i}\int_{\lvert\varkappa^{\mathrm{crd}}_{\blacktriangle}-Q_{0\blacktriangle}\rvert=r_1}\frac{f(\varkappa^{\mathrm{crd}}_{\blacktriangle},\varkappa^{\mathrm{crd}}_{\blacktriangledown})}{\varkappa^{\mathrm{crd}}_{\blacktriangle}-Q_{\blacktriangle}}\,d\varkappa^{\mathrm{crd}}_{\blacktriangle}.
+f(Q_{\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})=\frac{1}{2\pi i}\int_{\lvert\varkappa_{\mathrm{crd},\blacktriangle}-Q_{0\blacktriangle}\rvert=r_1}\frac{f(\varkappa_{\mathrm{crd},\blacktriangle},\varkappa_{\mathrm{crd},\blacktriangledown})}{\varkappa_{\mathrm{crd},\blacktriangle}-Q_{\blacktriangle}}\,d\varkappa_{\mathrm{crd},\blacktriangle}.
 $$
 Substituting and using Fubini gives the display.</p>
 <p><strong>Corollary (Cauchy estimates).</strong> If $\lvert f\rvert\le M$ on $T(Q_0,r)$, then the coefficients of the power series of $f$ about $Q_0$ satisfy

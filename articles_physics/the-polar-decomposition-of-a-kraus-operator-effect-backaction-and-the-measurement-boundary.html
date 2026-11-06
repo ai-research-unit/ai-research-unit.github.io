@@ -242,7 +242,7 @@ $$</p>
 <p>Trace preservation of a one-Kraus channel is not the same as trace preservation of an instrument. An instrument satisfies $\sum_y\tilde K_y^{*}\tilde K_y=e_t$; a single term need not. A term with $\tilde K_H\neq e_t$ is a legitimate outcome, and its effect is not the identity. The one-Kraus statement applies only when there is one term and no other outcome. The dephasing channel of §<em>Channels and Kraus Rank</em> is the witness: one Kraus operator is a scalar multiple of the identity, with $\tilde K_0=e_t$, and the channel is still irreversible because there is a second term.</p>
 <h2 id="the-four-factors-of-the-amplitude">The Four Factors of the Amplitude</h2>
 <h3 id="the-word-off-the-cone">The Word Off the Cone</h3>
-<p>Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\theta^{\mathrm{rpd}}_w}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,</p>
+<p>Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,</p>
 <p>$$
 \tilde K=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
@@ -279,7 +279,7 @@ $$</p>
 <tr>
 <td>boost</td>
 <td>$\tilde U_{\mathrm b}$</td>
-<td>$\theta^{\mathrm{rpd}}_w\ge0$, unit $\vec u_{\mathrm b}$</td>
+<td>$\theta_{\mathrm{rpd},w}\ge0$, unit $\vec u_{\mathrm b}$</td>
 <td>$3$</td>
 <td>$\tilde K_H$</td>
 </tr>
@@ -299,35 +299,35 @@ $$</p>
 =\tilde K_0^{*}\tilde K_H^{2}\tilde K_0
 =\tilde u_{\mathrm r}^{-1}\,r^{2}\tilde U_{\mathrm b}^{2}\,\tilde u_{\mathrm r}.
 $$</p>
-<p>The phase cancels because it is central. Since $\tilde U_{\mathrm b}^{2}=\exp(i\theta^{\mathrm{rpd}}_w\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\theta^{\mathrm{rpd}}_w}$, the effect has eigenvalues</p>
+<p>The phase cancels because it is central. Since $\tilde U_{\mathrm b}^{2}=\exp(i\theta_{\mathrm{rpd},w}\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\theta_{\mathrm{rpd},w}}$, the effect has eigenvalues</p>
 <p>$$
-r^{2}e^{+\theta^{\mathrm{rpd}}_w}\quad\text{and}\quad r^{2}e^{-\theta^{\mathrm{rpd}}_w}.
+r^{2}e^{+\theta_{\mathrm{rpd},w}}\quad\text{and}\quad r^{2}e^{-\theta_{\mathrm{rpd},w}}.
 $$</p>
-<p>Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta^{\mathrm{rpd}}_w>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.</p>
+<p>Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta_{\mathrm{rpd},w}>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.</p>
 <h3 id="the-boost-as-a-bias">The Boost as a Bias</h3>
 <p>The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.</p>
 <p>The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,</p>
 <p>$$
-a_2=a\cosh\theta^{\mathrm{rpd}}_w+b_\parallel\sinh\theta^{\mathrm{rpd}}_w,
+a_2=a\cosh\theta_{\mathrm{rpd},w}+b_\parallel\sinh\theta_{\mathrm{rpd},w},
 \qquad
-b_{\parallel,2}=b_\parallel\cosh\theta^{\mathrm{rpd}}_w+a\sinh\theta^{\mathrm{rpd}}_w,
+b_{\parallel,2}=b_\parallel\cosh\theta_{\mathrm{rpd},w}+a\sinh\theta_{\mathrm{rpd},w},
 \qquad
 \vec b_{\perp,2}=\vec b_\perp .
 $$</p>
 <p>Normalising by $a_2$ gives the action on the Bloch ball,</p>
 <p>$$
-r'_\parallel=\frac{r_\parallel+\tanh\theta^{\mathrm{rpd}}_w}{1+r_\parallel\tanh\theta^{\mathrm{rpd}}_w},
+r'_\parallel=\frac{r_\parallel+\tanh\theta_{\mathrm{rpd},w}}{1+r_\parallel\tanh\theta_{\mathrm{rpd},w}},
 \qquad
-\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta^{\mathrm{rpd}}_w+r_\parallel\sinh\theta^{\mathrm{rpd}}_w},
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta_{\mathrm{rpd},w}+r_\parallel\sinh\theta_{\mathrm{rpd},w}},
 $$</p>
-<p>with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta^{\mathrm{rpd}}_w$, and it is not a rotation of the ball.</p>
+<p>with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta_{\mathrm{rpd},w}$, and it is not a rotation of the ball.</p>
 <h3 id="the-contraction-bound">The Contraction Bound</h3>
 <p>An outcome is admissible when its effect lies below the identity. The eigenvalues above make this one inequality:</p>
 <p>$$
-\boxed{\;\tilde E\le e_t \iff r^{2}e^{\theta^{\mathrm{rpd}}_w}\le1\;}
+\boxed{\;\tilde E\le e_t \iff r^{2}e^{\theta_{\mathrm{rpd},w}}\le1\;}
 $$</p>
-<p>for $\theta^{\mathrm{rpd}}_w\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.</p>
-<p>The worked example of §<em>A Worked Unsharp Outcome</em> saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\theta^{\mathrm{rpd}}_w=\ln(1/0.6)=0.5108$; then $r^{2}e^{\theta^{\mathrm{rpd}}_w}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.</p>
+<p>for $\theta_{\mathrm{rpd},w}\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.</p>
+<p>The worked example of §<em>A Worked Unsharp Outcome</em> saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\theta_{\mathrm{rpd},w}=\ln(1/0.6)=0.5108$; then $r^{2}e^{\theta_{\mathrm{rpd},w}}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.</p>
 <h2 id="effects-as-squares">Effects as Squares</h2>
 <h3 id="the-effect-is-the-conjugated-square">The Effect Is the Conjugated Square</h3>
 <p>The effect of the outcome is</p>
@@ -510,7 +510,7 @@ $$</p>
 </tr>
 <tr>
 <td>effect in the word</td>
-<td>eigenvalues $r^{2}e^{\pm\theta^{\mathrm{rpd}}_w}$; admissible iff $r^{2}e^{\theta^{\mathrm{rpd}}_w}\le1$</td>
+<td>eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$; admissible iff $r^{2}e^{\theta_{\mathrm{rpd},w}}\le1$</td>
 </tr>
 <tr>
 <td>one-Kraus channel</td>
@@ -580,7 +580,7 @@ $$</p>
 <td>effect of the outcome</td>
 </tr>
 <tr>
-<td>$r,\alpha,\theta^{\mathrm{rpd}}_w,\theta$</td>
+<td>$r,\alpha,\theta_{\mathrm{rpd},w},\theta$</td>
 <td>scale, central phase, word rapidity, rotor angle</td>
 </tr>
 <tr>

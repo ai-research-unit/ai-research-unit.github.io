@@ -80,7 +80,7 @@
 <p>$$
 \tau_n\delta_i=\delta_{i-1}\tau_{n-1}\ (1\le i\le n), \qquad \tau_n\delta_0=\delta_n, \qquad \tau_n\sigma_i=\sigma_{i-1}\tau_{n+1}\ (1\le i\le n), \qquad \tau_n\sigma_0=\sigma_n\tau_{n+1}^2, \qquad \tau_n^{n+1}=\operatorname{id}.
 $$</p>
-<p>A <strong>cyclic module</strong> is a contravariant functor from $\Lambda$ to the category of $k$-modules; a <strong>cyclic object</strong> in a category $\mathcal{C}$ is a covariant functor from $\Lambda^{\mathrm{opp}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra <strong>cyclic operators</strong> $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.</p>
+<p>A <strong>cyclic module</strong> is a contravariant functor from $\Lambda$ to the category of $k$-modules; a <strong>cyclic object</strong> in a category $\mathcal{C}$ is a covariant functor from $\Lambda_{\mathrm{opp}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra <strong>cyclic operators</strong> $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.</p>
 <p><strong>Proposition (cyclic nerve).</strong> For a $k$-algebra $A$ the assignment $[n]\mapsto A^{\otimes(n+1)}$ extends to a cyclic module, with the simplicial structure</p>
 <p>$$
 \partial_i(a_0\otimes\cdots\otimes a_n)=a_0\otimes\cdots\otimes a_ia_{i+1}\otimes\cdots\otimes a_n \quad (0\le i\le n-1),
@@ -108,9 +108,9 @@ $$</p>
 <p><em>Proof.</em> $b^2=0$ is the simplicial identity. $B^2=0$ follows from the relations among $s_0$, $N$ and $t$, together with $t^{n+1}=\operatorname{id}$. The anticommutation $bB+Bb=0$ is the compatibility of the simplicial and cyclic structures, computed directly from the definitions.</p>
 <p><strong>Definition.</strong> The <strong>periodic cyclic complex</strong> is the product of infinitely many columns,</p>
 <p>$$
-CC^{\mathrm{per}}_n=\prod_{p\ge0}C_{n-2p}(A)
+CC_{\mathrm{per},n}=\prod_{p\ge0}C_{n-2p}(A)
 $$</p>
-<p>with the total differential $b+B$, and <strong>periodic cyclic homology</strong> is $HP_n(A)=H_n(CC^{\mathrm{per}}_\bullet(A))$. The periodic theory is $\mathbb{Z}/2$-periodic, $HP_n\cong HP_{n+2}$.</p>
+<p>with the total differential $b+B$, and <strong>periodic cyclic homology</strong> is $HP_n(A)=H_n(CC_{\mathrm{per},\bullet}(A))$. The periodic theory is $\mathbb{Z}/2$-periodic, $HP_n\cong HP_{n+2}$.</p>
 <p><strong>Definition.</strong> In the $SBI$ sequence, the <strong>$S$ operator</strong> is the map $HC_n\to HC_{n-2}$ induced by the projection of the total complex of the cyclic bicomplex onto its first column, the <strong>$I$ operator</strong> is the map $HH_n\to HC_n$ induced by the inclusion of the Hochschild complex as the zeroth column, and the <strong>$B$ operator</strong> is the map $HC_{n}\to HH_{n+1}$ induced by the Connes boundary.</p>
 <p><strong>Theorem (Connes, $SBI$ sequence).</strong> For every $k$-algebra $A$ there is a long exact sequence</p>
 <p>$$
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 HC_0(A)\cong A,\qquad HC_{2m}(A)\cong k\ (m\ge1),\qquad HC_{2m+1}(A)=0,
 $$</p>
-<p>and $HP_{\mathrm{even}}(A)\cong k$, $HP^{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.</p>
+<p>and $HP_{\mathrm{even}}(A)\cong k$, $HP_{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.</p>
 <h2 id="traces-the-chern-character-and-k-theory">Traces, the Chern Character and K-Theory</h2>
 <h3 id="the-dennis-trace">The Dennis Trace</h3>
 <p><strong>Definition.</strong> Let $R$ be a ring. For a finitely generated projective $R$-module $P$ and an endomorphism $f:P\to P$, the <strong>trace</strong> is the element $\operatorname{tr}(f)\in R/[R,R]$ obtained from a matrix of $f$ with respect to a finite free complement; it is independent of the choices because the trace of a commutator lies in $[R,R]$. The <strong>Dennis trace</strong> is the natural map</p>

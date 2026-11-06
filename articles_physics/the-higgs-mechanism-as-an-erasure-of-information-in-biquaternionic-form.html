@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 \xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\exp(\,i\theta(\tilde{Q})/v),
 $$</p>
-<p>with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta^{\mathrm{fld}}$ the angular fluctuation, with no potential term at all.</p>
+<p>with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta_{\mathrm{fld}}$ the angular fluctuation, with no potential term at all.</p>
 <h3 id="the-informational-status-of-the-phase">The Informational Status of the Phase</h3>
 <p>Considered as a classical label, the phase is a continuum: the vacuum family is a circle at every point of spacetime, and a description that resolved $\theta(\tilde{Q})$ point by point would carry the classical information of a function space — a continuum rather than a finite string of bits. If the phase were a physical observable, the choice of one vacuum would <strong>erase</strong> all of it, and the erasure would be a loss of a continuum and not of a record: a field with values on a circle, one at each point of spacetime, reduced to a single number, with no way to recover it from the broken phase.</p>
 <p>Two facts of the framework make the actual situation different, and they are the reason the title's word needs the qualification this section supplies.</p>
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="the-flat-directions-of-the-potential">The Flat Directions of the Potential</h2>
 <p>The information-theoretic interpretation of the erasure is sharpened by the curvature of the potential, which separates the directions of the vacuum into those that are recorded and those that are erased.</p>
 <h3 id="the-hessian-at-the-minimum">The Hessian at the Minimum</h3>
-<p>Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\vartheta^{\mathrm{fld}}/v)$, so that</p>
+<p>Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\vartheta_{\mathrm{fld}}/v)$, so that</p>
 <p>$$
 \xi^*\xi = \tfrac{1}{2}(v+h)^2,
 \qquad
@@ -118,12 +118,12 @@ $$</p>
 <p>$$
 V(h) = \beta v^2h^2 + \beta v\,h^3 + \frac{\beta}{4}h^4 ,
 $$</p>
-<p>so the Hessian at the minimum, in the coordinates $(h,\vartheta^{\mathrm{fld}})$, is</p>
+<p>so the Hessian at the minimum, in the coordinates $(h,\vartheta_{\mathrm{fld}})$, is</p>
 <p>$$
-\boxed{\;H = \begin{pmatrix} \partial^2V/\partial h^2 & \partial^2V/\partial h\partial\vartheta^{\mathrm{fld}} \\[2pt] \partial^2V/\partial\vartheta^{\mathrm{fld}}\partial h & \partial^2V/\partial{\vartheta^{\mathrm{fld}}}^2 \end{pmatrix}_{h=\vartheta^{\mathrm{fld}}=0}
+\boxed{\;H = \begin{pmatrix} \partial^2V/\partial h^2 & \partial^2V/\partial h\partial\vartheta_{\mathrm{fld}} \\[2pt] \partial^2V/\partial\vartheta_{\mathrm{fld}}\partial h & \partial^2V/\partial{\vartheta_{\mathrm{fld}}}^2 \end{pmatrix}_{h=\vartheta_{\mathrm{fld}}=0}
 = \begin{pmatrix} 2\beta v^2 & 0 \\ 0 & 0 \end{pmatrix}\;}.
 $$</p>
-<p>The Hessian has rank one. The <strong>massive direction</strong> is the radial one, with $m_h^2 = 2\beta v^2$; the <strong>flat direction</strong> is the phase, with zero curvature. This was recomputed by finite differences: at $\beta = 1$ and $v = 1.3$, the second derivative of $V$ along $h$ came out as $3.38000000$ against the prediction $2\beta v^2 = 3.38000000$, while the curvature along $\vartheta^{\mathrm{fld}}$ is identically zero for every value of $\vartheta^{\mathrm{fld}}$, because $V$ does not depend on it.</p>
+<p>The Hessian has rank one. The <strong>massive direction</strong> is the radial one, with $m_h^2 = 2\beta v^2$; the <strong>flat direction</strong> is the phase, with zero curvature. This was recomputed by finite differences: at $\beta = 1$ and $v = 1.3$, the second derivative of $V$ along $h$ came out as $3.38000000$ against the prediction $2\beta v^2 = 3.38000000$, while the curvature along $\vartheta_{\mathrm{fld}}$ is identically zero for every value of $\vartheta_{\mathrm{fld}}$, because $V$ does not depend on it.</p>
 <h3 id="the-count-of-records-and-the-count-of-erased-labels">The Count of Records and the Count of Erased Labels</h3>
 <p>The rank of the Hessian and the dimension of its kernel are the two numbers the informational interpretation needs.</p>
 <ul>
@@ -142,17 +142,17 @@ $$</p>
 <p>$$
 \xi \;\longmapsto\; \exp(iϙ\Gamma/\hbar)\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)\exp(-i\theta/v) = \tfrac{1}{\sqrt{2}}(v+h),
 $$</p>
-<p>real. This is the <strong>unitary gauge</strong> of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta^{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.</p>
+<p>real. This is the <strong>unitary gauge</strong> of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta_{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.</p>
 <h3 id="what-the-transformation-does-to-the-connection">What the Transformation Does to the Connection</h3>
 <p>The same gauge transformation shifts the connection,</p>
 <p>$$
-A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}} ,
+A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}} ,
 $$</p>
 <p>so that the combination</p>
 <p>$$
-\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}
+\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}
 $$</p>
-<p>is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\vartheta^{\mathrm{fld}}$ and the modification of $A_\mu$ are the same operation seen from the two ends.</p>
+<p>is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\vartheta_{\mathrm{fld}}$ and the modification of $A_\mu$ are the same operation seen from the two ends.</p>
 <p>This is the precise sense in which the Higgs mechanism <strong>uses</strong> the gauge redundancy rather than suffering it. In the companion article on the gauge orbit the redundancy was an inert overcompleteness: many descriptions, one configuration, no physical consequence. Here the redundancy is exploited: the phase is a coordinate along the orbit, the transformation that removes it shifts the connection by a gradient, and the shifted connection is the one whose kinetic term produces a mass. The erasure is the act of spending the redundancy.</p>
 <h2 id="where-the-information-goes-the-longitudinal-mode-and-the-mass">Where the Information Goes: The Longitudinal Mode and the Mass</h2>
 <h3 id="the-degree-of-freedom-balance">The Degree-of-Freedom Balance</h3>
@@ -319,7 +319,7 @@ $$</p>
 <td>Vacuum expectation value; the gauge-invariant record of the breaking</td>
 </tr>
 <tr>
-<td>$h,\ \vartheta^{\mathrm{fld}}$</td>
+<td>$h,\ \vartheta_{\mathrm{fld}}$</td>
 <td>Radial and angular (would-be Goldstone) fields</td>
 </tr>
 <tr>
@@ -339,11 +339,11 @@ $$</p>
 <td>Coordinate signs for contractions</td>
 </tr>
 <tr>
-<td>$\Gamma = -(\hbar/ϙv)\vartheta^{\mathrm{fld}}$</td>
+<td>$\Gamma = -(\hbar/ϙv)\vartheta_{\mathrm{fld}}$</td>
 <td>Gauge function of the unitary gauge</td>
 </tr>
 <tr>
-<td>$\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}$</td>
+<td>$\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}$</td>
 <td>Gauge-invariant combination carrying the mass</td>
 </tr>
 <tr>

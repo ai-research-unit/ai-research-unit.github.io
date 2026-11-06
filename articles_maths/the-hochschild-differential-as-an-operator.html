@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A cochain complex is a graded module with an operator of degree one whose square is zero, and the first cochain complex that an algebra produces from itself is the <strong>Hochschild complex</strong>. Its cochains are the multilinear maps on the algebra with values in a bimodule, and its operator is the <strong>Hochschild differential</strong> $b$, the alternating sum of the ways of multiplying the arguments together and acting on the value. The whole content of the complex is two properties of this single operator: it is $k$-linear of degree one, and its square is zero.</p>
 <p>This article studies the differential as an operator. It fixes the cochain module, defines $b$ on it, proves $b^2 = 0$ by a cancellation of the twelve terms, and reads the consequence — the cocycles, the coboundaries and the cohomology — as the kernel, the image and the quotient of the operator. The cohomology itself, its identification with the derived functors of the invariants, its low-dimensional interpretations and its products are the subject of <em>Hochschild Homology</em>, and the general theory of a cochain complex, its differential and its cohomology belongs to <em>Homological Algebra</em>; the present article is the operator layer of the first and cites the second for the ambient theory.</p>
-<p>Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.</p>
+<p>Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.</p>
 <h2 id="the-cochain-module">The Cochain Module</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> For $n \geq 0$ the module of <strong>$n$-cochains</strong> of $A$ with coefficients in $M$ is</p>
@@ -170,10 +170,10 @@ $$</p>
 <p><em>Proof.</em> The first statement restates the degree of $b$ and its $A^{\mathrm{e}}$-linearity. For the second, $b^2$ as a map $C^n \to C^{n+2}$ is $b_{n+1}b_n$, zero by the theorem.</p>
 <h3 id="the-transpose-relation">The Transpose Relation</h3>
 <p>The differential of the cochain complex is the transpose of the boundary of the chain complex, and the two readings of the algebra are dual.</p>
-<p><strong>Proposition.</strong> Let $B_\bullet(A)$ be the bar resolution of <em>Hochschild Homology</em>, with boundary $b^{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$. Then the Hochschild differential on the cochains is the transpose of the chain boundary under the pairing
+<p><strong>Proposition.</strong> Let $B_\bullet(A)$ be the bar resolution of <em>Hochschild Homology</em>, with boundary $b_{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$. Then the Hochschild differential on the cochains is the transpose of the chain boundary under the pairing
 $\operatorname{Hom}_k(B_n(A), M) \times B_n(A) \to M$,</p>
 <p>$$
-\langle b f, x \rangle = \langle f, b^{\mathrm{chain}} x \rangle .
+\langle b f, x \rangle = \langle f, b_{\mathrm{chain}} x \rangle .
 $$</p>
 <p>In particular the cochain differential is determined by the chain boundary and vice versa, and the cochain complex is the dual of the chain complex.</p>
 <p><em>Proof.</em> The bar resolution has $B_n(A) = A^{\otimes(n+2)}$ and the cochains are the $A^{\mathrm{e}}$-linear maps $B_n(A) \to M$, whose underlying $k$-linear maps are $\operatorname{Hom}_k(A^{\otimes n}, M)$; the transpose of the boundary is computed by evaluating the defining formula of <em>Hochschild Homology</em> against a cochain, and it gives the formula of the present article. The identification of the two sign conventions is the standard one for a chain complex and its dual.</p>
@@ -220,7 +220,7 @@ $$</p>
 <td>an $A$-bimodule</td>
 </tr>
 <tr>
-<td>$A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$</td>
+<td>$A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$</td>
 <td>the enveloping algebra</td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ $$</p>
 <td>the Hochschild cohomology</td>
 </tr>
 <tr>
-<td>$b^{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$</td>
+<td>$b_{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$</td>
 <td>the chain boundary of the bar resolution</td>
 </tr>
 <tr>

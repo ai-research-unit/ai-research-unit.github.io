@@ -170,10 +170,10 @@ $$</p>
 <p><strong>Proof.</strong> Fibre products are constructed affine-locally: for affinoid algebras the tensor product $A\otimes_K B$ is not in general affinoid, but the completed tensor product $\widehat{\otimes}_K$ with respect to the residue norms is, and the completion is the correct coproduct in the category of affinoid algebras; the general case is glued from the affine pieces. The full embedding of affinoid spaces is immediate from the definition.</p>
 <h3 id="examples">Examples</h3>
 <p><strong>Example (the closed disc and its subdomains).</strong> The closed unit disc $D^1 = \operatorname{Sp} K\langle X\rangle$ has as affinoid subdomains the discs $\lvert x \rvert \leq r$ for $r \in \lvert K^\times \rvert$ with $r \leq 1$, with algebra $K\langle X/r\rangle$. The intersection of two such discs is the smaller one, and the union of two proper discs is admissible but not affinoid. The maximum modulus principle identifies the norm on each algebra with the supremum on the corresponding disc.</p>
-<p><strong>Example (the rigid affine line).</strong> The <strong>rigid affine line</strong> is $\mathbb{A}^{1,\mathrm{rig}} = \bigcup_{n \geq 1} \operatorname{Sp} K\langle X/n\rangle$, the increasing union of the closed discs of radius growing without bound. The covering by the discs is admissible, and $\mathbb{A}^{1,\mathrm{rig}}$ is a rigid space which is not affinoid. Similarly $\mathbb{A}^{n,\mathrm{rig}}$ is the union of the polydiscs of all radii.</p>
+<p><strong>Example (the rigid affine line).</strong> The <strong>rigid affine line</strong> is $\mathbb{A}_{\mathrm{rig}}^1 = \bigcup_{n \geq 1} \operatorname{Sp} K\langle X/n\rangle$, the increasing union of the closed discs of radius growing without bound. The covering by the discs is admissible, and $\mathbb{A}_{\mathrm{rig}}^1$ is a rigid space which is not affinoid. Similarly $\mathbb{A}_{\mathrm{rig}}^n$ is the union of the polydiscs of all radii.</p>
 <p><strong>Example (the open disc).</strong> The <strong>open unit disc</strong> $D^1_< = \{x : \lvert x \rvert < 1\} = \bigcup_{r < 1} \operatorname{Sp} K\langle X/r\rangle$, the union over $r \in \lvert K^\times \rvert$ with $r < 1$, is an admissible open subset of the closed disc and is not quasi-compact. It is a rigid space, and it is not affinoid. The contrast with the Archimedean disc is one of the standard illustrations of the theory.</p>
 <p><strong>Example (annuli).</strong> For $t \in K^\times$ with $\lvert t \rvert < 1$ the algebra $K\langle X, Y\rangle/(XY - t)$ is affinoid, and its spectrum is the <strong>annulus</strong> $\lvert t \rvert \leq \lvert x \rvert \leq 1$. Annuli are the building blocks of the theory of curves over $K$, and they also exhibit the failure of the "disc is simply connected" picture: an annulus is not the union of its two boundary discs, and its structure sheaf has the expected restrictions.</p>
-<p><strong>Example (the rigid projective line).</strong> $\mathbb{P}^{1,\mathrm{rig}}$ is obtained by gluing $\operatorname{Sp} K\langle X\rangle$ and $\operatorname{Sp} K\langle Y\rangle$ along the Laurent domain $\operatorname{Sp} K\langle X, Y\rangle/(XY - 1)$, which is the annulus $\lvert x \rvert = 1$. The result is a proper rigid space, and it contains the affine line together with the point at infinity.</p>
+<p><strong>Example (the rigid projective line).</strong> $\mathbb{P}_{\mathrm{rig}}^1$ is obtained by gluing $\operatorname{Sp} K\langle X\rangle$ and $\operatorname{Sp} K\langle Y\rangle$ along the Laurent domain $\operatorname{Sp} K\langle X, Y\rangle/(XY - 1)$, which is the annulus $\lvert x \rvert = 1$. The result is a proper rigid space, and it contains the affine line together with the point at infinity.</p>
 <h3 id="coherent-sheaves-and-kiehls-theorem">Coherent Sheaves and Kiehl's Theorem</h3>
 <p><strong>Definition.</strong> Let $X$ be a rigid space. An $O_X$-module $\mathcal{F}$ is <strong>coherent</strong> if it is a sheaf for the G-topology and if there is an admissible covering by affinoids $\operatorname{Sp} A_i$ on which $\mathcal{F}$ is the sheaf associated to a finitely generated $A_i$-module.</p>
 <p><strong>Theorem (Kiehl).</strong> Let $X = \operatorname{Sp} A$ be an affinoid space. The functor $\mathcal{F} \mapsto \mathcal{F}(X)$ is an equivalence between the category of coherent $O_X$-modules and the category of finitely generated $A$-modules. Moreover $H^q(X, \mathcal{F}) = 0$ for every coherent $\mathcal{F}$ and every $q > 0$, and the cohomology of a coherent sheaf on an admissible open $\Omega$ is that of the corresponding module over the affinoid algebra of $\Omega$.</p>
@@ -183,11 +183,11 @@ $$</p>
 <hr />
 <h2 id="gaga-and-formal-models">GAGA and Formal Models</h2>
 <h3 id="the-gaga-principle">The GAGA Principle</h3>
-<p><strong>Theorem (GAGA; Kiehl, Köpf).</strong> Let $X$ be a projective algebraic variety over $K$ and let $X^{\mathrm{an}}$ be its <strong>analytification</strong>, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories</p>
+<p><strong>Theorem (GAGA; Kiehl, Köpf).</strong> Let $X$ be a projective algebraic variety over $K$ and let $X_{\mathrm{an}}$ be its <strong>analytification</strong>, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories</p>
 <p>$$
-\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}})\;},
+\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X_{\mathrm{an}})\;},
 $$</p>
-<p>and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X^{\mathrm{an}}, Y^{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X^{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.</p>
+<p>and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X_{\mathrm{an}}, Y_{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X_{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.</p>
 <p><strong>Proof.</strong> The theorem is Kiehl's GAGA for rigid analytic spaces, proved first in the projective case and extended by Köpf to proper rigid spaces and proper families. It is proved by reduction to the affine statements: on an affine variety the analytification of a coherent sheaf is the completion of the algebraic module, and the comparison is an equivalence by the flatness of the completion; the global statement follows by the theory of coherent sheaves on the projective space and a descending induction on the dimension, exactly parallel to the algebraic GAGA of Serre. It is quoted here as a standard theorem of rigid analytic geometry.</p>
 <p><strong>Remark.</strong> GAGA is the first of the comparison theorems that relate the non-Archimedean analytic geometry to algebraic geometry, and it belongs to this Part because it is a statement about the topology of the analytification, not about any analytic operation. The corresponding statements for the étale fundamental group and for higher direct images are also standard.</p>
 <h3 id="formal-models">Formal Models</h3>
@@ -269,11 +269,11 @@ $$</p>
 <td>Higher cohomology of the structure sheaf, vanishing on affinoids</td>
 </tr>
 <tr>
-<td>$\mathbb{A}^{n,\mathrm{rig}}$, $\mathbb{P}^{1,\mathrm{rig}}$</td>
+<td>$\mathbb{A}_{\mathrm{rig}}^n$, $\mathbb{P}_{\mathrm{rig}}^1$</td>
 <td>The rigid affine and projective spaces</td>
 </tr>
 <tr>
-<td>$X^{\mathrm{an}}$</td>
+<td>$X_{\mathrm{an}}$</td>
 <td>Analytification of an algebraic variety</td>
 </tr>
 <tr>

@@ -87,7 +87,7 @@ $$</p>
 <p>$$
 d(Q, B) = \|Q - B\|_E.
 $$</p>
-<p>This makes $\mathbb{C}^{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
+<p>This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
 <p>The <strong>split modulus</strong> is</p>
 <p>$$
 \rho = \sqrt{|q^2 - q'^2|},
@@ -96,23 +96,23 @@ $$</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
 <p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{C}^{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
 $$</p>
-<p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}^{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
+<p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{C}^{\mathrm{spl}}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
-<p>A set $F \subseteq \mathbb{C}^{\mathrm{spl}}$ is <strong>closed</strong> if its complement $\mathbb{C}^{\mathrm{spl}} \setminus F$ is open.</p>
+<p>A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
+<p>A set $F \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>closed</strong> if its complement $\mathbb{C}_{\mathrm{spl}} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
-<p>A set $\Omega \subseteq \mathbb{C}^{\mathrm{spl}}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}^{\mathrm{spl}}$, connectedness and path-connectedness are equivalent.</p>
-<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{C}^{\mathrm{spl}}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
+<p>A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}_{\mathrm{spl}}$, connectedness and path-connectedness are equivalent.</p>
+<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{C}_{\mathrm{spl}}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
 <h3 id="compactness">Compactness</h3>
-<p>A set $K \subseteq \mathbb{C}^{\mathrm{spl}}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
-<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{C}^{\mathrm{spl}}$ is compact iff it is closed and bounded in the Euclidean norm.</p>
+<p>A set $K \subseteq \mathbb{C}_{\mathrm{spl}}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{C}_{\mathrm{spl}}$ is compact iff it is closed and bounded in the Euclidean norm.</p>
 <p><strong>Theorem.</strong> A continuous split-complex-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{C}^{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
 n \geq N \implies \|Q_n - L\|_E < \epsilon.
 $$</p>
@@ -128,15 +128,15 @@ $$</p>
 <p>$$
 Q_n + B_n \to L + M, \qquad Q_n B_n \to L M.
 $$</p>
-<p>There is no quotient rule in general, because $\mathbb{C}^{\mathrm{spl}}$ has zero divisors.</p>
+<p>There is no quotient rule in general, because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
 <p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
 m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
 $$</p>
-<p><strong>Theorem.</strong> In $\mathbb{C}^{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}^{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
+<p><strong>Theorem.</strong> In $\mathbb{C}_{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
-<p>Let $f : D \to \mathbb{C}^{\mathrm{spl}}$ with $D \subseteq \mathbb{C}^{\mathrm{spl}}$, and let $Q_0$ be a limit point of $D$. We say</p>
+<p>Let $f : D \to \mathbb{C}_{\mathrm{spl}}$ with $D \subseteq \mathbb{C}_{\mathrm{spl}}$, and let $Q_0$ be a limit point of $D$. We say</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = L
 $$</p>
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums and products of limits are the limits of the sums and products.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{C}^{\mathrm{spl}}$ is <strong>continuous at</strong> $Q_0 \in D$ if</p>
+<p>A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is <strong>continuous at</strong> $Q_0 \in D$ if</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = f(Q_0).
 $$</p>
@@ -161,19 +161,19 @@ $$</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + j v(q, q')$. Then $f$ is continuous at $Q_0 = q_0 + j q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces split complex continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{C}^{\mathrm{spl}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
 Q, B \in D, \; \|Q - B\|_E < \delta \implies \|f(Q) - f(B)\|_E < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
 <h3 id="the-derivative">The Derivative</h3>
-<p>Let $f : \Omega \to \mathbb{C}^{\mathrm{spl}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
+<p>Let $f : \Omega \to \mathbb{C}_{\mathrm{spl}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
 <p>$$
 f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$</p>
 <p>provided the limit exists. If it does, $f$ is <strong>split complex differentiable</strong> at $Q_0$, or <strong>holomorphic</strong> at $Q_0$ in the split sense.</p>
-<p>The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}^{\mathrm{spl}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
+<p>The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
 <p><strong>Theorem.</strong> Split complex differentiability implies continuity. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
 <p>Write $f(Q) = u(q, q') + j v(q, q')$, where $Q = q + jq'$ and $u, v : \Omega \to \mathbb{R}$.</p>
@@ -213,7 +213,7 @@ $$</p>
 $$</p>
 <h2 id="the-idempotent-decomposition">The Idempotent Decomposition</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>idempotents</strong> of $\mathbb{C}^{\mathrm{spl}}$ are</p>
+<p>The <strong>idempotents</strong> of $\mathbb{C}_{\mathrm{spl}}$ are</p>
 <p>$$
 \Pi_+ = \frac{1 + j}{2}, \qquad \Pi_- = \frac{1 - j}{2}.
 $$</p>
@@ -228,14 +228,14 @@ $$</p>
 f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } Q_+ \text{ and } f_- \text{ is differentiable in } Q_-.
 $$</p>
 <p><strong>Proof.</strong> In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable.</p>
-<p>This is the <strong>fundamental theorem of split complex analysis</strong>: differentiability in $\mathbb{C}^{\mathrm{spl}}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.</p>
+<p>This is the <strong>fundamental theorem of split complex analysis</strong>: differentiability in $\mathbb{C}_{\mathrm{spl}}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.</p>
 <h3 id="consequences">Consequences</h3>
 <p><strong>No conformality.</strong> Split complex differentiable functions do not preserve angles in general, because the two components can scale differently.</p>
 <p><strong>No Cauchy integral formula.</strong> There is no single integral formula that reconstructs a split complex differentiable function from its boundary values, because the two components are independent.</p>
-<p><strong>No Liouville theorem.</strong> A bounded split complex differentiable function on all of $\mathbb{C}^{\mathrm{spl}}$ need not be constant, because each component can be an arbitrary bounded differentiable function of one real variable.</p>
+<p><strong>No Liouville theorem.</strong> A bounded split complex differentiable function on all of $\mathbb{C}_{\mathrm{spl}}$ need not be constant, because each component can be an arbitrary bounded differentiable function of one real variable.</p>
 <h2 id="integration">Integration</h2>
 <h3 id="contour-integrals">Contour Integrals</h3>
-<p>Let $\gamma : [a, b] \to \mathbb{C}^{\mathrm{spl}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
+<p>Let $\gamma : [a, b] \to \mathbb{C}_{\mathrm{spl}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
 <p>$$
 \int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
 $$</p>
@@ -264,7 +264,7 @@ $$</p>
 <h3 id="definition_1">Definition</h3>
 <p>A <strong>power series</strong> centred at $Q_0$ is</p>
 <p>$$
-\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}^{\mathrm{spl}}.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}_{\mathrm{spl}}.
 $$</p>
 <p>In the idempotent basis $c_n = c_{n,+} \Pi_+ + c_{n,-} \Pi_-$, and the series is the pair of real power series</p>
 <p>$$
@@ -378,7 +378,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>$\mathbb{C}_{\mathrm{spl}}$</td>
 <td>Split complex algebra</td>
 </tr>
 <tr>

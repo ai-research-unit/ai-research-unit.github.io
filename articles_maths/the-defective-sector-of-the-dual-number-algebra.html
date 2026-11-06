@@ -70,19 +70,19 @@
       <div class="article-body">
         <h1 id="the-defective-sector-of-the-dual-number-algebra"><strong>The Defective Sector of the Dual-Number Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The preceding article, <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, proved that every element of the dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R=R[\varepsilon]/(\varepsilon^2)$ is spectrally degenerate: for $Q=a+b\varepsilon$, the characteristic polynomial of left multiplication is $(X-a)^2$ and the spectrum is the singleton $\{a\}$. The repetition of the eigenvalue is universal. The failure of an eigenbasis is not. This article studies the second phenomenon. The <strong>defective sector</strong> is the set of elements whose minimal polynomial has a repeated factor, equivalently the set of elements whose left multiplication is not diagonalisable, equivalently the set of elements for which no basis of eigenvectors exists. The main theorem identifies it:</p>
+<p>The preceding article, <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, proved that every element of the dual-number algebra $\mathbb{C}_{\mathrm{dln},R}=R[\varepsilon]/(\varepsilon^2)$ is spectrally degenerate: for $Q=a+b\varepsilon$, the characteristic polynomial of left multiplication is $(X-a)^2$ and the spectrum is the singleton $\{a\}$. The repetition of the eigenvalue is universal. The failure of an eigenbasis is not. This article studies the second phenomenon. The <strong>defective sector</strong> is the set of elements whose minimal polynomial has a repeated factor, equivalently the set of elements whose left multiplication is not diagonalisable, equivalently the set of elements for which no basis of eigenvectors exists. The main theorem identifies it:</p>
 <p>$$
-D = \{Q = a + b\varepsilon : b\neq0\} = \mathbb{C}^{\mathrm{dln}}_R\setminus R\cdot1.
+D = \{Q = a + b\varepsilon : b\neq0\} = \mathbb{C}_{\mathrm{dln},R}\setminus R\cdot1.
 $$</p>
 <p>The real axis $R\cdot1$, where $b=0$, is the semisimple stratum. The maximal ideal $\mathrm{M}=\{a=0\}$ is not the defective sector: it is the union of the real point $0$, which is semisimple, and the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, which is defective. The defect is carried by the nilpotent part $Q-a=b\varepsilon$; the defective sector is the preimage of $\mathrm{M}\setminus\{0\}$ under the projection $Q\mapsto Q-\operatorname{Re}Q$, and not the maximal ideal itself. This distinction is the subject of the first section and the reason the article separates three strata rather than two.</p>
-<p><strong>Notation.</strong> The algebra is $\mathbb{C}^{\mathrm{dln}}_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of <em>Dual-Numbers Algebra</em> the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&0\\b&a\end{pmatrix}$ are those of <em>$M_2(R)$ Triangular Representation</em> and <em>Dual-Numbers Linear Representations</em>. The polar decomposition is <em>Dual-Numbers Polar Decomposition</em>, the module theory is <em>Modules over $k[x]$ and the Jordan Form</em>, and the biquaternion comparison is <em>The Spectrum</em>.</p>
+<p><strong>Notation.</strong> The algebra is $\mathbb{C}_{\mathrm{dln},R}$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$. The norm is $\langle Q\rangle=Q\bar Q=a^2$, dual conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. In the prime notation of <em>Dual-Numbers Algebra</em> the element is $Q=q+\varepsilon q'$, with $a=q$ and $b=q'$. The matrix-element representation $\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$ and the regular representation $[L_Q]_{(1,\varepsilon)}=\begin{pmatrix}a&0\\b&a\end{pmatrix}$ are those of <em>$M_2(R)$ Triangular Representation</em> and <em>Dual-Numbers Linear Representations</em>. The polar decomposition is <em>Dual-Numbers Polar Decomposition</em>, the module theory is <em>Modules over $k[x]$ and the Jordan Form</em>, and the biquaternion comparison is <em>The Spectrum</em>.</p>
 <h2 id="the-defective-set">The Defective Set</h2>
 <p><strong>Semisimplicity is the squarefreeness of the minimal polynomial; in the dual algebra that is a single condition on the infinitesimal part.</strong></p>
-<p><strong>Definition (semisimple, defective).</strong> An element $Q\in\mathbb{C}^{\mathrm{dln}}_R$ is <strong>semisimple</strong> if its minimal polynomial $m_Q$ is squarefree, equivalently if $L_Q$ is diagonalisable over $R$. It is <strong>defective</strong> if it is not semisimple, equivalently if $m_Q$ has a repeated factor, equivalently if the geometric multiplicity of its eigenvalue is strictly less than its algebraic multiplicity. The <strong>defective set</strong> is</p>
+<p><strong>Definition (semisimple, defective).</strong> An element $Q\in\mathbb{C}_{\mathrm{dln},R}$ is <strong>semisimple</strong> if its minimal polynomial $m_Q$ is squarefree, equivalently if $L_Q$ is diagonalisable over $R$. It is <strong>defective</strong> if it is not semisimple, equivalently if $m_Q$ has a repeated factor, equivalently if the geometric multiplicity of its eigenvalue is strictly less than its algebraic multiplicity. The <strong>defective set</strong> is</p>
 <p>$$
-D = \{Q\in\mathbb{C}^{\mathrm{dln}}_R : Q \text{ is defective}\}.
+D = \{Q\in\mathbb{C}_{\mathrm{dln},R} : Q \text{ is defective}\}.
 $$</p>
-<p><strong>Definition (eigenbasis).</strong> An <strong>eigenbasis</strong> of $Q$ is a basis of $\mathbb{C}^{\mathrm{dln}}_R$ consisting of eigenvectors of $L_Q$.</p>
+<p><strong>Definition (eigenbasis).</strong> An <strong>eigenbasis</strong> of $Q$ is a basis of $\mathbb{C}_{\mathrm{dln},R}$ consisting of eigenvectors of $L_Q$.</p>
 <p><strong>Lemma (the minimal polynomial).</strong> For $Q=a+b\varepsilon$,</p>
 <p>$$
 m_Q(X) = \begin{cases} X-a, & b=0, \\ (X-a)^2, & b\neq0. \end{cases}
@@ -90,12 +90,12 @@ $$</p>
 <p><em>Proof.</em> This is the dichotomy of <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, §<em>The Minimal Polynomial Dichotomy</em>: $Q-a=b\varepsilon$ has square zero, is zero exactly when $b=0$, and no linear polynomial other than $X-a$ can annihilate $Q$ when $Q-a\neq0$.</p>
 <p><strong>Theorem (the defective set).</strong> The defective set is the complement of the real axis:</p>
 <p>$$
-D = \{a+b\varepsilon : b\neq0\} = \mathbb{C}^{\mathrm{dln}}_R\setminus R\cdot1.
+D = \{a+b\varepsilon : b\neq0\} = \mathbb{C}_{\mathrm{dln},R}\setminus R\cdot1.
 $$</p>
 <p><em>Proof.</em> By the lemma, $m_Q=X-a$ is squarefree when $b=0$, so $Q$ is semisimple. When $b\neq0$, $m_Q=(X-a)^2$ has the repeated factor $X-a$, so $Q$ is defective. The real axis is exactly the set $b=0$.</p>
 <p><strong>Remark (the maximal ideal is not the defective set).</strong> The maximal ideal $\mathrm{M}=\{a=0\}$ contains the origin, which is semisimple, and the punctured line $\mathrm{M}\setminus\{0\}=\{b\varepsilon:b\neq0\}$, which is defective. It does not contain the defective units $a+b\varepsilon$ with $a\neq0$ and $b\neq0$. The correct statement is that the defect is carried by the nilpotent part: the map</p>
 <p>$$
-\nu : \mathbb{C}^{\mathrm{dln}}_R\longrightarrow \mathrm{M}, \qquad \nu(Q) = Q-\operatorname{Re}Q = b\varepsilon,
+\nu : \mathbb{C}_{\mathrm{dln},R}\longrightarrow \mathrm{M}, \qquad \nu(Q) = Q-\operatorname{Re}Q = b\varepsilon,
 $$</p>
 <p>is the projection onto $\mathrm{M}$ along the real axis, and</p>
 <p>$$
@@ -104,13 +104,13 @@ $$</p>
 <p>So $\mathrm{M}\setminus\{0\}$ is the set of possible non-zero nilpotent parts, and the defective set is the union of the fibres of $\nu$ over that punctured line. This is the precise sense in which the defect lives in the maximal ideal: it lives in the nilpotent part, not in the real part.</p>
 <h2 id="the-semisimple-stratum">The Semisimple Stratum</h2>
 <p><strong>The real axis is the whole semisimple locus, and it is a field sitting inside the local ring.</strong></p>
-<p><strong>Theorem (the semisimple stratum).</strong> The semisimple locus of $\mathbb{C}^{\mathrm{dln}}_R$ is the real axis</p>
+<p><strong>Theorem (the semisimple stratum).</strong> The semisimple locus of $\mathbb{C}_{\mathrm{dln},R}$ is the real axis</p>
 <p>$$
 S = R\cdot1 = \{a : a\in R\},
 $$</p>
 <p>a subalgebra isomorphic to $R$. Its units are $R^\times$, and its only non-unit is the origin. The algebra is the disjoint union</p>
 <p>$$
-\mathbb{C}^{\mathrm{dln}}_R = S \sqcup D,
+\mathbb{C}_{\mathrm{dln},R} = S \sqcup D,
 $$</p>
 <p>of the semisimple stratum and the defective sector.</p>
 <p><em>Proof.</em> The semisimple locus is $\{b=0\}$ by the theorem of the preceding section, and that is $R\cdot1$. It is closed under addition and multiplication and contains $1$, so it is a subalgebra isomorphic to $R$. Its unit group is $R^\times$ because $a$ is invertible in $R$ exactly when $a\neq0$, and the only element that is not a unit is $0$. The disjoint-union statement is the partition into $b=0$ and $b\neq0$.</p>
@@ -118,7 +118,7 @@ $$</p>
 <p>$$
 D_0 = D\cap\mathrm{M} = \mathrm{M}\setminus\{0\} = \{b\varepsilon : b\neq0\},
 \qquad
-D_1 = D\cap(\mathbb{C}^{\mathrm{dln}}_R)^\times = \{a+b\varepsilon : a\neq0,\ b\neq0\}.
+D_1 = D\cap(\mathbb{C}_{\mathrm{dln},R})^\times = \{a+b\varepsilon : a\neq0,\ b\neq0\}.
 $$</p>
 <p>The stratum $D_0$ is the <strong>nilpotent stratum</strong>; its elements are the non-zero nilpotents, they are non-units and zero divisors, and they satisfy $Q^2=0$. The stratum $D_1$ is the <strong>unipotent stratum</strong>; its elements are units, and each is $Q=a(1+s\varepsilon)$ with $s=b/a\neq0$, where $1+s\varepsilon$ is a unipotent element with $(1+s\varepsilon-1)^2=0$.</p>
 <p><em>Proof.</em> The intersection of $D$ with $\mathrm{M}$ is $\{a=0,b\neq0\}$; these are exactly the non-zero elements of the maximal ideal, and they square to zero. The intersection with the unit group is $\{a\neq0,b\neq0\}$, since the units are $a\neq0$; dividing by $a$ gives the unipotent form, and $(s\varepsilon)^2=0$.</p>
@@ -173,7 +173,7 @@ $$</p>
 <p>$$
 [L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix} = J_2(a).
 $$</p>
-<p>The eigenspace is $E_a=R\varepsilon$, of dimension one; the generalized eigenspace is all of $\mathbb{C}^{\mathrm{dln}}_R$; and the Jordan type is the single block $(2)$. On the real axis the matrix is $aI$ in every basis, and the Jordan type is $(1,1)$.</p>
+<p>The eigenspace is $E_a=R\varepsilon$, of dimension one; the generalized eigenspace is all of $\mathbb{C}_{\mathrm{dln},R}$; and the Jordan type is the single block $(2)$. On the real axis the matrix is $aI$ in every basis, and the Jordan type is $(1,1)$.</p>
 <p><em>Proof.</em> The computation is that of <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, §<em>The Jordan Form</em>:</p>
 <p>$$
 L_Q(\varepsilon)=a\varepsilon, \qquad
@@ -193,19 +193,19 @@ $$</p>
 <p>The pair is a Jordan basis for every choice of $\lambda$ and $\mu$; the normalized choice $\lambda=1$, $\mu=0$ gives the basis of the theorem. Thus the eigenvector line is unique, the Jordan chain is not, and the matrix in any Jordan basis is the same $J_2(a)$. The non-uniqueness is not an ambiguity of the Jordan form; it is the freedom of choosing a splitting of the projection onto the quotient by the eigenvector line, and that splitting is not canonical. There is no eigenbasis because no splitting by eigenvectors exists.</p>
 <h2 id="the-module-picture">The Module Picture</h2>
 <p><strong>The defect is the non-splitting of a short exact sequence of $R[X]$-modules.</strong></p>
-<p>Let $A=R[X]$ and let $M_Q$ be the abelian group $\mathbb{C}^{\mathrm{dln}}_R$ with the $A$-module structure</p>
+<p>Let $A=R[X]$ and let $M_Q$ be the abelian group $\mathbb{C}_{\mathrm{dln},R}$ with the $A$-module structure</p>
 <p>$$
 X\cdot v = Qv.
 $$</p>
 <p><strong>Theorem (the module structure).</strong></p>
 <ol>
 <li>If $b=0$, then $M_Q\cong R[X]/(X-a)\oplus R[X]/(X-a)$; the module is a direct sum of two copies of the simple module $R[X]/(X-a)$, and it is semisimple.</li>
-<li>If $b\neq0$, then $M_Q\cong R[X]/((X-a)^2)$; the module is indecomposable of length two, with a unique simple submodule $R\varepsilon$ and quotient $\mathbb{C}^{\mathrm{dln}}_R/R\varepsilon\cong R$.</li>
+<li>If $b\neq0$, then $M_Q\cong R[X]/((X-a)^2)$; the module is indecomposable of length two, with a unique simple submodule $R\varepsilon$ and quotient $\mathbb{C}_{\mathrm{dln},R}/R\varepsilon\cong R$.</li>
 </ol>
-<p><em>Proof.</em> The evaluation map $A\to\mathbb{C}^{\mathrm{dln}}_R$, $f\mapsto f(Q)$, has kernel $(m_Q)$ and image $R[Q]$. If $b=0$, $Q=a$ and the image is $R\cdot1$; the module is the regular module of $R$, that is, two copies of $R[X]/(X-a)$. If $b\neq0$, then $Q-a=b\varepsilon$ is a non-zero element of $\mathbb{C}^{\mathrm{dln}}_R$, so $1$ and $Q-a$ generate $\mathbb{C}^{\mathrm{dln}}_R$ over $R$; hence $R[Q]=\mathbb{C}^{\mathrm{dln}}_R$, and the evaluation map induces an isomorphism $R[X]/((X-a)^2)\to\mathbb{C}^{\mathrm{dln}}_R$. The submodule $R\varepsilon$ is simple because $X$ acts on it as $a$, and the quotient is $R$ with $X$ acting as $a$; both are isomorphic to $R[X]/(X-a)$.</p>
+<p><em>Proof.</em> The evaluation map $A\to\mathbb{C}_{\mathrm{dln},R}$, $f\mapsto f(Q)$, has kernel $(m_Q)$ and image $R[Q]$. If $b=0$, $Q=a$ and the image is $R\cdot1$; the module is the regular module of $R$, that is, two copies of $R[X]/(X-a)$. If $b\neq0$, then $Q-a=b\varepsilon$ is a non-zero element of $\mathbb{C}_{\mathrm{dln},R}$, so $1$ and $Q-a$ generate $\mathbb{C}_{\mathrm{dln},R}$ over $R$; hence $R[Q]=\mathbb{C}_{\mathrm{dln},R}$, and the evaluation map induces an isomorphism $R[X]/((X-a)^2)\to\mathbb{C}_{\mathrm{dln},R}$. The submodule $R\varepsilon$ is simple because $X$ acts on it as $a$, and the quotient is $R$ with $X$ acting as $a$; both are isomorphic to $R[X]/(X-a)$.</p>
 <p><strong>Corollary (the non-split extension).</strong> For $b\neq0$ there is a short exact sequence of $A$-modules</p>
 <p>$$
-0 \longrightarrow R\varepsilon \longrightarrow M_Q \longrightarrow \mathbb{C}^{\mathrm{dln}}_R/R\varepsilon \longrightarrow 0,
+0 \longrightarrow R\varepsilon \longrightarrow M_Q \longrightarrow \mathbb{C}_{\mathrm{dln},R}/R\varepsilon \longrightarrow 0,
 $$</p>
 <p>both ends isomorphic to $R[X]/(X-a)$, which does not split. The defect is the non-splitting.</p>
 <p><em>Proof.</em> A splitting would give a submodule $S$ complementary to $R\varepsilon$, hence a one-dimensional $R$-subspace $S=Rv$ with $v\notin R\varepsilon$ and $Qv=av$. But $\ker(L_Q-a)=R\varepsilon$, so no such $v$ exists. Hence the sequence does not split, and $M_Q$ is not semisimple.</p>
@@ -273,13 +273,13 @@ $$</p>
 \mathcal N_0=\{Q_t=0,\ B^2=0\}=\{\tilde Q : \vec Q^2=0\}.
 $$</p>
 <p>It contains the origin, which is scalar and semisimple, and the non-zero nilpotents, which are defective. The defect is therefore not the whole nilpotent cone: it is the cone with its vertex removed. The same statement holds in the dual algebra, where the maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective punctured line $\mathrm{M}\setminus\{0\}$. The vertex is the one point at which the defect disappears.</p>
-<p><strong>The unipotent stratum.</strong> The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ consists of units, and every element of it is defective. The same is true in $\mathbb{C}^{\mathrm{dln}}$: the stratum $D_1$ consists of units and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.</p>
+<p><strong>The unipotent stratum.</strong> The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ consists of units, and every element of it is defective. The same is true in $\mathbb{C}_{\mathrm{dln}}$: the stratum $D_1$ consists of units and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.</p>
 <p><strong>The correspondence.</strong> The table records the matching.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\mathbb{B}$</th>
-<th>$\mathbb{C}^{\mathrm{dln}}$</th>
+<th>$\mathbb{C}_{\mathrm{dln}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -309,15 +309,15 @@ $$</p>
 </tr>
 <tr>
 <td>algebra generated: $\mathbb{C}[\vec Q]\cong\mathbb{C}[X]/(X^2)$</td>
-<td>algebra generated: $\mathbb{C}^{\mathrm{dln}}_R\cong R[X]/(X^2)$</td>
+<td>algebra generated: $\mathbb{C}_{\mathrm{dln},R}\cong R[X]/(X^2)$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The differences.</strong> Three differences are differences of dimension. The biquaternion defect sits inside the proper hypersurface $\mathcal S$ of a four-complex-dimensional algebra, and there are spectrally regular biquaternions off $\mathcal S$; the dual defect is the complement of a real line in a two-real-dimensional algebra, and there are no spectrally regular elements. The biquaternion defect has Jordan type $(2,2)$ on a four-dimensional space with a two-dimensional eigenspace; the dual defect has type $(2)$ on a two-dimensional space with a one-dimensional eigenspace. The semisimple stratum in $\mathbb{B}$ is the centre $\mathbb{C}e_t$; in $\mathbb{C}^{\mathrm{dln}}$ it is the real axis $R\cdot1$, which is not the centre because the algebra is commutative. What the cases share is the local structure: the algebra generated at a defective dual point is $R[Q]=R[X]/(X^2)$, with $Q-a=b\varepsilon$ nilpotent and non-zero, and at a defective biquaternion point it is $\mathbb{C}[\vec Q]=\mathbb{C}[X]/(X^2)$ on each of the two blocks; the defect is the single Jordan block of that local algebra.</p>
+<p><strong>The differences.</strong> Three differences are differences of dimension. The biquaternion defect sits inside the proper hypersurface $\mathcal S$ of a four-complex-dimensional algebra, and there are spectrally regular biquaternions off $\mathcal S$; the dual defect is the complement of a real line in a two-real-dimensional algebra, and there are no spectrally regular elements. The biquaternion defect has Jordan type $(2,2)$ on a four-dimensional space with a two-dimensional eigenspace; the dual defect has type $(2)$ on a two-dimensional space with a one-dimensional eigenspace. The semisimple stratum in $\mathbb{B}$ is the centre $\mathbb{C}e_t$; in $\mathbb{C}_{\mathrm{dln}}$ it is the real axis $R\cdot1$, which is not the centre because the algebra is commutative. What the cases share is the local structure: the algebra generated at a defective dual point is $R[Q]=R[X]/(X^2)$, with $Q-a=b\varepsilon$ nilpotent and non-zero, and at a defective biquaternion point it is $\mathbb{C}[\vec Q]=\mathbb{C}[X]/(X^2)$ on each of the two blocks; the defect is the single Jordan block of that local algebra.</p>
 <p><em>Proof.</em> The biquaternion strata and Jordan types are <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Three Strata</em>; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).</p>
 <h2 id="summary">Summary</h2>
-<p>The defective sector of the dual-number algebra is $D=\{a+b\varepsilon:b\neq0\}=\mathbb{C}^{\mathrm{dln}}\setminus R\cdot1$, not the maximal ideal. The maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective nilpotent stratum $\mathrm{M}\setminus\{0\}$; the defect is carried by the nilpotent part $b\varepsilon$, and $D$ is its preimage under $Q\mapsto b\varepsilon$. The semisimple stratum is the real axis $R\cdot1$, a subalgebra isomorphic to $R$ whose only non-unit is the origin. The defective sector splits into the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, with $Q^2=0$, $m_Q=X^2$ and Jordan type $J_2(0)$, and the unipotent stratum $D_1=\{a\neq0,b\neq0\}$, with $Q=a(1+s\varepsilon)$, $s=b/a\neq0$, $m_Q=(X-a)^2$ and Jordan type $J_2(a)$.</p>
-<p>Off the real axis the eigenspace is the line $R\varepsilon$, the generalized eigenspace is everything, and the operator is the single block $J_2(a)$ in the basis $(\varepsilon,b^{-1})$. There is no eigenbasis; the eigenvector line is canonical but the Jordan chain is not, the general basis being $(\lambda\varepsilon,\lambda b^{-1}+\mu\varepsilon)$ with $\lambda\neq0$. In the module picture, $M_Q$ is $R[X]/(X-a)\oplus R[X]/(X-a)$ when $b=0$ and the indecomposable $R[X]/((X-a)^2)$ when $b\neq0$; the defect is the non-splitting of $0\to R\varepsilon\to M_Q\to\mathbb{C}^{\mathrm{dln}}/R\varepsilon\to0$.</p>
+<p>The defective sector of the dual-number algebra is $D=\{a+b\varepsilon:b\neq0\}=\mathbb{C}_{\mathrm{dln}}\setminus R\cdot1$, not the maximal ideal. The maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective nilpotent stratum $\mathrm{M}\setminus\{0\}$; the defect is carried by the nilpotent part $b\varepsilon$, and $D$ is its preimage under $Q\mapsto b\varepsilon$. The semisimple stratum is the real axis $R\cdot1$, a subalgebra isomorphic to $R$ whose only non-unit is the origin. The defective sector splits into the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, with $Q^2=0$, $m_Q=X^2$ and Jordan type $J_2(0)$, and the unipotent stratum $D_1=\{a\neq0,b\neq0\}$, with $Q=a(1+s\varepsilon)$, $s=b/a\neq0$, $m_Q=(X-a)^2$ and Jordan type $J_2(a)$.</p>
+<p>Off the real axis the eigenspace is the line $R\varepsilon$, the generalized eigenspace is everything, and the operator is the single block $J_2(a)$ in the basis $(\varepsilon,b^{-1})$. There is no eigenbasis; the eigenvector line is canonical but the Jordan chain is not, the general basis being $(\lambda\varepsilon,\lambda b^{-1}+\mu\varepsilon)$ with $\lambda\neq0$. In the module picture, $M_Q$ is $R[X]/(X-a)\oplus R[X]/(X-a)$ when $b=0$ and the indecomposable $R[X]/((X-a)^2)$ when $b\neq0$; the defect is the non-splitting of $0\to R\varepsilon\to M_Q\to\mathbb{C}_{\mathrm{dln}}/R\varepsilon\to0$.</p>
 <p>The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parabolic angle: $r=|a|$ and $u=\operatorname{sgn}(a)$ are blind to it, and $Q$ is defective exactly when $s\neq0$; it is defined on the unit group and fails on the nilpotent stratum, where the scale vanishes. The biquaternion cone has the same three strata, with the origin of its nilpotent cone as the semisimple vertex; the dual algebra is the two-dimensional local model of one Jordan block, with type $(2)$ in place of $(2,2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -329,7 +329,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dln}}_R=R[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}_{\mathrm{dln},R}=R[\varepsilon]/(\varepsilon^2)$</td>
 <td>the dual-number algebra over $R$</td>
 </tr>
 <tr>
@@ -382,7 +382,7 @@ $$</p>
 </tr>
 <tr>
 <td>$M_Q$</td>
-<td>$\mathbb{C}^{\mathrm{dln}}_R$ as an $R[X]$-module with $X\cdot v=Qv$</td>
+<td>$\mathbb{C}_{\mathrm{dln},R}$ as an $R[X]$-module with $X\cdot v=Qv$</td>
 </tr>
 <tr>
 <td>$r=\lvert a\rvert$, $u=\operatorname{sgn}(a)$, $s=b/a$</td>

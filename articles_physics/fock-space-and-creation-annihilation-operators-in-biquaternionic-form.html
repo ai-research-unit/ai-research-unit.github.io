@@ -83,27 +83,27 @@
 <p><strong>The gap.</strong> There is <strong>no Fock space in $\mathbb{B}$.</strong> The Fock space of a single mode is the two-dimensional fundamental module of $\mathbb{B}$, not a subalgebra of it; the Fock space of two modes already has dimension four while the operator algebra of two modes has dimension sixteen; and the Fock space of a field is infinite-dimensional. The phrase "biquaternion Fock space" therefore cannot mean a Fock space inside the algebra. It has to mean a Fock space built from a $\mathbb{B}$-module, and that is what the parents construct. The title of this article promises a Fock space in biquaternionic form; what the framework contains is one mode of one, inside $\mathbb{B}$, with everything beyond it built the standard way on the outside.</p>
 </li>
 </ol>
-<p>The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.</p>
+<p>The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.</p>
 <h2 id="fock-space-and-its-operator-algebra">Fock Space and Its Operator Algebra</h2>
 <p>The standard construction, fixed once so that the biquaternion question can be posed against it, is the following.</p>
 <p>A one-particle space $\mathcal{H}_1$ is a complex vector space with a Hermitian form, positive definite in the standard case; for a field it is the space of positive-frequency solutions of the one-particle equation. The <strong>Fock space</strong> is the direct sum of the tensor powers of $\mathcal{H}_1$ projected onto the symmetry type selected by the statistics,</p>
 <p>$$
 \mathcal{F}=\bigoplus_{n\ge0}\Big(\mathcal{H}_1^{\otimes n}\Big)_{\pm},
 $$</p>
-<p>the antisymmetric projection for fermions and the symmetric projection for bosons. The vacuum $|0\rangle$ spans the $n=0$ term. <strong>Creation and annihilation operators</strong> $a^{\mathrm{fop}\dagger}_i,a^{\mathrm{fop}}_i$ raise and lower the degree, and their brackets are the canonical ones,</p>
+<p>the antisymmetric projection for fermions and the symmetric projection for bosons. The vacuum $|0\rangle$ spans the $n=0$ term. <strong>Creation and annihilation operators</strong> $a_{\mathrm{fop},i}^{\dagger},a_{\mathrm{fop},i}$ raise and lower the degree, and their brackets are the canonical ones,</p>
 <p>$$
-\{a^{\mathrm{fop}}_i,a^{\mathrm{fop}\dagger}_j\}=\delta_{ij},\qquad
-[a^{\mathrm{fop}}_i,a^{\mathrm{fop}\dagger}_j]=\delta_{ij},
+\{a_{\mathrm{fop},i},a_{\mathrm{fop},j}^{\dagger}\}=\delta_{ij},\qquad
+[a_{\mathrm{fop},i},a_{\mathrm{fop},j}^{\dagger}]=\delta_{ij},
 $$</p>
 <p>for fermions and bosons respectively, with all other brackets vanishing. The <strong>number operator</strong> is</p>
 <p>$$
-N=\sum_ia^{\mathrm{fop}\dagger}_ia^{\mathrm{fop}}_i,
+N=\sum_ia_{\mathrm{fop},i}^{\dagger}a_{\mathrm{fop},i},
 $$</p>
-<p>with $[N,a^{\mathrm{fop}\dagger}_i]=+a^{\mathrm{fop}\dagger}_i$ and $[N,a^{\mathrm{fop}}_i]=-a^{\mathrm{fop}}_i$ in both cases. The Fock space is graded by $N$, with the occupation basis $|n_1,n_2,\dots\rangle$ diagonalizing it; the fermionic occupation numbers are restricted to $n_i\in\{0,1\}$ by the vanishing of $(a^{\mathrm{fop}\dagger}_i)^2$, itself a consequence of the anticommutation relations, which is the algebraic form of Pauli exclusion.</p>
+<p>with $[N,a_{\mathrm{fop},i}^{\dagger}]=+a_{\mathrm{fop},i}^{\dagger}$ and $[N,a_{\mathrm{fop},i}]=-a_{\mathrm{fop},i}$ in both cases. The Fock space is graded by $N$, with the occupation basis $|n_1,n_2,\dots\rangle$ diagonalizing it; the fermionic occupation numbers are restricted to $n_i\in\{0,1\}$ by the vanishing of $(a_{\mathrm{fop},i}^{\dagger})^2$, itself a consequence of the anticommutation relations, which is the algebraic form of Pauli exclusion.</p>
 <p>Two features of this construction govern everything below. First, the <strong>statistics is carried by the bracket</strong>, not by the Fock space: the symmetric and antisymmetric projections are consequences of $[\;,\;]$ or $\{\;,\;\}$. Second, the <strong>operator algebra is generated by the modes</strong>, and the Fock space is a module for that algebra. Both facts are standard; the second is what makes the biquaternion question sharper than it first appears, because $\mathbb{B}$ is finite-dimensional and the algebra generated by the modes of a field is not.</p>
 <h2 id="the-one-particle-space-and-the-field-expansions">The One-Particle Space and the Field Expansions</h2>
 <p>In the biquaternion framework the one-particle space is a module. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one nontrivial irreducible module, the two-dimensional complex <strong>spinor module</strong> on which it acts by matrix multiplication; the isomorphism $\mathbb{B}\cong\mathrm{End}(\mathbb{C}^2)$ of the algebraic-representations article is exactly this statement. The one-particle space of the Dirac field is a module of this type: at each momentum the positive-frequency solutions span a two-dimensional complex space, the antiparticle branch is a second copy, and the full one-particle space is the completion of the solution space over all momenta. The many-particle space is its <strong>antisymmetric tensor algebra</strong>, as the Dirac quantization article establishes.</p>
-<p>The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its <strong>symmetric</strong> algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\tilde{Ξ}^{\mathrm{sp}}\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.</p>
+<p>The Maxwell case is the same in structure and different in statistics. The one-particle space at each momentum is the four-dimensional polarization space, carrying the indefinite form $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ inherited from the covariant treatment, and the Fock space is its <strong>symmetric</strong> algebra. The Fock space built on all four polarizations has indefinite norm; the physical subspace selected by the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ (for momentum along $\vec e_z$, as in the parent) has positive-semidefinite norm, positive-definite on the quotient by its zero-norm states, and carries exactly the two transverse polarizations. The parent article gives the mode expansion, the commutators and the polarization sum; none of it is repeated here.</p>
 <p>The structural point is the same for both:</p>
 <blockquote>
 <p>The one-particle space is a module over $\mathbb{B}$; the Fock space is an algebra built from that module. Neither is a subalgebra of $\mathbb{B}$.</p>
@@ -113,39 +113,39 @@ $$</p>
 <p>We collect the mode operators that the parents supply, because the rest of the article asks which of them can be elements of $\mathbb{B}$.</p>
 <p><strong>Fermionic (Dirac).</strong> The field expands as</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
-\Big[a^{\mathrm{fop}}_r(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x)\Big],
 $$</p>
-<p>with $a^{\mathrm{fop}}_r$ annihilating particles and $b^{\mathrm{fop}}_r$ annihilating antiparticles. The mode algebra is</p>
+<p>with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is</p>
 <p>$$
-\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}
-=\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec k)\}
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
 $$</p>
 <p>with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are</p>
 <p>$$
-N_a=\sum_r\int\!\frac{d^3p}{(2\pi)^3}a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r,\qquad
-N_b=\sum_r\int\!\frac{d^3p}{(2\pi)^3}b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r,\qquad
+N_a=\sum_r\int\!\frac{d^3p}{(2\pi)^3}a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r},\qquad
+N_b=\sum_r\int\!\frac{d^3p}{(2\pi)^3}b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r},\qquad
 F=N_a+N_b,\qquad
-Ϙ^{\mathrm{fop}}=N_a-N_b,
+Ϙ_{\mathrm{fop}}=N_a-N_b,
 $$</p>
-<p>and Pauli exclusion is the algebraic identity $(a^{\mathrm{fop}\dagger}_r(\vec p))^2=0$. Here $Ϙ^{\mathrm{fop}}=N_a-N_b$ is the conserved fermion number (the corpus's $\mathrm{U}(1)$ charge), while $F=N_a+N_b$ is the <strong>total number of quanta</strong>, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $Ϙ^{\mathrm{fop}}$ is the Dirac quantization article's; $F$ is introduced here.</p>
+<p>and Pauli exclusion is the algebraic identity $(a_{\mathrm{fop},r}^{\dagger}(\vec p))^2=0$. Here $Ϙ_{\mathrm{fop}}=N_a-N_b$ is the conserved fermion number (the corpus's $\mathrm{U}(1)$ charge), while $F=N_a+N_b$ is the <strong>total number of quanta</strong>, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $Ϙ_{\mathrm{fop}}$ is the Dirac quantization article's; $F$ is introduced here.</p>
 <p><strong>Bosonic (Maxwell).</strong> The potential expands in four polarizations with</p>
 <p>$$
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
-=\sigma^{\mathrm{met}}_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]
+=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 \qquad
-(\sigma^{\mathrm{met}}_0,\sigma^{\mathrm{met}}_1,\sigma^{\mathrm{met}}_2,\sigma^{\mathrm{met}}_3)=(-1,+1,+1,+1),
+(\sigma_{\mathrm{met},0},\sigma_{\mathrm{met},1},\sigma_{\mathrm{met},2},\sigma_{\mathrm{met},3})=(-1,+1,+1,+1),
 $$</p>
 <p>and all other commutators vanishing. The timelike mode has negative norm; the physical subspace is defined by the subsidiary condition and carries the two transverse polarizations with positive norm. The physical photon number is the transverse sum</p>
 <p>$$
-N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^3k}{(2\pi)^3}a^{\mathrm{fop}\dagger}_\lambda a^{\mathrm{fop}}_\lambda,
+N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^3k}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
 $$</p>
 <p>which is non-negative on the physical subspace. The negative-norm states that the timelike mode builds are removed by the subsidiary condition; on the physical subspace the number operator is the transverse sum above.</p>
 <p>None of the operators in this section is new. They are displayed together for one reason: every one of them acts on a module or on a Fock space built from a module, and the question "in biquaternionic form" is the question of which of them, if any, is an element of $\mathbb{B}$.</p>
 <h2 id="the-number-operator-and-the-born-rule">The Number Operator and the Born Rule</h2>
-<p>For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the normalised Hermitian form, read as the trace formula, gives</p>
+<p>For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the normalised Hermitian form, read as the trace formula, gives</p>
 <p>$$
 \langle N\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},N\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde{Ϛ}\,N^{*})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\mathrm{Sc}(\tilde{Ϛ}\,N)}{\mathrm{Sc}(\tilde{Ϛ})},\qquad\text{with trace reading } \frac{\operatorname{Tr}(\tilde{Ϛ}\,N^{*})}{\operatorname{Tr}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde{Ϛ}\,N)}{\operatorname{Tr}(\tilde{Ϛ})},
 $$</p>
@@ -160,7 +160,7 @@ $$</p>
 <p><strong>2. The number grading.</strong> The Fock space is $\mathbb{N}$-graded by total particle number, with $N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.</p>
 <p><strong>3. The parity grading.</strong> The fermion parity $(-1)^F$ makes the <strong>operator algebra</strong> $\mathbb{Z}/2$-graded: it is $+1$ on states of even total fermion number and $-1$ on states of odd total fermion number, and</p>
 <p>$$
-(-1)^Fa^{\mathrm{fop}}\,(-1)^F=-a^{\mathrm{fop}},\qquad
+(-1)^Fa_{\mathrm{fop}}\,(-1)^F=-a_{\mathrm{fop}},\qquad
 (-1)^F|0\rangle=|0\rangle .
 $$</p>
 <p>The operators split into an even part commuting with $(-1)^F$ and an odd part anticommuting with it, and "fermionic operators anticommute" is precisely the statement that the algebra is graded-commutative. The Dirac quantization article supplies this grading on the mode algebra and records that embedding it in $\mathbb{B}$ is not done. The next section does the one case where it can be done.</p>
@@ -168,11 +168,11 @@ $$</p>
 <h2 id="what-the-algebra-itself-hosts-one-fermionic-mode">What the Algebra Itself Hosts: One Fermionic Mode</h2>
 <p>We now ask the question the article is named for in its sharpest finite-dimensional form: which creation and annihilation operators are elements of $\mathbb{B}$?</p>
 <h3 id="the-capacity-of-the-algebra">The Capacity of the Algebra</h3>
-<p>The algebra $\mathbb{B}$ has complex dimension four. A fermionic mode is a pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ satisfying the canonical anticommutation relations</p>
+<p>The algebra $\mathbb{B}$ has complex dimension four. A fermionic mode is a pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ satisfying the canonical anticommutation relations</p>
 <p>$$
-\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t,\qquad (a^{\mathrm{fop}})^2=0,\qquad (a^{\mathrm{fop}\dagger})^2=0 .
+\{a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\}=e_t,\qquad (a_{\mathrm{fop}})^2=0,\qquad (a_{\mathrm{fop}}^{\dagger})^2=0 .
 $$</p>
-<p>The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $(a^{\mathrm{fop}})^2=(a^{\mathrm{fop}\dagger})^2=0$ the only monomials are $e_t,a^{\mathrm{fop}},a^{\mathrm{fop}\dagger},a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $m$ independent fermionic modes generate the algebra $\mathrm{Cl}(2m)\cong M_{2^m}(\mathbb{C})$ of complex dimension $4^m$, which for $m\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:</p>
+<p>The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $(a_{\mathrm{fop}})^2=(a_{\mathrm{fop}}^{\dagger})^2=0$ the only monomials are $e_t,a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger},a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $m$ independent fermionic modes generate the algebra $\mathrm{Cl}(2m)\cong M_{2^m}(\mathbb{C})$ of complex dimension $4^m$, which for $m\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:</p>
 <blockquote>
 <p>Up to the automorphisms of the algebra, $\mathbb{B}$ carries exactly <strong>one</strong> fermionic mode, and it is the whole algebra.</p>
 </blockquote>
@@ -243,7 +243,7 @@ $$</p>
 $$</p>
 <p>Read from the right, $\vec\Upsilon_y\vec\Upsilon_x$ annihilates and then creates, and it is the number operator $\tilde\Pi_-$; the reverse creates and then annihilates, and it is the vacuum projector $\tilde\Pi_+$. The two rungs are the two orderings, and the anticommutator is their sum.</p>
 <p><strong>What is created.</strong> One occupation quantum of the mode: the ray changes from $|0\rangle$ to $|1\rangle$. The created object is a state in the fundamental module $S=\mathbb{C}^2$, not an element of $\mathbb{B}$. The nilpotent is the operator; the state is what it acts on. In particular the creator does not create a new nilpotent, and it does not create a second mode — the dimension count of §<em>The Capacity of the Algebra</em> forbids that.</p>
-<p>Nor does it create a particle with momentum, mass or charge. Momentum and spin are labels of the mode once the mode is embedded in a field: $a^{\mathrm{fop}\dagger}_r(\vec p)$ creates a fermion of momentum $\vec p$ and spin $r$, and $b^{\mathrm{fop}\dagger}_r(\vec p)$ the antifermion, as in §<em>The One-Particle Space and the Field Expansions</em>. Mass is a parameter of the field, and charge is the fermion number $N_a-N_b$. The algebra supplies the occupation slot; the field supplies the rest. The one label the algebra itself carries is the two-valued rung.</p>
+<p>Nor does it create a particle with momentum, mass or charge. Momentum and spin are labels of the mode once the mode is embedded in a field: $a_{\mathrm{fop},r}^{\dagger}(\vec p)$ creates a fermion of momentum $\vec p$ and spin $r$, and $b_{\mathrm{fop},r}^{\dagger}(\vec p)$ the antifermion, as in §<em>The One-Particle Space and the Field Expansions</em>. Mass is a parameter of the field, and charge is the fermion number $N_a-N_b$. The algebra supplies the occupation slot; the field supplies the rest. The one label the algebra itself carries is the two-valued rung.</p>
 <p><strong>The star and the name.</strong> The word "creator" is fixed by the choice of vacuum rung, not by the star. In the standard frame $\vec\Upsilon_y=\vec\Upsilon_x^{*}$, the vacuum is $\tilde\Pi_+$, and the creator is the adjoint of the annihilator. Under the reciprocal rescaling of <em>The Peirce Decomposition</em>, $\vec\Upsilon_x\mapsto\mu\vec\Upsilon_x$, $\vec\Upsilon_y\mapsto\mu^{-1}\vec\Upsilon_y$, the two rungs and the number operator are unchanged, and the creator still maps the vacuum ray to the occupied ray, now with the scalar: $\vec\Upsilon_y|0\rangle=\mu^{-1}|1\rangle$. But $\vec\Upsilon_y=\vec\Upsilon_x^{*}$ survives only for $|\mu|=1$. For other $\mu$ the two elements still span the two mixed corners and still multiply to the two rungs, but $\vec\Upsilon_y$ is not the adjoint of $\vec\Upsilon_x$: the adjoint is $|\mu|^2\vec\Upsilon_y$, the same corner with a different normalisation. The pair is conjugate up to the positive scale $|\mu|^2$, which equals one exactly for $|\mu|=1$. The rungs remain Hermitian throughout this rescaling; it is the ladder that loses its conjugation.</p>
 <p><strong>The spin and the name.</strong> The same two matrix units are the spin ladder, read the other way. In the standard frame the corpus writes $\tilde S_+=\hbar\vec\Upsilon_x$ and $\tilde S_-=\hbar\vec\Upsilon_y$, so $\vec\Upsilon_x$ raises the spin and $\vec\Upsilon_y$ lowers it. Since $|0\rangle$ is the $+1$ eigenstate of $\mathsf{M}_2(i\vec e_z)=\sigma_3$, the Fock vacuum is the top spin rung, and the spin-raising operator is the fermion annihilation operator. Neither name is more physical than the other: they are the same ladder read from opposite ends.</p>
 <p><strong>One square-zero that is not a mode.</strong> The BRST charge also squares to zero, but it is a differential: it shifts ghost number, creates no particle, has no vacuum idempotent, and pairs with no identity. Its content is the cohomology $\ker Q/\mathrm{im}\,Q$. The contrast is §<em>The Differential</em> of <em>The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</em>; the construction is <em>BRST Symmetry in Biquaternionic Form</em>. The equation $X^2=0$ alone does not make $X$ a creator. What makes it one is the pair, the two rungs and the module.</p>
@@ -251,9 +251,9 @@ $$</p>
 <p>It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum idempotent, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so every other choice of a single mode is equivalent, and no second mode can be added.</p>
 <p>It does not say that the framework <strong>derives</strong> fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\vec\Upsilon_x,\vec\Upsilon_y$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.</p>
 <h2 id="the-bosonic-case">The Bosonic Case</h2>
-<p>A bosonic mode is a pair satisfying $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$; but the trace of a commutator vanishes, so</p>
+<p>A bosonic mode is a pair satisfying $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$; but the trace of a commutator vanishes, so</p>
 <p>$$
-\boxed{\;0=\mathrm{Tr}\big([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c\;}
+\boxed{\;0=\mathrm{Tr}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c\;}
 $$</p>
 <p>and hence $c=0$. The trace formula $\mathrm{Tr}(e_t)=2\,\mathrm{Sc}(e_t)=2$ is what makes the right-hand side nonzero, and it is the only central scalar available: the centre of $\mathbb{B}=M_2(\mathbb{C})$ is exactly the complex span of $e_t$, so there is no other candidate for a canonical commutator. The oscillator article reaches the same conclusion through the scalar part of the bracket of two Hermitian elements; the trace argument is the stronger statement, because it rules out any finite-dimensional realization of the Heisenberg pair at all.</p>
 <p>The consequence for the framework is worth stating plainly. The Maxwell quantization's Fock space is the symmetric algebra of a module, and its creation and annihilation operators are <strong>not</strong> elements of $\mathbb{B}$: they are elements of the Weyl algebra of the polarization space, which is infinite-dimensional, or of a specific finite truncation of it. The framework contributes to that construction the module on which it is built and the notation in which the polarization sum is written; it contributes no ladder algebra of its own, because it has none to contribute. The indefinite metric, the subsidiary condition and the physical-subspace quotient are imported, exactly as the Maxwell article records. The bosonic case is therefore not the fermionic case with a sign changed; it is a case in which the finite-dimensional algebra has no native structure at all.</p>
@@ -269,8 +269,8 @@ $$</p>
 <tbody>
 <tr>
 <td>Canonical bracket</td>
-<td>$\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t$</td>
-<td>$[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$</td>
+<td>$\{a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\}=e_t$</td>
+<td>$[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$</td>
 </tr>
 <tr>
 <td>Realizable in $\mathbb{B}$?</td>
@@ -321,7 +321,7 @@ $$</p>
 <li>No bosonic mode exists in $\mathbb{B}$, by the trace of a commutator; the obstruction is the finite dimension, not the sector structure.</li>
 <li>The fixed-point splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is not an associative-algebra grading, though it grades the symmetrized product.</li>
 </ul>
-<p><strong>Standard, and inherited from the parents.</strong> The Fock-space construction, the exterior and symmetric algebras, the Dirac and Maxwell mode algebras, Pauli exclusion as $(a^{\mathrm{fop}\dagger})^2=0$, the charge $Ϙ^{\mathrm{fop}}=N_a-N_b$, the Gupta–Bleuler subsidiary condition and the two transverse polarizations. None of this is rederived here and none of it depends on the biquaternion structure beyond the kinematical conventions.</p>
+<p><strong>Standard, and inherited from the parents.</strong> The Fock-space construction, the exterior and symmetric algebras, the Dirac and Maxwell mode algebras, Pauli exclusion as $(a_{\mathrm{fop}}^{\dagger})^2=0$, the charge $Ϙ_{\mathrm{fop}}=N_a-N_b$, the Gupta–Bleuler subsidiary condition and the two transverse polarizations. None of this is rederived here and none of it depends on the biquaternion structure beyond the kinematical conventions.</p>
 <p><strong>Open.</strong></p>
 <ul>
 <li><strong>Whether the one-mode identification is a coincidence.</strong> The equality $\dim_\mathbb{C}M_2(\mathbb{C})=\dim_\mathbb{C}\mathbb{B}=4$ is exact, but a dimension coincidence is not a derivation. Whether the framework singles out the fermionic canonical structure, or whether it merely has room for one instance of it, is not decided here.</li>
@@ -332,7 +332,7 @@ $$</p>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.</p>
-<p>The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$ of dimension $4^m$, which leaves no room in a four-dimensional algebra as soon as $m\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once. The creator is $\vec\Upsilon_y$: it creates one occupation quantum, the change of rung from $|0\rangle$ to $|1\rangle$, and it creates no particle with quantum numbers. Which element is called the creator is fixed by the vacuum rung, not by the star, and the same matrix units read as the spin ladder run the other way.</p>
+<p>The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$ of dimension $4^m$, which leaves no room in a four-dimensional algebra as soon as $m\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once. The creator is $\vec\Upsilon_y$: it creates one occupation quantum, the change of rung from $|0\rangle$ to $|1\rangle$, and it creates no particle with quantum numbers. Which element is called the creator is fixed by the vacuum rung, not by the star, and the same matrix units read as the spin ladder run the other way.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -375,23 +375,23 @@ $$</p>
 <td>One-particle space; Fock space</td>
 </tr>
 <tr>
-<td>$a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$</td>
+<td>$a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$</td>
 <td>Annihilation and creation operators (general)</td>
 </tr>
 <tr>
-<td>$N=\sum_ia^{\mathrm{fop}\dagger}_ia^{\mathrm{fop}}_i$</td>
+<td>$N=\sum_ia_{\mathrm{fop},i}^{\dagger}a_{\mathrm{fop},i}$</td>
 <td>Number operator</td>
 </tr>
 <tr>
-<td>$a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$</td>
+<td>$a_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},r}(\vec p)$</td>
 <td>Dirac particle and antiparticle mode operators (parent's notation)</td>
 </tr>
 <tr>
-<td>$F=N_a+N_b$, $Ϙ^{\mathrm{fop}}=N_a-N_b$</td>
+<td>$F=N_a+N_b$, $Ϙ_{\mathrm{fop}}=N_a-N_b$</td>
 <td>Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge)</td>
 </tr>
 <tr>
-<td>$a^{\mathrm{fop}}_r(\vec k)$, $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$</td>
+<td>$a_{\mathrm{fop},r}(\vec k)$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$</td>
 <td>Maxwell mode operators and indefinite metric</td>
 </tr>
 <tr>

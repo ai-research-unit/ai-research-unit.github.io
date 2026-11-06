@@ -128,7 +128,7 @@ $$</p>
 <p>the row naming the declared unit and the time unit and no other spatial unit at all. Three of the four carry a time slot, and a cell with a time slot collapses, because $e_t$ is the unit: the four are the identity, right multiplication by $\vec u$, left multiplication by $\vec u$, and the two-sided $\vec u[\,]\vec u$. That set therefore changes when the units are permuted, and the coefficient-basis four do not.</p>
 <p><strong>The site parity is diagonal in the frame built on the declared unit.</strong> Right multiplication by $i\vec u$ carries each of the four elements of that frame into a multiple of itself, $+1$ on two of them and $-1$ on the other two, and it is not diagonal in the coefficient basis, where it carries a coefficient unit into a combination of the other units. This is the only role the axis plays below: the string multiplies one such parity per site, so it is diagonal in the frame built on the declared unit and not in the coefficient basis, and that is a property of the basis and not of the algebra.</p>
 <p><strong>A change of display keeps every invariant.</strong> The two bases are carried into one another by the conjugation $C_\Pi$ (<em>Matrix Representations Conventions</em>, §<em>The Switch Between the Two Frames</em>), and a conjugation by $C_\Pi$ changes no product, no commutator, no trace and no determinant. Every identity below is therefore a statement about elements, and it holds in both displays; the closing section prints one of them beside the other.</p>
-<p><strong>Chirality is the subscript, and it takes two values.</strong> An element is written $\tilde Q_L$ or $\tilde Q_R$: $\tilde Q_L$ is the element of value the minus one and $\tilde Q_R$ the element of value the plus one, and that is the whole definition. The two values are exactly two, and only the zero element carries both. The subscript is a function of the element and of the declared axis; a product takes the letter of its right factor, and left multiplication keeps the letter (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). In this article the two values name the parts of the field of the closing section, $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$, and no other object of the article carries them.</p>
+<p><strong>Chirality is the subscript, and it takes two values.</strong> An element is written $\tilde Q_L$ or $\tilde Q_R$: $\tilde Q_L$ is the element of value the minus one and $\tilde Q_R$ the element of value the plus one, and that is the whole definition. The two values are exactly two, and only the zero element carries both. The subscript is a function of the element and of the declared axis; a product takes the letter of its right factor, and left multiplication keeps the letter (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). In this article the two values name the parts of the field of the closing section, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and no other object of the article carries them.</p>
 <h2 id="the-many-site-map">The Many-Site Map</h2>
 <p>Let the chain carry $N$ sites, with chain algebra $\bigotimes_{j=1}^N\mathbb{B}_j$ and identity $e_t$. A symbol carrying one site subscript is the element of that site tensored with the identities of the others, so $\tilde S_{\alpha,j}$ is $\tilde S_\alpha$ of site $j$ and $\tilde Z_j$ is $i\vec e_z$ of site $j$.</p>
 <p><strong>The mode and its star.</strong> Define, for $j=1,\dots,N$,</p>
@@ -143,7 +143,7 @@ $$</p>
 \qquad
 \tilde Z_{<j}^{\,2}=e_t .
 $$</p>
-<p>The literature writes the same mode as the Fock operator $c^{\mathrm{fop}}_j$ with its adjoint $c^{\mathrm{fop}\dagger}_j$; the identities below are identities between elements of the chain algebra, and the transcription to that notation is the standard one.</p>
+<p>The literature writes the same mode as the Fock operator $c_{\mathrm{fop},j}$ with its adjoint $c_{\mathrm{fop},j}^{\dagger}$; the identities below are identities between elements of the chain algebra, and the transcription to that notation is the standard one.</p>
 <p><strong>The anticommutators.</strong> Three identities follow, and all three were verified by exact computation on chains of up to four sites:</p>
 <p>$$
 \boxed{\;\{\tilde C_i,\tilde C_j\}=0 ,
@@ -248,48 +248,48 @@ $$</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are cells of the same two-sided operator algebra that the one-site identification used, and the chirality cell is the right multiplication by $\vec e_z$ that separated the two carriers there.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>The four frame cells are the four coordinates, with the factor $i$ belonging to the cell:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}.
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}.
 $$</p>
 <p>The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell. Multiplying cells, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with $\vec e_x\vec e_x=\vec e_y\vec e_y=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 \qquad
-\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\bigr)=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\bigr)=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=-iR_{\mathrm{pau},\vec e_z}.
 $$</p>
 <p>In the axis-free display:</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 \qquad
-\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\bigr)=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}\bigr)=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-iR_{\mathrm{axf},\vec e_z}.
 $$</p>
-<p>The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.</p>
-<p>That right multiplication is the one the one-site section met, up to the factor $i$: the Peirce sign of the two carriers is $P=R_{i\vec e_z}^{\mathrm{pau}}=iR_{\vec e_z}^{\mathrm{pau}}$, so</p>
+<p>The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\mathrm{pau},\vec e_z}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.</p>
+<p>That right multiplication is the one the one-site section met, up to the factor $i$: the Peirce sign of the two carriers is $P=R_{\mathrm{pau},i\vec e_z}=iR_{\mathrm{pau},\vec e_z}$, so</p>
 <p>$$
-\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-P ,
+\gamma_5=-iR_{\mathrm{pau},\vec e_z}=-P ,
 \qquad
 P^2=I_4 ,
 $$</p>
 <p>The same identities in the axis-free display:</p>
 <p>$$
-\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-P ,
+\gamma_5=-iR_{\mathrm{axf},\vec e_z}=-P ,
 \qquad
 P^2=I_4 ,
 $$</p>
-<p>and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.</p>
-<p>The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:</p>
+<p>and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, whose central form is the sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of the complexified algebra.</p>
+<p>The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ the identity cell:</p>
 <p>$$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 ,
 \qquad
@@ -305,14 +305,14 @@ $$</p>
 $$</p>
 <p>and $\xi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\xi)/2-(e_t-\xi)/2=\xi$. The cell represents $\xi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L} ,
 $$</p>
 <p>$$
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
 <p>The two act from the left; what separates them is the conjugation $\natural$, not a change of side. The mass is the one term of the pair that mixes the two chiralities.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
-<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The Jordan–Wigner transformation in biquaternion form has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the ladder $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp\vec e_y)$ satisfies $\tilde S_\pm^2=0$, $\{\tilde S_+,\tilde S_-\}=\hbar^2e_t$ and $[\tilde S_+,\tilde S_-]=\hbar^2i\vec e_z$, so a one-site spin ladder <em>is</em> a fermionic mode and the string is the empty product.</p>
 <p>For $N$ sites, with $\tilde C_j=\tilde Z_{<j}\tilde S_{+,j}/\hbar$ and the spin-down value occupied,</p>

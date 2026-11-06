@@ -186,7 +186,7 @@ $$</p>
 <h3 id="definition-and-kraus-form">Definition and Kraus Form</h3>
 <p>Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the <strong>dephasing channel</strong> along $\vec u$ is</p>
 <p>$$
-\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ})
+\boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ})
 = (1-p)\,\tilde{Ϛ}
 + p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right)\;}.
 $$</p>
@@ -203,19 +203,19 @@ $$</p>
 $$</p>
 <p>so the fully dephasing map <em>projects the Bloch vector onto the $\vec u$ axis</em>. Including the mixture with weight $1-p$,</p>
 <p>$$
-\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
+\boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
 \qquad
 \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$</p>
 <p>The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. In the eigenbasis of $\vec u$, the off-diagonal entries of the density matrix — the <strong>coherences</strong> — are scaled by $1-p$, while the diagonal entries — the <strong>populations</strong> — are unchanged. This is the standard phase-damping channel, expressed entirely in the objects of $\mathbb{M}_+$.</p>
 <h3 id="limiting-cases-measurement-and-irreversibility">Limiting Cases, Measurement, and Irreversibility</h3>
-<p>At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is <strong>full dephasing</strong>, $Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ^{\mathrm{deph}}_1)^2 = Ξ^{\mathrm{deph}}_1$, and non-$*$-unitary. Full dephasing is <strong>measure-and-forget</strong>: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state</p>
+<p>At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is <strong>full dephasing</strong>, $Ξ_{\mathrm{deph},1}(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ_{\mathrm{deph},1})^2 = Ξ_{\mathrm{deph},1}$, and non-$*$-unitary. Full dephasing is <strong>measure-and-forget</strong>: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state</p>
 <p>$$
-p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}),
+p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ_{\mathrm{deph},1}(\tilde{Ϛ}),
 \qquad
 p_\pm = \frac{\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$</p>
-<p>as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.</p>
+<p>as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ_{\mathrm{deph},p}$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.</p>
 <p>Write $r_\parallel = \vec u\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,</p>
 <p>$$
 |\vec r_2|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq |\vec r|^2 ,
@@ -336,7 +336,7 @@ $$</p>
 <td>Generator of reversible evolution</td>
 </tr>
 <tr>
-<td>$Ξ^{\mathrm{deph}}_p$</td>
+<td>$Ξ_{\mathrm{deph},p}$</td>
 <td>Dephasing channel along $\vec u$</td>
 </tr>
 <tr>

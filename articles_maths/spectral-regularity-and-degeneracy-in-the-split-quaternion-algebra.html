@@ -81,7 +81,7 @@ q\bar q=t^2-S=t^2+q_x^2-q_y^2-q_z^2.
 $$</p>
 <p>The symbol $S$ denotes $\vec v^2$; the scalar subspace is $\mathbb R\cdot1$.</p>
 <h2 id="left-multiplication-and-the-spectral-polynomial">Left Multiplication and the Spectral Polynomial</h2>
-<p><strong>Definition (left multiplication).</strong> For $q\in\mathbb{H}^{\mathrm{spl}}$, the <strong>left multiplication</strong> $L_q$ is the endomorphism of $\mathbb{H}^{\mathrm{spl}}$ defined by $L_q(x)=qx$. It is $\mathbb R$-linear and injective, since $L_q(1)=q$.</p>
+<p><strong>Definition (left multiplication).</strong> For $q\in\mathbb{H}_{\mathrm{spl}}$, the <strong>left multiplication</strong> $L_q$ is the endomorphism of $\mathbb{H}_{\mathrm{spl}}$ defined by $L_q(x)=qx$. It is $\mathbb R$-linear and injective, since $L_q(1)=q$.</p>
 <p><strong>Proposition (the matrix).</strong> On the basis $(1,\vec e_x,\vec e_y,\vec e_z)$, the matrix of $L_q$ is</p>
 <p>$$
 L(q)=\begin{pmatrix}
@@ -126,12 +126,12 @@ $$</p>
 <p>For the Jordan type: at $S=0$, $\vec v\neq0$, $L_q=J_2(t)\oplus J_2(t)$ and the eigenspace has dimension $2$; at $S\neq0$ the direct sum is semisimple with each eigenvalue twice; at $\vec v=0$, $L_q=tI$.</p>
 <p><strong>Corollary (Cayley–Hamilton and the inverse).</strong> Every $q$ satisfies $q^2-2tq+(t^2-S)=0$; if $t^2-S\neq0$, then $q^{-1}=\bar q/(t^2-S)$.</p>
 <p><em>Proof.</em> Since $\vec v^2=S$, $q^2=t^2+2t\vec v+S=2tq-(t^2-S)$, and $q\bar q=\bar q q=t^2-S$.</p>
-<p><strong>Definition and criterion (spectrum, regular and degenerate).</strong> The <strong>spectrum</strong> is $\sigma(q)=\{t+\sqrt S,\ t-\sqrt S\}$. The element is <strong>spectrally regular</strong> when $S\neq0$ and <strong>spectrally degenerate</strong> when $S=0$. The regular case is equivalent to the distinctness of the two eigenvalues, to $4S\neq0$, and, for non-scalar $q$, to $p_q$ being the minimal polynomial and squarefree. For every non-scalar $q$ and every eigenvalue the eigenspace has dimension $2$ over $\mathbb C$; for the scalar, $\mathbb{H}^{\mathrm{spl}}$. A non-scalar $q$ has an eigenbasis over $\mathbb C$ exactly when $S\neq0$.</p>
+<p><strong>Definition and criterion (spectrum, regular and degenerate).</strong> The <strong>spectrum</strong> is $\sigma(q)=\{t+\sqrt S,\ t-\sqrt S\}$. The element is <strong>spectrally regular</strong> when $S\neq0$ and <strong>spectrally degenerate</strong> when $S=0$. The regular case is equivalent to the distinctness of the two eigenvalues, to $4S\neq0$, and, for non-scalar $q$, to $p_q$ being the minimal polynomial and squarefree. For every non-scalar $q$ and every eigenvalue the eigenspace has dimension $2$ over $\mathbb C$; for the scalar, $\mathbb{H}_{\mathrm{spl}}$. A non-scalar $q$ has an eigenbasis over $\mathbb C$ exactly when $S\neq0$.</p>
 <p><em>Proof.</em> The roots of $p_q$ are distinct exactly when $4S\neq0$. In the block decomposition each block contributes one eigenvector per eigenvalue, giving dimension $2$; at $S=0$ and $\vec v\neq0$ the geometric multiplicity $2$ is smaller than the algebraic multiplicity $4$, so no eigenbasis exists. If $S\neq0$ the minimal polynomial has distinct roots, so an eigenbasis exists.</p>
 <h2 id="the-spectral-cone">The Spectral Cone</h2>
 <p><strong>Definition (the spectral cone).</strong> The <strong>spectral cone</strong> is</p>
 <p>$$
-\mathcal C=\{q\in\mathbb{H}^{\mathrm{spl}}:S=0\}=\{q:-q_x^2+q_y^2+q_z^2=0\}.
+\mathcal C=\{q\in\mathbb{H}_{\mathrm{spl}}:S=0\}=\{q:-q_x^2+q_y^2+q_z^2=0\}.
 $$</p>
 <p><strong>Theorem (the cone is the discriminant locus).</strong> For every $q$, $q\in\mathcal C$ exactly when the reduced polynomial $p_q=(\lambda-t)^2-S$ has a repeated root, that is, when the two eigenvalues coincide.</p>
 <p><em>Proof.</em> The discriminant of $p_q$ is $4S$. The characteristic polynomial is $p_q^2$, so the eigenvalues coincide exactly when $p_q$ has a repeated root, that is, when $S=0$.</p>
@@ -156,7 +156,7 @@ $$</p>
 <p>$$
 \varphi(q)=\begin{pmatrix}t+q_y&q_x-q_z\\-(q_x+q_z)&t-q_y\end{pmatrix}
 $$</p>
-<p>is an isomorphism of $\mathbb{H}^{\mathrm{spl}}$ onto $M_2(\mathbb R)$. It satisfies</p>
+<p>is an isomorphism of $\mathbb{H}_{\mathrm{spl}}$ onto $M_2(\mathbb R)$. It satisfies</p>
 <p>$$
 \det\varphi(q)=t^2+q_x^2-q_y^2-q_z^2=t^2-S,\qquad
 \operatorname{tr}\varphi(q)=2t,
@@ -209,7 +209,7 @@ $$</p>
 <td>$t^2+B^2=0$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}^{\mathrm{spl}}$</td>
+<td>$\mathbb{H}_{\mathrm{spl}}$</td>
 <td>$S$, real of signature $(2,1)$</td>
 <td>$S=0$</td>
 <td>$t\pm\sqrt S$</td>
@@ -222,7 +222,7 @@ $$</p>
 <p>The quaternion form is negative definite, so its spectral cone is the centre, every element is semisimple and there is no defective stratum; its norm is positive definite. The biquaternion form is complex nondegenerate, so its spectral cone is a complex cone containing the centre, with a defective part off the centre; its norm is a second complex cone. The split form is real of signature $(2,1)$, so its spectral cone is a real cone containing the scalar line, with a defective part off it; its norm is a second real cone. The split case is the only one in which both cones are real hypersurfaces and neither is the centre.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S>0$, conjugate for $S<0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.</p>
-<p>The matrix model $\mathbb{H}^{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: a unit can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is <em>Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</em>; the four combinations are <em>The Four Sectors of the Split-Quaternion Algebra</em>. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.</p>
+<p>The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: a unit can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is <em>Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</em>; the four combinations are <em>The Four Sectors of the Split-Quaternion Algebra</em>. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -233,7 +233,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{H}^{\mathrm{spl}}$</td>
+<td>$\mathbb{H}_{\mathrm{spl}}$</td>
 <td>the split-quaternion algebra</td>
 </tr>
 <tr>
@@ -286,7 +286,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\varphi(q)$</td>
-<td>the isomorphism $\mathbb{H}^{\mathrm{spl}}\to M_2(\mathbb R)$</td>
+<td>the isomorphism $\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb R)$</td>
 </tr>
 </tbody>
 </table></div>

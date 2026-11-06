@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The reduced biquaternion algebra
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
 $$
 carries two binary conditions. The reduced norm $Q_+Q_-$ is zero or nonzero, and the two eigenvalues $Q_+$ and $Q_-$ are equal or distinct. The conditions are independent, so they cut the algebra into four <strong>sectors</strong>. In the idempotent coordinates $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$, with $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$, the sectors are
 $$
@@ -89,7 +89,7 @@ The first index is the reduced norm ($1$ regular, $0$ degenerate), and the secon
 <p><strong>Definition (the sectors).</strong> For $i,j\in\{0,1\}$, the <strong>sector</strong> $\Sigma_{ij}$ is the set of elements whose reduced norm is nonzero exactly when $i=1$ and whose eigenvalues are distinct exactly when $j=1$. Explicitly, the four sectors are the four displays of the introduction.</p>
 <p><strong>Theorem (the partition).</strong> The sectors form a partition:
 $$
-\mathbb{B}^{\mathrm{red}}=\Sigma_{11}\sqcup\Sigma_{01}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
+\mathbb{B}_{\mathrm{red}}=\Sigma_{11}\sqcup\Sigma_{01}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
 $$</p>
 <p><em>Proof.</em> Each element has one truth value for each binary predicate, so it lies in exactly one of the four combinations; the sets are disjoint and exhaustive.</p>
 <p><strong>Theorem (all four are nonempty).</strong> Each sector contains the element displayed in the table.</p>
@@ -153,7 +153,7 @@ the union of the two full lines, which contains the origin $\Sigma_{00}$.</p>
 $$
 \Sigma_{10}=\mathbb{C}^{\times}\cdot1=\{Q_\blacktriangle\neq0,\ Q_\blacktriangledown=0\},
 $$
-of complex dimension one and real dimension two, and it is connected. Its elements are units with the repeated eigenvalue $Q_\blacktriangle$; the minimal polynomial is $X-Q_\blacktriangle$; the spectral decomposition is the one-term writing $Q_\blacktriangle1$; the eigenspace is all of $\mathbb{B}^{\mathrm{red}}$; and every element is semisimple, not defective. Its closure is the full scalar line
+of complex dimension one and real dimension two, and it is connected. Its elements are units with the repeated eigenvalue $Q_\blacktriangle$; the minimal polynomial is $X-Q_\blacktriangle$; the spectral decomposition is the one-term writing $Q_\blacktriangle1$; the eigenspace is all of $\mathbb{B}_{\mathrm{red}}$; and every element is semisimple, not defective. Its closure is the full scalar line
 $$
 \overline{\Sigma_{10}}=\mathbb{C}\cdot1=\{Q_+=Q_-\},
 $$
@@ -161,7 +161,7 @@ which contains the origin $\Sigma_{00}$.</p>
 <p><em>Proof.</em> The conditions $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$. Conversely, a nonzero scalar has $Q_+=Q_-=Q_\blacktriangle\neq0$. The reduced norm is $Q_\blacktriangle^{2}\neq0$, so the element is a unit. The spectrum is the singleton $\{Q_\blacktriangle\}$, the characteristic polynomial is $(X-Q_\blacktriangle)^{2}$, and the minimal polynomial is $X-Q_\blacktriangle$, which is squarefree. The eigenspace is the whole algebra because $\breve Q=Q_\blacktriangle1$ acts as the scalar $Q_\blacktriangle$. The closure is the full line, the origin included.</p>
 <p><strong>Remark (no Jordan part).</strong> In the biquaternion algebra $\Sigma_{10}$ splits into a scalar line and a Jordan part; here the repeated eigenvalue forces the element to be scalar, so the Jordan part is empty.</p>
 <h2 id="the-sector-math90-the-origin">The Sector $\Sigma_{00}$: The Origin</h2>
-<p><strong>Theorem (the doubly degenerate point).</strong> The sector $\Sigma_{00}$ is the singleton $\{0\}$, of complex dimension zero, and it is closed. It is the only element in both zero sets. Its spectrum is $\{0\}$, its characteristic polynomial is $X^{2}$, its minimal polynomial is $X$, its eigenspace is all of $\mathbb{B}^{\mathrm{red}}$, and its spectral decomposition is the one-term writing $0=0\cdot1$. It is the only nilpotent of the algebra, and it lies in the closure of every other sector.</p>
+<p><strong>Theorem (the doubly degenerate point).</strong> The sector $\Sigma_{00}$ is the singleton $\{0\}$, of complex dimension zero, and it is closed. It is the only element in both zero sets. Its spectrum is $\{0\}$, its characteristic polynomial is $X^{2}$, its minimal polynomial is $X$, its eigenspace is all of $\mathbb{B}_{\mathrm{red}}$, and its spectral decomposition is the one-term writing $0=0\cdot1$. It is the only nilpotent of the algebra, and it lies in the closure of every other sector.</p>
 <p><em>Proof.</em> The conditions $Q_+=Q_-=0$ give $Q_\blacktriangle=0$ and $Q_\blacktriangledown=0$, hence $\breve Q=0$; conversely $0$ satisfies both. The spectrum, the polynomials and the eigenspace are the scalar formulas at $Q_\blacktriangle=0$. If $\breve N^{k}=0$, then $N_+^{k}=0$ and $N_-^{k}=0$ in the field $\mathbb{C}$, so $N_+=N_-=0$; hence $0$ is the only nilpotent. The origin lies in the closure of $\Sigma_{11}$ because $\Sigma_{11}$ is dense, and in the closures of $\Sigma_{01}$ and $\Sigma_{10}$ by the two closure theorems.</p>
 <h2 id="dimensions-and-closures">Dimensions and Closures</h2>
 <p><strong>Theorem (the dimensions).</strong> The dimensions and descriptions are collected in the table; the first dimension is complex and the second is real.</p>
@@ -203,7 +203,7 @@ which contains the origin $\Sigma_{00}$.</p>
 </table></div>
 <p><strong>Theorem (the closures).</strong> The closures are
 $$
-\overline{\Sigma_{11}}=\mathbb{B}^{\mathrm{red}},\qquad
+\overline{\Sigma_{11}}=\mathbb{B}_{\mathrm{red}},\qquad
 \overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00},\qquad
 \overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00},\qquad
 \overline{\Sigma_{00}}=\Sigma_{00}.
@@ -214,7 +214,7 @@ $$</p>
 <h2 id="the-absence-of-a-defective-stratum">The Absence of a Defective Stratum</h2>
 <p><strong>Theorem (no defective element).</strong> Every element of every sector is semisimple. There is no sector, and no subset of a sector, on which an element is defective.</p>
 <p><em>Proof.</em> On $\Sigma_{11}$ and $\Sigma_{01}$ the two eigenvalues are distinct, so the minimal polynomial is the product of two distinct linear factors, hence squarefree. On $\Sigma_{10}$ the element is scalar and the minimal polynomial is linear. On $\Sigma_{00}$ the element is zero and the minimal polynomial is $X$. In every case the minimal polynomial is squarefree, so the element is semisimple. A defective element would have a minimal polynomial with a repeated root, and none occurs.</p>
-<p><strong>Remark (the comparison with the biquaternion algebra).</strong> In the biquaternion algebra the minimal polynomial refines the sectors into six strata: $\Sigma_{10}$ splits into a scalar line and a Jordan part, and $\Sigma_{00}$ into the origin and the nonzero nilpotents. Those parts are empty here because $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ is reduced, while $M_2(\mathbb{C})$ is not: a nonzero nilpotent matrix exists in the matrix algebra, and no nonzero nilpotent exists in a product of fields.</p>
+<p><strong>Remark (the comparison with the biquaternion algebra).</strong> In the biquaternion algebra the minimal polynomial refines the sectors into six strata: $\Sigma_{10}$ splits into a scalar line and a Jordan part, and $\Sigma_{00}$ into the origin and the nonzero nilpotents. Those parts are empty here because $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ is reduced, while $M_2(\mathbb{C})$ is not: a nonzero nilpotent matrix exists in the matrix algebra, and no nonzero nilpotent exists in a product of fields.</p>
 <h2 id="summary">Summary</h2>
 <p>The reduced biquaternion algebra is partitioned into four sectors by the reduced norm $Q_+Q_-$ and the eigenvalue difference $Q_+-Q_-$:
 $$
@@ -227,7 +227,7 @@ $$
 $$
 All four are nonempty.</p>
 <p>The generic sector $\Sigma_{11}$ is the complement of the three complex lines $Q_+=0$, $Q_-=0$ and $Q_+=Q_-$; it is open and dense, of complex dimension two, and consists of the units with distinct eigenvalues. The sector $\Sigma_{01}$ is the union of the two punctured hyperplanes $\mathbb{C}^{\times}\Pi_+$ and $\mathbb{C}^{\times}\Pi_-$, of complex dimension one, with two connected components; it consists of the zero divisors with distinct eigenvalues. The sector $\Sigma_{10}$ is the connected punctured scalar line $\mathbb{C}^{\times}\cdot1$, of complex dimension one; the sector $\Sigma_{00}$ is the origin.</p>
-<p>The dimensions are $2,1,1,0$ over $\mathbb{C}$ and $4,2,2,0$ over $\mathbb{R}$. The closures are $\overline{\Sigma_{11}}=\mathbb{B}^{\mathrm{red}}$, $\overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00}$, $\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00}$ and $\overline{\Sigma_{00}}=\Sigma_{00}$; the partition is a stratification.</p>
+<p>The dimensions are $2,1,1,0$ over $\mathbb{C}$ and $4,2,2,0$ over $\mathbb{R}$. The closures are $\overline{\Sigma_{11}}=\mathbb{B}_{\mathrm{red}}$, $\overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00}$, $\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00}$ and $\overline{\Sigma_{00}}=\Sigma_{00}$; the partition is a stratification.</p>
 <p>No sector has a defective stratum. Every element is semisimple: the minimal polynomial is a product of distinct linear factors on $\Sigma_{11}$ and $\Sigma_{01}$, linear on $\Sigma_{10}$, and $X$ at the origin. The repeated-eigenvalue sector $\Sigma_{10}$ contains only scalars, and the only nilpotent is $0$. The defective cone and the Jordan parts of the biquaternion algebra are absent because $\mathbb{C}\times\mathbb{C}$ is reduced.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

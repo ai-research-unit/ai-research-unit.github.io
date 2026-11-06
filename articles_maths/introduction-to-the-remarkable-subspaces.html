@@ -103,7 +103,7 @@
 <h2 id="the-three-involutions-and-their-spaces">The Three Involutions and Their Spaces</h2>
 <h3 id="the-fixed-and-anti-fixed-space-of-an-involution">The Fixed and Anti-Fixed Space of an Involution</h3>
 <p><strong>An involution of the algebra splits the real space into the fixed and the anti-fixed space, and the two are complementary.</strong></p>
-<p><strong>Definition.</strong> For an involution $\sigma$ of $\mathbb{B}^{\mathrm{red}}$ the <strong>fixed space</strong> is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the <strong>anti-fixed space</strong> is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.</p>
+<p><strong>Definition.</strong> For an involution $\sigma$ of $\mathbb{B}_{\mathrm{red}}$ the <strong>fixed space</strong> is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the <strong>anti-fixed space</strong> is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.</p>
 <p><strong>Proposition.</strong> For an involution $\sigma$ the fixed and the anti-fixed space are real subspaces, they meet in $\{0\}$, and their sum is the whole space; over $\mathbb{R}$ they are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$, and the projections onto them are
 $$
 P_{+}=\tfrac12(\mathrm{id}+\sigma),\qquad P_{-}=\tfrac12(\mathrm{id}-\sigma).
@@ -213,7 +213,7 @@ $$
 \Pi_+=\tfrac12(1+j)=\tfrac12(\mathbf 1+\mathbf j),\qquad \Pi_-=\tfrac12(\mathbf 1-\mathbf j),
 $$
 where $\mathbf 1,\mathbf j$ are the coordinate vectors; the lines are spanned by the vectors $\tfrac12(1,0,1,0)$ and $\tfrac12(0,1,0,1)$ for $\mathbb{C}\Pi_+$ and $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$ for $\mathbb{C}\Pi_-$. They are not the spans of pairs of basis elements, and in the matrix model of <em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> they are the two coordinate lines of the diagonal algebra.</p>
-<p><strong>Remark (the involutions on the idempotent lines).</strong> The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the tessarine sign and the star exchange them, $\Pi_{+,\mathrm{ts}}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}_{\mathrm{ts}}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.</p>
+<p><strong>Remark (the involutions on the idempotent lines).</strong> The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the tessarine sign and the star exchange them, $\Pi_{\mathrm{ts},+}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}_{\mathrm{ts}}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.</p>
 <h2 id="the-relations-between-the-spaces">The Relations between the Spaces</h2>
 <h3 id="inclusions-and-intersections">Inclusions and Intersections</h3>
 <p><strong>The six coordinate planes meet two by two in a real line or in $\{0\}$, and the pairs summing to the whole space are the three decompositions.</strong></p>
@@ -291,10 +291,10 @@ where $\mathbf 1,\mathbf j$ are the coordinate vectors; the lines are spanned by
 <p><em>Proof.</em> Each plane is the span of two of the four real lines, so the intersection of two planes is the span of the common lines and its dimension is $0$, $1$ or $2$ by the character table; the displayed entries are read off the four-line table, and the dimension formula is the standard one for two subspaces.</p>
 <p><strong>Corollary (the three complementary pairs).</strong> Exactly three pairs of distinct planes sum to the whole real space, namely the three pairs of one involution:
 $$
-\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}^{\mathrm{red}} \;}.
+\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{red}} \;}.
 $$
 All the other pairs sum to a real three-dimensional space, since their intersection is a line.</p>
-<p><strong>Corollary (the idempotent lines).</strong> The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}^{\mathrm{red}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.</p>
+<p><strong>Corollary (the idempotent lines).</strong> The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}_{\mathrm{red}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.</p>
 <h3 id="the-norm-on-the-spaces">The Norm on the Spaces</h3>
 <p><strong>On the six coordinate planes the norm is either positive definite, negative definite or split, and on the idempotent lines it vanishes identically.</strong></p>
 <p><strong>Theorem (the norms).</strong> The algebraic norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ restricted to the spaces is</p>

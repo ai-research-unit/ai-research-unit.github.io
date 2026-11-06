@@ -181,21 +181,21 @@ $$</p>
 <p><strong>Zero divisors.</strong> The difference quotient requires a division by $h$, and $h$ is a zero divisor on a set of positive codimension whenever $A$ is not a division algebra. The split complex numbers, the dual numbers and the biquaternions all have zero divisors, and in each of them a nonzero element can have no inverse. Consequently the inverse function theorem holds only at points where the derivative is a unit, the quotient rule only where the denominator is a unit, and the algebraic manipulations of complex analysis that divide by a value of a function require a hypothesis in place of the classical one.</p>
 <p><strong>The one-sided module structure.</strong> The space of $A$-valued functions on $\Omega$ is a module over $A$ for multiplication of the values by a constant, but $D(af) = a\,Df$ requires $a$ to commute with the coefficients $B_\alpha$; the space of regular functions is therefore a module over the centre of $A$, and not over $A$ itself. Together with non-commutativity this produces the left and the right theory, and the two are exchanged by an anti-automorphism rather than identified.</p>
 <p><strong>The dimension.</strong> The symbol $\sigma(\zeta) = \zeta_t + \sum_{k\geq1}B_k\zeta_k$ must be invertible for every real $\zeta \neq 0$ if the operator is to be elliptic, and the factorisation $D\bar D = \Delta$ requires the Clifford relations. Over a degenerate algebra this fails, and with it the whole elliptic apparatus: the characteristic variety meets the real space, the plane waves are real exponentials rather than oscillatory, and the components of a regular function satisfy a wave or transport equation in place of Laplace's equation.</p>
-<p><strong>Proposition (elliptic and degenerate systems).</strong> Let $A$ have dimension $m$ and let $D = \partial/\partial Q_t + \sum_{k\geq1}B_k\partial/\partial Q_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = |\zeta|^2\cdot 1$ and $D$ is elliptic. By contrast:</p>
+<p><strong>Proposition (elliptic and degenerate systems).</strong> Let $A$ have dimension $m$ and let $D = \partial/\partial Q_t + \sum_{k\geq1}B_k\partial/\partial Q_k$ with $B_k^2 = -1$ and $B_jB_k = -B_kB_j$ for $j \neq k$. Then the symbol satisfies $\sigma(\zeta)\sigma_{\mathrm{refl}}(\zeta) = |\zeta|^2\cdot 1$ and $D$ is elliptic. By contrast:</p>
 <ul>
-<li>for $\mathbb{C}^{\mathrm{spl}}$ with $D = \partial/\partial Q_t + j\partial/\partial Q_x$, the product $\sigma(\zeta)\sigma^{\mathrm{refl}}(\zeta) = \zeta_t^2 - \zeta_x^2$ vanishes on the two real lines $\zeta_t = \pm\zeta_x$;</li>
-<li>for $\mathbb{C}^{\mathrm{dln}}$ with $D = \partial/\partial Q_t + \varepsilon\partial/\partial Q_x$, the same product is $\zeta_t^2$ and vanishes on the hyperplane $\zeta_t = 0$.</li>
+<li>for $\mathbb{C}_{\mathrm{spl}}$ with $D = \partial/\partial Q_t + j\partial/\partial Q_x$, the product $\sigma(\zeta)\sigma_{\mathrm{refl}}(\zeta) = \zeta_t^2 - \zeta_x^2$ vanishes on the two real lines $\zeta_t = \pm\zeta_x$;</li>
+<li>for $\mathbb{C}_{\mathrm{dln}}$ with $D = \partial/\partial Q_t + \varepsilon\partial/\partial Q_x$, the same product is $\zeta_t^2$ and vanishes on the hyperplane $\zeta_t = 0$.</li>
 </ul>
 <p>In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.</p>
-<p><strong>Example (the degenerate systems solved explicitly).</strong> For $\mathbb{C}^{\mathrm{spl}}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\zeta_\pm = x_t \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\zeta_+ + \partial/\partial\zeta_-$ and $\partial/\partial Q_x = \partial/\partial\zeta_+ - \partial/\partial\zeta_-$ and therefore $\Pi_x\partial/\partial\zeta_+ + \Pi_y\partial/\partial\zeta_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then</p>
+<p><strong>Example (the degenerate systems solved explicitly).</strong> For $\mathbb{C}_{\mathrm{spl}}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\zeta_\pm = x_t \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\zeta_+ + \partial/\partial\zeta_-$ and $\partial/\partial Q_x = \partial/\partial\zeta_+ - \partial/\partial\zeta_-$ and therefore $\Pi_x\partial/\partial\zeta_+ + \Pi_y\partial/\partial\zeta_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then</p>
 <p>$$
 D = \partial/\partial Q_t + j\partial/\partial Q_x = 2\bigl(\Pi_x\partial/\partial\zeta_+ + \Pi_y\partial/\partial\zeta_-\bigr),
 $$</p>
-<p>so $f$ is left regular exactly when $f_+$ is a function of $\zeta_-$ alone and $f_-$ is a function of $\zeta_+$ alone. The regular functions of $\mathbb{C}^{\mathrm{spl}}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function</p>
+<p>so $f$ is left regular exactly when $f_+$ is a function of $\zeta_-$ alone and $f_-$ is a function of $\zeta_+$ alone. The regular functions of $\mathbb{C}_{\mathrm{spl}}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function</p>
 <p>$$
 f(x_t + jx_1) = \exp(-(x_t - jx_1)^2) = \exp(-(x_t^2+x_1^2))\bigl(\cosh(2x_tx_1) + j\sinh(2x_tx_1)\bigr)
 $$</p>
-<p>is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{C}^{\mathrm{dln}}$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.</p>
+<p>is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{C}_{\mathrm{dln}}$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.</p>
 <h2 id="consequences-of-ellipticity">Consequences of Ellipticity</h2>
 <p>Assume from here on that $(A,D)$ is an elliptic hypercomplex system, so that $D\bar D = \bar D D = \Delta$, and that $\Omega \subseteq A$ is a domain, that is, open and connected.</p>
 <p><strong>Theorem (regular implies harmonic).</strong> If $f$ is left regular of class $C^2$ on $\Omega$, then each component of $f$ is harmonic:</p>
@@ -277,14 +277,14 @@ $$</p>
 <td>nothing</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>$\mathbb{C}_{\mathrm{spl}}$</td>
 <td>2</td>
 <td>$\partial/\partial Q_t + j\partial/\partial Q_x$</td>
 <td>arbitrary functions of one characteristic variable</td>
 <td>ellipticity, maximum principle, Liouville</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dln}}$</td>
+<td>$\mathbb{C}_{\mathrm{dln}}$</td>
 <td>2</td>
 <td>$\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$</td>
 <td>$u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$</td>
@@ -298,7 +298,7 @@ $$</p>
 <td>closure under products, curve Morera</td>
 </tr>
 <tr>
-<td>$\mathbb{B}^{\mathrm{spl}}$</td>
+<td>$\mathbb{B}_{\mathrm{spl}}$</td>
 <td>8</td>
 <td>$\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ in the four quaternionic coordinates</td>
 <td>monogenic</td>
@@ -313,11 +313,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The rows for $\mathbb{B}^{\mathrm{spl}}$ and $\mathbb{B}$ treat the two eight-dimensional algebras through their four <em>quaternionic</em> coordinates: the variable is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with coefficients $Q_\mu$ in $\mathbb{C}^{\mathrm{spl}}$ or in $\mathbb{C}$, the operator differentiates with respect to those four coordinates, and the remaining four real coordinates are carried as coefficients of the variable rather than as direction variables. The operator that $D$ factors is then the four-dimensional one, $\sum_\mu \partial^2/\partial Q_\mu^2$; it is the Euclidean Laplacian on the quaternion subspace, the negative of the Euclidean Laplacian on the anti-quaternion subspace, and it is indefinite in the underlying real coordinates on the Hermitian and anti-Hermitian subspaces. The theories so obtained are developed in <em>Clifford Analysis</em> and <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
+<p>The rows for $\mathbb{B}_{\mathrm{spl}}$ and $\mathbb{B}$ treat the two eight-dimensional algebras through their four <em>quaternionic</em> coordinates: the variable is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with coefficients $Q_\mu$ in $\mathbb{C}_{\mathrm{spl}}$ or in $\mathbb{C}$, the operator differentiates with respect to those four coordinates, and the remaining four real coordinates are carried as coefficients of the variable rather than as direction variables. The operator that $D$ factors is then the four-dimensional one, $\sum_\mu \partial^2/\partial Q_\mu^2$; it is the Euclidean Laplacian on the quaternion subspace, the negative of the Euclidean Laplacian on the anti-quaternion subspace, and it is indefinite in the underlying real coordinates on the Hermitian and anti-Hermitian subspaces. The theories so obtained are developed in <em>Clifford Analysis</em> and <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
 <p>The rows are worked out system by system:for $\mathbb{C}$, where every classical theorem holds;and <em>Dual Numbers Analysis</em> for the two degenerate two-dimensional systems, where the idempotent and nilpotent structures replace the elliptic analysis;for $\mathbb{H}$, where the monogenic functions and the Fueter construction are developed. The general theorems of the present article are the common form of all of them: an operator, the kernel it defines, the Cauchy representation, and the consequences of ellipticity, with the last column of the table recording the price paid in each case.</p>
 <h2 id="summary">Summary</h2>
 <p>Hypercomplex analysis studies functions $f : \Omega \subseteq A \to A$ of a variable in a finite-dimensional unital associative real algebra $A$, using a <strong>generalised Cauchy–Riemann operator</strong> $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ and declaring $f$ <strong>left regular</strong> when $Df = 0$ (and right regular when $fD = 0$). Requiring the differential to be linear over $A$ is too strong: over $\mathbb{H}$ it forces $f(x) = ax + b$, so the construction proceeds through the operator instead. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_t = 1$, the operator factors the Laplacian, $D\bar D = \bar D D = \Delta$, and this factorisation is the structural input the theory requires; a hypercomplex system is a pair $(A,D)$ for which it holds.</p>
-<p>Regular functions form a real vector space, are closed under right multiplication by constants and under left multiplication by constants commuting with the coefficients, but not under products. Four features obstruct the naive programme: non-commutativity, which separates the left and the right theory; zero divisors, which make the difference quotient undefined along a set of directions and restrict the quotient rule to units; the one-sided module structure, which makes the regular functions a module over the centre rather than over $A$; and the dimension, which makes the requirement $df(x) \in L_A$ a system of $m^2 - m$ conditions on $m^2$ unknowns. The second notion that survives is $C$-holomorphy in a commutative subalgebra $C \subseteq A$: power series with coefficients in $A$ and variable in $C$ are $C$-differentiable, and for $C \cong \mathbb{C} \subseteq \mathbb{H}$ this recovers complex analysis with values in $\mathbb{B} \cong M_2(\mathbb{C})$. Under ellipticity regular functions are real-analytic (identity theorem), each component is harmonic (maximum principle via subharmonicity of $\|f\|^2$), and a bounded regular function on all of $A$ is constant (Liouville); for the degenerate systems $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$, whose operators have symbols vanishing on the real space, the last two fail, as does the mean value property, and the regular functions depend on arbitrary functions of fewer variables. The Cauchy–Pompeiu formula represents a general function by an integral of a Cauchy kernel of the system against its boundary values minus a volume integral of $Df$, and the Cauchy integral formula is the special case of a regular function; the kernel itself depends on the system. The algebra automorphisms act on the admissible operators and their stabiliser is the symmetry group of the system. Each system of categories 26 to 29 is a row of the table of the parallel structure.</p>
+<p>Regular functions form a real vector space, are closed under right multiplication by constants and under left multiplication by constants commuting with the coefficients, but not under products. Four features obstruct the naive programme: non-commutativity, which separates the left and the right theory; zero divisors, which make the difference quotient undefined along a set of directions and restrict the quotient rule to units; the one-sided module structure, which makes the regular functions a module over the centre rather than over $A$; and the dimension, which makes the requirement $df(x) \in L_A$ a system of $m^2 - m$ conditions on $m^2$ unknowns. The second notion that survives is $C$-holomorphy in a commutative subalgebra $C \subseteq A$: power series with coefficients in $A$ and variable in $C$ are $C$-differentiable, and for $C \cong \mathbb{C} \subseteq \mathbb{H}$ this recovers complex analysis with values in $\mathbb{B} \cong M_2(\mathbb{C})$. Under ellipticity regular functions are real-analytic (identity theorem), each component is harmonic (maximum principle via subharmonicity of $\|f\|^2$), and a bounded regular function on all of $A$ is constant (Liouville); for the degenerate systems $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, whose operators have symbols vanishing on the real space, the last two fail, as does the mean value property, and the regular functions depend on arbitrary functions of fewer variables. The Cauchy–Pompeiu formula represents a general function by an integral of a Cauchy kernel of the system against its boundary values minus a volume integral of $Df$, and the Cauchy integral formula is the special case of a regular function; the kernel itself depends on the system. The algebra automorphisms act on the admissible operators and their stabiliser is the symmetry group of the system. Each system of categories 26 to 29 is a row of the table of the parallel structure.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -392,16 +392,16 @@ $$</p>
 <td>Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$</td>
+<td>$\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$</td>
 <td>Split complex numbers, $j^2=+1$; degenerate for $D = \partial/\partial Q_t + j\partial/\partial Q_x$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual numbers, $\varepsilon^2=0$; degenerate for $D = \partial/\partial Q_t+\varepsilon\partial/\partial Q_x$</td>
 </tr>
 <tr>
 <td>$\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t\pm x_1$</td>
-<td>Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$</td>
+<td>Idempotents and characteristic coordinates of $\mathbb{C}_{\mathrm{spl}}$</td>
 </tr>
 </tbody>
 </table></div>

@@ -181,28 +181,28 @@ $$</p>
 <h2 id="the-gauge-fixing-fermion-and-the-brst-exact-lagrangian">The Gauge-Fixing Fermion and the BRST-Exact Lagrangian</h2>
 <p>The gauge-fixing and ghost terms are not merely invariant under $s$; they are $s$-exact. Define the <strong>gauge-fixing fermion</strong></p>
 <p>$$
-\tilde{Ξ}^{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+\tilde{Ξ}_{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
+\tilde{Ξ}_{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
 \qquad\text{(non-abelian)} .
 $$</p>
 <p>Then a direct computation with the graded Leibniz rule gives, in the abelian case,</p>
 <p>$$
-s\tilde{Ξ}^{\mathrm{sp}} = (s\bar{c})\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+s\tilde{Ξ}_{\mathrm{sp}} = (s\bar{c})\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 - \bar{c}\,s\!\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B^2-\bar{c}\,\Box\,c,
 $$</p>
 <p>where the minus sign on the second term is the sign $(-1)^{| \bar{c}|}=-1$ that the oddness of $\bar{c}$ requires. This is exactly $\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$, so</p>
 <p>$$
-\boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\tilde{Ξ}^{\mathrm{sp}}\;}.
+\boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\tilde{Ξ}_{\mathrm{sp}}\;}.
 $$</p>
 <p>Since $\mathcal{L}_{\mathrm{gauge}}$ is gauge invariant and hence $s$-invariant (the gauge transformation is $sA_{\mu a}=(D_\mu c)_a$ with $c$ the ghost), the whole gauge-fixed Lagrangian is $s$-invariant, and the invariance is automatic once $s^2=0$:</p>
 <p>$$
-s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ}^{\mathrm{sp}} = 0 .
+s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ}_{\mathrm{sp}} = 0 .
 $$</p>
-<p>The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}^{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.</p>
-<p>The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}^{\mathrm{sp}}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}^{\mathrm{sp}}$ is its image, and the physical states are the cohomology of $s$, as below.</p>
+<p>The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}_{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.</p>
+<p>The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}_{\mathrm{sp}}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}_{\mathrm{sp}}$ is its image, and the physical states are the cohomology of $s$, as below.</p>
 <h2 id="ghost-number-the-brst-charge-and-cohomology">Ghost Number, the BRST Charge, and Cohomology</h2>
 <h3 id="grading">Grading</h3>
 <p>The ghost number is a grading of the field algebra, additive under products, defined by</p>
@@ -219,7 +219,7 @@ $$</p>
 <p>$$
 \mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1,
 $$</p>
-<p>so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ makes the pair $(\mathbb{B}\otimes\Lambda,s)$ into a <strong>cochain complex</strong>, the BRST complex. The gauge-fixing fermion has ghost number $-1$, consistent with $s\tilde{Ξ}^{\mathrm{sp}}$ having ghost number $0$.</p>
+<p>so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ makes the pair $(\mathbb{B}\otimes\Lambda,s)$ into a <strong>cochain complex</strong>, the BRST complex. The gauge-fixing fermion has ghost number $-1$, consistent with $s\tilde{Ξ}_{\mathrm{sp}}$ having ghost number $0$.</p>
 <h3 id="the-brst-charge">The BRST Charge</h3>
 <p>Because the transformation is a symmetry of the action, it has a conserved charge by Noether's theorem: the <strong>BRST charge</strong> $\mathcal{Q}$, a Grassmann-odd operator with</p>
 <p>$$
@@ -253,7 +253,7 @@ $$</p>
 <p><strong>Which gauge algebras are realized.</strong> The Jacobi identity holds for any gauge algebra realized by a commutator inside $\mathbb{B}$, but the algebras so realized are constrained by the finite dimension of the algebra. Is the constraint physical — does it select a subclass of gauge groups — or is it an artifact of using a single copy of the algebra?</p>
 </li>
 <li>
-<p><strong>The gauge-fixing fermion and the sector split.</strong> The fermion $\tilde{Ξ}^{\mathrm{sp}}$ is built from the antighost, which is odd, and the gauge-fixing function, which is even and material. Does the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ organize the BRST complex into a double complex, with the two differentials corresponding to the two sectors?</p>
+<p><strong>The gauge-fixing fermion and the sector split.</strong> The fermion $\tilde{Ξ}_{\mathrm{sp}}$ is built from the antighost, which is odd, and the gauge-fixing function, which is even and material. Does the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ organize the BRST complex into a double complex, with the two differentials corresponding to the two sectors?</p>
 </li>
 <li>
 <p><strong>The massive limit and the disappearance of the ghosts.</strong> The ghosts disappear when the mass appears and the constraints become second class. Is there a deformation of the BRST complex in which the mass is a deformation parameter and the cohomology jumps from two to three dimensions at $\mu=0$, and is the jump visible algebraically?</p>
@@ -263,7 +263,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}^{\mathrm{sp}}$ with $\tilde{Ξ}^{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.</p>
+<p>The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.</p>
 <p>In the biquaternion framework two things are added to the standard transcription. The first is the natural realization of the gauge algebra inside the algebra: the generators lie in the informational sector $\mathbb{M}_+$, the gauge field in the material sector $\mathbb{M}_-$, and the structure constants are those of the commutator. The second, and the substantive one, is the origin of nilpotency. The Jacobi identity that makes the non-abelian BRST transformation nilpotent is a consequence of the associativity of quaternion multiplication, so that $s^2=0$ is inherited from associativity and not postulated. The nilpotency was verified explicitly on the Grassmann envelope with $\mathrm{SU}(2)$ structure constants and random gauge fields, and the Jacobi combination was verified to vanish.</p>
 <p>What the framework does not supply is the Grassmann envelope itself. The algebra is four-dimensional over $\mathbb{C}$ and ungraded: it has no odd elements, so the ghosts and the odd part of the BRST charge must be adjoined as $\mathbb{B}\otimes\Lambda$. The gauge-fixing fermion, the gauge-fixing function, the choice of gauge group and of the gauge parameter, the Faddeev–Popov procedure that produces the ghost Lagrangian, and the positivity argument for the cohomology are all imported. The massive Proca theory is the control case in which the gauge redundancy and hence the entire BRST apparatus are absent, and the physical content is three positive-norm polarizations.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -332,8 +332,8 @@ $$</p>
 <td>Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$</td>
-<td>Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}^{\mathrm{sp}}$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$</td>
+<td>Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$</td>
 </tr>
 <tr>
 <td>$\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$</td>

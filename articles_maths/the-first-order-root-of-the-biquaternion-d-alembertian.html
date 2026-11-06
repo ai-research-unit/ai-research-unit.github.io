@@ -90,11 +90,11 @@ $$</p>
 $$</p>
 <p>with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$ and $\varepsilon=(1,-1,-1,-1)$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. No other letter names it.</p>
 <p>This article asks for a first-order operator $D$ whose square is $\Box-\lambda$, or for a factorisation of $\Box-\lambda$ into two first-order operators. The two answers differ. A <strong>single square</strong> is one first-order operator $D$ with $D^2=(\Box-\lambda)e_t$, where both $D$ and its coefficients are read in the algebra; if it existed, its kernel would sit inside the second-order solution space. A <strong>factorisation</strong> is a product $D_-D_+$ of two first-order operators, each a left multiplication by an element with derivative coefficients, whose product is $(\Box-\lambda)e_t$. At $\lambda=0$ the algebra supplies it with $D_+=\tilde\nabla$ and $D_-=\tilde\nabla^{\natural}$. When the two factors are distinct, the two first-order equations together are equivalent to the second-order equation.</p>
-<p><strong>The results.</strong> The algebra admits the factorisation and not the single square. A scalar square needs four elements of $\mathbb{B}$ that anticommute pairwise, with squares $+e_t$ and $-e_t$ in the ratio one to three. The algebra supplies the three of the minus sign, the spatial units $\vec e_k$, and no fourth: the three generate $\mathbb{B}$, and an element that anticommutes with all three is zero. The obstruction sits in the second order, where the zero-order term cannot reach, so no constant-coefficient first-order operator with element coefficients has a scalar square. The gradient is the first-order operator of the algebra. Its square carries a vector remainder, while its product with the conjugate is $\Box$. The free equation stays first order in one field, $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$. The massive equation is the chiral pair</p>
+<p><strong>The results.</strong> The algebra admits the factorisation and not the single square. A scalar square needs four elements of $\mathbb{B}$ that anticommute pairwise, with squares $+e_t$ and $-e_t$ in the ratio one to three. The algebra supplies the three of the minus sign, the spatial units $\vec e_k$, and no fourth: the three generate $\mathbb{B}$, and an element that anticommutes with all three is zero. The obstruction sits in the second order, where the zero-order term cannot reach, so no constant-coefficient first-order operator with element coefficients has a scalar square. The gradient is the first-order operator of the algebra. Its square carries a vector remainder, while its product with the conjugate is $\Box$. The free equation stays first order in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad \lambda=m^2 .
 $$</p>
 <p>On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ the pair operator $\mathbb{D}$ satisfies $\mathbb{D}^2=\Box I$, and the mass is its shift, $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$.</p>
@@ -124,7 +124,7 @@ $$</p>
 \tilde K^2=\bigl(q_0^2+\lvert\vec q\rvert^2\bigr)e_t-2iq_0\vec q .
 $$</p>
 <p>The mass shell is the quadric $q_0^2-\lvert\vec q\rvert^2=\lambda$; at $\lambda=0$ it is the null cone of the quaternionic norm.</p>
-<p><strong>The zero divisor on the cone.</strong> Off the cone, $\tilde K$ is a unit, with inverse $\tilde K^{\natural}/(\tilde K^{\natural}\tilde K)$, and the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ is invertible. On the cone the norm vanishes and $\tilde K$ is a zero divisor. In the representation $\mathbb{B}\cong M_2(\mathbb{C})$ the determinant of an element is its quaternionic norm, so a nonzero null element is a matrix of rank one, and left multiplication by a rank-one matrix has rank two. For a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ therefore has rank two and a two-dimensional kernel. The free equation $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$ has a nonzero plane-wave solution exactly on the cone, and it selects two of the four complex dimensions there.</p>
+<p><strong>The zero divisor on the cone.</strong> Off the cone, $\tilde K$ is a unit, with inverse $\tilde K^{\natural}/(\tilde K^{\natural}\tilde K)$, and the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ is invertible. On the cone the norm vanishes and $\tilde K$ is a zero divisor. In the representation $\mathbb{B}\cong M_2(\mathbb{C})$ the determinant of an element is its quaternionic norm, so a nonzero null element is a matrix of rank one, and left multiplication by a rank-one matrix has rank two. For a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ therefore has rank two and a two-dimensional kernel. The free equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ has a nonzero plane-wave solution exactly on the cone, and it selects two of the four complex dimensions there.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>Because the partial derivatives commute,</p>
 <p>$$
@@ -182,9 +182,9 @@ $$</p>
 $$</p>
 <p>The identity is exact, and it is the whole factorisation of $\Box$ that the algebra supplies. Each factor is left multiplication by an element with derivative coefficients, and the product is composition on the field: the right factor acts first, the left factor acts on the result, and no derivative acts on a coefficient, since all coefficients are constant. The factorisation has two factors, and neither is a root by itself: the square of either one alone carries the vector remainder of §<em>The Square of the Gradient</em>. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.</p>
 <h3 id="the-pair-operator">The Pair Operator</h3>
-<p>The two equations of the massive case are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ and</p>
+<p>The two equations of the massive case are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and</p>
 <p>$$
-\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr).
+\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr).
 $$</p>
 <p>Then</p>
 <p>$$
@@ -192,19 +192,19 @@ $$</p>
 \qquad
 (\mathbb{D}-m)(\mathbb{D}+m)=\bigl(\Box-m^2\bigr)I .
 $$</p>
-<p>The pair is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. The operator $\mathbb{D}$ is the pair operator on $\mathbb{B}\oplus\mathbb{B}$ of the conventions; it is a map of the doubled carrier and not an element of $\mathbb{B}$.</p>
+<p>The pair is $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$. The operator $\mathbb{D}$ is the pair operator on $\mathbb{B}\oplus\mathbb{B}$ of the conventions; it is a map of the doubled carrier and not an element of $\mathbb{B}$.</p>
 <h3 id="the-chiral-pair">The Chiral Pair</h3>
-<p>The two parts are two fields, $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$, written together as $\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$; each is an element of $\mathbb{B}$ and no relation between them is assumed in advance. The massive equation is the pair</p>
+<p>The two parts are two fields, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, written together as $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$; each is an element of $\mathbb{B}$ and no relation between them is assumed in advance. The massive equation is the pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
-<p>Substituting the first relation into the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m^2\tilde{Ξ}^{\mathrm{sp}}_R$, that is</p>
+<p>Substituting the first relation into the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, that is</p>
 <p>$$
-\Box\tilde{Ξ}^{\mathrm{sp}}_R=m^2\tilde{Ξ}^{\mathrm{sp}}_R ,
+\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
-<p>and the first relation then defines $\tilde{Ξ}^{\mathrm{sp}}_L=m^{-1}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$. Each part satisfies the shifted d'Alembertian, and the pair is a bijection with the second-order solutions of one part, not a new restriction. At $m=0$ the two relations decouple: $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$.</p>
+<p>and the first relation then defines $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$. Each part satisfies the shifted d'Alembertian, and the pair is a bijection with the second-order solutions of one part, not a new restriction. At $m=0$ the two relations decouple: $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.</p>
 <p>The two labels $L$ and $R$ are the two slots of the pair. They are not the eigenspaces of a chirality: the chirality is the right action</p>
 <p>$$
 \tilde{Ξ}\longmapsto-i\tilde{Ξ}\vec e_z=i\tilde{Ξ}\omega ,
@@ -216,7 +216,7 @@ $$</p>
 \mathbb{D}(\tilde K)=
 \begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix},
 \qquad
-\mathbb{D}(\tilde K)(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=\bigl(\tilde K\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde K^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr),
+\mathbb{D}(\tilde K)(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=\bigl(\tilde K\tilde{Ξ}_{\mathrm{sp},R},\ \tilde K^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 $$</p>
 <p>whose off-diagonal entries are the left multiplications $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ and $\tilde{Ξ}\mapsto\tilde K^{\natural}\tilde{Ξ}$. Every entry is a left multiplication by an element, and the matrix is a map of $\mathbb{B}\oplus\mathbb{B}$. Its determinant is</p>
 <p>$$
@@ -248,12 +248,12 @@ $$</p>
 </tr>
 <tr>
 <td>element of $\mathbb{B}$, massless</td>
-<td>$\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$</td>
 <td>yes, one factor of $\Box$</td>
 </tr>
 <tr>
 <td>element of $\mathbb{B}$, massive</td>
-<td>the pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>yes, the pair</td>
 </tr>
 </tbody>
@@ -268,11 +268,11 @@ $$</p>
 $$</p>
 <p>The free equation has a nonzero solution exactly when $\tilde K$ is a zero divisor, that is on the cone $q_0^2-\lvert\vec q\rvert^2=0$. At a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ has rank two, and the solution space is two-dimensional.</p>
 <p><strong>A constant element.</strong> A constant $v\in\mathbb{B}$ satisfies $\tilde\nabla v=0$ and $\Box v=0$. The example shows that the free equation has a nontrivial kernel already at $\lambda=0$. The constant part of the kernel is all of $\mathbb{B}$, the degenerate case of the cone at $q=0$; at a nonzero null covector the kernel is two-dimensional, one state of each chirality.</p>
-<p><strong>Promotion of a solution.</strong> Let $\tilde{Ξ}^{\mathrm{sp}}_R$ solve $(\Box-m^2)\tilde{Ξ}^{\mathrm{sp}}_R=0$ with $m\ne0$, and put $\tilde{Ξ}^{\mathrm{sp}}_L=m^{-1}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R$. Then</p>
+<p><strong>Promotion of a solution.</strong> Let $\tilde{Ξ}_{\mathrm{sp},R}$ solve $(\Box-m^2)\tilde{Ξ}_{\mathrm{sp},R}=0$ with $m\ne0$, and put $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$. Then</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=\frac1m\Box\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac1m\Box\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>so the pair is satisfied. The example exhibits the bijection between the solutions of the shifted d'Alembertian on one part and the solutions of the pair.</p>
 <p><strong>The determinant.</strong> For the symbol $\tilde K$, the determinant of the left action is $(q_0^2-\lvert\vec q\rvert^2)^2$, and the determinant of the pair operator shifted by $m$ is $(q_0^2-\lvert\vec q\rvert^2-m^2)^4$. At $q=(2,1,0,0)$ the norm is $3$, the first determinant is $9$, and at $m=1$ the second determinant is $(3-1)^4=16$.</p>
@@ -331,8 +331,8 @@ $$</p>
 <p>The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.</p>
 <h2 id="summary">Summary</h2>
 <p>The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-\partial^2/\partial(q'_t)^2+\Delta$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra admits no single first-order root: a scalar square needs four elements that anticommute pairwise, one of square $+e_t$ and three of square $-e_t$, the algebra supplies the three spatial units, and no fourth element anticommutes with all three. The obstruction sits in the second order, where the zero-order term cannot reach.</p>
-<p>The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.</p>
-<p>The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$. Eliminating one member returns $\Box\tilde{Ξ}^{\mathrm{sp}}_R=m^2\tilde{Ξ}^{\mathrm{sp}}_R$, so the pair and the second-order equation on one part are equivalent.</p>
+<p>The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.</p>
+<p>The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.</p>
 <p>The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair operator is the fourth power of the symbol of $\Box-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -392,7 +392,7 @@ $$</p>
 <td>the shift and the mass, $\lambda=m^2$</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>the two slots of the pair, each an element of $\mathbb{B}$</td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>the pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$, with $\mathbb{D}^2=\Box I$</td>
+<td>the pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$</td>

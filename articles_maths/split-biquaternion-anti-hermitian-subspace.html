@@ -70,12 +70,12 @@
       <div class="article-body">
         <h1 id="split-biquaternion-anti-hermitian-subspace"><strong>Split-Biquaternion Anti-Hermitian Subspace</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{M}_+$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{M}_+$ is treated in <em>Split-Biquaternion Hermitian Subspace</em>; the comparative tables are in <em>Split-Biquaternion Relations Between Subspaces</em> and <em>Split-Biquaternion Involution Lattice</em>.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}^{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
+<p>The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries four linear involutions, and four of the resulting fixed spaces are its distinguished real subspaces. This article treats the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, the fixed space of anti-Hermitian conjugation: its definition, its basis, the failure of closure under multiplication, the symmetrized product that carries it into $\mathbb{M}_+$, the Lie structure it acquires under the commutator, the forms on it, its roots of $-1$, the action of the four involutions and its intersections with the other subspaces. Its complementary partner $\mathbb{M}_+$ is treated in <em>Split-Biquaternion Hermitian Subspace</em>; the comparative tables are in <em>Split-Biquaternion Relations Between Subspaces</em> and <em>Split-Biquaternion Involution Lattice</em>.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the Hermitian norm is $\langle\tilde{Q}\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$.</p>
 <h2 id="definition-and-basis">Definition and Basis</h2>
 <p><strong>Definition.</strong> The <strong>anti-Hermitian subspace</strong> is the fixed space of anti-Hermitian conjugation,</p>
 <p>$$
-\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : \tilde{Q}^{\flat} = \tilde{Q} \right\}, \qquad \tilde{Q}^\flat = -\tilde{Q}^{*} = -\overline{\tilde{Q}^{\natural}}.
+\mathbb{M}_- = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : \tilde{Q}^{\flat} = \tilde{Q} \right\}, \qquad \tilde{Q}^\flat = -\tilde{Q}^{*} = -\overline{\tilde{Q}^{\natural}}.
 $$</p>
 <h3 id="the-condition-in-coordinates">The Condition in Coordinates</h3>
 <p>Comparing $-\overline{\tilde{Q}^{\natural}} = \tilde{Q}$ coefficient by coefficient:</p>
@@ -92,7 +92,7 @@ $$</p>
 <p><strong>Proof.</strong> The condition removes the four real scalar parameters and the four split-imaginary vector parameters, leaving the four real parameters $r_0, q_x, q_y, q_z$; the four basis elements are linearly independent and span the set.</p>
 <h2 id="algebra-structure">Algebra Structure</h2>
 <h3 id="it-is-not-a-subalgebra">It Is Not a Subalgebra</h3>
-<p><strong>Proposition.</strong> $\mathbb{M}_-$ is <strong>not</strong> closed under multiplication, and is therefore not a subalgebra of $\mathbb{B}^{\mathrm{spl}}$.</p>
+<p><strong>Proposition.</strong> $\mathbb{M}_-$ is <strong>not</strong> closed under multiplication, and is therefore not a subalgebra of $\mathbb{B}_{\mathrm{spl}}$.</p>
 <p><strong>Proof.</strong> The element $je_t$ lies in the subspace, but its square is</p>
 <p>$$
 (je_t)^2 = j^2 = e_t,
@@ -107,7 +107,7 @@ $$</p>
 <p><strong>Proof.</strong> Expanding and using $\vec q_1\vec q_2 = -\vec q_1\cdot\vec q_2 + \vec q_1\times\vec q_2$, the products $\tilde{Q}_1\tilde{Q}_2$ and $\tilde{Q}_2\tilde{Q}_1$ differ only in the sign of the cross term $\vec q_1\times\vec q_2$, which therefore cancels under symmetrization; the remaining scalar part is real and the remaining vector part is purely split-imaginary.</p>
 <p>So the symmetrized product of two anti-Hermitian elements is Hermitian, the mirror image of the fact that the commutator of two Hermitian elements is anti-Hermitian.</p>
 <h3 id="it-is-a-lie-subalgebra">It Is a Lie Subalgebra</h3>
-<p><strong>Proposition.</strong> Under the commutator, $\mathbb{M}_-$ is a <strong>Lie subalgebra</strong> of $\mathbb{B}^{\mathrm{spl}}$:</p>
+<p><strong>Proposition.</strong> Under the commutator, $\mathbb{M}_-$ is a <strong>Lie subalgebra</strong> of $\mathbb{B}_{\mathrm{spl}}$:</p>
 <p>$$
 \boxed{\;
 [\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q_1 \times \vec q_2 \in \mathbb{M}_-
@@ -156,7 +156,7 @@ $$</p>
 <h3 id="units-zero-divisors-and-nilpotents">Units, Zero Divisors and Nilpotents</h3>
 <p><strong>Theorem.</strong> For $\tilde{Q} \in \mathbb{M}_-$ the following are equivalent: $\tilde{Q}$ is a unit; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. Hence $\mathbb{M}_-$ contains no zero divisor and no nilpotent.</p>
 <p><strong>Proof.</strong> The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\vec q|^2$ and $r_0\vec q = 0$, forcing $\tilde{Q} = 0$.</p>
-<p>As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{B}^{\mathrm{spl}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of <em>Split-Biquaternion Zero Divisors</em>.</p>
+<p>As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{B}_{\mathrm{spl}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of <em>Split-Biquaternion Zero Divisors</em>.</p>
 <h3 id="the-roots-of-minus-one">The Roots of Minus One</h3>
 <p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{M}_-$ are the unit pure real quaternions,</p>
 <p>$$
@@ -168,7 +168,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\tilde{Q} = j r_0 e_t + \vec q$ the equation $\tilde{Q}^2 = -1$ reads, by the square formula, $r_0^2 - |\vec q|^2 = -1$ and $2 r_0 \vec q = 0$. The second equation gives $r_0 = 0$ or $\vec q = 0$; $\vec q = 0$ would give $r_0^2 = -1$, impossible, so $r_0 = 0$ and $|\vec q|^2 = 1$.</p>
 <p>The three imaginary units $\vec e_x, \vec e_y, \vec e_z$ lie in $\mathbb{M}_-$, so the subspace contains the quaternion imaginary sphere; the roots of $-1$ in $\mathbb{M}_-$ are exactly the roots of $-1$ in the quaternion subspace. The roots of $-1$ in $\mathbb{M}_+$ are instead the elements $j\vec q$ with $\vec q$ a unit pure real quaternion, the sphere $jS^2$; the two spheres are exchanged by multiplication by $j$.</p>
 <h2 id="the-image-in-the-two-halves">The Image in the Two Halves</h2>
-<p>Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}^{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_t + \vec q$ has components</p>
+<p>Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_t + \vec q$ has components</p>
 <p>$$
 \tilde{Q}_+ = r_0 + \vec q, \qquad \tilde{Q}_- = -r_0 + \vec q = -(\tilde{Q}_+)^{\natural}.
 $$</p>
@@ -176,7 +176,7 @@ $$</p>
 <p>$$
 \varphi(\mathbb{M}_-) = \left\{ (h, -h^{\natural}) : h \in \mathbb{H} \right\} \cong \mathbb{H},
 $$</p>
-<p>a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$. Together with the image $(h, h^{\natural})$ of $\mathbb{M}_+$ it exhibits the Hermitian decomposition $\mathbb{B}^{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ as the decomposition of a pair $(h_1, h_2)$ into its conjugate-symmetric and conjugate-antisymmetric parts.</p>
+<p>a real four-dimensional subspace of $\mathbb{H} \oplus \mathbb{H}$. Together with the image $(h, h^{\natural})$ of $\mathbb{M}_+$ it exhibits the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$ as the decomposition of a pair $(h_1, h_2)$ into its conjugate-symmetric and conjugate-antisymmetric parts.</p>
 <h2 id="the-four-involutions-on-it">The Four Involutions on It</h2>
 <p>In the basis $je_t, \vec e_x, \vec e_y, \vec e_z$ the four involutions act diagonally:</p>
 <div class="table-scroll"><table>
@@ -223,12 +223,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{M}_- \cap \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$</td>
+<td>$\mathbb{M}_- \cap \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$</td>
 <td>$j\mathbb{R}$</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$</td>
+<td>$\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$</td>
 <td>$\mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$</td>
 <td>$3$</td>
 </tr>
@@ -238,13 +238,13 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B}^{\mathrm{spl}})$</td>
+<td>$\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$</td>
 <td>$\mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$</td>
 <td>$3$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The subspace is complementary to $\mathbb{M}_+$, giving the Hermitian decomposition $\mathbb{B}^{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$. Its coordinate-block decomposition is $\mathbb{M}_- = j\mathbb{R} \oplus \mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$: the line $j\mathbb{R}$ is shared with the split complex subspace, and the real triple with the quaternion subspace and with the vector subspace. Its sums with the centre and with $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$-complements have dimension $5$; only the pair with $\mathbb{M}_+$ spans the algebra. The full tables are in <em>Split-Biquaternion Relations Between Subspaces</em>.</p>
+<p>The subspace is complementary to $\mathbb{M}_+$, giving the Hermitian decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{M}_+ \oplus \mathbb{M}_-$. Its coordinate-block decomposition is $\mathbb{M}_- = j\mathbb{R} \oplus \mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$: the line $j\mathbb{R}$ is shared with the split complex subspace, and the real triple with the quaternion subspace and with the vector subspace. Its sums with the centre and with $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$-complements have dimension $5$; only the pair with $\mathbb{M}_+$ spans the algebra. The full tables are in <em>Split-Biquaternion Relations Between Subspaces</em>.</p>
 <h2 id="the-analysis-on-the-anti-hermitian-subspace">The Analysis on the Anti-Hermitian Subspace</h2>
 <p>The anti-Hermitian subspace is not a subalgebra, so, like the Hermitian subspace, it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of <em>Split-Biquaternion Analysis</em> to a four-dimensional subspace. The symmetrized product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$, so the functions on $\mathbb{M}_-$ acquire a bracket, the commutator, rather than a pointwise product, and the intrinsic differential structure is the Lie-theoretic one of <em>Split-Biquaternion Anti-Hermitian Subspace</em>. The second-order operator obtained from the restriction of the ambient operators is the wave operator of the restricted Lorentzian form $-r_0^2 + \sum_k q_k^2$ of signature $(3,1)$.</p>
 <h2 id="the-geometry-of-the-anti-hermitian-subspace">The Geometry of the Anti-Hermitian Subspace</h2>
@@ -261,7 +261,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+<td>$\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$</td>
 <td>Split biquaternion algebra, real dimension $8$</td>
 </tr>
 <tr>

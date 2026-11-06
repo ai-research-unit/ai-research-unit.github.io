@@ -73,7 +73,7 @@
 <p>The split biquaternion algebra is, as a topological space, a copy of $\mathbb{R}^8$, and the interesting topological objects attached to it are the unit sphere, the null cone of the Hermitian form together with its link, the group of units, and the failure surface of the polar decomposition. This article records the topology of these spaces and compares it with the biquaternion case. The algebra and its forms are used from <em>Split-Biquaternion Algebra</em> and <em>Split-Biquaternion Norm and Invertibility</em>; the Hermitian form and the Lorentzian structure are treated in <em>Split-Biquaternion Rotations and the Lorentz Group</em>; the group of units is described in <em>Split-Biquaternion Exponential and Lie Group Structure</em>.</p>
 <p>The treatment is purely mathematical. No physics is invoked; "null cone" names the zero set of a quadratic form, and "link" names the intersection with a sphere.</p>
 <h2 id="the-underlying-space-and-its-contractibility">The Underlying Space and Its Contractibility</h2>
-<p><strong>Proposition.</strong> As a real vector space $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$, the algebra is contractible, and the punctured algebra $\mathbb{B}^{\mathrm{spl}} \setminus \{0\}$ is homotopy equivalent to the seven-sphere $S^7$.</p>
+<p><strong>Proposition.</strong> As a real vector space $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$, the algebra is contractible, and the punctured algebra $\mathbb{B}_{\mathrm{spl}} \setminus \{0\}$ is homotopy equivalent to the seven-sphere $S^7$.</p>
 <p><strong>Proof.</strong> The algebra is a real vector space of dimension $8$; a vector space is contractible, and removing a point from $\mathbb{R}^n$ gives a space homotopy equivalent to $S^{n-1}$, here $S^7$.</p>
 <p>The <strong>Euclidean norm</strong> of an element is the positive square root of the real part of its split-biquaternion norm,</p>
 <p>$$
@@ -82,17 +82,17 @@ $$</p>
 <p>and it is a genuine norm: it is positive definite because the real part of $\langle\cdot\rangle_{\natural}$ is a sum of squares. The algebra is thus a Euclidean space of dimension $8$, and all the polar and homotopy statements below use this norm.</p>
 <h2 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h2>
 <p><strong>Definition.</strong> The <strong>unit sphere</strong> of the algebra is $S_{\mathbb{E}} = \{\tilde{Q} : \|\tilde{Q}\| = 1\} \cong S^7$.</p>
-<p><strong>Proposition.</strong> The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{B}^{\mathrm{spl}}\setminus\{0\}$ onto it.</p>
+<p><strong>Proposition.</strong> The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{B}_{\mathrm{spl}}\setminus\{0\}$ onto it.</p>
 <p><strong>Proof.</strong> The equation $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.</p>
 <p>The unit sphere of the Euclidean norm is <strong>not</strong> the norm-one group: the norm-one group is cut out by the split complex norm $\langle\tilde{Q}\rangle_{\natural} = e_t$, not by its real part, and it has dimension $6$ rather than $7$. The two agree only on the quaternion subspace, where the split complex part of $\langle\tilde{Q}\rangle_{\natural}$ vanishes; this is the first topological distinction between the split biquaternion and the biquaternion case, where the norm-one slice is the complex quadric in $\mathbb{C}^4$.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>null cone</strong> of the algebra is the zero set of the Hermitian form of scalar part $g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu)$:</p>
 <p>$$
-C = \left\{ \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
+C = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
 $$</p>
 <p><strong>Proposition.</strong> The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ vanishes on no point of $C$ except the origin.</p>
 <p><strong>Proof.</strong> The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $\langle\cdot\rangle_{\natural}$ never vanishes there.</p>
-<p><strong>Remark.</strong> The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of <em>Split-Biquaternion Rotations and the Lorentz Group</em>), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{C}^{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.</p>
+<p><strong>Remark.</strong> The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of <em>Split-Biquaternion Rotations and the Lorentz Group</em>), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{C}_{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.</p>
 <h2 id="the-link-of-the-null-cone">The Link of the Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>link</strong> of the null cone is its intersection with the Euclidean unit sphere, $L = C \cap S_{\mathbb{E}}$.</p>
 <p><strong>Theorem.</strong> The link of the null cone is homeomorphic to $S^3 \times S^3$.</p>
@@ -103,12 +103,12 @@ $$</p>
 $$</p>
 <p>The link of the null cone is thus the same manifold as the norm-one group $S^3 \times S^3 = \mathrm{Spin}(4)$, and the coincidence is structural: both are the twofold product of a three-sphere by itself, one cut out by the Hermitian form on the unit sphere and the other by the split complex norm on the whole algebra. The link is connected, simply connected, and has the homology of $S^3\times S^3$, with nonzero Betti numbers in degrees $0,3,3,6$.</p>
 <h2 id="the-group-of-units-and-its-homotopy">The Group of Units and Its Homotopy</h2>
-<p><strong>Theorem.</strong> The group of units is ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.</p>
+<p><strong>Theorem.</strong> The group of units is ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.</p>
 <p><strong>Proof.</strong> Units are pairs of nonzero quaternions, and $\mathbb{H}^\times \cong \mathbb{R}_{>0}\times S^3$; the positive rays are contractible, so the unit group deformation retracts onto $S^3\times S^3$. A product of spheres of dimension $3$ is simply connected.</p>
 <p><strong>Corollary.</strong> The homotopy groups of the unit group are</p>
 <p>$$
 \boxed{\;
-\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z({\mathbb{B}^{\mathrm{spl}}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z}
+\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z}
 \;},
 $$</p>
 <p>the last being $\pi_z(S^3)\oplus\pi_z(S^3)$ by the Künneth and Hurewicz theorems for a product of simply connected spaces.</p>
@@ -134,7 +134,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$</td>
+<td>$\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$</td>
 <td>The algebra as a topological space</td>
 </tr>
 <tr>
@@ -166,7 +166,7 @@ $$</p>
 <td>Zero divisor set, the failure surface of the polar form</td>
 </tr>
 <tr>
-<td>${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$</td>
+<td>${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$</td>
 <td>Group of units</td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ $$</p>
 <td>Norm-one group</td>
 </tr>
 <tr>
-<td>$\pi_z({\mathbb{B}^{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$</td>
+<td>$\pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$</td>
 <td>Third homotopy group of the unit group</td>
 </tr>
 </tbody>

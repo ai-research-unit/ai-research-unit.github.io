@@ -113,9 +113,9 @@ $$
 each to six decimal places, these being the exact ordinates of zeros of $\zeta$ on the line, not approximations to them, to the accuracy stated.</p>
 <p><strong>Proof sketch (the method).</strong> The Riemann–Siegel formula, obtained from the saddle-point analysis of the integral representation of $\zeta$, gives
 $$
-Z(t) = 2\sum_{n\leq N}\frac{\cos(\vartheta^{\mathrm{thf}}(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
+Z(t) = 2\sum_{n\leq N}\frac{\cos(\vartheta_{\mathrm{thf}}(t)-t\log n)}{\sqrt n} + \text{correction}, \qquad N = \Bigl\lfloor\sqrt{\frac{t}{2\pi}}\Bigr\rfloor,
 $$
-for the function $Z(t) = \exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.</p>
+for the function $Z(t) = \exp(i\vartheta_{\mathrm{thf}}(t))\zeta(\tfrac12+it)$, which is real for real $t$ and has the same zeros as $\zeta$ on the line; the zeros are then located by the sign changes of $Z$, and the counting formula of the previous theorem detects a zero off the line as a discrepancy between the number of sign changes found and the value of $N(T)$. The verification in a range consists in establishing the count exactly by such computations with rigorous error bounds.</p>
 <p><strong>Remark (the extent of the verification).</strong> The numerical verification of the hypothesis has reached the first $10^{13}$ zeros in computations without rigorous error bounds, and all the zeros with $\lvert\gamma\rvert < 3\cdot10^{12}$ in a rigorous computation; no zero off the line has ever been found, and none has ever been proved to exist.</p>
 <p><strong>Remark (the numerical check of the ten ordinates).</strong> Evaluating $\zeta(\tfrac12+it)$ from the Euler–Maclaurin expansion — the sum $\sum_{n<N}n^{-s}$ completed by the terms $N^{1-s}/(s-1)+\tfrac12N^{-s}$ and the Bernoulli correction — locates the ten zeros above: the computed value of $\lvert\zeta(\tfrac12+i\gamma_k)\rvert$ is below $10^{-6}$ at each of the ten ordinates displayed, while every other local minimum of $\lvert\zeta(\tfrac12+it)\rvert$ below $t=50$ exceeds $10^{-2}$. The comparison of the count of the zeros found in this way with the Riemann–von Mangoldt formula is what turns the numerics into a verification in a range, and the correction term of the Riemann–Siegel formula is what makes the computation efficient at height rather than the crude expansion used here.</p>
 <h2 id="equivalent-formulations">Equivalent Formulations</h2>
@@ -143,10 +143,10 @@ $$
 $$
 <strong>Theorem (Li's criterion).</strong> $\lambda_n = \sum_{\rho}\bigl(1-(1-1/\rho)^n\bigr)$, the sum over the nontrivial zeros, and the Riemann hypothesis is equivalent to $\lambda_n\geq0$ for every $n\geq1$.</p>
 <p><strong>Proof sketch.</strong> Expanding the logarithm of the Hadamard product for $\zeta$ and differentiating term by term gives the displayed identity; if all the zeros lie on the critical line the terms $1-(1-1/\rho)^n$ have nonnegative real part, which is the positivity; if a zero lies off the line, then the zeros $\rho$ and $1-\rho$ contribute a term that is negative for some $n$, by the explicit computation of the real part.</p>
-<p><strong>Theorem (Nyman–Beurling criterion).</strong> For $0<\vartheta^{\mathrm{nym}}<1$ let $\rho_\vartheta^{\mathrm{nym}}(x) = \{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_\vartheta^{\mathrm{nym}}$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.</p>
+<p><strong>Theorem (Nyman–Beurling criterion).</strong> For $0<\vartheta_{\mathrm{nym}}<1$ let $\rho_{\mathrm{nym},\vartheta}(x) = \{\vartheta_{\mathrm{nym}}/x\}-\vartheta_{\mathrm{nym}}\{1/x\}$ on $(0,\infty)$, with $\{\cdot\}$ the fractional part. The Riemann hypothesis is equivalent to the density in $L^2(0,\infty)$ of the closed span of the functions $\rho_{\mathrm{nym},\vartheta}$, and equivalently to the statement that the characteristic function of $(0,1)$ lies in that span.</p>
 <p><strong>Remark (Weil's positivity criterion).</strong> The explicit formula of <em>The Prime Number Theorem</em>, in Weil's form, expresses the sum $\sum_\rho h(\gamma)$ over the nontrivial zeros, for a suitable test function $h$, as an explicit distribution $W(h)$ whose terms involve the archimedean factor and the sum over the primes. The criterion, proved by Weil and reformulated by Bombieri, is that the Riemann hypothesis is equivalent to the positivity
 $$
-\boxed{\;W(h * h^{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h^{\mathrm{refl}}(x) = \overline{h(-x)}\;},
+\boxed{\;W(h * h_{\mathrm{refl}}) \geq 0 \quad\text{for every Schwartz function } h, \qquad h_{\mathrm{refl}}(x) = \overline{h(-x)}\;},
 $$
 where the convolution is on the additive group of the line. The criterion is the framework in which the positivity methods of the theory are stated; the same shape, with the primes of a function field in place of the primes of $\mathbb{Z}$, is what Weil's proof of the analogue of the hypothesis for a curve uses, and the same shape is what a proof over $\mathbb{Q}$ would have to supply.</p>
 <h3 id="the-de-bruijnnewman-constant">The de Bruijn–Newman Constant</h3>
@@ -154,8 +154,8 @@ where the convolution is on the additive group of the line. The criterion is the
 $$
 H_\lambda(u) = \int_0^\infty \exp(\lambda v^2)\,\Phi(v)\cos(uv)\,dv, \qquad \Phi(v) = \sum_{n\geq1}\bigl(2\pi^2n^4\exp(9v/2)-3\pi n^2\exp(5v/2)\bigr)\exp(-\pi n^2\exp(2v)) ,
 $$
-so that $H_0$ is the Riemann $Ζ$ function in the variable $u$; let $\Lambda^{\mathrm{nwn}}$ be the infimum of the $\lambda$ for which all the zeros of $H_\lambda$ are real.</p>
-<p><strong>Theorem (de Bruijn, Newman).</strong> $\Lambda^{\mathrm{nwn}} \leq \tfrac12$: the function $H_\lambda$ has only real zeros for every $\lambda\geq\tfrac12$, by de Bruijn. The Riemann hypothesis is equivalent to $\Lambda^{\mathrm{nwn}}\leq0$.</p>
+so that $H_0$ is the Riemann $Ζ$ function in the variable $u$; let $\Lambda_{\mathrm{nwn}}$ be the infimum of the $\lambda$ for which all the zeros of $H_\lambda$ are real.</p>
+<p><strong>Theorem (de Bruijn, Newman).</strong> $\Lambda_{\mathrm{nwn}} \leq \tfrac12$: the function $H_\lambda$ has only real zeros for every $\lambda\geq\tfrac12$, by de Bruijn. The Riemann hypothesis is equivalent to $\Lambda_{\mathrm{nwn}}\leq0$.</p>
 <p><strong>Theorem (Rodgers–Tao).</strong> $\Lambda\geq0$, so that the Riemann hypothesis is equivalent to $\Lambda = 0$.</p>
 <p><strong>Remark.</strong> The statement $\Lambda\geq0$ was Newman's conjecture, and its proof by Rodgers and Tao in 2020 puts the hypothesis at the boundary of the family: if the hypothesis holds then every $\lambda<0$ is below the constant, so that $H_\lambda$ has a non-real zero for every negative $\lambda$, however small. The hypothesis is in this sense not robust under the deformation. The best known upper bound unconditionally is $\Lambda\leq0.2$.</p>
 <h2 id="consequences">Consequences</h2>
@@ -202,7 +202,7 @@ $$
 <p><strong>Proof of the consequences.</strong> Assuming the generalised hypothesis, the same explicit-formula argument that gives $\psi(x)-x = O(\sqrt x\log^2x)$ applies to each $L$-function, and summing over the characters modulo $q$ gives the effective Chebotarev theorem of Lagarias–Odlyzko and the effective versions of the theorems on primes in arithmetic progressions; the deterministic primality criterion of Miller–Rabin follows from the bound for the least quadratic nonresidue, and the conditional solutions of the class number problem and of Artin's primitive root conjecture follow from the same effective estimates. Each of these is stated in its own place and cited here only as a consequence.</p>
 <h2 id="summary">Summary</h2>
 <p>The Riemann hypothesis asserts that every nontrivial zero $\rho = \beta+i\gamma$ of the zeta function satisfies $\beta=\tfrac12$. By the functional equation and the removal of the pole and the trivial zeros, it is the statement that the entire function $\tfrac12s(s-1)\Lambda(s) = \tfrac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)$ has all its zeros on the critical line, equivalently that the Riemann $Ζ$ function $Ζ(t) = \tfrac12 s(s-1)\Lambda(s)$ at $s=\tfrac12+it$ has only real zeros. There are $N(T) = \frac{T}{2\pi}\log\frac{T}{2\pi e}+\frac78+S(T)+O(T^{-1})$ zeros with $0<\gamma\leq T$, where $S(T) = O(\log T)$ unconditionally and $O(\log T/\log\log T)$ under the hypothesis, so that the mean spacing near height $T$ is $2\pi/\log(T/2\pi)$; the hypothesis has been verified for ranges of the order of $10^{13}$ zeros, the first ten ordinates being $14.134725$, $21.022040$, $25.010858$, $30.424876$, $32.935062$, $37.586178$, $40.918719$, $43.327073$, $48.005151$, $49.773832$.</p>
-<p>The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x$ and to $O(\sqrt x\log x)$ in $\pi(x)-\mathrm{Li}(x)$, equivalently to $O(x^{1/2+\epsilon})$ in either; to the bound $O(x^{1/2+\epsilon})$ for the summatory Möbius function; to Robin's inequality $\sigma(n)<\exp(\gamma) n\log\log n$ for $n\geq5041$ and to Lagarias' inequality for the harmonic numbers; to the nonnegativity of all the Li coefficients; to the Nyman–Beurling density condition in $L^2(0,\infty)$; to Weil's positivity $W(h*h^{\mathrm{refl}})\geq0$ for every Schwartz function $h$; and to the vanishing of the de Bruijn–Newman constant, whose nonnegativity was proved by Rodgers and Tao. Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, Littlewood showed that $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, the Mertens conjecture $M(x)=O(\sqrt x)$ is false by Odlyzko and te Riele, and the best known zero-free region is $\sigma>1-c/(\log\lvert t\rvert)^{2/3}(\log\log\lvert t\rvert)^{1/3}$. Hardy proved that infinitely many zeros lie on the critical line, Selberg that a positive proportion do, and the proportion is known to be at least five twelfths; Montgomery's pair correlation conjecture predicts the local statistics of the zeros and its limiting kernel is that of the Gaussian unitary ensemble, in agreement with the numerical computations. The hypothesis implies the Lindelöf hypothesis and the density hypothesis, and it implies the effective statements about primes in arithmetic progressions, the least quadratic nonresidue, and the generalised statements over number fields; it is a theorem for the zeta functions of curves and varieties over finite fields, by Weil and by Deligne, where the proof is a positivity statement of intersection theory.</p>
+<p>The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x$ and to $O(\sqrt x\log x)$ in $\pi(x)-\mathrm{Li}(x)$, equivalently to $O(x^{1/2+\epsilon})$ in either; to the bound $O(x^{1/2+\epsilon})$ for the summatory Möbius function; to Robin's inequality $\sigma(n)<\exp(\gamma) n\log\log n$ for $n\geq5041$ and to Lagarias' inequality for the harmonic numbers; to the nonnegativity of all the Li coefficients; to the Nyman–Beurling density condition in $L^2(0,\infty)$; to Weil's positivity $W(h*h_{\mathrm{refl}})\geq0$ for every Schwartz function $h$; and to the vanishing of the de Bruijn–Newman constant, whose nonnegativity was proved by Rodgers and Tao. Unconditionally, $\psi(x)-x = \Omega_{\pm}(\sqrt x)$, Littlewood showed that $\pi(x)-\mathrm{Li}(x)$ changes sign infinitely often, the Mertens conjecture $M(x)=O(\sqrt x)$ is false by Odlyzko and te Riele, and the best known zero-free region is $\sigma>1-c/(\log\lvert t\rvert)^{2/3}(\log\log\lvert t\rvert)^{1/3}$. Hardy proved that infinitely many zeros lie on the critical line, Selberg that a positive proportion do, and the proportion is known to be at least five twelfths; Montgomery's pair correlation conjecture predicts the local statistics of the zeros and its limiting kernel is that of the Gaussian unitary ensemble, in agreement with the numerical computations. The hypothesis implies the Lindelöf hypothesis and the density hypothesis, and it implies the effective statements about primes in arithmetic progressions, the least quadratic nonresidue, and the generalised statements over number fields; it is a theorem for the zeta functions of curves and varieties over finite fields, by Weil and by Deligne, where the proof is a positivity statement of intersection theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -241,8 +241,8 @@ $$
 <td>$\frac1\pi\arg\zeta(\tfrac12+iT)$, the fluctuation in the count</td>
 </tr>
 <tr>
-<td>$Z(t)$, $\vartheta^{\mathrm{thf}}(t)$</td>
-<td>Riemann–Siegel function $\exp(i\vartheta^{\mathrm{thf}}(t))\zeta(\tfrac12+it)$ and its phase</td>
+<td>$Z(t)$, $\vartheta_{\mathrm{thf}}(t)$</td>
+<td>Riemann–Siegel function $\exp(i\vartheta_{\mathrm{thf}}(t))\zeta(\tfrac12+it)$ and its phase</td>
 </tr>
 <tr>
 <td>$M(x)$</td>
@@ -257,12 +257,12 @@ $$
 <td>Li coefficients, $\lambda_n = \sum_\rho(1-(1-1/\rho)^n)$</td>
 </tr>
 <tr>
-<td>$\rho_\vartheta^{\mathrm{nym}}$</td>
-<td>Nyman–Beurling function $\{\vartheta^{\mathrm{nym}}/x\}-\vartheta^{\mathrm{nym}}\{1/x\}$</td>
+<td>$\rho_{\mathrm{nym},\vartheta}$</td>
+<td>Nyman–Beurling function $\{\vartheta_{\mathrm{nym}}/x\}-\vartheta_{\mathrm{nym}}\{1/x\}$</td>
 </tr>
 <tr>
-<td>$W(h)$, $h^{\mathrm{refl}}$</td>
-<td>Weil positivity functional and the reflection $h\mapsto h^{\mathrm{refl}}(x)=\overline{h(-x)}$</td>
+<td>$W(h)$, $h_{\mathrm{refl}}$</td>
+<td>Weil positivity functional and the reflection $h\mapsto h_{\mathrm{refl}}(x)=\overline{h(-x)}$</td>
 </tr>
 <tr>
 <td>$H_\lambda$, $\Lambda$</td>

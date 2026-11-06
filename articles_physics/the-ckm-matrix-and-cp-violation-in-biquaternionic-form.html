@@ -71,7 +71,7 @@
         <h1 id="the-ckm-matrix-and-cp-violation-in-biquaternionic-form"><strong>The CKM Matrix and CP Violation in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>Cabibbo–Kobayashi–Maskawa (CKM) matrix</strong> is the unitary matrix that relates the quark mass eigenstates to the weak-interaction eigenstates. It is the origin of quark mixing and, through its single complex phase, of CP violation in the quark sector. In the Standard Model it is a $3\times3$ unitary matrix with four physical parameters — three angles and one phase — and its measured entries and phase are among the most precisely known quantities in particle physics.</p>
-<p>In the biquaternion framework the CKM matrix is a <strong>flavour-factor operator</strong>. The framework carries the generation as a label on the field: the field of type $t$ and generation $a$ is an element $\tilde{Ξ}^{\mathrm{sp}}_{t,a}$ of $\mathbb{B}$, and the algebra acts on it without knowing $a$ (the companion article on the number of generations establishes this). The mixing is an operator on the labels alone, an element $V$ of the $*$-unitary group $\mathrm{U}(N_g)$ of the factor $\mathcal{F}=\mathbb{C}^{N_g}$. Its entries are complex numbers, and the complex numbers are central in $\mathbb{B}$, so the mixing multiplies the element by a number and leaves the algebra factor untouched: $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}\mapsto\sum_a V_{ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a}$.</p>
+<p>In the biquaternion framework the CKM matrix is a <strong>flavour-factor operator</strong>. The framework carries the generation as a label on the field: the field of type $t$ and generation $a$ is an element $\tilde{Ξ}_{\mathrm{sp},t,a}$ of $\mathbb{B}$, and the algebra acts on it without knowing $a$ (the companion article on the number of generations establishes this). The mixing is an operator on the labels alone, an element $V$ of the $*$-unitary group $\mathrm{U}(N_g)$ of the factor $\mathcal{F}=\mathbb{C}^{N_g}$. Its entries are complex numbers, and the complex numbers are central in $\mathbb{B}$, so the mixing multiplies the element by a number and leaves the algebra factor untouched: $\tilde{Ξ}_{\mathrm{sp},\mathrm d,b}\mapsto\sum_a V_{ab}\,\tilde{Ξ}_{\mathrm{sp},\mathrm u,a}$.</p>
 <p>The framework's contribution is therefore the placement of the mixing on the generation label, and one structural fact that the counting alone does not give: the CP-violating phase cannot live in the algebra's centre, because the centre acts on every generation in the same way, and it must live in the flavour factor. The parameter count itself is the standard count of $\mathrm{U}(N_g)$. The article states these and is explicit that the framework does not determine the entries.</p>
 <ul>
 <li><strong>Established.</strong> The CKM matrix as an operator on the generation label, with the algebra factor untouched; the non-centrality of the phase, from the structure of the multiplied algebra, hence the requirement that the CP phase sit on the generation label; the Jarlskog invariant as a commutator on the label factor; and the identical structure of the lepton sector's mixing matrix.</li>
@@ -91,8 +91,8 @@
 <p>$$
 \mathcal{L}_{W}\supset
 \frac{g}{\sqrt2}\,W^+_\mu\sum_{a,b}V_{ab}\;
-\tilde{Ξ}^{\mathrm{sp}\dagger}_{\mathrm u,a}\,
-i\Big(i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b,L}\,\vec e_{\nu(\mu)}\Big)\vec e_x
+\tilde{Ξ}_{\mathrm{sp},\mathrm u,a}^{\dagger}\,
+i\Big(i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mathrm d,b,L}\,\vec e_{\nu(\mu)}\Big)\vec e_x
 +\text{h.c.},
 $$</p>
 <p>with $a,b$ the generation labels and $V=X_u^\dagger X_d$ the relative rotation of the up- and down-type diagonalisations. Every factor of the term is an element or a product of elements — the two units, the two central $i$'s, the label $L$ on the down field, and the number $V_{ab}$ — and no array stands behind any of them.</p>
@@ -126,9 +126,9 @@ $$</p>
 <h2 id="the-mass-matrices-and-the-origin-of-the-mixing">The Mass Matrices and the Origin of the Mixing</h2>
 <p><strong>The diagonalisation.</strong> The mixing matrix arises from the mismatch between the up- and down-type mass matrices. In the framework a mass term multiplies the field by a central number, and with generations the number becomes a matrix on the labels: the mass operator leaves the element alone and mixes the generations,</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,b}\longmapsto\sum_a M^{\mathcal{F}}_{u,ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a},
+\tilde{Ξ}_{\mathrm{sp},\mathrm u,b}\longmapsto\sum_a M^{\mathcal{F}}_{u,ab}\,\tilde{Ξ}_{\mathrm{sp},\mathrm u,a},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}\longmapsto\sum_a M^{\mathcal{F}}_{d,ab}\,\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,a},
+\tilde{Ξ}_{\mathrm{sp},\mathrm d,b}\longmapsto\sum_a M^{\mathcal{F}}_{d,ab}\,\tilde{Ξ}_{\mathrm{sp},\mathrm d,a},
 $$</p>
 <p>with the algebra factor common to the two types. The matrices $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ are general complex $N_g\times N_g$ matrices, so each factorises as $M^{\mathcal{F}}=XDY^\dagger$ with $X,Y$ unitary and $D$ diagonal and positive. The arrays of this article are the operators on $\mathcal{F}$ — the mass operators, $V$, and the Hermitian products below — because $\mathcal{F}$ is a complex vector space and no element of $\mathbb{B}$ stands behind them. The mixing depends on the left-handed unitaries alone, and the CP invariant on those and the masses, through the Hermitian products</p>
 <p>$$
@@ -323,29 +323,29 @@ $$</p>
 <p>The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the cells that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.</p>
 <p><strong>The frame and the signs.</strong> The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The generator of the charged current of this article is $\gamma_\mu$ in these names, and the label $L$ of the body is what the older notation writes with the projector $P_L$; that projector is a named object of the older notation, and it needs no formula here.</p>
 <p><strong>The squares.</strong> Every square is a cell square, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the only sources of a sign are $i^2=-1$ and the squares of the imaginary units, $\vec e_k^2=-e_t$ and $e_t^2=e_t$:</p>
 <p>$$
-\gamma_5^2=(-i)^2L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{\vec e_z^2}^{\mathrm{pau}}=(-1)(-I_4)=I_4,
+\gamma_5^2=(-i)^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=(-1)L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z^2}=(-1)(-I_4)=I_4,
 $$</p>
 <p>The same identities in the axis-free display:</p>
 <p>$$
-\gamma_5^2=(-i)^2L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=(-1)L_{e_t}^{\mathrm{axf}}R_{\vec e_z^2}^{\mathrm{axf}}=(-1)(-I_4)=I_4,
+\gamma_5^2=(-i)^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=(-1)L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z^2}=(-1)(-I_4)=I_4,
 $$</p>
 <p>$$
-\gamma_0^2=i^2L_{e_t^2}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=(-1)(-I_4)=I_4,\qquad
-\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(+I_4)=-I_4 ,
+\gamma_0^2=i^2L_{\mathrm{pau},e_t^2}R_{\mathrm{pau},\vec e_x^2}=(-1)L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=(-1)(-I_4)=I_4,\qquad
+\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=(-1)(+I_4)=-I_4 ,
 $$</p>
 <p>Read in the axis-free display:</p>
 <p>$$
-\gamma_0^2=i^2L_{e_t^2}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=(-1)(-I_4)=I_4,\qquad
-\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)(+I_4)=-I_4 ,
+\gamma_0^2=i^2L_{\mathrm{axf},e_t^2}R_{\mathrm{axf},\vec e_x^2}=(-1)L_{\mathrm{axf},e_t}R_{\mathrm{axf},-e_t}=(-1)(-I_4)=I_4,\qquad
+\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(+I_4)=-I_4 ,
 $$</p>
 <p>so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0$ against two for $\gamma_k$: two minus signs give $(\gamma_0)^2=+I_4$, three give $(\gamma_k)^2=-I_4$.</p>
 <p><strong>The fifth generator and the central sign.</strong> $\gamma_5$ is the older notation's name for the fifth generator, the one it calls the chirality cell, and the label $L$ of the body is its minus part. The abstract central sign of the complexified algebra, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ of <em>Special Element Conventions</em>, §<em>The Root Convention</em>, is a different object; its representative on the array is $\gamma_5$.</p>
@@ -382,7 +382,7 @@ $$</p>
 \gamma_5=i\,\gamma_0\gamma_1\gamma_2\gamma_3 ,
 $$</p>
 <p>so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.</p>
-<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The CKM matrix is a $*$-unitary operator on the framework's generation factor, multiplying the label and leaving the algebra factor untouched, and arising from the mismatch of the up- and down-type mass operators, $V=X_u^\dagger X_d$, both of which act on the labels while the algebra factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current term is the generator $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$ read with the label $L$ and multiplied by the number $V_{ab}$, and the neutral currents are the unit on the labels and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.</p>
 <p>The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor, the factor $M_{N_g}(\mathbb{C})$ of that algebra. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is the imaginary part of the determinant of the commutator of the two mass-matrix products, normalised by the six mass-squared differences; the recomputation with the standard parameters gave $J=3.00\times10^{-5}$, consistent with the quoted $3.1\times10^{-5}$ to the rounding of the inputs, with unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.</p>
@@ -404,7 +404,7 @@ $$</p>
 <td>Material sector (the frame of the closing section); centre</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_{t,a}\in\mathbb{B}$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},t,a}\in\mathbb{B}$</td>
 <td>The field of type $t$ and generation $a$; an element of the algebra</td>
 </tr>
 <tr>
@@ -412,7 +412,7 @@ $$</p>
 <td>The generator of the coordinate $x_\mu$, written as the action it is</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>The two parts of an element, by the label $L$ or $R$</td>
 </tr>
 <tr>
@@ -440,11 +440,11 @@ $$</p>
 <td>CKM matrix from the diagonalisations</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_{\mathrm u,a}$, $\tilde{Ξ}^{\mathrm{sp}}_{\mathrm d,b}$; $\tilde{Ξ}^{\mathrm{sp}\dagger}$, with the factor $i\vec e_x$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},\mathrm u,a}$, $\tilde{Ξ}_{\mathrm{sp},\mathrm d,b}$; $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, with the factor $i\vec e_x$</td>
 <td>Up- and down-type quark fields, generation labels $a,b$; Dirac adjoint</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}\dagger}i(ie_\mu\tilde{Ξ}^{\mathrm{sp}}_L\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i(ie_\mu\tilde{Ξ}_{\mathrm{sp},L}\vec e_{\nu(\mu)})\vec e_x\,V_{ab}$</td>
 <td>The charged-current term</td>
 </tr>
 <tr>

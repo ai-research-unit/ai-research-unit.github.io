@@ -83,10 +83,10 @@
 <p>Let $S = S_g$ be the closed orientable surface of genus $g$, and let $T$ be an orientation-preserving involution different from the identity.</p>
 <p><strong>Definition.</strong> The <strong>quotient orbifold</strong> $O = S/T$ is the orbit space, a surface with finitely many <strong>cone points</strong> of order $2$, the images of the fixed points; its underlying surface is orientable of some genus $\gamma$, and the number of cone points is the number $r$ of fixed points of $T$. The <strong>orbifold Euler characteristic</strong> is
 $$
-\chi^{\mathrm{obf}}(O) = 2 - 2\gamma - \tfrac{r}{2},
+\chi_{\mathrm{obf}}(O) = 2 - 2\gamma - \tfrac{r}{2},
 $$
 and the quotient map is a $2$-fold cover branched at the cone points.</p>
-<p><strong>Theorem (Riemann–Hurwitz).</strong> The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi^{\mathrm{obf}}(O)$, that is,
+<p><strong>Theorem (Riemann–Hurwitz).</strong> The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi_{\mathrm{obf}}(O)$, that is,
 $$
 \boxed{\;2 - 2g = 2\Bigl(2 - 2\gamma - \tfrac{r}{2}\Bigr) = 4 - 4\gamma - r\;},
 $$
@@ -125,12 +125,12 @@ the reflection swapping the two copies is an orientation-reversing involution, a
 <p><strong>Example (the genus-two surface).</strong> For $g = 2$ the values are $k\equiv1\pmod2$, $1\leq k\leq3$, so $k = 1$ (the double of the once-punctured torus, the fixed set one separating circle) or $k = 3$ (the double of a pair of pants, the fixed set three circles); the free case is excluded by the parity of the nonempty classification but nevertheless exists, with the quotient the closed non-orientable surface of genus three.</p>
 <p><strong>Example (the sphere).</strong> For $g = 0$ the values are $k\equiv1\pmod2$ and $1\leq k\leq1$, so $k = 1$: a reflection of the sphere in a great circle, the quotient the disc, the sphere being the double of the disc. The free orientation-reversing involution is the antipodal map, with quotient $\mathbb{RP}^2$.</p>
 <h2 id="the-quotient-orbifold-and-its-fundamental-group">The Quotient Orbifold and its Fundamental Group</h2>
-<p><strong>Definition.</strong> A <strong>$2$-orbifold</strong> is a surface together with a finite set of marked points, each with a cyclic group of orders $\geq2$ ("cone points"), and a finite set of marked boundary circles, each with a cyclic group acting by reflection ("mirror circles"); the orbifold fundamental group $\pi_1^{\mathrm{orb}}(O)$ is the fundamental group of the complement of the singular locus to which the local groups are adjoined, so that a loop around a cone point of order $n$ contributes a generator of order $n$ and a loop running to a mirror circle contributes an involution.</p>
+<p><strong>Definition.</strong> A <strong>$2$-orbifold</strong> is a surface together with a finite set of marked points, each with a cyclic group of orders $\geq2$ ("cone points"), and a finite set of marked boundary circles, each with a cyclic group acting by reflection ("mirror circles"); the orbifold fundamental group $\pi_{\mathrm{orb},1}(O)$ is the fundamental group of the complement of the singular locus to which the local groups are adjoined, so that a loop around a cone point of order $n$ contributes a generator of order $n$ and a loop running to a mirror circle contributes an involution.</p>
 <p><strong>Proposition (the orbifold fundamental group of the quotient).</strong> Let $T$ be an orientation-preserving involution of $S_g$ with $r$ fixed points; then there is an extension
 $$
-1\longrightarrow \pi_1(S_g)\longrightarrow \pi_1^{\mathrm{orb}}(O)\longrightarrow \mathbb{Z}/2\longrightarrow 1,
+1\longrightarrow \pi_1(S_g)\longrightarrow \pi_{\mathrm{orb},1}(O)\longrightarrow \mathbb{Z}/2\longrightarrow 1,
 $$
-and $\pi_1^{\mathrm{orb}}(O)$ has a presentation with the $r$ generators of order two for the cone points; the extension is the one describing the branched cover. For an orientation-reversing involution the analogous extension describes the cover branched along the mirror circles, with the mirror circles contributing involutions.</p>
+and $\pi_{\mathrm{orb},1}(O)$ has a presentation with the $r$ generators of order two for the cone points; the extension is the one describing the branched cover. For an orientation-reversing involution the analogous extension describes the cover branched along the mirror circles, with the mirror circles contributing involutions.</p>
 <p><strong>Proof sketch.</strong> The quotient map away from the singular locus is a covering, giving the first map; the local group at a cone point provides the element of order two over it, and the composition onto $\mathbb{Z}/2$ records the sheet. The presentations are read off a triangulation of the orbifold. The orbifold groups are developed in the hyperbolic-geometry and low-dimensional articles, and the statement here is the bookkeeping needed for the classification.</p>
 <p><strong>Remark (why the two-dimensional classification is complete).</strong> In dimension two the surgery obstruction of the equivariant theory vanishes for the relevant groups and the quotient orbifold, with its genus, its cone points and its mirror circles, is a complete invariant of the involution up to conjugacy; this is the reason the classification is a finite combinatorial list rather than a surgery-theoretic computation. In higher dimensions the normal representations of the fixed components are additional invariants, as in <em>Involutions on Manifolds and Equivariant Surgery</em>.</p>
 <h2 id="nielsen-theory">Nielsen Theory</h2>
@@ -196,8 +196,8 @@ so that the number of fixed points is the minimum in the homotopy class and the 
 <td>the double construction realising the reversing involutions</td>
 </tr>
 <tr>
-<td>$\chi^{\mathrm{obf}} = 2-2\gamma-r/2$</td>
-<td>the orbifold Euler characteristic; Riemann–Hurwitz $\chi(S)=2\chi^{\mathrm{obf}}$</td>
+<td>$\chi_{\mathrm{obf}} = 2-2\gamma-r/2$</td>
+<td>the orbifold Euler characteristic; Riemann–Hurwitz $\chi(S)=2\chi_{\mathrm{obf}}$</td>
 </tr>
 <tr>
 <td>$N(T) = \#\mathrm{Fix}(T)$</td>

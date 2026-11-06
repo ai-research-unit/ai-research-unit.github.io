@@ -133,7 +133,7 @@ $$</p>
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$</p>
 <p>The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the sandwich is $2\theta$. This is the convention of <em>Exponential Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
-<p>The quaternion case has no phase $\alpha$, no rapidity $\theta^{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
+<p>The quaternion case has no phase $\alpha$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
 <p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data and its check. The boundary is treated separately (§<em>The Real Axis Family</em>). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§<em>Summary</em>).</p>
 <h2 id="the-method">The Method</h2>
 <h3 id="the-coordinates">The Coordinates</h3>
@@ -290,7 +290,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two singular values of $\mathsf M(\tilde q)$ are both $r$. In the biquaternion case they are $r e^{\pm\theta^{\mathrm{rpd}}/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.</p>
+<p>The two singular values of $\mathsf M(\tilde q)$ are both $r$. In the biquaternion case they are $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.</p>
 <h3 id="the-boundary">The Boundary</h3>
 <p>The quaternion norm is definite, so there is no null cone. Every nonzero quaternion has a modulus and a polar word. The only boundary is the branch cut of the principal logarithm, the open negative real axis $(-\infty,0)$. Away from the origin every point of the cut has a polar word but no principal exponent.</p>
 <div class="table-scroll"><table>
@@ -1003,12 +1003,12 @@ $$</p>
 </tr>
 <tr>
 <td>angles and axes</td>
-<td>$\theta^{\mathrm{rpd}},\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{rpd}},\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 <td>$\theta$; $\vec n$</td>
 </tr>
 <tr>
 <td>polar word</td>
-<td>$re^{i\alpha}\exp(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$</td>
+<td>$re^{i\alpha}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$</td>
 <td>$\exp(\ln r+\theta\vec n)$</td>
 </tr>
 <tr>
@@ -1023,7 +1023,7 @@ $$</p>
 </tr>
 <tr>
 <td>matrix scales</td>
-<td>$re^{\pm\theta^{\mathrm{rpd}}/2}$</td>
+<td>$re^{\pm\theta_{\mathrm{rpd}}/2}$</td>
 <td>$r,r$</td>
 </tr>
 </tbody>

@@ -117,14 +117,14 @@ $$</p>
 <p>The equivalence of the two expressions has been verified explicitly: for random symmetric traceless $\mathcal{Q}^{(b)}$ and random axis–angle pairs, the rotor formula reproduces $R \mathcal{Q}^{(b)}R^{\mathsf{T}}$ to $10^{-9}$, and the trace remains zero. This is the form in which the rotor acts on the quadrupole; the algebra supplies the rotor, while the tensor supplies the two vector slots.</p>
 <h2 id="the-ellipsoid-and-its-normal-modes">The Ellipsoid and Its Normal Modes</h2>
 <h3 id="the-shape-as-a-function-on-the-sphere">The Shape as a Function on the Sphere</h3>
-<p>Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\theta^{\mathrm{azm}},r'_t)$. For small deformations about the sphere,</p>
+<p>Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\theta_{\mathrm{azm}},r'_t)$. For small deformations about the sphere,</p>
 <p>$$
-r(\theta,\theta^{\mathrm{azm}},r'_t) = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(r'_t)\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\right],
+r(\theta,\theta_{\mathrm{azm}},r'_t) = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(r'_t)\,Y_{lm}(\theta,\theta_{\mathrm{azm}})\right],
 $$</p>
 <p>where the $Y_{lm}$ are the spherical harmonics. The term $l = 0$ is a uniform dilation, the terms $l = 1$ are translations of the body, and the terms $l \geq 2$ are genuine shape deformations. The lowest genuine deformation, $l = 2$, is the one that makes the sphere an ellipsoid: it is a <strong>quadrupole</strong> deformation, and it is the mode that the rest of this article follows.</p>
 <p>Because the $Y_{lm}$ are orthonormal on the sphere, the coefficients $a_{lm}(r'_t)$ are the projections</p>
 <p>$$
-a_{lm}(r'_t) = \frac{1}{R_0}\int \left(r(\theta,\theta^{\mathrm{azm}},r'_t) - R_0\right)Y_{lm}^{*}(\theta,\theta^{\mathrm{azm}})\,d\Omega ,
+a_{lm}(r'_t) = \frac{1}{R_0}\int \left(r(\theta,\theta_{\mathrm{azm}},r'_t) - R_0\right)Y_{lm}^{*}(\theta,\theta_{\mathrm{azm}})\,d\Omega ,
 $$</p>
 <p>for $l\geq1$. They are ordinary scalar functions of time — real if real spherical harmonics are used, and for complex harmonics satisfying $a_{l,-m} = (-1)^m a_{lm}^{*}$, which is the statement that the shape function is real. The subtraction of the equilibrium radius removes the $l = 0$ term, so that the integral measures the deformation about the sphere rather than the radius itself; equivalently, it is the coefficient of $Y_{lm}$ in the expansion of the scaled deformation $(r-R_0)/R_0$. There are $2l+1$ amplitudes for each order, and the number grows with $l$: this is the shape version of the multipole tower.</p>
 <h3 id="normal-mode-dynamics">Normal-Mode Dynamics</h3>
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 \left(d^2a_{lm}/d{r'_{t}}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$</p>
-<p>with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the <strong>spherical</strong> equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t + \theta^{\mathrm{pha}}_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.</p>
+<p>with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the <strong>spherical</strong> equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.</p>
 <p>The classic and exactly solvable case is <strong>Rayleigh's vibrating liquid drop</strong>, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result</p>
 <p>$$
 \boxed{\;\omega_l^2 = \frac{\sigma}{\rho_m R_0^3}\,l(l-1)(l+2)\;},
@@ -312,7 +312,7 @@ $$</p>
 <td>Spherical harmonics</td>
 </tr>
 <tr>
-<td>$r(\theta,\theta^{\mathrm{azm}},r'_t) = R_0[1+\sum a_{lm}Y_{lm}]$</td>
+<td>$r(\theta,\theta_{\mathrm{azm}},r'_t) = R_0[1+\sum a_{lm}Y_{lm}]$</td>
 <td>Shape function of the deformed body</td>
 </tr>
 <tr>

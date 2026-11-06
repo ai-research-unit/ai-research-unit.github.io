@@ -173,11 +173,11 @@ $$</p>
 <p><strong>Proof.</strong> The tensor product of two operators of order two has order two, since $(T \otimes S)^2 = T^2 \otimes S^2 = \mathrm{id}$. Its fixed space is the direct sum of $V_+ \otimes W_+$ and $V_- \otimes W_-$, and its negated space the direct sum of $V_+ \otimes W_-$ and $V_- \otimes W_+$; the dimensions give the type, and the trace is the difference of the two components of the type.</p>
 <p><strong>Proposition.</strong> Let $T$ be of type $(n,m)$ and $k \geq 1$. On the $k$-fold tensor power $V^{\otimes k}$ the operator $T^{\otimes k}$ is a linear involution of type</p>
 <p>$$
-\left( \sum_{j \ \mathrm{even}} \binom{k}{j} p^{\,k-j} q^{\,j}, \ \sum_{j \ \mathrm{odd}} \binom{k}{j} p^{\,k-j} q^{\,j} \right), \qquad \text{with} \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^k ,
+\left( \sum_{\mathrm{even},j} \binom{k}{j} p^{\,k-j} q^{\,j}, \ \sum_{\mathrm{odd},j} \binom{k}{j} p^{\,k-j} q^{\,j} \right), \qquad \text{with} \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^k ,
 $$</p>
 <p>and on the exterior power $\Lambda^k V$ the induced operator is a linear involution of type</p>
 <p>$$
-\left( \sum_{j \ \mathrm{even}} \binom{p}{k-j}\binom{q}{j}, \ \sum_{j \ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \right), \qquad \text{with} \qquad \operatorname{tr} = \sum_{j} (-1)^j \binom{p}{k-j}\binom{q}{j},
+\left( \sum_{\mathrm{even},j} \binom{p}{k-j}\binom{q}{j}, \ \sum_{\mathrm{odd},j} \binom{p}{k-j}\binom{q}{j} \right), \qquad \text{with} \qquad \operatorname{tr} = \sum_{j} (-1)^j \binom{p}{k-j}\binom{q}{j},
 $$</p>
 <p>where the sums are over the $j$ with $0 \leq j \leq q$ and $0 \leq k-j \leq p$. On the top exterior power $\Lambda^n V$ the induced involution is multiplication by $\det T = (-1)^m$.</p>
 <p><strong>Proof.</strong> For the tensor power, a basis vector of $V^{\otimes k}$ is a word in $k$ basis vectors, and $T^{\otimes k}$ multiplies it by the product of the corresponding eigenvalues; the product is $1$ exactly when the number $j$ of the negated factors is even, and the number of words with a prescribed $j$ is $\binom{k}{j}p^{k-j}q^{j}$. For the exterior power, the induced operator multiplies a wedge $e_{i_1} \wedge \cdots \wedge e_{i_k}$ of basis vectors by the product of the corresponding eigenvalues, and the number of the wedges with exactly $j$ of the $e_i$ from $V_-$ is $\binom{p}{k-j}\binom{q}{j}$. The trace is the difference of the two components of the type, and the case $k = n$ leaves only the wedge of a basis, multiplied by the product of all the eigenvalues, which is the determinant.</p>

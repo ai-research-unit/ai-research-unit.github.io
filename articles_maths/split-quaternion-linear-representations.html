@@ -72,20 +72,20 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of signature $(2,1)$, and compares the result with the quaternion case.</p>
 <p>The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from <em>Split-Quaternion Algebra</em>. The defining module and the irreducibility of the defining representation are assumed from <em>Split-Quaternion Matrix Element Representations</em>, §<em>The Defining Module</em>. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from <em>Matrix Algebras</em>; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from <em>Representations of Lie Algebras</em>, and the tensor conventions of this category for the comparison come from <em>Quaternion Linear Representations</em>. The double cover is stated here and proved in <em>Split-Quaternion Rotations and the Lorentz Group</em>; the homogeneous spaces are treated in <em>Split-Quaternions and Hyperbolic Geometry</em>. Nothing physical is invoked.</p>
-<h2 id="representations-of-math7">Representations of $\mathbb{H}^{\mathrm{spl}}$</h2>
+<h2 id="representations-of-math7">Representations of $\mathbb{H}_{\mathrm{spl}}$</h2>
 <h3 id="definition">Definition</h3>
-<p>A <strong>representation</strong> of $\mathbb{H}^{\mathrm{spl}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}^{\mathrm{spl}} \times M \to M$, $(\tilde q,v) \mapsto \tilde q \cdot v$, such that</p>
+<p>A <strong>representation</strong> of $\mathbb{H}_{\mathrm{spl}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{spl}} \times M \to M$, $(\tilde q,v) \mapsto \tilde q \cdot v$, such that</p>
 <p>$$
 \tilde q_1 \cdot (\tilde q_2 \cdot v) = (\tilde q_1 \tilde q_2) \cdot v, \qquad 1 \cdot v = v
 $$</p>
-<p>for all $\tilde q_1,\tilde q_2 \in \mathbb{H}^{\mathrm{spl}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}^{\mathrm{spl}} \to \operatorname{End}_{\mathbb{R}}(M)$. A <strong>module</strong> is a representation; the two words are used interchangeably, and a module is <strong>simple</strong> or <strong>irreducible</strong> when it has no submodule other than $0$ and itself. The representation is <strong>finite-dimensional</strong> when $M$ is.</p>
-<p>By (<em>Split-Quaternion Algebra</em>, §<em>The Centre and Simplicity</em>) the algebra is simple and non-commutative, so the kernel of a unital homomorphism $\rho$ is a two-sided ideal, hence $0$ or all of $\mathbb{H}^{\mathrm{spl}}$; it is not all, because $\rho(1) = \mathrm{id}$. Every representation of a nonzero module is therefore faithful.</p>
+<p>for all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{spl}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}_{\mathrm{spl}} \to \operatorname{End}_{\mathbb{R}}(M)$. A <strong>module</strong> is a representation; the two words are used interchangeably, and a module is <strong>simple</strong> or <strong>irreducible</strong> when it has no submodule other than $0$ and itself. The representation is <strong>finite-dimensional</strong> when $M$ is.</p>
+<p>By (<em>Split-Quaternion Algebra</em>, §<em>The Centre and Simplicity</em>) the algebra is simple and non-commutative, so the kernel of a unital homomorphism $\rho$ is a two-sided ideal, hence $0$ or all of $\mathbb{H}_{\mathrm{spl}}$; it is not all, because $\rho(1) = \mathrm{id}$. Every representation of a nonzero module is therefore faithful.</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The <strong>left regular representation</strong> is the algebra acting on itself by left multiplication:</p>
 <p>$$
 \lambda(\tilde q_1) \tilde q_2 = \tilde q_1 \tilde q_2 .
 $$</p>
-<p>It is the representation on the four-dimensional space $\mathbb{H}^{\mathrm{spl}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}})$ isomorphic to $\mathbb{H}^{\mathrm{spl}}$. The <strong>right regular representation</strong> $\varrho(\tilde q_1) \tilde q_2 = \tilde q_2 \tilde q_1$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of <em>Quaternion Linear Representations</em>, §<em>The Left and Right Regular Representations</em>. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)</p>
+<p>It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{spl}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$ isomorphic to $\mathbb{H}_{\mathrm{spl}}$. The <strong>right regular representation</strong> $\varrho(\tilde q_1) \tilde q_2 = \tilde q_2 \tilde q_1$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of <em>Quaternion Linear Representations</em>, §<em>The Left and Right Regular Representations</em>. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)</p>
 <h3 id="the-idempotent-decomposition">The Idempotent Decomposition</h3>
 <p>The idempotents give a decomposition of every representation.</p>
 <p><strong>Theorem (The Idempotent Splitting).</strong> Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ be the non-central idempotents. Then</p>
@@ -94,10 +94,10 @@ $$</p>
 M = \tilde\pi_1 M \oplus \tilde\pi_2 M
 \;}
 $$</p>
-<p>as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(\vec e_y)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}^{\mathrm{spl}}\tilde\pi_{1,2}$.</p>
+<p>as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(\vec e_y)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{spl}}\tilde\pi_{1,2}$.</p>
 <p><strong>Proof.</strong> The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\mathsf{M}_2(\tilde\pi_1)$ and $\mathsf{M}_2(\tilde\pi_2)$ are the rank-one projections of (<em>Split-Quaternion Matrix Element Representations</em>, §<em>The Image as a Linear Subspace</em>), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.</p>
 <h2 id="classification">Classification</h2>
-<p><strong>Theorem (The Classification of Representations).</strong> Let $M$ be a finite-dimensional representation of $\mathbb{H}^{\mathrm{spl}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \mathsf{M}_2(\tilde q)v$. Then there is a unique integer $d \geq 0$ with</p>
+<p><strong>Theorem (The Classification of Representations).</strong> Let $M$ be a finite-dimensional representation of $\mathbb{H}_{\mathrm{spl}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \mathsf{M}_2(\tilde q)v$. Then there is a unique integer $d \geq 0$ with</p>
 <p>$$
 \boxed{\;
 M \cong (\mathbb{R}^2)^{\oplus d}
@@ -114,32 +114,32 @@ $$</p>
 \varphi : (\mathbb{R}^2)^{\oplus d} \longrightarrow M, \qquad \varphi(s^{(1)}, \dots, s^{(d)}) = \sum_{k=1}^{d} E(s^{(k)}) w_k .
 $$</p>
 <p>The map is $M_2(\mathbb{R})$-linear: $E(As) = A E(s)$ for every matrix $A$, because both sides have first column $As$ and second column $0$. It carries the standard basis vectors of the $k$-th copy of $\mathbb{R}^2$ to $w_k$ and $E_{21}w_k$, since $E(1,0) = E_{11}$ and $E(0,1) = E_{21}$, so it is bijective. Hence $M \cong (\mathbb{R}^2)^{\oplus d}$ as a module.</p>
-<p><strong>Corollary (No Odd-Dimensional Representations).</strong> There is no representation of dimension $1$, and therefore no one-dimensional representation exists in this category at all. In particular the algebra has no <strong>trivial</strong> representation: a unital homomorphism $\mathbb{H}^{\mathrm{spl}} \to \mathbb{R}$ would be an algebra homomorphism from a non-commutative simple algebra onto a commutative field, and its kernel would be a proper two-sided ideal.</p>
+<p><strong>Corollary (No Odd-Dimensional Representations).</strong> There is no representation of dimension $1$, and therefore no one-dimensional representation exists in this category at all. In particular the algebra has no <strong>trivial</strong> representation: a unital homomorphism $\mathbb{H}_{\mathrm{spl}} \to \mathbb{R}$ would be an algebra homomorphism from a non-commutative simple algebra onto a commutative field, and its kernel would be a proper two-sided ideal.</p>
 <p><strong>Proof.</strong> The dimension of $(\mathbb{R}^2)^{\oplus d}$ is $2d$, and the algebra is non-commutative, so $M_1(\mathbb{R})$ is excluded.</p>
 <h2 id="semisimplicity-and-the-irreducible-representation">Semisimplicity and the Irreducible Representation</h2>
-<p><strong>Theorem (Semisimplicity).</strong> The algebra $\mathbb{H}^{\mathrm{spl}}$ is semisimple: every finite-dimensional representation is a direct sum of simple representations, and every submodule of a representation is a direct summand.</p>
-<p><strong>Proof.</strong> The classification gives $M \cong (\mathbb{R}^2)^{\oplus d}$, and $\mathbb{R}^2$ is simple by (<em>Split-Quaternion Matrix Element Representations</em>, §<em>The Defining Module</em>); hence $M$ is a direct sum of simples. For a submodule $W \subseteq M$, the standard argument of complete reducibility applies: the inclusion splits because $W$, being a submodule of a semisimple module, is a direct sum of simples and the remaining simples of $M$ provide a complement; equivalently, $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ is a matrix algebra, and matrix algebras over fields are semisimple by <em>Matrix Algebras</em>.</p>
-<p><strong>Theorem (The Unique Irreducible Representation).</strong> Up to isomorphism there is exactly one simple representation of $\mathbb{H}^{\mathrm{spl}}$, namely $\mathbb{R}^2$ with the action of the defining representation. It has dimension $2$.</p>
+<p><strong>Theorem (Semisimplicity).</strong> The algebra $\mathbb{H}_{\mathrm{spl}}$ is semisimple: every finite-dimensional representation is a direct sum of simple representations, and every submodule of a representation is a direct summand.</p>
+<p><strong>Proof.</strong> The classification gives $M \cong (\mathbb{R}^2)^{\oplus d}$, and $\mathbb{R}^2$ is simple by (<em>Split-Quaternion Matrix Element Representations</em>, §<em>The Defining Module</em>); hence $M$ is a direct sum of simples. For a submodule $W \subseteq M$, the standard argument of complete reducibility applies: the inclusion splits because $W$, being a submodule of a semisimple module, is a direct sum of simples and the remaining simples of $M$ provide a complement; equivalently, $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ is a matrix algebra, and matrix algebras over fields are semisimple by <em>Matrix Algebras</em>.</p>
+<p><strong>Theorem (The Unique Irreducible Representation).</strong> Up to isomorphism there is exactly one simple representation of $\mathbb{H}_{\mathrm{spl}}$, namely $\mathbb{R}^2$ with the action of the defining representation. It has dimension $2$.</p>
 <p><strong>Proof.</strong> Every nonzero module is $(\mathbb{R}^2)^{\oplus d}$ with $d \geq 1$, and such a module is simple exactly when $d = 1$, since $d \geq 2$ exhibits a proper direct summand. The dimension of $\mathbb{R}^2$ is $2$.</p>
 <p><strong>Theorem (Schur's Lemma and the Endomorphism Ring).</strong> The endomorphism ring of the simple module is $\mathbb{R}$:</p>
 <p>$$
-\operatorname{End}_{\mathbb{H}^{\mathrm{spl}}}(\mathbb{R}^2) = \mathbb{R} \cdot \mathrm{id} .
+\operatorname{End}_{\mathbb{H}_{\mathrm{spl}}}(\mathbb{R}^2) = \mathbb{R} \cdot \mathrm{id} .
 $$</p>
 <p><strong>Proof.</strong> Schur's lemma gives that every $M_2(\mathbb{R})$-linear endomorphism of $\mathbb{R}^2$ is scalar, since a matrix commuting with every matrix is a scalar matrix by (<em>Matrix Algebras</em>, §<em>Ideals and Simplicity</em>).</p>
 <p>The endomorphism ring of the simple module being $\mathbb{R}$ rather than a division algebra over $\mathbb{R}$ larger than $\mathbb{R}$ is the algebraic expression of the fact that the algebra is <strong>split</strong>: by Schur's lemma the endomorphism ring of a simple module is a division algebra, and here that division algebra is $\mathbb{R}$ itself. In the quaternion case it is $\mathbb{H}$, by <em>Quaternion Linear Representations</em>, §<em>Schur's Lemma</em>, and the two situations differ in exactly this invariant.</p>
 <h2 id="the-representation-ring">The Representation Ring</h2>
-<p><strong>Definition.</strong> The <strong>representation ring</strong> $R(\mathbb{H}^{\mathrm{spl}})$ is the Grothendieck ring of finite-dimensional representations, with addition from direct sums and multiplication from tensor products, the algebra acting on the first factor of a tensor product.</p>
+<p><strong>Definition.</strong> The <strong>representation ring</strong> $R(\mathbb{H}_{\mathrm{spl}})$ is the Grothendieck ring of finite-dimensional representations, with addition from direct sums and multiplication from tensor products, the algebra acting on the first factor of a tensor product.</p>
 <p><strong>Theorem (The Additive Group).</strong> As an abelian group,</p>
 <p>$$
-R(\mathbb{H}^{\mathrm{spl}}) \cong \mathbb{Z},
+R(\mathbb{H}_{\mathrm{spl}}) \cong \mathbb{Z},
 $$</p>
 <p>freely generated by the class $[\mathbb{R}^2]$ of the simple module. Indeed the classification gives $[(\mathbb{R}^2)^{\oplus d}] = d\,[\mathbb{R}^2]$.</p>
 <p><strong>Proof.</strong> The isomorphism classes of finite-dimensional representations are the classes of $(\mathbb{R}^2)^{\oplus d}$ for $d \geq 0$, and direct sum corresponds to addition of the integers $d$.</p>
-<p><strong>Theorem (The Ring Structure).</strong> The product in $R(\mathbb{H}^{\mathrm{spl}})$ satisfies</p>
+<p><strong>Theorem (The Ring Structure).</strong> The product in $R(\mathbb{H}_{\mathrm{spl}})$ satisfies</p>
 <p>$$
 [(\mathbb{R}^2)^{\oplus a}] \cdot [(\mathbb{R}^2)^{\oplus b}] = [(\mathbb{R}^2)^{\oplus 2ab}],
 $$</p>
-<p>so $R(\mathbb{H}^{\mathrm{spl}})$ is $\mathbb{Z}$ with the multiplication $m \cdot n = 2mn$. This multiplication is associative and commutative, and it has no identity element: $2 e n = n$ for all $n$ would force $e = \tfrac12$, which is not an integer.</p>
+<p>so $R(\mathbb{H}_{\mathrm{spl}})$ is $\mathbb{Z}$ with the multiplication $m \cdot n = 2mn$. This multiplication is associative and commutative, and it has no identity element: $2 e n = n$ for all $n$ would force $e = \tfrac12$, which is not an integer.</p>
 <p><strong>Proof.</strong> Let the algebra act on the first factor of the tensor product. Then</p>
 <p>$$
 \mathbb{R}^2 \otimes_{\mathbb{R}} \mathbb{R}^2 \cong \mathbb{R}^4 \cong (\mathbb{R}^2)^{\oplus 2},
@@ -147,29 +147,29 @@ $$</p>
 <p>because $\mathbb{R}^2 \otimes \mathbb{R}^2$ has dimension $4$ and every four-dimensional module is $(\mathbb{R}^2)^{\oplus 2}$ by the classification; the tensor product of $(\mathbb{R}^2)^{\oplus a}$ with $(\mathbb{R}^2)^{\oplus b}$ is therefore $(\mathbb{R}^2)^{\oplus 2ab}$. A ring with product $m\cdot n = 2mn$ on $\mathbb{Z}$ is associative and commutative, and an identity $e$ would satisfy $2en = n$ for all $n$, in particular $2e = 1$.</p>
 <p>The absence of an identity is the same phenomenon as in the quaternion case, where the product is $m\cdot n = 4mn$ by <em>Quaternion Linear Representations</em>, §<em>The Representation Ring</em>; the factor is the dimension of the simple module, $2$ here and $4$ there. The tensor of representations is not a ring with unit because the algebra is not a bialgebra, and no trivial representation exists to serve as the unit.</p>
 <h2 id="the-category-of-representations">The Category of Representations</h2>
-<p><strong>Theorem (Morita Triviality).</strong> The category of finite-dimensional representations of $\mathbb{H}^{\mathrm{spl}}$ is equivalent, as an abelian category, to the category of finite-dimensional real vector spaces:</p>
+<p><strong>Theorem (Morita Triviality).</strong> The category of finite-dimensional representations of $\mathbb{H}_{\mathrm{spl}}$ is equivalent, as an abelian category, to the category of finite-dimensional real vector spaces:</p>
 <p>$$
 \boxed{\;
-\mathbb{H}^{\mathrm{spl}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}}
+\mathbb{H}_{\mathrm{spl}}\text{-}\mathbf{mod} \;\simeq\; \mathbf{Vect}_{\mathbb{R}}
 \;}.
 $$</p>
-<p>The equivalence sends a vector space $W$ to $\mathbb{R}^2 \otimes_{\mathbb{R}} W$ and a module $M$ to $\operatorname{Hom}_{\mathbb{H}^{\mathrm{spl}}}(\mathbb{R}^2, M)$. Under it the simple module corresponds to $\mathbb{R}$, direct sums to direct sums, and tensor products to tensor products with the algebra acting on the first factor.</p>
-<p><strong>Proof.</strong> This is the standard equivalence of module categories induced by $M_2(\mathbb{R}) = \operatorname{End}_{\mathbb{R}}(\mathbb{R}^2)$, treated in <em>Matrix Algebras</em>: a module $M$ is recovered from $\operatorname{Hom}_{\mathbb{H}^{\mathrm{spl}}}(\mathbb{R}^2,M) \otimes_{\mathbb{R}} \mathbb{R}^2$ by evaluation, and the classification theorem is precisely the statement that the evaluation map is an isomorphism.</p>
+<p>The equivalence sends a vector space $W$ to $\mathbb{R}^2 \otimes_{\mathbb{R}} W$ and a module $M$ to $\operatorname{Hom}_{\mathbb{H}_{\mathrm{spl}}}(\mathbb{R}^2, M)$. Under it the simple module corresponds to $\mathbb{R}$, direct sums to direct sums, and tensor products to tensor products with the algebra acting on the first factor.</p>
+<p><strong>Proof.</strong> This is the standard equivalence of module categories induced by $M_2(\mathbb{R}) = \operatorname{End}_{\mathbb{R}}(\mathbb{R}^2)$, treated in <em>Matrix Algebras</em>: a module $M$ is recovered from $\operatorname{Hom}_{\mathbb{H}_{\mathrm{spl}}}(\mathbb{R}^2,M) \otimes_{\mathbb{R}} \mathbb{R}^2$ by evaluation, and the classification theorem is precisely the statement that the evaluation map is an isomorphism.</p>
 <p><strong>Corollary (Finite-Dimensional Representations Are Free).</strong> Every finite-dimensional representation is a free module of rank $d$ over the algebra, in the sense of the isomorphism $M \cong (\mathbb{R}^2)^{\oplus d}$, and the rank is half the real dimension.</p>
 <h2 id="the-relation-to-the-representations-of-math176">The Relation to the Representations of $\mathrm{SL}_2(\mathbb{R})$</h2>
 <p>The vector subspace $V$, with the commutator bracket, is a Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$, by (<em>Split-Quaternion Algebra</em>, §<em>The Lie Algebra Structure</em>). Every representation of the associative algebra is a representation of this Lie algebra: the forgetful functor</p>
 <p>$$
-\mathbb{H}^{\mathrm{spl}}\text{-}\mathbf{mod} \longrightarrow \mathrm{SL}_2(\mathbb{R})\text{-}\mathbf{mod}
+\mathbb{H}_{\mathrm{spl}}\text{-}\mathbf{mod} \longrightarrow \mathrm{SL}_2(\mathbb{R})\text{-}\mathbf{mod}
 $$</p>
 <p>sends a module $M$ to the same space with the action $\vec q \cdot v = [\vec q, v]$ extended bilinearly, and it is exact and faithful. The two theories are not the same, and the difference is sharp.</p>
-<p><strong>Theorem (The Lie Irreducibles Do Not Lift).</strong> The finite-dimensional irreducible $\mathrm{SL}_2(\mathbb{R})$-modules are the symmetric powers $\operatorname{sym}^n(\mathbb{R}^2)$ of the standard module, of dimension $n+1$ for $n \geq 0$, by <em>Representations of Lie Algebras</em>, §<em>The Example of $\mathrm{SL}(2)$</em>. Among them exactly one carries the structure of a representation of the associative algebra $\mathbb{H}^{\mathrm{spl}}$, namely $\operatorname{sym}^1(\mathbb{R}^2) = \mathbb{R}^2$. Consequently the representation theory of the Lie algebra is strictly larger than that of the algebra.</p>
-<p><strong>Proof.</strong> Every $\mathbb{H}^{\mathrm{spl}}$-module is isomorphic to $(\mathbb{R}^2)^{\oplus d}$ by the classification, so every irreducible $\mathbb{H}^{\mathrm{spl}}$-module has dimension $2$. If $\operatorname{sym}^n(\mathbb{R}^2)$ carried an $\mathbb{H}^{\mathrm{spl}}$-module structure whose associated Lie action is the given one, then as an $\mathbb{H}^{\mathrm{spl}}$-module it would be $(\mathbb{R}^2)^{\oplus d}$ with $2d = n+1$, so $n$ would be odd and $d = (n+1)/2$. The submodules of $\operatorname{sym}^n(\mathbb{R}^2)$ over the associative algebra are submodules over the Lie algebra, since the Lie action is derived from the associative one; so if $d \geq 2$ the Lie module would have a proper nonzero submodule, contradicting its irreducibility. Hence $d = 1$, that is $n = 1$, and then $\operatorname{sym}^1(\mathbb{R}^2) = \mathbb{R}^2$ is indeed a module.</p>
-<p><strong>Corollary (The Trivial Lie Module Does Not Lift).</strong> The one-dimensional trivial $\mathrm{SL}_2(\mathbb{R})$-module is not a representation of $\mathbb{H}^{\mathrm{spl}}$, in accordance with the corollary of the classification that the algebra has no one-dimensional representation.</p>
-<p><strong>Remark.</strong> The relation between the two representation theories is the usual one for an enveloping algebra: $\mathbb{H}^{\mathrm{spl}}$ is the quotient of the universal enveloping algebra $\mathrm{U}(\mathrm{SL}_2(\mathbb{R}))$ by the annihilator of its two-dimensional irreducible module, so a $\mathrm{U}(\mathrm{SL}_2)$-module descends to $\mathbb{H}^{\mathrm{spl}}$ exactly when it is a sum of copies of that module. The enveloping algebra itself is infinite-dimensional, by <em>Universal Enveloping Algebras</em>, and its representation theory is strictly richer.</p>
+<p><strong>Theorem (The Lie Irreducibles Do Not Lift).</strong> The finite-dimensional irreducible $\mathrm{SL}_2(\mathbb{R})$-modules are the symmetric powers $\operatorname{sym}^n(\mathbb{R}^2)$ of the standard module, of dimension $n+1$ for $n \geq 0$, by <em>Representations of Lie Algebras</em>, §<em>The Example of $\mathrm{SL}(2)$</em>. Among them exactly one carries the structure of a representation of the associative algebra $\mathbb{H}_{\mathrm{spl}}$, namely $\operatorname{sym}^1(\mathbb{R}^2) = \mathbb{R}^2$. Consequently the representation theory of the Lie algebra is strictly larger than that of the algebra.</p>
+<p><strong>Proof.</strong> Every $\mathbb{H}_{\mathrm{spl}}$-module is isomorphic to $(\mathbb{R}^2)^{\oplus d}$ by the classification, so every irreducible $\mathbb{H}_{\mathrm{spl}}$-module has dimension $2$. If $\operatorname{sym}^n(\mathbb{R}^2)$ carried an $\mathbb{H}_{\mathrm{spl}}$-module structure whose associated Lie action is the given one, then as an $\mathbb{H}_{\mathrm{spl}}$-module it would be $(\mathbb{R}^2)^{\oplus d}$ with $2d = n+1$, so $n$ would be odd and $d = (n+1)/2$. The submodules of $\operatorname{sym}^n(\mathbb{R}^2)$ over the associative algebra are submodules over the Lie algebra, since the Lie action is derived from the associative one; so if $d \geq 2$ the Lie module would have a proper nonzero submodule, contradicting its irreducibility. Hence $d = 1$, that is $n = 1$, and then $\operatorname{sym}^1(\mathbb{R}^2) = \mathbb{R}^2$ is indeed a module.</p>
+<p><strong>Corollary (The Trivial Lie Module Does Not Lift).</strong> The one-dimensional trivial $\mathrm{SL}_2(\mathbb{R})$-module is not a representation of $\mathbb{H}_{\mathrm{spl}}$, in accordance with the corollary of the classification that the algebra has no one-dimensional representation.</p>
+<p><strong>Remark.</strong> The relation between the two representation theories is the usual one for an enveloping algebra: $\mathbb{H}_{\mathrm{spl}}$ is the quotient of the universal enveloping algebra $\mathrm{U}(\mathrm{SL}_2(\mathbb{R}))$ by the annihilator of its two-dimensional irreducible module, so a $\mathrm{U}(\mathrm{SL}_2)$-module descends to $\mathbb{H}_{\mathrm{spl}}$ exactly when it is a sum of copies of that module. The enveloping algebra itself is infinite-dimensional, by <em>Universal Enveloping Algebras</em>, and its representation theory is strictly richer.</p>
 <h2 id="the-double-cover-of-the-lorentz-group-of-signature-math211">The Double Cover of the Lorentz Group of Signature $(2,1)$</h2>
 <p><strong>Theorem (The Double Cover).</strong> The group of norm-one split-quaternions is</p>
 <p>$$
-U = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
+U = \{\tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
 $$</p>
 <p>and the adjoint action $\tilde q \mapsto (u \mapsto u\tilde q u^{-1})$ on the vector subspace $V$ defines a surjective group homomorphism</p>
 <p>$$
@@ -177,7 +177,7 @@ $$</p>
 $$</p>
 <p>onto the identity component of the Lorentz group of the signature-$(2,1)$ form, with kernel $\{\pm 1\}$; the map is therefore a double cover.</p>
 <p><strong>Proof.</strong> The identification of $U$ with $\mathrm{SL}_2(\mathbb{R})$ is (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Group of Units</em>); the adjoint action preserves the form $\langle\cdot\rangle_{\natural}$ on $V$ by multiplicativity, and the remaining statements are proved in <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Double Cover of $\mathrm{SO}^{+}(2,1)$</em>.</p>
-<p><strong>Corollary (Group Representations and Algebra Representations Are Different).</strong> The representations of the group $\mathrm{SL}_2(\mathbb{R})$ and the representations of the algebra $\mathbb{H}^{\mathrm{spl}}$ are not the same objects: the algebra has a single finite-dimensional irreducible module, whereas $\mathrm{SL}_2(\mathbb{R})$ has infinite-dimensional irreducible $*$-unitary representations and its finite-dimensional representations are the symmetric powers of the standard two-dimensional one. The algebra's module $\mathbb{R}^2$ exponentiates to the standard representation of the group, which is the first member of the group's family and the only member that also carries an algebra action by the preceding theorem.</p>
+<p><strong>Corollary (Group Representations and Algebra Representations Are Different).</strong> The representations of the group $\mathrm{SL}_2(\mathbb{R})$ and the representations of the algebra $\mathbb{H}_{\mathrm{spl}}$ are not the same objects: the algebra has a single finite-dimensional irreducible module, whereas $\mathrm{SL}_2(\mathbb{R})$ has infinite-dimensional irreducible $*$-unitary representations and its finite-dimensional representations are the symmetric powers of the standard two-dimensional one. The algebra's module $\mathbb{R}^2$ exponentiates to the standard representation of the group, which is the first member of the group's family and the only member that also carries an algebra action by the preceding theorem.</p>
 <p><strong>Proof.</strong> The finite-dimensional representations of $\mathrm{SL}_2(\mathbb{R})$ are the symmetric powers of $\mathbb{R}^2$ by <em>Representations of Lie Algebras</em>, §<em>The Example of $\mathrm{SL}(2)$</em>, applied to the Lie algebra; by the preceding theorem only the first of them is a module for the associative algebra.</p>
 <h2 id="comparison-with-the-quaternion-case">Comparison with the Quaternion Case</h2>
 <div class="table-scroll"><table>
@@ -185,7 +185,7 @@ $$</p>
 <tr>
 <th></th>
 <th>$\mathbb{H}$</th>
-<th>$\mathbb{H}^{\mathrm{spl}}$</th>
+<th>$\mathbb{H}_{\mathrm{spl}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -248,7 +248,7 @@ $$</p>
 <tbody>
 <tr>
 <td>representation, module</td>
-<td>a real vector space with an action of $\mathbb{H}^{\mathrm{spl}}$</td>
+<td>a real vector space with an action of $\mathbb{H}_{\mathrm{spl}}$</td>
 <td>this article</td>
 </tr>
 <tr>
@@ -282,17 +282,17 @@ $$</p>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\operatorname{End}_{\mathbb{H}^{\mathrm{spl}}}(\mathbb{R}^2) = \mathbb{R}$</td>
+<td>$\operatorname{End}_{\mathbb{H}_{\mathrm{spl}}}(\mathbb{R}^2) = \mathbb{R}$</td>
 <td>Schur's lemma; the algebra is split</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$R(\mathbb{H}^{\mathrm{spl}}) \cong \mathbb{Z}$</td>
+<td>$R(\mathbb{H}_{\mathrm{spl}}) \cong \mathbb{Z}$</td>
 <td>the representation ring, product $m\cdot n = 2mn$</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathbb{H}^{\mathrm{spl}}\text{-}\mathbf{mod} \simeq \mathbf{Vect}_{\mathbb{R}}$</td>
+<td>$\mathbb{H}_{\mathrm{spl}}\text{-}\mathbf{mod} \simeq \mathbf{Vect}_{\mathbb{R}}$</td>
 <td>Morita equivalence</td>
 <td>this article</td>
 </tr>

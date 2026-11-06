@@ -70,14 +70,14 @@
       <div class="article-body">
         <h1 id="split-biquaternion-four-vector-element-representation"><strong>Split-Biquaternion Four-Vector Element Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A split biquaternion is an element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with four <strong>split complex</strong> coefficients $Q_\mu \in \mathbb{C}^{\mathrm{spl}}$, and this article reads the algebra through those four coefficients: the coefficient space, the column and dual row presentations, the multiplication in components, the four conjugations as coordinate operations, the four distinguished subspaces as coefficient conditions, and the split-biquaternion norm with its two real restrictions. The construction is the split complex analogue of the four-vector representation of the biquaternions; the coefficient arithmetic is that of <em>Split-Complex Algebra</em>, and the algebra structure is that of <em>Split-Biquaternion Algebra</em>.</p>
+<p>A split biquaternion is an element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with four <strong>split complex</strong> coefficients $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$, and this article reads the algebra through those four coefficients: the coefficient space, the column and dual row presentations, the multiplication in components, the four conjugations as coordinate operations, the four distinguished subspaces as coefficient conditions, and the split-biquaternion norm with its two real restrictions. The construction is the split complex analogue of the four-vector representation of the biquaternions; the coefficient arithmetic is that of <em>Split-Complex Algebra</em>, and the algebra structure is that of <em>Split-Biquaternion Algebra</em>.</p>
 <p>The treatment is purely mathematical. No physics is invoked, and no metric is imposed on the coefficient space; the four coefficients are an algebraic device, and the form they carry is the split complex norm.</p>
 <h2 id="the-coefficient-space">The Coefficient Space</h2>
-<p><strong>Definition.</strong> The <strong>coefficient space</strong> of $\mathbb{B}^{\mathrm{spl}}$ is the free module ${\mathbb{C}^{\mathrm{spl}}}^4$ of quadruples $(Q_t, Q_x, Q_y, Q_z)$ of split complex numbers, with the corresponding isomorphism</p>
+<p><strong>Definition.</strong> The <strong>coefficient space</strong> of $\mathbb{B}_{\mathrm{spl}}$ is the free module ${\mathbb{C}_{\mathrm{spl}}}^4$ of quadruples $(Q_t, Q_x, Q_y, Q_z)$ of split complex numbers, with the corresponding isomorphism</p>
 <p>$$
-\mathbb{B}^{\mathrm{spl}} \longrightarrow {\mathbb{C}^{\mathrm{spl}}}^4 , \qquad \tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longmapsto (Q_t, Q_x, Q_y, Q_z) .
+\mathbb{B}_{\mathrm{spl}} \longrightarrow {\mathbb{C}_{\mathrm{spl}}}^4 , \qquad \tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longmapsto (Q_t, Q_x, Q_y, Q_z) .
 $$</p>
-<p>Each coefficient splits as $Q_\mu = q_\mu + j q'_\mu$ with real $q_\mu, q'_\mu$, so ${\mathbb{C}^{\mathrm{spl}}}^4$ is the real vector space $\mathbb{R}^8$ and the <strong>eight real coordinates</strong> of the algebra are $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$.</p>
+<p>Each coefficient splits as $Q_\mu = q_\mu + j q'_\mu$ with real $q_\mu, q'_\mu$, so ${\mathbb{C}_{\mathrm{spl}}}^4$ is the real vector space $\mathbb{R}^8$ and the <strong>eight real coordinates</strong> of the algebra are $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$.</p>
 <h3 id="real-and-split-imaginary-parts-of-the-components">Real and Split-Imaginary Parts of the Components</h3>
 <p>Writing each coefficient through the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ gives $Q_\mu = Q_{\mu +} \tilde\Pi_1 + Q_{\mu -} \tilde\Pi_2$ with</p>
 <p>$$
@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 \tilde{Q} = \begin{pmatrix} Q_t \\ Q_x \\ Q_y \\ Q_z \end{pmatrix} ,
 $$</p>
-<p>or as the <strong>dual row</strong> $\tilde{Q}^{\mathsf{T}}$ of quaternion conjugation, obtained by transposing the column of conjugates; the pairing of a row and a column is the scalar part of the product. Because $\mathbb{C}^{\mathrm{spl}}$ is commutative, no distinction between left and right coefficients arises in the column description, and the linear maps of the algebra are the $4 \times 4$ matrices over $\mathbb{C}^{\mathrm{spl}}$, the split complex analogue of the $M_4(\mathbb{C}^{\mathrm{spl}})$ representation.</p>
+<p>or as the <strong>dual row</strong> $\tilde{Q}^{\mathsf{T}}$ of quaternion conjugation, obtained by transposing the column of conjugates; the pairing of a row and a column is the scalar part of the product. Because $\mathbb{C}_{\mathrm{spl}}$ is commutative, no distinction between left and right coefficients arises in the column description, and the linear maps of the algebra are the $4 \times 4$ matrices over $\mathbb{C}_{\mathrm{spl}}$, the split complex analogue of the $M_4(\mathbb{C}_{\mathrm{spl}})$ representation.</p>
 <h2 id="multiplication-in-four-vector-form">Multiplication in Four-Vector Form</h2>
 <p><strong>Proposition.</strong> In components, the product $\tilde Q_3 = \tilde Q_1\tilde Q_2$ is given by</p>
 <p>$$
@@ -98,8 +98,8 @@ $$</p>
 <p>$$
 \boxed{\;Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t}\;}
 $$</p>
-<p>the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{C}^{\mathrm{spl}}$.</p>
-<p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{C}^{\mathrm{spl}}$; the multiplication is well defined because $\mathbb{C}^{\mathrm{spl}}$ is commutative and central.</p>
+<p>the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$.</p>
+<p><strong>Proof.</strong> These are the standard quaternion multiplication formulas with the coefficients taken in $\mathbb{C}_{\mathrm{spl}}$; the multiplication is well defined because $\mathbb{C}_{\mathrm{spl}}$ is commutative and central.</p>
 <h3 id="the-multiplication-table-of-the-basis">The Multiplication Table of the Basis</h3>
 <p>The basis elements multiply as in the quaternion case,</p>
 <div class="table-scroll"><table>
@@ -143,7 +143,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>so that the four-vector multiplication is the quaternion multiplication generalised by the ring $\mathbb{C}^{\mathrm{spl}}$ of scalars. The four-vector form is thus the standard model of the algebra, and every algebraic operation below is the coordinate reading of an operation of the algebra.</p>
+<p>so that the four-vector multiplication is the quaternion multiplication generalised by the ring $\mathbb{C}_{\mathrm{spl}}$ of scalars. The four-vector form is thus the standard model of the algebra, and every algebraic operation below is the coordinate reading of an operation of the algebra.</p>
 <h2 id="the-conjugations-in-coordinates">The Conjugations in Coordinates</h2>
 <p>On the column $(Q_t,Q_x,Q_y,Q_z)$ the four conjugations act by:</p>
 <div class="table-scroll"><table>
@@ -200,12 +200,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$</td>
+<td>$\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$</td>
 <td>$Q_x = Q_y = Q_z = 0$</td>
 <td>$q_x,q_y,q_z,q'_x,q'_y,q'_z = 0$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$</td>
+<td>$\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$</td>
 <td>$Q_\mu \in \mathbb{R}$ for all $\mu$</td>
 <td>$q'_\mu = 0$ for all $\mu$</td>
 </tr>
@@ -231,25 +231,25 @@ $$</p>
 $$</p>
 <p>with real part the square of the Euclidean norm and split-imaginary part twice the inner product of the real and split-imaginary coordinate vectors.</p>
 <p><strong>Proof.</strong> Expand each $Q_\mu^2 = (q_\mu + j q'_\mu)^2 = q_\mu^2 + q'^2_\mu + 2j q_\mu q'_\mu$ and sum over $\mu$.</p>
-<p>The real part of the split-biquaternion norm is <strong>positive definite</strong>: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The split-biquaternion norm is therefore <strong>anisotropic</strong> as a quadratic map to $\mathbb{C}^{\mathrm{spl}}$ — there is no nonzero element of norm zero — even though the algebra has many zero divisors, whose split-biquaternion norms are nonzero zero divisors of $\mathbb{C}^{\mathrm{spl}}$.</p>
+<p>The real part of the split-biquaternion norm is <strong>positive definite</strong>: it vanishes only when all eight coordinates vanish, that is only for $\tilde{Q} = 0$. The split-biquaternion norm is therefore <strong>anisotropic</strong> as a quadratic map to $\mathbb{C}_{\mathrm{spl}}$ — there is no nonzero element of norm zero — even though the algebra has many zero divisors, whose split-biquaternion norms are nonzero zero divisors of $\mathbb{C}_{\mathrm{spl}}$.</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
 <p>On the two real parts of the coefficient space the split-biquaternion norm is a genuine positive definite quadratic form:</p>
 <ul>
-<li>on the <strong>real part</strong> $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;</li>
-<li>on the <strong>split-imaginary part</strong> $j\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.</li>
+<li>on the <strong>real part</strong> $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;</li>
+<li>on the <strong>split-imaginary part</strong> $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.</li>
 </ul>
 <p>Both are positive definite; the indefinite form of the algebra is the Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ of signature $(4,4)$, as in <em>Split-Biquaternion Norm and Invertibility</em>.</p>
 <h3 id="the-unit-criterion-in-coordinates">The Unit Criterion in Coordinates</h3>
-<p><strong>Theorem.</strong> A split biquaternion $\tilde{Q}$ is a unit if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}^{\mathrm{spl}}$, that is, if and only if</p>
+<p><strong>Theorem.</strong> A split biquaternion $\tilde{Q}$ is a unit if and only if $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}_{\mathrm{spl}}$, that is, if and only if</p>
 <p>$$
 \boxed{\;
 \sum_\mu (q_\mu + q'_\mu)^2 \neq 0 \quad \text{and} \quad \sum_\mu (q_\mu - q'_\mu)^2 \neq 0
 \;}.
 $$</p>
-<p><strong>Proof.</strong> Under the Peirce decomposition $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.</p>
+<p><strong>Proof.</strong> Under the Peirce decomposition $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \sum_\mu (q_\mu \pm q'_\mu)^2$, the number $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ exactly when both components are nonzero; since each is a sum of squares of reals, this means each is strictly positive.</p>
 <p>The criterion shows directly that the <strong>zero divisors</strong> are the elements whose split-biquaternion norm vanishes in exactly one of the two idempotent components, that is the elements with $\sum_\mu (q_\mu+q'_\mu)^2 = 0$ or $\sum_\mu (q_\mu-q'_\mu)^2 = 0$, which are the two four-dimensional subspaces $Z_\pm$ of <em>Split-Biquaternion Zero Divisors</em>. In the four-vector picture the zero divisors are thus the coefficient quadruples lying in one of the two real four-dimensional subspaces defined by $\sum_\mu(q_\mu\pm q'_\mu)^2 = 0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}^{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}^{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.</p>
+<p>The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,Q_y,Q_z)$ of four split complex coefficients, with the dual row given by quaternion conjugation and the eight real coordinates $(q_\mu,q'_\mu)$ splitting into a real and a split-imaginary part. The product is the quaternion product in components, with the coefficients multiplying in the commutative algebra $\mathbb{C}_{\mathrm{spl}}$, and the basis table is the quaternion table. The four conjugations act by the sign patterns $Q_t \mapsto \pm Q_t$ or $\pm \bar{Q_t}$, negating the vector components for quaternion conjugation, conjugating all coefficients for split complex conjugation, and combining the two for Hermitian and anti-Hermitian conjugation. The four distinguished subspaces are given by coefficient conditions: vanishing vector coefficients for the centre, real coefficients for the quaternion subspace, real scalar and split-imaginary vector components for $\mathbb{M}_+$, and the reverse for $\mathbb{M}_-$. The split-biquaternion norm is $N = \sum_\mu Q_\mu^2$, with positive definite real part $\sum_\mu(q_\mu^2+q'^2_\mu)$ and split-imaginary part $2\sum_\mu q_\mu q'_\mu$, and it is anisotropic: it vanishes only at the origin, so the zero divisors are exactly the elements whose split-biquaternion norm is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, described in coordinates by $\sum_\mu(q_\mu \pm q'_\mu)^2 = 0$ in one idempotent component. The construction is the split complex analogue of the biquaternion four-vector representation, with $\mathbb{C}_{\mathrm{spl}}$ in place of $\mathbb{C}$ and the complexified quadratic form replaced by the split complex norm.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -264,12 +264,12 @@ $$</p>
 <td>Split biquaternion</td>
 </tr>
 <tr>
-<td>$Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}^{\mathrm{spl}}$</td>
+<td>$Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$</td>
 <td>Split complex coefficient</td>
 </tr>
 <tr>
 <td>$(Q_t,Q_x,Q_y,Q_z)$</td>
-<td>Column of coefficients; ${\mathbb{C}^{\mathrm{spl}}}^4 \cong \mathbb{R}^8$</td>
+<td>Column of coefficients; ${\mathbb{C}_{\mathrm{spl}}}^4 \cong \mathbb{R}^8$</td>
 </tr>
 <tr>
 <td>$(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$</td>
@@ -288,7 +288,7 @@ $$</p>
 <td>The four conjugations on the column</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$</td>
+<td>$\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$</td>
 <td>Distinguished subspaces as coefficient conditions</td>
 </tr>
 <tr>

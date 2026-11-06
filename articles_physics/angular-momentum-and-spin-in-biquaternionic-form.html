@@ -80,7 +80,7 @@ $$</p>
 <p>$$
 \mathsf{M}_2(i \vec e_k) = \sigma_k, \qquad \mathsf{M}_2\bigl(c r_t e_t + i \sum_k h_k \vec e_k\bigr) = c r_t I_2 + \sum_k h_k \sigma_k .
 $$</p>
-<p>The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\epsilon_{ijk}L_k^{\mathrm{orb}}$, is the $\hbar=1$ form of the relations below.</p>
+<p>The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_k^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often sets $\hbar=1$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ijk}L_{\mathrm{orb},k}$, is the $\hbar=1$ form of the relations below.</p>
 <h2 id="the-angular-momentum-algebra">The Angular-Momentum Algebra</h2>
 <p>Angular momentum in quantum physics is an abstract algebraic structure, independent of any particular realisation. A set of three Hermitian operators $S_{\mathrm{tot},1},S_{\mathrm{tot},2},S_{\mathrm{tot},3}$ on a complex Hilbert space forms an <strong>angular-momentum algebra</strong> if</p>
 <p>$$
@@ -145,26 +145,26 @@ $$</p>
 $$</p>
 <p>The <strong>vector part</strong> of the quaternionic product has components</p>
 <p>$$
-L_k^{\mathrm{orb}} = -i\hbar\,\epsilon_{klm}\, x_l\,\partial/\partial x_m ,
+L_{\mathrm{orb},k} = -i\hbar\,\epsilon_{klm}\, x_l\,\partial/\partial x_m ,
 $$</p>
 <p>which are exactly the standard orbital angular momentum operators. This is the biquaternion expression of the vector formula $\vec L = \vec r\times\vec p$: the cross product is the vector part of a quaternion product, and only the replacement $\vec p\to -i\hbar\nabla$ is needed. The scalar part, $i\hbar\,\vec r\cdot\nabla$, is the radial (divergence) term and carries no angular information.</p>
-<p>For the algebra of components it is convenient to use the representatives in $\mathbb{M}_+$ that $\mathsf{M}_2$ assigns to each operator. Extending $\mathsf{M}_2$ coefficient-wise to biquaternion-valued operators, the scalar operator $L_k^{\mathrm{orb}}$ corresponds to the central element $L_k^{\mathrm{orb}} e_t$:</p>
+<p>For the algebra of components it is convenient to use the representatives in $\mathbb{M}_+$ that $\mathsf{M}_2$ assigns to each operator. Extending $\mathsf{M}_2$ coefficient-wise to biquaternion-valued operators, the scalar operator $L_{\mathrm{orb},k}$ corresponds to the central element $L_{\mathrm{orb},k} e_t$:</p>
 <p>$$
-\mathsf{M}_2(L_k^{\mathrm{orb}} e_t) = L_k^{\mathrm{orb}} \otimes I_2 .
+\mathsf{M}_2(L_{\mathrm{orb},k} e_t) = L_{\mathrm{orb},k} \otimes I_2 .
 $$</p>
-<p>The element $L_k^{\mathrm{orb}} e_t$ is Hermitian, since $L_k^{\mathrm{orb}}$ is Hermitian and $e_t$ is central, so it plays the role of an observable; on the module it acts as $L_k^{\mathrm{orb}}$, and the same letter serves for both. The orbital operators satisfy</p>
+<p>The element $L_{\mathrm{orb},k} e_t$ is Hermitian, since $L_{\mathrm{orb},k}$ is Hermitian and $e_t$ is central, so it plays the role of an observable; on the module it acts as $L_{\mathrm{orb},k}$, and the same letter serves for both. The orbital operators satisfy</p>
 <p>$$
-[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}] = i\hbar\,\epsilon_{ijk}L_k^{\mathrm{orb}} ,
+[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = i\hbar\,\epsilon_{ijk}L_{\mathrm{orb},k} ,
 $$</p>
 <p>and the representatives inherit the relation because $e_t$ is central.</p>
 <p>In spherical coordinates the operators take their standard forms,</p>
 <p>$$
-L_z^{\mathrm{orb}} = -i\hbar\,\partial/\partial\theta^{\mathrm{azm}}, \qquad
-L^2 = -\hbar^2\!\left[\frac{1}{\sin\theta}\partial/\partial\theta\bigl(\sin\theta\,\partial/\partial\theta\bigr) + \frac{1}{\sin^2\theta}\partial^2/\partial{\theta^{\mathrm{azm}}}^2\right] ,
+L_{\mathrm{orb},z} = -i\hbar\,\partial/\partial\theta_{\mathrm{azm}}, \qquad
+L^2 = -\hbar^2\!\left[\frac{1}{\sin\theta}\partial/\partial\theta\bigl(\sin\theta\,\partial/\partial\theta\bigr) + \frac{1}{\sin^2\theta}\partial^2/\partial{\theta_{\mathrm{azm}}}^2\right] ,
 $$</p>
-<p>with ladder combinations $L_\pm = L_1^{\mathrm{orb}} \pm iL_2^{\mathrm{orb}}$ acting on the spherical harmonics as $L_\pm Y_l^{l_z} = \hbar\sqrt{(l\mp l_z)(l\pm l_z+1)}\,Y_l^{l_z\pm1}$. The spectrum is the standard one,</p>
+<p>with ladder combinations $L_\pm = L_{\mathrm{orb},1} \pm iL_{\mathrm{orb},2}$ acting on the spherical harmonics as $L_\pm Y_l^{l_z} = \hbar\sqrt{(l\mp l_z)(l\pm l_z+1)}\,Y_l^{l_z\pm1}$. The spectrum is the standard one,</p>
 <p>$$
-L^2\,Y_l^{l_z} = \hbar^2\,l(l+1)\,Y_l^{l_z}, \qquad L_z^{\mathrm{orb}}\,Y_l^{l_z} = \hbar\,l_z\,Y_l^{l_z} .
+L^2\,Y_l^{l_z} = \hbar^2\,l(l+1)\,Y_l^{l_z}, \qquad L_{\mathrm{orb},z}\,Y_l^{l_z} = \hbar\,l_z\,Y_l^{l_z} .
 $$</p>
 <p>These are the operators that a position-space treatment of the hydrogen atom requires: the radial equation is coupled to the angular problem only through the eigenvalues $\hbar^2 l(l+1)$ and the spin–orbit term defined in a later section.</p>
 <p>Note the structural asymmetry between orbital and spin angular momentum. The orbital operators act on the argument of the wavefunction, that is on the <strong>external</strong> position variable, and in the biquaternion algebra they occupy the central scalar slot $e_t$. The spin operators, treated next, act on the <strong>internal</strong> quaternionic structure and occupy the vector slots $i\vec e_k$. The biquaternion framework thus makes an algebraic distinction between external and internal degrees of freedom that the standard formalism leaves implicit.</p>
@@ -233,13 +233,13 @@ $$</p>
 <p>a central element of the algebra, and $[\tilde S^2,\tilde S_k]=0$ for all $k$. This is the value $s(s+1)\hbar^2$ with $s=\tfrac12$, obtained here from $(i\vec e_k)^2=+e_t$.</p>
 <p>The orbital and spin operators act on independent structures — the external position argument and the internal quaternionic index — so the mixed commutators vanish:</p>
 <p>$$
-[L_i^{\mathrm{orb}},\tilde{S}_j] = 0 .
+[L_{\mathrm{orb},i},\tilde{S}_j] = 0 .
 $$</p>
 <h2 id="total-angular-momentum-and-spinorbit-coupling">Total Angular Momentum and Spin–Orbit Coupling</h2>
 <p>The <strong>total angular-momentum operator</strong> is the sum of the orbital and spin parts,</p>
 <p>$$
-\tilde S_{\mathrm{tot},k} = L_k^{\mathrm{orb}} e_t + \tilde{S}_k ,
-\qquad \mathsf{M}_2(\tilde S_{\mathrm{tot},k}) = L_k^{\mathrm{orb}}\,I_2 + \tfrac{\hbar}{2}\sigma_k .
+\tilde S_{\mathrm{tot},k} = L_{\mathrm{orb},k} e_t + \tilde{S}_k ,
+\qquad \mathsf{M}_2(\tilde S_{\mathrm{tot},k}) = L_{\mathrm{orb},k}\,I_2 + \tfrac{\hbar}{2}\sigma_k .
 $$</p>
 <p>Because the two parts commute and each satisfies the angular-momentum algebra, so does the sum:</p>
 <p>$$
@@ -248,8 +248,8 @@ $$</p>
 <p>The operator $\tilde S_{\mathrm{tot},k}$ is Hermitian, its orbital part sitting in the scalar slot and its spin part in the vector slot; the expression is the biquaternion form of $\vec S_{\mathrm{tot}} = \vec L + \vec S$ on the tensor product of the orbital and spin state spaces.</p>
 <p>The <strong>spin–orbit operator</strong> is the scalar contraction of the two vector operators,</p>
 <p>$$
-\sum_k (L_k^{\mathrm{orb}} e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,\sum_k L_k^{\mathrm{orb}} \vec e_k,
-\qquad \mathsf{M}_2\bigl(\sum_k (L_k^{\mathrm{orb}} e_t)\tilde{S}_k\bigr) = \tfrac{\hbar}{2}\,\sum_k L_k^{\mathrm{orb}}\sigma_k = L\cdot\vec S.
+\sum_k (L_{\mathrm{orb},k} e_t)\tilde{S}_k = \tfrac{i\hbar}{2}\,\sum_k L_{\mathrm{orb},k} \vec e_k,
+\qquad \mathsf{M}_2\bigl(\sum_k (L_{\mathrm{orb},k} e_t)\tilde{S}_k\bigr) = \tfrac{\hbar}{2}\,\sum_k L_{\mathrm{orb},k}\sigma_k = L\cdot\vec S.
 $$</p>
 <p>Its eigenvalues follow from the Casimir identity $\vec L\cdot\vec S = \tfrac{1}{2}(S_{\mathrm{tot}}^2 - L^2 - S^2)$: on a state of definite $l$ and total $s_{\mathrm{tot}} = l\pm\tfrac12$,</p>
 <p>$$
@@ -261,10 +261,10 @@ $$</p>
 <p>For a general angular momentum the Casimir is $S_{\mathrm{tot}}^2=\sum_k S_{\mathrm{tot},k}^2$, and it is central in the sense that it commutes with every $S_{\mathrm{tot},k}$. In the biquaternion realisation it is</p>
 <p>$$
 \boxed{\;\tilde S_{\mathrm{tot}}^2 = \sum_{k=1}^{3}\tilde S_{\mathrm{tot},k}^2
-= L^2 e_t + \tilde{S}^2 + 2\,\sum_k (L_k^{\mathrm{orb}} e_t)\tilde{S}_k
-= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,\sum_k L_k^{\mathrm{orb}} \vec e_k\;},
+= L^2 e_t + \tilde{S}^2 + 2\,\sum_k (L_{\mathrm{orb},k} e_t)\tilde{S}_k
+= \Bigl(L^2 + \tfrac{3\hbar^2}{4}\Bigr)e_t + i\hbar\,\sum_k L_{\mathrm{orb},k} \vec e_k\;},
 $$</p>
-<p>where the cross terms combine to $2\sum_k L_k^{\mathrm{orb}}\tilde S_k = i\hbar \sum_k L_k^{\mathrm{orb}}\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is <strong>not</strong> a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value</p>
+<p>where the cross terms combine to $2\sum_k L_{\mathrm{orb},k}\tilde S_k = i\hbar \sum_k L_{\mathrm{orb},k}\vec e_k$. Unlike the pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$, the total Casimir is <strong>not</strong> a multiple of $e_t$ when orbital angular momentum is present: it has a vector part proportional to the spin–orbit operator. It is nevertheless central within each irreducible multiplet, where it takes the value</p>
 <p>$$
 \tilde S_{\mathrm{tot}}^2 \;\longrightarrow\; s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2, \qquad s_{\mathrm{tot}} = l\pm\tfrac12 \;\;(l\ge 1), \qquad s_{\mathrm{tot}} = \tfrac12 \;\;(l=0).
 $$</p>
@@ -274,7 +274,7 @@ $$</p>
 <p>$$
 \tilde S_{\mathrm{tot},\pm} = \tilde S_{\mathrm{tot},1} \pm i\tilde S_{\mathrm{tot},2} = L_\pm e_t + \tilde{S}_\pm ,
 $$</p>
-<p>with $L_\pm=L_1^{\mathrm{orb}}\pm iL_2^{\mathrm{orb}}$ and $\tilde S_\pm$ as in the table above. They satisfy</p>
+<p>with $L_\pm=L_{\mathrm{orb},1}\pm iL_{\mathrm{orb},2}$ and $\tilde S_\pm$ as in the table above. They satisfy</p>
 <p>$$
 [\tilde S_{\mathrm{tot},3},\tilde S_{\mathrm{tot},\pm}] = \pm\hbar\,\tilde S_{\mathrm{tot},\pm}, \qquad
 [\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}] = 2\hbar\,\tilde S_{\mathrm{tot},3}, \qquad
@@ -328,7 +328,7 @@ $$</p>
 \tilde{Ϛ} \;\longmapsto\; \tilde u\,\tilde{Ϛ}\,\tilde u^{*} ,
 $$</p>
 <p>which leaves the scalar part fixed and rotates the Bloch vector $\vec r$ by angle $\theta$ about $\vec u$. On the vectors of the material sector, $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the same conjugation rotates the spatial part while preserving the biquaternion norm. Both are the standard rotation of a three-dimensional vector, expressed through the double cover $SU(2)\to SO(3)$.</p>
-<p>The rotor is generated by the total angular momentum. Writing the rotation operator as $\exp(-i\theta\,\vec u_k\tilde S_{\mathrm{tot},k}/\hbar)$ and using $\tilde S_{\mathrm{tot},k} = L_k^{\mathrm{orb}}+\tilde S_k$, the orbital part acts on the position dependence while the spin part acts on the internal index. For the spin alone,</p>
+<p>The rotor is generated by the total angular momentum. Writing the rotation operator as $\exp(-i\theta\,\vec u_k\tilde S_{\mathrm{tot},k}/\hbar)$ and using $\tilde S_{\mathrm{tot},k} = L_{\mathrm{orb},k}+\tilde S_k$, the orbital part acts on the position dependence while the spin part acts on the internal index. For the spin alone,</p>
 <p>$$
 \exp\!\left(-\frac{i\theta}{\hbar}\,\sum_k \vec u_k\tilde{S}_k\right)
 = \exp\!\left(-\frac{i\theta}{\hbar}\cdot\frac{\hbar}{2}\,i\sum_k \vec u_k \vec e_k\right)
@@ -342,7 +342,7 @@ $$</p>
 <p><strong>Standard quantum physics, rewritten.</strong></p>
 <ul>
 <li>The abstract angular-momentum algebra $[S_{\mathrm{tot},i},S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}S_{\mathrm{tot},k}$, its Casimir, its ladder operators, and its representation theory with $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ and $s_{\mathrm{tot},z}\hbar$.</li>
-<li>The orbital angular momentum operator $L_k^{\mathrm{orb}}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$, its spherical-coordinate form, and the spectra $\hbar^2 l(l+1)$ and $\hbar l_z$.</li>
+<li>The orbital angular momentum operator $L_{\mathrm{orb},k}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$, its spherical-coordinate form, and the spectra $\hbar^2 l(l+1)$ and $\hbar l_z$.</li>
 <li>The total operator $\vec S_{\mathrm{tot}}=\vec L+\vec S$, the spin–orbit eigenvalues $\tfrac{\hbar^2}{2}[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34]$, and the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.</li>
 <li>The equivalence of rotor conjugation with the standard rotation operators.</li>
 </ul>
@@ -366,7 +366,7 @@ $$</p>
 <p><strong>6. Empirical content.</strong> The whole construction reproduces standard angular-momentum physics. Any deviation would have to appear in the coupling between the two sectors, for example in a modification of the spin–orbit interaction; none is visible at the level developed here.</p>
 <h2 id="summary">Summary</h2>
 <p>Angular momentum in the biquaternion framework is organised by the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, under which the spin operators $S_k=\tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{M}_+$. The rotation generators lie in the Lie algebra $\mathbb{M}_-$ and, for spatial rotations, in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where they are $-\tfrac12\vec e_k$; their exponentials are the unit real quaternions, which are the group $SU(2)$.</p>
-<p>The orbital angular momentum operator is the vector part of the quaternionic product $\vec r\tilde p$ of position and momentum, with components $L_k^{\mathrm{orb}}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$ and central representatives $L_k^{\mathrm{orb}} e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $\vec e_k^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$; the total Casimir $\tilde S_{\mathrm{tot}}^2$ takes the value $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ on coupled states with $s_{\mathrm{tot}}=l\pm\tfrac12$.</p>
+<p>The orbital angular momentum operator is the vector part of the quaternionic product $\vec r\tilde p$ of position and momentum, with components $L_{\mathrm{orb},k}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$ and central representatives $L_{\mathrm{orb},k} e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $\vec e_k^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$; the total Casimir $\tilde S_{\mathrm{tot}}^2$ takes the value $s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)\hbar^2$ on coupled states with $s_{\mathrm{tot}}=l\pm\tfrac12$.</p>
 <p>The spin ladder operators are nilpotent and null in the biquaternion norm, and hence zero divisors of the algebra. The addition of angular momenta follows the standard Clebsch–Gordan scheme, with the spin factor expressed through the elements $\tilde S_k$; for a spin-1/2 coupled to orbital $l$ the coupled states carry $s_{\mathrm{tot}}=l\pm\tfrac12$, and the spin–orbit operator takes the eigenvalue $+\tfrac{\hbar^2 l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{\hbar^2(l+1)}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$. Rotations are realised by rotor conjugation with unit quaternions, and the rotor $\tilde u(\theta,\vec u)$ is identical to the exponential of the spin angular momentum. The framework thus contains the complete angular-momentum algebra, with the orbital part standard and the spin part algebraic; the operators and their spectra are those that a position-space treatment of the hydrogen atom requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -406,19 +406,19 @@ $$</p>
 <td>Isomorphism with $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$L_k^{\mathrm{orb}}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$</td>
+<td>$L_{\mathrm{orb},k}=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$</td>
 <td>Orbital angular momentum operator</td>
 </tr>
 <tr>
-<td>$L_k^{\mathrm{orb}} e_t$</td>
-<td>Biquaternion representative of $L_k^{\mathrm{orb}}$ (Hermitian)</td>
+<td>$L_{\mathrm{orb},k} e_t$</td>
+<td>Biquaternion representative of $L_{\mathrm{orb},k}$ (Hermitian)</td>
 </tr>
 <tr>
 <td>$\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k$</td>
 <td>Spin operators in $\mathbb{M}_+$, $\mathsf{M}_2(\tilde S_k)=\tfrac{\hbar}{2}\sigma_k$</td>
 </tr>
 <tr>
-<td>$\tilde S_{\mathrm{tot},k}=L_k^{\mathrm{orb}}+\tilde{S}_k$</td>
+<td>$\tilde S_{\mathrm{tot},k}=L_{\mathrm{orb},k}+\tilde{S}_k$</td>
 <td>Total angular momentum</td>
 </tr>
 <tr>

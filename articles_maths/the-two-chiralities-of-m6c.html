@@ -184,22 +184,22 @@ $$</p>
 <h3 id="the-math119-quotient">The $\mathbb{Z}/2$ Quotient</h3>
 <p><strong>Theorem.</strong> The map $\mathbb{Z}/6\to\mathbb{Z}/2$, $r\mapsto r\bmod2$, gives the decomposition</p>
 <p>$$
-M_6(\mathbb{C})=A_{\text{even}}\oplus A^{\mathrm{odd}},
+M_6(\mathbb{C})=A_{\text{even}}\oplus A_{\mathrm{odd}},
 \qquad
 A_{\text{even}}=\bigoplus_{r\text{ even}}A_r,
 \qquad
-A^{\mathrm{odd}}=\bigoplus_{r\text{ odd}}A_r,
+A_{\mathrm{odd}}=\bigoplus_{r\text{ odd}}A_r,
 $$</p>
 <p>with</p>
 <p>$$
-\dim A_{\text{even}}=\dim A^{\mathrm{odd}}=18,
+\dim A_{\text{even}}=\dim A_{\mathrm{odd}}=18,
 \qquad
 A_{\text{even}}A_{\text{even}}\subseteq A_{\text{even}},\quad
-A_{\text{even}}A^{\mathrm{odd}}\subseteq A^{\mathrm{odd}},\quad
-A^{\mathrm{odd}}A^{\mathrm{odd}}\subseteq A_{\text{even}}.
+A_{\text{even}}A_{\mathrm{odd}}\subseteq A_{\mathrm{odd}},\quad
+A_{\mathrm{odd}}A_{\mathrm{odd}}\subseteq A_{\text{even}}.
 $$</p>
 <p><strong>Proof.</strong> The parity of $r+s$ is the sum of the parities. The dimensions are $3\cdot6=18$ each.</p>
-<p><strong>Theorem (the $\mathbb{Z}/2$ grading is the chirality).</strong> Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A^{\mathrm{odd}}$:</p>
+<p><strong>Theorem (the $\mathbb{Z}/2$ grading is the chirality).</strong> Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A_{\mathrm{odd}}$:</p>
 <p>$$
 \Gamma A\Gamma=(-1)^rA
 \qquad
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 A_{\text{even}}=M_3(V_+)\oplus M_3(V_-),
 \qquad
-A^{\mathrm{odd}}=\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-).
+A_{\mathrm{odd}}=\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-).
 $$</p>
 <p><strong>Proof.</strong> $A_{\text{even}}$ consists of the lines $A_{kl}$ with $k-l$ even, that is with $k$ and $l$ of the same parity, that is with both indices in $\{1,3,5\}$ or both in $\{2,4,6\}$. These are the two diagonal chiral blocks. The odd part is the two off-diagonal blocks.</p>
 <p><strong>Corollary (the massless subalgebra).</strong> The massless elements $A_{+-}=A_{-+}=0$ form the subalgebra $A_{\text{even}}\cong M_3\oplus M_3$, of dimension $18$. The mass block and its partner add the remaining $9+9=18$ dimensions.</p>
@@ -286,7 +286,7 @@ $$</p>
 <tr>
 <td>chirality</td>
 <td>$\mathbb{Z}/2$</td>
-<td>$A_{\text{even}},A^{\mathrm{odd}}$</td>
+<td>$A_{\text{even}},A_{\mathrm{odd}}$</td>
 <td>$18,18$</td>
 <td>$\operatorname{Ad}_{H^3}=\operatorname{Ad}_\Gamma$</td>
 </tr>
@@ -428,7 +428,7 @@ $$</p>
 <p>$$
 \boxed{\ \Gamma=H^3,\quad 3+3,\quad \text{mass block }3\times3\text{ of dimension }9 .\ }
 $$</p>
-<p>The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ quotient is the chirality, with pieces $A_{\text{even}}\cong M_3\oplus M_3$ and $A^{\mathrm{odd}}$, of dimensions $18+18$; its $\mathbb{Z}/3$ quotient is the opposite-pair grading, with pieces $B_0\cong M_2\oplus M_2\oplus M_2$, $B_1$, $B_2$, of dimensions $12+12+12$. The two quotients are independent and their common refinement is the full grading.</p>
+<p>The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ quotient is the chirality, with pieces $A_{\text{even}}\cong M_3\oplus M_3$ and $A_{\mathrm{odd}}$, of dimensions $18+18$; its $\mathbb{Z}/3$ quotient is the opposite-pair grading, with pieces $B_0\cong M_2\oplus M_2\oplus M_2$, $B_1$, $B_2$, of dimensions $12+12+12$. The two quotients are independent and their common refinement is the full grading.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -509,7 +509,7 @@ $$</p>
 <td>the $\mathbb{Z}/6$ graded pieces, $\dim A_r=6$</td>
 </tr>
 <tr>
-<td>$A_{\text{even}},A^{\mathrm{odd}}$</td>
+<td>$A_{\text{even}},A_{\mathrm{odd}}$</td>
 <td>the $\mathbb{Z}/2$ pieces, $\dim=18$</td>
 </tr>
 <tr>

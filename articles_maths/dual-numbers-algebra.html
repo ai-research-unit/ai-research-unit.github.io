@@ -72,12 +72,12 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the dual number algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugation.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given, and no applications are discussed. The algebra is defined over an arbitrary commutative ring in which the defining nilpotent is available, and the specializations to specific rings are left for the reader.</p>
-<p>Throughout this article, the algebra of dual numbers is denoted $\mathbb{C}^{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The notation is chosen so that the two do not collide. The unit of $\mathbb{C}^{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<p>Throughout this article, the algebra of dual numbers is denoted $\mathbb{C}_{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}_{\mathrm{spl}}$. The notation is chosen so that the two do not collide. The unit of $\mathbb{C}_{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
 <h2 id="the-dual-numbers">The Dual Numbers</h2>
 <h3 id="definition">Definition</h3>
-<p>Let $R$ be a commutative ring with identity in which $2$ is invertible. The <strong>dual number algebra</strong> $\mathbb{C}^{\mathrm{dln}}_R$ is the quotient ring</p>
+<p>Let $R$ be a commutative ring with identity in which $2$ is invertible. The <strong>dual number algebra</strong> $\mathbb{C}_{\mathrm{dln},R}$ is the quotient ring</p>
 <p>$$
-\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2),
+\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2),
 $$</p>
 <p>equivalently the two-dimensional free $R$-module with basis $1, \varepsilon$ and the single multiplication rule $\varepsilon^2 = 0$. A general dual number is written as</p>
 <p>$$
@@ -91,19 +91,19 @@ $$</p>
 <p>$$
 q = \operatorname{Re} Q, \qquad q' = \operatorname{Inf} Q.
 $$</p>
-<p>The notation $\varepsilon$ is chosen deliberately. In some of the older literature the nilpotent unit is written $i$ or $j$, which collides with the imaginary unit of the complex numbers or with the hyperbolic unit of the split complex numbers; using $\varepsilon$ for the nilpotent unit and reserving $i$ and $j$ for those two cases avoids the collision. The split complex algebra is written $\mathbb{C}^{\mathrm{spl}}$ throughout, so that it does not collide with $\mathbb{C}^{\mathrm{dln}}$. When $R = \mathbb{R}$ we write $\mathbb{C}^{\mathrm{dln}}$ for $\mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$.</p>
+<p>The notation $\varepsilon$ is chosen deliberately. In some of the older literature the nilpotent unit is written $i$ or $j$, which collides with the imaginary unit of the complex numbers or with the hyperbolic unit of the split complex numbers; using $\varepsilon$ for the nilpotent unit and reserving $i$ and $j$ for those two cases avoids the collision. The split complex algebra is written $\mathbb{C}_{\mathrm{spl}}$ throughout, so that it does not collide with $\mathbb{C}_{\mathrm{dln}}$. When $R = \mathbb{R}$ we write $\mathbb{C}_{\mathrm{dln}}$ for $\mathbb{C}_{\mathrm{dln},\mathbb{R}}$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Commutative.</strong> Dual multiplication is commutative, $Q_1 Q_2 = Q_2 Q_1$.</p>
 <p><strong>Associative.</strong> Dual multiplication is associative, $(Q_1 Q_2)u = Q_1(Q_2 u)$.</p>
-<p><strong>Unit and rank.</strong> The identity is $1$, and $\mathbb{C}^{\mathrm{dln}}_R$ is a free $R$-module of rank $2$.</p>
-<p><strong>Not a division algebra.</strong> The element $\varepsilon$ is non-zero and satisfies $\varepsilon^2 = 0$, so $\varepsilon$ is a zero divisor. A division algebra is precisely an algebra in which every non-zero element is invertible, so the non-zero nilpotent $\varepsilon$ shows that $\mathbb{C}^{\mathrm{dln}}_R$ is neither a field nor a division algebra. This is the source of everything that distinguishes it from $\mathbb{C}$.</p>
+<p><strong>Unit and rank.</strong> The identity is $1$, and $\mathbb{C}_{\mathrm{dln},R}$ is a free $R$-module of rank $2$.</p>
+<p><strong>Not a division algebra.</strong> The element $\varepsilon$ is non-zero and satisfies $\varepsilon^2 = 0$, so $\varepsilon$ is a zero divisor. A division algebra is precisely an algebra in which every non-zero element is invertible, so the non-zero nilpotent $\varepsilon$ shows that $\mathbb{C}_{\mathrm{dln},R}$ is neither a field nor a division algebra. This is the source of everything that distinguishes it from $\mathbb{C}$.</p>
 <p><strong>Not semisimple.</strong> The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this non-zero nilpotent ideal makes the algebra not semisimple; the ideal theory is developed in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <p><strong>Frobenius theorem.</strong> The dual algebra is not a finite-dimensional associative real division algebra: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.</p>
 <h3 id="conjugations">Conjugations</h3>
-<p>There are <strong>two</strong> natural conjugations on $\mathbb{C}^{\mathrm{dln}}_R$:</p>
-<p><strong>Dual conjugation</strong> $\bar Q = q - \varepsilon q'$ and <strong>identity conjugation</strong> $\operatorname{id}(Q) = Q$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{C}^{\mathrm{dln}}_R$, described in the next section.</p>
+<p>There are <strong>two</strong> natural conjugations on $\mathbb{C}_{\mathrm{dln},R}$:</p>
+<p><strong>Dual conjugation</strong> $\bar Q = q - \varepsilon q'$ and <strong>identity conjugation</strong> $\operatorname{id}(Q) = Q$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{C}_{\mathrm{dln},R}$, described in the next section.</p>
 <h3 id="the-isomorphism-with-math49">The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$</h3>
-<p>The definition presents the algebra as the quotient ring $\mathbb{C}^{\mathrm{dln}}_R \cong R[\varepsilon]/(\varepsilon^2)$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{C}^{\mathrm{dln}}_k$ has the unique maximal ideal $(\varepsilon)$. Over a general commutative ring the maximal ideals of $\mathbb{C}^{\mathrm{dln}}_R$ correspond to those of $R$, as recorded in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
+<p>The definition presents the algebra as the quotient ring $\mathbb{C}_{\mathrm{dln},R} \cong R[\varepsilon]/(\varepsilon^2)$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{C}_{\mathrm{dln},k}$ has the unique maximal ideal $(\varepsilon)$. Over a general commutative ring the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ correspond to those of $R$, as recorded in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <p><strong>Remark.</strong> For $n \geq 1$ the ring $R[\varepsilon]/(\varepsilon^{n+1})$ is the <strong>truncated polynomial algebra</strong> of order $n$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^{n+1}$; the case $n = 1$ recovers the dual numbers and the case $n = 0$ gives $R$ itself. The higher cases are used in <em>Dual-Numbers Integration</em>.</p>
 <h2 id="the-two-fixed-point-submodules">The Two Fixed-Point Submodules</h2>
 <p>Each of the two conjugations has a fixed-point set. The two submodules are described below.</p>
@@ -121,7 +121,7 @@ $$</p>
 <p>$$
 Q = q, \qquad q \in R.
 $$</p>
-<p>This is the <strong>real submodule</strong> $R_{\mathbb{C}^{\mathrm{dln}}}$, a copy of $R$ embedded in $\mathbb{C}^{\mathrm{dln}}_R$ as the real axis. It is an $R$-module of rank $1$. It is a subalgebra of $\mathbb{C}^{\mathrm{dln}}_R$ (isomorphic to $R$).</p>
+<p>This is the <strong>real submodule</strong> $R_{\mathbb{C}_{\mathrm{dln}}}$, a copy of $R$ embedded in $\mathbb{C}_{\mathrm{dln},R}$ as the real axis. It is an $R$-module of rank $1$. It is a subalgebra of $\mathbb{C}_{\mathrm{dln},R}$ (isomorphic to $R$).</p>
 <p>If $2$ is not invertible in $R$, the fixed-point set is larger, and the theory requires more care. We assume from this point on that $2$ is invertible in $R$.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
 <p>The fixed points of the <strong>identity conjugation</strong> are all dual numbers. In developed form,</p>
@@ -132,10 +132,10 @@ $$</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in R.
 $$</p>
-<p>This is the <strong>dual submodule</strong> $\mathbb{C}^{\mathrm{dln}}_{\mathbb{C}^{\mathrm{dln}}}$, a copy of the dual algebra embedded in itself as the whole thing. It is an $R$-module of rank $2$. It is a subalgebra of $\mathbb{C}^{\mathrm{dln}}_R$.</p>
-<p>The <strong>infinitesimal submodule</strong> $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ is not a fixed-point set of either conjugation; it is the set of dual numbers of the form $\varepsilon q'$ with $q' \in R$. It is the maximal ideal of $\mathbb{C}^{\mathrm{dln}}_R$, and it is nilpotent of index two.</p>
+<p>This is the <strong>dual submodule</strong> $\mathbb{C}_{\mathrm{dln},\mathbb{C}_{\mathrm{dln}}}$, a copy of the dual algebra embedded in itself as the whole thing. It is an $R$-module of rank $2$. It is a subalgebra of $\mathbb{C}_{\mathrm{dln},R}$.</p>
+<p>The <strong>infinitesimal submodule</strong> $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ is not a fixed-point set of either conjugation; it is the set of dual numbers of the form $\varepsilon q'$ with $q' \in R$. It is the maximal ideal of $\mathbb{C}_{\mathrm{dln},R}$, and it is nilpotent of index two.</p>
 <h2 id="dual-decomposition">Dual Decomposition</h2>
-<p>The real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ are the two eigenspaces of dual conjugation. Every dual number decomposes uniquely as the sum of a real part and an infinitesimal part:</p>
+<p>The real submodule $R_{\mathbb{C}_{\mathrm{dln}}}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ are the two eigenspaces of dual conjugation. Every dual number decomposes uniquely as the sum of a real part and an infinitesimal part:</p>
 <p>$$
 Q = q_r + \varepsilon q_i, \qquad q_r \in R, \quad q_i \in R.
 $$</p>
@@ -147,19 +147,19 @@ $$</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \boxed{\;
-\mathbb{C}^{\mathrm{dln}}_R = R_{\mathbb{C}^{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}
+\mathbb{C}_{\mathrm{dln},R} = R_{\mathbb{C}_{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}
 \;},
 $$</p>
-<p>where $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ is the maximal ideal. Both are $R$-modules of rank $1$, and their direct sum is the full algebra $\mathbb{C}^{\mathrm{dln}}_R$ of rank $2$.</p>
+<p>where $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ is the maximal ideal. Both are $R$-modules of rank $1$, and their direct sum is the full algebra $\mathbb{C}_{\mathrm{dln},R}$ of rank $2$.</p>
 <p>This is the <strong>dual decomposition</strong> of a dual number. It expresses $Q$ as a real number plus $\varepsilon$ times another real number.</p>
 <h2 id="conjugate-decomposition">Conjugate Decomposition</h2>
-<p>The dual conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ (eigenvalue $+1$) and the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ (eigenvalue $-1$). Every dual number decomposes uniquely as</p>
+<p>The dual conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real submodule $R_{\mathbb{C}_{\mathrm{dln}}}$ (eigenvalue $+1$) and the infinitesimal submodule $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ (eigenvalue $-1$). Every dual number decomposes uniquely as</p>
 <p>$$
 Q = Q_+ + Q_-, \qquad Q_+ = q_r, \quad Q_- = \varepsilon q_i.
 $$</p>
 <p>This is the same decomposition as above, written in terms of the eigenspaces of the conjugation.</p>
 <h2 id="the-maximal-ideal">The Maximal Ideal</h2>
-<p>The ideal $(\varepsilon)$ of $\mathbb{C}^{\mathrm{dln}}_R$ is</p>
+<p>The ideal $(\varepsilon)$ of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
 <p>$$
 \mathrm{M} = (\varepsilon) = \{\varepsilon q' : q' \in R\}.
 $$</p>
@@ -170,16 +170,16 @@ $$</p>
 <p><strong>Theorem (basic properties of the maximal ideal).</strong></p>
 <ul>
 <li>$\mathrm{M} = (\varepsilon)$ is a nilpotent ideal of index two, and $\mathrm{M}^2 = 0$.</li>
-<li>The quotient $\mathbb{C}^{\mathrm{dln}}_R / \mathrm{M}$ is isomorphic to $R$.</li>
-<li>Over a field $k$, $\mathrm{M}$ is the <strong>unique</strong> maximal ideal of $\mathbb{C}^{\mathrm{dln}}_k$, so $\mathbb{C}^{\mathrm{dln}}_k$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{C}^{\mathrm{dln}}_R$ are the ideals $\mathrm{P} + \mathrm{M} = \mathrm{P} \oplus R\varepsilon$ for $\mathrm{P}$ maximal in $R$; hence $\mathbb{C}^{\mathrm{dln}}_R$ is local if and only if $R$ is local.</li>
+<li>The quotient $\mathbb{C}_{\mathrm{dln},R} / \mathrm{M}$ is isomorphic to $R$.</li>
+<li>Over a field $k$, $\mathrm{M}$ is the <strong>unique</strong> maximal ideal of $\mathbb{C}_{\mathrm{dln},k}$, so $\mathbb{C}_{\mathrm{dln},k}$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ are the ideals $\mathrm{P} + \mathrm{M} = \mathrm{P} \oplus R\varepsilon$ for $\mathrm{P}$ maximal in $R$; hence $\mathbb{C}_{\mathrm{dln},R}$ is local if and only if $R$ is local.</li>
 <li>The element $q + \varepsilon q'$ is invertible if and only if $q \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathrm{M}$ is invertible.</li>
 </ul>
 <p>The maximal ideal is the obstruction to the algebra being a field, and it is the source of the nilpotence in the algebra.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
-<p><strong>Theorem (group of units).</strong> The <strong>group of units</strong> of $\mathbb{C}^{\mathrm{dln}}_R$ is</p>
+<p><strong>Theorem (group of units).</strong> The <strong>group of units</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
 <p>$$
 \boxed{\;
-(\mathbb{C}^{\mathrm{dln}}_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
+(\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}
 \;}.
 $$</p>
 <p>An element is invertible if and only if its real part is invertible in $R$. The inverse is</p>
@@ -192,7 +192,7 @@ $$</p>
 $$</p>
 <p>The group of units is an extension of $R^\times$ by the additive group $R$:</p>
 <p>$$
-1 \to R \to (\mathbb{C}^{\mathrm{dln}}_R)^\times \to R^\times \to 1,
+1 \to R \to (\mathbb{C}_{\mathrm{dln},R})^\times \to R^\times \to 1,
 $$</p>
 <p>where the kernel is the maximal ideal $\mathrm{M} \cong R$ and the quotient is $R^\times$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
@@ -200,12 +200,12 @@ $$</p>
 <p>$$
 [Q_1, Q_2] = Q_1 Q_2 - Q_2 Q_1.
 $$</p>
-<p>Since $\mathbb{C}^{\mathrm{dln}}_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{C}^{\mathrm{dln}}_R$ is trivial. This is the fundamental difference from a non-commutative algebra, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).</p>
-<p>The <strong>Lie algebra of derivations</strong> of $\mathbb{C}^{\mathrm{dln}}_R$ is more interesting. A <strong>derivation</strong> is an $R$-linear map $D : \mathbb{C}^{\mathrm{dln}}_R \to \mathbb{C}^{\mathrm{dln}}_R$ satisfying the Leibniz rule</p>
+<p>Since $\mathbb{C}_{\mathrm{dln},R}$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{C}_{\mathrm{dln},R}$ is trivial. This is the fundamental difference from a non-commutative algebra, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).</p>
+<p>The <strong>Lie algebra of derivations</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is more interesting. A <strong>derivation</strong> is an $R$-linear map $D : \mathbb{C}_{\mathrm{dln},R} \to \mathbb{C}_{\mathrm{dln},R}$ satisfying the Leibniz rule</p>
 <p>$$
 D(Q_1 Q_2) = D(Q_1) Q_2 + Q_1 D(Q_2).
 $$</p>
-<p><strong>Theorem.</strong> Every derivation of $\mathbb{C}^{\mathrm{dln}}_R$ is of the form</p>
+<p><strong>Theorem.</strong> Every derivation of $\mathbb{C}_{\mathrm{dln},R}$ is of the form</p>
 <p>$$
 \boxed{\;
 D(q + \varepsilon q') = c \varepsilon q'
@@ -217,11 +217,11 @@ $$</p>
 D(q + \varepsilon q') = D(q) + D(q') \varepsilon + q' D(\varepsilon) = q' \varepsilon c.
 $$</p>
 <p>So every derivation is of the stated form.</p>
-<p>The module of derivations is isomorphic to $R$, and it is generated by the derivation $\partial^{\mathrm{nil}}$ that sends $q + \varepsilon q'$ to $\varepsilon q'$. This derivation is the algebraic content of the derivative: it sends each element to $\varepsilon$ times its infinitesimal part.</p>
+<p>The module of derivations is isomorphic to $R$, and it is generated by the derivation $\partial_{\mathrm{nil}}$ that sends $q + \varepsilon q'$ to $\varepsilon q'$. This derivation is the algebraic content of the derivative: it sends each element to $\varepsilon$ times its infinitesimal part.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual number algebra $\mathbb{C}^{\mathrm{dln}}_R$ is the two-dimensional free $R$-module with basis $1$, $\varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $Q = q + \varepsilon q'$, with $q$ its real part and $q'$ its infinitesimal part.</p>
-<p>Dual conjugation is the involution sending $q + \varepsilon q'$ to $q - \varepsilon q'$. Its fixed points form the real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.</p>
-<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{C}^{\mathrm{dln}}_R/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{C}^{\mathrm{dln}}_k$ is local; over a general commutative ring the maximal ideals of $\mathbb{C}^{\mathrm{dln}}_R$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $q + \varepsilon q'$ is a unit exactly when its real part $q$ is a unit of $R$, so the group of units is $\{q + \varepsilon q' : q \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
+<p>The dual number algebra $\mathbb{C}_{\mathrm{dln},R}$ is the two-dimensional free $R$-module with basis $1$, $\varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $Q = q + \varepsilon q'$, with $q$ its real part and $q'$ its infinitesimal part.</p>
+<p>Dual conjugation is the involution sending $q + \varepsilon q'$ to $q - \varepsilon q'$. Its fixed points form the real submodule $R_{\mathbb{C}_{\mathrm{dln}}}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.</p>
+<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{C}_{\mathrm{dln},k}$ is local; over a general commutative ring the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $q + \varepsilon q'$ is a unit exactly when its real part $q$ is a unit of $R$, so the group of units is $\{q + \varepsilon q' : q \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -232,11 +232,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dln}}$</td>
+<td>$\mathbb{C}_{\mathrm{dln}}$</td>
 <td>Dual number algebra over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dln}}_R$</td>
+<td>$\mathbb{C}_{\mathrm{dln},R}$</td>
 <td>Dual number algebra over $R$</td>
 </tr>
 <tr>
@@ -249,7 +249,7 @@ $$</p>
 </tr>
 <tr>
 <td>$1$, $\varepsilon$</td>
-<td>The $R$-basis of $\mathbb{C}^{\mathrm{dln}}_R$</td>
+<td>The $R$-basis of $\mathbb{C}_{\mathrm{dln},R}$</td>
 </tr>
 <tr>
 <td>$Q = q + \varepsilon q'$</td>
@@ -272,11 +272,11 @@ $$</p>
 <td>Identity conjugation</td>
 </tr>
 <tr>
-<td>$R_{\mathbb{C}^{\mathrm{dln}}}$</td>
+<td>$R_{\mathbb{C}_{\mathrm{dln}}}$</td>
 <td>Real submodule, fixed-point set of $\bar{\cdot}$</td>
 </tr>
 <tr>
-<td>$\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$</td>
+<td>$\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$</td>
 <td>Infinitesimal submodule, maximal ideal</td>
 </tr>
 <tr>
@@ -284,15 +284,15 @@ $$</p>
 <td>The nilpotent ideal $(\varepsilon)$, $\mathrm{M}^2 = 0$; the unique maximal ideal over a field</td>
 </tr>
 <tr>
-<td>$\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$</td>
-<td>The derivation, $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dln}}_R) \cong R$</td>
+<td>$\partial_{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$</td>
+<td>The derivation, $\operatorname{Der}_R(\mathbb{C}_{\mathrm{dln},R}) \cong R$</td>
 </tr>
 <tr>
 <td>$[Q_1, Q_2] = Q_1 Q_2 - Q_2 Q_1$</td>
 <td>Lie bracket, identically zero</td>
 </tr>
 <tr>
-<td>$(\mathbb{C}^{\mathrm{dln}}_R)^\times = \{q + \varepsilon q' : q \in R^\times\}$</td>
+<td>$(\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}$</td>
 <td>Group of units</td>
 </tr>
 </tbody>

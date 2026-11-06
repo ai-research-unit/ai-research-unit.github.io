@@ -70,20 +70,20 @@
       <div class="article-body">
         <h1 id="spectral-regularity-and-degeneracy-in-the-split-complex-algebra"><strong>Spectral Regularity and Degeneracy in the Split-Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The split-complex algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative, two-dimensional and reduced. For $q=t+bj$ left multiplication has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. Its characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of discriminant $4b^2$. The discriminant is a square: the eigenvalues $t\pm b$ are real and coincide exactly when $b=0$. This article defines the eigenvalue problem, proves the criterion, and separates $\mathbb{C}^{\mathrm{spl}}$ into the spectrally regular case $b\neq0$ and the spectrally degenerate case $b=0$, the real axis. The degenerate case is scalar, every element is semisimple, and no element is defective.</p>
+<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative, two-dimensional and reduced. For $q=t+bj$ left multiplication has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. Its characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of discriminant $4b^2$. The discriminant is a square: the eigenvalues $t\pm b$ are real and coincide exactly when $b=0$. This article defines the eigenvalue problem, proves the criterion, and separates $\mathbb{C}_{\mathrm{spl}}$ into the spectrally regular case $b\neq0$ and the spectrally degenerate case $b=0$, the real axis. The degenerate case is scalar, every element is semisimple, and no element is defective.</p>
 <p><strong>Notation.</strong> An element is $q=t+bj$ with $t,b\in\mathbb{R}$; $t$ is the scalar part and $b$ the split-imaginary part. The conjugation is $\bar q=t-bj$, the <strong>split norm</strong> is $q\bar q=t^2-b^2$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$, with $e_+^2=e_+$, $e_-^2=e_-$, $e_+e_-=0$ and $e_++e_-=1$. The idempotent coordinates of $q$ are $t+b$ and $t-b$:</p>
 <p>$$
 q=(t+b)e_+ +(t-b)e_-.
 $$</p>
 <p>The corpus writes the same element $Q=q+jq'$; its $q$ and $q'$ are the $t$ and $b$ of this article, and its $\Pi_\pm$ are the $e_\pm$. The split norm is indefinite and is not a length.</p>
 <h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
-<p><strong>Definition (eigenvalue).</strong> A real number $\lambda$ is an <strong>eigenvalue</strong> of $q$ if $q-\lambda$ is not a unit of $\mathbb{C}^{\mathrm{spl}}$. The <strong>spectrum</strong> of $q$ is the set</p>
+<p><strong>Definition (eigenvalue).</strong> A real number $\lambda$ is an <strong>eigenvalue</strong> of $q$ if $q-\lambda$ is not a unit of $\mathbb{C}_{\mathrm{spl}}$. The <strong>spectrum</strong> of $q$ is the set</p>
 <p>$$
-\sigma(q)=\{\lambda\in\mathbb{R}:\ q-\lambda\notin{\mathbb{C}^{\mathrm{spl}}}^{\times}\}.
+\sigma(q)=\{\lambda\in\mathbb{R}:\ q-\lambda\notin{\mathbb{C}_{\mathrm{spl}}}^{\times}\}.
 $$</p>
-<p><strong>Definition (eigenvector).</strong> A non-zero $v\in\mathbb{C}^{\mathrm{spl}}$ is an <strong>eigenvector</strong> of $q$ for $\lambda$ if $qv=\lambda v$. The <strong>eigenspace</strong> of $\lambda$ is</p>
+<p><strong>Definition (eigenvector).</strong> A non-zero $v\in\mathbb{C}_{\mathrm{spl}}$ is an <strong>eigenvector</strong> of $q$ for $\lambda$ if $qv=\lambda v$. The <strong>eigenspace</strong> of $\lambda$ is</p>
 <p>$$
-E_\lambda=\{v\in\mathbb{C}^{\mathrm{spl}}:\ qv=\lambda v\}=\ker L_{q-\lambda}.
+E_\lambda=\{v\in\mathbb{C}_{\mathrm{spl}}:\ qv=\lambda v\}=\ker L_{q-\lambda}.
 $$</p>
 <p><strong>Definition (spectral idempotent).</strong> A non-zero idempotent $e$ is a <strong>spectral idempotent</strong> of $q$ if $qe=\lambda e$ for some $\lambda\in\mathbb{R}$.</p>
 <p><strong>Proposition (eigenvalues are eigenvalues of the operator).</strong> For $\lambda\in\mathbb{R}$, the following are equivalent:</p>
@@ -94,7 +94,7 @@ $$</p>
 <li>$L_{q-\lambda}$ is not invertible.</li>
 </ol>
 <p><em>Proof.</em> The algebra is finite-dimensional over a field. If $L_x$ is invertible, then $xy=1$ for some $y$, and commutativity gives $yx=1$, so $x$ is a unit. Conversely a unit gives an invertible $L_x$. Hence $x$ is a non-unit exactly when $L_x$ is not invertible, and for an endomorphism of a finite-dimensional space this is equivalent to a non-zero kernel.</p>
-<p><strong>Definition (eigenbasis).</strong> An <strong>eigenbasis</strong> of $q$ is a basis of $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$ consisting of eigenvectors of $q$.</p>
+<p><strong>Definition (eigenbasis).</strong> An <strong>eigenbasis</strong> of $q$ is a basis of $\mathbb{C}_{\mathrm{spl}}$ over $\mathbb{R}$ consisting of eigenvectors of $q$.</p>
 <p><strong>Definition (spectral decomposition).</strong> A <strong>spectral decomposition</strong> of $q$ is either the one-term writing $q=t\cdot1$ when $q$ is scalar, or a two-term writing</p>
 <p>$$
 q=\lambda_+e_+ +\lambda_-e_-,\qquad \lambda_+\neq\lambda_-,
@@ -142,21 +142,21 @@ $$</p>
 </ol>
 <p><em>Proof.</em> (1)$\iff$(2) by $\sigma(q)=\{t+b,t-b\}$; (2)$\iff$(3) by the formula for the discriminant; (3)$\iff$(4) because the eigenvalues of $L_q$ are the roots of $p_q$; (1)$\iff$(5) because $q$ is scalar exactly when $b=0$.</p>
 <p>For (1)$\iff$(6): if $b\neq0$, the polynomial $(X-t-b)(X-t+b)$ annihilates $q$ and has two distinct roots; a degree-one annihilator would make $q$ a scalar, so the minimal polynomial has degree two. Conversely, a scalar has minimal polynomial $X-t$ of degree one.</p>
-<p><strong>Remark (degenerate is not defective).</strong> For a non-scalar biquaternion the criterion equates regularity with semisimplicity and diagonalisability. In $\mathbb{C}^{\mathrm{spl}}$ those equivalences fail: $L_q$ is diagonalisable for every $q$, because it is a real symmetric matrix, and every element is semisimple. The discriminant decides whether the diagonal form is scalar, not whether a diagonal form exists.</p>
+<p><strong>Remark (degenerate is not defective).</strong> For a non-scalar biquaternion the criterion equates regularity with semisimplicity and diagonalisability. In $\mathbb{C}_{\mathrm{spl}}$ those equivalences fail: $L_q$ is diagonalisable for every $q$, because it is a real symmetric matrix, and every element is semisimple. The discriminant decides whether the diagonal form is scalar, not whether a diagonal form exists.</p>
 <h2 id="eigenspaces-and-the-eigenbasis">Eigenspaces and the Eigenbasis</h2>
 <p><strong>Theorem (the eigenspaces).</strong> Let $b\neq0$. Then</p>
 <p>$$
 E_{t+b}=\mathbb{R}e_+,\qquad E_{t-b}=\mathbb{R}e_-,
 $$</p>
-<p>and $\mathbb{C}^{\mathrm{spl}}=E_{t+b}\oplus E_{t-b}$.</p>
-<p><em>Proof.</em> Since $je_+=e_+$ and $je_-=-e_-$, one has $qe_+=(t+b)e_+$ and $qe_-=(t-b)e_-$. The idempotents $e_+$ and $e_-$ are non-zero and linearly independent, so each displayed eigenspace is the line through the corresponding idempotent. Their dimensions sum to $2$, hence they span $\mathbb{C}^{\mathrm{spl}}$.</p>
+<p>and $\mathbb{C}_{\mathrm{spl}}=E_{t+b}\oplus E_{t-b}$.</p>
+<p><em>Proof.</em> Since $je_+=e_+$ and $je_-=-e_-$, one has $qe_+=(t+b)e_+$ and $qe_-=(t-b)e_-$. The idempotents $e_+$ and $e_-$ are non-zero and linearly independent, so each displayed eigenspace is the line through the corresponding idempotent. Their dimensions sum to $2$, hence they span $\mathbb{C}_{\mathrm{spl}}$.</p>
 <p><strong>Corollary (the eigenbasis).</strong> For $b\neq0$, the pair $(e_+,e_-)$ is an eigenbasis, and</p>
 <p>$$
 P^{-1}L_qP=\operatorname{diag}(t+b,t-b),\qquad P=\begin{pmatrix}\tfrac12&\tfrac12\\[2pt]\tfrac12&-\tfrac12\end{pmatrix},\qquad P^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
 $$</p>
 <p>The eigenbasis is unique up to the order of its two vectors and a non-zero real multiple of each.</p>
 <p><em>Proof.</em> The columns of $P$ are the coordinates of $e_+,e_-$ in the basis $1,j$, and the diagonal form records the two eigenvalues. An eigenvector for $t+b$ lies in the line $E_{t+b}$, and an eigenvector for $t-b$ lies in $E_{t-b}$; a basis must take one vector from each line.</p>
-<p><strong>The scalar case.</strong> If $b=0$, then $q=t$ and $L_q=tI$. The eigenspace $E_t$ is all of $\mathbb{C}^{\mathrm{spl}}$, and every basis is an eigenbasis. Thus an eigenbasis exists for every element of $\mathbb{C}^{\mathrm{spl}}$. The discriminant decides its uniqueness, not its existence.</p>
+<p><strong>The scalar case.</strong> If $b=0$, then $q=t$ and $L_q=tI$. The eigenspace $E_t$ is all of $\mathbb{C}_{\mathrm{spl}}$, and every basis is an eigenbasis. Thus an eigenbasis exists for every element of $\mathbb{C}_{\mathrm{spl}}$. The discriminant decides its uniqueness, not its existence.</p>
 <h2 id="the-scalar-stratum">The Scalar Stratum</h2>
 <p><strong>Proposition (the scalar stratum).</strong> For $q=t+bj$, the following are equivalent: $b=0$; $q=t$; $q$ is a scalar; $\sigma(q)=\{t\}$; the minimal polynomial is $X-t$.</p>
 <p><em>Proof.</em> The first two are the definition of the scalar part, the third is the same statement, and the last two follow from the characteristic polynomial $(X-t)^2$ and the annihilation by $X-t$.</p>
@@ -167,15 +167,15 @@ $$</p>
 <p>has equal coefficients and is a refinement, not a spectral decomposition, which requires distinct eigenvalues. The algebra has exactly four idempotents, $0,1,e_+,e_-$ (solve $(t+bj)^2=t+bj$); hence $\{e_+,e_-\}$ is the only non-trivial complementary pair, and the refinement is unique.</p>
 <h2 id="semisimplicity-and-the-absence-of-a-defective-stratum">Semisimplicity and the Absence of a Defective Stratum</h2>
 <p><strong>Definition (semisimple element).</strong> The <strong>minimal polynomial</strong> $m_q$ is the monic annihilator of $q$ of least degree. An element is <strong>semisimple</strong> if $m_q$ is squarefree, equivalently if the algebra it generates is a product of fields. It is <strong>defective</strong> if it is not semisimple.</p>
-<p><strong>Theorem (every element is semisimple).</strong> Every $q\in\mathbb{C}^{\mathrm{spl}}$ is semisimple, and $\mathbb{C}^{\mathrm{spl}}$ has no defective element.</p>
+<p><strong>Theorem (every element is semisimple).</strong> Every $q\in\mathbb{C}_{\mathrm{spl}}$ is semisimple, and $\mathbb{C}_{\mathrm{spl}}$ has no defective element.</p>
 <p><em>Proof.</em> If $b\neq0$, the minimal polynomial is $(X-t-b)(X-t+b)$, whose roots are distinct. If $b=0$, the minimal polynomial is $X-t$, which is squarefree. In both cases the minimal polynomial is squarefree.</p>
 <p><strong>Corollary (no nilpotents).</strong> The algebra is reduced: $q^2=0$ implies $q=0$.</p>
-<p><em>Proof.</em> In idempotent coordinates $q=ue_++ve_-$, so $q^2=u^2e_++v^2e_-$. This vanishes exactly when $u=v=0$, that is $q=0$. Equivalently, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields.</p>
-<p>In the biquaternion algebra the degenerate cone splits into a scalar stratum and two defective strata; in $\mathbb{C}^{\mathrm{spl}}$ the degenerate locus is scalar and semisimple. Degeneracy here is a coalescence of eigenvalues, not a defect.</p>
+<p><em>Proof.</em> In idempotent coordinates $q=ue_++ve_-$, so $q^2=u^2e_++v^2e_-$. This vanishes exactly when $u=v=0$, that is $q=0$. Equivalently, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields.</p>
+<p>In the biquaternion algebra the degenerate cone splits into a scalar stratum and two defective strata; in $\mathbb{C}_{\mathrm{spl}}$ the degenerate locus is scalar and semisimple. Degeneracy here is a coalescence of eigenvalues, not a defect.</p>
 <h2 id="contrast-with-the-complex-split-quaternion-and-biquaternion-cases">Contrast with the Complex, Split-Quaternion and Biquaternion Cases</h2>
 <p><strong>The complex case.</strong> For $z=t+bi$, $L_z$ has matrix $\begin{pmatrix}t&-b\\b&t\end{pmatrix}$, characteristic polynomial $(X-t)^2+b^2$ and discriminant $-4b^2$, with eigenvalues $t\pm ib$. The criterion is again $b\neq0$, but the eigenvalues leave $\mathbb{R}$ when $b\neq0$; the sign of $j^2$ reverses the discriminant and moves the spectrum to the complex plane.</p>
-<p><strong>The split-quaternion case.</strong> The algebra $\mathbb{H}^{\mathrm{spl}}\cong M_2(\mathbb{R})$ is non-commutative; its spectrum is taken over $\mathbb{C}$, and the discriminant is $-4\langle\vec v\rangle_{\natural}$ for the vector part $\vec v$. The degenerate locus is the cone $\langle\vec v\rangle_{\natural}=0$, where a non-zero null vector part is nilpotent and the element is defective. The locus has real dimension three; the locus in $\mathbb{C}^{\mathrm{spl}}$ is a line.</p>
-<p><strong>The biquaternion case.</strong> The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has characteristic polynomial $X^2-2Q_tX+Q_t^2+B^2$, of discriminant $-4B^2$ and eigenvalues $Q_t\pm iB$. Its degenerate locus is the cone $B^2=0$, split into a scalar stratum and two defective strata. In $\mathbb{C}^{\mathrm{spl}}$ the quadratic condition has one variable, the cone collapses to the line $b=0$, and the defective strata disappear.</p>
+<p><strong>The split-quaternion case.</strong> The algebra $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb{R})$ is non-commutative; its spectrum is taken over $\mathbb{C}$, and the discriminant is $-4\langle\vec v\rangle_{\natural}$ for the vector part $\vec v$. The degenerate locus is the cone $\langle\vec v\rangle_{\natural}=0$, where a non-zero null vector part is nilpotent and the element is defective. The locus has real dimension three; the locus in $\mathbb{C}_{\mathrm{spl}}$ is a line.</p>
+<p><strong>The biquaternion case.</strong> The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has characteristic polynomial $X^2-2Q_tX+Q_t^2+B^2$, of discriminant $-4B^2$ and eigenvalues $Q_t\pm iB$. Its degenerate locus is the cone $B^2=0$, split into a scalar stratum and two defective strata. In $\mathbb{C}_{\mathrm{spl}}$ the quadratic condition has one variable, the cone collapses to the line $b=0$, and the defective strata disappear.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -195,7 +195,7 @@ $$</p>
 <td>none</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>$\mathbb{C}_{\mathrm{spl}}$</td>
 <td>$4b^2$</td>
 <td>$t\pm b$</td>
 <td>real axis</td>
@@ -209,7 +209,7 @@ $$</p>
 <td>every non-scalar</td>
 </tr>
 <tr>
-<td>$\mathbb{H}^{\mathrm{spl}}$</td>
+<td>$\mathbb{H}_{\mathrm{spl}}$</td>
 <td>$-4\langle\vec v\rangle_{\natural}$</td>
 <td>$q_t\pm\sqrt{-\langle\vec v\rangle_{\natural}}$</td>
 <td>the cone $\langle\vec v\rangle_{\natural}=0$</td>
@@ -224,11 +224,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The dual numbers show that a vanishing discriminant can coexist with defect: there the square of the generator is zero, so left multiplication is a Jordan block. In $\mathbb{C}^{\mathrm{spl}}$ the square is one, the algebra splits, and the eigenspaces survive.</p>
+<p>The dual numbers show that a vanishing discriminant can coexist with defect: there the square of the generator is zero, so left multiplication is a Jordan block. In $\mathbb{C}_{\mathrm{spl}}$ the square is one, the algebra splits, and the eigenspaces survive.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-complex algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative and reduced, and $L_q$ has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. The characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of trace $2t$, determinant $q\bar q=t^2-b^2$ and discriminant $4b^2$. The eigenvalues $t\pm b$ are always real and coincide exactly when $b=0$.</p>
+<p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ is commutative and reduced, and $L_q$ has matrix $\begin{pmatrix}t&b\\b&t\end{pmatrix}$ in the basis $1,j$. The characteristic polynomial is $p_q(X)=X^2-2tX+t^2-b^2=(X-t)^2-b^2$, of trace $2t$, determinant $q\bar q=t^2-b^2$ and discriminant $4b^2$. The eigenvalues $t\pm b$ are always real and coincide exactly when $b=0$.</p>
 <p>The spectral criterion is $b\neq0$: the spectrum has two elements exactly when the element is not scalar, the discriminant does not vanish, and the minimal polynomial has degree two. The regular locus is the plane minus the real axis; the degenerate locus is the real axis, and each of its elements is scalar. Every element is semisimple. The eigenbasis is $(e_+,e_-)$ for $b\neq0$, unique up to scaling and order, and every basis for $b=0$. The spectral decomposition is $q=(t+b)e_++(t-b)e_-$ for $b\neq0$ and the one-term writing $q=t\cdot1$ for $b=0$.</p>
-<p>The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathbb{R}$ when $b\neq0$; in $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$ the degenerate locus is a cone with defective strata; in $\mathbb{C}^{\mathrm{spl}}$ it is the real axis, and its elements are scalars. The two conditions are compared in <em>Relations between the Split Norm and Spectral Regularity and Degeneracy</em>, and their four combinations are the subject of <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
+<p>The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathbb{R}$ when $b\neq0$; in $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ the degenerate locus is a cone with defective strata; in $\mathbb{C}_{\mathrm{spl}}$ it is the real axis, and its elements are scalars. The two conditions are compared in <em>Relations between the Split Norm and Spectral Regularity and Degeneracy</em>, and their four combinations are the subject of <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -239,7 +239,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$</td>
+<td>$\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$</td>
 <td>the split-complex algebra</td>
 </tr>
 <tr>

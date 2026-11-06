@@ -345,10 +345,10 @@ $$</p>
 <p>$$
 \mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)=\tfrac{1}{2}\bigl(1+\lvert\vec r\rvert^{2}\bigr)=2P,
 \qquad
-S^{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
+S_{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
 =\tfrac{1}{2}\bigl(1-\lvert\vec r\rvert^{2}\bigr)=2I .
 $$</p>
-<p>The gap is therefore $P-I=\tfrac{1}{2}-S^{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S^{\mathrm{lin}}$. The pure state has $S^{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S^{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.</p>
+<p>The gap is therefore $P-I=\tfrac{1}{2}-S_{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S_{\mathrm{lin}}$. The pure state has $S_{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S_{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.</p>
 <p><strong>The interpretation.</strong> The probability norm is definite on the algebra; the interval is indefinite there and non-negative on the state slice. On a state their difference is the purity gap, an affine image of the trace purity; the half-difference is the information content, maximal for the pure states and vanishing at the maximally mixed element.</p>
 <p><strong>The boundary.</strong> The gap is a purity gap only on the trace-one positive slice; off it the two norms are not normalised to the same trace and the difference is not a purity. The identification with information content is the interpretation, and no entropy production, rate or dynamics is supplied.</p>
 <h2 id="the-square-is-the-minimal-arrow">The Square Is the Minimal Arrow</h2>
@@ -419,17 +419,17 @@ $$</p>
 <p><strong>The boundary.</strong> The Born rule is not derived from the square. The square is the minimal algebraic crossing, and the reading calls it the arrow; the trace formula remains the rule, and the identification of the crossing with the physical step from a process to a probability is the interpretation.</p>
 <h2 id="the-argument-is-the-geometric-phase">The Argument Is the Geometric Phase</h2>
 <h3 id="the-amplitude-and-its-two-parts">The Amplitude and Its Two Parts</h3>
-<p>Let $\tilde{Ξ}^{\mathrm{sp}}_1$ and $\tilde{Ξ}^{\mathrm{sp}}_2$ be two spinors of the module, and let the amplitude be the band's pairing,</p>
+<p>Let $\tilde{Ξ}_{\mathrm{sp},1}$ and $\tilde{Ξ}_{\mathrm{sp},2}$ be two spinors of the module, and let the amplitude be the band's pairing,</p>
 <p>$$
-A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
-=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}}_1\tilde{Ξ}^{\mathrm{sp}*}_2\bigr).
+A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
+=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}^*\bigr).
 $$</p>
 <p>The squared modulus is the probability of the transition, and the argument is the phase. The amplitude is a complex number; the phase is its argument, and the axis about which it turns is a property of the two rays, not of the amplitude.</p>
 <p>Under a central phase on each spinor,</p>
 <p>$$
-\tilde{Ξ}^{\mathrm{sp}}_1\mapsto e^{i\alpha_1}\tilde{Ξ}^{\mathrm{sp}}_1,
+\tilde{Ξ}_{\mathrm{sp},1}\mapsto e^{i\alpha_1}\tilde{Ξ}_{\mathrm{sp},1},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_2\mapsto e^{i\alpha_2}\tilde{Ξ}^{\mathrm{sp}}_2,
+\tilde{Ξ}_{\mathrm{sp},2}\mapsto e^{i\alpha_2}\tilde{Ξ}_{\mathrm{sp},2},
 $$</p>
 <p>the amplitude transforms as</p>
 <p>$$
@@ -446,11 +446,11 @@ $$</p>
 <p>For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta$ is the angle between the two Bloch vectors, twice the angle between the rays. The argument is the phase about the axis, and the half-angle is the double cover: a rotation of the ray by $2\pi$ returns the spinor to minus itself.</p>
 <p><strong>The interpretation.</strong> The argument of the amplitude is the local phase of the pair, and the axis of the pair is the axis of the rotation carrying one ray to the other. The pair's phase is not the geometric phase: it is gauge dependent. The geometric phase is the gauge-invariant part, and it lives on a closed circuit.</p>
 <h3 id="the-loop-is-the-gauge-invariant-phase">The Loop Is the Gauge-Invariant Phase</h3>
-<p>Take a closed sequence of states $\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2,\dots,\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1$ and the product of the overlaps around the loop,</p>
+<p>Take a closed sequence of states $\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2},\dots,\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}$ and the product of the overlaps around the loop,</p>
 <p>$$
-\Gamma=\arg\Bigl(\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
-\langle\tilde{Ξ}^{\mathrm{sp}}_2,\tilde{Ξ}^{\mathrm{sp}}_3\rangle_{*}\cdots
-\langle\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1\rangle_{*}\Bigr).
+\Gamma=\arg\Bigl(\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
+\langle\tilde{Ξ}_{\mathrm{sp},2},\tilde{Ξ}_{\mathrm{sp},3}\rangle_{*}\cdots
+\langle\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}\rangle_{*}\Bigr).
 $$</p>
 <p>Under a change of representative the factors shift by the telescoping phases $\alpha_{k}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:</p>
 <p>$$
@@ -531,7 +531,7 @@ $$</p>
 <td>the probability norm and the interval norm on the state slice</td>
 </tr>
 <tr>
-<td>$A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}$</td>
+<td>$A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}$</td>
 <td>the amplitude</td>
 </tr>
 <tr>

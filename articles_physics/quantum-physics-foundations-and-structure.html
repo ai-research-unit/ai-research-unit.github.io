@@ -111,9 +111,9 @@ $$</p>
 <h3 id="pure-states">Pure States</h3>
 <p>A <strong>pure state</strong> is a state that cannot be written as a nontrivial convex combination of two other states. In the density matrix formalism, pure states are rank-one projectors:</p>
 <p>$$
-\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|,
 $$</p>
-<p>where $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).</p>
+<p>where $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).</p>
 <p>Pure states satisfy</p>
 <p>$$
 \rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}},
@@ -170,7 +170,7 @@ $$</p>
 <h3 id="states-of-a-qubit">States of a Qubit</h3>
 <p>A <strong>pure state</strong> of a qubit is a unit vector</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
+|\tilde{Ξ}_{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
 $$</p>
 <p>where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.</p>
 <p>A <strong>mixed state</strong> of a qubit is a density matrix</p>
@@ -214,23 +214,23 @@ $$</p>
 <h3 id="the-born-rule-for-a-qubit">The Born Rule for a Qubit</h3>
 <p>For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities</p>
 <p>$$
-p_\pm = \frac{1}{2}\left(1 \pm a^{\mathrm{fop}}\cdot\vec r\right),
+p_\pm = \frac{1}{2}\left(1 \pm a_{\mathrm{fop}}\cdot\vec r\right),
 $$</p>
-<p>where $a^{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a^{\mathrm{fop}}$ and the Bloch vector $\vec r$.</p>
+<p>where $a_{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a_{\mathrm{fop}}$ and the Bloch vector $\vec r$.</p>
 <p>After the measurement with outcome $+$, the state collapses to the pure state</p>
 <p>$$
-\rho_2 = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
+\rho_2 = \frac{1}{2}\left(I + a_{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
 $$</p>
-<p>i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.</p>
+<p>i.e., the Bloch vector becomes $a_{\mathrm{fop}}$.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
-<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
+<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
 <p>$$
-\boxed{\;i\hbar\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle\;},
+\boxed{\;i\hbar\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\;},
 $$</p>
 <p>where $H$ is the Hamiltonian. The solution is</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}^{\mathrm{sp}}(r'_{t,0})\rangle,
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}_{\mathrm{sp}}(r'_{t,0})\rangle,
 $$</p>
 <p>with $U(r'_t, r'_{t,0}) = \exp\left(-\tfrac{i}{\hbar}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.</p>
 <p>For a density matrix $\rho(r'_t)$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
@@ -294,7 +294,7 @@ $$</p>
 <p>A <strong>pure</strong> state that is <strong>not</strong> a product state is called <strong>entangled</strong>. For mixed states the criterion is different: a state is <strong>separable</strong> if it can be written as a convex combination of product states, and <strong>entangled</strong> otherwise. Entanglement is the quantum correlation between the two subsystems that cannot be explained by any classical correlation.</p>
 <p>The canonical examples of entangled states are the <strong>Bell states</strong> of two qubits:</p>
 <p>$$
-|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{sp}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
 $$</p>
 <p>These are maximally entangled states. They violate Bell inequalities, and they cannot be written as a convex combination of product states.</p>
 <h3 id="reduced-states-and-the-partial-trace">Reduced States and the Partial Trace</h3>
@@ -349,7 +349,7 @@ $$</p>
 <td>Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$</td>
 </tr>
 <tr>
-<td>$\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}\rvert$</td>
+<td>$\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}\rvert$</td>
 <td>Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$)</td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ $$</p>
 <td>Reduced Planck constant</td>
 </tr>
 <tr>
-<td>$\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$</td>
+<td>$\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$</td>
 <td>Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$</td>
 </tr>
 <tr>
@@ -421,7 +421,7 @@ $$</p>
 <td>Reduced state of subsystem $A$</td>
 </tr>
 <tr>
-<td>$\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{sp}\pm}\rangle$</td>
+<td>$\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle$</td>
 <td>Bell states of two qubits</td>
 </tr>
 </tbody>

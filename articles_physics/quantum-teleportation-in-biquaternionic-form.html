@@ -156,7 +156,7 @@ $$</p>
 <p><strong>The measurement.</strong> Alice measures the pair $(1,2)$ in the Bell basis, that is, she measures the four projectors</p>
 <p>$$
 \tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t^{(3)},
-\qquad \epsilon\in\{Ξ^{+},Ξ^{-},\tilde{Ξ}^{\mathrm{sp}+},\tilde{Ξ}^{\mathrm{sp}-}\} ,
+\qquad \epsilon\in\{Ξ^{+},Ξ^{-},\tilde{Ξ}_{\mathrm{sp}}^+,\tilde{Ξ}_{\mathrm{sp}}^-\} ,
 $$</p>
 <p>where $\tilde\Pi_\epsilon$ is the Bell idempotent on factors $(1,2)$ and $e_t$ acts as the identity on Bob's qubit. The four projectors inherit from the Bell idempotent basis the four properties that make them a projective measurement:</p>
 <p>$$
@@ -178,29 +178,29 @@ $$</p>
 <h2 id="the-teleportation-identity">The Teleportation Identity</h2>
 <h3 id="the-bell-decomposition-of-the-resource">The Bell decomposition of the resource</h3>
 <p>The whole protocol rests on one algebraic fact, which says how the shared resource factors when the unknown qubit is grouped with Alice's half of the pair.</p>
-<p><strong>Lemma (Bell decomposition).</strong> Let $|\tilde{Ξ}^{\mathrm{sp}}\rangle_1$ be any single-qubit vector and let $|Ξ^{+}\rangle_{23}$ be the shared pair. Then</p>
+<p><strong>Lemma (Bell decomposition).</strong> Let $|\tilde{Ξ}_{\mathrm{sp}}\rangle_1$ be any single-qubit vector and let $|Ξ^{+}\rangle_{23}$ be the shared pair. Then</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
-=\tfrac12\Bigl[\,|Ξ^{+}\rangle_{12}|\tilde{Ξ}^{\mathrm{sp}}\rangle_3
-+|Ξ^{-}\rangle_{12}\,Z|\tilde{Ξ}^{\mathrm{sp}}\rangle_3
-+|\tilde{Ξ}^{\mathrm{sp}+}\rangle_{12}\,X|\tilde{Ξ}^{\mathrm{sp}}\rangle_3
-+|\tilde{Ξ}^{\mathrm{sp}-}\rangle_{12}\,(XZ)|\tilde{Ξ}^{\mathrm{sp}}\rangle_3\,\Bigr] .
+|\tilde{Ξ}_{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
+=\tfrac12\Bigl[\,|Ξ^{+}\rangle_{12}|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
++|Ξ^{-}\rangle_{12}\,Z|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
++|\tilde{Ξ}_{\mathrm{sp}}^+\rangle_{12}\,X|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
++|\tilde{Ξ}_{\mathrm{sp}}^-\rangle_{12}\,(XZ)|\tilde{Ξ}_{\mathrm{sp}}\rangle_3\,\Bigr] .
 $$</p>
-<p><em>Proof.</em> Write $|\tilde{Ξ}^{\mathrm{sp}}\rangle=\alpha|0\rangle+\beta|1\rangle$ and expand the left-hand side in the computational basis:</p>
+<p><em>Proof.</em> Write $|\tilde{Ξ}_{\mathrm{sp}}\rangle=\alpha|0\rangle+\beta|1\rangle$ and expand the left-hand side in the computational basis:</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
+|\tilde{Ξ}_{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
 =\tfrac{1}{\sqrt2}\Bigl(\alpha|000\rangle+\alpha|011\rangle+\beta|100\rangle+\beta|111\rangle\Bigr).
 $$</p>
 <p>Grouping the first two tensor slots and projecting onto the four Bell vectors of the pair $(1,2)$ gives the four coefficients</p>
 <p>$$
-|Ξ^{+}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle+\beta|1\rangle\right)=\tfrac12|\tilde{Ξ}^{\mathrm{sp}}\rangle_3,
+|Ξ^{+}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle+\beta|1\rangle\right)=\tfrac12|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
 \qquad
-|Ξ^{-}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle-\beta|1\rangle\right)=\tfrac12 Z|\tilde{Ξ}^{\mathrm{sp}}\rangle_3,
+|Ξ^{-}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle-\beta|1\rangle\right)=\tfrac12 Z|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
 $$</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}+}\rangle_{12}:\ \tfrac12\left(\beta|0\rangle+\alpha|1\rangle\right)=\tfrac12 X|\tilde{Ξ}^{\mathrm{sp}}\rangle_3,
+|\tilde{Ξ}_{\mathrm{sp}}^+\rangle_{12}:\ \tfrac12\left(\beta|0\rangle+\alpha|1\rangle\right)=\tfrac12 X|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
 \qquad
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle_{12}:\ \tfrac12\left(\alpha|1\rangle-\beta|0\rangle\right)=\tfrac12 (XZ)|\tilde{Ξ}^{\mathrm{sp}}\rangle_3 .
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle_{12}:\ \tfrac12\left(\alpha|1\rangle-\beta|0\rangle\right)=\tfrac12 (XZ)|\tilde{Ξ}_{\mathrm{sp}}\rangle_3 .
 $$</p>
 <p>Collecting the four terms gives the stated identity.</p>
 <p>The four operators appearing on the right are the Pauli gates $I,X,Z,XZ$, and in biquaternion representatives (companion article on gates and circuits) they are</p>
@@ -292,7 +292,7 @@ $$</p>
 \tilde U_{(s_1,s_3)}=(i\vec e_z)^{(1-s_1)/2}\,(i\vec e_x)^{(1-s_3)/2},
 $$</p>
 <p>that is, $i\vec e_z$ if the $S_1$ outcome is $-1$ and $i\vec e_x$ if the $S_3$ outcome is $-1$; when both are $-1$ the product is $\tilde Q_z\tilde Q_x=-\tilde Q_x\tilde Q_z\sim\tilde Q_y$, the fourth Pauli. The four corrections are precisely the Pauli gates modulo phase; they lie in the Pauli group, hence in the Clifford group, of the companion article on gates and circuits. The protocol consumes only these four gates and a Bell-basis measurement.</p>
-<p>Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\tilde{Ξ}^{\mathrm{sp}-}\rangle$, and $XZ=-i\sigma_y$ is <em>not</em> the element $\tilde Q_y=i\vec e_y$ but differs from it by the central phase $-i$. As a <strong>gate</strong> the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $Ξ$ and $\tilde{Ξ}^{\mathrm{sp}}$ outcomes: the $Ξ^{+}$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.</p>
+<p>Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$, and $XZ=-i\sigma_y$ is <em>not</em> the element $\tilde Q_y=i\vec e_y$ but differs from it by the central phase $-i$. As a <strong>gate</strong> the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $Ξ$ and $\tilde{Ξ}_{\mathrm{sp}}$ outcomes: the $Ξ^{+}$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.</p>
 <p><strong>A general Bell resource.</strong> The choice $\tilde\Pi_{Ξ^+}$ is a convention; any resource of the form $(e_t\otimes\tilde{V})\tilde\Pi_{Ξ^+}(e_t\otimes\tilde{V}^{*})$ with $\tilde{V}$ a single-qubit $*$-unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde{V}\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*}\tilde{V}^{*}$, so that the correction is $\tilde Q_\epsilon^{*}\tilde{V}^{*}$. For $\tilde{V}=\tilde Q_x$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{Ϛ}_{\mathrm{sp}}$. The general statement is the standard local-$*$-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.</p>
 <h2 id="no-signalling-and-why-there-is-no-copy">No-Signalling, and Why There Is No Copy</h2>
 <p>Before the classical record reaches Bob, his qubit carries no information about $\tilde{Ϛ}_{\mathrm{sp}}$. Write $\text{post}_\epsilon=\tilde\Pi_\epsilon^{(12)}\otimes(\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*})^{(3)}$ for the normalised post-measurement state on the branch $\epsilon$, so that $\mathrm{Tr}_{12}[\text{post}_\epsilon]=\tilde Q_\epsilon\tilde{Ϛ}_{\mathrm{sp}}\tilde Q_\epsilon^{*}$. Averaging these over the outcomes, with their probabilities $p_\epsilon=\tfrac14$ and <em>without</em> any correction,</p>

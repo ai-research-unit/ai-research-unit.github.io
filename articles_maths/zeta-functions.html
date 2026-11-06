@@ -107,17 +107,17 @@ $$
 where $\gamma$ is Euler's constant. The continuation is unique.</p>
 <p><strong>Proof sketch.</strong> The integral representation, split at $x=1$, gives $\Gamma(s)\zeta(s) = \int_1^\infty\frac{x^{s-1}}{\exp(x)-1}dx + \int_0^1 x^{s-2}\cdot\frac{x}{\exp(x)-1}dx$; the second integrand extends to a holomorphic function of $s$ on a neighbourhood of $\Re s>1$ minus $s=1$ with a simple pole of residue $1$ and is continued by expanding $x/(\exp(x)-1)$ in powers of $x$ and integrating term by term, the resulting series converging for $s$ off the nonpositive integers. Dividing by $\Gamma(s)$ and continuing meromorphically gives the statement.</p>
 <h3 id="the-functional-equation">The Functional Equation</h3>
-<p><strong>Definition.</strong> The <strong>theta function</strong> is $\vartheta^{\mathrm{thf}}(t) = \sum_{n\in\mathbb{Z}} \exp(-\pi n^2 t)$ for $t>0$, and the <strong>completed zeta function</strong> is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.</p>
-<p><strong>Theorem (Jacobi's functional equation for theta).</strong> For $t > 0$, $\vartheta^{\mathrm{thf}}(1/t) = \sqrt{t}\,\vartheta^{\mathrm{thf}}(t)$.</p>
+<p><strong>Definition.</strong> The <strong>theta function</strong> is $\vartheta_{\mathrm{thf}}(t) = \sum_{n\in\mathbb{Z}} \exp(-\pi n^2 t)$ for $t>0$, and the <strong>completed zeta function</strong> is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.</p>
+<p><strong>Theorem (Jacobi's functional equation for theta).</strong> For $t > 0$, $\vartheta_{\mathrm{thf}}(1/t) = \sqrt{t}\,\vartheta_{\mathrm{thf}}(t)$.</p>
 <p><strong>Proof sketch.</strong> Both sides are the value at $0$ of the periodisation of the Gaussian $\exp(-\pi t x^2)$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $\exp(-\pi t x^2)$ has Fourier transform $t^{-1/2}\exp(-\pi \zeta^2/t)$.</p>
 <p><strong>Theorem (functional equation of the zeta function).</strong> For all $s \in \mathbb{C}$,
 $$
 \boxed{\;\Lambda(s) = \Lambda(1-s), \qquad\text{equivalently}\qquad \zeta(s) = 2^s\pi^{s-1}\sin\Bigl(\frac{\pi s}{2}\Bigr)\Gamma(1-s)\,\zeta(1-s)\;}.
 $$
 Moreover $\zeta(1-s)$ on the right is the analytic continuation, so the formula continues $\omega$ to the whole plane and exhibits the trivial zeros.</p>
-<p><strong>Proof sketch.</strong> The Mellin transform of $(\vartheta^{\mathrm{thf}}(t)-1)/2$ is $\Lambda(s)$ for $\sigma>1$:
+<p><strong>Proof sketch.</strong> The Mellin transform of $(\vartheta_{\mathrm{thf}}(t)-1)/2$ is $\Lambda(s)$ for $\sigma>1$:
 $$
-\Lambda(s) = \int_0^\infty \frac{\vartheta^{\mathrm{thf}}(t)-1}{2}\, t^{s/2}\,\frac{dt}{t} .
+\Lambda(s) = \int_0^\infty \frac{\vartheta_{\mathrm{thf}}(t)-1}{2}\, t^{s/2}\,\frac{dt}{t} .
 $$
 Splitting the integral at $t=1$ and substituting $t\mapsto1/t$ in the part over $(0,1)$, the theta functional equation turns that part into the same expression with $s$ replaced by $1-s$, giving the invariance. The asymmetric form follows by substituting the reflection and duplication formulas for the Gamma function.</p>
 <p><strong>Corollary (the trivial zeros and the pole).</strong> $\omega$ has no zeros in $\Re s > 1$; it has simple zeros at the negative even integers $s = -2,-4,-6,\dots$; its only pole is the simple pole at $s=1$; and all its remaining zeros lie in the <strong>critical strip</strong> $0 \leq \Re s \leq 1$.</p>
@@ -174,7 +174,7 @@ where $X_p$ is the reduction of $X$ modulo $p$ and $\omega_{X_p}$ is the zeta fu
 <p>The rationality of the local factor is the first of the Weil conjectures; the functional equation, the Riemann hypothesis for the local factor and the global theory of the Hasse–Weil zeta function belong to the arithmetic geometry of Part I, and are cited rather than developed here. What this article supplies is the analytic theory of the two zeta functions of number theory, the Riemann and the Dedekind, together with the general Dirichlet series framework in which their properties are stated.</p>
 <h2 id="summary">Summary</h2>
 <p>A Dirichlet series $\sum a_nn^{-s}$ has an abscissa of convergence $\sigma_c$ and an abscissa of absolute convergence $\sigma_a$ with $\sigma_c\le\sigma_a\le\sigma_c+1$, it is holomorphic on the half-plane $\Re s>\sigma_c$, and a series with nonnegative coefficients has a singularity at its abscissa of convergence, by Landau's theorem. A series with multiplicative coefficients has an Euler product, which is the mechanism that puts the primes into the analytic function.</p>
-<p>The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta^{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta^{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\omega = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of <em>Adelic Analysis</em>. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.</p>
+<p>The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta_{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta_{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\omega = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of <em>Adelic Analysis</em>. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -201,7 +201,7 @@ where $X_p$ is the reduction of $X$ modulo $p$ and $\omega_{X_p}$ is the zeta fu
 <td>Completed zeta, $\pi^{-s/2}\Gamma(s/2)\zeta(s)$</td>
 </tr>
 <tr>
-<td>$\vartheta^{\mathrm{thf}}(t)$</td>
+<td>$\vartheta_{\mathrm{thf}}(t)$</td>
 <td>Theta function, $\sum_{n\in\mathbb{Z}}\exp(-\pi n^2t)$</td>
 </tr>
 <tr>

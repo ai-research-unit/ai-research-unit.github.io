@@ -88,7 +88,7 @@ S_1\tilde\Pi_\epsilon = -\epsilon_1\tilde\Pi_\epsilon, \qquad S_3\tilde\Pi_\epsi
 $$</p>
 <p>The four idempotents correspond to the four Bell states</p>
 <p>$$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}^{\mathrm{sp}+}\rangle
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}_{\mathrm{sp}}^+\rangle
 $$</p>
 <p>according to the sign pattern $\epsilon$; the companion article fixes the correspondence. The resource shared by Alice and Bob is one of these, conventionally $\tilde\Pi_{Ξ^+}$.</p>
 <h3 id="the-resource-as-an-element-of-the-algebra">The resource as an element of the algebra</h3>
@@ -194,7 +194,7 @@ $$</p>
 <p>The capacity formula is standard (the Bennett–Shor–Smolin–Thapliyal formula and the superdense coding theorem of Bennett and Wiesner). The framework transcribes the protocol; it does not change the numbers.</p>
 <h2 id="explicit-verification">Explicit Verification</h2>
 <p>All the algebraic claims above were verified by direct computation in the tensor-product algebra.</p>
-<p><strong>The four encoded states.</strong> Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}^{\mathrm{sp}+}\rangle$, $\vec e_y\to|\tilde{Ξ}^{\mathrm{sp}-}\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.</p>
+<p><strong>The four encoded states.</strong> Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}_{\mathrm{sp}}^+\rangle$, $\vec e_y\to|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.</p>
 <p><strong>Orthogonality.</strong> The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon,\epsilon_{\mathrm{alt}}}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.</p>
 <p><strong>The spectrum and the marginal.</strong> Each encoded state has the spectrum of an idempotent, $(1,0,0,0)$, and partial trace $\tfrac12 e_t$ on both factors, confirming that the encoding preserves purity and maximal entanglement and that no local measurement can read the message.</p>
 <p><strong>The capacity arithmetic.</strong> The encoding set has four elements, so the message is $\log_2 4 = 2$ bits, while a single qubit without entanglement is bounded by $\log_2 2 = 1$ bit; the doubling is the algebraic statement that the four codewords are orthogonal vectors in a four-dimensional module rather than in a two-dimensional one.</p>

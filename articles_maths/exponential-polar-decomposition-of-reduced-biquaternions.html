@@ -73,15 +73,15 @@
 <p>This article treats the <strong>exponential polar decomposition</strong> of an invertible reduced biquaternion: the writing</p>
 <p>$$
 \breve Q=\exp(\breve Q_{\log})
-=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)\exp(i\alpha)\exp(ij\beta),
+=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\alpha)\exp(ij\beta),
 \qquad
-\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta,
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
 $$</p>
-<p>with $\rho>0$ the radius, $\theta^{\mathrm{rpd}}$ the boost, $\alpha,\beta$ the two phases, and $\ln\rho$ the logarithmic scale. Equivalently,</p>
+<p>with $\rho>0$ the radius, $\theta_{\mathrm{rpd}}$ the boost, $\alpha,\beta$ the two phases, and $\ln\rho$ the logarithmic scale. Equivalently,</p>
 <p>$$
 \breve Q=\breve r\,u,
 \qquad
-\breve r=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr),
+\breve r=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
 \quad
 u=\exp(i\alpha)\exp(ij\beta),
 $$</p>
@@ -93,7 +93,7 @@ C_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
 \qquad
 C_-=Q_{\blacktriangle}-Q_{\blacktriangledown},
 $$</p>
-<p>which are a complex-linear change of coordinates on the element. The decomposition is componentwise: the scalar factor $\rho e^{i\alpha}$ multiplies both components, and the split factor $\theta^{\mathrm{rpd}}+i\beta$ enters with opposite signs. This is the form used throughout.</p>
+<p>which are a complex-linear change of coordinates on the element. The decomposition is componentwise: the scalar factor $\rho e^{i\alpha}$ multiplies both components, and the split factor $\theta_{\mathrm{rpd}}+i\beta$ enters with opposite signs. This is the form used throughout.</p>
 <p><strong>The result.</strong> The decomposition reads as follows.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -105,19 +105,19 @@ $$</p>
 <tbody>
 <tr>
 <td>Algebra</td>
-<td>$\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, basis $1,i,j,ij$</td>
+<td>$\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, basis $1,i,j,ij$</td>
 </tr>
 <tr>
 <td>Domain</td>
-<td>${\mathbb{B}^{\mathrm{red}}}^\times=\{\breve Q:N=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$</td>
+<td>${\mathbb{B}_{\mathrm{red}}}^\times=\{\breve Q:N=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$</td>
 </tr>
 <tr>
 <td>Decomposition</td>
-<td>$\breve Q=\breve r\,u=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$\breve Q=\breve r\,u=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$</td>
 </tr>
 <tr>
 <td>Parameters</td>
-<td>$\rho>0$, $\theta^{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
+<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
@@ -125,7 +125,7 @@ $$</p>
 </tr>
 <tr>
 <td>Exponent</td>
-<td>$\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta$</td>
+<td>$\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta$</td>
 </tr>
 <tr>
 <td>Existence</td>
@@ -141,7 +141,7 @@ $$</p>
 </tr>
 <tr>
 <td>Group</td>
-<td>${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
+<td>${\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
 </tr>
 <tr>
 <td>Companion</td>
@@ -176,7 +176,7 @@ $$</p>
 </tr>
 <tr>
 <td>Image</td>
-<td>the unit group ${\mathbb{B}^{\mathrm{red}}}^\times=\{N\neq0\}$</td>
+<td>the unit group ${\mathbb{B}_{\mathrm{red}}}^\times=\{N\neq0\}$</td>
 </tr>
 <tr>
 <td>Kernel</td>
@@ -264,15 +264,15 @@ $$</p>
 <h3 id="the-four-real-coordinates">The Four Real Coordinates</h3>
 <p>The exponential polar decomposition is the writing</p>
 <p>$$
-C_+=\rho e^{i\alpha}e^{\theta^{\mathrm{rpd}}+i\beta},
+C_+=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},
 \qquad
-C_-=\rho e^{i\alpha}e^{-\theta^{\mathrm{rpd}}-i\beta},
+C_-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta},
 $$</p>
-<p>with $\rho>0$ and real $\theta^{\mathrm{rpd}},\alpha,\beta$. The four real coordinates are therefore the polar data of the two components:</p>
+<p>with $\rho>0$ and real $\theta_{\mathrm{rpd}},\alpha,\beta$. The four real coordinates are therefore the polar data of the two components:</p>
 <p>$$
 \rho=\sqrt{\lvert C_+C_-\rvert},
 \qquad
-\theta^{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
+\theta_{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
 \qquad
 \alpha=\tfrac12\bigl(\operatorname{Arg}C_++\operatorname{Arg}C_-\bigr),
 \qquad
@@ -280,9 +280,9 @@ $$</p>
 $$</p>
 <p>The change is inverted by</p>
 <p>$$
-C_+=\rho e^{i\alpha}e^{\theta^{\mathrm{rpd}}+i\beta},
+C_+=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},
 \qquad
-C_-=\rho e^{i\alpha}e^{-\theta^{\mathrm{rpd}}-i\beta}.
+C_-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta}.
 $$</p>
 <p>The phases are defined modulo the lattice $\Lambda$: adding $\pi$ to both $\alpha$ and $\beta$, or $\pi$ to one and $-\pi$ to the other, leaves both components unchanged. The principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ selects one representative. The table records the coordinates and their ranges.</p>
 <div class="table-scroll"><table>
@@ -302,7 +302,7 @@ $$</p>
 <td>common radius</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}$</td>
+<td>$\theta_{\mathrm{rpd}}$</td>
 <td>$\tfrac12\ln\lvert C_+/C_-\rvert$</td>
 <td>$\mathbb{R}$</td>
 <td>boost, opposite signs</td>
@@ -321,27 +321,27 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The real dimension is four, the real dimension of the group of units. The coordinates separate into the modulus pair $(\rho,\theta^{\mathrm{rpd}})$ and the phase pair $(\alpha,\beta)$.</p>
+<p>The real dimension is four, the real dimension of the group of units. The coordinates separate into the modulus pair $(\rho,\theta_{\mathrm{rpd}})$ and the phase pair $(\alpha,\beta)$.</p>
 <h2 id="the-decomposition">The Decomposition</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> An <strong>exponential polar decomposition</strong> of $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times$ is a writing</p>
+<p><strong>Definition.</strong> An <strong>exponential polar decomposition</strong> of $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$ is a writing</p>
 <p>$$
 \breve Q=\breve r\,u,
 \qquad
-\breve r=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr),
+\breve r=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
 \quad
 u=\exp(i\alpha)\exp(ij\beta),
 $$</p>
-<p>with $\rho>0$, $\theta^{\mathrm{rpd}}\in\mathbb{R}$ and $(\alpha,\beta)\in\mathbb{R}^2$, equivalently the single exponential</p>
+<p>with $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$ and $(\alpha,\beta)\in\mathbb{R}^2$, equivalently the single exponential</p>
 <p>$$
 \breve Q=\exp(\breve Q_{\log}),
 \qquad
-\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta.
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta.
 $$</p>
-<p>The factor $\breve r$ is the <strong>modulus</strong>, $u$ the <strong>unit factor</strong>, $\theta^{\mathrm{rpd}}$ the <strong>boost</strong>, $\alpha$ and $\beta$ the <strong>phases</strong>, and $\breve Q_{\log}$ the <strong>exponent</strong>.</p>
+<p>The factor $\breve r$ is the <strong>modulus</strong>, $u$ the <strong>unit factor</strong>, $\theta_{\mathrm{rpd}}$ the <strong>boost</strong>, $\alpha$ and $\beta$ the <strong>phases</strong>, and $\breve Q_{\log}$ the <strong>exponent</strong>.</p>
 <p>The modulus lies in the cone</p>
 <p>$$
-P=\{\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}):\rho>0,\ \theta^{\mathrm{rpd}}\in\mathbb{R}\},
+P=\{\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}):\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R}\},
 $$</p>
 <p>and the unit factor lies in the torus</p>
 <p>$$
@@ -355,9 +355,9 @@ $$</p>
 \qquad
 Q_{\log\blacktriangle}=\ln\rho+i\alpha,
 \qquad
-Q_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}+i\beta.
+Q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta.
 $$</p>
-<p>Its four real coordinates are $(\ln\rho,\alpha,\theta^{\mathrm{rpd}},\beta)$. The table collects them.</p>
+<p>Its four real coordinates are $(\ln\rho,\alpha,\theta_{\mathrm{rpd}},\beta)$. The table collects them.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -385,9 +385,9 @@ $$</p>
 </tr>
 <tr>
 <td>Boost</td>
-<td>$\theta^{\mathrm{rpd}}$</td>
+<td>$\theta_{\mathrm{rpd}}$</td>
 <td>$\mathbb{R}$</td>
-<td>$\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}$</td>
+<td>$\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$</td>
 <td>non-compact, hyperbolic</td>
 </tr>
 <tr>
@@ -404,9 +404,9 @@ $$</p>
 <p>The modulus is the positive square root of $\breve Q\bar{\breve Q}$ in the cone $P$, and it is exponentiated by the split-complex exponential:</p>
 <p>$$
 \breve r=\sqrt{\breve Q\bar{\breve Q}}
-=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)=\exp(\ln\rho+j\theta^{\mathrm{rpd}}),
+=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)=\exp(\ln\rho+j\theta_{\mathrm{rpd}}),
 \qquad
-\breve r_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}.
+\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}.
 $$</p>
 <p>The unit factor is the exponential of the angle:</p>
 <p>$$
@@ -420,7 +420,7 @@ C_+=\rho_+e^{i\theta_+},
 \qquad
 C_-=\rho_-e^{i\theta_-},
 \qquad
-\rho_\pm=\rho e^{\pm\theta^{\mathrm{rpd}}},
+\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}},
 \quad
 \theta_\pm=\alpha\pm\beta.
 $$</p>
@@ -438,10 +438,10 @@ $$</p>
 <tbody>
 <tr>
 <td>Modulus</td>
-<td>$\breve r=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$</td>
-<td>$\rho_+=\rho e^{\theta^{\mathrm{rpd}}}$, $\rho_-=\rho e^{-\theta^{\mathrm{rpd}}}$</td>
+<td>$\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$</td>
+<td>$\rho_+=\rho e^{\theta_{\mathrm{rpd}}}$, $\rho_-=\rho e^{-\theta_{\mathrm{rpd}}}$</td>
 <td>cone $P$</td>
-<td>$\ln\rho+j\theta^{\mathrm{rpd}}$</td>
+<td>$\ln\rho+j\theta_{\mathrm{rpd}}$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
@@ -463,7 +463,7 @@ $$</p>
 <p>$$
 \rho=\sqrt{\rho_+\rho_-},
 \qquad
-\theta^{\mathrm{rpd}}=\tfrac12\ln\frac{\rho_+}{\rho_-},
+\theta_{\mathrm{rpd}}=\tfrac12\ln\frac{\rho_+}{\rho_-},
 \qquad
 \alpha=\tfrac12(\theta_++\theta_-),
 \qquad
@@ -475,12 +475,12 @@ $$</p>
 <p>$$
 \breve Q=\exp(\breve r_{\log}+i\Theta)
 =\breve r\,u
-=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)\exp(i\alpha)\exp(ij\beta).
+=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\alpha)\exp(ij\beta).
 $$</p>
 <p>In full,</p>
 <p>$$
 
-\boxed{\;\breve Q=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr)
+\boxed{\;\breve Q=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr)
 \;}.
 $$</p>
 <p>The polar word is one exponential, not a product of independent exponentials with an ordering correction. The closed form of the exponential is</p>
@@ -493,20 +493,20 @@ $$</p>
 <p>$$
 \exp(j\ln2)=\cosh(\ln2)+j\sinh(\ln2)=\tfrac54+\tfrac34j.
 $$</p>
-<p>In the four coordinates, $\rho=1$, $\theta^{\mathrm{rpd}}=\ln2$ and $\alpha=\beta=0$.</p>
+<p>In the four coordinates, $\rho=1$, $\theta_{\mathrm{rpd}}=\ln2$ and $\alpha=\beta=0$.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <p><strong>Theorem.</strong> The exponential is a bijection from the <strong>principal domain</strong></p>
 <p>$$
 
-D=\Bigl\{\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta:\rho>0,\ \theta^{\mathrm{rpd}}\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\Bigr\}
+D=\Bigl\{\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta:\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\Bigr\}
 
 $$</p>
-<p>onto the unit group ${\mathbb{B}^{\mathrm{red}}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.</p>
+<p>onto the unit group ${\mathbb{B}_{\mathrm{red}}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.</p>
 <p><strong>Existence.</strong> Let $\breve Q$ be a unit, so $C_+\neq0$ and $C_-\neq0$. Put</p>
 <p>$$
 \rho=\sqrt{\lvert C_+C_-\rvert},
 \qquad
-\theta^{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
+\theta_{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
 $$</p>
 <p>and choose the principal arguments $\theta_\pm=\operatorname{Arg}C_\pm\in(-\pi,\pi]$. Put</p>
 <p>$$
@@ -516,29 +516,29 @@ $$</p>
 $$</p>
 <p>Then $\lvert\alpha\rvert+\lvert\beta\rvert=\max(\lvert\theta_+\rvert,\lvert\theta_-\rvert)\le\pi$, and</p>
 <p>$$
-\rho e^{i\alpha}e^{\theta^{\mathrm{rpd}}+i\beta}
+\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta}
 =\lvert C_+\rvert e^{i\theta_+}=C_+,
 \qquad
-\rho e^{i\alpha}e^{-\theta^{\mathrm{rpd}}-i\beta}
+\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta}
 =\lvert C_-\rvert e^{i\theta_-}=C_-.
 $$</p>
 <p>Therefore</p>
 <p>$$
 \breve Q=\frac{C_++C_-}{2}+j\frac{C_+-C_-}{2}
-=\rho e^{i\alpha}\Bigl(\cosh(\theta^{\mathrm{rpd}}+i\beta)+j\sinh(\theta^{\mathrm{rpd}}+i\beta)\Bigr)
-=\exp(\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta),
+=\rho e^{i\alpha}\Bigl(\cosh(\theta_{\mathrm{rpd}}+i\beta)+j\sinh(\theta_{\mathrm{rpd}}+i\beta)\Bigr)
+=\exp(\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta),
 $$</p>
 <p>with the exponent in $D$.</p>
 <p><strong>Uniqueness.</strong> Suppose $\exp\breve Q_{1\log}=\exp\breve Q_{2\log}$ with both exponents in $D$. Then the difference lies in the kernel of the exponential, computed in §<em>The Kernel and the Fibre</em> as</p>
 <p>$$
 \ker\exp=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$</p>
-<p>In the coordinates $(\ln\rho,\theta^{\mathrm{rpd}},\alpha,\beta)$ the kernel acts by</p>
+<p>In the coordinates $(\ln\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ the kernel acts by</p>
 <p>$$
 (\alpha,\beta)\longmapsto(\alpha+2\pi k+\pi l,\ \beta+\pi l),
 \qquad k,l\in\mathbb{Z},
 $$</p>
-<p>with $\rho$ and $\theta^{\mathrm{rpd}}$ fixed. The diamond is a fundamental domain for this lattice: the linear change $(\theta_+,\theta_-)\mapsto(\alpha,\beta)$ carries the fundamental square $(-\pi,\pi]^2$ of $2\pi\mathbb{Z}^2$ bijectively onto it. Two points of the diamond therefore differ by a kernel element only if they are equal. Hence $\breve Q_{1\log}=\breve Q_{2\log}$.</p>
+<p>with $\rho$ and $\theta_{\mathrm{rpd}}$ fixed. The diamond is a fundamental domain for this lattice: the linear change $(\theta_+,\theta_-)\mapsto(\alpha,\beta)$ carries the fundamental square $(-\pi,\pi]^2$ of $2\pi\mathbb{Z}^2$ bijectively onto it. Two points of the diamond therefore differ by a kernel element only if they are equal. Hence $\breve Q_{1\log}=\breve Q_{2\log}$.</p>
 <p>The theorem is the analogue of the principal strip of $\mathbb{C}$, with two phases instead of one. The parameters and their uniqueness are collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -555,7 +555,7 @@ $$</p>
 <td>yes: $\tfrac12\ln\lvert C_+C_-\rvert$</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}$</td>
+<td>$\theta_{\mathrm{rpd}}$</td>
 <td>$\mathbb{R}$</td>
 <td>yes: $\tfrac12\ln\lvert C_+/C_-\rvert$</td>
 </tr>
@@ -595,7 +595,7 @@ $$</p>
 <p>$$
 \operatorname{Log}\breve Q=1.6465429+0.9168955\,i-0.0371050\,j-0.2733944\,ij.
 $$</p>
-<p>Exponentiating it back gives $3+4i+j(1-i)$ up to rounding. In the four coordinates, $\ln\rho=1.6465429$, $\theta^{\mathrm{rpd}}=-0.0371050$, $\alpha=0.9168955$, $\beta=-0.2733944$.</p>
+<p>Exponentiating it back gives $3+4i+j(1-i)$ up to rounding. In the four coordinates, $\ln\rho=1.6465429$, $\theta_{\mathrm{rpd}}=-0.0371050$, $\alpha=0.9168955$, $\beta=-0.2733944$.</p>
 <h3 id="the-principal-logarithm">The Principal Logarithm</h3>
 <p>The <strong>principal logarithm</strong> is the formula of §<em>The General Logarithm</em> with the principal complex logarithm of each component, that is with the arguments in $(-\pi,\pi]$. In the four coordinates it is</p>
 <p>$$
@@ -628,7 +628,7 @@ $$</p>
 <p>because both components are negative reals, with principal argument $\pi$.</p>
 <p>No continuous single-valued branch exists on the whole unit group, because the unit group has fundamental group $\mathbb{Z}^2$; the obstruction is the kernel lattice, not a failure of local invertibility. The exponential is a covering map onto the unit group, and the logarithm is its multivalued inverse.</p>
 <h3 id="the-kernel-and-the-fibre">The Kernel and the Fibre</h3>
-<p>The kernel of the exponential is the set of exponents with $\rho=1$, $\theta^{\mathrm{rpd}}=0$ and $u=1$, that is the set of $i\alpha+ij\beta$ with $(\alpha,\beta)\in\Lambda$. In the algebra,</p>
+<p>The kernel of the exponential is the set of exponents with $\rho=1$, $\theta_{\mathrm{rpd}}=0$ and $u=1$, that is the set of $i\alpha+ij\beta$ with $(\alpha,\beta)\in\Lambda$. In the algebra,</p>
 <p>$$
 \ker\exp=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}
 =\bigl\{\pi i(k(1+j)+l(1-j)):k,l\in\mathbb{Z}\bigr\}.
@@ -640,7 +640,7 @@ $$</p>
 $$</p>
 <p>In the phases the fibre is the orbit of $(\alpha,\beta)$ under $\Lambda$, and exactly one point of the orbit lies in the half-open diamond. The ambiguity is one integer for each component, the exact replacement of the single integer $2\pi i\mathbb{Z}$ of the complex case.</p>
 <h3 id="the-exponent-and-the-logarithm">The Exponent and the Logarithm</h3>
-<p>On this algebra the exponent is a logarithm of the element, and the two objects coincide: the decomposition $\breve Q=\exp\breve Q_{\log}$ says exactly that $\breve Q_{\log}\in\exp^{-1}(\breve Q)$. The polar data $(\rho,\theta^{\mathrm{rpd}},\alpha,\beta)$ are the representative of that fibre in the principal diamond, so the uniqueness is uniqueness modulo the lattice $\Lambda$. There is no discrete factor as in the split-complex case, and no canonical word distinct from the logarithm as in the biquaternion case; the exponent is the logarithm, read in the coordinates of the modulus and the torus.</p>
+<p>On this algebra the exponent is a logarithm of the element, and the two objects coincide: the decomposition $\breve Q=\exp\breve Q_{\log}$ says exactly that $\breve Q_{\log}\in\exp^{-1}(\breve Q)$. The polar data $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ are the representative of that fibre in the principal diamond, so the uniqueness is uniqueness modulo the lattice $\Lambda$. There is no discrete factor as in the split-complex case, and no canonical word distinct from the logarithm as in the biquaternion case; the exponent is the logarithm, read in the coordinates of the modulus and the torus.</p>
 <h2 id="the-group-law">The Group Law</h2>
 <p>The exponential is a homomorphism from the additive group of the algebra to the multiplicative group of the units:</p>
 <p>$$
@@ -652,17 +652,17 @@ $$</p>
 <p>$$
 \rho=\rho_1\rho_2,
 \qquad
-\theta^{\mathrm{rpd}}=\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2,
+\theta_{\mathrm{rpd}}=\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2},
 \qquad
 (\alpha,\beta)=(\alpha_1+\alpha_2,\ \beta_1+\beta_2)\ \text{modulo}\ \Lambda.
 $$</p>
 <p>The radii multiply, the boosts add, and the phases add on the torus. In the components the law is the pair of complex laws $C_\pm(\breve Q_1\breve Q_2)=C_\pm(\breve Q_1)C_\pm(\breve Q_2)$. The group of units is therefore</p>
 <p>$$
-\boxed{\;{\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2\;},
+\boxed{\;{\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2\;},
 $$</p>
-<p>with the two real coordinates $\ln\rho$ and $\theta^{\mathrm{rpd}}$ and the two torus coordinates $(\alpha,\beta)$ modulo $\Lambda$. The exponential exhibits the group as the quotient of the additive group $\mathbb{R}^4$ by the kernel lattice,</p>
+<p>with the two real coordinates $\ln\rho$ and $\theta_{\mathrm{rpd}}$ and the two torus coordinates $(\alpha,\beta)$ modulo $\Lambda$. The exponential exhibits the group as the quotient of the additive group $\mathbb{R}^4$ by the kernel lattice,</p>
 <p>$$
-{\mathbb{B}^{\mathrm{red}}}^\times
+{\mathbb{B}_{\mathrm{red}}}^\times
 \cong\mathbb{R}^4\big/2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$</p>
 <p>The four coordinates obey the following laws.</p>
@@ -679,7 +679,7 @@ $$</p>
 <td>multiplies</td>
 </tr>
 <tr>
-<td>Boost $\theta^{\mathrm{rpd}}$</td>
+<td>Boost $\theta_{\mathrm{rpd}}$</td>
 <td>adds</td>
 </tr>
 <tr>
@@ -692,7 +692,7 @@ $$</p>
 </tr>
 <tr>
 <td>Group</td>
-<td>${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
+<td>${\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
 </tr>
 </tbody>
 </table></div>
@@ -739,7 +739,7 @@ $$</p>
 $$</p>
 <p>and its singular values are $\rho_+,\rho_+,\rho_-,\rho_-$.</p>
 <p><em>Proof.</em> The derivative follows from $\exp(\breve Q_{\log}+t\breve H)=\exp\breve Q_{\log}\exp(t\breve H)$ and $\exp(t\breve H)=1+t\breve H+O(t^2)$. The matrix of left multiplication by $\breve Q$ has complex determinant $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=C_+C_-$ in the basis $\{1,j\}$, hence real determinant $\lvert C_+C_-\rvert^2$; and $\lvert C_+C_-\rvert=\rho_+\rho_-$. The singular values are those of $M_{\breve r}$, namely $\rho_+$ and $\rho_-$, each twice.</p>
-<p>The exponential is conformal in each component coordinate, and conformal on the whole algebra exactly when $\rho_+=\rho_-$, that is when $\theta^{\mathrm{rpd}}=0$.</p>
+<p>The exponential is conformal in each component coordinate, and conformal on the whole algebra exactly when $\rho_+=\rho_-$, that is when $\theta_{\mathrm{rpd}}=0$.</p>
 <h3 id="the-matrix-logarithm-and-the-derivative">The Matrix Logarithm and the Derivative</h3>
 <p>On the principal domain the matrix $M_{\breve Q_{\log}}$ is a logarithm of $M_{\breve Q}$ obtained by applying the principal scalar logarithm to each component: its diagonal entries $\operatorname{Log}C_\pm$ have imaginary parts in $(-\pi,\pi]$, so they are the principal logarithms of the components of $M_{\breve Q}$, and the two matrices are put in diagonal form by the same change of coordinates.</p>
 <p>The logarithm is differentiable on the complement of the walls, and its derivative is left multiplication by $\breve Q^{-1}$:</p>
@@ -794,7 +794,7 @@ $$</p>
 <td>all units</td>
 <td>unique in the principal domain</td>
 <td>exponential and logarithm</td>
-<td>$\mathbb{B}^{\mathrm{red}}/\ker\exp$</td>
+<td>$\mathbb{B}_{\mathrm{red}}/\ker\exp$</td>
 </tr>
 </tbody>
 </table></div>
@@ -803,13 +803,13 @@ $$</p>
 <p>$$
 \breve Q_{\log}=\breve r_{\log}+i\Theta,
 \qquad
-\breve r_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}\in\mathbb{R}\{1,j\},
+\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}\in\mathbb{R}\{1,j\},
 \qquad
 i\Theta=i\alpha+ij\beta\in\mathbb{R}\{i,ij\}.
 $$</p>
 <p>The logarithmic scale lies in the plane $\mathbb{R}\{1,j\}$, the angle in the plane $\mathbb{R}\{i,ij\}$, and the two commute. Exponentiating each factor gives</p>
 <p>$$
-\breve r=\exp(\breve r_{\log})=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}),
+\breve r=\exp(\breve r_{\log})=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}),
 \qquad
 u=\exp(i\Theta)=\exp(i\alpha)\exp(ij\beta),
 $$</p>
@@ -897,24 +897,24 @@ $$</p>
 <h3 id="the-coordinate-map">The Coordinate Map</h3>
 <p>The exponential coordinates are the four real functions</p>
 <p>$$
-(\ln\rho,\ \theta^{\mathrm{rpd}},\ \alpha,\ \beta),
+(\ln\rho,\ \theta_{\mathrm{rpd}},\ \alpha,\ \beta),
 $$</p>
-<p>equivalently the real and imaginary parts of the two complex coordinates $Q_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}+i\beta$ of the exponent.</p>
-<p>Fixing the scales $\rho,\theta^{\mathrm{rpd}}$ and varying the phases gives the torus</p>
+<p>equivalently the real and imaginary parts of the two complex coordinates $Q_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$ of the exponent.</p>
+<p>Fixing the scales $\rho,\theta_{\mathrm{rpd}}$ and varying the phases gives the torus</p>
 <p>$$
 T^2=\{\exp(i\alpha+ij\beta):\alpha,\beta\in\mathbb{R}\}.
 $$</p>
 <p>Fixing the phases and varying the scales gives the cone</p>
 <p>$$
-P=\{\exp(\ln\rho+j\theta^{\mathrm{rpd}}):\ln\rho\in\mathbb{R},\ \theta^{\mathrm{rpd}}\in\mathbb{R}\}
-=\{\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}):\rho>0,\ \theta^{\mathrm{rpd}}\in\mathbb{R}\}.
+P=\{\exp(\ln\rho+j\theta_{\mathrm{rpd}}):\ln\rho\in\mathbb{R},\ \theta_{\mathrm{rpd}}\in\mathbb{R}\}
+=\{\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}):\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R}\}.
 $$</p>
 <p>The product $P\times T^2$ is the unit group, and the exponential is the universal covering</p>
 <p>$$
 \mathbb{R}^2\times\mathbb{R}^2\longrightarrow P\times T^2
 $$</p>
 <p>with deck group $\Lambda\cong\mathbb{Z}^2$.</p>
-<p>The surfaces $\rho=\mathrm{const}$ and $\theta^{\mathrm{rpd}}=\mathrm{const}$ are the surfaces of constant scale; their intersection is the torus of constant modulus. The surfaces $\alpha=\mathrm{const}$ and $\beta=\mathrm{const}$ are the surfaces of constant phase; their intersection is the cone $P u$ of constant unit factor, a copy of $P$ rotated by $u$. The exponential maps the plane $\mathbb{R}\{1,j\}$ onto the cone $P$ and the plane $\mathbb{R}\{i,ij\}$ onto the torus $T^2$; each coordinate surface is the product of the image of a coordinate line in one plane with the other factor.</p>
+<p>The surfaces $\rho=\mathrm{const}$ and $\theta_{\mathrm{rpd}}=\mathrm{const}$ are the surfaces of constant scale; their intersection is the torus of constant modulus. The surfaces $\alpha=\mathrm{const}$ and $\beta=\mathrm{const}$ are the surfaces of constant phase; their intersection is the cone $P u$ of constant unit factor, a copy of $P$ rotated by $u$. The exponential maps the plane $\mathbb{R}\{1,j\}$ onto the cone $P$ and the plane $\mathbb{R}\{i,ij\}$ onto the torus $T^2$; each coordinate surface is the product of the image of a coordinate line in one plane with the other factor.</p>
 <h3 id="the-jacobian-and-the-volume-element">The Jacobian and the Volume Element</h3>
 <p>In the Cartesian coordinates $(Q_{\blacktriangle},Q_{\blacktriangledown})\in\mathbb{C}^2\cong\mathbb{R}^4$ the Euclidean volume element is</p>
 <p>$$
@@ -925,22 +925,22 @@ $$</p>
 dV=\frac14\,d(\operatorname{Re}C_+)\,d(\operatorname{Im}C_+)\,
 d(\operatorname{Re}C_-)\,d(\operatorname{Im}C_-).
 $$</p>
-<p>In the polar coordinates of the two components, with $\rho_\pm=\rho e^{\pm\theta^{\mathrm{rpd}}}$ and $\theta_\pm=\alpha\pm\beta$, the area elements are $\rho_\pm\,d\rho_\pm\,d\theta_\pm$, and the change $(\rho,\theta^{\mathrm{rpd}},\alpha,\beta)\mapsto(\rho_+,\theta_+,\rho_-,\theta_-)$ has determinant $4\rho$. Hence</p>
+<p>In the polar coordinates of the two components, with $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$ and $\theta_\pm=\alpha\pm\beta$, the area elements are $\rho_\pm\,d\rho_\pm\,d\theta_\pm$, and the change $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)\mapsto(\rho_+,\theta_+,\rho_-,\theta_-)$ has determinant $4\rho$. Hence</p>
 <p>$$
-dV=\rho^3\,d\rho\,d\theta^{\mathrm{rpd}}\,d\alpha\,d\beta
-=\rho^4\,d(\ln\rho)\,d\theta^{\mathrm{rpd}}\,d\alpha\,d\beta.
+dV=\rho^3\,d\rho\,d\theta_{\mathrm{rpd}}\,d\alpha\,d\beta
+=\rho^4\,d(\ln\rho)\,d\theta_{\mathrm{rpd}}\,d\alpha\,d\beta.
 $$</p>
 <p>The Jacobian determinant of the exponential, from the Cartesian volume in the exponent to the Cartesian volume in the algebra, is $\rho^4$, the same in either Cartesian reading. For a box</p>
 <p>$$
-[\ln\rho_+,\ln\rho_-]\times[\theta^{\mathrm{rpd}}_1,\theta^{\mathrm{rpd}}_2]\times[\alpha_1,\alpha_2]\times[\beta_1,\beta_2]
+[\ln\rho_+,\ln\rho_-]\times[\theta_{\mathrm{rpd},1},\theta_{\mathrm{rpd},2}]\times[\alpha_1,\alpha_2]\times[\beta_1,\beta_2]
 $$</p>
 <p>contained in the principal domain, the image has volume</p>
 <p>$$
-\frac{\rho_-^4-\rho_+^4}{4}\,(\theta^{\mathrm{rpd}}_2-\theta^{\mathrm{rpd}}_1)(\alpha_2-\alpha_1)(\beta_2-\beta_1),
+\frac{\rho_-^4-\rho_+^4}{4}\,(\theta_{\mathrm{rpd},2}-\theta_{\mathrm{rpd},1})(\alpha_2-\alpha_1)(\beta_2-\beta_1),
 $$</p>
 <p>the integral of $\rho^3$ over the box. Outside the principal domain the same integral counts the image with multiplicity. The formula is exact.</p>
 <h3 id="the-harmonic-reading">The Harmonic Reading</h3>
-<p>The functions $\ln\rho$ and $\theta^{\mathrm{rpd}}$ are harmonic in the component coordinates, being the real parts of the holomorphic functions $\tfrac12(\operatorname{Log}C_+\pm\operatorname{Log}C_-)$ away from the cuts, and the phases $\alpha,\beta$ are harmonic on the cut plane, that is on the universal cover on which they are single-valued. The complex coordinates $\operatorname{Log}C_+$ and $\operatorname{Log}C_-$ are the local holomorphic coordinates supplied by the principal logarithm, and the exponential is their inverse.</p>
+<p>The functions $\ln\rho$ and $\theta_{\mathrm{rpd}}$ are harmonic in the component coordinates, being the real parts of the holomorphic functions $\tfrac12(\operatorname{Log}C_+\pm\operatorname{Log}C_-)$ away from the cuts, and the phases $\alpha,\beta$ are harmonic on the cut plane, that is on the universal cover on which they are single-valued. The complex coordinates $\operatorname{Log}C_+$ and $\operatorname{Log}C_-$ are the local holomorphic coordinates supplied by the principal logarithm, and the exponential is their inverse.</p>
 <p>The algebra carries two commuting complex structures: the left multiplication by $i$ and the left multiplication by $ij$. Both square to $-1$ and commute, and the two components are the coordinates in which the second is diagonal, with value $+i$ on $C_+$ and $-i$ on $C_-$. The exponential is holomorphic for both structures, because the closed form $\exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})=\exp(Q_{\log\blacktriangle})(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown})$ is entire in $Q_{\log\blacktriangle}$ and in $Q_{\log\blacktriangledown}$. The obstruction to a global logarithm is the lattice, not the complex structure.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-results">Main Results</h3>
@@ -954,7 +954,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Domain</td>
-<td>the units $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times$, that is $C_+C_-\neq0$</td>
+<td>the units $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$, that is $C_+C_-\neq0$</td>
 </tr>
 <tr>
 <td>Components</td>
@@ -962,11 +962,11 @@ $$</p>
 </tr>
 <tr>
 <td>Decomposition</td>
-<td>$\breve Q=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$</td>
 </tr>
 <tr>
 <td>Parameters</td>
-<td>$\rho>0$, $\theta^{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
+<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
@@ -974,7 +974,7 @@ $$</p>
 </tr>
 <tr>
 <td>Exponent</td>
-<td>$\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta$</td>
+<td>$\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta$</td>
 </tr>
 <tr>
 <td>Existence</td>
@@ -998,7 +998,7 @@ $$</p>
 </tr>
 <tr>
 <td>Group</td>
-<td>${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
+<td>${\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$</td>
 </tr>
 <tr>
 <td>Matrix picture</td>
@@ -1006,7 +1006,7 @@ $$</p>
 </tr>
 <tr>
 <td>Coordinates</td>
-<td>$(\ln\rho,\theta^{\mathrm{rpd}},\alpha,\beta)$, with volume $\rho^3\,d\rho\,d\theta^{\mathrm{rpd}}\,d\alpha\,d\beta$</td>
+<td>$(\ln\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$, with volume $\rho^3\,d\rho\,d\theta_{\mathrm{rpd}}\,d\alpha\,d\beta$</td>
 </tr>
 <tr>
 <td>Component form</td>
@@ -1029,15 +1029,15 @@ $$</p>
 </tr>
 <tr>
 <td>Components</td>
-<td>$C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}=\rho e^{i\alpha}e^{\pm(\theta^{\mathrm{rpd}}+i\beta)}$</td>
+<td>$C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
 </tr>
 <tr>
 <td>Exponent</td>
-<td>$\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta$</td>
+<td>$\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta$</td>
 </tr>
 <tr>
 <td>Modulus</td>
-<td>$\breve r=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$, with $\rho>0$, $\theta^{\mathrm{rpd}}\in\mathbb{R}$</td>
+<td>$\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$, with $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$</td>
 </tr>
 <tr>
 <td>Unit factor</td>
@@ -1065,26 +1065,26 @@ $$</p>
 <p>$$
 \breve Q=\exp(\breve Q_{\log}),
 \qquad
-\breve Q_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta,
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
 $$</p>
 <p>with</p>
 <p>$$
 \rho>0,\qquad
-\theta^{\mathrm{rpd}}\in\mathbb{R},\qquad
+\theta_{\mathrm{rpd}}\in\mathbb{R},\qquad
 \lvert\alpha\rvert+\lvert\beta\rvert\le\pi.
 $$</p>
 <p>In the two components,</p>
 <p>$$
-C_+=\rho e^{i\alpha}e^{\theta^{\mathrm{rpd}}+i\beta},
+C_+=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},
 \qquad
-C_-=\rho e^{i\alpha}e^{-\theta^{\mathrm{rpd}}-i\beta},
+C_-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta},
 $$</p>
 <p>and the four real coordinates are</p>
 <p>$$
-(\ln\rho,\ \alpha,\ \theta^{\mathrm{rpd}},\ \beta)
+(\ln\rho,\ \alpha,\ \theta_{\mathrm{rpd}},\ \beta)
 =(q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}).
 $$</p>
-<p>The exponent is the sum of the logarithmic scale $\ln\rho+j\theta^{\mathrm{rpd}}$ in the plane $\mathbb{R}\{1,j\}$ and the angle $i\alpha+ij\beta$ in the plane $\mathbb{R}\{i,ij\}$. The modulus is $\breve r=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$ and the unit factor is $u=\exp(i\alpha)\exp(ij\beta)$, and the polar word is the single exponential $\breve Q=\breve r u$.</p>
+<p>The exponent is the sum of the logarithmic scale $\ln\rho+j\theta_{\mathrm{rpd}}$ in the plane $\mathbb{R}\{1,j\}$ and the angle $i\alpha+ij\beta$ in the plane $\mathbb{R}\{i,ij\}$. The modulus is $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ and the unit factor is $u=\exp(i\alpha)\exp(ij\beta)$, and the polar word is the single exponential $\breve Q=\breve r u$.</p>
 <p>The exponential is given by the closed form of <em>Reduced Biquaternion Elementary Functions</em>, §<em>The Exponential</em>:</p>
 <p>$$
 \exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})
@@ -1097,10 +1097,10 @@ $$</p>
 <p>generated by $2\pi i$ and $\pi i(1+j)$. The scalar and split periods $2\pi i$ and $2\pi ij$ generate a sublattice of index two. The logarithm exists for every unit and is unique only modulo this lattice; the principal diamond is a fundamental domain of area $2\pi^2$, and the exponential is a bijection from the product of the two real lines with the diamond onto the units.</p>
 <p>The group law is addition in the exponential coordinates,</p>
 <p>$$
-{\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2
+{\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2
 \cong\mathbb{R}^4\big/2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$</p>
-<p>The derivative is left multiplication by $\exp\breve Q_{\log}$; its determinant is $\rho_+^2\rho_-^2=\lvert C_+C_-\rvert^2=\rho^4$, and its singular values are $\rho_+,\rho_+,\rho_-,\rho_-$. The exponential is conformal in each component coordinate and conformal on the whole algebra exactly when $\theta^{\mathrm{rpd}}=0$.</p>
+<p>The derivative is left multiplication by $\exp\breve Q_{\log}$; its determinant is $\rho_+^2\rho_-^2=\lvert C_+C_-\rvert^2=\rho^4$, and its singular values are $\rho_+,\rho_+,\rho_-,\rho_-$. The exponential is conformal in each component coordinate and conformal on the whole algebra exactly when $\theta_{\mathrm{rpd}}=0$.</p>
 <h3 id="comparison-with-the-neighbouring-cases">Comparison with the Neighbouring Cases</h3>
 <p>The table compares the three exponential polar decompositions; in the split-complex column, $\epsilon$ is the component sign.</p>
 <div class="table-scroll"><table>
@@ -1127,9 +1127,9 @@ $$</p>
 </tr>
 <tr>
 <td>Parameters</td>
-<td>$r>0$, $\theta^{\mathrm{rpd}}$, $\epsilon$</td>
-<td>$\rho>0$, $\theta^{\mathrm{rpd}}$, $\alpha$, $\beta$</td>
-<td>$r>0$, $\alpha$, $\theta^{\mathrm{rpd}}$, $\theta$, two axes</td>
+<td>$r>0$, $\theta_{\mathrm{rpd}}$, $\epsilon$</td>
+<td>$\rho>0$, $\theta_{\mathrm{rpd}}$, $\alpha$, $\beta$</td>
+<td>$r>0$, $\alpha$, $\theta_{\mathrm{rpd}}$, $\theta$, two axes</td>
 </tr>
 <tr>
 <td>Discrete data</td>
@@ -1167,7 +1167,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$</td>
+<td>$\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$</td>
 <td>the reduced biquaternion algebra</td>
 </tr>
 <tr>
@@ -1195,7 +1195,7 @@ $$</p>
 <td>the scalar part of the exponent</td>
 </tr>
 <tr>
-<td>$Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}+i\beta$</td>
+<td>$Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$</td>
 <td>the split part of the exponent</td>
 </tr>
 <tr>
@@ -1203,7 +1203,7 @@ $$</p>
 <td>the radius, with logarithm $\ln\rho$</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}\in\mathbb{R}$</td>
+<td>$\theta_{\mathrm{rpd}}\in\mathbb{R}$</td>
 <td>the boost</td>
 </tr>
 <tr>
@@ -1219,11 +1219,11 @@ $$</p>
 <td>the principal diamond</td>
 </tr>
 <tr>
-<td>$\breve r=\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}})$</td>
+<td>$\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$</td>
 <td>the modulus</td>
 </tr>
 <tr>
-<td>$\breve r_{\log}=\ln\rho+j\theta^{\mathrm{rpd}}$</td>
+<td>$\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}$</td>
 <td>the logarithm of the modulus</td>
 </tr>
 <tr>
@@ -1235,7 +1235,7 @@ $$</p>
 <td>the angle</td>
 </tr>
 <tr>
-<td>$P=\{\rho(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}):\rho>0,\ \theta^{\mathrm{rpd}}\in\mathbb{R}\}$</td>
+<td>$P=\{\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}):\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R}\}$</td>
 <td>the cone of moduli</td>
 </tr>
 <tr>
@@ -1255,7 +1255,7 @@ $$</p>
 <td>the kernel of the exponential</td>
 </tr>
 <tr>
-<td>$\rho_\pm=\rho e^{\pm\theta^{\mathrm{rpd}}}$</td>
+<td>$\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$</td>
 <td>the two component scales</td>
 </tr>
 <tr>

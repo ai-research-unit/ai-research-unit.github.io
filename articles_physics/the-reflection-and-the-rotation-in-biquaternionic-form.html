@@ -71,7 +71,7 @@
         <h1 id="the-reflection-and-the-rotation-in-biquaternionic-form"><strong>The Reflection and the Rotation in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A <strong>cell</strong> multiplies on the left by one element and on the right by another, with the composition that <em>Matrix Representations Conventions</em> fixes. A cell is an element of the array algebra that acts on $\mathbb{B}$, so it is at once an object and an operator: an object of the arrays, an operator on the biquaternions.</p>
-<p>This article is about a structure of the cell algebra which the relativistic articles use and none names: the split between the cells that carry an even number of <strong>generator factors</strong> and those that carry an odd number, and the identification of one cell, the frame cell $iR_{\vec e_x}^{\mathrm{axf}}$, as the hinge on which the split turns. The frame cells are the four legs of spacetime read as operators, and <em>Matrix Representations Conventions</em> lists them and records that the time one is a single right multiplication.</p>
+<p>This article is about a structure of the cell algebra which the relativistic articles use and none names: the split between the cells that carry an even number of <strong>generator factors</strong> and those that carry an odd number, and the identification of one cell, the frame cell $iR_{\mathrm{axf},\vec e_x}$, as the hinge on which the split turns. The frame cells are the four legs of spacetime read as operators, and <em>Matrix Representations Conventions</em> lists them and records that the time one is a single right multiplication.</p>
 <p>The claim is short. <strong>The even half is the biquaternion algebra itself.</strong> Its rotors are the elements of unit norm, the points of $SL(2,\mathbb{C})$, and they act on four-vectors by conjugation. The four generators are odd, none of them is a rotor, and each of them carries an element of one part into the other part. The split is therefore not a bookkeeping device: it is the split between the transformations that <em>turn</em> and those that <em>reflect</em>, and the letter $L$ or $R$ of an element is what an odd cell exchanges and an even cell keeps.</p>
 <p>The article runs as follows. §<em>One Cell, Two Readings</em> separates the cell read as a point from the cell read as an operator. §<em>The Two Halves by Reflection Count</em> states the split and ties it to the parity of the number of reflections. §<em>The Frame Cell and the Hermitian Sector</em> shows that the sign vector of the cells is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus metric of the series a statement about the objects rather than a choice. §<em>Conjugation by the Frame Cell Is the Bar</em> shows that conjugation by the frame cell is the conjugation of the coefficients. §<em>The Spaces of Rotations and of Reflections</em> and §<em>How Many Reflections?</em> describe the two sets and count the reflections a transformation needs. §<em>The Two Parts and the Reflection</em> draws the consequence for the letter, and §<em>Why Three Generators Cannot Carry the Letter</em> shows that the timelike generator is what makes the letter exist.</p>
 <p>The conventions are the series'. The algebra, the units, the sectors and the metric are those of <em>Algebra and Element Conventions</em> and <em>Frame and Metric Conventions</em>; the cells and their multiplication are those of <em>Matrix Representations Conventions</em>, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A cell enters by its two multipliers, and the short names used later — the frame cell, the chirality cell, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no cell is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a cell,
@@ -83,17 +83,17 @@ $$
 with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$. No cell of this article carries a derivative.</p>
 <h2 id="one-cell-two-readings">One Cell, Two Readings</h2>
 <p>A cell of a matrix algebra is at once a point and an operator, and the quaternions show the doubling most plainly: a unit quaternion is a point of the three-sphere and it is also the rotation that acts on vectors by conjugation. The same element, read two ways.</p>
-<p><strong>The rotors.</strong> A Lorentz rotor $\tilde U^{\mathrm{lor}}$ of unit norm, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1$, is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and it is an operator on the algebra,
+<p><strong>The rotors.</strong> A Lorentz rotor $\tilde U_{\mathrm{lor}}$ of unit norm, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$, is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and it is an operator on the algebra,
 $$
-Q_2 = \tilde U^{\mathrm{lor}}\,Q\,\tilde U^{\mathrm{lor}}{}^{*},
+Q_2 = \tilde U_{\mathrm{lor}}\,Q\,\tilde U_{\mathrm{lor}}{}^{*},
 $$
 which is the Lorentz transformation of the material element $Q\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and the action collapses to $Q_2=\tilde U_{\mathrm b}Q\tilde U_{\mathrm b}$; a general element of $SL(2,\mathbb{C})$ needs the general form. Both facts are those of <em>The Lorentz Transformation as a Biquaternionic Rotation</em>.</p>
 <p><strong>The generators.</strong> A generator cell is a vector and an operator at once: one of the four legs of spacetime, read as a cell. The four are
 $$
-iR_{\vec e_x}^{\mathrm{axf}},\qquad
-iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
+iR_{\mathrm{axf},\vec e_x},\qquad
+iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\qquad
+iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad
+iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}
 $$</p>
 <p>For the rotors the doubling is familiar, since the same element is the transformation and the operator that applies it. For the generators it is not familiar, and the reason is the parity of the number of generator factors. An even cell, applied on the left, keeps the letter of the element; a generator exchanges it. So two operators of one algebra, both acting on the same elements, do qualitatively different things, and the remainder of the article is the elaboration of that sentence.</p>
 <p><strong>The odd action.</strong> An odd unit cell is a reflection, and it acts on the vector cells twice-sidedly,
@@ -118,7 +118,7 @@ A unit vector is its own inverse up to sign: $u^2=\epsilon(u)I_4$ makes the inve
 </thead>
 <tbody>
 <tr>
-<td>a rotor $\tilde U^{\mathrm{lor}}$ of unit norm</td>
+<td>a rotor $\tilde U_{\mathrm{lor}}$ of unit norm</td>
 <td>an even number</td>
 <td>$+1$</td>
 <td>yes</td>
@@ -133,18 +133,18 @@ A unit vector is its own inverse up to sign: $u^2=\epsilon(u)I_4$ makes the inve
 </table></div>
 <p>The Lie algebra of the rotations is generated by the bivectors, and a bivector is the product of two reflections. So the two halves of the algebra of the cells are the two classes of orthogonal transformations, and the correspondence is an identity.</p>
 <h2 id="the-frame-cell-and-the-hermitian-sector">The Frame Cell and the Hermitian Sector</h2>
-<p>The odd half is reached from the even half by multiplying by the time generator, which is the frame cell $iR_{\vec e_x}^{\mathrm{axf}}$: that cell times the image of $\mathbb{M}_+$ is the vector space and times the image of $\mathbb{M}_-$ the trivector space, as <em>Matrix Representations Conventions</em> records. The four generators are therefore the Hermitian basis read through the frame cell, and a statement about the generators is a statement about that basis.</p>
+<p>The odd half is reached from the even half by multiplying by the time generator, which is the frame cell $iR_{\mathrm{axf},\vec e_x}$: that cell times the image of $\mathbb{M}_+$ is the vector space and times the image of $\mathbb{M}_-$ the trivector space, as <em>Matrix Representations Conventions</em> records. The four generators are therefore the Hermitian basis read through the frame cell, and a statement about the generators is a statement about that basis.</p>
 <p>Two derived forms are used below, both read off the frame cells at the place of use. A vector cell is the frame cell applied after the image of $w\in\mathbb{M}_+$,
 $$
 w = q_t e_t + i q_x\vec e_x + i q_y\vec e_y + i q_z\vec e_z ,
 \qquad
-iR_{\vec e_x}^{\mathrm{axf}}\times(\text{image of } w) = q_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k q_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} ,
+iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} ,
 $$
 and a trivector is the frame cell applied after the image of an element of $\mathbb{M}_-$, up to a sign that depends on the orientation chosen for each trivector.</p>
 <p>The decisive consequence concerns the <strong>metric</strong>. The biquaternion norm is the sum of the four squared coefficients, and a coefficient $i$ contributes $i^2=-1$. On the Hermitian basis $(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$ it therefore takes the four values $(+1,-1,-1,-1)$, which is the plain weight $\varepsilon$; on the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ it takes $(-1,+1,+1,+1)$, which is the interval of the material sector. The minus signs of the first list are those of $i^2$ on the three spatial directions, and nothing else. The sign vector of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the interval of the material sector is its negative. The material basis carries $(-1,+1,+1,+1)$ and the generators, which are Hermitian objects, carry the weight $\varepsilon$, which is its negative; the two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
 <p>The same fact appears in the square of a vector. For $w$ as above,
 $$
-\Bigl(q_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k q_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)^2
+\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}\Bigr)^2
 = \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
 with no relative sign between the square of the cell and the biquaternion norm. The absence of that sign is the signature showing through.</p>
@@ -152,16 +152,16 @@ with no relative sign between the square of the cell and the biquaternion norm. 
 <p>The frame cell is not a bookkeeping element. It has a definite action on the algebra, and that action is what defines the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$.</p>
 <p>For every element $\tilde Q$,
 $$
-\boxed{\;iR_{\vec e_x}^{\mathrm{axf}}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\vec e_x}^{\mathrm{axf}} = \text{image of }\bar{\tilde{Q}}\;}
+\boxed{\;iR_{\mathrm{axf},\vec e_x}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\mathrm{axf},\vec e_x} = \text{image of }\bar{\tilde{Q}}\;}
 $$
 where $\bar{\tilde Q}$ is the conjugation of the coefficients, $i\mapsto -i$, with the units $e_t,\vec e_x,\vec e_y,\vec e_z$ fixed. That map fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, so the identity says that <strong>conjugation by the frame cell is the bar</strong>: it is the spacetime-side avatar of the split into the quaternion sector and its imaginary multiple. It preserves each of the two sectors, because it commutes with the Hermitian conjugation whose fixed spaces they are; the sector exchange is multiplication by $i$, not a conjugation.</p>
-<p>Among the four generators, the frame cell is unique in being the bar itself. Conjugation by any of the four reverses the imaginary cell, since the image of $i$ is $L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.</p>
+<p>Among the four generators, the frame cell is unique in being the bar itself. Conjugation by any of the four reverses the imaginary cell, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.</p>
 <p>The frame cell completes the reading of the three conjugations of $\mathbb{B}$, and the three can be written together. Reversal, $\mathrm{rev}$, is the anti-automorphism that reverses the order of the factors in a product: on an array it is the transpose, and on the biquaternions it is quaternion conjugation. The image does not carry one of the two into the other, because it sends the scalar $i$ to a right multiplication rather than to a scalar, and the frame cell is exactly the difference. Of the three conjugations, the bar and the quaternion conjugation each carry one factor of the frame, and the composite carries none:
 $$
-\text{image of }\bar{\tilde Q}=iR_{\vec e_x}^{\mathrm{axf}}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\vec e_x}^{\mathrm{axf}},
+\text{image of }\bar{\tilde Q}=iR_{\mathrm{axf},\vec e_x}\times\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\mathrm{axf},\vec e_x},
 $$
 $$
-\text{image of }\tilde{Q}^{\natural}=iR_{\vec e_x}^{\mathrm{axf}}\times\mathrm{rev}\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\vec e_x}^{\mathrm{axf}},
+\text{image of }\tilde{Q}^{\natural}=iR_{\mathrm{axf},\vec e_x}\times\mathrm{rev}\bigl(\text{image of }\tilde{Q}\bigr)\times iR_{\mathrm{axf},\vec e_x},
 \qquad
 \boxed{\;\text{image of }\tilde{Q}^{*}=\mathrm{rev}\bigl(\text{image of }\tilde{Q}\bigr)\;}
 $$
@@ -171,7 +171,7 @@ The Hermitian conjugation is therefore the bar composed with the quaternion conj
 <p>With the split in hand, the two sets can be described, and they are not of the same kind.</p>
 <p><strong>The rotations.</strong> The rotors are the unit-norm biquaternions,
 $$
-SL(2,\mathbb{C}) = \{\tilde U^{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1\},
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\},
 $$
 a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_k$ and $i\vec e_k$, $k=1,2,3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, on the elements in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, on states in <em>Quantum Physics in Biquaternionic Form</em>, and in the composition of rotations of <em>Exercise: The Thomas Precession</em>.</p>
 <p>Two subfamilies are worth separating, because the series uses them differently:</p>
@@ -194,28 +194,28 @@ a group of real dimension six, the double cover of the restricted Lorentz group.
 <tr>
 <td>pure boosts</td>
 <td>$\tilde U_{\mathrm b}$ Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$</td>
-<td>$\cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$</td>
+<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$</td>
 <td>a symmetric submanifold, not a group</td>
 </tr>
 </tbody>
 </table></div>
 <p>The boosts do not close under multiplication — the product of two non-collinear boosts is a boost and a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are the exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\vec u_{jk}$.</p>
-<p><strong>The reflections.</strong> A reflection is an odd cell of unit norm, and its data is its <strong>normal</strong>, a unit vector. Writing the vectors as the frame cell applied after the image of $w$ with $w\in\mathbb{M}_+$, the unit normals are those $w$ of norm $+1$ or $-1$, the timelike ones for $\langle w\rangle_{\natural}=+1$ and the spacelike ones for $\langle w\rangle_{\natural}=-1$. The canonical reflection is the frame cell itself, and its normal is the time axis: the vector cell $iR_{\vec e_x}^{\mathrm{axf}}$ is the frame cell applied to the image of $e_t$, which is the identity cell $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$.</p>
+<p><strong>The reflections.</strong> A reflection is an odd cell of unit norm, and its data is its <strong>normal</strong>, a unit vector. Writing the vectors as the frame cell applied after the image of $w$ with $w\in\mathbb{M}_+$, the unit normals are those $w$ of norm $+1$ or $-1$, the timelike ones for $\langle w\rangle_{\natural}=+1$ and the spacelike ones for $\langle w\rangle_{\natural}=-1$. The canonical reflection is the frame cell itself, and its normal is the time axis: the vector cell $iR_{\mathrm{axf},\vec e_x}$ is the frame cell applied to the image of $e_t$, which is the identity cell $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$.</p>
 <p>The reflections do <strong>not</strong> form a group, and this is the sharp difference from the rotations. The product of two reflections is even, a proper transformation, so the set is not closed. The reflections lie in a single coset of the rotation group and split into two orbits, one of timelike normals and one of spacelike normals; a product of one of each is even with norm $-1$, which is the component that reverses time. Their dimension is three, the dimension of the unit quadric, against the six of the rotations. The two sets together are $\mathrm{Pin}(1,3)$, whose even part is $\mathrm{Spin}(1,3)=SL(2,\mathbb{C})$. The relation between the two sets is generation: the rotations are the products of an even number of reflections, and the bivectors that generate the Lorentz algebra are the products of two.</p>
 <p>The reflections account for the four components of the full Lorentz group, and the timelike and the trivector normals give the two classical ones. The action of the frame cell, whose normal is timelike, is time reversal,
 $$
-\rho(iR_{\vec e_x}^{\mathrm{axf}}) : x \mapsto -\,iR_{\vec e_x}^{\mathrm{axf}}\,x\,iR_{\vec e_x}^{\mathrm{axf}} = \mathrm{diag}(-1,+1,+1,+1).
+\rho(iR_{\mathrm{axf},\vec e_x}) : x \mapsto -\,iR_{\mathrm{axf},\vec e_x}\,x\,iR_{\mathrm{axf},\vec e_x} = \mathrm{diag}(-1,+1,+1,+1).
 $$
 Parity is not that map but the action of the trivector in the direction $ie_t$, the product of the three spatial generators,
 $$
-u = iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, \qquad u^2=I_4, \qquad \rho(u) : x \mapsto -\,u\,x\,u = \mathrm{diag}(+1,-1,-1,-1).
+u = iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}, \qquad u^2=I_4, \qquad \rho(u) : x \mapsto -\,u\,x\,u = \mathrm{diag}(+1,-1,-1,-1).
 $$
 Both are reflections, with determinant $-1$; the identity component is the even half, and the discrete symmetries are the reflections.</p>
 <p><strong>The anti-linear case.</strong> The rule just stated — even cells act with determinant $+1$, odd ones with $-1$ — holds for the <strong>linear</strong> action. The discrete operations of the Dirac field are not all linear: $C$ and $T$ are <strong>anti-linear</strong>, and each carries an internal factor. <em>The CPT Theorem in Biquaternionic Form</em> fixes the three,
 $$
-\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \eta_P=iR_{\vec e_x}^{\mathrm{axf}},\qquad \eta_T=-L_{\vec e_y}^{\mathrm{axf}} ,
+\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad \eta_P=iR_{\mathrm{axf},\vec e_x},\qquad \eta_T=-L_{\mathrm{axf},\vec e_y} ,
 $$
-acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec r)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-r'_t)$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:</p>
+acting as $C[\tilde{Ξ}_{\mathrm{sp}}]=\eta_C\tilde{Ξ}_{\mathrm{sp}}^*$, $P[\tilde{Ξ}_{\mathrm{sp}}]=\eta_P\tilde{Ξ}_{\mathrm{sp}}(-\vec r)$ and $T[\tilde{Ξ}_{\mathrm{sp}}]=\eta_T\tilde{Ξ}_{\mathrm{sp}}^*(-r'_t)$, with $\tilde{Ξ}_{\mathrm{sp}}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -230,7 +230,7 @@ acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\til
 <tbody>
 <tr>
 <td>$P$</td>
-<td>$\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$, the frame cell</td>
+<td>$\eta_P=iR_{\mathrm{axf},\vec e_x}$, the frame cell</td>
 <td>odd</td>
 <td>$\vec r$</td>
 <td>$-1$</td>
@@ -238,7 +238,7 @@ acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\til
 </tr>
 <tr>
 <td>$T$</td>
-<td>$\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$</td>
+<td>$\eta_T=-L_{\mathrm{axf},\vec e_y}$</td>
 <td>even</td>
 <td>$r'_t$</td>
 <td>$-1$</td>
@@ -246,7 +246,7 @@ acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\til
 </tr>
 <tr>
 <td>$C$</td>
-<td>$\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
+<td>$\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$</td>
 <td>odd</td>
 <td>none</td>
 <td>$+1$</td>
@@ -262,15 +262,15 @@ $$
 It is a bookkeeping statement of an inversion, not a derivation. Its content is negative and worth stating plainly: for a <strong>linear</strong> map the parity is the reflection count, and for an <strong>anti-linear</strong> one it is not — the two columns are offset by one, and the even factor $\eta_T$ is the reflection while the odd factor $\eta_C$ is not.</p>
 <h2 id="how-many-reflections">How Many Reflections?</h2>
 <p>The theorem gives an upper bound of four reflections in four dimensions. The sharper question — given a rotation, how many reflections does it take — has a clean answer, and it separates the simple Lorentz transformations from the generic ones.</p>
-<p>A product of two reflections is a cell $uv$, with $u$ and $v$ unit vector cells. It is the product of two odd cells, hence even, hence the image of an element $\tilde U^{\mathrm{lor}}$; from here the image of an element is written as the element, and a product of a cell with it is the cell product. The criterion is algebraic. The product $u\tilde U^{\mathrm{lor}}$ has a vector part and a trivector part, and the trivector part is <em>linear</em> in $u$. So the condition that $u\tilde U^{\mathrm{lor}}$ be a vector — that is, that $\tilde U^{\mathrm{lor}}$ be $u$ times a vector — is a system of four linear conditions on the four components of $u$, and it has a nonzero solution exactly when their determinant vanishes:
+<p>A product of two reflections is a cell $uv$, with $u$ and $v$ unit vector cells. It is the product of two odd cells, hence even, hence the image of an element $\tilde U_{\mathrm{lor}}$; from here the image of an element is written as the element, and a product of a cell with it is the cell product. The criterion is algebraic. The product $u\tilde U_{\mathrm{lor}}$ has a vector part and a trivector part, and the trivector part is <em>linear</em> in $u$. So the condition that $u\tilde U_{\mathrm{lor}}$ be a vector — that is, that $\tilde U_{\mathrm{lor}}$ be $u$ times a vector — is a system of four linear conditions on the four components of $u$, and it has a nonzero solution exactly when their determinant vanishes:
 $$
-\tilde U^{\mathrm{lor}} = uv \ \text{for unit vectors}\ u,v
+\tilde U_{\mathrm{lor}} = uv \ \text{for unit vectors}\ u,v
 \quad\Longleftrightarrow\quad
-u\tilde U^{\mathrm{lor}}\ \text{is a vector for some}\ u\neq 0
+u\tilde U_{\mathrm{lor}}\ \text{is a vector for some}\ u\neq 0
 \quad\Longleftrightarrow\quad
 \text{the four conditions are dependent}.
 $$
-Geometrically the criterion is that <strong>$\tilde U^{\mathrm{lor}}$ fixes a two-dimensional subspace pointwise</strong>, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. In the cells the same determinant vanishes exactly when the bivector part of $\tilde U^{\mathrm{lor}}$ is the product of two vectors, and the solutions $u$ are then the vectors of the plane they span; a plane in Lorentzian four-space always contains a non-null vector, so a nonzero solution can be rescaled to a unit normal. The three forms of the criterion agree: the determinant vanishes exactly when the fixed subspace has dimension two.</p>
+Geometrically the criterion is that <strong>$\tilde U_{\mathrm{lor}}$ fixes a two-dimensional subspace pointwise</strong>, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. In the cells the same determinant vanishes exactly when the bivector part of $\tilde U_{\mathrm{lor}}$ is the product of two vectors, and the solutions $u$ are then the vectors of the plane they span; a plane in Lorentzian four-space always contains a non-null vector, so a nonzero solution can be rescaled to a unit normal. The three forms of the criterion agree: the determinant vanishes exactly when the fixed subspace has dimension two.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -310,48 +310,48 @@ Geometrically the criterion is that <strong>$\tilde U^{\mathrm{lor}}$ fixes a tw
 <p>The rule the table obeys is geometric: the transformation is simple exactly when the <strong>boost plane and the rotation plane share a direction</strong>. A pure boost or a pure rotation carries one plane, so the condition is empty; a boost with a rotation in the plane of the boost shares the boost direction; a boost with a rotation about the boost axis shares nothing.</p>
 <p>The factorisations are explicit. The image of a boost is the frame cell times a unit vector,
 $$
-\text{image of }\tilde U_{\mathrm b} = iR_{\vec e_x}^{\mathrm{axf}}\,v ,
+\text{image of }\tilde U_{\mathrm b} = iR_{\mathrm{axf},\vec e_x}\,v ,
 $$
-where $v$ is the unit vector cell whose coordinates in the generator basis $(iR_{\vec e_x}^{\mathrm{axf}},iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})$ are
+where $v$ is the unit vector cell whose coordinates in the generator basis $(iR_{\mathrm{axf},\vec e_x},iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})$ are
 $$
-\Bigl(\cosh\frac{\theta^{\mathrm{rpd}}}{2},\ \sinh\frac{\theta^{\mathrm{rpd}}}{2}u_x,\ \sinh\frac{\theta^{\mathrm{rpd}}}{2}u_y,\ \sinh\frac{\theta^{\mathrm{rpd}}}{2}u_z\Bigr),
+\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2},\ \sinh\frac{\theta_{\mathrm{rpd}}}{2}u_x,\ \sinh\frac{\theta_{\mathrm{rpd}}}{2}u_y,\ \sinh\frac{\theta_{\mathrm{rpd}}}{2}u_z\Bigr),
 $$
-the time axis boosted by <strong>half</strong> the rapidity. The boost is therefore the reflection in the resting time axis composed with the reflection in the moving one, and the half is what makes the two rapidities add to $\theta^{\mathrm{rpd}}$.</p>
-<p>A spatial rotation in the plane spanned by two spatial generators is $iL_{\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,v$ with the vector cell
+the time axis boosted by <strong>half</strong> the rapidity. The boost is therefore the reflection in the resting time axis composed with the reflection in the moving one, and the half is what makes the two rapidities add to $\theta_{\mathrm{rpd}}$.</p>
+<p>A spatial rotation in the plane spanned by two spatial generators is $iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v$ with the vector cell
 $$
-v = -\cos\frac{\theta}{2}\,iL_{\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} + \sin\frac{\theta}{2}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} , \qquad v^2 = -I_4 ,
+v = -\cos\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y} + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} , \qquad v^2 = -I_4 ,
 $$
 so that
 $$
-iL_{\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} .
+iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} .
 $$
 For the plane $(x,y)$ the right-hand side is the image of $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec e_z$, the rotation about $\vec e_z$, and the other coordinate planes follow by relabelling. A generic Lorentz transformation fixes no plane at all, so it needs four reflections, the maximum.</p>
 <p>The answer to the question is therefore: <strong>pure boosts and pure spatial rotations are products of two reflections, and so is a boost with a rotation in the plane of the boost; a generic Lorentz transformation is not, and needs four.</strong> The two-reflection class is a proper submanifold of $SL(2,\mathbb{C})$, cut out by the vanishing of that determinant. The product of two non-collinear boosts stays inside it — the Thomas–Wigner rotation of a composed boost lies in the plane of the two boosts — so what leaves the class is a boost combined with a rotation about the boost axis, that is, a boost and a rotation in orthogonal planes.</p>
 <h2 id="the-two-parts-and-the-reflection">The Two Parts and the Reflection</h2>
 <p>The cell that separates the two parts of an element is the chirality cell of the frame, the product of the four generators,
 $$
--iR_{\vec e_z}^{\mathrm{axf}} = i\,\omega , \qquad
-\omega = iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} ,
+-iR_{\mathrm{axf},\vec e_z} = i\,\omega , \qquad
+\omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} ,
 $$
 where the four scalar factors of $\omega$ multiply to $i^4=1$, so that $\omega$ is a pure product of cells. That product is the pseudoscalar of the frame, $\omega^2=-I_4$, and the chirality cell is a single right multiplication whose square is $I_4$.</p>
-<p><strong>The letter.</strong> An element is $L$ when the chirality cell gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$.</p>
+<p><strong>The letter.</strong> An element is $L$ when the chirality cell gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$.</p>
 <p><strong>Which cells keep it and which exchange it.</strong> A cell acts through its right multiplier: a product takes the letter of its right factor, and left multiplication keeps the letter of its operand. Every even cell has right multiplier $e_t$ or $\vec e_z$ and keeps the letter. Every generator has right multiplier $\vec e_x$ or $\vec e_y$ and exchanges it, so a generator carries the $R$ part into the $L$ part and the $L$ part into the $R$ part.</p>
 <p>Combined with the split established above, the statement is: <strong>rotations keep the letter and reflections exchange it.</strong> A rotation cannot change which part an element belongs to, and a reflection always does. The letter is not an extra label attached to the element; it is the value of the cell that tells the two parts apart, and only the odd half moves it.</p>
 <p>The mass is where the two parts are coupled, and the coupling is the chiral pair of <em>The Dirac Equation in Biquaternionic Form</em>,
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L , \qquad \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L} , \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which every derivative is the gradient and acts by left multiplication. The pair is written once as an operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,
 $$
-\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R),\qquad
-\mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr),
+\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}),\qquad
+\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 $$
-and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. The pair operator is <strong>off-diagonal in the two slots</strong>: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
+and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}_{\mathrm{sp}}=0$. The pair operator is <strong>off-diagonal in the two slots</strong>: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
 $$
-\mathbb{D}^2\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{sp}} ,
+\mathbb{D}^2\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\bigr)=\Box\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 with $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.</p>
-<p>The consequence is immediate. Set $\tilde{Ξ}^{\mathrm{sp}}_R=0$ in a massive field: the first member reads $0=m\tilde{Ξ}^{\mathrm{sp}}_L$, so $\tilde{Ξ}^{\mathrm{sp}}_L=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.</p>
+<p>The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.</p>
 <p>The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
 \mathfrak{so}(1,3)_{\mathbb{C}} \cong \mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C}),
@@ -372,12 +372,12 @@ under which a finite-dimensional representation is labelled by a pair $(j_1,j_2)
 <td>in neither copy; no letter exists</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_L$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},L}$</td>
 <td>$(\tfrac12,0)$</td>
 <td>in the first copy alone</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>$(0,\tfrac12)$</td>
 <td>in the second copy alone</td>
 </tr>
@@ -393,13 +393,13 @@ under which a finite-dimensional representation is labelled by a pair $(j_1,j_2)
 $$
 \mathsf{P} : (\tfrac12,0) \longleftrightarrow (0,\tfrac12).
 $$
-It is odd in both readings: the trivector $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for the geometric reflection, the internal factor $\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$ for the parity of the Dirac field. Every odd cell carries the $R$ part into the $L$ part, so the exchange of the parts is the parity.</p>
+It is odd in both readings: the trivector $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ for the geometric reflection, the internal factor $\eta_P=iR_{\mathrm{axf},\vec e_x}$ for the parity of the Dirac field. Every odd cell carries the $R$ part into the $L$ part, so the exchange of the parts is the parity.</p>
 <p>Parity violation — the statement that the weak interaction couples to one part and not the other — is therefore not an accidental property of the Standard Model but the statement that the interaction distinguishes the two copies of the complexified Lorentz algebra. This is what <em>Chiral Fermions in the Biquaternion Framework</em> and <em>The Neutrino and Majorana Fermions in Biquaternionic Form</em> develop on the physical side.</p>
 <h2 id="why-three-generators-cannot-carry-the-letter">Why Three Generators Cannot Carry the Letter</h2>
 <p>The non-relativistic limit keeps three directions and drops the time generator, and it is natural to ask whether the letter could have been defined there. It could not, and the reason is algebraic and exact.</p>
-<p>Take the algebra generated by the three spatial generators, $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. Their product is odd, it squares to $+I_4$, and it commutes with all three:
+<p>Take the algebra generated by the three spatial generators, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$. Their product is odd, it squares to $+I_4$, and it commutes with all three:
 $$
-\bigl(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\;iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\;iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr)^2 = I_4 .
+\bigl(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\;iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\;iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}\bigr)^2 = I_4 .
 $$
 A cell that commutes with the three generators multiplies each of the two irreducible pieces they act on by a scalar, so it separates the elements into two halves that the three generators never mix. That is a copy index of the algebra, and not the letter: the letter must be a value that the <em>odd</em> cells exchange, and a cell that commutes with them cannot supply one.</p>
 <p>The other half of the argument is the same statement read backwards. A cell that all three generators exchange must anticommute with all three, and the algebra of the three contains no such cell: its even part is spanned by the identity and the three products of two generators, a product of two anticommutes with the two it carries and commutes with the third, so a combination that anticommuted with all three would have to vanish. The odd part contains the triple product, which commutes. There is nowhere to put the letter.</p>
@@ -459,7 +459,7 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>$L_{a}R_{b}$</td>
-<td>Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}^{\mathrm{sp}} = a\tilde{Ξ}^{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$</td>
+<td>Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}} = a\tilde{Ξ}_{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$</td>
 </tr>
 <tr>
 <td>image of $\tilde Q$</td>
@@ -467,34 +467,34 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>the four frame cells</td>
-<td>The generator cells: $iR_{\vec e_x}^{\mathrm{axf}}$, and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=1,2,3$</td>
+<td>The generator cells: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $k=1,2,3$</td>
 </tr>
 <tr>
-<td>$\omega = iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
+<td>$\omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$</td>
 <td>Pseudoscalar, $\omega^2 = -I_4$; its four factors of $i$ multiply to $i^4=1$</td>
 </tr>
 <tr>
-<td>$-iR_{\vec e_z}^{\mathrm{axf}} = i\omega = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
-<td>Chirality cell, $(-iR_{\vec e_z}^{\mathrm{axf}})^{2} = I_4$</td>
+<td>$-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$</td>
+<td>Chirality cell, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$</td>
 </tr>
 <tr>
 <td>the $L$ part, the $R$ part</td>
 <td>The two parts of an element: the value $-1$ and the value $+1$ of the chirality cell</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}_{L,R}$</td>
+<td>$\tilde{Ξ}_{\mathrm{sp},L,R}$</td>
 <td>The two parts of a field</td>
 </tr>
 <tr>
 <td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
-<td>The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members</td>
+<td>The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members</td>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots</td>
+<td>The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots</td>
 </tr>
 <tr>
-<td>$iR_{\vec e_x}^{\mathrm{axf}}$</td>
+<td>$iR_{\mathrm{axf},\vec e_x}$</td>
 <td>The frame cell; the reflection whose normal is $e_t$</td>
 </tr>
 <tr>
@@ -507,18 +507,18 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>Frame conjugation</td>
-<td>Conjugating the image of $\tilde{Q}$ by $iR_{\vec e_x}^{\mathrm{axf}}$ gives the image of $\bar{\tilde{Q}}$</td>
+<td>Conjugating the image of $\tilde{Q}$ by $iR_{\mathrm{axf},\vec e_x}$ gives the image of $\bar{\tilde{Q}}$</td>
 </tr>
 <tr>
 <td>Hermitian conjugation</td>
 <td>The image of $\tilde{Q}^{*}$ is the reversed image of $\tilde{Q}$, that is its transpose; $*$ is the bar composed with $\natural$, and the two frame factors cancel</td>
 </tr>
 <tr>
-<td>$\tilde U^{\mathrm{lor}}$, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$</td>
+<td>$\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$</td>
 <td>Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}_2 = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$</td>
+<td>$\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$</td>
 <td>Rotor conjugation on $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -531,7 +531,7 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>the four conditions</td>
-<td>Two-reflection criterion: they are dependent iff $\tilde U^{\mathrm{lor}}$ fixes a plane pointwise</td>
+<td>Two-reflection criterion: they are dependent iff $\tilde U_{\mathrm{lor}}$ fixes a plane pointwise</td>
 </tr>
 <tr>
 <td>$\det = (-1)^{k}(-1)^{\text{anti}}$</td>
@@ -539,10 +539,10 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>$\mathsf{P}$</td>
-<td>Parity reflection; the trivector cell $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$; exchanges the two parts</td>
+<td>Parity reflection; the trivector cell $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$; exchanges the two parts</td>
 </tr>
 <tr>
-<td>$\eta_P = iR_{\vec e_x}^{\mathrm{axf}}$</td>
+<td>$\eta_P = iR_{\mathrm{axf},\vec e_x}$</td>
 <td>The internal factor of the parity of the Dirac field; odd, so it carries the $R$ part into the $L$ part</td>
 </tr>
 </tbody>

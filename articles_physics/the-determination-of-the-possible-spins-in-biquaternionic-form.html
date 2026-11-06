@@ -164,18 +164,18 @@ $$</p>
 \varepsilon_\pm=\mp\tfrac{1}{\sqrt2}(\vec e_x\pm i\vec e_y),\qquad\varepsilon_0=\vec e_z ,
 $$</p>
 <p>the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.</p>
-<p><strong>The operators.</strong> With $\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,</p>
+<p><strong>The operators.</strong> With $\tilde S_{\mathrm{adj},k}^{()}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,</p>
 <p>$$
-\tilde S^{(\mathrm{adj})\,2}=2\hbar^2\operatorname{id}_V,\qquad
-\tilde S^{(\mathrm{adj})}_3\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-\tilde S^{(\mathrm{adj})}_3\varepsilon_0=0 .
+\tilde S_{\mathrm{adj}}^{()\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S_{\mathrm{adj},3}^{()}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S_{\mathrm{adj},3}^{()}\varepsilon_0=0 .
 $$</p>
-<p>The Casimir follows from $C=(\tilde S^{(\mathrm{adj})}_3)^2+\tfrac12(\tilde S^{(\mathrm{adj})}_+\tilde S^{(\mathrm{adj})}_-+\tilde S^{(\mathrm{adj})}_-\tilde S^{(\mathrm{adj})}_+)$ and the ladder actions</p>
+<p>The Casimir follows from $C=(\tilde S_{\mathrm{adj},3}^{()})^2+\tfrac12(\tilde S_{\mathrm{adj},+}^{()}\tilde S_{\mathrm{adj},-}^{()}+\tilde S_{\mathrm{adj},-}^{()}\tilde S_{\mathrm{adj},+}^{()})$ and the ladder actions</p>
 <p>$$
-\tilde S^{(\mathrm{adj})}_+\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-\tilde S^{(\mathrm{adj})}_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
-\tilde S^{(\mathrm{adj})}_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-\tilde S^{(\mathrm{adj})}_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
+\tilde S_{\mathrm{adj},+}^{()}\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S_{\mathrm{adj},+}^{()}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
+\tilde S_{\mathrm{adj},-}^{()}\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S_{\mathrm{adj},-}^{()}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
 $$</p>
 <p>which give $C=2\hbar^2$ on all three states. The value is $\hbar^2s(s+1)$ at $s=1$. There are three states.</p>
 <p><strong>The physical interpretation.</strong> A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.</p>
@@ -206,9 +206,9 @@ $$</p>
 <h2 id="the-classical-limit">The Classical Limit</h2>
 <p><strong>The coherent-state action.</strong> The spin path integral is written on the sphere of coherent states. Its kinetic term is the Wess–Zumino term</p>
 <p>$$
-S_{WZ}=i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle\,dr'_t=-s\hbar\,\theta^{\mathrm{sol}},
+S_{WZ}=i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle\,dr'_t=-s\hbar\,\theta_{\mathrm{sol}},
 $$</p>
-<p>where $\theta^{\mathrm{sol}}$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\hbar\theta^{\mathrm{sol}}/2$, the spinor phase.</p>
+<p>where $\theta_{\mathrm{sol}}$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\hbar\theta_{\mathrm{sol}}/2$, the spinor phase.</p>
 <p><strong>The two quantities.</strong> The direction is the loop on the sphere; the spin is the coefficient of the term. The Berry phase of the spin-$s$ coherent state carries the factor $s$, and the classical Hannay angle does not. The factor is the label; the trajectory is the direction.</p>
 <p><strong>The boundary.</strong> The vector picture is the classical limit. The spin vector $\langle\vec S\rangle=\hbar s\vec u$ is an expectation value, not the definition. The definition is the Casimir label.</p>
 <h2 id="what-the-framework-does-not-say">What the Framework Does Not Say</h2>
@@ -264,12 +264,12 @@ $$</p>
 <td>The spin-half operators</td>
 </tr>
 <tr>
-<td>$\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$</td>
+<td>$\tilde S_{\mathrm{adj},k}^{()}=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$</td>
 <td>The spin-one generators</td>
 </tr>
 <tr>
-<td>$C=\tilde S^{(\mathrm{adj})\,2}$</td>
-<td>The Casimir, $\sum_k(\tilde S^{(\mathrm{adj})}_k)^2$</td>
+<td>$C=\tilde S_{\mathrm{adj}}^{()\,2}$</td>
+<td>The Casimir, $\sum_k(\tilde S_{\mathrm{adj},k}^{()})^2$</td>
 </tr>
 <tr>
 <td>$s$</td>

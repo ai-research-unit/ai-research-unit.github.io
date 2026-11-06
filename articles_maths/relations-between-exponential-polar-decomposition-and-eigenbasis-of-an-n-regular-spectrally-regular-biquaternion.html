@@ -84,10 +84,10 @@ $$</p>
 <p>with $\lambda_\pm$ the complex eigenvalues and $\tilde\Pi_\pm$ the eigenprojections. The square root is the branch fixed by the labelling of the two eigenvalues; the other branch exchanges $\lambda_+$ with $\lambda_-$ and $\tilde\Pi_+$ with $\tilde\Pi_-$. The <strong>exponential polar decomposition</strong> of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em> writes every invertible $\tilde Q$ as</p>
 <p>$$
 \tilde Q=r\,\exp(i\alpha)\,
-\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,
+\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>with $r>0$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$. This article states the relation between the two writings. It repeats no proof from the three source articles: the spectrum and the eigenprojections are those of the eigenvalue article, the exponential and the logarithm are those of the elementary article, and the polar word is that of the polar article.</p>
+<p>with $r>0$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$. This article states the relation between the two writings. It repeats no proof from the three source articles: the spectrum and the eigenprojections are those of the eigenvalue article, the exponential and the logarithm are those of the elementary article, and the polar word is that of the polar article.</p>
 <p>The relation is richer than in the two commutative cases. There the eigenprojections are fixed and the two eigenvalues determine the polar parameters. Here the eigenprojections vary with the element, and the eigenvalues alone determine the modulus, the phase, and the two eigenvalues $\lambda_\pm/(re^{i\alpha})$ of the unit factor, equivalently its scalar part and $D=(\vec U\cdot\vec U)^{1/2}$. The remaining polar data — the split between the boost and the rotor and the two axes — are carried by the eigenprojections, or equivalently by the Cartan decomposition of the unit factor. The dictionary is therefore a two-step one: the eigenvalues give the scalar factor and the eigenvalues of the unit factor; the eigenprojections complete the unit factor.</p>
 <p><strong>The results.</strong> The product of the eigenvalues is the reduced product,</p>
 <p>$$
@@ -102,10 +102,10 @@ $$</p>
 <p>and their sum is twice the scalar part:</p>
 <p>$$
 \frac{\lambda_++\lambda_-}{re^{i\alpha}}=2\operatorname{Sc}\tilde U
-=2\Bigl(\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
+=2\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
 $$</p>
-<p>This is one complex equation for the three real data $(\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})$. The eigenvalues therefore leave one real degree of freedom among the boost, the rotor and the angle between the axes; the eigenprojections supply it, together with the directions of the axes. The table summarises what each side determines.</p>
+<p>This is one complex equation for the three real data $(\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})$. The eigenvalues therefore leave one real degree of freedom among the boost, the rotor and the angle between the axes; the eigenprojections supply it, together with the directions of the axes. The table summarises what each side determines.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -128,7 +128,7 @@ $$</p>
 </tr>
 <tr>
 <td>Polar parameters</td>
-<td>$r>0$, $\alpha$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
+<td>$r>0$, $\alpha$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>Scalar factor from eigenvalues</td>
@@ -140,7 +140,7 @@ $$</p>
 </tr>
 <tr>
 <td>Scalar part of the unit factor</td>
-<td>$\operatorname{Sc}\tilde U=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}$</td>
+<td>$\operatorname{Sc}\tilde U=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}$</td>
 </tr>
 <tr>
 <td>Eigenprojections from polar data</td>
@@ -215,7 +215,7 @@ $$</p>
 <p>$$
 \tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
+\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \quad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
@@ -223,7 +223,7 @@ $$</p>
 <p>$$
 r>0,\quad
 \alpha\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\quad
-\theta^{\mathrm{rpd}}\ge0,\quad
+\theta_{\mathrm{rpd}}\ge0,\quad
 \theta\in[0,2\pi],\quad
 \lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1.
 $$</p>
@@ -254,7 +254,7 @@ $$</p>
 </tr>
 <tr>
 <td>Boost</td>
-<td>$\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$, $\theta^{\mathrm{rpd}}\ge0$</td>
+<td>$\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$, $\theta_{\mathrm{rpd}}\ge0$</td>
 </tr>
 <tr>
 <td>Rotor</td>
@@ -307,7 +307,7 @@ $$</p>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t\neq0$</td>
 <td>one repeated nonzero</td>
 <td>one-term, $\tilde Q=Q_t e_t$</td>
-<td>yes, with $\theta^{\mathrm{rpd}}=0$ and $\theta\in\{0,2\pi\}$</td>
+<td>yes, with $\theta_{\mathrm{rpd}}=0$ and $\theta\in\{0,2\pi\}$</td>
 </tr>
 <tr>
 <td>Jordan</td>
@@ -447,27 +447,27 @@ $$</p>
 <p><strong>Proposition (the scalar-part formula).</strong> With $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,</p>
 <p>$$
 \boxed{\; \operatorname{Sc}\tilde U
-=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
+=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
 \qquad
 \lambda_++\lambda_-=2re^{i\alpha}\operatorname{Sc}\tilde U \;}.
 $$</p>
 <p><em>Proof.</em> The scalar part of a product of two biquaternions is $\operatorname{Sc}(XY)=X_0Y_0-\vec X\cdot\vec Y$. For</p>
 <p>$$
-\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r},
 $$</p>
 <p>the scalar part is</p>
 <p>$$
-\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--\Bigl(i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\cdot
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-\Bigl(i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\cdot
 \Bigl(\sin\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)
-=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}.
+=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}.
 $$</p>
 <p>The trace of the matrix model is twice the scalar part, and the trace is the sum of the eigenvalues; the second identity follows.</p>
-<p>The formula is the exact obstruction to reading the polar word from the eigenvalues. The right-hand side depends on the three real numbers $\theta^{\mathrm{rpd}}/2\ge0$, $\theta/2\in[0,\pi]$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\in[-1,1]$, but only through their two real combinations $\cosh(\theta^{\mathrm{rpd}}/2)\cos(\theta/2)$ and $(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh(\theta^{\mathrm{rpd}}/2)\sin(\theta/2)$. One real degree of freedom among the three is invisible to $\operatorname{Sc}\tilde U$, and therefore to the eigenvalues. The two axes are invisible to $\operatorname{Sc}\tilde U$ as well; the eigenprojections carry the complex line of $\vec U$, four real parameters, which encodes both the missing degree and the directions.</p>
+<p>The formula is the exact obstruction to reading the polar word from the eigenvalues. The right-hand side depends on the three real numbers $\theta_{\mathrm{rpd}}/2\ge0$, $\theta/2\in[0,\pi]$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\in[-1,1]$, but only through their two real combinations $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta/2)$ and $(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh(\theta_{\mathrm{rpd}}/2)\sin(\theta/2)$. One real degree of freedom among the three is invisible to $\operatorname{Sc}\tilde U$, and therefore to the eigenvalues. The two axes are invisible to $\operatorname{Sc}\tilde U$ as well; the eigenprojections carry the complex line of $\vec U$, four real parameters, which encodes both the missing degree and the directions.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -484,7 +484,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U_t=\operatorname{Sc}\tilde U$</td>
-<td>$\theta^{\mathrm{rpd}}/2$, $\theta/2$, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{rpd}}/2$, $\theta/2$, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$</td>
 <td>yes: $U_t=(\lambda_++\lambda_-)/(2re^{i\alpha})$</td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ $$</p>
 <td>yes</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}/2$, $\theta/2$, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ separately</td>
+<td>$\theta_{\mathrm{rpd}}/2$, $\theta/2$, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ separately</td>
 <td>the unit factor</td>
 <td>no: one real degree of freedom</td>
 </tr>
@@ -520,13 +520,13 @@ $$</p>
 \vec{Ζ}=-i\frac{\vec Q}{\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}}
 =-i\frac{\vec U}{\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 $$</p>
-<p>where $U_x,U_y,U_z$ are the vector coefficients of $\tilde U$. The formula requires $\vec U\cdot\vec U\neq0$; when the denominator vanishes there is no eigenprojection. The eigenprojections depend only on $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not on the scalar factor $re^{i\alpha}$. In the polar word they are therefore functions of $(\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$, and at the boundary they become the idempotents of the pure root $\vec{Ζ}$.</p>
+<p>where $U_x,U_y,U_z$ are the vector coefficients of $\tilde U$. The formula requires $\vec U\cdot\vec U\neq0$; when the denominator vanishes there is no eigenprojection. The eigenprojections depend only on $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not on the scalar factor $re^{i\alpha}$. In the polar word they are therefore functions of $(\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$, and at the boundary they become the idempotents of the pure root $\vec{Ζ}$.</p>
 <p>The two decompositions see the unit factor in two different ways:</p>
 <ul>
 <li>the <strong>eigenvalue decomposition</strong> sees it through the two eigenvalues $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ and the two eigenprojections $\tilde\Pi_\pm$; the eigenvalues give $U_t$ and $D=(\vec U\cdot\vec U)^{1/2}$, and the eigenprojections give the eigendirections;</li>
-<li>the <strong>Cartan decomposition</strong> sees it through the rapidity $\theta^{\mathrm{rpd}}$, the angle $\theta$ and the two axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$.</li>
+<li>the <strong>Cartan decomposition</strong> sees it through the rapidity $\theta_{\mathrm{rpd}}$, the angle $\theta$ and the two axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$.</li>
 </ul>
-<p>Both are six real parameters: the two eigenvalues of $\tilde U$ are two complex numbers of product one, hence two real; an eigenprojection is four real; and $\theta^{\mathrm{rpd}},\theta$ with two unit vectors are six real. The dictionary between them is nonlinear and is the content of the scalar-part formula and of the eigenprojector formula. The next subsections record its two directions in full; the two extreme cases follow.</p>
+<p>Both are six real parameters: the two eigenvalues of $\tilde U$ are two complex numbers of product one, hence two real; an eigenprojection is four real; and $\theta_{\mathrm{rpd}},\theta$ with two unit vectors are six real. The dictionary between them is nonlinear and is the content of the scalar-part formula and of the eigenprojector formula. The next subsections record its two directions in full; the two extreme cases follow.</p>
 <h3 id="the-polar-factors-from-the-spectral-data">The Polar Factors from the Spectral Data</h3>
 <p>The spectral data are the two eigenvalues $\lambda_\pm$ and the two eigenprojections $\tilde\Pi_\pm$. The polar word is recovered in five steps.</p>
 <p><strong>Step 1: the scalar factor.</strong> The product of the eigenvalues fixes the principal square root:</p>
@@ -556,20 +556,20 @@ $$</p>
 <p>The square root is the unique positive Hermitian square root. Since $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*=e_t$, one has</p>
 <p>$$
 \tilde U\tilde U^*=\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}^2
-=\cosh\theta^{\mathrm{rpd}}\,e_t+i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b},
+=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
 $$</p>
-<p>so the formula returns the boost $\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is $*$-unitary of determinant one. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.</p>
+<p>so the formula returns the boost $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is $*$-unitary of determinant one. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.</p>
 <p><strong>Step 4: the two angles and the two axes.</strong> From the closed forms</p>
 <p>$$
-\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r},
 $$</p>
 <p>the scalar and vector parts read</p>
 <p>$$
-\frac{\theta^{\mathrm{rpd}}}{2}=\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr),
+\frac{\theta_{\mathrm{rpd}}}{2}=\operatorname{arcosh}\bigl(\operatorname{Sc}\tilde U_{\mathrm b}\bigr),
 \qquad
-\vec u_{\mathrm b}=\frac{\operatorname{Vect}\tilde U_{\mathrm b}}{i\sinh(\theta^{\mathrm{rpd}}/2)},
+\vec u_{\mathrm b}=\frac{\operatorname{Vect}\tilde U_{\mathrm b}}{i\sinh(\theta_{\mathrm{rpd}}/2)},
 $$</p>
 <p>$$
 \frac{\theta}{2}=\arccos\bigl(\operatorname{Sc}\tilde u_{\mathrm r}\bigr),
@@ -586,8 +586,8 @@ $$</p>
 \frac{\operatorname{Vect}\tilde u_{\mathrm r}}
 {\bigl(1-(\operatorname{Sc}\tilde u_{\mathrm r})^2\bigr)^{1/2}},
 $$</p>
-<p>with the square-root branches chosen so that the two vectors are real and of unit length. The first radicand is real because $\operatorname{Sc}\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)\ge1$; the second is real because $\operatorname{Sc}\tilde u_{\mathrm r}=\cos(\theta/2)\in[-1,1]$ and $\theta/2\in[0,\pi]$.</p>
-<p><strong>Step 5: what can fail.</strong> The denominators $\sinh(\theta^{\mathrm{rpd}}/2)$, $\sin(\theta/2)$ and $(\vec U\cdot\vec U)^{1/2}$ must be nonzero. When $\theta^{\mathrm{rpd}}=0$, the boost is the identity and $\vec u_{\mathrm b}$ is undefined. When $\theta\in\{0,2\pi\}$, the rotor is $\pm e_t$ and $\vec u_{\mathrm r}$ is undefined. When $\vec U\cdot\vec U=0$, the eigenprojection formula fails, the two eigenvalues of $\tilde U$ coincide, and $\tilde U$ is a Jordan element. In each case the corresponding axis or eigendirection is undefined, while the other factors and the scalar factor remain defined.</p>
+<p>with the square-root branches chosen so that the two vectors are real and of unit length. The first radicand is real because $\operatorname{Sc}\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)\ge1$; the second is real because $\operatorname{Sc}\tilde u_{\mathrm r}=\cos(\theta/2)\in[-1,1]$ and $\theta/2\in[0,\pi]$.</p>
+<p><strong>Step 5: what can fail.</strong> The denominators $\sinh(\theta_{\mathrm{rpd}}/2)$, $\sin(\theta/2)$ and $(\vec U\cdot\vec U)^{1/2}$ must be nonzero. When $\theta_{\mathrm{rpd}}=0$, the boost is the identity and $\vec u_{\mathrm b}$ is undefined. When $\theta\in\{0,2\pi\}$, the rotor is $\pm e_t$ and $\vec u_{\mathrm r}$ is undefined. When $\vec U\cdot\vec U=0$, the eigenprojection formula fails, the two eigenvalues of $\tilde U$ coincide, and $\tilde U$ is a Jordan element. In each case the corresponding axis or eigendirection is undefined, while the other factors and the scalar factor remain defined.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -619,7 +619,7 @@ $$</p>
 <tr>
 <td>4</td>
 <td>$\tilde U_{\mathrm b}$</td>
-<td>$\theta^{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta^{\mathrm{rpd}}/2))$</td>
+<td>$\theta_{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta_{\mathrm{rpd}}/2))$</td>
 <td>rapidity and boost axis</td>
 </tr>
 <tr>
@@ -639,14 +639,14 @@ $$</p>
 <p><strong>The factors one by one.</strong> Each polar factor has its own spectral decomposition, with idempotents built on its own axis. Since $(i\vec u_{\mathrm b})^2=e_t$ and $(i\vec u_{\mathrm r})^2=e_t$,</p>
 <p>$$
 \tilde U_{\mathrm b}
-=e^{\theta^{\mathrm{rpd}}/2}\frac{e_t+i\vec u_{\mathrm b}}{2}
-+e^{-\theta^{\mathrm{rpd}}/2}\frac{e_t-i\vec u_{\mathrm b}}{2},
+=e^{\theta_{\mathrm{rpd}}/2}\frac{e_t+i\vec u_{\mathrm b}}{2}
++e^{-\theta_{\mathrm{rpd}}/2}\frac{e_t-i\vec u_{\mathrm b}}{2},
 \qquad
 \tilde u_{\mathrm r}
 =e^{-i\theta/2}\frac{e_t+i\vec u_{\mathrm r}}{2}
 +e^{i\theta/2}\frac{e_t-i\vec u_{\mathrm r}}{2}.
 $$</p>
-<p>The first line exhibits the boost on the idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm b})$, with eigenvalues $e^{\pm\theta^{\mathrm{rpd}}/2}$; the second exhibits the rotor on the idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm r})$, with eigenvalues $e^{\mp i\theta/2}$. The table collects the chain.</p>
+<p>The first line exhibits the boost on the idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm b})$, with eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$; the second exhibits the rotor on the idempotents $\tfrac12(e_t\pm i\vec u_{\mathrm r})$, with eigenvalues $e^{\mp i\theta/2}$. The table collects the chain.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -659,9 +659,9 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde U_{\mathrm b}$</td>
-<td>$\exp\bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$</td>
-<td>$e^{\theta^{\mathrm{rpd}}/2}\frac{e_t+i\vec u_{\mathrm b}}{2}+e^{-\theta^{\mathrm{rpd}}/2}\frac{e_t-i\vec u_{\mathrm b}}{2}$</td>
-<td>$e^{\theta^{\mathrm{rpd}}/2},e^{-\theta^{\mathrm{rpd}}/2}$</td>
+<td>$\exp\bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$</td>
+<td>$e^{\theta_{\mathrm{rpd}}/2}\frac{e_t+i\vec u_{\mathrm b}}{2}+e^{-\theta_{\mathrm{rpd}}/2}\frac{e_t-i\vec u_{\mathrm b}}{2}$</td>
+<td>$e^{\theta_{\mathrm{rpd}}/2},e^{-\theta_{\mathrm{rpd}}/2}$</td>
 </tr>
 <tr>
 <td>$\tilde u_{\mathrm r}$</td>
@@ -685,9 +685,9 @@ $$</p>
 </table></div>
 <p>where $D=(\vec U\cdot\vec U)^{1/2}$. The unit factor is not generally the exponential of the sum of the two exponents: the product of the two exponentials is the exponential of the sum only when the axes commute or one of the angles vanishes. This is the spectral reason the four factors do not merge.</p>
 <h3 id="the-spectral-data-from-the-polar-factors">The Spectral Data from the Polar Factors</h3>
-<p>Given $r,\alpha$ and the four polar data $\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$, form</p>
+<p>Given $r,\alpha$ and the four polar data $\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$, form</p>
 <p>$$
-\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r},
 \qquad
@@ -696,14 +696,14 @@ $$</p>
 <p>Write $\tilde U=U_te_t+\vec U$. The scalar part and the vector part are those of the product:</p>
 <p>$$
 U_t=\operatorname{Sc}\tilde U
-=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
+=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
 $$</p>
 <p>$$
 \vec U=\operatorname{Vect}\tilde U
-=i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}\vec u_{\mathrm b}
-+\cosh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\vec u_{\mathrm r}
-+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
+=i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}\vec u_{\mathrm b}
++\cosh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\vec u_{\mathrm r}
++i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
 $$</p>
 <p>Then</p>
 <p>$$
@@ -750,7 +750,7 @@ $$</p>
 <td>$\lambda_\pm/(r e^{i\alpha})$</td>
 <td>the two eigenvalues of $\tilde U$</td>
 <td>$U_t\pm i(\vec U\cdot\vec U)^{1/2}$</td>
-<td>one real degree in $\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and three in the pair of axes</td>
+<td>one real degree in $\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and three in the pair of axes</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm$, equivalently $\vec{Ζ}$</td>
@@ -773,8 +773,8 @@ $$</p>
 <tr>
 <td>$\tilde U_{\mathrm b}$</td>
 <td>rapidity and boost axis</td>
-<td>$\theta^{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta^{\mathrm{rpd}}/2))$</td>
-<td>axis if $\theta^{\mathrm{rpd}}=0$</td>
+<td>$\theta_{\mathrm{rpd}}=2\operatorname{arcosh}(\operatorname{Sc}\tilde U_{\mathrm b})$, $\vec u_{\mathrm b}=\operatorname{Vect}\tilde U_{\mathrm b}/(i\sinh(\theta_{\mathrm{rpd}}/2))$</td>
+<td>axis if $\theta_{\mathrm{rpd}}=0$</td>
 </tr>
 <tr>
 <td>$\tilde u_{\mathrm r}$</td>
@@ -783,40 +783,40 @@ $$</p>
 <td>axis if $\theta\in\{0,2\pi\}$</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 <td>the eigenvalues and eigenprojections</td>
 <td>the formulas of §<em>The Spectral Data from the Polar Factors</em></td>
 <td>—</td>
 </tr>
 </tbody>
 </table></div>
-<p>Read down the table for the direction spectral to polar and up for the direction polar to spectral. The eigenvalues carry the scalar factor and the two eigenvalues of the unit factor; the eigenprojections carry the eigendirections. The angles and axes are a second coordinate system on the same six real dimensions: $U_t$ (two real) and $\vec{Ζ}$ (four real) on one side, $\theta^{\mathrm{rpd}},\theta$ and two unit vectors (six real) on the other. The nonlinear dictionary is the content of the scalar-part formula and of the Cartan square root.</p>
+<p>Read down the table for the direction spectral to polar and up for the direction polar to spectral. The eigenvalues carry the scalar factor and the two eigenvalues of the unit factor; the eigenprojections carry the eigendirections. The angles and axes are a second coordinate system on the same six real dimensions: $U_t$ (two real) and $\vec{Ζ}$ (four real) on one side, $\theta_{\mathrm{rpd}},\theta$ and two unit vectors (six real) on the other. The nonlinear dictionary is the content of the scalar-part formula and of the Cartan square root.</p>
 <h3 id="the-parallel-axis-case">The Parallel-Axis Case</h3>
 <p>When the axes are parallel or antiparallel, the boost and the rotor commute and the four factors amalgamate into one exponential (<em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>One Exponential</em>). The eigenvalues then determine the rapidity and the angle; the common axis remains the spectral datum of the eigenprojection, and the dictionary closes once that axis is read.</p>
 <p>For $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec u$,</p>
 <p>$$
-\tilde U=\exp\Bigl(\bigl(\frac{\theta}{2}+i\frac{\theta^{\mathrm{rpd}}}{2}\bigr)\vec u\Bigr),
+\tilde U=\exp\Bigl(\bigl(\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\bigr)\vec u\Bigr),
 \qquad
-\lambda_+=r e^{i\alpha}e^{i\theta/2-\theta^{\mathrm{rpd}}/2},
+\lambda_+=r e^{i\alpha}e^{i\theta/2-\theta_{\mathrm{rpd}}/2},
 \qquad
-\lambda_-=r e^{i\alpha}e^{-i\theta/2+\theta^{\mathrm{rpd}}/2},
+\lambda_-=r e^{i\alpha}e^{-i\theta/2+\theta_{\mathrm{rpd}}/2},
 $$</p>
-<p>so the eigenvalues determine $\theta^{\mathrm{rpd}}$ and $\theta$:</p>
+<p>so the eigenvalues determine $\theta_{\mathrm{rpd}}$ and $\theta$:</p>
 <p>$$
-\theta^{\mathrm{rpd}}=2\ln\Bigl\lvert\frac{r e^{i\alpha}}{\lambda_+}\Bigr\rvert
+\theta_{\mathrm{rpd}}=2\ln\Bigl\lvert\frac{r e^{i\alpha}}{\lambda_+}\Bigr\rvert
 =2\ln\Bigl\lvert\frac{\lambda_-}{r e^{i\alpha}}\Bigr\rvert,
 \qquad
 \theta=2\operatorname{Arg}\Bigl(\frac{\lambda_+}{r e^{i\alpha}}\Bigr),
 $$</p>
 <p>with the branch of $\theta$ fixed by $[0,2\pi]$; for antiparallel axes the argument is $-\theta/2$, and the sign of the formula for $\theta$ is reversed. For $\vec u_{\mathrm b}=-\vec u_{\mathrm r}$ ($\vec u_{\mathrm b}=\vec u$, $\vec u_{\mathrm r}=-\vec u$),</p>
 <p>$$
-\tilde U=\exp\Bigl(\bigl(-\frac{\theta}{2}+i\frac{\theta^{\mathrm{rpd}}}{2}\bigr)\vec u\Bigr),
+\tilde U=\exp\Bigl(\bigl(-\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\bigr)\vec u\Bigr),
 \qquad
-\lambda_+=r e^{i\alpha}e^{-i\theta/2-\theta^{\mathrm{rpd}}/2},
+\lambda_+=r e^{i\alpha}e^{-i\theta/2-\theta_{\mathrm{rpd}}/2},
 \qquad
-\lambda_-=r e^{i\alpha}e^{i\theta/2+\theta^{\mathrm{rpd}}/2},
+\lambda_-=r e^{i\alpha}e^{i\theta/2+\theta_{\mathrm{rpd}}/2},
 $$</p>
-<p>and the signs of $\theta$ are exchanged in the two eigenvalues, while those of $\theta^{\mathrm{rpd}}$ are not. The table collects the two alignments.</p>
+<p>and the signs of $\theta$ are exchanged in the two eigenvalues, while those of $\theta_{\mathrm{rpd}}$ are not. The table collects the two alignments.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -831,39 +831,39 @@ $$</p>
 <tr>
 <td>$\vec u_{\mathrm b}=\vec u_{\mathrm r}$</td>
 <td>$1$</td>
-<td>$\exp\bigl((\frac{\theta}{2}+i\frac{\theta^{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
-<td>$r e^{i\alpha}e^{i\theta/2-\theta^{\mathrm{rpd}}/2}$</td>
-<td>$r e^{i\alpha}e^{-i\theta/2+\theta^{\mathrm{rpd}}/2}$</td>
+<td>$\exp\bigl((\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
+<td>$r e^{i\alpha}e^{i\theta/2-\theta_{\mathrm{rpd}}/2}$</td>
+<td>$r e^{i\alpha}e^{-i\theta/2+\theta_{\mathrm{rpd}}/2}$</td>
 </tr>
 <tr>
 <td>$\vec u_{\mathrm b}=-\vec u_{\mathrm r}$</td>
 <td>$-1$</td>
-<td>$\exp\bigl((-\frac{\theta}{2}+i\frac{\theta^{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
-<td>$r e^{i\alpha}e^{-i\theta/2-\theta^{\mathrm{rpd}}/2}$</td>
-<td>$r e^{i\alpha}e^{i\theta/2+\theta^{\mathrm{rpd}}/2}$</td>
+<td>$\exp\bigl((-\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2})\vec u\bigr)$</td>
+<td>$r e^{i\alpha}e^{-i\theta/2-\theta_{\mathrm{rpd}}/2}$</td>
+<td>$r e^{i\alpha}e^{i\theta/2+\theta_{\mathrm{rpd}}/2}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>In both rows the eigenvalues determine $\theta^{\mathrm{rpd}}$ and $\theta$: the modulus of $\lambda_+/(r e^{i\alpha})$ is $e^{-\theta^{\mathrm{rpd}}/2}$, and its argument is $+\theta/2$ for parallel axes and $-\theta/2$ for antiparallel axes. The common axis is not determined by the eigenvalues: it is the remaining spectral datum, read from the eigenprojection.</p>
+<p>In both rows the eigenvalues determine $\theta_{\mathrm{rpd}}$ and $\theta$: the modulus of $\lambda_+/(r e^{i\alpha})$ is $e^{-\theta_{\mathrm{rpd}}/2}$, and its argument is $+\theta/2$ for parallel axes and $-\theta/2$ for antiparallel axes. The common axis is not determined by the eigenvalues: it is the remaining spectral datum, read from the eigenprojection.</p>
 <h3 id="the-general-case-and-the-one-parameter-family">The General Case and the One-Parameter Family</h3>
-<p>When $0<\lvert\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\rvert<1$, the scalar-part formula is one complex equation for $\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and it leaves a one-parameter family. A clean exact family is obtained by fixing $\theta^{\mathrm{rpd}}$ and $\theta$ and taking the rotor axis perpendicular to the boost axis, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. Then</p>
+<p>When $0<\lvert\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\rvert<1$, the scalar-part formula is one complex equation for $\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and it leaves a one-parameter family. A clean exact family is obtained by fixing $\theta_{\mathrm{rpd}}$ and $\theta$ and taking the rotor axis perpendicular to the boost axis, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. Then</p>
 <p>$$
-\operatorname{Sc}\tilde U=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+\operatorname{Sc}\tilde U=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
 $$</p>
 <p>is independent of the azimuth of $\vec u_{\mathrm r}$ around $\vec u_{\mathrm b}$. Rotating $\vec u_{\mathrm r}$ in the plane perpendicular to $\vec u_{\mathrm b}$ therefore changes $\tilde U$, and with it the eigenprojections and the polar word, while $\operatorname{Sc}\tilde U$ and the eigenvalues $\lambda_\pm$ stay fixed.</p>
-<p><strong>Proposition (the eigenvalues do not determine the word).</strong> For $\theta^{\mathrm{rpd}}>0$, $\theta\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family</p>
+<p><strong>Proposition (the eigenvalues do not determine the word).</strong> For $\theta_{\mathrm{rpd}}>0$, $\theta\notin\{0,2\pi\}$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, the family</p>
 <p>$$
-\boxed{\; \tilde U(\varphi)=\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+\boxed{\; \tilde U(\varphi)=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}(\varphi)\Bigr),
 \qquad
 \vec u_{\mathrm r}(\varphi)\perp\vec u_{\mathrm b} \;},
 $$</p>
 <p>has constant eigenvalues $\lambda_\pm=r e^{i\alpha}(U_t\pm i(\vec U\cdot\vec U)^{1/2})$, but the eigenprojections and the polar axes vary with $\varphi$.</p>
-<p><em>Proof.</em> The scalar part is $\operatorname{Sc}\tilde U=\cosh(\theta^{\mathrm{rpd}}/2)\cos(\theta/2)$, independent of $\varphi$, and the determinant is one; hence $U_t$ and $U_t^2+\vec U\cdot\vec U=1$ are constant, and the two eigenvalues are constant. The vector part of $\tilde U(\varphi)$ is</p>
+<p><em>Proof.</em> The scalar part is $\operatorname{Sc}\tilde U=\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta/2)$, independent of $\varphi$, and the determinant is one; hence $U_t$ and $U_t^2+\vec U\cdot\vec U=1$ are constant, and the two eigenvalues are constant. The vector part of $\tilde U(\varphi)$ is</p>
 <p>$$
-\cosh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm r}(\varphi)
-+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}\,\vec u_{\mathrm b}
-+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}(\varphi),
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm r}(\varphi)
++i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}\,\vec u_{\mathrm b}
++i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}(\varphi),
 $$</p>
 <p>which depends on $\varphi$; hence the eigenprojection depends on $\varphi$. The polar axis $\vec u_{\mathrm r}(\varphi)$ is the variable itself.</p>
 <p>This is the structural difference from the split-complex and reduced biquaternion articles: there the eigenprojections are fixed, and the eigenvalues determine the polar parameters. Here the eigenvalues determine the scalar factor and the two eigenvalues of the unit factor, and the eigenprojections determine the rest.</p>
@@ -883,7 +883,7 @@ $$</p>
 <td>Distinct interior</td>
 <td>$Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$</td>
 <td>$\lambda_\pm$ distinct, nonzero; $\tilde\Pi_\pm$ variable</td>
-<td>$r,\alpha,\theta^{\mathrm{rpd}},\theta$, axes; unique up to degeneracies</td>
+<td>$r,\alpha,\theta_{\mathrm{rpd}},\theta$, axes; unique up to degeneracies</td>
 </tr>
 <tr>
 <td>Zero divisor</td>
@@ -895,13 +895,13 @@ $$</p>
 <td>Scalar</td>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t\neq0$</td>
 <td>$\lambda_\pm=Q_t$; one-term decomposition</td>
-<td>$r=\lvert Q_t\rvert$, $\theta^{\mathrm{rpd}}=0$, $\theta\in\{0,2\pi\}$, $\alpha$ from the branch; axes undefined</td>
+<td>$r=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, $\theta\in\{0,2\pi\}$, $\alpha$ from the branch; axes undefined</td>
 </tr>
 <tr>
 <td>Jordan</td>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
 <td>$\lambda_\pm=Q_t$; no two-term decomposition</td>
-<td>exists; $\theta^{\mathrm{rpd}},\theta$ and axes from the Cartan decomposition</td>
+<td>exists; $\theta_{\mathrm{rpd}},\theta$ and axes from the Cartan decomposition</td>
 </tr>
 <tr>
 <td>Nilpotent</td>
@@ -926,7 +926,7 @@ $$</p>
 $$</p>
 <p>a nonzero complex multiple of a minimal idempotent. The spectral decomposition exists and is rank one. The polar decomposition does not: the modulus vanishes, $r=0$, and the rapidity diverges. The zero-divisor set is the boundary of the polar domain, and its two components are read in §<em>The Boundary</em>.</p>
 <h3 id="the-scalar-regime">The Scalar Regime</h3>
-<p>For $\tilde Q=Q_te_t$ with $Q_t\neq0$, the two eigenvalues coincide at $Q_t$ and the element is central. The polar data are $r=\lvert Q_t\rvert$, $\theta^{\mathrm{rpd}}=0$, and $\theta=0$ or $2\pi$; the phase $\alpha$ and the rotor are the two factors of the principal square root branch $r e^{i\alpha}$, with the sign ambiguity absorbed by the rotor as in <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>Existence and Uniqueness</em>. The boost is the identity and the axes are undefined, as at every degenerate point of polar coordinates.</p>
+<p>For $\tilde Q=Q_te_t$ with $Q_t\neq0$, the two eigenvalues coincide at $Q_t$ and the element is central. The polar data are $r=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, and $\theta=0$ or $2\pi$; the phase $\alpha$ and the rotor are the two factors of the principal square root branch $r e^{i\alpha}$, with the sign ambiguity absorbed by the rotor as in <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>, §<em>Existence and Uniqueness</em>. The boost is the identity and the axes are undefined, as at every degenerate point of polar coordinates.</p>
 <h3 id="the-jordan-regime">The Jordan Regime</h3>
 <p>For $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$, the vector part is nilpotent, $\vec Q^2=0$, and</p>
 <p>$$
@@ -945,10 +945,10 @@ $$</p>
 $$</p>
 <p>Both eigenvalues of $\tilde U$ are $1$, and the scalar-part formula reads</p>
 <p>$$
-1=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
+1=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2},
 $$</p>
-<p>which determines a relation among $\theta^{\mathrm{rpd}}$, $\theta$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, not the three separately. The polar word exists and is unique, while the spectral decomposition does not exist. This is the exact mirror of the zero-divisor case.</p>
+<p>which determines a relation among $\theta_{\mathrm{rpd}}$, $\theta$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, not the three separately. The polar word exists and is unique, while the spectral decomposition does not exist. This is the exact mirror of the zero-divisor case.</p>
 <h3 id="the-nilpotent-regime">The Nilpotent Regime</h3>
 <p>For $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t=0$, the element is a nonzero nilpotent and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$. It has the single eigenvalue $0$, no two-term spectral decomposition, and no polar word. It is the second stratum of the zero-divisor boundary.</p>
 <h3 id="the-absence-of-a-jordan-lattice">The Absence of a Jordan Lattice</h3>
@@ -966,16 +966,16 @@ $$</p>
 <h3 id="the-polar-word-is-not-a-logarithm">The Polar Word Is Not a Logarithm</h3>
 <p>The four exponents sum to the <strong>formal exponent</strong></p>
 <p>$$
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
 $$</p>
-<p>Its exponential is not $\tilde Q$ unless the axes are parallel or antiparallel, or one of $\theta^{\mathrm{rpd}},\theta$ vanishes. The defect is the Baker–Campbell–Hausdorff correction, whose first term is</p>
+<p>Its exponential is not $\tilde Q$ unless the axes are parallel or antiparallel, or one of $\theta_{\mathrm{rpd}},\theta$ vanishes. The defect is the Baker–Campbell–Hausdorff correction, whose first term is</p>
 <p>$$
-\tfrac12\Bigl[i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r}\Bigr]
-=\frac{i\theta^{\mathrm{rpd}}\theta}{4}\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+\tfrac12\Bigl[i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\frac{\theta}{2}\vec u_{\mathrm r}\Bigr]
+=\frac{i\theta_{\mathrm{rpd}}\theta}{4}\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$</p>
 <p>again a boost. In spectral terms, in the generic case the eigenvalues of the formal exponent are not $\log\lambda_\pm$; the commutator changes the exponent inside $\mathfrak{sl}(2,\mathbb{C})$, and hence the eigenvalues of its exponential, while leaving the determinant fixed. The polar word is a <strong>section of the word map</strong></p>
 <p>$$
-(r,\alpha,\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})
+(r,\alpha,\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})
 \longmapsto
 r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r},
 $$</p>
@@ -998,7 +998,7 @@ $$</p>
 <td>$Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$</td>
 <td>$\lambda_+\neq\lambda_-$, one zero</td>
 <td>$\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent</td>
-<td>$r\to0$, $\theta^{\mathrm{rpd}}\to\infty$, $r e^{\theta^{\mathrm{rpd}}/2}\to R$</td>
+<td>$r\to0$, $\theta_{\mathrm{rpd}}\to\infty$, $r e^{\theta_{\mathrm{rpd}}/2}\to R$</td>
 </tr>
 <tr>
 <td>Nilpotent</td>
@@ -1010,7 +1010,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of <em>Idempotents</em> and <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; they are not repeated here.</p>
-<p>The polar word reaches the boundary with $r\to0$ and $\theta^{\mathrm{rpd}}\to\infty$ at the rate $r e^{\theta^{\mathrm{rpd}}/2}\to R$ with $0<R<\infty$. The limit is</p>
+<p>The polar word reaches the boundary with $r\to0$ and $\theta_{\mathrm{rpd}}\to\infty$ at the rate $r e^{\theta_{\mathrm{rpd}}/2}\to R$ with $0<R<\infty$. The limit is</p>
 <p>$$
 \frac{R\,e^{i\alpha}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 $$</p>
@@ -1027,14 +1027,14 @@ $$</p>
 $$</p>
 <p>with</p>
 <p>$$
-\mathsf M_2(\tilde U_{\mathrm b})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,I+\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\boldsymbol\sigma\cdot\vec u_{\mathrm b},
+\mathsf M_2(\tilde U_{\mathrm b})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,I+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\boldsymbol\sigma\cdot\vec u_{\mathrm b},
 \qquad
 \mathsf M_2(\tilde u_{\mathrm r})=\cos\frac{\theta}{2}\,I-i\sin\frac{\theta}{2}\,\boldsymbol\sigma\cdot\vec u_{\mathrm r}.
 $$</p>
-<p>The first factor is Hermitian positive with eigenvalues $e^{\pm\theta^{\mathrm{rpd}}/2}$; the second is $*$-unitary with eigenvalues $e^{\mp i\theta/2}$; the product has determinant one and trace</p>
+<p>The first factor is Hermitian positive with eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$; the second is $*$-unitary with eigenvalues $e^{\mp i\theta/2}$; the product has determinant one and trace</p>
 <p>$$
-2\Bigl(\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
+2\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
 $$</p>
 <p>Its eigenvalues are $\operatorname{Sc}\tilde U\pm i(\vec U\cdot\vec U)^{1/2}$, and those of $\tilde Q$ are $re^{i\alpha}$ times them, namely $\lambda_\pm$.</p>
 <div class="table-scroll"><table>
@@ -1053,7 +1053,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf M_2(\tilde U_{\mathrm b})$</td>
-<td>$e^{\pm\theta^{\mathrm{rpd}}/2}$</td>
+<td>$e^{\pm\theta_{\mathrm{rpd}}/2}$</td>
 <td>the boost</td>
 </tr>
 <tr>
@@ -1085,7 +1085,7 @@ $$</p>
 <th>$\lambda_-$</th>
 <th>$r$</th>
 <th>$\alpha$</th>
-<th>$\theta^{\mathrm{rpd}}$</th>
+<th>$\theta_{\mathrm{rpd}}$</th>
 <th>$\theta$</th>
 <th>Axes</th>
 </tr>
@@ -1141,7 +1141,7 @@ $$</p>
 $$</p>
 <p>The polar data of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em> are</p>
 <p>$$
-\theta^{\mathrm{rpd}}=\operatorname{arcosh}2=1.3169578969,
+\theta_{\mathrm{rpd}}=\operatorname{arcosh}2=1.3169578969,
 \qquad
 \vec u_{\mathrm b}=\frac{-\vec e_x+\vec e_y+\vec e_z}{\sqrt3},
 $$</p>
@@ -1150,7 +1150,7 @@ $$</p>
 \qquad
 \vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2},
 $$</p>
-<p>and the axes are perpendicular, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The scalar-part formula gives $1=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}$, which is consistent with $\operatorname{Sc}\tilde U=1$. The eigenvalues $\lambda_\pm=1+i$ determine $r,\alpha$ and $\operatorname{Sc}\tilde U$, but not $\theta^{\mathrm{rpd}},\theta$ or the axes: with the eigenprojection absent, they determine almost nothing of the polar word. The polar word itself is unique, because the element is fixed.</p>
+<p>and the axes are perpendicular, $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The scalar-part formula gives $1=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}$, which is consistent with $\operatorname{Sc}\tilde U=1$. The eigenvalues $\lambda_\pm=1+i$ determine $r,\alpha$ and $\operatorname{Sc}\tilde U$, but not $\theta_{\mathrm{rpd}},\theta$ or the axes: with the eigenprojection absent, they determine almost nothing of the polar word. The polar word itself is unique, because the element is fixed.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1180,7 +1180,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}$</td>
+<td>$\theta_{\mathrm{rpd}}$</td>
 <td>$\operatorname{arcosh}2=1.3169578969$</td>
 </tr>
 <tr>
@@ -1216,10 +1216,10 @@ Q_t^2+Q_x^2+Q_y^2+Q_z^2=\lambda_+\lambda_-=r^2e^{2i\alpha},
 $$</p>
 <p>$$
 \lambda_++\lambda_-=2r e^{i\alpha}\operatorname{Sc}\tilde U
-=2r e^{i\alpha}\Bigl(\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
--i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
+=2r e^{i\alpha}\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}
+-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\Bigr).
 $$</p>
-<p>The eigenvalues determine the scalar factor $r e^{i\alpha}$ and the two eigenvalues $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ of the unit factor, equivalently its scalar part $\operatorname{Sc}\tilde U$ and $D=(\vec U\cdot\vec U)^{1/2}$. They do not determine the individual values of $\theta^{\mathrm{rpd}}$, $\theta$ and the angle between the axes that produce $\operatorname{Sc}\tilde U$, nor the two axes; the eigenprojections, equivalently the Cartan decomposition of the unit factor, carry the remaining data. In the parallel-axis case the eigenvalues determine the rapidity and the angle, and the common axis remains free; in the general case they leave a four-real-dimensional family, one real degree of freedom in the triple $(\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})$ and three in the pair of axes.</p>
+<p>The eigenvalues determine the scalar factor $r e^{i\alpha}$ and the two eigenvalues $U_t\pm i(\vec U\cdot\vec U)^{1/2}$ of the unit factor, equivalently its scalar part $\operatorname{Sc}\tilde U$ and $D=(\vec U\cdot\vec U)^{1/2}$. They do not determine the individual values of $\theta_{\mathrm{rpd}}$, $\theta$ and the angle between the axes that produce $\operatorname{Sc}\tilde U$, nor the two axes; the eigenprojections, equivalently the Cartan decomposition of the unit factor, carry the remaining data. In the parallel-axis case the eigenvalues determine the rapidity and the angle, and the common axis remains free; in the general case they leave a four-real-dimensional family, one real degree of freedom in the triple $(\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})$ and three in the pair of axes.</p>
 <h3 id="main-results">Main Results</h3>
 <p>The table collects the formulas in one place.</p>
 <div class="table-scroll"><table>
@@ -1244,7 +1244,7 @@ $$</p>
 </tr>
 <tr>
 <td>Scalar part</td>
-<td>$\operatorname{Sc}\tilde U=\dfrac{\lambda_++\lambda_-}{2r e^{i\alpha}}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}$</td>
+<td>$\operatorname{Sc}\tilde U=\dfrac{\lambda_++\lambda_-}{2r e^{i\alpha}}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}-i(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}$</td>
 </tr>
 <tr>
 <td>Product</td>
@@ -1264,15 +1264,15 @@ $$</p>
 </tr>
 <tr>
 <td>Formal exponent</td>
-<td>$\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$; its exponential is $\tilde Q$ only when the axes commute or one angle vanishes</td>
+<td>$\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$; its exponential is $\tilde Q$ only when the axes commute or one angle vanishes</td>
 </tr>
 <tr>
 <td>Parallel axes</td>
-<td>$\lambda_\pm=r e^{i\alpha}e^{\pm i\theta/2\mp\theta^{\mathrm{rpd}}/2}$ for $\vec u_{\mathrm b}=\vec u_{\mathrm r}$; the signs of $\theta$ are exchanged for $\vec u_{\mathrm b}=-\vec u_{\mathrm r}$</td>
+<td>$\lambda_\pm=r e^{i\alpha}e^{\pm i\theta/2\mp\theta_{\mathrm{rpd}}/2}$ for $\vec u_{\mathrm b}=\vec u_{\mathrm r}$; the signs of $\theta$ are exchanged for $\vec u_{\mathrm b}=-\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>General axes</td>
-<td>one real degree of freedom in $\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ beyond $\lambda_\pm$; the axes carry the rest</td>
+<td>one real degree of freedom in $\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ beyond $\lambda_\pm$; the axes carry the rest</td>
 </tr>
 <tr>
 <td>Domain</td>
@@ -1338,19 +1338,19 @@ $$</p>
 </tr>
 <tr>
 <td>Polar parameters</td>
-<td>$r,\theta^{\mathrm{rpd}},\epsilon$</td>
-<td>$\rho,\theta^{\mathrm{rpd}},\alpha,\beta$</td>
-<td>$r,\alpha,\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
+<td>$r,\theta_{\mathrm{rpd}},\epsilon$</td>
+<td>$\rho,\theta_{\mathrm{rpd}},\alpha,\beta$</td>
+<td>$r,\alpha,\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\sigma_\pm r e^{\pm\theta^{\mathrm{rpd}}}$</td>
-<td>$\rho e^{i\alpha}e^{\pm(\theta^{\mathrm{rpd}}+i\beta)}$</td>
+<td>$\sigma_\pm r e^{\pm\theta_{\mathrm{rpd}}}$</td>
+<td>$\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
 <td>$r e^{i\alpha}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$</td>
 </tr>
 <tr>
 <td>Polar factors from spectrum</td>
-<td>$r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta^{\mathrm{rpd}} j}=e^{\theta^{\mathrm{rpd}}}\Pi_++e^{-\theta^{\mathrm{rpd}}}\Pi_-$</td>
+<td>$r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{rpd}} j}=e^{\theta_{\mathrm{rpd}}}\Pi_++e^{-\theta_{\mathrm{rpd}}}\Pi_-$</td>
 <td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$</td>
 <td>$\tilde U=\dfrac{\lambda_+}{r e^{i\alpha}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\alpha}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$</td>
 </tr>
@@ -1445,7 +1445,7 @@ $$</p>
 <td>the phase</td>
 </tr>
 <tr>
-<td>$\theta^{\mathrm{rpd}}\ge0$</td>
+<td>$\theta_{\mathrm{rpd}}\ge0$</td>
 <td>the rapidity</td>
 </tr>
 <tr>
@@ -1461,7 +1461,7 @@ $$</p>
 <td>the unit factor</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
+<td>$\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
 <td>the boost</td>
 </tr>
 <tr>

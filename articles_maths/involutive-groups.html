@@ -81,8 +81,8 @@ $$</p>
 <p><strong>Definition.</strong> An <strong>involution of a group</strong> $G$ is a bijection $\sigma : G \to G$ satisfying $\sigma(ab) = \sigma(b)\sigma(a)$ for all $a, b \in G$ and $\sigma^2 = \mathrm{id}$. An <strong>involutive group</strong> is a pair $(G, \sigma)$ consisting of a group and an involution of it.</p>
 <p><strong>Remark (determination on generators).</strong> An involution is determined by its values on a generating set, but the values alone do not tell a homomorphism from an anti-homomorphism: on a nonabelian group both exist with the same values on the generators and they differ on products. On the dihedral group $D_n = \langle r, s \rangle$ the assignment $r \mapsto r$, $s \mapsto s$ extended multiplicatively is the identity, while the same assignment extended anti-multiplicatively is the word-reversal involution, which sends $rs$ to $sr = r^{-1}s$. The two maps agree on every element represented by a palindrome, the powers of $r$ among them, and they differ already on the two-letter word $rs$, which the identity sends to $rs$ and the reversal to $sr = r^{-1}s$.</p>
 <h3 id="the-opposite-group-and-inversion">The Opposite Group and Inversion</h3>
-<p><strong>Definition.</strong> The <strong>opposite group</strong> $G^{\mathrm{opp}}$ has the same underlying set as $G$ and the product $a \cdot^{\mathrm{opp}} b = ba$.</p>
-<p>An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{opp}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{opp}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{opp}}$ explicitly by a formula that needs no choice.</p>
+<p><strong>Definition.</strong> The <strong>opposite group</strong> $G_{\mathrm{opp}}$ has the same underlying set as $G$ and the product $a \cdot_{\mathrm{opp}} b = ba$.</p>
+<p>An involution of $G$ is exactly an isomorphism $G \to G_{\mathrm{opp}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot_{\mathrm{opp}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G_{\mathrm{opp}}$ explicitly by a formula that needs no choice.</p>
 <p><strong>Remark.</strong> The contrast with rings is sharp. For a ring the existence of an anti-automorphism is a genuine condition, and the involution is the certificate that the ring is isomorphic to its opposite ring; for a group the inversion supplies the certificate for every group at once. What is informative in the group case is the set of involutions and the structure each of them defines, not the bare existence.</p>
 <h3 id="anti-automorphisms-and-automorphisms">Anti-automorphisms and Automorphisms</h3>
 <p><strong>Proposition.</strong> The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.</p>
@@ -100,7 +100,7 @@ $$</p>
 <p><strong>Proof.</strong> The unit satisfies $\sigma(e) = \sigma(e)\sigma(e)^{-1} = \sigma(e)\sigma(\exp(-1)) = \sigma(\exp(-1)e) = \sigma(e)$, so $\sigma(e) = e$ after cancelling. Then $\sigma(g)\sigma(g^{-1}) = \sigma(g^{-1}g) = e$, giving the second statement after uniqueness of inverses. The remaining statements are consequences of bijectivity and of the two-sidedness of normality: $\sigma$ is a bijection of the subsets of $G$ that reverses no inclusion, and $gH = Hg$ for all $g$ implies $\sigma(g)\sigma(H) = \sigma(H)\sigma(g)$.</p>
 <p><strong>Proposition.</strong> For $g \in G$ the involution carries the conjugacy class of $g$ onto the conjugacy class of $\sigma(g)$, and it carries the centraliser $C_G(g)$ onto $C_G(\sigma(g))$.</p>
 <p><strong>Proof.</strong> $\sigma(x g x^{-1}) = \sigma(x)^{-1}\sigma(g)\sigma(x)$, so conjugates of $g$ go to conjugates of $\sigma(g)$, and bijectivity makes the correspondence a bijection of classes. For the centralisers, $x g x^{-1} = g$ if and only if $\sigma(x)\sigma(g)\sigma(x)^{-1} = \sigma(g)$.</p>
-<p><strong>Proposition.</strong> The commutator subgroup $[G, G]$ is $\sigma$-stable, and $\sigma$ induces an involution $\sigma^{\mathrm{ab}}$ of the abelianisation $G^{\mathrm{ab}} = G/[G, G]$; for the inversion the induced map is the inversion of the abelian group $G^{\mathrm{ab}}$.</p>
+<p><strong>Proposition.</strong> The commutator subgroup $[G, G]$ is $\sigma$-stable, and $\sigma$ induces an involution $\sigma_{\mathrm{ab}}$ of the abelianisation $G_{\mathrm{ab}} = G/[G, G]$; for the inversion the induced map is the inversion of the abelian group $G_{\mathrm{ab}}$.</p>
 <p><strong>Proof.</strong> $\sigma([x, y]) = [\sigma(y), \sigma(x)]$, so commutators go to commutators and $[G, G]$ is stable; the induced map is well defined and of order two because $\sigma$ is, and for $\sigma = \iota$ it sends $g[G, G]$ to $g^{-1}[G, G]$.</p>
 <h3 id="examples">Examples</h3>
 <p><strong>Example (the inversion).</strong> Every group has the involution $\iota(g) = g^{-1}$. It is the identity exactly on the groups of exponent dividing two, in particular on every elementary abelian group; and it is the only involution whose associated automorphism, in the bijection of the theorem above, is the identity.</p>
@@ -328,8 +328,8 @@ $$</p>
 <td>the inversion $\iota(g) = g^{-1}$, the canonical involution of every group</td>
 </tr>
 <tr>
-<td>$G^{\mathrm{opp}}$</td>
-<td>the opposite group, with $a \cdot^{\mathrm{opp}} b = ba$</td>
+<td>$G_{\mathrm{opp}}$</td>
+<td>the opposite group, with $a \cdot_{\mathrm{opp}} b = ba$</td>
 </tr>
 <tr>
 <td>$\operatorname{Anti}(G)$</td>

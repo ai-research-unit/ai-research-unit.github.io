@@ -82,7 +82,7 @@ $$</p>
 <p>such that $A_p A_q \subseteq A_{p+q}$ for $p, q \in \mathbb{Z}/2\mathbb{Z}$; the elements of $A_0$ are <strong>even</strong> and those of $A_1$ are <strong>odd</strong>. A <strong>super vector space</strong> is an $R$-module with such a decomposition, and a <strong>supermodule</strong> over a superalgebra is a super vector space with a parity-respecting action.</p>
 <p>Every $\mathbb{Z}$-grading induces a $\mathbb{Z}/2$-grading by reduction modulo $2$: the even part is the sum of the even-degree pieces and the odd part the sum of the odd-degree pieces. Thus $\Lambda(M) = \bigoplus_n \Lambda^n M$ is a superalgebra with</p>
 <p>$$
-\Lambda(M)_0 = \Lambda^{\mathrm{ev}}(M) = \bigoplus_{n \text{ even}} \Lambda^n M, \qquad \Lambda(M)_1 = \Lambda^{\mathrm{odd}}(M) = \bigoplus_{n \text{ odd}} \Lambda^n M.
+\Lambda(M)_0 = \Lambda_{\mathrm{ev}}(M) = \bigoplus_{n \text{ even}} \Lambda^n M, \qquad \Lambda(M)_1 = \Lambda_{\mathrm{odd}}(M) = \bigoplus_{n \text{ odd}} \Lambda^n M.
 $$</p>
 <p><strong>Definition.</strong> For a homogeneous element $a$ of a superalgebra, its <strong>parity</strong> is $|a| = 0$ if $a$ is even and $|a| = 1$ if $a$ is odd. Every element is a sum of a unique even and a unique odd part, and a statement about homogeneous elements extends by linearity; in particular $(-1)^{|a|}$ means $+1$ on the even part and $-1$ on the odd part.</p>
 <h3 id="the-super-sign-rule">The Super Sign Rule</h3>
@@ -171,7 +171,7 @@ $$</p>
 \boxed{\;abc = -cba, \qquad (ab)c = c(ab), \qquad (ab)c = (bc)a\;}.
 $$</p>
 <p><strong>Proof.</strong> For odd $a, b$ the sign in $ab = -ba$ is $-1$, and the product $ab$ is even, so it commutes with $c$: $(ab)c = c(ab)$. Associativity and the anticommutativity of odd elements give $cba = (cb)a = -(bc)a = -a(bc) = -(ab)c$, which is $abc = -cba$; the last identity is the same computation with the letters cyclically permuted.</p>
-<p><strong>Example.</strong> In $\Lambda(M)$ with $M$ odd, the even part $\Lambda^{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.</p>
+<p><strong>Example.</strong> In $\Lambda(M)$ with $M$ odd, the even part $\Lambda_{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.</p>
 <h3 id="the-super-trace-and-the-berezinian">The Super Trace and the Berezinian</h3>
 <p>The determinant has a super analogue, and it is not the naive determinant of the block matrix.</p>
 <p><strong>Definition.</strong> Let $X = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ be an even supermatrix over a supercommutative algebra, with $A$ and $D$ even and invertible and $B, C$ odd. The <strong>Berezinian</strong> of $X$ is</p>

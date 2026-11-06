@@ -283,9 +283,9 @@ $$</p>
 <h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
 <p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
 <h3 id="the-gradient">The Gradient</h3>
-<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:</p>
+<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:</p>
 <p>$$
-\mathcal{F}[\partial/\partial Q_t F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
+\mathcal{F}[\partial/\partial Q_t F_{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F_{\mathrm{fn}}](\omega),
 $$</p>
 <p>where the sign depends on the convention for the kernel (the sign is positive for the kernel $\exp(+2\pi \rho \omega t)$ and negative for $\exp(-2\pi \rho \omega t)$).</p>
 <p>If the transform is taken in all four variables, the gradient becomes multiplication by the biquaternion</p>
@@ -296,13 +296,13 @@ $$</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
 <p>The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,</p>
 <p>$$
-\boxed{\; \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega) \;}.
+\boxed{\; \mathcal{F}[\Box F_{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F_{\mathrm{fn}}](\omega) \;}.
 $$</p>
 <p>The multiplier is a scalar (times $e_t$), and it vanishes on the <strong>null cone</strong></p>
 <p>$$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$</p>
-<p>So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
+<p>So the Fourier transform of a solution of $\Box F_{\mathrm{fn}} = 0$ is supported on the null cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
 <p>$$
@@ -362,9 +362,9 @@ $$</p>
 <p>and this holds for every pair of pure roots, commuting or not. The unit-norm property is thus a property of each factor and is inherited by the product.</p>
 <p><strong>Frequency reversal.</strong> Reversing the sign of the frequencies conjugates the kernel <strong>and exchanges the two factors</strong>:</p>
 <p>$$
-\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K^{\mathrm{ex}}(\tilde{Q}, -\omega),
+\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K_{\mathrm{ex}}(\tilde{Q}, -\omega),
 $$</p>
-<p>where $K^{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.</p>
+<p>where $K_{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.</p>
 <p><strong>On the factorisation into complex transforms.</strong> The factorisation of the next section diagonalises one root. Two elements that are simultaneously diagonalisable commute, so two roots that do not commute admit no common eigenbasis, and there is no basis in which both units of the two-unit kernel act diagonally at once. The pairs that do commute — equal roots, opposite roots, and any pair containing the central imaginary $i$ — keep a common eigenbasis, and there the one-unit factorisation applies to both variables. Whether the two-unit transform with a non-commuting pair still reduces to a fixed finite family of complex transforms is not settled here, and it is listed among the open questions.</p>
 <h2 id="the-transform-of-a-measure-and-the-failure-of-positivity">The Transform of a Measure, and the Failure of Positivity</h2>
 <p><strong>Definition.</strong> Let $\mu$ be a finite positive measure on $\mathbb{R}^n$ and let $\rho$ be a pure root of $-1$. The <strong>transform of the measure</strong> is</p>
@@ -372,7 +372,7 @@ $$</p>
 G(\omega) = \int_{\mathbb{R}^n} \chi_\omega(\tilde{Q}) \, d\mu(\tilde{Q}), \qquad \chi_\omega(\tilde{Q}) = \exp\big(-2\pi \rho \langle \omega, \tilde{Q} \rangle\big).
 $$</p>
 <p>Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.</p>
-<p><strong>The quadratic form.</strong> For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa^{\mathrm{crd}}_k e_t$, $\varkappa^{\mathrm{crd}}_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,</p>
+<p><strong>The quadratic form.</strong> For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa_{\mathrm{crd},k} e_t$, $\varkappa_{\mathrm{crd},k} \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,</p>
 <p>$$
 \sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} \langle Z(\tilde{Q})\rangle_{\natural} \, d\mu(\tilde{Q}),
 \qquad
@@ -416,7 +416,7 @@ $$</p>
 <p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.</p>
 </li>
 <li>
-<p><strong>The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+<p><strong>The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.</strong> The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
 </li>
 <li>
 <p><strong>The Plancherel theorem for general functions.</strong> Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.</p>

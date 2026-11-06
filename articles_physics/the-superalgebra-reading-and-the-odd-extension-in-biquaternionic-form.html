@@ -77,7 +77,7 @@
 \bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}},
 $$</p>
 <p>so it reverses a commutator and preserves an anticommutator, the reason being that the order reversal of the adjoint and the Koszul sign of the bracket multiply, and cancel exactly on an odd-odd pair. The third is that this is a statement about the <em>convention</em>: the Koszul-signed rule of a super-* would make the star an anti-automorphism of the bracket without the extra sign, and the corpus's star does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses — and why it has to be that one: on the other convention the square of a Hermitian odd element is anti-Hermitian, so the Hamiltonian would be imaginary.</p>
-<p>The body is written in <strong>elements</strong>. The field is an element $\tilde{Ξ}^{\mathrm{sp}}$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in <em>The Legacy Pauli Gamma Formulation</em>, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.</p>
+<p>The body is written in <strong>elements</strong>. The field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, a state is an element, an action of the algebra on itself is written out as $Q\mapsto aQb$, and the odd generator acts by $Q\mapsto uQ$, the multiplication on the left by one vector. No array is used in the body. The legacy array display of the same objects is collected in <em>The Legacy Pauli Gamma Formulation</em>, which is the only section of the article where it appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided equation — are kept apart.</p>
 <p>The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are restated here in the form the physics uses; the parity interpretation of the ambient algebra and the sectors are <em>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</em>; the supercharge pair and the chirality label are <em>Supersymmetric Quantum Physics in the Biquaternion Framework</em>; the Grassmann envelope is <em>Grassmann Coherent States in Biquaternionic Form</em> and <em>BRST Symmetry in Biquaternionic Form</em>; the commutator bracket and the trace-free part are <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>; the one-mode parity is <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>. Nothing owned by those articles is re-derived.</p>
 <h2 id="the-graded-algebra-and-its-parity">The Graded Algebra and Its Parity</h2>
 <p><strong>Definition.</strong> On a $\mathbb{Z}/2$-graded algebra $A=A^0\oplus A^1$ the <strong>graded commutator</strong> is</p>
@@ -274,28 +274,28 @@ $$</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications of §<em>The Module and the Action</em>, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0 &= iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, &\gamma_1 &= iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\\[2pt]
+\gamma_2 &= iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}, &\gamma_3 &= iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\\[2pt]
+\gamma_5 &= -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 \end{aligned}
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0 &= iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}, &\gamma_1 &= iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\\[2pt]
+\gamma_2 &= iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}, &\gamma_3 &= iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\\[2pt]
+\gamma_5 &= -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 \end{aligned}
 $$</p>
 <p>The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$,</p>
 <p>$$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^{2}}^{\mathrm{pau}}=i^2L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4,\qquad
-\gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{pau}}R_{\vec e_y^{2}}^{\mathrm{pau}}=i^2L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-I_4 .
+\gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^{2}}=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4,\qquad
+\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^{2}}R_{\mathrm{pau},\vec e_y^{2}}=i^2L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t}=-I_4 .
 $$</p>
 <p>In the axis-free display:</p>
 <p>$$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}}=i^2L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4,\qquad
-\gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
+\gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^{2}}=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},-e_t}=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=I_4,\qquad
+\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^{2}}R_{\mathrm{axf},\vec e_y^{2}}=i^2L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-I_4 .
 $$</p>
 <p>Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and</p>
 <p>$$
@@ -305,13 +305,13 @@ $$</p>
 $$</p>
 <p><strong>The fifth gamma.</strong> The product $\gamma_0\gamma_1\gamma_2\gamma_3$ is computed in cells, and the factors of $i$ are reduced first: the four cells carry $i^4=(i^2)^2=+1$, so the two factors of $i^2=-1$ cancel. The left multipliers multiply in order, $e_t\vec e_x\vec e_y\vec e_z=\vec e_z^2=-e_t$, and the right multipliers compose in reverse, $\vec e_y\vec e_y\vec e_y\vec e_x=\vec e_y^3\vec e_x=-\vec e_y\vec e_x=\vec e_z$. The product is therefore</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=-R_{\mathrm{pau},\vec e_z},
 $$</p>
 <p>The same identities in the axis-free display:</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=-R_{\mathrm{axf},\vec e_z},
 $$</p>
-<p>and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.</p>
+<p>and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\mathrm{pau},\vec e_z}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The cell $\Gamma:=-iR_{\mathrm{pau},\vec e_z}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.</p>
 <p><strong>The central grading and the cell.</strong> The cell $\gamma_5$ is the representative on the Dirac module of an object that is not an element of the algebra. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, so that</p>
 <p>$$
 \xi^2=i^2\,\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
@@ -319,8 +319,8 @@ $$</p>
 <p>by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.</p>
 <p><strong>The two Dirac equations.</strong> The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the <strong>one-sided</strong> form is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
 <p>two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The <strong>two-sided</strong> form writes a single field and puts the second slot on the right of the algebra element,</p>
 <p>$$
@@ -332,9 +332,9 @@ $$</p>
 <p>$$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\,\vec e_z\right),
 $$</p>
-<p>which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of <em>The Dirac Equation in Biquaternionic Form</em>. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.</p>
+<p>which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of <em>The Dirac Equation in Biquaternionic Form</em>. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.</p>
 <p><strong>The cells and the cone.</strong> A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
-<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>superalgebra</strong> is a $\mathbb{Z}/2$-graded algebra with the grading as part of its structure, and on it the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ is the commutator for even or mixed pairs and the anticommutator for two odd elements. The biquaternion algebra is the <strong>even part</strong> of the ambient graded algebra $A=\mathbb{B}\oplus A^{1}$, so it is not by itself a superalgebra, and it must not be conflated with the chirality label of the supersymmetry article or with the sector splitting by the star.</p>
 <p>The body is written in <strong>actions</strong>: an element $a$ acts on an element $Q$ by $Q\mapsto aQ$ on the left and by $Q\mapsto Qa$ on the right, the pair $(a,b)$ acts by $Q\mapsto aQb$, and the adjoint of $Q\mapsto aQb$ is $Q\mapsto a^{*}Qb^{*}$, taken with the Hermitian form of the corpus. The odd slot is $A^{1}=\mathbb{B}u$ for a non-isotropic vector $u$, an odd element is $\mathcal{Q}=su$, and it acts by $Q\mapsto s\,(uQ)$.</p>
@@ -435,7 +435,7 @@ $$</p>
 <td>The frame cells of <em>The Legacy Pauli Gamma Formulation</em>: letters for the cells, used in that section only</td>
 </tr>
 <tr>
-<td>$\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$</td>
+<td>$\Gamma=-iR_{\mathrm{axf},\vec e_z}$</td>
 <td>The chirality cell of the module; equal to the fifth frame cell in the frame</td>
 </tr>
 <tr>
@@ -443,7 +443,7 @@ $$</p>
 <td>The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell</td>
 </tr>
 <tr>
-<td>$\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>The one-sided Dirac equation, the chiral pair</td>
 </tr>
 <tr>

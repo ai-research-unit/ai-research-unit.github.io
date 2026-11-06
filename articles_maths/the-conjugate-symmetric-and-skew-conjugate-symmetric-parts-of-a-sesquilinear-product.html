@@ -88,27 +88,27 @@ $$</p>
 <h3 id="the-plain-split">The Plain Split</h3>
 <p><strong>Proposition (the plain halves are $R^{\varsigma}$-bilinear).</strong> Put</p>
 <p>$$
-\star^{\mathrm{sym}}(x,y) = \tfrac12\bigl(x \star y + y \star x\bigr), \qquad
-\star^{\mathrm{dif}}(x,y) = x \star y - y \star x .
+\star_{\mathrm{sym}}(x,y) = \tfrac12\bigl(x \star y + y \star x\bigr), \qquad
+\star_{\mathrm{dif}}(x,y) = x \star y - y \star x .
 $$</p>
-<p>Then $\star = \star^{\mathrm{sym}} + \tfrac12 \star^{\mathrm{dif}}$, the first operation is symmetric and the second antisymmetric, and both are $R^{\varsigma}$-bilinear. Neither is $\varsigma$-sesquilinear of the original parity unless the product is degenerate.</p>
+<p>Then $\star = \star_{\mathrm{sym}} + \tfrac12 \star_{\mathrm{dif}}$, the first operation is symmetric and the second antisymmetric, and both are $R^{\varsigma}$-bilinear. Neither is $\varsigma$-sesquilinear of the original parity unless the product is degenerate.</p>
 <p><em>Proof.</em> The reconstruction and the symmetry are the definitions. For the scalar of the first operation in the first slot,</p>
 <p>$$
-(\lambda x) \star^{\mathrm{sym}} y = \tfrac12\Bigl(\lambda\,(x \star y) + \varsigma(\lambda)\,(y \star x)\Bigr),
+(\lambda x) \star_{\mathrm{sym}} y = \tfrac12\Bigl(\lambda\,(x \star y) + \varsigma(\lambda)\,(y \star x)\Bigr),
 $$</p>
-<p>which is $\lambda\star^{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two.</p>
+<p>which is $\lambda\star_{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two.</p>
 <p><strong>Remark.</strong> The two halves are therefore operations of the wrong kind: they are bilinear over the fixed ring and nothing more. They are not new objects — the symmetric half is the <strong>symmetrised sesquilinear product</strong> and half the antisymmetric one is the <strong>sesquilinear commutator</strong>, and they are developed, with their scalar rules, their Jordan property on the Hermitian part and their failure of the Jacobi identity, in <em>The Sesquilinear Symmetrised Product</em> and <em>The Sesquilinear Commutator</em>. Those two articles are the theory of the plain split, and this article takes them as read. The plain split is the literal analogue of the bilinear one and it does not stay in the category; the rest of the article is the repair.</p>
 <h3 id="the-scalar-form-under-the-plain-split">The Scalar Form Under the Plain Split</h3>
 <p><strong>Proposition.</strong> Let $\varepsilon : A \to R$ be additive with $\varepsilon(\lambda x) = \lambda \varepsilon(x)$ for $\lambda \in R$, and put $s = \varepsilon \circ \star$. Then</p>
 <p>$$
-\varepsilon\bigl(\star^{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + s(y,x)\bigr), \qquad
-\tfrac12\,\varepsilon\bigl(\star^{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - s(y,x)\bigr).
+\varepsilon\bigl(\star_{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + s(y,x)\bigr), \qquad
+\tfrac12\,\varepsilon\bigl(\star_{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - s(y,x)\bigr).
 $$</p>
 <p><em>Proof.</em> Apply $\varepsilon$ to the two definitions and use its additivity and its linearity over $R$.</p>
 <p><strong>Proposition (the Hermitian case).</strong> Suppose in addition that the form $s$ is $\varsigma$-<strong>Hermitian</strong>, that is $s(y,x) = \varsigma(s(x,y))$ for all $x, y$. Then</p>
 <p>$$
-\varepsilon\bigl(\star^{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + \varsigma(s(x,y))\bigr), \qquad
-\tfrac12\,\varepsilon\bigl(\star^{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - \varsigma(s(x,y))\bigr),
+\varepsilon\bigl(\star_{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + \varsigma(s(x,y))\bigr), \qquad
+\tfrac12\,\varepsilon\bigl(\star_{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - \varsigma(s(x,y))\bigr),
 $$</p>
 <p>the $\varsigma$-even and the $\varsigma$-odd parts of the form. Over $\mathbb{C}$ with $\varsigma$ the conjugation these are $\operatorname{Re} s$ and $i\operatorname{Im} s$.</p>
 <p><em>Proof.</em> Substitute the Hermitian condition $s(y,x) = \varsigma(s(x,y))$ in the preceding display. Over $\mathbb{C}$ the $\varsigma$-even part of a complex number is its real part and the $\varsigma$-odd part is $i$ times its imaginary part.</p>
@@ -295,12 +295,12 @@ $$</p>
 <h3 id="the-polarisation-of-the-plain-symmetrisation">The Polarisation of the Plain Symmetrisation</h3>
 <p><strong>Proposition.</strong> For all $x, y \in A$,</p>
 <p>$$
-(x + y) \star (x + y) - x \star x - y \star y = x \star y + y \star x = 2\star^{\mathrm{sym}}(x,y).
+(x + y) \star (x + y) - x \star x - y \star y = x \star y + y \star x = 2\star_{\mathrm{sym}}(x,y).
 $$</p>
 <p><em>Proof.</em> Expand the product by its additivity in each variable and cancel the two squares.</p>
 <p><strong>Remark (the square polarises the plain symmetrisation, not the exchanged one).</strong> The right-hand side is twice the <strong>plain</strong> symmetrisation of <em>The Sesquilinear Symmetrised Product</em>, and it is $2\star_{+}(x,y)$ only when $c$ is the identity, that is in the bilinear case. The identity that the algebra article proves as the polarisation of the symmetric half therefore has no analogue for the adapted half:</p>
 <p>$$
-(x + y) \star (x + y) - x \star x - y \star y = 2\star^{\mathrm{sym}}(x,y) \neq 2\star_{+}(x,y) \quad \text{in general.}
+(x + y) \star (x + y) - x \star x - y \star y = 2\star_{\mathrm{sym}}(x,y) \neq 2\star_{+}(x,y) \quad \text{in general.}
 $$</p>
 <p>The square map sees the plain symmetrisation and it cannot see the exchanged one, and the reason is that the exchange conjugates the value while the square of a sum conjugates nothing.</p>
 <h3 id="the-diagonal">The Diagonal</h3>
@@ -412,7 +412,7 @@ $$</p>
 <td>The product; sesquilinear as above, and no further hypothesis</td>
 </tr>
 <tr>
-<td>$\star^{\mathrm{sym}}$, $\star^{\mathrm{dif}}$</td>
+<td>$\star_{\mathrm{sym}}$, $\star_{\mathrm{dif}}$</td>
 <td>The plain symmetrisation $\tfrac12(x \star y + y \star x)$ and the difference $x \star y - y \star x$, of <em>The Sesquilinear Symmetrised Product</em> and <em>The Sesquilinear Commutator</em></td>
 </tr>
 <tr>

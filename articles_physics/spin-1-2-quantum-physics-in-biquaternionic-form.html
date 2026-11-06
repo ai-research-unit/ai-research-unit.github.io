@@ -83,9 +83,9 @@
 <h2 id="the-two-state-system-in-quantum-physics">The Two-State System in Quantum Physics</h2>
 <p>A <strong>two-state quantum system</strong> is a quantum system whose state space is a two-dimensional complex Hilbert space $\mathcal{H} \cong \mathbb{C}^2$. Equivalently, the pure states are rays in $\mathbb{C}^2$, and the observables are Hermitian operators on $\mathbb{C}^2$.</p>
 <h3 id="states">States</h3>
-<p>A <strong>pure state</strong> is a unit vector $\tilde{Ξ}^{\mathrm{sp}} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector</p>
+<p>A <strong>pure state</strong> is a unit vector $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector</p>
 <p>$$
-\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|,
 $$</p>
 <p>which satisfies $\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$ (idempotent), $\rho_{\mathrm{sp}}^\dagger = \rho_{\mathrm{sp}}$ (Hermitian), and $\mathrm{Tr}(\rho_{\mathrm{sp}}) = 1$.</p>
 <p>A general (mixed) state is a positive semidefinite Hermitian operator with trace 1. The pure states are the extreme points of the convex set of states.</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 \langle A \rangle_\rho = \mathrm{Tr}(\rho A).
 $$</p>
-<p>For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ}^{\mathrm{sp}} | A | \tilde{Ξ}^{\mathrm{sp}} \rangle$.</p>
+<p>For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ}_{\mathrm{sp}} | A | \tilde{Ξ}_{\mathrm{sp}} \rangle$.</p>
 <h3 id="spin-12">Spin-1/2</h3>
 <p>The <strong>spin-1/2 system</strong> is the specific physical realization of a two-state system in which the observables are the spin components</p>
 <p>$$
@@ -188,7 +188,7 @@ $$</p>
 \boxed{\;\langle \tilde R_\psi \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde R_\psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})\;}
 $$</p>
 <p>is <strong>real</strong> and is the <strong>Born-rule expectation value</strong> of $\tilde R_\psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$.</p>
-<p><strong>Proof.</strong> Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|$ and $\tilde R_\psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}| H) = \tfrac12\langle\tilde{Ξ}^{\mathrm{sp}}|H|\tilde{Ξ}^{\mathrm{sp}}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}^{\mathrm{sp}}|H|\tilde{Ξ}^{\mathrm{sp}}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.</p>
+<p><strong>Proof.</strong> Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|$ and $\tilde R_\psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| H) = \tfrac12\langle\tilde{Ξ}_{\mathrm{sp}}|H|\tilde{Ξ}_{\mathrm{sp}}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}_{\mathrm{sp}}|H|\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.</p>
 <h3 id="example">Example</h3>
 <p>Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde R_\psi = i \vec e_x$ (the spin observable along the $x$ axis). Then</p>
 <p>$$
@@ -239,7 +239,7 @@ $$</p>
 <p>The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the <strong>spin rotation group</strong>. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.</p>
 <p>So the <strong>spin rotations of a spin-1/2 particle are realized in the biquaternion framework by the $SU(2)$ subgroup of unit-norm biquaternions</strong>.</p>
 <h3 id="hermitian-biquaternions">Hermitian Biquaternions</h3>
-<p>The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the <strong>boost biquaternions</strong> $\tilde U = \cosh(\theta^{\mathrm{rpd}}/2) + i\sinh(\theta^{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.</p>
+<p>The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the <strong>boost biquaternions</strong> $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2) + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.</p>
 <p>In the quantum-mechanical context, the boosts are <strong>not</strong> $*$-unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-$*$-unitary but still <strong>invertible</strong>: a boost has unit norm, so it inverts to $\tilde U^{\natural}$, and it represents a reversible change of state — unlike the rank-one idempotent projections, which are not invertible.</p>
 <p>The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.</p>
 <p>So the biquaternion framework contains:</p>
@@ -253,27 +253,27 @@ $$</p>
 <h3 id="the-biquaternionic-dirac-equation">The Biquaternionic Dirac Equation</h3>
 <p>The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair</p>
 <p>$$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R\;},
+\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}\;},
 $$</p>
-<p>where $\tilde{Ξ}^{\mathrm{sp}} = \tilde{Ξ}^{\mathrm{sp}}_L + \tilde{Ξ}^{\mathrm{sp}}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to</p>
+<p>where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to</p>
 <p>$$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = 0,
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,
 $$</p>
-<p>which is a first-order equation for the field $\tilde{Ξ}^{\mathrm{sp}}$.</p>
+<p>which is a first-order equation for the field $\tilde{Ξ}_{\mathrm{sp}}$.</p>
 <h3 id="the-interpretation-as-a-spinor-field">The Interpretation as a Spinor Field</h3>
-<p>The biquaternion field $\tilde{Ξ}^{\mathrm{sp}}$ is a <strong>spinor field</strong> on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a <strong>pair of Weyl spinors</strong> (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.</p>
+<p>The biquaternion field $\tilde{Ξ}_{\mathrm{sp}}$ is a <strong>spinor field</strong> on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a <strong>pair of Weyl spinors</strong> (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.</p>
 <p>The Dirac equation is the equation of motion for a single spin-1/2 field. Its solutions describe relativistic spin-1/2 particles: electrons, muons, quarks, and other fermions.</p>
 <h3 id="what-the-dirac-equation-contains">What the Dirac Equation Contains</h3>
 <p>The biquaternionic Dirac equation contains:</p>
 <ul>
 <li>The <strong>kinematics</strong> of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ for plane-wave solutions.</li>
-<li>The <strong>spin structure</strong>: the polarization biquaternion $\tilde{Ξ}^{\mathrm{sp}}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.</li>
-<li>The <strong>mass term</strong>: the linear, chirality-off-diagonal mass term $m\tilde{Ξ}^{\mathrm{sp}}_{L,R}$, which couples the two chiral components of the spinor.</li>
+<li>The <strong>spin structure</strong>: the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.</li>
+<li>The <strong>mass term</strong>: the linear, chirality-off-diagonal mass term $m\tilde{Ξ}_{\mathrm{sp},L,R}$, which couples the two chiral components of the spinor.</li>
 </ul>
 <h3 id="what-the-dirac-equation-does-not-contain">What the Dirac Equation Does Not Contain</h3>
 <p>The biquaternionic Dirac equation, as presented, does not contain:</p>
 <ul>
-<li><strong>Quantization</strong>: the promotion of the classical field $\tilde{Ξ}^{\mathrm{sp}}$ to an operator-valued field $\tilde{Ξ}^{\mathrm{fop}}$ on Fock space.</li>
+<li><strong>Quantization</strong>: the promotion of the classical field $\tilde{Ξ}_{\mathrm{sp}}$ to an operator-valued field $\tilde{Ξ}_{\mathrm{fop}}$ on Fock space.</li>
 <li><strong>The full four-component Dirac spinor</strong>: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.</li>
 <li><strong>Many-body structure</strong>: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.</li>
 <li><strong>Interactions beyond electromagnetism</strong>: the weak and strong interactions require additional structure beyond the biquaternion algebra.</li>
@@ -412,7 +412,7 @@ $$</p>
 <td>Lorentz group (double cover)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>Biquaternionic Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>

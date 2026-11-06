@@ -70,18 +70,18 @@
       <div class="article-body">
         <h1 id="the-idempotent-decomposition-and-the-split-fractal-of-the-reduced-biquaternions"><strong>The Idempotent Decomposition and the Split Fractal of the Reduced Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ satisfy</p>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ satisfy</p>
 <p>$$
 \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\qquad \Pi_-^{2}=\Pi_-,
 $$</p>
-<p>so the algebra is the direct sum of rings $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is <strong>global</strong>: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.</p>
+<p>so the algebra is the direct sum of rings $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is <strong>global</strong>: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.</p>
 <p>The result is the strongest possible reduction. A self-map of the algebra written in the coordinates is a pair of complex maps with the same index, a quadratic map of the algebra is a pair of complex quadratic maps, and a quadratic fractal is the product of the two complex fractals while the attractor of a system of contractions is the graph-like set of the pairs matched by the same coding. The coupling term that makes the non-commutative companion hard is identically zero here, and the only place where the two coordinates interact is the index of the generators: a point of the attractor has the same coding in the two coordinates, and that is the whole of the interaction. The singular sets, the zero-divisor cone and its slices, are then computed from the two complex singular sets.</p>
 <p>The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are <em>Reduced Biquaternion Space</em> and <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the quadratic map and its fractal are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the slices are <em>The Slices of the Reduced Biquaternion Julia Sets</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the systems of contractions are <em>The Reduced Biquaternion Iterated Function Systems</em>; the connectedness locus is <em>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</em>. The companion is <em>The Idempotent Decomposition and the Split Fractal</em>, where the idempotents are not central and the decomposition is only local.</p>
 <h2 id="the-global-decomposition">The Global Decomposition</h2>
 <p><strong>Theorem (the decomposition is a direct sum of rings).</strong> The algebra is the direct sum of its two idempotent lines,</p>
 <p>$$
 \boxed{\;
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
 \;},
 $$</p>
 <p>and the two projections $\breve Q\mapsto Q_{+}$ and $\breve Q\mapsto Q_{-}$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.</p>
@@ -89,7 +89,7 @@ $$</p>
 <p><strong>Corollary (everything is coordinatewise).</strong> The multiplication, the four products, the involutions, the four norms and the matrix model are computed on the two coordinates separately and combined; an algebra endomorphism is the pair of a complex automorphism of the first coordinate and a complex automorphism of the second, subject to the reality condition.</p>
 <p><strong>Proof.</strong> The assertion is the definition of the componentwise multiplication together with the tables of <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>Reduced Biquaternion Other Algebraic Element Representations</em>.</p>
 <h2 id="the-reduction-of-the-dynamics">The Reduction of the Dynamics</h2>
-<p><strong>Theorem (the reduction).</strong> Let $F:\mathbb{B}^{\mathrm{red}}\to\mathbb{B}^{\mathrm{red}}$ be a map that in the coordinates is continuous and written as $F(Q_{+},Q_{-})=(F_{1}(Q_{+}),F_{2}(Q_{-}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{+},Q_{-})$ is the pair of the orbits of the two coordinates,</p>
+<p><strong>Theorem (the reduction).</strong> Let $F:\mathbb{B}_{\mathrm{red}}\to\mathbb{B}_{\mathrm{red}}$ be a map that in the coordinates is continuous and written as $F(Q_{+},Q_{-})=(F_{1}(Q_{+}),F_{2}(Q_{-}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{+},Q_{-})$ is the pair of the orbits of the two coordinates,</p>
 <p>$$
 \boxed{\;
 F^{n}(\breve Q)=\bigl(F_{1}^{n}(Q_{+}),\,F_{2}^{n}(Q_{-})\bigr)
@@ -159,7 +159,7 @@ $$</p>
 <td>the two central idempotents</td>
 </tr>
 <tr>
-<td>$\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$</td>
+<td>$\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$</td>
 <td>the global decomposition</td>
 </tr>
 <tr>

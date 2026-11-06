@@ -80,20 +80,20 @@ so that the $n$-th prime satisfies $p_n\sim n\log n$, and the average density of
 <h2 id="the-statement-and-its-equivalent-forms">The Statement and its Equivalent Forms</h2>
 <p><strong>Definition.</strong> The <strong>Chebyshev functions</strong> are
 $$
-\psi(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p, \qquad \vartheta^{\mathrm{chb}}(x) = \sum_{p\leq x}\log p,
+\psi(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p, \qquad \vartheta_{\mathrm{chb}}(x) = \sum_{p\leq x}\log p,
 $$
 and $\mathrm{Li}(x) = \int_2^x\frac{dt}{\log t}$ is the logarithmic integral.</p>
 <p><strong>Theorem (the prime number theorem; Hadamard and de la Vallée Poussin).</strong> As $x\to\infty$,
 $$
-\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \vartheta^{\mathrm{chb}}(x)\sim x, \qquad p_n \sim n\log n\;} .
+\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \vartheta_{\mathrm{chb}}(x)\sim x, \qquad p_n \sim n\log n\;} .
 $$
 All four statements are equivalent.</p>
-<p><strong>Proof of the equivalence.</strong> This is the theorem on the equivalent forms in <em>Analytic Number Theory</em>: $\psi-\vartheta^{\mathrm{chb}} = \sum_{k\geq2}\vartheta^{\mathrm{chb}}(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\vartheta^{\mathrm{chb}}\sim x$ are the same statement; Abel summation converts $\vartheta^{\mathrm{chb}}(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.</p>
+<p><strong>Proof of the equivalence.</strong> This is the theorem on the equivalent forms in <em>Analytic Number Theory</em>: $\psi-\vartheta_{\mathrm{chb}} = \sum_{k\geq2}\vartheta_{\mathrm{chb}}(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\vartheta_{\mathrm{chb}}\sim x$ are the same statement; Abel summation converts $\vartheta_{\mathrm{chb}}(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.</p>
 <p><strong>Remark (what the theorem does not say).</strong> The statement is a one-term asymptotic. It does not say that $\pi(x)-\mathrm{Li}(x)$ is small, that the primes are equidistributed in short intervals without a lower bound on the length, or that the gaps between consecutive primes are small; each of these is a separate problem, and the last is discussed below. The sharper asymptotic $\pi(x) = \mathrm{Li}(x) + O(x\exp(-c\sqrt{\log x}))$ proved below is stronger than the theorem and is the form in which the result is used.</p>
 <h2 id="nonvanishing-on-the-line-math36">Nonvanishing on the Line $\Re s = 1$</h2>
 <h3 id="the-elementary-inequality">The Elementary Inequality</h3>
-<p><strong>Lemma.</strong> For every real $\vartheta^{\mathrm{chb}}$, $3 + 4\cos\theta + \cos2\theta = 2(1+\cos\theta)^2 \geq 0$.</p>
-<p><strong>Proof.</strong> $\cos2\theta = 2\cos^2\vartheta^{\mathrm{chb}}-1$, so the left side is $2\cos^2\vartheta^{\mathrm{chb}} + 4\cos\theta + 2 = 2(\cos\theta+1)^2$.</p>
+<p><strong>Lemma.</strong> For every real $\vartheta_{\mathrm{chb}}$, $3 + 4\cos\theta + \cos2\theta = 2(1+\cos\theta)^2 \geq 0$.</p>
+<p><strong>Proof.</strong> $\cos2\theta = 2\cos^2\vartheta_{\mathrm{chb}}-1$, so the left side is $2\cos^2\vartheta_{\mathrm{chb}} + 4\cos\theta + 2 = 2(\cos\theta+1)^2$.</p>
 <p><strong>Theorem.</strong> $\zeta(\sigma+it)\neq0$ for every $\sigma\geq1$ and every real $t$.</p>
 <p><strong>Proof.</strong> For $\sigma>1$ the Euler product converges absolutely, so $\zeta(\sigma+it)\neq0$; it remains to treat $\sigma=1$. Write the logarithm of the Euler product,
 $$
@@ -194,16 +194,16 @@ and more precisely $\pi(x;q,a) = \mathrm{Li}(x)/\varphi(q) + O(x\exp(-c\sqrt{\lo
 <p><strong>Proof sketch.</strong> The proof is the proof of the prime number theorem with $-\zeta'/\zeta$ replaced by the average $\frac1{\varphi(q)}\sum_\chi\bar\chi(a)\bigl(-\frac{L'}{L}(s,\chi)\bigr)$ over the characters modulo $q$; the nonvanishing on the line holds for every $L(s,\chi)$ by the same inequality, and the only genuine difference is that no $L(s,\chi)$ has a pole at $s=1$ except the principal one, which supplies the factor $1/\varphi(q)$. The uniformity in $q$ is the subject of the Siegel–Walfisz and Bombieri–Vinogradov theorems of <em>Analytic Number Theory</em>.</p>
 <p><strong>Theorem (prime ideal theorem).</strong> Let $K$ be a number field and $\psi_K(x) = \sum_{N(\mathrm{P})^k\leq x}\log N(\mathrm{P})$. Then $\psi_K(x)\sim x$, and $\pi_K(x)\sim x/\log x$.</p>
 <p><strong>Proof sketch.</strong> The same proof with $\zeta_K$ in place of $\zeta$: the Dedekind zeta function has a simple pole at $s=1$ with residue the class number formula, it has no zeros on the line $\Re s=1$, by the same inequality applied to its Euler product over the prime ideals, and the Tauberian theorem applied to $-\zeta_K'/\zeta_K$ gives $\psi_K(x)\sim x$.</p>
-<p><strong>Theorem (primes in short intervals; Baker–Harman–Pintz).</strong> For every $\vartheta^{\mathrm{chb}}>0.525$ and all sufficiently large $x$,
+<p><strong>Theorem (primes in short intervals; Baker–Harman–Pintz).</strong> For every $\vartheta_{\mathrm{chb}}>0.525$ and all sufficiently large $x$,
 $$
-\pi(x+x^{\vartheta^{\mathrm{chb}}}) - \pi(x) \sim \frac{x^{\vartheta^{\mathrm{chb}}}}{\log x},
+\pi(x+x^{\vartheta_{\mathrm{chb}}}) - \pi(x) \sim \frac{x^{\vartheta_{\mathrm{chb}}}}{\log x},
 $$
-so the interval $[x,x+x^{\vartheta^{\mathrm{chb}}}]$ contains about its expected number of primes; under the Riemann hypothesis the same holds for every $\vartheta^{\mathrm{chb}}>\tfrac12$.</p>
+so the interval $[x,x+x^{\vartheta_{\mathrm{chb}}}]$ contains about its expected number of primes; under the Riemann hypothesis the same holds for every $\vartheta_{\mathrm{chb}}>\tfrac12$.</p>
 <p><strong>Theorem (the number of primes and the nth prime).</strong> The theorem gives $\pi(x)\sim x/\log x$ and $p_n\sim n\log n$; the sharper forms are $\pi(x) = \mathrm{Li}(x)+O(x\exp(-c\sqrt{\log x}))$ and, with the sharp zero-free region, $p_n = n(\log n + \log\log n - 1 + o(1))$.</p>
 <p><strong>Proof sketch.</strong> The second display is the inversion of the asymptotic for $\pi$ by the standard expansion of the logarithmic integral and one iteration of the relation $p_n\log p_n\sim n\log n$.</p>
 <p><strong>Remark (the place of the theorem).</strong> The prime number theorem is the first quantitative statement about the primes and the simplest consequence of the nonvanishing of $\zeta$ on the line $\Re s = 1$; the whole of the further information about the primes is carried by the zeros in the strip, and it is read off from them through the explicit formula. The hypothesis that all of them lie on the critical line, and the consequences of that hypothesis for the error term, for the distribution of the gaps between consecutive primes and for the generalised statement over number fields, are the subject, which begins from the equivalences established here.</p>
 <h2 id="summary">Summary</h2>
-<p>The prime number theorem is the statement $\pi(x)\sim x/\log x$, equivalently $\psi(x)\sim x$ for the Chebyshev function $\psi(x) = \sum_{n\leq x}\Lambda(n)$, equivalently $\vartheta^{\mathrm{chb}}(x)\sim x$ for the sum of $\log p$ over the primes, equivalently $p_n\sim n\log n$ for the $n$-th prime. The proof rests on two theorems, one analytic and one tauberian. The analytic theorem is the nonvanishing $\zeta(\sigma+it)\neq0$ for $\sigma\geq1$, proved by applying the nonnegative trigonometric combination $3+4\cos\theta+\cos2\theta = 2(1+\cos\theta)^2$ to the Dirichlet series $\log\zeta$ with nonnegative coefficients and comparing the pole at $s=1$ with a hypothetical zero; it implies that $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on the closed half-plane. The tauberian theorem, in the Wiener–Ikehara form and in Newman's short form, converts the Mellin transform of a nondecreasing function, with a simple pole of residue $c$ at $s=1$ and continuous remainder on the closed half-plane, into the asymptotic $A(x)\sim cx$; applied to the Mellin transform of $\psi$, which is exactly $-\zeta'/(s\zeta)$, it gives $\psi(x)\sim x$.</p>
+<p>The prime number theorem is the statement $\pi(x)\sim x/\log x$, equivalently $\psi(x)\sim x$ for the Chebyshev function $\psi(x) = \sum_{n\leq x}\Lambda(n)$, equivalently $\vartheta_{\mathrm{chb}}(x)\sim x$ for the sum of $\log p$ over the primes, equivalently $p_n\sim n\log n$ for the $n$-th prime. The proof rests on two theorems, one analytic and one tauberian. The analytic theorem is the nonvanishing $\zeta(\sigma+it)\neq0$ for $\sigma\geq1$, proved by applying the nonnegative trigonometric combination $3+4\cos\theta+\cos2\theta = 2(1+\cos\theta)^2$ to the Dirichlet series $\log\zeta$ with nonnegative coefficients and comparing the pole at $s=1$ with a hypothetical zero; it implies that $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on the closed half-plane. The tauberian theorem, in the Wiener–Ikehara form and in Newman's short form, converts the Mellin transform of a nondecreasing function, with a simple pole of residue $c$ at $s=1$ and continuous remainder on the closed half-plane, into the asymptotic $A(x)\sim cx$; applied to the Mellin transform of $\psi$, which is exactly $-\zeta'/(s\zeta)$, it gives $\psi(x)\sim x$.</p>
 <p>The rate is governed by the zeros. The zero-free region of de la Vallée Poussin, $\sigma > 1-c/\log(\lvert t\rvert+2)$, gives $\psi(x) = x + O(x\exp(-c'\sqrt{\log x}))$; the Vinogradov–Korobov region gives $x\exp(-c'(\log x)^{3/5}/(\log\log x)^{1/5})$; and the Riemann hypothesis would give the optimal $O(\sqrt x\log^2x)$. The prime number theorem is equivalent to the vanishing of the summatory Möbius function, $\sum_{n\leq x}\mu(n)=o(x)$, and to the nonvanishing of $\zeta$ on the line $\Re s=1$; it was proved by Hadamard and de la Vallée Poussin in 1896 and, without complex analysis, by Erdős and Selberg in 1949, the elementary method supplying the main term but no error term, from the identity $\sum_{p\leq x}(\log p)^2+\sum_{pq\leq x}\log p\log q = 2x\log x+O(x)$. The same proof applies to the arithmetic progressions, giving $\pi(x;q,a)\sim \mathrm{Li}(x)/\varphi(q)$ for fixed $q$, and to a number field, giving the prime ideal theorem $\psi_K(x)\sim x$ from the Dedekind zeta function; in short intervals the theorem is known for intervals of length $x^{0.525}$ and, conditionally, for $x^{1/2+\epsilon}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -227,7 +227,7 @@ so the interval $[x,x+x^{\vartheta^{\mathrm{chb}}}]$ contains about its expected
 <td>Von Mangoldt function</td>
 </tr>
 <tr>
-<td>$\psi(x)$, $\vartheta^{\mathrm{chb}}(x)$</td>
+<td>$\psi(x)$, $\vartheta_{\mathrm{chb}}(x)$</td>
 <td>Chebyshev functions $\sum_{n\leq x}\Lambda(n)$, $\sum_{p\leq x}\log p$</td>
 </tr>
 <tr>
