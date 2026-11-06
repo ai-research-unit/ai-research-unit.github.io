@@ -57,7 +57,7 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 ## The Scalar: Spin Zero
 
-**The carrier.** The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(r_z e_t)u^{-1}=r_z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.
+**The carrier.** The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.
 
 **The generator.** $\tilde S_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
 
@@ -188,7 +188,7 @@ In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1
 **The coherent-state action.** The spin path integral is written on the sphere of coherent states. Its kinetic term is the Wess–Zumino term
 
 $$
-S_{WZ}=i\hbar\oint\langle r_z|\partial/\partial r'_t|r_z\rangle\,dr'_t=-s\hbar\,\theta^{\mathrm{sol}},
+S_{WZ}=i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle\,dr'_t=-s\hbar\,\theta^{\mathrm{sol}},
 $$
 
 where $\theta^{\mathrm{sol}}$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\hbar\theta^{\mathrm{sol}}/2$, the spinor phase.

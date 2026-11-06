@@ -7,15 +7,15 @@ The path integral expresses the propagator of a quantum system as a sum over his
 The spin path integral has one feature that distinguishes it from the particle path integral and that ties it to the geometric phase: the kinetic term of the action is not a total derivative. It is the **Wess–Zumino term**
 
 $$
-S_{WZ} = i\hbar\int_0^T\langle r_z(r'_t)|\,\partial/\partial r'_t\,|r_z(r'_t)\rangle\,dr'_t,
+S_{WZ} = i\hbar\int_0^T\langle z(r'_t)|\,\partial/\partial r'_t\,|z(r'_t)\rangle\,dr'_t,
 $$
 
 whose value over a closed loop is $-\hbar$ times one half the oriented solid angle, i.e. the geometric phase. The path integral thus contains the geometric phase as a piece of its action, and the classical equations of motion come from varying the whole action, Wess–Zumino term included.
 
 This article establishes:
 
-1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle r_z|dz/dr'_t\rangle - \langle r_z|\tilde R_\psi|r_z\rangle)dr'_t$, and the measure.
-2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle r_z|dz/dr'_t\rangle\,dr'_t = -\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
+1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|dz/dr'_t\rangle - \langle z|\tilde R_\psi|z\rangle)dr'_t$, and the measure.
+2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dr'_t\rangle\,dr'_t = -\theta^{\mathrm{sol}}{}^{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}} = 1$; the two forms are related by the change of variables $\varkappa^{\mathrm{stg}} = \tilde{Ξ}^{\mathrm{sp}}_2/\tilde{Ξ}^{\mathrm{sp}}_1$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
@@ -85,14 +85,14 @@ In the continuum limit the product of overlaps contributes
 $$
 \prod_k\langle z_{k+1}|z_k\rangle
 \;\longrightarrow\;
-\exp\!\left(-\int_0^T\langle r_z|\partial/\partial r'_t|r_z\rangle\,dr'_t\right)
+\exp\!\left(-\int_0^T\langle z|\partial/\partial r'_t|z\rangle\,dr'_t\right)
 = \exp\!\left(\frac{i}{\hbar}S_{WZ}\right),
 $$
 
 where the last equality defines the Wess–Zumino term of this article. The action is therefore
 
 $$
-S[r_z] = \int_0^T\left(i\hbar\,\langle r_z|\partial/\partial r'_t|r_z\rangle - \langle r_z|\tilde R_\psi(r'_t)|r_z\rangle\right)dr'_t,
+S[z] = \int_0^T\left(i\hbar\,\langle z|\partial/\partial r'_t|z\rangle - \langle z|\tilde R_\psi(r'_t)|z\rangle\right)dr'_t,
 $$
 
 and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measure inherited from the resolution of the identity.
@@ -102,13 +102,13 @@ and the propagator is $K = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measu
 For the spin-1/2 coherent state the integrand is elementary. With $\varkappa^{\mathrm{stg}} = r \exp(i\theta^{\mathrm{azm}})$ at fixed $r$,
 
 $$
-\langle r_z|\partial/\partial r'_t|r_z\rangle = \frac{\bar r_z\,dz/dr'_t - r_z\,d\bar r_z/dr'_t}{2(1+|r_z|^2)} = \frac{i\,d\theta^{\mathrm{azm}}/dr'_t\,r^2}{1+r^2},
+\langle z|\partial/\partial r'_t|z\rangle = \frac{\bar z\,dz/dr'_t - z\,d\bar z/dr'_t}{2(1+|z|^2)} = \frac{i\,d\theta^{\mathrm{azm}}/dr'_t\,r^2}{1+r^2},
 $$
 
 so that
 
 $$
-i\hbar\langle r_z|\partial/\partial r'_t|r_z\rangle
+i\hbar\langle z|\partial/\partial r'_t|z\rangle
 = -\hbar\,\frac{r^2}{1+r^2}\,d\theta^{\mathrm{azm}}/dr'_t
 = -\hbar\,\sin^2\frac{\theta}{2}\,d\theta^{\mathrm{azm}}/dr'_t .
 $$
@@ -116,14 +116,14 @@ $$
 Over a closed loop at fixed $\theta = \theta_0$, traversed once counterclockwise,
 
 $$
-\boxed{\;S_{WZ} = i\hbar\oint\langle r_z|\partial/\partial r'_t|r_z\rangle\,dr'_t
+\boxed{\;S_{WZ} = i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle\,dr'_t
 = -\hbar\cdot 2\pi\sin^2\frac{\theta_0}{2}
 = -\hbar\cdot\frac{\theta^{\mathrm{sol}}}{2},
 \qquad
 \theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)\;}.
 $$
 
-The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle r_z|dz/dr'_t\rangle dr'_t$ equals $-\theta^{\mathrm{sol}}/2$ for every value.
+The Wess–Zumino term is therefore $-\hbar$ times one half the solid angle: the geometric phase of the closed loop. The identification was verified numerically for $\theta_0 = 0.4,\,1.0,\,1.57,\,2.2,\,2.9$, where $\int i\langle z|dz/dr'_t\rangle dr'_t$ equals $-\theta^{\mathrm{sol}}/2$ for every value.
 
 This is the central structural fact of the spin path integral. The "kinetic" term of the action is not a total derivative and is not expressible in terms of the star $\vec u$ alone; it is the phase of the spinor. The path integral does not merely accommodate the geometric phase — it is built from it.
 
@@ -145,7 +145,7 @@ $$
 the classical Zeeman energy of a dipole along $\vec u(z)$. The action is thus
 
 $$
-S[r_z] = \int_0^T\left[-\hbar\sin^2\frac{\theta}{2}\,d\theta^{\mathrm{azm}}/dr'_t + \frac{\hbar\omega_L}{2}\,\vec u(r_z)\cdot\vec u_t\right]dr'_t,
+S[z] = \int_0^T\left[-\hbar\sin^2\frac{\theta}{2}\,d\theta^{\mathrm{azm}}/dr'_t + \frac{\hbar\omega_L}{2}\,\vec u(z)\cdot\vec u_t\right]dr'_t,
 $$
 
 the first term geometric and the second dynamical.
@@ -247,9 +247,9 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa^{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:
 
 $$
-K = \int\mathcal{D}[r_z]\,\exp(\frac{i}{\hbar}S[r_z]),
+K = \int\mathcal{D}[z]\,\exp(\frac{i}{\hbar}S[z]),
 \qquad
-S[r_z] = \int_0^T\left(i\hbar\,\langle r_z|\partial/\partial r'_t|r_z\rangle - \langle r_z|\tilde R_\psi|r_z\rangle\right)dr'_t,
+S[z] = \int_0^T\left(i\hbar\,\langle z|\partial/\partial r'_t|z\rangle - \langle z|\tilde R_\psi|z\rangle\right)dr'_t,
 $$
 
 with the invariant measure $\frac{2}{\pi}\frac{d^2z}{(1+|z|^2)^2}$ from the resolution of identity. The kinetic term is the **Wess–Zumino term**, and over a closed loop it equals
@@ -279,7 +279,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\varkappa^{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta^{\mathrm{azm}}) = \tilde{Ξ}^{\mathrm{sp}}_2/\tilde{Ξ}^{\mathrm{sp}}_1$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
-| $S_{WZ} = i\hbar\oint\langle r_z|\partial/\partial r'_t|r_z\rangle dr'_t = -\hbar\tfrac{\theta^{\mathrm{sol}}}{2}$ | Wess–Zumino term |
+| $S_{WZ} = i\hbar\oint\langle z|\partial/\partial r'_t|z\rangle dr'_t = -\hbar\tfrac{\theta^{\mathrm{sol}}}{2}$ | Wess–Zumino term |
 | $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ | Symplectic form of the sphere |
 | $d\vec r/dr'_t = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}},\tilde{Ξ}^{\mathrm{sp}}$ | Grassmann spinor variables, $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}}=1$ |

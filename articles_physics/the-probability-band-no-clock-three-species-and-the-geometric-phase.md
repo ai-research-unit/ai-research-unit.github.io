@@ -66,7 +66,7 @@ The probability band is the sesquilinear sibling of the first and the definite s
 For a complex number $z$ the band's square of the central element is
 
 $$
-(ze_t)\star(ze_t)=ze_t\,\overline{ze_t}=r_z\bar r_z\,e_t=\lvert r_z\rvert^{2}e_t .
+(ze_t)\star(ze_t)=ze_t\,\overline{ze_t}=z\bar z\,e_t=\lvert z\rvert^{2}e_t .
 $$
 
 The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ $*$-unitary; the central roots $r_z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
