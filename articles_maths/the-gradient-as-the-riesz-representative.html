@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient as the Riesz Representative of the Differential — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gradient-as-the-riesz-representative-of-the-differential"><strong>The Gradient as the Riesz Representative of the Differential</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The gradient of a function at a point is an element of the space on which the function is defined, chosen so that its pairing with a displacement gives the derivative of the function in that displacement. That description mentions two objects of different kinds. The derivative is a linear functional on the displacements, and the space supplies it with no further help. The pairing is an inner product, and the space supplies it only when one is chosen. <strong>The gradient is therefore the element that represents the derivative through the inner product, and it changes when the inner product changes while the derivative does not.</strong></p>
+<p>This article proves that statement and draws its consequences. The differential is read first as a covector, and the fact that a covector is not an element is made into a proposition: without an inner product there is no canonical element, and every linear identification of the dual with the space gives a different one. The Riesz map is then introduced as the identification that an inner product supplies, and the gradient is defined as the inverse image of the differential under it. The coordinate formula follows, with the Gram matrix and its inverse, and the orthonormal case reduces it to the sum of the partial derivatives times the basis vectors. Three cases are worked: the complex plane, with the Wirtinger derivatives and the holomorphic reading; the quaternions, where the gradient carries a side as well as a direction; and the biquaternions, where the scalar part is complex and the real part of the form does the work. The dependence on the form is then computed, and the article separates what the form does from what it does not: the differential, the critical points and the level sets are form-free, while the representative, the orthogonality and the direction of steepest ascent are form-dependent. The last two sections separate the definite from the indefinite case, and the gradient from the derivation.</p>
+<p>The article assumes the Fréchet derivative of <em>Differential Calculus on Normed Spaces</em>, the inner product, the Cauchy–Schwarz inequality and the Riesz representation theorem of <em>Hilbert Spaces</em> and <em>Banach and Hilbert Spaces</em>, and the sesquilinear forms of <em>Sesquilinear Forms and the Lax–Milgram Theorem</em>. The complex case is read with the two forms and the two realified quadratics of <em>The Two Metrics of the Complex Numbers</em>. The biquaternion gradient operator $\tilde\nabla$ and its four readings are <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, and <em>Biquaternion Analysis</em>; they are operators built from a basis and the unit form, and the present article writes $\operatorname{grad}F$ for the element that the definition produces, so that the two are never confused. <strong>The operator is one, and the elements are one per form.</strong> The derivations of an algebra are <em>Automorphisms and Derivations of Algebras</em> and <em>The Derivations of a Commutative Algebra</em>. Nothing here is new mathematics; the content is the separation of two objects that are often written with one symbol.</p>
+<p>The word <strong>metric</strong> is not used for the form. The corpus reserves it for the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the whole point of this article is that the gradient needs a form that could have been chosen otherwise. The form is called an inner product, and its matrix in a basis is the Gram matrix.</p>
+<p>Throughout, $A$ is a finite-dimensional real vector space, later a finite-dimensional algebra over $\mathbb{R}$ or over $\mathbb{C}$, regarded as a real vector space. The letter $m$ is its real dimension, $a$ is a point of $A$, $h$ is a displacement, and $F:A\to\mathbb{R}$ is differentiable at $a$ in the sense of Fréchet; its derivative at $a$ is the linear functional $DF(a)\in A^{*}$. No physics is invoked.</p>
+<h2 id="the-differential-is-a-covector">The Differential Is a Covector</h2>
+<p><strong>The derivative is intrinsic.</strong> For each $a$ the Fréchet derivative $DF(a)$ is a linear map $A\to\mathbb{R}$, that is, an element of the dual space $A^{*}$, and its value on the displacement $h$ is written $DF(a)[h]$ or $\langle DF(a),h\rangle$. The bracket here is the dual pairing and it needs no inner product. It is the evaluation of a functional on a vector.</p>
+<p><strong>The dual is not the space.</strong> In finite dimension $A^{*}$ and $A$ have the same dimension, so they are isomorphic, and there are as many isomorphisms as there are invertible matrices. The choice of one is a choice, and different choices carry the same covector to different vectors. This is the precise sense in which the algebra alone does not determine the gradient.</p>
+<p><strong>Proposition (no canonical representative).</strong> Let $A\neq\{0\}$ be a real vector space, let $\varphi\in A^{*}$ be a nonzero functional, and let $v\in A$. Then there is a linear isomorphism $\Phi:A^{*}\to A$ with $\Phi(\varphi)=v$.</p>
+<p><em>Proof.</em> Extend $\varphi$ to a basis $\varphi,\psi_2,\dots,\psi_m$ of $A^{*}$, and extend $v$ to a basis $v,w_2,\dots,w_m$ of $A$. The linear map sending $\varphi$ to $v$ and $\psi_i$ to $w_i$ is an isomorphism, since it carries a basis to a basis. So every element of $A$ represents $\varphi$ under some identification, and the vector-space structure alone singles out none of them.</p>
+<p><strong>Remark (the strongest objection, and the answer).</strong> Every finite-dimensional real vector space carries an inner product, so one may object that a gradient always exists. That is true and it is not the point. Existence is cheap, and uniqueness is not: <strong>the gradient exists, and it is not unique, because each inner product produces one.</strong> The derivative is one object; the gradients are one per inner product. An article that writes $\operatorname{grad}F$ without saying which inner product it uses has suppressed a choice, not avoided it.</p>
+<p><strong>Remark (which structures are used where).</strong> The product of an algebra plays no part in this section. The differential uses only the differentiable structure, and the dual uses only the linear structure. The product returns in §<em>Derivations Are Not Gradients</em>, where it produces objects of a different kind.</p>
+<h2 id="the-riesz-map">The Riesz Map</h2>
+<p><strong>Definition (inner product).</strong> A <strong>real inner product</strong> on $A$ is a map $\langle\cdot,\cdot\rangle:A\times A\to\mathbb{R}$ that is bilinear, symmetric, and positive definite: $\langle h,h\rangle>0$ for $h\neq0$. When $A$ is a complex vector space, a <strong>Hermitian inner product</strong> is a form that is linear in the first argument, conjugate-linear in the second, Hermitian-symmetric, $\langle u,v\rangle=\overline{\langle v,u\rangle}$, and positive definite; its real part is a real inner product on the underlying real space (§<em>The Complex Case</em>).</p>
+<p><strong>Definition (the Riesz map).</strong> The <strong>Riesz map</strong> of an inner product is</p>
+<p>$$
+\Phi:A\longrightarrow A^{*},\qquad \Phi(v)(h)=\langle h,v\rangle ,
+$$</p>
+<p>the functional $\Phi(v)$ being the pairing with $v$ in the second slot. On a real space the order of the two arguments in the pairing is immaterial, since the form is symmetric; on a complex space it is not, and the order fixed here is the one of <em>Hilbert Spaces</em>. <strong>The dual is the real dual throughout</strong>, the space of real-linear functionals, since $F$ is real-valued and $A$ is read as a real space; a complex structure on $A^{*}$ is a further choice and is not used here.</p>
+<p><strong>Theorem (the Riesz map is an isomorphism).</strong> For a nondegenerate symmetric form on a finite-dimensional $A$, in particular a real inner product, the map $\Phi$ is a linear isomorphism; for a nondegenerate Hermitian form on a finite-dimensional complex $A$, in particular a Hermitian inner product, it is a real-linear isomorphism, conjugate-linear in the scalar, $\Phi(\lambda v)=\bar\lambda\,\Phi(v)$.</p>
+<p><em>Proof.</em> Linearity in $v$ is the linearity of the form in its second slot in the real case and its conjugate-linearity in the complex case. If $\Phi(v)=0$ then $\langle h,v\rangle=0$ for every $h$, hence $v=0$ by nondegeneracy. The kernel is therefore zero, and an injective linear map between spaces of equal finite dimension is an isomorphism. <strong>Definiteness is not used</strong>: the argument needs nondegeneracy and nothing more. The conjugate-linearity is read on the scalar: $\Phi(\lambda v)(h)=\langle h,\lambda v\rangle=\bar\lambda\langle h,v\rangle$.</p>
+<p><strong>Definition (gradient).</strong> Let $F:A\to\mathbb{R}$ be differentiable at $a$, and let the form be nondegenerate and symmetric, or nondegenerate and Hermitian in the complex case; an inner product is the special case. The <strong>gradient</strong> of $F$ at $a$ with respect to the form is</p>
+<p>$$
+\operatorname{grad}F(a)=\Phi^{-1}\bigl(DF(a)\bigr),
+$$</p>
+<p>that is, the unique element of $A$ with</p>
+<p>$$
+\boxed{\;DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle\qquad\text{for all }h\in A.\;}
+$$</p>
+<p><strong>Proposition (existence and uniqueness).</strong> For a finite-dimensional $A$ with a nondegenerate symmetric form and $F$ differentiable at $a$, the gradient exists and is unique.</p>
+<p><em>Proof.</em> The functional $DF(a)$ is an element of $A^{*}$, and $\Phi$ is a bijection by the theorem above; its inverse carries the functional to exactly one element. For uniqueness, if $g_1$ and $g_2$ both satisfy the identity then $\langle h,g_1-g_2\rangle=0$ for every $h$, hence $g_1-g_2=0$ by nondegeneracy.</p>
+<p><strong>Remark (nondegeneracy is the hypothesis; definiteness is extra).</strong> The proof uses two properties and no more: linearity in one slot, and <strong>nondegeneracy</strong>, the statement that no nonzero vector pairs to zero with every vector. Nondegeneracy is exactly the injectivity of $\Phi$. Positive definiteness is stronger than needed for the definition, and it becomes necessary only for the reading of the gradient as the direction of steepest ascent (§<em>Definite and Indefinite Forms</em>). A nondegenerate symmetric bilinear form that is not definite therefore still defines a gradient, and this is the case of the split form on the complex plane.</p>
+<p><strong>Remark (infinite dimension).</strong> On an infinite-dimensional inner product space the argument fails at the last step, since injectivity no longer gives surjectivity. The representation of every bounded functional by an element is the Riesz representation theorem, and it holds exactly for the complete spaces, by <em>Hilbert Spaces</em>. On an incomplete inner product space a bounded functional need not be represented, and the gradient of a differentiable function need not exist. <strong>Completeness, and not the form alone, is what makes the gradient exist in infinite dimension.</strong></p>
+<h2 id="coordinates-and-the-gram-matrix">Coordinates and the Gram Matrix</h2>
+<p><strong>Definition (Gram matrix).</strong> Let $b_1,\dots,b_m$ be a real basis of $A$, and write $a=\sum_i q_i b_i$ with real coordinates $q_i$. The <strong>Gram matrix</strong> of the form in the basis is</p>
+<p>$$
+G_{ij}=\langle b_i,b_j\rangle ,
+$$</p>
+<p>a symmetric matrix, positive definite for an inner product and merely invertible for a nondegenerate form. Its inverse is written $H=G^{-1}$, with entries $H_{ij}$.</p>
+<p><strong>Proposition (the coordinate formula).</strong> With $d_i=\partial F/\partial q_i$ evaluated at $a$,</p>
+<p>$$
+\boxed{\;\operatorname{grad}F(a)=\sum_j\Bigl(\sum_i H_{ji}\,d_i\Bigr)b_j\;.}
+$$</p>
+<p><em>Proof.</em> Write $g=\operatorname{grad}F(a)=\sum_j v_jb_j$. Testing the defining identity on the basis vector $h=b_i$ gives $DF(a)[b_i]=\langle b_i,g\rangle=\sum_jv_j\langle b_i,b_j\rangle=\sum_jG_{ij}v_j$. The left side is the partial derivative $d_i$, by the coordinate reading of the differential in <em>Differential Calculus on Normed Spaces</em>. So $Gv=d$ in matrix form, and $v=Hd$ because $G$ is invertible. The components are $v_j=\sum_iH_{ji}d_i$.</p>
+<p><strong>Corollary (orthonormal basis).</strong> If the basis is orthonormal, $G$ is the identity, $H$ is the identity, and</p>
+<p>$$
+\operatorname{grad}F(a)=\sum_i\frac{\partial F}{\partial q_i}\,b_i .
+$$</p>
+<p>The corollary is the formula of the elementary calculus, and it is the only case in which the partial derivatives may be read directly as the components of the gradient. In every other basis the components are mixed by $H$. <strong>The mixing is the whole content of the definition: the partial derivatives are the coordinates of a covector, and the gradient is the vector obtained from them by the inverse Gram matrix.</strong></p>
+<p><strong>Worked example (a non-orthonormal basis).</strong> Let $A=\mathbb{C}$ with the real inner product $\langle u,v\rangle=\operatorname{Re}(u\bar v)$, the basis $b_1=1$, $b_2=1+i$, and $F(Q)=\operatorname{Re}(Q^{3})$. In the real coordinates $Q=q+i q'$ one has $F=q^{3}-3q(q')^{2}$. The Gram matrix and its inverse are</p>
+<p>$$
+G=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad H=\begin{pmatrix}2&-1\\-1&1\end{pmatrix}.
+$$</p>
+<p>At $Q=0.3+0.2i$ the basis coordinates are $0.1$ and $0.2$, since $0.1+0.2(1+i)=0.3+0.2i$. Testing on the two basis vectors, the partial derivatives are $d_1=\partial F/\partial q_1=F_q=0.15$ and $d_2=\partial F/\partial q_2=F_q+F_{q'}=0.15-0.36=-0.21$. The formula gives the components $v_1=2(0.15)-(-0.21)=0.51$ and $v_2=-0.15+(-0.21)=-0.36$, hence</p>
+<p>$$
+\operatorname{grad}F=0.51-0.36(1+i)=0.15-0.36i .
+$$</p>
+<p>The naive sum $d_1b_1+d_2b_2=0.15-0.21(1+i)=-0.06-0.21i$ is a different element, and it fails the defining identity. Testing $h=1$ gives $DF[h]=F_q=0.15$, while $\langle h,\operatorname{grad}F\rangle=0.15$ for the correct element and $-0.06$ for the naive one. <strong>The basis is the witness: the gradient is not the list of partial derivatives unless the basis is orthonormal.</strong></p>
+<h3 id="a-complex-basis">A Complex Basis</h3>
+<p><strong>Proposition (realification of a Hermitian Gram matrix).</strong> Let $b_1,\dots,b_n$ be a complex basis of a complex space with Hermitian Gram matrix $G_{kl}=\langle b_k,b_l\rangle$, and take the real basis $b_1,\dots,b_n,ib_1,\dots,ib_n$, with the $b$'s first and the $ib$'s second. The Gram matrix of the realified form $\operatorname{Re}\langle\cdot,\cdot\rangle$ in that real basis is the block matrix</p>
+<p>$$
+G_{\mathbb{R}}=\begin{pmatrix}A&B\\-B&A\end{pmatrix},\qquad A=\operatorname{Re}G,\quad B=\operatorname{Im}G,
+$$</p>
+<p>the first $n$ rows and columns standing for the $b_k$ and the last $n$ for the $ib_k$. <strong>The grouping matters</strong>: with the basis interleaved as $b_1,ib_1,b_2,ib_2,\dots$ the same matrix is written in a permuted order.</p>
+<p><em>Proof.</em> The four blocks are read from the two slots. $\operatorname{Re}\langle b_k,b_l\rangle=A_{kl}$ and $\operatorname{Re}\langle ib_k,ib_l\rangle=\operatorname{Re}(i\bar i\,G_{kl})=A_{kl}$, which gives the two diagonal blocks. $\operatorname{Re}\langle b_k,ib_l\rangle=\operatorname{Re}(-iG_{kl})=B_{kl}$ and $\operatorname{Re}\langle ib_k,b_l\rangle=\operatorname{Re}(iG_{kl})=-B_{kl}$, which gives the two off-diagonal blocks. The matrix is symmetric because $A$ is symmetric and $B$ is antisymmetric, and that symmetry is exactly the Hermitian symmetry of $G$.</p>
+<p><strong>Remark (the two realifications are not the same matrix).</strong> The block matrix is not the realification of a complex matrix, which has the form $\begin{pmatrix}A&-B\\B&A\end{pmatrix}$. The sign sits on the other block, and the reason is that a form pairs two vectors where a matrix acts on one. <strong>Reading the signs from the slots, and not from the matrix analogy, is what keeps the two realifications apart.</strong></p>
+<h2 id="the-complex-case">The Complex Case</h2>
+<p><strong>Proposition (the gradient in the plane).</strong> Let $A=\mathbb{C}$ with $\langle u,v\rangle=\operatorname{Re}(u\bar v)$, and write $Q=q+iq'$. For a real-valued differentiable $F$,</p>
+<p>$$
+\boxed{\;\operatorname{grad}F=F_q+iF_{q'}\;}
+$$</p>
+<p>and</p>
+<p>$$
+DF(Q)[h]=\operatorname{Re}\bigl(h\,\overline{\operatorname{grad}F(Q)}\bigr)
+$$</p>
+<p>for every $h\in\mathbb{C}$.</p>
+<p><em>Proof.</em> Let $h=h_q+ih_{q'}$ and $g=F_q+iF_{q'}$. Then $h\bar g=(h_q+ih_{q'})(F_q-iF_{q'})=h_qF_q+h_{q'}F_{q'}+i(h_{q'}F_q-h_qF_{q'})$, whose real part is $h_qF_q+h_{q'}F_{q'}=DF(Q)[h]$. So $g$ satisfies the defining identity, and it is the gradient by uniqueness.</p>
+<p><strong>Remark (the Wirtinger reading, and the factor two).</strong> The two Wirtinger operators of the corpus are the unhalved ones of <em>Operator and Calculus Conventions</em>, $\partial/\partial Q=\partial/\partial q+\partial/\partial(iq')$ and $\partial/\partial\bar Q=\partial/\partial q-\partial/\partial(iq')$, and with them</p>
+<p>$$
+\operatorname{grad}F=\frac{\partial F}{\partial\bar Q}
+$$</p>
+<p>for real-valued $F$, since $\partial F/\partial\bar Q=F_q+iF_{q'}$. The analysis literature halves the two operators, $\partial/\partial z=\frac12(\partial/\partial q-i\partial/\partial q')$ and $\partial/\partial\bar z=\frac12(\partial/\partial q+i\partial/\partial q')$, as in the Wirtinger calculus of <em>Analysis on $M_5(\mathbb{C})$</em>, and then</p>
+<p>$$
+\operatorname{grad}F=2\,\frac{\partial F}{\partial\bar z}.
+$$</p>
+<p><strong>The factor two is a normalisation and not a geometric fact.</strong> It records only whether the two Wirtinger operators carry the half. The identity $\operatorname{grad}F=\partial F/\partial\bar Q$ of the unhalved convention is the same statement as $\operatorname{grad}F=2\partial F/\partial\bar z$ of the halved one, and the corpus keeps the unhalved convention throughout.</p>
+<h3 id="complex-valued-functions">Complex-Valued Functions</h3>
+<p><strong>There is no single complex gradient in general.</strong> For $f:A\to\mathbb{C}$ the derivative $Df(a)$ is a real-linear map into $\mathbb{C}$, and the two real-valued functions $\operatorname{Re}f$ and $\operatorname{Im}f$ have two gradients. The gradient of $f$ is therefore a pair,</p>
+<p>$$
+\operatorname{grad}f=\bigl(\operatorname{grad}(\operatorname{Re}f),\ \operatorname{grad}(\operatorname{Im}f)\bigr),
+$$</p>
+<p>and it is an element of $A\times A$, not of $A$. The alternative is the pair of Wirtinger derivatives $\partial f/\partial z$ and $\partial f/\partial\bar z$, which carries the same information in the basis $dz,d\bar z$ of the complexified cotangent space.</p>
+<p><strong>Proposition (the holomorphic case).</strong> Let $f$ be holomorphic on an open set of $\mathbb{C}$, with $f=u+iv$ and complex derivative $df/dz$. Then</p>
+<p>$$
+\boxed{\;\operatorname{grad}u=\overline{\frac{df}{dz}},\qquad \operatorname{grad}v=i\,\overline{\frac{df}{dz}}=i\operatorname{grad}u.\;}
+$$</p>
+<p><em>Proof.</em> The Cauchy–Riemann equations give $u_q=v_{q'}$ and $u_{q'}=-v_q$, so $df/dz=u_q+iv_q=u_q-iu_{q'}$. Hence $\overline{df/dz}=u_q+iu_{q'}=\operatorname{grad}u$, and $i\overline{df/dz}=-u_{q'}+iu_q=v_q+iv_{q'}=\operatorname{grad}v$, the last step by the same two equations.</p>
+<p><strong>Worked example.</strong> For $f(z)=z^{2}+3z$ and $z=1+2i$ one has $df/dz=2z+3=5+4i$, hence $\operatorname{grad}u=5-4i$ and $\operatorname{grad}v=4+5i$. Directly, $u=q^{2}-(q')^{2}+3q$ has gradient $(2q+3)+i(-2q')=5-4i$ at the point, and $v=2qq'+3q'$ has gradient $2q'+i(2q+3)=4+5i$.</p>
+<p><strong>Remark (the derivative is not the gradient).</strong> The complex derivative $df/dz$ is a complex number, and the map $h\mapsto (df/dz)h$ is complex-linear. The gradients of the two parts are its conjugate and its conjugate rotated by $i$; they are orthogonal and of equal length, since multiplication by $i$ is an isometry. <strong>The gradient of a holomorphic function is the conjugate of its derivative, and never the derivative itself</strong> — a holomorphic function has no gradient as a complex-valued object, and what it has is a pair of real gradients tied by the complex structure. The conjugate is not an accident of the calculation: the Riesz map of a Hermitian form is conjugate-linear (§<em>The Riesz Map</em>), and one conjugation is exactly the distance between the two notions.</p>
+<h2 id="the-quaternionic-and-biquaternionic-cases">The Quaternionic and Biquaternionic Cases</h2>
+<p><strong>The form.</strong> On $\mathbb{H}$ and on $\mathbb{B}$ the Hermitian form is $\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$, the scalar part of the product with the conjugate of the second factor, by <em>The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</em>. Its real part is a real inner product, as on $\mathbb{C}$, and the gradient is the representative for it.</p>
+<p><strong>Proposition (two real functions and their gradients).</strong> On $\mathbb{H}$, with $\langle\cdot,\cdot\rangle_{*}$ as above, let $F_1(Q)=\langle Q\rangle_{*}=\operatorname{Sc}(Q\bar Q)$ and $F_2(Q)=\operatorname{Re}(Q^{2})$. Then</p>
+<p>$$
+\operatorname{grad}F_1=2Q,\qquad \operatorname{grad}F_2=2\bar Q .
+$$</p>
+<p><em>Proof.</em> Both functions have real values. For $F_1$, $DF_1(Q)[h]=2\operatorname{Re}(h\bar Q)=\operatorname{Re}\bigl(h\overline{2Q}\bigr)$, so $2Q$ satisfies the defining identity for the realified form $\operatorname{Re}\langle\cdot,\cdot\rangle_{*}$, which is $\langle Q_1,Q_2\rangle_{\mathbb{R}}=\operatorname{Re}(Q_1\bar Q_2)$ in the quaternion product. For $F_2$, $DF_2(Q)[h]=\operatorname{Re}(Qh+hQ)$, and the scalar part of a quaternion product is invariant under the cyclic exchange of the factors, so $\operatorname{Re}(hQ)=\operatorname{Re}(Qh)$ and the derivative is $2\operatorname{Re}(Qh)=\operatorname{Re}\bigl(h\overline{2\bar Q}\bigr)$. Uniqueness gives the two statements.</p>
+<p><strong>Remark (why the side matters).</strong> The two functions are the two real quadratic functions of $Q$, and their gradients are $2Q$ and $2\bar Q$: the same formula with the conjugate on the other element. The difference is invisible in a commutative algebra and is present here. <strong>In a non-commutative algebra the gradient carries a side as well as a direction</strong>, and the side is fixed by the slot convention of the form and by the order of the factors in the function.</p>
+<p><strong>Proposition (the biquaternion case).</strong> On $\mathbb{B}$, with $\operatorname{Sc}$ the complex scalar part, $F_1(\tilde Q)=\langle\tilde Q\rangle_{*}=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ and $F_2(\tilde Q)=\operatorname{Re}\operatorname{Sc}(\tilde Q^{2})$, the same computation gives</p>
+<p>$$
+\operatorname{grad}F_1=2\tilde Q,\qquad \operatorname{grad}F_2=2\tilde Q^{*},
+$$</p>
+<p>the gradients being taken for the real inner product $\operatorname{Re}\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ on the eight real coordinates.</p>
+<p><em>Proof.</em> The two products are computed as in $\mathbb{H}$ with complex coefficients, and the scalar part is complex; the real part of a complex scalar part is the real inner product, and the proof of the quaternion case applies term by term, the conjugation $*$ now conjugating the coefficients as well as reversing the three vector units. The scalar part is again cyclically invariant, so $\operatorname{Re}\operatorname{Sc}(\tilde Q\tilde h)=\operatorname{Re}\operatorname{Sc}(\tilde h\tilde Q)$.</p>
+<p><strong>Remark (the four algebraic norms are not four gradients).</strong> The corpus carries four products, and each of them gives a form and a norm (<em>Norm and Unitary Conventions</em>). Each form that is nondegenerate gives its own gradient of the same function, and two forms that differ give two gradients that differ, by the change of form of the next section. <strong>A gradient is attached to one form, and the choice of the form is part of the statement of the gradient</strong> — which is the general thesis of this article, met here in the algebra that the corpus uses.</p>
+<h2 id="the-dependence-on-the-form">The Dependence on the Form</h2>
+<p><strong>Proposition (the change of gradient under a change of form).</strong> Let $\langle\cdot,\cdot\rangle_1$ and $\langle\cdot,\cdot\rangle_2$ be two nondegenerate symmetric forms on $A$ with Gram matrices $G_1$ and $G_2$ in one basis, and let $\operatorname{grad}_1$ and $\operatorname{grad}_2$ be the two gradients of the same $F$. In coordinates,</p>
+<p>$$
+\boxed{\;v_2=G_2^{-1}G_1\,v_1\;.}
+$$</p>
+<p><em>Proof.</em> By the coordinate formula, $G_1v_1=d=G_2v_2$, where $d$ is the column of partial derivatives. Inverting $G_2$ gives the statement. The partial derivatives are the same in both, because they are readings of one differential.</p>
+<p><strong>Worked example (one function, two gradients).</strong> On $\mathbb{C}$ take $F(Q)=(q')^{2}$, and take the two forms $\langle u,v\rangle_{1}=\operatorname{Re}(u\bar v)$ and $\langle u,v\rangle_{2}=\operatorname{Re}(uv)$, with Gram matrices $\mathrm{I}_2$ and $\operatorname{diag}(1,-1)$ in the basis $1,i$. The first gradient is $2q'i$, and the second is</p>
+<p>$$
+\operatorname{diag}(1,-1)\begin{pmatrix}0\\2q'\end{pmatrix}=\begin{pmatrix}0\\-2q'\end{pmatrix},
+$$</p>
+<p>that is, $-2q'i$. The two point in opposite directions: the first is the direction in which $F$ increases and the second the direction in which $F$ decreases, since $DF[\pm2q'i]=\pm4(q')^{2}$. The first is the direction of steepest ascent for the first form, which is definite. The second is <strong>not</strong> a direction of steepest ascent for its own form, which is indefinite, $\langle i,i\rangle_{2}=-1$, and the theorem of the definite case has no reading there (§<em>Definite and Indefinite Forms</em>).</p>
+<p><strong>Remark (what the form does not touch).</strong> Four objects are unchanged by the choice. The differential $DF(a)$ is unchanged, since it needs no form. The <strong>critical set</strong> is unchanged, since $DF(a)=0$ exactly when $\operatorname{grad}F(a)=0$, the Riesz map being injective. The <strong>level sets</strong> are unchanged, since they are the fibres of $F$. The <strong>tangent space to a level set</strong> is unchanged, since $\ker DF(a)$ is the kernel of the differential, and the identity $\ker DF(a)=(\operatorname{grad}F(a))^{\perp}$ then expresses the same subspace as an orthogonal complement in each form. What the form supplies is the representative, the orthogonality, the normal direction, the direction of steepest ascent and the gradient flow. <strong>The differential is intrinsic and the gradient is a choice</strong>, and the two lists are the exact boundary between them.</p>
+<p><strong>Remark (the gradient field of one function determines the form).</strong> The dependence is not a technicality that disappears on a closer look. For a symmetric form $G$ and the function $F(v)=\frac12\langle v,v\rangle$ the defining identity reads $DF(v)[h]=\langle h,v\rangle$, so the gradient with respect to that same form is $\operatorname{grad}F(v)=v$. With respect to another form $G_2$ the gradient of the same $F$ is $G_2^{-1}Gv$, which differs from $v$ at every $v\neq0$ unless $G_2=G$. <strong>One function and its gradient field therefore determine the form, and a different form gives a different field.</strong></p>
+<h2 id="definite-and-indefinite-forms">Definite and Indefinite Forms</h2>
+<p><strong>Theorem (steepest ascent).</strong> Let the form be a genuine inner product, and let $g=\operatorname{grad}F(a)\neq0$. Among the displacements of unit length the derivative is largest in the direction of $g$:</p>
+<p>$$
+\max_{\lVert h\rVert=1}DF(a)[h]=\lVert g\rVert,\qquad\text{attained exactly at }h=\frac{g}{\lVert g\rVert}.
+$$</p>
+<p><em>Proof.</em> By Cauchy–Schwarz, $DF(a)[h]=\langle h,g\rangle\le\lVert h\rVert\lVert g\rVert=\lVert g\rVert$ on the unit set, and equality holds exactly when $h$ is a non-negative real multiple of $g$, which with unit length gives $h=g/\lVert g\rVert$.</p>
+<p><strong>Remark (definiteness is what the theorem uses).</strong> The proof uses the Cauchy–Schwarz inequality and the equality case, and both need positive definiteness. The direction of steepest ascent is therefore a theorem about inner products and not about nondegenerate forms. <strong>Nondegeneracy gives a gradient; definiteness gives it a meaning as a direction.</strong></p>
+<p><strong>Proposition (the indefinite case has no steepest ascent).</strong> Let the form be nondegenerate, symmetric and indefinite, and let $DF(a)\neq0$. Then some null vector $n$ satisfies $DF(a)[n]\neq0$, and the derivative is unbounded on the null cone.</p>
+<p><em>Proof.</em> By Sylvester's law the form has a basis $e_1,\dots,e_m$ with $\langle e_i,e_i\rangle=\pm1$ and $\langle e_i,e_j\rangle=0$ for $i\neq j$, and both signs occur. For a positive index $k$ and a negative index $l$ the vector $e_k+e_l$ is null, and so is $e_k-e_l$. If $DF(a)$ vanished on every null vector, applying it to $e_k\pm e_l$ gives $DF(a)[e_k]=DF(a)[e_l]=0$; applying it to $e_j\pm e_l$ for every positive $j$ gives $DF(a)[e_j]=0$, and applying it to $e_k\pm e_{l'}$ for every negative $l'$ gives $DF(a)[e_{l'}]=0$. Every basis vector is therefore annihilated, so $DF(a)=0$, against the hypothesis. Along $h=tn$ the square is $t^{2}\langle n,n\rangle=0$ for every real $t$, and the derivative is $t\,DF(a)[n]$, which is unbounded.</p>
+<p><strong>Worked example (the split form on the plane).</strong> Take $\langle u,v\rangle=\operatorname{Re}(uv)$ on $\mathbb{C}$ and $F(Q)=q'$, so that $DF(Q)[h]=h_{q'}$ and $\operatorname{grad}F=-i$. The gradient has negative square, $\langle-i,-i\rangle=\operatorname{Re}(-1)=-1$, so it is not on the positive hyperboloid; and along the null direction $h=t(1+i)$ the derivative is $t$ while $\langle h,h\rangle=t^{2}-t^{2}=0$. <strong>The derivative grows without bound along displacements of zero square.</strong> There is no unit sphere to maximise over, and the descent flow of the split form is not the descent flow of the Euclidean one. The two forms and their two realified quadratics are those of <em>The Two Metrics of the Complex Numbers</em>, read here as the two gradients of one function.</p>
+<h2 id="derivations-are-not-gradients">Derivations Are Not Gradients</h2>
+<p><strong>Definition (derivation).</strong> A <strong>derivation</strong> of an algebra $A$ is a linear map $D:A\to A$ with</p>
+<p>$$
+D(ab)=D(a)b+aD(b)
+$$</p>
+<p>for all $a,b\in A$. Over a complex algebra the linearity is over $\mathbb{C}$ unless a real derivation is named.</p>
+<p><strong>The two objects are of different kinds.</strong> A derivation carries an element to an element and differentiates the product; it is a vector field on the algebra, and it is the algebraic analogue of a directional derivative. A gradient carries a functional to an element; it is an identification of the dual with the space. The derivation needs the product, and the gradient needs a form; neither needs what the other needs. <strong>The product of the algebra therefore cannot produce a gradient, and no gradient can produce a derivation.</strong></p>
+<p><strong>Proposition (the complex field has no derivation and has gradients).</strong> Every $\mathbb{R}$-linear derivation of $\mathbb{C}$ into itself is zero.</p>
+<p><em>Proof.</em> $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$. Then $0=D(0)=D(i\cdot i)=D(i)i+iD(i)=2iD(i)$, and $\mathbb{C}$ has no zero divisors, so $D(i)=0$. A real-linear map that vanishes on $1$ and on $i$ is zero.</p>
+<p>So the algebra of the complex numbers admits no nonzero derivation, and it admits a gradient for every differentiable real function, by §<em>The Complex Case</em>. The two collections are not merely different; one is empty and the other is as large as the differentiable functions.</p>
+<p><strong>Proposition (the quaternions have derivations and have gradients).</strong> For $P\in\mathbb{H}$ the map $D_P(Q)=PQ-QP$ is a derivation of $\mathbb{H}$, and the derivations of this form are nonzero for $P$ outside the centre.</p>
+<p><em>Proof.</em> $D_P(QR)=PQR-QRP=PQR-QPR+QPR-QRP=D_P(Q)R+QD_P(R)$, which is Leibniz; linearity is immediate. The map vanishes for all $Q$ exactly when $P$ commutes with every $Q$, that is, when $P$ is real.</p>
+<p>So $\mathbb{H}$ has both, and $\mathbb{C}$ has only the second. Neither collection determines the other, and neither is a substitute for the other.</p>
+<p><strong>Remark (the conjugation between the two notions).</strong> A derivation of a complex algebra is $\mathbb{C}$-linear, $D(\lambda a)=\lambda D(a)$. Give $A^{*}$ the complex structure $(\lambda\varphi)(h)=\lambda\varphi(h)$; the Riesz map of a Hermitian form is then not $\mathbb{C}$-linear but conjugate-linear, and it carries $\lambda\varphi$ to $\bar\lambda\,\Phi^{-1}(\varphi)$. A $\mathbb{C}$-linear identification of $A^{*}$ with $A$ is therefore not what a Hermitian form supplies, and a gradient is not a derivation with a form dropped in. The one conjugation is the algebraic trace of the difference, and it is the same conjugation that appears in $\operatorname{grad}u=\overline{df/dz}$ (§<em>Complex-Valued Functions</em>). <strong>The gradient of a real-valued function on a complex algebra is a real object that lives one conjugation away from the complex structure.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>A gradient is the representative of a differential under an inner product. The differential $DF(a)$ is a linear functional, intrinsic to $F$ and $a$; an inner product supplies the Riesz map $\Phi(v)(h)=\langle h,v\rangle$, which is an isomorphism of $A$ onto its real dual $A^{*}$ in finite dimension, and the gradient is $\Phi^{-1}(DF(a))$, the unique element with $DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle$ for every $h$.</p>
+<p>In a real basis the gradient is $\sum_j(\sum_iH_{ji}\partial F/\partial q_i)b_j$, where $G_{ij}=\langle b_i,b_j\rangle$ and $H=G^{-1}$; the formula reduces to the sum of the partial derivatives times the basis vectors exactly when the basis is orthonormal. On $\mathbb{C}$ with the realified Hermitian form, $\operatorname{grad}F=F_q+iF_{q'}$, which is $\partial F/\partial\bar Q$ in the unhalved convention of the corpus and $2\partial F/\partial\bar z$ in the halved one; for holomorphic $f=u+iv$, $\operatorname{grad}u=\overline{df/dz}$ and $\operatorname{grad}v=i\overline{df/dz}$. On $\mathbb{H}$ and $\mathbb{B}$, $\operatorname{grad}\langle Q\rangle_{*}=2Q$, while the gradient of $\operatorname{Re}(Q^{2})$, which is $\operatorname{Re}\operatorname{Sc}(\tilde Q^{2})$ on $\mathbb{B}$, is $2\bar Q$: the conjugate marks the side.</p>
+<p>Two forms on one algebra give two gradients of one function, related by $v_2=G_2^{-1}G_1v_1$; the differential, the critical set, the level sets and their tangent spaces are unchanged, while the representative, the orthogonality, the normal direction and the steepest ascent are not. Nondegeneracy is what the definition needs, and definiteness is what the steepest-ascent theorem needs; an indefinite form has gradients and no steepest ascent. A derivation carries elements to elements and needs the product; a gradient carries functionals to elements and needs a form; the complex field has no nonzero derivation and has gradients, and the quaternions have both.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>finite-dimensional real vector space, or an algebra read as one; $m=\dim_{\mathbb{R}}A$</td>
+</tr>
+<tr>
+<td>$DF(a)\in A^{*}$</td>
+<td>Fréchet derivative of $F$ at $a$, a linear functional; $DF(a)[h]$ its value on $h$</td>
+</tr>
+<tr>
+<td>$\langle h,v\rangle$</td>
+<td>the inner product, linear in the first slot and conjugate-linear in the second; in the real case symmetric</td>
+</tr>
+<tr>
+<td>$\Phi(v)(h)=\langle h,v\rangle$</td>
+<td>the Riesz map $A\to A^{*}$; linear in the real case, conjugate-linear in the complex case</td>
+</tr>
+<tr>
+<td>$\operatorname{grad}F(a)=\Phi^{-1}(DF(a))$</td>
+<td>the gradient; the unique element with $DF(a)[h]=\langle h,\operatorname{grad}F(a)\rangle$</td>
+</tr>
+<tr>
+<td>$b_i$, $q_i$</td>
+<td>a real basis of $A$ and the real coordinates of $a=\sum_iq_ib_i$</td>
+</tr>
+<tr>
+<td>$G_{ij}=\langle b_i,b_j\rangle$</td>
+<td>Gram matrix of the form in the basis; symmetric, invertible exactly when the form is nondegenerate</td>
+</tr>
+<tr>
+<td>$H=G^{-1}$</td>
+<td>inverse Gram matrix; $\operatorname{grad}F=\sum_j(\sum_iH_{ji}\partial F/\partial q_i)b_j$</td>
+</tr>
+<tr>
+<td>$A=\operatorname{Re}G$, $B=\operatorname{Im}G$</td>
+<td>blocks of the Gram matrix of $\operatorname{Re}\langle\cdot,\cdot\rangle$ in the real basis $b_1,\dots,b_n,ib_1,\dots,ib_n$: the diagonal blocks are $A$, the off-diagonal blocks are $B$ and $-B$</td>
+</tr>
+<tr>
+<td>$\partial/\partial Q$, $\partial/\partial\bar Q$</td>
+<td>the unhalved Wirtinger operators of the corpus; $\operatorname{grad}F=\partial F/\partial\bar Q$ for real $F$</td>
+</tr>
+<tr>
+<td>$\partial/\partial z$, $\partial/\partial\bar z$</td>
+<td>the halved Wirtinger operators of the literature; $\operatorname{grad}F=2\partial F/\partial\bar z$ for real $F$</td>
+</tr>
+<tr>
+<td>$df/dz$</td>
+<td>the complex derivative of a holomorphic $f$; $\operatorname{grad}(\operatorname{Re}f)=\overline{df/dz}$, $\operatorname{grad}(\operatorname{Im}f)=i\overline{df/dz}$</td>
+</tr>
+<tr>
+<td>$\langle Q_1,Q_2\rangle_{*}=\operatorname{Sc}(Q_1Q_2^{*})$</td>
+<td>the Hermitian form of $\mathbb{H}$ and $\mathbb{B}$; its real part is the real inner product</td>
+</tr>
+<tr>
+<td>$v_2=G_2^{-1}G_1v_1$</td>
+<td>the change of the gradient under a change of form</td>
+</tr>
+<tr>
+<td>$D(ab)=D(a)b+aD(b)$</td>
+<td>the Leibniz rule defining a derivation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="differential-calculus-on-normed-spaces.html">Differential Calculus on Normed Spaces</a>, for the Fréchet derivative, its uniqueness and the coordinate reading of the total differential used here.</li>
+<li><a href="hilbert-spaces.html">Hilbert Spaces</a>, for the inner product, the Cauchy–Schwarz inequality, the projection theorem and the Riesz representation theorem.</li>
+<li><a href="banach-and-hilbert-spaces.html">Banach and Hilbert Spaces</a>, for the same theorem in the setting of normed spaces, and for the place of completeness in it.</li>
+<li><a href="sesquilinear-forms-and-the-lax-milgram-theorem.html">Sesquilinear Forms and the Lax–Milgram Theorem</a>, for the bounded forms, the operator they represent and the coercive case.</li>
+<li><a href="the-two-metrics-of-the-complex-numbers.html">The Two Metrics of the Complex Numbers</a>, for the two forms on the plane, their Gram matrices, their signatures and the two realified quadratics read here as two gradients.</li>
+<li><a href="analysis-on-m5c.html">Analysis on $M_5(\mathbb{C})$</a>, for the halved Wirtinger calculus and the complex differential in several complex variables.</li>
+<li><a href="the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a>, for the Hermitian form $\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ whose real part is the inner product of the biquaternion case.</li>
+<li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em>, for the two derivative operators of the corpus and the unhalved normalisation.</li>
+<li><a href="biquaternion-analysis.html">Biquaternion Analysis</a>, for the gradient $\tilde\nabla$ as an operator and the four products read on it.</li>
+<li><a href="automorphisms-and-derivations-of-algebras.html">Automorphisms and Derivations of Algebras</a>, for the derivations contrasted with the gradient in the closing section.</li>
+<li><a href="the-derivations-of-a-commutative-algebra.html">The Derivations of a Commutative Algebra</a>, for the derivation theory of the commutative case, of which the vanishing on $\mathbb{C}$ is the extreme instance.</li>
+<li>Frigyes Riesz and Béla Sz.-Nagy, <em>Functional Analysis</em> (Dover, 1990), for the representation theorem and the conjugate-linear identification of a Hilbert space with its dual.</li>
+<li>Werner Greub, <em>Linear Algebra</em>, 4th edition (Springer, 1981), for Gram matrices, nondegenerate forms and the change of matrix under a change of basis.</li>
+<li>Lars V. Ahlfors, <em>Complex Analysis</em> (McGraw-Hill, 1979), for the Wirtinger operators and the Cauchy–Riemann equations in the form used above.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
