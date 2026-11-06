@@ -241,11 +241,11 @@ $$</p>
 <p>Two biquaternionic forms of the massive Dirac equation are in play here, and they must not be read as one.</p>
 <p><strong>The one-sided pair.</strong> The corpus's equation is the chiral pair on the element-valued field,</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>Here $\lambda_m=\hbar/(mc)$ is the mass length.</p>
+<p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}_{\mathrm{sp},L}$ carries the $L$ value and $\tilde{Ξ}_{\mathrm{sp},R}$ the $R$ value, read from the element and the declared frame and fixed in <em>Special Element Conventions</em>, §<em>The Chirality Convention</em>. At $m=0$ the pair decouples into</p>
 <p>$$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0,
@@ -255,13 +255,13 @@ $$</p>
 <p>one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.</p>
 <p><strong>The two-sided form.</strong> The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries the source's four-component field $Ξ$ to a biquaternion-valued function $F=A[Ξ]$, under which the Dirac equation becomes the single equation</p>
 <p>$$
-\mathcal NF=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0,
+\mathcal NF=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_mi\,\overline{F}\,\vec e_z=0,
 \qquad
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$</p>
 <p>Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads</p>
 <p>$$
-\mathcal NF=-\tilde\nabla^\natural F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0 .
+\mathcal NF=-\tilde\nabla^\natural F-k_mi\,\overline{F}\,\vec e_z=0 .
 $$</p>
 <p>The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what <em>two-sided</em> names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=\mu\tilde{Ξ}_{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in <em>The Dirac Equation in Biquaternionic Form</em>; what the bag adds is the boundary.</p>
 <h3 id="the-linear-bag-model">The Linear Bag Model</h3>
@@ -282,7 +282,7 @@ $$</p>
 <p>$$
 A(iΞ) = -A(Ξ)\,\vec e_z ,
 $$</p>
-<p>that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-\lambda_m^{-1}i\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in <em>The Dirac Equation in Biquaternionic Form</em>, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.</p>
+<p>that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-k_mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in <em>The Dirac Equation in Biquaternionic Form</em>, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.</p>
 <p><strong>Removal of the conjugation operator.</strong> Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of <strong>complex-linear</strong> equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:</p>
 <p>$$
 R = D_3 + i\frac{\partial}{\partial r'_t}\,M_{i\vec e_x} - m M_{\vec e_y}
@@ -491,7 +491,7 @@ $$</p>
 <td>Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model)</td>
 </tr>
 <tr>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality</td>
 </tr>
 <tr>
@@ -499,7 +499,7 @@ $$</p>
 <td>Spatial Dirac operator of the dictionary</td>
 </tr>
 <tr>
-<td>$\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z$</td>
+<td>$\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-k_mi\,\overline{F}\,\vec e_z$</td>
 <td>Two-sided Dirac operator; the bar is the conjugation in the mass term</td>
 </tr>
 <tr>

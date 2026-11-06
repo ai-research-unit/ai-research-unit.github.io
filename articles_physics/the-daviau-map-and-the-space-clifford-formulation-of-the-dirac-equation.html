@@ -74,7 +74,7 @@
 <p><strong>One algebra, not two.</strong> The source builds its algebra on three vectors of three-dimensional Euclidean space. In the corpus those three vectors are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$: each squares to $+e_t$, any two anticommute, and the three generate the biquaternion algebra $\mathbb{B}$ (§<em>The Three Space Vectors and the Dictionary</em>). No second algebra is introduced, and no second multiplication is fixed.</p>
 <p><strong>The equation.</strong> For a general element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$ the equation is</p>
 <p>$$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$</p>
 <p>with the elements $\mathfrak D$ and $\tilde A$ of §<em>The Daviau Equation</em>. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.</p>
 <p><strong>What the article shows.</strong> Three things, and each is exact. The eight real functions of the source's field are the eight real coordinates of an element of $\mathbb{B}$, and the assignment carries no free choice (§<em>The Daviau Map</em>). The star conjugation of the source is the corpus's complex conjugation $\bar{\cdot}$, and not the Hermitian conjugation ${}^{*}$; this is the article's main algebraic point (§<em>The Star Conjugation</em>). The equation is two-sided, but its right factor is a fixed bivector and not the chirality, which places it with the corpus's chiral pair and not with Kravchenko's equation (§<em>The Two Equations the Corpus Carries</em>).</p>
@@ -194,7 +194,7 @@ $$</p>
 <h2 id="the-daviau-equation">The Daviau Equation</h2>
 <p><strong>Definition.</strong> With $\tilde{Ξ}_{\mathrm{sp}}$ a general element and $\mathfrak D$, $\tilde A$ the elements below, the equation is</p>
 <p>$$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$</p>
 <p>with</p>
 <p>$$
@@ -215,12 +215,12 @@ $$</p>
 <p>The corpus carries two Dirac equations, and the Daviau equation is a <strong>third form that must be placed against both</strong>, not identified with either. The two are distinguished by which side the operator acts on, and they carry different pieces of physics: chirality on the one-sided equation, the mass direction on the two-sided one.</p>
 <p><strong>The one-sided equation, and chirality.</strong> The corpus's own equation is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
-<p>in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $\lambda_m=\hbar/(mc)$ is the mass length.</p>
+<p>in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p><strong>The two-sided equation, and the mass direction.</strong> Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with</p>
 <p>$$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z,\qquad
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-k_mi\,\overline{F}\,\vec e_z,\qquad
 D_3=\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k},
 $$</p>
 <p>where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i c r'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.</p>
@@ -237,8 +237,8 @@ $$</p>
 <tbody>
 <tr>
 <td>Equation</td>
-<td>$\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>$\mathcal NF=0$</td>
 </tr>
 <tr>
@@ -257,7 +257,7 @@ $$</p>
 <td>Mass</td>
 <td>$m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear</td>
 <td>the pairing of the two values</td>
-<td>$-\lambda_m^{-1}i\overline{F}\vec e_z$</td>
+<td>$-k_mi\overline{F}\vec e_z$</td>
 </tr>
 <tr>
 <td>Chirality</td>
@@ -280,7 +280,7 @@ $$</p>
 <p>$$
 \frac{\partial}{\partial R_t}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
 +\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
-=-\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
+=-k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
 $$</p>
 <p>The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.</p>
 <p><strong>Statement (the equivalence).</strong> Daviau's formulation and the spacetime formulation are equivalent. The relabelling $z$ that carries the three space directions of one to those of the other is the cycle</p>
@@ -377,7 +377,7 @@ $$</p>
 <td>The potential in the same basis</td>
 </tr>
 <tr>
-<td>$\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>$\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$</td>
 <td>The Daviau equation</td>
 </tr>
 <tr>

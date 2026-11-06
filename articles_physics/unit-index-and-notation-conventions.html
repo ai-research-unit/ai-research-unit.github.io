@@ -246,15 +246,15 @@
 </tr>
 <tr>
 <td>Length, mass scale</td>
-<td>$\lambda_m=\hbar/(mc)$</td>
+<td>$\lambda_m=1/k_m=\hbar/(mc)$</td>
 <td>$\mathrm{L}$</td>
 <td>metre ($\mathrm{m}$)</td>
 <td>derived</td>
-<td>the reduced Compton wavelength; the only one of the three lengths that belongs to the particle alone, and the one at which relativistic quantum effects begin; its reciprocal $\lambda_m^{-1}=\lambda_m^{-1}$ is the coefficient a mass term carries</td>
+<td>the reduced Compton wavelength, the inverse of the mass wave number; the only one of the three lengths that belongs to the particle alone, and the one at which relativistic quantum effects begin; its reciprocal $\lambda_m^{-1}=mc/\hbar$ is the coefficient a mass term carries</td>
 </tr>
 <tr>
 <td>Length, momentum</td>
-<td>$\lambda_p=\hbar/p$</td>
+<td>$\lambda_p=1/k_{\mathrm{mo}}=\hbar/p$</td>
 <td>$\mathrm{L}$</td>
 <td>metre ($\mathrm{m}$)</td>
 <td>derived</td>
@@ -262,11 +262,35 @@
 </tr>
 <tr>
 <td>Length, energy</td>
-<td>$\lambda_E=\hbar c/E$</td>
+<td>$\lambda_E=1/k_E=\hbar c/E$</td>
 <td>$\mathrm{L}$</td>
 <td>metre ($\mathrm{m}$)</td>
 <td>derived</td>
-<td>the inverse temporal wave number, $1/k_0$; the shortest of the three, and equal to $\lambda_m$ at rest and to $\lambda_p$ at $m=0$; the three satisfy $E^2/(\hbar^2c^2)=p^2/\hbar^2+\lambda_m^{-2}$, in <em>The Mass Length Scale of a Massive Particle</em></td>
+<td>the inverse temporal wave number, $1/k_0$; the shortest of the three, and equal to $\lambda_m$ at rest and to $\lambda_p$ at $m=0$; the three satisfy $E^2/(\hbar^2c^2)=p^2/\hbar^2+\lambda_m^{-2}$, in <em>The Three Wavenumbers of a Particle</em></td>
+</tr>
+<tr>
+<td>Wave number, mass</td>
+<td>$k_m=mc/\hbar$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the rest-frame phase per metre; the coefficient a mass term carries, and the only one of the three that belongs to the particle alone; the species enters on the mass, $k_{m_e}$ and $k_{m_p}$; its inverse $1/k_m=\lambda_m$ is the distance over which that phase turns one radian, the shortest distance at which the particle is still one particle, and the range of the force it carries</td>
+</tr>
+<tr>
+<td>Wave number, momentum</td>
+<td>$k_{\mathrm{mo}}=p/\hbar$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the spatial phase per metre; the label $\mathrm{mo}$ keeps it apart from the spatial index $k$ and from the components $p_k$; a property of the state; its inverse $1/k_{\mathrm{mo}}=\lambda_p$ is the distance over which that phase turns one radian, the unit of every fringe spacing, twice the narrowest width of a state, and the Bohr radius in the hydrogen ground state</td>
+</tr>
+<tr>
+<td>Wave number, energy</td>
+<td>$k_E=E/(\hbar c)$</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>$\mathrm{m^{-1}}$</td>
+<td>derived</td>
+<td>radians of the temporal phase per metre of light travel; the temporal entry of the wave four-vector; the largest of the three; the three satisfy $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$; its inverse $1/k_E=\lambda_E$ is the distance light covers while that phase turns one radian, the length a duration becomes, the reach of a virtual deficit of energy, and the decay length of an unstable particle</td>
 </tr>
 <tr>
 <td>Inverse temperature</td>
@@ -345,10 +369,16 @@
 <p><strong>A multiple is the same dimension.</strong> Energies are quoted in electronvolts, $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$, which is exact because $e$ is; momenta in $\mathrm{MeV}/c$; and lengths in femtometres. A prefix, or a division by $c$, changes the number and never the dimension.</p>
 <p><strong>The coefficients of one element share one unit.</strong> The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi_{\mathrm{scp}}/c$ rather than $\xi_{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The field strength needs no adjustment: $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is one number, and $\sqrt{\epsilon}\,\vec E$ and $\sqrt{\mu}\,\vec H$ each carry the dimension $\mathrm{M}^{1/2}\,\mathrm{L}^{-1/2}\,\mathrm{T}^{-1}$. The unit is the unit of the quantity the element represents, and it is supplied by the identification.</p>
 <p><strong>The two writings of the temporal slot.</strong> In the length coordinate the material position is $\tilde R_\Phi = i c r'_t\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $ir'_t$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=i c r'_t$ has $Q_t^2=-c^2{r'_{t}}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R_\Phi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.</p>
-<p><strong>Dimensionless and dimensionful.</strong> A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. An exponent is a pure number, and the coupling is what keeps it one: a phase is written $S/\hbar$, a holonomy is written $\exp(i\frac{ϙ}{\hbar}\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu)$, and the line integral is not an exponent on its own, because $\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ carries $\mathrm{Q}$ and no choice of $c$, $\hbar$ or $G$ removes it. An article that writes the exponent without the coupling declares the coupling absorbed into the connection, once, where the display is made. A dimensionful constant is a unit conversion and is written with its unit. No scale is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires one. The metrology says the same thing from the other side. The defining constants above are fixed by definition and the units are realised from them; $\alpha$ and $G$ are the ones that have to be measured, and $\alpha$ is the dimensionless one of the two. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$, which are the Planck units — says so locally, and the constant returns wherever a dimensional statement is at issue.</p>
+<p><strong>Dimensionless and dimensionful.</strong> A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. An exponent is a pure number, and the coupling is what keeps it one: a phase is written $S/\hbar$, a holonomy is written $\exp(i\frac{ϙ}{\hbar}\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu)$, and the line integral is not an exponent on its own, because $\oint_C\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ carries $\mathrm{Q}$ and no choice of $c$, $\hbar$ or $G$ removes it. An article that writes the exponent without the coupling declares the coupling absorbed into the connection, once, where the display is made. A dimensionful constant is a unit conversion and is written with its unit. No scale is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires one. The metrology says the same thing from the other side. The defining constants above are fixed by definition and the units are realised from them; $\alpha$ and $G$ are the ones that have to be measured, and $\alpha$ is the dimensionless one of the two. No article is permitted to set one of these constants to one: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are carried, and the reason is given in the paragraphs that follow.</p>
+<p><strong>The shortcut $\hbar=c=1$ is not allowed.</strong> An article may not set $\hbar$ or $c$ to one, and a writing that does is a defect in that article rather than a convention of it. Both are defining constants of the SI, fixed exactly, $c=299\,792\,458\ \mathrm{m\,s^{-1}}$ and $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$, and setting one to one is not a choice of gauge but the deletion of a conversion between two base dimensions. With $c=1$ the dimension $\mathrm{T}$ becomes $\mathrm{L}$ and the first table loses a row; with $\hbar=1$ the dimension of action becomes $1$ and a momentum becomes a reciprocal length. The two deletions together collapse $\mathrm{L}$, $\mathrm{T}$ and $\mathrm{M}$ onto one dimension, and from that point no dimensional statement in the article can be tested, because every candidate mismatch has been legitimised in advance.</p>
+<p><strong>Why the algebra forbids it in particular.</strong> The coefficients of one element share one unit because the biquaternion norm is a sum of four squares (§<em>The coefficients of one element share one unit</em> above). The temporal slot of the material position is $i c r'_t\,e_t$, and the factor $c$ is exactly what makes that coefficient a length like $r_x,r_y,r_z$; it is the content of §<em>The two writings of the temporal slot</em>, and not a decoration that may be dropped. An article that sets $c=1$ while writing $\tilde R_\Phi=i r'_t\,e_t+\vec q$ has silently changed the unit of its temporal coefficient and broken the commensurability that the norm requires. The same holds for $\hbar$, which is the coupling between the wave and the phase: the phase is $S/\hbar$, the wave four-vector is $p/\hbar=\sum_\mu k_\mu e_\mu$, and the coefficient of a mass term is $\lambda_m^{-1}=mc/\hbar$. Setting $\hbar=1$ makes $p$ a wave number and $m$ a wave number, and the three lengths of the table — $\lambda_m$, $\lambda_p$, $\lambda_E$ — all collapse onto the reciprocals they are computed from. The letter $m$ then names a reciprocal length in one article and a mass in the next, which is the ambiguity that the mass-length convention exists to remove.</p>
+<p><strong>What the shortcut hides.</strong> A denominator $p^2-m^2$ is not a difference of like quantities. The first term carries $\mathrm{M}^{2}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$ and the second carries $\mathrm{M}^{2}$, so the subtraction is licensed by $c=1$ and by nothing else; with the constants carried it reads $p^2-\hbar^2k_m^2$, where $p^2=E^2/c^2-\vec p^{\,2}$ and both terms are inverse lengths squared. The same fault runs through $\tilde P\tilde P^{\natural}=-m^2$, through the Matsubara denominator $\omega_n^2+\vec p^{\,2}+m^2$, and through every propagator pole written as $p^2=m^2$: each is a sum of unlike dimensions that the shortcut has made to look alike. A dimension count catches these at sight and cannot catch them in natural units, so the shortcut removes the one check that costs nothing.</p>
+<p><strong>What is written instead.</strong> The constants are carried, and a mass is written through the mass wave number, $k_m=mc/\hbar$, so that the coefficient of a mass term is $k_m$, a momentum is $\hbar k_m=mc$ and an energy is $\hbar c\,k_m=mc^2$; the mass length is the inverse, $1/k_m=\hbar/(mc)$, and is written only when a distance is what the sentence needs. A numerical example may quote its numbers in units of $mc$, of $mc^2$ or of $1/k_m$, because that is a change of unit for one quantity and it leaves the dimension in place: $E=2mc^2$ and $p=0.3\,mc$ are admissible, $m=1$ and $c=1$ are not. Planck units are excluded by the same rule, since $G=1$ beside $c=1$ and $\hbar=1$ deletes a third conversion and takes the kilogram with it.</p>
 <p><strong>A caution on $S$.</strong> The letter $S$ carries three meanings: the action, the spin $\tilde S_k$, and the entropy of the thermodynamics articles. The action and the spin share the unit $\mathrm{J\,s}$; the entropy is $\mathrm{J\,K^{-1}}$. The subscript and the article separate the three, and an article that uses two of them says which is which.</p>
-<p><strong>A caution on $\mu$.</strong> The letter $\mu$ carries two meanings in the corpus: the permeability in $c=1/\sqrt{\epsilon\mu}$, and the direction label in $e_\mu$ and $Q_\mu$. A third, the inverse length $\mu=\lambda_m^{-1}$, is no longer written. The coefficient of a mass term is $\lambda_m^{-1}$, the reciprocal of the mass length scale $\lambda_m=\hbar/(mc)$ of <em>The Mass Length Scale of a Massive Particle</em>, and a text that writes $\mu$ where a mass is meant is using the older spelling. Two uses remain, and an article that needs both says which is which.</p>
-<p><strong>A caution on $\lambda$.</strong> The letter $\lambda$ names a central value and an eigenvalue, the helicity weight $\lambda=\vec u_p\cdot\vec S$ of <em>Helicity in Biquaternionic Form</em>, and a free exponent in the notation of §<em>The Upper and Low Marks</em>. A length therefore never takes a bare $\lambda$. The corpus has a family of three length subscripts, and each names the quantity the length is computed from: $\lambda_m=\hbar/(mc)$ from the mass, $\lambda_p=\hbar/p$ from the momentum and $\lambda_E=\hbar c/E$ from the total energy. The subscript never names the particle, and no fourth length symbol is introduced for the reciprocals, which are $\lambda_m^{-1}$, $p/\hbar$ and $E/(\hbar c)$.</p>
+<p><strong>A wave number and its inverse are one fact read two ways.</strong> A wave number is radians of phase per unit length, so its reciprocal is the distance per radian; the table above gives the three of the series in both readings. The wave number is what a derivative returns, because every differentiation carries an inverse length, so it is the form in which the equations are written and the form a coefficient of an operator takes. The distance is what a laboratory measures, so it is the form in which the readings are stated: a resolution, a fringe spacing, a light-travel length. An article that names both for the same object writes the inversion once, $1/k_m=\lambda_m$, and never introduces the distance as a second definition. The general reading, with the three distances and what each one measures, is in <em>The Three Wavenumbers of a Particle</em>.</p>
+<p><strong>A caution on $k$.</strong> The letter $k$ is the spatial index of this corpus: $\vec e_k$, $p_k$, $\sum_k$. A wave number therefore never takes a bare $k$, and the three wave numbers of a particle carry a subscript, $k_m=mc/\hbar$, $k_{\mathrm{mo}}=p/\hbar$ and $k_E=E/(\hbar c)$, defined in <em>The Three Wavenumbers of a Particle</em>. The label $\mathrm{mo}$ is two letters for that reason: $k_p$ and $p_k$ would be one transposition apart, and a reader could not tell a wave number from a component. Two neighbours are to be told apart from $k_E$: $k_{\mathrm{eu}}$ is the Euclidean momentum after a Wick rotation, whose square is non-negative, and $k_0=\omega/c$ is the temporal component in the displays that write the wave four-vector by components. No display mixes the three.</p>
+<p><strong>A caution on $\mu$.</strong> The letter $\mu$ carries two meanings in the corpus: the permeability in $c=1/\sqrt{\epsilon\mu}$, and the direction label in $e_\mu$ and $Q_\mu$. A third meaning, the reciprocal mass length, was once carried by the same letter and is no longer written at all. The coefficient of a mass term is the mass wave number $k_m=mc/\hbar$ of <em>The Three Wavenumbers of a Particle</em>, and a text that writes $\mu$ where a mass is meant is using the older spelling. Two uses remain, and an article that needs both says which is which.</p>
+<p><strong>A caution on $\lambda$.</strong> The letter $\lambda$ names a central value and an eigenvalue, the helicity weight $\lambda=\vec u_p\cdot\vec S$ of <em>Helicity in Biquaternionic Form</em>, and a free exponent in the notation of §<em>The Upper and Low Marks</em>. A length therefore never takes a bare $\lambda$, and the corpus does not work in lengths at all: it works in the three wave numbers $k_m=mc/\hbar$, $k_{\mathrm{mo}}=p/\hbar$ and $k_E=E/(\hbar c)$, and a length appears only as an inversion, $\lambda_m=1/k_m$, $\lambda_p=1/k_{\mathrm{mo}}$ and $\lambda_E=1/k_E$. The subscript of a length names the quantity it is computed from, never the particle, and no fourth symbol is introduced for the inverses, since the inverses are the three wave numbers.</p>
 <h2 id="the-upper-and-low-marks">The Upper and Low Marks</h2>
 <p><strong>These rules are real, and partial.</strong> They fix the marks of the common uses and they bind wherever they apply. They do not cover every use: a mark that falls outside them is governed by the section that fixes it, and a stricter rule stated in the corpus overrides them — the derivation convention of <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, the Fock and opposite tokens of §<em>The Labels</em>, and the forms of §<em>The Subscripts</em>.</p>
 <p><strong>A caret carries four things and no label:</strong></p>
@@ -480,11 +510,15 @@ In a bilinear the cell multiplies the one that follows, $\tilde{Ξ}_{\mathrm{sp}
 </tr>
 <tr>
 <td>$\mu$</td>
-<td>Permeability in $c=1/\sqrt{\epsilon\mu}$, or direction label in $e_\mu$ and $Q_\mu$; read by context, and never the inverse length of a mass, which is $\lambda_m^{-1}$</td>
+<td>Permeability in $c=1/\sqrt{\epsilon\mu}$, or direction label in $e_\mu$ and $Q_\mu$; read by context, and never the inverse length of a mass, which is $k_m$</td>
 </tr>
 <tr>
-<td>$\lambda_m=\frac{\hbar}{mc}$, $\lambda_p=\frac{\hbar}{p}$, $\lambda_E=\frac{\hbar c}{E}$</td>
-<td>The mass, momentum and energy lengths, all three lengths and all three reduced; the subscript names the input, $m$, $p$ or $E$, and never the particle; the three satisfy $E^2/(\hbar^2c^2)=p^2/\hbar^2+\lambda_m^{-2}$</td>
+<td>$k_m=\frac{mc}{\hbar}$, $k_{\mathrm{mo}}=\frac{p}{\hbar}$, $k_E=\frac{E}{\hbar c}$</td>
+<td>The mass, momentum and energy wave numbers; the subscript names the input, $m$, $p$ or $E$, and never the particle; the three satisfy $k_E^{2}=k_{\mathrm{mo}}^{2}+k_m^{2}$</td>
+</tr>
+<tr>
+<td>$\lambda_m=\frac{1}{k_m}$, $\lambda_p=\frac{1}{k_{\mathrm{mo}}}$, $\lambda_E=\frac{1}{k_E}$</td>
+<td>The three lengths, the inverses of the three wave numbers; each is the distance per radian of the corresponding phase, and each is written only where a distance is what the sentence needs</td>
 </tr>
 <tr>
 <td>$\mathrm{fop}$</td>
