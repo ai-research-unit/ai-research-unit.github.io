@@ -85,7 +85,7 @@ $$</p>
 <p>The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = c r'_{t}$ and $r_k$ on the three spatial directions (<em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>), so that $Q_t = ix_0$.</p>
 <h2 id="the-dirac-propagator-and-the-square">The Dirac Propagator and the Square</h2>
 <p>The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.</p>
-<p><strong>The two symbols.</strong> A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \hat{\tilde{Ξ}_{\mathrm{sp}}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,</p>
+<p><strong>The two symbols.</strong> A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,</p>
 <p>$$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -p^2,
 \qquad
@@ -104,22 +104,22 @@ $$</p>
 <p>The sign bookkeeping is the whole of that line. The two factors of $i$ multiply to $-1$ and the norm is $-p^2$, so the product of the two symbols is the mass-shell scalar itself. Either order gives the same product, because the norm of an element is central: the sign with which the momentum is contracted is a labelling convention and not something the square can see.</p>
 <p><strong>The pair on a plane wave.</strong> Substituting the symbols into the two lines gives</p>
 <p>$$
-i\tilde{P}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_R = \lambda_m^{-1}\hat{\tilde{Ξ}_{\mathrm{sp}}}_L,
+i\tilde{P}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
 \qquad
-i\tilde{P}^{\natural}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_L = \lambda_m^{-1}\hat{\tilde{Ξ}_{\mathrm{sp}}}_R ,
+i\tilde{P}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
 $$</p>
 <p>and eliminating one part returns the mass shell, $p^2 = \lambda_m^{-2}$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.</p>
 <p><strong>The propagator.</strong> The Green kernel of the pair is the inverse of $\mathbb{D}-\lambda_m^{-1}$, and on a plane wave its two components are</p>
 <p>$$
-\hat{\mathcal S}_L = \frac{i\lambda_m^{-1} - \tilde{P}}{p^2 - \lambda_m^{-2}},
+\mathcal S_L = \frac{i\lambda_m^{-1} - \tilde{P}}{p^2 - \lambda_m^{-2}},
 \qquad
-\hat{\mathcal S}_R = \frac{i\lambda_m^{-1} - \tilde{P}^{\natural}}{p^2 - \lambda_m^{-2}} .
+\mathcal S_R = \frac{i\lambda_m^{-1} - \tilde{P}^{\natural}}{p^2 - \lambda_m^{-2}} .
 $$</p>
 <p>The numerator of the $L$ component is the momentum element and the numerator of the $R$ component its conjugate; that assignment is the one that satisfies both lines, since</p>
 <p>$$
-i\tilde{P}\,\hat{\mathcal S}_R - \lambda_m^{-1}\hat{\mathcal S}_L = i,
+i\tilde{P}\,\mathcal S_R - \lambda_m^{-1}\mathcal S_L = i,
 \qquad
-i\tilde{P}^{\natural}\,\hat{\mathcal S}_L - \lambda_m^{-1}\hat{\mathcal S}_R = i .
+i\tilde{P}^{\natural}\,\mathcal S_L - \lambda_m^{-1}\mathcal S_R = i .
 $$</p>
 <p>Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde{P}$ and $i\tilde{P}^{\natural}$, their product is $p^2$, and without the two factors of $i$ the product would be the norm $-p^2$ and the denominator would be the negative of the mass-shell scalar.</p>
 <p>The propagator satisfies</p>
@@ -297,7 +297,7 @@ $$</p>
 <p>$$
 \int d^4y\;K_{T_1}(x,y)\,K_{T_2}(y,x_2) = K_{T_1+T_2}(x,x_2),
 $$</p>
-<p>a sum over paths being a sum over intermediate points, and $\mathcal S$ is the transform $\int_0^\infty dT$ of the family. The law stops there: $\int d^4y\,\mathcal S(x,y)\mathcal S(y,x_2)$ is the convolution of two propagators — in momentum space the square of the two components of $\hat{\mathcal S}$, not the propagator itself — so $\mathcal S$ does not compose to itself and the composition law is not one of its properties. That is why the worldline keeps the proper time explicit instead of integrating it away at the start. In the biquaternion algebra the composition is the multiplication of algebra-valued amplitudes, with the central phase composing additively; the algebra's non-commutativity means that the order of the intermediate points matters, and the path-ordered spin factor is the price of that non-commutativity.</p>
+<p>a sum over paths being a sum over intermediate points, and $\mathcal S$ is the transform $\int_0^\infty dT$ of the family. The law stops there: $\int d^4y\,\mathcal S(x,y)\mathcal S(y,x_2)$ is the convolution of two propagators — in momentum space the square of the two components of $\mathcal S$, not the propagator itself — so $\mathcal S$ does not compose to itself and the composition law is not one of its properties. That is why the worldline keeps the proper time explicit instead of integrating it away at the start. In the biquaternion algebra the composition is the multiplication of algebra-valued amplitudes, with the central phase composing additively; the algebra's non-commutativity means that the order of the intermediate points matters, and the path-ordered spin factor is the price of that non-commutativity.</p>
 <p><strong>The propagator equation.</strong> The kernel satisfies $\left(\mathbb{D} - \lambda_m^{-1}\right)\mathcal S = i\delta^{(4)}$. This is the statement that the propagator is the Green's function of the first-order pair. Applying $\mathbb{D} + \lambda_m^{-1}$ and using $\mathbb{D}^2 = \Box$ gives</p>
 <p>$$
 \left(\Box - \lambda_m^{-2}\right)\mathcal S
@@ -393,7 +393,7 @@ $$</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - \lambda_m^{-1}\right)\mathcal S = i\delta^{(4)}$ with $\lambda_m^{-1} = mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the <strong>proper-time</strong> way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \left(\mathbb{D} + \lambda_m^{-1}\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \Box$. In the <strong>spinning-worldline</strong> way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).</p>
-<p>In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\hat{\mathcal S}_L = (i\lambda_m^{-1}-\tilde{P})/(p^2-\lambda_m^{-2})$ and $\hat{\mathcal S}_R = (i\lambda_m^{-1}-\tilde{P}^{\natural})/(p^2-\lambda_m^{-2})$, and the identity $\left(\mathbb{D}-\lambda_m^{-1}\right)\left(\mathbb{D}+\lambda_m^{-1}\right) = \mathbb{D}^2-\lambda_m^{-2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\lambda_m^{-1}$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.</p>
+<p>In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\lambda_m^{-1}-\tilde{P})/(p^2-\lambda_m^{-2})$ and $\mathcal S_R = (i\lambda_m^{-1}-\tilde{P}^{\natural})/(p^2-\lambda_m^{-2})$, and the identity $\left(\mathbb{D}-\lambda_m^{-1}\right)\left(\mathbb{D}+\lambda_m^{-1}\right) = \mathbb{D}^2-\lambda_m^{-2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\lambda_m^{-1}$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

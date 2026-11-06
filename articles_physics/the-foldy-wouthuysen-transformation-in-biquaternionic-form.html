@@ -115,6 +115,7 @@ $$</p>
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla\tilde\nabla^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.</p>
+<p>Here $\lambda_m=\hbar/(mc)$ is the mass length.</p>
 <h2 id="the-dirac-hamiltonian-and-the-oddeven-split">The Dirac Hamiltonian and the Odd/Even Split</h2>
 <p>The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion</p>
 <p>$$
@@ -284,25 +285,25 @@ $$</p>
 [S_1,Q_k]F=-\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y,
 \qquad
 -i[S_1,Q_k]F=i\cdot\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y
-=-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y,
+=-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y,
 $$</p>
 <p>where $i\cdot i=-1$ once more. Hence</p>
 <p>$$
 \vec X=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y+\cdots .
+X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots .
 $$</p>
-<p>The correction is of the order of the half reduced Compton wavelength $\hbar/(2mc)$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the <strong>mean position</strong> (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,</p>
+<p>The correction is of the order of the half reduced Compton wavelength $\lambda_m/2$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the <strong>mean position</strong> (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,</p>
 <p>$$
 \frac{d\vec X}{dr'_t}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
 $$</p>
 <p>commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference</p>
 <p>$$
-\vec q-\vec X=\frac{\hbar}{2mc}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
+\vec q-\vec X=\frac{\lambda_m}{2}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
 $$</p>
 <p>The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters.</p>
 <p>In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article <em>Zitterbewegung in Biquaternionic Form</em> records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.</p>
-<p>The correction $\frac{\hbar}{2mc}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.</p>
+<p>The correction $\frac{\lambda_m}{2}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>The transformation can now be located in the two splits of the algebra, and the location is the content of the article.</p>
 <p><strong>The subscript is where the biquaternion pair lives.</strong> The massive biquaternionic Dirac equation is the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ exchanges the two values of the subscript. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges the two values. Under the subscript the mass crosses from one value to the other, and the kinetic operator stays.</p>
@@ -390,7 +391,7 @@ $$</p>
 <p>$$
 \vec X=U^\dagger\vec q\,U=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\hbar}{2mc}\,\vec e_kF\vec e_y+\cdots ,
+X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots ,
 $$</p>
 <p>whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.</p>
 <p>The biquaternion interpretation turns on two splits that must not be conflated. The frame grading, conjugation by $\beta$, is what the FW transformation diagonalises and in which the mass term is a multiple of the grading; the subscript, read by the chirality $\Gamma F=-iF\vec e_z$, is where the biquaternion mass pair is written and in which the mass exchanges $L$ and $R$. The two anticommute, so no single $*$-unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator is frame-odd: it anticommutes with $\beta$, and the transformation it generates does not leave the grading fixed.</p>
@@ -484,7 +485,7 @@ $$</p>
 <td>Material position</td>
 </tr>
 <tr>
-<td>$X_kF = Q_kF-\frac{\hbar}{2mc}\vec e_kF\vec e_y+\cdots$</td>
+<td>$X_kF = Q_kF-\frac{\lambda_m}{2}\vec e_kF\vec e_y+\cdots$</td>
 <td>Mean (Foldy–Wouthuysen) position, $k$-th component</td>
 </tr>
 <tr>
