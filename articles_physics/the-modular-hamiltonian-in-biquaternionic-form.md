@@ -332,29 +332,29 @@ $$
 \qquad
 \tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde U_{\mathrm b}^{\natural}(\theta^{\mathrm{rpd}})=e_t,
 $$
-and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=\exp(-2\pi G_1)$, the modular Hamiltonian of the wedge is
+and its action on the material sector is the rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde R_\varphi\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=\exp(-2\pi G_1)$, the modular Hamiltonian of the wedge is
 $$
 \boxed{\;\tilde{K}^{\mathrm{mod}}_{W}=2\pi\,G_1=2\pi\,i\,\vec e_x\;},
 $$
 and the modular flow is the boost by rapidity $2\pi s$ in the modular parameter $s$. The two wedges have opposite orientation: the boost generator whose flow is future-directed on the right wedge is past-directed on the left, so $\tilde{K}^{\mathrm{mod}}_{L}=-\tilde{K}^{\mathrm{mod}}_{R}$ and "the wedge modular Hamiltonian" is wedge-dependent, as the Unruh article records; the norm $|\tilde{K}^{\mathrm{mod}}_{W}|$ is what enters the temperature and is the same for both.
 
-Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde{Q}=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, and the other components untouched),
+Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde R_\varphi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, and the other components untouched),
 $$
 c r'_t\longmapsto c r'_t\cosh\theta^{\mathrm{rpd}}-r_x\sinh\theta^{\mathrm{rpd}},
 \qquad
 r_x\longmapsto r_x\cosh\theta^{\mathrm{rpd}}-c r'_t\sinh\theta^{\mathrm{rpd}},
 \qquad
-\langle\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}.
+\langle\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\varphi\rangle_{\natural}.
 $$
 Second, the generator of this action is $G_1$ through the **anticommutator**,
 $$
-\frac{d}{d\theta^{\mathrm{rpd}}}\Big(\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\Big)\Big|_{\theta^{\mathrm{rpd}}=0}
-=\tfrac12\{G_1,\tilde{Q}\}=\tfrac12\big(G_1\tilde{Q}+\tilde{Q}G_1\big),
+\frac{d}{d\theta^{\mathrm{rpd}}}\Big(\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde R_\varphi\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\Big)\Big|_{\theta^{\mathrm{rpd}}=0}
+=\tfrac12\{G_1,\tilde R_\varphi\}=\tfrac12\big(G_1\tilde R_\varphi+\tilde R_\varphi\,G_1\big),
 $$
-and exponentiating this derivation reproduces the finite rotor action, $\exp(\theta^{\mathrm{rpd}}\,\delta_{G_1})\tilde{Q}=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde{Q}\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $r_y=r_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
+and exponentiating this derivation reproduces the finite rotor action, $\exp(\theta^{\mathrm{rpd}}\,\delta_{G_1})\tilde R_\varphi=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\tilde R_\varphi\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde R_\varphi]$ is *not* the boost: on the boost plane $r_y=r_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
 $$
-[G_1,\tilde{Q}]=\big(0,\,0,\,-2i\,r_z,\,2i\,r_y\big)
-\quad\text{for}\quad \tilde{Q}=ic r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
+[G_1,\tilde R_\varphi]=\big(0,\,0,\,-2i\,r_z,\,2i\,r_y\big)
+\quad\text{for}\quad \tilde R_\varphi=ic r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 So the modular Hamiltonian's action here is two-sided, not an inner commutator: writing $\tilde{K}^{\mathrm{mod}}_{W}=2\pi G_1$ identifies the algebra element, and the flow it generates on $\mathbb{M}_-$ is the rotor conjugation above. This is the same warning the curved-spacetime and Lorentz-transformation companions give for boosts, and the wedge is a case where it is load-bearing — a reader who generates the flow by $-i[\tilde{K}^{\mathrm{mod}}_{W},\cdot]$ obtains a rotation about $\vec e_x$, not the boost.
 

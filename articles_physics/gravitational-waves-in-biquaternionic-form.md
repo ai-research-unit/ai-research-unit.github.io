@@ -16,7 +16,7 @@ The findings are worth separating at the outset, because one of them is negative
 
 This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$ and the real coordinates $x_\mu=(c r'_{t},x,y,z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The **trace-reversed** perturbation is
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$ and the real coordinates $x_\mu=(c r'_{t}, r_x, r_y, r_z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The **trace-reversed** perturbation is
 
 $$
 \bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0k} = h_{0k}, \qquad \bar{h}_{kl} = h_{kl} - \tfrac{1}{2}h\,\delta_{kl}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
@@ -140,7 +140,7 @@ $$
 -k_0A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, x, y, z)$, so that the phase is $\omega(r_z/c - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (c r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
@@ -321,7 +321,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\varepsilon_\mu$ | Material basis of $\mathbb{M}_-$: $\varepsilon_0=ie_t$ and $\varepsilon_k=\vec e_k$; the natural form on it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=i c r'_t$, and its one minus is the square of the $i$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{M}_-$, $Q_t=i c r'_t$ and $Q_k=x_k$; $x_\mu=(c r'_{t},x,y,z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
+| $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{M}_-$, $Q_t=i c r'_t$ and $Q_k=x_k$; $x_\mu=(c r'_{t}, r_x, r_y, r_z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0k}=h_{0k}$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{kl}$, $\bar{h} = -h$ | Trace-reversed perturbation |
