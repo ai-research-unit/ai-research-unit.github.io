@@ -96,11 +96,11 @@ $$</p>
 <p>$$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
 -\frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\mu^2\xi^*\xi .
+=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\lambda_m^{-2}\xi^*\xi .
 $$</p>
 <p>Because $\partial/\partial R_t=-\tfrac{i}{c}\partial/\partial r'_t$, the Lagrangian written in the physical time is</p>
 <p>$$
-\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-\mu^2|\xi|^2 .
+\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-\lambda_m^{-2}|\xi|^2 .
 $$</p>
 <p>The <strong>conjugate momentum</strong> is</p>
 <p>$$
@@ -110,8 +110,9 @@ $$</p>
 <p>and the Legendre transform is <strong>regular</strong>: $\pi$ determines $\partial\xi/\partial r'_t$ and conversely, so the phase space is the full space of pairs $(\xi,\pi)$ and no constraint appears. This is the first point of contrast with the two parent quantizations. The Dirac field carried a <strong>second-class</strong> constraint, $\pi-i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\approx0$, because its equation is first order in time; the Maxwell field carried two <strong>first-class</strong> constraints, $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$, because its potential is a gauge field. The scalar field carries neither. Its equation is second order, so the momentum is independent, and its field is single-component, so there is no gauge redundancy to remove. The canonical structure is therefore taken over from the classical theory without modification — which is the technical reason the quantization below is a transcription with no obstruction and no new structure.</p>
 <p>The equation of motion obtained by varying the action is the parent's biquaternion Klein–Gordon equation,</p>
 <p>$$
-\left(\Box-\mu^2\right)\tilde{Ξ}=0 .
-$$</p>
+\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0 ,
+$$
+with $\lambda_m=\hbar/(mc)$ the mass length.</p>
 <h2 id="the-field-as-a-central-valued-object">The Field as a Central-Valued Object</h2>
 <p>The value space of the field is the centre, and the reason is structural rather than chosen. A field of spin $0$ carries no Lorentz index; the framework's scalar field is therefore taken to be central-valued, so that its values commute with every element of the algebra. Written in real components, the complex scalar is two real scalars, one in each sector's scalar direction,</p>
 <p>$$
@@ -128,7 +129,7 @@ $$</p>
 \qquad
 \langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
 $$</p>
-<p>and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)e_t$ into $\left(\Box-\mu^2\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=\mu^2$, which is the mass-shell condition</p>
+<p>and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)e_t$ into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=\lambda_m^{-2}$, which is the mass-shell condition</p>
 <p>$$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_t .
 $$</p>
@@ -151,7 +152,7 @@ $$</p>
 <p>The brackets are <strong>commutators</strong>, and the choice is forced, as the companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> establishes; the three operative reasons may be stated compactly. <strong>Boundedness of the energy:</strong> a commutator makes the particle and antiparticle contributions to the Hamiltonian both positive, whereas an anticommutator would give opposite signs and an energy unbounded below. <strong>Microcausality:</strong> for a spin-$0$ field it is the commutator $[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ that must vanish outside the light cone, and it does; the anticommutator does not, and quantizing with it would correlate causally disconnected measurements. <strong>Positivity of the norm:</strong> the symmetric Fock space built on the one-particle space has positive-definite inner product, while the antisymmetric projection of a bosonic one-particle space is not the structure the field equation's solution space supports. The three reasons point the same way for a field of integer spin; the general theorem is not rederived here.</p>
 <p>The scalar case has one feature the two parent cases do not. Because the field is single-component and the Legendre transform regular, the canonical relation is imposed <strong>directly</strong>, without the Dirac-bracket modification the Dirac field required. There is no constraint surface to project onto and no gauge orbit to fix. What the algebra does not supply is not a constraint resolution but the ladder itself, and that is the subject of the section after next.</p>
 <h2 id="the-mode-expansion">The Mode Expansion</h2>
-<p>The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\mu^2}$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as</p>
+<p>The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\lambda_m^{-2}}$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as</p>
 <p>$$
 \boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
 \left(a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x)+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x)\right)\;},
@@ -198,7 +199,7 @@ $$</p>
 <h2 id="the-hamiltonian-momentum-and-charge">The Hamiltonian, Momentum and Charge</h2>
 <p>The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units</p>
 <p>$$
-H=\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+\mu^2\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
+H=\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+\lambda_m^{-2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
 $$</p>
 <p>Substituting the mode expansion and using the commutators gives, before normal ordering,</p>
 <p>$$
@@ -235,7 +236,7 @@ $$</p>
 <p>Because the question addressed here is the second-quantization question of the framework, we separate the two kinds of statement explicitly.</p>
 <p><strong>Standard quantum field theory, transcribed.</strong></p>
 <ul>
-<li>The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\mu^2\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.</li>
+<li>The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\lambda_m^{-2}\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.</li>
 <li>The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.</li>
 <li>The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.</li>
 <li>The symmetric Fock space, the occupation basis, the vacuum, and the number operator.</li>
@@ -312,12 +313,12 @@ $$</p>
 <td>Scalar field, valued in the centre; real components</td>
 </tr>
 <tr>
-<td>$\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-\mu^2\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$</td>
+<td>$\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-\lambda_m^{-2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$</td>
 <td>Scalar Lagrangian density</td>
 </tr>
 <tr>
-<td>$\mu=mc/\hbar$</td>
-<td>Mass parameter</td>
+<td>$\lambda_m$</td>
+<td>The mass length, $\hbar/(mc)$</td>
 </tr>
 <tr>
 <td>$\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=c^{-2}\partial\xi/\partial r'_t$</td>
@@ -332,7 +333,7 @@ $$</p>
 <td>Mass-shell condition</td>
 </tr>
 <tr>
-<td>$E_{\vec p}=\sqrt{\vec p^2+\mu^2}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$</td>
+<td>$E_{\vec p}=\sqrt{\vec p^2+\lambda_m^{-2}}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$</td>
 <td>On-shell energy and phase (natural units)</td>
 </tr>
 <tr>

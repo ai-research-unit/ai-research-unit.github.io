@@ -76,11 +76,11 @@
 <p><strong>The conventions are the series conventions, and they are cited here and not developed.</strong> The algebra, its four units and the central scalar imaginary are those of <em>Algebra and Element Conventions</em>, §<em>The Algebra and Its Basis</em> and §<em>The Base and Its Units</em>: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde{\nabla}$, its quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$ and the pair operator $\mathbb{D}$ are those of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>. The pair operator is the chiral pair written once, it satisfies $\mathbb{D}^2=\Box$ on the pair, and it is the pair itself and not an array of generators. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i c r'_t$, are those of <em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>, and the four-momentum element $\tilde{P}$ is that of <em>Algebra and Element Conventions</em>, §<em>The Four-Vectors and the Currents</em>.</p>
 <p><strong>The dynamics is the chiral pair.</strong></p>
 <p>$$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \mu\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \mu\tilde{Ξ}_{\mathrm{sp},R}, \qquad
-\mu = \frac{mc}{\hbar},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}, \qquad
+\lambda_m = \frac{\hbar}{mc},
 $$</p>
-<p>with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$; in natural units $\mu = m$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each value of the subscript, and the mass is the term that takes one part into the other.</p>
+<p>with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$; in natural units $\lambda_m^{-1} = m$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each value of the subscript, and the mass is the term that takes one part into the other.</p>
 <p><strong>Two different equations carry the name of Dirac, and this article uses one of them.</strong> The first is the one-sided pair displayed above: both gradients act by left multiplication, and the mass is the off-diagonal pairing of the two values of the subscript. The second is the <strong>two-sided</strong> form of <em>The Dirac Equation in Biquaternionic Form</em>, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.</p>
 <p>The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = c r'_{t}$ and $r_k$ on the three spatial directions (<em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>), so that $Q_t = ix_0$.</p>
 <h2 id="the-dirac-propagator-and-the-square">The Dirac Propagator and the Square</h2>
@@ -104,27 +104,27 @@ $$</p>
 <p>The sign bookkeeping is the whole of that line. The two factors of $i$ multiply to $-1$ and the norm is $-p^2$, so the product of the two symbols is the mass-shell scalar itself. Either order gives the same product, because the norm of an element is central: the sign with which the momentum is contracted is a labelling convention and not something the square can see.</p>
 <p><strong>The pair on a plane wave.</strong> Substituting the symbols into the two lines gives</p>
 <p>$$
-i\tilde{P}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_R = \mu\hat{\tilde{Ξ}_{\mathrm{sp}}}_L,
+i\tilde{P}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_R = \lambda_m^{-1}\hat{\tilde{Ξ}_{\mathrm{sp}}}_L,
 \qquad
-i\tilde{P}^{\natural}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_L = \mu\hat{\tilde{Ξ}_{\mathrm{sp}}}_R ,
+i\tilde{P}^{\natural}\,\hat{\tilde{Ξ}_{\mathrm{sp}}}_L = \lambda_m^{-1}\hat{\tilde{Ξ}_{\mathrm{sp}}}_R ,
 $$</p>
-<p>and eliminating one part returns the mass shell, $p^2 = \mu^2$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.</p>
-<p><strong>The propagator.</strong> The Green kernel of the pair is the inverse of $\mathbb{D}-\mu$, and on a plane wave its two components are</p>
+<p>and eliminating one part returns the mass shell, $p^2 = \lambda_m^{-2}$, since $\tilde{P}^{\natural}\tilde{P} = \langle\tilde{P}\rangle_{\natural}$.</p>
+<p><strong>The propagator.</strong> The Green kernel of the pair is the inverse of $\mathbb{D}-\lambda_m^{-1}$, and on a plane wave its two components are</p>
 <p>$$
-\hat{\mathcal S}_L = \frac{i\mu - \tilde{P}}{p^2 - \mu^2},
+\hat{\mathcal S}_L = \frac{i\lambda_m^{-1} - \tilde{P}}{p^2 - \lambda_m^{-2}},
 \qquad
-\hat{\mathcal S}_R = \frac{i\mu - \tilde{P}^{\natural}}{p^2 - \mu^2} .
+\hat{\mathcal S}_R = \frac{i\lambda_m^{-1} - \tilde{P}^{\natural}}{p^2 - \lambda_m^{-2}} .
 $$</p>
 <p>The numerator of the $L$ component is the momentum element and the numerator of the $R$ component its conjugate; that assignment is the one that satisfies both lines, since</p>
 <p>$$
-i\tilde{P}\,\hat{\mathcal S}_R - \mu\hat{\mathcal S}_L = i,
+i\tilde{P}\,\hat{\mathcal S}_R - \lambda_m^{-1}\hat{\mathcal S}_L = i,
 \qquad
-i\tilde{P}^{\natural}\,\hat{\mathcal S}_L - \mu\hat{\mathcal S}_R = i .
+i\tilde{P}^{\natural}\,\hat{\mathcal S}_L - \lambda_m^{-1}\hat{\mathcal S}_R = i .
 $$</p>
 <p>Two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side. The $i$ inside each symbol fixes the sign of the squared operator: the symbols are $i\tilde{P}$ and $i\tilde{P}^{\natural}$, their product is $p^2$, and without the two factors of $i$ the product would be the norm $-p^2$ and the denominator would be the negative of the mass-shell scalar.</p>
 <p>The propagator satisfies</p>
 <p>$$
-\left(\mathbb{D} - \mu\right)\mathcal S = i\,\delta^{(4)},
+\left(\mathbb{D} - \lambda_m^{-1}\right)\mathcal S = i\,\delta^{(4)},
 $$</p>
 <p>the pair of the two lines above with a source of unit strength. Its square is scalar,</p>
 <p>$$
@@ -135,32 +135,32 @@ $$</p>
 <p><strong>The propagator is the scalar kernel acted on by the first-order operator.</strong> Write</p>
 <p>$$
 \Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
-\frac{i}{p^2 - \mu^2 + i\epsilon}\,
+\frac{i}{p^2 - \lambda_m^{-2} + i\epsilon}\,
 \exp(-ip\cdot(x-x_2)),
 \qquad
-\left(\Box - \mu^2\right)\Delta_F = i\,\delta^{(4)},
+\left(\Box - \lambda_m^{-2}\right)\Delta_F = i\,\delta^{(4)},
 $$</p>
 <p>for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $p^2$, the difference is exactly that operator, and formally</p>
 <p>$$
-\boxed{\;\mathcal S = \left(\mathbb{D} + \mu\right)\Delta_F\;}
+\boxed{\;\mathcal S = \left(\mathbb{D} + \lambda_m^{-1}\right)\Delta_F\;}
 $$</p>
 <p>which is the Green kernel of the pair operator as <em>Operator and Calculus Conventions</em>, §<em>The Pair Operator and Its Symbol</em> states it. The verification is the one-line algebra of the pair,</p>
 <p>$$
-\left(\mathbb{D} - \mu\right)\left(\mathbb{D} + \mu\right)
-= \mathbb{D}^2 - \mu^2 = \Box - \mu^2,
+\left(\mathbb{D} - \lambda_m^{-1}\right)\left(\mathbb{D} + \lambda_m^{-1}\right)
+= \mathbb{D}^2 - \lambda_m^{-2} = \Box - \lambda_m^{-2},
 $$</p>
 <p>which is the operator that $\Delta_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.</p>
 <p><strong>The propagator is not one path integral with one phase.</strong> The worldline proper-time representation makes the same point in a Lorentz-invariant way. Since</p>
 <p>$$
-\frac{i}{p^2 - \mu^2 + i\epsilon}
-= \int_0^\infty dT\,\exp\left(iT\left(p^2 - \mu^2 + i\epsilon\right)\right),
+\frac{i}{p^2 - \lambda_m^{-2} + i\epsilon}
+= \int_0^\infty dT\,\exp\left(iT\left(p^2 - \lambda_m^{-2} + i\epsilon\right)\right),
 $$</p>
-<p>the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(iT(\Box - \mu^2))|x\rangle$, and that kernel is a sum over worldlines,</p>
+<p>the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(iT(\Box - \lambda_m^{-2}))|x\rangle$, and that kernel is a sum over worldlines,</p>
 <p>$$
 \Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(iS_0[x]),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \mu^2\right),
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \lambda_m^{-2}\right),
 $$</p>
 <p>up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i c r'_t$ and $Q_k=r_k$, so that for a straight worldline</p>
 <p>$$
@@ -168,24 +168,24 @@ $$</p>
 \qquad
 (x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec r_2\right|^2 ,
 $$</p>
-<p>writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\mathbb{D} + \mu\right)$ applied to $\Delta_F$. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.</p>
+<p>writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \lambda_m^{-2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\mathbb{D} + \lambda_m^{-1}\right)$ applied to $\Delta_F$. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.</p>
 <p>The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.</p>
 <h2 id="the-free-kernel-explicitly">The Free Kernel, Explicitly</h2>
 <p>It is worth evaluating the scalar worldline kernel in the free case, because the calculation is the whole content of the proper-time method and fixes the sense in which a first-order object is a square root. The proper-time kernel is the Fourier transform</p>
 <p>$$
 \Delta_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi)^4}\,
-\exp\left(iT\left(p^2 - \mu^2 + i\epsilon\right)\right)\,\exp(-ip\cdot(x-x_2)),
+\exp\left(iT\left(p^2 - \lambda_m^{-2} + i\epsilon\right)\right)\,\exp(-ip\cdot(x-x_2)),
 $$</p>
 <p>where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel</p>
 <p>$$
 \Delta_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
-\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right),
+\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \lambda_m^{-2} T\right]\right),
 $$</p>
 <p>with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.</p>
 <ul>
-<li>The <strong>proper time $T$ is the Schwinger parameter</strong>, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\mu^2T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.</li>
-<li>The <strong>mass is a constant in the exponent</strong>. There is no spin and no algebra-valued weight: $\Delta_F$ is a scalar, and it obeys $(\Box - \mu^2)\Delta_F = i\delta^{(4)}$ up to the measure convention.</li>
-<li>The <strong>first-order structure enters only through the differential prefactor</strong>. The Dirac propagator is obtained by applying $\left(\mathbb{D} + \mu\right)$ to $\Delta_F$, which is why the spin is invisible until that operation is performed.</li>
+<li>The <strong>proper time $T$ is the Schwinger parameter</strong>, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\lambda_m^{-2}T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.</li>
+<li>The <strong>mass is a constant in the exponent</strong>. There is no spin and no algebra-valued weight: $\Delta_F$ is a scalar, and it obeys $(\Box - \lambda_m^{-2})\Delta_F = i\delta^{(4)}$ up to the measure convention.</li>
+<li>The <strong>first-order structure enters only through the differential prefactor</strong>. The Dirac propagator is obtained by applying $\left(\mathbb{D} + \lambda_m^{-1}\right)$ to $\Delta_F$, which is why the spin is invisible until that operation is performed.</li>
 </ul>
 <p>The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.</p>
 <h2 id="the-spinning-worldline-and-the-spin-factor">The Spinning Worldline and the Spin Factor</h2>
@@ -194,7 +194,7 @@ $$</p>
 S[x,\tilde{Ξ}_{\mathrm{sp}}] = \int_0^T d\tau\left[
 \frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}
 + \frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}
-- \mu^2
+- \lambda_m^{-2}
 \right],
 $$</p>
 <p>with both quadratic terms read on the same four slots and carrying the same signs: the tangent takes its sign from the square of the $i$ in $Q_t=i c r'_t$ and the odd pair from the weight below, and the tangent and the odd pair are the two halves of one supersymmetric pair, which is why the same signs appear twice. Each half contributes its own kinetic term, the bosonic one from the tangent and the fermionic one from the odd variables.</p>
@@ -223,7 +223,7 @@ $$</p>
 <h2 id="the-spin-factor-in-a-background-field">The Spin Factor in a Background Field</h2>
 <p>The spin factor earns its name in a background electromagnetic field, and the calculation shows how the algebra organises the result. Minimal coupling adds the gauge term $\sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}$ to the worldline action,</p>
 <p>$$
-S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \mu^2 + \sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}\right],
+S[x] = \int_0^T d\tau\left[\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \lambda_m^{-2} + \sum_\mu qA_\mu(x)\frac{dx_\mu}{d\tau}\right],
 $$</p>
 <p>and the odd kinetic term is unchanged. The coupling is through the pair of two units, contracted with the field strength. The six generators are written once, the three of a time index and a spatial one and the three of two spatial indices:</p>
 <p>$$
@@ -247,7 +247,7 @@ $$</p>
 <p>This is the standard Berezin–Marinov spin factor, and the path ordering is required in both cases because the elements at different times do not commute. The same structure is what produces the anomalous magnetic moment in the worldline computation of the electron's form factors, and it is the worldline form of the spin–field coupling that the companion articles <em>The Electron in Biquaternionic Form</em> and <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em> treat from the operator side.</p>
 <p><strong>On the closed worldline the weight is traced.</strong> The trace is that of the multiplication, four times the scalar part of the element: the unit contributes four and each vector unit zero, because multiplication by a vector unit permutes the four units up to sign with no fixed point (<em>Matrix Representations Conventions</em>, §<em>The Left Family</em>). A single generator is pure, so the term linear in the field strength vanishes and the loop weight begins with the quadratic term, built from $F_{\mu\nu}F_{\mu\nu}$. Which invariants of the field strength survive at each order is an identity of the two-sided generators, where the fifth cell is traceless, and it is not restated here. The open weight is an element at each end, and it multiplies the field at the two ends of the worldline. The path-ordered exponential is the worldline image of the algebra's rotor construction: at each instant the field is carried by one generator, and the product of all the carries is the spin factor.</p>
 <h2 id="feynmans-checkerboard">Feynman's Checkerboard</h2>
-<p>Before the continuum worldline there was a discrete model, and in 1+1 dimensions it exhibits the algebraic structure with unusual clarity. Feynman's checkerboard (1949) represents the Dirac particle as moving at the speed of light along the two null directions of two-dimensional spacetime, with the amplitude for a path built from two rules: a directed step carries a phase, and each <strong>corner</strong> (reversal of direction) carries a factor $i\epsilon m/\hbar$, with $\epsilon$ the step length and $m$ the mass; the sign of the corner weight is conjugate to the naming of the two directions, and the recurrence below fixes the one used here. The propagator is the sum over all such paths, and in the continuum limit the sum satisfies the two-dimensional Dirac equation.</p>
+<p>Before the continuum worldline there was a discrete model, and in 1+1 dimensions it exhibits the algebraic structure with unusual clarity. Feynman's checkerboard (1949) represents the Dirac particle as moving at the speed of light along the two null directions of two-dimensional spacetime, with the amplitude for a path built from two rules: a directed step carries a phase, and each <strong>corner</strong> (reversal of direction) carries a factor $i\epsilon\lambda_m^{-1}$, with $\epsilon$ the step length and $m$ the mass; the sign of the corner weight is conjugate to the naming of the two directions, and the recurrence below fixes the one used here. The propagator is the sum over all such paths, and in the continuum limit the sum satisfies the two-dimensional Dirac equation.</p>
 <p>The reason is the one on which this whole article turns. In 1+1 dimensions the field has two parts, and the two parts are exactly the amplitudes for the two directions of motion. Writing the propagator as the four amplitudes $K_{++}$, $K_{+-}$, $K_{-+}$, $K_{--}$, where the labels record the initial and final directions, the corner weight builds the mass mixing: the amplitudes that exchange the direction require an odd number of corners, so they are the ones proportional to $m$, and the ones that keep it require an even number.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -274,45 +274,45 @@ $$</p>
 </tbody>
 </table></div>
 <p>The continuum limit is the two-part Dirac propagator in 1+1 dimensions, whose small-$\epsilon$ expansion satisfies the two-dimensional Dirac equation with the corner weight as its mass term; the standard derivations of the checkerboard (see the Further Reading) give the explicit form. The two directions are the two parts, and the mass is the corner that exchanges them.</p>
-<p>The biquaternion interpretation is then immediate, and it needs no second algebra. In 1+1 dimensions the two retained units are $e_t$ and $\vec e_x$, and their products close on themselves; the two values of the subscript are the two directions, and each corner is one application of the <strong>off-diagonal mass</strong> of the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \mu\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \mu\tilde{Ξ}_{\mathrm{sp},R}$. The checkerboard is the discrete, real-time picture of the mass pair: the free propagation is diagonal in the value — each part propagates on its own — and the mass is the reversal that connects them, one application of the second line of the pair per corner. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space propagator of the pair.</p>
+<p>The biquaternion interpretation is then immediate, and it needs no second algebra. In 1+1 dimensions the two retained units are $e_t$ and $\vec e_x$, and their products close on themselves; the two values of the subscript are the two directions, and each corner is one application of the <strong>off-diagonal mass</strong> of the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$. The checkerboard is the discrete, real-time picture of the mass pair: the free propagation is diagonal in the value — each part propagates on its own — and the mass is the reversal that connects them, one application of the second line of the pair per corner. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space propagator of the pair.</p>
 <h3 id="the-recurrence-and-its-limit">The Recurrence and Its Limit</h3>
-<p>The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(r_x,r'_t)$ and $A_-(r_x,r'_t)$ be the amplitudes to arrive at the lattice point $(r_x,r'_t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon m/\hbar$; the recurrences are therefore</p>
+<p>The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $A_+(r_x,r'_t)$ and $A_-(r_x,r'_t)$ be the amplitudes to arrive at the lattice point $(r_x,r'_t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one site in its direction of motion, and a corner contributes the weight $i\epsilon\lambda_m^{-1}$; the recurrences are therefore</p>
 <p>$$
 A_+(r_x,r'_t+\epsilon) = A_+(r_x-\epsilon,r'_t) + \frac{i\epsilon m}{\hbar}\,A_-(r_x-\epsilon,r'_t),
 $$</p>
 <p>$$
 A_-(r_x,r'_t+\epsilon) = A_-(r_x+\epsilon,r'_t) + \frac{i\epsilon m}{\hbar}\,A_+(r_x+\epsilon,r'_t),
 $$</p>
-<p>where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The <strong>free propagation is diagonal</strong>: the term that carries $A_+$ to $A_+$ and $A_-$ to $A_-$ involves no mixing, and each direction propagates independently. The <strong>mass is off-diagonal</strong>: the corner terms couple the two amplitudes with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.</p>
+<p>where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The <strong>free propagation is diagonal</strong>: the term that carries $A_+$ to $A_+$ and $A_-$ to $A_-$ involves no mixing, and each direction propagates independently. The <strong>mass is off-diagonal</strong>: the corner terms couple the two amplitudes with the weight $i\epsilon\lambda_m^{-1}$, i.e. with an explicit factor of the mass and an explicit factor of $i$.</p>
 <p>Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dr_x/dr'_t| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into</p>
 <p>$$
 \frac{\partial A_+}{\partial r'_t} = -\frac{\partial A_+}{\partial r_x} + \frac{im}{\hbar}A_-,
 \qquad
 \frac{\partial A_-}{\partial r'_t} = +\frac{\partial A_-}{\partial r_x} + \frac{im}{\hbar}A_+,
 $$</p>
-<p>the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon m/\hbar$ becomes the mass term $i\mu$, with $\mu=m/\hbar$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial r'_t^2-\partial^2 A_+/\partial r_x^2 = -m^2A_+/\hbar^2$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\mu$ into the real $-\mu$; that is why the biquaternion pair can carry the real $\mu$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \mu\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \mu\tilde{Ξ}_{\mathrm{sp},R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.</p>
+<p>the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\lambda_m^{-1}$ becomes the mass term $i\lambda_m^{-1}$, with $\lambda_m^{-1}=m/\hbar$ at $c=1$, and the two directions become the two values of the subscript. Squaring either line with the other substituted gives $\partial^2 A_+/\partial r'_t^2-\partial^2 A_+/\partial r_x^2 = -m^2A_+/\hbar^2$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\lambda_m^{-1}$ into the real $-\lambda_m^{-1}$; that is why the biquaternion pair can carry the real $\lambda_m^{-1}$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two values of the subscript. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.</p>
 <h2 id="composition-the-propagator-equation-and-the-scalar-reduction">Composition, the Propagator Equation, and the Scalar Reduction</h2>
 <p>The path integral must carry the composition law of a kernel and the Green's-function equation, and both are transparent in the biquaternion framework.</p>
-<p><strong>Composition belongs to the proper-time kernel, not to $\mathcal S$.</strong> Write $K_T(x,x_2)$ for the kernel of $\exp\left(iT\left(\Box-\mu^2\right)\right)$. Then</p>
+<p><strong>Composition belongs to the proper-time kernel, not to $\mathcal S$.</strong> Write $K_T(x,x_2)$ for the kernel of $\exp\left(iT\left(\Box-\lambda_m^{-2}\right)\right)$. Then</p>
 <p>$$
 \int d^4y\;K_{T_1}(x,y)\,K_{T_2}(y,x_2) = K_{T_1+T_2}(x,x_2),
 $$</p>
 <p>a sum over paths being a sum over intermediate points, and $\mathcal S$ is the transform $\int_0^\infty dT$ of the family. The law stops there: $\int d^4y\,\mathcal S(x,y)\mathcal S(y,x_2)$ is the convolution of two propagators — in momentum space the square of the two components of $\hat{\mathcal S}$, not the propagator itself — so $\mathcal S$ does not compose to itself and the composition law is not one of its properties. That is why the worldline keeps the proper time explicit instead of integrating it away at the start. In the biquaternion algebra the composition is the multiplication of algebra-valued amplitudes, with the central phase composing additively; the algebra's non-commutativity means that the order of the intermediate points matters, and the path-ordered spin factor is the price of that non-commutativity.</p>
-<p><strong>The propagator equation.</strong> The kernel satisfies $\left(\mathbb{D} - \mu\right)\mathcal S = i\delta^{(4)}$. This is the statement that the propagator is the Green's function of the first-order pair. Applying $\mathbb{D} + \mu$ and using $\mathbb{D}^2 = \Box$ gives</p>
+<p><strong>The propagator equation.</strong> The kernel satisfies $\left(\mathbb{D} - \lambda_m^{-1}\right)\mathcal S = i\delta^{(4)}$. This is the statement that the propagator is the Green's function of the first-order pair. Applying $\mathbb{D} + \lambda_m^{-1}$ and using $\mathbb{D}^2 = \Box$ gives</p>
 <p>$$
-\left(\Box - \mu^2\right)\mathcal S
-= \left(\mathbb{D} + \mu\right)i\,\delta^{(4)} ,
+\left(\Box - \lambda_m^{-2}\right)\mathcal S
+= \left(\mathbb{D} + \lambda_m^{-1}\right)i\,\delta^{(4)} ,
 $$</p>
 <p>so the first-order propagator, acted on by its conjugate, obeys the Klein–Gordon equation, with the spin structure carried entirely by the source. This is the path-integral form of the Dirac square: the first-order propagator, acted on by its conjugate, obeys the second-order equation. The path integral for the first-order object is therefore not an independent construction; applying the conjugate operator to it returns the scalar path integral of the companion subcategory, and the spin factor is what distinguishes them.</p>
 <p>It is worth stating what the square does <strong>not</strong> do in this setting. It does not remove the spin: the squared propagator is an element and not a scalar, so the spin survives in the algebra-valued weight even though its differential operator is central. The spin-0 theory is recovered only when the weight is reduced to its scalar part. In the algebra this is the statement that the algebra-valued weight is what survives squaring, while the odd variable has been absorbed into the two ends of the worldline.</p>
 <h2 id="the-measure-and-the-einbein">The Measure and the Einbein</h2>
 <p>The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is <strong>reparametrisation invariant</strong>: the action</p>
 <p>$$
-S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - e(\tau)\,\mu^2\right]
+S[x,e] = \int_0^1 d\tau\left[\frac{1}{4e(\tau)}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - e(\tau)\,\lambda_m^{-2}\right]
 $$</p>
 <p>depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the <strong>einbein</strong>) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode, the other modes can be gauged to zero and divide out the volume of the reparametrisation group, and the action becomes</p>
 <p>$$
-S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \mu^2 T ,
+S = \frac{1}{4T}\int_0^1 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}\,d\tau - \lambda_m^{-2} T ,
 $$</p>
 <p>which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.</p>
 <p>The algebraic interpretation is a statement about the two sectors. The einbein is a <strong>central scalar</strong>: it commutes with the odd variables and carries no odd degree of freedom, so its integral only reorganises the material part of the worldline. It is the same for every spin, and it is the reason the spin-0 and spin-$\tfrac12$ theories share the proper-time structure. The spin enters entirely through the odd variables and the spin factor, not through the measure. In the biquaternion framework the einbein is a central element of the worldline's phase, and the spin factor is the algebra-valued remainder; the split of the worldline integral into a central measure and an algebra-valued weight is the path-integral image of the distinction between the centre of the algebra and the rest of it.</p>
@@ -320,8 +320,8 @@ $$</p>
 <p>The two constructions of the Dirac path integral can be expressed in one biquaternionic statement, and it is worth writing it explicitly because it is the point at which this article meets the rest of the subcategory.</p>
 <p>A worldline carries two structures at once: a <strong>material</strong> trajectory $x_\mu(\tau)$, whose tangent is a four-velocity in $\mathbb{B}_{\Phi}$, and a <strong>spin</strong> transport, whose generator is the odd variable $\tilde{Ξ}_{\mathrm{sp},\mu}$. The material trajectory is the object the scalar path integral sums over; the spin transport is the object the spin factor sums over. Squaring the first-order operator pairs them: the square of the Dirac operator is central and acts only on the material trajectory, while the spin is carried along by the element that multiplies the field. The chiral pair</p>
 <p>$$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \mu\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \mu\tilde{Ξ}_{\mathrm{sp},R}
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}
 $$</p>
 <p>is the operator statement of the same split: the two gradients act on the two parts, the material trajectory is common to both, and the mass is the off-diagonal corner that turns one into the other. In the worldline language the two parts are the two ways the transport can hand the field at the boundary to the mass term, and the mass term is the reversal; in the checkerboard the same reversal is the lattice corner. The three descriptions — the operator pair, the discretised checkerboard, and the continuous spinning worldline — are the same off-diagonal mass structure in three registers.</p>
 <p>There is a further consistency check that ties this article to <em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em>. The scalar kernel $\Delta_F$ is the path integral of the <strong>squared</strong> theory; the spin factor is what the first-order theory adds. In the free case the spin factor is the unit, with no generator inserted, and the worldline path integral reduces to the scalar $\Delta_F$; this is why the square of the propagator's equation is the Klein–Gordon equation with a delta source, as computed above. The higher terms of the spin factor are the spin–field couplings, and they have no spin-0 counterpart. The spin-0 path integral of the companion subcategory is therefore not a separate construction with an analogous appearance; it is the trivial-spin-factor case of the worldline integral, and the full Dirac path integral is what the spin degrees of freedom add to it.</p>
@@ -392,8 +392,8 @@ $$</p>
 <p>so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the four are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$: the two-gamma entry is diagonal and carries the weight, $+4I_4$ on the time direction and $-4I_4$ on the three spatial ones, and the last is the rule with the three indices reversed. With every index low the rule changes, because then the square of a generator carries the weight: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+\varepsilon_\alpha)\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum is uniform in the index when the index is raised and weight-dependent when it is low.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - \mu\right)\mathcal S = i\delta^{(4)}$ with $\mu = mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the <strong>proper-time</strong> way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \left(\mathbb{D} + \mu\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \Box$. In the <strong>spinning-worldline</strong> way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).</p>
-<p>In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\hat{\mathcal S}_L = (i\mu-\tilde{P})/(p^2-\mu^2)$ and $\hat{\mathcal S}_R = (i\mu-\tilde{P}^{\natural})/(p^2-\mu^2)$, and the identity $\left(\mathbb{D}-\mu\right)\left(\mathbb{D}+\mu\right) = \mathbb{D}^2-\mu^2$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.</p>
+<p>The Dirac path integral is the sum over worldlines that computes the propagator $\mathcal S$, the pair of element-valued kernels satisfying $\left(\mathbb{D} - \lambda_m^{-1}\right)\mathcal S = i\delta^{(4)}$ with $\lambda_m^{-1} = mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the <strong>proper-time</strong> way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $\mathcal S = \left(\mathbb{D} + \lambda_m^{-1}\right)\Delta_F$, the identity following from $\mathbb{D}^2 = \Box$. In the <strong>spinning-worldline</strong> way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).</p>
+<p>In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\hat{\mathcal S}_L = (i\lambda_m^{-1}-\tilde{P})/(p^2-\lambda_m^{-2})$ and $\hat{\mathcal S}_R = (i\lambda_m^{-1}-\tilde{P}^{\natural})/(p^2-\lambda_m^{-2})$, and the identity $\left(\mathbb{D}-\lambda_m^{-1}\right)\left(\mathbb{D}+\lambda_m^{-1}\right) = \mathbb{D}^2-\lambda_m^{-2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two values of the subscript, the corners carry the weight $i\epsilon\lambda_m^{-1}$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional propagator.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -452,8 +452,8 @@ $$</p>
 <td>Symbols of $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ on a plane wave</td>
 </tr>
 <tr>
-<td>$\mu = mc/\hbar$</td>
-<td>Mass parameter</td>
+<td>$\lambda_m$</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $\lambda_m^{-1}=mc/\hbar$ is the mass parameter</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$</td>
@@ -461,14 +461,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal S$, $\mathcal S_L$, $\mathcal S_R$</td>
-<td>Dirac propagator and its two components, $\left(\mathbb{D}-\mu\right)\mathcal S = i\delta^{(4)}$</td>
+<td>Dirac propagator and its two components, $\left(\mathbb{D}-\lambda_m^{-1}\right)\mathcal S = i\delta^{(4)}$</td>
 </tr>
 <tr>
 <td>$\Delta_F(x-x_2)$</td>
-<td>Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-\mu^2\right)\Delta_F = i\delta^{(4)}$</td>
+<td>Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-\lambda_m^{-2}\right)\Delta_F = i\delta^{(4)}$</td>
 </tr>
 <tr>
-<td>$\mathcal S = \left(\mathbb{D}+\mu\right)\Delta_F$</td>
+<td>$\mathcal S = \left(\mathbb{D}+\lambda_m^{-1}\right)\Delta_F$</td>
 <td>Dirac propagator as the scalar kernel acted on</td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ $$</p>
 <td>Checkerboard propagator amplitudes</td>
 </tr>
 <tr>
-<td>$i\epsilon m/\hbar$ per corner</td>
+<td>$i\epsilon\lambda_m^{-1}$ per corner</td>
 <td>Checkerboard corner weight</td>
 </tr>
 <tr>
@@ -512,7 +512,7 @@ $$</p>
 <td>Checkerboard amplitudes by direction of motion</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \mu\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \mu\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>The chiral mass pair, the one-sided Dirac dynamics</td>
 </tr>
 </tbody>

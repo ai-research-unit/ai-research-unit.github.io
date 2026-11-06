@@ -77,12 +77,12 @@
 <ul>
 <li><strong>The field equation in the centre.</strong> The classical action
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4r
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\mu^2)\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\mu^2$ and range $\mu^{-1}$.</li>
-<li><strong>The static central solution.</strong> A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-\mu r)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.</li>
+has the Euler–Lagrange equation $(\Box-\lambda_m^{-2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\lambda_m^{-2}$ and range $\lambda_m$.</li>
+<li><strong>The static central solution.</strong> A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\lambda_m)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.</li>
 <li><strong>The field energy.</strong> The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.</li>
-<li><strong>The reduction to the central-force problem.</strong> A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-\mu r)/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.</li>
+<li><strong>The reduction to the central-force problem.</strong> A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\lambda_m)/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.</li>
 </ul>
 <p>The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.</p>
 <h2 id="the-centre-as-the-scalars-value-space">The Centre as the Scalar's Value Space</h2>
@@ -113,7 +113,7 @@ $$</p>
 <p>The classical action of a real central scalar field coupled to a prescribed source density $\rho$ is</p>
 <p>$$
 S=\int\mathcal{L}\,d^4r, \qquad
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi,
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}\xi^2+g\rho\,\xi,
 \qquad d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z .
 $$</p>
 <p>The first two terms are the standard kinetic and mass terms of a relativistic scalar field, with the sign that makes the energy positive; the third is the source coupling, whose sign convention is fixed below by the requirement that like sources attract. The action is a real central scalar, and the field is a single real function, so the variation is elementary.</p>
@@ -122,16 +122,16 @@ $$</p>
 <p>$$
 \frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\xi)}=0
 \quad\Longrightarrow\quad
--\mu^2\xi+g\rho+\Box\xi=0 ,
+-\lambda_m^{-2}\xi+g\rho+\Box\xi=0 ,
 $$</p>
 <p>that is,</p>
 <p>$$
-\boxed{\;\left(\Box-\mu^2\right)\tilde{Ξ}=-g\rho\,e_t\;}.
+\boxed{\;\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=-g\rho\,e_t\;}.
 $$</p>
-<p>The operator $\Box-\mu^2$ is a <strong>central scalar</strong> differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.</p>
+<p>The operator $\Box-\lambda_m^{-2}$ is a <strong>central scalar</strong> differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.</p>
 <p>The free field obeys</p>
 <p>$$
-\left(\Box-\mu^2\right)\tilde{Ξ}=0 ,
+\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0 ,
 $$</p>
 <p>the biquaternionic Klein–Gordon equation of the companion article, here read as a <strong>classical</strong> wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.</p>
 <h2 id="plane-waves-and-the-range-of-the-field">Plane Waves and the Range of the Field</h2>
@@ -142,27 +142,27 @@ $$</p>
 $$</p>
 <p>with the central phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {r'_{t}}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the <strong>dispersion relation</strong></p>
 <p>$$
-\omega^2=c^2k^2+c^2\mu^2=c^2k^2+\frac{m^2c^4}{\hbar^2} .
+\omega^2=c^2k^2+c^2\lambda_m^{-2}=c^2k^2+\frac{m^2c^4}{\hbar^2} .
 $$</p>
-<p>The wave speed is frequency-dependent and exceeds $c$ for every nonzero $\mu$, $\omega/k=c\sqrt{1+\mu^2/k^2}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.</p>
+<p>The wave speed is frequency-dependent and exceeds $c$ for every finite $\lambda_m$, $\omega/k=c\sqrt{1+\lambda_m^{-2}/k^2}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.</p>
 <h3 id="the-range-of-the-field">The Range of the Field</h3>
 <p>A static field obeys</p>
 <p>$$
-\left(\Delta-\mu^2\right)\xi=-g\rho .
+\left(\Delta-\lambda_m^{-2}\right)\xi=-g\rho .
 $$</p>
-<p>The operator $\Delta-\mu^2$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:</p>
+<p>The operator $\Delta-\lambda_m^{-2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:</p>
 <p>$$
-G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-\mu r)}{4\pi r}, \qquad
-\left(\Delta-\mu^2\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/\lambda_m)}{4\pi r}, \qquad
+\left(\Delta-\lambda_m^{-2}\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$</p>
-<p>with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\mu^{-1}$ is the <strong>range</strong> of the field: beyond a few $\mu^{-1}$ the field is exponentially suppressed, while in the massless case $\mu=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.</p>
+<p>with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\lambda_m$ is the <strong>range</strong> of the field: beyond a few $\lambda_m$ the field is exponentially suppressed, while in the massless case $\lambda_m^{-1}=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.</p>
 <h2 id="the-static-central-solution">The Static Central Solution</h2>
 <h3 id="the-point-source">The Point Source</h3>
 <p>Let the source be a point of strength $Ϙ$ at the origin, $\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=Ϙ\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The static field is</p>
 <p>$$
-\boxed{\ \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=gQ\,G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\ },
+\boxed{\ \xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=gQ\,G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-r/\lambda_m)}{4\pi r}\ },
 \qquad\text{that is}\qquad
-\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t ,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{gQ\,\exp(-r/\lambda_m)}{4\pi r}\,e_t ,
 $$</p>
 <p>the <strong>Yukawa field</strong>. In the massless limit,</p>
 <p>$$
@@ -184,7 +184,7 @@ $$</p>
 <h3 id="the-energy-density">The Energy Density</h3>
 <p>The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article <em>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</em>. Its energy density is</p>
 <p>$$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12\lambda_m^{-2}\xi^2>0 ,
 $$</p>
 <p>positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a <strong>static</strong> field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.</p>
 <h3 id="the-energy-of-the-static-field">The Energy of the Static Field</h3>
@@ -204,7 +204,7 @@ $$</p>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
 <p>Let a test source of coupling $g_{\mathrm t}$ and unit strength be placed in the field of the point source. The interaction Lagrangian of the test source is $g_{\mathrm t}\rho_2\,\xi$ with $\rho_2$ its density, so its potential energy in the field is</p>
 <p>$$
-\boxed{\ E(r)=-g_{\mathrm t}\,\xi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-\mu r)}{4\pi r}=-\frac{\kappa\,\exp(-\mu r)}{r}\ },
+\boxed{\ E(r)=-g_{\mathrm t}\,\xi(r)=-\frac{g\,g_{\mathrm t}Ϙ\,\exp(-r/\lambda_m)}{4\pi r}=-\frac{\kappa\,\exp(-r/\lambda_m)}{r}\ },
 \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0 ,
 $$</p>
 <p>the sign following from the Hamiltonian sign $H_{\text{int}}=-L_{\text{int}}$ and the convention that like sources attract. The interaction energy is negative and increases to zero at infinity: the configuration is bound, and the massless limit is the inverse-square attraction</p>
@@ -222,8 +222,8 @@ $$</p>
 <h3 id="which-central-force-results-apply">Which Central-Force Results Apply</h3>
 <p>The reduction is exact, and it hands the problem to the two sibling articles.</p>
 <ul>
-<li><strong>Massless central scalar.</strong> For $\mu=0$ the potential is $E=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article <em>The Relativistic Central Force Problem in Biquaternionic Form</em>: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles <em>Central Forces and the Classical Kepler Problem in Biquaternionic Form</em> and <em>The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</em>.</li>
-<li><strong>Massive central scalar.</strong> For $\mu>0$ the potential is the Yukawa potential $E=-\kappa \exp(-\mu r)/r$ and the force is $F=-\kappa \exp(-\mu r)(\mu r+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.</li>
+<li><strong>Massless central scalar.</strong> For $\lambda_m^{-1}=0$ the potential is $E=-\kappa/r$ and the relativistic orbit is exactly the precessing conic of the companion article <em>The Relativistic Central Force Problem in Biquaternionic Form</em>: $r=p/[1+e\cos\omega(\theta-\theta_0)]$ with $\omega^2=1-\kappa^2/(c^2L^2)$, bound orbits requiring $L>\kappa/c$. The non-relativistic limit is the Kepler and Coulomb orbit of the companion articles <em>Central Forces and the Classical Kepler Problem in Biquaternionic Form</em> and <em>The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</em>.</li>
+<li><strong>Massive central scalar.</strong> For $\lambda_m^{-1}>0$ the potential is the Yukawa potential $E=-\kappa \exp(-r/\lambda_m)/r$ and the force is $F=-\kappa \exp(-r/\lambda_m)(r/\lambda_m+1)/r^2$. The relativistic Binet equation of the sibling article applies with this force, but the equation is nonlinear and the orbit is not a conic; the precessing-conic solution is special to the massless case. The field-theoretic statement is that a massive scalar exchange produces a short-range central force whose orbits are not closed, and the massless exchange produces the inverse-square force whose relativistic orbits are the exact precessing conics.</li>
 </ul>
 <p>The reduction also identifies the coupling's meaning: $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ is a product of the field coupling, the test coupling and the source strength. The framework does not fix these numbers, exactly as the central-force article does not fix $\kappa$; what the framework fixes is the <strong>form</strong> of the force once the field is the central scalar.</p>
 <h2 id="the-central-phase-and-its-current">The Central Phase and Its Current</h2>
@@ -236,7 +236,7 @@ $$</p>
 <h3 id="the-conserved-current">The Conserved Current</h3>
 <p>The complex Lagrangian</p>
 <p>$$
-\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2|\xi|^2
+\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}|\xi|^2
 $$</p>
 <p>is invariant under the central phase, and Noether's theorem gives the conserved current</p>
 <p>$$
@@ -260,13 +260,13 @@ $$</p>
 <p><strong>The central phase.</strong> The global $\mathrm{U}(1)$ of the complex scalar is the algebra's central phase, and its conservation is Noether's theorem applied to a central transformation.</p>
 <p><strong>The closure of the centre.</strong> The centre is a subalgebra, so polynomial self-interactions of the scalar stay in the centre and are available without leaving the scalar sector.</p>
 <h3 id="what-the-algebra-does-not-contain">What the Algebra Does Not Contain</h3>
-<p><strong>The numbers.</strong> The couplings $g$, $g_{\mathrm t}$, the source strength $Ϙ$ and the mass parameter $\mu$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.</p>
+<p><strong>The numbers.</strong> The couplings $g$, $g_{\mathrm t}$, the source strength $Ϙ$ and the mass length $\lambda_m$ are not fixed by the algebra. It fixes the form of the potential once they are given, and the inverse-square law follows from the massless case, but it does not select the massless case.</p>
 <p><strong>The source's dynamics.</strong> The source density is prescribed. A dynamical source, with its own equation of motion and its back-reaction on the field, is a coupled system that the present article does not treat; the framework's field–matter coupling is developed in the articles on the Lorentz force and on the external-field problem, and for the scalar field it is simpler and remains to be written out.</p>
 <p><strong>The renormalization of the self-energy.</strong> The divergence of the point-source field energy is a classical statement, and its resolution belongs to whatever regulates the source at short distances; the algebra does not regulate it.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>The value of the couplings and the mass.</strong> The framework fixes the form of the central potential and leaves $g$, $g_{\mathrm t}$, $Ϙ$ and $\mu$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.</p>
+<p><strong>The value of the couplings and the mass.</strong> The framework fixes the form of the central potential and leaves $g$, $g_{\mathrm t}$, $Ϙ$ and $\lambda_m$ free. Is there any algebraic constraint on their ratios, in the way that the barrier condition $L>\kappa/c$ constrains the angular momentum? Not known.</p>
 </li>
 <li>
 <p><strong>Self-interaction in the centre.</strong> Because the centre is closed under multiplication, a potential $V(\tilde{Ξ})$ polynomial in a central field is well defined and stays in the centre. Whether the framework's scalar sector should be linear or self-interacting — and how a self-interacting central scalar relates to the Higgs sector treated elsewhere in the corpus — is open.</p>
@@ -284,7 +284,7 @@ $$</p>
 <p><strong>Coupling to the informational sector.</strong> The field occupies the centre and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{B}_{\Psi}$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article <em>The Informational Sector: States, Observables and Probability</em>.</p>
 </li>
 <li>
-<p><strong>Curved spacetime and the range.</strong> The Yukawa range $\mu^{-1}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.</p>
+<p><strong>Curved spacetime and the range.</strong> The Yukawa range $\lambda_m$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
@@ -294,20 +294,20 @@ $$</p>
 $$</p>
 <p>a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action</p>
 <p>$$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4r,
-\qquad \mu=\frac{mc}{\hbar},
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}\xi^2+g\rho\,\xi\right]d^4r,
+\qquad \lambda_m=\frac{\hbar}{mc},
 $$</p>
-<p>has the field equation $(\Box-\mu^2)\tilde{Ξ}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k^2+c^2\mu^2$ and has range $\mu^{-1}$.</p>
+<p>has the field equation $(\Box-\lambda_m^{-2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k^2+c^2\lambda_m^{-2}$ and has range $\lambda_m$.</p>
 <p>A static point source of strength $Ϙ$ produces the Yukawa field</p>
 <p>$$
-\tilde{Ξ}=\frac{gQ\,\exp(-\mu r)}{4\pi r}\,e_t,
+\tilde{Ξ}=\frac{gQ\,\exp(-r/\lambda_m)}{4\pi r}\,e_t,
 \qquad\text{whose massless limit is}\qquad
 \tilde{Ξ}=\frac{gQ}{4\pi r}\,e_t .
 $$</p>
-<p>The static field's energy density is $T_{tt}=\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
+<p>The static field's energy density is $T_{tt}=\tfrac12(\nabla\xi)^2+\tfrac12\lambda_m^{-2}\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
 <p>A test source of coupling $g_{\mathrm t}$ has the central potential energy</p>
 <p>$$
-E(r)=-\frac{\kappa \exp(-\mu r)}{r}, \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0,
+E(r)=-\frac{\kappa \exp(-r/\lambda_m)}{r}, \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0,
 $$</p>
 <p>whose massless limit $E=-\kappa/r$ is exactly the inverse-square central potential of the sibling article <em>The Relativistic Central Force Problem in Biquaternionic Form</em>. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.</p>
 <p>The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, with conserved current $\tilde J=\tfrac{i}{2}(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.</p>
@@ -349,39 +349,39 @@ $$</p>
 <td>Gradient, conjugate gradient, d'Alembertian (central, scalar)</td>
 </tr>
 <tr>
-<td>$\mu=mc/\hbar$</td>
-<td>Mass parameter, the inverse range; classically only $\mu^{-1}$ matters</td>
+<td>$\lambda_m$</td>
+<td>The mass length, $\hbar/(mc)$; its reciprocal $\lambda_m^{-1}=mc/\hbar$ is the inverse range, and classically only $\lambda_m$ matters</td>
 </tr>
 <tr>
-<td>$\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\xi$</td>
+<td>$\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}\xi^2+g\rho\xi$</td>
 <td>Real scalar Lagrangian</td>
 </tr>
 <tr>
-<td>$(\Box-\mu^2)\tilde{Ξ}=-g\rho e_t$</td>
+<td>$(\Box-\lambda_m^{-2})\tilde{Ξ}=-g\rho e_t$</td>
 <td>Field equation with source</td>
 </tr>
 <tr>
-<td>$\omega^2=c^2k^2+c^2\mu^2$</td>
+<td>$\omega^2=c^2k^2+c^2\lambda_m^{-2}$</td>
 <td>Dispersion relation of the free field</td>
 </tr>
 <tr>
-<td>$G_\mu=\exp(-\mu r)/(4\pi r)$</td>
-<td>Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$</td>
+<td>$G_{\lambda_m}=\exp(-r/\lambda_m)/(4\pi r)$</td>
+<td>Screened Green's function; $(\Delta-\lambda_m^{-2})G_\mu=-\delta^{(3)}$</td>
 </tr>
 <tr>
 <td>$Ϙ,\rho,g,g_{\mathrm t}$</td>
 <td>Source strength, source density, field coupling, test coupling</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}=gQ\exp(-\mu r)/(4\pi r)\,e_t$</td>
-<td>Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$</td>
+<td>$\tilde{Ξ}=gQ\exp(-r/\lambda_m)/(4\pi r)\,e_t$</td>
+<td>Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\lambda_m^{-1}=0$</td>
 </tr>
 <tr>
 <td>$\vec\beta$, $R$, $r'_{\mathrm{ret},t}$</td>
 <td>Source velocity over $c$, retarded distance, retarded time</td>
 </tr>
 <tr>
-<td>$T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2$</td>
+<td>$T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12\lambda_m^{-2}\xi^2$</td>
 <td>Energy density, positive</td>
 </tr>
 <tr>
@@ -389,7 +389,7 @@ $$</p>
 <td>Field amplitude; massless field energy outside radius $a$</td>
 </tr>
 <tr>
-<td>$E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$</td>
+<td>$E(r)=-\kappa \exp(-r/\lambda_m)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$</td>
 <td>Central interaction energy; $\kappa>0$ attractive</td>
 </tr>
 <tr>
