@@ -10,7 +10,7 @@ $$
 
 where $\tilde\nabla$ is the corpus gradient, $\tilde{Ξ}^{\mathrm{sp}}$ is an **even element**, $\omega=-\vec e_z$ is the source's imaginary unit with $\omega^2=-e_t$, and $v_0$ is a fixed timelike vector with $v_0^2=+1$. The equation is real: no complex number is introduced beyond the coefficients, no array is used, and the imaginary unit of the four-component equation of the older literature is replaced, on the field, by right multiplication by the fixed element $\omega$. Hestenes reads $\tilde{Ξ}^{\mathrm{sp}}$ as a rotation times a density, so the eight real components of the field are the six parameters of a rotation plus a density and an angle. The electron's spin is then a geometric rotation, and the current is a geometric vector.
 
-**Every derivative in this article is the corpus gradient**, cited and not restated. The gradient, its conjugate and its scalar square $\Box$ are fixed once for the series in *Conventions of the Operators and the Calculus*, §*The Gradient*, and the article adds no second derivative of its own. A free equation is therefore first order in one field, $\tilde\nabla\tilde F=0$; a mass is carried by the chiral pair
+**Every derivative in this article is the corpus gradient**, cited and not restated. The gradient, its conjugate and its scalar square $\Box$ are fixed once for the series in *Operator and Calculus Conventions*, §*The Gradient*, and the article adds no second derivative of its own. A free equation is therefore first order in one field, $\tilde\nabla\tilde F=0$; a mass is carried by the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
@@ -316,7 +316,7 @@ The correspondence with the biquaternion framework is the closest in this series
 |---|---|
 | $\mathrm{Cl}_{1,3}(\mathbb R)$ | Spacetime algebra, $v_0^2=+1$, $v_k^2=-1$ |
 | $v_0v_1v_2v_3$ | Pseudoscalar of the spacetime algebra; square $-1$, central on the even part, the corpus's central $i$ |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | Corpus gradient, its conjugate, and the scalar square; cited to *Conventions of the Operators and the Calculus* |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | Corpus gradient, its conjugate, and the scalar square; cited to *Operator and Calculus Conventions* |
 | $\omega=-\vec e_z$ | The source's imaginary unit, the spin plane; $\omega^2=-e_t$, right multiplication, even |
 | $i\omega=-i\vec e_z$ | The chirality, the frame's volume cell; the two parts of the field are its two values |
 | $\tilde{Ξ}^{\mathrm{sp}}$ | The field of the Dirac–Hestenes equation, an even element |

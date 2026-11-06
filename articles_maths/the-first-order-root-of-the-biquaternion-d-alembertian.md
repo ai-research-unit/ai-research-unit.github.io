@@ -343,5 +343,5 @@ The determinant of the left action of the symbol is the square of the quaternion
 
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the derivative conventions and the gradient.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, its conjugate and the d'Alembertian at length.
-- [Conventions of the Operators and the Differential Calculus](operator-and-calculus-conventions.html), for the four forms, the four norms and the definition of the d'Alembertian.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the four forms, the four norms and the definition of the d'Alembertian.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the target representation of the algebra and the determinant of the left regular matrix.

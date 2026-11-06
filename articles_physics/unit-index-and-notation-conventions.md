@@ -158,5 +158,5 @@ A subscript is written with the underscore and one token. It is a component or a
 ## Further Reading
 
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the base these conventions qualify.
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the operators that take the Fock mark and the derivative that is never a subscript.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the operators that take the Fock mark and the derivative that is never a subscript.
 - [Conventions in Mathematics](../articles_maths/algebra-and-element-conventions.html), for the same subscript rules on the mathematical corpus.

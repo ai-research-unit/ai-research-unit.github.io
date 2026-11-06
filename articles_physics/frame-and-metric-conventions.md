@@ -158,7 +158,7 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 ## Further Reading
 
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra, the two sectors and the coordinate $Q_t$.
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the calculus these frames read.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the calculus these frames read.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the explicit arrays and the one set of gamma matrices.
 - [Conventions of the Units, the Indices and the Notation](unit-index-and-notation-conventions.html), for the two writings of the temporal slot and the index rule.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the interval, the plain weight and the other two norms.

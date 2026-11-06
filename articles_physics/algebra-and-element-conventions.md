@@ -513,7 +513,7 @@ The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\thet
 - [Conventions of the Special Elements](special-element-conventions.html), for the central map, the root, the idempotent, the nilpotent and spin.
 - [Conventions of the Frames](frame-and-metric-conventions.html), for the $\mathbb{B}$ frame, the $\mathbb{M}_-$ frame, the Clifford map and the one metric they share.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the $2\times2$ isomorphism, the $4\times4$ regular representation and the Clifford structure.
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the operators and for the derivative marks, the gradient and the d'Alembertian.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the operators and for the derivative marks, the gradient and the d'Alembertian.
 - [Conventions of the Units, the Indices and the Notation](unit-index-and-notation-conventions.html), for the SI units, the two superscript tokens and the rules of the subscripts.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
 - W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, 1853), for the original quaternion algebra and its units.

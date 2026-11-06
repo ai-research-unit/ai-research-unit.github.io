@@ -564,7 +564,7 @@ The extension is a transcription of standard canonical quantization onto the par
 
 ## Further Reading
 
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the pair operator used throughout.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the d'Alembertian and the pair operator used throughout.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original Dirac equation and the prediction of the antiparticle.
 - W. Pauli, "The connection between spin and statistics," *Physical Review* **58** (1940) 716–722, for the theorem that forces anticommutation for half-integer spin.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the canonical quantization of the Dirac field.

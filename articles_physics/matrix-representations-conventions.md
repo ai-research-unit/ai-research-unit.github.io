@@ -64,7 +64,7 @@ so the coefficient array $c(T)$ of the operator, in the basis of the sixteen cel
 | the axis-free matrix | $\mathsf{M}_{4L}^{\mathrm{axf}}(\tilde Q)$, $\mathsf{M}_{4R}^{\mathrm{axf}}(\tilde Q)$ | the regular matrices in the coefficient basis, written $L^{\mathrm{axf}}(\tilde Q)$, $R^{\mathrm{axf}}(\tilde Q)$ |
 | the Pauli matrix | $\mathsf{M}_{4L}^{\mathrm{pau}}(\tilde Q)$, $\mathsf{M}_{4R}^{\mathrm{pau}}(\tilde Q)$ | the regular matrices in the Peirce frame, written $L^{\mathrm{pau}}(\tilde Q)$, $R^{\mathrm{pau}}(\tilde Q)$ |
 
-The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy, $M_4(\mathbb{C})_{\mathbb{B}_R}$ the right, and $M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ both. A bare $M_4(\mathbb{C})$ is the ambient. The two cones are written $M_4(\mathbb{C})_{\mathcal{T}}$ for the two-sided operators and $M_4(\mathbb{C})_{\Theta}$ for the sandwiches, whose names are in *Conventions of the Operator Families*.
+The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy, $M_4(\mathbb{C})_{\mathbb{B}_R}$ the right, and $M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ both. A bare $M_4(\mathbb{C})$ is the ambient. The two cones are written $M_4(\mathbb{C})_{\mathcal{T}}$ for the two-sided operators and $M_4(\mathbb{C})_{\Theta}$ for the sandwiches, whose names are in *Operator Family Conventions*.
 
 **The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Operator and Calculus Conventions*, §*The Operators*. In the Peirce frame the left copy happens to be the second tensor factor and the right copy the first, and another frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
 
@@ -1110,7 +1110,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R^{\mathrm{
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the products the matrix product mirrors.
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html), for the left and right multiplications these matrices represent.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the left and right multiplications these matrices represent.
 - [Frame and Metric Conventions](frame-and-metric-conventions.html), for the two coordinate frames, their metrics and their table.
 - [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), companion article, for the coefficient space and the three actions.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [its Operators companion](../articles_maths/m4c-axis-free-representation-operators.html), for the matrices, the product, the trace, the determinant and the sixteen cells in the coefficient basis.
