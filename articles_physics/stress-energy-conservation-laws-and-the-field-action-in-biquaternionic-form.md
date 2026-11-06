@@ -185,7 +185,7 @@ $$
 \mu = 1.3,
 $$
 
-with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(x,y,z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
+with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $r'_t=0.7$, $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T_{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
 
 ## The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear
 

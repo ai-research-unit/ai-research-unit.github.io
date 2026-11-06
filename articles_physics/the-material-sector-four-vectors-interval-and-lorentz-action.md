@@ -35,7 +35,7 @@ $$
 \tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
 $$
 
-with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r'_t = t'$ and $(r_x,r_y,r_z)=(x,y,z)$, so the general element is
+with $r'_t,r_x,r_y,r_z\in\mathbb{R}$. The parameters are the coordinates themselves, so the general element is
 
 $$
 \tilde R_\Phi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z.
@@ -289,7 +289,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}_{\Phi}$ | the anti-Hermitian subspace, the material sector |
-| $\tilde R_\Phi=i c r'_t e_t+\vec r_\Phi$ | a material element, with $r'_t = t'$; it is its own material part |
+| $\tilde R_\Phi=i c r'_t e_t+\vec r_\Phi$ | a material element; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |

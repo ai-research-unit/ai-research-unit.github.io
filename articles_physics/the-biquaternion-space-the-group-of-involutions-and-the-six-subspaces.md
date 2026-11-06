@@ -43,10 +43,10 @@ with $c$ the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ i
 
 | Coefficient | Complex | Real part | Imaginary part | Material writing | Informational writing |
 | --- | --- | --- | --- | --- | --- |
-| $Q_t$ | $q_t+iq'_t$ | $c\,t$ | $c\,r'_t$ | $i c r'_{t}$ | $c\,t$ |
-| $Q_x$ | $q_x+iq'_x$ | $x$ | $r'_{x}$ | $x$ | $i\,r'_{x}$ |
-| $Q_y$ | $q_y+iq'_y$ | $y$ | $r'_{y}$ | $y$ | $i\,r'_{y}$ |
-| $Q_z$ | $q_z+iq'_z$ | $z$ | $r'_{z}$ | $z$ | $i\,r'_{z}$ |
+| $Q_t$ | $q_t+iq'_t$ | $c\,r_t$ | $c\,r'_t$ | $i c r'_{t}$ | $c\,r_t$ |
+| $Q_x$ | $q_x+iq'_x$ | $r_x$ | $r'_{x}$ | $r_x$ | $i\,r'_{x}$ |
+| $Q_y$ | $q_y+iq'_y$ | $r_y$ | $r'_{y}$ | $r_y$ | $i\,r'_{y}$ |
+| $Q_z$ | $q_z+iq'_z$ | $r_z$ | $r'_{z}$ | $r_z$ | $i\,r'_{z}$ |
 
 The two ends of the table are the two coordinates of the framework,
 
@@ -124,16 +124,16 @@ The area pairing is non-degenerate exactly on the complex time sector, of rank $
 
 ### The Eight Coordinates Are Two Clocks and Two Spaces
 
-The dictionary gives every one of the eight coordinates the dimension of a length. The two times are $c t$ and $c r'_t$, the two spaces are $x,y,z$ and $r'_{x},r'_{y},r'_{z}$. This is why the central imaginary can exchange the two ledgers without a dimensional mismatch: the exchange is a quarter turn in a plane whose two axes carry the same dimension.
+The dictionary gives every one of the eight coordinates the dimension of a length. The two times are $c r_t$ and $c r'_t$, the two spaces are $r_x,r_y,r_z$ and $r'_{x},r'_{y},r'_{z}$. This is why the central imaginary can exchange the two ledgers without a dimensional mismatch: the exchange is a quarter turn in a plane whose two axes carry the same dimension.
 
 | Direction | Element contribution | Physical interpretation |
 | --- | --- | --- |
-| $e_t$ | $c t$ | the informational time |
+| $e_t$ | $c r_t$ | the informational time |
 | $i e_t$ | $i c r'_t$ | the material time |
-| $\vec e_x,\vec e_y,\vec e_z$ | $x,y,z$ | the material space |
+| $\vec e_x,\vec e_y,\vec e_z$ | $r_x,r_y,r_z$ | the material space |
 | $i\vec e_x,i\vec e_y,i\vec e_z$ | $i r'_{x},i r'_{y},i r'_{z}$ | the informational space |
 
-The two times are one complex coordinate, $z=c r_t+i c r'_t$, and the two spaces are one complex vector, $r_x\vec e_x+r_y\vec e_y+r_z\vec e_z+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$. The first is the **clock plane**: one real axis is the clock of the informational sector, the other the clock of the material one, and the central imaginary turns one into the other. The second is the **complex space**: three real directions and their three imaginary partners.
+The two times are one complex coordinate, $c r_t+i c r'_t$, and the two spaces are one complex vector, $r_x\vec e_x+r_y\vec e_y+r_z\vec e_z+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$. The first is the **clock plane**: one real axis is the clock of the informational sector, the other the clock of the material one, and the central imaginary turns one into the other. The second is the **complex space**: three real directions and their three imaginary partners.
 
 The reading of the imaginary directions is the delicate one. In the sector dictionary the block $B_2$ is the **informational space**, the partner of the material space. In the phase-space reading of the complex space sector the same block is the **momentum half** of a configuration–momentum pair: the real direction carries the configuration and its imaginary partner carries the conjugate momentum. The two readings are of one block, and they must not be conflated. What both have in common is the algebraic fact that an imaginary spatial direction is a direction the pairing uses, not a direction in which anything propagates; the Fourier reading of the same fact is that the imaginary axis is where the conjugate variable sits.
 
@@ -156,7 +156,7 @@ The six subspaces are not six arbitrary slices. Each is the fixed or anti-fixed 
 
 **The complex space sector is the complex three-vector.** Its six real directions carry the three material directions and their three informational partners. Multiplication by $i$ acts inside the sector as the **duality rotation** of the complex three-vector, which is the electric–magnetic duality of the field strength; the three real directions generate the rotations and the three imaginary ones the boosts, so the same six-dimensional carrier holds a field configuration and the generators of the transformations that act on it. In the phase-space reading the same sector is $T^*\mathbb{R}^3$: the real direction is the configuration, the imaginary partner the momentum, and the area pairing of rank $6$ is the symplectic form. **The boundary:** this is the kinematic phase space; the Hamiltonian is not supplied by the algebra, and the identification of the imaginary partner with momentum is the fixed complex structure, not a dynamical Legendre transform.
 
-**The real sector is the Euclidean four-coordinate space.** Its four coefficients are real, so the $i c r'_t$ writing is unavailable inside it: its element is $c r_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, the norm is positive definite of signature $(4,0)$, there is no null direction and no light cone, and the metric singles out no direction as time; the dictionary nevertheless names the $e_t$ axis the informational time. This is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors, whose action is the rotation of the material space with the two-to-one cover of $SO(3)$. **The boundary:** it is not the physical spacetime, because its time is $c t$ and its space is real; it is the Euclidean reading, not the Minkowski one.
+**The real sector is the Euclidean four-coordinate space.** Its four coefficients are real, so the $i c r'_t$ writing is unavailable inside it: its element is $c r_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, the norm is positive definite of signature $(4,0)$, there is no null direction and no light cone, and the metric singles out no direction as time; the dictionary nevertheless names the $e_t$ axis the informational time. This is the Euclidean, or Wick-rotated, reading of the four-vector space, and it is the home of the rotation rotors, whose action is the rotation of the material space with the two-to-one cover of $SO(3)$. **The boundary:** it is not the physical spacetime, because its time is $c r_t$ and its space is real; it is the Euclidean reading, not the Minkowski one.
 
 **The imaginary sector is the negative-definite four-coordinate space.** Every coefficient carries the central imaginary, and its element is $i c r'_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$. It carries the material time with the informational space, the reverse assignment to the real sector, and its norm is negative definite of signature $(0,4)$. It is where the infinitesimal generators of the boosts lie, the three imaginary vector units. **The boundary:** a finite boost does not lie in the sector, because its scalar part is real; the sector holds the generators, and the boosts themselves are obtained by leaving it.
 
@@ -260,7 +260,7 @@ Two subspaces meet in the blocks they share, and each shared block is one physic
 
 The table lists one row for each of the four blocks; every intersection of two distinct subspaces is one of these blocks or zero. The pattern is the dictionary's grammar. A shared vector block has dimension three: two descriptions agree on a space. A shared scalar block has dimension one: they agree on a time. An empty intersection means the two descriptions are complementary, and the decomposition they form is a decomposition of the whole algebra. The three decompositions are the three complementary pairs, and their sums are all of $\mathbb{B}$.
 
-**The boundary.** An intersection is a subspace of elements, not a set of physical objects. A shared time is one direction, not one clock reading; the two sectors carry different coordinates on the central time plane, $c t$ and $i c r'_t$.
+**The boundary.** An intersection is a subspace of elements, not a set of physical objects. A shared time is one direction, not one clock reading; the two sectors carry different coordinates on the central time plane, $c r_t$ and $i c r'_t$.
 
 ### The Area Pairing Marks the Complex Sectors
 
@@ -313,7 +313,7 @@ The article interprets the linear structure, the involutions, the four real-type
 | $\tilde R_\Psi$, $\tilde R_\Phi$ | the informational and material parts of an element, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ |
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |
-| $c t$, $i c r'_t$ | the informational and material times |
+| $c r_t$, $i c r'_t$ | the informational and material times |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm |
 
 ## Further Reading

@@ -38,7 +38,7 @@ $$
 \tilde R_\Psi=c r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z,
 $$
 
-with $r_t,r'_x,r'_y,r'_z\in\mathbb{R}$. The parameters are the coordinates themselves, $r_t=t$ and $(r'_x,r'_y,r'_z)=(r'_{x},r'_{y},r'_{z})$, so the general element is
+with $r_t,r'_x,r'_y,r'_z\in\mathbb{R}$. The parameters are the coordinates themselves, so the general element is
 
 $$
 \tilde R_\Psi=c r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr).
@@ -439,7 +439,7 @@ The open questions are concrete.
 
 ## Limits
 
-The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c t$, not the material time $i c r'_t$.
+The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c r_t$, not the material time $i c r'_t$.
 
 ## Summary
 

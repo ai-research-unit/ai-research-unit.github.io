@@ -169,7 +169,7 @@ This requires judgment and organization.
 
 
 ################################
-### RULES DURING THE REVIEWING MODE
+### RULES DURING THE REVIEW MODE
 ################################
 
 The agent reads carefully the convention articles.

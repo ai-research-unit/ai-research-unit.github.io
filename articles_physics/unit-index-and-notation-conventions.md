@@ -14,7 +14,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 
 | Quantity | Symbol | Unit |
 |---|---|---|
-| Length | $x,y,z$; $i c r'_t$ in the length coordinate | metre ($\mathrm{m}$) |
+| Length | $r_x,r_y,r_z$; $i c r'_t$ in the length coordinate | metre ($\mathrm{m}$) |
 | Time | $r'_t$ in the time coordinate | second ($\mathrm{s}$) |
 | Mass | $m$ | kilogram ($\mathrm{kg}$) |
 | Temperature | $T$ | kelvin ($\mathrm{K}$) |
@@ -50,7 +50,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 - a transposition, $L^T$, $\tilde{Ξ}_{\mathrm{sp}}^T$;
 - a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ (degree).
 
-**A low mark is the exclusive carrier of two things: an index and a label.**
+**A subscript carries one of two things: an index or a label.**
 
 - an index — a numeric count, $Q_1$, $M_2$; the slot of a coordinate, $q_i$, $x_i$, $p_i$, $Q_i$, $\theta_i$, $\zeta_k$, $v_i$; the slot of a basis vector or a gamma, $\vec e_i$, $\gamma_i$; the slots of an invariant symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$; the generator of a gauge, colour, isospin or spin family, $T_a$, $G_a$, $\sigma_z$; the slot of a connection or curvature component, $\Gamma_k$, $\mathrm{Ric}_{ij}$, $\omega_i$, $g_{ij}$; the slot of a differential, $dx_i$.
 - a label naming the object, a part of it or a role of it, $E_{\mathrm{wkb}}$, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, with every label of §*The Labels*; the label comes first in the subscript and an index already there follows it after a comma, $T_{\mathrm{em},\mu\nu}$; the family letters of a regular matrix are of this kind, $L$ and $R$ naming the left and the right part, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.

@@ -82,7 +82,7 @@ p=c r'_{t}e_t+i\left(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\right),
 i\,p^{\natural}=i c r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z .
 $$
 
-That is $p_t=c r'_{t}$ and $\vec p=(x,y,z)$: the two readings carry the **same** numbers, the paravector with a real time and the material element with an imaginary one.
+That is $p_t=c r'_{t}$ and $\vec p=(r_x,r_y,r_z)$: the two readings carry the **same** numbers, the paravector with a real time and the material element with an imaginary one.
 
 **Why the conjugation.** Multiplication by the central $i$ alone exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, but it does not preserve the labels: it sends the space generator $i\vec e_k$ to $-\vec e_k$. The dictionary that keeps the labels is $i$ **composed with the quaternion conjugation**, $\tilde Q=i\,p^{\natural}$, because ${}^{\natural}$ negates the imaginary vector part and the multiplication negates it back. The plain dual $ip$ is the material element of the **parity-reflected** event. This is the whole cost of the change of time convention: the factor $i$ alone carries the space part to the wrong sign, and ${}^{\natural}$ is what undoes it.
 

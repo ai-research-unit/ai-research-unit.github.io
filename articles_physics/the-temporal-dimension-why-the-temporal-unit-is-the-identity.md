@@ -114,7 +114,7 @@ This is the mirror, in the material sector, of the statement that time is the sc
 
 The material interpretation of the imaginary coefficient is already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and this article states it in the terms that the rest of the article needs.
 
-The three real coefficients $x, y, z$ are the directions in which a material object **extends**. An extended object has a size in each of them; it can be displaced along any of them; it can be held, and one can move through it. The three vector directions are, for that reason, the directions a material body occupies. They are the part of the coordinate that a body fills.
+The three real coefficients $r_x, r_y, r_z$ are the directions in which a material object **extends**. An extended object has a size in each of them; it can be displaced along any of them; it can be held, and one can move through it. The three vector directions are, for that reason, the directions a material body occupies. They are the part of the coordinate that a body fills.
 
 The one imaginary coefficient $i c r'_t$ is the direction the object does not extend along. A material body has a position in time but no size in it; it is *at* a time, not *in* time the way it is in space. The imaginary character of the coefficient is the algebraic mark of that difference: the coordinate exists, it is written in the same element and it enters the same norm, but it is not a coordinate a body occupies. Time is measured — by the change of the other coordinates, by the rate at which things happen — but it is measured and not touched. It cannot be held, it cannot be displaced along, and it cannot be revisited. **Measured but not touched** is the material reading of the $i$ on $c r'_{t}$.
 
