@@ -81,7 +81,7 @@ The agent answers the question in plain declarative prose.
 
 Sentences are short, active, one idea per paragraph.
 
-Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+Vocabulary is plain and consistent. No verbiage, No filler, no flourish. NO VERBIAGE.
 
 
 ################################
@@ -100,7 +100,7 @@ The agent renders its analysis in plain declarative prose.
 
 Sentences are short, active, one idea per paragraph.
 
-Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+Vocabulary is plain and consistent. No verbiage, No filler, no flourish. NO VERBIAGE.
 
 
 ################################
@@ -121,7 +121,7 @@ The agent renders the potential new ideas the paper could brig in plain declarat
 
 Sentences are short, active, one idea per paragraph.
 
-Vocabulary is plain and consistent. No verbiage, no filler, no flourish.
+Vocabulary is plain and consistent. No verbiage, No filler, no flourish. NO VERBIAGE.
 
 
 ################################
@@ -156,7 +156,7 @@ It argues by contrast, and it names the strongest objection before answering it.
 
 Every claim carries a warrant: a proof, a check, or a stated reading of the conventions.
 
-Vocabulary is plain and consistent. No filler, no flourish.
+Vocabulary is plain and consistent. No filler, no flourish. NO VERBIAGE.
 
 The agent does not waste time doing other things, checking unrelated things.
 
@@ -194,7 +194,7 @@ It argues by contrast, and it names the strongest objection before answering it.
 
 Every claim carries a warrant: a proof, a check, or a stated reading of the conventions.
 
-Vocabulary is plain and consistent. No filler, no flourish.
+Vocabulary is plain and consistent. No filler, no flourish. NO VERBIAGE.
 
 The agent does not waste time doing other things, checking unrelated things.
 

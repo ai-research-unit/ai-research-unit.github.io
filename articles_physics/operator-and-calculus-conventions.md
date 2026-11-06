@@ -30,9 +30,9 @@ The tilde sits in the subscript because it belongs to the element, not to the op
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 
 - A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla$ of §*The Gradient*; the gauge-covariant gradient $\tilde\nabla_{\mathrm{gco}}$ of §*The Gauge-Covariant Gradient*.
-- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\hbar\nabla=\sum_k\vec e_kp_k$.
+- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\hbar\vec\nabla=\sum_k\vec e_kp_k$.
 
-The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $e_t$ term carries $\partial/\partial R_t$, while $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$ is pure and keeps the fixed glyph of §*The Gradient*, which carries no second mark.
+The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $e_t$ term carries $\partial/\partial R_t$, while $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$ is pure: it is the vector part of $\tilde\nabla$, $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$, and the fixed glyph $\nabla$ of §*The Gradient* and the arrowed $\vec\nabla$ name the one operator, the arrow being written where its purity is what the sentence names.
 
 **The case follows the layer.** The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, the operator is written in its explicit form, $-i\hbar\vec\nabla$, because no subscript marks an operator: the two-letter form $\mathrm{op}$ is not a token of the corpus, and *Algebra and Element Conventions* states the rule (§*The Algebra and Its Basis*). The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
 
