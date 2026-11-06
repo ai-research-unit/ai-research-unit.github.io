@@ -71,7 +71,7 @@ A single element of $\mathbb{B}$ carries four complex numbers, which is the coun
 
 **The rules of the value.** A product takes the value of its right factor, and left multiplication keeps it. The derivative therefore carries each part into a part of the same value, and nothing that multiplies on the left acts on the value at all.
 
-**The physical reading.** The two parts are the left-handed and the right-handed parts of the fermion field. At $m=0$ each part carries one helicity: a plane wave of one value has one helicity, a plane wave of the other has the other, and the mass is the term that couples the two. That reading is used in §*Plane-Wave Solutions* and again in §*The Harmonic Field: Two Projections, and the Helicity Reading*, both below.
+**The physical interpretation.** The two parts are the left-handed and the right-handed parts of the fermion field. At $m=0$ each part carries one helicity: a plane wave of one value has one helicity, a plane wave of the other has the other, and the mass is the term that couples the two. That interpretation is used in §*Plane-Wave Solutions* and again in §*The Harmonic Field: Two Projections, and the Helicity Reading*, both below.
 
 **A limit, stated once.** Left multiplication cannot tell the two parts apart. For any element $\tilde a$ the product $\tilde a\tilde{Ξ}_{\mathrm{sp},L}$ carries the value $L$ and $\tilde a\tilde{Ξ}_{\mathrm{sp},R}$ carries the value $R$, so a gauge action by left multiplication acts on the two parts in the same way, and the two parts are two copies of one object. The inequivalence of a left-handed field and its conjugate is a fact about a larger object and not about this algebra, and nothing in this article asserts it.
 
@@ -107,13 +107,15 @@ where $\overline{\cdot}$ is the coefficient conjugation of *Algebra and Element 
 
 **Three kinds of action in one operator.** The display mixes a left action, an antilinear map and a right action, and the mixture is the dictionary's content rather than a slip of notation. The time derivative and $D_3$ act from the left; the bar acts on the coefficients, has no side, and is the antilinear entry; the multiplication by $\vec e_z$ acts from the right. How such a combination is printed is fixed by the conventions (*Product and Form Conventions*, both copies): the side is carried by position and never by a mark. The mass term is therefore $\overline{F}\,\vec e_z$ and not a product of two operator letters: the bar is applied to the field and the unit multiplies what comes out. Because $\vec e_z$ has real coefficients, the bar commutes with that multiplication, $\overline{F\vec e_z}=\overline{F}\,\vec e_z$, so the source's order and the corpus's are one operator.
 
-**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ and $Q_k=q_k$. There $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_k$ is the physical spatial derivative, so the two symbols name the two coordinates of one sector and do not mix two conventions. In the natural units $\hbar=c=1$ of this section
+**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i c r'_t$ and $Q_k=q_k$. There $R_t=i c r'_t$ is the complex time coordinate, so $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_k$ is the physical spatial derivative: the two symbols name the two coordinates of one sector and do not mix two conventions. In the natural units $\hbar=c=1$ of this section
 
 $$
 i\frac{\partial}{\partial r'_t} = -\frac{\partial}{\partial R_t},
 \qquad\text{so that}\qquad
-i\frac{\partial}{\partial r'_t} + D_3 = -\tilde{\nabla}^{\natural}.
+i\frac{\partial}{\partial r'_t} + D_3 = -\tilde{\nabla}^{\natural},
 $$
+
+the time term of the gradient carrying $e_t$, the identity of the algebra, so that the three symbols are one operator.
 
 The free part of $\mathcal{N}$ is therefore the **conjugate** gradient and not the gradient: the free equation is the member with the minus value, $\tilde{\nabla}^{\natural}F=0$, written on the whole algebra, and the other member is its conjugate. With the mass term moved to the right the equation reads
 
@@ -187,7 +189,14 @@ $$
 \qquad |F|^2 := \langle F\rangle_{*} = \sum_{\mu=0}^{3}|F_\mu|^2,
 $$
 
-which is the quaternionic form of the current-conservation equation of the Dirac field, written in the corpus's glyphs: the source's $\dagger$ is the quaternionic conjugate $\natural$ and its $*$ is the coefficient bar. The modulus that appears in it is the Hermitian norm $\langle\cdot\rangle_{*}$, the definite one, and it is the probability density of the field. It is not the quaternionic norm $\langle\cdot\rangle_{\natural}$: that norm vanishes on the zero-divisor cone and cannot be a probability density. Here the Hermitian norm is computed on the real representative of the solution.
+printed there in its own normalization, with $\hbar$ restored and with the source's $\dagger$ read as the quaternionic conjugate $\natural$ and its $*$ as the coefficient bar. The equation of this section carries no $\hbar$, and the same pair gives the law in the units of this section,
+
+$$
+\frac{\partial}{\partial r'_t}\bigl(FF^{\natural}\bigr)
+= F\,\vec e_x\,(D_3F)^{\natural} - (D_3F)\,\vec e_x\,F^{\natural},
+$$
+
+which is the quaternionic form of the current-conservation equation of the Dirac field: the time derivative of the density on the left, and on the right the two terms that carry the spatial derivative, with the direction $\vec e_x$ of the operator in the place the source's $M_{i_1}$ occupies. Writing $A=F\,\vec e_x\,(D_3F)^{\natural}$, the second term is $A^{\natural}$, so the right side is $A+A^{\natural}$ and is scalar; the mass cancels between the two terms, so the law is the same at $m=0$, and it was checked at residual $1.1\times10^{-15}$ over $100$ random real fields and again symbolically on a polynomial field. The density is the modulus $FF^{\natural}$. On the real representative it coincides with the Hermitian norm, $FF^{\natural}=\langle F\rangle_{*}=\sum_\mu F_\mu^2$, and that shared value is indefinite: what the pair conserves is a density, not a probability density. The definite Hermitian norm carries the probability reading only on the complex field, where the two norms differ.
 
 ### The One-Sided and the Two-Sided Equation
 
@@ -248,7 +257,7 @@ $$
 \tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z,
 $$
 
-with $x_0 = i c r'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
+with $Q_t = i c r'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
 
 ### The Invariant Interval
 
@@ -831,7 +840,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\tilde{P}/\hbar$ | Wave biquaternion |
 | $K_\mu$ | Unit complex four-vector carrying the mass term, $m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(iK_t\,e_t\tilde{Ξ}_{\mathrm{sp}} \vec e_x+i\sum_k K_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}} \vec e_y)$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$ |
 | $iR_{\mathrm{axf},\vec e_x}$ | The timelike cell, the Dirac adjoint in the bilinear covariants |
-| $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field; the probability density of the field |
+| $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field, the definite one; the probability density of a complex field |
 | $m$ | Fermion mass |
 ## Further Reading
 
