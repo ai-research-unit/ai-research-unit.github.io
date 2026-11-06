@@ -100,7 +100,7 @@ $$
 $$
 and the massive equation is $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$, whose two components are the pair. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
-\mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
+\mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-\tilde\nabla^{\natural}-\lambda_m^{-1}i\,\overline{\,\cdot\,}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
 with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
@@ -122,7 +122,7 @@ and the two forms are one operator read in two ways — the right action on the 
 $$
 D_F:\tilde{Ξ}_{\mathrm{sp}}\longmapsto m\,\overline{\tilde{Ξ}_{\mathrm{sp}}},
 $$
-equivalently $\xi D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto-mi\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
+equivalently $\xi D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
 $$
 D_F^2=\lvert m\rvert^2e_t,
 \qquad

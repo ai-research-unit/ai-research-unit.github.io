@@ -19,13 +19,13 @@ The framework carries two equations called the Dirac equation, and they must not
 The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$,
 
 $$
-\mathcal{N}F=\Big(i\frac{\partial}{\partial r'_t}+D_3\Big)F-mi\,\overline{F}\,\vec e_z=0,
+\mathcal{N}F=\Big(i\frac{\partial}{\partial r'_t}+D_3\Big)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0,
 $$
 
 in which $D_3$ is the spatial Dirac operator of that article, the mass acts by right multiplication through $\vec e_z$, and the conjugation supplies the antilinear part. Because $i\partial/\partial r'_t+D_3=-\tilde\nabla^{\natural}$, the two-sided operator is
 
 $$
-\mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z .
+\mathcal{N}=-\tilde\nabla^{\natural}-\lambda_m^{-1}i\,\overline{\,\cdot\,}\,\vec e_z .
 $$
 
 That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ with $\mathcal{N}F=0$ reads the second field as $\tilde{Ξ}_{\mathrm{sp},R}=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The change of variable is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
@@ -438,7 +438,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\tilde{\nabla}$ | Biquaternionic gradient (*Operator and Calculus Conventions*); $Q_t$ is the time coordinate, $i c r'_t$ on $\mathbb{B}_{\Phi}$ |
 | $\Box$ | The d'Alembertian, the gradient squared through its conjugate (*Operator and Calculus Conventions*) |
 | $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, whose square is $\Box$ |
-| $\mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z$ | Two-sided Dirac operator of *The Dirac Equation in Biquaternionic Form* |
+| $\mathcal{N}=-\tilde\nabla^{\natural}-\lambda_m^{-1}i\,\overline{\,\cdot\,}\,\vec e_z$ | Two-sided Dirac operator of *The Dirac Equation in Biquaternionic Form* |
 | $D_3$ | Its spatial part, defined in that article |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two values of the subscript |
 | $\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike cell |

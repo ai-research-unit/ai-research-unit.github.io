@@ -142,18 +142,18 @@ the condition $i[S_1,\beta mc^2]=-O$ is satisfied by
 
 $$
 \boxed{\;
-S_1=-\frac{i}{2mc^2}\,\beta O,
+S_1=-\frac{i\lambda_m}{2\hbar c}\,\beta O,
 \qquad
-S_1F=\frac{1}{2mc}\sum_k\vec e_k\pi_kF\vec e_y
+S_1F=\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y
 \;}
 $$
 
 because $-i$ times the $i$ of $\beta$ is $+1$:
 
 $$
--\frac{i}{2mc^2}\,\beta\bigl(c\vec\pi F\vec e_z\bigr)
+-\frac{i\lambda_m}{2\hbar c}\,\beta\bigl(c\vec\pi F\vec e_z\bigr)
 =-\frac{i\cdot i}{2mc}\,\vec\pi F\vec e_y
-=\frac{1}{2mc}\,\vec\pi F\vec e_y .
+=\frac{\lambda_m}{2\hbar}\,\vec\pi F\vec e_y .
 $$
 
 Indeed $[S_1,\beta]=\frac{i}{mc^2}O$, because the right multiplication by $\vec e_y$ gives $[\vec e_k(\cdot)\vec e_y,\beta]=2i\vec e_k(\cdot)\vec e_z$ term by term, whence $i[S_1,\beta mc^2]=-O$. The remaining term is evaluated with the same anticommutation:
@@ -189,24 +189,24 @@ $$
 which is odd, since $[O,\mathcal{E}]$ is odd and $\beta$ is even, and of relative order $v^2/c^2$ compared with $O$. It is removed by the second generator
 
 $$
-S_2=-\frac{i}{2mc^2}\beta O_1 ,
+S_2=-\frac{i\lambda_m}{2\hbar c}\beta O_1 ,
 $$
 
 odd like $S_1$, and by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,\beta mc^2]=-O_1$. Every generator is odd under the grading for the same reason: it enters the transformed Hamiltonian only through the commutator with $\beta mc^2$, and only an odd generator produces an odd term there. The price of the second step is a new odd remainder $O_2$, smaller by two powers of $v/c$, which the next generator removes in turn. Explicitly, $[O,\mathcal{E}]F=i\hbarϙc\,(\vec EF)\vec e_z$ and
 
 $$
-S_2F=\frac{\hbarϙ}{4m^2c^3}\,(\vec EF)\vec e_z ,
+S_2F=\frac{ϙ\lambda_m^2}{4\hbar c}\,(\vec EF)\vec e_z ,
 $$
 
 odd, as every generator is. For the free particle $O=c\vec p$, $\mathcal{E}=0$, so $O_1=0$ and $O^2=c^2\vec p^2$; then $O^2/(2mc^2)=\vec p^2/(2m)$ and
 
 $$
-H_2=\beta\Bigl(mc^2+\frac{\vec p^2}{2m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
+H_2=\beta\Bigl(mc^2+\frac{\vec p^2\lambda_m c}{2\hbar}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
 $$
 
 whose first two terms are the free-particle Schrödinger Hamiltonian on the $+1$ part of the mass grading and its negative on the $-1$ part, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.
 
-The generator has a transparent physical meaning in the algebra. The operator $\beta O$ is the piece of the Hamiltonian that exchanges the $+1$ and $-1$ parts of the mass grading. The generator $S_1=-\frac{i}{2mc^2}\beta O$ is proportional to it, and it anticommutes with $\beta$: the generator is frame-odd, and the transformation it generates does not leave the grading fixed. It is the rotation whose angle measures how much mixing of the two frequency parts the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
+The generator has a transparent physical meaning in the algebra. The operator $\beta O$ is the piece of the Hamiltonian that exchanges the $+1$ and $-1$ parts of the mass grading. The generator $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ is proportional to it, and it anticommutes with $\beta$: the generator is frame-odd, and the transformation it generates does not leave the grading fixed. It is the rotation whose angle measures how much mixing of the two frequency parts the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
 
 It is worth recording why one generator is not enough. With $U=e^{iS_1}$ taken exactly, the odd remainder $O_1$ survives: the leading generator removes the leading odd term and nothing more. The generator is a series, $S=S_1+S_2+\cdots$, and each term removes one order. The free particle is the exception, and the next section is about it: there the series terminates and a single closed-form exponential does the whole job at once.
 
@@ -284,7 +284,7 @@ $$
 that is, $UHU^\dagger=\beta\sqrt{\vec p^2c^2+m^2c^4}$ exactly. In this language the exact generator is $S=S_1\,\theta/\tan\theta$, since $S_1=-\tfrac{i}{2}A\tan\theta$ and $iS=\tfrac{1}{2}A\theta$; it reduces to $S_1$ as $\theta\to0$; the factor $\theta/\tan\theta\le1$ is the whole of the relativistic correction to the non-relativistic generator. The $+1$ part of $\beta$ is the relativistic energy $+E$, the $-1$ part is $-E$, and the odd part has been removed to all orders. The leading expansion of the closed form reproduces the result of the previous section:
 
 $$
-\beta E=\beta\Bigl(mc^2+\frac{\vec p^2}{2m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
+\beta E=\beta\Bigl(mc^2+\frac{\vec p^2\lambda_m c}{2\hbar}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
 $$
 
 the $\vec p^4$ term being the first relativistic correction to the kinetic energy. The closed form was checked numerically: with $\tan\theta=|\vec p|/(mc)$ and $U=\cos(\theta/2)+A\sin(\theta/2)$, the identity $UHU^\dagger=\beta E$ holds to machine precision, at the $10^{-15}$ level for a generic three-momentum and every value of $|\vec p|/(mc)$ tested.
@@ -352,7 +352,7 @@ $$
 
 $C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_k\vec e_ku_k$, so the even part of the chirality reads $i\sin\theta\sum_k\vec e_ku_k$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
 
-**The generator is frame-odd.** The FW generator $S_1=-\frac{i}{2mc^2}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
+**The generator is frame-odd.** The FW generator $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
 
 $$
 U\beta U^{\dagger}=\beta\exp(-2iS_1).
@@ -378,15 +378,15 @@ O^2=c^2\bigl(\vec\pi^2-ϙ\hbar\,i\vec B\bigr),
 \vec B=\sum_lB_l\vec e_l .
 $$
 
-The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ\hbar}{2m}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
+The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ c\lambda_m}{2}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
 
 $$
 \boxed{\;
 \begin{aligned}
 H_{\mathrm{Pauli}}
-&=\frac{\vec\pi^2}{2m}+ϙA_0-\frac{ϙ\hbar}{2m}\,i\vec B\\[2pt]
-&\quad-\frac{ϙ\hbar}{4m^2c^2}\,i(\vec E\times\vec\pi)
-+\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0),
+&=\frac{\vec\pi^2\lambda_m c}{2\hbar}+ϙA_0-\frac{ϙ c\lambda_m}{2}\,i\vec B\\[2pt]
+&\quad-\frac{ϙ\lambda_m^2}{4\hbar}\,i(\vec E\times\vec\pi)
++\frac{\lambda_m^2}{8}\nabla^2(ϙA_0),
 \end{aligned}
 \;}
 $$
@@ -394,7 +394,7 @@ $$
 whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-ϙ\hbar\,i\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-ϙ\hbar\,i\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\nabla A_0$, the Darwin term has the equivalent forms
 
 $$
-\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0)=-\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E .
+\frac{\lambda_m^2}{8}\nabla^2(ϙA_0)=-\frac{ϙ\lambda_m^2}{8}\nabla\cdot\vec E .
 $$
 
 The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, and none exchanges the two frequency parts — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
@@ -425,9 +425,9 @@ $$
 and $O$ odd under conjugation by the mass grading $\beta F=iF\vec e_x$, the leading generator is
 
 $$
-S_1=-\frac{i}{2mc^2}\beta O,
+S_1=-\frac{i\lambda_m}{2\hbar c}\beta O,
 \qquad
-S_1F=\frac{1}{2mc}\sum_k\vec e_k\pi_kF\vec e_y,
+S_1F=\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y,
 $$
 
 and the transformed Hamiltonian through order $v^2/c^2$ is
@@ -479,9 +479,9 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathcal{E}=ϙA_0$ | Even part; left multiplication by the scalar $ϙA_0$ |
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $U = \exp(iS)$ | Foldy–Wouthuysen $*$-unitary |
-| $S_1=-\frac{i}{2mc^2}\beta O$ | Leading FW generator; its action is $\frac{1}{2mc}\sum_k\vec e_k\pi_kF\vec e_y$ |
+| $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ | Leading FW generator; its action is $\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y$ |
 | $O_1 = i[S_1,\mathcal{E}]$ | Odd remainder after the first step |
-| $S_2 = -\frac{i}{2mc^2}\beta O_1$ | Second generator; odd, like every generator |
+| $S_2 = -\frac{i\lambda_m}{2\hbar c}\beta O_1$ | Second generator; odd, like every generator |
 | $H_2 = UHU^\dagger - i\hbar U\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |

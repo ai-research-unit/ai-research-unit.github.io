@@ -54,8 +54,10 @@ This is the standard result, and it is standard in a second sense: $S_z$ is an o
 For a beam of speed $v$ crossing a field region of length $L$, the atom spends a time $r'_t = L/v$ in the field, and the transverse displacement is
 
 $$
-\Delta z = \frac{1}{2}\,a\,{r'_{t}}^2 = \frac{F_z}{2m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
+\Delta z = \frac{1}{2}\,a\,{r'_{t}}^2 = \frac{F_z\lambda_m c}{2\hbar}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 With $S_z = \pm\hbar/2$ the two displacements are
 

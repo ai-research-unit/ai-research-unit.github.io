@@ -101,7 +101,7 @@ so the conjugate member of the pair is the same operator read on the other side.
 | --- | --- | --- |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | left by $\tilde\nabla$ | left |
 | $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}$ | left by the conjugate | left |
-| $m\tilde{Ξ}_{\mathrm{sp}}$ | central scalar | both, hence no side |
+| $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ | central scalar | both, hence no side |
 
 ## The Eight Objects the Physics Does Not Need
 

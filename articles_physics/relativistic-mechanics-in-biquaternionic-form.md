@@ -192,13 +192,13 @@ The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \frac{m^2 c^2}{\hbar^2}\right)\tilde{Ξ} = 0.
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2}\right)\tilde{Ξ} = 0.
 $$
 
 Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
 
 $$
-\Box\tilde{Ξ} = \frac{m^2 c^2}{\hbar^2}\tilde{Ξ},
+\Box\tilde{Ξ} = \lambda_m^{-2}\tilde{Ξ},
 $$
 
 which is the standard Klein–Gordon equation $(\Box-\lambda_m^{-2} c^2/\hbar^2)\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
@@ -217,7 +217,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 

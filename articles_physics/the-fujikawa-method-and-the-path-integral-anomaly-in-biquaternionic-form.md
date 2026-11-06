@@ -141,8 +141,8 @@ $$
 $$
 because the derivative of the rotation at $\alpha=0$ puts $\omega$ on the right of each of the four components of $\tilde\nabla\alpha$. The pseudoscalar therefore stands on the right of the field, exactly where the chirality belongs, and the contraction is the explicit sum $\langle\tilde\nabla\alpha,\tilde J_5\rangle_{\natural}=\sum_\mu(\partial\alpha/\partial R_\mu)J_{5\mu}$, per the corpus's rule that a contraction names its index. Under the *global* rotation the term is absent, which is the classical statement. A mass term is not invariant,
 $$
-\tilde{Ξ}_{\mathrm{sp},2}^{\dagger}\,m\,\tilde{Ξ}_{\mathrm{sp},2}=m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\,e^{2\alpha\omega}
-=m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ}_{\mathrm{sp}},
+\tilde{Ξ}_{\mathrm{sp},2}^{\dagger}\,\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},2}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\,e^{2\alpha\omega}
+=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\bigl(\cos2\alpha\,\mathbb 1+\sin2\alpha\,\omega\bigr)\tilde{Ξ}_{\mathrm{sp}},
 $$
 which is the classical explicit breaking of the axial symmetry, and the doubling of the angle is the identity $e^{2\alpha\omega}=\cos2\alpha+\sin2\alpha\,\omega$. In the framework's language the rotation is exactly the axial symmetry of the linear chiral pair: the central phase passes through the mass term and this one does not.
 

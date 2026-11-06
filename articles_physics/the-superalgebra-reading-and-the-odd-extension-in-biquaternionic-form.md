@@ -329,7 +329,7 @@ $$
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
 
 $$
-\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-m\,i\,\overline{F}\,\vec e_z=0,
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-\lambda_m^{-1}\,i\,\overline{F}\,\vec e_z=0,
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$
@@ -393,7 +393,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame cell |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
-| $(i\partial/\partial r'_t+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
+| $(i\partial/\partial r'_t+D_3)F-\lambda_m^{-1}i\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 
 ## Further Reading
 - Manfred Scheunert, *The Theory of Lie Superalgebras*, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded bracket, the super-Jacobi identity and the structure theory.

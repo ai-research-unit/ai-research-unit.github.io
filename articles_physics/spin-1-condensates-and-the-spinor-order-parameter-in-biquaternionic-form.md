@@ -49,16 +49,18 @@ that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; t
 For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,
 
 $$
-\boxed{\;\mathcal{E}=\frac{\hbar^2}{2m}\lvert\nabla\tilde{Ξ}_{\mathrm{sp}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
+\boxed{\;\mathcal{E}=\frac{\hbar c\lambda_m}{2}\lvert\nabla\tilde{Ξ}_{\mathrm{sp}}\rvert^2+Vn+\frac{c_0}{2}n^2+\frac{c_2}{2}n^2\,\lvert\langle\vec F\rangle\rvert^2
 +p\,\langle F_z\rangle+q\,\langle F_z^2\rangle\;},
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 with the spin-independent and spin-dependent contact couplings
 
 $$
-c_0=\frac{4\pi\hbar^2}{3m}\left(2a_2+a_0\right),
+c_0=\frac{4\pi\hbar c\lambda_m}{3}\left(2a_2+a_0\right),
 \qquad
-c_2=\frac{4\pi\hbar^2}{3m}\left(a_2-a_0\right),
+c_2=\frac{4\pi\hbar c\lambda_m}{3}\left(a_2-a_0\right),
 $$
 
 built from the two-body scattering lengths $a_0$ and $a_2$ in the total-spin-zero and total-spin-two channels, and with the linear and quadratic Zeeman terms $p\propto B$ and $q\propto B^2$. This energy is the standard mean-field functional of the spin-one condensate, and the following consequences of it are likewise standard.

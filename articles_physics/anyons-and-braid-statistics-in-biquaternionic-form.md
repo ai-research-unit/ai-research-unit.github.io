@@ -69,7 +69,7 @@ $$
 \exp(i\oint A) = \exp(ieΞ/\hbar) ,
 $$
 
-the phase of a full loop. An **exchange** of two identical composites is half of a full loop — the two worldlines are swapped, which carries each charge halfway around the other's flux, and the double exchange is the full loop — so that the exchange phase is the square root,
+the phase of a full loop. The potential is written with the coupling absorbed, so that $\oint A$ is the enclosed flux in units of the flux quantum and every exponent in this article is a pure number; the factor $\frac{e}{\hbar}$ returns by multiplying it, and the Chern–Simons level $k$ carries the coupling where the action is written. An **exchange** of two identical composites is half of a full loop — the two worldlines are swapped, which carries each charge halfway around the other's flux, and the double exchange is the full loop — so that the exchange phase is the square root,
 
 $$
 \boxed{\;\exp(i\theta) = \exp(ieΞ/2\hbar) ,

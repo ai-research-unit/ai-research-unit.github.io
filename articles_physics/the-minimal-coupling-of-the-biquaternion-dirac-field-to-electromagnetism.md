@@ -168,7 +168,7 @@ is covariant for the reason computed in the next section: $\lambda$ is central, 
 **The two-sided form.** The parent also carries Kravchenko's equation, a single equation on a general element $F$ in which the derivative acts on the left and the mass term on the right (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*), with $\vec u$ the declared unit of the frame:
 
 $$
-\mathcal{N}F = -\tilde{\nabla}^{\natural}F - m\,i\,\overline{F}\,\vec u = 0 ,
+\mathcal{N}F = -\tilde{\nabla}^{\natural}F - \lambda_m^{-1}\,i\,\overline{F}\,\vec u = 0 ,
 $$
 
 the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a conjugation, the central $i$ and a right multiplication by $\vec u$, and it is not a scalar multiple of the field.
@@ -178,7 +178,7 @@ the bar being the complex conjugation of the coefficients and not the real struc
 $$
 -\tilde{\nabla}^{\natural}\left(\lambda F\right) = \lambda\left(-\tilde{\nabla}^{\natural}F\right),
 \qquad
--m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-m\,i\,\overline{F}\,\vec u\right),
+-\lambda_m^{-1}\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-\lambda_m^{-1}\,i\,\overline{F}\,\vec u\right),
 $$
 
 and $\bar\lambda\ne\lambda$ for a non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**: its symmetry group is the real rescalings $F\mapsto rF$, $r\in\mathbb{R}^{\times}$. There is no phase to localize, so the minimal-coupling prescription cannot be transferred to it by replacing the gradient with the covariant derivative; coupling that form would be a different construction, which this article does not attempt.
@@ -275,7 +275,7 @@ $$
 and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
 
 $$
-m\tilde{Ξ}_{\mathrm{sp},L,2} = m\,\lambda\,\tilde{Ξ}_{\mathrm{sp},L} .
+\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L,2} = \lambda_m^{-1}\lambda\,\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two sides transform identically, because the central phase is a scalar and the mass is one. The same holds for the second equation, and with the **same** $\lambda$ rather than its conjugate: the factor is $\lambda$ for either member. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.

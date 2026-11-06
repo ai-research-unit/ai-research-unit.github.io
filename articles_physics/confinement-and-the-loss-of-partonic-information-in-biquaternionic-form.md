@@ -21,7 +21,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\rig
 W(C) = \mathrm{Tr}\,U(C),
 $$
 
-with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The state of the informational sector is the corpus's $\tilde{Ϛ}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
+with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The units are the series' natural units $\hbar=c=1$ and the transported charge is set to $ϙ=1$, so that this exponent is a pure number; the factors $\frac{ϙ}{\hbar}$ return by multiplying it. The state of the informational sector is the corpus's $\tilde{Ϛ}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
 
 The derivative of this article is the corpus's gradient $\tilde\nabla$, with its quaternion conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
@@ -285,7 +285,7 @@ one equation per chirality; the second is the conjugate of the first, and the su
 **The two-sided form.** The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries the source's four-component field $Ξ$ to a biquaternion-valued function $F=A[Ξ]$, under which the Dirac equation becomes the single equation
 
 $$
-\mathcal NF=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
+\mathcal NF=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0,
 \qquad
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$
@@ -293,7 +293,7 @@ $$
 Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads
 
 $$
-\mathcal NF=-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0 .
+\mathcal NF=-\tilde\nabla^\natural F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0 .
 $$
 
 The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=\mu\tilde{Ξ}_{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
@@ -327,7 +327,7 @@ $$
 A(iΞ) = -A(Ξ)\,\vec e_z ,
 $$
 
-that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
+that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-\lambda_m^{-1}i\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
 
 **Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
 
@@ -491,7 +491,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_k\vec e_k\partial/\partial R_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
-| $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
+| $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
 | $R=D_3-\partial M_{\vec e_x}/\partial r'_t-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$; $u^{\pm}$ are the two halves of the change of variables |
 | $\vec q$ | Position in the bag domain |

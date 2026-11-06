@@ -82,7 +82,7 @@ $$
 
 and the same holds for $\tilde{Ξ}_{\mathrm{sp},L}$: each entry obeys the Klein–Gordon equation, and the completion of one entry is the other,
 $$
-\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\qquad\tilde{Ξ}_{\mathrm{sp},R}=\frac{1}{m}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde{Ξ}_{\mathrm{sp},L}=\frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\qquad\tilde{Ξ}_{\mathrm{sp},R}=\frac{\lambda_m c}{\hbar}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 **The pair operator.** The two members are one operator on the pair, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathbb{D}^2=\Box I$ because the two compositions $\tilde\nabla\tilde\nabla^{\natural}$ and $\tilde\nabla^{\natural}\tilde\nabla$ are both the same scalar. The massive equation is $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$, and its two components are the pair. Nothing else is meant by a two-sided operator in this article: the operator is the pair written once, it contains no matrix generator, and its carrier is the pair $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$.
@@ -191,8 +191,8 @@ Two remarks on conventions. First, an overall scalar multiplying both entries is
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
 \tilde{Ξ}_{\mathrm{sp},R}=\xi\,e^{-ip\cdot x}+\xi_2\,e^{+ip\cdot x},\qquad
-\tilde{Ξ}_{\mathrm{sp},L}=\frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}
-=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot x}+\tilde K_+\xi_2\,e^{+ip\cdot x}\bigr),
+\tilde{Ξ}_{\mathrm{sp},L}=\frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}
+=\frac{\lambda_m c}{\hbar}\bigl(\tilde K\xi\,e^{-ip\cdot x}+\tilde K_+\xi_2\,e^{+ip\cdot x}\bigr),
 $$
 
 with

@@ -70,7 +70,7 @@ $$
 whose two members carry the two chiral halves. The reduction is a two-line computation. Apply $\tilde{\nabla}^{\natural}$ to the first member:
 
 $$
-\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \tilde{\nabla}^{\natural}\!\left(\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}\right) = m\,\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \tilde{\nabla}^{\natural}\!\left(\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}\right) = \lambda_m^{-1}\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$ is central,
@@ -126,7 +126,7 @@ The mass is a **central scalar** too: $m$ commutes with $\Box$ and with the chir
 $$
 \tilde{\nabla}^{\natural}\!\left(\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}\right) = \tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \Box\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad
-m\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} ,
+\lambda_m^{-1}\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 and the equality of the two expressions is the equation $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. Nothing in this step needs an array, a basis or a frame: it is the quaternion identity $\tilde\nabla\tilde\nabla^{\natural} = \Box$ applied to the pair.
@@ -180,7 +180,7 @@ $$
 
 the two mass-gradient terms cancelling because the mass passes through the gradients.
 
-Equivalently, the pair is the statement that the pair operator takes $\tilde{Ξ}_{\mathrm{sp}}$ to $m\tilde{Ξ}_{\mathrm{sp}}$,
+Equivalently, the pair is the statement that the pair operator takes $\tilde{Ξ}_{\mathrm{sp}}$ to $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$,
 
 $$
 \mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}} ,
@@ -275,7 +275,7 @@ The kernel of the square is larger than the kernel of the pair, and the differen
 
 The first-order equation selects **half** of that space, and its solution is fixed by one half alone. Given $\tilde{Ξ}_{\mathrm{sp},R}$, the first member defines $\tilde{Ξ}_{\mathrm{sp},L} = m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, and the second member then holds exactly when $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. On the mass shell at fixed $\vec p$, $\tilde{Ξ}_{\mathrm{sp},R}$ is an arbitrary element of $\mathbb{B}$ at each frequency sign — four complex coefficients at $\exp(-i(Er'_t-\vec p\cdot\vec r))$ and four at $\exp(+i(Er'_t-\vec p\cdot\vec r))$ — so the pair's solution space is eight-dimensional, half of the sixteen. Each of the eight modes is annihilated by $\Box - \lambda_m^{-2}$, because that operator acts on each coefficient separately and the plane wave is its eigenfunction, but the converse fails: a general second-order solution of the pair is a combination of **sixteen** independent modes with arbitrary coefficients, and the two members cut that space down to eight by relating the halves at each frequency. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
-The same count can be read off the algebra. The square is $\Box - \lambda_m^{-2}$ acting in each half separately, and it annihilates each half independently; the first-order pair is the same operator with the two gradients exchanged between the halves and set equal to $m\tilde{Ξ}_{\mathrm{sp}}$, which locks the two halves together. The square forgets the lock, and the lost information is exactly the relation that the lock imposes.
+The same count can be read off the algebra. The square is $\Box - \lambda_m^{-2}$ acting in each half separately, and it annihilates each half independently; the first-order pair is the same operator with the two gradients exchanged between the halves and set equal to $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, which locks the two halves together. The square forgets the lock, and the lost information is exactly the relation that the lock imposes.
 
 ## The Massless Square and the Chiral Split
 
@@ -308,10 +308,10 @@ In the algebra the only identities used are $\tilde\nabla\tilde\nabla^\natural =
 *The Kernel and the Solution Space* measured what the square loses. The mirror question is what the **split** loses, and its answer is stronger: the second chiral half is a derivative of the first, and not independent data. Read the first member of the pair as a definition,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L} := \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde{Ξ}_{\mathrm{sp},L} := \frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-and substitute it into the second member. The left-hand side becomes $\frac{1}{m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, which is $\frac{1}{m}\Box\tilde{Ξ}_{\mathrm{sp},R}$ because the product of the conjugate pair is the central scalar, so the second member reads
+and substitute it into the second member. The left-hand side becomes $\frac{\lambda_m c}{\hbar}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$, which is $\frac{\lambda_m c}{\hbar}\Box\tilde{Ξ}_{\mathrm{sp},R}$ because the product of the conjugate pair is the central scalar, so the second member reads
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} .
@@ -324,14 +324,14 @@ $$
 &(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \\
 &\quad\Longleftrightarrow\quad
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
-\qquad \tilde{Ξ}_{\mathrm{sp},L} = \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} .
+\qquad \tilde{Ξ}_{\mathrm{sp},L} = \frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} .
 \end{aligned}
 $$
 
 Read left to right, a Klein–Gordon field generates a Dirac field. Read right to left, the first half of any Dirac field obeys Klein–Gordon. The map
 
 $$
-\tilde{Ξ}_{\mathrm{sp},R} \longmapsto \left(\tilde{Ξ}_{\mathrm{sp},R},\ \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\right)
+\tilde{Ξ}_{\mathrm{sp},R} \longmapsto \left(\tilde{Ξ}_{\mathrm{sp},R},\ \frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\right)
 $$
 
 is $\mathbb{C}$-linear and injective and is onto the solution space of the pair, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of **one chiral half**: the same data, described twice. The second member is not a second equation: it is what the definition of the second half turns into once the first half is on shell.
@@ -341,7 +341,7 @@ The device is older than this algebra. The second-order form of the Dirac equati
 Nothing in the display is a property of plane waves; the only identity used is $\tilde\nabla^{\natural}\tilde\nabla = \Box$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and **off** the mass shell the same substitution leaves exactly
 
 $$
-\frac{1}{m}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} = \frac{1}{m}\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
+\frac{\lambda_m c}{\hbar}\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} - \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} = \frac{\lambda_m c}{\hbar}\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the second member's defect, so the mass shell is the exact condition and not an approximation.
@@ -369,7 +369,7 @@ $$
 It solves the equation because $\Delta\left(e^{-mr}/r\right) = m^2e^{-mr}/r$ away from the origin, which was checked symbolically. The definition gives the second half in closed form:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L} = \frac{1}{m}\vec\nabla\frac{e^{-mr}}{r}
+\tilde{Ξ}_{\mathrm{sp},L} = \frac{\lambda_m c}{\hbar}\vec\nabla\frac{e^{-mr}}{r}
 = -\frac{(1+mr)\,e^{-mr}}{m r^3}\,\vec r ,
 \qquad
 \vec r = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z ,
@@ -408,7 +408,7 @@ The square root is not scalar. The companion article on the Klein–Gordon equat
 
 The square carries the mass shell $\tilde P\tilde P^{\natural} = -\lambda_m^{-2}$, hence $E^2 = \vec p^2c^2 + m^2c^4$, and the mass-squared coefficient of the second-order operator; it does not carry the sign of the mass, the chirality of each half, or the relation between the halves that selects the first-order solution space from the larger second-order one. At fixed three-momentum the pair's second-order space has complex dimension sixteen and the first-order equation selects eight of them, so the square is a necessary and not a sufficient condition. The Klein–Gordon operator is the bosonic shadow of a first-order object that exchanges the two halves.
 
-The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} = \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
+The converse holds exactly for the free pair. Read the first member as a definition, $\tilde{Ξ}_{\mathrm{sp},L} = \frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$; the second member then becomes $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of one chiral half, and the second half is the gradient of the first. In this two-term form there is no gauge freedom, because the only shift the gradient annihilates is the massless Weyl field, which takes the potential off the mass shell; the source's four-scalar form of the same construction does carry the residual gauge $\xi_{\mathrm{scl}}\mapsto\xi_{\mathrm{scl}}+\kappa$ with $D^*\kappa = 0$, and that is what earns the phrase *the Dirac field is a gauge field*. The correspondence is exact for the free field and stops at minimal coupling, where the commutator of the two generalized gradients is the field strength. Its smallest illustration is the static Yukawa pair, generator $e^{-mr}/r$ and second half $-(1+mr)e^{-mr}\vec r/(m r^3)$, on which the Dirac density is positive definite and the Klein–Gordon density vanishes.
 
 ## Summary of Notation
 
@@ -430,7 +430,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $\tilde R_\Phi = i c r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural}) = \vec k\cdot\vec r - \omega r'_t$ |
 | $\lambda_m$ | The mass length of the operator pair, $\hbar/(mc)$ (inverse reduced Compton wavelength) |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided pair; linear, with the mass the same scalar in each half |
-| $\tilde{Ξ}_{\mathrm{sp},L} = \frac{1}{m}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
+| $\tilde{Ξ}_{\mathrm{sp},L} = \frac{\lambda_m c}{\hbar}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$ | The second half as the gradient of the first; the pair's equivalent form, exact whenever $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},R} = 0$ |
 | $\langle\tilde{Ξ}_{\mathrm{sp}}\rangle_{*} = \sum_\mu\lvert\tilde{Ξ}_{\mathrm{sp},\mu}\rvert^2$ | Hermitian norm of a field, positive definite; the Dirac density of the pair |
 | $\tilde{Ξ}_{\mathrm{sp}} = (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ | The chiral pair as an ordered pair of elements |
 | $E^2 = \vec p^2c^2 + m^2c^4$ | Dispersion relation |

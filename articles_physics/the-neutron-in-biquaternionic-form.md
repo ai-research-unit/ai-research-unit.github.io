@@ -64,14 +64,14 @@ The companion article separates two objects that both carry the name *Dirac equa
 **The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, in the corpus's units $c=1$,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-m_n\,i\,\bar{F}\,\vec e_z=0,
+\Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-\lambda_{m_n}^{-1}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-m_n i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-\lambda_{m_n}^{-1} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_{m_n}^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_{m_n}^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-m_n i\,\bar F\,\vec e_z$ |
+| Equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_{m_n}^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_{m_n}^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-\lambda_{m_n}^{-1} i\,\bar F\,\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
 | Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
@@ -278,7 +278,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
 | $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}_{\mathrm{sp}} b$ | Covariant derivative of the chiral charge; the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}} b$ |
 | $\tilde{Ξ}_{\mathrm{sp}} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
-| $(i\partial/\partial r'_t+\nabla)F-m_n i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
+| $(i\partial/\partial r'_t+\nabla)F-\lambda_{m_n}^{-1} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |

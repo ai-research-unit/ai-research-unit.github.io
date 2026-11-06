@@ -15,7 +15,7 @@ The article is organized as follows. The holonomy is defined for the abelian and
 
 ## The Holonomy of the Connection
 
-Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$.
+Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$. Natural units $\hbar=c=1$ are used and the transported charge is set to $ϙ=1$, so that the exponential of a loop integral is a phase and every exponent below is a pure number; the factors $\frac{ϙ}{\hbar}$ return by multiplying each exponent.
 
 ### The Abelian Wilson Loop
 

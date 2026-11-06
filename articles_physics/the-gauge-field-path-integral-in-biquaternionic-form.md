@@ -26,7 +26,7 @@ S[\tilde{A}] = \int d^4r\left(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 = -\tfrac12\int d^4r\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
 $$
 
-the second form being the bilinear writing of the companion article. The action depends on $\tilde{A}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
+the second form being the bilinear writing of the companion article. Natural units $\hbar=c=1$ are used throughout and the transported charge is set to $ϙ=1$, so that the action $S[\tilde{A}]$ and the exponent $iS$ are pure numbers; the constants return wherever a dimensional statement is at issue. The action depends on $\tilde{A}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
 
 $$
 \tilde{A}\;\longmapsto\;\tilde{A}^{\Gamma}=\tilde{A}-\tilde{\nabla}\Gamma,

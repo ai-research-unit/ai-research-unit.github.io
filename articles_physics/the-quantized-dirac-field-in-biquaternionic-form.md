@@ -4,6 +4,8 @@
 
 The companion article *Canonical Quantization of the Biquaternion Dirac Field* promotes the classical biquaternion Dirac field to an operator-valued field. It fixes the Lagrangian of the one-sided pair, the conjugate momentum with its second-class constraint, the equal-time anticommutators, the expansion in the parent's plane-wave solutions, the mode algebra, the normal-ordered Hamiltonian and its constant, and the $\mathbb{Z}/2$ grading of the mode algebra. It closes with an explicit list of what is standard and what is open, and it names the present article's subject as one of the open items: the quantized field was handled through a representative rather than as an object in its own right, and the question of what kind of object the operator-valued biquaternion field is was left standing.
 
+**Units.** Natural units $\hbar=c=1$ are used throughout this article: a four-momentum is $(p_0,\vec p)$ with $p_0=E$, the mass shell is $p^2=\vec p^{\,2}+m^2$, and every mass $m$ is an inverse length.
+
 This article takes up that question. It does not repeat the quantization, which is the parent's; it asks what the resulting object *is* in the biquaternion framework, and it develops the four structures that make the operator field more than a rewrite:
 
 - **The field as an operator-valued biquaternion.** The quantized field is a map from spacetime into the tensor product of the fermionic operator algebra and the algebra $\mathbb{B}$. It is an element of $\mathbb{B}$ at every point, multiplied by an operator. The four conjugations of $\mathbb{B}$ lift to operations on the field, three antilinear and one complex-linear, and their action has to be computed together with the operator ordering.
@@ -85,9 +87,9 @@ So the split of a fermion field into a "particle field" and an "antiparticle fie
 Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=m\tilde{Ξ}_{\mathrm{fop},L},
+\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{fop}},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=m\tilde{Ξ}_{\mathrm{fop},R}\;},
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{fop}},R}\;},
 $$
 
 the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathbb{D}-\lambda_m^{-1})$, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
@@ -95,7 +97,7 @@ the one-sided chiral pair, in which both gradients act from the left and the mas
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
 $$
-\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\nabla\bigr)F-\lambda_m^{-1}\,i\,\overline{F}\,\vec e_z=0,
 $$
 
 with $\nabla$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of *The Dirac Equation in Biquaternionic Form* but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.
@@ -378,7 +380,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{D}$ | Pair operator of the operator conventions, that is $\mathbb{D}_{\tilde\nabla}$, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-\lambda_m^{-1})$ on $(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R})$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial R_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p$ | Momentum symbol at $p_0=E_{\vec p}$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$ |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
-| $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
+| $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-\lambda_m^{-1}\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
 | $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$, $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ | The two branches of the biquaternion plane wave (solutions article) |

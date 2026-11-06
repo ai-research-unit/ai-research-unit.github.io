@@ -154,7 +154,7 @@ $$
 $$
 where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_Q$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box$. Both identities are derived forms, read from the multiplication of the units.
 
-**The mass.** The mass term is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{\mathrm{sp},L}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
+**The mass.** The mass term is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{\mathrm{sp},L}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
 
 The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
@@ -236,7 +236,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
 | $\operatorname{tr}(\tilde Q\mapsto a\tilde Q b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}(\tilde Q\mapsto\tilde Q)=4$ |
-| $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
+| $\tilde{Ξ}_{\mathrm{sp}}\mapsto \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 

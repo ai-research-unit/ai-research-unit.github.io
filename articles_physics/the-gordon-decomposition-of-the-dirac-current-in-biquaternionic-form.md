@@ -126,8 +126,8 @@ Let $\tilde{Ξ}_{\mathrm{sp}}$ be a solution of the field equation of §*The Two
 $$
 \boxed{\;
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
+= \frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
 $$
 
 The spin generator $\Sigma_{\mu\nu}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and $\nu$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of *Matrix Representations Conventions*, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\mu\nu}$ is what makes it one.
@@ -162,8 +162,8 @@ $$
 The weight collapses the sum, because $\varepsilon_\nu\varepsilon_\mu\delta_{\mu\nu}$ is $\varepsilon_\mu^2=1$ at $\nu=\mu$ and $0$ otherwise, so only the term $\nu=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\mu\nu}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
 
 $$
-j_\mu=\frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+j_\mu=\frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.
@@ -210,7 +210,7 @@ Equivalently, with the momentum transfer $k_\nu=(p_2-p)_\nu$ and the average mom
 
 $$
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-= \frac{1}{m}\Big(P_\mu\,\bar w_2w
+= \frac{\lambda_m c}{\hbar}\Big(P_\mu\,\bar w_2w
 + i\sum_\nu\varepsilon_\nu\,k_\nu\,\bar w_2\Sigma_{\mu\nu}w\Big).
 $$
 
@@ -426,8 +426,8 @@ The Gordon decomposition splits the on-shell current of the field as
 
 $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i}{2m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{1}{m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+= \frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 into a convection part and the divergence of a spin density, $\Sigma_{\mu\nu}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_\mu$. In momentum space the same statement is

@@ -357,7 +357,7 @@ $$
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
 
 $$
-\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z=0,
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
 $$

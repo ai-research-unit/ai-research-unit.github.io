@@ -212,7 +212,7 @@ $$
 \qquad
 \rho = \frac{i\hbar}{2mc^2}\left(\tilde{Ξ}^{*}\partial/\partial r'_t\tilde{Ξ} - \tilde{Ξ}\,\partial/\partial r'_t\tilde{Ξ}^{*}\right),
 \qquad
-\vec j = -\frac{i\hbar}{2m}\left(\tilde{Ξ}^{*}\nabla\tilde{Ξ} - \tilde{Ξ}\,\nabla\tilde{Ξ}^{*}\right).
+\vec j = -\frac{i c\lambda_m}{2}\left(\tilde{Ξ}^{*}\nabla\tilde{Ξ} - \tilde{Ξ}\,\nabla\tilde{Ξ}^{*}\right).
 $$
 
 The current lies in the material sector, its imaginary scalar component being $ic\rho$ and its vector component $\vec j$, exactly as the four-current of relativistic mechanics does. Conservation takes the framework form
@@ -272,22 +272,22 @@ So the verdict on the framework's own question is the following. The second-orde
 There is a check that the biquaternion Klein–Gordon equation is consistent with the parent article rather than merely alongside it. For the central field, remove the rest energy by the substitution
 
 $$
-\tilde{Ξ} = \exp(-imc^2r'_t/\hbar)\,\tilde{Ξ}_{\mathrm{sp}},
+\tilde{Ξ} = \exp(-icr'_t/\lambda_m)\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-with the exponential central. Substituting into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2ic\lambda_m^{-1}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - c^2\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
+with the exponential central. Substituting into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-icr'_t/\lambda_m)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-icr'_t/\lambda_m)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2ic\lambda_m^{-1}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - c^2\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
 
 $$
-\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \frac{2im}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
+\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \frac{2i}{c\lambda_m}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
 
 in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $\lambda_m/c$, leaves
 
 $$
-i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{\hbar^2}{2m}\Delta\tilde{Ξ}_{\mathrm{sp}},
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{\hbar c\lambda_m}{2}\Delta\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{B}_{\Psi}$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = c\lambda_m^{-1} + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
+the free Schrödinger equation. Its Hamiltonian $-\hbar c\lambda_m\Delta/2$ is a real scalar, hence an element of $\mathbb{B}_{\Psi}$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = c\lambda_m^{-1} + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
 
 One qualification belongs with the limit. The field reduced here is a **scalar**, so the limit lands on the scalar Schrödinger equation, which is the spin-$0$ special case of the parent article's two-component spinor equation, not an identification of the full spinor module. The scalar sector is consistent with the parent, not identical to it.
 

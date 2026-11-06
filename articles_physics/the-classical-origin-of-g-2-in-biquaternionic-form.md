@@ -6,7 +6,9 @@ The companion articles *Larmor Precession and the Classical Magnetic Moment in B
 
 The subject is set up to separate two questions that are easily confused. The first is the *absolute* normalization of the moment, which is fixed by the definition $\vec\mu = \tfrac{1}{2}\int\vec r\times\vec j\,d^3r$ together with the charge and mass of the carrier, and which is the content of the convective theorem below: a rigid rotor whose charge and mass densities are proportional has $\gamma = ϙ/2m$, that is $g = 1$. The second is the *relative* factor between the convective and the intrinsic cases, and it is this factor, equal to two, that the article derives. The derivation is a statement about the representations in which the two couplings of one charged configuration are carried: the electromagnetic coupling is the phase of the central $\mathrm{U}(1)$ and acts with weight one, while the angular momentum couples to the rotation and acts with weight one half on an intrinsic spin and weight one on an orbital vector. The gyromagnetic ratio is the ratio of the two weights, and the ratio is two.
 
-The article is careful about what is derived and what is imported. The value $g=2$ is **fixed as a ratio** by the algebra, and this is what the two companion articles presuppose. The *magnitude* of the moment — one Bohr magneton $\mu_B = e\hbar/2m_e$ for the electron spin — is not fixed by the classical algebra, which has no $\hbar$; it is imported from the quantum normalization. The dynamical derivation of the coefficient $1/2m$ from the relativistic Dirac equation is likewise standard and is cited, not reproduced: it is a result of the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, which obtain $g=2$ by eliminating the small component. The two accounts agree, and they agree because they compute the same double-cover factor: the relativistic one dynamically, the non-relativistic one algebraically.
+The article is careful about what is derived and what is imported. The value $g=2$ is **fixed as a ratio** by the algebra, and this is what the two companion articles presuppose. The *magnitude* of the moment — one Bohr magneton $\mu_B = ec\lambda_{m_e}/2$ for the electron spin — is not fixed by the classical algebra, which has no $\hbar$; it is imported from the quantum normalization. The dynamical derivation of the coefficient $1/2m$ from the relativistic Dirac equation is likewise standard and is cited, not reproduced: it is a result of the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, which obtain $g=2$ by eliminating the small component. The two accounts agree, and they agree because they compute the same double-cover factor: the relativistic one dynamically, the non-relativistic one algebraically.
+
+Here $\lambda_{m_e}=\hbar/(m_ec)$ is the electron mass length.
 
 The conventions are those of the foundational articles and of the two companion articles of this subcategory. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central imaginary $i$. The material sector is the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the informational sector the Hermitian subspace $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{H}$ is the real-quaternion subspace of the rotation rotors. The magnetic moment and the angular momentum are material axial vectors, $\vec\mu = \sum_k \mu_k\vec e_k$ and $\vec S = \sum_k S_k\vec e_k$ in $\mathbb{B}_{H}$; the intrinsic spin observable is the $\mathbb{B}_{\Psi}$ element $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$.
 
@@ -215,11 +217,11 @@ $$
 \tilde{S}_kB_k = \frac{\hbar}{2}\,i\vec B \in \mathbb{B}_{\Psi} ,
 $$
 
-the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{ϙ\hbar}{2m}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (ϙ/m)\vec S$ gives the intrinsic gyromagnetic ratio $ϙ/m$, and the factor two relative to the convective ratio $ϙ/2m$ is the same half-weight of the spin: the field couples to the full vector slot $i\vec e_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}\vec e_k$. The mismatch of the whole against the half is the factor two.
+the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{ϙ c\lambda_m}{2}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (ϙ/m)\vec S$ gives the intrinsic gyromagnetic ratio $ϙ/m$, and the factor two relative to the convective ratio $ϙ/2m$ is the same half-weight of the spin: the field couples to the full vector slot $i\vec e_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}\vec e_k$. The mismatch of the whole against the half is the factor two.
 
 ### Why the Ratio, and Not the Scale
 
-It is worth stating precisely what this argument does and does not fix. It fixes the *ratio* $\mu/S$ and therefore the dimensionless factor $g$, because both quantities are carried by the same algebra and their weights are algebraically determined. It does not fix the *scale* of the moment, because the proportionality constant between the angular momentum and the numerical value of the moment involves $\hbar$ and the mass, and neither is an algebraic quantity. The algebra supplies the factor two, not the Bohr magneton $\mu_B = e\hbar/2m_e$; the scale is the imported quantum normalization. The distinction is the same one that the companion article *The Electron in Biquaternionic Form* draws for the electron: the framework forces the representation content and the tree-level factor $g=2$, and it inserts the mass, the charge, and the unit $\hbar$.
+It is worth stating precisely what this argument does and does not fix. It fixes the *ratio* $\mu/S$ and therefore the dimensionless factor $g$, because both quantities are carried by the same algebra and their weights are algebraically determined. It does not fix the *scale* of the moment, because the proportionality constant between the angular momentum and the numerical value of the moment involves $\hbar$ and the mass, and neither is an algebraic quantity. The algebra supplies the factor two, not the Bohr magneton $\mu_B = ec\lambda_{m_e}/2$; the scale is the imported quantum normalization. The distinction is the same one that the companion article *The Electron in Biquaternionic Form* draws for the electron: the framework forces the representation content and the tree-level factor $g=2$, and it inserts the mass, the charge, and the unit $\hbar$.
 
 ## Consistency Checks
 
@@ -250,10 +252,12 @@ For a pure orbital state, $s=0$ and $s_{\mathrm{tot}}=l$, the fraction vanishes 
 The dynamical derivation of the same number is standard and is the tree-level result of the Dirac equation. Carrying the biquaternion Dirac equation to the non-relativistic regime and eliminating the small component leaves the Pauli equation with the spin term
 
 $$
--\frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B
+-\frac{ϙ c\lambda_m}{2}\,\boldsymbol{\sigma}\cdot\vec B
 \;\longleftrightarrow\;
--\frac{ϙ\hbar}{2m}\,i\vec B \in \mathbb{B}_{\Psi} ,
+-\frac{ϙ c\lambda_m}{2}\,i\vec B \in \mathbb{B}_{\Psi} ,
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 whose comparison with $-\vec\mu\cdot\vec B$ gives $\vec\mu = (ϙ/m)\vec S$ and hence $g=2$. The coefficient $1/2m$ is produced by the elimination and is not inserted. The computation is performed in the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, and it is the standard Dirac result; it is cited here as the standard dynamical account, not rederived.
 
@@ -305,7 +309,7 @@ $$
 \boxed{\;g = 2\; }.
 $$
 
-The factor two is thus the double-cover factor of the biquaternion rotor, an algebraic property of the representation and not a dynamical coincidence; it is present in the non-relativistic, non-quantum algebra, and it is the factor that the companion articles on Larmor precession and on the Einstein–de Haas and Barnett effects presuppose. The same value follows dynamically from the coefficient $1/2m$ produced by eliminating the small component of the relativistic Dirac field, and the two accounts agree because they compute the same double cover. The algebra fixes the ratio and hence $g$; the scale of the moment, one Bohr magneton $\mu_B = e\hbar/2m_e$, is imported from the quantum normalization. The measured anomaly $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction outside the classical account.
+The factor two is thus the double-cover factor of the biquaternion rotor, an algebraic property of the representation and not a dynamical coincidence; it is present in the non-relativistic, non-quantum algebra, and it is the factor that the companion articles on Larmor precession and on the Einstein–de Haas and Barnett effects presuppose. The same value follows dynamically from the coefficient $1/2m$ produced by eliminating the small component of the relativistic Dirac field, and the two accounts agree because they compute the same double cover. The algebra fixes the ratio and hence $g$; the scale of the moment, one Bohr magneton $\mu_B = ec\lambda_{m_e}/2$, is imported from the quantum normalization. The measured anomaly $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction outside the classical account.
 
 ## Summary of Notation
 
@@ -327,7 +331,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $w_{\mathrm{U}(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
 | $\mu/L = (ϙ/2m)\,w_{\mathrm{U}(1)}/w_{\rm rot}$ | Ratio of the two weights |
 | $g_{s_{\mathrm{tot}}}$ | Landé factor of the vector model |
-| $\mu_B = e\hbar/2m_e$ | Bohr magneton |
+| $\mu_B = ec\lambda_{m_e}/2$ | Bohr magneton |
 | $a = (g-2)/2$ | Anomalous magnetic moment |
 
 ## Further Reading

@@ -302,7 +302,7 @@ $$
 
 in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination is the invariant of the axial rotation noted above, because the pair of bilinears rotates as a two-vector, and the second term is the pseudoscalar partner with the unit $\vec e_z$ and no cell. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
 
-**The mean-field mass.** Linearising the interaction about the condensate, $(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}})^{2}\to2\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}+\ldots$, replaces the four-fermion term by a mass term $-m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ with
+**The mean-field mass.** Linearising the interaction about the condensate, $(\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}})^{2}\to2\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}+\ldots$, replaces the four-fermion term by a mass term $-\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ with
 
 $$
 m = -2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle ,
@@ -354,7 +354,7 @@ The fourth row is the coupling that makes $m=0.3$ a solution of the gap equation
 $$
 \tilde{\nabla}^{\natural}\bigl(\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}\bigr)
 =\tilde{\nabla}^{\natural}\bigl(\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}\bigr)
-=m\,\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}
+=\lambda_m^{-1}\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}
 =m\,(\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R})=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 

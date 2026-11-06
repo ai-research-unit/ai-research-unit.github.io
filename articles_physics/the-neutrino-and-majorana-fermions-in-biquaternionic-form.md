@@ -150,7 +150,7 @@ so each value is determined by the conjugate of the other. This is the precise s
 **The equation.** The equation of the field is
 
 $$
-D\,\tilde{Ξ}_{\mathrm{sp}}=m\,\tilde{Ξ}_{\mathrm{sp}}^c,
+D\,\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^c,
 $$
 
 with $D$ the operator of the previous section and $m$ real. Written on the two values it is a pair, one first-order equation for each value, and the mass couples the equation of one value to the other. The companion *The Dirac Equation in Biquaternionic Form* writes the same two values in the frame of the gradient. The two frames differ by where the central $i$ sits, and only the present frame is used below: it is the one in which the conjugation is transparent.
@@ -158,7 +158,7 @@ with $D$ the operator of the previous section and $m$ real. Written on the two v
 **The constraint is propagated.** Apply $\mathcal{C}$ to the equation and use the two properties already checked:
 
 $$
-D\,\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}=\mathcal{C}(D\tilde{Ξ}_{\mathrm{sp}})=m\,\mathcal{C}^{2}\tilde{Ξ}_{\mathrm{sp}}=m\,\tilde{Ξ}_{\mathrm{sp}} .
+D\,\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}=\mathcal{C}(D\tilde{Ξ}_{\mathrm{sp}})=\lambda_m^{-1}\,\mathcal{C}^{2}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 So the conjugate field solves the same equation with the two sides exchanged, and the deviation $\delta=\tilde{Ξ}_{\mathrm{sp}}-\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$ solves
@@ -172,7 +172,7 @@ The equation is first order in the time derivative, so the deviation is fixed by
 **The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box$,
 
 $$
-\Box\,\tilde{Ξ}_{\mathrm{sp}}=D^{2}\tilde{Ξ}_{\mathrm{sp}}=m\,D\,\tilde{Ξ}_{\mathrm{sp}}^c=\lambda_m^{-2}\,\tilde{Ξ}_{\mathrm{sp}} ,
+\Box\,\tilde{Ξ}_{\mathrm{sp}}=D^{2}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}D\,\tilde{Ξ}_{\mathrm{sp}}^c=\lambda_m^{-2}\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
 so a plane wave of the field sits on $p^{2}=m^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
@@ -387,7 +387,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $\mathcal{C}:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^c=\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$ | Charge conjugate; $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ defines Majorana |
 | $\tilde{Ξ}_{\mathrm{sp}}=i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ | Majorana condition; equivalent to $\tilde{Ξ}_{\mathrm{sp},L}=i\overline{\tilde{Ξ}_{\mathrm{sp},R}}$ |
-| $D\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}^c$ | Majorana equation |
+| $D\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^c$ | Majorana equation |
 | $\dim_{\mathbb{R}}\{\tilde{Ξ}_{\mathrm{sp}}:\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}\}=4$ | Majorana component count |
 | $\delta=\tilde{Ξ}_{\mathrm{sp}}-\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$ | Deviation from self-conjugacy; $D\delta=-m\delta$ |
 

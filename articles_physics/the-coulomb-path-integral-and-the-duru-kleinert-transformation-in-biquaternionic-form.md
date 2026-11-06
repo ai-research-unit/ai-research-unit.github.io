@@ -20,10 +20,12 @@ The article proceeds as follows. A section states why the time slicing fails, in
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
-K_\varepsilon(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{3/2}
+K_\varepsilon(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{1}{2\pi i c\lambda_m\varepsilon}\Big)^{3/2}
 \exp\Big[\frac{i}{\hbar}\Big(\frac{m|r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
 $$
 and take the limit $N\to\infty$ of the product with the intermediate positions integrated.
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **The failure.** For $V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\kappa/r$ the potential term is $+\kappa\varepsilon/r$ in the exponent, so for a path that passes within a distance $\lesssim\kappa\varepsilon/\hbar$ of the origin the phase is not small, and the expansion of the potential to first order in $\varepsilon$ — the step that produces the Schrödinger equation in *The Schrödinger Path Integral in Biquaternionic Form* — is not controlled. The Gaussian in the kinetic term has width $\sqrt{\hbar\varepsilon/m}$, so the slices that approach the origin are precisely the ones the kinetic term does not suppress, and the naive limit is not a well-defined kernel. This is the reason the source states that the time-sliced approximation "does not exist" for the Coulomb potential.
 

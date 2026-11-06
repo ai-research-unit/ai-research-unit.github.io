@@ -48,9 +48,11 @@ $$
 with the single-step kernel
 
 $$
-K_\varepsilon(x_{\mathrm f},x)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{1/2}
+K_\varepsilon(x_{\mathrm f},x)=\Big(\frac{1}{2\pi i c\lambda_m\varepsilon}\Big)^{1/2}
 \exp\Big[\frac{i}{\hbar}\Big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 Two structural properties follow directly from this definition and are the ones the biquaternion interpretation has to respect.
 
@@ -155,7 +157,7 @@ For a free particle the sum over paths can be computed exactly, and the result m
 The free kernel is
 
 $$
-\boxed{\;K_0(x_f,r'_{t,f};x_i,r'_{t,i})=\Big(\frac{m}{2\pi i\hbar T}\Big)^{1/2}
+\boxed{\;K_0(x_f,r'_{t,f};x_i,r'_{t,i})=\Big(\frac{1}{2\pi i c\lambda_m T}\Big)^{1/2}
 \exp\!\Big[\frac{i}{\hbar}\frac{m(x_f-x_i)^2}{2T}\Big],\qquad T=r'_{t,f}-r'_{t,i}\;},
 $$
 
@@ -165,7 +167,7 @@ which is the stationary-phase result: the phase is the classical action $S_{\mat
 - the prefactor $(m/2\pi i\hbar T)^{1/2}$ is a function of the central $i$ and is therefore central as well.
 
 The kernel is thus of the form stated above, $K_0=\mathcal{K}_0\,e_t$ with $\mathcal{K}_0\in\mathbb{C}$, and its squared modulus is the classical spreading density,
-$$|K_0|^2=\frac{m}{2\pi\hbar T}.$$
+$$|K_0|^2=\frac{1}{2\pi c\lambda_m T}.$$
 
 **The measure factor.** The appearance of $\sqrt{i}$ in the prefactor is worth a remark. The square root of the central $i$ is central — it is $\pm \exp(i\pi/4)$, one of the two roots of $i$ in the complex line — so the measure factor does not leave the centre. It is two-valued, and the composition property below chooses its branch; the algebra itself does not. This is one instance of the general fact that the algebra supplies the phase and not the normalization.
 
@@ -177,7 +179,7 @@ $$
 
 gives $A+B=\frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{im}{2\hbar(T_1+T_2)}$, so the convolution of $K_0(\cdot,T_2)$ with $K_0(\cdot,T_1)$ is exactly $K_0(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $m=\hbar=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
 
-**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $i\hbar\,\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-i\varepsilon V/\hbar)$, again central.
+**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $i\hbar\,\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{\hbar c\lambda_m}{2}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-i\varepsilon V/\hbar)$, again central.
 
 The distance between this and a genuinely biquaternionic path integral should be stated plainly. The kernel above is a complex scalar times $e_t$; the paths are real-valued trajectories; and the algebra has entered only through the identification of the phase's imaginary unit and the location of its exponent. No element of $\mathbb{B}_{\Psi}$ has been used to *define* the sum, and no non-central element appears at all.
 
@@ -271,7 +273,7 @@ is therefore ambiguous: the two orderings of the numerator differ by a term that
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
-\frac{1}{\varepsilon}\big\langle x_j(x_j-x_{j-1})\big\rangle=\frac{\hbar}{m},
+\frac{1}{\varepsilon}\big\langle x_j(x_j-x_{j-1})\big\rangle=c\lambda_m,
 $$
 so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. This is the statement that the fluctuation of $r_x\,dr_x/dr'_t$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $\exp(iS/\hbar)$ in place of the Euclidean weight, converts that to
 $$

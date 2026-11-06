@@ -49,7 +49,7 @@ in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the p
 On the incident side, $x < 0$, the potential vanishes and the momentum is
 
 $$
-k = \frac{\sqrt{E^2 - m^2c^4}}{\hbar c},
+k = \frac{\sqrt{E^2 - \hbar^2c^2/\lambda_m^2}}{\hbar c},
 $$
 
 which is real for $E > mc^2$. The solution is an incident wave plus a reflected wave,
@@ -63,7 +63,7 @@ $$
 so $0 < \alpha < 1$ for a massive particle, and $\alpha \to 1$ in the massless limit. On the far side, $x > 0$, the potential is $V_0$ and the momentum is
 
 $$
-k_2 = -\frac{\sqrt{(V_0 - E)^2 - m^2c^4}}{\hbar c},
+k_2 = -\frac{\sqrt{(V_0 - E)^2 - \hbar^2c^2/\lambda_m^2}}{\hbar c},
 \qquad
 \tilde{Ξ}_{\mathrm{sp},\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\\ 1/\beta\end{pmatrix},
 \qquad
@@ -129,7 +129,7 @@ $$
 \tilde P\,\lambda_p^{-1} = i\frac{\omega}{c}e_t + \vec e_x k ,
 $$
 
-whose two roots $\omega = \pm\sqrt{k^2c^2 + m^2c^4}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
+whose two roots $\omega = \pm\sqrt{k^2c^2 + \hbar^2c^2/\lambda_m^2}/\hbar$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
 
 $$
 \boxed{\;\omega \;\longmapsto\; \omega - \frac{ϙ\xi}{\hbar} \quad\text{with}\quad \omega - \frac{ϙ\xi}{\hbar} < 0\;}.

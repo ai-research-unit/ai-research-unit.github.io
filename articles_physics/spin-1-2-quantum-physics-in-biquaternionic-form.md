@@ -323,7 +323,7 @@ The biquaternionic Dirac equation contains:
 
 - The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{Ξ}_{\mathrm{sp},L,R}$, which couples the two chiral components of the spinor.
+- The **mass term**: the linear, chirality-off-diagonal mass term $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L,R}$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
 

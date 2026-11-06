@@ -43,7 +43,7 @@ where the bar is the coefficient conjugation of *Algebra and Element Conventions
 **The four equations.** Parra's equation multiplies the field by the derivative on the left and by the spin bivector on the right. Read in this algebra, with $ϙ$ the charge and $A$ the potential,
 
 $$
-\boxed{\;\pm\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega\pmϙA\,\tilde{Ξ}_{\mathrm{sp}}+i\,m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega=0\;}
+\boxed{\;\pm\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega\pmϙA\,\tilde{Ξ}_{\mathrm{sp}}+i\,\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega=0\;}
 $$
 
 the derivative acting on everything to its right, $\omega$ multiplying on the right, and **two independent signs**, one on the derivative term and one on the coupling term. Parra's derivative, written with a frame element in each term, is this gradient: the frame elements of his terms are the units of $\tilde\nabla$, and his imaginary unit $e_{21}$ is $\omega$. The four options are the four combinations of the signs, and the last entry of the table is Parra's identification of each with a "particle".
@@ -61,7 +61,7 @@ The sign of the coupling term distinguishes electron from positron, and the sign
 
 **Proposition (the options are one theory in four sign conventions).** The four equations differ only in the **sign of the derivative term** and the **sign of the coupling term**, each of them $+$ or $-$, while the spin bivector and the mass term are the same in all four. Consequently each option is the Dirac equation of the corpus in its own sign conventions: reading the sign of the derivative as defining the orientation of the frame and the sign of the coupling as the charge convention, the four options become one equation.
 
-*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $i\,m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ and the right factor $\omega$ are common to all four, and the derivative term is the same up to its overall sign.
+*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $i\,\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ and the right factor $\omega$ are common to all four, and the derivative term is the same up to its overall sign.
 
 **The free equation, once.** Set $m=0$ and $A=0$. The right multiplier $\omega$ is invertible, $\omega^{-1}=-\omega$, so the two options whose derivative sign is $+$ hold exactly when $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the two whose derivative sign is $-$ likewise. The four options therefore share one free equation, first order and in one field, and they are distinguished by the relative signs of the two terms and not by the propagation.
 
@@ -84,7 +84,7 @@ of *Operator and Calculus Conventions*, with $\tilde\nabla$ the gradient and $\t
 **The same pair on one field.** Read on one element, the pair is one display whose two sides are the two actions,
 
 $$
-\tilde\nabla^{\natural}\tilde F=i\,m\,\overline{\tilde F}\,\omega ,
+\tilde\nabla^{\natural}\tilde F=i\,\lambda_m^{-1}\overline{\tilde F}\,\omega ,
 $$
 
 with $\overline{\tilde F}$ the coefficient conjugate. The derivative acts on the left and the mass on the right; the mass term carries the conjugation, and it is that conjugation which supplies the second field of the pair. The display is not a second equation.
@@ -194,7 +194,7 @@ Fauser draws a structural conclusion from the four options. The literature of th
 
 3. **The discrete symmetries as a permutation group.** The corpus has each of $P$, $C$, $T$ acting on one field. Does the extension to a group acting on the set of four equations reproduce the corpus's $C$ (the $\flat$ real structure and the right multiplication by a bivector) and its $P$, $T$ (the reflections of the article on reflection and rotation) with the correct permutation, and which of the three maps between the options is the charge conjugation? Two of the three are antilinear, so the question is a sharp one.
 
-4. **The mass term.** The mass term $i\,m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ replaces Parra's right multiplication by the fixed velocity with a conjugation together with a right multiplication by $i\omega$. Is that replacement unique, or is it one of several representatives of the same structure, and does the choice leave the four options' orbit intact?
+4. **The mass term.** The mass term $i\,\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ replaces Parra's right multiplication by the fixed velocity with a conjugation together with a right multiplication by $i\omega$. Is that replacement unique, or is it one of several representatives of the same structure, and does the choice leave the four options' orbit intact?
 
 5. **Spin polarisation and second quantisation.** The four options are four first-quantised equations. Is there a sense in which the four creation and annihilation operator pairs of the second quantised theory — one per type — are the four Fourier components of the option orbit, and does the corpus's path-integral formalism see them?
 

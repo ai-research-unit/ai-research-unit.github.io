@@ -9,7 +9,7 @@ Daviau writes the Dirac equation as one equation for a general element of the bi
 **The equation.** For a general element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$ the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$
 
 with the elements $\mathfrak D$ and $\tilde A$ of §*The Daviau Equation*. The gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right, and the mass term is the complex conjugation of the field.
@@ -126,7 +126,7 @@ with the coefficients $(a,d,b,c,-e,f,-g,h)$ on the units $(e_t,\,i\vec e_x,\,i\v
 **Definition.** With $\tilde{Ξ}_{\mathrm{sp}}$ a general element and $\mathfrak D$, $\tilde A$ the elements below, the equation is
 
 $$
-\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
+\boxed{\;\mathfrak D\,\tilde{Ξ}_{\mathrm{sp}}\,(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\,\tilde A\,\tilde{Ξ}_{\mathrm{sp}}\;}
 $$
 
 with
@@ -168,7 +168,7 @@ in which the gradient multiplies on the left in each line and the mass pairs the
 **The two-sided equation, and the mass direction.** Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with
 
 $$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-mi\,\overline{F}\,\vec e_z,\qquad
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-\lambda_m^{-1}i\,\overline{F}\,\vec e_z,\qquad
 D_3=\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k},
 $$
 
@@ -178,10 +178,10 @@ where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i 
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
+| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, a general element | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | $F\in\mathbb{B}$ |
-| Mass | $m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear | the pairing of the two values | $-mi\overline{F}\vec e_z$ |
+| Mass | $m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear | the pairing of the two values | $-\lambda_m^{-1}i\overline{F}\vec e_z$ |
 | Chirality | the field carries both values; the right factor is a bivector | the two equations are the two values | the right factor is the fixed direction $\vec e_z$ |
 | Role in the corpus | the space formulation | the corpus's formulation | the dictionary and the Cauchy theory |
 
@@ -196,7 +196,7 @@ The other formulation writes the Dirac equation for a field of the algebra of fo
 $$
 \frac{\partial}{\partial R_t}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
 +\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
-=-m\,\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
+=-\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.
@@ -280,7 +280,7 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 | $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ | The star of the source: the corpus's complex conjugation, not ${}^{*}$ |
 | $\mathfrak D=e_t\partial/\partial R_t+i\vec e_y\partial/\partial R_x+i\vec e_z\partial/\partial R_y+i\vec e_x\partial/\partial R_z$ | The cyclically permuted gradient |
 | $\tilde A=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x$ | The potential in the same basis |
-| $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | The Daviau equation |
+| $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A\tilde{Ξ}_{\mathrm{sp}}$ | The Daviau equation |
 | $-\vec e_x$ | The fixed right factor; a bivector, even in both parities |
 | $z$ | The cyclic relabelling of the three space directions, $z^3=\mathrm{id}$ |
 | $\mathbb{B}$ | The biquaternion algebra; the algebra of the formulation |

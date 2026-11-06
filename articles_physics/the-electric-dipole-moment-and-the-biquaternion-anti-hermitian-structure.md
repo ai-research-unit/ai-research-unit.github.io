@@ -275,8 +275,8 @@ The EDM is the pseudotensor bilinear, the tensor times the chirality cell, and t
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1(k^2)
-+ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
-+ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
++ \frac{i\lambda_m c}{2\hbar}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2(k^2)
++ \frac{i\lambda_m c}{2\hbar}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3(k^2) + \cdots ,
 $$
 
 with $F_1$ the charge, $F_2$ the anomalous magnetic moment, and $F_3$ the EDM form factor; the ellipsis denotes the anapole and higher terms. In the nonrelativistic limit, $F_2$ and $F_3$ reduce to the magnetic and electric dipole couplings,
@@ -483,8 +483,8 @@ The form-factor decomposition
 $$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}_{\mathrm{sp}}
 = i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,F_1
-+ \frac{i}{2m}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
-+ \frac{i}{2m}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
++ \frac{i\lambda_m c}{2\hbar}\,k_\nu\,\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_2
++ \frac{i\lambda_m c}{2\hbar}\,k_\nu\,\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\,F_3 + \cdots
 $$
 
 exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-Hermitian members of one dimension-five pair, which the framework places in the informational and material sectors; they are the whole list, the pseudotensor being $i$ times the dual of the tensor. The framework does not supply the coefficient: it has no CP-violating phase, predicts no measurable EDM, and inherits the Standard Model's tiny CKM contribution and the $\theta$-term constraint, $|\theta|\lesssim10^{-10}$ from $|d_n|\lesssim1.8\times10^{-26}\ e\cdot\mathrm{cm}$. The present electron bound $|d_e|\lesssim1.1\times10^{-29}\ e\cdot\mathrm{cm}$, combined with the dimensional estimate $d/e\sim m_e\sin\theta_{\mathrm{pha}}/\Lambda^2$, probes new-physics scales $\Lambda\gtrsim10^{3}$ TeV, and the framework's contribution is to state exactly where in the algebra such a coefficient would sit.

@@ -175,7 +175,7 @@ $$
 $$
 in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The **two-sided** form is the single equation
 $$
--\tilde\nabla^{\natural}F-m\,i\,\overline{F}\,\vec e_z=0 ,
+-\tilde\nabla^{\natural}F-\lambda_m^{-1}\,i\,\overline{F}\,\vec e_z=0 ,
 $$
 in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 

@@ -237,7 +237,7 @@ $$
 $$
 with $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector, so that $(\mathbb{D}-\lambda_m^{-1})(\mathbb{D}+\lambda_m^{-1})=\Box-\lambda_m^{-2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
-The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
+The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$

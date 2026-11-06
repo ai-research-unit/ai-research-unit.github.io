@@ -62,7 +62,7 @@ with $E$ the total energy, the rest energy included, and $p$ the magnitude of th
 **Divide by $(\hbar c)^2$.** Every term is an energy squared, so every term becomes a squared momentum, and each bracket below is an inverse length:
 
 $$
-\frac{E^2}{(\hbar c)^2} = \frac{p^2c^2}{(\hbar c)^2} + \frac{m^2c^4}{(\hbar c)^2},
+\frac{E^2}{(\hbar c)^2} = \frac{p^2c^2}{(\hbar c)^2} + \lambda_m^{-2},
 \qquad\text{that is}\qquad
 \left(\frac{E}{\hbar c}\right)^2 = \left(\frac{p}{\hbar}\right)^2 + \left(\frac{mc}{\hbar}\right)^2 .
 $$
@@ -289,10 +289,10 @@ For the electron $\lambda_C=2.426\ \mathrm{pm}$, and the maximum shift, at backw
 
 ### The Atomic Comparison
 
-**A hydrogen atom is $137$ mass lengths across.** The Bohr radius is $a_0=4\pi\epsilon_0\hbar^2/(m_ee^2)$ and the mass length of the electron is $\hbar/(m_ec)$. Their ratio needs no numerical input:
+**A hydrogen atom is $137$ mass lengths across.** The Bohr radius is $a_0=4\pi\epsilon_0\hbar c\lambda_m/e^2$ and the mass length of the electron is $\hbar/(m_ec)$. Their ratio needs no numerical input:
 
 $$
-\frac{a_0}{\lambda_m} = \frac{4\pi\epsilon_0\hbar^2/(m_ee^2)}{\hbar/(m_ec)} = \frac{4\pi\epsilon_0\hbar c}{e^2} = \frac{1}{\alpha} = 137.036,
+\frac{a_0}{\lambda_m} = \frac{4\pi\epsilon_0\hbar c\lambda_m/e^2}{\lambda_m} = \frac{4\pi\epsilon_0\hbar c}{e^2} = \frac{1}{\alpha} = 137.036,
 $$
 
 with the fine-structure constant $\alpha=e^2/(4\pi\epsilon_0\hbar c)$. The agreement with the directly computed $5.29177\times10^{-11}/3.86159\times10^{-13}=137.036$ is the check.
@@ -568,7 +568,7 @@ The triangle flattens: the hypotenuse falls on the momentum side. The energy len
 **The photon.** The empirical bound on a photon mass is of order $10^{-27}\ \mathrm{eV}/c^2$. With $\hbar c=1.973\times10^{-7}\ \mathrm{eV}\cdot\mathrm{m}$, that bound gives
 
 $$
-\lambda_m = \frac{\hbar c}{m_\gamma c^2} \gtrsim \frac{1.973\times10^{-7}}{10^{-27}}\ \mathrm{m} \approx 2\times10^{20}\ \mathrm{m},
+\lambda_m = \lambda_{m_\gamma} \gtrsim \frac{1.973\times10^{-7}}{10^{-27}}\ \mathrm{m} \approx 2\times10^{20}\ \mathrm{m},
 $$
 
 which is of the order of a galactic scale. A smaller mass gives a longer length, and the Coulomb potential is the massless limit of the Yukawa potential.
@@ -632,7 +632,7 @@ None of the three is the size of the particle: the proton's charge radius exceed
 | $2\omega_C = \frac{2c}{\lambda_m}$ | The trembling angular frequency; its amplitude $\tfrac12\lambda_m$ times it is $c$ |
 | $\lambda_C = \frac{h}{mc} = 2\pi\lambda_m$ | The ordinary Compton wavelength, the shift in Compton scattering |
 | $E_c = \frac{mc^2}{e\lambda_m}$ | The pair-creation field, $1.32\times10^{18}\ \mathrm{V\,m^{-1}}$ for the electron |
-| $a_0 = \frac{4\pi\epsilon_0\hbar^2}{m_ee^2}$ | The Bohr radius, with $a_0/\lambda_m = 1/\alpha$ and $a_0=\lambda_p$ in the ground state |
+| $a_0 = \frac{4\pi\epsilon_0\hbar c\lambda_m}{e^2}$ | The Bohr radius, with $a_0/\lambda_m = 1/\alpha$ and $a_0=\lambda_p$ in the ground state |
 | $\alpha = \frac{e^2}{4\pi\epsilon_0\hbar c}$ | The fine-structure constant, $1/137.036$ |
 | $p_T = \sqrt{2\pi mk_BT}$ | The thermal momentum, whose length sets the degeneracy criterion $n\lambda_p^{3}\sim1$ |
 | $\hbar c = 197.32698\ \mathrm{MeV}\cdot\mathrm{fm}$ | The conversion between an energy and a length |

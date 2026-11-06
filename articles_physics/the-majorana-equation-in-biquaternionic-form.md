@@ -68,9 +68,9 @@ The conjugation is what makes the mass antilinear; the right multiplication is w
 **The letter form.** Read on the two letters, the equation is a pair. The mass of an $L$ part is an $R$ element, and the mass of an $R$ part is an $L$ element, so each member of the pair acts on one letter and carries the conjugate of the other:
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
 $$
 
 The two lines are the equation of the display above, split; nothing is added. Each is an equation for one letter, and each carries the conjugate of the other, which is the precise sense in which the mass couples the letters and not a side of one of them. The mass terms are elements of the opposite letter, and that was checked on elements of each letter: the mass of an $L$ part is an $R$ element and the mass of an $R$ part is an $L$ element, exactly.
@@ -81,7 +81,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 
 ## Why the Mass Sits on the Right
 
-**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $m\tilde{Ξ}_{\mathrm{sp}}$, or a conjugation $mJ(\tilde{Ξ}_{\mathrm{sp}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
+**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, or a conjugation $\lambda_m^{-1}J(\tilde{Ξ}_{\mathrm{sp}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
 
 **The right slot can move it.** A right multiplication by an element takes the letter of its right factor, so a mass term that ends in a right multiplication acts on the two letters with two different factors. The mass term of the display above ends in $\vec e_z$, and the split of §*The Equation and Its Three Forms* is the result: the mass of an $L$ part is an $R$ element.
 
@@ -91,7 +91,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 |---|---|---|
 | $mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z$, the mass from the right | $8$ | $0$ |
 | $m\,\bar{\tilde{Ξ}}_{\mathrm{sp}}$, a bare coefficient conjugation | $0$ | $8$ |
-| $m\,\tilde{Ξ}_{\mathrm{sp}}^*$, the star | $0$ | $4$ |
+| $\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^*$, the star | $0$ | $4$ |
 
 Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the signature of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
 
@@ -150,9 +150,9 @@ and the equation becomes a real linear system for the pair $(\tilde{Ξ}_{\mathrm
 **The system.** Matching the two exponentials gives
 
 $$
-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},0}=mi\,\overline{\tilde{Ξ}_{\mathrm{sp},1}}\,\vec e_z ,
+\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},0}=\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},1}}\,\vec e_z ,
 \qquad
--\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},1}=mi\,\overline{\tilde{Ξ}_{\mathrm{sp},0}}\,\vec e_z ,
+-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},1}=\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},0}}\,\vec e_z ,
 $$
 
 sixteen real equations in the sixteen real parameters of the two amplitudes. The second line is the first with the sign of the amplitude reversed, which is what the two exponentials do to a derivative that is first order; the two lines are one equation and not two. Its nullity is the one tabulated in §*Why the Mass Sits on the Right*.

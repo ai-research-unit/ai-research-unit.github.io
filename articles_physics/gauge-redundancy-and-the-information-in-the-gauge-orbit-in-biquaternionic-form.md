@@ -210,10 +210,10 @@ The orbit is locally trivial — a single point can always be gauged away — bu
 **Local elimination is always possible; global elimination is not.** As shown above, a connection can be gauged to zero at any point. It can be gauged to zero on a neighbourhood precisely when its curvature vanishes there, because a flat connection is locally a gradient. Globally, a flat connection need not be a gradient: its **holonomy** around a non-contractible loop is the obstruction. The holonomy is the path-ordered exponential of the connection around a closed curve,
 
 $$
-\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
+\boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(i\frac{ϙ}{\hbar}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
 $$
 
-and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
+and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. The coupling $\frac{ϙ}{\hbar}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
 
 **The holonomy is the orbit's global invariant.** The orbit of a connection is its gauge group; the holonomy is a functional of the connection that is constant on the orbit and is not a local function of the curvature. It is therefore exactly the part of the orbit's information that survives the local triviality. The framework's ordering of the object is clean:
 
@@ -323,7 +323,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$ | Gauge scalar, pure gauge: $S_2 = S - \Box\Gamma$ |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |
-| $\tilde U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy; global obstruction |
+| $\tilde U(C) = \mathcal{P}\exp(i\frac{ϙ}{\hbar}\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy; global obstruction |
 | $W(C) = \mathrm{Tr}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |

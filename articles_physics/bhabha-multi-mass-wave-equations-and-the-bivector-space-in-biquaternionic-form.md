@@ -233,13 +233,13 @@ $$
 \boxed{\;\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}\;}
 $$
 
-Each member is one left multiplication, by the gradient or by its natural conjugate; one equation per value; the mass is the only term that couples them. At $m_e=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m_e^2\tilde{Ξ}_{\mathrm{sp},R}$, that is
+Each member is one left multiplication, by the gradient or by its natural conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=m_e^2\tilde{Ξ}_{\mathrm{sp},R},
+\Box\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-and the same step on the other member gives $\Box\tilde{Ξ}_{\mathrm{sp},L}=m_e^2\tilde{Ξ}_{\mathrm{sp},L}$: each value obeys the Klein–Gordon equation, both on the same element.
+and the same step on the other member gives $\Box\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},L}$: each value obeys the Klein–Gordon equation, both on the same element.
 
 **Why one equation will not do.** A single gradient does not square to the scalar $\Box$. Its square is a derived form of this section, read from the multiplication of the units,
 
@@ -295,7 +295,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, and the elimination of the pair by which each value obeys $\Box\tilde{Ξ}_{\mathrm{sp}}=m_e^2\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
+- The Dirac limit: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, and the elimination of the pair by which each value obeys $\Box\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**

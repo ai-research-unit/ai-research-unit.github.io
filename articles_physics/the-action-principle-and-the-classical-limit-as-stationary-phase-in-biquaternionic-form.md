@@ -220,8 +220,10 @@ is the energy of a curve in the positive-definite metric that the biquaternion n
 The geodesic interpretation has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
 $$
-H(\tilde q,\tilde p)=\frac{1}{2m}\sum_\mu p_\mu p_\mu=\frac{\langle\tilde p\rangle_{\natural}}{2m},
+H(\tilde q,\tilde p)=\frac{1\lambda_m c}{2\hbar}\sum_\mu p_\mu p_\mu=\frac{\langle\tilde p\rangle_{\natural}\lambda_m c}{2\hbar},
 $$
+
+Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dr'_t=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dr'_t=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
@@ -298,7 +300,7 @@ Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The
 
 ### The Fluctuation Factor and the Classical Hessian
 
-The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and its regularized determinant is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
+The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and the prefactor is the inverse square root of its regularized determinant, taken relative to the free reference and with $\hbar$ restored; that combination is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
 
 For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{r'_{t}}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi r'_t/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
 

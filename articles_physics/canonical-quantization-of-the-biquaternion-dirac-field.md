@@ -44,7 +44,7 @@ one equation per chirality. The single equation $\tilde{\nabla}\tilde{Ξ}_{\math
 Two formulations now carry the name *Dirac equation*, and they must not be read as one. The pair above is the corpus's **one-sided** equation: both gradients act from the left, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation, for a biquaternion field $F$,
 
 $$
-\bigl(i\partial/\partial r'_t+\nabla\bigr)F-m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\nabla\bigr)F-\lambda_m^{-1}\,i\,\overline{F}\,\vec e_z=0,
 $$
 
 with $\nabla=\sum_k\vec e_k\,\partial/\partial R_k$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
@@ -343,8 +343,8 @@ which is the Pauli exclusion principle as an algebraic identity: the square of a
 The conserved energy of the free Dirac field is
 
 $$
-H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_k}\vec e_z+m\,i\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
-=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_k}\vec e_y+m\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
+H=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*\Big(-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_k}\vec e_z+\lambda_m^{-1}i\,\tilde{Ξ}_{\mathrm{fop}}\vec e_x\Big)\Big)
+=\int d^3X\;\mathrm{Sc}\Big(\tilde{Ξ}_{\mathrm{fop}}^*i\Big(\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_k}\vec e_y+\lambda_m^{-1}\tilde{Ξ}_{\mathrm{fop}}\Big)\vec e_x\Big).
 $$
 
 The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial r'_t-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above with the sign reversed, verified at $3.6\times10^{-15}$.

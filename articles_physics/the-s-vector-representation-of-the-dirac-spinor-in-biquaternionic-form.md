@@ -391,7 +391,7 @@ $$
 \bigl(\cos\alpha - i c_5\sin\alpha\bigr)^n = \cos n\alpha - i c_5\sin n\alpha .
 $$
 
-The mass term $m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = -\tfrac{m}{2}(G^*G^* + GG) = +\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
+The mass term $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = -\tfrac{\lambda_m^{-1}}{2}(G^*G^* + GG) = +\tfrac{\lambda_m^{-1}}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
 
 The source identifies $M(\alpha)$ with the image of the field's vector $\mathrm{U}(1)$, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(-ia\Gamma)\tilde{Ξ}_{\mathrm{sp}}$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(ia\Gamma)\tilde{Ξ}_{\mathrm{sp}}$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\tilde{Ξ}_{\mathrm{sp}}$, and the phase sends
 
@@ -409,7 +409,7 @@ $$
 B \mapsto N, \qquad N \mapsto -B, \qquad m \mapsto -m
 $$
 
-leaves the quadratic form $m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = m\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
+leaves the quadratic form $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the part of the first type is *dual* to the part of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
 
 ## What the Construction Does and Does Not Supply
 
