@@ -207,7 +207,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 \qquad
-\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial x_\mu ,
+\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu ,
 $$
 in which the gradient is an element acting by left multiplication on the algebra, and the mass is the off-diagonal pairing, $L$ with $R$. The gradient is primary there and the source's operator is a frame-dependent contraction, as *The Dirac Equation in Biquaternionic Form* states; it is not obtainable by rewriting the gradient.
 

@@ -81,7 +81,7 @@ $$
 \mathcal{D}\tilde{Ξ}^{\mathrm{sp}} = \text{(mass term)},
 $$
 
-where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial x_\mu\tilde{Ξ}^{\mathrm{sp}}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}^{\mathrm{sp}}$ with something constructed from $\tilde{Ξ}^{\mathrm{sp}}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
+where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}^{\mathrm{sp}}$ with something constructed from $\tilde{Ξ}^{\mathrm{sp}}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
 
 So a mass term has the shape
 

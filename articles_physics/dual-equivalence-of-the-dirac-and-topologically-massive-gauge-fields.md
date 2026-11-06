@@ -236,7 +236,7 @@ with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposi
 $$
 \Bigl(-\tilde\nabla^{\natural}-m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
 $$
-with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in units $c=1$ the time part of $-\tilde\nabla^{\natural}$ is $i\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $m\,\Gamma\overline F$, and the equation can be moved to one side:
+with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in units $c=1$ the time part of $-\tilde\nabla^{\natural}$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $m\,\Gamma\overline F$, and the equation can be moved to one side:
 $$
 -m\,i\,\overline F\,\vec e_z=m\,(-i\overline F\,\vec e_z)=m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
