@@ -157,15 +157,15 @@ $$</p>
 <p>$$
 \tilde\nabla^{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\tilde\nabla^{\mathrm{gco}}_\mu,
 \qquad
-\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
+\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$</p>
-<p>with $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ and $\partial/\partial Q_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.</p>
+<p>with $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ and $\partial/\partial R_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial R_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the solutions and the non-relativistic limit.</p>
 <p><strong>The connection is a material-sector object.</strong> The gauge principle article shows that a <strong>real</strong> gauge function $\Gamma$ keeps $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iϙ}{\hbar}\tilde{A}$ in $\tilde\nabla^{\mathrm{gco}}$ is Hermitian:</p>
 <p>$$
 \left(i\tilde{A}\right)^{*} = -i\,\tilde{A}^{*} = i\tilde{A},
 $$</p>
 <p>since $\tilde{A}^{*} = -\tilde{A}$ on $\mathbb{M}_-$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.</p>
-<p><strong>Sign convention.</strong> The gauge principle article fixes the pair of signs $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iϙA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.</p>
+<p><strong>Sign convention.</strong> The gauge principle article fixes the pair of signs $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_\mu \to \partial/\partial R_\mu - iϙA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.</p>
 <p><strong>Left action, and the mirror read through $\natural$.</strong> Every coupling used in this article acts on the left. The mirror construction — derivative and connection both inserted on the right — is not a second prescription: it is the same one applied to the conjugate field. The renaming theorem of <em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>, gives $(\tilde{Ξ}^{\mathrm{sp}}\tilde\nabla^{\mathrm{gco}})^{\natural} = \tilde\nabla^{\mathrm{gco},\natural}\tilde{Ξ}^{\mathrm{sp}\natural}$; the right-action equation on $\tilde{Ξ}^{\mathrm{sp}}$ is the left-action equation on $\tilde{Ξ}^{\mathrm{sp}\natural}$, with the operator $\tilde\nabla^{\mathrm{gco},\natural}$ that the second member of the pair already carries. Nothing needs a right arrow: the side is given by position, and $\natural$ is what changes it.</p>
 <p>Both constructions are gauge covariant, and they must be, being the same construction seen through $\natural$. What is <strong>not</strong> covariant is the mixed combination — the left gradient with the connection inserted on the right — because there the two $\tilde{\nabla}\Gamma$ terms do not cancel: the chain rule brings $\tilde{\nabla}\Gamma$ in from the left and the gauge shift removes it from the right, and the two differ by a commutator. Applying the mixed operator to $\lambda\tilde{Ξ}^{\mathrm{sp}}$ and subtracting $\lambda$ times the mixed operator applied to $\tilde{Ξ}^{\mathrm{sp}}$ leaves</p>
 <p>$$
@@ -278,7 +278,7 @@ $$</p>
 <p>the square of the topological norm, so the scalar part of $\tilde J_{\mathrm{sp}}$ itself is $i\,\|\tilde{Ξ}^{\mathrm{sp}}\|_E^2$ — a positive imaginary number, of the $ic\rho$ form of a positive density with $c\rho = \|\tilde{Ξ}^{\mathrm{sp}}\|_E^2$. By these three tests it is a plausible current.</p>
 <p><strong>It is not conserved.</strong> The divergence of $\tilde J_{\mathrm{sp}}$ in the $i c r'_t$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\mathrm{sp}}$,</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J_{\mathrm{sp}}\right) = \frac{\partial}{\partial Q_t}\mathrm{Sc}\left(\tilde J_{\mathrm{sp}}\right) + \mathrm{div}\,\vec J,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J_{\mathrm{sp}}\right) = \frac{\partial}{\partial R_t}\mathrm{Sc}\left(\tilde J_{\mathrm{sp}}\right) + \mathrm{div}\,\vec J,
 $$</p>
 <p>where $\vec J$ is the vector part of $\tilde J_{\mathrm{sp}}$ — the quantity that would have to vanish on solutions. It does not, and one exact solution is enough to show it. Take</p>
 <p>$$
@@ -304,7 +304,7 @@ $$</p>
 \vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \frac{1}{c^2}\,\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}}
 = \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \xi_g\,\rho_\tilde\nabla^{\mathrm{gco}}\right),
 $$</p>
-<p>where $\vec E_g = -\nabla\xi_g - \partial/\partial t'\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination, and the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included. The identity is recorded as the source states it and is not re-derived here.</p>
+<p>where $\vec E_g = -\nabla\xi_g - \partial/\partial r'_t\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination, and the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included. The identity is recorded as the source states it and is not re-derived here.</p>
 <p><strong>What the identity says.</strong> The left-hand side is a mixed invariant: the cross-contraction $\tfrac12\sum_{\mu,\nu}F_{g,\mu\nu}F_\tilde{\nabla^{\mathrm{gco}}}^{\mu\nu}$ of the two field strengths. Written on the fields it is $\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}}/c^2$, which is $-I_1^{\mathrm{cross}}/c^2$ with $I_1^{\mathrm{cross}} = \vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - c^2\vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}}$ — the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself.</p>
 <p>The right-hand side is the pairing of the boson potential with the matter source. The identity therefore says that once two fields are coupled, their mixed invariant is not free: it is fixed by the source, and fixed by a source built linearly from the potential and the four-current. It is a constraint on the source, not an independent field equation, and it is the shape of answer that Open Question 4 asks for.</p>
 <p>The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \xi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\mu,\nu}F_{\mu\nu}F^{\mu\nu} = -\sum_\nu A_\nu J^\nu$ in the $({+}{-}{-}{-})$ signature, the minus being the signature's; the mixed form above is the general one.</p>
@@ -312,7 +312,7 @@ $$</p>
 <p>Written as a residual, with the source's own residual combinations $r_5,\dots,r_8$ of its fields — the vectors $\vec r_6,\vec r_7$ and the scalars $r_5,r_8$ —</p>
 <p>$$
 \vec B_g\cdot\vec B_\tilde\nabla^{\mathrm{gco}} - \frac{1}{c^2}\vec E_g\cdot\vec E_\tilde\nabla^{\mathrm{gco}} - \mu_0\left(\vec A_g\cdot\vec J_\tilde\nabla^{\mathrm{gco}} - \xi_g\rho_\tilde\nabla^{\mathrm{gco}}\right)
-= \frac{\hbar}{ϙ\,c}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\xi_g}{c^2}\,r_5 - \frac{\hbar}{ϙ\,c}\,\frac{\partial r_8}{\partial t'} ,
+= \frac{\hbar}{ϙ\,c}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\xi_g}{c^2}\,r_5 - \frac{\hbar}{ϙ\,c}\,\frac{\partial r_8}{\partial r'_t} ,
 $$</p>
 <p>the identity holds exactly on the solution set of the four equations and not for arbitrary fields: the right-hand side collects the four residuals, each with the weight its own equation carries, and vanishes when all four are imposed.</p>
 <p><strong>Not adopted.</strong> The same source carries three further claims, and none of them is used here. It reports an inertial mass and a "magnetic mass" as separately conserved; its own continuity equation has a vanishing right-hand side, and the split into two separately vanishing continuity equations is declared — "the continuity equation dictates that it split" — rather than derived, and the source states that no further definition of the magnetic mass is given. It reads the photon as carrying a magnetic charge, quotes the product of a magnetic and an electric charge as Dirac's quantisation rule, and reads that product as an uncertainty relation between two behaviours of one photon; the quantisation condition fixes the product $eg = 2\pi n\hbar c$ of a magnetic and an electric charge, and says nothing about the state of a single photon. And it presents Wilczek's axion electrodynamics as a special case reached by matching the axion derivatives to the potentials, which is a matching and not a derivation. The corpus records the identity above and cites the source for that identity alone.</p>
@@ -404,7 +404,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 <h2 id="summary">Summary</h2>
 <p>The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the gauge principle,</p>
 <p>$$
-\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad \tilde\nabla^{\mathrm{gco}}_\mu = \frac{\partial}{\partial Q_\mu} + \frac{iϙ}{\hbar}A_\mu,
+\tilde\nabla^{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad \tilde\nabla^{\mathrm{gco}}_\mu = \frac{\partial}{\partial R_\mu} + \frac{iϙ}{\hbar}A_\mu,
 $$</p>
 <p>acting by left multiplication on the field. The coupled equation is</p>
 <p>$$
@@ -461,11 +461,11 @@ $$</p>
 <td>Centre of the algebra; source of the abelian gauge group</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$</td>
+<td>$\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$</td>
 <td>Biquaternionic gradient (Dirac operator)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$</td>
+<td>$\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{k=x,y,z}\vec e_k\,\partial/\partial R_k$</td>
 <td>Quaternion-conjugate gradient</td>
 </tr>
 <tr>
@@ -521,8 +521,8 @@ $$</p>
 <td>Its $\natural$-image; the operator of the second member of the pair</td>
 </tr>
 <tr>
-<td>$\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$</td>
-<td>Components; $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$</td>
+<td>Components; $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$</td>
 </tr>
 <tr>
 <td>$\tilde{F}$</td>

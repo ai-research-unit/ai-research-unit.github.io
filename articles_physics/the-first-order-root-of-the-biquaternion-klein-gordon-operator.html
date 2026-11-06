@@ -73,13 +73,13 @@
 <p>The biquaternion Klein–Gordon operator has a first-order root, and it is not a single operator. The root is the gradient, and it factorises the operator only together with its conjugate. The square of the gradient is not scalar: the two orders of a mixed derivative add, because $e_t$ commutes with the three spatial units. A single first-order operator therefore has no scalar square in the algebra, and no single field carries a mass that way. The free equation stays first order in one field, and the mass is carried by the chiral pair.</p>
 <p>Every derivative in this article is the corpus gradient (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). With the units $e_t,\vec e_x,\vec e_y,\vec e_z$ and the coordinates $Q_\mu$,</p>
 <p>$$
-\tilde\nabla=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$</p>
-<p>with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. Three facts are used throughout: $\Box$ is central and scalar, the product of the gradient with its conjugate is $\Box$, and the square of the gradient alone is not scalar. No other letter names the gradient.</p>
+<p>with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. Three facts are used throughout: $\Box$ is central and scalar, the product of the gradient with its conjugate is $\Box$, and the square of the gradient alone is not scalar. No other letter names the gradient.</p>
 <p>The equation is</p>
 <p>$$
 \left(\Box-\mu^2\right)\tilde{Ξ}=0,
@@ -90,7 +90,7 @@ $$</p>
 <p>There are two senses of "first-order root", and the article separates them. A <strong>single square</strong> is one first-order operator whose square is $\Box-\mu^2$. A <strong>factorisation</strong> is a product of two first-order factors whose product is $\Box-\mu^2$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box=\tilde\nabla\tilde\nabla^{\natural}$ and, on the two parts of the field, as $(\mathbb{D}-\mu)(\mathbb{D}+\mu)=(\Box-\mu^2)I$ with $\mathbb{D}$ the pair operator of §<em>The Gradient</em>.</p>
 <p>Three results:</p>
 <ul>
-<li><strong>The root is a pair, not an operator.</strong> The product $\tilde\nabla\tilde\nabla^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\partial^2/\partial t'\,\partial q_k$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.</li>
+<li><strong>The root is a pair, not an operator.</strong> The product $\tilde\nabla\tilde\nabla^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\partial^2/\partial r'_t\,\partial q_k$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.</li>
 <li><strong>The free equation is first order in one field.</strong> $\tilde\nabla\tilde{Ξ}=0$ implies $\Box\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.</li>
 <li><strong>The mass needs the two parts.</strong> A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}^{\mathrm{sp}}=\mu^2\tilde{Ξ}^{\mathrm{sp}}$.</li>
 </ul>
@@ -98,27 +98,27 @@ $$</p>
 <h2 id="the-equation">The Equation</h2>
 <p>$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (<em>Operator and Calculus Conventions</em>). It is read here in the Lorentz coordinates $x_0=c r'_{t}$ and $x_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=x_k$. Derived from that relation, its Lorentz form is</p>
 <p>$$
-\Box=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
+\Box=-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2}+\Delta ,
 $$</p>
-<p>because the substitution turns $\partial^2/\partial Q_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.</p>
+<p>because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.</p>
 <p>Throughout, $c$ is the speed of light in the medium and $\hbar$ the reduced Planck constant. The mass parameter $\mu=mc/\hbar$ must not be confused with the permeability of electromagnetism, which carries the same letter: the letter is overloaded in the corpus.</p>
 <h2 id="the-operator-and-its-symbol">The Operator and Its Symbol</h2>
 <h3 id="the-gradient-is-the-first-order-operator">The gradient is the first-order operator</h3>
 <p>The first-order operator of the series is the gradient, and it is not a root. The reason is visible in its square. Because the partial derivatives commute,</p>
 <p>$$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\,\partial R_k},
 $$</p>
-<p>and on the material sector, where $\partial/\partial Q_t=-(i/c)\partial/\partial t'$, the same operator is</p>
+<p>and on the material sector, where $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, the same operator is</p>
 <p>$$
-\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial t'\,\partial q_k}.
+\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial q_k}.
 $$</p>
-<p>The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial Q_t\partial Q_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.</p>
+<p>The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.</p>
 <p>The product with the conjugate is scalar. Read on the units, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_\mu e_\mu^2=\varepsilon_\mu^2e_t=e_t$ for every $\mu$:</p>
 <p>$$
 \tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
 $$</p>
 <h3 id="the-symbol-and-the-mass-shell">The symbol and the mass shell</h3>
-<p>On a plane wave $e^{i(k_0x_0-\vec k\cdot\vec x)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial Q_t\mapsto k_0$ and $\partial/\partial Q_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
+<p>On a plane wave $e^{i(k_0x_0-\vec k\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_0$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,</p>
 <p>$$
 \tilde K=k_0-i\vec k=k_0-i\sum_k\vec e_k k_k,
 \qquad
@@ -140,16 +140,16 @@ $$</p>
 <p>The objection is immediate. The two factors are not one operator, so perhaps a different first-order operator is one. The algebra answers no, and the answer is short.</p>
 <p>A first-order operator with constant coefficients in the algebra and a constant zero-order term is</p>
 <p>$$
-\sum_\mu a_\mu\frac{\partial}{\partial Q_\mu}+b,
+\sum_\mu a_\mu\frac{\partial}{\partial R_\mu}+b,
 \qquad
 a_\mu,b\in\mathbb{B}.
 $$</p>
-<p>Its square has second-order part $\frac{1}{2}\sum_{\mu,\nu}\left(a_\mu a_\nu+a_\nu a_\mu\right)\partial^2/\partial Q_\mu\partial Q_\nu$, because the derivatives commute and only the symmetric part of the coefficient survives. A scalar square therefore needs</p>
+<p>Its square has second-order part $\frac{1}{2}\sum_{\mu,\nu}\left(a_\mu a_\nu+a_\nu a_\mu\right)\partial^2/\partial R_\mu\partial R_\nu$, because the derivatives commute and only the symmetric part of the coefficient survives. A scalar square therefore needs</p>
 <p>$$
 a_\mu a_\nu+a_\nu a_\mu=2\varepsilon_\mu\delta_{\mu\nu}e_t ,
 $$</p>
 <p>that is, four elements that anticommute pairwise, one of square $+1$ and three of square $-1$. No such quadruple exists in $\mathbb{B}$. The three of square $-1$ form a quaternionic triple; they generate the algebra, and an element that anticommutes with all three is zero (§<em>No element anticommutes with the three spatial units</em>), so no element of square $+1$ is left to be the fourth. The gradient is the instance: its three spatial coefficients are the units, and its fourth coefficient is the identity, which commutes with them.</p>
-<p>The zero-order term does not repair this, because it enters the second-order part not at all. It contributes $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, first order and zeroth order, and the obstruction sits in the second order. So the single square fails for every operator of this form, and the factorisation is the strongest statement the algebra supports.</p>
+<p>The zero-order term does not repair this, because it enters the second-order part not at all. It contributes $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial R_\mu+b^2$, first order and zeroth order, and the obstruction sits in the second order. So the single square fails for every operator of this form, and the factorisation is the strongest statement the algebra supports.</p>
 <p><strong>What the one-sided restriction costs, and what it does not.</strong> The no-go is a statement about coefficients that multiply the field on one side. An earlier form of this argument let them act on the right as well, and with that freedom the obstruction lifts: the fourth coefficient is a right multiplication, its anticommutation with the other three comes from the right factor, and the zero-order term is a multiple of the right multiplication by $\vec e_z$, the pseudoscalar $\omega=-\vec e_z$, which anticommutes with all four and squares to $-\mu^2$. That form has a single square, and the mass it carries is parity-odd, a pseudoscalar mass rather than a scalar.</p>
 <p>The corpus's calculus has one side: every equation is written on the left, and a right multiplication is a left multiplication on the conjugate field (<em>Operator and Calculus Conventions</em>, §<em>The Two Sides and the Renaming Theorem</em>). The single square of that form therefore lies outside the calculus and is not a counterexample to the no-go above. What does not depend on the two-sided form, and what the rest of the article uses, is that the <strong>scalar</strong> mass has no single square and forces the pair.</p>
 <h2 id="the-field-and-the-four-components">The Field and the Four Components</h2>
@@ -166,7 +166,7 @@ $$</p>
 <h3 id="a-single-complex-number-has-no-first-order-equation">A single complex number has no first-order equation</h3>
 <p>A field whose value is one complex number satisfies the second-order equation: $\Box\xi=0$ is one condition on one function. It satisfies no first-order equation of the series. The gradient acting on it returns an algebra element with four coefficients,</p>
 <p>$$
-\tilde\nabla\xi=\sum_\mu e_\mu\frac{\partial\xi}{\partial Q_\mu},
+\tilde\nabla\xi=\sum_\mu e_\mu\frac{\partial\xi}{\partial R_\mu},
 $$</p>
 <p>and setting it to zero imposes four independent complex conditions, one per unit. The field is then constant. A root requires a field with room for the four units, and the algebra supplies exactly four complex dimensions.</p>
 <div class="table-scroll"><table>
@@ -180,7 +180,7 @@ $$</p>
 <tbody>
 <tr>
 <td>One complex number</td>
-<td>$\tilde\nabla\xi=0$, which forces $\partial\xi/\partial Q_\mu=0$</td>
+<td>$\tilde\nabla\xi=0$, which forces $\partial\xi/\partial R_\mu=0$</td>
 <td>no, it has no solution that propagates</td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@ $$</p>
 <p>$$
 \left(\tilde\nabla^{\natural}-\mu\right)\left(\tilde\nabla+\mu\right)
 =\Box+\mu\left(\tilde\nabla^{\natural}-\tilde\nabla\right)-\mu^2
-=\Box-2\mu\sum_k\vec e_k\frac{\partial}{\partial Q_k}-\mu^2 ,
+=\Box-2\mu\sum_k\vec e_k\frac{\partial}{\partial R_k}-\mu^2 ,
 $$</p>
 <p>which is not scalar. The two cross terms do not cancel, because they are different operators. Only the pair removes them, by substituting one member into the other.</p>
 <h3 id="the-pair-operator">The pair operator</h3>

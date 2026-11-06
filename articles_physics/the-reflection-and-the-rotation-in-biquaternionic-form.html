@@ -76,11 +76,11 @@
 <p>The article runs as follows. §<em>One Cell, Two Readings</em> separates the cell read as a point from the cell read as an operator. §<em>The Two Halves by Reflection Count</em> states the split and ties it to the parity of the number of reflections. §<em>The Frame Cell and the Hermitian Sector</em> shows that the sign vector of the cells is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus metric of the series a statement about the objects rather than a choice. §<em>Conjugation by the Frame Cell Is the Bar</em> shows that conjugation by the frame cell is the conjugation of the coefficients. §<em>The Spaces of Rotations and of Reflections</em> and §<em>How Many Reflections?</em> describe the two sets and count the reflections a transformation needs. §<em>The Two Parts and the Reflection</em> draws the consequence for the letter, and §<em>Why Three Generators Cannot Carry the Letter</em> shows that the timelike generator is what makes the letter exist.</p>
 <p>The conventions are the series'. The algebra, the units, the sectors and the metric are those of <em>Algebra and Element Conventions</em> and <em>Frame and Metric Conventions</em>; the cells and their multiplication are those of <em>Matrix Representations Conventions</em>, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A cell enters by its two multipliers, and the short names used later — the frame cell, the chirality cell, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no cell is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a cell,
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},\qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
-with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No cell of this article carries a derivative.</p>
+with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$. No cell of this article carries a derivative.</p>
 <h2 id="one-cell-two-readings">One Cell, Two Readings</h2>
 <p>A cell of a matrix algebra is at once a point and an operator, and the quaternions show the doubling most plainly: a unit quaternion is a point of the three-sphere and it is also the rotation that acts on vectors by conjugation. The same element, read two ways.</p>
 <p><strong>The rotors.</strong> A Lorentz rotor $\tilde U^{\mathrm{lor}}$ of unit norm, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1$, is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and it is an operator on the algebra,
@@ -215,7 +215,7 @@ Both are reflections, with determinant $-1$; the identity component is the even 
 $$
 \eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \eta_P=iR_{\vec e_x}^{\mathrm{axf}},\qquad \eta_T=-L_{\vec e_y}^{\mathrm{axf}} ,
 $$
-acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec x)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-t')$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:</p>
+acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\tilde{Ξ}^{\mathrm{sp}}]=\eta_P\tilde{Ξ}^{\mathrm{sp}}(-\vec r)$ and $T[\tilde{Ξ}^{\mathrm{sp}}]=\eta_T\tilde{Ξ}^{\mathrm{sp}*}(-r'_t)$, with $\tilde{Ξ}^{\mathrm{sp}*}$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -232,7 +232,7 @@ acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\til
 <td>$P$</td>
 <td>$\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$, the frame cell</td>
 <td>odd</td>
-<td>$\vec x$</td>
+<td>$\vec r$</td>
 <td>$-1$</td>
 <td>reflection</td>
 </tr>
@@ -240,7 +240,7 @@ acting as $C[\tilde{Ξ}^{\mathrm{sp}}]=\eta_C\tilde{Ξ}^{\mathrm{sp}*}$, $P[\til
 <td>$T$</td>
 <td>$\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$</td>
 <td>even</td>
-<td>$t'$</td>
+<td>$r'_t$</td>
 <td>$-1$</td>
 <td>reflection</td>
 </tr>
@@ -350,7 +350,7 @@ and the massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$. The pair
 $$
 \mathbb{D}^2\tilde{Ξ}^{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R\bigr)=\Box\,\tilde{Ξ}^{\mathrm{sp}} ,
 $$
-with $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.</p>
+with $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector, so that $(\mathbb{D}-m)(\mathbb{D}+m)=\Box-m^2$ is the Klein–Gordon operator exactly, with no overall sign left to fix.</p>
 <p>The consequence is immediate. Set $\tilde{Ξ}^{\mathrm{sp}}_R=0$ in a massive field: the first member reads $0=m\tilde{Ξ}^{\mathrm{sp}}_L$, so $\tilde{Ξ}^{\mathrm{sp}}_L=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.</p>
 <p>The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -487,7 +487,7 @@ A cell that commutes with the three generators multiplies each of the two irredu
 </tr>
 <tr>
 <td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
-<td>The biquaternion gradient $\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members</td>
+<td>The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, whose subscripts name the two members</td>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>

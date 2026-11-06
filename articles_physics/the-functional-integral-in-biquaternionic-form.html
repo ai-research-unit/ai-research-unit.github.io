@@ -85,7 +85,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the signat
 $$
 S[\tilde{Ξ}] = \int d^4x\; \Big\langle \tilde{Ξ}, K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2_{Q_\mu} .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
 $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K^{\mathrm{kin}}$ is central it preserves each sector, and the sectors are <strong>orthogonal</strong> under the real form,
 $$
@@ -109,7 +109,7 @@ where $\langle\cdot,\cdot\rangle$ is built from $\mathrm{Sc}$ and the determinan
 <p>The article proceeds as follows. The next section distinguishes the functional integral from the path integral. A section fixes the field, its two sectors, and the central-scalar action. Two sections evaluate the Gaussian functional integral and verify it in finite dimension. A section exhibits the sector factorization. A section treats the free scalar field explicitly, a section the Euclidean rotation, and a section the measure and the gap. A section separates what is established from what is interpretation, and the article closes with open questions.</p>
 <h2 id="the-functional-integral-and-the-path-integral">The Functional Integral and the Path Integral</h2>
 <p>The distinction is worth making precisely, because the two share a notation and not a meaning.</p>
-<p>The <strong>path integral</strong> of <em>The Path Integral in Biquaternionic Form</em> has for its integration variable a map $x:t'\mapsto x(t')$ from an interval to space, and its measure $\mathcal{D}x(t')$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,t'_f;x_i,t'_i)$ — a function of two points.</p>
+<p>The <strong>path integral</strong> of <em>The Path Integral in Biquaternionic Form</em> has for its integration variable a map $r_x:r'_t\mapsto r_x(r'_t)$ from an interval to space, and its measure $\mathcal{D}r_x(r'_t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,r'_{t,f};x_i,r'_{t,i})$ — a function of two points.</p>
 <p>The <strong>functional integral</strong> has for its integration variable a field $\tilde{Ξ}:x\mapsto\tilde{Ξ}(x)$, a section of a bundle over spacetime, and its measure $\mathcal{D}\tilde{Ξ}$ is a limit of measures on the field values at finitely many spacetime points. The number of integration variables is finite at every stage too — a lattice regularization makes this explicit — but the limit is over an infinite-dimensional configuration space, and the result is a number $Z$ or a functional $Z[\tilde J]$.</p>
 <p>Two consequences of the distinction matter for the framework. First, the algebra's contribution to the phase — the central scalar imaginary and the location of the $i\epsilon$ along the $i c r'_t$ direction — is inherited unchanged, because the weight of the functional integral is the same $\exp(iS/\hbar)$ with the same central $i$. Second, the algebra's contribution to the <em>action</em> is new, because a field is biquaternion-valued and the action must be a scalar; this is the subject of the next section. The gap of the path-integral article — that the space of paths is outside the finite-dimensional algebra — is inherited and enlarged: the space of field configurations is outside it too.</p>
 <p>There is a third kind of object in Dirac's extension of the construction to fields, and it is the one that plays the role the particle kernel plays rather than the role $Z$ or $Z[\tilde J]$ plays. If $S[\tilde{Ξ}]$ is the integral of the Lagrangian density over a region of spacetime, the quantum analogue of $\exp(iS/\hbar)$ is a <strong>generalized transformation function</strong>: a functional of the field values on the <em>boundary</em> of the region, obeying the same composition law as the kernel — split the region in two, multiply the two functionals, and integrate over the field values on the common boundary. Applied repeatedly, the law connects a region with its infinitesimal sub-regions and contains the quantum analogue of the action principle for fields. Unlike the particle kernel of the companion article, it is not in general a transformation between two sets of dynamical variables, and its probability interpretation is correspondingly restricted: the square of its modulus is a relative a priori probability only when the region is bounded by two separate three-dimensional surfaces, each extending to infinity in the space directions and lying entirely outside every light cone with vertex on the other. That condition is the field-theoretic counterpart of the causal ordering that the Feynman propagator's $i\epsilon$ encodes — the amplitude between two configurations is defined when neither surface reaches the other — and it is a restriction on the region and not on the algebra. The object is formal, a limit of the same finite-dimensional integrals as $Z$; it is named here for what it is, a boundary-value functional rather than a number.</p>
@@ -118,7 +118,7 @@ where $\langle\cdot,\cdot\rangle$ is built from $\mathrm{Sc}$ and the determinan
 $$
 \tilde{Ξ} : \mathbb{R}^{3,1}\longrightarrow \mathbb{B},
 \qquad
-\tilde{Ξ}(x) = Ξ_t(x)\,e_t + Ξ_x(x)\,\vec e_x + Ξ_y(x)\,\vec e_y + Ξ_z(x)\,\vec e_z,
+\tilde{Ξ}(r_x) = Ξ_t(r_x)\,e_t + Ξ_x(r_x)\,\vec e_x + Ξ_y(r_x)\,\vec e_y + Ξ_z(r_x)\,\vec e_z,
 $$
 with complex coefficients $Ξ_\mu(x)$. The field decomposes along the sectors,
 $$
@@ -199,10 +199,10 @@ so the Gaussian prefactor of $Z_0$ is the product of the sector prefactors and t
 <p>The cleanest explicit case is the free scalar field, which the scalar example below supplies.</p>
 <p><strong>The Euclidean action.</strong> After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
-S_E[\xi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial Q_\mu\xi\,\partial/\partial Q_\mu\xi + m^2\xi^2\Big)
+S_E[\xi] = \int d^4x_E\;\tfrac12\Big(\partial/\partial R_\mu\xi\,\partial/\partial R_\mu\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4x_E\;\xi\big(-\Delta_E + m^2\big)\xi ,
 $$
-with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2_{Q_\mu}$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.</p>
+with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2/\partial R_\mu^2$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.</p>
 <p><strong>The Gaussian result.</strong> The free generating functional is
 $$
 Z_0[J] = \exp\left(\frac12\int\frac{d^4k_E}{(2\pi)^4}\,\frac{J(-k)J(k)}{k_E^2+m^2}\right),
@@ -218,7 +218,7 @@ the Feynman propagator of <em>The Feynman Propagator in Biquaternionic Form</em>
 <p><strong>A remark on the biquaternion field.</strong> A genuinely biquaternion-valued scalar has four complex coefficients, equivalently eight real components, and the sector split assigns four real components to each sector; the factorisation above is the statement that the free quadratic form is block diagonal with respect to that split. The two sectors are <strong>not</strong> independent fields in the sense of being separately adjustable: they are related by multiplication by the central $i$, $\mathbb{M}_-=i\mathbb{M}_+$, so the sector split is a decomposition of one field into its graded parts and not a doubling of the field content. The counting is a component count fixed by the algebra, and it is <em>not</em> a claim that the biquaternion scalar is a multiplicity of complex scalars; the sector interpretation is the one of <em>The Partition Function in Biquaternionic Form</em> and <em>The Harmonic Oscillator in Biquaternionic Form</em>.</p>
 <h2 id="the-euclidean-rotation">The Euclidean Rotation</h2>
 <p>The convergence of the Gaussian functional integral is best seen after the Wick rotation, and the framework's account of the rotation is the reason the Euclidean integral is well defined.</p>
-<p>The rotation is the replacement of the material time by imaginary time, $t'\mapsto -i\tau$, which in the framework is the identification
+<p>The rotation is the replacement of the material time by imaginary time, $r'_t\mapsto -i\tau$, which in the framework is the identification
 $$
 \mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}},
 \qquad
@@ -274,7 +274,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 - Whether the sector factorization has consequences for anomaly or theta-vacuum structure — where a non-central operator is essential — is taken up in <em>The Trace Anomaly in Biquaternionic Form</em> and <em>The Theta Vacuum in Biquaternionic Form</em>.
 - The determinant is not computed here; its computation and regularization are the subject of <em>The Functional Determinant in Biquaternionic Form</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$,
+<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $K^{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
 $$
 S[\tilde{Ξ}]=\int d^4x\;\Big\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -326,7 +326,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Real bilinear form of the action; sector-orthogonal</td>
 </tr>
 <tr>
-<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2_{Q_\mu}$</td>
+<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$</td>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Free energy</td>
 </tr>
 <tr>
-<td>$t'\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$</td>
+<td>$r'_t\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$</td>
 <td>Wick rotation; $\exp(iS)\to \exp(-S_E)$</td>
 </tr>
 <tr>

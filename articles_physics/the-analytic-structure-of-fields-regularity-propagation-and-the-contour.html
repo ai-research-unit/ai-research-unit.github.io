@@ -74,7 +74,7 @@
 <p>The article reads the analytic structure physically. It states the regularity constraint, the two notions of holomorphy, the Fueter construction, the fundamental solution, the Kirchhoff–Green representation, the residue and the zero-divisor boundary. It does not derive a wave equation, a mass spectrum or a dynamics; it reads the structures the calculus already carries.</p>
 <p>The central statement is that <strong>regularity is an on-shell constraint</strong>. The operator</p>
 <p>$$
-D=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu}
+D=\sum_\mu e_\mu\frac{\partial}{\partial R_\mu}
 $$</p>
 <p>satisfies $DD^{\natural}=D^{\natural}D=\Box$, so a regular field, $DF=0$, is automatically harmonic, $\Box F=0$. The first-order equation is the field equation; the second-order equation is its consequence. The physical reading is the Dirac-type constraint: not every function is a field, and the fields are the kernel of the constraint.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
@@ -124,16 +124,16 @@ $$</p>
 <h3 id="the-operator">The Operator</h3>
 <p>On a four-dimensional real subspace $V\subset\mathbb{B}$ with complex coordinates $Q_t,\dots,Q_z$, the Cauchy–Riemann operator and its conjugate are</p>
 <p>$$
-D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-D^{\natural}=e_t\frac{\partial}{\partial Q_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}.
+D^{\natural}=e_t\frac{\partial}{\partial R_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
 $$</p>
 <p>The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural}=2\delta_{\mu\nu}e_t$, so the cross terms cancel:</p>
 <p>$$
 DD^{\natural}=D^{\natural}D=\Box
-=\left(\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}\right)e_t.
+=\left(\frac{\partial^2}{\partial R_t^2}+\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}\right)e_t.
 $$</p>
-<p>The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial^2/\partial t'^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial t^2-\Delta$ of signature $(1,3)$.</p>
+<p>The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-c^{-2}\partial^2/\partial r'_t^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial r_t^2-\Delta$ of signature $(1,3)$.</p>
 <h3 id="the-constraint">The Constraint</h3>
 <p>A continuously differentiable function $F$ is <strong>left-regular</strong> if</p>
 <p>$$
@@ -199,7 +199,7 @@ $$</p>
 <p>$$
 D_\alpha=D_{\mathrm s}+M_\alpha,
 \qquad
-D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
+D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
 \qquad
 D_{\mathrm s}^{2}=\Delta,
 \qquad
@@ -259,7 +259,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$D=\sum_\mu e_\mu\partial/\partial Q_\mu$</td>
+<td>$D=\sum_\mu e_\mu\partial/\partial R_\mu$</td>
 <td>the Cauchy–Riemann operator</td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ $$</p>
 <td>the fundamental solution</td>
 </tr>
 <tr>
-<td>$D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial Q_k$</td>
+<td>$D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial R_k$</td>
 <td>the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$</td>
 </tr>
 <tr>

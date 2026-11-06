@@ -172,7 +172,7 @@ $$</p>
 <h3 id="momenta-constraints-and-dirac-brackets">Momenta, Constraints, and Dirac Brackets</h3>
 <p>The canonical momentum conjugate to $\tilde{Ξ}^{\mathrm{sp}}_\mu$ is, from the standard Rarita–Schwinger Lagrangian,</p>
 <p>$$
-\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\tilde{Ξ}^{\mathrm{sp}}_\mu)}=\sum_\lambda T_{\lambda t\mu}\bigl(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda\bigr),
+\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial r'_t\,\tilde{Ξ}^{\mathrm{sp}}_\mu)}=\sum_\lambda T_{\lambda r_t\mu}\bigl(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda\bigr),
 \qquad
 \bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda:=\tilde{Ξ}^{\mathrm{sp}\dagger}_\lambdaiR_{\vec e_x}^{\mathrm{axf}} ,
 $$</p>
@@ -188,9 +188,9 @@ $$</p>
 $$</p>
 <p>with $\xi_a$ the second-class constraints. The effect of the Dirac bracket is to replace the naive anticommutator by the projected one: the fields are restricted to the constraint surface, and the algebra closes on the projected field $(P\tilde{Ξ}^{\mathrm{sp}})_\mu$ rather than on $\tilde{Ξ}^{\mathrm{sp}}_\mu$ itself. This is the standard treatment and is cited below; the point to record is that the projection is the projector of the preceding section, so the algebraic content of the constraints is the biquaternion projector and its rank.</p>
 <h3 id="anticommutators-and-modes">Anticommutators and Modes</h3>
-<p>The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface. Write $\vec x:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the spatial point and $\vec y$ for the same construction with $y$; then</p>
+<p>The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface. Write $\vec r:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the spatial point and $\vec y$ for the same construction with $y$; then</p>
 <p>$$
-\{\tilde{Ξ}^{\mathrm{sp}}_\mu(t',\vec x),\,\pi_\nu(t',\vec y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec x-\vec y) ,
+\{\tilde{Ξ}^{\mathrm{sp}}_\mu(r'_t,\vec r),\,\pi_\nu(r'_t,\vec r_y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec r-\vec r_y) ,
 $$</p>
 <p>the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the preceding section, read from its action, and it is that projector that closes the algebra on $(P\tilde{Ξ}^{\mathrm{sp}})_\mu$. The mode expansion carries four polarizations,</p>
 <p>$$
@@ -200,7 +200,7 @@ a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x)
 + b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+ip\cdot x)
 \right] ,
 $$</p>
-<p>with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p t'-\vec p\cdot\vec x$, and with the Rarita–Schwinger polarization spinors satisfying</p>
+<p>with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot r_x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying</p>
 <p>$$
 \bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
 \qquad
@@ -304,13 +304,13 @@ $$</p>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>$$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
 \qquad
 \gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$</p>
@@ -352,7 +352,7 @@ $$</p>
 \qquad
 P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 \qquad
-\pi_\mu=i\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu t\mu]},
+\pi_\mu=i\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu r_t\mu]},
 $$</p>
 <p>and the polarization equations, the completeness relation and the propagator are</p>
 <p>$$
@@ -450,7 +450,7 @@ $$</p>
 <td>Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one</td>
 </tr>
 <tr>
-<td>$\vec x:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
+<td>$\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 <td>Shorthand for the spatial point in the anticommutator and the delta function</td>
 </tr>
 <tr>

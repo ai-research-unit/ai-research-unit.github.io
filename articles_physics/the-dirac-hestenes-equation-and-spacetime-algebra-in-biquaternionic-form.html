@@ -201,13 +201,13 @@ $$</p>
 <h3 id="the-two-sided-equation">The two-sided equation</h3>
 <p>Kravchenko's equation is a single equation on $\mathbb B$, written $\mathcal NF=0$. Split into its two sides, it reads</p>
 <p>$$
-\Bigl(i\frac{\partial}{\partial t'}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}\Bigr)F=mi\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F=mi\,\overline F\,\vec e_z ,
 $$</p>
 <p>and the operator that collects the two sides is</p>
 <p>$$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial t'}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}\Bigr)F-mi\,\overline F\,\vec e_z .
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}\Bigr)F-mi\,\overline F\,\vec e_z .
 $$</p>
-<p>Here $t'$ is the physical time of the material sector, whose relation to the corpus's coordinate is fixed in <em>Conventions in the Biquaternion Universe</em>. The derivative is not a second letter for the gradient: Kravchenko's time derivative carries the sign opposite to the corpus's, and his spatial part is the spatial part of the corpus gradient unchanged. The sign is his convention for the time direction, and it is the only respect in which the two derivatives differ.</p>
+<p>Here $r'_t$ is the physical time of the material sector, whose relation to the corpus's coordinate is fixed in <em>Conventions in the Biquaternion Universe</em>. The derivative is not a second letter for the gradient: Kravchenko's time derivative carries the sign opposite to the corpus's, and his spatial part is the spatial part of the corpus gradient unchanged. The sign is his convention for the time direction, and it is the only respect in which the two derivatives differ.</p>
 <p>The left side is one-sided: the derivative acts from the left. The right side is the mass: the componentwise conjugation $\overline{\cdot}$ supplies the antilinear part, and the fixed direction $\vec e_z$ multiplies on the right. <strong>The letter $\mathcal N$ is the whole two-sided operator and not a factor of it</strong>: it is neither an element of the algebra nor a left or a right multiplication, since its action is a left derivative on one side and a conjugation followed by a right multiplier on the other. This is the <strong>two-sided</strong> equation of the corpus: two sides, one field, and no split of the field into parts. The two parts are there all the same, $F_L$ and $F_R$, and no term of the equation is written on them: the same unit $\vec e_z$ multiplies the conjugated field on the right.</p>
 <h3 id="where-the-dirachestenes-equation-sits">Where the Dirac–Hestenes equation sits</h3>
 <p>The Dirac–Hestenes equation is also two-sided, but its right factors are the fixed spin plane $\omega$ in the derivative term and the fixed timelike vector $v_0$ in the mass term. The spin plane is $\omega=-\vec e_z$ in the framework's units, so the two equations multiply by the same spatial unit and only the slot differs: Kravchenko puts $\vec e_z$ in the mass term, where a conjugation accompanies it, and the Dirac–Hestenes equation puts it in the derivative term, where it plays the part of the imaginary unit of the older display. The spin plane is the phase generator and not the chirality. The chirality is the volume element read with the central $i$, that is $i\omega=-i\vec e_z$, and it is the frame's volume cell of <em>Conventions of the Special Elements</em>, §<em>The Chirality Convention</em>; the two are different cells and are not interchangeable. The spin plane commutes with $v_0$ and the volume element anticommutes with it, because the volume element is even and $v_0$ is odd, and that is why the mass is the term that mixes the two parts of the field. What differs between the two equations is the company the unit keeps: Kravchenko's factor carries a conjugation and this one generates the phase. The mass itself is a right multiplication by an odd vector, not a conjugation together with a spatial direction. It is therefore the spacetime-algebra face of the <strong>chiral</strong> equation, not a rewriting of Kravchenko's. The word "two-sided" does not identify the two: it says only that a right action is present.</p>
@@ -272,7 +272,7 @@ $$</p>
 <p>$$
 \tilde{Ξ}^{\mathrm{sp}}\mapsto \tilde{Ξ}^{\mathrm{sp}} E,
 \qquad
-E=\exp\bigl(e\alpha(x)\,\omega\bigr),
+E=\exp\bigl(e\alpha(r_x)\,\omega\bigr),
 \qquad
 eA\mapsto eA-\tilde\nabla\alpha ,
 $$</p>
@@ -281,17 +281,17 @@ $$</p>
 \tilde\nabla(\tilde{Ξ}^{\mathrm{sp}} E)\,\omega
 =(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}})\,\omega E-e(\tilde\nabla\alpha)\,\tilde{Ξ}^{\mathrm{sp}} E ,
 $$</p>
-<p>because $\partial E/\partial Q_\mu=e(\partial \alpha/\partial Q_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla\alpha)\tilde{Ξ}^{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A <strong>left</strong> multiplication by the phase does not work: it puts $\tilde\nabla\alpha$ between $\omega$ and $\tilde{Ξ}^{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.</p>
+<p>because $\partial E/\partial R_\mu=e(\partial \alpha/\partial R_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla\alpha)\tilde{Ξ}^{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A <strong>left</strong> multiplication by the phase does not work: it puts $\tilde\nabla\alpha$ between $\omega$ and $\tilde{Ξ}^{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.</p>
 <h3 id="the-discrete-symmetries">The discrete symmetries</h3>
 <p>The discrete operations are not all of one kind, and they are not the right multiplications of the equation. The corpus's operations are</p>
 <p>$$
-P[\tilde{Ξ}^{\mathrm{sp}}]=\tilde{Ξ}^{\mathrm{sp}}(t',-\vec x)\,i\vec e_x,
+P[\tilde{Ξ}^{\mathrm{sp}}]=\tilde{Ξ}^{\mathrm{sp}}(r'_t,-\vec r)\,i\vec e_x,
 \qquad
 C[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}\,\vec e_y,
 \qquad
-T[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-t',\vec x),
+T[\tilde{Ξ}^{\mathrm{sp}}]=-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-r'_t,\vec r),
 $$</p>
-<p>with $\vec x=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^{\mathrm{sp}*}$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. <strong>The three are not three of one kind, and none of them is a plain multiplication by a single element on one side.</strong> Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on <strong>both</strong> sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^{\mathrm{sp}*}$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^{\mathrm{sp}*}$. Their characters and the side of each factor are collected in the table.</p>
+<p>with $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $\tilde{Ξ}^{\mathrm{sp}*}$ the conjugation that is antilinear in the coefficients and reverses the order of a product, the antilinear map that carries one part of the field onto the other. <strong>The three are not three of one kind, and none of them is a plain multiplication by a single element on one side.</strong> Parity is a right multiplication by the fixed element $i\vec e_x$, which is odd. Charge conjugation multiplies on <strong>both</strong> sides, by $-\vec e_y$ on the left and by $\vec e_y$ on the right — the conjugation by $\vec e_y$ up to sign — and it is composed with $\tilde{Ξ}^{\mathrm{sp}*}$. Time reversal multiplies on the left by $-\vec e_y$ and is composed with the same $\tilde{Ξ}^{\mathrm{sp}*}$. Their characters and the side of each factor are collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -306,7 +306,7 @@ $$</p>
 <tr>
 <td>Parity $P$</td>
 <td>linear</td>
-<td>$\tilde{Ξ}^{\mathrm{sp}}(t',-\vec x)\,i\vec e_x$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}(r'_t,-\vec r)\,i\vec e_x$</td>
 <td>right multiplication</td>
 <td>exchanges $L$ and $R$</td>
 </tr>
@@ -320,7 +320,7 @@ $$</p>
 <tr>
 <td>Time reversal $T$</td>
 <td>antilinear</td>
-<td>$-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-t',\vec x)$</td>
+<td>$-\vec e_y\,\tilde{Ξ}^{\mathrm{sp}*}(-r'_t,\vec r)$</td>
 <td>left multiplication</td>
 <td>keeps $L$ and $R$</td>
 </tr>

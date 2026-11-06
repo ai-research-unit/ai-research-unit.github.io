@@ -90,7 +90,7 @@
 \qquad
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$</p>
-<p>with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, with $D_\mu c_a=\partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.</p>
+<p>with $\zeta$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\zeta^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\zeta}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac12\zeta\sum_a B_aB_a$ and the ghost term $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, with $D_\mu c_a=\partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c$.</p>
 <p>The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.</p>
 <h3 id="the-ghosts-and-the-grassmann-envelope">The Ghosts and the Grassmann Envelope</h3>
 <p>The ghost fields are anticommuting: $\{c(x),\bar{c}(y)\}=0$ at spacelike separation and, formally, $c^2=0$ as a classical field. The biquaternion algebra contains no such element. It is not a division algebra — $\mathbb{B}\cong M_2(\mathbb{C})$ contains nonzero nilpotents, among them $(\vec e_x+i\vec e_y)/2$, whose square vanishes — but nilpotency is not oddness: the algebra is ungraded, every element of $\mathbb{B}$ is even, and the product of two elements cannot be odd. An element that anticommutes with its fellows does not exist in $\mathbb{B}$, whatever its square. The ghosts therefore cannot be elements of $\mathbb{B}$. They must be adjoined, and the correct structure is the Grassmann envelope</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>The BRST transformation is a Grassmann-odd derivation $s$ of the field algebra. On the abelian fields it acts as</p>
 <p>$$
-sA_\mu = \partial/\partial Q_\mu c,
+sA_\mu = \partial/\partial R_\mu c,
 \qquad
 sc = 0,
 \qquad
@@ -121,7 +121,7 @@ sB = 0,
 $$</p>
 <p>and on the non-abelian fields as</p>
 <p>$$
-\boxed{\;sA_{\mu a} = (D_\mu c)_a = \partial/\partial Q_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c,
+\boxed{\;sA_{\mu a} = (D_\mu c)_a = \partial/\partial R_\mu c_a+g\sum_{b,c}f_{abc}A_{\mu b} c_c,
 \qquad
 sc_a = -\tfrac{g}{2}\sum_{b,c}f_{abc}c_bc_c,
 \qquad
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="nilpotency-in-the-abelian-case">Nilpotency in the Abelian Case</h3>
 <p>The abelian case is immediate. Since $s$ is a derivation of Grassmann parity one and $c$ is odd,</p>
 <p>$$
-s^2 A_\mu = s(\partial/\partial Q_\mu c) = \partial/\partial Q_\mu(sc) = 0,
+s^2 A_\mu = s(\partial/\partial R_\mu c) = \partial/\partial R_\mu(sc) = 0,
 \qquad
 s^2 c = 0,
 \qquad
@@ -145,9 +145,9 @@ $$</p>
 <h3 id="nilpotency-in-the-non-abelian-case">Nilpotency in the Non-Abelian Case</h3>
 <p>The non-abelian case is where the identity is needed. Applying $s$ to $sA_{\mu a}$ and using the graded Leibniz rule,</p>
 <p>$$
-s^2A_{\mu a} = \partial/\partial Q_\mu(sc_a)+g\sum_{b,c}f_{abc}\left[(sA_{\mu b})c_c+A_{\mu b}(sc_c)\right].
+s^2A_{\mu a} = \partial/\partial R_\mu(sc_a)+g\sum_{b,c}f_{abc}\left[(sA_{\mu b})c_c+A_{\mu b}(sc_c)\right].
 $$</p>
-<p>The two derivative pieces cancel between themselves: $\partial/\partial Q_\mu(sc_a)=-\tfrac{g}{2}\sum_{b,c}f_{abc}\partial/\partial Q_\mu(c_bc_c)$ and $(sA_{\mu b})c_c$ contributes $g\sum_{b,c}f_{abc}(\partial/\partial Q_\mu c_b)c_c$, and since $\partial/\partial Q_\mu(c_bc_c)=(\partial/\partial Q_\mu c_b)c_c+c_b\partial/\partial Q_\mu c_c$ while the antisymmetry of $f_{abc}$ in its last two indices converts $f_{abc}c_b\partial/\partial Q_\mu c_c$ into $f_{abc}(\partial/\partial Q_\mu c_b)c_c$, their sum is $g\sum_{b,c}f_{abc}\left[-(\partial/\partial Q_\mu c_b)c_c+(\partial/\partial Q_\mu c_b)c_c\right]=0$. What survives is the $A$-dependent part,</p>
+<p>The two derivative pieces cancel between themselves: $\partial/\partial R_\mu(sc_a)=-\tfrac{g}{2}\sum_{b,c}f_{abc}\partial/\partial R_\mu(c_bc_c)$ and $(sA_{\mu b})c_c$ contributes $g\sum_{b,c}f_{abc}(\partial/\partial R_\mu c_b)c_c$, and since $\partial/\partial R_\mu(c_bc_c)=(\partial/\partial R_\mu c_b)c_c+c_b\partial/\partial R_\mu c_c$ while the antisymmetry of $f_{abc}$ in its last two indices converts $f_{abc}c_b\partial/\partial R_\mu c_c$ into $f_{abc}(\partial/\partial R_\mu c_b)c_c$, their sum is $g\sum_{b,c}f_{abc}\left[-(\partial/\partial R_\mu c_b)c_c+(\partial/\partial R_\mu c_b)c_c\right]=0$. What survives is the $A$-dependent part,</p>
 <p>$$
 s^2A_{\mu a}
 = g^2 \sum_{b,c,d,e} f_{abc}f_{bde}A_{\mu d} c_ec_c
@@ -184,7 +184,7 @@ $$</p>
 \tilde{Ξ}^{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}B_a\right)
+\tilde{Ξ}^{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
 \qquad\text{(non-abelian)} .
 $$</p>
 <p>Then a direct computation with the graded Leibniz rule gives, in the abelian case,</p>
@@ -201,7 +201,7 @@ $$</p>
 <p>$$
 s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ}^{\mathrm{sp}} = 0 .
 $$</p>
-<p>The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}^{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial Q_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.</p>
+<p>The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}^{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.</p>
 <p>The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}^{\mathrm{sp}}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}^{\mathrm{sp}}$ is its image, and the physical states are the cohomology of $s$, as below.</p>
 <h2 id="ghost-number-the-brst-charge-and-cohomology">Ghost Number, the BRST Charge, and Cohomology</h2>
 <h3 id="grading">Grading</h3>
@@ -300,7 +300,7 @@ $$</p>
 <td>Structure constants; Jacobi identity required for nilpotency</td>
 </tr>
 <tr>
-<td>$g$, $D_\mu=\partial/\partial Q_\mu+gA_\mu$</td>
+<td>$g$, $D_\mu=\partial/\partial R_\mu+gA_\mu$</td>
 <td>Coupling and covariant derivative</td>
 </tr>
 <tr>
@@ -332,7 +332,7 @@ $$</p>
 <td>Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial Q_\mu+\tfrac{\zeta}{2}B_a)$</td>
+<td>$\tilde{Ξ}^{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$</td>
 <td>Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}^{\mathrm{sp}}$</td>
 </tr>
 <tr>

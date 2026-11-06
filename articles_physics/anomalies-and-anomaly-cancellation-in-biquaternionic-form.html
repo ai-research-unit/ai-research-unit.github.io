@@ -91,7 +91,7 @@ $$
 Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrightarrow{\ x\ }\ -i\,Q\,\vec e_y\ \xrightarrow{\ t\ }\ -Q\,\vec e_z ,
 $$
 the arrow labelled by a coordinate being the frame cell of that coordinate. The composite collapses to a single right multiplication, $Q\mapsto-Q\vec e_z$, and the chirality cell multiplies on the right by $-i\vec e_z$. So the chirality cell is $i$ times the volume cell, which is how the corpus states it (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). That relation is what places the anomaly's density inside the framework rather than beside it.</p>
-<p><strong>The field strength, in components.</strong> For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A$ in Heaviside–Lorentz units (the medium factors of <em>The Field-Strength Biquaternion and Its Invariants</em> are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $t',x,y,z$ the components are</p>
+<p><strong>The field strength, in components.</strong> For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A$ in Heaviside–Lorentz units (the medium factors of <em>The Field-Strength Biquaternion and Its Invariants</em> are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are</p>
 <p>$$
 F_{t'i}=E_i,
 \qquad
@@ -99,7 +99,7 @@ F_{ij}=\epsilon_{ijk}B_k ,
 $$</p>
 <p>the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{jkl}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i c r'_t$ frame, where $Q_t=i c r'_t$ and $F_{Q_t k}=iE_k/c$, and dropping the $i/c$ returns the real-time $F_{t'k}=E_k$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
 $$
-F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial Q_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial Q_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
+F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
 \qquad
 \kappa=\frac{ϙ}{\hbar},
 $$
@@ -151,7 +151,7 @@ $$</p>
 j_{5\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\bigl(e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\vec e_{\nu(\mu)}\bigr),
 $$</p>
 <p>where the $i$ of the frame cell and the $-i$ of the chirality cell have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\nu(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\nu(t)=x$ and $\nu(k)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.</p>
-<p><strong>The result.</strong> For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame cells, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of <em>Frame and Metric Conventions</em>, §<em>The Rules</em>, so an extra sign vector would apply it a second time —</p>
+<p><strong>The result.</strong> For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame cells, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of <em>Frame and Metric Conventions</em>, §<em>The Rules</em>, so an extra sign vector would apply it a second time —</p>
 <p>$$
 \boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 $$</p>
@@ -327,7 +327,7 @@ $$</p>
 =-\frac{e^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =-\frac{e^2}{8\pi^2}\,\Delta N_{\mathrm{CS}},
 \qquad
-N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},t'} .
+N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},r'_t} .
 $$</p>
 <p>The coefficient and the two minus signs are one chain: the boxed divergence carries the minus of the all-low notation, and $\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\partial\cdot J_{\mathrm{CS}}$ turns the density into a divergence, so the axial charge is minus $\frac{e^2}{8\pi^2}$ times the change in Chern–Simons number. The magnitude is the standard one; only the sign of $J_{\mathrm{CS}}$ is a convention, and the article fixes it once here.</p>
 <p>The axial charge therefore follows the Chern–Simons charge and changes only when the latter does — by a large gauge transformation, which in the Euclidean continuation is an instanton. This is the standard topological interpretation of the anomaly, and the companion article on instantons supplies the framework's form of the topological charge: its density is the invariant $I_2=\vec E\cdot\vec B$, whose integral over a configuration is the instanton number. In the biquaternion language the anomaly transports axial charge into the winding of the material-sector gauge field; both are framework objects, and neither needs an object beyond the algebra.</p>
@@ -530,7 +530,7 @@ $$</p>
 <td>Vector and axial currents; the axial current is the chirality cell inserted between the frame cell and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order</td>
 </tr>
 <tr>
-<td>$\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$</td>
+<td>$\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$</td>
 <td>Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame cells</td>
 </tr>
 <tr>
@@ -566,7 +566,7 @@ $$</p>
 <td>Massless Dirac operator of the pair; representative of $\tilde\nabla$ on the state; its index, with $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2\,\mathrm{ind}(D)$</td>
 </tr>
 <tr>
-<td>$N=\frac{e^2}{32\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},t'}$</td>
+<td>$N=\frac{e^2}{32\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3x\,J_{\mathrm{CS},r'_t}$</td>
 <td>Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\Delta Q_5=-2\Delta N$</td>
 </tr>
 <tr>

@@ -198,13 +198,13 @@ $$</p>
 $$</p>
 <p>with</p>
 <p>$$
-\mathfrak D=e_t\frac{\partial}{\partial Q_t}+i\vec e_y\frac{\partial}{\partial Q_x}+i\vec e_z\frac{\partial}{\partial Q_y}+i\vec e_x\frac{\partial}{\partial Q_z},
+\mathfrak D=e_t\frac{\partial}{\partial R_t}+i\vec e_y\frac{\partial}{\partial R_x}+i\vec e_z\frac{\partial}{\partial R_y}+i\vec e_x\frac{\partial}{\partial R_z},
 \qquad
 \tilde A=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x .
 $$</p>
 <p>The derivatives are the four coordinate derivatives of the corpus (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>), the coordinates are $Q_t,Q_x,Q_y,Q_z$, and on the material sector $Q_t=i c r'_t$.</p>
 <p><strong>The terms, and the side of each.</strong> The gradient $\mathfrak D$ multiplies on the left. The fixed bivector $-\vec e_x$ multiplies on the right, with the same value for every element and at every point. The mass term is the complex conjugation of the field, real-linear and conjugate-linear over $\mathbb{C}$, with the real central coefficient $m$. The coupling is the left multiplication by the potential, and it is the minimal coupling of <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>.</p>
-<p><strong>Derived form (the gradient, term by term).</strong> The three space derivatives carry the three Hermitian units in the cyclic order $i\vec e_y$, $i\vec e_z$, $i\vec e_x$ attached to $\partial/\partial Q_x$, $\partial/\partial Q_y$, $\partial/\partial Q_z$, and the time derivative carries $e_t$. The corpus's gradient carries the four coefficient units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The two differ twice: by the factor $i$ on the space part, and by the cyclic relabelling of the three directions.</p>
+<p><strong>Derived form (the gradient, term by term).</strong> The three space derivatives carry the three Hermitian units in the cyclic order $i\vec e_y$, $i\vec e_z$, $i\vec e_x$ attached to $\partial/\partial R_x$, $\partial/\partial R_y$, $\partial/\partial R_z$, and the time derivative carries $e_t$. The corpus's gradient carries the four coefficient units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>). The two differ twice: by the factor $i$ on the space part, and by the cyclic relabelling of the three directions.</p>
 <p><strong>Proposition (the equation is a Dirac equation).</strong> The field carries the eight real functions of the Dirac field (§<em>The Daviau Map</em>). The mass term is linear in the field, real and central. The coupling is the left multiplication by the potential. The equation is the Dirac equation written on the algebra, and its content is the content of the matrix formulation, term for term.</p>
 <p><strong>Remark (the right factor and the two parities).</strong> The right factor is the pseudoscalar times the first space vector,</p>
 <p>$$
@@ -220,10 +220,10 @@ $$</p>
 <p>in which the gradient multiplies on the left in each line and the mass pairs the two values of the subscript. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values.</p>
 <p><strong>The two-sided equation, and the mass direction.</strong> Kravchenko's equation is a single equation on $\mathbb{B}$, written $\mathcal NF=0$, with</p>
 <p>$$
-\mathcal NF=\Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F-mi\,\overline{F}\,\vec e_z,\qquad
-D_3=\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial Q_k},
+\mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-mi\,\overline{F}\,\vec e_z,\qquad
+D_3=\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k},
 $$</p>
-<p>where $t'$ is the physical time, related to the corpus's coordinate by $Q_t=i c r'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.</p>
+<p>where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i c r'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.</p>
 <p><strong>Daviau's equation: two-sided, with a fixed right bivector and a conjugate-linear mass.</strong> Daviau's equation is two-sided as well, but its right factor is the fixed bivector $-\vec e_x$ and its mass is the conjugation. It is the space-formulation face of the chiral equation, not a rewriting of Kravchenko's. The word "two-sided" does not identify the two: it says only that a right multiplication is present, and it leaves open which element multiplies and what the mass term is.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -245,7 +245,7 @@ $$</p>
 <td>Multiplication</td>
 <td>left by $\mathfrak D$, right by $-\vec e_x$</td>
 <td>left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$</td>
-<td>left by $i\partial/\partial t'$ and by $D_3$, right by $\vec e_z$</td>
+<td>left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$</td>
 </tr>
 <tr>
 <td>Field</td>
@@ -278,16 +278,16 @@ $$</p>
 <p>The other formulation writes the Dirac equation for a field of the algebra of four spacetime vectors, with the gradient multiplying on the left, a fixed right multiplier on the gradient terms, and a mass that is a right multiplication by the time vector rather than a conjugation. That last point is the one the comparison has to reconcile, because Daviau's mass is the conjugation.</p>
 <p><strong>The comparison equation.</strong> Fauser writes it with the three space vectors of that formulation multiplying the space derivatives, the pseudoscalar on the right of each derivative term, and the mass as minus the conjugation. In the corpus's elements the three space vectors of that formulation are the three quaternion units, and its pseudoscalar is the same $i$:</p>
 <p>$$
-\frac{\partial}{\partial Q_t}\tilde{Ξ}^{\mathrm{sp}}\,(i\vec e_z)
-+\sum_{k\in\{x,y,z\}}\vec e_k\frac{\partial}{\partial Q_k}\tilde{Ξ}^{\mathrm{sp}}\,(i\vec e_z)
-=-m\,\overline{\tilde{Ξ}^{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,y,z\}}A_k\vec e_k\Bigr)\tilde{Ξ}^{\mathrm{sp}} .
+\frac{\partial}{\partial R_t}\tilde{Ξ}^{\mathrm{sp}}\,(i\vec e_z)
++\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k}\tilde{Ξ}^{\mathrm{sp}}\,(i\vec e_z)
+=-m\,\overline{\tilde{Ξ}^{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}^{\mathrm{sp}} .
 $$</p>
 <p>The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.</p>
 <p><strong>Statement (the equivalence).</strong> Daviau's formulation and the spacetime formulation are equivalent. The relabelling $z$ that carries the three space directions of one to those of the other is the cycle</p>
 <p>$$
 z(\vec e_x)=\vec e_z,\qquad z(\vec e_z)=\vec e_y,\qquad z(\vec e_y)=\vec e_x,
 $$</p>
-<p>with $z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: it permutes the three vector units cyclically, so it preserves $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; it satisfies $z^3=\mathrm{id}$ and $z^{-1}=z^2$; and it commutes with the complex conjugation, because it fixes $i$ and permutes the units with real coefficients. Applying $z^{-1}$ to the spacetime equation and flipping the sign of the mass yields the Daviau equation, and conversely $z$ and the reverse flip recover the other. The two formulations differ, therefore, only by the sign of the mass, the cyclic relabelling of the three space directions, and the star.</p>
+<p>with $r_z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: it permutes the three vector units cyclically, so it preserves $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; it satisfies $z^3=\mathrm{id}$ and $z^{-1}=z^2$; and it commutes with the complex conjugation, because it fixes $i$ and permutes the units with real coefficients. Applying $z^{-1}$ to the spacetime equation and flipping the sign of the mass yields the Daviau equation, and conversely $z$ and the reverse flip recover the other. The two formulations differ, therefore, only by the sign of the mass, the cyclic relabelling of the three space directions, and the star.</p>
 <p><em>Proof sketch (transcription of Fauser's argument).</em> The two equations are written term by term, the images of the four kinds of element are matched with the Daviau gradient and potential, and the two fields are identified by $z^{-1}$. The mass signs are opposite because the two equations put the mass in different slots: a right multiplication by the time vector there, the conjugation here. The star is the same conjugation in both, and $z$ carries it to itself, $z(\overline{\tilde{Ξ}^{\mathrm{sp}}})=\overline{z(\tilde{Ξ}^{\mathrm{sp}})}$. The three operations are read off from the two displayed equations.</p>
 <p><strong>What the equivalence says and does not say.</strong> It says that the space formulation is not a different theory from the spacetime formulation, but the same theory written in the smaller algebra with a permuted space basis and the opposite mass sign. The dictionary between the corpus's own conventions and either formulation is the one of §<em>The Three Space Vectors and the Dictionary</em>; the equivalence then makes the three corpus formulations — matrix, spacetime algebra, space vectors — one formulation read three ways. It does not say which interpretation is physical, and it supplies no prediction, in keeping with the status of every equivalent rewriting in this series.</p>
 <p><strong>Remark (the significance of the star).</strong> That the two formulations are related by the star is the point of the equivalence being nontrivial. Were the star the identity, the two equations would differ only by a basis relabelling and a mass sign, and the equivalence would be trivial. The star is a genuine automorphism of the algebra, the corpus's complex conjugation in its sector-cutting role, and the equivalence asserts that this automorphism, together with a cyclic relabelling, is the whole of the difference between the two pictures.</p>
@@ -369,7 +369,7 @@ $$</p>
 <td>The star of the source: the corpus's complex conjugation, not ${}^{*}$</td>
 </tr>
 <tr>
-<td>$\mathfrak D=e_t\partial/\partial Q_t+i\vec e_y\partial/\partial Q_x+i\vec e_z\partial/\partial Q_y+i\vec e_x\partial/\partial Q_z$</td>
+<td>$\mathfrak D=e_t\partial/\partial R_t+i\vec e_y\partial/\partial R_x+i\vec e_z\partial/\partial R_y+i\vec e_x\partial/\partial R_z$</td>
 <td>The cyclically permuted gradient</td>
 </tr>
 <tr>

@@ -108,7 +108,7 @@ $$</p>
 <p><strong>The one-sided equation</strong> is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication on the element $\tilde{Ξ}^{\mathrm{sp}}\in\mathbb{B}$, and the mass is the off-diagonal pair: each equation of the pair carries one value into the other. Chirality is the subscript, with the two values fixed above.</p>
 <p><strong>The two-sided equation</strong> is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, in the corpus's units $c=1$,</p>
 <p>$$
-\Bigl(i\frac{\partial}{\partial t'}+\nabla\Bigr)F-m_n\,i\,\bar{F}\,\vec e_z=0,
+\Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-m_n\,i\,\bar{F}\,\vec e_z=0,
 $$</p>
 <p>with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-m_n i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}^{\mathrm{sp}}_L=F$ and $\tilde{Ξ}^{\mathrm{sp}}_R=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is <strong>antilinear</strong>, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.</p>
 <div class="table-scroll"><table>
@@ -133,7 +133,7 @@ $$</p>
 <tr>
 <td>Derivative</td>
 <td>left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$</td>
-<td>left, by $i\partial/\partial t'$ and $\nabla$</td>
+<td>left, by $i\partial/\partial r'_t$ and $\nabla$</td>
 </tr>
 <tr>
 <td>Mass</td>
@@ -165,7 +165,7 @@ b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\
 $$</p>
 <p>a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,</p>
 <p>$$
-D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial Q_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}^{\mathrm{sp}} b,
+D_\mu\tilde{Ξ}^{\mathrm{sp}}=\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}^{\mathrm{sp}} b,
 \qquad
 [D_\mu,D_\nu]\tilde{Ξ}^{\mathrm{sp}}=\frac{i}{\hbar}F_{\mu\nu}\,\tilde{Ξ}^{\mathrm{sp}} b
 $$</p>
@@ -384,7 +384,7 @@ $$</p>
 <td>The charge element, in $\mathbb{M}_+$; the charge is the right multiplication by $b$</td>
 </tr>
 <tr>
-<td>$D_\mu\tilde{Ξ}^{\mathrm{sp}}=\partial\tilde{Ξ}^{\mathrm{sp}}/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}^{\mathrm{sp}} b$</td>
+<td>$D_\mu\tilde{Ξ}^{\mathrm{sp}}=\partial\tilde{Ξ}^{\mathrm{sp}}/\partial R_\mu+\tfrac{i}{\hbar}A_\mu\tilde{Ξ}^{\mathrm{sp}} b$</td>
 <td>Covariant derivative of the chiral charge; the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}\tilde{Ξ}^{\mathrm{sp}} b$</td>
 </tr>
 <tr>
@@ -392,7 +392,7 @@ $$</p>
 <td>Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$</td>
 </tr>
 <tr>
-<td>$(i\partial/\partial t'+\nabla)F-m_n i\,\bar F\,\vec e_z=0$</td>
+<td>$(i\partial/\partial r'_t+\nabla)F-m_n i\,\bar F\,\vec e_z=0$</td>
 <td>Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation</td>
 </tr>
 <tr>

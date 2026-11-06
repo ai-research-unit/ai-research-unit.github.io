@@ -89,7 +89,7 @@
 <p>$$
 \tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 $$</p>
-<p>with $t', x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is</p>
+<p>with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\varphi \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is</p>
 <p>$$
 \tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad
@@ -124,7 +124,7 @@ $$</p>
 <p>The vanishing set of the biquaternion norm on the material sector is the double cone</p>
 <p>$$
 \mathcal{Z} = \{\, \tilde{Q}_1 \in \mathbb{M}_- : \tilde{Q}_1 \ne 0,\ \langle\tilde{Q}_1\rangle_{\natural} = 0 \,\}
-= \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|t'| \,\},
+= \{\, i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z : |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c\,|r'_t| \,\},
 $$</p>
 <p>the light cone of Minkowski space. The companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> proves the following, and it is quoted here rather than repeated.</p>
 <p><strong>The cone is the zero-divisor set.</strong> A nonzero biquaternion is $N$-degenerate, $\langle\tilde{Q}_1\rangle_{\natural} = 0$, if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde Q_2$ with $\tilde{Q}_1\tilde Q_2 = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $c r'_{t} \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2i c r'_t$,</p>
@@ -141,7 +141,7 @@ $$</p>
 $$</p>
 <p>so every nonzero displacement is invertible except the null ones.</p>
 <p><strong>The cone is the propagation locus.</strong> The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ solves the massless dispersion relation $\langle\tilde P\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.</p>
-<p>Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $t'$, called the <strong>future</strong> and the <strong>past</strong>. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.</p>
+<p>Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{M}_-$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the <strong>future</strong> and the <strong>past</strong>. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.</p>
 <h2 id="the-barrier-that-the-rotor-group-preserves">The Barrier That the Rotor Group Preserves</h2>
 <h3 id="invariance-of-the-biquaternion-norm">Invariance of the Biquaternion Norm</h3>
 <p>The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,</p>
@@ -272,20 +272,20 @@ $$</p>
 <h2 id="the-cone-as-the-characteristic-cone-of-the-wave-operator">The Cone as the Characteristic Cone of the Wave Operator</h2>
 <p>The barrier has an analytic form, and it is the form in which the algebra itself enforces it. The biquaternionic gradient and its conjugate are</p>
 <p>$$
-\tilde{\nabla} = e_t\,\partial/\partial Q_{1t} + \nabla,
+\tilde{\nabla} = e_t\,\partial/\partial R_{1t} + \nabla,
 \qquad
-\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_{1t} - \nabla,
+\tilde{\nabla}^{\natural} = e_t\,\partial/\partial R_{1t} - \nabla,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta = \Delta + \partial^2/\partial Q_{1t}^2,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2 + \Delta = \Delta + \partial^2/\partial R_{1t}^2,
 $$</p>
-<p>the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = -\omega t' + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity</p>
+<p>the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural}) = -\omega r'_t + \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity</p>
 <p>$$
 \Box f(s) = \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 \qquad
 \langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k|^2,
 $$</p>
 <p>because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> records the equivalent zero-divisor statement.</p>
-<p>The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $t' = 0$, then the solution of $\Box\tilde{Ξ} = \tilde{S}$ is supported at time $t'$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.</p>
+<p>The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde{S}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde{S}$ is supported at time $r'_t$ inside the set of points that lie within distance $c r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.</p>
 <h2 id="causal-automorphisms-and-the-time-orientation">Causal Automorphisms and the Time Orientation</h2>
 <p>The invariance of the biquaternion norm identifies the Lorentz group as a group of transformations preserving the cone. The converse is a classical theorem, and it is what makes the cone the complete invariant of the causal structure. A bijection of Minkowski space that preserves the causal order, in the sense that</p>
 <p>$$
@@ -453,7 +453,7 @@ $$</p>
 <td>Biquaternionic gradient and its conjugate</td>
 </tr>
 <tr>
-<td>$\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2+\Delta$</td>
+<td>$\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2+\Delta$</td>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>

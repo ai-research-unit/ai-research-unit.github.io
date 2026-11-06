@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 R_t = c\,(r_t + ir'_t), \qquad R_x = r_x + ir'_x, \qquad R_y = r_y + ir'_y, \qquad R_z = r_z + ir'_z, \qquad r_\mu, r'_\mu \in \mathbb{R},
 $$</p>
-<p>replaces the four complex coefficients of the point by <strong>eight real parameters</strong>: $r_\mu$ is the real part of $R_\mu$, the coefficient of $e_\mu$, and $r'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. <strong>The prime stays on the parameter letter and the slot goes into the subscript</strong>: the coefficient is written $r'_t$, never $r_t'$ and never $r_{r'_{t}}$, because the prime qualifies the parameter and not the slot. The factor $c$ stands on the time coefficient alone, and on both of its halves, so that $r_t$ and $r'_t$ are times and every coefficient is a length; the three spatial coefficients $R_x, R_y, R_z$ carry no factor. The generic element of the mathematics keeps its own coefficient letters, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, and those letters carry no physical reading; the position letter is $R$ and its parameters are $r$ and $r'$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
+<p>replaces the four complex coefficients of the point by <strong>eight real parameters</strong>: $r_\mu$ is the real part of $R_\mu$, the coefficient of $e_\mu$, and $r'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. <strong>The prime stays on the parameter letter and the slot goes into the subscript</strong>: the coefficient is written $r'_t$, never $r_r'_t$ and never $r_{r'_{t}}$, because the prime qualifies the parameter and not the slot. The factor $c$ stands on the time coefficient alone, and on both of its halves, so that $r_t$ and $r'_t$ are times and every coefficient is a length; the three spatial coefficients $R_x, R_y, R_z$ carry no factor. The generic element of the mathematics keeps its own coefficient letters, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, and those letters carry no physical reading; the position letter is $R$ and its parameters are $r$ and $r'$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in <em>The Elements and their Coefficients</em> and <em>Remarkable Subspaces</em> below; nothing in them changes the split stated here.</p>
 <p>One structural fact governs the whole series, so it is worth isolating. <strong>The scalar unit $i$ is central</strong>: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a <em>central</em> phase $\exp(i\alpha)$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.</p>
 <p><strong>The central phase is carried by the first coordinate.</strong> The phase is the unit complex number $\lambda=\exp(i\theta)$ multiplying $e_t$, and it acts on an element by left multiplication, $\tilde Q\mapsto\lambda e_t\tilde Q=\lambda\tilde Q$. On the coefficients this is $Q_t\mapsto\lambda Q_t$ and, with the same $\lambda$, $Q_x\mapsto\lambda Q_x$, $Q_y\mapsto\lambda Q_y$, $Q_z\mapsto\lambda Q_z$. <strong>The first line is the definition</strong>: the phase acts on $Q_t$, the coefficient of $e_t$, the first coordinate of the element, and there it rotates the two parameters $q_t$ and $q'_t$ of the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The other three coordinates follow, with the same $\lambda$, because the multiplication is $\mathbb{C}$-linear and $e_t$ is the unit. <strong>The action is therefore fixed by its value on one coordinate</strong>, and there is no second choice to make. The element carries one complex structure, $J=L_{ie_t}$, of which the phase is the exponential, $\lambda e_t=\exp(i\theta J)$; a second complex structure exists in the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ and in no element of $\mathbb{B}$.</p>
 <p><strong>A statement about the phase is a statement about the first coordinate and its forced extension.</strong> It is never a statement about one summand of a decomposition of the carrier. The words <em>on one half</em>, <em>on the other half</em> and <em>on both halves</em> are not written of the phase, because the element is not a sum of halves.</p>
@@ -226,7 +226,7 @@ $$</p>
 <p>$$
 \tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu,
 $$</p>
-<p>with $e_t$ at $\mu=t$ and $\vec e_\mu$ at $\mu=x,y,z$. The same rule reads a quaternion, $\tilde q=\sum_\mu q_\mu e_\mu$. The label names the unit, not the time coordinate: the material time is $t'$ and the informational time is $t$.</p>
+<p>with $e_t$ at $\mu=t$ and $\vec e_\mu$ at $\mu=x,y,z$. The same rule reads a quaternion, $\tilde q=\sum_\mu q_\mu e_\mu$. The label names the unit, not the time coordinate: the material time is $r'_t$ and the informational time is $t$.</p>
 <p><strong>The coefficient prime marks the slot that carries the $i$.</strong> Each complex coefficient is a real part plus $i$ times a real part,</p>
 <p>$$
 R_\mu = r_\mu + ir'_\mu, \qquad r_\mu, r'_\mu \in \mathbb{R}, \qquad \mu \in \{t, x, y, z\},
@@ -495,7 +495,7 @@ $$</p>
 <p>$$
 \tilde R_\psi = c r_t\,e_t + i\vec r_\psi, \qquad \vec r_\psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z ,
 $$</p>
-<p>with $r'_t$ the material time and $r_t$ the informational one. Under the unit images of <em>Matrix Representations Conventions</em>, §<em>The 2×2 Matrix Representation</em> ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $c r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$ of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>. The readable part of the old convention survives: the coefficient of $e_t$ is a length, $c r_t$, and it is read as an energy only when $\hbar$ is carried in the reading, in the exponent $\exp(-i\tilde R_\psi t'/\hbar)$ and not in the coefficient.</p>
+<p>with $r'_t$ the material time and $r_t$ the informational one. Under the unit images of <em>Matrix Representations Conventions</em>, §<em>The 2×2 Matrix Representation</em> ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $c r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$ of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>. The readable part of the old convention survives: the coefficient of $e_t$ is a length, $c r_t$, and it is read as an energy only when $\hbar$ is carried in the reading, in the exponent $\exp(-i\tilde R_\psi r'_t/\hbar)$ and not in the coefficient.</p>
 <p><strong>One abbreviation is allowed.</strong> In an article that does evolution, $H$ may be written for $\tilde R_\psi$ in its energy reading, and it must be declared at first use as</p>
 <p>$$
 H := \tilde R_\psi, \qquad H = c r_t\,e_t + i\vec r_\psi ,
@@ -676,7 +676,7 @@ $$</p>
 <tr>
 <td>$\tilde u_H$</td>
 <td>Evolution rotor</td>
-<td>$\exp(-i H_{R}t'/\hbar)=\exp(-\frac{\theta^{\mathrm{rat}}}{2}\vec u_R)$</td>
+<td>$\exp(-i H_{R}r'_t/\hbar)=\exp(-\frac{\theta^{\mathrm{rat}}}{2}\vec u_R)$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
 <td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\theta^{\mathrm{rat}}$</td>
 </tr>
@@ -685,7 +685,7 @@ $$</p>
 <td>Bound unit element: the Thomas interval rotor</td>
 <td>$\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$</td>
 <td>$\mathbb{B}$, norm one</td>
-<td>The unit-norm biquaternion that carries the rest frame at $t'$ to the rest frame at $t'+dt'$. It takes the glyph of the U family because it is of norm one; the role label $\mathrm{int}$ fixes it</td>
+<td>The unit-norm biquaternion that carries the rest frame at $r'_t$ to the rest frame at $r'_t+dr'_t$. It takes the glyph of the U family because it is of norm one; the role label $\mathrm{int}$ fixes it</td>
 </tr>
 </tbody>
 </table></div>
@@ -712,23 +712,23 @@ The two words are the left and the right polar decompositions of the same rotor.
 <tr>
 <td>$\tilde\nabla$</td>
 <td>Biquaternionic gradient</td>
-<td>$e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$</td>
+<td>$e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$</td>
 <td>Operator, $\mathbb{B}$-valued</td>
-<td>Its conjugate $\tilde\nabla^{\natural}=e_t\,\partial/\partial Q_t-\sum_k\,\vec e_k\,\partial/\partial Q_k$ is the second factor of $\Box$</td>
+<td>Its conjugate $\tilde\nabla^{\natural}=e_t\,\partial/\partial R_t-\sum_k\,\vec e_k\,\partial/\partial R_k$ is the second factor of $\Box$</td>
 </tr>
 <tr>
 <td>$\tilde\nabla^{\mathrm{gco}}$</td>
 <td>Gauge-covariant gradient</td>
-<td>$\tilde\nabla^{\mathrm{gco}}=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu$, $\tilde\nabla^{\mathrm{gco}}_\mu=\partial/\partial Q_\mu+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>$\tilde\nabla^{\mathrm{gco}}=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A=\sum_\mu e_\mu\tilde\nabla^{\mathrm{gco}}_\mu$, $\tilde\nabla^{\mathrm{gco}}_\mu=\partial/\partial R_\mu+\frac{iϙ}{\hbar}A_\mu$</td>
 <td>Operator, $\mathbb{B}$-valued</td>
 <td>The gauge-principle, covariant-derivative, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. It is the gradient with the coefficient replaced, not a derivative of its own: one index, one basis element, one coefficient per direction, and the basis untouched. Its conjugate is $\tilde\nabla^{\mathrm{gco},\natural}=\sum_\mu e_\mu^{\natural}\tilde\nabla^{\mathrm{gco}}_\mu$, the label before the involution. On the curvature it acts as $\tilde\nabla^{\mathrm{gco}}\tilde F=\tilde\nabla\tilde F+\frac{iϙ}{\hbar}[\tilde A,\tilde F]$, the Yang–Mills current. The coupling is written $\frac{iϙ}{\hbar}$ throughout the series; the older articles write the same operator as $\tilde\nabla+i\kappa\mathcal A$, with $\kappa=ϙ/\hbar$ and $\mathcal A=\tilde A$</td>
 </tr>
 <tr>
 <td>$\tilde K^{\mathrm{ret}}$</td>
 <td>Retarded-time gradient coefficient</td>
-<td>$\tilde K^{\mathrm{ret}}=\tilde\nabla^{\natural}t'_r=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$</td>
+<td>$\tilde K^{\mathrm{ret}}=\tilde\nabla^{\natural}r'_{t,\mathrm{ret}}=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$</td>
 <td>$\mathbb{M}_-$, null</td>
-<td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K^{\mathrm{ret}}\,d\tilde Q/dt'_r$ for a source depending on $t'_r$ alone. It is a zero divisor, $\langle\tilde K^{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not $*$-unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde\nabla^{\mathrm{gco}}$</td>
+<td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K^{\mathrm{ret}}\,d\tilde Q/dr'_{t,\mathrm{ret}}$ for a source depending on $r'_{t,\mathrm{ret}}$ alone. It is a zero divisor, $\langle\tilde K^{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not $*$-unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde\nabla^{\mathrm{gco}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -754,7 +754,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <tr>
 <td>$\tilde p$</td>
 <td>Canonical momentum quaternion</td>
-<td>$\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dt')$</td>
+<td>$\tilde p=p_te_t+\vec p$, $\tilde p=\partial L/\partial(d\tilde q/dr'_t)$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
 <td>Real quaternion with four components, scalar $p_t$ and vector $\vec p$; the Legendre conjugate of $\tilde q$. The maths articles bind it at the definition of a multiplication, $L_{\tilde p}(\tilde q_3)=\tilde p^{\natural}\tilde q_3$ for $\tilde p\in\mathbb{H}$; the letter is never generic</td>
 </tr>
@@ -777,7 +777,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>Material four-position</td>
 <td>$\tilde R_\varphi=i c r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 <td>$\mathbb{M}_-$</td>
-<td>The position of a world line; the translation displacement of the causality article is $\tilde{R}_{\varphi,\mathrm d}$ and of the Poincaré and conformal articles is $\tilde{R}_{\varphi,0}$. Its vector part is pure, $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dt'=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$; the second point of a convolution is $\tilde{R}_{\varphi,2}$</td>
+<td>The position of a world line; the translation displacement of the causality article is $\tilde{R}_{\varphi,\mathrm d}$ and of the Poincaré and conformal articles is $\tilde{R}_{\varphi,0}$. Its vector part is pure, $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and carries the arrow without the tilde; the rotor equation $d\vec r/dr'_t=\vec\omega_T\times\vec r$ is written on it. The corpus still writes the four-position $\tilde Q$; the second point of a convolution is $\tilde{R}_{\varphi,2}$</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal L}$</td>
@@ -817,7 +817,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <tr>
 <td>$\tilde Q_{\mathrm d}$</td>
 <td>Gauge parameter of the linearized diffeomorphism</td>
-<td>$\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial\tilde Q_{\mathrm d}/\partial Q_\mu$; $\zeta_\nu=\langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$</td>
+<td>$\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial\tilde Q_{\mathrm d}/\partial R_\mu$; $\zeta_\nu=\langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$</td>
 <td>$\mathbb{M}_-$</td>
 <td>The image of the diffeomorphism vector, one element of $\mathbb{M}_-$ whose four components remove four of the ten, $16=10+6\to6$. A parameter, not a connection, and written $\tilde Q_{\mathrm d}$, not $\tilde\Delta$; the central scalar $\Gamma$ of $\tilde A\mapsto\tilde A-\tilde\nabla\Gamma$ is the abelian case</td>
 </tr>
@@ -939,7 +939,7 @@ The two words are the left and the right polar decompositions of the same rotor.
 <td>Modular Hamiltonian</td>
 <td>$\tilde K^{\mathrm{mod}}=-\log\tilde{Ϛ}$; $\Delta=\exp(-\tilde K^{\mathrm{mod}})$</td>
 <td>$\mathbb{M}_+$</td>
-<td>The modular Hamiltonian of Tomita–Takesaki, with the modular flow $\sigma_{r'_{t}}(\tilde Q)=\Delta^{it'}\tilde Q\Delta^{-it'}$. In the finite-dimensional model it is $-\log\tilde{Ϛ}\in\mathbb{M}_+$; the labels $W$, $V$, $\omega$, $L$, $R$ name the region, state or side</td>
+<td>The modular Hamiltonian of Tomita–Takesaki, with the modular flow $\sigma_{r'_{t}}(\tilde Q)=\Delta^{ir'_t}\tilde Q\Delta^{-ir'_t}$. In the finite-dimensional model it is $-\log\tilde{Ϛ}\in\mathbb{M}_+$; the labels $W$, $V$, $\omega$, $L$, $R$ name the region, state or side</td>
 </tr>
 </tbody>
 </table></div>

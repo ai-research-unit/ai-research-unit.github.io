@@ -83,8 +83,8 @@
 <p>The <strong>effective action</strong> $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the <strong>Wilsonian</strong> effective action $\Gamma_k$, defined at a sliding scale $k$: $\Gamma_k$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_k$ on $k$ is what the RG computes.</p>
 <p>The exact statement of that dependence is the <strong>Wetterich equation</strong>,</p>
 <p>$$
-\boxed{\;\partial/\partial t' \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial t' R_k\right],
-\qquad t' = \log\frac{k}{\Lambda}\;},
+\boxed{\;\partial/\partial r'_t \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial r'_t R_k\right],
+\qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$</p>
 <p>where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\xi$, $R_k$ is a <strong>regulator</strong> that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.</p>
 <ol>
@@ -151,7 +151,7 @@ and the shell is $\Lambda/b < \sqrt{\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}} <
 S[\xi] = \int d^4x\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\lambda}{4!}\xi^4\right],
 $$</p>
 <p>whose coupling $\lambda$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.</p>
-<p>Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $t'$, and $u$ channels is</p>
+<p>Split the field into slow and fast modes, $\xi = \xi_< + \xi_>$, where $\xi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\xi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\xi^4$, the one-loop 1PI four-point function in the $s$, $r'_t$, and $u$ channels is</p>
 <p>$$
 \Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\lambda)^2\, I_>(p),
 \qquad
@@ -419,7 +419,7 @@ $$</p>
 <td>Regulator function</td>
 </tr>
 <tr>
-<td>$\partial/\partial t'\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial t' R_k]$</td>
+<td>$\partial/\partial r'_t\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial r'_t R_k]$</td>
 <td>Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace</td>
 </tr>
 <tr>

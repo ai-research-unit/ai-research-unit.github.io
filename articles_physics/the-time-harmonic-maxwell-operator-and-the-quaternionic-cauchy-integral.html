@@ -76,7 +76,7 @@
 <p>The theory was announced in the same period in a short note, V. V. Kravchenko, "Quaternion-valued integral representations of the harmonic electromagnetic and spinor fields", <em>Doklady Mathematics</em> <strong>51</strong> (1995), no. 2, 287–289, cited here for the <strong>unification</strong> it states. The general system of Kravchenko and Shapiro is one parametric system with a parameter $a\in\mathbb{B}$, and the note's point is that at one value of the parameter it is the time-harmonic <strong>Maxwell</strong> system and at another it is the time-harmonic <strong>Dirac</strong> system; the Cauchy integral formula, the Sokhotski formulas and the boundary-value problems are therefore obtained for the two fields "from the common point of view", and the boundary problems are presented as the analogues, for these equations, of analytic continuation in the theory of a complex-valued function. The Maxwell half is this article; the Dirac half, with the sense in which one Cauchy theory serves both, is in <em>The Dirac Equation in Biquaternionic Form</em>.</p>
 <p>The plan is the diagonalisation and then its consequences. The next section fixes the time-harmonic system and its Helmholtz reduction. The section after introduces the quaternionic Maxwell operator and shows what it is better for. Then the diagonalisation into the two conjugate Cauchy–Riemann equations, the correspondence it gives, and the decomposition of the Helmholtz null-set into two rotated halves. The remaining sections give the Maxwell–Cauchy kernel, the integral operators that go with it, the integral representations of the field — whose vector form is the classical Stratton–Chu formula — and the boundary-value problem that the same theory solves.</p>
 <h2 id="the-time-harmonic-system-in-a-homogeneous-medium">The Time-Harmonic System in a Homogeneous Medium</h2>
-<p>The convention is $\exp(-i\omega t')$, so that $\partial/\partial t'\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single <strong>complex conductivity</strong></p>
+<p>The convention is $\exp(-i\omega r'_t)$, so that $\partial/\partial r'_t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single <strong>complex conductivity</strong></p>
 <p>$$
 \sigma:=\sigma_*-i\omega\epsilon ,
 $$</p>
@@ -128,7 +128,7 @@ $$</p>
 <h2 id="the-quaternionic-maxwell-operator">The Quaternionic Maxwell Operator</h2>
 <p>The spatial operator is the Moisil–Theodoresco operator of the series,</p>
 <p>$$
-D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
+D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,
 \qquad
 D_3^2=-\Delta ,
 $$</p>
@@ -249,10 +249,10 @@ $$</p>
 <p>The time-dependent version of the same decomposition is stated in the book and makes the shape of $(16)$ clear:</p>
 <p>$$
 \ker\Bigl(\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2-\Delta\Bigr)
-=\ker\Bigl(\frac{1}{c}\partial/\partial t'+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t'-iD_3\Bigr),
+=\ker\Bigl(\frac{1}{c}\partial/\partial r'_t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial r'_t-iD_3\Bigr),
 \tag{17}
 $$</p>
-<p>with the biquaternionic Maxwell operator $(1/c)\partial/\partial t'+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.</p>
+<p>with the biquaternionic Maxwell operator $(1/c)\partial/\partial r'_t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.</p>
 <h2 id="the-maxwellcauchy-kernel-and-the-integral-operators">The Maxwell–Cauchy Kernel and the Integral Operators</h2>
 <p>The integral theory begins with the kernel of the first-order operators. Let $\mathrm{Sd}_\alpha$ be the outgoing fundamental solution of the Helmholtz operator,</p>
 <p>$$
@@ -356,12 +356,12 @@ $$</p>
 <td>Biquaternion algebra, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$</td>
 </tr>
 <tr>
-<td>$D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$</td>
+<td>$D_3=\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$</td>
 <td>Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$</td>
 </tr>
 <tr>
 <td>$\Delta$</td>
-<td>Spatial Laplacian $\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$</td>
+<td>Spatial Laplacian $\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$</td>
 </tr>
 <tr>
 <td>$\epsilon,\mu$</td>

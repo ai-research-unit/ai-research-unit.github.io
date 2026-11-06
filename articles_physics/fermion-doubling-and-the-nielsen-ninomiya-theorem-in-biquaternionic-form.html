@@ -74,11 +74,11 @@
 <p>This article treats fermion doubling in the biquaternion framework. The framework's honest contribution here is again a <strong>negative</strong> one, and it should be stated first: the biquaternion Dirac equation does <strong>not</strong> evade Nielsen–Ninomiya. If a lattice is imposed on the biquaternion gradient, the doubling argument applies unchanged, because the argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol about the origin — properties that the discretized biquaternion gradient shares with the standard one. The algebra is not a lattice, and it does not supply one. What the framework can do is state the obstruction in its own variables, and — this is the one positive structural point — its multivector form of the Dirac field places it naturally close to the <strong>Dirac–Kähler</strong> equation, whose simplicial discretization is exactly the staggered fermion, a lattice formulation whose doublers are reduced but not removed.</p>
 <p><strong>One operator, and it is the gradient.</strong> Every derivative of the article is the biquaternionic gradient of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, with its natural conjugate and its d'Alembertian,</p>
 <p>$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$</p>
 <p>with $\varepsilon=(1,-1,-1,-1)$. No second letter is introduced for it. No derivative of the article is two-sided: the lattice gradient of §<em>Naive Discretization</em> is this same operator with each coordinate derivative replaced by a symmetric difference.</p>
 <p>The next section sets up the naive discretization, its propagator and its doublers, and the taste degeneracy. The section after states the Nielsen–Ninomiya theorem and the index-theoretic idea of its proof, then surveys the resolutions and what each one sacrifices. The biquaternion reading follows: the discretization of the biquaternion gradient, the independence of the doubling from the algebra, the relation to Dirac–Kähler and staggered fermions, and the framework's index-theorem connection. The closing sections are the open questions, the summary, the notation table and the literature.</p>
@@ -91,13 +91,13 @@ $$</p>
 \qquad
 \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
 $$</p>
-<p>with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}^{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation.</p>
+<p>with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}^{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation.</p>
 <p><strong>The chirality is a right action.</strong> $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em>). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.</p>
 <p><strong>The lattice.</strong> A lattice of spacing $a$ has sites indexed by integer vectors $n=(n_1,n_2,n_3,n_4)$, and $\vec u_\mu$ is the unit lattice vector in the direction $\mu$. The index $\mu=1,\dots,4$ labels the four coordinate directions. The field becomes a Grassmann-valued element $\tilde{Ξ}^{\mathrm{sp}}_n$ at each site, with $\tilde{Ξ}^{\mathrm{sp}*}_n$ an independent Grassmann variable and not its conjugate, and each coordinate derivative is replaced by the <strong>symmetric difference</strong></p>
 <p>$$
 D_\mu\tilde{Ξ}^{\mathrm{sp}}_n=\frac{\tilde{Ξ}^{\mathrm{sp}}_{n+\vec u_\mu}-\tilde{Ξ}^{\mathrm{sp}}_{n-\vec u_\mu}}{2a},
 \qquad
-D_\mu\ \text{replaces}\ \frac{\partial}{\partial Q_\mu}.
+D_\mu\ \text{replaces}\ \frac{\partial}{\partial R_\mu}.
 $$</p>
 <p>The lattice gradient is the same gradient with these differences in place of the four derivatives,</p>
 <p>$$
@@ -107,7 +107,7 @@ $$</p>
 <p>$$
 S_F^L[\tilde{Ξ}^{\mathrm{sp}}] = a^4\sum_n \mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}_n\,\tilde\nabla^{L}\tilde{Ξ}^{\mathrm{sp}}_n\bigr],
 $$</p>
-<p>the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial Q_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §<em>The Nielsen–Ninomiya Theorem</em> in the same form as the standard discretization. The action reduces to $\int d^4x\,\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}\,\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.</p>
+<p>the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §<em>The Nielsen–Ninomiya Theorem</em> in the same form as the standard discretization. The action reduces to $\int d^4x\,\mathrm{Sc}\bigl[\tilde{Ξ}^{\mathrm{sp}*}\,\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.</p>
 <p><strong>The coordinates are the frame's own.</strong> The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=c r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.</p>
 <h3 id="the-propagator-and-the-doubler-poles">The propagator and the doubler poles</h3>
 <p><strong>The symbol.</strong> On a plane wave $\tilde{Ξ}^{\mathrm{sp}}_n\propto e^{ip\cdot x}$ the symmetric difference carries $i\sin(p_\mu a)/a$, so the lattice gradient acquires the element symbol</p>
@@ -190,7 +190,7 @@ $$</p>
 <p>What survives all of this is the part with experimental consequences: the correct anomaly structure in lattice QCD, and the impossibility of a chirally invariant lattice discretization of a chiral gauge theory.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <h3 id="discretizing-the-biquaternion-gradient">Discretizing the biquaternion gradient</h3>
-<p>The framework's gradient is $\tilde{\nabla}$, the one of <em>Operator and Calculus Conventions</em>, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol</p>
+<p>The framework's gradient is $\tilde{\nabla}$, the one of <em>Operator and Calculus Conventions</em>, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol</p>
 <p>$$
 \boxed{\;\tilde{\nabla} \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{k=x,y,z}\vec e_k\,\frac{i\sin(p_ka)}{a}\;},
 $$</p>
@@ -250,7 +250,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla^{L}$, $D_\mu$</td>
-<td>The lattice gradient $\sum_\mu e_\mu D_\mu$ and the symmetric difference replacing $\partial/\partial Q_\mu$</td>
+<td>The lattice gradient $\sum_\mu e_\mu D_\mu$ and the symmetric difference replacing $\partial/\partial R_\mu$</td>
 </tr>
 <tr>
 <td>$\tilde K(p)$</td>

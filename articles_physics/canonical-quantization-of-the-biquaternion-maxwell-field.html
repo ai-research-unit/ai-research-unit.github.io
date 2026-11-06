@@ -91,7 +91,7 @@ $$</p>
 <p>First, the equation is <strong>first order</strong>: $\tilde{\nabla}$ appears once. This is the same order as the biquaternion Dirac equation, and it is one order lower than the wave equation for the potential.</p>
 <p>Second, the <strong>real and imaginary parts of the single complex equation separate the homogeneous and inhomogeneous Maxwell equations</strong>. Writing $\vec F=\tilde{F}$ and decomposing $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ into its scalar and vector parts gives the two equations</p>
 <p>$$
-\mathrm{div}\,\vec F=R_0,\qquad \partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F=-\vec R,
+\mathrm{div}\,\vec F=R_0,\qquad \partial/\partial R_t\,\vec F+\mathrm{rot}\,\vec F=-\vec R,
 $$
 where $R_0$ and $\vec R$ are the scalar and vector parts of $-\sqrt{\mu}\,\tilde J$.</p>
 <p>Because $\sqrt{\epsilon}\,\vec E$ is the imaginary part of $\vec F$ and $-\sqrt{\mu}\,\vec H$ is its real part, the real part of $\mathrm{div}\,\vec F=R_0$ is $\mathrm{div}\,\vec H=0$, the imaginary part is Gauss's law $\mathrm{div}(\epsilon\vec E)=\rho$, and the vector equation reproduces Faraday's law from its imaginary part and the Ampère–Maxwell law from its real part. A single complex equation thus contains all four Maxwell equations, with the field's own complex structure doing the bookkeeping. This is the cleanest expression of why the biquaternion formulation prefers $\tilde{F}$.</p>
@@ -118,14 +118,14 @@ $$</p>
 <p><strong>The second-order, potential formulation.</strong> The field is $\tilde{A}$; the Lagrangian density in natural units is $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$; it is second order, and it is the formulation in which the Legendre transform and the canonical momentum are defined. This is the route the rest of the article follows.</p>
 <p><strong>The first-order, Palatini formulation.</strong> If one wants the field strength to remain the independent variable, one takes $\tilde{F}$ and $\tilde{A}$ as independent and uses the first-order action</p>
 <p>$$
-S=\int d^4x\left[-\sum_{\mu,\nu}F_{\mu\nu}\,\partial/\partial Q_\mu A_\nu+\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right].
+S=\int d^4x\left[-\sum_{\mu,\nu}F_{\mu\nu}\,\partial/\partial R_\mu A_\nu+\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right].
 $$</p>
-<p>Varying with respect to $A_\nu$ gives $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.</p>
+<p>Varying with respect to $A_\nu$ gives $\sum_\mu\partial/\partial R_\mu F_{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.</p>
 <p>This is the first finding of the article. The biquaternion formulation writes the theory in its most compact and most covariant form, first order in a gauge-invariant object; canonical quantization cannot start from that object. It must either return to the potential and accept the gauge redundancy, or use the first-order formulation and accept the potential as a multiplier. In neither case does the algebra supply the missing structure.</p>
 <h2 id="the-constraint-structure">The Constraint Structure</h2>
 <p>The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units the conjugate momenta are</p>
 <p>$$
-\pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t A_\mu)}=-F_{t\mu},
+\pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_t A_\mu)}=-F_{t\mu},
 $$</p>
 <p>so that</p>
 <p>$$
@@ -153,7 +153,7 @@ $$</p>
 $$</p>
 <p>and Gauss's law is a scalar-part condition as well. A direct computation of the quaternion product gives</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial/\partial Q_t\,\pi_0+\mathrm{div}\,\vec\pi,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial/\partial R_t\,\pi_0+\mathrm{div}\,\vec\pi,
 $$</p>
 <p>so that on the constraint surface, where $\pi_0\approx0$,</p>
 <p>$$
@@ -204,7 +204,7 @@ $$</p>
 <p>This is the quantization, and it works: two transverse polarizations, no negative-norm physical states, a positive-definite physical inner product. But the machinery was imported. The subsidiary condition is a condition on the potential, and the framework does not supply it; the indefinite inner product with $\sigma^{\mathrm{met}}_0=-1$ is a structure the algebra does not by itself demand. The one compensating observation is the one made above: the indefinite form $\sigma^{\mathrm{met}}$, with $\sigma^{\mathrm{met}}_0=-1$ and $\sigma^{\mathrm{met}}_k=+1$, is the biquaternion norm of $\mathbb{M}_-$, its one minus the square of the $i$ in $Q_t=i c r'_t$, so the indefinite inner product is not a new object but the framework's own. Whether that identification has content beyond the coincidence of form is open.</p>
 <p>The alternatives should be named. The <strong>Coulomb gauge</strong> $\mathrm{div}\,\vec A=0$ removes the gauge freedom non-covariantly, leaves only the two transverse modes from the start, and gives a manifestly positive-definite norm, at the price of an instantaneous interaction and a loss of manifest Lorentz covariance. It is the same physical theory; it differs in which structure is imposed by hand. The framework's covariance preference points at Gupta–Bleuler, but the preference is not a derivation.</p>
 <h2 id="comparison-with-the-scalar-field">Comparison with the Scalar Field</h2>
-<p>The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi^{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi^{\mathrm{scl}}/\partial t'$, the canonical commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with <strong>one</strong> polarization,</p>
+<p>The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\xi^{\mathrm{scl}}$ of mass $m$ has conjugate momentum $\pi=\partial\xi^{\mathrm{scl}}/\partial r'_t$, the canonical commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and a mode expansion with <strong>one</strong> polarization,</p>
 <p>$$
 \big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 $$</p>
@@ -265,7 +265,7 @@ $$</p>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$</td>
+<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$</td>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ $$</p>
 <td>Maxwell Lagrangian density (potential formulation)</td>
 </tr>
 <tr>
-<td>$\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_t A_\mu)=-F_{t\mu}$</td>
+<td>$\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_t A_\mu)=-F_{t\mu}$</td>
 <td>Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$</td>
 </tr>
 <tr>

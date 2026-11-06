@@ -170,14 +170,14 @@ $$
 where $\vec N_+$ is the self-dual half and $\vec N_-$ the anti-self-dual one, complex conjugates of each other for a real field: the field itself is the self-dual half and its conjugate is the anti-self-dual one, so the two are one complex triple read twice and not two halves of a sum. They are the two halves of the field tensor in the companion's convention, $\vec N \leftrightarrow F + i\star F$ and $\vec N^* \leftrightarrow F - i\star F$ with $\star\vec N = -i\vec N$, and they are not a partition of $\vec N$ into a sum but a partition of the six real field components into two complex triples. For a plane wave of definite helicity the field is supported on one half: the helicity $+1$ amplitude appears in $\vec N_+ = \vec E + ic\vec B$ and the helicity $-1$ amplitude in $\vec N_- = \vec E - ic\vec B$. The companion articles on the field strength and on the photon establish this and identify the two pieces as the two three-dimensional complex representations of the Lorentz group and as the $\pm1$ eigenspaces of the helicity operator. The reason it belongs to the scattering article is that the two helicity amplitudes of the scattering process are the amplitudes for the field to remain in, or move between, these two pieces, and the self-dual split is the algebraic reason there are two of them and not four. A scattering process that conserves helicity is one that leaves the decomposition intact; a helicity-flip process transfers amplitude between the two halves.</p>
 <h2 id="thomson-scattering">Thomson Scattering</h2>
 <h3 id="the-classical-cross-section">The classical cross-section</h3>
-<p>A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega t')$, so $\partial/\partial t' \to -i\omega$ and the equation $m\,d\vec v/dt' = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec x$ has $\ddot{\vec p} = -e\ddot{\vec x} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
+<p>A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega r'_t)$, so $\partial/\partial r'_t \to -i\omega$ and the equation $m\,d\vec v/dr'_t = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec r$ has $\ddot{\vec p} = -e\ddot{\vec r} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
 $$
 \Bigl\langle\frac{dP}{d\Omega}\Bigr\rangle
 = \frac{1}{16\pi^2\epsilon_0 c^3}\,\bigl\langle|\ddot{\vec p}_{\perp}|^2\bigr\rangle
 = \frac{e^4E_0^2}{32\pi^2\epsilon_0 c^3 m^2}\,
 \bigl|\varepsilon^{\mathrm{fop}}_{\mathrm{out}}\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 ,
 $$
-the factor $\tfrac12$ coming from $\langle\cos^2\omega t'\rangle$. Dividing by the incident intensity $I = \tfrac12\epsilon_0 cE_0^2$ gives the Thomson differential cross-section
+the factor $\tfrac12$ coming from $\langle\cos^2\omega r'_t\rangle$. Dividing by the incident intensity $I = \tfrac12\epsilon_0 cE_0^2$ gives the Thomson differential cross-section
 $$
 \boxed{\;
 \frac{d\sigma_T}{d\Omega} = r_e^2\,\bigl|\varepsilon^{\mathrm{fop}}_{\mathrm{out}}\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 ,
@@ -494,11 +494,11 @@ $$</p>
 <p>and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.</p>
 <p>The second is Kravchenko's <strong>two-sided</strong> equation, the dictionary form on $\mathbb{B}$,
 $$
-\mathcal{N}F = \Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F - mi\,\overline{F}\,\vec e_z = 0 ,
+\mathcal{N}F = \Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F - mi\,\overline{F}\,\vec e_z = 0 ,
 \qquad\text{that is}\qquad
 -\tilde\nabla^{\natural}F - mi\,\overline{F}\,\vec e_z = 0
 $$
-in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.</p>
+in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
