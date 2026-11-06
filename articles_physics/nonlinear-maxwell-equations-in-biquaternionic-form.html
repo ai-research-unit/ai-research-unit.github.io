@@ -155,7 +155,7 @@ $$</p>
 <tbody>
 <tr>
 <td>(3.14), first line</td>
-<td>$E\cdot(\partial/\partial t'E - \nabla\times H) + H\cdot(\partial/\partial t'H + \nabla\times E) = 0$</td>
+<td>$E\cdot(\partial/\partial r'_tE - \nabla\times H) + H\cdot(\partial/\partial r'_tH + \nabla\times E) = 0$</td>
 <td>$1.8 \times 10^{-15}$</td>
 </tr>
 <tr>
@@ -175,17 +175,17 @@ $$</p>
 </tr>
 <tr>
 <td>(4.4) first</td>
-<td>$\partial/\partial t'W + \nabla\cdot S = 0$</td>
+<td>$\partial/\partial r'_t\,W + \nabla\cdot S = 0$</td>
 <td>$2.7 \times 10^{-15}$</td>
 </tr>
 <tr>
 <td>(4.4) second</td>
-<td>$\partial/\partial t'S + \nabla W = Q$</td>
+<td>$\partial/\partial r'_tS + \nabla W = Q$</td>
 <td>$3.6 \times 10^{-15}$</td>
 </tr>
 <tr>
 <td>(5.1)–(5.5)</td>
-<td>$\partial/\partial t'S_\alpha - \partial/\partial R_\beta\sigma_{\alpha\beta} = 0$</td>
+<td>$\partial/\partial r'_tS_\alpha - \partial/\partial R_\beta\sigma_{\alpha\beta} = 0$</td>
 <td>$3.6 \times 10^{-15}$</td>
 </tr>
 </tbody>
@@ -195,7 +195,7 @@ $$</p>
 W = \tfrac{1}{2}(E^2 + H^2), \qquad \vec S = \vec E\times\vec H, \qquad
 \sigma_{\alpha\beta} = E_\alpha E_\beta + H_\alpha H_\beta - \tfrac{1}{2}\delta_{\alpha\beta}(E^2 + H^2),
 $$</p>
-<p>with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial t'T_{\alpha r_t} + \partial/\partial R_\beta T_{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.</p>
+<p>with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial r'_tT_{\alpha r_t} + \partial/\partial R_\beta T_{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.</p>
 <p>The caution the paper itself attaches belongs here: the nonlinear equation is <strong>recursive</strong>, in its own word, because the sources of a free field can be the field's own nonsingular structures. The regular currents are not an averaging of point charges, and the paper says so.</p>
 <h2 id="maxwell-embedded-and-the-two-ways-the-embedding-fails">Maxwell Embedded, and the Two Ways the Embedding Fails</h2>
 <h3 id="maxwell-as-a-special-case">Maxwell as a Special Case</h3>
@@ -228,7 +228,7 @@ $$</p>
 \frac{\partial g_0}{\partial r'_t} - \nabla\cdot\vec I_0 = 0.
 \tag{7.6}
 $$</p>
-<p><strong>The first line is wrong as printed.</strong> From the definitions, $\partial/\partial t'e_t = \partial/\partial r'_t\nabla\cdot\vec E = \nabla\cdot\partial/\partial r'_t\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial r'_t\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are <strong>equal</strong>, not opposite, so the relation that holds is</p>
+<p><strong>The first line is wrong as printed.</strong> From the definitions, $\partial/\partial r'_te_t = \partial/\partial r'_t\nabla\cdot\vec E = \nabla\cdot\partial/\partial r'_t\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial r'_t\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are <strong>equal</strong>, not opposite, so the relation that holds is</p>
 <p>$$\boxed{\;\frac{\partial e_t}{\partial r'_t} - \nabla\cdot\vec J_0 = 0\;},$$</p>
 <p>and the printed sum is not zero but twice $\partial/\partial r'_t\nabla\cdot\vec E$, which is $4.9$ at worst over $100$ random samplings of a smooth test field and generically nonzero. The second line is correct as printed, and the two lines are then consistent with each other and with the electric–magnetic symmetry the paper uses everywhere else: the electric pair and the magnetic pair carry the <strong>same</strong> relative sign once the magnetic current is the dual of the electric one. The relation is a consequence of the definitions and of the equality of mixed partial derivatives — a Clairaut identity — which is why the paper could reasonably call it easy to verify and still get one sign wrong.</p>
 <h2 id="associated-fields-and-the-coulomb-wave">Associated Fields and the Coulomb Wave</h2>
@@ -245,7 +245,7 @@ $$</p>
 $$</p>
 <p>solves the nonlinear system. The paper calls $F$ the field <strong>associated</strong> with the linear field $F_0$, and notes the more general form $F = F_0\exp(iΞ(r'_t,\vec r))$ with $Ξ$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,</p>
 <p>$$
-DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial/\partial t'f - iF_0\times\nabla f\bigr),
+DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial/\partial r'_tf - iF_0\times\nabla f\bigr),
 \tag{9.3}
 $$</p>
 <p>together with the observation that the equations then reduce to its (9.4), which hold because the quantities $\tfrac12F\cdot F^{*}$, $\tfrac{i}{2}F\times F^{*}$ and $(F_0\vec k_1)F_0^{*} + (F_0^{*}\vec k_1)F_0$ are real. Both steps were checked. The expression (9.3) is exact for a <strong>non-constant</strong> Maxwell $F_0$ as well, to $9.9 \times 10^{-16}$: the terms in $DF_0$ that the product rule would appear to require cancel precisely because $F_0$ is Maxwell. And the conclusion (9.2) was verified at the floating-point floor on three different backgrounds: a static inhomogeneous Maxwell field, with an extra general phase, $1.2 \times 10^{-15}$; and sums of one, two and three Maxwell plane waves, each multiplied by a common extra phase, at worst $4.7 \times 10^{-15}$ over $100$ random samplings each. The theorem is a real one and it was not previously in the corpus.</p>
@@ -256,7 +256,7 @@ $$</p>
 \boxed{\;F = \frac{\alpha\,\vec r}{r^3}\,\exp(i\theta^{\mathrm{pha}}(r'_t))\;},
 \tag{12.10}
 $$</p>
-<p>where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for <strong>any</strong> phase function, not only a linear one: with $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta^{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial t'f\} = s\,\partial/\partial t's = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta^{\mathrm{pha}}_r = 0$ and $s = \alpha/r^3$. The <strong>phase is therefore left completely free</strong> — the equations fix the spatial profile and the static modulus, never $\theta^{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.</p>
+<p>where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for <strong>any</strong> phase function, not only a linear one: with $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta^{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial r'_tf\} = s\,\partial/\partial r'_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta^{\mathrm{pha}}_r = 0$ and $s = \alpha/r^3$. The <strong>phase is therefore left completely free</strong> — the equations fix the spatial profile and the static modulus, never $\theta^{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em> supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.</p>
 <p>The paper also gives the covariant form, its (12.11): $F = F_0\exp(iΞ)$ with $F_0$ the Coulomb field transformed to the frame and $Ξ$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.</p>
 <p>The paper also derives the charge from the singularity. Applying the gradient to the Coulomb field (12.10) in the rest frame gives its (13.16),</p>
 <p>$$
@@ -303,7 +303,7 @@ $$</p>
 $$</p>
 <p>with $\vec a, \vec b$ fixed real orthonormal vectors in $P$ and $f, \theta^{\mathrm{pha}}$ scalar functions. Its twist is the paper's (11.4),</p>
 <p>$$
-\Omega = 2f\,(\vec b\,\partial/\partial R_x f - \vec a\,\partial/\partial R_y f),
+\Omega = 2f\,(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f),
 \tag{11.4}
 $$</p>
 <h3 id="where-the-claim-fails">Where the Claim Fails</h3>
@@ -320,14 +320,14 @@ f = f_1(r'_t+r_z)f_2(r_x,r_y) = (1 + r'_t + r_z)\,\exp(r_x), \quad \theta^{\math
 $$</p>
 <p>This is a flat normal field in the paper's sense: $|\vec E| = |\vec H|$, $\vec E\cdot\vec H = 0$, and $F^2 = 0$ — all three checked to $0$. It is a wave in the paper's own family, $f = f_1(r'_t+r_z)f_2(r_x,r_y)$. And it satisfies <strong>all four Maxwell equations exactly</strong>: the four regular currents (7.3) vanish to $0$ over $100$ random space-time points, so it is precisely the "linear" case of the contrast. Its twist is</p>
 <p>$$
-\Omega = (0,\ 2f\,\partial/\partial R_x f,\ 0) = \bigl(0,\ 2(1+r'_t+r_z)\exp(2x),\ 0\bigr),
+\Omega = (0,\ 2f\,\partial/\partial r_x f,\ 0) = \bigl(0,\ 2(1+r'_t+r_z)\exp(2r_x),\ 0\bigr),
 $$</p>
 <p>verified to $1.4 \times 10^{-14}$ and nonzero wherever $r'_t + r_z \ne -1$. So a Maxwell field with a twisting energy flow exists, in the family the paper proposes as the nonlinear counterexample, and the section's conclusion — that nonlinearity is what permits a swirling flow — is not established.</p>
 <p><strong>The correct statement.</strong> For the flat normal field (11.2) the four Maxwell equations hold if and only if, in a frame where $P$ is spanned by $\vec a, \vec b$ and $\vec u = \vec a\times\vec b$ is the normal,</p>
 <p>$$
 \partial/\partial r'_t f = \partial/\partial n f, \qquad \partial/\partial n\,\theta^{\mathrm{pha}} = 0, \qquad \partial/\partial a f = -f\partial/\partial b\,\theta^{\mathrm{pha}}, \qquad \partial/\partial b f = f\partial/\partial a\,\theta^{\mathrm{pha}},
 $$</p>
-<p>which in the coordinates of the counterexample ($\vec a = \vec e_x$, $\vec b = \vec e_y$, $\vec u = \vec e_z$) read $\partial/\partial r'_t f = \partial/\partial R_z f$, $\partial/\partial R_z\theta^{\mathrm{pha}} = 0$, $\partial/\partial R_x f = -f\partial/\partial R_y\theta^{\mathrm{pha}}$, $\partial/\partial R_y f = f\,\partial/\partial R_x\theta^{\mathrm{pha}}$. Each of the four was verified to be <strong>necessary</strong> by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $\partial/\partial r'_t f \ne \partial/\partial R_z f$, $4.6 \times 10^{0}$ for $\partial/\partial R_z\theta^{\mathrm{pha}} \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be <strong>sufficient</strong>, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec b\,\partial/\partial a f - \vec a\,\partial/\partial b f)$, in these coordinates $2f(-\partial/\partial R_y f, \partial/\partial R_x f, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.</p>
+<p>which in the coordinates of the counterexample ($\vec a = \vec e_x$, $\vec b = \vec e_y$, $\vec u = \vec e_z$) read $\partial/\partial r'_t f = \partial/\partial r_z f$, $\partial/\partial r_z\theta^{\mathrm{pha}} = 0$, $\partial/\partial r_x f = -f\partial/\partial r_y\theta^{\mathrm{pha}}$, $\partial/\partial r_y f = f\,\partial/\partial r_x\theta^{\mathrm{pha}}$. Each of the four was verified to be <strong>necessary</strong> by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $\partial/\partial r'_t f \ne \partial/\partial r_z f$, $4.6 \times 10^{0}$ for $\partial/\partial r_z\theta^{\mathrm{pha}} \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be <strong>sufficient</strong>, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec b\,\partial/\partial a f - \vec a\,\partial/\partial b f)$, in these coordinates $2f(-\partial/\partial r_y f, \partial/\partial r_x f, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.</p>
 <p>The two pairs are independent: one fixes the propagation along the normal, the other is a Cauchy–Riemann pair for $\ln f$ and $\theta^{\mathrm{pha}}$ in the plane, solvable precisely when $\ln f$ is planar-harmonic. Both can hold at once, which is why a Maxwell field with a twisting flow exists — for instance every field of the paper's own family $f = f_1(r'_t+r_z)f_2(r_x,r_y)$ with $\theta^{\mathrm{pha}}$ independent of $z$ and $(f_2, \theta^{\mathrm{pha}})$ a Cauchy–Riemann pair in the plane. The contrast the paper wanted is therefore not between linear and nonlinear solutions but between <em>planar-uniform</em> and <em>planar-varying</em> ones, and the corpus has not found a way to keep the paper's interpretation.</p>
 <p>Given the strength of that finding, the rest of the section's apparatus is recorded for completeness and not relied upon: the running wave $f_1(r'_t\pm r_z)$, the interpretation of the twist as a vortex structure of the energy flow, and the conclusion that nonlinearity "manifests itself as the ability to form vortex structures" are all the paper's, and all rest on a dichotomy that the counterexample removes.</p>
 <h2 id="what-is-verified-and-what-is-not">What Is Verified and What Is Not</h2>
@@ -401,15 +401,15 @@ $$</p>
 <td>Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ gives $1.7 \times 10^{-13}$</td>
 </tr>
 <tr>
-<td>(7.6) second line, $\partial/\partial t'g_0 - \nabla\cdot\vec I_0 = 0$</td>
+<td>(7.6) second line, $\partial/\partial r'_tg_0 - \nabla\cdot\vec I_0 = 0$</td>
 <td>Correct</td>
 </tr>
 <tr>
-<td>(7.6) first line, $\partial/\partial t'e_t + \nabla\cdot\vec J_0 = 0$</td>
-<td><strong>Wrong as printed</strong>; the true identity is $\partial/\partial t'e_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test</td>
+<td>(7.6) first line, $\partial/\partial r'_te_t + \nabla\cdot\vec J_0 = 0$</td>
+<td><strong>Wrong as printed</strong>; the true identity is $\partial/\partial r'_te_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test</td>
 </tr>
 <tr>
-<td>(11.4) $\Omega = 2f(\vec b\,\partial/\partial R_x f - \vec a\,\partial/\partial R_y f)$</td>
+<td>(11.4) $\Omega = 2f(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f)$</td>
 <td>Correct identity, $1.8 \times 10^{-15}$</td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ $$</p>
 </tr>
 <tr>
 <td>"Maxwell normal plane field has no twist"</td>
-<td><strong>False</strong>; counterexample $f = (1+r'_t+r_z)\exp(r_x)$, $\theta^{\mathrm{pha}} = -y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2f\,\partial/\partial R_x f, 0) \ne 0$</td>
+<td><strong>False</strong>; counterexample $f = (1+r'_t+r_z)\exp(r_x)$, $\theta^{\mathrm{pha}} = -r_y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2f\,\partial/\partial r_x f, 0) \ne 0$</td>
 </tr>
 <tr>
 <td>The Appendix proofs of the uniqueness statement (3.1)</td>
@@ -481,7 +481,7 @@ $$</p>
 </tr>
 <tr>
 <td>$DF$</td>
-<td>The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial t'A + i\nabla\times A)$ for $F = (0, A)$</td>
+<td>The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial r'_tA + i\nabla\times A)$ for $F = (0, A)$</td>
 </tr>
 <tr>
 <td>$d\Sigma = \tfrac12F^{*}dZF$</td>

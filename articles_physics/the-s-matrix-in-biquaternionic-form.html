@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>S-matrix</strong> is the operator that carries the state of a scattering experiment from the remote past to the remote future. In the interaction picture it is the time-ordered exponential of the interaction Hamiltonian,</p>
 <p>$$
-S \;=\; T\exp\!\left(-i\int d^4x\;\mathcal{H}_I(x)\right),
+S \;=\; T\exp\!\left(-i\int d^4r\;\mathcal{H}_I(x)\right),
 $$</p>
 <p>and the transition probability is the squared matrix element of $S$ between the initial state and the final state. Its defining property is <strong>unitarity</strong>, $S^{\dagger} S = 1$. It is the object in which the dynamics of an interacting field theory is summarized. Throughout, $i$ is the central scalar imaginary of the algebra, with $i^2=-1$; natural units $\hbar=c=1$ are used except in the mass-shell relation, where $c$ is restored.</p>
 <p>The companion articles have assembled every ingredient this article needs. <em>The Dirac Equation in Biquaternionic Form</em> fixes the one-sided pair $\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R$ that the quantized field satisfies and keeps it apart from Kravchenko's two-sided equation. <em>Canonical Quantization of the Biquaternion Dirac Field</em> promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> sharpens that result: the Fock space is a <strong>module</strong> over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. <em>The Feynman Propagator in Biquaternionic Form</em> supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.</p>
@@ -95,7 +95,7 @@ $$</p>
 <p>Expanding the exponential gives the <strong>Dyson series</strong>,</p>
 <p>$$
 S \;=\; \sum_{n=0}^{\infty}\frac{1}{n!}\left(-i\right)^{n}
-\int d^4x_1\cdots d^4x_n\; T\big\{\mathcal{H}_I(x_1)\cdots\mathcal{H}_I(x_n)\big\},
+\int d^4r_1\cdots d^4r_n\; T\big\{\mathcal{H}_I(x_1)\cdots\mathcal{H}_I(x_n)\big\},
 $$</p>
 <p>the $n=0$ term being the identity. Since $H_I$ is Hermitian, the evolution operator obeys $i\,\partial/\partial r'_t\, U_I(r'_t,r'_{t,1}) = H_I(r'_t)U_I(r'_t,r'_{t,1})$ with $U_I(r'_{t,1},r'_{t,1}) = 1$, which gives $U_I^\dagger U_I = 1$; hence the S-matrix is unitary, $S^{\dagger}S = 1$. The adjoint is written $\dagger$ on operators and $*$ on elements of $\mathbb{B}$, so that the two cannot be confused. For an element of $\mathbb{B}$ the condition is $\tilde S^{*}\tilde S = e_t$, equivalent to $\tilde S\tilde S^{*} = e_t$, because either order makes $\tilde S^{*}$ the inverse of $\tilde S$; the two orders are used interchangeably below. (Individual truncations of the Dyson series are not unitary; it is the summed operator that is.)</p>
 <p>Three features of this construction are worth naming, because they are the points at which the biquaternion structure enters.</p>
@@ -422,7 +422,7 @@ $$</p>
 <td>One-mode Hermitian generator</td>
 </tr>
 <tr>
-<td>$S=T\exp(-i\int d^4x\;\mathcal{H}_I)$</td>
+<td>$S=T\exp(-i\int d^4r\;\mathcal{H}_I)$</td>
 <td>S-matrix, the time-ordered exponential (Dyson series)</td>
 </tr>
 <tr>

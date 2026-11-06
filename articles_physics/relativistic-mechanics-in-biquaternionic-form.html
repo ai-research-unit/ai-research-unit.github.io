@@ -94,13 +94,13 @@ $$</p>
 <h2 id="the-invariant-interval">The Invariant Interval</h2>
 <p>The <strong>invariant interval</strong> between two nearby events in spacetime is the <strong>biquaternion norm</strong> of the displacement biquaternion $d\tilde R_\varphi \in \mathbb{M}_-$:</p>
 <p>$$
-\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2\;}
+\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -c^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
 $$</p>
 <p>Here $\overline{d\tilde R_\varphi} = ic\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.</p>
 <p>The displacement $d\tilde R_\varphi$ is a <strong>material element</strong>, and the interval is its norm; a spacelike distance is read from that norm.</p>
 <p><strong>The biquaternion norm on $\mathbb{M}_-$.</strong> For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t = i q'_t$ imaginary and $\vec Q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ real, the biquaternion norm is</p>
 <p>$$
-\tilde R_\varphi\tilde R_\varphi^{\natural} = Q_t^2 + |\vec Q|^2 = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2,
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + |\vec Q|^2 = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2,
 $$</p>
 <p>which is a real scalar of signature $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.</p>
 <p>The interval is invariant under the Lorentz group, which in the biquaternion framework is the group of <strong>rotor conjugations</strong> (see the companion article on the Lorentz transformation).</p>
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 S = -mc\int\sqrt{-\,d\tilde R_\varphi\,\overline{d\tilde R_\varphi}},
 $$</p>
-<p>where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes</p>
+<p>where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes</p>
 <p>$$
 S = -mc^2\int\frac{dr'_t}{\gamma} = -mc^2\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
 $$</p>
@@ -225,7 +225,7 @@ $$</p>
 <tr>
 <td>Invariant interval</td>
 <td>$ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi}$</td>
-<td>$= -c^2 d{r'_{t}}^2 +dx^2+dy^2+dz^2$</td>
+<td>$= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$</td>
 </tr>
 <tr>
 <td>Four-velocity</td>

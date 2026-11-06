@@ -73,7 +73,7 @@
 <p>The preceding articles of this subcategory treat the particle's kinematics, the causal cone, the Lorentz group and its topology. Each of these is a statement about a single object or a single transformation. The present article treats the quantity that ties the objects together under evolution: the <strong>stress–energy tensor</strong>, and the <strong>action</strong> from which both the field equations and the conservation laws follow.</p>
 <p>The organizing fact is that in a Lagrangian field theory the stress–energy tensor is not an independent input. It is the Noether current of translation invariance of the action,</p>
 <p>$$
-S[\tilde{Ξ}^{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4x ,
+S[\tilde{Ξ}^{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
 $$</p>
 <p>so that the same action that yields the field equations through the Euler–Lagrange equations also yields the ten components of $T_{\mu\nu}$ through Noether's theorem, and the conservation law</p>
 <p>$$
@@ -94,9 +94,9 @@ $$</p>
 <h2 id="the-field-action-in-biquaternion-form">The Field Action in Biquaternion Form</h2>
 <p>The action of a field theory is a functional of the field and its first derivatives,</p>
 <p>$$
-S = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4x ,
+S = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
 \qquad
-d^4x = c\,dr'_t\,dx\,dy\,dz ,
+d^4r = c\,dr'_t\,dr_x\,dr_y\,dr_z ,
 $$</p>
 <p>and the field equation is its stationarity condition. For each field component $\tilde{Ξ}^{\mathrm{sp}}_a$ the <strong>Euler–Lagrange equation</strong> is</p>
 <p>$$
@@ -128,7 +128,7 @@ $$</p>
 <h3 id="the-electromagnetic-action">The Electromagnetic Action</h3>
 <p>For the field strength $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$ the free action is</p>
 <p>$$
-S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \qquad
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} ,
 $$</p>
@@ -136,7 +136,7 @@ $$</p>
 <p>$$
 \sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0 ,
 $$</p>
-<p>and adding the minimal-coupling term $S_{\mathrm{int}}=-\int \sum_\nu A_\nu J_\nu\,d^4x$ with the four-current $J_\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation</p>
+<p>and adding the minimal-coupling term $S_{\mathrm{int}}=-\int \sum_\nu A_\nu J_\nu\,d^4r$ with the four-current $J_\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation</p>
 <p>$$
 \tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J},
 \qquad
@@ -184,12 +184,12 @@ $$</p>
 $$</p>
 <p>is the statement that the four-momentum</p>
 <p>$$
-P_\nu = \frac{1}{c}\int T_{t\nu}\,d^3x
+P_\nu = \frac{1}{c}\int T_{t\nu}\,d^3r
 $$</p>
 <p>is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.</p>
 <p>As a check, consider the superposition</p>
 <p>$$
-\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1x-\omega_1r'_t\right) + 0.6\cos\!\left(k_2y-\omega_2r'_t\right),
+\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1r_x-\omega_1r'_t\right) + 0.6\cos\!\left(k_2r_y-\omega_2r'_t\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -325,7 +325,7 @@ $$</p>
 $$</p>
 <p>has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{Ξ}=0$, and the electromagnetic action</p>
 <p>$$
-S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \qquad
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 $$</p>
@@ -381,7 +381,7 @@ $$</p>
 <td>Unit metric; the same in $\mathbb{B}$ and on the two sectors</td>
 </tr>
 <tr>
-<td>$S=\int\mathcal{L}\,d^4x$</td>
+<td>$S=\int\mathcal{L}\,d^4r$</td>
 <td>Action; $\mathcal{L}$ the Lagrangian density</td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ $$</p>
 <td>Field strength</td>
 </tr>
 <tr>
-<td>$S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4x$</td>
+<td>$S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4r$</td>
 <td>Electromagnetic action</td>
 </tr>
 <tr>

@@ -109,9 +109,9 @@ r'_t^{\mathrm{ret}} = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\v
 \qquad
 r'_{t,\mathrm{adv}} = r'_t + \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}.
 $$</p>
-<p>Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_t^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{t,\mathrm{adv}}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then</p>
+<p>Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_t^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{t,\mathrm{adv}}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then</p>
 <p>$$
-r'_t^{\mathrm{ret}}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c},
+r'_t^{\mathrm{ret}}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c},
 $$</p>
 <p>independent of $r'_t$, while $r'_{t,\mathrm{adv}}$ increases at rate $2$; and conversely for the incoming ray.</p>
 <p>For a displacement whose spatial part is collinear with $\vec u_{\mathrm s}$ — which is the case for a signal along $\vec u_{\mathrm s}$ — the biquaternion norm factorizes in these coordinates:</p>
@@ -130,8 +130,8 @@ $$</p>
 <p>A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde R_\varphi(\lambda)$, the <strong>proper time</strong> is defined by</p>
 <p>$$
 c\,d\tau = \sqrt{-\,\langle d\tilde R_\varphi\rangle_{\natural}}
-= \sqrt{-\left(ic\,dr'_t\right)^2 -(dx^2+dy^2+dz^2)}
-= \sqrt{c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2)},
+= \sqrt{-\left(ic\,dr'_t\right)^2 -(dr_x^2+dr_y^2+dr_z^2)}
+= \sqrt{c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2)},
 $$</p>
 <p>the positive root being taken because $d\tilde R_\varphi$ is timelike along a physical worldline, so that $\langle d\tilde R_\varphi\rangle_{\natural} < 0$ and $-\langle d\tilde R_\varphi\rangle_{\natural} > 0$. Factoring the coordinate time,</p>
 <p>$$

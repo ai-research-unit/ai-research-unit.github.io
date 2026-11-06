@@ -75,8 +75,8 @@
 \boxed{\;
 \begin{aligned}
 &\langle p_{n+1}\cdots p_{n+m}|S|p_1\cdots p_n\rangle\\[2pt]
-&\quad=\Big[\prod_{j=n+1}^{n+m}\int d^4x_j\,\exp(ip_j\cdot x_j)\Big]
-\Big[\prod_{i=1}^{n}\int d^4x_i\,\exp(-ip_i\cdot x_i)\Big]\\[2pt]
+&\quad=\Big[\prod_{j=n+1}^{n+m}\int d^4r_j\,\exp(ip_j\cdot x_j)\Big]
+\Big[\prod_{i=1}^{n}\int d^4r_i\,\exp(-ip_i\cdot x_i)\Big]\\[2pt]
 &\quad\qquad\times\Big[\prod_{j=1}^{n+m}\big(\Box_j-m^2\big)\Big]
 \big\langle 0\big|T\,\tilde{Ξ}(x_1)\cdots\tilde{Ξ}(x_{n+m})\big|0\big\rangle\Big|_{\text{on shell}},
 \end{aligned}
@@ -113,7 +113,7 @@ where $\tilde{Ξ}_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-functio
 <p><strong>The formula.</strong> With $G^{(n+m)}(x_1,\dots,x_{n+m})=\langle0|T\,\tilde{Ξ}(x_1)\cdots\tilde{Ξ}(x_{n+m})|0\rangle$ the position-space correlator, the content of the display of the Introduction is
 $$
 \langle f|S|i\rangle
-= \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(\pm ip_j\cdot x_j)\Big]
+= \Big[\prod_{\text{legs}}\int d^4r_j\,\exp(\pm ip_j\cdot x_j)\Big]
 \Big[\prod_{\text{legs}}\big(\Box_j-m^2\big)\Big]
 G^{(n+m)}(x_1,\dots,x_{n+m})\Big|_{\text{on shell}} ,
 $$
@@ -233,7 +233,7 @@ $$
 each product $\tilde W\bar{\tilde W}$ being read as the action $\tilde{Ξ}^{\mathrm{sp}}\mapsto \tilde W\tilde{Ξ}^{\mathrm{sp}}\bar{\tilde W}$, and the second sum being the numerator for a $\tilde{Ξ}^{\mathrm{sp}\natural}$ leg. A leg of the field with spin is thus a sum of two spin-state reductions with a common central pole: not one scalar reduction, and not an unfactorizable object either, since the action splits into the two spin states. That factorization is what lets the reduction put one external spin amplitude on each leg, $\tilde W^{(r)}$ on a positive-frequency leg and $\tilde V^{(r)}$ on a negative-frequency one, and the reduction reads
 $$
 \langle f|S|i\rangle_{\text{spin}}
-= \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(s_j ip_j\cdot x_j)\Big]
+= \Big[\prod_{\text{legs}}\int d^4r_j\,\exp(s_j ip_j\cdot x_j)\Big]
 \Big[\prod_{\text{legs}}\big(\mathcal{A}_{p_j}-\varepsilon_j m\big)\Big]
 \big\langle 0\big|T\,\tilde{Ξ}^{\mathrm{sp}}(x_1)\cdots\tilde{Ξ}^{\mathrm{sp}\natural}(x_{n+m})\big|0\big\rangle\Big|_{\text{on shell}} ,
 $$

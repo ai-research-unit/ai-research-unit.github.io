@@ -145,7 +145,7 @@ $$</p>
 <h3 id="the-solution-as-a-rotation-of-the-centre">The Solution as a Rotation of the Centre</h3>
 <p>The equation of motion in the amplitude variables is the pair</p>
 <p>$$
-dx/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
+dr_x/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
 $$</p>
 <p>which is equivalent to the single complex equation</p>
 <p>$$
@@ -157,9 +157,9 @@ $$</p>
 $$</p>
 <p>so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = r_x\,e_t + i\varpi\,e_t$ by $\exp(-i\omega r'_t)$ and using the centrality of $i$ gives</p>
 <p>$$
-r_x(r'_t) = x_0\cos\omega r'_t + \varpi_0\sin\omega r'_t, \qquad \varpi(r'_t) = \varpi_0\cos\omega r'_t - x_0\sin\omega r'_t ,
+r_x(r'_t) = r_{0x}\cos\omega r'_t + \varpi_0\sin\omega r'_t, \qquad \varpi(r'_t) = \varpi_0\cos\omega r'_t - r_{0x}\sin\omega r'_t ,
 $$</p>
-<p>which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(r'_t) = p(r'_t)/(m\omega)$, so this is $r_x(r'_t) = x_0\cos\omega r'_t + \frac{p_0}{m\omega}\sin\omega r'_t$ and $p(r'_t) = p_0\cos\omega r'_t - m\omega x_0\sin\omega r'_t$.</p>
+<p>which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(r'_t) = p(r'_t)/(m\omega)$, so this is $r_x(r'_t) = r_{0x}\cos\omega r'_t + \frac{p_0}{m\omega}\sin\omega r'_t$ and $p(r'_t) = p_0\cos\omega r'_t - m\omega r_{0x}\sin\omega r'_t$.</p>
 <h3 id="the-generator-lies-in-the-material-sector">The Generator Lies in the Material Sector</h3>
 <p>The generator of the phase rotation is the central element</p>
 <p>$$
@@ -198,9 +198,9 @@ $$</p>
 <p>which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $\langle\cdot\rangle_{\natural}$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.</p>
 <p>The two forms coincide only on the real axis: for $\tilde{A} = r_x\,e_t$, $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\tilde{A}^{*} = r_x^2e_t$. The discrepancy grows with the imaginary (momentum) quadrature, which is exactly the quadrature that the sector decomposition places in $\mathbb{M}_-$.</p>
 <h2 id="the-flow-as-a-bracket-derivation">The Flow as a Bracket Derivation</h2>
-<p>The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(x^2 + \varpi^2)$. The equations of motion are the bracket equations</p>
+<p>The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(r_x^2 + \varpi^2)$. The equations of motion are the bracket equations</p>
 <p>$$
-dx/dr'_t = \{x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
+dr_x/dr'_t = \{r_x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
 \,d\varpi/dr'_t = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial r_x} = -\omega r_x ,
 $$</p>
 <p>which are the two real equations of the phase advance. Assembling them into the amplitude gives $d\tilde{A}/dr'_t = -i\omega\tilde{A}$ again.</p>
@@ -211,7 +211,7 @@ $$</p>
 <p>The companion article on the quantum oscillator asks whether the complexification that defines $\mathbb{B}$ makes the material and informational sectors behave as two oscillators, and answers the question in the quantum setting. The classical case has a clean answer, and it is worth stating.</p>
 <p><strong>The classical oscillator is one oscillator, not two.</strong> The phase rotation is a single one-parameter group, with a single frequency $\omega$ and a single conserved energy. There is no second frequency and no independent second degree of freedom. The phase plane is two-real-dimensional, and it is exhausted by the two quadratures of the single amplitude.</p>
 <p><strong>The two sectors carry the two quadratures, not two modes.</strong> The $\mathbb{M}_+$ and $\mathbb{M}_-$ parts of $\tilde{A}$ are $r_x\,e_t$ and $i\varpi\,e_t$; they are the real and imaginary parts of one complex number, coupled rigidly by the phase rotation. They are not independently excitable: setting one to zero at one time does not keep it zero, because the flow carries it into the other after a quarter period. The sector split of the centre is a <strong>direct-sum decomposition of the phase plane</strong>, and the dynamics is a rotation that does not respect it.</p>
-<p><strong>The two first-order equations are the sector pair.</strong> The equation of motion, written as $dx/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.</p>
+<p><strong>The two first-order equations are the sector pair.</strong> The equation of motion, written as $dr_x/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.</p>
 <p>A genuinely two-oscillator structure would require two independent complex amplitudes, hence a four-real-dimensional phase space and two frequencies. That is what a two-dimensional isotropic oscillator has, and it is not the structure of the centre. The centre is one complex dimension, and the two sectors are its real and imaginary axes.</p>
 <h2 id="summary">Summary</h2>
 <p>The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde R_\varphi = i c r'_{t}\,e_t + r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z$ with $d^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/d{r'_{t}}^2 = -\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.</p>

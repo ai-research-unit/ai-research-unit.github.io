@@ -207,7 +207,7 @@ $$</p>
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{x_k}{r},$$</p>
+r_{,k} = \frac{r_k}{r},$$</p>
 <p>so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is</p>
 <p>$$
 \tilde J_{\mathrm{eg},00}^{\,\hat e}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
@@ -236,7 +236,7 @@ $$</p>
 <p>which is just the biquaternion product carried out with convolution in place of multiplication; it was checked against that product to machine precision. The mechanism is elementary: a shift commutes with a derivative, $D(S_{\vec s}f) = S_{\vec s}(Df)$ for $S_{\vec s}f(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = f(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec s)$, which was verified exactly on a grid, so every shifted copy of a solution is a solution, and so is any weighted sum of copies.</p>
 <p>Choosing the structural biquaternion to be a lattice of shifted $\delta$-functions is what the paper builds from this. For an inhomogeneous rectangular lattice with steps $(h_l,h_m,h_n)$ and weights $a_{lmn}$,</p>
 <p>$$
-K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_{l,m,n} a_{lmn}\,\delta(x_1 - l h_l)\,\delta(x_2 - m h_m)\,\delta(x_3 - n h_n),
+K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_{l,m,n} a_{lmn}\,\delta(r_x - l h_l)\,\delta(r_y - m h_m)\,\delta(r_z - n h_n),
 $$</p>
 <p>and convolution with it is the weighted sum of shifted copies of the base particle,</p>
 <p>$$
@@ -405,7 +405,7 @@ $$</p>
 <td>Radial unit vector</td>
 </tr>
 <tr>
-<td>$r_{,k} = x_k/r$</td>
+<td>$r_{,k} = r_k/r$</td>
 <td>Direction cosines; $\sum_k r_{,k}^2 = 1$</td>
 </tr>
 <tr>

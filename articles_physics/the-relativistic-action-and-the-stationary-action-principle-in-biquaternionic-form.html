@@ -85,7 +85,7 @@
 <h3 id="the-statement">The statement</h3>
 <p>An action is a real functional of the fields,
 $$
-S[\tilde{Ξ}] = \int \mathcal{L}\bigl(\tilde{Ξ}, \partial/\partial R_\mu\tilde{Ξ}\bigr)\,d^4x ,
+S[\tilde{Ξ}] = \int \mathcal{L}\bigl(\tilde{Ξ}, \partial/\partial R_\mu\tilde{Ξ}\bigr)\,d^4r ,
 $$
 and the principle is that the physical field is a stationary point,
 $$
@@ -121,7 +121,7 @@ where the derivatives are the components of the biquaternionic gradient of $\mat
 <h3 id="the-boundary-term-and-the-choice-of-greens-function">The boundary term and the choice of Green's function</h3>
 <p>Carrying the integration by parts without discarding the surface term leaves
 $$
-\delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{Ξ}\,d^4x
+\delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{Ξ}\,d^4r
 + \oint_{\partial\Omega} \sum_\mu \mathrm{Sc}\!\left[\overline{\bigl(\partial/\partial R_\mu\tilde{Ξ}\bigr)}\,\delta\tilde{Ξ}\right] n_\mu\,d\Sigma ,
 $$
 and the two terms say different things. The vanishing of the first for arbitrary interior variations is the equation of motion; the vanishing of the second for the variations admitted by the problem is the boundary condition. Because the equation of motion is the same for every admissible boundary condition, the boundary term is what selects among the several Green's functions of the operator article: the retarded kernel is the one whose associated surface term vanishes for a source that switches on in the past, the advanced kernel for one that switches off in the future, and the causal kernel for the Feynman prescription that projects onto positive frequencies forward and negative frequencies backward. The stationary-action principle therefore does not merely produce the operator; it produces it together with the boundary condition that makes the inversion well posed, and the freedom of the boundary term is exactly the freedom of the operator article's four kernels.</p>
@@ -186,7 +186,7 @@ The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\nat
 <p>For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
 $$
 \boxed{\;
-S[\tilde{Ξ}] = \int\mathcal{L}\,d^4x ,
+S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
 \qquad
 \mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;},
 $$
@@ -246,7 +246,7 @@ which is the field-theoretic counterpart of the particle's $\langle\tilde{P}\ran
 <h3 id="the-maxwell-action">The Maxwell action</h3>
 <p>For the electromagnetic field the action is the standard one,
 $$
-S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 $$
 and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion <em>Maxwell's Equations in the Biquaternionic Formulation</em> its Lagrangian density is the biquaternion norm
 $$
@@ -307,7 +307,7 @@ and the conserved angular momenta follow by the Noether article. The transport l
 <p>Fifth, <strong>the conserved objects live in the sectors</strong>. The Noether current of the central phase is material-sector valued, as is the four-force of the coupled particle; the energy density is obtained from the stress–energy tensor by a further pairing. The action therefore produces its conserved quantities in the decomposition the involution lattice fixes, and the sector of each is a property of how the action is assembled rather than of the equations alone.</p>
 <p>The variational and the operator routes are two views of one structure. The action is the classical statement and the operator is the quantum one: canonical quantisation begins from the action, reads off the conjugate momenta and the equal-time brackets, and arrives at the operator algebra whose kernels are the Green's functions of the first article. The companion <em>Canonical Quantization of the Biquaternion Maxwell Field</em> performs this for the electromagnetic field, and the companion articles on the second-quantised Dirac and scalar fields do the same for theirs. What this article supplies to all of them is the functional: the scalar whose variation is the equation, whose boundary term is the boundary condition, and whose symmetries are the conservation laws.</p>
 <h2 id="summary">Summary</h2>
-<p>The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde Q_3^{\natural}\tilde{Q}_1) = \langle\tilde Q_3,\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\delta\tilde{Ξ})$ was verified on random biquaternions.</p>
+<p>The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4r$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde Q_3^{\natural}\tilde{Q}_1) = \langle\tilde Q_3,\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\delta\tilde{Ξ})$ was verified on random biquaternions.</p>
 <p>The particle action is
 $$
 S = -mc\int\sqrt{-\,\langle d\tilde R_\varphi\rangle_{\natural}} = -mc^2\int\frac{dr'_t}{\gamma} ,
@@ -316,7 +316,7 @@ $$
 whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.</p>
 <p>The field action is
 $$
-S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4x ,
+S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
 whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{Ξ} = 0$ with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$; the variation was checked against $\int(\Box\xi - \mu^2\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\tilde{\nabla}^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.</p>
@@ -331,7 +331,7 @@ whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{Ξ} = 0$ with $\Box = \
 </thead>
 <tbody>
 <tr>
-<td>$S = \int\mathcal{L}\,d^4x$</td>
+<td>$S = \int\mathcal{L}\,d^4r$</td>
 <td>Action; a real Lorentz scalar</td>
 </tr>
 <tr>

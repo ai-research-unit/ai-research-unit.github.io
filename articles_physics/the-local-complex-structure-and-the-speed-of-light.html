@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion framework reads the Lorentzian signature of spacetime as a consequence of a complex structure rather than as an independent postulate. The minus sign in the Minkowski interval
 $$
-ds^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2
+ds^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2
 $$
 is, in this interpretation, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure <em>on</em>. The answer turns on a distinction that is easy to blur: <strong>no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is</strong>, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.</p>
 <p>The parent of this article is <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.</p>
@@ -129,7 +129,7 @@ using compatibility in the first equality and $JZ$ in the plane in the last. Ite
 <h3 id="the-global-math101-is-a-coordinate-device">The global $i c r'_t$ is a coordinate device</h3>
 <p>The $i c r'_t$ convention is often described as making the complex structure global. It is worth being exact about what is global there. The substitution $x_0=ic_0r'_t$ is a change of coordinates, and it converts the Minkowski interval into a Euclidean form,
 $$
-ds^2=(ic_0\,dr'_t)^2+dx^2+dy^2+dz^2 .
+ds^2=(ic_0\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2 .
 $$
 As a device it requires two things that are not generally available: a single time coordinate defined everywhere, and a single constant scale $c_0$. Flat spacetime with a fixed inertial frame supplies both, which is why the convention works in the vacuum of special relativity. It fails for a curved metric, it sits awkwardly with spinors, and — the case that matters here — it fails when the scale $c$ is a field rather than a constant. In a medium with $\epsilon=\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu=\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ the complex time coordinate is $i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)r'_t$, defined only pointwise. The global $i c r'_t$ is therefore the constant-$c$, flat-space limit of a local structure; it is not a global complex structure on spacetime. The companion article <em>Why Complexify Spacetime?</em> records the first two limitations.</p>
 <h2 id="the-local-structure-that-is-available">The Local Structure That Is Available</h2>
@@ -146,7 +146,7 @@ with $c>0$ a local scale. Equivalently, the temporal coordinate of $\mathbb{M}_-
 </ul>
 <p>At each point the local structure induces the quadratic form of the material sector. With $d\tilde R_\varphi=ic\,dr'_t\,e_t+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
 $$
-\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural}=(ic\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2\;}.
+\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural}=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2\;}.
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the interval.</p>
 <h2 id="the-scale-math133-and-the-minkowski-metric">The Scale $c$ and the Minkowski Metric</h2>
@@ -155,13 +155,13 @@ This is the Minkowski interval with the local speed $c$. The signature is produc
 <li><strong>The signature is algebraic.</strong> The sign of the coefficient on $d{r'_{t}}^2$ is $(i)^2$. It comes from the scalar imaginary and is the same for every value of $c$. In the metric formalism the signature is an input; here it is a consequence of the algebra.</li>
 <li><strong>The magnitude is local.</strong> The coefficient is $-c^2$, with $c$ the scale of the imaginary time axis. The metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the interval it carries is
 $$
-ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dR_\mu dQ_\nu=(ic\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2 .
+ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dR_\mu dQ_\nu=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2 .
 $$</li>
 </ol>
 <p>So $c$ is the conversion factor that turns the statement "time is imaginary" into a statement about lengths. The phase $i$ says that the temporal direction is the imaginary one; the scale $c$ says how much imaginary time corresponds to a unit of physical time, and therefore how the temporal direction is measured against the three spatial directions. Given the phase and the scale, the metric is determined.</p>
-<p>For constant $c$ the metric is $c^2\left(-d{r'_{t}}^2+(dx^2+dy^2+dz^2)/c^2\right)$, so after the constant rescaling $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the interval is a field of local forms,
+<p>For constant $c$ the metric is $c^2\left(-d{r'_{t}}^2+(dr_x^2+dr_y^2+dr_z^2)/c^2\right)$, so after the constant rescaling $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the interval is a field of local forms,
 $$
-ds^2=(i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,dr'_t)^2+dx^2+dy^2+dz^2 ,
+ds^2=(i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2 ,
 $$
 and at each point the null directions are those with $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The metric is not postulated alongside the complex structure; it is read off from the phase and the local scale.</p>
 <p>Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question. Second, the field of local forms is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.</p>
@@ -169,7 +169,7 @@ and at each point the null directions are those with $|d(r_x\,\vec e_x+r_y\,\vec
 <p>The local structure leaves one number undetermined: the scale $c$. The physics does not leave it undetermined. Two independent requirements fix it, and they agree.</p>
 <p><strong>Route 1: the null cone of the biquaternion norm.</strong> The local quadratic form vanishes on
 $$
-(ic\,dr'_t)^2+dx^2+dy^2+dz^2=0
+(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=0
 \;\Longleftrightarrow\;
 |d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|=c\,|dr'_t| ,
 $$
@@ -204,9 +204,9 @@ The wave-operator route uses the field equation and the constitutive relations, 
 <p>The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative interpretation. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (<em>Algebra and Element Conventions</em>, <em>Electromagnetism in Media — The Local Complex Structure at Work</em>).</p>
 <p>The medium interpretation extends in three directions. First, $\log\lvert\langle\tilde{Q}\rangle_{\natural}\rvert$ is read as a <strong>conformal (Weyl) factor</strong>: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of <em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em>, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an <strong>emergent metric</strong>, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a <strong>bundle of algebras</strong>: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' <em>Curved Spacetime and the Biquaternion Framework</em> poses as a question and does not claim.</p>
 <h2 id="summary">Summary</h2>
-<p>The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.</p>
+<p>The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.</p>
 <p>A <strong>global</strong> complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$. The $i c r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.</p>
-<p>A <strong>local</strong> structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $i c r'_t$ with $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.</p>
+<p>A <strong>local</strong> structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $i c r'_t$ with $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.</p>
 <p>That number is fixed by the local structure on two independent routes, and they agree. The null cone of the biquaternion norm has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.</p>
 <p>The interpretation closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the scale is local, and the one scale is the speed of light.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -267,7 +267,7 @@ The wave-operator route uses the field equation and the constitutive relations, 
 <td>The one metric, on the four $Q_\mu$</td>
 </tr>
 <tr>
-<td>$ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$</td>
+<td>$ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$</td>
 <td>Interval; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c$</td>
 </tr>
 <tr>
