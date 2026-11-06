@@ -72,11 +72,11 @@ The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in th
 **The current and the equation it belongs to.** The corpus's Dirac pair is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 one equation per chirality, both sides biquaternions; the first is the right-handed equation and the second is its quaternion conjugate. At $m=0$ the pair decouples,
@@ -89,7 +89,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 and each equation is identical in form to the source-free Maxwell equation; the mass is what ties the two chiralities together, and it is the only term that does.
 
@@ -437,7 +437,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The chirality cell; $i$ times the volume cell |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
 | $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
 | $\tilde\nabla^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the chirality cell applied to $\bar{F}$ |
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame cells composed in the order $z,y,x,t$ | The volume cell; the chirality cell is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |

@@ -45,7 +45,7 @@ $$
 a **complex** number, and the potential is the reciprocal square root of it,
 
 $$
-Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,r_x^2 + r_y^2 + (r_z+i\varrho)^2\,}} .
+Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,r_x^2 + r_y^2 + (r_z+i\varrho)^2}} .
 $$
 
 The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=r_x^2+r_y^2+r_z^2-\varrho^2$ and $B=2r_z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $r_z=0$, and with $r_z=0$ the first gives $r_x^2+r_y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
@@ -163,7 +163,7 @@ $$
 g=(1+i v)\,\frac{r_x+ir_y}{(r_z-r_{0z})\pm r_b},
 $$
 
-whose two signs are the two sheets of the ring, as in the static case. It satisfies both the complex eikonal equation and the wave equation, $(\partial g/\partial r'_t)^2-(\partial g/\partial r_x)^2-(\partial g/\partial r_y)^2-(\partial g/\partial r_z)^2=0$ and $(\partial^2/\partial r'_t^2-\partial^2/\partial r_x^2-\partial^2/\partial r_y^2-\partial^2/\partial r_z^2)g=0$, which were verified here by finite differences on both branches at $v=0$, $0.4$, $1.5$ and $3$, the residual falling as the square of the step as it should. At $v=0$ it is the spinor of the static complex-shifted congruence, and for $a\to0$ it reduces to the stereographic projection $S^2\to\mathbb{C}$, $g=(r_x+ir_y)/(r_z\pm r)$.
+whose two signs are the two sheets of the ring, as in the static case. It satisfies both the complex eikonal equation and the wave equation, $(\partial g/\partial r'_t)^2-(\partial g/\partial r_x)^2-(\partial g/\partial r_y)^2-(\partial g/\partial r_z)^2=0$ and $(\partial^2/\partial {r'_t}^2-\partial^2/\partial r_x^2-\partial^2/\partial r_y^2-\partial^2/\partial r_z^2)g=0$, which were verified here by finite differences on both branches at $v=0$, $0.4$, $1.5$ and $3$, the residual falling as the square of the step as it should. At $v=0$ it is the spinor of the static complex-shifted congruence, and for $a\to0$ it reduces to the stereographic projection $S^2\to\mathbb{C}$, $g=(r_x+ir_y)/(r_z\pm r)$.
 
 The reason the spinor is worth recording is that it is where the deformation is visible most cheaply: the only change from the static case is the complex time dependence of $z_0$ and the factor $(1+iv)$. The eikonal equation, the wave equation and the algebraic structure of the congruence are the same in the two cases, and so is the reading of the eikonal as the null condition on the gradient — the vanishing of the biquaternion norm of the gradient, which is the zero-divisor cone of the algebra.
 

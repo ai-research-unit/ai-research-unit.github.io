@@ -31,21 +31,21 @@ $$i\vec e_k\big(iX\vec e_x\big)\vec e_y=-\vec e_kX\vec e_z .$$
 Two minus signs cancel in the second display, one from $i^2$ and one from $\vec e_y\vec e_x=-\vec e_z$; the third display carries one of them. The product of a direction with itself is the metric, $+e_t$ or $-e_t$; the product of two distinct directions has no metric part, and what is left is the bivector.
 
 **The propagator.** The conventions of the internal fermion line are those of the companion *The Feynman Propagator in Biquaternionic Form*, and there it is written as an action on a state,
-$$S_F(p):\quad w\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_k p_k\,\vec e_k\,w\,\vec e_y+im\,w}{p^2-m^2+i\epsilon} ,$$
-with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-m^2$ is $-\tilde P\tilde P^{\natural}-m^2$ for the wave biquaternion $\tilde P=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P\tilde P^{\natural}=-p^2$.
+$$S_F(p):\quad w\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_k p_k\,\vec e_k\,w\,\vec e_y+im\,w}{p^2-\hbar^2k_m^2+i\epsilon} ,$$
+with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-\hbar^2k_m^2$ is $-\tilde P\tilde P^{\natural}-m^2$ for the wave biquaternion $\tilde P=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P\tilde P^{\natural}=-p^2$.
 
-**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
+**The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(4\pi\epsilon_0\hbar c)$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 ## The Vertex Function and the Form Factors
 
 **The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_\mu(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $k=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
 $$i\,p_0\,w\,\vec e_x-\sum_k i\,p_k\,\vec e_k\,w\,\vec e_y=m\,w ,$$
 the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$. The timelike and the spacelike components are written separately, because they act differently:
-$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k^2)+\frac{1\lambda_m c}{2\hbar}\sum_k k_k\,\vec e_k\,w\,\vec e_z\,F_2(k^2) ,$$
-$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{1\lambda_m c}{2\hbar}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j}k_k\,\vec e_j\vec e_k\,w\Big)F_2(k^2) .$$
+$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k^2)+\frac{c}{2\hbar\,k_m}\sum_k k_k\,\vec e_k\,w\,\vec e_z\,F_2(k^2) ,$$
+$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{c}{2\hbar\,k_m}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j}k_k\,\vec e_j\vec e_k\,w\Big)F_2(k^2) .$$
 The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\mu,\nu)$, and its shape is the content of the Gordon decomposition below.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 $F_1(0)=1$ is the charge, and $F_2(0)$ is the anomaly. The gyromagnetic ratio is
 $$\boxed{\;g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
@@ -60,12 +60,12 @@ $$i\vec e_j\big(i\vec e_kX\vec e_y\big)\vec e_y=\vec e_j\vec e_kX ,\qquad \vec e
 and the bivector of the pair is that product with one further factor $i$. For a pair of two spatial directions it is the single element $i\vec e_m$, a left multiplication; for a timelike pair it is two-sided, because the timelike direction supplies a right multiplier $\vec e_x$ and the spatial one supplies $\vec e_y$, whose product is the third unit. Nothing else appears in the product: the metric part is $\varepsilon_\mu$ on the diagonal, it is zero off it, and it is the central direction $e_t$, one number per pair.
 
 **The Gordon decomposition.** Write $w$ for the incoming state and $w_2$ for the outgoing one, both on shell, and write $\mathcal G_{\mu\nu}:=-i\,c_\mu c_\nu$ for the bivector of the pair, $c_\mu$ being the direction $\mu$; the minus is the reversal of the right multipliers, $\vec e_y\vec e_x=-\vec e_z$, and it is the whole of the sign. The identity is
-$$\bar w_2\big(c_\mu w\big)=\frac{(p+p_2)_\mu}{2m}\,\bar w_2w+\frac{i\lambda_m c}{2\hbar}\sum_{\nu\neq\mu}\varepsilon_\nu\,k_\nu\,\bar w_2\big(\mathcal G_{\mu\nu}w\big),$$
+$$\bar w_2\big(c_\mu w\big)=\frac{(p+p_2)_\mu}{2m}\,\bar w_2w+\frac{i c}{2\hbar\,k_m}\sum_{\nu\neq\mu}\varepsilon_\nu\,k_\nu\,\bar w_2\big(\mathcal G_{\mu\nu}w\big),$$
 the coefficient of the second term carrying the $i$ by which the bivector differs from the plain product of its two directions. Written out in the two families it reads, for the timelike component,
-$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_0}{2m}\,\bar w_2w+\frac{1\lambda_m c}{2\hbar}\sum_k k_k\,\bar w_2\big(\vec e_k\,w\,\vec e_z\big),$$
+$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_0}{2m}\,\bar w_2w+\frac{c}{2\hbar\,k_m}\sum_k k_k\,\bar w_2\big(\vec e_k\,w\,\vec e_z\big),$$
 and for the spacelike component $j$,
-$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_j}{2m}\,\bar w_2w+\frac{1\lambda_m c}{2\hbar}\Big(k_0\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j}k_k\,\bar w_2\big(\vec e_j\vec e_k\,w\big)\Big),$$
-where the $i$ of the generic form has been absorbed: $\frac{i\lambda_m c}{2\hbar}\varepsilon_k\mathcal G_{0k}=\frac{1\lambda_m c}{2\hbar}\vec e_k$ on the right, and $\frac{i\lambda_m c}{2\hbar}\varepsilon_k\mathcal G_{jk}=\frac{1\lambda_m c}{2\hbar}\vec e_j\vec e_k$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
+$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_j}{2m}\,\bar w_2w+\frac{c}{2\hbar\,k_m}\Big(k_0\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j}k_k\,\bar w_2\big(\vec e_j\vec e_k\,w\big)\Big),$$
+where the $i$ of the generic form has been absorbed: $\frac{i c}{2\hbar\,k_m}\varepsilon_k\mathcal G_{0k}=\frac{c}{2\hbar\,k_m}\vec e_k$ on the right, and $\frac{i c}{2\hbar\,k_m}\varepsilon_k\mathcal G_{jk}=\frac{c}{2\hbar\,k_m}\vec e_j\vec e_k$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
 
 Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_\mu$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_\nu$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
 
@@ -213,8 +213,8 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_ki\,p_k\,\vec e_k\
 ## Summary
 
 The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,
-$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1\lambda_m c}{2\hbar}\sum_kk_k\,\vec e_k\,w\,\vec e_zF_2 ,\qquad
-\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1\lambda_m c}{2\hbar}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j}k_k\,\vec e_j\vec e_k\,w\Big)F_2 ,$$
+$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{c}{2\hbar\,k_m}\sum_kk_k\,\vec e_k\,w\,\vec e_zF_2 ,\qquad
+\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{c}{2\hbar\,k_m}\Big(k_0\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j}k_k\,\vec e_j\vec e_k\,w\Big)F_2 ,$$
 $$g=2\big(1+F_2(0)\big),\qquad a=F_2(0)=\frac{g-2}{2} ,$$
 with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two directions, the metric part and the bivector; the Gordon decomposition exhibits the split on shell and was verified with a deviation of order $10^{-15}$ on on-shell states. Of the six bivectors, the three rotations are the single elements $i\vec e_m$, in the informational sector $\mathbb{B}_{\Psi}$, the same sector as the spin, and the three timelike pairs are two-sided insertions, anti-Hermitian, in the material sector $\mathbb{B}_{\Phi}$. The convection structure is central.
 

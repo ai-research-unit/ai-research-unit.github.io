@@ -165,7 +165,7 @@ $$
 \frac{\omega^2}{c^2}-\lvert\vec k\rvert^2,
 $$
 
-with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $\lambda_m^{-2}$ is the shell of mass $m$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $(mc/\hbar)^{2}$ is the shell of mass $m$. Here $\hbar/(mc)$ is the mass length.
 
 ### The Discrete Case
 

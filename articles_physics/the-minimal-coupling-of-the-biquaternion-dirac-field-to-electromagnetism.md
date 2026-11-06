@@ -18,9 +18,9 @@ The gauge principle article derived $\tilde\nabla_{\mathrm{gco}}$ from the local
 
 Three results are established here.
 
-1. **The coupled equation.** Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.
+1. **The coupled equation.** Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.
 2. **Exact gauge covariance, massive as well as massless.** The pair holds in every gauge when it holds in one, because the parent's mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass term acquires the same factor as the derivative term. The mass breaks the *relative* phase of the two parts, not the common one.
-3. **A negative result on the current.** The bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is a material-sector object and is gauge invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\mathrm{sp}}) = -2i\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+3. **A negative result on the current.** The bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is a material-sector object and is gauge invariant, but it is **not conserved** on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\mathrm{sp}}) = -2i\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
@@ -35,7 +35,7 @@ The article is organized as follows. The next section recalls the Dirac field, i
 The **biquaternion Dirac field** is an element $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The two members are the **chiral pair**. The first acts on the $R$ part of the field by the gradient, the second on the $L$ part by the quaternion conjugate of the gradient. When $m = 0$ they decouple,
@@ -106,13 +106,13 @@ $$
 that is, $\tilde\nabla_{\mathrm{gco}} = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ acting by **left multiplication**. Applied to the free Dirac equation in its linear form, the prescription gives the **minimally coupled biquaternion Dirac equation**
 
 $$
-\boxed{\ \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R}\ }
+\boxed{\ \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}\ }
 $$
 
 with $\tilde\nabla_{\mathrm{gco}}^{\natural} := \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ — the quaternion conjugate of the operator, not the operator of the opposite charge — that is,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} + \frac{iϙ}{\hbar}\,\tilde{A}\,\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} + \frac{iϙ}{\hbar}\,\tilde{A}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} + \frac{iϙ}{\hbar}\,\tilde{A}\,\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} + \frac{iϙ}{\hbar}\,\tilde{A}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and in the massless case the two members decouple separately,
@@ -160,7 +160,7 @@ Two forms are in circulation on the algebra, and the prescription of this articl
 **The pair.** The field is an element and $\lambda$ is one central element multiplying it from the left. Then the pair
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
 $$
 
 is covariant for the reason computed in the next section: $\lambda$ is central, so it passes through both gradients and through the mass.
@@ -168,7 +168,7 @@ is covariant for the reason computed in the next section: $\lambda$ is central, 
 **The two-sided form.** The parent also carries Kravchenko's equation, a single equation on a general element $F$ in which the derivative acts on the left and the mass term on the right (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*), with $\vec u$ the declared unit of the frame:
 
 $$
-\mathcal{N}F = -\tilde{\nabla}^{\natural}F - \lambda_m^{-1}\,i\,\overline{F}\,\vec u = 0 ,
+\mathcal{N}F = -\tilde{\nabla}^{\natural}F - k_m\,i\,\overline{F}\,\vec u = 0 ,
 $$
 
 the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a conjugation, the central $i$ and a right multiplication by $\vec u$, and it is not a scalar multiple of the field.
@@ -178,7 +178,7 @@ the bar being the complex conjugation of the coefficients and not the real struc
 $$
 -\tilde{\nabla}^{\natural}\left(\lambda F\right) = \lambda\left(-\tilde{\nabla}^{\natural}F\right),
 \qquad
--\lambda_m^{-1}\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-\lambda_m^{-1}\,i\,\overline{F}\,\vec u\right),
+-k_m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-k_m\,i\,\overline{F}\,\vec u\right),
 $$
 
 and $\bar\lambda\ne\lambda$ for a non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**: its symmetry group is the real rescalings $F\mapsto rF$, $r\in\mathbb{R}^{\times}$. There is no phase to localize, so the minimal-coupling prescription cannot be transferred to it by replacing the gradient with the covariant derivative; coupling that form would be a different construction, which this article does not attempt.
@@ -247,7 +247,7 @@ $$
 (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the first member of the massive pair and using the second gives
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 that is,
@@ -263,7 +263,7 @@ a covariant wave equation with a curvature term. The corresponding statement for
 The massive equation is where the mass term's role is decided, and with the linear pair it is benign. Suppose the minimally coupled massive equation holds in one gauge:
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 Because $\tilde\nabla_{\mathrm{gco}}$ is covariant, the left-hand side of the transformed first equation is
@@ -275,7 +275,7 @@ $$
 and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
 
 $$
-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L,2} = \lambda_m^{-1}\lambda\,\tilde{Ξ}_{\mathrm{sp},L} .
+k_m\tilde{Ξ}_{\mathrm{sp},L,2} = k_m\lambda\,\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two sides transform identically, because the central phase is a scalar and the mass is one. The same holds for the second equation, and with the **same** $\lambda$ rather than its conjugate: the factor is $\lambda$ for either member. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
@@ -480,14 +480,14 @@ $$
 acting by left multiplication on the field. The coupled equation is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 that is,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} + \frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} + \frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 with the interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ that the localized central phase forces. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = 0$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0$.
@@ -498,7 +498,7 @@ $$
 \tilde\nabla_{\mathrm{gco},2}\tilde{Ξ}_{\mathrm{sp},R,2} = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R}, \qquad \tilde\nabla_{\mathrm{gco},2}^{\natural}\tilde{Ξ}_{\mathrm{sp},L,2} = \lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
-the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
+the same factor $\lambda$ for either member, and the parent's linear mass term acquires that same factor, so $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass; what the mass breaks is the relative phase that multiplies the two parts oppositely. Squaring the pair gives the covariant wave equation
 
 $$
 \left(\sum_{\mu\in\{t,x,y,z\}} \tilde\nabla_{\mathrm{gco},\mu}^{2} + \frac{iϙ}{\hbar}\tilde{F} - m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0 .
@@ -527,7 +527,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{Ξ}_{\mathrm{sp}}$ | Biquaternion Dirac field, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field; the subscript takes two values and no more |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^* = \overline{\tilde{Ξ}_{\mathrm{sp}}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | Free biquaternion Dirac equation (massive chiral pair) |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
@@ -537,7 +537,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde\nabla_{\mathrm{gco}}^{\natural} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
 | $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial R_t = -(i/c)\,\partial/\partial r'_t$ |
 | $\tilde{F}$ | Field-strength biquaternion; $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}} = \sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^2 + \frac{iϙ}{\hbar}\tilde{F}$ |
-| $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | Minimally coupled Dirac equation |
+| $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Minimally coupled Dirac equation |
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}_{\mathrm{sp}}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\|\tilde{Ξ}_{\mathrm{sp}}\|_E^2 = \mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |

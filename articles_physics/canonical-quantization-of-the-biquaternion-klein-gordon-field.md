@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.
 
@@ -32,14 +32,14 @@ with $\tilde R_\Phi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\m
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
--\lambda_m^{-2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\lambda_m^{-2}\xi^*\xi .
+-k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
+=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi .
 $$
 
 Because $\partial/\partial R_t=-\tfrac{i}{c}\partial/\partial r'_t$, the Lagrangian written in the physical time is
 
 $$
-\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-\lambda_m^{-2}|\xi|^2 .
+\mathcal{L}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2 .
 $$
 
 The **conjugate momentum** is
@@ -54,9 +54,9 @@ and the Legendre transform is **regular**: $\pi$ determines $\partial\xi/\partia
 The equation of motion obtained by varying the action is the parent's biquaternion Klein–Gordon equation,
 
 $$
-\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0 ,
+\left(\Box-k_m^{2}\right)\tilde{Ξ}=0 ,
 $$
-with $\lambda_m=\hbar/(mc)$ the mass length.
+with $k_m=mc/\hbar$ the mass wave number.
 
 ## The Field as a Central-Valued Object
 
@@ -73,19 +73,19 @@ with $\xi_1,\xi_2$ the two real scalar fields of the sector in the normalization
 The quadratic form of the theory is the biquaternion norm. The material four-wavevector is
 
 $$
-\tilde P\,\lambda_p^{-1}=i\frac{\omega}{c}\,e_t+\vec k\in\mathbb{B}_{\Phi},
+\tilde P\,k_{\mathrm{mo}}=i\frac{\omega}{c}\,e_t+\vec k\in\mathbb{B}_{\Phi},
 \qquad
 \tilde P^{\natural}/\hbar=i\frac{\omega}{c}\,e_t-\vec k,
 \qquad
-\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
+\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
 $$
 
-Here $\lambda_p=\hbar/p$ is the momentum length.
+Here $k_{\mathrm{mo}}=p/\hbar$ is the momentum length.
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)e_t$ into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=\lambda_m^{-2}$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=k_m^{2}$, which is the mass-shell condition
 
 $$
-\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=-\lambda_m^{-2}\,e_t .
+\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-k_m^{2}\,e_t .
 $$
 
 ## Equal-Time Commutation Relations
@@ -117,7 +117,7 @@ The scalar case has one feature the two parent cases do not. Because the field i
 
 ## The Mode Expansion
 
-The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\lambda_m^{-2}}$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as
+The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+k_m^{2}}$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as
 
 $$
 \boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
@@ -133,7 +133,7 @@ $$
 
 The operator $a_{\mathrm{fop},\vec p}$ annihilates a particle of momentum $\vec p$ and $b_{\mathrm{fop},\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.
 
-The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central $*$-unitary element built from the material four-wavevector. With $\tilde P\,\lambda_p^{-1}=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives
+The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central $*$-unitary element built from the material four-wavevector. With $\tilde P\,k_{\mathrm{mo}}=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives
 
 $$
 \mathrm{Sc}\!\left(\tilde P\tilde{R}_\Phi^{\natural}\right)/\hbar=\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E_{\vec p}r'_t=-p\cdot x ,
@@ -184,7 +184,7 @@ The obstruction to anything more is worth stating precisely, because it distingu
 The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units
 
 $$
-H=\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+\lambda_m^{-2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
+H=\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
 $$
 
 Substituting the mode expansion and using the commutators gives, before normal ordering,
@@ -239,7 +239,7 @@ Because the question addressed here is the second-quantization question of the f
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-\lambda_m^{-2}\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
+- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi$, the conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
 - The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.
 - The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.
 - The symmetric Fock space, the occupation basis, the vacuum, and the number operator.
@@ -274,7 +274,7 @@ $$
 \left(a_{\mathrm{fop},\vec p}\exp(-ip\cdot x)+{b_{\mathrm{fop},\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
-the phases being central unitaries $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)$ built from the material four-wavevector $\tilde P\,\lambda_p^{-1}=iE_{\vec p}e_t+\vec p$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
+the phases being central unitaries $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)$ built from the material four-wavevector $\tilde P\,k_{\mathrm{mo}}=iE_{\vec p}e_t+\vec p$; the mode commutators are $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k}}^\dagger]=[b_{\mathrm{fop},\vec p},{b_{\mathrm{fop},\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
 The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
@@ -291,12 +291,12 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
-| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-\lambda_m^{-2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
-| $\lambda_m$ | The mass length, $\hbar/(mc)$ |
+| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
+| $1/k_m$ | The mass length, $\hbar/(mc)$ |
 | $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=c^{-2}\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
-| $\tilde P\,\lambda_p^{-1}=i\omega/c\,e_t+\vec k$, $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}$ | Material four-wavevector and biquaternion norm |
-| $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=-\lambda_m^{-2}\,e_t$ | Mass-shell condition |
-| $E_{\vec p}=\sqrt{\vec p^2+\lambda_m^{-2}}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase (natural units) |
+| $\tilde P\,k_{\mathrm{mo}}=i\omega/c\,e_t+\vec k$, $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}$ | Material four-wavevector and biquaternion norm |
+| $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-k_m^{2}\,e_t$ | Mass-shell condition |
+| $E_{\vec p}=\sqrt{\vec p^2+k_m^{2}}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | On-shell energy and phase (natural units) |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
 | $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ | Mode commutators |
 | $\mathcal{F}=\bigoplus_n(\mathcal{H}_1^{\otimes n})_+$ | Bosonic Fock space (symmetric algebra) |

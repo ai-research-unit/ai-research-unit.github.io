@@ -136,9 +136,9 @@ with $\Gamma$ the chirality and $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ the coeffi
 
 **The exchange in the arena.** In the arena the chirality is a product of units, and the coefficient conjugation fixes it. The exchange must therefore be carried by a right multiplication. Of the units left after the chirality's own $\vec e_x$ and $\vec e_z$, one exchanges the two values and the other keeps them: $\vec e_y$ exchanges and $\vec e_z$ keeps. The exchanging one is the right factor of the arena's second generator, which is why the arena's mass direction is $\vec e_y$. The arena's mass equation is therefore
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_y ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_y ,
 $$
-and the label balances. Here $\lambda_m=\hbar/(mc)$ is the mass length. The left side keeps the value of $\tilde{Ξ}_{\mathrm{sp}}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
+and the label balances. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}_{\mathrm{sp}}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
 
 **The mass bilinear.** The mass bilinear of the dictionary is
 $$

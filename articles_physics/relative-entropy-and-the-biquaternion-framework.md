@@ -132,7 +132,7 @@ $$
 \boxed{\,S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|
--\mathrm{artanh}|\vec s|\,\cos\gamma\Big)\,}
+-\mathrm{artanh}|\vec s|\,\cos\gamma\Big)}
 $$
 for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: the two appearances of $\log$ are biquaternion logarithms, each computed by the closed form of the previous section, and their traces are the real pairing $2\,\mathrm{Sc}$. The factors of $\tfrac12\log\tfrac14$ cancel between the two terms, which is why the boxed expression contains only the ratio of determinants, $\frac{1-|\vec r|^2}{1-|\vec s|^2}$, and the relative angle.
 

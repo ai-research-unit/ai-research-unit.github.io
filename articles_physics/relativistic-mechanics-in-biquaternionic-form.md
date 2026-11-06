@@ -125,7 +125,7 @@ $$
 
 where $\tau$ is the **proper time** of the particle, defined by $d\tau = dr'_t/\gamma$. The four-force biquaternion lies in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, like $\tilde{P}$.
 
-Since $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is constant along the worldline, differentiating gives
+Since $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is constant along the worldline, differentiating gives
 
 $$
 \tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0,
@@ -192,23 +192,23 @@ The condition is the **scalar part** of $\tilde{\nabla}^{\natural}\tilde{J} = 0$
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2}\right)\tilde{Ξ} = 0.
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - (mc/\hbar)^{2}\right)\tilde{Ξ} = 0.
 $$
 
 Here $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $\hbar$ is the reduced Planck constant. Expanding,
 
 $$
-\Box\tilde{Ξ} = \lambda_m^{-2}\tilde{Ξ},
+\Box\tilde{Ξ} = (mc/\hbar)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box-\lambda_m^{-2} c^2/\hbar^2)\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box-(mc/\hbar)^{2} c^2/\hbar^2)\xi = 0$ with $\Box = -c^{-2}\,\partial^2/\partial {r'_{t}}^2 + \Delta$. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
 The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}_{\mathrm{sp}}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
@@ -217,7 +217,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The mass term $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $mc/\hbar\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = mc/\hbar\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -226,21 +226,21 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Four-position | $\tilde R_\Phi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
 | Invariant interval | $ds^2 = d\tilde R_\Phi\,\overline{d\tilde R_\Phi}$ | $= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
-| Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ |
-| Mass-shell relation | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ | — |
+| Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ |
+| Mass-shell relation | $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ | — |
 | Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,\overline{d\tilde R_\Phi}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ |
-| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - \lambda_m^{-2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | — |
+| Klein–Gordon | $(\tilde{\nabla}\tilde{\nabla}^{\natural} - (mc/\hbar)^{2})\tilde{Ξ} = 0$ | — |
+| Dirac | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = mc/\hbar\tilde{Ξ}_{\mathrm{sp},R}$ | — |
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $\hbar/(mc)$ is the mass length.
 
 ## Structural Observations
 
 **The four-vectors live in $\mathbb{B}_{\Phi}$.** The four-position, four-velocity, four-momentum, four-force, four-potential, and four-current all lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). This subspace is the biquaternion image of the Minkowski four-vector space, and it is closed under the natural Lorentz-covariant operations (addition, scalar multiplication by real numbers, and rotor conjugation).
 
-**The mass-shell relation is a norm condition.** The statement $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\tilde{P}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **zero divisor set** of the algebra.
+**The mass-shell relation is a norm condition.** The statement $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}\tilde{P}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **zero divisor set** of the algebra.
 
 **The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J} = 0$. The full biquaternion equation is stronger, and the vector part of $\tilde{\nabla}^{\natural}\tilde{J}$ does not have an independent **physical interpretation** as a conservation law.
 
@@ -286,7 +286,7 @@ The ten basic formulas of relativistic mechanics — four-position, invariant in
 
 - The invariant interval is the biquaternion norm of the four-position displacement biquaternion.
 - The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
-- The mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$.
+- The mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$.
 - The light cone is the zero divisor set of the algebra.
 - The conserved current is characterized by the scalar part of the quaternion-conjugate gradient vanishing.
 - The wave equations are the factorization of the d'Alembertian.

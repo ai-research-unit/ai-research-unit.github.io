@@ -68,9 +68,9 @@ The conjugation is what makes the mass antilinear; the right multiplication is w
 **The letter form.** Read on the two letters, the equation is a pair. The mass of an $L$ part is an $R$ element, and the mass of an $R$ part is an $L$ element, so each member of the pair acts on one letter and carries the conjugate of the other:
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
 $$
 
 The two lines are the equation of the display above, split; nothing is added. Each is an equation for one letter, and each carries the conjugate of the other, which is the precise sense in which the mass couples the letters and not a side of one of them. The mass terms are elements of the opposite letter, and that was checked on elements of each letter: the mass of an $L$ part is an $R$ element and the mass of an $R$ part is an $L$ element, exactly.
@@ -81,7 +81,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 
 ## Why the Mass Sits on the Right
 
-**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, or a conjugation $\lambda_m^{-1}J(\tilde{Ξ}_{\mathrm{sp}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
+**The letter cannot be moved from the left.** Left multiplication keeps the letter, by the one line of associativity above. So a mass term written inside the left action — a scalar multiple $k_m\tilde{Ξ}_{\mathrm{sp}}$, or a conjugation $k_mJ(\tilde{Ξ}_{\mathrm{sp}})$ — applies the same factor to the two letters and can couple nothing. It is diagonal on the letters whatever the scalar or the conjugation is, and a mass that is diagonal on the letters pairs no letter with another.
 
 **The right slot can move it.** A right multiplication by an element takes the letter of its right factor, so a mass term that ends in a right multiplication acts on the two letters with two different factors. The mass term of the display above ends in $\vec e_z$, and the split of §*The Equation and Its Three Forms* is the result: the mass of an $L$ part is an $R$ element.
 
@@ -91,7 +91,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 |---|---|---|
 | $mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z$, the mass from the right | $8$ | $0$ |
 | $m\,\bar{\tilde{Ξ}}_{\mathrm{sp}}$, a bare coefficient conjugation | $0$ | $8$ |
-| $\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}^*$, the star | $0$ | $4$ |
+| $k_m\,\tilde{Ξ}_{\mathrm{sp}}^*$, the star | $0$ | $4$ |
 
 Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the signature of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
 
@@ -150,16 +150,16 @@ and the equation becomes a real linear system for the pair $(\tilde{Ξ}_{\mathrm
 **The system.** Matching the two exponentials gives
 
 $$
-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},0}=\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},1}}\,\vec e_z ,
+\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},0}=k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},1}}\,\vec e_z ,
 \qquad
--\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},1}=\lambda_m^{-1}i\,\overline{\tilde{Ξ}_{\mathrm{sp},0}}\,\vec e_z ,
+-\bigl(k_0e_t+i\vec k\bigr)\tilde{Ξ}_{\mathrm{sp},1}=k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},0}}\,\vec e_z ,
 $$
 
 sixteen real equations in the sixteen real parameters of the two amplitudes. The second line is the first with the sign of the amplitude reversed, which is what the two exponentials do to a derivative that is first order; the two lines are one equation and not two. Its nullity is the one tabulated in §*Why the Mass Sits on the Right*.
 
 **The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is free and the conjugate amplitude $\tilde{Ξ}_{\mathrm{sp},1}$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
 
-**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+**The shell.** Squaring the equation, and using that the product of the gradient with its natural conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **What the pair is not.** The pair is not a second equation. The two lines are the two exponentials of one equation, and a reader who counts them as two fields counts the field and its conjugate twice.
 

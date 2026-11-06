@@ -271,7 +271,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the material basis it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ in $\varepsilon_0 = ie_t$ | inherited |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$, and the natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$ | inherited |
-| $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i c r'_t$ its time term is $-\frac{1}{c^2}\partial^2/\partial r'_t^2$ | inherited |
+| $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i c r'_t$ its time term is $-\frac{1}{c^2}\partial^2/\partial {r'_t}^2$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula | inherited |
 | $\vec e_k$, $K_k = i\vec e_k$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
 | $\tilde{E}_\mu$, $\vec\Gamma_\mu$ | frame field in $\mathbb{B}_{\Phi}$; Lie-subspace-valued connection one-form | inherited from the curved-spacetime and linearised articles |

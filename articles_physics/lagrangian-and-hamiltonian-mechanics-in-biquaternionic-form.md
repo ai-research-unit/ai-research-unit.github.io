@@ -206,17 +206,17 @@ with $d\tilde q/dr'_t$ eliminated in favour of $\tilde p$ using the inverse of $
 **Free particle.** With $\tilde p=m\,d\tilde q/dr'_t$ one has $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dr'_t)=m\langle d\tilde q/dr'_t\rangle_{\natural}=2T$, and
 
 $$
-H_0=\frac{\langle\tilde p\rangle_{\natural}\lambda_m c}{2\hbar}=\frac{\tilde p\,\tilde p^{\natural}\lambda_m c}{2\hbar}=\frac{1\lambda_m c}{2\hbar}\sum_{\mu\in\{t,x,y,z\}}p_\mu^2 ,
+H_0=\frac{\langle\tilde p\rangle_{\natural}\hbar/(mc) c}{2\hbar}=\frac{\tilde p\,\tilde p^{\natural}\hbar/(mc) c}{2\hbar}=\frac{\hbar/(mc) c}{2\hbar}\sum_{\mu\in\{t,x,y,z\}}p_\mu^2 ,
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $\hbar/(mc)$ is the mass length.
 
-the free Hamiltonian, which reduces to the kinetic term $\vec p^2\lambda_m c/(2\hbar)$ for a pure-vector momentum, $p_t=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is again a quadratic form, with the mass inverted.
+the free Hamiltonian, which reduces to the kinetic term $\vec p^2\hbar/(mc) c/(2\hbar)$ for a pure-vector momentum, $p_t=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is again a quadratic form, with the mass inverted.
 
 **Harmonic oscillator.** For $\mathrm{Lag}=\tfrac{1}{2}m\langle d\tilde q/dr'_t\rangle_{\natural}-\tfrac{1}{2}m\omega^2\langle\tilde q\rangle_{\natural}$ the momentum is again $\tilde p=m\,d\tilde q/dr'_t$ and
 
 $$
-H=\frac{\langle\tilde p\rangle_{\natural}\lambda_m c}{2\hbar}+\frac{m\omega^2}{2}\langle\tilde q\rangle_{\natural}.
+H=\frac{\langle\tilde p\rangle_{\natural}\hbar/(mc) c}{2\hbar}+\frac{m\omega^2}{2}\langle\tilde q\rangle_{\natural}.
 $$
 
 The Hamiltonian is a sum of two biquaternion norms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.

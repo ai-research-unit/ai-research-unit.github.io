@@ -156,7 +156,7 @@ $$
 $$
 So
 $$
-\boxed{\,\langle\tilde\Pi(\vec u)\rangle_{\natural} = 0 \quad\text{for every unit vector } \vec u\,}
+\boxed{\,\langle\tilde\Pi(\vec u)\rangle_{\natural} = 0 \quad\text{for every unit vector } \vec u}
 $$
 and the same computation with $\tilde\Pi_-$ gives $\langle\tilde\Pi_-\rangle_{\natural}=0$. In the language of the biquaternion norm, every minimal idempotent of $\mathbb{B}$ is a **null element**: it lies on the cone $\langle\tilde Q\rangle_{\natural}=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\mathsf{M}_2(\tilde\Pi(\vec u))=0$, since the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$.
 

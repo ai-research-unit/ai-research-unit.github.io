@@ -64,7 +64,7 @@ The pairing is written on the right of the bar, and it takes the whole product t
 The **field equation** is
 
 $$
-\sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}} .
+\sum_\mu\varepsilon_\mu\,e_\mu\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-k_m\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 Every factor is written out: the derivative acts on the field, the unit $e_\mu$ multiplies from the left, the frame's unit $\vec e_{\nu(\mu)}$ from the right, and the plain weight $\varepsilon_\mu$ of *Frame and Metric Conventions* raises the index of the generator. The weight is not a second metric factor; it is the sign that makes the four generators obey one anticommutation rule.
@@ -72,7 +72,7 @@ Every factor is written out: the derivative acts on the field, the unit $e_\mu$ 
 The component form displays the two families at once, because the temporal generator is a single right multiplication and the three spatial generators share their right multiplier:
 
 $$
-\sum_k\vec e_k\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}} .
+\sum_k\vec e_k\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=k_m\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 Each of the four terms exchanges the value, while the mass term keeps it: the equation pairs the two halves of the field, and the mass is what pairs them.
@@ -80,12 +80,12 @@ Each of the four terms exchanges the value, while the mass term keeps it: the eq
 The same operator content is written by the series as the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-which acts by left multiplication on the algebra (*Algebra and Element Conventions*). The pair and the two-sided equation above carry the same operator content and are not the same statement; the passage from one to the other is a change of representation, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* separates the two forms. This article uses the two-sided equation, because the current below is defined against the frame's units. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+which acts by left multiplication on the algebra (*Algebra and Element Conventions*). The pair and the two-sided equation above carry the same operator content and are not the same statement; the passage from one to the other is a change of representation, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* separates the two forms. This article uses the two-sided equation, because the current below is defined against the frame's units. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The second equation is the **adjoint**. Conjugating the field equation and pairing both sides with an arbitrary element $X$ gives
 
@@ -126,8 +126,8 @@ Let $\tilde{Ξ}_{\mathrm{sp}}$ be a solution of the field equation of §*The Two
 $$
 \boxed{\;
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
+= \frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big)\;}
 $$
 
 The spin generator $\Sigma_{\mu\nu}$ is $\frac{i}{4}$ times the commutator of the $\mu$-th and $\nu$-th generators, antisymmetric in its two indices; its action on an element is written $\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}$. The $i$ is the one the generator already carries. It is $i$ times the Lorentz generator of *Matrix Representations Conventions*, which is half the bivector of the pair; written out, $\Sigma_{23}$ is the left multiplication by $\frac{i}{2}\vec e_x$, and $\Sigma_{01}$ multiplies by $\frac{i}{2}\vec e_x$ on the left and by $\vec e_z$ on the right. The spin term is a total divergence, and the antisymmetry of $\Sigma_{\mu\nu}$ is what makes it one.
@@ -162,8 +162,8 @@ $$
 The weight collapses the sum, because $\varepsilon_\nu\varepsilon_\mu\delta_{\mu\nu}$ is $\varepsilon_\mu^2=1$ at $\nu=\mu$ and $0$ otherwise, so only the term $\nu=\mu$ survives and the coefficient of the convection bracket is the same $-i$ for all four components. The bivector part is a total derivative because $\Sigma_{\mu\nu}$ is a constant action and is antisymmetric in its two indices: the derivative of the bilinear is the sum of the two bivector pieces, one with the derivative on each factor. Dividing by $2m$,
 
 $$
-j_\mu=\frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+\frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+j_\mu=\frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++\frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 which is the identity as stated. The spin term is the divergence of a bilinear and not the bilinear times a divergence, and that is the content of the last step: the two bivector contributions add into one derivative.
@@ -210,7 +210,7 @@ Equivalently, with the momentum transfer $k_\nu=(p_2-p)_\nu$ and the average mom
 
 $$
 \bar w_2\,i\,e_\mu\,w\,\vec e_{\nu(\mu)}
-= \frac{\lambda_m c}{\hbar}\Big(P_\mu\,\bar w_2w
+= \frac{c}{\hbar\,k_m}\Big(P_\mu\,\bar w_2w
 + i\sum_\nu\varepsilon_\nu\,k_\nu\,\bar w_2\Sigma_{\mu\nu}w\Big).
 $$
 
@@ -410,7 +410,7 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, and the current $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{\mathrm{pau},e_\nu}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{\mathrm{pau},e_\nu}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{\mathrm{pau},e_\mu}R_{\delta_\mu}R_{\mathrm{pau},\vec e_z}$.
+These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{\mathrm{pau},e_\mu}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, and the current $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{\mathrm{pau},e_\nu}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{\mathrm{pau},e_\nu}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{\mathrm{pau},e_\mu}R_{\delta_\mu}R_{\mathrm{pau},\vec e_z}$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -426,8 +426,8 @@ The Gordon decomposition splits the on-shell current of the field as
 
 $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
-= \frac{i\lambda_m c}{2\hbar}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
-+ \frac{\lambda_m c}{\hbar}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
+= \frac{i c}{2\hbar\,k_m}\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}-\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,\tilde{Ξ}_{\mathrm{sp}}\Big)
++ \frac{c}{\hbar\,k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\Big),
 $$
 
 into a convection part and the divergence of a spin density, $\Sigma_{\mu\nu}$ being $i$ times the conventions' Lorentz generator, half the bivector of the pair. The field is an element of $\mathbb{B}$ and the current is a pairing, a scalar part of a product of elements whose last factor is the frame's unit $c_\mu$. In momentum space the same statement is
@@ -454,9 +454,9 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,X=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |
 | $c_\mu$ | The frame's unit in the current, $c_t=e_t$ and $c_k=\vec e_z$ |
 | $\Sigma_{\mu\nu}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |
-| $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ | The field equation, every factor written out |
+| $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-k_m\tilde{Ξ}_{\mathrm{sp}}$ | The field equation, every factor written out |
 | $\sum_\mu\varepsilon_\mu\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,e_\mu X\vec e_{\nu(\mu)}=m\bar{\tilde{Ξ}}_{\mathrm{sp}}X$ | The adjoint equation, for every element $X$; the mass carries the other sign |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the same operator content by left multiplication |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the same operator content by left multiplication |
 | $j_\mu=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}} c_\mu)$, $j_0=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ | The number current and its density |
 | $p$, $p_2$, $k_\nu=(p_2-p)_\nu$, $P_\mu=\tfrac12(p+p_2)_\mu$ | Momenta, transfer and average |
 | $\bar w_2\,ie_\mu w\,\vec e_{\nu(\mu)}$ | The momentum-space bilinear |

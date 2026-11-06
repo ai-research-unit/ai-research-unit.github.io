@@ -343,10 +343,10 @@ What does select it is the diagonal tensor structure, equivalently the eigenvalu
 The four Bell idempotents are also a single orbit of one another. Conjugating $\tilde\Pi_{Ξ^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents:
 
 $$
-\tilde\Pi_{Ξ^+}\xrightarrow{\,e_t\,}\tilde\Pi_{Ξ^+},\quad
-\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_x\,}\tilde\Pi_{\mathrm{sp}^+},\quad
-\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_y\,}\tilde\Pi_{\mathrm{sp}^-},\quad
-\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_z\,}\tilde\Pi_{Ξ^-}.
+\tilde\Pi_{Ξ^+}\xrightarrow{\,e_t}\tilde\Pi_{Ξ^+},\quad
+\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_x}\tilde\Pi_{\mathrm{sp}^+},\quad
+\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_y}\tilde\Pi_{\mathrm{sp}^-},\quad
+\tilde\Pi_{Ξ^+}\xrightarrow{\,\vec e_z}\tilde\Pi_{Ξ^-}.
 $$
 
 The local action of the quaternion group therefore organises the Bell basis into a single orbit, while the global sign pattern $\epsilon$ labels the members.

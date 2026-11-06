@@ -311,7 +311,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $Z_N(J)=(2\pi)^{N/2}(\det A)^{-1/2}\exp(J^{T}A^{-1}J/2)$, $Z_N\propto(\det A)^{-1}\exp(J^*A^{-1}J)$ | Finite-dimensional Gaussian identity, real and complex |
 | $\Delta_F$ | Feynman propagator; free two-point function |
 | $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
-| $\tilde P=i\omega/c\,e_t+\vec k$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
+| $\tilde P=\hbar\,(i\omega/c\,e_t+\vec k)$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $\pi_{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi_{\mathrm{scl}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\hbar\delta^{(3)}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |

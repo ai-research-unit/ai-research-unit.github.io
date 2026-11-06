@@ -41,7 +41,7 @@ $$
 \tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3
 $$
 
-are each the derivative with respect to the same coordinate under the same name, the list now $(x_4,x_1,x_2,x_3)$ real. What the rotation changes is the sign of the time term alone: $\partial^2/\partial R_t^2=-\partial^2/\partial r'_t^2$ on the material sector and $+\partial^2/\partial x_4^2$ on the real slice, so that
+are each the derivative with respect to the same coordinate under the same name, the list now $(x_4,x_1,x_2,x_3)$ real. What the rotation changes is the sign of the time term alone: $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$ on the material sector and $+\partial^2/\partial x_4^2$ on the real slice, so that
 
 $$
 \Box=\partial^2/\partial x_4^2+\partial^2/\partial x_1^2+\partial^2/\partial x_2^2+\partial^2/\partial x_3^2

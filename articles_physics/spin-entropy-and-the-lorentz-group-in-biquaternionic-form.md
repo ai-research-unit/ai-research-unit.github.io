@@ -65,7 +65,7 @@ $$
 $$
 because the scalar part contributes $\tfrac14$ and the vector term contributes $-\tfrac14(i\vec r)^2 = -\tfrac14|\vec r|^2$. Hence $|\vec r| = \sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}$ and
 $$
-\boxed{\,S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right)\,}
+\boxed{\,S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right)}
 $$
 The entropy is a function of the single algebraic invariant $\langle\tilde{Ϛ}\rangle_{\natural}$, which ranges over $[0,\tfrac14]$ for states. This is the sense in which the spin entropy is intrinsic to the algebra rather than to a chosen representation: it is computed from the biquaternion norm and the binary entropy, with no reference to a basis, a Hamiltonian, or a frame.
 

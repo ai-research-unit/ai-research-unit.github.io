@@ -314,19 +314,19 @@ with $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\B
 **The one-sided pair.** The chiral pair is the definition:
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two members of the chiral pair are one equation per chirality, not two different equations.
@@ -345,7 +345,7 @@ The two forms are set side by side once:
 
 | | one-sided form | two-sided form |
 |---|---|---|
-| equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
+| equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
 | field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ | $F\in\mathbb{B}$ |
 | multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $\tilde\nabla^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
 | mass | exchange of the two chirality parts | the right-multiplied unit, with the conjugation |
@@ -700,7 +700,7 @@ The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes
 
 The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the cell $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
 
-The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
+The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 

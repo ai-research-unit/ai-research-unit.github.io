@@ -20,7 +20,7 @@ $$
 \qquad
 \Box=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
-which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+which on the material sector reads $\Box=\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
 
 The source's four generators act on the field, and they are written here as the actions they are:
 $$
@@ -198,20 +198,20 @@ $$
 $$
 and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of the identity by $9\times10^{-16}$, while $\tilde\nabla^2$ departs from one by $0.9$. That $\tilde\nabla^2$ is not $\Box$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$
-iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}} .
+iC^a\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_a}=mc/\hbar\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The corpus's equation is the **one-sided** pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
 \tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu ,
 $$
 in which the gradient is an element acting by left multiplication on the algebra, and the mass is the off-diagonal pairing, $L$ with $R$. The gradient is primary there and the source's operator is a frame-dependent contraction, as *The Dirac Equation in Biquaternionic Form* states; it is not obtainable by rewriting the gradient.
 
-The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_k$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
+The difference is one line, and it is a difference in side. The letter of an element is the value of the chirality action on it, written $L$ for the minus value and $R$ for the plus value, and two facts carry every display below: a product takes the letter of its right factor, and left multiplication keeps the letter. Right multiplication by $e_t$ and by $\vec e_z$ therefore keeps the letter, right multiplication by $\vec e_x$ and by $\vec e_y$ exchanges the two, and a left multiplier never changes it. Every term of the source's kinetic operator carries a right multiplier — $C_t$ by $\vec e_x$, $C_k$ by $\vec e_y$ — so the whole kinetic term exchanges $L$ and $R$, while the mass term $mc/\hbar\tilde{Ξ}_{\mathrm{sp}}$ is left multiplication by a constant and keeps the letter. In the corpus's pair the gradient $\tilde\nabla$ is left multiplication and keeps the letter, while the mass is the off-diagonal pairing, which is the exchange: the gradient preserves and the mass is the flip. Neither display is a rewriting of the other: they differ in the operator, in the field it acts on and in the letter, and the two forms are kept side by side in the corpus's own Dirac article for exactly this reason.
 
 **The Einstein equation does not follow.** Variation with respect to the tetrad gives, in the source's own notation,
 $$
@@ -294,19 +294,19 @@ and then, from a Madelung decomposition, writes
 $$
 Q_T=\beta\,T_{\mu\nu\rho}T_{\mu\nu\rho},
 \qquad
-\beta=\frac{\hbar c\lambda_m}{8} ,
+\beta=\frac{\hbar c\hbar/(mc)}{8} ,
 $$
 while the "Quantum Potential Comparison" box at the end of the same section writes the torsion term with a **negative** sign,
 $$
-Q_T=-\frac{\hbar c\lambda_m}{8}\,T_{\mu\nu\rho}T_{\mu\nu\rho} ,
+Q_T=-\frac{\hbar c\hbar/(mc)}{8}\,T_{\mu\nu\rho}T_{\mu\nu\rho} ,
 $$
 and adds it to the standard Bohm term. The paper therefore carries both signs within one section, with only the three-line "ultra-compact derivation" between them, and with no statement of which is the correction: Eq. (23) is positive, the box is negative, and the two later displays that repeat the term — the Pauli limit of Section 13.2 and the torsion potential of Eq. (26) — both carry the plus sign, so the box is the outlier by three displays to one. Nothing in the source fixes the sign, and a torsion-squared scalar whose coefficient is $+\tfrac{\hbar^2}{8m}$ in one display and $-\tfrac{\hbar^2}{8m}$ in the next is not a derived result.
 
-The box carries a third line as well, $Q_H=Q_{\text{Bohm}}+Q_{\text{Torsion}}+\tfrac{c\lambda_m}{2}\epsilon^{ijk}\frac{\partial T_{jk0}}{\partial x_i}$, labelled "quaternionic correction". That term is built on exactly the components $T_{jk0}$ that Eq. (5) makes zero for every field, so on the source's own torsion it vanishes identically and the box collapses to its first two lines. It is the same disjoint-support failure that separates Eq. (5) from the axial pseudo-vector $\mathcal{T}=\epsilon_{ijk}T_{jk0}$ used in Eq. (26).
+The box carries a third line as well, $Q_H=Q_{\text{Bohm}}+Q_{\text{Torsion}}+\tfrac{c\hbar/(mc)}{2}\epsilon^{ijk}\frac{\partial T_{jk0}}{\partial x_i}$, labelled "quaternionic correction". That term is built on exactly the components $T_{jk0}$ that Eq. (5) makes zero for every field, so on the source's own torsion it vanishes identically and the box collapses to its first two lines. It is the same disjoint-support failure that separates Eq. (5) from the axial pseudo-vector $\mathcal{T}=\epsilon_{ijk}T_{jk0}$ used in Eq. (26).
 
 **Two of the three terms are not energies.** Eq. (26), repeated in the comparison box with the same coefficients, reads
 $$
-V_T(\mathbf r)=\frac{\hbar c\lambda_m}{8}\,T_{\mu\nu\rho}T^{\mu\nu\rho}+\frac{c\lambda_m}{4}\,\sigma\cdot(\nabla\times T)+\frac{c\lambda_m}{2}\,\nabla\cdot T ,
+V_T(\mathbf r)=\frac{\hbar c\hbar/(mc)}{8}\,T_{\mu\nu\rho}T^{\mu\nu\rho}+\frac{c\hbar/(mc)}{4}\,\sigma\cdot(\nabla\times T)+\frac{c\hbar/(mc)}{2}\,\nabla\cdot T ,
 \qquad T=\epsilon_{ijk}T_{jk0} ,
 $$
 in which $\sigma$ is the source's Pauli vector and $\nabla$ its spatial gradient, neither of them the bivector $C_{\mu\nu}$ of the frame actions. The three terms do not share a dimension. With $[\hbar^2/m]=\mathrm{J\,m^2}$ and torsion in inverse length, the first term is $\mathrm{J\,m^2\cdot m^{-2}}=\mathrm{J}$; the second is $\mathrm{m^2\,s^{-1}\cdot m^{-2}}=\mathrm{s^{-1}}$, and the third is $\mathrm{s^{-1}}$ as well. The last two are frequencies where the first is an energy, and the whole display is short by one factor of $\hbar$ in those two terms. The defect is the sort that a units check catches and a symbol-by-symbol reading does not, and it is visible in the source's own numbers: at its stated $T\simeq3\times10^{-32}\,\mathrm{m^{-1}}$ the first term is $6\times10^{-108}\,\mathrm{J}$ while the other two are $\sim10^{-41}\,\mathrm{s^{-1}}$, and the ratio is a time.
@@ -325,9 +325,9 @@ written here with every index low; raising the free index costs one sign, $\epsi
 
 **The wave equation itself is not derived.** The chain that produces $\Box T=0$ runs: apply $D_\nu D^\nu$ to the Dirac equation, obtain
 $$
-(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=-\tfrac14 \mathrm{Riem}_{\mu\nu\alpha\beta}\,C^{\mu\nu}\sigma^{\alpha\beta}\tilde{Ξ}_{\mathrm{sp}}-\tfrac12 T^\rho{}_{\mu\nu}\,C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}} ,
+(\Box-(mc/\hbar)^{2})\tilde{Ξ}_{\mathrm{sp}}=-\tfrac14 \mathrm{Riem}_{\mu\nu\alpha\beta}\,C^{\mu\nu}\sigma^{\alpha\beta}\tilde{Ξ}_{\mathrm{sp}}-\tfrac12 T^\rho{}_{\mu\nu}\,C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}} ,
 $$
-pair the result with $C_\lambda\tilde{Ξ}_{\mathrm{sp}}$, and invoke the Fierz relation $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\rangle=2\kappa T_\lambda{}^{\mu\nu}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12 T^\rho{}_{\mu\nu}\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is not $\Box$ of any bilinear either; $\Box T$ would be $2\,\partial^\alpha\langle\tilde{Ξ}_{\mathrm{sp}},\partial_\alpha\tilde{Ξ}_{\mathrm{sp}}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\partial_\mu\partial^\mu\tilde{Ξ}_{\mathrm{sp}}$ is a term proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}$. Substituting gives $\Box T$ proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}$ and to $(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
+pair the result with $C_\lambda\tilde{Ξ}_{\mathrm{sp}}$, and invoke the Fierz relation $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^{\mu\nu}\tilde{Ξ}_{\mathrm{sp}}\rangle=2\kappa T_\lambda{}^{\mu\nu}$. Two things go wrong at once. The curvature term is set to zero by the teleparallel condition, which leaves the single term $-\tfrac12 T^\rho{}_{\mu\nu}\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda C^\mu D_\rho\tilde{Ξ}_{\mathrm{sp}}\rangle$ — one power of $T$ multiplying a derivative bilinear, not a wave operator acting on $T$. And on the left there is $\langle\tilde{Ξ}_{\mathrm{sp}},C_\lambda(\Box-(mc/\hbar)^{2})\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is not $\Box$ of any bilinear either; $\Box T$ would be $2\,\partial^\alpha\langle\tilde{Ξ}_{\mathrm{sp}},\partial_\alpha\tilde{Ξ}_{\mathrm{sp}}\rangle$ at leading order, the outer derivative acting on both slots, and what Eq. (24) supplies for $\partial_\mu\partial^\mu\tilde{Ξ}_{\mathrm{sp}}$ is a term proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}$. Substituting gives $\Box T$ proportional to $T\,\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}$ and to $(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})^2$, neither of which vanishes. The source's footnote, "up to total derivatives", does not bridge the gap: a total derivative changes the action, not an order in $T$. So $\Box T=0$ is asserted at the point where the derivation should be, and the three results built on it — light-speed torsion waves, the conserved entropy current, and the pulse-propagation estimate — inherit the assertion.
 
 The implication does not hold, and the failure is an index count. The divergence is an epsilon contraction of the gradient,
 $$

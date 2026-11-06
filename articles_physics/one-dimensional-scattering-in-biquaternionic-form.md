@@ -7,10 +7,10 @@ One-dimensional scattering is the simplest problem in which a quantum system mee
 The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is
 
 $$
-H = \left[-\frac{\hbar c\lambda_m}{2}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{B}_{C},
+H = \left[-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{B}_{C},
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
 
@@ -27,13 +27,13 @@ For a particle of mass $m$ in a real potential $V(x)$, the stationary equation i
 $$
 H\,\tilde{Ξ}_{\mathrm{sp}} = E\,\tilde{Ξ}_{\mathrm{sp}},
 \qquad
-H = \left[-\frac{\hbar c\lambda_m}{2}\frac{d^2}{dx^2} + V(r_x)\right]e_t = c r_t(r_x)\,e_t,
+H = \left[-\frac{\hbar c}{2\,k_m}\frac{d^2}{dx^2} + V(r_x)\right]e_t = c r_t(r_x)\,e_t,
 $$
 
 with $\tilde{Ξ}_{\mathrm{sp}}$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
--\frac{\hbar c\lambda_m}{2}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
+-\frac{\hbar c}{2\,k_m}\frac{d^2\xi_{\mathrm{scl}}}{dx^2}(x) + V(x)\xi_{\mathrm{scl}}(x) = E\,\xi_{\mathrm{scl}}(x)
 $$
 
 for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ with $\xi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
@@ -41,7 +41,7 @@ for the scalar envelope $\xi_{\mathrm{scl}}$, and every solution has the form $\
 Away from the points where $V$ jumps, the potential is constant on each interval, and the solutions are exponentials. Writing $V = V_j$ and
 
 $$
-k_j = \sqrt{\frac{2(E-V_j)}{\hbar c\lambda_m}},
+k_j = \sqrt{\frac{2(E-V_j)\,k_m}{\hbar c}},
 $$
 
 with the convention that $k_j$ is imaginary when $E < V_j$ (an evanescent wave, with decay constant $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$), the general solution on the interval $j$ is
@@ -64,7 +64,7 @@ For a factorised field $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ with
 
 $$
 J = \frac{\hbar}{2mi}\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx} - \left(\frac{d\xi_{\mathrm{scl}}}{dx}\right)^*\xi_{\mathrm{scl}}\right)
-= c\lambda_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
+= c/k_m\,\mathrm{Im}\!\left({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx}\right).
 $$
 
 For a superposition of a right- and a left-moving exponential,
@@ -82,7 +82,7 @@ $$
 and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}({\xi_{\mathrm{scl}}}^*\frac{d\xi_{\mathrm{scl}}}{dx})$:
 
 $$
-J = c\lambda_m k\left(|A|^2 - |B|^2\right).
+J = c\,k/k_m\left(|A|^2 - |B|^2\right).
 $$
 
 The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ with $\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{B}_{\Phi}$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{B}_{\Psi}$. As in the free case, the continuity equation pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
@@ -133,7 +133,7 @@ both taken with the same asymptotic wave vector, as is the case when the potenti
 Flux conservation across the scattering region is the statement that $J$ evaluated to the left equals $J$ evaluated to the right. Using the current derived above,
 
 $$
-c\lambda_m k\left(|A|^2 - |B|^2\right) = c\lambda_m k\left(|C|^2 - |D|^2\right),
+c\,k/k_m\left(|A|^2 - |B|^2\right) = c\,k/k_m\left(|C|^2 - |D|^2\right),
 $$
 
 or, in matrix form,
@@ -191,7 +191,7 @@ The coefficients are those of a sudden change of impedance; the vanishing of $T$
 $$
 \xi_{\mathrm{scl}}(x) = t\,\exp(-\kappa x),
 \qquad
-\kappa = \sqrt{\frac{2(V_0-E)}{\hbar c\lambda_m}},
+\kappa = \sqrt{\frac{2(V_0-E)\,k_m}{\hbar c}},
 $$
 
 whose current vanishes identically. The flux is entirely reflected.
@@ -208,7 +208,7 @@ A\,\exp(\kappa x)+B\,\exp(-\kappa x), & 0<x<a,\\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
-\kappa = \sqrt{\frac{2(V_0-E)}{\hbar c\lambda_m}}.
+\kappa = \sqrt{\frac{2(V_0-E)\,k_m}{\hbar c}}.
 $$
 
 Matching $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,
@@ -248,13 +248,13 @@ Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\xi_
 $$
 \xi_{\mathrm{scl}}(0^+) = \xi_{\mathrm{scl}}(0^-),
 \qquad
-\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) = \frac{2\lambda}{\hbar c\lambda_m}\,\xi_{\mathrm{scl}}(0),
+\frac{d\xi_{\mathrm{scl}}}{dx}(0^+)-\frac{d\xi_{\mathrm{scl}}}{dx}(0^-) = \frac{2\lambda\,k_m}{\hbar c}\,\xi_{\mathrm{scl}}(0),
 $$
 
-the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2\lambda}{\hbar c\lambda_m}t$, so with the dimensionless coupling
+the second obtained by integrating the equation across the origin. For $E>0$, with $\xi_{\mathrm{scl}} = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\xi_{\mathrm{scl}} = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2\lambda\,k_m}{\hbar c}t$, so with the dimensionless coupling
 
 $$
-\beta = \frac{\lambda}{\hbar c\lambda_m k},
+\beta = \frac{\lambda\,k_m}{\hbar c k},
 $$
 
 one finds
@@ -272,9 +272,9 @@ $$
 with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at
 
 $$
-E_b = -\frac{\lambda^2}{2\hbar c\lambda_m} = -\frac{\hbar c\lambda_m\kappa_b^2}{2},
+E_b = -\frac{\lambda^2\,k_m}{2\hbar c} = -\frac{\hbar c\kappa_b^2}{2\,k_m},
 \qquad
-\kappa_b = \frac{|\lambda|}{\hbar c\lambda_m},
+\kappa_b = \frac{|\lambda|\,k_m}{\hbar c},
 $$
 
 whose wave function $\exp(-\kappa_b|x|)$ decays in both directions. The bound state's energy is fixed by the same matching condition continued to purely imaginary $k = i\kappa_b$; it is the pole that the transmission amplitude acquires on the negative energy axis.
@@ -326,7 +326,7 @@ M_\delta(\beta) =
 -i\beta & 1 - i\beta
 \end{pmatrix},
 \qquad
-\beta = \frac{\lambda}{\hbar c\lambda_m k},
+\beta = \frac{\lambda\,k_m}{\hbar c k},
 $$
 
 as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
@@ -388,7 +388,7 @@ where the change is understood with the trivial winding contributed by the reson
 $$
 \arg t = \arctan\!\left(\frac{\kappa_b}{k}\right),
 \qquad
-\kappa_b = \frac{|\lambda|}{\hbar c\lambda_m},
+\kappa_b = \frac{|\lambda|\,k_m}{\hbar c},
 $$
 
 so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change of $\pi/2=\pi(1-\tfrac12)$ as the theorem requires. Each additional bound state shifts the threshold phase by $\pi$. The theorem is a useful bookkeeping check on any numerical solution of the matching problem, and the delta is the case in which it can be checked by hand.
@@ -423,9 +423,9 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Summary
 
-The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar c\lambda_m}{2}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
+The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x))e_t\,\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\xi$ with $\xi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\lambda_m k(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = c\,k/k_m(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
 The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
@@ -441,12 +441,12 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\mathbb{B}_{C}$ | Centre; the Hamiltonian multiplies $e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ | State module |
-| $H = [-\frac{\hbar c\lambda_m}{2}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
+| $H = [-\frac{\hbar c}{2\,k_m}\partial^2/\partial R_x^2 + V(r_x)]e_t$ | Central Hamiltonian |
 | $\tilde{Ξ}_{\mathrm{sp}} = \xi_{\mathrm{scl}}\,\xi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |
 | $J = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | One-dimensional current |
-| $J = c\lambda_m k(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
+| $J = c\,k/k_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ | Density |
 | $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |

@@ -5,10 +5,10 @@
 The hydrogen atom is the Coulomb problem: a particle of mass $m$ bound by the central potential $V(r)=-\kappa/r$, where $\kappa = Ze^2/(4\pi\epsilon_0)$ for a nucleus of charge $Ze$. In the standard non-relativistic treatment the problem is solved by separating the Laplacian in spherical coordinates, reducing it to a radial equation. The bound-state energies are
 
 $$
-E_n = -\frac{\kappa^2}{2\hbar c\lambda_m n^2},
+E_n = -\frac{\kappa^2\,k_m}{2\hbar c n^2},
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 the eigenstates are labelled by the quantum numbers $n,l,l_z$, and each orbital level carries a two-valued spin factor.
 
@@ -48,7 +48,7 @@ $$
 The two natural transcriptions therefore agree, and the kinetic energy is
 
 $$
-\boxed{\;T = -\frac{1\lambda_m c}{2\hbar}\tilde p^{\,2} = \frac{1\lambda_m c}{2\hbar}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}\lambda_m c}{2\hbar}e_t\;}.
+\boxed{\;T = -\frac{c}{2\hbar\,k_m}\tilde p^{\,2} = \frac{c}{2\hbar\,k_m}\tilde p\,\tilde p^{\natural} = \frac{p^{\,2}c}{2\hbar\,k_m}e_t\;}.
 $$
 
 The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $\vec e_k^2=-e_t$ — that gives the biquaternion norm $\langle\tilde R_\Psi\rangle_{\natural}=c^2 r_t^2-|\vec r_\Psi|^2$ on $\mathbb{B}_{\Psi}$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_t$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
@@ -69,8 +69,8 @@ Adding the two terms,
 
 $$
 \boxed{\;H = T+\tilde{Ξ}
-= \left[-\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}\right]e_t
-= c r_t\,e_t, \qquad c r_t = -\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}\;}.
+= \left[-\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}\right]e_t
+= c r_t\,e_t, \qquad c r_t = -\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}\;}.
 $$
 
 The Hamiltonian is Hermitian and lies in $\mathbb{B}_{\Psi}$, and its vector part is zero: $\vec r_\Psi=0$ in the general form $\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
@@ -79,7 +79,7 @@ The generator of the Schrödinger equation is
 
 $$
 -\frac{i}{\hbar}H
-= i\left(\frac{c\lambda_m}{2}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{B}_{\Phi} ,
+= i\left(\frac{c}{2\,k_m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{B}_{\Phi} ,
 $$
 
 and it lies along the time-like direction $ie_t$ of the material sector, as the companion article on the Schrödinger equation requires of a time-translation generator. Both the observable and the generator are scalar multiples of $e_t$. The framework's sector split is thus realised here in its simplest possible form: the entire Hamiltonian content of the non-relativistic Coulomb problem sits in the scalar slot, and the vector slots are empty.
@@ -162,7 +162,7 @@ $$
 the angular factor is an eigenfunction of $L^2$ with eigenvalue $\hbar^2l(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:
 
 $$
--\frac{\hbar c\lambda_m}{2}\frac{d^2u}{dr^2} + \left[\frac{\hbar^2 l(l+1)}{2mr^2}-\frac{\kappa}{r}\right]u = E\,u .
+-\frac{\hbar c}{2\,k_m}\frac{d^2u}{dr^2} + \left[\frac{\hbar^2 l(l+1)}{2mr^2}-\frac{\kappa}{r}\right]u = E\,u .
 $$
 
 This is the standard radial Coulomb equation. The framework's contribution at this step is the identification of the coupling: the whole of the angular problem enters the radial equation through the single eigenvalue $\hbar^2 l(l+1)$ of $L^2$, which is exactly the statement the angular-momentum article makes about the operators "that a position-space treatment of the hydrogen atom requires". The spin factor does not enter the radial equation at all, because $H$ is central; it multiplies the solution.
@@ -174,7 +174,7 @@ This is the standard radial Coulomb equation. The framework's contribution at th
 The bound-state solutions of the radial equation are the standard ones. The spectrum is
 
 $$
-\boxed{\;E_n = -\frac{\kappa^2}{2\hbar c\lambda_m n^2} = -\frac{\kappa}{2a_0 n^2}\;},
+\boxed{\;E_n = -\frac{\kappa^2\,k_m}{2\hbar c n^2} = -\frac{\kappa}{2a_0 n^2}\;},
 \qquad n=1,2,3,\dots,
 $$
 
@@ -226,17 +226,17 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
-| Hamiltonian $-\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}$ | $H = \bigl[-\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
-| Kinetic term $p^2\lambda_m c/(2\hbar)$ | $-\frac{1\lambda_m c}{2\hbar}\tilde p^{\,2}=\frac{1\lambda_m c}{2\hbar}\tilde p\tilde p^{\natural}$ | scalar |
+| Hamiltonian $-\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}$ | $H = \bigl[-\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
+| Kinetic term $p^2 c/(2\hbar\,k_m)$ | $-\frac{c}{2\hbar\,k_m}\tilde p^{\,2}=\frac{c}{2\hbar\,k_m}\tilde p\tilde p^{\natural}$ | scalar |
 | $L_{\mathrm{orb},k}$ | $L_{\mathrm{orb},k} e_t$ | scalar |
 | Spin $S_k=\frac{\hbar}{2}\sigma_k$ | $\tilde S_k=\frac{\hbar}{2}i\vec e_k$ | vector |
 | Wavefunction $\tilde{Ξ}_{\mathrm{sp}}\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi$ | module |
-| Spectrum $E_n=-\frac{\kappa^2}{2\hbar c\lambda_m n^2}$ | identical | — |
+| Spectrum $E_n=-\frac{\kappa^2\,k_m}{2\hbar c n^2}$ | identical | — |
 | Degeneracy $2n^2$ | identical, spin factor from $\dim\mathbb{B}\tilde\Pi=2$ | — |
 
 The spectrum, the eigenfunctions, the quantum numbers and the degeneracies are the standard ones. The biquaternion form is a transcription, and it predicts nothing beyond the standard solution. What it does isolate is three structural facts that the standard notation leaves implicit:
 
-1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $p^2\lambda_m c/(2\hbar)$ is really $\frac{1\lambda_m c}{2\hbar}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
+1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $p^2 c/(2\hbar\,k_m)$ is really $\frac{c}{2\hbar\,k_m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
 2. **The Hamiltonian is central and the generator is in the material sector.** The observable $H$ lies in $\mathbb{B}_{\Psi}$; the generator $-iH/\hbar$ lies in $\mathbb{B}_{\Phi}$ along $ie_t$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.
 3. **Orbital and spin operators occupy complementary slots.** The orbital operators are scalar multiples of $e_t$ and central; the spin operators are vector-slot elements. Their commutativity, $[L_{\mathrm{orb},i},\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.
 
@@ -292,15 +292,15 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\hbar\nabla$ is Hermitian in $\mathbb{B}_{\Psi}$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\hbar^2\nabla^2e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
-H = \left[-\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}\right]e_t = c r_t\,e_t \in \mathbb{B}_{\Psi},
+H = \left[-\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}\right]e_t = c r_t\,e_t \in \mathbb{B}_{\Psi},
 \qquad
--\frac{i}{\hbar}H = i\left(\frac{c\lambda_m}{2}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{B}_{\Phi} .
+-\frac{i}{\hbar}H = i\left(\frac{c}{2\,k_m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{B}_{\Phi} .
 $$
 
 The Hamiltonian is central, so the spin is a spectator, the total-angular-momentum coupling is not needed, and the spinor equation reduces componentwise to the standard scalar Schrödinger equation. Separation in the framework's operators, with orbital operators in the scalar slot and spin operators in the vector slots, gives the standard radial equation with the angular coupling $\hbar^2 l(l+1)$, the standard spectrum
 
 $$
-E_n = -\frac{\kappa^2}{2\hbar c\lambda_m n^2} = -\frac{\kappa}{2a_0n^2},
+E_n = -\frac{\kappa^2\,k_m}{2\hbar c n^2} = -\frac{\kappa}{2a_0n^2},
 $$
 
 the standard eigenstates $R_{nl}(r)Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\xi_{s_z}$, and the degeneracy $2n^2$, of which only the factor of two is algebraic, being the dimension of the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ together with $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$.
@@ -322,7 +322,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde p=-i\hbar\nabla=\sum_k \vec e_k p_k$, $p_k=-i\hbar\partial/\partial R_k$ | Momentum, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
-| $H=c r_t\,e_t$, $c r_t=-\frac{\hbar c\lambda_m}{2}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
+| $H=c r_t\,e_t$, $c r_t=-\frac{\hbar c}{2\,k_m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
 | $-iH/\hbar\in\mathbb{B}_{\Phi}$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\hbar^2/(m\kappa)$ | Bohr radius |
@@ -332,7 +332,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*})$ | Trace reading at normalisation (Born rule) |
-| $E_n=-\frac{\kappa^2}{2\hbar c\lambda_m n^2}$ | Bound-state spectrum, $n=n_r+l+1$ |
+| $E_n=-\frac{\kappa^2\,k_m}{2\hbar c n^2}$ | Bound-state spectrum, $n=n_r+l+1$ |
 
 ## Further Reading
 

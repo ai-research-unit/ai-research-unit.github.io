@@ -45,7 +45,7 @@ The gradient acts on the left. The free equation is first order in one field, $\
 $$
 \tilde\nabla^2=e_t\Bigl(\frac{\partial^2}{\partial R_t^2}-\Delta_Q\Bigr)+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
 $$
-and the mixed term is a vector. The operator $\Box$ has no such term because $\tilde\nabla^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, and this article writes no other first-order massive equation of one field. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+and the mixed term is a vector. The operator $\Box$ has no such term because $\tilde\nabla^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and this article writes no other first-order massive equation of one field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ## The Parent Action
 
@@ -110,7 +110,7 @@ $$
 $$
 The first term is quadratic in the derivative and is the kinetic term; the second carries one derivative and no mass, and it is the **cubic (order-three) form** of the companion article. At $a=e=0$, and after the rescaling $H_\mu\mapsto bH_\mu$ that restores canonical normalisation, it reads
 $$
-\mathcal{L}_H=-\frac{b^2\lambda_m c}{2\hbar}\Bigl[\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,\partial H_\nu/\partial x_\mu\,\partial H_\nu/\partial x_\mu-m\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,H^*_\nu\,i\check c_{\nu\mu\lambda}\,\partial H_\lambda/\partial x_\mu\Bigr]+\text{c.c.}+\partial\text{-terms},
+\mathcal{L}_H=-\frac{b^2 c}{2\hbar\,k_m}\Bigl[\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,\partial H_\nu/\partial x_\mu\,\partial H_\nu/\partial x_\mu-m\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,H^*_\nu\,i\check c_{\nu\mu\lambda}\,\partial H_\lambda/\partial x_\mu\Bigr]+\text{c.c.}+\partial\text{-terms},
 $$
 so the mass term has one derivative and one power of $m$ — the hallmark of a topological mass, and the reason the source calls the two actions dual.
 
@@ -214,9 +214,9 @@ Two equations carry the name in this corpus, and they differ in which side of th
 
 **The one-sided pair.** On the Dirac module the massive equation is the pair whose mass couples the two chiral parts,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 both lines acting on the left, with the mass as the pairing of the two chiral parts and $\tilde\nabla^2$ not scalar. In the s-vector carrier the same pair is the source's two chiral parts,
 $$
@@ -234,11 +234,11 @@ with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposi
 
 **The two-sided equation.** Read on the algebra rather than on the module, the same content is one equation whose two sides are the two multiplications. In the observer frame it is
 $$
-\Bigl(-\tilde\nabla^{\natural}-\lambda_m^{-1}\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
+\Bigl(-\tilde\nabla^{\natural}-k_m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
 $$
 with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in units $c=1$ the time part of $-\tilde\nabla^{\natural}$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $m\,\Gamma\overline F$, and the equation can be moved to one side:
 $$
--\lambda_m^{-1}\,i\,\overline F\,\vec e_z=m\,(-i\overline F\,\vec e_z)=m\,\Gamma\,\overline F
+-k_m\,i\,\overline F\,\vec e_z=m\,(-i\overline F\,\vec e_z)=m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
 \tilde\nabla^{\natural}F=m\,\Gamma\,\overline F ,
 $$
@@ -323,7 +323,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
-| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i c r'_t$ it is $\Delta-\frac{1}{c^2}\partial^2/\partial r'_t^2$ |
+| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i c r'_t$ it is $\Delta-\frac{1}{c^2}\partial^2/\partial {r'_t}^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |

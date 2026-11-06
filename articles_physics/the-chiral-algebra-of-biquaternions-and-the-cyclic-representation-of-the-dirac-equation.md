@@ -270,7 +270,7 @@ The second iterate being an involution is what makes the cyclic conjugation usab
 The paper starts from the two-line chiral pair of the older literature, where the field is written as a pair of two-component objects and the equation as a pair of first-order lines. In this corpus the same pair is written with one line per value, both acting from the left,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and the corpus fixes the gradient, the two values and their names (*Operator and Calculus Conventions*, §*The Gradient*, §*The Dynamics*). Rewritten in the isotropic derivatives (6), the pair is
@@ -285,7 +285,7 @@ $$
 \tag{14}
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The factor $2$ on the left is the $\tfrac12$ of the derivatives (6): with it, (14) is the two-line pair itself, term by term; without it the system is half of it. The printed source omits the factor. The omission is not cosmetic: it also halves the derivative side of (20), and that is why the source's amplitude relations seem to disagree with its phase (see *Plane Waves and the Dispersion Relation*).
 
@@ -377,7 +377,7 @@ The corpus writes the massive Dirac equation twice, and the two writings are not
 **The one-sided chiral pair.** The field is an element on which the algebra acts, and the equation is the pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 one line per value. Both gradients act by left multiplication, so the pair is one-sided; at $m=0$ the two lines are the two massless equations, and the mass couples them off the diagonal. **Chirality is the two lines.**

@@ -29,12 +29,12 @@ The next section sets up the naive discretization, its propagator and its double
 **The dynamics is the chiral pair of the gradient**,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with massless limit $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with massless limit $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
@@ -91,7 +91,7 @@ $$
 so the propagator is the inverse block,
 
 $$
-\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\mu}\sin^{2}(p_\mu a)\,}\begin{pmatrix} m & i\tilde K(p)\\ i\tilde K(p)^{\natural} & m\end{pmatrix}\;}.
+\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\mu}\sin^{2}(p_\mu a)}\begin{pmatrix} m & i\tilde K(p)\\ i\tilde K(p)^{\natural} & m\end{pmatrix}\;}.
 $$
 
 Both identities verified by direct inversion, at residual $0$ for the inverse and $1\times10^{-12}$ for the determinant; the massless inverse, the inverse of left multiplication by $i\tilde K$, is $\mathcal S_0(p)=-i\tilde K^{\natural}/(\tilde K\tilde K^{\natural})$ at the same residual. The scalar denominator is exactly the one the single-column form of the literature carries. The block is the price of the mass, and it is the block of the chiral pair, not a second dynamics.

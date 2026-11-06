@@ -487,7 +487,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}_{\mathrm{sp}}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}_{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 
@@ -508,7 +508,7 @@ The three passes need a table, and one table serves all three. Each row gives th
 | $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
 | $\gamma_k[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
 | $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
-| the mass term | $\lambda_m^{-1}L_{e_t}R_{e_t}$ | $\lambda_m^{-1}\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ |
+| the mass term | $k_mL_{e_t}R_{e_t}$ | $k_m\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto k_m\tilde{Ξ}_{\mathrm{sp}}$ |
 | the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 

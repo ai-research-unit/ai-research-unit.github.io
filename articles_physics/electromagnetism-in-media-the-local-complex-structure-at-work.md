@@ -257,9 +257,9 @@ $$
 $$
 the last of which is unchanged because $\mathrm{div}\,\mathrm{rot}=0$ and $\mu$ is constant. The magnetoelectric terms do not disturb charge conservation either: eliminating $\mathrm{div}\,\mathrm{rot}\,\vec H=0$ against the two divergence equations, or equivalently taking the divergence of Ampère–Maxwell's law, gives $i\omega\rho+\mathrm{div}\,\vec J=0$ in the frequency domain, the law $\partial/\partial r'_t\,\rho+\mathrm{div}\,\vec J=0$ in the time domain, exactly as for an ordinary medium. Applying $\mathrm{rot}$ separates the fields and gives the chiral wave equations
 $$
-\mathrm{rot}\,\mathrm{rot}\,\vec E+\epsilon\mu\,\partial^2/\partial r'_t^2\,\vec E
-+2\beta\epsilon\mu\,\partial^2/\partial r'_t^2\,\mathrm{rot}\,\vec E
-+\beta^2\epsilon\mu\,\partial^2/\partial r'_t^2\,\mathrm{rot}\,\mathrm{rot}\,\vec E
+\mathrm{rot}\,\mathrm{rot}\,\vec E+\epsilon\mu\,\partial^2/\partial {r'_t}^2\,\vec E
++2\beta\epsilon\mu\,\partial^2/\partial {r'_t}^2\,\mathrm{rot}\,\vec E
++\beta^2\epsilon\mu\,\partial^2/\partial {r'_t}^2\,\mathrm{rot}\,\mathrm{rot}\,\vec E
 =-\mu\,\partial/\partial r'_t\,\vec J-\beta\mu\,\partial/\partial r'_t\,\mathrm{rot}\,\vec J,
 $$
 and the corresponding equation for $\vec H$ with $\mathrm{rot}\,\vec J$ as its source. At $\beta=0$ these are the ordinary second-order wave equations of the medium. For $\beta\neq0$ the last term makes them **fourth order**: the chiral generalisation is not the non-chiral wave equation with a small term added, it is an equation of a different order.
@@ -280,7 +280,7 @@ The equivalence is exact and two-way, not a weak-coupling approximation in $\bet
 **The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial r'_t$ commutes with $D$,
 $$
 \left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t+iD\right)
-=\epsilon\mu\,\partial^2/\partial r'_t^2-\Delta=-\Box ,
+=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta=-\Box ,
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
@@ -495,11 +495,11 @@ The field-strength biquaternion of this article is therefore $i$ times this pape
 
 The corpus's own equation is **one-sided**, the pair on the two halves $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ of a Dirac field,
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\,\tilde{Ξ}_{\mathrm{sp},R} .
 $$
-Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\hbar/(mc)$ is the mass length.
 
 Kravchenko's equation is **two-sided**: one equation on the algebra,
 $$
@@ -858,7 +858,7 @@ The vacuum is the special case $\epsilon=\epsilon_0$, $\mu=\mu_0$, $c=c_0$, $Z=Z
 $$
 \tilde{F}=i\sqrt{\epsilon_0}\,\vec E-\sqrt{\mu_0}\,\vec H,
 $$
-the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial^2/\partial r'_t^2=\partial^2/\partial R_t^2+\Delta$. The complex time coordinate becomes $ic_0r'_t$, recovering the familiar $i c r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
+the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial^2/\partial {r'_t}^2=\partial^2/\partial R_t^2+\Delta$. The complex time coordinate becomes $ic_0r'_t$, recovering the familiar $i c r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
 
 This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.
 

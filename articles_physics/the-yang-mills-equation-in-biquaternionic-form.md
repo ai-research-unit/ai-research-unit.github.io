@@ -153,7 +153,7 @@ and the summed commutator vanishes: relabelling $\mu\leftrightarrow\nu$ and usin
 Hence
 
 $$
-\boxed{\,\sum_\nu D_\nu J_\nu = 0\,}
+\boxed{\,\sum_\nu D_\nu J_\nu = 0}
 $$
 
 the current is **covariantly conserved**. Expanding the definition, this is

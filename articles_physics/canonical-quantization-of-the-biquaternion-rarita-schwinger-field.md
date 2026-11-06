@@ -4,7 +4,7 @@
 
 The Rarita–Schwinger field is the field of spin $\tfrac32$: a vector-spinor $\tilde{Ξ}_{\mathrm{sp},\mu}$, carrying one Lorentz vector index and one Dirac spinor index, subject to the constraint that its trace vanish. As a classical field equation the Rarita–Schwinger equation is the subject of the companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*; the present article takes that equation as given and develops the **canonical quantization** of the field in the biquaternion framework: the constraint structure, the mode expansion, the anticommutators, the count of physical polarizations, and the gauge and ghost structure of the massless case.
 
-**Units.** Natural units $\hbar=c=1$ are used throughout this article: a four-momentum is $(p_0,\vec p)$ with $p_0=E$, the mass shell is $p^2=\vec p^{\,2}+m^2$, and every mass $m$ is an inverse length.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+\hbar^2c^2k_m^2$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 The biquaternion framework is well suited to this field, because the two indices of $\tilde{Ξ}_{\mathrm{sp},\mu}$ correspond to the two kinds of object the framework distinguishes. The vector index carries the **material** vector representation, which the article on integer-spin quantization identifies with the adjoint action on the vector part $V\subset\mathbb{B}_{\Phi}$; the spinor index carries the representation that the Dirac article identifies as the spin-$\tfrac12$ carrier. The Rarita–Schwinger field is therefore the tensor product of the two, and its decomposition is the framework's own:
 
@@ -43,7 +43,7 @@ $$
 \mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}:=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,p_\mu ,
 $$
 
-with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
+with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2/\hbar^2$, which is $k_m^{2}$ on the mass shell; the minus sign of $\mathbb{D}$ is the product of the imaginary unit of the frame cell and the one the Dirac operator carries, $i\cdot i=-1$, and $\mathbb{D}_p$ keeps the single one of the cell. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
 
 $$
 \Sigma(\tilde{Ξ}_{\mathrm{sp}}):=\sum_\mu\varepsilon_\mu\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}\,\vec e_{\nu(\mu)} .
@@ -57,18 +57,18 @@ The spinor index is the carrier of the Dirac article, and the field equation is 
 
 $$
 \boxed{\;
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R}
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}
 \;}
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp},\mu}=\tilde{Ξ}_{\mathrm{sp},\mu,L}+\tilde{Ξ}_{\mathrm{sp},\mu,R}$. The two equations are the two values of the chirality subscript, not two independent dynamics: the first couples the gradient to the right-chiral value, the second the conjugate gradient to the left-chiral value, and the conjugation $\natural$ is what exchanges the two. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\tilde{Ξ}_{\mathrm{sp}}$ is a left action on $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$, so the pair is complete as written and no second field is needed. The chirality cell acts by $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, and it anticommutes with the four frame cells: each cell therefore carries one value into the other, which is what makes the pair a two-sided form of a single equation rather than two dynamics. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with $\tilde{Ξ}_{\mathrm{sp},\mu}=\tilde{Ξ}_{\mathrm{sp},\mu,L}+\tilde{Ξ}_{\mathrm{sp},\mu,R}$. The two equations are the two values of the chirality subscript, not two independent dynamics: the first couples the gradient to the right-chiral value, the second the conjugate gradient to the left-chiral value, and the conjugation $\natural$ is what exchanges the two. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\tilde{Ξ}_{\mathrm{sp}}$ is a left action on $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$, so the pair is complete as written and no second field is needed. The chirality cell acts by $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, and it anticommutes with the four frame cells: each cell therefore carries one value into the other, which is what makes the pair a two-sided form of a single equation rather than two dynamics. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 On the spinor module the pair is transcribed as the single **cell equation**
 
 $$
-\bigl(\mathbb{D}-\lambda_m^{-1}\bigr)\tilde{Ξ}_{\mathrm{sp},\mu}=0 ,
+\bigl(\mathbb{D}-k_m\bigr)\tilde{Ξ}_{\mathrm{sp},\mu}=0 ,
 $$
 
 with the operator of the preceding paragraph. The two imaginary units — the one of the frame cell and the one the operator carries — are already multiplied to $-1$ inside $\mathbb{D}$, so the display carries no $i$; the minus sign of $\mathbb{D}$ *is* that product. What remains is a plain two-sided contraction. The single equation is the transcription of the pair, not a second equation: the operator multiplies on both sides, and its action on the two chiral values is the pair above. The companion article states the same equivalence from the classical side, and *The Legacy Pauli Gamma Formulation* reads $\mathbb{D}$ in the gamma notation.
@@ -238,7 +238,7 @@ The field is quantized with anticommutators, not commutators, and the reason is 
 The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form
 
 $$
-G_{\mu\nu}(p) = -\frac{i}{p^2-m^2}\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2\Bigl[\bigl(\mathbb{D}_p+m\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$
 
 where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.
@@ -386,14 +386,14 @@ $$
 $$
 \sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+m)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=-\frac{i}{p^2-m^2}\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2\Bigl[(\gamma\cdot p+m)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
-The Rarita–Schwinger field is a vector-spinor $\tilde{Ξ}_{\mathrm{sp},\mu}$ satisfying the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R}$ and the irreducibility constraint $\Sigma(\tilde{Ξ}_{\mathrm{sp}})=0$. On the spinor module the pair is the single equation $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp},\mu}=0$, the operator $\mathbb{D}$ carrying the product $i\cdot i=-1$ of its two imaginary units. The trace of the equation, taken with one use of the anticommutation relation of the cells, is $\Sigma(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}})=2p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\Sigma(\tilde{Ξ}_{\mathrm{sp}})$; with $\Sigma(\tilde{Ξ}_{\mathrm{sp}})=0$ it gives the transversality condition $p\cdot\tilde{Ξ}_{\mathrm{sp}}=0$, verified on shell with explicit frame cells. The constraint is imposed by the projector $(P\tilde{Ξ}_{\mathrm{sp}})_\mu=\tilde{Ξ}_{\mathrm{sp},\mu}-\tfrac14\,i\,e_\mu\Sigma(\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$, which is idempotent, annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
+The Rarita–Schwinger field is a vector-spinor $\tilde{Ξ}_{\mathrm{sp},\mu}$ satisfying the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ and the irreducibility constraint $\Sigma(\tilde{Ξ}_{\mathrm{sp}})=0$. On the spinor module the pair is the single equation $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp},\mu}=0$, the operator $\mathbb{D}$ carrying the product $i\cdot i=-1$ of its two imaginary units. The trace of the equation, taken with one use of the anticommutation relation of the cells, is $\Sigma(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}})=2p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\Sigma(\tilde{Ξ}_{\mathrm{sp}})$; with $\Sigma(\tilde{Ξ}_{\mathrm{sp}})=0$ it gives the transversality condition $p\cdot\tilde{Ξ}_{\mathrm{sp}}=0$, verified on shell with explicit frame cells. The constraint is imposed by the projector $(P\tilde{Ξ}_{\mathrm{sp}})_\mu=\tilde{Ξ}_{\mathrm{sp},\mu}-\tfrac14\,i\,e_\mu\Sigma(\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$, which is idempotent, annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
 
 The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\tilde{Ξ}_{\mathrm{sp},\mu}\mapsto\tilde{Ξ}_{\mathrm{sp},\mu}+\partial/\partial x_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the trace gauge fixing requires Faddeev–Popov commuting spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, and a completeness relation whose transverse projector is built from the same frame cells.
 
@@ -408,9 +408,9 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame cell of the coordinate $x_\mu$, acting as $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$: $iR_{\mathrm{axf},\vec e_x}$ for $\mu=t$, $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
 | $2\varepsilon_\mu\delta_{\mu\nu}$ on the identity action | The sum of the two compositions of two frame cells; their two imaginary units multiply to $-1$ |
 | $\varepsilon_\mu=-g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |
 | $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu\varepsilon_\mu\,e_\mu(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu)\vec e_{\nu(\mu)}$, $\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\,i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}p_\mu$ | Pair operator of the conventions article and its Fourier symbol; $\mathbb{D}^2=\Box$, $\mathbb{D}_p^2=p^2$, and the imaginary units of the cell and of the derivative are multiplied to $-1$ |
-| $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp},\mu}=0$ | Cell transcription of the chiral pair |
+| $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp},\mu}=0$ | Cell transcription of the chiral pair |
 | $\Sigma(\tilde{Ξ}_{\mathrm{sp}})=\sum_\mu\varepsilon_\mu\,i\,e_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\vec e_{\nu(\mu)}=0$ | Trace spinor and irreducibility constraint; removes the $\left(\tfrac12\right)$ component |
 | $p\cdot\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu p_\mu\tilde{Ξ}_{\mathrm{sp},\mu}=0$ | Transversality; follows from the constraint and the field equation |
 | $\Sigma(\mathbb{D}_p\tilde{Ξ}_{\mathrm{sp}})=2\,p\cdot\tilde{Ξ}_{\mathrm{sp}}-\mathbb{D}_p\Sigma(\tilde{Ξ}_{\mathrm{sp}})$ | Trace identity used; the trace of the operator times the field is the divergence minus the operator on the trace (verified) |

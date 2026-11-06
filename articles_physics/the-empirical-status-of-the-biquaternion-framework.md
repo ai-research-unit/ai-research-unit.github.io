@@ -41,9 +41,9 @@ The following table collects the quantitative results the series has obtained an
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
 | Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=c r_t+\vec r\cdot\vec r_\Psi$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}$ with $\tilde{P}\tilde{P}^{\natural}= -\hbar^2k_m^2$; four-force $\tilde{K}_{\mathrm{f}}$ orthogonal to it, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
+| Dirac field | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\pi^2\hbar c/(240a^4)$, attractive | Standard Casimir force, reproduced |
@@ -51,7 +51,7 @@ The following table collects the quantitative results the series has obtained an
 | CPT, Born rule, Bell/CHSH, decoherence | Standard statements | Standard results, reproduced; CPT transcribed, not established |
 | Linearized gravity and gravitational waves | Standard wave equation **assumed**; no deviation predicted | No derivation of the field equation |
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Not one entry in the table is a difference. The agreement is exact where the algebra is used exactly (the qubit, the four-vector kinematics), and it is a faithful reproduction where the framework transcribes a standard equation (Maxwell, Dirac, hydrogen, Casimir, Unruh). The gravitational-wave row is the weakest: there the framework does not derive the field equation it uses, so even the agreement is carried by standard general relativity rather than produced by the algebra.
 

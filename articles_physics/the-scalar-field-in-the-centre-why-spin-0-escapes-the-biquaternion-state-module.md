@@ -192,18 +192,18 @@ $$
 and it obeys the Klein–Gordon equation in the form of the companion article,
 
 $$
-\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0,
+\left(\Box-k_m^{2}\right)\tilde{Ξ}=0,
 $$
 
 with $\Box$ the d'Alembertian, central and scalar. Because $\Box$ is central and scalar, it acts coefficient by coefficient, and on a central field the equation is the ordinary complex scalar Klein–Gordon equation
 
 $$
-\left(\Box-\lambda_m^{-2}\right)\xi_{\mathrm{scl}}=0,
+\left(\Box-k_m^{2}\right)\xi_{\mathrm{scl}}=0,
 $$
 
-with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P\,\lambda_p^{-1}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
+The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P\,k_{\mathrm{mo}}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
 
 $$
 \tilde{Ξ}=\xi_{\mathrm{scl},0}\,\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar\right)e_t
@@ -213,18 +213,18 @@ $$
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector,
 
 $$
-\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
+\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural}=-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2 ,
 $$
 
-and setting it to the negative constant $-\lambda_m^{-2}$ gives the dispersion relation
+and setting it to the negative constant $-k_m^{2}$ gives the dispersion relation
 
 $$
--\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-\lambda_m^{-2}
+-\frac{\omega^2}{c^2}+k_x^2+k_y^2+k_z^2=-k_m^{2}
 \quad\Longleftrightarrow\quad
-\omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2\lambda_m^{-2},
+\omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2k_m^{2},
 $$
 
-which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $\lambda_p=\hbar/p$ is the momentum length.
+which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $k_{\mathrm{mo}}=p/\hbar$ is the momentum length.
 
 One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.
 
@@ -300,7 +300,7 @@ A scalar field carries the trivial action of the Lorentz group: the transformati
 
 The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
-For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}$ complex, obeying $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
+For the sector split, the centre meets each sector in one real direction: the real scalar direction $e_t$ lies in $\mathbb{B}_{\Psi}$, and the imaginary scalar direction $ie_t$ lies in $\mathbb{B}_{\Phi}$. The sector decomposition of a complex scalar is therefore its decomposition into real and imaginary parts, which is the algebraic reason behind the companion article's finding that the second-order scalar structure does not organize itself by the sector split. Multiplication by $i$ exchanges the sectors and quarter-turns the scalar line; complex conjugation preserves each sector and reflects the scalar line, and is the operation that produces the conjugate solution. The scalar field itself is $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ with $\xi_{\mathrm{scl}}$ complex, obeying $(\Box-k_m^{2})\tilde{Ξ}=0$ with $\Box$ central and scalar; no non-central operator of the framework acts on it.
 
 ## Summary of Notation
 
@@ -320,7 +320,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |
 | $\sigma=\mathrm{Sc}\,H$ | Scalar part of $H$; the time coefficient of $iH$, not a Lorentz scalar |
 | $\mathfrak{b}(\tilde{Ξ}_{\mathrm{sp}},\tilde\xi)=2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde\xi)$ | Mixed pairing of two states of opposite labels |
-| $\tilde R_\Phi$, $\tilde P\,\lambda_p^{-1}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
+| $\tilde R_\Phi$, $\tilde P\,k_{\mathrm{mo}}$ | Four-position and four-wavevector, in $\mathbb{B}_{\Phi}$ (cited) |
 | $\langle\tilde{Q}\rangle_{\natural}$ | Biquaternion norm (cited) |
 | $\Box$ | d'Alembertian, central and scalar (cited) |
 | $c$, $\hbar$, $m$ | Speed of light in the medium, reduced Planck constant, mass |

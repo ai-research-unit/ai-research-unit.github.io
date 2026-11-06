@@ -60,7 +60,7 @@ Two definitions make the theorem precise.
 $$
 \Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big|0\big\rangle ,
 $$
-the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P = iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-m^2$ on the mass shell. The article does not rebuild them.
+the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P = i(E/c)e_t+\vec p$ with $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ on the mass shell. The article does not rebuild them.
 
 **Normal ordering.** The normal-ordered product $:\!\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},n}\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
 $$
@@ -185,11 +185,11 @@ Two entries carry the sign. For $\langle\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon
 
 ## The Contraction Is the Propagator
 
-For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, the propagator of the biquaternion Dirac field satisfies
+For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, the propagator of the biquaternion Dirac field satisfies
 $$
 \big(\mathcal{D} - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$
-and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -m^2$, in the $i c r'_t$ coordinate. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $i c r'_t$ direction of $\mathbb{B}_{\Phi}$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = i(E/c)e_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -\hbar^2k_m^2$, in the $i c r'_t$ coordinate. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $i c r'_t$ direction of $\mathbb{B}_{\Phi}$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Within the one-mode truncation, the contraction is a **central scalar** times $e_t$: $\langle\vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1$ is an element of $\mathbb{B}_{C}$. This is the algebraic shadow of the field statement that a contraction is a $c$-number, and it is why the contracted products in the table are scalars. The mode algebra's contractions are the entries of a positive semidefinite matrix — the covariance of the state — and the alternating structure of the one-mode contractions is the $\mathbb{Z}_2$-graded version of the bosonic Gaussian form.
 
@@ -269,7 +269,7 @@ For a field the theorem is standard and transcribed: time-ordered products equal
 | $T\{\cdots\}$, $:\!\cdots\!:$ | Time ordering, normal ordering |
 | $\langle \tilde{Q}_i\tilde{Q}_j\rangle_t$ | Contraction (two-point function) |
 | $D_F$, $S_F$ | Feynman propagators (scalar, spinor) |
-| $\tilde P=iEe_t+\vec p$, $\tilde P\tilde P^{\natural}=-m^2$ | Wave biquaternion; mass shell |
+| $\tilde P=i(E/c)e_t+\vec p$, $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ | Wave biquaternion; mass shell |
 | $\mathrm{sgn}(\pi)$ | Fermionic sign of a complete pairing |
 | $\mathcal{H}_I$, $S=T\exp(-i\int\mathcal{H}_I)$ | Interaction Hamiltonian; Dyson series |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

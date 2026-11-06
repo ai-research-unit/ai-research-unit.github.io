@@ -8,7 +8,7 @@ The question is a fair one to ask of this framework, because the three read-list
 
 The finding is stated at the outset, and it has the same shape as the parents'.
 
-- **What the algebra supplies.** A canonical home for the regulator. The **wave biquaternion** $\tilde{P} = iE\,e_t + \vec p$ of the propagator article has the **biquaternion norm** $\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -E^2 + \vec p^2 = -k^2$, which is a *central* element of $\mathbb{B}$ — a complex scalar times $e_t$ — and which becomes the Euclidean momentum squared $k_E^2 \ge 0$ under the Wick rotation of the path-integral article. A cutoff is therefore naturally a condition on a central scalar, $|\tilde{P}\tilde{P}^{\natural}| \le \Lambda^2$, which in Euclidean signature is the real scalar $k_E^2 \le \Lambda^2$. The positivity of that scalar is carried by the **Hermitian form** of the same material element, $k_E^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*}$ with $\tilde{P}_E = ik_{E,0}\,e_t+\vec p\in\mathbb{B}_{\Phi}$, and the rotation is not needed for it: the form is definite, and the article uses it for the cutoff. Because the value is a *real* central scalar — an element of $\mathbb{R}e_t$, the only central direction that commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (the imaginary central direction $ie_t$ instead exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$) — the natural regulator is **sector-blind** and does not mix the two sectors. The RG scale, the couplings, and the beta functions are likewise central scalars, and the whole flow is a flow of central elements.
+- **What the algebra supplies.** A canonical home for the regulator. The **wave biquaternion** $\tilde{P} = iE\,e_t + \vec p$ of the propagator article has the **biquaternion norm** $\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -E^2 + \vec p^2 = -k^2$, which is a *central* element of $\mathbb{B}$ — a complex scalar times $e_t$ — and which becomes the Euclidean momentum squared $k_{\mathrm{eu}}^2 \ge 0$ under the Wick rotation of the path-integral article. A cutoff is therefore naturally a condition on a central scalar, $|\tilde{P}\tilde{P}^{\natural}| \le \Lambda^2$, which in Euclidean signature is the real scalar $k_{\mathrm{eu}}^2 \le \Lambda^2$. The positivity of that scalar is carried by the **Hermitian form** of the same material element, $k_{\mathrm{eu}}^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*}$ with $\tilde{P}_E = ik_{\mathrm{eu},0}\,e_t+\vec p\in\mathbb{B}_{\Phi}$, and the rotation is not needed for it: the form is definite, and the article uses it for the cutoff. Because the value is a *real* central scalar — an element of $\mathbb{R}e_t$, the only central direction that commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (the imaginary central direction $ie_t$ instead exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$) — the natural regulator is **sector-blind** and does not mix the two sectors. The RG scale, the couplings, and the beta functions are likewise central scalars, and the whole flow is a flow of central elements.
 - **What it does not supply, and what is therefore transcribed.** The effective action itself. None of the read-list articles supplies a biquaternionic action, a biquaternionic measure, or a biquaternionic regulator; the path-integral article says explicitly that the measure is an analytic construction outside the finite-dimensional algebra. The shell integration, the regularisation scheme, the one-loop coefficients, and the fixed points developed below are standard field theory, written in the biquaternion notation. They are **not** derived from $\mathbb{B}$.
 - **The gap, left visible.** Whether the framework's regulator *respects* the two-sector structure is a framework-specific question with no inherited answer. The honest answer is partial: the central biquaternion-norm cutoff is diagonal in the two sectors and so does not mix them, which is one sense of respect; but it cannot assign the sectors different scales, and it is a sharp cutoff, which breaks gauge invariance. The gauge-safe regulator — dimensional regularisation — is not a four-dimensional biquaternion construct at all. The two requirements are met by two different regulators, and no regulator supplied by the algebra meets both. This is stated as a gap, not smoothed over.
 
@@ -53,15 +53,15 @@ for the **beta functions**, where $\mu$ is the renormalization scale. A **fixed 
 The propagation of a biquaternion field is organized by the wave biquaternion $\tilde{P} = iE\,e_t + \vec p$ and its **biquaternion norm**
 
 $$
-\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = (iE)^2 + \vec p^2 = -E^2 + \vec p^2 = -p^2 .
+\langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = (iE/c)^2 + \vec p^2 = -E^2 + \vec p^2 = -p^2 .
 $$
 
-This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -m^2$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
+This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -\hbar^2k_m^2$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
 
-**The standard route: the Wick rotation, quoted.** Under the Wick rotation $E \to i k_{E,0}$ (equivalently the identification $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the companion article), the biquaternion norm becomes
+**The standard route: the Wick rotation, quoted.** Under the Wick rotation $E \to i k_{\mathrm{eu},0}$ (equivalently the identification $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the companion article), the biquaternion norm becomes
 
 $$
-\tilde{P}\tilde{P}^{\natural} \;\longrightarrow\; (k_{E,0})^2 + \vec p^2 = k_E^2 \;\ge\; 0 .
+\tilde{P}\tilde{P}^{\natural} \;\longrightarrow\; (k_{\mathrm{eu},0})^2 + \vec p^2 = k_{\mathrm{eu}}^2 \;\ge\; 0 .
 $$
 
 A **sharp cutoff** at scale $\Lambda$ is therefore naturally written as the algebraic condition
@@ -77,21 +77,21 @@ $$
 \qquad \log b = \delta\ell > 0,
 $$
 
-where $b > 1$ is the shell ratio and $\delta\ell$ is the RG step. This is the biquaternion transcription of the standard momentum shell, and it is exact: the biquaternion norm is the Euclidean momentum squared, and a shell in $k_E$ is a shell in $\tilde{P}\tilde{P}^{\natural}$.
+where $b > 1$ is the shell ratio and $\delta\ell$ is the RG step. This is the biquaternion transcription of the standard momentum shell, and it is exact: the biquaternion norm is the Euclidean momentum squared, and a shell in $k_{\mathrm{eu}}$ is a shell in $\tilde{P}\tilde{P}^{\natural}$.
 
 ### The shell in the Hermitian form: the same cutoff without the rotation
 
 The rotation is not what makes the cutoff positive. The material wave biquaternion of the Euclidean shell is the same element read with its imaginary coefficient,
 $$
-\tilde{P}_E = i k_{E,0}\,e_t + \vec p \in \mathbb{B}_{\Phi} ,
+\tilde{P}_E = i k_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi} ,
 $$
 and its **Hermitian form** is
 $$
-\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \lvert i k_{E,0}\rvert^{2} + \lvert\vec p\rvert^{2} = (k_{E,0})^2 + \vec p^2 = k_E^2 \;\ge\; 0 ,
+\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \lvert i k_{\mathrm{eu},0}\rvert^{2} + \lvert\vec p\rvert^{2} = (k_{\mathrm{eu},0})^2 + \vec p^2 = k_{\mathrm{eu}}^2 \;\ge\; 0 ,
 $$
 positive because the form is definite and not because a metric was rotated. The two routes agree by an identity,
 $$
-\langle i k_{E,0}\,e_t+\vec p,\; i k_{E,0}\,e_t+\vec p\rangle_{*} = \langle -k_{E,0}\,e_t+\vec p\rangle_{\natural} ,
+\langle i k_{\mathrm{eu},0}\,e_t+\vec p,\; i k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural} ,
 $$
 the identity holding because the rotated element has real coordinates, where the norm and the form coincide: the Hermitian form at the material element equals the biquaternion norm at the rotated one, so the two are one number written two ways. A sharp cutoff at scale $\Lambda$ is therefore equivalently the condition
 $$
@@ -291,7 +291,7 @@ There is one further framework-specific remark worth recording as a question rat
 **What the biquaternion notation provides.**
 
 - **A central invariant for the cutoff.** The biquaternion norm $\tilde{P}\tilde{P}^{\natural}$ is central, and the sharp cutoff $\tilde{P}\tilde{P}^{\natural} \le \Lambda^2$ is a condition on a central scalar; equivalently it is the condition $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} \le \Lambda^2$ on the Hermitian form, a real scalar by construction. Because the value is a real central scalar it is diagonal in the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition. This is the one place where the framework gives the regulator a canonical algebraic home.
-- **The Euclidean direction, and the form that carries it.** The standard route to the Euclidean cutoff is the Wick rotation $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the parents; the alternative route is the Hermitian form of the same material element, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = k_E^2 \ge 0$, which needs no rotation and keeps the element in $\mathbb{B}_{\Phi}$. The two agree by the identity of the regulator section. Either way the regulator inherits the same complex structure the parents located, and the form route makes the positivity a statement about $\mathbb{B}_{\Phi}$ alone.
+- **The Euclidean direction, and the form that carries it.** The standard route to the Euclidean cutoff is the Wick rotation $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the parents; the alternative route is the Hermitian form of the same material element, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = k_{\mathrm{eu}}^2 \ge 0$, which needs no rotation and keeps the element in $\mathbb{B}_{\Phi}$. The two agree by the identity of the regulator section. Either way the regulator inherits the same complex structure the parents located, and the form route makes the positivity a statement about $\mathbb{B}_{\Phi}$ alone.
 - **A clean statement of where the flow acts.** The scale, the couplings, and the beta functions are central scalars; the flow rescales central coefficients and does not rotate the sectors. The two-sector question therefore has the sharp form given in the previous section.
 - **A distinction that prevents an error.** The functional trace of the flow equation is not the biquaternion trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the two appear side by side and must be kept apart. Writing the functional trace as $2\,\mathrm{Sc}$ would be a category error, and the notation of the corpus makes the error visible.
 
@@ -322,7 +322,7 @@ There is one further framework-specific remark worth recording as a question rat
 
 ## Summary
 
-The renormalization group describes how the effective action depends on scale. Integrating out a shell of modes, $\Lambda/b < \sqrt{\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}} < \Lambda$, produces a flow in the couplings, $\mu\,dg_i/d\mu = \beta_i(g)$, whose zeros are the fixed points. In the biquaternion framework the **wave biquaternion** $\tilde{P} = iE\,e_t + \vec p$ has biquaternion norm $\tilde{P}\tilde{P}^{\natural} = -p^2$, which is central; its Hermitian form, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = k_E^2 \ge 0$ on the material element $\tilde{P}_E = ik_{E,0}\,e_t+\vec p$, is the Euclidean momentum squared and is positive without a rotation. The standard route to it is the Wick rotation, the alternative the Hermitian form, and the two agree by the identity $\langle ik_{E,0}\,e_t+\vec p,\,ik_{E,0}\,e_t+\vec p\rangle_{*} = \langle -k_{E,0}\,e_t+\vec p\rangle_{\natural}$. The natural regulator is therefore the condition $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} \le \Lambda^2$ on the form, equivalently the central condition $\tilde{P}\tilde{P}^{\natural} \le \Lambda^2$ on the norm; and because the value is a real central scalar the regulator is diagonal in the two-sector decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$: it is **sector-blind**, respects the decomposition in the minimal sense of not mixing the sectors, but cannot assign them different scales.
+The renormalization group describes how the effective action depends on scale. Integrating out a shell of modes, $\Lambda/b < \sqrt{\langle\tilde{P}_E,\tilde{P}_E\rangle_{*}} < \Lambda$, produces a flow in the couplings, $\mu\,dg_i/d\mu = \beta_i(g)$, whose zeros are the fixed points. In the biquaternion framework the **wave biquaternion** $\tilde{P} = iE\,e_t + \vec p$ has biquaternion norm $\tilde{P}\tilde{P}^{\natural} = -p^2$, which is central; its Hermitian form, $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = k_{\mathrm{eu}}^2 \ge 0$ on the material element $\tilde{P}_E = ik_{\mathrm{eu},0}\,e_t+\vec p$, is the Euclidean momentum squared and is positive without a rotation. The standard route to it is the Wick rotation, the alternative the Hermitian form, and the two agree by the identity $\langle ik_{\mathrm{eu},0}\,e_t+\vec p,\,ik_{\mathrm{eu},0}\,e_t+\vec p\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$. The natural regulator is therefore the condition $\langle\tilde{P}_E,\tilde{P}_E\rangle_{*} \le \Lambda^2$ on the form, equivalently the central condition $\tilde{P}\tilde{P}^{\natural} \le \Lambda^2$ on the norm; and because the value is a real central scalar the regulator is diagonal in the two-sector decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$: it is **sector-blind**, respects the decomposition in the minimal sense of not mixing the sectors, but cannot assign them different scales.
 
 The beta functions are standard, and their signs are checked on independent cases. For the scalar quartic coupling, the explicit shell integration gives
 
@@ -357,10 +357,10 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; home of the scale, couplings, and beta functions |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; image of the standard (Wick) route |
 | $\tilde{P} = iE\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
-| $\tilde{P}_E = ik_{E,0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route |
+| $\tilde{P}_E = ik_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route |
 | $\tilde{P}\tilde{P}^{\natural} = -p^2$ | Biquaternion norm; central; cutoff invariant |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
-| $k_E^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \langle -k_{E,0}\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
+| $k_{\mathrm{eu}}^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
 | $\Lambda$, $b$, $\delta\ell = \log b$ | Cutoff, shell ratio, RG step toward the IR |
 | $\mu$ | Renormalization scale |
 | $\Gamma_k[\xi]$, $\Gamma_k^{(2)}$ | Wilsonian effective action and its second functional derivative |

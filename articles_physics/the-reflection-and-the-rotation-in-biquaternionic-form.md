@@ -16,7 +16,7 @@ $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
-with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$. No cell of this article carries a derivative.
+with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-(i/c)\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$. No cell of this article carries a derivative.
 
 ## One Cell, Two Readings
 
@@ -224,20 +224,20 @@ Combined with the split established above, the statement is: **rotations keep th
 
 The mass is where the two parts are coupled, and the coupling is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L} , \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which every derivative is the gradient and acts by left multiplication. The pair is written once as an operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,
 $$
 \tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}),\qquad
 \mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\ \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\bigr),
 $$
-and the massive equation is $(\mathbb{D}-\lambda_m^{-1})\tilde{Ξ}_{\mathrm{sp}}=0$. The pair operator is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
+and the massive equation is $(\mathbb{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. The pair operator is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The square is scalar because each member is a gradient followed by its conjugate,
 $$
 \mathbb{D}^2\tilde{Ξ}_{\mathrm{sp}}=\bigl(\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L},\ \tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\bigr)=\Box\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
-with $\Box=\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector, so that $(\mathbb{D}-\lambda_m^{-1})(\mathbb{D}+\lambda_m^{-1})=\Box-\lambda_m^{-2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with $\Box=\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$ on the material sector, so that $(\mathbb{D}-k_m)(\mathbb{D}+k_m)=\Box-k_m^{2}$ is the Klein–Gordon operator exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
+The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -311,7 +311,7 @@ The claims of this article, in order.
 | $-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Chirality cell, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality cell |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | The two parts of a field |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members |
 | $\mathbb{D}$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$; $\mathbb{D}^2=\Box I$, off-diagonal in the two slots |
 | $iR_{\mathrm{axf},\vec e_x}$ | The frame cell; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd unit cell on the vectors; $u^2=\epsilon(u)I_4$ |

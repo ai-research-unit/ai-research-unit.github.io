@@ -49,7 +49,7 @@ $$
 $$
 the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
-**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P\tilde P^{\natural}+m^2=\mathcal{M}(\tilde P)$, whose Lorentzian continuation differs from the action's operator $\Box-\lambda_m^{-2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P\tilde P^{\natural}+\hbar^2k_m^2=\mathcal{M}(\tilde P)$, whose Lorentzian continuation differs from the action's operator $\Box-k_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
 \boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2\;}.
 $$
@@ -117,8 +117,8 @@ where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective acti
 
 **The free case.** For the free biquaternion scalar, $S^{(2)}=K_{\mathrm{kin}}$ is central and mode-diagonal, and
 $$
-\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+m^2\big)^2
-= \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
+\Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+\hbar^2k_m^2\big)^2
+= \sum_{\text{modes}}\log\big(k_{\mathrm{eu}}^2+m^2\big)
 \qquad\text{(Euclidean)},
 $$
 the exponent $2$ being the module's two complex dimensions, which cancels the $\tfrac12$. This is the biquaternion scalar's one-loop free energy; its divergence and renormalization are standard and are the subject of the renormalization-group article.
@@ -127,9 +127,9 @@ the exponent $2$ being the module's two complex dimensions, which cancels the $\
 
 In a translation-invariant background the operator is diagonal in momentum, and the determinant becomes a product over modes. For the central scalar operator on the module,
 $$
-\det\big(\Box-\lambda_m^{-2}\big)\Big|_{\text{module}}
-= \prod_k\Big(\tilde P\tilde P^{\natural}+m^2\Big)^2
-= \prod_k\big(k_E^2+m^2\big)^2
+\det\big(\Box-k_m^{2}\big)\Big|_{\text{module}}
+= \prod_k\Big(\tilde P\tilde P^{\natural}+\hbar^2k_m^2\Big)^2
+= \prod_k\big(k_{\mathrm{eu}}^2+m^2\big)^2
 $$
 in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only **ratios** of determinants of operators of the same type are scheme-independent. The ratio
 $$
@@ -171,13 +171,13 @@ and the small-$r'_t$ expansion $K(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}
 
 The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.
 
-**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
+**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\natural}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\mathcal{F}\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F} = \mathbb{D} - \lambda_m^{-1} ,
+\mathcal{F} = \mathbb{D} - k_m ,
 $$
-which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chiral block structure.** In a chirality basis the fermionic operator has the block form
 $$
@@ -258,7 +258,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $K(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
-| $\mathcal{F}=\mathbb{D}-\lambda_m^{-1}$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
+| $\mathcal{F}=\mathbb{D}-k_m$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 

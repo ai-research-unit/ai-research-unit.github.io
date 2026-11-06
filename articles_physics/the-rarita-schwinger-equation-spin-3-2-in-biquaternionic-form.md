@@ -6,9 +6,9 @@ The Proca equation carries spin one, and the Dirac equation carries spin one-hal
 
 **The article writes the system in biquaternionic form and reduces it in the rest frame**, where the spin-$\tfrac32$ content is visible. The carrier is a family of four elements of the algebra, $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ with $\mu=0,1,2,3$, and the equation is three statements. The first is the **chiral pair** of the companion Dirac article, written once for each component,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
 \qquad \mu=0,1,2,3 .
 $$
 The two subscripts take the two values $L$ and $R$ of *Special Element Conventions*, §*The Chirality Convention*, and the derivative is the gradient of *Operator and Calculus Conventions*, §*The Gradient*. Neither value closes on its own: each equation carries one value into the other, so the mass is the pairing of the two. Read from either side, every component of the field is a Dirac field.
@@ -134,8 +134,8 @@ with the sign of $\Gamma_{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e
 $$
 \boxed{\;
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}&=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L},\\
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}&=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},\\
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
 \end{aligned}
 \qquad\text{for each }\mu\;}
 $$
@@ -255,13 +255,13 @@ left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in 
 $$
 \tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar),
 $$
-with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}=-m^2c^2$ in the normalization of the companion Dirac article, that is,
+with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P\tilde P^{\natural}= -\hbar^2k_m^2$ in the normalization of the companion Dirac article, that is,
 $$
-\frac{\varpi^2}{c^2} - \vec k^2 = \lambda_m^{-2},
+\frac{\varpi^2}{c^2} - \vec k^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
-\varpi^2 = c^2\vec k^2 + c^2\lambda_m^{-2},
+\varpi^2 = c^2\vec k^2 + c^2k_m^{2},
 $$
-the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ## Comparison with Spin One and Spin One-Half
 
@@ -331,7 +331,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
 | $\tilde S=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$ | Covariant divergence; a consequence of the equation for every $m$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\tilde\xi_k$ | The three spatial components at rest |
 | $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_k\sum_j\vec e_j\tilde\xi_j$ | The transverse map on the vector index; unchanged by a second application, of rank two |
 | $T_{\mu\nu\rho}$, $h_{\mu\nu}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |

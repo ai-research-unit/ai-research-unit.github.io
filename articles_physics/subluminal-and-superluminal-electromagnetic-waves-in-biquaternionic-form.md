@@ -34,10 +34,10 @@ $$
 which in vacuum reads $\tilde F=i\vec E-\vec B$. Its scalar part carries the two divergences and its vector part the two curls, so the one equation is the four Maxwell equations. It is first order in one field and needs no operator beyond the gradient. What it cannot do is carry a mass: the square of the gradient is not scalar, $\tilde\nabla^2\ne\Box$, because $e_t$ commutes with the spatial units and the mixed derivatives add instead of cancelling. The corpus's massive equation is therefore the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+two first-order equations in two chiral halves, and the spinorial part below is read in that form. Here $\hbar/(mc)$ is the mass length.
 
 **The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no cell appears.
 
@@ -438,11 +438,11 @@ The corpus has two spellings of the massive Dirac equation, and the source's equ
 **The one-sided pair.** Two equations, one per value of the subscript, both gradients acting from the left:
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L}
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that couples the two values, and at $m=0$ the pair splits into $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one Weyl equation per value.
@@ -458,7 +458,7 @@ with the derivative on the left and the mass on the right through the element $i
 **The source's equation has that shape.** Its Dirac–Hestenes equation
 
 $$
-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x
+(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})(-\vec e_z)=mc/\hbar\,\tilde{Ξ}_{\mathrm{sp}}\,i\vec e_x
 $$
 
 acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, in which the mass also multiplies on the right, at a fixed bivector; the pair of values is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for the other value. The two values are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\tilde{Ξ}_{\mathrm{sp},L}\omega=-\omega\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\omega=+\omega\tilde{Ξ}_{\mathrm{sp},R}$, that is $\tilde{Ξ}_{\mathrm{sp},L}\vec e_z=-\vec e_z\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}\vec e_z=+\vec e_z\tilde{Ξ}_{\mathrm{sp},R}$: the bivector enters twice, once as a product on the right and once as a product on the left. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the algebra — the spinor commuting with $\vec e_z$ and the one anticommuting. What effects the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are those of *Special Element Conventions*.

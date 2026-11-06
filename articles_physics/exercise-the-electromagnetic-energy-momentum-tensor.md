@@ -66,7 +66,7 @@ Only one of them can be the object whose biquaternionic gradient is the power–
 $$
 \begin{aligned}
 \tilde\nabla&=e_t\frac{\partial}{\partial i c r'_t}+\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z},\\[2pt]
-\Box&=-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2}.
+\Box&=-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2}.
 \end{aligned}
 $$
 The scalar part receives one contribution from the scalar part and one from the vector part:

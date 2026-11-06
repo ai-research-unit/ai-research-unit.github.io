@@ -4,7 +4,7 @@
 
 The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(iS/\hbar)$ is a *central* $*$-unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $i c r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $r'_t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
 
-**Units.** Natural units $\hbar=c=1$ are used throughout this article: a four-momentum is $(p_0,\vec p)$ with $p_0=E$, the mass shell is $p^2=\vec p^{\,2}+m^2$, and every mass $m$ is an inverse length.
+**Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+\hbar^2c^2k_m^2$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 This article applies those findings to the spin-$\tfrac12$ field, where the histories are **anticommuting**. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:
 
@@ -28,7 +28,7 @@ $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\,\partial/\partial r'_t+\sum_k\vec e_k\,\partial/\partial R_k$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-c^{-2}\partial^2/\partial r'_t^2$. No derivative below is written in any other form.
+read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\,\partial/\partial r'_t+\sum_k\vec e_k\,\partial/\partial R_k$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-c^{-2}\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
 
 The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}_{\mathrm{sp}}$, with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and its **Dirac adjoint** is the right multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ by the single element $i\vec e_x$,
 
@@ -51,20 +51,20 @@ a real Lorentz scalar whose variation returns the two equations of the pair, wit
 **The one-sided form.** The dynamics in the algebra is the pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{\mathrm{sp},L}$ is the element of value minus one and $\tilde{Ξ}_{\mathrm{sp},R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{\mathrm{sp},L}$ is the element of value minus one and $\tilde{Ξ}_{\mathrm{sp},R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, so applying $\tilde\nabla^{\natural}$ to the first and using the second gives
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde\nabla^{\natural}m\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-2}\tilde{Ξ}_{\mathrm{sp},R},
+\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde\nabla^{\natural}m\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-and the same step gives $(\Box-\lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part of the field therefore solves the massive wave equation, and the operator whose determinant the path integral computes is the pair; the count of that determinant is taken in §*The Biquaternion Form of the Kernel*.
+and the same step gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part of the field therefore solves the massive wave equation, and the operator whose determinant the path integral computes is the pair; the count of that determinant is taken in §*The Biquaternion Form of the Kernel*.
 
 **The two-sided form.** Kravchenko's equation is a single equation on an algebra-valued field $F\in\mathbb{B}$,
 
@@ -104,7 +104,7 @@ $$
 \tilde K\tilde K^{\natural}=E^2-|\vec p|^{2}=p^{2} ,
 $$
 
-with $\tilde P=iE\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_k$ from each spatial one. The symbol of the pair is therefore
+with $\tilde P=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_k$ from each spatial one. The symbol of the pair is therefore
 
 $$
 \mathbb{D}_p:\ (w_L,w_R)\longmapsto\big(\tilde K\,w_R,\ \tilde K^{\natural}w_L\big),
@@ -122,7 +122,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{B}_{C}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its Hermiticity structure.** $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\tilde\nabla\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian up to a total derivative and $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian. Both statements use the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box>0$, the d'Alembertian being read on the continued slice where it is elliptic; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}+\lambda_m^{-1})$, with $\mathbb{D}$ the pair of §*The Pair Operator on the Algebra* read at $r'_t=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
+**Its Hermiticity structure.** $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\tilde\nabla\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian up to a total derivative and $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,k_m\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian. Both statements use the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box>0$, the d'Alembertian being read on the continued slice where it is elliptic; a pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$ to $\det(\mathbb{D}+k_m)$, with $\mathbb{D}$ the pair of §*The Pair Operator on the Algebra* read at $r'_t=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
 
 ### Sources
 
@@ -160,7 +160,7 @@ $$
 S_0=\sum_{a,b}\tilde{Ξ}_{\mathrm{sp},a}^{\dagger}M_{ab}\tilde{Ξ}_{\mathrm{sp},b} ,
 $$
 
-where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In Euclidean signature the kernel is $\mathbb{D}+\lambda_m^{-1}$, and in Minkowski signature $-i(\mathbb{D}-\lambda_m^{-1})$; the operator is the same in both, the continuation moving the coordinate and not the operator, and the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\mathbb{D}-\lambda_m^{-1}$ up to that constant. The Gaussian Berezin integral is the determinant:
+where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In Euclidean signature the kernel is $\mathbb{D}+k_m$, and in Minkowski signature $-i(\mathbb{D}-k_m)$; the operator is the same in both, the continuation moving the coordinate and not the operator, and the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\mathbb{D}-k_m$ up to that constant. The Gaussian Berezin integral is the determinant:
 
 $$
 \boxed{\;\int\prod_ad\tilde{Ξ}_{\mathrm{sp},a}^{\dagger}\,d\tilde{Ξ}_{\mathrm{sp},a}\;\exp(-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}M\tilde{Ξ}_{\mathrm{sp}})=\det M\;}.
@@ -186,11 +186,11 @@ $$
 
 with the exponential terminating at the top degree in the sources: the bilinear $\bar\eta M^{-1}\eta$ has degree two, so the series stops at degree two for one mode and at degree $2N$ for $N$ modes.
 
-In the physical weight of §*Sources*, $-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}M\tilde{Ξ}_{\mathrm{sp}}$ becomes $iS$ and the sources become the odd ones of that section, $\bar\eta\tilde{Ξ}_{\mathrm{sp}}+\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x\eta$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-\lambda_m^{-1})$ and $M^{-1}=S_F$,
+In the physical weight of §*Sources*, $-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}M\tilde{Ξ}_{\mathrm{sp}}$ becomes $iS$ and the sources become the odd ones of that section, $\bar\eta\tilde{Ξ}_{\mathrm{sp}}+\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x\eta$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-k_m)$ and $M^{-1}=S_F$,
 
 $$
 Z[\eta,\bar\eta]=\det M\;\exp\!\big[-\bar\eta\,M^{-1}\eta\big]
-=\det(\mathbb{D}-\lambda_m^{-1})\;\exp\!\Big[-\int d^4r\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
+=\det(\mathbb{D}-k_m)\;\exp\!\Big[-\int d^4r\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
 $$
 
 up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\eta\tilde{Ξ}_{\mathrm{sp}}+\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x\eta)$, is the one that carries the plus sign.
@@ -217,16 +217,16 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 
 ### The Biquaternion Form of the Kernel
 
-Write the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp(-iEr'_t+i\vec p\cdot\vec r)$ is the left multiplication by $\tilde K=i\tilde P$ of §*The Pair Operator on the Algebra*, with $\tilde K\tilde K^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-m)(\mathbb{D}_p+m)=(p^2-m^2)I$, and the kernel of $\mathbb{D}-\lambda_m^{-1}$ at momentum $p$ is $(\mathbb{D}_p+m)/(p^2-m^2)$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-\lambda_m^{-1})$, so the free two-point amplitude is
+Write the wave biquaternion $\tilde P=i(E/c)\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp(-iEr'_t+i\vec p\cdot\vec r)$ is the left multiplication by $\tilde K=i\tilde P$ of §*The Pair Operator on the Algebra*, with $\tilde K\tilde K^{\natural}=p^2$, so the symbol squares to $p^2$ times the identity, $(\mathbb{D}_p-m)(\mathbb{D}_p+m)=(p^2-\hbar^2k_m^2)I$, and the kernel of $\mathbb{D}-k_m$ at momentum $p$ is $(\mathbb{D}_p+m)/(p^2-\hbar^2k_m^2)$. The Gaussian weight of the finite-mode section carries $M=-i(\mathbb{D}-k_m)$, so the free two-point amplitude is
 
 $$
-S_F(p)=\frac{i(\mathbb{D}_p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\mathbb{D}_p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
+S_F(p)=\frac{i(\mathbb{D}_p+m)}{p^2-\hbar^2k_m^2+i\epsilon}=-\frac{i(\mathbb{D}_p+m)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon}.
 $$
 
 The propagator companion writes its own amplitude as $\mathcal{A}_p+m$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_k$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. Written with the units, the numerator $-i(\mathbb{D}_p+m)(w_L,w_R)$ has its two imaginary units multiplied to $-1$ and becomes
 
 $$
-S_F(p):\ (w_L,w_R)\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
+S_F(p):\ (w_L,w_R)\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon},
 $$
 
 its denominator being $-p^2+m^2-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.
@@ -234,8 +234,8 @@ its denominator being $-p^2+m^2-i\epsilon$; multiplying numerator and denominato
 The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $i c r'_t$ axis of the material sector. The pair squares to the d'Alembertian, $\mathbb{D}^2=\Box I$, so its eigenvalues on a plane wave are $\pm\mu$ with $\mu^2=p^2$, in four opposite pairs, and each pair contributes $(\mu-m)(-\mu-m)=m^2-\mu^2$. The determinant is thus the fourth power of the scalar mode factor,
 
 $$
-\det\big(\mathbb{D}-\lambda_m^{-1}\big)=\big(p^2-m^2\big)^4=\det\big(\Box-\lambda_m^{-2}\big)
-=\exp\Big[4\!\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(\mathbb{D}-k_m\big)=\big(p^2-\hbar^2k_m^2\big)^4=\det\big(\Box-k_m^{2}\big)
+=\exp\Big[4\!\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon\big)\Big],
 $$
 
 formally, up to a field-independent constant and with the standard subtractions understood; the fourth power is a count of the four pairs of opposite eigenvalues, not of any decomposition of the field. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -276,7 +276,7 @@ $$
 S_{\mathrm{E}}=\int d\tau\,d^3r\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}+m\,(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})\big),
 $$
 
-with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i c r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Pair Operator on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+\lambda_m^{-1}$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
+with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i c r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Pair Operator on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+k_m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
 
 **Antiperiodic boundary conditions.** The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=\hbar/(k_BT)$ in $\tau$ with the fermions antiperiodic,
 
@@ -290,7 +290,7 @@ which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\be
 
 $$
 Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp(-S_{\mathrm{E}})
-=\det\big(\mathbb{D}+\lambda_m^{-1}\big)_{\text{AP}} ,
+=\det\big(\mathbb{D}+k_m\big)_{\text{AP}} ,
 $$
 
 whose logarithm gives the free energy up to the factor $-\beta$. The identity is the standard finite-temperature reduction of the fermionic integral and is recorded, not recomputed; what the biquaternion framework adds is again only the location of the deformation and the centrality of the phase. The companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
@@ -347,10 +347,10 @@ The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Ber
 The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
 
 $$
-S_F(p):\ (w_L,w_R)\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
+S_F(p):\ (w_L,w_R)\longmapsto\frac{\big(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R\big)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon},
 $$
 
-with the two imaginary units of $-i(\mathbb{D}_p+m)$ multiplied to $-1$. The determinant of the pair operator is $(p^2-m^2)^4$, which is $\det(\Box-\lambda_m^{-2})$ on the same carrier, because the pair squares to $p^2$, so its eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
+with the two imaginary units of $-i(\mathbb{D}_p+m)$ multiplied to $-1$. The determinant of the pair operator is $(p^2-\hbar^2k_m^2)^4$, which is $\det(\Box-k_m^{2})$ on the same carrier, because the pair squares to $p^2$, so its eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
 
 For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\tilde{Ξ}_{\mathrm{sp}}\,\exp(-\frac12\tilde{Ξ}_{\mathrm{sp}} A\tilde{Ξ}_{\mathrm{sp}})=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ makes available the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\tilde{Ξ}_{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}_{\mathrm{sp}}(\tau)$; the identity $e^{i\omega_n\beta}=-1$ is exact for every integer $n$ and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
@@ -363,7 +363,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\big)-m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big)$ | Biquaternion Dirac density (bilinear action), written on the two parts of the field |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ | Dirac adjoint: a single right multiplication by $i\vec e_x$ |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
 | $-\tilde\nabla^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i c r'_t$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
@@ -372,17 +372,17 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\int\prod d\tilde{Ξ}_{\mathrm{sp}}^{\dagger}d\tilde{Ξ}_{\mathrm{sp}}\,\exp(-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}M\tilde{Ξ}_{\mathrm{sp}})=\det M$ | Gaussian = determinant |
 | $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order); the adjoint's right multiplication cancels from the ratio |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
-| $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-\lambda_m^{-1})\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
+| $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-k_m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $\tilde K=i\tilde P=-E\,e_t+i\vec p$, $\tilde K\tilde K^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
 | $\mathbb{D}_p:\ (w_L,w_R)\mapsto(\tilde K\,w_R,\tilde K^{\natural}w_L)$ | Symbol of the pair operator; its square is $p^2$ times the identity, with $p^2=E^2-|\vec p|^{2}$ |
 | $\mathbb{D}:\ (\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\mapsto(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$, that is $\mathbb{D}_{\tilde\nabla}$: the factor is the material gradient, which is why no subscript is written; $\mathbb{D}^2=\Box I$, and the same pair read at $r'_t=-i\tau$ is written $\mathbb{D}$ still |
-| $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$ |
-| $\det(\mathbb{D}-\lambda_m^{-1})=(p^2-m^2)^4=\det(\Box-\lambda_m^{-2})$ | Determinant; the four opposite eigenvalue pairs of the pair give the fourth power of the scalar mode factor |
+| $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P\,w_R-im\,w_L,\ \tilde P^{\natural}w_L-im\,w_R)}{\tilde P\tilde P^{\natural}+\hbar^2k_m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\mathbb{D}_p+m)$ multiply to $-1$ |
+| $\det(\mathbb{D}-k_m)=(p^2-\hbar^2k_m^2)^4=\det(\Box-k_m^{2})$ | Determinant; the four opposite eigenvalue pairs of the pair give the fourth power of the scalar mode factor |
 | $\int d\tilde{Ξ}_{\mathrm{sp},2N}\cdots d\tilde{Ξ}_{\mathrm{sp},1}\,\exp(-\frac12\tilde{Ξ}_{\mathrm{sp}} A\tilde{Ξ}_{\mathrm{sp}})=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; makes the field-to-conjugate pairing available |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($i c r'_t$ direction becomes real) |
 | $\tilde{Ξ}_{\mathrm{sp}}(\tau+\beta)=-\tilde{Ξ}_{\mathrm{sp}}(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic thermal boundary condition |
-| $Z(\beta)=\det(\mathbb{D}+\lambda_m^{-1})_{\text{AP}}$ | Finite-temperature free partition function, the pair read at $r'_t=-i\tau$ |
+| $Z(\beta)=\det(\mathbb{D}+k_m)_{\text{AP}}$ | Finite-temperature free partition function, the pair read at $r'_t=-i\tau$ |
 
 ## Further Reading
 

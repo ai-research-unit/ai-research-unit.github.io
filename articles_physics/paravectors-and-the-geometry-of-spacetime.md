@@ -366,20 +366,20 @@ The paravector calculus is therefore the calculus of *one-sided* cells of a thre
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=mc/\hbar\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=\lambda_m^{-1}i\,\overline F\,\vec e_z ,
+\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F=mc/\hbari\,\overline F\,\vec e_z ,
 \qquad
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
 $$
 
-a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the $\gamma_5$ cell, and on the Dirac module it splits the field into two halves; in the second equation there is no split at all, and the chirality is the volume cell $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the $\gamma_5$ cell, and on the Dirac module it splits the field into two halves; in the second equation there is no split at all, and the chirality is the volume cell $-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field. Here $\hbar/(mc)$ is the mass length.
 
 The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5^{2}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ while $\gamma_5$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
 

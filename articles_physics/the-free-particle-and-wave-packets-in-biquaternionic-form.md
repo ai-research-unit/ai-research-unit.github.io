@@ -7,7 +7,7 @@ The free particle is the problem that fixes the representation. Every article in
 The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,
 
 $$
-H = \frac{p^{2}\lambda_m c}{2\hbar}\,e_t \in \mathbb{R}e_t \subset \mathbb{B}_{\Psi},
+H = \frac{p^{2}c}{2\hbar\,k_m}\,e_t \in \mathbb{R}e_t \subset \mathbb{B}_{\Psi},
 $$
 
 so it is **central**. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central $*$-unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a **scalar** wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.
@@ -51,7 +51,7 @@ $$
 so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:
 
 $$
-T = -\frac{\tilde p^2\lambda_m c}{2\hbar} = \frac{\tilde p\,\tilde p^{\natural}\lambda_m c}{2\hbar} = \frac{p^{2}\lambda_m c}{2\hbar}\,e_t .
+T = -\frac{\tilde p^2 c}{2\hbar\,k_m} = \frac{\tilde p\,\tilde p^{\natural}c}{2\hbar\,k_m} = \frac{p^{2}c}{2\hbar\,k_m}\,e_t .
 $$
 
 This is the first instance of a pattern that recurs throughout the subcategory: **the kinetic term is the biquaternion norm of the momentum**, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.
@@ -63,12 +63,12 @@ The free biquaternion Schrödinger equation is
 $$
 \boxed{\;i\hbar\,\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = H \tilde{Ξ}_{\mathrm{sp}},
 \qquad
-H = \frac{p^{2}\lambda_m c}{2\hbar}\,e_t = -\frac{\hbar c\lambda_m}{2}\nabla^2 e_t\;},
+H = \frac{p^{2}c}{2\hbar\,k_m}\,e_t = -\frac{\hbar c}{2\,k_m}\nabla^2 e_t\;},
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = c r_t e_t$ with $c r_t = -\frac{\hbar c\lambda_m}{2}\nabla^2$, the equation reads
+with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = c r_t e_t$ with $c r_t = -\frac{\hbar c}{2\,k_m}\nabla^2$, the equation reads
 
 $$
 i\hbar\,\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = c r_t e_t \tilde{Ξ}_{\mathrm{sp}} = c r_t \tilde{Ξ}_{\mathrm{sp}},
@@ -77,7 +77,7 @@ $$
 and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = c r_t I_2$. The generator of the free evolution,
 
 $$
--iH/\hbar = \frac{i c\lambda_m}{2}\nabla^2 e_t \in \mathbb{B}_{\Phi},
+-iH/\hbar = \frac{i c}{2\,k_m}\nabla^2 e_t \in \mathbb{B}_{\Phi},
 $$
 
 lies in the **material sector**, as every generator of a $*$-unitary flow does in this framework: it is imaginary in the scalar direction and real in the vector direction, with vanishing vector part here.
@@ -99,15 +99,15 @@ so that $\vec k = k_1 \vec e_x + k_2 \vec e_y + k_3 \vec e_z$ is a real quaterni
 $$
 i\hbar\,\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp},\vec k} = \hbar\omega\,\tilde{Ξ}_{\mathrm{sp},\vec k},
 \qquad
-H \tilde{Ξ}_{\mathrm{sp},\vec k} = \frac{\hbar c\lambda_m k^2}{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k},
+H \tilde{Ξ}_{\mathrm{sp},\vec k} = \frac{\hbar c k^2}{2\,k_m}\,\tilde{Ξ}_{\mathrm{sp},\vec k},
 $$
 
 so the equation is satisfied for every constant $\xi$ provided
 
 $$
-\boxed{\;\hbar\omega = \frac{\hbar c\lambda_m k^2}{2}
+\boxed{\;\hbar\omega = \frac{\hbar c k^2}{2\,k_m}
 \qquad\Longleftrightarrow\qquad
-\omega(\vec k) = \frac{c\lambda_m k^2}{2}\;}.
+\omega(\vec k) = \frac{c k^2}{2\,k_m}\;}.
 $$
 
 Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\xi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.
@@ -135,29 +135,29 @@ The operator $\hbar\vec k$ is a real quaternion, so $\tilde p$ is diagonalised o
 The dispersion relation has the standard consequences. The phase velocity is
 
 $$
-v_{\mathrm{ph}} = \frac{\omega}{k} = \frac{c\lambda_m k}{2},
+v_{\mathrm{ph}} = \frac{\omega}{k} = \frac{c k}{2\,k_m},
 $$
 
 and the group velocity, which is the velocity of the packet and the classical velocity, is
 
 $$
-\vec v_g = \frac{\partial\omega}{\partial\vec k} = c\lambda_m\vec k = \frac{\vec p}{m}.
+\vec v_g = \frac{\partial\omega}{\partial\vec k} = c\,\vec k/k_m = \frac{\vec p}{m}.
 $$
 
 In the framework's interpretation, a plane wave carries a wave **four-vector** in the material sector,
 
 $$
-\tilde P\,\lambda_p^{-1} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
+\tilde P\,k_{\mathrm{mo}} = \frac{i\omega}{c}\,e_t + \vec k \in \mathbb{B}_{\Phi},
 $$
 
 whose biquaternion norm is
 
 $$
-\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural}/\hbar^2 = \tilde P \tilde P^{\natural}/\hbar^2 = -\frac{\omega^2}{c^2} + k^2
-= k^2\left(1 - \frac{\lambda_m^2 k^2}{4}\right).
+\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural}/\hbar^2 = \tilde P \tilde P^{\natural}/\hbar^2 = -\frac{\omega^2}{c^2} + k^2
+= k^2\left(1 - \frac{k^2}{4\,k_m^{2}}\right).
 $$
 
-For the non-relativistic dispersion the wave four-vector is **spacelike** for every $k < 2\lambda_m^{-1}$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2\lambda_m^{-1}$, where $\hbar k = 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2\lambda_m c/(2\hbar)$ rather than $E = pc$. Here $\lambda_p=\hbar/p$ is the momentum length.
+For the non-relativistic dispersion the wave four-vector is **spacelike** for every $k < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k = 2k_m$, where $\hbar k = 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2 c/(2\hbar\,k_m)$ rather than $E = pc$. Here $k_{\mathrm{mo}}=p/\hbar$ is the momentum length.
 
 ### Normalisation
 
@@ -266,11 +266,11 @@ so that $s_0$ is the **density width** (the standard deviation of $|Ξ_0|^2$) an
 
 $$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0r_x - \frac{i c\lambda_m k_0^2 r'_t}{2}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0r_x - \frac{i c k_0^2 r'_t}{2\,k_m}\right],
 \qquad
-A(r'_t) = 1 + \frac{i c\lambda_m r'_t}{2s_0^2},
+A(r'_t) = 1 + \frac{i c r'_t}{2s_0^2\,k_m},
 \qquad
-v_0 = c\lambda_m k_0,
+v_0 = c\,k/k_m_0,
 $$
 
 and its density is again a normalised Gaussian,
@@ -279,13 +279,13 @@ $$
 \boxed{\;|Ξ(r_x,r'_t)|^2 = \frac{1}{\sqrt{2\pi}\,s(r'_t)}
 \exp\!\left(-\frac{(r_x - v_0 r'_t)^2}{2s(r'_t)^2}\right),
 \qquad
-s(r'_t) = s_0\sqrt{1 + \left(\frac{c\lambda_m r'_t}{2s_0^2}\right)^2}\;}.
+s(r'_t) = s_0\sqrt{1 + \left(\frac{c r'_t}{2s_0^2\,k_m}\right)^2}\;}.
 $$
 
 The centre moves at the group velocity $v_0 = \hbar k_0/m$, and the width grows as $s(r'_t)$. The spreading is negligible for $r'_t \ll \tau$ and linear for $r'_t \gg \tau$, where
 
 $$
-\tau = \frac{2s_0^2}{c\lambda_m}
+\tau = \dfrac{2s_0^2\,k_m}{c}
 $$
 
 is the spreading time. The biquaternion form of the packet is $\tilde{Ξ}_{\mathrm{sp}} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.
@@ -297,15 +297,15 @@ The closed forms above were checked numerically. Using the density-width normali
 The packet integral is dominated, for large $r'_t$ or small $\hbar$, by the stationary points of its phase. Writing the exponent for the free case,
 
 $$
-\theta_{\mathrm{pha}}(\vec k) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \frac{c\lambda_m k^2}{2}r'_t,
+\theta_{\mathrm{pha}}(\vec k) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \frac{c k^2}{2\,k_m}r'_t,
 $$
 
 the stationary condition is
 
 $$
-\nabla_{\vec k}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\lambda_m\vec kr'_t = 0
+\nabla_{\vec k}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k/k_mr'_t = 0
 \qquad\Longrightarrow\qquad
-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\lambda_m\vec kr'_t = \vec v_g r'_t .
+(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k/k_mr'_t = \vec v_g r'_t .
 $$
 
 The stationary wave vector is the one whose group velocity carries it to the observation point, so the stationary phase is the **classical free trajectory**: the packet centre moves uniformly at $\vec v_g = \vec p/m$. This is the free-particle case of the general semiclassical statement that the phase of the wave function at a point is the classical action accumulated along the trajectory reaching it. For a packet of mean momentum $\hbar k_0$, the phase at the centre is $\hbar k_0^2 r'_t/2m$ up to the $ik_0x$ term, which is the classical action $S_{\mathrm{cl}} = p_0^2r'_t/2m$; the exact Gaussian envelope above carries precisely this phase, as the term $-i\hbar k_0^2r'_t/2m$ in $Ξ(r_x,r'_t)$ shows.
@@ -319,7 +319,7 @@ The free propagator is the inverse Fourier transform of the free phase,
 $$
 \boxed{\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int \frac{d^3k}{(2\pi)^3}\,
 \exp(\,i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - i\hbar k^2 r'_t/2m)
-= \left(\frac{1}{2\pi i c\lambda_m r'_t}\right)^{3/2}
+= \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2\hbar r'_t}\right)\;},
 $$
 
@@ -392,9 +392,9 @@ Two further structural points belong to this section.
 **What the biquaternion notation provides.**
 
 - **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = c r_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
-- **The kinetic term as a biquaternion norm.** $T = -\tilde p^2\lambda_m c/(2\hbar) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
+- **The kinetic term as a biquaternion norm.** $T = -\tilde p^2 c/(2\hbar\,k_m) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
-- **A material-sector location for the dispersion.** The wave four-vector $\tilde P\,\lambda_p^{-1} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
+- **A material-sector location for the dispersion.** The wave four-vector $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
 - **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
 
 **What remains open.**
@@ -419,19 +419,19 @@ Two further structural points belong to this section.
 The free biquaternion Schrödinger equation is $i\hbar\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}} = H\tilde{Ξ}_{\mathrm{sp}}$ with
 
 $$
-H = \frac{p^{2}\lambda_m c}{2\hbar}\,e_t = \frac{\tilde p\tilde p^{\natural}\lambda_m c}{2\hbar} = -\frac{\tilde p^2\lambda_m c}{2\hbar} \in \mathbb{R}e_t \subset \mathbb{B}_{\Psi},
+H = \frac{p^{2}c}{2\hbar\,k_m}\,e_t = \frac{\tilde p\tilde p^{\natural}c}{2\hbar\,k_m} = -\frac{\tilde p^2 c}{2\hbar\,k_m} \in \mathbb{R}e_t \subset \mathbb{B}_{\Psi},
 \qquad
 \tilde p = -i\hbar\nabla,
 $$
 
 and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ have the dispersion $\omega = \hbar k^2/2m$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-iH/\hbar$ lies in the material sector $\mathbb{B}_{\Phi}$.
 
-The wave four-vector $\tilde P\,\lambda_p^{-1} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
+The wave four-vector $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
-A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\hbar r'_t/2ms_0^2)^2}$ whose centre moves at the group velocity $\hbar k_0/m$, with spreading time $\tau = 2s_0^2/(c\lambda_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
+A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\hbar r'_t/2ms_0^2)^2}$ whose centre moves at the group velocity $\hbar k_0/m$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
 $$
-K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{1}{2\pi i c\lambda_m r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2\hbar r'_t}\right)
+K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i c r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2\hbar r'_t}\right)
 $$
 
 is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-iHr'_t/\hbar)$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
@@ -451,17 +451,17 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $p_k = -i\hbar\partial/\partial R_k$ | Momentum component |
 | $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
-| $T = -\tilde p^2\lambda_m c/(2\hbar) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
+| $T = -\tilde p^2 c/(2\hbar\,k_m) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
 | $\tilde{Ξ}_{\mathrm{sp},\vec k} = \xi \exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k) = \hbar k^2/2m$ | Dispersion relation |
 | $\vec v_g = \partial\omega/\partial\vec k = \hbar\vec k/m$ | Group velocity; classical velocity |
-| $\tilde P\,\lambda_p^{-1} = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
-| $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
+| $\tilde P\,k_{\mathrm{mo}} = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde P\,k_{\mathrm{mo}}\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Probability density, from the trace reading of the Hermitian form |
 | $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_k\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | Probability current |
 | $Ξ(r_x,r'_t)$ | Scalar envelope; module factor frozen |
 | $s_0$, $s(r'_t) = s_0\sqrt{1+(\hbar r'_t/2ms_0^2)^2}$ | Initial and time-dependent density width |
-| $\tau = 2s_0^2/(c\lambda_m)$ | Spreading time |
+| $\tau = 2s_0^2/(c/k_m)$ | Spreading time |
 | $K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = (m/2\pi i\hbar r'_t)^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2/2\hbar r'_t)$ | Free propagator; central |
 | $\tilde Q(r'_t) = \exp(-iHr'_t/\hbar)$ | Free evolution; central $*$-unitary |
 | $\mathrm{Tr}(\tilde R_\Psi) = 2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace convention |

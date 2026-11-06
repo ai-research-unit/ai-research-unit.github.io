@@ -92,11 +92,11 @@ The construction is a finite algebra, and the source writes no equation of motio
 **The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: $\tilde{Ξ}_{\mathrm{sp},L}$ lies in the $-1$ eigenspace of the frame's volume cell and $\tilde{Ξ}_{\mathrm{sp},R}$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
 $$
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}&=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},L},\\
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}&=\lambda_m^{-1}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}&=k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}&=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair". Here $\lambda_m=\hbar/(mc)$ is the mass length.
+with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair". Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The two-sided single equation.** Read on the algebra rather than on a field, the same content is one equation whose two sides are the two multiplications,
 $$
@@ -311,7 +311,7 @@ The first fact is the doubling. The central volume element of each algebra is an
 
 The interpretations are the identification of the two summands with the two chiralities and of the two quaternion actions with $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$, the identification of the neutral state of the right-handed summand with the sterile right-handed neutrino, the assignment of the states to the Pati–Salam multiplets, and the interpretation of the volume element $\omega$ as the Higgs.
 
-The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's volume cell to $\bar F$ as a right multiplication, and that cell squares to $e_t$.
+The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's volume cell to $\bar F$ as a right multiplication, and that cell squares to $e_t$.
 
 The construction's contact with the framework's ledger is that the second chirality and the sterile state are supplied by the algebra rather than added by hand, and that a sterile fermion is unconstrained by the anomaly conditions. Its open end is the same as that of the undoubled construction: the three commutator computations that would decide whether the abelian charge is a physical gauge charge, together with the choice of the supercharge sector that would fix which states carry which weak quantum numbers.
 
@@ -341,7 +341,7 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 | $-iR_{\vec e_z}$ | The volume cell of the frame, a pure right multiplier; $\tilde X_L,\tilde X_R$ are its two eigenspaces, of dimension two each, and the left action preserves both |
 | $i\,(iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x})(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Four-factor volume cell of the first rung, $\mathrm{Cl}(4)$; it equals the chirality cell, and squares to $I_4$ |
 | $-i\vec e_z$ | The right multiplier that the volume cell applies, $-iR_{\vec e_z}\tilde X=-i\tilde X\vec e_z$; it squares to $e_t$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chirality-off-diagonal pair of Dirac equations |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chirality-off-diagonal pair of Dirac equations |
 | $\tilde\nabla^{\natural}F=-im\,\bar F\,\vec e_z$ | The same content as one two-sided equation |
 | $L_\omega R_{\mathrm{axf},-\vec e_z}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
 | $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen cells $L_aR_b$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |

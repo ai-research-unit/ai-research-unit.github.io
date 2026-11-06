@@ -25,10 +25,10 @@ The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec 
 The equation under study is the chiral pair that the corpus states as its dynamics (*Operator and Calculus Conventions*, §*The Dynamics*), printed once because the whole article is a reading of it:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
+Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The pair operator that writes it once is $\mathbb{D}$, of the same article, with $\mathbb{D}^2=\Box$, and the article uses the pair and the operator as that article fixes them. At $m=0$ the pair decouples into one equation per value, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
@@ -85,9 +85,9 @@ The identification is now direct. The gradient is the first-order operator of th
 
 **The grading is the subscript.** The value of the subscript is $L$ or $R$, one for each part of the field. The abstract $+$ sector of the previous section is read on one value and the $-$ sector on the other, and the assignment is the one the corpus records: $L$ is the minus value and $R$ the plus value (*Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*). The two values are exactly two, and only the zero element is both.
 
-**The mass pair is the superalgebra.** The pair of the conventions is the massive equation, and each of its members multiplies the part with one value and equals a multiple of the part with the other, so the two sides of one member name the two values. The mass is the only term of the pair that names the other value. Read as one operator the same content is the pair operator $\mathbb{D}$, with $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ and $\mathbb{D}^2=\Box$; read as two equations it is the pair printed above. The square of the supercharge is the central Hamiltonian, and the mass is the number at which the pair is solved.
+**The mass pair is the superalgebra.** The pair of the conventions is the massive equation, and each of its members multiplies the part with one value and equals a multiple of the part with the other, so the two sides of one member name the two values. The mass is the only term of the pair that names the other value. Read as one operator the same content is the pair operator $\mathbb{D}$, with $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$ and $\mathbb{D}^2=\Box$; read as two equations it is the pair printed above. The square of the supercharge is the central Hamiltonian, and the mass is the number at which the pair is solved.
 
-Three objects are held apart here. The nilpotent half is one member of the pair: applied where it lands, it annihilates, because the other member carries the field back. The operator $\mathbb{D}$ is the pair written once, and its square is central. And $m$ is a number: it multiplies the field in $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, and it becomes a term of the operator only when the same equation is written as a Schrödinger problem, where it multiplies the time cell of the frame. The two readings are one statement, that the mass is the term which pairs the two values.
+Three objects are held apart here. The nilpotent half is one member of the pair: applied where it lands, it annihilates, because the other member carries the field back. The operator $\mathbb{D}$ is the pair written once, and its square is central. And $m$ is a number: it multiplies the field in $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$, and it becomes a term of the operator only when the same equation is written as a Schrödinger problem, where it multiplies the time cell of the frame. The two readings are one statement, that the mass is the term which pairs the two values.
 
 **One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde{\nabla})^{\dagger} = -\tilde{\nabla}^{\natural}$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_k^{*}=-\vec e_k$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. The pair operator is therefore anti-Hermitian, $\mathbb{D}^{\dagger} = -\mathbb{D}$, and $i\mathbb{D}$ is the Hermitian representative: the operator of the series is anti-Hermitian exactly as its first derivative is, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i c r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
 
@@ -100,7 +100,7 @@ The dictionary is not an analogy imposed from outside; it is the statement that 
 Two formulations carry the name *Dirac equation*, and the supersymmetry above is read from the first. The **one-sided** form is the chiral pair written with both gradients on the left,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\text{(one-sided)},
 $$
 
@@ -115,7 +115,7 @@ the right multiplier $\vec e_z$ carrying the cell of the two values and the conj
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ |
+| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by the gradient, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R} \in \mathbb{B}$ | $F\in\mathbb{B}$ |
 | Mass | the pairing of the two values | the right multiplication by $\vec e_z$, applied to the conjugate field |
@@ -147,7 +147,7 @@ A cell that commutes with the chirality cell carries each of the two values to i
 
 They sort the same Hamiltonian differently, and the sorting is complementary. Write the free Hamiltonian in the cells of the frame: its mass term is $mc^2$ times the time cell $iR_{\vec e_x}$, and its kinetic term is the sum $c\sum_k p_k\,(L_{\vec e_k}R_{\vec e_z})$ of the three velocity cells. The time cell anticommutes with the chirality cell, so the mass term exchanges the two values; the velocity cells commute with it, because a left multiplier commutes with a right one, and the kinetic term therefore carries each value to itself. Each grading therefore splits the Hamiltonian into one preserved and one exchanged piece, and the two gradings swap the pieces. Neither grading makes the whole of $H$ exchange the values, and that is not a defect of the notation but the reason the two are distinguished. The non-relativistic reduction removes the term that the frame grading exchanges, and the supersymmetry pairs the two values that the subscript separates.
 
-The supercharge carries no mass. The operator $\mathbb{D}$ of the previous sections has no mass term, its square is the scalar $\Box$, and the mass enters only as the eigenvalue in $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$, where it is the pairing of the two values. The pair (an operator whose two members name the two values, a central square) is exactly what the supersymmetry needs, and the label it needs is the subscript and not the frame grading. A reader who imports the frame intuition into the supersymmetry will expect the kinetic term to be the graded object and the mass the ungraded one, and will then read the supercharge as the wrong operator.
+The supercharge carries no mass. The operator $\mathbb{D}$ of the previous sections has no mass term, its square is the scalar $\Box$, and the mass enters only as the eigenvalue in $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$, where it is the pairing of the two values. The pair (an operator whose two members name the two values, a central square) is exactly what the supersymmetry needs, and the label it needs is the subscript and not the frame grading. A reader who imports the frame intuition into the supersymmetry will expect the kinetic term to be the graded object and the mass the ungraded one, and will then read the supercharge as the wrong operator.
 
 ## The 1+1-Dimensional Realisation
 
@@ -192,33 +192,33 @@ $$
 Their products are the exact operator identities of that article,
 
 $$
-A_\omega^\dagger A_\omega = \vec p^2 + m^2\omega^2\vec r^2 - \frac{3\hbar^2\omega}{c\lambda_m} - 2m\omega\,S
-= \frac{2\hbar^2\omega}{c\lambda_m}\left(N - \frac{S}{\hbar}\right),
+A_\omega^\dagger A_\omega = \vec p^2 + m^2\omega^2\vec r^2 - \dfrac{3\hbar^2\omega\,k_m}{c} - 2m\omega\,S
+= \dfrac{2\hbar^2\omega\,k_m}{c}\left(N - \frac{S}{\hbar}\right),
 $$
 
 and
 
 $$
-A_\omega A_\omega^\dagger = \frac{2\hbar^2\omega}{c\lambda_m}\left(N + 3 + \frac{S}{\hbar}\right),
+A_\omega A_\omega^\dagger = \dfrac{2\hbar^2\omega\,k_m}{c}\left(N + 3 + \frac{S}{\hbar}\right),
 \qquad
 S=\sum_k L_{\mathrm{orb},k}\,\tilde S_k ,
 $$
 
-where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\frac{3\hbar^2\omega}{c\lambda_m}$ against $+\frac{3\hbar^2\omega}{c\lambda_m}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
+where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\dfrac{3\hbar^2\omega\,k_m}{c}$ against $+\dfrac{3\hbar^2\omega\,k_m}{c}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
 
 The pair $(A_\omega,A_\omega^\dagger)$ is a supersymmetric pair in the sense of the first section: $H_+ = A_\omega^\dagger A_\omega$ and $H_- = A_\omega A_\omega^\dagger$ are partner Hamiltonians, and their non-zero spectra agree. The zero modes of $A_\omega$ are the aligned states with $n_r = 0$, and they exist for every orbital quantum number $l$, so $\dim\ker A_\omega = \infty$; the conjugate operator has no zero modes at all, because $A_\omega A_\omega^\dagger$ has strictly positive eigenvalues. The imbalance of zero modes is therefore infinite: the supersymmetry is unbroken, and the ground level of the Dirac oscillator is infinitely degenerate at $E = \pm mc^2$. The infinite degeneracy derived in the oscillator article is thus not an accident of that model; it is the zero-mode degeneracy that a factorised first-order operator with unbroken supersymmetry possesses.
 
 The oscillator's spectrum,
 
 $$
-E^2 = m^2c^4 + \frac{2\hbar^2\omega}{c\lambda_m} c^2\left(N - \frac{S}{\hbar}\right),
+E^2 = m^2c^4 + \dfrac{2\hbar^2\omega\,k_m}{c} c^2\left(N - \frac{S}{\hbar}\right),
 \qquad
 E^2 = m^2c^4 + 4m\hbar\omega c^2\,n_r \ \ (s_{\mathrm{tot}} = l+\tfrac12),
 $$
 
-is the spectrum of $H_+ = A_\omega^\dagger A_\omega$. The first line is the general form, and the second is its aligned branch, $S/\hbar = l$, rewritten with $N = 2n_r+l$; that branch vanishes at $n_r = 0$, which is the infinitely degenerate level at $E = \pm mc^2$. The anti-aligned branch, $S/\hbar = -(l+1)$, gives $E^2 = m^2c^4 + \frac{2\hbar^2\omega}{c\lambda_m} c^2(2n_r+2l+1)$.
+is the spectrum of $H_+ = A_\omega^\dagger A_\omega$. The first line is the general form, and the second is its aligned branch, $S/\hbar = l$, rewritten with $N = 2n_r+l$; that branch vanishes at $n_r = 0$, which is the infinitely degenerate level at $E = \pm mc^2$. The anti-aligned branch, $S/\hbar = -(l+1)$, gives $E^2 = m^2c^4 + \dfrac{2\hbar^2\omega\,k_m}{c} c^2(2n_r+2l+1)$.
 
-The two branches are the two values of the spin–orbit element, not the two graded sectors. The partner $H_- = A_\omega A_\omega^\dagger$ has two towers as well, $\frac{2\hbar^2\omega}{c\lambda_m}(2n_r+2l+3)$ aligned and $4m\hbar\omega(n_r+1)$ anti-aligned; these are the two towers of $H_+$ with the branches exchanged and $n_r$ advanced by one. At fixed excitation the statement is exact: the spectrum of $H_-$ on the states of $N$ excitations is the spectrum of $H_+$ on the states of $N+1$ excitations with the zero modes removed. The exchange of branches is forced by the intertwiner, since $A_\omega$ commutes with the total angular momentum, lowers $N$ by one and is graded, so it changes $l$ by one unit and cannot keep the branch label.
+The two branches are the two values of the spin–orbit element, not the two graded sectors. The partner $H_- = A_\omega A_\omega^\dagger$ has two towers as well, $\dfrac{2\hbar^2\omega\,k_m}{c}(2n_r+2l+3)$ aligned and $4m\hbar\omega(n_r+1)$ anti-aligned; these are the two towers of $H_+$ with the branches exchanged and $n_r$ advanced by one. At fixed excitation the statement is exact: the spectrum of $H_-$ on the states of $N$ excitations is the spectrum of $H_+$ on the states of $N+1$ excitations with the zero modes removed. The exchange of branches is forced by the intertwiner, since $A_\omega$ commutes with the total angular momentum, lowers $N$ by one and is graded, so it changes $l$ by one unit and cannot keep the branch label.
 
 The correspondence also clarifies what is and is not supersymmetric about the free theory. The free biquaternionic Dirac operator has $\mathbb{D}^2 = \Box$ with $H_+ = H_-$: the pair is degenerate, the index vanishes, and what remains of the supersymmetry is the exact degeneracy, not a protected zero mode. Adding the non-minimal oscillator term shifts the two partners by opposite constants and opposite spin–orbit terms, and produces the zero modes. The mass is what makes the grading physically meaningful, and the oscillator term is what makes the two partners differ.
 
@@ -303,7 +303,7 @@ The biquaternion framework supplies this structure natively. The biquaternionic 
 
 The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the operator $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial R_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two values are the partner potentials. The identity was checked by finite-difference computation on $121$ points of $[-6,6]$ (step $h=0.1$) with the kink superpotential $W = \tanh x$: it held to $7\times10^{-15}$ on the whole grid, and the operator limit $[D,W]\to dW/dx$ converged at second order in $h$, the error falling by a factor close to four at each halving of the step.
 
-The Dirac oscillator is the three-dimensional relativistic realisation: the pair $A_\omega$, $A_\omega^\dagger$ of the companion article has infinitely many zero modes on one side and none on the other, $A_\omega A_\omega^\dagger = \frac{2\hbar^2\omega}{c\lambda_m}(N+3+S/\hbar)$ has no zero mode, the supersymmetry is unbroken, and the infinite degeneracy of the ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the imbalance of the zero modes between the two values, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two values of the Hermitian remainder can be mapped into one another by a change of the mass profile.
+The Dirac oscillator is the three-dimensional relativistic realisation: the pair $A_\omega$, $A_\omega^\dagger$ of the companion article has infinitely many zero modes on one side and none on the other, $A_\omega A_\omega^\dagger = \dfrac{2\hbar^2\omega\,k_m}{c}(N+3+S/\hbar)$ has no zero mode, the supersymmetry is unbroken, and the infinite degeneracy of the ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the imbalance of the zero modes between the two values, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two values of the Hermitian remainder can be mapped into one another by a change of the mass profile.
 
 ## Summary of Notation
 
@@ -318,14 +318,14 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $\tilde{\nabla}$ | Biquaternionic gradient (the supercharge) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient; $(\tilde\nabla)^{\dagger}=-\tilde\nabla^{\natural}$ |
 | $\Box$ | The d'Alembertian of the series (the Hamiltonian), the square of the gradient |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
 | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ | Two-sided equation |
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |
 | $V_\pm = W^2 \mp dW/dx$ | Partner potentials |
 | $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
-| $\mathbb{D}$ | The pair operator, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = \lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp}}$ with $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}$ | The pair operator, $\mathbb{D}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ with $\mathbb{D}^2=\Box$ |
 | $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_k^{*}=-\vec e_k$), order-reversing conjugate, coefficient conjugate |
 | $(-1)^F$ | Grading operator |
 | $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |

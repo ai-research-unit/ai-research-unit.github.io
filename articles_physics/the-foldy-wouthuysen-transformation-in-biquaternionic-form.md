@@ -33,7 +33,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-\frac{i}{c}e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
-\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2},
+\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{1}{c^2}\frac{\partial^2}{\partial {r'_t}^2},
 \qquad
 D_3=\sum_k\vec e_k\frac{\partial}{\partial q_k}.
 $$
@@ -57,9 +57,9 @@ with $\omega$ the pseudoscalar of the frame; the $i$ in front of $\omega$ is the
 **The equation.** The pair is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla\tilde\nabla^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.
@@ -142,18 +142,18 @@ the condition $i[S_1,\beta mc^2]=-O$ is satisfied by
 
 $$
 \boxed{\;
-S_1=-\frac{i\lambda_m}{2\hbar c}\,\beta O,
+S_1=-\frac{i}{2\hbar c\,k_m}\,\beta O,
 \qquad
-S_1F=\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y
+S_1F=\dfrac{1}{2\hbar\,k_m}\sum_k\vec e_k\pi_kF\vec e_y
 \;}
 $$
 
 because $-i$ times the $i$ of $\beta$ is $+1$:
 
 $$
--\frac{i\lambda_m}{2\hbar c}\,\beta\bigl(c\vec\pi F\vec e_z\bigr)
+-\frac{i}{2\hbar c\,k_m}\,\beta\bigl(c\vec\pi F\vec e_z\bigr)
 =-\frac{i\cdot i}{2mc}\,\vec\pi F\vec e_y
-=\frac{\lambda_m}{2\hbar}\,\vec\pi F\vec e_y .
+=\dfrac{1}{2\hbar\,k_m}\,\vec\pi F\vec e_y .
 $$
 
 Indeed $[S_1,\beta]=\frac{i}{mc^2}O$, because the right multiplication by $\vec e_y$ gives $[\vec e_k(\cdot)\vec e_y,\beta]=2i\vec e_k(\cdot)\vec e_z$ term by term, whence $i[S_1,\beta mc^2]=-O$. The remaining term is evaluated with the same anticommutation:
@@ -189,24 +189,24 @@ $$
 which is odd, since $[O,\mathcal{E}]$ is odd and $\beta$ is even, and of relative order $v^2/c^2$ compared with $O$. It is removed by the second generator
 
 $$
-S_2=-\frac{i\lambda_m}{2\hbar c}\beta O_1 ,
+S_2=-\frac{i}{2\hbar c\,k_m}\beta O_1 ,
 $$
 
 odd like $S_1$, and by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,\beta mc^2]=-O_1$. Every generator is odd under the grading for the same reason: it enters the transformed Hamiltonian only through the commutator with $\beta mc^2$, and only an odd generator produces an odd term there. The price of the second step is a new odd remainder $O_2$, smaller by two powers of $v/c$, which the next generator removes in turn. Explicitly, $[O,\mathcal{E}]F=i\hbarϙc\,(\vec EF)\vec e_z$ and
 
 $$
-S_2F=\frac{ϙ\lambda_m^2}{4\hbar c}\,(\vec EF)\vec e_z ,
+S_2F=\frac{ϙ}{4\hbar c\,k_m^{2}}\,(\vec EF)\vec e_z ,
 $$
 
 odd, as every generator is. For the free particle $O=c\vec p$, $\mathcal{E}=0$, so $O_1=0$ and $O^2=c^2\vec p^2$; then $O^2/(2mc^2)=\vec p^2/(2m)$ and
 
 $$
-H_2=\beta\Bigl(mc^2+\frac{\vec p^2\lambda_m c}{2\hbar}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
+H_2=\beta\Bigl(mc^2+\frac{\vec p^2 c}{2\hbar\,k_m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
 $$
 
 whose first two terms are the free-particle Schrödinger Hamiltonian on the $+1$ part of the mass grading and its negative on the $-1$ part, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.
 
-The generator has a transparent physical meaning in the algebra. The operator $\beta O$ is the piece of the Hamiltonian that exchanges the $+1$ and $-1$ parts of the mass grading. The generator $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ is proportional to it, and it anticommutes with $\beta$: the generator is frame-odd, and the transformation it generates does not leave the grading fixed. It is the rotation whose angle measures how much mixing of the two frequency parts the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
+The generator has a transparent physical meaning in the algebra. The operator $\beta O$ is the piece of the Hamiltonian that exchanges the $+1$ and $-1$ parts of the mass grading. The generator $S_1=-\frac{i}{2\hbar c\,k_m}\beta O$ is proportional to it, and it anticommutes with $\beta$: the generator is frame-odd, and the transformation it generates does not leave the grading fixed. It is the rotation whose angle measures how much mixing of the two frequency parts the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
 
 It is worth recording why one generator is not enough. With $U=e^{iS_1}$ taken exactly, the odd remainder $O_1$ survives: the leading generator removes the leading odd term and nothing more. The generator is a series, $S=S_1+S_2+\cdots$, and each term removes one order. The free particle is the exception, and the next section is about it: there the series terminates and a single closed-form exponential does the whole job at once.
 
@@ -284,7 +284,7 @@ $$
 that is, $UHU^\dagger=\beta\sqrt{\vec p^2c^2+m^2c^4}$ exactly. In this language the exact generator is $S=S_1\,\theta/\tan\theta$, since $S_1=-\tfrac{i}{2}A\tan\theta$ and $iS=\tfrac{1}{2}A\theta$; it reduces to $S_1$ as $\theta\to0$; the factor $\theta/\tan\theta\le1$ is the whole of the relativistic correction to the non-relativistic generator. The $+1$ part of $\beta$ is the relativistic energy $+E$, the $-1$ part is $-E$, and the odd part has been removed to all orders. The leading expansion of the closed form reproduces the result of the previous section:
 
 $$
-\beta E=\beta\Bigl(mc^2+\frac{\vec p^2\lambda_m c}{2\hbar}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
+\beta E=\beta\Bigl(mc^2+\frac{\vec p^2 c}{2\hbar\,k_m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
 $$
 
 the $\vec p^4$ term being the first relativistic correction to the kinetic energy. The closed form was checked numerically: with $\tan\theta=|\vec p|/(mc)$ and $U=\cos(\theta/2)+A\sin(\theta/2)$, the identity $UHU^\dagger=\beta E$ holds to machine precision, at the $10^{-15}$ level for a generic three-momentum and every value of $|\vec p|/(mc)$ tested.
@@ -305,7 +305,7 @@ $$
 [S_1,Q_k]F=-\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y,
 \qquad
 -i[S_1,Q_k]F=i\cdot\frac{i\hbar}{2mc}\,\vec e_kF\vec e_y
-=-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y,
+=-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y,
 $$
 
 where $i\cdot i=-1$ once more. Hence
@@ -313,10 +313,10 @@ where $i\cdot i=-1$ once more. Hence
 $$
 \vec X=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots .
+X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y+\cdots .
 $$
 
-The correction is of the order of the half reduced Compton wavelength $\lambda_m/2$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
+The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,k_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
 \frac{d\vec X}{dr'_t}=\frac{i}{\hbar}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
@@ -325,20 +325,20 @@ $$
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
 
 $$
-\vec q-\vec X=\frac{\lambda_m}{2}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
+\vec q-\vec X=\dfrac{1}{2\,k_m}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
 $$
 
-The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
-The correction $\frac{\lambda_m}{2}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
+The correction $\dfrac{1}{2\,k_m}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
 The transformation can now be located in the two splits of the algebra, and the location is the content of the article.
 
-**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ exchanges the two values of the subscript. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges the two values. Under the subscript the mass crosses from one value to the other, and the kinetic operator stays.
+**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ exchanges the two values of the subscript. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges the two values. Under the subscript the mass crosses from one value to the other, and the kinetic operator stays.
 
 **The frame split is where the FW transformation works.** Conjugation by $\beta$ separates the mass from the kinetic term: the mass term commutes with $\beta$, and $O$ anticommutes with it. The fixed $*$-unitary of the frame is $F\mapsto Fw$ with $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$; it is its own inverse, $w^2=e_t$, and it conjugates $\beta$ into $\Gamma$ and back. The FW transformation is the momentum-dependent completion of that exchange: it conjugates the field so that the mass, which exchanges the two values, becomes the term that commutes with the mass grading, while the kinetic term, which keeps the value, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
@@ -352,7 +352,7 @@ $$
 
 $C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_k\vec e_ku_k$, so the even part of the chirality reads $i\sin\theta\sum_k\vec e_ku_k$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
 
-**The generator is frame-odd.** The FW generator $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
+**The generator is frame-odd.** The FW generator $S_1=-\frac{i}{2\hbar c\,k_m}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
 
 $$
 U\beta U^{\dagger}=\beta\exp(-2iS_1).
@@ -378,15 +378,15 @@ O^2=c^2\bigl(\vec\pi^2-ϙ\hbar\,i\vec B\bigr),
 \vec B=\sum_lB_l\vec e_l .
 $$
 
-The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ c\lambda_m}{2}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
+The left multiplication by $i\vec e_l$ commutes with $\beta$, so the spin terms are frame-even, and $\frac{\beta O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ c}{2\,k_m}i\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the mass grading is the Pauli Hamiltonian
 
 $$
 \boxed{\;
 \begin{aligned}
 H_{\mathrm{Pauli}}
-&=\frac{\vec\pi^2\lambda_m c}{2\hbar}+ϙA_0-\frac{ϙ c\lambda_m}{2}\,i\vec B\\[2pt]
-&\quad-\frac{ϙ\lambda_m^2}{4\hbar}\,i(\vec E\times\vec\pi)
-+\frac{\lambda_m^2}{8}\nabla^2(ϙA_0),
+&=\frac{\vec\pi^2 c}{2\hbar\,k_m}+ϙA_0-\frac{ϙ c}{2\,k_m}\,i\vec B\\[2pt]
+&\quad-\frac{ϙ}{4\hbar\,k_m^{2}}\,i(\vec E\times\vec\pi)
++\frac{1}{8\,k_m^{2}}\nabla^2(ϙA_0),
 \end{aligned}
 \;}
 $$
@@ -394,7 +394,7 @@ $$
 whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-ϙ\hbar\,i\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-ϙ\hbar\,i\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\nabla A_0$, the Darwin term has the equivalent forms
 
 $$
-\frac{\lambda_m^2}{8}\nabla^2(ϙA_0)=-\frac{ϙ\lambda_m^2}{8}\nabla\cdot\vec E .
+\frac{1}{8\,k_m^{2}}\nabla^2(ϙA_0)=-\frac{ϙ}{8\,k_m^{2}}\nabla\cdot\vec E .
 $$
 
 The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, and none exchanges the two frequency parts — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
@@ -425,9 +425,9 @@ $$
 and $O$ odd under conjugation by the mass grading $\beta F=iF\vec e_x$, the leading generator is
 
 $$
-S_1=-\frac{i\lambda_m}{2\hbar c}\beta O,
+S_1=-\frac{i}{2\hbar c\,k_m}\beta O,
 \qquad
-S_1F=\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y,
+S_1F=\dfrac{1}{2\hbar\,k_m}\sum_k\vec e_k\pi_kF\vec e_y,
 $$
 
 and the transformed Hamiltonian through order $v^2/c^2$ is
@@ -455,7 +455,7 @@ checked to machine precision by direct computation. The mean position is the ope
 $$
 \vec X=U^\dagger\vec q\,U=\sum_kX_k\vec e_k,
 \qquad
-X_kF=Q_kF-\frac{\lambda_m}{2}\,\vec e_kF\vec e_y+\cdots ,
+X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y+\cdots ,
 $$
 
 whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.
@@ -470,7 +470,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_k\vec e_k\partial/\partial q_k$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |
@@ -479,14 +479,14 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathcal{E}=ϙA_0$ | Even part; left multiplication by the scalar $ϙA_0$ |
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $U = \exp(iS)$ | Foldy–Wouthuysen $*$-unitary |
-| $S_1=-\frac{i\lambda_m}{2\hbar c}\beta O$ | Leading FW generator; its action is $\frac{\lambda_m}{2\hbar}\sum_k\vec e_k\pi_kF\vec e_y$ |
+| $S_1=-\frac{i}{2\hbar c\,k_m}\beta O$ | Leading FW generator; its action is $\dfrac{1}{2\hbar\,k_m}\sum_k\vec e_k\pi_kF\vec e_y$ |
 | $O_1 = i[S_1,\mathcal{E}]$ | Odd remainder after the first step |
-| $S_2 = -\frac{i\lambda_m}{2\hbar c}\beta O_1$ | Second generator; odd, like every generator |
+| $S_2 = -\frac{i}{2\hbar c\,k_m}\beta O_1$ | Second generator; odd, like every generator |
 | $H_2 = UHU^\dagger - i\hbar U\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_kQ_k\vec e_k$ | Material position |
-| $X_kF = Q_kF-\frac{\lambda_m}{2}\vec e_kF\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
+| $X_kF = Q_kF-\dfrac{1}{2\,k_m}\vec e_kF\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
 | $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$ | Fixed $*$-unitary of the frame, the right multiplication $F\mapsto Fw$; $w^2=e_t$, and $w\beta w=\Gamma$ |
 
 ## Further Reading

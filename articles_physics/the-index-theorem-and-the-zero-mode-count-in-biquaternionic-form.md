@@ -67,17 +67,17 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\Box$, and on the material sector that reads $\Delta-c^{-2}\partial^2/\partial r'_t^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\Box$, and on the material sector that reads $\Delta-c^{-2}\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
 
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\lambda_m^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The square root of the d'Alembertian is the pair operator $\mathbb{D}$ of *Operator and Calculus Conventions*, with $\mathbb{D}^2=\Box I$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $\lambda_m=\hbar/(mc)$ is the mass length.
+and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The square root of the d'Alembertian is the pair operator $\mathbb{D}$ of *Operator and Calculus Conventions*, with $\mathbb{D}^2=\Box I$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
 
