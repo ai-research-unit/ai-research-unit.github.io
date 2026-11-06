@@ -126,7 +126,7 @@ The classical oscillator is different because a classical number is not an opera
 The equation of motion in the amplitude variables is the pair
 
 $$
-dx/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
+dr_x/dr'_t = \omega\varpi, \qquad \,d\varpi/dr'_t = -\omega r_x ,
 $$
 
 which is equivalent to the single complex equation
@@ -212,10 +212,10 @@ The two forms coincide only on the real axis: for $\tilde{A} = r_x\,e_t$, $\lang
 
 ## The Flow as a Bracket Derivation
 
-The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(x^2 + \varpi^2)$. The equations of motion are the bracket equations
+The phase rotation can also be written as a Hamiltonian flow, and the exercise makes the sector roles precise. With the normalized momentum $\varpi = p/(m\omega)$ the canonical bracket is $\{x, \varpi\} = 1/(m\omega)$, inherited from $\{x,p\} = 1$, and the energy is $H = \tfrac12 m\omega^2(r_x^2 + \varpi^2)$. The equations of motion are the bracket equations
 
 $$
-dx/dr'_t = \{x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
+dr_x/dr'_t = \{r_x, H\} = \frac{\partial H}{\partial p} = \omega\varpi, \qquad
 \,d\varpi/dr'_t = \{\varpi, H\} = -\frac{1}{m\omega}\frac{\partial H}{\partial r_x} = -\omega r_x ,
 $$
 
@@ -235,7 +235,7 @@ The companion article on the quantum oscillator asks whether the complexificatio
 
 **The two sectors carry the two quadratures, not two modes.** The $\mathbb{M}_+$ and $\mathbb{M}_-$ parts of $\tilde{A}$ are $r_x\,e_t$ and $i\varpi\,e_t$; they are the real and imaginary parts of one complex number, coupled rigidly by the phase rotation. They are not independently excitable: setting one to zero at one time does not keep it zero, because the flow carries it into the other after a quarter period. The sector split of the centre is a **direct-sum decomposition of the phase plane**, and the dynamics is a rotation that does not respect it.
 
-**The two first-order equations are the sector pair.** The equation of motion, written as $dx/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.
+**The two first-order equations are the sector pair.** The equation of motion, written as $dr_x/dr'_t = \omega\varpi$ and $d\varpi/dr'_t = -\omega r_x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.
 
 A genuinely two-oscillator structure would require two independent complex amplitudes, hence a four-real-dimensional phase space and two frequencies. That is what a two-dimensional isotropic oscillator has, and it is not the structure of the centre. The centre is one complex dimension, and the two sectors are its real and imaginary axes.
 

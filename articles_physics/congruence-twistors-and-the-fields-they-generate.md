@@ -315,7 +315,7 @@ $$
 with $z:=z_3=\tfrac12(\upsilon-v)$ and $a$ the ring's radius, the tangency condition $P=0$ gives $G=-(z+ia)/w$, and substituting it back into $\Pi=0$ leaves
 
 $$
-\Pi\big|_{P=0}=-\frac{x^2+y^2+(z+ia)^2}{w}=-\frac{r_*^2}{w},
+\Pi\big|_{P=0}=-\frac{r_x^2+r_y^2+(r_z+ia)^2}{w}=-\frac{r_*^2}{w},
 $$
 
 checked symbolically with $w=x-iy$ and $p=x+iy$. The tangency locus is therefore $r_*^2=0$ — the ring of radius $a$ in the plane $z=0$, with its two real conditions $r_x^2+r_y^2+r_z^2=a^2$ and $2az=0$. **The particle of the programme is the set of lines tangent to the twistor surface, and for the Kerr generator that set is the Kerr ring**, which is as direct a confirmation of the geometric reading as the construction admits.
@@ -374,7 +374,7 @@ The singular locus is the tangency locus: a point is singular for the field exac
 | $\xi^{\mathrm{scl}}_0,\xi^{\mathrm{scl}}_1$ | The two surviving components of the potential, $\xi^{\mathrm{scl}}_0=\partial\ln G/\partial w$ and $\xi^{\mathrm{scl}}_1=\partial\ln G/\partial v$ in the gauge $\zeta_{0'}=1$ |
 | $\{-GF,iGF,-F\}$ | Yang–Mills triplet; its modulus is $F$ |
 | $\xi^{\mathrm{scl}}(G)$, $q$, $s$, $\gamma$ | Constants of the source's (70) family, to which the static generator belongs; the source's real constant $p$ is written $\gamma$ here because $p$ is a chart coordinate |
-| $r_*^2=x^2+y^2+(z+ia)^2$ | Ring condition; the tangency locus of the static generator is $r_*^2=0$ |
+| $r_*^2=r_x^2+r_y^2+(r_z+ia)^2$ | Ring condition; the tangency locus of the static generator is $r_*^2=0$ |
 
 ## Further Reading
 

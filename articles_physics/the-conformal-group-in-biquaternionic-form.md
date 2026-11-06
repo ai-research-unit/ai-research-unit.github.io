@@ -216,10 +216,10 @@ $$
 $$
 verified in both directions to $3\times10^{-15}$. In the chart the two chords have the explicit values
 $$
-\langle e_t-\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{4}{1-\langle\tilde{Q}\rangle_{\natural}-2ix^0},\qquad
-\langle e_t+\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{-4\langle\tilde{Q}\rangle_{\natural}}{1-\langle\tilde{Q}\rangle_{\natural}-2ix^0},
+\langle e_t-\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{4}{1-\langle\tilde{Q}\rangle_{\natural}-2i c r_t},\qquad
+\langle e_t+\tilde{U}_{\mathrm{C}}\rangle_{\natural}=\frac{-4\langle\tilde{Q}\rangle_{\natural}}{1-\langle\tilde{Q}\rangle_{\natural}-2i c r_t},
 $$
-for $\tilde{Q}=x^0e_t+ix^k\vec e_k\in\mathbb{M}_+$, with $x^0=c r'_{t}$ the time coordinate, $r^2=(x^1)^2+(x^2)^2+(x^3)^2$ and $\langle\tilde{Q}\rangle_{\natural}=(x^0)^2-r^2$, both checked to $10^{-15}$. The denominator never vanishes, the first chord never vanishes, and the second vanishes exactly on the light cone. This is the source's Eq. (6), its determinants read as the norms of the two chords. The source's quadratic form is $q(x)=-(x^0)^2+r^2$, which is the material-sector interval of the corpus; on $\mathbb{M}_+$ the same coordinates give $\langle\tilde{Q}\rangle_{\natural}=(x^0)^2-r^2=-q(x)$, so the source's $1+q$ and the denominator above are the same denominator.
+for $\tilde{Q}=c r_t\,e_t+i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{M}_+$, with $c r_t$ the time coordinate, $r^2=r_x^2+r_y^2+r_z^2$ and $\langle\tilde{Q}\rangle_{\natural}=c^2r_t^2-r^2$, both checked to $10^{-15}$. The denominator never vanishes, the first chord never vanishes, and the second vanishes exactly on the light cone. This is the source's Eq. (6), its determinants read as the norms of the two chords. The source's quadratic form is $q(x)=-(x^0)^2+r^2$, which is the material-sector interval of the corpus; on $\mathbb{M}_+$ the same coordinates give $\langle\tilde{Q}\rangle_{\natural}=(x^0)^2-r^2=-q(x)$, so the source's $1+q$ and the denominator above are the same denominator.
 
 Two chords, then, and three loci. The boundary is where the first vanishes, with apex at $\tilde{U}_{\mathrm{C}}=e_t$, the image of infinity, where both eigenvalues reach $+1$. The light cone of the origin is where the second vanishes, with apex at $\tilde{U}_{\mathrm{C}}=-e_t$, the image of the origin. The sphere is where both vanish.
 

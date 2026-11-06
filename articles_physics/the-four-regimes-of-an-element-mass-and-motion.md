@@ -142,7 +142,7 @@ The table is a table of the full algebra. A physical four-momentum is a point of
 
 ### The Material Slice
 
-On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(x,y,z)$ real. Hence
+On $\mathbb{M}_-$ the coordinates are $Q_t=i c r'_t$ and $\vec Q=(r_x,r_y,r_z)$ real. Hence
 
 $$
 B^2=r_x^2+r_y^2+r_z^2\ge0,

@@ -7,10 +7,10 @@ The Feynman path integral writes the transition amplitude of a quantum system as
 $$
 K(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]/\hbar),
 \qquad
-S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dx/dr'_t)\,dr'_t,
+S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dr_x/dr'_t)\,dr'_t,
 $$
 
-in which every path from $(x_i,r'_{t,i})$ to $(x_f,r'_{t,f})$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
+in which every path from $(r_{ix},r'_{t,i})$ to $(r_{fx},r'_{t,f})$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
 
 This article asks of the phase the question that the read-list articles have already asked twice. The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a unique **central** root of $-1$ up to sign — the scalar imaginary $i$ — and it also contains **real non-central** roots: the unit pure real quaternions $\vec u$ that name spin directions, of which the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are the coordinate cases. The companion article *The Schrödinger Equation in Biquaternionic Form* settled which of these is the $i$ of the state-vector equation, and showed that a non-central root breaks norm preservation. The companion article *The Feynman Propagator in Biquaternionic Form* settled where the $i\epsilon$ lives — along the $i c r'_t$ axis of the material sector $\mathbb{M}_-$ — and argued that the algebra names that axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* settled that $r'_t\mapsto-i\tau$ is, in this framework, the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary time coefficient as a real one. The path integral's phase is the object on which all three of these results bear at once.
 
@@ -185,13 +185,13 @@ The distance between this and a genuinely biquaternionic path integral should be
 
 The phase's exponent lies along the $i c r'_t$ direction of $\mathbb{M}_-$. The Wick rotation is precisely the operation that turns that direction real, and this is the sense in which it is the bridge between the oscillatory and the decaying forms of the path integral.
 
-Perform the substitution $r'_t\mapsto-i\tau$ in the action. With $dr'_t=-i\,d\tau$ and $dx/dr'_t=i\,dx/d\tau$, the kinetic term becomes
+Perform the substitution $r'_t\mapsto-i\tau$ in the action. With $dr'_t=-i\,d\tau$ and $dr_x/dr'_t=i\,dr_x/d\tau$, the kinetic term becomes
 
 $$
-\tfrac12 m\left(dx/dr'_t\right)^{2}=\tfrac12 m\Big(i\frac{dx}{d\tau}\Big)^2=-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2,
+\tfrac12 m\left(dr_x/dr'_t\right)^{2}=\tfrac12 m\Big(i\frac{dr_x}{d\tau}\Big)^2=-\tfrac12 m\Big(\frac{dr_x}{d\tau}\Big)^2,
 $$
 
-so the Lagrangian becomes $\mathrm{Lag}=-\tfrac12 m(dx/d\tau)^2-V$, and
+so the Lagrangian becomes $\mathrm{Lag}=-\tfrac12 m(dr_x/d\tau)^2-V$, and
 
 $$
 S=\int dr'_t\,\mathrm{Lag}=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
@@ -265,7 +265,7 @@ The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary co
 
 **The trajectories are not differentiable.** Over a time step $\varepsilon$ the free short-time kernel has width $\sqrt{\hbar\varepsilon/m}$, so a trajectory moves a distance of order $\sqrt{\varepsilon}$, not $\varepsilon$. The quantity
 $$
-xdx/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
+r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
 is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle x_jx_k\rangle=(\hbar/m)\min(r'_{t,j},r'_{t,k})$, the two orderings are
 $$
@@ -273,7 +273,7 @@ $$
 \qquad
 \frac{1}{\varepsilon}\big\langle x_j(x_j-x_{j-1})\big\rangle=\frac{\hbar}{m},
 $$
-so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. This is the statement that the fluctuation of $xdx/dr'_t$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $\exp(iS/\hbar)$ in place of the Euclidean weight, converts that to
+so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. This is the statement that the fluctuation of $r_x\,dr_x/dr'_t$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $\exp(iS/\hbar)$ in place of the Euclidean weight, converts that to
 $$
 [x,p]=i\hbar .
 $$

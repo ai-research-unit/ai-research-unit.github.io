@@ -111,9 +111,9 @@ with $i$ running over $x,y,z$ and with $c$ independent of $r'_t$; a time-depende
 **Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial R_t = -(i/c)\partial/\partial r'_t$ and the four-position is written with a single complex coordinate $i c r'_t$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(i c r'_t) = ic\,dr'_t$. Then
 
 $$
-ds^2 = -c(x,y,z)^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2,
+ds^2 = -c(r_x,r_y,r_z)^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2,
 \qquad
-g_{\mu\nu} = \mathrm{diag}\left(-c(x,y,z)^2,\ 1,\ 1,\ 1\right),
+g_{\mu\nu} = \mathrm{diag}\left(-c(r_x,r_y,r_z)^2,\ 1,\ 1,\ 1\right),
 $$
 
 and this metric is genuinely curved whenever $c$ is not affine in the spatial coordinates.

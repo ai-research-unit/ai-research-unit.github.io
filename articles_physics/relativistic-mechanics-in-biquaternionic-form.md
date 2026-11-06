@@ -48,7 +48,7 @@ The displacement $d\tilde R_\varphi$ is a **material element**, and the interval
 **The biquaternion norm on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t = i q'_t$ imaginary and $\vec Q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ real, the biquaternion norm is
 
 $$
-\tilde R_\varphi\tilde R_\varphi^{\natural} = Q_t^2 + |\vec Q|^2 = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2,
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + |\vec Q|^2 = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2,
 $$
 
 which is a real scalar of signature $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.

@@ -105,21 +105,21 @@ $$
 and inserting a resolution of the identity between each pair of factors turns the matrix element into an integral over the intermediate positions:
 
 $$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_t;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
+K(\vec r_f,r'_t;\vec r_i,0)
 =\lim_{N\to\infty}
 \left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3N/2}
-\int\prod_{k=1}^{N-1}d^3x_k\;
-\exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|x_{k+1}\,\vec e_x+y_{k+1}\,\vec e_y+z_{k+1}\,\vec e_z-(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)\right)\right]e_t,
+\int\prod_{k=1}^{N-1}d^3r_k\;
+\exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|\vec r_{k+1}-\vec r_k|^2}{2\varepsilon}-\varepsilon V(\vec r_k)\right)\right]e_t,
 $$
 
-with $\varepsilon=r'_t/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
+with $\varepsilon=r'_t/N$, $\vec r_0=\vec r_i$, $\vec r_N=\vec r_f$. In the continuum limit the sum in the exponent becomes the action $S[\vec r]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
-\boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_t;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
-=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\;\exp(\,iS[x,y,z]/\hbar)\,e_t\;}.
+\boxed{\;K(\vec r_f,r'_t;\vec r_i,0)
+=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\;\exp(\,iS[\vec r]/\hbar)\,e_t\;}.
 $$
 
-The measure $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
+The measure $\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
 
 ## The Free Particle
 

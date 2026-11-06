@@ -7,7 +7,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is 
 The centre is small. Writing $\tilde{Q}=x_0e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$, one finds
 $$
 Z(\mathbb{B})=\bigl\{\tilde{Q}:\tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}\ \ \forall\tilde{Q}_1\bigr\}
-=\bigl\{x_0e_t:\ x_0\in\mathbb{C}\bigr\}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C},
+=\bigl\{Q_te_t:\ Q_t\in\mathbb{C}\bigr\}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C},
 $$
 a **two-real-dimensional** commutative subalgebra, with Hermitian part
 $$
@@ -31,13 +31,13 @@ Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Q}_1=\tilde{Q}_1\t
 $$
 Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_t,\vec e_x,\vec e_y,\vec e_z,i$, an element is central if and only if it commutes with $\vec e_x,\vec e_y,\vec e_z$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_t$ is automatic because $e_t$ is the unit.
 
-**Computation.** Write $\tilde{Q}=x_0e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $x=x_1$, $y=x_2$, $z=x_3$ the pure-quaternion part. For $k=1,2,3$,
+**Computation.** Write $\tilde{Q}=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. For $k=1,2,3$,
 $$
-[\tilde{Q},\vec e_\mu]=[r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec e_\mu]=2\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\times \vec e_\mu ,
+[\tilde{Q},\vec e_\mu]=[\vec Q,\vec e_\mu]=2\,\vec Q\times \vec e_\mu ,
 $$
-where the cross product is that of $\mathbb{R}^3$ under the identification $\vec e_\mu\leftrightarrow$ the $\mu$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},\vec e_\mu]=0$ for all $\mu$, so $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\times \vec e_\mu=0$ for $\mu=1,2,3$. Since $\vec e_x,\vec e_y,\vec e_z$ span $\mathbb{R}^3$, this forces $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z=0$. Hence a central element is a complex multiple of the unit,
+where the cross product is that of $\mathbb{R}^3$ under the identification $\vec e_\mu\leftrightarrow$ the $\mu$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},\vec e_\mu]=0$ for all $\mu$, so $\vec Q\times \vec e_\mu=0$ for $\mu=1,2,3$. Since $\vec e_x,\vec e_y,\vec e_z$ span $\mathbb{R}^3$, this forces $\vec Q=0$. Hence a central element is a complex multiple of the unit,
 $$
-\boxed{\ Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\bigl\{x_0e_t:\ x_0\in\mathbb{C}\bigr\}=\mathbb{C}e_t\cong\mathbb{C}.\ }
+\boxed{\ Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\bigl\{Q_te_t:\ Q_t\in\mathbb{C}\bigr\}=\mathbb{C}e_t\cong\mathbb{C}.\ }
 $$
 Conversely every $x_0e_t$ is central because $e_t$ is the unit and $x_0$ is a complex number, and complex numbers commute with every element. This proves the displayed identification.
 
