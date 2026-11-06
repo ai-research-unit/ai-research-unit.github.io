@@ -177,7 +177,7 @@ The observed light neutrino mass scale, inferred from the atmospheric and solar 
 **The tree-level matching.** The light mass can be derived rather than diagonalised. Take the renormalisable Lagrangian of one generation with a singlet $N_R$,
 
 $$
-\mathcal{L} = y\,\bar{L}\tilde R_\psiN_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
+\mathcal{L} = y\,\bar{L}\tilde R_\Psi N_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
 $$
 
 where $y$ is the Yukawa coupling, $\tilde R_\Psi=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is

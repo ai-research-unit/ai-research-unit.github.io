@@ -391,7 +391,7 @@ where $\tilde{R}_{\Psi,0}$ is the Hamiltonian.
 **Derivation.** We compute the time derivative of $\tilde R_\Psi_{\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde{R}_{\Psi,0}\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde{R}_{\Psi,0}$:
 
 $$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\psid\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde{R}_{\Psi,0}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi\tilde{R}_{\Psi,0}\tilde Q = \tilde Q^{*}[\tilde R_\Psi, \tilde{R}_{\Psi,0}]\tilde Q.
+i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde{R}_{\Psi,0}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi\tilde{R}_{\Psi,0}\tilde Q = \tilde Q^{*}[\tilde R_\Psi, \tilde{R}_{\Psi,0}]\tilde Q.
 $$
 
 Since $\tilde Q(r'_t) = \exp(-i H_{0} r'_t/\hbar)$ is a function of $\tilde{R}_{\Psi,0}$, it **commutes with $\tilde{R}_{\Psi,0}$**. This is what makes the last expression equal to $[\tilde R_\Psi_{\mathrm{H}}, \tilde Q^{*}\tilde{R}_{\Psi,0}\tilde Q] = [\tilde R_\Psi_{\mathrm{H}}, \tilde{R}_{\Psi,0}]$. So

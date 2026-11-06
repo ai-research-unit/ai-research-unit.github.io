@@ -30,7 +30,7 @@ The companion articles supply the pieces:
 A state that evolves under a time-independent Hamiltonian $\tilde R_\Psi$ acquires the phase
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \exp(-\frac{i}{\hbar}\tilde R_\psir'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \exp(-\frac{i}{\hbar}\tilde R_\Psi r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
 \qquad\text{so}\qquad
 \tilde{Ξ}_{\mathrm{sp}}(T) = \exp(-\frac{i}{\hbar}E\,T)\,\tilde{Ξ}_{\mathrm{sp}}(0)
 $$

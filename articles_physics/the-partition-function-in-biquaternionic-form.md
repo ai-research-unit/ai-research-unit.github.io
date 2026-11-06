@@ -154,7 +154,7 @@ and the trace keeps the first and annihilates the second. Three consequences are
 The partition function can be written as the trace of the evolution operator at an **imaginary time**,
 
 $$
-Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=\mathrm{Tr}\,\tilde Q(-i\beta),\qquad \tilde Q(r'_t)=\exp(-i\tilde R_\psir'_t),
+Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=\mathrm{Tr}\,\tilde Q(-i\beta),\qquad \tilde Q(r'_t)=\exp(-i\tilde R_\Psi r'_t),
 $$
 
 the analytic continuation $r'_t\to-i\beta$ of the real-time evolution. This is not a convenience of the biquaternion framework; it is the standard relationship between the thermal trace and imaginary time, and it is the same continuation that makes the Matsubara formalism work.
