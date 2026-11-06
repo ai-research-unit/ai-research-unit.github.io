@@ -4,40 +4,73 @@
 
 These are the conventions of the units, of the marks and of the labels. They are the last of the series because every earlier article depends on them, and they assume the base of *Algebra and Element Conventions* and the operators of *Operator and Calculus Conventions*.
 
-The order is from the physical to the typographical. The SI units come first, with the rule that the coefficients of one element share one unit and with the two writings of the temporal slot. The marks come next, which say what a caret carries and what a subscript carries. Then the labels, every one of them low, and the few of this corpus among them. Then the subscript itself, which counts or names and is never a derivative.
+The order is from the physical to the typographical. The SI units come first, the fundamental quantities told apart from the derived, with the rule that the coefficients of one element share one unit and with the two writings of the temporal slot. The marks come next, which say what a caret carries and what a subscript carries. Then the labels, every one of them low, and the few of this corpus among them. Then the subscript itself, which counts or names and is never a derivative.
 
 ## Physical Units
 
-**A unit element is not a physical unit.** The base $e_t,\vec e_x,\vec e_y,\vec e_z$ of *Algebra and Element Conventions*, §*The Base and Its Units* is algebraic: its structure constants are $0$ or $\pm1$, and the biquaternion norm is a sum of four squares of coefficients. No element of $\mathbb{B}$ carries a metre, a second or a kilogram. A physical unit enters only where an element is **identified** with a physical quantity, and that identification is a convention of the article that makes it, not a property of the algebra. The phrase *unit element* names a basis element and *physical unit* names a convention of measurement; the two are never exchanged.
+**A unit element is not a physical unit.** The base $e_t,\vec e_x,\vec e_y,\vec e_z$ of *Algebra and Element Conventions*, §*The Base and Its Units* is algebraic: its structure constants are $0$ or $\pm1$, and the biquaternion norm is a sum of four squares of coefficients. No element of $\mathbb{B}$ carries a metre, a second or a kilogram. A physical unit enters only where an element is **identified** with a physical quantity, and that identification is a convention of the article that makes it, not a property of the algebra. The phrase *unit element* names a basis element and *physical unit* names a convention of measurement; the two are never exchanged. The word *base* carries both senses in this article, and the context decides: the base of the algebra is the four elements, and a base unit is a unit of the SI.
 
-**The series uses the SI.** Length is measured in metres, time in seconds, mass in kilograms, temperature in kelvin and charge in coulomb. The derived units follow from these, and the ones the articles use are collected here.
+**The series uses the SI.** Length is measured in metres, time in seconds, mass in kilograms, temperature in kelvin and charge in coulomb. Four of the five are base units of the SI. The coulomb is not: the base unit of current is the ampere, and the coulomb is $\mathrm{C}=\mathrm{A\,s}$.
 
-| Quantity | Symbol | Unit |
-|---|---|---|
-| Length | $r_x,r_y,r_z$; $i c r'_t$ in the length coordinate | metre ($\mathrm{m}$) |
-| Time | $r'_t$ in the time coordinate | second ($\mathrm{s}$) |
-| Mass | $m$ | kilogram ($\mathrm{kg}$) |
-| Temperature | $T$ | kelvin ($\mathrm{K}$) |
-| Electric charge | $ϙ$ | coulomb ($\mathrm{C}$) |
-| Speed | $c$, $c_0$ | $\mathrm{m\,s^{-1}}$ |
-| Momentum | $\vec p$ | $\mathrm{kg\,m\,s^{-1}}$ |
-| Energy | $E$ | joule ($\mathrm{J}$) |
-| Action, angular momentum, spin | $S$, $S_0$, $I_\mu$, $\theta$, $\vec L$, $\tilde S_3$ | joule-second ($\mathrm{J\,s}$) |
-| Metric coefficient, time writing | $g_{tt}=-c^2$ | $\mathrm{m^2\,s^{-2}}$ |
-| Inverse length | $\mu=mc/\hbar$ | $\mathrm{m^{-1}}$ |
-| Inverse temperature | $\beta=\hbar/(k_BT)$ | second ($\mathrm{s}$) |
-| Planck constants | $h$, $\hbar$ | joule-second ($\mathrm{J\,s}$) |
-| Boltzmann constant | $k_B$ | $\mathrm{J\,K^{-1}}$ |
-| Gravitational constant | $G$ | $\mathrm{m^3\,kg^{-1}\,s^{-2}}$ |
-| Permittivity and permeability | $\epsilon$, $\mu$ | $\mathrm{F\,m^{-1}}$, $\mathrm{H\,m^{-1}}$ |
+**The word *fundamental* has four senses, and the corpus uses the first.** A quantity can be called fundamental because its dimension is independent, because its unit is a base unit of the SI, because its defining constant is fixed exactly, or because nature supplies it. The four do not agree. The SI has seven base units — metre, second, kilogram, ampere, kelvin, mole, candela — and since 2019 it fixes seven constants: the caesium-133 hyperfine frequency $\Delta\nu_{\mathrm{Cs}}$, the speed of light $c$, the Planck constant $h$, the elementary charge $e$, the Boltzmann constant $k_B$, the Avogadro constant $N_A$ and the luminous efficacy $K_{\mathrm{cd}}$. Every unit, base or not, is realised from those seven. A base unit is therefore a bookkeeping choice, and no unit is fundamental in the sense that nature supplies it. The corpus uses the first sense: a quantity is fundamental when its dimension is one of the five, and any other dimension is a product of powers of them.
 
-**The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi_{\mathrm{scp}}/c$ rather than $\xi_{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
+**The dimension letters stand only in these tables.** The corpus writes a dimension in upright roman — $\mathrm{L}$ for length, $\mathrm{T}$ for time, $\mathrm{M}$ for mass, $\Theta$ for temperature and $\mathrm{Q}$ for charge — and a derived dimension as a product of powers, $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$. Three of the five letters already carry another meaning: $\mathsf M_2$ is the matrix map, $\mathsf T_{\mu\nu}$ the energy–momentum tensor, and $\Theta$ the complex angle of *Algebra and Element Conventions*. A dimension letter therefore stands only in the two tables below, and never in an expression.
+
+**The corpus keeps charge as an independent dimension with a derived unit.** The corpus writes charge and not current, so $\mathrm{Q}$ stays a fifth dimension, independent of the other four, while its unit is built from the ampere. The mole and the candela are not used, and current never appears as a base quantity of its own.
+
+The five fundamental quantities are these.
+
+| Quantity | Symbol in the corpus | Dimension | Unit | How the unit is realised |
+|---|---|---|---|---|
+| Length | $r_x,r_y,r_z$; $i c r'_t$ in the length coordinate | $\mathrm{L}$ | metre ($\mathrm{m}$) | $c=299\,792\,458\ \mathrm{m\,s^{-1}}$, exact |
+| Time | $r'_t$ in the time coordinate | $\mathrm{T}$ | second ($\mathrm{s}$) | $\Delta\nu_{\mathrm{Cs}}=9\,192\,631\,770\ \mathrm{Hz}$, exact |
+| Mass | $m$ | $\mathrm{M}$ | kilogram ($\mathrm{kg}$) | $h=6.626\,070\,15\times10^{-34}\ \mathrm{J\,s}$, exact |
+| Temperature | $T$ | $\Theta$ | kelvin ($\mathrm{K}$) | $k_B=1.380\,649\times10^{-23}\ \mathrm{J\,K^{-1}}$, exact |
+| Electric charge | $ϙ$ | $\mathrm{Q}$ | coulomb ($\mathrm{C}$) | $e=1.602\,176\,634\times10^{-19}\ \mathrm{C}$, exact; the coulomb is $\mathrm{A\,s}$ |
+
+Everything else follows from them. The second table carries the rest of what the articles use, with a status on each row: *derived* means the unit is a product of base units; *defining* means the SI fixes the constant exactly and realises a unit from it; *measured* means the value is measured; *pure number* means the quantity has no unit at all.
+
+| Quantity | Symbol in the corpus | Dimension | Unit | Status | Note |
+|---|---|---|---|---|---|
+| Speed | $c$, $c_0$ | $\mathrm{L}\,\mathrm{T}^{-1}$ | $\mathrm{m\,s^{-1}}$ | defining | exact; the conversion of the temporal slot |
+| Momentum | $\vec p$ | $\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-1}$ | $\mathrm{kg\,m\,s^{-1}}$ | derived | quoted in $\mathrm{MeV}/c$ |
+| Force | $\tilde K_{\mathrm f}$ | $\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}$ | newton ($\mathrm{N}$) | derived | $\mathrm{kg\,m\,s^{-2}}$; four-force per particle |
+| Energy | $E$ | $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$ | joule ($\mathrm{J}$) | derived | $\mathrm{kg\,m^2\,s^{-2}}$; quoted in $\mathrm{eV}$ |
+| Action, angular momentum, spin | $S$, $S_0$, $\vec L$, $\tilde S_k$ | $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-1}$ | joule-second ($\mathrm{J\,s}$) | derived | $\mathrm{kg\,m^2\,s^{-1}}$; see the caution on $S$ |
+| Entropy | $S$ | $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}\,\Theta^{-1}$ | $\mathrm{J\,K^{-1}}$ | derived | the Bekenstein–Hawking value is $A/4$ in Planck units; see the caution on $S$ |
+| Four-potential | $\tilde A$, components $a'_t$ and $\vec A$ | $\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-1}\,\mathrm{Q}^{-1}$ | $\mathrm{V\,s\,m^{-1}}$ | derived | $a'_t$ is in the unit of $\vec A$, so the four coefficients share one unit |
+| Electric field | $\vec E$ | $\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}\,\mathrm{Q}^{-1}$ | $\mathrm{V\,m^{-1}}$ | derived | $\mathrm{kg\,m\,s^{-3}\,A^{-1}}$ |
+| Magnetic field strength | $\vec H$ | $\mathrm{Q}\,\mathrm{L}^{-1}\,\mathrm{T}^{-1}$ | $\mathrm{A\,m^{-1}}$ | derived | the flux density is $\vec B=\mu\vec H$ in tesla |
+| Current density | $\vec J$, four-current $\tilde J$ | $\mathrm{Q}\,\mathrm{L}^{-2}\,\mathrm{T}^{-1}$ | $\mathrm{A\,m^{-2}}$ | derived | $\tilde J=i c\rho\,e_t+\vec J$; the four components share this unit |
+| Field strength | $\tilde F$ | $\mathrm{M}^{1/2}\,\mathrm{L}^{-1/2}\,\mathrm{T}^{-1}$ | $\sqrt{\mathrm{J\,m^{-3}}}$ | derived | $\sqrt{\epsilon}\vec E$ and $\sqrt{\mu}\vec H$ agree in dimension |
+| Energy density, flux | $\tilde W$ | $\mathrm{M}\,\mathrm{L}^{-1}\,\mathrm{T}^{-2}$ | $\mathrm{J\,m^{-3}}$ | derived | $W$ and $\vec S_{\mathrm P}/c$ share one unit |
+| Time writing | $g_{tt}=-c^{2}$ | $\mathrm{L}^{2}\,\mathrm{T}^{-2}$ | $\mathrm{m^2\,s^{-2}}$ | derived | the coefficient on $r'_t$ in the time coordinate; on $Q_\mu$ the metric is $\delta_{\mu\nu}$ |
+| Length, mass scale | $\lambda_m=\hbar/(mc)$ | $\mathrm{L}$ | metre ($\mathrm{m}$) | derived | the reduced Compton wavelength; the only one of the three lengths that belongs to the particle alone, and the one at which relativistic quantum effects begin; its reciprocal $\lambda_m^{-1}=\lambda_m^{-1}$ is the coefficient a mass term carries |
+| Length, momentum | $\lambda_p=\hbar/p$ | $\mathrm{L}$ | metre ($\mathrm{m}$) | derived | the reduced de Broglie wavelength; a property of the state and not of the mass, infinite at rest; the ordinary wavelength is $h/p=2\pi\lambda_p$ |
+| Length, energy | $\lambda_E=\hbar c/E$ | $\mathrm{L}$ | metre ($\mathrm{m}$) | derived | the inverse temporal wave number, $1/k_0$; the shortest of the three, and equal to $\lambda_m$ at rest and to $\lambda_p$ at $m=0$; the three satisfy $E^2/(\hbar^2c^2)=p^2/\hbar^2+\lambda_m^{-2}$, in *The Mass Length Scale of a Massive Particle* |
+| Inverse temperature | $\beta=\hbar/(k_BT)$ | $\mathrm{T}$ | second ($\mathrm{s}$) | derived | the $\hbar$ is carried; $1/(k_BT)$ alone is $\mathrm{J^{-1}}$ |
+| Planck constants | $h$, $\hbar$ | $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-1}$ | joule-second ($\mathrm{J\,s}$) | defining | exact; $\hbar=h/2\pi$ |
+| Boltzmann constant | $k_B$ | $\mathrm{M}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}\,\Theta^{-1}$ | $\mathrm{J\,K^{-1}}$ | defining | exact |
+| Gravitational constant | $G$ | $\mathrm{M}^{-1}\,\mathrm{L}^{3}\,\mathrm{T}^{-2}$ | $\mathrm{m^3\,kg^{-1}\,s^{-2}}$ | measured | not exact; with $c$ and $\hbar$ it sets the Planck scale |
+| Vacuum permittivity | $\epsilon$ | $\mathrm{Q}^{2}\,\mathrm{M}^{-1}\,\mathrm{L}^{-3}\,\mathrm{T}^{2}$ | $\mathrm{F\,m^{-1}}$ | measured | $c^{2}=1/(\epsilon\mu)$ |
+| Vacuum permeability | $\mu$ | $\mathrm{M}\,\mathrm{L}\,\mathrm{Q}^{-2}$ | $\mathrm{H\,m^{-1}}$ | measured | measured since 2019, exact before it |
+| Fine-structure constant | $\alpha$ | $1$ | none | measured | a pure number; $\alpha^{-1}\approx137.036$ |
+| Electron $g$ factor | $g$ | $1$ | none | pure number | $2$ at tree level |
+| Angle | $\theta$ | $1$ | none | pure number | $1\ \mathrm{rad}=1$; an angle, not an action |
+
+**A multiple is the same dimension.** Energies are quoted in electronvolts, $1\ \mathrm{eV}=1.602\,176\,634\times10^{-19}\ \mathrm{J}$, which is exact because $e$ is; momenta in $\mathrm{MeV}/c$; and lengths in femtometres. A prefix, or a division by $c$, changes the number and never the dimension.
+
+**The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries the parameter $a'_t=\xi_{\mathrm{scp}}/c$ rather than $\xi_{\mathrm{scp}}$ so that its four components share the unit of the vector potential. The field strength needs no adjustment: $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is one number, and $\sqrt{\epsilon}\,\vec E$ and $\sqrt{\mu}\,\vec H$ each carry the dimension $\mathrm{M}^{1/2}\,\mathrm{L}^{-1/2}\,\mathrm{T}^{-1}$. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
 
 **The two writings of the temporal slot.** In the length coordinate the material position is $\tilde R_\Phi = i c r'_t\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $ir'_t$, time stays in seconds, and the conversion is carried by the square of the coordinate: $Q_t=i c r'_t$ has $Q_t^2=-c^2{r'_{t}}^2$, and the metric stays the unit metric, $\delta_{\mu\nu}=(1,1,1,1)$. The quadratic form is one and the same, $\langle\tilde R_\Phi\rangle_{\natural}=-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.
 
-**Dimensionless and dimensionful.** A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. A dimensionful constant is a unit conversion and is written with its unit. No dimensionful constant is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires a scale. The metrology says the same thing from the other side. Since the 2019 revision the SI fixes $c$, $h$, the elementary charge and $k_B$ by definition and realises the units from them, while a dimensionless constant such as $\alpha$ has to be measured. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$ — says so locally, and the constant returns wherever a dimensional statement is at issue.
+**Dimensionless and dimensionful.** A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. A dimensionful constant is a unit conversion and is written with its unit. No scale is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires one. The metrology says the same thing from the other side. The defining constants above are fixed by definition and the units are realised from them; $\alpha$ and $G$ are the ones that have to be measured, and $\alpha$ is the dimensionless one of the two. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$, which are the Planck units — says so locally, and the constant returns wherever a dimensional statement is at issue.
 
-**A caution on $\mu$.** The letter $\mu$ names the permeability in $c=1/\sqrt{\epsilon\mu}$ and the inverse Compton length in $\mu=mc/\hbar$, and it is the direction label in $e_\mu$ and $Q_\mu$. The corpus distinguishes the uses by context; an article should not use two of them in one expression.
+**A caution on $S$.** The letter $S$ carries three meanings: the action, the spin $\tilde S_k$, and the entropy of the thermodynamics articles. The action and the spin share the unit $\mathrm{J\,s}$; the entropy is $\mathrm{J\,K^{-1}}$. The subscript and the article separate the three, and an article that uses two of them says which is which.
+
+**A caution on $\mu$.** The letter $\mu$ carries two meanings in the corpus: the permeability in $c=1/\sqrt{\epsilon\mu}$, and the direction label in $e_\mu$ and $Q_\mu$. A third, the inverse length $\mu=\lambda_m^{-1}$, is no longer written. The coefficient of a mass term is $\lambda_m^{-1}$, the reciprocal of the mass length scale $\lambda_m=\hbar/(mc)$ of *The Mass Length Scale of a Massive Particle*, and a text that writes $\mu$ where a mass is meant is using the older spelling. Two uses remain, and an article that needs both says which is which.
+
+**A caution on $\lambda$.** The letter $\lambda$ names a central value and an eigenvalue, the helicity weight $\lambda=\vec u_p\cdot\vec S$ of *Helicity in Biquaternionic Form*, and a free exponent in the notation of §*The Upper and Low Marks*. A length therefore never takes a bare $\lambda$. The corpus has a family of three length subscripts, and each names the quantity the length is computed from: $\lambda_m=\hbar/(mc)$ from the mass, $\lambda_p=\hbar/p$ from the momentum and $\lambda_E=\hbar c/E$ from the total energy. The subscript never names the particle, and no fourth length symbol is introduced for the reciprocals, which are $\lambda_m^{-1}$, $p/\hbar$ and $E/(\hbar c)$.
 
 ## The Upper and Low Marks
 
@@ -148,7 +181,7 @@ The forms a subscript takes are these.
 
 ## Summary
 
-A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $i c r'_t$ in metres, with $ir'_t$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.
+A unit element is not a physical unit. The series uses the SI, and it tells the fundamental quantities from the derived: metre, second, kilogram and kelvin are base units, the coulomb is $\mathrm{A\,s}$ but carries the independent dimension $\mathrm{Q}$ that the corpus needs, and every other unit is derived or is a constant written in these units. No unit is fundamental in the sense that nature supplies it, because every unit is realised from seven defining constants. The dimension letters $\mathrm{L}$, $\mathrm{T}$, $\mathrm{M}$, $\Theta$ and $\mathrm{Q}$ stand only in the two tables of this article. The coefficients of one element share one unit, and the default temporal slot is $i c r'_t$ in metres, with $ir'_t$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion; $S$ is read by its subscript and $\mu$ by context between the permeability and the direction label, the inverse length of a mass being written $\lambda_m^{-1}$.
 
 Every **label** stands in the subscript, the label first in the field and an index already there after a comma, $T_{\mathrm{em},\mu\nu}$. Two of them mark the layer of a glyph: $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element, and $\mathrm{opp}$ marks the opposite algebra, written on an algebra name or on an element that names a tensor factor. Three qualifiers name a variant of an algebra, $\mathrm{spl}$, $\mathrm{red}$, $\mathrm{dln}$, and the corpus writes labels of its own, $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{ret}$, $\mathrm{reg}$, $\mathrm{lor}$, $\mathrm{wkb}$, $\mathrm{epr}$ among them. A label of a common word is lowercase, a label of a name keeps its capital, $\mathrm{Had}$, $\mathrm{CS}$, $\mathrm{LT}$. The index is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels*.
 
@@ -158,10 +191,14 @@ A subscript is written with the underscore and one token. It is a component or a
 
 | Symbol | Meaning |
 |---|---|
-| SI | Metre, second, kilogram, kelvin, coulomb, with the derived units built on them |
+| SI | Metre, second, kilogram and kelvin as base units, and the coulomb, which is $\mathrm{A\,s}$ and not a base unit |
+| $\mathrm{L}$, $\mathrm{T}$, $\mathrm{M}$, $\Theta$, $\mathrm{Q}$ | The five dimensions of the corpus; every other dimension is a product of powers of them |
+| derived, defining, measured, pure number | The statuses of the units table; the units are realised from seven defining constants, so no unit is fundamental in the sense that nature supplies it |
+| $S$ | The action, the spin $\tilde S_k$, and the entropy of the thermodynamics articles; read by the subscript and the article |
 | $i c r'_t$, $\vec q$ | The default material coordinate, time measured in metres |
 | $ir'_t$, $g_{tt}=-c^2$ | The second writing of the temporal slot, time in seconds; stated where used |
-| $\mu$ | Permeability, inverse Compton length $\mu=mc/\hbar$, or direction label; read by context |
+| $\mu$ | Permeability in $c=1/\sqrt{\epsilon\mu}$, or direction label in $e_\mu$ and $Q_\mu$; read by context, and never the inverse length of a mass, which is $\lambda_m^{-1}$ |
+| $\lambda_m=\frac{\hbar}{mc}$, $\lambda_p=\frac{\hbar}{p}$, $\lambda_E=\frac{\hbar c}{E}$ | The mass, momentum and energy lengths, all three lengths and all three reduced; the subscript names the input, $m$, $p$ or $E$, and never the particle; the three satisfy $E^2/(\hbar^2c^2)=p^2/\hbar^2+\lambda_m^{-2}$ |
 | $\mathrm{fop}$ | The Fock-operator mark, the one glyph that is not an element |
 | $\mathrm{opp}$ | The opposite algebra, written on an algebra name or on an element that names a tensor factor |
 | $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{lor}$, $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ | The three-letter labels of a construction or a variant, the last six separating two spellings; the index is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels* |
