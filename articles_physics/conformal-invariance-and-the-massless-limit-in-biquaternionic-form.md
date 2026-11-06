@@ -198,9 +198,9 @@ D_\mu = \sum_\nuT_{\mu\nu}\,x_\nu ,
 $$
 where the second term vanishes by conservation of the improved tensor. The divergence of the dilation current is therefore exactly the trace, and the conservation of the current is exactly the vanishing of the trace: conformal invariance in the field theory and tracelessness of the stress tensor are two statements of one fact. The Noether article's machinery supplies the current once the symmetry is known; what this article adds is the identification of its divergence with the trace and the computation of the trace's value. In the massless case the current is conserved and the dilatation charge
 $$
-Q_D = \int D_0\,d^3x
+Q_D = \int D_0\,d^3r
 $$
-is a constant of the motion; in the massive case the charge is not conserved and its rate of change is $\int\sum_\muT_{\mu\mu}\,d^3x$, proportional to the total mass-weighted field squared. This is what makes conformal invariance a statement about a conserved charge rather than about a solution set alone.
+is a constant of the motion; in the massive case the charge is not conserved and its rate of change is $\int\sum_\muT_{\mu\mu}\,d^3r$, proportional to the total mass-weighted field squared. This is what makes conformal invariance a statement about a conserved charge rather than about a solution set alone.
 
 ## The Trace of the Stress Tensor and the Improvement
 
@@ -233,7 +233,7 @@ A quantum caveat belongs here. The trace of the *renormalised* stress tensor of 
 
 The electromagnetic field is the other window on the same symmetry, and its case is cleaner. The Maxwell action of the action article,
 $$
-S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x = -\frac12\int \mathrm{Re}\,\mathrm{Sc}\bigl(\langle\tilde{F}\rangle_{\natural}\bigr)\,d^4x ,
+S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r = -\frac12\int \mathrm{Re}\,\mathrm{Sc}\bigl(\langle\tilde{F}\rangle_{\natural}\bigr)\,d^4r ,
 $$
 contains no dimensional parameter when written in terms of the field strength alone, so it is invariant under dilations without any massless limit being taken: the photon is massless, and there is no mass to remove. The Maxwell field is conformally invariant in four dimensions, and its improved stress tensor is traceless on shell,
 $$

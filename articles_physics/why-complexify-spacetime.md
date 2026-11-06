@@ -15,7 +15,7 @@ Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/
 In most modern textbooks, the Minkowski interval is written with a metric of signature $(-,+,+,+)$:
 
 $$
-ds^2 = -c^2\,d{r'_{t}}^2 + dx^2 + dy^2 + dz^2.
+ds^2 = -c^2\,d{r'_{t}}^2 + dr_x^2+dr_y^2+dr_z^2.
 $$
 
 The minus sign sits explicitly in the metric. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.
@@ -23,7 +23,7 @@ The minus sign sits explicitly in the metric. This is the standard convention. I
 But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:
 
 $$
-\boxed{\;ds^2 = (ic_0\,dr'_t)^2 + dx^2 + dy^2 + dz^2\;}.
+\boxed{\;ds^2 = (ic_0\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2\;}.
 $$
 
 Here the imaginary unit $i$ multiplies the time coordinate and the vacuum speed of light. The metric is **Euclidean** — all plus signs. The Lorentzian structure is not in the metric; it is in the coordinate. This is the $i c r'_t$ convention.

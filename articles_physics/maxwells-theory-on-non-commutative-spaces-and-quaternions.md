@@ -71,7 +71,7 @@ with $e$ absorbed into $\kappa_{\alpha\beta}$. The quadratic term of $F_{\mu\nu}
 The free Maxwell action on the deformed arena is
 
 $$
-S = -\frac14\int d^4x\, F_{\mu\nu}\star F_{\mu\nu},
+S = -\frac14\int d^4r\, F_{\mu\nu}\star F_{\mu\nu},
 \qquad
 F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu - ie[A_\mu,A_\nu]_M,
 $$

@@ -47,13 +47,13 @@ The Klein–Gordon action for the complex scalar field is the standard relativis
 
 $$
 S[\tilde{Ξ}]
-=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\mu^2\,|\xi|^2\right],
+=\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\mu^2\,|\xi|^2\right],
 $$
 
 with the index summed over the same $Q$ coordinate; in biquaternion form, using $\tilde{Ξ}^{*}=\xi^*e_t$ and $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=|\xi|^2$, this is a central scalar functional,
 
 $$
-S[\tilde{Ξ}]=\int d^4x\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial R_\mu\,\tilde{Ξ}^{*}\,\partial/\partial R_\mu\,\tilde{Ξ}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
+S[\tilde{Ξ}]=\int d^4r\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial R_\mu\,\tilde{Ξ}^{*}\,\partial/\partial R_\mu\,\tilde{Ξ}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
 $$
 
 The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the trace formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
@@ -62,8 +62,8 @@ The equation of motion follows by variation. For a variation $\delta\tilde{Ξ}$ 
 
 $$
 \delta S
-=\frac{1}{2}\int d^4x\left[-\sum_\mu\partial/\partial R_\mu\,\delta\xi^*\,\partial/\partial R_\mu\,\xi-\mu^2\,\delta\xi^*\,\xi\right]
-=\frac{1}{2}\int d^4x\;\delta\xi^*\left[\left(\Box-\mu^2\right)\xi\right],
+=\frac{1}{2}\int d^4r\left[-\sum_\mu\partial/\partial R_\mu\,\delta\xi^*\,\partial/\partial R_\mu\,\xi-\mu^2\,\delta\xi^*\,\xi\right]
+=\frac{1}{2}\int d^4r\;\delta\xi^*\left[\left(\Box-\mu^2\right)\xi\right],
 $$
 
 after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, the stationarity of the action is
@@ -89,7 +89,7 @@ with $|\vec k_n|=(1.3,2.1,0.8)$ along the directions $(0.2,-0.5,0.7)$, $(-0.9,0.
 The quadratic part of the action can be written in a form that displays the algebra. Integrating the kinetic term by parts,
 
 $$
-S[\tilde{Ξ}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right),
+S[\tilde{Ξ}]=\frac{1}{2}\int d^4r\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right),
 $$
 
 so the operator in the exponent is exactly the Klein–Gordon operator whose Green's functions the companion article constructs. The mass shell is where the momentum-space symbol vanishes,
@@ -109,7 +109,7 @@ a level set of the biquaternion norm on the material four-wavevector $\tilde P=i
 The generating functional is
 
 $$
-Z[J]=\int\mathcal{D}\tilde{Ξ}\;\exp\left(iS[\tilde{Ξ}]+i\int d^4x\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{Ξ}\right)\right),
+Z[J]=\int\mathcal{D}\tilde{Ξ}\;\exp\left(iS[\tilde{Ξ}]+i\int d^4r\;\mathrm{Sc}\!\left(\tilde{J}^{*}\tilde{Ξ}\right)\right),
 $$
 
 with a central source $\tilde{J}=J\,e_t$ and a measure $\mathcal{D}\tilde{Ξ}$ on the central-valued configuration space. The correlation functions are the functional derivatives with respect to the source; the normalisation $Z[0]$ is fixed by the requirement that the vacuum expectation of the identity be one. The phase factor is the central $*$-unitary element analysed in the companion article *The Path Integral in Biquaternionic Form*, and the measure is a measure on a space of complex functions, i.e. on a space of pairs of real functions.
@@ -171,7 +171,7 @@ a central scalar times $e_t$, whose closed Yukawa form is given in the companion
 In the continuum the same completion of the square gives
 
 $$
-\boxed{\;Z[J]=Z[0]\exp\left(\frac{i}{2}\int d^4x\,d^4y\;J(x)\,G(x-y)\,J(y)\right)\;},
+\boxed{\;Z[J]=Z[0]\exp\left(\frac{i}{2}\int d^4r\,d^4y\;J(x)\,G(x-y)\,J(y)\right)\;},
 $$
 
 where $G$ is the Green's function of $(\Box-\mu^2)$, fixed by the boundary condition ($i\epsilon$ prescription) that the Gaussian's analytic continuation requires. The free two-point function is $G$ up to the overall normalisation convention fixed in the companion article on the propagator, where the same kernel is obtained as the inverse of the differential operator. The two routes agree; the lattice computation is the rigorous version of the statement, and the continuum formula is its formal limit. The determinant $Z[0]$ is the inverse square root of the operator determinant, a central scalar; it is the free vacuum amplitude, and the phase of its analytic continuation is the zero-point phase.
@@ -230,7 +230,7 @@ On $\mathbb{H}_{\mathbb{B}}$ the biquaternion norm is positive definite, and thi
 $$
 S[\tilde{Ξ}]\;\longmapsto\;iS_E[\tilde{Ξ}],
 \qquad
-S_E[\tilde{Ξ}]=\frac{1}{2}\int d^4x_E\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(-\Delta_E+\mu^2\right)\tilde{Ξ}\right),
+S_E[\tilde{Ξ}]=\frac{1}{2}\int d^4r_E\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(-\Delta_E+\mu^2\right)\tilde{Ξ}\right),
 $$
 
 and the phase factor becomes a decaying weight,
@@ -282,8 +282,8 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 The Klein–Gordon path integral is the functional integral over central-valued fields, $\tilde{Ξ}=\xi e_t$ with $\xi$ complex, weighted by the central phase $\exp(iS)$ with the action
 
 $$
-S[\tilde{Ξ}]=\frac{1}{2}\int d^4x\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right)
-=\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\mu^2|\xi|^2\right].
+S[\tilde{Ξ}]=\frac{1}{2}\int d^4r\;\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\left(\Box-\mu^2\right)\tilde{Ξ}\right)
+=\int d^4r\left[-\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\xi^*\,\partial/\partial R_\mu\,\xi-\frac{1}{2}\mu^2|\xi|^2\right].
 $$
 
 Its variation gives the Klein–Gordon equation $(\Box-\mu^2)\xi=0$, verified on a superposition of three on-shell modes to a residual of order $10^{-7}$. The generating functional is defined with a central source, and the free Gaussian is evaluated exactly on a finite lattice,

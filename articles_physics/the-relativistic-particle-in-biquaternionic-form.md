@@ -9,7 +9,7 @@ Two facts from the algebra organize the whole account, and they are worth statin
 **The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dr'_t)^2 +dx^2+dy^2+dz^2 = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article *Algebra and Element Conventions*, and no metric is introduced here beyond them.
@@ -35,13 +35,13 @@ $$
 whose biquaternion norm is
 
 $$
-\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = -c^2d{r'_{t}}^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$
 
 Off the null set, $\langle d\tilde R_\varphi\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
 
 $$
-\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde R_\varphi\rangle_{\natural} = c^2d{r'_{t}}^2 -(dx^2+dy^2+dz^2) \;}
+\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde R_\varphi\rangle_{\natural} = c^2d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) \;}
 \qquad\Longrightarrow\qquad
 d\tau = dr'_t\sqrt{1 - \frac{\vec v^2}{c^2}},
 \qquad \vec v = \frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dr'_t} .
@@ -316,7 +316,7 @@ The relativistic particle is a timelike worldline in the material sector $\mathb
 $$
 \tilde R_\varphi(\tau) = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
-d\tau^2 = -\frac{1}{c^2}\langle d\tilde R_\varphi\rangle_{\natural} = d{r'_{t}}^2 - \frac{dx^2+dy^2+dz^2}{c^2},
+d\tau^2 = -\frac{1}{c^2}\langle d\tilde R_\varphi\rangle_{\natural} = d{r'_{t}}^2 - \frac{dr_x^2+dr_y^2+dr_z^2}{c^2},
 $$
 
 along which the four-velocity

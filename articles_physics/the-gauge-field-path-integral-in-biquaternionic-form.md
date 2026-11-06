@@ -22,8 +22,8 @@ The vacuum amplitude for the free Maxwell field is
 $$
 Z = \int\mathcal{D}\tilde{A}\;\exp(iS[\tilde{A}]),
 \qquad
-S[\tilde{A}] = \int d^4x\left(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
-= -\tfrac12\int d^4x\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
+S[\tilde{A}] = \int d^4r\left(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
+= -\tfrac12\int d^4r\;\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde{F}\tilde{F}^{\natural}\right),
 $$
 
 the second form being the bilinear writing of the companion article. The action depends on $\tilde{A}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
@@ -103,7 +103,7 @@ The delta functional is represented by introducing the Nakanishi–Lautrup field
 
 $$
 \delta\!\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega\right)
-= \int\mathcal{D}B\;\exp(i\int d^4x\,B(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega)),
+= \int\mathcal{D}B\;\exp(i\int d^4r\,B(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega)),
 $$
 
 and the $\omega$-dependence is removed by averaging over $\omega$ with the Gaussian weight
@@ -217,7 +217,7 @@ The transverse projector is the biquaternion object that the algebra supplies wi
 The Gaussian integral is fixed in full by adding a source. With the gauge fixed, the action is $S_2+\int\sum_\mu J_\mu A_\mu$ and the integral
 
 $$
-Z[J] = \int\mathcal{D}\tilde{A}\;\exp\left(iS_2[\tilde{A}]+i\int d^4x\,\sum_\mu J_\mu A_\mu\right)
+Z[J] = \int\mathcal{D}\tilde{A}\;\exp\left(iS_2[\tilde{A}]+i\int d^4r\,\sum_\mu J_\mu A_\mu\right)
 = \left(\det K\right)^{-1/2}\exp\left(-\frac{i}{2}\int\frac{d^4p}{(2\pi)^4}\sum_{\mu,\nu}J_\mu(-p)D_{\mu\nu}(p)J_\nu(p)\right)
 $$
 
@@ -278,7 +278,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{D}\tilde{A}$ | Measure on $\mathbb{M}_-$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\vec A$ in components |
-| $S[\tilde{A}]=\int d^4x\,(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
+| $S[\tilde{A}]=\int d^4r\,(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
 | $\tilde{A}^\Gamma=\tilde{A}-\tilde{\nabla}\Gamma$, $S[\tilde{A}^\Gamma]=S[\tilde{A}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
 | $G[\tilde{A}]=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega$ | Gauge-fixing condition |

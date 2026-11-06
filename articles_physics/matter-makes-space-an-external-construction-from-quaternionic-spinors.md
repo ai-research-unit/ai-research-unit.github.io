@@ -164,7 +164,7 @@ where a contorsion must have dimension $M$, the dimension of an inverse length. 
 
 **The constrained action does not constrain.** The master action of Section 5 is
 $$
-S=\int d^4x\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu \mathrm{Riem}_{\mu\nu ab}(e,K)
+S=\int d^4r\, e\Bigl[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu \mathrm{Riem}_{\mu\nu ab}(e,K)
 +\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\,iC^a e_a{}^\mu D_\mu(e,K)\,\tilde{Ξ}^{\mathrm{sp}}\bigr\rangle-m\,\bigl\langle\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}^{\mathrm{sp}}\bigr\rangle+\mathcal{L}_{\text{constr}}\Bigr],
 $$
 with $C^a=g^{ab}C_b$ raised through the metric and the curvature pair written world indices first, in the corpus's order, and it adds the constraint Lagrangian
@@ -279,7 +279,7 @@ The rest of that section is the retarded kernel and the bilocal action
 $$
 K(x-y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
 \qquad
-\Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
+\Delta S_K=\tfrac12\int d^4r\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
 \qquad \frac{\partial}{\partial r_x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
 $$
 The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated". The corpus's route to causal asymmetry, in *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and *Thermal Time and the Modular Flow in the Biquaternion Framework*, does not use Kozyrev and does not depend on this section.

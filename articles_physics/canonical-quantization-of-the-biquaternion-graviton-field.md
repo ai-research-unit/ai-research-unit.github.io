@@ -30,7 +30,7 @@ The article is organized as follows. The linearized field and its gauge symmetry
 The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\delta_{\mu\nu}+h_{\mu\nu}$, the action is
 
 $$
-S = \frac12\int d^4x\left(\sum_{\mu,\nu,\rho}\partial/\partial R_\mu h_{\nu\rho}\partial/\partial R_\mu h_{\nu\rho}
+S = \frac12\int d^4r\left(\sum_{\mu,\nu,\rho}\partial/\partial R_\mu h_{\nu\rho}\partial/\partial R_\mu h_{\nu\rho}
 -2\sum_{\mu,\nu,\rho}\partial/\partial R_\mu h_{\mu\nu}\partial/\partial R_\rho h_{\nu\rho}
 +2\sum_{\mu,\nu}\partial/\partial R_\mu h_{\mu\nu}\partial/\partial R_\nu h
 -\sum_\mu\partial/\partial R_\mu h\,\partial/\partial R_\mu h\right),

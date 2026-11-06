@@ -28,7 +28,7 @@ $$
 \tilde{Ξ}(\tilde R_\varphi)=\xi(\tilde R_\varphi)\,e_t,\qquad \xi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
@@ -181,14 +181,14 @@ The obstruction to anything more is worth stating precisely, because it distingu
 The Hamiltonian density is the time–time component of the canonical energy–momentum tensor, and in natural units
 
 $$
-H=\int d^3x\left(\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi^{\mathrm{fop}}/\partial r'_t+\nabla\xi^{\mathrm{fop}\dagger}\cdot\nabla\xi^{\mathrm{fop}}+\mu^2\xi^{\mathrm{fop}\dagger}\xi^{\mathrm{fop}}\right).
+H=\int d^3r\left(\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi^{\mathrm{fop}}/\partial r'_t+\nabla\xi^{\mathrm{fop}\dagger}\cdot\nabla\xi^{\mathrm{fop}}+\mu^2\xi^{\mathrm{fop}\dagger}\xi^{\mathrm{fop}}\right).
 $$
 
 Substituting the mode expansion and using the commutators gives, before normal ordering,
 
 $$
 H=\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}+{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right)
-+\underbrace{\int d^3x\int\!\frac{d^3p}{(2\pi)^3}E_{\vec p}}_{\text{c-number}} .
++\underbrace{\int d^3r\int\!\frac{d^3p}{(2\pi)^3}E_{\vec p}}_{\text{c-number}} .
 $$
 
 The c-number is quartically divergent and proportional to the volume, $V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$: it is the zero-point energy of the two real fields that make up the complex one, each contributing $\tfrac12V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$, equivalently $(2\pi)^3\delta^{(3)}(0)\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ with $(2\pi)^3\delta^{(3)}(0)=V$. **Normal ordering** removes it and gives

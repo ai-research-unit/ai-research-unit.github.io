@@ -200,7 +200,7 @@ $$
 
 where $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, $\mathcal{Q}_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
 
-**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dr'_t = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dr'_t = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{r'_{t}}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
+**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3r$ is the total mass–energy; it is conserved, $dM/dr'_t = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3r$ has $dd_{i}/dr'_t = \int\rho\,v_i\,d^3r = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/d{r'_{t}}^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
 
 **The power.** The radiated power, averaged over a period, is
 
@@ -208,7 +208,7 @@ $$
 \boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 \right\rangle\;},
 $$
 
-with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,
+with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3r$,
 
 $$
 P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/d{r'_{t}}^3 d^3I_{ij}/d{r'_{t}}^3 - \tfrac{1}{3}\left(d^3I_{kk}/d{r'_{t}}^3\right)^2 \right\rangle,
@@ -334,7 +334,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $k_\mu = (\omega/c)(1,0,0,1)$, $-k_0^2+k_1^2+k_2^2+k_3^2 = 0$ | Wave vector along $+z$ and its null condition |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$, $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{Q}_{3,\mu\nu} = \tfrac12\sum_{\rho,\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
-| $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
+| $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3r$ | Traceless (reduced) quadrupole moment |
 | $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2$, $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ | Quadrupole amplitude and power |
 | $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
 

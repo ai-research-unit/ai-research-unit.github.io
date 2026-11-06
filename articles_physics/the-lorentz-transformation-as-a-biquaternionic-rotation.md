@@ -19,13 +19,13 @@ The conventions are those of the companion articles: the biquaternion algebra is
 The foundation of the biquaternion formulation of the Lorentz transformation is the $i c r'_t$ convention. The Minkowski interval is written
 
 $$
-ds^2 = -c^2\,d{r'_{t}}^2 + dx^2 + dy^2 + dz^2.
+ds^2 = -c^2\,d{r'_{t}}^2 + dr_x^2+dr_y^2+dr_z^2.
 $$
 
 With the substitution $x_0= i c r'_t$, the interval becomes
 
 $$
-ds^2 = (ic\,dr'_t)^2 + dx^2 + dy^2 + dz^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
+ds^2 = (ic\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
 $$
 
 This is the **Euclidean** quadratic form in the four real variables $(x_0, x_1, x_2, x_3)$. The Lorentzian signature has been absorbed into the **complex structure** of the time coordinate.

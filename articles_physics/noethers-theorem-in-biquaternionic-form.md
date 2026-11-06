@@ -53,7 +53,7 @@ $$
 
 ### The Field
 
-The relativistic scalar field of the framework is the complex biquaternion field $\tilde{Ξ} = \xi^{\mathrm{scl}}\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\xi^{\mathrm{scl}}$ a complex scalar function. Its action is $S[\tilde{Ξ}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density
+The relativistic scalar field of the framework is the complex biquaternion field $\tilde{Ξ} = \xi^{\mathrm{scl}}\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\xi^{\mathrm{scl}}$ a complex scalar function. Its action is $S[\tilde{Ξ}] = \int \mathcal{L}\,d^4r$ with the real Lagrangian density
 
 $$
 \mathcal{L} = +\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right] + \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right].

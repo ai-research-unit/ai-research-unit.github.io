@@ -91,8 +91,8 @@ A clock is a physical system that measures the interval along its own worldline.
 
 $$
 c\,d\tau = \sqrt{-\,\langle d\tilde R_\varphi\rangle_{\natural}}
-= \sqrt{-\left(ic\,dr'_t\right)^2 -(dx^2+dy^2+dz^2)}
-= \sqrt{c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2)},
+= \sqrt{-\left(ic\,dr'_t\right)^2 -(dr_x^2+dr_y^2+dr_z^2)}
+= \sqrt{c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2)},
 $$
 
 the positive root being taken because $d\tilde R_\varphi$ is timelike along a physical worldline, so that $\langle d\tilde R_\varphi\rangle_{\natural} < 0$ and $-\langle d\tilde R_\varphi\rangle_{\natural} > 0$. Factoring the coordinate time,

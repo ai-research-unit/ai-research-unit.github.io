@@ -28,9 +28,9 @@ The article is organised as follows. The next section treats the field as an ope
 Quantization replaces the classical field by an operator-valued distribution. For a test function $f$ on spacetime, the smeared field is
 
 $$
-\tilde{Ξ}^{\mathrm{fop}}(f)=\int d^4x\,f(x)\,\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi),
+\tilde{Ξ}^{\mathrm{fop}}(f)=\int d^4r\,f(x)\,\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi),
 \qquad
-\tilde{Ξ}^{\mathrm{fop}}(f)^\dagger=\int d^4x\,f^*(x)\,\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)^{*},
+\tilde{Ξ}^{\mathrm{fop}}(f)^\dagger=\int d^4r\,f^*(x)\,\tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)^{*},
 $$
 
 and it is this smeared object, not the point value, that is a well-defined operator on the Fock space. The point value is recovered formally as $f\to\delta^{(4)}(x-x_0)$. The field is unbounded, as any field with an infinite ladder must be, and its domain is the finite-particle subspace of the Fock space.
@@ -211,7 +211,7 @@ For the free scalar the ground-state functional is an explicit Gaussian. With th
 
 $$
 \tilde{Ξ}^{\mathrm{sp}}_0[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
-=\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
+=\exp\!\left(-\frac{1}{2}\int d^3r\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$
 
 where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}^{\mathrm{sp}}[\xi_f,r'_{t,f}]=\int\mathcal{D}\xi_i\,K(\xi_f,r'_{t,f};\xi_i,r'_{t,i})\tilde{Ξ}^{\mathrm{sp}}[\xi_i,r'_{t,i}]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\tilde{Ξ}^{\mathrm{sp}}[\xi]=\tilde{Ξ}^{\mathrm{sp}}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.

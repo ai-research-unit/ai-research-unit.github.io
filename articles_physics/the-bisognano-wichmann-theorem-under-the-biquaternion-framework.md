@@ -89,7 +89,7 @@ which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose 
 
 **No such flow exists for a general region.** For a region $O$ that is not a wedge, there is in general no Killing vector of Minkowski space whose flow preserves $O$, and the modular Hamiltonian $K_O=-\log\Delta_O$ is not a geometric generator: it is a nonlocal operator on the region, not an integral of a local current against a Killing vector. The contrast is stark already in the vacuum. For a wedge the modular Hamiltonian is the boost $K_{\mathrm{boost}}$; for a ball of radius $R$ in a conformal field theory it is the Casini–Huerta–Myers operator
 $$
-K_{\mathrm{ball}} = 2\pi\int_{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|<R}\frac{R^2-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2R}\,T_{00}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,d^3x,
+K_{\mathrm{ball}} = 2\pi\int_{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|<R}\frac{R^2-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{2R}\,T_{00}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,d^3r,
 $$
 a smeared energy density with a position-dependent weight, which is local in a CFT but is not the generator of a spacetime symmetry. In a general quantum field theory the ball modular Hamiltonian is not even local. The wedge is the case in which the modular Hamiltonian is a symmetry generator, and the theorem is a statement about that case.
 

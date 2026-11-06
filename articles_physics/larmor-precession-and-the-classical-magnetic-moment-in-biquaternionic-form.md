@@ -17,7 +17,7 @@ The conventions are those of the foundational articles. The biquaternion algebra
 For a steady current distribution of density $\vec j(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the **magnetic moment** is
 
 $$
-\vec\mu = \frac{1}{2}\int \vec r\times\vec j\,d^3x .
+\vec\mu = \frac{1}{2}\int \vec r\times\vec j\,d^3r .
 $$
 
 For a planar loop carrying current $I$ and bounding a vector area $\vec A$, the integral gives the elementary result
@@ -63,20 +63,20 @@ $$
 The classical moment of a body in rigid rotation is the case that fixes the gyromagnetic ratio. If the body rotates with angular velocity $\vec\omega$ and carries charge density $\rho_c$, the local current is $\vec j = \rho_c\,\vec\omega\times\vec r$, and the moment is
 
 $$
-\vec\mu = \frac{1}{2}\int \rho_c(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3x
+\vec\mu = \frac{1}{2}\int \rho_c(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3r
 = \frac{1}{2}\,\mathcal{M}\,\vec\omega,
 $$
 
 where
 
 $$
-\mathcal{M}_{ij} = \int \rho_c(\vec r)\left(r^2\delta_{ij} - r_i r_j\right)d^3x
+\mathcal{M}_{ij} = \int \rho_c(\vec r)\left(r^2\delta_{ij} - r_i r_j\right)d^3r
 $$
 
 is the **charge inertia tensor**, the charge-weighted analogue of the mass inertia tensor
 
 $$
-I_{ij} = \int \rho_m(\vec r)\left(r^2\delta_{ij} - r_i r_j\right)d^3x .
+I_{ij} = \int \rho_m(\vec r)\left(r^2\delta_{ij} - r_i r_j\right)d^3r .
 $$
 
 The mechanical angular momentum is $\vec L = I\,\vec\omega$. The two tensors are the entire classical input of the gyromagnetic problem: whether the ratio of the moment to the angular momentum is the orbital value $ϙ/2m$ or something else is decided by whether $\mathcal{M}$ is proportional to $I$. That question is taken up in the article *The Classical Origin of g = 2 in Biquaternionic Form*; here it is enough to record that the moment of a rigid rotor is a pure real quaternion like any other axial vector.

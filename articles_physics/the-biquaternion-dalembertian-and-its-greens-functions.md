@@ -105,13 +105,13 @@ whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion
 
 The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
-\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4x ,
+\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
 $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial R_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4x
-= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4x .
+= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
+= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
 $$
 The algebraic identity
 $$
@@ -177,7 +177,7 @@ G_{\mathrm{inv}}(\tilde R_\varphi) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
 -\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\varphi)\;}.
 $$
-The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $i c r'_t$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
+The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4r$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $i c r'_t$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
 $$
 G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
 $$

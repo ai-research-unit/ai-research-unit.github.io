@@ -109,7 +109,7 @@ The **real part** of $\langle d\tilde{R}\rangle_{\natural} = \sum_\mu (dR_\mu)^2
 Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde R=d\tilde R_\varphi$ and only $dr'_t$ and the $dr_k$ are non-zero,
 
 $$
-\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural} = -c^2(dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -c^2\,d{r'_{t}}^2 + dx^2 + dy^2 + dz^2\;},
+\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural} = -c^2(dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -c^2\,d{r'_{t}}^2 + dr_x^2+dr_y^2+dr_z^2\;},
 $$
 
 the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\psi$ and only $dr_t$ and the $dr'_k$ are non-zero,
@@ -121,7 +121,7 @@ $$
 the mirror interval of signature $(1,3)$. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde{R}\rangle_{\natural} = -\langle\tilde{R}\rangle_{\natural}$. In both cases the null cone — the zero divisor set, discussed in the companion articles — has the same two interpretations:
 
 $$
-\mathbb{M}_-:\;\; (dr'_t)^2 = dr_x^2 + dr_y^2 + dr_z^2 \iff c^2d{r'_{t}}^2 =dx^2+dy^2+dz^2, \qquad
+\mathbb{M}_-:\;\; (dr'_t)^2 = dr_x^2 + dr_y^2 + dr_z^2 \iff c^2d{r'_{t}}^2 =dr_x^2+dr_y^2+dr_z^2, \qquad
 \mathbb{M}_+:\;\; dr_t^2 = (dr'_x)^2 + (dr'_y)^2 + (dr'_z)^2 \iff c^2{dt}^2 = {dx'}^2+{dy'}^2+{dz'}^2 .
 $$
 

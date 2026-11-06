@@ -98,7 +98,7 @@ For this matrix and source, $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{
 
 For the central-scalar action
 $$
-S[\tilde{Ξ}]=\int d^4x\;\Big\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle+S_{\mathrm{int}}[\tilde{Ξ}],
+S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\Big\rangle+S_{\mathrm{int}}[\tilde{Ξ}],
 \qquad
 K^{\mathrm{kin}}=\Box-m^2 ,
 $$
@@ -136,7 +136,7 @@ of *The Dirac Equation in Biquaternionic Form*. The variation of the fermionic a
 
 Let $Q$ be a derivation generating a one-parameter group of transformations of the field, $\delta\tilde{Ξ}=Q\tilde{Ξ}$, and suppose that the action is invariant in the local sense that
 $$
-Q S=\int d^4x\;\langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)
+Q S=\int d^4r\;\langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)
 $$
 for some current $\tilde J$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
@@ -145,13 +145,13 @@ $$
 $$
 where the second equality uses the **invariance of the measure**, $\int\mathcal{D}\tilde{Ξ}\,Q(\;\cdot\;)=0$ — the assumption that the measure, and not only the action, is invariant. Then
 $$
-\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4x\,\langle\tilde\nabla,\tilde J\rangle_{\natural}\Big\rangle=0 .
+\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4r\,\langle\tilde\nabla,\tilde J\rangle_{\natural}\Big\rangle=0 .
 $$
 For $F=1$ this is the statement that the current is conserved inside the vacuum:
 $$
 \Big\langle\,\langle\tilde\nabla,\tilde J\rangle_{\natural}(r_x)\Big\rangle=0 .
 $$
-For $F$ a product of fields the identity relates the divergence of the current to the variation of the product, and when $Q$ is a local generator, $Q=\int d^4x\,q(x)$, the identity holds locally as
+For $F$ a product of fields the identity relates the divergence of the current to the variation of the product, and when $Q$ is a local generator, $Q=\int d^4r\,q(x)$, the identity holds locally as
 $$
 \boxed{\;\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,\big\langle j_\mu(r_x)\,F\big\rangle
 =-\big\langle q(r_x)F\big\rangle+\text{contact terms}\;},

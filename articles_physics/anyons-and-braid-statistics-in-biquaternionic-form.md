@@ -119,7 +119,7 @@ With the linking number of a single full loop verified to be $\pm1$ for the Hopf
 The field theory whose solitons and quasiparticles carry fractional statistics is the Chern–Simons theory. In $2+1$ dimensions the gauge field admits the topological term
 
 $$
-S_{\mathrm{CS}} = \frac{k}{4\pi}\int d^3x\;\varepsilon_{\mu\nu\rho}A_\mu\partial/\partial x_\nu A_\rho ,
+S_{\mathrm{CS}} = \frac{k}{4\pi}\int d^3r\;\varepsilon_{\mu\nu\rho}A_\mu\partial/\partial x_\nu A_\rho ,
 $$
 
 with $k$ the level and $\varepsilon_{\mu\nu\rho}$ the Levi-Civita symbol, $\varepsilon_{012}=+1$; the lower-index symbol is the same array, so the term is unchanged. The term is gauge invariant (up to a surface term) and metric independent: it involves no metric, so it defines a topological field theory, with no local propagating degrees of freedom. Its physical content is entirely in the behavior of Wilson loops, which are the observables of the theory.

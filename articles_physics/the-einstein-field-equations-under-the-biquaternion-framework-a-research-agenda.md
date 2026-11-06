@@ -140,7 +140,7 @@ To these a fourth, methodological reason should be added. The framework's indepe
 The central question is settled by producing, or ruling out, a specific object. The object is a **biquaternion-valued action functional of the frame and the connection**,
 
 $$
-S[\tilde{E}_\mu, \vec\Gamma_\mu] = \int \mathcal{L}\left(\tilde{E}_\mu, \vec\Gamma_\mu, \partial/\partial R_\mu\,\tilde{E}_\nu, \partial/\partial R_\mu\,\vec\Gamma_\nu\right) d^4x,
+S[\tilde{E}_\mu, \vec\Gamma_\mu] = \int \mathcal{L}\left(\tilde{E}_\mu, \vec\Gamma_\mu, \partial/\partial R_\mu\,\tilde{E}_\nu, \partial/\partial R_\mu\,\vec\Gamma_\nu\right) d^4r,
 $$
 
 in which $\tilde{E}_\mu \in \mathbb{M}_-$ is the frame field, $\vec\Gamma_\mu$ is a connection valued in the six-dimensional Lie subspace $\mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$, and the Lagrangian density $\mathcal{L}$ is built from the algebra's own operations — the biquaternion product, the quaternion conjugate, the scalar part $\mathrm{Sc}$, and the biquaternion derivative $\tilde{\nabla}$ — together with the curvature two-form of $\vec\Gamma_\mu$. The pair $(\tilde{E}_\mu, \vec\Gamma_\mu)$ is the natural choice because it is exactly what the algebra can carry: the frame as an $\mathbb{M}_-$-valued one-form, the connection as a Lie-subspace-valued one-form, and their two-sided covariant derivative $D_\mu\tilde{Q} = \partial/\partial R_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ as the derivative that respects the algebra's action. This is the Palatini structure written in the framework's notation, and the framework's own objects are already in place for it; what is missing is the density.

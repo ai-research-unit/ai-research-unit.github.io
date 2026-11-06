@@ -295,7 +295,7 @@ In $\mathbb{B}\cong M_2(\mathbb{C})$ every element is a finite matrix; there is 
 
 For a general region $V$ of Minkowski space, the modular Hamiltonian of the vacuum is **not** a local operator. Two equivalent symptoms are standard. First, it is not expressible as a smeared local field over $V$,
 $$
-\tilde{K}^{\mathrm{mod}}_{V}\ \not\approx\ \int_V f(x)\,\mathcal O(x)\,d^3x ,
+\tilde{K}^{\mathrm{mod}}_{V}\ \not\approx\ \int_V f(x)\,\mathcal O(x)\,d^3r ,
 $$
 for any local operator $\mathcal O$ and weight $f$; for a free field it contains bilocal terms, quadratic in the field at two separated points, and the obstruction to removing them is physical rather than technical. Second, and more invariantly, the modular flow $\sigma_{r'_{t}}$ of a general region does **not** map $\mathcal A(V)$ to itself: it is not a geometric flow of the region, and an operator localized in $V$ is, under the flow, spread outside it. This is the precise sense in which $\tilde{K}^{\mathrm{mod}}_{V}$ is nonlocal — not that it fails to be an operator, but that it is not tied to the local algebra of $V$ the way a Hamiltonian density is.
 

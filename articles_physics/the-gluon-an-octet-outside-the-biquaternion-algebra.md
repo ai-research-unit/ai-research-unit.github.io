@@ -40,7 +40,7 @@ We use the conventions of the companion articles: the algebra, the units, the se
 
 Quantum chromodynamics is the gauge theory of the group $SU(3)$ with coupling $g_s$, whose gauge fields are eight massless vectors $G_{\mu a}$, $a=1,\dots,8$, one for each generator $\lambda_a/2$ of $\mathrm{SU}(3)$. The action is
 $$
-S_{\mathrm{QCD}}=-\frac14\int d^4x\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
+S_{\mathrm{QCD}}=-\frac14\int d^4r\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
 \qquad
 G_{\mu\nu a}=\frac{\partial}{\partial R_\mu}G_{\nu a}-\frac{\partial}{\partial R_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
 $$
@@ -241,7 +241,7 @@ The interpretation of the strong-sector results is not this article's. Confineme
 
 The gluon is the massless spin-one gauge boson of $SU(3)$, eightfold degenerate in the adjoint representation, with the action
 $$
-S_{\mathrm{QCD}}=-\frac14\int d^4x\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
+S_{\mathrm{QCD}}=-\frac14\int d^4r\,\sum_a G_{\mu\nu a}G_{\mu\nu a},
 \qquad
 G_{\mu\nu a}=\frac{\partial}{\partial R_\mu}G_{\nu a}-\frac{\partial}{\partial R_\nu}G_{\mu a}+g_s\sum_{b,c}f_{abc}G_{\mu b}G_{\nu c} ,
 $$

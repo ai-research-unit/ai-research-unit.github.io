@@ -7,7 +7,7 @@ The preceding articles of this subcategory treat the particle's kinematics, the 
 The organizing fact is that in a Lagrangian field theory the stress–energy tensor is not an independent input. It is the Noether current of translation invariance of the action,
 
 $$
-S[\tilde{Ξ}^{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4x ,
+S[\tilde{Ξ}^{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
 $$
 
 so that the same action that yields the field equations through the Euler–Lagrange equations also yields the ten components of $T_{\mu\nu}$ through Noether's theorem, and the conservation law
@@ -37,9 +37,9 @@ The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},
 The action of a field theory is a functional of the field and its first derivatives,
 
 $$
-S = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4x ,
+S = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
 \qquad
-d^4x = c\,dr'_t\,dx\,dy\,dz ,
+d^4r = c\,dr'_t\,dr_x\,dr_y\,dr_z ,
 $$
 
 and the field equation is its stationarity condition. For each field component $\tilde{Ξ}^{\mathrm{sp}}_a$ the **Euler–Lagrange equation** is
@@ -87,7 +87,7 @@ and it is this sign that makes the energy density of the next section positive. 
 For the field strength $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$ the free action is
 
 $$
-S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \qquad
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural} ,
 $$
@@ -98,7 +98,7 @@ $$
 \sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0 ,
 $$
 
-and adding the minimal-coupling term $S_{\mathrm{int}}=-\int \sum_\nu A_\nu J_\nu\,d^4x$ with the four-current $J_\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation
+and adding the minimal-coupling term $S_{\mathrm{int}}=-\int \sum_\nu A_\nu J_\nu\,d^4r$ with the four-current $J_\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation
 
 $$
 \tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J},
@@ -168,7 +168,7 @@ $$
 is the statement that the four-momentum
 
 $$
-P_\nu = \frac{1}{c}\int T_{t\nu}\,d^3x
+P_\nu = \frac{1}{c}\int T_{t\nu}\,d^3r
 $$
 
 is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.
@@ -351,7 +351,7 @@ $$
 has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{Ξ}=0$, and the electromagnetic action
 
 $$
-S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \qquad
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 $$
@@ -390,12 +390,12 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; the unit metric on $\mathbb{C}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
-| $S=\int\mathcal{L}\,d^4x$ | Action; $\mathcal{L}$ the Lagrangian density |
+| $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |
 | $\mathcal{L}_\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12\mu^2\tilde{Ξ}\tilde{Ξ}^{\natural}$ | Scalar Lagrangian |
 | $\mu=mc/\hbar$ | Scalar mass parameter |
 | $(\Box-\mu^2)\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
-| $S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4x$ | Electromagnetic action |
+| $S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4r$ | Electromagnetic action |
 | $\tilde J=ic\rho\,e_t+\vec J$; $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell system |
 | $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$; $\vec S=\vec E\times\vec H$ | Energy density; Poynting vector |
 | $\sigma_{jk}=\epsilon E_jE_k+\mu H_jH_k-W\delta_{jk}$ | Maxwell stress |

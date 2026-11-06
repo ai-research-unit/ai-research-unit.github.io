@@ -21,7 +21,7 @@ The scope is relativistic. The non-relativistic action belongs to the non-relati
 
 An action is a real functional of the fields,
 $$
-S[\tilde{Ξ}] = \int \mathcal{L}\bigl(\tilde{Ξ}, \partial/\partial R_\mu\tilde{Ξ}\bigr)\,d^4x ,
+S[\tilde{Ξ}] = \int \mathcal{L}\bigl(\tilde{Ξ}, \partial/\partial R_\mu\tilde{Ξ}\bigr)\,d^4r ,
 $$
 and the principle is that the physical field is a stationary point,
 $$
@@ -65,7 +65,7 @@ where the derivatives are the components of the biquaternionic gradient of $\mat
 
 Carrying the integration by parts without discarding the surface term leaves
 $$
-\delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{Ξ}\,d^4x
+\delta S = \int \Bigl(\text{Euler–Lagrange}\Bigr)\,\delta\tilde{Ξ}\,d^4r
 + \oint_{\partial\Omega} \sum_\mu \mathrm{Sc}\!\left[\overline{\bigl(\partial/\partial R_\mu\tilde{Ξ}\bigr)}\,\delta\tilde{Ξ}\right] n_\mu\,d\Sigma ,
 $$
 and the two terms say different things. The vanishing of the first for arbitrary interior variations is the equation of motion; the vanishing of the second for the variations admitted by the problem is the boundary condition. Because the equation of motion is the same for every admissible boundary condition, the boundary term is what selects among the several Green's functions of the operator article: the retarded kernel is the one whose associated surface term vanishes for a source that switches on in the past, the advanced kernel for one that switches off in the future, and the causal kernel for the Feynman prescription that projects onto positive frequencies forward and negative frequencies backward. The stationary-action principle therefore does not merely produce the operator; it produces it together with the boundary condition that makes the inversion well posed, and the freedom of the boundary term is exactly the freedom of the operator article's four kernels.
@@ -144,7 +144,7 @@ The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\nat
 For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
 $$
 \boxed{\;
-S[\tilde{Ξ}] = \int\mathcal{L}\,d^4x ,
+S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
 \qquad
 \mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \frac{m^2c^2}{\hbar^2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;},
 $$
@@ -213,7 +213,7 @@ Three features of the sign structure are worth extracting. The kinetic term ente
 
 For the electromagnetic field the action is the standard one,
 $$
-S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4x ,
+S_{\mathrm{Maxwell}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 $$
 and in terms of the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the companion *Maxwell's Equations in the Biquaternionic Formulation* its Lagrangian density is the biquaternion norm
 $$
@@ -295,7 +295,7 @@ The variational and the operator routes are two views of one structure. The acti
 
 ## Summary
 
-The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde Q_3^{\natural}\tilde{Q}_1) = \langle\tilde Q_3,\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\delta\tilde{Ξ})$ was verified on random biquaternions.
+The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4r$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde Q_3^{\natural}\tilde{Q}_1) = \langle\tilde Q_3,\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\delta\tilde{Ξ})$ was verified on random biquaternions.
 
 The particle action is
 $$
@@ -306,7 +306,7 @@ whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V}
 
 The field action is
 $$
-S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4x ,
+S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
 whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{Ξ} = 0$ with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$; the variation was checked against $\int(\Box\xi - \mu^2\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\tilde{\nabla}^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
@@ -317,7 +317,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 
 | Symbol | Meaning |
 |---|---|
-| $S = \int\mathcal{L}\,d^4x$ | Action; a real Lorentz scalar |
+| $S = \int\mathcal{L}\,d^4r$ | Action; a real Lorentz scalar |
 | $\delta S = 0$ | Stationary-action principle; variations vanish on the boundary |
 | $\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,\overline{d\tilde R_\varphi}$ | Biquaternion norm of the displacement |
 | $S = -mc\int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}$ | Free relativistic particle action |

@@ -127,7 +127,7 @@ Three properties of the action are used below.
 The sources are Grassmann-valued: the generating functional
 
 $$
-Z[\eta,\bar\eta]=\int\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\;\exp\Big[iS+i\!\int d^4x\,\big(\bar\eta\tilde{Ξ}^{\mathrm{sp}}+\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x\eta\big)\Big]
+Z[\eta,\bar\eta]=\int\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\;\exp\Big[iS+i\!\int d^4r\,\big(\bar\eta\tilde{Ξ}^{\mathrm{sp}}+\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x\eta\big)\Big]
 $$
 
 requires $\eta,\bar\eta$ to be odd, since they multiply $\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x$ respectively and the linear terms must be even. This is the same requirement as in the finite-mode reduction below, now at the level of the functional: the source term is a bilinear in one external odd and one integration variable, hence even, and the sources consequently lie in the odd part of the same Grassmann extension.
@@ -188,7 +188,7 @@ In the physical weight of §*Sources*, $-\tilde{Ξ}^{\mathrm{sp}\dagger}M\tilde{
 
 $$
 Z[\eta,\bar\eta]=\det M\;\exp\!\big[-\bar\eta\,M^{-1}\eta\big]
-=\det(\mathbb{D}-m)\;\exp\!\Big[-\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
+=\det(\mathbb{D}-m)\;\exp\!\Big[-\int d^4r\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
 $$
 
 up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\eta\tilde{Ξ}^{\mathrm{sp}}+\tilde{Ξ}^{\mathrm{sp}\dagger}i\vec e_x\eta)$, is the one that carries the plus sign.

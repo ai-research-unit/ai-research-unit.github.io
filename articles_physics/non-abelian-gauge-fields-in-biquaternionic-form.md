@@ -208,7 +208,7 @@ so the local density
 $$
 \boxed{\;\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 \qquad
-S_{\mathrm{YM}} = \int d^4x\;\mathcal{L}\;},
+S_{\mathrm{YM}} = \int d^4r\;\mathcal{L}\;},
 $$
 
 is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.

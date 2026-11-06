@@ -211,7 +211,7 @@ The sign in the Wick theorem is the statement that exchanging two odd operators 
 
 **The Dyson series.** The S-matrix of *The S-Matrix in Biquaternionic Form* is the time-ordered exponential
 $$
-S = T\exp\!\left(-i\int d^4x\,\mathcal{H}_I(x)\right),
+S = T\exp\!\left(-i\int d^4r\,\mathcal{H}_I(x)\right),
 $$
 and its expansion is contracted by precisely the theorem above: each term of the Dyson series is a time-ordered product of interaction Hamiltonians, each built from fields, and the vacuum expectation of each term is a sum over pairings. The $\mathbb{Z}_2$ grading supplies the fermionic signs of the contractions between different field operators, and the one-mode table above is the smallest nontrivial case of that contraction. Nothing in the Dyson series requires a biquaternion-specific theorem; the algebra's contribution is the sign, the central scalar nature of the contraction, and the one-mode exactness.
 

@@ -86,7 +86,7 @@ The charge that classifies an instanton is the integral of a four-form built fro
 
 $$
 \boxed{\;Ϙ \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}\!\left(F\wedge F\right)
-\;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4} d^4x\;\frac{1}{4}\,\epsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(F_{\mu\nu}F_{\rho\sigma}\right),
+\;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4} d^4r\;\frac{1}{4}\,\epsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(F_{\mu\nu}F_{\rho\sigma}\right),
 \qquad Ϙ\in\mathbb Z\;},
 $$
 

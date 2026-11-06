@@ -102,7 +102,7 @@ $$
 The two-derivative energy scales as
 
 $$
-E_2[\tilde U_\lambda] = \int d^3x\left|\partial/\partial R_i\,\tilde U_\lambda\right|^2
+E_2[\tilde U_\lambda] = \int d^3r\left|\partial/\partial R_i\,\tilde U_\lambda\right|^2
 = \lambda^{-1}\int d^3y\left|\partial/\partial R_i\,\tilde U\right|^2 = \lambda^{-1}E_2 ,
 $$
 
@@ -133,7 +133,7 @@ is a minimum. With $E_4 = 0$ the function $E(\lambda) = E_2/\lambda$ has no mini
 **The energy functional.** In the static gauge the two terms give the Skyrme energy
 
 $$
-E = \int d^3x\left[\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_i j_i\right) - \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_i,j_j][j_i,j_j]\right)\right],
+E = \int d^3r\left[\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_i j_i\right) - \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_i,j_j][j_i,j_j]\right)\right],
 $$
 
 whose minimisation over configurations with fixed winding number is the Skyrme problem. The existence of a minimiser is guaranteed by a lower bound linear in $|B|$ — the Faddeev bound — and the minimiser is the skyrmion; the bound and the existence proof are standard (Faddeev 1976; Rybakov and others) and are cited rather than reproduced. What the bound requires is exactly the structure Derrick's argument identifies: a two-derivative term and a four-derivative term with opposite scaling.
@@ -161,7 +161,7 @@ without using any equation of motion: the divergence is a sum of terms that canc
 **The charge.** The charge
 
 $$
-B = \int d^3x\, B_0
+B = \int d^3r\, B_0
 $$
 
 is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_t$ at spatial infinity. Because $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).
@@ -276,7 +276,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $\mathcal{L}_4 = \frac{1}{16e^2}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ | Skyrme term |
 | $f_\pi, e$ | Decay constant; dimensionless Skyrme parameter |
 | $B_\mu = \frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
-| $B = \int d^3x\,B_0$ | Winding number; baryon number |
+| $B = \int d^3r\,B_0$ | Winding number; baryon number |
 | $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
 | $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = \sum_a x_a e_a/r$ | Hedgehog ansatz |
 | $B_0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |

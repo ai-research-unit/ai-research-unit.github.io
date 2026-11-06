@@ -4,7 +4,7 @@
 
 The biquaternion framework reads the Lorentzian signature of spacetime as a consequence of a complex structure rather than as an independent postulate. The minus sign in the Minkowski interval
 $$
-ds^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2
+ds^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2
 $$
 is, in this interpretation, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure *on*. The answer turns on a distinction that is easy to blur: **no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is**, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.
 
@@ -76,7 +76,7 @@ The way out is not to look for a better $J$ but to change the space: **complexif
 
 The $i c r'_t$ convention is often described as making the complex structure global. It is worth being exact about what is global there. The substitution $x_0=ic_0r'_t$ is a change of coordinates, and it converts the Minkowski interval into a Euclidean form,
 $$
-ds^2=(ic_0\,dr'_t)^2+dx^2+dy^2+dz^2 .
+ds^2=(ic_0\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2 .
 $$
 As a device it requires two things that are not generally available: a single time coordinate defined everywhere, and a single constant scale $c_0$. Flat spacetime with a fixed inertial frame supplies both, which is why the convention works in the vacuum of special relativity. It fails for a curved metric, it sits awkwardly with spinors, and — the case that matters here — it fails when the scale $c$ is a field rather than a constant. In a medium with $\epsilon=\epsilon(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\mu=\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ the complex time coordinate is $i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)r'_t$, defined only pointwise. The global $i c r'_t$ is therefore the constant-$c$, flat-space limit of a local structure; it is not a global complex structure on spacetime. The companion article *Why Complexify Spacetime?* records the first two limitations.
 
@@ -96,7 +96,7 @@ Three features of this definition are the content of its locality.
 
 At each point the local structure induces the quadratic form of the material sector. With $d\tilde R_\varphi=ic\,dr'_t\,e_t+d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
 $$
-\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural}=(ic\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2\;}.
+\boxed{\;\langle d\tilde R_\varphi\rangle_{\natural}=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2\;}.
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the interval.
 
@@ -107,14 +107,14 @@ The sentence "the complex structure produces the metric" has two parts, and it i
 1. **The signature is algebraic.** The sign of the coefficient on $d{r'_{t}}^2$ is $(i)^2$. It comes from the scalar imaginary and is the same for every value of $c$. In the metric formalism the signature is an input; here it is a consequence of the algebra.
 2. **The magnitude is local.** The coefficient is $-c^2$, with $c$ the scale of the imaginary time axis. The metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the interval it carries is
 $$
-ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dR_\mu dQ_\nu=(ic\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2 .
+ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}\,dR_\mu dQ_\nu=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2 .
 $$
 
 So $c$ is the conversion factor that turns the statement "time is imaginary" into a statement about lengths. The phase $i$ says that the temporal direction is the imaginary one; the scale $c$ says how much imaginary time corresponds to a unit of physical time, and therefore how the temporal direction is measured against the three spatial directions. Given the phase and the scale, the metric is determined.
 
-For constant $c$ the metric is $c^2\left(-d{r'_{t}}^2+(dx^2+dy^2+dz^2)/c^2\right)$, so after the constant rescaling $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the interval is a field of local forms,
+For constant $c$ the metric is $c^2\left(-d{r'_{t}}^2+(dr_x^2+dr_y^2+dr_z^2)/c^2\right)$, so after the constant rescaling $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\to(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the interval is a field of local forms,
 $$
-ds^2=(i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,dr'_t)^2+dx^2+dy^2+dz^2 ,
+ds^2=(i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2 ,
 $$
 and at each point the null directions are those with $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The metric is not postulated alongside the complex structure; it is read off from the phase and the local scale.
 
@@ -126,7 +126,7 @@ The local structure leaves one number undetermined: the scale $c$. The physics d
 
 **Route 1: the null cone of the biquaternion norm.** The local quadratic form vanishes on
 $$
-(ic\,dr'_t)^2+dx^2+dy^2+dz^2=0
+(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=0
 \;\Longleftrightarrow\;
 |d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|=c\,|dr'_t| ,
 $$
@@ -169,11 +169,11 @@ The medium interpretation extends in three directions. First, $\log\lvert\langle
 
 ## Summary
 
-The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
+The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
 
 A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$. The $i c r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
 
-A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $i c r'_t$ with $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.
+A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $i c r'_t$ with $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.
 
 That number is fixed by the local structure on two independent routes, and they agree. The null cone of the biquaternion norm has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
 
@@ -195,7 +195,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
 | $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position of the material sector |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The one metric, on the four $Q_\mu$ |
-| $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$ | Interval; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c$ |
+| $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$ | d'Alembertian |

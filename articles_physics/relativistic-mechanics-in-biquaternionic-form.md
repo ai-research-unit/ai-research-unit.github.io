@@ -38,7 +38,7 @@ It is a **material element**; it is what is observed. Its **observable** is the 
 The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde R_\varphi \in \mathbb{M}_-$:
 
 $$
-\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dx^2 + dy^2 + dz^2 = -c^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2\;}
+\boxed{\;ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = (ic\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -c^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
 $$
 
 Here $\overline{d\tilde R_\varphi} = ic\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
@@ -151,7 +151,7 @@ $$
 S = -mc\int\sqrt{-\,d\tilde R_\varphi\,\overline{d\tilde R_\varphi}},
 $$
 
-where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dx^2+dy^2+dz^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes
+where the square root is the ordinary real square root of the positive quantity $-d\tilde R_\varphi\,\overline{d\tilde R_\varphi} = c^2\,d{r'_{t}}^2 -(dr_x^2+dr_y^2+dr_z^2) = c^2\,d\tau^2$. Since $d\tau = dr'_t/\gamma$, we have $c\,d\tau = c\,dr'_t/\gamma$, and the action becomes
 
 $$
 S = -mc^2\int\frac{dr'_t}{\gamma} = -mc^2\int\sqrt{1 - \vec v^2/c^2}\,dr'_t,
@@ -224,7 +224,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Quantity | Biquaternion formula | Constraint |
 |---|---|---|
 | Four-position | $\tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | — |
-| Invariant interval | $ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi}$ | $= -c^2 d{r'_{t}}^2 +dx^2+dy^2+dz^2$ |
+| Invariant interval | $ds^2 = d\tilde R_\varphi\,\overline{d\tilde R_\varphi}$ | $= -c^2 d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ |
 | Mass-shell relation | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ | — |

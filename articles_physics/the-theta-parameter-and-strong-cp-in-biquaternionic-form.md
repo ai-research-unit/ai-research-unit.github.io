@@ -53,7 +53,7 @@ both acting from the left, and each half satisfies $\Box\tilde{Ξ}^{\mathrm{sp}}
 The theta term of a non-abelian gauge theory is
 
 $$
-\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}
+\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}
 =\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$
 
@@ -82,8 +82,8 @@ $$
 so the theta term of the abelian theory is
 
 $$
-S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4x\,\frac{4i}{c}I_2
-=\frac{i\theta}{8\pi^2 c}\int d^4x\,I_2 .
+S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
+=\frac{i\theta}{8\pi^2 c}\int d^4r\,I_2 .
 $$
 
 The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $i c r'_t$ convention attaches to it. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.

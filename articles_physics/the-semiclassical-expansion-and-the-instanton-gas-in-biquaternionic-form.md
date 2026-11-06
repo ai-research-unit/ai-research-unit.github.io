@@ -60,10 +60,10 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\mu}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
 
 $$
-Z_1^{\mathrm{cl}} \;\propto\; \int d^4x_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
+Z_1^{\mathrm{cl}} \;\propto\; \int d^4r_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
 $$
 
-where the weight $\rho^{-5}$ is the measure factor of the four translations and the scale: it is the Jacobian of the five collective coordinates, and it carries the dimension of the volume element, $d^4x_0\,d\rho\,\rho^{-1}\cdot(\text{scale weight})$. The translations integrate to the four-volume $VT$ of the box, so the nontrivial content is the single integral over the size,
+where the weight $\rho^{-5}$ is the measure factor of the four translations and the scale: it is the Jacobian of the five collective coordinates, and it carries the dimension of the volume element, $d^4r_0\,d\rho\,\rho^{-1}\cdot(\text{scale weight})$. The translations integrate to the four-volume $VT$ of the box, so the nontrivial content is the single integral over the size,
 
 $$
 \boxed{\;Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.

@@ -46,7 +46,7 @@ $$
 \mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L},
 $$
 
-and the **total Hamiltonian** is its integral over space, $H=\int\mathcal{H}\,d^3x$. Substituting the density and the momentum field gives
+and the **total Hamiltonian** is its integral over space, $H=\int\mathcal{H}\,d^3r$. Substituting the density and the momentum field gives
 
 $$
 \mathcal{H}=\frac{1}{c^2}|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+\mu^2|\xi|^2,
@@ -71,7 +71,7 @@ where $\delta/\delta$ is the variational derivative and the second equation uses
 The bracket of the finite-dimensional theory is replaced by a bracket on functionals. For functionals $A[\xi,\pi]$, $B[\xi,\pi]$ of the field and its conjugate momentum,
 
 $$
-\{A,B\}=\int d^3x\left(
+\{A,B\}=\int d^3r\left(
 \frac{\delta A}{\delta\xi}\frac{\delta B}{\delta\pi}
 +\frac{\delta A}{\delta\xi^{\,*}}\frac{\delta B}{\delta\pi^\dagger}
 -\frac{\delta A}{\delta\pi}\frac{\delta B}{\delta\xi}
@@ -102,7 +102,7 @@ $$
 the mass terms cancel between the time derivative of $\mu^2|\xi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\xi=\xi_0\exp(i(\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t))$ one has $\vec S=2\omega\vec k|\xi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
 
 $$
-P_\nu=\frac{1}{c}\int T_{t\nu}\,d^3x
+P_\nu=\frac{1}{c}\int T_{t\nu}\,d^3r
 $$
 
 time-independent, the statement that the flux of the companion stress–energy article is a conserved current.
@@ -216,7 +216,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=c^{-2}\partial\xi/\partial r'_t$ its conjugate |
 | $\tilde\Pi=\pi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | The conjugate momentum field as a central biquaternion |
 | $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $c^{-2}|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+\mu^2|\xi|^2$ and equals the energy density $T_{00}$ |
-| $H=\int\mathcal{H}\,d^3x$ | The total Hamiltonian |
+| $H=\int\mathcal{H}\,d^3r$ | The total Hamiltonian |
 | $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla\tilde{Ξ})^{*}(\tilde\nabla\tilde{Ξ})]+\mu^2\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | The Hamiltonian density as the sum of two Hermitian forms |
 | $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ | The canonical field bracket, with the mirrored brackets for the conjugates |
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |

@@ -45,7 +45,7 @@ with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathr
 
 The Yang–Mills action of the framework is the gauge-invariant density of the companion articles,
 $$
-S_{\mathrm{YM}}[\mathcal{A}]=-\int d^4x\,\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural},
+S_{\mathrm{YM}}[\mathcal{A}]=-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural},
 \qquad
 \tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}\,[\mathcal{A},\mathcal{A}],\qquad \mathcal{A}=\sum_a\mathcal{A}_aT_a .
 $$
@@ -133,11 +133,11 @@ $$
 $$
 with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\sum_\mu\partial/\partial R_\mu D_{\mu ab})$, it gives
 $$
-\Delta[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4x\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
+\Delta[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4r\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
 =\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(iS_{\mathrm{gh}}\right),
 $$
 $$
-\boxed{\;S_{\mathrm{gh}}=-\int d^4x\;\sum_a\bar c_a\,\sum_\mu\partial/\partial R_\mu(D_\mu c)_a\;},
+\boxed{\;S_{\mathrm{gh}}=-\int d^4r\;\sum_a\bar c_a\,\sum_\mu\partial/\partial R_\mu(D_\mu c)_a\;},
 \qquad
 (D_\mu c)_a=\partial/\partial R_\mu c_a+i\kappa\sum_{b,c}f_{abc}\mathcal{A}_{\mu b}c_c .
 $$
@@ -159,7 +159,7 @@ Collecting the pieces, the gauge-fixed Yang–Mills action is
 $$
 S=S_{\mathrm{YM}}+S_{\mathrm{gf}}+S_{\mathrm{gh}},
 \qquad
-S_{\mathrm{gf}}=-\frac{1}{2\zeta}\int d^4x\,\sum_a\left(\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}\right)^2 ,
+S_{\mathrm{gf}}=-\frac{1}{2\zeta}\int d^4r\,\sum_a\left(\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}\right)^2 ,
 $$
 where $\zeta$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B_a$ of the BRST companion, whose equation of motion is $B_a=-\zeta^{-1}\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
 $$
@@ -173,7 +173,7 @@ is the Yang–Mills path integral of the framework.
 
 At quadratic order in the fields the gauge-fixed action is
 $$
-S^{(2)}=\tfrac12\int d^4x\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(\delta_{\mu\nu}\Box-(1-\tfrac1\zeta)\partial^2/\partial R_\mu\partial R_\nu\right)\mathcal{A}_{\nu a},
+S^{(2)}=\tfrac12\int d^4r\;\sum_{\mu,\nu,a}\mathcal{A}_{\mu a}\left(\delta_{\mu\nu}\Box-(1-\tfrac1\zeta)\partial^2/\partial R_\mu\partial R_\nu\right)\mathcal{A}_{\nu a},
 $$
 whose inversion gives the gauge-field propagator, in momentum space, with $\Pi\equiv-\sum_\mu p_\mu p_\mu$ the momentum-space invariant,
 $$

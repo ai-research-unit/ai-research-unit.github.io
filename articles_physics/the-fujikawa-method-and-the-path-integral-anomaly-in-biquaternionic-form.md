@@ -106,7 +106,7 @@ recomputed on the two eigenspaces with residual below $10^{-10}$: the multiplier
 
 **The generating functional.** For a biquaternion fermion field coupled to an abelian gauge field, the functional integral is
 $$
-Z[A] = \int \mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}\;\exp\!\left(i\int d^4x\;\tilde{Ξ}^{\mathrm{sp}\dagger}\bigl(\tilde D-m\bigr)\tilde{Ξ}^{\mathrm{sp}}\right),
+Z[A] = \int \mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}\;\exp\!\left(i\int d^4r\;\tilde{Ξ}^{\mathrm{sp}\dagger}\bigl(\tilde D-m\bigr)\tilde{Ξ}^{\mathrm{sp}}\right),
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
@@ -167,17 +167,17 @@ $$
 and the regulated logarithm is
 $$
 \ln\det U=\mathrm{Tr}\ln U=i\,\mathrm{Tr}\bigl(\alpha\,\omega\bigr)_{\mathrm{reg}}
-=i\int d^4x\,\alpha(x)\,\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x .
+=i\int d^4r\,\alpha(x)\,\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
 The subscript on $\rho$ is the side, and it is not decoration. The rotation of §*The Measure and the Chiral Rotation* multiplies on the right, so the insertion is the right multiplication $\rho_\omega$; the heat kernel is a left action, since $\mathcal{H}$ is built from $\tilde D$ and its conjugate. The composite is therefore one left and one right multiplication, which is the shape of a cell. At coincidence its kernel is the composite $\ell_h\rho_\omega$ of §*Why the Symbol Is Not an Algebra Trace*, and the trace of that section is the trace written here. The side is what decides the value: with the insertion on the left, the same display would give $4\,\mathrm{Sc}(\omega h)$ and not zero.
 
 Hence
 $$
-\bigl(\det U\bigr)^{-2}=\exp\!\left(-2i\int d^4x\,\alpha(x)\,a(x)\right),
+\bigl(\det U\bigr)^{-2}=\exp\!\left(-2i\int d^4r\,\alpha(x)\,a(x)\right),
 \qquad
 a(x)=\lim_{M\to\infty}\mathrm{tr}\bigl[\rho_\omega\,e^{-\mathcal{H}/M^2}\bigr]_x .
 $$
-The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}^{\mathrm{sp}}$ and one for $\tilde{Ξ}^{\mathrm{sp}\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4x\,(\partial\alpha/\partial R_\mu)\,j_{5\mu}=\int d^4x\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial R_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
+The factor $2$ in the exponent is the two determinants, one for $\tilde{Ξ}^{\mathrm{sp}}$ and one for $\tilde{Ξ}^{\mathrm{sp}\dagger}$, and $a$ is the regulated trace at coincidence. Matching the measure factor against the change of the action, $\delta S=-\int d^4r\,(\partial\alpha/\partial R_\mu)\,j_{5\mu}=\int d^4r\,\alpha\,\sum_\mu\partial j_{5\mu}/\partial R_\mu$, gives $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2a$. The anomaly density is therefore $A=2a$. The trace $a$ is the index density of the standard module, since $\int a=-(ϙ^2/32\pi^2)\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ in the normalization of the index section; that is why $\int A=2\int a$ is twice the index up to the sign that the all-low-index symbol carries, the factor two coming from the two determinants and not from the trace. The determinant is formal and divergent: it is the product of the eigenvalues of $U$ over a complete set of modes, one per spacetime point.
 
 **The regulator.** To make the determinant finite and preserve gauge invariance, one regulates it with the square of the operator. The square of the pair operator is scalar, $\mathbb{D}^2=\Box I$, so the regulator is the d'Alembertian itself with the connection included,
 $$
@@ -296,9 +296,9 @@ and the two combine to $\tfrac12\cdot M^{-4}\cdot M^4/16\pi^2=1/32\pi^2$. Two in
 
 **The integral of the density.** The integrated anomaly is a topological invariant. In the massless theory, where the divergence is the anomaly alone, the total-derivative form and the index of the operator give
 $$
-\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
-= \int d^4x\,A(r_x)
-= -\frac{ϙ^2}{16\pi^2}\int d^4x\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
+\int d^4r\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}
+= \int d^4r\,A(r_x)
+= -\frac{ϙ^2}{16\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 = -2\,\mathrm{ind}(\mathbb{D}),
 $$
 so the axial charge transported in a background is twice the index, the minus being the orientation bookkeeping of the all-low-index symbol that the density carries throughout the article. The index is the excess of the number of zero modes of value $L$ over the number of value $R$; the general theorem identifying it with the integral is Atiyah–Singer. The zero-mode count and the index theorem belong to the corpus's general gauge apparatus and are not developed here; the fermion-sector facts are that the integral is an integer, that the coefficient is therefore protected against renormalisation, and that a background of unit topological charge produces a net axial-charge violation.
@@ -386,12 +386,12 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathrm{Tr}$ | The functional trace over modes |
 | $\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
-| $J=(\det U)^{-2}=\exp(-2i\int d^4x\,\alpha a)$ | Jacobian of the measure under the rotation |
+| $J=(\det U)^{-2}=\exp(-2i\int d^4r\,\alpha a)$ | Jacobian of the measure under the rotation |
 | $Z[A]=\det(\mathbb{D}-m)$ | Fermion determinant |
 | $\tilde{Ξ}^{\mathrm{sp}\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}\vec e_\mu\tilde{Ξ}^{\mathrm{sp}}$ | Vector current |
 | $j_{5\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}\omega\vec e_\mu\tilde{Ξ}^{\mathrm{sp}}$ | Axial current |
-| $\int d^4x\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=-2\,\mathrm{ind}(\mathbb{D})$ | Integrated anomaly and index, in the all-low-index orientation |
+| $\int d^4r\,\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=-2\,\mathrm{ind}(\mathbb{D})$ | Integrated anomaly and index, in the all-low-index orientation |
 | $I_1$, $I_2$ | Biquaternion field invariants, in the instanton article's normalization |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
 | $2m\,\tilde{Ξ}^{\mathrm{sp}\dagger}\omega\tilde{Ξ}^{\mathrm{sp}}$ | Mass contribution to the axial divergence |

@@ -33,7 +33,7 @@ where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with re
 If $\Gamma_k$ is expanded in a basis of local operators with couplings $g_i(k)$,
 
 $$
-\Gamma_k[\xi] = \int d^4x \sum_i g_i(k)\, \mathcal{O}_i[\xi],
+\Gamma_k[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
 $$
 
 then the flow equation is equivalent to a set of ordinary differential equations,
@@ -114,7 +114,7 @@ The gauge-safe alternative is **dimensional regularisation** (DR): the loop inte
 The cleanest case is a single real scalar with a quartic self-interaction,
 
 $$
-S[\xi] = \int d^4x\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\lambda}{4!}\xi^4\right],
+S[\xi] = \int d^4r\left[\tfrac12(\partial\xi)^2 + \tfrac12 m^2\xi^2 + \frac{\lambda}{4!}\xi^4\right],
 $$
 
 whose coupling $\lambda$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.

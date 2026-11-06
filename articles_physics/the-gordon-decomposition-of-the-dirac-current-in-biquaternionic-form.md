@@ -347,7 +347,7 @@ $$
 and it does not contain the bound spin-momentum term; that term is restored by the antisymmetric part of the Belinfante improvement. Integrating, the spin contribution to the total angular momentum is
 
 $$
-\int\vec r\times\big(\tfrac12\nabla\times\vec S\big)\,d^3x=\int\vec S\,d^3x,
+\int\vec r\times\big(\tfrac12\nabla\times\vec S\big)\,d^3r=\int\vec S\,d^3r,
 $$
 
 so the division by two is necessary for angular momentum and its absence is the statement of $g=2$ in the current.

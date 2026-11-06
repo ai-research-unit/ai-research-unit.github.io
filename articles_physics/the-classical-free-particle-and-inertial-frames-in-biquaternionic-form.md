@@ -34,7 +34,7 @@ written compactly as $\tilde R_\varphi = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\v
 The biquaternion norm of the displacement between two nearby events is the invariant interval,
 
 $$
-\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,(d\tilde R_\varphi)^{\natural} = (ic\,dr'_t)^2 +dx^2+dy^2+dz^2 = -c^2\,d{r'_{t}}^2 +dx^2+dy^2+dz^2 ,
+\langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,(d\tilde R_\varphi)^{\natural} = (ic\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2\,d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 ,
 $$
 
 whose Lorentzian signature is a consequence of $i^2 = -1$ rather than an independent postulate. A worldline is **timelike**, **null** or **spacelike** according to whether $\langle d\tilde R_\varphi\rangle_{\natural}$ is negative, zero or positive along it. The null directions are the zero divisors of the algebra, and they form the light cone of the material sector.

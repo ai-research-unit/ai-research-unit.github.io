@@ -30,7 +30,7 @@ The continuum object,
 $$
 Z=\int\mathcal{D}\mathcal{A}\;\exp(iS_{\mathrm{YM}}[\mathcal{A}]),
 \qquad
-S_{\mathrm{YM}}=-\tfrac12\int d^4x\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
+S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 $$
 is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathcal{A}$ denotes a limit of products of finitely many ordinary integrals, and the limit is not known to exist without a regulator; the perturbative expansion assumes that a regulator has been chosen and that the counterterms remove its dependence. Three properties are needed of the regulator: it must make the measure finite, it must preserve the gauge invariance of the action, and it must admit a limit in which the regulator dependence is absorbed into the parameters of the theory.
 
@@ -109,7 +109,7 @@ $$
 $$
 The numerical check of the previous paragraph confirmed the coefficient: for a constant non-abelian field the ratio of the measured trace deficit to $\frac{a^4\kappa^2}{2N}\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ was $1$ to better than one part in $10^{3}$ at $a=2\times10^{-3}$. Multiplying by $\beta$ and summing over $\mu<\nu$, the lattice action reproduces
 $$
-S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4x\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
+S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 $$
 with the standard identification of the sum over $\mu<\nu$ with half the double sum. Matching to the Euclidean Yang–Mills density $+\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ — in this normalization $\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=\tfrac12\sum_a F_{\mu\nu a}F_{\mu\nu a}$, so this is the standard $\tfrac14\sum_a F_{\mu\nu a}F_{\mu\nu a}$ — fixes
 $$

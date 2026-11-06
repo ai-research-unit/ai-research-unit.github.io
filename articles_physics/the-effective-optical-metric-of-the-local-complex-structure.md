@@ -4,7 +4,7 @@
 
 The local complex structure of the framework identifies the temporal direction with the imaginary scalar generator, $r'_t\mapsto i\,c\,r'_t\,e_t$, with $c$ the local speed of light in the medium. It induces at each point the quadratic form
 $$
-\langle d\tilde{Q}\rangle_{\natural}=(ic\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2,
+\langle d\tilde{Q}\rangle_{\natural}=(ic\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2,
 $$
 of signature $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The structure leaves one number free, the scale $c=1/\sqrt{\epsilon\mu}$; the null cone of the form has aperture $c$; and the wave operator $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, with $Q_t=i\,c\,r'_t$, has characteristic speed $c$ (*The Local Complex Structure and the Speed of Light*).
 
@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the framework's metric changes signature, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and its interval is $(i\,c\,dr'_t)^2+dx^2+dy^2+dz^2=-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2$, whose one minus is the square of the $i$ in $Q_t=i\,c\,r'_t$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde R_\varphi=i c r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\varphi\rangle_{\natural}=\tilde R_\varphi\tilde{R}_\varphi^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and its interval is $(i\,c\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, whose one minus is the square of the $i$ in $Q_t=i\,c\,r'_t$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -30,11 +30,11 @@ Here $\delta_{\mu\nu}=(1,1,1,1)$ is the unit metric on the four $Q_\mu$, and the
 
 For a medium at rest, $v_\mu=(i,0,0,0)$ and $v_tv_t=-1$, so the interval of $g^{\mathrm J}$ is
 $$
--\frac{1}{n^2}\,d{r'_{t}}^2+dx^2+dy^2+dz^2 .
+-\frac{1}{n^2}\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2 .
 $$
 In units $c_0=1$, its null cone is
 $$
--\frac{d{r'_{t}}^2}{n^2}+dx^2+dy^2+dz^2=0
+-\frac{d{r'_{t}}^2}{n^2}+dr_x^2+dr_y^2+dr_z^2=0
 \;\Longleftrightarrow\;
 \left|\frac{d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{dr'_t}\right|=\frac{1}{n}=c ,
 $$
@@ -44,9 +44,9 @@ so the coordinate speed of light in the medium is $1/n$: the optical metric repr
 
 ### The exact agreement
 
-The interval of the framework's metric is $-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2$ with $c=1/\sqrt{\epsilon\mu}$, and the interval of the static Gordon metric is $-\frac{1}{n^2}d{r'_{t}}^2+dx^2+dy^2+dz^2$. In units $c_0=1$ the index is $n=1/c$, so $1/n^2=c^2$, and the two intervals are
+The interval of the framework's metric is $-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ with $c=1/\sqrt{\epsilon\mu}$, and the interval of the static Gordon metric is $-\frac{1}{n^2}d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$. In units $c_0=1$ the index is $n=1/c$, so $1/n^2=c^2$, and the two intervals are
 $$
-\boxed{\;-c^2\,d{r'_{t}}^2+dx^2+dy^2+dz^2=-\frac{1}{n^2}\,d{r'_{t}}^2+dx^2+dy^2+dz^2\;}.
+\boxed{\;-c^2\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2=-\frac{1}{n^2}\,d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2\;}.
 $$
 
 The two metrics are not merely similar or conformally related; they are **the same quadratic form**, and the agreement was checked numerically for $n=1.00$, $1.50$, $2.00$ and $3.30$, to $10^{-14}$ or better. The identification of the framework's scale with the index is exact:
@@ -99,7 +99,7 @@ $$
 
 **What it adds.** The identification of the framework's local metric with Gordon's optical metric, exact in the static case; the interpretation of the null cone of the algebra as the optical-metric cone; and the three boundaries, of which the signature change is the substantive one, since it connects the medium's dielectric sign to the framework's own Euclidean continuation.
 
-**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the interval $-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$ is the flat Minkowski interval in the complex time coordinate $Q_t=i\,c\,r'_t$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
+**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the interval $-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the flat Minkowski interval in the complex time coordinate $Q_t=i\,c\,r'_t$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
 
 ## Physical Readings
 
@@ -109,7 +109,7 @@ Read further, the conformal factor is a **dilaton** shape: the scene at each poi
 
 ## Summary
 
-The framework's local complex structure produces at each point the interval $-c^2d{r'_{t}}^2+dx^2+dy^2+dz^2$ with $c=1/\sqrt{\epsilon\mu}$. This article identifies it with the optical metric of the medium: in the static case $g^{\mathrm J}$ is exactly Gordon's metric $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$ with $v$ at rest, the identification being $n=c_0/c$, and the null cone of the algebra is the optical-metric cone, of aperture $c=1/n$.
+The framework's local complex structure produces at each point the interval $-c^2d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ with $c=1/\sqrt{\epsilon\mu}$. This article identifies it with the optical metric of the medium: in the static case $g^{\mathrm J}$ is exactly Gordon's metric $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$ with $v$ at rest, the identification being $n=c_0/c$, and the null cone of the algebra is the optical-metric cone, of aperture $c=1/n$.
 
 Three boundaries mark where the framework's single scalar runs out, and one of them is more than a boundary. The moving medium has off-diagonal drag terms $g^{\mathrm{J}}_{ti}\neq0$ that the framework's metric cannot carry, because the local structure rescales the imaginary axis without rotating it; the four-velocity must be imported. A birefringent or anisotropic medium has two indices, and one scalar cannot carry them, so those cases belong to the chiral article and not to the metric interpretation. And $\epsilon\mu<0$ — a plasma or a metal below cutoff — flips the sign of $c^2$, turns the metric Riemannian of signature $(4,0)$, and turns the imaginary time direction real: the dielectric sign selects between the Lorentzian and the Wick-rotated phases of the local complex structure.
 

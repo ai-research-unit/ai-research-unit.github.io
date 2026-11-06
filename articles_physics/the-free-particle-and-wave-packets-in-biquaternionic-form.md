@@ -170,13 +170,13 @@ $$
 and the density integrated over the box is one,
 
 $$
-\int_{L^3} d^3x\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_{\vec k} \tilde{Ξ}^{\mathrm{sp}}_{\vec k}\right) = 1 .
+\int_{L^3} d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_{\vec k} \tilde{Ξ}^{\mathrm{sp}}_{\vec k}\right) = 1 .
 $$
 
 In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,
 
 $$
-\int d^3x\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_{\vec k} \tilde{Ξ}^{\mathrm{sp}}_{\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k - \vec k_2).
+\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_{\vec k} \tilde{Ξ}^{\mathrm{sp}}_{\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k - \vec k_2).
 $$
 
 Two norms must be kept apart here. The **probability density** of a spinor field is

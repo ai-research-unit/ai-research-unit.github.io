@@ -137,7 +137,7 @@ the last equality being the Maxwell companion's writing of the spatial momenta. 
 The Hamiltonian is obtained by the Legendre transform, $H=\sum_i\pi_i\,\partial/\partial R_t\,A_i-\mathcal{L}$, with $A_0$ retained as a coordinate. Carrying out the transform and integrating the total spatial derivative by parts gives
 
 $$
-H = \int d^3x\left[\tfrac12\left(\vec E^2+\vec B^2\right)
+H = \int d^3r\left[\tfrac12\left(\vec E^2+\vec B^2\right)
 + \tfrac12\mu^2\left(\vec A^2-A_0^2\right) - A_0\,\sum_i \partial/\partial R_i\,\pi_i\right],
 $$
 

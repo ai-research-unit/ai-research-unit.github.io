@@ -55,7 +55,7 @@ is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the compon
 Three consequences must be distinguished, because they are often conflated.
 
 - **The symmetry is still a symmetry of the dynamics.** The current is conserved, and the generator, where it is defined, commutes with the Hamiltonian; what fails is that the vacuum is not invariant, $U^{\mathrm{fop}}_\alpha|0\rangle\ne|0\rangle$ up to a phase.
-- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J_0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
+- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3r\,J_0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a $*$-unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
 - **The order parameter is central.** This is the framework's structural statement: the field whose modulus is the order parameter is central-valued, so the breaking is a breaking of a symmetry acting on the centre. The Goldstone mode that results is likewise central-valued, and the theorem's content is entirely within the scalar sector.
 
 ## The Potential, the Vacuum Manifold and the Order Parameter
@@ -135,7 +135,7 @@ The broken symmetry's current is the Noether current of the companion article. O
 $$
 \tilde J=i\left(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*\right),
 \qquad
-Ϙ=\int d^3x\,J_0 ,
+Ϙ=\int d^3r\,J_0 ,
 $$
 
 which in the real components is
@@ -154,7 +154,7 @@ $$
 f=\sqrt2\,v\;},
 $$
 
-so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\vartheta^{\mathrm{fld}}/dr'_t$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
+so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3r\,d\vartheta^{\mathrm{fld}}/dr'_t$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
 
 $$
 \boxed{\;\langle0|\tilde J(0)|\vartheta^{\mathrm{fld}}(p)\rangle=i f\,p_\mu\;},
@@ -181,7 +181,7 @@ $$
 \langle0|\big[Ϙ^{\mathrm{fop}},\xi^{\mathrm{fop}}(0)\big]|0\rangle\ne0 ,
 $$
 
-and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J_0$, the current–field commutator cannot vanish identically. Define the matrix element
+and since $Ϙ^{\mathrm{fop}}=\int d^3r\,J_0$, the current–field commutator cannot vanish identically. Define the matrix element
 
 $$
 F(x-y)=\langle0|\big[\tilde J(x),\xi^{\mathrm{fop}}(y)\big]|0\rangle ,

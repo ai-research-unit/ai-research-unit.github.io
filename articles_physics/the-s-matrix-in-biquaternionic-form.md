@@ -5,7 +5,7 @@
 The **S-matrix** is the operator that carries the state of a scattering experiment from the remote past to the remote future. In the interaction picture it is the time-ordered exponential of the interaction Hamiltonian,
 
 $$
-S \;=\; T\exp\!\left(-i\int d^4x\;\mathcal{H}_I(x)\right),
+S \;=\; T\exp\!\left(-i\int d^4r\;\mathcal{H}_I(x)\right),
 $$
 
 and the transition probability is the squared matrix element of $S$ between the initial state and the final state. Its defining property is **unitarity**, $S^{\dagger} S = 1$. It is the object in which the dynamics of an interacting field theory is summarized. Throughout, $i$ is the central scalar imaginary of the algebra, with $i^2=-1$; natural units $\hbar=c=1$ are used except in the mass-shell relation, where $c$ is restored.
@@ -38,7 +38,7 @@ Expanding the exponential gives the **Dyson series**,
 
 $$
 S \;=\; \sum_{n=0}^{\infty}\frac{1}{n!}\left(-i\right)^{n}
-\int d^4x_1\cdots d^4x_n\; T\big\{\mathcal{H}_I(x_1)\cdots\mathcal{H}_I(x_n)\big\},
+\int d^4r_1\cdots d^4r_n\; T\big\{\mathcal{H}_I(x_1)\cdots\mathcal{H}_I(x_n)\big\},
 $$
 
 the $n=0$ term being the identity. Since $H_I$ is Hermitian, the evolution operator obeys $i\,\partial/\partial r'_t\, U_I(r'_t,r'_{t,1}) = H_I(r'_t)U_I(r'_t,r'_{t,1})$ with $U_I(r'_{t,1},r'_{t,1}) = 1$, which gives $U_I^\dagger U_I = 1$; hence the S-matrix is unitary, $S^{\dagger}S = 1$. The adjoint is written $\dagger$ on operators and $*$ on elements of $\mathbb{B}$, so that the two cannot be confused. For an element of $\mathbb{B}$ the condition is $\tilde S^{*}\tilde S = e_t$, equivalent to $\tilde S\tilde S^{*} = e_t$, because either order makes $\tilde S^{*}$ the inverse of $\tilde S$; the two orders are used interchangeably below. (Individual truncations of the Dyson series are not unitary; it is the summed operator that is.)
@@ -365,7 +365,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})$ | Transition probability (Born rule) |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $\tilde R_\psi\in\mathbb{M}_+$, $\tilde R_\psi^{*}=\tilde R_\psi$ | One-mode Hermitian generator |
-| $S=T\exp(-i\int d^4x\;\mathcal{H}_I)$ | S-matrix, the time-ordered exponential (Dyson series) |
+| $S=T\exp(-i\int d^4r\;\mathcal{H}_I)$ | S-matrix, the time-ordered exponential (Dyson series) |
 | $S=1+iT$ | Forward part plus transition part |
 | $\tilde S=e_t+i\tilde T$ | One-mode transition operator $\tilde T$ |
 | $2\,\mathrm{Im}\,T=T^\dagger T$ | Unitarity relation, whose diagonal is the optical theorem |

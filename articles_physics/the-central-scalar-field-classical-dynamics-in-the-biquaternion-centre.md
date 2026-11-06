@@ -12,7 +12,7 @@ Four results are established.
 
 - **The field equation in the centre.** The classical action
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4r
 $$
 has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\mu^2)\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\mu^2$ and range $\mu^{-1}$.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-\mu r)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
@@ -65,9 +65,9 @@ A field in the centre is a Lorentz scalar in two senses. It is invariant under t
 The classical action of a real central scalar field coupled to a prescribed source density $\rho$ is
 
 $$
-S=\int\mathcal{L}\,d^4x, \qquad
+S=\int\mathcal{L}\,d^4r, \qquad
 \mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi,
-\qquad d^4x=c\,dr'_t\,dx\,dy\,dz .
+\qquad d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z .
 $$
 
 The first two terms are the standard kinetic and mass terms of a relativistic scalar field, with the sign that makes the energy positive; the third is the source coupling, whose sign convention is fixed below by the requirement that like sources attract. The action is a real central scalar, and the field is a single real function, so the variation is elementary.
@@ -192,7 +192,7 @@ $$
 the gradient energy outside a sphere of radius $a$ is
 
 $$
-E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\xi)^2\,d^3x
+E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\xi)^2\,d^3r
 =2\pi A^2\int_a^{\infty}\frac{dr}{r^2}
 =\frac{2\pi A^2}{a}=\frac{g^2Ϙ^2}{8\pi a},
 $$
@@ -333,7 +333,7 @@ $$
 a single complex scalar component. Because it is central it commutes with the biquaternionic gradient and with every rotation, so it is a Lorentz scalar and a rotational scalar, and its classical action
 
 $$
-S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4x,
+S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\mu^2\xi^2+g\rho\,\xi\right]d^4r,
 \qquad \mu=\frac{mc}{\hbar},
 $$
 

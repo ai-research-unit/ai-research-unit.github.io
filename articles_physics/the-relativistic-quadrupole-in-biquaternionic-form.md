@@ -154,12 +154,12 @@ $$
 \beta = \frac{|\vec v|}{c} ,
 $$
 
-where $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_\parallel$ and $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_\perp$ are the components of $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ along and across $\vec v$. This is the Lorentz contraction read as a statement about the density at a fixed lab time, and it preserves the total charge, $\int\rho\,d^3x = \int\rho_2\,d^3r_2$.
+where $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_\parallel$ and $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)_\perp$ are the components of $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ along and across $\vec v$. This is the Lorentz contraction read as a statement about the density at a fixed lab time, and it preserves the total charge, $\int\rho\,d^3r = \int\rho_2\,d^3r_2$.
 
 The lab-frame quadrupole is the same functional of the lab density,
 
 $$
-\mathcal{Q}_{ij} = \int\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\left(3r_ir_j - r^2\delta_{ij}\right)d^3x ,
+\mathcal{Q}_{ij} = \int\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\left(3r_ir_j - r^2\delta_{ij}\right)d^3r ,
 $$
 
 and it is automatically traceless. For a boost along the $z$-axis it evaluates, in terms of the rest-frame second moments $D_{2,ij} = \int\rho_2x_{i,2}x_{j,2}\,d^3r_2$, to
@@ -390,7 +390,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\vec N^* = \vec E-ic\vec B$ | Anti-self-dual combination, $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^*$ for the real field |
 | $\rho$, $\vec J$ | Charge and current densities |
 | $ϙ$, $\vec p$, $\vec m$ | Monopole, dipole and magnetic dipole moments |
-| $D_{ij} = \int\rho\,x_ix_j\,d^3x$ | Second moment of the charge |
+| $D_{ij} = \int\rho\,x_ix_j\,d^3r$ | Second moment of the charge |
 | $\mathcal{Q}_{ij} = \int\rho(3x_{i,2}x_{j,2}-r_2^2\delta_{ij})d^3r_2$ | Quadrupole tensor (symmetric traceless) |
 | $T_2 = \int\rho_2\,r_2^{\,2}d^3r_2$ | Trace of the rest-frame second moment |
 | $\vec D(\vec u)$, $\vec{\mathcal{Q}}(\vec u)$ | $D_{ij}n_j$, $\mathcal{Q}_{ij}n_j$ |

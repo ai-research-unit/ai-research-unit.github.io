@@ -96,14 +96,14 @@ $$
 so the displacement biquaternion is $d\tilde R_\varphi = i(c\,dr'_t + r'_t\,dc)e_t + d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde R_\varphi\rangle_{\natural}$, whose time sign comes from $i^2=-1$ and nothing else,
 
 $$
-ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\,dc - {r'_{t}}^2 (dc)^2 + dx^2+dy^2+dz^2,
+ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\,dc - {r'_{t}}^2 (dc)^2 + dr_x^2+dr_y^2+dr_z^2,
 $$
 $$
 dc=\sum_i\frac{\partial c}{\partial x_i}\,dx_i,
 \qquad
 ds^2 = -c^2\,d{r'_{t}}^2 - 2c r'_{t}\,dr'_t\sum_i\frac{\partial c}{\partial x_i}\,dx_i
 - {r'_{t}}^2\Bigl(\sum_i\frac{\partial c}{\partial x_i}\,dx_i\Bigr)^2
-+ dx^2+dy^2+dz^2 ,
++ dr_x^2+dr_y^2+dr_z^2 ,
 $$
 
 with $i$ running over $x,y,z$ and with $c$ independent of $r'_t$; a time-dependent $c$ replaces $c$ by $c+r'_t\,\partial c/\partial r'_t$ in the $e_t$ coefficient and in $\det g$. The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(r'_t,r_x,r_y,r_z)$ — but it is **flat**. The map $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mapsto i\,c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(r_x^2+r_y^2+r_z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
