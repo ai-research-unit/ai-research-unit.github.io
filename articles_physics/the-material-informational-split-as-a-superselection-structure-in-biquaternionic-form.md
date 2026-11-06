@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a four-real-dimensional subspace $\mathbb{B}_{\Phi}$ whose elements are the anti-Hermitian biquaternions and a complementary four-real-dimensional subspace $\mathbb{B}_{\Psi}$ whose elements are the Hermitian ones,
 $$
-\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}, \qquad \mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
+\mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}, \qquad \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
 $$
 A general element splits as $\tilde Q=\tilde R_\psi+\tilde R_\varphi$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{B}_{\Phi}$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{B}_{\Psi}$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{B}_{\Phi}$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
 
@@ -168,7 +168,7 @@ $$
 $$
 so
 $$
-\boxed{\;\tilde U\,\mathbb{B}_{\Psi,\Phi}\,\tilde U^{*} \subseteq \mathbb{B}_{\Psi,\Phi}\;}.
+\boxed{\;\tilde U\,(\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi})\,\tilde U^{*} \subseteq \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}\;}.
 $$
 The Lorentz transformations on four-vectors, the $*$-unitary evolution of states, and the reversible operations of the quantum formalism are all congruences of this type, and none of them moves an element from one sector to the other. This is the precise sense in which the grading is a symmetry of the *operations* of the theory.
 
@@ -217,7 +217,7 @@ The material element is read through the factor $i$, not through the untwisted p
 
 The sharpest positive content of the split is not on the algebra but on its Lie algebra, where the material summand becomes a subalgebra and the split becomes a genuine $\mathbb{Z}_2$ grading.
 
-**Traceless parts.** Let $\mathbb{B}_{\Psi,\Phi}^{0}$ denote the traceless elements of the two sectors. Since $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, the traceless elements are exactly those with vanishing scalar part along $e_t$:
+**Traceless parts.** Let $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ denote the traceless elements of the two sectors. Since $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, the traceless elements are exactly those with vanishing scalar part along $e_t$:
 $$
 \mathbb{B}_{\Psi}^{0} = \mathrm{span}_\mathbb{R}\{i\vec e_x, i\vec e_y, i\vec e_z\}, \qquad
 \mathbb{B}_{\Phi}^{0} = \mathrm{span}_\mathbb{R}\{\vec e_x, \vec e_y, \vec e_z\}.
@@ -276,7 +276,7 @@ The split does not satisfy the standard algebraic realisation of a superselectio
 The sharpest positive content of the split is on the Lie algebra. The traceless parts furnish the Cartan decomposition
 $$
 \mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}, \qquad
-[\mathbb{B}_{\Psi,\Phi}^{0},\mathbb{B}_{\Psi,\Phi}^{0}]\subseteq\mathbb{B}_{\Phi,\Psi}^{0}, \qquad
+[\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0},\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}, \qquad
 [\mathbb{B}_{\Psi}^{0},\mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0},
 $$
 with the material part the compact $\mathrm{SU}(2)$ of rotations and the informational part the non-compact complement of boosts, and with $\flat$ the Cartan involution. The bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic origin of the Wigner rotation, and it is the point at which the two sectors of the relativistic and quantum structures meet.
@@ -299,7 +299,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\tilde R_\varphi = i c r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
-| $\mathbb{B}_{\Psi,\Phi}^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}$ |
+| $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}$ |
 | $\mathbb{B}_{\Phi}^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
 | $\mathbb{B}_{\Psi}^{0}$ | Informational traceless part, non-compact boosts |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

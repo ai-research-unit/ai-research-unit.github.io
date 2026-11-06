@@ -716,7 +716,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | biquaternion algebra |
 | $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2=-e_t$ |
-| $\mathbb{B}_{\Psi,\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $X$ | a nilpotent, $X^2=0$, $X\neq0$; pure when it has no scalar part |
 | $\tilde\Pi$ | a state, $\tilde\Pi^2=\tilde\Pi$ |
 | $\langle\tilde Q\rangle_{\natural}$ | the natural norm $\sum_\mu Q_\mu^2$; the element spelling is $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ |

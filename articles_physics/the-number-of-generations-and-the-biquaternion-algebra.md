@@ -74,12 +74,12 @@ i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicit
 | Framework quantity | Value | Dependence on $N_g$ |
 |---|---|---|
 | $\dim_{\mathbb{R}}\mathbb{B}$ | $8$ | none |
-| $\dim_{\mathbb{R}}\mathbb{B}_{\Psi,\Phi}$ | $4$ | none |
+| $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}$ | $4$ | none |
 | $\dim_{\mathbb{C}}\mathbb{B}_{C}$ | $1$ | none |
 | $\dim_{\mathbb{C}}S$ | $2$ | none |
 | $\dim_{\mathbb{C}}\Delta$ | $4$ | none |
 | Trace formula | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | none |
-| Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{B}_{\Psi,\Phi}$ | none |
+| Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | none |
 | Anomaly conditions (per generation) | all zero | none |
 
 Every entry is fixed by the algebra alone, and none contains $N_g$. A framework that derived the generation number would have to produce the integer from one of these quantities or from a relation among them; no such relation exists, because the multiplicities do not enter any of them.
@@ -256,7 +256,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 ## Summary
 
-The biquaternion framework carries the generation index of the Standard Model as a **multiplicity factor**: an $N_g$-generation spectrum is the module $\Delta\otimes\mathbb{C}^{N_g}$, on which the algebra $\mathbb{B}$ acts on the module factor and trivially on the multiplicity factor, and the flavour matrices are the operators $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The generation number is the dimension of the multiplicity space, equivalently the commutant of the algebra's action. Every structural quantity of the framework is independent of it — $\dim_{\mathbb{R}}\mathbb{B}=8$, $\dim_{\mathbb{R}}\mathbb{B}_{\Psi,\Phi}=4$, $\dim_{\mathbb{C}}\Delta=4$, the trace formula, the real structure, and the sectors all have fixed values — and the anomaly cancellation conditions of the companion article vanish generation by generation, so $N_g$ copies contribute $N_g$ times zero. **The algebra does not fix the number of generations**, because it has no index, no internal space, and no dynamics, and its modules admit any multiplicity.
+The biquaternion framework carries the generation index of the Standard Model as a **multiplicity factor**: an $N_g$-generation spectrum is the module $\Delta\otimes\mathbb{C}^{N_g}$, on which the algebra $\mathbb{B}$ acts on the module factor and trivially on the multiplicity factor, and the flavour matrices are the operators $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The generation number is the dimension of the multiplicity space, equivalently the commutant of the algebra's action. Every structural quantity of the framework is independent of it — $\dim_{\mathbb{R}}\mathbb{B}=8$, $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}=4$, $\dim_{\mathbb{C}}\Delta=4$, the trace formula, the real structure, and the sectors all have fixed values — and the anomaly cancellation conditions of the companion article vanish generation by generation, so $N_g$ copies contribute $N_g$ times zero. **The algebra does not fix the number of generations**, because it has no index, no internal space, and no dynamics, and its modules admit any multiplicity.
 
 The constraints that do touch the number are inherited from the Standard Model: the $Z$-boson invisible width measures $N_\nu=2.984\pm0.008$, giving three light generations, and the existence of a CP-violating Kobayashi–Maskawa phase requires $N_g\ge3$, since the number of physical mixing phases is $(N_g-1)(N_g-2)/2$ and vanishes for $N_g\le2$; the total number of mixing parameters is $(N_g-1)^2$. The framework's three imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the spatial and $\mathrm{SU}(2)$ directions and transform as a Lorentz vector; they cannot be identified with the three generations, whose labels must be inert under the Lorentz group. Two constructions outside the algebra do produce a three, and neither derives it: the octonionic chain algebra gives three colour-multiplet pairs in a decomposition of a larger carrier, and the exceptional groups give either three $SU(3)$ gauge factors (trinification) or three copies of the $\mathbf{27}$ in the decomposition of the $E_8$ adjoint, with the generation content inserted by hand and the chiral embedding closed by Distler and Garibaldi. In both cases the three is read from, or chosen within, a larger structure. The framework accommodates the three observed generations; it does not explain them, and stating that clearly is the article's result.
 

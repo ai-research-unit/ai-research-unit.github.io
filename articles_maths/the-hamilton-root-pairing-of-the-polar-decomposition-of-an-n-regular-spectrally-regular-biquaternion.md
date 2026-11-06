@@ -667,7 +667,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 | $\vec u_{\mathrm b} = \epsilon\vec u_{\mathrm r} = \epsilon\vec u$ | the aligned case, in which $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp\bigl((\frac{\theta}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2})\vec u\bigr)$ |
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit pure real quaternions |
 | $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm n}$ | rapidity, rotation angle, and axis of a Hermitian root of one |
-| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and the anti-Hermitian subspaces of $\mathbb{B}$ |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and the anti-Hermitian subspaces of $\mathbb{B}$ |
 | $\mathrm{Sp}(1)$, $\mathbb{B}_{H}$, $\mathcal{A}$ | the unit real quaternions, the real quaternion subspace, the unit pure real quaternions |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
 

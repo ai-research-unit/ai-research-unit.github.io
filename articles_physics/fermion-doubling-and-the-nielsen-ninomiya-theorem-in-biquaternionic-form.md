@@ -210,7 +210,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## Open Questions
 
-1. **The index of the biquaternion Dirac operator.** The companion Dirac–Kähler article gives the zero modes of the multivector Dirac operator as harmonic forms. What is the corresponding statement for the biquaternion gradient $\tilde{\nabla}$, and does the $\mathbb{B}_{\Psi,\Phi}$ split organize the index?
+1. **The index of the biquaternion Dirac operator.** The companion Dirac–Kähler article gives the zero modes of the multivector Dirac operator as harmonic forms. What is the corresponding statement for the biquaternion gradient $\tilde{\nabla}$, and does the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split organize the index?
 
 2. **The lattice imposition.** Is there a lattice that the framework's structure selects among the many possible ones, in the way that the multivector form selects simplicial/staggered? This article argues only for the *proximity* to staggered; a derivation is not attempted.
 
@@ -245,7 +245,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | $D$ | Lattice Dirac operator of the Ginsparg–Wilson relation |
 | $\omega(\vec p)$ | Lattice dispersion relation |
 | $F(x,y)$, $F_\mu(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
-| $\mathbb{B}_{\Psi,\Phi}$ | The Hermitian and anti-Hermitian sectors, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, with $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$ |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, with $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 
 ## Further Reading
 

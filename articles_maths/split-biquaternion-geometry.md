@@ -19,7 +19,7 @@ $$
 g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{*}\right),
 $$
 
-which is non-degenerate of signature $(4,4)$. In coordinates the split-biquaternion norm splits as $\langle\tilde Q\rangle_{\natural} = \lvert\tilde Q\rvert^2 + j\,I(\tilde Q)$ with $I(\tilde Q) = 2\sum_\mu q_\mu q'_\mu$. The involution ${}^{*}$ and its two eigenspaces $\mathbb{B}_{\Psi,\Phi}$ are those of *Split-Biquaternion Rotations and the Lorentz Group*.
+which is non-degenerate of signature $(4,4)$. In coordinates the split-biquaternion norm splits as $\langle\tilde Q\rangle_{\natural} = \lvert\tilde Q\rvert^2 + j\,I(\tilde Q)$ with $I(\tilde Q) = 2\sum_\mu q_\mu q'_\mu$. The involution ${}^{*}$ and its two eigenspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are those of *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ## The Zero Divisor Cone
 

@@ -8,7 +8,7 @@ This article asks what the framework contributes to Dirac matter and, just as im
 
 The article is organised as follows. The next section explains why lattice electrons look relativistic and derives the Dirac cone. The third separates graphene's two isospins from the framework's two ideals and states the counting comparison. The fourth identifies the gap with the framework's mass. The fifth treats topological insulators, their edge states, the $\mathbb Z_2$ invariant and the surface Dirac cone, and cross-links the framework's Kramers article for the time-reversal structure. The sixth recalls Klein tunnelling in graphene $p$–$n$ junctions. The seventh separates transcription from framework-level content. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central $i$, $\mathbb{B}_{\Psi,\Phi}$ the Hermitian and anti-Hermitian sectors, the biquaternion Dirac equation the linear chiral pair, and the mass shell $\tilde P\tilde P^{\natural}=-m^2c^2$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central $i$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the Hermitian and anti-Hermitian sectors, the biquaternion Dirac equation the linear chiral pair, and the mass shell $\tilde P\tilde P^{\natural}=-m^2c^2$.
 
 ## Why Lattice Electrons Look Relativistic
 
@@ -167,7 +167,7 @@ The biquaternion framework transcribes these equations exactly and locates two s
 | $\Delta$ | Sublattice-symmetry-breaking gap parameter, mass $m=\Delta/v_F^2$ |
 | $\mathcal T$, $\mathcal T^2=-1$ | Time-reversal operator and its Kramers sign |
 | $\mathbb Z_2$ | Topological invariant of the time-reversal-symmetric insulator |
-| $\mathbb{B}_{\Psi,\Phi}$ | Framework sectors; the mass couples the minimal left ideals |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Framework sectors; the mass couples the minimal left ideals |
 
 ## Further Reading
 

@@ -425,7 +425,7 @@ $$
 
 The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *The Unpolarized Module of the Biquaternion Algebra*. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
 
-The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi,\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
+The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
 
 ## The Four Uses of the Word Spin
 
@@ -518,7 +518,7 @@ The word spin has four uses in this corpus, and only the first two record a valu
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Its basis; $\vec e_k^2=-e_t$ |
-| $\mathbb{B}_{\Psi,\Phi}$ | The Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors |
 | $Z=\mathbb{C}e_t$ | The centre |
 | $V=\ker\operatorname{tr}$ | The traceless part |
 | $G=SU(2)$ | The unit real quaternions |

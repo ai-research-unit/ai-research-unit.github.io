@@ -24,7 +24,7 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi,\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
+The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
@@ -342,7 +342,7 @@ $$
 
 since the phase is central of modulus one and acts trivially, the scale multiplies every image by $r^{2}$, and the two non-central factors act in the order rotor first, boost second.
 
-Stability belongs to the sandwich and not to multiplication: a nonzero central multiplier preserves a half only when it is real, so multiplication by a non-real central scalar moves $\mathbb{B}_{\Psi,\Phi}$ out of itself, while the sandwich by any central scalar is the identity.
+Stability belongs to the sandwich and not to multiplication: a nonzero central multiplier preserves a half only when it is real, so multiplication by a non-real central scalar moves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ out of themselves, while the sandwich by any central scalar is the identity.
 
 ### The Anti-Hermitian Half as Four-Vectors
 

@@ -363,7 +363,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra; $\cong M_2(\mathbb{C})$, associative, complex, not a division algebra |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Basis; $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$, $\vec e_x \vec e_y = \vec e_z$ |
-| $i$ | Central scalar imaginary, $i^2 = -1$; $i\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ |
+| $i$ | Central scalar imaginary, $i^2 = -1$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Element with complex coefficients $Q_\mu = q_\mu + iq'_\mu$; the prime marks the slot carrying $i$ |
 | $\mathrm{Sc}$ | Scalar part: the coefficient of $e_t$, defined on $\mathbb{B}$ with no matrix |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The corpus's one bracket for its four forms: the subscript records the two conjugations, the one applied to the first argument and the one applied to the second, and the value is the scalar part of the corresponding general product |

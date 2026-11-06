@@ -102,7 +102,7 @@ It is worth separating three operations that are easy to conflate at this point,
 
 - **Multiplication by the scalar imaginary $i$** is central and is a real-linear isomorphism exchanging the sectors, $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi}$.
 - **Complex conjugation $\bar{\cdot}$** acts on the coefficients and is an algebra automorphism. Because $\bar{\cdot}$ commutes with ${}^{*}$ (the two generate the Klein four-group of conjugations together with ${}^{\natural}$), it **preserves each sector**: if $\tilde R_\psi^{*} = \tilde R_\psi$ then $(\tilde{R}_\psi^*)^{*} = (\tilde R_\psi^{*})^* = \tilde{R}_\psi^*$, and likewise for $\mathbb{B}_{\Phi}$.
-- **Hermitian conjugation ${}^{*}$** is the conjugation whose $\pm1$ eigenspaces *define* $\mathbb{B}_{\Psi,\Phi}$; it is neither $i$-multiplication nor $\bar{\cdot}$.
+- **Hermitian conjugation ${}^{*}$** is the conjugation whose $\pm1$ eigenspaces *define* $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; it is neither $i$-multiplication nor $\bar{\cdot}$.
 
 The distinction is concrete. Take $\tilde{Ξ} = e_t + i \vec e_x \in \mathbb{B}_{\Psi}$. Then
 
@@ -239,7 +239,7 @@ The second defect is that the equation is not a single-particle equation. The re
 
 Now the central question. The framework offers the decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, and the parent article used it to organize the first-order Schrödinger equation. Do the second-order structure and its conjugate pair fit the same decomposition?
 
-Write a solution as $\tilde{Ξ} = \tilde{Ξ}_+ + \tilde{Ξ}_-$ with $\tilde{Ξ}_\pm\in\mathbb{B}_{\Psi,\Phi}$. Since $\Box$ is central, real, and scalar, it preserves each sector:
+Write a solution as $\tilde{Ξ} = \tilde{Ξ}_+ + \tilde{Ξ}_-$ with $\tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$. Since $\Box$ is central, real, and scalar, it preserves each sector:
 
 $$
 \Box\tilde{Ξ}_\pm = (\Box\tilde{Ξ})_\pm ,
@@ -259,7 +259,7 @@ So every $\mathbb{B}_{\Phi}$-valued solution is the $i$-image of an $\mathbb{B}_
 
 What, then, is the doubling that the second-order structure actually needs? Two candidates are worth separating.
 
-The first is the **Hamiltonian doubling** of the second-order equation: to write it as a first-order system one introduces the conjugate momentum, so the state becomes a pair (field, rate of change of field). This is a genuine enlargement of the state space by a factor of two, and it cannot be avoided. Its relation to the sector split is only the intertwiner of the parent article: the rate $\partial/\partial R_t\,\tilde{Ξ}\in\mathbb{B}_{\Psi,\Phi}$ stays in the sector of $\tilde{Ξ}$, while $i\partial/\partial R_t\,\tilde{Ξ}$ moves to the other sector. That is the observable/generator structure of the Schrödinger article reappearing — the central $i$ converts a Hermitian object into a generator in the material sector — and it does not produce a particle–antiparticle pair. It is the same $i$-intertwiner, not a new algebraic ingredient.
+The first is the **Hamiltonian doubling** of the second-order equation: to write it as a first-order system one introduces the conjugate momentum, so the state becomes a pair (field, rate of change of field). This is a genuine enlargement of the state space by a factor of two, and it cannot be avoided. Its relation to the sector split is only the intertwiner of the parent article: the rate $\partial/\partial R_t\,\tilde{Ξ}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ stays in the sector of $\tilde{Ξ}$, while $i\partial/\partial R_t\,\tilde{Ξ}$ moves to the other sector. That is the observable/generator structure of the Schrödinger article reappearing — the central $i$ converts a Hermitian object into a generator in the material sector — and it does not produce a particle–antiparticle pair. It is the same $i$-intertwiner, not a new algebraic ingredient.
 
 The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$.
 

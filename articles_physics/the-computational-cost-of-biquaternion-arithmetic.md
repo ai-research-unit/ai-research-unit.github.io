@@ -152,7 +152,7 @@ $$
 \boxed{\;M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
 $$
 
-In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi,\Phi}$ split, a point returned to below.
+In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, a point returned to below.
 
 ## The Eigenvalue Problem
 

@@ -26,7 +26,7 @@ $$
 \mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
+with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
 
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\qquad

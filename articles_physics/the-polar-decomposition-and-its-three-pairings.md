@@ -193,7 +193,7 @@ The four factors act by four different operations, and the table records which s
 | boost $\tilde U_{\mathrm b}$ | congruence | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ |
 | rotor $\tilde u_{\mathrm r}$ | conjugation | all six |
 
-The six subspaces are the centre $\mathbb{B}_{C}$, the vector space $\mathbb{B}_{V}$, the real quaternion space $\mathbb{B}_{H}$, the imaginary quaternion space $\mathbb{B}_{iH}$, and the two sectors $\mathbb{B}_{\Psi,\Phi}$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
+The six subspaces are the centre $\mathbb{B}_{C}$, the vector space $\mathbb{B}_{V}$, the real quaternion space $\mathbb{B}_{H}$, the imaginary quaternion space $\mathbb{B}_{iH}$, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
 
 On the material sector the boost reads
 
@@ -315,7 +315,7 @@ The pairings read the same data under different headings, and the readings are d
 | $\Rho=\sqrt N$, $\vec{Ζ}$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
 | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
-| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and anti-Hermitian sectors |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian sectors |
 
 ## Further Reading
 

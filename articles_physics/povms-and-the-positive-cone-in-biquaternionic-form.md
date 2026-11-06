@@ -264,7 +264,7 @@ The general measurement is a convex decomposition of the identity into effects t
 
 **1. The effect body in higher dimensions.** The characterization $|\vec a|\leq\min(a_t,1-a_t)$ is special to $M_2(\mathbb{C})$. For $\mathbb{B}\otimes\mathbb{B}$ and its effects, what is the analogous coefficient condition, and does the biquaternion norm of the tensor product define the cone?
 
-**2. Instruments and information.** A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{B}_{\Psi,\Phi}$?
+**2. Instruments and information.** A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$?
 
 **3. The self-duality and the two pairings.** The cone is self-dual under the plain form; the biquaternion norm defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the biquaternion norm's cone and the measurement pairing is the normalised Hermitian form, read through the trace?
 

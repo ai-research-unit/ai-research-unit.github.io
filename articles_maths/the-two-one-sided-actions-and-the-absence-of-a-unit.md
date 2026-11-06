@@ -159,7 +159,7 @@ The remarkable subspaces are the centre $\mathbb{B}_{C}$, the vector subspace $\
 - On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_t + i\vec p \mapsto a_t - i\vec p$, which stays in $\mathbb{B}_{\Psi}$.
 - On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_t + \vec q \mapsto i b_t - \vec q$, which stays in $\mathbb{B}_{\Phi}$.
 
-**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{B}_{H}$, and where they differ by a sign, on $\mathbb{B}_{iH}$ and on $\mathbb{B}_{\Psi,\Phi}$.
+**Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{B}_{H}$, and where they differ by a sign, on $\mathbb{B}_{iH}$ and on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
 ## The Unit Candidate as an Idempotent
 

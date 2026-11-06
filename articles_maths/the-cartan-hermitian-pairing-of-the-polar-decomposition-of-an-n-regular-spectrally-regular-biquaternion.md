@@ -47,7 +47,7 @@ The article takes the following results as established and does not prove them a
 | the four factors, their ranges and their order | *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
 | the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
-| the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi,\Phi}$ and the two exponents |
+| the Hermitian and anti-Hermitian split | *Hermitian and Skew-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
 | the positive cone and the positive square root | *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition* | $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ and its positivity |
 | the Cartan decomposition | *The Cartan Involution and the Cartan Decomposition*, §*The Cartan Decomposition* | the split of the exponents into $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
@@ -125,7 +125,7 @@ and the two factors of $\tilde{Q}^{*}$ in the Cartan shape are therefore $\tilde
 The Hermitian conjugation ${}^{*}$ is an involution, so the algebra splits into its fixed space and its anti-fixed space,
 
 $$
-\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\} .
+\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\} .
 $$
 
 This is the split of *Hermitian and Skew-Hermitian Elements*, §*The Two Halves*.
@@ -471,7 +471,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
 | $\langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$ | the quaternionic bilinear square of the vector part |
 | $\tilde q_r$ | the real quaternion part of $\tilde{Q}$, the element with the real parts of the four coefficients |
-| $\mathbb{B}_{\Psi,\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | the Hermitian and the anti-Hermitian subspaces |
+| $\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | the Hermitian and the anti-Hermitian subspaces |
 | $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)\cong \mathrm{U}(1)\cdot\mathrm{Sp}(1)$ | the $*$-unitary group of the algebra, home of the second factor |
 | $\mathcal H = \ln \tilde Q_H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the Hermitian exponent, in $\mathbb{B}_{\Psi}$ |
 | $\mathcal K = \ln \tilde Q_0 = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | the anti-Hermitian exponent, in $\mathbb{B}_{\Phi}$ |

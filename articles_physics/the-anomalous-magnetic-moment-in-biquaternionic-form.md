@@ -238,7 +238,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $X\mapsto i\vec e_mX$, $X\mapsto i\vec e_kX\vec e_z$ | The two actions of the six bivectors, rotations and timelike pairs |
 | $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\sigma_{\mu\nu}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
 | Product of two directions | the metric $\varepsilon_\mu$ on the diagonal and nothing off it, plus the bivector |
-| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |
 | $\tilde S_m=\tfrac{\hbar}{2}i\vec e_m$ | Spin generator; $\mathcal G_{12}$ acts as $2\tilde S_3/\hbar$ |
 | $L_aR_b$, $L_aR_bX=aXb$ | The operator of the two multipliers, used in §*The Reduction of a Numerator* only |
 | $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | The operator of the direction $\mu$ |

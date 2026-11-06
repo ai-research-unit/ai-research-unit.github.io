@@ -22,7 +22,7 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi,\Phi}$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
 The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -39,7 +39,7 @@ $$
 The Hermitian and anti-Hermitian subspaces are
 
 $$
-\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
 $$
 
 On $\mathbb{B}_{\Phi}$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{B}_{\Psi}$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central.
@@ -400,7 +400,7 @@ $$
 
 This is the precise sense in which the sandwich uses **two slots**. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is the square root of the corresponding product; the exponent reading of that relation is in the companion.
 
-The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{B}_{\Psi,\Phi}$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a real splitting into Hermitian sectors, and they are different decompositions.
+The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a real splitting into Hermitian sectors, and they are different decompositions.
 
 ## The Image and the Kernel
 
@@ -498,7 +498,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 | $i$ | the central scalar imaginary, $i^{2}=-1$ |
 | $\tilde Q^{*}$ | the Hermitian conjugation $\overline{\tilde Q^{\natural}}$ |
 | $\natural$, $\bar\cdot$ | the quaternion and coefficient conjugations |
-| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian sandwich |
 | $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$ | the scaling of the norm; an isometry on the unit-norm slice |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm of the polar series |
@@ -515,7 +515,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
 | $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ | the rapidity and the rotation angle |
-| $B_\pm$ | the $4\times4$ matrices of the boost on $\mathbb{B}_{\Psi,\Phi}$ |
+| $B_\pm$ | the $4\times4$ matrices of the boost on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ |
 | $\mathsf R(\theta,\vec u_{\mathrm r})$ | the Rodrigues rotation matrix of the rotor |
 | $G_\pm$ | the matrices of the norm on the two sectors, $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+$ |
 | $CO^{+}(1,3)$ | the linear conformal Lorentz group, the image of the sandwich |

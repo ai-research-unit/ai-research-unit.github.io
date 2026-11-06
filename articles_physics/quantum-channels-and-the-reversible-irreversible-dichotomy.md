@@ -292,7 +292,7 @@ The dichotomy of this article is the dichotomy of **Kraus rank**: a channel is r
 
 **1. Empirical content.** As for the rest of the framework, the central question is whether the biquaternion formulation predicts anything standard quantum information theory does not. A reformulation of quantum channels is, by itself, empirically empty.
 
-**2. The geometry of the channel set.** The general qubit channel is an affine contraction of the Bloch ball with a specific positivity structure. Which affine contractions are completely positive, and how does the biquaternion description of the Choi matrix read in terms of $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, and $\mathbb{B}_{\Psi,\Phi}$? A complete classification in the biquaternion language has not been carried out here.
+**2. The geometry of the channel set.** The general qubit channel is an affine contraction of the Bloch ball with a specific positivity structure. Which affine contractions are completely positive, and how does the biquaternion description of the Choi matrix read in terms of $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$? A complete classification in the biquaternion language has not been carried out here.
 
 **3. Departures from complete positivity.** The framework is built on completely positive maps. Physically motivated modifications sometimes relax complete positivity to positivity while retaining trace preservation. How would such a relaxation read in the biquaternion algebra, and is there a natural algebraic home for it?
 

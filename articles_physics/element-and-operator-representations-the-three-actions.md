@@ -267,7 +267,7 @@ The identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$. A frame change is spec
 
 The sandwich has three properties that the general two-sided operator does not.
 
-**It preserves the two sectors.** For $X\in\mathbb{B}_{\Psi,\Phi}$,
+**It preserves the two sectors.** For $X\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$,
 
 $$
 (\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\pm\,\tilde QX\tilde Q^{*},

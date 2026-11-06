@@ -329,7 +329,7 @@ The monopole is the total charge, and it has no magnetic partner at any order. I
 
 ### $l = 1$: The Electric and Magnetic Dipoles
 
-The dipole is the first order with two multiplet types. In a static or stationary setting the electric dipole field is purely Hermitian and the magnetic dipole field purely anti-Hermitian, so the two types sit in the two sectors $\mathbb{B}_{\Psi,\Phi}$; in radiation each type has both parts. In the radiation vector they are the two lowest contributions,
+The dipole is the first order with two multiplet types. In a static or stationary setting the electric dipole field is purely Hermitian and the magnetic dipole field purely anti-Hermitian, so the two types sit in the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; in radiation each type has both parts. In the radiation vector they are the two lowest contributions,
 
 $$
 \vec F_{E1} = -i\omega\,\vec p ,
@@ -359,7 +359,7 @@ The pattern of the lowest orders is the pattern for all of them.
 
 - At each order $l\ge1$ there is an electric multiplet $E_l$ and a magnetic multiplet $M_l$, each of complex dimension $2l+1$, of opposite parity.
 - The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicity amplitudes; a boost rotates the two types into one another and preserves the helicities. Their covariant packaging is the covariant multipole tensor, and the self-dual field strength is the corresponding covariant object on the field side. The order $l$ itself is a rest-frame label, not a Lorentz invariant.
-- In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{B}_{\Psi,\Phi}$; in radiation each type has both parts.
+- In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; in radiation each type has both parts.
 - In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$; a multiplet of order $l$ radiates with power $\propto\omega^{2l+2}$.
 - For radiation the field is null, $\langle\tilde{F}\rangle_{\natural} = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
 

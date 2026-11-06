@@ -578,7 +578,7 @@ from which three consequences follow at once. First, $\tilde{Q}_1\tilde{Q}_2$ is
 $$
 (\tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1)^{*} \;=\; \tilde{Q}_2\tilde{Q}_1 - \tilde{Q}_1\tilde{Q}_2,
 \qquad\text{so}\qquad
-[\mathbb{B}_{\Psi,\Phi},\mathbb{B}_{\Psi,\Phi}] \subseteq \mathbb{B}_{\Phi} .
+[\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}] \subseteq \mathbb{B}_{\Phi} .
 $$
 
 The material sector is therefore closed under the bracket and not under the product, which is the form in which the Minkowski signature re-enters the algebra: the antilinear involution $\flat$ makes $\mathbb{B}_{\Phi}$ a real slice whose complexification is $\mathbb{B}$, and $i$ identifies the two sectors only as anti-isometric real quadratic spaces, with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not as algebras.
@@ -634,7 +634,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde R_\
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |
 | $\tilde R_\psi = -\tfrac{i}{2}\tilde R_\varphi$ | Mirror map carrying $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$ |
 | $\mathrm{Sc}(\tilde R_\psi) = \tfrac{1}{2}c r'_{t}$, $\langle\tilde R_\psi\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\varphi\rangle_{\natural}$ | Scalar part and norm under the mirror map; trace reading $\mathrm{Tr}(\tilde R_\psi) = c r'_{t}$ |
-| $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$ | Product rule within a sector; $[\mathbb{B}_{\Psi,\Phi},\mathbb{B}_{\Psi,\Phi}] \subseteq \mathbb{B}_{\Phi}$ |
+| $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$ | Product rule within a sector; $[\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}] \subseteq \mathbb{B}_{\Phi}$ |
 | $\tilde{Q} = r \exp(i\alpha)\tilde U_{\mathrm b}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
 | $\tilde U_{\mathrm b}$, $\tilde{q}$ | Boost factor, in $\mathbb{B}_{\Psi}$ positive definite; rotor, in $Sp(1)$ |
 | $\tilde U_{\mathrm b}\tilde{q}$, $\exp(i\alpha)\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $\mathrm{U}(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |

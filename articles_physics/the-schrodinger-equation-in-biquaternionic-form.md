@@ -20,7 +20,7 @@ The question is not decorative. In and around the algebra $\mathbb{B}$ there are
 
 The first two are different elements of the algebra; no conjugation relates them, and they play unrelated roles. The third is not an element of the algebra at all but a structure that the state space carries. Conflating them is the characteristic error, and it produces equations that look like the Schrödinger equation but do not preserve probability. Separating them is the substance of this article.
 
-The article is organized as follows. The three objects are distinguished; the scalar imaginary is shown to exchange the sectors $\mathbb{B}_{\Psi,\Phi}$; the wave function is identified as a spinor in a Peirce carrier, a minimal left ideal here, not as a generic element of $\mathbb{B}_{\Psi}$; the equation and its solution are written and checked; the non-central alternatives are tested and one is shown to fail; the $\mathbb{B}_{\Phi}$/$\mathbb{B}_{\Psi}$ interpretation is given. It closes with an honest account of what the form adds and what it merely relabels.
+The article is organized as follows. The three objects are distinguished; the scalar imaginary is shown to exchange the sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$; the wave function is identified as a spinor in a Peirce carrier, a minimal left ideal here, not as a generic element of $\mathbb{B}_{\Psi}$; the equation and its solution are written and checked; the non-central alternatives are tested and one is shown to fail; the $\mathbb{B}_{\Phi}$/$\mathbb{B}_{\Psi}$ interpretation is given. It closes with an honest account of what the form adds and what it merely relabels.
 
 ## Three Objects That Square to Minus One
 
@@ -240,7 +240,7 @@ $$
 
 so $[H,\tilde{Ϛ}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $i\hbar\,\partial/\partial r'_t\tilde{Ϛ}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
-A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{B}_{\Psi,\Phi}$ label. The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+A structural caution belongs here. The wave function $\tilde{Ξ}_{\mathrm{sp}}$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ label. The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 

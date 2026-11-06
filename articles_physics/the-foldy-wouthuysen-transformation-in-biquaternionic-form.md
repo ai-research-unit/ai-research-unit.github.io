@@ -467,7 +467,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{B}_{\Psi,\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-c^{-2}\partial^2/\partial r'_t^2$ on the material sector |

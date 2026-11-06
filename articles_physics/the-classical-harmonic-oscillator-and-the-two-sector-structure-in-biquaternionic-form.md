@@ -106,7 +106,7 @@ $$
 This is the two-sector structure of the oscillator: **the two conjugate quadratures lie one in each sector**. The position quadrature sits along the central Hermitian direction $e_t$, the normalized momentum quadrature along the central anti-Hermitian direction $ie_t$. The decomposition is summarized by
 
 $$
-\tilde{A} = \tilde{A}_{\mathbb{B}_{\Psi}} + \tilde{A}_{\mathbb{B}_{\Phi}}, \qquad i\tilde{A}_{\mathbb{B}_{\Psi,\Phi}} = \text{an element of } \mathbb{B}_{\Phi,\Psi} ,
+\tilde{A} = \tilde{A}_{\mathbb{B}_{\Psi}} + \tilde{A}_{\mathbb{B}_{\Phi}}, \qquad i\tilde{A}_{\mathbb{B}_{\Psi}} = \text{an element of } \mathbb{B}_{\Phi} , \qquad i\tilde{A}_{\mathbb{B}_{\Phi}} = \text{an element of } \mathbb{B}_{\Psi} ,
 $$
 
 and the sector exchange that $i$ performs is exactly the map that interchanges the two quadratures.
@@ -267,7 +267,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
-| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ |
+| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector: $c r_t\,e_t + i\vec r_\psi$ |
 | $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
@@ -279,7 +279,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |
 | $a = x + i\varpi \in \mathbb{C}$ | Complex amplitude |
 | $\tilde{A} = a\,e_t \in \mathbb{B}_{C}$ | Central embedding of the amplitude |
-| $\tilde{A}_{\mathbb{B}_{\Psi,\Phi}} = \tfrac12(\tilde{A} \pm \tilde{A}^{*})$ | Sector components: $r_x\,e_t$ and $i\varpi\,e_t$ |
+| $\tilde{A}_{\mathbb{B}_{\Psi}} = \tfrac12(\tilde{A} + \tilde{A}^{*})$, $\tilde{A}_{\mathbb{B}_{\Phi}} = \tfrac12(\tilde{A} - \tilde{A}^{*})$ | Sector components: $r_x\,e_t$ and $i\varpi\,e_t$ |
 | $d\tilde{A}/dr'_t = -i\omega\tilde{A}$ | Amplitude equation; generator $-i\omega\,e_t \in \mathbb{B}_{\Phi}$ |
 | $\exp(-i\omega r'_t)$ | Phase rotation; sector exchange on the centre |
 | $E = \tfrac12 m\omega^2|a|^2$ | Energy; the Hermitian form of the amplitude |

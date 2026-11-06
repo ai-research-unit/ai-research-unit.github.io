@@ -48,7 +48,7 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 **A Kraus operator is an element, not an array.** The Kraus operators of a channel or an instrument multiply the state on both sides, $Ξ(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$, so each $\tilde K_l$ is an element of $\mathbb{B}$ and carries the tilde of the element. It is not a matrix, and the ban on a tilde on an array does not apply to it. Where the same operator is read as an array, that array is its image $\mathsf{M}_2(\tilde K_l)$, which carries no tilde, and its adjoint is the dagger, $\mathsf{M}_2(\tilde K_l)^{\dagger}=\mathsf{M}_2(\tilde K_l^{*})$; the corpus does not use that reading, and the star on the element is not a matrix adjoint.
 
-**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Unit, Index and Notation Conventions*, §*The Superscripts*.
+**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Unit, Index and Notation Conventions*, §*The Labels*.
 
 ## The Two Sides and the Renaming Theorem
 

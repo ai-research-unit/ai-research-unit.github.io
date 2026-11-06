@@ -115,7 +115,7 @@ the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non
 
 ## Three Gradings
 
-The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{B}_{\Psi,\Phi}$ grading by ${}^{*}$; a third grading, the fermion parity, is a third thing again.
+The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$; a third grading, the fermion parity, is a third thing again.
 
 **1. The fixed-point splitting.** The decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation ${}^{*}$. It is a splitting of $\mathbb{B}$ as a real vector space, and it is **not an algebra grading**: the product of two Hermitian elements need not be Hermitian. The smallest counterexample is the one the informational-space article uses to show that $\mathbb{B}_{\Psi}$ is not a subalgebra,
 
@@ -123,7 +123,7 @@ $$
 (i\vec e_x)(i\vec e_y)=i^2\vec e_x\vec e_y=-\vec e_z\in\mathbb{B}_{\Phi},
 $$
 
-whereas a grading would require $\mathbb{B}_{\Psi}\cdot\mathbb{B}_{\Psi}\subseteq\mathbb{B}_{\Psi}$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q_1,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q_1,\tilde Q_2\}$ is Hermitian, for $\tilde Q_1,\tilde Q_2$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{B}_{\Psi,\Phi}$ grading" is a phrase the corpus uses loosely.
+whereas a grading would require $\mathbb{B}_{\Psi}\cdot\mathbb{B}_{\Psi}\subseteq\mathbb{B}_{\Psi}$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q_1,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q_1,\tilde Q_2\}$ is Hermitian, for $\tilde Q_1,\tilde Q_2$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading" is a phrase the corpus uses loosely.
 
 **2. The number grading.** The Fock space is $\mathbb{N}$-graded by total particle number, with $N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.
 

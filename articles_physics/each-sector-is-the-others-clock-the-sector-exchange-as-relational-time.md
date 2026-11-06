@@ -140,7 +140,7 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 | $z = c r_t + i\,c r'_{t}$ | the clock hand; the central coordinate of an element |
 | $c r_t$, $i c r'_t$ | the informational and the material time, the two projections of the hand |
 | $\exp(i\theta)e_t$ | the one-parameter group of the centre, the motion of the hand |
-| $i\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ | the sector exchange, the quarter turn, the tick |
+| $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | the sector exchange, the quarter turn, the tick |
 
 ## Further Reading
 

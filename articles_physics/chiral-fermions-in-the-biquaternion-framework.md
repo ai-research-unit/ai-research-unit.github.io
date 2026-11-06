@@ -304,7 +304,7 @@ Two gaps are left visible. Without a non-central gauge structure the framework h
 | $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$ | Abelian curvature |
 | $[D_\mu,D_\nu]Q=\tfrac{i}{\hbar}F_{\mu\nu}Qb$ | Chiral curvature identity |
 | $e^{\alpha\vec e_z}$ | Axial rotation; $L\mapsto e^{-i\alpha}$, $R\mapsto e^{+i\alpha}$ |
-| $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugation; the algebra's real structure, which preserves $\mathbb{B}_{\Psi,\Phi}$ and mixes the two values |
+| $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugation; the algebra's real structure, which preserves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and mixes the two values |
 | $iR_{\mathrm{axf},\vec e_x}$ | Timelike frame cell; anticommutes with $\xi$, so it carries each value into the other |
 ## Further Reading
 

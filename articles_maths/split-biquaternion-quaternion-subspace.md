@@ -113,7 +113,7 @@ which is real and **positive definite**, vanishing only at $\tilde{Q} = 0$.
 
 **Proof.** With $Q_\mu = q_\mu$ real, $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \sum_\mu q_\mu^2$.
 
-Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi,\Phi}$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
+Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
 
 ### Units and Idempotents
 

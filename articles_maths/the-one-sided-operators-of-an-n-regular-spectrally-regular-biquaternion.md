@@ -64,7 +64,7 @@ $$
 The Hermitian and anti-Hermitian subspaces are
 
 $$
-\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
 $$
 
 On $\mathbb{B}_{\Phi}$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{B}_{\Psi}$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central. The **real quaternion subspace** is $\mathbb{B}_{H}=\{\tilde Q:Q_\mu\in\mathbb{R}\ \text{for all}\ \mu\}$; its imaginary multiple $\mathbb{B}_{iH}$ has all coefficients purely imaginary.
@@ -173,7 +173,7 @@ $$
 
 *Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
 
-**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form $\mathbb{B}_{\Psi,\Phi}$.
+**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form, $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$.
 
 The last clause is the subject of the next section: a complex isometry can exchange the two real forms, and the phase does exactly that.
 
@@ -295,7 +295,7 @@ $$
 
 The diagonal block $D_{\tilde Q}$ maps each sector into itself and the off-diagonal block $O_{\tilde Q}$ maps each sector into the other.
 
-*Proof.* Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{B}_{\Psi,\Phi}$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so
+*Proof.* Let $\tilde X=\tilde X_++\tilde X_-$ with $\tilde X_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$. Then $\tilde X^{*}=\tilde X_+-\tilde X_-$, so
 
 $$
 (\tilde Q\tilde X)^{*}=\tilde X^{*}\tilde Q^{*}=(\tilde X_+-\tilde X_-)\tilde Q^{*}.
@@ -585,7 +585,7 @@ $$
 
 The first two terms are in $\mathbb{B}_{\Psi}$: a real scalar and an imaginary vector. The last two terms are in $\mathbb{B}_{\Phi}$: an imaginary scalar and the real vector $c\vec b+s\vec u\times\vec b$. The rotor mixes the two sectors in general. For $a=0$ the $\mathbb{B}_{\Psi}$ part is the real scalar $-s\,\vec u\cdot\vec b$, which vanishes only when $\vec b$ is perpendicular to $\vec u$; the $\mathbb{B}_{\Phi}$ part is the real vector $c\vec b+s\vec u\times\vec b$.
 
-The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi,\Phi}$.
+The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
 
 ## The Image and the Kernel
 
@@ -716,7 +716,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $i$ | the central scalar imaginary, $i^{2}=-1$ |
 | $\tilde Q^{*}$ | the Hermitian conjugation $\overline{\tilde Q^{\natural}}$ |
 | $\natural$, $\bar\cdot$ | the quaternion and coefficient conjugations |
-| $\mathbb{B}_{\Psi,\Phi}$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian sandwich |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |

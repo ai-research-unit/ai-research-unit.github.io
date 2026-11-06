@@ -330,7 +330,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\langle s_1,s_2\rangle_{*} = \mathrm{Tr}(s_1^\dagger s_2)$ | Module inner product; spin overlap |
 | $\exp(\vec{u}S/\hbar)$ | Non-central phase; a spin rotation |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
-| $i\,\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ | The scalar imaginary exchanges the sectors |
+| $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | The scalar imaginary exchanges the sectors |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

@@ -278,7 +278,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 | $\mathbb{C}(e_t\pm i\hat\mu)$ | the doubly-null lines |
 | $\mathcal{P}_J=J\cdot\{S\ge0\}$ | the $J$-positive operator cone |
 | $\pi_x=\tfrac12(\mathrm{id}+J)$, $\pi_y=\tfrac12(\mathrm{id}-J)$ | the projections onto the centre and the vector space |
-| $\mathbb{B}_{\Psi,\Phi}$ | the informational and material sectors |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the informational and material sectors |
 
 ## Further Reading
 

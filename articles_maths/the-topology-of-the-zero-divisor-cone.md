@@ -146,7 +146,7 @@ the sphere of **real roots of $-1$**; it is compact, connected and simply connec
 - The apex is the only singular point of $\mathcal{N}$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
 - $\mathcal{N}$ is the cone on its **link** $L=\mathcal{N}\cap S^{7}_{E}$, hence contractible; the interesting topology is that of $L$.
 - The link is $L\cong S^{2}\times S^{3}\cong V_{2}(\mathbb{R}^{4})$, a closed connected $5$-manifold with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; it is not $S^{5}$, so the apex is genuinely singular.
-- The cone meets the definite planes $P_+$ and $P_-$ of the pure subspace only at the apex, while on the Lorentzian slices $\mathbb{B}_{\Psi,\Phi}$ it cuts a three-dimensional null cone with link $S^{2}\sqcup S^{2}$. The unit sphere of $P_+$ is the sphere of real roots of $-1$, $S^{2}$, the base of the Hopf fibration.
+- The cone meets the definite planes $P_+$ and $P_-$ of the pure subspace only at the apex, while on the Lorentzian slices $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it cuts a three-dimensional null cone with link $S^{2}\sqcup S^{2}$. The unit sphere of $P_+$ is the sphere of real roots of $-1$, $S^{2}$, the base of the Hopf fibration.
 
 ## Summary of Notation
 

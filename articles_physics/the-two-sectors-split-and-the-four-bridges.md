@@ -6,7 +6,7 @@ The biquaternion algebra splits into the eigenspaces of Hermitian conjugation,
 
 $$
 \mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi},\qquad
-\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\},
+\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\},
 $$
 
 and the two summands are the material and the informational sectors of the framework. The preceding articles give each sector its physics. This one asks the question that neither of them owns: which operations of the algebra couple the two sectors, and which do not.
@@ -222,7 +222,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | ${}^{*}$ | Hermitian conjugation, with $\vec e_k^{*}=-\vec e_k$ and $i^{*}=-i$ |
-| $\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
+| $\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
 | $\tilde R=\tilde R_\varphi=i c r'_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | A material element, the anti-Hermitian part |

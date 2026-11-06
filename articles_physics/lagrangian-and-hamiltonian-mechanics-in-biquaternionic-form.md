@@ -291,7 +291,7 @@ $$
 
 as follows from $\tilde q^{*}=-\tilde q$ and $(i\tilde p)^{*}=i\tilde p$ for pure real $\tilde q,\tilde p$. The phase-space coordinate is thus a general biquaternion; its **material part is the configuration** and its **informational part is $i$ times the momentum**. The two sectors of the algebra separate position from conjugate momentum, and the decomposition $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ is the algebraic form of the split of the phase space into configuration and momentum.
 
-The algebra's **complex structure** is the map $\tilde Q_3\mapsto i\tilde Q_3$. Since $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$, it exchanges the two parts; explicitly,
+The algebra's **complex structure** is the map $\tilde Q_3\mapsto i\tilde Q_3$. Since $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, it exchanges the two parts; explicitly,
 
 $$
 i\tilde Q_3=i\tilde q-\tilde p .

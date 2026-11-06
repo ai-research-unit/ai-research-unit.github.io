@@ -276,7 +276,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
-| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{B}_{\Psi,\Phi} = \mathbb{B}_{\Phi,\Psi}$ |
+| $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector |
 | $\mathbb{B}_{H}$ | Real-quaternion subalgebra; unit elements are rotation rotors |

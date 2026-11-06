@@ -233,7 +233,7 @@ The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermi
 | $S^2$ | The roots of $-1$ in $\mathbb{B}_{\Phi}$, unit pure real quaternions |
 | $r_0^2 = q_x^2 + q_y^2 + q_z^2$ | Isotropic cone of the Hermitian norm |
 | $SO(1,3)$ | Lorentz group acting on the anti-Hermitian subspace |
-| $(j\tilde{Q})^{*} = -j\tilde{Q}^{*}$ | Multiplication by $j$ swaps $\mathbb{B}_{\Psi,\Phi}$ |
+| $(j\tilde{Q})^{*} = -j\tilde{Q}^{*}$ | Multiplication by $j$ swaps $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ |
 
 ## Further Reading
 

@@ -82,7 +82,7 @@ $$
 \qquad
 \mathrm{H}_{A}=|A|^{2}\mathrm{id}\ \text{for central }A,
 $$
-it preserves the two sectors $\mathbb{B}_{\Psi,\Phi}$, and it scales the norm by
+it preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, and it scales the norm by
 $$
 \boxed{\;\langle\mathrm{H}_{\tilde Q}(\tilde Q_3)\rangle_{\natural}=|\langle\tilde Q\rangle_{\natural}|^{2}\langle\tilde Q_3\rangle_{\natural}\;}.
 $$

@@ -15,7 +15,7 @@ The article owns no theorem. Every classification, bijection and count is stated
 | The classification of the roots of $+1$: the two central roots, the purely imaginary family and the non-trivial family | [Idempotents](../articles_maths/idempotents.html) |
 | The halving map, the pair map and the spectral resolution of a root | [Idempotents](../articles_maths/idempotents.html) |
 | The idempotents, orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| The sectors $\mathbb{B}_{\Psi,\Phi}$, the Hermitian conjugation and the trace | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| The sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the Hermitian conjugation and the trace | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms to the remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The roots of $-1$ and their relation to the roots of $+1$ | [Idempotents](../articles_maths/idempotents.html) |
 | The root sets and idempotent sets of the twelve structures | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
@@ -163,7 +163,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 | $\tilde\Pi$, $\tilde\Pi_\pm$ | an idempotent and the two members of a complete pair |
 | $\tilde{Ϛ}$ | a general state |
 | $\tilde\Pi_\pm(\tilde{Ζ})=\tfrac12(e_t\pm\tilde{Ζ})$ | the halving map and its two branches |
-| $\mathbb{B}_{\Psi,\Phi}$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
+| $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
