@@ -69,9 +69,9 @@ The odd half is reached from the even half by multiplying by the time generator,
 
 Two derived forms are used below, both read off the frame cells at the place of use. A vector cell is the frame cell applied after the image of $w\in\mathbb{M}_+$,
 $$
-w = x_t e_t + i x_x\vec e_x + i x_y\vec e_y + i x_z\vec e_z ,
+w = q_t e_t + i q_x\vec e_x + i q_y\vec e_y + i q_z\vec e_z ,
 \qquad
-iR_{\vec e_x}^{\mathrm{axf}}\times(\text{image of } w) = x_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k x_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} ,
+iR_{\vec e_x}^{\mathrm{axf}}\times(\text{image of } w) = q_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k q_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} ,
 $$
 and a trivector is the frame cell applied after the image of an element of $\mathbb{M}_-$, up to a sign that depends on the orientation chosen for each trivector.
 
@@ -79,8 +79,8 @@ The decisive consequence concerns the **metric**. The biquaternion norm is the s
 
 The same fact appears in the square of a vector. For $w$ as above,
 $$
-\Bigl(x_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k x_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)^2
-= \bigl(x_t^2 - x_x^2 - x_y^2 - x_z^2\bigr)\,I_4 ,
+\Bigl(q_t\, iR_{\vec e_x}^{\mathrm{axf}} + \sum_k q_k\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)^2
+= \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
 with no relative sign between the square of the cell and the biquaternion norm. The absence of that sign is the signature showing through.
 

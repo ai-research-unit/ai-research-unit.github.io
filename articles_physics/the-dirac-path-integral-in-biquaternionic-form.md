@@ -22,13 +22,13 @@ with massless limit $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = 0$; in natural uni
 
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication, and the mass is the off-diagonal pairing of the two values of the subscript. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
-The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-$, with real coordinates $x_0 = c r'_{t}$ and $x_k$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*), so that $Q_t = ix_0$.
+The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{M}_-$, with real coordinates $x_0 = c r'_{t}$ and $r_k$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{M}_-$ Frame*), so that $Q_t = ix_0$.
 
 ## The Dirac Propagator and the Square
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two values of the subscript, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}^{\mathrm{sp}}(x) = \hat{\tilde{Ξ}^{\mathrm{sp}}}\exp(-ip\cdot x)$, with $p\cdot r_x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}^{\mathrm{sp}}(x) = \hat{\tilde{Ξ}^{\mathrm{sp}}}\exp(-ip\cdot x)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$ and $p_0 = E/c$ the contraction of the material frame. The momentum element is $\tilde{P}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -p^2,
@@ -39,9 +39,9 @@ $$
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde{\nabla}\,e^{-ip\cdot r_x} = i\tilde{P}\,e^{-ip\cdot r_x},
+\tilde{\nabla}\,e^{-ip\cdot x} = i\tilde{P}\,e^{-ip\cdot x},
 \qquad
-\tilde{\nabla}^{\natural}\,e^{-ip\cdot r_x} = i\tilde{P}^{\natural}\,e^{-ip\cdot r_x},
+\tilde{\nabla}^{\natural}\,e^{-ip\cdot x} = i\tilde{P}^{\natural}\,e^{-ip\cdot x},
 $$
 
 a derived form: the time derivative of the phase is $-ip_0$ and the spatial derivative $+ip_k$, and on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
@@ -92,7 +92,7 @@ $$
 \mathbb{D}^2 = \Box ,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}\,i\tilde{P}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=x_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde{P}\,i\tilde{P}^{\natural} = p^2$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i c r'_t$ and $Q_k=r_k$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -137,12 +137,12 @@ $$
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \mu^2\right),
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i c r'_t$ and $Q_k=x_k$, so that for a straight worldline
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i c r'_t$ and $Q_k=r_k$, so that for a straight worldline
 
 $$
-\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(r_x-x_2)^2}{T^2},
+\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(x-x_2)^2}{T^2},
 \qquad
-(r_x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec x_2\right|^2 ,
+(x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec r_2\right|^2 ,
 $$
 
 writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\mathbb{D} + \mu\right)$ applied to $\Delta_F$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
@@ -293,7 +293,7 @@ $$
 
 where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The **free propagation is diagonal**: the term that carries $A_+$ to $A_+$ and $A_-$ to $A_-$ involves no mixing, and each direction propagates independently. The **mass is off-diagonal**: the corner terms couple the two amplitudes with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.
 
-Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dx/dr'_t| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into
+Taylor-expanding and taking $\epsilon \to 0$ with the lightlike constraint $|dr_x/dr'_t| = 1$ — the particle moves at the speed of light along the null directions, one lattice site per time step — turns the pair into
 
 $$
 \frac{\partial A_+}{\partial r'_t} = -\frac{\partial A_+}{\partial r_x} + \frac{im}{\hbar}A_-,

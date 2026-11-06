@@ -271,7 +271,7 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}^{\mathrm{sp}}_L\,\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R+\bar{\tilde{Ξ}}^{\mathrm{sp}}_R\,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L+m\,(\bar{\tilde{Ξ}}^{\mathrm{sp}}_L\tilde{Ξ}^{\mathrm{sp}}_L+\bar{\tilde{Ξ}}^{\mathrm{sp}}_R\tilde{Ξ}^{\mathrm{sp}}_R)\big),
+S_{\mathrm{E}}=\int d\tau\,d^3r\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}^{\mathrm{sp}}_L\,\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R+\bar{\tilde{Ξ}}^{\mathrm{sp}}_R\,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L+m\,(\bar{\tilde{Ξ}}^{\mathrm{sp}}_L\tilde{Ξ}^{\mathrm{sp}}_L+\bar{\tilde{Ξ}}^{\mathrm{sp}}_R\tilde{Ξ}^{\mathrm{sp}}_R)\big),
 $$
 
 with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i c r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Pair Operator on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel $M=\mathbb{D}+m$ of the Gaussian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.

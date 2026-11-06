@@ -41,17 +41,17 @@ $$
 We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(r'_t)$, the source is
 
 $$
-\rho(\vec r_y, s) = ϙ\,\delta^3\!\left(\vec r_y - \vec r_q(s)\right), \qquad
-\vec J(\vec r_y, s) = ϙ\,\vec v(s)\,\delta^3\!\left(\vec r_y - \vec r_q(s)\right),
+\rho(\vec y, s) = ϙ\,\delta^3\!\left(\vec y - \vec r_q(s)\right), \qquad
+\vec J(\vec y, s) = ϙ\,\vec v(s)\,\delta^3\!\left(\vec y - \vec r_q(s)\right),
 $$
 
 and therefore
 
 $$
-\tilde J(\tilde{R}_{\varphi,2}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec r_y - \vec r_q(s)\right).
+\tilde J(\tilde{R}_{\varphi,2}) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$
 
-Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec r_y = \vec r_q(s)$; the remaining integral over $s$ localizes at the **retarded time** $r'_{t,\mathrm{ret}}$ defined implicitly by
+Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the **retarded time** $r'_{t,\mathrm{ret}}$ defined implicitly by
 
 $$
 r'_{t,\mathrm{ret}} = r'_t - \frac{\left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_q(r'_{t,\mathrm{ret}})\right|}{c}.

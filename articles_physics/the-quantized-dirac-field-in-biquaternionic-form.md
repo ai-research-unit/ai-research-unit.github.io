@@ -31,7 +31,7 @@ $$
 +b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $r_x=(r'_t,\vec r)$ and $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}=-m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, $x=(r'_t,\vec r)$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P\tilde P^{\natural}=-m^2$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
 
 $$
 \{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}
@@ -157,15 +157,15 @@ so that for one mode the mode algebra, the spin ladder and the parity element ar
 The canonical energy–momentum and charge of the quantized field are
 
 $$
-H=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl[-\sum_k i\,\vec e_k\,\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\,\vec e_z+m\,i\,\tilde{Ξ}^{\mathrm{fop}}\,\vec e_x\Bigr]\Bigr)\!:,
+H=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl[-\sum_k i\,\vec e_k\,\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\,\vec e_z+m\,i\,\tilde{Ξ}^{\mathrm{fop}}\,\vec e_x\Bigr]\Bigr)\!:,
 $$
 
 $$
-P^{\mathrm{fop}}_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\Bigr)\Bigr)\!:,
+P^{\mathrm{fop}}_k=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}^{\mathrm{fop}}}{\partial R_k}\Bigr)\Bigr)\!:,
 \qquad
 P^{\mathrm{fop}}=\sum_kP^{\mathrm{fop}}_k\vec e_k,
 \qquad
-Ϙ^{\mathrm{fop}}=\int d^3x\,:\!\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\tilde{Ξ}^{\mathrm{fop}}\bigr)\!: .
+Ϙ^{\mathrm{fop}}=\int d^3r\,:\!\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\tilde{Ξ}^{\mathrm{fop}}\bigr)\!: .
 $$
 
 **The reduction of the frame.** A frame member enters a bilinear as a factor on the left of the field and a factor on the right, either of which may be the unit, and the reduction to the factors above is one structure constant together with $i^2=-1$. The kinetic term carries the spatial member: its left factor is $i\vec e_k$ and its right factor is $\vec e_y$, and right multiplication by $i\vec e_x$ follows, so the two right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ and the two phases give $i^2=-1$, which leaves $-i\vec e_k$ on the left of the field and $\vec e_z$ on its right. The mass term carries the timelike member, whose left factor is the unit, so it reduces to $m\,i\vec e_x$ on the right with no factor on the left. The current below is reduced the same way, and the spin bilinear by its left factor alone; the reduction is a derived form of the frame's two-sided action on the field, and it uses no input beyond the multiplication of the units.
@@ -261,7 +261,7 @@ In biquaternion terms the current is an element product read through the scalar 
 The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,
 
 $$
-S_k=\int d^3x\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\,\tilde S_k\,\tilde{Ξ}^{\mathrm{fop}}\Bigr)\!:,
+S_k=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}^{\mathrm{fop}\dagger}\,\tilde S_k\,\tilde{Ξ}^{\mathrm{fop}}\Bigr)\!:,
 \qquad
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k .
 $$
@@ -296,7 +296,7 @@ $$
 \langle0|\,[\tilde{Ξ}^{\mathrm{fop}}(x),\tilde{Ξ}^{\mathrm{fop}\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$
 
-with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec r_y$,
+with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec y$,
 
 $$
 [\tilde{Ξ}^{\mathrm{fop}}(r_x),\tilde{Ξ}^{\mathrm{fop}\dagger}(r_y)]\,\tilde X
@@ -369,7 +369,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $r_x=(r'_t,\vec r)$, $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}$ | Spacetime point, plane-wave phase, and energy component |
+| $x=(r'_t,\vec r)$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$, $p_0=E_{\vec p}$ | Spacetime point, plane-wave phase, and energy component |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |

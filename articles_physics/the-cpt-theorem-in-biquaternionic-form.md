@@ -87,7 +87,7 @@ $$
 
 **The pair operator.** The two members are one operator on the pair, $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$, with $\mathbb{D}^2=\Box I$ because the two compositions $\tilde\nabla\tilde\nabla^{\natural}$ and $\tilde\nabla^{\natural}\tilde\nabla$ are both the same scalar. The massive equation is $(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0$, and its two components are the pair. Nothing else is meant by a two-sided operator in this article: the operator is the pair written once, it contains no matrix generator, and its carrier is the pair $(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)\in\mathbb{B}\oplus\mathbb{B}$.
 
-**The plane wave.** On $e^{-ip\cdot x}$ with $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r$, the gradient acts by left multiplication by its symbol
+**The plane wave.** On $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r$, the gradient acts by left multiplication by its symbol
 $$
 \tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad
 \tilde K^{\natural}=-E_{\vec p}\,e_t-i\vec p,\qquad
@@ -190,15 +190,15 @@ Two remarks on conventions. First, an overall scalar multiplying both entries is
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
-\tilde{Ξ}^{\mathrm{sp}}_R=\xi\,e^{-ip\cdot r_x}+\xi_2\,e^{+ip\cdot r_x},\qquad
+\tilde{Ξ}^{\mathrm{sp}}_R=\xi\,e^{-ip\cdot x}+\xi_2\,e^{+ip\cdot x},\qquad
 \tilde{Ξ}^{\mathrm{sp}}_L=\frac{1}{m}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R
-=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot r_x}+\tilde K_+\xi_2\,e^{+ip\cdot r_x}\bigr),
+=\frac{1}{m}\bigl(\tilde K\xi\,e^{-ip\cdot x}+\tilde K_+\xi_2\,e^{+ip\cdot x}\bigr),
 $$
 
 with
 $$
 \tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad \tilde K_+=+E_{\vec p}\,e_t-i\vec p,\qquad
-p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot\vec r,\qquad E_{\vec p}^2=\vec p^2+m^2,
+p\cdot x=E_{\vec p}r'_t-\vec p\cdot\vec r,\qquad E_{\vec p}^2=\vec p^2+m^2,
 $$
 
 and $\xi,\xi_2$ arbitrary constant elements of $\mathbb{B}$, with no constraint relating the two: this is the point at which the arbitrariness matters, since the two members are independent elements and not two projections of one. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $\tilde K^{\natural}\tilde K=m^2$ on shell, the second branch carrying $\tilde K_+=-\tilde K$ and $\tilde K_+^{\natural}\tilde K_+=\tilde K\tilde K^{\natural}=m^2$ as well. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of $(\mathbb{D}-m)$ acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets

@@ -41,7 +41,7 @@ $$
 \tilde{Ξ}^{\mathrm{fop}}(\tilde R_\varphi)=\xi^{\mathrm{fop}}(r_x)\,e_t,
 \qquad
 \xi^{\mathrm{fop}}(r_x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot r_x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot r_x)\right),
+\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.

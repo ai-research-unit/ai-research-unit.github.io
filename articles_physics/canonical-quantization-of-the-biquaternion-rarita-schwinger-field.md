@@ -171,7 +171,7 @@ $$
 T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}} .
 $$
 
-It is antisymmetric in its three indices and vanishes when two of them coincide. The cells anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain cells rather than frame cells, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
+It is antisymmetric in its three indices and vanishes when two of them coincide. The cells anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain cells rather than frame cells, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda r_t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\xi_a\}_P\,(\Delta^{-1})_{ab}\,\{\xi_b,B\}_P ,
@@ -186,7 +186,7 @@ with $\xi_a$ the second-class constraints. The effect of the Dirac bracket is to
 The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface. Write $\vec r:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the spatial point and $\vec y$ for the same construction with $y$; then
 
 $$
-\{\tilde{Ξ}^{\mathrm{sp}}_\mu(r'_t,\vec r),\,\pi_\nu(r'_t,\vec r_y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec r-\vec r_y) ,
+\{\tilde{Ξ}^{\mathrm{sp}}_\mu(r'_t,\vec r),\,\pi_\nu(r'_t,\vec y)\}=i\,P_{\mu\nu}\,\delta^{(3)}(\vec r-\vec y) ,
 $$
 
 the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the preceding section, read from its action, and it is that projector that closes the algebra on $(P\tilde{Ξ}^{\mathrm{sp}})_\mu$. The mode expansion carries four polarizations,
@@ -199,7 +199,7 @@ a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x)
 \right] ,
 $$
 
-with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot r_x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
+with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
 
 $$
 \bigl(\mathbb{D}_p-m\bigr)\zeta_{\mu,r}=0 ,
@@ -417,7 +417,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\tilde{Ξ}^{\mathrm{sp}}_\mu\mapsto\tilde{Ξ}^{\mathrm{sp}}_\mu+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
 | $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain cells; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
-| $\pi_\mu=\sum_\lambda T_{\lambda t\mu}(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda)$, $\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda:=\tilde{Ξ}^{\mathrm{sp}\dagger}_\lambdaiR_{\vec e_x}^{\mathrm{axf}}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
+| $\pi_\mu=\sum_\lambda T_{\lambda r_t\mu}(\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda)$, $\bar{\tilde{Ξ}}^{\mathrm{sp}}_\lambda:=\tilde{Ξ}^{\mathrm{sp}\dagger}_\lambdaiR_{\vec e_x}^{\mathrm{axf}}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |

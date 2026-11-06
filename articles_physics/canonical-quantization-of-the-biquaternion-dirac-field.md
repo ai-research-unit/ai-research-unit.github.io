@@ -209,10 +209,10 @@ The three reasons are aspects of one theorem. We note only that they all point t
 The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the amplitudes $\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency branch spanned by $\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\exp(+ip\cdot x)$, with $r=1,2$ and
 
 $$
-E_{\vec p}=+\sqrt{\vec p^2+m^2},\qquad p\cdot r_x:=E_{\vec p}r'_t-\vec p\cdot X,
+E_{\vec p}=+\sqrt{\vec p^2+m^2},\qquad p\cdot x:=E_{\vec p}r'_t-\vec p\cdot X,
 $$
 
-for the point $r_x=(X,r'_t)$; each amplitude is an element of $\mathbb{B}$. The covariant normalizations, orthogonality, and spin sums established there are written with the Dirac pairing
+for the point $x=(X,r'_t)$; each amplitude is an element of $\mathbb{B}$. The covariant normalizations, orthogonality, and spin sums established there are written with the Dirac pairing
 
 $$
 \langle\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}:=\mathrm{Sc}\big(\tilde{Ξ}^{\mathrm{sp}*}i\tilde{Ξ}\vec e_x\big)=\bar{\tilde{Ξ}}^{\mathrm{sp}}\tilde{Ξ},
@@ -242,8 +242,8 @@ Quantization consists in replacing the constant coefficients of the classical ex
 
 $$
 \boxed{\;\tilde{Ξ}^{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot r_x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot r_x)\Big]\;}.
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big]\;}.
 $$
 
 The field and its adjoint,
@@ -514,7 +514,7 @@ The field expands in the plane-wave solutions established by the parent article,
 
 $$
 \tilde{Ξ}^{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_r
-\Big[a^{\mathrm{fop}}_r(\vec p)\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\exp(-ip\cdot r_x)+b^{\mathrm{fop}\dagger}_r(\vec p)\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\exp(+ip\cdot r_x)\Big],
+\Big[a^{\mathrm{fop}}_r(\vec p)\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\exp(-ip\cdot x)+b^{\mathrm{fop}\dagger}_r(\vec p)\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\exp(+ip\cdot x)\Big],
 $$
 
 with the mode anticommutators $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=\{b^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a^{\mathrm{fop}\dagger}_r)^2=0$.

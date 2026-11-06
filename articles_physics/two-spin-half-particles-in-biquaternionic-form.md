@@ -21,7 +21,7 @@ $$
 with the bilinear product $(x\otimes y)(x_2\otimes y_2)=x\,x_2\otimes y\,y_2$ and the trace
 
 $$
-\mathrm{Tr}(r_x\otimes r_y)=\mathrm{Tr}_\mathbb{B}(r_x)\,\mathrm{Tr}_\mathbb{B}(r_y),\qquad
+\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad
 \mathrm{Tr}_\mathbb{B}(e_t)=2,\qquad \mathrm{Tr}_\mathbb{B}(\vec e_k)=0 ,
 $$
 

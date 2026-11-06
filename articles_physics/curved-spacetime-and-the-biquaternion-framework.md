@@ -64,7 +64,7 @@ An algebra has no points, so it cannot have a curvature. The statement is worth 
 
 Two forms of that map are available, and they are the two routes examined below:
 
-- a **scale** on the imaginary time axis, $i c r'_t \mapsto i\,c(r_x)\,r'_t$, which is the framework's own local complex structure; and
+- a **scale** on the imaginary time axis, $i c r'_t \mapsto i\,c(x)\,r'_t$, which is the framework's own local complex structure; and
 - a **frame**, $dx_\mu \mapsto \tilde{E}_\mu(x)\,dx_\mu$, which is the tetrad of the orthonormal-frame formulation of general relativity.
 
 They are different devices, and it is a mistake to treat them as the same one. The first makes a piece of the embedding's scale local while leaving the frame rigid; the second makes the frame local while leaving every scale to the frame itself. The first is the framework's proposal and yields too little to be general relativity; the second yields everything kinematically and is no longer specifically biquaternionic.

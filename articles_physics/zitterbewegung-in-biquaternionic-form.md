@@ -24,7 +24,7 @@ $$
 i\hbar\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial r'_t} = H\tilde{Ξ}^{\mathrm{sp}}, \qquad H = c\sum_{k=x,y,z}p_k\,\alpha_k + \beta\,mc^2,
 $$
 
-with $p_k=-i\hbar\,\partial/\partial x_k$ and the two maps
+with $p_k=-i\hbar\,\partial/\partial r_k$ and the two maps
 
 $$
 \alpha_k:\ \tilde Q\mapsto\vec e_k\,\tilde Q\,\vec e_z, \qquad \beta:\ \tilde Q\mapsto i\,\tilde Q\,\vec e_x .
@@ -53,7 +53,7 @@ $$
 and the last form is what makes the integration below elementary. On the two energy branches the eigenvalues of the oscillating factor are $\exp(\pm 2iEr'_t/\hbar)$, so the angular frequency is $2E/\hbar$, and integrating once gives the position
 
 $$
-\boxed{\;x_k(r'_t) = x_k(0) + \frac{c^2p_k}{H}\,r'_t \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH r'_t/\hbar)-1\Big)A_k\;}.
+\boxed{\;r_k(r'_t) = r_k(0) + \frac{c^2p_k}{H}\,r'_t \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH r'_t/\hbar)-1\Big)A_k\;}.
 $$
 
 At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEr'_t/\hbar)$ and a negative-frequency component $\exp(+iEr'_t/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.

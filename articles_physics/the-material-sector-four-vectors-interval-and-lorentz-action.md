@@ -134,7 +134,7 @@ The temporal coordinate enters as $i c r'_t$. The factor $i$ is what makes the t
 For a timelike worldline the proper time is
 
 $$
-d\tau=\frac{1}{c}\sqrt{-\langle d\tilde Q\rangle_{\natural}}=\sqrt{d{r'_{t}}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
+d\tau=\frac{1}{c}\sqrt{-\langle d\tilde Q\rangle_{\natural}}=\sqrt{d{r'_{t}}^2-\frac{dr_x^2+dr_y^2+dr_z^2}{c^2}},
 $$
 
 and it is the parameter along the worldline. For a null worldline the proper time vanishes, and the worldline is a light ray. The causal structure is the sign of the norm; the future and past cones are its two sheets.
@@ -157,7 +157,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | $(c r'_{t},x,y,z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ |
+| four-position | $\tilde R=\tilde R_\varphi=i c r'_t\,e_t+\vec r$ | $(c r'_{t},r_x,r_y,r_z)$ | $s^2=-c^2{r'_{t}}^2+\lvert\vec r\rvert^2$ |
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -259,7 +259,7 @@ $$
 \tilde Q_2=\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}=i c\tau\cosh\theta^{\mathrm{rpd}}\,e_t-c\tau\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
 $$
 
-the standard boost $r'_{t,2}=\tau\cosh\theta^{\mathrm{rpd}}$, $x_2=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
+the standard boost $r'_{t,2}=\tau\cosh\theta^{\mathrm{rpd}}$, $r_y=-\gamma v\tau=-c\tau\sinh\theta^{\mathrm{rpd}}$, and $\langle\tilde Q_2\rangle_{\natural}=-c^2\tau^2$ is unchanged.
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $\langle\tilde P\rangle_{\natural}=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 

@@ -123,8 +123,8 @@ The field is the element-valued map $\tilde{Ξ}^{\mathrm{fop}}:\mathbb{R}^{1,3}\
 
 $$
 \tilde{Ξ}^{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot r_x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot r_x)\Big],
+\sum_{r=1}^{2}\Big[a^{\mathrm{fop}}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{+}(\vec p)\,\exp(-ip\cdot x)
++b^{\mathrm{fop}\dagger}_r(\vec p)\,\tilde{Ξ}^{\mathrm{sp}(r)}_{-}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
 where $\tilde{Ξ}^{\mathrm{sp}(r)}_{\pm}(\vec p)$ are the parent's positive- and negative-frequency amplitudes, elements of $\mathbb{B}$, and $\tilde{Ξ}^{\mathrm{fop}\dagger}$ is the Hermitian conjugate.

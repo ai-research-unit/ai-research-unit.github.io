@@ -31,7 +31,7 @@ The answer developed here is narrower than the title might suggest, and it is wo
 
 The body is written in the biquaternion algebra. An action on an element is written as it acts, $\tilde Q\mapsto a\tilde Qb$, and a cell appears only where the operator itself is the subject, in *The Fermionic Coupling at First Order*. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$, the real coordinates $x_\mu=(c r'_{t},x,y,z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The one symbol this article fixes for itself is the dual material basis $\hat\varepsilon_\lambda$, fixed by $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$, the real coordinates $x_\mu=(c r'_{t},r_x,r_y,r_z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i c r'_t$, $-c^2{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The one symbol this article fixes for itself is the dual material basis $\hat\varepsilon_\lambda$, fixed by $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
 
 One derived form is needed repeatedly, and it is recorded once. The framework's imaginary time is $Q_t=ix_0$, so $\partial/\partial R_t=-i\,\partial/\partial x_0$ and the biquaternionic d'Alembertian is the tensorial wave operator,
 
@@ -39,7 +39,7 @@ $$
 \Box = \partial^2/\partial R_t^2 + \Delta = -\frac{1}{c^2}\frac{\partial^2}{\partial r'_t^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$
 
-A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i c r'_t$.
+A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_0x_0+k_1r_x+k_2r_y+k_3r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i c r'_t$.
 
 ## Linearized Gravity in Standard Form
 
@@ -62,7 +62,7 @@ At linear order the Christoffel symbols are
 $$
 \begin{aligned}
 \Gamma_{0\mu\nu} &= -\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu 0} + \partial/\partial x_\nu h_{\mu 0} - \partial/\partial x_0 h_{\mu\nu}\right),\\[2pt]
-\Gamma_{k\mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu k} + \partial/\partial x_\nu h_{\mu k} - \partial/\partial x_k h_{\mu\nu}\right),
+\Gamma_{k\mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu k} + \partial/\partial x_\nu h_{\mu k} - \partial/\partial r_k h_{\mu\nu}\right),
 \end{aligned}
 $$
 
@@ -79,7 +79,7 @@ $$
 \mathrm{Ric}_{\mu\nu} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\mu\,D_\nu
 +\partial/\partial x_\nu\,D_\mu
 -\Box h_{\mu\nu}-\partial^2/\partial x_\mu\partial x_\nu h\Bigr),
-\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_k\partial/\partial x_k h_{k\nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
+\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_k\partial/\partial r_k h_{k\nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
 \end{aligned}
 $$
 
@@ -87,7 +87,7 @@ and the Ricci scalar is
 
 $$
 \mathrm{Ric} = -\mathrm{Ric}_{00}+\mathrm{Ric}_{11}+\mathrm{Ric}_{22}+\mathrm{Ric}_{33}
-= \partial^2/\partial x_0^2\,h_{00}-\sum_k\left(\partial^2/\partial x_0\partial x_k\,h_{k0}+\partial^2/\partial x_k\partial x_0\,h_{0k}\right)+\sum_{k,l}\partial^2/\partial x_k\partial x_l\,h_{lk}-\Box h .
+= \partial^2/\partial x_0^2\,h_{00}-\sum_k\left(\partial^2/\partial x_0\partial r_k\,h_{k0}+\partial^2/\partial r_k\partial x_0\,h_{0k}\right)+\sum_{k,l}\partial^2/\partial r_k\partial x_l\,h_{lk}-\Box h .
 $$
 
 The Riemann tensor is gauge invariant, and therefore so are $\mathrm{Ric}_{\mu\nu}$ and $\mathrm{Ric}$: they are constructed from the metric perturbation in a way that the relabelling leaves invariant.
@@ -105,17 +105,17 @@ so that the map is its own inverse, $\bar{\bar h}_{\mu\nu} = h_{\mu\nu}$, and on
 $$
 \begin{aligned}
 G_{00} = \mathrm{Ric}_{00} + \tfrac{1}{2}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0k} = \mathrm{Ric}_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial x_k\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
-G_{kl} = \mathrm{Ric}_{kl} - \tfrac{1}{2}\delta_{kl}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial x_k\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{kl}-\delta_{kl}\bar{S}\Bigr).
+G_{0k} = \mathrm{Ric}_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial r_k\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
+G_{kl} = \mathrm{Ric}_{kl} - \tfrac{1}{2}\delta_{kl}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_k\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{kl}-\delta_{kl}\bar{S}\Bigr).
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_k\partial/\partial x_k\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_k(\partial^2/\partial x_0\partial x_k\bar{h}_{k0}+\partial^2/\partial x_k\partial x_0\bar{h}_{0k})+\sum_{k,l}\partial^2/\partial x_k\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_k\partial/\partial r_k\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_k(\partial^2/\partial x_0\partial r_k\bar{h}_{k0}+\partial^2/\partial r_k\partial x_0\bar{h}_{0k})+\sum_{k,l}\partial^2/\partial r_k\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** is the condition
 
 $$
--\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0,
+-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial r_x\bar{h}_{1\nu}+\partial/\partial r_y\bar{h}_{2\nu}+\partial/\partial r_z\bar{h}_{3\nu} = 0,
 $$
 
 which is four conditions on the ten components of $\bar{h}_{\mu\nu}$ and can always be imposed. In it $G_{\mu\nu} = -\tfrac{1}{2}\Box\bar{h}_{\mu\nu}$, and the linearized Einstein equation $G_{\mu\nu} = \tfrac{8\pi G}{c^4}T_{\mu\nu}$ becomes
@@ -393,7 +393,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 2. **The non-abelian curvature and the gauge article's gap.** The linearized gravitational field strength is an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-Lie-algebra-valued two-form. The gauge article records that the framework supplies non-commutativity but not a compactness or reality condition selecting a gauge algebra. Does the local Lorentz algebra, which is non-compact and selected by the metric, meet that gap, or is it a different structure that the electromagnetic case cannot use?
 
-3. **A biquaternionic harmonic condition.** The harmonic condition $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
+3. **A biquaternionic harmonic condition.** The harmonic condition $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial r_x\bar{h}_{1\nu}+\partial/\partial r_y\bar{h}_{2\nu}+\partial/\partial r_z\bar{h}_{3\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
 
 4. **The Weyl tensor in the algebra.** The propagating content of linearized gravity is the Weyl tensor, and its natural biquaternionic encoding is through the self-dual and anti-self-dual bivectors. Can the five Newman–Penrose scalars be written as components of biquaternion objects, and does the algebra's decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise them?
 
@@ -532,7 +532,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\hat\varepsilon_\nu$ | Dual material basis, $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight of the frame, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; used in *The Fermionic Coupling at First Order* and *The Legacy Pauli Gamma Formulation* |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $x_\mu = (c r'_{t},x,y,z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
+| $x_\mu = (c r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial R_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r'_t^2+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
@@ -548,7 +548,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |
 | $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Ricci tensor and Einstein tensor |
 | $\tilde C_{\mu\nu} = \tfrac12\sum_{\rho\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\varepsilon_\rho^{\natural}\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
-| $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0$ | Harmonic gauge |
+| $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial r_x\bar{h}_{1\nu}+\partial/\partial r_y\bar{h}_{2\nu}+\partial/\partial r_z\bar{h}_{3\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |
 | $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |

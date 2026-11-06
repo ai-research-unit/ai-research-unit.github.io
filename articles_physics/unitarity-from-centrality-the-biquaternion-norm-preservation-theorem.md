@@ -197,9 +197,9 @@ SU(2)=\mathrm{U}(2)\cap SL(2,\mathbb{C})\ \subset\ \mathrm{U}(2)\ \subset\ G_N=\
 $$
 with $SU(2)$ the elements that are simultaneously $*$-unitary and of unit norm — the quaternionic unit sphere. The chain records the whole norm-preservation structure: the smallest group is the one that preserves both norms **and** the algebra's multiplication; enlarging to $\mathrm{U}(2)$ keeps the Hermitian norm and the multiplication but gives up the unit-norm condition; enlarging to $G_N$ keeps only the biquaternion norm.
 
-**The $*$-unitary group is not the unit sphere.** The unit group of a form is the set of elements on which the form takes the value $1$; the $*$-unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde Q\tilde Q^{*}$ is Hermitian, so writing it as $z_te_t+i\vec r_z$ with $z_t\in\mathbb{R}$ and $\vec z\in\mathbb{R}^3$,
+**The $*$-unitary group is not the unit sphere.** The unit group of a form is the set of elements on which the form takes the value $1$; the $*$-unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde Q\tilde Q^{*}$ is Hermitian, so writing it as $z_te_t+i\vec z$ with $z_t\in\mathbb{R}$ and $\vec z\in\mathbb{R}^3$,
 $$
-\tilde Q\tilde Q^{*}=e_t\iff z_t=1\ \text{and}\ \vec r_z=0,
+\tilde Q\tilde Q^{*}=e_t\iff z_t=1\ \text{and}\ \vec z=0,
 \qquad
 \langle\tilde Q,\tilde Q\rangle_{*}=1\iff z_t=1 ,
 $$

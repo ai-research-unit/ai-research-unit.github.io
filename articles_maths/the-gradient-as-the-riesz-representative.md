@@ -140,7 +140,7 @@ for every $h\in\mathbb{C}$.
 
 *Proof.* Let $h=\alpha+i\beta$, and write $g_1=\partial F/\partial q$ and $g_2=\partial F/\partial q'$ at $Q$, with $g=g_1+ig_2$. Then $h\bar g=(\alpha+i\beta)(g_1-ig_2)=\alpha g_1+\beta g_2+i(\beta g_1-\alpha g_2)$, whose real part is $\alpha g_1+\beta g_2=DF(Q)[h]$. So $g$ satisfies the defining identity, and it is the gradient by uniqueness.
 
-**Remark (the Wirtinger reading, and the factor two).** The two Wirtinger operators of the corpus are the unhalved ones of *Operator and Calculus Conventions*, $\partial/\partial Q=\partial/\partial q+\partial/\partial(iq')$ and $\partial/\partial\bar Q=\partial/\partial q-\partial/\partial(iq')$, and with them
+**Remark (the Wirtinger reading, and the factor two).** The two Wirtinger operators of the corpus are the unhalved ones of *Operator and Calculus Conventions*, there written for a coordinate $R_\mu=c_\mu(r_\mu+ir'_\mu)$ as $\partial/\partial R_\mu$ and $\partial/\partial\bar R_\mu$, and in the plane, with the dilation one, $\partial/\partial Q=\partial/\partial q+\partial/\partial(iq')$ and $\partial/\partial\bar Q=\partial/\partial q-\partial/\partial(iq')$. With them
 
 $$
 \operatorname{grad}F=\frac{\partial F}{\partial\bar Q}

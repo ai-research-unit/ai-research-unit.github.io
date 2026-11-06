@@ -14,14 +14,14 @@ $$
 $$
 and the retarded solution of the potential equation $\Box\tilde{A} = -\mu\tilde J$ is
 $$
-\boxed{\;\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec r_y,\,r'_t - R/c)}{R}\,d^3y,
-\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec r_y|\;},
+\boxed{\;\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,r'_t - R/c)}{R}\,d^3y,
+\qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y|\;},
 $$
 whose scalar and vector parts are the standard retarded potentials
 $$
-\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho(\vec r_y,\,r'_t - R/c)}{R}\,d^3y,
+\xi^{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \frac{\rho(\vec y,\,r'_t - R/c)}{R}\,d^3y,
 \qquad
-\vec A = \frac{\mu}{4\pi}\int \frac{\vec J(\vec r_y,\,r'_t - R/c)}{R}\,d^3y .
+\vec A = \frac{\mu}{4\pi}\int \frac{\vec J(\vec y,\,r'_t - R/c)}{R}\,d^3y .
 $$
 
 ## The Problem
@@ -186,13 +186,13 @@ The exercise's answer to "why is the physically relevant Green's function the re
 
 ## Problem 4: The Retarded Potentials from the Green's Function
 
-**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec r_y,\,r'_t - R/c)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.
+**Statement.** (a) Substitute the retarded kernel into the convolution and perform the time integral to obtain $\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,r'_t - R/c)}{R}\,d^3y$. (b) Extract the scalar and vector parts and confirm the standard retarded potentials, using $\mu c^2 = 1/\epsilon$. (c) Show that the retarded solution is automatically in the Lorenz gauge whenever the charge is conserved.
 
-**Solution. (a) The retarded convolution.** With $G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y,\,r'_t-r'_{t,2}) = \frac{1}{4\pi R}\delta(r'_t - r'_{t,2} - R/c)$ and $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|$,
+**Solution. (a) The retarded convolution.** With $G^{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y,\,r'_t-r'_{t,2}) = \frac{1}{4\pi R}\delta(r'_t - r'_{t,2} - R/c)$ and $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|$,
 $$
 \tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
-= \mu\int \frac{\delta\!\left(r'_t - r'_{t,2} - R/c\right)}{4\pi R}\,\tilde J(\vec r_y,r'_{t,2})\,d^3y\,dr'_{t,2}
-= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec r_y,\,r'_t - R/c)}{R}\,d^3y
+= \mu\int \frac{\delta\!\left(r'_t - r'_{t,2} - R/c\right)}{4\pi R}\,\tilde J(\vec y,r'_{t,2})\,d^3y\,dr'_{t,2}
+= \frac{\mu}{4\pi}\int \frac{\tilde J(\vec y,\,r'_t - R/c)}{R}\,d^3y
 $$
 the $r'_{t,2}$ integral having been performed against the delta. Every source contribution is evaluated at its own *retarded time* $r'_t - R/c$: the field at $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)$ is assembled from sources on the past light cone of that event, exactly as the causality condition requires. This is the biquaternionic form of the retarded solution, and it is the object the companion radiation article specializes to a point charge.
 
@@ -206,7 +206,7 @@ using $\mu c^2 = \mu/(\epsilon\mu) = 1/\epsilon$. The vector part is unchanged b
 $$
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J^{\mathrm{ret}}}{R}\,d^3y ,
 $$
-where $\rho^{\mathrm{ret}} = \rho(\vec r_y, r'_t - R/c)$ and $\vec J^{\mathrm{ret}} = \vec J(\vec r_y, r'_t - R/c)$. These are the standard retarded potentials, obtained here from a single biquaternionic convolution rather than from four component equations.
+where $\rho^{\mathrm{ret}} = \rho(\vec y, r'_t - R/c)$ and $\vec J^{\mathrm{ret}} = \vec J(\vec y, r'_t - R/c)$. These are the standard retarded potentials, obtained here from a single biquaternionic convolution rather than from four component equations.
 
 A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(r'_t - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a *second* Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(s)|/c - r'_t$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.
 
@@ -224,7 +224,7 @@ where the last equality is the conservation of charge, and where the derivatives
 
 **Statement.** (a) For time-independent sources, show that the retarded potentials reduce to the static kernels. (b) Verify that these satisfy the static potential equation, and recover the Coulomb field of a point charge and the Biot–Savart field of a steady current, reconciling the first with the parent's static solution.
 
-**Solution. (a) The static reduction.** If $\partial/\partial r'_t\,\rho = 0$ and $\partial/\partial r'_t\,\vec J = 0$, then $\rho(\vec r_y, r'_t - R/c) = \rho(\vec r_y)$ and $\vec J(\vec r_y, r'_t - R/c) = \vec J(\vec r_y)$, and the retarded time drops out of the integrand:
+**Solution. (a) The static reduction.** If $\partial/\partial r'_t\,\rho = 0$ and $\partial/\partial r'_t\,\vec J = 0$, then $\rho(\vec y, r'_t - R/c) = \rho(\vec y)$ and $\vec J(\vec y, r'_t - R/c) = \vec J(\vec y)$, and the retarded time drops out of the integrand:
 $$
 \xi^{\mathrm{scp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon}\int\frac{\rho(\vec y)}{R}\,d^3y,
 \qquad
@@ -248,8 +248,8 @@ $$
 which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\vec u_R/R^2$,
 $$
 \vec B = \nabla\times\vec A
-= \frac{\mu}{4\pi}\int \nabla\frac{1}{R}\times\vec J(\vec r_y)\,d^3y
-= \frac{\mu}{4\pi}\int \frac{\vec J(\vec r_y)\times\vec u_R}{R^2}\,d^3y,
+= \frac{\mu}{4\pi}\int \nabla\frac{1}{R}\times\vec J(\vec y)\,d^3y
+= \frac{\mu}{4\pi}\int \frac{\vec J(\vec y)\times\vec u_R}{R^2}\,d^3y,
 $$
 the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing from the source to the field point). These are the exercise's independent checks: the retarded potentials, constructed from the light-cone kernel, reduce on time-independent sources to the two classical static solutions, which were known before the construction and were not used to build it.
 

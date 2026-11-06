@@ -1022,7 +1022,7 @@ $$
 $$
 and the trace factorises over the two factors,
 $$
-\operatorname{Tr}(r_x\otimes r_y)=\operatorname{Tr}(r_x)\,\operatorname{Tr}(r_y),\qquad
+\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\,\operatorname{Tr}(y),\qquad
 \operatorname{Tr}(e_t)=2,\qquad \operatorname{Tr}(\vec e_k)=0 .
 $$
 A subscript names the factor it traces, $\operatorname{Tr}_\mathbb{B}(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}(\vec e_k)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(e_t\otimes e_t)=4$ and $\operatorname{Tr}(\vec e_j\otimes\vec e_k)=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.

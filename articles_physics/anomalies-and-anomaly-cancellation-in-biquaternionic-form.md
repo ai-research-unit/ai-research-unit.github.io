@@ -31,12 +31,12 @@ the arrow labelled by a coordinate being the frame cell of that coordinate. The 
 **The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A$ in Heaviside–Lorentz units (the medium factors of *The Field-Strength Biquaternion and Its Invariants* are set to one). The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
 
 $$
-F_{t'i}=E_i,
+F_{r'_t i}=E_i,
 \qquad
 F_{ij}=\epsilon_{ijk}B_k ,
 $$
 
-the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{jkl}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i c r'_t$ frame, where $Q_t=i c r'_t$ and $F_{Q_t k}=iE_k/c$, and dropping the $i/c$ returns the real-time $F_{t'k}=E_k$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
+the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{jkl}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i c r'_t$ frame, where $Q_t=i c r'_t$ and $F_{Q_t k}=iE_k/c$, and dropping the $i/c$ returns the real-time $F_{r'_t k}=E_k$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
 $$
 F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
 \qquad
@@ -121,7 +121,7 @@ $$
 
 where the mass term has been reduced in the same way, $2im\,\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{sp}}=2im(-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z)=2m\,\tilde{Ξ}^{\mathrm{sp}}\vec e_z$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
 
-**The density, with its sign and its coefficient.** With $F_{t'i}=E_i$ and $F_{ij}=\epsilon_{ijk}B_k$ the contraction evaluates exactly,
+**The density, with its sign and its coefficient.** With $F_{r'_t i}=E_i$ and $F_{ij}=\epsilon_{ijk}B_k$ the contraction evaluates exactly,
 
 $$
 \epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=8\,\vec E\cdot\vec B ,
@@ -148,7 +148,7 @@ $$
 
 so the boxed equation with its minus in the lower-index notation *is* the standard equation, with its plus in the upper-index notation. The density $-\frac{e^2}{2\pi^2}I_2$ is the textbook value, and what does not depend on the notation is the physics: the magnitude, the parity, and the proportionality to $I_2$ hold either way, and the overall sign is fixed by the convention that the chirality cell calls the value $+1$ right-handed.
 
-**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i c r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i c r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{t'k}=iE_k/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
+**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i c r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i c r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{r'_t k}=iE_k/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
 
 Three structural remarks follow. First, the density is a **pseudoscalar** — parity-odd, as $I_2$ is — which is why it can stand on the right-hand side of the divergence of an axial, parity-odd current. Second, it is a **total derivative** in the abelian case,
 

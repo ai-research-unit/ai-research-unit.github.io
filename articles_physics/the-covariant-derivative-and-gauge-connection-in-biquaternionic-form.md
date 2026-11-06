@@ -44,7 +44,7 @@ $$
   =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, \tilde\nabla^{\mathrm{gco}}_\mu,
 $$
 
-where the coordinate is that of the material frame of *Frame and Metric Conventions*, $Q_t = i c r'_t$ and $Q_k = x_k$. Its action on a biquaternion-valued field $\tilde{Ξ}^{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,
+where the coordinate is that of the material frame of *Frame and Metric Conventions*, $Q_t = i c r'_t$ and $Q_k = r_k$. Its action on a biquaternion-valued field $\tilde{Ξ}^{\mathrm{sp}}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 \tilde\nabla^{\mathrm{gco}}\tilde{Ξ}^{\mathrm{sp}} = \tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} + \frac{iϙ}{\hbar}\tilde{A}\tilde{Ξ}^{\mathrm{sp}},
@@ -68,7 +68,7 @@ The following table collects the components and their meanings.
 | Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ | Compensating field |
 | Covariant derivative | $\tilde\nabla^{\mathrm{gco}} = \sum_\mu e_\mu \tilde\nabla^{\mathrm{gco}}_\mu$ | $\tilde\nabla^{\mathrm{gco}}_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu$ |
 | Time component $\mu = t$ | $\tilde\nabla^{\mathrm{gco}}_t = \partial/\partial R_t + \frac{iϙ}{\hbar}A_t = \partial/\partial R_t - \frac{ϙ a'_t}{\hbar}$ | $A_t = i\,a'_t$ |
-| Space components $\mu = k$ | $\tilde\nabla^{\mathrm{gco}}_k = \partial/\partial x_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
+| Space components $\mu = k$ | $\tilde\nabla^{\mathrm{gco}}_k = \partial/\partial r_k + \frac{iϙ}{\hbar}A_k$ | $A_k$ real |
 
 The line $\mu=t$ is the only place where $i^2=-1$ is used. The coupling contributes one imaginary unit and the complex time component $A_t=i\,a'_t$ contributes the other; they multiply to $-1$, and the potential term of the time component is the real number $-\frac{ϙ a'_t}{\hbar}$. The three spatial components keep their imaginary unit, because $A_k$ is real.
 
@@ -190,12 +190,12 @@ so that $\partial/\partial R_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\sum_\mu A_\mu\,dx_\mu = A_t\,d(i c r'_t) + \sum_k A_k\,dx_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
+\sum_\mu A_\mu\,dx_\mu = A_t\,d(i c r'_t) + \sum_k A_k\,dr_k = -\xi\,dr'_t + \vec A\cdot d\vec r ,
 \qquad
-d\vec r = \vec e_x\,dx + \vec e_y\,dy + \vec e_z\,dz ,
+d\vec r = \vec e_x\,dr_x + \vec e_y\,dr_y + \vec e_z\,dr_z ,
 $$
 
-which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dx_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real. The time term is real because its two imaginary units cancel, $d(i c r'_t) = ic\,dr'_t$ and $A_t = i\,a'_t$ giving $-\xi\,dr'_t$; the spatial terms are real because $A_k$ and $dr_k$ are separately real. In the algebra this says $\sum_\mu A_\mu\,dx_\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\sum_\mu A_\mu\,dx_\mu \mapsto \sum_\mu A_\mu\,dx_\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
