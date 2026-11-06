@@ -42,13 +42,13 @@ This is a **group action**: $\rho(R_1)\rho(R_2) = \rho(R_1 R_2)$, because $R_2^\
 
 **The action is an inner automorphism only in the $*$-unitary sector.** If $R$ is $*$-unitary in the matrix sense, $R R^{*} = e_t$, then $R^{*} = R^{-1}$ and $\rho(R) = \mathrm{Ad}_R$ is conjugation, an algebra automorphism. A boost rotor, however, is **Hermitian**, $\Lambda^{*} = \Lambda$, with $\Lambda^2 = \cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} \neq e_t$, so $\rho(\Lambda)(XY) = \Lambda XY\Lambda$ while $\rho(\Lambda)(\tilde{Q})\rho(\Lambda)(Y) = \Lambda \tilde{Q} \Lambda^2 Y \Lambda$; the two differ whenever $\Lambda^2 \neq e_t$. So the rotor is a group action on the algebra in every case, but it is an action by **algebra automorphisms** only in the $*$-unitary subgroup, which for unit-norm biquaternions is exactly the rotation group $SU(2)$.
 
-Consider a one-parameter subgroup $R(r'_t) = \exp(t'G)$ with $\langle R(r'_t)\rangle_{\natural} = e_t$. Its infinitesimal generator is the vector field on $\mathbb{M}_-$ obtained by differentiating the action,
+Consider a one-parameter subgroup $R(r'_t) = \exp(r'_t\,G)$ with $\langle R(r'_t)\rangle_{\natural} = e_t$. Its infinitesimal generator is the vector field on $\mathbb{M}_-$ obtained by differentiating the action,
 
 $$
 \zeta_G(\tilde{Q}) \;=\; \left.\frac{d}{dr'_t}\right|_{0} R(r'_t)\,\tilde{Q}\,R(r'_t)^\dagger \;=\; G\,\tilde{Q} + \tilde{Q}\,G^{*} .
 $$
 
-The normalisation $\langle R(r'_t)\rangle_{\natural} = e_t$ for all $r'_t$ is equivalent to the generator being **traceless** (vanishing scalar part): a generator $G = \alpha\,e_t + \dots$ gives $\langle \exp(t'G)\rangle_{\natural} = \exp(2\alpha r'_t) e_t \neq e_t$ unless $\alpha = 0$. The traceless part of $\mathbb{B}$ is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$ of the rotor group, six real dimensional, and it splits as
+The normalisation $\langle R(r'_t)\rangle_{\natural} = e_t$ for all $r'_t$ is equivalent to the generator being **traceless** (vanishing scalar part): a generator $G = \alpha\,e_t + \dots$ gives $\langle \exp(r'_t\,G)\rangle_{\natural} = \exp(2\alpha r'_t) e_t \neq e_t$ unless $\alpha = 0$. The traceless part of $\mathbb{B}$ is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$ of the rotor group, six real dimensional, and it splits as
 
 $$
 \mathrm{SL}(2,\mathbb{C}) \;=\; \big(\mathbb{M}_- \cap \mathrm{SL}(2,\mathbb{C})\big) \;\oplus\; \big(\mathbb{M}_+ \cap \mathrm{SL}(2,\mathbb{C})\big),
@@ -96,7 +96,7 @@ Both constructions now present the same **shape**: a generator that is a derivat
 |---|---|---|
 | Generating object | $G \in \mathrm{SL}(2,\mathbb{C})$ | $H \in C^\infty(P)$ |
 | Generator (derivation) | $\zeta_G = [G,\cdot]$ on $\mathbb{B}$ ($*$-unitary sector) | $D_H = \{\cdot, H\}$ on $C^\infty(P)$ |
-| Exponential | $R = \exp(t'G)$ | flow ${\xi^{\mathrm{flw}}}^H_{r'_{t}}$ |
+| Exponential | $R = \exp(r'_t\,G)$ | flow ${\xi^{\mathrm{flw}}}^H_{r'_{t}}$ |
 | Finite transformation | $\tilde{Q} \mapsto R \tilde{Q} R^{*}$ | $x \mapsto {\xi^{\mathrm{flw}}}^H_{r'_{t}}(x)$ |
 | Carrier | finite-dimensional algebra $\mathbb{B}$ | infinite-dimensional space of functions |
 
@@ -121,7 +121,7 @@ $$
 which is precession of $\vec S$ about $\vec u_{\mathrm r}$ at angular velocity $\omega$. On the other side, the rotor
 
 $$
-R(r'_t) \;=\; \exp(t'G), \qquad G \;=\; \frac{\omega}{2}\,\vec u_{\mathrm r} \;\in\; \mathrm{SL}(2,\mathbb{C}),
+R(r'_t) \;=\; \exp(r'_t\,G), \qquad G \;=\; \frac{\omega}{2}\,\vec u_{\mathrm r} \;\in\; \mathrm{SL}(2,\mathbb{C}),
 $$
 
 has $\langle R(r'_t)\rangle_{\natural} = e_t$ (the generator is traceless), and acts on $\vec S$ by
@@ -147,7 +147,7 @@ The factor $2$ is the spinor double cover: the rotor parameter is half the rotat
 Both sides of this identity are derivations of the algebra of functions on the orbit, and they agree on the coordinate functions $S_i$; hence they agree on the whole polynomial algebra they generate, and the agreement descends to the orbit because both annihilate the Casimir ($[G,\vec S^2] = 0$ and $\{\vec S^2, H\} = 0$). Consequently the flows agree as one-parameter groups,
 
 $$
-\boxed{\;\rho\big(\exp(t'G)\big) \;=\; {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}} \qquad \text{on the orbit, for all } r'_t\;}.
+\boxed{\;\rho\big(\exp(r'_t\,G)\big) \;=\; {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}} \qquad \text{on the orbit, for all } r'_t\;}.
 $$
 
 So: **on the coadjoint orbit, the rotor group action and the Hamiltonian flow of the corresponding linear Hamiltonian are the same one-parameter group.** The map $G \mapsto H_G$ is a linear isomorphism from the compact Lie algebra $\mathrm{SU}(2)$ (the traceless real pure quaternions) onto the space of linear functions $\mathrm{span}\{S_1, S_2, S_3\}$ on the orbit, and it intertwines the exponential map of the rotor group with the Hamiltonian flow. This is the exact sense of the similitude.
@@ -251,7 +251,7 @@ So the resemblance is real, exact on a definite island, and not an isomorphism. 
 
 ## Summary
 
-A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^{*}$, with $\langle R\rangle_{\natural} = e_t$, and a Hamiltonian flow $\frac{dx}{dr'_t} = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its $*$-unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\vec S$, the two are the **same one-parameter group**: the generator identity $[G,\vec S] = \{\vec S, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(\exp(t'G)) = {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}}$ to $8\times10^{-15}$ out to $r'_t = 2$, with the rotor normalisation $\langle R\rangle_{\natural} = e_t$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
+A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^{*}$, with $\langle R\rangle_{\natural} = e_t$, and a Hamiltonian flow $\frac{dx}{dr'_t} = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its $*$-unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\vec S$, the two are the **same one-parameter group**: the generator identity $[G,\vec S] = \{\vec S, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(\exp(r'_t\,G)) = {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}}$ to $8\times10^{-15}$ out to $r'_t = 2$, with the rotor normalisation $\langle R\rangle_{\natural} = e_t$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
 
 The resemblance is not an isomorphism, and each of its failures was verified. The rotor group is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\lambda S_3^2$ has a field-dependent generator $G(\vec S) = \lambda S_3\vec u_z$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the biquaternion norm and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
 
@@ -270,7 +270,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | $R$, $\langle R\rangle_{\natural} = e_t$ | Rotor (unit-norm biquaternion) |
 | $R^{*} = \bar{R}^{\,\natural}$, $R \tilde{Q} R^{*}$ | Hermitian conjugate; rotor conjugation (the title map $R\,x\,\tilde Q_3$) |
 | $\rho(R)$ | Rotor action $\tilde{Q} \mapsto R \tilde{Q} R^{*}$ |
-| $G$, $R = \exp(t'G)$ | Generator, one-parameter rotor |
+| $G$, $R = \exp(r'_t\,G)$ | Generator, one-parameter rotor |
 | $\zeta_G(\tilde{Q}) = GX + XG^\dagger$ | Infinitesimal rotor generator |
 | $\mathrm{ad}_G = [G,\cdot]$ | Inner derivation ($*$-unitary sector) |
 | $\{\cdot,\cdot\}$, $\tilde{Q}_H = \{\cdot,H\}$ | Poisson bracket; Hamiltonian vector field |

@@ -164,7 +164,7 @@ Two details of the derivation are recorded here: the proper-time form of the one
 
 **The one-loop effective action.** With $S^{(2)}$ the second variation of the action about the background, the one-loop contribution is
 $$
-\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S^{(2)} = -\tfrac12\int_0^\infty\frac{dr'_t}{r'_{t}}\,\mathrm{Tr}\,\exp(-t'S^{(2)}),
+\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S^{(2)} = -\tfrac12\int_0^\infty\frac{dr'_t}{r'_{t}}\,\mathrm{Tr}\,\exp(-r'_t S^{(2)}),
 $$
 up to a divergent constant, the proper-time representation of the logarithm. The integrand is the heat kernel of $S^{(2)}$; its small-$r'_t$ expansion is the one given in the section on the quantum trace, and the term $a_{d/2}$ of that expansion is the anomalous coefficient. This is where the anomaly's arithmetic comes from, and the framework's contribution is visible in it as the multiplicity of the trace.
 
@@ -193,7 +193,7 @@ The first identity is exact, so the second and third are exact; a central differ
 - The one-loop trace as the conformal variation of $\log\det S^{(2)}$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
 - The values $c=1$ per real scalar in two dimensions and the four-dimensional $a$ and $c$ coefficients for scalar, fermion, and vector fields.
 - The relation $T_\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).
-- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dr'_t}{r'_{t}}\mathrm{Tr}\,\exp(-t'S^{(2)})$ and the small-$r'_t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-t'S^{(2)})\sim(4\pi r'_t)^{-d/2}\int\sqrt g\,(a_0+a_1r'_t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
+- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dr'_t}{r'_{t}}\mathrm{Tr}\,\exp(-r'_t S^{(2)})$ and the small-$r'_t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-r'_t S^{(2)})\sim(4\pi r'_t)^{-d/2}\int\sqrt g\,(a_0+a_1r'_t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
 
 **Interpretation.**
 

@@ -230,7 +230,7 @@ The first equation is exact and undamped by $\gamma$: the kinetic three-momentum
 $$
 E(r'_t) = \sqrt{\left(ϙE_0r'_t\right)^2c^2 + m^2c^4},
 \qquad
-v_x(r'_t) = \frac{p_xc^2}{E} = \frac{ϙE_0t'c^2}{\sqrt{\left(ϙE_0r'_t\right)^2c^2 + m^2c^4}},
+v_x(r'_t) = \frac{p_xc^2}{E} = \frac{ϙE_0 r'_t c^2}{\sqrt{\left(ϙE_0r'_t\right)^2c^2 + m^2c^4}},
 $$
 
 so the worldline is hyperbolic and $v_x\to c$ as $r'_t\to\infty$ without reaching it. The energy is not constant — an electric field does work — and its rate of change is the second equation above. The numerical solution of $d\vec p/dr'_t = ϙ\vec E$ with $\vec v = \vec pc^2/E$ reproduced $p_x = ϙE_0r'_t$ to the integration accuracy and the mass-shell energy exactly.

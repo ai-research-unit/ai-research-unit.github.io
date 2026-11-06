@@ -136,7 +136,7 @@ The phase could be written with any root of $-1$ in place of $i$. The alternativ
 
 **The generator need not be anti-Hermitian.** Taking $J\tilde R_\psi$ in place of $i\tilde R_\psi$ changes the generator of the flow from $-i H/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde R_\psi/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\psi$. With $J=\vec e_z$ and $\tilde R_\psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde R_\psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
-which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-t'J\tilde R_\psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
+which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-r'_t J\tilde R_\psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
 $$\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 

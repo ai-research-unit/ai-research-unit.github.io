@@ -161,7 +161,7 @@ the second relation being the analytic continuation of the first to $s=0$. In th
 $$
 \zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dr'_t\;{r'_{t}}^{s-1}\,K(r'_t),
 \qquad
-K(r'_t) = \mathrm{Tr}\,\exp(-t'S^{(2)}),
+K(r'_t) = \mathrm{Tr}\,\exp(-r'_t S^{(2)}),
 $$
 and the small-$r'_t$ expansion $K(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Trace Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
 
@@ -256,7 +256,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
 | $(\det K^{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
-| $K(r'_t)=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
+| $K(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
 | $\mathcal{F}=\mathbb{D}-m$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta^{\mathrm{pha}}_{\mathcal{F}})$ | Complex (chiral) fermion determinant |

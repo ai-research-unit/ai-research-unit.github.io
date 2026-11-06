@@ -90,22 +90,22 @@ so that
 $$
 \tilde{Ϛ}^{\,ir'_t}
 =\exp\big(ir'_t\,b_0\,e_t+ir'_t\,ib\,\gamma\big)
-=\exp(it'b_0)\exp\big(-t'b\,\gamma\big)
-=\exp(it'b_0)\Big(\cos(br'_t)\,e_t-\sin(br'_t)\,\gamma\Big).
+=\exp(ir'_t b_0)\exp\big(-r'_t b\,\gamma\big)
+=\exp(ir'_t b_0)\Big(\cos(br'_t)\,e_t-\sin(br'_t)\,\gamma\Big).
 $$
 The step in the middle used $\exp(\theta\gamma)=\cos\theta\,e_t+\sin\theta\,\gamma$, which holds because $\gamma^2=(\vec u_r\cdot\mathbf e)^2=\vec u_r\cdot\vec u_r\,(-e_t)=-e_t$, and the final form is the trigonometric expansion appropriate to that sign. The closed form was checked against the explicit matrix power: with $\vec r=(0.6,-0.3,0.4)$ and $r'_t=0.3$, the two agree to machine precision, the largest entrywise difference being of order $10^{-16}$.
 
-The scalar $\exp(it'b_0)$ drops out of conjugation, so the modular flow is
+The scalar $\exp(ir'_t b_0)$ drops out of conjugation, so the modular flow is
 $$
 \boxed{\ \sigma_{r'_{t}}\big(\tilde Q_2\big)
 =\tilde{Ϛ}^{\,ir'_t}\,\tilde Q_2\,\tilde{Ϛ}^{-ir'_t}
-=\exp(-t'b\gamma)\ \tilde Q_2\ \exp(t'b\gamma)\ }
+=\exp(-r'_t b\gamma)\ \tilde Q_2\ \exp(r'_t b\gamma)\ }
 $$
 with
 $$
-\exp(-t'b\gamma)=\cos(br'_t)\,e_t-\sin(br'_t)\,\gamma .
+\exp(-r'_t b\gamma)=\cos(br'_t)\,e_t-\sin(br'_t)\,\gamma .
 $$
-This is the framework's closed form for the modular flow: **conjugation by the unit quaternion** $\exp(-t'b\gamma)$, which is a unit element of the commutative subalgebra spanned by $e_t$ and the pure direction $\gamma$.
+This is the framework's closed form for the modular flow: **conjugation by the unit quaternion** $\exp(-r'_t b\gamma)$, which is a unit element of the commutative subalgebra spanned by $e_t$ and the pure direction $\gamma$.
 
 ### The Generator Lies in $\mathbb{M}_+$
 
@@ -128,7 +128,7 @@ This is the dynamical form of the section's interpretation. The state's modular 
 
 ### The Explicit Action on the Algebra
 
-The flow acts on the algebra in a way that can be read off from the closed form. Since $\gamma$ commutes with itself and $\exp(-t'b\gamma)$ is a function of $\gamma$,
+The flow acts on the algebra in a way that can be read off from the closed form. Since $\gamma$ commutes with itself and $\exp(-r'_t b\gamma)$ is a function of $\gamma$,
 $$
 \sigma_{r'_{t}}\big(\vec u_r\cdot\mathbf e\big)=\vec u_r\cdot\mathbf e,
 \qquad
@@ -136,7 +136,7 @@ $$
 $$
 so the two directions $\mathrm{span}\{e_t,\gamma\}$ are fixed. For a unit direction $\vec u\perp\vec u_r$, put $Y=\vec u\cdot\mathbf e$. Then $\gamma Y=-Y\gamma$ and
 $$
-\exp(-t'b\gamma)\,Y\,\exp(t'b\gamma)
+\exp(-r'_t b\gamma)\,Y\,\exp(r'_t b\gamma)
 =\cos(2br'_t)\,Y-\sin(2br'_t)\,\gamma Y,
 $$
 which was checked on the state $\vec r=(0.6,-0.3,0.4)$ and a transverse $\vec u$ at $r'_t=0.3$ and $r'_t=0.7$, agreeing with the matrix flow to machine precision (entrywise differences of order $10^{-16}$). So the flow is the identity on the two commuting directions and a **rotation by angle $2br'_t$** in each transverse plane, the planes spanned by $Y$ and $\gamma Y$. The generator's eigenvalues on the transverse directions are $\pm2bi$; the flow is a compact one-parameter group.
@@ -194,7 +194,7 @@ The biquaternion framework reaches this case through the one-particle module and
 
 **Established (theorem, imported).** The Tomita–Takesaki modular flow and its uniqueness for a given state; the inner/outer decomposition and the fact that the modular flow of a normal state on a type III factor is outer; the KMS property of a cyclic and separating state for the inverse of its modular flow; the Connes–Rovelli thermal time hypothesis; the Bisognano–Wichmann wedge result and the Unruh thermal interpretation. All standard.
 
-**Established (recomputed here).** The closed forms $\tilde{Ϛ}^{ir'_t}=\exp(it'b_0)(\cos(br'_t)e_t-\sin(br'_t)\gamma)$ and $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-t'b\gamma)\tilde Q_2 \exp(t'b\gamma)$; the generator identity $\frac{d}{dr'_t}\sigma_{r'_{t}}|_0=i[\log\tilde{Ϛ},\tilde Q_2]$; the explicit action (identity on $\mathrm{span}\{e_t,\gamma\}$, rotation by $2br'_t$ in the transverse planes); the period $T=\pi/b$; the sector location $\tilde{K}^{\mathrm{mod}}\in\mathbb{M}_+$; and the imaginary-time boost $\cos(2br'_t)\to\cosh(2bs)$.
+**Established (recomputed here).** The closed forms $\tilde{Ϛ}^{ir'_t}=\exp(ir'_t b_0)(\cos(br'_t)e_t-\sin(br'_t)\gamma)$ and $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-r'_t b\gamma)\tilde Q_2 \exp(r'_t b\gamma)$; the generator identity $\frac{d}{dr'_t}\sigma_{r'_{t}}|_0=i[\log\tilde{Ϛ},\tilde Q_2]$; the explicit action (identity on $\mathrm{span}\{e_t,\gamma\}$, rotation by $2br'_t$ in the transverse planes); the period $T=\pi/b$; the sector location $\tilde{K}^{\mathrm{mod}}\in\mathbb{M}_+$; and the imaginary-time boost $\cos(2br'_t)\to\cosh(2bs)$.
 
 **Interpretation.** That the modular flow of a biquaternion state is read as the state's thermal time, that the state-dependence of the flow is the state-dependence of time, and that the imaginary-time continuation of the finite rotation is the field's boost. The algebra realizes the interpretation; it does not force it.
 
@@ -219,7 +219,7 @@ The modular flow of a state is the one-parameter automorphism group $\sigma_{r'_
 For a faithful biquaternion state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ the modular flow is the closed-form inner automorphism
 $$
 \boxed{\;\sigma_{r'_{t}}\big(\tilde Q_2\big)=\tilde{Ϛ}^{\,ir'_t}\tilde Q_2\,\tilde{Ϛ}^{-ir'_t}
-=\exp(-t'b\gamma)\tilde Q_2\,\exp(t'b\gamma),
+=\exp(-r'_t b\gamma)\tilde Q_2\,\exp(r'_t b\gamma),
 \qquad
 \gamma=\vec u_r\cdot\mathbf e,\quad b=\mathrm{artanh}\,|\vec r|\;}.
 $$
@@ -243,7 +243,7 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 | $\Delta=S^*S$ | Modular operator |
 | $\sigma_{r'_{t}}(\tilde Q_2)=\Delta^{ir'_t}\tilde Q_2\Delta^{-ir'_t}=\tilde{Ϛ}^{ir'_t}\tilde Q_2\tilde{Ϛ}^{-ir'_t}$ | Modular flow |
 | $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian |
-| $\exp(-t'b\gamma)=\cos(br'_t)e_t-\sin(br'_t)\gamma$ | Unit-quaternion generator of the flow |
+| $\exp(-r'_t b\gamma)=\cos(br'_t)e_t-\sin(br'_t)\gamma$ | Unit-quaternion generator of the flow |
 | $T=\pi/b$ | Period of the finite flow |
 | $\alpha_{r'_{t}}(\tilde Q_1)=\tilde{Ϛ}^{-ir'_t}\tilde Q_1\tilde{Ϛ}^{ir'_t}$ | KMS orientation (companion convention) |
 | $r'_t=is$ | Imaginary (material-sector) time; rotation becomes boost |

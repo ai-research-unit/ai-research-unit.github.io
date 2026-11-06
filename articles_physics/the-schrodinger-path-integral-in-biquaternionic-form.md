@@ -188,7 +188,7 @@ $$
 = K_\omega(r_x,r_{0x};T_1+T_2),
 $$
 
-for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $i\hbar\partial/\partial t'K$ against $(-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
+for times at which no intermediate caustic is crossed. The kernel was also checked to solve the Schrödinger equation directly, at two sample points and times, by finite-difference evaluation of $i\hbar\partial/\partial r'_tK$ against $(-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2+\frac12m\omega^2x^2)K$, with agreement at the $10^{-8}$ level (limited by the finite-difference error).
 
 The free kernel is recovered as the $\omega\to0$ limit,
 

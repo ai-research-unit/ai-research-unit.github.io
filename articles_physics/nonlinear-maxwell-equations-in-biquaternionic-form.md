@@ -125,13 +125,13 @@ Every version of the system that the paper writes down was recomputed against th
 
 | Paper's equation | Content | Residual against $\mathrm{Re}\{F^{*}DF\}$ |
 |---|---|---|
-| (3.14), first line | $E\cdot(\partial/\partial t'E - \nabla\times H) + H\cdot(\partial/\partial t'H + \nabla\times E) = 0$ | $1.8 \times 10^{-15}$ |
+| (3.14), first line | $E\cdot(\partial/\partial r'_tE - \nabla\times H) + H\cdot(\partial/\partial r'_tH + \nabla\times E) = 0$ | $1.8 \times 10^{-15}$ |
 | (3.14), second line | $e_tE + g_0H + H\times J_0 - E\times I_0 = 0$ | $1.8 \times 10^{-15}$ |
 | (7.5) first | $J_0\cdot E + I_0\cdot H = 0$ | $1.8 \times 10^{-15}$ |
 | (7.5) second | $e_tE + g_0H - J_0\times H + I_0\times E = 0$ | $1.8 \times 10^{-15}$ |
-| (4.4) first | $\partial/\partial t'W + \nabla\cdot S = 0$ | $2.7 \times 10^{-15}$ |
-| (4.4) second | $\partial/\partial t'S + \nabla W = Q$ | $3.6 \times 10^{-15}$ |
-| (5.1)–(5.5) | $\partial/\partial t'S_\alpha - \partial/\partial R_\beta\sigma_{\alpha\beta} = 0$ | $3.6 \times 10^{-15}$ |
+| (4.4) first | $\partial/\partial r'_t\,W + \nabla\cdot S = 0$ | $2.7 \times 10^{-15}$ |
+| (4.4) second | $\partial/\partial r'_tS + \nabla W = Q$ | $3.6 \times 10^{-15}$ |
+| (5.1)–(5.5) | $\partial/\partial r'_tS_\alpha - \partial/\partial R_\beta\sigma_{\alpha\beta} = 0$ | $3.6 \times 10^{-15}$ |
 
 The first and third rows are the scalar part of the identity, the second and fourth its vector part, and the last three rows its energy, momentum and tensor forms. The rows are not independent restatements for their own sake. The first is the component system the derivation yields; the third and fourth are the same system read in terms of the **regular currents** of section 7; the fifth and sixth are its energy and momentum content; and the last is the statement that the divergence of the **energy–momentum tensor** vanishes. The paper's section 5 goes from the tensor to (3.14) and section 4 goes from (3.14) to the energy form, and both directions are exact. In the tensor form the energy density, the momentum density and the Maxwell stress enter as
 
@@ -140,7 +140,7 @@ W = \tfrac{1}{2}(E^2 + H^2), \qquad \vec S = \vec E\times\vec H, \qquad
 \sigma_{\alpha\beta} = E_\alpha E_\beta + H_\alpha H_\beta - \tfrac{1}{2}\delta_{\alpha\beta}(E^2 + H^2),
 $$
 
-with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial t'T_{\alpha r_t} + \partial/\partial R_\beta T_{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.
+with $S_\alpha$ the momentum density and the elastic part of the stress tensor carrying the opposite sign, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$, which the paper's (5.1)–(5.2) state and its (5.5) uses. That sign is not cosmetic: with it, the divergence equation $\partial/\partial r'_tT_{\alpha r_t} + \partial/\partial R_\beta T_{\alpha\beta} = 0$ is exactly the momentum equation (4.4) second, and the recomputation confirms it.
 
 The caution the paper itself attaches belongs here: the nonlinear equation is **recursive**, in its own word, because the sources of a free field can be the field's own nonsingular structures. The regular currents are not an averaging of point charges, and the paper says so.
 
@@ -195,7 +195,7 @@ $$
 \tag{7.6}
 $$
 
-**The first line is wrong as printed.** From the definitions, $\partial/\partial t'e_t = \partial/\partial r'_t\nabla\cdot\vec E = \nabla\cdot\partial/\partial r'_t\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial r'_t\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are **equal**, not opposite, so the relation that holds is
+**The first line is wrong as printed.** From the definitions, $\partial/\partial r'_te_t = \partial/\partial r'_t\nabla\cdot\vec E = \nabla\cdot\partial/\partial r'_t\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial r'_t\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are **equal**, not opposite, so the relation that holds is
 
 $$\boxed{\;\frac{\partial e_t}{\partial r'_t} - \nabla\cdot\vec J_0 = 0\;},$$
 
@@ -222,7 +222,7 @@ $$
 solves the nonlinear system. The paper calls $F$ the field **associated** with the linear field $F_0$, and notes the more general form $F = F_0\exp(iΞ(r'_t,\vec r))$ with $Ξ$ Lorentz-invariant. The proof is its (9.3), the expression for the gradient of the product,
 
 $$
-DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial/\partial t'f - iF_0\times\nabla f\bigr),
+DF = \bigl(F_0\cdot\nabla f,\ F_0\,\partial/\partial r'_tf - iF_0\times\nabla f\bigr),
 \tag{9.3}
 $$
 
@@ -239,7 +239,7 @@ $$
 \tag{12.10}
 $$
 
-where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for **any** phase function, not only a linear one: with $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta^{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial t'f\} = s\,\partial/\partial t's = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta^{\mathrm{pha}}_r = 0$ and $s = \alpha/r^3$. The **phase is therefore left completely free** — the equations fix the spatial profile and the static modulus, never $\theta^{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.
+where the modulus is the ordinary Coulomb field and the phase is a function of time alone. It solves the nonlinear equation to $1.2 \times 10^{-12}$ over $100$ random points and phases, and it does so for **any** phase function, not only a linear one: with $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ the residual was $1.7 \times 10^{-13}$. The derivation in the paper says why. Writing $f = s\,\exp(i\theta^{\mathrm{pha}})$ as its (12.5), the first of its (12.3) gives $\mathrm{Re}\{f^{*}\partial/\partial r'_tf\} = s\,\partial/\partial r'_ts = 0$, so the modulus is static; the second reduces, through its (12.4) and (12.6), to $\theta^{\mathrm{pha}}_r = 0$ and $s = \alpha/r^3$. The **phase is therefore left completely free** — the equations fix the spatial profile and the static modulus, never $\theta^{\mathrm{pha}}(r'_t)$ — and the paper's reading, that the charge is complex and the phase measures how much of it is electric and how much magnetic, is a reading of that freedom rather than a consequence of it. The corpus records the reading as the paper's, and notes that *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies exactly the internal rotation that a complex amplitude implements, so the identification of the phase with the electric–magnetic mix is the corpus's duality rotation and is not new to the paper.
 
 The paper also gives the covariant form, its (12.11): $F = F_0\exp(iΞ)$ with $F_0$ the Coulomb field transformed to the frame and $Ξ$ a Lorentz invariant; and it observes in its (12.12) that the Coulomb wave "is a solution associated the usual Coulomb field in the sense we defined above in (9.2)". That is exactly right, and it places the section-12 solution inside the section-9 theorem: the Coulomb wave is the theorem with $F_0$ the Coulomb field and $f$ a phase factor, which is why the phase is free.
 
@@ -374,8 +374,8 @@ No external source was consulted for the mathematics.
 | Constant-amplitude plane waves, arbitrary real $(\omega, \vec k)$ | Solutions, $5.3 \times 10^{-15}$; $99$ of $100$ non-null, so no dispersion relation follows |
 | Superposition of two plane waves | Fails in $100$ of $100$ cases for arbitrary amplitudes, and in all $100$ for null-but-otherwise-arbitrary amplitudes; a sum of two **Maxwell** plane waves is a solution because it is a Maxwell field |
 | (12.10) Coulomb field with running phase | Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ gives $1.7 \times 10^{-13}$ |
-| (7.6) second line, $\partial/\partial t'g_0 - \nabla\cdot\vec I_0 = 0$ | Correct |
-| (7.6) first line, $\partial/\partial t'e_t + \nabla\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial/\partial t'e_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
+| (7.6) second line, $\partial/\partial r'_tg_0 - \nabla\cdot\vec I_0 = 0$ | Correct |
+| (7.6) first line, $\partial/\partial r'_te_t + \nabla\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial/\partial r'_te_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
 | (11.4) $\Omega = 2f(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f)$ | Correct identity, $1.8 \times 10^{-15}$ |
 | Flat normal field: the exact Maxwell conditions | $\partial/\partial r'_t f = \partial/\partial n f$, $\partial/\partial n\,\theta^{\mathrm{pha}} = 0$, $\partial/\partial a f = -f\partial/\partial b\,\theta^{\mathrm{pha}}$, $\partial/\partial b f = f\partial/\partial a\,\theta^{\mathrm{pha}}$; each necessary (a violation gives $2.4$–$5.3$) and jointly sufficient ($0$) |
 | (11.3) $F = (\vec a\exp(i\theta^{\mathrm{pha}}) + \vec b\exp(-i\theta^{\mathrm{pha}}))f$ | **Wrong**; (11.2) gives $F = f\exp(i\theta^{\mathrm{pha}})(\vec a - i\vec b)$, agreeing only at $\theta^{\mathrm{pha}} = \pi/4$; the printed form is not null |
@@ -410,7 +410,7 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 | $Z = (r'_t, \vec r)$ | Space-time as a real biquaternion; $dZ$ the hypersurface element |
 | $U$, $\bar U$, $U^{*}$ | $*$-Unitary biquaternion of the Lorentz action and its two conjugates |
 | $F = \vec E + i\vec H$ | Riemann–Silberstein field, carried as $(0, \vec E + i\vec H)$; the corpus's $\tilde F$ is a different object |
-| $DF$ | The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial t'A + i\nabla\times A)$ for $F = (0, A)$ |
+| $DF$ | The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial r'_tA + i\nabla\times A)$ for $F = (0, A)$ |
 | $d\Sigma = \tfrac12F^{*}dZF$ | The energy–momentum flow differential (3.1) |
 | $W$, $\vec S$ | Energy density $\tfrac12(E^2 + H^2)$ and Umov–Poynting vector $\vec E\times\vec H$ |
 | $\sigma_{\alpha\beta}$ | Maxwell stress, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$ |

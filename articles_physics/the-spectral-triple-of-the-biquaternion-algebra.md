@@ -296,7 +296,7 @@ $$
 $$
 nonzero off $\zeta=0$, and the symbol is invertible there. Note that $\sigma^2$ is *not* a multiple of $e_t$ — its scalar part is $\zeta_t^2-|\vec\zeta|^2$ — so the ellipticity is read from the quaternionic norm, not from the square. It is the square that is scalar in the Euclidean frame, where the four actions anticommute: there $D=-i\sum_\mu E_\mu\partial/\partial R_\mu$ gives $D^2=-\sum_\mu\partial^2/\partial R_\mu^2$, of Laplace type, and the $r'_t^{-2}$ growth that gives $d=4$ is the symbol's and not an assumption. Equivalently the trace of the heat kernel grows as
 $$
-\boxed{\;\mathrm{Tr}\,\exp(-t'D^2)\;\sim\;{r'_{t}}^{-d/2}\quad(r'_t\to0^+)\;},
+\boxed{\;\mathrm{Tr}\,\exp(-r'_t D^2)\;\sim\;{r'_{t}}^{-d/2}\quad(r'_t\to0^+)\;},
 $$
 and the coefficients of the small-$r'_t$ expansion are the Seeley–DeWitt coefficients $a_n$ of the determinant article, in its normalisation
 $$
@@ -452,7 +452,7 @@ The sign that the algebra's involution does not carry is the quaternionic one. T
 
 Three conditions fail, and they fail for one reason: the coefficients of the gradient are elements of the algebra. The bounded-commutator condition holds for the functions and fails for the non-central elements under the left action, while the right action passes it but is not a representation on the field. The first-order condition holds for the vector-like candidate, whose mass is a multiple of the identity, but that candidate has no odd part; for the chiral candidate it holds exactly on the pairs in which one of the two multipliers is fixed by the conjugation, that is, on the real sector $\mathbb{H}_{\mathbb{B}}$. The grading itself is the finite chirality $\xi$, the right action by $-i\vec e_z$, which commutes with the gradient and anticommutes with the mass, so the finite triple is graded and odd while the whole operator on $\mathbb{B}$ is graded by nothing, and a graded triple would need $G_M\otimes\xi$. Two more stand with them: the framework's finite operator is antilinear, and a spectral triple asks for a self-adjoint linear $D$; the algebra's linear odd actions have negative squares, $-|m|^2e_t$, so they are not the mass. And $\mathcal{D}$ is self-adjoint only for the indefinite Dirac form.
 
-The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t'D^2)\sim {r'_{t}}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra. The distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content. Inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}\,f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
+The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra. The distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content. Inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}\,f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
 
 ## Summary of Notation
 
@@ -474,7 +474,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 | $D_F:\tilde{Ξ}^{\mathrm{sp}}\mapsto m\overline{\tilde{Ξ}^{\mathrm{sp}}}$ | The mass, the finite Dirac operator; antilinear, $D_F^2=\lvert m\rvert^2e_t$, $\{\xi,D_F\}=0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real sector, the elements with real coefficients; the fixed set of the coefficient conjugation, and the set on which the mass commutes with the left action |
 | $d(\xi^{\mathrm{alt}},\omega)=\sup_{a\in\mathcal{A}}\{\lvert\xi^{\mathrm{alt}}(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
-| $\mathrm{Tr}\,\exp(-t'D^2)\sim {r'_{t}}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
+| $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
 | $D_A=D+\sum a_i[D,b_i]$ | Inner fluctuation; the gauge field |
 | $\mathrm{Tr}\,f(D_A/\Lambda)$ | Spectral action |
 | $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra $\mathbb{B}_{\mathbb{R}}$, finite Hilbert space $\mathbb{B}$, finite Dirac operator (the mass) |

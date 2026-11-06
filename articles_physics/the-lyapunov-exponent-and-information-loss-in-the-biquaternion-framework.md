@@ -133,7 +133,7 @@ $$
 \lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\sigma_k\!\left(L(r'_t)\right),
 $$
 
-and for a semigroup $L(r'_t) = \exp(t'A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.
+and for a semigroup $L(r'_t) = \exp(r'_t A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.
 
 The physical constraint now does the work. Every completely positive trace-preserving map is a **contraction in the trace distance**, $\|Ξ(\rho)-Ξ(\sigma)\|_1 \le \|\rho-\sigma\|_1$, and for a qubit the trace distance is half the Euclidean distance between Bloch vectors, $\tfrac{1}{2}\|\rho-\sigma\|_1 = \tfrac{1}{2}|\vec r-\vec s|$. Hence
 
