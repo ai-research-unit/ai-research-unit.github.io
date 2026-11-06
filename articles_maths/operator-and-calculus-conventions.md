@@ -176,6 +176,8 @@ $$
 
 whose tilde marks its scalar part beside its vector part (*Operator and Calculus Conventions*, §*The Gradient*; *Biquaternion Analysis*), with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector coordinates; on the material sector it is the physical $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$, where $Q_k=q_k$.
 
+**One operator, two readings, and no third.** The four real coordinates $q_\mu$ and the four $q'_\mu$ are eight real parameters, and a sector is the setting of four of them to zero. The material sector $\mathbb{M}_-$ keeps the imaginary time $q'_t$ and the three real space parameters $q_k$; the informational sector $\mathbb{M}_+$ keeps the real time $q_t$ and the three imaginary space parameters $q'_k$. The two keep complementary halves. A sector fixes the **value of the coefficients** and not the shape of the operator: on $\mathbb{M}_-$ the relation $Q_t=iq'_t$ gives $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ and $Q_k=q_k$ gives $\partial/\partial Q_k=\partial/\partial q_k$, while on $\mathbb{M}_+$ the relations $Q_t=q_t$ and $Q_k=iq'_k$ give $\partial/\partial Q_t=\partial/\partial q_t$ and $\partial/\partial Q_k=-i\,\partial/\partial q'_k$. The four terms of the sum, the units $e_\mu$, the tilde and the $\natural$ belong to the operator and are untouched by either substitution. A sector is a slice, and no article of the corpus defines a second gradient.
+
 **The sum is written.** The gradient is a sum, and the sum is always spelled out. The shorthand $\vec e_k\partial/\partial Q_k$ is not used, because it repeats the index without summing it; the same holds for every contraction of a basis vector, a gamma or a field component with a derivative.
 
 **The conjugates of the gradient.** The gradient is an operator, and the marks are read on its units at fixed coordinate: the derivative symbols are held fixed and only the units are conjugated. This fixes the scope of the star, and it is not a claim that $\partial/\partial Q_\mu$ is real; the unhalved derivative defined above is complex, and on an element-valued field the star is coefficientwise, carried through the derivative by $\partial/\partial\bar Q_\mu$ rather than by $\partial/\partial Q_\mu$. Read on the units, the quaternion conjugation reverses the three spatial units, and so does the Hermitian conjugation, so the two act on the gradient alike,
@@ -187,7 +189,25 @@ $$
 
 **The forms stay four, the norms are two.** The four forms keep their four conventions, named above in this section, each conjugating its own slot: the quaternionic form conjugates the first argument and the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm and the Krein norm with the plain bilinear norm. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and $\partial^2/\partial Q_t^2-\Delta_Q$.
 
-**On the material sector $\mathbb{M}_-$**, where $Q_t=iq'_t$ and $Q_k=q_k$, the derivative along the fourth coordinate reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$.
+**On the material sector $\mathbb{M}_-$**, where $Q_t=iq'_t$ and $Q_k=q_k$, the derivative along the fourth coordinate reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, the three space derivatives are the physical ones, $\partial/\partial Q_k=\partial/\partial q_k$, the spatial gradient is $\nabla=\sum_k\vec e_k\,\partial/\partial q_k$, its divergence and its curl are the ordinary ones, the Laplacian in the vector coordinates is $\Delta=\sum_k\partial^2/\partial q_k^2$, and the gradient and its conjugate are
+
+$$
+\tilde\nabla\big|_{\mathbb{M}_-}=-i\,e_t\frac{\partial}{\partial q'_t}+\sum_k\vec e_k\frac{\partial}{\partial q_k},
+\qquad
+\tilde\nabla^{\natural}\big|_{\mathbb{M}_-}=-i\,e_t\frac{\partial}{\partial q'_t}-\sum_k\vec e_k\frac{\partial}{\partial q_k}.
+$$
+
+The conjugate moves the three minus signs onto the space slots and leaves the fourth coordinate alone, because $\varepsilon=(1,-1,-1,-1)$ and the substitution touches the coefficients only. In this reading the fourth-coordinate term is imaginary and the three space terms are real, and that is the whole of the arithmetic the four products below perform.
+
+**On the informational sector $\mathbb{M}_+$**, where $Q_t=q_t$ and $Q_k=iq'_k$, the roles are exchanged: the fourth-coordinate derivative is real, $\partial/\partial Q_t=\partial/\partial q_t$, and the three space derivatives carry $-i$, $\partial/\partial Q_k=-i\,\partial/\partial q'_k$. The three spatial operations are those of the general definitions, read on the sector and marked with the sector and with nothing else: $\nabla|_{\mathbb{M}_+}=\sum_k\vec e_k\,\partial/\partial q'_k$ and $\Delta|_{\mathbb{M}_+}=\sum_k\partial^2/\partial {q'_k}^2$, the sum spelled out as everywhere and the mark naming the slice and not a chart. Then $\Delta_Q|_{\mathbb{M}_+}=-\Delta|_{\mathbb{M}_+}$, and
+
+$$
+\tilde\nabla\big|_{\mathbb{M}_+}=e_t\frac{\partial}{\partial q_t}-i\sum_k\vec e_k\frac{\partial}{\partial q'_k},
+\qquad
+\tilde\nabla^{\natural}\big|_{\mathbb{M}_+}=e_t\frac{\partial}{\partial q_t}+i\sum_k\vec e_k\frac{\partial}{\partial q'_k}.
+$$
+
+Reading the two gradient displays term by term, the fourth-coordinate slot loses its $-i$ and gains a $1$ while the three space slots lose their $1$ and gain a $-i$, and no other difference exists. The $i$ sits on the time coefficient on $\mathbb{M}_-$ and on the three space coefficients on $\mathbb{M}_+$, so its square is $(-i)^2=-1$ once on the first slice and three times on the second, which is why the two slices carry opposite signature. That sign is a property of the slice and not of the operator: it is read on the operator only after a sector is named, and it is the reason the d'Alembertian below carries the time term positive on one sector and negative on the other.
 
 ### The Plain Bilinear Product, Its Form and Its Norm
 
@@ -197,7 +217,19 @@ $$
 \tilde\nabla\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}t}+\nabla\times\vec Q_{\mathrm f} .
 $$
 
-A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material sector** the same product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, the space part being unchanged.
+A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material sector** the same product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ and $\nabla$ the physical spatial gradient, so the space part is unchanged and the fourth-coordinate part gains the factor $-i$:
+
+$$
+\tilde\nabla\tilde Q_{\mathrm f}\big|_{\mathbb{M}_-}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial q'_t}+\nabla Q_{\mathrm{f}t}+\nabla\times\vec Q_{\mathrm f} .
+$$
+
+**On the informational sector** the same product is read with $\partial/\partial Q_t=\partial/\partial q_t$ and with the three spatial derivatives carrying $-i$, so the whole spatial part is multiplied by $-i$ and the fourth-coordinate part is real:
+
+$$
+\tilde\nabla\tilde Q_{\mathrm f}\big|_{\mathbb{M}_+}=\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial\vec Q_{\mathrm f}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}Q_{\mathrm{f}t}-i\,\nabla|_{\mathbb{M}_+}\times\vec Q_{\mathrm f} .
+$$
+
+The two displays are one product read on two slices, and they differ in the way the two gradient displays differ: the divergence and the curl carry their own sign on $\mathbb{M}_-$ and an $i$ with a change of sign on $\mathbb{M}_+$, because $-i$ factors out of three spatial derivatives and multiplies each of them once. Nothing is redefined: a reader who substitutes the four factors of §*The Gradient* into the general display obtains each line, and a reader who does not substitute keeps the general display, which is the operator's own form.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in *Product and Form Conventions*, §*The Twelve Products and Their Names*. The half-sum keeps the form as its scalar part,
 
@@ -219,7 +251,7 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle=\mathrm{Sc}(\tilde\nabla\tilde Q_{\mathrm f})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}Q_{\mathrm{f}\mu}=\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f} ,
 $$
 
-a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material sector** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\vec Q_{\mathrm f}$.
+a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material sector** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\vec Q_{\mathrm f}$, the fourth-coordinate slot imaginary and the divergence real; **on the informational sector** it is $\frac{\partial Q_{\mathrm{f}t}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}\cdot\vec Q_{\mathrm f}$, the fourth-coordinate slot real and the divergence imaginary. The sign vector $\varepsilon$ belongs to the product and the factors belong to the slice, and the two never merge into one symbol.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments:
 
@@ -227,7 +259,7 @@ $$
 \langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}(\tilde\nabla\tilde\nabla)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
 $$
 
-the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$, which is not the series' d'Alembertian; on this sector the d'Alembertian is $\Delta-\frac{\partial^2}{\partial (q'_t)^2}$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*).
+the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$, which is not the series' d'Alembertian; on this sector the d'Alembertian is $\Delta-\frac{\partial^2}{\partial (q'_t)^2}$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*). **On the informational sector** it is $\frac{\partial^2}{\partial q_t^2}+\Delta|_{\mathbb{M}_+}$, both terms positive, the negative of the material reading as the sign pattern of §*The Gradient* requires, and again neither the wave operator nor the d'Alembertian.
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
@@ -237,7 +269,19 @@ $$
 \tilde\nabla^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}t}-\nabla\times\vec Q_{\mathrm f} .
 $$
 
-**On the material sector** the same substitution $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ applies.
+**On the material sector** the same substitution $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ applies with $\nabla$ the physical gradient, the space part unchanged and the fourth-coordinate part gaining $-i$:
+
+$$
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}\big|_{\mathbb{M}_-}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial q'_t}-\nabla Q_{\mathrm{f}t}-\nabla\times\vec Q_{\mathrm f} .
+$$
+
+**On the informational sector** the substitution is $\partial/\partial Q_t=\partial/\partial q_t$ with $-i$ on the three space derivatives, and the space signs turn over once more, because the conjugate already carries them and the coefficient carries an $i$:
+
+$$
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}\big|_{\mathbb{M}_+}=\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial\vec Q_{\mathrm f}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}Q_{\mathrm{f}t}+i\,\nabla|_{\mathbb{M}_+}\times\vec Q_{\mathrm f} .
+$$
+
+Compared with the plain product on the same slice, the two lines differ as the general displays differ, in the sign of the divergence and in the sign of the gradient and the curl, which is the statement that the conjugate derivative is not a second operator but the same operator with $\varepsilon$ applied to its units.
 
 **The symmetric and antisymmetric parts.** The half-sum is central and is the quaternionic form itself,
 
@@ -257,7 +301,7 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde Q_{\mathrm f})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}Q_{\mathrm{f}\mu}=\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}+\nabla\cdot\vec Q_{\mathrm f} ,
 $$
 
-a scalar, the **contraction** of the derivative with the field, read on the material sector. It differs from the plain form by the three signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed. **On the material sector** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\vec Q_{\mathrm f}$.
+a scalar, the **contraction** of the derivative with the field, read on the material sector. It differs from the plain form by the three signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed. **On the material sector** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\vec Q_{\mathrm f}$; **on the informational sector** it is $\frac{\partial Q_{\mathrm{f}t}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}\cdot\vec Q_{\mathrm f}$, with the divergence back with a minus because the conjugate derivative has already applied $\varepsilon$.
 
 **The norm, and the definition of the d'Alembertian.** The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:
 
@@ -277,6 +321,14 @@ $$
 
 a plus on the vector part and a minus on the fourth coordinate. On $\mathbb{M}_-$, where the series does its work, this reading is the **series convention**, used by the Klein–Gordon article, the Dirac article, the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*, and the great majority of the series. **The relation $Q_t=iq'_t$ is a statement about the material sector, not about the operator**, which in every case is $\partial^2/\partial Q_t^2+\Delta_Q$; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. The operator is one, and every article writes it the same way.
 
+**The special case of the informational sector.** On $\mathbb{M}_+$ the coordinates are $Q_t=q_t$ and $Q_k=iq'_k$, and the substitution works the other way round: the fourth-coordinate second derivative gains no sign, $\partial^2/\partial Q_t^2=\partial^2/\partial q_t^2$, while each of the three space second derivatives gains a minus, $\partial^2/\partial Q_k^2=-\partial^2/\partial {q'_k}^2$, so the same operator reads
+
+$$
+\Box\big|_{\mathbb{M}_+}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=\frac{\partial^2}{\partial q_t^2}-\Delta|_{\mathbb{M}_+},
+$$
+
+a plus on the fourth coordinate and a minus on the vector part, which is the negative of the material line above. The two sector lines are one operator: a slice that keeps a coordinate carrying an $i$ turns one sign, and a slice that keeps the same coordinate without one does not. A reader who moves an equation from one sector to the other moves one overall sign and nothing else, and the series never takes the operator from one sector and the density from the other.
+
 ### The Hermitian Product, Its Form and Its Norm
 
 **The product.** The general plain sesquilinear product is the third of the four general products of *Product and Form Conventions*, §*The Twelve Products and Their Names*; it is the plain product applied to the **conjugated** field $\tilde Q_{\mathrm f}^{*}=\bar Q_{\mathrm{f}t}e_t-\overline{\vec Q_{\mathrm f}}$, so that on the gradient it is $\tilde\nabla\tilde Q_{\mathrm f}^{*}$, conjugate-linear in the field while the first slot stays $\mathbb{C}$-linear,
@@ -284,6 +336,20 @@ a plus on the vector part and a minus on the fourth coordinate. On $\mathbb{M}_-
 $$
 \tilde\nabla\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}} .
 $$
+
+**On the material sector** the product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ and the physical gradient, so the conjugated field keeps its coefficients and only the factors of the derivatives change:
+
+$$
+\tilde\nabla\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{M}_-}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial q'_t}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}} .
+$$
+
+The two plus signs on the vector slot are the work of the conjugation, which reversed the sign of the vector part of the field before any derivative met it. **On the informational sector** the same product is read with $\partial/\partial Q_t=\partial/\partial q_t$ and $-i$ on the three space derivatives:
+
+$$
+\tilde\nabla\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{M}_+}=\Bigl(\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}\bar Q_{\mathrm{f}t}+i\,\nabla|_{\mathbb{M}_+}\times\overline{\vec Q_{\mathrm f}} .
+$$
+
+The pair makes the Hermitian product usable, because its scalar slot is the one that survives the conjugate transpose: the two readings are two ways of writing one density, the material one with an imaginary fourth-coordinate derivative and a real divergence, the informational one with a real fourth-coordinate derivative and an imaginary divergence.
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is central and is the Hermitian form itself,
 
@@ -315,7 +381,7 @@ $$
 \mathcal L^{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\Bigl|\frac{\partial\phi}{\partial q'_t}\Bigr|^2-\lvert\nabla\phi\rvert^2 ,
 $$
 
-the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the material sector** the form itself is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$.
+the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the informational sector** the same sum runs over the same four terms with the other factors, the fourth-coordinate slot contributing $+1$ and each of the three space slots $-1$, so the scalar part is $\lvert\partial\phi/\partial q_t\rvert^2-\lvert\nabla|_{\mathbb{M}_+}\phi\rvert^2$ and the kinetic term is its negative. The overall sign belongs to the operator and not to the density, and an article that writes a Lagrangian on $\mathbb{M}_+$ fixes the sign of its action there. **On the material sector** the form itself is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$; **on the informational sector** it is $\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q_t}-i\,\nabla|_{\mathbb{M}_+}\cdot\overline{\vec Q_{\mathrm f}}$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments. By §*The Gradient*, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and
 
@@ -323,7 +389,7 @@ $$
 \langle\tilde\nabla,\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{*}=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=\Box ,
 $$
 
-so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four on the biquaternion layer**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert_E$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material sector** it is the same operator, $\Box|_{\mathbb{M}_-}=\Delta-\partial^2/\partial (q'_t)^2$.
+so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four on the biquaternion layer**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert_E$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material sector** it is the same operator, $\Box|_{\mathbb{M}_-}=\Delta-\partial^2/\partial (q'_t)^2$; **on the informational sector** it is the same operator again, $\Box|_{\mathbb{M}_+}=\partial^2/\partial q_t^2-\Delta|_{\mathbb{M}_+}$, and the two lines are negatives of each other because the two sectors keep complementary halves of the eight parameters. Positivity is untouched by that sign: the form is positive on the elements in either reading, and what changes is the operator's own sign and not the form's.
 
 ### The Krein Product, Its Form and Its Norm
 
@@ -332,6 +398,20 @@ so the Hermitian norm of the gradient is the d'Alembertian, the same operator as
 $$
 \tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}} .
 $$
+
+**On the material sector** the product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ and the physical gradient:
+
+$$
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{M}_-}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial q'_t}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}} .
+$$
+
+**On the informational sector** it is read with $\partial/\partial Q_t=\partial/\partial q_t$ and $-i$ on the three space derivatives:
+
+$$
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}\big|_{\mathbb{M}_+}=\Bigl(\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}\bar Q_{\mathrm{f}t}-i\,\nabla|_{\mathbb{M}_+}\times\overline{\vec Q_{\mathrm f}} .
+$$
+
+The two lines are the companions of the quaternionic pair: the four products of the section are the four readings of the same derivative on the two slices, and no line needs a convention beyond the four factors of §*The Gradient*.
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is
 
@@ -353,7 +433,7 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}\bar Q_{\mathrm{f}\mu}=\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}-\nabla\cdot\overline{\vec Q_{\mathrm f}} ,
 $$
 
-a scalar, the **contraction** of the conjugate derivative with the conjugated field, read on the material sector. **On the material sector** it is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$.
+a scalar, the **contraction** of the conjugate derivative with the conjugated field, read on the material sector. **On the material sector** it is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$; **on the informational sector** it is $\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q_t}+i\,\nabla|_{\mathbb{M}_+}\cdot\overline{\vec Q_{\mathrm f}}$, the divergence back with a plus, because the conjugate derivative has already applied $\varepsilon$ and the substitution has applied $-i$ three times.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments; on the gradient, since $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (§*The Gradient*),
 
@@ -361,9 +441,11 @@ $$
 \langle\tilde\nabla,\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
 $$
 
-so the Krein norm of the gradient **coincides with the plain bilinear norm**. It is the indefinite partner of the Hermitian form, and on the elements it is the form of signature $(1,3)$ whose diagonal is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, indefinite — positive where $\lvert Q_t\rvert^2>\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ and negative where the opposite inequality holds — so it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these subsections. **On the material sector**, in the real coefficient $q'_t$ of $Q_t=iq'_t$, it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$.
+so the Krein norm of the gradient **coincides with the plain bilinear norm**. It is the indefinite partner of the Hermitian form, and on the elements it is the form of signature $(1,3)$ whose diagonal is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, indefinite — positive where $\lvert Q_t\rvert^2>\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ and negative where the opposite inequality holds — so it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these subsections. **On the material sector**, in the real coefficient $q'_t$ of $Q_t=iq'_t$, it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$, both terms negative; **on the informational sector** it is $\frac{\partial^2}{\partial q_t^2}+\Delta|_{\mathbb{M}_+}$, both terms positive, and the Krein norm there is again the plain bilinear norm and not the d'Alembertian.
 
 **A contraction is a form, never an index.** The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and it is the identity, so no index is raised and none is lowered: a raised index would be the same index. What the product carries is the plain weight $\varepsilon$, and the weight is not a metric. Where a text with covariant indices contracts a derivative with a field through a raised and a lowered index, the series writes the quaternionic form $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}$; where it contracts two derivatives, the series writes the quaternionic norm $\langle\tilde\nabla\rangle_{\natural}=\Box$; and where it moves an index through a metric, the series writes the element $\tilde Q_{\mathrm f}$ itself, the weight being the sign vector inside the product.
+
+**The rule is one rule on both slices.** A contraction never raises an index and never lowers one, on $\mathbb{M}_-$ or on $\mathbb{M}_+$, because the metric is the identity on both. What changes between the slices is only the coefficient the contraction carries: on $\mathbb{M}_-$ the fourth-coordinate component is multiplied by $-i$ and the three space components by $1$, while on $\mathbb{M}_+$ the fourth-coordinate component is multiplied by $1$ and the three space components by $-i$. A reader who checks a component formula on either slice checks those four numbers and nothing else, and the check is complete.
 
 ## The Transposition of the Gradient
 
