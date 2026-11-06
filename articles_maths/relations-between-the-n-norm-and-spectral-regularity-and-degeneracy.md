@@ -130,7 +130,7 @@ $$
 
 They coincide exactly when $Q_t=0$; on the two cones this is the set $\Sigma_{00}$. On $\Sigma_{00}\setminus\{0\}$ they are equal and non-zero, so the two cones are tangent there; at the origin both vanish, and both cones are singular.
 
-**Remark (multiplicativity).** The norm is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, so $\mathcal N$ and its complement are stable under the product. The cone $\mathcal S$ is stable under neither the product nor the sum. Both factors of
+**Remark (multiplicativity).** The norm is multiplicative, $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, so $\mathcal N$ and its complement are stable under the product. The cone $\mathcal S$ is stable under neither the product nor the sum. Both factors of
 
 $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z

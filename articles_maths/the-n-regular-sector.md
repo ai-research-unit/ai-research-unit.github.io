@@ -56,9 +56,9 @@ $$
 
 **Theorem (the group).** $\mathbb{B}^{\times}$ is a group under the plain product.
 
-*Proof.* Closure is multiplicativity: $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity is that of the algebra. The unit is $e_t$, of norm one. The inverse is the corollary above.
+*Proof.* Closure is multiplicativity: $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity is that of the algebra. The unit is $e_t$, of norm one. The inverse is the corollary above.
 
-**Remark (the other products).** For the product $\tilde P^{\natural}\tilde Q$ there is a left unit $e_t$ and no right unit, so there is no group of units. The criterion is unchanged: the one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The sector is therefore a plain-product object; the other products select the same set and lose the group (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*).
+**Remark (the other products).** For the product $\tilde Q_2^{\natural}\tilde Q$ there is a left unit $e_t$ and no right unit, so there is no group of units. The criterion is unchanged: the one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The sector is therefore a plain-product object; the other products select the same set and lose the group (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*).
 
 **Remark (the name).** In ring theory a regular element is a non-zero-divisor, and the origin qualifies; there the regular elements are $\mathbb{B}^{\times}\cup\{0\}$. The title uses **$\natural$-regular** in the sense of the norm, so the origin is excluded and the sector is exactly the unit group. The two readings differ at one point, the apex.
 
@@ -106,17 +106,17 @@ is a connected two-to-one covering with kernel $\{\pm(e_t,e_t)\}$, so that $\mat
 
 ## Multiplication and Inversion
 
-**Proposition (the norm is conjugation invariant).** For all $\tilde P,\tilde Q$,
+**Proposition (the norm is conjugation invariant).** For all $\tilde Q_2,\tilde Q$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural},\qquad
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural},\qquad
 \langle\tilde Q^{-1}\rangle_{\natural}=\frac{1}{\langle\tilde Q\rangle_{\natural}},\qquad
-\langle\tilde P\tilde Q\tilde P^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_2\tilde Q\tilde Q_2^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}.
 $$
 
 For every integer $n$, $\langle\tilde Q^n\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^n$.
 
-*Proof.* The first two are multiplicativity and the inverse formula; the third follows by cancelling $\langle\tilde P\rangle_{\natural}$; the last is induction, with the negative exponents given by the inverse.
+*Proof.* The first two are multiplicativity and the inverse formula; the third follows by cancelling $\langle\tilde Q_2\rangle_{\natural}$; the last is induction, with the negative exponents given by the inverse.
 
 **Remark (the inverse in coordinates).** Writing $\tilde Q=Q_te_t+\vec Q$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$,
 

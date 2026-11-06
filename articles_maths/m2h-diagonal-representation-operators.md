@@ -4,7 +4,7 @@
 
 **The split biquaternion algebra has one operator family and not two: the left and the right multiplications are two commuting copies of the same diagonal pattern, and the two-sided operators form the product of two quaternionic cones inside the block diagonal part of the ambient.**
 
-**The count.** The algebra has real dimension eight. Its left multiplications form an eight-dimensional subspace of the endomorphisms of an eight-dimensional real space, because the algebra is faithful and not a matrix algebra. The left and the right multiplications together span a fourteen-dimensional space, and they commute, so they give two copies of the same algebra inside the 64-dimensional ambient, meeting in the two-dimensional centre. The two-sided operators $L_{\tilde Q}R_{\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P$ have sixteen parameters and reach a fourteen-dimensional family, because a central rescaling of $\tilde Q$ against the inverse rescaling of $\tilde P$ changes nothing. And every operator of the family is block diagonal, because the algebra is.
+**The count.** The algebra has real dimension eight. Its left multiplications form an eight-dimensional subspace of the endomorphisms of an eight-dimensional real space, because the algebra is faithful and not a matrix algebra. The left and the right multiplications together span a fourteen-dimensional space, and they commute, so they give two copies of the same algebra inside the 64-dimensional ambient, meeting in the two-dimensional centre. The two-sided operators $L_{\tilde Q}R_{\tilde Q_2}(\tilde X)=\tilde Q\tilde X\tilde Q_2$ have sixteen parameters and reach a fourteen-dimensional family, because a central rescaling of $\tilde Q$ against the inverse rescaling of $\tilde Q_2$ changes nothing. And every operator of the family is block diagonal, because the algebra is.
 
 **The two copies.** The left multiplications and the right multiplications are not the same in this category, unlike the reduced biquaternion category where the algebra is commutative and $L=R$. They are independent, they commute, and their sum generates the whole of $\mathrm{End}(\mathbb{B}_{\mathrm{spl}})$ as a vector space of dimension sixteen. So the category has a genuine bimodule structure, and the structure is the double of the quaternionic one.
 
@@ -28,7 +28,7 @@ with basis $(1,j)$ over $\mathbb{H}$. The real dimension is eight and the quater
 
 | rung | object | real dimension |
 |---|---|---|
-| the family | the two-sided operators $L_{\tilde Q}R_{\tilde P}$ | reaches $14$ |
+| the family | the two-sided operators $L_{\tilde Q}R_{\tilde Q_2}$ | reaches $14$ |
 | the left and the right copies together | $L$ and $R$ | $14$ |
 | the diagonal subalgebra of the ambient | $\mathsf M(\mathbb{B}_{\mathrm{spl}})$ | $8$ |
 | the carrier | $\mathbb{B}_{\mathrm{spl}}$ | $8$ |
@@ -46,11 +46,11 @@ of dimension thirty-two, which is the ambient of the category and not the whole 
 
 **Two commuting faithful copies, block diagonal, with the rank of the sum equal to the sum of the ranks.**
 
-**Theorem (the one-sided operators).** For $\tilde Q,\tilde P$,
+**Theorem (the one-sided operators).** For $\tilde Q,\tilde Q_2$,
 $$
-L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde P}=\begin{pmatrix}R_{\tilde P_{+}}&0\\ 0&R_{\tilde P_{-}}\end{pmatrix},
+L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde Q_2}=\begin{pmatrix}R_{\tilde Q_{2+}}&0\\ 0&R_{\tilde Q_{2-}}\end{pmatrix},
 $$
-and $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, so the pair $(L,R)$ is a representation of $\mathbb{B}_{\mathrm{spl}}\otimes{\mathbb{B}_{\mathrm{spl}}}_{\mathrm{opp}}$ that is faithful on each factor.
+and $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, so the pair $(L,R)$ is a representation of $\mathbb{B}_{\mathrm{spl}}\otimes{\mathbb{B}_{\mathrm{spl}}}_{\mathrm{opp}}$ that is faithful on each factor.
 
 **The two copies are independent.** Unlike the commutative categories, $L_{\tilde Q}\neq R_{\tilde Q}$ in general, and the difference is exactly the commutator structure of the quaternion: $L_{u}x=ux$ and $R_{u}x=xu$ differ by $[u,x]$. Since the commutator of $\mathbb{H}$ is its three-dimensional pure imaginary part, the two copies agree exactly on the centre, and the "two-sided" instruction is a genuine instruction and not a decoration.
 
@@ -82,39 +82,39 @@ The plain form is bilinear and symmetric, so it exchanges the two copies: $\lang
 
 **The family over $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$, blockwise, and the reach is the product of the two quaternionic cones.**
 
-**Definition.** The two-sided operator of the pair $(\tilde Q,\tilde P)$ is
+**Definition.** The two-sided operator of the pair $(\tilde Q,\tilde Q_2)$ is
 $$
-L_{\tilde Q}R_{\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P=\begin{pmatrix}L_{\tilde Q_{+}}R_{\tilde P_{+}}(\tilde X_{+})&0\\ 0&L_{\tilde Q_{-}}R_{\tilde P_{-}}(\tilde X_{-})\end{pmatrix},
+L_{\tilde Q}R_{\tilde Q_2}(\tilde X)=\tilde Q\tilde X\tilde Q_2=\begin{pmatrix}L_{\tilde Q_{+}}R_{\tilde Q_{2+}}(\tilde X_{+})&0\\ 0&L_{\tilde Q_{-}}R_{\tilde Q_{2-}}(\tilde X_{-})\end{pmatrix},
 $$
 so the family is the product of the two quaternionic families.
 
 **The composition.**
 $$
-L_{\tilde Q_{1}}R_{\tilde P_{1}}\circ L_{\tilde Q_{2}}R_{\tilde P_{2}}=L_{\tilde Q_{1}\tilde Q_{2}}R_{\tilde P_{2}\tilde P_{1}},
+L_{\tilde Q_{1}}R_{\tilde Q_{2,1}}\circ L_{\tilde Q_{2}}R_{\tilde Q_{2,2}}=L_{\tilde Q_{1}\tilde Q_{2}}R_{\tilde Q_{2,2}\tilde Q_{2,1}},
 $$
-the order reverses in the second slot, and the pair of pairs is a semigroup under the product $(\tilde Q,\tilde P)(\tilde R,\tilde S)=(\tilde Q\tilde R,\tilde S\tilde P)$, with unit $(1,1)$.
+the order reverses in the second slot, and the pair of pairs is a semigroup under the product $(\tilde Q,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q\tilde Q_3,\tilde Q_4\tilde Q_2)$, with unit $(1,1)$.
 
 **The fibre.** Two pairs give the same operator exactly when they differ by a central rescaling in opposite directions,
 $$
-L_{\tilde Q\lambda}R_{\lambda^{-1}\tilde P}=L_{\tilde Q}R_{\tilde P}\qquad \text{for every }\lambda\in{\mathbb{C}_{\mathrm{spl}}}^{\times},
+L_{\tilde Q\lambda}R_{\lambda^{-1}\tilde Q_2}=L_{\tilde Q}R_{\tilde Q_2}\qquad \text{for every }\lambda\in{\mathbb{C}_{\mathrm{spl}}}^{\times},
 $$
 with ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\mathbb{R}^{\times}\times\mathbb{R}^{\times}$ blockwise, so the fibre over a nonzero operator is two-dimensional and the reach has real dimension $16-2=14$, which agrees with the block count $7+7$.
 
 **The reach.** The reach
 $$
-\mathcal C_{R}=\bigl\{L_{\tilde Q}R_{\tilde P}\bigr\}\subset\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}})
+\mathcal C_{R}=\bigl\{L_{\tilde Q}R_{\tilde Q_2}\bigr\}\subset\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}})
 $$
 is the product of the two quaternionic cones, each of real dimension seven inside the sixteen of $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$. It is **not** a subspace: a sum of two elements of a block need not be in the block, because the quaternionic cone is not closed under addition. It is not convex either, for the same reason. It is a genuine semialgebraic cone with two independent irreducible components, and it is the object that the coefficient array of the next sections tests.
 
-**The zero operator.** $L_{\tilde Q}R_{\tilde P}=0$ exactly when each block has a vanishing factor, that is when
+**The zero operator.** $L_{\tilde Q}R_{\tilde Q_2}=0$ exactly when each block has a vanishing factor, that is when
 $$
-\tilde Q_{+}=0\ \text{or}\ \tilde P_{+}=0,\qquad\text{and}\qquad \tilde Q_{-}=0\ \text{or}\ \tilde P_{-}=0,
+\tilde Q_{+}=0\ \text{or}\ \tilde Q_{2+}=0,\qquad\text{and}\qquad \tilde Q_{-}=0\ \text{or}\ \tilde Q_{2-}=0,
 $$
-so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{1}$ and $\tilde P=\tilde\Pi_{2}$, for example — and the three other combinations of the two idempotents. The zero set of the map $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}R_{\tilde P}$ is therefore a union of four products, of real dimension $4+8=12$ each, and the pairs that achieve the zero operator are the ones that the length discussion below must count.
+so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{1}$ and $\tilde Q_2=\tilde\Pi_{2}$, for example — and the three other combinations of the two idempotents. The zero set of the map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is therefore a union of four products, of real dimension $4+8=12$ each, and the pairs that achieve the zero operator are the ones that the length discussion below must count.
 
 **The units.** The operators of the family that are invertible are those with both blocks nonzero, that is
 $$
-L_{\tilde Q}R_{\tilde P}\in GL(\mathbb{B}_{\mathrm{spl}})\iff \tilde Q_{\pm}\neq0,\ \tilde P_{\pm}\neq0 ,
+L_{\tilde Q}R_{\tilde Q_2}\in GL(\mathbb{B}_{\mathrm{spl}})\iff \tilde Q_{\pm}\neq0,\ \tilde Q_{2\pm}\neq0 ,
 $$
 and the map from the pairs to the invertible operators is a surjection with two-dimensional fibres. The stabiliser of the identity is
 $$
@@ -166,9 +166,9 @@ are the two-sided operators with the second parameter a conjugation. In the mode
 
 **The display is block diagonal, one Kronecker product per block, and the coefficient array is tested blockwise.**
 
-**The display.** The operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}_{\mathrm{spl}}$ and its realification acts on $\mathbb{R}^{8}=\mathbb{R}^{4}\oplus\mathbb{R}^{4}$, so its matrix is block diagonal with two blocks of $4\times4$ real entries. Each block is a Kronecker product,
+**The display.** The operator $L_{\tilde Q}R_{\tilde Q_2}$ acts on $\mathbb{B}_{\mathrm{spl}}$ and its realification acts on $\mathbb{R}^{8}=\mathbb{R}^{4}\oplus\mathbb{R}^{4}$, so its matrix is block diagonal with two blocks of $4\times4$ real entries. Each block is a Kronecker product,
 $$
-\mathsf K_{\pm}=L(\tilde P_{\pm})^{\mathsf T}\otimes L(\tilde Q_{\pm})\in M_{16}(\mathbb{R}),
+\mathsf K_{\pm}=L(\tilde Q_{2\pm})^{\mathsf T}\otimes L(\tilde Q_{\pm})\in M_{16}(\mathbb{R}),
 $$
 where $L(u)$ is the $4\times4$ real matrix of the left multiplication by the quaternion $u$; the display of the pair is the direct sum
 $$
@@ -177,11 +177,11 @@ $$
 
 **The invariants.** The trace and the determinant multiply and add over the two blocks:
 $$
-\operatorname{tr}\mathsf K=16\bigl(\mathrm{Sc}\tilde Q_{+}\,\mathrm{Sc}\tilde P_{+}+\mathrm{Sc}\tilde Q_{-}\,\mathrm{Sc}\tilde P_{-}\bigr),\qquad \det\mathsf K=\bigl(N(\tilde Q_{+})N(\tilde P_{+})\bigr)^{4}\bigl(N(\tilde Q_{-})N(\tilde P_{-})\bigr)^{4},
+\operatorname{tr}\mathsf K=16\bigl(\mathrm{Sc}\tilde Q_{+}\,\mathrm{Sc}\tilde Q_{2+}+\mathrm{Sc}\tilde Q_{-}\,\mathrm{Sc}\tilde Q_{2-}\bigr),\qquad \det\mathsf K=\bigl(N(\tilde Q_{+})N(\tilde Q_{2+})\bigr)^{4}\bigl(N(\tilde Q_{-})N(\tilde Q_{2-})\bigr)^{4},
 $$
 and the rank is
 $$
-\operatorname{rank}\mathsf K=16\bigl(\operatorname{rank}(\tilde Q_{+})\operatorname{rank}(\tilde P_{+})+\operatorname{rank}(\tilde Q_{-})\operatorname{rank}(\tilde P_{-})\bigr)\in\{0,16,32\},
+\operatorname{rank}\mathsf K=16\bigl(\operatorname{rank}(\tilde Q_{+})\operatorname{rank}(\tilde Q_{2+})+\operatorname{rank}(\tilde Q_{-})\operatorname{rank}(\tilde Q_{2-})\bigr)\in\{0,16,32\},
 $$
 because each block contributes sixteen exactly when both its quaternions are nonzero.
 
@@ -191,7 +191,7 @@ e_{\epsilon\mu}=e_{\epsilon}e_{\mu},\qquad \epsilon\in\{1,j\},\ \mu\in\{t,x,y,z\
 $$
 of eight elements, and expand a two-sided operator in the basis of the products:
 $$
-L_{\tilde Q}R_{\tilde P}=\sum_{\epsilon,\mu,\eta,\nu}c^{(\epsilon\mu)(\eta\nu)}\,L_{e_{\epsilon\mu}}R_{e_{\eta\nu}} .
+L_{\tilde Q}R_{\tilde Q_2}=\sum_{\epsilon,\mu,\eta,\nu}c^{(\epsilon\mu)(\eta\nu)}\,L_{e_{\epsilon\mu}}R_{e_{\eta\nu}} .
 $$
 The coefficients form an $8\times8$ real array $c$. Because the algebra is a product, the array is block diagonal in the indices $\epsilon$ and $\eta$: the coefficients with $\epsilon\neq\eta$ vanish, since a product with one factor in each block is zero. So the array is the direct sum of two $4\times4$ real arrays, one per block, and each of the two is the coefficient array of a quaternion two-sided operator.
 
@@ -215,30 +215,30 @@ with the strata of the general article: the zero element, the union of the two p
 
 **The two-sided rank.** For a pair,
 $$
-\operatorname{rank}_{\mathbb{H}}L_{\tilde Q}R_{\tilde P}=\operatorname{rank}(\tilde Q_{+})\operatorname{rank}(\tilde P_{+})+\operatorname{rank}(\tilde Q_{-})\operatorname{rank}(\tilde P_{-})\in\{0,1,2\},
+\operatorname{rank}_{\mathbb{H}}L_{\tilde Q}R_{\tilde Q_2}=\operatorname{rank}(\tilde Q_{+})\operatorname{rank}(\tilde Q_{2+})+\operatorname{rank}(\tilde Q_{-})\operatorname{rank}(\tilde Q_{2-})\in\{0,1,2\},
 $$
 with the same three strata, and the operator fails exactly when one of the two blocks has a vanishing factor.
 
 **The invariants.** The determinant and the trace of the model are the objects of the general article; for the operator the relevant pair is the Study determinant and the reduced trace of the two-sided operator,
 $$
-\det L_{\tilde Q}R_{\tilde P}=N(\tilde Q_{+})N(\tilde P_{+})\,N(\tilde Q_{-})N(\tilde P_{-}),\qquad \operatorname{Trd}L_{\tilde Q}R_{\tilde P}=4\bigl(\mathrm{Sc}\tilde Q_{+}\mathrm{Sc}\tilde P_{+}+\mathrm{Sc}\tilde Q_{-}\mathrm{Sc}\tilde P_{-}\bigr),
+\det L_{\tilde Q}R_{\tilde Q_2}=N(\tilde Q_{+})N(\tilde Q_{2+})\,N(\tilde Q_{-})N(\tilde Q_{2-}),\qquad \operatorname{Trd}L_{\tilde Q}R_{\tilde Q_2}=4\bigl(\mathrm{Sc}\tilde Q_{+}\mathrm{Sc}\tilde Q_{2+}+\mathrm{Sc}\tilde Q_{-}\mathrm{Sc}\tilde Q_{2-}\bigr),
 $$
 and the reduced trace is additive over sums of operators while the determinant is multiplicative over composition.
 
-**The failure of the trace as a functional.** The naive trace of the two-sided operator is the quaternion $\tilde Q_{+}\tilde P_{+}+\tilde Q_{-}\tilde P_{-}$, which is not central and not invariant under the change of basis; only its scalar part is. So the operator theory of this category has one invariant functional, the reduced trace, and one multiplicative functional, the determinant, and no third.
+**The failure of the trace as a functional.** The naive trace of the two-sided operator is the quaternion $\tilde Q_{+}\tilde Q_{2+}+\tilde Q_{-}\tilde Q_{2-}$, which is not central and not invariant under the change of basis; only its scalar part is. So the operator theory of this category has one invariant functional, the reduced trace, and one multiplicative functional, the determinant, and no third.
 
 ## The Pair as a Semigroup
 
 **Composition, the unit, the stabiliser, the isometries and the multiplicative pairs.**
 
-**The semigroup.** The pairs form the semigroup $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$ under $(\tilde Q,\tilde P)(\tilde R,\tilde S)=(\tilde Q\tilde R,\tilde S\tilde P)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The units of the semigroup are the pairs with both entries in the group of units, and they act on the algebra by the two-sided operators.
+**The semigroup.** The pairs form the semigroup $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$ under $(\tilde Q,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q\tilde Q_3,\tilde Q_4\tilde Q_2)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The units of the semigroup are the pairs with both entries in the group of units, and they act on the algebra by the two-sided operators.
 
 **The isometries.** The pairs whose two-sided operator preserves a form:
 
 | form | condition | group per block | compact retract |
 |---|---|---|---|
-| quaternionic | $N(\tilde Q)N(\tilde P)=1$ | $\mathbb{R}\times SU(2)\times SU(2)$, modulo the sign | $S^{3}\times S^{3}$ |
-| plain | $\mathrm{Sc}(\tilde QX\tilde P)=\mathrm{Sc}(X)$ for all $X$ | the same, with the two factors transposed | $S^{3}\times S^{3}$ |
+| quaternionic | $N(\tilde Q)N(\tilde Q_2)=1$ | $\mathbb{R}\times SU(2)\times SU(2)$, modulo the sign | $S^{3}\times S^{3}$ |
+| plain | $\mathrm{Sc}(\tilde QX\tilde Q_2)=\mathrm{Sc}(X)$ for all $X$ | the same, with the two factors transposed | $S^{3}\times S^{3}$ |
 | Hermitian | the same condition on the Hermitian subspace | $SU(2)\times SU(2)$ per block | $S^{3}\times S^{3}$ |
 
 so the compact retract of the isometry group of the category is a product of four three-spheres, in contrast with the torus $T^{2}$ of the reduced biquaternion category and with the single three-sphere of the complex category. The reason is that the quaternionic blocks admit the noncommutative phases, and the phases are the three-spheres.
@@ -253,7 +253,7 @@ so the compact retract of the isometry group of the category is a product of fou
 
 **The map.** The bilinear map of the pair,
 $$
-\beta:\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}\longrightarrow\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}}),\qquad \beta(\tilde Q,\tilde P)=L_{\tilde Q}R_{\tilde P},
+\beta:\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}\longrightarrow\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}}),\qquad \beta(\tilde Q,\tilde Q_2)=L_{\tilde Q}R_{\tilde Q_2},
 $$
 is blockwise the quaternionic map, and its image is the product of the two cones.
 
@@ -274,7 +274,7 @@ The first condition is linear and of codimension thirty-two; the second is the r
 
 **Definition.** The length of a real operator $M$ in the span is the least $r$ such that
 $$
-M=\sum_{i=1}^{r}L_{\tilde Q_{i}}R_{\tilde P_{i}} .
+M=\sum_{i=1}^{r}L_{\tilde Q_{i}}R_{\tilde Q_{2i}} .
 $$
 
 **Theorem (the length ladder).** For every operator in the span,
@@ -304,7 +304,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 | object | $\mathbb{H}$-rank | real rank | coefficient rank |
 |---|---|---|---|
 | $\mathsf M(\tilde Q)$ | $\{0,1,2\}$ | $\{0,4,8\}$ | --- |
-| $L_{\tilde Q}R_{\tilde P}$ | $\{0,1,2\}$ | $\{0,4,8\}$ | per block $\{0,1\}$ |
+| $L_{\tilde Q}R_{\tilde Q_2}$ | $\{0,1,2\}$ | $\{0,4,8\}$ | per block $\{0,1\}$ |
 | $\mathsf K$ | --- | $\{0,16,32\}$ | --- |
 
 **The passage.** The passages are the four-times map for the realification and the blockwise rank-one test for the coefficient array. Unlike the quaternion family, where the coefficient rank and the matrix rank of an operator are related by a linear condition of rank one against the two-sided rank, here the relation holds **blockwise and independently**: the coefficient rank of a block is one exactly when the block's matrix is nonzero, so the two ranks agree in the only sense available — the block is in the cone or it is not.
@@ -350,7 +350,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $L_{\tilde Q}R_{\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P$ | the two-sided operator | this article |
+| $L_{\tilde Q}R_{\tilde Q_2}(\tilde X)=\tilde Q\tilde X\tilde Q_2$ | the two-sided operator | this article |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and the right multiplications, block diagonal | this article |
 | $\mathcal C_{R}$ | the reach, the product of the two quaternionic cones | this article |
 | $\mathsf K=\mathsf K_{+}\oplus\mathsf K_{-}$ | the Kronecker display, two $16\times16$ real blocks | this article |

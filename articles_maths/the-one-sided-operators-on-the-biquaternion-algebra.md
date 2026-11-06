@@ -14,11 +14,11 @@ are complex-linear, so they are operators of the ambient space of *The Endomorph
 
 **Why they are one subject.** The two families are the same construction read from the two sides, and every statement about the one is the mirror of a statement about the other: the same injectivity with the unit as probe, the same dimension, the same three ranks, the same invertibility criterion, the same inverse. The one place where the mirror fails is the law — one family is multiplicative and the other anti-multiplicative — and that failure is exactly what the last section measures, when the two families are put in one operator space and asked which operators commute with which.
 
-**What the article proves.** Five things, in this order. The two maps are injective and complex-linear. The left one is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, and the right one is anti-multiplicative, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$; the two images are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four. The kernel and the image of a single operator are the annihilator and the ideal of the element, on the opposite side of the multiplication, and the rank takes the three values $4,2,0$. The operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and the inverse is the operator of the inverse element. Finally, the two families commute element by element, each is the exact commutant of the other, and they meet in the scalars.
+**What the article proves.** Five things, in this order. The two maps are injective and complex-linear. The left one is multiplicative, $L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2}$, and the right one is anti-multiplicative, $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$; the two images are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four. The kernel and the image of a single operator are the annihilator and the ideal of the element, on the opposite side of the multiplication, and the rank takes the three values $4,2,0$. The operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and the inverse is the operator of the inverse element. Finally, the two families commute element by element, each is the exact commutant of the other, and they meet in the scalars.
 
-**What the article does not do.** The matrices of the two families are the subject of the three matrix articles of the group, where the exchange of §*The Exchange $S$* is verified entry by entry. The products $L_{\tilde Q}R_{\tilde P}$ are *Two-Sided Operators on the Biquaternion Algebra*; the sandwiches $\mathrm{Sd}_{\tilde Q}$ are Part V; the association of the two families with the four forms is *The Four Adjoints of the Biquaternion Algebra in Examples*; the enveloping algebra in which the pair of actions lives is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. This article states no adjoint identity, no product of the two families and no form.
+**What the article does not do.** The matrices of the two families are the subject of the three matrix articles of the group, where the exchange of §*The Exchange $S$* is verified entry by entry. The products $L_{\tilde Q}R_{\tilde Q_2}$ are *Two-Sided Operators on the Biquaternion Algebra*; the sandwiches $\mathrm{Sd}_{\tilde Q}$ are Part V; the association of the two families with the four forms is *The Four Adjoints of the Biquaternion Algebra in Examples*; the enveloping algebra in which the pair of actions lives is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. This article states no adjoint identity, no product of the two families and no form.
 
-**The letters.** The left operator is $L_{\tilde Q}$, the right operator is $R_{\tilde P}$, and the argument is $X$. The letter names the action and not a slot, and the subscript is the element with its own mark. The sets are written $\operatorname{End}_L(\mathbb{B})$ and $\operatorname{End}_R(\mathbb{B})$, abbreviated $L(\mathbb{B})$ and $R(\mathbb{B})$ where a set is used in an identity, and the prime is the commutant: for a set $\mathcal{S}$ of operators, $\mathcal{S}'=\{T:TS=ST\ \text{for every}\ S\in\mathcal{S}\}$. The letter $R$ names the right family and nothing else in this group; the closed ray of the Hermitian sandwich is written as a set and never with that letter. The conventions of the letters, the slots and the set names are *Operator Family Conventions*; this article uses them and defines none of them. **Two words for one object.** The family is **one-sided**, because each member multiplies on one side only, and the member is **regular**, because it is a multiplication of the regular module; the article is named for the family and calls its members the left and the right regular operators.
+**The letters.** The left operator is $L_{\tilde Q}$, the right operator is $R_{\tilde Q_2}$, and the argument is $X$. The letter names the action and not a slot, and the subscript is the element with its own mark. The sets are written $\operatorname{End}_L(\mathbb{B})$ and $\operatorname{End}_R(\mathbb{B})$, abbreviated $L(\mathbb{B})$ and $R(\mathbb{B})$ where a set is used in an identity, and the prime is the commutant: for a set $\mathcal{S}$ of operators, $\mathcal{S}'=\{T:TS=ST\ \text{for every}\ S\in\mathcal{S}\}$. The letter $R$ names the right family and nothing else in this group; the closed ray of the Hermitian sandwich is written as a set and never with that letter. The conventions of the letters, the slots and the set names are *Operator Family Conventions*; this article uses them and defines none of them. **Two words for one object.** The family is **one-sided**, because each member multiplies on one side only, and the member is **regular**, because it is a multiplication of the regular module; the article is named for the family and calls its members the left and the right regular operators.
 
 **Boundaries.** The algebra and its centre are *The Biquaternion Algebra*; the operator space is *The Endomorphisms of the Biquaternion Algebra*; the matrix units are *Special Element and Peirce Conventions*; the norm and the unitary convention are *Norm and Unitary Conventions*; the invertibility criterion of an element is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the $2\times2$ model is *$M_2(\mathbb{C})$ Pauli Representation*.
 
@@ -37,8 +37,8 @@ The product is the algebra product; in the left operator the parameter is writte
 **Proposition (linearity).** Both operators are complex-linear, and both assignments $\tilde Q\mapsto L_{\tilde Q}$ and $\tilde Q\mapsto R_{\tilde Q}$ are complex-linear:
 
 $$
-L_{\lambda\tilde Q+\mu\tilde P}=\lambda L_{\tilde Q}+\mu L_{\tilde P},\qquad
-R_{\lambda\tilde Q+\mu\tilde P}=\lambda R_{\tilde Q}+\mu R_{\tilde P}.
+L_{\lambda\tilde Q+\mu\tilde Q_2}=\lambda L_{\tilde Q}+\mu L_{\tilde Q_2},\qquad
+R_{\lambda\tilde Q+\mu\tilde Q_2}=\lambda R_{\tilde Q}+\mu R_{\tilde Q_2}.
 $$
 
 *Proof.* $\tilde Q(X+\lambda Y)=\tilde QX+\lambda\tilde QY$ and $(X+\lambda Y)\tilde Q=X\tilde Q+\lambda Y\tilde Q$, by distributivity and the complex bilinearity of the product. The two displays in the parameter are the same computation on the other side.
@@ -49,7 +49,7 @@ $$
 
 ### Injectivity
 
-**Proposition (injectivity, both families).** Each map is injective: $L_{\tilde Q}=L_{\tilde P}$ forces $\tilde Q=\tilde P$, and $R_{\tilde Q}=R_{\tilde P}$ forces $\tilde Q=\tilde P$. In particular $L_{\tilde Q}=0$ exactly when $\tilde Q=0$, and the same for $R$.
+**Proposition (injectivity, both families).** Each map is injective: $L_{\tilde Q}=L_{\tilde Q_2}$ forces $\tilde Q=\tilde Q_2$, and $R_{\tilde Q}=R_{\tilde Q_2}$ forces $\tilde Q=\tilde Q_2$. In particular $L_{\tilde Q}=0$ exactly when $\tilde Q=0$, and the same for $R$.
 
 *Proof.* Evaluate at the unit: $L_{\tilde Q}(e_t)=\tilde Qe_t=\tilde Q$, and $R_{\tilde Q}(e_t)=e_t\tilde Q=\tilde Q$. In each family the operator returns its parameter at $e_t$, so equal operators have equal values there.
 
@@ -63,19 +63,19 @@ $$
 
 ## The Two Laws
 
-### $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$ and $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$
+### $L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2}$ and $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$
 
-**Theorem (the two laws).** For all $\tilde Q,\tilde P\in\mathbb{B}$,
+**Theorem (the two laws).** For all $\tilde Q,\tilde Q_2\in\mathbb{B}$,
 
 $$
-L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P},\qquad R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}.
+L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2},\qquad R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}.
 $$
 
-*Proof.* For every $X$, $(L_{\tilde Q}L_{\tilde P})(X)=\tilde Q(\tilde PX)=(\tilde Q\tilde P)X=L_{\tilde Q\tilde P}(X)$, and $(R_{\tilde Q}R_{\tilde P})(X)=(X\tilde P)\tilde Q=X(\tilde P\tilde Q)=R_{\tilde P\tilde Q}(X)$. Both are associativity and nothing else.
+*Proof.* For every $X$, $(L_{\tilde Q}L_{\tilde Q_2})(X)=\tilde Q(\tilde Q_2X)=(\tilde Q\tilde Q_2)X=L_{\tilde Q\tilde Q_2}(X)$, and $(R_{\tilde Q}R_{\tilde Q_2})(X)=(X\tilde Q_2)\tilde Q=X(\tilde Q_2\tilde Q)=R_{\tilde Q_2\tilde Q}(X)$. Both are associativity and nothing else.
 
-**The representation and the anti-representation.** The first law says that $\tilde Q\mapsto L_{\tilde Q}$ is a homomorphism of complex algebras, the **left regular representation** of $\mathbb{B}$. The second says that $\tilde Q\mapsto R_{\tilde Q}$ reverses the order of the product, so it is an **anti-homomorphism**, an anti-isomorphism onto its image by §*Injectivity*. The order is reversed, not the multiplication table: in $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$ the operator applied first is the rightmost, and its parameter stands on the right of the subscript.
+**The representation and the anti-representation.** The first law says that $\tilde Q\mapsto L_{\tilde Q}$ is a homomorphism of complex algebras, the **left regular representation** of $\mathbb{B}$. The second says that $\tilde Q\mapsto R_{\tilde Q}$ reverses the order of the product, so it is an **anti-homomorphism**, an anti-isomorphism onto its image by §*Injectivity*. The order is reversed, not the multiplication table: in $R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q}$ the operator applied first is the rightmost, and its parameter stands on the right of the subscript.
 
-**The repair.** The assignment $\tilde Q\mapsto R_{\tilde Q^{\natural}}$ is a representation, because $R_{\tilde Q^{\natural}}R_{\tilde P^{\natural}}=R_{\tilde P^{\natural}\tilde Q^{\natural}}=R_{(\tilde Q\tilde P)^{\natural}}$. The natural conjugation converts the anti-representation into a representation at the cost of one more map. This article keeps the anti-representation, because the reversal is the point: it is the reversal that the composition law of the two-sided family inherits, and it is the reason the second factor of the enveloping algebra carries an $\mathrm{opp}$.
+**The repair.** The assignment $\tilde Q\mapsto R_{\tilde Q^{\natural}}$ is a representation, because $R_{\tilde Q^{\natural}}R_{\tilde Q_2^{\natural}}=R_{\tilde Q_2^{\natural}\tilde Q^{\natural}}=R_{(\tilde Q\tilde Q_2)^{\natural}}$. The natural conjugation converts the anti-representation into a representation at the cost of one more map. This article keeps the anti-representation, because the reversal is the point: it is the reversal that the composition law of the two-sided family inherits, and it is the reason the second factor of the enveloping algebra carries an $\mathrm{opp}$.
 
 **The unit and the powers.** $L_{e_t}=R_{e_t}=\mathrm{id}$, and $L_{\tilde Q^n}=(L_{\tilde Q})^n$ and $R_{\tilde Q^n}=(R_{\tilde Q})^n$ for every $n\geq0$. For a unit $\tilde Q$ the inverse law of §*The Inverse* extends both identities to the negative powers.
 
@@ -85,7 +85,7 @@ $$
 
 *Proof.* Each image is closed under addition and scalar multiplication by the linearity of the two maps, and under composition by its law; each contains the identity $L_{e_t}=R_{e_t}$; each map is injective, so it is an isomorphism onto its image. The complex dimension is that of the algebra, which is four.
 
-**The opposite algebra.** The **opposite algebra** $\mathbb{B}_{\mathrm{opp}}$ is the algebra with the same underlying vector space and the product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$. The identity map on the underlying space turns the anti-homomorphism $\tilde Q\mapsto R_{\tilde Q}$ into a homomorphism $\mathbb{B}_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the second half of the theorem is the first half read through it.
+**The opposite algebra.** The **opposite algebra** $\mathbb{B}_{\mathrm{opp}}$ is the algebra with the same underlying vector space and the product $\tilde Q\cdot\tilde Q_2=\tilde Q_2\tilde Q$. The identity map on the underlying space turns the anti-homomorphism $\tilde Q\mapsto R_{\tilde Q}$ into a homomorphism $\mathbb{B}_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the second half of the theorem is the first half read through it.
 
 **What a copy preserves.** Each copy preserves every polynomial relation of its algebra, with the order of the factors reversed in the right copy: a relation holds in $\mathbb{B}$ exactly when the relation with the factors reversed holds in $\operatorname{End}_R(\mathbb{B})$. Neither copy preserves the trace or the determinant of an element: both regular matrices have trace $2\operatorname{tr}\mathsf M_2(\tilde Q)$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$, because each is the identity on one tensor factor and the $2\times2$ model on the other. The spectrum is the one invariant that survives, as a set with every multiplicity doubled, and the matrix articles compute the rest.
 
@@ -300,15 +300,15 @@ $$
 
 ## The Two Families Together
 
-### The Commutation $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$
+### The Commutation $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$
 
-**Theorem (the commutation).** For all $\tilde Q,\tilde P\in\mathbb{B}$,
+**Theorem (the commutation).** For all $\tilde Q,\tilde Q_2\in\mathbb{B}$,
 
 $$
-L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}.
+L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}.
 $$
 
-*Proof.* For every $X$, $(L_{\tilde Q}R_{\tilde P})(X)=\tilde Q(X\tilde P)=\tilde QX\tilde P$ and $(R_{\tilde P}L_{\tilde Q})(X)=(\tilde QX)\tilde P=\tilde QX\tilde P$. The two values are equal by associativity.
+*Proof.* For every $X$, $(L_{\tilde Q}R_{\tilde Q_2})(X)=\tilde Q(X\tilde Q_2)=\tilde QX\tilde Q_2$ and $(R_{\tilde Q_2}L_{\tilde Q})(X)=(\tilde QX)\tilde Q_2=\tilde QX\tilde Q_2$. The two values are equal by associativity.
 
 **The reading.** The identity is associativity and nothing else: the left multiplication acts on the left factor, the right multiplication on the right factor, and the two actions do not interfere. With the two laws it says that the algebra is a bi-module over the pair, with the left copy acting on the left and the right copy on the right; the module axiom is exactly this commutation, and it is the reason a two-sided operator can be built from two independent parameters without a compatibility condition between them.
 
@@ -322,13 +322,13 @@ $$
 L(\mathbb{B})'=R(\mathbb{B}).
 $$
 
-*Proof.* If $T=R_{\tilde P}$, then $TL_{\tilde Q}=R_{\tilde P}L_{\tilde Q}=L_{\tilde Q}R_{\tilde P}=L_{\tilde Q}T$ by the commutation, so $R(\mathbb{B})\subseteq L(\mathbb{B})'$. Conversely let $T$ commute with every $L_{\tilde Q}$. For every $\tilde Q$,
+*Proof.* If $T=R_{\tilde Q_2}$, then $TL_{\tilde Q}=R_{\tilde Q_2}L_{\tilde Q}=L_{\tilde Q}R_{\tilde Q_2}=L_{\tilde Q}T$ by the commutation, so $R(\mathbb{B})\subseteq L(\mathbb{B})'$. Conversely let $T$ commute with every $L_{\tilde Q}$. For every $\tilde Q$,
 
 $$
 T(\tilde Q)=T(L_{\tilde Q}e_t)=L_{\tilde Q}T(e_t)=\tilde Q\,T(e_t),
 $$
 
-so with $\tilde P=T(e_t)$ one has $T(\tilde Q)=\tilde Q\tilde P=R_{\tilde P}(\tilde Q)$ for every $\tilde Q$, and $T=R_{\tilde P}$.
+so with $\tilde Q_2=T(e_t)$ one has $T(\tilde Q)=\tilde Q\tilde Q_2=R_{\tilde Q_2}(\tilde Q)$ for every $\tilde Q$, and $T=R_{\tilde Q_2}$.
 
 **Theorem (the commutant of the right copy).** The same statement with the sides exchanged:
 
@@ -336,10 +336,10 @@ $$
 R(\mathbb{B})'=L(\mathbb{B}).
 $$
 
-*Proof.* If $T=L_{\tilde Q}$ then $TR_{\tilde P}=L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}=R_{\tilde P}T$. Conversely, if $T$ commutes with every $R_{\tilde P}$, then
+*Proof.* If $T=L_{\tilde Q}$ then $TR_{\tilde Q_2}=L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}=R_{\tilde Q_2}T$. Conversely, if $T$ commutes with every $R_{\tilde Q_2}$, then
 
 $$
-T(\tilde P)=T(R_{\tilde P}e_t)=R_{\tilde P}T(e_t)=T(e_t)\tilde P,
+T(\tilde Q_2)=T(R_{\tilde Q_2}e_t)=R_{\tilde Q_2}T(e_t)=T(e_t)\tilde Q_2,
 $$
 
 so with $\tilde Q=T(e_t)$ one has $T=L_{\tilde Q}$.
@@ -356,7 +356,7 @@ $$
 L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4 .
 $$
 
-*Proof.* Let $L_{\tilde Q}=R_{\tilde P}$. Evaluating at the unit gives $\tilde Q=L_{\tilde Q}(e_t)=R_{\tilde P}(e_t)=\tilde P$, so the operator is $L_{\tilde Q}=R_{\tilde Q}$, and then $\tilde QX=X\tilde Q$ for every $X$: the element $\tilde Q$ is central. The centre of the biquaternion algebra is $\mathbb{C}\cdot e_t$ by *The Biquaternion Algebra*, §*The Scalars Are the Centre*, so $\tilde Q=\lambda e_t$ and the operator is $\lambda\mathrm I_4$. Conversely every $\lambda\mathrm I_4$ is $L_{\lambda e_t}$ and $R_{\lambda e_t}$.
+*Proof.* Let $L_{\tilde Q}=R_{\tilde Q_2}$. Evaluating at the unit gives $\tilde Q=L_{\tilde Q}(e_t)=R_{\tilde Q_2}(e_t)=\tilde Q_2$, so the operator is $L_{\tilde Q}=R_{\tilde Q}$, and then $\tilde QX=X\tilde Q$ for every $X$: the element $\tilde Q$ is central. The centre of the biquaternion algebra is $\mathbb{C}\cdot e_t$ by *The Biquaternion Algebra*, §*The Scalars Are the Centre*, so $\tilde Q=\lambda e_t$ and the operator is $\lambda\mathrm I_4$. Conversely every $\lambda\mathrm I_4$ is $L_{\lambda e_t}$ and $R_{\lambda e_t}$.
 
 **The three steps.** Equality at the unit gives the same parameter; the equality of the two operators then gives a central element; the centre of the algebra gives a scalar. Each step is a different statement, and the third uses the structure of the algebra and not only its multiplication.
 
@@ -404,7 +404,7 @@ The kernel of $L_{\tilde Q}$ is the right annihilator and its image the right id
 
 In the Peirce frame the display of $S$ is the permutation $\mathsf P$ and the right matrix is the transpose of the left one conjugated by it: $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. In the coefficient frame the display of $S$ is the reflection $\operatorname{diag}(1,1,-1,1)$, and there the transpose implements the natural conjugation instead, $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The exchange is an involution of trace $2$ and determinant $-1$; it is not multiplicative, it is in neither family, and it conjugates each family onto the other, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$.
 
-The two families commute element by element, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, each is the exact commutant of the other, $L(\mathbb{B})'=R(\mathbb{B})$ and $R(\mathbb{B})'=L(\mathbb{B})$, and they meet in the scalars, $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$. The two copies are incomparable and their sum is the complex seven-dimensional subspace that the two families span.
+The two families commute element by element, $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, each is the exact commutant of the other, $L(\mathbb{B})'=R(\mathbb{B})$ and $R(\mathbb{B})'=L(\mathbb{B})$, and they meet in the scalars, $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$. The two copies are incomparable and their sum is the complex seven-dimensional subspace that the two families span.
 
 ## Summary of Notation
 
@@ -414,7 +414,7 @@ The two families commute element by element, $L_{\tilde Q}R_{\tilde P}=R_{\tilde
 | $R_{\tilde Q}(X)=X\tilde Q$ | The right regular operator |
 | $\operatorname{End}_L(\mathbb{B})=L(\mathbb{B})$ | The set of the left regular operators, a copy of $\mathbb{B}$ |
 | $\operatorname{End}_R(\mathbb{B})=R(\mathbb{B})$ | The set of the right regular operators, a copy of $\mathbb{B}_{\mathrm{opp}}$ |
-| $\mathbb{B}_{\mathrm{opp}}$ | The opposite algebra, product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$ |
+| $\mathbb{B}_{\mathrm{opp}}$ | The opposite algebra, product $\tilde Q\cdot\tilde Q_2=\tilde Q_2\tilde Q$ |
 | $\operatorname{Ann}_r(\tilde Q)$, $\operatorname{Ann}_l(\tilde Q)$ | The right and the left annihilators, the kernels of $L$ and $R$ |
 | $\tilde Q\mathbb{B}$, $\mathbb{B}\tilde Q$ | The right and the left ideals, the images of $L$ and $R$ |
 | $\operatorname{rank}L_{\tilde Q}=\operatorname{rank}R_{\tilde Q}$ | $4$, $2$ or $0$ according to the three cases |

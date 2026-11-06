@@ -32,15 +32,15 @@ The article assumes the base of *Algebra and Element Conventions* and the Peirce
 
 **Two kinds of matrix model read the algebra.** The **isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The **regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.
 
-**The matrices are the matrices of operators.** Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde P}$, and their product is the **two-sided operator** of *Two-Sided Operators on the Biquaternion Algebra*,
+**The matrices are the matrices of operators.** Every array of this chapter is the matrix of a complex-linear operator of $\mathbb{B}$ read in a basis; the operator is the object and the array is one display of it. The two elementary operators are the multiplications $L_{\tilde Q}$ and $R_{\tilde Q_2}$, and their product is the **two-sided operator** of *Two-Sided Operators on the Biquaternion Algebra*,
 $$
-L_{\tilde Q}R_{\tilde P}:\mathbb{B}\longrightarrow\mathbb{B},
+L_{\tilde Q}R_{\tilde Q_2}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
-L_{\tilde Q}R_{\tilde P}(X)=\tilde Q\,X\,\tilde P,
+L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde Q\,X\,\tilde Q_2,
 $$
 so the matrix of a two-sided operator is the product of the two regular matrices, taken in the same frame on both factors,
 $$
-\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde P).
+\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde Q_2).
 $$
 This is the whole reason the article writes both families and their products: the object displayed is an operator of the two-sided family, and the matrix is what a computation can multiply.
 
@@ -48,11 +48,11 @@ This is the whole reason the article writes both families and their products: th
 
 **The coefficients of a two-sided operator are an outer product.** Expanding in the cell basis,
 $$
-L_{\tilde Q}R_{\tilde P}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
+L_{\tilde Q}R_{\tilde Q_2}=\sum_{\mu,\nu}Q_\mu Q_{2\nu}\,L_{e_\mu}R_{e_\nu},
 \qquad
-c\bigl(L_{\tilde Q}R_{\tilde P}\bigr)=QP^{\mathsf T},
+c\bigl(L_{\tilde Q}R_{\tilde Q_2}\bigr)=QQ_2^{\mathsf T},
 $$
-so the coefficient array $c(T)$ of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* has rank one, and the length of the operator, $\ell(T)=\operatorname{rank}c(T)$, is one. A general operator has a coefficient matrix of any rank up to four, and a sum $L_{\tilde Q}R_{\tilde P}+L_{\tilde R}R_{\tilde S}$ is one two-sided operator exactly when the sum of the two outer products still has rank one. The rank-one set of coefficient arrays is the Segre variety of the two-sided family, and the linear space of all sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, the cell $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$. One table of sixteen cells therefore serves three readings: the matrices of the basis two-sided operators, the coordinates of the enveloping algebra, and, in §*The Clifford Structure*, the Clifford algebra itself.
+so the coefficient array $c(T)$ of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* has rank one, and the length of the operator, $\ell(T)=\operatorname{rank}c(T)$, is one. A general operator has a coefficient matrix of any rank up to four, and a sum $L_{\tilde Q}R_{\tilde Q_2}+L_{\tilde Q_3}R_{\tilde Q_4}$ is one two-sided operator exactly when the sum of the two outer products still has rank one. The rank-one set of coefficient arrays is the Segre variety of the two-sided family, and the linear space of all sixteen coefficients is the enveloping algebra $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, the cell $L_{e_\mu}R_{e_\nu}$ being the image of $e_\mu\otimes e_{\mathrm{opp},\nu}$. One table of sixteen cells therefore serves three readings: the matrices of the basis two-sided operators, the coordinates of the enveloping algebra, and, in §*The Clifford Structure*, the Clifford algebra itself.
 
 | object | writing | meaning |
 |---|---|---|
@@ -325,7 +325,7 @@ $$
 L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}\;\longleftrightarrow\;L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu},
 \qquad \mu,\nu\in\{t,x,y,z\},
 $$
-and the coefficients $Q_\mu P_\nu$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §*The Switch Between the Two Frames* writes the sixteen expressions one by one, each an equality of the Pauli cell with its axis-free partner conjugated.
+and the coefficients $Q_\mu Q_{2\nu}$ of a two-sided operator are the same sixteen numbers in both frames. Only the arrays differ: here real signed permutations, in the Peirce frame complex arrays with entries in $\{0,\pm1,\pm i\}$. §*The Switch Between the Two Frames* writes the sixteen expressions one by one, each an equality of the Pauli cell with its axis-free partner conjugated.
 
 **The cost.** No $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen arrays are all of one kind, so no five of them are singled out. The frame that gives the transpose dictionary takes away the block and the gamma frame; the next sections buy them back.
 
@@ -942,7 +942,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | $L_{\mathrm{pau},e_\mu}=\mathsf M_{4L}(e_\mu)$, $R_{\mathrm{pau},e_\mu}=\mathsf M_{4R}(e_\mu)$ | The four left and the four right matrices; $R_{\mathrm{pau},e_\nu}=\mathsf P {L_{\mathrm{pau},e_\nu}}^{\mathsf T}\mathsf P^{-1}$ |
 | $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ | The sixteen cells; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $L_{e_\mu}R_{e_\nu}=e_\mu[\,]e_\nu$ | The cell, which is the matrix of the basis two-sided operator $X\mapsto e_\mu Xe_\nu$ |
-| $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the sixteen cells, and its length; $c(L_{\tilde Q}R_{\tilde P})=QP^{\mathsf T}$ |
+| $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the sixteen cells, and its length; $c(L_{\tilde Q}R_{\tilde Q_2})=QQ_2^{\mathsf T}$ |
 | $C_{\Pi}$ | The change of frame, $L_{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$ |
 | $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the Peirce frame |
 | $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$, $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ | The five cells of the frame, timelike, three spatial, chirality; the gammas |

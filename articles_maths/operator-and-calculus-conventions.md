@@ -481,7 +481,7 @@ $$
 
 and the sides are the whole of the content. The time term is a right multiplication by $\vec e_x$ alone; each space term carries $\vec e_k$ on the left and $\vec e_y$ on the right, and the two multipliers are fixed basis elements that select the chiral slots and do not depend on the field. Left and right multiplications commute and the pure units anticommute, $\vec e_x\vec e_y=-\vec e_y\vec e_x$, with $\vec e_x^2=\vec e_y^2=-e_t$, so the cross terms cancel and the square is the d'Alembertian of the material sector, $\Delta-c^{-2}\partial^2/\partial {r'_{t}}^2$. The factor $1/c$ is the one carried by the coordinate derivative, $\partial/\partial R_t=-(i/c)\partial/\partial r'_t$, with the $i$ absorbed in the multiplier; this is the pair read on one element and not a second definition.
 
-**The symbol.** On a plane wave the two gradients act as left multiplication by the momentum element and its conjugate, $\tilde K=i\tilde P=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^2-\lvert\vec p\rvert^2=p^2$, so the symbol of the pair is
+**The symbol.** On a plane wave the two gradients act as left multiplication by the momentum element and its conjugate, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^2-\lvert\vec p\rvert^2=p^2$, so the symbol of the pair is
 
 $$
 \mathbb{D}_p:\ (w_L,w_R)\longmapsto\bigl(\tilde K\,w_R,\ \tilde K^{\natural}w_L\bigr),

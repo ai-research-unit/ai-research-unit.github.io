@@ -79,7 +79,7 @@ $$
 A(\tilde Q)^{\natural}=B(\tilde Q).
 $$
 
-Under the $\natural$-bilinear product $\tilde P\circ\tilde Q=\tilde P^{\natural}\tilde Q$, the left annihilator of $\tilde Q$ is therefore the other plane, $B(\tilde Q)$.
+Under the $\natural$-bilinear product $\tilde Q_2\circ\tilde Q=\tilde Q_2^{\natural}\tilde Q$, the left annihilator of $\tilde Q$ is therefore the other plane, $B(\tilde Q)$.
 
 **One-sided multiplication.** Left and right multiplication by $\tilde Q$ both have complex rank $2$, with kernels $A(\tilde Q)$ and $B(\tilde Q)$. Both are square-zero operators,
 
@@ -145,7 +145,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 
 ## Multiplication
 
-**The sector is not closed under the product.** The quaternionic norm is multiplicative, so $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
+**The sector is not closed under the product.** The quaternionic norm is multiplicative, so $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0$ for $\tilde Q,\tilde Q_2\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
 
 $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z,
@@ -159,16 +159,16 @@ $$
 \Sigma_{00}\cdot\Sigma_{00}\subseteq\{0\}\cup\Sigma_{01}.
 $$
 
-*Proof.* Write the non-zero factors as pure vectors, $\tilde P=\vec u$ and $\tilde Q=\vec v$, with $\vec u^2=\vec v^2=0$. Then
+*Proof.* Write the non-zero factors as pure vectors, $\tilde Q_2=\vec u$ and $\tilde Q=\vec v$, with $\vec u^2=\vec v^2=0$. Then
 
 $$
-\tilde P\tilde Q=-\vec u\cdot\vec v+\vec u\times\vec v.
+\tilde Q_2\tilde Q=-\vec u\cdot\vec v+\vec u\times\vec v.
 $$
 
 If the scalar part vanishes, $\vec u$ and $\vec v$ are orthogonal isotropic vectors of $\mathbb{C}^3$, hence proportional, since otherwise they would span a totally isotropic plane, which the form $Q_x^2+Q_y^2+Q_z^2$ does not admit; then the product is zero. If the scalar part does not vanish, the product has norm $0$ and
 
 $$
-B^2(\tilde P\tilde Q)=-(\vec u\cdot\vec v)^2\neq0,
+B^2(\tilde Q_2\tilde Q)=-(\vec u\cdot\vec v)^2\neq0,
 $$
 
 so it lies in $\Sigma_{01}$.

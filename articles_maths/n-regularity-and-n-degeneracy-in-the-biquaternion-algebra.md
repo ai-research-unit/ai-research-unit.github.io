@@ -4,7 +4,7 @@
 
 The biquaternion algebra carries one multiplicative norm, the quaternionic norm, the diagonal of the general quaternionic bilinear form. It alone decides invertibility. This article defines it, proves its multiplicative law, and separates the elements of $\mathbb{B}$ into the two cases of its value: the **$\natural$-regular** case of non-zero norm, whose elements are the units of the algebra and form a group, and the **$\natural$-degenerate** case of zero norm, the null cone. This article is the study of this one norm and of its two cases.
 
-**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde P\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is **$\natural$-regular** when $\langle\tilde Q\rangle_{\natural}\neq0$ and **$\natural$-degenerate** when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*. The product $\tilde P^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The $\natural$-Regular Case*, because only the plain product has a group of units.
+**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, its natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, and the product of the article is the plain product $\tilde Q_2\tilde Q$ of the algebra, which is associative and has the two-sided unit $e_t$. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$. A biquaternion is **$\natural$-regular** when $\langle\tilde Q\rangle_{\natural}\neq0$ and **$\natural$-degenerate** when $\langle\tilde Q\rangle_{\natural}=0$, the two terms fixed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*. The product $\tilde Q_2^{\natural}\tilde Q$ has a left unit and no right unit; it is recorded in one remark in §*The $\natural$-Regular Case*, because only the plain product has a group of units.
 
 ## The Quaternionic Norm
 
@@ -22,23 +22,23 @@ $$
 
 The value is a complex scalar, not a length. Its vanishing set is the null cone in $\mathbb{B}$, not a sphere. The name records the algebra: $\mathbb{B}$ is the complexification of the quaternions, and $\langle\cdot\rangle_{\natural}$ is the quaternionic norm of that algebra.
 
-**Theorem (multiplicativity).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
+**Theorem (multiplicativity).** For all $\tilde Q,\tilde Q_2\in\mathbb{B}$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
 $$
 
-*Proof.* The natural conjugation is an anti-automorphism, so $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$. Then
+*Proof.* The natural conjugation is an anti-automorphism, so $(\tilde Q_2\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde Q_2^{\natural}$. Then
 
 $$
-(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}
-=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}
-=\tilde P\,\langle\tilde Q\rangle_{\natural}e_t\,\tilde P^{\natural}
-=\langle\tilde Q\rangle_{\natural}\tilde P\tilde P^{\natural}
-=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_t,
+(\tilde Q_2\tilde Q)(\tilde Q_2\tilde Q)^{\natural}
+=\tilde Q_2\tilde Q\tilde Q^{\natural}\tilde Q_2^{\natural}
+=\tilde Q_2\,\langle\tilde Q\rangle_{\natural}e_t\,\tilde Q_2^{\natural}
+=\langle\tilde Q\rangle_{\natural}\tilde Q_2\tilde Q_2^{\natural}
+=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_t,
 $$
 
-and the left side is $\langle\tilde P\tilde Q\rangle_{\natural}e_t$ by the identity of the norm.
+and the left side is $\langle\tilde Q_2\tilde Q\rangle_{\natural}e_t$ by the identity of the norm.
 
 **Consequence.** The unit set $\{\langle\cdot\rangle_{\natural}\neq0\}$ and the null cone $\{\langle\cdot\rangle_{\natural}=0\}$ are both stable under the product.
 
@@ -81,7 +81,7 @@ By the criterion above it is the complement of the null cone: the algebra minus 
 
 **Theorem.** $\mathbb{B}^{\times}$ is a group under the plain product.
 
-*Proof.* Closure: $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity: the plain product is associative. Identity: $e_t$, with $\langle e_t\rangle_{\natural}=1$. Inverse: for $\tilde Q\in\mathbb{B}^{\times}$,
+*Proof.* Closure: $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity: the plain product is associative. Identity: $e_t$, with $\langle e_t\rangle_{\natural}=1$. Inverse: for $\tilde Q\in\mathbb{B}^{\times}$,
 
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
@@ -89,7 +89,7 @@ $$
 
 since $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$.
 
-**Remark (the inverse is the conjugate over the norm).** In the plain product the two-sided inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. In the product $\tilde P^{\natural}\tilde Q$ the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$. The criterion $\langle\cdot\rangle_{\natural}\neq0$ is the same; the inverse is not. The unit group is a plain-product object.
+**Remark (the inverse is the conjugate over the norm).** In the plain product the two-sided inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. In the product $\tilde Q_2^{\natural}\tilde Q$ the one-sided solution is $\tilde Q/\langle\tilde Q\rangle_{\natural}$. The criterion $\langle\cdot\rangle_{\natural}\neq0$ is the same; the inverse is not. The unit group is a plain-product object.
 
 **Theorem (the partition).** The algebra is the disjoint union of the $\natural$-regular and the $\natural$-degenerate biquaternions,
 
@@ -111,7 +111,7 @@ The origin is the only point of the cone that is not a zero divisor.
 
 *Proof.* The cone is the zero set of a polynomial, hence closed, and it is a proper algebraic subset, hence of empty interior; its complement is open and dense. The boundary of the group is the intersection of the closures of the group and of its complement, that is the cone.
 
-**Remark (the $\natural$-bilinear product).** For the product $\tilde P^{\natural}\tilde Q$ the element $e_t$ is a left unit and there is no right unit, so no element has a two-sided inverse and there is no group of units. The two one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The criterion is unchanged; what is lost is the group, and with it the two-sided inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. That is why this article uses the plain product.
+**Remark (the $\natural$-bilinear product).** For the product $\tilde Q_2^{\natural}\tilde Q$ the element $e_t$ is a left unit and there is no right unit, so no element has a two-sided inverse and there is no group of units. The two one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The criterion is unchanged; what is lost is the group, and with it the two-sided inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. That is why this article uses the plain product.
 
 ## The $\natural$-degenerate case: the origin together with the zero divisors
 
@@ -244,7 +244,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity |
 | $\tilde Q=Q_t e_t+\vec Q$ | an element and its scalar–vector split |
 | $\tilde Q^{\natural}=Q_t-\vec Q$ | the natural conjugation |
-| $\tilde P\tilde Q$ | the plain product, associative, with the two-sided unit $e_t$ |
+| $\tilde Q_2\tilde Q$ | the plain product, associative, with the two-sided unit $e_t$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the quaternionic norm, written $\langle\tilde Q\rangle_{\natural}$, the only multiplicative one |
 | $\natural$-regular | $\langle\tilde Q\rangle_{\natural}\neq0$; the unit group |
 | $\natural$-degenerate | $\langle\tilde Q\rangle_{\natural}=0$; the null cone |
@@ -254,7 +254,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 | $\mathcal{N}_{\mathrm p}=\{Q_t=0,\ \tilde Q\neq0\}$ | the pure stratum, the nilpotents of index two |
 | $\mathcal{N}_{\mathrm{np}}=\{Q_t\neq0\}$ | the non-pure stratum, complex multiples of non-trivial idempotents |
 | $\mathsf M_2(\tilde Q)=uv^{\mathsf T}$ | the rank-one factorisation of a non-zero null element |
-| $\tilde P^{\natural}\tilde Q$ | the $\natural$-bilinear product, with a left unit and no right unit |
+| $\tilde Q_2^{\natural}\tilde Q$ | the $\natural$-bilinear product, with a left unit and no right unit |
 | $S(\tilde Q)=\tilde Q/\langle\tilde Q\rangle_{\natural}$ | the one-sided solution of that product |
 
 ## Further Reading

@@ -58,10 +58,10 @@ For $\tilde Q\neq0$ they are also equivalent to:
 
 *Proof.* The norm is a non-degenerate quadratic form in four complex variables, hence irreducible over $\mathbb{C}$ and not the zero polynomial. Its zero set is a hypersurface of complex dimension three; one complex equation is two real equations, so the real codimension is two. A proper algebraic subset has empty interior.
 
-**Theorem (the cone is a semigroup ideal).** For all $\tilde P,\tilde Q$,
+**Theorem (the cone is a semigroup ideal).** For all $\tilde Q_2,\tilde Q$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
 $$
 
 Hence if either factor lies in $\mathcal{N}$, so does the product. The cone is closed under multiplication on the left and on the right by any element of the algebra:
@@ -336,10 +336,10 @@ and the apex is its rank-zero locus. The two strata are the rank-one locus split
 
 *Proof.* An invertible element has non-zero norm, and the norm is multiplicative with $\langle e_t\rangle_{\natural}=1$. The one-sided equations would make $\tilde Q$ invertible.
 
-**Remark (the cone is stable under similarity).** For $\tilde P\in\mathbb{B}^{\times}$ and $\tilde Q\in\mathcal{N}$,
+**Remark (the cone is stable under similarity).** For $\tilde Q_2\in\mathbb{B}^{\times}$ and $\tilde Q\in\mathcal{N}$,
 
 $$
-\langle\tilde P\tilde Q\tilde P^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=0,
+\langle\tilde Q_2\tilde Q\tilde Q_2^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=0,
 $$
 
 so the cone is invariant under conjugation by the units. The similarity classes inside it are the pure stratum and the idempotent multiples, as in §*The Three Strata*.

@@ -262,10 +262,10 @@ The first column is $S_+$, the second is $S_-$, and the two rows are the two spe
 
 ## Multiplication
 
-**Products stay on the null cone.** The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{01}$,
+**Products stay on the null cone.** The norm is multiplicative, so for $\tilde Q,\tilde Q_2\in\Sigma_{01}$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0,
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0,
 $$
 
 and the product lies in $\mathcal{N}=\Sigma_{00}\sqcup\Sigma_{01}$.

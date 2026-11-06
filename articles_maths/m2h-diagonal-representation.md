@@ -107,9 +107,9 @@ and the image is self-centralising, in the same position as the diagonal subalge
 
 **The operators.** Left multiplication and right multiplication are the blockwise operators
 $$
-L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde P}=\begin{pmatrix}R_{\tilde P_{+}}&0\\ 0&R_{\tilde P_{-}}\end{pmatrix},
+L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde Q_2}=\begin{pmatrix}R_{\tilde Q_{2+}}&0\\ 0&R_{\tilde Q_{2-}}\end{pmatrix},
 $$
-where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaternion algebra on itself. They **commute**, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, because the two act on different slots of the product, and every $L$ commutes with every $R$ blockwise.
+where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaternion algebra on itself. They **commute**, $L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q}$, because the two act on different slots of the product, and every $L$ commutes with every $R$ blockwise.
 
 **The module.** The regular module is the free module $\mathbb{H}^{2}$ over $\mathbb{H}$ with basis $(1,j)$, and as a module over the algebra it is
 $$
@@ -134,9 +134,9 @@ The kernel and the image of a zero divisor are the two different blocks, so they
 
 **The product is blockwise, the algebra separates, and the model is faithful but not surjective.**
 
-**Theorem (multiplicativity).** For all $\tilde Q,\tilde P$,
+**Theorem (multiplicativity).** For all $\tilde Q,\tilde Q_2$,
 $$
-\mathsf M(\tilde Q)\mathsf M(\tilde P)=\mathsf M(\tilde Q\tilde P)=\begin{pmatrix}\tilde Q_{+}\tilde P_{+}&0\\ 0&\tilde Q_{-}\tilde P_{-}\end{pmatrix}.
+\mathsf M(\tilde Q)\mathsf M(\tilde Q_2)=\mathsf M(\tilde Q\tilde Q_2)=\begin{pmatrix}\tilde Q_{+}\tilde Q_{2+}&0\\ 0&\tilde Q_{-}\tilde Q_{2-}\end{pmatrix}.
 $$
 
 *Proof.* The left multiplication is a homomorphism of the algebra into the endomorphisms of the module, and in the basis $(1,j)$ its matrix is diagonal with the two block multiplications on the diagonal. Injectivity holds because the two diagonal entries are the two idempotent coordinates.
@@ -187,9 +187,9 @@ $$
 $$
 the purely split-imaginary part of the algebra. It is a subspace and not an ideal: the algebra has only two proper ideals, the two blocks, and neither is $j\mathbb{H}$. This is a difference from the reduced biquaternion category, where the kernel of the trace was the complex line $\mathbb{C}j$ and the complement was the scalar line.
 
-**The trace form.** The bilinear form $(\tilde Q,\tilde P)\mapsto\operatorname{Sc}\operatorname{tr}(\mathsf M(\tilde Q)\mathsf M(\tilde P))$ is the reduced trace of the product,
+**The trace form.** The bilinear form $(\tilde Q,\tilde Q_2)\mapsto\operatorname{Sc}\operatorname{tr}(\mathsf M(\tilde Q)\mathsf M(\tilde Q_2))$ is the reduced trace of the product,
 $$
-\operatorname{Sc}\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde P)\bigr)=\operatorname{Sc}\bigl(\tilde Q_{+}\tilde P_{+}\bigr)+\operatorname{Sc}\bigl(\tilde Q_{-}\tilde P_{-}\bigr),
+\operatorname{Sc}\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde Q_2)\bigr)=\operatorname{Sc}\bigl(\tilde Q_{+}\tilde Q_{2+}\bigr)+\operatorname{Sc}\bigl(\tilde Q_{-}\tilde Q_{2-}\bigr),
 $$
 a real bilinear form of real signature $(4,4)$: four positive directions from the two real parts and four negative from the two imaginary parts. The form is **nondegenerate**, because the quaternion trace form is nondegenerate and the block sum of two copies is nondegenerate. So the trace form of the category is a form of signature $(4,4)$, and its radical is zero.
 
@@ -329,7 +329,7 @@ so the relation between the two norms is a **product**: the quaternionic norm gi
 
 **The four forms.** With $\mathrm{Sc}$ the scalar part taken in the quaternion and in the split-complex slot alike, the four forms of the layer are
 $$
-\langle\tilde Q,\tilde P\rangle_{\sigma_{1}\sigma_{2}}=\mathrm{Sc}\bigl(\tilde Q^{\sigma_{1}}\tilde P^{\sigma_{2}}\bigr),
+\langle\tilde Q,\tilde Q_2\rangle_{\sigma_{1}\sigma_{2}}=\mathrm{Sc}\bigl(\tilde Q^{\sigma_{1}}\tilde Q_2^{\sigma_{2}}\bigr),
 $$
 with each $\sigma$ the identity, the quaternion conjugation ${}^{\natural}$ or the star ${}^{*}$, and the model reads each one as a scalar part of a product of two models, that is as a reduced trace. The four slots at equal arguments behave as follows.
 

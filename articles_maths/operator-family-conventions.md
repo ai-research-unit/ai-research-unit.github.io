@@ -20,7 +20,7 @@ The order follows the dependence. The family letters come first, because the nam
 |---|---|---|---|
 | left | $L$ | $L_{\tilde Q}$ | one |
 | right | $R$ | $R_{\tilde Q}$ | one |
-| two-sided | $LR$ | $L_{\tilde Q}R_{\tilde P}$ | two |
+| two-sided | $LR$ | $L_{\tilde Q}R_{\tilde Q_2}$ | two |
 | sandwich | $\Theta$ | $\mathrm{Sd}_{\tilde Q}$ | one |
 
 **The letter is upright, the parameter is in the subscript.** The letter names the family and is a capital roman; the subscript names the element and keeps that element's own mark, the tilde included. $L_{\tilde Q}$ is read as one glyph: the operator of the left family whose parameter is $\tilde Q$. The tilde is never moved to the letter, and the letter never takes a tilde of its own.
@@ -35,11 +35,11 @@ The order follows the dependence. The family letters come first, because the nam
 
 ### The Left Multiplier, the Right Multiplier, the Argument
 
-In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the second the right multiplier, and the operator acts by $X\mapsto\tilde QX\tilde P$. For $L$ and $R$ the same rule holds with one subscript: $L_{\tilde Q}$ acts by $X\mapsto\tilde QX$ and $R_{\tilde P}$ by $X\mapsto X\tilde P$. The order of the subscripts is the order of the factors around the argument, left factor first.
+In $L_{\tilde Q}R_{\tilde Q_2}$ the first subscript is the left multiplier and the second the right multiplier, and the operator acts by $X\mapsto\tilde QX\tilde Q_2$. For $L$ and $R$ the same rule holds with one subscript: $L_{\tilde Q}$ acts by $X\mapsto\tilde QX$ and $R_{\tilde Q_2}$ by $X\mapsto X\tilde Q_2$. The order of the subscripts is the order of the factors around the argument, left factor first.
 
-**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde P}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $L$ and $R$ are always the two multipliers.
+**The argument is never a subscript.** The argument of an operator occupies a third slot that is written in parentheses when it is named, as in $L_{\tilde Q}R_{\tilde Q_2}(\tilde X)$. A glyph with three subscripts is not written, and the two subscripts of $L$ and $R$ are always the two multipliers.
 
-**The sandwich has one free slot.** The sandwich is $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde P}$, never $\Theta$.
+**The sandwich has one free slot.** The sandwich is $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$. Its second subscript is the star of the first and is not chosen, so the family has one parameter and the letter $\Theta$ is reserved for the member whose second slot is the star of the first. A two-sided operator with two free parameters is written $L_{\tilde Q}R_{\tilde Q_2}$, never $\Theta$.
 
 ### The Index of a Basis Operator
 
@@ -47,12 +47,12 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 
 ### The Slot Label, Which Is the Chirality
 
-**Two slots, three labels.** The cell $L_{\tilde Q}R_{\tilde P}$ has a left slot and a right slot, and an operator is read on them with three labels:
+**Two slots, three labels.** The cell $L_{\tilde Q}R_{\tilde Q_2}$ has a left slot and a right slot, and an operator is read on them with three labels:
 
 | Label | The operator |
 |---|---|
 | left slot | a pure left multiplier, $c\,L_{\tilde Q}$ |
-| right slot | a pure right multiplier, $c\,R_{\tilde P}$ |
+| right slot | a pure right multiplier, $c\,R_{\tilde Q_2}$ |
 | both slots | a cell whose two multipliers are both occupied |
 
 **The label is the operator chirality.** Those three labels are what the corpus calls the **chirality** of an operator: the label says on which side the operator multiplies. It is read from the cell, and the article that proves the properties of the two one-sided families and of the label is *Operator Chirality on the Biquaternion Algebra*. No root, no idempotent, no subspace, no carrier and no Clifford relation enters the definition.
@@ -61,7 +61,7 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 
 **The name carries no grading.** The three labels are not the values of a linear functional on the algebra, and the chirality is not a $\mathbb{Z}/2$-grading. As for the four families above, the label asserts no dimension, no closure and no properness; those are stated by the article that proves them.
 
-**The two letters in a third use.** $L$ and $R$ name the multipliers $L_{\tilde Q}$ and $R_{\tilde P}$ and the regular matrices $\mathsf M_{4L}$ and $\mathsf M_{4R}$. They also name the two values of the subscript on an element, $\tilde Q_L$ and $\tilde Q_R$, and that use belongs to the element and to the declared frame, not to a cell. Position tells the three uses apart, and the third is fixed in *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*.
+**The two letters in a third use.** $L$ and $R$ name the multipliers $L_{\tilde Q}$ and $R_{\tilde Q_2}$ and the regular matrices $\mathsf M_{4L}$ and $\mathsf M_{4R}$. They also name the two values of the subscript on an element, $\tilde Q_L$ and $\tilde Q_R$, and that use belongs to the element and to the declared frame, not to a cell. Position tells the three uses apart, and the third is fixed in *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*.
 
 ## The Names of the Sets
 
@@ -73,7 +73,7 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 |---|---|---|
 | $\operatorname{End}_L(\mathbb{B})$ | $L_{\tilde Q}$ | the left multipliers |
 | $\operatorname{End}_R(\mathbb{B})$ | $R_{\tilde Q}$ | the right multipliers |
-| $\operatorname{End}_{LR}(\mathbb{B})$ | $L_{\tilde Q}R_{\tilde P}$ | the two-sided operators |
+| $\operatorname{End}_{LR}(\mathbb{B})$ | $L_{\tilde Q}R_{\tilde Q_2}$ | the two-sided operators |
 | $\operatorname{End}_{LR\ast}(\mathbb{B})$ | $\mathrm{Sd}_{\tilde Q}$ | the sandwiches |
 
 **The subscript is the family's.** The subscript of a set repeats the letters of the family that populates it and is not a tensor slot. The star in $\operatorname{End}_{LR\ast}$ repeats the star of the sandwich's second slot; it is part of the name.
@@ -181,7 +181,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 | ${}^{\ast}$ | Hermitian | Hermitian |
 | ${}^{\natural\ast}$ | Krein | Krein |
 
-**The sign is written on the operator.** The sign is a superscript on the operator, after a bracket where the operator carries subscripts: $(L_{\tilde Q}R_{\tilde P})^{\approx}$ and $(L_{\tilde Q})^{N}$. It is never written on the parameter, and the parameter keeps its own mark.
+**The sign is written on the operator.** The sign is a superscript on the operator, after a bracket where the operator carries subscripts: $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}$ and $(L_{\tilde Q})^{N}$. It is never written on the parameter, and the parameter keeps its own mark.
 
 **The letter $N$ is not the natural sign.** The quaternionic adjoint of an operator is written with the capital roman $N$, and the natural conjugation of an element with the sign ${}^{\natural}$. The two marks are distinct because the objects are: the sign conjugates an element, and the letter names the form whose adjoint is taken.
 
@@ -201,8 +201,8 @@ The strata are labelled by two bits, the norm first and the square of the vector
 
 | Symbol | Meaning |
 |---|---|
-| $L_{\tilde Q}$, $R_{\tilde P}$ | The left and the right multiplier |
-| $L_{\tilde Q}R_{\tilde P}$ | The two-sided operator, left multiplier first |
+| $L_{\tilde Q}$, $R_{\tilde Q_2}$ | The left and the right multiplier |
+| $L_{\tilde Q}R_{\tilde Q_2}$ | The two-sided operator, left multiplier first |
 | $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
 | $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\mathrm{Sd}_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
 | left slot, right slot, both slots | The operator chirality: the side on which an operator multiplies, read from the cell |

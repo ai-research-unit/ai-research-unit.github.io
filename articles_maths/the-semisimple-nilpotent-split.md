@@ -20,7 +20,7 @@ $$
 p_{\tilde Q}(X)=(X-Q_t)^2+B^2,
 $$
 
-and the minimal polynomial is written $m_{\tilde Q}$. An element is **semisimple** when $m_{\tilde Q}$ is squarefree, and **nilpotent** when some power of it is zero. An element is a **zero divisor** when $\tilde Q\neq0$ and some non-zero $\tilde R$ satisfies $\tilde Q\tilde R=0$ or $\tilde R\tilde Q=0$. All three notions are properties of the product alone. The algebra and its conventions are *The Biquaternion Algebra*; the polynomial and its two cases are *The Spectrum*.
+and the minimal polynomial is written $m_{\tilde Q}$. An element is **semisimple** when $m_{\tilde Q}$ is squarefree, and **nilpotent** when some power of it is zero. An element is a **zero divisor** when $\tilde Q\neq0$ and some non-zero $\tilde Q_3$ satisfies $\tilde Q\tilde Q_3=0$ or $\tilde Q_3\tilde Q=0$. All three notions are properties of the product alone. The algebra and its conventions are *The Biquaternion Algebra*; the polynomial and its two cases are *The Spectrum*.
 
 ## The Frame
 

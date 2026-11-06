@@ -36,7 +36,7 @@ so the coordinate column of a $2\times2$ matrix $Y$ is $(y_{11},y_{21},y_{12},y_
 $$
 \mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
 $$
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde P$, with $B=\mathsf M_2(\tilde P)$. The $4\times4$ matrices $L,R$ are those of the Pauli Representation article, and $\otimes$ is the Kronecker product in the frame order.
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde Q_2$, with $B=\mathsf M_2(\tilde Q_2)$. The $4\times4$ matrices $L,R$ are those of the Pauli Representation article, and $\otimes$ is the Kronecker product in the frame order.
 
 ## The One-Sided Operators
 
@@ -86,7 +86,7 @@ The transpose is the price of the column-major frame: the block matrix records $
 
 **The law.** The composition is anti-multiplicative, $R_B R_D=R_{DB}$, and the map $B\mapsto R_B$ is injective. The right copy is the four-dimensional subalgebra $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$.
 
-**The invariants.** The rank is $2\operatorname{rank}B$. The trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde P\rangle_{\natural}^2$.
+**The invariants.** The rank is $2\operatorname{rank}B$. The trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde Q_2\rangle_{\natural}^2$.
 
 ### The Two Copies
 
@@ -261,7 +261,7 @@ The $4\times4$ matrix and the $2\times2$ pair have the same rank.
 **The invariants.** The trace and the determinant of the pair are
 $$
 \operatorname{Tr}L_AR_B=4Q_tP_t,\qquad
-\det L_AR_B=\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2.
+\det L_AR_B=\langle\tilde Q\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2.
 $$
 
 *Proof.* The $4\times4$ matrix is $B^{\mathsf T}\otimes A$. The trace of a Kronecker product is the product of the traces, and $\operatorname{Tr}A=2Q_t$, $\operatorname{Tr}B=2P_t$. The determinant of a Kronecker product is $\det(B^{\mathsf T})^2\det(A)^2=(\det B)^2(\det A)^2$, and the determinants are the norms.
@@ -428,7 +428,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 
 On $M_2(\mathbb{C})$, an operator is described by a count of $2\times2$ matrices. A left multiplication $L_A(Y)=AY$ is one matrix, a right multiplication $R_B(Y)=YB$ is one matrix, and a two-sided operator $L_AR_B(Y)=AYB$ is a pair. For a nonzero operator, the pair is unique up to the scaling $(\lambda A,\lambda^{-1}B)$, so the two-sided operators have seven effective complex parameters; the zero operator is the vertex of the cone.
 
-A pair with a scalar slot is one-sided, and a pair with neither slot scalar is genuinely two-sided. The rank is $\operatorname{rank}A\cdot\operatorname{rank}B$, with values $0,1,2,4$; the trace is $4Q_tP_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2$.
+A pair with a scalar slot is one-sided, and a pair with neither slot scalar is genuinely two-sided. The rank is $\operatorname{rank}A\cdot\operatorname{rank}B$, with values $0,1,2,4$; the trace is $4Q_tP_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2\langle\tilde Q_2\rangle_{\natural}^2$.
 
 The $4\times4$ matrix of the pair is the Kronecker product $B^{\mathsf T}\otimes A$, by the vectorisation identity $\operatorname{vec}(AYB)=(B^{\mathsf T}\otimes A)\operatorname{vec}(Y)$. The same matrix is the ordinary product of the left and right matrices $\mathrm I_2\otimes A$ and $B^{\mathsf T}\otimes\mathrm I_2$. The coefficient matrix is the outer product $[Q][P]^{\mathsf T}$, of rank at most one; it is not the operator matrix, which has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.
 
@@ -441,13 +441,13 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the standard Peirce frame |
-| $A=\mathsf M_2(\tilde Q)$, $B=\mathsf M_2(\tilde P)$ | the $2\times2$ matrices of the two elements |
+| $A=\mathsf M_2(\tilde Q)$, $B=\mathsf M_2(\tilde Q_2)$ | the $2\times2$ matrices of the two elements |
 | $L_A(Y)=AY$ | the left multiplication |
 | $R_B(Y)=YB$ | the right multiplication |
 | $L_AR_B(Y)=AYB$ | the two-sided operator |
 | $[M]_{\mathcal{P}}$ | the $4\times4$ matrix of the operator $M$ in the frame |
 | $L(\tilde Q)=\mathrm I_2\otimes A$ | the left regular matrix |
-| $R(\tilde P)=B^{\mathsf T}\otimes\mathrm I_2$ | the right regular matrix |
+| $R(\tilde Q_2)=B^{\mathsf T}\otimes\mathrm I_2$ | the right regular matrix |
 | $B^{\mathsf T}\otimes A$ | the $4\times4$ matrix of the pair |
 | $\operatorname{vec}(Y)=(y_{11},y_{21},y_{12},y_{22})^{\mathsf T}$ | the column-stacking in the frame order |
 | $E_{ij}$ | the matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$ |

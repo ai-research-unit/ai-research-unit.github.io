@@ -675,7 +675,7 @@ $$
 \mathcal{P}=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
 $$
 
-are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde P\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi}(\tilde P)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde P=p_{11}\tilde\Pi_++p_{12}\vec\Upsilon_-+p_{21}\vec\Upsilon_++p_{22}\tilde\Pi_-$. For the standard pair $\mathsf M_{\tilde\Pi}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
+are a basis of $\mathbb{B}$, unique up to the reciprocal rescaling $(\mu,\mu^{-1})$ of the two mixed generators. For $\tilde Q_2\in\mathbb{B}$, let $\mathsf M_{\tilde\Pi}(\tilde Q_2)=(p_{ij})$ be its Peirce matrix in this basis, so that $\tilde Q_2=p_{11}\tilde\Pi_++p_{12}\vec\Upsilon_-+p_{21}\vec\Upsilon_++p_{22}\tilde\Pi_-$. For the standard pair $\mathsf M_{\tilde\Pi}$ is the model $\mathsf M_2$ of §*The Peirce Coordinates and the Matrix Model*.
 
 Both sector articles use a basis of this shape. They differ only in the pair, and the pair is visible in the matrix of the element. Write $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$. Write $S_\pm=\mathbb{B}\tilde\Pi_\pm$ for the two minimal left ideals, and split the four basis vectors into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$.
 

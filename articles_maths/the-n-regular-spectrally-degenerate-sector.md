@@ -171,10 +171,10 @@ $$
 
 ## Multiplication and Inversion
 
-**Products stay off the null cone.** The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{10}$,
+**Products stay off the null cone.** The norm is multiplicative, so for $\tilde Q,\tilde Q_2\in\Sigma_{10}$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
 $$
 
 and the product lies in the unit group $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. All three outcomes inside the unit group occur.
@@ -196,13 +196,13 @@ $$
 whose vector part squares to $4Q_t^2\vec\Upsilon^2=0$ and whose norm is $Q_t^4\neq0$: the square lies in $\Sigma_{10}$, and in $\Sigma_{10}^{\mathrm{J}}$ when $\vec\Upsilon\neq0$. For the scalar line, $Q_te_t\cdot Q'_te_t=QQ'_te_t\in\Sigma_{10}^{\mathrm{s}}$. For the exit to $\Sigma_{11}$, take
 
 $$
-\tilde P=e_t+\vec e_x+i\vec e_y,\qquad \tilde Q=e_t+i\vec e_x+\vec e_y,
+\tilde Q_2=e_t+\vec e_x+i\vec e_y,\qquad \tilde Q=e_t+i\vec e_x+\vec e_y,
 $$
 
 both in $\Sigma_{10}^{\mathrm{J}}$ since $1+i^2=0$ and $i^2+1=0$. Their product is
 
 $$
-\tilde P\tilde Q=(1-2i)e_t+(1+i)\vec e_x+(1+i)\vec e_y+2\vec e_z,
+\tilde Q_2\tilde Q=(1-2i)e_t+(1+i)\vec e_x+(1+i)\vec e_y+2\vec e_z,
 $$
 
 with $B^2=4+4i\neq0$ and $\langle\tilde Q\rangle_{\natural}=1$. So the product lies in $\Sigma_{11}$.

@@ -466,7 +466,7 @@ $$
 
 ### The Trace Pairing
 
-The trace pairing $\langle\tilde Q_2,\tilde P\rangle=\operatorname{Tr}(\tilde Q_2\tilde P)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is
+The trace pairing $\langle\tilde Q_2,\tilde Q_2\rangle=\operatorname{Tr}(\tilde Q_2\tilde Q_2)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is
 
 $$
 G=
@@ -815,14 +815,14 @@ Q_{2,21}&0
 \end{pmatrix}.
 $$
 
-A general element is therefore not an elementary spinor but a Dirac spinor: it has one elementary spinor in each Peirce copy. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,
+A general element is therefore not an elementary spinor but a Dirac spinor: it has one elementary spinor in each Peirce copy. Left multiplication by any $\tilde Q_2\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde Q_2)$,
 
 $$
-\tilde P\,\tilde Q_2\longmapsto
-\mathsf M_2^{Q}(\tilde P)\,\mathsf M_2^{Q}(\tilde Q_2),
+\tilde Q_2\,\tilde Q_2\longmapsto
+\mathsf M_2^{Q}(\tilde Q_2)\,\mathsf M_2^{Q}(\tilde Q_2),
 $$
 
-so it preserves each Peirce copy. The off-diagonal entries of $\mathsf M_2^{Q}(\tilde P)$ mix the two components inside one column, that is, the two spectral components inside one Peirce copy; they do not mix the two columns.
+so it preserves each Peirce copy. The off-diagonal entries of $\mathsf M_2^{Q}(\tilde Q_2)$ mix the two components inside one column, that is, the two spectral components inside one Peirce copy; they do not mix the two columns.
 
 **Remark (what mixes the Peirce copies).** A left multiplication by an element never changes the Peirce copy, because $S_\pm$ are left ideals. An operation that changes the Peirce copy has to act on the right, or be a two-sided operation. In the matrix picture, right multiplication multiplies the matrix on the right and mixes the two columns. This is the algebraic distinction behind the two kinds of operation: the left action is the action of the algebra on its left modules, and it is copy-diagonal; a copy-changing term is not a left multiplication.
 

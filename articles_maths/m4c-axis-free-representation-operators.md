@@ -2,13 +2,13 @@
 
 ## Introduction
 
-**The question.** The axis-free article computes the left matrix $L_{\mathrm{axf}}(\tilde Q)$ and the right matrix $R_{\mathrm{axf}}(\tilde P)$ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of $\mathbb{B}$ arise from multiplication, what are their matrices in the axis-free basis, and how is the matrix algebra organised by the two-sided products?
+**The question.** The axis-free article computes the left matrix $L_{\mathrm{axf}}(\tilde Q)$ and the right matrix $R_{\mathrm{axf}}(\tilde Q_2)$ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of $\mathbb{B}$ arise from multiplication, what are their matrices in the axis-free basis, and how is the matrix algebra organised by the two-sided products?
 
 **The three answers.** The answers sit at three levels.
 
 - A general endomorphism is any matrix in $M_4(\mathbb{C})$. The axis-free basis gives a linear isomorphism $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to M_4(\mathbb{C})$, and every $4\times4$ matrix is the matrix of exactly one operator. The space has sixteen complex dimensions, and a general operator need not be a single product.
-- A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{L_{\mathrm{axf}}(\tilde Q)\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde P)\}$. These are the two subsets of the axis-free basis article, and their intersection is the scalars.
-- A two-sided operator is a product $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.
+- A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{L_{\mathrm{axf}}(\tilde Q)\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde Q_2)\}$. These are the two subsets of the axis-free basis article, and their intersection is the scalars.
+- A two-sided operator is a product $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.
 
 **The matrix side.** The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. In the axis-free basis every one of them is a real signed permutation matrix: four nonzero entries, one in each row and each column, every entry $0$, $+1$ or $-1$. The real span of the sixteen is $M_4(\mathbb{R})$, so the axis-free basis is the frame in which the real structure of the operator algebra is visible. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$ in complex projective space. The article records these constructions, and closes with the open questions.
 
@@ -62,7 +62,7 @@ $$
 \operatorname{End}_{\mathbb{C}}(\mathbb{B})\longrightarrow M_4(\mathbb{C}),\qquad
 M\longmapsto[M]_{\mathcal{E}},
 $$
-and it is an isomorphism of algebras. The left matrix is $L_{\mathrm{axf}}(\tilde Q)$ and the right matrix is $R_{\mathrm{axf}}(\tilde P)$; the two are the matrices of the operators $X\mapsto\tilde QX$ and $X\mapsto X\tilde P$.
+and it is an isomorphism of algebras. The left matrix is $L_{\mathrm{axf}}(\tilde Q)$ and the right matrix is $R_{\mathrm{axf}}(\tilde Q_2)$; the two are the matrices of the operators $X\mapsto\tilde QX$ and $X\mapsto X\tilde Q_2$.
 
 ### General Endomorphisms
 
@@ -78,9 +78,9 @@ It is a four-dimensional complex subalgebra of $M_4(\mathbb{C})$, isomorphic to 
 
 **The right copy.** The right multiplications fill
 $$
-\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde P):\tilde P\in\mathbb{B}\}.
+\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde Q_2):\tilde Q_2\in\mathbb{B}\}.
 $$
-It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra $\mathbb{B}_{\mathrm{opp}}$, the same vector space with the reversed product, and its unit is $\mathrm I_4$. The map $\tilde P\mapsto R_{\mathrm{axf}}(\tilde P)$ is injective, so the four matrices $R_{\mathrm{axf},e_\nu}$ are a basis of it.
+It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra $\mathbb{B}_{\mathrm{opp}}$, the same vector space with the reversed product, and its unit is $\mathrm I_4$. The map $\tilde Q_2\mapsto R_{\mathrm{axf}}(\tilde Q_2)$ is injective, so the four matrices $R_{\mathrm{axf},e_\nu}$ are a basis of it.
 
 **The two copies are different.** $\mathbb{B}_L$ and $\mathbb{B}_R$ are two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space. The axis-free basis displays them as the two families of matrices below.
 
@@ -88,9 +88,9 @@ It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra 
 
 **The operator.** A left multiplication and a right multiplication combine into one operator,
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)(X)=\tilde QX\tilde P.
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)(X)=\tilde QX\tilde Q_2.
 $$
-The two factors commute, so $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=R_{\mathrm{axf}}(\tilde P)L_{\mathrm{axf}}(\tilde Q)$ as well. The pair $(\tilde Q,\tilde P)$ has eight complex parameters, and the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix $c(M)$, the matrix of coordinates in the basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, has rank at most one, by the criterion of §*The Criterion for a Single Product*.
+The two factors commute, so $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2)L_{\mathrm{axf}}(\tilde Q)$ as well. The pair $(\tilde Q,\tilde Q_2)$ has eight complex parameters, and the scaling $(\tilde Q,\tilde Q_2)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix $c(M)$, the matrix of coordinates in the basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, has rank at most one, by the criterion of §*The Criterion for a Single Product*.
 
 ### The Table of Levels
 
@@ -100,9 +100,9 @@ The two factors commute, so $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P
 |---|---|---|---|---|
 | general endomorphism | $M$ | all of $M_4(\mathbb{C})$ | $16$ | none |
 | one-sided left | $L_{\mathrm{axf}}(\tilde Q)$ | $\mathbb{B}_L$ | $4$ | the left display |
-| one-sided right | $R_{\mathrm{axf}}(\tilde P)$ | $\mathbb{B}_R$ | $4$ | the right display |
+| one-sided right | $R_{\mathrm{axf}}(\tilde Q_2)$ | $\mathbb{B}_R$ | $4$ | the right display |
 | intersection of the one-sided copies | $\lambda\mathrm I_4$ | the scalars | $1$ | both displays |
-| two-sided | $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ | $\{\operatorname{rank}c(M)\le1\}$ | $7$ (cone) | rank-one coefficient matrix |
+| two-sided | $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | $\{\operatorname{rank}c(M)\le1\}$ | $7$ (cone) | rank-one coefficient matrix |
 
 The table is the answer to the operator question. The general level is the whole space; the one-sided levels are two linear subspaces; the two-sided level is a cone inside the whole space, of dimension seven.
 
@@ -224,7 +224,7 @@ and the same identities hold for $R_{\mathrm{axf}}$. The first is the transpose 
 $$
 \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\cdot\mathrm I_4.
 $$
-*Proof.* Suppose $L_{\mathrm{axf}}(\tilde Q)=R_{\mathrm{axf}}(\tilde P)$. The first column of each is the coordinate column of the element, so $\tilde P=\tilde Q$. Compare the entries $(2,3)$ and $(3,2)$: the left matrix has $-Q_z$ and $Q_z$, the right matrix has $Q_z$ and $-Q_z$, so $Q_z=0$. Compare $(2,4)$ and $(4,2)$: the left matrix has $Q_y$ and $-Q_y$, the right matrix has $-Q_y$ and $Q_y$, so $Q_y=0$. Compare $(3,4)$ and $(4,3)$: the left matrix has $-Q_x$ and $Q_x$, the right matrix has $Q_x$ and $-Q_x$, so $Q_x=0$. Hence $\tilde Q=Q_te_t$ and the matrix is $Q_t\mathrm I_4$. The converse is immediate.
+*Proof.* Suppose $L_{\mathrm{axf}}(\tilde Q)=R_{\mathrm{axf}}(\tilde Q_2)$. The first column of each is the coordinate column of the element, so $\tilde Q_2=\tilde Q$. Compare the entries $(2,3)$ and $(3,2)$: the left matrix has $-Q_z$ and $Q_z$, the right matrix has $Q_z$ and $-Q_z$, so $Q_z=0$. Compare $(2,4)$ and $(4,2)$: the left matrix has $Q_y$ and $-Q_y$, the right matrix has $-Q_y$ and $Q_y$, so $Q_y=0$. Compare $(3,4)$ and $(4,3)$: the left matrix has $-Q_x$ and $Q_x$, the right matrix has $Q_x$ and $-Q_x$, so $Q_x=0$. Hence $\tilde Q=Q_te_t$ and the matrix is $Q_t\mathrm I_4$. The converse is immediate.
 
 **The mutual commutants.** The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion $\mathbb{B}_L\subseteq\mathbb{B}_R'$ is the commutation law. The reverse inclusion is the double commutant theorem: the commutant of $\mathbb{B}_L$ is four-dimensional and contains $\mathbb{B}_R$, so the two coincide. The intersection is the centre of each copy.
 
@@ -240,7 +240,7 @@ R_{\mathrm{axf},e_\nu}=R_{\mathrm{axf}}(e_\nu).
 $$
 The matrix $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is the matrix of $X\mapsto e_\mu Xe_\nu$. A general two-sided operator is the linear combination
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}.
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}.
 $$
 
 **The table.** The sixteen matrices fall into four families.
@@ -252,7 +252,7 @@ $$
 | $\vec e_y$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_z}$ |
 | $\vec e_z$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},e_t}=L_{\mathrm{axf},\vec e_z}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_x}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ | $L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}$ |
 
-Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde P}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde Q_2}$*.
 
 ### The Sixteen, Entry by Entry
 
@@ -317,21 +317,21 @@ L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}L_{\mathrm{axf},e_\rho}R_{\mathrm{ax
 $$
 where $e_\mu e_\rho=\varepsilon e_{\mu'}$ and $e_\sigma e_\nu=\varepsilon' e_{\nu'}$, with $\varepsilon,\varepsilon'\in\{\pm1\}$. For general parameters,
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)L_{\mathrm{axf}}(\tilde R)R_{\mathrm{axf}}(\tilde S)
-=L_{\mathrm{axf}}(\tilde Q\tilde R)R_{\mathrm{axf}}(\ \tilde S\tilde P).
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)L_{\mathrm{axf}}(\tilde Q_3)R_{\mathrm{axf}}(\tilde Q_4)
+=L_{\mathrm{axf}}(\tilde Q\tilde Q_3)R_{\mathrm{axf}}(\ \tilde Q_4\tilde Q_2).
 $$
 The sixteen are closed under multiplication up to sign, with unit $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=\mathrm I_4$; they are not a group, because $-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is not one of the sixteen. The full product family contains the signs, since $-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}=L_{\mathrm{axf},-\tilde e_\mu}R_{\mathrm{axf},\tilde e_\nu}$.
 
-**Trace and determinant.** For $\tilde Q,\tilde P$ with $\langle\tilde Q\rangle_{\natural}\langle\tilde P\rangle_{\natural}\neq0$,
+**Trace and determinant.** For $\tilde Q,\tilde Q_2$ with $\langle\tilde Q\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}\neq0$,
 $$
-\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=4\,Q_tP_t,\qquad
-\det L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
-=\langle\tilde Q\rangle_{\natural}^{2}\langle\tilde P\rangle_{\natural}^{2},
+\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=4\,Q_tP_t,\qquad
+\det L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
+=\langle\tilde Q\rangle_{\natural}^{2}\langle\tilde Q_2\rangle_{\natural}^{2},
 \qquad
-\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\bigr)^{-1}
-=L_{\mathrm{axf}}(\tilde Q^{-1})R_{\mathrm{axf}}(\tilde P^{-1}).
+\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\bigr)^{-1}
+=L_{\mathrm{axf}}(\tilde Q^{-1})R_{\mathrm{axf}}(\tilde Q_2^{-1}).
 $$
-*Proof.* The trace is bilinear in the pair, and only $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ has nonzero trace, equal to $4$; hence the trace is $4Q_tP_t$. The determinant is multiplicative, and $\det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$ and $\det R_{\mathrm{axf}}(\tilde P)=\langle\tilde P\rangle_{\natural}^2$. The inverse is the inverse of each factor.
+*Proof.* The trace is bilinear in the pair, and only $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ has nonzero trace, equal to $4$; hence the trace is $4Q_tP_t$. The determinant is multiplicative, and $\det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$ and $\det R_{\mathrm{axf}}(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}^2$. The inverse is the inverse of each factor.
 
 **The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
 $$
@@ -417,19 +417,19 @@ The argument for $R_{\mathrm{axf}}$ is the same, with the kernel read on the oth
 
 **The bound.** For every pair,
 $$
-\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 \le\min\bigl(\operatorname{rank}L_{\mathrm{axf}}(\tilde Q),
-\operatorname{rank}R_{\mathrm{axf}}(\tilde P)\bigr).
+\operatorname{rank}R_{\mathrm{axf}}(\tilde Q_2)\bigr).
 $$
 If one parameter is a unit, the bound is attained, and the rank of the product is the rank of the other one-sided factor. Hence a product is invertible exactly when both parameters are units.
 
-*Proof.* The operator is the composite $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$; the rank of a composite is at most the rank of either factor. A unit $\tilde P$ makes $R_{\mathrm{axf}}(\tilde P)$ invertible, so $\operatorname{rank}(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P))=\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)$; a unit $\tilde Q$ does the same on the other side.
+*Proof.* The operator is the composite $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$; the rank of a composite is at most the rank of either factor. A unit $\tilde Q_2$ makes $R_{\mathrm{axf}}(\tilde Q_2)$ invertible, so $\operatorname{rank}(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2))=\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)$; a unit $\tilde Q$ does the same on the other side.
 
 **The possible ranks.** The one-sided ranks are $0$, $2$ and $4$. If a parameter is zero the product is zero. If both parameters are nonzero zero divisors, the product has rank at most two. If both are units, the product is invertible of rank four. Hence a product has rank $0$, $1$, $2$ or $4$, and never rank three.
 
-**The drop.** For $\tilde Q=\tilde P=e_t+i\vec e_z$,
+**The drop.** For $\tilde Q=\tilde Q_2=e_t+i\vec e_z$,
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 =2\begin{pmatrix}
 1&0&0&-i\\
 0&0&0&0\\
@@ -441,7 +441,7 @@ of rank one, while each one-sided factor has rank two.
 
 ## The Ordinary Product
 
-**The dimensions.** The matrix of the composite is the ordinary $4\times4$ product $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$. The Kronecker product $L_{\mathrm{axf}}(\tilde Q)\otimes R_{\mathrm{axf}}(\tilde P)$ is a $16\times16$ matrix acting on the tensor square of the carrier, a space of dimension sixteen; it is the matrix of the tensor product of the two operators, not of their composite on the four-dimensional algebra.
+**The dimensions.** The matrix of the composite is the ordinary $4\times4$ product $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$. The Kronecker product $L_{\mathrm{axf}}(\tilde Q)\otimes R_{\mathrm{axf}}(\tilde Q_2)$ is a $16\times16$ matrix acting on the tensor square of the carrier, a space of dimension sixteen; it is the matrix of the tensor product of the two operators, not of their composite on the four-dimensional algebra.
 
 ## The Cone of Products
 
@@ -462,7 +462,7 @@ The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself
 
 **The coefficient column.** For $\tilde Q\in\mathbb{B}$ write $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ for the column of its coefficients in the axis-free basis.
 
-**The expansion of a product.** If $M=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$, then
+**The expansion of a product.** If $M=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$, then
 $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu},
 $$
@@ -475,51 +475,51 @@ so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one 
 **The map.** The assignment
 $$
 \Phi:\mathbb{B}\times\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\Phi(\tilde Q,\tilde P)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+\Phi(\tilde Q,\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 $$
 is the factorisation map. Its image is the set of two-sided operators, and this section records what the factorisation does and does not imply.
 
 **Bilinearity.** The map is complex-bilinear, not complex-linear:
 $$
-L_{\mathrm{axf}}(a\tilde Q+b\tilde Q')R_{\mathrm{axf}}(\tilde P)
-=aT_{\mathrm{axf},\tilde Q,\tilde P}+bT_{\mathrm{axf},\tilde Q',\tilde P},\qquad
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(a\tilde P+b\tilde P')
-=aT_{\mathrm{axf},\tilde Q,\tilde P}+bT_{\mathrm{axf},\tilde Q,\tilde P'}.
+L_{\mathrm{axf}}(a\tilde Q+b\tilde Q')R_{\mathrm{axf}}(\tilde Q_2)
+=aT_{\mathrm{axf},\tilde Q,\tilde Q_2}+bT_{\mathrm{axf},\tilde Q',\tilde Q_2},\qquad
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(a\tilde Q_2+b\tilde Q_2')
+=aT_{\mathrm{axf},\tilde Q,\tilde Q_2}+bT_{\mathrm{axf},\tilde Q,\tilde Q_2'}.
 $$
 Consequently the image is a cone, not a subspace: for $\lambda\in\mathbb{C}$,
 $$
-\lambda L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
-=L_{\mathrm{axf}}(\lambda\tilde Q)R_{\mathrm{axf}}(\tilde P)
-=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\lambda\tilde P).
+\lambda L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
+=L_{\mathrm{axf}}(\lambda\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
+=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\lambda\tilde Q_2).
 $$
 
 **The scaling orbit.** For $\lambda\in\mathbb{C}^{\times}$,
 $$
-L_{\mathrm{axf}}(\lambda\tilde Q)R_{\mathrm{axf}}(\lambda^{-1}\tilde P)
-=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P).
+L_{\mathrm{axf}}(\lambda\tilde Q)R_{\mathrm{axf}}(\lambda^{-1}\tilde Q_2)
+=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2).
 $$
-The group $\mathbb{C}^{\times}$ acts on $\mathbb{B}\times\mathbb{B}$ by $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, and the factorisation map is constant on every orbit.
+The group $\mathbb{C}^{\times}$ acts on $\mathbb{B}\times\mathbb{B}$ by $(\tilde Q,\tilde Q_2)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$, and the factorisation map is constant on every orbit.
 
 **The zero set.** The product vanishes exactly when one parameter vanishes:
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=0
-\iff \tilde Q=0\ \text{or}\ \tilde P=0.
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=0
+\iff \tilde Q=0\ \text{or}\ \tilde Q_2=0.
 $$
 *Proof.* The coefficient matrix of the product is $[Q][P]^{\mathsf T}$, by §*The Coefficient Matrix $c(M)$*; it is zero exactly when one of the two columns is zero, and $c$ is injective.
 
 **The two slots.** With the other parameter a unit, the map is injective in each slot:
 $$
 L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(e_t)=L_{\mathrm{axf}}(\tilde Q),\qquad
-L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(\tilde P)=R_{\mathrm{axf}}(\tilde P).
+L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2).
 $$
 The first is the left copy, the second the right copy, and both parametrisations are injective.
 
 **The fibres.** For a nonzero product the fibre of the factorisation map is exactly one scaling orbit:
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=L_{\mathrm{axf}}(\tilde R)R_{\mathrm{axf}}(\tilde S)
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q_3)R_{\mathrm{axf}}(\tilde Q_4)
 \iff
-\tilde R=\lambda\tilde Q,\quad
-\tilde S=\lambda^{-1}\tilde P
+\tilde Q_3=\lambda\tilde Q,\quad
+\tilde Q_4=\lambda^{-1}\tilde Q_2
 \quad\text{for some }\lambda\in\mathbb{C}^{\times}.
 $$
 *Proof.* The coefficient matrices are equal, $[Q][P]^{\mathsf T}=[R][S]^{\mathsf T}$, and both are nonzero of rank one. A nonzero column of the left side is a nonzero scalar multiple of a nonzero column of the right side, which gives $[R]=\lambda[Q]$; comparing the rows gives $[S]=\lambda^{-1}[P]$. The converse is the scaling identity.
@@ -528,7 +528,7 @@ $$
 $$
 8-1=7.
 $$
-The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.
+The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde Q_2=0$ collapse. The image is the seven-dimensional cone of the next subsections.
 
 ### The Length $\ell(M)=\operatorname{rank}c(M)$
 
@@ -539,7 +539,7 @@ $$
 \ell(M)=\operatorname{rank}c(M).
 $$
 
-*Proof.* If $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde P_i)$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde P_i)$ and $\ell(M)\le r$.
+*Proof.* If $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_2_i)$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_2_i)$ and $\ell(M)\le r$.
 
 **The count.** Every matrix is a sum of at most four products; $\ell(M)=4$ exactly when $\det c(M)\neq0$. The condition $\det c(M)\neq0$ is open and dense, so a generic matrix needs four products and none needs five.
 
@@ -547,7 +547,7 @@ $$
 
 **Theorem (the product criterion).** Let $M\in M_4(\mathbb{C})$ and $c=c(M)$. Then
 $$
-M=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\ \text{for some }\tilde Q,\tilde P
+M=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\ \text{for some }\tilde Q,\tilde Q_2
 \iff c=[Q][P]^{\mathsf T}
 \iff \operatorname{rank}c\le1.
 $$
@@ -557,7 +557,7 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 **The cone.** The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the minors of order two of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.
 
-**The parametrisation.** The map $(\tilde Q,\tilde P)\mapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.
+**The parametrisation.** The map $(\tilde Q,\tilde Q_2)\mapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde Q_2)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.
 
 ### Matrix Rank Against Length
 
@@ -581,13 +581,13 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 **The two boundary cases.** The left and right copies are the two boundary cases of the cone:
 $$
 L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(e_t)=L_{\mathrm{axf}}(\tilde Q),\qquad
-L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(\tilde P)=R_{\mathrm{axf}}(\tilde P).
+L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2).
 $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §*The Intersection of the Two Copies*.
 
 **The cone is larger.** A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.
 
-**The Hermitian subcone.** The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.
+**The Hermitian subcone.** The Hermitian sandwich is the subcone $\tilde Q_2=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.
 
 ### A Worked Case: The Matrix Unit $E_{11}$
 
@@ -660,15 +660,15 @@ Its Gram matrix in the axis-free basis is $\operatorname{diag}(1,-1,-1,-1)$, and
 
 **The adjoint.** The adjoint of a two-sided operator is the swap of the two parameters:
 $$
-\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\bigr)^{\approx}
-=L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q).
+\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\bigr)^{\approx}
+=L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q).
 $$
 The proof is the cyclicity of the scalar part:
 $$
-\bigl\langle L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)X,Y\bigr\rangle
-=\operatorname{Sc}(\tilde QX\tilde PY)
-=\operatorname{Sc}(X\tilde PY\tilde Q)
-=\bigl\langle X,L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q)Y\bigr\rangle.
+\bigl\langle L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)X,Y\bigr\rangle
+=\operatorname{Sc}(\tilde QX\tilde Q_2Y)
+=\operatorname{Sc}(X\tilde Q_2Y\tilde Q)
+=\bigl\langle X,L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q)Y\bigr\rangle.
 $$
 The adjoint exchanges the two slots and conjugates neither parameter.
 
@@ -676,22 +676,22 @@ The adjoint exchanges the two slots and conjugates neither parameter.
 
 **The criterion.** For $\tilde Q\neq0$,
 $$
-\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\bigr)^{\approx}
-=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\bigr)^{\approx}
+=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 \iff
-\tilde P=\lambda\tilde Q
+\tilde Q_2=\lambda\tilde Q
 \quad\text{for some }\lambda\in\mathbb{C}.
 $$
-The self-adjoint two-sided operators are the scalar multiples of the diagonal operators $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q)$, together with the zero operator. The proof is the fibre theorem of §*The Factorization Map*: equality of the two products gives $(\tilde P,\tilde Q)=\lambda(\tilde Q,\tilde P)$, hence $\tilde P=\lambda\tilde Q$. The argument uses no inverse and covers the zero divisors.
+The self-adjoint two-sided operators are the scalar multiples of the diagonal operators $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q)$, together with the zero operator. The proof is the fibre theorem of §*The Factorization Map*: equality of the two products gives $(\tilde Q_2,\tilde Q)=\lambda(\tilde Q,\tilde Q_2)$, hence $\tilde Q_2=\lambda\tilde Q$. The argument uses no inverse and covers the zero divisors.
 
 ### The Skew Sector
 
 **No nonzero skew-adjoint.** No nonzero two-sided operator is skew-adjoint:
 $$
-\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\bigr)^{\approx}
-=-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+\bigl(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\bigr)^{\approx}
+=-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 \iff
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=0.
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=0.
 $$
 *Proof.* If the operator is nonzero, its coefficient matrix is $[Q][P]^{\mathsf T}$ of rank one, and the coefficient matrix of its negative adjoint is $-[P][Q]^{\mathsf T}$. Equality of two nonzero rank-one matrices gives $[P]=\mu[Q]$, and then $\mu[Q][Q]^{\mathsf T}=-\mu[Q][Q]^{\mathsf T}$, so $\mu=0$, a contradiction. Hence the operator is zero.
 
@@ -699,48 +699,48 @@ $$
 
 **The criterion.** The operator preserves the plain form,
 $$
-\bigl\langle L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)X,L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)Y\bigr\rangle
+\bigl\langle L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)X,L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)Y\bigr\rangle
 =\langle X,Y\rangle
 \quad\text{for all }X,Y,
 $$
 exactly when
 $$
-\tilde P\tilde Q=\pm e_t.
+\tilde Q_2\tilde Q=\pm e_t.
 $$
-Then $\tilde Q$ is a unit and $\tilde P=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ is the inner automorphism. The isometry group is
+Then $\tilde Q$ is a unit and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ is the inner automorphism. The isometry group is
 $$
 \{\pm\mathrm{Ad}_{\tilde Q}\}
 \cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\},
 $$
 of complex dimension three, where $\mathbb{B}^{\times}$ is the group of units. It is not the full orthogonal group, which has dimension six.
 
-*Proof.* An isometry of a non-degenerate form on a finite-dimensional space is injective: if $FX=0$, then $\langle X,Y\rangle=\langle FX,FY\rangle=0$ for all $Y$, so $X=0$ by non-degeneracy. Hence it is invertible, and the isometry condition is equivalent to $F^{\approx}F=\mathrm I$. With $F=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ and $F^{\approx}=L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q)$,
+*Proof.* An isometry of a non-degenerate form on a finite-dimensional space is injective: if $FX=0$, then $\langle X,Y\rangle=\langle FX,FY\rangle=0$ for all $Y$, so $X=0$ by non-degeneracy. Hence it is invertible, and the isometry condition is equivalent to $F^{\approx}F=\mathrm I$. With $F=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ and $F^{\approx}=L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q)$,
 $$
 F^{\approx}F
-=L_{\mathrm{axf}}(\tilde P\tilde Q)R_{\mathrm{axf}}(\ \tilde P\tilde Q).
+=L_{\mathrm{axf}}(\tilde Q_2\tilde Q)R_{\mathrm{axf}}(\ \tilde Q_2\tilde Q).
 $$
-The identity is $L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(e_t)$. The fibre theorem gives $\tilde P\tilde Q=\lambda e_t$ in both slots; then $F^{\approx}F=\lambda^2\mathrm I$, so $\lambda^2=1$. Hence $\tilde P\tilde Q=\pm e_t$. The converse is immediate. The dimension is the dimension of the unit group modulo the central scalars, four minus one; the two signs are discrete.
+The identity is $L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(e_t)$. The fibre theorem gives $\tilde Q_2\tilde Q=\lambda e_t$ in both slots; then $F^{\approx}F=\lambda^2\mathrm I$, so $\lambda^2=1$. Hence $\tilde Q_2\tilde Q=\pm e_t$. The converse is immediate. The dimension is the dimension of the unit group modulo the central scalars, four minus one; the two signs are discrete.
 
 ### The Multiplicative Members
 
-**The criterion.** A nonzero operator $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ is multiplicative,
+**The criterion.** A nonzero operator $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ is multiplicative,
 $$
-L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)(XY)
-=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)(X)L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)(Y)
+L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)(XY)
+=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)(X)L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)(Y)
 \quad\text{for all }X,Y,
 $$
 exactly when
 $$
-\tilde P\tilde Q=e_t.
+\tilde Q_2\tilde Q=e_t.
 $$
-Then $\tilde P=\tilde Q^{-1}$ and $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra. The zero operator is multiplicative but is excluded by the nonzero condition.
+Then $\tilde Q_2=\tilde Q^{-1}$ and $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra. The zero operator is multiplicative but is excluded by the nonzero condition.
 
 *Proof.* The condition is
 $$
-\tilde QX\bigl(e_t-\tilde P\tilde Q\bigr)Y\tilde P=0
+\tilde QX\bigl(e_t-\tilde Q_2\tilde Q\bigr)Y\tilde Q_2=0
 \quad\text{for all }X,Y.
 $$
-Put $\tilde R=e_t-\tilde P\tilde Q$. If $\tilde R\neq0$, the products $X\tilde RY$ span the two-sided ideal generated by $\tilde R$, which is the whole algebra because $\mathbb{B}$ is simple. Then $\tilde Q\tilde Z\tilde P=0$ for all $\tilde Z$. The map $(\tilde Q,\tilde P)\mapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ is bilinear and sends the sixteen basis pairs to the basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, so it is injective: $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)=0$ forces $\tilde Q=0$ or $\tilde P=0$, against the nonzero hypothesis. Hence $\tilde R=0$ and $\tilde P\tilde Q=e_t$. The converse is immediate.
+Put $\tilde Q_3=e_t-\tilde Q_2\tilde Q$. If $\tilde Q_3\neq0$, the products $X\tilde Q_3Y$ span the two-sided ideal generated by $\tilde Q_3$, which is the whole algebra because $\mathbb{B}$ is simple. Then $\tilde Q\tilde Z\tilde Q_2=0$ for all $\tilde Z$. The map $(\tilde Q,\tilde Q_2)\mapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ is bilinear and sends the sixteen basis pairs to the basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, so it is injective: $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=0$ forces $\tilde Q=0$ or $\tilde Q_2=0$, against the nonzero hypothesis. Hence $\tilde Q_3=0$ and $\tilde Q_2\tilde Q=e_t$. The converse is immediate.
 
 ### No Pin Group
 
@@ -754,9 +754,9 @@ $$
 \mathfrak{Q}\!\left(\frac{(5e_t+4\vec e_x)(5e_t+4\vec e_y)}{9}\right)
 =-\frac{431}{81}.
 $$
-The level set $\{\mathfrak{Q}=\pm1\}$ is not closed under multiplication, and no scalar condition on one parameter cuts a subgroup out of the family. The isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three; it is not a pin group. The isometry condition is a condition on the pair, $\tilde P\tilde Q=\pm e_t$, not on either parameter alone.
+The level set $\{\mathfrak{Q}=\pm1\}$ is not closed under multiplication, and no scalar condition on one parameter cuts a subgroup out of the family. The isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three; it is not a pin group. The isometry condition is a condition on the pair, $\tilde Q_2\tilde Q=\pm e_t$, not on either parameter alone.
 
-**The two adjoints.** The coefficient formula uses the Hilbert–Schmidt adjoint $\dagger$ of the $4\times4$ matrix; the plain adjoint $\approx$ is the adjoint for the form $\operatorname{Sc}(XY)$ on $\mathbb{B}$. They are different involutions. The identity $(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P))^{\approx}=L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q)$ is a statement about the operator, not about the coefficient matrix.
+**The two adjoints.** The coefficient formula uses the Hilbert–Schmidt adjoint $\dagger$ of the $4\times4$ matrix; the plain adjoint $\approx$ is the adjoint for the form $\operatorname{Sc}(XY)$ on $\mathbb{B}$. They are different involutions. The identity $(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2))^{\approx}=L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q)$ is a statement about the operator, not about the coefficient matrix.
 
 ## The Structural Reading
 
@@ -766,18 +766,18 @@ The level set $\{\mathfrak{Q}=\pm1\}$ is not closed under multiplication, and no
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}
 \longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
-\tilde Q\otimes\tilde P_{\mathrm{opp}}
-\longmapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)
+\tilde Q\otimes\tilde Q_{2,\mathrm{opp}}
+\longmapsto L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)
 $$
 is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\otimes e_{\mathrm{opp},\nu}$ map to the sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, which are a basis; the isomorphism is the generation theorem in algebra form.
 
 ### The Pure Tensors
 
-**The cone of pure tensors.** Under this isomorphism the two-sided operators are exactly the decomposable tensors $\tilde Q\otimes\tilde P_{\mathrm{opp}}$, that is the affine cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3\subset\mathbb{P}^{15}$. The correspondence $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)\leftrightarrow\tilde Q\otimes\tilde P_{\mathrm{opp}}$ is the same statement as "the element is a pure tensor in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$". The seven-dimensional cone of §*The Criterion for a Single Product* is exactly the cone of pure tensors inside the sixteen-dimensional algebra.
+**The cone of pure tensors.** Under this isomorphism the two-sided operators are exactly the decomposable tensors $\tilde Q\otimes\tilde Q_{2,\mathrm{opp}}$, that is the affine cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3\subset\mathbb{P}^{15}$. The correspondence $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)\leftrightarrow\tilde Q\otimes\tilde Q_{2,\mathrm{opp}}$ is the same statement as "the element is a pure tensor in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$". The seven-dimensional cone of §*The Criterion for a Single Product* is exactly the cone of pure tensors inside the sixteen-dimensional algebra.
 
 ### The Real Slice
 
-**The real form.** All sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real, and their real span is $M_4(\mathbb{R})$. For real parameters $\tilde Q,\tilde P$ with real coefficients, the operator $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ is real, and its coefficient matrix is real of rank at most one. The real products form the real Segre cone, of real dimension seven, inside the complex cone. The real slice is the intersection of the complex cone with $M_4(\mathbb{R})$, and every real matrix in it has a real factorisation: a real rank-one coefficient matrix has a real nonzero column and a real nonzero row.
+**The real form.** All sixteen matrices $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real, and their real span is $M_4(\mathbb{R})$. For real parameters $\tilde Q,\tilde Q_2$ with real coefficients, the operator $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ is real, and its coefficient matrix is real of rank at most one. The real products form the real Segre cone, of real dimension seven, inside the complex cone. The real slice is the intersection of the complex cone with $M_4(\mathbb{R})$, and every real matrix in it has a real factorisation: a real rank-one coefficient matrix has a real nonzero column and a real nonzero row.
 
 **The length over the reals.** For a real matrix $M$, the coefficient matrix $c(M)$ is real, and its rank over $\mathbb{R}$ equals its rank over $\mathbb{C}$. Hence the least number of real products summing to $M$ equals the least number of complex products. The length is the same over the two fields.
 
@@ -790,7 +790,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - A product formula, hence powers, inverses and the monoid structure.
 - A rank-one coefficient criterion, hence a decisive test for "is this matrix a single two-sided operator?"
 - The length formula $\ell(M)=\operatorname{rank}c(M)$ with $0\le\ell(M)\le4$.
-- The plain adjoint and the type criteria: $(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P))^{\approx}=L_{\mathrm{axf}}(\tilde P)R_{\mathrm{axf}}(\tilde Q)$; self-adjoint exactly when $\tilde P=\lambda\tilde Q$; isometry exactly when $\tilde P\tilde Q=\pm e_t$; multiplicative exactly when $\tilde P\tilde Q=e_t$.
+- The plain adjoint and the type criteria: $(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2))^{\approx}=L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q)$; self-adjoint exactly when $\tilde Q_2=\lambda\tilde Q$; isometry exactly when $\tilde Q_2\tilde Q=\pm e_t$; multiplicative exactly when $\tilde Q_2\tilde Q=e_t$.
 - A real basis of $M_4(\mathbb{R})$ and a coefficient matrix computed by real traces, with the real and complex lengths equal.
 
 **It does not give.**
@@ -810,7 +810,7 @@ Two questions listed here in earlier editions are answered in *$M_4(\mathbb{C})$
 
 ## Summary
 
-The operators on the biquaternion algebra sit at three levels. Every endomorphism has a matrix in $M_4(\mathbb{C})$, and the axis-free basis gives an isomorphism of sixteen-dimensional algebras. The one-sided operators fill the two four-dimensional copies $\mathbb{B}_L=\{L_{\mathrm{axf}}(\tilde Q)\}$ and $\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde P)\}$; their intersection is the scalars and each is the commutant of the other. The two-sided operators are the products $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$.
+The operators on the biquaternion algebra sit at three levels. Every endomorphism has a matrix in $M_4(\mathbb{C})$, and the axis-free basis gives an isomorphism of sixteen-dimensional algebras. The one-sided operators fill the two four-dimensional copies $\mathbb{B}_L=\{L_{\mathrm{axf}}(\tilde Q)\}$ and $\mathbb{B}_R=\{R_{\mathrm{axf}}(\tilde Q_2)\}$; their intersection is the scalars and each is the commutant of the other. The two-sided operators are the products $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$.
 
 The left matrix is the structure-constant display with $Q_t$ on the diagonal and the three vector coefficients in the off-diagonal positions; the right matrix differs by the signs of the stitch $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$, with $D=\operatorname{diag}(1,-1,-1,-1)$. The four left matrices and the four right matrices are real signed permutations, each family a basis of its copy.
 
@@ -820,7 +820,7 @@ The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dim
 
 The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L_{\mathrm{axf}}(e_t+\vec e_x)R_{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
 
-The plain adjoint swaps the two parameters, and the type criteria are $\tilde P=\lambda\tilde Q$ for self-adjoint, $\tilde P\tilde Q=\pm e_t$ for isometry and $\tilde P\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
+The plain adjoint swaps the two parameters, and the type criteria are $\tilde Q_2=\lambda\tilde Q$ for self-adjoint, $\tilde Q_2\tilde Q=\pm e_t$ for isometry and $\tilde Q_2\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 
 In one line: every two-sided operator is a single product of one left and one right multiplication; the set of such products is the seven-dimensional cone of pure tensors, characterised by a rank-one coefficient matrix, closed under composition but not under addition, with length the coefficient rank, product matrix rank in $\{0,1,2,4\}$, and the real form $M_4(\mathbb{R})$ visible as the real span of the sixteen real cells.
 
@@ -837,11 +837,11 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\mathbb{B}_L,\mathbb{B}_R$ | the left and right copies in $M_4(\mathbb{C})$ |
 | $L_{\mathrm{axf},e_\mu},R_{\mathrm{axf},e_\nu}$ | the four basis matrices of each copy |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch, $R_{\mathrm{axf}}=D(L_{\mathrm{axf}})^{\mathsf T}D$ |
-| $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ | two-sided operator, $X\mapsto\tilde QX\tilde P$ |
+| $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | two-sided operator, $X\mapsto\tilde QX\tilde Q_2$ |
 | $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ | the sixteen basis matrices |
 | $c(M)$ | coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\mathsf T}M)$ |
 | $\ell(M)$ | length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
-| $\Phi(\tilde Q,\tilde P)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde P)$ | factorisation map |
+| $\Phi(\tilde Q,\tilde Q_2)=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ | factorisation map |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the squared vector part |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | quaternionic norm, the scalar of $\tilde Q\tilde Q^{\natural}$ |
 | $\tilde Q^{\natural}=Q_t-\vec Q$ | natural conjugation |
@@ -868,5 +868,5 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and its coordinate column.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
-- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde P=\tilde Q^{*}$.
+- [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde Q_2=\tilde Q^{*}$.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen cells entry by entry.

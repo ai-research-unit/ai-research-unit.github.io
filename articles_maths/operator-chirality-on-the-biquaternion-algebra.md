@@ -168,7 +168,7 @@ $$
 $$
 and linearity extends the identity to the algebra.
 
-**Why the square is the identity.** Composing the transpose with the conjugation gives $\sigma^2(X)=\mathsf W\mathsf W^{\mathsf T}X\mathsf W^{\mathsf T}\mathsf W$, which is $X$ whenever $\mathsf W$ is symmetric with $\mathsf W^2=\mathrm I$. The switch has both properties in each frame — $D$ is a diagonal sign matrix and $\mathsf P$ is a pure swap — and its symmetry is forced rather than chosen: the switches differ from the Gram matrix of $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ by a left multiplication, and $D\,L(\tilde P)$ is symmetric exactly when $\tilde P$ is central, so the symmetric switch is unique up to a scale, which $W^2=\mathrm I$ fixes.
+**Why the square is the identity.** Composing the transpose with the conjugation gives $\sigma^2(X)=\mathsf W\mathsf W^{\mathsf T}X\mathsf W^{\mathsf T}\mathsf W$, which is $X$ whenever $\mathsf W$ is symmetric with $\mathsf W^2=\mathrm I$. The switch has both properties in each frame — $D$ is a diagonal sign matrix and $\mathsf P$ is a pure swap — and its symmetry is forced rather than chosen: the switches differ from the Gram matrix of $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ by a left multiplication, and $D\,L(\tilde Q_2)$ is symmetric exactly when $\tilde Q_2$ is central, so the symmetric switch is unique up to a scale, which $W^2=\mathrm I$ fixes.
 
 **The dependence on the frame.** The transpose depends on the frame and so does $\mathsf W$, while $\sigma$ does not: the two dependences cancel. This is the reason the swap can be defined by the cells and computed by a transpose, and the reason a statement proved with one display holds in all of them.
 

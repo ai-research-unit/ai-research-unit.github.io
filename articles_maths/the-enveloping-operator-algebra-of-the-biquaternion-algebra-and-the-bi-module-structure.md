@@ -158,12 +158,12 @@ The word matrix names three different objects in this group, and the theorem abo
 
 $$
 [L_{\tilde Q}]_{\mathcal B}=\mathrm I_2\otimes\mathsf M_2(\tilde Q),\qquad
-[R_{\tilde P}]_{\mathcal B}=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathrm I_2,\qquad
-[L_{\tilde Q}R_{\tilde P}]_{\mathcal B}=[L_{\tilde Q}]_{\mathcal B}[R_{\tilde P}]_{\mathcal B},
+[R_{\tilde Q_2}]_{\mathcal B}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathrm I_2,\qquad
+[L_{\tilde Q}R_{\tilde Q_2}]_{\mathcal B}=[L_{\tilde Q}]_{\mathcal B}[R_{\tilde Q_2}]_{\mathcal B},
 $$
 
 $$
-c(L_{\tilde Q}R_{\tilde P})=[Q][P]^{\mathsf T},\qquad
+c(L_{\tilde Q}R_{\tilde Q_2})=[Q][P]^{\mathsf T},\qquad
 [T]_{\mathcal B}=\sum_{\mu,\nu}c(T)_{\mu\nu}\,[e_\mu[\,]e_\nu]_{\mathcal B}.
 $$
 

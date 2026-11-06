@@ -6,7 +6,7 @@ The biquaternion algebra carries four norms; the **Krein norm** is the indefinit
 
 This article defines the Krein norm, records its homogeneity, proves that it is not multiplicative, and separates the algebra into the two cases of its value: the **Krein-regular** case of non-zero value, split into the positive and the negative regions, and the **Krein-degenerate** case of zero value, the null set. The closure of the positive case is the Krein cone. It then compares the metric partition with the algebraic partition of the algebra into units, origin and zero divisors, which is the partition carried by the quaternionic norm, and explains why the Krein problem admits no second axis along the spectral condition: the Krein norm and the spectrum are invariants of different groups, and the plane that the quaternionic norm supports does not transfer. The two halves of the partition are treated in *The K-Regular Sector* and *The K-Degenerate Sector*.
 
-**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The **definite companion** is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde P\tilde Q$, associative and with the two-sided unit $e_t$. The **quaternionic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The form itself, its Gram matrix and its inertia are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its fundamental symmetry and the bridge are *The Fundamental Symmetry of the Form*; this article studies the norm the form carries, with the isotropic elements, the doubly null lines and the cone they close.
+**Notation.** An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The **definite companion** is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde Q_2\tilde Q$, associative and with the two-sided unit $e_t$. The **quaternionic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The form itself, its Gram matrix and its inertia are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; its fundamental symmetry and the bridge are *The Fundamental Symmetry of the Form*; this article studies the norm the form carries, with the isotropic elements, the doubly null lines and the cone they close.
 
 ## The Krein Norm
 
@@ -17,17 +17,17 @@ $$
 $$
 It is real-valued and homogeneous of degree two, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$ for complex $\lambda$. The form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; this article studies the norm it carries.
 
-**Theorem (non-multiplicativity).** The Krein norm is not multiplicative. With $\tilde P=e_t+\vec e_x$ and $\tilde Q=e_t-\vec e_x$,
+**Theorem (non-multiplicativity).** The Krein norm is not multiplicative. With $\tilde Q_2=e_t+\vec e_x$ and $\tilde Q=e_t-\vec e_x$,
 $$
-\langle\tilde P\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}=0,
+\langle\tilde Q_2\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}=0,
 \qquad
-\tilde P\tilde Q=2e_t,
+\tilde Q_2\tilde Q=2e_t,
 \qquad
-\langle\tilde P\tilde Q\rangle_{\natural*}=4.
+\langle\tilde Q_2\tilde Q\rangle_{\natural*}=4.
 $$
-Moreover $\tilde P^2=2\vec e_x$ and $\langle\tilde P^2\rangle_{\natural*}=-4$.
+Moreover $\tilde Q_2^2=2\vec e_x$ and $\langle\tilde Q_2^2\rangle_{\natural*}=-4$.
 
-*Proof.* $\tilde P\tilde Q=e_t^2-\vec e_x^2=2e_t$ and $\tilde P^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x$, since $\vec e_x^2=-e_t$. The values are $|1|^2-|1|^2=0$, $\langle 2e_t\rangle_{\natural*}=4$ and $\langle 2\vec e_x\rangle_{\natural*}=-4$.
+*Proof.* $\tilde Q_2\tilde Q=e_t^2-\vec e_x^2=2e_t$ and $\tilde Q_2^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x$, since $\vec e_x^2=-e_t$. The values are $|1|^2-|1|^2=0$, $\langle 2e_t\rangle_{\natural*}=4$ and $\langle 2\vec e_x\rangle_{\natural*}=-4$.
 
 **Consequence.** No multiplicative law survives in either direction: the product of two null elements can be regular, and the product of two regular elements can be null (§*The regular case: the positive and the negative regions*). What is preserved is the homogeneity under complex scalars and the invariance under the isometry group $\mathrm{U}_J(\mathbb{B})\cong\mathrm{U}(1,3)$; multiplication by an algebra element preserves neither the value nor its sign.
 
@@ -195,7 +195,7 @@ The origin has the pair $(0,0)$ and is neither a unit nor a zero divisor.
 
 **The question.** The quaternionic norm and the square of the vector part are the constant term and the discriminant of one characteristic polynomial, $p_{\tilde Q}(X)=X^2-2Q_tX+N$ with $N=Q_t^2+B^2$. The corpus therefore reads them as the two coordinates of one plane and cuts that plane into four sectors, one to each spectral pattern. The Krein norm invites the same treatment: one axis the sign of $\langle\tilde Q\rangle_{\natural*}$, the other the vanishing of $B^2$, giving a regular and a degenerate article with two spectral halves each. That plane is declined here. The reason is structural: the Krein norm and the spectral condition are invariants of **different groups**, so the two axes are not commensurable. The four reasons follow, and the last subsection records the refinement that is available.
 
-**The quaternionic plane, and why it works.** On $\mathbb{B}$ the pair $(N,B^2)$ is equivalent to the pair $(2Q_t,N)$, that is, to the characteristic polynomial. Both entries are polynomial invariants of the element under similarity, $\tilde Q\mapsto\tilde P\tilde Q\tilde P^{-1}$ with $\tilde P$ a unit: the trace, the norm and the discriminant are coefficients of $p_{\tilde Q}$, and $p_{\tilde P\tilde Q\tilde P^{-1}}=p_{\tilde Q}$. The four sectors are therefore four **similarity-invariant** conditions, and the four spectral patterns — an eigenvalue zero or not, the two eigenvalues equal or not — are exactly the four cells. The plane is well posed because both axes live in the same invariant ring, that of the algebra automorphisms.
+**The quaternionic plane, and why it works.** On $\mathbb{B}$ the pair $(N,B^2)$ is equivalent to the pair $(2Q_t,N)$, that is, to the characteristic polynomial. Both entries are polynomial invariants of the element under similarity, $\tilde Q\mapsto\tilde Q_2\tilde Q\tilde Q_2^{-1}$ with $\tilde Q_2$ a unit: the trace, the norm and the discriminant are coefficients of $p_{\tilde Q}$, and $p_{\tilde Q_2\tilde Q\tilde Q_2^{-1}}=p_{\tilde Q}$. The four sectors are therefore four **similarity-invariant** conditions, and the four spectral patterns — an eigenvalue zero or not, the two eigenvalues equal or not — are exactly the four cells. The plane is well posed because both axes live in the same invariant ring, that of the algebra automorphisms.
 
 ### The Null Set Is a Single Orbit
 
@@ -229,9 +229,9 @@ $$
 $$
 The same polynomial therefore carries a null value and a negative value. The Krein norm is not a coefficient of $p_{\tilde Q}$, and $p_{\tilde Q}$ is not a function of the Krein norm.
 
-**The Krein norm is not similarity-invariant.** For the unit $\tilde P=e_t+2i\vec e_x$ one has $\langle\tilde P\rangle_{\natural}=1+(2i)^2=-3$ and $\tilde P^{-1}=\tfrac13(-e_t+2i\vec e_x)$, and a direct computation gives
+**The Krein norm is not similarity-invariant.** For the unit $\tilde Q_2=e_t+2i\vec e_x$ one has $\langle\tilde Q_2\rangle_{\natural}=1+(2i)^2=-3$ and $\tilde Q_2^{-1}=\tfrac13(-e_t+2i\vec e_x)$, and a direct computation gives
 $$
-\tilde P\,\vec e_y\,\tilde P^{-1}=-\tfrac53\vec e_y-\tfrac43 i\vec e_z .
+\tilde Q_2\,\vec e_y\,\tilde Q_2^{-1}=-\tfrac53\vec e_y-\tfrac43 i\vec e_z .
 $$
 The square of the vector part is $25/9-16/9=1$ before and after, as it must be, while the Krein norm moves from $0-1=-1$ to $0-\bigl(25/9+16/9\bigr)=-41/9$. A similarity, which is the natural change of element in the spectral problem, does not preserve the Krein norm; an isometry, which preserves the Krein norm, does not preserve the spectral type. The two problems are carried by different groups, and neither group contains the other.
 

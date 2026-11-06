@@ -425,7 +425,7 @@ The Peirce decomposition and the factorization have different boundaries, and th
 
 **The factorization always exists and its uniqueness degenerates.** The scalars $r$ and $s$ are always defined, and the unitaries always exist, by the theorem. The ambiguity of the pair $(\tilde U,\tilde V)$ grows on two loci, and the two are different.
 
-- **The scalar locus $s=0$, equivalently $r_+=r_-$.** The middle factor is $r e_t$ and any unitary commutes with it. The pair is unique only up to the diagonal right action of $\mathrm{U}(\mathbb{B})$, $(\tilde U,\tilde V)\mapsto(\tilde U\tilde R,\tilde V\tilde R)$ with arbitrary unitary $\tilde R$. This is the case of two equal singular values.
+- **The scalar locus $s=0$, equivalently $r_+=r_-$.** The middle factor is $r e_t$ and any unitary commutes with it. The pair is unique only up to the diagonal right action of $\mathrm{U}(\mathbb{B})$, $(\tilde U,\tilde V)\mapsto(\tilde U\tilde U_3,\tilde V\tilde U_3)$ with arbitrary unitary $\tilde U_3$. This is the case of two equal singular values.
 - **The rank-one locus $r=s>0$, equivalently $r_-=0$.** The middle factor is $2r\tilde\Pi_+$ and has one zero spectral value. The pair is unique only up to $\tilde U'=\tilde U(e^{i\theta}\tilde\Pi_++e^{i\varphi}\tilde\Pi_-)$ and $\tilde V'=\tilde V(e^{i\theta}\tilde\Pi_++e^{i\psi}\tilde\Pi_-)$ with independent real $\varphi$ and $\psi$: the phase of the image line is common, the phase of the kernel line is free on each side. This is the case of a vanishing second singular value.
 - **The generic locus $r>s>0$.** The pair is unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_++e^{i\theta_-}\tilde\Pi_-$, a two-torus.
 

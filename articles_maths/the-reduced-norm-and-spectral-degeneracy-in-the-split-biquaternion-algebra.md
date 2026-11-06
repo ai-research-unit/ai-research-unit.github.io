@@ -49,13 +49,13 @@ Consequently $\tilde Q$ is a unit exactly when $\Delta(\tilde Q)\neq0$.
 **Proposition (multiplicativity).** The reduced norm is multiplicative:
 
 $$
-\Delta(\tilde P\tilde Q)=\Delta(\tilde P)\Delta(\tilde Q).
+\Delta(\tilde Q_2\tilde Q)=\Delta(\tilde Q_2)\Delta(\tilde Q).
 $$
 
-*Proof.* The halves multiply componentwise, $(\tilde P\tilde Q)_\pm=P_\pm Q_\pm$. The quaternion norm is multiplicative, since $|PQ|^2=(PQ)(PQ)^{*}=PQQ^{*}P^{*}=|P|^2|Q|^2$. Hence
+*Proof.* The halves multiply componentwise, $(\tilde Q_2\tilde Q)_\pm=P_\pm Q_\pm$. The quaternion norm is multiplicative, since $|PQ|^2=(PQ)(PQ)^{*}=PQQ^{*}P^{*}=|P|^2|Q|^2$. Hence
 
 $$
-\Delta(\tilde P\tilde Q)=|P_+Q_+|^2|P_-Q_-|^2=|P_+|^2|P_-|^2|Q_+|^2|Q_-|^2.
+\Delta(\tilde Q_2\tilde Q)=|P_+Q_+|^2|P_-Q_-|^2=|P_+|^2|P_-|^2|Q_+|^2|Q_-|^2.
 $$
 
 **Definition (component invariants).** The **component invariants** are $|\vec q_+|^2$ and $|\vec q_-|^2$. Each is a sum of three squares and is not multiplicative: $\vec e_x^2=-1$ has zero vector part while $|\vec e_x|^2|\vec e_x|^2=1$.

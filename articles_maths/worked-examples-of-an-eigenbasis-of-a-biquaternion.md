@@ -275,7 +275,7 @@ $$
 \tilde\Pi_-
 $$
 
-form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the **eigenbasis**. Write $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$ and $R_{\tilde Q}(\tilde P)=\tilde P\tilde Q$ for left and right multiplication. In this basis multiplication by $\tilde Q$ is diagonal:
+form a $\mathbb{C}$-basis of $\mathbb{B}$. It is the **eigenbasis**. Write $L_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2$ and $R_{\tilde Q}(\tilde Q_2)=\tilde Q_2\tilde Q$ for left and right multiplication. In this basis multiplication by $\tilde Q$ is diagonal:
 
 $$
 \tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+,
@@ -345,7 +345,7 @@ $$
 
 The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on the coordinates of both spinor spaces.
 
-Every element of $\mathbb{B}$ splits as $\tilde P=\tilde P\tilde\Pi_++\tilde P\tilde\Pi_-$, a spinor of the first Peirce copy plus a spinor of the second Peirce copy. A general element is therefore a pair of spinors, not a spinor.
+Every element of $\mathbb{B}$ splits as $\tilde Q_2=\tilde Q_2\tilde\Pi_++\tilde Q_2\tilde\Pi_-$, a spinor of the first Peirce copy plus a spinor of the second Peirce copy. A general element is therefore a pair of spinors, not a spinor.
 
 The assignment
 
@@ -362,13 +362,13 @@ $$
 gives the eigenbasis model $\mathsf M_2^Q$. For a general element
 
 $$
-\tilde P=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
+\tilde Q_2=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
 $$
 
 the matrix is
 
 $$
-\mathsf M_2^Q(\tilde P)=
+\mathsf M_2^Q(\tilde Q_2)=
 \begin{pmatrix}
 a_{11}&a_{12}\\
 a_{21}&a_{22}
@@ -1103,7 +1103,7 @@ $$
 The minimal polynomial is $(X-1)^2$, the only eigenvalue is $1$, and the eigenspace is
 
 $$
-\ker L_{\tilde N}=\{\tilde P:\tilde N\tilde P=0\},
+\ker L_{\tilde N}=\{\tilde Q_2:\tilde N\tilde Q_2=0\},
 $$
 
 of dimension two. A two-dimensional eigenspace does not span the four-dimensional algebra, so there is no eigenbasis. The element is unipotent: it is a unit, with inverse

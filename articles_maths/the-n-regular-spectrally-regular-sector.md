@@ -867,10 +867,10 @@ The first column is $S_+$, the second is $S_-$, and multiplication by $\tilde Q$
 
 ## Multiplication and Inversion
 
-**Products stay in the unit group.** The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{11}$,
+**Products stay in the unit group.** The norm is multiplicative, so for $\tilde Q,\tilde Q_2\in\Sigma_{11}$,
 
 $$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
 $$
 
 and the product lies in $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. Both outcomes occur.
@@ -889,10 +889,10 @@ $$
 \tilde Q^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x,
 $$
 
-with $\langle\tilde Q\rangle_{\natural}=4$ and $B^2=4$: it stays in the sector. For the second, $\tilde P=e_t+2\vec e_x$ and $\tilde Q=e_t-2\vec e_x$ both have $\langle\tilde Q\rangle_{\natural}=5$ and $B^2=4$, and
+with $\langle\tilde Q\rangle_{\natural}=4$ and $B^2=4$: it stays in the sector. For the second, $\tilde Q_2=e_t+2\vec e_x$ and $\tilde Q=e_t-2\vec e_x$ both have $\langle\tilde Q\rangle_{\natural}=5$ and $B^2=4$, and
 
 $$
-\tilde P\tilde Q=e_t-4\vec e_x^2=5e_t,
+\tilde Q_2\tilde Q=e_t-4\vec e_x^2=5e_t,
 $$
 
 with $B^2=0$ and $\langle\tilde Q\rangle_{\natural}=25$: the product lies on the scalar line, in $\Sigma_{10}^{\mathrm{s}}$.
@@ -920,7 +920,7 @@ So squaring can leave the sector, and it leaves it precisely through the vertex 
 
 **Inversion and closure.** The sector is inverse-closed, because $\langle\tilde Q^{-1}\rangle_{\natural}\neq0$ and $B^2(\tilde Q^{-1})\neq0$; it is not product-closed, by the theorem. It is therefore a **symmetric subset** of the unit group, not a subgroup. In fact it contains no subgroup at all, since every subgroup contains the identity and $e_t\notin\Sigma_{11}$.
 
-**Caveat on the parametrisation.** Although $\lambda_+e_++\lambda_-e_-$ is unique, products do not add eigenvalues: the eigenvalues of $\tilde P\tilde Q$ are not determined by those of $\tilde P$ and $\tilde Q$ separately. Only their product is, through the norm.
+**Caveat on the parametrisation.** Although $\lambda_+e_++\lambda_-e_-$ is unique, products do not add eigenvalues: the eigenvalues of $\tilde Q_2\tilde Q$ are not determined by those of $\tilde Q_2$ and $\tilde Q$ separately. Only their product is, through the norm.
 
 ## Relation to the Two Cones
 
