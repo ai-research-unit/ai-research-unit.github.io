@@ -182,7 +182,7 @@ $$</p>
 <p>$$
 F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
 $$</p>
-<p>antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(\partial A_k/\partial r'_t+\partial \xi^{\mathrm{scp}}/\partial x_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.</p>
+<p>antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(\partial A_k/\partial r'_t+\partial \xi^{\mathrm{scp}}/\partial r_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.</p>
 <p>The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by <strong>Ludwik Silberstein</strong> in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the <strong>Riemann–Silberstein vector</strong> $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,</p>
 <p>$$
 \tilde F = i\sqrt{\epsilon}\,\vec N = i\sqrt{\epsilon}\,(\vec E + ic\vec B),
@@ -288,10 +288,10 @@ $$</p>
 <p>The static solution is given by the <strong>gradient of the Newton kernel</strong>, not by the Newton kernel itself, because the static equation is first order. Write $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the field point and $\vec y$ for the source point. Then</p>
 <p>$$
 \tilde{F}(\vec r)
-=\frac{1}{4\pi}\int\frac{(\vec r-\vec r_y)\,R_0(\vec r_y)}{\|\vec r-\vec r_y\|^3}\,d^3y
--\frac{1}{4\pi}\int\frac{\vec R(\vec r_y)\times(\vec r-\vec r_y)}{\|\vec r-\vec r_y\|^3}\,d^3y,
+=\frac{1}{4\pi}\int\frac{(\vec r-\vec y)\,R_0(\vec y)}{\|\vec r-\vec y\|^3}\,d^3y
+-\frac{1}{4\pi}\int\frac{\vec R(\vec y)\times(\vec r-\vec y)}{\|\vec r-\vec y\|^3}\,d^3y,
 $$</p>
-<p>with $R_0 = \sqrt{\mu}\,ic\rho = i\rho/\sqrt{\epsilon} = \mathrm{Sc}(\sqrt{\mu}\,\tilde{J})$, $\vec R = \sqrt{\mu}\,\vec J = \mathrm{Vect}(\sqrt{\mu}\,\tilde{J})$, and $\|\vec r-\vec r_y\|$ the ordinary Euclidean distance in $\mathbb{R}^3$. The first term is the biquaternionic form of the Coulomb law and the second that of the Biot–Savart law. Its imaginary part is $\sqrt{\epsilon}\,\vec E$ and its real part is $-\sqrt{\mu}\,\vec H$.</p>
+<p>with $R_0 = \sqrt{\mu}\,ic\rho = i\rho/\sqrt{\epsilon} = \mathrm{Sc}(\sqrt{\mu}\,\tilde{J})$, $\vec R = \sqrt{\mu}\,\vec J = \mathrm{Vect}(\sqrt{\mu}\,\tilde{J})$, and $\|\vec r-\vec y\|$ the ordinary Euclidean distance in $\mathbb{R}^3$. The first term is the biquaternionic form of the Coulomb law and the second that of the Biot–Savart law. Its imaginary part is $\sqrt{\epsilon}\,\vec E$ and its real part is $-\sqrt{\mu}\,\vec H$.</p>
 <p>For a point charge $ϙ$ at the origin, the four-current is $\tilde J = i c ϙ\,\delta(\vec r)\,e_t$, so the source is $\sqrt{\mu}\,\tilde{J} = i ϙ/\sqrt{\epsilon}\,\delta(\vec r)\,e_t$, and the solution is</p>
 <p>$$
 \tilde{F}(\vec r) = \frac{i ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|\vec r\|^2},

@@ -135,9 +135,9 @@ $$</p>
 <h2 id="equal-time-commutation-relations">Equal-Time Commutation Relations</h2>
 <p>Quantization promotes the classical field and its momentum to operators $\xi^{\mathrm{fop}}$, $\xi^{\mathrm{fop}\dagger}$, $\pi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}\dagger}$ and imposes equal-time brackets. Because the field is complex, $\xi$ and $\xi^\dagger$ are independent, and the canonical relations are</p>
 <p>$$
-\boxed{\;\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec r_y,r'_t)\big]
-=\big[\xi^{\mathrm{fop}\dagger}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}\dagger}(\vec r_y,r'_t)\big]
-=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y)\;},
+\boxed{\;\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec y,r'_t)\big]
+=\big[\xi^{\mathrm{fop}\dagger}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}\dagger}(\vec y,r'_t)\big]
+=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\;},
 $$</p>
 <p>with</p>
 <p>$$
@@ -147,11 +147,11 @@ $$</p>
 \big[\xi^{\mathrm{fop}},\pi^{\mathrm{fop}\dagger}\big]=\big[\xi^{\mathrm{fop}\dagger},\pi^{\mathrm{fop}}\big]=0 ,
 $$</p>
 <p>the last two being the cross relations of each of the two independent fields with the momentum conjugate to the other.</p>
-<p>In natural units, where $\pi=\left(\partial\xi/\partial r'_t\right)^{\dagger}$, the first relation reads $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger}(\vec r_y,r'_t)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y)$.</p>
+<p>In natural units, where $\pi=\left(\partial\xi/\partial r'_t\right)^{\dagger}$, the first relation reads $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger}(\vec y,r'_t)]=i\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$.</p>
 <p>The brackets are <strong>commutators</strong>, and the choice is forced, as the companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em> establishes; the three operative reasons may be stated compactly. <strong>Boundedness of the energy:</strong> a commutator makes the particle and antiparticle contributions to the Hamiltonian both positive, whereas an anticommutator would give opposite signs and an energy unbounded below. <strong>Microcausality:</strong> for a spin-$0$ field it is the commutator $[\xi^{\mathrm{fop}}(x),\xi^{\mathrm{fop}\dagger}(y)]$ that must vanish outside the light cone, and it does; the anticommutator does not, and quantizing with it would correlate causally disconnected measurements. <strong>Positivity of the norm:</strong> the symmetric Fock space built on the one-particle space has positive-definite inner product, while the antisymmetric projection of a bosonic one-particle space is not the structure the field equation's solution space supports. The three reasons point the same way for a field of integer spin; the general theorem is not rederived here.</p>
 <p>The scalar case has one feature the two parent cases do not. Because the field is single-component and the Legendre transform regular, the canonical relation is imposed <strong>directly</strong>, without the Dirac-bracket modification the Dirac field required. There is no constraint surface to project onto and no gauge orbit to fix. What the algebra does not supply is not a constraint resolution but the ladder itself, and that is the subject of the section after next.</p>
 <h2 id="the-mode-expansion">The Mode Expansion</h2>
-<p>The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\mu^2}$ and $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as</p>
+<p>The field equation is linear, so the general solution is a superposition of plane waves. In natural units, with $E_{\vec p}=+\sqrt{\vec p^2+\mu^2}$ and $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the quantized field expands as</p>
 <p>$$
 \boxed{\;\xi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
 \left(a^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x)\right)\;},
@@ -164,11 +164,11 @@ $$</p>
 <p>The operator $a^{\mathrm{fop}}_{\vec p}$ annihilates a particle of momentum $\vec p$ and $b^{\mathrm{fop}}_{\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.</p>
 <p>The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central $*$-unitary element built from the material four-wavevector. With $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives</p>
 <p>$$
-\mathrm{Sc}\!\left(\tilde P\tilde{R}_\varphi^{\natural}\right)/\hbar=\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E_{\vec p}r'_t=-p\cdot r_x ,
+\mathrm{Sc}\!\left(\tilde P\tilde{R}_\varphi^{\natural}\right)/\hbar=\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E_{\vec p}r'_t=-p\cdot x ,
 \qquad
-\exp(-ip\cdot r_x)=\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar),
+\exp(-ip\cdot x)=\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar),
 \qquad
-\exp(+ip\cdot r_x)=\exp(-i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar) .
+\exp(+ip\cdot x)=\exp(-i\,\mathrm{Sc}(\tilde P\tilde{R}_\varphi^{\natural})/\hbar) .
 $$</p>
 <p>The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/(2\pi)^3$ are the standard Lorentz-invariant ones and are inherited.</p>
 <p>For a <strong>real</strong> (neutral) scalar field the field is Hermitian, $\xi^{\mathrm{fop}}=\xi^{\mathrm{fop}\dagger}$, which forces $b^{\mathrm{fop}}_{\vec p}=a^{\mathrm{fop}}_{\vec p}$; there is one set of modes, the field creates and destroys its own antiparticle, and the charge below vanishes identically. For a <strong>complex</strong> (charged) field the two sets are independent. The biquaternion framework does not by itself prefer either: the real field is a Hermitian central-valued operator field, the complex field a pair of them related by the central phase, and the distinction is the standard one.</p>
@@ -181,11 +181,11 @@ $$</p>
 \qquad
 \big[a^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger\big]=0\;},
 $$</p>
-<p>with all other commutators vanishing. The equal-time canonical relation is recovered from these: the positive- and negative-frequency branches enter the commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger}(\vec r_y,r'_t)]$ with opposite phases, the terms that survive combine into a single momentum integral, and</p>
+<p>with all other commutators vanishing. The equal-time canonical relation is recovered from these: the positive- and negative-frequency branches enter the commutator $[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\left(\partial\xi^{\mathrm{fop}}/\partial r'_t\right)^{\dagger}(\vec y,r'_t)]$ with opposite phases, the terms that survive combine into a single momentum integral, and</p>
 <p>$$
-\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec r_y,r'_t)\big]
-=i\hbar\int\!\frac{d^3p}{(2\pi)^3}\,\exp(\,i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y))
-=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y).
+\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec y,r'_t)\big]
+=i\hbar\int\!\frac{d^3p}{(2\pi)^3}\,\exp(\,i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y))
+=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y).
 $$</p>
 <p>The Fock space is the <strong>symmetric</strong> algebra of the one-particle space,</p>
 <p>$$
@@ -228,7 +228,7 @@ $$</p>
 <p>a c-number, the <strong>commutator function</strong> (Pauli–Jordan function) times a central unit; the commutators $[\xi^{\mathrm{fop}},\xi^{\mathrm{fop}}]$ and $[\xi^{\mathrm{fop}\dagger},\xi^{\mathrm{fop}\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a <strong>classical</strong> field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.</p>
 <p>Two properties of $\Delta$ are the physical content. At equal times it vanishes,</p>
 <p>$$
-\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\xi^{\mathrm{fop}\dagger}(\vec r_y,r'_t)\big]=0,
+\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\xi^{\mathrm{fop}\dagger}(\vec y,r'_t)\big]=0,
 $$</p>
 <p>because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde R_\varphi-\tilde{R}_{\varphi,2}\rangle_{\natural}>0$, it vanishes as well, which is <strong>microcausality</strong>: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.</p>
 <h2 id="what-is-standard-and-what-is-open">What Is Standard and What Is Open</h2>
@@ -254,9 +254,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion Klein–Gordon field is quantized by promoting its central-valued representative to an operator-valued field. The classical theory has the action of the companion Noether article, conjugate momentum $\pi=c^{-2}\left(\partial\xi/\partial r'_t\right)^{\,*}$, and a <strong>regular</strong> Legendre transform: unlike the Dirac case there is no second-class constraint, and unlike the Maxwell case there is no gauge redundancy. The equal-time relations are commutators,</p>
 <p>$$
-\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec r_y,r'_t)\big]
-=\big[\xi^{\mathrm{fop}\dagger}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}\dagger}(\vec r_y,r'_t)\big]
-=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_y),
+\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}}(\vec y,r'_t)\big]
+=\big[\xi^{\mathrm{fop}\dagger}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi^{\mathrm{fop}\dagger}(\vec y,r'_t)\big]
+=i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y),
 $$</p>
 <p>with all other equal-time brackets vanishing; commutation rather than anticommutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm.</p>
 <p>The field expands in the parent's plane waves,</p>
@@ -332,7 +332,7 @@ $$</p>
 <td>Mass-shell condition</td>
 </tr>
 <tr>
-<td>$E_{\vec p}=\sqrt{\vec p^2+\mu^2}$, $p\cdot r_x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$</td>
+<td>$E_{\vec p}=\sqrt{\vec p^2+\mu^2}$, $p\cdot x=E_{\vec p}r'_t-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$</td>
 <td>On-shell energy and phase (natural units)</td>
 </tr>
 <tr>

@@ -153,6 +153,116 @@ $$</p>
 <p>The letter that remains is the one the corpus already uses. $\tilde R$ is the element letter, and the subscript carries the sector: $\psi$ for the informational half, $\varphi$ for the material half. The name in words follows the structure, not the physics: the element is Hermitian in the sense that its real and imaginary slots are the ones a Hermitian matrix would carry, and its conjugate stays in the same four-dimensional real space.</p>
 <p><strong>The passage that retires the old spelling.</strong> It is worth reading in full, because it states the reason better than a table can: "It was the licence to write one number two ways, and a pair of names for one number is a defect, not a notation." The same paragraph records what the letters were replaced by, $c r_t, r'_x, r'_y, r'_z$, and notes that a reader who does not know the letters computes either half from the split $\tilde R_\psi=\tfrac12(\tilde R+\tilde R^{*})$. The internal marker <code>&lt;!-- retired notation, kept for reference --&gt;</code> keeps the display in the file without keeping it in the argument.</p>
 <p><strong>Recommended usage.</strong> <em>The Hermitian element</em>, and in a display $\tilde R_\psi$. A sentence that needs the physics adds the sector: <em>the Hermitian element of the informational sector</em>. The names to avoid are <em>the quantum $H$</em>, <em>the $h$-element</em> and <em>the Hamiltonian element</em>: the first two name a letter rather than an object, and the third names the wrong object.</p>
+<h2 id="the-position-vector-and-the-letter-math72">The Position Vector and the Letter $\vec x$</h2>
+<p><strong>The answer.</strong> The position vector is $\vec r$. It is never $\vec x$.</p>
+<p><strong>The evidence.</strong> At the last committed state of the corpus, physics held $0$ sites of $\vec x$ and $1471$ of $\vec r$. The letter $\vec x$ is therefore not a legacy spelling that the corpus ever used in physics. It was created by an automated rename pass, which found $\vec r$ and rewrote it in $29$ articles.</p>
+<p><strong>The rule that the pass ignored.</strong> $x,y,z$ name two different things. As <em>components</em> they are position letters, and $r_x,r_y,r_z$ is the current spelling. As <em>names of a point</em> they are free variables, and $\vec r$, $\vec y$, $p\cdot x$, $x=(X,r'_t)$, $\mathrm{Tr}(x\otimes y)$ are the right spellings. The pass could not tell the two readings apart.</p>
+<p><strong>What the migration now writes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>sites</th>
+<th>before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>position vector</td>
+<td>$141$</td>
+<td>$\vec x$</td>
+<td>$\vec r$</td>
+</tr>
+<tr>
+<td>position vector at a second point</td>
+<td>$1$</td>
+<td>$\vec x_2$</td>
+<td>$\vec r_2$</td>
+</tr>
+<tr>
+<td>spatial derivative index</td>
+<td>$30$</td>
+<td>$x_k$</td>
+<td>$r_k$</td>
+</tr>
+<tr>
+<td>spatial components</td>
+<td>$45$</td>
+<td>$x_1,x_2,x_3$</td>
+<td>$r_x,r_y,r_z$</td>
+</tr>
+<tr>
+<td>coordinate differentials</td>
+<td>$22$</td>
+<td>$dx,dy,dz$</td>
+<td>$dr_x,dr_y,dr_z$</td>
+</tr>
+<tr>
+<td>volume element</td>
+<td>$5$</td>
+<td>$d^3x$</td>
+<td>$d^3r$</td>
+</tr>
+<tr>
+<td>four-position tuple</td>
+<td>$8$</td>
+<td>$(c r'_t,x,y,z)$</td>
+<td>$(c r'_t,r_x,r_y,r_z)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$275$ substitutions in $29$ articles. The result matches the committed state exactly: $\vec r$ counts $1470$ against $1471$, and the single difference is one vector part in <em>The Biquaternion Basis of a Unified Field Fibre Bundle</em>, which now reads $\vec q$ to agree with its own $q$-family.</p>
+<p><strong>The two articles that are not positions.</strong> <em>The Biquaternion Basis</em> and <em>The Reflection and the Rotation</em> write an element of $\mathbb{M}_+$ as a coordinate family. Its coefficients are $q_t,q_x,q_y,q_z$, the spelling the corpus already uses for that sector, $q_t e_t+i\vec q$. Both articles were migrated to that family rather than to $r$, because $r$ is the material letter and $q$ is the informational one.</p>
+<p><strong>The distinction that was kept.</strong> $\vec r$ is both the material position vector and the Bloch vector of the state $\tilde\varsigma=\tfrac12(e_t+i\vec r)$. The corpus states the separation in <em>Algebra and Element Conventions</em>: "$\vec r_\psi$ stays distinct from the Bloch vector $\vec r$". Only one article, <em>The Probability Band</em>, holds both readings at once, and it states which is which in the display itself.</p>
+<p><strong>What is left, and why.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>residual</th>
+<th>sites</th>
+<th>why it stays</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x_0$</td>
+<td>$283$</td>
+<td>the time label of the real frame, declared as $x_0=c r'_t$</td>
+</tr>
+<tr>
+<td>$x_\mu$</td>
+<td>$443$</td>
+<td>the label of the four-position family, $x_\mu=(x_0,r_x,r_y,r_z)$</td>
+</tr>
+<tr>
+<td>$x_1,x_2,x_3$</td>
+<td>$386$</td>
+<td>not all are components: the same tokens label spacetime points, $x_2$, $\lvert x_2\rangle$, $\Delta_F(x-x_2)$, and quadratures, $\mathrm{Var}(x_1-x_2)$. A pattern cannot separate them; $47$ articles need a site-by-site reading</td>
+</tr>
+<tr>
+<td>$x_k$</td>
+<td>$113$</td>
+<td>same split: a coordinate index in <em>Curved Spacetime</em>, the coefficients of a generic element in <em>The Wigner–Eckart Theorem</em></td>
+</tr>
+<tr>
+<td>$d^3x$</td>
+<td>$90$</td>
+<td>the volume element; the same object as $d^3r$, and a mechanical rename is safe but was not part of this pass</td>
+</tr>
+<tr>
+<td>$\vec y$</td>
+<td>$97$</td>
+<td>the source point. The committed state wrote $\vec y$ ($48$) and $\vec r_y$ ($51$) for the same object; the corpus now writes $\vec y$ throughout</td>
+</tr>
+<tr>
+<td>$\vec r_x,\vec r_y$</td>
+<td>$5$</td>
+<td>the Bloch vectors of an ensemble, $\bar{\vec r}=\sum_x p_x\vec r_x$, where the subscript is the member index</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How the pass was checked.</strong> Every changed line was diffed against the committed state. The $\vec r$ count returns to its committed value file by file, except the one vector part moved to $\vec q$. No display is unbalanced and no brace is unclosed across the $412$ articles.</p>
 <h2 id="the-inventory">The Inventory</h2>
 <p>The table gives one row per physics article, the direct link, and the expression in which the article writes the element. The expression is the first display the article gives it, preferring the full coordinate form where the article has one.</p>
 <div class="table-scroll"><table>
@@ -635,7 +745,7 @@ $$</p>
 </table></div>
 <h2 id="the-counts">The Counts</h2>
 <p><strong>Coverage.</strong> $117$ of the $412$ physics articles write $\tilde R_\psi$. $49$ of them print the full coordinate display $c r_t e_t+i\vec r_\psi$; the remaining $68$ use the letter in a trace, a product, a transformation law or a norm.</p>
-<p><strong>One object, one letter.</strong> No physics article writes the element with $h$ or with $H$, with one exception that is deliberate: <em>Algebra and Element Conventions</em> keeps the old display under a <code>&lt;!-- retired notation, kept for reference --&gt;</code> marker, in a paragraph headed "The operator reading is retired". That paragraph is the reference copy of the retired spelling, and it is the only one. Outside it, the $31$ remaining $h_x$ and $44$ remaining $h_t$ in the corpus are unrelated symbols of the maths articles, not this element.</p>
+<p><strong>One object, one letter.</strong> No physics article writes the element with $h$ or with $H$, with one exception that is deliberate: <em>Algebra and Element Conventions</em> keeps the old display under a <code>&lt;!-- retired notation, kept for reference --&gt;</code> marker, in a paragraph headed "The operator reading is retired". That paragraph is the reference copy of the retired spelling, and it is the only one. Outside it the physics tree holds $2$ sites of $h_t$ and $3$ of $h_x$, all inside that same paragraph. The maths tree holds $27$ sites of $h_t$ and $22$ of $h_x$ in $10$ articles, where $h_x$ is the fibre metric $h_x:E_x\times E_x\to\mathbb{C}$ of a Hermitian bundle and not this element; one maths article, <em>Biquaternion Elementary Functions</em>, writes a generic direction in a derivative as $H=h_t e_t+\vec H$, which is a generic element of the algebra and not the informational coordinate.</p>
 <p><strong>The neighbours.</strong> The three objects that share the four-dimensional real space and must not be confused with it are the material half $\tilde R_\varphi=i c r'_t e_t+\vec r$, the state $\tilde{Ϛ}$ against which the trace is taken, and the unitary rotor $\tilde U$ that moves it.</p>
       </div>
     </main>
