@@ -71,7 +71,7 @@
         <h1 id="interpretation-of-the-wick-rotation-in-the-biquaternion-universe"><strong>Interpretation of the Wick Rotation in the Biquaternion Universe</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>Wick rotation</strong> is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $r'_t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a <strong>trick</strong>: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.</p>
-<p>This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the <strong>quaternion subspace</strong> $\mathbb{B}_{H}$, whose four coefficients are all real. So the Wick rotation is an <strong>identification</strong> of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real one.</p>
+<p>This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $i c r'_t$ convention, sends the imaginary time coefficient $i c r'_t$ to the real value $c\tau$, while leaving the spatial coordinates $r_x, r_y, r_z$ unchanged. The result is a point of the <strong>quaternion subspace</strong> $\mathbb{B}_{H}$, whose four coefficients are all real. So the Wick rotation is an <strong>identification</strong> of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real one.</p>
 <p>This interpretation explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{B}_{H}$ is better behaved than $\mathbb{B}_{\Phi}$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{B}_{H}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{B}_{H}$ is easier.</p>
 <p>The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{B}_{H}$, the informational sector $\mathbb{B}_{\Psi}$, and the material sector $\mathbb{B}_{\Phi}$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{B}_{H}$ is developed, with the properties of the two subspaces compared. Then the interpretation is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the interpretation.</p>
 <p>Throughout, $c$ denotes the speed of light in the medium, and the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 \tilde R_\Phi = i c r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z \in \mathbb{B}_{\Phi},
 $$</p>
-<p>where $r'_t = t'$ is the time coordinate and $(r_x,r_y,r_z)=(x,y,z)$ the spatial ones, so that the four coefficients are $i c r'_t, r_x, r_y, r_z$.</p>
+<p>where $r'_t$ is the time coordinate and $r_x, r_y, r_z$ the spatial ones, so that the four coefficients are $i c r'_t, r_x, r_y, r_z$.</p>
 <p>The <strong>standard Wick rotation</strong> is the substitution</p>
 <p>$$
 r'_t \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
@@ -119,11 +119,11 @@ $$</p>
 <p>$$
 \boxed{\;i c r'_t \;\longmapsto\; i c\,(-i\tau) = c\tau\;},
 $$</p>
-<p>while the spatial coefficients $x, y, z$ are unchanged. The rotated point is</p>
+<p>while the spatial coefficients $r_x, r_y, r_z$ are unchanged. The rotated point is</p>
 <p>$$
 \tilde{Q}_\mathbb{H} = c\tau\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z,
 $$</p>
-<p>with <strong>all four coefficients real</strong>. In the notation of the quaternion subspace these are the four parameters $q_t = c\tau$, $q_x = x$, $q_y = y$, $q_z = z$.</p>
+<p>with <strong>all four coefficients real</strong>. In the notation of the quaternion subspace these are the four parameters $q_t = c\tau$, $q_x = r_x$, $q_y = r_y$, $q_z = r_z$.</p>
 <p>So the standard Wick rotation is the identification</p>
 <p>$$
 \boxed{\;\mathbb{B}_{\Phi} \;\longrightarrow\; \mathbb{B}_{H}, \qquad (i c r'_t, r_x, r_y, r_z) \;\longmapsto\; (c\tau, r_x, r_y, r_z)\;},
@@ -238,7 +238,7 @@ $$</p>
 <p>The interpretation is consistent with the known behavior of the Wick rotation. It is not derived from established physics, and it does not constitute a prediction of new physics. It is a structural interpretation that clarifies the operation and organizes the applications.</p>
 <h2 id="summary">Summary</h2>
 <p>The standard Wick rotation is the analytic continuation $r'_t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.</p>
-<p>In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.</p>
+<p>In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary coefficient $i c r'_t$ as a real coefficient $c\tau$ and leaving the spatial coefficients $r_x, r_y, r_z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.</p>
 <p>The quaternion subspace $\mathbb{B}_{H}$ is better behaved than the material sector $\mathbb{B}_{\Phi}$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic d'Alembertian, and a compact symmetry group. The Wick rotation is useful because the transferred problem on $\mathbb{B}_{H}$ is easier than the original problem on $\mathbb{B}_{\Phi}$.</p>
 <p>The same transfer destroys the Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.</p>
 <p>The interpretation organizes the applications into a split between those that transfer harmlessly to $\mathbb{B}_{H}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.</p>
@@ -277,15 +277,15 @@ $$</p>
 </tr>
 <tr>
 <td>$(c r_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$</td>
-<td>The same element in physical coordinates; $q_t = c r_t$ and $(q_x,q_y,q_z) = (x,y,z)$</td>
+<td>The same element in physical coordinates; $q_t = c r_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$</td>
 </tr>
 <tr>
 <td>$r'_t, r_x, r_y, r_z$</td>
-<td>Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $r'_t = t'$</td>
+<td>Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$</td>
 </tr>
 <tr>
 <td>$r_t, r'_x, r'_y, r'_z$</td>
-<td>Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $r_t = t$</td>
+<td>Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$</td>
 </tr>
 <tr>
 <td>$c$</td>
