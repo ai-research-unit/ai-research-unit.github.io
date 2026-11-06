@@ -179,8 +179,8 @@ This is the section in which thermality is derived rather than asserted.
 Let $\xi^{\mathrm{scl}}$ be the massless real scalar field and $W$ its Wightman function,
 
 $$
-W(r_x,x_2) = \langle 0|\,\xi^{\mathrm{scl}}(r_x)\,\xi^{\mathrm{scl}}(x_2)\,|0\rangle
-= \frac{1}{4\pi^2}\,\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2-(r'_t-r'_{t,2}-i\epsilon)^2},
+W(r_x,r_{2x}) = \langle 0|\,\xi^{\mathrm{scl}}(r_x)\,\xi^{\mathrm{scl}}(r_{2x})\,|0\rangle
+= \frac{1}{4\pi^2}\,\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|^2-(r'_t-r'_{t,2}-i\epsilon)^2},
 $$
 
 in units $c=1$, with the standard $i\epsilon$ prescription. Evaluate it at two points of the same accelerated orbit, $(r'_t,r_x)=(\rho\sinh\eta,\rho\cosh\eta)$ and the point labelled by $\eta_2$, and set $\delta\eta=\eta-\eta_2$. Using

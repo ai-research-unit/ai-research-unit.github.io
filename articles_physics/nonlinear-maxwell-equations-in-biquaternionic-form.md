@@ -310,7 +310,7 @@ $$
 with $\vec a, \vec b$ fixed real orthonormal vectors in $P$ and $f, \theta^{\mathrm{pha}}$ scalar functions. Its twist is the paper's (11.4),
 
 $$
-\Omega = 2f\,(\vec b\,\partial/\partial R_x f - \vec a\,\partial/\partial R_y f),
+\Omega = 2f\,(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f),
 \tag{11.4}
 $$
 
@@ -336,7 +336,7 @@ $$
 This is a flat normal field in the paper's sense: $|\vec E| = |\vec H|$, $\vec E\cdot\vec H = 0$, and $F^2 = 0$ — all three checked to $0$. It is a wave in the paper's own family, $f = f_1(r'_t+r_z)f_2(r_x,r_y)$. And it satisfies **all four Maxwell equations exactly**: the four regular currents (7.3) vanish to $0$ over $100$ random space-time points, so it is precisely the "linear" case of the contrast. Its twist is
 
 $$
-\Omega = (0,\ 2f\,\partial/\partial R_x f,\ 0) = \bigl(0,\ 2(1+r'_t+r_z)\exp(2x),\ 0\bigr),
+\Omega = (0,\ 2f\,\partial/\partial r_x f,\ 0) = \bigl(0,\ 2(1+r'_t+r_z)\exp(2r_x),\ 0\bigr),
 $$
 
 verified to $1.4 \times 10^{-14}$ and nonzero wherever $r'_t + r_z \ne -1$. So a Maxwell field with a twisting energy flow exists, in the family the paper proposes as the nonlinear counterexample, and the section's conclusion — that nonlinearity is what permits a swirling flow — is not established.
@@ -347,7 +347,7 @@ $$
 \partial/\partial r'_t f = \partial/\partial n f, \qquad \partial/\partial n\,\theta^{\mathrm{pha}} = 0, \qquad \partial/\partial a f = -f\partial/\partial b\,\theta^{\mathrm{pha}}, \qquad \partial/\partial b f = f\partial/\partial a\,\theta^{\mathrm{pha}},
 $$
 
-which in the coordinates of the counterexample ($\vec a = \vec e_x$, $\vec b = \vec e_y$, $\vec u = \vec e_z$) read $\partial/\partial r'_t f = \partial/\partial R_z f$, $\partial/\partial R_z\theta^{\mathrm{pha}} = 0$, $\partial/\partial R_x f = -f\partial/\partial R_y\theta^{\mathrm{pha}}$, $\partial/\partial R_y f = f\,\partial/\partial R_x\theta^{\mathrm{pha}}$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $\partial/\partial r'_t f \ne \partial/\partial R_z f$, $4.6 \times 10^{0}$ for $\partial/\partial R_z\theta^{\mathrm{pha}} \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec b\,\partial/\partial a f - \vec a\,\partial/\partial b f)$, in these coordinates $2f(-\partial/\partial R_y f, \partial/\partial R_x f, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
+which in the coordinates of the counterexample ($\vec a = \vec e_x$, $\vec b = \vec e_y$, $\vec u = \vec e_z$) read $\partial/\partial r'_t f = \partial/\partial r_z f$, $\partial/\partial r_z\theta^{\mathrm{pha}} = 0$, $\partial/\partial r_x f = -f\partial/\partial r_y\theta^{\mathrm{pha}}$, $\partial/\partial r_y f = f\,\partial/\partial r_x\theta^{\mathrm{pha}}$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $\partial/\partial r'_t f \ne \partial/\partial r_z f$, $4.6 \times 10^{0}$ for $\partial/\partial r_z\theta^{\mathrm{pha}} \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec b\,\partial/\partial a f - \vec a\,\partial/\partial b f)$, in these coordinates $2f(-\partial/\partial r_y f, \partial/\partial r_x f, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
 
 The two pairs are independent: one fixes the propagation along the normal, the other is a Cauchy–Riemann pair for $\ln f$ and $\theta^{\mathrm{pha}}$ in the plane, solvable precisely when $\ln f$ is planar-harmonic. Both can hold at once, which is why a Maxwell field with a twisting flow exists — for instance every field of the paper's own family $f = f_1(r'_t+r_z)f_2(r_x,r_y)$ with $\theta^{\mathrm{pha}}$ independent of $z$ and $(f_2, \theta^{\mathrm{pha}})$ a Cauchy–Riemann pair in the plane. The contrast the paper wanted is therefore not between linear and nonlinear solutions but between *planar-uniform* and *planar-varying* ones, and the corpus has not found a way to keep the paper's interpretation.
 
@@ -376,10 +376,10 @@ No external source was consulted for the mathematics.
 | (12.10) Coulomb field with running phase | Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta^{\mathrm{pha}}(r'_t) = \cos(\omega r'_t)$ gives $1.7 \times 10^{-13}$ |
 | (7.6) second line, $\partial/\partial t'g_0 - \nabla\cdot\vec I_0 = 0$ | Correct |
 | (7.6) first line, $\partial/\partial t'e_t + \nabla\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial/\partial t'e_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
-| (11.4) $\Omega = 2f(\vec b\,\partial/\partial R_x f - \vec a\,\partial/\partial R_y f)$ | Correct identity, $1.8 \times 10^{-15}$ |
+| (11.4) $\Omega = 2f(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f)$ | Correct identity, $1.8 \times 10^{-15}$ |
 | Flat normal field: the exact Maxwell conditions | $\partial/\partial r'_t f = \partial/\partial n f$, $\partial/\partial n\,\theta^{\mathrm{pha}} = 0$, $\partial/\partial a f = -f\partial/\partial b\,\theta^{\mathrm{pha}}$, $\partial/\partial b f = f\partial/\partial a\,\theta^{\mathrm{pha}}$; each necessary (a violation gives $2.4$–$5.3$) and jointly sufficient ($0$) |
 | (11.3) $F = (\vec a\exp(i\theta^{\mathrm{pha}}) + \vec b\exp(-i\theta^{\mathrm{pha}}))f$ | **Wrong**; (11.2) gives $F = f\exp(i\theta^{\mathrm{pha}})(\vec a - i\vec b)$, agreeing only at $\theta^{\mathrm{pha}} = \pi/4$; the printed form is not null |
-| "Maxwell normal plane field has no twist" | **False**; counterexample $f = (1+r'_t+r_z)\exp(r_x)$, $\theta^{\mathrm{pha}} = -y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2f\,\partial/\partial R_x f, 0) \ne 0$ |
+| "Maxwell normal plane field has no twist" | **False**; counterexample $f = (1+r'_t+r_z)\exp(r_x)$, $\theta^{\mathrm{pha}} = -r_y$ satisfies all four Maxwell equations to $0$, is a flat normal null field, and has $\Omega = (0, 2f\,\partial/\partial r_x f, 0) \ne 0$ |
 | The Appendix proofs of the uniqueness statement (3.1) | Not reproduced; the candidate and its covariant behaviour were verified directly, the completeness claim was not |
 
 **The source.** Sergey Y. Kotkovskiy, *Nonlinear Maxwell equations*. The file `2403.00836v1` resolves on arXiv, dated 28 February 2024. The file `2402.0057v2` carries a malformed identifier which on arXiv belongs to an unrelated paper; the text is the same paper, and the two files differ only in the header, the author's spelling and OCR repairs. The paper's units are $c = 1$ with the field quantities differing from the Gaussian convention by a factor of $4\pi$; the corpus's conventions are unchanged and no conversion is proposed.

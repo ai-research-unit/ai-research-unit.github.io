@@ -45,13 +45,13 @@ $$
 a **complex** number, and the potential is the reciprocal square root of it,
 
 $$
-Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
+Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\,r_x^2 + r_y^2 + (r_z+i\varrho)^2\,}} .
 $$
 
 The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=r_x^2+r_y^2+r_z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
 
 $$
-\boxed{\;\Gamma : \qquad z = 0, \qquad x^2 + y^2 = \varrho^2\;}
+\boxed{\;\Gamma : \qquad r_z = 0, \qquad r_x^2 + r_y^2 = \varrho^2\;}
 $$
 
 a ring of radius $\varrho$ in the plane $z=0$, centred on the third axis. This is Lanczos's **circle electron**, *Kreiselektron*. A point singularity of the real potential has been opened into a ring by displacing its position into the informational sector. The radius of the ring is the magnitude of the imaginary part of the displacement, $\varrho=|\upsilon|$, and the point electron is recovered in the limit $\varrho\to0$.

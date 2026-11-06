@@ -144,10 +144,10 @@ $$
 so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A} = r_x\,e_t + i\varpi\,e_t$ by $\exp(-i\omega r'_t)$ and using the centrality of $i$ gives
 
 $$
-r_x(r'_t) = x_0\cos\omega r'_t + \varpi_0\sin\omega r'_t, \qquad \varpi(r'_t) = \varpi_0\cos\omega r'_t - x_0\sin\omega r'_t ,
+r_x(r'_t) = r_{0x}\cos\omega r'_t + \varpi_0\sin\omega r'_t, \qquad \varpi(r'_t) = \varpi_0\cos\omega r'_t - r_{0x}\sin\omega r'_t ,
 $$
 
-which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(r'_t) = p(r'_t)/(m\omega)$, so this is $r_x(r'_t) = x_0\cos\omega r'_t + \frac{p_0}{m\omega}\sin\omega r'_t$ and $p(r'_t) = p_0\cos\omega r'_t - m\omega x_0\sin\omega r'_t$.
+which is the standard solution written with the standard initial conditions. In terms of the momentum, $\varpi(r'_t) = p(r'_t)/(m\omega)$, so this is $r_x(r'_t) = r_{0x}\cos\omega r'_t + \frac{p_0}{m\omega}\sin\omega r'_t$ and $p(r'_t) = p_0\cos\omega r'_t - m\omega r_{0x}\sin\omega r'_t$.
 
 ### The Generator Lies in the Material Sector
 

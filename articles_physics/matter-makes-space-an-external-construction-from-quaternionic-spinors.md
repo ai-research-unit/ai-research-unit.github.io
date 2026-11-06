@@ -277,9 +277,9 @@ for every $\tilde{Ξ}^{\mathrm{sp}}$. It is the gradient of $-t$ and of nothing 
 
 The rest of that section is the retarded kernel and the bilocal action
 $$
-K(r_x-r_y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(r_x-r_y),
+K(x-y)=\ell_c^{-2}\,\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
 \qquad
-\Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(r_x)\,K(r_x-r_y)\,\frac{\partial\tau}{\partial r_x^\mu}(r_y),
+\Delta S_K=\tfrac12\int d^4x\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,K(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
 \qquad \frac{\partial}{\partial r_x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
 $$
 The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated". The corpus's route to causal asymmetry, in *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and *Thermal Time and the Modular Flow in the Biquaternion Framework*, does not use Kozyrev and does not depend on this section.
@@ -337,7 +337,7 @@ and the epsilon needs four distinct indices, so the contraction keeps only the p
 $$
 J_{S0}=\alpha\,\epsilon_{0123}\,T_{123}=\alpha\,x_0,
 \qquad
-\frac{\partial J_{S\mu}}{\partial x_\mu}=\alpha\,\epsilon_{0123}\,\frac{\partial T_{123}}{\partial r_x^0}=\alpha\ne0 ,
+\frac{\partial J_{S\mu}}{\partial x_\mu}=\alpha\,\epsilon_{0123}\,\frac{\partial T_{123}}{\partial x^0}=\alpha\ne0 ,
 $$
 verified directly. Conservation would hold if $T_{\nu\rho\sigma}$ were the dual of the gradient of a *harmonic* potential, $T_{\nu\rho\sigma}=\epsilon_{\nu\rho\sigma\lambda}\partial/\partial x_\lambda\vartheta^{\mathrm{fld}}$ with $\Box\vartheta^{\mathrm{fld}}=0$; the source neither assumes that form nor derives it. The claimed second-law avatar therefore rests on an identity that fails.
 

@@ -20,8 +20,8 @@ The article proceeds as follows. A section states why the time slicing fails, in
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
-K_\varepsilon(x^{\mathrm{src}}\,\vec e_x+y^{\mathrm{src}}\,\vec e_y+z^{\mathrm{src}}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{3/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m|x^{\mathrm{src}}\,\vec e_x+y^{\mathrm{src}}\,\vec e_y+z^{\mathrm{src}}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
+K_\varepsilon(r_x^{\mathrm{src}}\,\vec e_x+r_y^{\mathrm{src}}\,\vec e_y+r_z^{\mathrm{src}}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{3/2}
+\exp\Big[\frac{i}{\hbar}\Big(\frac{m|r_x^{\mathrm{src}}\,\vec e_x+r_y^{\mathrm{src}}\,\vec e_y+r_z^{\mathrm{src}}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
 $$
 and take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 

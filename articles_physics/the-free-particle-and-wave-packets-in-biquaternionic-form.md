@@ -264,7 +264,7 @@ so that $s_0$ is the **density width** (the standard deviation of $|Ξ_0|^2$) an
 
 $$
 Ξ(r_x,r'_t) = \frac{(2\pi s_0^2)^{-1/4}}{\sqrt{A(r'_t)}}\,
-\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0x - \frac{i\hbar k_0^2 r'_t}{2m}\right],
+\exp\!\left[-\frac{(r_x - v_0 r'_t)^2}{4s_0^2 A(r'_t)} + ik_0r_x - \frac{i\hbar k_0^2 r'_t}{2m}\right],
 \qquad
 A(r'_t) = 1 + \frac{i\hbar r'_t}{2m s_0^2},
 \qquad
@@ -334,8 +334,8 @@ The kernel is **central**, its phase is the classical action $S_{\mathrm{cl}} = 
 The free kernel is a semigroup in time,
 
 $$
-\int d^3y\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y, T_2)\,K_0(\vec y - (x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z), T_1)
-= K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z), T_1 + T_2),
+\int d^3y\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y, T_2)\,K_0(\vec y - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1)
+= K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), T_1 + T_2),
 $$
 
 which is the statement that a free flight of duration $T_1 + T_2$ is a free flight of duration $T_1$ followed by one of duration $T_2$, summed over the intermediate point. The identity follows from the standard Gaussian convolution
@@ -350,7 +350,7 @@ which gives $A + B = \frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B
 Because the kernel is central, it commutes with every biquaternion. The evolution of an arbitrary initial spinor field is therefore
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3x_0\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z), r'_t)\,\tilde{Ξ}^{\mathrm{sp}}(0,x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z),
+\tilde{Ξ}^{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;K_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}^{\mathrm{sp}}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
 $$
 
 in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.

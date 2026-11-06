@@ -155,24 +155,24 @@ $$
 a four-**real**-dimensional subspace, with the real basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. Writing
 
 $$
-\tilde{Q} = i x_0 e_t + x_1\vec e_x + x_2\vec e_y + x_3\vec e_z,
-\qquad x_\mu\in\mathbb{R},
+\tilde R_\varphi = i c r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z,
+\qquad r'_t, r_k\in\mathbb{R},
 $$
 
 the biquaternion norm is real and indefinite:
 
 $$
-\boxed{\ \langle\tilde{Q}\rangle_{\natural} = (ix_0)^2 + x_1^2 + x_2^2 + x_3^2 = -x_0^2 +r_x^2+r_y^2+r_z^2\ }\ .
+\boxed{\ \langle\tilde R_\varphi\rangle_{\natural} = (i c r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $Q_t=ix_0$, $Q_k=x_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. Identifying $x_0 = c r'_{t}$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, read in the real coordinates $R_t=i c r'_t$, $R_k=r_k$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
 | $\mathbb{H}_{\mathbb{B}}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $i\mathbb{H}_{\mathbb{B}}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
-| $\mathbb{M}_-$ | $ix_0e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-x_0^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $x_0$ direction |
-| $\mathbb{M}_+$ | $q_te_t+i\vec q$ | $q_t^2-\vec q^2$ | $(1,3)$, the mirror of $\mathbb{M}_-$ |
+| $\mathbb{M}_-$ | $i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-c^2{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
+| $\mathbb{M}_+$ | $c r_t\,e_t+i\vec r_\psi$ | $c^2r_t^2-\vec r_\psi^{2}$ | $(1,3)$, the mirror of $\mathbb{M}_-$ |
 
 The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{M}_-$.
 

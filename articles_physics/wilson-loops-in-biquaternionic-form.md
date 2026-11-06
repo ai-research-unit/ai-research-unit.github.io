@@ -144,10 +144,10 @@ For the non-abelian theory there is a surface form of the holonomy, but it is no
 $$
 U(\partial S) = \mathcal{P}_S\exp\left(i\int_S \mathcal{F}\right),
 \qquad
-\mathcal{F}(r_x) = U(x_0,r_x)\,F_{\mu\nu}(r_x)\,U(r_x,x_0)\,dx_\mu\wedge dx_\nu ,
+\mathcal{F}(r_x) = U(r_{0x},r_x)\,F_{\mu\nu}(r_x)\,U(r_x,r_{0x})\,dx_\mu\wedge dx_\nu ,
 $$
 
-where the field strength is transported back to a common base point $x_0$ before being integrated, and the path ordering is along the surface. The trace of the holonomy is independent of the choice of base point and of the transport, which is why the Wilson loop is well defined. In the framework the transport factors are elements of the informational realization of the group, and the statement is that the loop measures the field strength dressed by the adjoint action — the same adjoint action that the article on integer-spin quantization identifies as the rotation.
+where the field strength is transported back to a common base point $r_{0x}$ before being integrated, and the path ordering is along the surface. The trace of the holonomy is independent of the choice of base point and of the transport, which is why the Wilson loop is well defined. In the framework the transport factors are elements of the informational realization of the group, and the statement is that the loop measures the field strength dressed by the adjoint action — the same adjoint action that the article on integer-spin quantization identifies as the rotation.
 
 ## The Loop as an Observable
 

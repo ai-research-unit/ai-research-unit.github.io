@@ -195,7 +195,7 @@ The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}
 
 $$
 h_{ij}^{\mathrm{TT}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2\right)(r'_t - r/c), \qquad
-\mathcal{Q}_{ij} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(x_{2,i}x_{2,j} - \tfrac{1}{3}r_2^2\delta_{ij}\right)d^3x_2,
+\mathcal{Q}_{ij} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\left(r_{2i}r_{2j} - \tfrac{1}{3}r_2^2\delta_{ij}\right)d^3r_2,
 $$
 
 where $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, $\mathcal{Q}_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.

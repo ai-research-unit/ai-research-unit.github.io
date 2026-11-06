@@ -123,7 +123,7 @@ For a homogeneous ellipsoid with semi-axes $a, b, c$ along the principal axes, t
 The quadrupole tensor of a mass distribution is, by the convention of the preceding article,
 
 $$
-\mathrm{Sd}_{ij} = \int \rho_m(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3x_2 ,
+\mathrm{Sd}_{ij} = \int \rho_m(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3r_2 ,
 $$
 
 symmetric and traceless. For a uniform ellipsoid of mass $M$ and semi-axes $a, b, c$ aligned with the axes, the principal second moments are $\int x^2\,dV = Ma^2/5$ and its cyclic relatives. The value follows from the substitution to the unit ball. Setting $x = a u_x$, $y = b u_y$, $z = c u_z$, the volume element is $dV = abc\,du_1\,du_2\,du_3$ and the unit ball is $u_x^2+u_y^2+u_z^2\leq 1$, so

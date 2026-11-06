@@ -147,7 +147,7 @@ Applying the shifted operator to the Helmholtz kernel gives the fundamental solu
 
 $$
 -D_{-k}F_k = C_k, \qquad
-C_k(x) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
+C_k(\vec r) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
 $$
 
 obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in *Electromagnetism in Media — The Local Complex Structure at Work*,
@@ -179,16 +179,16 @@ with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statement
 The condition that selects the outgoing solution is the source's Proposition 7.3, attributed to Kravchenko–Castillo. If $f\in H^1_{\mathrm{loc}}(G^{c})$ lies in $\ker(D_3+k)(G^{c})$ and satisfies the radiation condition
 
 $$
-\Bigl(k-\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}+ik\vec u_x\Bigr)f(x) = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
+\Bigl(k-\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}+ik\vec u_x\Bigr)f(\vec r) = o(r^{-1}) \qquad (r\to\infty),
 $$
 
 then $f = -C_k[f]$ for every $x\in G^{c}$, the middle bracket being a two-line fraction in the printed text. If instead $f$ lies in the kernel of the shifted operator and satisfies
 
 $$
-k\,f(x) + \frac{ix}{\lvert x\rvert}\,f(x)\,k = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
+k\,f(\vec r) + \frac{i\vec r}{r}\,f(\vec r)\,k = o(r^{-1}) \qquad (r\to\infty),
 $$
 
-with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_k[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(x)=o(\lvert x\rvert^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\vec u_x$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\vec u_x/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\vec u_x$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
+with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_k[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(\vec r)=o(r^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\vec u_x$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\vec u_x/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\vec u_x$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
 
 The source adds one restriction that the corpus should note, because it is easy to lose: its Proposition 7.5 says the representation behind the proposition is true for quaternion-valued functions, but that the paper restricts itself to **vector** fields, quaternion-valued functions with vanishing scalar part. A general quaternion-valued field, and in particular one with a non-zero scalar part, is only partly covered, and this is a real limitation of the chapter rather than a notational preference: the scalar part of the field is what the divergence condition constrains in the Maxwell interpretation.
 

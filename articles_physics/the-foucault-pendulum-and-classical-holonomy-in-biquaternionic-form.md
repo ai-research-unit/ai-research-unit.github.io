@@ -95,7 +95,7 @@ $$
 Now $\vec\Omega\times\,d\vec\rho/dr'_t$ has the vertical component; projecting onto the horizontal plane, the contributions of $\vec\Omega_x$ and $\vec\Omega_y$ are along the vertical and drop out, and only $\Omega_z = \Omega\sin\theta^{\mathrm{foc}}$ survives:
 
 $$
-d^2x/d{r'_{t}}^2 = -\omega_0^2 r_x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dr'_t, \qquad \,d^2y/d{r'_{t}}^2 = -\omega_0^2 r_y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dr'_t .
+d^2r_x/d{r'_{t}}^2 = -\omega_0^2 r_x + 2\Omega\sin\theta^{\mathrm{foc}}\,dr_y/dr'_t, \qquad \,d^2r_y/d{r'_{t}}^2 = -\omega_0^2 r_y - 2\Omega\sin\theta^{\mathrm{foc}}\,dr_x/dr'_t .
 $$
 
 This is a pair of linear equations with a gyroscopic coupling, and the coupling constant is the vertical component of the Earth's rotation. The centrifugal term is omitted here; it is restored in the estimate below, which also fixes the size of its effect on the precession.
@@ -105,7 +105,7 @@ This is a pair of linear equations with a gyroscopic coupling, and the coupling 
 Introduce the complex horizontal coordinate $z = x + iy$. The two real equations combine into
 
 $$
-d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dr'_t + \omega_0^2 r_z = 0 .
+d^2r_z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dr_z/dr'_t + \omega_0^2 r_z = 0 .
 $$
 
 Writing $r_z(r'_t) = \exp(-i\Omega\sin\theta^{\mathrm{foc}}\,r'_t)\,w(r'_t)$ removes the first-derivative term: $w$ satisfies $d^2w/d{r'_{t}}^2 + \omega^2 w = 0$ with
@@ -147,14 +147,14 @@ $$
 the east component being the full $\Omega^2\rho$ because the east direction is perpendicular to the Earth's axis, and the north component being reduced by $\sin^2\theta^{\mathrm{foc}}$. Restoring it, the horizontal equations become
 
 $$
-d^2x/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\right)r_x + 2\Omega\sin\theta^{\mathrm{foc}}\,dy/dr'_t , \qquad
-\,d^2y/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\sin^2\theta^{\mathrm{foc}}\right)r_y - 2\Omega\sin\theta^{\mathrm{foc}}\,dx/dr'_t ,
+d^2r_x/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\right)r_x + 2\Omega\sin\theta^{\mathrm{foc}}\,dr_y/dr'_t , \qquad
+\,d^2r_y/d{r'_{t}}^2 = -\left(\omega_0^2-\Omega^2\sin^2\theta^{\mathrm{foc}}\right)r_y - 2\Omega\sin\theta^{\mathrm{foc}}\,dr_x/dr'_t ,
 $$
 
 which in the complex coordinate is
 
 $$
-d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dr'_t + \omega_s^2 r_z = \epsilon\,\bar r_z , \qquad
+d^2r_z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dr_z/dr'_t + \omega_s^2 r_z = \epsilon\,\bar r_z , \qquad
 \omega_s^2 = \omega_0^2 - \tfrac12\Omega^2\left(1+\sin^2\theta^{\mathrm{foc}}\right) , \qquad
 \epsilon = \tfrac12\Omega^2\cos^2\theta^{\mathrm{foc}} .
 $$
@@ -271,7 +271,7 @@ For a pendulum of frequency $\omega_0$ at latitude $\theta^{\mathrm{foc}}$, the 
 $$
 d^2\vec\rho/d{r'_{t}}^2 = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\,d\vec\rho/dr'_t,
 \qquad
-\,d^2z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dz/dr'_t + \omega_0^2 r_z = 0,
+\,d^2r_z/d{r'_{t}}^2 + 2i\Omega\sin\theta^{\mathrm{foc}}\,dr_z/dr'_t + \omega_0^2 r_z = 0,
 $$
 
 with $z = x + iy$, and the swing plane precesses at the rate $-\Omega\sin\theta^{\mathrm{foc}}$,

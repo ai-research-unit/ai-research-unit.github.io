@@ -241,7 +241,7 @@ the law the corpus already uses for four-vectors of either sector. The paper sta
 $$
 \tau_2 = \gamma\left(\tau + v\,\vec u\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right),
 \qquad
-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = x_{\perp}\,\vec e_x+y_{\perp}\,\vec e_y+z_{\perp}\,\vec e_z + \gamma\left(\vec u\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) + v\tau\right)\vec u,
+(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z) = \vec r_\perp + \gamma\left(\vec u\cdot\vec r + v\tau\right)\vec u,
 $$
 
 the standard boost, and on the material-type coordinate $i\tau + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the same expressions with $v \to -v$, which is one direction convention and not a second law. On the power–force biquaternion $M - i\vec F$ — Hermitian for real $M$ and $\vec F$, and the material-type element up to a central factor — it gives

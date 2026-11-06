@@ -49,7 +49,7 @@ the field theories on the arena are **non-local** — the same shift that remove
 Field operators are split into plane waves and recombined; the product of two operators becomes the **Moyal product** of the corresponding functions,
 
 $$
-A(r_x)\star B(r_x) = \exp\!\left(\frac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu}\right) A(r_x)B(x_2)\Big|_{x_2=r_x},
+A(x)\star B(x) = \exp\!\left(\frac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial y_\nu\right) A(x)B(y)\Big|_{y=x},
 $$
 
 the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the **quadratic (kinetic) terms of an action are unchanged** by the deformation, because the $\kappa$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at **cubic and higher order in the fields** — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.

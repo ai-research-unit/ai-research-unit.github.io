@@ -110,7 +110,7 @@ G_{kl} = \mathrm{Ric}_{kl} - \tfrac{1}{2}\delta_{kl}\mathrm{Ric} = \tfrac{1}{2}\
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_k\partial/\partial r_k\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_k(\partial^2/\partial x_0\partial r_k\bar{h}_{k0}+\partial^2/\partial r_k\partial x_0\bar{h}_{0k})+\sum_{k,l}\partial^2/\partial r_k\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_k\partial/\partial r_k\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_k(\partial^2/\partial x_0\partial r_k\bar{h}_{k0}+\partial^2/\partial r_k\partial x_0\bar{h}_{0k})+\sum_{k,l}\partial^2/\partial r_k\partial r_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** is the condition
 

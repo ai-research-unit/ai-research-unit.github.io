@@ -131,21 +131,21 @@ Which real subspaces meet $\mathcal{Z}$ is the question that gives the cone its 
 
 **The scalar line and the real quaternions are division subalgebras.** On $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ a general element is $\tilde{Q} = (a + ib)e_t$ and $\langle\tilde{Q}\rangle_{\natural} = (a+ib)^2$, which vanishes only at $a = b = 0$. On $\mathbb{H}_{\mathbb{B}}$ a general element is a real quaternion $\tilde{Q} = a_0e_t + \vec a$ with $\langle\tilde{Q}\rangle_{\natural} = a_0^2 + \vec a^2$, a sum of real squares, which likewise vanishes only at the origin. Neither subspace contains a zero divisor: they are the division subalgebras of $\mathbb{B}$, and on them the biquaternion norm is anisotropic. The set $\mathcal{Z}$ lives in the complement of those two subspaces.
 
-**The material cone.** On $\mathbb{M}_-$ the general element is $\tilde{Q} = i x_0e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $x_0, x_1, x_2, x_3$ real, and
+**The material cone.** On $\mathbb{M}_-$ the general element is $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ with $r'_t, r_x, r_y, r_z$ real, and
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = (i x_0)^2 +r_x^2+r_y^2+r_z^2 = -x_0^2 +r_x^2+r_y^2+r_z^2 .
+\langle\tilde R_\varphi\rangle_{\natural} = (i c r'_t)^2 +r_x^2+r_y^2+r_z^2 = -c^2{r'_t}^2 +r_x^2+r_y^2+r_z^2 .
 $$
 
-Identifying $x_0 = c r'_{t}$, the vanishing locus is the light cone of Minkowski space. For a nonzero null element with $x_0\neq 0$, writing $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z = x_0\vec u_x$ with $\vec u_x$ a real unit vector gives
+The vanishing locus is the light cone of Minkowski space. For a nonzero null element with $r'_t\neq 0$, writing $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z = c r'_t\vec u_x$ with $\vec u_x$ a real unit vector gives
 
 $$
-\tilde{Q} = i x_0\left(e_t - i\vec u_x\right) = 2i x_0\,\tilde\Pi(-\vec u_x),
+\tilde R_\varphi = i c r'_t\left(e_t - i\vec u_x\right) = 2i c r'_t\,\tilde\Pi(-\vec u_x),
 \qquad
 \tilde\Pi(-\vec u_x) = \tfrac12\left(e_t - i\vec u_x\right),
 $$
 
-so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde{Q} = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} =r_x^2+r_y^2+r_z^2 = 0$ with $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
+so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde R_\varphi = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rangle_{\natural} =r_x^2+r_y^2+r_z^2 = 0$ with $(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
 
 **The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde R_\psi = c r_t\,e_t + i\vec r_\psi$ with $r_t, \vec r_\psi$ real, and $\langle\tilde R_\psi\rangle_{\natural} = c^2r_t^2 - \vec r_\psi^{2}$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Informational Sector: States, Observables and Probability*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
 

@@ -176,7 +176,7 @@ is time-independent, which follows by integrating the conservation law over a sp
 As a check, consider the superposition
 
 $$
-\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1x-\omega_1r'_t\right) + 0.6\cos\!\left(k_2y-\omega_2r'_t\right),
+\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1r_x-\omega_1r'_t\right) + 0.6\cos\!\left(k_2r_y-\omega_2r'_t\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad

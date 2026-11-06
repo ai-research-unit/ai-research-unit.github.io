@@ -192,7 +192,7 @@ $$
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{x_k}{r},$$
+r_{,k} = \frac{r_k}{r},$$
 
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is
 
@@ -236,7 +236,7 @@ which is just the biquaternion product carried out with convolution in place of 
 Choosing the structural biquaternion to be a lattice of shifted $\delta$-functions is what the paper builds from this. For an inhomogeneous rectangular lattice with steps $(h_l,h_m,h_n)$ and weights $a_{lmn}$,
 
 $$
-K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_{l,m,n} a_{lmn}\,\delta(x_1 - l h_l)\,\delta(x_2 - m h_m)\,\delta(x_3 - n h_n),
+K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \sum_{l,m,n} a_{lmn}\,\delta(r_x - l h_l)\,\delta(r_y - m h_m)\,\delta(r_z - n h_n),
 $$
 
 and convolution with it is the weighted sum of shifted copies of the base particle,
@@ -368,7 +368,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde J_{\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\tilde{Ξ}^{\mathrm{sp}}_{nm}$ | Pulsar (scalar potential) |
 | $\tilde J_{\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\tilde{Ξ}^{\mathrm{sp}}_{nm}\vec e_\mu)$ | Spinor (vector potential) |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
-| $r_{,k} = x_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
+| $r_{,k} = r_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
 | $\tilde{\Sigma} = \tfrac12\tilde J_{\mathrm{eg}}\circ\tilde J_{\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |
 | $\tilde J_{\mathrm{eg}}^{*} = \bar s - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |
 | $W = \tfrac12(|s|^2 + \|\vec V\|^2)$ | Energy density (scalar part of $\tilde{\Sigma}$) |

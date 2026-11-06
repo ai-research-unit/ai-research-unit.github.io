@@ -147,8 +147,8 @@ The linking number was verified by direct computation. The Gauss integral
 
 $$
 \mathrm{Lk}(C_1,C_2) = \frac{1}{4\pi}\oint_{C_1}\oint_{C_2}
-\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))}
-{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^3}
+\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))}
+{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|^3}
 $$
 
 was evaluated numerically for the Hopf link, the two circles linked once, and gave
@@ -273,7 +273,7 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
 | $\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\rangle=\exp(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
 | $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and parameter of the charge-$ϙ$ anyon at level $k$ |
-| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))}{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
+| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))}{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
 | $a\times b=\sum_c N_{abc} c$ | Fusion rules; multiplicities from tensor products |
 | $d_a$ | Quantum dimension |
 | $\mathrm{TL}_n(d)$, $d=2\cos\frac{\pi}{k+2}$ | Temperley–Lieb algebra; level dependence of the braid representation |

@@ -66,13 +66,13 @@ $$
 The Hamiltonian does not depend on $y$ or $z$, so the momentum components $p_y=\hbar k$ and $p_z=\hbar k_z$ are conserved, and the envelope has the form
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(ky+k_zz))\,f(x)\,\xi ,
+\tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(k r_y+k_z r_z))\,f(r_x)\,\xi ,
 $$
 
 with $\xi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation
 
 $$
-\frac{1}{2m}\Big[-\hbar^2\frac{d^2f}{dx^2}(x)+m^2\omega_c^2(x-x_0)^2f(x)\Big]=\left(E-\frac{\hbar^2k_z^2}{2m}\right)f(x),
+\frac{1}{2m}\Big[-\hbar^2\frac{d^2f}{dr_x^2}(r_x)+m^2\omega_c^2(r_x-x_0)^2f(r_x)\Big]=\left(E-\frac{\hbar^2k_z^2}{2m}\right)f(r_x),
 $$
 
 where
@@ -100,9 +100,9 @@ $$
 which is the **Landau spectrum**: a ladder of levels spaced by $\hbar\omega_c$, dispersive only in the field direction. The transverse kinetic energy is quantised at half-integer multiples of the cyclotron quantum, with a zero-point floor $\frac12\hbar\omega_c$. The wave functions are
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_{n,k}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(ky+k_zz))\,
-H_n\!\left(\frac{x-x_0}{\ell_B}\right)
-\exp(-(x-x_0)^2/2\ell_B^2)\;\xi ,
+\tilde{Ξ}^{\mathrm{sp}}_{n,k}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\exp(\,i(k r_y+k_z r_z))\,
+H_n\!\left(\frac{r_x-x_0}{\ell_B}\right)
+\exp(-(r_x-x_0)^2/2\ell_B^2)\;\xi ,
 $$
 
 with $H_n$ the Hermite polynomials. The oscillator equation was verified numerically: substituting $\tilde{Ξ}^{\mathrm{sp}}_{n,k}$ with the Hermite polynomials for $n=0,\dots,3$, the residual of the one-dimensional equation was of order $10^{-8}$, limited by the finite-difference approximation of the second derivative.
@@ -270,7 +270,7 @@ $$
 E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}
 $$
 
-and the wave functions $\tilde{Ξ}^{\mathrm{sp}}_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
+and the wave functions $\tilde{Ξ}^{\mathrm{sp}}_{n,k}=\exp(i(k r_y+k_z r_z))H_n((r_x-x_0)/\ell_B)\exp(-(r_x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
 
 Each level is degenerate with multiplicity $N_\xi^{\mathrm{scl}}=AB/Ξ_0$, the number of flux quanta $Ξ_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/Ξ_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
 

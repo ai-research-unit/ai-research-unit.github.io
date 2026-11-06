@@ -57,10 +57,10 @@ r'_t^{\mathrm{ret}} = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\v
 r'_{t,\mathrm{adv}} = r'_t + \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}.
 $$
 
-Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_t^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{t,\mathrm{adv}}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then
+Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_t^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{t,\mathrm{adv}}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then
 
 $$
-r'_t^{\mathrm{ret}}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c},
+r'_t^{\mathrm{ret}}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c},
 $$
 
 independent of $r'_t$, while $r'_{t,\mathrm{adv}}$ increases at rate $2$; and conversely for the incoming ray.
