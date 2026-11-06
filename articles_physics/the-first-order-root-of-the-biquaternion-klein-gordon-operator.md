@@ -202,7 +202,7 @@ which is not scalar. The two cross terms do not cancel, because they are differe
 
 ### The pair operator
 
-The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Gradient*). Write $\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ and
+The two equations are one operator on $\mathbb{B}\oplus\mathbb{B}$ (*Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*). Write $\tilde{Ξ}^{\mathrm{sp}}=(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)$ and
 
 $$
 \mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=\left(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\right).

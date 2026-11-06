@@ -64,7 +64,7 @@ $$
 $$
 the second following from the divergence of the equation once the first holds. The trace is therefore a consequence of the massive equation, and so is the divergence. Both were checked at generic on-shell momenta: the solution space of the equation is four-dimensional, the trace element and the divergence vanish on it to machine precision, and adjoining either condition does not lower the dimension.
 
-**The trace in turn linearises the equation.** With the trace in force, the mass structure reduces to left multiplication by $\Gamma_{\mu\nu}$ on the component, contracted with the corresponding component of the field, and the kinetic structure reduces to the gradient pair, so the equation of the $\mu$-th component is the pair on that component alone. That pair is the pair operator of *Operator and Calculus Conventions*, §*The Gradient*, under **The pair operator**, applied to one component, so the massive component equation is the massive equation of that section, and no object of a display enters it.
+**The trace in turn linearises the equation.** With the trace in force, the mass structure reduces to left multiplication by $\Gamma_{\mu\nu}$ on the component, contracted with the corresponding component of the field, and the kinetic structure reduces to the gradient pair, so the equation of the $\mu$-th component is the pair on that component alone. That pair is the pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*, applied to one component, so the massive component equation is the massive equation of that section, and no object of a display enters it.
 
 **The antisymmetrized equation is thus equivalent to the pair on each component together with the trace**, and, through them, the covariant divergence. The mass term regenerates the pair on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac field's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single element.
 
@@ -320,7 +320,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, §*The Gradient*, under **The pair operator** |
+| $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* |
 | $\tilde K$ | Symbol of the gradient, $K_0e_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_k$ | The four units that square to $+e_t$; the images of the source's four generators |

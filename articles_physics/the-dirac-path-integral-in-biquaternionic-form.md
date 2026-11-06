@@ -112,7 +112,7 @@ $$
 \boxed{\;\mathcal S = \left(\mathbb{D} + \mu\right)\Delta_F\;}
 $$
 
-which is the Green kernel of the pair operator as *Operator and Calculus Conventions*, §*The Gradient* states it. The verification is the one-line algebra of the pair,
+which is the Green kernel of the pair operator as *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol* states it. The verification is the one-line algebra of the pair,
 
 $$
 \left(\mathbb{D} - \mu\right)\left(\mathbb{D} + \mu\right)

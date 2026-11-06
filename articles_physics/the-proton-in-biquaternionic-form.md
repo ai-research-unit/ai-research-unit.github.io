@@ -42,7 +42,7 @@ The article carries two Dirac equations, and they must not be read as one. They 
 
 **The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality cell and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
 
-**The two-sided equation** writes the same pair once, on the same element. The pair operator of *Conventions of the Operators and the Calculus*, §*The Gradient*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
+**The two-sided equation** writes the same pair once, on the same element. The pair operator of *Conventions of the Operators and the Calculus*, §*The Pair Operator and Its Symbol*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
 
 $$
 \mathbb{D}\tilde{Ξ}^{\mathrm{sp}}=m_p\,\tilde{Ξ}^{\mathrm{sp}},

@@ -27,7 +27,7 @@ $$
 
 two first-order equations, one per member, with massless limit $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the pair operator is written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the cell formulation, where a two-sided cell could exchange the two lines, and it is exactly what the migration costs.
 
-Written once, the two lines are the pair operator of *Operator and Calculus Conventions*, §*The Gradient*, on $\mathbb{B}\oplus\mathbb{B}$,
+Written once, the two lines are the pair operator of *Operator and Calculus Conventions*, §*The Pair Operator and Its Symbol*,
 $$
 \mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=\bigl(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\ \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L\bigr),\qquad \mathbb{D}^2=\Box I,\qquad(\mathbb{D}-m)\tilde{Ξ}^{\mathrm{sp}}=0,
 $$
