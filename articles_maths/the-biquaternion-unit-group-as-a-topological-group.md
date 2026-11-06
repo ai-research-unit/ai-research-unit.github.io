@@ -93,7 +93,7 @@ $$
 \boxed{\; \mathbb{B}^\times\simeq \mathrm{U}(\mathbb{B})\simeq S^1\times S^3,\qquad
 \mathbb{B}^\times_1\simeq S^3,\qquad
 \pi_1(\mathbb{B}^\times)\cong\mathbb{Z},\quad \pi_2(\mathbb{B}^\times)=0,\quad \pi_3(\mathbb{B}^\times)\cong\mathbb{Z},\qquad
-(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^3 \;}.
+(\mathbb{B}^\times)_{\mathrm{cov}}\cong\mathbb{R}\times S^3 \;}.
 $$
 
 **Proposition (connectedness).** Both $\mathbb{B}^\times$ and $\mathbb{B}^\times_1$ are connected, and the group has exactly one connected component; in the matrix picture this is the connectedness of $GL_2(\mathbb{C})$ and of $SL_2(\mathbb{C})$.

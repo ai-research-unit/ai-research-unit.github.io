@@ -34,7 +34,7 @@ $$
 \mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{C}_{\mathbb{B}} .
 $$
 
-Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}^{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}^{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, forces a connection with the transformation law
+Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$ is invariant under the global phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\theta)\tilde{Ξ}_{\mathrm{sp}}$. Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, forces a connection with the transformation law
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
@@ -44,7 +44,7 @@ D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A},
 D_\mu = \partial/\partial R_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-under which $D\tilde{Ξ}^{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ and satisfies the curvature identity $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ and satisfies the curvature identity $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
 Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta)$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
@@ -100,12 +100,12 @@ This is the precise ceiling of the present construction. The non-abelian machine
 
 The article *Chiral Fermions in the Biquaternion Framework* establishes the framework's chirality kinematics, and this agenda inherits it without change.
 
-**The field is one element.** The field of the framework is an element $\tilde{Ξ}^{\mathrm{sp}}$ of $\mathbb{B}$. Its chirality is the volume cell of the frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier (*Special Element Conventions*, §*The Chirality Convention*). The cell is named here once, because the subscript of the element is read from it and from nothing else.
+**The field is one element.** The field of the framework is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its chirality is the volume cell of the frame, $\mathsf{V}_{\mathrm{vol}}=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier (*Special Element Conventions*, §*The Chirality Convention*). The cell is named here once, because the subscript of the element is read from it and from nothing else.
 
 **Two values, and no third.** The cell gives the subscript its two values: $L$ for the minus value and $R$ for the plus value. The field is the sum of its two parts,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and only the zero element is both. That is the whole of the chirality. Everything below is read from it by two laws of the subscript — a product takes the letter of its right factor, and left multiplication keeps the letter (*Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*) — and by the one law of the units that the cell fixes: right multiplication by $\vec e_t$ or by $\vec e_z$ keeps the letter, and right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two, because $\vec e_z$ commutes with the first pair and anticommutes with the second.
@@ -115,10 +115,10 @@ and only the zero element is both. That is the whole of the chirality. Everythin
 **The mass bilinear is mixed.** The Dirac mass bilinear is the scalar part of an element product built on the timelike unit,
 
 $$
-B=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}i\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_x\bigr),
+B=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\bigr),
 $$
 
-where $\tilde{Ξ}^{\mathrm{sp}*}i\,\cdot\,\vec e_x$ is the framework's adjoint pairing, written with the star of the algebra. Both of its properties follow from the letter law, and both are derived forms. Right multiplication by $\vec e_x$ exchanges the two letters, so $B$ pairs each part with the other and not a part with itself: it vanishes on an element of one letter. The chirality keeps the letter, and $\vec e_z$ anticommutes with $\vec e_x$, so the chirality reverses $B$. A bare mass term is available for a mixed element and not for a part of definite letter.
+where $\tilde{Ξ}_{\mathrm{sp}}^*i\,\cdot\,\vec e_x$ is the framework's adjoint pairing, written with the star of the algebra. Both of its properties follow from the letter law, and both are derived forms. Right multiplication by $\vec e_x$ exchanges the two letters, so $B$ pairs each part with the other and not a part with itself: it vanishes on an element of one letter. The chirality keeps the letter, and $\vec e_z$ anticommutes with $\vec e_x$, so the chirality reverses $B$. A bare mass term is available for a mixed element and not for a part of definite letter.
 
 **The chiral abelian symmetry.** On the field, a chiral abelian gauge symmetry with independent charges is consistent. The charge is one right action, by the element
 
@@ -126,12 +126,12 @@ $$
 b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{M}_+,
 $$
 
-so that $\tilde{Ξ}^{\mathrm{sp}}_Lb=ϙ_L\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_Rb=ϙ_R\tilde{Ξ}^{\mathrm{sp}}_R$, and the covariant derivative and its curvature are the maps
+so that $\tilde{Ξ}_{\mathrm{sp},L}b=ϙ_L\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}b=ϙ_R\tilde{Ξ}_{\mathrm{sp},R}$, and the covariant derivative and its curvature are the maps
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}\longmapsto\frac{\partial}{\partial R_\mu}\tilde{Ξ}^{\mathrm{sp}}+\frac{i}{\hbar}A_\mu\,(\tilde{Ξ}^{\mathrm{sp}} b),
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto\frac{\partial}{\partial R_\mu}\tilde{Ξ}_{\mathrm{sp}}+\frac{i}{\hbar}A_\mu\,(\tilde{Ξ}_{\mathrm{sp}} b),
 \qquad
-[D_\mu,D_\nu]:\ \tilde{Ξ}^{\mathrm{sp}}\longmapsto\frac{i}{\hbar}F_{\mu\nu}\,(\tilde{Ξ}^{\mathrm{sp}} b).
+[D_\mu,D_\nu]:\ \tilde{Ξ}_{\mathrm{sp}}\longmapsto\frac{i}{\hbar}F_{\mu\nu}\,(\tilde{Ξ}_{\mathrm{sp}} b).
 $$
 
 The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**. This **mass selection rule** is the framework's form of the Standard Model's requirement that a chiral fermion acquire mass only through a compensating scalar. The maps are the chiral article's, written with the charge element $b$.
@@ -141,12 +141,12 @@ The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass biline
 **The mass term is the linear pair.** The framework's **mass term** is the linear chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}^{\mathrm{sp}\flat} = -\tilde{Ξ}^{\mathrm{sp}*}$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*.
+through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*.
 
 ## The Three Gauge Factors
 
@@ -211,14 +211,14 @@ The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific a
 The framework supplies:
 
 - **One compact gauge factor of each kind.** One abelian factor — the $*$-unitary centre, real dimension $1$ — and one compact simple factor — $\mathrm{SU}(2)$, real dimension $3$ — joined in the material sector's Lie algebra $\mathrm{U}(2)$ of real dimension $4$.
-- **One exact chiral structure on the field**, on the element $\tilde{Ξ}^{\mathrm{sp}}$ and its two values, with a chirality-odd mass bilinear and the selection rule.
+- **One exact chiral structure on the field**, on the element $\tilde{Ξ}_{\mathrm{sp}}$ and its two values, with a chirality-odd mass bilinear and the selection rule.
 - **The general connections, curvatures, Bianchi identities, and gauge-invariant densities** on the two factors, each carrying a coupling parameter whose value the algebra does not fix, and with no relation between the two couplings.
 
 The framework does not supply, and nothing in the series derives: a colour group or colour representation; a chiral $SU(2)_L$; a hypercharge value or assignment; a mixing angle; a scalar field with the Standard Model's quantum numbers, its potential, or its vacuum expectation value; a Yukawa coupling; the number of fermion generations or the representation content of any generation; or a relation among the couplings of its factors. These are the absent objects. Writing a number here for the Standard Model — three colours, three generations, a stated hypercharge — would be importing the target; the agenda counts only the framework's own objects, and the count is short.
 
 ## The Scalar and Symmetry-Breaking Sector: Unbuilt
 
-The Standard Model's masses come from one sector the sources this agenda builds on have not begun: a scalar field with the required $SU(2)_L$ quantum numbers, its potential, its vacuum expectation value, and its Yukawa couplings to the fermions. The companion *The Higgs Mechanism in Biquaternionic Form* works the abelian mechanism for the complex central scalar $\tilde{Ξ} = \xi^{\mathrm{scl}}\,e_t$; that scalar is a singlet of the material $\mathrm{SU}(2)$ and cannot break $SU(2)$, no Yukawa coupling is constructed, and the Standard Model's electroweak scalar sector is not built.
+The Standard Model's masses come from one sector the sources this agenda builds on have not begun: a scalar field with the required $SU(2)_L$ quantum numbers, its potential, its vacuum expectation value, and its Yukawa couplings to the fermions. The companion *The Higgs Mechanism in Biquaternionic Form* works the abelian mechanism for the complex central scalar $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t$; that scalar is a singlet of the material $\mathrm{SU}(2)$ and cannot break $SU(2)$, no Yukawa coupling is constructed, and the Standard Model's electroweak scalar sector is not built.
 
 The framework does point at what the sector would have to do. The **mass selection rule** says that a fermion with $ϙ_L\neq ϙ_R$ has no gauge-invariant bare mass, so a mass can arise only through a compensating field carrying the opposite charge $ϙ_L-ϙ_R$; the chiral article reads off the quantum numbers such a scalar must carry. That is a statement of the **requirement**, not a construction of the object. There is no dynamics that would give the scalar an expectation value, no potential whose minimum could break the symmetry, and no coupling to the gauge sector that would give the weak bosons a mass. The framework's own mass term is the linear chiral pair, which conserves fermion number and breaks the axial symmetry; the algebra's real structure $\flat$ carries a separate conjugate pairing whose interpretation — Majorana-type or real-form Dirac — is open, and it is the pairing of a single fermion, not a symmetry-breaking sector.
 
@@ -238,7 +238,7 @@ The table collects the agenda's items and sorts each into the three-way classifi
 | Vector-like character of the centre, read on the two values of the field | Established | — |
 | Linear chiral mass with conserved vector $\mathrm{U}(1)$; real structure $\flat$ (antilinear) | Established; interpretation of $\flat$'s pairing (Majorana/Dirac) open | Decide the interpretation on the real structure |
 | Reality class of the non-abelian connection | **Known route** | Recompute the transformation for the mixed assignment ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian) and find a principle fixing the placement of $i$; or a no-go |
-| Non-abelian matter representation (source 5, open question 3) | **Known route** | Construct the action of the factor on the chosen matter field and verify $D_{2,\mu}(\tilde U\tilde{Ξ}^{\mathrm{sp}})=\tilde U D_\mu\tilde{Ξ}^{\mathrm{sp}}$ |
+| Non-abelian matter representation (source 5, open question 3) | **Known route** | Construct the action of the factor on the chosen matter field and verify $D_{2,\mu}(\tilde U\tilde{Ξ}_{\mathrm{sp}})=\tilde U D_\mu\tilde{Ξ}_{\mathrm{sp}}$ |
 | Gauge and gravitational anomalies of a chiral spectrum | **Known route** in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
 | Gauge-fixing principle | **Known route** in standard field theory; no framework realisation | Reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go |
 | Electroweak mixing angle | **Known route, blocked** | Fix $\mathrm{U}(1)_Y$ and $SU(2)_L$ and the scalar from the framework's own structure, then compute the relative coupling |
@@ -319,13 +319,13 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications of *Operator and Calculus Conventions*.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 A single cell is one term; a general element of the sixteen-dimensional algebra is a sum of at most four.
@@ -334,7 +334,7 @@ $\gamma_5$ is the reference-frame cell of the chirality operator; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every cell printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose form the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. A cell is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free form is the conjugate. The label names the display and not the operator.
+**The display.** Every cell printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose form the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. A cell is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free form is the conjugate. The label names the display and not the operator.
 
 ## Summary
 
@@ -378,11 +378,11 @@ The article commits throughout to the agenda's central discipline: no section as
 | $D_\lambda F_{\mu\nu}+\text{cyclic}=0$ | Bianchi identity |
 | $-\tfrac12\mathrm{Tr}\bigl(\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}\bigr)$ | Gauge-invariant Yang–Mills density |
 | $\mathrm{GL}(2,\mathbb{C})=\mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ | Cartan decomposition fixing the ceiling: maximal compact subalgebra $\mathrm{U}(2)$ |
-| $\tilde{Ξ}^{\mathrm{sp}}$, $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The field as one element and its two values: $L$ is the minus value, $R$ the plus value, and only the zero element is both |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field as one element and its two values: $L$ is the minus value, $R$ the plus value, and only the zero element is both |
 | every $\mathbb{B}$-module | complex dimension $2k$; a three-dimensional internal space is not a module |
-| $-iR_{\vec e_z}^{\mathrm{axf}}$ | The volume cell of the frame: a pure right multiplication, and the source of the two values of the subscript |
-| $B=\mathrm{Sc}(\tilde{Ξ}^{\mathrm{sp}*}i\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}} b$; selection rule $ϙ_L=ϙ_R$ |
-| $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$; $\tilde{Ξ}^{\mathrm{sp}\flat}=-\tilde{Ξ}^{\mathrm{sp}*}$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $-iR_{\mathrm{axf},\vec e_z}$ | The volume cell of the frame: a pure right multiplication, and the source of the two values of the subscript |
+| $B=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; selection rule $ϙ_L=ϙ_R$ |
+| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |

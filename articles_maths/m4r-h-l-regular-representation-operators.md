@@ -143,7 +143,7 @@ for every operator, and $\Phi$ is given in the two bases by the sixteen matrices
 
 ## The Pair as a Semigroup
 
-**Composition.** $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, with the reversal in the second slot; the family is a copy of $\mathbb{H}\times\mathbb{H}^{\mathrm{opp}}$.
+**Composition.** $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, with the reversal in the second slot; the family is a copy of $\mathbb{H}\times\mathbb{H}_{\mathrm{opp}}$.
 
 **The units.** Invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, forming the seven-dimensional group of the previous section.
 

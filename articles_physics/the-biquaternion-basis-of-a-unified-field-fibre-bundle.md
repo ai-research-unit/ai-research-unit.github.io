@@ -71,16 +71,16 @@ The source's Section IV prints a Dirac equation, and it prints it as two equatio
 The source's two-component objects are the two halves of one element: the corpus's state is the element itself, and nothing is lost by writing the pair on the algebra. The position-space form of the same pair is
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with both derivatives acting from the left. The first is the right-handed equation; the second carries $\tilde\nabla^{\natural}$ because the left-handed field is the conjugate of the right-handed one. At $m=0$ the pair decouples into the two equations $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$.
+with both derivatives acting from the left. The first is the right-handed equation; the second carries $\tilde\nabla^{\natural}$ because the left-handed field is the conjugate of the right-handed one. At $m=0$ the pair decouples into the two equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
-The two equations are one operator on the two halves, and the conventions own it: $\mathbb{D}$ of *Operator and Calculus Conventions*, §*The Gradient*, acts by $\mathbb{D}(\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R)=(\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R,\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L)$ and squares to $\Box$. The corpus does not develop it here; what matters is which side each term acts on. The derivative acts on the left, the mass on the right, and the mass term carries each half into the other. That is the whole of the source's "mass couples the two fields off the diagonal", read on the algebra.
+The two equations are one operator on the two halves, and the conventions own it: $\mathbb{D}$ of *Operator and Calculus Conventions*, §*The Gradient*, acts by $\mathbb{D}(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R},\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})$ and squares to $\Box$. The corpus does not develop it here; what matters is which side each term acts on. The derivative acts on the left, the mass on the right, and the mass term carries each half into the other. That is the whole of the source's "mass couples the two fields off the diagonal", read on the algebra.
 
-**Chirality is the side, not an operator.** The two halves are the $R$ and the $L$, and the cell that separates them is the volume cell of the frame, $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}$ in the axis-free display, whose square is $+1$ and which anticommutes with the four frame cells. So the split into the two halves is the split by that cell, and a projector would be the display of a split the pair already carries: the corpus names the half and does not compute the projector. Nothing in this article needs one, and nothing in it needs a matrix.
+**Chirality is the side, not an operator.** The two halves are the $R$ and the $L$, and the cell that separates them is the volume cell of the frame, $\mathsf{V}_{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}$ in the axis-free display, whose square is $+1$ and which anticommutes with the four frame cells. So the split into the two halves is the split by that cell, and a projector would be the display of a split the pair already carries: the corpus names the half and does not compute the projector. Nothing in this article needs one, and nothing in it needs a matrix.
 
 The generators printed in the source's Eq. (28) are not yet an anticommuting set; §*The Majorana Transform: the Verified Effect and Two Printed Slips* restores the timelike sign and shows that the repair leaves $G$ as displayed unchanged.
 
@@ -260,13 +260,13 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; every operator statement above is written in the algebra or in the cells it names.
 
-Here $a,b\in\mathbb{B}$, $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of an element $M$ in the basis of the sixteen products.
+Here $a,b\in\mathbb{B}$, $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of an element $M$ in the basis of the sixteen products.
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0 &= iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, &\gamma_1 &= iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\\[2pt]
+\gamma_2 &= iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}, &\gamma_3 &= iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\\[2pt]
+\gamma_5 &= -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 \end{aligned}
 $$
 
@@ -274,9 +274,9 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0 &= iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}, &\gamma_1 &= iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\\[2pt]
+\gamma_2 &= iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}, &\gamma_3 &= iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\\[2pt]
+\gamma_5 &= -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 \end{aligned}
 $$
 
@@ -284,11 +284,11 @@ Each generator carries one unit $i$, and a product of two carries $i^2=-1$; that
 
 The five are generators, not a basis: the basis is the sixteen products. A single product is a pure tensor; the pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The first four are the frame cells $C_\mu$ of the body, $C_t=iR_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$, and $\gamma_5$ is the volume cell $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; the gamma names are the Dirac-algebra names for the same cells. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The first four are the frame cells $C_\mu$ of the body, $C_t=iR_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$, and $\gamma_5$ is the volume cell $\mathsf{V}_{\mathrm{vol}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; the gamma names are the Dirac-algebra names for the same cells. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -296,7 +296,7 @@ The source is a mainstream high-energy paper whose central algebraic claim is th
 
 The structural group of the source's bundle is assembled from the two halves of the biquaternion $\tilde Q$ built from a four-momentum by $a_0 = p_0/m$ and $a_k = ip_k/m$. The source's unit-norm condition $a_0^2+a_1^2+a_2^2+a_3^2 = 1$ and the source's relativistic relation $p_0^2-\vec p^2 = m^2$ are one identity, $\langle\tilde Q\rangle_{\natural} = 1$, verified to $10^{-14}$; with the imaginary coefficients the printed sum carries its signs, so the source's object is the corpus's Hermitian biquaternion of unit norm — an element of the informational sector $\mathbb{M}_+$, in the corpus's normalisation the opposite of the material four-momentum's $\langle\tilde P\rangle_{\natural} = -m^2$. The source's $G^+G = I_4$ holds with the natural sign and fails with the matrix adjoint, which fixes the meaning of its symbol; the block assembly is the realification of the pair of halves in the auxiliary unit $J$, not the entry-wise realification of the fermionic array, and the two agree only when the vector half is real. The group is four cells — one that commutes and three that anticommute among themselves — which is why its identities come out scalar.
 
-The Majorana transformation the source uses is $*$-unitary and involutive, and it achieves its stated purpose: the conjugated group is real and symmetric, because the transformed generators are purely imaginary while the source's own coefficients $a_k$ are purely imaginary. The source's Dirac equation is a pair, its Eqs. (26)–(27), and the corpus reads it as the one-sided pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, which is one operator on the two halves, with the mass carrying each into the other and the volume cell separating them. Two printed slips are recorded: the printed generators of Eq. (28) are not an anticommuting set until a sign is restored in the printed timelike generator, and the diagonal half of the printed transformed group carries the wrong sign in its two off-diagonal products; the shorthand the source uses for the group before its Eq. (35) is moreover correct only for the standard generators, which are minus the printed spatial entries. The non-compact triple is the source's split real form, it reproduces its three printed products exactly, and it is the triple $i\vec e_x$, $\vec e_y$, $i\vec e_z$; the source's own coefficient sum in that sector then reads the $(2{+}2)$ relation $p_0^2-p_1^2+p_2^2-p_3^2=m^2$, which is the plain norm of the element that triple carries.
+The Majorana transformation the source uses is $*$-unitary and involutive, and it achieves its stated purpose: the conjugated group is real and symmetric, because the transformed generators are purely imaginary while the source's own coefficients $a_k$ are purely imaginary. The source's Dirac equation is a pair, its Eqs. (26)–(27), and the corpus reads it as the one-sided pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, which is one operator on the two halves, with the mass carrying each into the other and the volume cell separating them. Two printed slips are recorded: the printed generators of Eq. (28) are not an anticommuting set until a sign is restored in the printed timelike generator, and the diagonal half of the printed transformed group carries the wrong sign in its two off-diagonal products; the shorthand the source uses for the group before its Eq. (35) is moreover correct only for the standard generators, which are minus the printed spatial entries. The non-compact triple is the source's split real form, it reproduces its three printed products exactly, and it is the triple $i\vec e_x$, $\vec e_y$, $i\vec e_z$; the source's own coefficient sum in that sector then reads the $(2{+}2)$ relation $p_0^2-p_1^2+p_2^2-p_3^2=m^2$, which is the plain norm of the element that triple carries.
 
 One claim does not reproduce, and the paper's own equations are what defeat it: the Lorentzian metric the source says is invariant under the group is not invariant under it, because Eq. (2)'s condition $G^+G = I_4$ is the Euclidean orthogonality condition whenever the coefficient of the one antisymmetric matrix vanishes, and the whole space of symmetric forms invariant under the group contains no form of signature $(1,3)$. The group is compact — $*$-unitary — rather than Lorentz-orthogonal, and Eq. (7)'s $G \subset L(4)$ is where the discrepancy enters. The framework claims — the G-structure, the reduced tangent bundle with the induced field theory's structure group, the torsion-induced signature and CP character, the incompleteness of Rothstein's theorem — are recorded as claims, with the corpus's own curved-spacetime and gravity-agenda articles named as the places where the geometry would be built. The source's contribution to the corpus is the external instance, not the programme: the biquaternion algebra appears here unsought, in a paper that shares none of the corpus's interpretations, and that is worth recording without being mistaken for confirmation.
 
@@ -321,8 +321,8 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 | $M_2(\mathbb{H})$, $M_4(\mathbb{C})$ | The ambient operator algebra's real form, and the ambient itself: the corpus's reading of the source's quaternionic $2\times2$ algebra, whose complexification is the Dirac algebra |
 | $L_a$, $R_b$, $L_aR_b$ | Left and right multiplication, $L_a(\tilde Q)=a\tilde Q$ and $R_b(\tilde Q)=\tilde Qb$, and the cell $L_aR_b(\tilde Q)=a\tilde Qb$ |
 | Frame cells $C_\mu$ | $C_t=iR_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$, with $\{C_\mu,C_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ and $\varepsilon=(1,-1,-1,-1)$ |
-| $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}$ | The volume cell, the chirality of the frame: its square is $+1$ and it anticommutes with the four frame cells |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | The source's Eq. (31) read on the algebra: the two Dirac equations, i.e. the one-sided pair |
+| $\mathsf{V}_{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}$ | The volume cell, the chirality of the frame: its square is $+1$ and it anticommutes with the four frame cells |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The source's Eq. (31) read on the algebra: the two Dirac equations, i.e. the one-sided pair |
 | The source's bar | The natural sign, $\tilde Q^{\natural}$; not the corpus's bar, which conjugates the coefficients |
 
 ## Further Reading

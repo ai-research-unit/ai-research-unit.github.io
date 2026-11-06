@@ -74,7 +74,7 @@ exactly when the parameters $u = \alpha(b)\alpha(a)$ and $w = ab$ are central in
 
 **Proof.** $\Phi_{c,c} = \mathrm{id}$ means $cxc = x$ for all $x$, that is $c \in Z(E)$ and $c^{2} = 1$; applying this to the two products of the theorem gives the criterion, and the sufficient condition follows because $ab = ba$ makes $\alpha(b)\alpha(a) = \alpha(ab)$ central together with $ab$ when the latter is.
 
-**Corollary (the unitarity of the signed left multiplication).** The signed left multiplication $\Lambda^{\alpha}_{a}$ is unitary exactly when $a$ is such that $\alpha(a)$ and $a$ are central involutions; in the unsigned case $\Lambda^{\mathrm{id}}_{a} = L_{a}$ is unitary exactly when $a$ is a central involution, the operator-theoretic form of the element condition $a^{2} = 1$, $a \in Z(E)$.
+**Corollary (the unitarity of the signed left multiplication).** The signed left multiplication $\Lambda^{\alpha}_{a}$ is unitary exactly when $a$ is such that $\alpha(a)$ and $a$ are central involutions; in the unsigned case $\Lambda_{\mathrm{id},a} = L_{a}$ is unitary exactly when $a$ is a central involution, the operator-theoretic form of the element condition $a^{2} = 1$, $a \in Z(E)$.
 
 **Proof.** Apply the criterion with $b = 1$: $u = \alpha(a)$ and $w = a$.
 

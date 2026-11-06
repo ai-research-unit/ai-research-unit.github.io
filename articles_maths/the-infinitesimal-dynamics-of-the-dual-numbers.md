@@ -52,7 +52,7 @@ so the cycle is attracting for $|\lambda| < 1$, parabolic for $|\lambda| = 1$ an
 
 ## The Failure of an Infinitesimal Julia Set
 
-**Definition.** The **Fatou set** of $f_c$ is the set of points of $\mathbb{C}^{\mathrm{dln}}$ at which the family of iterates is equicontinuous on some neighbourhood, the plane being given the Euclidean metric and its one-point compactification, and the **Julia set** is the complement. The map $f_c$ being triangular, the projection $\pi(z) = x$ carries the dynamics to the real quadratic map $g_\gamma$.
+**Definition.** The **Fatou set** of $f_c$ is the set of points of $\mathbb{C}_{\mathrm{dln}}$ at which the family of iterates is equicontinuous on some neighbourhood, the plane being given the Euclidean metric and its one-point compactification, and the **Julia set** is the complement. The map $f_c$ being triangular, the projection $\pi(z) = x$ carries the dynamics to the real quadratic map $g_\gamma$.
 
 **Theorem (the collapse of the two sets).** For every $c = \gamma+\varepsilon\delta$,
 

@@ -3,31 +3,31 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}} = \mathrm{Cl}_{1,1}$ is four-dimensional over $\mathbb{R}$ and isomorphic to the algebra of $2 \times 2$ real matrices, as established in *Split-Quaternion Algebra*. This article studies the ideal structure of $\mathbb{H}^{\mathrm{spl}}$ and the decomposition of the algebra relative to its standard pair of idempotents.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}} = \mathrm{Cl}_{1,1}$ is four-dimensional over $\mathbb{R}$ and isomorphic to the algebra of $2 \times 2$ real matrices, as established in *Split-Quaternion Algebra*. This article studies the ideal structure of $\mathbb{H}_{\mathrm{spl}}$ and the decomposition of the algebra relative to its standard pair of idempotents.
 
 One fact organizes the whole discussion. As a real algebra,
 
 $$
-\boxed{\;\mathbb{H}^{\mathrm{spl}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;},
+\boxed{\;\mathbb{H}_{\mathrm{spl}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;},
 $$
 
-and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the whole algebra. The algebra $\mathbb{H}^{\mathrm{spl}}$ is therefore simple, and yet it is **not** a division algebra — it carries nonzero zero divisors, as *Split-Quaternion Zero Divisors* records. This combination is what makes its ideal theory interesting: the two-sided ideal lattice is trivial, while the one-sided ideal lattice is rich and governed by the matrix structure.
+and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the whole algebra. The algebra $\mathbb{H}_{\mathrm{spl}}$ is therefore simple, and yet it is **not** a division algebra — it carries nonzero zero divisors, as *Split-Quaternion Zero Divisors* records. This combination is what makes its ideal theory interesting: the two-sided ideal lattice is trivial, while the one-sided ideal lattice is rich and governed by the matrix structure.
 
 The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.
 
 ## Ideals in an Algebra
 
-Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a **left ideal** if $A I \subseteq I$, a **right ideal** if $I A \subseteq I$, and a **two-sided ideal** if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{H}^{\mathrm{spl}}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.
+Let $A$ be an associative unital algebra over a field $k$. An additive subgroup $I \subseteq A$ is a **left ideal** if $A I \subseteq I$, a **right ideal** if $I A \subseteq I$, and a **two-sided ideal** if it is both. The distinction matters only when $A$ is noncommutative; for $\mathbb{H}_{\mathrm{spl}}$ the three notions genuinely differ. The ideals $0$ and $A$ are called trivial.
 
 A base-field remark will be used repeatedly. If $A I \subseteq I$, then $I$ is automatically a $k$-subspace, since $\lambda \tilde q = (\lambda 1)\tilde q \in I$ for $\lambda \in k$ and $\tilde q \in I$, as $\lambda 1 \in A$. So the left ideals do not depend on which field of scalars inside the centre is used to view the algebra.
 
 For a two-sided ideal $I$, the **quotient algebra** $A/I$ is defined, and kernels of algebra homomorphisms are two-sided ideals; the first isomorphism theorem gives $A/\ker\varphi \cong \operatorname{im}\varphi$. For a left ideal only, $A/I$ is still a left $A$-module but not in general an algebra. Thus the left ideals govern module theory and the two-sided ideals govern quotient algebras.
 
-## The Two-Sided Ideals: Simplicity of $\mathbb{H}^{\mathrm{spl}}$
+## The Two-Sided Ideals: Simplicity of $\mathbb{H}_{\mathrm{spl}}$
 
-**Theorem.** The only two-sided ideals of $\mathbb{H}^{\mathrm{spl}}$ are $0$ and $\mathbb{H}^{\mathrm{spl}}$. Equivalently, $\mathbb{H}^{\mathrm{spl}}$ is a **simple** $\mathbb{R}$-algebra.
+**Theorem.** The only two-sided ideals of $\mathbb{H}_{\mathrm{spl}}$ are $0$ and $\mathbb{H}_{\mathrm{spl}}$. Equivalently, $\mathbb{H}_{\mathrm{spl}}$ is a **simple** $\mathbb{R}$-algebra.
 
-**Proof.** Work in the matrix algebra $M_2(\mathbb{R})$ under the identification $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ (*Matrix Algebras*). Let the matrix units satisfy $E_{ij} E_{kl} = \delta_{jk} E_{il}$, from which $E_{ik} M E_{lj} = M_{kl} E_{ij}$ for any matrix $M = (M_{kl})$. If $I \neq 0$ is a two-sided ideal and $M \in I$ has $M_{kl} \neq 0$, then
+**Proof.** Work in the matrix algebra $M_2(\mathbb{R})$ under the identification $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ (*Matrix Algebras*). Let the matrix units satisfy $E_{ij} E_{kl} = \delta_{jk} E_{il}$, from which $E_{ik} M E_{lj} = M_{kl} E_{ij}$ for any matrix $M = (M_{kl})$. If $I \neq 0$ is a two-sided ideal and $M \in I$ has $M_{kl} \neq 0$, then
 
 $$
 E_{ij} = M_{kl}^{-1} E_{ik} M E_{lj} \in I .
@@ -37,26 +37,26 @@ Hence $I$ contains every matrix unit, so $I = M_2(\mathbb{R})$. Transporting bac
 
 Consequences:
 
-- The only quotient algebras of $\mathbb{H}^{\mathrm{spl}}$ are $\mathbb{H}^{\mathrm{spl}}$ and $0$.
-- Every nonzero element generates $\mathbb{H}^{\mathrm{spl}}$ as a two-sided ideal.
-- The centre of $\mathbb{H}^{\mathrm{spl}}$ is the scalar copy $\mathbb{R}\cdot 1$ of $\mathbb{R}$, so $\mathbb{H}^{\mathrm{spl}}$ is a **central simple** $\mathbb{R}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras.
+- The only quotient algebras of $\mathbb{H}_{\mathrm{spl}}$ are $\mathbb{H}_{\mathrm{spl}}$ and $0$.
+- Every nonzero element generates $\mathbb{H}_{\mathrm{spl}}$ as a two-sided ideal.
+- The centre of $\mathbb{H}_{\mathrm{spl}}$ is the scalar copy $\mathbb{R}\cdot 1$ of $\mathbb{R}$, so $\mathbb{H}_{\mathrm{spl}}$ is a **central simple** $\mathbb{R}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras.
 - The many one-sided ideals constructed below are all non-two-sided, so they do not contradict simplicity.
 
-Simplicity does not imply that every nonzero element is invertible: the element $1 + \vec e_y$ is a nonzero zero divisor, since $(1+\vec e_y)(1-\vec e_y) = 0$, yet it generates $\mathbb{H}^{\mathrm{spl}}$ as a two-sided ideal. Simplicity and the division property are independent, and $\mathbb{H}^{\mathrm{spl}}$ is the standard example distinguishing them.
+Simplicity does not imply that every nonzero element is invertible: the element $1 + \vec e_y$ is a nonzero zero divisor, since $(1+\vec e_y)(1-\vec e_y) = 0$, yet it generates $\mathbb{H}_{\mathrm{spl}}$ as a two-sided ideal. Simplicity and the division property are independent, and $\mathbb{H}_{\mathrm{spl}}$ is the standard example distinguishing them.
 
 ## Artinian, Semisimple, and Length Two
 
 A nonzero module is **simple** if it has no submodules other than $0$ and itself. A **composition series** is a finite strictly increasing chain $0 = M_0 \subset M_1 \subset \cdots \subset M_r = M$ with simple successive quotients; the number $r$ is the **length** of $M$. A ring is **left artinian** if every descending chain of left ideals stabilizes, and **semisimple** if its left regular module is a direct sum of simple modules.
 
-Every descending chain of left ideals of $\mathbb{H}^{\mathrm{spl}}$ is a descending chain of real subspaces of the finite-dimensional space $\mathbb{H}^{\mathrm{spl}}$, so it stabilizes; thus $\mathbb{H}^{\mathrm{spl}}$ is artinian. By the Wedderburn–Artin theorem, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{H}^{\mathrm{spl}}$ is **semisimple**, and every left ideal is a direct sum of minimal left ideals.
+Every descending chain of left ideals of $\mathbb{H}_{\mathrm{spl}}$ is a descending chain of real subspaces of the finite-dimensional space $\mathbb{H}_{\mathrm{spl}}$, so it stabilizes; thus $\mathbb{H}_{\mathrm{spl}}$ is artinian. By the Wedderburn–Artin theorem, a unital ring is semisimple if and only if it is artinian with zero Jacobson radical, and every simple artinian ring is semisimple. Hence $\mathbb{H}_{\mathrm{spl}}$ is **semisimple**, and every left ideal is a direct sum of minimal left ideals.
 
-Every simple left $\mathbb{H}^{\mathrm{spl}}$-module is two-dimensional over $\mathbb{R}$, and all simple left modules are isomorphic. As a left module over itself,
+Every simple left $\mathbb{H}_{\mathrm{spl}}$-module is two-dimensional over $\mathbb{R}$, and all simple left modules are isomorphic. As a left module over itself,
 
 $$
-\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2 .
+\mathbb{H}_{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2 .
 $$
 
-With the idempotents $\tilde\pi_1, \tilde\pi_2$ below this reads $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ with $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2} \cong \mathbb{R}^2$. Hence $0 \subset \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \subset \mathbb{H}^{\mathrm{spl}}$ is a composition series, and the **length of $\mathbb{H}^{\mathrm{spl}}$ as a left module over itself is $2$**, with both factors isomorphic to $\mathbb{R}^2$. The right regular module has length $2$ as well, with factors the dual module $(\mathbb{R}^2)^{*}$.
+With the idempotents $\tilde\pi_1, \tilde\pi_2$ below this reads $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ with $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2} \cong \mathbb{R}^2$. Hence $0 \subset \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \subset \mathbb{H}_{\mathrm{spl}}$ is a composition series, and the **length of $\mathbb{H}_{\mathrm{spl}}$ as a left module over itself is $2$**, with both factors isomorphic to $\mathbb{R}^2$. The right regular module has length $2$ as well, with factors the dual module $(\mathbb{R}^2)^{*}$.
 
 ## Idempotents and Orthogonal Idempotents
 
@@ -82,7 +82,7 @@ $$
 \tilde q = \tfrac{1}{2}(\vec e_z - \vec e_x), \qquad \tilde p = \tfrac{1}{2}(\vec e_x + \vec e_z).
 $$
 
-Then $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is an $\mathbb{R}$-basis of $\mathbb{H}^{\mathrm{spl}}$, and it satisfies the matrix-unit relations with
+Then $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is an $\mathbb{R}$-basis of $\mathbb{H}_{\mathrm{spl}}$, and it satisfies the matrix-unit relations with
 
 $$
 E_{11} = \tilde\pi_1, \qquad E_{12} = \tilde q, \qquad E_{21} = \tilde p, \qquad E_{22} = \tilde\pi_2 .
@@ -94,7 +94,7 @@ $$
 \tilde\pi_1 \tilde q = \tilde q = \tilde q \tilde\pi_2, \qquad \tilde\pi_2 \tilde p = \tilde p = \tilde p \tilde\pi_1, \qquad \tilde q \tilde p = \tilde\pi_1, \qquad \tilde p \tilde q = \tilde\pi_2,
 $$
 
-together with $\tilde q \tilde\pi_1 = \tilde\pi_2 \tilde q = 0$, $\tilde\pi_1 \tilde p = \tilde p \tilde\pi_2 = 0$, and $\tilde q^2 = \tilde p^2 = 0$. Both $\tilde q$ and $\tilde p$ are square zero, so $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is a system of matrix units of $\mathbb{H}^{\mathrm{spl}}$, with $E_{11} = \tilde\pi_1$, $E_{22} = \tilde\pi_2$, $E_{12} = \tilde q$ and $E_{21} = \tilde p$. The names $E_{ij}$ refer to this abstract multiplication table.
+together with $\tilde q \tilde\pi_1 = \tilde\pi_2 \tilde q = 0$, $\tilde\pi_1 \tilde p = \tilde p \tilde\pi_2 = 0$, and $\tilde q^2 = \tilde p^2 = 0$. Both $\tilde q$ and $\tilde p$ are square zero, so $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is a system of matrix units of $\mathbb{H}_{\mathrm{spl}}$, with $E_{11} = \tilde\pi_1$, $E_{22} = \tilde\pi_2$, $E_{12} = \tilde q$ and $E_{21} = \tilde p$. The names $E_{ij}$ refer to this abstract multiplication table.
 
 ## The Peirce Decomposition
 
@@ -116,45 +116,45 @@ $$
 
 Each diagonal corner $e_i A e_i$ is an algebra with identity $e_i$, and each off-diagonal piece is a bimodule over the corresponding corners.
 
-**The split-quaternion case.** Take $e_1 = \tilde\pi_1$ and $e_2 = \tilde\pi_2$. The Peirce decomposition of $\mathbb{H}^{\mathrm{spl}}$ is
+**The split-quaternion case.** Take $e_1 = \tilde\pi_1$ and $e_2 = \tilde\pi_2$. The Peirce decomposition of $\mathbb{H}_{\mathrm{spl}}$ is
 
 $$
-\boxed{\;\mathbb{H}^{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 \oplus \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2\;},
+\boxed{\;\mathbb{H}_{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2\;},
 $$
 
 and by the table above each summand is one-dimensional over $\mathbb{R}$:
 
 $$
-\tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \mathbb{R} \tilde\pi_1, \qquad \tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde q, \qquad \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \mathbb{R} \tilde p, \qquad \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde\pi_2 .
+\tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \mathbb{R} \tilde\pi_1, \qquad \tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde q, \qquad \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \mathbb{R} \tilde p, \qquad \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde\pi_2 .
 $$
 
 So the Peirce decomposition is exactly the matrix-unit decomposition
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 = \bigoplus_{i,j=1}^{2} \mathbb{R} E_{ij}.
+\mathbb{H}_{\mathrm{spl}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 = \bigoplus_{i,j=1}^{2} \mathbb{R} E_{ij}.
 $$
 
-The diagonal part $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde\pi_2$ is the two-dimensional commutative subalgebra isomorphic to $\mathbb{R} \times \mathbb{R}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{R}$, which is the primitivity criterion. The off-diagonal corner $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde q$ is nonzero, and it is the reason the decomposition of $\mathbb{H}^{\mathrm{spl}}$ by the non-central idempotent $\tilde\pi_1$ is a module decomposition and not an algebra decomposition; the element $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tilde q$ detects it.
+The diagonal part $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde\pi_2$ is the two-dimensional commutative subalgebra isomorphic to $\mathbb{R} \times \mathbb{R}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{R}$, which is the primitivity criterion. The off-diagonal corner $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \mathbb{R} \tilde q$ is nonzero, and it is the reason the decomposition of $\mathbb{H}_{\mathrm{spl}}$ by the non-central idempotent $\tilde\pi_1$ is a module decomposition and not an algebra decomposition; the element $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tilde q$ detects it.
 
 ## The Matrix-Unit Decomposition as a Sum of Minimal Ideals
 
-The matrix units group into one-sided ideals in a second way. With $E_{11} = \tilde\pi_1$ and $E_{22} = \tilde\pi_2$, the two **columns** $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1, \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ and the two **rows** $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}}, \tilde\pi_2 \mathbb{H}^{\mathrm{spl}}$ are one-sided ideals, and
+The matrix units group into one-sided ideals in a second way. With $E_{11} = \tilde\pi_1$ and $E_{22} = \tilde\pi_2$, the two **columns** $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1, \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ and the two **rows** $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}}, \tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$ are one-sided ideals, and
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = (\mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde p) \oplus (\mathbb{R} \tilde q \oplus \mathbb{R} \tilde\pi_2),
+\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = (\mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde p) \oplus (\mathbb{R} \tilde q \oplus \mathbb{R} \tilde\pi_2),
 $$
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \oplus \tilde\pi_2 \mathbb{H}^{\mathrm{spl}} = (\mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q) \oplus (\mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2).
+\mathbb{H}_{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{spl}} = (\mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q) \oplus (\mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2).
 $$
 
-The first exhibits $\mathbb{H}^{\mathrm{spl}}$ as a direct sum of the two minimal left ideals (the columns); the second exhibits it as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\pi_1$ with $\tilde q$ and $\tilde\pi_2$ with $\tilde p$, whereas the column decomposition groups $\tilde\pi_1$ with $\tilde p$ and $\tilde\pi_2$ with $\tilde q$. Each column is two-dimensional and isomorphic, as a left $\mathbb{H}^{\mathrm{spl}}$-module, to $\mathbb{R}^2$; each row is isomorphic to the dual $(\mathbb{R}^2)^{*}$. Since $\mathbb{H}^{\mathrm{spl}}$ is simple, a column or a row is never a two-sided ideal; for instance $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ is not stable under right multiplication by $\tilde p$.
+The first exhibits $\mathbb{H}_{\mathrm{spl}}$ as a direct sum of the two minimal left ideals (the columns); the second exhibits it as a direct sum of the two minimal right ideals (the rows). The two groupings of the same four basis elements differ: the Peirce decomposition groups $\tilde\pi_1$ with $\tilde q$ and $\tilde\pi_2$ with $\tilde p$, whereas the column decomposition groups $\tilde\pi_1$ with $\tilde p$ and $\tilde\pi_2$ with $\tilde q$. Each column is two-dimensional and isomorphic, as a left $\mathbb{H}_{\mathrm{spl}}$-module, to $\mathbb{R}^2$; each row is isomorphic to the dual $(\mathbb{R}^2)^{*}$. Since $\mathbb{H}_{\mathrm{spl}}$ is simple, a column or a row is never a two-sided ideal; for instance $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ is not stable under right multiplication by $\tilde p$.
 
 ## Minimal Left and Right Ideals
 
 A **minimal left ideal** is a nonzero left ideal containing no nonzero proper left ideal; equivalently, a simple submodule of the left regular module. A **minimal right ideal** is defined the same way on the right.
 
-Since $\mathbb{H}^{\mathrm{spl}}$ is semisimple, every left ideal is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{H}^{\mathrm{spl}} e$ for a primitive idempotent $e$. The coordinate examples are the columns $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ and $\mathbb{H}^{\mathrm{spl}} \tilde\pi_2$, and all minimal left ideals are isomorphic as left $\mathbb{H}^{\mathrm{spl}}$-modules to the simple module $\mathbb{R}^2$: a general one is obtained from a column by an algebra automorphism, so it is again a column in a suitable basis. Dually, every minimal right ideal is a row and is isomorphic to $(\mathbb{R}^2)^{*}$, the coordinate examples being $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}^{\mathrm{spl}}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with the simplicity theorem.
+Since $\mathbb{H}_{\mathrm{spl}}$ is semisimple, every left ideal is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{H}_{\mathrm{spl}} e$ for a primitive idempotent $e$. The coordinate examples are the columns $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ and $\mathbb{H}_{\mathrm{spl}} \tilde\pi_2$, and all minimal left ideals are isomorphic as left $\mathbb{H}_{\mathrm{spl}}$-modules to the simple module $\mathbb{R}^2$: a general one is obtained from a column by an algebra automorphism, so it is again a column in a suitable basis. Dually, every minimal right ideal is a row and is isomorphic to $(\mathbb{R}^2)^{*}$, the coordinate examples being $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with the simplicity theorem.
 
 ## The Lattice of Left Ideals as a Projective Line
 
@@ -167,12 +167,12 @@ $$
 the matrices annihilating $W$. This is a left ideal, since $\ker(AM) \supseteq \ker M$ for every $A$. The assignment $W \mapsto L_W$ reverses inclusions, and
 
 $$
-\boxed{\;L_0 = \mathbb{H}^{\mathrm{spl}}, \qquad L_{\mathbb{R}^2} = 0, \qquad L_W \text{ is minimal when } \dim_{\mathbb{R}} W = 1\;}.
+\boxed{\;L_0 = \mathbb{H}_{\mathrm{spl}}, \qquad L_{\mathbb{R}^2} = 0, \qquad L_W \text{ is minimal when } \dim_{\mathbb{R}} W = 1\;}.
 $$
 
-Conversely every left ideal is of this form: a left ideal is a submodule of the left regular module $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$, and since $\mathbb{R}^2$ is simple and $\mathbb{H}^{\mathrm{spl}}$ has length $2$, the only submodules of $\mathbb{R}^2 \oplus \mathbb{R}^2$ are $0$, a copy of $\mathbb{R}^2$, and the whole module. A minimal left ideal $L$ is thus a copy of $\mathbb{R}^2$, determined by the line $W = \bigcap_{M \in L} \ker M$.
+Conversely every left ideal is of this form: a left ideal is a submodule of the left regular module $\mathbb{H}_{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$, and since $\mathbb{R}^2$ is simple and $\mathbb{H}_{\mathrm{spl}}$ has length $2$, the only submodules of $\mathbb{R}^2 \oplus \mathbb{R}^2$ are $0$, a copy of $\mathbb{R}^2$, and the whole module. A minimal left ideal $L$ is thus a copy of $\mathbb{R}^2$, determined by the line $W = \bigcap_{M \in L} \ker M$.
 
-**Theorem.** The left ideals of $\mathbb{H}^{\mathrm{spl}}$ are exactly $0$, the whole algebra, and the minimal left ideals $L_W$ with $W$ a line in $\mathbb{R}^2$. The minimal left ideals are indexed by the real projective line
+**Theorem.** The left ideals of $\mathbb{H}_{\mathrm{spl}}$ are exactly $0$, the whole algebra, and the minimal left ideals $L_W$ with $W$ a line in $\mathbb{R}^2$. The minimal left ideals are indexed by the real projective line
 
 $$
 \mathbb{P}^1(\mathbb{R}) = \{\, W \subseteq \mathbb{R}^2 : W \text{ a one-dimensional } \mathbb{R}\text{-subspace} \,\},
@@ -181,10 +181,10 @@ $$
 which is a circle, and they form the middle layer of the lattice:
 
 $$
-\boxed{\;0 \;\subset\; \{\, L_W : W \in \mathbb{P}^1(\mathbb{R}) \,\} \;\subset\; \mathbb{H}^{\mathrm{spl}}\;}.
+\boxed{\;0 \;\subset\; \{\, L_W : W \in \mathbb{P}^1(\mathbb{R}) \,\} \;\subset\; \mathbb{H}_{\mathrm{spl}}\;}.
 $$
 
-The middle elements are pairwise incomparable; each covers $0$ and is covered by $\mathbb{H}^{\mathrm{spl}}$. Because the length of $\mathbb{H}^{\mathrm{spl}}$ as a left module over itself is $2$, every minimal left ideal is also a **maximal** left ideal: nothing lies strictly between it and $\mathbb{H}^{\mathrm{spl}}$. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.
+The middle elements are pairwise incomparable; each covers $0$ and is covered by $\mathbb{H}_{\mathrm{spl}}$. Because the length of $\mathbb{H}_{\mathrm{spl}}$ as a left module over itself is $2$, every minimal left ideal is also a **maximal** left ideal: nothing lies strictly between it and $\mathbb{H}_{\mathrm{spl}}$. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.
 
 **Remark.** The parameter space classifying the minimal one-sided ideals of $M_n(D)$ is $\mathbb{P}^{n-1}(D)$, over the **division ring** $D$ in the Wedderburn–Artin decomposition $M_n(D)$, not over an arbitrary base field. Here $D = \mathbb{R}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{R})$. The field over which the algebra is viewed does not change the ideal lattice, because the base-field remark of *Ideals in an Algebra* shows that the left ideals are automatically subspaces over any subfield of the centre.
 
@@ -196,26 +196,26 @@ The middle elements are pairwise incomparable; each covers $0$ and is covered by
 
 ## Summary
 
-The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ is simple: its only two-sided ideals are $0$ and $\mathbb{H}^{\mathrm{spl}}$. It is semisimple, artinian, and of length $2$ as a left module over itself, with $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ and $\mathbb{R}^2$ the defining module. Simplicity does not force the division property: $1 + \vec e_y$ is a nonzero zero divisor that nonetheless generates the algebra as a two-sided ideal.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ is simple: its only two-sided ideals are $0$ and $\mathbb{H}_{\mathrm{spl}}$. It is semisimple, artinian, and of length $2$ as a left module over itself, with $\mathbb{H}_{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ and $\mathbb{R}^2$ the defining module. Simplicity does not force the division property: $1 + \vec e_y$ is a nonzero zero divisor that nonetheless generates the algebra as a two-sided ideal.
 
 The standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ are orthogonal, complete and primitive. With the explicit matrix units $\tilde q = \tfrac{1}{2}(\vec e_z - \vec e_x)$ and $\tilde p = \tfrac{1}{2}(\vec e_x + \vec e_z)$, the set $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is a set of matrix units and the Peirce decomposition is the four-corner decomposition
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 .
+\mathbb{H}_{\mathrm{spl}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 .
 $$
 
-The two columns $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$ are the minimal left ideals, each isomorphic to $\mathbb{R}^2$; the two rows $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ are the minimal right ideals, each isomorphic to the dual $(\mathbb{R}^2)^{*}$. Every left ideal is $0$, the whole algebra, or a minimal left ideal $L_W$ indexed by a line $W$ in $\mathbb{R}^2$; the minimal left ideals form the middle layer of the lattice and are parametrised by the real projective line $\mathbb{P}^1(\mathbb{R})$. The quaternion algebra, being a division algebra, has no proper ideal at all, while the biquaternion algebra has the same ideal lattice with the complex projective line $\mathbb{P}^1(\mathbb{C})$ in place of the real one.
+The two columns $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$ are the minimal left ideals, each isomorphic to $\mathbb{R}^2$; the two rows $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ are the minimal right ideals, each isomorphic to the dual $(\mathbb{R}^2)^{*}$. Every left ideal is $0$, the whole algebra, or a minimal left ideal $L_W$ indexed by a line $W$ in $\mathbb{R}^2$; the minimal left ideals form the middle layer of the lattice and are parametrised by the real projective line $\mathbb{P}^1(\mathbb{R})$. The quaternion algebra, being a division algebra, has no proper ideal at all, while the biquaternion algebra has the same ideal lattice with the complex projective line $\mathbb{P}^1(\mathbb{C})$ in place of the real one.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $I$ | an ideal (left, right or two-sided) | this article |
 | $M_2(\mathbb{R})$, $E_{ij}$ | the matrix algebra and its matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$ | *Matrix Algebras* |
 | $\tilde\pi_1 = \tfrac{1}{2}(1+\vec e_y)$, $\tilde\pi_2 = \tfrac{1}{2}(1-\vec e_y)$ | the standard orthogonal idempotents | *Split-Quaternion Idempotents and Projections* |
 | $\tilde q = \tfrac{1}{2}(\vec e_z-\vec e_x)$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$ | the off-diagonal matrix units $E_{12}$, $E_{21}$ | this article |
-| $\mathbb{R}^2$ | the simple (defining) left module, $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ | this article |
+| $\mathbb{R}^2$ | the simple (defining) left module, $\mathbb{H}_{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ | this article |
 | $(\mathbb{R}^2)^{*}$ | the dual (right) module | this article |
 | $eAe$, $eAf$, … | the Peirce spaces of an idempotent $e$ | this article |
 | $L_W$ | the minimal left ideal annihilating the line $W$ | this article |

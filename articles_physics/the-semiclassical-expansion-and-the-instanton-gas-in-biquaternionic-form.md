@@ -35,12 +35,12 @@ $$
 where the measure, the gauge-fixing and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. The semiclassical expansion evaluates the integral by steepest descent. Write the saddle-point condition
 
 $$
-\frac{\delta S}{\delta\mathcal A_\mu}\Big|_{\mathcal A=\mathcal A^{\mathrm{cl}}}=0 ,
+\frac{\delta S}{\delta\mathcal A_\mu}\Big|_{\mathcal A=\mathcal A_{\mathrm{cl}}}=0 ,
 \qquad
-S[\mathcal A^{\mathrm{cl}}]=S_{\mathrm{cl}} ,
+S[\mathcal A_{\mathrm{cl}}]=S_{\mathrm{cl}} ,
 $$
 
-and expand the field around it, $\mathcal A=\mathcal A^{\mathrm{cl}}+\delta\mathcal A$. The Gaussian integration over $\delta\mathcal A$ gives the one-loop determinant; the collective-coordinate directions, along which the action is unchanged, must be treated separately, and they are the directions along the moduli space. The result for a single saddle is
+and expand the field around it, $\mathcal A=\mathcal A_{\mathrm{cl}}+\delta\mathcal A$. The Gaussian integration over $\delta\mathcal A$ gives the one-loop determinant; the collective-coordinate directions, along which the action is unchanged, must be treated separately, and they are the directions along the moduli space. The result for a single saddle is
 
 $$
 Z_{\mathrm{saddle}} \;=\; \bigl(\text{one-loop determinant}\bigr)\times \exp(-S_{\mathrm{cl}})
@@ -60,13 +60,13 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_{0\mu}$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
 
 $$
-Z_1^{\mathrm{cl}} \;\propto\; \int d^4r_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
+Z_{\mathrm{cl},1} \;\propto\; \int d^4r_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,
 $$
 
 where the weight $\rho^{-5}$ is the measure factor of the four translations and the scale: it is the Jacobian of the five collective coordinates, and it carries the dimension of the volume element, $d^4r_0\,d\rho\,\rho^{-1}\cdot(\text{scale weight})$. The translations integrate to the four-volume $VT$ of the box, so the nontrivial content is the single integral over the size,
 
 $$
-\boxed{\;Z_1^{\mathrm{cl}} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.
+\boxed{\;Z_{\mathrm{cl},1} \;\propto\; VT\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2)\;}.
 $$
 
 The one-loop determinant multiplies this by a power of the coupling and, through renormalisation, by the running of $g$ with the scale. The physical statement is the **dimensional transmutation** of the renormalisation group: the dimensionless coupling $g$ is replaced by the running coupling $g(\rho)$ evaluated at the instanton size, and the 't Hooft one-loop result for the pure gauge theory has the structure
@@ -90,12 +90,12 @@ $$
 A local action cannot mix sectors, since $Ϙ$ is topological, but the vacuum need not be a definite-$Ϙ$ state. The theta vacuum is the superposition
 
 $$
-\boxed{\;|\theta^{\mathrm{vac}}\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
+\boxed{\;|\theta_{\mathrm{vac}}\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
 \qquad
 Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ\;},
 $$
 
-the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta^{\mathrm{vac}}\rangle=-i\partial/\partial\theta|\theta^{\mathrm{vac}}\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta^{\mathrm{vac}}\rangle$ superposition is the unique one that is, up to the standard subtleties.
+the sign in the ket being the one for which the topological charge operator acts as $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle=-i\partial/\partial\theta|\theta_{\mathrm{vac}}\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta_{\mathrm{vac}}\rangle$ superposition is the unique one that is, up to the standard subtleties.
 
 The theta dependence enters through the combination
 
@@ -198,10 +198,10 @@ The framework's role in the semiclassical expansion is the supply of the saddle 
 The semiclassical expansion evaluates the Euclidean path integral by steepest descent around the framework's instanton saddles. A self-dual configuration has action $S=\frac{8\pi^2}{g^2}|Ϙ|$, fixed by topology, and its five collective coordinates $(x_0,\rho)$ give the classical one-instanton weight
 
 $$
-Z_1^{\mathrm{cl}}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
+Z_{\mathrm{cl},1}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
 $$
 
-with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
+with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
 The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
@@ -217,7 +217,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ|$ | Saturated (Bogomolny) classical action |
 | $Z=\int\mathcal D\mathcal A\,\exp(-S)$ | Euclidean partition function |
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
-| $|\theta^{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
+| $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function |
 | $\mathcal E(\theta)$, $\xi_t$ | Vacuum energy density and topological susceptibility |
 | $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |

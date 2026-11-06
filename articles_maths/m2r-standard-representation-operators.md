@@ -2,10 +2,10 @@
 
 ## Introduction
 
-**The space of operators.** The carrier is $\mathbb{H}^{\mathrm{spl}}$, of real dimension four, and the operators are the real-linear maps of the carrier into itself, so the ambient algebra is
+**The space of operators.** The carrier is $\mathbb{H}_{\mathrm{spl}}$, of real dimension four, and the operators are the real-linear maps of the carrier into itself, so the ambient algebra is
 
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}})\cong M_4(\mathbb{R}),
+\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})\cong M_4(\mathbb{R}),
 $$
 
 of dimension sixteen. The general article gives two families of operators for free, the left multiplications $L_{\tilde q}$ and the right multiplications $R_{\tilde q}$, each a copy of the algebra inside the ambient, and the whole article is about what the two families generate together.
@@ -34,7 +34,7 @@ $$
 
 in the row-major vectorisation. Both are assigned one $2\times2$ matrix per map, and that is the whole information, because the carrier is four-dimensional and the algebra is the carrier.
 
-**What the two families are.** Each is a faithful copy of $\mathbb{H}^{\mathrm{spl}}\cong M_2(\mathbb{R})$ inside $M_4(\mathbb{R})$. The two copies commute, $L_{\tilde q}R_{\tilde p}=R_{\tilde p}L_{\tilde q}$, and each is the centraliser of the other, which is the double centraliser theorem read on a full matrix algebra. They intersect in the scalars: $L_{\tilde q}=R_{\tilde q}$ exactly for $\tilde q\in\mathbb{R}e_t$.
+**What the two families are.** Each is a faithful copy of $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb{R})$ inside $M_4(\mathbb{R})$. The two copies commute, $L_{\tilde q}R_{\tilde p}=R_{\tilde p}L_{\tilde q}$, and each is the centraliser of the other, which is the double centraliser theorem read on a full matrix algebra. They intersect in the scalars: $L_{\tilde q}=R_{\tilde q}$ exactly for $\tilde q\in\mathbb{R}e_t$.
 
 **The invariants.** The rank, the trace and the determinant of a left multiplication are
 
@@ -165,7 +165,7 @@ $$
 L_{A}R_{B}\,L_{A'}R_{B'}=L_{AA'}R_{\,B'B},
 $$
 
-so the family is closed under composition, and the composition law is the product in the first slot and the **opposite** product in the second. The family is therefore a copy of $M_2(\mathbb{R})\times M_2(\mathbb{R})^{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $M_2\times M_2$: the reversal of the second factor is the associativity of the original product showing through.
+so the family is closed under composition, and the composition law is the product in the first slot and the **opposite** product in the second. The family is therefore a copy of $M_2(\mathbb{R})\times M_2(\mathbb{R})_{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $M_2\times M_2$: the reversal of the second factor is the associativity of the original product showing through.
 
 **The units of the semigroup.** The invertible members are the products of two units, and their inverses are $L_{A^{-1}}R_{B^{-1}}$. They form the group
 
@@ -186,7 +186,7 @@ of dimension seven, where the quotient is by the simultaneous scaling $(\lambda,
 **The map.** Put $\beta(\tilde q,\tilde p)=L_{\tilde q}R_{\tilde p}$. It is bilinear, $\beta(\lambda\tilde q,\mu\tilde p)=\lambda\mu\,\beta(\tilde q,\tilde p)$, and its image is therefore a cone with vertex at the zero operator and not a linear subspace,
 
 $$
-\beta:\mathbb{H}^{\mathrm{spl}}\times\mathbb{H}^{\mathrm{spl}}\longrightarrow\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}}).
+\beta:\mathbb{H}_{\mathrm{spl}}\times\mathbb{H}_{\mathrm{spl}}\longrightarrow\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}}).
 $$
 
 The additive failure is the ordinary one of a bilinear map: $\beta(\tilde q_1+\tilde q_2,\tilde p)\neq\beta(\tilde q_1,\tilde p)+\beta(\tilde q_2,\tilde p)$ in general, and section *The Two Ranks* gives the witness.
@@ -247,7 +247,7 @@ so the generic operator has length four and four always suffice, the single prod
 
 ## What the Pair Buys and Does Not
 
-**What it buys.** The span of the sixteen products is the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}})$, so every real-linear operator of the carrier is a sum of at most four products and the pair describes the operator algebra completely. It gives the group of the products of units, of dimension seven, containing the conformal group $SO(2,2)$ through $SL_2(\mathbb{R})\times SL_2(\mathbb{R})$, and the group of the conjugations, $\mathrm{PGL}_2(\mathbb{R})$, of dimension three. It gives the two rulings of the cone of single products, and it gives the length filtration with its determinantal strata.
+**What it buys.** The span of the sixteen products is the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$, so every real-linear operator of the carrier is a sum of at most four products and the pair describes the operator algebra completely. It gives the group of the products of units, of dimension seven, containing the conformal group $SO(2,2)$ through $SL_2(\mathbb{R})\times SL_2(\mathbb{R})$, and the group of the conjugations, $\mathrm{PGL}_2(\mathbb{R})$, of dimension three. It gives the two rulings of the cone of single products, and it gives the length filtration with its determinantal strata.
 
 **What it does not buy.** Nothing that is not a linear operator of the carrier. The norm is a quadratic form and not a linear map; the conjugation of the algebra, $\tilde q\mapsto\tilde q^{\natural}$, is the adjugate and is polynomial of degree one in the entries of the adjugate but not linear in the operator sense; the projective line is a set of ideals and not a set of vectors of the carrier. In particular the spinors of the algebra are the minimal left ideals, and the double cover $SL_2(\mathbb{R})\to SO^{+}(2,1)$ acts on them; that action is a statement about modules, and the operators of the carrier see only its shadow, the conjugation.
 
@@ -259,7 +259,7 @@ so the generic operator has length four and four always suffice, the single prod
 2. With respect to the trace form the two families are mutual adjoints; with respect to the Frobenius form a left multiplication is self-adjoint exactly when its matrix is symmetric.
 3. A two-sided operator is $L_{A}R_{B}(X)=AXB$, of determinant $\det(A)^{2}\det(B)^{2}\ge0$ and trace $\operatorname{tr}A\operatorname{tr}B$; the scaling $(\lambda,\lambda^{-1})$ is its only redundancy.
 4. The rank is $\operatorname{rank}A\cdot\operatorname{rank}B\in\{0,1,2,4\}$, never three.
-5. The composition is $L_{A}R_{B}L_{A'}R_{B'}=L_{AA'}R_{B'B}$, so the family is $M_2\times M_2^{\mathrm{opp}}$; the conjugations form $\mathrm{PGL}_2(\mathbb{R})$.
+5. The composition is $L_{A}R_{B}L_{A'}R_{B'}=L_{AA'}R_{B'B}$, so the family is $M_2\times M_{\mathrm{opp},2}$; the conjugations form $\mathrm{PGL}_2(\mathbb{R})$.
 6. The coefficient matrix of a single product is $[\tilde q][\tilde p]^{\mathsf T}$, of rank one, and a single product is recognised by $\operatorname{rank}c\le1$; the cone of single products is the Segre cone $\mathbb{P}^3\times\mathbb{P}^3$, of dimension seven.
 7. The length is the coefficient rank, in $\{0,1,2,3,4\}$, with strata of dimensions $0,7,12,15,16$.
 8. The operator rank and the length are independent: the identity has rank four and length one, and a rank-one image can have length two.

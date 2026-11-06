@@ -53,7 +53,7 @@ $$
 
 and the diagonal entries are $(AB)_{ii}=\sum_{k}a_{ik}b_{ki}$. The rule is the only multiplication used in the category; the matrix units are the case in which one entry is $1$ and the others are $0$.
 
-**The opposite algebra.** The opposite algebra $M_{3}^{\mathrm{opp}}$ has the product $A\cdot^{\mathrm{opp}}B=BA$. The transpose $A\mapsto A^{\mathsf T}$ is an isomorphism $M_{3}\to M_{3}^{\mathrm{opp}}$, because $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$. The algebra is therefore isomorphic to its opposite, as every matrix algebra is; this is the first sign that it is a full matrix algebra and not a division algebra.
+**The opposite algebra.** The opposite algebra $M_{\mathrm{opp},3}$ has the product $A\cdot_{\mathrm{opp}}B=BA$. The transpose $A\mapsto A^{\mathsf T}$ is an isomorphism $M_{3}\to M_{\mathrm{opp},3}$, because $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$. The algebra is therefore isomorphic to its opposite, as every matrix algebra is; this is the first sign that it is a full matrix algebra and not a division algebra.
 
 ## Trace and Determinant
 

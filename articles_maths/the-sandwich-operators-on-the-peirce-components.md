@@ -8,7 +8,7 @@ $$
 A=eAe\oplus eAf\oplus fAe\oplus fAf, \qquad f=1-e,
 $$
 
-and the sandwich is the operator that sees the four corners at once. The present article computes the block matrix of $L_{a}R_{b}$ relative to the Peirce decomposition, identifies the elementary sandwiches $L_{e_i}R_{e_j}$ as the Peirce projections, and reads the composition of two sandwiches as the multiplication in the enveloping algebra $A\otimes A^{\mathrm{opp}}$.
+and the sandwich is the operator that sees the four corners at once. The present article computes the block matrix of $L_{a}R_{b}$ relative to the Peirce decomposition, identifies the elementary sandwiches $L_{e_i}R_{e_j}$ as the Peirce projections, and reads the composition of two sandwiches as the multiplication in the enveloping algebra $A\otimes A_{\mathrm{opp}}$.
 
 The result is a matrix picture. If $a=\sum_{i,j}a_{ij}$ and $b=\sum_{k,l}b_{kl}$ are the Peirce components, then the block of $L_{a}R_{b}$ from the source corner $A_{rs}$ to the target corner $A_{il}$ is
 
@@ -18,7 +18,7 @@ $$
 
 a sandwich of the two corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ therefore give a sandwich with a single nonzero block, from $A_{jk}$ to $A_{il}$; the pattern of the blocks is the Kronecker product of the two $2\times2$ block matrices of $a$ and $b^{\mathsf T}$. In the scalar case, when all four corners are one-dimensional, the $4\times4$ matrix of $L_{a}R_{b}$ is literally $a\otimes b^{\mathsf T}$.
 
-The article is the Peirce companion of *The Sandwich Operator on an Algebra* and *Left and Right Multiplication*. The Peirce decomposition is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the off-diagonal part and the noncentral case are *Off-Diagonal Peirce Components and Noncentral Idempotents*; the diagonal part is *The Centraliser and the Diagonal Peirce Part*; and the operator space is *The Operators on an Algebra*. The enveloping algebra is \(A\otimes A^{\mathrm{opp}}\), with the action \(x\mapsto axb\). The article uses no form and no involution.
+The article is the Peirce companion of *The Sandwich Operator on an Algebra* and *Left and Right Multiplication*. The Peirce decomposition is that of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*; the off-diagonal part and the noncentral case are *Off-Diagonal Peirce Components and Noncentral Idempotents*; the diagonal part is *The Centraliser and the Diagonal Peirce Part*; and the operator space is *The Operators on an Algebra*. The enveloping algebra is \(A\otimes A_{\mathrm{opp}}\), with the action \(x\mapsto axb\). The article uses no form and no involution.
 
 Throughout, $k$ is a field and $A$ is a unital associative $k$-algebra with $1\neq0$, not assumed commutative and not assumed finite-dimensional unless a statement says so. The idempotent is $e$, its complement is $f=1-e$, and the two are written $e_0=e$, $e_1=f$. The corners are
 
@@ -32,7 +32,7 @@ $$
 A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}.
 $$
 
-The sandwich is $L_{a}R_{b}(x)=axb$, and $\mathcal{S}(A)$ is the sandwich space, the image of $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$, $a\otimes b\mapsto L_{a}R_{b}$.
+The sandwich is $L_{a}R_{b}(x)=axb$, and $\mathcal{S}(A)$ is the sandwich space, the image of $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_k(A)$, $a\otimes b\mapsto L_{a}R_{b}$.
 
 ## The Peirce Decomposition and the Sandwich
 
@@ -184,7 +184,7 @@ $$
 **Corollary.** The assignment $(a,b)\mapsto L_{a}R_{b}$ is a $k$-bilinear map $A\times A\to\operatorname{End}_k(A)$ that factors through the enveloping algebra,
 
 $$
-A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}_k(A), \qquad a\otimes b\longmapsto L_{a}R_{b},
+A\otimes A_{\mathrm{opp}}\longrightarrow\operatorname{End}_k(A), \qquad a\otimes b\longmapsto L_{a}R_{b},
 $$
 
 and the multiplication in the image is $(a\otimes b)(c\otimes d)=ac\otimes db$. In particular the elementary sandwiches satisfy
@@ -198,10 +198,10 @@ the orthogonality relations of the Peirce projections.
 **Remark.** The composition law is the reason the sandwich is the natural action of the enveloping algebra on $A$: the first parameter multiplies on the left in the order of the product, and the second multiplies on the right in the reverse order. The Peirce decomposition of $A$ writes the enveloping algebra as
 
 $$
-A\otimes A^{\mathrm{opp}}=\bigoplus_{i,j,k,l}A_{ij}\otimes A_{kl}^{\mathrm{opp}},
+A\otimes A_{\mathrm{opp}}=\bigoplus_{i,j,k,l}A_{ij}\otimes A_{\mathrm{opp},kl},
 $$
 
-and the summand $A_{ij}\otimes A_{kl}^{\mathrm{opp}}$ maps to the single block from $A_{jk}$ to $A_{il}$. The block matrix of §*The block matrix of a general sandwich* is the matrix form of this decomposition.
+and the summand $A_{ij}\otimes A_{\mathrm{opp},kl}$ maps to the single block from $A_{jk}$ to $A_{il}$. The block matrix of §*The block matrix of a general sandwich* is the matrix form of this decomposition.
 
 ### Kernel and image
 
@@ -300,7 +300,7 @@ Let $\mathbb{B}=M_2(\mathbb{C})$ and let $e=E_{11}$, $f=E_{22}$. Under the matri
 
 ## Summary
 
-The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $L_{a}R_{b}(x)=axb$ into sixteen blocks. The block from the source corner $A_{rs}$ to the target corner $A_{il}$ is $x\mapsto a_{ir}xb_{sl}$, a sandwich of the corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ give a sandwich with a single block, from $A_{jk}$ to $A_{il}$; a diagonal $a,b$ give a block-diagonal sandwich that preserves each corner; a general sandwich is the sum of the elementary ones. The four elementary sandwiches $E_{ij}=L_{e_i}R_{e_j}$ are the Peirce projections, and they form a complete family of pairwise orthogonal projections in $\operatorname{End}_k(A)$: $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$ and $\sum_{ij}E_{ij}=\mathrm{id}$. The composition law is $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$, the action of the enveloping algebra $A\otimes A^{\mathrm{opp}}$; the sandwich space is its image, and the Peirce decomposition of $A$ writes it block by block. In the scalar case the block matrix is the Kronecker product $a\otimes b^{\mathsf T}$; in general it is the same pattern of blocks with operator entries. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. No form, involution or topology is used.
+The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $L_{a}R_{b}(x)=axb$ into sixteen blocks. The block from the source corner $A_{rs}$ to the target corner $A_{il}$ is $x\mapsto a_{ir}xb_{sl}$, a sandwich of the corner elements $a_{ir}$ and $b_{sl}$. A homogeneous $a\in A_{ij}$ and $b\in A_{kl}$ give a sandwich with a single block, from $A_{jk}$ to $A_{il}$; a diagonal $a,b$ give a block-diagonal sandwich that preserves each corner; a general sandwich is the sum of the elementary ones. The four elementary sandwiches $E_{ij}=L_{e_i}R_{e_j}$ are the Peirce projections, and they form a complete family of pairwise orthogonal projections in $\operatorname{End}_k(A)$: $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$ and $\sum_{ij}E_{ij}=\mathrm{id}$. The composition law is $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$, the action of the enveloping algebra $A\otimes A_{\mathrm{opp}}$; the sandwich space is its image, and the Peirce decomposition of $A$ writes it block by block. In the scalar case the block matrix is the Kronecker product $a\otimes b^{\mathsf T}$; in general it is the same pattern of blocks with operator entries. The matrix algebra $M_2(k)$, the split algebra $k\times k$, the upper triangular algebra and the biquaternion algebra are the worked examples. No form, involution or topology is used.
 
 ## Summary of Notation
 
@@ -312,7 +312,7 @@ The Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ cuts the sandwich $L_{a}R_{b}
 | $L_{a}R_{b}$ | the sandwich $x\mapsto axb$ |
 | $L_{(i}R_{l),(r,s)}$ | the block $A_{rs}\to A_{il}$, $x\mapsto a_{ir}xb_{sl}$ |
 | $E_{ij}$ | the Peirce projection $L_{e_i}R_{e_j}$ |
-| $\mathcal{S}(A)$ | the sandwich space, the image of $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$ |
+| $\mathcal{S}(A)$ | the sandwich space, the image of $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_k(A)$ |
 
 ## Further Reading
 

@@ -172,26 +172,26 @@ $$
 **Theorem.** The map $\mathbb{Z}/6\to\mathbb{Z}/2$, $r\mapsto r\bmod2$, gives the decomposition
 
 $$
-M_6(\mathbb{C})=A_{\text{even}}\oplus A^{\mathrm{odd}},
+M_6(\mathbb{C})=A_{\text{even}}\oplus A_{\mathrm{odd}},
 \qquad
 A_{\text{even}}=\bigoplus_{r\text{ even}}A_r,
 \qquad
-A^{\mathrm{odd}}=\bigoplus_{r\text{ odd}}A_r,
+A_{\mathrm{odd}}=\bigoplus_{r\text{ odd}}A_r,
 $$
 
 with
 
 $$
-\dim A_{\text{even}}=\dim A^{\mathrm{odd}}=18,
+\dim A_{\text{even}}=\dim A_{\mathrm{odd}}=18,
 \qquad
 A_{\text{even}}A_{\text{even}}\subseteq A_{\text{even}},\quad
-A_{\text{even}}A^{\mathrm{odd}}\subseteq A^{\mathrm{odd}},\quad
-A^{\mathrm{odd}}A^{\mathrm{odd}}\subseteq A_{\text{even}}.
+A_{\text{even}}A_{\mathrm{odd}}\subseteq A_{\mathrm{odd}},\quad
+A_{\mathrm{odd}}A_{\mathrm{odd}}\subseteq A_{\text{even}}.
 $$
 
 **Proof.** The parity of $r+s$ is the sum of the parities. The dimensions are $3\cdot6=18$ each.
 
-**Theorem (the $\mathbb{Z}/2$ grading is the chirality).** Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A^{\mathrm{odd}}$:
+**Theorem (the $\mathbb{Z}/2$ grading is the chirality).** Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A_{\mathrm{odd}}$:
 
 $$
 \Gamma A\Gamma=(-1)^rA
@@ -206,7 +206,7 @@ $$
 $$
 A_{\text{even}}=M_3(V_+)\oplus M_3(V_-),
 \qquad
-A^{\mathrm{odd}}=\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-).
+A_{\mathrm{odd}}=\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-).
 $$
 
 **Proof.** $A_{\text{even}}$ consists of the lines $A_{kl}$ with $k-l$ even, that is with $k$ and $l$ of the same parity, that is with both indices in $\{1,3,5\}$ or both in $\{2,4,6\}$. These are the two diagonal chiral blocks. The odd part is the two off-diagonal blocks.
@@ -293,7 +293,7 @@ of orders $6,3,2$. The eigenvalues are the sixth roots, the cube roots and the s
 | Grading | Group | Pieces | Dimensions | Operator |
 |---|---|---|---|---|
 | full | $\mathbb{Z}/6$ | $A_0,\dots,A_5$ | $6,6,6,6,6,6$ | $\operatorname{Ad}_H$ |
-| chirality | $\mathbb{Z}/2$ | $A_{\text{even}},A^{\mathrm{odd}}$ | $18,18$ | $\operatorname{Ad}_{H^3}=\operatorname{Ad}_\Gamma$ |
+| chirality | $\mathbb{Z}/2$ | $A_{\text{even}},A_{\mathrm{odd}}$ | $18,18$ | $\operatorname{Ad}_{H^3}=\operatorname{Ad}_\Gamma$ |
 | opposite pairs | $\mathbb{Z}/3$ | $B_0,B_1,B_2$ | $12,12,12$ | $\operatorname{Ad}_{H^2}$ |
 
 **Remark (what each quotient sees).** The $\mathbb{Z}/2$ quotient sees the parity of the line, that is the chirality. The $\mathbb{Z}/3$ quotient sees the line modulo three, that is the opposite pair. The full $\mathbb{Z}/6$ sees both at once. **The chirality and the opposite-pair structure are independent: their product is the root.**
@@ -450,7 +450,7 @@ $$
 \boxed{\ \Gamma=H^3,\quad 3+3,\quad \text{mass block }3\times3\text{ of dimension }9 .\ }
 $$
 
-The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ quotient is the chirality, with pieces $A_{\text{even}}\cong M_3\oplus M_3$ and $A^{\mathrm{odd}}$, of dimensions $18+18$; its $\mathbb{Z}/3$ quotient is the opposite-pair grading, with pieces $B_0\cong M_2\oplus M_2\oplus M_2$, $B_1$, $B_2$, of dimensions $12+12+12$. The two quotients are independent and their common refinement is the full grading.
+The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ quotient is the chirality, with pieces $A_{\text{even}}\cong M_3\oplus M_3$ and $A_{\mathrm{odd}}$, of dimensions $18+18$; its $\mathbb{Z}/3$ quotient is the opposite-pair grading, with pieces $B_0\cong M_2\oplus M_2\oplus M_2$, $B_1$, $B_2$, of dimensions $12+12+12$. The two quotients are independent and their common refinement is the full grading.
 
 | Object | Data |
 |---|---|
@@ -474,7 +474,7 @@ The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ q
 | $A_{++},A_{--}$ | the two chiral blocks, both $M_3$ |
 | $M=A_{+-}$ | the mass block, a $3\times3$ matrix |
 | $A_r$ | the $\mathbb{Z}/6$ graded pieces, $\dim A_r=6$ |
-| $A_{\text{even}},A^{\mathrm{odd}}$ | the $\mathbb{Z}/2$ pieces, $\dim=18$ |
+| $A_{\text{even}},A_{\mathrm{odd}}$ | the $\mathbb{Z}/2$ pieces, $\dim=18$ |
 | $B_0,B_1,B_2$ | the $\mathbb{Z}/3$ pieces, $\dim=12$ |
 
 ## Further Reading

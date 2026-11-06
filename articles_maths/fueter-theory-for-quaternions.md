@@ -140,24 +140,24 @@ with the ordinary Lebesgue measures on $\mathbb{R}^4$.
 **Definition.** Let $f_0$ be holomorphic on the disc $D(0,R)\subseteq\mathbb{C}$, written $f_0(A) = u(a,a')+iv(a,a')$ with $A = a+ia'$ and $u,v$ real-valued. The **axial extension** of $f_0$ is
 
 $$
-f^{\mathrm{ax}}_0(\tilde q) = u(q_t,\rho)+\vec u_{\mathrm d}\,v(q_t,\rho),
+f_{\mathrm{ax},0}(\tilde q) = u(q_t,\rho)+\vec u_{\mathrm d}\,v(q_t,\rho),
 $$
 
-defined for $\rho>0$ by replacing $a$ by $q_t$, $a'$ by $\rho$ and the complex unit $i$ by $\vec u_{\mathrm d}$, which is legitimate because $\vec u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_t,0) = 0$, the extension extends continuously to $\rho = 0$ with value $f_0(q_t)$, and $f^{\mathrm{ax}}_0(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ on $B(0,R)$.
+defined for $\rho>0$ by replacing $a$ by $q_t$, $a'$ by $\rho$ and the complex unit $i$ by $\vec u_{\mathrm d}$, which is legitimate because $\vec u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_t,0) = 0$, the extension extends continuously to $\rho = 0$ with value $f_0(q_t)$, and $f_{\mathrm{ax},0}(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ on $B(0,R)$.
 
 ### Fueter's Theorem
 
-**Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f^{\mathrm{ax}}_0$. Then
+**Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $f_{\mathrm{ax},0}$. Then
 
-$$ \boxed{\; F(\tilde q) = \Delta_4f^{\mathrm{ax}}_0(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right) \;} $$
+$$ \boxed{\; F(\tilde q) = \Delta_4f_{\mathrm{ax},0}(\tilde q) = \frac{2\,\partial/\partial\rho u(q_t,\rho)}{\rho}+\vec u_{\mathrm d}\left(\frac{2\,\partial/\partial\rho v(q_t,\rho)}{\rho}-\frac{2\,v(q_t,\rho)}{\rho^2}\right) \;} $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-*Proof.* For $g = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ with central coefficients $A,B$, one has $\partial/\partial q_k\,A = (\partial/\partial\rho A)(\vec u_{\mathrm d})_k$, $\sum_k\vec e_k(\vec u_{\mathrm d})_k = \vec u_{\mathrm d}$ and $\sum_{\nu,k}(\partial/\partial q_k\,(\vec u_{\mathrm d})_\nu)\vec e_k \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. Hence $Dg = gD = (\partial/\partial Q_t\,A-\partial/\partial\rho B-2B/\rho)+\vec u_{\mathrm d}(\partial/\partial Q_t\,B+\partial/\partial\rho A)$, so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial/\partial Q_t\,A = \partial/\partial\rho B+2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying the radial form of the three-dimensional Laplacian and the identity $\Delta_{\mathbb{R}^3}(B\vec u_{\mathrm d}) = \vec u_{\mathrm d}(\Delta_{\mathbb{R}^3}B-2B/\rho^2)$ to the harmonic pair $(u,v)$ gives $\Delta_4f^{\mathrm{ax}}_0(\tilde q) = P+\vec u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$, and the Cauchy–Riemann equations give $Q_\rho+2Q/\rho = \partial/\partial Q_t\,P$, $-\partial/\partial Q_t\,Q = P_\rho$; thus $P,Q$ satisfy the regularity system and extend continuously to $\rho = 0$.
+*Proof.* For $g = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ with central coefficients $A,B$, one has $\partial/\partial q_k\,A = (\partial/\partial\rho A)(\vec u_{\mathrm d})_k$, $\sum_k\vec e_k(\vec u_{\mathrm d})_k = \vec u_{\mathrm d}$ and $\sum_{\nu,k}(\partial/\partial q_k\,(\vec u_{\mathrm d})_\nu)\vec e_k \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. Hence $Dg = gD = (\partial/\partial Q_t\,A-\partial/\partial\rho B-2B/\rho)+\vec u_{\mathrm d}(\partial/\partial Q_t\,B+\partial/\partial\rho A)$, so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial/\partial Q_t\,A = \partial/\partial\rho B+2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying the radial form of the three-dimensional Laplacian and the identity $\Delta_{\mathbb{R}^3}(B\vec u_{\mathrm d}) = \vec u_{\mathrm d}(\Delta_{\mathbb{R}^3}B-2B/\rho^2)$ to the harmonic pair $(u,v)$ gives $\Delta_4f_{\mathrm{ax},0}(\tilde q) = P+\vec u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$, and the Cauchy–Riemann equations give $Q_\rho+2Q/\rho = \partial/\partial Q_t\,P$, $-\partial/\partial Q_t\,Q = P_\rho$; thus $P,Q$ satisfy the regularity system and extend continuously to $\rho = 0$.
 
 ### The Kernel and Injectivity
 
-**Proposition.** The Fueter map $\tau(f_0) = \Delta_4f^{\mathrm{ax}}_0$ vanishes if and only if $f_0$ is affine, $f_0(A) = CA+D$.
+**Proposition.** The Fueter map $\tau(f_0) = \Delta_4f_{\mathrm{ax},0}$ vanishes if and only if $f_0$ is affine, $f_0(A) = CA+D$.
 
 *Proof.* $\tau(f_0) = 0$ forces $u_\rho = 0$ and $\rho v_\rho = v$, so $u = u(q_t)$ and $v = c(q_t)\rho$; then $c' = 0$ and $u = cq_t+d$ with $c,d\in\mathbb{R}$, and complex linearity gives all affine functions. Conversely, $\Delta_4$ annihilates the constants and the linear monomials.
 
@@ -199,13 +199,13 @@ Eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmon
 
 *Proof.* The first display is the computation in the proof of Fueter's theorem, valid for any central-coefficient axial function and the same on the left and on the right; applying the radial Laplacian and eliminating gives $\Delta_4A = 0$ from the two equations, and substituting back gives $\Delta_4B = 2B/\rho^2$.
 
-**Theorem.** The Fueter construction realizes every axially symmetric regular function with central axial coefficients: such an $F$ arises as $\Delta_4f^{\mathrm{ax}}_0$ for a holomorphic $f_0$, uniquely modulo the affine kernel.
+**Theorem.** The Fueter construction realizes every axially symmetric regular function with central axial coefficients: such an $F$ arises as $\Delta_4f_{\mathrm{ax},0}$ for a holomorphic $f_0$, uniquely modulo the affine kernel.
 
 *Proof.* The axial coefficients $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho-v)/\rho^2$ are produced from the harmonic conjugate pair $(u,v)$ by Fueter's theorem, and conversely the regularity system solved for $A,B$ recovers a holomorphic $f_0$ up to the affine functions, by the injectivity of the Fueter map.
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f^{\mathrm{ax}}_0$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \Delta^{(n-1)/2}f^{\mathrm{ax}}_0$ is monogenic, annihilated on the left and on the right by the operator $\partial/\partial q_0+\sum_{j=1}^{n}e_j\,\partial/\partial q_j$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \Delta^{(n-1)/2}f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the operator $\partial/\partial q_0+\sum_{j=1}^{n}e_j\,\partial/\partial q_j$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
 
 *Proof.* The power $(n-1)/2$ is a non-negative integer because $n$ is odd, so the operator is ordinary iteration of the Laplacian; the argument of Fueter's theorem generalizes to each odd $n$, the radial computation with $-3$ replaced by $-n$.
 
@@ -221,7 +221,7 @@ $$
 
 The Fueter construction is exactly the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.
 
-For real Taylor coefficients, $f^{\mathrm{ax}}_0(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ and termwise application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\geq0}a_n\Delta_4(\tilde q^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$, since $\Delta_4(\tilde q^n)$ has degree $n-2$ and at most polynomial growth; termwise differentiation is therefore justified. In general, with $\mathcal{P}_k$ the homogeneous quaternion-valued polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : DP = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition
+For real Taylor coefficients, $f_{\mathrm{ax},0}(\tilde q) = \sum_{n\geq0}a_n\tilde q^n$ and termwise application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\geq0}a_n\Delta_4(\tilde q^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$, since $\Delta_4(\tilde q^n)$ has degree $n-2$ and at most polynomial growth; termwise differentiation is therefore justified. In general, with $\mathcal{P}_k$ the homogeneous quaternion-valued polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : DP = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition
 
 $$
 \mathcal{P}_k = \bigoplus_{j=0}^{k}\tilde q^j\mathcal{M}_{k-j}
@@ -233,7 +233,7 @@ gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion 
 
 The Fueter operator $D = \sum_\mu e_\mu\,\partial/\partial Q_\mu$ and its conjugate $\bar D = \partial/\partial Q_t-\vec D$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial/\partial q_t+I\,\partial/\partial\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial/\partial Q_t\,F_0 = \mathrm{div}\,\vec F$, $\partial/\partial Q_t\,\vec F = -\mathrm{grad}\,F_0-\mathrm{rot}\,\vec F$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set. The system also admits a **Debye-type reformulation**, in which each component is expressed through its own radial derivative, the $q_t$-derivative of the radius contracted with the others, and the components of $\vec q\times\nabla$ of the others; the four relations are the radius contractions of the four component equations, so they hold identically for a regular function, and in one complex variable the same pair of identities is equivalent to the Cauchy–Riemann relations.
 
-The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4f^{\mathrm{ax}}_0 = 2u_\rho/\rho+\vec u_{\mathrm d}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $\tilde q = q_t+I\rho$, and the axial representation $F = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ reduces regularity to $\partial/\partial Q_t\,A = \partial/\partial\rho B+2B/\rho$, $\partial/\partial Q_t\,B = -\partial/\partial\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
+The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4f_{\mathrm{ax},0} = 2u_\rho/\rho+\vec u_{\mathrm d}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $\tilde q = q_t+I\rho$, and the axial representation $F = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ reduces regularity to $\partial/\partial Q_t\,A = \partial/\partial\rho B+2B/\rho$, $\partial/\partial Q_t\,B = -\partial/\partial\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
 
 Regular functions have the induced series and the monogenic Taylor expansion of the Fischer decomposition, while slice-regular series form the distinct class the construction converts into regular functions. In Clifford terms, $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, and this article treats the elliptic classical instance of the Fueter–Sce correspondence.
 
@@ -255,7 +255,7 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; the imaginary units of $\mathbb{H}$ form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Slice through $I$, a copy of the complex plane |
 | $A, B$ | Axial coefficients, $F = A(q_t,\rho)+\vec u_{\mathrm d}B(q_t,\rho)$ |
-| $f^{\mathrm{ax}}_0$, $\tau(f_0) = \Delta_4f^{\mathrm{ax}}_0$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced regular function |
+| $f_{\mathrm{ax},0}$, $\tau(f_0) = \Delta_4f_{\mathrm{ax},0}$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced regular function |
 | $\mathcal{P}_k$, $\mathcal{M}_k$ | Homogeneous polynomials of degree $k$; monogenic ones; Fischer decomposition |
 | $\mathrm{Cl}^0_{0,3}\cong\mathrm{Cl}_{0,2}\cong\mathbb{H}$ | Clifford identifications of the quaternion algebra |
 

@@ -54,17 +54,17 @@ The last point is the decisive one: the hole theory is a correct but redundant b
 The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as
 
 $$
-\boxed{\;\tilde{Ξ}^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right]\;},
+\boxed{\;\tilde{Ξ}_{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\exp(-ip\cdot x) + b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\exp(+ip\cdot x)\right]\;},
 $$
 
-in which the **annihilation** operator multiplies the positive-frequency spinors and the **creation** operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.
+in which the **annihilation** operator multiplies the positive-frequency spinors and the **creation** operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a_{\mathrm{fop}}|0\rangle = b_{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.
 
 ### Normal ordering
 
 With the anticommutator the Hamiltonian becomes, after normal ordering,
 
 $$
-\boxed{\;H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right)\;},
+\boxed{\;H_{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_{\mathrm{fop},r}^{\dagger} a_{\mathrm{fop},r} + b_{\mathrm{fop},r}^{\dagger} b_{\mathrm{fop},r}\right)\;},
 $$
 
 a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.
@@ -89,7 +89,7 @@ The framework's mass shell $\tilde P\tilde P^{\natural} = -m^2c^2\,e_t$ has two 
 
 ### The operator content is already the reinterpretation
 
-The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\vec p}(a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger} b^{\mathrm{fop}})$ would be **unbounded below** and no stable vacuum would exist; that the **anticommutator** replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.
+The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\vec p}(a_{\mathrm{fop}}^{\dagger} a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger} b_{\mathrm{fop}})$ would be **unbounded below** and no stable vacuum would exist; that the **anticommutator** replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.
 
 ### The infinite charge is the normal-ordering constant
 
@@ -154,9 +154,9 @@ The biquaternion framework is naturally on this second side. Its mass shell has 
 | Symbol | Meaning |
 |---|---|
 | $E=\pm\sqrt{\vec p^2+m^2}$ | Two branches of the Dirac dispersion |
-| $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Particle and antiparticle annihilation operators |
+| $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Particle and antiparticle annihilation operators |
 | $w^{(r)}$, $v^{(r)}$ | Positive- and negative-frequency spinors |
-| $|0\rangle$, $a^{\mathrm{fop}}|0\rangle=b^{\mathrm{fop}}|0\rangle=0$ | Fock vacuum; no sea |
+| $|0\rangle$, $a_{\mathrm{fop}}|0\rangle=b_{\mathrm{fop}}|0\rangle=0$ | Fock vacuum; no sea |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $e$ | Positive unit of charge; the electron carries $-e$ |
 | $\mathcal C$ | Framework's charge-conjugation real structure on $\Delta=S\oplus\bar S$ |

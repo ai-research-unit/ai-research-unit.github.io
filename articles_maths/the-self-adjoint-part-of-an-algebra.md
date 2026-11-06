@@ -106,7 +106,7 @@ Let $A = k[G]$ with the involution $g^* = g^{-1}$. Then the self-adjoint part is
 
 ### The Exchange Involution
 
-Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The self-adjoint part is the diagonal $\{(b,b)\} \cong B$, and the skew part is the antidiagonal $\{(b,-b)\} \cong B$. The ordinary product of the diagonal is $(b,b)(c,c) = (bc,cb)$, which stays in the diagonal exactly when $b$ and $c$ commute; the symmetrised product is $(b \bullet c, b \bullet c)$, so $H(A)$ is the Jordan algebra $B^+$ of *Jordan Algebras*, and it is a subalgebra exactly when $B$ is commutative.
+Let $A = B \times B_{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The self-adjoint part is the diagonal $\{(b,b)\} \cong B$, and the skew part is the antidiagonal $\{(b,-b)\} \cong B$. The ordinary product of the diagonal is $(b,b)(c,c) = (bc,cb)$, which stays in the diagonal exactly when $b$ and $c$ commute; the symmetrised product is $(b \bullet c, b \bullet c)$, so $H(A)$ is the Jordan algebra $B^+$ of *Jordan Algebras*, and it is a subalgebra exactly when $B$ is commutative.
 
 ## Summary
 

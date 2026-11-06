@@ -6,7 +6,7 @@ A **chiral fermion** is a fermion whose left and right parts carry *inequivalent
 
 This article asks what the biquaternion framework, in the notation of the companion articles, supplies for that structure. The presentation is organized around one question — *can the framework distinguish the two parts in a gauge interaction?* — and the answer is split, at the outset, into the three categories the corpus uses.
 
-- **Established, and recomputed below.** The state of a fermion is an element of $\mathbb{B}$, and its chirality is a subscript with two values. The two values are read from one operator, the chirality operator of the frame $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ — a pure right multiplier — which carries the $L$ part to minus itself and the $R$ part to plus itself. The mass bilinear of the corpus pairs one part of each value and vanishes on an element of one value. A *chiral* abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the action $Q\mapsto Qb$ by the charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges, the covariant derivative is covariant for arbitrary charges, and the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.
+- **Established, and recomputed below.** The state of a fermion is an element of $\mathbb{B}$, and its chirality is a subscript with two values. The two values are read from one operator, the chirality operator of the frame $\xi=-iR_{\mathrm{axf},\vec e_z}$ — a pure right multiplier — which carries the $L$ part to minus itself and the $R$ part to plus itself. The mass bilinear of the corpus pairs one part of each value and vanishes on an element of one value. A *chiral* abelian gauge symmetry with independent charges $ϙ_L,ϙ_R$ is consistent: the action $Q\mapsto Qb$ by the charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges, the covariant derivative is covariant for arbitrary charges, and the curvature is $\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The mass bilinear is gauge invariant if and only if $ϙ_L=ϙ_R$: a chiral fermion cannot carry a bare Dirac mass.
 - **Established from the read list, and sharpened here.** The gauge group of the biquaternionic abelian gauge principle is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$. A group drawn from the centre multiplies the two values alike, so it assigns them equal charges: it is vector-like and cannot be chiral. A chiral abelian group needs a right multiplication by an element off the centre, and $b$ is that element whenever $ϙ_L\neqϙ_R$ — the structure whose algebraic status the gauge article leaves open.
 - **Gap, left visible.** The algebra's real structure $\flat=-{}^{*}$ supplies the shape of a conjugate pairing with the quantum numbers of a Majorana-type mass, but the single-field equation built on it is not a physical mass: its central-phase plane waves sit on the spacelike locus (the companion *Antilinear Structure and the Two Kinds of Mass* shows this). The operation that exchanges the two values is the coefficient bar, and a physical Majorana pairing must be built on a conjugation of that kind. The parent's own mass term is the linear chiral pair, through which the continuous central phase passes and which conserves the vector $\mathrm{U}(1)$; it is not the antilinear pairing. Whether a given fermion uses the bar is the question of the companion *The Neutrino and Majorana Fermions in Biquaternionic Form*. It is recorded here only for its consequence: the framework's vector-like gauge structure and the real structure's antilinear pairing do not naturally meet.
 
@@ -18,12 +18,12 @@ No statement of the body is written with an array. The argument is carried by el
 
 **Chirality is a side.** Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. A cell is $L_aR_b$, acting $Q\mapsto aQb$, and the sixteen cells are a basis of the operators on $\mathbb{B}$. The pure left multipliers form a four-dimensional family, the pure right multipliers another, and the two overlap in the scalar multiples of the identity; every other direction of the operator space carries both slots at once. The article takes the notion from the corpus's operator article (*Operator Chirality on the Biquaternion Algebra*) and adds nothing to it.
 
-**The state is an element.** In this framework the state of a fermion is an element of $\mathbb{B}$, written $\tilde{Ξ}^{\mathrm{sp}}$, and a general element is written $Q$. Every statement below is a statement about elements, their products, and one cell.
+**The state is an element.** In this framework the state of a fermion is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$, and a general element is written $Q$. Every statement below is a statement about elements, their products, and one cell.
 
 **The chirality operator of the frame.** That cell is
 
 $$
-\xi=-iR_{\vec e_z}^{\mathrm{axf}},
+\xi=-iR_{\mathrm{axf},\vec e_z},
 \qquad
 \xi\,Q=-i\,Q\,\vec e_z ,
 $$
@@ -32,7 +32,7 @@ a **pure right multiplier**: it multiplies on the right by the third unit, with 
 
 **The two slots are on opposite sides.** The gradient of the corpus multiplies on the left, and the chirality operator multiplies on the right. That difference of sides is the operator statement of chirality, and no change of basis moves one side into the other.
 
-**The value is the subscript.** The operator acts on an element by $\xi Q=-iQ\vec e_z$, so an element is $L$ when right multiplication by $\vec e_z$ returns $-i$ times it, and $R$ when it returns $+i$ times it: $\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R$ for a state, $Q_L,Q_R$ for a general element. The letters are the Dirac ones, $L$ is the minus value and $R$ the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*). The two parts are of two complex dimensions each, every element is one part of each value, and only the zero element is both.
+**The value is the subscript.** The operator acts on an element by $\xi Q=-iQ\vec e_z$, so an element is $L$ when right multiplication by $\vec e_z$ returns $-i$ times it, and $R$ when it returns $+i$ times it: $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ for a state, $Q_L,Q_R$ for a general element. The letters are the Dirac ones, $L$ is the minus value and $R$ the plus one (*Matrix Representations Conventions*, §*The Subscript on an Element*). The two parts are of two complex dimensions each, every element is one part of each value, and only the zero element is both.
 
 **The rule for products.** A product takes the letter of its right factor, $(QR)\vec e_z=Q(R\vec e_z)$, and a left multiplication keeps the letter, $(aQ)\vec e_z=a(Q\vec e_z)$. Both are the definition applied once, and they are the rule the gauge section below runs on: a right multiplication can return two different factors on the two values, a left multiplication applies one element to both.
 
@@ -103,9 +103,9 @@ an identity for arbitrary $ϙ_L,ϙ_R$.
 
 The gauge group of the biquaternionic abelian gauge principle is not chosen; it is the **$*$-unitary part of the centre** of the algebra (*The Gauge Principle in Biquaternionic Form*), the complex line $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ whose $*$-unitary part is a circle. The article takes that result as given and reads its consequence for the two values.
 
-A central element is scalar, so it is a left multiplier and a right multiplier at once, and its coefficient of $\vec e_z$ is zero: the two parts read the same factor. Every group drawn from the centre therefore assigns the two parts the same charge. Such a group cannot distinguish $\tilde{Ξ}^{\mathrm{sp}}_L$ from $\tilde{Ξ}^{\mathrm{sp}}_R$, and the abelian sector the framework supplies canonically is **vector-like**.
+A central element is scalar, so it is a left multiplier and a right multiplier at once, and its coefficient of $\vec e_z$ is zero: the two parts read the same factor. Every group drawn from the centre therefore assigns the two parts the same charge. Such a group cannot distinguish $\tilde{Ξ}_{\mathrm{sp},L}$ from $\tilde{Ξ}_{\mathrm{sp},R}$, and the abelian sector the framework supplies canonically is **vector-like**.
 
-**The axial rotation is off the centre.** The chirality operator generates a one-parameter group by its exponential: $\tilde{Ξ}^{\mathrm{sp}}\mapsto e^{i\alpha\xi}\tilde{Ξ}^{\mathrm{sp}}$, which is the right multiplication $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}\,e^{\alpha\vec e_z}$ (*Anomalies and Anomaly Cancellation in Biquaternionic Form*, where the identity is used). Its family is a family of right multiplications, and it multiplies the $L$ part by $e^{-i\alpha}$ and the $R$ part by $e^{+i\alpha}$: it is genuinely axial, and its generator $\vec e_z$ is not central, so the group it generates is not a subgroup of the centre.
+**The axial rotation is off the centre.** The chirality operator generates a one-parameter group by its exponential: $\tilde{Ξ}_{\mathrm{sp}}\mapsto e^{i\alpha\xi}\tilde{Ξ}_{\mathrm{sp}}$, which is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\,e^{\alpha\vec e_z}$ (*Anomalies and Anomaly Cancellation in Biquaternionic Form*, where the identity is used). Its family is a family of right multiplications, and it multiplies the $L$ part by $e^{-i\alpha}$ and the $R$ part by $e^{+i\alpha}$: it is genuinely axial, and its generator $\vec e_z$ is not central, so the group it generates is not a subgroup of the centre.
 
 **The qualification.** The centre can act axially, but only with the two charges locked. A central phase $\lambda$ applied after the bar multiplies $\bar Q$ by $\bar\lambda$, and the bar exchanges the two values, so the two parts receive opposite phases: the ratio $ϙ_R=-ϙ_L$, and no other. Independent charges need the element $b$ off the centre. The implication is what the article uses: the centre can act axially, but never with independent charges, so a non-central element is the prerequisite for a general chiral gauge sector. There the gap of the gauge article is that the Lie algebra of $\mathbb{B}$ read as an associative algebra is $\mathfrak{gl}(2,\mathbb{C})$, whose traceless part is not compact, so that a reality and tracelessness condition must select a compact gauge algebra before a Yang–Mills structure can be claimed. The present article inherits that gap and sharpens its meaning: without those conditions the framework has no chiral gauge group at all, because the only gauge group it supplies canonically is the scalar centre.
 
@@ -114,12 +114,12 @@ A central element is scalar, so it is a left multiplier and a right multiplier a
 The biquaternion Dirac equation of the parent is a pair of one-sided equations,
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\,\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\,\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\,\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-The first is the equation of the $R$ part and the second of the $L$ part. They are the two lines of one chiral pair, not two independent dynamics: eliminating one part gives the massive Klein–Gordon equation, and in the massless case the lines decouple into $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$. The pair is complete as written, both lines acting from the left, and $\natural$ is the conjugation that separates them (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*).
+The first is the equation of the $R$ part and the second of the $L$ part. They are the two lines of one chiral pair, not two independent dynamics: eliminating one part gives the massive Klein–Gordon equation, and in the massless case the lines decouple into $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. The pair is complete as written, both lines acting from the left, and $\natural$ is the conjugation that separates them (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*).
 
 The mass term is **linear** in the field and it **pairs the two values**, one part of each. The same equation, read on the whole algebra, has the two-sided form
 
@@ -129,11 +129,11 @@ $$
 
 in which the derivative acts from the left and the mass from the right through the chirality operator, the conjugation supplying the antilinear part (Kravchenko's dictionary; the companion *The Dirac Equation in Biquaternionic Form*). The pair is linear in the field and the two-sided equation is antilinear in its mass term, so they are different operators, and the pair is the definition.
 
-**The bilinear.** The mass bilinear of the corpus is the Dirac bilinear $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}}$. The cell in it is the timelike frame cell, a pure right multiplier by $\vec e_x$, and $\vec e_x\vec e_z=-\vec e_z\vec e_x$: the cell therefore carries a part of one value into a part of the other, so the bilinear pairs the $L$ part with the $R$ part and never a part with itself. Two consequences are one line each. Under the discrete transformation $\tilde{Ξ}^{\mathrm{sp}}\mapsto\xi\tilde{Ξ}^{\mathrm{sp}}$ the bilinear changes sign, so it is odd in the value; and on an element of one value it vanishes, because the second value is absent. A single-valued element has no Dirac mass bilinear at all, which is the precise sense in which a lone Weyl field cannot carry a **Dirac** mass. It is not a statement that such a field is massless: a Majorana mass pairs the field with its own conjugate and needs no second value.
+**The bilinear.** The mass bilinear of the corpus is the Dirac bilinear $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$. The cell in it is the timelike frame cell, a pure right multiplier by $\vec e_x$, and $\vec e_x\vec e_z=-\vec e_z\vec e_x$: the cell therefore carries a part of one value into a part of the other, so the bilinear pairs the $L$ part with the $R$ part and never a part with itself. Two consequences are one line each. Under the discrete transformation $\tilde{Ξ}_{\mathrm{sp}}\mapsto\xi\tilde{Ξ}_{\mathrm{sp}}$ the bilinear changes sign, so it is odd in the value; and on an element of one value it vanishes, because the second value is absent. A single-valued element has no Dirac mass bilinear at all, which is the precise sense in which a lone Weyl field cannot carry a **Dirac** mass. It is not a statement that such a field is massless: a Majorana mass pairs the field with its own conjugate and needs no second value.
 
-**The vector phase and the axial rotation.** Both parts carry the phase $\lambda$ under the central phase $Q\mapsto\lambda Q$, and the phases $e^{-i\alpha}$ and $e^{+i\alpha}$ under the axial rotation $Q\mapsto Qe^{\alpha\vec e_z}$. The bilinear pairs one part with the other, so the two phases enter it as a product: the amplitude the mass term is built from carries the phase $e^{2i\alpha}$, and the term is invariant exactly when $e^{2i\alpha}=1$, that is for $\alpha\in\pi\mathbb{Z}$, the sign $\tilde{Ξ}^{\mathrm{sp}}\mapsto-\tilde{Ξ}^{\mathrm{sp}}$. The mass term therefore conserves the vector $\mathrm{U}(1)$ and breaks the axial one; the survival of $\alpha\in\pi\mathbb{Z}$ is the statement that a bilinear is even in the field. The axial current, built from $\xi$ in the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form*, consequently has a divergence proportional to the mass bilinear and vanishes only at $m=0$; the vector current is conserved at every $m$.
+**The vector phase and the axial rotation.** Both parts carry the phase $\lambda$ under the central phase $Q\mapsto\lambda Q$, and the phases $e^{-i\alpha}$ and $e^{+i\alpha}$ under the axial rotation $Q\mapsto Qe^{\alpha\vec e_z}$. The bilinear pairs one part with the other, so the two phases enter it as a product: the amplitude the mass term is built from carries the phase $e^{2i\alpha}$, and the term is invariant exactly when $e^{2i\alpha}=1$, that is for $\alpha\in\pi\mathbb{Z}$, the sign $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}$. The mass term therefore conserves the vector $\mathrm{U}(1)$ and breaks the axial one; the survival of $\alpha\in\pi\mathbb{Z}$ is the statement that a bilinear is even in the field. The axial current, built from $\xi$ in the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form*, consequently has a divergence proportional to the mass bilinear and vanishes only at $m=0$; the vector current is conserved at every $m$.
 
-**The real structure.** The algebra's antilinear involution is the real structure $\tilde{Ξ}^{\mathrm{sp}\flat}=-\tilde{Ξ}^{\mathrm{sp}*}$. It pairs an element with its conjugate, it is $\mathbb{C}$-antilinear and order-reversing with a sign, its fixed space is $\mathbb{M}_-$, and a central scalar multiplies it by the conjugate, $(\lambda F)^{\flat}=\bar\lambda F^{\flat}$. Its single-field equation $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}=m\tilde{Ξ}^{\mathrm{sp}\flat}$ is therefore not invariant under the continuous central phase, and its plane waves are spacelike, so it is retired as a physical mass (the companion *Antilinear Structure and the Two Kinds of Mass*). It neither preserves nor exchanges the two values — it mixes them, as the star does — and it preserves the sector split, so the operation that exchanges the values is the bar and not $\flat$. That is the precise difference between a Majorana-type pairing and an ordinary Dirac mass.
+**The real structure.** The algebra's antilinear involution is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$. It pairs an element with its conjugate, it is $\mathbb{C}$-antilinear and order-reversing with a sign, its fixed space is $\mathbb{M}_-$, and a central scalar multiplies it by the conjugate, $(\lambda F)^{\flat}=\bar\lambda F^{\flat}$. Its single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is therefore not invariant under the continuous central phase, and its plane waves are spacelike, so it is retired as a physical mass (the companion *Antilinear Structure and the Two Kinds of Mass*). It neither preserves nor exchanges the two values — it mixes them, as the star does — and it preserves the sector split, so the operation that exchanges the values is the bar and not $\flat$. That is the precise difference between a Majorana-type pairing and an ordinary Dirac mass.
 
 **The price of the antilinear mass term.** Under $F\mapsto\lambda F$ the derivative term is multiplied by $\lambda$ and the conjugated term by $\bar\lambda$, so the two-sided equation holds for every field only for real $\lambda$. The two-sided form is thus the place where the continuous central phase is broken to a sign, and the one-sided pair, which is linear, is the place where it is conserved.
 
@@ -194,7 +194,7 @@ A statement about the two values is therefore not a statement about the sectors,
 
 2. **Which interpretation of the phase is physical?** A central phase multiplies the two values alike; applied after the bar it multiplies them with opposite signs. Whether the physical field is read as it stands or through the bar decides between the vector-like and the axial reading, and this article does not decide it.
 
-3. **What is the physical status of the real structure's pairing?** The parent's mass term is the linear chiral pair, through which the continuous central phase passes, so the framework's fermion number is conserved by it. The algebra's $\flat=-{}^{*}$ gives the shape of a conjugate pairing of Majorana type, but the single-field equation $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}=m\tilde{Ξ}^{\mathrm{sp}\flat}$ has spacelike plane waves and is retired as a physical mass (the companion *Antilinear Structure and the Two Kinds of Mass*). A physical Majorana mass must be carried by an antilinear conjugation that exchanges the two values, which in this article's language is the coefficient bar; whether a given fermion — the neutrino in particular — uses it is the companion's question.
+3. **What is the physical status of the real structure's pairing?** The parent's mass term is the linear chiral pair, through which the continuous central phase passes, so the framework's fermion number is conserved by it. The algebra's $\flat=-{}^{*}$ gives the shape of a conjugate pairing of Majorana type, but the single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ has spacelike plane waves and is retired as a physical mass (the companion *Antilinear Structure and the Two Kinds of Mass*). A physical Majorana mass must be carried by an antilinear conjugation that exchanges the two values, which in this article's language is the coefficient bar; whether a given fermion — the neutrino in particular — uses it is the companion's question.
 
 4. **Where does the Higgs field enter?** The selection rule identifies the quantum numbers a compensating scalar must carry, and the companion *The Higgs Mechanism in Biquaternionic Form* carries out the abelian mechanism: the central scalar, its circle of minima, and the gauge-boson mass from the scalar kinetic term. The Yukawa coupling of that scalar to the two parts — the step that would give the fermion its mass — is not constructed there, and is the open end of this question.
 
@@ -213,32 +213,32 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},
 $$
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\xi .
+\gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=\xi .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\xi .
+\gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=\xi .
 $$
 
-A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
+A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance $\gamma_0\gamma_1=i^2L_{\mathrm{pau},e_t\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}$, and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
 
 $\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\xi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the frame cell $\gamma_5=\xi$. The distinction is the one between the abstract central sign and its representative.
 
@@ -270,9 +270,9 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-A chiral fermion is one whose two parts carry inequivalent gauge representations. In the biquaternion framework the two parts are read from one operator and named by one subscript. Operator chirality is the side on which an operator multiplies, and the state is an element of $\mathbb{B}$; the subscript takes the values $L$ and $R$, $L$ being the minus value and $R$ the plus one; and the operator is the frame's chirality operator $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier acting $\xi Q=-iQ\vec e_z$ and carrying $Q_L$ to $-Q_L$ and $Q_R$ to $+Q_R$. Every element is one part of each value and only zero is both; a product takes the letter of its right factor, and a left multiplication keeps the letter; the value is Lorentz invariant with or without a mass, because $\xi$ commutes with the six Lorentz cells; the coefficient bar exchanges the two values, and the Hermitian conjugation preserves neither of them.
+A chiral fermion is one whose two parts carry inequivalent gauge representations. In the biquaternion framework the two parts are read from one operator and named by one subscript. Operator chirality is the side on which an operator multiplies, and the state is an element of $\mathbb{B}$; the subscript takes the values $L$ and $R$, $L$ being the minus value and $R$ the plus one; and the operator is the frame's chirality operator $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier acting $\xi Q=-iQ\vec e_z$ and carrying $Q_L$ to $-Q_L$ and $Q_R$ to $+Q_R$. Every element is one part of each value and only zero is both; a product takes the letter of its right factor, and a left multiplication keeps the letter; the value is Lorentz invariant with or without a mass, because $\xi$ commutes with the six Lorentz cells; the coefficient bar exchanges the two values, and the Hermitian conjugation preserves neither of them.
 
-The Dirac mass bilinear pairs one part of each value, because the timelike frame cell it carries anticommutes with $\xi$; it changes sign under $\tilde{Ξ}^{\mathrm{sp}}\mapsto\xi\tilde{Ξ}^{\mathrm{sp}}$ and vanishes on an element of one value. The gauge phases enter it as a product, so the mass term is invariant under the central phase and, under the axial rotation, only for $\alpha\in\pi\mathbb{Z}$: it conserves the vector $\mathrm{U}(1)$ and breaks the axial one.
+The Dirac mass bilinear pairs one part of each value, because the timelike frame cell it carries anticommutes with $\xi$; it changes sign under $\tilde{Ξ}_{\mathrm{sp}}\mapsto\xi\tilde{Ξ}_{\mathrm{sp}}$ and vanishes on an element of one value. The gauge phases enter it as a product, so the mass term is invariant under the central phase and, under the axial rotation, only for $\alpha\in\pi\mathbb{Z}$: it conserves the vector $\mathrm{U}(1)$ and breaks the axial one.
 
 A chiral abelian gauge symmetry with independent charges is consistent. The charge element $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ multiplies the two parts by the two charges; the action $Q\mapsto Qe^{\frac{i}{\hbar}\Gamma b}$ and the covariant derivative $D_\mu Q=\partial Q/\partial R_\mu+\tfrac{i}{\hbar}A_\mu Qb$ satisfy $(D_\mu Q)'=(D_\mu Q)e^{\frac{i}{\hbar}\Gamma b}$ for arbitrary charges, with curvature $[D_\mu,D_\nu]Q=\tfrac{i}{\hbar}F_{\mu\nu}Qb$. The element $b$ is central only when $ϙ_L=ϙ_R$, and then the action coincides with the parent's left multiplication. That is also the condition for the mass bilinear to be gauge invariant, and the two occurrences of it — one for the mass, one for the side of the connection — are one statement seen twice.
 
@@ -289,11 +289,11 @@ Two gaps are left visible. Without a non-central gauge structure the framework h
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\ \mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | The centre of the algebra; its $*$-unitary part is the abelian gauge group |
-| $\tilde{Ξ}^{\mathrm{sp}},\ Q$ | The state, an element of $\mathbb{B}$, and a general element |
-| $Q_L,\ Q_R$; $\tilde{Ξ}^{\mathrm{sp}}_L,\ \tilde{Ξ}^{\mathrm{sp}}_R$ | The two values of the subscript; $L$ is the minus value; $(QR)$ takes the letter of $R$, and a left multiplication keeps the letter |
-| $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality operator of the frame, $\xi Q=-iQ\vec e_z$, $\xi^2=I$, trace $0$; a **pure right multiplier**, so Lorentz invariant; not central |
+| $\tilde{Ξ}_{\mathrm{sp}},\ Q$ | The state, an element of $\mathbb{B}$, and a general element |
+| $Q_L,\ Q_R$; $\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the subscript; $L$ is the minus value; $(QR)$ takes the letter of $R$, and a left multiplication keeps the letter |
+| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | Chirality operator of the frame, $\xi Q=-iQ\vec e_z$, $\xi^2=I$, trace $0$; a **pure right multiplier**, so Lorentz invariant; not central |
 | $\bar Q$ | Coefficient conjugation; exchanges the two values |
-| $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}}$ | Dirac mass bilinear; pairs one part of each value; odd in the value |
+| $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ | Dirac mass bilinear; pairs one part of each value; odd in the value |
 | $\natural$ | Quaternion conjugation; the conjugation that separates the two lines of the pair |
 | $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $ϙ_L,\ ϙ_R$ | The two charges (parameters) |
@@ -304,8 +304,8 @@ Two gaps are left visible. Without a non-central gauge structure the framework h
 | $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$ | Abelian curvature |
 | $[D_\mu,D_\nu]Q=\tfrac{i}{\hbar}F_{\mu\nu}Qb$ | Chiral curvature identity |
 | $e^{\alpha\vec e_z}$ | Axial rotation; $L\mapsto e^{-i\alpha}$, $R\mapsto e^{+i\alpha}$ |
-| $\tilde{Ξ}^{\mathrm{sp}\flat}=-\tilde{Ξ}^{\mathrm{sp}*}$ | Anti-Hermitian conjugation; the algebra's real structure, which preserves $\mathbb{M}_\pm$ and mixes the two values |
-| $iR_{\vec e_x}^{\mathrm{axf}}$ | Timelike frame cell; anticommutes with $\xi$, so it carries each value into the other |
+| $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugation; the algebra's real structure, which preserves $\mathbb{M}_\pm$ and mixes the two values |
+| $iR_{\mathrm{axf},\vec e_x}$ | Timelike frame cell; anticommutes with $\xi$, so it carries each value into the other |
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.

@@ -79,19 +79,19 @@ the inner products being those of *Character Theory* taken in the respective gro
 
 ## The Character Formula
 
-**Theorem (the induced character formula).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\chi^{\mathrm{ind}} = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$
+**Theorem (the induced character formula).** Let $k$ be a splitting field of characteristic zero with $\lvert G\rvert$ invertible, let $H\leq G$, let $W$ be a $k[H]$-module with character $\chi$ and let $\chi_{\mathrm{ind}} = \operatorname{Ind}_H^G\chi$ be the character of the induced module. Then for $g\in G$
 
 $$
-\boxed{\;\chi^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr)\;},
+\boxed{\;\chi_{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\sum_{\substack{x\in G\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr) = \sum_{\substack{x\in T\\x^{-1}gx\in H}}\chi\bigl(x^{-1}gx\bigr)\;},
 $$
 
-the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\chi^{\mathrm{ind}}(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\chi^{\mathrm{ind}}(1) = [G:H]\chi(1)$.
+the second sum being taken over a set $T$ of left coset representatives of $H$ in $G$; in particular $\chi_{\mathrm{ind}}(g) = 0$ unless $g$ is conjugate to an element of $H$, and $\chi_{\mathrm{ind}}(1) = [G:H]\chi(1)$.
 
 *Proof.* The module $k[G]\otimes_{k[H]}W$ has the $k$-basis $x\otimes w$ with $x\in T$ running over a transversal, and the trace of $g$ on this module is the sum over the $x$ for which $g$ maps the summand $x\otimes W$ to itself; the condition for that is $x^{-1}gx\in H$, and on such a summand the action of $g$ on $x\otimes W$ corresponds to the action of $x^{-1}gx$ on $W$, whose trace is $\chi(x^{-1}gx)$. This gives the second display, and the first follows since each $h\in H$ with $x^{-1}gx\in H$ contributes the same term over the $\lvert H\rvert$ elements of the coset.
 
-**Corollary (permutation characters).** For the trivial module $W = \mathbf{1}_H$ the formula gives the number of fixed points: $\mathbf{1}^{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\lvert\{x\in G : x^{-1}gx\in H\}\rvert$, the number of left cosets fixed by $g$, and $\mathbf{1}^{\mathrm{ind}}(g) = \lvert\{x\in T : x^{-1}gx\in H\}\rvert$.
+**Corollary (permutation characters).** For the trivial module $W = \mathbf{1}_H$ the formula gives the number of fixed points: $\mathbf{1}_{\mathrm{ind}}(g) = \frac{1}{\lvert H\rvert}\lvert\{x\in G : x^{-1}gx\in H\}\rvert$, the number of left cosets fixed by $g$, and $\mathbf{1}_{\mathrm{ind}}(g) = \lvert\{x\in T : x^{-1}gx\in H\}\rvert$.
 
-**Example (induction from $S_2$ to $S_3$).** Let $G = S_3$, let $H = S_2 = \{e,(12)\}$ be the stabiliser of the point $3$, and let $W$ be the trivial $k[H]$-module. The induced module is the permutation module $k[S_3/S_2]$, of dimension $3$, and the formula gives the values $3$ at the identity, $1$ at each transposition and $0$ at each 3-cycle. Decomposing with the table of *Character Theory*: the multiplicities are $\langle\mathbf{1}^{\mathrm{ind}},\mathbf{1}\rangle = \frac{1}{6}(3+3\cdot1+2\cdot0) = 1$, $\langle\mathbf{1}^{\mathrm{ind}},\varepsilon\rangle = \frac{1}{6}(3+3\cdot(-1)+0) = 0$ and $\langle\mathbf{1}^{\mathrm{ind}},\sigma\rangle = \frac{1}{6}(3\cdot2+3\cdot0+2\cdot0) = 1$, so that
+**Example (induction from $S_2$ to $S_3$).** Let $G = S_3$, let $H = S_2 = \{e,(12)\}$ be the stabiliser of the point $3$, and let $W$ be the trivial $k[H]$-module. The induced module is the permutation module $k[S_3/S_2]$, of dimension $3$, and the formula gives the values $3$ at the identity, $1$ at each transposition and $0$ at each 3-cycle. Decomposing with the table of *Character Theory*: the multiplicities are $\langle\mathbf{1}_{\mathrm{ind}},\mathbf{1}\rangle = \frac{1}{6}(3+3\cdot1+2\cdot0) = 1$, $\langle\mathbf{1}_{\mathrm{ind}},\varepsilon\rangle = \frac{1}{6}(3+3\cdot(-1)+0) = 0$ and $\langle\mathbf{1}_{\mathrm{ind}},\sigma\rangle = \frac{1}{6}(3\cdot2+3\cdot0+2\cdot0) = 1$, so that
 
 $$
 \operatorname{Ind}_{S_2}^{S_3}\mathbf{1}_{S_2} \cong \mathbf{1}\oplus\sigma ,
@@ -133,25 +133,25 @@ the **Mackey tensor product theorem**, whose right-hand side is induced from the
 
 ## Clifford Theory
 
-**Definition.** Let $N\trianglelefteq G$ be a normal subgroup, let $\theta$ be an irreducible character of $N$ and let $V$ be an irreducible $k[G]$-module. One says that $V$ **lies over** $\theta$ if $\vartheta^{\mathrm{chr}}$ occurs in $\operatorname{Res}_N^GV$, and the **inertia group** of $\vartheta^{\mathrm{chr}}$ is
+**Definition.** Let $N\trianglelefteq G$ be a normal subgroup, let $\theta$ be an irreducible character of $N$ and let $V$ be an irreducible $k[G]$-module. One says that $V$ **lies over** $\theta$ if $\vartheta_{\mathrm{chr}}$ occurs in $\operatorname{Res}_N^GV$, and the **inertia group** of $\vartheta_{\mathrm{chr}}$ is
 
 $$
-I_G(\vartheta^{\mathrm{chr}}) = \{g\in G : \vartheta^{\mathrm{chr}}^g = \vartheta^{\mathrm{chr}}\}, \qquad \vartheta^{\mathrm{chr}}^g(n) = \vartheta^{\mathrm{chr}}(gng^{-1}),
+I_G(\vartheta_{\mathrm{chr}}) = \{g\in G : \vartheta_{\mathrm{chr}}^g = \vartheta_{\mathrm{chr}}\}, \qquad \vartheta_{\mathrm{chr}}^g(n) = \vartheta_{\mathrm{chr}}(gng^{-1}),
 $$
 
-the stabiliser of $\vartheta^{\mathrm{chr}}$ under the conjugation action of $G$ on the irreducible characters of $N$; the inertia group lies between $N$ and $G$, and $\lvert G:I_G(\vartheta^{\mathrm{chr}})\rvert$ equals the number of distinct conjugates of $\theta$.
+the stabiliser of $\vartheta_{\mathrm{chr}}$ under the conjugation action of $G$ on the irreducible characters of $N$; the inertia group lies between $N$ and $G$, and $\lvert G:I_G(\vartheta_{\mathrm{chr}})\rvert$ equals the number of distinct conjugates of $\theta$.
 
 **Theorem (Clifford, standard).** Let $N\trianglelefteq G$ and let $V$ be an irreducible $k[G]$-module with $\lvert G\rvert$ invertible in $k$. Then:
 
-1. the restriction $\operatorname{Res}_N^GV$ is a direct sum of irreducible $k[N]$-modules conjugate under $G$, say of the $G$-orbit of a character $\vartheta^{\mathrm{chr}}$, each with the same multiplicity;
-2. $V$ lies over $\vartheta^{\mathrm{chr}}$ if and only if it lies over every conjugate, and the irreducible modules of $G$ lying over $\vartheta^{\mathrm{chr}}$ are exactly the modules $\operatorname{Ind}_{I}^{G}U$ with $U$ an irreducible module of the inertia group $I = I_G(\vartheta^{\mathrm{chr}})$ lying over $\vartheta^{\mathrm{chr}}$;
-3. the modules $U$ lying over $\vartheta^{\mathrm{chr}}$ correspond to the **projective representations** of the quotient $I/N$ with the cocycle determined by $\vartheta^{\mathrm{chr}}$, so that the classification of the irreducible modules of $G$ over $\vartheta^{\mathrm{chr}}$ is the classification of the projective representations of $I/N$;
+1. the restriction $\operatorname{Res}_N^GV$ is a direct sum of irreducible $k[N]$-modules conjugate under $G$, say of the $G$-orbit of a character $\vartheta_{\mathrm{chr}}$, each with the same multiplicity;
+2. $V$ lies over $\vartheta_{\mathrm{chr}}$ if and only if it lies over every conjugate, and the irreducible modules of $G$ lying over $\vartheta_{\mathrm{chr}}$ are exactly the modules $\operatorname{Ind}_{I}^{G}U$ with $U$ an irreducible module of the inertia group $I = I_G(\vartheta_{\mathrm{chr}})$ lying over $\vartheta_{\mathrm{chr}}$;
+3. the modules $U$ lying over $\vartheta_{\mathrm{chr}}$ correspond to the **projective representations** of the quotient $I/N$ with the cocycle determined by $\vartheta_{\mathrm{chr}}$, so that the classification of the irreducible modules of $G$ over $\vartheta_{\mathrm{chr}}$ is the classification of the projective representations of $I/N$;
 
 the last correspondence is not covered here, and the case of a trivial cocycle recovers the ordinary representations of $I/N$.
 
-*Proof (outline).* The set of irreducible constituents of $\operatorname{Res}_N^GV$ is permuted by $G$ because $N$ is normal, and the trace argument shows that the conjugates are the constituents and occur with equal multiplicity; the induction from the inertia group produces the modules lying over $\vartheta^{\mathrm{chr}}$, and the exact sequence $1\to N\to I\to I/N\to1$ turns the lifting problem into a problem of projective representations, the cocycle being the failure of a fixed module over $\vartheta^{\mathrm{chr}}$ to extend to $I$. The proof is the standard one of Clifford's theory, recorded in the references.
+*Proof (outline).* The set of irreducible constituents of $\operatorname{Res}_N^GV$ is permuted by $G$ because $N$ is normal, and the trace argument shows that the conjugates are the constituents and occur with equal multiplicity; the induction from the inertia group produces the modules lying over $\vartheta_{\mathrm{chr}}$, and the exact sequence $1\to N\to I\to I/N\to1$ turns the lifting problem into a problem of projective representations, the cocycle being the failure of a fixed module over $\vartheta_{\mathrm{chr}}$ to extend to $I$. The proof is the standard one of Clifford's theory, recorded in the references.
 
-**Corollary.** If $\vartheta^{\mathrm{chr}}$ extends to a representation of $I = I_G(\vartheta^{\mathrm{chr}})$, then the irreducible modules of $G$ lying over $\vartheta^{\mathrm{chr}}$ are the inductions of the twists of the extension by the irreducible representations of $I/N$; in particular if $G = N\rtimes Q$ is a semidirect product and $\vartheta^{\mathrm{chr}}$ extends to its stabiliser, the classification is by the ordinary irreducible representations of $Q$, and no projective representation intervenes.
+**Corollary.** If $\vartheta_{\mathrm{chr}}$ extends to a representation of $I = I_G(\vartheta_{\mathrm{chr}})$, then the irreducible modules of $G$ lying over $\vartheta_{\mathrm{chr}}$ are the inductions of the twists of the extension by the irreducible representations of $I/N$; in particular if $G = N\rtimes Q$ is a semidirect product and $\vartheta_{\mathrm{chr}}$ extends to its stabiliser, the classification is by the ordinary irreducible representations of $Q$, and no projective representation intervenes.
 
 ## Permutation and Monomial Modules
 
@@ -179,7 +179,7 @@ $$
 \operatorname{Ind}_H^G\chi(g) = \frac{1}{\lvert H\rvert}\sum_{x\in G,\ x^{-1}gx\in H}\chi(x^{-1}gx),
 $$
 
-which for the trivial character gives the permutation character of $k[G/H]$. The example of $S_3$ is computed: $\operatorname{Ind}_{S_2}^{S_3}\mathbf{1} = \mathbf{1}\oplus\sigma$ with the values $3,1,1,0,0,1$, the multiplicities $1,0,1$ and the reciprocity verified numerically. **Mackey's theorem** decomposes the restriction of an induced module over the double cosets, $\operatorname{Res}_K^G\operatorname{Ind}_H^GW\cong\bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^K(W^x)$, with the intertwining number formula and the irreducibility criterion as consequences, and the tensor product of two permutation modules decomposes as the sum of the permutation modules of the double coset intersections. **Clifford theory** describes the irreducible modules of $G$ lying over an irreducible $\vartheta^{\mathrm{chr}}$ of a normal subgroup $N$ as the inductions from the inertia group $I_G(\vartheta^{\mathrm{chr}})$, the remaining freedom being the projective representations of $I_G(\vartheta^{\mathrm{chr}})/N$, which is not covered here. Finally the **permutation and monomial modules** and the induction theorems of Artin and Brauer express every character as a combination of characters induced from the cyclic and from the elementary subgroups respectively. The modular case is deferred, the integral lattices, and the infinite-dimensional and measure-theoretic inductions to Part III.
+which for the trivial character gives the permutation character of $k[G/H]$. The example of $S_3$ is computed: $\operatorname{Ind}_{S_2}^{S_3}\mathbf{1} = \mathbf{1}\oplus\sigma$ with the values $3,1,1,0,0,1$, the multiplicities $1,0,1$ and the reciprocity verified numerically. **Mackey's theorem** decomposes the restriction of an induced module over the double cosets, $\operatorname{Res}_K^G\operatorname{Ind}_H^GW\cong\bigoplus_{x\in S}\operatorname{Ind}_{H\cap xKx^{-1}}^K(W^x)$, with the intertwining number formula and the irreducibility criterion as consequences, and the tensor product of two permutation modules decomposes as the sum of the permutation modules of the double coset intersections. **Clifford theory** describes the irreducible modules of $G$ lying over an irreducible $\vartheta_{\mathrm{chr}}$ of a normal subgroup $N$ as the inductions from the inertia group $I_G(\vartheta_{\mathrm{chr}})$, the remaining freedom being the projective representations of $I_G(\vartheta_{\mathrm{chr}})/N$, which is not covered here. Finally the **permutation and monomial modules** and the induction theorems of Artin and Brauer express every character as a combination of characters induced from the cyclic and from the elementary subgroups respectively. The modular case is deferred, the integral lattices, and the infinite-dimensional and measure-theoretic inductions to Part III.
 
 ## Summary of Notation
 
@@ -193,7 +193,7 @@ which for the trivial character gives the permutation character of $k[G/H]$. The
 | $W^x$, $H\cap xKx^{-1}$ | conjugate module and intersection group |
 | $k[G/H]$, permutation character | permutation module and its character, fixed points |
 | $\operatorname{Ind}_H^G\chi(g) = \frac{1}{\lvert H\rvert}\sum_{x^{-1}gx\in H}\chi(x^{-1}gx)$ | induced character formula |
-| $I_G(\vartheta^{\mathrm{chr}})$ | inertia group of an irreducible character $\vartheta^{\mathrm{chr}}$ of a normal subgroup |
+| $I_G(\vartheta_{\mathrm{chr}})$ | inertia group of an irreducible character $\vartheta_{\mathrm{chr}}$ of a normal subgroup |
 | $\operatorname{Ind}_H^G\lambda$ | monomial module, $\lambda$ one-dimensional |
 | $\mathbf{1}_H$ | trivial module of $H$ |
 

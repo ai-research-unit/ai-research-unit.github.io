@@ -30,7 +30,7 @@ The companion articles supply the pieces:
 A neutral atom with magnetic moment $\vec\mu = \gamma\vec S$ placed in a magnetic field $\vec B$ has potential energy
 
 $$
-V^{\mathrm{pot}} = -\vec\mu\cdot\vec B = -\gamma\,\vec S\cdot\vec B,
+V_{\mathrm{pot}} = -\vec\mu\cdot\vec B = -\gamma\,\vec S\cdot\vec B,
 $$
 
 where $\gamma$ is the gyromagnetic ratio and $\vec S$ the spin operator. If the field is directed along $z$ with a gradient along the same direction,
@@ -42,7 +42,7 @@ $$
 then the force on the atom along $z$ is the negative gradient of the potential,
 
 $$
-F_z = -\frac{\partial V^{\mathrm{pot}}}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,S_z = \gamma (dB/dz)\,S_z .
+F_z = -\frac{\partial V_{\mathrm{pot}}}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,S_z = \gamma (dB/dz)\,S_z .
 $$
 
 Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial r_z = -\partial B_x/\partial r_x - \partial B_y/\partial r_y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
@@ -79,7 +79,7 @@ $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k \in \mathbb{M}_+, \qquad k = 1,2,3,
 $$
 
-which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i^{\mathrm{mat}}\sigma_j$ (where $i^{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\tfrac{\hbar}{2}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
+which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\tfrac{\hbar}{2}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
 
 $$
 \tilde R_\psi = -\gamma B(z)\,\tilde{S}_3 = -\frac{\hbar\gamma B(z)}{2}\,i \vec e_z \in \mathbb{M}_+ .
@@ -168,16 +168,16 @@ is the **coherence**. The apparatus separates the two diagonal components into t
 The full state of an atom in the apparatus is not a spin state alone: the spin is correlated with the centre-of-mass coordinate $z$, which lives in the material sector. Write the initial state as a tensor product of a spin state and a spatial wavepacket, and let $\tilde{U}$ be the evolution through the field region. Because the Hamiltonian $\tilde R_\psi = -\gamma B(z)\tilde{S}_3$ is diagonal in the $\vec u_z$ spin basis, the evolution acts on the two spin components with opposite phase gradients and displaces them in opposite directions:
 
 $$
-\left(c_+ |{+z}\rangle + c_- |{-z}\rangle\right)\otimes|\xi^{\mathrm{alt}}\rangle
+\left(c_+ |{+z}\rangle + c_- |{-z}\rangle\right)\otimes|\xi_{\mathrm{alt}}\rangle
 \;\longmapsto\;
-c_+ |{+z}\rangle\otimes|\xi^{\mathrm{alt}}_+\rangle + c_- |{-z}\rangle\otimes|\xi^{\mathrm{alt}}_-\rangle ,
+c_+ |{+z}\rangle\otimes|\xi_{\mathrm{alt},+}\rangle + c_- |{-z}\rangle\otimes|\xi_{\mathrm{alt},-}\rangle ,
 $$
 
-with $|\xi^{\mathrm{alt}}_\pm\rangle$ wavepackets centred on the two deflections $\Delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
+with $|\xi_{\mathrm{alt},\pm}\rangle$ wavepackets centred on the two deflections $\Delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
 
 ### The Reduced Spin State
 
-If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\xi^{\mathrm{alt}}_+|\xi^{\mathrm{alt}}_-\rangle = 0$, the cross terms drop and the reduced state is
+If the two beams are separated and only one is retained (or if the position is simply traced out), the spin state is obtained by the partial trace over the spatial degree of freedom. Because the two wavepackets are orthogonal, $\langle\xi_{\mathrm{alt},+}|\xi_{\mathrm{alt},-}\rangle = 0$, the cross terms drop and the reduced state is
 
 $$
 \boxed{\;\tilde{Ϛ}_{\mathrm{spin}} = |c_+|^2 \tilde\Pi_1(\vec u_z) + |c_-|^2 \tilde\Pi_2(\vec u_z)
@@ -270,7 +270,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard physics, transcribed.** The magnetic coupling $V^{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
+**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
 
 **What the biquaternion notation provides.**
 

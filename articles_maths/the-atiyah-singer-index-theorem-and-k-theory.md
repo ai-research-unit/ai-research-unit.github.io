@@ -62,7 +62,7 @@ and consequently $K^{*}(X)=K^0(X)\oplus K^1(X)$ is a $\mathbb{Z}/2$-graded ring 
 **Definition.** For a complex vector bundle $E$ with a connection of curvature $R$, the **Chern character** is
 
 $$
-\operatorname{ch}(E)=\operatorname{tr}\exp\!\left(\frac{iR}{2\pi}\right)=\operatorname{rank}E+\sum_{k\geq1}\frac{1}{k!}\operatorname{tr}\!\left(\frac{iR}{2\pi}\right)^{k}\in H^{\mathrm{ev}}_{dR}(X;\mathbb{Q}),
+\operatorname{ch}(E)=\operatorname{tr}\exp\!\left(\frac{iR}{2\pi}\right)=\operatorname{rank}E+\sum_{k\geq1}\frac{1}{k!}\operatorname{tr}\!\left(\frac{iR}{2\pi}\right)^{k}\in H_{\mathrm{ev},dR}(X;\mathbb{Q}),
 $$
 
 a closed form whose de Rham class is independent of the connection. In terms of the Chern classes, $\operatorname{ch}(E)=\operatorname{rank}E+c_1(E)+\tfrac12(c_1^2-2c_2)+\cdots$, and for a line bundle $L$, $\operatorname{ch}(L)=1+c_1(L)$.
@@ -70,7 +70,7 @@ a closed form whose de Rham class is independent of the connection. In terms of 
 **Theorem.** The Chern character is a ring homomorphism
 
 $$
-\operatorname{ch}\colon K^0(X)\longrightarrow H^{\mathrm{ev}}_{dR}(X;\mathbb{Q}), \qquad \operatorname{ch}(E\oplus F)=\operatorname{ch}(E)+\operatorname{ch}(F), \quad \operatorname{ch}(E\otimes F)=\operatorname{ch}(E)\operatorname{ch}(F),
+\operatorname{ch}\colon K^0(X)\longrightarrow H_{\mathrm{ev},dR}(X;\mathbb{Q}), \qquad \operatorname{ch}(E\oplus F)=\operatorname{ch}(E)+\operatorname{ch}(F), \quad \operatorname{ch}(E\otimes F)=\operatorname{ch}(E)\operatorname{ch}(F),
 $$
 
 and after tensoring with $\mathbb{Q}$ it is an isomorphism $\operatorname{ch}\colon K^*(X)\otimes\mathbb{Q}\to H^*(X;\mathbb{Q})$ onto cohomology, carrying $K^0$ to the even part and $K^1$ to the odd part.
@@ -99,7 +99,7 @@ $$
 
 **Proof sketch.** A bundle $E\to X$ has a module of sections $\Gamma(E)$ which is finitely generated and projective because $E$ is a direct summand of a trivial bundle, and every finitely generated projective module arises this way; the two constructions are inverse up to natural isomorphism.
 
-**Remark.** The higher algebraic $K$-groups $K_n(R)$ are defined by the $+$-construction or by Quillen's $Q$-construction, and $K_1(R)=GL(R)^{\mathrm{ab}}=GL(R)/E(R)$ classifies the units modulo elementary matrices. The **fundamental theorem** of algebraic $K$-theory, $K_n(R[t,t^{-1}])\cong K_{n-1}(R)\oplus K_n(R)$, is the algebraic form of Bott periodicity: the Laurent polynomial ring adds a circle, and the suspension shifts the degree by one. The comparison with the topological theory is the content of the Chern character of the next sections and of the index theorem itself.
+**Remark.** The higher algebraic $K$-groups $K_n(R)$ are defined by the $+$-construction or by Quillen's $Q$-construction, and $K_1(R)=GL(R)_{\mathrm{ab}}=GL(R)/E(R)$ classifies the units modulo elementary matrices. The **fundamental theorem** of algebraic $K$-theory, $K_n(R[t,t^{-1}])\cong K_{n-1}(R)\oplus K_n(R)$, is the algebraic form of Bott periodicity: the Laurent polynomial ring adds a circle, and the suspension shifts the degree by one. The comparison with the topological theory is the content of the Chern character of the next sections and of the index theorem itself.
 
 ## Elliptic Operators, Symbols and the Analytic Index
 
@@ -234,7 +234,7 @@ For a closed spin manifold with a twisted Clifford module bundle the index reduc
 | $K^0_{\mathrm{red}}(X)$ | Reduced group, kernel of the rank map |
 | $K^{-n}(X)=K^0_{\mathrm{red}}(S^n\wedge X)$ | Higher $K$-groups, two-periodic |
 | $\lambda_t(E)=\sum_k[\Lambda^kE]t^k$ | Total exterior power, $\lambda$-ring structure |
-| $\operatorname{ch}(E)=\operatorname{tr}\exp(iR/2\pi)$ | Chern character to $H^{\mathrm{ev}}_{dR}(X;\mathbb{Q})$ |
+| $\operatorname{ch}(E)=\operatorname{tr}\exp(iR/2\pi)$ | Chern character to $H_{\mathrm{ev},dR}(X;\mathbb{Q})$ |
 | $K_0(R)$, $K_1(R)$ | Grothendieck group of f.g. projective modules; units mod elementary matrices |
 | $K^0(X)\cong K_0(C(X))$ | Serre–Swan |
 | $\sigma_m(D)$, $\sigma(D)(x,\zeta)$ | Principal symbol |

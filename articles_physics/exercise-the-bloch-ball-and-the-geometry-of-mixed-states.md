@@ -12,7 +12,7 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
 $$
 
-with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S^{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The Hermitian form on the slice is
+with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The Hermitian form on the slice is
 
 $$
 \langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac14\bigl(1 + \vec r\cdot\vec s\bigr),
@@ -87,13 +87,13 @@ so the Bloch vector *is* the vector of single-qubit expectation values, $\vec r 
 
 ## Problem 2: Purity, Linear Entropy, and von Neumann Entropy
 
-**Problem.** For each of the following states compute the purity $\mathrm{Tr}(\tilde{Ϛ}^2)$, the linear entropy $S^{\mathrm{lin}}$, and the von Neumann entropy $S(\tilde{Ϛ})$: (a) the pure state with $\vec u = (1,1,1)/\sqrt3$; (b) the maximally mixed state; (c) the state with $\vec r = \tfrac12 \vec e_z$; (d) the state with $\vec r = \tfrac12(\vec e_x + \vec e_y)$. Confirm that all three quantities depend on the state only through $|\vec r|$.
+**Problem.** For each of the following states compute the purity $\mathrm{Tr}(\tilde{Ϛ}^2)$, the linear entropy $S_{\mathrm{lin}}$, and the von Neumann entropy $S(\tilde{Ϛ})$: (a) the pure state with $\vec u = (1,1,1)/\sqrt3$; (b) the maximally mixed state; (c) the state with $\vec r = \tfrac12 \vec e_z$; (d) the state with $\vec r = \tfrac12(\vec e_x + \vec e_y)$. Confirm that all three quantities depend on the state only through $|\vec r|$.
 
 **Solution.** All three quantities are functions of the radius alone:
 
 $$
 \boxed{\;\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr), \qquad
-S^{\mathrm{lin}} = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 - |\vec r|^2\bigr)\;},
+S_{\mathrm{lin}} = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 - |\vec r|^2\bigr)\;},
 $$
 
 $$
@@ -152,7 +152,7 @@ The mixture therefore lies on the chord joining $\vec u$ and $\vec u_\nu$, at th
 $$
 \boxed{\;\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12\bigl(1 + |\vec r|^2\bigr) = 1 - p(1-p)\bigl(1-\cos\theta\bigr),
 \qquad
-S^{\mathrm{lin}} = p(1-p)\bigl(1-\cos\theta\bigr)\;}.
+S_{\mathrm{lin}} = p(1-p)\bigl(1-\cos\theta\bigr)\;}.
 $$
 
 (c) From the second form, $|\vec r| = 1$ requires $p(1-p)(1-\cos\theta) = 0$, i.e. $p = 0$, or $p = 1$, or $\cos\theta = 1$ (the two pure states coincide). Apart from these degenerate cases the mixture is **strictly interior**: $|\vec r| < 1$, and the ball is strictly convex. In particular, a nontrivial mixture of two distinct pure states is never pure.
@@ -327,7 +327,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 
 **Parametrisation.** A state is $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_k = \langle\sigma_k\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.
 
-**Purity and entropy.** Purity, linear entropy, and von Neumann entropy are functions of the radius alone: $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$, $S^{\mathrm{lin}} = \tfrac12(1-|\vec r|^2)$, and $S = -\sum_\pm\lambda_\pm\log\lambda_\pm$ with $\lambda_\pm = \tfrac12(1\pm|\vec r|)$.
+**Purity and entropy.** Purity, linear entropy, and von Neumann entropy are functions of the radius alone: $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$, $S_{\mathrm{lin}} = \tfrac12(1-|\vec r|^2)$, and $S = -\sum_\pm\lambda_\pm\log\lambda_\pm$ with $\lambda_\pm = \tfrac12(1\pm|\vec r|)$.
 
 **Convex combinations.** A mixture of two pure states lies on the chord joining them, with $|\vec r|^2 = 1 - 2p(1-p)(1-\cos\theta)$ and linear entropy $p(1-p)(1-\cos\theta)$; it is pure only in the degenerate cases $p \in \{0,1\}$ or coincident directions.
 
@@ -352,7 +352,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent, $|\vec u| = 1$ |
 | $\vec r\in B^3$, $|\vec r|\leq 1$ | Bloch ball |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$ | Purity |
-| $S^{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |
+| $S_{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |
 | $S(\tilde{Ϛ}) = -\sum_\pm\lambda_\pm\log\lambda_\pm$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ |
 | $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace reading of the Hermitian form |
 | $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \tfrac12|\vec r-\vec s|$ | Trace distance |

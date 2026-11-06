@@ -148,7 +148,7 @@ Let $A = k[G]$ with the involution $g^* = g^{-1}$. Then the skew part is spanned
 
 ### The Exchange Involution
 
-Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The skew part is the antidiagonal $\{(b,-b)\} \cong B$, and the bracket is
+Let $A = B \times B_{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The skew part is the antidiagonal $\{(b,-b)\} \cong B$, and the bracket is
 
 $$
 [(b,-b),(b',-b')] = ([b,b'],\,-[b,b']) ,

@@ -20,7 +20,7 @@ The trap in this subject is to *assert* the thermality — to write down the exp
 
 **Relation to the parent.** *The KMS Condition and the Biquaternion Framework* is the parent article. It establishes two facts that this article uses unchanged: the imaginary time of the material sector is intrinsic, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ of a finite-dimensional Gibbs state is a Hermitian element of $\mathbb{M}_+$. It also leaves a gap, which is stated here rather than filled silently. Its modular Hamiltonian is defined through a density matrix in a **finite-dimensional** setting. The wedge-restricted Minkowski vacuum is a state on a field algebra; it is not given by a density matrix, and the parent neither defines the modular operator $\Delta$ nor the modular flow in that setting. The identification of the modular flow with the boost is the **Bisognano–Wichmann theorem** — established physics, imported here, not derived from the biquaternion algebra. What this article does with the gap is make the flow geometric in the one case where the standard theorem supplies it, and label precisely what remains outside the framework.
 
-- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$ is future-directed; a boost by rapidity $\theta^{\mathrm{rpd}}$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\theta^{\mathrm{rpd}}$ under the Lorentz rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\xi=a\zeta$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
+- **Established, and recomputed below.** In the right wedge, the boost Killing vector $\zeta=r_x\partial/\partial r'_t+r'_t\partial/\partial R_x$ is future-directed; a boost by rapidity $\theta_{\mathrm{rpd}}$ shifts Rindler time $\eta$ by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$ under the Lorentz rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$; the rotor lies in $\mathbb{M}_+$, preserves $\mathbb{M}_-$ and preserves the biquaternion norm. The massless two-point function along the orbit $\rho=\text{const}$ is $W=-\tfrac{1}{16\pi^2\rho^2}\sinh^{-2}\!\big(\tfrac{1}{2}(\delta\eta-i\epsilon)\big)$ in units $c=1$; it is even and periodic under $\delta\eta\mapsto\delta\eta+2\pi i$, equivalently in imaginary proper time with period $\beta=2\pi/a$, giving the KMS strip $0<\mathrm{Im}\,\delta\tau<\beta$ and the boundary relation $W(\delta\tau+i\beta)=W(-\delta\tau)$. The surface gravity of the redshift-normalized boost $\xi=a\zeta$ is $\kappa=a$ on the horizon, so $T=\kappa/(2\pi)=a/(2\pi)$.
 - **Standard, and imported.** The Unruh effect itself; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium; the massless Wightman function and its pole structure; the definition of surface gravity.
 - **Interpretation.** Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural interpretations of the standard construction. The algebra is consistent with them; it does not by itself force the thermal interpretation.
 - **Gaps, left visible.** The general modular operator of a field algebra is not constructed in the framework; the algebra of observables of a quantum field theory is infinite-dimensional, so the finite-dimensional interpretation of the modular flow as an inner automorphism is a model, not a derivation; and the framework does not derive thermality, only house it. These are collected in the open questions.
@@ -84,13 +84,13 @@ $$
 which is Hermitian, $G_1^\dagger=G_1$, and satisfies $G_1^2=e_t$. Its exponential is the **boost rotor** of the companion article on the Lorentz transformation,
 
 $$
-\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}) = \exp\!\Big(\frac{\theta^{\mathrm{rpd}}}{2}G_1\Big) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec e_x \in \mathbb{M}_+,
+\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}}) = \exp\!\Big(\frac{\theta_{\mathrm{rpd}}}{2}G_1\Big) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec e_x \in \mathbb{M}_+,
 $$
 
 which is Hermitian and of unit norm, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$. It acts on the material sector by **rotor conjugation**
 
 $$
-\tilde R_\varphi \longmapsto \tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\,\tilde R_\varphi\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}),
+\tilde R_\varphi \longmapsto \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\,\tilde R_\varphi\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}}),
 $$
 
 where we have used $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$. This is the two-sided action of the companion article on curved spacetime, not the commutator: for the boost generator the two differ, and it is the two-sided form that implements the boost.
@@ -98,23 +98,23 @@ where we have used $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$. This is the 
 **The direction, computed.** On $\tilde R_\varphi=ic r'_t e_t+r_x\vec e_x$ (with $c r'_t=cr'_t$, $r_x=x$; we drop $r_y,r_z$, which are untouched), rotor conjugation gives
 
 $$
-c r'_t \longmapsto c r'_t\cosh\theta^{\mathrm{rpd}} - r_x\sinh\theta^{\mathrm{rpd}}, \qquad
-r_x \longmapsto r_x\cosh\theta^{\mathrm{rpd}} - c r'_t\sinh\theta^{\mathrm{rpd}} .
+c r'_t \longmapsto c r'_t\cosh\theta_{\mathrm{rpd}} - r_x\sinh\theta_{\mathrm{rpd}}, \qquad
+r_x \longmapsto r_x\cosh\theta_{\mathrm{rpd}} - c r'_t\sinh\theta_{\mathrm{rpd}} .
 $$
 
 On the orbit $r_x=\rho\cosh\eta$, $c r'_t=\rho\sinh\eta$ this is
 
 $$
-c r'_t \longmapsto \rho\sinh(\eta-\theta^{\mathrm{rpd}}), \qquad r_x \longmapsto \rho\cosh(\eta-\theta^{\mathrm{rpd}}),
+c r'_t \longmapsto \rho\sinh(\eta-\theta_{\mathrm{rpd}}), \qquad r_x \longmapsto \rho\cosh(\eta-\theta_{\mathrm{rpd}}),
 $$
 
-so the rotor of **positive** rapidity $\theta^{\mathrm{rpd}}$ shifts the Rindler time by $\eta\mapsto\eta-\theta^{\mathrm{rpd}}$. Equivalently, the generator $G_1$ acts infinitesimally as
+so the rotor of **positive** rapidity $\theta_{\mathrm{rpd}}$ shifts the Rindler time by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$. Equivalently, the generator $G_1$ acts infinitesimally as
 
 $$
 c r'_t \longmapsto c r'_t - 2s\,r_x, \qquad r_x \longmapsto r_x - 2s\,c r'_t
 $$
 
-for the flow parameter $s=\theta^{\mathrm{rpd}}/2$. This is the sign that has to be fixed before anything else can be done; we record it explicitly and use the inverse orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\varphi\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\theta^{\mathrm{rpd}}$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{M}_-$.
+for the flow parameter $s=\theta_{\mathrm{rpd}}/2$. This is the sign that has to be fixed before anything else can be done; we record it explicitly and use the inverse orientation that advances $\eta$ when we need a direction. The same computation shows that the boost preserves the biquaternion norm, $\langle\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde R_\varphi\rangle_{\natural}$, so $R$ is mapped to itself and the horizon to itself. Two checks beyond the case that suggested the formulas are recorded in the companion: the rotor maps $\eta$ to $\eta-\theta_{\mathrm{rpd}}$ on an independently chosen orbit, and the biquaternion norm is preserved on a general element of $\mathbb{M}_-$.
 
 **Which wedge.** The two wedges have opposite orientation. The boost generator whose flow is future-directed on $R$ is past-directed on $L$, so the modular Hamiltonians of the two wedges satisfy $K_L=-K_R$, and the surface gravities have opposite signs. The temperature is built from $|\kappa|=a$, so it is the same for both; but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and we keep the wedge explicit.
 
@@ -162,7 +162,7 @@ $$
 \alpha_s:\ \tilde R_\varphi \longmapsto \tilde U_{\mathrm b}(-2\pi s)\,\tilde R_\varphi\,\tilde U_{\mathrm b}(-2\pi s),
 $$
 
-the argument $-2\pi s$ being the orientation that advances $\eta$ (the opposite sign gives the left wedge). The sign is the one fixed above: the abstract boost by rapidity $2\pi s$ is represented here by the **inverse** rotor $\tilde U_{\mathrm b}(-2\pi s)$ precisely because $\tilde U_{\mathrm b}(+\theta^{\mathrm{rpd}})$ shifts $\eta$ by $-\theta^{\mathrm{rpd}}$. Three features of this are worth separating.
+the argument $-2\pi s$ being the orientation that advances $\eta$ (the opposite sign gives the left wedge). The sign is the one fixed above: the abstract boost by rapidity $2\pi s$ is represented here by the **inverse** rotor $\tilde U_{\mathrm b}(-2\pi s)$ precisely because $\tilde U_{\mathrm b}(+\theta_{\mathrm{rpd}})$ shifts $\eta$ by $-\theta_{\mathrm{rpd}}$. Three features of this are worth separating.
 
 - **The generator is in $\mathbb{M}_+$.** The modular Hamiltonian is represented by a Hermitian element of the informational sector, in agreement with the parent's algebraic fact that $K=-\log\tilde{Ϛ}$ lies in $\mathbb{M}_+$. Here the element is $G_1=i\vec e_x$, the boost generator, and the agreement is exact up to that normalization rather than analogical.
 - **The flow is an inner automorphism of the algebra** by a one-parameter family of unit-norm Hermitian rotors in $\mathbb{M}_+$. In the finite-dimensional model in which observables are elements of $\mathbb{B}$, this realizes the modular flow as conjugation. In a genuine field theory the observable algebra is infinite-dimensional and the flow is not inner; the identification is a model, and it is flagged as such.
@@ -176,10 +176,10 @@ This is the section in which thermality is derived rather than asserted.
 
 ### The Two-Point Function on the Orbit
 
-Let $\xi^{\mathrm{scl}}$ be the massless real scalar field and $W$ its Wightman function,
+Let $\xi_{\mathrm{scl}}$ be the massless real scalar field and $W$ its Wightman function,
 
 $$
-W(r_x,r_{2x}) = \langle 0|\,\xi^{\mathrm{scl}}(r_x)\,\xi^{\mathrm{scl}}(r_{2x})\,|0\rangle
+W(r_x,r_{2x}) = \langle 0|\,\xi_{\mathrm{scl}}(r_x)\,\xi_{\mathrm{scl}}(r_{2x})\,|0\rangle
 = \frac{1}{4\pi^2}\,\frac{1}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|^2-(r'_t-r'_{t,2}-i\epsilon)^2},
 $$
 
@@ -224,7 +224,7 @@ $$
 \boxed{\;W(\delta\tau+i\beta) = W(-\delta\tau), \qquad \beta=\frac{2\pi}{a}\;}.
 $$
 
-The last display is the **KMS boundary relation** of the parent, with $A=B=\xi^{\mathrm{scl}}(0)$: the two-point function continued to imaginary time $\delta\tau+i\beta$ equals the reversed two-point function at $-\delta\tau$. The step that produces it is the pair of elementary identities in item 2; without them, "the accelerated observer sees a thermal state" is an assertion. The $i\epsilon$ in the displayed two-point function fixes which boundary values are meant, and the relation above is the standard one between the two edges of the strip in that convention; we do not re-fix the convention here.
+The last display is the **KMS boundary relation** of the parent, with $A=B=\xi_{\mathrm{scl}}(0)$: the two-point function continued to imaginary time $\delta\tau+i\beta$ equals the reversed two-point function at $-\delta\tau$. The step that produces it is the pair of elementary identities in item 2; without them, "the accelerated observer sees a thermal state" is an assertion. The $i\epsilon$ in the displayed two-point function fixes which boundary values are meant, and the relation above is the standard one between the two edges of the strip in that convention; we do not re-fix the convention here.
 
 Two remarks keep the derivation honest.
 
@@ -311,7 +311,7 @@ in agreement with the imaginary-time route. The two computations are independent
 The boost is a unit for every finite rapidity, so its polar word has scale one and no phase:
 
 $$
-\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 r=1,\quad \alpha=0,\quad \tilde u_{\mathrm r}=e_t,
 $$
@@ -321,25 +321,25 @@ with the boost factor equal to the element itself. The rapidity is twice the Ham
 **The scale collapse.** Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$:
 
 $$
-\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=e^{\theta^{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\theta^{\mathrm{rpd}}/2}\,\tilde\Pi_- .
+\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_- .
 $$
 
-At finite $\theta^{\mathrm{rpd}}$ both terms are nonzero. As $\theta^{\mathrm{rpd}}\to\infty$ the second vanishes and the first diverges, so the rotor has no limit in the algebra. The **renormalised** rotor does:
+At finite $\theta_{\mathrm{rpd}}$ both terms are nonzero. As $\theta_{\mathrm{rpd}}\to\infty$ the second vanishes and the first diverges, so the rotor has no limit in the algebra. The **renormalised** rotor does:
 
 $$
-e^{-\theta^{\mathrm{rpd}}/2}\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
-\qquad \theta^{\mathrm{rpd}}\to\infty,
+e^{-\theta_{\mathrm{rpd}}/2}\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
+\qquad \theta_{\mathrm{rpd}}\to\infty,
 $$
 
-with the error $e^{-\theta^{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $r=e^{-\theta^{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
+with the error $e^{-\theta_{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $r=e^{-\theta_{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
 
-**The rate.** The rapidity is not a free parameter along the orbit; it is the Rindler time. On the orbit $\rho=\text{const}$ the proper time is $\tau=\rho\eta$ in units $c=1$, and a boost by $\theta^{\mathrm{rpd}}$ advances $\eta$ by $\theta^{\mathrm{rpd}}$, so
+**The rate.** The rapidity is not a free parameter along the orbit; it is the Rindler time. On the orbit $\rho=\text{const}$ the proper time is $\tau=\rho\eta$ in units $c=1$, and a boost by $\theta_{\mathrm{rpd}}$ advances $\eta$ by $\theta_{\mathrm{rpd}}$, so
 
 $$
-\frac{d\theta^{\mathrm{rpd}}}{d\tau}=\frac{1}{\rho}=a,
+\frac{d\theta_{\mathrm{rpd}}}{d\tau}=\frac{1}{\rho}=a,
 $$
 
-the proper acceleration. This is the statement of the preceding section read on the word: the surface gravity is the rate of the rapidity, and at the horizon the rate is the redshifted one, $\kappa$. The temperature is the period of the imaginary rapidity: the continuation $\theta^{\mathrm{rpd}}\mapsto\theta^{\mathrm{rpd}}+2\pi i$ closes the thermal circle, and the proper-time period is $\beta=2\pi/\kappa$. In the polar language, the thermal circle is the compactification of the imaginary rapidity of the boost factor, and the horizon is where the real part of that rapidity diverges.
+the proper acceleration. This is the statement of the preceding section read on the word: the surface gravity is the rate of the rapidity, and at the horizon the rate is the redshifted one, $\kappa$. The temperature is the period of the imaginary rapidity: the continuation $\theta_{\mathrm{rpd}}\mapsto\theta_{\mathrm{rpd}}+2\pi i$ closes the thermal circle, and the proper-time period is $\beta=2\pi/\kappa$. In the polar language, the thermal circle is the compactification of the imaginary rapidity of the boost factor, and the horizon is where the real part of that rapidity diverges.
 
 **The reading.** The horizon is the boundary of the polar chart, not a point of the algebra. The boost is a unit at every finite rapidity; the limit that reaches the horizon is a null idempotent, and the physical frame there is lightlike. The word supplies three things and no more: the two-term splitting that makes the collapse visible, the identification of the rapidity rate with the proper acceleration, and the period $2\pi$ of the imaginary angle that fixes the temperature. It does not supply the horizon geometry, the two-point function, or the thermal interpretation; those are the preceding sections' inputs.
 
@@ -370,7 +370,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 **Established (physics).** The Unruh effect and the temperature $T=\hbar a/(2\pi c k_B)$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.
 
-**Established (algebra), recomputed here.** The boost rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$ lies in $\mathbb{M}_+$, is Hermitian and of unit norm, and preserves $\mathbb{M}_-$ and the biquaternion norm; it shifts the Rindler time by $\eta\mapsto\eta-\theta^{\mathrm{rpd}}$; its generator is $G_1=i\vec e_x\in\mathbb{M}_+$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{M}_-$.
+**Established (algebra), recomputed here.** The boost rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ lies in $\mathbb{M}_+$, is Hermitian and of unit norm, and preserves $\mathbb{M}_-$ and the biquaternion norm; it shifts the Rindler time by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$; its generator is $G_1=i\vec e_x\in\mathbb{M}_+$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{M}_-$.
 
 **Interpretation.** Reading the modular flow as the biquaternionic boost flow, and the Rindler horizon as the zero-divisor cone, are structural interpretations. The algebra is consistent with them and makes the flow explicit in the finite-dimensional model; it does not force the thermal interpretation.
 
@@ -399,7 +399,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 ## Summary
 
-An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=i\vec e_x\in\mathbb{M}_+$ acting on $\mathbb{M}_-$ by the two-sided rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\,\tilde R_\varphi\,\tilde U_{\mathrm b}$ with $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$.
+An observer of constant proper acceleration $a$ in the Minkowski vacuum is confined to a Rindler wedge, and the vacuum restricted to that wedge is a thermal state with respect to the boost flow. In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the **zero-divisor cone**, and the boost flow is generated by the Hermitian element $G_1=i\vec e_x\in\mathbb{M}_+$ acting on $\mathbb{M}_-$ by the two-sided rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\,\tilde R_\varphi\,\tilde U_{\mathrm b}$ with $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$.
 
 By the Bisognano–Wichmann theorem — imported, not derived — the modular operator of the vacuum on the wedge is $\Delta=\exp(-2\pi K_{\mathrm{boost}})$, so the modular flow is the boost by rapidity $2\pi s$; this realizes the parent's abstract modular Hamiltonian as the boost generator, whose image in the algebra is the Hermitian element $i\vec e_x\in\mathbb{M}_+$. The thermality is derived from the two-point function. Along the accelerated orbit the massless Wightman function is
 
@@ -437,9 +437,9 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\xi=a\zeta$ | Redshift-normalized boost; $\kappa=a$ its surface gravity |
 | $\kappa$ | Surface gravity of the boost horizon |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$ | Idempotents of the boost axis; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
-| $d\theta^{\mathrm{rpd}}/d\tau=a$ | Rapidity rate along the orbit (units $c=1$); the redshifted rate is $\kappa$ |
+| $d\theta_{\mathrm{rpd}}/d\tau=a$ | Rapidity rate along the orbit (units $c=1$); the redshifted rate is $\kappa$ |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator (Hermitian) |
-| $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
+| $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
 | $K_{\mathrm{boost}},\ \Delta=\exp(-2\pi K_{\mathrm{boost}})$ | Boost Hamiltonian; modular operator (Bisognano–Wichmann) |
 | $\alpha_s$ | Modular flow = boost by rapidity $2\pi s$ |

@@ -21,7 +21,7 @@ $$
 \tau_n\delta_i=\delta_{i-1}\tau_{n-1}\ (1\le i\le n), \qquad \tau_n\delta_0=\delta_n, \qquad \tau_n\sigma_i=\sigma_{i-1}\tau_{n+1}\ (1\le i\le n), \qquad \tau_n\sigma_0=\sigma_n\tau_{n+1}^2, \qquad \tau_n^{n+1}=\operatorname{id}.
 $$
 
-A **cyclic module** is a contravariant functor from $\Lambda$ to the category of $k$-modules; a **cyclic object** in a category $\mathcal{C}$ is a covariant functor from $\Lambda^{\mathrm{opp}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra **cyclic operators** $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.
+A **cyclic module** is a contravariant functor from $\Lambda$ to the category of $k$-modules; a **cyclic object** in a category $\mathcal{C}$ is a covariant functor from $\Lambda_{\mathrm{opp}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra **cyclic operators** $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.
 
 **Proposition (cyclic nerve).** For a $k$-algebra $A$ the assignment $[n]\mapsto A^{\otimes(n+1)}$ extends to a cyclic module, with the simplicial structure
 
@@ -66,10 +66,10 @@ where $s_0$ is the degeneracy inserting the unit and $N$ is the summation operat
 **Definition.** The **periodic cyclic complex** is the product of infinitely many columns,
 
 $$
-CC^{\mathrm{per}}_n=\prod_{p\ge0}C_{n-2p}(A)
+CC_{\mathrm{per},n}=\prod_{p\ge0}C_{n-2p}(A)
 $$
 
-with the total differential $b+B$, and **periodic cyclic homology** is $HP_n(A)=H_n(CC^{\mathrm{per}}_\bullet(A))$. The periodic theory is $\mathbb{Z}/2$-periodic, $HP_n\cong HP_{n+2}$.
+with the total differential $b+B$, and **periodic cyclic homology** is $HP_n(A)=H_n(CC_{\mathrm{per},\bullet}(A))$. The periodic theory is $\mathbb{Z}/2$-periodic, $HP_n\cong HP_{n+2}$.
 
 **Definition.** In the $SBI$ sequence, the **$S$ operator** is the map $HC_n\to HC_{n-2}$ induced by the projection of the total complex of the cyclic bicomplex onto its first column, the **$I$ operator** is the map $HH_n\to HC_n$ induced by the inclusion of the Hochschild complex as the zeroth column, and the **$B$ operator** is the map $HC_{n}\to HH_{n+1}$ induced by the Connes boundary.
 
@@ -141,7 +141,7 @@ $$
 HC_0(A)\cong A,\qquad HC_{2m}(A)\cong k\ (m\ge1),\qquad HC_{2m+1}(A)=0,
 $$
 
-and $HP_{\mathrm{even}}(A)\cong k$, $HP^{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.
+and $HP_{\mathrm{even}}(A)\cong k$, $HP_{\mathrm{odd}}(A)=0$. The Hochschild homology is the free module of forms, $HH_n\cong\Omega^n$ of rank $\binom{m}{n}$, so the cyclic homology is very much smaller than the Hochschild homology of the same degree; in particular $HC_1(A)=0$ while $HH_1(A)$ is free of rank $m$.
 
 ## Traces, the Chern Character and K-Theory
 

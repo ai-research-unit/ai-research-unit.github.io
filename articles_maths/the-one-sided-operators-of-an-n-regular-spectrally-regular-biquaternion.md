@@ -14,13 +14,13 @@ The sandwich of the polar decomposition is the product of the left action of $\t
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 \qquad \Rho=r\exp(i\alpha),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
+with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
-The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta^{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
 The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{M}_+$ and $\mathbb{M}_-$. Its block form in the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is
 
@@ -80,11 +80,11 @@ and it is multiplicative, $\langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\ti
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \Rho=r\exp(i\alpha),\qquad
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta^{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
+with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
@@ -151,7 +151,7 @@ The four factors are collected in the following table. A factor **preserves** a 
 |---|---|---|---|
 | scale $r$ | $r\,\mathrm{id}$ | preserves both | $r^{2}$ |
 | phase $\exp(i\alpha)$ | $\exp(i\alpha)\,\mathrm{id}$ | preserves at $\alpha\equiv0\pmod{\pi}$, exchanges at $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, mixed otherwise | $\exp(2i\alpha)$ |
-| boost $\tilde U_{\mathrm b}$ | $L_{\tilde U_{\mathrm b}}$ | mixes for $\theta^{\mathrm{rpd}}>0$ | $1$ |
+| boost $\tilde U_{\mathrm b}$ | $L_{\tilde U_{\mathrm b}}$ | mixes for $\theta_{\mathrm{rpd}}>0$ | $1$ |
 | rotor $\tilde u_{\mathrm r}$ | $L_{\tilde u_{\mathrm r}}$ | mixes for $\theta\not\equiv0\pmod{2\pi}$ | $1$ |
 
 The table is justified factor by factor below; the phase row is the subject of §*The Pure Central Phase of $\pi/2$*, and the two mixing rows are the subject of §*The Four Factors, One-Sided*.
@@ -548,12 +548,12 @@ In the block decomposition $D_r=r\,\mathrm{id}$ and $O_r=0$: the scale preserves
 The boost is
 
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
-=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
-\qquad \theta^{\mathrm{rpd}}\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad \theta_{\mathrm{rpd}}\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
 $$
 
-It is Hermitian and of norm one. Write $c=\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}$, $s=\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
+It is Hermitian and of norm one. Write $c=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $s=\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}$, $\vec u=\vec u_{\mathrm b}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
 
 $$
 \tilde U_{\mathrm b}\tilde X
@@ -722,7 +722,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
 | $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
 | $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
+| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |

@@ -211,10 +211,10 @@ The paper's most delicate technical point follows, and it is a caution rather th
 The **canonical** energy–momentum tensor of the Lagrangian,
 
 $$
-T^{\mathrm{can}}_{\mu\nu} = (\partial A_\alpha/\partial x_\nu)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_\mu)} - \delta_{\mu\nu}\mathcal L,
+T_{\mathrm{can},\mu\nu} = (\partial A_\alpha/\partial x_\nu)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_\mu)} - \delta_{\mu\nu}\mathcal L,
 $$
 
-is conservative, $\partial/\partial x_\mu T^{\mathrm{can}}_{\mu\nu}=0$. To reach a gauge-invariant tensor one adds a term $\Lambda_{\mu\nu}$ with $\partial/\partial x_\mu\Lambda_{\mu\nu}=0$; the source's choice is
+is conservative, $\partial/\partial x_\mu T_{\mathrm{can},\mu\nu}=0$. To reach a gauge-invariant tensor one adds a term $\Lambda_{\mu\nu}$ with $\partial/\partial x_\mu\Lambda_{\mu\nu}=0$; the source's choice is
 
 $$
 \Lambda_{\mu\nu} = -(\partial A_\nu/\partial x_\alpha)\frac{\partial\mathcal L}{\partial(\partial A_\alpha/\partial x_\mu)},
@@ -274,7 +274,7 @@ $$
 and for the symmetric tensor the trace is exactly twice this,
 
 $$
-T^{\mathrm{sym}\,\mu}{}_{\mu} = 2\left[(\vec\kappa\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)\right].
+T_{\mathrm{sym}}^{\mu}{}_{\mu} = 2\left[(\vec\kappa\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)\right].
 $$
 
 The source reads a non-zero trace as a **trace anomaly at the classical level**, reflecting the breaking of classical conformal invariance, and relates it to the breaking of Lorentz invariance by the constant $\vec\kappa$; it suggests the anomaly contributes to the cosmological constant and might be the source of an inflationary period. Two properties of the expressions are checkable and are worth recording, because they show when the anomaly is present.
@@ -307,7 +307,7 @@ $$
 
 which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau_\mu$, which reproduces $F_{\mu\nu}=\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\kappa_{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
-The transformation properties close the section. Under $X^{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla^{\mathrm{lor}} = L^+\nabla L$, $F^{\mathrm{lor}} = L^{-1}FL$, $J^{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_k=i\tau_k$, with $e_4^2=1$ and $\vec e_k^2=-1$, and records the biquaternion Lorentz transformation $x^{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
+The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\nabla L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_k=i\tau_k$, with $e_4^2=1$ and $\vec e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
 ## Status, Contrasts, and Boundaries
 
@@ -356,7 +356,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\vec d,\vec h$ | Field-quadratic $\vec\kappa$-corrections of eqs. (18), (19) — the non-linear constitutive relations |
 | $\vec v=\vec E+i\vec B$ | Riemann–Silberstein vector; the non-linearity is $\vec g\propto\vec\kappa\vec v^2$ |
 | $\mathcal E,\vec P$ | Deformed energy density and momentum density; $P_\mu=(\vec P,i\mathcal E)$ |
-| $T^{\mathrm{can}}_{\mu\nu}$, $T^{\mathrm{sym}}_{\mu\nu}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
+| $T_{\mathrm{can},\mu\nu}$, $T_{\mathrm{sym},\mu\nu}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
 | $T_\mu{}_\mu$ | Classical trace anomaly, $\propto(\vec\kappa\cdot\vec B)(\vec E^2-\vec B^2)-2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)$; doubles for the symmetric tensor |
 | $\tau_\mu=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_k=i\tau_k$ |
 | $F=f_\mu\tau_\mu$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_k=D_k+iB_k$, $g_m=d_m+ih_m$ |

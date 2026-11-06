@@ -80,7 +80,7 @@ for homogeneous $a,b,m$.
 
 ## Worked Case: The Exterior Algebra as a Module over Itself
 
-Let $A=M=\Lambda^\bullet V$ with the grading modulo two. The left multiplication makes $M$ a graded module over itself, with $A^i\cdot M^j\subseteq M^{i+j}$; the action is graded, the annihilator is zero, and the module is faithful. The sign rule $a\wedge(b\wedge\omega)=(-1)^{|a||b|}b\wedge(a\wedge\omega)$ is the graded commutativity of $\Lambda^\bullet V$. When $A$ is viewed as a graded Lie algebra with the commutator bracket $[a,b]=ab-(-1)^{|a||b|}ba$, the module condition reads $a(b\omega)-(-1)^{|a||b|}b(a\omega)=[a,b]\omega$, which holds because the bracket is the graded commutator and the action is by (graded) multiplication; and the even part $\Lambda^{\mathrm{even}}V$ acts by endomorphisms preserving the parity while the odd part acts by parity-reversing operators.
+Let $A=M=\Lambda^\bullet V$ with the grading modulo two. The left multiplication makes $M$ a graded module over itself, with $A^i\cdot M^j\subseteq M^{i+j}$; the action is graded, the annihilator is zero, and the module is faithful. The sign rule $a\wedge(b\wedge\omega)=(-1)^{|a||b|}b\wedge(a\wedge\omega)$ is the graded commutativity of $\Lambda^\bullet V$. When $A$ is viewed as a graded Lie algebra with the commutator bracket $[a,b]=ab-(-1)^{|a||b|}ba$, the module condition reads $a(b\omega)-(-1)^{|a||b|}b(a\omega)=[a,b]\omega$, which holds because the bracket is the graded commutator and the action is by (graded) multiplication; and the even part $\Lambda_{\mathrm{even}}V$ acts by endomorphisms preserving the parity while the odd part acts by parity-reversing operators.
 
 
 ## Summary

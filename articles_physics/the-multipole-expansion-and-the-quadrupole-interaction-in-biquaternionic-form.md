@@ -52,13 +52,13 @@ where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is t
 Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the **spherical multipole expansion**
 
 $$
-\boxed{\;Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\;},
+\boxed{\;Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta_{\mathrm{azm}})\;},
 $$
 
 with the **spherical multipole moments**
 
 $$
-\mathcal{Q}_{lm} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\theta^{\mathrm{azm}}_2)\,d^3r_2 .
+\mathcal{Q}_{lm} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\theta_{\mathrm{azm},2})\,d^3r_2 .
 $$
 
 The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.
@@ -317,7 +317,7 @@ $$
 \qquad 1 + 3 = 4 .
 $$
 
-The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\xi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S^{(\mathrm{adj})}_3 = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
+The weight spectrum confirms that nothing else can be present. For a rotation about the axis $\vec e_z$, the centre is fixed, $\vec e_z$ is fixed, and the combinations $\vec e_x\pm i\vec e_y$ are eigenvectors with phases $\exp(\mp i\theta)$. The algebra therefore contains states only of weights $0$ and $\pm1$, and a $D^{(2)}$ representation would require a state of weight $\pm2$. There is none. The character of the conjugation action has been computed directly and equals $2 + 2\cos\theta = \xi_0(\theta) + \xi_1(\theta)$, the sum of the spin-$0$ and spin-$1$ characters, with no $D^{(2)}$ term $\xi_2 = 1 + 2\cos\theta + 2\cos2\theta$. Since $-\tilde{U}$ acts on a vector exactly as $\tilde{U}$ does, the conjugation action factors through $SO(3)$ and can carry only integral angular momentum. In the normalisation in which the vector part carries weights $\pm1$ — that is, with the generator $-\tilde S_{\mathrm{adj},3}^{()} = -i\tfrac12\mathrm{ad}_{\vec e_z}$ — the generator has the eigenvalue spectrum $\{0, 0, +1, -1\}$ on $\mathbb{B}$: a doubly degenerate zero, together with a single $+1$ and a single $-1$. A quadrupole, which would carry weight $\pm2$, has no place to sit.
 
 ### Where the Quadrupole Does Live
 

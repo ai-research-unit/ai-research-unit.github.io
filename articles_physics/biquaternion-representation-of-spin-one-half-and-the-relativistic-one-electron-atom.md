@@ -245,11 +245,11 @@ $$
 
 **which is the same pair the source's matrix route prints**, $k$ the Dirac–Coulomb quantum number and $za_0$ the Coulomb coupling in units of $\hbar c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions.
 
-**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}^{\mathrm{sp}*}\tilde{Ξ}^{\mathrm{sp}}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
+**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
 
 $$
 \begin{aligned}
-\rho(\theta,\theta^{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
+\rho(\theta,\theta_{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
 +C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
 &+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
 +C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
@@ -333,16 +333,16 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
@@ -350,8 +350,8 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 **The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. In units $\hbar=c=1$, with the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
@@ -368,11 +368,11 @@ $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\vec e_z\right),
 $$
 
-which is the second member of the pair with its left field read as $-i\overline{F}\vec e_z$: a conjugation and a fixed direction, nothing else. That is what the right multiplier carries — the second chirality slot, which the one-sided form holds in a second field, the two-sided form holds in the side of the action. The dictionary is recorded in *The Dirac Equation in Biquaternionic Form*. The chirality cell is $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+which is the second member of the pair with its left field read as $-i\overline{F}\vec e_z$: a conjugation and a fixed direction, nothing else. That is what the right multiplier carries — the second chirality slot, which the one-sided form holds in a second field, the two-sided form holds in the side of the action. The dictionary is recorded in *The Dirac Equation in Biquaternionic Form*. The chirality cell is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

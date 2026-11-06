@@ -42,7 +42,7 @@ Its asymptotic behaviour for large loops is the standard criterion of the phase.
 Two asymptotic behaviours are possible for a large loop.
 
 $$
-\langle W(C)\rangle \sim \exp\bigl(-\mu^{\mathrm{prm}}\,\mathrm{perim}(C)\bigr)
+\langle W(C)\rangle \sim \exp\bigl(-\mu_{\mathrm{prm}}\,\mathrm{perim}(C)\bigr)
 \qquad\text{(perimeter law)},
 \qquad
 \boxed{\;\langle W(C)\rangle \sim \exp\bigl(-\sigma\,\mathrm{area}(C)\bigr)\;}\quad\text{(area law)} .
@@ -71,7 +71,7 @@ The definition reads the decay of the loop's modulus, so it is the **Euclidean**
 Then the two laws read
 
 $$
-I(C) \simeq \mu^{\mathrm{prm}}\,\mathrm{perim}(C)
+I(C) \simeq \mu_{\mathrm{prm}}\,\mathrm{perim}(C)
 \qquad\text{or}\qquad
 I(C) \simeq \sigma\,\mathrm{area}(C),
 $$
@@ -81,7 +81,7 @@ and the two are distinguished not by the size of $I$ but by its **scaling**: the
 $$
 I(C_{L\times T}) \simeq
 \begin{cases}
-2\mu^{\mathrm{prm}}(L+T), & \text{perimeter},\\[2pt]
+2\mu_{\mathrm{prm}}(L+T), & \text{perimeter},\\[2pt]
 \sigma\,LT, & \text{area},
 \end{cases}
 $$
@@ -92,12 +92,12 @@ $$
 \lim_{T\to\infty}\frac{I(C_{L\times T})}{T}
 =
 \begin{cases}
-2\mu^{\mathrm{prm}}, & \text{perimeter},\\[2pt]
+2\mu_{\mathrm{prm}}, & \text{perimeter},\\[2pt]
 \sigma L, & \text{area}.
 \end{cases}
 $$
 
-With the area law at unit string tension, $I = LT$, the ratio $I/T$ took the values $1.000$, $2.000$, $4.000$ at $L = 1,2,4$ for both $T = 50$ and $T = 100$, reproducing $\sigma L$ exactly. With the perimeter law at $\mu^{\mathrm{prm}} = 0.5$ per unit length, $I = 0.5\cdot2(L+T)$, the ratio took the values $1.020, 1.040, 1.080$ at $T = 50$ and $1.010, 1.020, 1.040$ at $T = 100$, approaching the constant $2\mu^{\mathrm{prm}} = 1$ as $T$ grows and the $L/T$ correction vanishes. The two behaviours are therefore distinguishable by a single number extracted from the large-$T$ limit of the loop, and that number is either constant in $L$ or proportional to $L$.
+With the area law at unit string tension, $I = LT$, the ratio $I/T$ took the values $1.000$, $2.000$, $4.000$ at $L = 1,2,4$ for both $T = 50$ and $T = 100$, reproducing $\sigma L$ exactly. With the perimeter law at $\mu_{\mathrm{prm}} = 0.5$ per unit length, $I = 0.5\cdot2(L+T)$, the ratio took the values $1.020, 1.040, 1.080$ at $T = 50$ and $1.010, 1.020, 1.040$ at $T = 100$, approaching the constant $2\mu_{\mathrm{prm}} = 1$ as $T$ grows and the $L/T$ correction vanishes. The two behaviours are therefore distinguishable by a single number extracted from the large-$T$ limit of the loop, and that number is either constant in $L$ or proportional to $L$.
 
 Read information-theoretically, the area law says that the cost of maintaining the configuration is proportional to the **area swept** by the separation, not to its boundary. The flux configuration is non-local: the tube stores an amount of information per unit length that does not decay with separation, and the string tension $\sigma$ is the information cost per unit of separation per unit of time. A perimeter law, by contrast, is the behaviour of a short-ranged correlation: the cost is a boundary term and the sources are screened. Confinement is thus the statement that the loop's information cost is **extensive in the enclosed region rather than in its boundary**, and it is the signature that the coloured flux cannot be spread into the vacuum.
 
@@ -265,17 +265,17 @@ Two biquaternionic forms of the massive Dirac equation are in play here, and the
 **The one-sided pair.** The corpus's equation is the chiral pair on the element-valued field,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}^{\mathrm{sp}}_L$ carries the $L$ value and $\tilde{Ξ}^{\mathrm{sp}}_R$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
+Both equations act from the left, and the mass is the off-diagonal pairing of the two halves. The two subscripts are the two values of the chirality: $\tilde{Ξ}_{\mathrm{sp},L}$ carries the $L$ value and $\tilde{Ξ}_{\mathrm{sp},R}$ the $R$ value, read from the element and the declared frame and fixed in *Special Element Conventions*, §*The Chirality Convention*. At $m=0$ the pair decouples into
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0,
 \qquad
-\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=0,
+\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.
@@ -294,7 +294,7 @@ $$
 \mathcal NF=-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0 .
 $$
 
-The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=\mu\tilde{Ξ}^{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
+The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=\mu\tilde{Ξ}_{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
 
 ### The Linear Bag Model
 
@@ -325,9 +325,9 @@ $$
 A(iΞ) = -A(Ξ)\,\vec e_z ,
 $$
 
-that is $\tilde{Ξ}^{\mathrm{sp}}\mapsto-\tilde{Ξ}^{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
+that is $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
 
-**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
+**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Splitting $\mathcal N$ into its two halves, with the bar in the off-diagonal places, turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The two halves add to the whole, and their difference is the right action $M_{i\vec e_x}$, with $M_b:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; adding and subtracting the two equations therefore reduces the pair to one complex-linear operator:
 
 $$
 R = D_3 + i\frac{\partial}{\partial r'_t}\,M_{i\vec e_x} - m M_{\vec e_y}
@@ -472,9 +472,9 @@ What the framework supplies here is the function theory, the reduction and the F
 | $T_a = i\vec e_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
 | $U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; order parameter |
-| $\langle W(C)\rangle \sim \exp(-\mu^{\mathrm{prm}}\,\mathrm{perim})$ | Perimeter law (screening) |
+| $\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{prm}}\,\mathrm{perim})$ | Perimeter law (screening) |
 | $\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area})$ | Area law (confinement) |
-| $\mu^{\mathrm{prm}}$ | Perimeter coefficient |
+| $\mu_{\mathrm{prm}}$ | Perimeter coefficient |
 | $\sigma$ | String tension |
 | $C_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
@@ -487,7 +487,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}$ | The trace, twice the scalar part, *Norm and Pairing Conventions* |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_k\vec e_k\partial/\partial R_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |

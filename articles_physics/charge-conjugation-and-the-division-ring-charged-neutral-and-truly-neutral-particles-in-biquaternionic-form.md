@@ -192,48 +192,48 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame cells, the factor $i$ included, so the dictionary below carries no extra phase.
 
-With $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, the dictionary is:
+With $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, the dictionary is:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad
+\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad
+\gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad
+\gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad
+\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad
+\gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad
+\gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad
+\gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad
+\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-The first and the last collapse to one-sided multipliers, $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, because $L_{e_t}^{\mathrm{pau}}$ is the identity. The charge-conjugation cell of the article is the same frame read in the spatial direction:
+The first and the last collapse to one-sided multipliers, $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$, because $L_{\mathrm{pau},e_t}$ is the identity. The charge-conjugation cell of the article is the same frame read in the spatial direction:
 
 $$
-\eta_C=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\gamma_2,
+\eta_C=-L_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}=i\gamma_2,
 $$
 
 In the axis-free display:
 
 $$
-\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i\gamma_2,
+\eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}=i\gamma_2,
 $$
 
 and the chirality cell is:
 
 $$
-\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5.
+\Gamma=-iR_{\mathrm{pau},\vec e_z}=\gamma_5.
 $$
 
 The same identities in the axis-free display:
 
 $$
-\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=\gamma_5.
+\Gamma=-iR_{\mathrm{axf},\vec e_z}=\gamma_5.
 $$
 
 The dictionary is complex-linear. Over $\mathbb{R}$ it splits into two real forms: the products of $\gamma_0,\dots,\gamma_3$ satisfy the $\mathrm{Cl}_{1,3}$ relations and span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the sixteen two-sided cells $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
@@ -267,7 +267,7 @@ $$
 
 No identity in this list is used in the body of the article. They are recorded so that a formula written in the gamma frame can be translated into the cells, and they are the only place in the article where gamma symbols occur.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -288,7 +288,7 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 | $Q\mapsto-e_yQe_y$ | The two-sided multiplier; exchanges the two values of the subscript; its square is the identity |
 | $Q\mapsto Qe_x$ | The one-sided form; its square is $-e_t$, its order is four |
 | $Q_L$, $Q_R$ | The two values of the subscript, the minus one and the plus one |
-| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two lines of the free equation, one per value |
+| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two lines of the free equation, one per value |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
 | the fixed set of $Q^{\mathrm c}$ | Time and $y$ real, $x$ and $z$ imaginary; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |

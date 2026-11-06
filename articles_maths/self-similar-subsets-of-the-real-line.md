@@ -161,7 +161,7 @@ $$
 
 by the quoted Moran–Hutchinson theorem. The attractor is a Cantor set of unequal pieces, no two scales equal; it shows that the similarity dimension is not restricted to equal ratios and that the level-$k$ pieces need not have the same length.
 
-**Example (the positive-measure case).** Let $C^{\mathrm{fat}}$ be obtained from $[0,1]$ by deleting, from each of the $2^k$ intervals of level $k$, an open middle interval of length $\varepsilon_k3^{-k}$ with $\sum_k 2^k\varepsilon_k3^{-k}<\infty$. The resulting compact set is perfect and totally disconnected, hence homeomorphic to the Cantor discontinuum, but its Lebesgue measure is positive; its box and Hausdorff dimensions are both $1$, the ambient dimension. It is the boundary case between the Cantor sets and the interval, and it is not the attractor of a system of similarities satisfying the open set condition, because the open set condition forces the measure to vanish in this setting; the construction is the **Smith–Volterra–Cantor set**, treated in *Measure and Category*.
+**Example (the positive-measure case).** Let $C_{\mathrm{fat}}$ be obtained from $[0,1]$ by deleting, from each of the $2^k$ intervals of level $k$, an open middle interval of length $\varepsilon_k3^{-k}$ with $\sum_k 2^k\varepsilon_k3^{-k}<\infty$. The resulting compact set is perfect and totally disconnected, hence homeomorphic to the Cantor discontinuum, but its Lebesgue measure is positive; its box and Hausdorff dimensions are both $1$, the ambient dimension. It is the boundary case between the Cantor sets and the interval, and it is not the attractor of a system of similarities satisfying the open set condition, because the open set condition forces the measure to vanish in this setting; the construction is the **Smith–Volterra–Cantor set**, treated in *Measure and Category*.
 
 **Remark (what the three examples show).** The dimension of a self-similar subset of the line can be any prescribed number in $(0,1)$, attained by choosing the ratios so that $\sum_i r_i^s=1$ for the desired $s$, and the topology alone does not detect it: the middle-third set, the unequal-ratio set and the fat set are all homeomorphic to the Cantor discontinuum, while their dimensions are $0.6309\ldots$, $0.6942\ldots$ and $1$. The dimension is a statement about the chosen distance and the chosen ratios, exactly as the lead article records; the topology of all three is the same.
 
@@ -183,7 +183,7 @@ The dimension of the middle-third set is $\log2/\log3$, that of the Sierpiński 
 | $\{0,2\}^{\mathbb{N}} \to C$ | The digit coding, a homeomorphism |
 | $T_2$, $\partial T_2$ | The full binary tree; its boundary, homeomorphic to $C$ |
 | $C+C=[0,2]$, $C-C=[-1,1]$ | The additive tiling by the Cantor set |
-| $C_r$, $C^{\mathrm{fat}}$ | The $r$-Cantor set; the positive-measure Smith–Volterra–Cantor set |
+| $C_r$, $C_{\mathrm{fat}}$ | The $r$-Cantor set; the positive-measure Smith–Volterra–Cantor set |
 | $\log2/\log3$, $\log\varphi/\log2$ | Dimensions, quoted from *Fractal Geometry* |
 
 ## Further Reading

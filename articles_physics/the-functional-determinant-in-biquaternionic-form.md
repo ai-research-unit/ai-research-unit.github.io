@@ -35,7 +35,7 @@ $$
 \zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
 $$
 the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.
-- **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta^{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
+- **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
 
@@ -98,10 +98,10 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 
 The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.
 
-**The Gaussian.** For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle$ the functional-integral article gives
+**The Gaussian.** For a quadratic action $S[\tilde{Ξ}]=\tfrac12\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\rangle$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde{Ξ}\;\exp(-\frac12\langle\tilde{Ξ},K^{\mathrm{kin}}\tilde{Ξ}\rangle)
-= \big(\det K^{\mathrm{kin}}\big)^{-1/2},
+\int\mathcal{D}\tilde{Ξ}\;\exp(-\frac12\langle\tilde{Ξ},K_{\mathrm{kin}}\tilde{Ξ}\rangle)
+= \big(\det K_{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.
 
@@ -115,7 +115,7 @@ $$
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
-**The free case.** For the free biquaternion scalar, $S^{(2)}=K^{\mathrm{kin}}$ is central and mode-diagonal, and
+**The free case.** For the free biquaternion scalar, $S^{(2)}=K_{\mathrm{kin}}$ is central and mode-diagonal, and
 $$
 \Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+m^2\big)^2
 = \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
@@ -171,9 +171,9 @@ and the small-$r'_t$ expansion $K(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}
 
 The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.
 
-**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
+**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, with $\mathbb{D}$ the pair operator; the algebra-level determinant is an open point.
 $$
-\int\mathcal{D}\tilde{Ξ}^{\mathrm{sp}\natural}\,\mathcal{D}\tilde{Ξ}^{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}^{\mathrm{sp}\natural}\mathcal{F}\tilde{Ξ}^{\mathrm{sp}}\big) = \det\mathcal{F},
+\int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\natural}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\mathcal{F}\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
 \mathcal{F} = \mathbb{D} - m ,
 $$
@@ -187,15 +187,15 @@ whose blocks act between the two minimal left ideals. The mass occupies the diag
 
 **Hermiticity and phase.** If $\mathcal{F}$ is Hermitian its determinant is real and its sign is physical (the fermion sign problem). If $\mathcal{F}$ is not Hermitian — which is generic for a chiral or a $\theta$-dependent operator — its determinant is complex, and
 $$
-\det\mathcal{F} = \big|\det\mathcal{F}\big|\,\exp(\,i\theta^{\mathrm{pha}}_{\mathcal{F}}),
+\det\mathcal{F} = \big|\det\mathcal{F}\big|\,\exp(\,i\theta_{\mathrm{pha},\mathcal{F}}),
 $$
-with the phase $\theta^{\mathrm{pha}}_{\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(r'_t)$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
+with the phase $\theta_{\mathrm{pha},\mathcal{F}}$ the object of interest. For a family of operators $\mathcal{F}(r'_t)$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
 $$
-\theta^{\mathrm{pha}}_{\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(r'_t)\big) + \text{const},
+\theta_{\mathrm{pha},\mathcal{F}(r'_t)} = \frac{\pi}{2}\,\eta\big(\mathcal{F}(r'_t)\big) + \text{const},
 $$
-a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta^{\mathrm{vac}}$ dependence: the $\theta^{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
+a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
-**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*; the phase's topology is the $\theta^{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
+**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*; the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
 
 ## The Conformal Variation of the Determinant
 
@@ -220,7 +220,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 - Zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the trace anomaly.
 
 **Interpretation.**
-- Reading the biquaternion norm as the determinant, so that zero divisors are exactly the singular elements, is the algebra's own statement. Reading the fermion determinant's phase as the analytic home of the $\theta^{\mathrm{vac}}$ vacuum is the standard Atiyah–Patodi–Singer picture applied to the framework's module.
+- Reading the biquaternion norm as the determinant, so that zero divisors are exactly the singular elements, is the algebra's own statement. Reading the fermion determinant's phase as the analytic home of the $\theta_{\mathrm{vac}}$ vacuum is the standard Atiyah–Patodi–Singer picture applied to the framework's module.
 
 **Open.**
 - The framework has no independent normalization of the determinant; statements are scheme-independent only as ratios on a fixed module.
@@ -238,7 +238,7 @@ $$
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.
 
-For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (*The Trace Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta^{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
+For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (*The Trace Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
 
 ## Summary of Notation
 
@@ -254,12 +254,12 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\delta\tilde{Ξ}$ | Fluctuation about the classical field, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
 | $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
-| $(\det K^{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
+| $(\det K_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $K(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
 | $\mathcal{F}=\mathbb{D}-m$ | Fermionic fluctuation operator; $\mathbb{D}$ is the pair operator |
-| $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta^{\mathrm{pha}}_{\mathcal{F}})$ | Complex (chiral) fermion determinant |
+| $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 
 ## Further Reading

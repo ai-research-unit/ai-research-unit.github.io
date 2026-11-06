@@ -8,7 +8,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_t^{\mathrm{ret}} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{t,\mathrm{adv}} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_{\mathrm{ret},t} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$, and the distance is $L = c(r'_{t,3}-r'_{t,1})/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
@@ -52,29 +52,29 @@ the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\m
 It is useful to package the two directions into the retarded and advanced coordinates
 
 $$
-r'_t^{\mathrm{ret}} = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c},
+r'_{\mathrm{ret},t} = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c},
 \qquad
-r'_{t,\mathrm{adv}} = r'_t + \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}.
+r'_{\mathrm{adv},t} = r'_t + \frac{\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}.
 $$
 
-Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_t^{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{t,\mathrm{adv}}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then
+Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $r'_{\mathrm{ret},t}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $r'_{\mathrm{adv},t}$ is constant. The verification is one line: if $r_x(r'_t)\,\vec e_x+r_y(r'_t)\,\vec e_y+r_z(r'_t)\,\vec e_z = r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z + c(r'_t-r'_{t,0})\vec u_{\mathrm s}$ then
 
 $$
-r'_t^{\mathrm{ret}}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c},
+r'_{\mathrm{ret},t}(r'_t) = r'_t - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c} - (r'_t-r'_{t,0}) = r'_{t,0} - \frac{\vec u_{\mathrm s}\cdot(r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z)}{c},
 $$
 
-independent of $r'_t$, while $r'_{t,\mathrm{adv}}$ increases at rate $2$; and conversely for the incoming ray.
+independent of $r'_t$, while $r'_{\mathrm{adv},t}$ increases at rate $2$; and conversely for the incoming ray.
 
 For a displacement whose spatial part is collinear with $\vec u_{\mathrm s}$ — which is the case for a signal along $\vec u_{\mathrm s}$ — the biquaternion norm factorizes in these coordinates:
 
 $$
-\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_t^{\mathrm{ret}}\,\Delta r'_t_{\mathrm{adv}} .
+\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_{\mathrm{ret},t}\,\Delta r'_t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta r'_t^{\mathrm{ret}} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_t^{\mathrm{ret}},
+Ξ = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) = \vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t = -\omega\left(r'_t - \frac{\vec u_k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -232,7 +232,7 @@ $$
 \beta = \frac{\beta_1+\beta_2}{1+\beta_1\beta_2},
 $$
 
-the standard relativistic addition formula; as a check, $k(0.5)k(0.6) = 3.4641016\ldots = k(0.8461538\ldots)$, and $0.8461538\ldots = (0.5+0.6)/(1+0.5\cdot0.6)$ is the composed velocity computed in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. In rapidities the multiplication of $k$-factors is the addition of rapidities, since $k = \exp(\theta^{\mathrm{rpd}})$; the exchange of signals composes the same abelian group as the boosts. There is no value of $\beta_1,\beta_2$ with $|\beta_i| < 1$ for which the composed speed reaches $1$, which is the exchange form of the barrier of the companion article.
+the standard relativistic addition formula; as a check, $k(0.5)k(0.6) = 3.4641016\ldots = k(0.8461538\ldots)$, and $0.8461538\ldots = (0.5+0.6)/(1+0.5\cdot0.6)$ is the composed velocity computed in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. In rapidities the multiplication of $k$-factors is the addition of rapidities, since $k = \exp(\theta_{\mathrm{rpd}})$; the exchange of signals composes the same abelian group as the boosts. There is no value of $\beta_1,\beta_2$ with $|\beta_i| < 1$ for which the composed speed reaches $1$, which is the exchange form of the barrier of the companion article.
 
 The k-factor is a Lorentz scalar in the following limited sense: it is the ratio of two proper-time intervals and is therefore independent of any coordinate system, though it depends on the pair of observers. It is the invariant content of the exchange, the coordinate-free datum that the two observers can agree on without synchronising their clocks.
 
@@ -243,9 +243,9 @@ The k-factor is a Lorentz scalar in the following limited sense: it is the ratio
 Let frame $S_2$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S_2$ to those of $S$ is the rotor conjugation with the boost biquaternion
 
 $$
-\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_x,
+\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_x,
 \qquad
-\tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
+\tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
 of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
@@ -256,7 +256,7 @@ a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
 A_{2,\parallel} = \vec u_x\cdot\vec A_2,
 $$
 
-the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
+the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
 
 Now apply this to two events that are simultaneous in $S_2$ and separated along the boost direction by $\Delta x_2$. Then $a_2 = c\,\Delta r'_t_2 = 0$ and $A_{2,\parallel} = \Delta x_2$, so
 
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_t^{\mathrm{ret}} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_t^{\mathrm{ret}}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\Delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\Delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde R_\varphi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V} = d\tilde R_\varphi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
@@ -370,13 +370,13 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
-| $r'_t^{\mathrm{ret}} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{t,\mathrm{adv}} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
+| $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t+\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
 | $\tilde P = i\omega/c\,e_t+\vec k$ | Four-wavevector |
-| $Ξ = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega r'_t^{\mathrm{ret}}$ | Plane-wave phase |
+| $Ξ = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega r'_{\mathrm{ret},t}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
-| $\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\theta^{\mathrm{rpd}}=\beta$ |
+| $\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\theta_{\mathrm{rpd}}=\beta$ |
 | $r'_{t,1},r'_{t,2},r'_{t,3}$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $r'_{t,2}=r'_{t,1}+\varepsilon(r'_{t,3}-r'_{t,1})$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |

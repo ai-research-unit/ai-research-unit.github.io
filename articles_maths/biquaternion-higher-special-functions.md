@@ -286,7 +286,7 @@ $$
 The natural extension to a biquaternion variable would be
 
 $$
-\varkappa^{\mathrm{crd}} = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
+\varkappa_{\mathrm{crd}} = \sum_{n=1}^{\infty} \frac{1}{n^{\tilde{Q}}},
 $$
 
 where $n^{\tilde{Q}} = \exp(\tilde{Q} \log n)$ is the biquaternion power.
@@ -334,14 +334,14 @@ are the biquaternion analogues of holomorphic functions and harmonic functions. 
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-G^{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$
 
-It satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
+It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
-In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G^{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|_E^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
+In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G_{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|_E^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
-In the nilpotent regime, $G^{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
+In the nilpotent regime, $G_{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
 
 ### The Poisson Kernel
 
@@ -428,9 +428,9 @@ The biquaternion special functions are therefore a partially developed subject: 
 | $J_n, I_n$ | Bessel and modified Bessel functions of integral order |
 | $P_n, H_n, L_n$ | Legendre, Hermite and Laguerre polynomials (Chebyshev also treated) |
 | ${}_2F_1$ | Hypergeometric function |
-| $\Gamma, \varkappa^{\mathrm{crd}}$ | Gamma and zeta functions |
+| $\Gamma, \varkappa_{\mathrm{crd}}$ | Gamma and zeta functions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 
 ## Further Reading
 

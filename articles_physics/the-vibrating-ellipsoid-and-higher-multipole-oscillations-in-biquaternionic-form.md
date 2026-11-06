@@ -78,10 +78,10 @@ The equivalence of the two expressions has been verified explicitly: for random 
 
 ### The Shape as a Function on the Sphere
 
-Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\theta^{\mathrm{azm}},r'_t)$. For small deformations about the sphere,
+Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\theta_{\mathrm{azm}},r'_t)$. For small deformations about the sphere,
 
 $$
-r(\theta,\theta^{\mathrm{azm}},r'_t) = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(r'_t)\,Y_{lm}(\theta,\theta^{\mathrm{azm}})\right],
+r(\theta,\theta_{\mathrm{azm}},r'_t) = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(r'_t)\,Y_{lm}(\theta,\theta_{\mathrm{azm}})\right],
 $$
 
 where the $Y_{lm}$ are the spherical harmonics. The term $l = 0$ is a uniform dilation, the terms $l = 1$ are translations of the body, and the terms $l \geq 2$ are genuine shape deformations. The lowest genuine deformation, $l = 2$, is the one that makes the sphere an ellipsoid: it is a **quadrupole** deformation, and it is the mode that the rest of this article follows.
@@ -89,7 +89,7 @@ where the $Y_{lm}$ are the spherical harmonics. The term $l = 0$ is a uniform di
 Because the $Y_{lm}$ are orthonormal on the sphere, the coefficients $a_{lm}(r'_t)$ are the projections
 
 $$
-a_{lm}(r'_t) = \frac{1}{R_0}\int \left(r(\theta,\theta^{\mathrm{azm}},r'_t) - R_0\right)Y_{lm}^{*}(\theta,\theta^{\mathrm{azm}})\,d\Omega ,
+a_{lm}(r'_t) = \frac{1}{R_0}\int \left(r(\theta,\theta_{\mathrm{azm}},r'_t) - R_0\right)Y_{lm}^{*}(\theta,\theta_{\mathrm{azm}})\,d\Omega ,
 $$
 
 for $l\geq1$. They are ordinary scalar functions of time — real if real spherical harmonics are used, and for complex harmonics satisfying $a_{l,-m} = (-1)^m a_{lm}^{*}$, which is the statement that the shape function is real. The subtraction of the equilibrium radius removes the $l = 0$ term, so that the integral measures the deformation about the sphere rather than the radius itself; equivalently, it is the coefficient of $Y_{lm}$ in the expansion of the scaled deformation $(r-R_0)/R_0$. There are $2l+1$ amplitudes for each order, and the number grows with $l$: this is the shape version of the multipole tower.
@@ -102,7 +102,7 @@ $$
 \left(d^2a_{lm}/d{r'_{t}}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$
 
-with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t + \theta^{\mathrm{pha}}_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
+with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
 
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 
@@ -312,7 +312,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\vec\omega = d\theta/dr'_t\,\vec u$ | Angular velocity (body-frame vector) |
 | $d\tilde U/dr'_t = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
 | $Y_{lm}$ | Spherical harmonics |
-| $r(\theta,\theta^{\mathrm{azm}},r'_t) = R_0[1+\sum a_{lm}Y_{lm}]$ | Shape function of the deformed body |
+| $r(\theta,\theta_{\mathrm{azm}},r'_t) = R_0[1+\sum a_{lm}Y_{lm}]$ | Shape function of the deformed body |
 | $a_{lm}(r'_t)$ | Normal-mode amplitude (a scalar) |
 | $\vec v(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)$ | Velocity field |
 | $\rho_m$, $\sigma$, $M$ | Mass density, surface tension, total mass |

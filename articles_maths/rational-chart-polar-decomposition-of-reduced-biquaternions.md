@@ -201,7 +201,7 @@ $$
 each of real dimension three. The domain is
 
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}\setminus(W_+\cup W_-).
+{\mathbb{B}_{\mathrm{red}}}^{\times}\setminus(W_+\cup W_-).
 $$
 
 The zero divisors are excluded twice over: they are the lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, and $Q_{\blacktriangle}=Q_{\blacktriangledown}$ lies in $W_-$ while $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ lies in $W_+$. The walls are larger than the zero divisors. A unit can have $Q_{+}$ real and negative, for instance $Q_{\blacktriangle}=-3/2$, $Q_{\blacktriangledown}=1/2$, where $Q_{+}=-1$ and $Q_{-}=-2$; such a unit lies on both walls and has no chart coordinate, although it has a perfectly good modulus–unit decomposition with unit factor $(-1,-1)$.

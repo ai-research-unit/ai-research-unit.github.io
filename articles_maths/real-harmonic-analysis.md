@@ -114,7 +114,7 @@ $$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
 $$
 
-**Proof.** For $f \in L^1 \cap L^2$, put $f^{\mathrm{refl}}(a) = \overline{f(-a)}$. Then $\widehat{f * f^{\mathrm{refl}}} = |\mathcal F f|^2$, so inversion at $0$ gives $\int |\mathcal F f|^2 = (f * f^{\mathrm{refl}})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.
+**Proof.** For $f \in L^1 \cap L^2$, put $f_{\mathrm{refl}}(a) = \overline{f(-a)}$. Then $\widehat{f * f_{\mathrm{refl}}} = |\mathcal F f|^2$, so inversion at $0$ gives $\int |\mathcal F f|^2 = (f * f_{\mathrm{refl}})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.
 
 For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(a) = f(-a)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.
 

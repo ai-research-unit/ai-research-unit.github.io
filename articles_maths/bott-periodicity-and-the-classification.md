@@ -230,7 +230,7 @@ The even subalgebra satisfies $\mathrm{Cl}^0_{n,m}\cong\mathrm{Cl}_{n,m-1}\cong\
 | $\hat\otimes$ | Graded tensor product, $\mathrm{Cl}_{n,m}\hat\otimes\mathrm{Cl}_{r,s}\cong\mathrm{Cl}_{n+r,m+s}$ |
 | $N=n+m$ | Total dimension |
 | $d=n-m$ | Signature difference, governing the eightfold class |
-| $\mathbb{C}^{\mathrm{spl}}=F\times F$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}=F\times F$ | Split complex algebra |
 | $\mathbb{H}$ | Quaternion algebra |
 | $\mathbb{B}$ | Biquaternion algebra, $\cong\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$ |
 | $M_k(D)$ | Matrix algebra of size $k$ over the division algebra $D$ |

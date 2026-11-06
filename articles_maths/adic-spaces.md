@@ -103,7 +103,7 @@ where $\widehat{\otimes}$ denotes the completion of the tensor product for the a
 
 ### Rigid Analytic Geometry
 
-**Theorem (rigid spaces as adic spaces).** Let $K$ be a complete non-Archimedean field and let $X$ be a rigid analytic space over $K$ in the sense of *Rigid Analytic Geometry*. Then there is an adic space $X^{\mathrm{ad}}$ over $\operatorname{Spa}(K, \mathcal{O})$ and a functorial isomorphism
+**Theorem (rigid spaces as adic spaces).** Let $K$ be a complete non-Archimedean field and let $X$ be a rigid analytic space over $K$ in the sense of *Rigid Analytic Geometry*. Then there is an adic space $X_{\mathrm{ad}}$ over $\operatorname{Spa}(K, \mathcal{O})$ and a functorial isomorphism
 
 $$
 \boxed{\;\{\text{rigid spaces over } K\} \xrightarrow{\ \sim\ } \{\text{adic spaces over } \operatorname{Spa}(K, \mathcal{O})\}\;}
@@ -123,7 +123,7 @@ in the quasi-compact and quasi-separated case, under which affinoid algebras cor
 
 ### Formal Schemes
 
-**Theorem (the adic generic fibre).** Let $\mathrm{X}$ be a formal scheme locally of finite type over $\operatorname{Spf} R$ for a complete adic ring $R$ with a topologically nilpotent unit (equivalently, $R$ Tate). Then there is an adic space $\mathrm{X}^{\mathrm{ad}}$ with the same underlying set of points as the rigid generic fibre of *Formal Schemes*, obtained by taking the adic spectrum of the Huber pairs of the affinoid localisations and gluing; the analytic points of $\mathrm{X}^{\mathrm{ad}}$ are exactly the points of the rigid generic fibre $\mathrm{X}_K$.
+**Theorem (the adic generic fibre).** Let $\mathrm{X}$ be a formal scheme locally of finite type over $\operatorname{Spf} R$ for a complete adic ring $R$ with a topologically nilpotent unit (equivalently, $R$ Tate). Then there is an adic space $\mathrm{X}_{\mathrm{ad}}$ with the same underlying set of points as the rigid generic fibre of *Formal Schemes*, obtained by taking the adic spectrum of the Huber pairs of the affinoid localisations and gluing; the analytic points of $\mathrm{X}_{\mathrm{ad}}$ are exactly the points of the rigid generic fibre $\mathrm{X}_K$.
 
 **Proof.** This is the adic form of Raynaud's theorem; the formal affine pieces $\operatorname{Spf} A$ give the Huber pairs $(A \otimes_R K, A^\circ)$ and the gluing is compatible with the formal gluing. The identification of the analytic points follows from the comparison with the rigid theory. It is quoted as standard.
 
@@ -136,12 +136,12 @@ in the quasi-compact and quasi-separated case, under which affinoid algebras cor
 **Example (the adic unit disc).** Let $K$ be a complete non-Archimedean field. The adic unit disc is
 
 $$
-\mathbb{U}^{\mathrm{ad}} = \operatorname{Spa}(K\langle T\rangle, \mathcal{O}\langle T\rangle),
+\mathbb{U}_{\mathrm{ad}} = \operatorname{Spa}(K\langle T\rangle, \mathcal{O}\langle T\rangle),
 $$
 
 a Tate affinoid adic space whose analytic points are the Berkovich points of the disc of *Berkovich Spaces* and whose non-analytic points are the "residue disc" points coming from the reduction. Its rational subsets $\lvert f \rvert \leq \lvert g \rvert$ give the Weierstrass, Laurent and rational domains of the rigid theory.
 
-**Example (the adic affine and projective lines).** $\mathbb{A}^{1,\mathrm{ad}} = \bigcup_n \operatorname{Spa}(K\langle T/n\rangle, \mathcal{O}\langle T/n\rangle)$ with the analytic topology, and the **adic projective line** is glued from two copies along the open annulus; it is the adic space underlying the projective line, compact for the spectral topology, and its analytic points are the Berkovich projective line of *Berkovich Spaces*.
+**Example (the adic affine and projective lines).** $\mathbb{A}_{\mathrm{ad}}^1 = \bigcup_n \operatorname{Spa}(K\langle T/n\rangle, \mathcal{O}\langle T/n\rangle)$ with the analytic topology, and the **adic projective line** is glued from two copies along the open annulus; it is the adic space underlying the projective line, compact for the spectral topology, and its analytic points are the Berkovich projective line of *Berkovich Spaces*.
 
 **Example (adic fields).** For a complete non-Archimedean field $K$ the space $\operatorname{Spa}(K, \mathcal{O})$ is a single point, the valuation of $K$; but the space $\operatorname{Spa}(K, \mathcal{O}_K)$ contains additional points when $K$ is not discretely valued, corresponding to the extensions of the valuation to the algebraic closure. In particular $\operatorname{Spa}(\mathbb{C}_p, \mathcal{O}_{\mathbb{C}_p})$ is a rich space with a point for each extension of the $p$-adic valuation, and this is the base of the perfectoid constructions.
 
@@ -172,7 +172,7 @@ The **structure sheaf** assigns to a rational subset the completion of the local
 | $O_{\operatorname{Spa}(A, A^+)}$ | Structure sheaf of complete topological rings |
 | $\mathcal{H}(x)$ | Completed residue field at a point |
 | $\widehat{O_x}$ | Completed local ring at a point |
-| $\mathbb{U}^{\mathrm{ad}}$, $\mathbb{A}^{1,\mathrm{ad}}$ | The adic unit disc and the adic affine line |
+| $\mathbb{U}_{\mathrm{ad}}$, $\mathbb{A}_{\mathrm{ad}}^1$ | The adic unit disc and the adic affine line |
 | $\mathcal{O}$, $\mathrm{M}$, $k$ | Valuation ring, maximal ideal and residue field of $K$ |
 | $A \widehat{\otimes}_B C$ | Completed tensor product of Huber rings |
 

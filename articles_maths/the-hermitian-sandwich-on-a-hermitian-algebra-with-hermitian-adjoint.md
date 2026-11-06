@@ -96,7 +96,7 @@ $$
 **Proposition.** Let $x$ be homogeneous of parity $\varepsilon = (-1)^{|x|}$ and let $y$ be homogeneous of degree $k$. Then every product $x\,y\,x^{\dagger}$ has parity $\varepsilon \cdot (-1)^{k} \cdot \varepsilon = (-1)^{k}$, so
 
 $$
-\mathrm{Sd}_x\bigl(\mathrm{Cl}^{k}\bigr) \subseteq \mathrm{Cl}^{\mathrm{even}} \ \text{if } k \text{ is even}, \qquad \mathrm{Sd}_x\bigl(\mathrm{Cl}^{k}\bigr) \subseteq \mathrm{Cl}^{\mathrm{odd}} \ \text{if } k \text{ is odd}.
+\mathrm{Sd}_x\bigl(\mathrm{Cl}^{k}\bigr) \subseteq \mathrm{Cl}_{\mathrm{even}} \ \text{if } k \text{ is even}, \qquad \mathrm{Sd}_x\bigl(\mathrm{Cl}^{k}\bigr) \subseteq \mathrm{Cl}_{\mathrm{odd}} \ \text{if } k \text{ is odd}.
 $$
 
 If in addition $x$ is even, then $\mathrm{Sd}_x$ preserves the degree, $\mathrm{Sd}_x(\mathrm{Cl}^{k}) \subseteq \mathrm{Cl}^{k}$, because the left factor and the dagger are then sums of even blades and degrees add.

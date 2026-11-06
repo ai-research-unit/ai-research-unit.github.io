@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The norm $\langle Q\rangle_{*}=q^2-q'^2$ of the split-complex algebra decides invertibility (*Norm and Invertibility in the General Split-Complex Algebra*) and vanishes exactly on the zero divisors together with the origin (*Zero Divisors of the Split-Complex Algebra*). Both treatments are algebraic; this article treats the form geometrically. It polarises $\langle\cdot\rangle_{*}$ and reads $\mathbb{C}^{\mathrm{spl}}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{\exp(jt)\}$ as the projectivity fixing them; and relates the picture to the hyperbolic geometry developed in *Hyperbolic Rotations*. The smooth quadric surface drops to two projective points.
+The norm $\langle Q\rangle_{*}=q^2-q'^2$ of the split-complex algebra decides invertibility (*Norm and Invertibility in the General Split-Complex Algebra*) and vanishes exactly on the zero divisors together with the origin (*Zero Divisors of the Split-Complex Algebra*). Both treatments are algebraic; this article treats the form geometrically. It polarises $\langle\cdot\rangle_{*}$ and reads $\mathbb{C}_{\mathrm{spl}}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{\exp(jt)\}$ as the projectivity fixing them; and relates the picture to the hyperbolic geometry developed in *Hyperbolic Rotations*. The smooth quadric surface drops to two projective points.
 
-The article owns the quadratic space $(\mathbb{C}^{\mathrm{spl}},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Norm and Invertibility in the General Split-Complex Algebra*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
+The article owns the quadratic space $(\mathbb{C}_{\mathrm{spl}},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Norm and Invertibility in the General Split-Complex Algebra*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
 
 ## The Quadratic Space
 
@@ -15,7 +15,7 @@ $$
 B(Q,B)=q b-q' b', \qquad Q=q+j q',\ B=b+j b',
 $$
 
-whose Gram matrix in the basis $\{1,j\}$ is $\mathbf{G}=\operatorname{diag}(1,-1)$. The pair $(\mathbb{C}^{\mathrm{spl}},N)$ is therefore a non-degenerate real quadratic space of dimension $2$ and signature $(1,1)$: the basis $\{1,j\}$ is orthogonal, with $\langle 1\rangle_{*}=+1$ and $\langle j\rangle_{*}=-1$, and the Gram determinant is $\det\mathbf{G}=-1\neq0$. This is the geometry's input rather than its construction: the algebra owns the form, and the geometry reads it.
+whose Gram matrix in the basis $\{1,j\}$ is $\mathbf{G}=\operatorname{diag}(1,-1)$. The pair $(\mathbb{C}_{\mathrm{spl}},N)$ is therefore a non-degenerate real quadratic space of dimension $2$ and signature $(1,1)$: the basis $\{1,j\}$ is orthogonal, with $\langle 1\rangle_{*}=+1$ and $\langle j\rangle_{*}=-1$, and the Gram determinant is $\det\mathbf{G}=-1\neq0$. This is the geometry's input rather than its construction: the algebra owns the form, and the geometry reads it.
 
 The form is **indefinite** and **split**: its discriminant is $\operatorname{disc}(N)=4>0$, a square in $\mathbb{R}$, and the form is isometric to the difference of two squares. The comparison with the definite case is the whole content of the geometry: the complex field carries the positive definite form $q^2+q'^2$, whose projective null quadric is empty over $\mathbb{R}$, whereas the split-complex algebra carries $q^2-q'^2$, whose projective null quadric is the pair of points computed below. The motions the form generates — its isometry group $O(1,1)$ and the hyperbolic rotations of its identity component — are the subject of *Hyperbolic Rotations*.
 
@@ -29,7 +29,7 @@ $$
 \boxed{\; \mathcal{N}=\{q=q'\}\cup\{q=-q'\}=\mathbb{R}(1+j)\ \cup\ \mathbb{R}(1-j)=\mathbb{R}\Pi_+\ \cup\ \mathbb{R}\Pi_- \;},
 $$
 
-each a maximal totally isotropic subspace of $(\mathbb{C}^{\mathrm{spl}},N)$; the two lines are the eigenspaces of the conjugation and are interchanged by it. There are no other isotropic vectors.
+each a maximal totally isotropic subspace of $(\mathbb{C}_{\mathrm{spl}},N)$; the two lines are the eigenspaces of the conjugation and are interchanged by it. There are no other isotropic vectors.
 
 **Proof.** $\langle Q\rangle_{*}=q^2-q'^2=(q-q')(q+q')$, so $\langle Q\rangle_{*}=0$ iff $q=q'$ or $q=-q'$, which are the two lines displayed. On either line the restricted form vanishes identically, so each is totally isotropic; a two-dimensional space of signature $(1,1)$ has totally isotropic subspaces only of dimension $1$, so each is maximal. The idempotents $\Pi_\pm=\tfrac12(1\pm j)$ span the two lines, and $\bar \Pi_+ = \Pi_-$.
 
@@ -40,7 +40,7 @@ So the null cone is a **degenerate quadric**: two lines meeting at the apex, rat
 **Definition.** The **real projective line** of the algebra is the set of one-dimensional subspaces,
 
 $$
-\mathbb{P}(\mathbb{C}^{\mathrm{spl}})=(\mathbb{C}^{\mathrm{spl}}\setminus\{0\})/\mathbb{R}^\times \cong \mathbb{RP}^1\cong S^1,
+\mathbb{P}(\mathbb{C}_{\mathrm{spl}})=(\mathbb{C}_{\mathrm{spl}}\setminus\{0\})/\mathbb{R}^\times \cong \mathbb{RP}^1\cong S^1,
 $$
 
 with a point written $[q:q']$ for the line spanned by $q+j q'$; the affine coordinate is $t=q'/q$ on the chart $q\neq0$, with the remaining point $[0:1]=[j]$ the point at infinity of the chart.
@@ -58,7 +58,7 @@ the **two points at infinity** of the hyperbolic plane; in the affine coordinate
 **The two arcs.** The two points at infinity divide the projective line into two open arcs:
 
 $$
-\mathbb{P}(\mathbb{C}^{\mathrm{spl}})\setminus Q^0=\{N>0\}\ \sqcup\ \{N<0\},
+\mathbb{P}(\mathbb{C}_{\mathrm{spl}})\setminus Q^0=\{N>0\}\ \sqcup\ \{N<0\},
 $$
 
 the first the interval $-1<t<1$ through the real line $[1]=[1:0]$, the second the complementary arc through the split imaginary line $[j]$, corresponding to the directions of positive and negative norm. So the projective line is the circle, the isotropic points are two marked points, and the definite and indefinite directions occupy the two arcs they cut out.
@@ -92,7 +92,7 @@ the projectivisation of the conformal group of the Lorentzian plane that preserv
 **Definition.** The **hyperbolic line** is the arc of positive directions
 
 $$
-H=\{-1<t<1\}\subset\mathbb{P}(\mathbb{C}^{\mathrm{spl}}),
+H=\{-1<t<1\}\subset\mathbb{P}(\mathbb{C}_{\mathrm{spl}}),
 $$
 
 between the two points at infinity, together with the hyperbolic distance
@@ -121,7 +121,7 @@ So the geometry attached to the split-complex plane is the one-dimensional **hyp
 
 ## Summary
 
-The split-complex norm $\langle q,q'\rangle_{*}=q^2-q'^2$ polarises to the Lorentzian inner product $\langle Q,B\rangle_{*}=q b-q' b'$ with Gram matrix $\operatorname{diag}(1,-1)$, making $(\mathbb{C}^{\mathrm{spl}},N)$ a non-degenerate real quadratic space of signature $(1,1)$. Its isotropic cone is the pair of null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, each maximal totally isotropic and each spanned by an idempotent; the two lines are interchanged by the conjugation. The projective null quadric is the two-point set $Q^0=\{[1:1],[1:-1]\}\subset\mathbb{RP}^1$, whose points are the two points at infinity of the hyperbolic geometry: they are the absolute of the form, and they divide the projective line into the arc of positive directions and the arc of negative directions.
+The split-complex norm $\langle q,q'\rangle_{*}=q^2-q'^2$ polarises to the Lorentzian inner product $\langle Q,B\rangle_{*}=q b-q' b'$ with Gram matrix $\operatorname{diag}(1,-1)$, making $(\mathbb{C}_{\mathrm{spl}},N)$ a non-degenerate real quadratic space of signature $(1,1)$. Its isotropic cone is the pair of null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, each maximal totally isotropic and each spanned by an idempotent; the two lines are interchanged by the conjugation. The projective null quadric is the two-point set $Q^0=\{[1:1],[1:-1]\}\subset\mathbb{RP}^1$, whose points are the two points at infinity of the hyperbolic geometry: they are the absolute of the form, and they divide the projective line into the arc of positive directions and the arc of negative directions.
 
 The hyperbolic one-parameter group $\{\exp(js)\}$ acts on the projective line by the Möbius projectivity $t\mapsto(t+\tanh s)/(1+t\tanh s)$, fixing the two points at infinity; the full stabiliser of the pair is the one-dimensional group $\mathbb{R}^\times$, of which $\{\exp(js)\}$ is the identity component. On the interval between the points at infinity the group acts as translations of the hyperbolic line, and the hyperbolic distance is the logarithm of the cross-ratio to the two points at infinity, $\tfrac12\lvert\ln(t_1,t_2\,;-1,1)\rvert$. The degeneration is complete: the smooth Segre quadric surface $\mathbb{P}^1\times\mathbb{P}^1$ drops to two projective points, its two rulings to the two null directions, and its isometry group to the one-dimensional $O(1,1)$ whose identity component is the hyperbolic group.
 
@@ -129,18 +129,18 @@ The hyperbolic one-parameter group $\{\exp(js)\}$ acts on the projective line by
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Q = q + j q'$ | General split complex number |
 | $\langle Q\rangle_{*} = q^2 - q'^2$ | Norm, signature $(1,1)$ |
 | $B(Q,B) = q b - q' b'$ | Polar form, Lorentzian inner product |
 | $\mathbf{G} = \operatorname{diag}(1,-1)$ | Gram matrix of $\langle\cdot,\cdot\rangle_{*}$ |
 | $\mathcal{N}$ | Isotropic cone; the two null lines $q = \pm q'$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, spanning the null lines |
-| $\mathbb{P}(\mathbb{C}^{\mathrm{spl}})\cong\mathbb{RP}^1$ | Real projective line; $[q:q']$, affine coordinate $t = q'/q$ |
+| $\mathbb{P}(\mathbb{C}_{\mathrm{spl}})\cong\mathbb{RP}^1$ | Real projective line; $[q:q']$, affine coordinate $t = q'/q$ |
 | $Q^0 = \{[1:1],[1:-1]\}$ | Projective null quadric; the two points at infinity |
 | $t = \pm1$ | The two isotropic points in the affine coordinate |
 | $\exp(js) = \cosh s + j\sinh s$ | Hyperbolic one-parameter group |
-| $t\mapsto\frac{t+\tanh s}{1+t\tanh s}$ | The projectivity induced on $\mathbb{P}(\mathbb{C}^{\mathrm{spl}})$ |
+| $t\mapsto\frac{t+\tanh s}{1+t\tanh s}$ | The projectivity induced on $\mathbb{P}(\mathbb{C}_{\mathrm{spl}})$ |
 | $\mathrm{Stab}\{Q^0\}\cong\mathbb{R}^\times$ | Projectivities fixing each of the two points at infinity |
 | $H = \{-1<t<1\}$ | The hyperbolic line, the arc of positive directions |
 | $d(t_1,t_2) = \tfrac12\lvert\ln(t_1,t_2\,;-1,1)\rvert$ | Hyperbolic distance as a cross-ratio |

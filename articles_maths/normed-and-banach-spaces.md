@@ -111,9 +111,9 @@ $$
 
 ### Hahn–Banach
 
-**Theorem (Hahn–Banach, analytic form).** Let $X$ be a real vector space, $p:X \to \mathbb{R}$ a seminorm, $M \subseteq X$ a subspace and $f:M \to \mathbb{R}$ linear with $f \le p$ on $M$. Then $f$ extends to a linear $f^{\mathrm{ext}}:X \to \mathbb{R}$ with $f^{\mathrm{ext}} \le p$ on $X$. Over $\mathbb{C}$ the extension preserves the norm of a bounded functional.
+**Theorem (Hahn–Banach, analytic form).** Let $X$ be a real vector space, $p:X \to \mathbb{R}$ a seminorm, $M \subseteq X$ a subspace and $f:M \to \mathbb{R}$ linear with $f \le p$ on $M$. Then $f$ extends to a linear $f_{\mathrm{ext}}:X \to \mathbb{R}$ with $f_{\mathrm{ext}} \le p$ on $X$. Over $\mathbb{C}$ the extension preserves the norm of a bounded functional.
 
-*Proof (sketch).* The one-step extension: for $x \notin M$, the values $f^{\mathrm{ext}}(x)=t$ making $f^{\mathrm{ext}} \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension.
+*Proof (sketch).* The one-step extension: for $x \notin M$, the values $f_{\mathrm{ext}}(x)=t$ making $f_{\mathrm{ext}} \le p$ on $M+\mathbb{R}x$ are those with $\sup_{m \in M}(f(m)-p(m-x)) \le t \le \inf_{m \in M}(p(m+x)-f(m))$, an interval shown nonempty by subadditivity of $p$; transfinite induction over a well-ordered basis of $X/M$ completes the extension.
 
 **Corollary.** (i) For every $x \neq 0$ in a normed space there is $f \in X^*$ with $\|f\|=1$ and $f(x)=\|x\|$; hence $X^*$ separates points and $\|x\|=\sup_{\|f\|\le1}|f(x)|$. (ii) A subspace $M$ is dense if and only if every $f \in X^*$ vanishing on $M$ is zero. (iii) If $Y \subseteq X$ is a closed subspace and $x \notin Y$, there is $f \in X^*$ with $f|_Y=0$ and $f(x) \neq 0$.
 

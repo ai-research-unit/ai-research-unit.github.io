@@ -540,7 +540,7 @@ $$
 \qquad \tilde Q \in \mathbb{B} \ \ \text{invertible},
 $$
 
-and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The **quantum operations** of the Schrödinger picture are the **$*$-unitary** case, $\tilde Q\tilde Q^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, written $\tilde U^{\mathrm{lor}}$, with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
+and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The **quantum operations** of the Schrödinger picture are the **$*$-unitary** case, $\tilde Q\tilde Q^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, written $\tilde U_{\mathrm{lor}}$, with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
 
 $$
 SU(2) \subset \mathrm{U}(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad \mathrm{U}(2) \cap SL(2,\mathbb{C}) = SU(2).
@@ -565,10 +565,10 @@ $$
 
 since the left-hand side is $\mathrm{Tr}\big((\tilde Q^{*}\tilde Q)\tilde{R}_{\psi,2}(\tilde Q^{*}\tilde Q)\tilde{R}_{\psi,1}\big)$; setting $S=\tilde Q^{*}\tilde Q$ and taking $\tilde{R}_{\psi,2}=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.
 
-The **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \overline{\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}} = 1$:
+The **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}} = 1$:
 
 $$
-\langle\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U^{\mathrm{lor}} \in SL(2,\mathbb{C}).
+\langle\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm{lor}} \in SL(2,\mathbb{C}).
 $$
 
 This form does **not**, however, separate the two groups, and the point is worth stating: since $|\langle\tilde Q\rangle_{\natural}| = |\det\tilde Q| = 1$ for a $*$-unitary element, the $*$-unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element $\tilde Q$ with $|\langle\tilde Q\rangle_{\natural}| = 1$, of which the $*$-unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates the two full groups is the **Euclidean** plain form: $\mathrm{U}(2)$ preserves it, while a non-$*$-unitary Lorentz element does not. The automorphism property points the same way: it holds for the $*$-unitary elements and fails for the non-$*$-unitary Lorentz elements. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
@@ -578,16 +578,16 @@ This form does **not**, however, separate the two groups, and the point is worth
 **A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = \cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta^{\mathrm{rpd}}}{2} = 1 .
+\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta_{\mathrm{rpd}}}{2} = 1 .
 $$
 
 It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the state slice of the future light cone, with $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $\langle\tilde{Ϛ}\rangle_{\natural} = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the normalisation $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ nor the plain form. On the maximally mixed state, for instance,
 
 $$
-\tilde U_{\mathrm b}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm b}^{*} = \tfrac{1}{2}\left(\cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}\right),
+\tilde U_{\mathrm b}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm b}^{*} = \tfrac{1}{2}\left(\cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\right),
 $$
 
-whose trace is $\cosh\theta^{\mathrm{rpd}}$, not $1$. A boost therefore maps the state cone into itself while moving the state off the state slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the finite-dimensional Lorentz transformation of a state is not $*$-unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean plain form.
+whose trace is $\cosh\theta_{\mathrm{rpd}}$, not $1$. A boost therefore maps the state cone into itself while moving the state off the state slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the finite-dimensional Lorentz transformation of a state is not $*$-unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean plain form.
 
 **The Wigner rotation.** The product of two boost rotors is not Hermitian in general — only when the two boosts are collinear. Its polar decomposition,
 
@@ -678,7 +678,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ | Projective measurement |
 | $\tilde Q(r'_t) = \exp(-ic r_t\,r'_t/\hbar)(\cos(|\vec r_\psi|r'_t/\hbar)e_t + \sin(|\vec r_\psi|r'_t/\hbar)\vec u_\psi)$ | $*$-Unitary evolution |
 | $\tilde{Ϛ}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}\tilde Q(r'_t)^{*}$ | Von Neumann evolution |
-| $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$, $\tilde Q$ invertible | Conjugation; quantum if $\tilde Q\tilde Q^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
+| $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$, $\tilde Q$ invertible | Conjugation; quantum if $\tilde Q\tilde Q^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}(|\vec r|^2-1)e_t$ | Deviation from idempotency |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. The quadratic family of the algebra is
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. The quadratic family of the algebra is
 
 $$
-F_{C}(\breve Q)=\breve Q^{2}+C,\qquad C\in\mathbb{B}^{\mathrm{red}},
+F_{C}(\breve Q)=\breve Q^{2}+C,\qquad C\in\mathbb{B}_{\mathrm{red}},
 $$
 
 and it is the subject of the article. The single structural fact that decides everything is that the multiplication is componentwise in the idempotent coordinates, so the map is the pair of two complex quadratic maps,
@@ -63,7 +63,7 @@ $$
 **Definition (the two sets).** The **filled Julia set** of $F_{C}$ is
 
 $$
-\mathcal{K}_{C}=\{\breve Q\in\mathbb{B}^{\mathrm{red}}:\text{the orbit }F_{C}^{n}(\breve Q)\text{ is bounded}\},
+\mathcal{K}_{C}=\{\breve Q\in\mathbb{B}_{\mathrm{red}}:\text{the orbit }F_{C}^{n}(\breve Q)\text{ is bounded}\},
 $$
 
 and the **Julia set** $\mathcal{J}_{C}$ is its boundary.

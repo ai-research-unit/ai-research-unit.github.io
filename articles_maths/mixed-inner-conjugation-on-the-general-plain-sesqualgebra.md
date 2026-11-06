@@ -10,7 +10,7 @@ $$
 \Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\,\tilde Q\,\rho(\tilde{Q}_1),\qquad \mathrm{J}\in\{\mathrm{id},\bar{\cdot}\},\quad \rho\in\{\mathrm{inv},{}^{*}\},
 $$
 
-namely the **inner conjugation** $\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}(\tilde Q)=\tilde{Q}_1\tilde Q\tilde{Q}_1^{-1}$, the **signed inner conjugation** $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}(\tilde Q)=\bar{\tilde{Q}_1}\tilde Q\tilde{Q}_1^{-1}$, the **Hermitian sandwich** $\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\tilde{Q}_1\tilde Q\tilde{Q}_1^{*}$, and the **signed Hermitian sandwich** $\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\bar{\tilde{Q}_1}\tilde Q\tilde{Q}_1^{*}$. This article is the biquaternion instance of the general theory of these four operators, *Mixed Inner Conjugation and Hermitian Adjoint*.
+namely the **inner conjugation** $\Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1}(\tilde Q)=\tilde{Q}_1\tilde Q\tilde{Q}_1^{-1}$, the **signed inner conjugation** $\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}}(\tilde Q)=\bar{\tilde{Q}_1}\tilde Q\tilde{Q}_1^{-1}$, the **Hermitian sandwich** $\Phi_{\mathrm{id},\tilde{Q}_1}^{{}^{*}}(\tilde Q)=\tilde{Q}_1\tilde Q\tilde{Q}_1^{*}$, and the **signed Hermitian sandwich** $\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\bar{\tilde{Q}_1}\tilde Q\tilde{Q}_1^{*}$. This article is the biquaternion instance of the general theory of these four operators, *Mixed Inner Conjugation and Hermitian Adjoint*.
 
 The unsigned members are owned elsewhere and are cited only. The inner conjugation $\tilde{Q}_1\tilde Q\tilde{Q}_1^{-1}$ is the algebra form of the orthogonal action of *Biquaternion Versors and the Orthogonal Group*; the Hermitian sandwich is the operator $\mathrm{Sd}_{\tilde{Q}_1}$ of *Two-Sided Operators on the General Plain Sesqualgebra*, whose composition law, adjoint, kernel, image and cone are recorded there and are not repeated here.
 
@@ -24,7 +24,7 @@ The instance is not a restatement of the general case, and the reason is a **for
 
 *Proof.* $\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\lambda \tilde Q)=\mathrm{J}(\tilde{Q}_1)(\lambda \tilde Q)\rho(\tilde{Q}_1)=\lambda\,\mathrm{J}(\tilde{Q}_1)\tilde Q\rho(\tilde{Q}_1)=\lambda\,\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\tilde Q)$, the scalar passing through by centrality. Note that the same computation run on the parameter would fail: $\tilde{Q}_1\mapsto\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}$ is not $\mathbb{C}$-linear for $\mathrm{J}=\bar{\cdot}$, since $\bar{\cdot}$ is antilinear.
 
-**Remark (the four are distinct).** For a generic $\tilde{Q}_1$ the four operators are four different operators, and no two of them agree; the identifications occur only on the loci computed below. For $\tilde{Q}_1\in\mathbb{H}_{\mathbb{B}}$ the twist is inert, $\bar{\cdot}(\tilde{Q}_1)=\tilde{Q}_1$, so $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}_1}$ on that subspace, which is the reason the real-quaternion subspace is the natural domain of the unsigned theory.
+**Remark (the four are distinct).** For a generic $\tilde{Q}_1$ the four operators are four different operators, and no two of them agree; the identifications occur only on the loci computed below. For $\tilde{Q}_1\in\mathbb{H}_{\mathbb{B}}$ the twist is inert, $\bar{\cdot}(\tilde{Q}_1)=\tilde{Q}_1$, so $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=\Phi_{\mathrm{id},\tilde{Q}_1}^{\rho}$ on that subspace, which is the reason the real-quaternion subspace is the natural domain of the unsigned theory.
 
 ## Multiplicativity in the Parameter
 
@@ -39,32 +39,32 @@ $$
 **Corollary (the parameter rule).** For a central scalar $A$ and an invertible $\tilde{Q}_1$,
 
 $$
-\Phi^{\mathrm{id},\mathrm{inv}}_{A\tilde{Q}_1}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1},\qquad
-\Phi^{\bar{\cdot},\mathrm{inv}}_{A\tilde{Q}_1}=\frac{\overline{A}}{A}\,\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1},\qquad
-\Phi^{\mathrm{id},{}^{*}}_{A\tilde{Q}_1}=\lvert A\rvert^{2}\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1},\qquad
+\Phi_{\mathrm{id},\mathrm{inv},A\tilde{Q}_1}=\Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1},\qquad
+\Phi_{\mathrm{inv},A\tilde{Q}_1}^{\bar{\cdot}}=\frac{\overline{A}}{A}\,\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}},\qquad
+\Phi_{\mathrm{id},A\tilde{Q}_1}^{{}^{*}}=\lvert A\rvert^{2}\Phi_{\mathrm{id},\tilde{Q}_1}^{{}^{*}},\qquad
 \Phi^{\bar{\cdot},{}^{*}}_{A\tilde{Q}_1}=\overline{A}^{2}\,\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1} .
 $$
 
-So the inner conjugation is **blind to the central phase**, and the twist is not: for $\lvert A\rvert=1$ the inner conjugation and the unsigned sandwich are unchanged, while the signed members are multiplied by the units $\overline{A}/A$ and $\overline{A}^{2}$, which are $1$ only at $A=\pm1$. For $A=i$ this is the statement that the inner conjugation satisfies $\Phi^{\mathrm{id},\mathrm{inv}}_{i\tilde{Q}_1}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}$ while the signed inner conjugation is negated, $\Phi^{\bar{\cdot},\mathrm{inv}}_{i\tilde{Q}_1}=-\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}$.
+So the inner conjugation is **blind to the central phase**, and the twist is not: for $\lvert A\rvert=1$ the inner conjugation and the unsigned sandwich are unchanged, while the signed members are multiplied by the units $\overline{A}/A$ and $\overline{A}^{2}$, which are $1$ only at $A=\pm1$. For $A=i$ this is the statement that the inner conjugation satisfies $\Phi_{\mathrm{id},\mathrm{inv},i\tilde{Q}_1}=\Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1}$ while the signed inner conjugation is negated, $\Phi_{\mathrm{inv},i\tilde{Q}_1}^{\bar{\cdot}}=-\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}}$.
 
-*Proof.* $A$ is central. For $\rho=\mathrm{inv}$ use $(A\tilde{Q}_1)^{-1}=A^{-1}\tilde{Q}_1^{-1}$: the computation gives $\mathrm{J}(A)A^{-1}\Phi^{\mathrm{J},\mathrm{inv}}_{\tilde{Q}_1}$, which is $1$ for $\mathrm{J}=\mathrm{id}$ and $\overline{A}/A$ for $\mathrm{J}=\bar{\cdot}$. For $\rho={}^{*}$ use $(A\tilde{Q}_1)^{\dagger}=\overline{A}\tilde{Q}_1^{*}$: the computation gives $\mathrm{J}(A)\overline{A}\,\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}$, which is $A\overline{A}=\lvert A\rvert^{2}$ for $\mathrm{J}=\mathrm{id}$ and $\overline{A}^{2}$ for $\mathrm{J}=\bar{\cdot}$.
+*Proof.* $A$ is central. For $\rho=\mathrm{inv}$ use $(A\tilde{Q}_1)^{-1}=A^{-1}\tilde{Q}_1^{-1}$: the computation gives $\mathrm{J}(A)A^{-1}\Phi_{\mathrm{inv},\tilde{Q}_1}^{\mathrm{J}}$, which is $1$ for $\mathrm{J}=\mathrm{id}$ and $\overline{A}/A$ for $\mathrm{J}=\bar{\cdot}$. For $\rho={}^{*}$ use $(A\tilde{Q}_1)^{\dagger}=\overline{A}\tilde{Q}_1^{*}$: the computation gives $\mathrm{J}(A)\overline{A}\,\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}$, which is $A\overline{A}=\lvert A\rvert^{2}$ for $\mathrm{J}=\mathrm{id}$ and $\overline{A}^{2}$ for $\mathrm{J}=\bar{\cdot}$.
 
 ## The Two Defects
 
 **Theorem (the horizontal defect).** For every $\mathrm{J}$ and every invertible $\tilde{Q}_1$,
 
 $$
-\boxed{\; \Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}\circ\bigl(\Phi^{\mathrm{J},\mathrm{inv}}_{\tilde{Q}_1}\bigr)^{-1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}} \;},
+\boxed{\; \Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}\circ\bigl(\Phi_{\mathrm{inv},\tilde{Q}_1}^{\mathrm{J}}\bigr)^{-1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}} \;},
 $$
 
 the right multiplication by $\tilde{Q}_1\tilde{Q}_1^{*}$. The two right factors of the family differ by the right multiplication by the Hermitian element $\tilde{Q}_1\tilde{Q}_1^{*}$, and that element is the image of the identity under the sandwich, $\mathrm{Sd}_{\tilde{Q}_1}(e_t)$.
 
-*Proof.* Let $\tilde A=\Phi^{\mathrm{J},\mathrm{inv}}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{-1}$, so that $\tilde Q$ is recovered by acting with the inverse. Then $\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{*}=\tilde A\,\tilde{Q}_1\tilde{Q}_1^{*}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}(\tilde A)$, using $\tilde{Q}_1^{-1}\tilde{Q}_1=e_t$. On the slice the defect is trivial because $\tilde{Q}_1\tilde{Q}_1^{*}=e_t$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
+*Proof.* Let $\tilde A=\Phi_{\mathrm{inv},\tilde{Q}_1}^{\mathrm{J}}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{-1}$, so that $\tilde Q$ is recovered by acting with the inverse. Then $\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\tilde{Q}_1^{*}=\tilde A\,\tilde{Q}_1\tilde{Q}_1^{*}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}(\tilde A)$, using $\tilde{Q}_1^{-1}\tilde{Q}_1=e_t$. On the slice the defect is trivial because $\tilde{Q}_1\tilde{Q}_1^{*}=e_t$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
 **Theorem (the vertical defect).** For every $\rho$ and every invertible $\tilde{Q}_1$,
 
 $$
-\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\Phi^{\mathrm{id},\rho}_{\tilde{Q}_1},
+\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\Phi_{\mathrm{id},\tilde{Q}_1}^{\rho},
 $$
 
 the left multiplication by the **twist element** $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$.
@@ -74,10 +74,10 @@ the left multiplication by the **twist element** $\bar{\cdot}(\tilde{Q}_1)\tilde
 **Corollary (homogeneous elements and the sign of the twist).** Let $\tilde{Q}_1$ have the $\mathrm{Cl}_{3,0}$-degree $g\in\{0,1,2,3\}$, so that $\bar{\cdot}(\tilde{Q}_1)=(-1)^{g}\tilde{Q}_1$. Then $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}=(-1)^{g}e_t$ is central, and
 
 $$
-\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=(-1)^{g}\,\Phi^{\mathrm{id},\rho}_{\tilde{Q}_1} .
+\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=(-1)^{g}\,\Phi_{\mathrm{id},\tilde{Q}_1}^{\rho} .
 $$
 
-In particular the signed inner conjugation is the ordinary one for even $\tilde{Q}_1$ and its negative for odd $\tilde{Q}_1$, and $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}$ is an algebra automorphism of $\mathbb{B}$ (multiplicative in its argument) exactly for even $\tilde{Q}_1$. This is the graded multiplicativity that the name *signed* records, and it is the sense in which the general theory's twist is absorbed into a sign: on the homogeneous elements the defect is a scalar. Explicitly the twist element $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$ is $+e_t$ on the grade $0$ element $e_t$ and on the grade $2$ elements $\vec e_x,\vec e_y,\vec e_z$, and $-e_t$ on the grade $1$ elements $i\vec e_x,i\vec e_y,i\vec e_z$ and on the grade $3$ element $i$, in agreement with the sign table of *The Number Systems as Clifford Algebras*.
+In particular the signed inner conjugation is the ordinary one for even $\tilde{Q}_1$ and its negative for odd $\tilde{Q}_1$, and $\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}}$ is an algebra automorphism of $\mathbb{B}$ (multiplicative in its argument) exactly for even $\tilde{Q}_1$. This is the graded multiplicativity that the name *signed* records, and it is the sense in which the general theory's twist is absorbed into a sign: on the homogeneous elements the defect is a scalar. Explicitly the twist element $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$ is $+e_t$ on the grade $0$ element $e_t$ and on the grade $2$ elements $\vec e_x,\vec e_y,\vec e_z$, and $-e_t$ on the grade $1$ elements $i\vec e_x,i\vec e_y,i\vec e_z$ and on the grade $3$ element $i$, in agreement with the sign table of *The Number Systems as Clifford Algebras*.
 
 **Remark (the defect is not central in general).** For a non-homogeneous unit $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$ is a genuine unit and the signed family is not proportional to the unsigned one. The twist element is $e_t$ exactly on the real-quaternion subspace,
 
@@ -99,22 +99,22 @@ $$
 
 **Corollary (the $*$-unitary slice).** Both bilinear sandwiches are automorphisms of the scalar form on the slice $U=\{\tilde{Q}_1:\tilde{Q}_1^{*}\tilde{Q}_1=e_t\}$, and on the slice the two members of each pair coincide; the unsigned sandwich is there the inner automorphism $\mathrm{Ad}_{\tilde{Q}_1}$, and the signed one is its left translate by the twist element. Off the slice the unsigned sandwich is neither a form-preserving map nor a homomorphism. The slice is the $*$-unitary group $\mathrm{U}(2)$ in the matrix model, of real dimension four, whose determinant-one part is $SU(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
-*Proof.* On the slice $\tilde{Q}_1^{*}=\tilde{Q}_1^{-1}$, so $\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1}$ is an inner automorphism and a form-preserving map, and $\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}$ is its translate by the vertical defect. Failure of multiplicativity and of automorphism off the slice is the criterion for the unsigned sandwich recorded in *Two-Sided Operators on the General Plain Sesqualgebra*; both bilinear sandwiches were checked to preserve the form on the slice over random $*$-unitary parameters.
+*Proof.* On the slice $\tilde{Q}_1^{*}=\tilde{Q}_1^{-1}$, so $\Phi_{\mathrm{id},\tilde{Q}_1}^{{}^{*}}=\Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1}$ is an inner automorphism and a form-preserving map, and $\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}}$ is its translate by the vertical defect. Failure of multiplicativity and of automorphism off the slice is the criterion for the unsigned sandwich recorded in *Two-Sided Operators on the General Plain Sesqualgebra*; both bilinear sandwiches were checked to preserve the form on the slice over random $*$-unitary parameters.
 
 ## The Collapse and Its Two Loci
 
 **Theorem (the collapse).** Let $\tilde{Q}_1\in \mathrm{U}(2)$. Then the four operators fall into two pairs,
 
 $$
-\boxed{\; \Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1},
+\boxed{\; \Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1}=\Phi_{\mathrm{id},\tilde{Q}_1}^{{}^{*}}=\mathrm{Ad}_{\tilde{Q}_1},
 \qquad
-\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1}=\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\mathrm{Ad}_{\tilde{Q}_1} \;},
+\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}}=\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\mathrm{Ad}_{\tilde{Q}_1} \;},
 $$
 
 and the two pairs agree exactly on the rotation group,
 
 $$
-\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}_1} \iff \bar{\cdot}(\tilde{Q}_1)=\tilde{Q}_1 \iff \tilde{Q}_1\in \mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}=SU(2) .
+\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=\Phi_{\mathrm{id},\tilde{Q}_1}^{\rho} \iff \bar{\cdot}(\tilde{Q}_1)=\tilde{Q}_1 \iff \tilde{Q}_1\in \mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}=SU(2) .
 $$
 
 *Proof.* On the slice $\tilde{Q}_1^{*}=\tilde{Q}_1^{-1}$, so the horizontal defect trivialises and the two members of each pair coincide. The vertical defect then separates the pairs by the left multiplication by $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$, which is $e_t$ exactly on $\mathbb{H}_{\mathbb{B}}$. The intersection $\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$ is the group of unit real quaternions, $\mathrm{Sp}(1)\cong SU(2)$.
@@ -134,7 +134,7 @@ the group of central phases. The family therefore collapses in two steps: the un
 **A central phase.** For $\tilde{Q}_1=\omega e_t$ with $\lvert\omega\rvert=1$, the inner conjugation is the identity and the signed inner conjugation is the scalar $\overline{\omega}/\omega=\overline\omega^{2}$:
 
 $$
-\Phi^{\mathrm{id},\rho}_{\omega e_t}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_t}=\overline\omega^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
+\Phi_{\mathrm{id},\omega e_t}^{\rho}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_t}=\overline\omega^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
 $$
 
 The whole of $\mathrm{U}(2)$ modulo $SU(2)$ is of this form, and the example shows the collapse failing at the first non-trivial phase: the two families differ by the unit scalar $\overline\omega^{2}$, which is $1$ only at $\pm e_t$.
@@ -163,16 +163,16 @@ Two limits are worth stating plainly. First, the collapse theorem is a statement
 
 ## Summary
 
-The biquaternion algebra carries four mixed operators $\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\rho(\tilde{Q}_1)$, with the twist $\mathrm{J}$ equal to the identity or to the complex conjugation $\bar{\cdot}$, which is the grade involution of the structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; $\rho$ equal to the inverse or to the Hermitian conjugate ${}^{*}$, which is the dagger of an element, gives the two-family split inside each twist. The assignment is multiplicative in the parameter for each of the four pairs, and $\mathbb{C}$-linear in the argument with the twist acting on the parameter. The family is governed by **two exact defects**: the horizontal defect $\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}\circ\Phi^{\mathrm{J},\mathrm{inv}}_{\tilde{Q}_1}$, the right multiplication by the cone element $\tilde{Q}_1\tilde{Q}_1^{*}$, trivial exactly on the slice; and the vertical defect $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\Phi^{\mathrm{id},\rho}_{\tilde{Q}_1}$, the left multiplication by the twist element, which is the scalar $(-1)^{g}$ on a homogeneous parameter and $e_t$ exactly on the real-quaternion subspace. The bilinear sandwiches have adjoint $({\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}})^{*}=\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1^{*}}$ and preserve the form and are automorphisms on the slice. On the slice the family **collapses in two steps**: the untwisted pair becomes the inner conjugation $\mathrm{Ad}_{\tilde{Q}_1}$ on the whole of $\mathrm{U}(2)$, and the twisted pair joins it exactly on $SU(2)=\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$, so that the two collapse loci are the two distinguished subgroups of the theory and their quotient $\mathrm{U}(1)$ is the central phase that the twist detects. This is the sharpening of the general case: in the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is trivial and the general collapse theorem holds vacuously, while in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the general theorem splits into the two-locus statement above, and the fork is exactly where the two gradings of the algebra differ.
+The biquaternion algebra carries four mixed operators $\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\rho(\tilde{Q}_1)$, with the twist $\mathrm{J}$ equal to the identity or to the complex conjugation $\bar{\cdot}$, which is the grade involution of the structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; $\rho$ equal to the inverse or to the Hermitian conjugate ${}^{*}$, which is the dagger of an element, gives the two-family split inside each twist. The assignment is multiplicative in the parameter for each of the four pairs, and $\mathbb{C}$-linear in the argument with the twist acting on the parameter. The family is governed by **two exact defects**: the horizontal defect $\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}=R_{\tilde{Q}_1\tilde{Q}_1^{*}}\circ\Phi_{\mathrm{inv},\tilde{Q}_1}^{\mathrm{J}}$, the right multiplication by the cone element $\tilde{Q}_1\tilde{Q}_1^{*}$, trivial exactly on the slice; and the vertical defect $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}_1}=L_{\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}}\circ\Phi_{\mathrm{id},\tilde{Q}_1}^{\rho}$, the left multiplication by the twist element, which is the scalar $(-1)^{g}$ on a homogeneous parameter and $e_t$ exactly on the real-quaternion subspace. The bilinear sandwiches have adjoint $({\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1}})^{*}=\Phi^{\mathrm{J},{}^{*}}_{\tilde{Q}_1^{*}}$ and preserve the form and are automorphisms on the slice. On the slice the family **collapses in two steps**: the untwisted pair becomes the inner conjugation $\mathrm{Ad}_{\tilde{Q}_1}$ on the whole of $\mathrm{U}(2)$, and the twisted pair joins it exactly on $SU(2)=\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$, so that the two collapse loci are the two distinguished subgroups of the theory and their quotient $\mathrm{U}(1)$ is the central phase that the twist detects. This is the sharpening of the general case: in the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is trivial and the general collapse theorem holds vacuously, while in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the general theorem splits into the two-locus statement above, and the fork is exactly where the two gradings of the algebra differ.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\Phi^{\mathrm{J},\rho}_{\tilde{Q}_1}(\tilde Q)=\mathrm{J}(\tilde{Q}_1)\tilde Q\rho(\tilde{Q}_1)$ | The mixed family; $\mathrm{J}\in\{\mathrm{id},\bar{\cdot}\}$, $\rho\in\{\mathrm{inv},{}^{*}\}$ |
-| $\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1}$ | Inner conjugation; the orthogonal action |
-| $\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}_1}=\mathrm{Sd}_{\tilde{Q}_1}$ | Hermitian sandwich; the operator of the combined article |
-| $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}_1},\ \Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}$ | Signed inner conjugation and signed Hermitian sandwich |
+| $\Phi_{\mathrm{id},\mathrm{inv},\tilde{Q}_1}=\mathrm{Ad}_{\tilde{Q}_1}$ | Inner conjugation; the orthogonal action |
+| $\Phi_{\mathrm{id},\tilde{Q}_1}^{{}^{*}}=\mathrm{Sd}_{\tilde{Q}_1}$ | Hermitian sandwich; the operator of the combined article |
+| $\Phi_{\mathrm{inv},\tilde{Q}_1}^{\bar{\cdot}},\ \Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}_1}$ | Signed inner conjugation and signed Hermitian sandwich |
 | $R_{\tilde{Q}_1\tilde{Q}_1^{*}}$ | Horizontal defect; the right multiplication by the cone element |
 | $\bar{\cdot}(\tilde{Q}_1)\tilde{Q}_1^{-1}$ | Vertical defect, or twist element; $e_t$ exactly on $\mathbb{H}_{\mathbb{B}}$ |
 | $({-1})^{g}$ | The twist element on a parameter of $\mathrm{Cl}_{3,0}$-degree $g$ |

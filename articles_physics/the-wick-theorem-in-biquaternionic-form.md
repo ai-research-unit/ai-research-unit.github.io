@@ -20,11 +20,11 @@ The article proceeds as follows. The next section states the standard theorem an
 
 ## The Wick Theorem in the Standard Theory
 
-Let $\xi^{\mathrm{fop}}_i = \xi^{\mathrm{fop}}(x_i)$ be free fields, bosonic or fermionic, and let $T$ denote time ordering. The **Wick theorem** states that
+Let $\xi_{\mathrm{fop},i} = \xi_{\mathrm{fop}}(x_i)$ be free fields, bosonic or fermionic, and let $T$ denote time ordering. The **Wick theorem** states that
 $$
-T\big\{\xi^{\mathrm{fop}}_1\xi^{\mathrm{fop}}_2\cdots\xi^{\mathrm{fop}}_n\big\}
+T\big\{\xi_{\mathrm{fop},1}\xi_{\mathrm{fop},2}\cdots\xi_{\mathrm{fop},n}\big\}
 \;=\;
-:\!\xi^{\mathrm{fop}}_1\xi^{\mathrm{fop}}_2\cdots\xi^{\mathrm{fop}}_n\!:
+:\!\xi_{\mathrm{fop},1}\xi_{\mathrm{fop},2}\cdots\xi_{\mathrm{fop},n}\!:
 \;+\;
 \sum_{\text{single contractions}} :\!\cdots\!:
 \;+\;
@@ -34,21 +34,21 @@ T\big\{\xi^{\mathrm{fop}}_1\xi^{\mathrm{fop}}_2\cdots\xi^{\mathrm{fop}}_n\big\}
 $$
 The terms are indexed by the number of **contractions**: a complete contraction of $n$ fields is a partition of the $n$ labels into $n/2$ unordered pairs, each pair replaced by its two-point function. Odd $n$ has no complete contraction, and the sum terminates at the largest even number. Taking the vacuum expectation value kills every normal-ordered term, since $:\!\cdots\!:$ is defined to have vanishing vacuum expectation, leaving
 $$
-\big\langle 0\big|T\big\{\xi^{\mathrm{fop}}_1\cdots\xi^{\mathrm{fop}}_n\big\}\big|0\big\rangle
+\big\langle 0\big|T\big\{\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},n}\big\}\big|0\big\rangle
 \;=\;
 \sum_{\text{complete pairings}}
-(\pm)\prod_{\text{pairs}}\big\langle 0\big|T\big\{\xi^{\mathrm{fop}}_i\xi^{\mathrm{fop}}_j\big\}\big|0\big\rangle .
+(\pm)\prod_{\text{pairs}}\big\langle 0\big|T\big\{\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big\}\big|0\big\rangle .
 $$
 The two-point function is the **Feynman propagator**, and the product over pairs is the product of propagators joining the points. This is the content of the theorem in the form in which perturbation theory uses it.
 
 **The fermionic sign.** For fermionic fields the time-ordered product carries a graded sign: the product is defined with a minus sign for every transposition of two fermionic factors needed to bring them into time order, and the contraction of two fermionic fields may equivalently be read off from the ordinary product plus the anticommutator. For Grassmann-valued or operator-valued fermions the definition is
 $$
-T\big\{\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j\big\} = \Theta(r'_{t,i}-r'_{t,j})\,\tilde{Ξ}^{\mathrm{fop}}_i\tilde{Ξ}^{\mathrm{fop}}_j - \Theta(r'_{t,j}-r'_{t,i})\,\tilde{Ξ}^{\mathrm{fop}}_j\tilde{Ξ}^{\mathrm{fop}}_i ,
+T\big\{\tilde{Ξ}_{\mathrm{fop},i}\tilde{Ξ}_{\mathrm{fop},j}\big\} = \Theta(r'_{t,i}-r'_{t,j})\,\tilde{Ξ}_{\mathrm{fop},i}\tilde{Ξ}_{\mathrm{fop},j} - \Theta(r'_{t,j}-r'_{t,i})\,\tilde{Ξ}_{\mathrm{fop},j}\tilde{Ξ}_{\mathrm{fop},i} ,
 $$
 with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the signature of the pairing:
 $$
-\big\langle T\,\xi^{\mathrm{fop}}_1\cdots\xi^{\mathrm{fop}}_{2m}\big\rangle_t
-= \sum_{\text{pairings } \pi} \mathrm{sgn}(\pi)\prod_{(i,j)\in\pi}\big\langle T\,\xi^{\mathrm{fop}}_i\xi^{\mathrm{fop}}_j\big\rangle_t ,
+\big\langle T\,\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},2m}\big\rangle_t
+= \sum_{\text{pairings } \pi} \mathrm{sgn}(\pi)\prod_{(i,j)\in\pi}\big\langle T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big\rangle_t ,
 $$
 with $\mathrm{sgn}(\pi)=+1$ for bosons. The theorem is proved by induction on $n$ from the canonical (anti)commutation relations, and it is standard; it is cited as such and used below.
 
@@ -58,15 +58,15 @@ Two definitions make the theorem precise.
 
 **Contraction.** The contraction of two fields is their time-ordered vacuum expectation value,
 $$
-\Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\xi^{\mathrm{fop}}_i\xi^{\mathrm{fop}}_j\big|0\big\rangle ,
+\Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big|0\big\rangle ,
 $$
 the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P = iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-m^2$ on the mass shell. The article does not rebuild them.
 
-**Normal ordering.** The normal-ordered product $:\!\xi^{\mathrm{fop}}_1\cdots\xi^{\mathrm{fop}}_n\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
+**Normal ordering.** The normal-ordered product $:\!\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},n}\!:$ is defined by moving every creation operator to the left of every annihilation operator, with a minus sign for each transposition of two fermionic operators, and then subtracting the vacuum expectation value of the resulting product. Equivalently, and more usefully for the algebra, normal ordering is fixed by the two requirements
 $$
-\big\langle 0\big|:\!\xi^{\mathrm{fop}}_1\cdots\xi^{\mathrm{fop}}_n\!:\big|0\big\rangle = 0,
+\big\langle 0\big|:\!\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},n}\!:\big|0\big\rangle = 0,
 \qquad
-\xi^{\mathrm{fop}}_i\xi^{\mathrm{fop}}_j = \,:\!\xi^{\mathrm{fop}}_i\xi^{\mathrm{fop}}_j\!:\, + \, \Delta_{ij}\,e_t ,
+\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j} = \,:\!\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\!:\, + \, \Delta_{ij}\,e_t ,
 $$
 for $n=2$, together with linearity. The second equation is the theorem at $n=2$, and it shows that the two definitions of normal ordering differ by the contraction.
 
@@ -185,7 +185,7 @@ Two entries carry the sign. For $\langle\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon
 
 ## The Contraction Is the Propagator
 
-For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, the propagator of the biquaternion Dirac field satisfies
+For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, the propagator of the biquaternion Dirac field satisfies
 $$
 \big(\mathcal{D} - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$

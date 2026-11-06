@@ -3,24 +3,24 @@
 
 ## Introduction
 
-The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ is a finite-dimensional real algebra, and its representation theory is governed by a single structural fact: it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two copies of the quaternion division algebra. This makes it a **semisimple** but **not simple** algebra, with exactly two isomorphism classes of simple modules, in contrast to the biquaternion algebra $\mathbb{B}$, which is simple. This article records the representations of the algebra and of its group of units, the form of Schur's lemma, the intertwiners, the real and split complex forms, the tensor products, and the comparison with the biquaternion case. The structural facts about the algebra are assumed from *Split-Biquaternion Algebra*, and the ideals and the splitting from *Split-Biquaternion Ideals and Peirce Decomposition*.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is a finite-dimensional real algebra, and its representation theory is governed by a single structural fact: it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two copies of the quaternion division algebra. This makes it a **semisimple** but **not simple** algebra, with exactly two isomorphism classes of simple modules, in contrast to the biquaternion algebra $\mathbb{B}$, which is simple. This article records the representations of the algebra and of its group of units, the form of Schur's lemma, the intertwiners, the real and split complex forms, the tensor products, and the comparison with the biquaternion case. The structural facts about the algebra are assumed from *Split-Biquaternion Algebra*, and the ideals and the splitting from *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, the Jacobson radical, Schur's lemma — is used as standard, and the module theory is that of the companion articles on modules and on algebras.
 
 ## The Algebra and Its Ground Fields
 
-The algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is free of rank $4$ over the split complex algebra $\mathbb{C}^{\mathrm{spl}}$, which is its centre. Since $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ is not a field, the two natural ground structures are:
+The algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is free of rank $4$ over the split complex algebra $\mathbb{C}_{\mathrm{spl}}$, which is its centre. Since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ is not a field, the two natural ground structures are:
 
-- the real numbers $\mathbb{R}$, over which $\mathbb{B}^{\mathrm{spl}}$ has dimension $8$;
-- the split complex algebra $\mathbb{C}^{\mathrm{spl}}$, over which it is a free module of rank $4$ and a $\mathbb{C}^{\mathrm{spl}}$-algebra.
+- the real numbers $\mathbb{R}$, over which $\mathbb{B}_{\mathrm{spl}}$ has dimension $8$;
+- the split complex algebra $\mathbb{C}_{\mathrm{spl}}$, over which it is a free module of rank $4$ and a $\mathbb{C}_{\mathrm{spl}}$-algebra.
 
 The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ of the centre give the **Peirce decomposition** of every module, and are the key to the whole theory. Because $\tilde\Pi_1 + \tilde\Pi_2 = 1$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the algebra splits as a product
 
 $$
-\varphi : \mathbb{B}^{\mathrm{spl}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
+\varphi : \mathbb{B}_{\mathrm{spl}} \longrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) ,
 $$
 
-and every left $\mathbb{B}^{\mathrm{spl}}$-module $M$ splits as
+and every left $\mathbb{B}_{\mathrm{spl}}$-module $M$ splits as
 
 $$
 M = \tilde\Pi_1 M \oplus \tilde\Pi_2 M ,
@@ -30,13 +30,13 @@ with $\tilde\Pi_{1,2}$ acting as the two projections. On $\tilde\Pi_1 M$ the alg
 
 ## Representations over the Split Complex Numbers
 
-**Theorem.** A left $\mathbb{B}^{\mathrm{spl}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_1 M, \tilde\Pi_2 M)$.
+**Theorem.** A left $\mathbb{B}_{\mathrm{spl}}$-module is the same thing as a pair $(M_+, M_-)$ of left $\mathbb{H}$-modules, and the passage to the pair is by $M \mapsto (\tilde\Pi_1 M, \tilde\Pi_2 M)$.
 
-**Proof.** For a left $\mathbb{B}^{\mathrm{spl}}$-module $M$, the central idempotents $\tilde\Pi_{1,2}$ act as commuting projections with $\tilde\Pi_1 + \tilde\Pi_2 = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{B}^{\mathrm{spl}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse.
+**Proof.** For a left $\mathbb{B}_{\mathrm{spl}}$-module $M$, the central idempotents $\tilde\Pi_{1,2}$ act as commuting projections with $\tilde\Pi_1 + \tilde\Pi_2 = 1$, giving the direct sum decomposition, and each piece is stable under the algebra, which acts through the corresponding factor of $\mathbb{H} \oplus \mathbb{H}$. Conversely two $\mathbb{H}$-modules $M_+, M_-$ form an $\mathbb{B}_{\mathrm{spl}}$-module $M_+ \oplus M_-$ with $(\tilde{Q}_+, \tilde{Q}_-)(m_+, m_-) = (\tilde{Q}_+ m_+, \tilde{Q}_- m_-)$, and the two constructions are inverse.
 
 Since the quaternion algebra $\mathbb{H}$ is a division algebra, every $\mathbb{H}$-module is free: the category $\mathbb{H}\text{-}\mathrm{Mod}$ is the category of free $\mathbb{H}$-modules, and its simple objects are the one-dimensional $\mathbb{H}$-modules, isomorphic to $\mathbb{H}$ itself.
 
-**Theorem.** The algebra $\mathbb{B}^{\mathrm{spl}}$ is semisimple, with Jacobson radical zero and composition length two as a module over itself. It has exactly two isomorphism classes of simple left modules,
+**Theorem.** The algebra $\mathbb{B}_{\mathrm{spl}}$ is semisimple, with Jacobson radical zero and composition length two as a module over itself. It has exactly two isomorphism classes of simple left modules,
 
 $$
 S_+ = (\mathbb{H}, 0) , \qquad S_- = (0, \mathbb{H}) ,
@@ -44,31 +44,31 @@ $$
 
 each of real dimension $4$, and each isomorphic as an $\mathbb{H}$-module to $\mathbb{H}$.
 
-**Proof.** The category of modules is the product $\mathbb{H}\text{-}\mathrm{Mod} \times \mathbb{H}\text{-}\mathrm{Mod}$ by the previous theorem; the simple objects of a product category are the simple objects of one factor with the other factor zero, which are $S_+$ and $S_-$. A product of division algebras has zero radical, and the module $\mathbb{B}^{\mathrm{spl}} = S_+ \oplus S_-$ over itself shows the length.
+**Proof.** The category of modules is the product $\mathbb{H}\text{-}\mathrm{Mod} \times \mathbb{H}\text{-}\mathrm{Mod}$ by the previous theorem; the simple objects of a product category are the simple objects of one factor with the other factor zero, which are $S_+$ and $S_-$. A product of division algebras has zero radical, and the module $\mathbb{B}_{\mathrm{spl}} = S_+ \oplus S_-$ over itself shows the length.
 
-The **regular representation** is therefore the regular bimodule $\mathbb{B}^{\mathrm{spl}}$, which as a left module is $S_+ \oplus S_-$. By Wedderburn's theorem the algebra is isomorphic to the product of the endomorphism rings of its simple modules, $\mathbb{H} \oplus \mathbb{H}$, which is the splitting already used.
+The **regular representation** is therefore the regular bimodule $\mathbb{B}_{\mathrm{spl}}$, which as a left module is $S_+ \oplus S_-$. By Wedderburn's theorem the algebra is isomorphic to the product of the endomorphism rings of its simple modules, $\mathbb{H} \oplus \mathbb{H}$, which is the splitting already used.
 
-The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}$, viewed as left $\mathbb{C}^{\mathrm{spl}}$-modules, are projective but not free: each is a direct summand of the free $\mathbb{C}^{\mathrm{spl}}$-module $\mathbb{B}^{\mathrm{spl}}$, while the annihilator of $\mathbb{H}\tilde\Pi_1$ contains $j-1$ and that of $\mathbb{H}\tilde\Pi_2$ contains $j+1$, so neither is free, a free $\mathbb{C}^{\mathrm{spl}}$-module being faithful.
+The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}$, viewed as left $\mathbb{C}_{\mathrm{spl}}$-modules, are projective but not free: each is a direct summand of the free $\mathbb{C}_{\mathrm{spl}}$-module $\mathbb{B}_{\mathrm{spl}}$, while the annihilator of $\mathbb{H}\tilde\Pi_1$ contains $j-1$ and that of $\mathbb{H}\tilde\Pi_2$ contains $j+1$, so neither is free, a free $\mathbb{C}_{\mathrm{spl}}$-module being faithful.
 
 ## Schur's Lemma and Intertwiners
 
-**Theorem (Schur).** For simple $\mathbb{B}^{\mathrm{spl}}$-modules $S, T$, every nonzero homomorphism $S \to T$ is an isomorphism, and $\operatorname{End}_{\mathbb{B}^{\mathrm{spl}}}(S)$ is a division ring. Here
+**Theorem (Schur).** For simple $\mathbb{B}_{\mathrm{spl}}$-modules $S, T$, every nonzero homomorphism $S \to T$ is an isomorphism, and $\operatorname{End}_{\mathbb{B}_{\mathrm{spl}}}(S)$ is a division ring. Here
 
 $$
 \boxed{\;
-\operatorname{Hom}_{\mathbb{B}^{\mathrm{spl}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{B}^{\mathrm{spl}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{B}^{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}^{\mathrm{opp}} \cong \mathbb{H}
+\operatorname{Hom}_{\mathbb{B}_{\mathrm{spl}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{B}_{\mathrm{spl}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{B}_{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}_{\mathrm{opp}} \cong \mathbb{H}
 \;}.
 $$
 
-**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{opp}}$.
+**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}_{\mathrm{opp}}$.
 
-The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_2 = 0$.
+The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_2 = 0$.
 
 **Corollary.** The algebra is a product of two division algebras and is therefore **not simple**: each of the two simple modules spans a distinct two-sided ideal, and these are the two minimal two-sided ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 ## Real Element Representations
 
-The **real representations** of $\mathbb{B}^{\mathrm{spl}}$ are its representations on real vector spaces, that is its left modules; by the structure theorem these decompose into copies of $S_+$ and $S_-$. A real representation of dimension $n$ is described by a pair of non-negative integers $(a, b)$ with $4(a+b) = n$, the multiplicities of $S_+$ and $S_-$:
+The **real representations** of $\mathbb{B}_{\mathrm{spl}}$ are its representations on real vector spaces, that is its left modules; by the structure theorem these decompose into copies of $S_+$ and $S_-$. A real representation of dimension $n$ is described by a pair of non-negative integers $(a, b)$ with $4(a+b) = n$, the multiplicities of $S_+$ and $S_-$:
 
 $$
 \boxed{\;
@@ -78,14 +78,14 @@ $$
 
 The regular representation corresponds to $(a,b) = (1,1)$. The endomorphism ring of such a module is $M_a(\mathbb{H}) \times M_b(\mathbb{H})$, a product of two matrix algebras over the division ring $\mathbb{H}$.
 
-Because the centre is $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, a real representation is irreducible precisely when $(a,b) = (1,0)$ or $(0,1)$: irreducibility over $\mathbb{R}$ of a module for a product algebra means triviality on one factor. There is no representation irreducible over $\mathbb{C}^{\mathrm{spl}}$ that is not already one of the two simple modules.
+Because the centre is $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, a real representation is irreducible precisely when $(a,b) = (1,0)$ or $(0,1)$: irreducibility over $\mathbb{R}$ of a module for a product algebra means triviality on one factor. There is no representation irreducible over $\mathbb{C}_{\mathrm{spl}}$ that is not already one of the two simple modules.
 
 ## The Group of Units
 
-**Theorem.** The group of units of $\mathbb{B}^{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
+**Theorem.** The group of units of $\mathbb{B}_{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
 
 $$
-{\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad {\mathbb{B}^{\mathrm{spl}}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
+{\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad {\mathbb{B}_{\mathrm{spl}}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
 $$
 
 **Proof.** An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements.
@@ -93,12 +93,12 @@ $$
 The unit group is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that
 
 $$
-{\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
+{\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
 $$
 
 a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $\mathrm{U}(2)$.
 
-The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{C}^{\mathrm{spl}}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
+The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{C}_{\mathrm{spl}}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
 
 $$
 \left\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
@@ -106,7 +106,7 @@ $$
 
 ## Finite-Dimensional Representations
 
-Since ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ and $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$ with $S^3 = SU(2)$, every finite-dimensional continuous representation of ${\mathbb{B}^{\mathrm{spl}}}^{\times}$ is the exterior tensor product of one representation of the first copy of $\mathbb{H}^{\times}$ and one of the second:
+Since ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ and $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$ with $S^3 = SU(2)$, every finite-dimensional continuous representation of ${\mathbb{B}_{\mathrm{spl}}}^{\times}$ is the exterior tensor product of one representation of the first copy of $\mathbb{H}^{\times}$ and one of the second:
 
 $$
 \boxed{\;
@@ -130,7 +130,7 @@ The two positive rays are also the reason the unit group is non-compact and its 
 
 ## The Defining Representation
 
-The **defining representation** of $\mathbb{B}^{\mathrm{spl}}$ is the action on either simple module, $S_\pm \cong \mathbb{H}$, of real dimension $4$. Under $\varphi$ it is the representation $(\tilde{Q}_+, \tilde{Q}_-) \mapsto \tilde{Q}_+$ on the first factor (or $\tilde{Q}_-$ on the second). There is no faithful irreducible representation: any faithful module must have $a \geq 1$ and $b \geq 1$, hence dimension at least $8$, and the regular representation $S_+ \oplus S_-$ is the smallest faithful one.
+The **defining representation** of $\mathbb{B}_{\mathrm{spl}}$ is the action on either simple module, $S_\pm \cong \mathbb{H}$, of real dimension $4$. Under $\varphi$ it is the representation $(\tilde{Q}_+, \tilde{Q}_-) \mapsto \tilde{Q}_+$ on the first factor (or $\tilde{Q}_-$ on the second). There is no faithful irreducible representation: any faithful module must have $a \geq 1$ and $b \geq 1$, hence dimension at least $8$, and the regular representation $S_+ \oplus S_-$ is the smallest faithful one.
 
 This is a genuine difference from the biquaternion case. There the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ has a single simple module $\mathbb{C}^2$, the defining representation is two-dimensional over $\mathbb{C}$, and it is faithful; the split biquaternion algebra has two four-dimensional simple modules over $\mathbb{R}$ and no faithful irreducible one.
 
@@ -158,21 +158,21 @@ is the replacement of the simple algebra $M_2(\mathbb{C})$ by the product of two
 
 ## Summary
 
-The split biquaternion algebra is a free $\mathbb{C}^{\mathrm{spl}}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_{1,2}$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{C}^{\mathrm{spl}}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
+The split biquaternion algebra is a free $\mathbb{C}_{\mathrm{spl}}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_{1,2}$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{C}_{\mathrm{spl}}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
-| $\mathbb{C}^{\mathrm{spl}}, \mathbb{H}, \mathbb{R}$ | The split complex, quaternion and real ground structures |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
+| $\mathbb{C}_{\mathrm{spl}}, \mathbb{H}, \mathbb{R}$ | The split complex, quaternion and real ground structures |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Central idempotents; their multiplication operators are the Peirce projectors |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Isomorphism to $\mathbb{H} \oplus \mathbb{H}$ |
 | $S_+, S_-$ | The two simple left modules, each $\cong \mathbb{H}$, dimension $4$ |
 | $M = a S_+ \oplus b S_-$ | Classification of real representations by multiplicities |
-| $\operatorname{End}_{\mathbb{B}^{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |
-| $\mathbb{H}\tilde\Pi_{1,2}$ | Minimal two-sided ideals, projective but not free as $\mathbb{C}^{\mathrm{spl}}$-modules |
-| ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of units |
+| $\operatorname{End}_{\mathbb{B}_{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |
+| $\mathbb{H}\tilde\Pi_{1,2}$ | Minimal two-sided ideals, projective but not free as $\mathbb{C}_{\mathrm{spl}}$-modules |
+| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of units |
 | $\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \} = S^3 \times S^3$ | Norm-one group |
 | $\rho_{(n_1,n_2)}$ | Irreducible unit-group representation, spin $(n_1/2, n_2/2)$ |
 | $S_+ \otimes_{\mathbb{R}} S_-$ | Tensor product of simple modules; not a module here |

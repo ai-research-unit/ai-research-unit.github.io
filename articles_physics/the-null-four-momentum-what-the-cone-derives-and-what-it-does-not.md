@@ -140,7 +140,7 @@ The honest statement is therefore a conditional. *If* the field is massless, *th
 
 ### The reduction to two polarizations
 
-A separate input, often blurred with masslessness, is the transversality of the physical modes. The cone says nothing about it, and the reduction itself belongs to *The Photon in Biquaternionic Form*, which owns both the space in which it happens — the four polarization directions of $\mathbb{M}_-$ with the indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ — and the gauge gap by which it is made. This article records only the status of the reduction for the null element: it is imported, and it is not a consequence of the cone. Masslessness is what makes the removal natural, since it is what makes helicity Lorentz invariant, but natural is not the same as derived.
+A separate input, often blurred with masslessness, is the transversality of the physical modes. The cone says nothing about it, and the reduction itself belongs to *The Photon in Biquaternionic Form*, which owns both the space in which it happens — the four polarization directions of $\mathbb{M}_-$ with the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ — and the gauge gap by which it is made. This article records only the status of the reduction for the null element: it is imported, and it is not a consequence of the cone. Masslessness is what makes the removal natural, since it is what makes helicity Lorentz invariant, but natural is not the same as derived.
 
 ## The Null Four-Momentum as the Canonical Zero Divisor
 

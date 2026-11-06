@@ -293,7 +293,7 @@ This is impossible. The three spins are the union of the constituents of two str
 Let $\mathbb{C}[x,y,z]$ be the polynomial algebra, with $x,y,z$ the coordinates of $\mathbb{R}^3$. The orbital generators are
 
 $$
-L_k^{\mathrm{orb}}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m,
+L_{\mathrm{orb},k}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m,
 $$
 
 that is,
@@ -302,7 +302,7 @@ $$
 L_1=-i(y\,\partial/\partial z-z\,\partial/\partial y),\quad L_2=-i(z\,\partial/\partial x-x\,\partial/\partial z),\quad L_3=-i(x\,\partial/\partial y-y\,\partial/\partial x).
 $$
 
-**Proposition.** The $L_k^{\mathrm{orb}}$ are derivations of $\mathbb{C}[x,y,z]$ and satisfy $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\epsilon_{ijk}L_k^{\mathrm{orb}}$.
+**Proposition.** The $L_{\mathrm{orb},k}$ are derivations of $\mathbb{C}[x,y,z]$ and satisfy $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ijk}L_{\mathrm{orb},k}$.
 
 *Proof.* Each is a first-order derivation. The bracket is the commutator of the corresponding vector fields; the vector fields $D_k=\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ satisfy $[D_i,D_j]=-\epsilon_{ijk}D_k$, and the factor $(-i)^2=-1$ changes the sign.
 
@@ -326,26 +326,26 @@ as $G$-modules.
 
 *Proof.* The Laplacian maps the degree-$l$ part onto the degree-$(l-2)$ part, so $\dim\mathcal{H}_l=\binom{l+2}{2}-\binom{l}{2}=2l+1$. The polynomial $(x+iy)^l$ is harmonic, has weight $l$, and is killed by $L_+$; it is therefore a highest-weight vector of spin $l$, and the module it generates is all of $\mathcal{H}_l$.
 
-**Remark (the orbital part is outer).** The $L_k^{\mathrm{orb}}$ are derivations of the polynomial algebra and are not inner: the algebra is commutative, so $\operatorname{ad}=0$ and no element of $\mathbb{C}[x,y,z]$ acts as $L_k^{\mathrm{orb}}$. The orbital angular momentum is an outer derivation; the spin angular momentum is the inner derivation $\operatorname{ad}_{\tilde S_k}$ of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
+**Remark (the orbital part is outer).** The $L_{\mathrm{orb},k}$ are derivations of the polynomial algebra and are not inner: the algebra is commutative, so $\operatorname{ad}=0$ and no element of $\mathbb{C}[x,y,z]$ acts as $L_{\mathrm{orb},k}$. The orbital angular momentum is an outer derivation; the spin angular momentum is the inner derivation $\operatorname{ad}_{\tilde S_k}$ of $\mathbb{B}$. The biquaternion algebra supplies the second and only the second.
 
 ## The Total Angular Momentum
 
 On the tensor product $\mathcal{H}_l\otimes S$ of an orbital module and the spin-half module, the total generator is
 
 $$
-\tilde S_{\mathrm{tot},k}=L_k^{\mathrm{orb}}\otimes1+1\otimes \tilde S_k.
+\tilde S_{\mathrm{tot},k}=L_{\mathrm{orb},k}\otimes1+1\otimes \tilde S_k.
 $$
 
 Since the two summands commute and each satisfies the angular-momentum brackets, so does the sum. The Casimir expands as
 
 $$
-C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k.
+C_{\mathrm{tot}}=C_L\otimes1+1\otimes C_S+2\sum_k L_{\mathrm{orb},k}\otimes \tilde S_k.
 $$
 
 The last term is the spin–orbit operator,
 
 $$
-\vec L\cdot\vec S=\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
+\vec L\cdot\vec S=\sum_k L_{\mathrm{orb},k}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
 $$
 
 **Theorem (the addition of angular momenta).** For $l\ge1$,
@@ -368,7 +368,7 @@ that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$
 
 *Proof.* Evaluate the Casimir expansion on the summand.
 
-**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_k^{\mathrm{orb}}\otimes \tilde S_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
+**Remark.** The total Casimir is central in $U(\mathfrak{g})$ acting on the tensor product, but it is not a central element of $\mathbb{B}$: it contains the cross term $\sum L_{\mathrm{orb},k}\otimes \tilde S_k$. The pure-spin Casimir $\tfrac34e_t$ is a central element of the algebra itself. The two senses of *central* are different, and only the second is a statement about $\mathbb{B}$.
 
 ## Tensor Products and the Absence of Spin Two
 
@@ -534,7 +534,7 @@ The word spin has four uses in this corpus, and only the first two record a valu
 | $\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y)$ | The nilpotent weight $+\tfrac12$ vector of $S_-$ |
 | $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The nilpotent weight $-\tfrac12$ vector of $S_+$ |
 | $v_+=\vec e_x+i\vec e_y$ | The highest-weight vector of $V$ |
-| $L_k^{\mathrm{orb}}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
+| $L_{\mathrm{orb},k}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
 | $\mathcal{H}_l$ | The harmonic polynomials of degree $l$ |
 
 ## Further Reading

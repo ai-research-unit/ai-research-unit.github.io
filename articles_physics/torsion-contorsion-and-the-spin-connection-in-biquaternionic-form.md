@@ -142,9 +142,9 @@ which is nonzero for that tetrad: the antisymmetrised derivative of the frame is
 $$
 D_\mu\tilde Q = \partial/\partial x_\mu\,\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*};
 $$
-the field $\tilde{Ξ}^{\mathrm{sp}}$ transforms one-sidedly, $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}^{\mathrm{sp}}$, so its covariant derivative is the one-sided
+the field $\tilde{Ξ}_{\mathrm{sp}}$ transforms one-sidedly, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$, so its covariant derivative is the one-sided
 $$
-D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial x_\mu\,\tilde{Ξ}^{\mathrm{sp}} + \vec\Gamma_\mu\tilde{Ξ}^{\mathrm{sp}} .
+D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp}} + \vec\Gamma_\mu\tilde{Ξ}_{\mathrm{sp}} .
 $$
 The two are not interchangeable — the natural abbreviation $D_\mu=\partial/\partial x_\mu+[\vec\Gamma_\mu,\cdot]$ is wrong for exactly the boosts — and the torsion changes neither, since it lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one.
 
@@ -154,25 +154,25 @@ In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is
 
 **Every density of this section is a pairing.** The field is an element of $\mathbb{B}$, and a density is the scalar part of the product of the conjugate of the field, one element built out of the field, and the fixed element $i\vec e_x$,
 $$
-\operatorname{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\,i\,X\,\vec e_x\bigr),
+\operatorname{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,X\,\vec e_x\bigr),
 $$
 where $X$ is the element the density reads (*Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*). The fixed element $i\vec e_x$ is the timelike frame cell, written as the one multiplier it is: this is the Dirac adjoint of *Unit, Index and Notation Conventions*, §*The Upper and Low Marks*, with its operator spent, and it is the same factor in every density below. No column, no row and no matrix product is written anywhere in this section.
 
-For the field $\tilde{Ξ}^{\mathrm{sp}}$ the spin density is the completely antisymmetric bilinear of three frame cells, read in that pairing. Written on the field, the element it reads is
+For the field $\tilde{Ξ}_{\mathrm{sp}}$ the spin density is the completely antisymmetric bilinear of three frame cells, read in that pairing. Written on the field, the element it reads is
 $$
-X_{\lambda\mu\nu}=\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})},
+X_{\lambda\mu\nu}=\tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})},
 $$
 with $(\lambda_1,\lambda_2,\lambda_3)=(\lambda,\mu,\nu)$ and $\sigma$ running over the six permutations, and the density is
 $$
-\Sigma_{\lambda\mu\nu}=\operatorname{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\,i\,X_{\lambda\mu\nu}\,\vec e_x\bigr).
+\Sigma_{\lambda\mu\nu}=\operatorname{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,X_{\lambda\mu\nu}\,\vec e_x\bigr).
 $$
 The innermost factor is the action of the cell of $x_{\lambda_{\sigma(3)}}$ on the field, and each bracket around it is the action of the cell of the index outside it, so the display is the product of the three cells written on the element: no operator symbol, no letter for a cell and no matrix product appears in it. The normalisation is that of $\operatorname{Alt}$, the **normalised** antisymmetrisation: the average over the six permutations weighted by the sign of the permutation, which is what the sum above writes; without the $1/3!$ the duality below carries an extra factor six and the squared display an extra thirty-six.
 
-**The chirality cell is the volume cell of the frame**, the corpus's glyph $\mathsf{V}^{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*. In the axis-free frame its action is the pure right multiplication $Q\mapsto-iQ\vec e_z$, and it is $i$ times the product of the four cells of the frame, each of the four carrying one $i$ and $i^4=+1$. It anticommutes with each of the four cells, and that sign is what makes the four alternate. The axial current is the same pairing with the volume cell in place of a fourth cell,
+**The chirality cell is the volume cell of the frame**, the corpus's glyph $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*. In the axis-free frame its action is the pure right multiplication $Q\mapsto-iQ\vec e_z$, and it is $i$ times the product of the four cells of the frame, each of the four carrying one $i$ and $i^4=+1$. It anticommutes with each of the four cells, and that sign is what makes the four alternate. The axial current is the same pairing with the volume cell in place of a fourth cell,
 $$
-A_\mu=\operatorname{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}*}\,i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,\vec e_z\,\vec e_x\bigr),
+A_\mu=\operatorname{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\,\vec e_z\,\vec e_x\bigr),
 $$
-where $i\,e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)}$ is the element the cell of $x_\mu$ makes of the field, the volume cell multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the cell's, and no second one survives.
+where $i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ is the element the cell of $x_\mu$ makes of the field, the volume cell multiplies that on the right by $-i\vec e_z$, the adjoint supplies the $i$ and the $\vec e_x$ outside, and the two phases cancel: the single $i$ of the display is the cell's, and no second one survives.
 
 **The antisymmetric spin density is the dual of the axial current.**
 $$
@@ -185,7 +185,7 @@ $$
 \tfrac16\sum_{\sigma\in S_3}\operatorname{sgn}(\sigma)\,i\,e_{\lambda_{\sigma(1)}}\Bigl(i\,e_{\lambda_{\sigma(2)}}\bigl(i\,e_{\lambda_{\sigma(3)}}\,Q\,\vec e_{\nu(\lambda_{\sigma(3)})}\bigr)\vec e_{\nu(\lambda_{\sigma(2)})}\Bigr)\vec e_{\nu(\lambda_{\sigma(1)})}
 =-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,e_\rho\,Q\,\vec e_{\nu(\rho)}\,\vec e_z .
 $$
-That is an identity of elements, exact at every index triple, and it accounts for its own unit. The phase is bookkeeping throughout: the three cells of the left side carry $i^3=-i$ between them, which is the constant, and the same identity with the cells written without their phase carries $+i$ instead. Read in the pairing, with $Q=\tilde{Ξ}^{\mathrm{sp}}$ and the adjoint's $i\vec e_x$ on the right, it gives $\Sigma$ on the left and $A_\rho$ on the right, so the display holds with $-i$ and there is nothing left to choose. The same identity in the older gamma display is printed in the gamma section below.
+That is an identity of elements, exact at every index triple, and it accounts for its own unit. The phase is bookkeeping throughout: the three cells of the left side carry $i^3=-i$ between them, which is the constant, and the same identity with the cells written without their phase carries $+i$ instead. Read in the pairing, with $Q=\tilde{Ξ}_{\mathrm{sp}}$ and the adjoint's $i\vec e_x$ on the right, it gives $\Sigma$ on the left and $A_\rho$ on the right, so the display holds with $-i$ and there is nothing left to choose. The same identity in the older gamma display is printed in the gamma section below.
 
 The weight is what carries the sign. Without it the same display with $+i$ holds on the eighteen triples whose free index is spacelike and fails on the six whose free index is timelike; the sign vector is exactly the raised index that repairs those six.
 
@@ -245,7 +245,7 @@ The corpus's boundary applies to this sector exactly as it applies to the others
 
 The positive content of this article is a statement of *carrying*. The algebra's six-dimensional Lie subspace holds the spin connection with or without torsion; the torsion and the contorsion are tensors on a manifold and can be written in the framework's notation without leaving it; the spin density of the field is a bilinear of three frame cells in total antisymmetrisation, and it is the dual of the axial current with the exact constant $-i$; the contraction gives the factor six; and the Weitzenböck identity shows a flat, torsionful connection is a perfectly consistent object that the algebra can express.
 
-The negative content is the boundary, restated so that a later reader cannot mistake it. The algebra **generates no torsion**: the commutator of the quaternion units is a constant of the algebra, not a field, and no field equation for the torsion follows from it. The algebra **selects no connection**: the vanishing of torsion and metric compatibility are conditions, and the second of them was shown above to mean that the contorsion is antisymmetric in its first and third slots, $K_{\lambda\mu\nu}=-K_{\nu\mu\lambda}$, which total antisymmetry implies and does not follow from. The algebra **supplies no action** for the frame or the connection, so no Einstein equation, and the torsion is not eliminated by the algebra but by its own algebraic field equation in a theory that has one. And the algebra **does not couple the torsion to matter by itself**: the coupling lives in the derivative of the field, $D_\mu\tilde{Ξ}^{\mathrm{sp}}=\partial/\partial x_\mu\,\tilde{Ξ}^{\mathrm{sp}}+\vec\Gamma_\mu\tilde{Ξ}^{\mathrm{sp}}$, the one-sided derivative of Route Three, and its strength is fixed by the Einstein constant in the theory that puts the torsion into the action.
+The negative content is the boundary, restated so that a later reader cannot mistake it. The algebra **generates no torsion**: the commutator of the quaternion units is a constant of the algebra, not a field, and no field equation for the torsion follows from it. The algebra **selects no connection**: the vanishing of torsion and metric compatibility are conditions, and the second of them was shown above to mean that the contorsion is antisymmetric in its first and third slots, $K_{\lambda\mu\nu}=-K_{\nu\mu\lambda}$, which total antisymmetry implies and does not follow from. The algebra **supplies no action** for the frame or the connection, so no Einstein equation, and the torsion is not eliminated by the algebra but by its own algebraic field equation in a theory that has one. And the algebra **does not couple the torsion to matter by itself**: the coupling lives in the derivative of the field, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp}}+\vec\Gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$, the one-sided derivative of Route Three, and its strength is fixed by the Einstein constant in the theory that puts the torsion into the action.
 
 The two open items this article was written against stand as follows. The first — torsion in the framework's notation, with the geometry that makes the elimination possible — is supplied here, and the identities are recomputed. The second — the action and the selection principle — is untouched, and remains where *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* and *Quantum Gravity under the Biquaternion Framework — A Research Agenda* placed it.
 
@@ -253,20 +253,20 @@ The two open items this article was written against stand as follows. The first 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. With $L_a$ and $R_b$ the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, they are
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. With $L_a$ and $R_b$ the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, they are
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame cell is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.
 
-These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu$ for the cell of $x_\mu$ and $\gamma_5$ for the volume cell $\mathsf{V}^{\mathrm{vol}}$. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde{Ζ}_{\mathrm{ad}}$ with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
+These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu$ for the cell of $x_\mu$ and $\gamma_5$ for the volume cell $\mathsf{V}_{\mathrm{vol}}$. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde{Ζ}_{\mathrm{ad}}$ with $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
 
 The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $\varepsilon=(1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the same four cells without their factor $i$, written $\beta_a$ in this block, anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -300,7 +300,7 @@ A connection with torsion splits into a metric part, the Christoffel symbols, an
 
 The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices; $\omega$ with its first frame slot lowered is antisymmetric in the frame pair exactly in the metric-compatible case, so the two conditions of the previous paragraph have one face in world indices and one in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial/\partial x_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
-The spin density of the field is the completely antisymmetric bilinear of three frame cells, read in the pairing $\operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX\vec e_x)$ that spends the timelike cell once: $\Sigma_{\lambda\mu\nu}=\operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX_{\lambda\mu\nu}\vec e_x)$, with $X_{\lambda\mu\nu}$ the normalised antisymmetrisation of the three cell actions applied to the field. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\,\epsilon_{\lambda\mu\nu\rho}\,A^\rho$ with $A_\mu = \operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}i\,e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
+The spin density of the field is the completely antisymmetric bilinear of three frame cells, read in the pairing $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ that spends the timelike cell once: $\Sigma_{\lambda\mu\nu}=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX_{\lambda\mu\nu}\vec e_x)$, with $X_{\lambda\mu\nu}$ the normalised antisymmetrisation of the three cell actions applied to the field. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\,\epsilon_{\lambda\mu\nu\rho}\,A^\rho$ with $A_\mu = \operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
 Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.
 
@@ -322,11 +322,11 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
 | the frame cell of $x_\mu$ | the action $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$: $Q\mapsto iQ\vec e_x$ at $\mu=t$ and $Q\mapsto i\vec e_kQ\vec e_y$ at $\mu=k$; no letter stands for it |
 | two distinct frame cells | their six products are the six Lorentz bivectors; the six generators are half of them |
-| $\mathsf{V}^{\mathrm{vol}}$ | the chirality cell of the frame, the action $Q\mapsto-iQ\vec e_z$; it is $i$ times the product of the four cells and anticommutes with each of them |
-| $\operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX\vec e_x)$ | every density of the spin section: the pairing of the field with the element $X$, the timelike action $Q\mapsto iQ\vec e_x$ spent in it |
+| $\mathsf{V}_{\mathrm{vol}}$ | the chirality cell of the frame, the action $Q\mapsto-iQ\vec e_z$; it is $i$ times the product of the four cells and anticommutes with each of them |
+| $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | every density of the spin section: the pairing of the field with the element $X$, the timelike action $Q\mapsto iQ\vec e_x$ spent in it |
 | $X_{\lambda\mu\nu}$ | the element the spin density reads, the normalised antisymmetrisation of the three cell actions applied to the field |
-| $\Sigma_{\lambda\mu\nu}$ | spin density of the field, $\operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}iX_{\lambda\mu\nu}\vec e_x)$; equal to $-i\,\epsilon_{\lambda\mu\nu\rho}A^\rho$ |
-| $A_\mu$ | axial current, $\operatorname{Sc}(\tilde{Ξ}^{\mathrm{sp}*}i\,e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$ |
+| $\Sigma_{\lambda\mu\nu}$ | spin density of the field, $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX_{\lambda\mu\nu}\vec e_x)$; equal to $-i\,\epsilon_{\lambda\mu\nu\rho}A^\rho$ |
+| $A_\mu$ | axial current, $\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_z\vec e_x)$ |
 | $\varepsilon$, $\varepsilon_\mu$ | sign vector, $\varepsilon_t=+1$ and $\varepsilon_k=-1$; $\varepsilon_\mu A_\mu$ is the raised $A^\mu$ |
 | $\kappa = 8\pi G$ | Einstein gravitational constant, $c=1$ |
 

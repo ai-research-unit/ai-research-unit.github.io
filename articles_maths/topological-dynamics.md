@@ -122,7 +122,7 @@ For a homeomorphism the same statements hold with the full orbit $\{T^nx:n \in \
 $$
 \boxed{\;h(T,\mathcal U)=\lim_{n\to\infty}\frac1nH(\mathcal U^n)=\inf_{n\ge1}\frac1nH(\mathcal U^n),
 \qquad
-h^{\mathrm{tpl}}(T)=\sup_{\mathcal U}h(T,\mathcal U)\;},
+h_{\mathrm{tpl}}(T)=\sup_{\mathcal U}h(T,\mathcal U)\;},
 $$
 
 the **topological entropy** of $T$; the limit exists because $H(\mathcal U^{m+n})\le H(\mathcal U^m)+H(\mathcal U^n)$, so the sequence is subadditive.
@@ -130,7 +130,7 @@ the **topological entropy** of $T$; the limit exists because $H(\mathcal U^{m+n}
 **Theorem (Bowen's definition).** Let $X$ be a compact metric space and $T:X\to X$ continuous. For $n \in \mathbb{N}$ and $\epsilon>0$ call a set $E \subseteq X$ **$(n,\epsilon)$-separated** if for all distinct $x,y \in E$ there is $0\le k<n$ with $d(T^kx,T^ky)>\epsilon$, and let $s_n(\epsilon)$ be the largest cardinality of such a set; call $F$ **$(n,\epsilon)$-spanning** if the balls $B_{n,\epsilon}(x)=\{y:\max_{0\le k<n}d(T^kx,T^ky)<\epsilon\}$ with $x \in F$ cover $X$, and let $r_n(\epsilon)$ be the least cardinality of such a set. Then
 
 $$
-\boxed{\;h^{\mathrm{tpl}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon)\;},
+\boxed{\;h_{\mathrm{tpl}}(T)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log s_n(\epsilon)=\lim_{\epsilon\to0}\limsup_{n\to\infty}\frac1n\log r_n(\epsilon)\;},
 $$
 
 and the two limits agree with the definition by covers.
@@ -141,26 +141,26 @@ and the two limits agree with the definition by covers.
 
 **Theorem (properties of entropy).** Let $X,Y$ be compact metric spaces and $T,S$ continuous maps.
 
-(i) If $(X,T)$ and $(Y,S)$ are topologically conjugate, then $h^{\mathrm{tpl}}(T)=h^{\mathrm{tpl}}(S)$; the entropy is a conjugacy invariant.
+(i) If $(X,T)$ and $(Y,S)$ are topologically conjugate, then $h_{\mathrm{tpl}}(T)=h_{\mathrm{tpl}}(S)$; the entropy is a conjugacy invariant.
 
-(ii) $h^{\mathrm{tpl}}(T^k)=k\,h^{\mathrm{tpl}}(T)$ for $k \ge1$, and $h^{\mathrm{tpl}}(T^{-1})=h^{\mathrm{tpl}}(T)$ for a homeomorphism.
+(ii) $h_{\mathrm{tpl}}(T^k)=k\,h_{\mathrm{tpl}}(T)$ for $k \ge1$, and $h_{\mathrm{tpl}}(T^{-1})=h_{\mathrm{tpl}}(T)$ for a homeomorphism.
 
-(iii) $h^{\mathrm{tpl}}(T\times S)=h^{\mathrm{tpl}}(T)+h^{\mathrm{tpl}}(S)$ for the product system; for a factor map the entropy does not increase, $h^{\mathrm{tpl}}(S)\le h^{\mathrm{tpl}}(T)$.
+(iii) $h_{\mathrm{tpl}}(T\times S)=h_{\mathrm{tpl}}(T)+h_{\mathrm{tpl}}(S)$ for the product system; for a factor map the entropy does not increase, $h_{\mathrm{tpl}}(S)\le h_{\mathrm{tpl}}(T)$.
 
-(iv) $h^{\mathrm{tpl}}$ is neither continuous nor upper semicontinuous in the $C^0$ topology: a horseshoe supported in a disc of radius $\epsilon$ and extended by the identity outside that disc is a homeomorphism whose entropy is at least $\log2$, and as $\epsilon\to0$ these converge uniformly to the identity, whose entropy is $0$. Upper semicontinuity does hold on the space of $C^\infty$ maps, by the theorems of Yomdin and Newhouse. An expansive system has finite entropy: a finite cover by balls of radius less than the expansivity constant is a generator, the atoms of its unlimited refinement are single points, and $h^{\mathrm{tpl}}(T)=h(T,\mathcal U)\le\log N(\mathcal U)$.
+(iv) $h_{\mathrm{tpl}}$ is neither continuous nor upper semicontinuous in the $C^0$ topology: a horseshoe supported in a disc of radius $\epsilon$ and extended by the identity outside that disc is a homeomorphism whose entropy is at least $\log2$, and as $\epsilon\to0$ these converge uniformly to the identity, whose entropy is $0$. Upper semicontinuity does hold on the space of $C^\infty$ maps, by the theorems of Yomdin and Newhouse. An expansive system has finite entropy: a finite cover by balls of radius less than the expansivity constant is a generator, the atoms of its unlimited refinement are single points, and $h_{\mathrm{tpl}}(T)=h(T,\mathcal U)\le\log N(\mathcal U)$.
 
 *Proof (sketch).* (i) and (ii) are immediate from the definition by covers, using $T^{k}$ and the natural covers; (iii) follows from the multiplicativity of the number of subcovers in the product, with the logarithm converting the product into a sum; (iv) the failure of upper semicontinuity is exhibited by the horseshoe in a disc of radius $\epsilon$, whose entropy $\log2$ does not depend on $\epsilon$, while the limit is the identity of entropy $0$; the finiteness for an expansive system is the generator argument above.
 
-**Example (rotation and shift).** (i) If $T$ is an isometry of a compact metric space, then $h^{\mathrm{tpl}}(T)=0$: a cover by balls of radius $\epsilon/2$ is carried to covers by balls of the same radius, and $H(\mathcal U^n)\le H(\mathcal U)$, so the entropy vanishes. In particular every rotation of the circle and every translation of the torus has entropy zero.
+**Example (rotation and shift).** (i) If $T$ is an isometry of a compact metric space, then $h_{\mathrm{tpl}}(T)=0$: a cover by balls of radius $\epsilon/2$ is carried to covers by balls of the same radius, and $H(\mathcal U^n)\le H(\mathcal U)$, so the entropy vanishes. In particular every rotation of the circle and every translation of the torus has entropy zero.
 
-(ii) The full shift on $d$ symbols has $h^{\mathrm{tpl}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong to *Symbolic Dynamics*.
+(ii) The full shift on $d$ symbols has $h_{\mathrm{tpl}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong to *Symbolic Dynamics*.
 
 (iii) The doubling map $x\mapsto2x\bmod1$ has entropy $\log2$, by the conjugacy with the full two-shift modulo the countable set of dyadic rationals; the entropy is finite and positive, and it is the topological measure of the exponential growth of the number of orbits distinguishable at resolution $\epsilon$.
 
 **Theorem (variational principle).** Let $X$ be a compact metric space and $T:X\to X$ continuous. Then
 
 $$
-\boxed{\;h^{\mathrm{tpl}}(T)=\sup_{\mu}h_\mu(T)\;},
+\boxed{\;h_{\mathrm{tpl}}(T)=\sup_{\mu}h_\mu(T)\;},
 $$
 
 the supremum being over the $T$-invariant Borel probability measures and $h_\mu$ the measure-theoretic entropy; the supremum is attained for every expansive system. The measure-theoretic entropy, the ergodic decomposition and the existence of measures of maximal entropy are the subject of *Ergodic Theory*, and the variational principle is quoted there from the standard theory.
@@ -179,7 +179,7 @@ the supremum being over the $T$-invariant Borel probability measures and $h_\mu$
 
 A topological dynamical system is a continuous map $T$ of a topological space $X$, and its invariants are the orbit $\mathcal O(x)$, the $\omega$-limit set $\omega(x)=\bigcap_N\overline{\{T^nx:n\ge N\}}$, which on a compact space is nonempty, compact and invariant, and the non-wandering set $\Omega(T)$, which contains the periodic points and all the limit sets. A point is recurrent if $x \in\omega(x)$ and almost periodic if the return times to every neighbourhood are syndetic; the **Birkhoff recurrence theorem** states that a homeomorphism of a compact metric space has a recurrent point, and the proof passes through the existence of a minimal set and the almost periodicity of its points. The **Poincaré recurrence theorem** and the mean recurrence times are measure-theoretic and belong to *Ergodic Theory*. Minimality — no proper nonempty closed invariant subset — is equivalent to the density of every orbit and to the density of $\bigcup_nT^{-n}(Ζ)$ for every nonempty open $Ζ$; the irrational rotations of the circle and the Kronecker translations of the torus are minimal, the rotations by rational angles are not, and the existence of minimal sets always holds on a compact space.
 
-Topological transitivity — $T^n(Ζ)\cap V\neq\varnothing$ for all nonempty open $Ζ,V$ and some $n$ — is equivalent, on a compact metric space, to the set of points with dense orbit being a dense $G_\delta$, by the Baire category theorem; mixing and weak mixing strengthen the property to the eventual and the product form. A minimal system that is **equicontinuous** is a translation on a compact homogeneous space (Auslander), and the **enveloping semigroup** $E(X,T)$ of Ellis encodes the recurrence and the distality: the system is equicontinuous exactly when $E(X,T)$ consists of continuous maps, and distal exactly when $E(X,T)$ is a group. **Topological entropy** $h^{\mathrm{tpl}}(T)=\sup_{\mathcal U}\lim_n\frac1nH(\mathcal U^n)$ measures the exponential growth of the number of orbit segments distinguishable at resolution $\epsilon$, in the equivalent form of Bowen by $(n,\epsilon)$-separated and spanning sets; it is a conjugacy invariant, satisfies $h^{\mathrm{tpl}}(T^k)=kh^{\mathrm{tpl}}(T)$ and $h^{\mathrm{tpl}}(T\times S)=h^{\mathrm{tpl}}(T)+h^{\mathrm{tpl}}(S)$, vanishes for isometries, equals $\log d$ for the full $d$-shift and $\log2$ for the doubling map, and satisfies the **variational principle** $h^{\mathrm{tpl}}(T)=\sup_\mu h_\mu(T)$ over the invariant measures, quoted from *Ergodic Theory*. The **chain recurrent set** of a homeomorphism is the compact invariant set on which the orbits are indistinguishable by coarse finite-time approximation, it contains the non-wandering set, it decomposes into chain transitive components, and its complement is the union of the basins of the attractors, by Conley's theorem.
+Topological transitivity — $T^n(Ζ)\cap V\neq\varnothing$ for all nonempty open $Ζ,V$ and some $n$ — is equivalent, on a compact metric space, to the set of points with dense orbit being a dense $G_\delta$, by the Baire category theorem; mixing and weak mixing strengthen the property to the eventual and the product form. A minimal system that is **equicontinuous** is a translation on a compact homogeneous space (Auslander), and the **enveloping semigroup** $E(X,T)$ of Ellis encodes the recurrence and the distality: the system is equicontinuous exactly when $E(X,T)$ consists of continuous maps, and distal exactly when $E(X,T)$ is a group. **Topological entropy** $h_{\mathrm{tpl}}(T)=\sup_{\mathcal U}\lim_n\frac1nH(\mathcal U^n)$ measures the exponential growth of the number of orbit segments distinguishable at resolution $\epsilon$, in the equivalent form of Bowen by $(n,\epsilon)$-separated and spanning sets; it is a conjugacy invariant, satisfies $h_{\mathrm{tpl}}(T^k)=kh_{\mathrm{tpl}}(T)$ and $h_{\mathrm{tpl}}(T\times S)=h_{\mathrm{tpl}}(T)+h_{\mathrm{tpl}}(S)$, vanishes for isometries, equals $\log d$ for the full $d$-shift and $\log2$ for the doubling map, and satisfies the **variational principle** $h_{\mathrm{tpl}}(T)=\sup_\mu h_\mu(T)$ over the invariant measures, quoted from *Ergodic Theory*. The **chain recurrent set** of a homeomorphism is the compact invariant set on which the orbits are indistinguishable by coarse finite-time approximation, it contains the non-wandering set, it decomposes into chain transitive components, and its complement is the union of the basins of the attractors, by Conley's theorem.
 
 ## Summary of Notation
 
@@ -196,7 +196,7 @@ Topological transitivity — $T^n(Ζ)\cap V\neq\varnothing$ for all nonempty ope
 | $\mathcal U$, $\mathcal U^n$ | open cover, join of the first $n$ iterated covers |
 | $H(\mathcal U)$, $N(\mathcal U)$ | entropy and covering number of a cover |
 | $s_n(\epsilon)$, $r_n(\epsilon)$ | separated and spanning numbers |
-| $h^{\mathrm{tpl}}(T)$ | topological entropy |
+| $h_{\mathrm{tpl}}(T)$ | topological entropy |
 | $h_\mu(T)$ | measure-theoretic entropy |
 | $R_\theta$ | rotation of the circle by angle $\theta$ |
 | $\mathbb{T}^n$ | torus |

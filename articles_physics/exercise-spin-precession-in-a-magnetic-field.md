@@ -59,21 +59,21 @@ $$
 The evolved state is
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/2) \\ \exp(-i\omega_L r'_t/2) \end{pmatrix}.
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/2) \\ \exp(-i\omega_L r'_t/2) \end{pmatrix}.
 $$
 
 ### Step 4: The expectation value
 
-The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle$ is
+The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ is
 
 $$
-\langle S_x\rangle(r'_t) = \langle\tilde{Ξ}^{\mathrm{sp}}(r'_t)|S_x|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle.
+\langle S_x\rangle(r'_t) = \langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|S_x|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle.
 $$
 
 Computing the matrix element,
 
 $$
-\langle\tilde{Ξ}^{\mathrm{sp}}(r'_t)|\sigma_1|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L r'_t/2) \cdot \exp(-i\omega_L r'_t/2) + \exp(\,i\omega_L r'_t/2) \cdot \exp(\,i\omega_L r'_t/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L r'_t) + \exp(\,i\omega_L r'_t)\right) = \cos(\omega_L r'_t).
+\langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|\sigma_1|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L r'_t/2) \cdot \exp(-i\omega_L r'_t/2) + \exp(\,i\omega_L r'_t/2) \cdot \exp(\,i\omega_L r'_t/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L r'_t) + \exp(\,i\omega_L r'_t)\right) = \cos(\omega_L r'_t).
 $$
 
 Therefore

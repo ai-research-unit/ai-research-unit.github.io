@@ -96,7 +96,7 @@ The objects are named by their standard symbols; the tables use the following.
 | $T_A$ | the toral automorphism induced by $A \in SL_n(\mathbb Z)$ |
 | $\lambda$, $\chi_i$ | an eigenvalue, a Lyapunov exponent |
 | $H(p)$, $\rho(A)$ | the entropy of a probability vector, the spectral radius of a transition matrix |
-| $h^{\mathrm{tpl}}$ | topological entropy |
+| $h_{\mathrm{tpl}}$ | topological entropy |
 
 ## Further Reading
 

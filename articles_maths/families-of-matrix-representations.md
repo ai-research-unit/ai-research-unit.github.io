@@ -37,7 +37,7 @@ The first is the associativity $(\tilde P\tilde Q)\tilde X=\tilde P(\tilde Q\til
 
 ## What the Laws Give the Two Families
 
-**The left family is the algebra and the right family is its opposite.** The first law makes $\mathbb{B}_L=\{L(\tilde Q)\}$ a subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The second makes $\mathbb{B}_R=\{R(\tilde Q)\}$ a subalgebra isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$. These are abstractly the same algebra, because $M_2(\mathbb{C})$ is isomorphic to its opposite through transposition; this is why a switch between the sides can exist at all.
+**The left family is the algebra and the right family is its opposite.** The first law makes $\mathbb{B}_L=\{L(\tilde Q)\}$ a subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The second makes $\mathbb{B}_R=\{R(\tilde Q)\}$ a subalgebra isomorphic to the opposite algebra $\mathbb{B}_{\mathrm{opp}}$. These are abstractly the same algebra, because $M_2(\mathbb{C})$ is isomorphic to its opposite through transposition; this is why a switch between the sides can exist at all.
 
 **Every left matrix commutes with every right matrix.** The left matrix of any element commutes with the right matrix of any other, and the two elements need not be related. So the left family lies in the commutant of the right family and conversely.
 

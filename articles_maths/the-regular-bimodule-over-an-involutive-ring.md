@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An involution of a ring $A$ is an anti-automorphism of order two, and it is the same datum as an isomorphism $A \cong A^{\mathrm{opp}}$. Carried to the regular bimodule it produces three structures: the twist that turns the left regular module into the right one, a symmetry of the regular bimodule with its swap through the involution, and a Hermitian form on the module with values in $A$ itself, whose isometries are the unitary elements. The left and the right regular modules, indistinguishable in general, become interchangeable, and the module over itself becomes a module with a form.
+An involution of a ring $A$ is an anti-automorphism of order two, and it is the same datum as an isomorphism $A \cong A_{\mathrm{opp}}$. Carried to the regular bimodule it produces three structures: the twist that turns the left regular module into the right one, a symmetry of the regular bimodule with its swap through the involution, and a Hermitian form on the module with values in $A$ itself, whose isometries are the unitary elements. The left and the right regular modules, indistinguishable in general, become interchangeable, and the module over itself becomes a module with a form.
 
 The article specialises *Modules over an Involutive Ring* to the case $M = A$: that article defines the twist $M^{\sigma}$, the dual module and the induced map on the endomorphisms for an arbitrary module, and this one reads the same three constructions on the regular object, where they acquire their ring-theoretic form. It assumes *Involutive Rings* for the definition, the fixed and the skew elements, and the opposite ring, and *The Regular Module and the Regular Bimodule* and *The Regular Representation as an Algebra of Operators* for the regular object and its operators. The forms with positivity, the Hilbert structures and the sesquilinear pairings on a general module are *Hilbert Algebras*, in Part II; here everything is algebraic and the form takes its values in $A$. The involutions of the biquaternions and their lattice are *The Group of Involutions* and *Subspaces and Decompositions*, in Part VI.
 
@@ -28,25 +28,25 @@ where $({}_AA)^{\sigma}$ carries $x \cdot a = \sigma(a)x$ and $A_A$ carries $x \
 
 ### The involution is the symmetry of the bimodule
 
-**Definition.** Let $\sigma$ be an involution of $A$. The **$\sigma$-swap** of the regular bimodule, written ${}^{\mathrm{sw}}{}_AA_A^{\sigma}$, is the same additive group with the left and the right actions interchanged and read through $\sigma$:
+**Definition.** Let $\sigma$ be an involution of $A$. The **$\sigma$-swap** of the regular bimodule, written ${}_{\mathrm{sw}}{}_AA_A^{\sigma}$, is the same additive group with the left and the right actions interchanged and read through $\sigma$:
 
 $$
 a \cdot y = y\,\sigma(a), \qquad y \cdot b = \sigma(b)\,y .
 $$
 
-For the identity involution of a commutative ring the two actions are simply interchanged, and the $\sigma$-swap is the **swap** ${}^{\mathrm{sw}}{}_AA_A$, with $a \cdot x = xa$ and $x \cdot b = bx$. The involution is carried in the definition because over a noncommutative ring the two actions cannot be exchanged by themselves: the untwisted swap is not the target of $\sigma$.
+For the identity involution of a commutative ring the two actions are simply interchanged, and the $\sigma$-swap is the **swap** ${}_{\mathrm{sw}}{}_AA_A$, with $a \cdot x = xa$ and $x \cdot b = bx$. The involution is carried in the definition because over a noncommutative ring the two actions cannot be exchanged by themselves: the untwisted swap is not the target of $\sigma$.
 
 **Proposition.** The involution $\sigma$ is an isomorphism of bimodules
 
 $$
-\boxed{\;\sigma : {}_AA_A \longrightarrow {}^{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a)\;} ,
+\boxed{\;\sigma : {}_AA_A \longrightarrow {}_{\mathrm{sw}}{}_AA_A^{\sigma}, \qquad \sigma(axb) = \sigma(b)\sigma(x)\sigma(a)\;} ,
 $$
 
-and conversely every bimodule isomorphism $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ is of the form $x \mapsto d\,\sigma(x)$ with $d$ a central unit; it is an anti-homomorphism, hence its own inverse when $\varphi(1) = 1$, precisely when $d = 1$. So an involution of $A$ is exactly a bimodule isomorphism of the regular bimodule with its $\sigma$-swap, normalised at the unit.
+and conversely every bimodule isomorphism $\varphi : {}_AA_A \to {}_{\mathrm{sw}}{}_AA_A^{\sigma}$ is of the form $x \mapsto d\,\sigma(x)$ with $d$ a central unit; it is an anti-homomorphism, hence its own inverse when $\varphi(1) = 1$, precisely when $d = 1$. So an involution of $A$ is exactly a bimodule isomorphism of the regular bimodule with its $\sigma$-swap, normalised at the unit.
 
-**Proof.** That $\sigma$ is bijective and additive is the definition of an involution. Inserting $\sigma$ into the target, $a \cdot \sigma(x) \cdot b = \bigl(\sigma(b)\sigma(x)\bigr)\sigma(a) = \sigma(b)\sigma(x)\sigma(a)$, which is the anti-multiplicativity applied to $axb$; so $\sigma$ intertwines the two structures — the left action with the swapped left action and the right action with the swapped right action. For the converse, let $\varphi : {}_AA_A \to {}^{\mathrm{sw}}{}_AA_A^{\sigma}$ be a bimodule isomorphism and put $d = \varphi(1)$. Left linearity gives $\varphi(a) = a \cdot \varphi(1) = \varphi(1)\sigma(a) = d\sigma(a)$, and right linearity gives $\varphi(a) = \varphi(1) \cdot a = \sigma(a)\varphi(1) = \sigma(a)d$; the two agree on every $a$ exactly when $d$ commutes with $\sigma(A) = A$, that is when $d$ is central, and $d$ is a unit because $\varphi$ is bijective. Then $\varphi(xy) = d\sigma(xy) = d\sigma(y)\sigma(x)$ while $\varphi(y)\varphi(x) = d\sigma(y)\,d\sigma(x) = d^2\sigma(y)\sigma(x)$, so $\varphi$ is an anti-homomorphism exactly when $d = 1$, and then it is the involution $\sigma$.
+**Proof.** That $\sigma$ is bijective and additive is the definition of an involution. Inserting $\sigma$ into the target, $a \cdot \sigma(x) \cdot b = \bigl(\sigma(b)\sigma(x)\bigr)\sigma(a) = \sigma(b)\sigma(x)\sigma(a)$, which is the anti-multiplicativity applied to $axb$; so $\sigma$ intertwines the two structures — the left action with the swapped left action and the right action with the swapped right action. For the converse, let $\varphi : {}_AA_A \to {}_{\mathrm{sw}}{}_AA_A^{\sigma}$ be a bimodule isomorphism and put $d = \varphi(1)$. Left linearity gives $\varphi(a) = a \cdot \varphi(1) = \varphi(1)\sigma(a) = d\sigma(a)$, and right linearity gives $\varphi(a) = \varphi(1) \cdot a = \sigma(a)\varphi(1) = \sigma(a)d$; the two agree on every $a$ exactly when $d$ commutes with $\sigma(A) = A$, that is when $d$ is central, and $d$ is a unit because $\varphi$ is bijective. Then $\varphi(xy) = d\sigma(xy) = d\sigma(y)\sigma(x)$ while $\varphi(y)\varphi(x) = d\sigma(y)\,d\sigma(x) = d^2\sigma(y)\sigma(x)$, so $\varphi$ is an anti-homomorphism exactly when $d = 1$, and then it is the involution $\sigma$.
 
-**Corollary.** An involution of $A$ is the same datum as an isomorphism $A \cong A^{\mathrm{opp}}$, and the same datum as a bimodule isomorphism of the regular bimodule onto its $\sigma$-swap normalised at the unit: the involution, the opposite-ring isomorphism, and the symmetry of the regular bimodule are three names for one thing.
+**Corollary.** An involution of $A$ is the same datum as an isomorphism $A \cong A_{\mathrm{opp}}$, and the same datum as a bimodule isomorphism of the regular bimodule onto its $\sigma$-swap normalised at the unit: the involution, the opposite-ring isomorphism, and the symmetry of the regular bimodule are three names for one thing.
 
 **Remark (why the swap must be twisted).** The plain swap is recovered from the $\sigma$-swap exactly when $\sigma = \mathrm{id}$, which forces $A$ commutative: for $\sigma \neq \mathrm{id}$ the untwisted swap is not the target of $\sigma$, as the matrix case of the worked examples shows — there $A = M_n(F)$ with $\sigma(X) = X^{*}$, and $a \cdot \sigma(x) \cdot b = \sigma(b)\sigma(x)\sigma(a)$ while the untwisted swap gives $b\,\sigma(x)\,a$, and the two differ whenever $b$ and $\sigma(x)$ fail to commute.
 
@@ -96,7 +96,7 @@ whenever $2$ is invertible in $A$; for $A = M_n(F)$ over a field of characterist
 
 **Proposition.** The $A$-linear isometries of $h$ are exactly the right multiplications $R_u$ by the unitary elements, $u \in \mathrm{U}(A)$; they form a group isomorphic to $\mathrm{U}(A)$. A left multiplication $L_u$ is an isometry exactly when $u$ is a central unitary element.
 
-**Proof.** The $A$-linear endomorphisms of ${}_AA$ are the right multiplications $R_b$, $\operatorname{End}_A({}_AA) \cong A^{\mathrm{opp}}$, by *The Regular Module and the Regular Bimodule*. Now $h(xb,yb) = xb\,\sigma(yb) = xb\sigma(b)\sigma(y) = x\,b\sigma(b)\,\sigma(y)$, so $R_b$ preserves $h$ for all $x,y$ exactly when $b\sigma(b) = 1$, which for a unit $b$ is the unitary condition. For a left multiplication, $h(ux,uy) = u\,h(x,y)\,\sigma(u)$; preservation forces $u\sigma(u) = 1$ from $x = y = 1$, and then $uz\sigma(u) = z$ for every $z$ in the image of $h$, which is all of $A$ because $h(1,y) = \sigma(y)$; multiplying $uz\sigma(u) = z$ on the right by $u$ gives $uz = zu$, so $u$ is central.
+**Proof.** The $A$-linear endomorphisms of ${}_AA$ are the right multiplications $R_b$, $\operatorname{End}_A({}_AA) \cong A_{\mathrm{opp}}$, by *The Regular Module and the Regular Bimodule*. Now $h(xb,yb) = xb\,\sigma(yb) = xb\sigma(b)\sigma(y) = x\,b\sigma(b)\,\sigma(y)$, so $R_b$ preserves $h$ for all $x,y$ exactly when $b\sigma(b) = 1$, which for a unit $b$ is the unitary condition. For a left multiplication, $h(ux,uy) = u\,h(x,y)\,\sigma(u)$; preservation forces $u\sigma(u) = 1$ from $x = y = 1$, and then $uz\sigma(u) = z$ for every $z$ in the image of $h$, which is all of $A$ because $h(1,y) = \sigma(y)$; multiplying $uz\sigma(u) = z$ on the right by $u$ gives $uz = zu$, so $u$ is central.
 
 **Corollary (the two readings).** The unitary elements of the involutive ring act on the regular module as the isometries of its canonical form, on the right, and the right regular representation carries the unitary group into the isometry group. A unitary element that is not central acts as an isometry through $R_u$ and not through $L_u$, so the two one-sided readings of the same element differ as soon as the ring is non-commutative.
 
@@ -129,8 +129,8 @@ For a ring $A$ with an involution $\sigma$ the regular object acquires three str
 | $\sigma$, $A^{\sigma}$, $A^{-}$ | the involution, the symmetric and the skew elements |
 | $M^{\sigma}$, $x \cdot a = \sigma(a)x$ | the twist of a left module |
 | $\sigma : ({}_AA)^{\sigma} \to A_A$ | the twist of the regular left module is the right one |
-| ${}^{\mathrm{sw}}{}_AA_A^{\sigma}$, $a \cdot y = y\sigma(a)$, $y \cdot b = \sigma(b)y$ | the $\sigma$-swap of the regular bimodule |
-| ${}^{\mathrm{sw}}{}_AA_A$, $a \cdot x = xa$, $x \cdot b = bx$ | the plain swap, its commutative case |
+| ${}_{\mathrm{sw}}{}_AA_A^{\sigma}$, $a \cdot y = y\sigma(a)$, $y \cdot b = \sigma(b)y$ | the $\sigma$-swap of the regular bimodule |
+| ${}_{\mathrm{sw}}{}_AA_A$, $a \cdot x = xa$, $x \cdot b = bx$ | the plain swap, its commutative case |
 | $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$ | the involution is the bimodule $\sigma$-swap isomorphism |
 | $\varphi(x) = d\,\sigma(x)$, $d$ a central unit | every bimodule $\sigma$-swap isomorphism, $d = 1$ normalised |
 | $h(x,y) = x\sigma(y)$ | the canonical Hermitian form on ${}_AA$ |

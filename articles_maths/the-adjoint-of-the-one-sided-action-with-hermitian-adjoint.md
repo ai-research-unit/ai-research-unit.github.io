@@ -111,7 +111,7 @@ $$
 \boxed{\;\bigl(\Phi^{\mathrm{J},c}_x\bigr)^{*} = \Phi^{\mathrm{J},c}_{x^{\dagger}}\;} .
 $$
 
-In particular the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_x = L_xR_{x^{\dagger}}$ has adjoint $\Phi^{\mathrm{id},\dagger}_{x^{\dagger}} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi^{\mathrm{id},\dagger}_x)^{*}\Phi^{\mathrm{id},\dagger}_x = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* uses.
+In particular the **Hermitian sandwich** $\Phi_{\mathrm{id},x}^{\dagger} = L_xR_{x^{\dagger}}$ has adjoint $\Phi_{\mathrm{id},x^{\dagger}}^{\dagger} = L_{x^{\dagger}}R_x$, and on the slice $U$ it is unitary, $(\Phi_{\mathrm{id},x}^{\dagger})^{*}\Phi_{\mathrm{id},x}^{\dagger} = \mathrm{id}$, which is the operator form of $u^{\dagger}u = 1$ that *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* uses.
 
 **Proof.** $(\Phi^{\mathrm{J},c}_x)^{*} = (L_{\mathrm{J}(x)}R_{c(x)})^{*} = R_{c(x)}^{*}L_{\mathrm{J}(x)}^{*} = R_{c(x)^{\dagger}}L_{\mathrm{J}(x)^{\dagger}} = L_{\mathrm{J}(x)^{\dagger}}R_{c(x)^{\dagger}}$; and because each of the maps commutes with the dagger, $\mathrm{J}(x)^{\dagger} = \mathrm{J}(x^{\dagger})$ and $c(x)^{\dagger} = c(x^{\dagger})$, giving $\Phi^{\mathrm{J},c}_{x^{\dagger}}$.
 

@@ -292,7 +292,7 @@ On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner a
 The left multiplications form a monoid under composition, isomorphic to the multiplicative monoid of $\mathbb{B}$:
 
 $$
-L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad L_{e_t}^{\mathrm{axf}}=\mathrm{id}.
+L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad L_{\mathrm{axf},e_t}=\mathrm{id}.
 $$
 
 The reversible elements are the units of the algebra, that is the elements off the cone. The right multiplications form the opposite monoid, and the two-sided maps form a monoid whose units are the pairs of units.

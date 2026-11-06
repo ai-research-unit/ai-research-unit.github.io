@@ -57,7 +57,7 @@ where $\varpi^\flat$ is any element of the inverse limit whose first coordinate 
 
 **Remark (the tilt in coordinates).** An element of $K^{\flat\circ}$ is a sequence $(x_0, x_1, x_2, \dots)$ with $x_{n+1}^p = x_n$ in $K^\circ/(p)$, so it is a compatible system of $p^n$-th roots modulo $p$. Thus an element of $K^\flat$ is a "coherent system of $p$-power roots", and the tilt construction is the precise sense in which $K^\flat$ forgets the additive structure of mixed characteristic and retains only the Frobenius and the valuation. If one adjoins all $p$-power roots of $p$ freely, the tilt is the field $k((t^{1/p^\infty}))$ with $t$ the system of $p$-power roots of $p$, and the residue fields agree.
 
-**Example (the tilt of the extension of $\mathbb{Q}_p$).** For $K = \widehat{\mathbb{Q}_p(p^{1/p^\infty})}$ the tilt is $K^\flat \cong \mathbb{F}_p((t^{1/p^\infty}))^{\mathrm{perf}}$, where $t$ corresponds to the compatible system $(p, p^{1/p}, p^{1/p^2}, \dots)$ and the field is perfect. The isomorphism of value groups is $\lvert K^\times \rvert \cong \lvert (K^\flat)^\times \rvert$ via the map identifying $p^{1/p^n}$ with $t^{1/p^n}$, and the residue fields are both the residue field of $K$.
+**Example (the tilt of the extension of $\mathbb{Q}_p$).** For $K = \widehat{\mathbb{Q}_p(p^{1/p^\infty})}$ the tilt is $K^\flat \cong \mathbb{F}_p((t^{1/p^\infty}))_{\mathrm{perf}}$, where $t$ corresponds to the compatible system $(p, p^{1/p}, p^{1/p^2}, \dots)$ and the field is perfect. The isomorphism of value groups is $\lvert K^\times \rvert \cong \lvert (K^\flat)^\times \rvert$ via the map identifying $p^{1/p^n}$ with $t^{1/p^n}$, and the residue fields are both the residue field of $K$.
 
 ---
 

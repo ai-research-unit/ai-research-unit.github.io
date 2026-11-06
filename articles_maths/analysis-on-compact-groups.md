@@ -23,7 +23,7 @@ $$
 \int_K f(k^{-1})\,dk = \int_K f(k)\,dk .
 $$
 
-**Proof.** The measure $dk^{\mathrm{inv}}$ defined by $k^{\mathrm{inv}} = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities.
+**Proof.** The measure $dk_{\mathrm{inv}}$ defined by $k_{\mathrm{inv}} = k^{-1}$ is a right Haar measure; unimodularity makes it equal to a left Haar measure, hence to $dk$ times a positive constant, and the constant is $1$ because both measures are probabilities.
 
 **Example (the classical compact groups).** For $K = S^1 = \mathbb{R}/\mathbb{Z}$ the normalised Haar measure is $d\theta$ of total mass $1$. For $K = T^n$ it is the product measure. For $K = SU(2)$ the normalised Haar measure is fixed by the **Weyl integration formula**
 
@@ -247,7 +247,7 @@ $$
 
 and only finitely many multiplicities are nonzero; the characters multiply as $\chi_{\pi\otimes\sigma} = \chi_\pi\chi_\sigma$. The multiplicities are the structure constants of the representation ring of $K$, whose algebraic theory belongs to Part II.
 
-**Remark (the non-abelian dual is not a group).** Unlike the abelian dual $K^\vee$, the set $\operatorname{Irr}(K)$ carries no group structure for non-abelian $K$: the tensor product of two irreducibles is generally reducible, the "product" of equivalence classes is set-valued, and the identity class is the trivial representation. The dual is a discrete set with the extra structure of a tensor category, and its analysis is the content of this article; the failure is already visible for $K = S_3$, where the tensor product of the two-dimensional irreducible with itself is $\chi_1\oplus\chi^{\mathrm{sgn}}\oplus\rho$ (checked by the dimension count $2\cdot2 = 1+1+2$).
+**Remark (the non-abelian dual is not a group).** Unlike the abelian dual $K^\vee$, the set $\operatorname{Irr}(K)$ carries no group structure for non-abelian $K$: the tensor product of two irreducibles is generally reducible, the "product" of equivalence classes is set-valued, and the identity class is the trivial representation. The dual is a discrete set with the extra structure of a tensor category, and its analysis is the content of this article; the failure is already visible for $K = S_3$, where the tensor product of the two-dimensional irreducible with itself is $\chi_1\oplus\chi_{\mathrm{sgn}}\oplus\rho$ (checked by the dimension count $2\cdot2 = 1+1+2$).
 
 ### The Classical Groups
 

@@ -60,10 +60,10 @@ uniformly on compact intervals, and the **tractability index** is a variant comp
 **Theorem (the differentiation index counts derivatives of the data).** For a linear system $Ey' + Ay = q(t)$ with regular pencil and index $\nu$, every solution is of the form
 
 $$
-\boxed{\;y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y^{\mathrm{hom}}\;},
+\boxed{\;y = \sum_{k=0}^{\nu-1} c_k\,q^{(k)} + y_{\mathrm{hom}}\;},
 $$
 
-where the $c_k$ are matrices and $y^{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.
+where the $c_k$ are matrices and $y_{\mathrm{hom}}$ solves the homogeneous system; consequently the solution depends on the first $\nu-1$ derivatives of $q$, and the initial value $y(t_0)$ must satisfy $\nu-1$ consistency conditions for a solution to exist.
 
 *Proof.* Quoted as standard, and proved in the next section by the Kronecker form. The statement follows from the explicit representation $v = \sum_{k=0}^{\nu-1}(-N)^kq_2^{(k)}$ for the algebraic part; each differentiation of $q_2$ raises the order of the derivative appearing, and there are exactly $\nu-1$ terms because $N^\nu = 0$.
 

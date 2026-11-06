@@ -8,8 +8,8 @@ The discrete Thomas–Wigner rotation is already in the corpus: the product of t
 
 **What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the trace formula are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here; no object of the informational sector arises below, so the trace reading is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
 $$
-\tilde U_{\vec v_b}=\cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u,
-\qquad \tanh\theta^{\mathrm{rpd}}_b=\frac{v_b}{c},
+\tilde U_{\vec v_b}=\cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u,
+\qquad \tanh\theta_{\mathrm{rpd},b}=\frac{v_b}{c},
 $$
 which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dr'_t$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
@@ -19,7 +19,7 @@ which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/
 
 ## Problem 1: The Rotor Between Two Neighbouring Rest Frames
 
-**Statement.** Let a particle have lab velocity $\vec v(r'_t)$ and let $\tilde U_{\vec v}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_v$, with $\tanh\theta^{\mathrm{rpd}}=v/c$, be its lab-to-rest boost rotor.
+**Statement.** Let a particle have lab velocity $\vec v(r'_t)$ and let $\tilde U_{\vec v}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_v$, with $\tanh\theta_{\mathrm{rpd}}=v/c$, be its lab-to-rest boost rotor.
 
 **(a)** Show that the rest frame at lab time $r'_t+dr'_t$ is related to the rest frame at time $r'_t$ by the rotor
 $$
@@ -52,14 +52,14 @@ which is (1). The direction matters: $\tilde U_{\vec v}^{-1}=\tilde U_{\vec v}^{
 
 **(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde U_{\mathrm{int}}\rangle_{\natural}=e_t$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u}$ with $\tilde U_{\mathrm b}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $r'_t+dr'_t$ relative to the rest frame at $r'_t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
 
-**(c)** Write (1) as a product in the order written, $\tilde U_{\mathrm{int}}=\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$, with $\tilde U^{\mathrm{lor}}_{1}=\tilde U_{\vec v+d\vec v}$ the first factor and $\tilde U^{\mathrm{lor}}_{2}=\tilde U_{\vec v}^{\natural}=\tilde U_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\theta^{\mathrm{rpd}}_1,\theta^{\mathrm{rpd}}_2$ their rapidities, $\tanh\theta^{\mathrm{rpd}}_1=|\vec v+d\vec v|/c$, $\tanh\theta^{\mathrm{rpd}}_2=v/c$. The parent's boxed result for the product $\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
+**(c)** Write (1) as a product in the order written, $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}$, with $\tilde U_{\mathrm{lor},1}=\tilde U_{\vec v+d\vec v}$ the first factor and $\tilde U_{\mathrm{lor},2}=\tilde U_{\vec v}^{\natural}=\tilde U_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\theta_{\mathrm{rpd},1},\theta_{\mathrm{rpd},2}$ their rapidities, $\tanh\theta_{\mathrm{rpd},1}=|\vec v+d\vec v|/c$, $\tanh\theta_{\mathrm{rpd},2}=v/c$. The parent's boxed result for the product $\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
 $$
 \tan\frac{\theta_W}{2}
-=\frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\,\sin\theta^{\mathrm{btw}}}
-{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\,\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\,\cos\theta^{\mathrm{btw}}},
+=\frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\,\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\,\sin\theta_{\mathrm{btw}}}
+{\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\,\cosh\frac{\theta_{\mathrm{rpd},2}}{2}+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\,\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\,\cos\theta_{\mathrm{btw}}},
 \tag{4}
 $$
-where $\theta^{\mathrm{btw}}$ is the angle between $\vec u_x$ and $\vec u_y$, i.e. between $\vec u_{\vec v+d\vec v}$ and $-\vec u_v$. The axis is the parent's: for the product written in this order it is $-\vec u_{\vec u_x\times\vec u_y}$. This form of the answer is exact for the finite step $dr'_t$; the next problem takes the limit.
+where $\theta_{\mathrm{btw}}$ is the angle between $\vec u_x$ and $\vec u_y$, i.e. between $\vec u_{\vec v+d\vec v}$ and $-\vec u_v$. The axis is the parent's: for the product written in this order it is $-\vec u_{\vec u_x\times\vec u_y}$. This form of the answer is exact for the finite step $dr'_t$; the next problem takes the limit.
 
 ## Problem 2: The Thomas Precession Rate
 
@@ -80,60 +80,60 @@ $$
 \tag{6}
 $$
 
-*The angle $\theta^{\mathrm{btw}}$.* The direction $\vec u_y=-\vec u_v$ is fixed; the direction $\vec u_x=\vec u_{\vec v+d\vec v}$ turns away from $\vec u_v$ by the small angle $\theta^{\mathrm{dfl}}$ with
+*The angle $\theta_{\mathrm{btw}}$.* The direction $\vec u_y=-\vec u_v$ is fixed; the direction $\vec u_x=\vec u_{\vec v+d\vec v}$ turns away from $\vec u_v$ by the small angle $\theta_{\mathrm{dfl}}$ with
 $$
-\theta^{\mathrm{dfl}}=\frac{|\vec a_\perp|}{v}\,dr'_t+O(d{r'_{t}}^2).
+\theta_{\mathrm{dfl}}=\frac{|\vec a_\perp|}{v}\,dr'_t+O(d{r'_{t}}^2).
 \tag{7}
 $$
-Hence $\theta^{\mathrm{btw}}=\pi-\theta^{\mathrm{dfl}}$, so
+Hence $\theta_{\mathrm{btw}}=\pi-\theta_{\mathrm{dfl}}$, so
 $$
-\sin\theta^{\mathrm{btw}}=\sin\theta^{\mathrm{dfl}}=\theta^{\mathrm{dfl}}+O(d{r'_{t}}^3),
+\sin\theta_{\mathrm{btw}}=\sin\theta_{\mathrm{dfl}}=\theta_{\mathrm{dfl}}+O(d{r'_{t}}^3),
 \qquad
-\cos\theta^{\mathrm{btw}}=-\cos\theta^{\mathrm{dfl}}=-1+O(d{r'_{t}}^2).
+\cos\theta_{\mathrm{btw}}=-\cos\theta_{\mathrm{dfl}}=-1+O(d{r'_{t}}^2).
 \tag{8}
 $$
 
-*The rapidity $\theta^{\mathrm{rpd}}_1$.* Since $\tanh\theta^{\mathrm{rpd}}=v/c$, the change of rapidity under $v\mapsto v+(\vec a\cdot\vec u_v)dr'_t$ is
+*The rapidity $\theta_{\mathrm{rpd},1}$.* Since $\tanh\theta_{\mathrm{rpd}}=v/c$, the change of rapidity under $v\mapsto v+(\vec a\cdot\vec u_v)dr'_t$ is
 $$
-d\theta^{\mathrm{rpd}}=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma^2}{c}(\vec a\cdot\vec u_v)\,dr'_t+O(d{r'_{t}}^2),
-\qquad\text{so}\qquad \theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}+d\theta^{\mathrm{rpd}},\quad \theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}} .
+d\theta_{\mathrm{rpd}}=\frac{d(v/c)}{1-v^2/c^2}=\frac{\gamma^2}{c}(\vec a\cdot\vec u_v)\,dr'_t+O(d{r'_{t}}^2),
+\qquad\text{so}\qquad \theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd}}+d\theta_{\mathrm{rpd}},\quad \theta_{\mathrm{rpd},2}=\theta_{\mathrm{rpd}} .
 \tag{9}
 $$
 The perpendicular part of the acceleration does not change the speed and hence does not change the rapidity.
 
 *The numerator of (4).* To first order,
 $$
-\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta^{\mathrm{btw}}
-=\left[\sinh\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}\right]\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta_{\mathrm{btw}}
+=\left[\sinh\frac{\theta_{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,d\theta_{\mathrm{rpd}}\right]\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\theta_{\mathrm{dfl}}
+=\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\theta_{\mathrm{dfl}}+O(d{r'_{t}}^2),
 \tag{10}
 $$
-because the $d\theta^{\mathrm{rpd}}$ term multiplies the already first-order $\theta^{\mathrm{dfl}}$.
+because the $d\theta_{\mathrm{rpd}}$ term multiplies the already first-order $\theta_{\mathrm{dfl}}$.
 
-*The denominator of (4).* To zeroth order, $\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}=1$. The first-order $d\theta^{\mathrm{rpd}}$ terms cancel between the two products,
+*The denominator of (4).* To zeroth order, $\cosh^2\frac{\theta_{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}=1$. The first-order $d\theta_{\mathrm{rpd}}$ terms cancel between the two products,
 $$
-\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}
-=\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta^{\mathrm{rpd}}}{2}\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2),
+\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2}
+=\cosh^2\frac{\theta_{\mathrm{rpd}}}{2}+\frac12\cosh\frac{\theta_{\mathrm{rpd}}}{2}\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,d\theta_{\mathrm{rpd}}+O(d{r'_{t}}^2),
 $$
 $$
-\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}+\frac12\sinh\frac{\theta^{\mathrm{rpd}}}{2}\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,d\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2),
+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}
+=\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}+\frac12\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,d\theta_{\mathrm{rpd}}+O(d{r'_{t}}^2),
 $$
-and multiplying the second by $\cos\theta^{\mathrm{btw}}=-1+O(d{r'_{t}}^2)$ gives
+and multiplying the second by $\cos\theta_{\mathrm{btw}}=-1+O(d{r'_{t}}^2)$ gives
 $$
-\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta^{\mathrm{btw}}
+\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2}+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\cos\theta_{\mathrm{btw}}
 =1+O(d{r'_{t}}^2).
 \tag{11}
 $$
-The two $d\theta^{\mathrm{rpd}}$ terms cancel exactly; the residual $O(d{r'_{t}}^2)$ comes from $\cos\theta^{\mathrm{btw}}=-1+\tfrac12{\theta^{\mathrm{dfl}}}^2+\cdots$, which is already second order.
+The two $d\theta_{\mathrm{rpd}}$ terms cancel exactly; the residual $O(d{r'_{t}}^2)$ comes from $\cos\theta_{\mathrm{btw}}=-1+\tfrac12{\theta_{\mathrm{dfl}}}^2+\cdots$, which is already second order.
 
 *The angle.* Combining (10) and (11),
 $$
-\tan\frac{\theta_W}{2}=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2)
+\tan\frac{\theta_W}{2}=\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\theta_{\mathrm{dfl}}+O(d{r'_{t}}^2)
 \ \Longrightarrow\
-\theta_W=2\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2)=(\cosh\theta^{\mathrm{rpd}}-1)\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
+\theta_W=2\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\theta_{\mathrm{dfl}}+O(d{r'_{t}}^2)=(\cosh\theta_{\mathrm{rpd}}-1)\,\theta_{\mathrm{dfl}}+O(d{r'_{t}}^2),
 $$
-where $2\sinh^2(\theta^{\mathrm{rpd}}/2)=\cosh\theta^{\mathrm{rpd}}-1$. With $\cosh\theta^{\mathrm{rpd}}=\gamma$ and (7),
+where $2\sinh^2(\theta_{\mathrm{rpd}}/2)=\cosh\theta_{\mathrm{rpd}}-1$. With $\cosh\theta_{\mathrm{rpd}}=\gamma$ and (7),
 $$
 \theta_W=(\gamma-1)\,\frac{|\vec a_\perp|}{v}\,dr'_t+O(d{r'_{t}}^2).
 \tag{12}
@@ -151,7 +151,7 @@ $$
 $$
 which follows from $v^2/c^2=1-\gamma^{-2}$ and $\gamma^2-1=(\gamma-1)(\gamma+1)$. Substituting (14) into (13) gives the magnitude in (5).
 
-*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde U_{\mathrm{int}}=\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2}$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
+*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
 $$
 -\vec u_x\times\vec u_y
 =-\vec u_{\vec v+d\vec v}\times(-\vec u_v)
@@ -167,7 +167,7 @@ $$
 \vec\omega_T\approx\frac{1}{2c^2}\,\vec a\times\vec v.
 \tag{15}
 $$
-The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the value at $\gamma=1$ of $\gamma^2/(\gamma+1)$, and it comes in through the expansion of the denominator in (11) to the value $1$ rather than the larger $\cosh\theta^{\mathrm{rpd}}$ that a first guess might produce.
+The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the value at $\gamma=1$ of $\gamma^2/(\gamma+1)$, and it comes in through the expansion of the denominator in (11) to the value $1$ rather than the larger $\cosh\theta_{\mathrm{rpd}}$ that a first guess might produce.
 
 *Only the transverse acceleration precesses the frame.* Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration ($\vec a\parallel\vec v$) gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the rest frame's rotation axis. This is the first sign that the collinear case cannot test the direction of (5).
 
@@ -194,10 +194,10 @@ $$
 \vec\omega_T=-\frac{\gamma^2}{\gamma+1}\frac{av}{c^2}\,\vec e_z .
 \tag{16}
 $$
-Directly from the parent's formula: here $d\vec v=a\,dr'_t\,\vec e_y$, $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}_2=\theta^{\mathrm{rpd}}+O(d{r'_{t}}^2)$ (the acceleration is perpendicular to $\vec v$, so $d\theta^{\mathrm{rpd}}=0$ by (9)), $\theta^{\mathrm{dfl}}=a\,dr'_t/v$, and $\theta^{\mathrm{btw}}=\pi-\theta^{\mathrm{dfl}}$. Then (4) collapses to
+Directly from the parent's formula: here $d\vec v=a\,dr'_t\,\vec e_y$, $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=\theta_{\mathrm{rpd}}+O(d{r'_{t}}^2)$ (the acceleration is perpendicular to $\vec v$, so $d\theta_{\mathrm{rpd}}=0$ by (9)), $\theta_{\mathrm{dfl}}=a\,dr'_t/v$, and $\theta_{\mathrm{btw}}=\pi-\theta_{\mathrm{dfl}}$. Then (4) collapses to
 $$
-\tan\frac{\theta_W}{2}=\frac{\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\sin\theta^{\mathrm{dfl}}}{\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\cos\theta^{\mathrm{dfl}}}
-=\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\,\theta^{\mathrm{dfl}}+O(d{r'_{t}}^2),
+\tan\frac{\theta_W}{2}=\frac{\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\sin\theta_{\mathrm{dfl}}}{\cosh^2\frac{\theta_{\mathrm{rpd}}}{2}-\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\cos\theta_{\mathrm{dfl}}}
+=\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\,\theta_{\mathrm{dfl}}+O(d{r'_{t}}^2),
 $$
 and the parent's axis rule places the rotation along $-(\vec u_x\times\vec u_y)$: in the basis used, $\vec u_x=\vec u_{\vec v+d\vec v}=\vec e_x+\frac{a\,dr'_t}{v}\vec e_y$ is the direction of the first factor $\tilde U_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v=-\vec e_x$ that of the second factor $\tilde U_{\vec v}^{\natural}$, and
 $$
@@ -258,9 +258,9 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 **Solution.** Three recorded facts and one gap.
 
-*The discrete rotation is in the corpus, and it is correct.* The Lorentz-group article derives the exact Wigner angle (its boxed formula, reproduced as (4) above) and its axis, and records the leading approximation $\theta^{\mathrm{dfl}}\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$. The boosting exercise derives the same product in full, with a verified numerical instance. Both were re-checked here on independent cases: the axis rule, the angle formula, and the numerical instance $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}_2=\operatorname{atanh}0.6$, orthogonal, with composed speed $0.7683749c$ and Wigner angle $12.68038^\circ$, all reproduce. No false statement was found in either parent on the cases tested.
+*The discrete rotation is in the corpus, and it is correct.* The Lorentz-group article derives the exact Wigner angle (its boxed formula, reproduced as (4) above) and its axis, and records the leading approximation $\theta_{\mathrm{dfl}}\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$. The boosting exercise derives the same product in full, with a verified numerical instance. Both were re-checked here on independent cases: the axis rule, the angle formula, and the numerical instance $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=\operatorname{atanh}0.6$, orthogonal, with composed speed $0.7683749c$ and Wigner angle $12.68038^\circ$, all reproduce. No false statement was found in either parent on the cases tested.
 
-*The rate is not in the parents.* The parents give the Wigner angle of a **finite pair of given boosts**. The Thomas precession is an **angular velocity**; its input is the acceleration, which the two-boost formula does not contain. The bridge is the limit taken in Problem 2, $\theta_W/dr'_t$ with $d\vec v=\vec a\,dr'_t$, and it appears nowhere in the parents. A reader who needs $\vec\omega_T$ finds in the parents only the discrete angle and its leading approximation, the phrase in the Lorentz-group article that calls $\theta^{\mathrm{dfl}}\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$ "the familiar leading Thomas-precession angle". That phrase is accurate only in the infinitesimal limit in which the velocity change is $\vec v_2-\vec v_1=\vec a\,dr'_t$; for two finite boosts the angle $\theta^{\mathrm{dfl}}$ is not the *accumulated* precession angle along any particle's worldline, because there is no worldline, and the two quantities agree only to leading order. The rate stands in the corpus only here and in the companion article *Thomas Precession as a Biquaternion Rotor Effect*, where it is obtained from the interval rotor directly; what it is absent from is the parents, and (5) derives it from their own formula (4).
+*The rate is not in the parents.* The parents give the Wigner angle of a **finite pair of given boosts**. The Thomas precession is an **angular velocity**; its input is the acceleration, which the two-boost formula does not contain. The bridge is the limit taken in Problem 2, $\theta_W/dr'_t$ with $d\vec v=\vec a\,dr'_t$, and it appears nowhere in the parents. A reader who needs $\vec\omega_T$ finds in the parents only the discrete angle and its leading approximation, the phrase in the Lorentz-group article that calls $\theta_{\mathrm{dfl}}\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$ "the familiar leading Thomas-precession angle". That phrase is accurate only in the infinitesimal limit in which the velocity change is $\vec v_2-\vec v_1=\vec a\,dr'_t$; for two finite boosts the angle $\theta_{\mathrm{dfl}}$ is not the *accumulated* precession angle along any particle's worldline, because there is no worldline, and the two quantities agree only to leading order. The rate stands in the corpus only here and in the companion article *Thomas Precession as a Biquaternion Rotor Effect*, where it is obtained from the interval rotor directly; what it is absent from is the parents, and (5) derives it from their own formula (4).
 
 *The direction of the boost rotor is unstated.* The parent Lorentz-transformation article writes $\tilde U_{\mathrm b}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$ without saying that it is the lab-to-rest rotor; the $\mathbb{M}_+$ article says only that the boost biquaternion "acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost", again without a direction; the boosting exercise's Problem 4 records this as a genuine gap in the parent's statement. For the Thomas precession the gap is real but, as Problem 3(c) shows, benign when the ambiguity is applied consistently: inverting each boost rotor together leaves the first-order precession unchanged, and only the composition order in (1) reverses the sign. The gap does not by itself corrupt $\vec\omega_T$; what it does mean is that the sign cannot be checked from the parents' statements alone, and it is the non-collinear computation that supplies the missing information.
 
@@ -300,8 +300,8 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{M}_-$ |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
-| $\theta^{\mathrm{rpd}}$, $\tanh\theta^{\mathrm{rpd}}=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
-| $\tilde U_{\vec v}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
+| $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
+| $\tilde U_{\vec v}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
 | $\vec a=d\vec v/dr'_t$, $\vec a_\perp$ | Lab acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |
 | $\tilde U_{\mathrm b}$, $\tilde{u}$ | Boost and rotation factors of $\tilde U_{\mathrm{int}}=\tilde U_{\mathrm b}\tilde{u}$ |

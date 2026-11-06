@@ -8,7 +8,7 @@ The family and its reduction are *The Split-Biquaternion Quadratic Family*; the 
 
 The article owns the topology of the split-biquaternion Julia set as a product, the description of its components and dust, the split-complex scalar slice and its square connectedness locus, the solid-of-revolution description of the factors, the symmetry of the fractal, and the comparison with the biquaternion case.
 
-**Standing convention.** $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$; $K_{\tilde Q_1}=K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ and $J_{\tilde Q_1}=\partial K_{\tilde Q_1}$; for a quaternion parameter $\tilde q_1\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde q_1}(\tilde q)=\tilde q^2+\tilde q_1$ are written $K_{\tilde q_1}$ and $J_{\tilde q_1}$.
+**Standing convention.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$; $K_{\tilde Q_1}=K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ and $J_{\tilde Q_1}=\partial K_{\tilde Q_1}$; for a quaternion parameter $\tilde q_1\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde q_1}(\tilde q)=\tilde q^2+\tilde q_1$ are written $K_{\tilde q_1}$ and $J_{\tilde q_1}$.
 
 ## The Product Structure of the Fractal
 
@@ -53,17 +53,17 @@ $$
 
 ## The Split-Complex Scalar Slice
 
-**Theorem (the $\mathbb{C}^{\mathrm{spl}}$-line).** Let $\tilde Q_1=\lambda e_t$ with $\lambda\in\mathbb{C}^{\mathrm{spl}}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde Q_{1\pm}=\lambda_\pm e_t$ are real, and the connectedness locus of the family restricted to the $\mathbb{C}^{\mathrm{spl}}$-line is the square
+**Theorem (the $\mathbb{C}_{\mathrm{spl}}$-line).** Let $\tilde Q_1=\lambda e_t$ with $\lambda\in\mathbb{C}_{\mathrm{spl}}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde Q_{1\pm}=\lambda_\pm e_t$ are real, and the connectedness locus of the family restricted to the $\mathbb{C}_{\mathrm{spl}}$-line is the square
 
 $$
 \boxed{\;
-\bigl\{\lambda\in\mathbb{C}^{\mathrm{spl}} : K_{\lambda e_t} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\}
+\bigl\{\lambda\in\mathbb{C}_{\mathrm{spl}} : K_{\lambda e_t} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\}
 \;},
 $$
 
 the square of the real Mandelbrot interval.
 
-**Proof.** For a real parameter $c\in\mathbb{R}$ the quaternion connectedness locus is the real interval $[-2,\tfrac14]$ (*The Quaternion Mandelbrot Set*); the connectedness locus of the product is the product of the two quaternion loci, and the $\mathbb{C}^{\mathrm{spl}}$-line is the set of pairs $(\lambda_+,\lambda_-)$, giving the square.
+**Proof.** For a real parameter $c\in\mathbb{R}$ the quaternion connectedness locus is the real interval $[-2,\tfrac14]$ (*The Quaternion Mandelbrot Set*); the connectedness locus of the product is the product of the two quaternion loci, and the $\mathbb{C}_{\mathrm{spl}}$-line is the set of pairs $(\lambda_+,\lambda_-)$, giving the square.
 
 **Theorem (the solids of revolution).** For a real quaternion parameter $c\in[-2,\tfrac14]$ the quaternion filled Julia set is the solid of revolution about the real axis,
 
@@ -73,11 +73,11 @@ K_c=\{\tilde q\in\mathbb{H} : (\operatorname{Sc}\tilde q,\ |\operatorname{Vect}\
 \;},
 $$
 
-where $K_c^{\mathbb{C}}$ is the complex filled Julia set of $z\mapsto z^2+c$. Hence on the $\mathbb{C}^{\mathrm{spl}}$-line the split-biquaternion filled Julia set is the product of two such solids of revolution, one for each component.
+where $K_c^{\mathbb{C}}$ is the complex filled Julia set of $z\mapsto z^2+c$. Hence on the $\mathbb{C}_{\mathrm{spl}}$-line the split-biquaternion filled Julia set is the product of two such solids of revolution, one for each component.
 
 **Proof.** For a real parameter the orbit of $\tilde q$ stays in the plane spanned by $1$ and $\tilde q$, which is a copy of $\mathbb{C}$, and the point $\tilde q$ corresponds to the complex number $\operatorname{Sc}\tilde q+i|\operatorname{Vect}\tilde q|$; the orbit is that of the complex quadratic map of the real parameter, whence the description (*The Slices of the Quaternion Julia Sets*).
 
-**Remark (the $\mathbb{C}^{\mathrm{spl}}$-line is the fully symmetric line).** The $\mathbb{C}^{\mathrm{spl}}$-scalar parameters are fixed by every automorphism of the algebra that preserves the idempotents, so the fractal on the $\mathbb{C}^{\mathrm{spl}}$-line has the full symmetry of the algebra; **the square of the real Mandelbrot interval is the base of the family, and it is the only slice whose connectedness locus is a square.** The other slices have products of the corresponding quaternion loci.
+**Remark (the $\mathbb{C}_{\mathrm{spl}}$-line is the fully symmetric line).** The $\mathbb{C}_{\mathrm{spl}}$-scalar parameters are fixed by every automorphism of the algebra that preserves the idempotents, so the fractal on the $\mathbb{C}_{\mathrm{spl}}$-line has the full symmetry of the algebra; **the square of the real Mandelbrot interval is the base of the family, and it is the only slice whose connectedness locus is a square.** The other slices have products of the corresponding quaternion loci.
 
 ## Components, Dust and the Parameter Square
 
@@ -95,17 +95,17 @@ $$
 \mathrm{sym}(J_{\tilde Q_1})\supset \mathrm{sym}(J_{\tilde Q_{1+}})\times\mathrm{sym}(J_{\tilde Q_{1-}})\rtimes\mathbb{Z}/2 ,
 $$
 
-and for a $\mathbb{C}^{\mathrm{spl}}$-scalar parameter the symmetry is the full product of the quaternion symmetries of the two factors together with the swap.
+and for a $\mathbb{C}_{\mathrm{spl}}$-scalar parameter the symmetry is the full product of the quaternion symmetries of the two factors together with the swap.
 
-**Proof.** The group $\mathrm{sym}(J_+)\times\mathrm{sym}(J_-)$ acts componentwise and preserves the product; the swap exchanges the factors and maps $K_+\times K_-$ to $K_-\times K_+$, which is the filled Julia set of the swapped parameter, so it preserves $J_{\tilde Q_1}$ when the parameter is exchanged accordingly, and for a $\mathbb{C}^{\mathrm{spl}}$-scalar parameter it preserves the set outright.
+**Proof.** The group $\mathrm{sym}(J_+)\times\mathrm{sym}(J_-)$ acts componentwise and preserves the product; the swap exchanges the factors and maps $K_+\times K_-$ to $K_-\times K_+$, which is the filled Julia set of the swapped parameter, so it preserves $J_{\tilde Q_1}$ when the parameter is exchanged accordingly, and for a $\mathbb{C}_{\mathrm{spl}}$-scalar parameter it preserves the set outright.
 
 **Remark (contrast with the biquaternion symmetry).** The biquaternion fractal has only the diagonal symmetry of the conjugations, because the idempotents are not central and the two halves cannot be rotated independently (*The Slices of the Biquaternion Julia Sets*, §*The Conjugation Symmetries of the Slices*). The split-biquaternion fractal has the full product symmetry. **The centrality of the idempotents enlarges the symmetry from the diagonal to the product, and the fractal reflects it.**
 
 ## Comparison with the Biquaternion Case
 
-**Remark (product against coupling).** The biquaternion fractal restricted to the idempotent plane is a product, and off the plane it is coupled; the split-biquaternion fractal is a product everywhere. The comparison is exact: the central idempotents of the split-biquaternion algebra give $\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\tilde\Pi_1\oplus\mathbb{H}\tilde\Pi_2$ as a direct sum of two ideals, whereas the idempotents of the biquaternion algebra give only the Peirce decomposition of the space with a non-zero off-diagonal block. **One algebra is a product, the other is a simple algebra, and the fractal theory is a product theory in the first case and an irreducible one in the second.**
+**Remark (product against coupling).** The biquaternion fractal restricted to the idempotent plane is a product, and off the plane it is coupled; the split-biquaternion fractal is a product everywhere. The comparison is exact: the central idempotents of the split-biquaternion algebra give $\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_1\oplus\mathbb{H}\tilde\Pi_2$ as a direct sum of two ideals, whereas the idempotents of the biquaternion algebra give only the Peirce decomposition of the space with a non-zero off-diagonal block. **One algebra is a product, the other is a simple algebra, and the fractal theory is a product theory in the first case and an irreducible one in the second.**
 
-**Remark (what the split side cannot have).** The split-biquaternion algebra is not a division algebra and its $\mathbb{C}^{\mathrm{spl}}$-valued norm is indefinite, so its fractal theory has zero divisors and no natural pluripotential theory; the fractal is a product and the analysis is the quaternion analysis on two factors. The biquaternion algebra has a complex structure and a pluripotential theory, and pays for it with the coupling and the cone. **Neither algebra contains the other, and the two threads are the two resolutions of the quadratic family over the quaternions.**
+**Remark (what the split side cannot have).** The split-biquaternion algebra is not a division algebra and its $\mathbb{C}_{\mathrm{spl}}$-valued norm is indefinite, so its fractal theory has zero divisors and no natural pluripotential theory; the fractal is a product and the analysis is the quaternion analysis on two factors. The biquaternion algebra has a complex structure and a pluripotential theory, and pays for it with the coupling and the cone. **Neither algebra contains the other, and the two threads are the two resolutions of the quadratic family over the quaternions.**
 
 ## Summary
 

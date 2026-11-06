@@ -109,12 +109,12 @@ a symmetric polynomial in the roots, hence a polynomial in the coefficients $c_1
 **Definition.** The **regular semisimple locus** of $M_5$ is the open set
 
 $$
-M_5^{\mathrm{rs}}=\{A:\Delta(\chi_A)\ne0\},
+M_{\mathrm{rs},5}=\{A:\Delta(\chi_A)\ne0\},
 $$
 
 the matrices with five distinct eigenvalues. Its complement is the **discriminant locus** $\{A:\Delta(\chi_A)=0\}$.
 
-**Proposition.** $M_5^{\mathrm{rs}}$ is a nonempty Zariski open subset of $M_5$, of dimension $25$. The discriminant locus is a hypersurface, of dimension $24$.
+**Proposition.** $M_{\mathrm{rs},5}$ is a nonempty Zariski open subset of $M_5$, of dimension $25$. The discriminant locus is a hypersurface, of dimension $24$.
 
 **Proof.** The discriminant is a nonzero polynomial on $M_5$ (the diagonal matrix with distinct eigenvalues has $\Delta\ne0$), so its nonvanishing locus is a nonempty Zariski open set; a nonzero polynomial vanishes on a hypersurface, of codimension $1$. The dimension of $M_5$ is $25$.
 
@@ -294,7 +294,7 @@ A general quintic has no radical solution: its Galois group is $S_5$, not solvab
 | $c_k$ | The coefficient of $t^{5-k}$, up to sign |
 | $\lambda_1,\dots,\lambda_5$ | The eigenvalues |
 | $\Delta$ | The discriminant |
-| $M_5^{\mathrm{rs}}$ | The regular semisimple locus, $\Delta\ne0$ |
+| $M_{\mathrm{rs},5}$ | The regular semisimple locus, $\Delta\ne0$ |
 | $(m_1,\dots,m_r)$ | A spectral type, a partition of $5$ |
 | $P_k$ | The Lagrange projector of the eigenvalue $\omega_k$ |
 | $C$ | The companion matrix of a quintic |

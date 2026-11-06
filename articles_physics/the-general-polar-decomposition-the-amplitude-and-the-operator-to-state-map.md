@@ -24,7 +24,7 @@ The conventions are those of *Algebra and Element Conventions*. The algebra is $
 | the rank-one case and the partial isometry on the null cone | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor*, §*Examples* | the cone case of the same general pair |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
 | the trace reading of the Born weight | [*The Born Rule from the Hermitian Form — Derivation and Comparison*](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
-| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde K^{\mathrm{mod}}=-\ln\tilde{Ϛ}$ |
+| the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}$ |
 
 ## The Map
 
@@ -143,7 +143,7 @@ which is the right polar decomposition. Written in the same left form as $\tilde
 For a faithful state, $\tilde{Ϛ}_Q>0$, the modular Hamiltonian is defined by
 
 $$
-\tilde K^{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q=-2\ln\tilde Q_{\mathrm n}
+\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q=-2\ln\tilde Q_{\mathrm n}
 =-2\ln\tilde Q_H+\ln\!\bigl(2\langle\tilde Q_H,\tilde Q_H\rangle_{*}\bigr)e_t .
 $$
 
@@ -223,7 +223,7 @@ Read as a whole, the table is a dictionary between the algebra's rank stratigrap
 | $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$ | the state's eigenvalues |
 | $\operatorname{Tr}\tilde{Ϛ}_Q^{2}$ | the purity, between $\tfrac12$ and $1$ |
 | $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ | the $*$-unitary phase off the cone, the partial isometry on it; the phase coordinate along the fibre |
-| $\tilde K^{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q$ | the modular Hamiltonian of a faithful state |
+| $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q$ | the modular Hamiltonian of a faithful state |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | the trace |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form |
 

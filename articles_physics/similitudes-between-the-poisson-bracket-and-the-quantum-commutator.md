@@ -87,7 +87,7 @@ Second, the normalization is not free. The factor $1/(i\hbar)$ — with the $i$ 
 In the position representation, for a system with coordinates $q_i$, the operators are
 
 $$
-q_i\,\tilde{Ξ}^{\mathrm{sp}} = q_i\,\tilde{Ξ}^{\mathrm{sp}}, \qquad p_j\,\tilde{Ξ}^{\mathrm{sp}} = -i\hbar\,\frac{\partial\tilde{Ξ}^{\mathrm{sp}}}{\partial q_j}.
+q_i\,\tilde{Ξ}_{\mathrm{sp}} = q_i\,\tilde{Ξ}_{\mathrm{sp}}, \qquad p_j\,\tilde{Ξ}_{\mathrm{sp}} = -i\hbar\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial q_j}.
 $$
 
 From these definitions,
@@ -128,44 +128,44 @@ which is the form in which the $i\hbar$ and the order are both manifest.
 The components of orbital angular momentum are
 
 $$
-L_i^{\mathrm{orb}} = \epsilon_{ijk}\,q_j\,p_k,
+L_{\mathrm{orb},i} = \epsilon_{ijk}\,q_j\,p_k,
 $$
 
-with $\epsilon_{ijk}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_i^{\mathrm{orb}}$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.
+with $\epsilon_{ijk}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_{\mathrm{orb},i}$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.
 
 **Classical side.** From the definition of the Poisson bracket and $\{q_i,p_j\}=\delta_{ij}$ one computes
 
 $$
-\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}\,L_k^{\mathrm{orb}},
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}\,L_{\mathrm{orb},k},
 $$
 
 and, for the brackets with the coordinates and momenta,
 
 $$
-\{L_i^{\mathrm{orb}},q_j\} = \epsilon_{ijk}\,q_k, \qquad \{L_i^{\mathrm{orb}},p_j\} = \epsilon_{ijk}\,p_k.
+\{L_{\mathrm{orb},i},q_j\} = \epsilon_{ijk}\,q_k, \qquad \{L_{\mathrm{orb},i},p_j\} = \epsilon_{ijk}\,p_k.
 $$
 
-**Quantum side.** With $L_i^{\mathrm{orb}} = \epsilon_{ijk}\,q_j\,p_k$ and the canonical commutators, the same computation gives
+**Quantum side.** With $L_{\mathrm{orb},i} = \epsilon_{ijk}\,q_j\,p_k$ and the canonical commutators, the same computation gives
 
 $$
-[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}] = i\hbar\,\epsilon_{ijk}\,L_k^{\mathrm{orb}},
+[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = i\hbar\,\epsilon_{ijk}\,L_{\mathrm{orb},k},
 $$
 
 so that
 
 $$
-\frac{1}{i\hbar}[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}] = \epsilon_{ijk}\,L_k^{\mathrm{orb}},
+\frac{1}{i\hbar}[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = \epsilon_{ijk}\,L_{\mathrm{orb},k},
 $$
 
-which is the operator image of $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The correspondence holds on this pair as well.
+which is the operator image of $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The correspondence holds on this pair as well.
 
 | Classical | Quantum | $(1/i\hbar)\times$ Quantum |
 |---|---|---|
-| $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ | $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\hbar\epsilon_{ijk}L_k^{\mathrm{orb}}$ | $\epsilon_{ijk}L_k^{\mathrm{orb}}$ |
-| $\{L_i^{\mathrm{orb}},q_j\}=\epsilon_{ijk}q_k$ | $[L_i^{\mathrm{orb}},q_j]=i\hbar\epsilon_{ijk}q_k$ | $\epsilon_{ijk}q_k$ |
-| $\{L_i^{\mathrm{orb}},p_j\}=\epsilon_{ijk}p_k$ | $[L_i^{\mathrm{orb}},p_j]=i\hbar\epsilon_{ijk}p_k$ | $\epsilon_{ijk}p_k$ |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\hbar\epsilon_{ijk}L_{\mathrm{orb},k}$ | $\epsilon_{ijk}L_{\mathrm{orb},k}$ |
+| $\{L_{\mathrm{orb},i},q_j\}=\epsilon_{ijk}q_k$ | $[L_{\mathrm{orb},i},q_j]=i\hbar\epsilon_{ijk}q_k$ | $\epsilon_{ijk}q_k$ |
+| $\{L_{\mathrm{orb},i},p_j\}=\epsilon_{ijk}p_k$ | $[L_{\mathrm{orb},i},p_j]=i\hbar\epsilon_{ijk}p_k$ | $\epsilon_{ijk}p_k$ |
 
-**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_i^{\mathrm{orb}}$, and on the quantum side the commutator algebra of the $L_i^{\mathrm{orb}}$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
+**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_{\mathrm{orb},i}$, and on the quantum side the commutator algebra of the $L_{\mathrm{orb},i}$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
 
 ## Where the Resemblance Holds
 
@@ -259,13 +259,13 @@ Here the correction is not a constant but the phase-space function $-24\hbar^2 q
 
 **The failure reaches down to the quadratic case.** The exactness stated for quadratic observables concerns the bracket and not the symbol, and composing two quadratic observables shows the difference. The symbol of the square of a single component is its star square,
 $$
-L_z^{\mathrm{orb}}\star L_z^{\mathrm{orb}} = \big(L_z^{\mathrm{orb}}\big)^2 + \tfrac{i\hbar}{2}\{L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\} - \tfrac{\hbar^2}{8}\Lambda^2\big(L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\big) = \big(L_z^{\mathrm{orb}}\big)^2 - \tfrac{\hbar^2}{2},
+L_{\mathrm{orb},z}\star L_{\mathrm{orb},z} = \big(L_{\mathrm{orb},z}\big)^2 + \tfrac{i\hbar}{2}\{L_{\mathrm{orb},z},L_{\mathrm{orb},z}\} - \tfrac{\hbar^2}{8}\Lambda^2\big(L_{\mathrm{orb},z},L_{\mathrm{orb},z}\big) = \big(L_{\mathrm{orb},z}\big)^2 - \tfrac{\hbar^2}{2},
 $$
-The first-order term vanishes because $\{L_z^{\mathrm{orb}},L_z^{\mathrm{orb}}\}=0$. The series stops at the second order because each application of $\Lambda$ differentiates each slot once and a quadratic survives only two. The second-order coefficient is $-\tfrac{\hbar^2}{8}$, and $\Lambda^2(L_z^{\mathrm{orb}},L_z^{\mathrm{orb}})=4$, so the term is $-\tfrac{\hbar^2}{2}$. Summing the three components,
+The first-order term vanishes because $\{L_{\mathrm{orb},z},L_{\mathrm{orb},z}\}=0$. The series stops at the second order because each application of $\Lambda$ differentiates each slot once and a quadratic survives only two. The second-order coefficient is $-\tfrac{\hbar^2}{8}$, and $\Lambda^2(L_{\mathrm{orb},z},L_{\mathrm{orb},z})=4$, so the term is $-\tfrac{\hbar^2}{2}$. Summing the three components,
 $$
-\sum_i\big(\operatorname{weyl}(L_i^{\mathrm{orb}})\big)^2 = \operatorname{weyl}(L^2) - \tfrac{3}{2}\hbar^2 ,
+\sum_i\big(\operatorname{weyl}(L_{\mathrm{orb},i})\big)^2 = \operatorname{weyl}(L^2) - \tfrac{3}{2}\hbar^2 ,
 $$
-where the subtracted term is the constant $\tfrac32\hbar^2$ times the identity operator and $L^2=\sum_i(L_i^{\mathrm{orb}})^2$. The sum of the three operator squares is therefore not the Weyl image of the classical $L^2$; it is that image shifted by $-\tfrac32\hbar^2$. No bracket sees the shift, because a constant has zero Poisson bracket with everything: $\{L^2-\tfrac32\hbar^2,\cdot\}=\{L^2,\cdot\}$. The shift is invisible to the two exact checks above and to every other bracket, and it is visible only in the product of two images. That is the article's thesis in its smallest instance: on quadratic observables the bracket correspondence holds, and the product correspondence already fails. Groenewold's theorem excludes an exact bracket correspondence over all polynomials; this offset shows that even where the correspondence holds, the product does not follow the bracket.
+where the subtracted term is the constant $\tfrac32\hbar^2$ times the identity operator and $L^2=\sum_i(L_{\mathrm{orb},i})^2$. The sum of the three operator squares is therefore not the Weyl image of the classical $L^2$; it is that image shifted by $-\tfrac32\hbar^2$. No bracket sees the shift, because a constant has zero Poisson bracket with everything: $\{L^2-\tfrac32\hbar^2,\cdot\}=\{L^2,\cdot\}$. The shift is invisible to the two exact checks above and to every other bracket, and it is visible only in the product of two images. That is the article's thesis in its smallest instance: on quadratic observables the bracket correspondence holds, and the product correspondence already fails. Groenewold's theorem excludes an exact bracket correspondence over all polynomials; this offset shows that even where the correspondence holds, the product does not follow the bracket.
 
 **What the deformation is and is not.** The star product is an associative product on the same vector space of functions, deforming the pointwise product. The passage
 $$
@@ -316,7 +316,7 @@ $$
 \qquad\text{so}\qquad
 \frac{1}{i\hbar}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
 $$
-which is term for term the operator image of the classical bracket $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
@@ -332,7 +332,7 @@ The Poisson bracket and the normalized commutator have the same Lie-algebraic sh
 $$
 \{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}[f,g]
 $$
-is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=i\hbar\delta_{ij}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ against $[L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}]=i\hbar\epsilon_{ijk}L_k^{\mathrm{orb}}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
+is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=i\hbar\delta_{ij}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ against $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\hbar\epsilon_{ijk}L_{\mathrm{orb},k}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
 
 It is **not an isomorphism**, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\operatorname{weyl}(q)\,\operatorname{weyl}(p)-\operatorname{weyl}(qp)=i\hbar/2$, and in general $\operatorname{weyl}(f)\,\operatorname{weyl}(g)=\operatorname{weyl}(fg)+(i\hbar/2)\operatorname{weyl}(\{f,g\})+O(\hbar^2)$. What replaces the isomorphism is a **deformation**: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
 $$
@@ -340,7 +340,7 @@ $$
 $$
 The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The product fails where the bracket does not: the two checks that came out exact are checks of brackets, and the bracket correspondence is exact for observables at most quadratic, yet the square of a single component already carries the offset
 $$
-\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big)\operatorname{weyl}\big(L_z^{\mathrm{orb}}\big) = \operatorname{weyl}\Big(\big(L_z^{\mathrm{orb}}\big)^2\Big) - \tfrac{\hbar^2}{2},
+\operatorname{weyl}\big(L_{\mathrm{orb},z}\big)\operatorname{weyl}\big(L_{\mathrm{orb},z}\big) = \operatorname{weyl}\Big(\big(L_{\mathrm{orb},z}\big)^2\Big) - \tfrac{\hbar^2}{2},
 $$
 so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
@@ -355,12 +355,12 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $\hbar$ | Reduced Planck constant (dimensionful; $\hbar\to0$ is formal) |
 | $q_i, p_j$ | Canonical coordinates and momenta |
 | $\delta_{ij}, \epsilon_{ijk}$ | Kronecker delta; Levi-Civita symbol |
-| $L_i^{\mathrm{orb}}=\epsilon_{ijk}q_jp_k$ | Orbital angular momentum components |
+| $L_{\mathrm{orb},i}=\epsilon_{ijk}q_jp_k$ | Orbital angular momentum components |
 | $q_i, p_j=-i\hbar\partial/\partial q_j$ | Position and momentum operators |
 | $\operatorname{weyl}(f)$ | Quantization map (Weyl ordering) |
 | $\operatorname{weyl}^{-1}$ | Its inverse, the Weyl symbol of an operator |
-| $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Classical angular-momentum Poisson algebra |
-| $L^2=\sum_i(L_i^{\mathrm{orb}})^2$ | Squared orbital angular momentum |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | Classical angular-momentum Poisson algebra |
+| $L^2=\sum_i(L_{\mathrm{orb},i})^2$ | Squared orbital angular momentum |
 | $\star$ | Star product (deformation of the pointwise product) |
 | $\Lambda[f,g]=\sum_i(\partial f/\partial q_i\,\partial g/\partial p_i-\partial f/\partial p_i\,\partial g/\partial q_i)$ | Bidifferential operator of the star product, applied slot by slot |
 | $\{\{f,g\}\}=(1/i\hbar)(f\star g-g\star f)$ | Moyal bracket |

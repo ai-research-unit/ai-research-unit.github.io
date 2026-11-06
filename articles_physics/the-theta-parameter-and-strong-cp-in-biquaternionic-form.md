@@ -10,20 +10,20 @@ The framework's contribution to this subject is unusually direct, and it rests o
 
 $$
 \tfrac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-=\tfrac12\,\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}
+=\tfrac12\,\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}
 =\frac{2i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$
 
-as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **parity-odd** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
+as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The quarter-density is one half of the full density $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}I_2$ used below, because the $\tfrac12$ in the definition of the dual is counted once there and twice in $\tfrac14\sum\epsilon FF$. Both displays are written out, so that neither is read as the other. The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **parity-odd** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
 
 $$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu} ,
+S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu} ,
 \qquad
-F^{\mathrm{dual}}_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
+F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
 with all indices summed in the $i c r'_t$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
@@ -35,14 +35,14 @@ Two things follow, and the article states them separately. The framework **suppl
 **The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-both acting from the left, and each half satisfies $\Box\tilde{Ξ}^{\mathrm{sp}}=m^2\tilde{Ξ}^{\mathrm{sp}}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here.
+both acting from the left, and each half satisfies $\Box\tilde{Ξ}_{\mathrm{sp}}=m^2\tilde{Ξ}_{\mathrm{sp}}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here.
 
-**The field and its two values.** The field is an element $\tilde{Ξ}^{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts carry the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*: $\tilde{Ξ}^{\mathrm{sp}}_L$ is the part of value $-1$ and $\tilde{Ξ}^{\mathrm{sp}}_R$ the part of value $+1$, and only the zero element carries both. The label belongs to the element and not to a state, so a product and a unit carry it as well. A central phase multiplies the two parts alike. The axial rotation of §*The Chiral Rotation and the Invariance of the Physical Parameter* does not, and that difference is what moves the physical parameter.
+**The field and its two values.** The field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts carry the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $-1$ and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $+1$, and only the zero element carries both. The label belongs to the element and not to a state, so a product and a unit carry it as well. A central phase multiplies the two parts alike. The axial rotation of §*The Chiral Rotation and the Invariance of the Physical Parameter* does not, and that difference is what moves the physical parameter.
 
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\vec E\cdot\vec B$.
 - Companion article *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*, for the theta vacuum and its periodicity.
@@ -53,14 +53,14 @@ both acting from the left, and each half satisfies $\Box\tilde{Ξ}^{\mathrm{sp}}
 The theta term of a non-abelian gauge theory is
 
 $$
-\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}
+\boxed{\;S_\theta=\frac{\theta}{32\pi^2}\int d^4r\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
 =\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\;},
 $$
 
-so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
+so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
-\sum_{\mu,\nu,a}F_{\mu\nu a}F^{\mathrm{dual}}_{\mu\nu a}
+\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
 =\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} ,
 \qquad
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\sum_a\epsilon_{\mu\nu\rho\sigma}\Bigl(A_{\nu a}F_{\rho\sigma a}
@@ -72,9 +72,9 @@ the standard non-abelian Chern–Simons current, whose abelian part is the primi
 **The abelian density is the framework's invariant.** In the Maxwell sector the density collapses to the second invariant,
 
 $$
-\boxed{\;\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
+\boxed{\;\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
-\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=4I_2\ \ (\text{Euclidean}),
+\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=4I_2\ \ (\text{Euclidean}),
 \qquad
 I_2=\vec E\cdot\vec B\;},
 $$
@@ -114,7 +114,7 @@ $$
 
 which was verified to machine precision on an explicit finite instanton sum in that article. The periodicity has two interpretations. Physically, $\theta$ and $\theta+2\pi$ label the same vacuum, so the angle is defined modulo $2\pi$ and the inequivalent vacua lie on a circle. Algebraically, the periodicity is the statement that the $T$ generator of the modular group, $T:\theta\to\theta+2\pi$, is a symmetry; it is the generator that *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form* identified as the one requiring the integral topological charge. The periodicity is therefore not a property of the algebra but of the sum over the algebra's instanton sectors: it comes from $Ϙ\in\mathbb Z$, which comes from $\pi_3(SU(2))=\mathbb Z$ and hence from the Hopf total space.
 
-The small-$\theta^{\mathrm{vac}}$ dependence of the vacuum energy is the same as in the semiclassical article,
+The small-$\theta_{\mathrm{vac}}$ dependence of the vacuum energy is the same as in the semiclassical article,
 
 $$
 \mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots ,
@@ -145,9 +145,9 @@ The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small
 The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The common axial rotation of the quark fields multiplies the two values of the subscript by opposite central phases,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_L\longmapsto \exp(-i\alpha)\tilde{Ξ}^{\mathrm{sp}}_L ,
+\tilde{Ξ}_{\mathrm{sp},L}\longmapsto \exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_R\longmapsto \exp(+i\alpha)\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde{Ξ}_{\mathrm{sp},R}\longmapsto \exp(+i\alpha)\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 Both multipliers have modulus one, so the rotation is periodic in $\alpha$: it is a rotation and not a boost. The two lines are one operation read on the two values; the field is one element, and the rotation multiplies each of its parts by its own phase.
@@ -179,12 +179,12 @@ This is why $\bar\theta$ is the renormalisation-invariant physical parameter, an
 
 ## Summary
 
-The theta term $S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
+The theta term $S_\theta=\frac{\theta}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is the integral of a total derivative, hence depends only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
 
 $$
-\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
+\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=4\,I_2 \quad(\text{Euclidean}),
+\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=4\,I_2 \quad(\text{Euclidean}),
 \qquad
 I_2=-\tfrac12\,\mathrm{Im}\,\langle\tilde F\rangle_{\natural}\ \ (\text{vacuum}).
 $$
@@ -193,7 +193,7 @@ Because it is the integral of a parity-odd density, the theta term violates $P$ 
 
 The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that couples the two values, and the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, since $\tilde\nabla^2$ is not scalar.
+The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that couples the two values, and the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, since $\tilde\nabla^2$ is not scalar.
 
 ## Summary of Notation
 
@@ -204,17 +204,17 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
 | $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd); the theta density; in vacuum $I_2=-\tfrac12\mathrm{Im}\langle\tilde F\rangle_{\natural}$ |
 | $\theta$ | Theta angle; coefficient of the topological term |
-| $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}$ | Theta term of the action |
-| $F^{\mathrm{dual}}_{\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
+| $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
+| $F_{\mathrm{dual},\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
-| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F^{\mathrm{dual}}_{\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ |
+| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
 | $\tilde\nabla$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate |
 | $\Box$ | The d'Alembertian of the same article, the quaternionic norm of the gradient; scalar |
-| $\tilde{Ξ}^{\mathrm{sp}}$, $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
 | $f_{abc}$ | Structure constants of the gauge factor, written low |
 

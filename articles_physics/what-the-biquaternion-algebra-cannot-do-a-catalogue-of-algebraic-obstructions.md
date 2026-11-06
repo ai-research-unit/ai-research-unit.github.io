@@ -202,7 +202,7 @@ and the dimension of the tensor square is the product of the two dimensions.
 
 ### O14. The norm-preserving unit is forced into the centre
 
-**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ preserves the Hermitian norm for every Hermitian $\tilde R_\psi$ only if $\tilde{Ζ}=\pm i e_t$.
+**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}_{\mathrm{sp}}$ preserves the Hermitian norm for every Hermitian $\tilde R_\psi$ only if $\tilde{Ζ}=\pm i e_t$.
 
 **Proof.** The generator is $-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$, so its Hermitian conjugate is $-\hbar^{-1}\tilde R_\psi\tilde{Ζ}^\dagger$; anti-Hermiticity of the generator for all Hermitian $\tilde R_\psi$ therefore reads $-\tilde R_\psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\psi$ for all Hermitian $\tilde R_\psi$, which at $\tilde R_\psi=e_t$ forces $\tilde{Ζ}^\dagger=-\tilde{Ζ}$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde R_\psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\psi$ for all Hermitian $\tilde R_\psi$, hence $\tilde{Ζ}$ central. The central roots of $-e_t$ are $\pm i e_t$. The non-central root $\vec{Ζ}=\vec e_z$ with $\tilde R_\psi=i\vec e_x$ gives the generator $-\hbar^{-1}i\vec e_y$, which is Hermitian and generates a non-$*$-unitary flow.
 
@@ -265,7 +265,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ therefore introduces both $\partial/\partial r'_t$ and $\tilde R_\psi$ as external data.
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}_{\mathrm{sp}}$ therefore introduces both $\partial/\partial r'_t$ and $\tilde R_\psi$ as external data.
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 
@@ -386,21 +386,21 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 
-Here $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
+Here $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. A single product is one cell up to a phase, a general element is a sum of at most four, and the length is $\ell(M)=\operatorname{rank}c(M)$. The identity is the cell $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers. A single product is one cell up to a phase, a general element is a sum of at most four, and the length is $\ell(M)=\operatorname{rank}c(M)$. The identity is the cell $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 
 ## Summary

@@ -180,13 +180,13 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 
 **Example (the closed disc and its subdomains).** The closed unit disc $D^1 = \operatorname{Sp} K\langle X\rangle$ has as affinoid subdomains the discs $\lvert x \rvert \leq r$ for $r \in \lvert K^\times \rvert$ with $r \leq 1$, with algebra $K\langle X/r\rangle$. The intersection of two such discs is the smaller one, and the union of two proper discs is admissible but not affinoid. The maximum modulus principle identifies the norm on each algebra with the supremum on the corresponding disc.
 
-**Example (the rigid affine line).** The **rigid affine line** is $\mathbb{A}^{1,\mathrm{rig}} = \bigcup_{n \geq 1} \operatorname{Sp} K\langle X/n\rangle$, the increasing union of the closed discs of radius growing without bound. The covering by the discs is admissible, and $\mathbb{A}^{1,\mathrm{rig}}$ is a rigid space which is not affinoid. Similarly $\mathbb{A}^{n,\mathrm{rig}}$ is the union of the polydiscs of all radii.
+**Example (the rigid affine line).** The **rigid affine line** is $\mathbb{A}_{\mathrm{rig}}^1 = \bigcup_{n \geq 1} \operatorname{Sp} K\langle X/n\rangle$, the increasing union of the closed discs of radius growing without bound. The covering by the discs is admissible, and $\mathbb{A}_{\mathrm{rig}}^1$ is a rigid space which is not affinoid. Similarly $\mathbb{A}_{\mathrm{rig}}^n$ is the union of the polydiscs of all radii.
 
 **Example (the open disc).** The **open unit disc** $D^1_< = \{x : \lvert x \rvert < 1\} = \bigcup_{r < 1} \operatorname{Sp} K\langle X/r\rangle$, the union over $r \in \lvert K^\times \rvert$ with $r < 1$, is an admissible open subset of the closed disc and is not quasi-compact. It is a rigid space, and it is not affinoid. The contrast with the Archimedean disc is one of the standard illustrations of the theory.
 
 **Example (annuli).** For $t \in K^\times$ with $\lvert t \rvert < 1$ the algebra $K\langle X, Y\rangle/(XY - t)$ is affinoid, and its spectrum is the **annulus** $\lvert t \rvert \leq \lvert x \rvert \leq 1$. Annuli are the building blocks of the theory of curves over $K$, and they also exhibit the failure of the "disc is simply connected" picture: an annulus is not the union of its two boundary discs, and its structure sheaf has the expected restrictions.
 
-**Example (the rigid projective line).** $\mathbb{P}^{1,\mathrm{rig}}$ is obtained by gluing $\operatorname{Sp} K\langle X\rangle$ and $\operatorname{Sp} K\langle Y\rangle$ along the Laurent domain $\operatorname{Sp} K\langle X, Y\rangle/(XY - 1)$, which is the annulus $\lvert x \rvert = 1$. The result is a proper rigid space, and it contains the affine line together with the point at infinity.
+**Example (the rigid projective line).** $\mathbb{P}_{\mathrm{rig}}^1$ is obtained by gluing $\operatorname{Sp} K\langle X\rangle$ and $\operatorname{Sp} K\langle Y\rangle$ along the Laurent domain $\operatorname{Sp} K\langle X, Y\rangle/(XY - 1)$, which is the annulus $\lvert x \rvert = 1$. The result is a proper rigid space, and it contains the affine line together with the point at infinity.
 
 ### Coherent Sheaves and Kiehl's Theorem
 
@@ -206,13 +206,13 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 
 ### The GAGA Principle
 
-**Theorem (GAGA; Kiehl, Köpf).** Let $X$ be a projective algebraic variety over $K$ and let $X^{\mathrm{an}}$ be its **analytification**, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories
+**Theorem (GAGA; Kiehl, Köpf).** Let $X$ be a projective algebraic variety over $K$ and let $X_{\mathrm{an}}$ be its **analytification**, obtained by gluing the affinoid spaces associated to an affine cover of $X$. Then analytification induces an equivalence of categories
 
 $$
-\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X^{\mathrm{an}})\;},
+\boxed{\;\operatorname{Coh}(X) \xrightarrow{\ \sim\ } \operatorname{Coh}(X_{\mathrm{an}})\;},
 $$
 
-and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X^{\mathrm{an}}, Y^{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X^{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.
+and for projective $X$ the analytification functor is fully faithful, $\operatorname{Hom}(X, Y) \cong \operatorname{Hom}(X_{\mathrm{an}}, Y_{\mathrm{an}})$ for projective $X$ and $Y$. In particular the coherent sheaves on $X_{\mathrm{an}}$, its closed analytic subsets and its finite étale covers are all algebraic.
 
 **Proof.** The theorem is Kiehl's GAGA for rigid analytic spaces, proved first in the projective case and extended by Köpf to proper rigid spaces and proper families. It is proved by reduction to the affine statements: on an affine variety the analytification of a coherent sheaf is the completion of the algebraic module, and the comparison is an equivalence by the flatness of the completion; the global statement follows by the theory of coherent sheaves on the projective space and a descending induction on the dimension, exactly parallel to the algebraic GAGA of Serre. It is quoted here as a standard theorem of rigid analytic geometry.
 
@@ -255,8 +255,8 @@ The constructions above are geometric: they use the valuation only through the n
 | $X(f_1, \dots, f_r/g)$ | Rational domain $\{\lvert f_i \rvert \leq \lvert g \rvert\}$ |
 | $O_X$ | The structure sheaf for the rigid (G-)topology |
 | $H^q(\Omega, O_X)$ | Higher cohomology of the structure sheaf, vanishing on affinoids |
-| $\mathbb{A}^{n,\mathrm{rig}}$, $\mathbb{P}^{1,\mathrm{rig}}$ | The rigid affine and projective spaces |
-| $X^{\mathrm{an}}$ | Analytification of an algebraic variety |
+| $\mathbb{A}_{\mathrm{rig}}^n$, $\mathbb{P}_{\mathrm{rig}}^1$ | The rigid affine and projective spaces |
+| $X_{\mathrm{an}}$ | Analytification of an algebraic variety |
 | $\operatorname{Coh}(X)$ | The category of coherent sheaves on $X$ |
 | $\mathrm{X}$, $\mathrm{X}_K$ | A formal $R$-model and its generic fibre (Raynaud) |
 

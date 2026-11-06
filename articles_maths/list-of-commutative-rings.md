@@ -11,7 +11,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 
 ## The Convention on Dimension
 
-Dimension means the Krull dimension for the rings of this list, and the vector-space dimension over the ground field for the finite-dimensional real algebras $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$; where both readings are available they are written together. Thus a field has dimension $0$, a principal ideal domain that is not a field has dimension $1$, the ring $\mathbb{Z}/n\mathbb{Z}$ has dimension $0$, the polynomial ring in $n$ variables has dimension $n$, and the split-complex and dual numbers have vector-space dimension $2$ over $\mathbb{R}$ and Krull dimension $0$. The Krull dimension is introduced in *Integral Extensions and Krull Dimension* and the polynomial case in *Polynomial Rings and Rational Functions*.
+Dimension means the Krull dimension for the rings of this list, and the vector-space dimension over the ground field for the finite-dimensional real algebras $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$; where both readings are available they are written together. Thus a field has dimension $0$, a principal ideal domain that is not a field has dimension $1$, the ring $\mathbb{Z}/n\mathbb{Z}$ has dimension $0$, the polynomial ring in $n$ variables has dimension $n$, and the split-complex and dual numbers have vector-space dimension $2$ over $\mathbb{R}$ and Krull dimension $0$. The Krull dimension is introduced in *Integral Extensions and Krull Dimension* and the polynomial case in *Polynomial Rings and Rational Functions*.
 
 ## The Number Systems and Their Quotients
 
@@ -65,10 +65,10 @@ The ring $\mathbb{Z}[x]$, with dimension $2$ and units $\pm 1$, is the standard 
 
 | Ring | Dimension | Units | Zero divisors | Introduced in |
 |---|---|---|---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | $2$ over $\mathbb{R}$; Krull $0$ | $\langle u\rangle_{*} \neq 0$ | the null cone $\{\langle u\rangle_{*} = 0\}$ | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dln}}$ | $2$ over $\mathbb{R}$; Krull $0$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | *Dual-Numbers Algebra* |
+| $\mathbb{C}_{\mathrm{spl}}$ | $2$ over $\mathbb{R}$; Krull $0$ | $\langle u\rangle_{*} \neq 0$ | the null cone $\{\langle u\rangle_{*} = 0\}$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{dln}}$ | $2$ over $\mathbb{R}$; Krull $0$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | *Dual-Numbers Algebra* |
 
-The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{C}^{\mathrm{spl}}$ consists of the elements with $\langle u\rangle_{*} = 0$, while the zero divisors of $\mathbb{C}^{\mathrm{dln}}$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.
+The two algebras are not isomorphic. The split-complex numbers are a product of two copies of $\mathbb{R}$ and are reduced; the dual numbers are local and not reduced. Their zero divisors are correspondingly different: the null cone of $\mathbb{C}_{\mathrm{spl}}$ consists of the elements with $\langle u\rangle_{*} = 0$, while the zero divisors of $\mathbb{C}_{\mathrm{dln}}$ are exactly the elements of the maximal ideal, and $\varepsilon$ is nilpotent rather than idempotent.
 
 ## Product Rings
 
@@ -88,7 +88,7 @@ A product of two nonzero rings is never an integral domain, never local and neve
 |---|---|---|
 | $\mathbb{H}$ | a division ring, but not commutative | *Quaternion Algebra* |
 | $\mathbb{B}$ | the biquaternions, not commutative and with zero divisors | *The Biquaternion Algebra* |
-| $\mathbb{B}^{\mathrm{spl}}$ | the split-biquaternions, not commutative and with zero divisors | *Split-Biquaternion Algebra* |
+| $\mathbb{B}_{\mathrm{spl}}$ | the split-biquaternions, not commutative and with zero divisors | *Split-Biquaternion Algebra* |
 | $M_n(R)$, $n \geq 2$ | the matrix ring, not commutative | *Matrix Algebras* |
 | $M_n(D)$ over a division ring $D$ | not commutative in general | *Matrix Algebras* |
 | $R\langle x_1, \dots, x_n\rangle$ | the free algebra, not commutative for $n \geq 2$ | *Tensor Powers and the Free Algebra* |
@@ -96,7 +96,7 @@ A product of two nonzero rings is never an integral domain, never local and neve
 
 ## Summary
 
-This article has listed the commutative rings of the corpus with their dimension, their units and their zero divisors. The number systems and the residue rings begin the list; the quadratic and cyclotomic integer rings follow, all of them domains and distinguished by their units; the polynomial, power series and localisation rings carry the dimension $\dim R + n$ and the units of the base; the split-complex and dual numbers are the two two-dimensional real algebras, reduced and non-reduced respectively; and the product rings close it with their idempotent zero divisors. Beside the examples stand the non-examples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebra $\mathbb{C}^{\mathrm{dln}}$.
+This article has listed the commutative rings of the corpus with their dimension, their units and their zero divisors. The number systems and the residue rings begin the list; the quadratic and cyclotomic integer rings follow, all of them domains and distinguished by their units; the polynomial, power series and localisation rings carry the dimension $\dim R + n$ and the units of the base; the split-complex and dual numbers are the two two-dimensional real algebras, reduced and non-reduced respectively; and the product rings close it with their idempotent zero divisors. Beside the examples stand the non-examples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebra $\mathbb{C}_{\mathrm{dln}}$.
 
 ## Summary of Notation
 
@@ -106,7 +106,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | The number systems |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$ | Residue ring, prime field, finite field |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers and dual numbers |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Split-complex numbers and dual numbers |
 | $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$ | Quadratic integer rings |
 | $\mathbb{Z}[\omega_n]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | Cyclotomic integers, ring of integers, all algebraic integers |
 | $R[x]$, $R[x_1,\dots,x_n]$, $R[[x]]$, $k[[x]]$ | Polynomial and power series rings |
@@ -114,7 +114,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$ | Localisation at $p$, $p$-adic integers |
 | $R \times S$ | Product ring |
 | $\varphi(n)$ | Euler totient, the order of $(\mathbb{Z}/n\mathbb{Z})^{\times}$ |
-| $\mathbb{H}$, $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{O}$ | Quaternions, biquaternions, split-biquaternions, octonions; not commutative |
+| $\mathbb{H}$, $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{O}$ | Quaternions, biquaternions, split-biquaternions, octonions; not commutative |
 | $M_n(R)$, $R\langle x_1,\dots,x_n\rangle$, $A_1(k)$ | Matrix ring, free algebra, Weyl algebra; not commutative |
 
 ## Further Reading

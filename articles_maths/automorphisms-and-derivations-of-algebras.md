@@ -17,7 +17,7 @@ $$
 \sigma(xy) = \sigma(x)\sigma(y)
 $$
 
-for all $x, y \in A$. The set of all such maps is a group under composition, written $\operatorname{Aut}_R(A)$, with identity the identity map. If $A$ is unital and the automorphisms are required to be unital, $\sigma(1_A) = 1_A$, the resulting subgroup is written $\operatorname{Aut}_R^{\mathrm{un}}(A)$; over a unital algebra multiplicativity already forces $\sigma(1_A) = 1_A$, so the two groups coincide there. Indeed $e = \sigma(1_A)$ satisfies $e^2 = \sigma(1_A \cdot 1_A) = e$, and since $\sigma$ is surjective there is $a$ with $\sigma(a) = 1_A$, whence $\sigma(a) = \sigma(a \cdot 1_A) = \sigma(a)e = e$, so $a = 1_A$ by injectivity and $e = 1_A$.
+for all $x, y \in A$. The set of all such maps is a group under composition, written $\operatorname{Aut}_R(A)$, with identity the identity map. If $A$ is unital and the automorphisms are required to be unital, $\sigma(1_A) = 1_A$, the resulting subgroup is written $\operatorname{Aut}_{\mathrm{un},R}(A)$; over a unital algebra multiplicativity already forces $\sigma(1_A) = 1_A$, so the two groups coincide there. Indeed $e = \sigma(1_A)$ satisfies $e^2 = \sigma(1_A \cdot 1_A) = e$, and since $\sigma$ is surjective there is $a$ with $\sigma(a) = 1_A$, whence $\sigma(a) = \sigma(a \cdot 1_A) = \sigma(a)e = e$, so $a = 1_A$ by injectivity and $e = 1_A$.
 
 **Proposition.** Every algebra automorphism maps the centre onto itself, and it preserves idempotents, units, zero divisors and the lattice of two-sided ideals.
 
@@ -81,18 +81,18 @@ $$
 
 Over $\mathbb{C}$ there are no nontrivial automorphisms fixing $\mathbb{C}$, so the $\mathbb{C}$-algebra automorphism group is trivial. As a *field*, however, $\mathbb{C}$ has many more automorphisms than the identity and conjugation: every automorphism of the field $\mathbb{C}$ restricting to a permutation of a transcendence basis over $\mathbb{Q}$ is nontrivial, and there are uncountably many. The contrast shows that the group depends on the ground ring and on the structure one is preserving.
 
-**The split complex numbers.** Over $\mathbb{R}$, an automorphism of $\mathbb{C}^{\mathrm{spl}}$ sends $j$ to an element $c$ with $c^2 = 1$. Writing $c = a + bj$ and solving $a^2 + b^2 = 1$, $ab = 0$ gives $c = \pm 1$ or $c = \pm j$; the values $\pm 1$ fail injectivity on $j \mp 1$, so $c = \pm j$ and
+**The split complex numbers.** Over $\mathbb{R}$, an automorphism of $\mathbb{C}_{\mathrm{spl}}$ sends $j$ to an element $c$ with $c^2 = 1$. Writing $c = a + bj$ and solving $a^2 + b^2 = 1$, $ab = 0$ gives $c = \pm 1$ or $c = \pm j$; the values $\pm 1$ fail injectivity on $j \mp 1$, so $c = \pm j$ and
 
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}) = \{\mathrm{id}, \tau\} \cong \mathbb{Z}/2, \qquad \tau(j) = -j,
+\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}) = \{\mathrm{id}, \tau\} \cong \mathbb{Z}/2, \qquad \tau(j) = -j,
 $$
 
 which is the swap $\Pi_1 \leftrightarrow \Pi_2$ of the two idempotents.
 
-**The dual numbers.** An automorphism of $\mathbb{C}^{\mathrm{dln}}$ fixes $1$ and sends $\varepsilon$ to $c + d\varepsilon$; from $0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = c^2 + 2cd\varepsilon$ one gets $c = 0$, and $d \neq 0$ by injectivity. Every $d \in \mathbb{R}^\times$ occurs, so
+**The dual numbers.** An automorphism of $\mathbb{C}_{\mathrm{dln}}$ fixes $1$ and sends $\varepsilon$ to $c + d\varepsilon$; from $0 = \varphi(\varepsilon^2) = \varphi(\varepsilon)^2 = c^2 + 2cd\varepsilon$ one gets $c = 0$, and $d \neq 0$ by injectivity. Every $d \in \mathbb{R}^\times$ occurs, so
 
 $$
-\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}^{\mathrm{dln}}) \cong \mathbb{R}^\times, \qquad \varepsilon \mapsto d\varepsilon.
+\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{dln}}) \cong \mathbb{R}^\times, \qquad \varepsilon \mapsto d\varepsilon.
 $$
 
 This automorphism fixes $1$ and rescales the infinitesimal direction; it changes a structure that happens to be present on the underlying module, which is the first indication that an automorphism carries no information beyond the product.
@@ -160,7 +160,7 @@ a free $R[x]$-module of rank one, with $\partial/\partial x = d/dx$ the usual fo
 **Example.** For the dual numbers, $\delta(1) = 0$ and Leibniz applied to $\varepsilon^2 = 0$ gives $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon)$, so $\delta(\varepsilon)$ lies in the annihilator of $\varepsilon$, which is $\mathbb{R}\varepsilon$. Thus $\delta(\varepsilon) = c\varepsilon$ and $\delta(x + y\varepsilon) = cy\varepsilon$; consequently
 
 $$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\delta, \qquad \delta(\varepsilon) = \varepsilon,
+\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\delta, \qquad \delta(\varepsilon) = \varepsilon,
 $$
 
 a one-dimensional space whose exponential is the automorphism $\varepsilon \mapsto \exp(c)\varepsilon$.
@@ -195,7 +195,7 @@ Associativity of $A$ is needed in the displayed expansion, at the point where th
 
 **Example.** $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$: a derivation of a field extension vanishes on the ground field and, for $\mathbb{C}$, is forced to vanish on $i$ by $0 = \delta(i^2) = 2i\,\delta(i)$. More generally $\operatorname{Der}_K(K) = 0$ for any field $K$ and ground field $K$ itself.
 
-**Example (the split complex numbers revisited).** $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is a unit, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}^{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}^{\mathrm{dln}}$ has both.
+**Example (the split complex numbers revisited).** $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is a unit, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}_{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}_{\mathrm{dln}}$ has both.
 
 ### Inner Derivations
 
@@ -301,7 +301,7 @@ This is the identity $\mathrm{Ad}_{\exp(a)} = \exp(\mathrm{ad}_a)$ of the adjoin
 
 The data of an $R$-algebra $A$ are the module structure and the product. An automorphism is required to preserve exactly these, so any further structure that happens to be present on the underlying module — a length, an angle, a volume — is not automatically preserved.
 
-**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{C}^{\mathrm{dln}}$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it is not the identity map of the underlying module, and an extra structure on that module is not automatically preserved by it.
+**Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{C}_{\mathrm{dln}}$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it is not the identity map of the underlying module, and an extra structure on that module is not automatically preserved by it.
 
 **Example.** On $\mathbb{B} \cong M_2(\mathbb{C})$ the invariant $\sum_\mu Q_\mu^2$ of the coefficients — the determinant of the corresponding matrix, an algebraic function of the coordinates — is carried along by **every** inner automorphism, conjugation by a matrix leaving the determinant unchanged; the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients moves it and is not inner. Whether one of these quantities survives is a property of the quantity and not of the automorphism.
 
@@ -309,7 +309,7 @@ The group of transformations preserving a length or an angle is therefore a diff
 
 ## Summary
 
-The **automorphisms** of an $R$-algebra $A$ form the group $\operatorname{Aut}_R(A)$; they preserve the centre, idempotents, units, zero divisors and the lattice of two-sided ideals. Inner automorphisms $\iota_u(x) = uxu^{-1}$ by units form the normal subgroup $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$, the outer automorphism group is $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$, and for a commutative algebra all automorphisms are outer. The worked cases are $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}^{\mathrm{dln}}) \cong \mathbb{R}^\times$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$, and $\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$ for a field $k$; over $\mathbb{C}$ the biquaternion group is $PGL(2,\mathbb{C})$, over $\mathbb{R}$ it is $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$.
+The **automorphisms** of an $R$-algebra $A$ form the group $\operatorname{Aut}_R(A)$; they preserve the centre, idempotents, units, zero divisors and the lattice of two-sided ideals. Inner automorphisms $\iota_u(x) = uxu^{-1}$ by units form the normal subgroup $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$, the outer automorphism group is $\operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A)$, and for a commutative algebra all automorphisms are outer. The worked cases are $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}) \cong \mathbb{Z}/2$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}_{\mathrm{dln}}) \cong \mathbb{R}^\times$, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$, and $\operatorname{Aut}_k(M_n(k)) \cong PGL_n(k)$ for a field $k$; over $\mathbb{C}$ the biquaternion group is $PGL(2,\mathbb{C})$, over $\mathbb{R}$ it is $PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$.
 
 The **derivations** $\operatorname{Der}_R(A)$ are the $R$-linear maps satisfying the Leibniz rule; they form a Lie algebra under the commutator, and a module over the centre. The inner derivations $\mathrm{ad}_a = [a,\cdot]$ form the Lie algebra $A/Z(A)$, and for a central simple algebra every derivation is inner, so $\operatorname{Der}_k(M_n(k)) \cong \mathrm{SL}_n(k)$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$, the bracket being twice the commutator product of the pure imaginary parts. The exponential $\exp(\delta)$ of a nilpotent derivation is an automorphism over any $\mathbb{Q}$-algebra, inner derivations exponentiate to inner automorphisms, and over a general ring the exponential may not exist.
 
@@ -336,7 +336,7 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $PGL_n(k) = GL_n(k)/k^\times$ | Automorphism group of $M_n(k)$ |
 | $\exp(\delta)$ | Exponential of a derivation |
 | $\mathbb{H}/\mathbb{R}$, $\mathrm{SL}_n(k)$ | Commutator Lie algebra of the imaginary quaternions and traceless matrices |
-| $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Complex, split complex and dual numbers |
+| $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Complex, split complex and dual numbers |
 | $\mathbb{H}$, $\mathbb{B}$ | Quaternions and biquaternions |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace of $\mathbb{B}$ |
 

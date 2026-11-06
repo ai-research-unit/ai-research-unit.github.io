@@ -9,10 +9,10 @@ Natural units $\hbar=c=1$ are used throughout, so the four-momentum is $\tilde P
 The dynamics is the one-sided chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,\qquad \tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two values of the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
+The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field is the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and the mass is the off-diagonal pairing of the two values of the subscript, $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*).
 
 The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$,
 
@@ -26,17 +26,17 @@ $$
 \mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z .
 $$
 
-That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ with $\mathcal{N}F=0$ reads the second field as $\tilde{Ξ}^{\mathrm{sp}}_R=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The change of variable is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
+That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ with $\mathcal{N}F=0$ reads the second field as $\tilde{Ξ}_{\mathrm{sp},R}=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The change of variable is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
 
-Everything below is written for the one-sided pair, whose plane-wave solutions are elements of $\mathbb{B}$: the element $\tilde{Ξ}^{\mathrm{sp}}$, split by the subscript into its two parts $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$, and no second carrier is introduced to hold them.
+Everything below is written for the one-sided pair, whose plane-wave solutions are elements of $\mathbb{B}$: the element $\tilde{Ξ}_{\mathrm{sp}}$, split by the subscript into its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and no second carrier is introduced to hold them.
 
 This article is about the next object in that quantization: the **two-point function** of the quantized field, the Feynman propagator. It is an action on $\mathbb{B}$, read on a test element $\tilde Q$,
 
 $$
-\boxed{\;S_F(x-y):\ \tilde Q\ \longmapsto\ \big\langle 0\big|\,T\,\tilde{Ξ}^{\mathrm{sp}}(x)\,\big(\tilde{Ξ}^{\mathrm{sp}*}(y)\,i\,\tilde Q\,\vec e_x\big)\,\big|0\big\rangle\;},
+\boxed{\;S_F(x-y):\ \tilde Q\ \longmapsto\ \big\langle 0\big|\,T\,\tilde{Ξ}_{\mathrm{sp}}(x)\,\big(\tilde{Ξ}_{\mathrm{sp}}^*(y)\,i\,\tilde Q\,\vec e_x\big)\,\big|0\big\rangle\;},
 $$
 
-with $T$ the fermionic time-ordering operator. The adjoint of the field enters as the Hermitian conjugate $\tilde{Ξ}^{\mathrm{sp}*}$, and the fixed pair $i\,\vec e_x$ that closes it on the test element is the timelike frame cell. The test element stands where the older display puts the object it multiplies; here it is an element of the algebra, and the propagator carries an element to an element.
+with $T$ the fermionic time-ordering operator. The adjoint of the field enters as the Hermitian conjugate $\tilde{Ξ}_{\mathrm{sp}}^*$, and the fixed pair $i\,\vec e_x$ that closes it on the test element is the timelike frame cell. The test element stands where the older display puts the object it multiplies; here it is an element of the algebra, and the propagator carries an element to an element.
 
 The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the *Feynman* amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.
 
@@ -53,12 +53,12 @@ The deformation's *axis* is algebraically natural; its *orientation*, which is w
 The companion article quantizes the field on its module; here the same modes are read as elements of $\mathbb{B}$, and the operator-valued field is
 
 $$
-\tilde{Ξ}^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,\tilde W^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b_r^{\mathrm{fop}\dagger}(\vec p)\,\tilde V^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W^{(r)}(\vec p)\,\exp(-ip\cdot x)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with $\tilde W^{(r)}$ and $\tilde V^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}^{\mathrm{fop}*}(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+m$ derived below, and no cell survives in the amplitude.
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with $\tilde W^{(r)}$ and $\tilde V^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+m$ derived below, and no cell survives in the amplitude.
 
 **The momentum action.** The four frame cells of *Frame and Metric Conventions*, written out as actions instead of as cells, are
 
@@ -106,8 +106,8 @@ The body of this article is written in these actions; the closing section gives 
 The mode operators obey
 
 $$
-\{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec k)\}
-=\{b_r^{\mathrm{fop}}(\vec p),b_s^{\mathrm{fop}\dagger}(\vec k)\}
+\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec k)\}
+=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k)\}
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
 $$
 
@@ -119,25 +119,25 @@ $$
 W_+(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)+m\tilde Q\big)\,\exp(-ip\cdot(x-y)),
 $$
 
-in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
+in which only the $a_{\mathrm{fop}} a_{\mathrm{fop}}^{\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
 W_-(x-y):\ \tilde Q\ \longmapsto\ \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\mathcal{A}_{p}(\tilde Q)-m\tilde Q\big)\,\exp(+ip\cdot(x-y)),
 $$
 
-in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
+in which only $b_{\mathrm{fop}} b_{\mathrm{fop}}^{\dagger}$ survives. In both expressions the momentum action is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
 
 Time ordering for a fermion field carries the anticommutation sign:
 
 $$
-S_F(x-y)=\mathrm{H}^{\mathrm{hvs}}(x_0-y_0)\,W_+(x-y)-\mathrm{H}^{\mathrm{hvs}}(y_0-x_0)\,W_-(x-y),
+S_F(x-y)=\mathrm{H}_{\mathrm{hvs}}(x_0-y_0)\,W_+(x-y)-\mathrm{H}_{\mathrm{hvs}}(y_0-x_0)\,W_-(x-y),
 $$
 
 an equality of actions, read on a generic element. The relative minus is not a convention; it is the statement that the two field operators anticommute. Every sign in what follows traces back to it, and it is the quantity a recomputation must reproduce.
 
 ## The Pole Structure and the Contour
 
-The two $\mathrm{H}^{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
+The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single four-dimensional integral. The standard result, and the object whose biquaternion form is the subject of this article, is
 
 $$
 \boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi)^4}\;
@@ -217,8 +217,8 @@ which is the negative-frequency numerator of $W_-$ with a minus. The single cova
 Three things are conflated in the phrase "the $i\epsilon$ does the time ordering", and they are worth separating.
 
 1. The $i\epsilon$ fixes which pole lies in which half-plane; that is the boundary condition, and its sign is the choice of propagator.
-2. The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}^{\mathrm{hvs}}$ terms.
-3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+m$ and $\mathcal{A}_p-m$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}^{\mathrm{hvs}}W_++\mathrm{H}^{\mathrm{hvs}}W_-$.
+2. The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}_{\mathrm{hvs}}$ terms.
+3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+m$ and $\mathcal{A}_p-m$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}_{\mathrm{hvs}}W_++\mathrm{H}_{\mathrm{hvs}}W_-$.
 
 **A recomputation on a case chosen for it.** Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=p^2\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-m)(\mathcal{A}_p+m)=(p^2-m^2)\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
 
@@ -360,16 +360,16 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
@@ -390,9 +390,9 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1},
 $$
 
-which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* the cell $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, so this is the same statement. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.
+which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* the cell $iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$, so this is the same statement. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 
 ## Summary
@@ -400,7 +400,7 @@ which is the anticommutator of the body, in its named form: $\gamma_\mu$ *is* th
 The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point action
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto\big\langle 0\big|\,T\,\tilde{Ξ}^{\mathrm{sp}}(x)\,\big(\tilde{Ξ}^{\mathrm{sp}*}(y)\,i\,\tilde Q\,\vec e_x\big)\,\big|0\big\rangle .
+S_F(x-y):\ \tilde Q\longmapsto\big\langle 0\big|\,T\,\tilde{Ξ}_{\mathrm{sp}}(x)\,\big(\tilde{Ξ}_{\mathrm{sp}}^*(y)\,i\,\tilde Q\,\vec e_x\big)\,\big|0\big\rangle .
 $$
 
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
@@ -439,12 +439,12 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathbb{D}$ | The pair operator of *Operator and Calculus Conventions*, whose square is $\Box$ |
 | $\mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z$ | Two-sided Dirac operator of *The Dirac Equation in Biquaternionic Form* |
 | $D_3$ | Its spatial part, defined in that article |
-| $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two values of the subscript |
-| $\tilde{Ξ}^{\mathrm{sp}*}$, $\tilde{Ξ}^{\mathrm{sp}*}i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike cell |
+| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two values of the subscript |
+| $\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike cell |
 | $\tilde W^{(r)}(\vec p)$, $\tilde V^{(r)}(\vec p)$ | The plane-wave elements of the two frequency branches |
 | $\mathcal{A}_p+m$, $\mathcal{A}_p-m$ | The two numerators, on shell: the map form of the two sums over the solutions |
 | $p=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $p^2=E^2-\vec p^2$ | Four-momentum, the two pole momenta, and the Lorentz square |
-| $\tilde{Ξ}^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
+| $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point actions |
 | $S_F(x-y)$ | Feynman propagator, an action on $\mathbb{B}$ |
 | $\tilde P=iE\,e_t+\vec p$ | Four-momentum biquaternion, $\tilde P\tilde P^{\natural}=-p^2$ |

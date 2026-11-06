@@ -32,7 +32,7 @@ Continuity is a hypothesis, and on a linear space it is free more often than on 
 
 ### Examples
 
-**Example (the identity, verdict: a linear, continuous involution; the trivial case).** The identity of $V$ is a topological involution, linear, with $V^{\mathrm{id}} = V$ and $V^- = 0$. It is the involution of every topological linear space that carries only the structure of its scalars.
+**Example (the identity, verdict: a linear, continuous involution; the trivial case).** The identity of $V$ is a topological involution, linear, with $V_{\mathrm{id}} = V$ and $V^- = 0$. It is the involution of every topological linear space that carries only the structure of its scalars.
 
 **Example (finite dimension over $\mathbb{R}$ and $\mathbb{C}$, verdict: every linear and every antilinear involution is continuous).** Let $V$ be finite-dimensional and Hausdorff over a complete valued field. Then every linear map $V \to V$ is continuous, by the proposition of *Topological Modules and Vector Spaces* on finite-dimensional spaces, so every linear involution of $V$ is a topological involution. Over $\mathbb{C}$ the conjugation fixes $\mathbb{R}$ pointwise, so an antilinear map is $\mathbb{R}$-linear; the underlying real space is finite-dimensional over the complete valued field $\mathbb{R}$, so every antilinear involution is continuous too. In finite dimension over these fields the topological category therefore adds nothing to the abstract classification of *Involutive Linear Spaces*, and the linear and the antilinear kinds are both present and both continuous. The interesting topological phenomena need infinite dimension.
 

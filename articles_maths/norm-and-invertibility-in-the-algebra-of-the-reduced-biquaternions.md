@@ -63,7 +63,7 @@ $$
 
 The unit of the multiplication is $1$, two-sided and unique, and the product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the multiplication, a genuine group (*Introduction to the Algebra of the Reduced Biquaternions*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*).
 
-The multiplication has zero divisors: $\Pi_+\Pi_-=0$ with $\Pi_+,\Pi_-$ nonzero. The algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{B}^{\mathrm{red}}\setminus\{0\}$. The zero divisors, their two lines and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, and they are cited here, not read.
+The multiplication has zero divisors: $\Pi_+\Pi_-=0$ with $\Pi_+,\Pi_-$ nonzero. The algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$. The zero divisors, their two lines and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, and they are cited here, not read.
 
 ## The Reduced Norm and the Invertibility Criterion
 
@@ -95,7 +95,7 @@ and it is the determinant of the multiplication in the idempotent coordinates.
 
 **Theorem (the group of units).** The group of units is
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}=\bigl\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\bigr\}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\},
+{\mathbb{B}_{\mathrm{red}}}^{\times}=\bigl\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\bigr\}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\},
 $$
 and it is isomorphic to $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ by the component map $\varphi$.
 
@@ -135,7 +135,7 @@ $$
 $$
 which is multiplicative, $\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\langle \breve Q_{2}\rangle_{\mathrm{ts}}$, which is the determinant of the multiplication and the algebraic norm of the general tessarine bilinear product, and which vanishes exactly on the zero divisors; the group of units is the complement of the two punctured idempotent lines,
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+{\mathbb{B}_{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
 with inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$. The two forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ are different bilinear forms on the same space; the algebra's own algebraic norm is $\langle\cdot\rangle$, and the criterion is $\langle\cdot\rangle_{\mathrm{ts}}$.
 
@@ -147,7 +147,7 @@ with inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\black
 | $\langle \breve Q_{1},\breve Q_{2}\rangle=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the general plain bilinear form |
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm, the invertibility criterion, multiplicative |
 | $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse of a unit |
-| ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the group of units |
 | $\{B=0\}$ | the complex quadric, the vanishing set of the algebraic norm |
 | $\{N=0\}$ | the two idempotent lines, the zero divisors |
 | $\breve Q=1+ij$ (unit, $\langle \breve Q\rangle=0$), $\breve Q=1+j$ (zero divisor, $\langle \breve Q\rangle=2$) | the two witnesses of the failure of the algebraic norm |

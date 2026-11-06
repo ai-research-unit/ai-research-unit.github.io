@@ -20,7 +20,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 The rule is the Idempotent Principle of *Split-Complex Elementary Functions*, §*The Idempotent Principle*, restated here for reference.
 
-**Theorem (Idempotent Principle).** Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{C}^{\mathrm{spl}}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert<\rho$. Then the series $\sum c_nQ^n$ converges and
+**Theorem (Idempotent Principle).** Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{C}_{\mathrm{spl}}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert<\rho$. Then the series $\sum c_nQ^n$ converges and
 
 $$
 \Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-.
@@ -343,7 +343,7 @@ The common rule is the Idempotent Principle of *Split-Complex Elementary Functio
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split-complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split-complex algebra |
 | $j$ | Split imaginary unit, $j^2=+1$ |
 | $Q=q+jq'$ | General split-complex number, $q=\operatorname{Re}Q$, $q'=\operatorname{Im}Q$ |
 | $\lambda_\pm=q\pm q'=Q_\pm$ | Eigenvalues, equal to the idempotent coordinates |

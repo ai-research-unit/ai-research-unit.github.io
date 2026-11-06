@@ -183,7 +183,7 @@ dimension $3$. The diagonal sign maps satisfy $T^{\mathsf T}T=I_4$ and fix $e_t$
 that transport the product to a nonzero scalar multiple of itself,
 
 $$
-G^{\mathrm{str}}_{\star} = \{T\in GL(\mathbb{B}): T(\tilde Q_2\star\tilde Q_3)=\lambda\,(T\tilde Q_2)\star(T\tilde Q_3)
+G_{\mathrm{str},\star} = \{T\in GL(\mathbb{B}): T(\tilde Q_2\star\tilde Q_3)=\lambda\,(T\tilde Q_2)\star(T\tilde Q_3)
 \text{ for some } \lambda\in\mathbb{C}^{\times}\}.
 $$
 
@@ -195,8 +195,8 @@ the intersection with $Te_t=e_t$, and there the value $\mu=1$ is forced back, si
 $\langle Te_t,Te_t\rangle_{\natural}=\mu \langle e_t,e_t\rangle_{\natural}$ reads $1=\mu$. The three groups are related by
 
 $$
-G_{\star} \subset G^{\mathrm{str}}_{\star}, \qquad
-G_{\star} = G^{\mathrm{str}}_{\star}\cap\{Te_t=e_t\}.
+G_{\star} \subset G_{\mathrm{str},\star}, \qquad
+G_{\star} = G_{\mathrm{str},\star}\cap\{Te_t=e_t\}.
 $$
 
 The structure group contains maps that rescale the form, and the product-preserving group does not: rescaling
@@ -270,7 +270,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 | $\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}$ | the adjoint with respect to $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $G_N=\{T:T^{\mathsf T}T=I_4\}$ | the group of linear maps preserving the form, complex dimension $6$ |
 | $G_{\star}=\{T:T^{\mathsf T}T=I_4,\ Te_t=e_t\}$ | the group of transformations preserving the product, complex dimension $3$ |
-| $G^{\mathrm{str}}_{\star}$ | the structure group, transporting the product to a scalar multiple |
+| $G_{\mathrm{str},\star}$ | the structure group, transporting the product to a scalar multiple |
 | $D(\tilde Q_2\star\tilde Q_3)=(D\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(D\tilde Q_3)$ | the derivation condition |
 
 ## Further Reading

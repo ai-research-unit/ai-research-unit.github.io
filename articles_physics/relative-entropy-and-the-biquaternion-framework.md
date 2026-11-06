@@ -175,33 +175,33 @@ verified by recomputation at small displacements. The coefficient is finite thro
 
 ## Araki's Relative Modular Operator
 
-The definition used so far is the finite-dimensional one. The general definition, which the modular companions use and which is the one available for a field, is Araki's. On a von Neumann algebra $M$ with faithful normal states $\omega$ and $\xi^{\mathrm{alt}}$, the **relative modular operator** $\Delta_{\omega,\xi^{\mathrm{alt}}}$ is the positive operator whose polar decomposition produces the relative Tomita operator, and Araki's relative entropy is
+The definition used so far is the finite-dimensional one. The general definition, which the modular companions use and which is the one available for a field, is Araki's. On a von Neumann algebra $M$ with faithful normal states $\omega$ and $\xi_{\mathrm{alt}}$, the **relative modular operator** $\Delta_{\omega,\xi_{\mathrm{alt}}}$ is the positive operator whose polar decomposition produces the relative Tomita operator, and Araki's relative entropy is
 $$
-S(\omega\|\xi^{\mathrm{alt}})=\big\langle\Omega_\omega,\log\Delta_{\omega,\xi^{\mathrm{alt}}}\,\Omega_\omega\big\rangle .
+S(\omega\|\xi_{\mathrm{alt}})=\big\langle\Omega_\omega,\log\Delta_{\omega,\xi_{\mathrm{alt}}}\,\Omega_\omega\big\rangle .
 $$
 It agrees with Umegaki's $S(\rho\|\sigma)$ when $M$ is a finite-dimensional matrix algebra and the two states are given by density matrices, and it is defined for the type III algebras of local quantum field theory, where no density matrix exists. The relative modular operator satisfies the **relative modular condition**, a two-point KMS-type boundary relation for the function
 $$
 (r'_t,\tilde Q_2,\tilde Q_1)\longmapsto
-\omega\big(\tilde Q_2\,\sigma_{r'_{t}}^{\xi^{\mathrm{alt}},\omega}(\tilde Q_1)\big),
+\omega\big(\tilde Q_2\,\sigma_{r'_{t}}^{\xi_{\mathrm{alt}},\omega}(\tilde Q_1)\big),
 $$
-where $\sigma^{(\xi^{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
+where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
-Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_\xi^{\mathrm{alt}}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
+Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_{\mathrm{alt},\xi}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
-\Delta_{\omega,\xi^{\mathrm{alt}}}\big(\tilde Q_2\big)
-=e^{-\tilde K^{\mathrm{mod}}_{\omega}}\,\tilde Q_2\,e^{\tilde K^{\mathrm{mod}}_{\xi^{\mathrm{alt}}}},
+\Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
+=e^{-\tilde K_{\mathrm{mod},\omega}}\,\tilde Q_2\,e^{\tilde K_{\mathrm{mod},\xi_{\mathrm{alt}}}},
 \qquad
-\log\Delta_{\omega,\xi^{\mathrm{alt}}}\big(\tilde Q_2\big)
-=\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_\xi^{\mathrm{alt}}
-=\tilde Q_2\,\tilde{K}^{\mathrm{mod}}_{\xi^{\mathrm{alt}}}-\tilde{K}^{\mathrm{mod}}_{\omega}\,\tilde Q_2,
+\log\Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
+=\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_{\mathrm{alt},\xi}
+=\tilde Q_2\,\tilde{K}_{\mathrm{mod},\xi_{\mathrm{alt}}}-\tilde{K}_{\mathrm{mod},\omega}\,\tilde Q_2,
 \qquad
-\tilde{K}^{\mathrm{mod}}_{\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}^{\mathrm{mod}}_{\xi^{\mathrm{alt}}}=-\log\tilde{Ϛ}_\xi^{\mathrm{alt}}\in\mathbb{M}_+ .
+\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}_{\mathrm{mod},\xi_{\mathrm{alt}}}=-\log\tilde{Ϛ}_{\mathrm{alt},\xi}\in\mathbb{M}_+ .
 $$
 Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$ then returns
 $$
-S(\omega\|\xi^{\mathrm{alt}})
-=\mathrm{Tr}\Big[\tilde{Ϛ}_\omega^{1/2}\Big(\log\tilde{Ϛ}_\omega\,\tilde{Ϛ}_\omega^{1/2}-\tilde{Ϛ}_\omega^{1/2}\log\tilde{Ϛ}_\xi^{\mathrm{alt}}\Big)\Big]
-=\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_\omega\big)-\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_\xi^{\mathrm{alt}}\big),
+S(\omega\|\xi_{\mathrm{alt}})
+=\mathrm{Tr}\Big[\tilde{Ϛ}_\omega^{1/2}\Big(\log\tilde{Ϛ}_\omega\,\tilde{Ϛ}_\omega^{1/2}-\tilde{Ϛ}_\omega^{1/2}\log\tilde{Ϛ}_{\mathrm{alt},\xi}\Big)\Big]
+=\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_\omega\big)-\mathrm{Tr}\big(\tilde{Ϛ}_\omega\log\tilde{Ϛ}_{\mathrm{alt},\xi}\big),
 $$
 which is the boxed expression; the two were checked against each other on the generic pair above. The operator is the algebra-level form of the closed expression, and it is the object that survives when the finite-dimensional state is replaced by a state of a local algebra.
 
@@ -211,7 +211,7 @@ The framework's finite-dimensional states are a truncation of a field theory, an
 
 **Entanglement entropy is not defined for a local algebra.** The algebra of observables of a region of Minkowski space is a type III von Neumann algebra, which admits no trace and hence no density matrix. The von Neumann entropy of a reduced state, $-\mathrm{Tr}(\rho_A\log\rho_A)$, is therefore not available. The relative entropy of two states of the region is available, is finite under mild conditions, and reduces to the familiar quantity when a regulator is introduced and removed. This is why the modern algebraic treatment of entanglement in quantum field theory is written in terms of relative entropy.
 
-**Relative entropy is finite for states that differ by a local excitation.** If $\omega$ is the vacuum and $\xi^{\mathrm{alt}}$ is a state obtained from it by a local excitation, the relative entropy $S(\xi^{\mathrm{alt}}\|\omega)$ is finite and has the interpretation of the expected modular energy of the excitation. The classic case is the relative entropy between the Minkowski vacuum and a coherent state of a free field, which is finite and equals the number of quanta of the excitation in the appropriate normalization. This finiteness is what makes the first law of entanglement, treated in the companion article *The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form*, a statement about a finite quantity.
+**Relative entropy is finite for states that differ by a local excitation.** If $\omega$ is the vacuum and $\xi_{\mathrm{alt}}$ is a state obtained from it by a local excitation, the relative entropy $S(\xi_{\mathrm{alt}}\|\omega)$ is finite and has the interpretation of the expected modular energy of the excitation. The classic case is the relative entropy between the Minkowski vacuum and a coherent state of a free field, which is finite and equals the number of quanta of the excitation in the appropriate normalization. This finiteness is what makes the first law of entanglement, treated in the companion article *The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form*, a statement about a finite quantity.
 
 **Relative entropy and the vacuum distinguishability.** The **Reeh–Schlieder** property, treated in the companion article *The Reeh–Schlieder Theorem under the Biquaternion Framework*, is the statement that the vacuum is cyclic and separating for every local algebra, and the relative modular operator of a pair of states of a local algebra is the technical object whose existence the property guarantees. The argument that the modular flow of a wedge is the boost, due to Bisognano and Wichmann, is an argument about the relative modular operator of the vacuum.
 
@@ -233,7 +233,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_2$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_1$ only when $\tilde{Ϛ}_1=\tilde{Ϛ}_2$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
 
-**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{ir'_t}\tilde{Ϛ}_{\xi^{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
+**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{ir'_t}\tilde{Ϛ}_{\xi_{\mathrm{alt}}}^{-ir'_t}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
 
 **4. The relation to the first law.** The expansion of the relative entropy near coincidence, which is the quantum Fisher information, is the quadratic form whose vanishing controls the first law of entanglement. Whether the framework's closed form makes that law exact, rather than asymptotic, is the subject of the companion article on the modular Hamiltonian.
 
@@ -268,7 +268,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $S(\tilde{Ϛ})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$ | von Neumann entropy of a biquaternion state |
 | $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec r\cdot\vec s/(|\vec r||\vec s|)$ | Bloch-vector angle |
-| $\Delta_{\omega,\xi^{\mathrm{alt}}}$ | Araki relative modular operator |
+| $\Delta_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
 | $\log\tilde{Ϛ}\in\mathbb{M}_+$ | Biquaternion logarithm of a faithful state |
 | $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_t$ | Trace state (maximally mixed) |

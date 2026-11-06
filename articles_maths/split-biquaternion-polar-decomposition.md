@@ -3,10 +3,10 @@
 
 ## Introduction
 
-This article is about the polar decomposition in the split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, where $\mathbb{C}^{\mathrm{spl}}$ is the split complex algebra. The result is that every split biquaternion is a modulus times a rotor,
+This article is about the polar decomposition in the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, where $\mathbb{C}_{\mathrm{spl}}$ is the split complex algebra. The result is that every split biquaternion is a modulus times a rotor,
 
 $$
-\tilde{Q} = \rho\,\tilde{U} , \qquad \rho \in \mathbb{C}^{\mathrm{spl}}, \quad \rho_{\pm} \ge 0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
+\tilde{Q} = \rho\,\tilde{U} , \qquad \rho \in \mathbb{C}_{\mathrm{spl}}, \quad \rho_{\pm} \ge 0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
 $$
 
 with the modulus a split complex number whose two components are non-negative reals and the rotor a pair of unit quaternions. The real dimensions are $2+6 = 8$, the modulus being two-dimensional and the rotor six-dimensional, and the modulus further separates into a positive real **scale** and a central **hyperbolic phase**,
@@ -25,7 +25,7 @@ The article is the fourth and last of the series on the polar decompositions of 
 
 The conventions and the symbols are those of *Split-Biquaternion Algebra* and of the corpus (*Algebra and Element Conventions*); the symbols this article uses are collected in §*Summary of Notation*.
 
-The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
+The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ with $\tilde u_\pm \in Sp(1)$, in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, the pairs of unit real quaternions. The isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
 
 ## The Word as Exponentials
 
@@ -55,9 +55,9 @@ The two non-central pieces $\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1$ and $\tfrac{\th
 
 ### The Centre and the Hyperbolic Phase
 
-The centre of $\mathbb{B}^{\mathrm{spl}}$ is $\mathbb{C}^{\mathrm{spl}}$, the split complex scalars: an element commutes with every element of the algebra exactly when it lies in the span of $e_t$ and $j$. A central factor may therefore be moved through the other factors of a product without changing it, and every central direction of the unit group is a free one-parameter factor of any decomposition. The centre is not a field here but the split complex ring, and its group of positive units is
+The centre of $\mathbb{B}_{\mathrm{spl}}$ is $\mathbb{C}_{\mathrm{spl}}$, the split complex scalars: an element commutes with every element of the algebra exactly when it lies in the span of $e_t$ and $j$. A central factor may therefore be moved through the other factors of a product without changing it, and every central direction of the unit group is a free one-parameter factor of any decomposition. The centre is not a field here but the split complex ring, and its group of positive units is
 $$
-\mathbb{C}^{\mathrm{spl}}_{>0} = \left\{\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2 : \rho_+,\rho_->0\right\} \cong \mathbb{R}_{>0}\times\mathbb{R}_{>0} ,
+\mathbb{C}_{\mathrm{spl},>0} = \left\{\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2 : \rho_+,\rho_->0\right\} \cong \mathbb{R}_{>0}\times\mathbb{R}_{>0} ,
 $$
 the product of two rays, the two component magnitudes $\rho_+$ and $\rho_-$ of the representation, whose geometric mean and whose half-log-ratio are the scale and the hyperbolic phase. The central unit group therefore contains a non-compact factor, the hyperbola $\exp(j\tau) = \cosh\tau + j\sinh\tau$, and this is the structural difference from the biquaternion algebra: there the centre is the complex field, whose unit group is the compact circle, and the centre contributes the compact phase alone.
 
@@ -75,7 +75,7 @@ $$
 \tilde{Q}_+ = \tilde{Q}\,\tilde\Pi_1 = \tilde\Pi_1\left(\tilde q+\tilde q'\right), \qquad \tilde{Q}_- = \tilde{Q}\,\tilde\Pi_2 = \tilde\Pi_2\left(\tilde q-\tilde q'\right),
 $$
 
-and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution ${}^{*}$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution ${}^{*}$ is what exchanges the two halves.
+and the element is recovered from them by $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$. The map $\tilde{Q}\mapsto(\tilde{Q}_+,\tilde{Q}_-)$ is the algebra isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ of the corpus, and the two components are the two copies. Multiplication is componentwise, so every algebraic question about a split biquaternion is a question about the pair. This split is the counterpart of the Hermitian and anti-Hermitian halves of the biquaternion algebra: there the algebra is split by the involution ${}^{*}$ into the fixed and the anti-fixed space, here by the central idempotents into two two-sided ideals, and the involution ${}^{*}$ is what exchanges the two halves.
 
 ### The Split-Biquaternion Norm and the Zero Divisors
 
@@ -108,32 +108,32 @@ and the split-biquaternion norm does not detect the zero divisors. This is the s
 The zero divisors are instead the elements with a vanishing idempotent component. If $\tilde{Q}_+ = 0$ and $\tilde{Q}\neq0$ then $\tilde{Q} = \tilde{Q}_-$ is annihilated on the right by $\tilde\Pi_1$, since $\tilde{Q}\tilde\Pi_1 = \tilde{Q}_+\tilde\Pi_1 = 0$; and dually for $\tilde{Q}_- = 0$. The invertible elements are exactly those with both components nonzero, and the group of units is
 
 $$
-{\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)^2 ,
+{\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)^2 ,
 $$
 
-of real dimension eight. The set of elements of unit norm is smaller: it is the unit sphere $\{\langle\tilde{Q}\rangle_{\natural} = e_t\}\cong \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six, because a unit of $\mathbb{B}^{\mathrm{spl}}$ may carry a scale in either component. Neither the split-biquaternion norm nor the zero divisors is where the polar decomposition fails, and the section on the domain isolates what is at stake.
+of real dimension eight. The set of elements of unit norm is smaller: it is the unit sphere $\{\langle\tilde{Q}\rangle_{\natural} = e_t\}\cong \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six, because a unit of $\mathbb{B}_{\mathrm{spl}}$ may carry a scale in either component. Neither the split-biquaternion norm nor the zero divisors is where the polar decomposition fails, and the section on the domain isolates what is at stake.
 
 ### The Unit Group and Its Two Counts
 
 Since the algebra is the direct sum $\mathbb{H}\oplus\mathbb{H}$, its group of units is the direct product of the two unit groups of the halves,
 
 $$
-{\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)\times\left(\mathbb{R}_{>0}\times Sp(1)\right) \cong \mathbb{C}^{\mathrm{spl}}_{>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right) ,
+{\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \left(\mathbb{R}_{>0}\times Sp(1)\right)\times\left(\mathbb{R}_{>0}\times Sp(1)\right) \cong \mathbb{C}_{\mathrm{spl},>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right) ,
 $$
 
-and the last form exhibits the group as a central non-compact factor times a compact one: the two rays of $\mathbb{C}^{\mathrm{spl}}_{>0}$ are the two scalar magnitudes of the halves, and $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ is the unit sphere. The four factors of the product are the four slots of the representation — two scalar rays and two spheres — with the two rays combining into the scale and the hyperbolic phase, and the two spheres into the rotor. The factorisation of a unit as $\tilde{Q} = \rho\,\tilde{U}$ with $\rho\in\mathbb{C}^{\mathrm{spl}}_{>0}$ and $\tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ is the multiplication map
+and the last form exhibits the group as a central non-compact factor times a compact one: the two rays of $\mathbb{C}_{\mathrm{spl},>0}$ are the two scalar magnitudes of the halves, and $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ is the unit sphere. The four factors of the product are the four slots of the representation — two scalar rays and two spheres — with the two rays combining into the scale and the hyperbolic phase, and the two spheres into the rotor. The factorisation of a unit as $\tilde{Q} = \rho\,\tilde{U}$ with $\rho\in\mathbb{C}_{\mathrm{spl},>0}$ and $\tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1)$ is the multiplication map
 $$
-\mathbb{C}^{\mathrm{spl}}_{>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right)\longrightarrow{\mathbb{B}^{\mathrm{spl}}}^{\times} ,
+\mathbb{C}_{\mathrm{spl},>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right)\longrightarrow{\mathbb{B}_{\mathrm{spl}}}^{\times} ,
 $$
-and it is a bijection, not merely a factorisation of manifolds: if $\rho\tilde{U} = \rho'\tilde{U}'$ then $\rho^{-1}\rho' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}^{\mathrm{spl}}_{>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2$ has norm $\rho_+^2\tilde\Pi_1 + \rho_-^2\tilde\Pi_2$, equal to $e_t$ with non-negative components only when $\rho_+ = \rho_- = 1$ — so that $\rho = \rho'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\alpha\in(-\pi/2,\pi/2]$ is what removes the doubling.
+and it is a bijection, not merely a factorisation of manifolds: if $\rho\tilde{U} = \rho'\tilde{U}'$ then $\rho^{-1}\rho' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2$ has norm $\rho_+^2\tilde\Pi_1 + \rho_-^2\tilde\Pi_2$, equal to $e_t$ with non-negative components only when $\rho_+ = \rho_- = 1$ — so that $\rho = \rho'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\alpha\in(-\pi/2,\pi/2]$ is what removes the doubling.
 
 The Lie algebra of the unit group is $\mathbb{R}^2\oplus\mathrm{SU}(2)\oplus\mathrm{SU}(2)$: the abelian summand $\mathbb{R}^2$ is central and non-compact, and the two $\mathrm{SU}(2)$ summands are compact, one for each half. The correct statement of what the centrality of $\mathbb{R}^2$ implies is not that every non-compact one-parameter subgroup is central, which is false: the generator $e_t + \vec e_x$ of the unit group's Lie algebra has a central component and a non-central one, and the subgroup it generates,
 $$
 \exp\left(t(e_t+\vec e_x)\right) = \exp(t)\left(\cos t + \sin t\,\vec e_x\right) , \qquad \left|\exp\left(t(e_t+\vec e_x)\right)\right| = \exp(t) ,
 $$
-is neither central — it fails to commute with $\vec e_y$, since $\left[\vec e_x,\vec e_y\right] = 2\vec e_z$ — nor relatively compact, since the quaternion modulus of its terms grows as $\exp(t)$. What is true is that the **non-compact part of the unit group is central**: the group is the direct product of its maximal compact subgroup $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ and the central group $\mathbb{C}^{\mathrm{spl}}_{>0}$, so a one-parameter subgroup is non-compact exactly when its generator has a non-zero central component. There is therefore no non-central non-compact factor of the decomposition, and hence no boost slot: the analogue of the biquaternion boost is absent, and in its place the decomposition carries the hyperbolic central phase.
+is neither central — it fails to commute with $\vec e_y$, since $\left[\vec e_x,\vec e_y\right] = 2\vec e_z$ — nor relatively compact, since the quaternion modulus of its terms grows as $\exp(t)$. What is true is that the **non-compact part of the unit group is central**: the group is the direct product of its maximal compact subgroup $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ and the central group $\mathbb{C}_{\mathrm{spl},>0}$, so a one-parameter subgroup is non-compact exactly when its generator has a non-zero central component. There is therefore no non-central non-compact factor of the decomposition, and hence no boost slot: the analogue of the biquaternion boost is absent, and in its place the decomposition carries the hyperbolic central phase.
 
-The contrast with the biquaternion algebra is exact and is worth stating in one line. There the centre is $\mathbb{C}$, whose unit group is the compact circle, and the non-compactness lives in the non-central Hermitian positive boosts; here the centre is $\mathbb{C}^{\mathrm{spl}}$, whose positive part is the non-compact product of two rays, and the non-central part is compact.
+The contrast with the biquaternion algebra is exact and is worth stating in one line. There the centre is $\mathbb{C}$, whose unit group is the compact circle, and the non-compactness lives in the non-central Hermitian positive boosts; here the centre is $\mathbb{C}_{\mathrm{spl}}$, whose positive part is the non-compact product of two rays, and the non-central part is compact.
 
 ### The Counting
 
@@ -146,10 +146,10 @@ $$
 and their sum is the real dimension of the algebra,
 
 $$
-1+1+0+6 = 8 = \dim_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}} .
+1+1+0+6 = 8 = \dim_{\mathbb{R}}\mathbb{B}_{\mathrm{spl}} .
 $$
 
-The additivity is the structural statement that the four slots are independent, exactly as in the biquaternion case; the difference is that the biquaternion distribution $1+1+3+3$ fills the two middle slots with two non-central three-dimensional families, whereas here the boost slot is empty and the rotor takes both of its dimensions, $6 = 3+3$. The companion articles on $\mathbb{H}$, $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$ obtain $1+0+0+3$, $1+0+2+1$ and $1+1+3+3$ in the same four slots, and the comparison section below reads the four rows together.
+The additivity is the structural statement that the four slots are independent, exactly as in the biquaternion case; the difference is that the biquaternion distribution $1+1+3+3$ fills the two middle slots with two non-central three-dimensional families, whereas here the boost slot is empty and the rotor takes both of its dimensions, $6 = 3+3$. The companion articles on $\mathbb{H}$, $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb{B}$ obtain $1+0+0+3$, $1+0+2+1$ and $1+1+3+3$ in the same four slots, and the comparison section below reads the four rows together.
 
 ### The Order of the Factors
 
@@ -186,7 +186,7 @@ whose square is the split-biquaternion norm, $\rho^2 = \langle\tilde{Q}\rangle_{
 
 In the biquaternion algebra the square root of the norm requires a branch: the norm is a complex number, its two square roots are exchanged by a sign, and the decomposition fixes the branch by requiring the modulus to be non-negative real after a phase is factored out. Here no such choice arises. Each component of the split-biquaternion norm is a non-negative real, each has a unique non-negative square root, and the modulus is therefore unique among the split complex numbers with non-negative components whose square is $\langle\tilde{Q}\rangle_{\natural}$. The only element with vanishing modulus is the zero element, since $\rho_+ = \rho_- = 0$ forces $\tilde q+\tilde q' = 0$ and $\tilde q-\tilde q' = 0$ and hence $\tilde q = \tilde q' = 0$; and $\rho = 0$ for $\tilde{Q} = 0$ alone.
 
-The absence of the branch is the algebraic content of the remark in the corpus that the split-biquaternion norm of $\mathbb{B}^{\mathrm{spl}}$ is **anisotropic on each component**: what in the biquaternion case was a closed curve of choices of argument is here two disconnected rays, each of which has a distinguished point.
+The absence of the branch is the algebraic content of the remark in the corpus that the split-biquaternion norm of $\mathbb{B}_{\mathrm{spl}}$ is **anisotropic on each component**: what in the biquaternion case was a closed curve of choices of argument is here two disconnected rays, each of which has a distinguished point.
 
 ### The Modulus Is Not the Euclidean Norm
 
@@ -223,7 +223,7 @@ $$
 by the identities $\lambda\cosh\tau = \tfrac12(\rho_++\rho_-)$ and $\lambda\sinh\tau = \tfrac12(\rho_+-\rho_-)$, which are immediate from the definitions. The pair $(\lambda,\tau)$ is determined by $\rho$ and determines it, and the map is a group isomorphism
 
 $$
-\mathbb{C}^{\mathrm{spl}}_{>0} = \left\{\rho \in \mathbb{C}^{\mathrm{spl}} : \rho_+>0,\ \rho_->0\right\} \longrightarrow \mathbb{R}_{>0}\times\mathbb{R}, \qquad \rho\mapsto(\lambda,\tau) ,
+\mathbb{C}_{\mathrm{spl},>0} = \left\{\rho \in \mathbb{C}_{\mathrm{spl}} : \rho_+>0,\ \rho_->0\right\} \longrightarrow \mathbb{R}_{>0}\times\mathbb{R}, \qquad \rho\mapsto(\lambda,\tau) ,
 $$
 
 because $(\lambda \exp(j\tau))(\lambda' \exp(j\tau')) = \lambda\lambda' \exp(j(\tau+\tau'))$. The scale is the geometric mean of the two component moduli and the hyperbolic phase is half the logarithm of their ratio.
@@ -266,7 +266,7 @@ $$
 
 the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ of the companion article on rotations.
 
-The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** ${\mathbb{B}^{\mathrm{spl}}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
+The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $\langle\cdot\rangle_{\natural}$, and the rotor is the level set $\langle\tilde{U}\rangle_{\natural}=e_t$. It is not every invertible element: the **group of units** ${\mathbb{B}_{\mathrm{spl}}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
 
 ### The Rotor as an Exponential
 
@@ -286,16 +286,16 @@ and the argument is an element of the Lie algebra of the unit group: the rotor i
 
 ### The Rotor Is the Compact Factor
 
-The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ with the central group $\mathbb{C}^{\mathrm{spl}}_{>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar decomposition rotates a split biquaternion.
+The rotor is compact and six-dimensional, and it is the whole non-central part of the group of units: the unit group is the direct product of $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ with the central group $\mathbb{C}_{\mathrm{spl},>0}$, so that a general unit is a rotation of the two halves together with a scale and a hyperbolic phase, and the two operations commute. In the biquaternion algebra the non-central part of the unit group is $SU(2)\times H^3$ — a rotor and a boost — and only half of it is compact; here the non-central part is compact and carries no non-compact direction at all. The two-sided action $\tilde{Q}\mapsto \tilde u_+\tilde{Q}\tilde u_-^{-1}$ is the double cover $Sp(1)\times Sp(1)\to SO(4)$ of the companion article on rotations, and it is the action by which the rotor factor of a polar decomposition rotates a split biquaternion.
 
 ## The Theorem
 
 ### Statement
 
-**Theorem (polar decomposition).** Let $\tilde{Q}\in\mathbb{B}^{\mathrm{spl}}$. Then there are
+**Theorem (polar decomposition).** Let $\tilde{Q}\in\mathbb{B}_{\mathrm{spl}}$. Then there are
 
 $$
-\rho\in\mathbb{C}^{\mathrm{spl}}, \quad \rho_+\ge0,\ \rho_-\ge0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
+\rho\in\mathbb{C}_{\mathrm{spl}}, \quad \rho_+\ge0,\ \rho_-\ge0, \qquad \tilde{U}\in \mathrm{Sp}(1)\times\mathrm{Sp}(1) ,
 $$
 
 such that
@@ -621,7 +621,7 @@ both verified to machine precision. The fibre of the exponential over $e_t$ acco
 
 ### The Polar Decomposition as a Single Exponential
 
-**Theorem.** An element of $\mathbb{B}^{\mathrm{spl}}$ is the exponential of an element of the algebra exactly when it is invertible, and for an invertible element the polar decomposition is the exponential of a single element,
+**Theorem.** An element of $\mathbb{B}_{\mathrm{spl}}$ is the exponential of an element of the algebra exactly when it is invertible, and for an invertible element the polar decomposition is the exponential of a single element,
 
 $$
 \boxed{\;
@@ -648,13 +648,13 @@ The four algebras of the series decompose in the same four slots, with the follo
 | algebra | scale | phase | boost | rotor | total |
 |---|---|---|---|---|---|
 | $\mathbb{H}$ | $1$ | $0$ | $0$ | $3$ | $4$ |
-| $\mathbb{H}^{\mathrm{spl}}$ | $1$ | $0$ | $2$ | $1$ plus a discrete reflection | $4$ |
+| $\mathbb{H}_{\mathrm{spl}}$ | $1$ | $0$ | $2$ | $1$ plus a discrete reflection | $4$ |
 | $\mathbb{B}$ | $1$ | $1$, elliptic: $\exp(i\alpha)$ | $3$ | $3$ | $8$ |
-| $\mathbb{B}^{\mathrm{spl}}$ | $1$ | $1$, hyperbolic: $\exp(j\tau)$ | $0$ | $6$ | $8$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | $1$ | $1$, hyperbolic: $\exp(j\tau)$ | $0$ | $6$ | $8$ |
 
 The split biquaternion is the case in which the phase slot is non-compact, the boost slot is empty and the rotor slot is the largest. The pattern is not accidental.
 
-The rotor is the **compact part of the unit sphere** of the algebra and the boost is its non-compact part: in $\mathbb{H}$ and $\mathbb{B}^{\mathrm{spl}}$ there is no boost, so the rotor is the whole unit sphere, of dimension three and six respectively; in $\mathbb{H}^{\mathrm{spl}}$ the unit sphere is the three-dimensional group $SL(2,\mathbb{R})$ and splits into the two-dimensional boosts and the one-dimensional rotations, the reflections lying in the other component $\{N = -1\}$; in $\mathbb{B}$ the unit sphere is $SL(2,\mathbb{C})$, of dimension six, and splits into the three-dimensional boosts and the three-dimensional rotor.
+The rotor is the **compact part of the unit sphere** of the algebra and the boost is its non-compact part: in $\mathbb{H}$ and $\mathbb{B}_{\mathrm{spl}}$ there is no boost, so the rotor is the whole unit sphere, of dimension three and six respectively; in $\mathbb{H}_{\mathrm{spl}}$ the unit sphere is the three-dimensional group $SL(2,\mathbb{R})$ and splits into the two-dimensional boosts and the one-dimensional rotations, the reflections lying in the other component $\{N = -1\}$; in $\mathbb{B}$ the unit sphere is $SL(2,\mathbb{C})$, of dimension six, and splits into the three-dimensional boosts and the three-dimensional rotor.
 
 The two algebras of dimension eight distribute their eight real dimensions differently because in one of them the centre is the complex field and in the other the split complex ring.
 
@@ -664,11 +664,11 @@ Each of the four algebras has an indefinite structure, and the polar decompositi
 
 In $\mathbb{H}$ there is none: the norm is positive definite, and both the scale and the rotor are as definite as their counterparts in the complex numbers.
 
-In $\mathbb{H}^{\mathrm{spl}}$ the split-biquaternion norm has signature $(2,2)$ and its square root requires an absolute value; the indefinite direction is exhibited as a **boost** in the non-central Hermitian subspace, and the sign of the split-biquaternion norm survives as the determinant of the rotor.
+In $\mathbb{H}_{\mathrm{spl}}$ the split-biquaternion norm has signature $(2,2)$ and its square root requires an absolute value; the indefinite direction is exhibited as a **boost** in the non-central Hermitian subspace, and the sign of the split-biquaternion norm survives as the determinant of the rotor.
 
 In $\mathbb{B}$ the norm is complex and its square root requires a branch; the two-dimensional family of branches is exhibited as the central **phase**, and the indefinite direction of the algebra is spent on the three-dimensional **boost**.
 
-In $\mathbb{B}^{\mathrm{spl}}$ the split-biquaternion norm is split complex and requires no branch; there is no cone on which the modulus vanishes, and there is no boost. The indefinite directions are exactly the two central ones, the scale and the hyperbolic phase, and the rotor is compact. The absence of the boost is the strongest structural statement of the comparison: the algebra $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple of compact type, it has no non-zero nilpotent element, and the non-compact part of its unit group is central.
+In $\mathbb{B}_{\mathrm{spl}}$ the split-biquaternion norm is split complex and requires no branch; there is no cone on which the modulus vanishes, and there is no boost. The indefinite directions are exactly the two central ones, the scale and the hyperbolic phase, and the rotor is compact. The absence of the boost is the strongest structural statement of the comparison: the algebra $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple of compact type, it has no non-zero nilpotent element, and the non-compact part of its unit group is central.
 
 ## Summary
 
@@ -678,7 +678,7 @@ $$
 \tilde{Q} = \rho\,\tilde{U} , \qquad \rho = \rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2 , \qquad \rho_\pm = \left|\tilde q\pm \tilde q'\right| \ge 0, \qquad \tilde{U} = \tilde u_+\tilde\Pi_1 + \tilde u_-\tilde\Pi_2 ,
 $$
 
-with $\tilde u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = \langle\tilde{Q}\rangle_{\natural}$, and the rotor lies in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda \exp(j\tau)$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{B}^{\mathrm{spl}}$ is the one whose polar decomposition has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.
+with $\tilde u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = \langle\tilde{Q}\rangle_{\natural}$, and the rotor lies in the unit sphere $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda \exp(j\tau)$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{B}_{\mathrm{spl}}$ is the one whose polar decomposition has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.
 
 The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus.
 
@@ -690,7 +690,7 @@ The representation also has an exponential form. The exponential of an element w
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split biquaternion algebra, real dimension eight |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split biquaternion algebra, real dimension eight |
 | $j$ | the split complex unit, $j^2 = +1$, central |
 | $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$ | the idempotents, $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1+\tilde\Pi_2 = e_t$ |
 | $\tilde{Q} = \tilde q + j\tilde q'$ | the quaternion and split-quaternion parts of an element |

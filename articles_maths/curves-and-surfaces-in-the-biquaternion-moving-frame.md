@@ -120,7 +120,7 @@ $$
 
 The three components have a name and a meaning. $\iota_1$ is the rate at which the frame turns about $v_1$ — the component that couples $v_2$ and $v_3$ — $\iota_2$ is the rate at which it turns about $v_2$ and $\iota_3$ the rate about $v_3$; the passage above shows that turning about $v_k$ moves the other two vectors into one another. Equivalently, $\mathrm d\iota=\iota_1\vec e_x+\iota_2\vec e_y+\iota_3\vec e_z$ is the angular velocity one-form of the frame, and if the parameters are the time, then $\iota_j/\mathrm dt$ are the components of the angular velocity vector in the frame.
 
-The frame determines the rotor only up to the sign, since $r$ and $-r$ give the same frame, and no other freedom is present: a frame is the same thing as a point of $SO(3)$. On a surface a coarser freedom is at work, because the requirement is only that the third vector be the normal and the first two span the tangent plane: if $r$ is a frame of the surface then so is $r\exp(\tfrac12\theta^{\mathrm{tnp}} \vec e_z)$ for any real function $\theta^{\mathrm{tnp}}(u,v)$, since the generator $\vec e_z$ of that rotor leaves $v_3$ fixed and rotates $v_1$ and $v_2$ into one another by the angle $\theta^{\mathrm{tnp}}$. The normal, the first fundamental form and the two curvatures are unchanged, while the connection and the decomposition of the second fundamental form are not, and this is the freedom by which the second fundamental form is diagonalised in the section on the curvature lines.
+The frame determines the rotor only up to the sign, since $r$ and $-r$ give the same frame, and no other freedom is present: a frame is the same thing as a point of $SO(3)$. On a surface a coarser freedom is at work, because the requirement is only that the third vector be the normal and the first two span the tangent plane: if $r$ is a frame of the surface then so is $r\exp(\tfrac12\theta_{\mathrm{tnp}} \vec e_z)$ for any real function $\theta_{\mathrm{tnp}}(u,v)$, since the generator $\vec e_z$ of that rotor leaves $v_3$ fixed and rotates $v_1$ and $v_2$ into one another by the angle $\theta_{\mathrm{tnp}}$. The normal, the first fundamental form and the two curvatures are unchanged, while the connection and the decomposition of the second fundamental form are not, and this is the freedom by which the second fundamental form is diagonalised in the section on the curvature lines.
 
 ## Curves: The Frenet Frame
 
@@ -337,13 +337,13 @@ $$
 \mathrm Dv_3=(-\rho_nv_1-\tau_rv_2)\mathrm ds ,
 $$
 
-and if the Frenet frame of the same curve has invariants $\rho,\tau$ and the Frenet binormal makes the angle $\theta^{\mathrm{drb}}$ with the surface normal, then
+and if the Frenet frame of the same curve has invariants $\rho,\tau$ and the Frenet binormal makes the angle $\theta_{\mathrm{drb}}$ with the surface normal, then
 
 $$
-\rho_n=-\rho\sin\theta^{\mathrm{drb}},\qquad \rho_g=\rho\cos\theta^{\mathrm{drb}},\qquad \tau_r=\tau+\frac{\mathrm d\theta^{\mathrm{drb}}}{\mathrm ds} .
+\rho_n=-\rho\sin\theta_{\mathrm{drb}},\qquad \rho_g=\rho\cos\theta_{\mathrm{drb}},\qquad \tau_r=\tau+\frac{\mathrm d\theta_{\mathrm{drb}}}{\mathrm ds} .
 $$
 
-**Proof.** Put the three components in the components of the covariant differential. For the second part, the two frames differ by a rotation in the tangent plane: the Frenet frame is obtained from the Darboux frame by the rotation of angle $\theta^{\mathrm{drb}}$ about $v_1$, and the connection transforms accordingly; comparing the coefficients of $i\vec e_z$ in $\mathrm Dv_1$ gives $\rho_n=-\rho\sin\theta^{\mathrm{drb}}$ and those of $i\vec e_y$ gives $\rho_g=\rho\cos\theta^{\mathrm{drb}}$, while the coefficient of $i\vec e_x$ in $\mathrm Dv_2$ gives $\tau_r=\tau+\mathrm d\theta^{\mathrm{drb}}/\mathrm ds$.
+**Proof.** Put the three components in the components of the covariant differential. For the second part, the two frames differ by a rotation in the tangent plane: the Frenet frame is obtained from the Darboux frame by the rotation of angle $\theta_{\mathrm{drb}}$ about $v_1$, and the connection transforms accordingly; comparing the coefficients of $i\vec e_z$ in $\mathrm Dv_1$ gives $\rho_n=-\rho\sin\theta_{\mathrm{drb}}$ and those of $i\vec e_y$ gives $\rho_g=\rho\cos\theta_{\mathrm{drb}}$, while the coefficient of $i\vec e_x$ in $\mathrm Dv_2$ gives $\tau_r=\tau+\mathrm d\theta_{\mathrm{drb}}/\mathrm ds$.
 
 ### The Integrability of the Frame
 
@@ -379,10 +379,10 @@ the first two of which determine the two coefficients $c_1,c_2$ of $\iota_3$ lin
 
 ### The Three Distinguished Families of Curves on a Surface
 
-**Theorem (curvature lines).** The second fundamental form is diagonal, $L_{12}=0$, in a frame rotated in the tangent plane through the angle $\theta^{\mathrm{tnp}}$ given by
+**Theorem (curvature lines).** The second fundamental form is diagonal, $L_{12}=0$, in a frame rotated in the tangent plane through the angle $\theta_{\mathrm{tnp}}$ given by
 
 $$
-\tan 2\theta^{\mathrm{tnp}}=\frac{2L_{12}}{L_{11}-L_{22}} ,
+\tan 2\theta_{\mathrm{tnp}}=\frac{2L_{12}}{L_{11}-L_{22}} ,
 $$
 
 and the curves whose tangent direction has this property at every point are the **curvature lines**. The two families are orthogonal, unless the point is **umbilic**, $L_{11}=L_{22}$ and $L_{12}=0$, where every direction is a principal direction and the two families are not separated.
@@ -390,8 +390,8 @@ and the curves whose tangent direction has this property at every point are the 
 **Theorem (asymptotic lines).** The curves along which the normal curvature vanishes, $\rho_n=0$, are the **asymptotic lines**, and their directions are given by
 
 $$
-\rho_n=L_{22}\sin^2\theta^{\mathrm{tnp}}+L_{11}\cos^2\theta^{\mathrm{tnp}}+2\sin\theta^{\mathrm{tnp}}\cos\theta^{\mathrm{tnp}}\,L_{12}=0,
-\qquad \tan\theta^{\mathrm{tnp}}=\frac{-L_{12}\pm\sqrt{L_{12}^2-L_{11}L_{22}}}{L_{22}} ,
+\rho_n=L_{22}\sin^2\theta_{\mathrm{tnp}}+L_{11}\cos^2\theta_{\mathrm{tnp}}+2\sin\theta_{\mathrm{tnp}}\cos\theta_{\mathrm{tnp}}\,L_{12}=0,
+\qquad \tan\theta_{\mathrm{tnp}}=\frac{-L_{12}\pm\sqrt{L_{12}^2-L_{11}L_{22}}}{L_{22}} ,
 $$
 
 the two directions being real exactly when the Gaussian curvature is negative or the second fundamental form is degenerate; on the sphere, where the point is umbilic, there are none.
@@ -405,7 +405,7 @@ $$
 
 the second term being the differential of the angle of the curve with the first frame vector, which is the statement that the geodesic curvature is the rate of turn of the tangent in the *surface's* frame in excess of the turn forced by the connection.
 
-**Proof.** For the curvature lines, substituting the rotated coefficients in $\Pi$ shows that the cross term vanishes exactly when $\tan2\theta^{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$, and at an umbilic all directions give the same value because $L_{12}=0$ and $L_{11}=L_{22}$. For the asymptotic lines, put $\rho_n=0$ in the normal curvature written in the direction angle $\theta^{\mathrm{tnp}}$ and divide by $\cos^2\theta^{\mathrm{tnp}}$, which gives a quadratic in $\tan\theta^{\mathrm{tnp}}$ whose discriminant is $4(L_{12}^2-L_{11}L_{22})$. For the geodesics, a curve whose unit tangent makes the angle $\theta^{\mathrm{tnp}}=\arctan(\omega_2/\omega_1)$ with the first frame vector turns in the surface at the rate $\mathrm d\theta^{\mathrm{drb}}/\mathrm ds+\iota_3/\mathrm ds$, the first term being the turn of the tangent within the tangent plane and the second the connection's own turn about the normal; the geodesic curvature is that rate, and its vanishing is the displayed condition.
+**Proof.** For the curvature lines, substituting the rotated coefficients in $\Pi$ shows that the cross term vanishes exactly when $\tan2\theta_{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$, and at an umbilic all directions give the same value because $L_{12}=0$ and $L_{11}=L_{22}$. For the asymptotic lines, put $\rho_n=0$ in the normal curvature written in the direction angle $\theta_{\mathrm{tnp}}$ and divide by $\cos^2\theta_{\mathrm{tnp}}$, which gives a quadratic in $\tan\theta_{\mathrm{tnp}}$ whose discriminant is $4(L_{12}^2-L_{11}L_{22})$. For the geodesics, a curve whose unit tangent makes the angle $\theta_{\mathrm{tnp}}=\arctan(\omega_2/\omega_1)$ with the first frame vector turns in the surface at the rate $\mathrm d\theta_{\mathrm{drb}}/\mathrm ds+\iota_3/\mathrm ds$, the first term being the turn of the tangent within the tangent plane and the second the connection's own turn about the normal; the geodesic curvature is that rate, and its vanishing is the displayed condition.
 
 **Remark (the second form or the first).** The curvature lines and the asymptotic lines are distinguished by the **second** fundamental form — the directions that diagonalise it, and the directions in which it vanishes — while the geodesics are distinguished by the **first** alone, being the curves whose geodesic curvature, which is read from the connection and the metric, vanishes. This is why the two families through a non-umbilic point always exist, why a pair of asymptotic directions exists only where $K\le0$, and why a geodesic exists through every point in every direction.
 
@@ -465,7 +465,7 @@ For a **curve**, the Frenet frame is the frame with $\mathrm dx=\mathrm ds\,v_1$
 
 For a **surface**, the frame has $v_3$ normal, the coframe $\omega_1,\omega_2$ gives the first fundamental form $\mathrm ds^2=\omega_1^2+\omega_2^2$, and the second fundamental form is $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, whose coefficients are the $a$'s and $b$'s of the connection. Its determinant and its half-trace are the Gaussian and the mean curvature, $K=L_{11}L_{22}-L_{12}^2$, $H=\tfrac12(L_{11}+L_{22})$, and the Gaussian curvature is the ratio of the determinants of the connection and of the coframe, $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$, a function of the first fundamental form alone: this is the theorema egregium in the moving frame.
 
-Along a curve on the surface the frame is the Darboux frame, whose three components are the relative torsion, the normal curvature and the geodesic curvature, $\iota_1=\tau_r\mathrm ds$, $\iota_2=-\rho_n\mathrm ds$, $\iota_3=\rho_g\mathrm ds$, related to the Frenet invariants by $\rho_n=-\rho\sin\theta^{\mathrm{drb}}$, $\rho_g=\rho\cos\theta^{\mathrm{drb}}$ and $\tau_r=\tau+\mathrm d\theta^{\mathrm{drb}}/\mathrm ds$. The frame is integrable exactly when the structure equation $\partial/\partial v\,\iota_1-\partial/\partial u\,\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ hold, the Gauss and Codazzi–Mainardi equations of the classical theory. The curvature lines are the directions making the second fundamental form diagonal, $\tan2\theta^{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$; the asymptotic lines are the directions of vanishing normal curvature, real exactly where $K\le0$; and the geodesics are the curves whose geodesic curvature vanishes, $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$. On the sphere of radius $R$ the frame, the connection and the curvatures are computed explicitly, $K=1/R^2$ and $H=-1/R$, the surface is umbilic, and a latitude circle has geodesic curvature $\cot\theta_0$.
+Along a curve on the surface the frame is the Darboux frame, whose three components are the relative torsion, the normal curvature and the geodesic curvature, $\iota_1=\tau_r\mathrm ds$, $\iota_2=-\rho_n\mathrm ds$, $\iota_3=\rho_g\mathrm ds$, related to the Frenet invariants by $\rho_n=-\rho\sin\theta_{\mathrm{drb}}$, $\rho_g=\rho\cos\theta_{\mathrm{drb}}$ and $\tau_r=\tau+\mathrm d\theta_{\mathrm{drb}}/\mathrm ds$. The frame is integrable exactly when the structure equation $\partial/\partial v\,\iota_1-\partial/\partial u\,\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ hold, the Gauss and Codazzi–Mainardi equations of the classical theory. The curvature lines are the directions making the second fundamental form diagonal, $\tan2\theta_{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$; the asymptotic lines are the directions of vanishing normal curvature, real exactly where $K\le0$; and the geodesics are the curves whose geodesic curvature vanishes, $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$. On the sphere of radius $R$ the frame, the connection and the curvatures are computed explicitly, $K=1/R^2$ and $H=-1/R$, the surface is umbilic, and a latitude circle has geodesic curvature $\cot\theta_0$.
 
 ## Summary of Notation
 
@@ -500,9 +500,9 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 | $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$ | Gauss, in the frame |
 | $\tau_r,\rho_n,\rho_g$ | Relative torsion, normal curvature, geodesic curvature |
 | $\alpha$ | Angle from the surface normal to the Frenet binormal |
-| $\theta^{\mathrm{tnp}}$ | Angle of a direction in the tangent frame |
-| $\tan2\theta^{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$ | Curvature lines |
-| $\tan\theta^{\mathrm{tnp}}=(-L_{12}\pm\sqrt{L_{12}^2-L_{11}L_{22}})/L_{22}$ | Asymptotic lines |
+| $\theta_{\mathrm{tnp}}$ | Angle of a direction in the tangent frame |
+| $\tan2\theta_{\mathrm{tnp}}=2L_{12}/(L_{11}-L_{22})$ | Curvature lines |
+| $\tan\theta_{\mathrm{tnp}}=(-L_{12}\pm\sqrt{L_{12}^2-L_{11}L_{22}})/L_{22}$ | Asymptotic lines |
 | $\iota_3+\mathrm d\arctan(\omega_2/\omega_1)=0$ | Geodesics |
 | $R$ | Radius of the sphere of the worked example |
 

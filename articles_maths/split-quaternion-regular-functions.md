@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies **regular** (equivalently **monogenic**) split-quaternion-valued functions, that is, functions annihilated by the split-quaternion **Cauchy–Riemann operator**. The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ carries an **indefinite** norm of signature $(2,2)$, and this is decisive: the first-order operator has an indefinite principal symbol, the associated second-order operator is an ultrahyperbolic (wave-type) operator rather than a Laplacian, and the algebra has zero divisors whose null cone is the characteristic set on which the Cauchy kernel is singular.
+This article studies **regular** (equivalently **monogenic**) split-quaternion-valued functions, that is, functions annihilated by the split-quaternion **Cauchy–Riemann operator**. The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ carries an **indefinite** norm of signature $(2,2)$, and this is decisive: the first-order operator has an indefinite principal symbol, the associated second-order operator is an ultrahyperbolic (wave-type) operator rather than a Laplacian, and the algebra has zero divisors whose null cone is the characteristic set on which the Cauchy kernel is singular.
 
 The article owns the regularity theory of the category: the operator and its conjugate, the system of regularity equations, the failure of ellipticity, the examples, the harmonicity that survives as a wave equation, and the failure of the complex analogy where the zero divisors intervene. It relies on *Split-Quaternion Analysis* for the differential operators and the Peirce coordinates, on *Split-Quaternion Analysis* for the subalgebra operators, and on the biquaternion counterpart *Biquaternion Regular Functions* for the structural comparison. No physics is invoked; the object called a "Dirac operator" in older literature is here the **Cauchy–Riemann operator**, and that name is used throughout.
 
@@ -30,7 +30,7 @@ The second-order operator $\Box$ is the **ultrahyperbolic operator** of signatur
 
 ## Regularity and the System of Equations
 
-**Definition.** Let $\Omega$ be open in a four-dimensional real subspace, and let $F : \Omega \to \mathbb{H}^{\mathrm{spl}}$ be continuously differentiable. Then $F$ is **left-regular**, or **left-monogenic**, if $\nabla F = 0$ on $\Omega$; it is **right-regular** if $F\nabla := \sum_\mu \partial/\partial Q_\mu F\, e_\mu = 0$; and **anti-regular** if $\bar{\nabla}F = 0$. In this category **regular** without qualification means left-regular, and the operator inverted is the first-order operator $\nabla$, not $\Box$.
+**Definition.** Let $\Omega$ be open in a four-dimensional real subspace, and let $F : \Omega \to \mathbb{H}_{\mathrm{spl}}$ be continuously differentiable. Then $F$ is **left-regular**, or **left-monogenic**, if $\nabla F = 0$ on $\Omega$; it is **right-regular** if $F\nabla := \sum_\mu \partial/\partial Q_\mu F\, e_\mu = 0$; and **anti-regular** if $\bar{\nabla}F = 0$. In this category **regular** without qualification means left-regular, and the operator inverted is the first-order operator $\nabla$, not $\Box$.
 
 **Theorem (the regularity system).** Write $F = F_0 + \vec F$, $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$. Then
 
@@ -70,7 +70,7 @@ which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy�
 
 **The elliptic subalgebra.** On the plane $\mathbb{C} = \mathbb{R}[\vec e_x]$ with $A = q_t + q_x \vec e_x$ ($\vec e_x^2 = -1$), a function independent of $q_y,q_z$ satisfies $\nabla F = 2\partial/\partial\bar A\,F$, so $F$ is regular exactly when it is holomorphic in $A$ in the classical sense. Thus every classical holomorphic function of $A = q_t+q_x \vec e_x$, extended by constancy in $\vec e_y,\vec e_z$, is regular, and $\mathbb{R}[\vec e_x]$ is the elliptic island of the theory.
 
-**The split-complex planes.** On $\mathbb{C}^{\mathrm{spl}}_2 = \mathbb{R}[\vec e_y]$ with $w = q_t + q_y \vec e_y$ ($\vec e_y^2 = +1$), a function independent of $q_x,q_z$ satisfies $\nabla F = (\partial/\partial q_t + \vec e_y\partial/\partial q_y)F$, the **hyperbolic Cauchy–Riemann operator**. Its solutions include the split-complex *conjugates*: the linear function $q_t - q_y \vec e_y$ is regular, because $\nabla(q_t - q_y \vec e_y) = 1 - \vec e_y^2 = 0$, whereas the linear function $q_t + q_y \vec e_y = w$ is not, since $\nabla w = 1 + \vec e_y^2 = 2$. On the split-complex planes the roles of the variable and its conjugate are exchanged relative to the complex case. The same holds on $\mathbb{C}^{\mathrm{spl}}_3 = \mathbb{R}[\vec e_z]$.
+**The split-complex planes.** On $\mathbb{C}_{\mathrm{spl},2} = \mathbb{R}[\vec e_y]$ with $w = q_t + q_y \vec e_y$ ($\vec e_y^2 = +1$), a function independent of $q_x,q_z$ satisfies $\nabla F = (\partial/\partial q_t + \vec e_y\partial/\partial q_y)F$, the **hyperbolic Cauchy–Riemann operator**. Its solutions include the split-complex *conjugates*: the linear function $q_t - q_y \vec e_y$ is regular, because $\nabla(q_t - q_y \vec e_y) = 1 - \vec e_y^2 = 0$, whereas the linear function $q_t + q_y \vec e_y = w$ is not, since $\nabla w = 1 + \vec e_y^2 = 2$. On the split-complex planes the roles of the variable and its conjugate are exchanged relative to the complex case. The same holds on $\mathbb{C}_{\mathrm{spl},3} = \mathbb{R}[\vec e_z]$.
 
 **The identity function is not regular.** On the full algebra, $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_t^2 + \vec e_x^2 + \vec e_y^2 + \vec e_z^2 = 1 - 1 + 1 + 1 = 2 e_t \neq 0$. So the identity is not regular, as in the quaternion case.
 
@@ -80,7 +80,7 @@ $$
 G(\tilde q) = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}^2},
 $$
 
-which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}^{\mathrm{spl}}$ has zero divisors, $\langle\tilde q\rangle_{\natural} = 0$ on the whole cone $\mathcal{N}$, so $G$ is singular on a **three-dimensional cone**, not merely at the origin. This is the first and deepest failure of the complex analogy.
+which satisfies $\nabla G = 0$ away from the null set. But because $\mathbb{H}_{\mathrm{spl}}$ has zero divisors, $\langle\tilde q\rangle_{\natural} = 0$ on the whole cone $\mathcal{N}$, so $G$ is singular on a **three-dimensional cone**, not merely at the origin. This is the first and deepest failure of the complex analogy.
 
 ## Harmonicity and the Factorization of the Ultrahyperbolic Operator
 
@@ -118,20 +118,20 @@ The split-quaternion case is the **fully indefinite** one: the form is indefinit
 
 ## Summary
 
-The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial/\partial Q_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\zeta)$ obeys $s(\zeta)s^{\natural}(\zeta) = \langle \zeta\rangle_{\natural}e_t$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_t+q_x \vec e_x$; the split-complex conjugates on the hyperbolic planes $\mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
+The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial/\partial Q_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is **not elliptic**: its symbol $s(\zeta)$ obeys $s(\zeta)s^{\natural}(\zeta) = \langle \zeta\rangle_{\natural}e_t$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_t+q_x \vec e_x$; the split-complex conjugates on the hyperbolic planes $\mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$; and the Cauchy kernel $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\nabla = \sum_\mu e_\mu\partial/\partial Q_\mu$ | the Cauchy–Riemann operator | this article |
 | $\bar{\nabla} = e_t\partial/\partial q_t - \vec e_x\partial/\partial q_x - \vec e_y\partial/\partial q_y - \vec e_z\partial/\partial q_z$ | its conjugate | this article |
 | $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ | the ultrahyperbolic operator, signature $(2,2)$ | this article |
 | $\nabla F = 0$ | left-regular (monogenic); $F\nabla=0$ right-regular | this article |
 | $g = \operatorname{diag}(1,1,-1,-1)$ | the Clifford sign matrix | this article |
 | $\mathbb{C} = \mathbb{R}[\vec e_x]$ | the elliptic subalgebra, $A = q_t+q_x \vec e_x$ | *Split-Quaternion Elementary Functions* |
-| $\mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$ | the split-complex planes, hyperbolic Cauchy–Riemann operators | *Split-Quaternion Split-Complex Subspaces* |
+| $\mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$ | the split-complex planes, hyperbolic Cauchy–Riemann operators | *Split-Quaternion Split-Complex Subspaces* |
 | $G(\tilde q) = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$ | the Cauchy kernel, singular on $\mathcal{N}$ | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / characteristic set | *Split-Quaternion Zero Divisors* |
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |

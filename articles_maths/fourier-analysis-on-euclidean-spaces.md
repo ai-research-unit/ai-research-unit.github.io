@@ -17,7 +17,7 @@ The prerequisites are *Measure Theory and Integration* for the Lebesgue integral
 
 ### Definition and Elementary Properties
 
-**Definition.** For $f\in L^1(\mathbb{R}^n)$ the **Fourier transform** is $(\mathcal F f)(\zeta) = \int f(x)\exp(-2\pi ix\cdot\zeta)dx$, and the **reflection** is $f^{\mathrm{refl}}(x) = f(-x)$, written with a qualifier so that the tilde stays the mark of an element of the algebra.
+**Definition.** For $f\in L^1(\mathbb{R}^n)$ the **Fourier transform** is $(\mathcal F f)(\zeta) = \int f(x)\exp(-2\pi ix\cdot\zeta)dx$, and the **reflection** is $f_{\mathrm{refl}}(x) = f(-x)$, written with a qualifier so that the tilde stays the mark of an element of the algebra.
 
 **Theorem.** The transform is a linear map $L^1\to C_0(\mathbb{R}^n)$, of operator norm at most $1$, where $C_0$ is the Banach space of continuous functions vanishing at infinity with the sup norm; and the following identities hold, for $f\in L^1$, $y\in\mathbb{R}^n$, $\lambda>0$:
 
@@ -65,7 +65,7 @@ the right side tends to $\check f(x)$ by dominated convergence as $\epsilon\down
 
 **Definition.** The **Schwartz class** $\mathcal{S}(\mathbb{R}^n)$ consists of the $C^\infty$ functions $f$ with $\sup_x\lvert x^\alpha\partial^\beta f(x)\rvert<\infty$ for all multi-indices $\alpha,\beta$; it is a topological vector space under the seminorms $\lVert f\rVert_{\alpha,\beta} = \sup_x\lvert x^\alpha\partial^\beta f(x)\rvert$, and $\mathcal{S}\subseteq L^{n}$ for every $p$, with $\mathcal{S}$ dense in $L^{n}$ for $p<\infty$.
 
-**Theorem.** The Fourier transform is a linear homeomorphism of $\mathcal{S}$ onto itself, with inverse the transform composed with the reflection $g\mapsto g^{\mathrm{refl}}$, $g^{\mathrm{refl}}(x)=g(-x)$: $\check g = \mathcal F(g^{\mathrm{refl}})$; and $\mathcal F^2 f = f^{\mathrm{refl}}$, so that the transform has order four, $\mathcal F^4 f = f$.
+**Theorem.** The Fourier transform is a linear homeomorphism of $\mathcal{S}$ onto itself, with inverse the transform composed with the reflection $g\mapsto g_{\mathrm{refl}}$, $g_{\mathrm{refl}}(x)=g(-x)$: $\check g = \mathcal F(g_{\mathrm{refl}})$; and $\mathcal F^2 f = f_{\mathrm{refl}}$, so that the transform has order four, $\mathcal F^4 f = f$.
 
 **Proof sketch.** The identities (d) and (e) above show that the transform interchanges the operations of multiplication by $x^\alpha$ and differentiation $\partial^\beta$, which is precisely the statement that the seminorms of $\mathcal{S}$ are permuted; hence the transform is continuous $\mathcal{S}\to\mathcal{S}$ and the inverse is continuous. The inversion formula is proved on $\mathcal{S}$ by the argument of the previous section, and the reflection identity follows from it.
 
@@ -111,7 +111,7 @@ and it extends uniquely to a unitary operator $\mathcal{F}:L^2\to L^2$, with $\m
 $$
 \langle f,g\rangle = \langle \mathcal F f,\mathcal F g\rangle .
 $$
-**Proof sketch.** The multiplication formula with $g = \overline{\mathcal F f}$ gives the isometry on $\mathcal{S}$, using that the transform of $\overline{\mathcal F f}$ is $\overline f$ — from $\widehat{\bar h}(\zeta) = \overline{(\mathcal F h)(-\zeta)}$ and $\mathcal F^2 f = f^{\mathrm{refl}}$ — and that the inversion theorem applies; the extension to $L^2$ is by density of $\mathcal{S}$ in $L^2$ and by completeness of $L^2$ — the transform is uniformly continuous for the $L^2$ norm on a dense set, so it extends uniquely, and the extension is surjective because $\mathcal{F}^4 = 1$ on the dense set.
+**Proof sketch.** The multiplication formula with $g = \overline{\mathcal F f}$ gives the isometry on $\mathcal{S}$, using that the transform of $\overline{\mathcal F f}$ is $\overline f$ — from $\widehat{\bar h}(\zeta) = \overline{(\mathcal F h)(-\zeta)}$ and $\mathcal F^2 f = f_{\mathrm{refl}}$ — and that the inversion theorem applies; the extension to $L^2$ is by density of $\mathcal{S}$ in $L^2$ and by completeness of $L^2$ — the transform is uniformly continuous for the $L^2$ norm on a dense set, so it extends uniquely, and the extension is surjective because $\mathcal{F}^4 = 1$ on the dense set.
 
 ### Eigenfunctions and the Order Four
 
@@ -196,7 +196,7 @@ The Fourier transform $(\mathcal F f)(\zeta) = \int_{\mathbb{R}^n}f(x)\exp(-2\pi
 | Symbol | Meaning |
 |---|---|
 | $\mathcal F f$, $\check f$ | Fourier transform and its inverse on $\mathbb{R}^n$; $(\mathcal F f)(\zeta) = \int f(x)\exp(-2\pi ix\cdot\zeta)dx$ |
-| $f^{\mathrm{refl}}$ | Reflection $x\mapsto f(-x)$ |
+| $f_{\mathrm{refl}}$ | Reflection $x\mapsto f(-x)$ |
 | $C_0(\mathbb{R}^n)$ | Continuous functions vanishing at infinity, with the sup norm |
 | $f*g$ | Convolution |
 | $\mathcal{S}(\mathbb{R}^n)$ | Schwartz class of rapidly decreasing smooth functions |

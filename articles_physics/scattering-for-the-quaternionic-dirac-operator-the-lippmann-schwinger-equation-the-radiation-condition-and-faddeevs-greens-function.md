@@ -194,32 +194,32 @@ The source adds one restriction that the corpus should note, because it is easy 
 
 ## The Scattering Problem and the Lippmann–Schwinger Equation
 
-The problem is now stated for the Dirac-type operator itself, with a potential of the most general kind. Let $m(x)$ be a **quaternion-valued potential with compact support** $G$, and let $k$ be a vector identified with $k_1\vec e_x+k_2\vec e_y+k_3\vec e_z\in\mathbb{H}$, with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$. Let $u^{\mathrm{inc}}$ be an incident field solving the **homogeneous** equation
+The problem is now stated for the Dirac-type operator itself, with a potential of the most general kind. Let $m(x)$ be a **quaternion-valued potential with compact support** $G$, and let $k$ be a vector identified with $k_1\vec e_x+k_2\vec e_y+k_3\vec e_z\in\mathbb{H}$, with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$. Let $u_{\mathrm{inc}}$ be an incident field solving the **homogeneous** equation
 
 $$
-D_3u^{\mathrm{inc}} + u^{\mathrm{inc}}k = 0 \qquad \text{in } \mathbb{R}^3 . \tag{8.1}
+D_3u_{\mathrm{inc}} + u_{\mathrm{inc}}k = 0 \qquad \text{in } \mathbb{R}^3 . \tag{8.1}
 $$
 
-The scattering problem is to find a scattered field $u^{\mathrm{sc}}$ such that the total field $u=u^{\mathrm{inc}}+u^{\mathrm{sc}}$ solves the **inhomogeneous** equation
+The scattering problem is to find a scattered field $u_{\mathrm{sc}}$ such that the total field $u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ solves the **inhomogeneous** equation
 
 $$
 D_3u + uk = u\,m(x)\,k \qquad \text{in } \mathbb{R}^3 , \tag{8.2}
 $$
 
-with $u = u^{\mathrm{inc}}+u^{\mathrm{sc}}$ and $u^{\mathrm{sc}}$ satisfying the radiation condition
+with $u = u_{\mathrm{inc}}+u_{\mathrm{sc}}$ and $u_{\mathrm{sc}}$ satisfying the radiation condition
 
 $$
-k\,u^{\mathrm{sc}}(x) + \frac{ix}{\lvert x\rvert}\,u^{\mathrm{sc}}(x)\,k = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty), \tag{8.4}
+k\,u_{\mathrm{sc}}(x) + \frac{ix}{\lvert x\rvert}\,u_{\mathrm{sc}}(x)\,k = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty), \tag{8.4}
 $$
 
-and if $k$ is a zero divisor, the additional hypothesis $u^{\mathrm{sc}}(x)=o(1)$. The multiplication is on the **right** throughout, as the displayed equations (8.2) and (8.4) show; the source's prose names the same operator once as $D+k$ and once with the right multiplier $R_k$, and its reduction of the next section prints the left multiplier $L_k$ instead, so the side has to be read from the equations rather than from the symbols. For a scalar $k$ the two sides agree and the point is moot; for the vector $k$ of the scattering problem they do not: a constant $k$ still commutes with $D_3$, so the two agree to second order, but the first-order operators differ by the bracket $q\mapsto kq-qk$, which need not vanish. The potential may be scalar, vector or quaternion-valued; the source writes $m$ for all three and says so, and this is what makes the problem a scattering problem for a **medium** rather than for a scalar obstacle. In the optical interpretation of the Introduction, $m$ is the contrast of the medium and the right-hand side $umk$ is the Born-type source of the scattered field.
+and if $k$ is a zero divisor, the additional hypothesis $u_{\mathrm{sc}}(x)=o(1)$. The multiplication is on the **right** throughout, as the displayed equations (8.2) and (8.4) show; the source's prose names the same operator once as $D+k$ and once with the right multiplier $R_k$, and its reduction of the next section prints the left multiplier $L_k$ instead, so the side has to be read from the equations rather than from the symbols. For a scalar $k$ the two sides agree and the point is moot; for the vector $k$ of the scattering problem they do not: a constant $k$ still commutes with $D_3$, so the two agree to second order, but the first-order operators differ by the bracket $q\mapsto kq-qk$, which need not vanish. The potential may be scalar, vector or quaternion-valued; the source writes $m$ for all three and says so, and this is what makes the problem a scattering problem for a **medium** rather than for a scalar obstacle. In the optical interpretation of the Introduction, $m$ is the contrast of the medium and the right-hand side $umk$ is the Born-type source of the scattered field.
 
 ### The integral equation and its equivalence with the problem
 
 The source's Theorem 8.2 states that the differential problem and an integral equation of Lippmann–Schwinger type have the same solutions. If $u$ solves (8.1)–(8.4), then $u$ restricted to $G$ solves
 
 $$
-\boxed{\;u(x) = u^{\mathrm{inc}}(x) - \int_G \Bigl[(-D_3F_k)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_k(x-y)\,k\Bigr] dy , \tag{8.5}\;}
+\boxed{\;u(x) = u_{\mathrm{inc}}(x) - \int_G \Bigl[(-D_3F_k)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_k(x-y)\,k\Bigr] dy , \tag{8.5}\;}
 $$
 
 and conversely every solution of (8.5) solves the scattering problem. The equivalence is not a formality, and its two halves are computed in the source. In the forward direction one forms the integral $b$ on the right of (8.5); since the kernel of the Helmholtz operator is a fundamental solution, $b$ solves the same inhomogeneous equation as $u$, so $w=u-b$ solves the **homogeneous** equation $D_3w+wk=0$; and because each kernel decays like $\lvert x\rvert^{-2}$ and $u,m$ have compact support, $w$ is an outgoing solution of the homogeneous equation, whence $w=0$ by the representation of the radiation-condition proposition. That is, the integral equation is the differential problem with the radiation condition solved out, and the forcing term is the potential. In the other direction the same computation is read backwards, and the source notes that the region of integration may be replaced by any domain containing the support of $m$, which is what makes the equation a Fredholm equation on a bounded domain.
@@ -263,7 +263,7 @@ which is then expanded in scalar and vector parts into a system of the required 
 
 ### The uniqueness theorem
 
-The source's Theorem 8.6 gathers the two inputs. For $k\in\mathbb{C}^3\setminus\{0\}$ there is a **unique** solution of the scattering problem (8.1)–(8.4), and it depends continuously on the incident field $u^{\mathrm{inc}}$ in the maximum norm. The proof is the Fredholm argument: the homogeneous equation has only the trivial solution by the previous paragraph, so the integral operator is boundedly invertible on $C(\bar B_R)$, whence existence and continuous dependence.
+The source's Theorem 8.6 gathers the two inputs. For $k\in\mathbb{C}^3\setminus\{0\}$ there is a **unique** solution of the scattering problem (8.1)–(8.4), and it depends continuously on the incident field $u_{\mathrm{inc}}$ in the maximum norm. The proof is the Fredholm argument: the homogeneous equation has only the trivial solution by the previous paragraph, so the integral operator is boundedly invertible on $C(\bar B_R)$, whence existence and continuous dependence.
 
 Two remarks on the statement, both of which the corpus should keep distinct from the source's own framing. First, the theorem is a theorem about the **direct** problem: existence, uniqueness and stability for a *given* incident field and a *given* potential. The chapter's title and abstract say inverse scattering, and the Faddeev Green's function of the next section is indeed a tool of the inverse problem, but the inverse problem proper — recovering $m$ from the field at infinity — is not solved in the chapter. Second, the proof closes not by the compactness alone but by the **outgoing** representation: the field is written as an integral over a large sphere, the radiation condition makes that integral vanish as the radius grows, so $u=0$ outside a ball, and the unique continuation principle extends the vanishing inward. The radiation condition is therefore not an auxiliary convenience in this theory; it is the half of the argument that the differential problem alone does not supply.
 
@@ -339,7 +339,7 @@ $$
 The two Green's functions of the shifted operators are then obtained by applying the first-order operator to $g_\gamma$: the source gives
 
 $$
-\boxed{\;G^{\mathrm{lor}}_\gamma(\lambda,z) = (D_3+L_{iz\gamma}-k)\,g_\gamma(\lambda,z)\;}
+\boxed{\;G_{\mathrm{lor},\gamma}(\lambda,z) = (D_3+L_{iz\gamma}-k)\,g_\gamma(\lambda,z)\;}
 $$
 
 for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-k)(D_3+L_{iz\gamma}+k) = -\Delta-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k^2-z^2$, and a **different** Faddeev Green's function
@@ -354,7 +354,7 @@ $$
 \lVert g_\gamma(\lambda,z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le C\,(\lambda+\lvert z\rvert)^{\alpha} .
 $$
 
-This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G^{\mathrm{lor}}_\gamma$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
+This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G_{\mathrm{lor},\gamma}$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
 
 ## What the Source Establishes, Transcribes, and Does Not
 
@@ -369,7 +369,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 - The radiation condition of Proposition 7.3 in both forms, and the additional decay hypothesis in the zero-divisor case.
 - The Lippmann–Schwinger equation (8.5) and its equivalence with the differential problem.
 - The weak-singularity bounds, the compactness they give, the unique continuation principle and the uniqueness theorem.
-- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G^{\mathrm{lor}}_\gamma$ and $G^{\mathrm R}_\gamma$.
+- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G_{\mathrm{lor},\gamma}$ and $G^{\mathrm R}_\gamma$.
 
 **Established, in the sense that it was recomputed here.**
 
@@ -387,11 +387,11 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 1. **Is there a four-variable scattering theory for $\tilde\nabla$?** The corpus's *Biquaternion Regular Functions* works on $\mathbb{H}_{\mathbb{B}}$ in four variables and its integral theory is complete there. The source's scattering theory is three-dimensional and spatial, with the frequency entering through $k$; the four-dimensional analogue, in which the radiation condition would be a condition on the two cones of the null quadric, is not in the corpus and is not in this source. Is the spatial reduction a convenience of the optical setting, or is the four-variable problem genuinely different?
 
-2. **Does the corpus's zero-divisor algebra improve the isotropic case?** The source adds $u^{\mathrm{sc}}=o(1)$ when $k$ is isotropic. The corpus knows the geometry of the null cone: an isotropic $k$ has vanishing norm, $\langle k\rangle_{\natural}=0$, the elements $\tfrac12(1\pm i\vec u_x)$ are idempotents and zero divisors on it, and the cone carries the light-cone structure and the sphere of idempotents (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Idempotents*, *The Light Cone as the Biquaternion Zero-Divisor Cone*). Is there a radiation condition adapted to the degenerate direction, rather than a hypothesis that avoids it?
+2. **Does the corpus's zero-divisor algebra improve the isotropic case?** The source adds $u_{\mathrm{sc}}=o(1)$ when $k$ is isotropic. The corpus knows the geometry of the null cone: an isotropic $k$ has vanishing norm, $\langle k\rangle_{\natural}=0$, the elements $\tfrac12(1\pm i\vec u_x)$ are idempotents and zero divisors on it, and the cone carries the light-cone structure and the sphere of idempotents (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *Idempotents*, *The Light Cone as the Biquaternion Zero-Divisor Cone*). Is there a radiation condition adapted to the degenerate direction, rather than a hypothesis that avoids it?
 
 3. **Can the one-dimensional transform and the three-dimensional equation be read in one language?** The corpus has the inverse scattering transform and the Lax pair in *Integrable Systems* and *Soliton Theory*, and the source mentions the AKNS method as a motivation for the Dirac-operator route. Both routes are built on a factorisation of a Dirac-type operator, in different dimensions; is the Faddeev Green's function the three-dimensional input of a Riemann–Hilbert problem whose one-dimensional shadow is the corpus's transform?
 
-4. **What does the Born approximation give for the quaternionic potential?** The corpus's Born approximation is in *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form*, and the source's optical motivation uses the first-order Born term with the scattering potential $k^2[m^2-1]$. Is the first iteration of (8.5) — the integral with $u$ replaced by $u^{\mathrm{inc}}$ — the same object as the corpus's Born term, and does the quaternionic potential add a polarisation structure the scalar optical formula lacks?
+4. **What does the Born approximation give for the quaternionic potential?** The corpus's Born approximation is in *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form*, and the source's optical motivation uses the first-order Born term with the scattering potential $k^2[m^2-1]$. Is the first iteration of (8.5) — the integral with $u$ replaced by $u_{\mathrm{inc}}$ — the same object as the corpus's Born term, and does the quaternionic potential add a polarisation structure the scalar optical formula lacks?
 
 5. **Is the vector-field restriction removable by the material/informational split?** A general quaternion-valued field splits into a scalar part and a vector part, and the corpus reads those two parts as the informational and the material sectors (*The Informational Sector: States, Observables and Probability*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). The source discards one half; the corpus's interpretation would keep both. Does the scattering theory of the full field split into two coupled problems along the same line?
 
@@ -399,7 +399,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 The corpus's theory of the shifted operator $D_\alpha$ is a direct theory: it decides boundary-value problems. This article states the scattering theory of the same operator, in the three-dimensional spatial setting, as it stands in a short paper of the quaternionic-analysis school. The subject is the operator $D_3+R_k$ with a compactly supported quaternionic potential $m(x)$, and the objects that make the theory work are three.
 
-The **Lippmann–Schwinger equation** is equivalent to the differential problem with the outgoing radiation condition: the total field $u=u^{\mathrm{inc}}+u^{\mathrm{sc}}$ satisfies the integral equation exactly when it satisfies $D_3u+uk=umk$ and $u^{\mathrm{sc}}$ is outgoing. The equivalence is the radiation condition solved out, and the source's proof uses the $O(\lvert x\rvert^{-2})$ decay of the kernels to show that the integral is outgoing.
+The **Lippmann–Schwinger equation** is equivalent to the differential problem with the outgoing radiation condition: the total field $u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ satisfies the integral equation exactly when it satisfies $D_3u+uk=umk$ and $u_{\mathrm{sc}}$ is outgoing. The equivalence is the radiation condition solved out, and the source's proof uses the $O(\lvert x\rvert^{-2})$ decay of the kernels to show that the integral is outgoing.
 
 **Uniqueness and existence** follow from the Fredholm alternative with two inputs: the compactness of the integral operator, which is the weak singularity $\lvert x-y\rvert^{-2}, \lvert x-y\rvert^{-1}$ of the kernels, and the uniqueness of the homogeneous solution, which is the unique continuation principle applied to a system derived by applying $D_3$ a second time. The proof closes through the radiation condition: the field is represented by a sphere integral that the condition makes vanish, so the field vanishes outside a ball, and unique continuation carries the vanishing inward.
 
@@ -421,13 +421,13 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $C_k=-D_{-k}F_k$ | Cauchy-type kernel of the Dirac-type operator, $(k+\vec u_x/\lvert x\rvert-ik\vec u_x)\exp(ik\lvert x\rvert)/(4\pi)$ |
 | $k f+\vec u_x fk=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\vec u_x$ is a zero divisor |
 | $m(x)$ | Quaternion-valued potential with compact support $G$ |
-| $u^{\mathrm{inc}},u^{\mathrm{sc}},u=u^{\mathrm{inc}}+u^{\mathrm{sc}}$ | Incident, scattered and total field |
+| $u_{\mathrm{inc}},u_{\mathrm{sc}},u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ | Incident, scattered and total field |
 | (8.1)–(8.4) | The scattering problem: homogeneous incident field, inhomogeneous total field, outgoing scattered field |
 | (8.5) | The Lippmann–Schwinger integral equation; equivalent to (8.1)–(8.4) |
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
 | $k=\eta+t\gamma$, $\lambda^2=k^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
 | $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\zeta^2+2z\gamma\cdot\zeta-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
-| $G^{\mathrm{lor}}_\gamma(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
+| $G_{\mathrm{lor},\gamma}(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 
 ## Further Reading
 

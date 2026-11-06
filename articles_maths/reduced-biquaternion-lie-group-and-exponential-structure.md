@@ -8,13 +8,13 @@ Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ 
 
 ## The Algebra as a Lie Algebra
 
-**Definition.** The **commutator bracket** on $\mathbb{B}^{\mathrm{red}}$ is $[\breve Q_{1},\breve Q_{2}]=\breve Q_{1}\breve Q_{2}-\breve Q_{2}\breve Q_{1}$.
+**Definition.** The **commutator bracket** on $\mathbb{B}_{\mathrm{red}}$ is $[\breve Q_{1},\breve Q_{2}]=\breve Q_{1}\breve Q_{2}-\breve Q_{2}\breve Q_{1}$.
 
 **Theorem (the bracket is zero).** The algebra is **commutative**, so
 $$
-[\breve Q_{1},\breve Q_{2}]=0\qquad\text{for all }\breve Q_{1},\breve Q_{2}\in\mathbb{B}^{\mathrm{red}}:
+[\breve Q_{1},\breve Q_{2}]=0\qquad\text{for all }\breve Q_{1},\breve Q_{2}\in\mathbb{B}_{\mathrm{red}}:
 $$
-the bracket is identically zero and $\mathbb{B}^{\mathrm{red}}$ is an **abelian** real Lie algebra of dimension four. Its centre is the whole algebra, its derived algebra is $\{0\}$, and it is the Lie algebra of its own group of units.
+the bracket is identically zero and $\mathbb{B}_{\mathrm{red}}$ is an **abelian** real Lie algebra of dimension four. Its centre is the whole algebra, its derived algebra is $\{0\}$, and it is the Lie algebra of its own group of units.
 
 *Proof.* The multiplication is commutative, so $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$; an abelian Lie algebra has all brackets zero, its centre is the whole space and its derived algebra vanishes; and the Lie algebra of a Lie group is its tangent space at the identity with the commutator of the associative product, which here is the algebra itself.
 
@@ -24,7 +24,7 @@ the bracket is identically zero and $\mathbb{B}^{\mathrm{red}}$ is an **abelian*
 
 ## The Exponential
 
-**Definition.** For $\breve Q\in\mathbb{B}^{\mathrm{red}}$ the **exponential** is $\exp \breve Q=\sum_{n\ge0}\breve Q^{n}/n!$.
+**Definition.** For $\breve Q\in\mathbb{B}_{\mathrm{red}}$ the **exponential** is $\exp \breve Q=\sum_{n\ge0}\breve Q^{n}/n!$.
 
 **Theorem (the closed form and the group law).** The exponential is the Lie-group exponential of the abelian Lie algebra, it is
 $$
@@ -40,7 +40,7 @@ and it satisfies $\exp(\breve Q_{1}+\breve Q_{2})=\exp \breve Q_{1}\exp \breve Q
 $$
 \ker\exp=2\pi i\bigl(\mathbb{Z}\,\Pi_++\mathbb{Z}\,\Pi_-\bigr),
 $$
-isomorphic to $\mathbb{Z}^{2}$; consequently $\exp$ is a covering map $\mathbb{B}^{\mathrm{red}}\to{\mathbb{B}^{\mathrm{red}}}^{\times}$, and it is the universal covering, the algebra being simply connected.
+isomorphic to $\mathbb{Z}^{2}$; consequently $\exp$ is a covering map $\mathbb{B}_{\mathrm{red}}\to{\mathbb{B}_{\mathrm{red}}}^{\times}$, and it is the universal covering, the algebra being simply connected.
 
 *Proof.* An element $\breve Q$ with coordinates $Q_{+},Q_{-}$ has $\exp \breve Q=1$ exactly when $e^{Q_{+}}=e^{Q_{-}}=1$, that is $Q_{+},Q_{-}\in2\pi i\mathbb{Z}$; a unit has $Q_{+},Q_{-}\neq0$ and choosing $S$ with coordinates $\log Q_{+},\log Q_{-}$ gives $\exp S=\breve Q$, so $\exp$ is onto the units. The kernel is discrete of rank two, so the map is a covering; the algebra is $\mathbb{R}^{4}$, simply connected, so it is the universal cover.
 
@@ -49,7 +49,7 @@ isomorphic to $\mathbb{Z}^{2}$; consequently $\exp$ is a covering map $\mathbb{B
 **Theorem (the structure of the unit group).** The group of units is
 $$
 \boxed{\;
-{\mathbb{B}^{\mathrm{red}}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}
+{\mathbb{B}_{\mathrm{red}}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}
 \;},
 $$
 abelian, of real dimension four, connected but not simply connected, with fundamental group $\mathbb{Z}^{2}$. As a Lie group it is the product of the two complex multiplicative groups, and it is isomorphic to $\mathbb{R}^{2}\times T^{2}$ with $T^{2}=S^{1}\times S^{1}$ the two-torus.
@@ -62,7 +62,7 @@ abelian, of real dimension four, connected but not simply connected, with fundam
 
 ## The Norm-One Group
 
-**Definition.** The **norm-one group** is $\{\breve Q\in{\mathbb{B}^{\mathrm{red}}}^{\times}:\langle \breve Q\rangle_{\mathrm{ts}}=1\}$, and the **maximal compact subgroup** is $T^{2}=\{\breve Q\in{\mathbb{B}^{\mathrm{red}}}^{\times}:\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$.
+**Definition.** The **norm-one group** is $\{\breve Q\in{\mathbb{B}_{\mathrm{red}}}^{\times}:\langle \breve Q\rangle_{\mathrm{ts}}=1\}$, and the **maximal compact subgroup** is $T^{2}=\{\breve Q\in{\mathbb{B}_{\mathrm{red}}}^{\times}:\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$.
 
 **Theorem (the norm-one group).** The norm-one group is
 $$
@@ -88,9 +88,9 @@ compact of dimension two, and it is the group of units lying in the Euclidean un
 
 *Proof.* $\exp(tX)$ has coordinates $e^{tQ_{X+}},e^{tQ_{X-}}$, which are bounded for all real $t$ exactly when both $Q_{X+}$ and $Q_{X-}$ are purely imaginary; the coordinates $Q_{X+}=Q_{X\blacktriangle}+Q_{X\blacktriangledown}$ and $Q_{X-}=Q_{X\blacktriangle}-Q_{X\blacktriangledown}$ are simultaneously purely imaginary exactly when $Q_{X\blacktriangle}$ and $Q_{X\blacktriangledown}$ are, that is when $X\in\mathbb{R}i\oplus\mathbb{R}ij$; the two subspaces $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ are the real and the purely imaginary $Q_{\blacktriangle}$-and-$Q_{\blacktriangledown}$ parts, and the complement condition gives the hyperbolic case.
 
-**Corollary (the model subgroups and the maximal torus).** The **elliptic circle** $\exp(i\theta)=\cos\theta+i\sin\theta$ is the compact subgroup in the plane $\mathbb{R}\{1,i\}$, and the **hyperbolic subgroup** $\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}$ is the non-compact subgroup in the plane $\mathbb{R}\{1,j\}$. The full elliptic subgroup is generated by the whole two-plane $\mathbb{R}\{i,ij\}$ of definite directions: for $X=i\alpha+ij\beta$ the coordinates are $Q_{X+}=i(\alpha+\beta)$ and $Q_{X-}=i(\alpha-\beta)$, so $\exp(tX)$ sweeps the whole two-torus $T^{2}$ as $\alpha,\beta$ vary. The hyperbolic directions are those with a non-zero component in the complementary two-plane $\mathbb{R}\{1,j\}$, the component in $\mathbb{R}\{i,ij\}$ contributing only an elliptic factor, and the unit group is the product of the two-torus and the two real directions,
+**Corollary (the model subgroups and the maximal torus).** The **elliptic circle** $\exp(i\theta)=\cos\theta+i\sin\theta$ is the compact subgroup in the plane $\mathbb{R}\{1,i\}$, and the **hyperbolic subgroup** $\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ is the non-compact subgroup in the plane $\mathbb{R}\{1,j\}$. The full elliptic subgroup is generated by the whole two-plane $\mathbb{R}\{i,ij\}$ of definite directions: for $X=i\alpha+ij\beta$ the coordinates are $Q_{X+}=i(\alpha+\beta)$ and $Q_{X-}=i(\alpha-\beta)$, so $\exp(tX)$ sweeps the whole two-torus $T^{2}$ as $\alpha,\beta$ vary. The hyperbolic directions are those with a non-zero component in the complementary two-plane $\mathbb{R}\{1,j\}$, the component in $\mathbb{R}\{i,ij\}$ contributing only an elliptic factor, and the unit group is the product of the two-torus and the two real directions,
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}\cong T^{2}\times\mathbb{R}^{2},
+{\mathbb{B}_{\mathrm{red}}}^{\times}\cong T^{2}\times\mathbb{R}^{2},
 $$
 the maximal compact subgroup being the maximal torus $T^{2}$.
 
@@ -108,7 +108,7 @@ unique under the phase-range convention, and it is a unit exactly when $\rho_{1}
 
 *Proof.* The polar form is that of *Modulus–Unit Polar Decomposition of Reduced Biquaternions*, the scales being the moduli of the two coordinates and the phases their arguments; the exponential parametrisation of a unit is the surjectivity statement above.
 
-**Corollary (the parametrisation of the unit group).** The unit group is parametrised by two positive scales and two phases, ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong(\mathbb{R}_{>0})^{2}\times(S^{1})^{2}$, and the exponential realises the covering $\mathbb{R}^{4}=(\mathbb{R}\times\mathbb{R})\times(\mathbb{R}\times\mathbb{R})\to$ the unit group, the source being the two log-scales and the two lifted phases.
+**Corollary (the parametrisation of the unit group).** The unit group is parametrised by two positive scales and two phases, ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong(\mathbb{R}_{>0})^{2}\times(S^{1})^{2}$, and the exponential realises the covering $\mathbb{R}^{4}=(\mathbb{R}\times\mathbb{R})\times(\mathbb{R}\times\mathbb{R})\to$ the unit group, the source being the two log-scales and the two lifted phases.
 
 *Proof.* Each coordinate is $Q_{+}=\rho_{1}e^{i\theta_{1}}$ with $\rho_{1}>0$, and the product of the two complex multiplicative groups is the displayed product; the exponential replaces each $\rho_{1}>0$ by the real parameter $\log\rho_{1}$.
 
@@ -118,21 +118,21 @@ The biquaternion algebra is simple, its Lie algebra is a real form of $\mathfrak
 
 ## Summary
 
-The reduced biquaternion algebra is an abelian real Lie algebra of dimension four under the commutator, its bracket being identically zero because the multiplication is commutative; its centre is the whole algebra and its derived algebra vanishes. The exponential is $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, satisfies the group law for all arguments, and is a covering map onto the unit group with kernel the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$; it is the universal covering, the algebra being simply connected. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian, connected, of dimension four and fundamental group $\mathbb{Z}^{2}$, isomorphic to $\mathbb{R}^{2}\times T^{2}$. The norm-one group $\{\langle \breve Q\rangle_{\mathrm{ts}}=1\}\cong\mathbb{C}^{\times}$ is non-compact of dimension two, because the algebra norm is complex-valued, and the maximal compact subgroup is the Clifford torus $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ of the Euclidean unit sphere $S^{3}$. The elliptic one-parameter subgroups are generated by the definite directions $\mathbb{R}\{i,ij\}$ and the hyperbolic ones by the indefinite directions $\mathbb{R}\{1,j\}$, with the model subgroups $\exp(i\theta)$ and $\exp(j\theta^{\mathrm{rpd}})$. Every element has the polar form $\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-$ and every unit the exponential parametrisation. Against the non-abelian biquaternion case and the reductive split biquaternion case, the reduced case is the abelian extreme, its unit group toroidal and its compact group the two-torus rather than the product of the two three-spheres.
+The reduced biquaternion algebra is an abelian real Lie algebra of dimension four under the commutator, its bracket being identically zero because the multiplication is commutative; its centre is the whole algebra and its derived algebra vanishes. The exponential is $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-=e^{Q_{\blacktriangle}}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$, satisfies the group law for all arguments, and is a covering map onto the unit group with kernel the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$; it is the universal covering, the algebra being simply connected. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian, connected, of dimension four and fundamental group $\mathbb{Z}^{2}$, isomorphic to $\mathbb{R}^{2}\times T^{2}$. The norm-one group $\{\langle \breve Q\rangle_{\mathrm{ts}}=1\}\cong\mathbb{C}^{\times}$ is non-compact of dimension two, because the algebra norm is complex-valued, and the maximal compact subgroup is the Clifford torus $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ of the Euclidean unit sphere $S^{3}$. The elliptic one-parameter subgroups are generated by the definite directions $\mathbb{R}\{i,ij\}$ and the hyperbolic ones by the indefinite directions $\mathbb{R}\{1,j\}$, with the model subgroups $\exp(i\theta)$ and $\exp(j\theta_{\mathrm{rpd}})$. Every element has the polar form $\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-$ and every unit the exponential parametrisation. Against the non-abelian biquaternion case and the reductive split biquaternion case, the reduced case is the abelian extreme, its unit group toroidal and its compact group the two-torus rather than the product of the two three-spheres.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $[\breve Q_{1},\breve Q_{2}]=\breve Q_{1}\breve Q_{2}-\breve Q_{2}\breve Q_{1}=0$ | Commutator bracket, identically zero |
-| $\mathbb{B}^{\mathrm{red}}$ | Abelian Lie algebra of dimension four |
+| $\mathbb{B}_{\mathrm{red}}$ | Abelian Lie algebra of dimension four |
 | $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$ | Exponential |
 | $\ker\exp=2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$ | Kernel of the exponential |
-| ${\mathbb{B}^{\mathrm{red}}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}=\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units |
 | $\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}=1\}\cong\mathbb{C}^{\times}$ | Norm-one group |
 | $T^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ | Maximal compact subgroup |
 | $\exp(i\theta)=\cos\theta+i\sin\theta$ | Elliptic subgroup |
-| $\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}$ | Hyperbolic subgroup |
+| $\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ | Hyperbolic subgroup |
 | $\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-$ | Polar form |
 
 ## Further Reading

@@ -15,7 +15,7 @@ Throughout, $F$ is a field with $2 \neq 0$, $V$ is a finite-dimensional $F$-line
 **Proposition.** $T^{\otimes k}$ is a linear involution of $V^{\otimes k}$, and its type is
 
 $$
-\boxed{\;\Bigl( \sum_{j\ \mathrm{even}} \binom{k}{j} p^{\,k-j}q^{\,j},\ \sum_{j\ \mathrm{odd}} \binom{k}{j} p^{\,k-j}q^{\,j} \Bigr), \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^{k}\;} .
+\boxed{\;\Bigl( \sum_{\mathrm{even},j} \binom{k}{j} p^{\,k-j}q^{\,j},\ \sum_{\mathrm{odd},j} \binom{k}{j} p^{\,k-j}q^{\,j} \Bigr), \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^{k}\;} .
 $$
 
 **Proof.** $(T^{\otimes k})^2 = (T^2)^{\otimes k} = \mathrm{id}$. A basis vector of $V^{\otimes k}$ is a word in $k$ basis vectors of $V$; its eigenvalue under $T^{\otimes k}$ is the product of the eigenvalues of the letters, hence $+1$ if the number $j$ of negated letters is even and $-1$ if it is odd, and the number of words with a prescribed $j$ is $\binom{k}{j}p^{k-j}q^{j}$. The trace is the difference of the two parts of the type, which is $(p-q)^k$.
@@ -47,7 +47,7 @@ of dimensions $n(n+1)/2$ and $n(n-1)/2$.
 **Proposition (the induced involution on $\Lambda^{k}V$).** On the $k$-th exterior power the induced involution $\Lambda^{k}T$ is a linear involution of type
 
 $$
-\boxed{\;\Bigl( \sum_{j\ \mathrm{even}} \binom{p}{k-j}\binom{q}{j},\ \sum_{j\ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \Bigr),
+\boxed{\;\Bigl( \sum_{\mathrm{even},j} \binom{p}{k-j}\binom{q}{j},\ \sum_{\mathrm{odd},j} \binom{p}{k-j}\binom{q}{j} \Bigr),
 \qquad \operatorname{tr}\bigl(\Lambda^{k}T\bigr) = \sum_{j} (-1)^{j}\binom{p}{k-j}\binom{q}{j}\;} ,
 $$
 
@@ -67,7 +67,7 @@ with $0 \le k-j \le p$ and $0 \le j \le q$; for $k = n$ the operator is multipli
 
 ## Summary
 
-A linear involution $T$ of type $(n,m)$ induces on the $k$-fold tensor power the involution $T^{\otimes k}$, of type $(\sum_{j\ \mathrm{even}}\binom{k}{j}p^{k-j}q^{j}, \sum_{j\ \mathrm{odd}}\binom{k}{j}p^{k-j}q^{j})$ and trace $(p-q)^{k}$; on the $k$-th exterior power $\Lambda^{k}T$, of the analogous type with the binomials $\binom{p}{k-j}\binom{q}{j}$ and trace $\sum_j(-1)^j\binom{p}{k-j}\binom{q}{j}$, the top exterior power acting by $\det T = (-1)^{q}$; and on the symmetric power $S^{k}V$ it has no closed type formula, because the count is a multiset count, the case $S^{1}V = V$ displaying the failure. The maps $T^{\otimes k}$ assemble into an algebra automorphism of the tensor algebra of order two. The flip $\tau$ of the tensor square is an involution whose fixed and negated parts are the symmetric and the alternating squares, and $T\otimes T$ commutes with it, so it preserves both parts; the two involutions $S^{2}T$ and $\Lambda^{2}T$ are the restrictions. The sign rule on the flip is *Superalgebras and Graded Structures*.
+A linear involution $T$ of type $(n,m)$ induces on the $k$-fold tensor power the involution $T^{\otimes k}$, of type $(\sum_{\mathrm{even},j}\binom{k}{j}p^{k-j}q^{j}, \sum_{\mathrm{odd},j}\binom{k}{j}p^{k-j}q^{j})$ and trace $(p-q)^{k}$; on the $k$-th exterior power $\Lambda^{k}T$, of the analogous type with the binomials $\binom{p}{k-j}\binom{q}{j}$ and trace $\sum_j(-1)^j\binom{p}{k-j}\binom{q}{j}$, the top exterior power acting by $\det T = (-1)^{q}$; and on the symmetric power $S^{k}V$ it has no closed type formula, because the count is a multiset count, the case $S^{1}V = V$ displaying the failure. The maps $T^{\otimes k}$ assemble into an algebra automorphism of the tensor algebra of order two. The flip $\tau$ of the tensor square is an involution whose fixed and negated parts are the symmetric and the alternating squares, and $T\otimes T$ commutes with it, so it preserves both parts; the two involutions $S^{2}T$ and $\Lambda^{2}T$ are the restrictions. The sign rule on the flip is *Superalgebras and Graded Structures*.
 
 ## Summary of Notation
 

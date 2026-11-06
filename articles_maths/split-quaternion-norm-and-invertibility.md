@@ -5,7 +5,7 @@
 
 This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, shows that no positive-definite form on the algebra is multiplicative, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
-The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{C}^{\mathrm{spl}}_2$, $\mathbb{C}^{\mathrm{spl}}_3$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
 ## The Split-Quaternion Norm
 
@@ -23,7 +23,7 @@ The form is a real quadratic form of **signature $(2,2)$**, read directly from t
 
 $$
 \boxed{\;
-\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} \qquad (\tilde q_1, \tilde q_2 \in \mathbb{H}^{\mathrm{spl}})
+\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} \qquad (\tilde q_1, \tilde q_2 \in \mathbb{H}_{\mathrm{spl}})
 \;}.
 $$
 
@@ -53,7 +53,7 @@ The multiplicativity of $\langle\cdot\rangle_{\natural}$ has an immediate conseq
 
 ### No Positive-Definite Multiplicative Form
 
-**Theorem.** No positive-definite quadratic form on $\mathbb{H}^{\mathrm{spl}}$ is multiplicative.
+**Theorem.** No positive-definite quadratic form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative.
 
 **Proof.** The elements $1+\vec e_y$ and $1-\vec e_y$ are nonzero, and $(1+\vec e_y)(1-\vec e_y)=1-\vec e_y^2=0$. A multiplicative form $\langle\cdot\rangle_{\natural}$ would give $\langle 1+\vec e_y\rangle_{\natural}\langle 1-\vec e_y\rangle_{\natural}=\langle 0\rangle_{\natural}=0$, so one of the two factors would vanish; positive definiteness forbids that on a nonzero element.
 
@@ -65,7 +65,7 @@ $$
 |\tilde q_1\tilde q_2| \leq \sqrt2\,|\tilde q_1|\,|\tilde q_2|,
 $$
 
-with equality at $\tilde q_1=\tilde q_2=1+\vec e_y$. The algebra is therefore a normed algebra up to a constant, multiplication is continuous, inversion is continuous on the units, and the group of units is open. Since all norms on a finite-dimensional space give the same topology, the topology of $\mathbb{H}^{\mathrm{spl}}$ is unaffected by the failure. What fails is the metric compatibility: no Riemannian structure on the algebra is multiplicative.
+with equality at $\tilde q_1=\tilde q_2=1+\vec e_y$. The algebra is therefore a normed algebra up to a constant, multiplication is continuous, inversion is continuous on the units, and the group of units is open. Since all norms on a finite-dimensional space give the same topology, the topology of $\mathbb{H}_{\mathrm{spl}}$ is unaffected by the failure. What fails is the metric compatibility: no Riemannian structure on the algebra is multiplicative.
 
 Two consequences follow. First, the multiplicative scale exists only on the units, where $\sqrt{|\langle\tilde q\rangle_{\natural}|}$ is a homomorphism to $\mathbb{R}_{>0}$ and vanishes on the null cone; it is not a norm and is not defined on the whole algebra. Second, the norm-one set is $\mathrm{U}\cong\mathrm{SL}_2(\mathbb{R})$, non-compact with $\pi_1=\mathbb{Z}$, where the quaternion norm-one set is the compact and simply connected $Sp(1)\cong S^3$; the radial decomposition has the non-compact slice $S^1\times\mathbb{R}^2$ and its boundary is the null cone (*Split-Quaternion Topology*).
 
@@ -85,7 +85,7 @@ The split-quaternion norm decides invertibility and the Euclidean norm decides t
 
 **Definition.** The form $\langle\cdot\rangle_{\natural}$ is **isotropic**: there exist nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural} = 0$. A nonzero element with $\langle\tilde q\rangle_{\natural} = 0$ is an **isotropic vector**, and a one-dimensional subspace $\mathbb{R}\tilde q$ spanned by an isotropic vector is an **isotropic line**.
 
-**Theorem (The Isotropic Vectors).** The isotropic vectors of $\mathbb{H}^{\mathrm{spl}}$ are the nonzero quadrivectors \((q_t, q_x, q_y, q_z)\) with
+**Theorem (The Isotropic Vectors).** The isotropic vectors of $\mathbb{H}_{\mathrm{spl}}$ are the nonzero quadrivectors \((q_t, q_x, q_y, q_z)\) with
 
 $$
 \boxed{\;
@@ -113,7 +113,7 @@ a circle's worth of lines; in particular $\mathbb{R}(\vec e_x + \vec e_y)$, $\ma
 
 **Proof.** The equation $\langle\tilde q\rangle_{\natural} = 0$ is $q_t^2 + q_x^2 = q_y^2 + q_z^2$. If $(q_t,q_x) = (0,0)$ then $q_y = q_z = 0$ and $\tilde q = 0$, contrary to the definition of an isotropic vector; the same argument applies to $(q_y,q_z)$. Hence both pairs are nonzero, and there are $r > 0$ and angles $\alpha, \beta$ with $(q_t,q_x) = r(\cos\alpha, \sin\alpha)$ and $(q_y,q_z) = r(\cos\beta, \sin\beta)$; the common radius is forced by the equation. Multiplying $\tilde q$ by a positive scalar does not change either angle, and multiplying by $-1$ adds $\pi$ to both, so the line determines $(\alpha,\beta)$ modulo the simultaneous replacement. For the vector subspace, $q_t = 0$ and the equation is $q_x^2 = q_y^2 + q_z^2$ with $q_x \neq 0$; normalising $q_x = 1$ and writing $(q_y,q_z) = (\cos\theta,\sin\theta)$ gives the displayed family.
 
-**Theorem (The Isotropic Lines Are Doubly Ruled).** The isotropic lines of $\mathbb{H}^{\mathrm{spl}}$ are the points of the projective null quadric $\{\langle\tilde q\rangle_{\natural} = 0\} \subset \mathbb{P}(\mathbb{H}^{\mathrm{spl}})$, and that quadric is doubly ruled: its lines fall into two families, such that two lines of one family are skew while a line of one family meets a line of the other in exactly one point unless the two are parallel. The two families are defined and computed in *Split-Quaternion Zero Divisors*, §*The Two Families*.
+**Theorem (The Isotropic Lines Are Doubly Ruled).** The isotropic lines of $\mathbb{H}_{\mathrm{spl}}$ are the points of the projective null quadric $\{\langle\tilde q\rangle_{\natural} = 0\} \subset \mathbb{P}(\mathbb{H}_{\mathrm{spl}})$, and that quadric is doubly ruled: its lines fall into two families, such that two lines of one family are skew while a line of one family meets a line of the other in exactly one point unless the two are parallel. The two families are defined and computed in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
 **Proof.** A nonzero element $\tilde q$ is isotropic exactly when $\langle\tilde q\rangle_{\natural} = 0$, so the isotropic lines are the points of the projective null quadric of the non-degenerate form $\langle\cdot\rangle_{\natural}$ of signature $(2,2)$. A non-degenerate quadric of signature $(2,2)$ in $\mathbb{P}^3$ is doubly ruled. The explicit ruling is proved in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
@@ -121,7 +121,7 @@ The isotropic lines are also visible in the vector subspace: the isotropic lines
 
 ## The Invertibility Criterion
 
-**Theorem (The Invertibility Criterion).** Let $\tilde q_1 \in \mathbb{H}^{\mathrm{spl}}$ be nonzero. The following are equivalent.
+**Theorem (The Invertibility Criterion).** Let $\tilde q_1 \in \mathbb{H}_{\mathrm{spl}}$ be nonzero. The following are equivalent.
 
 1. $\tilde q_1$ is **invertible**: there exists $\tilde q_2$ with $\tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 = 1$.
 2. $\langle\tilde q_1\rangle_{\natural} \neq 0$.
@@ -152,7 +152,7 @@ The criterion has the form the menu names: **invertibility is $\langle\tilde q\r
 **Definition.** The **group of units** of the split-quaternion algebra is
 
 $$
-{\mathbb{H}^{\mathrm{spl}}}^{\times} = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} \neq 0\},
+{\mathbb{H}_{\mathrm{spl}}}^{\times} = \{\tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} \neq 0\},
 $$
 
 with multiplication inherited from the algebra.
@@ -160,7 +160,7 @@ with multiplication inherited from the algebra.
 **Theorem.** The split-quaternion norm restricts to a surjective group homomorphism
 
 $$
-\langle\cdot\rangle_{\natural} : {\mathbb{H}^{\mathrm{spl}}}^{\times} \longrightarrow \mathbb{R}^{\times}.
+\langle\cdot\rangle_{\natural} : {\mathbb{H}_{\mathrm{spl}}}^{\times} \longrightarrow \mathbb{R}^{\times}.
 $$
 
 **Proof.** Multiplicativity of $\langle\cdot\rangle_{\natural}$ makes it a group homomorphism from the units to $\mathbb{R}^{\times}$, and it is surjective because $\langle \lambda\rangle_{\natural} = \lambda^2$ and $\langle \lambda \vec e_y\rangle_{\natural} = -\lambda^2$ for real $\lambda \neq 0$.
@@ -168,7 +168,7 @@ $$
 **Corollary (The Norm-One Groups).** The kernel of $\langle\cdot\rangle_{\natural}$ is the group of **unit split-quaternions**
 
 $$
-\mathrm{U} = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
+\mathrm{U} = \{\tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
 $$
 
 and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint union $\{\tilde q : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ of two connected components, namely $\mathrm{U}$ and its negative. The group of units has two connected components as well, the open sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$; the norm-one subgroup $\mathrm{U}$ is connected.
@@ -181,7 +181,7 @@ This is the exact point at which the indefinite norm changes the group theory. T
 
 The menu's three-way classification of the elements is the following.
 
-**Theorem (Classification).** Every element of $\mathbb{H}^{\mathrm{spl}}$ falls into exactly one of the three classes:
+**Theorem (Classification).** Every element of $\mathbb{H}_{\mathrm{spl}}$ falls into exactly one of the three classes:
 
 | Class | Criterion | Size |
 |---|---|---|
@@ -189,7 +189,7 @@ The menu's three-way classification of the elements is the following.
 | the invertible elements | $\tilde q \neq 0$ and $\langle\tilde q\rangle_{\natural} \neq 0$ | the complement of the null cone |
 | the zero divisors | $\tilde q \neq 0$ and $\langle\tilde q\rangle_{\natural} = 0$ | the null cone minus the origin |
 
-There is no fourth class, and in particular the third class is **not** empty: the isotropic vectors of *Isotropy* are zero divisors by the corollary of *The Invertibility Criterion*. The two classes partition $\mathbb{H}^{\mathrm{spl}} \setminus \{0\}$; the invertible class is open, and the zero divisor class is closed there.
+There is no fourth class, and in particular the third class is **not** empty: the isotropic vectors of *Isotropy* are zero divisors by the corollary of *The Invertibility Criterion*. The two classes partition $\mathbb{H}_{\mathrm{spl}} \setminus \{0\}$; the invertible class is open, and the zero divisor class is closed there.
 
 **Proof.** Let $\tilde q$ be nonzero. The real number $\langle\tilde q\rangle_{\natural}$ is either zero or a unit of $\mathbb{R}$; there is no third possibility, because $\mathbb{R}$ is a field. If $\langle\tilde q\rangle_{\natural} = 0$ then $\tilde q$ is a zero divisor by the corollary of the criterion; if $\langle\tilde q\rangle_{\natural} \neq 0$ then $\tilde q$ is invertible. The two cases are exclusive and exhaust the nonzero elements.
 
@@ -223,23 +223,23 @@ The invertible elements of $V$ are the vectors with $q_x^2 \neq q_y^2 + q_z^2$: 
 
 ### The Split-Complex Subspaces
 
-On $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1, \vec e_y\}$, an element is $\tilde q = q_t + q_y \vec e_y$ with
+On $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\}$, an element is $\tilde q = q_t + q_y \vec e_y$ with
 
 $$
 \langle\tilde q\rangle_{\natural} = q_t^2 - q_y^2 .
 $$
 
-The invertible elements are those with $q_t^2 \neq q_y^2$; the non-invertible nonzero elements are the real multiples of $1 + \vec e_y$ and of $1 - \vec e_y$, which are the zero divisors of the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$ studied in *Split-Complex Algebra*. On $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1, \vec e_z\}$ the identical statement holds with $\vec e_z$ in place of $\vec e_y$.
+The invertible elements are those with $q_t^2 \neq q_y^2$; the non-invertible nonzero elements are the real multiples of $1 + \vec e_y$ and of $1 - \vec e_y$, which are the zero divisors of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$ studied in *Split-Complex Algebra*. On $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1, \vec e_z\}$ the identical statement holds with $\vec e_z$ in place of $\vec e_y$.
 
 ### The Minimal Left and Right Ideals
 
-On the two minimal left ideals $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, every element is a zero divisor or zero.
+On the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, every element is a zero divisor or zero.
 
-**Proposition.** For every $\tilde q \in \mathbb{H}^{\mathrm{spl}}$, $\langle\tilde q\tilde\pi_{1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle\tilde\pi_{1,2}\rangle_{\natural} = 0$. Hence $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ and $\mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}^{\mathrm{spl}}$.
+**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{spl}}$, $\langle\tilde q\tilde\pi_{1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle\tilde\pi_{1,2}\rangle_{\natural} = 0$. Hence $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ and $\mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ are **totally isotropic**: they contain no invertible element other than the origin. The same statement holds for the two minimal right ideals $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$.
 
 **Proof.** $\langle\tilde\pi_{1,2}\rangle_{\natural} = \tfrac14 \langle 1 \pm \vec e_y\rangle_{\natural} = \tfrac14(1 - 1) = 0$, and multiplicativity gives $\langle\tilde q\tilde\pi_{1,2}\rangle_{\natural} = \langle\tilde q\rangle_{\natural} \cdot 0 = 0$.
 
-So each of the four two-dimensional subspaces $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ consists entirely of zero divisors together with the origin.
+So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ consists entirely of zero divisors together with the origin.
 
 ### Summary of the Distribution
 
@@ -247,9 +247,9 @@ So each of the four two-dimensional subspaces $\mathbb{H}^{\mathrm{spl}} \tilde\
 |---|---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $1$ | $q_t^2 \geq 0$ | none except $0$ |
 | $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the null cone $q_x^2 = q_y^2 + q_z^2$ |
-| $\mathbb{C}^{\mathrm{spl}}_2$ | $2$ | $q_t^2 - q_y^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
-| $\mathbb{C}^{\mathrm{spl}}_3$ | $2$ | $q_t^2 - q_z^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
-| $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
+| $\mathbb{C}_{\mathrm{spl},2}$ | $2$ | $q_t^2 - q_y^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $2$ | $q_t^2 - q_z^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
+| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
 
 The invertible elements are the complement of the null cone $\{\langle\tilde q\rangle_{\natural} = 0\}$, an open dense set of full measure. They form two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
@@ -257,11 +257,11 @@ The invertible elements are the complement of the null cone $\{\langle\tilde q\r
 
 ### The Quaternion Case
 
-For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of units is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}^{\mathrm{spl}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
+For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of units is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{spl}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
 
 ### The Split-Biquaternion Case
 
-The eight-dimensional algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a real algebra of dimension eight, and it is treated later in Part V, under Split-Biquaternions; nothing of it is used here. The structural difference that decides the comparison is visible from the conventions alone: its coefficients lie in the split-complex ring $\mathbb{C}^{\mathrm{spl}}$, so its norm takes values in $\mathbb{C}^{\mathrm{spl}}$, and $\mathbb{C}^{\mathrm{spl}}$ has zero divisors of its own. An invertibility criterion in that system is a criterion in a ring with zero divisors, and its classification therefore has a third nonzero class — the elements whose norm is a nonzero zero divisor — which does not exist in the present article. The present classification, by contrast, is the dichotomy of *The Three-Way Classification*, and the reason is exactly that the coefficient field here is $\mathbb{R}$.
+The eight-dimensional algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a real algebra of dimension eight, and it is treated later in Part V, under Split-Biquaternions; nothing of it is used here. The structural difference that decides the comparison is visible from the conventions alone: its coefficients lie in the split-complex ring $\mathbb{C}_{\mathrm{spl}}$, so its norm takes values in $\mathbb{C}_{\mathrm{spl}}$, and $\mathbb{C}_{\mathrm{spl}}$ has zero divisors of its own. An invertibility criterion in that system is a criterion in a ring with zero divisors, and its classification therefore has a third nonzero class — the elements whose norm is a nonzero zero divisor — which does not exist in the present article. The present classification, by contrast, is the dichotomy of *The Three-Way Classification*, and the reason is exactly that the coefficient field here is $\mathbb{R}$.
 
 ## Summary
 
@@ -269,26 +269,26 @@ The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 
 
 A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
-No positive-definite form on $\mathbb{H}^{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}^{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}_{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, signature $(2,2)$ | this article |
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | this article |
 | $\lvert\tilde q\rvert$ | the Euclidean norm, submultiplicative up to $\sqrt2$ | *Split-Quaternion Analysis* |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural}=0$, and its span | this article |
-| ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ | the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ | this article |
+| ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ | the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ | this article |
 | $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |
 | $\{\langle\tilde q\rangle_{\natural} = \pm 1\}$ | the two split-quaternion norm levels, $\mathrm{U}$ and $-\mathrm{U}$ | this article |
 | $P = \{\langle\tilde q\rangle_{\natural} > 0\}$, $Q = \{\langle\tilde q\rangle_{\natural} < 0\}$ | the two components of the units | this article |
-| $S$, $V$, $\mathbb{C}^{\mathrm{spl}}_2$, $\mathbb{C}^{\mathrm{spl}}_3$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
+| $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
 | $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | spacelike, timelike, lightlike | the sign of $\langle\cdot\rangle_{\natural}$ on $V$ | this article |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |
-| $\mathbb{B}^{\mathrm{spl}}$ | the split-biquaternions, a later Part V system | *The Number Systems as Clifford Algebras* |
+| $\mathbb{B}_{\mathrm{spl}}$ | the split-biquaternions, a later Part V system | *The Number Systems as Clifford Algebras* |
 
 ## Further Reading
 

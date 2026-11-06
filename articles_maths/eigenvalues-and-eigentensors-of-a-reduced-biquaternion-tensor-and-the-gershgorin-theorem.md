@@ -12,7 +12,7 @@ The article defines the problem, proves the reduction to the two complex coordin
 
 **Definition.** Let $A$ be square of order $2m$, with the modes $n_{1},\dots,n_{m}$ on both sides, and let $X$ be a tensor of order $m$ with the modes $n_{1},\dots,n_{m}$. A reduced biquaternion $\lambda$ is an **eigenvalue** of $A$ when $AX=\lambda X$ for some nonzero $X$, and $X$ is an **eigentensor** of $\lambda$. The **spectrum** $\sigma(A)$ is the set of eigenvalues.
 
-**Proposition (the orders two and four).** For $m=1$ the definition is the eigenvalue problem of a square matrix over $\mathbb{B}^{\mathrm{red}}$, with the matrix product; for $m=2$ it is the problem of a tensor of order four acting on a tensor of order two.
+**Proposition (the orders two and four).** For $m=1$ the definition is the eigenvalue problem of a square matrix over $\mathbb{B}_{\mathrm{red}}$, with the matrix product; for $m=2$ it is the problem of a tensor of order four acting on a tensor of order two.
 
 *Proof.* The Einstein product of an order-$2m$ tensor and an order-$m$ tensor is the contraction of the $m$ trailing indices of the first against the $m$ indices of the second, which is the matrix-vector product when $m=1$ and its multi-index form otherwise.
 

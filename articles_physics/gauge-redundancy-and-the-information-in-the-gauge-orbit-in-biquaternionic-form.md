@@ -74,12 +74,12 @@ The rank is the count of gauge directions per mode, and subtracting it from the 
 
 ### The Orbit and the Covariant Derivative
 
-The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}^{\mathrm{sp}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
+The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}_{\mathrm{sp}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_2 = \lambda\tilde{Ξ}^{\mathrm{sp}},
+\tilde{Ξ}_{\mathrm{sp},2} = \lambda\tilde{Ξ}_{\mathrm{sp}},
 \qquad
 \lambda = \exp(i ϙ\Gamma/\hbar).
 $$
@@ -87,20 +87,20 @@ $$
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
 $$
-D_2\tilde{Ξ}^{\mathrm{sp}}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}^{\mathrm{sp}}
-= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{Ξ}^{\mathrm{sp}}
-= \lambda\,D\tilde{Ξ}^{\mathrm{sp}},
+D_2\tilde{Ξ}_{\mathrm{sp},2} = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp}}
+= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{Ξ}_{\mathrm{sp}}
+= \lambda\,D\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}^{\mathrm{sp}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}^{\mathrm{sp}} + \lambda\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
+the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}_{\mathrm{sp}} + \lambda\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,
 
 $$
 D_2 = \lambda\,D\,\lambda^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{sp}})$ and the pair $(\tilde{A}_2,\tilde{Ξ}^{\mathrm{sp}}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}^{\mathrm{sp}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{Ξ}_{\mathrm{sp}})$ and the pair $(\tilde{A}_2,\tilde{Ξ}_{\mathrm{sp},2})$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}_{\mathrm{sp}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
 
-Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{Ξ}^{\mathrm{sp}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
+Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{Ξ}_{\mathrm{sp}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
 ## The Orbit Is the Fibre of the Curvature Map
 

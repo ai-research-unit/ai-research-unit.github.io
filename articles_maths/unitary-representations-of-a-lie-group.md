@@ -117,7 +117,7 @@ which is bounded, continuous and uniformly continuous in each variable; it is **
 
 *Proof.* The Schur orthogonality of the matrix coefficients gives the square-integrability exactly for the representations contributing an atom to the Plancherel formula; the characterisation of the tempered dual by the growth of the matrix coefficients is the standard criterion, and the identification of the two parts of the measure is the Plancherel theorem. The details are in the references.
 
-**Corollary.** The regular representation of $G$ is the direct integral of the irreducible unitary representations with respect to the Plancherel measure, $\pi^{\mathrm{reg}}\cong\int^{\oplus}_{\widehat{G}}\pi_\lambda\,d\mu_{\mathrm{Pl}}(\lambda)$, and its spectrum is the support of the measure; the discrete series contributes the atoms and the tempered dual the continuous part.
+**Corollary.** The regular representation of $G$ is the direct integral of the irreducible unitary representations with respect to the Plancherel measure, $\pi_{\mathrm{reg}}\cong\int^{\oplus}_{\widehat{G}}\pi_\lambda\,d\mu_{\mathrm{Pl}}(\lambda)$, and its spectrum is the support of the measure; the discrete series contributes the atoms and the tempered dual the continuous part.
 
 *Proof.* The decomposition is the theorem applied to the regular representation, whose von Neumann algebra is the group von Neumann algebra; the Plancherel theorem identifies the measure of the decomposition with the Plancherel measure and therefore the spectrum with its support.
 

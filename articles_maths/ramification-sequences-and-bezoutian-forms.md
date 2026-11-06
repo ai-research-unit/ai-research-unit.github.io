@@ -98,21 +98,21 @@ the entry at infinity being the one that the norm condition forces. The definiti
 
 ### The Coefficient Functional $s_g$
 
-**Definition.** Let $g \in F[t]$ be monic of degree $n$ and square-free, and let $\vartheta^{\mathrm{rts}}$ be the class of $t$ in the $n$-dimensional $F$-algebra $E_g = F[t]/(g)$, so that $1, \vartheta^{\mathrm{rts}}, \ldots, \vartheta^{\mathrm{rts}}^{n-1}$ is an $F$-basis of $E_g$. The **coefficient functional** is the $F$-linear map
+**Definition.** Let $g \in F[t]$ be monic of degree $n$ and square-free, and let $\vartheta_{\mathrm{rts}}$ be the class of $t$ in the $n$-dimensional $F$-algebra $E_g = F[t]/(g)$, so that $1, \vartheta_{\mathrm{rts}}, \ldots, \vartheta_{\mathrm{rts}}^{n-1}$ is an $F$-basis of $E_g$. The **coefficient functional** is the $F$-linear map
 
 $$
-s_g : E_g \longrightarrow F, \qquad s_g(\vartheta^{\mathrm{rts}}^i) = 0 \ \ (0 \leq i \leq n-2), \qquad s_g(\vartheta^{\mathrm{rts}}^{n-1}) = 1,
+s_g : E_g \longrightarrow F, \qquad s_g(\vartheta_{\mathrm{rts}}^i) = 0 \ \ (0 \leq i \leq n-2), \qquad s_g(\vartheta_{\mathrm{rts}}^{n-1}) = 1,
 $$
 
-so that $s_g(y)$ is the coefficient of $\vartheta^{\mathrm{rts}}^{n-1}$ in the expansion of $y$ in the basis. For $y \in F[t]$ of degree less than $n$ it is the coefficient of $t^{n-1}$. For $n = 1$ and $g = t + c$ the algebra is $F$ and $s_g(y) = y(-c)$.
+so that $s_g(y)$ is the coefficient of $\vartheta_{\mathrm{rts}}^{n-1}$ in the expansion of $y$ in the basis. For $y \in F[t]$ of degree less than $n$ it is the coefficient of $t^{n-1}$. For $n = 1$ and $g = t + c$ the algebra is $F$ and $s_g(y) = y(-c)$.
 
 **Proposition (trace description).** Let $g \in F[t]$ be monic of degree $n$ and square-free, let $\alpha_1, \ldots, \alpha_n$ be its roots in a splitting field, and let $y \in F[t]$. Then
 
 $$
-s_g(y \bmod g) = \sum_{i=1}^n \frac{y(\alpha_i)}{g'(\alpha_i)} = \operatorname{Tr}_{E_g/F}\!\left(\frac{y(\vartheta^{\mathrm{rts}})}{g'(\vartheta^{\mathrm{rts}})}\right),
+s_g(y \bmod g) = \sum_{i=1}^n \frac{y(\alpha_i)}{g'(\alpha_i)} = \operatorname{Tr}_{E_g/F}\!\left(\frac{y(\vartheta_{\mathrm{rts}})}{g'(\vartheta_{\mathrm{rts}})}\right),
 $$
 
-the last term being the trace of the element $y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}})$ of $E_g$ over $F$.
+the last term being the trace of the element $y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}})$ of $E_g$ over $F$.
 
 **Proof.** Write $y = qg + r$ with $\deg r < n$. Then $s_g(y \bmod g) = s_g(r)$ is the coefficient of $t^{n-1}$ in $r$, and $y(\alpha_i) = r(\alpha_i)$ for every $i$, because $g(\alpha_i) = 0$. The partial fraction decomposition of $r/g$ is
 
@@ -126,14 +126,14 @@ $$
 \frac{r(t)}{g(t)} = t^{-1}\left(\sum_{i=1}^n\frac{r(\alpha_i)}{g'(\alpha_i)}\right) + O(t^{-2}),
 $$
 
-while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}})$.
+while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}})$.
 
 ### The Bezoutian Form of a Pair
 
 **Definition.** Let $g \in F[t]$ be monic of degree $n$ and square-free and let $f \in F[t]$ be coprime to $g$. The **Bezoutian form** of $f$ modulo $g$ is the quadratic form
 
 $$
-m_{f,g} : E_g \longrightarrow F, \qquad m_{f,g}(x) = s_g\big(f(\vartheta^{\mathrm{rts}})x^2\big),
+m_{f,g} : E_g \longrightarrow F, \qquad m_{f,g}(x) = s_g\big(f(\vartheta_{\mathrm{rts}})x^2\big),
 $$
 
 and its class in the Witt group of *The Witt Group and the Grothendieck–Witt Ring* is written
@@ -142,10 +142,10 @@ $$
 B(f/g) = [m_{f,g}] \in W(F).
 $$
 
-The polar form of $m_{f,g}$ is the bilinear form $\mathfrak{b}(x,y) = s_g(f(\vartheta^{\mathrm{rts}})xy)$, so in the basis $1, \vartheta^{\mathrm{rts}}, \ldots, \vartheta^{\mathrm{rts}}^{n-1}$ the Gram matrix is
+The polar form of $m_{f,g}$ is the bilinear form $\mathfrak{b}(x,y) = s_g(f(\vartheta_{\mathrm{rts}})xy)$, so in the basis $1, \vartheta_{\mathrm{rts}}, \ldots, \vartheta_{\mathrm{rts}}^{n-1}$ the Gram matrix is
 
 $$
-G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j}), \qquad m_{f,g}\Big(\sum_{i=0}^{n-1}x_i\vartheta^{\mathrm{rts}}^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
+G = (G_{ij})_{0 \leq i,j \leq n-1}, \qquad G_{ij} = s_g(f\vartheta_{\mathrm{rts}}^{i+j}), \qquad m_{f,g}\Big(\sum_{i=0}^{n-1}x_i\vartheta_{\mathrm{rts}}^i\Big) = \sum_{i,j} G_{ij}x_ix_j .
 $$
 
 The matrix $G$ is symmetric because $i + j = j + i$, so $m_{f,g}$ is a quadratic form in the sense of *Quadratic Forms and Polarisation*, with $\mathfrak{Q}(x) = B(x,x)$ for its polar form $B$.
@@ -160,7 +160,7 @@ on $E_g$. In particular $B(f/g)$ depends on $f$ only through its class in $E_g^\
 
 **Theorem (non-degeneracy).** Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $m_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.
 
-**Proof for $n = 1$.** Here $g = t + c$ and $\vartheta^{\mathrm{rts}} = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $m_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.
+**Proof for $n = 1$.** Here $g = t + c$ and $\vartheta_{\mathrm{rts}} = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $m_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.
 
 The non-degeneracy is the reason the Bezoutian is taken over the square-free $g$ and the coprime $f$: the form is then a genuine element of the Witt group, and its triviality is a meaningful condition.
 
@@ -192,13 +192,13 @@ $$
 
 where $[1]$ is the class of the one-dimensional form $\langle 1\rangle$.
 
-**The second rule in a special case.** Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\vartheta^{\mathrm{rts}}^2 = 1$, and $m_{t,g}(x) = s_g(\vartheta^{\mathrm{rts}} x^2)$ has Gram matrix
+**The second rule in a special case.** Take $f = t$ and $g = t^2 - 1$. Here $E_g = F[t]/(t^2-1)$ with $\vartheta_{\mathrm{rts}}^2 = 1$, and $m_{t,g}(x) = s_g(\vartheta_{\mathrm{rts}} x^2)$ has Gram matrix
 
 $$
-G_{ij} = s_g(\vartheta^{\mathrm{rts}}^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\vartheta^{\mathrm{rts}}) & s_g(\vartheta^{\mathrm{rts}}^2) \\ s_g(\vartheta^{\mathrm{rts}}^2) & s_g(\vartheta^{\mathrm{rts}}^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
+G_{ij} = s_g(\vartheta_{\mathrm{rts}}^{i+j+1}), \qquad G = \begin{pmatrix} s_g(\vartheta_{\mathrm{rts}}) & s_g(\vartheta_{\mathrm{rts}}^2) \\ s_g(\vartheta_{\mathrm{rts}}^2) & s_g(\vartheta_{\mathrm{rts}}^3)\end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix},
 $$
 
-because $s_g(1) = s_g(\vartheta^{\mathrm{rts}}^3) = 0$ and $s_g(\vartheta^{\mathrm{rts}}) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\vartheta^{\mathrm{rts}}^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.
+because $s_g(1) = s_g(\vartheta_{\mathrm{rts}}^3) = 0$ and $s_g(\vartheta_{\mathrm{rts}}) = 1$; so $m_{t,g} = \langle 1,1\rangle$. On the other side $E_t = F[t]/(t) = F$, so $m_{g,t}(x) = s_t((\vartheta_{\mathrm{rts}}^2 - 1)x^2) = s_t(-x^2)$ is the form $\langle -1\rangle$. The sum is $[\langle 1,1,-1\rangle] = [\langle 1\rangle]$ in $W(F)$, because $\langle 1,-1\rangle$ is the hyperbolic plane, in agreement with the rule, the degrees $1$ and $2$ having opposite parity.
 
 ### A Lemma on Even Degrees
 
@@ -282,7 +282,7 @@ $$
 
 Indeed $2f \equiv 4$ modulo $g_1$ and $6f \equiv 36$ modulo $g_2$ are squares, so the pair satisfies the hypotheses of the lemma with $a_1 = 2$, $a_2 = 6$ and $b = g_2(0) = 2$.
 
-The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \vartheta^{\mathrm{rts}}, \vartheta^{\mathrm{rts}}^2, \vartheta^{\mathrm{rts}}^3$ its Gram matrix $G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j})$ is
+The Bezoutian form $m_{f,g_1g_2}$ on $\mathbb{Q}[t]/(g_1g_2)$ has dimension $4$, and in the basis $1, \vartheta_{\mathrm{rts}}, \vartheta_{\mathrm{rts}}^2, \vartheta_{\mathrm{rts}}^3$ its Gram matrix $G_{ij} = s_g(f\vartheta_{\mathrm{rts}}^{i+j})$ is
 
 $$
 G = \begin{pmatrix}
@@ -332,7 +332,7 @@ $$
 
 the ramification map is injective on $k_2(F)$ and its image is the **group of ramification sequences** $R_2(F)$, the kernel of the norm. The support and the degree of a sequence measure the places carrying it, and a sequence is **represented by a symbol** when it is $\partial(\{f,g\})$ for a single symbol.
 
-The **Bezoutian form** of $f$ modulo a monic square-free $g$ is the form $m_{f,g}(x) = s_g(f(\vartheta^{\mathrm{rts}})x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\vartheta^{\mathrm{rts}}^{n-1}$ in the basis $1,\vartheta^{\mathrm{rts}},\ldots,\vartheta^{\mathrm{rts}}^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\vartheta^{\mathrm{rts}})/g'(\vartheta^{\mathrm{rts}}))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules
+The **Bezoutian form** of $f$ modulo a monic square-free $g$ is the form $m_{f,g}(x) = s_g(f(\vartheta_{\mathrm{rts}})x^2)$ on $E_g = F[t]/(g)$, where $s_g$ is the coefficient of $\vartheta_{\mathrm{rts}}^{n-1}$ in the basis $1,\vartheta_{\mathrm{rts}},\ldots,\vartheta_{\mathrm{rts}}^{n-1}$; equivalently $s_g(y\bmod g) = \operatorname{Tr}_{E_g/F}(y(\vartheta_{\mathrm{rts}})/g'(\vartheta_{\mathrm{rts}}))$. It is non-degenerate exactly when $f$ is coprime to $g$, and its class $B(f/g)$ in the Witt group is computed by the two rules
 
 $$
 B\!\left(\frac{f}{g_1g_2}\right) = B\!\left(\frac{fg_2}{g_1}\right) + B\!\left(\frac{fg_1}{g_2}\right), \qquad
@@ -359,10 +359,10 @@ Over $\mathbb{Q}$ the class $\{g_1,2\}+\{g_2,6\}$ with $g_1 = (t+1)(t+2)$ and $g
 | $\operatorname{Supp}\rho$, $\deg\rho$ | Support and degree of a ramification sequence |
 | $R(f/g)$ | The sequence with entry $\{f\}$ at each divisor of $g$ and $1$ elsewhere |
 | $E_g = F[t]/(g)$ | The $F$-algebra of a monic square-free $g$, of degree $n$ |
-| $\vartheta^{\mathrm{rts}}$ | The class of $t$ in $E_g$ |
-| $s_g$ | Coefficient functional of $\vartheta^{\mathrm{rts}}^{n-1}$; $\operatorname{Tr}_{E_g/F}(\cdot/g'(\vartheta^{\mathrm{rts}}))$ |
+| $\vartheta_{\mathrm{rts}}$ | The class of $t$ in $E_g$ |
+| $s_g$ | Coefficient functional of $\vartheta_{\mathrm{rts}}^{n-1}$; $\operatorname{Tr}_{E_g/F}(\cdot/g'(\vartheta_{\mathrm{rts}}))$ |
 | $m_{f,g}$, $B(f/g)$ | Bezoutian form of $f$ modulo $g$; its class in $W(F)$ |
-| $G_{ij} = s_g(f\vartheta^{\mathrm{rts}}^{i+j})$ | Gram matrix of the Bezoutian form |
+| $G_{ij} = s_g(f\vartheta_{\mathrm{rts}}^{i+j})$ | Gram matrix of the Bezoutian form |
 | $\langle\!\langle a,b\rangle\!\rangle$ | Pfister form $\langle 1,-a,-b,ab\rangle$ |
 | $\sim$ | Equality of Witt classes up to a scalar |
 | $\operatorname{Bez}(f,g)$, $\mathcal{B}(f,g)$ | Classical Bezoutian and its coefficient matrix |

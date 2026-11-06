@@ -77,7 +77,7 @@ $$
 Hence
 
 $$
-M^{(r)}=\bigoplus_{k-l\equiv r\ (\mathrm{mod}\ n)}P_kM_nP_l.
+M^{(r)}=\bigoplus_{\mathrm{mod},k-l\equiv r\ (\ n)}P_kM_nP_l.
 $$
 
 In particular $M^{(0)}$ is the centraliser of $H$, of dimension $n$: it consists of the matrices that preserve every eigenspace, and it is the algebra of polynomials in $H$. The grading is coarser than the Peirce decomposition; the latter has $n^{2}$ lines, the former $n$ pieces.

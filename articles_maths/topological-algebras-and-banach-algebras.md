@@ -139,7 +139,7 @@ $$
 
 Completeness follows from finite dimension and equivalence of the norm with $\|\cdot\|_1$. The last statement is the standard equivalence of all norms on a finite-dimensional $\mathbb{K}$-vector space.
 
-**Corollary.** Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{n,m}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.
+**Corollary.** Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{n,m}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.
 
 The uniqueness of the topology means that for finite-dimensional algebras the topological notions of convergence, continuity and differentiability do not depend on the norm chosen. This is what permits the hypercomplex-analysis entries to speak of the Euclidean topology on $\mathbb{H}$ or $\mathbb{B}$ without further qualification.
 
@@ -191,8 +191,8 @@ where $\mathrm{ad}_a(x) = [a,x]$. The inner automorphisms of $A$ therefore arise
 | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | $1$ |
 | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\} \cong \mathbb{R}_{>0} \times SU(2)$ | $1$ |
 | $\mathbb{B}$ | $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $1$ |
-| $\mathbb{C}^{\mathrm{spl}}$ | $a^2 \neq b^2$ | $4$ |
-| $\mathbb{C}^{\mathrm{dln}}$ | $a \neq 0$ | $2$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | $a^2 \neq b^2$ | $4$ |
+| $\mathbb{C}_{\mathrm{dln}}$ | $a \neq 0$ | $2$ |
 
 The unit group of $\mathbb{B}$ is $GL_2(\mathbb{C})$ under the algebra isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, which is connected; that of $\mathbb{H}$ retracts onto the unit sphere $S^3 = SU(2)$, which is connected and simply connected.
 
@@ -305,7 +305,7 @@ $$
 
 is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm and the quadratic structure rather than with a multiplicative absolute value.
 
-**Example (the split complex and dual numbers).** For $\mathbb{C}^{\mathrm{spl}}$ the form $\langle a+bj\rangle_{*} = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{C}^{\mathrm{dln}}$ the form $\langle a + b\varepsilon\rangle_{*} = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $\langle\cdot\rangle_{*}$, not by the Euclidean norm.
+**Example (the split complex and dual numbers).** For $\mathbb{C}_{\mathrm{spl}}$ the form $\langle a+bj\rangle_{*} = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{C}_{\mathrm{dln}}$ the form $\langle a + b\varepsilon\rangle_{*} = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $\langle\cdot\rangle_{*}$, not by the Euclidean norm.
 
 ## Summary
 

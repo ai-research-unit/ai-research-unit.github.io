@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The cell $\Sigma_{11}$ is the set of elements for which both questions of the arrangement receive the positive answer: the norm does not vanish, and the two eigenvalues do not coincide. It is the generic cell, open and dense in the algebra. It is also the cell of a massive particle in motion, and of a spacelike momentum. Its physical content is the two-mode picture: two distinct light-cone frequencies, two invariant planes, a mode basis, and a beat. The two frequencies differ by $2\lvert\vec p\rvert=2mc\lvert\sinh\theta^{\mathrm{rpd}}\rvert$, and that difference is the beat frequency: a kinematic beat between the two modes, not a dynamical effect.
+The cell $\Sigma_{11}$ is the set of elements for which both questions of the arrangement receive the positive answer: the norm does not vanish, and the two eigenvalues do not coincide. It is the generic cell, open and dense in the algebra. It is also the cell of a massive particle in motion, and of a spacelike momentum. Its physical content is the two-mode picture: two distinct light-cone frequencies, two invariant planes, a mode basis, and a beat. The two frequencies differ by $2\lvert\vec p\rvert=2mc\lvert\sinh\theta_{\mathrm{rpd}}\rvert$, and that difference is the beat frequency: a kinematic beat between the two modes, not a dynamical effect.
 
 The article reads the cell. It states the conditions and the spectrum, reads the two-mode structure, the causal sign, the frame dependence, the invertibility and the spinor decomposition, and it labels the interpretations. It proves nothing: the sector theorems, the eigenbasis and the Peirce data are those of the mathematics articles cited below.
 
@@ -69,11 +69,11 @@ On the material slice, with $\tilde P=i\frac{E}{c}e_t+\vec p$ and $B=\lvert\vec 
 
 $$
 \lambda_\pm=i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)
-=i\,mc\,e^{\pm\theta^{\mathrm{rpd}}},
+=i\,mc\,e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
-\cosh\theta^{\mathrm{rpd}}=\frac{E}{mc},
+\cosh\theta_{\mathrm{rpd}}=\frac{E}{mc},
 \qquad
-\sinh\theta^{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc}.
+\sinh\theta_{\mathrm{rpd}}=\frac{\lvert\vec p\rvert}{mc}.
 $$
 
 The two eigenvalues are the two light-cone frequencies of one momentum, multiplied by $i$. Their sum is $2iE/c$ and their difference is $2i\lvert\vec p\rvert$; their product is $-m^2c^2$, and their ratio is the squared Doppler factor:
@@ -85,7 +85,7 @@ $$
 \qquad
 \lambda_+\lambda_-=-m^2c^2,
 \qquad
-\frac{\lambda_+}{\lambda_-}=e^{2\theta^{\mathrm{rpd}}}.
+\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}.
 $$
 
 The product is the invariant. The two factors are frame-dependent, and their dependence is exactly the Doppler rescaling. The cell therefore carries the whole relativistic kinematics of one particle: mass, energy, momentum and rapidity are four readings of one pair.
@@ -208,7 +208,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 
 - $\Sigma_{11}=\{N\neq0,\ B^2\neq0\}$ is the complement of the two cones, open, dense and of real dimension eight.
 - Its elements are units with two distinct non-zero eigenvalues $\lambda_\pm=Q_t\pm iB$, and the spectral decomposition has two non-zero terms.
-- On the material slice the pair is the Doppler pair $i\,mc\,e^{\pm\theta^{\mathrm{rpd}}}$; the sum is $2iE/c$, the difference $2i\lvert\vec p\rvert$, the product $-m^2c^2$.
+- On the material slice the pair is the Doppler pair $i\,mc\,e^{\pm\theta_{\mathrm{rpd}}}$; the sum is $2iE/c$, the difference $2i\lvert\vec p\rvert$, the product $-m^2c^2$.
 - The sign of $N$ separates the timelike branch (eigenvalues on the same imaginary half) from the spacelike branch (opposite halves).
 - The eigenbasis is unique, the Peirce decomposition is diagonal with both coefficients non-zero, and the spinor spaces each carry both eigenvalues.
 - The cell is inverse-closed and not product-closed; products land in $\Sigma_{11}$ or in $\Sigma_{10}$, on its scalar line or its Jordan part.
@@ -227,7 +227,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 | $e_\pm$ | the spectral idempotents |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the normalised Peirce basis |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces |
-| $\theta^{\mathrm{rpd}}$ | the rapidity, $\cosh\theta^{\mathrm{rpd}}=E/(mc)$ |
+| $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc)$ |
 | $r,\alpha,\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
 
 ## Further Reading

@@ -114,7 +114,7 @@ The table is exhaustive: every element lies in exactly one cell. The cells are t
 
 ### Mass in Motion: $\Sigma_{11}$
 
-The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}^{\mathrm{sp}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.
+The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\tilde{Ξ}_{\mathrm{sp}}}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.
 
 The physical content is the **two-mode picture**: two invariant planes, a mode basis, a beat, and a unique decomposition of the element into two null components. It is the regime in which a particle has both a mass and a direction of motion, and in which the mass shell is a level set rather than the cell itself.
 
@@ -248,7 +248,7 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 | $\mathbb{M}_-$ | the material slice, $Q_t=i c r'_t$, $\vec Q$ real |
 | $\mathbb{M}_+$ | the informational slice, $Q_t=c r_t$, $\vec Q$ imaginary |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the four-momentum chart |
-| $m$, $\vec p$, $\theta^{\mathrm{rpd}}$ | mass, momentum, rapidity |
+| $m$, $\vec p$, $\theta_{\mathrm{rpd}}$ | mass, momentum, rapidity |
 
 ## Further Reading
 

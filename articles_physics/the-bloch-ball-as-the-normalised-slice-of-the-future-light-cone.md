@@ -295,7 +295,7 @@ so the Bloch radius is a monotone function of the purity: it measures the purity
 A convenient measure of mixedness is the **linear entropy**
 
 $$
-S^{\mathrm{lin}}(\tilde{Ϛ})
+S_{\mathrm{lin}}(\tilde{Ϛ})
 = 1 - P(\tilde{Ϛ})
 = 1 - 2\,\langle\tilde{Ϛ},\tilde{Ϛ}\rangle_{*}
 = 1 - \mathrm{Tr}(\tilde{Ϛ}^2)
@@ -455,7 +455,7 @@ so **positivity of a state is the causal condition of the four-vector it mirrors
 
 <!-- PHYSICAL INTERPRETATION — one cone, not two cones in correspondence. On the normalised slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $c r'_{t}$ to $c r_t = c r'_{t}/2$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ to $\vec r_\psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/2$, so $c r_t - |\vec r_\psi| = (c r'_{t} - |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $c r'_{t} = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
-<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde R_\varphi = i c r'_t\,e_t$ at $c r'_{t} = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S^{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde R_\varphi\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde R_\varphi\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\varphi\rangle_{\natural}$, is exact. -->
+<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde R_\varphi = i c r'_t\,e_t$ at $c r'_{t} = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde R_\varphi\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde R_\varphi\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\varphi\rangle_{\natural}$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
@@ -469,7 +469,7 @@ both non-negative for $c r'_{t} > 0$ and both non-positive for $c r'_{t} < 0$. T
 
 The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the normalised slice is $\tilde R_\varphi = i\,e_t$: timelike, of the largest interval in magnitude on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
-**Interpretation (decoherence as inward motion).** The dictionary has a process interpretation. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S^{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{2}\langle\tilde R_\varphi\rangle_{\natural}$, an increase in entropy is exactly the growth in magnitude of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The interpretation is an interpretation of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
+**Interpretation (decoherence as inward motion).** The dictionary has a process interpretation. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{2}\langle\tilde R_\varphi\rangle_{\natural}$, an increase in entropy is exactly the growth in magnitude of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The interpretation is an interpretation of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
 
 ### One Formula, Two Actors
 
@@ -517,7 +517,7 @@ c r_t \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\theta^{\mathrm{rpd}}/2)e_t + i\sinh(\theta^{\mathrm{rpd}}/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta)e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2)e_t + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta)e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
 The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde U_{\mathrm b}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde U_{\mathrm b}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Decomposition in Subspaces*, *The Polar Decomposition of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 
@@ -546,16 +546,16 @@ $$
 The $*$-unitary actor is therefore the one for which the shared formula is a symmetry of the algebra itself, an inner automorphism; the unit-norm boost actor is the one for which it is a symmetry only of the sector and of the cone. This is why the general Lorentz transformation acts on the cone of $\mathbb{M}_+$ but not on the states. The remark in *Biquaternion Rotations and Lorentz Transformations* that on the identity the conjugation returns $\tilde{Q}\tilde{Q}^{*}$, so that "the unit leaves the centre and the centre is carried into the Hermitian sector", is precisely the state-space statement: the image of the identity is
 
 $$
-Ξ_{\tilde U}(e_t) = \tilde U\tilde U^{*} = \tilde U^{2} = \cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u,
+Ξ_{\tilde U}(e_t) = \tilde U\tilde U^{*} = \tilde U^{2} = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u,
 $$
 
 which is not central. On the maximally mixed state it gives
 
 $$
-\tfrac{1}{2}e_t \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u\bigr),
+\tfrac{1}{2}e_t \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u\bigr),
 $$
 
-of scalar part $\cosh\theta^{\mathrm{rpd}}$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the scalar part, and not preserving the scalar part is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the scalar part, the normalisation of a state, is not a Lorentz invariant.
+of scalar part $\cosh\theta_{\mathrm{rpd}}$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the scalar part, and not preserving the scalar part is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the scalar part, the normalisation of a state, is not a Lorentz invariant.
 
 ### The Sectors Are Anti-Isometric, Not Isomorphic
 

@@ -12,7 +12,7 @@ The parametrisation is not derived here. The two-sided action $\Phi_{(\tilde q,\
 
 The treatment is mathematical throughout: a rotation is an element of $SO(4)$ and no physical object is introduced. The three names are the classical ones of the geometry of four dimensions; what is added here is their quaternion content.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$; a quaternion is $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with scalar part $q_t$ and vector part $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the conjugate is $\tilde{q}^{\natural} = q_te_t-\vec q$, the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the unit quaternions form $Sp(1) = S^3$. For a unit imaginary quaternion $\nu$ write $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$ for the plane of the subalgebra it generates, and $\mathbb{C}_\nu^\perp = \operatorname{span}(w,\nu w)$ for its orthogonal complement, where $w$ is a unit vector orthogonal to $1$ and to $\nu$; then $w\exp(\nu\psi) = \exp(-\nu\psi)w$ for every real $\psi$. The operators of left and right multiplication are $L_{\tilde q}(\tilde q_3) = \tilde q\tilde q_3$ and $\rho_{\tilde q}(\tilde q_3) = \tilde q_3\tilde q$, and they commute, $L_{\tilde p}\rho_{\tilde q} = \rho_{\tilde q}L_{\tilde p}$; the symbol $\rho_{\tilde q}$ is used here for right multiplication, written $R_{\tilde q}$ in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*. The planar rotation through $\theta^{\mathrm{pla}}$ is the matrix $R(\theta^{\mathrm{pla}})$. Two square matrices are **orthogonally similar** when they differ by the change of an orthonormal basis, that is by conjugation by an element of $O(4)$, and they are **conjugate in $SO(4)$** when the change may be taken to be a rotation. Two planes are **completely orthogonal** when every line of the first is orthogonal to every line of the second.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$; a quaternion is $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with scalar part $q_t$ and vector part $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the conjugate is $\tilde{q}^{\natural} = q_te_t-\vec q$, the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the unit quaternions form $Sp(1) = S^3$. For a unit imaginary quaternion $\nu$ write $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$ for the plane of the subalgebra it generates, and $\mathbb{C}_\nu^\perp = \operatorname{span}(w,\nu w)$ for its orthogonal complement, where $w$ is a unit vector orthogonal to $1$ and to $\nu$; then $w\exp(\nu\psi) = \exp(-\nu\psi)w$ for every real $\psi$. The operators of left and right multiplication are $L_{\tilde q}(\tilde q_3) = \tilde q\tilde q_3$ and $\rho_{\tilde q}(\tilde q_3) = \tilde q_3\tilde q$, and they commute, $L_{\tilde p}\rho_{\tilde q} = \rho_{\tilde q}L_{\tilde p}$; the symbol $\rho_{\tilde q}$ is used here for right multiplication, written $R_{\tilde q}$ in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*. The planar rotation through $\theta_{\mathrm{pla}}$ is the matrix $R(\theta_{\mathrm{pla}})$. Two square matrices are **orthogonally similar** when they differ by the change of an orthonormal basis, that is by conjugation by an element of $O(4)$, and they are **conjugate in $SO(4)$** when the change may be taken to be a rotation. Two planes are **completely orthogonal** when every line of the first is orthogonal to every line of the second.
 
 ## The Two Angles of a Rotation
 
@@ -26,35 +26,35 @@ The restriction of a rotation to an invariant plane is an orthogonal map of that
 
 **Theorem (normal form; four dimensions).** Let $T\in SO(4)$. Then $T$ is orthogonally similar to the block diagonal matrix
 
-$$ \boxed{\; \mathrm{diag}\bigl(R(\theta^{\mathrm{pla}}), R(\theta^{\mathrm{plb}})\bigr), \qquad 0\le\theta^{\mathrm{plb}}\le\theta^{\mathrm{pla}}\le\pi \;} ,$$
+$$ \boxed{\; \mathrm{diag}\bigl(R(\theta_{\mathrm{pla}}), R(\theta_{\mathrm{plb}})\bigr), \qquad 0\le\theta_{\mathrm{plb}}\le\theta_{\mathrm{pla}}\le\pi \;} ,$$
 
-and the pair $(\theta^{\mathrm{pla}},\theta^{\mathrm{plb}})$ is determined by $T$: the eigenvalues of $T$ are $\exp(\pm i\theta^{\mathrm{pla}})$ and $\exp(\pm i\theta^{\mathrm{plb}})$, an eigenvalue $1$ counting as the angle $0$ and an eigenvalue $-1$ as the angle $\pi$. Consequently $T$ fixes a plane pointwise if and only if $\theta^{\mathrm{plb}} = 0$.
+and the pair $(\theta_{\mathrm{pla}},\theta_{\mathrm{plb}})$ is determined by $T$: the eigenvalues of $T$ are $\exp(\pm i\theta_{\mathrm{pla}})$ and $\exp(\pm i\theta_{\mathrm{plb}})$, an eigenvalue $1$ counting as the angle $0$ and an eigenvalue $-1$ as the angle $\pi$. Consequently $T$ fixes a plane pointwise if and only if $\theta_{\mathrm{plb}} = 0$.
 
-*Proof.* The theorem of *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*, applied with $n = 4$: either $m = 2$, the fixed subspace has dimension $0$ and the normal form is the displayed one with the two angles of the non-real eigenvalue pairs, or $m = 1$, the fixed subspace has dimension $2$ and the normal form is $\mathrm{diag}(R(\theta^{\mathrm{pla}}),1,1)$, which is the displayed one with $\theta^{\mathrm{plb}} = 0$. The angles lie in $[0,\pi]$ by the choice of the argument of each non-real eigenvalue pair, and their multiset is determined by the eigenvalues of $T$.
+*Proof.* The theorem of *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*, applied with $n = 4$: either $m = 2$, the fixed subspace has dimension $0$ and the normal form is the displayed one with the two angles of the non-real eigenvalue pairs, or $m = 1$, the fixed subspace has dimension $2$ and the normal form is $\mathrm{diag}(R(\theta_{\mathrm{pla}}),1,1)$, which is the displayed one with $\theta_{\mathrm{plb}} = 0$. The angles lie in $[0,\pi]$ by the choice of the argument of each non-real eigenvalue pair, and their multiset is determined by the eigenvalues of $T$.
 
-**Definition.** The **two angles** of $T\in SO(4)$ are the numbers $\theta^{\mathrm{pla}}\ge\theta^{\mathrm{plb}}\ge0$ of the normal form; the **angle pair** is the unordered pair $\{\theta^{\mathrm{pla}},\theta^{\mathrm{plb}}\}$.
+**Definition.** The **two angles** of $T\in SO(4)$ are the numbers $\theta_{\mathrm{pla}}\ge\theta_{\mathrm{plb}}\ge0$ of the normal form; the **angle pair** is the unordered pair $\{\theta_{\mathrm{pla}},\theta_{\mathrm{plb}}\}$.
 
-**Remark (the two planes).** The change of basis of the theorem is by an element of $O(4)$, so the two invariant planes of the normal form are orthonormal planes on which $T$ acts as $R(\theta^{\mathrm{pla}})$ and $R(\theta^{\mathrm{plb}})$ respectively, and they are completely orthogonal. The pair of planes is unique for a generic rotation and far from unique for an isoclinic one, as the next sections show.
+**Remark (the two planes).** The change of basis of the theorem is by an element of $O(4)$, so the two invariant planes of the normal form are orthonormal planes on which $T$ acts as $R(\theta_{\mathrm{pla}})$ and $R(\theta_{\mathrm{plb}})$ respectively, and they are completely orthogonal. The pair of planes is unique for a generic rotation and far from unique for an isoclinic one, as the next sections show.
 
 ### The Three Types
 
-**Definition.** A rotation $T\in SO(4)$ is **simple** when $\theta^{\mathrm{plb}} = 0$, **isoclinic** when $0<\theta^{\mathrm{plb}} = \theta^{\mathrm{pla}}$, and **double** when $0<\theta^{\mathrm{plb}}<\theta^{\mathrm{pla}}$.
+**Definition.** A rotation $T\in SO(4)$ is **simple** when $\theta_{\mathrm{plb}} = 0$, **isoclinic** when $0<\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$, and **double** when $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$.
 
-The degenerate cases are the identity, $\theta^{\mathrm{pla}} = \theta^{\mathrm{plb}} = 0$, whose angle pair is $\{0,0\}$, and the central inversion $-I$, whose angle pair is $\{\pi,\pi\}$; the central inversion is isoclinic and has no fixed vector.
+The degenerate cases are the identity, $\theta_{\mathrm{pla}} = \theta_{\mathrm{plb}} = 0$, whose angle pair is $\{0,0\}$, and the central inversion $-I$, whose angle pair is $\{\pi,\pi\}$; the central inversion is isoclinic and has no fixed vector.
 
 The three types are tabulated with their fixed spaces and their planes.
 
 | Type | Angle pair | Fixed space | The two planes of the normal form |
 |---|---|---|---|
 | Identity | $\{0,0\}$ | all of $\mathbb{H}$ | any pair of completely orthogonal planes |
-| Simple | $\{\theta^{\mathrm{pla}},0\}$, $0<\theta^{\mathrm{pla}}\le\pi$ | a plane | the fixed plane and its complement |
-| Double | $\{\theta^{\mathrm{pla}},\theta^{\mathrm{plb}}\}$, $0<\theta^{\mathrm{plb}}<\theta^{\mathrm{pla}}$ | $\{0\}$ | the only pair of invariant planes when $\theta^{\mathrm{pla}}<\pi$ |
+| Simple | $\{\theta_{\mathrm{pla}},0\}$, $0<\theta_{\mathrm{pla}}\le\pi$ | a plane | the fixed plane and its complement |
+| Double | $\{\theta_{\mathrm{pla}},\theta_{\mathrm{plb}}\}$, $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$ | $\{0\}$ | the only pair of invariant planes when $\theta_{\mathrm{pla}}<\pi$ |
 | Isoclinic | $\{\theta,\theta\}$, $0<\theta<\pi$ | $\{0\}$ | one pair among infinitely many |
 | Central inversion | $\{\pi,\pi\}$ | $\{0\}$ | one pair among infinitely many |
 
-**Proposition.** Let $T$ be a double rotation with angles $0<\theta^{\mathrm{plb}}<\theta^{\mathrm{pla}}<\pi$. Then the two planes of its normal form are the only invariant planes of $T$.
+**Proposition.** Let $T$ be a double rotation with angles $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}<\pi$. Then the two planes of its normal form are the only invariant planes of $T$.
 
-*Proof.* Let $P$ be an invariant plane and extend scalars to $\mathbb{C}$. Since the four eigenvalues $\exp(\pm i\theta^{\mathrm{pla}}), \exp(\pm i\theta^{\mathrm{plb}})$ are distinct, $T$ is diagonalisable with four eigenspaces of complex dimension one, and the invariant complex plane $P\otimes\mathbb{C}$ is the sum of two of them. A complex subspace comes from a real one exactly when it is stable under complex conjugation, so the two eigenvalues involved are conjugate, and the two possibilities are $\exp(i\theta^{\mathrm{pla}}), \exp(-i\theta^{\mathrm{pla}})$ and $\exp(i\theta^{\mathrm{plb}}), \exp(-i\theta^{\mathrm{plb}})$. The first gives the plane of the angle $\theta^{\mathrm{pla}}$ and the second the plane of the angle $\theta^{\mathrm{plb}}$.
+*Proof.* Let $P$ be an invariant plane and extend scalars to $\mathbb{C}$. Since the four eigenvalues $\exp(\pm i\theta_{\mathrm{pla}}), \exp(\pm i\theta_{\mathrm{plb}})$ are distinct, $T$ is diagonalisable with four eigenspaces of complex dimension one, and the invariant complex plane $P\otimes\mathbb{C}$ is the sum of two of them. A complex subspace comes from a real one exactly when it is stable under complex conjugation, so the two eigenvalues involved are conjugate, and the two possibilities are $\exp(i\theta_{\mathrm{pla}}), \exp(-i\theta_{\mathrm{pla}})$ and $\exp(i\theta_{\mathrm{plb}}), \exp(-i\theta_{\mathrm{plb}})$. The first gives the plane of the angle $\theta_{\mathrm{pla}}$ and the second the plane of the angle $\theta_{\mathrm{plb}}$.
 
 ## The Quaternion Parametrisation and the Two Angles
 
@@ -104,7 +104,7 @@ $$
 
 so that the two angles of the rotation satisfy
 
-$$ \boxed{\; \cos\theta^{\mathrm{pla}}+\cos\theta^{\mathrm{plb}} = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\theta^{\mathrm{pla}}\cos\theta^{\mathrm{plb}} = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1 \;} .$$
+$$ \boxed{\; \cos\theta_{\mathrm{pla}}+\cos\theta_{\mathrm{plb}} = 2\,(\operatorname{Re}\tilde q)(\operatorname{Re}\tilde p), \qquad \cos\theta_{\mathrm{pla}}\cos\theta_{\mathrm{plb}} = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1 \;} .$$
 
 In particular the angles depend only on the real parts of the two factors and not on their axes.
 
@@ -116,7 +116,7 @@ In particular the angles depend only on the real parts of the two factors and no
 
 **Theorem.** Let $T = \Phi_{(\tilde q,\tilde p)}$ and suppose $T\neq\pm\mathrm{id}$. Then $T$ is a simple rotation if and only if $\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$, that is if and only if the two half-angles are equal. The fixed plane is then the plane of the normal form with the angle $0$, and $T$ rotates the completely orthogonal plane through $2\theta$, read modulo $2\pi$, where $\theta = \arccos(\operatorname{Re}\tilde q)$.
 
-*Proof.* By the theorem on the angles the pair is obtained from $\theta+\phi$ and $\theta-\phi$. A simple rotation has $\theta^{\mathrm{plb}} = 0$, that is one of the two numbers reduces to $0$ modulo $2\pi$; the sum reduces to $0$ exactly when $\theta+\phi$ is $0$ or $2\pi$, that is when $T$ is the identity or the central inversion, which are excluded; so the difference reduces to $0$, and $|\theta-\phi| = 0$ because both numbers lie in $[0,\pi]$, whence $\theta = \phi$ and, conversely, $\theta = \phi$ gives the difference $0$ and a fixed plane. The remaining angle is the sum $2\theta$, with the understanding that a value above $\pi$ is read modulo $2\pi$. For a unit quaternion the real part is $\cos\theta$ with $\theta\in[0,\pi]$, so $\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ is the same condition.
+*Proof.* By the theorem on the angles the pair is obtained from $\theta+\phi$ and $\theta-\phi$. A simple rotation has $\theta_{\mathrm{plb}} = 0$, that is one of the two numbers reduces to $0$ modulo $2\pi$; the sum reduces to $0$ exactly when $\theta+\phi$ is $0$ or $2\pi$, that is when $T$ is the identity or the central inversion, which are excluded; so the difference reduces to $0$, and $|\theta-\phi| = 0$ because both numbers lie in $[0,\pi]$, whence $\theta = \phi$ and, conversely, $\theta = \phi$ gives the difference $0$ and a fixed plane. The remaining angle is the sum $2\theta$, with the understanding that a value above $\pi$ is read modulo $2\pi$. For a unit quaternion the real part is $\cos\theta$ with $\theta\in[0,\pi]$, so $\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ is the same condition.
 
 **Proposition (the rotations fixing the real line).** The assignments $\tilde q\mapsto\Phi_{(\tilde q,\tilde q)}$ are exactly the rotations of $\mathbb{H}$ that fix the real line pointwise, and they form the adjoint action, $\Phi_{(\tilde q,\tilde q)}(\tilde q_3) = \tilde q\tilde q_3\tilde q^{-1}$, a subgroup of $SO(4)$ isomorphic to $SO(3)$.
 
@@ -155,7 +155,7 @@ The criteria are collected in a table.
 | Type | Criterion on the pair $(\tilde q,\tilde p)$ | Angle pair |
 |---|---|---|
 | Identity | $\tilde q = \tilde p = \pm1$ | $\{0,0\}$ |
-| Simple, not the identity | $\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ and $|\operatorname{Re}\tilde q|<1$ | $\{\theta^{\mathrm{pla}},0\}$ with $0<\theta^{\mathrm{pla}}\le\pi$ |
+| Simple, not the identity | $\operatorname{Re}\tilde q = \operatorname{Re}\tilde p$ and $|\operatorname{Re}\tilde q|<1$ | $\{\theta_{\mathrm{pla}},0\}$ with $0<\theta_{\mathrm{pla}}\le\pi$ |
 | Left-isoclinic | $\tilde p = \pm1$ and $\tilde q\neq\pm1$ | $\{\theta,\theta\}$ with $0<\theta<\pi$ |
 | Right-isoclinic | $\tilde q = \pm1$ and $\tilde p\neq\pm1$ | $\{\phi,\phi\}$ with $0<\phi<\pi$ |
 | Central inversion | $\tilde q = -\tilde p = \pm1$ | $\{\pi,\pi\}$ |
@@ -250,7 +250,7 @@ The orbit of a point of the unit sphere under the one-parameter group of the rot
 
 ## Summary
 
-A rotation of $\mathbb{H}\cong\mathbb{R}^4$ is a pair of unit quaternions up to simultaneous sign, $\tilde q_3\mapsto\tilde q\tilde q_3\tilde p^{-1}$, and its normal form is a pair of planar rotations in two completely orthogonal planes with the angles $\theta^{\mathrm{pla}}\ge\theta^{\mathrm{plb}}\ge0$. The eigenvalues of the rotation are $\exp(\pm i(\theta+\phi))$ and $\exp(\pm i(\theta-\phi))$, where $\theta$ and $\phi$ are the half-angles of the two factors; equivalently the characteristic polynomial depends only on the two real parts, $\operatorname{Re}\tilde q$ and $\operatorname{Re}\tilde p$, and the two angles satisfy $\cos\theta^{\mathrm{pla}}+\cos\theta^{\mathrm{plb}} = 2\operatorname{Re}\tilde q\operatorname{Re}\tilde p$ and $\cos\theta^{\mathrm{pla}}\cos\theta^{\mathrm{plb}} = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1$. The two angles depend only on the two real parts and not at all on the two axes.
+A rotation of $\mathbb{H}\cong\mathbb{R}^4$ is a pair of unit quaternions up to simultaneous sign, $\tilde q_3\mapsto\tilde q\tilde q_3\tilde p^{-1}$, and its normal form is a pair of planar rotations in two completely orthogonal planes with the angles $\theta_{\mathrm{pla}}\ge\theta_{\mathrm{plb}}\ge0$. The eigenvalues of the rotation are $\exp(\pm i(\theta+\phi))$ and $\exp(\pm i(\theta-\phi))$, where $\theta$ and $\phi$ are the half-angles of the two factors; equivalently the characteristic polynomial depends only on the two real parts, $\operatorname{Re}\tilde q$ and $\operatorname{Re}\tilde p$, and the two angles satisfy $\cos\theta_{\mathrm{pla}}+\cos\theta_{\mathrm{plb}} = 2\operatorname{Re}\tilde q\operatorname{Re}\tilde p$ and $\cos\theta_{\mathrm{pla}}\cos\theta_{\mathrm{plb}} = (\operatorname{Re}\tilde q)^2+(\operatorname{Re}\tilde p)^2-1$. The two angles depend only on the two real parts and not at all on the two axes.
 
 The classification follows from the two angles. A rotation is simple, that is it fixes a plane pointwise, exactly when the two real parts are equal, and it then rotates the completely orthogonal plane through twice the half-angle; it is a double rotation when the two real parts differ and neither is $\pm1$; it is isoclinic, that is its two angles are equal and nonzero, exactly when one of the real parts is $\pm1$, so that the rotation is a left or a right multiplication. The simple rotations fixing the real line are the adjoint action, a copy of $SO(3)$.
 
@@ -269,9 +269,9 @@ In the Hopf coordinates $\tilde q = \sin\eta\,\exp(\vec e_x\zeta_x)+\cos\eta\,\e
 | $L_{\tilde q}(\tilde q_3) = \tilde q\tilde q_3$, $\rho_{\tilde q}(\tilde q_3) = \tilde q_3\tilde q$ | Left and right multiplication (right multiplication is $R_{\tilde q}$ elsewhere) |
 | $\Phi_{(\tilde q,\tilde p)}(\tilde q_3) = \tilde q\tilde q_3\tilde p^{-1}$ | Two-sided action, a general rotation of $\mathbb{H}$ |
 | $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$, $\mathbb{C}_\nu^\perp$ | Plane of a unit imaginary quaternion $\nu$ and its complement |
-| $R(\theta^{\mathrm{pla}})$ | Planar rotation through $\theta^{\mathrm{pla}}$ |
-| $\theta^{\mathrm{pla}}\ge\theta^{\mathrm{plb}}\ge0$ | The two angles of a rotation, its normal form |
-| simple / double / isoclinic | $\theta^{\mathrm{plb}} = 0$ / $0<\theta^{\mathrm{plb}}<\theta^{\mathrm{pla}}$ / $0<\theta^{\mathrm{plb}} = \theta^{\mathrm{pla}}$ |
+| $R(\theta_{\mathrm{pla}})$ | Planar rotation through $\theta_{\mathrm{pla}}$ |
+| $\theta_{\mathrm{pla}}\ge\theta_{\mathrm{plb}}\ge0$ | The two angles of a rotation, its normal form |
+| simple / double / isoclinic | $\theta_{\mathrm{plb}} = 0$ / $0<\theta_{\mathrm{plb}}<\theta_{\mathrm{pla}}$ / $0<\theta_{\mathrm{plb}} = \theta_{\mathrm{pla}}$ |
 | $\theta = \arccos(\operatorname{Re}\tilde q)$, $\phi = \arccos(\operatorname{Re}\tilde p)$ | The two half-angles of the parametrising pair |
 | $S^3_L = \{L_{\tilde q}\}$, $S^3_R = \{\rho_{\tilde q}\}$ | The left- and right-isoclinic spheres |
 | $(\zeta_x,\eta,\zeta_y)$ | Hopf coordinates of the unit sphere |

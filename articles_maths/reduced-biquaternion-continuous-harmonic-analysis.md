@@ -4,7 +4,7 @@
 
 This article studies the continuous Fourier transform of a reduced biquaternion-valued function. The transform is defined by an algebra-valued kernel built from a root of minus one; because the idempotents commute with every element and the multiplication is commutative, the transform splits into the pair of the ordinary complex Fourier transforms of the two idempotent coordinates. The article records the kernel, the transform pair, the factorization, the convolution theorem, the relation to the differential operators, the vanishing-norm issue and the relation to the discrete transform. The treatment is purely mathematical.
 
-Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}^{\mathrm{red}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
+Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}_{\mathrm{red}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
 
 ## The Fourier Kernel
 
@@ -31,7 +31,7 @@ so it is the same complex kernel in the two coordinates when $\rho=\pm i$ and th
 
 ## The Continuous Transform Pair
 
-**Definition.** For $f\in L^{1}(\mathbb{R},\mathbb{B}^{\mathrm{red}})$ the **Fourier transform** is
+**Definition.** For $f\in L^{1}(\mathbb{R},\mathbb{B}_{\mathrm{red}})$ the **Fourier transform** is
 $$
 \hat f(\omega)=\int_{\mathbb{R}}f(t)\,W(t,\omega)\,\mathrm{d}t .
 $$
@@ -124,7 +124,7 @@ $$
 $$
 whose real part is the Euclidean inner product of the two factors and whose diagonal is positive definite, $\langle X,X\rangle=\lvert x_{1}\rvert^{2}+\lvert x_{2}\rvert^{2}>0$ for $X\neq0$.
 
-**Theorem (the Bochner theorem).** A continuous function $\Phi:\mathbb{R}\to\mathbb{B}^{\mathrm{red}}$ is the transform of a finite positive measure if and only if it is **positive definite**, that is
+**Theorem (the Bochner theorem).** A continuous function $\Phi:\mathbb{R}\to\mathbb{B}_{\mathrm{red}}$ is the transform of a finite positive measure if and only if it is **positive definite**, that is
 $$
 \sum_{j,r=1}^{n}\bigl\langle c_{j},\,c_{r}\bigr\rangle\,\Phi(\omega_{j}-\omega_{r})\ \ge\ 0
 $$

@@ -218,7 +218,7 @@ A **unit** in an algebra $A$ over a commutative ring $R$ is an element $u$ that 
 
 A **zero divisor** in an algebra $A$ over a commutative ring $R$ is a nonzero element $z$ such that there exists a nonzero element $w$ with $zw = 0$ or $wz = 0$. An algebra with no zero divisors is called a **domain**.
 
-**Key difference from the field case.** Over a field, an algebra may or may not have zero divisors. Over a commutative ring with zero divisors, the zero divisors of the ring automatically become zero divisors in the algebra, provided they remain nonzero there. For example, over $\mathbb{C}^{\mathrm{spl}}$, the element $(1 + e) \cdot 1$ is a zero divisor in any $\mathbb{C}^{\mathrm{spl}}$-algebra in which it is nonzero.
+**Key difference from the field case.** Over a field, an algebra may or may not have zero divisors. Over a commutative ring with zero divisors, the zero divisors of the ring automatically become zero divisors in the algebra, provided they remain nonzero there. For example, over $\mathbb{C}_{\mathrm{spl}}$, the element $(1 + e) \cdot 1$ is a zero divisor in any $\mathbb{C}_{\mathrm{spl}}$-algebra in which it is nonzero.
 
 ### Ideals
 

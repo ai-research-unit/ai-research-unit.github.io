@@ -100,15 +100,15 @@ The bijection sends a homomorphism to the form whose eigenvalue system it produc
 
 ### The old subspace
 
-**Definition.** For $M\mid N$ and $d\mid N/M$ the form $f\mid_k\gamma_d$ for $f\in S_k(\Gamma_1(M))$ lies in $S_k(\Gamma_1(N))$; the **old subspace** $S_k(\Gamma_1(N))^{\mathrm{old}}$ is the span of all such forms, and the **new subspace** is the quotient
+**Definition.** For $M\mid N$ and $d\mid N/M$ the form $f\mid_k\gamma_d$ for $f\in S_k(\Gamma_1(M))$ lies in $S_k(\Gamma_1(N))$; the **old subspace** $S_k(\Gamma_1(N))_{\mathrm{old}}$ is the span of all such forms, and the **new subspace** is the quotient
 $$
-S_k(\Gamma_1(N))^{\mathrm{new}} = S_k(\Gamma_1(N))^{\mathrm{old}\,\perp}
+S_k(\Gamma_1(N))_{\mathrm{new}} = S_k(\Gamma_1(N))_{\mathrm{old}}^{\perp}
 $$
 taken with respect to the Petersson inner product of *The Adjoint of the Hecke Operator*.
 
 **Theorem (Atkin–Lehner, multiplicity one).** The new subspace has a basis of normalised eigenforms whose eigenvalue systems are not of lower level, the old and new parts are stable under the Hecke operators for $(n,N)=1$, and on the new part a normalised eigenform is determined by its eigenvalue system; the space decomposes as
 $$
-\boxed{\;S_k(\Gamma_1(N)) = S_k^{\mathrm{old}}\oplus S_k^{\mathrm{new}}\;},
+\boxed{\;S_k(\Gamma_1(N)) = S_{\mathrm{old},k}\oplus S_{\mathrm{new},k}\;},
 $$
 an orthogonal direct sum once the Petersson product is available.
 
@@ -134,7 +134,7 @@ For $n\ge1$ the Hecke operator $T_n$ is the average $n^{k-1}\sum_{ad=n}d^{-k}\su
 | $T_{p^{r+1}}=T_pT_{p^r}-p^{k-1}\langle p\rangle T_{p^{r-1}}$ | Prime-power recursion |
 | $a_{mn}=a_ma_n$, $a_{p^{r+1}}=a_pa_{p^r}-\varepsilon(p)p^{k-1}a_{p^{r-1}}$ | Recursion for a normalised eigenform |
 | $L(f,s)=\prod_p(1-a_pp^{-s}+\varepsilon(p)p^{k-1-2s})^{-1}$ | Euler product of an eigenform |
-| $S_k^{\mathrm{old}}, S_k^{\mathrm{new}}$ | Old subspace; new subspace |
+| $S_{\mathrm{old},k}, S_{\mathrm{new},k}$ | Old subspace; new subspace |
 | $W_Q$ | Atkin–Lehner operators of the divisors $Q\mid N$ |
 
 ## Further Reading

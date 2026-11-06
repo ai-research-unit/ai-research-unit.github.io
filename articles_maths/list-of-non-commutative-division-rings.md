@@ -85,8 +85,8 @@ The Cayley–Dickson doubling chain loses commutativity at the quaternions and a
 |---|---|---|
 | $M_n(k)$, $n \geq 2$ | the matrix units $E_{11}E_{22} = 0$ are zero divisors | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | zero divisors; not every nonzero element is invertible | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
-| $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
+| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Division Algebras* |
 | the group ring $k[G]$ | has zero divisors whenever $G$ has torsion | *Group Algebras* |
 | $k[G]$ with $G$ torsion-free and nontrivial | a domain, but not every nonzero element is a unit: $g - 1$ has augmentation $0$ | *Non-Commutative Domains* |
@@ -108,7 +108,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $Z(D)$, $Z(\mathbb{H}) = \mathbb{R}$ | The centre of a division ring |
 | $A_1(k)$, $D_1(k)$ | The Weyl algebra and the first Weyl field $\operatorname{Frac}(A_1(k))$ |
 | $M_n(k)$ | The matrix algebra; not a division ring for $n \geq 2$ |
-| $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$ | Biquaternions, split-biquaternions; not division rings |
+| $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$ | Biquaternions, split-biquaternions; not division rings |
 | $\mathbb{O}$, $\mathbb{S}$ | Octonions, sedenions; not rings |
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$ | The commutative division rings |
 

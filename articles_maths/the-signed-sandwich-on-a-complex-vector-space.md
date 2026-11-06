@@ -79,7 +79,7 @@ and it is an involution exactly when $u\alpha(u)$ is central. If moreover $\alph
 
 ## The Relation to the Unsigned Sandwich and the Degenerate Cases
 
-**Proposition (the unsigned sandwich as the trivial involution).** The signed sandwich with $\alpha = \mathrm{id}$ is the unsigned sandwich, $\mathrm{Sd}^{\mathrm{id}}^{\mathrm{id}}_{a,b} = \Phi_{a,b}$; for the general grade involution,
+**Proposition (the unsigned sandwich as the trivial involution).** The signed sandwich with $\alpha = \mathrm{id}$ is the unsigned sandwich, $\mathrm{Sd}_{\mathrm{id}}_{\mathrm{id},a,b} = \Phi_{a,b}$; for the general grade involution,
 $$
 \mathrm{Sd}^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)},
 $$

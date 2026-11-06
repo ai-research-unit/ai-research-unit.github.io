@@ -68,90 +68,90 @@ A **neighborhood** of $\tilde{Q}_0$ is any set containing some $B(\tilde{Q}_0, r
 
 ### Limits of Functions
 
-**Definition (limit).** Let $F^{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ be a function, $\tilde{Q}_0 \in \mathbb{B}$ a point, and $\tilde Q_2 \in \mathbb{B}$ a biquaternion. We say that $F^{\mathrm{fn}}(\tilde{Q})$ **tends to** $\tilde Q_2$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
+**Definition (limit).** Let $F_{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ be a function, $\tilde{Q}_0 \in \mathbb{B}$ a point, and $\tilde Q_2 \in \mathbb{B}$ a biquaternion. We say that $F_{\mathrm{fn}}(\tilde{Q})$ **tends to** $\tilde Q_2$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
 
 $$
-\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2,
+\lim_{\tilde{Q} \to \tilde{Q}_0} F_{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2,
 $$
 
 if for every $\varepsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon.
+0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F_{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon.
 $$
 
-The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $F^{\mathrm{fn}}$ at $\tilde{Q}_0$ itself does not affect the limit.
+The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $F_{\mathrm{fn}}$ at $\tilde{Q}_0$ itself does not affect the limit.
 
 **Theorem (uniqueness).** If the limit exists, it is unique.
 
-**Proof.** Suppose $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde Q_2 \neq \tilde Q_3$. Let $\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
+**Proof.** Suppose $F_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $F_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde Q_2 \neq \tilde Q_3$. Let $\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|F_{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|F_{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
 
 $$
-\|\tilde Q_2 - \tilde Q_3\|_E \leq \|\tilde Q_2 - F^{\mathrm{fn}}(\tilde{Q})\|_E + \|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < 2\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E,
+\|\tilde Q_2 - \tilde Q_3\|_E \leq \|\tilde Q_2 - F_{\mathrm{fn}}(\tilde{Q})\|_E + \|F_{\mathrm{fn}}(\tilde{Q}) - \tilde Q_3\|_E < 2\varepsilon = \|\tilde Q_2 - \tilde Q_3\|_E,
 $$
 
 a contradiction.
 
-**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{B} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $F^{\mathrm{fn}}(\tilde{Q}_n) \to \tilde Q_2$.
+**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} F_{\mathrm{fn}}(\tilde{Q}) = \tilde Q_2$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{B} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $F_{\mathrm{fn}}(\tilde{Q}_n) \to \tilde Q_2$.
 
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde Q_2$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|F^{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $F^{\mathrm{fn}}(\tilde{Q}_n) \not\to \tilde Q_2$, contradicting the hypothesis.
+**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde Q_2$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|F_{\mathrm{fn}}(\tilde{Q}) - \tilde Q_2\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $F_{\mathrm{fn}}(\tilde{Q}_n) \not\to \tilde Q_2$, contradicting the hypothesis.
 
-**Theorem (algebra of limits).** If $F^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, then
+**Theorem (algebra of limits).** If $F_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2$ and $G_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_3$ as $\tilde{Q} \to \tilde{Q}_0$, then
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) + G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2 + \tilde Q_3, \qquad F^{\mathrm{fn}}(\tilde{Q})G^{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2\tilde Q_3.
+F_{\mathrm{fn}}(\tilde{Q}) + G_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2 + \tilde Q_3, \qquad F_{\mathrm{fn}}(\tilde{Q})G_{\mathrm{fn}}(\tilde{Q}) \to \tilde Q_2\tilde Q_3.
 $$
 
 **Proof.** For the sum, use the triangle inequality:
 
 $$
-\|(F^{\mathrm{fn}} + G^{\mathrm{fn}}) - (\tilde Q_2 + \tilde Q_3)\|_E \leq \|F^{\mathrm{fn}} - \tilde Q_2\|_E + \|G^{\mathrm{fn}} - \tilde Q_3\|_E.
+\|(F_{\mathrm{fn}} + G_{\mathrm{fn}}) - (\tilde Q_2 + \tilde Q_3)\|_E \leq \|F_{\mathrm{fn}} - \tilde Q_2\|_E + \|G_{\mathrm{fn}} - \tilde Q_3\|_E.
 $$
 
 For the product, use the identity
 
 $$
-F^{\mathrm{fn}} G^{\mathrm{fn}} - \tilde Q_2 \tilde Q_3 = (F^{\mathrm{fn}} - \tilde Q_2) G^{\mathrm{fn}} + \tilde Q_2 (G^{\mathrm{fn}} - \tilde Q_3),
+F_{\mathrm{fn}} G_{\mathrm{fn}} - \tilde Q_2 \tilde Q_3 = (F_{\mathrm{fn}} - \tilde Q_2) G_{\mathrm{fn}} + \tilde Q_2 (G_{\mathrm{fn}} - \tilde Q_3),
 $$
 
-and the fact that $G^{\mathrm{fn}}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
+and the fact that $G_{\mathrm{fn}}$ is bounded near $\tilde{Q}_0$ (because it has a limit).
 
 ### Continuity
 
-**Definition (continuity).** A function $F^{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ is **continuous at a point** $\tilde{Q}_0 \in \mathbb{B}$ if the limit exists and equals the value of the function at that point:
+**Definition (continuity).** A function $F_{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ is **continuous at a point** $\tilde{Q}_0 \in \mathbb{B}$ if the limit exists and equals the value of the function at that point:
 
 $$
-\lim_{\tilde{Q} \to \tilde{Q}_0} F^{\mathrm{fn}}(\tilde{Q}) = F^{\mathrm{fn}}(\tilde{Q}_0).
+\lim_{\tilde{Q} \to \tilde{Q}_0} F_{\mathrm{fn}}(\tilde{Q}) = F_{\mathrm{fn}}(\tilde{Q}_0).
 $$
 
 Equivalently, for every $\varepsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \varepsilon.
+\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|F_{\mathrm{fn}}(\tilde{Q}) - F_{\mathrm{fn}}(\tilde{Q}_0)\|_E < \varepsilon.
 $$
 
 The function is **continuous on an open set** if it is continuous at every point of the set.
 
-**Theorem (basic properties).** If $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ are continuous at $\tilde{Q}_0$, then so are $F^{\mathrm{fn}} + G^{\mathrm{fn}}$ and the pointwise product $F^{\mathrm{fn}}G^{\mathrm{fn}}$. If $F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$ and $G^{\mathrm{fn}}$ is continuous at $F^{\mathrm{fn}}(\tilde{Q}_0)$, then the composite $G^{\mathrm{fn}}\circ F^{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$.
+**Theorem (basic properties).** If $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ are continuous at $\tilde{Q}_0$, then so are $F_{\mathrm{fn}} + G_{\mathrm{fn}}$ and the pointwise product $F_{\mathrm{fn}}G_{\mathrm{fn}}$. If $F_{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$ and $G_{\mathrm{fn}}$ is continuous at $F_{\mathrm{fn}}(\tilde{Q}_0)$, then the composite $G_{\mathrm{fn}}\circ F_{\mathrm{fn}}$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|G^{\mathrm{fn}}(\tilde Q_4) - G^{\mathrm{fn}}(F^{\mathrm{fn}}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde Q_4 - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|F^{\mathrm{fn}}(\tilde{Q}) - F^{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
+**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|G_{\mathrm{fn}}(\tilde Q_4) - G_{\mathrm{fn}}(F_{\mathrm{fn}}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde Q_4 - F_{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|F_{\mathrm{fn}}(\tilde{Q}) - F_{\mathrm{fn}}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$.
 
-**Theorem (component-wise continuity).** A function $F^{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$.
+**Theorem (component-wise continuity).** A function $F_{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$.
 
-**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|F^{\mathrm{fn}}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient.
+**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients: $\max_\mu |F_\mu| \leq \|F_{\mathrm{fn}}\|_E \leq 2 \max_\mu |F_\mu|$. So convergence in $\mathbb{B}$ is equivalent to convergence of each coefficient.
 
 **Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{B}$ is uniformly continuous.
 
-**Proof.** This is the standard argument: if $F^{\mathrm{fn}}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde Q_{4,n})$ in the compact set with $\|\tilde{Q}_n - \tilde Q_{4,n}\|_E \to 0$ but $\|F^{\mathrm{fn}}(\tilde{Q}_n) - F^{\mathrm{fn}}(\tilde Q_{4,n})\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde Q_{4,n} \to \tilde{Q}$, and by continuity $F^{\mathrm{fn}}(\tilde{Q}_n) \to F^{\mathrm{fn}}(\tilde{Q})$ and $F^{\mathrm{fn}}(\tilde Q_{4,n}) \to F^{\mathrm{fn}}(\tilde{Q})$, contradicting the inequality.
+**Proof.** This is the standard argument: if $F_{\mathrm{fn}}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde Q_{4,n})$ in the compact set with $\|\tilde{Q}_n - \tilde Q_{4,n}\|_E \to 0$ but $\|F_{\mathrm{fn}}(\tilde{Q}_n) - F_{\mathrm{fn}}(\tilde Q_{4,n})\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde Q_{4,n} \to \tilde{Q}$, and by continuity $F_{\mathrm{fn}}(\tilde{Q}_n) \to F_{\mathrm{fn}}(\tilde{Q})$ and $F_{\mathrm{fn}}(\tilde Q_{4,n}) \to F_{\mathrm{fn}}(\tilde{Q})$, contradicting the inequality.
 
 ## The Problem of Differentiability
 
 ### The Naive Definition
 
-The derivative of a function $F^{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit
+The derivative of a function $F_{\mathrm{fn}} : \mathbb{B} \to \mathbb{B}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit
 
 $$
-F^{\mathrm{fn}\prime}(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{F^{\mathrm{fn}}(\tilde{Q}_0 + \tilde{H}) - F^{\mathrm{fn}}(\tilde{Q}_0)}{\tilde{H}},
+F_{\mathrm{fn}}^{\prime}(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{F_{\mathrm{fn}}(\tilde{Q}_0 + \tilde{H}) - F_{\mathrm{fn}}(\tilde{Q}_0)}{\tilde{H}},
 $$
 
 where $\tilde{H}$ is a biquaternion and the quotient is a biquaternion quotient. This definition runs into two difficulties, both specific to the non-commutative and non-division structure of $\mathbb{B}$.
@@ -220,13 +220,13 @@ In each case, the four real parameters ($q_t, q_x, q_y, q_z$ for $\mathbb{H}_{\m
 A **biquaternion-valued function on a four-dimensional subspace** is a map
 
 $$
-F^{\mathrm{fn}} : V \to \mathbb{B}, \qquad \tilde{Q} \mapsto F^{\mathrm{fn}}(\tilde{Q}),
+F_{\mathrm{fn}} : V \to \mathbb{B}, \qquad \tilde{Q} \mapsto F_{\mathrm{fn}}(\tilde{Q}),
 $$
 
-where $V$ is one of the four subspaces above. Because $V$ is four-dimensional, the function $F^{\mathrm{fn}}$ is determined by four complex-valued functions of the four real parameters that parametrize $V$. For example, on $\mathbb{M}_-$,
+where $V$ is one of the four subspaces above. Because $V$ is four-dimensional, the function $F_{\mathrm{fn}}$ is determined by four complex-valued functions of the four real parameters that parametrize $V$. For example, on $\mathbb{M}_-$,
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) = F_0(q'_t, q_x, q_y, q_z) e_t + F_1(q'_t, q_x, q_y, q_z) \vec e_x + F_2(q'_t, q_x, q_y, q_z) \vec e_y + F_3(q'_t, q_x, q_y, q_z) \vec e_z.
+F_{\mathrm{fn}}(\tilde{Q}) = F_0(q'_t, q_x, q_y, q_z) e_t + F_1(q'_t, q_x, q_y, q_z) \vec e_x + F_2(q'_t, q_x, q_y, q_z) \vec e_y + F_3(q'_t, q_x, q_y, q_z) \vec e_z.
 $$
 
 The restriction to $V$ reduces the number of independent real variables from eight (the full algebra) to four.
@@ -251,10 +251,10 @@ So, on each subspace, the partial derivatives take the following forms.
 The partial derivatives act component-wise on the coefficients:
 
 $$
-\frac{\partial F^{\mathrm{fn}}}{\partial Q_\mu} = \sum_{\nu\in\{t,x,y,z\}} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
+\frac{\partial F_{\mathrm{fn}}}{\partial Q_\mu} = \sum_{\nu\in\{t,x,y,z\}} \frac{\partial F_\nu}{\partial Q_\mu} e_\nu.
 $$
 
-Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately. The partial derivatives commute: $\partial^2/\partial Q_\mu\partial Q_\nu F^{\mathrm{fn}} = \partial^2/\partial Q_\nu\partial Q_\mu F^{\mathrm{fn}}$ for all $\mu, \nu$.
+Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately. The partial derivatives commute: $\partial^2/\partial Q_\mu\partial Q_\nu F_{\mathrm{fn}} = \partial^2/\partial Q_\nu\partial Q_\mu F_{\mathrm{fn}}$ for all $\mu, \nu$.
 
 ## The Differential Operators
 
@@ -268,16 +268,16 @@ $$
 
 This is the **Cauchy–Riemann operator** of the biquaternion theory (classically the Dirac operator). The tilde on $\tilde{\nabla}$ signals that it is a biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its scalar parts are the partial derivatives $\partial/\partial Q_\mu$.
 
-It acts on a biquaternion-valued function $F^{\mathrm{fn}}$ on $V$ by the rule
+It acts on a biquaternion-valued function $F_{\mathrm{fn}}$ on $V$ by the rule
 
 $$
-\tilde{\nabla} F^{\mathrm{fn}} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu\in\{t,x,y,z\}} F_\nu e_\nu\right) = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
+\tilde{\nabla} F_{\mathrm{fn}} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu\in\{t,x,y,z\}} F_\nu e_\nu\right) = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
 $$
 
-Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$, we can compute $\tilde{\nabla}F^{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
+Writing $F_{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$, we can compute $\tilde{\nabla}F_{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
 
 $$
-\tilde{\nabla}F^{\mathrm{fn}} = \left(\frac{\partial F_0}{\partial Q_t} - \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_t} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
+\tilde{\nabla}F_{\mathrm{fn}} = \left(\frac{\partial F_0}{\partial Q_t} - \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_t} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$
 
 where
@@ -294,10 +294,10 @@ $$
 \tilde{\nabla}^{\natural} = e_t \frac{\partial}{\partial Q_t} - \vec e_x \frac{\partial}{\partial Q_x} - \vec e_y \frac{\partial}{\partial Q_y} - \vec e_z \frac{\partial}{\partial Q_z}.
 $$
 
-The product $\tilde{\nabla}^{\natural}F^{\mathrm{fn}}$ is computed in the same way:
+The product $\tilde{\nabla}^{\natural}F_{\mathrm{fn}}$ is computed in the same way:
 
 $$
-\tilde{\nabla}^{\natural}F^{\mathrm{fn}} = \left(\frac{\partial F_0}{\partial Q_t} + \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_t} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
+\tilde{\nabla}^{\natural}F_{\mathrm{fn}} = \left(\frac{\partial F_0}{\partial Q_t} + \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_t} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
 $$
 
 ### The d'Alembertian
@@ -342,7 +342,7 @@ $$
 \Box = \frac{\partial^2}{\partial Q_t^2} + \Delta_Q.
 $$
 
-The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the identity $e_t$. It acts component-wise on the coefficients of $F^{\mathrm{fn}}$.
+The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the identity $e_t$. It acts component-wise on the coefficients of $F_{\mathrm{fn}}$.
 
 **Remark on the signature.** The formal expression $\partial^2/\partial Q_t^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{M}_-$, where $Q_t = iq'_t$ and $Q_\mu = q_\mu$, the derivative $\partial^2/\partial Q_t^2 = -\partial^2/\partial (q'_t)^2$, so
 
@@ -471,7 +471,7 @@ The approach in this article is the quaternionic analysis of Fueter, generalized
 
 - The function is defined on a four-dimensional real subspace of $\mathbb{B}$, with four real parameters.
 - The differential operators are biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$.
-- The "regular" functions are those satisfying $\tilde{\nabla}F^{\mathrm{fn}} = 0$, the biquaternion analogue of the Cauchy–Riemann equations.
+- The "regular" functions are those satisfying $\tilde{\nabla}F_{\mathrm{fn}} = 0$, the biquaternion analogue of the Cauchy–Riemann equations.
 
 This approach is closely related to **Clifford analysis**, which generalizes the theory to Clifford algebras over arbitrary base rings (including the real and complex numbers). The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
 
@@ -483,9 +483,9 @@ The following questions are not answered in this article and are left for later 
 
 1. **Invariance.** Under what transformations of the four-dimensional subspace do the operators $\tilde{\nabla}$, $\Box$, and $\tilde{\nabla}^2$ transform in a simple way?
 
-2. **Solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.** What is the structure of biquaternion-valued functions on the subspace that satisfy $\tilde{\nabla}F^{\mathrm{fn}} = 0$? This is the biquaternion analogue of the Cauchy–Riemann equations.
+2. **Solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** What is the structure of biquaternion-valued functions on the subspace that satisfy $\tilde{\nabla}F_{\mathrm{fn}} = 0$? This is the biquaternion analogue of the Cauchy–Riemann equations.
 
-3. **Solutions of $\Box F^{\mathrm{fn}} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
+3. **Solutions of $\Box F_{\mathrm{fn}} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
 
 4. **The convective operator.** What is the complete structure of $\tilde{D}\tilde{\nabla}$, and what does it represent mathematically?
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An iterated function system on the dual numbers is a finite family of **dual similarities** $S_i(z) = u_iz+v_i$ with $u_i$ a unit of $\mathbb{C}^{\mathrm{dln}}$; in the coordinates $z = x+\varepsilon y$ such a map is
+An iterated function system on the dual numbers is a finite family of **dual similarities** $S_i(z) = u_iz+v_i$ with $u_i$ a unit of $\mathbb{C}_{\mathrm{dln}}$; in the coordinates $z = x+\varepsilon y$ such a map is
 
 $$
 S_i(x+\varepsilon y) = (r_ix+v_{ix}) + \varepsilon\bigl(r_iy+s_ix+v_{iy}\bigr) ,
@@ -14,7 +14,7 @@ The article is deliberately short. The definitions of the attractor, the open se
 
 ## The Contractions and the Projection
 
-**Definition.** A **dual similarity** is $S(z) = uz+v$ with $u$ a unit of $\mathbb{C}^{\mathrm{dln}}$, and its **linear part** in the basis $\{1,\varepsilon\}$ is the triangular matrix
+**Definition.** A **dual similarity** is $S(z) = uz+v$ with $u$ a unit of $\mathbb{C}_{\mathrm{dln}}$, and its **linear part** in the basis $\{1,\varepsilon\}$ is the triangular matrix
 
 $$
 [u] = \begin{pmatrix} r & 0 \\ s & r \end{pmatrix}, \qquad u = r+\varepsilon s.
@@ -78,7 +78,7 @@ The box counts at the scales $3^{-n}$, for the finite set of the $2^{16}$ points
 
 ## The Comparison with the Complex and the Split-Complex Systems
 
-**Remark.** The three systems differ in exactly one place: what the algebra's second direction does. In $\mathbb{C}$ the similarity group contains the rotations, and the systems produce genuinely two-dimensional self-similar sets — the Sierpiński gasket, the Koch curve, the Julia sets as limits of conformal systems — as in *Iterated Function Systems in the Complex Plane*. In $\mathbb{C}^{\mathrm{spl}}$ the multiplication by a unit is an anisotropic scaling with singular values $|u_+|,|u_-|$ and no rotation, and the two coordinate directions are driven by the same word, so the systems produce Lipschitz graphs over one-dimensional real self-similar sets rather than products, as in *The Split-Complex Iterated Function Systems*; the product of the two real attractors is the attractor of the mixed system, not of the split one. In $\mathbb{C}^{\mathrm{dln}}$ the multiplication is triangular, its linear part has the two equal singular values only when the coupling vanishes, and every system has the attractor a one-dimensional graph over a real self-similar set: the second direction is not independent but the derivative direction of the first, and it never supplies a second generating coordinate. The comparison is sharp: the complex system has two generating directions (the ratio and the rotation), the split-complex system has two generating ratios, and the dual system has one generating ratio and a derivative.
+**Remark.** The three systems differ in exactly one place: what the algebra's second direction does. In $\mathbb{C}$ the similarity group contains the rotations, and the systems produce genuinely two-dimensional self-similar sets — the Sierpiński gasket, the Koch curve, the Julia sets as limits of conformal systems — as in *Iterated Function Systems in the Complex Plane*. In $\mathbb{C}_{\mathrm{spl}}$ the multiplication by a unit is an anisotropic scaling with singular values $|u_+|,|u_-|$ and no rotation, and the two coordinate directions are driven by the same word, so the systems produce Lipschitz graphs over one-dimensional real self-similar sets rather than products, as in *The Split-Complex Iterated Function Systems*; the product of the two real attractors is the attractor of the mixed system, not of the split one. In $\mathbb{C}_{\mathrm{dln}}$ the multiplication is triangular, its linear part has the two equal singular values only when the coupling vanishes, and every system has the attractor a one-dimensional graph over a real self-similar set: the second direction is not independent but the derivative direction of the first, and it never supplies a second generating coordinate. The comparison is sharp: the complex system has two generating directions (the ratio and the rotation), the split-complex system has two generating ratios, and the dual system has one generating ratio and a derivative.
 
 ## Summary
 

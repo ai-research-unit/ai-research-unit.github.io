@@ -15,10 +15,10 @@ Nothing analytic and nothing geometric is used. The article is the algebra of a 
 **Definition.** Let $\sigma$ act freely on $X$, let $B = X/\sigma$ be the orbit space and let $p : X \to B$ be the quotient, a double cover with deck transformation $\sigma$. The **transfer** is the chain map
 
 $$
-\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}{\eta^{\mathrm{lift}}}^{\pm},
+\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}{\eta_{\mathrm{lift}}}^{\pm},
 $$
 
-where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices ${\eta^{\mathrm{lift}}}^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.
+where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices ${\eta_{\mathrm{lift}}}^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.
 
 **Theorem.** The transfer is a well-defined chain map and it satisfies
 
@@ -142,7 +142,7 @@ $$
 \boxed{\;\tau \circ p^* = 0, \qquad \tau(p^*\beta \smile \alpha) = \beta \smile \tau(\alpha), \qquad e \smile \tau = 0\;},
 $$
 
-the first identity being the exactness at the middle, the second the projection formula of the transfer, and the third the exactness at the other occurrence of the base; the vanishing $\tau p^* = 0$ holds because $\tau p^*$ is the multiplication by the degree $2$ of the covering, which is zero in $\mathbb{F}_2$ and in the twisted theory, and it makes the images of $p^*$ and $\tau$ the successive kernels. With integer coefficients and a double cover whose deck transformation reverses the orientation the statements hold with the twisted coefficients $H^{*,\mathrm{red}}(S^0)$ in place of $R$.
+the first identity being the exactness at the middle, the second the projection formula of the transfer, and the third the exactness at the other occurrence of the base; the vanishing $\tau p^* = 0$ holds because $\tau p^*$ is the multiplication by the degree $2$ of the covering, which is zero in $\mathbb{F}_2$ and in the twisted theory, and it makes the images of $p^*$ and $\tau$ the successive kernels. With integer coefficients and a double cover whose deck transformation reverses the orientation the statements hold with the twisted coefficients $H_{\mathrm{red}}^*(S^0)$ in place of $R$.
 
 *Proof.* The projection formula is the naturality of the transfer under the cup product, $\tau(\alpha\smile p^*\beta)=\tau(\alpha)\smile\beta$, read with the graded commutativity; the vanishing $\tau p^*=0$ is the degree computation just stated; and the vanishing $e\smile\tau=0$ with $p^*e=0$ is the exactness that defines the Euler class as the class annihilating the image of the transfer while being annihilated by the pullback. The exactness of the resulting sequence is the subject of *The Gysin Sequence of a Two-Fold Covering*, next in this category.
 

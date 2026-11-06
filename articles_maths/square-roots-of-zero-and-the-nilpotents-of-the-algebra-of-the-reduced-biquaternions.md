@@ -52,11 +52,11 @@ For a product $\star$ the **square-zero set** is $\{\breve Q:\breve Q\star \brev
 | product | square-zero set | nilpotent set | nilpotency index |
 |---|---|---|---|
 | general plain bilinear ($\breve Q_{1}\breve Q_{2}$) | $\{0\}$ | $\{0\}$ | none |
-| general tessarine bilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}$) | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $2$ |
+| general tessarine bilinear ($\breve Q_{\mathrm{ts},1}\breve Q_{2}$) | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $2$ |
 | general plain sesquilinear ($\breve Q_{1}\breve Q_{2}^{*}$) | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $2$ |
-| general tessarine sesquilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$) | $\{0\}$ | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $3$ |
+| general tessarine sesquilinear ($\breve Q_{\mathrm{ts},1}\breve Q_{2}^{*}$) | $\{0\}$ | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | $3$ |
 
-**Theorem (the plain bilinear product and the tessarine sesquilinear product).** The multiplication $\breve Q_{1}\breve Q_{2}$ has square-zero set $\{0\}$, and the tessarine sesquilinear product $\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$ has square-zero set $\{0\}$ as well.
+**Theorem (the plain bilinear product and the tessarine sesquilinear product).** The multiplication $\breve Q_{1}\breve Q_{2}$ has square-zero set $\{0\}$, and the tessarine sesquilinear product $\breve Q_{\mathrm{ts},1}\breve Q_{2}^{*}$ has square-zero set $\{0\}$ as well.
 
 *Proof.* The multiplication is the theorem of the previous section. For the tessarine sesquilinear product, the diagonal is
 $$
@@ -64,7 +64,7 @@ $$
 $$
 so $\breve Q_{\mathrm{ts}}\breve Q^{*}=0$ requires $|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=0$, which forces $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$; hence $\breve Q=0$.
 
-**Theorem (the tessarine bilinear product and the plain sesquilinear product).** The tessarine bilinear product $\breve Q_{1,\mathrm{ts}}\breve Q_{2}$ and the plain sesquilinear product $\breve Q_{1}\breve Q_{2}^{*}$ have the same nonzero square-zero set, the two idempotent lines
+**Theorem (the tessarine bilinear product and the plain sesquilinear product).** The tessarine bilinear product $\breve Q_{\mathrm{ts},1}\breve Q_{2}$ and the plain sesquilinear product $\breve Q_{1}\breve Q_{2}^{*}$ have the same nonzero square-zero set, the two idempotent lines
 $$
 \boxed{\; \bigl\{\breve Q\neq0:\breve Q_{\mathrm{ts}}\breve Q=0\bigr\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-=\bigl\{\breve Q\neq0:\breve Q \breve Q^{*}=0\bigr\}=\mathcal{N} \;},
 $$
@@ -124,7 +124,7 @@ a nonzero element of the second idempotent line. The next power is $(\breve Q_{\
 
 **Theorem (the radical).** The Jacobson radical of the algebra is
 $$
-\boxed{\; \operatorname{rad}\mathbb{B}^{\mathrm{red}}=\{0\} \;},
+\boxed{\; \operatorname{rad}\mathbb{B}_{\mathrm{red}}=\{0\} \;},
 $$
 and the algebra is semisimple and Artinian.
 
@@ -139,9 +139,9 @@ The roots of zero of the multiplication are the single element $\breve Q=0$; the
 | product | square-zero set | nilpotent set | index |
 |---|---|---|---|
 | general plain bilinear ($\breve Q_{1}\breve Q_{2}$) | $\{0\}$ | $\{0\}$ | none |
-| general tessarine bilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}$) | the two lines | the two lines | $2$ |
+| general tessarine bilinear ($\breve Q_{\mathrm{ts},1}\breve Q_{2}$) | the two lines | the two lines | $2$ |
 | general plain sesquilinear ($\breve Q_{1}\breve Q_{2}^{*}$) | the two lines | the two lines | $2$ |
-| general tessarine sesquilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$) | $\{0\}$ | the two lines | $3$ |
+| general tessarine sesquilinear ($\breve Q_{\mathrm{ts},1}\breve Q_{2}^{*}$) | $\{0\}$ | the two lines | $3$ |
 
 The two **bilinear** products split in opposite ways — the plain one has no nonzero square-zero element, $\breve Q_{\mathrm{ts}}\breve Q=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ being a scalar vanishing only on the cone, and the tessarine one has the cone — and the two **sesquilinear** products split the other way — the plain one has the cone, $\breve Q \breve Q^{*}=(|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2})+(-Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$ vanishing only at $Q_{\blacktriangledown}=\pm Q_{\blacktriangle}$, and the tessarine one has none, since $\breve Q_{\mathrm{ts}}\breve Q^{*}$ has scalar part $|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}$. Every nonzero nilpotent of every product lies on the null cone $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, at index two for the tessarine bilinear and the plain sesquilinear products and at index three for the tessarine sesquilinear product.
 
@@ -155,7 +155,7 @@ The two **bilinear** products split in opposite ways — the plain one has no no
 | $\breve Q_{\mathrm{ts}}\breve Q^{*}=(\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2})-(Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$ | the diagonal of the tessarine sesquilinear product, vanishing only at $0$ |
 | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | the nilpotent set of every product that has one, the null cone |
 | index $2$, index $3$ | the nilpotency index of the non-associative products |
-| $\operatorname{rad}\mathbb{B}^{\mathrm{red}}=\{0\}$ | the trivial radical, the semisimplicity |
+| $\operatorname{rad}\mathbb{B}_{\mathrm{red}}=\{0\}$ | the trivial radical, the semisimplicity |
 
 ## Further Reading
 

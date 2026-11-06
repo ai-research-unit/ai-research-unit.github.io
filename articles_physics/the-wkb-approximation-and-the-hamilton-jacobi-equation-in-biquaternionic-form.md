@@ -4,7 +4,7 @@
 
 The WKB approximation is the semiclassical expansion of the wave function in powers of $\hbar$. Its leading order is the classical Hamilton–Jacobi equation for the action, and its next order is a transport equation for the amplitude. It is the bridge between the quantum problem and the classical trajectories, and it is the method by which barrier penetration, quantisation conditions, and the correspondence principle are usually obtained. This article develops both the WKB approximation and the Hamilton–Jacobi equation in the biquaternion framework, for a spin-0 particle in an external scalar potential.
 
-The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $\exp(iS/\hbar)$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\tilde{Ξ}^{\mathrm{sp}} = A\,\exp(iS/\hbar)$ places the amplitude in the centre and the action in the centre, and the leading-order momentum is the real quaternion $\nabla S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **biquaternion norm of the momentum** equated to twice the kinetic energy,
+The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $\exp(iS/\hbar)$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\tilde{Ξ}_{\mathrm{sp}} = A\,\exp(iS/\hbar)$ places the amplitude in the centre and the action in the centre, and the leading-order momentum is the real quaternion $\nabla S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **biquaternion norm of the momentum** equated to twice the kinetic energy,
 
 $$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
@@ -23,7 +23,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 Write the stationary state as
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(\,iS(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\;\xi,
+\tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(\,iS(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\hbar)\;\xi,
 \qquad
 A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) > 0, \quad S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{R}, \quad \xi \in \mathbb{B}\tilde\Pi,
 $$
@@ -33,14 +33,14 @@ with a real positive amplitude $A$ and a real phase $S$. The exponential is cent
 The momentum acts on the phase in a fixed way. Since $\partial/\partial R_\mu \exp(iS/\hbar) = (i/\hbar)(\partial S/\partial R_\mu)\exp(iS/\hbar)$,
 
 $$
-\tilde p\,\tilde{Ξ}^{\mathrm{sp}} = \sum_\mu \vec e_\mu p_\mu \tilde{Ξ}^{\mathrm{sp}}
-= \sum_\mu \vec e_\mu\left(\partial S/\partial R_\mu - i\hbar\,\partial/\partial R_\mu \ln A\right)\tilde{Ξ}^{\mathrm{sp}} ,
+\tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu \vec e_\mu p_\mu \tilde{Ξ}_{\mathrm{sp}}
+= \sum_\mu \vec e_\mu\left(\partial S/\partial R_\mu - i\hbar\,\partial/\partial R_\mu \ln A\right)\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
 so, separating the real phase gradient from the $\hbar$-suppressed amplitude term,
 
 $$
-\tilde p\,\tilde{Ξ}^{\mathrm{sp}} = \Big[\,\nabla S - i\hbar\,\nabla\ln A\,\Big]\tilde{Ξ}^{\mathrm{sp}},
+\tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \Big[\,\nabla S - i\hbar\,\nabla\ln A\,\Big]\tilde{Ξ}_{\mathrm{sp}},
 \qquad
 \nabla S = \sum_k (\partial S/\partial R_k)\,\vec e_k .
 $$
@@ -49,7 +49,7 @@ The leading term $\nabla S$ is a **real quaternion**, an element of the algebra'
 
 ### The two real equations
 
-Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $H\tilde{Ξ}^{\mathrm{sp}} = E\tilde{Ξ}^{\mathrm{sp}}$ with $H = (-\frac{\hbar^2}{2m}\nabla^2+V)e_t$,
+Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $H\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$ with $H = (-\frac{\hbar^2}{2m}\nabla^2+V)e_t$,
 
 $$
 -\frac{\hbar^2}{2m}\nabla^2\!\left(A \exp(iS/\hbar)\right) + \left(V - E\right)A \exp(iS/\hbar) = 0 ,
@@ -109,7 +109,7 @@ $$
 \boxed{\;\frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V\;},
 $$
 
-an equation in the centre of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $T^{\mathrm{kin}}=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
+an equation in the centre of the algebra: **the kinetic energy is the biquaternion norm of the phase gradient**. This is the same identity that the free-particle article records for the momentum operator, $T_{\mathrm{kin}}=\tilde p\tilde p^{\natural}/2m$, now applied to the leading-order momentum $\nabla S$. Two consequences follow immediately. First, the right-hand side is positive in the classically allowed region, $E>V$, and the biquaternion norm of a real vector is positive, so the equation can be solved there; in the forbidden region the right-hand side is negative, no real $\nabla S$ solves the equation, and the momentum becomes imaginary, turning the oscillatory phase into an exponential. Second, the vanishing of the biquaternion norm would be the condition $\nabla S=0$, i.e. the turning point; the null (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy defect and vanishes only where the classical particle stops.
 
 ### Rays, trajectories, and the eikonal
 
@@ -184,7 +184,7 @@ which measures the focusing of the ray congruence: $A^2$ is the density of traje
 The transport equation involves only the real amplitude and the real phase gradient, so it lives in the real-quaternion and central parts of the algebra. There is no non-central element anywhere in the leading semiclassical state:
 
 $$
-\tilde{Ξ}^{\mathrm{sp}\,\mathrm{wkb}} = A\,\exp(iS/\hbar)\,\xi,
+\tilde{Ξ}_{\mathrm{sp},\mathrm{wkb}} = A\,\exp(iS/\hbar)\,\xi,
 \qquad
 A\in\mathbb{C}_{\mathbb{B}}|_{\mathbb{R}}=\mathbb{R}e_t,
 \quad
@@ -225,7 +225,7 @@ where the offset $3/4$ replaces the $1/2$ of the two-soft-turning-point case bec
 
 For the harmonic oscillator, $V=\tfrac12m\omega^2x^2$, the integral $\oint p\,dx$ evaluates to $2\pi E/\omega$, so the condition returns $E_n=\hbar\omega(n+\tfrac12)$ exactly; a direct quadrature of $\oint p\,dx$ at those energies reproduced $2\pi\hbar(n+\tfrac12)$ to a relative error below $5\times10^{-9}$ for $n=0,\dots,4$. For the Morse potential, $V=D(1-\exp(-ax))^2$, the same condition with two soft turning points reproduced the exact spectrum $E_n=\hbar\omega(n+\tfrac12)-[\hbar\omega(n+\tfrac12)]^2/4D$ to a relative error below $2\times10^{-9}$ for the four lowest levels, at $D=5$, $a=0.7$, $m=\hbar=1$. The harmonic oscillator and the Morse potential are the standard cases in which WKB quantisation is exact.
 
-That WKB is nonetheless an approximation is visible in a genuinely anharmonic well. For $V=\tfrac12x^2+\lambda x^4$ with $\lambda=0.1$, the same quantisation condition gives $E_0^{\mathrm{wkb}}=0.5333$ against the exact $0.5591$ (a relative error of $-4.6\%$), $E_1^{\mathrm{wkb}}=1.7540$ against $1.7695$ ($-0.88\%$), $E_2^{\mathrm{wkb}}=3.1269$ against $3.1386$ ($-0.37\%$), and $E_3^{\mathrm{wkb}}=4.6193$ against $4.6289$ ($-0.21\%$); the exact values were obtained by a finite-difference diagonalisation of the Hamiltonian on a grid, via the Sturm sequence. The error decreases with $n$, as the correspondence principle requires.
+That WKB is nonetheless an approximation is visible in a genuinely anharmonic well. For $V=\tfrac12x^2+\lambda x^4$ with $\lambda=0.1$, the same quantisation condition gives $E_{\mathrm{wkb},0}=0.5333$ against the exact $0.5591$ (a relative error of $-4.6\%$), $E_{\mathrm{wkb},1}=1.7540$ against $1.7695$ ($-0.88\%$), $E_{\mathrm{wkb},2}=3.1269$ against $3.1386$ ($-0.37\%$), and $E_{\mathrm{wkb},3}=4.6193$ against $4.6289$ ($-0.21\%$); the exact values were obtained by a finite-difference diagonalisation of the Hamiltonian on a grid, via the Sturm sequence. The error decreases with $n$, as the correspondence principle requires.
 
 ### Tunnelling
 
@@ -235,7 +235,7 @@ $$
 \boxed{\;T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right)\;}
 $$
 
-whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T^{\mathrm{wkb}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
+whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{wkb}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
 
 ## The Quantum Potential
 
@@ -287,7 +287,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 ## Summary
 
-The WKB ansatz in the biquaternion framework is $\tilde{Ξ}^{\mathrm{sp}}=A\,\exp(iS/\hbar)\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}^{\mathrm{sp}}=[\nabla S - i\hbar\nabla\ln A]\tilde{Ξ}^{\mathrm{sp}}$, with the leading term the real quaternion $\nabla S$ in the spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
+The WKB ansatz in the biquaternion framework is $\tilde{Ξ}_{\mathrm{sp}}=A\,\exp(iS/\hbar)\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla S - i\hbar\nabla\ln A]\tilde{Ξ}_{\mathrm{sp}}$, with the leading term the real quaternion $\nabla S$ in the spatial-vector subspace $\mathbb{H}_{\mathbb{B}}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
 
 $$
 \nabla\cdot(A^2\nabla S) = 0,
@@ -320,9 +320,9 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the phase gradient |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $\tilde{Ξ}^{\mathrm{sp}}=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
+| $\tilde{Ξ}_{\mathrm{sp}}=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
-| $\tilde p\tilde{Ξ}^{\mathrm{sp}}=[\nabla S-i\hbar\nabla\ln A]\tilde{Ξ}^{\mathrm{sp}}$ | Action of the momentum on the WKB state |
+| $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\nabla S-i\hbar\nabla\ln A]\tilde{Ξ}_{\mathrm{sp}}$ | Action of the momentum on the WKB state |
 | $\nabla S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |
 | $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |

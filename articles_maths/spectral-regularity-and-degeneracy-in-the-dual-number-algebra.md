@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ is the simplest algebra over a field in which the characteristic polynomial of every element is a square. For $Q=a+b\varepsilon$, left multiplication has characteristic polynomial $(X-a)^2$, so the spectrum is the singleton $\{a\}$: the two eigenvalues of a quadratic have coalesced before any condition is imposed. This article defines the eigenvalue problem, proves the coalescence, and separates two notions that the coalescence puts at risk of being confused. **Spectral degeneracy** is the repetition of the eigenvalue; it holds for every element. **Defect** is the absence of an eigenbasis; it holds exactly when $b\neq0$. The first is universal, the second is a proper subset of the algebra, and the whole of the spectral theory of $\mathbb{C}^{\mathrm{dln}}_R$ is the distance between them.
+The dual-number algebra $\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2)$ is the simplest algebra over a field in which the characteristic polynomial of every element is a square. For $Q=a+b\varepsilon$, left multiplication has characteristic polynomial $(X-a)^2$, so the spectrum is the singleton $\{a\}$: the two eigenvalues of a quadratic have coalesced before any condition is imposed. This article defines the eigenvalue problem, proves the coalescence, and separates two notions that the coalescence puts at risk of being confused. **Spectral degeneracy** is the repetition of the eigenvalue; it holds for every element. **Defect** is the absence of an eigenbasis; it holds exactly when $b\neq0$. The first is universal, the second is a proper subset of the algebra, and the whole of the spectral theory of $\mathbb{C}_{\mathrm{dln},R}$ is the distance between them.
 
-**Notation and conventions.** Throughout, $R$ is a real closed field, with the geometric case $R=\mathbb{R}$; the algebra is $\mathbb{C}^{\mathrm{dln}}_R$, and a general element is
+**Notation and conventions.** Throughout, $R$ is a real closed field, with the geometric case $R=\mathbb{R}$; the algebra is $\mathbb{C}_{\mathrm{dln},R}$, and a general element is
 
 $$
 Q = a + b\varepsilon, \qquad a, b \in R,
@@ -22,7 +22,7 @@ where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate 
 
 **An eigenvalue is a scalar for which the translate $Q-\lambda$ has a non-zero kernel, and the criterion is the invertibility criterion of the algebra.**
 
-**Definition (eigenvalue).** A scalar $\lambda\in R$ is an **eigenvalue** of $Q$ if there is a non-zero $v\in\mathbb{C}^{\mathrm{dln}}_R$ with
+**Definition (eigenvalue).** A scalar $\lambda\in R$ is an **eigenvalue** of $Q$ if there is a non-zero $v\in\mathbb{C}_{\mathrm{dln},R}$ with
 
 $$
 Qv = \lambda v.
@@ -36,9 +36,9 @@ $$
 
 where $L_A(v) = Av$ is left multiplication. The **spectrum** $\sigma(Q)$ is the set of eigenvalues.
 
-**Proposition (the eigenvalue criterion).** A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not a unit of $\mathbb{C}^{\mathrm{dln}}_R$.
+**Proposition (the eigenvalue criterion).** A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not a unit of $\mathbb{C}_{\mathrm{dln},R}$.
 
-*Proof.* If $Q-\lambda$ is a unit and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not a unit, then its real part $a-\lambda$ vanishes, because the units of $\mathbb{C}^{\mathrm{dln}}_R$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and
+*Proof.* If $Q-\lambda$ is a unit and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not a unit, then its real part $a-\lambda$ vanishes, because the units of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and
 
 $$
 (Q-\lambda)\varepsilon = b\varepsilon^2 = 0
@@ -104,11 +104,11 @@ $$
 
 ## The Theorem: Universal Spectral Degeneracy
 
-**Spectral regularity is the separation of the two roots of the characteristic polynomial; in $\mathbb{C}^{\mathrm{dln}}_R$ there are never two roots to separate.**
+**Spectral regularity is the separation of the two roots of the characteristic polynomial; in $\mathbb{C}_{\mathrm{dln},R}$ there are never two roots to separate.**
 
 **Definition (spectrally regular, spectrally degenerate).** An element $Q$ is **spectrally regular** if its characteristic polynomial is squarefree, equivalently if it has two distinct eigenvalues in $R$. It is **spectrally degenerate** if its characteristic polynomial has a repeated root, equivalently if its discriminant vanishes.
 
-**Theorem (every element is spectrally degenerate).** For every $Q\in\mathbb{C}^{\mathrm{dln}}_R$, the characteristic polynomial is $(X-a)^2$, of discriminant zero. Hence every element is spectrally degenerate, and there is no spectrally regular element.
+**Theorem (every element is spectrally degenerate).** For every $Q\in\mathbb{C}_{\mathrm{dln},R}$, the characteristic polynomial is $(X-a)^2$, of discriminant zero. Hence every element is spectrally degenerate, and there is no spectrally regular element.
 
 *Proof.* The characteristic polynomial was computed in the preceding section; a square has a repeated root and discriminant zero.
 
@@ -121,12 +121,12 @@ $$
 
 and similarly for $\Sigma_{01}$ and $\Sigma_{00}$.
 
-**Corollary (the norm/spectrum classification).** In $\mathbb{C}^{\mathrm{dln}}_R$,
+**Corollary (the norm/spectrum classification).** In $\mathbb{C}_{\mathrm{dln},R}$,
 
 $$
 \Sigma_{11} = \varnothing, \qquad
 \Sigma_{01} = \varnothing, \qquad
-\Sigma_{10} = \{a\neq0\} = (\mathbb{C}^{\mathrm{dln}}_R)^\times, \qquad
+\Sigma_{10} = \{a\neq0\} = (\mathbb{C}_{\mathrm{dln},R})^\times, \qquad
 \Sigma_{00} = \mathrm{M} = \{a=0\}.
 $$
 
@@ -138,7 +138,7 @@ $$
 
 **The minimal polynomial is the first invariant that sees the defect, and it takes exactly two forms.**
 
-**Definition (minimal polynomial).** The **minimal polynomial** $m_Q$ of $Q$ is the monic polynomial of least degree in $R[X]$ with $m_Q(Q)=0$. Equivalently, it is the monic generator of the kernel of the evaluation map $R[X]\to\mathbb{C}^{\mathrm{dln}}_R$, $X\mapsto Q$.
+**Definition (minimal polynomial).** The **minimal polynomial** $m_Q$ of $Q$ is the monic polynomial of least degree in $R[X]$ with $m_Q(Q)=0$. Equivalently, it is the monic generator of the kernel of the evaluation map $R[X]\to\mathbb{C}_{\mathrm{dln},R}$, $X\mapsto Q$.
 
 **Theorem (the dichotomy).** For $Q = a + b\varepsilon$,
 
@@ -163,7 +163,7 @@ The complement, $b\neq0$, is the **defective set**. It is the complement of the 
 
 **Off the real axis the operator is a single Jordan block, and the block is visible in a basis adapted to the nilpotent part.**
 
-**Theorem (the Jordan form).** Let $b\neq0$. In the basis $(\varepsilon,\,b^{-1})$ of $\mathbb{C}^{\mathrm{dln}}_R$, the matrix of $L_Q$ is
+**Theorem (the Jordan form).** Let $b\neq0$. In the basis $(\varepsilon,\,b^{-1})$ of $\mathbb{C}_{\mathrm{dln},R}$, the matrix of $L_Q$ is
 
 $$
 [L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix} = J_2(a).
@@ -184,7 +184,7 @@ The first column is therefore $(a,0)$ and the second is $(1,a)$, which is the di
 
 **A spectral decomposition separates distinct eigenvalues by orthogonal idempotents; with one eigenvalue and no non-trivial idempotent, it can have only one term.**
 
-**Definition (spectral idempotent, spectral decomposition).** A non-zero idempotent $e\in\mathbb{C}^{\mathrm{dln}}_R$ is a **spectral idempotent** of $Q$ if $Qe = eQ = ae$ for some scalar $a$. A **spectral decomposition** of $Q$ is a finite sum
+**Definition (spectral idempotent, spectral decomposition).** A non-zero idempotent $e\in\mathbb{C}_{\mathrm{dln},R}$ is a **spectral idempotent** of $Q$ if $Qe = eQ = ae$ for some scalar $a$. A **spectral decomposition** of $Q$ is a finite sum
 
 $$
 Q = \sum_{i=1}^{r}\lambda_i e_i,
@@ -192,7 +192,7 @@ $$
 
 where the $\lambda_i$ are distinct scalars, the $e_i$ are non-zero idempotents with $e_ie_j=0$ for $i\neq j$, and $\sum_i e_i = 1$.
 
-**Proposition (the idempotents).** Over a field, the only idempotents of $\mathbb{C}^{\mathrm{dln}}_R$ are $0$ and $1$.
+**Proposition (the idempotents).** Over a field, the only idempotents of $\mathbb{C}_{\mathrm{dln},R}$ are $0$ and $1$.
 
 *Proof.* Let $e = x + y\varepsilon$ and impose $e^2=e$:
 
@@ -208,7 +208,7 @@ $$
 Q = a\cdot1,
 $$
 
-and it is unique. No element of $\mathbb{C}^{\mathrm{dln}}_R$ has a two-term spectral decomposition.
+and it is unique. No element of $\mathbb{C}_{\mathrm{dln},R}$ has a two-term spectral decomposition.
 
 *Proof.* A spectral idempotent must be $1$, by the proposition, and then $Q = a\cdot1 = a$, so $b=0$. Conversely, if $b=0$ then $Q=a$ and $Q=a\cdot1$ is a one-term decomposition; it is unique because the only non-zero idempotent is $1$ and the scalar is then $Q$ itself. A two-term decomposition would require two distinct eigenvalues, which the spectrum does not contain.
 
@@ -241,35 +241,35 @@ The values are collected in the table; the dual row is the last.
 | algebra | element | pure part $\pi$ | norm $\langle\pi\rangle$ | spectral polynomial | discriminant | eigenvalues |
 |---|---|---|---|---|---|---|
 | $\mathbb{C}$ | $a+bi$ | $bi$ | $b^2$ | $(X-a)^2+b^2$ | $-4b^2$ | $a\pm ib$ |
-| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$ | $a+bj$ | $bj$ | $-b^2$ | $(X-a)^2-b^2$ | $4b^2$ | $a\pm b$ |
+| $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$ | $a+bj$ | $bj$ | $-b^2$ | $(X-a)^2-b^2$ | $4b^2$ | $a\pm b$ |
 | $\mathbb{H}$ | $q_t+\vec q$ | $\vec q$ | $\lvert\vec q\rvert^2$ | $(X-q_t)^2+\lvert\vec q\rvert^2$ | $-4\lvert\vec q\rvert^2$ | $q_t\pm i\lvert\vec q\rvert$ |
 | $\mathbb{B}$ | $Q_t+\vec Q$ | $\vec Q$ | $B^2$ | $(X-Q_t)^2+B^2$ | $-4B^2$ | $Q_t\pm iB$ |
-| $\mathbb{C}^{\mathrm{dln}}$ | $a+b\varepsilon$ | $b\varepsilon$ | $0$ | $(X-a)^2$ | $0$ | $a$ (double) |
+| $\mathbb{C}_{\mathrm{dln}}$ | $a+b\varepsilon$ | $b\varepsilon$ | $0$ | $(X-a)^2$ | $0$ | $a$ (double) |
 
-Here $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=1$ and norm $a^2-b^2$; $\mathbb{H}$ is the quaternion algebra with norm $q_t^2+\lvert\vec q\rvert^2$; $\mathbb{B}$ is the biquaternion algebra with $B^2=Q_x^2+Q_y^2+Q_z^2$ and spectral polynomial as in *The Spectrum*; and $\mathbb{C}^{\mathrm{dln}}$ is the dual algebra, where $\langle b\varepsilon\rangle = b^2\varepsilon^2 = 0$.
+Here $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=1$ and norm $a^2-b^2$; $\mathbb{H}$ is the quaternion algebra with norm $q_t^2+\lvert\vec q\rvert^2$; $\mathbb{B}$ is the biquaternion algebra with $B^2=Q_x^2+Q_y^2+Q_z^2$ and spectral polynomial as in *The Spectrum*; and $\mathbb{C}_{\mathrm{dln}}$ is the dual algebra, where $\langle b\varepsilon\rangle = b^2\varepsilon^2 = 0$.
 
 **Theorem (the discriminant is the norm of the pure part).** In each row of the table, the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ and its discriminant is $-4\langle\pi\rangle$.
 
 *Proof.* The complex and split-complex rows are the ordinary quadratic formulae for the matrices of multiplication by $a+bi$ and $a+bj$. The quaternion row is the spectral polynomial of *Quaternion Spectral Theory*, and the biquaternion row is that of *The Spectrum*, with pure part $\vec q$ or $\vec Q$ and its norm. The dual row is the characteristic polynomial of the preceding section, with pure part $b\varepsilon$ and norm $\langle b\varepsilon\rangle=b^2\varepsilon^2=0$.
 
-**Corollary (spectral regularity in the five algebras).** In $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral-regular locus is the complement of the vanishing locus of a non-zero quadratic form in the pure part; it is non-empty and, over $\mathbb{R}$ or $\mathbb{C}$, open and dense. In $\mathbb{C}^{\mathrm{dln}}$ the spectral-regular locus is empty.
+**Corollary (spectral regularity in the five algebras).** In $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral-regular locus is the complement of the vanishing locus of a non-zero quadratic form in the pure part; it is non-empty and, over $\mathbb{R}$ or $\mathbb{C}$, open and dense. In $\mathbb{C}_{\mathrm{dln}}$ the spectral-regular locus is empty.
 
-*Proof.* The discriminant is $-4\langle\pi\rangle$, and the pure-part norm is a non-zero quadratic form in the first four algebras. A non-zero quadratic form is a non-zero polynomial function, so it takes a non-zero value at some point, and its zero set is closed with empty interior; hence its complement is non-empty, open and dense. In $\mathbb{C}^{\mathrm{dln}}$ the pure part has norm zero, so the discriminant vanishes identically; this is the theorem of §*The Theorem: Universal Spectral Degeneracy*.
+*Proof.* The discriminant is $-4\langle\pi\rangle$, and the pure-part norm is a non-zero quadratic form in the first four algebras. A non-zero quadratic form is a non-zero polynomial function, so it takes a non-zero value at some point, and its zero set is closed with empty interior; hence its complement is non-empty, open and dense. In $\mathbb{C}_{\mathrm{dln}}$ the pure part has norm zero, so the discriminant vanishes identically; this is the theorem of §*The Theorem: Universal Spectral Degeneracy*.
 
 ## Summary
 
-The dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R$ has a single spectral phenomenon: every $Q=a+b\varepsilon$ has $p_Q=(X-a)^2$, discriminant zero, spectrum $\{a\}$, and eigenspace of dimension two when $b=0$ and one when $b\neq0$. Every element is spectrally degenerate, so $\Sigma_{11}=\Sigma_{01}=\varnothing$, $\Sigma_{10}=\{a\neq0\}$ and $\Sigma_{00}=\mathrm{M}$.
+The dual-number algebra $\mathbb{C}_{\mathrm{dln},R}$ has a single spectral phenomenon: every $Q=a+b\varepsilon$ has $p_Q=(X-a)^2$, discriminant zero, spectrum $\{a\}$, and eigenspace of dimension two when $b=0$ and one when $b\neq0$. Every element is spectrally degenerate, so $\Sigma_{11}=\Sigma_{01}=\varnothing$, $\Sigma_{10}=\{a\neq0\}$ and $\Sigma_{00}=\mathrm{M}$.
 
 Spectral degeneracy is not defect. The minimal polynomial is $X-a$ on the real axis and $(X-a)^2$ off it, so the real axis is the semisimple stratum and $b\neq0$ is the defective set; the defect is carried by the nilpotent part $b\varepsilon\in\mathrm{M}$, and $\mathrm{M}\setminus\{0\}$ is the subset with eigenvalue zero, not the whole defective set. Off the real axis the operator is $J_2(a)$ in the basis $(\varepsilon,b^{-1})$, the eigenspace is $R\varepsilon$, and there is no eigenbasis. The only idempotents are $0$ and $1$, so the only spectral decomposition is the one-term $Q=a\cdot1$ of the real axis; the additive Jordan–Chevalley decomposition $Q=a\cdot1+b\varepsilon$ always exists but is not spectral.
 
-The comparison with the neighbouring algebras is the comparison of discriminants: in $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ with discriminant $-4\langle\pi\rangle$, so the spectral-regular locus is non-empty; in $\mathbb{C}^{\mathrm{dln}}$ the pure part $b\varepsilon$ has norm zero, the discriminant vanishes identically, and the spectral-regular locus is empty.
+The comparison with the neighbouring algebras is the comparison of discriminants: in $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ with discriminant $-4\langle\pi\rangle$, so the spectral-regular locus is non-empty; in $\mathbb{C}_{\mathrm{dln}}$ the pure part $b\varepsilon$ has norm zero, the discriminant vanishes identically, and the spectral-regular locus is empty.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dln}}_R=R[\varepsilon]/(\varepsilon^2)$ | the dual-number algebra over $R$ |
-| $\mathbb{C}^{\mathrm{dln}}=\mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$ | the dual-number algebra over $\mathbb{R}$ |
+| $\mathbb{C}_{\mathrm{dln},R}=R[\varepsilon]/(\varepsilon^2)$ | the dual-number algebra over $R$ |
+| $\mathbb{C}_{\mathrm{dln}}=\mathbb{C}_{\mathrm{dln},\mathbb{R}}$ | the dual-number algebra over $\mathbb{R}$ |
 | $Q=a+b\varepsilon$ | a general element, equal to $q+\varepsilon q'$ in the prime notation |
 | $a=\operatorname{Re}Q$, $b=\operatorname{Inf}Q$ | real and infinitesimal parts |
 | $\bar Q=a-b\varepsilon$ | dual conjugation |

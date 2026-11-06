@@ -58,14 +58,14 @@ The invariant polynomials of the curvature are closed and their de Rham classes 
 
 | Class | The property it measures | Introduced in |
 |---|---|---|
-| the Chern–Weil homomorphism | the map $S^\bullet(\mathrm{G}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ from invariant polynomials to cohomology | *Fibre Bundles, Connections and Curvature* |
+| the Chern–Weil homomorphism | the map $S^\bullet(\mathrm{G}^*)^G \to H_{\mathrm{ev},dR}(M)$ from invariant polynomials to cohomology | *Fibre Bundles, Connections and Curvature* |
 | the first Chern class $c_1(L)$ | the class of $\frac{i}{2\pi}\mathcal{F}$, the curvature of a line bundle | *Fibre Bundles, Connections and Curvature* |
 | the Euler class $e(E)$ | the class of a real oriented bundle of even rank, the obstruction to a nowhere-zero section | *Characteristic Classes* |
 | the Stiefel–Whitney classes $w_i(E) \in H^i(B;\mathbb{Z}/2)$ | the $\mathbb{Z}/2$ classes; $w_1$ is orientability and $w_2$ is the spin obstruction | *Characteristic Classes* |
 | the Chern classes $c_i(E) \in H^{2i}(B;\mathbb{Z})$ | the integral classes of a complex bundle, with $c(E\oplus F) = c(E)c(F)$ | *Characteristic Classes* |
 | the Pontryagin classes $p_i(E)$ | the real classes, $p_i(E) = (-1)^ic_{2i}(E\otimes\mathbb{C})$ | *Characteristic Classes* |
 | the Chern roots and the splitting principle | the formal factorisation $c(E) = \prod_i(1+x_i)$ | *Characteristic Classes* |
-| the Chern character $\operatorname{ch}(E)$ | the rational class with $K^0(B)\otimes\mathbb{Q} \cong H^{\mathrm{ev}}(B;\mathbb{Q})$ | *Characteristic Classes* |
+| the Chern character $\operatorname{ch}(E)$ | the rational class with $K^0(B)\otimes\mathbb{Q} \cong H_{\mathrm{ev}}(B;\mathbb{Q})$ | *Characteristic Classes* |
 | the relations $n_i \equiv w_{2i}^2$ and $e \equiv w_n \pmod 2$ | the compatibility of the integral and $\mathbb{Z}/2$ classes | *Characteristic Classes* |
 | the Hirzebruch $L$-polynomial $L_k(n_1,\ldots,n_k)$ | the multiplicative polynomial $\sum_kL_k = \prod_j\frac{x_j}{\tanh x_j}$ | *Characteristic Classes* |
 | the Todd class | the multiplicative class of the index theorem for the Dolbeault complex | *The Atiyah–Singer Index Theorem and K-Theory* |
@@ -102,7 +102,7 @@ The isomorphism classes of bundles over a base are classified by maps into a uni
 | the classifying map | the map $B \to BO(n)$ whose pullback is the bundle | *Characteristic Classes* |
 | the Stiefel–Whitney and Chern classes as universal classes | the generators of $H^*(BO(n))$ and $H^*(BU(n))$ | *Characteristic Classes* |
 | the K-theory group $K^0(B)$ | the Grothendieck group of the vector bundles, a cohomology theory | *Topological K-Theory* |
-| the Chern character $K^0(B)\otimes\mathbb{Q} \cong H^{\mathrm{ev}}(B;\mathbb{Q})$ | the rational isomorphism between K-theory and cohomology | *Characteristic Classes*; *Topological K-Theory* |
+| the Chern character $K^0(B)\otimes\mathbb{Q} \cong H_{\mathrm{ev}}(B;\mathbb{Q})$ | the rational isomorphism between K-theory and cohomology | *Characteristic Classes*; *Topological K-Theory* |
 
 The classifying space is the universal base of the rank-$n$ bundles, so that the characteristic classes are the pullbacks of the universal classes, and the homotopy classification of the bundles replaces the topological one. K-theory is the generalised cohomology theory in which the classes are the stable classes of bundles, and the index theorem is naturally a statement in it.
 

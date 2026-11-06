@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The dual numbers $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]$, $\varepsilon^2 = 0$, carry the quadratic family
+The dual numbers $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]$, $\varepsilon^2 = 0$, carry the quadratic family
 
 $$
-f_c(z) = z^2 + c, \qquad z, c \in \mathbb{C}^{\mathrm{dln}} ,
+f_c(z) = z^2 + c, \qquad z, c \in \mathbb{C}_{\mathrm{dln}} ,
 $$
 
 and the nilpotence of $\varepsilon$ makes the dynamics **triangular**: writing $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$, the map is
@@ -16,13 +16,13 @@ $$
 
 The real part $x$ evolves by the real quadratic map $x \mapsto x^2+\gamma$, independently of the infinitesimal coordinate, and the infinitesimal coordinate $y$ evolves **affinely**, with coefficient $2x$ equal to the derivative of the real map at the point. This article fixes the family and its triangular form, identifies the critical locus — the ideal of the nilpotents, which collapses to the single critical value $c$ — describes the escape and the connectedness locus as read on the real part, and compares the family with the real, the complex and the split-complex cases. The infinitesimal coordinate itself, which is the derivative cocycle along the real orbit, is the subject of *The Infinitesimal Dynamics of the Dual Numbers*.
 
-The article is the $\mathbb{C}^{\mathrm{dln}}$ instance of the quadratic family. The algebra, the norm and the invertibility are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the shears and the parabolic rotations are those of *Shears and Parabolic Rotations*; the real quadratic family is that of *The Mandelbrot Set and the Quadratic Family*, and the complex and split-complex comparisons are *The Mandelbrot Set and the Quadratic Family* and *The Split-Complex Quadratic Family*. No physics is invoked, and every numerical value displayed was recomputed. The article is deliberately short: the dual family has no fractal content of its own beyond the real one, and the value of the article is the exactness of the collapse.
+The article is the $\mathbb{C}_{\mathrm{dln}}$ instance of the quadratic family. The algebra, the norm and the invertibility are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the shears and the parabolic rotations are those of *Shears and Parabolic Rotations*; the real quadratic family is that of *The Mandelbrot Set and the Quadratic Family*, and the complex and split-complex comparisons are *The Mandelbrot Set and the Quadratic Family* and *The Split-Complex Quadratic Family*. No physics is invoked, and every numerical value displayed was recomputed. The article is deliberately short: the dual family has no fractal content of its own beyond the real one, and the value of the article is the exactness of the collapse.
 
 ## The Family and the Triangular Form
 
 ### The Coordinates
 
-**Definition.** The **dual numbers** are $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is a unit exactly when $x \neq 0$. The **norm** is $\langle z\rangle = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
+**Definition.** The **dual numbers** are $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is a unit exactly when $x \neq 0$. The **norm** is $\langle z\rangle = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
 
 **Theorem (the triangular form).** With $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$,
 
@@ -34,7 +34,7 @@ Hence $f_c$ is a **skew product**: the projection $\pi(x+\varepsilon y) = x$ to 
 
 **Proof.** $(x+\varepsilon y)^2 = x^2+2\varepsilon xy+\varepsilon^2y^2 = x^2+2\varepsilon xy$ because $\varepsilon^2 = 0$; adding $c = \gamma+\varepsilon\delta$ gives the display. The projection statement is immediate, and $g_\gamma'(x) = 2x$ is the coefficient of $y$.
 
-**Remark (the comparison with the other number systems).** In $\mathbb{C}$ the map $z^2+c$ is a single holomorphic map and cannot be split; in $\mathbb{C}^{\mathrm{spl}}$ the map splits into two coupled real quadratic maps and neither factor is subordinate to the other; in $\mathbb{C}^{\mathrm{dln}}$ the map splits into the real quadratic map and a **linear** fibre map, so the second factor is derivative data determined by the first. This is the triangularity: there is an invariant foliation by the vertical lines $\{x = \mathrm{const}\}$, and the real part is a genuine quotient dynamics.
+**Remark (the comparison with the other number systems).** In $\mathbb{C}$ the map $z^2+c$ is a single holomorphic map and cannot be split; in $\mathbb{C}_{\mathrm{spl}}$ the map splits into two coupled real quadratic maps and neither factor is subordinate to the other; in $\mathbb{C}_{\mathrm{dln}}$ the map splits into the real quadratic map and a **linear** fibre map, so the second factor is derivative data determined by the first. This is the triangularity: there is an invariant foliation by the vertical lines $\{x = \mathrm{const}\}$, and the real part is a genuine quotient dynamics.
 
 ### The Critical Locus and the Collapse
 
@@ -46,7 +46,7 @@ $$
 
 So the **critical locus** of $f_c$ is the set $\{x = 0\} = \mathbb{R}\varepsilon$, the ideal of the nilpotents, a whole line and not a point.
 
-**Proof.** The units of $\mathbb{C}^{\mathrm{dln}}$ are exactly the elements with nonzero real part, by the invertibility criterion $z\bar z = x^2 \neq 0$ of *Dual-Numbers Norm and Invertibility*.
+**Proof.** The units of $\mathbb{C}_{\mathrm{dln}}$ are exactly the elements with nonzero real part, by the invertibility criterion $z\bar z = x^2 \neq 0$ of *Dual-Numbers Norm and Invertibility*.
 
 **Theorem (the collapse of the critical set).** Every critical point has the same image:
 
@@ -65,7 +65,7 @@ Consequently the critical set collapses to the single critical value $c$, the cr
 **Definition.** A point $z = x+\varepsilon y$ **escapes** under $f_c$ if its orbit is unbounded in the Euclidean metric of the plane; the **connectedness locus** is
 
 $$
-M_{\mathbb{C}^{\mathrm{dln}}} = \{c \in \mathbb{C}^{\mathrm{dln}} : \text{the orbit of the critical point } 0 \text{ is bounded}\} .
+M_{\mathbb{C}_{\mathrm{dln}}} = \{c \in \mathbb{C}_{\mathrm{dln}} : \text{the orbit of the critical point } 0 \text{ is bounded}\} .
 $$
 
 **Theorem (the escape is read on the real part).** The norm is $\langle z\rangle = x^2$, so the norm-escape of $z$ is exactly the escape of its real part; the real part of the orbit is the orbit of $x$ under $g_\gamma$, and the orbit is bounded in the Euclidean metric if and only if both the real orbit $(g_{\gamma_n}(x))$ and the sequence
@@ -78,10 +78,10 @@ are bounded; for the critical orbit, $x_0 = 0$ and the real orbit is $(g_{\gamma
 
 **Proof.** $\langle z\rangle = (x+\varepsilon y)(x-\varepsilon y) = x^2$, and the real part recursion is $x_{n+1} = x_n^2+\gamma$. For the infinitesimal part, $y_{n+1} = 2x_n y_n+\delta$ with $x_n = g_{\gamma_n}(x_0)$; for $y_0 = 0$ the solution is the displayed affine combination, since $y_n$ is linear in $\delta$ with the homogeneous part built from the derivatives $2x_n$.
 
-**Theorem (the projection of the connectedness locus).** The projection $\pi(M_{\mathbb{C}^{\mathrm{dln}}}) \subseteq \mathbb{R}$ is the real Mandelbrot interval $[-2,\tfrac14]$, and the fibre over $\gamma \in [-2,\tfrac14]$ is
+**Theorem (the projection of the connectedness locus).** The projection $\pi(M_{\mathbb{C}_{\mathrm{dln}}}) \subseteq \mathbb{R}$ is the real Mandelbrot interval $[-2,\tfrac14]$, and the fibre over $\gamma \in [-2,\tfrac14]$ is
 
 $$
-\boxed{\; \{\delta \in \mathbb{R} : (\gamma,\delta) \in M_{\mathbb{C}^{\mathrm{dln}}}\} = \begin{cases} \mathbb{R}, & \sup_n |P_n(\gamma)| < \infty, \\ \{0\}, & \sup_n |P_n(\gamma)| = \infty, \end{cases} \;}
+\boxed{\; \{\delta \in \mathbb{R} : (\gamma,\delta) \in M_{\mathbb{C}_{\mathrm{dln}}}\} = \begin{cases} \mathbb{R}, & \sup_n |P_n(\gamma)| < \infty, \\ \{0\}, & \sup_n |P_n(\gamma)| = \infty, \end{cases} \;}
 $$
 
 so the connectedness locus is the real interval in $\gamma$ with the fibre either the whole line or the single point $0$.
@@ -104,14 +104,14 @@ The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\va
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]$, $\varepsilon^2=0$ | Dual numbers |
+| $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]$, $\varepsilon^2=0$ | Dual numbers |
 | $z = x+\varepsilon y$ | Element, with real part $x$ and infinitesimal part $y$ |
 | $\bar z = x-\varepsilon y$, $\langle z\rangle = x^2$ | Conjugation and norm |
 | $f_c(z) = z^2+c$ | The dual quadratic family |
 | $g_\gamma(x) = x^2+\gamma$ | The real quadratic map of the real part |
 | $\mathbb{R}\varepsilon$ | The ideal of the nilpotents, the critical locus |
 | $P_n(\gamma)$ | Partial sums of the derivative cocycle; $y_n = \delta P_n$ |
-| $M_{\mathbb{C}^{\mathrm{dln}}}$ | Connectedness locus; projects onto $[-2,\tfrac14]$ |
+| $M_{\mathbb{C}_{\mathrm{dln}}}$ | Connectedness locus; projects onto $[-2,\tfrac14]$ |
 
 ## Further Reading
 

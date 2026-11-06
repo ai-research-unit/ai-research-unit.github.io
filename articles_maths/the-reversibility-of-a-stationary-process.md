@@ -90,7 +90,7 @@ $$
 $$
 Consequently a reversible process has a symmetric spectral measure, and the spectral measure of a reversible process is determined by its values on the half-circle.
 
-*Proof.* If $\mu_R$ is invariant under $\lambda\mapsto-\lambda$ then $R(-n)=\int \exp(-in\lambda)d\mu_R=\int \exp(in\lambda)d\mu_R(-(\lambda))=\int \exp(in\lambda)d\mu_R=R(n)$, so $R$ is even and, with the Hermitian symmetry, real. Conversely an even real $R$ gives $\int \exp(in\lambda)d[\mu_R-\mu^{\mathrm{refl}}_R]=0$ for the reflected measure $\mu^{\mathrm{refl}}_R(A)=\mu_R(-A)$ and all $n$, whence $\mu_R=\mu^{\mathrm{refl}}_R$ by the uniqueness in the Herglotz theorem.
+*Proof.* If $\mu_R$ is invariant under $\lambda\mapsto-\lambda$ then $R(-n)=\int \exp(-in\lambda)d\mu_R=\int \exp(in\lambda)d\mu_R(-(\lambda))=\int \exp(in\lambda)d\mu_R=R(n)$, so $R$ is even and, with the Hermitian symmetry, real. Conversely an even real $R$ gives $\int \exp(in\lambda)d[\mu_R-\mu_{\mathrm{refl},R}]=0$ for the reflected measure $\mu_{\mathrm{refl},R}(A)=\mu_R(-A)$ and all $n$, whence $\mu_R=\mu_{\mathrm{refl},R}$ by the uniqueness in the Herglotz theorem.
 
 **Corollary (the spectral meaning of reversibility).** A reversible process has a covariance that is the cosine transform of a symmetric measure, $R(n)=\int_{\mathbb T}\cos(n\lambda)\,d\mu_R(\lambda)$; its spectral measure carries no information about the sign of the frequency, and the one-sided spectral measure of the analytic-signal theory is not available.
 

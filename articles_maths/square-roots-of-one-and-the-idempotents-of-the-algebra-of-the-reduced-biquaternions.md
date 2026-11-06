@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Of the four products of *The Four Products, Their Forms and Their Algebraic Norms*, exactly one makes the underlying complex space of $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Algebra of the Reduced Biquaternions*, and its multiplication is the general plain bilinear product of two reduced biquaternions, $\breve Q_{1}\breve Q_{2}$. That product is the one read throughout this article.
+Of the four products of *The Four Products, Their Forms and Their Algebraic Norms*, exactly one makes the underlying complex space of $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Algebra of the Reduced Biquaternions*, and its multiplication is the general plain bilinear product of two reduced biquaternions, $\breve Q_{1}\breve Q_{2}$. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $Ζ\in\mathbb{B}^{\mathrm{red}}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $Ζ\in\mathbb{B}_{\mathrm{red}}$ with
 
 $$
 Ζ^{2}=1 .
@@ -55,7 +55,7 @@ The equations name a product, so the roots and the idempotents are relative to i
 
 **The roots of $+1$ are exactly $\pm1$ and $\pm j$; there are no others.**
 
-A **root of $+1$** is an element $Ζ\in\mathbb{B}^{\mathrm{red}}$ with $Ζ^{2}=1$, the square being the one of the general plain bilinear product.
+A **root of $+1$** is an element $Ζ\in\mathbb{B}_{\mathrm{red}}$ with $Ζ^{2}=1$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
@@ -116,7 +116,7 @@ They are the roots in the line $j\mathbb{C}$, with vanishing scalar part; they a
 
 ### Statement of the Theorem
 
-**Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{B}^{\mathrm{red}}$ are exactly the four elements
+**Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{B}_{\mathrm{red}}$ are exactly the four elements
 
 $$
 \boxed{\;
@@ -213,13 +213,13 @@ The status of the roots is collected in the table.
 
 ## The Idempotents
 
-**The idempotents of $\mathbb{B}^{\mathrm{red}}$ are exactly the four elements $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
+**The idempotents of $\mathbb{B}_{\mathrm{red}}$ are exactly the four elements $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
 
-The **idempotents** of $\mathbb{B}^{\mathrm{red}}$ are the elements satisfying $\Pi^{2}=\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}^{\mathrm{red}}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into the two idempotent lines, and in particular the two minimal ideals; they classify the zero divisors, every nonzero one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they carry the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
+The **idempotents** of $\mathbb{B}_{\mathrm{red}}$ are the elements satisfying $\Pi^{2}=\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}_{\mathrm{red}}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into the two idempotent lines, and in particular the two minimal ideals; they classify the zero divisors, every nonzero one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they carry the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
 ### The Definition
 
-**Definition.** An element $\Pi$ of $\mathbb{B}^{\mathrm{red}}$ is an **idempotent of the algebra of the reduced biquaternions** when
+**Definition.** An element $\Pi$ of $\mathbb{B}_{\mathrm{red}}$ is an **idempotent of the algebra of the reduced biquaternions** when
 
 $$
 \Pi^{2}=\Pi .
@@ -232,7 +232,7 @@ Two idempotents $\Pi,\Pi'$ are **orthogonal** when $\Pi\Pi'=\Pi'\Pi=0$; a family
 Idempotents encode direct summands of the algebra: an idempotent $\Pi$ and its complement $1-\Pi$ split the underlying $\mathbb{C}$-module,
 
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{B}^{\mathrm{red}}\Pi\oplus\mathbb{B}^{\mathrm{red}}(1-\Pi),\qquad \mathbb{B}^{\mathrm{red}}=\Pi\mathbb{B}^{\mathrm{red}}\oplus(1-\Pi)\mathbb{B}^{\mathrm{red}},
+\mathbb{B}_{\mathrm{red}}=\mathbb{B}_{\mathrm{red}}\Pi\oplus\mathbb{B}_{\mathrm{red}}(1-\Pi),\qquad \mathbb{B}_{\mathrm{red}}=\Pi\mathbb{B}_{\mathrm{red}}\oplus(1-\Pi)\mathbb{B}_{\mathrm{red}},
 $$
 
 the same on the left and on the right because the algebra is commutative. Every idempotent is the member attached to $+1$ of the pair of a root: for $\Pi$ idempotent the element $Ζ=2\Pi-1$ is a root of $+1$, and $\Pi_{+}(Ζ)=\Pi$ while $\Pi_{-}(Ζ)=1-\Pi$.
@@ -312,21 +312,21 @@ $$
 \Pi_{+}\Pi_{-}=\frac{(1+j)(1-j)}{4}=\frac{1-j^{2}}{4}=0,\qquad \Pi_{+}+\Pi_{-}=1.
 $$
 
-They are **central**, because the algebra is commutative, and **primitive**, because the corner algebras $\Pi_{\pm}\mathbb{B}^{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ are fields, isomorphic to $\mathbb{C}$. The properties of the pair are collected in the table.
+They are **central**, because the algebra is commutative, and **primitive**, because the corner algebras $\Pi_{\pm}\mathbb{B}_{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ are fields, isomorphic to $\mathbb{C}$. The properties of the pair are collected in the table.
 
 | Property | $\Pi_{+},\Pi_{-}$ |
 |---|---|
 | Orthogonal | $\Pi_{+}\Pi_{-}=0$ |
 | Complete | $\Pi_{+}+\Pi_{-}=1$ |
 | Central | yes, the algebra is commutative |
-| Primitive | yes, $\Pi_{\pm}\mathbb{B}^{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ |
+| Primitive | yes, $\Pi_{\pm}\mathbb{B}_{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ |
 | Hermitian idempotent | no for the star, which exchanges them; both are fixed by the bar |
 | Zero divisor | yes, $\Pi_{+}\Pi_{-}=0$ |
-| Minimal ideals | $\mathbb{B}^{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ |
+| Minimal ideals | $\mathbb{B}_{\mathrm{red}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ |
 
 ### The Classification of the Idempotents
 
-**The idempotents of $\mathbb{B}^{\mathrm{red}}$ are exactly $0$, $1$, $\Pi_{+}$ and $\Pi_{-}$; there are no others.**
+**The idempotents of $\mathbb{B}_{\mathrm{red}}$ are exactly $0$, $1$, $\Pi_{+}$ and $\Pi_{-}$; there are no others.**
 
 **Theorem (the idempotents).** The solutions of $\Pi^{2}=\Pi$ are
 
@@ -396,7 +396,7 @@ The idempotents fall into the two following families.
 | Trivial idempotents | $0,1$ | none | two elements | the scalar line | yes |
 | Standard idempotents | $\Pi_{\pm}=\tfrac12(1\pm j)$ | none | two elements | the two idempotent lines | no |
 
-The idempotents form a **finite set of four elements**, not a positive-dimensional family. The reason is visible in the classification: the idempotent equation forces $Q_{+}\in\{0,1\}$ and $Q_{-}\in\{0,1\}$, because each idempotent coordinate is a scalar and the equation $X^{2}=X$ has only the solutions $0$ and $1$; there is no vector part to vary independently. In the four-dimensional biquaternion algebra the non-trivial idempotents form a two-real-parameter Hermitian family and a four-real-parameter non-Hermitian family; here the non-trivial idempotents collapse to the two points $\Pi_{+},\Pi_{-}$. The idempotents are the indicator functions of the subsets of a two-point set under $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$:
+The idempotents form a **finite set of four elements**, not a positive-dimensional family. The reason is visible in the classification: the idempotent equation forces $Q_{+}\in\{0,1\}$ and $Q_{-}\in\{0,1\}$, because each idempotent coordinate is a scalar and the equation $X^{2}=X$ has only the solutions $0$ and $1$; there is no vector part to vary independently. In the four-dimensional biquaternion algebra the non-trivial idempotents form a two-real-parameter Hermitian family and a four-real-parameter non-Hermitian family; here the non-trivial idempotents collapse to the two points $\Pi_{+},\Pi_{-}$. The idempotents are the indicator functions of the subsets of a two-point set under $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$:
 
 $$
 0\longmapsto(0,0),\qquad \Pi_{+}\longmapsto(1,0),\qquad \Pi_{-}\longmapsto(0,1),\qquad 1\longmapsto(1,1).
@@ -409,7 +409,7 @@ $$
 An idempotent $\Pi$ acts by multiplication as a **projector**: $\Pi^{2}=\Pi$, so $L_{\Pi}$ is the identity on its image and annihilates its kernel. Its complement $1-\Pi$ is also an idempotent, and $\Pi(1-\Pi)=0$, so the pair gives the direct-sum decomposition
 
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{B}^{\mathrm{red}}\Pi\oplus\mathbb{B}^{\mathrm{red}}(1-\Pi),
+\mathbb{B}_{\mathrm{red}}=\mathbb{B}_{\mathrm{red}}\Pi\oplus\mathbb{B}_{\mathrm{red}}(1-\Pi),
 $$
 
 the same on the left and on the right because the algebra is commutative.
@@ -440,7 +440,7 @@ $$
 \breve Q=P_{+}(\breve Q)+P_{-}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}+(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-},
 $$
 
-the idempotent coordinates of *Reduced Biquaternion Space*. The Peirce decomposition of a pair of idempotents, with the four subspaces $\Pi\mathbb{B}^{\mathrm{red}}\Pi$, $\Pi\mathbb{B}^{\mathrm{red}}(1-\Pi)$, $(1-\Pi)\mathbb{B}^{\mathrm{red}}\Pi$ and $(1-\Pi)\mathbb{B}^{\mathrm{red}}(1-\Pi)$, is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; here only the two projections and the two lines they carry are read.
+the idempotent coordinates of *Reduced Biquaternion Space*. The Peirce decomposition of a pair of idempotents, with the four subspaces $\Pi\mathbb{B}_{\mathrm{red}}\Pi$, $\Pi\mathbb{B}_{\mathrm{red}}(1-\Pi)$, $(1-\Pi)\mathbb{B}_{\mathrm{red}}\Pi$ and $(1-\Pi)\mathbb{B}_{\mathrm{red}}(1-\Pi)$, is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; here only the two projections and the two lines they carry are read.
 
 ### Idempotents and the Zero Divisors
 
@@ -474,21 +474,21 @@ That statement, with its proof and the structure of the zero-divisor set, is *Ze
 The principal ideals
 
 $$
-\mathbb{B}^{\mathrm{red}}\Pi_{+}=\mathbb{C}\Pi_{+},\qquad \mathbb{B}^{\mathrm{red}}\Pi_{-}=\mathbb{C}\Pi_{-}
+\mathbb{B}_{\mathrm{red}}\Pi_{+}=\mathbb{C}\Pi_{+},\qquad \mathbb{B}_{\mathrm{red}}\Pi_{-}=\mathbb{C}\Pi_{-}
 $$
 
 are the two non-trivial minimal ideals, and
 
 $$
-\boxed{\; \mathbb{B}^{\mathrm{red}}=\mathbb{B}^{\mathrm{red}}\Pi_{+}\oplus\mathbb{B}^{\mathrm{red}}\Pi_{-} \;}
+\boxed{\; \mathbb{B}_{\mathrm{red}}=\mathbb{B}_{\mathrm{red}}\Pi_{+}\oplus\mathbb{B}_{\mathrm{red}}\Pi_{-} \;}
 $$
 
 is the direct sum of the two copies of $\mathbb{C}$. The two ideals are collected in the table.
 
 | Ideal | Generator | Form | Minimality |
 |---|---|---|---|
-| Two-sided | $\Pi_{+}$ | $\mathbb{B}^{\mathrm{red}}\Pi_{+}=\mathbb{C}\Pi_{+}$ | yes |
-| Two-sided | $\Pi_{-}$ | $\mathbb{B}^{\mathrm{red}}\Pi_{-}=\mathbb{C}\Pi_{-}$ | yes |
+| Two-sided | $\Pi_{+}$ | $\mathbb{B}_{\mathrm{red}}\Pi_{+}=\mathbb{C}\Pi_{+}$ | yes |
+| Two-sided | $\Pi_{-}$ | $\mathbb{B}_{\mathrm{red}}\Pi_{-}=\mathbb{C}\Pi_{-}$ | yes |
 
 The minimality is proved in *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, where the idempotents, the Peirce decomposition and the failure of simplicity are developed together.
 
@@ -496,9 +496,9 @@ The minimality is proved in *Ideals and Peirce Decomposition of the Algebra of t
 
 **The tessarine sign and the star both exchange the two non-trivial idempotents, and only the bar fixes every idempotent.**
 
-**Theorem.** $\Pi_{+,\mathrm{ts}}=\Pi_{-}=\Pi_{+}^{*}$, $\Pi_{-,\mathrm{ts}}=\Pi_{+}=\Pi_{-}^{*}$, and $\overline{\Pi_{+}}=\Pi_{+}$, $\overline{\Pi_{-}}=\Pi_{-}$; the flat sends each idempotent to the negative of the other, $\Pi_{+}^{\flat}=-\Pi_{-}$ and $\Pi_{-}^{\flat}=-\Pi_{+}$, which is not an idempotent.
+**Theorem.** $\Pi_{\mathrm{ts},+}=\Pi_{-}=\Pi_{+}^{*}$, $\Pi_{\mathrm{ts},-}=\Pi_{+}=\Pi_{-}^{*}$, and $\overline{\Pi_{+}}=\Pi_{+}$, $\overline{\Pi_{-}}=\Pi_{-}$; the flat sends each idempotent to the negative of the other, $\Pi_{+}^{\flat}=-\Pi_{-}$ and $\Pi_{-}^{\flat}=-\Pi_{+}$, which is not an idempotent.
 
-**Proof.** $\Pi_{+,\mathrm{ts}}=\tfrac12(1+j)_{\mathrm{ts}}=\tfrac12(1-j)=\Pi_{-}$, and $\Pi_{-,\mathrm{ts}}=\Pi_{+}$ (*The Two Involutions and the Group of Involutions*); the bar conjugates the coefficients of $\Pi_{\pm}=\tfrac12\pm\tfrac12 j$, which are real, so it fixes each idempotent; the star is $\bar{\cdot}\circ{}_{\mathrm{ts}}$, so $\Pi_{+}^{*}=\overline{\Pi_{+,\mathrm{ts}}}=\overline{\Pi_{-}}=\Pi_{-}$ and $\Pi_{-}^{*}=\Pi_{+}$, the star exchanging the two as the tessarine sign does. The flat is $-{}^{*}$, so it sends each idempotent to the negative of the other.
+**Proof.** $\Pi_{\mathrm{ts},+}=\tfrac12(1+j)_{\mathrm{ts}}=\tfrac12(1-j)=\Pi_{-}$, and $\Pi_{\mathrm{ts},-}=\Pi_{+}$ (*The Two Involutions and the Group of Involutions*); the bar conjugates the coefficients of $\Pi_{\pm}=\tfrac12\pm\tfrac12 j$, which are real, so it fixes each idempotent; the star is $\bar{\cdot}\circ{}_{\mathrm{ts}}$, so $\Pi_{+}^{*}=\overline{\Pi_{\mathrm{ts},+}}=\overline{\Pi_{-}}=\Pi_{-}$ and $\Pi_{-}^{*}=\Pi_{+}$, the star exchanging the two as the tessarine sign does. The flat is $-{}^{*}$, so it sends each idempotent to the negative of the other.
 
 The action of the involutions on the idempotents is collected in the table.
 
@@ -524,7 +524,7 @@ The trivial idempotents $0$ and $1$ are fixed by the bar, the tessarine sign and
 | Hermitian idempotents | $0,1$, the star fixing them |
 | Non-Hermitian idempotents | $\Pi_{+},\Pi_{-}$, the star exchanging them |
 | Halving map | bijection $H(Ζ)=\tfrac12(1+Ζ)$, inverse $H^{-1}(\Pi)=2\Pi-1$ |
-| Standard pair | central, primitive, complete and orthogonal; $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$ |
+| Standard pair | central, primitive, complete and orthogonal; $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$ |
 | Zero divisors | the non-trivial idempotents and their nonzero complex multiples |
 | Involutions | the tessarine sign and the star exchange $\Pi_{+}$ and $\Pi_{-}$; the bar fixes both; the flat sends each to the negative of the other |
 
@@ -550,13 +550,13 @@ $$
 
 Each root $Ζ$ of $+1$ carries the two idempotents $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=1-\Pi_{+}(Ζ)$, a complete orthogonal pair whose difference is the root; the **halving map** $H(Ζ)=\tfrac12(1+Ζ)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$, and the class $\{Ζ,-Ζ\}$ gives the same unordered pair. The four roots give the two unordered pairs $\{0,1\}$ and $\{\Pi_{+},\Pi_{-}\}$.
 
-Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, with $P_{\Pi}^{2}=P_{\Pi}$, $P_{+}+P_{-}=\mathrm{id}$ and $P_{+}P_{-}=0$; the explicit projections are $P_{+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}$ and $P_{-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-}$, and they give the resolution of the identity and the decomposition $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$. The two lines are the two minimal ideals, and the standard pair is central, primitive and complete. The trivial idempotents are Hermitian, fixed by the star, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero complex multiple of one of them. The **tessarine sign** and the **star** both exchange the two non-trivial idempotents, $\Pi_{+,\mathrm{ts}}=\Pi_{-}=\Pi_{+}^{*}$ and $\Pi_{-,\mathrm{ts}}=\Pi_{+}=\Pi_{-}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{+}}=\Pi_{+}$ and $\overline{\Pi_{-}}=\Pi_{-}$.
+Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, with $P_{\Pi}^{2}=P_{\Pi}$, $P_{+}+P_{-}=\mathrm{id}$ and $P_{+}P_{-}=0$; the explicit projections are $P_{+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}$ and $P_{-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-}$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$. The two lines are the two minimal ideals, and the standard pair is central, primitive and complete. The trivial idempotents are Hermitian, fixed by the star, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero complex multiple of one of them. The **tessarine sign** and the **star** both exchange the two non-trivial idempotents, $\Pi_{\mathrm{ts},+}=\Pi_{-}=\Pi_{+}^{*}$ and $\Pi_{\mathrm{ts},-}=\Pi_{+}=\Pi_{-}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{+}}=\Pi_{+}$ and $\overline{\Pi_{-}}=\Pi_{-}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | The reduced biquaternion algebra, with basis $1,i,j,ij$ |
+| $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | The reduced biquaternion algebra, with basis $1,i,j,ij$ |
 | ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ | The star, the intrinsic involution |
 | $Ζ$ | A root of $+1$, $Ζ^{2}=1$ |
 | $\mathcal{R}_{+1}=\{1,-1,j,-j\}$ | The four roots of $+1$, a group $(\mathbb{Z}/2\mathbb{Z})^{2}$ |

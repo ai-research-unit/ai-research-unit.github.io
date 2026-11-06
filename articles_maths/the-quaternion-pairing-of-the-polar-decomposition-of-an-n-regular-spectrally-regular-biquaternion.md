@@ -8,10 +8,10 @@ Every element of $\Sigma_{11}$ is the ordered product of a positive real scale, 
 
 $$
 \tilde{Q} = r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
+= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta^{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the rotor.
+The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the rotor.
 
 **The quaternion pairing** is the grouping that joins the scale to the rotor and the phase to the boost, and writes the element with a real quaternion modulus $\tilde q$ and a real quaternion angle $\tilde\Theta$:
 
@@ -19,7 +19,7 @@ $$
 \tilde{Q} = \tilde q\,\exp(i\tilde\Theta), \qquad \tilde q = r\,\tilde u_{\mathrm r}, \qquad \exp(i\tilde\Theta) = \exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} .
 $$
 
-The fourth factor of the word, the rotor $\tilde u_{\mathrm r}$, is moved to the left, past the central phase, next to the scale, and the boost is conjugated by it so that the two non-central factors can stand together on the right as one exponential. The modulus $\tilde q = r\tilde u_{\mathrm r}$ is a real quaternion, and the angle is the real quaternion $\tilde\Theta = \alpha+\theta_{\mathrm b}\vec u_{\mathrm b}'$, with $\theta_{\mathrm b} = \theta^{\mathrm{rpd}}/2$ half the rapidity and $\vec u_{\mathrm b}' = \tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis rotated by the rotor. The element is thus determined by the two real quaternions $\tilde q$ and $\tilde\Theta$. The split itself is made by the real quaternion part $\tilde q_r$ of the element, which the construction has to invert. The pairing is not named for the complex numbers. Its only complex object is the central phase, and $\mathbb{C}$ has a polar decomposition of its own in *Modulus–Unit Polar Decomposition of Complex Numbers*; the older name *complex representation* invited a confusion that the name here avoids. One reading of the first factor is worth stating at the outset: written $\tilde q = r\tilde u_{\mathrm r}$, the modulus $\tilde q$ is the polar decomposition of an ordinary quaternion in the sense of *Modulus–Unit Polar Decomposition of Quaternions*, with the same two factors and the same symbols. The pairing therefore carries the polar word of the quaternion algebra as its first factor, and only the second factor leaves that algebra.
+The fourth factor of the word, the rotor $\tilde u_{\mathrm r}$, is moved to the left, past the central phase, next to the scale, and the boost is conjugated by it so that the two non-central factors can stand together on the right as one exponential. The modulus $\tilde q = r\tilde u_{\mathrm r}$ is a real quaternion, and the angle is the real quaternion $\tilde\Theta = \alpha+\theta_{\mathrm b}\vec u_{\mathrm b}'$, with $\theta_{\mathrm b} = \theta_{\mathrm{rpd}}/2$ half the rapidity and $\vec u_{\mathrm b}' = \tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis rotated by the rotor. The element is thus determined by the two real quaternions $\tilde q$ and $\tilde\Theta$. The split itself is made by the real quaternion part $\tilde q_r$ of the element, which the construction has to invert. The pairing is not named for the complex numbers. Its only complex object is the central phase, and $\mathbb{C}$ has a polar decomposition of its own in *Modulus–Unit Polar Decomposition of Complex Numbers*; the older name *complex representation* invited a confusion that the name here avoids. One reading of the first factor is worth stating at the outset: written $\tilde q = r\tilde u_{\mathrm r}$, the modulus $\tilde q$ is the polar decomposition of an ordinary quaternion in the sense of *Modulus–Unit Polar Decomposition of Quaternions*, with the same two factors and the same symbols. The pairing therefore carries the polar word of the quaternion algebra as its first factor, and only the second factor leaves that algebra.
 
 The pairing is **partial**: its modulus is a composite object, the product of the scale and the rotor, and the pairing as constructed is available only where that object can be read from the parts of the element. The other partial pairing, the Hamilton one, groups the scale with the phase and the boost with the rotor; the third grouping, in which the scale joins the boost and the phase joins the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*.
 
@@ -65,10 +65,10 @@ $$
 The modulus is a real quaternion, of norm $\langle\tilde q\rangle_{\natural} = r^2$, and the exponential is central in its phase but not in its boost: the boost has been conjugated by the rotor, so that it can stand to the right of the modulus in the canonical order. Writing the conjugated boost as
 
 $$
-\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cosh\theta_{\mathrm b}\,e_t + i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}', \qquad \theta_{\mathrm b} = \frac{\theta^{\mathrm{rpd}}}{2},
+\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cosh\theta_{\mathrm b}\,e_t + i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}', \qquad \theta_{\mathrm b} = \frac{\theta_{\mathrm{rpd}}}{2},
 $$
 
-with $\theta^{\mathrm{rpd}}$ the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}'$ its axis rotated by the rotor, the exponent is
+with $\theta_{\mathrm{rpd}}$ the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}'$ its axis rotated by the rotor, the exponent is
 
 $$
 \boxed{\; \tilde\Theta = \alpha + \theta_{\mathrm b}\,\vec u_{\mathrm b}' \;},
@@ -132,7 +132,7 @@ $$
 \qquad \tilde\Theta = \alpha+\theta_{\mathrm b}\vec u_{\mathrm b}' ,
 $$
 
-with $\theta_{\mathrm b}=\theta^{\mathrm{rpd}}/2$ and $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. It is not central and not real in general: its scalar part is $\exp(i\alpha)\cosh\theta_{\mathrm b}$ and its vector part $\exp(i\alpha)\,i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}'$. It is nevertheless the element divided on the left by the modulus,
+with $\theta_{\mathrm b}=\theta_{\mathrm{rpd}}/2$ and $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. It is not central and not real in general: its scalar part is $\exp(i\alpha)\cosh\theta_{\mathrm b}$ and its vector part $\exp(i\alpha)\,i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}'$. It is nevertheless the element divided on the left by the modulus,
 
 $$
 \boxed{\; \exp(i\tilde\Theta)=\tilde q^{-1}\tilde Q \;},
@@ -343,10 +343,10 @@ $$
 matching the modulus $\tilde q_r(\cos\tilde\Theta)^{-1}$ of the construction with $\tilde q_r = 1+\vec e_x+2\vec e_y$, and the exponent is
 
 $$
-\tilde\Theta = \alpha + \frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}' = 0.190253 - 0.169108\,\vec e_x - 0.338216\,\vec e_y ,
+\tilde\Theta = \alpha + \frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}' = 0.190253 - 0.169108\,\vec e_x - 0.338216\,\vec e_y ,
 $$
 
-where $\theta^{\mathrm{rpd}} = 0.756273220$ is the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}' = -(1,2,0)/\sqrt5$ is its axis, unchanged by the rotor because the rotor's axis is parallel to it.
+where $\theta_{\mathrm{rpd}} = 0.756273220$ is the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}' = -(1,2,0)/\sqrt5$ is its axis, unchanged by the rotor because the rotor's axis is parallel to it.
 
 The two partial regroupings of the same four factors are therefore displayed on one element, the Hamilton regrouping of it being computed in *The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, and their moduli are visibly different objects: a complex scalar and a real quaternion. The third pairing, the Cartan pairing, groups the four factors differently again and is treated in *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*.
 
@@ -418,7 +418,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 | $\lambda_\pm = Q_t\pm iB = \Rho\exp(\pm i\Theta)$ | the eigenvalues of $\tilde Q$, the coefficients of its eigenvalue decomposition |
 | $\tilde q = r\tilde u_{\mathrm r}$ | quaternion modulus, the real quaternion that is the polar decomposition of the ordinary quaternions |
 | $\tilde\Theta = \alpha+\theta_{\mathrm b}\vec u_{\mathrm b}'$ | quaternion angle, a real quaternion |
-| $\theta_{\mathrm b} = \theta^{\mathrm{rpd}}/2$, $\vec u_{\mathrm b}'$ | half the boost rapidity, and the rotor-rotated boost axis |
+| $\theta_{\mathrm b} = \theta_{\mathrm{rpd}}/2$, $\vec u_{\mathrm b}'$ | half the boost rapidity, and the rotor-rotated boost axis |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
 
 ## Further Reading

@@ -66,7 +66,7 @@ $$
 
 ## The Relation to the Unsigned Left Multiplication and the Isometries
 
-**Proposition (the unsigned case).** The signed left multiplication with $\alpha = \mathrm{id}$ is the ordinary left multiplication, $\Lambda^{\mathrm{id}}_{a} = L_a$, and for the general $\alpha$ the two families are exchanged by the involution,
+**Proposition (the unsigned case).** The signed left multiplication with $\alpha = \mathrm{id}$ is the ordinary left multiplication, $\Lambda_{\mathrm{id},a} = L_a$, and for the general $\alpha$ the two families are exchanged by the involution,
 $$
 \Lambda^{\alpha}_{a} = L_a\circ\alpha, \qquad L_{\alpha(a)} = \Lambda^{\alpha}_{a}\circ\alpha ,
 $$

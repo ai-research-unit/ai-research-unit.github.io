@@ -22,7 +22,7 @@ Four statements organize the article. The first three are the levels at which th
 
 - **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=ix_0$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
-- **At the rotor level**, the identity component is exactly the group of Hermitian sandwiches $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U^{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
+- **At the rotor level**, the identity component is exactly the group of Hermitian sandwiches $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
 ## The Biquaternion Norm as a Quadratic Form
@@ -207,15 +207,15 @@ The discrete components are automorphisms of the form and are not Hermitian sand
 The identity component has an explicit algebraic form. A **Lorentz rotor** is a unit-norm biquaternion,
 
 $$
-\tilde U^{\mathrm{lor}}\in\mathbb{B},
+\tilde U_{\mathrm{lor}}\in\mathbb{B},
 \qquad
-\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t ,
+\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t ,
 $$
 
 and it acts by the **Hermitian sandwich**,
 
 $$
-\pi(\tilde U^{\mathrm{lor}}):\ \tilde{Q}\ \longmapsto\ \tilde U^{\mathrm{lor}}\,\tilde{Q}\,\tilde U^{\mathrm{lor}}{}^{*} .
+\pi(\tilde U_{\mathrm{lor}}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{Q}\,\tilde U_{\mathrm{lor}}{}^{*} .
 $$
 
 The sandwich is built from the Hermitian adjoint, and the rotor has unit biquaternion norm. It preserves the biquaternion norm and the anti-Hermitian slice; it is an automorphism of the norm, not of the product.
@@ -225,9 +225,9 @@ Three properties, each a one-line verification, are the content of the identific
 **It preserves the slice.** If $\tilde{Q}^{*} = -\tilde{Q}$ then
 
 $$
-\left(\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}\right)^{*}
-= \tilde U^{\mathrm{lor}}\tilde{Q}^{*}\tilde U^{\mathrm{lor}}{}^{*}
-= -\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*},
+\left(\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\right)^{*}
+= \tilde U_{\mathrm{lor}}\tilde{Q}^{*}\tilde U_{\mathrm{lor}}{}^{*}
+= -\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*},
 $$
 
 so the image is again anti-Hermitian.
@@ -235,24 +235,24 @@ so the image is again anti-Hermitian.
 **It preserves the form.** By multiplicativity,
 
 $$
-\langle\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural}
-= \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural}
-= 1\cdot \langle\tilde{Q}\rangle_{\natural}\cdot\overline{\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}}
+\langle\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural}
+= \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural}
+= 1\cdot \langle\tilde{Q}\rangle_{\natural}\cdot\overline{\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}}
 = \langle\tilde{Q}\rangle_{\natural},
 $$
 
-using $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$ and $\langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \overline{\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}} = 1$.
+using $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ and $\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}} = 1$.
 
-**It defines a homomorphism.** Since $\pi(\tilde U^{\mathrm{lor}}_{1})\pi(\tilde U^{\mathrm{lor}}_{2}) = \pi(\tilde U^{\mathrm{lor}}_{1}\tilde U^{\mathrm{lor}}_{2})$ and $(\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*})^{*}$ reuses the same $\tilde U^{\mathrm{lor}}$ on both sides, the assignment is a continuous group homomorphism
+**It defines a homomorphism.** Since $\pi(\tilde U_{\mathrm{lor},1})\pi(\tilde U_{\mathrm{lor},2}) = \pi(\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2})$ and $(\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*})^{*}$ reuses the same $\tilde U_{\mathrm{lor}}$ on both sides, the assignment is a continuous group homomorphism
 
 $$
-\pi:\ SL(2,\mathbb{C}) = \{\tilde U^{\mathrm{lor}} : \langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
+\pi:\ SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
 $$
 
 Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{M}_-$. Since $-e_t$ is central,
 
 $$
-(-e_t)\,\tilde{Q}\,(-e_t)^{*} = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}\big|_{\tilde U^{\mathrm{lor}} = -e_t}
+(-e_t)\,\tilde{Q}\,(-e_t)^{*} = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\big|_{\tilde U_{\mathrm{lor}} = -e_t}
 = (-e_t)\tilde{Q}(-e_t) = \tilde{Q},
 $$
 
@@ -268,7 +268,7 @@ The map $\pi$ is **surjective** onto $SO^+(1,3)$; that every proper orthochronou
 
 $$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
-\;=\;\{\pi(\tilde U^{\mathrm{lor}}): \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1\}/\ker\pi\;}.
+\;=\;\{\pi(\tilde U_{\mathrm{lor}}): \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1\}/\ker\pi\;}.
 $$
 
 A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian sandwich with unit-norm elements.
@@ -336,14 +336,14 @@ $$
 T \longmapsto T , \qquad \vec X \longmapsto R\,\vec X ,
 $$
 
-a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}^{\mathrm{sp}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
+a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}_{\mathrm{sp}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
 
 $$
-T \longmapsto \cosh 2\theta^{\mathrm{rpd}}\,T + \sinh 2\theta^{\mathrm{rpd}}\,X_3 , \qquad
-X_3 \longmapsto \sinh 2\theta^{\mathrm{rpd}}\,T + \cosh 2\theta^{\mathrm{rpd}}\,X_3 ,
+T \longmapsto \cosh 2\theta_{\mathrm{rpd}}\,T + \sinh 2\theta_{\mathrm{rpd}}\,X_3 , \qquad
+X_3 \longmapsto \sinh 2\theta_{\mathrm{rpd}}\,T + \cosh 2\theta_{\mathrm{rpd}}\,X_3 ,
 $$
 
-a **Lorentz boost of rapidity $2\theta^{\mathrm{rpd}}$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and the isomorphism of the previous paragraph is the statement about the **groups**, not about an action on $(T,\vec X)$: the boost above holds only while $\vec p$ and $\vec q$ stay in the rotation plane, and for generic $\vec p,\vec q$ the induced map is not linear at all, so the action on the bilinear coordinates remains the Hermitian sandwich of $X=ZZ^{\dagger}$, not the automorphism itself.
+a **Lorentz boost of rapidity $2\theta_{\mathrm{rpd}}$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and the isomorphism of the previous paragraph is the statement about the **groups**, not about an action on $(T,\vec X)$: the boost above holds only while $\vec p$ and $\vec q$ stay in the rotation plane, and for generic $\vec p,\vec q$ the induced map is not linear at all, so the action on the bilinear coordinates remains the Hermitian sandwich of $X=ZZ^{\dagger}$, not the automorphism itself.
 
 **Causality as a theorem.** Two inequalities, both elementary, make the construction more than a rewriting. By AM–GM, $2|\vec p|\,|\vec q|\le|\vec p|^2+|\vec q|^2=T$; and $|\vec X|=2|\vec p\times\vec q|\le2|\vec p|\,|\vec q|$. Hence
 
@@ -394,11 +394,11 @@ The source prints $T^2-|\vec X|^2=S^2\equiv|z_0|^2$; the two differ by $|z_0|^2$
 Differentiating the unit-norm condition gives the Lie algebra of infinitesimal biquaternion-norm automorphisms. Let
 
 $$
-\tilde U^{\mathrm{lor}} = e_t + \varepsilon\,\tilde{Q},
+\tilde U_{\mathrm{lor}} = e_t + \varepsilon\,\tilde{Q},
 \qquad \varepsilon\in\mathbb{R},\quad \varepsilon\ll1 .
 $$
 
-The condition $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$ becomes
+The condition $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ becomes
 
 $$
 \langle e_t+\varepsilon\tilde{Q}\rangle_{\natural} = (e_t+\varepsilon\tilde{Q})(e_t+\varepsilon\tilde{Q}^{\natural})
@@ -464,7 +464,7 @@ This is what makes each combination close on itself with the same structure cons
 
 **Interpretation.** The interpretation of the material slice as physical spacetime, and of its biquaternion-norm automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *Introduction to the Biquaternion Universe* state.
 
-**Attributed to a neighbouring programme.** The diagonal interpretation of the algebra automorphisms, the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$, the induced interval $T^2-|\vec X|^2=S^2=\sigma\sigma^*$ with its guaranteed sign, the boost of rapidity $2\theta^{\mathrm{rpd}}$, and the invariant phase $\alpha=\arg\sigma$ are the construction of Kassandrov's algebrodynamics and not of this article. What is this article's is the placement of that construction as the middle case between the norm and the slice, the identification of its group with the adjoint-inverse subfamily $SO(3,\mathbb{C})\subset SO(4,\mathbb{C})$. The source's reading of the phase as the origin of quantum properties, and its vocabulary of *duplicons* and "observable" space-time, are not adopted. The programme as a whole — its nonlinear primary equation, its twistor field, its multivalued principal field, its induced geometry with phase and its particle picture — is recorded, once, in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns it; this article's contribution is the group-theoretic identification of the automorphism group with the adjoint-inverse subfamily of the norm-automorphism group, together with the checks, numerical and algebraic.
+**Attributed to a neighbouring programme.** The diagonal interpretation of the algebra automorphisms, the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$, the induced interval $T^2-|\vec X|^2=S^2=\sigma\sigma^*$ with its guaranteed sign, the boost of rapidity $2\theta_{\mathrm{rpd}}$, and the invariant phase $\alpha=\arg\sigma$ are the construction of Kassandrov's algebrodynamics and not of this article. What is this article's is the placement of that construction as the middle case between the norm and the slice, the identification of its group with the adjoint-inverse subfamily $SO(3,\mathbb{C})\subset SO(4,\mathbb{C})$. The source's reading of the phase as the origin of quantum properties, and its vocabulary of *duplicons* and "observable" space-time, are not adopted. The programme as a whole — its nonlinear primary equation, its twistor field, its multivalued principal field, its induced geometry with phase and its particle picture — is recorded, once, in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns it; this article's contribution is the group-theoretic identification of the automorphism group with the adjoint-inverse subfamily of the norm-automorphism group, together with the checks, numerical and algebraic.
 
 ## Open Questions
 
@@ -514,9 +514,9 @@ so the automorphisms preserving the slice form $O(1,3)$, with identity component
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*},
+\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*},
 \qquad
-\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1,
+\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1,
 $$
 
 the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_\mu = \vec e_\mu$ and the boost generators $\mathcal{K}_\mu = i\vec e_\mu$, with
@@ -570,8 +570,8 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
 | $\langle\tilde Q\rangle_\natural$, $Q_t=i c r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
-| $\tilde U^{\mathrm{lor}}$, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |
+| $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
+| $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian sandwich; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_t\}$ | Two-to-one covering homomorphism |
 | $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_\mu=\vec e_\mu$ (rotations), $\mathcal{K}_\mu=i\vec e_\mu$ (boosts) |
 | $[\mathcal{K}_\mu,\mathcal{K}_\nu]=-2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda$ | Boosts do not close; infinitesimal Wigner rotation |
@@ -589,4 +589,4 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor representation of the Lorentz group and the boost–rotation decomposition.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the even-subalgebra and bivector formulation of the Lorentz group.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Lorentz group, its complexification and its finite-dimensional representations.
-- V. V. Kassandrov, "Algebrodynamics in Complex Space-Time and the Complex-Quaternionic Origin of Minkowski Geometry", arXiv:gr-qc/0602088 (2006), for the identification of the algebra automorphism group $SO(3,\mathbb{C})=PGL(2,\mathbb{C})$ as the proper Lorentz group acting on the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$; for the identity $T^2-|\vec X|^2=\sigma\sigma^*\ge0$ that makes the causal structure a theorem; for the boost of rapidity $2\theta^{\mathrm{rpd}}$ generated by an imaginary rotation; and for the Lorentz-invariant phase $\alpha=\arg\sigma$ and its relation to the speed. The same paper is cited, under its other title "On a quaternionic induced geometry with phase", in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns the programme and its particle picture. Two slips of the source are recorded in the section above: the power of $|z_0|$ in its (22), and the use of the letter $T$ for both the coordinate and the interval element of a displacement.
+- V. V. Kassandrov, "Algebrodynamics in Complex Space-Time and the Complex-Quaternionic Origin of Minkowski Geometry", arXiv:gr-qc/0602088 (2006), for the identification of the algebra automorphism group $SO(3,\mathbb{C})=PGL(2,\mathbb{C})$ as the proper Lorentz group acting on the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$; for the identity $T^2-|\vec X|^2=\sigma\sigma^*\ge0$ that makes the causal structure a theorem; for the boost of rapidity $2\theta_{\mathrm{rpd}}$ generated by an imaginary rotation; and for the Lorentz-invariant phase $\alpha=\arg\sigma$ and its relation to the speed. The same paper is cited, under its other title "On a quaternionic induced geometry with phase", in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns the programme and its particle picture. Two slips of the source are recorded in the section above: the power of $|z_0|$ in its (22), and the use of the letter $T$ for both the coordinate and the interval element of a displacement.

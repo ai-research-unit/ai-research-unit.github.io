@@ -551,7 +551,7 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $q,q'$ | the two real coordinates |
 | $q^2-q'^2=(q+q')(q-q')$ | the product $Q\bar Q$ |

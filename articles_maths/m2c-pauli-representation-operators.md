@@ -294,7 +294,7 @@ The second slot reverses the order: the pair multiplies as $(A,B)(C,D)=(AC,DB)$.
 
 **The unit.** The identity is $L_{\mathrm I_2}R_{\mathrm I_2}$. The pair multiplication is associative, and the scaling orbit is preserved: the product of the orbits of $(A,B)$ and $(C,D)$ is the orbit of $(AC,DB)$.
 
-**The algebra.** The pair multiplication is the multiplication of $M_2(\mathbb{C})\times M_2(\mathbb{C})^{\mathrm{opp}}$: the first factor multiplies in the algebra, the second in the opposite algebra. This is the $2\times2$ form of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$.
+**The algebra.** The pair multiplication is the multiplication of $M_2(\mathbb{C})\times M_2(\mathbb{C})_{\mathrm{opp}}$: the first factor multiplies in the algebra, the second in the opposite algebra. This is the $2\times2$ form of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$.
 
 ### The Inverse
 
@@ -467,5 +467,5 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 - [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the basis where no $2\times2$ block appears.
 - [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the two laws, the rank and the commutation.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition and the adjoint.
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$ and the pure tensors.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the fixed model and the conventions of the matrix models.

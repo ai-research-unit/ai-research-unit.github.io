@@ -5,7 +5,7 @@
 The reduced biquaternion algebra is the commutative four-real-dimensional algebra
 
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 
 of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, whose two complementary central idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$. An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex, and it is the pair $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ of its idempotent coordinates, $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$. An automorphism of the algebra is a bijective linear map preserving the multiplication and the unit; a derivation is a linear map satisfying the Leibniz rule $D(\breve Q_{1}\breve Q_{2})=D(\breve Q_{1})\breve Q_{2}+\breve Q_{1}D(\breve Q_{2})$. Both are structural invariants of the multiplication, and both are decided by one fact: the algebra is a direct product of two copies of the complex field, and it is not simple.
@@ -16,11 +16,11 @@ The article owns the structure of the automorphism group, its generators in the 
 
 ## The Idempotents and the Factor Structure
 
-**Proposition (the idempotents).** The idempotents of $\mathbb{B}^{\mathrm{red}}$ are exactly $0$, $\Pi_+$, $\Pi_-$ and $1$, and the only primitive ones are $\Pi_+$ and $\Pi_-$.
+**Proposition (the idempotents).** The idempotents of $\mathbb{B}_{\mathrm{red}}$ are exactly $0$, $\Pi_+$, $\Pi_-$ and $1$, and the only primitive ones are $\Pi_+$ and $\Pi_-$.
 
-**Proof.** In the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ a pair $(Q_{+},Q_{-})$ satisfies $(Q_{+},Q_{-})^{2}=(Q_{+},Q_{-})$ exactly when each coordinate is $0$ or $1$, giving the four listed elements; a primitive idempotent is a nonzero idempotent that is not the sum of two nonzero orthogonal idempotents, which excludes $1$ and leaves $\Pi_+$ and $\Pi_-$. Equivalently $Q_{+}^{2}=Q_{+}$ and $Q_{-}^{2}=Q_{-}$ in the field $\mathbb{C}$ have only the roots $0$ and $1$.
+**Proof.** In the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ a pair $(Q_{+},Q_{-})$ satisfies $(Q_{+},Q_{-})^{2}=(Q_{+},Q_{-})$ exactly when each coordinate is $0$ or $1$, giving the four listed elements; a primitive idempotent is a nonzero idempotent that is not the sum of two nonzero orthogonal idempotents, which excludes $1$ and leaves $\Pi_+$ and $\Pi_-$. Equivalently $Q_{+}^{2}=Q_{+}$ and $Q_{-}^{2}=Q_{-}$ in the field $\mathbb{C}$ have only the roots $0$ and $1$.
 
-**Proposition (the algebra is the direct product of its factors).** The map $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ is an isomorphism $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}\oplus\mathbb{C}$ of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, the product being componentwise.
+**Proposition (the algebra is the direct product of its factors).** The map $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ is an isomorphism $\mathbb{B}_{\mathrm{red}}\to\mathbb{C}\oplus\mathbb{C}$ of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, the product being componentwise.
 
 **Proof.** $\varphi$ is $\mathbb{C}$-linear and bijective, and $\varphi(\breve Q_{1}\breve Q_{2})=((Q_{1\blacktriangle}+Q_{1\blacktriangledown})(Q_{2\blacktriangle}+Q_{2\blacktriangledown}),(Q_{1\blacktriangle}-Q_{1\blacktriangledown})(Q_{2\blacktriangle}-Q_{2\blacktriangledown}))=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$ by the multiplication rule $\breve Q_{1}\breve Q_{2}=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j$.
 
@@ -28,7 +28,7 @@ The article owns the structure of the automorphism group, its generators in the 
 
 ## Automorphisms over $\mathbb{R}$
 
-**Proposition (the permutation of the factors).** Let $\alpha$ be an automorphism of $\mathbb{B}^{\mathrm{red}}$ over $\mathbb{R}$. Then $\{\alpha(\Pi_+),\alpha(\Pi_-)\}=\{\Pi_+,\Pi_-\}$.
+**Proposition (the permutation of the factors).** Let $\alpha$ be an automorphism of $\mathbb{B}_{\mathrm{red}}$ over $\mathbb{R}$. Then $\{\alpha(\Pi_+),\alpha(\Pi_-)\}=\{\Pi_+,\Pi_-\}$.
 
 **Proof.** $\alpha$ carries idempotents to idempotents and preserves the unit and the product, so $\alpha(\Pi_+)$ and $\alpha(\Pi_-)$ are nonzero orthogonal idempotents with sum $1$; by the proposition on idempotents each is primitive, and the two primitive idempotents are $\Pi_+$ and $\Pi_-$.
 
@@ -73,7 +73,7 @@ and $\bar{\cdot}:i\mapsto-i$, $j\mapsto j$, $ij\mapsto-ij$. The tessarine sign i
 
 ## Automorphisms over $\mathbb{C}$
 
-**Theorem (the automorphism group over $\mathbb{C}$).** An automorphism of $\mathbb{B}^{\mathrm{red}}$ that is $\mathbb{C}$-linear is either the identity or the tessarine sign; the automorphism group over $\mathbb{C}$ has order two and is generated by the exchange of the two factors.
+**Theorem (the automorphism group over $\mathbb{C}$).** An automorphism of $\mathbb{B}_{\mathrm{red}}$ that is $\mathbb{C}$-linear is either the identity or the tessarine sign; the automorphism group over $\mathbb{C}$ has order two and is generated by the exchange of the two factors.
 
 **Proof.** A $\mathbb{C}$-linear automorphism is in particular $\mathbb{R}$-linear, so it is one of the eight maps of the theorem above; a map of that list is $\mathbb{C}$-linear exactly when the maps $f$ and $g$ are the identity, because the conjugations are antiholomorphic, that is $f(\lambda z)\neq\lambda f(z)$ for $\lambda\in\mathbb{C}$ non-real. The exchange is $\mathbb{C}$-linear because $\lambda$ is central.
 
@@ -85,11 +85,11 @@ and $\bar{\cdot}:i\mapsto-i$, $j\mapsto j$, $ij\mapsto-ij$. The tessarine sign i
 
 **Proof.** $P \breve Q=\breve Q P$ for every $\breve Q$ because the algebra is commutative, so $P \breve Q P^{-1}=\breve Q$.
 
-**Theorem (the derivations vanish).** Every $\mathbb{R}$-derivation of $\mathbb{B}^{\mathrm{red}}$ is zero, and every $\mathbb{C}$-derivation is zero: the derivation space is $\{0\}$ over both fields.
+**Theorem (the derivations vanish).** Every $\mathbb{R}$-derivation of $\mathbb{B}_{\mathrm{red}}$ is zero, and every $\mathbb{C}$-derivation is zero: the derivation space is $\{0\}$ over both fields.
 
 **Proof.** Let $D$ be an $\mathbb{R}$-derivation. From the Leibniz rule $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$, and from $\Pi_\pm=\Pi_\pm^{2}$ one has $D(\Pi_\pm)=2\Pi_\pm D(\Pi_\pm)$, so $D(\Pi_\pm)=0$; then $D$ is determined on the direct product by its restrictions to the two factors, which are $\mathbb{R}$-derivations $\mathbb{C}\to\mathbb{C}$. A derivation of a field vanishes on its prime field, and $\mathbb{C}$ is algebraic over $\mathbb{R}$, so for $z\in\mathbb{C}$ with minimal polynomial $p$ one has $0=D(p(z))=p'(z)D(z)$ with $p'(z)\neq0$, whence $D(z)=0$. The two restrictions are therefore zero and $D=0$. The complex case is the same computation read over $\mathbb{C}$.
 
-**Corollary (no exponential of a derivation, no adjoint action).** The Lie algebra of the automorphism group of $\mathbb{B}^{\mathrm{red}}$ is zero, so the automorphism group is a discrete group of order eight with no continuous part; the adjoint map $\mathrm{ad}$ of the algebra into its own endomorphisms is identically zero, the algebra being commutative and therefore abelian as a Lie algebra.
+**Corollary (no exponential of a derivation, no adjoint action).** The Lie algebra of the automorphism group of $\mathbb{B}_{\mathrm{red}}$ is zero, so the automorphism group is a discrete group of order eight with no continuous part; the adjoint map $\mathrm{ad}$ of the algebra into its own endomorphisms is identically zero, the algebra being commutative and therefore abelian as a Lie algebra.
 
 **Remark (the contrast with the biquaternion algebra).** For the biquaternion algebra the derivations are the inner ones and the derivation space has complex dimension three, which is the Lie algebra of the automorphism group; here the derivation space is zero and the automorphism group is finite. The difference is exactly the difference between a simple algebra and a direct product: the derivation space of $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ is the direct sum of the derivation spaces of the factors, and each factor is a field.
 
@@ -126,14 +126,14 @@ The reduced biquaternion algebra is the direct product $\mathbb{C}\Pi_+\oplus\ma
 | ${}_{\mathrm{ts}}$ | the tessarine sign, the exchange $Q_{+}\leftrightarrow Q_{-}$ of the two factors, $Q_{\blacktriangledown}\mapsto-Q_{\blacktriangledown}$ |
 | ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$ | the star, the conjugation of both coordinates |
 | $\tau$ | the idempotent conjugation $Q_{+}\Pi_++Q_{-}\Pi_-\mapsto\bar Q_{+}\Pi_++Q_{-}\Pi_-$, $i\mapsto-ij$ |
-| $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}^{\mathrm{red}})$ | the automorphism group over $\mathbb{R}$, dihedral of order eight |
-| $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}})$ | the automorphism group over $\mathbb{C}$, of order two, generated by ${}_{\mathrm{ts}}$ |
-| $\operatorname{Der}(\mathbb{B}^{\mathrm{red}})$ | the derivation space, $\{0\}$ over $\mathbb{R}$ and over $\mathbb{C}$ |
+| $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}_{\mathrm{red}})$ | the automorphism group over $\mathbb{R}$, dihedral of order eight |
+| $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}_{\mathrm{red}})$ | the automorphism group over $\mathbb{C}$, of order two, generated by ${}_{\mathrm{ts}}$ |
+| $\operatorname{Der}(\mathbb{B}_{\mathrm{red}})$ | the derivation space, $\{0\}$ over $\mathbb{R}$ and over $\mathbb{C}$ |
 | $D(\breve Q_{1}\breve Q_{2})=D(\breve Q_{1})\breve Q_{2}+\breve Q_{1}D(\breve Q_{2})$ | the Leibniz rule defining a derivation |
 
 ## Further Reading
 
-- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication, the idempotents and the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication, the idempotents and the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the bar, the tessarine sign, the star and the flat.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the minimal two-sided ideals that an automorphism permutes.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the units whose inner automorphisms are all trivial.

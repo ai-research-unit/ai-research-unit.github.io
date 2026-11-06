@@ -97,7 +97,7 @@ $$
 \bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{-1} = \mathcal{T}^{\alpha}_{\alpha(a)^{-1},\,\alpha(b)^{-1}} .
 $$
 
-Hence the signed sandwiches form a subgroup of the bijections of $G$, isomorphic to the semidirect product $G \rtimes (G \times G^{\mathrm{opp}})$ in which the first factor acts on the second by $\alpha$; in particular every signed sandwich is a bijection.
+Hence the signed sandwiches form a subgroup of the bijections of $G$, isomorphic to the semidirect product $G \rtimes (G \times G_{\mathrm{opp}})$ in which the first factor acts on the second by $\alpha$; in particular every signed sandwich is a bijection.
 
 **Proof.** For the composition, $\mathcal{T}^{\alpha}_{a,b}\bigl(\mathcal{T}^{\alpha}_{c,d}(x)\bigr) = a\,\alpha(c\alpha(x)d)\,b = a\,\alpha(c)\,\alpha^2(x)\,\alpha(d)\,b = a\alpha(c)\,x\,\alpha(d)b$, since $\alpha$ is an automorphism. For the inverse, composing $\mathcal{T}^{\alpha}_{a,b}$ with $\mathcal{T}^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ gives $\mathcal{T}^{\alpha}_{a\alpha(\alpha(a)^{-1}),\,\alpha(\alpha(b)^{-1})b} = \mathcal{T}^{\alpha}_{a a^{-1},\, b^{-1}b} = \mathcal{T}^{\alpha}_{e,e}$ using $\alpha^2 = \mathrm{id}$.
 

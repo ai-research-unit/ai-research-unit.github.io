@@ -42,7 +42,7 @@ So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant,
 
 **The improved tensor.** For a scalar the canonical tensor is not traceless even for the massless action at the conformal coupling; adding the improvement term
 $$
-T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\xi^2 ,
+T_{\mathrm{imp},\mu\nu} = T_{\mathrm{can},\mu\nu} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\xi^2 ,
 \qquad
 \zeta=\frac{d-2}{4(d-1)},
 $$
@@ -148,13 +148,13 @@ where $O$ is the operator multiplying the coupling. The relation is standard (th
 
 ## The Chiral Pair and the Mass
 
-**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}^{\mathrm{sp}}_L$ is the $-1$ part and $\tilde{Ξ}^{\mathrm{sp}}_R$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
+**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{\mathrm{sp},L}$ is the $-1$ part and $\tilde{Ξ}_{\mathrm{sp},R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
 $$
 \tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\,\partial R_k},
 $$
 where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_Q$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box$. Both identities are derived forms, read from the multiplication of the units.
 
-**The mass.** The mass term is the right multiplication $\tilde{Ξ}^{\mathrm{sp}}\mapsto m\,\tilde{Ξ}^{\mathrm{sp}}(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}^{\mathrm{sp}}_L$ into a multiple of $\tilde{Ξ}^{\mathrm{sp}}_R$ and $\tilde{Ξ}^{\mathrm{sp}}_R$ into a multiple of $\tilde{Ξ}^{\mathrm{sp}}_L$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
+**The mass.** The mass term is the right multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$, the frame's timelike cell up to the scalar $m$. The chirality cell multiplies on the right as well, and the two cells anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{\mathrm{sp},L}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},R}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ into a multiple of $\tilde{Ξ}_{\mathrm{sp},L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality cell, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
 
 The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
@@ -228,7 +228,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $Q_t=i c r'_t$, $Q_k=x_k$ | The material reading; the substitution is carried by $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{M}_-$, $Q_t=i c r'_t$ and $Q_k=x_k$, so $\partial/\partial R_t=\partial/\partial i c r'_t$ |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | The chiral pair, the massive dynamics of the field |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
@@ -236,8 +236,8 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
 | $\operatorname{tr}(\tilde Q\mapsto a\tilde Q b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}(\tilde Q\mapsto\tilde Q)=4$ |
-| $\tilde{Ξ}^{\mathrm{sp}}\mapsto m\,\tilde{Ξ}^{\mathrm{sp}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
-| $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
+| $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\,\tilde{Ξ}_{\mathrm{sp}}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
+| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 
 ## Further Reading

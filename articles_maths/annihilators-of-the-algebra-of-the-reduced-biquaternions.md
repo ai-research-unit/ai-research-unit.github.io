@@ -22,7 +22,7 @@ The article also reads the **two-sided annihilator of the structure**, the set o
 
 **The left and the right annihilators of an element are equal, because the multiplication is commutative.**
 
-**Definition.** For $\breve Q_{1}\in\mathbb{B}^{\mathrm{red}}$,
+**Definition.** For $\breve Q_{1}\in\mathbb{B}_{\mathrm{red}}$,
 $$
 \operatorname{Ann}(\breve Q_{1})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\}
 $$
@@ -63,7 +63,7 @@ and each is a complex line of real dimension two.
 
 **The annihilator of $0$ is the whole algebra, and the annihilator of the set of all zero divisors is $\{0\}$.**
 
-**Theorem.** $\operatorname{Ann}(0)=\mathbb{B}^{\mathrm{red}}$, and $\operatorname{Ann}(\mathcal{N}\cup\{0\})=\{0\}$, where $\mathcal{N}$ is the null cone.
+**Theorem.** $\operatorname{Ann}(0)=\mathbb{B}_{\mathrm{red}}$, and $\operatorname{Ann}(\mathcal{N}\cup\{0\})=\{0\}$, where $\mathcal{N}$ is the null cone.
 
 *Proof.* $0\cdot \breve Q_{2}=0$ for every $\breve Q_{2}$, so the annihilator of $0$ is the whole algebra. If $\breve Q_{2}$ annihilates every zero divisor, then in particular $\breve Q_{2}\Pi_+=0$ and $\breve Q_{2}\Pi_-=0$; expanding $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$ gives $Q_{2+}=Q_{2-}=0$, so $\breve Q_{2}=0$.
 
@@ -73,10 +73,10 @@ and each is a complex line of real dimension two.
 
 **Definition.** The **two-sided annihilator of the structure** is
 $$
-\operatorname{Ann}(\mathbb{B}^{\mathrm{red}})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\ \text{for all }\breve Q_{1}\in\mathbb{B}^{\mathrm{red}}\}.
+\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\ \text{for all }\breve Q_{1}\in\mathbb{B}_{\mathrm{red}}\}.
 $$
 
-**Theorem (the structure's annihilator is trivial).** $\operatorname{Ann}(\mathbb{B}^{\mathrm{red}})=\{0\}$.
+**Theorem (the structure's annihilator is trivial).** $\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{0\}$.
 
 *Proof.* Take $\breve Q_{1}=1$, the unit: $1\cdot \breve Q_{2}=\breve Q_{2}$, so $\breve Q_{2}$ in the annihilator satisfies $\breve Q_{2}=0$. Conversely $0$ is annihilated by everything. The triviality is exactly the existence of a two-sided unit (*Introduction to the Algebra of the Reduced Biquaternions*), and it is the reason the interesting annihilators of this article are the per-element ones and not the structure's.
 
@@ -91,15 +91,15 @@ $$
 | unit, $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ | $\{0\}$ | $0$ |
 | $Q_{+}\Pi_+$, $Q_{+}\neq0$ | $\mathbb{C}\Pi_-$ | $2$ |
 | $Q_{-}\Pi_-$, $Q_{-}\neq0$ | $\mathbb{C}\Pi_+$ | $2$ |
-| $0$ | $\mathbb{B}^{\mathrm{red}}$ | $4$ |
+| $0$ | $\mathbb{B}_{\mathrm{red}}$ | $4$ |
 
-**Theorem (the four ideals).** The set $\{\operatorname{Ann}(\breve Q):\breve Q\in\mathbb{B}^{\mathrm{red}}\}$ is $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}^{\mathrm{red}}\}$, which is the set of all ideals of the algebra, and it is **ordered by inclusion** as the two chains $\{0\}\subset\mathbb{C}\Pi_+\subset\mathbb{B}^{\mathrm{red}}$ and $\{0\}\subset\mathbb{C}\Pi_-\subset\mathbb{B}^{\mathrm{red}}$, which share their two ends.
+**Theorem (the four ideals).** The set $\{\operatorname{Ann}(\breve Q):\breve Q\in\mathbb{B}_{\mathrm{red}}\}$ is $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}_{\mathrm{red}}\}$, which is the set of all ideals of the algebra, and it is **ordered by inclusion** as the two chains $\{0\}\subset\mathbb{C}\Pi_+\subset\mathbb{B}_{\mathrm{red}}$ and $\{0\}\subset\mathbb{C}\Pi_-\subset\mathbb{B}_{\mathrm{red}}$, which share their two ends.
 
-*Proof.* The table is read from the three theorems above. The ideals of the algebra are the four displayed (*Zero Divisors of the Algebra of the Reduced Biquaternions*, §*The Maximal Ideals*). The two lines are incomparable and both contain $\{0\}$ and are contained in $\mathbb{B}^{\mathrm{red}}$.
+*Proof.* The table is read from the three theorems above. The ideals of the algebra are the four displayed (*Zero Divisors of the Algebra of the Reduced Biquaternions*, §*The Maximal Ideals*). The two lines are incomparable and both contain $\{0\}$ and are contained in $\mathbb{B}_{\mathrm{red}}$.
 
-**Corollary (the annihilator of the annihilator).** $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}^{\mathrm{red}}$, that of $Q_{+}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{-}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.
+**Corollary (the annihilator of the annihilator).** $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}_{\mathrm{red}}$, that of $Q_{+}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{-}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.
 
-*Proof.* $\operatorname{Ann}(\mathbb{B}^{\mathrm{red}})=\{0\}$ and $\operatorname{Ann}(\{0\})=\mathbb{B}^{\mathrm{red}}$ by the definition; and $\operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+$ and $\operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-$ are the corollary above. Reading the table twice reproduces the two lines.
+*Proof.* $\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{0\}$ and $\operatorname{Ann}(\{0\})=\mathbb{B}_{\mathrm{red}}$ by the definition; and $\operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+$ and $\operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-$ are the corollary above. Reading the table twice reproduces the two lines.
 
 ## Summary
 
@@ -111,9 +111,9 @@ a complex line of real dimension two; the annihilator of $0$ is the whole algebr
 
 The **two-sided annihilator of the structure** is trivial,
 $$
-\operatorname{Ann}(\mathbb{B}^{\mathrm{red}})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\ \text{for all }\breve Q_{1}\}=\{0\},
+\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\ \text{for all }\breve Q_{1}\}=\{0\},
 $$
-because the algebra is unital; and the three readings of the phrase — the annihilator of the ring, the annihilator of the set of zero divisors and the common annihilator of the maximal ideals — all give $\{0\}$. The set of annihilators of the elements is the set of the four ideals of the algebra, $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}^{\mathrm{red}}\}$, ordered by inclusion with the two lines incomparable; and the double annihilator returns the line, the algebra or the zero ideal according to the table.
+because the algebra is unital; and the three readings of the phrase — the annihilator of the ring, the annihilator of the set of zero divisors and the common annihilator of the maximal ideals — all give $\{0\}$. The set of annihilators of the elements is the set of the four ideals of the algebra, $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}_{\mathrm{red}}\}$, ordered by inclusion with the two lines incomparable; and the double annihilator returns the line, the algebra or the zero ideal according to the table.
 
 ## Summary of Notation
 
@@ -122,9 +122,9 @@ because the algebra is unital; and the three readings of the phrase — the anni
 | $\operatorname{Ann}(\breve Q_{1})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\}$ | the annihilator of an element, the left and the right coinciding |
 | $\operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-$ | the annihilator of a nonzero element of the first line |
 | $\operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+$ | the annihilator of a nonzero element of the second line |
-| $\operatorname{Ann}(0)=\mathbb{B}^{\mathrm{red}}$ | the annihilator of zero |
-| $\operatorname{Ann}(\mathbb{B}^{\mathrm{red}})=\{0\}$ | the two-sided annihilator of the structure |
-| $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}^{\mathrm{red}}\}$ | the four ideals, the values of the annihilator |
+| $\operatorname{Ann}(0)=\mathbb{B}_{\mathrm{red}}$ | the annihilator of zero |
+| $\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{0\}$ | the two-sided annihilator of the structure |
+| $\{0,\mathbb{C}\Pi_+,\mathbb{C}\Pi_-,\mathbb{B}_{\mathrm{red}}\}$ | the four ideals, the values of the annihilator |
 
 ## Further Reading
 

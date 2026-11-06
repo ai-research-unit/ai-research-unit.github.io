@@ -157,17 +157,17 @@ Two properties of the solution matter for what follows. It is **static** and **s
 
 ### The Field of a Moving Source
 
-It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G^{\mathrm{ret}}(r_x)={\delta(r'_{t,2}-r'_t+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|/c)}/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(r'_t)\,\vec e_x+y_s(r'_t)\,\vec e_y+z_s(r'_t)\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
+It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G_{\mathrm{ret}}(r_x)={\delta(r'_{t,2}-r'_t+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|/c)}/(4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(r'_t)\,\vec e_x+y_s(r'_t)\,\vec e_y+z_s(r'_t)\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
 
 $$
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
 \qquad
-R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{t,\mathrm{ret}})|,\quad
+R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{\mathrm{ret},t})|,\quad
 \vec\beta=\frac{\vec v_s}{c},\quad
-\vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{t,\mathrm{ret}})}{R},
+\vec u=\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(r'_{\mathrm{ret},t})}{R},
 $$
 
-evaluated at the retarded time $r'_{t,\mathrm{ret}}=r'_t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
+evaluated at the retarded time $r'_{\mathrm{ret},t}=r'_t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
 
 ## The Field Energy and the Stress–Energy
 
@@ -377,7 +377,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $G_\mu=\exp(-\mu r)/(4\pi r)$ | Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-\mu r)/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$ |
-| $\vec\beta$, $R$, $r'_{t,\mathrm{ret}}$ | Source velocity over $c$, retarded distance, retarded time |
+| $\vec\beta$, $R$, $r'_{\mathrm{ret},t}$ | Source velocity over $c$, retarded distance, retarded time |
 | $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12\mu^2\xi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |

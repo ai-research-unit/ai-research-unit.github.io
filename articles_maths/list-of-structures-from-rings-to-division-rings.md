@@ -43,14 +43,14 @@ The witness for the first step is recorded also in *List of Non-Commutative Ring
 | $A_1(k)$ | Ore domain | a domain that is not a division ring | *Quotients of the Tensor Algebra* |
 | $R\langle x_1, \dots, x_n\rangle$ | non-commutative domain | not Ore | *Tensor Powers and the Free Algebra* |
 | $k[G]$, $G$ torsion-free | non-commutative domain | no zero divisors | *Non-Commutative Domains* |
-| $\mathbb{B}^{\mathrm{spl}}$ | ring | zero divisors, so not a domain | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{B}_{\mathrm{spl}}$ | ring | zero divisors, so not a domain | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{B}$ | ring | zero divisors, so not a domain; simple | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $M_2(\mathbb{R})$ | ring | zero divisors | *Matrix Algebras* |
 | $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | field | the top rung, reached from the commutative side | *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers* |
 | a number field $K$ | field | the top rung; $\mathcal{O}_K$ is its domain of integers | *Algebraic Number Theory* |
 | $\mathbb{F}_p$, $\mathbb{F}_q$ | field | finite, hence commutative by Wedderburn's little theorem | *Finite Fields* |
 
-The biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split-biquaternions $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ are the two eight-dimensional relatives of $\mathbb{H}$ that lie at the bottom rung: both acquire zero divisors, and neither is a domain. The biquaternions are simple, so they have no nontrivial two-sided ideals, but they are not division rings; this is the first point at which the loss of the norm's definiteness is visible in the ladder.
+The biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split-biquaternions $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ are the two eight-dimensional relatives of $\mathbb{H}$ that lie at the bottom rung: both acquire zero divisors, and neither is a domain. The biquaternions are simple, so they have no nontrivial two-sided ideals, but they are not division rings; this is the first point at which the loss of the norm's definiteness is visible in the ladder.
 
 ## Why Commutativity Is a Separate Branch
 
@@ -103,7 +103,7 @@ A catalogue denotes its structures and objects by name rather than by symbol. Th
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The real quaternions; the standard non-commutative division ring |
-| $\mathbb{B}^{\mathrm{spl}}$ | The split-biquaternions, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | The split-biquaternions, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\mathbb{B}$ | The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\mathbb{O}$, $\mathbb{S}$ | The octonions and the sedenions; not rings |
 | $M_2(\mathbb{R})$, $M_n(R)$ | Matrix rings |

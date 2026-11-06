@@ -244,9 +244,9 @@ so its kernel is $\{0\}$ and the continuous coordinate of a positive element is 
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q^2$, definite | $\sqrt{N} = \lvert q\rvert$, positive real | $\operatorname{sgn}q \in \{\pm1\}$ | scale, compact sign (rotor and phase together, discrete) | two components, $\mathbb{R}_{>0}\times O(1)$ |
 | $\mathbb{C}$ | $u^2+v^2$, definite | $\sqrt{N}$, positive real | $\exp(i\theta)$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | connected, $\mathbb{R}_{>0}\times \mathrm{U}(1)$ |
-| $\mathbb{C}^{\mathrm{spl}}$ | $u^2-v^2$, indefinite | $\sqrt{\lvert N\rvert}$, positive real | $\exp(\phi j)$ or $j\exp(\phi j)$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
+| $\mathbb{C}_{\mathrm{spl}}$ | $u^2-v^2$, indefinite | $\sqrt{\lvert N\rvert}$, positive real | $\exp(\phi j)$ or $j\exp(\phi j)$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
 
-The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{C}^{\mathrm{spl}}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.
+The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{C}_{\mathrm{spl}}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.
 
 ## Summary
 

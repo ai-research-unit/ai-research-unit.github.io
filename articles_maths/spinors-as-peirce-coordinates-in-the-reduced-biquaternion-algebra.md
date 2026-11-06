@@ -38,7 +38,7 @@ equivalently the single nonzero scalar $\breve Q_{+}$ or $\breve Q_{-}$.
 
 ## No Chirality
 
-A chiral split of a column requires two columns of the same row, one for each sign of a grading. Here each row has only one nonzero entry, so there is nothing to split. The two rows belong to the two factors of $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$; they are not two chiralities of one spinor.
+A chiral split of a column requires two columns of the same row, one for each sign of a grading. Here each row has only one nonzero entry, so there is nothing to split. The two rows belong to the two factors of $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$; they are not two chiralities of one spinor.
 
 **The element is not a two-component spinor.** The pair $(\breve Q_{+},\breve Q_{-})$ has two components, but it is the element of the algebra, not a column. Calling it a spinor would identify the element with one of its columns, which the decomposition does not do.
 
@@ -48,7 +48,7 @@ The family is a single unordered pair, with no continuous parameter: the only no
 
 ## What a Spinor Is Not
 
-A spinor is not an element of $\mathbb{B}^{\mathrm{red}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.
+A spinor is not an element of $\mathbb{B}_{\mathrm{red}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.
 
 ## Summary
 

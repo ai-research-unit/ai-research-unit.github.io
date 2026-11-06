@@ -55,7 +55,7 @@ so every element of the symmetry group is a unitary operator of the form; conver
 
 **Proof.** The invariance of the form under $g$ is $h(gu, gv) = h(u,v)$, that is $h(u, g^{*}gv) = h(u,v)$ for all $u,v$, hence $g^{*}g = \operatorname{id}$ by non-degeneracy; then $g^{*} = g^{-1}$. Conversely a unitary operator satisfies $h(Tu,Tv) = h(u,T^{*}Tv) = h(u,v)$, so it is an isometry, and the set of unitary operators is exactly the isometry group, *Isometries and Orthogonal Transformations* and *The Unitary and Symplectic Groups*.
 
-**Corollary.** For the orthogonal group of a quadratic form the adjoint is the transpose-adjoint, $T^{*} = J^{-1}T^{\mathrm{tr}}J$, and for the unitary group of a Hermitian form it is the conjugate transpose, $T^{*} = J^{-1}T^{\dagger}J$; in both cases the symmetry operators are the operators with $T^{*}T = \operatorname{id}$.
+**Corollary.** For the orthogonal group of a quadratic form the adjoint is the transpose-adjoint, $T^{*} = J^{-1}T_{\mathrm{tr}}J$, and for the unitary group of a Hermitian form it is the conjugate transpose, $T^{*} = J^{-1}T^{\dagger}J$; in both cases the symmetry operators are the operators with $T^{*}T = \operatorname{id}$.
 
 **Proof.** The matrix formula of the adjoint in a basis in which the form has the matrix $J$, read in the two cases.
 
@@ -113,7 +113,7 @@ because $\rho(\sigma(g)) = \rho(g)^{-1}$ is equivalent to $\rho(g)\rho(\sigma(g)
 
 ## Worked Cases
 
-**Example (the orthogonal group).** Let $h = Q$ be a quadratic form of signature $(n,m)$ and $G = O(n,m)$; the adjoint is $T^{*} = J^{-1}T^{\mathrm{tr}}J$, the symmetry operators satisfy $g^{*} = g^{-1}$, and the operator involution is the transpose-adjoint of *The Orthogonal Group and the Involutive Automorphism*. The Cartan involution $\mathrm{J}(g) = JgJ^{-1}$ of the elements is **not** the adjoint in general: for the defining representation, $\mathrm{J}(g)$ is the identity on the block-diagonal $K$ and $-1$ on $\mathfrak{n}$, while $g^{*} = g^{-1}$; the two coincide only for the elements with $JgJ^{-1} = g^{-1}$, which is a proper subset unless the group is abelian.
+**Example (the orthogonal group).** Let $h = Q$ be a quadratic form of signature $(n,m)$ and $G = O(n,m)$; the adjoint is $T^{*} = J^{-1}T_{\mathrm{tr}}J$, the symmetry operators satisfy $g^{*} = g^{-1}$, and the operator involution is the transpose-adjoint of *The Orthogonal Group and the Involutive Automorphism*. The Cartan involution $\mathrm{J}(g) = JgJ^{-1}$ of the elements is **not** the adjoint in general: for the defining representation, $\mathrm{J}(g)$ is the identity on the block-diagonal $K$ and $-1$ on $\mathfrak{n}$, while $g^{*} = g^{-1}$; the two coincide only for the elements with $JgJ^{-1} = g^{-1}$, which is a proper subset unless the group is abelian.
 
 **Example (the unitary group).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = \mathrm{U}(n,m)$; the adjoint is the conjugate transpose $T^{*} = J^{-1}T^{\dagger}J$, and the symmetry operators satisfy $g^{*} = g^{-1}$. The Cartan involution $\mathrm{J}(g) = JgJ^{-1}$ of the elements does **not** satisfy $\rho(\mathrm{J}(g)) = \rho(g)^{*}$ in the defining representation: the condition is $JgJ^{-1} = g^{-1}$, which holds only for the elements of order two that commute with $J$, and it fails for a rotation of the definite part through an angle other than $0$ or $\pi$. The defining representation of a nonabelian unitary group is therefore not a `*`-representation for the Cartan involution, which is the generic behaviour of the theorem.
 

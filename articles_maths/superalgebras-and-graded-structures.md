@@ -24,7 +24,7 @@ such that $A_p A_q \subseteq A_{p+q}$ for $p, q \in \mathbb{Z}/2\mathbb{Z}$; the
 Every $\mathbb{Z}$-grading induces a $\mathbb{Z}/2$-grading by reduction modulo $2$: the even part is the sum of the even-degree pieces and the odd part the sum of the odd-degree pieces. Thus $\Lambda(M) = \bigoplus_n \Lambda^n M$ is a superalgebra with
 
 $$
-\Lambda(M)_0 = \Lambda^{\mathrm{ev}}(M) = \bigoplus_{n \text{ even}} \Lambda^n M, \qquad \Lambda(M)_1 = \Lambda^{\mathrm{odd}}(M) = \bigoplus_{n \text{ odd}} \Lambda^n M.
+\Lambda(M)_0 = \Lambda_{\mathrm{ev}}(M) = \bigoplus_{n \text{ even}} \Lambda^n M, \qquad \Lambda(M)_1 = \Lambda_{\mathrm{odd}}(M) = \bigoplus_{n \text{ odd}} \Lambda^n M.
 $$
 
 **Definition.** For a homogeneous element $a$ of a superalgebra, its **parity** is $|a| = 0$ if $a$ is even and $|a| = 1$ if $a$ is odd. Every element is a sum of a unique even and a unique odd part, and a statement about homogeneous elements extends by linearity; in particular $(-1)^{|a|}$ means $+1$ on the even part and $-1$ on the odd part.
@@ -175,7 +175,7 @@ $$
 
 **Proof.** For odd $a, b$ the sign in $ab = -ba$ is $-1$, and the product $ab$ is even, so it commutes with $c$: $(ab)c = c(ab)$. Associativity and the anticommutativity of odd elements give $cba = (cb)a = -(bc)a = -a(bc) = -(ab)c$, which is $abc = -cba$; the last identity is the same computation with the letters cyclically permuted.
 
-**Example.** In $\Lambda(M)$ with $M$ odd, the even part $\Lambda^{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.
+**Example.** In $\Lambda(M)$ with $M$ odd, the even part $\Lambda_{\mathrm{ev}}(M)$ is commutative, and the product of two odd elements is even and behaves accordingly: for $x, y, z \in M$ one has $(x \wedge y) \wedge z = z \wedge (x \wedge y)$ in the even part.
 
 ### The Super Trace and the Berezinian
 

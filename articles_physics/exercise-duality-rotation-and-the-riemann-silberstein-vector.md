@@ -284,34 +284,34 @@ On a pure rotation the candidate works.
 
 **Solution (b).** Take now the pure boost along $\vec e_z$ with the parent's boost biquaternion
 $$
-\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec e_z,
-\qquad \tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
+\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec e_z,
+\qquad \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 which is Hermitian, $\tilde U^{*} = \tilde U$. For simplicity set $\epsilon = \mu = 1$, so $c = 1$ and $\vec H = \vec B$, and take the same transverse electric field $\vec E = E_0 \vec e_x$, $\vec B = 0$, so $\tilde F = iE_0 \vec e_x$. The standard boost formulas of the parent give
 $$
 \vec E_{\mathrm D} = \gamma\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b
-= \cosh\theta^{\mathrm{rpd}}\,E_0\,\vec e_x,
+= \cosh\theta_{\mathrm{rpd}}\,E_0\,\vec e_x,
 $$
 $$
 \vec B_{\mathrm D} = \gamma\left(\vec B - \frac{1}{c^2}\vec v_b\times\vec E\right) - \frac{\gamma-1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b
-= -\sinh\theta^{\mathrm{rpd}}\,E_0\,\vec e_y,
+= -\sinh\theta_{\mathrm{rpd}}\,E_0\,\vec e_y,
 $$
-using $\gamma = \cosh\theta^{\mathrm{rpd}}$ and $\gamma v_b = \sinh\theta^{\mathrm{rpd}}$, so
+using $\gamma = \cosh\theta_{\mathrm{rpd}}$ and $\gamma v_b = \sinh\theta_{\mathrm{rpd}}$, so
 $$
-\tilde F_{\mathrm D} = i\cosh\theta^{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta^{\mathrm{rpd}}\,E_0\,\vec e_y .
+\tilde F_{\mathrm D} = i\cosh\theta_{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta_{\mathrm{rpd}}\,E_0\,\vec e_y .
 $$
 The candidate conjugation gives instead
 $$
 \tilde U\,\vec e_x\,\tilde U^{*} = \vec e_x, \qquad
 \tilde U\,\vec e_y\,\tilde U^{*} = \vec e_y,
 \qquad
-\tilde U\,\vec e_z\,\tilde U^{*} = \cosh\theta^{\mathrm{rpd}}\,\vec e_z - i\sinh\theta^{\mathrm{rpd}},
+\tilde U\,\vec e_z\,\tilde U^{*} = \cosh\theta_{\mathrm{rpd}}\,\vec e_z - i\sinh\theta_{\mathrm{rpd}},
 $$
 (so the candidate does not even preserve the pure-vector subspace on $\vec e_z$, producing a scalar part), hence
 $$
 \tilde U\,\tilde F\,\tilde U^{*} = iE_0\,\vec e_x,
 $$
-which is **not** $\tilde F_{\mathrm D}$: the transverse electric field is left unchanged, with no $\cosh\theta^{\mathrm{rpd}}$ enhancement and no induced magnetic field. The natural candidate fails on a boost. This is the sharpest form of the gap: the four-vector conjugation, which is the only Lorentz action the parents exhibit, is not the Lorentz action of the field strength.
+which is **not** $\tilde F_{\mathrm D}$: the transverse electric field is left unchanged, with no $\cosh\theta_{\mathrm{rpd}}$ enhancement and no induced magnetic field. The natural candidate fails on a boost. This is the sharpest form of the gap: the four-vector conjugation, which is the only Lorentz action the parents exhibit, is not the Lorentz action of the field strength.
 
 **Solution (c).** For the same boost, the transformation
 $$
@@ -319,14 +319,14 @@ $$
 $$
 does reproduce the standard result:
 $$
-\tilde U^{\natural}\,\vec e_x\,\tilde U = \cosh\theta^{\mathrm{rpd}}\,\vec e_x - i\sinh\theta^{\mathrm{rpd}}\,\vec e_y,
+\tilde U^{\natural}\,\vec e_x\,\tilde U = \cosh\theta_{\mathrm{rpd}}\,\vec e_x - i\sinh\theta_{\mathrm{rpd}}\,\vec e_y,
 \qquad
-\tilde U^{\natural}\,\vec e_y\,\tilde U = \cosh\theta^{\mathrm{rpd}}\,\vec e_y + i\sinh\theta^{\mathrm{rpd}}\,\vec e_x,
+\tilde U^{\natural}\,\vec e_y\,\tilde U = \cosh\theta_{\mathrm{rpd}}\,\vec e_y + i\sinh\theta_{\mathrm{rpd}}\,\vec e_x,
 $$
 so
 $$
 \boxed{\;\tilde U^{\natural}\,\tilde F\,\tilde U
-= i\cosh\theta^{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta^{\mathrm{rpd}}\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
+= i\cosh\theta_{\mathrm{rpd}}\,E_0\,\vec e_x + \sinh\theta_{\mathrm{rpd}}\,E_0\,\vec e_y = \tilde F_{\mathrm D}\;}.
 $$
 The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the rotation of part (a) is reproduced by $\tilde U\tilde F\tilde U^{*}$. The two cases require different orderings, so no single one of these adjoint actions, with the parents' rotor conventions, is the Lorentz transformation law of $\tilde F$. The parent gives no law at all, and its claim that the two pieces "transform independently under the Lorentz group" is therefore unverified: the abstract representation-theoretic statement that the self-dual and anti-self-dual pieces carry the two complex conjugate three-dimensional representations is standard, but the biquaternion realization of that statement is not supplied, and the obvious candidate for it is false. Determining the correct biquaternion action — plausibly an adjoint action conjugated by a fixed linear map on the field-strength space — is left open. **This is the gap this exercise reports in its parent.**
 
@@ -356,7 +356,7 @@ which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i
 
 Duality preserves the Hermitian form: the energy density $W$ and the Poynting vector $\vec S$ are unchanged. It rotates the biquaternion norm by the doubled phase, $\langle\tilde F\rangle_{\natural}\mapsto \exp(-2i\theta)\langle\tilde F\rangle_{\natural}$, so the pair $(I_1,2cI_2)$ rotates by $2\theta$ and $I_1^2 + 4c^2I_2^2$ is invariant. It is a symmetry of the source-free Maxwell equations and of the biquaternionic equation $\tilde\nabla\tilde F = 0$; with electric sources alone it is not a symmetry, because at $\theta = \pi/2$ the rotation turns the electric source into a term of magnetic form. The discrete ancestor of the rotation is the classical substitution symmetry — interchange of $\vec E$ and $\vec H$ together with $\epsilon$ and $\mu$ — which the absence of magnetic charge also breaks; dropping that condition makes the symmetry exact.
 
-One defect in the parent is recorded, and one earlier reading of it is withdrawn. The withdrawn reading took the parent's $\bar{\vec N}$ for the quaternion conjugate and concluded that the displayed duality transformation was inconsistent; with $\bar{\cdot}$ the coefficient conjugate and ${}^{\natural}$ the quaternion one, the object transforming as $\exp(+i\theta)$ is the coefficient conjugate $\vec E - ic\vec B$, which the parent now writes $\vec N^*$, and no contradiction arises. The defect that remains is notational in a smaller sense and physical in the larger: $\vec N$ alone already carries the six real field components, so $\vec N$ and $\vec N^*$ are not independent, and the independence the parent attributes to the two halves holds only after complexification. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde U\tilde F\tilde U^{*}$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\theta^{\mathrm{rpd}}$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde U^{-1}\tilde F\tilde U$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
+One defect in the parent is recorded, and one earlier reading of it is withdrawn. The withdrawn reading took the parent's $\bar{\vec N}$ for the quaternion conjugate and concluded that the displayed duality transformation was inconsistent; with $\bar{\cdot}$ the coefficient conjugate and ${}^{\natural}$ the quaternion one, the object transforming as $\exp(+i\theta)$ is the coefficient conjugate $\vec E - ic\vec B$, which the parent now writes $\vec N^*$, and no contradiction arises. The defect that remains is notational in a smaller sense and physical in the larger: $\vec N$ alone already carries the six real field components, so $\vec N$ and $\vec N^*$ are not independent, and the independence the parent attributes to the two halves holds only after complexification. Second, the parent's claim that the two pieces transform independently under the Lorentz group has no biquaternion realization in the article; the natural candidate $\tilde F\mapsto\tilde U\tilde F\tilde U^{*}$ works for a pure spatial rotation but fails on a pure boost, where it leaves a transverse electric field unchanged instead of producing the $\cosh\theta_{\mathrm{rpd}}$ enhancement and the induced magnetic field. The boost is reproduced by $\tilde U^{-1}\tilde F\tilde U$, and the two cases require different orderings, so the correct general law is left open. This is the gap the exercise reports.
 
 ## Summary of Notation
 

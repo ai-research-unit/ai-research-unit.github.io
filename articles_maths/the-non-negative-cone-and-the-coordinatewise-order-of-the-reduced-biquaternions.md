@@ -26,7 +26,7 @@ $$
 $$
 the difference being taken in the four real coordinates and the requirement being that the four of them be non-negative.
 
-**Theorem (the cone axioms).** The set $\mathcal{C}_{+}$ is a convex cone: it is closed under addition and under multiplication by non-negative reals, it contains the origin, and it is **pointed**, $\mathcal{C}_{+}\cap(-\mathcal{C}_{+})=\{0\}$; it is **generating**, $\mathcal{C}_{+}-\mathcal{C}_{+}=\mathbb{B}^{\mathrm{red}}$; and it is **closed** with nonempty interior, the interior being the set of the elements all of whose four coordinates are strictly positive.
+**Theorem (the cone axioms).** The set $\mathcal{C}_{+}$ is a convex cone: it is closed under addition and under multiplication by non-negative reals, it contains the origin, and it is **pointed**, $\mathcal{C}_{+}\cap(-\mathcal{C}_{+})=\{0\}$; it is **generating**, $\mathcal{C}_{+}-\mathcal{C}_{+}=\mathbb{B}_{\mathrm{red}}$; and it is **closed** with nonempty interior, the interior being the set of the elements all of whose four coordinates are strictly positive.
 
 *Proof.* The coordinatewise sum and the non-negative scaling of non-negative quadruples stay non-negative, which is the cone axioms. The pointedness is that a quadruple whose four entries and whose four negatives are non-negative is zero. The generation is that every element is the difference of its coordinatewise positive part and its coordinatewise negative part, $\breve Q=Q_{\mathrm{pos}}-Q_{\mathrm{neg}}$ with both parts in $\mathcal{C}_{+}$. The closedness is the closedness of the four half-lines; the interior is the set of the quadruples whose four coordinates are strictly positive, which is open and contained in the cone. The vocabulary is that of *Ordered Vector Spaces and the Order Unit*.
 
@@ -83,7 +83,7 @@ is **strictly positive**, all four of its coordinates being $1$, and it is a **z
 
 *Proof.* The product is $1+i+j+ij$ by the multiplication table, with coordinates $(1,1,1,1)$, all strictly positive; and in the idempotent coordinates $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}=(1+i)+(1+i)=2(1+i)$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}=0$, so the element is $Q_{+}\Pi_+$, of vanishing reduced norm $\langle\cdot\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=0$, hence a zero divisor. The element lies in the interior of the cone and on the null cone at once.
 
-**Remark (the order does not see the zero divisors).** In an ordered algebra the positive cone is meant to be compatible with the product, so that the positive elements have positive products and no interior point is a zero divisor. Here the strictly positive element $(1+i)(1+j)$ is a zero divisor, so **no** multiplicative compatibility can hold, and the coordinatewise order cannot be the order of an ordered algebra. The failure is not a defect of a particular cone: the zero divisors of $\mathbb{B}^{\mathrm{red}}$ are a union of two real planes through the origin, and the orthant of any real basis meets one of them in a set of full dimension.
+**Remark (the order does not see the zero divisors).** In an ordered algebra the positive cone is meant to be compatible with the product, so that the positive elements have positive products and no interior point is a zero divisor. Here the strictly positive element $(1+i)(1+j)$ is a zero divisor, so **no** multiplicative compatibility can hold, and the coordinatewise order cannot be the order of an ordered algebra. The failure is not a defect of a particular cone: the zero divisors of $\mathbb{B}_{\mathrm{red}}$ are a union of two real planes through the origin, and the orthant of any real basis meets one of them in a set of full dimension.
 
 ## The Cone and the Forms
 
@@ -132,7 +132,7 @@ $$
 
 **The multiplications that carry the cone into itself are exactly those by the elements of the split-complex orthant, and they are fewer than the non-negative elements.**
 
-**Definition.** A linear map $S$ of $\mathbb{B}^{\mathrm{red}}$ is **positive** for the cone $\mathcal{C}_{+}$ when $X\succeq0$ implies $SX\succeq0$, that is $S(\mathcal{C}_{+})\subseteq\mathcal{C}_{+}$.
+**Definition.** A linear map $S$ of $\mathbb{B}_{\mathrm{red}}$ is **positive** for the cone $\mathcal{C}_{+}$ when $X\succeq0$ implies $SX\succeq0$, that is $S(\mathcal{C}_{+})\subseteq\mathcal{C}_{+}$.
 
 **Theorem (the general ordered-algebra statement).** In an ordered algebra $A$ whose cone is closed under the involutive congruences, the left and the right multiplications by a positive element are positive operators, $a\succeq0\implies L_{a}\succeq0$ and $R_{a}\succeq0$.
 

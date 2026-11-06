@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article treats the split-complex numbers as a **linear space**: the underlying real plane, the split complex structure that multiplication by $j$ puts on it, the separation of the real-linear self-maps into those that commute with that structure and those that anticommute with it, the self-reading of $\mathbb{C}^{\mathrm{spl}}$ as a module over the ring $\mathbb{C}^{\mathrm{spl}}$ rather than over a field of scalars, and the idempotent coordinates in which the plane is a pair of real lines. The map $J$, multiplication by $j$, satisfies $J^2=+\mathrm{id}$: it is a **product structure**, an involution with two real eigenspaces, and not a complex structure, which would satisfy $J^2=-\mathrm{id}$ and have no real eigenvector. This one sign is the whole difference from the complex reading and the source of everything that follows in the category.
+This article treats the split-complex numbers as a **linear space**: the underlying real plane, the split complex structure that multiplication by $j$ puts on it, the separation of the real-linear self-maps into those that commute with that structure and those that anticommute with it, the self-reading of $\mathbb{C}_{\mathrm{spl}}$ as a module over the ring $\mathbb{C}_{\mathrm{spl}}$ rather than over a field of scalars, and the idempotent coordinates in which the plane is a pair of real lines. The map $J$, multiplication by $j$, satisfies $J^2=+\mathrm{id}$: it is a **product structure**, an involution with two real eigenspaces, and not a complex structure, which would satisfy $J^2=-\mathrm{id}$ and have no real eigenvector. This one sign is the whole difference from the complex reading and the source of everything that follows in the category.
 
-The realification of $\mathbb{C}^{\mathrm{spl}}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category. The two products on the space are *The Two Products of the Split-Complexoid Space*; the distinguished subspaces are *Split-Complexoid Subspaces*, and their decomposition and comparison is *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid*. The submodules of the self-reading are the ideals of the ring, owned by *Ideals and Peirce Decomposition of the Split-Complex Algebra*. No form and no norm is developed here: the norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$, its multiplicativity and the invertibility it decides are *Norm and Invertibility in the General Split-Complex Algebra*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, both below this article in this category.
+The realification of $\mathbb{C}_{\mathrm{spl}}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category. The two products on the space are *The Two Products of the Split-Complexoid Space*; the distinguished subspaces are *Split-Complexoid Subspaces*, and their decomposition and comparison is *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid*. The submodules of the self-reading are the ideals of the ring, owned by *Ideals and Peirce Decomposition of the Split-Complex Algebra*. No form and no norm is developed here: the norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$, its multiplicativity and the invertibility it decides are *Norm and Invertibility in the General Split-Complex Algebra*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, both below this article in this category.
 
 ## The Vector Space over $\mathbb{R}$
 
-**Definition.** The **real reading** of $\mathbb{C}^{\mathrm{spl}}$ is the underlying additive group with the scalar domain $\mathbb{R}$: the split-complex numbers form a real vector space of dimension two, on the basis
+**Definition.** The **real reading** of $\mathbb{C}_{\mathrm{spl}}$ is the underlying additive group with the scalar domain $\mathbb{R}$: the split-complex numbers form a real vector space of dimension two, on the basis
 
 $$
 1, \quad j, \qquad j^2 = +1 ,
@@ -16,12 +16,12 @@ $$
 
 and every element is the unique real combination $Q = q + jq'$. The additive group is the plane $\mathbb{R}^2$ with coordinates $(q,q')$, and the two basis elements are linearly independent over $\mathbb{R}$.
 
-The dimension is two. It is the first of the two readings, and it must be told from the second, the self-reading over $\mathbb{C}^{\mathrm{spl}}$, in which the set is a module of rank one over a ring rather than a vector space over a field: read over $\mathbb{R}$ the scalars are the reals and the dimension is two, read over $\mathbb{C}^{\mathrm{spl}}$ the scalars are the split-complex numbers and the rank is one.
+The dimension is two. It is the first of the two readings, and it must be told from the second, the self-reading over $\mathbb{C}_{\mathrm{spl}}$, in which the set is a module of rank one over a ring rather than a vector space over a field: read over $\mathbb{R}$ the scalars are the reals and the dimension is two, read over $\mathbb{C}_{\mathrm{spl}}$ the scalars are the split-complex numbers and the rank is one.
 
 | scalars | structure | size | basis |
 |---|---|---|---|
 | $\mathbb{R}$ | vector space, scalars a field | dimension $2$ | $1,\ j$ |
-| $\mathbb{C}^{\mathrm{spl}}$ | module, scalars a ring with zero divisors | rank $1$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | module, scalars a ring with zero divisors | rank $1$ | $1$ |
 
 Both readings are of the same set, and the second is the stronger structure: every real scalar is a split-complex one, and a submodule of the self-reading is in particular a real subspace.
 
@@ -30,7 +30,7 @@ Both readings are of the same set, and the second is the stronger structure: eve
 Multiplication by $j$ is a real-linear map of the plane,
 
 $$
-J : \mathbb{C}^{\mathrm{spl}} \longrightarrow \mathbb{C}^{\mathrm{spl}}, \qquad J(Q) = jQ ,
+J : \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{C}_{\mathrm{spl}}, \qquad J(Q) = jQ ,
 $$
 
 whose values on the basis are $J(1)=j$ and $J(j)=j^2=1$, so that its matrix in the basis $\{1,j\}$ is
@@ -43,7 +43,7 @@ $$
 
 **Proof.** $J^2(Q)=j(jQ)=j^2Q=Q$ since $j^2=+1$, so $J^2=\mathrm{id}$. The diagonal entries of the matrix sum to $0$ and its determinant is $-1$. The vectors $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ satisfy $j\Pi_1=\Pi_1$ and $j\Pi_2=-\Pi_2$, so in the basis $\{\Pi_1,\Pi_2\}$ the matrix of $J$ is $\operatorname{diag}(1,-1)$.
 
-So $J$ is a **product structure**: a linear involution with two real eigenspaces, the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$. On $\mathbb{C}$ the corresponding map is the multiplication by the imaginary unit, $J_\mathbb{C}(z)=iz$, with
+So $J$ is a **product structure**: a linear involution with two real eigenspaces, the real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$. On $\mathbb{C}$ the corresponding map is the multiplication by the imaginary unit, $J_\mathbb{C}(z)=iz$, with
 
 $$
 J_\mathbb{C}^2 = -\mathrm{id},
@@ -51,21 +51,21 @@ $$
 
 a **complex structure**: it has no real eigenvalue, no real eigenvector, and its two eigenvalues $+i$ and $-i$ are exchanged by conjugation. The two maps differ by one sign, and that sign is the whole difference of the two readings:
 
-| | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| | $\mathbb{C}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 |---|---|---|
 | generator | $i$, $i^2=-1$ | $j$, $j^2=+1$ |
 | structure $J$ | complex structure | product structure |
 | $J^2$ | $-\mathrm{id}$ | $+\mathrm{id}$ |
 | real eigenvalues | none | $+1,-1$ |
-| invariant lines | none over $\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ |
+| invariant lines | none over $\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ |
 
-**Remark (the contrast with complexification).** The complex field is obtained from $\mathbb{R}$ by adjoining a root of $x^2+1$, which is irreducible over $\mathbb{R}$, and the result is again a field. Adjoining instead a root of $x^2-1$ gives $\mathbb{C}^{\mathrm{spl}}$, and $x^2-1=(x-1)(x+1)$ already splits over $\mathbb{R}$: the new element $j$ is not a new kind of number but a reflection with $j^2=+1$, and the algebra it generates is $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, not a field. Consistently, extending the scalars of $\mathbb{C}^{\mathrm{spl}}$ to $\mathbb{C}$ gives $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{C}\times\mathbb{C}$, a product of two fields and not a field, whereas extending $\mathbb{C}$ itself gives $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ as well. There is no complexification of $\mathbb{C}^{\mathrm{spl}}$ that stays a field; the split algebra carries its own scalar extension, and it is developed in *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category.
+**Remark (the contrast with complexification).** The complex field is obtained from $\mathbb{R}$ by adjoining a root of $x^2+1$, which is irreducible over $\mathbb{R}$, and the result is again a field. Adjoining instead a root of $x^2-1$ gives $\mathbb{C}_{\mathrm{spl}}$, and $x^2-1=(x-1)(x+1)$ already splits over $\mathbb{R}$: the new element $j$ is not a new kind of number but a reflection with $j^2=+1$, and the algebra it generates is $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, not a field. Consistently, extending the scalars of $\mathbb{C}_{\mathrm{spl}}$ to $\mathbb{C}$ gives $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}_{\mathrm{spl}}\cong\mathbb{C}\times\mathbb{C}$, a product of two fields and not a field, whereas extending $\mathbb{C}$ itself gives $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ as well. There is no complexification of $\mathbb{C}_{\mathrm{spl}}$ that stays a field; the split algebra carries its own scalar extension, and it is developed in *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category.
 
 ## Linear and Antilinear Maps
 
 The two readings of the plane are separated by one operator, and the separation is a commutation condition.
 
-**Proposition (linearity is the commutator with $J$).** A real-linear map $T$ of $\mathbb{C}^{\mathrm{spl}}$ is $\mathbb{C}^{\mathrm{spl}}$-linear exactly when it commutes with $J$, and conjugate-linear over $\mathbb{C}^{\mathrm{spl}}$ exactly when it anticommutes with it:
+**Proposition (linearity is the commutator with $J$).** A real-linear map $T$ of $\mathbb{C}_{\mathrm{spl}}$ is $\mathbb{C}_{\mathrm{spl}}$-linear exactly when it commutes with $J$, and conjugate-linear over $\mathbb{C}_{\mathrm{spl}}$ exactly when it anticommutes with it:
 
 $$
 \boxed{\; T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT \;}.
@@ -83,21 +83,21 @@ and equality or opposite equality fixes the entries:
 
 | class | condition | matrix shape | trace | meaning |
 |---|---|---|---|---|
-| $\mathbb{C}^{\mathrm{spl}}$-linear | $TJ = JT$ | $\begin{pmatrix} p & u \\ u & p \end{pmatrix}$ | $2p$ | multiplication by $p+ju$ |
-| conjugate-linear | $TJ = -JT$ | $\begin{pmatrix} p & u \\ -u & -p \end{pmatrix}$ | $0$ | composition of the conjugation with a $\mathbb{C}^{\mathrm{spl}}$-linear map |
+| $\mathbb{C}_{\mathrm{spl}}$-linear | $TJ = JT$ | $\begin{pmatrix} p & u \\ u & p \end{pmatrix}$ | $2p$ | multiplication by $p+ju$ |
+| conjugate-linear | $TJ = -JT$ | $\begin{pmatrix} p & u \\ -u & -p \end{pmatrix}$ | $0$ | composition of the conjugation with a $\mathbb{C}_{\mathrm{spl}}$-linear map |
 
-The commuting shape is symmetric with equal diagonal entries, and it is exactly the image of multiplication by the element $p+ju$, the regular matrix of *Split-Complex Regular Element Representation*; the two classes are the $\mathbb{C}^{\mathrm{spl}}$-linear and the conjugate-linear maps of the plane.
+The commuting shape is symmetric with equal diagonal entries, and it is exactly the image of multiplication by the element $p+ju$, the regular matrix of *Split-Complex Regular Element Representation*; the two classes are the $\mathbb{C}_{\mathrm{spl}}$-linear and the conjugate-linear maps of the plane.
 
-**Remark.** Composing the conjugation $\kappa(Q)=\bar Q$, whose matrix is $\operatorname{diag}(1,-1)$, with a $\mathbb{C}^{\mathrm{spl}}$-linear map on either side gives a conjugate-linear map, and every conjugate-linear map arises so: $\kappa$ anticommutes with $J$, so $\kappa T$ and $T\kappa$ anticommute with $J$ when $T$ commutes with it. The real-linear self-maps form $\operatorname{End}_\mathbb{R}(\mathbb{C}^{\mathrm{spl}})\cong M_2(\mathbb{R})$, of real dimension four, and the $\mathbb{C}^{\mathrm{spl}}$-linear ones form the two-dimensional subspace $M_2(\mathbb{C}^{\mathrm{spl}})=\{qI+q'J\}$, the image of $\mathbb{C}^{\mathrm{spl}}$.
+**Remark.** Composing the conjugation $\kappa(Q)=\bar Q$, whose matrix is $\operatorname{diag}(1,-1)$, with a $\mathbb{C}_{\mathrm{spl}}$-linear map on either side gives a conjugate-linear map, and every conjugate-linear map arises so: $\kappa$ anticommutes with $J$, so $\kappa T$ and $T\kappa$ anticommute with $J$ when $T$ commutes with it. The real-linear self-maps form $\operatorname{End}_\mathbb{R}(\mathbb{C}_{\mathrm{spl}})\cong M_2(\mathbb{R})$, of real dimension four, and the $\mathbb{C}_{\mathrm{spl}}$-linear ones form the two-dimensional subspace $M_2(\mathbb{C}_{\mathrm{spl}})=\{qI+q'J\}$, the image of $\mathbb{C}_{\mathrm{spl}}$.
 
-## The Self-Interpretation over $\mathbb{C}^{\mathrm{spl}}$
+## The Self-Interpretation over $\mathbb{C}_{\mathrm{spl}}$
 
-Read over the ring $\mathbb{C}^{\mathrm{spl}}$ itself, the set is a **free module of rank one** on the single basis element $1$: every element is $Q\cdot 1$ for a unique $Q\in\mathbb{C}^{\mathrm{spl}}$, and the module is $\mathbb{C}^{\mathrm{spl}}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.
+Read over the ring $\mathbb{C}_{\mathrm{spl}}$ itself, the set is a **free module of rank one** on the single basis element $1$: every element is $Q\cdot 1$ for a unique $Q\in\mathbb{C}_{\mathrm{spl}}$, and the module is $\mathbb{C}_{\mathrm{spl}}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.
 
-The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,
+The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,
 
 $$
-\boxed{\; 0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{C}^{\mathrm{spl}} \;},
+\boxed{\; 0, \quad \mathbb{R}\Pi_1, \quad \mathbb{R}\Pi_2, \quad \mathbb{C}_{\mathrm{spl}} \;},
 $$
 
 the two idempotent lines and the two trivial submodules; each idempotent line is closed under multiplication by every scalar, and it is minimal. This is the two-dimensional case of the ideal theory owned by *Ideals and Peirce Decomposition of the Split-Complex Algebra*, and the submodules are the same two lines as the subspaces of *Split-Complexoid Subspaces*: the module theory and the subspace theory meet at the idempotent lines.
@@ -121,29 +121,29 @@ $$
 So the plane is a **pair of real lines**,
 
 $$
-\boxed{\; \mathbb{C}^{\mathrm{spl}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2 \;},
+\boxed{\; \mathbb{C}_{\mathrm{spl}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2 \;},
 $$
 
 and in these coordinates the structure is diagonal, $J(q_+\Pi_1+q_-\Pi_2)=q_+\Pi_1-q_-\Pi_2$, hence $J=\operatorname{diag}(1,-1)$. The two coordinate lines are exactly its two eigenspaces, and the coordinates in which they separate are the reason $J$ is a product structure and not a complex structure. The same coordinates carry the multiplication, which is componentwise, and they are developed as a representation in *Split-Complex Two-Component Element Representation*.
 
 ## Summary
 
-The split-complex numbers form a real vector space of dimension two on the basis $1,j$, and they also form a free module of rank one over the ring $\mathbb{C}^{\mathrm{spl}}$ itself. Multiplication by $j$ is the real-linear map $J$ of matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, an involution with $J^2=+\mathrm{id}$, diagonalisable over $\mathbb{R}$ with eigenvalues $+1$ and $-1$; it is a **product structure**, against the complex structure $J_\mathbb{C}^2=-\mathrm{id}$ of the complex field, and the difference is the sign of the square of the generator. The algebra is the split analogue of $\mathbb{C}$: adjoining a root of the split polynomial $x^2-1$ gives a product of two copies of $\mathbb{R}$ and not a field, and its scalar extension to $\mathbb{C}$ is likewise not a field.
+The split-complex numbers form a real vector space of dimension two on the basis $1,j$, and they also form a free module of rank one over the ring $\mathbb{C}_{\mathrm{spl}}$ itself. Multiplication by $j$ is the real-linear map $J$ of matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, an involution with $J^2=+\mathrm{id}$, diagonalisable over $\mathbb{R}$ with eigenvalues $+1$ and $-1$; it is a **product structure**, against the complex structure $J_\mathbb{C}^2=-\mathrm{id}$ of the complex field, and the difference is the sign of the square of the generator. The algebra is the split analogue of $\mathbb{C}$: adjoining a root of the split polynomial $x^2-1$ gives a product of two copies of $\mathbb{R}$ and not a field, and its scalar extension to $\mathbb{C}$ is likewise not a field.
 
-A real-linear map of the plane is $\mathbb{C}^{\mathrm{spl}}$-linear exactly when it commutes with $J$, and conjugate-linear exactly when it anticommutes. The commuting maps have the block shape $\begin{pmatrix}p&u\\u&p\end{pmatrix}$ and are the multiplications by an element of $\mathbb{C}^{\mathrm{spl}}$; the anticommuting ones have the shape $\begin{pmatrix}p&u\\-u&-p\end{pmatrix}$, are of trace zero, and are the compositions of the conjugation with a $\mathbb{C}^{\mathrm{spl}}$-linear map. Read over the ring, the module of rank one has for submodules the two idempotent lines and the two trivial ones, and it fails to be a vector space for the same reason the ring fails to be a field, the presence of zero divisors. In the idempotent coordinates $Q=q_+\Pi_1+q_-\Pi_2$ the plane is the direct sum of the two real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and $J=\operatorname{diag}(1,-1)$.
+A real-linear map of the plane is $\mathbb{C}_{\mathrm{spl}}$-linear exactly when it commutes with $J$, and conjugate-linear exactly when it anticommutes. The commuting maps have the block shape $\begin{pmatrix}p&u\\u&p\end{pmatrix}$ and are the multiplications by an element of $\mathbb{C}_{\mathrm{spl}}$; the anticommuting ones have the shape $\begin{pmatrix}p&u\\-u&-p\end{pmatrix}$, are of trace zero, and are the compositions of the conjugation with a $\mathbb{C}_{\mathrm{spl}}$-linear map. Read over the ring, the module of rank one has for submodules the two idempotent lines and the two trivial ones, and it fails to be a vector space for the same reason the ring fails to be a field, the presence of zero divisors. In the idempotent coordinates $Q=q_+\Pi_1+q_-\Pi_2$ the plane is the direct sum of the two real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and $J=\operatorname{diag}(1,-1)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | general element, $q=\operatorname{Re}Q$, $q'=\operatorname{Im}Q$ |
 | $\bar Q=q-jq'$ | the conjugation |
 | $J(Q)=jQ$ | the real-linear product structure, $J^2=+\mathrm{id}$, matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ |
-| $TJ=JT$ / $TJ=-JT$ | $\mathbb{C}^{\mathrm{spl}}$-linearity / conjugate-linearity of a real-linear $T$ |
+| $TJ=JT$ / $TJ=-JT$ | $\mathbb{C}_{\mathrm{spl}}$-linearity / conjugate-linearity of a real-linear $T$ |
 | $\begin{pmatrix}p&u\\u&p\end{pmatrix}$, $\begin{pmatrix}p&u\\-u&-p\end{pmatrix}$ | the two block shapes of the two classes |
 | $\kappa(Q)=\bar Q$ | the conjugation as a real-linear map, matrix $\operatorname{diag}(1,-1)$ |
-| $M_2(\mathbb{C}^{\mathrm{spl}})=\{qI+q'J\}$ | the $\mathbb{C}^{\mathrm{spl}}$-linear maps, image of the regular representation |
+| $M_2(\mathbb{C}_{\mathrm{spl}})=\{qI+q'J\}$ | the $\mathbb{C}_{\mathrm{spl}}$-linear maps, image of the regular representation |
 | $\Pi_1=\tfrac12(1+j)$, $\Pi_2=\tfrac12(1-j)$ | the idempotents, eigenvectors of $J$ |
 | $q_+=q+q'$, $q_-=q-q'$ | idempotent coordinates, $Q=q_+\Pi_1+q_-\Pi_2$ |
 | $\mathbb{R}\Pi_1,\mathbb{R}\Pi_2$ | the two coordinate lines, the submodules of the self-reading |

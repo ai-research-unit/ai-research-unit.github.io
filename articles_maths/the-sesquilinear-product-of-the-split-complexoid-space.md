@@ -8,7 +8,7 @@ $$
 Q_1 \star Q_2 = Q_1\bar Q_2 ,
 $$
 
-the product whose second slot is read through the conjugation, and it is the **general plain sesquilinear product** of the space: $\mathbb{C}^{\mathrm{spl}}$-linear in the first argument, $\bar\cdot$-semilinear in the second, additive in each. This article builds the **sesqualgebra** it defines. Unlike the plain product it is neither associative nor two-sidedly unital, and the structure that survives is the one that does not need associativity: the right unit alone, the associator, the ternary product, the two families of one-sided multiplications, the sandwich, the adjoint with respect to the Hermitian form, and the commutator with its symmetrisation.
+the product whose second slot is read through the conjugation, and it is the **general plain sesquilinear product** of the space: $\mathbb{C}_{\mathrm{spl}}$-linear in the first argument, $\bar\cdot$-semilinear in the second, additive in each. This article builds the **sesqualgebra** it defines. Unlike the plain product it is neither associative nor two-sidedly unital, and the structure that survives is the one that does not need associativity: the right unit alone, the associator, the ternary product, the two families of one-sided multiplications, the sandwich, the adjoint with respect to the Hermitian form, and the commutator with its symmetrisation.
 
 The results are simpler than in the four-dimensional case and sharper than in the complex one. The product has a right unit and no left one, and its associator is
 
@@ -16,7 +16,7 @@ $$
 (Q_1 \star Q_2) \star Q_3 - Q_1 \star (Q_2 \star Q_3) = Q_1\bar Q_2\,(\bar Q_3 - Q_3),
 $$
 
-which vanishes exactly when the third factor is real; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}^{\mathrm{spl}}$ an algebraic $J^{*}$-algebra. The right multiplications $R_Q$ generate the opposite monoid of the multiplicative monoid of $\mathbb{C}^{\mathrm{spl}}$, while the left ones $L_Q$ do not close; the sandwich $X \mapsto Q_1X\bar Q_2$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2 - q_1q'_2)j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $q_1q_2 - q'_1q'_2$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
+which vanishes exactly when the third factor is real; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}_{\mathrm{spl}}$ an algebraic $J^{*}$-algebra. The right multiplications $R_Q$ generate the opposite monoid of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$, while the left ones $L_Q$ do not close; the sandwich $X \mapsto Q_1X\bar Q_2$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2 - q_1q'_2)j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $q_1q_2 - q'_1q'_2$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
 
 ## The Product and Its Two Slots
 
@@ -25,7 +25,7 @@ which vanishes exactly when the third factor is real; the ternary product $\{Q_1
 **Definition.** The **sesquilinear multiplication** of the split-complex space is
 
 $$
-\star \; : \; \mathbb{C}^{\mathrm{spl}} \times \mathbb{C}^{\mathrm{spl}} \longrightarrow \mathbb{C}^{\mathrm{spl}}, \qquad
+\star \; : \; \mathbb{C}_{\mathrm{spl}} \times \mathbb{C}_{\mathrm{spl}} \longrightarrow \mathbb{C}_{\mathrm{spl}}, \qquad
 (Q_1,Q_2) \longmapsto Q_1 \star Q_2 = Q_1\bar Q_2 ,
 $$
 
@@ -37,16 +37,16 @@ $$
 
 ### The Two Scalar Rules
 
-**Proposition.** The multiplication is additive in each variable; it is $\mathbb{C}^{\mathrm{spl}}$-linear in the first and $\bar\cdot$-semilinear in the second:
+**Proposition.** The multiplication is additive in each variable; it is $\mathbb{C}_{\mathrm{spl}}$-linear in the first and $\bar\cdot$-semilinear in the second:
 
 $$
 (\lambda Q_1) \star Q_2 = \lambda\,(Q_1 \star Q_2), \qquad
-Q_1 \star (\lambda Q_2) = \bar\lambda\,(Q_1 \star Q_2), \qquad \lambda \in \mathbb{C}^{\mathrm{spl}}.
+Q_1 \star (\lambda Q_2) = \bar\lambda\,(Q_1 \star Q_2), \qquad \lambda \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
-**Proof.** Additivity and the first rule are the distributivity of $\mathbb{C}^{\mathrm{spl}}$ in the first slot, which is not conjugated. For the second, $Q_1 \star (\lambda Q_2) = Q_1\overline{\lambda Q_2} = Q_1\bar\lambda\bar Q_2 = \bar\lambda\,Q_1\bar Q_2$, using the multiplicativity of the conjugation and the commutativity of $\mathbb{C}^{\mathrm{spl}}$.
+**Proof.** Additivity and the first rule are the distributivity of $\mathbb{C}_{\mathrm{spl}}$ in the first slot, which is not conjugated. For the second, $Q_1 \star (\lambda Q_2) = Q_1\overline{\lambda Q_2} = Q_1\bar\lambda\bar Q_2 = \bar\lambda\,Q_1\bar Q_2$, using the multiplicativity of the conjugation and the commutativity of $\mathbb{C}_{\mathrm{spl}}$.
 
-These are the two axioms of a sesquilinear product over the ring with involution $(\mathbb{C}^{\mathrm{spl}},\bar\cdot)$ and nothing else: neither associativity nor commutativity nor a two-sided unit is assumed. One word on the base, because on $\mathbb{C}^{\mathrm{spl}}$ the rules are less visible than over $\mathbb{C}$: the base field is $\mathbb{R}$ and the conjugation is $\mathbb{R}$-linear, so over $\mathbb{R}$ alone the map $Q_1\bar Q_2$ is bilinear, and the content of "sesquilinear" is the action of the *ring* $(\mathbb{C}^{\mathrm{spl}},\bar\cdot)$ on its regular module. The second rule is the statement that the second slot is twisted by the ring involution; it is the only place where an involution enters.
+These are the two axioms of a sesquilinear product over the ring with involution $(\mathbb{C}_{\mathrm{spl}},\bar\cdot)$ and nothing else: neither associativity nor commutativity nor a two-sided unit is assumed. One word on the base, because on $\mathbb{C}_{\mathrm{spl}}$ the rules are less visible than over $\mathbb{C}$: the base field is $\mathbb{R}$ and the conjugation is $\mathbb{R}$-linear, so over $\mathbb{R}$ alone the map $Q_1\bar Q_2$ is bilinear, and the content of "sesquilinear" is the action of the *ring* $(\mathbb{C}_{\mathrm{spl}},\bar\cdot)$ on its regular module. The second rule is the statement that the second slot is twisted by the ring involution; it is the only place where an involution enters.
 
 ### The Multiplication Table
 
@@ -69,7 +69,7 @@ The table is not the multiplication table of the algebra: on the plain product o
 
 **Corollary.** The multiplication has **no two-sided unit**. An element $E$ with $E \star Q = Q$ for all $Q$ would give $E = 1$ from $Q$ real, and then $1 \star Q = Q$ for all $Q$ would force the conjugation to be the identity; so no element is simultaneously a left and a right unit.
 
-The one-sided unit is the mark of a derived operation: the left action by $1$ is the involution, and the right action is the identity. It is not a defect of $\mathbb{C}^{\mathrm{spl}}$ but the consequence of the involution sitting in the second slot, exactly as the general theory of sesqualgebras proves for the standard example. It has a further consequence that recurs below: since $1$ is a right unit, no nonzero element annihilates the whole space on the left, for $Q \star 1 = Q$; the product is faithful on the left.
+The one-sided unit is the mark of a derived operation: the left action by $1$ is the involution, and the right action is the identity. It is not a defect of $\mathbb{C}_{\mathrm{spl}}$ but the consequence of the involution sitting in the second slot, exactly as the general theory of sesqualgebras proves for the standard example. It has a further consequence that recurs below: since $1$ is a right unit, no nonzero element annihilates the whole space on the left, for $Q \star 1 = Q$; the product is faithful on the left.
 
 ## The Associator and the Ternary Product
 
@@ -81,7 +81,7 @@ $$
 [Q_1,Q_2,Q_3] = (Q_1 \star Q_2) \star Q_3 - Q_1 \star (Q_2 \star Q_3).
 $$
 
-**Theorem.** For all $Q_1,Q_2,Q_3 \in \mathbb{C}^{\mathrm{spl}}$,
+**Theorem.** For all $Q_1,Q_2,Q_3 \in \mathbb{C}_{\mathrm{spl}}$,
 
 $$
 \boxed{\;
@@ -89,9 +89,9 @@ $$
 \;},
 $$
 
-an element of $\mathbb{C}^{\mathrm{spl}}$ that vanishes exactly when $Q_1 = 0$, or $Q_2 = 0$, or $Q_3$ is real.
+an element of $\mathbb{C}_{\mathrm{spl}}$ that vanishes exactly when $Q_1 = 0$, or $Q_2 = 0$, or $Q_3$ is real.
 
-**Proof.** The first bracket is $(Q_1\bar Q_2)\bar Q_3 = Q_1\bar Q_2\bar Q_3$ and the second is $Q_1\overline{(Q_2\bar Q_3)} = Q_1\bar Q_2 Q_3$, so the difference is $Q_1\bar Q_2(\bar Q_3 - Q_3)$. The factor $\bar Q_3 - Q_3 = -2q'_{3}\,j$ vanishes exactly when $Q_3 \in \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the product $Q_1\bar Q_2$ vanishes exactly when $Q_1\bar Q_2 = 0$, which for the plain product means $Q_1 = 0$ or $Q_2 = 0$ or one of them is a zero divisor of the algebra; on the products with $Q_1\bar Q_2 \neq 0$ the associator is nonzero precisely when $Q_3$ is not real.
+**Proof.** The first bracket is $(Q_1\bar Q_2)\bar Q_3 = Q_1\bar Q_2\bar Q_3$ and the second is $Q_1\overline{(Q_2\bar Q_3)} = Q_1\bar Q_2 Q_3$, so the difference is $Q_1\bar Q_2(\bar Q_3 - Q_3)$. The factor $\bar Q_3 - Q_3 = -2q'_{3}\,j$ vanishes exactly when $Q_3 \in \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, and the product $Q_1\bar Q_2$ vanishes exactly when $Q_1\bar Q_2 = 0$, which for the plain product means $Q_1 = 0$ or $Q_2 = 0$ or one of them is a zero divisor of the algebra; on the products with $Q_1\bar Q_2 \neq 0$ the associator is nonzero precisely when $Q_3$ is not real.
 
 **Corollary.** The multiplication is **not associative**. The associativity defect is confined to the second factor's action on the third: the two groupings agree whenever the third argument is real, and differ otherwise.
 
@@ -104,7 +104,7 @@ $$
 
 and the two differ by $2j$. The associator is $[j,j,j] = 2j$.
 
-The shape of the formula is the general one for a derived operation $Q_1\bar Q_2$, with the difference $\bar Q_3 - Q_3$ of the two parities of the third factor in place of the associativity that the plain product has. It is the sesquilinear counterpart of the double product's failure, and it is confined to the sesquilinear shape: the plain product of $\mathbb{C}^{\mathrm{spl}}$ is associative.
+The shape of the formula is the general one for a derived operation $Q_1\bar Q_2$, with the difference $\bar Q_3 - Q_3$ of the two parities of the third factor in place of the associativity that the plain product has. It is the sesquilinear counterpart of the double product's failure, and it is confined to the sesquilinear shape: the plain product of $\mathbb{C}_{\mathrm{spl}}$ is associative.
 
 ### The Ternary Product and the Jordan Triple Identity
 
@@ -116,15 +116,15 @@ $$
 
 the middle slot carrying the involution and the two outer slots not.
 
-**Theorem.** The ternary product is additive in each variable, $\mathbb{C}^{\mathrm{spl}}$-linear in the first and the third and $\bar\cdot$-semilinear in the second, and it satisfies the **Jordan triple identity**
+**Theorem.** The ternary product is additive in each variable, $\mathbb{C}_{\mathrm{spl}}$-linear in the first and the third and $\bar\cdot$-semilinear in the second, and it satisfies the **Jordan triple identity**
 
 $$
 \{Q_1,Q_2,\{Q_3,Q_4,Q_5\}\} = \{\{Q_1,Q_2,Q_3\},Q_4,Q_5\} - \{Q_3,\{Q_2,Q_1,Q_4\},Q_5\} + \{Q_3,Q_4,\{Q_1,Q_2,Q_5\}\} ,
 $$
 
-so $\mathbb{C}^{\mathrm{spl}}$ with this ternary product is an **algebraic $J^{*}$-algebra**.
+so $\mathbb{C}_{\mathrm{spl}}$ with this ternary product is an **algebraic $J^{*}$-algebra**.
 
-**Proof.** The first clause is the two scalar rules read in the three slots. For the identity, expand both sides with $\{X,Y,Z\} = X\bar Y Z$: the left side is $Q_1\bar Q_2 Q_3\bar Q_4 Q_5$, and the right side is $Q_1\bar Q_2 Q_3\bar Q_4 Q_5 - Q_3\bar Q_2 Q_1\bar Q_4 Q_5 + Q_3\bar Q_4 Q_1\bar Q_2 Q_5$; the three terms are products of the six elements with the conjugation on the second factor of each triple, and the identity is the associativity of the plain product together with the commutativity of $\mathbb{C}^{\mathrm{spl}}$, which allow the terms $-Q_3\bar Q_2 Q_1\bar Q_4 Q_5$ and $+Q_3\bar Q_4 Q_1\bar Q_2 Q_5$ to cancel against the first. The verification is the model computation $xy^{*}z$ of an associative algebra with a sesquilinear involution, which is the standard example of an algebraic $J^{*}$-algebra; the general theorem is the one the general theory quotes.
+**Proof.** The first clause is the two scalar rules read in the three slots. For the identity, expand both sides with $\{X,Y,Z\} = X\bar Y Z$: the left side is $Q_1\bar Q_2 Q_3\bar Q_4 Q_5$, and the right side is $Q_1\bar Q_2 Q_3\bar Q_4 Q_5 - Q_3\bar Q_2 Q_1\bar Q_4 Q_5 + Q_3\bar Q_4 Q_1\bar Q_2 Q_5$; the three terms are products of the six elements with the conjugation on the second factor of each triple, and the identity is the associativity of the plain product together with the commutativity of $\mathbb{C}_{\mathrm{spl}}$, which allow the terms $-Q_3\bar Q_2 Q_1\bar Q_4 Q_5$ and $+Q_3\bar Q_4 Q_1\bar Q_2 Q_5$ to cancel against the first. The verification is the model computation $xy^{*}z$ of an associative algebra with a sesquilinear involution, which is the standard example of an algebraic $J^{*}$-algebra; the general theorem is the one the general theory quotes.
 
 So the ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, since the binary product is not associative, and its identities hold where the binary ones fail. The same identity holds for the same model $PQ^{*}R$ here, with the middle slot conjugated. The failure is the *associativity* of the binary product, recorded above; the ternary product repairs it.
 
@@ -132,14 +132,14 @@ So the ternary product is the binary multiplication's surviving form: it is asso
 
 ### The Two Families
 
-**Definition.** The **left** and **right multiplications** by $Q \in \mathbb{C}^{\mathrm{spl}}$ are the maps
+**Definition.** The **left** and **right multiplications** by $Q \in \mathbb{C}_{\mathrm{spl}}$ are the maps
 
 $$
 L_Q : X \mapsto Q \star X = Q\bar X, \qquad
 R_Q : X \mapsto X \star Q = X\bar Q .
 $$
 
-The right multiplication $R_Q$ is $\mathbb{C}^{\mathrm{spl}}$-linear, being a product with $Q$ and the conjugation of the fixed factor $Q$; the left multiplication $L_Q$ is $\bar\cdot$-semilinear, the conjugation falling on the variable. Special values:
+The right multiplication $R_Q$ is $\mathbb{C}_{\mathrm{spl}}$-linear, being a product with $Q$ and the conjugation of the fixed factor $Q$; the left multiplication $L_Q$ is $\bar\cdot$-semilinear, the conjugation falling on the variable. Special values:
 
 $$
 L_1 = \overline{\cdot} \quad (\text{the conjugation}), \qquad R_1 = \mathrm{id}.
@@ -155,7 +155,7 @@ $$
 R_{Q_1} \circ R_{Q_2} = R_{Q_2Q_1},
 $$
 
-and $\{R_Q : Q \in \mathbb{C}^{\mathrm{spl}}\}$ is a monoid isomorphic to the opposite monoid $(\mathbb{C}^{\mathrm{spl}},\cdot)^{\mathrm{opp}}$ via $Q \mapsto R_Q$, with identity $R_1$.
+and $\{R_Q : Q \in \mathbb{C}_{\mathrm{spl}}\}$ is a monoid isomorphic to the opposite monoid $(\mathbb{C}_{\mathrm{spl}},\cdot)_{\mathrm{opp}}$ via $Q \mapsto R_Q$, with identity $R_1$.
 
 **Proof.** $R_{Q_1}(R_{Q_2} X) = (X\bar Q_2)\bar Q_1 = X\bar Q_2\bar Q_1 = X\overline{Q_1Q_2} = R_{Q_2Q_1}(X)$, using the multiplicativity of the conjugation; the map $Q \mapsto R_Q$ is then an anti-homomorphism with $Q=1$ giving the identity.
 
@@ -165,7 +165,7 @@ $$
 L_{Q_1} \circ L_{Q_2} = M_{Q_1\bar Q_2},
 $$
 
-where $M_Q(X) = QX$ is the ordinary left multiplication. In particular $L_{Q_1} \circ L_{Q_2}$ is $\mathbb{C}^{\mathrm{spl}}$-linear, while each $L_Q$ is $\bar\cdot$-semilinear, and the product of two of them is the multiplication by $Q_1\bar Q_2$, the value of the sesquilinear product.
+where $M_Q(X) = QX$ is the ordinary left multiplication. In particular $L_{Q_1} \circ L_{Q_2}$ is $\mathbb{C}_{\mathrm{spl}}$-linear, while each $L_Q$ is $\bar\cdot$-semilinear, and the product of two of them is the multiplication by $Q_1\bar Q_2$, the value of the sesquilinear product.
 
 **Proof.** $L_{Q_1}(L_{Q_2} X) = Q_1\overline{(Q_2\bar X)} = Q_1\bar Q_2 X = M_{Q_1\bar Q_2}(X)$.
 
@@ -173,7 +173,7 @@ So the two one-sided families behave differently, and the asymmetry is the one o
 
 ### The Sandwich
 
-**Definition.** The **sesquilinear sandwich** by the parameters $Q_1, Q_2 \in \mathbb{C}^{\mathrm{spl}}$ is the map
+**Definition.** The **sesquilinear sandwich** by the parameters $Q_1, Q_2 \in \mathbb{C}_{\mathrm{spl}}$ is the map
 
 $$
 \mathcal{T}_{Q_1,Q_2} : X \longmapsto Q_1\,X\,\bar Q_2 .
@@ -185,7 +185,7 @@ $$
 \mathcal{T}_{Q_1,Q_2} = M_{Q_1} \circ R_{Q_2} = R_{Q_2} \circ M_{Q_1} ,
 $$
 
-the two orders agreeing because $\mathbb{C}^{\mathrm{spl}}$ is commutative, and it is therefore the split-complex form of the sandwich $X \mapsto Q_1X\bar Q_2$. The parameters specialise as
+the two orders agreeing because $\mathbb{C}_{\mathrm{spl}}$ is commutative, and it is therefore the split-complex form of the sandwich $X \mapsto Q_1X\bar Q_2$. The parameters specialise as
 
 $$
 \mathcal{T}_{1,1} = \mathrm{id}, \qquad \mathcal{T}_{Q_1,1} = M_{Q_1}, \qquad \mathcal{T}_{1,Q_2} = R_{Q_2}, \qquad \mathcal{T}_{Q_1,Q_2}(1) = Q_1\bar Q_2 = Q_1 \star Q_2 ;
@@ -193,7 +193,7 @@ $$
 
 the sandwich at the unit is the product, and the two families of one-sided multiplications are the two degenerate sandwiches.
 
-**Proposition.** The sandwich is $\mathbb{C}^{\mathrm{spl}}$-linear in $X$, and its value at $1$ is the sesquilinear product $Q_1 \star Q_2$. Its composite with another sandwich is again a sandwich,
+**Proposition.** The sandwich is $\mathbb{C}_{\mathrm{spl}}$-linear in $X$, and its value at $1$ is the sesquilinear product $Q_1 \star Q_2$. Its composite with another sandwich is again a sandwich,
 
 $$
 \boxed{\;
@@ -203,7 +203,7 @@ $$
 
 **Proof.** Direct substitution, using the associativity of the plain product and the multiplicativity of the conjugation: $\mathcal{T}_{Q_1,Q_2}(\mathcal{T}_{Q_3,Q_4}(X)) = Q_1(Q_3X\bar Q_4)\bar Q_2 = (Q_1Q_3)X\bar Q_4\bar Q_2 = (Q_1Q_3)X\overline{Q_2Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}(X)$.
 
-So the sandwiches form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{C}^{\mathrm{spl}}$ with itself via $(Q_1,Q_2) \mapsto \mathcal{T}_{Q_1,Q_2}$; in particular the sandwich $\mathcal{T}_{Q_1,Q_2}$ is invertible exactly when both $Q_1$ and $Q_2$ are units, with inverse $\mathcal{T}_{Q_1^{-1},Q_2^{-1}}$.
+So the sandwiches form a monoid under composition, isomorphic to the product of the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$ with itself via $(Q_1,Q_2) \mapsto \mathcal{T}_{Q_1,Q_2}$; in particular the sandwich $\mathcal{T}_{Q_1,Q_2}$ is invertible exactly when both $Q_1$ and $Q_2$ are units, with inverse $\mathcal{T}_{Q_1^{-1},Q_2^{-1}}$.
 
 ## The Hermitian Form and the Adjoints
 
@@ -213,7 +213,7 @@ $$
 \langle Q_1,Q_2\rangle_{*} = Q_1 \star Q_2 = Q_1\bar Q_2 .
 $$
 
-It is conjugate-symmetric, $\langle Q_2,Q_1\rangle_{*} = \overline{\langle Q_1,Q_2\rangle_{*}}$, $\mathbb{C}^{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second. It is the canonical form of *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category, which owns its Gram matrix, its signature, its positivity cone and its modules; here it is used only as the form that defines the adjoints. Its realified scalar part is
+It is conjugate-symmetric, $\langle Q_2,Q_1\rangle_{*} = \overline{\langle Q_1,Q_2\rangle_{*}}$, $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second. It is the canonical form of *The Hermitian Form and the Cone of the Split-Complexoid Algebra*, below this article in this category, which owns its Gram matrix, its signature, its positivity cone and its modules; here it is used only as the form that defines the adjoints. Its realified scalar part is
 
 $$
 \operatorname{Sc} \langle Q_1,Q_2\rangle_{*} = q_1q_2 - q'_1q'_2 ,
@@ -221,7 +221,7 @@ $$
 
 the symmetric bilinear form $g$ that the norm polarises, of signature $(1,1)$.
 
-**Definition (adjoint).** For a $\mathbb{C}^{\mathrm{spl}}$-linear map $T$ the **adjoint** is the $\mathbb{C}^{\mathrm{spl}}$-linear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \langle X,T^{*}Y\rangle_{*}$ for all $X,Y$; for a $\bar\cdot$-semilinear map $T$ the adjoint is the $\bar\cdot$-semilinear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \overline{\langle X,T^{*}Y\rangle_{*}}$.
+**Definition (adjoint).** For a $\mathbb{C}_{\mathrm{spl}}$-linear map $T$ the **adjoint** is the $\mathbb{C}_{\mathrm{spl}}$-linear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \langle X,T^{*}Y\rangle_{*}$ for all $X,Y$; for a $\bar\cdot$-semilinear map $T$ the adjoint is the $\bar\cdot$-semilinear map $T^{*}$ with $\langle TX,Y\rangle_{*} = \overline{\langle X,T^{*}Y\rangle_{*}}$.
 
 **Theorem.** The adjoints of the one-sided multiplications and of the sandwich are
 
@@ -267,7 +267,7 @@ $$
 Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)\,j = -2(q_1q'_2-q'_1q_2)\,j ,
 $$
 
-an element of the **split imaginary line** $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$; the coefficient $q_1q'_2-q'_1q_2$ is the determinant of the coordinate matrix $\left(\begin{smallmatrix}q_1&q'_1\\q_2&q'_2\end{smallmatrix}\right)$.
+an element of the **split imaginary line** $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$; the coefficient $q_1q'_2-q'_1q_2$ is the determinant of the coordinate matrix $\left(\begin{smallmatrix}q_1&q'_1\\q_2&q'_2\end{smallmatrix}\right)$.
 
 **Proof.** $Q_1\bar Q_2 = (q_1q_2-q'_1q'_2) + (q'_1q_2-q_1q'_2)j$ and $Q_2\bar Q_1 = (q_1q_2-q'_1q'_2) + (q_1q'_2-q'_1q_2)j$; subtracting, the real parts cancel and the split-imaginary parts add to $2(q'_1q_2-q_1q'_2)j = -2(q_1q'_2-q'_1q_2)j$.
 
@@ -286,10 +286,10 @@ The **symmetrisation** is the real scalar $g(Q_1,Q_2)$, the symmetric bilinear f
 
 **Proof.** $Q_1\bar Q_2 + Q_2\bar Q_1 = 2(q_1q_2-q'_1q'_2)$ and $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$, from the theorem above.
 
-**Theorem (the bracket).** The commutator defines an antisymmetric $\mathbb{R}$-bilinear bracket $[Q_1,Q_2] = Q_1\bar Q_2 - Q_2\bar Q_1$ on the two-dimensional real space, valued in $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and non-degenerate in the sense that its centre is $\{0\}$. With it, $\mathbb{C}^{\mathrm{spl}}$ is the two-dimensional non-abelian Lie algebra, and the **Jacobi identity** holds:
+**Theorem (the bracket).** The commutator defines an antisymmetric $\mathbb{R}$-bilinear bracket $[Q_1,Q_2] = Q_1\bar Q_2 - Q_2\bar Q_1$ on the two-dimensional real space, valued in $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and non-degenerate in the sense that its centre is $\{0\}$. With it, $\mathbb{C}_{\mathrm{spl}}$ is the two-dimensional non-abelian Lie algebra, and the **Jacobi identity** holds:
 
 $$
-[[Q_1,Q_2],Q_3] + [[Q_2,Q_3],Q_1] + [[Q_3,Q_1],Q_2] = 0 \qquad \text{for all } Q_1,Q_2,Q_3 \in \mathbb{C}^{\mathrm{spl}}.
+[[Q_1,Q_2],Q_3] + [[Q_2,Q_3],Q_1] + [[Q_3,Q_1],Q_2] = 0 \qquad \text{for all } Q_1,Q_2,Q_3 \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
 **Proof.** Antisymmetry is $[Q_2,Q_1] = Q_2\bar Q_1 - Q_1\bar Q_2 = -[Q_1,Q_2]$. Bilinearity over $\mathbb{R}$ is additivity together with $[Q_1,\lambda Q_2] = Q_1\overline{\lambda Q_2} - (\lambda Q_2)\bar Q_1 = \lambda(Q_1\bar Q_2 - Q_2\bar Q_1) = \lambda[Q_1,Q_2]$ for real $\lambda$, since $\bar\lambda = \lambda$. Write $[Q_1,Q_2] = -2\omega(Q_1,Q_2)\,j$ with the area form $\omega(Q_1,Q_2) = q_1q'_2-q'_1q_2$; since $j$ is central and $[j,Q_3] = j\bar Q_3 - Q_3\bar j = 2j\,\operatorname{Sc}(Q_3)$, the cyclic sum is
@@ -300,13 +300,13 @@ $$
 
 and the parenthesis is $q_1q'_2q_3 - q'_1q_2q_3 + q_2q'_3q_1 - q'_2q_3q_1 + q_3q'_1q_2 - q'_3q_1q_2 = 0$, the six terms cancelling in pairs. So the identity holds. The centre is the kernel of the area form, which is $\{0\}$ because $\omega$ is non-degenerate.
 
-**Remark.** The Jacobi identity is not an accident of $\mathbb{C}^{\mathrm{spl}}$ and not a coincidence of the computation. On a **two-dimensional** real space every antisymmetric bilinear bracket satisfies the identity, whatever its values: a contributing triple must repeat an argument, and the two resulting terms are opposite. The failure of the Jacobi identity is a phenomenon of dimension at least three, and the split-complex space is too small to exhibit it. What plays the role of a failed identity here is the **associator** of the binary product, $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3-Q_3)$; the ternary product repairs that, as the section above shows.
+**Remark.** The Jacobi identity is not an accident of $\mathbb{C}_{\mathrm{spl}}$ and not a coincidence of the computation. On a **two-dimensional** real space every antisymmetric bilinear bracket satisfies the identity, whatever its values: a contributing triple must repeat an argument, and the two resulting terms are opposite. The failure of the Jacobi identity is a phenomenon of dimension at least three, and the split-complex space is too small to exhibit it. What plays the role of a failed identity here is the **associator** of the binary product, $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3-Q_3)$; the ternary product repairs that, as the section above shows.
 
 ## Comparison with the Complex Case
 
 The same construction over the complex field reads:
 
-| | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| | $\mathbb{C}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 |---|---|---|
 | product | $A\bar C$, definite Hermitian | $Q_1\bar Q_2$, indefinite Hermitian |
 | symmetrisation | $ac+a'c'$, the Euclidean form | $q_1q_2-q'_1q'_2 = g$, signature $(1,1)$ |
@@ -316,15 +316,15 @@ The same construction over the complex field reads:
 | right unit | $1$, no left unit | $1$, no left unit |
 | ternary product | $A\bar C D$, Jordan triple | $Q_1\bar Q_2 Q_3$, Jordan triple |
 
-The associator, the right unit and the ternary product are the same formulas in the two cases, because they use only the associativity of the base and the multiplicativity of the conjugation. The difference is entirely in the **form** and in the **direction of the commutator**. In $\mathbb{C}$ the symmetrisation recovers the positive-definite Euclidean form $ac+a'c'$, and the commutator lies on the imaginary axis, the direction of the rotation $i$ with $i^2 = -1$; in $\mathbb{C}^{\mathrm{spl}}$ the symmetrisation recovers the indefinite form $q_1q_2-q'_1q'_2$ of signature $(1,1)$, and the commutator lies on the split imaginary line, the direction of the hyperbolic unit $j$ with $j^2 = +1$. The two signs are the same sign: the flip of the square of the unit is the flip of the definiteness of the form, because the norm and the form are built from the same product by the same conjugation.
+The associator, the right unit and the ternary product are the same formulas in the two cases, because they use only the associativity of the base and the multiplicativity of the conjugation. The difference is entirely in the **form** and in the **direction of the commutator**. In $\mathbb{C}$ the symmetrisation recovers the positive-definite Euclidean form $ac+a'c'$, and the commutator lies on the imaginary axis, the direction of the rotation $i$ with $i^2 = -1$; in $\mathbb{C}_{\mathrm{spl}}$ the symmetrisation recovers the indefinite form $q_1q_2-q'_1q'_2$ of signature $(1,1)$, and the commutator lies on the split imaginary line, the direction of the hyperbolic unit $j$ with $j^2 = +1$. The two signs are the same sign: the flip of the square of the unit is the flip of the definiteness of the form, because the norm and the form are built from the same product by the same conjugation.
 
-On $\mathbb{C}^{\mathrm{spl}}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the sandwich monoid is commutative.
+On $\mathbb{C}_{\mathrm{spl}}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the sandwich monoid is commutative.
 
 ## Summary
 
-The split-complex space carries the sesquilinear product $Q_1 \star Q_2 = Q_1\bar Q_2$, $\mathbb{C}^{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second; it is the derived operation of the algebra with its conjugation, and it is neither associative nor two-sidedly unital. The element $1$ is a right unit and not a left one, and there is no two-sided unit. The associator is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3-Q_3)$, nonzero exactly when the third factor is not real, with the witness $[j,j,j] = 2j$; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}^{\mathrm{spl}}$ an algebraic $J^{*}$-algebra.
+The split-complex space carries the sesquilinear product $Q_1 \star Q_2 = Q_1\bar Q_2$, $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second; it is the derived operation of the algebra with its conjugation, and it is neither associative nor two-sidedly unital. The element $1$ is a right unit and not a left one, and there is no two-sided unit. The associator is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3-Q_3)$, nonzero exactly when the third factor is not real, with the witness $[j,j,j] = 2j$; the ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ restores the Jordan triple identity and makes $\mathbb{C}_{\mathrm{spl}}$ an algebraic $J^{*}$-algebra.
 
-The right multiplications satisfy $R_{Q_1} \circ R_{Q_2} = R_{Q_2Q_1}$ and form the opposite monoid of $(\mathbb{C}^{\mathrm{spl}},\cdot)$; the left multiplications satisfy $L_{Q_1} \circ L_{Q_2} = M_{Q_1\bar Q_2}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $\mathcal{T}_{Q_1,Q_2} \circ \mathcal{T}_{Q_3,Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}$. With respect to the Hermitian form $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$, the adjoints are $M_Q^{*} = M_{\bar Q}$, $R_Q^{*} = M_Q$, $L_Q^{*} = L_Q$ and $\mathcal{T}_{Q_1,Q_2}^{*} = \mathcal{T}_{Q_2,Q_1}$; the two projections onto the idempotent lines are mutually adjoint.
+The right multiplications satisfy $R_{Q_1} \circ R_{Q_2} = R_{Q_2Q_1}$ and form the opposite monoid of $(\mathbb{C}_{\mathrm{spl}},\cdot)$; the left multiplications satisfy $L_{Q_1} \circ L_{Q_2} = M_{Q_1\bar Q_2}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $\mathcal{T}_{Q_1,Q_2} \circ \mathcal{T}_{Q_3,Q_4} = \mathcal{T}_{Q_1Q_3,Q_2Q_4}$. With respect to the Hermitian form $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$, the adjoints are $M_Q^{*} = M_{\bar Q}$, $R_Q^{*} = M_Q$, $L_Q^{*} = L_Q$ and $\mathcal{T}_{Q_1,Q_2}^{*} = \mathcal{T}_{Q_2,Q_1}$; the two projections onto the idempotent lines are mutually adjoint.
 
 The commutator is $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$, an element of the split imaginary line, and its halves are the scalar form $g(Q_1,Q_2) = q_1q_2-q'_1q'_2$ and the element $(q'_1q_2-q_1q'_2)j$. The bracket is the two-dimensional non-abelian Lie algebra and its Jacobi identity holds, automatically in two dimensions; the obstruction of the binary product is its associator, and the ternary product removes it. Against the complex case the formulas of the associator, unit and ternary product coincide, while the form is definite there and indefinite here and the commutator lies on the rotation axis there and on the hyperbolic line here.
 
@@ -332,12 +332,12 @@ The commutator is $Q_1\bar Q_2 - Q_2\bar Q_1 = 2(q'_1q_2-q_1q'_2)j$, an element 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split-complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split-complex algebra |
 | $Q = q + jq'$ | General split-complex number |
 | $Q_1 \star Q_2 = Q_1\bar Q_2$ | The sesquilinear product |
 | $M_Q(X) = QX$ | Ordinary left multiplication |
 | $L_Q(X) = Q\bar X$ | Left multiplication of $\star$, $\bar\cdot$-semilinear |
-| $R_Q(X) = X\bar Q$ | Right multiplication of $\star$, $\mathbb{C}^{\mathrm{spl}}$-linear |
+| $R_Q(X) = X\bar Q$ | Right multiplication of $\star$, $\mathbb{C}_{\mathrm{spl}}$-linear |
 | $[Q_1,Q_2,Q_3] = (Q_1\star Q_2)\star Q_3 - Q_1\star(Q_2\star Q_3) = Q_1\bar Q_2(\bar Q_3-Q_3)$ | Associator |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2 Q_3$ | Ternary product, an algebraic $J^{*}$-algebra |
 | $\mathcal{T}_{Q_1,Q_2}(X) = Q_1X\bar Q_2 = M_{Q_1} R_{Q_2}$ | Sesquilinear sandwich |

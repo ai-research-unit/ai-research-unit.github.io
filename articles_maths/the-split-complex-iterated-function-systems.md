@@ -2,15 +2,15 @@
 
 ## Introduction
 
-An iterated function system on the split-complex plane is a finite family of **split-complex similarities** $S_i(z) = u_i z + v_i$ with $u_i$ a unit of $\mathbb{C}^{\mathrm{spl}}$; its attractor is the invariant compact set of the family. The algebra carries the indefinite form $\langle z\rangle_{*} = a^2-a'^2$, and this changes the kinematics: a map preserving $\langle\cdot\rangle_{*}$ is a hyperbolic rotation or a hyperbolic scaling and is **expanding** in the ordinary Euclidean metric, so a system whose contractions are read in $\langle\cdot\rangle_{*}$ has no attractor in the usual sense; the contractions must be read in the Euclidean coordinates. In those coordinates a split-complex similarity is anisotropic, contracting the two coordinate directions by the singular values $|u_{i+}|$ and $|u_{i-}|$; each coordinate runs a one-dimensional real system, but the **same word** drives both, so the attractor is the image of a single shift space and it is **not** the product of the two real attractors — that product governs a mixed system with one map for each pairing. This article develops the kinematics, the attractor theorem and the dimension formula for these systems, describes the trace of the null cone on the attractor, identifies the symmetry that survives — the conjugation — and compares the construction with the complex systems of *Iterated Function Systems in the Complex Plane*.
+An iterated function system on the split-complex plane is a finite family of **split-complex similarities** $S_i(z) = u_i z + v_i$ with $u_i$ a unit of $\mathbb{C}_{\mathrm{spl}}$; its attractor is the invariant compact set of the family. The algebra carries the indefinite form $\langle z\rangle_{*} = a^2-a'^2$, and this changes the kinematics: a map preserving $\langle\cdot\rangle_{*}$ is a hyperbolic rotation or a hyperbolic scaling and is **expanding** in the ordinary Euclidean metric, so a system whose contractions are read in $\langle\cdot\rangle_{*}$ has no attractor in the usual sense; the contractions must be read in the Euclidean coordinates. In those coordinates a split-complex similarity is anisotropic, contracting the two coordinate directions by the singular values $|u_{i+}|$ and $|u_{i-}|$; each coordinate runs a one-dimensional real system, but the **same word** drives both, so the attractor is the image of a single shift space and it is **not** the product of the two real attractors — that product governs a mixed system with one map for each pairing. This article develops the kinematics, the attractor theorem and the dimension formula for these systems, describes the trace of the null cone on the attractor, identifies the symmetry that survives — the conjugation — and compares the construction with the complex systems of *Iterated Function Systems in the Complex Plane*.
 
-The article is the $\mathbb{C}^{\mathrm{spl}}$ instance of the self-similar theory. The general definitions — the attractor and the Hutchinson operator, the open set condition, the similarity dimension — are those of *Fractal Geometry*, the lead article of the subcategory; the product construction and the real self-similar sets in one dimension are those of the same article and of *Fractal Analysis* of Part III; the algebra, the norm and the null cone are those of *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the hyperbolic rotations are those of *Hyperbolic Rotations*; and the Julia sets that the systems approximate are those of *The Split-Complex Julia Sets* and *The Hyperbolic Geometry of the Split-Complex Julia Sets*. No physics is invoked.
+The article is the $\mathbb{C}_{\mathrm{spl}}$ instance of the self-similar theory. The general definitions — the attractor and the Hutchinson operator, the open set condition, the similarity dimension — are those of *Fractal Geometry*, the lead article of the subcategory; the product construction and the real self-similar sets in one dimension are those of the same article and of *Fractal Analysis* of Part III; the algebra, the norm and the null cone are those of *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Null Quadric and Projective Geometry*; the hyperbolic rotations are those of *Hyperbolic Rotations*; and the Julia sets that the systems approximate are those of *The Split-Complex Julia Sets* and *The Hyperbolic Geometry of the Split-Complex Julia Sets*. No physics is invoked.
 
 ## The Similarities and the Contractions
 
 ### The Matrix and the Singular Values
 
-**Definition.** A **split-complex similarity** is a map $S(z) = uz+v$ with $u, v \in \mathbb{C}^{\mathrm{spl}}$ and $u$ a unit. Its **singular values** are the two numbers $|u_+|$ and $|u_-|$ obtained from the idempotent coordinates of $u$, and its **Euclidean contraction factor** is $\max\{|u_+|,|u_-|\}$.
+**Definition.** A **split-complex similarity** is a map $S(z) = uz+v$ with $u, v \in \mathbb{C}_{\mathrm{spl}}$ and $u$ a unit. Its **singular values** are the two numbers $|u_+|$ and $|u_-|$ obtained from the idempotent coordinates of $u$, and its **Euclidean contraction factor** is $\max\{|u_+|,|u_-|\}$.
 
 **Theorem.** In the basis $\{1,j\}$ the linear part $z \mapsto uz$ of the similarity has the matrix
 
@@ -44,7 +44,7 @@ with equality exactly for $u \in \{\pm1,\pm j\}$. Hence no $\langle\cdot\rangle_
 
 ## The Attractor and the Coding
 
-**Definition.** An **iterated function system of split-complex similarities** is a finite family $\mathcal{S} = \{S_1, \ldots, S_m\}$, $m \geq 2$, of similarities $S_i(z) = u_i z + v_i$ with $\max\{|u_{i+}|,|u_{i-}|\} < 1$ for every $i$. Its **attractor** is the unique nonempty compact set $\Lambda \subseteq \mathbb{C}^{\mathrm{spl}}$ with $\Lambda = \bigcup_i S_i(\Lambda)$.
+**Definition.** An **iterated function system of split-complex similarities** is a finite family $\mathcal{S} = \{S_1, \ldots, S_m\}$, $m \geq 2$, of similarities $S_i(z) = u_i z + v_i$ with $\max\{|u_{i+}|,|u_{i-}|\} < 1$ for every $i$. Its **attractor** is the unique nonempty compact set $\Lambda \subseteq \mathbb{C}_{\mathrm{spl}}$ with $\Lambda = \bigcup_i S_i(\Lambda)$.
 
 **Theorem (the attractor and the coding map).** For every such system the attractor exists and is unique. The **coding map**
 $$
@@ -125,7 +125,7 @@ the larger of the two factor dimensions; the box counting of a sampled orbit at 
 
 ## The Null Cone
 
-**Definition.** The **null cone** of $\mathbb{C}^{\mathrm{spl}}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.
+**Definition.** The **null cone** of $\mathbb{C}_{\mathrm{spl}}$ is $\mathcal{N} = \{N = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the union of the two coordinate axes $z_+ = 0$ and $z_- = 0$ of the idempotent plane.
 
 **Theorem (the trace of the null cone on the attractor).** The attractor meets the null cone exactly in the points whose coding has one coordinate equal to $0$,
 
@@ -133,7 +133,7 @@ $$
 \boxed{\; \Lambda \cap \mathcal{N} = \varphi^{-1}\Bigl(\Lambda \cap \bigl(\{0\}\times\Lambda_-\bigr)\Bigr) \cup \varphi^{-1}\Bigl(\Lambda \cap \bigl(\Lambda_+\times\{0\}\bigr)\Bigr) \;},
 $$
 
-so that $\Lambda$ meets the null cone if and only if $0$ belongs to $\Lambda_+$ or to $\Lambda_-$; and $\Lambda$ is contained in one of the four open quadrants of $\mathbb{C}^{\mathrm{spl}}\setminus\mathcal{N}$ if and only if $\Lambda_+$ lies in one of the two half-lines $\mathbb{R}_{>0}$, $\mathbb{R}_{<0}$ and $\Lambda_-$ likewise.
+so that $\Lambda$ meets the null cone if and only if $0$ belongs to $\Lambda_+$ or to $\Lambda_-$; and $\Lambda$ is contained in one of the four open quadrants of $\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}$ if and only if $\Lambda_+$ lies in one of the two half-lines $\mathbb{R}_{>0}$, $\mathbb{R}_{<0}$ and $\Lambda_-$ likewise.
 
 **Proof.** $\langle z\rangle_{*} = z_+z_-$, so $z \in \mathcal{N}$ iff $z_+ = 0$ or $z_- = 0$, and $\Lambda$ is the set of the points $(\tau_+(\omega),\tau_-(\omega))$; a coding with $\tau_\pm(\omega) = 0$ exists exactly when $0 \in \Lambda_\pm$, since the coding map of a factor is onto its attractor. The components of the complement are the four sign quadrants, and $\Lambda \subseteq \varphi^{-1}(\Lambda_+\times\Lambda_-)$ lies in one of them exactly when each factor lies in the corresponding half-line.
 

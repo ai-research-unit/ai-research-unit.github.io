@@ -22,7 +22,7 @@ $$
 The subscript in $\mathrm{Cl}_k(V,\mathfrak{Q})$ is a grade and is not the signature subscript of $\mathrm{Cl}_{n,m}$. The parity parts of *Clifford Algebras* are the sums of the even and of the odd grades,
 
 $$
-\mathrm{Cl}^0(V,\mathfrak{Q})=\bigoplus_{k\ \mathrm{even}}\mathrm{Cl}_k(V,\mathfrak{Q}), \qquad \mathrm{Cl}^1(V,\mathfrak{Q})=\bigoplus_{k\ \mathrm{odd}}\mathrm{Cl}_k(V,\mathfrak{Q}),
+\mathrm{Cl}^0(V,\mathfrak{Q})=\bigoplus_{\mathrm{even},k}\mathrm{Cl}_k(V,\mathfrak{Q}), \qquad \mathrm{Cl}^1(V,\mathfrak{Q})=\bigoplus_{\mathrm{odd},k}\mathrm{Cl}_k(V,\mathfrak{Q}),
 $$
 
 so that a multivector is even when its odd-grade parts vanish.

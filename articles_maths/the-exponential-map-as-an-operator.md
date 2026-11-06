@@ -19,7 +19,7 @@ $$
 \exp : \mathrm{G} \to G, \qquad \exp(X) = \gamma_X(1),
 $$
 
-where $\gamma_X : \mathbb{R} \to G$ is the one-parameter subgroup with $\gamma_X'(0) = X$; equivalently $\exp X = \Phi_1^X(e)$, with $\Phi^X$ the flow of the left-invariant vector field $X^{\mathrm{lift}}$ of *Operators on a Lie Group*.
+where $\gamma_X : \mathbb{R} \to G$ is the one-parameter subgroup with $\gamma_X'(0) = X$; equivalently $\exp X = \Phi_1^X(e)$, with $\Phi^X$ the flow of the left-invariant vector field $X_{\mathrm{lift}}$ of *Operators on a Lie Group*.
 
 **Proposition.** The map $\exp$ is smooth, $\exp(0) = e$, and for every $X$ the curve $t \mapsto \exp(tX)$ is the one-parameter subgroup with derivative $X$ at $0$; the differential of $\exp$ at the origin, $d_0\exp : \mathrm{G} \to T_eG = \mathrm{G}$, is the identity of $\mathrm{G}$.
 

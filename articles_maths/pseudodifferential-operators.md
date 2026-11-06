@@ -141,13 +141,13 @@ $$
 
 the sum over all multi-indices $\alpha$, where $D_x^\alpha=(-i)^{|\alpha|}\partial^\alpha/\partial x^\alpha$ acts on the $x$-variable of $\mathfrak{b}$. In particular the leading term is $c \equiv \mathfrak{a}\mathfrak{b} \bmod S^{m+m'-1}$.
 
-*Proof (sketch).* Use the representation $\mathfrak{a}(x,D)v(x)=\frac{1}{(2\pi)^n}\int \exp(ix\cdot\eta)\mathfrak{a}(x,\eta)\mathcal F v(\eta)\,d\eta$, valid after regularisation. Then $\widehat{\mathfrak{b}(x,D)u}(\eta)=\frac{1}{(2\pi)^n}\int\mathcal F \mathfrak{b}(\eta-\varkappa^{\mathrm{crd}},\varkappa^{\mathrm{crd}})\mathcal F u(\varkappa^{\mathrm{crd}})\,d\varkappa^{\mathrm{crd}}$, and substituting $\eta=\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}}$ gives
+*Proof (sketch).* Use the representation $\mathfrak{a}(x,D)v(x)=\frac{1}{(2\pi)^n}\int \exp(ix\cdot\eta)\mathfrak{a}(x,\eta)\mathcal F v(\eta)\,d\eta$, valid after regularisation. Then $\widehat{\mathfrak{b}(x,D)u}(\eta)=\frac{1}{(2\pi)^n}\int\mathcal F \mathfrak{b}(\eta-\varkappa_{\mathrm{crd}},\varkappa_{\mathrm{crd}})\mathcal F u(\varkappa_{\mathrm{crd}})\,d\varkappa_{\mathrm{crd}}$, and substituting $\eta=\varkappa_{\mathrm{crd}}+\vartheta_{\mathrm{dum}}$ gives
 
 $$
-\mathfrak{a}(x,D)\mathfrak{b}(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int \exp(ix\cdot\varkappa^{\mathrm{crd}})\,\exp(ix\cdot\vartheta^{\mathrm{dum}})\,\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})\,\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})\,\mathcal F u(\varkappa^{\mathrm{crd}})\,d\varkappa^{\mathrm{crd}}\,d\vartheta^{\mathrm{dum}} .
+\mathfrak{a}(x,D)\mathfrak{b}(x,D)u(x)=\frac{1}{(2\pi)^{2n}}\int\int \exp(ix\cdot\varkappa_{\mathrm{crd}})\,\exp(ix\cdot\vartheta_{\mathrm{dum}})\,\mathfrak{a}(x,\varkappa_{\mathrm{crd}}+\vartheta_{\mathrm{dum}})\,\mathcal F \mathfrak{b}(\vartheta_{\mathrm{dum}},\varkappa_{\mathrm{crd}})\,\mathcal F u(\varkappa_{\mathrm{crd}})\,d\varkappa_{\mathrm{crd}}\,d\vartheta_{\mathrm{dum}} .
 $$
 
-Taylor expansion of $\mathfrak{a}(x,\varkappa^{\mathrm{crd}}+\vartheta^{\mathrm{dum}})$ in $\vartheta^{\mathrm{dum}}$ about $\varkappa^{\mathrm{crd}}$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}(x,\varkappa^{\mathrm{crd}})\vartheta^{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta^{\mathrm{dum}}$ of $\vartheta^{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta^{\mathrm{dum}},\varkappa^{\mathrm{crd}})$ is $D_x^\alpha \mathfrak{b}(x,\varkappa^{\mathrm{crd}})$; the remainder after $N$ terms is in $S^{m+m'-N}$.
+Taylor expansion of $\mathfrak{a}(x,\varkappa_{\mathrm{crd}}+\vartheta_{\mathrm{dum}})$ in $\vartheta_{\mathrm{dum}}$ about $\varkappa_{\mathrm{crd}}$ contributes the terms $\frac{1}{\alpha!}\partial^\alpha/\partial\zeta^\alpha \mathfrak{a}(x,\varkappa_{\mathrm{crd}})\vartheta_{\mathrm{dum}}^\alpha$, and the inverse Fourier transform in $\vartheta_{\mathrm{dum}}$ of $\vartheta_{\mathrm{dum}}^\alpha\mathcal F \mathfrak{b}(\vartheta_{\mathrm{dum}},\varkappa_{\mathrm{crd}})$ is $D_x^\alpha \mathfrak{b}(x,\varkappa_{\mathrm{crd}})$; the remainder after $N$ terms is in $S^{m+m'-N}$.
 
 **Example.** For $\mathfrak{a}=\zeta_j$ and $\mathfrak{b}=x_k$, the composition is $D_jM_{x_k}$, and
 
@@ -259,7 +259,7 @@ $$
 
 The principal symbol is invariant in a precise sense, and this is what makes the calculus geometric.
 
-**Theorem (invariance of the principal symbol).** Let $\kappa:\Omega\to\Omega^{\mathrm{im}}$ be a diffeomorphism of open sets and let $T=\mathfrak{a}(x,D)$ be a pseudodifferential operator on $\Omega^{\mathrm{im}}$; define the transported operator $\kappa^*T$ on $\Omega$ by $\kappa^*Tu=(T(u\circ\kappa^{-1}))\circ\kappa$. Then $\kappa^*T$ is pseudodifferential of order $m$, and its principal symbol is
+**Theorem (invariance of the principal symbol).** Let $\kappa:\Omega\to\Omega_{\mathrm{im}}$ be a diffeomorphism of open sets and let $T=\mathfrak{a}(x,D)$ be a pseudodifferential operator on $\Omega_{\mathrm{im}}$; define the transported operator $\kappa^*T$ on $\Omega$ by $\kappa^*Tu=(T(u\circ\kappa^{-1}))\circ\kappa$. Then $\kappa^*T$ is pseudodifferential of order $m$, and its principal symbol is
 
 $$
 \sigma_m(\kappa^*T)(x,\zeta)=\sigma_m(T)\bigl(\kappa(x),\,(d\kappa(x))^{-T}\zeta\bigr),

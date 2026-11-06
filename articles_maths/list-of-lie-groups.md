@@ -76,7 +76,7 @@ The passage from the group to the algebra is a functor, and its failure to be an
 | the differential $d\varphi_e$ | the functor on homomorphisms; a Lie algebra homomorphism | *Lie Groups*; *The Lie Correspondence and the Adjoint Representation* |
 | Lie's third theorem | every finite-dimensional real Lie algebra is the Lie algebra of a simply connected Lie group | *The Lie Correspondence and the Adjoint Representation* |
 | the Lie correspondence | for simply connected $G$, $\varphi \mapsto d\varphi_e$ is a bijection from $\operatorname{Hom}(G,H)$ to $\operatorname{Hom}(\mathrm{G},\mathrm{H})$ | *The Lie Correspondence and the Adjoint Representation* |
-| the simply connected cover | $\pi : G^{\mathrm{cov}} \to G$ with discrete central kernel; the connected groups with a given algebra are the $G^{\mathrm{cov}}/D$ | *The Lie Correspondence and the Adjoint Representation*; *The Fundamental Group of a Lie Group* |
+| the simply connected cover | $\pi : G_{\mathrm{cov}} \to G$ with discrete central kernel; the connected groups with a given algebra are the $G_{\mathrm{cov}}/D$ | *The Lie Correspondence and the Adjoint Representation*; *The Fundamental Group of a Lie Group* |
 | the adjoint representation | $\operatorname{Ad}(g) = d(c_g)_e$ on $\mathrm{G}$ and $\operatorname{ad}_x(y) = [x,y]$, with $d(\operatorname{Ad})_e = \operatorname{ad}$ | *The Lie Correspondence and the Adjoint Representation* |
 | the centre | $\ker\operatorname{Ad} = Z(G)$ for connected $G$, and $\operatorname{Lie}(Z(G)) = \mathrm{Z}(\mathrm{G})$ | *The Lie Correspondence and the Adjoint Representation* |
 | closed subgroups and quotients | Cartan's theorem makes a closed subgroup embedded; a closed normal $N$ gives $\operatorname{Lie}(G/N) = \mathrm{G}/\mathrm{N}$ | *Lie Groups* |
@@ -116,7 +116,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $G$, $H$, $G^{\mathrm{cov}}$ | a Lie group, a second Lie group, the simply connected cover |
+| $G$, $H$, $G_{\mathrm{cov}}$ | a Lie group, a second Lie group, the simply connected cover |
 | $\mathrm{G} = T_eG$, $\mathrm{H}$ | the Lie algebra of $G$, the Lie algebra of $H$; lowercase fraktur throughout |
 | $\exp : \mathrm{G} \to G$ | the exponential map |
 | $[X,Y]$, $\operatorname{ad}_x$, $\operatorname{Ad}(g)$ | the bracket, the adjoint representation of the algebra, of the group |

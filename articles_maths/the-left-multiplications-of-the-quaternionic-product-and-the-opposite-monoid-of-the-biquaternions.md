@@ -50,7 +50,7 @@ using the associativity of the plain product in the middle step and the fact tha
 **Theorem (the monoid of left multiplications).** The set $M_L = \{L_{\tilde Q_1} : \tilde Q_1 \in \mathbb{B}\}$ is closed under composition and contains the identity $L_{e_t} = \mathrm{id}_{\mathbb{B}}$. The map $\tilde Q_1\mapsto L_{\tilde Q_1}$ is an injective anti-homomorphism of monoids from the multiplicative monoid of $\mathbb{B}$ onto $M_L$, so
 
 $$
-\boxed{\; M_L \cong \mathbb{B}^{\mathrm{opp}} \;},
+\boxed{\; M_L \cong \mathbb{B}_{\mathrm{opp}} \;},
 $$
 
 the opposite of the multiplicative monoid of $\mathbb{B}$.
@@ -87,7 +87,7 @@ the **direct** law, and $M_R = \{\varrho_{\tilde Q_1}\}$ is a monoid containing 
 
 **Proof.** $\varrho_{\tilde Q_1}(\varrho_{\tilde Q_3}(\tilde Q_2)) = \tilde Q_2\tilde Q_3^{\natural}\tilde Q_1^{\natural} = \tilde Q_2(\tilde Q_1\tilde Q_3)^{\natural} = \varrho_{\tilde Q_1\tilde Q_3}(\tilde Q_2)$, by the associativity of the plain product and the anti-automorphism property; the identity is $\varrho_{e_t}(\tilde Q_2) = \tilde Q_2 e_t^{\natural} = \tilde Q_2$, and injectivity is read at $e_t$ as before.
 
-**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde Q_1^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}\}$ and the right family is $M_R = \{R^{\mathrm{plain}}_{\tilde Q_1^{\natural}}\}$, with $M_L\cong\mathbb{B}^{\mathrm{opp}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$ and $\varrho_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
+**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde Q_1^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L_{\mathrm{plain},\tilde Q_1^{\natural}}\}$ and the right family is $M_R = \{R_{\mathrm{plain},\tilde Q_1^{\natural}}\}$, with $M_L\cong\mathbb{B}_{\mathrm{opp}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde Q_1}L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$ and $\varrho_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
 
 ## The Mixed Compositions
 
@@ -124,7 +124,7 @@ The two bilinear columns are the two this article has just settled: for the asso
 
 ## Summary
 
-The left multiplications of the quaternionic product are $L_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1^{\natural}\tilde Q_2$, and they compose by the reversed law $L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_t}$, and $\tilde Q_1\mapsto L_{\tilde Q_1}$ is an isomorphism $M_L\cong\mathbb{B}^{\mathrm{opp}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q_3^{\natural}\tilde Q_2\tilde Q_1$; the closed family is the twisted one $\varrho_{\tilde Q_1}(\tilde Q_2) = \tilde Q_2\tilde Q_1^{\natural}$, with the direct law $\varrho_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_3}L_{\tilde Q_1}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
+The left multiplications of the quaternionic product are $L_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1^{\natural}\tilde Q_2$, and they compose by the reversed law $L_{\tilde Q_1}\circ L_{\tilde Q_3} = L_{\tilde Q_3\tilde Q_1}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_t}$, and $\tilde Q_1\mapsto L_{\tilde Q_1}$ is an isomorphism $M_L\cong\mathbb{B}_{\mathrm{opp}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q_3^{\natural}\tilde Q_2\tilde Q_1$; the closed family is the twisted one $\varrho_{\tilde Q_1}(\tilde Q_2) = \tilde Q_2\tilde Q_1^{\natural}$, with the direct law $\varrho_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_1\tilde Q_3}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde Q_1}\varrho_{\tilde Q_3} = \varrho_{\tilde Q_3}L_{\tilde Q_1}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
 
 ## Summary of Notation
 
@@ -140,7 +140,7 @@ The left multiplications of the quaternionic product are $L_{\tilde Q_1}(\tilde 
 | $R_{\tilde Q_1}$ | the right multiplication of the product, $\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1 = \tilde Q_2^{\natural}\tilde Q_1$ |
 | $\varrho_{\tilde Q_1}$ | the twisted right multiplication $\tilde Q_2\mapsto\tilde Q_2\tilde Q_1^{\natural}$ |
 | $M_L$, $M_R$ | the monoids of left and of twisted right multiplications |
-| $M_L \cong \mathbb{B}^{\mathrm{opp}}$, $M_R \cong \mathbb{B}$ | the two isomorphism statements |
+| $M_L \cong \mathbb{B}_{\mathrm{opp}}$, $M_R \cong \mathbb{B}$ | the two isomorphism statements |
 | $\langle\tilde Q\rangle_{\natural}$ | the norm, so that $\tilde Q$ is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$ |
 
 ## Further Reading

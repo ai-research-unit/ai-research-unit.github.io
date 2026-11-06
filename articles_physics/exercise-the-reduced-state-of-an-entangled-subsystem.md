@@ -15,7 +15,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 Two spin-$\tfrac{1}{2}$ particles are prepared in the **singlet state**
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
 $$
 
 We measure particle 1 alone, along any direction. What is the **state of particle 1**, ignoring particle 2?
@@ -29,13 +29,13 @@ The answer, as we shall see, is that the state of particle 1 is the **maximally 
 The singlet state is the antisymmetric combination of the two spin states in the 4-dimensional Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$:
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
 $$
 
 The joint state is the rank-one projector
 
 $$
-\rho = |\tilde{Ξ}^{\mathrm{sp}-}\rangle\langle\tilde{Ξ}^{\mathrm{sp}-}| = \frac{1}{2}\Bigl(|\uparrow\downarrow\rangle\langle\uparrow\downarrow| - |\uparrow\downarrow\rangle\langle\downarrow\uparrow| - |\downarrow\uparrow\rangle\langle\uparrow\downarrow| + |\downarrow\uparrow\rangle\langle\downarrow\uparrow|\Bigr).
+\rho = |\tilde{Ξ}_{\mathrm{sp}}^-\rangle\langle\tilde{Ξ}_{\mathrm{sp}}^-| = \frac{1}{2}\Bigl(|\uparrow\downarrow\rangle\langle\uparrow\downarrow| - |\uparrow\downarrow\rangle\langle\downarrow\uparrow| - |\downarrow\uparrow\rangle\langle\uparrow\downarrow| + |\downarrow\uparrow\rangle\langle\downarrow\uparrow|\Bigr).
 $$
 
 ### Step 2: The reduced state
@@ -199,7 +199,7 @@ $$
 which is a product state (not entangled). The reduced state of particle 1 is
 
 $$
-\tilde{Ϛ}_1^{\mathrm{prod}} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
+\tilde{Ϛ}_{\mathrm{prod},1} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
 $$
 
 In biquaternion form, the joint state is
@@ -211,7 +211,7 @@ $$
 with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial trace,
 
 $$
-\tilde{Ϛ}_1^{\mathrm{prod}} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
+\tilde{Ϛ}_{\mathrm{prod},1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
 $$
 
 using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
@@ -219,14 +219,14 @@ using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
 So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec r = \vec e_z$ and purity $1$. The purity and entropy are
 
 $$
-\mathrm{Tr}((\tilde{Ϛ}_1^{\mathrm{prod}})^2) = 1, \qquad S(\tilde{Ϛ}_1^{\mathrm{prod}}) = 0.
+\mathrm{Tr}((\tilde{Ϛ}_{\mathrm{prod},1})^2) = 1, \qquad S(\tilde{Ϛ}_{\mathrm{prod},1}) = 0.
 $$
 
 This is in sharp contrast with the singlet case.
 
 | State | Reduced state $\tilde{Ϛ}_1$ | Purity | Entropy |
 |---|---|---|---|
-| Singlet $|\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $\frac{1}{2}e_t$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
+| Singlet $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | $\frac{1}{2}e_t$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
 | Product $|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_t + i\vec e_z)$ (pure) | $1$ | $0$ |
 
 The contrast is the operational signature of entanglement: **product states have pure reduced states; entangled states have mixed reduced states**. The more entangled the joint state, the more mixed the reduced state.
@@ -276,7 +276,7 @@ The comparison with a product state — where the reduced state is pure — illu
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $|\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | Singlet state |
+| $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | Singlet state |
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}})$ | Reduced state of particle 1 |

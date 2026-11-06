@@ -47,7 +47,7 @@ The pair $(r,u)$ is unique, and the decomposition is $Q=ru$. The modulus is posi
 The unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$ has four components. Every unit can be written as
 
 $$
-u = \epsilon\exp(\theta^{\mathrm{rpd}} j), \qquad \epsilon\in\{\pm1,\pm j\}, \quad \theta^{\mathrm{rpd}}\in\mathbb{R},
+u = \epsilon\exp(\theta_{\mathrm{rpd}} j), \qquad \epsilon\in\{\pm1,\pm j\}, \quad \theta_{\mathrm{rpd}}\in\mathbb{R},
 $$
 
 with $\epsilon$ the component label. The four labels and the signs of the coordinates are listed in the following table.
@@ -231,7 +231,7 @@ $$
 \boxed{\; s_3 = \frac{s_1+s_2}{1+s_1s_2} \;}.
 $$
 
-The identity is $s=0$, because $u(0)=1$, and the inverse is $s\mapsto-s$, because $u(s)u(-s)=1$. The law is the hyperbolic addition formula, transported from the exponential coordinate by $s=-\tanh(\theta^{\mathrm{rpd}}/2)$ on the identity component.
+The identity is $s=0$, because $u(0)=1$, and the inverse is $s\mapsto-s$, because $u(s)u(-s)=1$. The law is the hyperbolic addition formula, transported from the exponential coordinate by $s=-\tanh(\theta_{\mathrm{rpd}}/2)$ on the identity component.
 
 The pole occurs when $1+s_1s_2=0$, that is $s_1s_2=-1$. At that parameter value the product is
 
@@ -418,7 +418,7 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
 | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |
@@ -427,7 +427,7 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 | $s$ | the rational parameter, $s\neq\pm1$ |
 | $v(s)=-u(s)=u(1/s)$ | the second chart, missing $+1$ |
 | $\epsilon$ | the component sign, $\epsilon\in\{1,\pm j\}$ |
-| $\theta^{\mathrm{rpd}}$ | the hyperbolic angle, $s=-\tanh(\theta^{\mathrm{rpd}}/2)$ on the identity component |
+| $\theta_{\mathrm{rpd}}$ | the hyperbolic angle, $s=-\tanh(\theta_{\mathrm{rpd}}/2)$ on the identity component |
 | $K=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | the reflection, $K^2=I$ |
 | $M(s)=(I-sK)(I+sK)^{-1}$ | the Cayley matrix |
 | $SO(1,1)$ | the determinant-one Lorentz group of the plane, two components |

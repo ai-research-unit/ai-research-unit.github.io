@@ -69,10 +69,10 @@ These four postulates are the foundation of the theory. Everything else — the 
 A **pure state** is a state that cannot be written as a nontrivial convex combination of two other states. In the density matrix formalism, pure states are rank-one projectors:
 
 $$
-\rho_{\mathrm{sp}} = |\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|,
 $$
 
-where $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).
+where $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is a unit vector in $\mathcal{H}$, defined up to a global phase. The pure states are in one-to-one correspondence with the rays of $\mathcal{H}$ (that is, with the one-dimensional subspaces of $\mathcal{H}$).
 
 Pure states satisfy
 
@@ -167,7 +167,7 @@ Its most famous realization is the **spin-1/2** of an electron, whose spin along
 A **pure state** of a qubit is a unit vector
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
+|\tilde{Ξ}_{\mathrm{sp}}\rangle = \alpha |0\rangle + \beta |1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1,
 $$
 
 where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.
@@ -237,33 +237,33 @@ This is the standard formula for the expectation value of a qubit observable.
 For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities
 
 $$
-p_\pm = \frac{1}{2}\left(1 \pm a^{\mathrm{fop}}\cdot\vec r\right),
+p_\pm = \frac{1}{2}\left(1 \pm a_{\mathrm{fop}}\cdot\vec r\right),
 $$
 
-where $a^{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a^{\mathrm{fop}}$ and the Bloch vector $\vec r$.
+where $a_{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a_{\mathrm{fop}}$ and the Bloch vector $\vec r$.
 
 After the measurement with outcome $+$, the state collapses to the pure state
 
 $$
-\rho_2 = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
+\rho_2 = \frac{1}{2}\left(I + a_{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
 $$
 
-i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
+i.e., the Bloch vector becomes $a_{\mathrm{fop}}$.
 
 ## Dynamics
 
 ### The Schrödinger Picture
 
-In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the **Schrödinger equation**:
+In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-\boxed{\;i\hbar\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle\;},
+\boxed{\;i\hbar\, \frac{\partial}{\partial r'_t}|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = H\, |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\;},
 $$
 
 where $H$ is the Hamiltonian. The solution is
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}^{\mathrm{sp}}(r'_{t,0})\rangle,
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = U(r'_t, r'_{t,0})\, |\tilde{Ξ}_{\mathrm{sp}}(r'_{t,0})\rangle,
 $$
 
 with $U(r'_t, r'_{t,0}) = \exp\left(-\tfrac{i}{\hbar}H(r'_t - r'_{t,0})\right)$ for a time-independent Hamiltonian.
@@ -371,7 +371,7 @@ A **pure** state that is **not** a product state is called **entangled**. For mi
 The canonical examples of entangled states are the **Bell states** of two qubits:
 
 $$
-|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}^{\mathrm{sp}\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
+|Ξ^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle \pm |11\rangle\right), \qquad |\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle = \frac{1}{\sqrt{2}}\left(|01\rangle \pm |10\rangle\right).
 $$
 
 These are maximally entangled states. They violate Bell inequalities, and they cannot be written as a convex combination of product states.
@@ -448,7 +448,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 |---|---|
 | $\mathcal{H}$ | Complex Hilbert space of the system |
 | $\rho$ | Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$ |
-| $\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}^{\mathrm{sp}}\rangle\langle\tilde{Ξ}^{\mathrm{sp}}\rvert$ | Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$) |
+| $\rho_{\mathrm{sp}} = \lvert\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}\rvert$ | Pure state; a rank-one projector, idempotent ($\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$) |
 | $\mathrm{Tr}$, $\mathrm{Tr}_B$ | Trace, and partial trace over subsystem $B$ |
 | $A$, $A^\dagger$ | Observable (self-adjoint operator) and its adjoint |
 | $[A,B] = AB - BA$ | Commutator; $A$ and $B$ are compatible if and only if $[A,B] = 0$ |
@@ -458,7 +458,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $U(r'_t,r'_{t,0})$ | $*$-Unitary evolution operator, $U(r'_{t,0},r'_{t,0}) = I$ |
 | $H$ | Hamiltonian |
 | $\hbar$ | Reduced Planck constant |
-| $\lvert\tilde{Ξ}^{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
+| $\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
 | $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
 | $\vec r$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ |
 | $S^2$, $B^3$ | Bloch sphere (pure states) and Bloch ball (all states) |
@@ -466,7 +466,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $K_i$, $Ξ$ | Kraus operators and the channel $Ξ(\rho) = \sum_i K_i \rho K_i^\dagger$ |
 | $\mathcal{H}_A \otimes \mathcal{H}_B$ | Tensor-product space of a bipartite system |
 | $\rho_A = \mathrm{Tr}_B(\rho)$ | Reduced state of subsystem $A$ |
-| $\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}^{\mathrm{sp}\pm}\rangle$ | Bell states of two qubits |
+| $\lvertΞ^{\pm}\rangle$, $\lvert\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle$ | Bell states of two qubits |
 
 ## Further Reading
 

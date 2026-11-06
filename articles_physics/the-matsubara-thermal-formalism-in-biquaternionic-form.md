@@ -71,7 +71,7 @@ is the operator-exchange identity whose resolution is periodicity for the bosoni
 $$
 \tilde{Ξ}_{\text{boson}}(\tau+\beta) = +\tilde{Ξ}_{\text{boson}}(\tau),
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_{\text{fermion}}(\tau+\beta) = -\tilde{Ξ}^{\mathrm{sp}}_{\text{fermion}}(\tau).
+\tilde{Ξ}_{\mathrm{sp},\text{fermion}}(\tau+\beta) = -\tilde{Ξ}_{\mathrm{sp},\text{fermion}}(\tau).
 $$
 The framework's grading is the even/odd decomposition of the algebra and of the spinor module, so the two periodicity classes are the two grading classes; this is the finite-temperature face of *The Spin–Statistics Theorem in Biquaternionic Form*, and no new input is needed beyond the grading and the KMS relation.
 

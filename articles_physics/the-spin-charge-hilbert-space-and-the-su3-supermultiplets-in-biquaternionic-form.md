@@ -22,17 +22,17 @@ The article is organised as follows. A first section recalls the abstract Hilber
 
 ## The Abstract Hilbert Space
 
-The starting point is von Neumann's abstract Hilbert space. Wave functions are vectors $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ of a complex Hilbert space $\mathcal{H}$ on which a representation $U(g)$ of the Lorentz group acts, subject to the **von Neumann condition**
+The starting point is von Neumann's abstract Hilbert space. Wave functions are vectors $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ of a complex Hilbert space $\mathcal{H}$ on which a representation $U(g)$ of the Lorentz group acts, subject to the **von Neumann condition**
 
 $$
-\int_{\mathrm{SL}(2,\mathbb{C})}\bigl|\langle\tilde{Ξ}^{\mathrm{sp}}\,|\,U(g)\,|\,\tilde{Ξ}^{\mathrm{sp}}\rangle\bigr|\,dg < \infty,
+\int_{\mathrm{SL}(2,\mathbb{C})}\bigl|\langle\tilde{Ξ}_{\mathrm{sp}}\,|\,U(g)\,|\,\tilde{Ξ}_{\mathrm{sp}}\rangle\bigr|\,dg < \infty,
 $$
 
-where $dg$ is a Haar measure. The condition is what makes the representation integrable on the group and gives the space a group-averaged inner product. An infinite sequence $|\tilde{Ξ}^{\mathrm{sp}}_1\rangle,|\tilde{Ξ}^{\mathrm{sp}}_2\rangle,\dots$ spans the space in the sense of **convergence in average**,
+where $dg$ is a Haar measure. The condition is what makes the representation integrable on the group and gives the space a group-averaged inner product. An infinite sequence $|\tilde{Ξ}_{\mathrm{sp},1}\rangle,|\tilde{Ξ}_{\mathrm{sp},2}\rangle,\dots$ spans the space in the sense of **convergence in average**,
 
 $$
-\bigl\|\tilde{Ξ}^{\mathrm{sp}}\rangle - |s_n\rangle\bigr\| = \int_{\mathrm{SL}(2,\mathbb{C})}\bigl|\tilde{Ξ}^{\mathrm{sp}}\rangle-|s_n\rangle\bigr|^{2}\,dg \longrightarrow 0 \quad (n\to\infty),
-\qquad |s_n\rangle = \sum_{j=1}^{n}c_j\,|\tilde{Ξ}^{\mathrm{sp}}_j\rangle,
+\bigl\|\tilde{Ξ}_{\mathrm{sp}}\rangle - |s_n\rangle\bigr\| = \int_{\mathrm{SL}(2,\mathbb{C})}\bigl|\tilde{Ξ}_{\mathrm{sp}}\rangle-|s_n\rangle\bigr|^{2}\,dg \longrightarrow 0 \quad (n\to\infty),
+\qquad |s_n\rangle = \sum_{j=1}^{n}c_j\,|\tilde{Ξ}_{\mathrm{sp},j}\rangle,
 $$
 
 and the Gram–Schmidt process makes the sequence orthonormal. A space satisfying the von Neumann condition and the convergence condition is the **abstract Hilbert space** $\mathcal{H}_\infty$. It is the arena in which the spin and charge spaces are placed, and the whole construction below is a statement about how finite-dimensional factors tensor onto it.
@@ -41,13 +41,13 @@ and the Gram–Schmidt process makes the sequence orthonormal. A space satisfyin
 
 ### The Doubling of the Wave Function
 
-Pauli's theory of electron spin is a **doubling** of the space of wave functions. If $|\tilde{Ξ}^{\mathrm{sp}}_1\rangle$ and $|\tilde{Ξ}^{\mathrm{sp}}_2\rangle$ are vectors of $\mathcal{H}_\infty$, the doubled space is the set of formal combinations $c_1|\tilde{Ξ}^{\mathrm{sp}}_1\rangle+c_2|\tilde{Ξ}^{\mathrm{sp}}_2\rangle$, and it is realised by the tensor product
+Pauli's theory of electron spin is a **doubling** of the space of wave functions. If $|\tilde{Ξ}_{\mathrm{sp},1}\rangle$ and $|\tilde{Ξ}_{\mathrm{sp},2}\rangle$ are vectors of $\mathcal{H}_\infty$, the doubled space is the set of formal combinations $c_1|\tilde{Ξ}_{\mathrm{sp},1}\rangle+c_2|\tilde{Ξ}_{\mathrm{sp},2}\rangle$, and it is realised by the tensor product
 
 $$
 \mathcal{H}_S^2\otimes\mathcal{H}_\infty,
 $$
 
-with basis vectors $|\vec e_x\rangle,|\vec e_y\rangle$ of $\mathcal{H}_S^2$ and general vector $\tilde{Ξ}^{\mathrm{sp}}_S=\sum_j|x_j\rangle\otimes|\tilde{Ξ}^{\mathrm{sp}}_j\rangle$. The correspondence with the formal sum shows the tensor product is the adequate description of the space of wave functions with spin.
+with basis vectors $|\vec e_x\rangle,|\vec e_y\rangle$ of $\mathcal{H}_S^2$ and general vector $\tilde{Ξ}_{\mathrm{sp},S}=\sum_j|x_j\rangle\otimes|\tilde{Ξ}_{\mathrm{sp},j}\rangle$. The correspondence with the formal sum shows the tensor product is the adequate description of the space of wave functions with spin.
 
 ### Spin Doublets and Triplets
 

@@ -152,7 +152,7 @@ The classification of one-parameter subgroups established in *Split-Biquaternion
 
 *Proof.* The fixed points of an element of $SO^{+}(3,1)$ on $H^3\cup\partial H^3$ correspond to the lines in $\mathbb{M}_-$ spanned by eigenvectors of the corresponding linear map, and the type is determined by the sign of the $g$-norm of such an eigenvector: timelike (a point of $H^3$), spacelike (a geodesic, whose endpoints are two null eigenvectors) or null (a boundary point). The normal forms are those of the generator, given by the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
 
-**Proposition.** The elliptic type is realised inside the split biquaternion algebra by the $*$-unitary group of *Split-Biquaternion Rotations and the Lorentz Group*, which acts on $H^3$ by rotations about the fixed point $je_t$; the hyperbolic type is realised by the split complex hyperbolic units acting on the neutral planes, transported to $H^3$; the parabolic type is not realised by an element of the algebra, because $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
+**Proposition.** The elliptic type is realised inside the split biquaternion algebra by the $*$-unitary group of *Split-Biquaternion Rotations and the Lorentz Group*, which acts on $H^3$ by rotations about the fixed point $je_t$; the hyperbolic type is realised by the split complex hyperbolic units acting on the neutral planes, transported to $H^3$; the parabolic type is not realised by an element of the algebra, because $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
 *Proof.* The assertions about the elliptic and parabolic types are those of the cited article, transported through the identification $H^3 = SO^{+}(3,1)\cdot je_t$; the hyperbolic displacements are the split complex units, which furnish one-parameter subgroups of hyperbolic type after conjugation into $SO^{+}(3,1)$.
 
@@ -176,9 +176,9 @@ Note that the parabolic subgroups of $SO^{+}(3,1)$ are represented by nilpotent 
 
 The split biquaternion hyperbolic geometry is the three-dimensional member of a family that begins in dimension one with the split complex plane and continues in the opposite direction with the quaternion sphere.
 
-| Feature | $\mathbb{C}^{\mathrm{spl}}$ (dimension $1$) | $\mathbb{B}^{\mathrm{spl}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
+| Feature | $\mathbb{C}_{\mathrm{spl}}$ (dimension $1$) | $\mathbb{B}_{\mathrm{spl}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
 |---|---|---|---|
-| Ambient form | $a^2 - b^2$ on $\mathbb{C}^{\mathrm{spl}}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert\tilde q\rvert^2$ on $\mathbb{H}$ |
+| Ambient form | $a^2 - b^2$ on $\mathbb{C}_{\mathrm{spl}}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert\tilde q\rvert^2$ on $\mathbb{H}$ |
 | Level set | hyperbola $c^2 - s^2 = 1$ | hyperboloid $g = -1$ | sphere $S^3$ |
 | Space | $H^1\cong\mathbb{R}$ | $H^3\cong\mathbb{R}^3$ | $S^3$ |
 | Curvature | $-1$ | $-1$ | $+1$ |
@@ -205,9 +205,9 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra, unit $j$, $j^2 = +1$ |
 | $\mathbb{H}$ | Quaternion algebra |
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $j$ | Split complex unit, $j^2 = +e_t$, central |
 | $\tilde{Q} = a\,je_t + v$ | General element of $\mathbb{M}_-$, $a\in\mathbb{R}$, $v\in\operatorname{Im}\mathbb{H}$ |

@@ -271,12 +271,12 @@ $$
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L ,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R ,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays.
+one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays.
 
 In the isospin limit the divergence is the mass bilinear,
 
@@ -335,21 +335,21 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, at least $\operatorname{rank}c(M)$ in number.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, at least $\operatorname{rank}c(M)$ in number.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 The four frame cells multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\xi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth cell is the volume cell of the body, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$; the fifth is not of that form, being the volume cell itself, $\gamma_5=\xi=-iR_{\vec e_z}^{\mathrm{pau}}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the volume cell itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -436,7 +436,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame cell of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the volume cell, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |

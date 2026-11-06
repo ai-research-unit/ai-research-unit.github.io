@@ -22,7 +22,7 @@ where $F(\breve Q)$ is the algebraic norm of the form. The four quantities are $
 
 **The quantity of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the Euclidean metric.**
 
-**Theorem (the metric).** $\delta_{K}(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert$ is a metric on $\mathbb{B}^{\mathrm{red}}$: positive definite, symmetric, and satisfying the triangle inequality; it is the metric of *The Euclidean Topology of the Reduced Biquaternion Algebra*, complete and compatible with the Euclidean topology.
+**Theorem (the metric).** $\delta_{K}(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert$ is a metric on $\mathbb{B}_{\mathrm{red}}$: positive definite, symmetric, and satisfying the triangle inequality; it is the metric of *The Euclidean Topology of the Reduced Biquaternion Algebra*, complete and compatible with the Euclidean topology.
 
 *Proof.* $\langle\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so $\langle \breve Q\rangle_{\mathrm{ts}*}>0$ for $\breve Q\neq0$ and $\langle \breve Q\rangle_{\mathrm{ts}*}=0$ exactly for $\breve Q=0$, which gives the positive definiteness of $\delta_{K}$; symmetry and the triangle inequality are those of the Euclidean norm of the coordinate quadruple, by the second theorem of the next section.
 
@@ -56,7 +56,7 @@ $$
 \lvert F(\bar{\breve Q})\rvert=\lvert F(\breve Q_{\mathrm{ts}})\rvert=\lvert F(\breve Q^{*})\rvert=\lvert F(\breve Q)\rvert
 \;}
 $$
-for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}^{\mathrm{red}}$ for each of the four quantities, and the three form a Klein four-group of isometries.
+for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{red}}$ for each of the four quantities, and the three form a Klein four-group of isometries.
 
 *Proof.* The tessarine sign negates the second complex coordinate, which leaves $Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$, $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, $\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}$ and $\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ unchanged; the bar conjugates both coordinates, which conjugates the complex-valued $\langle \breve Q\rangle$ and $\langle \breve Q\rangle_{\mathrm{ts}}$ and leaves the real-valued $\langle \breve Q\rangle_{*}$ and $\langle \breve Q\rangle_{\mathrm{ts}*}$ unchanged; the star is the composite, and the modulus is invariant under conjugation. The group is that of *The Two Involutions and the Group of Involutions*.
 

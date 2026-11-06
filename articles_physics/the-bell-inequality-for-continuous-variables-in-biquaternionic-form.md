@@ -16,7 +16,7 @@ E(\alpha,\beta)=\exp\!\Bigl(-2\cosh(2r)\bigl(|\alpha|^2+|\beta|^2\bigr)+4\sinh(2
 $$
 and the sign of the cross term is the point at which the quadrature convention must be checked rather than remembered. The article reports the check: the exponent is $\mathrm{Re}(\alpha\beta)$, **not** $\mathrm{Re}(\alpha\bar\beta)$. The two agree whenever both displacements are real (and again at $r=0$, where the cross term vanishes altogether) — which is exactly the case that cannot distinguish them — and the first version of the computation was wrong for that reason. The correlator is verified twice, once from the Wigner function and once by an independent truncated-Fock-space evaluation of the displaced-parity operators.
 
-**Third, to say honestly what the biquaternion framework does here.** The framework supplies the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, and the idempotent algebra of the informational sector $\mathbb{M}_+$, and a dichotomic observable is a fair translation target for those tools. But the states and observables of the continuous-variable problem are **not elements of $\mathbb{B}$**. A quadrature has continuous spectrum, and no element of $\mathbb{B}\cong M_2(\mathbb{C})$ or of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ has one; a bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$ on an infinite-dimensional module, and the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* already proves that no such pair exists in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The framework can restate the *bound* — which is a fact about $\pm1$ spectra — but it cannot represent the *state*, and it therefore has no natural handle on the continuous-spectrum case. This is recorded below as a gap, not smoothed into an analogy.
+**Third, to say honestly what the biquaternion framework does here.** The framework supplies the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$, and the idempotent algebra of the informational sector $\mathbb{M}_+$, and a dichotomic observable is a fair translation target for those tools. But the states and observables of the continuous-variable problem are **not elements of $\mathbb{B}$**. A quadrature has continuous spectrum, and no element of $\mathbb{B}\cong M_2(\mathbb{C})$ or of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ has one; a bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$ on an infinite-dimensional module, and the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* already proves that no such pair exists in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The framework can restate the *bound* — which is a fact about $\pm1$ spectra — but it cannot represent the *state*, and it therefore has no natural handle on the continuous-spectrum case. This is recorded below as a gap, not smoothed into an analogy.
 
 The conventions are those of the companion articles: the algebra, the sectors, the units, the trace and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Matrix Representations Conventions*, and none is restated here. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*, whose image of $i\vec e_k$ is $\sigma_k$. The two-qubit arena of the discrete exercise is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The field-theoretic companion's result on the bosonic obstruction is inherited and used, not rederived.
 
@@ -48,10 +48,10 @@ The honest summary, and the sentence the rest of the article is written to suppo
 
 ### Quadratures and the sign convention
 
-For a single mode with annihilation and creation operators $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ satisfying $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=1$, the **quadratures** are
+For a single mode with annihilation and creation operators $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ satisfying $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=1$, the **quadratures** are
 $$
-x=\frac{a^{\mathrm{fop}}+a^{\mathrm{fop}\dagger}}{\sqrt2},\qquad
-p=\frac{a^{\mathrm{fop}}-a^{\mathrm{fop}\dagger}}{i\sqrt2}=-i\,\frac{a^{\mathrm{fop}}-a^{\mathrm{fop}\dagger}}{\sqrt2},
+x=\frac{a_{\mathrm{fop}}+a_{\mathrm{fop}}^{\dagger}}{\sqrt2},\qquad
+p=\frac{a_{\mathrm{fop}}-a_{\mathrm{fop}}^{\dagger}}{i\sqrt2}=-i\,\frac{a_{\mathrm{fop}}-a_{\mathrm{fop}}^{\dagger}}{\sqrt2},
 \qquad [x,p]=i .
 $$
 With this normalisation the vacuum has $\langle x^2\rangle=\langle p^2\rangle=\tfrac12$. The phase-space coordinate conjugate to these operators is the **complex displacement**
@@ -60,9 +60,9 @@ $$
 $$
 so that a coherent state $|\alpha\rangle$ has $\langle x\rangle=\sqrt2\,\mathrm{Re}\,\alpha$ and $\langle p\rangle=\sqrt2\,\mathrm{Im}\,\alpha$. The factor of $\sqrt2$ and the sign of $i$ in $p$ are conventions, and the correlation function below is stated in this one; a different normalisation of $\alpha$ rescales the optimum but not the physics.
 
-The **displacement operator** is $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\bar\alpha a^{\mathrm{fop}})$, and the **displaced parity**
+The **displacement operator** is $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\bar\alpha a_{\mathrm{fop}})$, and the **displaced parity**
 $$
-\mathsf{P}(\alpha)=D(\alpha)\,(-1)^{\vec u}\,D(\alpha)^\dagger,\qquad \vec u=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}},
+\mathsf{P}(\alpha)=D(\alpha)\,(-1)^{\vec u}\,D(\alpha)^\dagger,\qquad \vec u=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}},
 $$
 is Hermitian, $*$-unitary, and has eigenvalues $\pm1$ exactly, because $(-1)^{\vec u}$ does and $D(\alpha)$ is $*$-unitary. It is the standard continuous-variable pseudo-spin: a genuinely continuous-family observable with a discrete, dichotomic, $\pm1$ spectrum. This is the observable family used throughout the article, because it is the family for which the CHSH combination is defined without further normalisation and for which the discrete bound $2$ applies verbatim as the classical bound.
 
@@ -181,7 +181,7 @@ $$
 $$
 for which $S=3\exp(-d^2)-\exp(-9d^2)$ and hence
 $$
-\boxed{\;S_{\max}^{\mathrm{epr}}=8\cdot 3^{-9/8}=2.3244947809\ldots\;}
+\boxed{\;S_{\mathrm{epr},\max}=8\cdot 3^{-9/8}=2.3244947809\ldots\;}
 $$
 The optimisation is one-dimensional along that line and is elementary; the numerical search over all four complex displacements agrees with it and does not exceed it. The value is exact for the ideal EPR state with displaced-parity observables, and it is the number that replaces the discrete Tsirelson bound for this state and this observable family. It is *not* a universal continuous-variable bound, and the article does not offer it as one: it is the boundary of one combination of state and observables.
 
@@ -213,7 +213,7 @@ But the ceiling is the least informative row of the table above. For the two-mod
 
 The obstruction is structural and is already proved in the corpus. It has two independent faces.
 
-**The algebra cannot hold the mode.** A quadrature $x$ has continuous spectrum, and every element of $\mathbb{B}\cong M_2(\mathbb{C})$ has a finite spectrum of at most two values. The parity $\mathsf{P}(\alpha)$, for all that its eigenvalues are $\pm1$, is built from $(-1)^{\vec u}$ and a displacement $D(\alpha)$; both are functions of the bosonic pair $(a^{\mathrm{fop}},a^{\mathrm{fop}\dagger})$, and one bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$ on an infinite-dimensional module. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* shows that no such pair exists in $\mathbb{B}$: a commutator has vanishing trace, while $\mathrm{Tr}(e_t)=2$, so the only central scalar a commutator can produce is $0$. The framework carries the **fermionic** canonical relation exactly for one mode — the truncated ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ — and the bosonic relation not at all. There is therefore no $\mathsf{P}(\alpha)$ in $\mathbb{B}$, no $xe_t$, no quadrature, and no phase-space displacement as an element of the algebra.
+**The algebra cannot hold the mode.** A quadrature $x$ has continuous spectrum, and every element of $\mathbb{B}\cong M_2(\mathbb{C})$ has a finite spectrum of at most two values. The parity $\mathsf{P}(\alpha)$, for all that its eigenvalues are $\pm1$, is built from $(-1)^{\vec u}$ and a displacement $D(\alpha)$; both are functions of the bosonic pair $(a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger})$, and one bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$ on an infinite-dimensional module. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* shows that no such pair exists in $\mathbb{B}$: a commutator has vanishing trace, while $\mathrm{Tr}(e_t)=2$, so the only central scalar a commutator can produce is $0$. The framework carries the **fermionic** canonical relation exactly for one mode — the truncated ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ — and the bosonic relation not at all. There is therefore no $\mathsf{P}(\alpha)$ in $\mathbb{B}$, no $xe_t$, no quadrature, and no phase-space displacement as an element of the algebra.
 
 **The algebra cannot hold the state or the arena.** The two-mode squeezed vacuum is a vector in the symmetric algebra of a two-mode one-particle space, a state on $\ell^2(\mathbb{N})^{\otimes2}$; it is infinite-dimensional and is not an element of $\mathbb{B}\otimes\mathbb{B}$, which has complex dimension sixteen. Writing "$|r\rangle$" as an idempotent of the tensor-product algebra would reproduce neither its spectrum nor its marginal, and the reduced thermal state $\sum_n p_n|n\rangle\langle n|$ has no image in $\mathbb{M}_+$, whose positive trace-one elements are exactly the Bloch ball.
 
@@ -223,7 +223,7 @@ The consequence is worth stating as plainly as the corpus states its other gaps.
 
 The gap can be located precisely by saying what would have to exist for the framework to have a native continuous-variable Bell problem.
 
-An infinite-dimensional module over $\mathbb{B}$ carrying a pair with $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, together with an element of the framework's own algebraic structure — not merely a matrix representation of it — whose analogue of $\mathcal S^2$ has a continuous spectrum with an explicit boundary; and a state in the algebra whose Born pairing with that element gives the two-mode squeezed correlator. None of the three is available, and the third is impossible in a four-dimensional $\mathbb{C}$-algebra. Whether some larger biquaternionic structure (a field of biquaternions, a $\mathbb{B}$-valued Weyl algebra) could carry them is a question this article does not answer; it records that the finite algebra does not, and that the standard construction of the bosonic Fock space is imported into the framework rather than derived from it.
+An infinite-dimensional module over $\mathbb{B}$ carrying a pair with $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, together with an element of the framework's own algebraic structure — not merely a matrix representation of it — whose analogue of $\mathcal S^2$ has a continuous spectrum with an explicit boundary; and a state in the algebra whose Born pairing with that element gives the two-mode squeezed correlator. None of the three is available, and the third is impossible in a four-dimensional $\mathbb{C}$-algebra. Whether some larger biquaternionic structure (a field of biquaternions, a $\mathbb{B}$-valued Weyl algebra) could carry them is a question this article does not answer; it records that the finite algebra does not, and that the standard construction of the bosonic Fock space is imported into the framework rather than derived from it.
 
 ## Summary
 
@@ -256,10 +256,10 @@ well below $2\sqrt{2}$. Different observable families give different boundaries;
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace reading at normalisation (Born rule) |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product arena of the discrete exercise |
-| $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ | Bosonic annihilation and creation operators, $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=1$ |
-| $x,p$ | Quadratures, $x=(a^{\mathrm{fop}}+a^{\mathrm{fop}\dagger})/\sqrt2$, $p=-i(a^{\mathrm{fop}}-a^{\mathrm{fop}\dagger})/\sqrt2$, $[x,p]=i$ |
+| $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ | Bosonic annihilation and creation operators, $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=1$ |
+| $x,p$ | Quadratures, $x=(a_{\mathrm{fop}}+a_{\mathrm{fop}}^{\dagger})/\sqrt2$, $p=-i(a_{\mathrm{fop}}-a_{\mathrm{fop}}^{\dagger})/\sqrt2$, $[x,p]=i$ |
 | $\alpha=(x+ip)/\sqrt2$ | Complex phase-space displacement, $|\alpha|^2=(x^2+p^2)/2$ |
-| $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\bar\alpha a^{\mathrm{fop}})$ | Displacement operator |
+| $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\bar\alpha a_{\mathrm{fop}})$ | Displacement operator |
 | $\mathsf{P}(\alpha)=D(\alpha)(-1)^{\vec u}D(\alpha)^\dagger$ | Displaced parity, spectrum $\{\pm1\}$, $\mathsf{P}(\alpha)^2=1$ |
 | $\langle\mathsf{P}(\alpha)\rangle=\pi W_1(\alpha)$ | Parity expectation from the Wigner function ($x$–$p$ normalisation, $\int W_1 d^2\alpha=\tfrac12$) |
 | $|r\rangle=\mathrm{sech}\,r\sum_n(\tanh r)^n|n\rangle_1|n\rangle_2$ | Two-mode squeezed vacuum |

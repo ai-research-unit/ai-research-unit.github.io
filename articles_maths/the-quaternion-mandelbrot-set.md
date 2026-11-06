@@ -12,7 +12,7 @@ The set is a compact body of revolution: it is obtained by revolving the ordinar
 
 The quadratic map, its critical orbit, the escape lemma, the filled Julia set and the complex planes are from *The Quaternion Quadratic Map and Its Julia Sets*; the complex Mandelbrot set and its escape-time algorithm are from *The Mandelbrot Set and the Quadratic Family*; the quaternion norm and its multiplicativity are from *Quaternion Norm and Invertibility*; and the dimensions and the coverings used below are from *Fractal Geometry*. No physics is invoked.
 
-Throughout, $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2+q_y^2+q_z^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, $\operatorname{Sc}\tilde q=q_t$ and $\operatorname{Vect}\tilde q=\vec q$. A parameter is written $c=c_0+\vec c$ with $\vec c\in\operatorname{Im}\mathbb{H}$, and $\mathcal{M}_{\mathbb{C}}$ is the complex Mandelbrot set of $z \mapsto z^2+\varkappa^{\mathrm{crd}}$, $\varkappa^{\mathrm{crd}}\in\mathbb{C}$.
+Throughout, $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2+q_y^2+q_z^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, $\operatorname{Sc}\tilde q=q_t$ and $\operatorname{Vect}\tilde q=\vec q$. A parameter is written $c=c_0+\vec c$ with $\vec c\in\operatorname{Im}\mathbb{H}$, and $\mathcal{M}_{\mathbb{C}}$ is the complex Mandelbrot set of $z \mapsto z^2+\varkappa_{\mathrm{crd}}$, $\varkappa_{\mathrm{crd}}\in\mathbb{C}$.
 
 ## The Connectedness Locus
 

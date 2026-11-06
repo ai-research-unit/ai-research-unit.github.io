@@ -342,10 +342,10 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
+Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
 
 $$
-\mathcal{F}[\partial/\partial Q_t F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
+\mathcal{F}[\partial/\partial Q_t F_{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F_{\mathrm{fn}}](\omega),
 $$
 
 where the sign depends on the convention for the kernel (the sign is positive for the kernel $\exp(+2\pi \rho \omega t)$ and negative for $\exp(-2\pi \rho \omega t)$).
@@ -363,7 +363,7 @@ where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conju
 The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
-\boxed{\; \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega) \;}.
+\boxed{\; \mathcal{F}[\Box F_{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F_{\mathrm{fn}}](\omega) \;}.
 $$
 
 The multiplier is a scalar (times $e_t$), and it vanishes on the **null cone**
@@ -372,7 +372,7 @@ $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$
 
-So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.
+So the Fourier transform of a solution of $\Box F_{\mathrm{fn}} = 0$ is supported on the null cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.
 
 ### The Square of the Gradient
 
@@ -470,10 +470,10 @@ and this holds for every pair of pure roots, commuting or not. The unit-norm pro
 **Frequency reversal.** Reversing the sign of the frequencies conjugates the kernel **and exchanges the two factors**:
 
 $$
-\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K^{\mathrm{ex}}(\tilde{Q}, -\omega),
+\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K_{\mathrm{ex}}(\tilde{Q}, -\omega),
 $$
 
-where $K^{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.
+where $K_{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.
 
 **On the factorisation into complex transforms.** The factorisation of the next section diagonalises one root. Two elements that are simultaneously diagonalisable commute, so two roots that do not commute admit no common eigenbasis, and there is no basis in which both units of the two-unit kernel act diagonally at once. The pairs that do commute — equal roots, opposite roots, and any pair containing the central imaginary $i$ — keep a common eigenbasis, and there the one-unit factorisation applies to both variables. Whether the two-unit transform with a non-commuting pair still reduces to a fixed finite family of complex transforms is not settled here, and it is listed among the open questions.
 
@@ -487,7 +487,7 @@ $$
 
 Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.
 
-**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa^{\mathrm{crd}}_k e_t$, $\varkappa^{\mathrm{crd}}_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
+**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \varkappa_{\mathrm{crd},k} e_t$, $\varkappa_{\mathrm{crd},k} \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
 $$
 \sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} \langle Z(\tilde{Q})\rangle_{\natural} \, d\mu(\tilde{Q}),
@@ -553,7 +553,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 1. **The precise invertibility condition.** Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.
 
-2. **The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
+2. **The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
 
 3. **The Plancherel theorem for general functions.** Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.
 

@@ -30,7 +30,7 @@ $$
 The four idempotents correspond to the four Bell states
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}^{\mathrm{sp}+}\rangle
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle,\quad |Ξ^{+}\rangle,\quad |Ξ^{-}\rangle,\quad |\tilde{Ξ}_{\mathrm{sp}}^+\rangle
 $$
 
 according to the sign pattern $\epsilon$; the companion article fixes the correspondence. The resource shared by Alice and Bob is one of these, conventionally $\tilde\Pi_{Ξ^+}$.
@@ -161,7 +161,7 @@ The capacity formula is standard (the Bennett–Shor–Smolin–Thapliyal formul
 
 All the algebraic claims above were verified by direct computation in the tensor-product algebra.
 
-**The four encoded states.** Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}^{\mathrm{sp}+}\rangle$, $\vec e_y\to|\tilde{Ξ}^{\mathrm{sp}-}\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.
+**The four encoded states.** Starting from the Bell idempotent $\tilde\Pi_{Ξ^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|Ξ^{+}\rangle$, $\vec e_x\to|\tilde{Ξ}_{\mathrm{sp}}^+\rangle$, $\vec e_y\to|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$, $\vec e_z\to|Ξ^{-}\rangle$, each with overlap one and zero overlap with the other three.
 
 **Orthogonality.** The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon,\epsilon_{\mathrm{alt}}}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.
 

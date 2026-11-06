@@ -43,14 +43,14 @@ The Noetherian condition is the stable one: it is preserved by quotients, locali
 
 ## Artinian Rings
 
-An Artinian ring is a finite product of Artinian local rings, and every Artinian ring is Noetherian by Akizuki–Hopkins–Levitzki and of Krull dimension $0$. The standard Artinian rings are the fields, the finite rings and the local rings $k[x]/(x^n)$; the dual numbers $\mathbb{C}^{\mathrm{dln}}_F = F[x]/(x^2)$ are the smallest non-reduced example.
+An Artinian ring is a finite product of Artinian local rings, and every Artinian ring is Noetherian by Akizuki–Hopkins–Levitzki and of Krull dimension $0$. The standard Artinian rings are the fields, the finite rings and the local rings $k[x]/(x^n)$; the dual numbers $\mathbb{C}_{\mathrm{dln},F} = F[x]/(x^2)$ are the smallest non-reduced example.
 
 | Ring | The property it has | Introduced in |
 |---|---|---|
 | Field $F$ | Artinian of length $1$, of Krull dimension $0$ | *Fields* |
 | $\mathbb{Z}/n\mathbb{Z}$ | Artinian and Noetherian; a product of local rings $\mathbb{Z}/p_i^{e_i}\mathbb{Z}$ | *Noetherian and Artinian Rings* |
 | $k[x]/(x^n)$ | local Artinian of length $n$, with nilpotent maximal ideal | *Noetherian and Artinian Rings* |
-| Dual numbers $\mathbb{C}^{\mathrm{dln}}_F = F[x]/(x^2)$ | local Artinian, non-reduced, of length $2$ | *Noetherian and Artinian Rings* |
+| Dual numbers $\mathbb{C}_{\mathrm{dln},F} = F[x]/(x^2)$ | local Artinian, non-reduced, of length $2$ | *Noetherian and Artinian Rings* |
 | Artinian local ring | a local ring of finite length; the factors in the product decomposition | *Noetherian and Artinian Rings* |
 | Finite product of Artinian local rings | the general Artinian ring, by the structure theorem | *Noetherian and Artinian Rings* |
 | Reduced Artinian ring | a finite product of fields; the reduced rings of Krull dimension $0$ | *Reduced Rings and the Nilradical* |
@@ -68,8 +68,8 @@ A ring is **semisimple** when its regular module is a direct sum of simples, equ
 | $\mathbb{H}$ | a division ring; simple Artinian and Noetherian, of Krull dimension $0$, semisimple | *Division Algebras* |
 | $M_2(\mathbb{R})$ | simple Artinian and Noetherian; the matrix ring $M_2(\mathbb{R})$, of length $2$ over $\mathbb{R}$ | *Examples of Algebras* |
 | Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | isomorphic to $M_2(\mathbb{C})$ over $\mathbb{C}$; simple Artinian and Noetherian | *The Biquaternion Algebra* |
-| Split-complex numbers $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[t]/(t^2-1)$ | isomorphic to $\mathbb{R}\times\mathbb{R}$; reduced Artinian of dimension $0$, not a field | *Split-Complex Algebra* |
-| Dual numbers $\mathbb{C}^{\mathrm{dln}}$ | local Artinian, non-reduced; the smallest non-semisimple Artinian ring | *Dual Numbers Algebra* |
+| Split-complex numbers $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[t]/(t^2-1)$ | isomorphic to $\mathbb{R}\times\mathbb{R}$; reduced Artinian of dimension $0$, not a field | *Split-Complex Algebra* |
+| Dual numbers $\mathbb{C}_{\mathrm{dln}}$ | local Artinian, non-reduced; the smallest non-semisimple Artinian ring | *Dual Numbers Algebra* |
 | Non-example: $\mathbb{B}$ treated as a field | fails: it has zero divisors, so it is not a division ring, though it is Artinian | *The Biquaternion Algebra* |
 | Non-example: $M_2(\mathbb{R})$ treated as a division ring | fails: a nonzero nilpotent matrix has no inverse | *Examples of Algebras* |
 
@@ -89,7 +89,7 @@ The two conditions are not symmetric: DCC implies ACC by Akizuki–Hopkins–Lev
 | A Noetherian ring of dimension $0$ | yes | yes | Artinian by the structure theorem | *Integral Extensions and Krull Dimension* |
 | A ring of finite length | yes | yes | the length is additive in short exact sequences | *Noetherian and Artinian Rings* |
 | $k[x]/(x^n)$ | yes | yes | local Artinian of length $n$, non-reduced for $n \geq 2$ | *Noetherian and Artinian Rings* |
-| $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$ | yes | yes | reduced Artinian of dimension $0$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$ | yes | yes | reduced Artinian of dimension $0$ | *Split-Complex Algebra* |
 
 The one-way implication is the content of Akizuki–Hopkins–Levitzki, and the table shows its sharpness: every Artinian row has both conditions, while $\mathbb{Z}$, $k[x]$ and the Dedekind domains have the ACC alone. The Artinian rows are exactly the Noetherian rows of Krull dimension $0$, so the two conditions differ precisely by the dimension.
 
@@ -109,7 +109,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $S^{-1}R$ | localisation of a ring |
 | $M_n(D)$ | matrix ring over a division ring |
 | $\mathbb{H}$, $\mathbb{B}$ | quaternions and biquaternions |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | split-complex numbers and dual numbers |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | split-complex numbers and dual numbers |
 | $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ | integers and their quotients |
 | $\mathbb{R}$, $\mathbb{C}$ | the reals and the complex numbers |
 | $\prod_i M_{n_i}(D_i)$ | Wedderburn–Artin decomposition |

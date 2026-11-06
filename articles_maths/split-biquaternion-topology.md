@@ -9,7 +9,7 @@ The treatment is purely mathematical. No physics is invoked; "null cone" names t
 
 ## The Underlying Space and Its Contractibility
 
-**Proposition.** As a real vector space $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$, the algebra is contractible, and the punctured algebra $\mathbb{B}^{\mathrm{spl}} \setminus \{0\}$ is homotopy equivalent to the seven-sphere $S^7$.
+**Proposition.** As a real vector space $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$, the algebra is contractible, and the punctured algebra $\mathbb{B}_{\mathrm{spl}} \setminus \{0\}$ is homotopy equivalent to the seven-sphere $S^7$.
 
 **Proof.** The algebra is a real vector space of dimension $8$; a vector space is contractible, and removing a point from $\mathbb{R}^n$ gives a space homotopy equivalent to $S^{n-1}$, here $S^7$.
 
@@ -25,7 +25,7 @@ and it is a genuine norm: it is positive definite because the real part of $\lan
 
 **Definition.** The **unit sphere** of the algebra is $S_{\mathbb{E}} = \{\tilde{Q} : \|\tilde{Q}\| = 1\} \cong S^7$.
 
-**Proposition.** The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{B}^{\mathrm{spl}}\setminus\{0\}$ onto it.
+**Proposition.** The unit sphere of the algebra is a seven-sphere, and the map $\tilde{Q} \mapsto \tilde{Q}/\|\tilde{Q}\|$ is a deformation retraction of $\mathbb{B}_{\mathrm{spl}}\setminus\{0\}$ onto it.
 
 **Proof.** The equation $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = 1$ is the equation of the unit sphere in $\mathbb{R}^8$, and radial normalisation is the standard retraction.
 
@@ -36,14 +36,14 @@ The unit sphere of the Euclidean norm is **not** the norm-one group: the norm-on
 **Definition.** The **null cone** of the algebra is the zero set of the Hermitian form of scalar part $g(\tilde{Q}) = \sum_\mu (q_\mu^2 - q'^2_\mu)$:
 
 $$
-C = \left\{ \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
+C = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : g(\tilde{Q}) = 0 \right\} , \qquad g(\tilde{Q}) = 0 \iff \sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu .
 $$
 
 **Proposition.** The null cone $C$ is a closed cone of dimension $7$ through the origin, connected when the origin is removed, and the split-biquaternion norm $\langle\cdot\rangle_{\natural}$ vanishes on no point of $C$ except the origin.
 
 **Proof.** The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $\langle\cdot\rangle_{\natural}$ never vanishes there.
 
-**Remark.** The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of *Split-Biquaternion Rotations and the Lorentz Group*), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{C}^{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.
+**Remark.** The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of *Split-Biquaternion Rotations and the Lorentz Group*), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{C}_{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.
 
 ## The Link of the Null Cone
 
@@ -63,7 +63,7 @@ The link of the null cone is thus the same manifold as the norm-one group $S^3 \
 
 ## The Group of Units and Its Homotopy
 
-**Theorem.** The group of units is ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.
+**Theorem.** The group of units is ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.
 
 **Proof.** Units are pairs of nonzero quaternions, and $\mathbb{H}^\times \cong \mathbb{R}_{>0}\times S^3$; the positive rays are contractible, so the unit group deformation retracts onto $S^3\times S^3$. A product of spheres of dimension $3$ is simply connected.
 
@@ -71,7 +71,7 @@ The link of the null cone is thus the same manifold as the norm-one group $S^3 \
 
 $$
 \boxed{\;
-\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z({\mathbb{B}^{\mathrm{spl}}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z}
+\pi_t = 0, \quad \pi_x = 0, \quad \pi_y = 0, \quad \pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}\oplus\mathbb{Z}
 \;},
 $$
 
@@ -103,7 +103,7 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$ | The algebra as a topological space |
+| $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$ | The algebra as a topological space |
 | $\|\tilde{Q}\| = (\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural})^{1/2}$ | Euclidean norm |
 | $S_{\mathbb{E}} = \{\|\tilde{Q}\| = 1\} \cong S^7$ | Euclidean unit sphere |
 | $g(\tilde{Q}) = \langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, the diagonal of the Hermitian form, signature $(4,4)$ |
@@ -111,9 +111,9 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 | $L = C\cap S_{\mathbb{E}} \cong S^3\times S^3$ | Link of the null cone |
 | $Z_\pm = \{\tilde{Q}_\pm = 0\}$ | The two four-dimensional zero divisor subspaces |
 | $Z = Z_+\cup Z_-$ | Zero divisor set, the failure surface of the polar form |
-| ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units |
+| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units |
 | $G_1 = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
-| $\pi_z({\mathbb{B}^{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$ | Third homotopy group of the unit group |
+| $\pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$ | Third homotopy group of the unit group |
 
 ## Further Reading
 

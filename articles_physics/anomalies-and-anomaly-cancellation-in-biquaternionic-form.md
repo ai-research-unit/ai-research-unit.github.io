@@ -16,9 +16,9 @@ The framework's contribution is structural, and is stated at the outset.
 
 **The order of the article.** A section states the anomaly as a quantum failure of a classical symmetry and fixes what the framework contributes to it and what it transcribes. A section gives the axial anomaly, its current, its density, and the identification of the density with $I_2$. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A section treats the anomaly as a topological density, a section the non-abelian consistency conditions, and a section the 't Hooft vertex. A section separates the two traces the article uses from the one it does not. A table collects what the framework supplies, transcribes, and does not supply; the closing sections are the legacy gamma section, the Summary, the Summary of Notation, and Further Reading.
 
-**The objects, cited and not defined.** The state is an element of $\mathbb{B}$, written $\tilde{Ξ}^{\mathrm{sp}}$. The four frame cells of the coordinates and the chirality cell of the frame are the five cells of *Matrix Representations Conventions*; the chirality cell is the one of *Special Element Conventions*, §*The Chirality Convention*, written $\mathsf{V}^{\mathrm{vol}}$, and its two values are carried by the subscript of the element, $\tilde{Ξ}^{\mathrm{sp}}_L$ for the value $-1$ and $\tilde{Ξ}^{\mathrm{sp}}_R$ for the value $+1$.
+**The objects, cited and not defined.** The state is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$. The four frame cells of the coordinates and the chirality cell of the frame are the five cells of *Matrix Representations Conventions*; the chirality cell is the one of *Special Element Conventions*, §*The Chirality Convention*, written $\mathsf{V}_{\mathrm{vol}}$, and its two values are carried by the subscript of the element, $\tilde{Ξ}_{\mathrm{sp},L}$ for the value $-1$ and $\tilde{Ξ}_{\mathrm{sp},R}$ for the value $+1$.
 
-**The one symbol kept.** The **Dirac adjoint** $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ is a pairing of two states and not a cell of the frame; it is the one operator symbol the displays keep, and it is kept because a pairing has no action form.
+**The one symbol kept.** The **Dirac adjoint** $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ is a pairing of two states and not a cell of the frame; it is the one operator symbol the displays keep, and it is kept because a pairing has no action form.
 
 **The derived form this article uses.** This article defines none of the cited objects. Where the body writes one of them, it writes what the cell does to an element, and that writing is the article's derived form. Written by what it does, the frame cell of the coordinate $x_\mu$ is the map $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$, and the chirality cell is the map $Q\mapsto-i\,Q\,\vec e_z$. The two writings are one object read twice, and the rest of the article uses the second. The same objects under their gamma names are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 
@@ -63,30 +63,30 @@ The framework results used here are those of the companion articles:
 
 **Two structural facts make the computation tractable.** First, in four dimensions the relevant diagram is a triangle with one axial and two vector currents (the axial anomaly) or three gauge currents (the gauge anomaly); higher-point diagrams do not add new anomalous terms. Second, the anomaly is a **trace** statement: the diagram's coefficient is a spinor trace times a trace of gauge generators, and each trace is computed once and for all.
 
-**What the framework contributes here, and what it does not.** Every anomaly coefficient in the article carries $\epsilon_{\mu\nu\rho\sigma}$, and that tensor is the standard spinor trace, quoted from the standard calculation and written out under its gamma names in the closing legacy section. The framework contributes no new value for it. What it contributes is the identity of the object the trace is weighted by. The chirality that weights the anomaly is the algebra's own chirality cell $\mathsf{V}^{\mathrm{vol}}$, the same cell the mass term applies, and the density that comes out is the algebra's own invariant $I_2$. So the two ingredients of the anomaly — a chiral weight and a pseudoscalar density — are both elements of the algebra rather than objects attached to it from outside.
+**What the framework contributes here, and what it does not.** Every anomaly coefficient in the article carries $\epsilon_{\mu\nu\rho\sigma}$, and that tensor is the standard spinor trace, quoted from the standard calculation and written out under its gamma names in the closing legacy section. The framework contributes no new value for it. What it contributes is the identity of the object the trace is weighted by. The chirality that weights the anomaly is the algebra's own chirality cell $\mathsf{V}_{\mathrm{vol}}$, the same cell the mass term applies, and the density that comes out is the algebra's own invariant $I_2$. So the two ingredients of the anomaly — a chiral weight and a pseudoscalar density — are both elements of the algebra rather than objects attached to it from outside.
 
-The chiral weight is settled by $\mathrm{tr}(\mathsf{V}^{\mathrm{vol}})=0$ in the section *The Traces Involved, and the One That Is Not*; the density is settled in the section that follows this one, where the axial current is exhibited as the insertion of the cell the mass uses.
+The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in the section *The Traces Involved, and the One That Is Not*; the density is settled in the section that follows this one, where the axial current is exhibited as the insertion of the cell the mass uses.
 
 ## The Axial Anomaly
 
 **The current and the equation it belongs to.** The corpus's Dirac pair is
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\,\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\,\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 one equation per chirality, both sides biquaternions; the first is the right-handed equation and the second is its quaternion conjugate. At $m=0$ the pair decouples,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0,
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 and each equation is identical in form to the source-free Maxwell equation; the mass is what ties the two chiralities together, and it is the only term that does.
@@ -97,18 +97,18 @@ $$
 \tilde\nabla^{\natural}F=-i\,m\,\bar{F}\,\vec e_z ,
 $$
 
-for a biquaternion field $F$ — the two-sided Dirac field, not the component field strength $F_{\mu\nu}$ — with $\bar{F}$ its coefficient conjugate. The derivative acts on the left, the mass term is the chirality cell applied to $\bar{F}$, $m\,\mathsf{V}^{\mathrm{vol}}\bar{F}=-im\bar{F}\vec e_z$, and the conjugation supplies the antilinear part. The one-sided pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and the two are related by the dictionary of *The Dirac Equation in Biquaternionic Form* but are different operators: the pair is linear in the field, the two-sided equation is antilinear in its mass term. The anomaly below is read from the one-sided pair, because the axial current is a bilinear of the state and the measure is the measure of that state. What the two-sided form adds is the structural identity behind the current: the cell $\mathsf{V}^{\mathrm{vol}}$ that the mass applies is the cell the axial current inserts, so the mass term and the axial current are the two places where chirality enters.
+for a biquaternion field $F$ — the two-sided Dirac field, not the component field strength $F_{\mu\nu}$ — with $\bar{F}$ its coefficient conjugate. The derivative acts on the left, the mass term is the chirality cell applied to $\bar{F}$, $m\,\mathsf{V}_{\mathrm{vol}}\bar{F}=-im\bar{F}\vec e_z$, and the conjugation supplies the antilinear part. The one-sided pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and the two are related by the dictionary of *The Dirac Equation in Biquaternionic Form* but are different operators: the pair is linear in the field, the two-sided equation is antilinear in its mass term. The anomaly below is read from the one-sided pair, because the axial current is a bilinear of the state and the measure is the measure of that state. What the two-sided form adds is the structural identity behind the current: the cell $\mathsf{V}_{\mathrm{vol}}$ that the mass applies is the cell the axial current inserts, so the mass term and the axial current are the two places where chirality enters.
 
 **The currents.** For the one-sided pair, the common phase is a symmetry at every $m$, because the mass is central and passes through it, so the vector current
 
 $$
-j_{\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\bigl(i\,e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_{\nu(\mu)}\bigr)
+j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}\bigr)
 $$
 
 is conserved at every $m$. An axial rotation assigns opposite phases to the two chiralities, so the mass term, which pairs them, is not invariant under it; the axial current therefore carries the chirality cell,
 
 $$
-j_{5\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\bigl(e_\mu\,\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\vec e_{\nu(\mu)}\bigr),
+j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\bigl(e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\vec e_{\nu(\mu)}\bigr),
 $$
 
 where the $i$ of the frame cell and the $-i$ of the chirality cell have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\nu(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\nu(t)=x$ and $\nu(k)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
@@ -116,10 +116,10 @@ where the $i$ of the frame cell and the $-i$ of the chirality cell have been red
 **The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame cells, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
 
 $$
-\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
+\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 $$
 
-where the mass term has been reduced in the same way, $2im\,\mathsf{V}^{\mathrm{vol}}\tilde{Ξ}^{\mathrm{sp}}=2im(-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z)=2m\,\tilde{Ξ}^{\mathrm{sp}}\vec e_z$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
+where the mass term has been reduced in the same way, $2im\,\mathsf{V}_{\mathrm{vol}}\tilde{Ξ}_{\mathrm{sp}}=2im(-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)=2m\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
 
 **The density, with its sign and its coefficient.** With $F_{r'_t i}=E_i$ and $F_{ij}=\epsilon_{ijk}B_k$ the contraction evaluates exactly,
 
@@ -158,9 +158,9 @@ $$
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
 $$
 
-which is why it is not renormalised and why it is fixed by topology. Third, the axial rotation is generated by the chirality cell itself: $\tilde{Ξ}^{\mathrm{sp}}\mapsto e^{i\alpha\mathsf{V}^{\mathrm{vol}}}\tilde{Ξ}^{\mathrm{sp}}$. Because $i\mathsf{V}^{\mathrm{vol}}$ is the right multiplication by $\vec e_z$, the exponential is a right multiplication, $e^{i\alpha\mathsf{V}^{\mathrm{vol}}}\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}\,e^{\alpha\vec e_z}=\cos\alpha\,\tilde{Ξ}^{\mathrm{sp}}+\sin\alpha\,\tilde{Ξ}^{\mathrm{sp}}\vec e_z$, so the two imaginary units of $i\alpha\mathsf{V}^{\mathrm{vol}}$ reduce to a real parameter and a single right multiplier. That is why the axial current carries the chirality cell and not a separate object. The pseudoscalar character and the total-derivative form are standard; what the framework adds is that the density is the second invariant of its own field, and that the chirality cell is $i$ times the volume cell.
+which is why it is not renormalised and why it is fixed by topology. Third, the axial rotation is generated by the chirality cell itself: $\tilde{Ξ}_{\mathrm{sp}}\mapsto e^{i\alpha\mathsf{V}_{\mathrm{vol}}}\tilde{Ξ}_{\mathrm{sp}}$. Because $i\mathsf{V}_{\mathrm{vol}}$ is the right multiplication by $\vec e_z$, the exponential is a right multiplication, $e^{i\alpha\mathsf{V}_{\mathrm{vol}}}\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\,e^{\alpha\vec e_z}=\cos\alpha\,\tilde{Ξ}_{\mathrm{sp}}+\sin\alpha\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, so the two imaginary units of $i\alpha\mathsf{V}_{\mathrm{vol}}$ reduce to a real parameter and a single right multiplier. That is why the axial current carries the chirality cell and not a separate object. The pseudoscalar character and the total-derivative form are standard; what the framework adds is that the density is the second invariant of its own field, and that the chirality cell is $i$ times the volume cell.
 
-**The physical consequence, stated and not developed.** The anomaly makes $\pi^0\to\gamma\gamma$ possible at the observed rate and makes the axial $\mathrm{U}(1)$ of quantum chromodynamics explicitly broken at the quantum level; the $\mathrm{U}(1)_A$ problem and its resolution by the $\theta^{\mathrm{vac}}$ parameter and the axion belong to the corpus's other subcategories and are not treated here. The point for the fermion sector is the divergence identity itself: the axial current of any single massless Dirac fermion is not conserved quantum-mechanically, and no choice of regulator removes the term without moving the breaking elsewhere.
+**The physical consequence, stated and not developed.** The anomaly makes $\pi^0\to\gamma\gamma$ possible at the observed rate and makes the axial $\mathrm{U}(1)$ of quantum chromodynamics explicitly broken at the quantum level; the $\mathrm{U}(1)_A$ problem and its resolution by the $\theta_{\mathrm{vac}}$ parameter and the axion belong to the corpus's other subcategories and are not treated here. The point for the fermion sector is the divergence identity itself: the axial current of any single massless Dirac fermion is not conserved quantum-mechanically, and no choice of regulator removes the term without moving the breaking elsewhere.
 
 **Why the anomaly is exact.** The Adler–Bardeen theorem states that the coefficient of the anomaly is the one-loop value, unaffected by higher-order corrections. The modern reason is that the **integrated** anomaly is the index of the Dirac operator, an integer topological invariant; a continuous renormalisation cannot change an integer, so the coefficient is protected. The index statement is the subject of the general gauge apparatus and of the companion article on the Fujikawa method; here it is noted as the reason the coefficient above is stable.
 
@@ -250,7 +250,7 @@ The arithmetic is instructive in one respect: the cubic sum does **not** vanish 
 
 **What the conditions constrain, and what they do not.** Anomaly cancellation constrains the hypercharges, the colours, and the weak representations. It does **not** fix the values uniquely, since four homogeneous equations on several charges have a family of solutions that only further input reduces to the observed spectrum; it does not fix the overall hypercharge normalisation; it says nothing about gauge singlets; and it does **not** constrain the number of generations, because each generation contributes the sums above independently and $N_g$ copies contribute $N_g$ times zero. The framework's position is the constraint itself: it can state and verify the conditions, and it cannot select the spectrum. The companion article on the number of generations takes up the counting.
 
-**A consistency remark on the chiral assignment.** The conditions are statements about a **chiral** assignment of charges to a state, with independent charges on its two chiral parts: $ϙ_L$ on $\tilde{Ξ}^{\mathrm{sp}}_L$ and $ϙ_R$ on $\tilde{Ξ}^{\mathrm{sp}}_R$. The framework's own centre does not supply such an assignment; a chiral abelian symmetry can be *written* on a state by giving the two parts independent charges, and it is gauge covariant, with the companion article on chiral fermions deriving from the mass term the selection rule $ϙ_L=ϙ_R$; but it is not generated by the algebra. The Standard Model's hypercharge is therefore an input on the state, and the cancellation is verified on it rather than derived from it.
+**A consistency remark on the chiral assignment.** The conditions are statements about a **chiral** assignment of charges to a state, with independent charges on its two chiral parts: $ϙ_L$ on $\tilde{Ξ}_{\mathrm{sp},L}$ and $ϙ_R$ on $\tilde{Ξ}_{\mathrm{sp},R}$. The framework's own centre does not supply such an assignment; a chiral abelian symmetry can be *written* on a state by giving the two parts independent charges, and it is gauge covariant, with the companion article on chiral fermions deriving from the mass term the selection rule $ϙ_L=ϙ_R$; but it is not generated by the algebra. The Standard Model's hypercharge is therefore an input on the state, and the cancellation is verified on it rather than derived from it.
 
 **A sterile fermion is unconstrained.** A right-handed neutrino, carrying $Y=0$ and no colour or weak charge, contributes zero to every one of the four sums. Anomaly cancellation therefore gives **no information** about the existence or the number of sterile fermions, and a gauge-singlet Majorana mass for such a field is not forbidden by any anomaly condition. This is the fermion-sector statement that makes the see-saw mechanism of the companion article possible at all: the heavy state whose mass suppresses the light neutrino mass carries no gauge quantum numbers, and the spectrum that cancels the anomalies is silent about it.
 
@@ -314,21 +314,21 @@ where $D$ is the massless Dirac operator of the pair above, the representative o
 **The vertex.** The axial anomaly can be written as an effective interaction. For $N_f$ massless flavours, a single instanton of the colour gauge field generates a $2N_f$-fermion vertex — the 't Hooft determinant — which is chirally non-invariant:
 
 $$
-\mathcal{L}_{\text{'t Hooft}} \;\propto\; \det_{f,f'}\big(\tilde{Ξ}^{\mathrm{sp}\dagger}_{fL}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}}_{f'R}\big) + \text{h.c.},
+\mathcal{L}_{\text{'t Hooft}} \;\propto\; \det_{f,f'}\big(\tilde{Ξ}_{\mathrm{sp},fL}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp},f'R}\big) + \text{h.c.},
 $$
 
-with one factor of each left- and each right-handed field, the determinant running over the flavour labels $f,f'$. The operator has the quantum numbers of the anomaly, it breaks the axial $\mathrm{U}(1)_A$, and it leaves the non-abelian chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ intact. In the fermion sector this is the anomalous counterpart of the condensate: where the condensate breaks the axial symmetry **spontaneously**, the 't Hooft vertex breaks its axial $\mathrm{U}(1)$ subgroup **explicitly**, and the two together are what resolve the $\mathrm{U}(1)_A$ problem of quantum chromodynamics. The vertex is a six-fermion operator for $N_f=3$; the framework carries it as a product of the bilinears it already has, since each factor $\tilde{Ξ}^{\mathrm{sp}\dagger}_{fL}iR_{\vec e_x}^{\mathrm{axf}}\tilde{Ξ}^{\mathrm{sp}}_{f'R}$ is the linear chiral pairing of the mass term.
+with one factor of each left- and each right-handed field, the determinant running over the flavour labels $f,f'$. The operator has the quantum numbers of the anomaly, it breaks the axial $\mathrm{U}(1)_A$, and it leaves the non-abelian chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ intact. In the fermion sector this is the anomalous counterpart of the condensate: where the condensate breaks the axial symmetry **spontaneously**, the 't Hooft vertex breaks its axial $\mathrm{U}(1)$ subgroup **explicitly**, and the two together are what resolve the $\mathrm{U}(1)_A$ problem of quantum chromodynamics. The vertex is a six-fermion operator for $N_f=3$; the framework carries it as a product of the bilinears it already has, since each factor $\tilde{Ξ}_{\mathrm{sp},fL}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp},f'R}$ is the linear chiral pairing of the mass term.
 
-**What is not treated.** The resolution of the $\mathrm{U}(1)_A$ problem in full involves the $\theta^{\mathrm{vac}}$ parameter, the vacuum angle, and — if it is a symmetry — the axion; the $\theta^{\mathrm{vac}}$ parameter belongs to the corpus's general gauge apparatus, and the axion to the spin-$0$ subcategory. This article states only the fermion-sector fact: the anomaly generates a chirally non-invariant multifermion vertex, and the divergence identity of the section *The Axial Anomaly* is its local form.
+**What is not treated.** The resolution of the $\mathrm{U}(1)_A$ problem in full involves the $\theta_{\mathrm{vac}}$ parameter, the vacuum angle, and — if it is a symmetry — the axion; the $\theta_{\mathrm{vac}}$ parameter belongs to the corpus's general gauge apparatus, and the axion to the spin-$0$ subcategory. This article states only the fermion-sector fact: the anomaly generates a chirally non-invariant multifermion vertex, and the divergence identity of the section *The Axial Anomaly* is its local form.
 
 ## The Traces Involved, and the One That Is Not
 
 **Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **spinor trace**, over the four complex dimensions of the algebra, which supplies $\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A_{abc}=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
 
-**The chiral trace is a difference.** The chirality cell takes two values, and the trace of a composite with $\mathsf{V}^{\mathrm{vol}}$ is the trace on the part where the value is $-1$ minus the trace on the part where it is $+1$. The chirality-weighted trace is therefore a **difference** and not a sum, which is the algebraic origin of the left-minus-right rule: a left-handed state contributes with one sign and a right-handed one with the other, and the anomaly is their difference. On the identity action the two parts have the same dimension and the difference vanishes,
+**The chiral trace is a difference.** The chirality cell takes two values, and the trace of a composite with $\mathsf{V}_{\mathrm{vol}}$ is the trace on the part where the value is $-1$ minus the trace on the part where it is $+1$. The chirality-weighted trace is therefore a **difference** and not a sum, which is the algebraic origin of the left-minus-right rule: a left-handed state contributes with one sign and a right-handed one with the other, and the anomaly is their difference. On the identity action the two parts have the same dimension and the difference vanishes,
 
 $$
-\mathrm{tr}(\mathsf{V}^{\mathrm{vol}})=0 ,
+\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0 ,
 $$
 
 the identity that keeps the chirality-weighted trace free of an identity term, so that the anomaly is a total derivative rather than a shift of the vacuum energy.
@@ -340,45 +340,45 @@ the identity that keeps the chirality-weighted trace free of an identity term, s
 | Item | Status |
 |---|---|
 | The $\epsilon_{\mu\nu\rho\sigma}$ of the anomaly | **Transcribed** from the standard spinor trace; written out under its gamma names in the legacy section, not re-derived |
-| The anomaly's chiral weight as an element of the algebra: $\mathsf{V}^{\mathrm{vol}}$, the cell the mass applies and $i$ times the volume cell, with $\mathrm{tr}(\mathsf{V}^{\mathrm{vol}})=0$ | **Supplied** by the corpus's own display (*Special Element Conventions*, §*The Chirality Convention*); chirality is not an extra ingredient, and the vanishing trace is what makes the anomaly a total derivative |
+| The anomaly's chiral weight as an element of the algebra: $\mathsf{V}_{\mathrm{vol}}$, the cell the mass applies and $i$ times the volume cell, with $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | **Supplied** by the corpus's own display (*Special Element Conventions*, §*The Chirality Convention*); chirality is not an extra ingredient, and the vanishing trace is what makes the anomaly a total derivative |
 | The axial anomaly density as a multiple of the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied** (with the instanton article's normalization); the coefficient is standard, the density being $-\frac{e^2}{2\pi^2}I_2$ |
 | The exactness of the anomaly coefficient (Adler–Bardeen) | **Transcribed**; the index-theoretic reason belongs to the general gauge apparatus |
 | The Standard Model's cancellation conditions and their verification | **Transcribed** and recomputed exactly |
 | Anomaly-freedom of the framework's own $\mathrm{U}(1)$ and $\mathrm{SU}(2)$ | **Supplied**; vector-like centre and no cubic Casimir |
 | A chiral gauge group, and the spectrum it would constrain | **Not supplied**; the centre is vector-like and the $\mathrm{SU}(2)$ acts vector-like on the algebra |
-| The $\theta^{\mathrm{vac}}$ parameter, the $\mathrm{U}(1)_A$ problem, and the axion | **Outside**; the $\theta^{\mathrm{vac}}$ parameter belongs to the general gauge apparatus, the axion to the spin-$0$ subcategory |
+| The $\theta_{\mathrm{vac}}$ parameter, the $\mathrm{U}(1)_A$ problem, and the axion | **Outside**; the $\theta_{\mathrm{vac}}$ parameter belongs to the general gauge apparatus, the axion to the spin-$0$ subcategory |
 | The number of generations | **Not constrained** by cancellation; treated separately |
 
 ## The Legacy Pauli Gamma Formulation
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$, and the five cells of the body become
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and the five cells of the body become
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 $\gamma_5$ is the chirality cell of the frame under its gamma name; the central grading $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\xi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself, and the identity $\mathrm{tr}(\gamma_5)=0$ of the traces section is its vanishing signed trace. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and the volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$. The single collapse behind every simplification in the body is
+**The body's cells under their gamma names.** Because $L_{\mathrm{pau},e_t}$ is the identity, $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$: the chirality cell of the body is the gamma-five cell itself, and the identity $\mathrm{tr}(\gamma_5)=0$ of the traces section is its vanishing signed trace. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and the volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$. The single collapse behind every simplification in the body is
 
 $$
-i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} ,
+i\,\gamma_\mu=-L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}} ,
 $$
 
 In the axis-free display:
 
 $$
-i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}} ,
+i\,\gamma_\mu=-L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}} ,
 $$
 
 so multiplying a generator cell by $i$ trades it for a plain one; four such cells therefore carry $i^4=+1$ and no residual unit. Under these names the five-index trace the anomaly needs is the one in the display below; the body does not state it, because its value is the standard one and this article does not re-derive it.
@@ -405,17 +405,17 @@ $$
 $$
 The first display is the anticommutation relations the body's cells obey, together with the chirality cell's square and its anticommutation; the second gives the Lorentz generators $S_{cd}$ and their commutator with a generator; the last two give the traces the anomaly needs. All of them were recomputed on the module's explicit $4\times4$ representation, the five-index trace over all $4^4$ index assignments.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
 An anomaly is a quantum breaking of a classical symmetry. The axial anomaly is the failure of the chiral rotation to preserve the measure; for a charged Dirac fermion its divergence is the standard Adler–Bell–Jackiw result,
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2m\,\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(\tilde{Ξ}^{\mathrm{sp}}\,\vec e_z\bigr) - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
-where the two imaginary units of the mass term have been reduced by $i(-i)=+1$. The contraction in it evaluates to $+8\,\vec E\cdot\vec B$ all-low, so the anomaly density is $-\frac{e^2}{2\pi^2}\,I_2$, the textbook value, a fixed multiple of the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The $\epsilon$ tensor of the anomaly is the standard spinor trace and is transcribed, not re-derived. What the framework supplies is the chirality of the algebra as the anomaly's chiral weight, $\mathsf{V}^{\mathrm{vol}}$ being the cell the mass applies and $i$ times the volume cell, so that the anomaly's pseudoscalar density is the algebra's own invariant $I_2$.
+where the two imaginary units of the mass term have been reduced by $i(-i)=+1$. The contraction in it evaluates to $+8\,\vec E\cdot\vec B$ all-low, so the anomaly density is $-\frac{e^2}{2\pi^2}\,I_2$, the textbook value, a fixed multiple of the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The $\epsilon$ tensor of the anomaly is the standard spinor trace and is transcribed, not re-derived. What the framework supplies is the chirality of the algebra as the anomaly's chiral weight, $\mathsf{V}_{\mathrm{vol}}$ being the cell the mass applies and $i$ times the volume cell, so that the anomaly's pseudoscalar density is the algebra's own invariant $I_2$.
 
 The gauge anomaly is the triangle coefficient $\mathrm{Tr}_R[T_a\{T_b,T_c\}]$, and its vanishing is a consistency condition on the chiral spectrum. The article verified the Standard Model's four conditions — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour sum — exactly, for one generation, with a left-minus-right sign convention; the cubic sum does not vanish on either chirality alone — the raw sums are $-2/9$ for the left-handed content and $-2/9$ for the right-handed content — so it cancels only when the left-minus-right sign rule is applied.
 
@@ -431,17 +431,17 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\tilde\nabla$, $\Box$ | Gradient and d'Alembertian; the symbols are the conventions' (*Algebra and Element Conventions*, *Operator and Calculus Conventions*) |
 | $L_{a}R_{b}$ | The two-sided cell, named only where the operator itself is the subject (*Operator Family Conventions*) |
 | $Q\mapsto ie_\mu Q\vec e_{\nu(\mu)}$ | The frame cell of the coordinate $x_\mu$ by what it does; the cell is *Matrix Representations Conventions* |
-| $\tilde{Ξ}^{\mathrm{sp}}$, $\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{Ξ}^{\mathrm{sp}}_R$ | The state and its two values under $\mathsf{V}^{\mathrm{vol}}$; *Special Element Conventions*, §*The Chirality Convention* |
-| $\mathsf{V}^{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The chirality cell; $i$ times the volume cell |
-| $\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint; a pairing of two states, not an action |
-| $\mathrm{tr}(\mathsf{V}^{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
-| $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | The one-sided Dirac pair, one equation per chirality |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The state and its two values under $\mathsf{V}_{\mathrm{vol}}$; *Special Element Conventions*, §*The Chirality Convention* |
+| $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The chirality cell; $i$ times the volume cell |
+| $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
+| $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
+| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
 | $\tilde\nabla^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the chirality cell applied to $\bar{F}$ |
-| $-R_{\vec e_z}^{\mathrm{axf}}$, the four frame cells composed in the order $z,y,x,t$ | The volume cell; the chirality cell is $i$ times it |
+| $-R_{\mathrm{axf},\vec e_z}$, the four frame cells composed in the order $z,y,x,t$ | The volume cell; the chirality cell is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
-| $j_{\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(ie_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(e_\mu\tilde{Ξ}^{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the chirality cell inserted between the frame cell and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
-| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}^{\mathrm{sp}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\tilde{Ξ}^{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame cells |
+| $j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the chirality cell inserted between the frame cell and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
+| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame cells |
 | $F_{\mu\nu}=\partial \mathcal{A}_\nu/\partial x_\mu-\partial \mathcal{A}_\mu/\partial x_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa=ϙ/\hbar$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |

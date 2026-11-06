@@ -37,7 +37,7 @@ for every complex $t$.
 
 **Interpretation: a null rotation.** On $\mathbb{M}_-$ the factor $\tilde U$ has norm one, so $\mathrm{Sd}_{\tilde U}$ preserves the Minkowski form $\langle X\rangle_{\natural}$; the path $\mathrm{Sd}_{e^{t\vec\Upsilon}}$, $0\le t\le1$, connects it to the identity, so it is a proper orthochronous Lorentz transformation. Its single eigenvalue is $1$, and its Jordan form is one block of size three and one of size one. A Lorentz transformation of that type is a **null rotation** (a parabolic element): it fixes a null direction and shears the two transverse directions. The exponential displays the finite shear as $I+s\mathsf N+\frac{s^2}{2}\mathsf N^2$ with $s=t\lvert Q_t\rvert^2$. It contains no rotation angle and no rapidity; the two are locked to the single null parameter $a$. The modulus scales the shear, and the phase cancels.
 
-**What the factors keep.** The factors are not degenerate in the same way as their product. $\mathrm{Sd}_{\tilde U_{\mathrm b}}$ has the simple eigenvalues $e^{\theta^{\mathrm{rpd}}}$ and $e^{-\theta^{\mathrm{rpd}}}$ and the eigenvalue $1$ with multiplicity two; $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ has the simple eigenvalues $e^{i\theta}$ and $e^{-i\theta}$ and the eigenvalue $1$ with multiplicity two. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$, four times. The boost and the angle are therefore present in the factors and absent from the spectrum of the product. In the product they survive only through the locked parameter $a$, with $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta^{\mathrm{rpd}}}{2}=a$.
+**What the factors keep.** The factors are not degenerate in the same way as their product. $\mathrm{Sd}_{\tilde U_{\mathrm b}}$ has the simple eigenvalues $e^{\theta_{\mathrm{rpd}}}$ and $e^{-\theta_{\mathrm{rpd}}}$ and the eigenvalue $1$ with multiplicity two; $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ has the simple eigenvalues $e^{i\theta}$ and $e^{-i\theta}$ and the eigenvalue $1$ with multiplicity two. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$, four times. The boost and the angle are therefore present in the factors and absent from the spectrum of the product. In the product they survive only through the locked parameter $a$, with $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$.
 
 The rate is the square of the one-sided rate: $\lvert Q_t\rvert^{2}$ here, $Q_t$ there. The reason is the slot count. The sandwich carries $\vec\Upsilon$ in its left slot and $\vec\Upsilon^{*}$ in its right slot, so the scalar $Q_t$ appears once on each side and the modulus is squared; the one-sided operator carries the left slot only. This is the wall form of the doubling rule: on a vector the two slots add their exponents, and at the wall they add $\vec\Upsilon$ and $\vec\Upsilon^{*}$.
 
@@ -81,7 +81,7 @@ $$
 
 On $\mathbb{M}_-$ it is a null rotation: a proper orthochronous Lorentz transformation with the single eigenvalue $1$ and the Jordan form $J_3(1)\oplus J_1(1)$. It fixes a null direction and shears the two transverse directions; it contains no rotation angle and no rapidity.
 
-The boost and the rotor keep their angles in the factors, with the eigenvalues $e^{\pm\theta^{\mathrm{rpd}}}$ and $e^{\pm i\theta}$ and the eigenvalue $1$ twice each, but the product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The two parameters are locked to the null parameter $a$, and the rate is $\lvert Q_t\rvert^{2}$, the square of the one-sided rate.
+The boost and the rotor keep their angles in the factors, with the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}}$ and $e^{\pm i\theta}$ and the eigenvalue $1$ twice each, but the product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The two parameters are locked to the null parameter $a$, and the rate is $\lvert Q_t\rvert^{2}$, the square of the one-sided rate.
 
 ## Summary of Notation
 
@@ -93,7 +93,7 @@ The boost and the rotor keep their angles in the factors, with the eigenvalues $
 | $\vec\Upsilon=\vec A+i\vec B$ | the null vector, with $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$ |
 | $\vec c=\vec A\times\vec B/a^{2}$ | the unit vector of the fixed null direction |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $a$ | the null parameter |
 
 ## Further Reading

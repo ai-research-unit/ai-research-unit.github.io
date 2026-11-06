@@ -72,19 +72,19 @@ D_\mu = \partial/\partial R_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\n
 \qquad \kappa = \frac{ϙ}{\hbar},
 $$
 
-acting on a matter field $\tilde{Ξ}^{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}^{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $iϙ/\hbar$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
+acting on a matter field $\tilde{Ξ}_{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $iϙ/\hbar$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
 
 Now let the field transform by a **local, non-central** element of the group,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}} \;\longmapsto\; \tilde Q(\tilde{Q})\,\tilde{Ξ}^{\mathrm{sp}}, \qquad \tilde Q \in SU(2).
+\tilde{Ξ}_{\mathrm{sp}} \;\longmapsto\; \tilde Q(\tilde{Q})\,\tilde{Ξ}_{\mathrm{sp}}, \qquad \tilde Q \in SU(2).
 $$
 
-Unlike the abelian phase, $\tilde Q$ does not commute with the algebra, and left and right multiplication by it differ. Requiring the covariant derivative to be covariant, $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}^{\mathrm{sp}}) = \tilde Q\,D_\mu\tilde{Ξ}^{\mathrm{sp}}$, with $D_{\mathrm g,\mu}$ built from a new connection $\mathcal{A}_{\mathrm g,\mu}$, gives
+Unlike the abelian phase, $\tilde Q$ does not commute with the algebra, and left and right multiplication by it differ. Requiring the covariant derivative to be covariant, $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}_{\mathrm{sp}}) = \tilde Q\,D_\mu\tilde{Ξ}_{\mathrm{sp}}$, with $D_{\mathrm g,\mu}$ built from a new connection $\mathcal{A}_{\mathrm g,\mu}$, gives
 
 $$
-(\partial/\partial R_\mu \tilde Q)\tilde{Ξ}^{\mathrm{sp}} + \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q\tilde{Ξ}^{\mathrm{sp}}
-= \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\tilde Q\,\mathcal{A}_\mu\tilde{Ξ}^{\mathrm{sp}},
+(\partial/\partial R_\mu \tilde Q)\tilde{Ξ}_{\mathrm{sp}} + \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q\tilde{Ξ}_{\mathrm{sp}}
+= \tilde Q\,\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\tilde Q\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}},
 $$
 
 so that $\partial/\partial R_\mu \tilde Q + i\kappa\,\mathcal{A}_{\mathrm g,\mu} \tilde Q = i\kappa\,\tilde Q\mathcal{A}_\mu$, that is,
@@ -98,7 +98,7 @@ This is the non-abelian transformation law. Two features separate it from the pa
 - **The homogeneous term is a conjugation.** The connection does not transform by a shift; it transforms in the adjoint representation, $A_\mu \mapsto UA_\mu \tilde Q^{-1}$, with a compensating inhomogeneous term. The conjugation is what makes the transformation law non-linear in the field and the theory non-abelian.
 - **The inhomogeneous term is a pure-gauge connection.** The combination $(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ is the Maurer–Cartan form of the group element; it is the non-abelian replacement for $-\partial/\partial R_\mu\,\Gamma$. In the abelian case $\tilde Q = \exp(i\kappa\Gamma)$ is central, $\tilde Q\mathcal{A}_\mu \tilde Q^{-1} = \mathcal{A}_\mu$, and $(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1} = i\kappa\,\partial/\partial R_\mu\,\Gamma$, so the law reduces exactly to the parent's $\tilde{A}_{2,\mu} = \tilde{A}_\mu - \partial/\partial R_\mu\,\Gamma$.
 
-The covariance was verified numerically on a generic non-commuting connection: with the $\mathcal{A}_\mu$ traceless and $\tilde Q$ a generic $*$-unitary biquaternion, the residual of $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}^{\mathrm{sp}}) = \tilde Q D_\mu\tilde{Ξ}^{\mathrm{sp}}$ was of order $10^{-11}$ for all four $\mu$, i.e. at the level of the finite-difference error. It is worth saying what the check means: the identity was *derived* for arbitrary $\tilde Q$ and arbitrary $\mathcal{A}$, and the numerical evaluation is a guard against a sign slip in the derivation, not the source of the result.
+The covariance was verified numerically on a generic non-commuting connection: with the $\mathcal{A}_\mu$ traceless and $\tilde Q$ a generic $*$-unitary biquaternion, the residual of $D_{\mathrm g,\mu}(\tilde Q\tilde{Ξ}_{\mathrm{sp}}) = \tilde Q D_\mu\tilde{Ξ}_{\mathrm{sp}}$ was of order $10^{-11}$ for all four $\mu$, i.e. at the level of the finite-difference error. It is worth saying what the check means: the identity was *derived* for arbitrary $\tilde Q$ and arbitrary $\mathcal{A}$, and the numerical evaluation is a guard against a sign slip in the derivation, not the source of the result.
 
 **Example, and the check that it is non-abelian.** Take the constant connections $\mathcal{A}_1 = \vec e_z$ and $\mathcal{A}_2 = \vec e_x$ and the group element $\tilde Q = \exp(\theta \vec e_y)$ for a real constant $\theta$. Since $\tilde Q$ is constant the inhomogeneous term is absent, and $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1}$. For $\mu=1$ this is $U\vec e_z\tilde Q^{-1}$, which for $\theta = \pi/2$ equals $-\vec e_z$ (a rotation by $\pi$ about $\vec e_y$), while the abelian law would have left it unchanged. This is the smallest display of the changed character of the connection: it is not a value that shifts by a gradient, it is a vector in a representation that rotates.
 

@@ -32,7 +32,7 @@ The **symmetric group** $S_n$ is the group of bijections of an $n$-element set, 
 | Group | The property it has | Introduced in |
 |---|---|---|
 | $S_n$ | the symmetric group of order $n!$; $Z(S_n) = 1$ and $[S_n,S_n] = A_n$ for $n \geq 3$ | *Groups*, §1 |
-| $S_n^{\mathrm{ab}}$ | the abelianisation, isomorphic to $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ | *Groups*, §9 |
+| $S_{\mathrm{ab},n}$ | the abelianisation, isomorphic to $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ | *Groups*, §9 |
 | $A_n$ | the alternating group of order $n!/2$, normal in $S_n$ | *Groups* |
 | $A_n$, $n \geq 5$ | a finite simple group, the alternating family of the classification | *The Classification of Finite Simple Groups* |
 | $S_2$, $S_3$ | $S_2 \cong C_2$; $S_3 \cong D_3$ | *Finite Groups and Symmetry* |
@@ -60,7 +60,7 @@ A **free group** $F(X)$ is the universal group on a set, equivalently the group 
 
 | Group | The property it has | Introduced in |
 |---|---|---|
-| Free group $F(X)$ | the universal group on a set; $F(X)^{\mathrm{ab}} = \mathbb{Z}^{(X)}$ | *Generators, Presentations and Free Products* |
+| Free group $F(X)$ | the universal group on a set; $F(X)_{\mathrm{ab}} = \mathbb{Z}^{(X)}$ | *Generators, Presentations and Free Products* |
 | $F_2$ | the free group of rank $2$; $[F_2,F_2] = \ker(F_2 \to \mathbb{Z}^2)$, and $Z(F_2) = 1$ | *Generators, Presentations and Free Products* |
 | Presented group $\langle X \mid R\rangle$ | the quotient of $F(X)$ by the normal closure of $R$ | *Generators, Presentations and Free Products* |
 | Free product $G_1 * G_2$ | the coproduct of groups | *Generators, Presentations and Free Products* |
@@ -134,7 +134,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $R^\times$ | group of units |
 | $\operatorname{Cl}(K)$, $\operatorname{Br}(F)$, $E(K)$, $K_0$, $K_1$ | class group, Brauer group, elliptic-curve group, K-groups |
 | $\operatorname{gal}(L/K)$, $G_K$ | Galois group and absolute Galois group |
-| $Z(G)$, $[G,G]$, $G^{\mathrm{ab}}$ | centre, derived subgroup, abelianisation |
+| $Z(G)$, $[G,G]$, $G_{\mathrm{ab}}$ | centre, derived subgroup, abelianisation |
 | $\mathbb{M}$, $\mathbb{B}$ | Monster and Baby Monster |
 
 ## Further Reading

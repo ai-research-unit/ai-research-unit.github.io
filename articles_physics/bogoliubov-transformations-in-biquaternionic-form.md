@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A **Bogoliubov transformation** is a linear canonical transformation of creation and annihilation operators that mixes the two: it replaces the ladder $(a^{\mathrm{fop}},a^{\mathrm{fop}\dagger})$ by
+A **Bogoliubov transformation** is a linear canonical transformation of creation and annihilation operators that mixes the two: it replaces the ladder $(a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger})$ by
 $$
-b^{\mathrm{fop}} = u\,a^{\mathrm{fop}} + v\,a^{\mathrm{fop}\dagger},
+b_{\mathrm{fop}} = u\,a_{\mathrm{fop}} + v\,a_{\mathrm{fop}}^{\dagger},
 \qquad
-b^{\mathrm{fop}\dagger} = v^*a^{\mathrm{fop}} + u^*a^{\mathrm{fop}\dagger} ,
+b_{\mathrm{fop}}^{\dagger} = v^*a_{\mathrm{fop}} + u^*a_{\mathrm{fop}}^{\dagger} ,
 $$
 and asks when the transformed operators again obey the canonical (anti)commutation relations. The transformation is the algebraic heart of superfluidity, superconductivity, cosmological particle production, and — of direct relevance to this corpus — the Unruh and Hawking effects, where the thermal character of the radiation is the statement that the transformation relating the inertial and accelerated or black-hole mode expansions has $v\ne0$. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that structure.
 
@@ -24,7 +24,7 @@ $$
 \qquad\text{and}\qquad
 \alpha\beta = 0 ,
 $$
-whose solutions are: a phase, $\vec b = \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x$; or the particle–hole exchange, $\vec b = \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_y$.
+whose solutions are: a phase, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$; or the particle–hole exchange, $\vec b = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_y$.
 - **Established (algebra).** The single-mode Bogoliubov group of $\mathbb{B}$ is therefore the orthogonal group
 $$
 O(2) = \mathrm{U}(1)\rtimes\mathbb{Z}_2 ,
@@ -36,11 +36,11 @@ The article proceeds as follows. The next section states the standard Bogoliubov
 
 ## The Standard Bogoliubov Transformation
 
-Let $\{a_i^{\mathrm{fop}},a_j^{\mathrm{fop}\dagger}\}=\delta_{ij}e_t$, $\{a_i^{\mathrm{fop}},a_j^{\mathrm{fop}}\}=0$ be $n$ fermionic modes. A **Bogoliubov transformation** is the replacement
+Let $\{a_{\mathrm{fop},i},a_{\mathrm{fop},j}^{\dagger}\}=\delta_{ij}e_t$, $\{a_{\mathrm{fop},i},a_{\mathrm{fop},j}\}=0$ be $n$ fermionic modes. A **Bogoliubov transformation** is the replacement
 $$
-b_i^{\mathrm{fop}} = \sum_j\Big(u_{ij}a_j^{\mathrm{fop}} + v_{ij}a_j^{\mathrm{fop}\dagger}\Big),
+b_{\mathrm{fop},i} = \sum_j\Big(u_{ij}a_{\mathrm{fop},j} + v_{ij}a_{\mathrm{fop},j}^{\dagger}\Big),
 \qquad
-b_i^{\mathrm{fop}\dagger} = \sum_j\Big(u_{ij}^*a_j^{\mathrm{fop}\dagger} + v_{ij}^*a_j^{\mathrm{fop}}\Big).
+b_{\mathrm{fop},i}^{\dagger} = \sum_j\Big(u_{ij}^*a_{\mathrm{fop},j}^{\dagger} + v_{ij}^*a_{\mathrm{fop},j}\Big).
 $$
 The transformed operators obey the same CAR if and only if the matrices $u,v$ satisfy the two **canonical conditions**
 $$
@@ -48,15 +48,15 @@ u u^\dagger + v v^\dagger = I ,
 \qquad
 u v^T + v u^T = 0 .
 $$
-The first is the statement $\{b_i^{\mathrm{fop}},b_j^{\mathrm{fop}\dagger}\}=\delta_{ij}e_t$; the second is the statement $\{b_i^{\mathrm{fop}},b_j^{\mathrm{fop}}\}=0$. Equivalently, writing the $n$ complex modes as $2n$ Hermitian **Majorana operators**
+The first is the statement $\{b_{\mathrm{fop},i},b_{\mathrm{fop},j}^{\dagger}\}=\delta_{ij}e_t$; the second is the statement $\{b_{\mathrm{fop},i},b_{\mathrm{fop},j}\}=0$. Equivalently, writing the $n$ complex modes as $2n$ Hermitian **Majorana operators**
 $$
-m^{\mathrm{fop}}_{2i-1} = a_i^{\mathrm{fop}} + a_i^{\mathrm{fop}\dagger},
+m_{\mathrm{fop},2i-1} = a_{\mathrm{fop},i} + a_{\mathrm{fop},i}^{\dagger},
 \qquad
-m^{\mathrm{fop}}_{2i} = -i\big(a_i^{\mathrm{fop}} - a_i^{\mathrm{fop}\dagger}\big) ,
+m_{\mathrm{fop},2i} = -i\big(a_{\mathrm{fop},i} - a_{\mathrm{fop},i}^{\dagger}\big) ,
 \qquad
-\{m^{\mathrm{fop}}_k,m^{\mathrm{fop}}_l\} = 2\delta_{kl}e_t ,
+\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\} = 2\delta_{kl}e_t ,
 $$
-the Bogoliubov transformation is an orthogonal transformation $m^{\mathrm{fop}}_k\mapsto\sum_l O_{kl}m^{\mathrm{fop}}_l$ with $O\in O(2n)$, and the canonical conditions above are the statement that $O$ preserves the Majorana metric. This is the form in which the group structure is transparent:
+the Bogoliubov transformation is an orthogonal transformation $m_{\mathrm{fop},k}\mapsto\sum_l O_{kl}m_{\mathrm{fop},l}$ with $O\in O(2n)$, and the canonical conditions above are the statement that $O$ preserves the Majorana metric. This is the form in which the group structure is transparent:
 
 | object | group | meaning |
 |---|---|---|
@@ -64,7 +64,7 @@ the Bogoliubov transformation is an orthogonal transformation $m^{\mathrm{fop}}_
 | Fock-structure-preserving | $\mathrm{U}(n)\subset O(2n)$ | maps that keep the splitting into creation and annihilation |
 | squeezing | $O(2n)/\mathrm{U}(n)$ | maps with $v\ne0$; $\dim = n(n-1)$ |
 
-The **Fock-structure-preserving** subgroup is the set of $O$ that commute with the complex structure $J$ defining $a_i^{\mathrm{fop}}$; in the parametrization it is the set $v=0$, $uu^\dagger=I$, i.e. $u\in \mathrm{U}(n)$. The **squeezing** directions are the complementary coset: they mix $a_i^{\mathrm{fop}}$ with $a_j^{\mathrm{fop}\dagger}$ and change the vacuum. A Bogoliubov transformation with $v\ne0$ therefore maps the original vacuum to a squeezed state. For a finite number of modes the map is implemented by a $*$-unitary on the Fock space; in the field case the transformation can fail to be unitarily implementable, and that failure is where the thermal character of the Unruh and Hawking states enters.
+The **Fock-structure-preserving** subgroup is the set of $O$ that commute with the complex structure $J$ defining $a_{\mathrm{fop},i}$; in the parametrization it is the set $v=0$, $uu^\dagger=I$, i.e. $u\in \mathrm{U}(n)$. The **squeezing** directions are the complementary coset: they mix $a_{\mathrm{fop},i}$ with $a_{\mathrm{fop},j}^{\dagger}$ and change the vacuum. A Bogoliubov transformation with $v\ne0$ therefore maps the original vacuum to a squeezed state. For a finite number of modes the map is implemented by a $*$-unitary on the Fock space; in the field case the transformation can fail to be unitarily implementable, and that failure is where the thermal character of the Unruh and Hawking states enters.
 
 For bosons the same structure holds with the symplectic group in place of the orthogonal group, $Sp(2n,\mathbb{R})$ in place of $O(2n)$, and $\mathrm{U}(n)$ again as the Fock-preserving subgroup; the squeezing coset $Sp(2n,\mathbb{R})/\mathrm{U}(n)$ has dimension $n(n+1)$. The distinction between the orthogonal and symplectic cases is the distinction between the CAR and the CCR, and it is standard. The biquaternion algebra supplies no bosonic ladder, so the bosonic case is transcribed rather than realized; this is the same gap the Fock article records.
 
@@ -82,7 +82,7 @@ $$
 $$
 This is the $n=1$ instance of the general parametrization, and both $\vec b$ and $\vec b^{*}$ are elements of $\mathbb{B}$ for every $\alpha,\beta$.
 
-**The Majorana pair of the mode.** The two Hermitian combinations $m^{\mathrm{fop}}_1=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m^{\mathrm{fop}}_2=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m^{\mathrm{fop}}_k,m^{\mathrm{fop}}_l\}=2\delta_{kl}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ with $a$ of norm one, hence the cells $m^{\mathrm{fop}}_1=iL_x$ and $m^{\mathrm{fop}}_2=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
+**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{kl}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ with $a$ of norm one, hence the cells $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
 
 **The first anticommutator.** Using $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\{\vec\Upsilon_x,\vec\Upsilon_x\}=\{\vec\Upsilon_y,\vec\Upsilon_y\}=0$,
 $$
@@ -109,7 +109,7 @@ $$
 
 The result is exactly the algebraic statement that the one-mode canonical condition is stricter than naive normalization. The cross term of the first computation is the diagonal part, and it is automatically fine; the cross term of the second is the off-diagonal part, and it is automatically $2\alpha\beta\,e_t$. It is the vanishing of $\{\vec b,\vec b\}$ — the statement that $\vec b$ is a *fermionic* mode operator, not merely an operator with a normalized conjugate — that forbids the squeezing.
 
-**Numerical check.** With $\mathsf{M}_2$ the $2\times2$ complex representation, sample $\alpha=\cos\vartheta^{\mathrm{par}}$, $\beta=\exp(i\theta^{\mathrm{pha}})\sin\vartheta^{\mathrm{par}}$ on $20000$ random $(\vartheta^{\mathrm{par}},\theta^{\mathrm{pha}})$. The first anticommutator equals $e_t$ for all samples, with a maximum residual of $4.4\times10^{-16}$; the second equals $2\alpha\beta e_t$, a **central** element (off-diagonal part identically zero), with magnitude $|2\alpha\beta|=|\sin 2\vartheta^{\mathrm{par}}|\le1$, maximal at $\vartheta^{\mathrm{par}}=\pi/4$ where $|\alpha|=|\beta|=1/\sqrt2$ and $|2\alpha\beta|=1$. The exact cases $\beta=0$ and $\alpha=0$ give $\{\vec b,\vec b\}=0$ to machine precision. The second anticommutator is thus the sole obstruction, and its maximum violation is the maximal squeezing amplitude.
+**Numerical check.** With $\mathsf{M}_2$ the $2\times2$ complex representation, sample $\alpha=\cos\vartheta_{\mathrm{par}}$, $\beta=\exp(i\theta_{\mathrm{pha}})\sin\vartheta_{\mathrm{par}}$ on $20000$ random $(\vartheta_{\mathrm{par}},\theta_{\mathrm{pha}})$. The first anticommutator equals $e_t$ for all samples, with a maximum residual of $4.4\times10^{-16}$; the second equals $2\alpha\beta e_t$, a **central** element (off-diagonal part identically zero), with magnitude $|2\alpha\beta|=|\sin 2\vartheta_{\mathrm{par}}|\le1$, maximal at $\vartheta_{\mathrm{par}}=\pi/4$ where $|\alpha|=|\beta|=1/\sqrt2$ and $|2\alpha\beta|=1$. The exact cases $\beta=0$ and $\alpha=0$ give $\{\vec b,\vec b\}=0$ to machine precision. The second anticommutator is thus the sole obstruction, and its maximum violation is the maximal squeezing amplitude.
 
 ## The One-Mode Canonical Group
 
@@ -117,27 +117,27 @@ Solving $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$ gives exactly two branches.
 
 **Branch 1, phases: $\beta=0$, $|\alpha|=1$.** Then
 $$
-\vec b = \exp(i\vartheta^{\mathrm{par}})\,\vec\Upsilon_x ,
+\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Upsilon_x ,
 \qquad
-\vec b^{*} = \exp(-i\vartheta^{\mathrm{par}})\,\vec\Upsilon_y ,
+\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Upsilon_y ,
 \qquad
-\vartheta^{\mathrm{par}}\in[0,2\pi) .
+\vartheta_{\mathrm{par}}\in[0,2\pi) .
 $$
 This is an **inner** automorphism of $\mathbb{B}$, but the implementing $*$-unitary is not central: it is the gauge $*$-unitary generated by the number operator,
 $$
-\tilde Q_\vartheta^{\mathrm{par}} = \exp(-i\vartheta^{\mathrm{par}}\tilde\Pi_-) = e_t + \big(\exp(-i\vartheta^{\mathrm{par}})-1\big)\tilde\Pi_-,
+\tilde Q_{\mathrm{par},\vartheta} = \exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-) = e_t + \big(\exp(-i\vartheta_{\mathrm{par}})-1\big)\tilde\Pi_-,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_x\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x,
+\tilde Q_{\mathrm{par},\vartheta}\,\vec\Upsilon_x\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\vec\Upsilon_y\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \exp(-i\vartheta^{\mathrm{par}})\vec\Upsilon_y ,
+\tilde Q_{\mathrm{par},\vartheta}\,\vec\Upsilon_y\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \exp(-i\vartheta_{\mathrm{par}})\vec\Upsilon_y ,
 $$
-where the closed form uses $\tilde\Pi_-^2=\tilde\Pi_-$. The element $\tilde Q_\vartheta^{\mathrm{par}}$ is $*$-unitary and lies in $\mathbb{B}$, and it is non-central: it does not commute with $\vec\Upsilon_x$ or $\vec\Upsilon_y$. This is the $\mathrm{U}(1)$ **gauge** symmetry of the single mode, written as an algebra element.
+where the closed form uses $\tilde\Pi_-^2=\tilde\Pi_-$. The element $\tilde Q_{\mathrm{par},\vartheta}$ is $*$-unitary and lies in $\mathbb{B}$, and it is non-central: it does not commute with $\vec\Upsilon_x$ or $\vec\Upsilon_y$. This is the $\mathrm{U}(1)$ **gauge** symmetry of the single mode, written as an algebra element.
 
 **Branch 2, particle–hole exchange: $\alpha=0$, $|\beta|=1$.** Then
 $$
-\vec b = \exp(i\vartheta^{\mathrm{par}})\,\vec\Upsilon_y ,
+\vec b = \exp(i\vartheta_{\mathrm{par}})\,\vec\Upsilon_y ,
 \qquad
-\vec b^{*} = \exp(-i\vartheta^{\mathrm{par}})\,\vec\Upsilon_x .
+\vec b^{*} = \exp(-i\vartheta_{\mathrm{par}})\,\vec\Upsilon_x .
 $$
 This exchanges the two ladder operators, which is the Hermitian conjugation of the pair up to a phase; it maps the vacuum idempotent to its complement,
 $$
@@ -159,15 +159,15 @@ The group-theoretic statement is worth restating physically. Fermionic squeezing
 
 Both branches act geometrically on the state space, and the action is the action of the unit group of $\mathbb{B}$.
 
-**Phases are the gauge symmetry of the mode.** A phase $\vec\Upsilon_x\mapsto \exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x$ is conjugation by $\tilde Q_\vartheta^{\mathrm{par}}=\exp(-i\vartheta^{\mathrm{par}}\tilde\Pi_-)$, which commutes with the number operator and therefore fixes it and both idempotents:
+**Phases are the gauge symmetry of the mode.** A phase $\vec\Upsilon_x\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-)$, which commutes with the number operator and therefore fixes it and both idempotents:
 $$
-\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi_-\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \tilde\Pi_-,
+\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi_-\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi_-,
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,\tilde\Pi(\pm \vec e_z)\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = \tilde\Pi(\pm \vec e_z),
+\tilde Q_{\mathrm{par},\vartheta}\,\tilde\Pi(\pm \vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = \tilde\Pi(\pm \vec e_z),
 \qquad
-\tilde Q_\vartheta^{\mathrm{par}}\,(i\vec e_z)\,\tilde Q_{\vartheta^{\mathrm{par}}}^{-1} = i\vec e_z .
+\tilde Q_{\mathrm{par},\vartheta}\,(i\vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = i\vec e_z .
 $$
-The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_\vartheta^{\mathrm{par}}\tilde{Q}\tilde Q_{\vartheta^{\mathrm{par}}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
+The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
 
 **The unit group acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
 $$
@@ -182,14 +182,14 @@ The distinction between the two paragraphs is the distinction between the **gaug
 
 For more than one mode the algebra $\mathbb{B}$ no longer contains the full operator algebra of the modes: the many-mode CAR algebra is generated by the modes of the one-particle space, and the Fock space is a module over $\mathbb{B}$, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records. The Bogoliubov structure of the many-mode case is standard field theory, and its biquaternion content is only the following.
 
-**Two modes.** Take $a_1^{\mathrm{fop}},a_2^{\mathrm{fop}}$ and their conjugates. The Majorana operators $m^{\mathrm{fop}}_1,\dots,m^{\mathrm{fop}}_4$ transform under $O(4)$, with the Fock-preserving subgroup $\mathrm{U}(2)$ and the squeezing coset
+**Two modes.** Take $a_{\mathrm{fop},1},a_{\mathrm{fop},2}$ and their conjugates. The Majorana operators $m_{\mathrm{fop},1},\dots,m_{\mathrm{fop},4}$ transform under $O(4)$, with the Fock-preserving subgroup $\mathrm{U}(2)$ and the squeezing coset
 $$
 O(4)/\mathrm{U}(2) \;\cong\; S^2 ,
 \qquad \dim = 2 .
 $$
 The two squeezing directions are the two independent pairings of the modes, and they are precisely the two ways of forming a BCS pair. The single symmetric pair $(\alpha,\beta)$ with real coefficients reduces to the elementary case $\alpha^2+\beta^2=1$, which was checked directly: for $(\alpha,\beta)=(0.6,0.8)$ and $(0.3,\sqrt{1-0.09})$ the relation $\alpha^2+\beta^2=1$ holds exactly. Here, unlike the one-mode case, both $\alpha$ and $\beta$ can be nonzero, because the two modes supply the independent partners that the one mode lacks.
 
-**The general $n$.** The dimension of the squeezing coset is $n(n-1)$ for fermions and $n(n+1)$ for bosons. Both grow with the number of modes, and at $n=1$ the fermionic coset is zero-dimensional while the bosonic one has dimension two — one complex squeezing parameter, the single-mode squeeze of quantum optics. The fermionic vanishing is the absence of one-mode squeezing found above; a single bosonic mode does admit a squeeze, since a bosonic mode is its own partner under $a^{\mathrm{fop}}\to a^{\mathrm{fop}\dagger}$. The general statement that continuous squeezing needs a partner is therefore a statement about the anticommuting grading, where the partner must be a *different* mode.
+**The general $n$.** The dimension of the squeezing coset is $n(n-1)$ for fermions and $n(n+1)$ for bosons. Both grow with the number of modes, and at $n=1$ the fermionic coset is zero-dimensional while the bosonic one has dimension two — one complex squeezing parameter, the single-mode squeeze of quantum optics. The fermionic vanishing is the absence of one-mode squeezing found above; a single bosonic mode does admit a squeeze, since a bosonic mode is its own partner under $a_{\mathrm{fop}}\to a_{\mathrm{fop}}^{\dagger}$. The general statement that continuous squeezing needs a partner is therefore a statement about the anticommuting grading, where the partner must be a *different* mode.
 
 **The group-theoretic statement for the algebra.** The one-mode Bogoliubov group is $O(2)$ itself, and the absence of continuous squeezing is the discreteness of the coset $O(2)/\mathrm{U}(1)$ — two points, the identity and the reflection. The algebra cannot supply a continuous squeezing direction because squeezing is the pairing of a mode with a *different* mode, and $\mathbb{B}$ has room for exactly one. This is a clean instance of the general principle that the algebra hosts one mode and the field lives in a module.
 
@@ -254,7 +254,7 @@ $$
 \qquad
 \big\{\vec b,\vec b\big\}=2\alpha\beta\,e_t\;},
 $$
-so the canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$. The solutions are the phases $\vec b=\exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_x$, an inner automorphism generated by the number operator, and the particle–hole exchange $\vec b=\exp(i\vartheta^{\mathrm{par}})\vec\Upsilon_y$, which swaps the vacuum idempotent with the number idempotent. The one-mode Bogoliubov group is $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$, with the Fock-preserving subgroup the $\mathrm{U}(1)$ of phases and the discrete coset $O(2)/\mathrm{U}(1)$; there is **no continuous squeezing**, and the one-mode quadratic Hamiltonian is automatically diagonal, $\tilde R_\psi=A\tilde\Pi_-+Be_t$, because the one-mode pairing elements vanish.
+so the canonical conditions are $|\alpha|^2+|\beta|^2=1$ and $\alpha\beta=0$. The solutions are the phases $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$, an inner automorphism generated by the number operator, and the particle–hole exchange $\vec b=\exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_y$, which swaps the vacuum idempotent with the number idempotent. The one-mode Bogoliubov group is $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$, with the Fock-preserving subgroup the $\mathrm{U}(1)$ of phases and the discrete coset $O(2)/\mathrm{U}(1)$; there is **no continuous squeezing**, and the one-mode quadratic Hamiltonian is automatically diagonal, $\tilde R_\psi=A\tilde\Pi_-+Be_t$, because the one-mode pairing elements vanish.
 
 Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov group is $O(2n)$ (fermions) or $Sp(2n,\mathbb{R})$ (bosons), the Fock-preserving subgroup is $\mathrm{U}(n)$, and the squeezing coset has dimension $n(n-1)$ or $n(n+1)$. The thermal transformations of the Unruh and Hawking calculations have $v\ne0$ and lie in that coset; they are many-mode objects, not inner automorphisms of $\mathbb{B}$, and, in the field limit, the two vacua they relate need not be unitarily equivalent. The biquaternion algebra holds one mode; the squeezing lives in the module.
 
@@ -265,7 +265,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
-| $a^{\mathrm{fop}}$, $b^{\mathrm{fop}}$ | Abstract ladder and its Bogoliubov transform, $b^{\mathrm{fop}}=u\,a^{\mathrm{fop}}+v\,a^{\mathrm{fop}\dagger}$ |
+| $a_{\mathrm{fop}}$, $b_{\mathrm{fop}}$ | Abstract ladder and its Bogoliubov transform, $b_{\mathrm{fop}}=u\,a_{\mathrm{fop}}+v\,a_{\mathrm{fop}}^{\dagger}$ |
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Number operator |
 | $\tilde\Pi(\pm \vec e_z)=\tfrac12(e_t\pm i\vec e_z)$ | Vacuum and occupied idempotents |
 | $\vec b=\alpha\vec\Upsilon_x+\beta\vec\Upsilon_y$ | One-mode Bogoliubov transformation |
@@ -274,7 +274,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | $\{\vec b,\vec b\}=2\alpha\beta e_t$ | Second anticommutator (forces $\alpha\beta=0$) |
 | $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ | One-mode Bogoliubov group (phases and particle–hole) |
 | $u,v$ | General Bogoliubov matrices, $uu^\dagger+vv^\dagger=I$, $uv^T+vu^T=0$ |
-| $m^{\mathrm{fop}}_k$ | Majorana operators, $\{m^{\mathrm{fop}}_k,m^{\mathrm{fop}}_l\}=2\delta_{kl}e_t$; for one mode the cells $iL_x$, $iL_y$ |
+| $m_{\mathrm{fop},k}$ | Majorana operators, $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{kl}e_t$; for one mode the cells $iL_x$, $iL_y$ |
 | $O(2n)$, $\mathrm{U}(n)$, $O(2n)/\mathrm{U}(n)$ | Bogoliubov group, Fock subgroup, squeezing coset (discrete at $n=1$) |
 | $n(n-1)$, $n(n+1)$ | Squeezing-coset dimensions (fermion, boson) |
 | $|u|^2=(1+\exp(-\beta\omega))^{-1}$, $|v|^2=(\exp(\beta\omega)+1)^{-1}$ | Thermal fermionic coefficients |

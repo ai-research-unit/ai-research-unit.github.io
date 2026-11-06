@@ -24,10 +24,10 @@ It is **retarded** if the derivative depends on the past and not on a future val
 **Definition.** A **history** for the equation on an interval $[\sigma, \sigma + \cdot\,]$ is a continuous function $\phi : [-r,0] \to X$, and the **initial-value problem** with initial time $\sigma$ and history $\phi$ is the equation together with
 
 $$
-y(\sigma + \vartheta^{\mathrm{hst}}) = \phi(\vartheta^{\mathrm{hst}}) \qquad (\vartheta^{\mathrm{hst}} \in [-r,0]).
+y(\sigma + \vartheta_{\mathrm{hst}}) = \phi(\vartheta_{\mathrm{hst}}) \qquad (\vartheta_{\mathrm{hst}} \in [-r,0]).
 $$
 
-A **solution** on $[\sigma-r, \sigma+T)$ is a continuous function $y$ that is differentiable on $(\sigma, \sigma+T)$, agrees with $\phi$ on $[\sigma-r,\sigma]$, and satisfies the equation for $t > \sigma$. The **history space** is $C = C([-r,0],X)$, a Banach space under $\|\phi\|_\infty = \sup_{\vartheta^{\mathrm{hst}}}|\phi(\vartheta^{\mathrm{hst}})|$.
+A **solution** on $[\sigma-r, \sigma+T)$ is a continuous function $y$ that is differentiable on $(\sigma, \sigma+T)$, agrees with $\phi$ on $[\sigma-r,\sigma]$, and satisfies the equation for $t > \sigma$. The **history space** is $C = C([-r,0],X)$, a Banach space under $\|\phi\|_\infty = \sup_{\vartheta_{\mathrm{hst}}}|\phi(\vartheta_{\mathrm{hst}})|$.
 
 The distinction between an initial *point* and an initial *history* is the whole difference between the ordinary and the functional theory. A delay equation is not a well-posed initial-value problem at a point: two solutions through the same point but with different histories generally differ for all later times. In compensation, the history determines the solution uniquely, exactly as the point does for an ordinary equation.
 
@@ -41,7 +41,7 @@ then the solution is of class $C^k$ on $[\sigma-r,\sigma+T)$; without compatibil
 
 *Proof.* The solution is differentiable for $t>\sigma$ by the equation, and its derivative at the initial time is the prescribed limit only when $\phi$ is compatible with the right-hand side, since the right-hand side at $t = \sigma$ is computed from $\phi$; each further differentiation of the equation raises the order of the condition by one and requires the corresponding derivative of $\phi$ to exist and match.
 
-**Example (discontinuous derivative).** For $y'(t) = -y(t-1)$ with history $\phi(\vartheta^{\mathrm{hst}}) = 1$ for $\vartheta^{\mathrm{hst}} \in [-1,0]$, the solution is $\phi$ continued by $y(t) = 1 - t$ on $[0,1]$, then $y(t) = 1 - t + \tfrac12(t-1)^2$ on $[1,2]$, and so on. The derivative jumps at $t = 0$ from $0$ to $-1$, because $\phi'(0^-) = 0$ does not match the equation. The solution becomes smoother with each step, a smoothing that is invisible to a point initial condition.
+**Example (discontinuous derivative).** For $y'(t) = -y(t-1)$ with history $\phi(\vartheta_{\mathrm{hst}}) = 1$ for $\vartheta_{\mathrm{hst}} \in [-1,0]$, the solution is $\phi$ continued by $y(t) = 1 - t$ on $[0,1]$, then $y(t) = 1 - t + \tfrac12(t-1)^2$ on $[1,2]$, and so on. The derivative jumps at $t = 0$ from $0$ to $-1$, because $\phi'(0^-) = 0$ does not match the equation. The solution becomes smoother with each step, a smoothing that is invisible to a point initial condition.
 
 ### The Method of Steps
 
@@ -99,7 +99,7 @@ The example shows that a delay can destabilise a system that is stable without i
 
 ### The Solution Operator and Variation of Constants
 
-**Definition.** The **solution operator** of the homogeneous linear delay equation at time $t \ge 0$ is the bounded operator $T(t) : C \to C$ sending a history $\phi \in C$ to the history of the solution at time $t$, that is $T(t)\phi = y_t$ where $y_t(\vartheta^{\mathrm{hst}}) = y(t+\vartheta^{\mathrm{hst}})$ for $\vartheta^{\mathrm{hst}} \in [-r,0]$.
+**Definition.** The **solution operator** of the homogeneous linear delay equation at time $t \ge 0$ is the bounded operator $T(t) : C \to C$ sending a history $\phi \in C$ to the history of the solution at time $t$, that is $T(t)\phi = y_t$ where $y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}})$ for $\vartheta_{\mathrm{hst}} \in [-r,0]$.
 
 **Theorem (semigroup property).** The solution operators satisfy $T(0) = I$, $T(t+s) = T(t)\,T(s)$ for $s, t \ge 0$, and $t \mapsto T(t)\phi$ is continuous from $[0,\infty)$ to $C$ for every $\phi \in C$; moreover $\|T(t)\|$ is bounded on each compact interval, and $T(t)$ is compact for $t \ge r$.
 
@@ -113,7 +113,7 @@ $$
 \boxed{\;y(t) = \bigl(T(t-\sigma)\phi\bigr)(0) + \int_{\sigma}^{t} K(t-s)\,b(s)\,ds\;} ,
 $$
 
-where $K$ is the **fundamental solution**: the solution of the homogeneous equation with the history $K(\vartheta^{\mathrm{hst}}) = 0$ for $\vartheta^{\mathrm{hst}}<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,
+where $K$ is the **fundamental solution**: the solution of the homogeneous equation with the history $K(\vartheta_{\mathrm{hst}}) = 0$ for $\vartheta_{\mathrm{hst}}<0$ and the jump $K(0)=I$, continued by the equation. Equivalently, in the scalar case,
 
 $$
 K(t) = \frac{1}{2\pi i}\int_{\Gamma} \frac{\exp(zt)}{z - a - b\exp(-zr)}\,dz ,
@@ -174,12 +174,12 @@ is nonpositive, where $y_{t+h}(t,\phi)$ is the history of the solution starting 
 **Example (a quadratic functional).** For $y'(t) = -ay(t) + by(t-r)$ with $a > 0$ and $|b| < a$, the functional
 
 $$
-V(\phi) = \phi(0)^2 + \mu\int_{-r}^{0}\phi(\vartheta^{\mathrm{hst}})^2\,d\vartheta^{\mathrm{hst}}
+V(\phi) = \phi(0)^2 + \mu\int_{-r}^{0}\phi(\vartheta_{\mathrm{hst}})^2\,d\vartheta_{\mathrm{hst}}
 $$
 
 has derivative along a solution equal to $-2a\phi(0)^2 + 2b\phi(0)\phi(-r) + \mu\bigl(\phi(0)^2 - \phi(-r)^2\bigr)$ up to the boundary term of the integral, and choosing $\mu$ large enough makes the expression negative definite; hence the zero solution is asymptotically stable. The condition $|b|<a$ is sufficient but not necessary, the sharp condition being the spectral one.
 
-**Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\left(dV/dt\right)(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\vartheta^{\mathrm{hst}}, y(t+\vartheta^{\mathrm{hst}})) \le V(t,y(t))$ for all $\vartheta^{\mathrm{hst}} \in [-r,0]$, where $dV/dt$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
+**Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\left(dV/dt\right)(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\vartheta_{\mathrm{hst}}, y(t+\vartheta_{\mathrm{hst}})) \le V(t,y(t))$ for all $\vartheta_{\mathrm{hst}} \in [-r,0]$, where $dV/dt$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
 
 *Proof.* If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $dV/dt < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.
 
@@ -192,7 +192,7 @@ Razumikhin's method avoids the integral over the history, at the cost of a hypot
 **Definition.** Let $f : \mathbb{R} \times C \to X$ be a function. The **functional differential equation** determined by $f$ is
 
 $$
-y'(t) = f(t, y_t), \qquad y_t(\vartheta^{\mathrm{hst}}) = y(t+\vartheta^{\mathrm{hst}}),\quad \vartheta^{\mathrm{hst}} \in [-r,0].
+y'(t) = f(t, y_t), \qquad y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}}),\quad \vartheta_{\mathrm{hst}} \in [-r,0].
 $$
 
 The delay equation $y'(t) = g(t,y(t),y(t-r))$ is the case $f(t,\phi) = g(t,\phi(0),\phi(-r))$, and a **Volterra functional equation** has $f$ depending only on $\phi$ restricted to a subinterval $[-r_0,0]$ with $r_0 \le r$. The equation is **autonomous** if $f$ does not depend on $t$.
@@ -223,17 +223,17 @@ $$
 y'(t) = L(t)\,y_t + b(t),
 $$
 
-where $L(t) \in B(C,X)$ is a bounded linear map for each $t$ and $b$ is continuous. With $L$ constant and represented by a measure, $L\phi = \int_{-r}^{0}d\eta(\vartheta^{\mathrm{hst}})\,\phi(\vartheta^{\mathrm{hst}})$ for a finite matrix-valued measure $\eta$ of bounded variation, the equation is the general linear retarded equation with constant coefficients.
+where $L(t) \in B(C,X)$ is a bounded linear map for each $t$ and $b$ is continuous. With $L$ constant and represented by a measure, $L\phi = \int_{-r}^{0}d\eta(\vartheta_{\mathrm{hst}})\,\phi(\vartheta_{\mathrm{hst}})$ for a finite matrix-valued measure $\eta$ of bounded variation, the equation is the general linear retarded equation with constant coefficients.
 
-**Theorem (characteristic equation).** For $L\phi = \int_{-r}^0 d\eta(\vartheta^{\mathrm{hst}})\phi(\vartheta^{\mathrm{hst}})$ the exponential $\exp(\lambda t)v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
+**Theorem (characteristic equation).** For $L\phi = \int_{-r}^0 d\eta(\vartheta_{\mathrm{hst}})\phi(\vartheta_{\mathrm{hst}})$ the exponential $\exp(\lambda t)v$, $v \in \mathbb{C}^n$, solves the homogeneous equation if and only if
 
 $$
-\Delta(\lambda)v = 0, \qquad \Delta(\lambda) = \lambda I - \int_{-r}^{0}\exp(\lambda\vartheta^{\mathrm{hst}})\,d\eta(\vartheta^{\mathrm{hst}}) ,
+\Delta(\lambda)v = 0, \qquad \Delta(\lambda) = \lambda I - \int_{-r}^{0}\exp(\lambda\vartheta_{\mathrm{hst}})\,d\eta(\vartheta_{\mathrm{hst}}) ,
 $$
 
 and the **characteristic matrix** $\Delta$ has a determinant that is an entire function of exponential type; its zeros are the characteristic roots, they are countable, and for every $\gamma \in \mathbb{R}$ there are only finitely many with $\operatorname{Re}\lambda > \gamma$. The **spectral projection** onto the root subspace of a finite set of roots can be written as a contour integral of the resolvent $(\lambda I - L)^{-1}$ around the roots.
 
-*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int \exp(\lambda\vartheta^{\mathrm{hst}})\,d\eta$, each of which is entire of exponential type bounded by $\exp(r|\lambda|)\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent.
+*Proof.* Substitution gives the eigenvalue equation. The determinant of $\Delta$ is $\lambda^n$ plus terms involving $\int \exp(\lambda\vartheta_{\mathrm{hst}})\,d\eta$, each of which is entire of exponential type bounded by $\exp(r|\lambda|)\|\eta\|$; Hadamard's theory of entire functions of exponential type gives the countability and the finiteness on each right half-plane, since the exponential growth of the determinant forces its zeros to be asymptotically contained in a union of vertical strips. The contour representation of the spectral projection is the standard Riesz projection of the resolvent.
 
 **Remark (the decomposition theorem).** For a linear autonomous equation the space of solutions splits into a finite-dimensional part spanned by the exponential solutions corresponding to the finitely many roots in a right half-plane and a remainder on which the solution operator decays; this is the decomposition theorem of the theory, and it is the form in which the theory is used to reduce a delay equation to a finite-dimensional one plus a stable error. It is the seed of the semigroup theory of the evolution equations of this Part, where the same decomposition appears as the spectral decomposition of a semigroup with eventually compact orbits.
 
@@ -251,7 +251,7 @@ A delay differential equation $y'(t) = f(t,y(t),y(t-r))$ is posed with a history
 
 A linear delay equation with constant coefficients has exponential solutions $\exp(\lambda t)$ where $\lambda$ solves the transcendental characteristic equation $\lambda = a + b\exp(-\lambda r)$, with countably many roots and no accumulation in the plane; the solution space is infinite-dimensional, since the datum is a function, and the solution operator $T(t)$ sending a history to its later history is a strongly continuous semigroup, compact for $t \ge r$, with the characteristic roots as its spectrum. The inhomogeneous equation is solved by a variation-of-constants formula with the fundamental solution, computable as an inverse Laplace transform. The zero solution is exponentially stable exactly when all characteristic roots lie in a fixed left half-plane, and for the pure delay this is the condition $ar < \pi/2$, so a lag can destabilise a stable system. For nonlinear equations stability is decided by a Lyapunov functional or by the Razumikhin condition on the history at the instants of maximal $V$.
 
-A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and uniqueness theorem, with the Lipschitz condition taken in the norm of the history space and the right-hand side a function on the Banach space $C([-r,0],X)$; without the Lipschitz condition existence still holds under a complete-continuity hypothesis and uniqueness may fail. For the linear equation the characteristic matrix $\Delta(\lambda) = \lambda I - \int \exp(\lambda\vartheta^{\mathrm{hst}})d\eta(\vartheta^{\mathrm{hst}})$ is entire of exponential type, its zeros form the spectrum, and the solutions split into a finite-dimensional exponential part and a decaying remainder. The general theory of the semigroup $T(t)$, its generator and its spectral decomposition is developed with the evolution equations of this Part.
+A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and uniqueness theorem, with the Lipschitz condition taken in the norm of the history space and the right-hand side a function on the Banach space $C([-r,0],X)$; without the Lipschitz condition existence still holds under a complete-continuity hypothesis and uniqueness may fail. For the linear equation the characteristic matrix $\Delta(\lambda) = \lambda I - \int \exp(\lambda\vartheta_{\mathrm{hst}})d\eta(\vartheta_{\mathrm{hst}})$ is entire of exponential type, its zeros form the spectrum, and the solutions split into a finite-dimensional exponential part and a decaying remainder. The general theory of the semigroup $T(t)$, its generator and its spectral decomposition is developed with the evolution equations of this Part.
 
 ## Summary of Notation
 
@@ -259,7 +259,7 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 |---|---|
 | $X$ | Banach state space over $\mathbb{K}$ |
 | $r$ | Lag, a positive constant unless the lag is variable |
-| $y_t$ | History at $t$, $y_t(\vartheta^{\mathrm{hst}}) = y(t+\vartheta^{\mathrm{hst}})$, $\vartheta^{\mathrm{hst}} \in [-r,0]$ |
+| $y_t$ | History at $t$, $y_t(\vartheta_{\mathrm{hst}}) = y(t+\vartheta_{\mathrm{hst}})$, $\vartheta_{\mathrm{hst}} \in [-r,0]$ |
 | $C = C([-r,0],X)$ | History space with the supremum norm |
 | $\phi$ | Initial history |
 | $f(t,\phi)$ | Right-hand side of the functional equation |

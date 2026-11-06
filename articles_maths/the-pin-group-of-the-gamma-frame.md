@@ -33,13 +33,13 @@ $$
 \mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_{1}
 =\{b\in\mathbb{B}:b b^{\natural}=1\}.
 $$
-The full even part of Pin is $\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}$, where $\varkappa^{\mathrm{crd}}$ is any even unit of norm $-1$, for example the left multiplication by $-i\vec e_x$; the second coset covers the time-reversing component of $SO(1,3)$. The odd part is not in $\mathbb{B}$: every odd element is a sum of a vector and a trivector, and the vectors are the Lorentzian space itself. This is the exact statement of the corollary of *Biquaternion Versors and the Orthogonal Group*: $\mathrm{Pin}\not\subseteq\mathbb{B}$, and only the even part is a biquaternion object.
+The full even part of Pin is $\mathrm{Spin}\cup\varkappa_{\mathrm{crd}}\,\mathrm{Spin}$, where $\varkappa_{\mathrm{crd}}$ is any even unit of norm $-1$, for example the left multiplication by $-i\vec e_x$; the second coset covers the time-reversing component of $SO(1,3)$. The odd part is not in $\mathbb{B}$: every odd element is a sum of a vector and a trivector, and the vectors are the Lorentzian space itself. This is the exact statement of the corollary of *Biquaternion Versors and the Orthogonal Group*: $\mathrm{Pin}\not\subseteq\mathbb{B}$, and only the even part is a biquaternion object.
 
 **The decomposition.** The Pin group is the disjoint union of its even and odd parts, and each part is the union of the two norm cosets:
 $$
-\mathrm{Pin}(1,3)=\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr)\ \cup\ \zeta_0\bigl(\mathrm{Spin}\cup\varkappa^{\mathrm{crd}}\,\mathrm{Spin}\bigr),
+\mathrm{Pin}(1,3)=\bigl(\mathrm{Spin}\cup\varkappa_{\mathrm{crd}}\,\mathrm{Spin}\bigr)\ \cup\ \zeta_0\bigl(\mathrm{Spin}\cup\varkappa_{\mathrm{crd}}\,\mathrm{Spin}\bigr),
 $$
-for any odd unit vector $\zeta_0$ and any even unit $\varkappa^{\mathrm{crd}}$ of norm $-1$. In the biquaternion dictionary, with $\zeta_0=A_0=\bar{\cdot}$ and $\varkappa^{\mathrm{crd}}=L_{-i\vec e_x}$,
+for any odd unit vector $\zeta_0$ and any even unit $\varkappa_{\mathrm{crd}}$ of norm $-1$. In the biquaternion dictionary, with $\zeta_0=A_0=\bar{\cdot}$ and $\varkappa_{\mathrm{crd}}=L_{-i\vec e_x}$,
 $$
 \boxed{\;\mathrm{Pin}(1,3)
 =L(\mathbb{B}^{\times}_{1})\ \cup\ L(\mathbb{B}^{\times}_{-1})\ \cup\

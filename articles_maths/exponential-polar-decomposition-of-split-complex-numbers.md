@@ -18,14 +18,14 @@ $$
 The decomposition is the exponential form of the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, which writes every invertible split-complex number as
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}^{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}_{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
 with $r$ the modulus and $u$ the unit factor. The unit factor is written $u=\epsilon\exp(\theta j)$, with $\epsilon$ the component sign.
 
 The exponential and the logarithm are those of *Split-Complex Elementary Functions*: the exponential is injective with image the future cone $F$, and the logarithm on $F$ is its two-sided inverse. §*The Analytic Setting* states them in the form used below, and they are not derived again. What the article owns is the decomposition itself, the component sign, its existence and uniqueness, the matrix picture and the exponential coordinates.
 
-The shape of the formula is forced by the image of the exponential. In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, so every nonzero $Q$ is $\exp(Q_{\log})$. In $\mathbb{C}^{\mathrm{spl}}$ the exponential is injective and its image is the future cone $F=\{Q:q>\lvert q'\rvert\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). A logarithm therefore exists exactly on $F$, and nowhere else. The four elements $\epsilon\in\{\pm1,\pm j\}$ permute the four components of ${\mathbb{C}^{\mathrm{spl}}}^\times$, and exactly one of the four products $\epsilon Q$ lies in $F$ (§*The Four Components*). The exponent is the logarithm of that product, and the discrete factor $\epsilon$ records the component of $Q$. It is not a period: the exponential has trivial kernel.
+The shape of the formula is forced by the image of the exponential. In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, so every nonzero $Q$ is $\exp(Q_{\log})$. In $\mathbb{C}_{\mathrm{spl}}$ the exponential is injective and its image is the future cone $F=\{Q:q>\lvert q'\rvert\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). A logarithm therefore exists exactly on $F$, and nowhere else. The four elements $\epsilon\in\{\pm1,\pm j\}$ permute the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$, and exactly one of the four products $\epsilon Q$ lies in $F$ (§*The Four Components*). The exponent is the logarithm of that product, and the discrete factor $\epsilon$ records the component of $Q$. It is not a period: the exponential has trivial kernel.
 
 The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exponentiated: $\exp(Q_{\log})=\epsilon Q$. It is a logarithm of $Q$ itself exactly when $\epsilon=1$. In coordinates, with $\langle Q\rangle_{*}=q^2-q'^2$, the logarithm formula of *Split-Complex Elementary Functions*, §*The Logarithm*, applied to $\epsilon Q$, gives one branch on the two timelike components and one on the two spacelike components. The two coordinates, their formulas and their roles are tabulated in §*The Exponent and Its Components*.
 
@@ -33,8 +33,8 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 
 | Item | Value |
 |---|---|
-| Algebra | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ |
-| Domain | ${\mathbb{C}^{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}=q^{2}-q'^{2}\neq0\}$ |
+| Algebra | $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ |
+| Domain | ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}=q^{2}-q'^{2}\neq0\}$ |
 | Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j)$ |
 | Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)=Q/r$, with $\lvert\langle u\rangle_{*}\rvert=1$ |
@@ -42,7 +42,7 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 | Existence | every unit has a decomposition |
 | Uniqueness | $\epsilon$ and $Q_{\log}$ are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
-| Group | ${\mathbb{C}^{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2}$ |
+| Group | ${\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2}$ |
 | Companion | *Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number*, for the reading through the two real coordinates of $Q$ |
 | Worked examples | *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*, for the eight cases and the reconstruction tables |
 
@@ -75,7 +75,7 @@ These are the statements of *Split-Complex Elementary Functions*, §*The Exponen
 
 ### The Four Components
 
-The group of units is ${\mathbb{C}^{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:
+The group of units is ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:
 
 $$
 F=\{q>\lvert q'\rvert\},\qquad
@@ -95,16 +95,16 @@ The four elements $\epsilon\in\{\pm1,\pm j\}$ act by multiplication and permute 
 
 The check is direct. On $P$, the real part of $\epsilon Q=-q$ is positive and larger than $\lvert q'\rvert$; on $R$, the real part of $jQ=q'+qj$ is $q'>\lvert q\rvert$; on $L$, the real part of $-jQ=-q'-qj$ is $-q'>\lvert q\rvert$. In every row $\epsilon Q$ lies in $F$, and $\epsilon^2=1$, so $Q=\epsilon(\epsilon Q)$.
 
-The four components are the cosets of $F$ in ${\mathbb{C}^{\mathrm{spl}}}^{\times}$, and the quotient is
+The four components are the cosets of $F$ in ${\mathbb{C}_{\mathrm{spl}}}^{\times}$, and the quotient is
 
 $$
-{\mathbb{C}^{\mathrm{spl}}}^{\times}/F\cong(\mathbb{Z}/2\mathbb{Z})^{2}.
+{\mathbb{C}_{\mathrm{spl}}}^{\times}/F\cong(\mathbb{Z}/2\mathbb{Z})^{2}.
 $$
 
 The group of units is therefore
 
 $$
-{\mathbb{C}^{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
+{\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$
 
 the discrete factor being the component and the two real coordinates being $(\ln r,\theta)$. The isomorphism is made explicit in §*The Group Law*.
@@ -113,10 +113,10 @@ the discrete factor being the component and the two real coordinates being $(\ln
 
 ### The Definition
 
-**Definition.** An **exponential polar decomposition** of $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times$ is a writing
+**Definition.** An **exponential polar decomposition** of $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$ is a writing
 
 $$
-Q=\epsilon\exp(Q_{\log}), \qquad \epsilon\in\{\pm1,\pm j\}, \quad Q_{\log}\in\mathbb{C}^{\mathrm{spl}},
+Q=\epsilon\exp(Q_{\log}), \qquad \epsilon\in\{\pm1,\pm j\}, \quad Q_{\log}\in\mathbb{C}_{\mathrm{spl}},
 $$
 
 in which $\epsilon$ is the **component sign** and $Q_{\log}$ the **exponent**. In coordinates,
@@ -214,7 +214,7 @@ $$
 Q=\epsilon\exp(q_{\log})\exp(q'_{\log}j)=\epsilon\exp(Q_{\log}).
 $$
 
-The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\log}+Q_{2\log})$ and the commutativity of $\mathbb{C}^{\mathrm{spl}}$: the two scalar exponents $\ln r$ and $\theta j$ commute. The finite factor $\epsilon$ cannot be absorbed into the continuous exponential, because it changes the component. The decomposition therefore has one continuous exponent and one discrete component label.
+The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\log}+Q_{2\log})$ and the commutativity of $\mathbb{C}_{\mathrm{spl}}$: the two scalar exponents $\ln r$ and $\theta j$ commute. The finite factor $\epsilon$ cannot be absorbed into the continuous exponential, because it changes the component. The decomposition therefore has one continuous exponent and one discrete component label.
 
 ## Existence and Uniqueness
 
@@ -245,9 +245,9 @@ $$
 
 **Existence.** §*The Four Components* gives $\epsilon$ with $\epsilon Q\in F$. §*The Exponent and Its Components* gives a number $Q_{\log}$ with $\exp(Q_{\log})=\epsilon Q$. Then $Q=\epsilon\exp(Q_{\log})=r\epsilon\exp(\theta j)$.
 
-**Uniqueness.** Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}^{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\theta=q'_{\log}$.
+**Uniqueness.** Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}_{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\theta=q'_{\log}$.
 
-The decomposition is defined exactly on ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of units, not the set of nonzero elements. The parameters and their ranges are collected in one table.
+The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of units, not the set of nonzero elements. The parameters and their ranges are collected in one table.
 
 | Parameter | Range | Unique? |
 |---|---|---|
@@ -259,7 +259,7 @@ The decomposition is defined exactly on ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q:
 
 ### The Logarithm on a Component
 
-*Split-Complex Elementary Functions*, §*The Logarithm*, gives the image, the injectivity and the inverse: $\exp(\mathbb{C}^{\mathrm{spl}})=F$, the kernel is $\{0\}$, and the inverse on $F$ is the logarithm
+*Split-Complex Elementary Functions*, §*The Logarithm*, gives the image, the injectivity and the inverse: $\exp(\mathbb{C}_{\mathrm{spl}})=F$, the kernel is $\{0\}$, and the inverse on $F$ is the logarithm
 
 $$
 \boxed{\; Q_{\log}=\tfrac12\ln\bigl(q^2-q'^2\bigr)+j\operatorname{artanh}\frac{q'}{q},
@@ -270,7 +270,7 @@ and the two compositions hold as stated there. There is no branch to choose and 
 
 ### The Principal Domain
 
-On this algebra the principal logarithm is the logarithm itself. The exponential is injective on $\mathbb{C}^{\mathrm{spl}}$ and its image is $F$, so a point of $F$ has exactly one logarithm and no branch is selected. The principal value is the formula of §*The Logarithm on a Component*, with the ordinary real logarithm of the positive norm. It is real-analytic on $F$ and diverges on the boundary. There is no cut to choose, because the boundary is the null cone and no point of $F$ lies on it; this is the sharpest difference from the reduced biquaternion and biquaternion cases, where the logarithm has a branch choice and cut walls.
+On this algebra the principal logarithm is the logarithm itself. The exponential is injective on $\mathbb{C}_{\mathrm{spl}}$ and its image is $F$, so a point of $F$ has exactly one logarithm and no branch is selected. The principal value is the formula of §*The Logarithm on a Component*, with the ordinary real logarithm of the positive norm. It is real-analytic on $F$ and diverges on the boundary. There is no cut to choose, because the boundary is the null cone and no point of $F$ lies on it; this is the sharpest difference from the reduced biquaternion and biquaternion cases, where the logarithm has a branch choice and cut walls.
 
 The logarithm exists on one component of four and nowhere else.
 
@@ -281,7 +281,7 @@ The logarithm exists on one component of four and nowhere else.
 | Spacelike wedges | $\lvert q'\rvert>\lvert q\rvert$ | none |
 | Null cone | $q=\pm q'$ | none |
 
-The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$. The null cone is not in ${\mathbb{C}^{\mathrm{spl}}}^\times$: the norm vanishes, and the logarithm diverges rather than jumps. As $q^2-q'^2\to0^+$ inside $F$, for instance, the angle $\operatorname{artanh}(q'/q)\to+\infty$. The principal domain is $F$ itself: the exponential maps $\mathbb{C}^{\mathrm{spl}}$ bijectively onto $F$, so $\exp:\mathbb{C}^{\mathrm{spl}}\to F$ is bijective and $\log:F\to\mathbb{C}^{\mathrm{spl}}$ is its inverse.
+The past cone and the spacelike wedges fail because they are the other components, while the image of the exponential is $F$. The null cone is not in ${\mathbb{C}_{\mathrm{spl}}}^\times$: the norm vanishes, and the logarithm diverges rather than jumps. As $q^2-q'^2\to0^+$ inside $F$, for instance, the angle $\operatorname{artanh}(q'/q)\to+\infty$. The principal domain is $F$ itself: the exponential maps $\mathbb{C}_{\mathrm{spl}}$ bijectively onto $F$, so $\exp:\mathbb{C}_{\mathrm{spl}}\to F$ is bijective and $\log:F\to\mathbb{C}_{\mathrm{spl}}$ is its inverse.
 
 ### The Fibre
 
@@ -296,7 +296,7 @@ and for $Q\notin F$ it is empty. In particular the fibre is not a lattice and th
 The quotient of the group of units by the image is
 
 $$
-{\mathbb{C}^{\mathrm{spl}}}^\times/\exp(\mathbb{C}^{\mathrm{spl}})={\mathbb{C}^{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2.
+{\mathbb{C}_{\mathrm{spl}}}^\times/\exp(\mathbb{C}_{\mathrm{spl}})={\mathbb{C}_{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2.
 $$
 
 **Proof.** By §*The Four Components*, the map $\epsilon\mapsto\epsilon F$ is a bijection from $\{\pm1,\pm j\}$ onto the set of the four components. The components are the cosets of $F$, and the multiplication of cosets is the multiplication of the corresponding signs, which is the group law of $(\mathbb{Z}/2\mathbb{Z})^2$. Hence the quotient has four elements and the class of $\epsilon$ is $\epsilon F$.
@@ -305,17 +305,17 @@ $$
 
 The construction gives $\exp(Q_{\log})=\epsilon Q$, not $Q$. If $\epsilon=1$, then $Q_{\log}$ is a logarithm of $Q$. If $\epsilon\neq1$, then $Q$ is not an exponential at all: it lies in the component $\epsilon^{-1}F\neq F$, while the image of the exponential is $F$, so $Q$ has no logarithm. The factor $\epsilon$ is exactly what makes the logarithm exist, and the exponent is a logarithm of the element $\epsilon Q$.
 
-This is the central difference from the complex case. There every nonzero element has a logarithm and the discrete factor is absent; here the logarithm exists on one component, and the discrete factor reaches the other three. The exponent is a point of $\mathbb{C}^{\mathrm{spl}}$, not a class modulo a lattice.
+This is the central difference from the complex case. There every nonzero element has a logarithm and the discrete factor is absent; here the logarithm exists on one component, and the discrete factor reaches the other three. The exponent is a point of $\mathbb{C}_{\mathrm{spl}}$, not a class modulo a lattice.
 
 ## The Group Law
 
-The product of two decompositions is the decomposition of the product. With $Q_i=\epsilon_i\exp(Q_{i\log})$, the commutativity of $\mathbb{C}^{\mathrm{spl}}$ gives
+The product of two decompositions is the decomposition of the product. With $Q_i=\epsilon_i\exp(Q_{i\log})$, the commutativity of $\mathbb{C}_{\mathrm{spl}}$ gives
 
 $$
 Q_1Q_2=(\epsilon_1\epsilon_2)\exp(Q_{1\log}+Q_{2\log}),
 $$
 
-and the right-hand side is already a decomposition: $\epsilon_1\epsilon_2\in\{\pm1,\pm j\}$ and the sum is in $\mathbb{C}^{\mathrm{spl}}$. In the coordinates the law is therefore
+and the right-hand side is already a decomposition: $\epsilon_1\epsilon_2\in\{\pm1,\pm j\}$ and the sum is in $\mathbb{C}_{\mathrm{spl}}$. In the coordinates the law is therefore
 
 $$
 (\epsilon_1,q_{1\log},q'_{1\log})(\epsilon_2,q_{2\log},q'_{2\log})
@@ -325,7 +325,7 @@ $$
 The component multiplies in $(\mathbb{Z}/2\mathbb{Z})^2$, and the two coordinates add. Hence
 
 $$
-\boxed{\; {\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2 \;}.
+\boxed{\; {\mathbb{C}_{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2 \;}.
 $$
 
 On the future cone the law is the isomorphism $\exp:(F,+)\to(F,\cdot)$ of *Split-Complex Elementary Functions*; the polar coordinates extend it to the whole group by the discrete factor. The law is exact, not a Baker–Campbell–Hausdorff series. The table restates it.
@@ -334,7 +334,7 @@ On the future cone the law is the isomorphism $\exp:(F,+)\to(F,\cdot)$ of *Split
 |---|---|
 | Component sign | multiplies in $(\mathbb{Z}/2\mathbb{Z})^2$ |
 | Exponent | adds |
-| Group | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
+| Group | ${\mathbb{C}_{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
 
 ## The Matrix Picture
 
@@ -387,13 +387,13 @@ The derivative of the logarithm at $Q\in F$ is left multiplication by $Q^{-1}$, 
 
 | decomposition | formula | parameters | domain | uniqueness | functions | group reading |
 |---|---|---|---|---|---|---|
-| modulus–unit | $Q=ru$ | $r>0$, $\lvert\langle u\rangle_{*}\rvert=1$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ | unique | square root | $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2$ |
-| rational-chart | $Q=r\epsilon\dfrac{1-sj}{1+sj}$ | $r>0$, $\epsilon\in\{1,j,-j\}$, $s\neq\pm1$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ minus the negative real axis | unique on the chart | rational | local |
-| exponential | $Q=r\epsilon\exp(\theta j)$ | $r>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ | ${\mathbb{C}^{\mathrm{spl}}}^\times$ | unique | exponential and logarithm | $(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
+| modulus–unit | $Q=ru$ | $r>0$, $\lvert\langle u\rangle_{*}\rvert=1$ | ${\mathbb{C}_{\mathrm{spl}}}^\times$ | unique | square root | $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2$ |
+| rational-chart | $Q=r\epsilon\dfrac{1-sj}{1+sj}$ | $r>0$, $\epsilon\in\{1,j,-j\}$, $s\neq\pm1$ | ${\mathbb{C}_{\mathrm{spl}}}^\times$ minus the negative real axis | unique on the chart | rational | local |
+| exponential | $Q=r\epsilon\exp(\theta j)$ | $r>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ | ${\mathbb{C}_{\mathrm{spl}}}^\times$ | unique | exponential and logarithm | $(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}^{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of units. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.
+The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}_{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of units. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.
 
 ### The Rational-Chart Form
 
@@ -422,7 +422,7 @@ On this branch $s$ runs over $(-1,1)$. The endpoints are the null directions, an
 
 The three forms are three presentations of one factorisation. The modulus–unit form is global and algebraic, with a square root; the rational-chart form is rational and local, missing the negative real axis; the exponential form is global and transcendental, with a finite component label instead of a kernel. The exponential form is the only one in which the group law is addition, and the modulus–unit form the only one that is algebraic and global.
 
-In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, the angle is periodic, and no discrete factor is needed. Here the image is one component and ${\mathbb{C}^{\mathrm{spl}}}^\times/\exp(\mathbb{C}^{\mathrm{spl}})\cong(\mathbb{Z}/2\mathbb{Z})^2$. The obstruction is a failure of existence, not a failure of uniqueness.
+In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, the angle is periodic, and no discrete factor is needed. Here the image is one component and ${\mathbb{C}_{\mathrm{spl}}}^\times/\exp(\mathbb{C}_{\mathrm{spl}})\cong(\mathbb{Z}/2\mathbb{Z})^2$. The obstruction is a failure of existence, not a failure of uniqueness.
 
 In a noncommutative algebra the amalgamation into one exponential fails; in the polar word of *The Polar Decomposition of an N-Regular Biquaternion* the order of the factors carries information.
 
@@ -456,7 +456,7 @@ $$
 \theta=\operatorname{artanh}\frac{y}{x}.
 $$
 
-The four charts cover ${\mathbb{C}^{\mathrm{spl}}}^\times$; their images are the four components, and their closures meet on the null cone, which is excluded.
+The four charts cover ${\mathbb{C}_{\mathrm{spl}}}^\times$; their images are the four components, and their closures meet on the null cone, which is excluded.
 
 On the identity component the coordinate lines are as follows.
 
@@ -505,7 +505,7 @@ The coordinates $\ln r$ and $\theta$ are linear, hence harmonic for the indefini
 
 | Result | Statement |
 |---|---|
-| Domain | $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times$, that is $\langle Q\rangle_{*}=q^2-q'^2\neq0$ |
+| Domain | $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$, that is $\langle Q\rangle_{*}=q^2-q'^2\neq0$ |
 | Decomposition | $Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j)$ |
 | Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)$ with $\lvert\langle u\rangle_{*}\rvert=1$ |
@@ -515,10 +515,10 @@ The coordinates $\ln r$ and $\theta$ are linear, hence harmonic for the indefini
 | Kernel | $\ker\exp=\{0\}$ |
 | Fibre | one point on $F$, empty elsewhere: no lattice and no branch |
 | Group law | the signs multiply and the two coordinates add |
-| Group | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
+| Group | ${\mathbb{C}_{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ |
 | Matrix picture | $M_Q=qI+q'K=M_\epsilon\exp(q_{\log}I+q'_{\log}K)$ |
 | Coordinates | $(\ln r,\theta)$ on each component, with signed Jacobian $\det M_\epsilon\,r^2=\langle Q\rangle_{*}$ |
-| Quotient | ${\mathbb{C}^{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2$ |
+| Quotient | ${\mathbb{C}_{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2$ |
 | Conformal factor | $dx^2-dy^2=r^2\bigl(d(\ln r)^2-d\theta^2\bigr)$; conformal for the indefinite metric only |
 
 ### Formulas
@@ -552,7 +552,7 @@ Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j),
 Q_{\log}=q_{\log}+jq'_{\log}, \quad q_{\log}=\ln r=\tfrac12\ln\lvert \langle Q\rangle_{*}\rvert, \quad q'_{\log}=\theta,
 $$
 
-with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. The unit factor $\epsilon\exp(\theta j)$ has norm of modulus $1$. The group law is componentwise on $\epsilon$ and additive on the exponent, so ${\mathbb{C}^{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
+with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The exponent $Q_{\log}$ is the logarithm of the element $\epsilon Q$ in the future cone, and $\epsilon$ is the component sign that makes $\epsilon Q$ lie there. The unit factor $\epsilon\exp(\theta j)$ has norm of modulus $1$. The group law is componentwise on $\epsilon$ and additive on the exponent, so ${\mathbb{C}_{\mathrm{spl}}}^\times\cong(\mathbb{Z}/2\mathbb{Z})^2\times\mathbb{R}^2$ as groups.
 
 The logarithm exists on one component and fails on the other three. The decomposition applies the logarithm to $\epsilon Q$, not to $Q$; this is the exact opposite of the complex case, where the logarithm exists everywhere and fails to be unique.
 
@@ -562,7 +562,7 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
 | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus, a positive real |

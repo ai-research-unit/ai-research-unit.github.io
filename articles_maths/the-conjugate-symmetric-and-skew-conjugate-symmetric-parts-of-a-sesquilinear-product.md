@@ -35,19 +35,19 @@ It is a $\varsigma$-sesquilinear product of the original parity exactly in the d
 **Proposition (the plain halves are $R^{\varsigma}$-bilinear).** Put
 
 $$
-\star^{\mathrm{sym}}(x,y) = \tfrac12\bigl(x \star y + y \star x\bigr), \qquad
-\star^{\mathrm{dif}}(x,y) = x \star y - y \star x .
+\star_{\mathrm{sym}}(x,y) = \tfrac12\bigl(x \star y + y \star x\bigr), \qquad
+\star_{\mathrm{dif}}(x,y) = x \star y - y \star x .
 $$
 
-Then $\star = \star^{\mathrm{sym}} + \tfrac12 \star^{\mathrm{dif}}$, the first operation is symmetric and the second antisymmetric, and both are $R^{\varsigma}$-bilinear. Neither is $\varsigma$-sesquilinear of the original parity unless the product is degenerate.
+Then $\star = \star_{\mathrm{sym}} + \tfrac12 \star_{\mathrm{dif}}$, the first operation is symmetric and the second antisymmetric, and both are $R^{\varsigma}$-bilinear. Neither is $\varsigma$-sesquilinear of the original parity unless the product is degenerate.
 
 *Proof.* The reconstruction and the symmetry are the definitions. For the scalar of the first operation in the first slot,
 
 $$
-(\lambda x) \star^{\mathrm{sym}} y = \tfrac12\Bigl(\lambda\,(x \star y) + \varsigma(\lambda)\,(y \star x)\Bigr),
+(\lambda x) \star_{\mathrm{sym}} y = \tfrac12\Bigl(\lambda\,(x \star y) + \varsigma(\lambda)\,(y \star x)\Bigr),
 $$
 
-which is $\lambda\star^{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two.
+which is $\lambda\star_{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two.
 
 **Remark.** The two halves are therefore operations of the wrong kind: they are bilinear over the fixed ring and nothing more. They are not new objects — the symmetric half is the **symmetrised sesquilinear product** and half the antisymmetric one is the **sesquilinear commutator**, and they are developed, with their scalar rules, their Jordan property on the Hermitian part and their failure of the Jacobi identity, in *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. Those two articles are the theory of the plain split, and this article takes them as read. The plain split is the literal analogue of the bilinear one and it does not stay in the category; the rest of the article is the repair.
 
@@ -56,8 +56,8 @@ which is $\lambda\star^{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ 
 **Proposition.** Let $\varepsilon : A \to R$ be additive with $\varepsilon(\lambda x) = \lambda \varepsilon(x)$ for $\lambda \in R$, and put $s = \varepsilon \circ \star$. Then
 
 $$
-\varepsilon\bigl(\star^{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + s(y,x)\bigr), \qquad
-\tfrac12\,\varepsilon\bigl(\star^{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - s(y,x)\bigr).
+\varepsilon\bigl(\star_{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + s(y,x)\bigr), \qquad
+\tfrac12\,\varepsilon\bigl(\star_{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - s(y,x)\bigr).
 $$
 
 *Proof.* Apply $\varepsilon$ to the two definitions and use its additivity and its linearity over $R$.
@@ -65,8 +65,8 @@ $$
 **Proposition (the Hermitian case).** Suppose in addition that the form $s$ is $\varsigma$-**Hermitian**, that is $s(y,x) = \varsigma(s(x,y))$ for all $x, y$. Then
 
 $$
-\varepsilon\bigl(\star^{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + \varsigma(s(x,y))\bigr), \qquad
-\tfrac12\,\varepsilon\bigl(\star^{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - \varsigma(s(x,y))\bigr),
+\varepsilon\bigl(\star_{\mathrm{sym}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) + \varsigma(s(x,y))\bigr), \qquad
+\tfrac12\,\varepsilon\bigl(\star_{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - \varsigma(s(x,y))\bigr),
 $$
 
 the $\varsigma$-even and the $\varsigma$-odd parts of the form. Over $\mathbb{C}$ with $\varsigma$ the conjugation these are $\operatorname{Re} s$ and $i\operatorname{Im} s$.
@@ -334,7 +334,7 @@ and the conjugate-symmetric products are exactly those whose constants satisfy $
 **Proposition.** For all $x, y \in A$,
 
 $$
-(x + y) \star (x + y) - x \star x - y \star y = x \star y + y \star x = 2\star^{\mathrm{sym}}(x,y).
+(x + y) \star (x + y) - x \star x - y \star y = x \star y + y \star x = 2\star_{\mathrm{sym}}(x,y).
 $$
 
 *Proof.* Expand the product by its additivity in each variable and cancel the two squares.
@@ -342,7 +342,7 @@ $$
 **Remark (the square polarises the plain symmetrisation, not the exchanged one).** The right-hand side is twice the **plain** symmetrisation of *The Sesquilinear Symmetrised Product*, and it is $2\star_{+}(x,y)$ only when $c$ is the identity, that is in the bilinear case. The identity that the algebra article proves as the polarisation of the symmetric half therefore has no analogue for the adapted half:
 
 $$
-(x + y) \star (x + y) - x \star x - y \star y = 2\star^{\mathrm{sym}}(x,y) \neq 2\star_{+}(x,y) \quad \text{in general.}
+(x + y) \star (x + y) - x \star x - y \star y = 2\star_{\mathrm{sym}}(x,y) \neq 2\star_{+}(x,y) \quad \text{in general.}
 $$
 
 The square map sees the plain symmetrisation and it cannot see the exchanged one, and the reason is that the exchange conjugates the value while the square of a sum conjugates nothing.
@@ -499,7 +499,7 @@ The construction needs $2$ invertible, and in characteristic two the two halves 
 | $R$, $\varsigma$, $R^{\varsigma}$ | A commutative ring with $1$; an involution of $R$; its fixed ring $\{\lambda : \varsigma(\lambda) = \lambda\}$ |
 | $A$, $\star$ | An $R$-module; a $\varsigma$-sesquilinear product, $R$-linear in the first variable and $\varsigma$-semilinear in the second |
 | $x \star y$ | The product; sesquilinear as above, and no further hypothesis |
-| $\star^{\mathrm{sym}}$, $\star^{\mathrm{dif}}$ | The plain symmetrisation $\tfrac12(x \star y + y \star x)$ and the difference $x \star y - y \star x$, of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator* |
+| $\star_{\mathrm{sym}}$, $\star_{\mathrm{dif}}$ | The plain symmetrisation $\tfrac12(x \star y + y \star x)$ and the difference $x \star y - y \star x$, of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator* |
 | $c$ | A conjugation: additive, $c(\lambda x) = \varsigma(\lambda)c(x)$, $c^{2} = \mathrm{id}$; an $R$-linear isomorphism $A^{\varsigma} \to A$ |
 | $\star^{c} = E_{c}(\star)$ | The exchange $c(y \star x)$; an involution of the set of $\varsigma$-sesquilinear products |
 | $\star_{+}$, $\star_{-}$ | The conjugate-symmetric and skew-conjugate-symmetric parts, $\tfrac12(x\star y \pm c(y\star x))$ |

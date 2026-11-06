@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$. The regular representation, developed in *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*, sends $\breve Q$ to the matrix of the left multiplication $L_{\breve Q}$ in the basis $1,j$,
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$. The regular representation, developed in *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*, sends $\breve Q$ to the matrix of the left multiplication $L_{\breve Q}$ in the basis $1,j$,
 
 $$
 \mathsf{M}(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
@@ -95,7 +95,7 @@ and $\langle \breve Q\rangle_{*}=\operatorname{Re}(Q_{+}\bar Q_{-})$, the real p
 
 ## The Groups in the Model
 
-**Proposition (the groups).** The group of units is the diagonal subgroup of $GL_{2}(\mathbb{C})$; the norm-one group is its determinant-one part; the $*$-unitary group $\mathrm{U}(\mathbb{B}^{\mathrm{red}})$ is the group of diagonal $*$-unitary matrices, which is a maximal torus of the $*$-unitary group $\mathrm{U}(2)$; and the versors of the bilinear form are the determinant-one diagonal matrices without the modulus restriction.
+**Proposition (the groups).** The group of units is the diagonal subgroup of $GL_{2}(\mathbb{C})$; the norm-one group is its determinant-one part; the $*$-unitary group $\mathrm{U}(\mathbb{B}_{\mathrm{red}})$ is the group of diagonal $*$-unitary matrices, which is a maximal torus of the $*$-unitary group $\mathrm{U}(2)$; and the versors of the bilinear form are the determinant-one diagonal matrices without the modulus restriction.
 
 **Proof.** Every unit is $\operatorname{diag}(Q_{+},Q_{-})$ with $Q_{+}Q_{-}\neq0$, and these form the diagonal subgroup; the conditions $\langle\cdot,\cdot\rangle_{\mathrm{ts}}=1$ and $|Q_{+}|=|Q_{-}|=1$ cut the determinant-one part and the diagonal $*$-unitary group; the diagonal $*$-unitary matrices are the diagonal matrices inside $\mathrm{U}(2)$, which is a maximal torus because it is a maximal abelian subgroup consisting of diagonalisable elements.
 
@@ -103,7 +103,7 @@ and $\langle \breve Q\rangle_{*}=\operatorname{Re}(Q_{+}\bar Q_{-})$, the real p
 
 **Proposition (the ideals and the minimal ideals).** The minimal left ideals of the algebra correspond to the two coordinate lines of the diagonal model; the two-sided ideals are $\{0\}$, the two lines, and the algebra; and the zero divisors are the singular elements, that is the matrices of rank one and the zero matrix.
 
-**Proof.** $\mathbb{B}^{\mathrm{red}}\Pi_+=\mathbb{C}\Pi_+$ is a minimal left ideal, and in the model it is the span of the first matrix unit; a two-sided ideal is a sum of the two coordinate lines, and the only possible sums are the empty one, the two single lines and the whole algebra; the zero divisors are the elements with a vanishing coordinate, which are exactly the singular diagonal matrices.
+**Proof.** $\mathbb{B}_{\mathrm{red}}\Pi_+=\mathbb{C}\Pi_+$ is a minimal left ideal, and in the model it is the span of the first matrix unit; a two-sided ideal is a sum of the two coordinate lines, and the only possible sums are the empty one, the two single lines and the whole algebra; the zero divisors are the elements with a vanishing coordinate, which are exactly the singular diagonal matrices.
 
 **Remark (the difference from the biquaternion model).** In the biquaternion algebra the minimal left ideals are two-dimensional, being the columns of $M_{2}(\mathbb{C})$, and the algebra is simple, so it has no proper two-sided ideal; in the reduced algebra the minimal ideals are one-dimensional, the algebra is semisimple with two simple components, and the two lines are the two summands of the direct product.
 

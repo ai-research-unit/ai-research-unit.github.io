@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ carries two quadratic conditions on $q=t+bj$: the split norm $q\bar q=t^2-b^2$, which decides invertibility, and the spectral condition $b^2$, which decides whether the eigenvalues $t\pm b$ coincide. Their vanishing loci are the two null lines $t=\pm b$ and the real axis $b=0$. The truth values of the pair cut the plane into four sectors. This article defines them, proves all four non-empty, describes their geometry, and computes their closures, dimensions and components. It proves that none is a defective stratum. The sector $\Sigma_{11}$ is the largest: because $b=0$ is removed, it has six components, not two.
+The split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ carries two quadratic conditions on $q=t+bj$: the split norm $q\bar q=t^2-b^2$, which decides invertibility, and the spectral condition $b^2$, which decides whether the eigenvalues $t\pm b$ coincide. Their vanishing loci are the two null lines $t=\pm b$ and the real axis $b=0$. The truth values of the pair cut the plane into four sectors. This article defines them, proves all four non-empty, describes their geometry, and computes their closures, dimensions and components. It proves that none is a defective stratum. The sector $\Sigma_{11}$ is the largest: because $b=0$ is removed, it has six components, not two.
 
 **Notation.** An element is $q=t+bj$, its conjugate is $\bar q=t-bj$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$. The idempotent coordinates are $u=t+b$ and $v=t-b$, so that $q=ue_+ +ve_-$ and the eigenvalues are $u$ and $v$. The split norm is $q\bar q=uv=t^2-b^2$; it is indefinite and is not a length. The two conditions were compared in *[Relations between the Split Norm and Spectral Regularity and Degeneracy](relations-between-the-split-norm-and-spectral-regularity-and-degeneracy.html)*.
 
@@ -21,7 +21,7 @@ $$
 
 The first index is $1$ when the norm is non-zero and $0$ when it is zero; the second is $1$ when $b$ is non-zero and $0$ when it is zero.
 
-**Proposition (the sectors cover the plane).** The sets $\Sigma_{11},\Sigma_{01},\Sigma_{10},\Sigma_{00}$ are pairwise disjoint and their union is $\mathbb{C}^{\mathrm{spl}}$.
+**Proposition (the sectors cover the plane).** The sets $\Sigma_{11},\Sigma_{01},\Sigma_{10},\Sigma_{00}$ are pairwise disjoint and their union is $\mathbb{C}_{\mathrm{spl}}$.
 
 *Proof.* Each element has exactly one truth value for each of the two conditions, so it lies in exactly one of the four combinations.
 
@@ -108,14 +108,14 @@ The origin lies in the closure of every sector, as the next section shows.
 
 | sector | closure | dimension | components |
 |---|---|---|---|
-| $\Sigma_{11}$ | $\mathbb{C}^{\mathrm{spl}}$ | $2$ | $6$ |
+| $\Sigma_{11}$ | $\mathbb{C}_{\mathrm{spl}}$ | $2$ | $6$ |
 | $\Sigma_{01}$ | $\mathcal{N}=\{t^2=b^2\}$ | $1$ | $4$ |
 | $\Sigma_{10}$ | $\mathcal{S}=\{b=0\}$ | $1$ | $2$ |
 | $\Sigma_{00}$ | $\{0\}$ | $0$ | $1$ |
 
 **Theorem (closures).** The closures are as in the table. The sector $\Sigma_{11}$ is open and dense, $\Sigma_{00}$ is closed, and $\Sigma_{01}$ and $\Sigma_{10}$ are neither open nor closed. The origin lies in the closure of all four sectors.
 
-*Proof.* The complement of $\Sigma_{11}$ is the union of the three lines, which has empty interior, so the closure is $\mathbb{C}^{\mathrm{spl}}$. The null cone $\mathcal{N}$ is closed and contains $\Sigma_{01}$, and the origin is a limit along either line, so the closure is $\mathcal{N}$. The real axis $\mathcal{S}$ is closed and contains $\Sigma_{10}$, and the origin is a limit of $t\neq0$, so the closure is $\mathcal{S}$. The singleton $\{0\}$ is closed.
+*Proof.* The complement of $\Sigma_{11}$ is the union of the three lines, which has empty interior, so the closure is $\mathbb{C}_{\mathrm{spl}}$. The null cone $\mathcal{N}$ is closed and contains $\Sigma_{01}$, and the origin is a limit along either line, so the closure is $\mathcal{N}$. The real axis $\mathcal{S}$ is closed and contains $\Sigma_{10}$, and the origin is a limit of $t\neq0$, so the closure is $\mathcal{S}$. The singleton $\{0\}$ is closed.
 
 $\Sigma_{11}$ is the complement of a closed union of lines, hence open. A ball around a point of $\Sigma_{01}$ or $\Sigma_{10}$ contains points outside the sector, so neither is open; both miss the origin, which lies in their closures, so neither is closed.
 
@@ -123,13 +123,13 @@ $\Sigma_{11}$ is the complement of a closed union of lines, hence open. A ball a
 
 *Proof.* $\Sigma_{11}$ is open in $\mathbb{R}^2$, hence of dimension two; its six components are the open angular sectors of the three-line complement. $\Sigma_{01}$ and $\Sigma_{10}$ are unions of open rays, of dimension one, with four and two components. The origin has dimension zero and one component.
 
-The closures overlap: $\overline{\Sigma_{11}}=\mathbb{C}^{\mathrm{spl}}$ meets every sector, while $\overline{\Sigma_{01}}\cap\overline{\Sigma_{10}}=\{0\}$. The origin is the only point common to all four closures.
+The closures overlap: $\overline{\Sigma_{11}}=\mathbb{C}_{\mathrm{spl}}$ meets every sector, while $\overline{\Sigma_{01}}\cap\overline{\Sigma_{10}}=\{0\}$. The origin is the only point common to all four closures.
 
 ## The Absence of a Defective Stratum
 
 **Definition (defective).** An element is **semisimple** if its minimal polynomial is squarefree; it is **defective** otherwise.
 
-**Theorem (no defective element).** Every element of $\mathbb{C}^{\mathrm{spl}}$ is semisimple. Consequently no sector is a defective stratum.
+**Theorem (no defective element).** Every element of $\mathbb{C}_{\mathrm{spl}}$ is semisimple. Consequently no sector is a defective stratum.
 
 *Proof.* If $b\neq0$, the minimal polynomial is $(X-t-b)(X-t+b)$, whose roots are distinct. If $b=0$, the minimal polynomial is $X-t$, which is squarefree. In both cases the minimal polynomial is squarefree.
 
@@ -137,7 +137,7 @@ The closures overlap: $\overline{\Sigma_{11}}=\mathbb{C}^{\mathrm{spl}}$ meets e
 
 *Proof.* The first two sectors have $b\neq0$ and the last two $b=0$; apply the theorem.
 
-Unlike *[The Spectrum](the-spectrum.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{C}^{\mathrm{spl}}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
+Unlike *[The Spectrum](the-spectrum.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{C}_{\mathrm{spl}}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
 
 ## The Sectors at a Glance
 
@@ -154,13 +154,13 @@ The four sectors are the truth-value cells of the split norm and the spectral co
 
 $\Sigma_{01}$ is the two null lines with the origin removed, of dimension one and four rays; its elements are zero divisors $2t e_\pm$ with eigenvalues $2t$ and $0$. $\Sigma_{10}$ is the real axis minus the origin, of dimension one and two half-lines; its elements are scalar units with repeated eigenvalue $t$. $\Sigma_{00}$ is the origin, of dimension zero, the only element degenerate for both and not a zero divisor.
 
-The closures are $\mathbb{C}^{\mathrm{spl}}$, the null cone, the real axis and the origin. Every element is semisimple, so no sector is defective; the origin is not a defective nilpotent stratum. The sectors are the geometry of the independence proved in *Relations between the Split Norm and Spectral Regularity and Degeneracy*.
+The closures are $\mathbb{C}_{\mathrm{spl}}$, the null cone, the real axis and the origin. Every element is semisimple, so no sector is defective; the origin is not a defective nilpotent stratum. The sectors are the geometry of the independence proved in *Relations between the Split Norm and Spectral Regularity and Degeneracy*.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ | the split-complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ | the split-complex algebra |
 | $q=t+bj$ | a general element, $t,b\in\mathbb{R}$ |
 | $q\bar q=t^2-b^2$ | the split norm |
 | $b^2$ | the spectral condition |

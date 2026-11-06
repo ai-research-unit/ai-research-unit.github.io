@@ -77,7 +77,7 @@ $$
 M\bigl(\tilde\Pi_1(\vec u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$
 
-whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\theta^{\mathrm{azm}})\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\theta^{\mathrm{azm}}, \sin\theta\sin\theta^{\mathrm{azm}}, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
+whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\theta_{\mathrm{azm}})\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\theta_{\mathrm{azm}}, \sin\theta\sin\theta_{\mathrm{azm}}, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
 
 ### The Hermitian subspace
 
@@ -245,7 +245,7 @@ The first of the open questions below can be given a partial answer, and the ans
 
 ### The amplitude array and its determinant
 
-A two-qubit state vector is $|\tilde{Ξ}^{\mathrm{sp}}\rangle=\sum_{A_1,A_2}c_{A_1A_2}|A_1A_2\rangle$ with $A_1,A_2\in\{0,1\}$. Its four amplitudes form the array $\mathbf c=(c_{A_1A_2})$, and the linear isomorphism $\mathbb{C}^2\otimes\mathbb{C}^2\to\mathrm{End}(\mathbb{C}^2)$ sends $|u\rangle\otimes|v\rangle$ to the rank-one operator $|u\rangle\langle v|$. The determinant of the array,
+A two-qubit state vector is $|\tilde{Ξ}_{\mathrm{sp}}\rangle=\sum_{A_1,A_2}c_{A_1A_2}|A_1A_2\rangle$ with $A_1,A_2\in\{0,1\}$. Its four amplitudes form the array $\mathbf c=(c_{A_1A_2})$, and the linear isomorphism $\mathbb{C}^2\otimes\mathbb{C}^2\to\mathrm{End}(\mathbb{C}^2)$ sends $|u\rangle\otimes|v\rangle$ to the rank-one operator $|u\rangle\langle v|$. The determinant of the array,
 
 $$
 \mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10},
@@ -253,7 +253,7 @@ $$
 
 is the **hyperdeterminant of format $2\times2$**, the generator of the polynomial invariants of $\mathbb{C}^2\otimes\mathbb{C}^2$ under the local group $SL(2,\mathbb{C})\times SL(2,\mathbb{C})$.
 
-**Proposition (separability is the rank-one condition).** $|\tilde{Ξ}^{\mathrm{sp}}\rangle$ is a product $|u\rangle\otimes|v\rangle$ if and only if $\operatorname{rank}\mathbf c=1$, if and only if $\mathrm{Det}(\mathbf c)=0$.
+**Proposition (separability is the rank-one condition).** $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ is a product $|u\rangle\otimes|v\rangle$ if and only if $\operatorname{rank}\mathbf c=1$, if and only if $\mathrm{Det}(\mathbf c)=0$.
 
 **Proof.** A product gives $\mathbf c=|u\rangle\langle v|$, of rank one. Conversely an array of rank one is $|u\rangle\langle v|$ for a nonzero column $|u\rangle$ and a nonzero row $\langle v|$, and the corresponding vector is $|u\rangle\otimes|v\rangle$. An array has rank at most one exactly when its $2\times2$ minor vanishes, and there is one minor.
 

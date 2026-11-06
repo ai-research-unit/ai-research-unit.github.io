@@ -24,7 +24,7 @@ It is associative, commutative and unital, and the algebra is the product of two
 
 **The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and for a nonzero element both are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
-**Definition (annihilator).** Let $\star$ be a product on $\mathbb{C}^{\mathrm{spl}}$ and let $Q_2\in\mathbb{C}^{\mathrm{spl}}$. The **left annihilator** and the **right annihilator** of $Q_2$ in $\star$ are
+**Definition (annihilator).** Let $\star$ be a product on $\mathbb{C}_{\mathrm{spl}}$ and let $Q_2\in\mathbb{C}_{\mathrm{spl}}$. The **left annihilator** and the **right annihilator** of $Q_2$ in $\star$ are
 
 $$
 A_\star(Q_2)=\{Q_1:Q_2\star Q_1=0\},\qquad
@@ -41,7 +41,7 @@ $$
 
 the left and the right multiplication of the plain algebra. The block is the parent of the other products of the space: it is associative and commutative, and its annihilators are the model for the two-sided reading. The block carries an involution, the conjugation, which is an automorphism; because the product is commutative, the involution does not separate the sides, and the two annihilators of an element are equal.
 
-**Proposition (the two sides coincide).** For every $Q_2\in\mathbb{C}^{\mathrm{spl}}$,
+**Proposition (the two sides coincide).** For every $Q_2\in\mathbb{C}_{\mathrm{spl}}$,
 
 $$
 \boxed{\;A(Q_2)=B(Q_2)\;}.
@@ -51,16 +51,16 @@ $$
 
 **Proposition (the annihilator is an ideal).** For every $Q_2$, the annihilator $A(Q_2)$ is an ideal of the plain algebra.
 
-**Proof.** If $Q_1,Q_1'\in A(Q_2)$ then $Q_2(Q_1+Q_1')=Q_2Q_1+Q_2Q_1'=0$, so the set is closed under addition. If $Q_1\in A(Q_2)$ and $R\in\mathbb{C}^{\mathrm{spl}}$ then $Q_2(RQ_1)=R(Q_2Q_1)=0$, so it is closed under multiplication by arbitrary elements. It is nonempty because it contains $0$.
+**Proof.** If $Q_1,Q_1'\in A(Q_2)$ then $Q_2(Q_1+Q_1')=Q_2Q_1+Q_2Q_1'=0$, so the set is closed under addition. If $Q_1\in A(Q_2)$ and $R\in\mathbb{C}_{\mathrm{spl}}$ then $Q_2(RQ_1)=R(Q_2Q_1)=0$, so it is closed under multiplication by arbitrary elements. It is nonempty because it contains $0$.
 
 ## The Multiplication Operators and Their Ranks
 
 **The left multiplication $L_Q$ is the real-linear operator of matrix $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ in the basis $1,j$; its trace is $2q$, its determinant is $Q\bar Q=q^{2}-q'^{2}$, and its rank is $2$ off the null cone, $1$ on the nonzero part of the cone, and $0$ at the origin.**
 
-**Definition.** For $Q\in\mathbb{C}^{\mathrm{spl}}$ the **left multiplication** by $Q$ is the map
+**Definition.** For $Q\in\mathbb{C}_{\mathrm{spl}}$ the **left multiplication** by $Q$ is the map
 
 $$
-L_Q:\mathbb{C}^{\mathrm{spl}}\longrightarrow\mathbb{C}^{\mathrm{spl}},\qquad L_Q(B)=QB.
+L_Q:\mathbb{C}_{\mathrm{spl}}\longrightarrow\mathbb{C}_{\mathrm{spl}},\qquad L_Q(B)=QB.
 $$
 
 Because the algebra is commutative, $L_Q=R_Q$, and the article writes $L_Q$ for both.
@@ -114,7 +114,7 @@ so the eigenvalues are the idempotent coordinates $Q_{+}=q+q'$ and $Q_{-}=q-q'$,
 
 **The annihilator of a nonzero element is $\{0\}$ off the null cone and the opposite null line on the cone; the annihilator of the origin is the whole algebra.**
 
-**Theorem (the annihilator).** For $Q\in\mathbb{C}^{\mathrm{spl}}$,
+**Theorem (the annihilator).** For $Q\in\mathbb{C}_{\mathrm{spl}}$,
 
 $$
 A(Q)=
@@ -122,7 +122,7 @@ A(Q)=
 \{0\}, & Q\bar Q\neq0,\\
 \mathbb{R}\Pi_{-}, & Q=\lambda\Pi_{+},\ \lambda\neq0,\\
 \mathbb{R}\Pi_{+}, & Q=\lambda\Pi_{-},\ \lambda\neq0,\\
-\mathbb{C}^{\mathrm{spl}}, & Q=0.
+\mathbb{C}_{\mathrm{spl}}, & Q=0.
 \end{cases}
 $$
 
@@ -136,7 +136,7 @@ $$
 
 **The annihilator of an ideal is an ideal, and on the two minimal ideals it exchanges them: $\operatorname{ann}(\mathbb{R}\Pi_{+})=\mathbb{R}\Pi_{-}$, $\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the annihilator of the whole algebra is the origin, and the annihilator of the origin is the whole algebra.**
 
-**Definition.** For a subset $S\subseteq\mathbb{C}^{\mathrm{spl}}$ the **annihilator** of $S$ is
+**Definition.** For a subset $S\subseteq\mathbb{C}_{\mathrm{spl}}$ the **annihilator** of $S$ is
 
 $$
 \operatorname{ann}(S)=\{B:QB=0\text{ for every }Q\in S\}.
@@ -156,7 +156,7 @@ $$
 **Proposition (the two extremes).**
 
 $$
-\operatorname{ann}(\mathbb{C}^{\mathrm{spl}})=\{0\},\qquad \operatorname{ann}(\{0\})=\mathbb{C}^{\mathrm{spl}}.
+\operatorname{ann}(\mathbb{C}_{\mathrm{spl}})=\{0\},\qquad \operatorname{ann}(\{0\})=\mathbb{C}_{\mathrm{spl}}.
 $$
 
 **Proof.** If $B$ annihilates every element, it annihilates $1$, so $B=0$. Every element annihilates $0$.
@@ -165,27 +165,27 @@ $$
 
 **Proof.** The null cone contains $\Pi_{+}$ and $\Pi_{-}$, so an annihilator of the cone lies in $\mathbb{R}\Pi_{-}\cap\mathbb{R}\Pi_{+}=\{0\}$.
 
-**Corollary (the double annihilator).** On the ideals of $\mathbb{C}^{\mathrm{spl}}$ the annihilator is an involution:
+**Corollary (the double annihilator).** On the ideals of $\mathbb{C}_{\mathrm{spl}}$ the annihilator is an involution:
 
 $$
 \operatorname{ann}(\operatorname{ann}(I))=I
 $$
 
-for $I=0$, $I=\mathbb{R}\Pi_{+}$, $I=\mathbb{R}\Pi_{-}$ and $I=\mathbb{C}^{\mathrm{spl}}$.
+for $I=0$, $I=\mathbb{R}\Pi_{+}$, $I=\mathbb{R}\Pi_{-}$ and $I=\mathbb{C}_{\mathrm{spl}}$.
 
-**Proof.** Direct from the two propositions: $\operatorname{ann}(\operatorname{ann}(0))=\operatorname{ann}(\mathbb{C}^{\mathrm{spl}})=0$; $\operatorname{ann}(\operatorname{ann}(\mathbb{R}\Pi_{+}))=\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the other line is symmetric; $\operatorname{ann}(\operatorname{ann}(\mathbb{C}^{\mathrm{spl}}))=\operatorname{ann}(0)=\mathbb{C}^{\mathrm{spl}}$.
+**Proof.** Direct from the two propositions: $\operatorname{ann}(\operatorname{ann}(0))=\operatorname{ann}(\mathbb{C}_{\mathrm{spl}})=0$; $\operatorname{ann}(\operatorname{ann}(\mathbb{R}\Pi_{+}))=\operatorname{ann}(\mathbb{R}\Pi_{-})=\mathbb{R}\Pi_{+}$; the other line is symmetric; $\operatorname{ann}(\operatorname{ann}(\mathbb{C}_{\mathrm{spl}}))=\operatorname{ann}(0)=\mathbb{C}_{\mathrm{spl}}$.
 
 ## The Annihilator on the Distinguished Subspaces
 
 **On the two eigenspaces of the conjugation every nonzero element has zero annihilator; on the two idempotent lines every nonzero element has the opposite line as its annihilator; the origin has the whole algebra.**
 
-The distinguished one-dimensional subspaces are the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the two idempotent lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.
+The distinguished one-dimensional subspaces are the real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, and the two idempotent lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.
 
-### The Real Subspace $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$
+### The Real Subspace $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
 For $Q=q\neq0$ the operator $L_Q$ is multiplication by the nonzero real number $q$, of rank $2$ and kernel $\{0\}$. Every nonzero real number is a unit, and its annihilator is trivial.
 
-### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$
+### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
 For $Q=jq'$ with $q'\neq0$ the operator $L_Q$ is multiplication by $jq'$, of matrix $\begin{pmatrix}0&q'\\q'&0\end{pmatrix}$, of determinant $-q'^{2}\neq0$ and rank $2$. The annihilator is $\{0\}$.
 
@@ -197,11 +197,11 @@ For $Q=\lambda\Pi_{+}$ with $\lambda\neq0$ the matrix is $\lambda\begin{pmatrix}
 
 | subspace | $Q$ | rank $L_Q$ | annihilator |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $q\neq0$ | $2$ | $\{0\}$ |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $jq'\neq0$ | $2$ | $\{0\}$ |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $q\neq0$ | $2$ | $\{0\}$ |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $jq'\neq0$ | $2$ | $\{0\}$ |
 | $\mathbb{R}\Pi_{+}$ | $\lambda\Pi_{+}\neq0$ | $1$ | $\mathbb{R}\Pi_{-}$ |
 | $\mathbb{R}\Pi_{-}$ | $\lambda\Pi_{-}\neq0$ | $1$ | $\mathbb{R}\Pi_{+}$ |
-| $\{0\}$ | $0$ | $0$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| $\{0\}$ | $0$ | $0$ | $\mathbb{C}_{\mathrm{spl}}$ |
 
 ## The Annihilator and the Matrix Model
 
@@ -231,7 +231,7 @@ A(Q)=
 \{0\}, & Q\bar Q\neq0,\\
 \mathbb{R}\Pi_{-}, & Q=\lambda\Pi_{+},\ \lambda\neq0,\\
 \mathbb{R}\Pi_{+}, & Q=\lambda\Pi_{-},\ \lambda\neq0,\\
-\mathbb{C}^{\mathrm{spl}}, & Q=0.
+\mathbb{C}_{\mathrm{spl}}, & Q=0.
 \end{cases}
 $$
 
@@ -241,14 +241,14 @@ The two null lines annihilate one another, the annihilator of the whole algebra 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Q=q+jq'$ | General split complex number |
 | $L_Q(B)=QB$ | Left multiplication by $Q$; equal to the right multiplication |
 | $\mathsf{L}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ | Matrix of $L_Q$ in the basis $1,j$ |
 | $A(Q)=\ker L_Q=\{B:QB=0\}$ | Annihilator of $Q$; equal to the right annihilator |
 | $\operatorname{ann}(S)=\{B:QB=0\ \forall Q\in S\}$ | Annihilator of a set |
 | $\operatorname{ann}(\mathbb{R}\Pi_{\pm})=\mathbb{R}\Pi_{\mp}$ | The two null lines annihilate one another |
-| $\operatorname{ann}(\mathbb{C}^{\mathrm{spl}})=\{0\}$, $\operatorname{ann}(\{0\})=\mathbb{C}^{\mathrm{spl}}$ | The two extremes |
+| $\operatorname{ann}(\mathbb{C}_{\mathrm{spl}})=\{0\}$, $\operatorname{ann}(\{0\})=\mathbb{C}_{\mathrm{spl}}$ | The two extremes |
 | $\operatorname{ann}(\operatorname{ann}(I))=I$ | The double annihilator on the ideals |
 | $Q_{\pm}=q\pm q'$ | Eigenvalues of $L_Q$, with eigenvectors $\Pi_{\pm}$ |
 

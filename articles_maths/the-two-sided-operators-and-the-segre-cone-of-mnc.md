@@ -4,7 +4,7 @@
 
 **The question.** An operator of the form $X\mapsto AXB$ is the product of a left and a right multiplication. At $n=2$ the same object is the biquaternion two-sided operator, of which the corpus already has three accounts: the abstract family, the sixteen basis operators in the Peirce frame, and the coefficient matrix computed entry by entry. This article states the construction for $M_{n}(\mathbb{C})$, where the two parameters are $n\times n$ matrices, and computes the set they fill inside the $n^{4}$ dimensions of the endomorphism algebra.
 
-**The result in one line.** The products fill a cone of complex dimension $2n^{2}-1$, closed under multiplication, with group of units $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$; the cone is the set of pure tensors of $M_{n}\otimes M_{n}^{\mathrm{opp}}$ and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
+**The result in one line.** The products fill a cone of complex dimension $2n^{2}-1$, closed under multiplication, with group of units $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$; the cone is the set of pure tensors of $M_{n}\otimes M_{\mathrm{opp},n}$ and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
 
 **The three numbers.** The parametrisation has $2n^{2}$ complex parameters, its generic fibre is a single scaling orbit of dimension one, and the image has dimension $2n^{2}-1$. At $n=2$ this is $8-1=7$, the dimension of the cone of the biquaternion algebra; at $n=3$ it is $17$; at $n=4$ it is $31$.
 
@@ -94,9 +94,9 @@ is a closed algebraic cone, stable under multiplication, and not a subspace.
 
 *Proof.* The cone property is the bilinearity. The closedness and the algebraic character are the rank condition of the companion article: $\mathcal{C}=\{M:\operatorname{rank}c(M)\le1\}$, cut out by the $2\times2$ minors of the coefficient array, which are polynomial. It is not a subspace because it is not closed under addition: for $n\ge2$ the sum $L_{I}R_{I}+L_{E_{11}}R_{E_{11}}$ of two products is not one, its coefficient array being the sum of two independent rank-one arrays.
 
-**The cone is a set of pure tensors.** Under the isomorphism $M_{n}\otimes M_{n}^{\mathrm{opp}}\to\operatorname{End}(M_{n})$ the product $L_{A}R_{B}$ is the image of the elementary tensor $A\otimes B^{\mathrm{opp}}$. Hence
+**The cone is a set of pure tensors.** Under the isomorphism $M_{n}\otimes M_{\mathrm{opp},n}\to\operatorname{End}(M_{n})$ the product $L_{A}R_{B}$ is the image of the elementary tensor $A\otimes B_{\mathrm{opp}}$. Hence
 $$
-\mathcal{C}=\{A\otimes B^{\mathrm{opp}}\}=\text{the decomposable tensors of }M_{n}\otimes M_{n}^{\mathrm{opp}} .
+\mathcal{C}=\{A\otimes B_{\mathrm{opp}}\}=\text{the decomposable tensors of }M_{n}\otimes M_{\mathrm{opp},n} .
 $$
 **This is the abstract reason for all the properties of the set**: the pure tensors of a tensor square form a cone, their projectivisation is a Segre variety, and their dimension is $2N-1$ and not $N^{2}$.
 
@@ -165,7 +165,7 @@ $$
 
 *Proof.* Apply the left side to $X$: $A(CXD)B=(AC)X(DB)$.
 
-**The order of the second slot is reversed.** The pair composes as $(A,B)(C,D)=(AC,DB)$, so the second slot multiplies in the reverse order. This is the semigroup of the biquaternion article, and it is the product in the tensor algebra $M_{n}\otimes M_{n}^{\mathrm{opp}}$ read on its two slots: the first factor multiplies on the left and the second on the right, and a right action composes in reverse.
+**The order of the second slot is reversed.** The pair composes as $(A,B)(C,D)=(AC,DB)$, so the second slot multiplies in the reverse order. This is the semigroup of the biquaternion article, and it is the product in the tensor algebra $M_{n}\otimes M_{\mathrm{opp},n}$ read on its two slots: the first factor multiplies on the left and the second on the right, and a right action composes in reverse.
 
 **Powers.** The composition gives
 $$
@@ -215,7 +215,7 @@ the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and 
 
 ## Summary
 
-The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes A$, is bilinear in the pair, and is constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$. The products fill a closed algebraic cone of complex dimension $2n^{2}-1$ inside the $n^{4}$ dimensions of the endomorphism algebra; the cone is the set of pure tensors of $M_{n}\otimes M_{n}^{\mathrm{opp}}$, and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
+The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes A$, is bilinear in the pair, and is constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$. The products fill a closed algebraic cone of complex dimension $2n^{2}-1$ inside the $n^{4}$ dimensions of the endomorphism algebra; the cone is the set of pure tensors of $M_{n}\otimes M_{\mathrm{opp},n}$, and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
 
 The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 

@@ -139,7 +139,7 @@ $$
 \int_\gamma f\,d\zeta = \Pi_1\int_{\gamma_+}f_+\,d\zeta_+ + \Pi_2\int_{\gamma_-}f_-\,d\zeta_-,
 $$
 
-where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{C}^{\mathrm{spl}}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial/\partial x_t\,fj = \partial/\partial x_1\,f$ for a left regular $f = f_+(\zeta_-)\Pi_1 + f_-(\zeta_+)\Pi_2$ reads $-2f_+'(\zeta_-)\Pi_1 + 2f_-'(\zeta_+)\Pi_2 = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
+where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{C}_{\mathrm{spl}}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial/\partial x_t\,fj = \partial/\partial x_1\,f$ for a left regular $f = f_+(\zeta_-)\Pi_1 + f_-(\zeta_+)\Pi_2$ reads $-2f_+'(\zeta_-)\Pi_1 + 2f_-'(\zeta_+)\Pi_2 = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
 
 **Remark (path independence and zero divisors).** Path independence of $\int_\gamma f\,d\zeta$ is governed by the closedness of the form, exactly as in the classical theory: on a simply connected domain a closed form is exact, and the primitive is built by integration, an operation that uses no division. The zero divisors enter elsewhere. First, a primitive is a function that is left $A$-differentiable with derivative $f$, so where $f$ takes a non-invertible value the differential is a non-invertible linear map and the inverse-function arguments that the classical theory uses locally are unavailable. Second, an expansion of a regular function at a singularity requires powers of $\zeta - x_t$, and where $\zeta - x_t$ is a zero divisor no such expansion exists; the singularities of a kernel supported on the null cone therefore have no Laurent description, which is why the residue calculus of the general theory is stated as an integral over a small sphere rather than as a coefficient extraction. Third, in an algebra with idempotents the integral splits, and the components that contribute nothing are exactly those in which the integrand is constant along the corresponding characteristic direction.
 
@@ -278,7 +278,7 @@ When $A$ has a complete set of orthogonal central idempotents the integral **spl
 | $\mathcal{C}^\pm$ | Inside and outside boundary values of the transform |
 | $f\,d\zeta$ | Hypercomplex differential $1$-form |
 | $e_i$, $A_i = e_iA = Ae_i$ | Complete orthogonal central idempotents and the split components of $A$ |
-| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\zeta_\pm = x_t \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{C}_{\mathrm{spl}}$ |
 
 
 

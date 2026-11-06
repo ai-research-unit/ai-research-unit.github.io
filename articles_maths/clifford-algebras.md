@@ -41,7 +41,7 @@ $$
 \boxed{\;f(v)^2 = \mathfrak{Q}(v)\cdot 1_A \qquad (v \in V)\;}.
 $$
 
-Then there is a unique homomorphism of $R$-algebras $f^{\mathrm{ind}} : \mathrm{Cl}(V, \mathfrak{Q}) \to A$ with $f^{\mathrm{ind}}(v) = f(v)$ for all $v \in V$.
+Then there is a unique homomorphism of $R$-algebras $f_{\mathrm{ind}} : \mathrm{Cl}(V, \mathfrak{Q}) \to A$ with $f_{\mathrm{ind}}(v) = f(v)$ for all $v \in V$.
 
 **Proof.** The universal property of the tensor algebra gives a unique algebra homomorphism $T(V) \to A$ extending $f$. For $v \in V$ its value on $v \otimes v - \mathfrak{Q}(v)\cdot 1$ is $f(v)^2 - \mathfrak{Q}(v)\cdot 1_A = 0$, so the homomorphism kills the ideal $I$ and descends to $\mathrm{Cl}(V, \mathfrak{Q})$; uniqueness is inherited from $T(V)$.
 

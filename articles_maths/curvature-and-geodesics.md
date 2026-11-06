@@ -259,21 +259,21 @@ The sphere is compact, its diameter is $\pi r$, and every pair of geodesics meet
 
 **Definition.** Euclidean space $\mathbb{R}^n$ with the standard metric has $K = 0$ on every plane, its geodesics are the straight lines, and its isometry group is the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$ acting transitively.
 
-It is the geometry in which the parallel postulate holds: through each point outside a given line there is exactly one line not meeting it, and the angle sum of a triangle is $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}^{\mathrm{dln}}$ with $\omega^2 = 0$, whose rotation group is the transvection group, the parabolic rotation group.
+It is the geometry in which the parallel postulate holds: through each point outside a given line there is exactly one line not meeting it, and the angle sum of a triangle is $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}_{\mathrm{dln}}$ with $\omega^2 = 0$, whose rotation group is the transvection group, the parabolic rotation group.
 
 ### The Hyperbolic Model
 
 **Definition.** **Hyperbolic space** $\mathbb{H}^n_r$ is the complete simply connected Riemannian manifold of constant sectional curvature $-1/r^2$; a concrete model is the upper half-space with the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$, whose geodesics are the vertical lines and the semicircles orthogonal to the boundary.
 
-Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}^{\mathrm{spl}}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.
+Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}_{\mathrm{spl}}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.
 
 ### The Comparison Table
 
 | Model | $K$ | Geodesics | Parallel postulate | Angle sum of a triangle | Isometry group | Algebra |
 |---|---|---|---|---|---|---|
 | Elliptic $S^n_r$ | $+1/r^2$ | great circles | no parallels | $> \pi$ | $O(n+1)$ | $\mathbb{C}$ |
-| Euclidean $\mathbb{R}^n$ | $0$ | straight lines | exactly one parallel | $= \pi$ | $\mathbb{R}^n \rtimes O(n)$ | $\mathbb{C}^{\mathrm{dln}}$ |
-| Hyperbolic $\mathbb{H}^n_r$ | $-1/r^2$ | lines and semicircles | infinitely many parallels | $< \pi$ | $O(n,1)$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| Euclidean $\mathbb{R}^n$ | $0$ | straight lines | exactly one parallel | $= \pi$ | $\mathbb{R}^n \rtimes O(n)$ | $\mathbb{C}_{\mathrm{dln}}$ |
+| Hyperbolic $\mathbb{H}^n_r$ | $-1/r^2$ | lines and semicircles | infinitely many parallels | $< \pi$ | $O(n,1)$ | $\mathbb{C}_{\mathrm{spl}}$ |
 
 The table is the reason the three two-dimensional algebras of *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* are the three model geometries: the sign of the square of their generator is the sign of the curvature of the geometry their rotation group implements.
 
@@ -315,7 +315,7 @@ A geodesic is a curve whose velocity is parallel along itself; it satisfies the 
 
 The curvature tensor has the algebraic symmetries of a curvature form and satisfies the first and second Bianchi identities. The sectional curvature of a plane is the Gaussian curvature of the surface it sweeps out and measures the convergence or divergence of geodesics in that plane; the Ricci tensor is its average over the directions orthogonal to a given vector and controls the growth of the volume element; the scalar curvature is the trace of the Ricci tensor and is the weakest of the three. The contraction of the second Bianchi identity says that the Einstein tensor $\operatorname{Ric} - \frac{1}{2}Sg$ has vanishing divergence.
 
-The complete simply connected manifolds of constant curvature are the round sphere ($K = 1/r^2$), Euclidean space ($K = 0$) and hyperbolic space ($K = -1/r^2$), the three model geometries whose two-dimensional cases are the geometries of the algebras $\mathbb{C}$, $\mathbb{C}^{\mathrm{dln}}$ and $\mathbb{C}^{\mathrm{spl}}$. The Gauss–Bonnet theorem integrates the curvature of a compact oriented surface to $2\pi$ times its Euler characteristic and, in its generalised form, identifies the integral of the Pfaffian of the curvature form with the Euler characteristic in every even dimension; it is the first instance of the principle that an integral of curvature is a topological invariant, and it shows that the topology constrains, while the metric realises, the geometry.
+The complete simply connected manifolds of constant curvature are the round sphere ($K = 1/r^2$), Euclidean space ($K = 0$) and hyperbolic space ($K = -1/r^2$), the three model geometries whose two-dimensional cases are the geometries of the algebras $\mathbb{C}$, $\mathbb{C}_{\mathrm{dln}}$ and $\mathbb{C}_{\mathrm{spl}}$. The Gauss–Bonnet theorem integrates the curvature of a compact oriented surface to $2\pi$ times its Euler characteristic and, in its generalised form, identifies the integral of the Pfaffian of the curvature form with the Euler characteristic in every even dimension; it is the first instance of the principle that an integral of curvature is a topological invariant, and it shows that the topology constrains, while the metric realises, the geometry.
 
 ## Summary of Notation
 

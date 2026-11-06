@@ -99,7 +99,7 @@ for a declared unit imaginary direction $\vec u$, and each part is an elementary
 
 **Proposition.** If $C(e)$ is irreducible under left multiplication, then $e$ is primitive and $D=eAe$ is a division ring.
 
-*Proof.* If $e=e_1+e_2$ with $e_1,e_2$ nonzero orthogonal idempotents, then $Ae=Ae_1\oplus Ae_2$ is a nontrivial decomposition into left-invariant subspaces, against irreducibility. An $A$-endomorphism $\varphi$ of $Ae$ satisfies $\varphi(x)=\varphi(xe)=x\varphi(e)$, with $\varphi(e)\in Ae$ and $e\varphi(e)=\varphi(e)e=\varphi(e)$, so $\varphi$ is the right multiplication by an element of $D=eAe$; conversely every such right multiplication is $A$-linear. Hence $\operatorname{End}_A(C(e))\cong D^{\mathrm{opp}}$, and the endomorphism ring of an irreducible module is a division ring by Schur's lemma. So $D$ is a division ring.
+*Proof.* If $e=e_1+e_2$ with $e_1,e_2$ nonzero orthogonal idempotents, then $Ae=Ae_1\oplus Ae_2$ is a nontrivial decomposition into left-invariant subspaces, against irreducibility. An $A$-endomorphism $\varphi$ of $Ae$ satisfies $\varphi(x)=\varphi(xe)=x\varphi(e)$, with $\varphi(e)\in Ae$ and $e\varphi(e)=\varphi(e)e=\varphi(e)$, so $\varphi$ is the right multiplication by an element of $D=eAe$; conversely every such right multiplication is $A$-linear. Hence $\operatorname{End}_A(C(e))\cong D_{\mathrm{opp}}$, and the endomorphism ring of an irreducible module is a division ring by Schur's lemma. So $D$ is a division ring.
 
 **Theorem.** Let $A$ be semisimple and $e$ primitive. Then $C(e)$ is irreducible under left multiplication.
 

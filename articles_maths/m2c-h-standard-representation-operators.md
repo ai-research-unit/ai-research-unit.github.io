@@ -173,7 +173,7 @@ $$
 L_{\tilde q}R_{\tilde p}\,L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\ \tilde p'\tilde p},
 $$
 
-so the family is a copy of $\mathbb{H}\times\mathbb{H}^{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $\mathbb{H}\times\mathbb{H}$: the second slot composes in the reverse order. The reversal is associativity showing through, and it is the same law as in the split category.
+so the family is a copy of $\mathbb{H}\times\mathbb{H}_{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $\mathbb{H}\times\mathbb{H}$: the second slot composes in the reverse order. The reversal is associativity showing through, and it is the same law as in the split category.
 
 **The units.** The invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, and they form the group
 
@@ -299,7 +299,7 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the double centraliser theorem in the division-algebra case and the structure of $\mathbb{H}\otimes\mathbb{H}^{\mathrm{opp}}$.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the double centraliser theorem in the division-algebra case and the structure of $\mathbb{H}\otimes\mathbb{H}_{\mathrm{opp}}$.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the two-sided action of $\mathbb{H}$ and the double cover $SU(2)\to SO(3)$.
 - Joseph Landsberg, *Tensors: Geometry and Applications* (American Mathematical Society, 2012), for the Segre variety, the rank of a tensor and the determinantal strata.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the left and right regular representations of $\mathbb{H}$ and their intersection.

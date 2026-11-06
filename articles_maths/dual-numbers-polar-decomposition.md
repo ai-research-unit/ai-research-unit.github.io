@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article develops the polar decomposition of the dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar decomposition, whose phase factor is the unit circle.
+This article develops the polar decomposition of the dual-number algebra $\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar decomposition, whose phase factor is the unit circle.
 
 The polar decomposition of the dual numbers is the **third and last case of the exponential rule** and the **missing link of the polar series**. The rule is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its case of the rule is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{C}^{\mathrm{dln}}$. A general dual number is
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{C}_{\mathrm{dln}}$. A general dual number is
 
 $$
 Q = q + \varepsilon q', \qquad q, q' \in R,
@@ -19,11 +19,11 @@ The conventions and the symbols are those of *Dual-Numbers Algebra* and of the c
 
 ### The Counting
 
-The algebra $\mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $q\neq0$, and the **group of units** $(\mathbb{C}^{\mathrm{dln}})^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*); here the unit elements $\langle Q\rangle=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
+The algebra $\mathbb{C}_{\mathrm{dln},\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $q\neq0$, and the **group of units** $(\mathbb{C}_{\mathrm{dln}})^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*); here the unit elements $\langle Q\rangle=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
 
 $$
 \boxed{\;
-(\mathbb{C}^{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +)
+(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +)
 \;},
 $$
 
@@ -39,11 +39,11 @@ So there is one positive scale, one discrete sign, and one real angle, and the a
 
 ### The Absence of a Compact Phase
 
-In the complex case the unit group contains the circle $\mathrm{U}(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathrm{M} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{C}^{\mathrm{dln}})^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential rule ends in a straight line rather than a circle*.
+In the complex case the unit group contains the circle $\mathrm{U}(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathrm{M} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{C}_{\mathrm{dln}})^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential rule ends in a straight line rather than a circle*.
 
 ### The Centrality of the Nilpotent
 
-Because $\mathbb{C}^{\mathrm{dln}}_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
+Because $\mathbb{C}_{\mathrm{dln},R}$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
 
 ## The Exponential Form
 
@@ -87,7 +87,7 @@ $$
 u(Q) = \operatorname{sgn}(q) \in \{\pm 1\}.
 $$
 
-It is the discrete part of the real scale, and it distinguishes the two connected components of $(\mathbb{C}^{\mathrm{dln}})^\times$.
+It is the discrete part of the real scale, and it distinguishes the two connected components of $(\mathbb{C}_{\mathrm{dln}})^\times$.
 
 ## The Nilpotent Central Factor
 
@@ -147,7 +147,7 @@ Suppose $r\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $r, r' > 0
 
 ### The Domain and the Boundary
 
-The domain of the polar decomposition is the set of units, $\mathbb{C}^{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
+The domain of the polar decomposition is the set of units, $\mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
 
 ## The Algorithm
 
@@ -220,15 +220,15 @@ For $Q = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the
 
 ## Relation to the Two Partial Forms
 
-The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\theta^{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
+The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
 \boxed{\;
-\rho \longrightarrow |q|, \qquad \theta \text{ or } \theta^{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta^{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
+\rho \longrightarrow |q|, \qquad \theta \text{ or } \theta_{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta_{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
 \;}.
 $$
 
-The two transcendental functions $\theta$ and $\theta^{\mathrm{rpd}}$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
+The two transcendental functions $\theta$ and $\theta_{\mathrm{rpd}}$ collapse to the rational function $q'/q$, and the two compact or non-compact rotations collapse to the shear. In the family of the three two-dimensional algebras, the dual polar form is the third and last row, and it is the only one whose exponential is polynomial.
 
 ## The Series of Polar Decompositions
 
@@ -237,8 +237,8 @@ The polar decompositions of the number systems of the corpus form a series, of w
 | Algebra | Norm | Modulus | Phase factor | Kind |
 |---|---|---|---|---|
 | $\mathbb{C}$ | $a^2 + a'^2$ | $\sqrt{a^2+a'^2}$ | $\exp(i\theta)$ | elliptic |
-| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $\exp(\theta^{\mathrm{rpd}} j)$ | hyperbolic |
-| $\mathbb{C}^{\mathrm{dln}}$ | $q^2$ | $|q|$ | $1 + s\varepsilon$ | parabolic |
+| $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $\exp(\theta_{\mathrm{rpd}} j)$ | hyperbolic |
+| $\mathbb{C}_{\mathrm{dln}}$ | $q^2$ | $|q|$ | $1 + s\varepsilon$ | parabolic |
 
 The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the rule is exhaustive for a generator of a one-parameter group.
 
@@ -256,9 +256,9 @@ for every dual number $Q = q + \varepsilon q'$ with $q \neq 0$. It has a single 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
-| $\mathbb{C}^{\mathrm{dln}} = \mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
-| $\mathbb{C}^{\mathrm{spl}}$ | Split-complex algebra, unit $j$, $j^2 = +1$ |
+| $\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
+| $\mathbb{C}_{\mathrm{dln}} = \mathbb{C}_{\mathrm{dln},\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split-complex algebra, unit $j$, $j^2 = +1$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation |

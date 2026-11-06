@@ -67,7 +67,7 @@ $$
 \boxed{\; \mathrm{Pin}/\mathrm{Spin}=\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1) \;}.
 $$
 
-*Proof.* The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the $*$-unitary group in the matrix model; the determinant is a homomorphism $U\to \mathrm{U}(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $\mathrm{U}(2)^{\mathrm{ab}}\cong \mathrm{U}(1)$.
+*Proof.* The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the $*$-unitary group in the matrix model; the determinant is a homomorphism $U\to \mathrm{U}(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $\mathrm{U}(2)/\mathrm{SU}(2)\cong \mathrm{U}(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $\mathrm{U}(2)_{\mathrm{ab}}\cong \mathrm{U}(1)$.
 
 **Remark (why the minus sign is absent here).** In the two bilinear twins the defining set is a level set of a scalar form, and its two values $+1$ and $-1$ give a pin group with two components, so that $\mathrm{Pin}$ is strictly larger than $\mathrm{Spin}$ by a discrete factor ($\{\pm e_t\}$ in the quaternionic case, no group at all in the plain case). Here the defining element $\tilde Q^{*}\tilde Q$ is **positive**, and the equation $\tilde Q^{*}\tilde Q=-e_{t}$ has no solution, because the scalar part $\sum_\mu\lvert Q_\mu\rvert^{2}$ is non-negative. There is no second component, and the quotient of the two groups is the connected circle, not a two-element group.
 

@@ -246,14 +246,14 @@ and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the 
 
 ### Helicity
 
-For a plane wave of definite wavevector $\vec u_k$, Faraday's law gives $\vec B = \vec u_k\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm = \mp i\varepsilon^{\mathrm{fop}}_\pm$. Then
+For a plane wave of definite wavevector $\vec u_k$, Faraday's law gives $\vec B = \vec u_k\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_k\times\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$. Then
 
 $$
-\boxed{\;\vec E + ic\vec B = 2E_+\varepsilon^{\mathrm{fop}}_+, \qquad
-\vec E - ic\vec B = 2E_-\varepsilon^{\mathrm{fop}}_-\;},
+\boxed{\;\vec E + ic\vec B = 2E_+\varepsilon_{\mathrm{fop},+}, \qquad
+\vec E - ic\vec B = 2E_-\varepsilon_{\mathrm{fop},-}\;},
 $$
 
-so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\vec E-ic\vec B$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\varepsilon^{\mathrm{fop}}_+$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\varepsilon^{\mathrm{fop}}_-$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.
+so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\vec E-ic\vec B$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\varepsilon_{\mathrm{fop},+}$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\varepsilon_{\mathrm{fop},-}$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.
 
 ## Where the Split Lives, and Where It Does Not
 

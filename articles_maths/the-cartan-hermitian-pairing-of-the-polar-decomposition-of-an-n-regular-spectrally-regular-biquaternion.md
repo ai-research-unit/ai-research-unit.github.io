@@ -8,10 +8,10 @@ Every element of $\Sigma_{11}$ is the ordered product of a positive real scale, 
 
 $$
 \tilde{Q} = r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
+= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta^{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
+The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\alpha)$ with $\alpha\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
 
 **The Cartan Hermitian pairing** is the grouping that multiplies the scale into the boost and the phase into the rotor:
 
@@ -135,11 +135,11 @@ This is the split of *Hermitian and Skew-Hermitian Elements*, §*The Two Halves*
 | $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | real | purely imaginary | Hermitian matrices | the boosts and the scales |
 | $\mathbb{M}_-$ | $\tilde{Q}^{*} = -\tilde{Q}$ | purely imaginary | real | anti-Hermitian matrices | the four-vectors and the exponents |
 
-The first factor of the Cartan pairing is the element $\tilde Q_H = r\tilde U_{\mathrm b} = r\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}\,e_t + ir\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$: its scalar part $r\cosh\tfrac{\theta^{\mathrm{rpd}}}{2}$ is real and its vector part $ir\sinh\tfrac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ is purely imaginary, so $\tilde Q_H$ lies in $\mathbb{M}_+$.
+The first factor of the Cartan pairing is the element $\tilde Q_H = r\tilde U_{\mathrm b} = r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t + ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$: its scalar part $r\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$ is real and its vector part $ir\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ is purely imaginary, so $\tilde Q_H$ lies in $\mathbb{M}_+$.
 
 ### Positivity
 
-The first factor is not merely Hermitian: it is **positive**. In the matrix model $\mathsf{M}_2(\tilde Q_H)$ is Hermitian with eigenvalues $r \exp(\pm\theta^{\mathrm{rpd}}/2)$, both positive since $r>0$, so $\tilde Q_H$ is positive definite (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition*). Its determinant is the norm
+The first factor is not merely Hermitian: it is **positive**. In the matrix model $\mathsf{M}_2(\tilde Q_H)$ is Hermitian with eigenvalues $r \exp(\pm\theta_{\mathrm{rpd}}/2)$, both positive since $r>0$, so $\tilde Q_H$ is positive definite (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Polar Decomposition*). Its determinant is the norm
 
 $$
 \det\mathsf{M}_2(\tilde Q_H) = \langle\tilde Q_H\rangle_{\natural} = r^{2}\,\langle\tilde U_{\mathrm b}\rangle_{\natural} = r^{2} > 0 ,
@@ -156,7 +156,7 @@ The first factor is where the pairing keeps the **scale** and the **boost**. The
 | formula | $\tilde Q_H=r\tilde U_{\mathrm b}=\sqrt{\tilde Q\tilde Q^{*}}$ |
 | kind | Hermitian positive |
 | norm | $\langle\tilde Q_H\rangle_{\natural}=r^{2}$ |
-| eigenvalues | $r\exp(\pm\theta^{\mathrm{rpd}}/2)$ in the matrix model |
+| eigenvalues | $r\exp(\pm\theta_{\mathrm{rpd}}/2)$ in the matrix model |
 | conjugation | $\tilde Q_H^{*}=\tilde Q_H$, $\overline{\tilde Q_H}=\tilde Q_H^{\natural}=r\tilde U_{\mathrm b}^{\natural}$ |
 | role | the scale and the boost, the only non-compact factor |
 
@@ -303,17 +303,17 @@ The anti-automorphism reverses the order, and the computation is that of §*The 
 The pairing is a **Hermitian pairing** because the two exponents of its factors lie in the two involutive subspaces. Writing the exponents of the definition,
 
 $$
-\tilde Q_H = \exp(\mathcal H) , \qquad \mathcal H = \ln r\,e_t + i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b} , \qquad \tilde Q_0 = \exp(\mathcal K) , \qquad \mathcal K = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r} ,
+\tilde Q_H = \exp(\mathcal H) , \qquad \mathcal H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} , \qquad \tilde Q_0 = \exp(\mathcal K) , \qquad \mathcal K = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r} ,
 $$
 
-the first exponent has a real scalar part $\ln r$ and a purely imaginary vector part $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and the second has a purely imaginary scalar part $i\alpha$ and a real vector part $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two exponents are therefore of the two opposite kinds.
+the first exponent has a real scalar part $\ln r$ and a purely imaginary vector part $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and the second has a purely imaginary scalar part $i\alpha$ and a real vector part $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two exponents are therefore of the two opposite kinds.
 
 | exponent | scalar part | vector part | subspace | related factor |
 |---|---|---|---|---|
-| $\mathcal H = \ln r\,e_t + i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | real | purely imaginary | $\mathbb{M}_+$, Hermitian | $\tilde Q_H = \exp \mathcal H$, Hermitian positive |
+| $\mathcal H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | real | purely imaginary | $\mathbb{M}_+$, Hermitian | $\tilde Q_H = \exp \mathcal H$, Hermitian positive |
 | $\mathcal K = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | purely imaginary | real | $\mathbb{M}_-$, anti-Hermitian | $\tilde Q_0 = \exp \mathcal K$, $*$-unitary |
 
-The first exponent is the sum of two Hermitian terms, $(\ln r)e_t\in\mathbb{M}_+$ and $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$; the second is the sum of two anti-Hermitian terms, $i\alpha\,e_t\in\mathbb{M}_-$ and $\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$. The split of the four factors two and two is the split of the four exponents two and two, and it is exactly the Cartan grouping. The two exponents do not commute in general, so the element is not the exponential of their sum; the two factors are computed from the element and not by adding the four exponents of the companion article.
+The first exponent is the sum of two Hermitian terms, $(\ln r)e_t\in\mathbb{M}_+$ and $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$; the second is the sum of two anti-Hermitian terms, $i\alpha\,e_t\in\mathbb{M}_-$ and $\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$. The split of the four factors two and two is the split of the four exponents two and two, and it is exactly the Cartan grouping. The two exponents do not commute in general, so the element is not the exponential of their sum; the two factors are computed from the element and not by adding the four exponents of the companion article.
 
 ### The Factors Are Not the Sectors
 
@@ -340,7 +340,7 @@ and the split is the Cartan decomposition of the algebra as a real Lie algebra u
 
 $$ \mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \mathfrak{u}(2) = \mathfrak{su}(2)\oplus i\mathbb{R} , \qquad \mathfrak{p} = \{\text{Hermitian matrices}\}. $$
 
-The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements, the anti-Hermitian scalar $ie_t$ and the anti-Hermitian vectors $\tfrac{\theta}{2}\vec u_{\mathrm r}$; the non-compact summand $\mathfrak{p}$ is spanned by the Hermitian elements, the real scalar $\ln r\,e_t$ and the Hermitian vectors $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$. The two summands are of real dimension four each, and their sum is the real dimension $8$ of the algebra. The exponent of $\mathfrak{u}(2)$ is the $*$-unitary group $\mathrm{U}(2)$ and the exponent of $\mathfrak{p}$ is the positive cone of the Hermitian elements, so the Cartan decomposition of the algebra reads the pairing at the level of the group.
+The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements, the anti-Hermitian scalar $ie_t$ and the anti-Hermitian vectors $\tfrac{\theta}{2}\vec u_{\mathrm r}$; the non-compact summand $\mathfrak{p}$ is spanned by the Hermitian elements, the real scalar $\ln r\,e_t$ and the Hermitian vectors $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$. The two summands are of real dimension four each, and their sum is the real dimension $8$ of the algebra. The exponent of $\mathfrak{u}(2)$ is the $*$-unitary group $\mathrm{U}(2)$ and the exponent of $\mathfrak{p}$ is the positive cone of the Hermitian elements, so the Cartan decomposition of the algebra reads the pairing at the level of the group.
 
 ## The Cartan Decomposition of the Unit Group
 
@@ -453,7 +453,7 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element
 
 The Cartan pairing groups the scale with the boost into the Hermitian positive factor $\tilde Q_H=r\tilde U_{\mathrm b}$ and the phase with the rotor into the $*$-unitary factor $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}$. The first is the positive square root of $\tilde Q\tilde Q^{*}$, the second is $\tilde Q_H^{-1}\tilde Q$, and the pairing solves the single equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$. Both factors are functions of the element alone, and both are defined on the whole complement of the null cone. The Hamilton pairing is partial in both senses; the quaternion pairing is partial in its construction only; the Cartan pairing is total in both.
 
-The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\alpha\,e_t+\frac{\theta}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group.
+The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\alpha\,e_t+\frac{\theta}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group.
 
 ## Summary of Notation
 
@@ -473,9 +473,9 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 | $\tilde q_r$ | the real quaternion part of $\tilde{Q}$, the element with the real parts of the four coefficients |
 | $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | the Hermitian and the anti-Hermitian subspaces |
 | $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)\cong \mathrm{U}(1)\cdot\mathrm{Sp}(1)$ | the $*$-unitary group of the algebra, home of the second factor |
-| $\mathcal H = \ln \tilde Q_H = \ln r\,e_t + i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the Hermitian exponent, in $\mathbb{M}_+$ |
+| $\mathcal H = \ln \tilde Q_H = \ln r\,e_t + i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the Hermitian exponent, in $\mathbb{M}_+$ |
 | $\mathcal K = \ln \tilde Q_0 = i\alpha\,e_t + \tfrac{\theta}{2}\vec u_{\mathrm r}$ | the anti-Hermitian exponent, in $\mathbb{M}_-$ |
-| $\theta^{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and unit axis of the boost |
+| $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and unit axis of the boost |
 | $\theta$, $\vec u_{\mathrm r}$ | rotation angle and unit axis of the rotor |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
 | $\mathsf{M}_2$ | the matrix model $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ |

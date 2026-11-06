@@ -51,10 +51,10 @@ $$
 
 so that $M(G)$ is a Banach `*`-algebra with isometric involution; the involution is an anti-automorphism of the full measure algebra, with no hypothesis on the group.
 
-**Proof.** The total variation of $\mu^*$ is $|\mu^*|(E) = |\mu|(E^{-1})$, so $|\mu^*|(G) = |\mu|(G)$ and the involution is isometric; the order-two and linearity statements are immediate. For the anti-automorphism, test against $f\in C_{00}(G)$ using the pairing identity $\langle\lambda^*,f\rangle = \overline{\langle\lambda,f^{\mathrm{refl}}\rangle}$ with $f^{\mathrm{refl}}(x) = \overline{f(x^{-1})}$. Then
+**Proof.** The total variation of $\mu^*$ is $|\mu^*|(E) = |\mu|(E^{-1})$, so $|\mu^*|(G) = |\mu|(G)$ and the involution is isometric; the order-two and linearity statements are immediate. For the anti-automorphism, test against $f\in C_{00}(G)$ using the pairing identity $\langle\lambda^*,f\rangle = \overline{\langle\lambda,f_{\mathrm{refl}}\rangle}$ with $f_{\mathrm{refl}}(x) = \overline{f(x^{-1})}$. Then
 
 $$
-\bigl\langle(\mu*\nu)^*,f\bigr\rangle = \overline{\bigl\langle\mu*\nu,f^{\mathrm{refl}}\bigr\rangle} = \overline{\int\!\!\int \overline{f(y^{-1}x^{-1})}\,d\mu(x)\,d\nu(y)} = \int\!\!\int f(y^{-1}x^{-1})\,d\overline{\mu(x)}\,d\overline{\nu(y)} ,
+\bigl\langle(\mu*\nu)^*,f\bigr\rangle = \overline{\bigl\langle\mu*\nu,f_{\mathrm{refl}}\bigr\rangle} = \overline{\int\!\!\int \overline{f(y^{-1}x^{-1})}\,d\mu(x)\,d\nu(y)} = \int\!\!\int f(y^{-1}x^{-1})\,d\overline{\mu(x)}\,d\overline{\nu(y)} ,
 $$
 
 and the substitution $u = y^{-1}$, $v = x^{-1}$ turns the last expression into $\int\!\!\int f(uv)\,d\nu^*(u)\,d\mu^*(v) = \langle\nu^*\!*\mu^*,f\rangle$. Since $C_{00}(G)$ separates measures, the identity follows.

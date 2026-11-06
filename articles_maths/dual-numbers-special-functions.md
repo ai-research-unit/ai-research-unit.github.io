@@ -7,13 +7,13 @@ This article introduces the dual numbers special functions as a collection of na
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. No specific dimensions. Dual numbers analysis is assumed from the preceding article, and the maximal ideal is used throughout. The functions are defined over the real numbers $\mathbb{R}$, where the exponential, logarithmic and trigonometric series converge and the structure theorem for dual differentiable functions applies; the polynomial identities they satisfy hold over any commutative $\mathbb{Q}$-algebra.
 
-Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
+Throughout this article, the dual number algebra is denoted $\mathbb{C}_{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}_{\mathrm{spl}}$. The unit of $\mathbb{C}_{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
 ## Preliminary: The Structure of Dual Functions
 
 Before defining any special function, it is worth recalling the structural theorem from dual numbers analysis, because it determines the shape of every function in this article.
 
-**Theorem (Structure of dual differentiable functions).** A dual differentiable function $f : \Omega \to \mathbb{C}^{\mathrm{dln}}$ on a domain $\Omega \subseteq \mathbb{C}^{\mathrm{dln}}$ is of the form
+**Theorem (Structure of dual differentiable functions).** A dual differentiable function $f : \Omega \to \mathbb{C}_{\mathrm{dln}}$ on a domain $\Omega \subseteq \mathbb{C}_{\mathrm{dln}}$ is of the form
 
 $$
 f(q + \varepsilon q') = u(q) + \left( q' u'(q) + c(q) \right) \varepsilon,
@@ -32,7 +32,7 @@ The functions defined below are of two kinds:
 
 ### Definition
 
-The **dual exponential** is defined for $Q \in \mathbb{C}^{\mathrm{dln}}$ by
+The **dual exponential** is defined for $Q \in \mathbb{C}_{\mathrm{dln}}$ by
 
 $$
 \exp(Q) = \sum_{n=0}^\infty \frac{Q^n}{n!}.
@@ -129,7 +129,7 @@ There is no dual analogue of the argument of a complex number, because the dual 
 
 ### Definition
 
-For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{C}^{\mathrm{dln}}$, the **dual power** is
+For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{C}_{\mathrm{dln}}$, the **dual power** is
 
 $$
 Q_1^{Q_2} = \exp(Q_2 \log Q_1).
@@ -505,15 +505,15 @@ The dual Lambert W function has two real branches, corresponding to the two real
 
 The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.
 
-**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F^{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $Q = q + \varepsilon q'$ with $q \in I$,
+**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $F_{\mathrm{ext}}$ be its extension to the dual numbers defined by the same formula. Then for $Q = q + \varepsilon q'$ with $q \in I$,
 
 $$
 \boxed{\;
-F^{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon
+F_{\mathrm{ext}}(Q) = F(q) + q' F'(q) \varepsilon
 \;}.
 $$
 
-**Proof.** The extension $F^{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(q) + (q' u'(q) + c(q))\varepsilon$. Evaluating at $q' = 0$ gives $u(q) = F(q)$, hence $u'(q) = F'(q)$. The coefficient of $q'$ in the infinitesimal part is therefore $F'(q)$, and the term $c(q)$ is the value of the infinitesimal part at $q' = 0$, which is zero because the extension reduces to the real function $F$ when $q' = 0$.
+**Proof.** The extension $F_{\mathrm{ext}}$ is dual differentiable, and by the structure theorem it is of the form $u(q) + (q' u'(q) + c(q))\varepsilon$. Evaluating at $q' = 0$ gives $u(q) = F(q)$, hence $u'(q) = F'(q)$. The coefficient of $q'$ in the infinitesimal part is therefore $F'(q)$, and the term $c(q)$ is the value of the infinitesimal part at $q' = 0$, which is zero because the extension reduces to the real function $F$ when $q' = 0$.
 
 This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
 
@@ -531,7 +531,7 @@ The section on the structure principle states what organises all of the definiti
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dln}}$ | Dual number algebra |
+| $\mathbb{C}_{\mathrm{dln}}$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\exp(Q), \log Q$ | Dual exponential, logarithm |

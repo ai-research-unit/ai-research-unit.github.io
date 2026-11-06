@@ -67,7 +67,7 @@ $$
 \boxed{\;\mathbb{R}[\tilde\zeta] = \{p + q\tilde\zeta : p, q \in \mathbb{R}\} \cong \mathbb{C}\;},
 $$
 
-a copy of the complex numbers inside $\mathbb{H}^{\mathrm{spl}}$, and every subalgebra of $\mathbb{H}^{\mathrm{spl}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\zeta$ is again a solution and $\mathbb{R}[-\tilde\zeta] = \mathbb{R}[\tilde\zeta]$, so the map $\tilde\zeta \mapsto \mathbb{R}[\tilde\zeta]$ induces a bijection between the antipodal pairs $\{\pm\tilde\zeta\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.
+a copy of the complex numbers inside $\mathbb{H}_{\mathrm{spl}}$, and every subalgebra of $\mathbb{H}_{\mathrm{spl}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\zeta$ is again a solution and $\mathbb{R}[-\tilde\zeta] = \mathbb{R}[\tilde\zeta]$, so the map $\tilde\zeta \mapsto \mathbb{R}[\tilde\zeta]$ induces a bijection between the antipodal pairs $\{\pm\tilde\zeta\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.
 
 **Proof.** $\tilde\zeta^2 = -1$ gives the isomorphism $p + q\tilde\zeta \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\zeta]$ with square $-1$ are the $p + q\tilde\zeta$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\zeta$; and $\tilde\zeta$ and $-\tilde\zeta$ lie on the two sheets, their coefficients of $\vec e_x$ being opposite.
 
@@ -76,20 +76,20 @@ a copy of the complex numbers inside $\mathbb{H}^{\mathrm{spl}}$, and every suba
 **Theorem (A Single Conjugacy Class).** All solutions of $\tilde\zeta^2 = -1$ are conjugate to one another under the group of units:
 
 $$
-\boxed{\;\mathcal{R}_{-1} = \{g \vec e_x g^{-1} : g \in {\mathbb{H}^{\mathrm{spl}}}^{\times}\}\;}.
+\boxed{\;\mathcal{R}_{-1} = \{g \vec e_x g^{-1} : g \in {\mathbb{H}_{\mathrm{spl}}}^{\times}\}\;}.
 $$
 
-The set is a single conjugacy class of the group ${\mathbb{H}^{\mathrm{spl}}}^{\times}$, and it contains $\vec e_x$, so it is the conjugacy class of $\vec e_x$.
+The set is a single conjugacy class of the group ${\mathbb{H}_{\mathrm{spl}}}^{\times}$, and it contains $\vec e_x$, so it is the conjugacy class of $\vec e_x$.
 
 **Proof.** The adjoint action of the unit group on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each component of the level set $N = 1$; the unit $\vec e_y$ with $N = -1$ exchanges the components. Hence every solution is conjugate to $\vec e_x$ under the unit group.
 
-**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $\vec e_y$, since $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$.
+**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $\vec e_y$, since $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$.
 
 **Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $\vec e_y$ is the computation $\vec e_y \vec e_x = -\vec e_z = -\vec e_x \vec e_y$, so $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$; here $\vec e_y^{-1} = \vec e_y$ and $\langle \vec e_y\rangle_{\natural} = -1$.
 
 ## The Root Set as a Homogeneous Space
 
-**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(\vec e_x) = \{g \in {\mathbb{H}^{\mathrm{spl}}}^{\times} : g \vec e_x = \vec e_x g\}$ be the centraliser of $\vec e_x$ in the group of units. Then $\operatorname{Cent}(\vec e_x)$ is the group of nonzero elements of the copy $\mathbb{R}[\vec e_x] \cong \mathbb{C}$ of the complex numbers, so that
+**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(\vec e_x) = \{g \in {\mathbb{H}_{\mathrm{spl}}}^{\times} : g \vec e_x = \vec e_x g\}$ be the centraliser of $\vec e_x$ in the group of units. Then $\operatorname{Cent}(\vec e_x)$ is the group of nonzero elements of the copy $\mathbb{R}[\vec e_x] \cong \mathbb{C}$ of the complex numbers, so that
 
 $$
 \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times},
@@ -98,7 +98,7 @@ $$
 and the map $g \mapsto g \vec e_x g^{-1}$ induces a bijection of homogeneous spaces
 
 $$
-\boxed{\;\mathcal{R}_{-1} \cong {\mathbb{H}^{\mathrm{spl}}}^{\times} / \operatorname{Cent}(\vec e_x), \qquad \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}\;}.
+\boxed{\;\mathcal{R}_{-1} \cong {\mathbb{H}_{\mathrm{spl}}}^{\times} / \operatorname{Cent}(\vec e_x), \qquad \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}\;}.
 $$
 
 The two sides are real surfaces: the unit group has real dimension $4$ and $\mathbb{C}^{\times}$ has real dimension $2$, so the quotient has real dimension $2$, matching the dimension of the level set.
@@ -109,7 +109,7 @@ The two sides are real surfaces: the unit group has real dimension $4$ and $\mat
 
 **Proof.** The stabiliser of $\vec e_x$ in the group $\{N = 1\}$ is $\operatorname{Cent}(\vec e_x) \cap U = GL_1(\mathbb{C}) \cap \{N=1\}$, which is the group of unit complex numbers, isomorphic to $SO(2)$; the orbit of $\vec e_x$ under $U$ is one sheet by the preceding corollary, and the orbit–stabiliser correspondence gives it as $SO(2)$-cosets. The identification of $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the hyperbolic plane is that of *Hyperbolic Geometry*.
 
-The name for the object is therefore: **the root set is the conjugacy class of $\vec e_x$, a homogeneous space ${\mathbb{H}^{\mathrm{spl}}}^{\times} / \mathbb{C}^{\times}$, whose two connected components are two copies of the hyperbolic plane.**
+The name for the object is therefore: **the root set is the conjugacy class of $\vec e_x$, a homogeneous space ${\mathbb{H}_{\mathrm{spl}}}^{\times} / \mathbb{C}^{\times}$, whose two connected components are two copies of the hyperbolic plane.**
 
 ## The Relation to the Idempotents and to the Zero Divisors
 
@@ -127,7 +127,7 @@ $$
 \tilde\pi_+ = \tfrac{1}{2}(1 + \eta), \qquad \tilde\pi_- = \tfrac{1}{2}(1 - \eta)
 $$
 
-are idempotents with $\tilde\pi_+ + \tilde\pi_- = 1$ and $\tilde\pi_+ \tilde\pi_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}^{\mathrm{spl}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
+are idempotents with $\tilde\pi_+ + \tilde\pi_- = 1$ and $\tilde\pi_+ \tilde\pi_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{spl}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
 
 **Proof.** The identities are the same computation as for $\tilde\pi_{1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
 
@@ -163,13 +163,13 @@ The picture is therefore the following. The roots of $+1$ in $V$ form the level 
 
 For the quaternion algebra the equation has a different solution set.
 
-| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ |
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$ |
 |---|---|---|
 | equation | $\tilde\zeta^2 = -1$ | $\tilde\zeta^2 = -1$ |
 | solution set | the level set $\{N = 1\}$ in $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$ | the level set $\{N = 1\}$ in $V$ |
 | real dimension | $2$ | $2$ |
-| conjugacy class | single class under $Sp(1)$ | single class under ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ |
-| homogeneous space | $Sp(1)/\mathrm{U}(1)$ | ${\mathbb{H}^{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes |
+| conjugacy class | single class under $Sp(1)$ | single class under ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ |
+| homogeneous space | $Sp(1)/\mathrm{U}(1)$ | ${\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes |
 | generated algebra | a copy of $\mathbb{C}$ | a copy of $\mathbb{C}$ |
 
 The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in *Quaternion Algebra*, §*Basic Properties*: for a pure quaternion $\vec q$ one has $\vec q^2 = -\langle \vec q\rangle_{\natural}$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to *Split-Quaternion Topology*; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.
@@ -184,7 +184,7 @@ The solutions of $\tilde\zeta^2 = -1$ in the split-quaternion algebra are exactl
 
 Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\zeta$ and $-\tilde\zeta$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
-The solutions form a single conjugacy class, the class of $\vec e_x$; the stabiliser of $\vec e_x$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space ${\mathbb{H}^{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
+The solutions form a single conjugacy class, the class of $\vec e_x$; the stabiliser of $\vec e_x$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space ${\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
 The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\zeta^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
@@ -198,12 +198,12 @@ The roots of $+1$ play the companion role: they are $\pm 1$ together with the le
 | $X^2 = -I$ | the corresponding equation for matrices | this article |
 | $GL_1(\mathbb{C})$ | the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$ | this article |
 | $\operatorname{Cent}(\vec e_x)$ | the centraliser of $\vec e_x$, $\cong \mathbb{C}^{\times}$ | this article |
-| $\mathcal{R}_{-1} \cong {\mathbb{H}^{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$ | the root set as a homogeneous space | this article |
+| $\mathcal{R}_{-1} \cong {\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$ | the root set as a homogeneous space | this article |
 | $\eta^2 = +1$, $\langle \eta\rangle_{\natural} = -1$ | the root set of $+1$ in $V$ | this article |
 | $\tfrac12(1 \pm \eta)$ | the idempotents attached to a root of $+1$ | this article |
 | $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the group of units with $N = 1$ | *Split-Quaternion Norm and Invertibility* |
 | $V$ | the vector subspace | *Split-Quaternion Algebra* |
-| $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$ | later Part V systems, named only | *The Number Systems as Clifford Algebras* |
+| $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$ | later Part V systems, named only | *The Number Systems as Clifford Algebras* |
 
 ## Further Reading
 

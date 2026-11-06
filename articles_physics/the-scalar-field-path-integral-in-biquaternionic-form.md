@@ -9,7 +9,7 @@ The division of labour among the path-integral articles of the corpus must be st
 Three statements organise the article.
 
 1. **The integration variable is a central-valued c-number field.** The field configurations are functions into the centre $\mathbb{C}_{\mathbb{B}}$; the action, the source and the measure are central; and the weight is a central phase. Because the scalar field is bosonic, the sum over configurations is an ordinary (functional) integral over complex functions; it is the fermionic case that would require anticommuting values. This is the path-integral form of the statement that spin $0$ lives in the centre.
-2. **The functional integral is the operator formalism's generating functional.** Its functional derivatives reproduce the time-ordered correlation functions of the field operator of the companion article *The Quantized Scalar Field in Biquaternionic Form*; the free two-point function is the Feynman propagator; the vacuum functional is the norm of the vacuum-to-vacuum amplitude. The canonical commutator is recovered from the representation $\pi^{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi^{\mathrm{scl}}$.
+2. **The functional integral is the operator formalism's generating functional.** Its functional derivatives reproduce the time-ordered correlation functions of the field operator of the companion article *The Quantized Scalar Field in Biquaternionic Form*; the free two-point function is the Feynman propagator; the vacuum functional is the norm of the vacuum-to-vacuum amplitude. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi_{\mathrm{scl}}$.
 3. **The algebra contributes the same three things it contributes elsewhere in the scalar sector.** The centrality of the field and the source; the biquaternion-norm interpretation of the quadratic form, whose momentum-space symbol is the biquaternion norm of the material four-wavevector shifted by the mass; and the identification of the Wick rotation with a sector relabelling. No new mechanism and no native ladder; the bosonic gap of the companion Fock-space article persists.
 
 The article is organised as follows. The next section derives the functional integral from the field-eigenvalue basis and the time-slicing of the propagator. The following section defines the generating functional and evaluates the free Gaussian. The next section establishes the equivalence with the operator formalism. The section after that treats the vacuum persistence amplitude and its relation to pair creation. A section states the biquaternion interpretation. The article closes with the standard/open separation.
@@ -23,30 +23,30 @@ The article is organised as follows. The next section derives the functional int
 
 ## From the Operator Formalism to the Functional Integral
 
-The functional integral is derived from the operator formalism by inserting a complete set of field eigenstates at each time. The field operator $\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ has a continuum of eigenstates,
+The functional integral is derived from the operator formalism by inserting a complete set of field eigenstates at each time. The field operator $\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ has a continuum of eigenstates,
 
 $$
-\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\xi^{\mathrm{scl}}\rangle=\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\xi^{\mathrm{scl}}\rangle,
+\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\xi_{\mathrm{scl}}\rangle=\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\xi_{\mathrm{scl}}\rangle,
 \qquad
-\langle\xi^{\mathrm{scl}}_{\mathrm e}|\xi^{\mathrm{scl}}\rangle=\delta[\xi^{\mathrm{scl}}_{\mathrm e}-\xi^{\mathrm{scl}}],
+\langle\xi_{\mathrm{scl},\mathrm e}|\xi_{\mathrm{scl}}\rangle=\delta[\xi_{\mathrm{scl},\mathrm e}-\xi_{\mathrm{scl}}],
 \qquad
-\int\mathcal{D}\xi^{\mathrm{scl}}\,|\xi^{\mathrm{scl}}\rangle\langle\xi^{\mathrm{scl}}|=\mathbf{1},
+\int\mathcal{D}\xi_{\mathrm{scl}}\,|\xi_{\mathrm{scl}}\rangle\langle\xi_{\mathrm{scl}}|=\mathbf{1},
 $$
 
 with real eigenvalues for the real field and complex eigenvalues for the complex one. The transition amplitude factors into short-time pieces, and inserting the field basis between them gives, for a real field,
 
 $$
-\langle\xi^{\mathrm{scl}}_f,r'_{t,f}|\xi^{\mathrm{scl}}_i,r'_{t,i}\rangle
-=\int_{\xi^{\mathrm{scl}}(r'_{t,i})=\xi^{\mathrm{scl}}_i}^{\xi^{\mathrm{scl}}(r'_{t,f})=\xi^{\mathrm{scl}}_f}\mathcal{D}\xi^{\mathrm{scl}}\;
-\exp\left(\frac{i}{\hbar}\int_{r'_{t,i}}^{r'_{t,f}}\!dr'_t\,\mathrm{Lag}[\xi^{\mathrm{scl}},\partial\xi^{\mathrm{scl}}/\partial r'_t]\right),
+\langle\xi_{\mathrm{scl},f},r'_{t,f}|\xi_{\mathrm{scl},i},r'_{t,i}\rangle
+=\int_{\xi_{\mathrm{scl}}(r'_{t,i})=\xi_{\mathrm{scl},i}}^{\xi_{\mathrm{scl}}(r'_{t,f})=\xi_{\mathrm{scl},f}}\mathcal{D}\xi_{\mathrm{scl}}\;
+\exp\left(\frac{i}{\hbar}\int_{r'_{t,i}}^{r'_{t,f}}\!dr'_t\,\mathrm{Lag}[\xi_{\mathrm{scl}},\partial\xi_{\mathrm{scl}}/\partial r'_t]\right),
 $$
 
-with $\mathrm{Lag}=\int d^3r\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\xi^{\mathrm{scl}}_i,\xi^{\mathrm{scl}}_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\xi^{\mathrm{scl}}=\prod_t d\xi^{\mathrm{scl}}(r'_t)$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
+with $\mathrm{Lag}=\int d^3r\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\xi_{\mathrm{scl},i},\xi_{\mathrm{scl},f}$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\xi_{\mathrm{scl}}=\prod_t d\xi_{\mathrm{scl}}(r'_t)$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
 
 In the framework's notation the field is central-valued and the weight is a central phase,
 
 $$
-\tilde{Ξ}(\tilde R_\varphi)=\xi^{\mathrm{scl}}(\tilde R_\varphi)e_t,
+\tilde{Ξ}(\tilde R_\varphi)=\xi_{\mathrm{scl}}(\tilde R_\varphi)e_t,
 \qquad
 S[\tilde{Ξ}]=\int d^4r\left[-\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right],
 $$
@@ -77,32 +77,32 @@ The time-sliced construction above can be written in either the Lagrangian or th
 $$
 \int\mathcal{D}\pi\,|\pi\rangle\langle\pi|=\mathbf{1},
 \qquad
-\langle\xi^{\mathrm{scl}}|\pi\rangle=\exp(\,\frac{i}{\hbar}\int d^3r\,(\pi\xi^{\mathrm{scl}}+\pi^\dagger{\xi^{\mathrm{scl}}}^\dagger)),
+\langle\xi_{\mathrm{scl}}|\pi\rangle=\exp(\,\frac{i}{\hbar}\int d^3r\,(\pi\xi_{\mathrm{scl}}+\pi^\dagger{\xi_{\mathrm{scl}}}^\dagger)),
 $$
 
-and using $\langle\pi|H|\xi^{\mathrm{scl}}\rangle=\langle\pi|\xi^{\mathrm{scl}}\rangle H(\xi^{\mathrm{scl}},\pi)$, the kernel becomes
+and using $\langle\pi|H|\xi_{\mathrm{scl}}\rangle=\langle\pi|\xi_{\mathrm{scl}}\rangle H(\xi_{\mathrm{scl}},\pi)$, the kernel becomes
 
 $$
-\langle\xi^{\mathrm{scl}}_f,r'_{t,f}|\xi^{\mathrm{scl}}_i,r'_{t,i}\rangle
-=\int\mathcal{D}\xi^{\mathrm{scl}}\,\mathcal{D}\pi\;
+\langle\xi_{\mathrm{scl},f},r'_{t,f}|\xi_{\mathrm{scl},i},r'_{t,i}\rangle
+=\int\mathcal{D}\xi_{\mathrm{scl}}\,\mathcal{D}\pi\;
 \exp\left(\frac{i}{\hbar}\int_{r'_{t,i}}^{r'_{t,f}}\!dr'_t\int d^3r\,
-\big[\pi\,\partial\xi^{\mathrm{scl}}/\partial r'_t+\pi^\dagger\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}(\xi^{\mathrm{scl}},\pi)\big]\right),
+\big[\pi\,\partial\xi_{\mathrm{scl}}/\partial r'_t+\pi^\dagger\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}(\xi_{\mathrm{scl}},\pi)\big]\right),
 $$
 
-the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\xi^{\mathrm{scl}}|^{2}+\mu^{2}|\xi^{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi^{\mathrm{scl}}/\partial r'_t+\pi^{\dagger}\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\xi^{\mathrm{scl}}/\partial r'_t|^{2}-c^{-2}|\partial\xi^{\mathrm{scl}}/\partial r'_t|^{2}-|\nabla\xi^{\mathrm{scl}}|^{2}-\mu^{2}|\xi^{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
+the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\xi_{\mathrm{scl}}|^{2}+\mu^{2}|\xi_{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi_{\mathrm{scl}}/\partial r'_t+\pi^{\dagger}\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-c^{-2}|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-|\nabla\xi_{\mathrm{scl}}|^{2}-\mu^{2}|\xi_{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
 
 $$
-\frac{\partial\mathcal{H}}{\partial\pi}=\partial\xi^{\mathrm{scl}}/\partial r'_t
+\frac{\partial\mathcal{H}}{\partial\pi}=\partial\xi_{\mathrm{scl}}/\partial r'_t
 \qquad\Longleftrightarrow\qquad
-\pi=\frac{1}{c^2}\left(\partial\xi^{\mathrm{scl}}/\partial r'_t\right)^{\,*},
+\pi=\frac{1}{c^2}\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\,*},
 $$
 
 which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no gauge redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
 
-The path integral is also a semiclassical expansion. Writing $\xi^{\mathrm{scl}}=\xi^{\mathrm{scl}}_{cl}+\eta$ about a solution of the classical equation, the exponent expands as
+The path integral is also a semiclassical expansion. Writing $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},cl}+\eta$ about a solution of the classical equation, the exponent expands as
 
 $$
-S[\xi^{\mathrm{scl}}_{cl}+\eta]=S[\xi^{\mathrm{scl}}_{cl}]
+S[\xi_{\mathrm{scl},cl}+\eta]=S[\xi_{\mathrm{scl},cl}]
 +\int d^4r\,\eta^\dagger\!\left(\Box-\mu^2\right)\!\eta+O(\eta^3),
 $$
 
@@ -120,7 +120,7 @@ $$
 and the time-ordered correlation functions of the quantized field are its functional derivatives,
 
 $$
-\boxed{\;\langle0|T\,\xi^{\mathrm{fop}}(x_1)\cdots\xi^{\mathrm{fop}}(x_n)\,\xi^{\mathrm{fop}\dagger}(y_1)\cdots\xi^{\mathrm{fop}\dagger}(y_m)|0\rangle
+\boxed{\;\langle0|T\,\xi_{\mathrm{fop}}(x_1)\cdots\xi_{\mathrm{fop}}(x_n)\,\xi_{\mathrm{fop}}^{\dagger}(y_1)\cdots\xi_{\mathrm{fop}}^{\dagger}(y_m)|0\rangle
 =\frac{1}{Z[0]}\left(\frac{1}{i}\right)^{n+m}
 \frac{\delta^{\,n+m}Z[\tilde J]}
 {\delta J^*(x_1)\cdots\delta J^*(x_n)\,\delta J(y_1)\cdots\delta J(y_m)}\bigg|_{\tilde J=0}\;}.
@@ -131,8 +131,8 @@ This is the equivalence that the next section examines; here the free case is ev
 **The free Gaussian.** The free action is quadratic, and the functional integral is the formal limit of the finite-dimensional Gaussian identity. On a lattice of $N$ sites with a real symmetric positive-definite quadratic form $A$,
 
 $$
-Z_N(J)=\int\prod_{i=1}^{N}d\xi^{\mathrm{scl}}_i\;
-\exp\!\left(-\frac{1}{2}{\xi^{\mathrm{scl}}}^{T}A\xi^{\mathrm{scl}}+J^{T}\xi^{\mathrm{scl}}\right)
+Z_N(J)=\int\prod_{i=1}^{N}d\xi_{\mathrm{scl},i}\;
+\exp\!\left(-\frac{1}{2}{\xi_{\mathrm{scl}}}^{T}A\xi_{\mathrm{scl}}+J^{T}\xi_{\mathrm{scl}}\right)
 =(2\pi)^{N/2}(\det A)^{-1/2}\exp\!\left(\frac{1}{2}J^{T}A^{-1}J\right),
 $$
 
@@ -151,7 +151,7 @@ $$
 where $\Delta_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\Delta_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\Delta_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
 
 $$
-\langle0|T\,\xi^{\mathrm{fop}}(x)\xi^{\mathrm{fop}\dagger}(y)|0\rangle
+\langle0|T\,\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
 =\left(\frac{1}{i}\right)^{\!2}
 \frac{\delta^{2}Z[\tilde J]}{\delta J^*(x)\,\delta J(y)}\bigg|_{\tilde J=0}
 =\Delta_F(x-y),
@@ -166,18 +166,18 @@ The path integral and the canonical quantization are two representations of one 
 **The canonical commutator.** On functionals of the configuration, the momentum is represented by
 
 $$
-\pi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-i\hbar\,\frac{\delta}{\delta\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
+\pi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-i\hbar\,\frac{\delta}{\delta\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
 $$
 
 so that
 
 $$
-\big[\xi^{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)\big]
-=-i\hbar\left[\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\frac{\delta}{\delta\xi^{\mathrm{scl}}(\vec y)}\right]
+\big[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi_{\mathrm{fop}}(\vec y)\big]
+=-i\hbar\left[\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\frac{\delta}{\delta\xi_{\mathrm{scl}}(\vec y)}\right]
 =i\hbar\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y),
 $$
 
-which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\xi^{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi^{\mathrm{scl}}(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\xi^{\mathrm{scl}}/\partial r'_t)$ on shell, matching the classical Legendre transform.
+which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi_{\mathrm{scl}}(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\xi_{\mathrm{scl}}/\partial r'_t)$ on shell, matching the classical Legendre transform.
 
 **The mode expansion and the correlators.** The Gaussian integration produces the Wightman and Feynman functions of the companion field article, and the standard free-field Wick expansion recovers the mode algebra from them. The Hamiltonian and the charge are the generators of the time and phase translations, and their matrix elements are reproduced by the functional integral with the appropriate insertions. The equivalence is the standard one and is not re-derived; what the framework changes is the notation.
 
@@ -190,8 +190,8 @@ which is the equal-time commutator imposed in the companion quantization. The co
 The functional integral is made convergent by continuing to imaginary time. Writing $r'_t=-i\tau$, so that the material coordinate's time component becomes the real coefficient $c\tau$ and the phase becomes a decaying weight, the action continues to the **Euclidean action**
 
 $$
-S_E[\tilde{Ξ}]=\int d^4r_E\left[(\partial/\partial\tau\,{\xi^{\mathrm{scl}}}^*)(\partial/\partial\tau\,\xi^{\mathrm{scl}})
-+\sum_k(\partial/\partial x_k\,{\xi^{\mathrm{scl}}}^*)(\partial/\partial x_k\,\xi^{\mathrm{scl}})+\mu^2{\xi^{\mathrm{scl}}}^*\xi^{\mathrm{scl}}\right]
+S_E[\tilde{Ξ}]=\int d^4r_E\left[(\partial/\partial\tau\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial\tau\,\xi_{\mathrm{scl}})
++\sum_k(\partial/\partial x_k\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial x_k\,\xi_{\mathrm{scl}})+\mu^2{\xi_{\mathrm{scl}}}^*\xi_{\mathrm{scl}}\right]
 =\int d^4r_E\;\mathrm{Sc}\!\left[\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ}\right],
 $$
 
@@ -241,20 +241,20 @@ The scalar sector's interaction is a central self-coupling. The renormalizable $
 
 $$
 \mathcal{L}_{\mathrm{int}}=-\frac{\lambda}{4}\,\Big(\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\Big)^2
-=-\frac{\lambda}{16}\left(\xi^{\mathrm{scl}}_1^2+\xi^{\mathrm{scl}}_2^2\right)^2 ,
+=-\frac{\lambda}{16}\left(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2\right)^2 ,
 $$
 
-where the second form uses the component normalization stated above, $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=\frac12(\xi^{\mathrm{scl}}_1^2+\xi^{\mathrm{scl}}_2^2)$, and the potential is a central scalar polynomial. The generating functional becomes
+where the second form uses the component normalization stated above, $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})=\frac12(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)$, and the potential is a central scalar polynomial. The generating functional becomes
 
 $$
 Z[\tilde J]=\exp\!\left[-i\int d^4r\;\frac{\lambda}{4}\left(\frac{\delta}{i\,\delta J^*}\frac{\delta}{i\,\delta J}\right)^{\!2}\right]Z_0[\tilde J],
 $$
 
-whose expansion in powers of $\lambda$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\lambda v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\lambda$ times a central unit in the normalisation $-\frac{\lambda}{4!}(\xi^{\mathrm{scl}}_1^2+\xi^{\mathrm{scl}}_2^2)^2$, equivalently $-\frac{3}{2}i\lambda$ in the invariant's normalisation $-\frac{\lambda}{16}(\xi^{\mathrm{scl}}_1^2+\xi^{\mathrm{scl}}_2^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
+whose expansion in powers of $\lambda$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\lambda v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\lambda$ times a central unit in the normalisation $-\frac{\lambda}{4!}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$, equivalently $-\frac{3}{2}i\lambda$ in the invariant's normalisation $-\frac{\lambda}{16}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
 
 Two structural comments complete the picture.
 
-**The loop expansion is the expansion in $\hbar$.** Restoring $\hbar$, the weight is $\exp(iS/\hbar)$, the propagator carries a factor $\hbar$, and a diagram with $\mathrm{Lag}$ loops carries $\hbar^{L-1}$; the semiclassical expansion of the previous section is thus the loop expansion, and the effective action $\Gamma[\xi^{\mathrm{scl}}]$, the Legendre transform of $W=\ln Z$, is the generating functional of the one-particle-irreducible vertices. The general theory of the effective action, of its renormalization and of its convexity belongs to the companion article *The Generating Functional and the Effective Action in Biquaternionic Form* and is not derived here; what is specific to the scalar sector is that every term is a central scalar functional.
+**The loop expansion is the expansion in $\hbar$.** Restoring $\hbar$, the weight is $\exp(iS/\hbar)$, the propagator carries a factor $\hbar$, and a diagram with $\mathrm{Lag}$ loops carries $\hbar^{L-1}$; the semiclassical expansion of the previous section is thus the loop expansion, and the effective action $\Gamma[\xi_{\mathrm{scl}}]$, the Legendre transform of $W=\ln Z$, is the generating functional of the one-particle-irreducible vertices. The general theory of the effective action, of its renormalization and of its convexity belongs to the companion article *The Generating Functional and the Effective Action in Biquaternionic Form* and is not derived here; what is specific to the scalar sector is that every term is a central scalar functional.
 
 **The bosonic gap persists diagrammatically.** The perturbative expansion is an expansion of the functional integral on the imported module; the mode algebra is the standard CCR algebra, and the algebra $\mathbb{B}$ contributes only the central-valuedness of the fields, sources, propagators and vertices. There is no diagrammatic object native to $\mathbb{B}$; the trace argument that forbids a bosonic mode in the algebra forbids equally any attempt to read the diagrammatic expansion as an algebraic identity inside it.
 
@@ -274,7 +274,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 ## What Is Standard and What Is Open
 
-**Standard, and imported.** The field-eigenvalue basis, the time-slicing derivation of the functional integral, the phase-space and Lagrangian forms, and the measure; the generating functional and the functional-derivative formula for the correlation functions; the finite-dimensional Gaussian identity and the completion of the square; the free two-point function as the inverse quadratic form and the Feynman propagator; the representation of the canonical commutator by $-i\hbar\delta/\delta\xi^{\mathrm{scl}}$; the Euclidean continuation, the lattice regulator and the determinant recursion; the vacuum persistence amplitude, the functional determinant and the relation of its imaginary part to pair creation; the quartic interaction, the Feynman rules with the propagator as the inverse quadratic form, and the loop expansion as the expansion in $\hbar$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
+**Standard, and imported.** The field-eigenvalue basis, the time-slicing derivation of the functional integral, the phase-space and Lagrangian forms, and the measure; the generating functional and the functional-derivative formula for the correlation functions; the finite-dimensional Gaussian identity and the completion of the square; the free two-point function as the inverse quadratic form and the Feynman propagator; the representation of the canonical commutator by $-i\hbar\delta/\delta\xi_{\mathrm{scl}}$; the Euclidean continuation, the lattice regulator and the determinant recursion; the vacuum persistence amplitude, the functional determinant and the relation of its imaginary part to pair creation; the quartic interaction, the Feynman rules with the propagator as the inverse quadratic form, and the loop expansion as the expansion in $\hbar$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
 
 **Open in the biquaternion framework.**
 
@@ -289,7 +289,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 The scalar functional integral is the sum over central-valued configurations weighted by the central phase $\exp(iS/\hbar)$, with the action $S[\tilde{Ξ}]=\int d^4r\,[-\mathrm{Sc}((\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ}))-\mu^2\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(\langle\tilde P\rangle_{\natural}+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $\langle\tilde P\rangle_{\natural}=-\mu^2$, the Gaussian's width and the propagator's pole are one object.
 
-The generating functional $Z[\tilde J]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\Delta_F J)$ with $\Delta_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\pi^{\mathrm{fop}}=-i\hbar\delta/\delta\xi^{\mathrm{scl}}$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde Q_5]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.
+The generating functional $Z[\tilde J]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\Delta_F J)$ with $\Delta_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-i\hbar\delta/\delta\xi_{\mathrm{scl}}$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde Q_5]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.
 
 The framework's contribution is the centrality of the configuration space, the biquaternion-norm interpretation of the quadratic form, and the identification of the Wick rotation with the passage to the quaternion subspace. The measure, the determinant's branch and the intrinsic generating functional remain open, and the bosonic gap — no native ladder in $\mathbb{B}$ — persists, as it does throughout the scalar sector.
 
@@ -301,7 +301,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
-| $\tilde{Ξ}=\xi^{\mathrm{scl}}\,e_t$, $\tilde J=J\,e_t$, $\xi^{\mathrm{scl}}=(\xi^{\mathrm{scl}}_1+i\xi^{\mathrm{scl}}_2)/\sqrt2$ | Scalar field and central source; real components |
+| $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde J=J\,e_t$, $\xi_{\mathrm{scl}}=(\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2})/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
 | $S[\tilde{Ξ}]$ | Central scalar action |
@@ -312,7 +312,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\Delta_F$ | Feynman propagator; free two-point function |
 | $\Delta_F(\tilde P)=-i/(\langle\tilde P\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
 | $\tilde P=i\omega/c\,e_t+\vec k$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
-| $\pi^{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi^{\mathrm{scl}}$ | Momentum representation; yields $[\xi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\hbar\delta^{(3)}$ |
+| $\pi_{\mathrm{fop}}=-i\hbar\,\delta/\delta\xi_{\mathrm{scl}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\hbar\delta^{(3)}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |

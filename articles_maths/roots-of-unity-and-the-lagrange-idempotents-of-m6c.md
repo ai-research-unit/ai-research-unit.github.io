@@ -280,10 +280,10 @@ The group $\mathbb{Z}/6$ has exactly four subgroups, $0$, $2\mathbb{Z}/6\cong\ma
 
 $$
 A_{\text{even}}=A_0\oplus A_2\oplus A_4,\qquad
-A^{\mathrm{odd}}=A_1\oplus A_3\oplus A_5 .
+A_{\mathrm{odd}}=A_1\oplus A_3\oplus A_5 .
 $$
 
-Both have dimension $18$, and $A_{\text{even}}$ is a subalgebra while $A^{\mathrm{odd}}$ is a bimodule over it. In the frame, $A_{\text{even}}$ consists of the entries with $k-l$ even, that is $k$ and $l$ of the same parity: the matrices that preserve the decomposition
+Both have dimension $18$, and $A_{\text{even}}$ is a subalgebra while $A_{\mathrm{odd}}$ is a bimodule over it. In the frame, $A_{\text{even}}$ consists of the entries with $k-l$ even, that is $k$ and $l$ of the same parity: the matrices that preserve the decomposition
 
 $$
 \mathbb{C}^6=V_1\oplus V_3\oplus V_5\oplus V_2\oplus V_4\oplus V_6
@@ -322,7 +322,7 @@ The eigenvalues of $\Gamma$ are $+1$ with multiplicity three, on $V_1\oplus V_3\
 
 **Proof.** $(\omega_k)^3=(-1)^{k-1}$; the spectral formula for a function of $H$ gives $\Gamma=\sum_k\omega_k^3P_k$. The trace is the sum of three plus ones and three minus ones.
 
-**Theorem (the $\mathbb{Z}/2$ grading is the chirality).** Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A^{\mathrm{odd}}$, and $A_{\text{even}}$ is the fixed subalgebra of the involution $\operatorname{Ad}_\Gamma$.
+**Theorem (the $\mathbb{Z}/2$ grading is the chirality).** Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A_{\mathrm{odd}}$, and $A_{\text{even}}$ is the fixed subalgebra of the involution $\operatorname{Ad}_\Gamma$.
 
 **Proof.** $\Gamma=\sum_k(-1)^{k-1}P_k$ is a linear combination of the Peirce idempotents, hence $\Gamma P_k=P_k\Gamma=(-1)^{k-1}P_k$. For $A\in A_{kl}$, $\Gamma A\Gamma=(-1)^{k+l-2}A=(-1)^{k+l}A$, which is $+1$ exactly when $k$ and $l$ have the same parity, that is on $A_{\text{even}}$.
 

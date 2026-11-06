@@ -298,7 +298,7 @@ Both are Hermitian, both eigenvalues are unimodular, and the decomposition group
 
 ### The exchange involution
 
-Let $A=B\times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^*=(c,b)$, and let $b\in B$ be a unit with an eigenvalue decomposition $b=\sum_i\lambda_i e_i$. The element $u=(b,b^{-1})$ is unitary, and
+Let $A=B\times B_{\mathrm{opp}}$ with the exchange involution $(b,c)^*=(c,b)$, and let $b\in B$ be a unit with an eigenvalue decomposition $b=\sum_i\lambda_i e_i$. The element $u=(b,b^{-1})$ is unitary, and
 
 $$
 u=\sum_i\lambda_i(e_i,0)+\sum_i\lambda_i^{-1}(0,e_i).

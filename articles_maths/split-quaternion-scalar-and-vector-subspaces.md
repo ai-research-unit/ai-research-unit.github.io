@@ -3,10 +3,10 @@
 
 ## Introduction
 
-The conjugation of the split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ is an involutive anti-automorphism, and an involution splits the algebra into its $+1$ and $-1$ eigenspaces. This article studies the two resulting subspaces: the **scalar subspace** $S$, the fixed space of the conjugation, and the **vector subspace** $V$, its anti-fixed space. Together they give the scalar–vector decomposition
+The conjugation of the split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ is an involutive anti-automorphism, and an involution splits the algebra into its $+1$ and $-1$ eigenspaces. This article studies the two resulting subspaces: the **scalar subspace** $S$, the fixed space of the conjugation, and the **vector subspace** $V$, its anti-fixed space. Together they give the scalar–vector decomposition
 
 $$
-\mathbb{H}^{\mathrm{spl}} = S \oplus V,
+\mathbb{H}_{\mathrm{spl}} = S \oplus V,
 $$
 
 which is the coarsest decomposition of the algebra and the source of nearly every other structure in the category.
@@ -15,7 +15,7 @@ The article establishes the definitions and a basis for each subspace; shows tha
 
 ## Definition and Basis
 
-**Definition.** The **scalar subspace** and the **vector subspace** of $\mathbb{H}^{\mathrm{spl}}$ are
+**Definition.** The **scalar subspace** and the **vector subspace** of $\mathbb{H}_{\mathrm{spl}}$ are
 
 $$
 S = \mathbb{R}\cdot 1, \qquad V = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}.
@@ -23,7 +23,7 @@ $$
 
 Every element has a unique expansion $\tilde q = q_t + \vec v$ with $q_t \in S$ and $\vec v \in V$; the projection onto the first summand is the scalar part, $\operatorname{Sc}(\tilde q) = q_t$, and the projection onto the second is the vector part, $\operatorname{Vec}(\tilde q) = \vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$.
 
-**Proposition.** $S$ has real dimension $1$, with basis $\{1\}$; $V$ has real dimension $3$, with basis $\{\vec e_x, \vec e_y, \vec e_z\}$; and $S \cap V = \{0\}$, so that $\mathbb{H}^{\mathrm{spl}} = S \oplus V$ with $\dim_{\mathbb{R}}\mathbb{H}^{\mathrm{spl}} = 1 + 3 = 4$.
+**Proposition.** $S$ has real dimension $1$, with basis $\{1\}$; $V$ has real dimension $3$, with basis $\{\vec e_x, \vec e_y, \vec e_z\}$; and $S \cap V = \{0\}$, so that $\mathbb{H}_{\mathrm{spl}} = S \oplus V$ with $\dim_{\mathbb{R}}\mathbb{H}_{\mathrm{spl}} = 1 + 3 = 4$.
 
 **Proof.** The four basis elements $1, \vec e_x, \vec e_y, \vec e_z$ are linearly independent over $\mathbb{R}$ by the definition of the algebra, so $\{1\}$ is a basis of $S$ and $\{\vec e_x,\vec e_y,\vec e_z\}$ is a basis of $V$; an element of $S \cap V$ is a multiple of $1$ with zero vector part, hence zero.
 
@@ -31,11 +31,11 @@ Every element has a unique expansion $\tilde q = q_t + \vec v$ with $q_t \in S$ 
 
 The scalar and vector subspaces are exactly the eigenspaces of the conjugation.
 
-**Proposition.** For every $\tilde q \in \mathbb{H}^{\mathrm{spl}}$, the conjugation satisfies $\tilde{q}^{\natural} = \tilde q$ if and only if $\tilde q \in S$, and $\tilde{q}^{\natural} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition
+**Proposition.** For every $\tilde q \in \mathbb{H}_{\mathrm{spl}}$, the conjugation satisfies $\tilde{q}^{\natural} = \tilde q$ if and only if $\tilde q \in S$, and $\tilde{q}^{\natural} = -\tilde q$ if and only if $\tilde q \in V$. Hence the scalar–vector decomposition is the eigenspace decomposition
 
 $$
 \boxed{\;
-\mathbb{H}^{\mathrm{spl}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}
+\mathbb{H}_{\mathrm{spl}} = S \oplus V, \qquad S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\}, \qquad V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}
 \;}.
 $$
 
@@ -44,7 +44,7 @@ $$
 The scalar subspace is also the **centre** of the algebra. An element $\tilde q$ commutes with every element if and only if $\vec v = 0$: commuting with $\vec e_x$ and $\vec e_y$ gives $\vec v \vec e_x = \vec e_x \vec v$ and $\vec v \vec e_y = \vec e_y \vec v$, which force $q_y = q_z = 0$ and $q_x = 0$ respectively, so $\tilde q = q_t$ is scalar. Hence
 
 $$
-Z(\mathbb{H}^{\mathrm{spl}}) = S = \mathbb{R}\cdot 1 .
+Z(\mathbb{H}_{\mathrm{spl}}) = S = \mathbb{R}\cdot 1 .
 $$
 
 The centre is therefore a field, namely $\mathbb{R}$, and $S$ is the only commutative two-sided piece of the algebra. This is developed in *Split-Quaternion Algebra*, §*The Centre and Simplicity*.
@@ -61,7 +61,7 @@ $$
 \;},
 $$
 
-with scalar part $-B(\vec q,\vec q_1)$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; for instance $\vec e_x \vec e_y = \vec e_z \in V$ but $\vec e_y \vec e_x = -\vec e_z$, while $\vec e_x^2 = -e_t \in S$. So $V$ is closed neither under the product nor under taking squares, and it is not a subalgebra of $\mathbb{H}^{\mathrm{spl}}$.
+with scalar part $-B(\vec q,\vec q_1)$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; for instance $\vec e_x \vec e_y = \vec e_z \in V$ but $\vec e_y \vec e_x = -\vec e_z$, while $\vec e_x^2 = -e_t \in S$. So $V$ is closed neither under the product nor under taking squares, and it is not a subalgebra of $\mathbb{H}_{\mathrm{spl}}$.
 
 **The vector subspace is a Lie algebra.** The commutator $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ removes the scalar part, because $\vec q\vec q_1 + \vec q_1\vec q = -2B(\vec q,\vec q_1)\cdot1$ makes the scalar parts of $\tilde q_1 \tilde q_2$ and $\tilde q_2\tilde q_1$ equal, both being $-\langle\tilde q_1,\tilde q_2\rangle$. Hence $V$ is closed under the bracket:
 
@@ -77,7 +77,7 @@ $$
 
 The scalar line is central and contributes nothing to the bracket, so the full Lie algebra is the direct sum $\mathrm{SL}_2(\mathbb{R}) \oplus \mathbb{R}$ of the bracket algebra on $V$ and the abelian scalar line.
 
-**Module structure.** Both $S$ and $V$ are $\mathbb{R}$-vector spaces and are preserved by left and right multiplication by scalars; over the centre they are free modules of ranks $1$ and $3$. Multiplication by an element of the full algebra moves $V$ into $S \oplus V = \mathbb{H}^{\mathrm{spl}}$, with the scalar part given by the bilinear form.
+**Module structure.** Both $S$ and $V$ are $\mathbb{R}$-vector spaces and are preserved by left and right multiplication by scalars; over the centre they are free modules of ranks $1$ and $3$. Multiplication by an element of the full algebra moves $V$ into $S \oplus V = \mathbb{H}_{\mathrm{spl}}$, with the scalar part given by the bilinear form.
 
 ## The Split-Quaternion Norm
 
@@ -115,7 +115,7 @@ a cone over a circle of lines, and every nonzero element of it is a nonzero nilp
 
 The lightlike class is exactly the null cone, the spacelike class is its outside, and the timelike class is its inside; the three are the orbit-types of the indefinite form, and they are the reason the geometry on $V$ is Lorentzian rather than Euclidean.
 
-**The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}^{\mathrm{spl}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
+**The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}_{\mathrm{spl}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
 
 The restriction to $V$, of signature $(2,1)$, and not a definite form, is the root of the geometry of the category: the unit group of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group* and *Split-Quaternion Geometry*.
 
@@ -152,18 +152,18 @@ The scalar and vector subspaces meet the remaining distinguished subspaces as fo
 ### The Split-Complex Subalgebras
 
 $$
-S \cap \mathbb{C}^{\mathrm{spl}}_2 = \mathbb{R}\cdot 1, \qquad S \cap \mathbb{C}^{\mathrm{spl}}_3 = \mathbb{R}\cdot 1, \qquad
-V \cap \mathbb{C}^{\mathrm{spl}}_2 = \mathbb{R} \vec e_y, \qquad V \cap \mathbb{C}^{\mathrm{spl}}_3 = \mathbb{R} \vec e_z .
+S \cap \mathbb{C}_{\mathrm{spl},2} = \mathbb{R}\cdot 1, \qquad S \cap \mathbb{C}_{\mathrm{spl},3} = \mathbb{R}\cdot 1, \qquad
+V \cap \mathbb{C}_{\mathrm{spl},2} = \mathbb{R} \vec e_y, \qquad V \cap \mathbb{C}_{\mathrm{spl},3} = \mathbb{R} \vec e_z .
 $$
 
 So each split-complex subalgebra meets $S$ in the scalar line and $V$ in a single spacelike line; the plane $\operatorname{span}\{1,\vec e_y\}$ is spanned by the scalar line and the $\vec e_y$-line, and similarly for $\operatorname{span}\{1,\vec e_z\}$.
 
 ### The Minimal Ideals
 
-The minimal left ideals $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$ and the minimal right ideals $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ each meet $S$ and $V$:
+The minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$ and the minimal right ideals $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ each meet $S$ and $V$:
 
 $$
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \cap S = \{0\}, \qquad \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \cap V = \mathbb{R} \vec e_x \tilde\pi_1 = \mathbb{R}\cdot\tfrac{1}{2}(\vec e_x + \vec e_z),
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \cap S = \{0\}, \qquad \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \cap V = \mathbb{R} \vec e_x \tilde\pi_1 = \mathbb{R}\cdot\tfrac{1}{2}(\vec e_x + \vec e_z),
 $$
 
 and similarly for the other three ideals. The full intersections are in *Split-Quaternion Relations Between Subspaces*.
@@ -186,7 +186,7 @@ The scalar–vector decomposition is the coarsest of the decompositions of the a
 
 ## Summary
 
-The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}^{\mathrm{spl}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$.
+The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}_{\mathrm{spl}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$.
 
 The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ on $S$, positive definite, and to the Minkowski form $\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The unit group acts on $V$ preserving the restricted form, which is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -194,7 +194,7 @@ The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ o
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $S = \mathbb{R}\cdot 1$ | the scalar subspace, the centre, $\{\tilde q : \tilde{q}^{\natural}=\tilde q\}$ | this article |
 | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | the vector subspace, $\{\tilde q : \tilde{q}^{\natural}=-\tilde q\}$ | this article |
 | $\operatorname{Sc}(\tilde q) = q_t$, $\operatorname{Vec}(\tilde q) = \vec v$ | the scalar and vector parts | this article |
@@ -203,7 +203,7 @@ The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ o
 | $B(\vec q,\vec q_1)$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2-\tilde q_2\tilde q_1$ | the commutator bracket | this article |
 | $V \cong \mathrm{SL}_2(\mathbb{R})$ | the Lie algebra of traceless matrices | this article |
-| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | the split-complex subalgebras | *Split-Quaternion Algebra* |
+| $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | the split-complex subalgebras | *Split-Quaternion Algebra* |
 | timelike, lightlike, spacelike | the sign trichotomy on $V$ | this article |
 
 ## Further Reading

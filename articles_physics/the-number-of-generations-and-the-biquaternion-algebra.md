@@ -55,8 +55,8 @@ $$
 with the algebra acting as
 
 $$
-\tilde Q\cdot(\tilde{Ξ}^{\mathrm{sp}}\otimes f) = (\tilde Q\cdot\tilde{Ξ}^{\mathrm{sp}})\otimes f ,
-\qquad \tilde Q\in\mathbb{B},\ \tilde{Ξ}^{\mathrm{sp}}\in\Delta,\ f\in\mathcal{F} ,
+\tilde Q\cdot(\tilde{Ξ}_{\mathrm{sp}}\otimes f) = (\tilde Q\cdot\tilde{Ξ}_{\mathrm{sp}})\otimes f ,
+\qquad \tilde Q\in\mathbb{B},\ \tilde{Ξ}_{\mathrm{sp}}\in\Delta,\ f\in\mathcal{F} ,
 $$
 
 i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicity factor. Equivalently the same structure is the direct sum of $N_g$ copies of $\Delta$, and the two descriptions are unitarily equivalent. The generation index is a label on a factor on which the algebra does nothing.
@@ -272,7 +272,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) space |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
-| $\tilde Q\cdot(\tilde{Ξ}^{\mathrm{sp}}\otimes f)=(\tilde Q\tilde{Ξ}^{\mathrm{sp}})\otimes f$ | Algebra acts trivially on $\mathcal{F}$ |
+| $\tilde Q\cdot(\tilde{Ξ}_{\mathrm{sp}}\otimes f)=(\tilde Q\tilde{Ξ}_{\mathrm{sp}})\otimes f$ | Algebra acts trivially on $\mathcal{F}$ |
 | $I_\Delta\otimes M$, $M\in M_{N_g}(\mathbb{C})$ | Flavour operators (masses, mixing) |
 | $N_g$ | Number of generations; the multiplicity of $\Delta$ |
 | $\sum Y=0,\ \sum Y^3=0,\ \sum YT_3^2=0$ | Anomaly conditions, each generation-independent |

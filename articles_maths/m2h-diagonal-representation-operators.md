@@ -6,7 +6,7 @@
 
 **The count.** The algebra has real dimension eight. Its left multiplications form an eight-dimensional subspace of the endomorphisms of an eight-dimensional real space, because the algebra is faithful and not a matrix algebra. The left and the right multiplications together span a fourteen-dimensional space, and they commute, so they give two copies of the same algebra inside the 64-dimensional ambient, meeting in the two-dimensional centre. The two-sided operators $L_{\tilde Q}R_{\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P$ have sixteen parameters and reach a fourteen-dimensional family, because a central rescaling of $\tilde Q$ against the inverse rescaling of $\tilde P$ changes nothing. And every operator of the family is block diagonal, because the algebra is.
 
-**The two copies.** The left multiplications and the right multiplications are not the same in this category, unlike the reduced biquaternion category where the algebra is commutative and $L=R$. They are independent, they commute, and their sum generates the whole of $\mathrm{End}(\mathbb{B}^{\mathrm{spl}})$ as a vector space of dimension sixteen. So the category has a genuine bimodule structure, and the structure is the double of the quaternionic one.
+**The two copies.** The left multiplications and the right multiplications are not the same in this category, unlike the reduced biquaternion category where the algebra is commutative and $L=R$. They are independent, they commute, and their sum generates the whole of $\mathrm{End}(\mathbb{B}_{\mathrm{spl}})$ as a vector space of dimension sixteen. So the category has a genuine bimodule structure, and the structure is the double of the quaternionic one.
 
 **The cone.** The family of two-sided operators is a **product of two cones**, one per block, each the seven-dimensional cone of a product of a left and a right quaternion multiplication inside a sixteen-dimensional ambience. The reach is fourteen-dimensional, the span is the thirty-two-dimensional block diagonal part of the ambient, and the deficit of sixteen real dimensions is one hundred percent of the off-diagonal corners: every off-diagonal entry is unreachable, and every diagonal entry is reachable only from the cone.
 
@@ -14,11 +14,11 @@
 
 ## The Carrier, the Ambient and the Ladder
 
-**The carrier is $\mathbb{B}^{\mathrm{spl}}$, of real dimension eight and of quaternionic dimension two; the ambient is its endomorphism algebra, of real dimension sixty-four; the ladder between them has three rungs.**
+**The carrier is $\mathbb{B}_{\mathrm{spl}}$, of real dimension eight and of quaternionic dimension two; the ambient is its endomorphism algebra, of real dimension sixty-four; the ladder between them has three rungs.**
 
 **The carrier.** The algebra acts on itself by left and right multiplications, and the two modules are the same module of rank two over $\mathbb{H}$,
 $$
-\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H}^{2},
+\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H}^{2},
 $$
 with basis $(1,j)$ over $\mathbb{H}$. The real dimension is eight and the quaternionic dimension is two.
 
@@ -30,9 +30,9 @@ with basis $(1,j)$ over $\mathbb{H}$. The real dimension is eight and the quater
 |---|---|---|
 | the family | the two-sided operators $L_{\tilde Q}R_{\tilde P}$ | reaches $14$ |
 | the left and the right copies together | $L$ and $R$ | $14$ |
-| the diagonal subalgebra of the ambient | $\mathsf M(\mathbb{B}^{\mathrm{spl}})$ | $8$ |
-| the carrier | $\mathbb{B}^{\mathrm{spl}}$ | $8$ |
-| the ambient | $\mathrm{End}_{\mathbb{R}}(\mathbb{B}^{\mathrm{spl}})$ | $64$ |
+| the diagonal subalgebra of the ambient | $\mathsf M(\mathbb{B}_{\mathrm{spl}})$ | $8$ |
+| the carrier | $\mathbb{B}_{\mathrm{spl}}$ | $8$ |
+| the ambient | $\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}})$ | $64$ |
 
 **The two ranks.** The carrier is two-dimensional over $\mathbb{H}$, so the natural rank of an operator is its rank as an $\mathbb{H}$-linear map, in $\{0,1,2\}$, and the real rank is four times that, in $\{0,4,8\}$. The article uses the real rank when it compares with the ambient and the $\mathbb{H}$-rank when it compares with the quaternions, and the table of the last section fixes the passage.
 
@@ -50,13 +50,13 @@ of dimension thirty-two, which is the ambient of the category and not the whole 
 $$
 L_{\tilde Q}=\begin{pmatrix}L_{\tilde Q_{+}}&0\\ 0&L_{\tilde Q_{-}}\end{pmatrix},\qquad R_{\tilde P}=\begin{pmatrix}R_{\tilde P_{+}}&0\\ 0&R_{\tilde P_{-}}\end{pmatrix},
 $$
-and $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, so the pair $(L,R)$ is a representation of $\mathbb{B}^{\mathrm{spl}}\otimes{\mathbb{B}^{\mathrm{spl}}}^{\mathrm{opp}}$ that is faithful on each factor.
+and $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, so the pair $(L,R)$ is a representation of $\mathbb{B}_{\mathrm{spl}}\otimes{\mathbb{B}_{\mathrm{spl}}}_{\mathrm{opp}}$ that is faithful on each factor.
 
 **The two copies are independent.** Unlike the commutative categories, $L_{\tilde Q}\neq R_{\tilde Q}$ in general, and the difference is exactly the commutator structure of the quaternion: $L_{u}x=ux$ and $R_{u}x=xu$ differ by $[u,x]$. Since the commutator of $\mathbb{H}$ is its three-dimensional pure imaginary part, the two copies agree exactly on the centre, and the "two-sided" instruction is a genuine instruction and not a decoration.
 
 **The real dimensions.** The left copy is eight-dimensional, the right copy is eight-dimensional, and their span is fourteen-dimensional because the two copies intersect in the two-dimensional centre,
 $$
-\dim L=8,\qquad \dim R=8,\qquad \dim(L\cap R)=\dim\mathbb{C}^{\mathrm{spl}}=2,\qquad \dim\langle L,R\rangle=14 .
+\dim L=8,\qquad \dim R=8,\qquad \dim(L\cap R)=\dim\mathbb{C}_{\mathrm{spl}}=2,\qquad \dim\langle L,R\rangle=14 .
 $$
 Read inside $M_{2}(\mathbb{H})$, of real dimension sixteen, the span is the whole block diagonal part, so the two missing dimensions are exactly the two off-diagonal matrix units $\tilde E_{12}$ and $\tilde E_{21}$: the left and the right multiplications generate everything except the two elements that do not exist.
 
@@ -80,7 +80,7 @@ The plain form is bilinear and symmetric, so it exchanges the two copies: $\lang
 
 ## The Two-Sided Operator
 
-**The family over $\mathbb{B}^{\mathrm{spl}}\times\mathbb{B}^{\mathrm{spl}}$, blockwise, and the reach is the product of the two quaternionic cones.**
+**The family over $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$, blockwise, and the reach is the product of the two quaternionic cones.**
 
 **Definition.** The two-sided operator of the pair $(\tilde Q,\tilde P)$ is
 $$
@@ -96,13 +96,13 @@ the order reverses in the second slot, and the pair of pairs is a semigroup unde
 
 **The fibre.** Two pairs give the same operator exactly when they differ by a central rescaling in opposite directions,
 $$
-L_{\tilde Q\lambda}R_{\lambda^{-1}\tilde P}=L_{\tilde Q}R_{\tilde P}\qquad \text{for every }\lambda\in{\mathbb{C}^{\mathrm{spl}}}^{\times},
+L_{\tilde Q\lambda}R_{\lambda^{-1}\tilde P}=L_{\tilde Q}R_{\tilde P}\qquad \text{for every }\lambda\in{\mathbb{C}_{\mathrm{spl}}}^{\times},
 $$
-with ${\mathbb{C}^{\mathrm{spl}}}^{\times}=\mathbb{R}^{\times}\times\mathbb{R}^{\times}$ blockwise, so the fibre over a nonzero operator is two-dimensional and the reach has real dimension $16-2=14$, which agrees with the block count $7+7$.
+with ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\mathbb{R}^{\times}\times\mathbb{R}^{\times}$ blockwise, so the fibre over a nonzero operator is two-dimensional and the reach has real dimension $16-2=14$, which agrees with the block count $7+7$.
 
 **The reach.** The reach
 $$
-\mathcal C_{R}=\bigl\{L_{\tilde Q}R_{\tilde P}\bigr\}\subset\mathrm{End}_{\mathbb{R}}(\mathbb{B}^{\mathrm{spl}})
+\mathcal C_{R}=\bigl\{L_{\tilde Q}R_{\tilde P}\bigr\}\subset\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}})
 $$
 is the product of the two quaternionic cones, each of real dimension seven inside the sixteen of $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$. It is **not** a subspace: a sum of two elements of a block need not be in the block, because the quaternionic cone is not closed under addition. It is not convex either, for the same reason. It is a genuine semialgebraic cone with two independent irreducible components, and it is the object that the coefficient array of the next sections tests.
 
@@ -114,11 +114,11 @@ so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{1}$ a
 
 **The units.** The operators of the family that are invertible are those with both blocks nonzero, that is
 $$
-L_{\tilde Q}R_{\tilde P}\in GL(\mathbb{B}^{\mathrm{spl}})\iff \tilde Q_{\pm}\neq0,\ \tilde P_{\pm}\neq0 ,
+L_{\tilde Q}R_{\tilde P}\in GL(\mathbb{B}_{\mathrm{spl}})\iff \tilde Q_{\pm}\neq0,\ \tilde P_{\pm}\neq0 ,
 $$
 and the map from the pairs to the invertible operators is a surjection with two-dimensional fibres. The stabiliser of the identity is
 $$
-\{(t,t^{-1}):t\in{\mathbb{C}^{\mathrm{spl}}}^{\times}\}=\mathbb{R}^{\times}\times\mathbb{R}^{\times},
+\{(t,t^{-1}):t\in{\mathbb{C}_{\mathrm{spl}}}^{\times}\}=\mathbb{R}^{\times}\times\mathbb{R}^{\times},
 $$
 the centre, and the group of pairs modulo the stabiliser is the product of the two projective quaternion groups.
 
@@ -152,7 +152,7 @@ is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X
 $$
 \{\tilde Q:\tilde Q\tilde X\tilde Q^{*}=\tilde X\ \forall\tilde X\}=\{\pm1,\pm j\},
 $$
-a four-group, because the centraliser is $\mathbb{C}^{\mathrm{spl}}$ and the units of $\mathbb{C}^{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the sandwich map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the sandwich sees them.
+a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the units of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the sandwich map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the sandwich sees them.
 
 **The plain sandwich.** $x\mapsto \tilde Q\tilde X\tilde Q$ is not conformal in the same sense, since $u^{2}$ is not real, and it is the operator of the plain product and of the functional calculus: its powers give $\tilde Q^{n}\tilde X\tilde Q^{n}$, and its kernel over the family is again the four-group.
 
@@ -166,7 +166,7 @@ are the two-sided operators with the second parameter a conjugation. In the mode
 
 **The display is block diagonal, one Kronecker product per block, and the coefficient array is tested blockwise.**
 
-**The display.** The operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}^{\mathrm{spl}}$ and its realification acts on $\mathbb{R}^{8}=\mathbb{R}^{4}\oplus\mathbb{R}^{4}$, so its matrix is block diagonal with two blocks of $4\times4$ real entries. Each block is a Kronecker product,
+**The display.** The operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}_{\mathrm{spl}}$ and its realification acts on $\mathbb{R}^{8}=\mathbb{R}^{4}\oplus\mathbb{R}^{4}$, so its matrix is block diagonal with two blocks of $4\times4$ real entries. Each block is a Kronecker product,
 $$
 \mathsf K_{\pm}=L(\tilde P_{\pm})^{\mathsf T}\otimes L(\tilde Q_{\pm})\in M_{16}(\mathbb{R}),
 $$
@@ -231,7 +231,7 @@ and the reduced trace is additive over sums of operators while the determinant i
 
 **Composition, the unit, the stabiliser, the isometries and the multiplicative pairs.**
 
-**The semigroup.** The pairs form the semigroup $\mathbb{B}^{\mathrm{spl}}\times\mathbb{B}^{\mathrm{spl}}$ under $(\tilde Q,\tilde P)(\tilde R,\tilde S)=(\tilde Q\tilde R,\tilde S\tilde P)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The units of the semigroup are the pairs with both entries in the group of units, and they act on the algebra by the two-sided operators.
+**The semigroup.** The pairs form the semigroup $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$ under $(\tilde Q,\tilde P)(\tilde R,\tilde S)=(\tilde Q\tilde R,\tilde S\tilde P)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The units of the semigroup are the pairs with both entries in the group of units, and they act on the algebra by the two-sided operators.
 
 **The isometries.** The pairs whose two-sided operator preserves a form:
 
@@ -245,7 +245,7 @@ so the compact retract of the isometry group of the category is a product of fou
 
 **The multiplicative pairs.** The pairs $(\tilde Q,\tilde Q^{\natural})$ are those whose operator is a conformal map, by the computation of the sandwich section, and the pairs $(\tilde Q,\tilde Q^{-1})$ are those whose plain operator is the identity composed with the inner automorphism: since the algebra is a product of division rings, the inner automorphism group is $(SU(2)\times SU(2))/\{\pm1\}$ per block, and it is the gauge of the category.
 
-**The gauge.** The inner automorphisms of $\mathbb{B}^{\mathrm{spl}}$ are the conjugations by the units, and they act blockwise by the inner automorphisms of $\mathbb{H}$. The quotient by the inner automorphisms is the two-block outer group, and the model realises the inner ones as the pairs $(\tilde Q,\tilde Q^{-1})$. Since $\mathbb{H}$ is a division ring, the inner automorphism group is the whole of the automorphism group, so the outer group is trivial and the gauge is the whole of $SU(2)\times SU(2)$ per block modulo the sign. The difference from the reduced biquaternion category is large: there the algebra is commutative, the inner automorphism group was trivial, and the whole operator family was the multiplicative gauge.
+**The gauge.** The inner automorphisms of $\mathbb{B}_{\mathrm{spl}}$ are the conjugations by the units, and they act blockwise by the inner automorphisms of $\mathbb{H}$. The quotient by the inner automorphisms is the two-block outer group, and the model realises the inner ones as the pairs $(\tilde Q,\tilde Q^{-1})$. Since $\mathbb{H}$ is a division ring, the inner automorphism group is the whole of the automorphism group, so the outer group is trivial and the gauge is the whole of $SU(2)\times SU(2)$ per block modulo the sign. The difference from the reduced biquaternion category is large: there the algebra is commutative, the inner automorphism group was trivial, and the whole operator family was the multiplicative gauge.
 
 ## The Cone and the Coefficient Matrix
 
@@ -253,7 +253,7 @@ so the compact retract of the isometry group of the category is a product of fou
 
 **The map.** The bilinear map of the pair,
 $$
-\beta:\mathbb{B}^{\mathrm{spl}}\times\mathbb{B}^{\mathrm{spl}}\longrightarrow\mathrm{End}_{\mathbb{R}}(\mathbb{B}^{\mathrm{spl}}),\qquad \beta(\tilde Q,\tilde P)=L_{\tilde Q}R_{\tilde P},
+\beta:\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}\longrightarrow\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{\mathrm{spl}}),\qquad \beta(\tilde Q,\tilde P)=L_{\tilde Q}R_{\tilde P},
 $$
 is blockwise the quaternionic map, and its image is the product of the two cones.
 
@@ -335,7 +335,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 
 ## Summary
 
-1. The carrier is $\mathbb{B}^{\mathrm{spl}}$ of real dimension eight and quaternionic dimension two; the ambient of the category is the block diagonal part of $M_{8}(\mathbb{R})$, of dimension thirty-two; the whole ambient is sixty-four.
+1. The carrier is $\mathbb{B}_{\mathrm{spl}}$ of real dimension eight and quaternionic dimension two; the ambient of the category is the block diagonal part of $M_{8}(\mathbb{R})$, of dimension thirty-two; the whole ambient is sixty-four.
 2. The left and the right multiplications are two commuting faithful copies, independent because the algebra is noncommutative, meeting in the two-dimensional centre, block diagonal, and additive in rank over the two blocks.
 3. The three adjoints: the plain form exchanges the two copies, $L_{\tilde Q}^{*}=R_{\tilde Q}$; the quaternionic and the Hermitian forms keep the sides and conjugate the parameter, $L_{\tilde Q}^{*}=L_{\tilde Q^{\natural}}$ and $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$.
 4. The two-sided operators are blockwise, compose with the order reversed in the second slot, have a two-dimensional central stabiliser, and reach a fourteen-dimensional product of two quaternionic cones inside a thirty-two-dimensional span.

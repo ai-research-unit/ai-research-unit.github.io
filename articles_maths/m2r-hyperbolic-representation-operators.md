@@ -2,10 +2,10 @@
 
 ## Introduction
 
-**The operator layer of a split algebra.** The carrier is $\mathbb{C}^{\mathrm{spl}}$, of real dimension two, and the ambient is
+**The operator layer of a split algebra.** The carrier is $\mathbb{C}_{\mathrm{spl}}$, of real dimension two, and the ambient is
 
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})\cong M_2(\mathbb{R}),
+\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})\cong M_2(\mathbb{R}),
 $$
 
 of dimension four. The one-sided family is the image of the model; the two-sided family is the set of maps $X\mapsto QXP$; and the two are related by the failure of the algebra to be central simple.
@@ -19,7 +19,7 @@ of dimension four. The one-sided family is the image of the model; the two-sided
 | the sandwich | the vector action, a nontrivial group | a scalar on the carrier, a double boost on the ambient |
 | the length | a rank in $\{0,\dots,n\}$ | in $\{0,1\}$, and only inside the algebra |
 
-Three of the four collapse as in the complex category, and the reason is the same: the algebra is commutative, so the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ factors through the multiplication. The fourth does not collapse but **inverts**: the sandwich, which was the interesting operator of the non-commutative categories, is here the least informative one, and the one-sided operator carries everything. This article is about that inversion, and about the one place where the sandwich recovers information.
+Three of the four collapse as in the complex category, and the reason is the same: the algebra is commutative, so the map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ factors through the multiplication. The fourth does not collapse but **inverts**: the sandwich, which was the interesting operator of the non-commutative categories, is here the least informative one, and the one-sided operator carries everything. This article is about that inversion, and about the one place where the sandwich recovers information.
 
 **The place where it recovers information.** The sandwich is scalar on the carrier and is not scalar on the ambient. Its ambient form has eigenvalues $N$, $\lambda_+^{2}$, $\lambda_-^{2}$, $N$: it kills the boost on the two mixed directions and **doubles** it on the two pure ones. So the two-sided operator of this category is a map that acts as a scalar on the algebra and as a double boost on the endomorphisms, and the gap between the two behaviours is the subject of the section on the Kronecker display.
 
@@ -34,25 +34,25 @@ Three of the four collapse as in the complex category, and the reason is the sam
 **The family.** The left multiplications are the hyperbolic Cayley matrices, and the right multiplications are the same set:
 
 $$
-L(\mathbb{C}^{\mathrm{spl}})=R(\mathbb{C}^{\mathrm{spl}})=\{\mathsf{M}_2(Q)\},\qquad \dim=2,\qquad L+R=L.
+L(\mathbb{C}_{\mathrm{spl}})=R(\mathbb{C}_{\mathrm{spl}})=\{\mathsf{M}_2(Q)\},\qquad \dim=2,\qquad L+R=L.
 $$
 
 **The representation.** $M:Q\mapsto M_Q$ is $\mathbb{R}$-linear, multiplicative and faithful, and its image is the algebra of matrices symmetric with equal diagonal. Faithfulness is evaluation at $1$: $M_Q(1)=Q$. So the one-sided layer is the algebra itself, read on its regular module, and there is nothing else in it.
 
-**Kernel, image and rank.** For $Q\in\mathbb{C}^{\mathrm{spl}}$,
+**Kernel, image and rank.** For $Q\in\mathbb{C}_{\mathrm{spl}}$,
 
 $$
-\ker M_Q=\operatorname{Ann}(Q),\qquad \operatorname{im}M_Q=Q\mathbb{C}^{\mathrm{spl}},
+\ker M_Q=\operatorname{Ann}(Q),\qquad \operatorname{im}M_Q=Q\mathbb{C}_{\mathrm{spl}},
 $$
 
 and the three cases are exhaustive:
 
 | $Q$ | $\langle Q\rangle_{*}$ | rank $M_Q$ | kernel | image |
 |---|---|---|---|---|
-| $0$ | $0$ | $0$ | $\mathbb{C}^{\mathrm{spl}}$ | $0$ |
+| $0$ | $0$ | $0$ | $\mathbb{C}_{\mathrm{spl}}$ | $0$ |
 | $\lambda_+\Pi_+$, $\lambda_+\neq0$ | $0$ | $1$ | $S_-$ | $S_+$ |
 | $\lambda_-\Pi_-$, $\lambda_-\neq0$ | $0$ | $1$ | $S_+$ | $S_-$ |
-| unit | $\neq0$ | $2$ | $0$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| unit | $\neq0$ | $2$ | $0$ | $\mathbb{C}_{\mathrm{spl}}$ |
 
 **The reading.** The rank takes the three values $2,1,0$ and drops to one exactly on the two null lines. This is the first category of the block in which the one-sided operator has an intermediate rank, and it is the operator-level statement that the algebra has zero divisors.
 
@@ -75,35 +75,35 @@ so every nonzero member of the family is a conformal map of the Minkowski plane,
 **The polar word.** Writing
 
 $$
-Q=r\,\epsilon\,\exp(\theta^{\mathrm{rpd}} j),\qquad r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \theta^{\mathrm{rpd}}\in\mathbb{R},
+Q=r\,\epsilon\,\exp(\theta_{\mathrm{rpd}} j),\qquad r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}>0,\quad \epsilon\in\{\pm1,\pm j\},\quad \theta_{\mathrm{rpd}}\in\mathbb{R},
 $$
 
 the operator inherits the word factor by factor:
 
 $$
-M_Q=r\,M_\epsilon\,\exp(\theta^{\mathrm{rpd}} M_j),\qquad M_j=J,\qquad \exp(\theta^{\mathrm{rpd}} J)=\cosh\theta^{\mathrm{rpd}}\,I_2+\sinh\theta^{\mathrm{rpd}}\,J .
+M_Q=r\,M_\epsilon\,\exp(\theta_{\mathrm{rpd}} M_j),\qquad M_j=J,\qquad \exp(\theta_{\mathrm{rpd}} J)=\cosh\theta_{\mathrm{rpd}}\,I_2+\sinh\theta_{\mathrm{rpd}}\,J .
 $$
 
 In the spectral frame, where $J=\operatorname{diag}(1,-1)$ and $M_\epsilon=\operatorname{diag}(\epsilon_+,\epsilon_-)$,
 
 $$
-M_Q=\operatorname{diag}\bigl(r\epsilon_+e^{\theta^{\mathrm{rpd}}},\,r\epsilon_-e^{-\theta^{\mathrm{rpd}}}\bigr)=\operatorname{diag}(\lambda_+,\lambda_-).
+M_Q=\operatorname{diag}\bigl(r\epsilon_+e^{\theta_{\mathrm{rpd}}},\,r\epsilon_-e^{-\theta_{\mathrm{rpd}}}\bigr)=\operatorname{diag}(\lambda_+,\lambda_-).
 $$
 
-**The three factors and their roles.** The scale acts as $r$ and not as $r^{2}$; the sign is a discrete diagonal sign; the boost acts as $e^{\pm\theta^{\mathrm{rpd}}}$ on the two Peirce lines, with opposite exponents. All three are visible to the one-sided operator, and this is the whole of the polar content of the category:
+**The three factors and their roles.** The scale acts as $r$ and not as $r^{2}$; the sign is a discrete diagonal sign; the boost acts as $e^{\pm\theta_{\mathrm{rpd}}}$ on the two Peirce lines, with opposite exponents. All three are visible to the one-sided operator, and this is the whole of the polar content of the category:
 
 - the modulus is the geometric mean of the absolute values of the two eigenvalues;
 - the sign is the pair $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$, which is the component label of the unit group;
-- the boost is the half-difference of their logarithms, $\theta^{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$.
+- the boost is the half-difference of their logarithms, $\theta_{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$.
 
-**The exponent is the full angle.** The eigenvalues of the boost are $e^{\pm\theta^{\mathrm{rpd}}}$, not $e^{\pm\theta^{\mathrm{rpd}}/2}$, and the polar word writes $\theta^{\mathrm{rpd}}$ and not $\theta^{\mathrm{rpd}}/2$. The reason is that the two exponents are the two eigenvalue logarithms, and the eigenvalues are the idempotent coordinates $\lambda_\pm = r e^{\pm\theta^{\mathrm{rpd}}}$, which are *linear* in the polar data. A half angle would require $\lambda_\pm = r e^{\pm\theta^{\mathrm{rpd}}/2}$, that is $Q = r\exp(\tfrac{\theta^{\mathrm{rpd}}}{2}j)$, which is a different element. So the category has no half angle in its spectrum, and the geometric half angle that appeared in the model article was the axis of a Euclidean reflection, not a weight.
+**The exponent is the full angle.** The eigenvalues of the boost are $e^{\pm\theta_{\mathrm{rpd}}}$, not $e^{\pm\theta_{\mathrm{rpd}}/2}$, and the polar word writes $\theta_{\mathrm{rpd}}$ and not $\theta_{\mathrm{rpd}}/2$. The reason is that the two exponents are the two eigenvalue logarithms, and the eigenvalues are the idempotent coordinates $\lambda_\pm = r e^{\pm\theta_{\mathrm{rpd}}}$, which are *linear* in the polar data. A half angle would require $\lambda_\pm = r e^{\pm\theta_{\mathrm{rpd}}/2}$, that is $Q = r\exp(\tfrac{\theta_{\mathrm{rpd}}}{2}j)$, which is a different element. So the category has no half angle in its spectrum, and the geometric half angle that appeared in the model article was the axis of a Euclidean reflection, not a weight.
 
 **The explicit matrices.**
 
 $$
-Q=r\epsilon\,e^{\theta^{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\cosh\theta^{\mathrm{rpd}}&\sinh\theta^{\mathrm{rpd}}\\ \sinh\theta^{\mathrm{rpd}}&\cosh\theta^{\mathrm{rpd}}\end{pmatrix},
+Q=r\epsilon\,e^{\theta_{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\cosh\theta_{\mathrm{rpd}}&\sinh\theta_{\mathrm{rpd}}\\ \sinh\theta_{\mathrm{rpd}}&\cosh\theta_{\mathrm{rpd}}\end{pmatrix},
 \qquad
-Q=r\epsilon\,j\,e^{\theta^{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\sinh\theta^{\mathrm{rpd}}&\cosh\theta^{\mathrm{rpd}}\\ \cosh\theta^{\mathrm{rpd}}&\sinh\theta^{\mathrm{rpd}}\end{pmatrix}.
+Q=r\epsilon\,j\,e^{\theta_{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\sinh\theta_{\mathrm{rpd}}&\cosh\theta_{\mathrm{rpd}}\\ \cosh\theta_{\mathrm{rpd}}&\sinh\theta_{\mathrm{rpd}}\end{pmatrix}.
 $$
 
 The first is the boost, the second the boost composed with the reflection $J$; the two families are the two components of $O(1,1)$ with positive and negative determinant, and the sign $\epsilon=\pm1$ multiplies both.
@@ -121,7 +121,7 @@ $$
 **The reading.** The two slots are not independent: the operator depends on the pair only through the product, and since the algebra is commutative the map $(Q,P)\mapsto QP$ is the multiplication of the algebra. So the two-sided family is the one-sided family,
 
 $$
-\{L_{Q}R_{P}\}=\{M_{QP}\}=M(\mathbb{C}^{\mathrm{spl}}),
+\{L_{Q}R_{P}\}=\{M_{QP}\}=M(\mathbb{C}_{\mathrm{spl}}),
 $$
 
 of dimension two, and the pair is a redundant parametrisation of the algebra.
@@ -166,9 +166,9 @@ $$
 \operatorname{spec}K_{Q,\bar Q}=\{\lambda_+^{2},\ N,\ N,\ \lambda_-^{2}\}.
 $$
 
-**The reading, in the polar word.** With $\lambda_\pm=r\epsilon_\pm e^{\pm\theta^{\mathrm{rpd}}}$ and $N=r^{2}\epsilon_+\epsilon_-$:
+**The reading, in the polar word.** With $\lambda_\pm=r\epsilon_\pm e^{\pm\theta_{\mathrm{rpd}}}$ and $N=r^{2}\epsilon_+\epsilon_-$:
 
-- on the two **pure** directions the eigenvalue is $\lambda_\pm^{2}=r^{2}e^{\pm2\theta^{\mathrm{rpd}}}$: the scale is squared and the boost is **doubled**, the rapidity $2\theta^{\mathrm{rpd}}$ in place of $\theta^{\mathrm{rpd}}$;
+- on the two **pure** directions the eigenvalue is $\lambda_\pm^{2}=r^{2}e^{\pm2\theta_{\mathrm{rpd}}}$: the scale is squared and the boost is **doubled**, the rapidity $2\theta_{\mathrm{rpd}}$ in place of $\theta_{\mathrm{rpd}}$;
 - on the two **mixed** directions the eigenvalue is $N=r^{2}\epsilon_+\epsilon_-$: the scale is squared and the boost **cancels**, exactly as it cancels on the carrier.
 
 So the ambient sandwich acts as a double boost on the diagonal corners of the tensor square and as a pure dilation on the off-diagonal corners. It is the exact analogue of the $2\theta$ of the complex category, in the hyperbolic parameter, and it is the only doubling of an angle in the whole block.
@@ -226,19 +226,19 @@ a sum of two orthogonal rank-one projectors on the two ambient directions $u_+\o
 
 ## The Pair as a Semigroup
 
-**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}^{\mathrm{spl}}\times\mathbb{C}^{\mathrm{spl}}$ onto the monoid $(\mathbb{C}^{\mathrm{spl}},\cdot)$, with kernel the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}_{\mathrm{spl}}\times\mathbb{C}_{\mathrm{spl}}$ onto the monoid $(\mathbb{C}_{\mathrm{spl}},\cdot)$, with kernel the rescaling.
 
 **The units.** The invertible members are those with $QP$ a unit, and the group is
 
 $$
-{\mathbb{C}^{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
+{\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$
 
 of dimension two and four components. The group of two-sided operators is therefore the unit group of the algebra, and not the seven-dimensional product of the two one-sided groups of the quaternion category.
 
-**The automorphisms of the algebra.** The only automorphisms are the identity and the conjugation $j\mapsto-j$: as an $\mathbb{R}$-algebra, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ and an automorphism is a permutation of the two idempotents. The group is $\mathbb{Z}/2\mathbb{Z}$, and its non-trivial element swaps the two Peirce lines and the two null lines.
+**The automorphisms of the algebra.** The only automorphisms are the identity and the conjugation $j\mapsto-j$: as an $\mathbb{R}$-algebra, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ and an automorphism is a permutation of the two idempotents. The group is $\mathbb{Z}/2\mathbb{Z}$, and its non-trivial element swaps the two Peirce lines and the two null lines.
 
-**The conjugation is outer in the algebra and inner in the ambient.** The conjugation is not inner in $\mathbb{C}^{\mathrm{spl}}$, since the algebra is commutative and its unit group is abelian. But on the model it *is* implemented by an ambient inner automorphism,
+**The conjugation is outer in the algebra and inner in the ambient.** The conjugation is not inner in $\mathbb{C}_{\mathrm{spl}}$, since the algebra is commutative and its unit group is abelian. But on the model it *is* implemented by an ambient inner automorphism,
 
 $$
 \mathsf{M}_2(\bar Q)=g\,\mathsf{M}_2(Q)\,g^{-1},\qquad g=\operatorname{diag}(1,-1),\quad g^{2}=I_2,
@@ -248,17 +248,17 @@ with $g$ a reflection of the plane, of determinant $-1$ and not in the image. So
 
 **The reading.** The three groups — the automorphisms of the algebra, the inner automorphisms of the ambient, the conformal group of the form — are here three different objects of orders $2$, $4$ and infinite, and the model displays all three. In the quaternion category the first two coincided, which is why that category had a single operator layer.
 
-**The absence of a cover.** Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the *ambient* do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{C}^{\mathrm{spl}})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the unit group of the algebra, of dimension two and four components. The inner automorphisms of the *algebra*, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.
+**The absence of a cover.** Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the *ambient* do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{C}_{\mathrm{spl}})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the unit group of the algebra, of dimension two and four components. The inner automorphisms of the *algebra*, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.
 
 ## The Cone and the Coefficient Matrix
 
 **The parametrisation.**
 
 $$
-\beta:\mathbb{C}^{\mathrm{spl}}\times\mathbb{C}^{\mathrm{spl}}\to\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}),\qquad \beta(Q,P)=L_{QP},
+\beta:\mathbb{C}_{\mathrm{spl}}\times\mathbb{C}_{\mathrm{spl}}\to\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}),\qquad \beta(Q,P)=L_{QP},
 $$
 
-whose image is the algebra $M_2(\mathbb{C}^{\mathrm{spl}})$, a linear subspace of dimension two and not a cone.
+whose image is the algebra $M_2(\mathbb{C}_{\mathrm{spl}})$, a linear subspace of dimension two and not a cone.
 
 **The fibres.** $\beta^{-1}(L_c)=\{(Q,P):QP=c\}$, of real dimension two for $c\neq0$; over $c=0$ it is the union of the two axis pairs, again of dimension two but singular at the origin. So the map is four dimensions to two with two-dimensional fibres, everywhere.
 
@@ -285,14 +285,14 @@ of rank one for every non-zero pair. The operator is described by the coefficien
 **The statement.**
 
 $$
-\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=M(\mathbb{C}^{\mathrm{spl}})\cup\{0\},
+\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=M(\mathbb{C}_{\mathrm{spl}})\cup\{0\},
 $$
 
 the value $0$ only for the zero operator, and the span equal to the algebra because the algebra is a subspace closed under products.
 
 **The degenerate case of the length theorem.** The general theorem allows at most $n=2$ products and identifies the length with the rank of the coefficient array. Here the coefficient array has rank one for a single product and the span is closed, so no sum is ever needed and the bound is not attained. The null elements do not form an exception: a zero divisor is still a single product $L_Q$, of rank one, and its length is one and not two. This is the precise sense in which the length theory of this category is vacuous, and it is worth stating because the tempting error is to read the rank drop as a failure of the length: it is not, since the length counts products and not ranks.
 
-**Why the span is closed.** The products are the compositions $L_Q\circ R_P=L_{QP}$, so the multiplication map sends $L(\mathbb{C}^{\mathrm{spl}})\times R(\mathbb{C}^{\mathrm{spl}})$ into $L(\mathbb{C}^{\mathrm{spl}})$; the image is the algebra and it is a subspace. In the quaternion category the same map is an isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ and fills a sixteen-dimensional ambient; the difference is central simplicity. $\mathbb{R}\times\mathbb{R}$ is commutative and therefore not central simple, and the map collapses to the multiplication of the algebra.
+**Why the span is closed.** The products are the compositions $L_Q\circ R_P=L_{QP}$, so the multiplication map sends $L(\mathbb{C}_{\mathrm{spl}})\times R(\mathbb{C}_{\mathrm{spl}})$ into $L(\mathbb{C}_{\mathrm{spl}})$; the image is the algebra and it is a subspace. In the quaternion category the same map is an isomorphism $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ and fills a sixteen-dimensional ambient; the difference is central simplicity. $\mathbb{R}\times\mathbb{R}$ is commutative and therefore not central simple, and the map collapses to the multiplication of the algebra.
 
 **What lies outside the span.** Two dimensions: the traceless diagonal line $\mathbb{R}g$ and the skew line $\mathfrak{so}(2)$. The matrices of $\mathbb{R}g$ are the ones that change the sign of the determinant, and the skew line is the rotation. Neither is a product at any length, and neither is a sum of products: they are simply not in the span. So the operator layer of the split category covers half of the ambient and not more, exactly as in the complex category, and the missing half is again the part of $M_2(\mathbb{R})$ that does not commute with $J$.
 
@@ -331,7 +331,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 **What it does not buy: a group action.** In the biquaternion category the sandwich is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the units is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the unit group on the algebra is the multiplication, which is the one-sided layer.
 
-**What it does not buy: the half angle and the cover.** The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\theta^{\mathrm{rpd}}}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.
+**What it does not buy: the half angle and the cover.** The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\theta_{\mathrm{rpd}}}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.
 
 **What it does not buy: nilpotents.** There is no nilpotent in the algebra, so there is no Jordan block, no maximal ideal of the form $(X^{2})$, and no unipotent one-parameter subgroup. The whole nilpotent apparatus of the reduced biquaternion category — the Jordan decomposition, the non-semisimple sector, the $\Sigma_{00}$ stratum — is empty here, and it is empty for the reason $x^{2}-1$ has distinct roots.
 
@@ -339,9 +339,9 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 ## Summary
 
-1. The carrier is $\mathbb{C}^{\mathrm{spl}}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
+1. The carrier is $\mathbb{C}_{\mathrm{spl}}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
-3. The polar word $Q=r\epsilon\exp(\theta^{\mathrm{rpd}} j)$ reads $M_Q=rM_\epsilon\exp(\theta^{\mathrm{rpd}} J)$, with eigenvalues $r\epsilon_\pm e^{\pm\theta^{\mathrm{rpd}}}$; the angle is full, the sign is a discrete label, and no cover appears.
+3. The polar word $Q=r\epsilon\exp(\theta_{\mathrm{rpd}} j)$ reads $M_Q=rM_\epsilon\exp(\theta_{\mathrm{rpd}} J)$, with eigenvalues $r\epsilon_\pm e^{\pm\theta_{\mathrm{rpd}}}$; the angle is full, the sign is a discrete label, and no cover appears.
 4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.
 5. The sandwich is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.
 6. On the ambient the same formula is not scalar: $K_{Q,\bar Q}$ has eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$, doubling the rapidity on the two pure corners and killing it on the two mixed ones.
@@ -360,7 +360,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 | $K_{Q,P}$ | the Kronecker display $\mathsf{M}_2(P)\otimes\mathsf{M}_2(Q)$ | this article |
 | $g$ | the split form $\operatorname{diag}(1,-1)$, implementing the conjugation by congruence | *$M_2(\mathbb{R})$ Hyperbolic Representation* |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues, the idempotent coordinates | *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number* |
-| $r,\epsilon,\theta^{\mathrm{rpd}}$ | modulus, component sign, hyperbolic angle | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
+| $r,\epsilon,\theta_{\mathrm{rpd}}$ | modulus, component sign, hyperbolic angle | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |
 | $c(Q,P)$ | the coefficient array of the pair, of rank one | this article |
 | $\operatorname{Ann}(Q)$ | the annihilator, the kernel of $M_Q$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
@@ -368,7 +368,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$, the double centraliser theorem, and the Peirce carriers as minimal ideals.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}(A)$, the double centraliser theorem, and the Peirce carriers as minimal ideals.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for central simplicity, the centre of a split algebra, and the failure of the double centraliser isomorphism.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Kronecker product, its spectrum, its rank, trace and determinant, and the vectorisation identity.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $SO^{+}(1,1)$, the exponential of the boost generator and the topology of the components.

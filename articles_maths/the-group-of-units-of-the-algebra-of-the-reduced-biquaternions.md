@@ -8,11 +8,11 @@ The boundary deserves an article of its own because it is drawn by a form the pr
 
 **The results.** The algebra is the disjoint union
 $$
-\mathbb{B}^{\mathrm{red}}={\mathbb{B}^{\mathrm{red}}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\},
+\mathbb{B}_{\mathrm{red}}={\mathbb{B}_{\mathrm{red}}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\},
 $$
-where ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is the unit group and $\mathcal N$ is the zero-divisor set, the punctured vanishing set of the norm. The unit group is the group
+where ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is the unit group and $\mathcal N$ is the zero-divisor set, the punctured vanishing set of the norm. The unit group is the group
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+{\mathbb{B}_{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
 **abelian and connected**, of complex dimension two and real dimension four, with fundamental group $\mathbb{Z}\times\mathbb{Z}$. The isomorphism is the idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$, under which the product is componentwise. The zero-divisor set is the **punctured union of the two idempotent lines** $\mathcal N=(\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-)\setminus\{0\}$, whose elements are the nonzero zero divisors. Every nonzero element of the algebra is either a unit or a zero divisor; there is no third kind.
 
@@ -28,12 +28,12 @@ $$
 $$
 and the algebra is the disjoint union
 $$
-\boxed{\; \mathbb{B}^{\mathrm{red}}={\mathbb{B}^{\mathrm{red}}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\} \;}.
+\boxed{\; \mathbb{B}_{\mathrm{red}}={\mathbb{B}_{\mathrm{red}}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\} \;}.
 $$
 
 *Proof.* By *Zero Divisors of the Algebra of the Reduced Biquaternions* the zero divisors are the nonzero elements of the null set of the norm, and by *Norm and Invertibility in the Algebra of the Reduced Biquaternions* the null set is $\mathcal N\cup\{0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, since $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=0$ if and only if $Q_{\blacktriangle}+Q_{\blacktriangledown}=0$ or $Q_{\blacktriangle}-Q_{\blacktriangledown}=0$, that is $\breve Q\in\mathbb{C}\Pi_-$ or $\breve Q\in\mathbb{C}\Pi_+$. The zero divisors are the nonzero elements of that set, that is $\mathcal N$; the units are the elements of $N\neq0$; and $0$ is neither.
 
-**Corollary (no third kind).** Every nonzero element of $\mathbb{B}^{\mathrm{red}}$ is a unit or a zero divisor. There is no element that is neither, and none that is both.
+**Corollary (no third kind).** Every nonzero element of $\mathbb{B}_{\mathrm{red}}$ is a unit or a zero divisor. There is no element that is neither, and none that is both.
 
 ## The Invertibility Criterion
 
@@ -65,11 +65,11 @@ and $Q_{\blacktriangle}\cdot\frac{-Q_{\blacktriangledown}}{Q_{\blacktriangle}^{2
 
 **Theorem (the structure of the unit group).** The map
 $$
-\boxed{\; \Phi:{\mathbb{B}^{\mathrm{red}}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad \breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}) \;},
+\boxed{\; \Phi:{\mathbb{B}_{\mathrm{red}}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad \breve Q\mapsto(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}) \;},
 $$
 is an isomorphism of groups.
 
-*Proof.* The idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})$ is an algebra isomorphism of $(\mathbb{B}^{\mathrm{red}},\cdot)$ onto $\mathbb{C}\times\mathbb{C}$ (*The Specificities of the Algebra of the Reduced Biquaternions*); it carries the invertible elements onto the pairs of invertible elements, that is onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The product is componentwise and the identity $1$ corresponds to $(1,1)$.
+*Proof.* The idempotent coordinate map $\breve Q\mapsto(Q_{+},Q_{-})$ is an algebra isomorphism of $(\mathbb{B}_{\mathrm{red}},\cdot)$ onto $\mathbb{C}\times\mathbb{C}$ (*The Specificities of the Algebra of the Reduced Biquaternions*); it carries the invertible elements onto the pairs of invertible elements, that is onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The product is componentwise and the identity $1$ corresponds to $(1,1)$.
 
 **Corollary (the structure).** The unit group is:
 
@@ -87,9 +87,9 @@ The contrast with the biquaternion unit group is the point: there the general pl
 
 **Definition.** The **null set** of the norm is $\mathcal N\cup\{0\}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, the union of the two idempotent lines, each a complex line through the origin, with $\mathcal N$ its punctured part.
 
-**Theorem (the boundary).** The unit group ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is open and dense in $\mathbb{B}^{\mathrm{red}}$; its complement is $\mathcal N\cup\{0\}$, the union of the two lines; and $\mathcal N\cup\{0\}$ is the topological boundary $\partial{\mathbb{B}^{\mathrm{red}}}^{\times}=\overline{{\mathbb{B}^{\mathrm{red}}}^{\times}}\setminus{\mathbb{B}^{\mathrm{red}}}^{\times}=\mathcal N\cup\{0\}$.
+**Theorem (the boundary).** The unit group ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is open and dense in $\mathbb{B}_{\mathrm{red}}$; its complement is $\mathcal N\cup\{0\}$, the union of the two lines; and $\mathcal N\cup\{0\}$ is the topological boundary $\partial{\mathbb{B}_{\mathrm{red}}}^{\times}=\overline{{\mathbb{B}_{\mathrm{red}}}^{\times}}\setminus{\mathbb{B}_{\mathrm{red}}}^{\times}=\mathcal N\cup\{0\}$.
 
-*Proof.* The null set is the vanishing set of the continuous function $\langle\cdot\rangle_{\mathrm{ts}}$, hence closed, so its complement ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is open; the null set has empty interior because each of the two lines does (a complex line in $\mathbb{C}^{2}$ has empty interior), so ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is dense; and a dense open set has closure the whole space, so its boundary is its complement, the null set.
+*Proof.* The null set is the vanishing set of the continuous function $\langle\cdot\rangle_{\mathrm{ts}}$, hence closed, so its complement ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is open; the null set has empty interior because each of the two lines does (a complex line in $\mathbb{C}^{2}$ has empty interior), so ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is dense; and a dense open set has closure the whole space, so its boundary is its complement, the null set.
 
 **Remark (two lines, not one cone).** The boundary of the reduced biquaternion unit group is **two complex lines**, of real dimension two each, not a single cone of real dimension three as in the biquaternion category. The difference is the split of the algebra: the biquaternion reduced norm is an irreducible quadratic in four complex variables, whose null set is an irreducible cone; the reduced biquaternion norm factors, $\langle\cdot\rangle_{\mathrm{ts}}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})$, and its null set is the union of the two hyperplanes $Q_{\blacktriangle}+Q_{\blacktriangledown}=0$ and $Q_{\blacktriangle}-Q_{\blacktriangledown}=0$. The factoring is the idempotent splitting read on the norm, and it is the reason the boundary here is a union of lines.
 
@@ -130,12 +130,12 @@ The general plain algebra of the reduced biquaternions is the disjoint union of 
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a general element |
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the algebraic norm of the multiplication |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\ Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates |
-| ${\mathbb{B}^{\mathrm{red}}}^{\times}$ | the group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}$ | the group of units |
 | $\mathcal N=\{\breve Q\neq0:\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-$ | the zero-divisor set, the punctured null set |
 | $\mathcal N\cup\{0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | the null set, the union of the two idempotent lines |
 | $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, under $\breve Q\mapsto(Q_{+},Q_{-})$ |
 | $\breve Q^{-1}=(Q_{\blacktriangle}-jQ_{\blacktriangledown})/(Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2})$ | the inverse of a unit |
-| $\partial{\mathbb{B}^{\mathrm{red}}}^{\times}=\mathcal N\cup\{0\}$ | the boundary of the unit group |
+| $\partial{\mathbb{B}_{\mathrm{red}}}^{\times}=\mathcal N\cup\{0\}$ | the boundary of the unit group |
 | $GL(2,\mathbb{C})$ | the biquaternion unit group, the non-abelian companion |
 
 ## Further Reading

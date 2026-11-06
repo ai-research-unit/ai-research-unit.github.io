@@ -22,7 +22,7 @@ The bar and the tessarine sign are the two generators, and the star is their com
 
 **An involution of the algebra splits the real space into the fixed and the anti-fixed space, and the two are complementary.**
 
-**Definition.** For an involution $\sigma$ of $\mathbb{B}^{\mathrm{red}}$ the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
+**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{red}}$ the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
 
 **Proposition.** For an involution $\sigma$ the fixed and the anti-fixed space are real subspaces, they meet in $\{0\}$, and their sum is the whole space; over $\mathbb{R}$ they are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$, and the projections onto them are
 $$
@@ -110,7 +110,7 @@ $$
 $$
 where $\mathbf 1,\mathbf j$ are the coordinate vectors; the lines are spanned by the vectors $\tfrac12(1,0,1,0)$ and $\tfrac12(0,1,0,1)$ for $\mathbb{C}\Pi_+$ and $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$ for $\mathbb{C}\Pi_-$. They are not the spans of pairs of basis elements, and in the matrix model of *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* they are the two coordinate lines of the diagonal algebra.
 
-**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the tessarine sign and the star exchange them, $\Pi_{+,\mathrm{ts}}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}_{\mathrm{ts}}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
+**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the tessarine sign and the star exchange them, $\Pi_{\mathrm{ts},+}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}_{\mathrm{ts}}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
 
 ## The Relations between the Spaces
 
@@ -135,11 +135,11 @@ and for every pair $\dim(L+M)=\dim L+\dim M-\dim(L\cap M)=4-\dim(L\cap M)$.
 
 **Corollary (the three complementary pairs).** Exactly three pairs of distinct planes sum to the whole real space, namely the three pairs of one involution:
 $$
-\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}^{\mathrm{red}} \;}.
+\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{red}} \;}.
 $$
 All the other pairs sum to a real three-dimensional space, since their intersection is a line.
 
-**Corollary (the idempotent lines).** The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}^{\mathrm{red}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.
+**Corollary (the idempotent lines).** The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}_{\mathrm{red}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.
 
 ### The Norm on the Spaces
 

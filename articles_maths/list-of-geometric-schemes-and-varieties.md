@@ -45,7 +45,7 @@ A variety is the classical geometric object: a reduced scheme of finite type ove
 | a morphism of varieties and its pullback | a polynomial map and the ring map $\varphi^* : k[Y] \to k[X]$ | *Algebraic Geometry* |
 | the function field $k(X)$ | the fraction field of $k[X]$, of transcendence degree $\dim X$ | *Algebraic Geometry* |
 | a rational map and a birational map | a morphism on a dense open set; a rational map with a rational inverse | *Algebraic Geometry* |
-| the blow-up $X^{\mathrm{cov}} \to X$ | the birational map that replaces a subvariety by a divisor | *Algebraic Geometry* |
+| the blow-up $X_{\mathrm{cov}} \to X$ | the birational map that replaces a subvariety by a divisor | *Algebraic Geometry* |
 | a smooth point and the singular locus | $\dim_kT_PX = \dim X$; the singular locus is closed and proper | *Algebraic Geometry* |
 | the theorem of Bézout and the intersection multiplicity | the number of intersections of two plane curves, counted with multiplicity | *Algebraic Curves*, §Plane Curves |
 | an arithmetic scheme | a scheme over $\mathbb{Z}$, with $\operatorname{Spec}\mathbb{Z}$ the base | *Algebraic Number Theory* |
@@ -60,7 +60,7 @@ The coherent sheaves are the coefficients of the cohomology of a scheme, and the
 |---|---|---|
 | a quasi-coherent sheaf $\mathcal{F}$ | a sheaf of $\mathcal{O}_X$-modules locally associated with a module | *Sheaves in Algebraic Geometry* |
 | a coherent sheaf | a quasi-coherent sheaf of finite type with finitely generated kernels on an affine cover | *Coherent Sheaves* |
-| the equivalence $M \mapsto M^{\mathrm{sh}}$ | the equivalence of the modules over $A$ and the quasi-coherent sheaves on $\operatorname{Spec} A$ | *Sheaves in Algebraic Geometry* |
+| the equivalence $M \mapsto M_{\mathrm{sh}}$ | the equivalence of the modules over $A$ and the quasi-coherent sheaves on $\operatorname{Spec} A$ | *Sheaves in Algebraic Geometry* |
 | the twisting sheaf $\mathcal{O}_X(d)$ | the invertible sheaf of the projective space, with $\mathcal{O}(d)\otimes\mathcal{O}(e) \cong \mathcal{O}(d+e)$ | *Sheaves in Algebraic Geometry* |
 | the canonical sheaf $\omega_X = \Lambda^n\Omega^1_{X/k}$ | the top exterior power of the cotangent sheaf | *Sheaves in Algebraic Geometry* |
 | Serre duality | the pairing $\mathcal{F}\leftrightarrow\mathcal{F}^{\vee}\otimes\omega_X$ | *Sheaves in Algebraic Geometry* |

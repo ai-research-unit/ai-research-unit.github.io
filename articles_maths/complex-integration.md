@@ -161,7 +161,7 @@ The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $
 
 **Theorem (homotopy invariance).** Let $\gamma_0, \gamma_1$ be closed piecewise $C^1$ paths in a domain $\Omega$ and let $H : [0,1] \times [a,b] \to \Omega$ be continuous with $H(s,\cdot)$ closed and piecewise $C^1$ for every $s$, $H(0,\cdot) = \gamma_0$ and $H(1,\cdot) = \gamma_1$. Then $\operatorname{Ind}(\gamma_0, Q_0) = \operatorname{Ind}(\gamma_1, Q_0)$ for every $Q_0 \notin \Omega$.
 
-**Proof.** For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\mathrm{H}^{\mathrm{hvs}}(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta^{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta^{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta^{\mathrm{lift}}(s, b) - \Theta^{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s,\cdot), Q_0)$.
+**Proof.** For a closed path $\gamma$ avoiding $Q_0$ one may write $\gamma(t) - Q_0 = r(t) \exp(i\mathrm{H}_{\mathrm{hvs}}(t))$ with $r > 0$ and $\Theta$ continuous on $[a, b]$, and the total change of the argument is $2\pi \operatorname{Ind}(\gamma, Q_0)$. Since $Q_0 \notin \Omega$, the map $H - Q_0$ takes values in $\mathbb{C}^\times$, and because the rectangle $[0,1] \times [a,b]$ is simply connected the argument admits a continuous lift $\Theta_{\mathrm{lift}}$ on the whole rectangle, with $H(s,t) - Q_0 = \rho(s,t) \exp(i \Theta_{\mathrm{lift}}(s,t))$ and $\rho > 0$. Then $s \mapsto \Theta_{\mathrm{lift}}(s, b) - \Theta_{\mathrm{lift}}(s, a)$ is continuous and takes values in the discrete set $2\pi\mathbb{Z}$, hence is constant, and its value is $2\pi \operatorname{Ind}(H(s,\cdot), Q_0)$.
 
 The winding number therefore depends only on the homotopy class of the path in $\Omega$, and it is the reason a closed path in a simply connected domain has winding number zero about every point outside the domain.
 
@@ -509,16 +509,16 @@ The differential point of view is more informative. The path $\gamma$ pulls the 
 The measure-theoretic picture explains both the strength and the limitation of the theory. The **Cauchy transform** of a finite complex measure $\mu$ with compact support,
 
 $$
-\mathcal{C}\mu(Q) = \frac{1}{2\pi i} \int \frac{d\mu(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q},
+\mathcal{C}\mu(Q) = \frac{1}{2\pi i} \int \frac{d\mu(\varkappa_{\mathrm{crd}})}{\varkappa_{\mathrm{crd}} - Q},
 $$
 
-is holomorphic off the support, because differentiation under the integral sign is legitimate there; this is the Cauchy integral formula with a measure in place of $f(Q) \, dQ$, and it shows that the holomorphy of the transform is a property of the Cauchy kernel, not of the particular contour. The kernel is the fundamental solution of the Cauchy–Riemann operator in the sense that $\partial/\partial\bar \varkappa^{\mathrm{crd}} \bigl( 1/(\pi(\varkappa^{\mathrm{crd}} - Q)) \bigr) = \delta_Q$ as distributions, and this is what makes a purely boundary integral reproduce an interior value. For a function that is smooth on a domain $\Omega$ but not holomorphic, the boundary integral no longer suffices, and the deficit is an area integral: the **Cauchy–Pompeiu formula**
+is holomorphic off the support, because differentiation under the integral sign is legitimate there; this is the Cauchy integral formula with a measure in place of $f(Q) \, dQ$, and it shows that the holomorphy of the transform is a property of the Cauchy kernel, not of the particular contour. The kernel is the fundamental solution of the Cauchy–Riemann operator in the sense that $\partial/\partial\bar \varkappa_{\mathrm{crd}} \bigl( 1/(\pi(\varkappa_{\mathrm{crd}} - Q)) \bigr) = \delta_Q$ as distributions, and this is what makes a purely boundary integral reproduce an interior value. For a function that is smooth on a domain $\Omega$ but not holomorphic, the boundary integral no longer suffices, and the deficit is an area integral: the **Cauchy–Pompeiu formula**
 
 $$
-f(Q) = \frac{1}{2\pi i} \oint_{\partial \Omega} \frac{f(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q} \, d\varkappa^{\mathrm{crd}} - \frac{1}{\pi} \int_\Omega \frac{\partial/\partial\bar \varkappa^{\mathrm{crd}} f(\varkappa^{\mathrm{crd}})}{\varkappa^{\mathrm{crd}} - Q} \, dA(\varkappa^{\mathrm{crd}})
+f(Q) = \frac{1}{2\pi i} \oint_{\partial \Omega} \frac{f(\varkappa_{\mathrm{crd}})}{\varkappa_{\mathrm{crd}} - Q} \, d\varkappa_{\mathrm{crd}} - \frac{1}{\pi} \int_\Omega \frac{\partial/\partial\bar \varkappa_{\mathrm{crd}} f(\varkappa_{\mathrm{crd}})}{\varkappa_{\mathrm{crd}} - Q} \, dA(\varkappa_{\mathrm{crd}})
 $$
 
-holds for $Q \in \Omega$, with $dA$ the area measure. The Cauchy integral formula is the special case $\partial/\partial\bar \varkappa^{\mathrm{crd}} f = 0$; the failure of the boundary representation is measured by the measure-theoretic integral of $\partial/\partial\bar \varkappa^{\mathrm{crd}} f$ against the kernel.
+holds for $Q \in \Omega$, with $dA$ the area measure. The Cauchy integral formula is the special case $\partial/\partial\bar \varkappa_{\mathrm{crd}} f = 0$; the failure of the boundary representation is measured by the measure-theoretic integral of $\partial/\partial\bar \varkappa_{\mathrm{crd}} f$ against the kernel.
 
 ## The Relation to Hypercomplex Integration
 

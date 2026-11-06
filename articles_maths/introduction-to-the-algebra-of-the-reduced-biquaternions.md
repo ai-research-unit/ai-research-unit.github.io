@@ -6,7 +6,7 @@ This article reads the reduced biquaternion space with its **multiplication** an
 
 The general plain algebra is the **associative** case of the reduced biquaternion layer, and it is the case the rest of the category is built on. It is commutative and unital, with the unit $1$; it is **not** a field and **not** a division algebra, because it has the two idempotent lines as zero divisors; and its invertibility is decided by the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which is the algebraic norm of the tessarine bilinear product and the determinant of the multiplication (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
 
-**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
+**The results.** The general plain algebra is the commutative unital associative $\mathbb{R}$-algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with basis $1,i,j,ij$ and the multiplication table of *Reduced Biquaternion Space*. Its unit is $1$, its inverse is $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, and its zero divisors are the two punctured idempotent lines. The algebra is a direct product of two copies of $\mathbb{C}$, $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and its multiplication is componentwise in the idempotent coordinates.
 
 ## The Algebra
 
@@ -14,7 +14,7 @@ The general plain algebra is the **associative** case of the reduced biquaternio
 
 **The general plain algebra of the reduced biquaternions is the reduced biquaternion space with its multiplication, and its product is the general plain bilinear product.**
 
-**Definition.** The **general plain algebra of the reduced biquaternions** is the set $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the addition of the space and the **multiplication**
+**Definition.** The **general plain algebra of the reduced biquaternions** is the set $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the addition of the space and the **multiplication**
 $$
 (Q_{1\blacktriangle}+jQ_{1\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j,
 $$
@@ -45,9 +45,9 @@ $$
 $$
 and it is distributive over the addition.
 
-*Proof.* The product is the product of the algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, which is associative, commutative and unital, and bilinear over $\mathbb{R}$ (*Reduced Biquaternion Space*). The distributivity is the bilinearity.
+*Proof.* The product is the product of the algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, which is associative, commutative and unital, and bilinear over $\mathbb{R}$ (*Reduced Biquaternion Space*). The distributivity is the bilinearity.
 
-The algebra is therefore an **associative commutative unital $\mathbb{R}$-algebra**, and with the complex scalar action it is also a **$\mathbb{C}$-algebra**. It is the same algebra as the complexification of the split-complex numbers, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}$.
+The algebra is therefore an **associative commutative unital $\mathbb{R}$-algebra**, and with the complex scalar action it is also a **$\mathbb{C}$-algebra**. It is the same algebra as the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}$.
 
 ## The Element
 
@@ -94,7 +94,7 @@ The proposition is the reason every question about the algebra splits into two q
 
 **The algebra is not a field and not a division algebra: it has zero divisors, and the invertible elements form a proper subset of the nonzero elements.**
 
-*Proof.* The idempotents are orthogonal and nonzero, $\Pi_+\Pi_-=0$, so $\Pi_+$ and $\Pi_-$ are zero divisors (*Reduced Biquaternion Space*); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of units is a proper subset of $\mathbb{B}^{\mathrm{red}}\setminus\{0\}$.
+*Proof.* The idempotents are orthogonal and nonzero, $\Pi_+\Pi_-=0$, so $\Pi_+$ and $\Pi_-$ are zero divisors (*Reduced Biquaternion Space*); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of units is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$.
 
 The zero divisors, their two families and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article; their annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*. The **absence of division** is stated here because it bears on every statement of an inverse: an element must be tested against $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ before it is inverted.
 
@@ -104,7 +104,7 @@ The zero divisors, their two families and their geometry are *Zero Divisors of t
 
 **Theorem (the structure).** The component map $\varphi(\breve Q)=(Q_{+},Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras
 $$
-\boxed{\; \mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C} \;},
+\boxed{\; \mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\oplus\mathbb{C} \;},
 $$
 and the ring is a direct product of two fields; it is not simple, its maximal ideals are the two idempotent lines $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$ read as kernels of the two projections, and its only idempotents are $0,1,\Pi_+,\Pi_-$.
 
@@ -136,7 +136,7 @@ The table is the plan of the block and not a set of definitions: each row is def
 
 ## Summary
 
-The general plain algebra of the reduced biquaternions is the space $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the multiplication
+The general plain algebra of the reduced biquaternions is the space $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ with the multiplication
 $$
 (Q_{1\blacktriangle}+jQ_{1\blacktriangledown})(Q_{2\blacktriangle}+jQ_{2\blacktriangledown})=(Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown})+(Q_{1\blacktriangle}Q_{2\blacktriangledown}+Q_{1\blacktriangledown}Q_{2\blacktriangle})j,
 $$

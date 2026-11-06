@@ -284,15 +284,15 @@ so that the modular transformation law $f\bigl(i/(Ny)\bigr) = \varepsilon\,(i\sq
 
 **Definition.** For a positive definite quadratic form $\mathfrak{Q}$ on $\mathbb{Z}^n$ the **theta series** is
 $$
-\vartheta^{\mathrm{thf}}_Q(z) = \sum_{x\in\mathbb{Z}^n}q^{\mathfrak{Q}(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : \mathfrak{Q}(x) = m\},
+\vartheta_{\mathrm{thf},Q}(z) = \sum_{x\in\mathbb{Z}^n}q^{\mathfrak{Q}(x)} = \sum_{m\geq0}r_Q(m)q^m, \qquad r_Q(m) = \#\{x : \mathfrak{Q}(x) = m\},
 $$
-and for the standard form $\mathfrak{Q}(x) = x^2$ the series is $\vartheta^{\mathrm{thf}}(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.
+and for the standard form $\mathfrak{Q}(x) = x^2$ the series is $\vartheta_{\mathrm{thf}}(z) = \sum_{n\in\mathbb{Z}}q^{n^2}$.
 
-**Theorem.** If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\vartheta^{\mathrm{thf}}_Q$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\vartheta^{\mathrm{thf}}\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\vartheta^{\mathrm{thf}}^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
+**Theorem.** If $Q$ is integral of even rank $n$ and its associated bilinear form is even unimodular, then $\vartheta_{\mathrm{thf},Q}$ is a modular form of weight $n/2$ for $\Gamma(1)$. In particular $\vartheta_{\mathrm{thf}}\in M_{1/2}(\Gamma_0(4),\chi)$ with the multiplier $\chi$ of the theta function, and $\vartheta_{\mathrm{thf}}^4\in \mathsf{M}_2(\Gamma_0(4))$ is the Eisenstein series of weight $2$ with
 $$
-\vartheta^{\mathrm{thf}}(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
+\vartheta_{\mathrm{thf}}(z)^4 = \sum_{n\geq0}r_4(n)q^n, \qquad r_4(n) = 8\sum_{\substack{d\mid n\\ 4\nmid d}}d .
 $$
-**Proof sketch.** The transformation law of the theta series is the Poisson summation formula of *Zeta Functions*, which gives $\vartheta^{\mathrm{thf}}(-1/z) = (z/i)^{1/2}\vartheta^{\mathrm{thf}}(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim \mathsf{M}_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.
+**Proof sketch.** The transformation law of the theta series is the Poisson summation formula of *Zeta Functions*, which gives $\vartheta_{\mathrm{thf}}(-1/z) = (z/i)^{1/2}\vartheta_{\mathrm{thf}}(z)$ with the principal branch of the square root; that law is the automorphy with the multiplier $\chi$. The fourth power kills the multiplier, and $\dim \mathsf{M}_2(\Gamma_0(4)) = 2$ forces it to be an Eisenstein series; comparing the first coefficients gives the four-square formula.
 
 **Example.** The formula gives $r_4(1) = 8$, $r_4(2) = 24$, $r_4(3) = 32$, $r_4(4) = 24$: for $n=2$ the representations are the permutations of $(\pm1,\pm1,0,0)$, of which there are $24$, and for $n=4$ the representations are the eight of $(\pm2,0,0,0)$ and the sixteen of $(\pm1,\pm1,\pm1,\pm1)$, again $24$. The agreement with the formula is the classical theorem of Jacobi on the four-square numbers.
 
@@ -356,7 +356,7 @@ The Hecke operators $T_n$ act on the spaces, commute, and are normal for $\gcd(n
 | $\langle f,g\rangle$ | Petersson inner product $\int f\bar g y^k dx\,dy/y^2$ |
 | $L(f,s)$, $\Lambda(f,s)$, $\varepsilon$ | $L$-function, completed $L$-function, root number |
 | $k/2$, $k$ | Critical line and right edge of the critical strip of $L(f,s)$ |
-| $\vartheta^{\mathrm{thf}}$, $r_Q(m)$, $r_4(n)$ | Theta series, representation numbers |
+| $\vartheta_{\mathrm{thf}}$, $r_Q(m)$, $r_4(n)$ | Theta series, representation numbers |
 | $\rho_{f,\lambda}$ | $\lambda$-adic Galois representation of a newform |
 | $N$, $a_p$, $\varepsilon$ | Level/conductor, Hecke eigenvalue, root number |
 

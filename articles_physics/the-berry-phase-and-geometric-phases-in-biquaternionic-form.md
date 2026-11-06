@@ -6,13 +6,13 @@ A quantum system whose Hamiltonian is varied slowly around a closed loop in a pa
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
-This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}^{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
+This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\tilde{Ξ}_{\mathrm{sp}}$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$.
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}^{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_\psi)$, but $\mathrm{Tr}(\tilde\Pi\,\partial/\partial R_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the state module, and its definition uses the same Hermitian form, read through the trace, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
 2. **The connection is a $\mathrm{U}(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same $\mathrm{U}(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
-3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta^{\mathrm{sol}}/2$, where $\theta^{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
+3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\theta_{\mathrm{sol}}/2$, where $\theta_{\mathrm{sol}}$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
 5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
 
@@ -29,10 +29,10 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}}(r'_t)\rangle = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}} E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle .
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}} E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle .
 $$
 
-Substituting into the Schrödinger equation $i\hbar\,\partial/\partial r'_t|\tilde{Ξ}^{\mathrm{sp}}\rangle = \tilde R_\psi|\tilde{Ξ}^{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
+Substituting into the Schrödinger equation $i\hbar\,\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle = \tilde R_\psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
 
 $$
 d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
@@ -57,7 +57,7 @@ $$
 \qquad \vec R \in \mathbb{R}^3 ,
 $$
 
-which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i^{\mathrm{mat}}\sigma_\mu$ (where $i^{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
+which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i_{\mathrm{mat}}\sigma_\mu$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
 
 $$
 \tilde R_\psi = \tfrac{R}{2}\,\tilde\Pi_1(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_2(\vec u_R) ,
@@ -101,48 +101,48 @@ The lemma is not special to the qubit: it is the algebraic statement that a rank
 The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_3$ generated by $\tilde\Pi_3 = \tfrac12(e_t + i\vec e_z)$, the spin-up eigenstate of $\tfrac12 i\vec R$ is
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_+(\theta,\theta^{\mathrm{azm}}) = \cos\tfrac{\theta}{2}\,E_{11} + \exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\,E_{21}
+\tilde{Ξ}_{\mathrm{sp},+}(\theta,\theta_{\mathrm{azm}}) = \cos\tfrac{\theta}{2}\,E_{11} + \exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,E_{21}
 \;\;\longleftrightarrow\;\;
-\tilde{Ξ}^{\mathrm{sp}}_+ = \tfrac12\cos\tfrac{\theta}{2}\bigl(e_t + i\vec e_z\bigr) + \tfrac12 \exp(i\theta^{\mathrm{azm}})\sin\tfrac{\theta}{2}\bigl(i\vec e_x + \vec e_y\bigr) ,
+\tilde{Ξ}_{\mathrm{sp},+} = \tfrac12\cos\tfrac{\theta}{2}\bigl(e_t + i\vec e_z\bigr) + \tfrac12 \exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\bigl(i\vec e_x + \vec e_y\bigr) ,
 $$
 
-where $\vec u_R = (\sin\theta\cos\theta^{\mathrm{azm}}, \sin\theta\sin\theta^{\mathrm{azm}}, \cos\theta)$ and $E_{11}, E_{21}$ are the matrix units of the isomorphism. The right-hand expression is an element of $\mathbb{B}$, the left-hand expression its matrix image; the two are the same object written in two notations. That $\tilde{Ξ}^{\mathrm{sp}}_+$ does lie in the ideal, that it is normalized, that it reproduces the idempotent, and that it is the eigenvector, are all verified by direct multiplication below.
+where $\vec u_R = (\sin\theta\cos\theta_{\mathrm{azm}}, \sin\theta\sin\theta_{\mathrm{azm}}, \cos\theta)$ and $E_{11}, E_{21}$ are the matrix units of the isomorphism. The right-hand expression is an element of $\mathbb{B}$, the left-hand expression its matrix image; the two are the same object written in two notations. That $\tilde{Ξ}_{\mathrm{sp},+}$ does lie in the ideal, that it is normalized, that it reproduces the idempotent, and that it is the eigenvector, are all verified by direct multiplication below.
 
 **The bilinear relation.** The two notions of state are related by
 
 $$
-\tilde\Pi_1(\vec u_R) = \frac{\tilde{Ξ}^{\mathrm{sp}}_+(\theta,\theta^{\mathrm{azm}})\,\tilde{Ξ}^{\mathrm{sp}}_+(\theta,\theta^{\mathrm{azm}})^\dagger}{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_+\tilde{Ξ}^{\mathrm{sp}}_+\right)} ,
+\tilde\Pi_1(\vec u_R) = \frac{\tilde{Ξ}_{\mathrm{sp},+}(\theta,\theta_{\mathrm{azm}})\,\tilde{Ξ}_{\mathrm{sp},+}(\theta,\theta_{\mathrm{azm}})^\dagger}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},+}^{\dagger}\tilde{Ξ}_{\mathrm{sp},+}\right)} ,
 $$
 
-which is the parent article's $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$. The density matrix forgets the phase of $\tilde{Ξ}^{\mathrm{sp}}_+$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
+which is the parent article's $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$. The density matrix forgets the phase of $\tilde{Ξ}_{\mathrm{sp},+}$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
 
 ## The Berry Connection in Biquaternion Form
 
-With the spinor in hand, the connection is defined by the plain form of the framework, read as the trace pairing. For a normalized spinor $\tilde{Ξ}^{\mathrm{sp}}(R) \in \mathbb{B}\tilde\Pi$ depending smoothly on the parameters,
+With the spinor in hand, the connection is defined by the plain form of the framework, read as the trace pairing. For a normalized spinor $\tilde{Ξ}_{\mathrm{sp}}(R) \in \mathbb{B}\tilde\Pi$ depending smoothly on the parameters,
 
 $$
 \boxed{\;
-\mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\,\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\right)}
+\mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right)}
 \;}
 $$
 
-This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\tilde{Ξ}^{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\rangle$ divided by $\langle\tilde{Ξ}^{\mathrm{sp}}|\tilde{Ξ}^{\mathrm{sp}}\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two interpretations of one bilinear form on the state module.
+This is the standard Berry connection, written through the trace. Under the isomorphism, the quotient is the column-vector inner product $\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle$ divided by $\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ξ}_{\mathrm{sp}}\rangle$; in the algebra it is the same number, computed by the trace formula $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ inherited from the read list. The definition uses the pairing that gives the Born rule, which is a structural point and not a coincidence of notation: the connection and the Born rule are two interpretations of one bilinear form on the state module.
 
-**Reality.** For normalized $\tilde{Ξ}^{\mathrm{sp}}$, $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}) = 1$ is constant, so differentiating gives
+**Reality.** For normalized $\tilde{Ξ}_{\mathrm{sp}}$, $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = 1$ is constant, so differentiating gives
 
 $$
-\mathrm{Tr}\!\left(\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}\dagger}\,\tilde{Ξ}^{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right) = 0 .
+\mathrm{Tr}\!\left(\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde{Ξ}_{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right) = 0 .
 $$
 
-The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.
+The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}})$ is purely imaginary and $i$ times it is real. The connection is therefore a **real one-form** on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.
 
-**Gauge transformation.** Let $\alpha(R)$ be a real function and let $\tilde{Ξ}^{\mathrm{sp}} \mapsto \tilde{Ξ}^{\mathrm{sp}}_2 = \exp(i\alpha)\tilde{Ξ}^{\mathrm{sp}}$. Because $\exp(i\alpha)$ is central and $*$-unitary, it multiplies $\tilde{Ξ}^{\mathrm{sp}}$ from the left without ordering ambiguity, and
+**Gauge transformation.** Let $\alpha(R)$ be a real function and let $\tilde{Ξ}_{\mathrm{sp}} \mapsto \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$. Because $\exp(i\alpha)$ is central and $*$-unitary, it multiplies $\tilde{Ξ}_{\mathrm{sp}}$ from the left without ordering ambiguity, and
 
 $$
 \begin{aligned}
-\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}_2\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}_2\right)
-&= \mathrm{Tr}\!\left(\exp(-i\alpha)\tilde{Ξ}^{\mathrm{sp}\dagger}\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\tilde{Ξ}^{\mathrm{sp}} + \exp(i\alpha)\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right)\right) \\
-&= i\,\partial/\partial R_\mu\alpha\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right).
+\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},2}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp},2}\right)
+&= \mathrm{Tr}\!\left(\exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} + \exp(i\alpha)\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)\right) \\
+&= i\,\partial/\partial R_\mu\alpha\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right).
 \end{aligned}
 $$
 
@@ -150,7 +150,7 @@ Dividing by the norm and multiplying by $i$ gives
 
 $$
 \boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha\;}
-\qquad\text{for}\qquad \tilde{Ξ}^{\mathrm{sp}}_2 = \exp(i\alpha)\tilde{Ξ}^{\mathrm{sp}} .
+\qquad\text{for}\qquad \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 This is the transformation law of an **abelian gauge connection**. It is the same law as the electromagnetic gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ of *The Gauge Principle in Biquaternionic Form*, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.
@@ -224,41 +224,41 @@ $$
 \vec R(r'_t) = R\bigl(\sin\theta_0\cos\omega r'_t,\ \sin\theta_0\sin\omega r'_t,\ \cos\theta_0\bigr) ,
 $$
 
-with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\theta^{\mathrm{azm}} = \omega r'_t$ runs from $0$ to $2\pi$.
+with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t$ runs from $0$ to $2\pi$.
 
-The spin-up spinor is $\tilde{Ξ}^{\mathrm{sp}}_+$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
+The spin-up spinor is $\tilde{Ξ}_{\mathrm{sp},+}$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
 
 $$
 \mathcal{A}_\theta = 0 , \qquad
-\mathcal{A}_{\theta^{\mathrm{azm}}} = -\sin^2\frac{\theta}{2} = -\frac{1-\cos\theta}{2} .
+\mathcal{A}_{\theta_{\mathrm{azm}}} = -\sin^2\frac{\theta}{2} = -\frac{1-\cos\theta}{2} .
 $$
 
-The component $\mathcal{A}_\theta$ vanishes because $\tilde{Ξ}^{\mathrm{sp}}_+$ depends on $\theta$ only through the real factors $\cos(\theta/2)$ and $\sin(\theta/2)$, whose contributions to $\langle\tilde{Ξ}^{\mathrm{sp}}|\partial/\partial \theta\tilde{Ξ}^{\mathrm{sp}}\rangle$ cancel; the component $\mathcal{A}_{\theta^{\mathrm{azm}}}$ comes from the phase $\exp(i\theta^{\mathrm{azm}})$, giving $\langle\tilde{Ξ}^{\mathrm{sp}}|\partial/\partial \theta^{\mathrm{azm}}\tilde{Ξ}^{\mathrm{sp}}\rangle = i\sin^2(\theta/2)$ and hence $\mathcal{A}_{\theta^{\mathrm{azm}}} = -\sin^2(\theta/2)$. Written as a one-form,
+The component $\mathcal{A}_\theta$ vanishes because $\tilde{Ξ}_{\mathrm{sp},+}$ depends on $\theta$ only through the real factors $\cos(\theta/2)$ and $\sin(\theta/2)$, whose contributions to $\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial \theta\tilde{Ξ}_{\mathrm{sp}}\rangle$ cancel; the component $\mathcal{A}_{\theta_{\mathrm{azm}}}$ comes from the phase $\exp(i\theta_{\mathrm{azm}})$, giving $\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial \theta_{\mathrm{azm}}\tilde{Ξ}_{\mathrm{sp}}\rangle = i\sin^2(\theta/2)$ and hence $\mathcal{A}_{\theta_{\mathrm{azm}}} = -\sin^2(\theta/2)$. Written as a one-form,
 
 $$
-\mathcal{A} = -\frac{1-\cos\theta}{2}\,d\theta^{\mathrm{azm}} ,
+\mathcal{A} = -\frac{1-\cos\theta}{2}\,d\theta_{\mathrm{azm}} ,
 $$
 
 which is regular at the north pole $\theta = 0$ and singular at the south pole. The singularity is the **Dirac string** of this connection: no single expression for $\mathcal{A}$ is smooth on the whole sphere, and a second patch is needed near the south pole. The curvature needs no patch:
 
 $$
-\mathcal{F} = d\mathcal{A} = -\frac{1}{2}\sin\theta\; d\theta \wedge d\theta^{\mathrm{azm}} ,
+\mathcal{F} = d\mathcal{A} = -\frac{1}{2}\sin\theta\; d\theta \wedge d\theta_{\mathrm{azm}} ,
 \qquad
-\mathcal{F}_{\theta\theta^{\mathrm{azm}}} = \partial/\partial \theta\mathcal{A}_{\theta^{\mathrm{azm}}} = -\frac{\sin\theta}{2} .
+\mathcal{F}_{\theta\theta_{\mathrm{azm}}} = \partial/\partial \theta\mathcal{A}_{\theta_{\mathrm{azm}}} = -\frac{\sin\theta}{2} .
 $$
 
 **Route 1: the line integral.** The loop is at fixed $\theta_0$, so
 
 $$
-\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu = \int_0^{2\pi}\mathcal{A}_{\theta^{\mathrm{azm}}}\big|_{\theta_0}\,d\theta^{\mathrm{azm}}
+\boxed{\;\gamma_+ = \oint_{\mathcal{C}}\sum_\mu\mathcal{A}_\mu\,dR_\mu = \int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\big|_{\theta_0}\,d\theta_{\mathrm{azm}}
 = -\frac{1-\cos\theta_0}{2}\cdot 2\pi
-= -\frac{\theta^{\mathrm{sol}}}{2}\;}
+= -\frac{\theta_{\mathrm{sol}}}{2}\;}
 $$
 
 where
 
 $$
-\theta^{\mathrm{sol}} = 2\pi\bigl(1-\cos\theta_0\bigr)
+\theta_{\mathrm{sol}} = 2\pi\bigl(1-\cos\theta_0\bigr)
 $$
 
 is the solid angle of the spherical cap bounded by the loop.
@@ -266,8 +266,8 @@ is the solid angle of the spherical cap bounded by the loop.
 **Route 2: the surface integral.** The same loop bounds the north cap $0 \le \theta \le \theta_0$, on which the connection above is regular. Integrating the curvature,
 
 $$
-\int_{\mathcal{S}}\mathcal{F} = \int_0^{\theta_0}\!\!\int_0^{2\pi} -\frac{\sin\theta}{2}\,d\theta\,d\theta^{\mathrm{azm}}
-= -\frac{1}{2}\cdot 2\pi\bigl(1-\cos\theta_0\bigr) = -\frac{\theta^{\mathrm{sol}}}{2} .
+\int_{\mathcal{S}}\mathcal{F} = \int_0^{\theta_0}\!\!\int_0^{2\pi} -\frac{\sin\theta}{2}\,d\theta\,d\theta_{\mathrm{azm}}
+= -\frac{1}{2}\cdot 2\pi\bigl(1-\cos\theta_0\bigr) = -\frac{\theta_{\mathrm{sol}}}{2} .
 $$
 
 The two routes agree, and they agree for **every** $\theta_0$, not merely at the value used to construct either expression. The agreement is a check of the pair of formulas against each other on a one-parameter family of loops; written out numerically for five values of $\theta_0$,
@@ -277,19 +277,19 @@ The two routes agree, and they agree for **every** $\theta_0$, not merely at the
 | $\gamma_+$ (line) | $-0.4209$ | $-1.5708$ | $-3.1416$ | $-4.7124$ | $-5.8623$ |
 | $\gamma_+$ (surface) | $-0.4209$ | $-1.5708$ | $-3.1416$ | $-4.7124$ | $-5.8623$ |
 
-The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta^{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
+The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta_{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
 
-**Speed independence.** Replacing the uniform rotation $\theta^{\mathrm{azm}} = \omega r'_t$ by a non-uniform $\theta^{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta^{\mathrm{azm}}}\,d\theta^{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta^{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dr'_t = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
+**Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dr'_t = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
 **The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
 
 $$
-\mathcal{A}^{(-)}_{\theta^{\mathrm{azm}}} = +\frac{1-\cos\theta}{2} ,
+\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = +\frac{1-\cos\theta}{2} ,
 $$
 
-giving $\gamma_- = +\theta^{\mathrm{sol}}/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}^{(-)}_{\theta^{\mathrm{azm}}} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta^{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta^{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
+giving $\gamma_- = +\theta_{\mathrm{sol}}/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}_{\theta_{\mathrm{azm}}}^{(-)} = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $\exp(-i\theta_{\mathrm{azm}})$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \theta_{\mathrm{sol}}$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
 
-**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}_+\tilde{Ξ}^{\mathrm{sp}}_+) = 1$; the reproduction $\tilde{Ξ}^{\mathrm{sp}}_+\tilde{Ξ}^{\mathrm{sp}\dagger}_+ = \tilde\Pi_1(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}_+ = \tfrac{R}{2}\tilde{Ξ}^{\mathrm{sp}}_+$; the spectral decomposition $\tilde R_\psi = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
+**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp},+}^{\dagger}\tilde{Ξ}_{\mathrm{sp},+}) = 1$; the reproduction $\tilde{Ξ}_{\mathrm{sp},+}\tilde{Ξ}_{\mathrm{sp},+}^{\dagger} = \tilde\Pi_1(\vec u_R)$ of the idempotent; the eigenvalue equation $\tilde R_\psi\tilde{Ξ}_{\mathrm{sp},+} = \tfrac{R}{2}\tilde{Ξ}_{\mathrm{sp},+}$; the spectral decomposition $\tilde R_\psi = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
 
 ## Quantisation on a Closed Surface
 
@@ -298,7 +298,7 @@ The example of the previous section computed a flux over a **cap** and found it 
 The situation is different for a **closed** surface. Integrating the spin-up curvature over the whole Bloch sphere,
 
 $$
-\int_{S^2}\mathcal{F} = \int_0^{\pi}\!\!\int_0^{2\pi} -\frac{\sin\theta}{2}\,d\theta\,d\theta^{\mathrm{azm}} = -2\pi ,
+\int_{S^2}\mathcal{F} = \int_0^{\pi}\!\!\int_0^{2\pi} -\frac{\sin\theta}{2}\,d\theta\,d\theta_{\mathrm{azm}} = -2\pi ,
 $$
 
 so the **first Chern number** of the spin-up eigenbundle is the integer
@@ -307,7 +307,7 @@ $$
 \boxed{\;C_+ = \frac{1}{2\pi}\int_{S^2}\mathcal{F} = -1\;}
 $$
 
-For the spin-down branch, in the gauge adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ and $C_- = +1$. The two curvatures are equal and opposite at every point,
+For the spin-down branch, in the gauge adapted to the north pole, the curvature is $+\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ and $C_- = +1$. The two curvatures are equal and opposite at every point,
 
 $$
 \mathcal{F}^{(+)} + \mathcal{F}^{(-)} = 0 ,
@@ -323,10 +323,10 @@ $$
 
 the field of a **point degeneracy of charge $g = -1/2$** at $\vec R = 0$, and the Chern number is twice the charge, $C_+ = 2g = -1$. But $\vec R = 0$ is exactly where the two levels become degenerate and the gap closes; the connection and the adiabatic theorem both fail there. The Bloch sphere at a fixed magnitude $R$ avoids the origin, which is why the integral over it is well defined, and the integer it computes counts the degeneracies enclosed. If the surface were allowed to pass through $\vec R = 0$, or if the gap closed anywhere on it, the integral would not be defined. Quantisation, closedness, and the non-closing gap are therefore one requirement, not three.
 
-**Robustness under deformation.** The integer cannot change under a deformation of the Hamiltonian that keeps the gap open. To see this within the two-level family, let the direction field be distorted by a monotone function $\Theta(\theta)$ with $\Theta(0) = 0$ and $\Theta(\pi) = \pi$. The connection is again $\mathcal{A}_{\theta^{\mathrm{azm}}} = -\sin^2(\Theta/2)$ and the curvature is
+**Robustness under deformation.** The integer cannot change under a deformation of the Hamiltonian that keeps the gap open. To see this within the two-level family, let the direction field be distorted by a monotone function $\Theta(\theta)$ with $\Theta(0) = 0$ and $\Theta(\pi) = \pi$. The connection is again $\mathcal{A}_{\theta_{\mathrm{azm}}} = -\sin^2(\Theta/2)$ and the curvature is
 
 $$
-\mathcal{F} = -\frac{1}{2}\sin\Theta\;\frac{d\Theta}{d\theta}\; d\theta\wedge d\theta^{\mathrm{azm}} ,
+\mathcal{F} = -\frac{1}{2}\sin\Theta\;\frac{d\Theta}{d\theta}\; d\theta\wedge d\theta_{\mathrm{azm}} ,
 $$
 
 whose integral over the sphere is
@@ -384,10 +384,10 @@ The question left open in the introduction can now be answered precisely. **The 
 **The Berry connection is literally the standard one.** Written in the algebra it is
 
 $$
-\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\right)} ,
+\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right)} ,
 $$
 
-and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}^{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\rangle/\langle\tilde{Ξ}^{\mathrm{sp}}|\tilde{Ξ}^{\mathrm{sp}}\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
+and under the isomorphism this is the standard expression $i\langle\tilde{Ξ}_{\mathrm{sp}}|\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\rangle/\langle\tilde{Ξ}_{\mathrm{sp}}|\tilde{Ξ}_{\mathrm{sp}}\rangle$ on $\mathbb{C}^2$. No new field is introduced and no new phase is predicted: the biquaternion article and the standard article compute the same numbers, as the two-route check on the rotating field demonstrates. The framework's contribution to the *object* is notational.
 
 **The relation to the framework's own connection is an analogy.** The abelian connection $\tilde{A}$ of *The Gauge Principle in Biquaternionic Form* is a biquaternion-valued field on spacetime, obtained from localizing the central phase symmetry of a field equation. The Berry connection is a real one-form on parameter space, obtained from the rephasing freedom of an instantaneous eigenstate. They are of the same *gauge type* — same structure group $\mathrm{U}(1) = \mathrm{U}(\mathbb{C}_{\mathbb{B}})$, same transformation law, same curvature definition — but they are different objects on different base spaces, and the framework does not identify them. Anyone who reads the shared $\mathrm{U}(1)$ as an identity has read more than is there.
 
@@ -397,7 +397,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
-- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}^{\mathrm{sp}}|d\tilde{Ξ}^{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i c r'_t$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
+- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}_{\mathrm{sp}}|d\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i c r'_t$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
 
@@ -427,20 +427,20 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
 
-In the biquaternion framework the instantaneous eigenstate of $\tilde R_\psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}^{\mathrm{sp}}$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
+In the biquaternion framework the instantaneous eigenstate of $\tilde R_\psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically. The connection is carried by the **spinor** $\tilde{Ξ}_{\mathrm{sp}}$ of the Peirce carrier $\mathbb{B}\tilde\Pi$, a minimal left ideal here, and is defined by the Hermitian form of the state module, read through the trace,
 
 $$
-\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\right)} ,
+\mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right)} ,
 \qquad
 \mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha
-\quad\text{for}\quad \tilde{Ξ}^{\mathrm{sp}}_2 = \exp(i\alpha)\tilde{Ξ}^{\mathrm{sp}} ,
+\quad\text{for}\quad \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
 \mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$
 
 The structure group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
 
-On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta^{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta^{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.
+On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta_{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta_{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.
 
 The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{M}_+$, that the connection and the Born rule come from one plain form, read as the trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.
 
@@ -457,17 +457,17 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ | Hermitian Hamiltonian (observable) |
 | $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ | Idempotent (pure state / eigen-idempotent) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace formula (Born rule and the pairing used for the connection) |
-| $\mathbb{B}\tilde\Pi$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}^{\mathrm{sp}}$ |
-| $\tilde{Ξ}^{\mathrm{sp}}_\pm$ | Normalized instantaneous eigen-spinor |
-| $\tilde{Ϛ} = \tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ | Density matrix associated to a spinor |
+| $\mathbb{B}\tilde\Pi$ | Minimal left ideal; the state module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
+| $\tilde{Ξ}_{\mathrm{sp},\pm}$ | Normalized instantaneous eigen-spinor |
+| $\tilde{Ϛ} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to a spinor |
 | $\vec R$, $R = \lvert\vec R\rvert$, $\vec u_R$ | Parameter vector, its magnitude, its direction; $\vec u_R \in S^2$ |
 | $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{M}_+$ |
-| $\theta, \theta^{\mathrm{azm}}$ | Polar and azimuthal angles on the Bloch sphere |
-| $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\partial/\partial R_\mu\tilde{Ξ}^{\mathrm{sp}})/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ |
+| $\theta, \theta_{\mathrm{azm}}$ | Polar and azimuthal angles on the Bloch sphere |
+| $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}})/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ |
 | $\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha$ | Gauge transformation of the Berry connection |
 | $\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$ | Berry curvature |
 | $\gamma_\pm$ | Berry phase of the spin-up / spin-down band |
-| $\theta^{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |
+| $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |
 | $\Delta = R$ | Spectral gap; closes at $\vec R = 0$ |
 | $C_\pm = \mp 1$ | First Chern numbers of the two bands over $S^2$ |
 | $B$, $Ξ : B \to \operatorname{End}(V)$, $V$ | Base (parameter) space, matrix field, fibre $V$ of dimension $n$ |

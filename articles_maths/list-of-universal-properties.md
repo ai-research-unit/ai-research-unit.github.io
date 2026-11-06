@@ -50,7 +50,7 @@ A **quotient** is a coequaliser: the quotient of a set by an equivalence relatio
 |---|---|---|
 | Quotient set $X/{\sim}$ | the universal set in which equivalent elements coincide | *Sets, Functions and Relations* |
 | Quotient group $G/N$ | the universal group killing a normal subgroup | *Groups* |
-| Abelianisation $G^{\mathrm{ab}}$ | the universal abelian quotient of a group | *Groups* |
+| Abelianisation $G_{\mathrm{ab}}$ | the universal abelian quotient of a group | *Groups* |
 | Quotient ring $R/I$ | the universal ring killing a two-sided ideal | *Rings* |
 | Quotient module $M/N$ | the universal module killing a submodule | *Modules* |
 | Quotient algebra $A/I$ | the universal algebra killing a two-sided ideal | *Ideals and Quotients of Algebras* |

@@ -25,10 +25,10 @@ $$
 The polar word of *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion* is
 
 $$
-\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The two decompositions are compared below.
+with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The two decompositions are compared below.
 
 ## The Spectral Problem
 
@@ -104,7 +104,7 @@ The polar factors do not preserve the flag in general.
 
 *Proof.* The product is $\tilde U$, which is upper triangular in the Jordan basis. If both factors preserved the flag, both would be upper triangular in that basis. The worked example below shows that they are not; the general statement follows because the polar factors are functions of $\tilde U$ and $\tilde U^{*}$, and $\tilde U^{*}$ does not preserve the flag of $\tilde U$ on the Jordan part.
 
-The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\theta^{\mathrm{rpd}}/2}$ and $e^{-\theta^{\mathrm{rpd}}/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.
+The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\theta_{\mathrm{rpd}}/2}$ and $e^{-\theta_{\mathrm{rpd}}/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.
 
 This is the precise sense in which the Jordan reading and the polar reading are transverse. The Jordan basis triangularizes the element and the unit factor. The polar word diagonalizes neither the element nor the unit factor; it separates the element into a positive and a $*$-unitary factor, and only their product is unipotent.
 
@@ -117,13 +117,13 @@ The spectral data and the polar data carry different real information.
 | domain | $N\neq0$, $B^2=0$ | the same |
 | decomposition of | the element $\tilde Q$ | the unit factor $\tilde U$ |
 | factors | $Q_te_t+\vec\Upsilon$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times $*$-unitary |
-| eigenvalues | $Q_t$, double | $\varepsilon$, double for $\tilde U$; $e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$ for the factors |
+| eigenvalues | $Q_t$, double | $\varepsilon$, double for $\tilde U$; $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$ for the factors |
 | basis | a Jordan chain, not unique | an orthogonal frame $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$, up to degeneracies |
-| real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $r,\alpha$ (2), $\theta^{\mathrm{rpd}},\theta$ (2), frame (2), relation (1) |
+| real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $r,\alpha$ (2), $\theta_{\mathrm{rpd}},\theta$ (2), frame (2), relation (1) |
 | what the spectrum fixes | $Q_t$ and $\varepsilon$ | $r,\alpha,\varepsilon$ |
 | survives $B^2\to0$ | the Jordan chain does | the word does |
 
-The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\theta^{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.
+The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.
 
 ## The Boundary
 
@@ -148,7 +148,7 @@ $$
 Then $Q_t=1$, $\vec\Upsilon=\vec e_x+i\vec e_y$, $\vec\Upsilon^2=0$, $N=1$, $\Rho=1$, $r=1$, $\alpha=0$ and $\varepsilon=1$. The word is
 
 $$
-\theta^{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2,
+\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2,
 \qquad
 \theta=\frac{\pi}{2},
 \qquad
@@ -234,7 +234,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 | replacement | a Jordan chain $\zeta,\eta$ with $\vec\Upsilon\zeta=0$ and $\vec\Upsilon\eta=\zeta$ |
 | matrix form | $Q_t\begin{pmatrix}1&1\\0&1\end{pmatrix}$ in the chain |
 | polar factors | $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ do not preserve the chain in general |
-| factor eigenvalues | $e^{\pm\theta^{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$; the product has the double eigenvalue $\varepsilon$ |
+| factor eigenvalues | $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$; the product has the double eigenvalue $\varepsilon$ |
 | data carried by the spectrum | only $Q_t$ and $\varepsilon$ |
 | data carried by the word | the two angles and the orthogonal frame, with the rigidity relation |
 
@@ -257,7 +257,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 | $\Rho$ | the modulus, principal square root of $N$ |
 | $\tilde U=\tilde Q/\Rho=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the two axes, orthogonal on the Jordan part |
 | $\varepsilon=\pm1$ | the sign of the scalar part of the unit factor |
 | $\zeta,\eta$ | a Jordan chain, $\vec\Upsilon\zeta=0$, $\vec\Upsilon\eta=\zeta$ |

@@ -253,22 +253,22 @@ Every other state lies between them in the Bloch ball; the GNS dimension is two 
 
 Every state of this article has been written down as a density matrix. For a translation-invariant theory a state has a second description, arriving from harmonic analysis rather than from the algebra, and it is the description the field states of the framework actually use.
 
-**The classical statement.** Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi^{\mathrm{scl}} : G \to \mathbb{C}$ is **positive definite** when
+**The classical statement.** Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi_{\mathrm{scl}} : G \to \mathbb{C}$ is **positive definite** when
 
 $$
-\sum_{k,l} \bar c_k c_l \, \xi^{\mathrm{scl}}(g_k - g_l) \ge 0
+\sum_{k,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_k - g_l) \ge 0
 $$
 
-for every finite set of points and coefficients, and **normalised** when $\xi^{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi^{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:
+for every finite set of points and coefficients, and **normalised** when $\xi_{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi_{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:
 
 $$
-\xi^{\mathrm{scl}}(g) = \int_{G^{\vee}} \xi(g) \, d\mu(\xi).
+\xi_{\mathrm{scl}}(g) = \int_{G^{\vee}} \xi(g) \, d\mu(\xi).
 $$
 
 The same data is a **state**: the functional
 
 $$
-\omega_\xi^{\mathrm{scl}}(f) = \int_G f(g) \, \xi^{\mathrm{scl}}(g) \, dg
+\omega_{\mathrm{scl},\xi}(f) = \int_G f(g) \, \xi_{\mathrm{scl}}(g) \, dg
 $$
 
 is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G^{\vee},\mu)$, with the convolution algebra acting by multiplication by the Fourier transform and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
@@ -328,7 +328,7 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | $i$ | Scalar imaginary, central |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |
-| $\xi^{\mathrm{scl}}$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\xi^{\mathrm{scl}}=\int\xi\,d\mu$; the state $\omega_\xi^{\mathrm{scl}}(f)=\int f\xi^{\mathrm{scl}}$ on the convolution algebra has GNS space $L^2(G^{\vee},\mu)$ |
+| $\xi_{\mathrm{scl}}$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\xi_{\mathrm{scl}}=\int\xi\,d\mu$; the state $\omega_{\mathrm{scl},\xi}(f)=\int f\xi_{\mathrm{scl}}$ on the convolution algebra has GNS space $L^2(G^{\vee},\mu)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde Q_3)=\tfrac12\mathrm{Tr}(\tilde Q_3)$ | Trace state; unique tracial state; Bloch centre |

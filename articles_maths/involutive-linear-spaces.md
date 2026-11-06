@@ -187,13 +187,13 @@ $$
 **Proposition.** Let $T$ be of type $(n,m)$ and $k \geq 1$. On the $k$-fold tensor power $V^{\otimes k}$ the operator $T^{\otimes k}$ is a linear involution of type
 
 $$
-\left( \sum_{j \ \mathrm{even}} \binom{k}{j} p^{\,k-j} q^{\,j}, \ \sum_{j \ \mathrm{odd}} \binom{k}{j} p^{\,k-j} q^{\,j} \right), \qquad \text{with} \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^k ,
+\left( \sum_{\mathrm{even},j} \binom{k}{j} p^{\,k-j} q^{\,j}, \ \sum_{\mathrm{odd},j} \binom{k}{j} p^{\,k-j} q^{\,j} \right), \qquad \text{with} \qquad \operatorname{tr}\bigl(T^{\otimes k}\bigr) = (p-q)^k ,
 $$
 
 and on the exterior power $\Lambda^k V$ the induced operator is a linear involution of type
 
 $$
-\left( \sum_{j \ \mathrm{even}} \binom{p}{k-j}\binom{q}{j}, \ \sum_{j \ \mathrm{odd}} \binom{p}{k-j}\binom{q}{j} \right), \qquad \text{with} \qquad \operatorname{tr} = \sum_{j} (-1)^j \binom{p}{k-j}\binom{q}{j},
+\left( \sum_{\mathrm{even},j} \binom{p}{k-j}\binom{q}{j}, \ \sum_{\mathrm{odd},j} \binom{p}{k-j}\binom{q}{j} \right), \qquad \text{with} \qquad \operatorname{tr} = \sum_{j} (-1)^j \binom{p}{k-j}\binom{q}{j},
 $$
 
 where the sums are over the $j$ with $0 \leq j \leq q$ and $0 \leq k-j \leq p$. On the top exterior power $\Lambda^n V$ the induced involution is multiplication by $\det T = (-1)^m$.

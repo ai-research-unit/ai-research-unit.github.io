@@ -119,7 +119,7 @@ whose underlying topological space is $Y$ and whose structure sheaf is the inver
 
 **Example (completion along a divisor).** Let $X$ be a smooth surface over a field and let $D \subseteq X$ be a smooth divisor. Then $\widehat{X}_{/D}$ has reduction $D$ and records the first-order and higher neighbourhoods of $D$ in $X$; for a degeneration of a curve over a disc, this is precisely the formal neighbourhood that controls the limit mixed structure.
 
-**Example (the $p$-adic formal projective line).** Let $\widehat{\mathbb{P}}^1$ be the completion of $\mathbb{P}^1_\mathbb{Z}$ along its special fibre over a prime $p$. Then $\widehat{\mathbb{P}}^1$ is a formal scheme over $\operatorname{Spf}\mathbb{Z}_p$ whose reduction is $\mathbb{P}^1_{\mathbb{F}_p}$ and whose generic fibre is the rigid projective line $\mathbb{P}^{1,\mathrm{rig}}_{\mathbb{Q}_p}$ of *Rigid Analytic Geometry*. The same construction with the other prime ideals of $\mathbb{Z}$ produces the formal models used in the theory of rigid curves.
+**Example (the $p$-adic formal projective line).** Let $\widehat{\mathbb{P}}^1$ be the completion of $\mathbb{P}^1_\mathbb{Z}$ along its special fibre over a prime $p$. Then $\widehat{\mathbb{P}}^1$ is a formal scheme over $\operatorname{Spf}\mathbb{Z}_p$ whose reduction is $\mathbb{P}^1_{\mathbb{F}_p}$ and whose generic fibre is the rigid projective line $\mathbb{P}_{\mathrm{rig},\mathbb{Q}_p}^1$ of *Rigid Analytic Geometry*. The same construction with the other prime ideals of $\mathbb{Z}$ produces the formal models used in the theory of rigid curves.
 
 ### Formal Models of Rigid Spaces
 

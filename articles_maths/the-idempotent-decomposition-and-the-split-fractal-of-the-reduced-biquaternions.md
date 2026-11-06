@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ satisfy
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ satisfy
 
 $$
 \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\qquad \Pi_-^{2}=\Pi_-,
 $$
 
-so the algebra is the direct sum of rings $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is **global**: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.
+so the algebra is the direct sum of rings $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is **global**: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.
 
 The result is the strongest possible reduction. A self-map of the algebra written in the coordinates is a pair of complex maps with the same index, a quadratic map of the algebra is a pair of complex quadratic maps, and a quadratic fractal is the product of the two complex fractals while the attractor of a system of contractions is the graph-like set of the pairs matched by the same coding. The coupling term that makes the non-commutative companion hard is identically zero here, and the only place where the two coordinates interact is the index of the generators: a point of the attractor has the same coding in the two coordinates, and that is the whole of the interaction. The singular sets, the zero-divisor cone and its slices, are then computed from the two complex singular sets.
 
@@ -20,7 +20,7 @@ The article owns the global decomposition, the proof of the reduction, the coupl
 
 $$
 \boxed{\;
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
 \;},
 $$
 
@@ -34,7 +34,7 @@ and the two projections $\breve Q\mapsto Q_{+}$ and $\breve Q\mapsto Q_{-}$ are 
 
 ## The Reduction of the Dynamics
 
-**Theorem (the reduction).** Let $F:\mathbb{B}^{\mathrm{red}}\to\mathbb{B}^{\mathrm{red}}$ be a map that in the coordinates is continuous and written as $F(Q_{+},Q_{-})=(F_{1}(Q_{+}),F_{2}(Q_{-}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{+},Q_{-})$ is the pair of the orbits of the two coordinates,
+**Theorem (the reduction).** Let $F:\mathbb{B}_{\mathrm{red}}\to\mathbb{B}_{\mathrm{red}}$ be a map that in the coordinates is continuous and written as $F(Q_{+},Q_{-})=(F_{1}(Q_{+}),F_{2}(Q_{-}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{+},Q_{-})$ is the pair of the orbits of the two coordinates,
 
 $$
 \boxed{\;
@@ -131,7 +131,7 @@ The idempotent decomposition of the reduced biquaternion algebra is a direct sum
 | Symbol | Meaning |
 |---|---|
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two central idempotents |
-| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the global decomposition |
+| $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the global decomposition |
 | $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ | the element and its idempotent coordinates |
 | $f_{i}(Q_{+},Q_{-})=(f_{i}^{+}(Q_{+}),f_{i}^{-}(Q_{-}))$ | a generator of a system, a pair of complex maps |
 | $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$ | the attractor, the split fractal |

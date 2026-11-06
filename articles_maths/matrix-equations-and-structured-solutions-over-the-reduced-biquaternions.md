@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The linear matrix equation over the reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is
+The linear matrix equation over the reduced biquaternion algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is
 
 $$
-\sum_{l=1}^{r}A_lX_lB_l=E,\qquad A_l\in{\mathbb{B}^{\mathrm{red}}}^{m\times n_l},\quad B_l\in{\mathbb{B}^{\mathrm{red}}}^{s_l\times t},\quad E\in{\mathbb{B}^{\mathrm{red}}}^{m\times t},
+\sum_{l=1}^{r}A_lX_lB_l=E,\qquad A_l\in{\mathbb{B}_{\mathrm{red}}}^{m\times n_l},\quad B_l\in{\mathbb{B}_{\mathrm{red}}}^{s_l\times t},\quad E\in{\mathbb{B}_{\mathrm{red}}}^{m\times t},
 $$
 
 and the version of it read in the source of this article constrains the unknowns. Each unknown is required to lie in a prescribed set $L_l(n_l,s_l)$ of matrices cut by a set of real-linear conditions on its entries; the source calls such a set an **L-structure**, the name Magnus gave to a finite matrix pattern defined by a linear condition on the vec. The four instances the source develops are the Toeplitz, the symmetric Toeplitz, the Hankel and the circulant matrices over the algebra. The problem is to find the solution of least squares size whose unknowns obey the constraints, of least norm among those, and when the equation is consistent, the constrained solution of least norm.
 
-The algebra is commutative, and this is what makes the constrained problem linear. The classical vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holds over $\mathbb{B}^{\mathrm{red}}$ unchanged, because the coefficients of the algebra commute, so a linear condition on the entries of an unknown is carried into the coefficient matrix by the Kronecker product: writing the structure as the linear map $\mathrm{vec}(X_l)=\mathsf E_{L_l}\zeta_l$ from the list of independent entries to the vec, the equation becomes one linear system over the algebra, $\mathsf C\zeta=\mathrm{vec}(E)$. The sibling article *Least Squares and Total Least Squares over the Reduced Biquaternions* solves every such system: by the idempotent decomposition it is a pair of complex systems with independent complex unknowns, the norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is half the sum of the two squared complex Frobenius norms, and the least-norm least squares solution is the pair of the two complex Moore–Penrose solutions. This article takes that solution as the answer to the structured problem; its own content is the structure, what an L-structure is, how it is encoded, and which structures the four classical patterns produce, together with the two inverse problems the structure serves.
+The algebra is commutative, and this is what makes the constrained problem linear. The classical vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holds over $\mathbb{B}_{\mathrm{red}}$ unchanged, because the coefficients of the algebra commute, so a linear condition on the entries of an unknown is carried into the coefficient matrix by the Kronecker product: writing the structure as the linear map $\mathrm{vec}(X_l)=\mathsf E_{L_l}\zeta_l$ from the list of independent entries to the vec, the equation becomes one linear system over the algebra, $\mathsf C\zeta=\mathrm{vec}(E)$. The sibling article *Least Squares and Total Least Squares over the Reduced Biquaternions* solves every such system: by the idempotent decomposition it is a pair of complex systems with independent complex unknowns, the norm $\langle\cdot\rangle_{\mathrm{ts}*}$ is half the sum of the two squared complex Frobenius norms, and the least-norm least squares solution is the pair of the two complex Moore–Penrose solutions. This article takes that solution as the answer to the structured problem; its own content is the structure, what an L-structure is, how it is encoded, and which structures the four classical patterns produce, together with the two inverse problems the structure serves.
 
-**The results.** An **L-structure** is the set of matrices whose coefficient stack lies in a prescribed real subspace, and a **basis matrix** $M_L$ of the subspace reads the structure as one linear map on the real reading. The four classical L-structures are **of entry type**: each is the $\mathbb{B}^{\mathrm{red}}$-span of a finite family of real zero-one matrices with pairwise disjoint supports, so the structure condition is $\mathrm{vec}(X)=\mathsf E_L\zeta_L$ with $\mathsf E_L$ the real matrix whose columns are the vecs of the family, of full column rank. The structured equation becomes the single algebra-valued system $\mathsf C\zeta=\mathrm{vec}(E)$, and by the sibling article's reduction the least-norm structured least squares solution is the pair of the two complex Moore–Penrose solutions. The applications are the structured matrix equation $AXB+CYD=E$ with both unknowns structured, and the two inverse problems, the **partial inverse eigenvalue problem** $M\Phi=\Phi\Lambda$, a structured matrix carrying a prescribed part of its spectrum, and its generalized companion $M\Phi=N\Phi\Lambda$, in which both factors are structured and the spectrum is that of the matrix pencil.
+**The results.** An **L-structure** is the set of matrices whose coefficient stack lies in a prescribed real subspace, and a **basis matrix** $M_L$ of the subspace reads the structure as one linear map on the real reading. The four classical L-structures are **of entry type**: each is the $\mathbb{B}_{\mathrm{red}}$-span of a finite family of real zero-one matrices with pairwise disjoint supports, so the structure condition is $\mathrm{vec}(X)=\mathsf E_L\zeta_L$ with $\mathsf E_L$ the real matrix whose columns are the vecs of the family, of full column rank. The structured equation becomes the single algebra-valued system $\mathsf C\zeta=\mathrm{vec}(E)$, and by the sibling article's reduction the least-norm structured least squares solution is the pair of the two complex Moore–Penrose solutions. The applications are the structured matrix equation $AXB+CYD=E$ with both unknowns structured, and the two inverse problems, the **partial inverse eigenvalue problem** $M\Phi=\Phi\Lambda$, a structured matrix carrying a prescribed part of its spectrum, and its generalized companion $M\Phi=N\Phi\Lambda$, in which both factors are structured and the spectrum is that of the matrix pencil.
 
 ## The L-Structure
 
@@ -23,7 +23,7 @@ The algebra is commutative, and this is what makes the constrained problem linea
 **Definition (the reduced biquaternion L-structure).** Let $\Omega$ be a real subspace of $\mathbb{R}^{4ns}$. The **L-structure** cut by $\Omega$ is
 
 $$
-L(n,s)=\bigl\{X\in{\mathbb{B}^{\mathrm{red}}}^{n\times s}:\ \mathrm{vec}(C_X)\in\Omega\bigr\},
+L(n,s)=\bigl\{X\in{\mathbb{B}_{\mathrm{red}}}^{n\times s}:\ \mathrm{vec}(C_X)\in\Omega\bigr\},
 $$
 
 where $C_X$ is the coefficient stack of $X$. A **basis matrix** of the L-structure is a real matrix $M_L$ whose columns are a basis of $\Omega$, so that the structure condition reads
@@ -34,9 +34,9 @@ $$
 
 The number $D$ is the **real dimension** of the structure and $u_L$ its real coordinate vector.
 
-**Proposition (the structure is a real subspace).** $L(n,s)$ is a real subspace of ${\mathbb{B}^{\mathrm{red}}}^{n\times s}$ of real dimension $D$.
+**Proposition (the structure is a real subspace).** $L(n,s)$ is a real subspace of ${\mathbb{B}_{\mathrm{red}}}^{n\times s}$ of real dimension $D$.
 
-*Proof.* The map $X\mapsto\mathrm{vec}(C_X)$ is a real isomorphism from ${\mathbb{B}^{\mathrm{red}}}^{n\times s}$ onto $\mathbb{R}^{4ns}$, and the preimage of a subspace is a subspace of the same dimension.
+*Proof.* The map $X\mapsto\mathrm{vec}(C_X)$ is a real isomorphism from ${\mathbb{B}_{\mathrm{red}}}^{n\times s}$ onto $\mathbb{R}^{4ns}$, and the preimage of a subspace is a subspace of the same dimension.
 
 The definition is the source's, with the vec of the matrix read as the vec of its coefficient stack; the two readings differ by a fixed real permutation of the coordinates.
 
@@ -59,10 +59,10 @@ The diagonal structure, with the family of matrix units $E_{pp}$, the triangular
 
 **A structure is of entry type when it is spanned by real zero-one matrices, and then it is a module over the algebra and its condition commutes with the idempotent decomposition.**
 
-**Definition.** An L-structure $L(n,s)$ is **of entry type** when it is the $\mathbb{B}^{\mathrm{red}}$-span of a finite family $S_1,\dots,S_d$ of real zero-one matrices of shape $n\times s$,
+**Definition.** An L-structure $L(n,s)$ is **of entry type** when it is the $\mathbb{B}_{\mathrm{red}}$-span of a finite family $S_1,\dots,S_d$ of real zero-one matrices of shape $n\times s$,
 
 $$
-X=\sum_{\lambda=1}^{d}\breve Q_{\lambda} S_\lambda,\qquad \breve Q_{\lambda}\in\mathbb{B}^{\mathrm{red}} .
+X=\sum_{\lambda=1}^{d}\breve Q_{\lambda} S_\lambda,\qquad \breve Q_{\lambda}\in\mathbb{B}_{\mathrm{red}} .
 $$
 
 The number $d$ is the **width** of the structure, so that the real dimension is $D=4d$.
@@ -70,7 +70,7 @@ The number $d$ is the **width** of the structure, so that the real dimension is 
 **Proposition (the encoding matrix).** For a structure of entry type, the structure condition is
 
 $$
-\mathrm{vec}(X)=\mathsf E_L\,\zeta_L,\qquad \mathsf E_L=\bigl[\mathrm{vec}(S_1),\dots,\mathrm{vec}(S_d)\bigr]\in\mathbb{R}^{ns\times d},\qquad \zeta_L=\bigl(\breve Q_{1},\dots,\breve Q_{d}\bigr)^{\mathsf T}\in{\mathbb{B}^{\mathrm{red}}}^{d},
+\mathrm{vec}(X)=\mathsf E_L\,\zeta_L,\qquad \mathsf E_L=\bigl[\mathrm{vec}(S_1),\dots,\mathrm{vec}(S_d)\bigr]\in\mathbb{R}^{ns\times d},\qquad \zeta_L=\bigl(\breve Q_{1},\dots,\breve Q_{d}\bigr)^{\mathsf T}\in{\mathbb{B}_{\mathrm{red}}}^{d},
 $$
 
 and on the coefficient stack it is $\mathrm{vec}(C_X)=(I_4\otimes\mathsf E_L)\zeta_L^{\mathbb{R}}$, where $\zeta_L^{\mathbb{R}}$ is the stack of the four real readings of the $\breve Q_{\lambda}$, so that the basis matrix is $M_L=I_4\otimes\mathsf E_L$ and the real coordinate vector is $u_L=\zeta_L^{\mathbb{R}}$; the matrix $\mathsf E_L$ has full column rank when the supports of the $S_\lambda$ are distinct, in particular for the four families of the table.
@@ -81,7 +81,7 @@ and on the coefficient stack it is $\mathrm{vec}(C_X)=(I_4\otimes\mathsf E_L)\ze
 
 *Proof.* The width is the number of matrices in the generating family, and the real dimension is four times the width by the definition; the ranks are the proposition above.
 
-**Remark (the general L-structure mixes the coefficients).** A general real subspace $\Omega$ need not be spanned by the vecs of real matrices, and the corresponding L-structure then need not be a module over the algebra: the condition may couple the four coefficient matrices of $X$ to one another, and through them the two idempotent components. For a structure of entry type the four coefficient matrices are constrained to the same real pattern, each with its own independent coefficients, so the condition is $\mathbb{B}^{\mathrm{red}}$-linear and commutes with the idempotent decomposition. The four classical structures and the structures of the applications are of entry type, and the source states its results for the general L-structure, its reduction reaching the real system in either case.
+**Remark (the general L-structure mixes the coefficients).** A general real subspace $\Omega$ need not be spanned by the vecs of real matrices, and the corresponding L-structure then need not be a module over the algebra: the condition may couple the four coefficient matrices of $X$ to one another, and through them the two idempotent components. For a structure of entry type the four coefficient matrices are constrained to the same real pattern, each with its own independent coefficients, so the condition is $\mathbb{B}_{\mathrm{red}}$-linear and commutes with the idempotent decomposition. The four classical structures and the structures of the applications are of entry type, and the source states its results for the general L-structure, its reduction reaching the real system in either case.
 
 ## The Structured Equation
 
@@ -89,7 +89,7 @@ and on the coefficient stack it is $\mathrm{vec}(C_X)=(I_4\otimes\mathsf E_L)\ze
 
 **The structure enters the vec identity through the encoding matrix, and the equation in several structured unknowns becomes one linear system over the algebra.**
 
-**Theorem (the structured system).** Let $A_l\in{\mathbb{B}^{\mathrm{red}}}^{m\times n_l}$ and $B_l\in{\mathbb{B}^{\mathrm{red}}}^{s_l\times t}$ for $l=1,\dots,r$, let $E\in{\mathbb{B}^{\mathrm{red}}}^{m\times t}$, and let each unknown lie in a structure $L_l(n_l,s_l)$ of entry type with encoding matrix $\mathsf E_{L_l}$ and coordinates $\zeta_{L_l}$. Then the equation $\sum_lA_lX_lB_l=E$ is equivalent to the algebra-valued linear system
+**Theorem (the structured system).** Let $A_l\in{\mathbb{B}_{\mathrm{red}}}^{m\times n_l}$ and $B_l\in{\mathbb{B}_{\mathrm{red}}}^{s_l\times t}$ for $l=1,\dots,r$, let $E\in{\mathbb{B}_{\mathrm{red}}}^{m\times t}$, and let each unknown lie in a structure $L_l(n_l,s_l)$ of entry type with encoding matrix $\mathsf E_{L_l}$ and coordinates $\zeta_{L_l}$. Then the equation $\sum_lA_lX_lB_l=E$ is equivalent to the algebra-valued linear system
 
 $$
 \boxed{\;
@@ -97,7 +97,7 @@ $$
 \;},
 $$
 
-of size $mt\times\sum_ld_l$ over $\mathbb{B}^{\mathrm{red}}$, and the coefficient matrix $\mathsf C$ does not depend on the unknown.
+of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{red}}$, and the coefficient matrix $\mathsf C$ does not depend on the unknown.
 
 *Proof.* The vec identity applied to each term gives $\mathrm{vec}(A_lX_lB_l)=(B_l^{\mathsf T}\otimes A_l)\mathrm{vec}(X_l)=(B_l^{\mathsf T}\otimes A_l)\mathsf E_{L_l}\zeta_{L_l}$, and the sum of the vecs is the vec of the sum.
 
@@ -125,7 +125,7 @@ $$
 
 the Moore–Penrose inverses being taken in the complex field; the minimum is half the sum of the two independent complex minima, attained separately.
 
-*Proof.* The structured system is a linear system $\mathsf C\zeta=\mathrm{vec}(E)$ over $\mathbb{B}^{\mathrm{red}}$ with the unknown $\zeta$ ranging over the algebra, and the objective is the entrywise norm $K_{\mathrm F}$; the sibling article's least squares theorem applies to it verbatim, its hypotheses being only the algebra and the norm. The two components of $\zeta$ are independent because $\zeta$ ranges over the whole algebra, and the encoding matrices have real entries, so the structure is invisible to the idempotent decomposition and the two complex problems are the reductions of the same structured system.
+*Proof.* The structured system is a linear system $\mathsf C\zeta=\mathrm{vec}(E)$ over $\mathbb{B}_{\mathrm{red}}$ with the unknown $\zeta$ ranging over the algebra, and the objective is the entrywise norm $K_{\mathrm F}$; the sibling article's least squares theorem applies to it verbatim, its hypotheses being only the algebra and the norm. The two components of $\zeta$ are independent because $\zeta$ ranges over the whole algebra, and the encoding matrices have real entries, so the structure is invisible to the idempotent decomposition and the two complex problems are the reductions of the same structured system.
 
 **Corollary (consistency and uniqueness).** The structured equation has an exact solution if and only if $\mathsf C^{\pm}_{\mathrm{MP}}\mathrm{vec}(E)^{\pm}=\mathrm{vec}(E)^{\pm}$ for both signs, and the least squares residual is zero exactly then; the structured solution is unique if and only if both complex matrices $\mathsf C^{+}$ and $\mathsf C^{-}$ have full column rank, equivalently if and only if the coefficient stack of $\mathsf C$ has full real column rank.
 
@@ -141,7 +141,7 @@ the Moore–Penrose inverses being taken in the complex field; the minimum is ha
 
 **The equation $AXB+CYD=E$ with two structured unknowns is the case $r=2$ of the system, and the source works it for the Hankel and the symmetric Toeplitz structures.**
 
-The unknowns $X\in L_1(n,s)$ and $Y\in L_2(n,s)$ obey the equation with the four coefficients $A,C\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$ and $B,D\in{\mathbb{B}^{\mathrm{red}}}^{s\times t}$, and the system is that of the theorem with $r=2$, $\mathsf C=[(B^{\mathsf T}\otimes A)\mathsf E_{L_1},(D^{\mathsf T}\otimes C)\mathsf E_{L_2}]$. The source's two instances take the unknowns **complex** Hankel and **real** symmetric Toeplitz; a complex or a real unknown is the sibling article's nested unknown, and its constraint, that the two idempotent components coincide, and in the real case are real, is imposed in addition to the structure. The two reductions compose, the structure being invisible to the idempotent decomposition and the nesting being invisible to the structure.
+The unknowns $X\in L_1(n,s)$ and $Y\in L_2(n,s)$ obey the equation with the four coefficients $A,C\in{\mathbb{B}_{\mathrm{red}}}^{m\times n}$ and $B,D\in{\mathbb{B}_{\mathrm{red}}}^{s\times t}$, and the system is that of the theorem with $r=2$, $\mathsf C=[(B^{\mathsf T}\otimes A)\mathsf E_{L_1},(D^{\mathsf T}\otimes C)\mathsf E_{L_2}]$. The source's two instances take the unknowns **complex** Hankel and **real** symmetric Toeplitz; a complex or a real unknown is the sibling article's nested unknown, and its constraint, that the two idempotent components coincide, and in the real case are real, is imposed in addition to the structure. The two reductions compose, the structure being invisible to the idempotent decomposition and the nesting being invisible to the structure.
 
 ### The Partial Inverse Eigenvalue Problem
 
@@ -163,7 +163,7 @@ The unknowns $X\in L_1(n,s)$ and $Y\in L_2(n,s)$ obey the equation with the four
 
 The following identities were checked by recomputation on random matrices of at most a few dozen entries, the deviations found at the level of the floating-point noise.
 
-- The vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ over $\mathbb{B}^{\mathrm{red}}$, and the multiplicativity $h(MN)=h(M)h(N)$ of the block form.
+- The vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ over $\mathbb{B}_{\mathrm{red}}$, and the multiplicativity $h(MN)=h(M)h(N)$ of the block form.
 - The four encodings $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ reproduce their structures, the condition $\mathrm{vec}(X)=\mathsf E_L\zeta_L$ holds, and each has full column rank, in each case for $n=3,4,5$.
 - The constrained least squares equivalence: for the four classical structures the stacked real system $\begin{pmatrix}Q_1\\ Q_2\end{pmatrix}x=e$ and the direct constrained problem have the same minimiser.
 - The structured solution: the solution of the theorem is minimal among random structured perturbations, and the normal equations $\mathsf C^{\dagger}(\mathsf C\zeta-\mathrm{vec}(E))=0$ hold elementwise.

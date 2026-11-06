@@ -130,10 +130,10 @@ The index $i$ records the norm: $i=1$ on the complement of $\mathcal Z$, $i=0$ o
 |---|---|---|---|---|
 | $\Sigma_{11}$ | $t^2\neq S,\ S\neq0$ | $(\lambda-t)^2-S$, squarefree | $\big((\lambda-t)^2-S\big)^2$ | $(1,1,1,1)$ |
 | $\Sigma_{10}^{\mathrm s}$ | $t\neq0,\ S=0,\ \vec v=0$ | $\lambda-t$ | $(\lambda-t)^4$ | $(1,1,1,1)$ |
-| $\Sigma_{10}^{\mathrm{dfc}}$ | $t\neq0,\ S=0,\ \vec v\neq0$ | $(\lambda-t)^2$ | $(\lambda-t)^4$ | $(2,2)$ |
+| $\Sigma_{\mathrm{dfc},10}$ | $t\neq0,\ S=0,\ \vec v\neq0$ | $(\lambda-t)^2$ | $(\lambda-t)^4$ | $(2,2)$ |
 | $\Sigma_{01}$ | $t^2=S\neq0$ | $\lambda(\lambda-2t)$ | $\lambda^2(\lambda-2t)^2$ | $(1,1,1,1)$ |
 | $\Sigma_{00}^{0}$ | $t=0,\ S=0,\ \vec v=0$ | $\lambda$ | $\lambda^4$ | $(1,1,1,1)$ |
-| $\Sigma_{00}^{\mathrm{nil}}$ | $t=0,\ S=0,\ \vec v\neq0$ | $\lambda^2$ | $\lambda^4$ | $(2,2)$ |
+| $\Sigma_{\mathrm{nil},00}$ | $t=0,\ S=0,\ \vec v\neq0$ | $\lambda^2$ | $\lambda^4$ | $(2,2)$ |
 
 The rows are distinct, so the minimal polynomial separates six strata. The count is of types. The chain is strict: $2<4<6$.
 
@@ -153,7 +153,7 @@ The norm, the characteristic polynomial and the minimal polynomial form a strict
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra |
 | $q=t+\vec v$ | a general element |
 | $S=\vec v^2=-q_x^2+q_y^2+q_z^2$ | the square of the vector part |
 | $q\bar q=t^2-S$ | the split-quaternion norm |
@@ -164,7 +164,7 @@ The norm, the characteristic polynomial and the minimal polynomial form a strict
 | $m_q$ | the minimal polynomial of $L_q$ |
 | $\Sigma_{ij}$ | the sector with norm index $i$ and spectral index $j$ |
 | $\Sigma_{10}^{\mathrm s}$ | the scalar part of $\Sigma_{10}$ |
-| $\Sigma_{10}^{\mathrm{dfc}}$ | the defective part of $\Sigma_{10}$ |
+| $\Sigma_{\mathrm{dfc},10}$ | the defective part of $\Sigma_{10}$ |
 
 ## Further Reading
 

@@ -33,7 +33,7 @@ $$
 \Sigma^\alpha_{a,b} : R \longrightarrow R, \qquad \Sigma^\alpha_{a,b}(x) = a\,\alpha(x)\,b .
 $$
 
-The **unsigned sandwich** is $\Sigma_{a,b} = \Sigma^{\mathrm{id}}_{a,b}$. The operator is also written $\Sigma_{a,b}\alpha$ because it is the composite of the grade involution followed by the unsigned sandwich.
+The **unsigned sandwich** is $\Sigma_{a,b} = \Sigma_{\mathrm{id},a,b}$. The operator is also written $\Sigma_{a,b}\alpha$ because it is the composite of the grade involution followed by the unsigned sandwich.
 
 **Proposition (decomposition and additivity).** The signed sandwich is the composite
 

@@ -15,7 +15,7 @@ Throughout $L/k$ is a finite separable field extension, taken Galois with group 
 
 **Definition.** Let $X$ be a variety over $L$. The **Weil restriction of scalars** of $X$ is the functor
 $$
-R_{L/k}X\ :\ \{\text{$k$-schemes}\}^{\mathrm{opp}}\longrightarrow\{\text{sets}\}, \qquad
+R_{L/k}X\ :\ \{\text{$k$-schemes}\}_{\mathrm{opp}}\longrightarrow\{\text{sets}\}, \qquad
 T\longmapsto X(T\times_kL),
 $$
 on the $k$-schemes, evaluated on the base change of the test object to $L$. The functor $R_{L/k}X$ is **representable** when it is isomorphic to the functor of points of a $k$-variety; the representing object, unique up to unique isomorphism, is also written $R_{L/k}X$.

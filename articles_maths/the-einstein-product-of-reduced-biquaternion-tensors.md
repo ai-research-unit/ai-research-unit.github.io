@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A tensor over the reduced biquaternion algebra is an array $A$ of elements of $\mathbb{B}^{\mathrm{red}}$ indexed by several modes, and a product of two tensors is a rule that sums one set of indices of the first against one set of the second. The **Einstein product** sums the trailing indices of the first tensor against the leading indices of the second, pair by pair, each pair over the same range. It is the Einstein summation convention read as an operation on arrays.
+A tensor over the reduced biquaternion algebra is an array $A$ of elements of $\mathbb{B}_{\mathrm{red}}$ indexed by several modes, and a product of two tensors is a rule that sums one set of indices of the first against one set of the second. The **Einstein product** sums the trailing indices of the first tensor against the leading indices of the second, pair by pair, each pair over the same range. It is the Einstein summation convention read as an operation on arrays.
 
 The article defines the product, proves that it is associative and unital, and proves that the **matricisation** carries it to the matrix product. It then reads the units and the zero divisors through that matricisation and proves the one-sided inverse theorem: a square tensor with a right inverse has a left inverse, and the two coincide. The theorem does not rest on a commutative product, which the Einstein product is not; after the reduction to the two complex coordinates it is the statement for matrices over a field, where a right inverse is an inverse.
 
-**The results.** The product of a tensor of order $m+n$ and a tensor of order $n+s$ has order $m+s$; it is bilinear over the algebra, associative, and unital in the square case. The matricisation is a bijection onto the matrices and satisfies $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$, so the square tensors of order $2m$ form an associative algebra isomorphic to $M_{N}(\mathbb{B}^{\mathrm{red}})$, $N=n_{1}\cdots n_{m}$, which is unital and, for $N\ge2$, not commutative. A square tensor is a unit exactly when its two complex coordinate matrices are nonsingular, and then its inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular, and a tensor whose entries are all units may still be a zero divisor.
+**The results.** The product of a tensor of order $m+n$ and a tensor of order $n+s$ has order $m+s$; it is bilinear over the algebra, associative, and unital in the square case. The matricisation is a bijection onto the matrices and satisfies $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$, so the square tensors of order $2m$ form an associative algebra isomorphic to $M_{N}(\mathbb{B}_{\mathrm{red}})$, $N=n_{1}\cdots n_{m}$, which is unital and, for $N\ge2$, not commutative. A square tensor is a unit exactly when its two complex coordinate matrices are nonsingular, and then its inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular, and a tensor whose entries are all units may still be a zero divisor.
 
 ## The Product
 
@@ -16,13 +16,13 @@ $$
 $$
 or, in the multi-index notation, $(AB)_{PQ}=\sum_{L}a_{PL}b_{LQ}$, where $P$ runs over the free modes of $A$ and $Q$ over the free modes of $B$.
 
-**The order-three case.** For $A\in{\mathbb{B}^{\mathrm{red}}}^{n_{1}\times n_{2}\times n_{3}}$ and $B\in{\mathbb{B}^{\mathrm{red}}}^{n_{3}\times n_{4}\times n_{5}}$, the contracted mode having size $n_{3}$ in both, one has $m=s=2$ and $n=1$,
+**The order-three case.** For $A\in{\mathbb{B}_{\mathrm{red}}}^{n_{1}\times n_{2}\times n_{3}}$ and $B\in{\mathbb{B}_{\mathrm{red}}}^{n_{3}\times n_{4}\times n_{5}}$, the contracted mode having size $n_{3}$ in both, one has $m=s=2$ and $n=1$,
 $$
 (AB)_{pqrs}=\sum_{l}a_{pql}b_{lrs},
 $$
 and the product is of order four. The Einstein product consumes the contracted mode and appends the free modes of the second factor, so the product of two third-order tensors is not a third-order tensor.
 
-**Proposition (bilinearity).** For tensors of the shapes of the definition, $(\alpha A)B=\alpha(AB)=A(\alpha B)$ for $\alpha\in\mathbb{B}^{\mathrm{red}}$, and the product is additive in each argument.
+**Proposition (bilinearity).** For tensors of the shapes of the definition, $(\alpha A)B=\alpha(AB)=A(\alpha B)$ for $\alpha\in\mathbb{B}_{\mathrm{red}}$, and the product is additive in each argument.
 
 *Proof.* Every entry of the product is a finite sum of products of entries, and the scalar multiplies each product; the algebra is commutative and associative, so the three displays coincide entry by entry.
 
@@ -44,7 +44,7 @@ $$
 $$
 the two index sets being read in row-major order when the matrix is written as a rectangular array.
 
-**Lemma (bijection).** The matricisation is a bijection from ${\mathbb{B}^{\mathrm{red}}}^{n_{1}\times\cdots\times n_{m}\times c_{1}\times\cdots\times c_{n}}$ onto $M_{(n_{1}\cdots n_{m})\times(c_{1}\cdots c_{n})}(\mathbb{B}^{\mathrm{red}})$, and the inverse reads the entries back in the same order.
+**Lemma (bijection).** The matricisation is a bijection from ${\mathbb{B}_{\mathrm{red}}}^{n_{1}\times\cdots\times n_{m}\times c_{1}\times\cdots\times c_{n}}$ onto $M_{(n_{1}\cdots n_{m})\times(c_{1}\cdots c_{n})}(\mathbb{B}_{\mathrm{red}})$, and the inverse reads the entries back in the same order.
 
 *Proof.* The row-major reading identifies the row multi-indices with $\{1,\dots,n_{1}\cdots n_{m}\}$ and the column multi-indices with $\{1,\dots,c_{1}\cdots c_{n}\}$, and the entries are unchanged.
 
@@ -57,9 +57,9 @@ $$
 
 *Proof.* The entry of the right-hand side at $(P,Q)$ is $\sum_{L}\mathrm{mat}(A)_{PL}\mathrm{mat}(B)_{LQ}=\sum_{L}a_{PL}b_{LQ}$, which is the entry of $\mathrm{mat}(AB)$ at the same place by the definition of the product.
 
-**Corollary (the algebra of square tensors).** The square tensors of order $2m$, with the same modes on both sides, form a unital associative algebra over $\mathbb{B}^{\mathrm{red}}$, free of rank $N^{2}$ with $N=n_{1}\cdots n_{m}$, and the matricisation is an isomorphism onto $M_{N}(\mathbb{B}^{\mathrm{red}})$. The algebra is not commutative for $N\ge2$, and it is not a division algebra for any $N$, the algebra $\mathbb{B}^{\mathrm{red}}$ itself having zero divisors.
+**Corollary (the algebra of square tensors).** The square tensors of order $2m$, with the same modes on both sides, form a unital associative algebra over $\mathbb{B}_{\mathrm{red}}$, free of rank $N^{2}$ with $N=n_{1}\cdots n_{m}$, and the matricisation is an isomorphism onto $M_{N}(\mathbb{B}_{\mathrm{red}})$. The algebra is not commutative for $N\ge2$, and it is not a division algebra for any $N$, the algebra $\mathbb{B}_{\mathrm{red}}$ itself having zero divisors.
 
-*Proof.* The bijection carries the product to the matrix product and the unit tensor to the identity matrix, so it is an isomorphism; the rank is that of the matrix algebra. The matrix units $E_{12}$ and $E_{21}$ do not commute, and $E_{11}E_{22}=0$, so the algebra is not commutative for $N\ge2$ and not a division algebra for $N\ge2$; for $N=1$ it is $\mathbb{B}^{\mathrm{red}}$, which has the zero divisors $\Pi_+$ and $\Pi_-$.
+*Proof.* The bijection carries the product to the matrix product and the unit tensor to the identity matrix, so it is an isomorphism; the rank is that of the matrix algebra. The matrix units $E_{12}$ and $E_{21}$ do not commute, and $E_{11}E_{22}=0$, so the algebra is not commutative for $N\ge2$ and not a division algebra for $N\ge2$; for $N=1$ it is $\mathbb{B}_{\mathrm{red}}$, which has the zero divisors $\Pi_+$ and $\Pi_-$.
 
 ## Units and Zero Divisors
 
@@ -70,13 +70,13 @@ $$
 \;}.
 $$
 
-*Proof.* A matrix over $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ is invertible exactly when both its components are nonsingular complex matrices, by *Least Squares and Total Least Squares over the Reduced Biquaternions*, §*The Solution as a Zero Divisor*, and the components of the product are the products of the components; the matricisation carries the product to the matrix product.
+*Proof.* A matrix over $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ is invertible exactly when both its components are nonsingular complex matrices, by *Least Squares and Total Least Squares over the Reduced Biquaternions*, §*The Solution as a Zero Divisor*, and the components of the product are the products of the components; the matricisation carries the product to the matrix product.
 
 **Theorem (the one-sided inverse).** If $AB=\mathrm I$ for square tensors of the same order, then $BA=\mathrm I$.
 
 *Proof.* By the multiplicativity of the matricisation, the identity $AB=\mathrm I$ gives $\mathrm{mat}(A_{(i)})\mathrm{mat}(B_{(i)})=\mathrm I$ for $i=1,2$. A square matrix over a field with a right inverse is invertible, and its right inverse is its inverse, so $\mathrm{mat}(B_{(i)})\mathrm{mat}(A_{(i)})=\mathrm I$; the matricisation is injective, so $BA=\mathrm I$.
 
-**Remark (the proof of the source).** The source proves this theorem by interchanging the two factors in the product of the matricised matrices, $f(A)f(B)=f(B)f(A)$, where $f$ is its matricisation. The matrix product is not commutative, so that step does not follow; the conclusion does, because a square matrix with a right inverse is invertible, which is the argument above, and the determinant of the matricised matrix gives the same conclusion over the commutative algebra $\mathbb{B}^{\mathrm{red}}$.
+**Remark (the proof of the source).** The source proves this theorem by interchanging the two factors in the product of the matricised matrices, $f(A)f(B)=f(B)f(A)$, where $f$ is its matricisation. The matrix product is not commutative, so that step does not follow; the conclusion does, because a square matrix with a right inverse is invertible, which is the argument above, and the determinant of the matricised matrix gives the same conclusion over the commutative algebra $\mathbb{B}_{\mathrm{red}}$.
 
 **Proposition (the zero divisors).** A nonzero square tensor is a zero divisor if and only if one of its complex coordinate matrices is singular. In particular a tensor all of whose entries are units can be a zero divisor.
 
@@ -97,7 +97,7 @@ The identities were checked by recomputation on random tensors of order four wit
 
 ## Summary
 
-The **Einstein product** of an order-$m+n$ tensor and an order-$n+s$ tensor is the order-$m+s$ tensor of the display, the contraction of the trailing indices of the first against the leading indices of the second, written by juxtaposition and never with the mark of the t-product. It is bilinear over the algebra, associative, and unital in the square case; it is not commutative, even though the coefficient algebra is. The **matricisation** reads the two multi-indices in row-major order and is a bijection onto the matrices, and it is multiplicative, $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$; consequently the square tensors of order $2m$ form the algebra $M_{N}(\mathbb{B}^{\mathrm{red}})$, $N=n_{1}\cdots n_{m}$, free of rank $N^{2}$, unital, associative, not commutative for $N\ge2$ and not a division algebra. A square tensor is a unit exactly when both complex coordinate matrices are nonsingular, and the inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular. The one-sided inverse theorem holds, $AB=\mathrm I$ implying $BA=\mathrm I$, by the reduction to the two complex coordinates and the finite-dimensional statement over a field. The Einstein product of two third-order tensors is of order four, while the t-product of two third-order tensors is of order three; the two products agree on the matrices and differ above them.
+The **Einstein product** of an order-$m+n$ tensor and an order-$n+s$ tensor is the order-$m+s$ tensor of the display, the contraction of the trailing indices of the first against the leading indices of the second, written by juxtaposition and never with the mark of the t-product. It is bilinear over the algebra, associative, and unital in the square case; it is not commutative, even though the coefficient algebra is. The **matricisation** reads the two multi-indices in row-major order and is a bijection onto the matrices, and it is multiplicative, $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$; consequently the square tensors of order $2m$ form the algebra $M_{N}(\mathbb{B}_{\mathrm{red}})$, $N=n_{1}\cdots n_{m}$, free of rank $N^{2}$, unital, associative, not commutative for $N\ge2$ and not a division algebra. A square tensor is a unit exactly when both complex coordinate matrices are nonsingular, and the inverse is the pair of the two complex inverses; a nonzero square tensor is a zero divisor exactly when one coordinate matrix is singular. The one-sided inverse theorem holds, $AB=\mathrm I$ implying $BA=\mathrm I$, by the reduction to the two complex coordinates and the finite-dimensional statement over a field. The Einstein product of two third-order tensors is of order four, while the t-product of two third-order tensors is of order three; the two products agree on the matrices and differ above them.
 
 ## Summary of Notation
 

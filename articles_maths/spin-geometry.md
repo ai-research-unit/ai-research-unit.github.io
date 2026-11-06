@@ -37,7 +37,7 @@ such that $c(v)^2 = -g(v,v)\operatorname{id}$ in each fibre; equivalently, a bun
 $$
 \zeta : P_{\operatorname{Spin}}(M) \longrightarrow P_{SO}(M)
 $$
-that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*: the map $\zeta$ intertwines the right actions, $\zeta(n \cdot g^{\mathrm{spin}}) = \zeta(n) \cdot \rho(g^{\mathrm{spin}})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
+that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*: the map $\zeta$ intertwines the right actions, $\zeta(n \cdot g_{\mathrm{spin}}) = \zeta(n) \cdot \rho(g_{\mathrm{spin}})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
 
 **Proposition.** A spin structure exists if and only if the second Stiefel–Whitney class vanishes,
 $$

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
+Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $Ζ\in\mathbb{C}^{\mathrm{spl}}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $Ζ\in\mathbb{C}_{\mathrm{spl}}$ with
 
 $$
 Ζ^{2}=0 .
@@ -22,7 +22,7 @@ The equations name a product, so the roots and the nilpotents are relative to it
 
 **The roots of $0$ are exactly the origin; the nonzero roots are the nilpotents, and there are none.**
 
-A **root of $0$** is an element $Ζ\in\mathbb{C}^{\mathrm{spl}}$ with $Ζ^{2}=0$, the square being the one of the general plain bilinear product.
+A **root of $0$** is an element $Ζ\in\mathbb{C}_{\mathrm{spl}}$ with $Ζ^{2}=0$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
@@ -76,7 +76,7 @@ a single point, of real dimension $0$. There is no nonzero cone and no isotropic
 
 ### Statement of the Theorem
 
-**Theorem (the roots of $0$).** The equation $Ζ^{2}=0$ has exactly one solution in $\mathbb{C}^{\mathrm{spl}}$, the element $Ζ=0$.
+**Theorem (the roots of $0$).** The equation $Ζ^{2}=0$ has exactly one solution in $\mathbb{C}_{\mathrm{spl}}$, the element $Ζ=0$.
 
 **Proof.** The reduction gives $Ζ_{+}^{2}=0$ and $Ζ_{-}^{2}=0$; over $\mathbb{R}$ this gives $Ζ_{+}=Ζ_{-}=0$, hence $Ζ=0$. The element $0$ satisfies $0^{2}=0$.
 
@@ -100,7 +100,7 @@ The word **nilpotent** is defined for a nonzero element in *Definitions for the 
 
 ### The Definition
 
-An element $\Upsilon\in\mathbb{C}^{\mathrm{spl}}$ is **nilpotent** when $\Upsilon\neq0$ and there is an integer $n\ge1$ with
+An element $\Upsilon\in\mathbb{C}_{\mathrm{spl}}$ is **nilpotent** when $\Upsilon\neq0$ and there is an integer $n\ge1$ with
 
 $$
 \Upsilon^{n}=0 .
@@ -110,7 +110,7 @@ The smallest such $n$ is the **index of nilpotency** of $\Upsilon$. A **square-z
 
 ### The Criterion
 
-**Theorem (the criterion).** There is **no** nilpotent in $\mathbb{C}^{\mathrm{spl}}$, and the only square-zero element is $0$.
+**Theorem (the criterion).** There is **no** nilpotent in $\mathbb{C}_{\mathrm{spl}}$, and the only square-zero element is $0$.
 
 **Proof.** If $\Upsilon^{n}=0$ for some $n\ge1$, write $\Upsilon=\Upsilon_{+}\Pi_{+}+\Upsilon_{-}\Pi_{-}$; then $\Upsilon^{n}=\Upsilon_{+}^{n}\Pi_{+}+\Upsilon_{-}^{n}\Pi_{-}$, so $\Upsilon_{+}^{n}=0$ and $\Upsilon_{-}^{n}=0$. Over $\mathbb{R}$ this gives $\Upsilon_{+}=\Upsilon_{-}=0$, hence $\Upsilon=0$, contrary to the definition of a nilpotent. So there is no nilpotent. If $\Upsilon^{2}=0$ the same computation with $n=2$ gives $\Upsilon=0$.
 
@@ -146,7 +146,7 @@ The zero divisors are the nonzero elements of the null cone, $\mathcal{Z}=\mathc
 
 **No nilpotent is an idempotent, vacuously; the nilpotent set is empty, and the only square-zero idempotent is the origin, which is not a nilpotent.**
 
-If $\Upsilon$ were both nilpotent and idempotent, then $\Upsilon^{2}=\Upsilon$ and $\Upsilon^{n}=0$ would give $\Upsilon=\Upsilon^{2}=\cdots=\Upsilon^{n}=0$, contradicting $\Upsilon\neq0$. In $\mathbb{C}^{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{+},\Pi_{-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.
+If $\Upsilon$ were both nilpotent and idempotent, then $\Upsilon^{2}=\Upsilon$ and $\Upsilon^{n}=0$ would give $\Upsilon=\Upsilon^{2}=\cdots=\Upsilon^{n}=0$, contradicting $\Upsilon\neq0$. In $\mathbb{C}_{\mathrm{spl}}$ the idempotents are $0,1,\Pi_{+},\Pi_{-}$, and the nilpotent set is empty, so the intersection is empty; the origin is the only element that is a square-zero element and an idempotent, and it is not a nilpotent.
 
 ### The Conjugation
 
@@ -166,13 +166,13 @@ the square-zero elements are the matrices with $\mathsf{M}(Q)^{2}=0$. The matrix
 
 **There is no nonzero nilpotent ideal, and the radical of the algebra is zero.**
 
-A nilpotent ideal is an ideal $I$ with $I^{n}=0$ for some $n$; since every nonzero element of $I$ would then be nilpotent, and there are no nonzero nilpotents, the only nilpotent ideal is $0$. The Jacobson radical of the artinian algebra $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is the intersection of its maximal ideals, which is $0$; the algebra is semisimple and reduced. The ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*.
+A nilpotent ideal is an ideal $I$ with $I^{n}=0$ for some $n$; since every nonzero element of $I$ would then be nilpotent, and there are no nonzero nilpotents, the only nilpotent ideal is $0$. The Jacobson radical of the artinian algebra $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is the intersection of its maximal ideals, which is $0$; the algebra is semisimple and reduced. The ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*.
 
 ### The Nilpotents and the Distinguished Subspaces
 
 **Every distinguished subspace contains $0$ and no nonzero nilpotent.**
 
-The real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\pm})^{2}=\lambda^{2}\Pi_{\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
+The real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, the two idempotent lines $\mathbb{R}\Pi_{\pm}$, and the whole algebra all have the same square-zero set, $\{0\}$. On the real line, $q^{2}=0$ forces $q=0$; on the imaginary line, $-q'^{2}=0$ forces $q'=0$; on an idempotent line, $(\lambda\Pi_{\pm})^{2}=\lambda^{2}\Pi_{\pm}$, which is zero only at $\lambda=0$. The distribution is the simplest possible: the origin in every subspace and nothing else.
 
 ## Summary
 
@@ -184,7 +184,7 @@ The result is the sharp contrast with the dual numbers, where $\varepsilon^{2}=0
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Ζ$ | A root of $0$, or a square-zero element |
 | $\Upsilon$ | A nilpotent |
 | $\mathcal{N}_{0}=\{Ζ:Ζ^{2}=0\}=\{0\}$ | The nilpotent cone |

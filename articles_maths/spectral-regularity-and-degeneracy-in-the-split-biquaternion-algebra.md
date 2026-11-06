@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of two copies of the quaternion division algebra. Its spectrum is therefore not a single quaternionic spectrum but the union of two of them: the spectrum of $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ is the union of the spectra of the halves $Q_+$ and $Q_-$. This article proves the formula and separates the two spectral cases: **regular**, with simple roots, and **degenerate**, with a repeated root.
+The split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of two copies of the quaternion division algebra. Its spectrum is therefore not a single quaternionic spectrum but the union of two of them: the spectrum of $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ is the union of the spectra of the halves $Q_+$ and $Q_-$. This article proves the formula and separates the two spectral cases: **regular**, with simple roots, and **degenerate**, with a repeated root.
 
 The main results are these. The reduced characteristic polynomial is $p_{\tilde Q}=p_+p_-$, with $p_\pm(\lambda)=(\lambda-t_\pm)^2+|\vec q_\pm|^2$. A repeated root occurs exactly when one half is scalar or the half-spectra meet. Every element is semisimple, because each half lies in the division algebra $\mathbb{H}$; there is no defect. The contrast with the biquaternion algebra is sharp: there a complex isotropic vector exists and the spectral cone is defective off the scalar line; here the vector parts are real, their squared norms are sums of squares, and the product of two division algebras removes the defect.
 
@@ -47,7 +47,7 @@ each value occurring with multiplicity two. If $\vec q=0$, then $\sigma(Q)=\{t\}
 
 ### The Spectrum of the Element
 
-**Definition (the spectrum).** The **spectrum** of $\tilde Q$ is the spectrum of the real operator $L_{\tilde Q}$ on $\mathbb{B}^{\mathrm{spl}}$, complexified.
+**Definition (the spectrum).** The **spectrum** of $\tilde Q$ is the spectrum of the real operator $L_{\tilde Q}$ on $\mathbb{B}_{\mathrm{spl}}$, complexified.
 
 **Theorem (the union formula).** For $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$,
 
@@ -130,7 +130,7 @@ The cases overlap at the origin and in the both-scalar part of case 3.
 
 *Proof.* Let $a$ be an element of a division algebra $D$ with minimal polynomial $m$. If $m=g^2h$ with $g$ non-constant, minimality gives $g(a)\neq0$ and $h(a)\neq0$, while $g(a)^2h(a)=0$; hence $g(a)$ is a zero divisor, impossible. Hence $m$ is squarefree.
 
-**Theorem (every split biquaternion is semisimple).** Every element of $\mathbb{B}^{\mathrm{spl}}$ is semisimple. Consequently there is no defective element and no defective stratum.
+**Theorem (every split biquaternion is semisimple).** Every element of $\mathbb{B}_{\mathrm{spl}}$ is semisimple. Consequently there is no defective element and no defective stratum.
 
 *Proof.* The two halves $Q_\pm$ lie in $\mathbb{H}$, which is a division algebra, so each is semisimple by the lemma. In the direct sum $\mathbb{H}\oplus\mathbb{H}$, the minimal polynomial of $(Q_+,Q_-)$ is the least common multiple of the minimal polynomials of the two halves. A least common multiple of squarefree polynomials is squarefree, so $\tilde Q$ is semisimple.
 
@@ -152,7 +152,7 @@ $$
 |\vec q_\pm|^2=q_{\pm x}^2+q_{\pm y}^2+q_{\pm z}^2
 $$
 
-is a sum of squares, vanishing only at $\vec q_\pm=0$. There is no non-zero isotropic vector, hence no non-zero square-zero vector part, hence no defect of that kind. Structurally, $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; a nilpotent in a product would have nilpotent components, and a division algebra has none.
+is a sum of squares, vanishing only at $\vec q_\pm=0$. There is no non-zero isotropic vector, hence no non-zero square-zero vector part, hence no defect of that kind. Structurally, $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; a nilpotent in a product would have nilpotent components, and a division algebra has none.
 
 The product structure explains why a meeting is harmless: in $\mathbb{B}$ the two eigenvalues live in the same simple algebra $M_2(\mathbb{C})$, so coalescence can force a Jordan block; in $\mathbb{H}\oplus\mathbb{H}$ they live in different summands, so it is only an equality of values.
 
@@ -168,12 +168,12 @@ $$
 **Proposition (geometry and size).** Each scalar stratum is a real linear subspace of dimension five: one real parameter $t_\pm$ for the scalar half and four real parameters for the other half. Their intersection is the centre,
 
 $$
-\mathcal S_+\cap\mathcal S_-=\{(t_+,t_-):t_+,t_-\in\mathbb{R}\}=\mathbb{C}^{\mathrm{spl}},
+\mathcal S_+\cap\mathcal S_-=\{(t_+,t_-):t_+,t_-\in\mathbb{R}\}=\mathbb{C}_{\mathrm{spl}},
 $$
 
 of real dimension two.
 
-*Proof.* The condition $\vec q_+=0$ removes three real coordinates, so $\dim\mathcal S_+=5$; likewise $\dim\mathcal S_-=5$. An element in both has both vector parts zero, so it is a pair of real scalars, exactly the centre $\mathbb{C}^{\mathrm{spl}}$.
+*Proof.* The condition $\vec q_+=0$ removes three real coordinates, so $\dim\mathcal S_+=5$; likewise $\dim\mathcal S_-=5$. An element in both has both vector parts zero, so it is a pair of real scalars, exactly the centre $\mathbb{C}_{\mathrm{spl}}$.
 
 **Proposition (the spectrum on a scalar stratum).** On $\mathcal S_+$ the plus half is the real scalar $t_+$, so $p_+=(\lambda-t_+)^2$ has a repeated root; hence $\mathcal S_+\cup\mathcal S_-$ is spectrally degenerate. If $t_+\neq0$ the half is a central unit; if $t_+=0$ it is the zero scalar.
 
@@ -205,7 +205,7 @@ Every element is semisimple, because each half lies in $\mathbb{H}$ and a direct
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
+| $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
 | $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ | Central idempotents |
 | $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ | Idempotent decomposition into two quaternion halves |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half, with real scalar part and real vector part |

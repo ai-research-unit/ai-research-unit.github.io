@@ -59,11 +59,11 @@ G_{+-}-G_{--}=G^A ,
 $$
 which define the Keldysh, retarded, and advanced functions. These identities are algebraic and are the skeleton of the whole formalism; they hold for biquaternion-valued fields as they stand, because they involve only the branch index.
 
-**The two-branch action in the framework.** For the quadratic biquaternion action with central operator $K^{\mathrm{kin}}$ the two-branch action is $S[\tilde{Ξ}_+]-S[\tilde{Ξ}_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(Ξ_+,Ξ_-)$ basis is therefore
+**The two-branch action in the framework.** For the quadratic biquaternion action with central operator $K_{\mathrm{kin}}$ the two-branch action is $S[\tilde{Ξ}_+]-S[\tilde{Ξ}_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(Ξ_+,Ξ_-)$ basis is therefore
 $$
-G_0 = \begin{pmatrix} K^{\mathrm{kin}}{}^{-1} & 0 \\ 0 & -K^{\mathrm{kin}}{}^{-1}\end{pmatrix},
+G_0 = \begin{pmatrix} K_{\mathrm{kin}}{}^{-1} & 0 \\ 0 & -K_{\mathrm{kin}}{}^{-1}\end{pmatrix},
 $$
-block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation of this matrix is the equilibrium form with $G^K=0$ — the free contour's matrix has no Keldysh component in the vacuum — and a nonzero Keldysh component appears only once the state is specified. Two structural points follow and are the framework's: the free propagator is central in each block, so the branch structure and the module structure are independently diagonal; and the sector decomposition of $K^{\mathrm{kin}}{}^{-1}$ multiplies each block, so a scalar biquaternion field's free CTP propagator is the standard one taken twice in the module and twice in the branch. The interactions couple the branches and the sectors; the vertex carries the relative sign of the two branches, which is what makes the loop integrals converge with the in-in boundary conditions rather than the Feynman ones.
+block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation of this matrix is the equilibrium form with $G^K=0$ — the free contour's matrix has no Keldysh component in the vacuum — and a nonzero Keldysh component appears only once the state is specified. Two structural points follow and are the framework's: the free propagator is central in each block, so the branch structure and the module structure are independently diagonal; and the sector decomposition of $K_{\mathrm{kin}}{}^{-1}$ multiplies each block, so a scalar biquaternion field's free CTP propagator is the standard one taken twice in the module and twice in the branch. The interactions couple the branches and the sectors; the vertex carries the relative sign of the two branches, which is what makes the loop integrals converge with the in-in boundary conditions rather than the Feynman ones.
 
 ## The Branch Doubling and the Algebra's Doubling
 

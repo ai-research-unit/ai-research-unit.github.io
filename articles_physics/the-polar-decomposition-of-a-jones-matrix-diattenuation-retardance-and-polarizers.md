@@ -108,17 +108,17 @@ A pure retarder has $T_1=T_2$, hence $D=0$; an ideal polarizer has $T_2=0$, henc
 The positive Hermitian factor has a second reading in the algebra. Every positive Hermitian element is a scale times a boost,
 
 $$
-\tilde J_H=\tau\left(\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_H\right),\qquad
-\tau=\sqrt{T_1T_2},\qquad \theta^{\mathrm{rpd}}=\ln\frac{T_1}{T_2},
+\tilde J_H=\tau\left(\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_H\right),\qquad
+\tau=\sqrt{T_1T_2},\qquad \theta_{\mathrm{rpd}}=\ln\frac{T_1}{T_2},
 $$
 
-with eigenvalues $\tau e^{\pm\theta^{\mathrm{rpd}}/2}=T_1,T_2$. The diattenuation is the hyperbolic tangent of this rapidity,
+with eigenvalues $\tau e^{\pm\theta_{\mathrm{rpd}}/2}=T_1,T_2$. The diattenuation is the hyperbolic tangent of this rapidity,
 
 $$
-D=\tanh\theta^{\mathrm{rpd}} .
+D=\tanh\theta_{\mathrm{rpd}} .
 $$
 
-The half-angle is the boost-factor convention: the eigenvalues are the exponentials of $\pm\theta^{\mathrm{rpd}}/2$, while the transmission ratio is $e^{\theta^{\mathrm{rpd}}}$. The diattenuation axis $\vec u_H$ is the boost axis of the amplitude. This is a reading of the Cartan parameter, not a claim that the optical element moves at a velocity.
+The half-angle is the boost-factor convention: the eigenvalues are the exponentials of $\pm\theta_{\mathrm{rpd}}/2$, while the transmission ratio is $e^{\theta_{\mathrm{rpd}}}$. The diattenuation axis $\vec u_H$ is the boost axis of the amplitude. This is a reading of the Cartan parameter, not a claim that the optical element moves at a velocity.
 
 **The boundary.** The reading requires $\tilde J_H$ positive. A Hermitian Jones matrix with a negative eigenvalue is not a physical diattenuator, because it would multiply an intensity by a negative number; the polar decomposition never produces one, since $\tilde J_H$ is a positive square root.
 
@@ -127,22 +127,22 @@ The half-angle is the boost-factor convention: the eigenvalues are the exponenti
 The retarder is the $*$-unitary factor. Its spectral decomposition is
 
 $$
-\tilde J_0=\exp(i\theta^{\mathrm{pha}}_1)\tilde\Pi_+(\vec u_U)+\exp(i\theta^{\mathrm{pha}}_2)\tilde\Pi_-(\vec u_U),
+\tilde J_0=\exp(i\theta_{\mathrm{pha},1})\tilde\Pi_+(\vec u_U)+\exp(i\theta_{\mathrm{pha},2})\tilde\Pi_-(\vec u_U),
 $$
 
 and the **retardance** is the phase difference
 
 $$
-\boxed{\;\theta=\theta^{\mathrm{pha}}_1-\theta^{\mathrm{pha}}_2 \pmod{2\pi}\;}.
+\boxed{\;\theta=\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2} \pmod{2\pi}\;}.
 $$
 
-The eigenpolarizations $\vec u_U$ and $-\vec u_U$ are the **retarder axes**; one is fast and one is slow, and the sign convention for $\theta$ fixes which is which. The global phase $\tfrac12(\theta^{\mathrm{pha}}_1+\theta^{\mathrm{pha}}_2)$ is not a retardance. It is the central phase of the element and has no optical consequence.
+The eigenpolarizations $\vec u_U$ and $-\vec u_U$ are the **retarder axes**; one is fast and one is slow, and the sign convention for $\theta$ fixes which is which. The global phase $\tfrac12(\theta_{\mathrm{pha},1}+\theta_{\mathrm{pha},2})$ is not a retardance. It is the central phase of the element and has no optical consequence.
 
 The $*$-unitary factor splits into that phase and a real rotor,
 
 $$
 \tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r},\qquad
-\alpha=\tfrac12(\theta^{\mathrm{pha}}_1+\theta^{\mathrm{pha}}_2),\qquad
+\alpha=\tfrac12(\theta_{\mathrm{pha},1}+\theta_{\mathrm{pha},2}),\qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_U .
 $$
 
@@ -210,10 +210,10 @@ so $T_1=1$, $T_2=\tfrac12$, $\bar T=\tfrac58$, and
 $$
 D=\frac{1-\tfrac14}{1+\tfrac14}=0.6,\qquad
 \tau=\sqrt{\tfrac12}=0.707106781,\qquad
-\theta^{\mathrm{rpd}}=\ln2=0.693147181 .
+\theta_{\mathrm{rpd}}=\ln2=0.693147181 .
 $$
 
-The check $D=\tanh\theta^{\mathrm{rpd}}=\tanh 0.693147181=0.6$ holds. The $*$-unitary factor has eigenvalues $1$ and $i$, so its retardance is $\theta=\pi/2$, its central phase is $\alpha=\pi/4$, and its rotor has exponent angle $\pi/4$. The norm is $\langle\tilde J\rangle_{\natural}=\det\mathsf{J}=i/2$, with modulus $\tfrac12$, which equals $\langle\tilde J_H\rangle_{\natural}=\det\mathsf{H}$.
+The check $D=\tanh\theta_{\mathrm{rpd}}=\tanh 0.693147181=0.6$ holds. The $*$-unitary factor has eigenvalues $1$ and $i$, so its retardance is $\theta=\pi/2$, its central phase is $\alpha=\pi/4$, and its rotor has exponent angle $\pi/4$. The norm is $\langle\tilde J\rangle_{\natural}=\det\mathsf{J}=i/2$, with modulus $\tfrac12$, which equals $\langle\tilde J_H\rangle_{\natural}=\det\mathsf{H}$.
 
 For unpolarized input the output state is
 
@@ -256,7 +256,7 @@ $$
 \tilde J_0=\tilde J_H^{-1}\tilde J\ \text{}{}^{*}\text{-unitary}.
 $$
 
-The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\theta^{\mathrm{rpd}}$, where $\theta^{\mathrm{rpd}}$ is the rapidity of the amplitude read as a boost. The $*$-unitary factor is the **retarder**. Its eigenvalues are $\exp(i\theta^{\mathrm{pha}}_{1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\theta=\theta^{\mathrm{pha}}_1-\theta^{\mathrm{pha}}_2$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r}$.
+The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\theta_{\mathrm{rpd}}$, where $\theta_{\mathrm{rpd}}$ is the rapidity of the amplitude read as a boost. The $*$-unitary factor is the **retarder**. Its eigenvalues are $\exp(i\theta_{\mathrm{pha},1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\theta=\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2}$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r}$.
 
 The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde R_\psi_{\mathrm{pos}}=\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
 
@@ -271,7 +271,7 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 | $T_1,T_2$ | the principal amplitude transmissions, $T_1\ge T_2\ge0$ |
 | $\bar T$ | the mean intensity transmission, $\tfrac12(T_1^{2}+T_2^{2})$ |
 | $D$ | the diattenuation, $(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})$ |
-| $\theta^{\mathrm{rpd}}$ | the rapidity of the amplitude, $\ln(T_1/T_2)$ |
+| $\theta_{\mathrm{rpd}}$ | the rapidity of the amplitude, $\ln(T_1/T_2)$ |
 | $\theta$ | the retardance, the phase difference of the $*$-unitary factor |
 | $\alpha$ | the central phase of the $*$-unitary factor |
 | $\tilde u_{\mathrm r}$ | the real rotor of the retarder, angle $\theta/2$ |

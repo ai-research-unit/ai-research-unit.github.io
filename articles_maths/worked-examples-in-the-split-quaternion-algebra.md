@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects explicit computations in the split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of *Split-Quaternion Algebra*.
+This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of *Split-Quaternion Algebra*.
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -86,7 +86,7 @@ and the three are related by $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \r
 **Example (the common eigenspaces).** Since $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and the common eigenspaces of the pair $(\alpha, \rho)$ are
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x, \vec e_y\} \oplus \mathbb{R} \vec e_z,
+\mathbb{H}_{\mathrm{spl}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x, \vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$
 
 on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ is not split further: on it the conjugation also acts as $-1$, so no eigenspace of any of the three involutions cuts it. This is the finest decomposition produced by the involutions, and it is recorded in *Split-Quaternion Subspaces and the Involutions*.
@@ -112,16 +112,16 @@ They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec
 **Example (the two minimal left ideals).** The reductions $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1$ give
 
 $$
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
 $$
 
 $$
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
 $$
 
-each of real dimension $2$, with $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+each of real dimension $2$, with $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
 
-**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}^{\mathrm{spl}}$, and in that commutative algebra they are central; in $\mathbb{H}^{\mathrm{spl}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.
+**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}_{\mathrm{spl}}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{spl}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.
 
 ## Explicit Zero-Divisor Pairs
 
@@ -180,17 +180,17 @@ The action of a unit on the vector subspace by conjugation, the elliptic and hyp
 
 The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ are listed, and the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split further.
 
-The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-unit $1+\vec e_z$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
+The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-unit $1+\vec e_z$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | *Split-Quaternion Algebra* |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
 | $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
-| $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
+| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 

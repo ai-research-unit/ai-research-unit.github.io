@@ -28,7 +28,7 @@ is the **moduli space** of the Riemann surfaces of the topological type of $S$. 
 **Theorem (Fricke, Nielsen; the holonomy parametrisation).** The holonomy representation $\rho : \pi_1(S)\to PSL_2(\mathbb{R})$ of the marked hyperbolic structure is discrete, faithful and of the prescribed type, and the Teichmüller space is a connected component of the quotient
 
 $$
-\mathrm{Hom}^{\mathrm{df}}(\pi_1(S), PSL_2(\mathbb{R}))/PSL_2(\mathbb{R})
+\mathrm{Hom}_{\mathrm{df}}(\pi_1(S), PSL_2(\mathbb{R}))/PSL_2(\mathbb{R})
 $$
 
 of the space of discrete faithful representations by conjugation. By the Fricke–Nielsen theory of the Fuchsian groups, the marked structure is determined by its holonomy representation: the holonomy map is injective, and its image is an open dense subset of the character variety $\mathrm{Hom}(\pi_1(S),PSL_2(\mathbb{R}))/\!/PSL_2(\mathbb{R})$ described by the Fricke polynomial.

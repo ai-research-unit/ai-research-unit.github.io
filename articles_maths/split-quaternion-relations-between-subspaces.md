@@ -3,19 +3,19 @@
 
 ## Introduction
 
-The four distinguished subspaces of $\mathbb{H}^{\mathrm{spl}}$ — the scalar line $S$, the vector subspace $V$ and the two split-complex planes $\mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$ — are defined by different conditions, but they are not independent: they contain one another, they intersect, they sum to subspaces of $\mathbb{H}^{\mathrm{spl}}$, and they are cut out of the four real coordinates by the involutions. This article collects those relations in one place, after the individual articles *Split-Quaternion Scalar and Vector Subspaces* and *Split-Quaternion Split-Complex Subspaces*, and before the structural article *Split-Quaternion Involution Lattice*, which treats the involutions themselves.
+The four distinguished subspaces of $\mathbb{H}_{\mathrm{spl}}$ — the scalar line $S$, the vector subspace $V$ and the two split-complex planes $\mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$ — are defined by different conditions, but they are not independent: they contain one another, they intersect, they sum to subspaces of $\mathbb{H}_{\mathrm{spl}}$, and they are cut out of the four real coordinates by the involutions. This article collects those relations in one place, after the individual articles *Split-Quaternion Scalar and Vector Subspaces* and *Split-Quaternion Split-Complex Subspaces*, and before the structural article *Split-Quaternion Involution Lattice*, which treats the involutions themselves.
 
 Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived from the definitions by comparison of coefficients, so the article doubles as an index of the four subspaces and of the coordinate blocks.
 
 ## The Three Decompositions
 
-Two of the three involutions split $\mathbb{H}^{\mathrm{spl}}$ into distinguished subspaces, and the third splits it into two further subspaces:
+Two of the three involutions split $\mathbb{H}_{\mathrm{spl}}$ into distinguished subspaces, and the third splits it into two further subspaces:
 
 | involution | fixed space | anti-fixed space | decomposition |
 |---|---|---|---|
-| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $\mathbb{H}^{\mathrm{spl}} = S \oplus V$ |
-| $\alpha$ | $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | $\operatorname{span}\{\vec e_x,\vec e_y\}$ | $\mathbb{H}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}_3 \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$ |
-| $\rho$ | $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ | $\mathbb{R} \vec e_z$ | $\mathbb{H}^{\mathrm{spl}} = \operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ |
+| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $\mathbb{H}_{\mathrm{spl}} = S \oplus V$ |
+| $\alpha$ | $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | $\operatorname{span}\{\vec e_x,\vec e_y\}$ | $\mathbb{H}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},3} \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$ |
+| $\rho$ | $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ | $\mathbb{R} \vec e_z$ | $\mathbb{H}_{\mathrm{spl}} = \operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ |
 
 The three decompositions are the **scalar–vector** decomposition, and the two decompositions associated with the principal involution and the reversal. Every element has three readings, one per row. The finest common refinement of the three is the coordinate-block decomposition of the next section.
 
@@ -25,8 +25,8 @@ The three decompositions are the **scalar–vector** decomposition, and the two 
 |---|---|---|---|---|---|
 | $S$ | $\tilde{q}^{\natural} = \tilde q$ | $1$ | $1$ | yes, $\cong \mathbb{R}$ | $q_t^2$, positive definite |
 | $V$ | $\tilde{q}^{\natural} = -\tilde q$ | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | no (Lie) | $q_x^2-q_y^2-q_z^2$, signature $(2,1)$ |
-| $\mathbb{C}^{\mathrm{spl}}_2$ | closed under products of $1, \vec e_y$ | $1,\vec e_y$ | $2$ | yes, $\cong \mathbb{C}^{\mathrm{spl}}$ | $q_t^2-q_y^2$, signature $(1,1)$ |
-| $\mathbb{C}^{\mathrm{spl}}_3$ | $\alpha(\tilde q) = \tilde q$ | $1,\vec e_z$ | $2$ | yes, $\cong \mathbb{C}^{\mathrm{spl}}$ | $q_t^2-q_z^2$, signature $(1,1)$ |
+| $\mathbb{C}_{\mathrm{spl},2}$ | closed under products of $1, \vec e_y$ | $1,\vec e_y$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_y^2$, signature $(1,1)$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $\alpha(\tilde q) = \tilde q$ | $1,\vec e_z$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_z^2$, signature $(1,1)$ |
 
 Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $\langle\cdot\rangle_{\natural}$; all four are non-degenerate, the first definite and the other three indefinite.
 
@@ -35,17 +35,17 @@ Only three of the four are closed under multiplication: the scalar line and the 
 The four real coordinates of a split-quaternion are $(q_t,q_x,q_y,q_z)$ in the basis $1, \vec e_x, \vec e_y, \vec e_z$. They group into four one-dimensional **coordinate blocks**,
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \langle 1 \rangle \oplus \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle,
+\mathbb{H}_{\mathrm{spl}} = \langle 1 \rangle \oplus \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle,
 $$
 
-where $\langle \cdot\rangle$ denotes the real span of the displayed elements. Each of the blocks $\langle 1\rangle$, $\langle \vec e_y\rangle$ and $\langle \vec e_z\rangle$ is the intersection of the distinguished subspaces containing it, and $\langle \vec e_x\rangle$ is the complement of $\mathbb{C}^{\mathrm{spl}}_2 + \mathbb{C}^{\mathrm{spl}}_3$ in $\mathbb{H}^{\mathrm{spl}}$; each of the four distinguished subspaces is a sum of blocks:
+where $\langle \cdot\rangle$ denotes the real span of the displayed elements. Each of the blocks $\langle 1\rangle$, $\langle \vec e_y\rangle$ and $\langle \vec e_z\rangle$ is the intersection of the distinguished subspaces containing it, and $\langle \vec e_x\rangle$ is the complement of $\mathbb{C}_{\mathrm{spl},2} + \mathbb{C}_{\mathrm{spl},3}$ in $\mathbb{H}_{\mathrm{spl}}$; each of the four distinguished subspaces is a sum of blocks:
 
 $$
 S = \langle 1 \rangle, \qquad V = \langle \vec e_x \rangle \oplus \langle \vec e_y \rangle \oplus \langle \vec e_z \rangle,
 $$
 
 $$
-\mathbb{C}^{\mathrm{spl}}_2 = \langle 1 \rangle \oplus \langle \vec e_y \rangle, \qquad \mathbb{C}^{\mathrm{spl}}_3 = \langle 1 \rangle \oplus \langle \vec e_z \rangle .
+\mathbb{C}_{\mathrm{spl},2} = \langle 1 \rangle \oplus \langle \vec e_y \rangle, \qquad \mathbb{C}_{\mathrm{spl},3} = \langle 1 \rangle \oplus \langle \vec e_z \rangle .
 $$
 
 The blocks are the building units of the article: every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple.
@@ -54,24 +54,24 @@ The blocks are the building units of the article: every intersection below is a 
 
 The ten pairwise intersections of the four subspaces, with the dimensions (the diagonal carries the dimensions of the subspaces themselves):
 
-| | $S$ | $V$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
+| | $S$ | $V$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
 |---|---|---|---|---|
 | $S$ | $1$ | $0$ | $1$ | $1$ |
 | $V$ | $0$ | $3$ | $1$ | $1$ |
-| $\mathbb{C}^{\mathrm{spl}}_2$ | $1$ | $1$ | $2$ | $1$ |
-| $\mathbb{C}^{\mathrm{spl}}_3$ | $1$ | $1$ | $1$ | $2$ |
+| $\mathbb{C}_{\mathrm{spl},2}$ | $1$ | $1$ | $2$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $1$ | $1$ | $1$ | $2$ |
 
 Explicitly,
 
 $$
 \boxed{\;
-S \cap V = \{0\}, \quad S \cap \mathbb{C}^{\mathrm{spl}}_2 = S, \quad S \cap \mathbb{C}^{\mathrm{spl}}_3 = S, \quad V \cap \mathbb{C}^{\mathrm{spl}}_2 = \mathbb{R} \vec e_y
+S \cap V = \{0\}, \quad S \cap \mathbb{C}_{\mathrm{spl},2} = S, \quad S \cap \mathbb{C}_{\mathrm{spl},3} = S, \quad V \cap \mathbb{C}_{\mathrm{spl},2} = \mathbb{R} \vec e_y
 \;},
 $$
 
 $$
 \boxed{\;
-V \cap \mathbb{C}^{\mathrm{spl}}_3 = \mathbb{R} \vec e_z, \quad \mathbb{C}^{\mathrm{spl}}_2 \cap \mathbb{C}^{\mathrm{spl}}_3 = S
+V \cap \mathbb{C}_{\mathrm{spl},3} = \mathbb{R} \vec e_z, \quad \mathbb{C}_{\mathrm{spl},2} \cap \mathbb{C}_{\mathrm{spl},3} = S
 \;}.
 $$
 
@@ -79,38 +79,38 @@ Three features are worth isolating:
 
 - The scalar line is contained in both split-complex planes, so it meets them in dimension $1$; it meets the vector subspace only in the origin, being the complement of $V$ in the scalar–vector decomposition.
 - The vector subspace meets each split-complex plane in a single line, spanned by the common basis element $\vec e_y$ or $\vec e_z$, and the two planes meet each other in the scalar line.
-- No two of the four subspaces are equal, and no pair except the obvious containment pairs is nested: $S \subset \mathbb{C}^{\mathrm{spl}}_2$, $S \subset \mathbb{C}^{\mathrm{spl}}_3$, and $S \subset S \oplus V$ but $S \not\subseteq V$, $\mathbb{C}^{\mathrm{spl}}_2 \not\subseteq \mathbb{C}^{\mathrm{spl}}_3$.
+- No two of the four subspaces are equal, and no pair except the obvious containment pairs is nested: $S \subset \mathbb{C}_{\mathrm{spl},2}$, $S \subset \mathbb{C}_{\mathrm{spl},3}$, and $S \subset S \oplus V$ but $S \not\subseteq V$, $\mathbb{C}_{\mathrm{spl},2} \not\subseteq \mathbb{C}_{\mathrm{spl},3}$.
 
 ## The Sums
 
 The sums of the pairs, with the same ordering:
 
-| | $S$ | $V$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
+| | $S$ | $V$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
 |---|---|---|---|---|
 | $S$ | $1$ | $4$ | $2$ | $2$ |
 | $V$ | $4$ | $3$ | $4$ | $4$ |
-| $\mathbb{C}^{\mathrm{spl}}_2$ | $2$ | $4$ | $2$ | $3$ |
-| $\mathbb{C}^{\mathrm{spl}}_3$ | $2$ | $4$ | $3$ | $2$ |
+| $\mathbb{C}_{\mathrm{spl},2}$ | $2$ | $4$ | $2$ | $3$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $2$ | $4$ | $3$ | $2$ |
 
-The dimension of a sum is the sum of the dimensions minus the dimension of the intersection. The pairs that span the whole algebra are $S + V = \mathbb{H}^{\mathrm{spl}}$, $V + \mathbb{C}^{\mathrm{spl}}_2 = \mathbb{H}^{\mathrm{spl}}$, and $V + \mathbb{C}^{\mathrm{spl}}_3 = \mathbb{H}^{\mathrm{spl}}$; the pair $\mathbb{C}^{\mathrm{spl}}_2 + \mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_y,\vec e_z\}$ has dimension $3$ and misses the line $\mathbb{R} \vec e_x$; and $S + \mathbb{C}^{\mathrm{spl}}_k = \mathbb{C}^{\mathrm{spl}}_k$ because $S$ lies inside each split-complex plane. The sum $V + \mathbb{C}^{\mathrm{spl}}_k$ spans the algebra because $V$ contributes $\vec e_x$ and $\mathbb{C}^{\mathrm{spl}}_k$ contributes $1$, and together with $\vec e_y$ or $\vec e_z$ they exhaust the four coordinates.
+The dimension of a sum is the sum of the dimensions minus the dimension of the intersection. The pairs that span the whole algebra are $S + V = \mathbb{H}_{\mathrm{spl}}$, $V + \mathbb{C}_{\mathrm{spl},2} = \mathbb{H}_{\mathrm{spl}}$, and $V + \mathbb{C}_{\mathrm{spl},3} = \mathbb{H}_{\mathrm{spl}}$; the pair $\mathbb{C}_{\mathrm{spl},2} + \mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_y,\vec e_z\}$ has dimension $3$ and misses the line $\mathbb{R} \vec e_x$; and $S + \mathbb{C}_{\mathrm{spl},k} = \mathbb{C}_{\mathrm{spl},k}$ because $S$ lies inside each split-complex plane. The sum $V + \mathbb{C}_{\mathrm{spl},k}$ spans the algebra because $V$ contributes $\vec e_x$ and $\mathbb{C}_{\mathrm{spl},k}$ contributes $1$, and together with $\vec e_y$ or $\vec e_z$ they exhaust the four coordinates.
 
 ## The Involutions as Sign Patterns
 
 Each involution preserves each of the four subspaces, and its restriction to a subspace is diagonal in the displayed bases with signs $\pm 1$. The following table records the multiplicity of the sign $-1$ on each subspace, in the basis of the table above:
 
-| involution | $S$ | $V$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
+| involution | $S$ | $V$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
 |---|---|---|---|---|
 | ${}^{\natural}$ | $0$ of $1$ | $3$ of $3$ | $1$ of $2$ | $1$ of $2$ |
 | $\alpha$ | $0$ of $1$ | $2$ of $3$ | $1$ of $2$ | $0$ of $2$ |
 | $\rho$ | $0$ of $1$ | $1$ of $3$ | $0$ of $2$ | $1$ of $2$ |
 
-The vanishing rows are the definitions: ${}^{\natural}$ acts as the identity exactly on $S$, $\alpha$ exactly on $\mathbb{C}^{\mathrm{spl}}_3$, and $\rho$ exactly on $\operatorname{span}\{1,\vec e_x,\vec e_y\} \supset \mathbb{C}^{\mathrm{spl}}_2$. The full multiplicities give the anti-fixed spaces: ${}^{\natural}$ negates all of $V$, $\alpha$ negates the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ negates the line $\mathbb{R} \vec e_z$. The remaining entries are mixed restrictions. The composition rule ${}^{\natural} = \alpha\rho$ is visible row by row: the coordinates negated by ${}^{\natural}$ are exactly those negated by one of $\alpha, \rho$ but not both, so the multiplicities compose by symmetric difference.
+The vanishing rows are the definitions: ${}^{\natural}$ acts as the identity exactly on $S$, $\alpha$ exactly on $\mathbb{C}_{\mathrm{spl},3}$, and $\rho$ exactly on $\operatorname{span}\{1,\vec e_x,\vec e_y\} \supset \mathbb{C}_{\mathrm{spl},2}$. The full multiplicities give the anti-fixed spaces: ${}^{\natural}$ negates all of $V$, $\alpha$ negates the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ negates the line $\mathbb{R} \vec e_z$. The remaining entries are mixed restrictions. The composition rule ${}^{\natural} = \alpha\rho$ is visible row by row: the coordinates negated by ${}^{\natural}$ are exactly those negated by one of $\alpha, \rho$ but not both, so the multiplicities compose by symmetric difference.
 
 ## How the Product and the Commutator Act
 
 ### The Scalar Line
 
-$S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cdot V \subseteq V$, $S \cdot \mathbb{C}^{\mathrm{spl}}_k \subseteq \mathbb{C}^{\mathrm{spl}}_k$, and $[S, \tilde q] = 0$ for all $\tilde q$. As a product, $S \times S \to S$ is closed.
+$S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cdot V \subseteq V$, $S \cdot \mathbb{C}_{\mathrm{spl},k} \subseteq \mathbb{C}_{\mathrm{spl},k}$, and $[S, \tilde q] = 0$ for all $\tilde q$. As a product, $S \times S \to S$ is closed.
 
 ### The Vector Subspace
 
@@ -122,7 +122,7 @@ $$
 \;},
 $$
 
-with scalar part $-B(\vec q,\vec q_1) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}^{\mathrm{spl}}$, with equality. The commutator stays in $V$, and in the basis $\vec e_x, \vec e_y, \vec e_z$,
+with scalar part $-B(\vec q,\vec q_1) \in S$ and the remainder $\tfrac{1}{2}[\vec q,\vec q_1] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{spl}}$, with equality. The commutator stays in $V$, and in the basis $\vec e_x, \vec e_y, \vec e_z$,
 
 $$
 \boxed{\;
@@ -134,47 +134,47 @@ so $[V,V] \subseteq V$ and $V \cong \mathrm{SL}_2(\mathbb{R})$. The bracket is a
 
 ### The Split-Complex Planes
 
-Each split-complex plane is a commutative subalgebra, so $\mathbb{C}^{\mathrm{spl}}_k \cdot \mathbb{C}^{\mathrm{spl}}_k \subseteq \mathbb{C}^{\mathrm{spl}}_k$ and $[\mathbb{C}^{\mathrm{spl}}_k, \mathbb{C}^{\mathrm{spl}}_k] = 0$. Across the planes the product leaves both: since $\vec e_y \vec e_z = -\vec e_x$ and $\vec e_z \vec e_y = \vec e_x$, one has $\mathbb{C}^{\mathrm{spl}}_2 \cdot \mathbb{C}^{\mathrm{spl}}_3 = \mathbb{H}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{spl}}_2 \cdot \mathbb{C}^{\mathrm{spl}}_3 \not\subseteq \mathbb{C}^{\mathrm{spl}}_2 \cup \mathbb{C}^{\mathrm{spl}}_3$. The product of a scalar with a plane stays in the plane, and the two planes share only the scalar line.
+Each split-complex plane is a commutative subalgebra, so $\mathbb{C}_{\mathrm{spl},k} \cdot \mathbb{C}_{\mathrm{spl},k} \subseteq \mathbb{C}_{\mathrm{spl},k}$ and $[\mathbb{C}_{\mathrm{spl},k}, \mathbb{C}_{\mathrm{spl},k}] = 0$. Across the planes the product leaves both: since $\vec e_y \vec e_z = -\vec e_x$ and $\vec e_z \vec e_y = \vec e_x$, one has $\mathbb{C}_{\mathrm{spl},2} \cdot \mathbb{C}_{\mathrm{spl},3} = \mathbb{H}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{spl},2} \cdot \mathbb{C}_{\mathrm{spl},3} \not\subseteq \mathbb{C}_{\mathrm{spl},2} \cup \mathbb{C}_{\mathrm{spl},3}$. The product of a scalar with a plane stays in the plane, and the two planes share only the scalar line.
 
 ### The Operation Table
 
-| product | $S$ | $V$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
+| product | $S$ | $V$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
 |---|---|---|---|---|
-| $S \cdot$ | $S$ | $V$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
-| $V \cdot$ | $V$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{H}^{\mathrm{spl}}$ |
-| $\mathbb{C}^{\mathrm{spl}}_2 \cdot$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}_2$ | $\mathbb{H}^{\mathrm{spl}}$ |
-| $\mathbb{C}^{\mathrm{spl}}_3 \cdot$ | $\mathbb{C}^{\mathrm{spl}}_3$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}_3$ |
+| $S \cdot$ | $S$ | $V$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
+| $V \cdot$ | $V$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{H}_{\mathrm{spl}}$ |
+| $\mathbb{C}_{\mathrm{spl},2} \cdot$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{C}_{\mathrm{spl},2}$ | $\mathbb{H}_{\mathrm{spl}}$ |
+| $\mathbb{C}_{\mathrm{spl},3} \cdot$ | $\mathbb{C}_{\mathrm{spl},3}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{C}_{\mathrm{spl},3}$ |
 
-The commutator table is the antisymmetrisation of this one: it vanishes on the diagonal pairs among $S, \mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$ (all commutative), equals the bracket of $V$ restricted to the vector–vector entry, and is nonzero only where the product table has an off-diagonal entry that is not symmetric.
+The commutator table is the antisymmetrisation of this one: it vanishes on the diagonal pairs among $S, \mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$ (all commutative), equals the bracket of $V$ restricted to the vector–vector entry, and is nonzero only where the product table has an off-diagonal entry that is not symmetric.
 
 ## Worked Verifications
 
-**Example (an intersection of dimension one).** Take $V \cap \mathbb{C}^{\mathrm{spl}}_2$. An element is $q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = q_t + q_y \vec e_y$; comparing coefficients gives $q_x = 0$, $q_z = 0$ and $q_t = 0$, so the intersection is $\mathbb{R} \vec e_y$, of dimension $1$, as tabulated.
+**Example (an intersection of dimension one).** Take $V \cap \mathbb{C}_{\mathrm{spl},2}$. An element is $q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = q_t + q_y \vec e_y$; comparing coefficients gives $q_x = 0$, $q_z = 0$ and $q_t = 0$, so the intersection is $\mathbb{R} \vec e_y$, of dimension $1$, as tabulated.
 
-**Example (a pair that spans the algebra).** The four elements $\vec e_x, \vec e_y, \vec e_z$ span $V$ and $1, \vec e_y$ span $\mathbb{C}^{\mathrm{spl}}_2$; together they include $1, \vec e_x, \vec e_y, \vec e_z$, a basis, so $V + \mathbb{C}^{\mathrm{spl}}_2 = \mathbb{H}^{\mathrm{spl}}$, in agreement with $\dim V + \dim \mathbb{C}^{\mathrm{spl}}_2 - \dim(V \cap \mathbb{C}^{\mathrm{spl}}_2) = 3 + 2 - 1 = 4$.
+**Example (a pair that spans the algebra).** The four elements $\vec e_x, \vec e_y, \vec e_z$ span $V$ and $1, \vec e_y$ span $\mathbb{C}_{\mathrm{spl},2}$; together they include $1, \vec e_x, \vec e_y, \vec e_z$, a basis, so $V + \mathbb{C}_{\mathrm{spl},2} = \mathbb{H}_{\mathrm{spl}}$, in agreement with $\dim V + \dim \mathbb{C}_{\mathrm{spl},2} - \dim(V \cap \mathbb{C}_{\mathrm{spl},2}) = 3 + 2 - 1 = 4$.
 
-**Example (a product that leaves its subspace).** $\vec e_y \in \mathbb{C}^{\mathrm{spl}}_2$ and $\vec e_z \in V$; their product is $\vec e_y \vec e_z = -\vec e_x \notin \mathbb{C}^{\mathrm{spl}}_2$ and $\notin \mathbb{C}^{\mathrm{spl}}_3$ (indeed $\vec e_x \in V$), consistent with the entry $\mathbb{H}^{\mathrm{spl}}$ in the product table.
+**Example (a product that leaves its subspace).** $\vec e_y \in \mathbb{C}_{\mathrm{spl},2}$ and $\vec e_z \in V$; their product is $\vec e_y \vec e_z = -\vec e_x \notin \mathbb{C}_{\mathrm{spl},2}$ and $\notin \mathbb{C}_{\mathrm{spl},3}$ (indeed $\vec e_x \in V$), consistent with the entry $\mathbb{H}_{\mathrm{spl}}$ in the product table.
 
-**Example (a mixed element and its blocks).** For $\tilde q = 2 + 3\vec e_x - \vec e_y + 4\vec e_z$ the scalar block is $2$, the vector block is $3\vec e_x - \vec e_y + 4\vec e_z$, and the split-complex readings are $2 - \vec e_y + 4\vec e_z$ in $\mathbb{C}^{\mathrm{spl}}_2$ and $2 + 3\vec e_x + 4\vec e_z$ modulo the complementary block; the involution images are $\tilde{q}^{\natural} = 2 - 3\vec e_x + \vec e_y - 4\vec e_z$, $\alpha(\tilde q) = 2 - 3\vec e_x + \vec e_y + 4\vec e_z$, $\rho(\tilde q) = 2 + 3\vec e_x - \vec e_y - 4\vec e_z$.
+**Example (a mixed element and its blocks).** For $\tilde q = 2 + 3\vec e_x - \vec e_y + 4\vec e_z$ the scalar block is $2$, the vector block is $3\vec e_x - \vec e_y + 4\vec e_z$, and the split-complex readings are $2 - \vec e_y + 4\vec e_z$ in $\mathbb{C}_{\mathrm{spl},2}$ and $2 + 3\vec e_x + 4\vec e_z$ modulo the complementary block; the involution images are $\tilde{q}^{\natural} = 2 - 3\vec e_x + \vec e_y - 4\vec e_z$, $\alpha(\tilde q) = 2 - 3\vec e_x + \vec e_y + 4\vec e_z$, $\rho(\tilde q) = 2 + 3\vec e_x - \vec e_y - 4\vec e_z$.
 
 ## The Relation to the Corresponding Article for $\mathbb{B}$
 
-The biquaternion article *Subspaces and Decompositions* performs the same task for the remarkable subspaces of $\mathbb{B}$, cut out by the four $\mathbb{C}$-linear and conjugate-linear involutions. The bookkeeping is analogous — decompositions, a glance table, coordinate blocks, tables of intersections, sums, sign patterns and operations — but the geometry of the tables differs, because $\mathbb{B}$ has eight real coordinates and remarkable subspaces, whereas $\mathbb{H}^{\mathrm{spl}}$ has four coordinates and four subspaces; in $\mathbb{B}$ the blocks have dimensions $1$ and $3$, while here all four blocks have dimension $1$, which is why the intersections here take only the values $0, 1, 2, 3$. The Biquaternions category is the structural model; nothing biquaternion-specific — the central unit $i$, the quaternionic half-algebra, the Hermitian and anti-Hermitian pairing — is imported here.
+The biquaternion article *Subspaces and Decompositions* performs the same task for the remarkable subspaces of $\mathbb{B}$, cut out by the four $\mathbb{C}$-linear and conjugate-linear involutions. The bookkeeping is analogous — decompositions, a glance table, coordinate blocks, tables of intersections, sums, sign patterns and operations — but the geometry of the tables differs, because $\mathbb{B}$ has eight real coordinates and remarkable subspaces, whereas $\mathbb{H}_{\mathrm{spl}}$ has four coordinates and four subspaces; in $\mathbb{B}$ the blocks have dimensions $1$ and $3$, while here all four blocks have dimension $1$, which is why the intersections here take only the values $0, 1, 2, 3$. The Biquaternions category is the structural model; nothing biquaternion-specific — the central unit $i$, the quaternionic half-algebra, the Hermitian and anti-Hermitian pairing — is imported here.
 
 ## Summary
 
-The four distinguished subspaces of $\mathbb{H}^{\mathrm{spl}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle \vec e_x,\vec e_y,\vec e_z\rangle$, and the two split-complex planes $\mathbb{C}^{\mathrm{spl}}_2 = \langle 1,\vec e_y\rangle$ and $\mathbb{C}^{\mathrm{spl}}_3 = \langle 1,\vec e_z\rangle$. They are the eigenspaces of the involutions, with ${}^{\natural}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{C}^{\mathrm{spl}}_3 \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ giving $\operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}^{\mathrm{spl}} = \langle 1\rangle \oplus \langle \vec e_x\rangle \oplus \langle \vec e_y\rangle \oplus \langle \vec e_z\rangle$.
+The four distinguished subspaces of $\mathbb{H}_{\mathrm{spl}}$ are the scalar line $S = \langle 1\rangle$, the vector subspace $V = \langle \vec e_x,\vec e_y,\vec e_z\rangle$, and the two split-complex planes $\mathbb{C}_{\mathrm{spl},2} = \langle 1,\vec e_y\rangle$ and $\mathbb{C}_{\mathrm{spl},3} = \langle 1,\vec e_z\rangle$. They are the eigenspaces of the involutions, with ${}^{\natural}$ giving $S \oplus V$, $\alpha$ giving $\mathbb{C}_{\mathrm{spl},3} \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ giving $\operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$; the finest common decomposition is the coordinate-block decomposition $\mathbb{H}_{\mathrm{spl}} = \langle 1\rangle \oplus \langle \vec e_x\rangle \oplus \langle \vec e_y\rangle \oplus \langle \vec e_z\rangle$.
 
-The intersections are $S \cap V = 0$, $V \cap \mathbb{C}^{\mathrm{spl}}_k = \mathbb{R} \vec e_k$, and $\mathbb{C}^{\mathrm{spl}}_2 \cap \mathbb{C}^{\mathrm{spl}}_3 = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,\vec e_y,\vec e_z\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule ${}^{\natural} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
+The intersections are $S \cap V = 0$, $V \cap \mathbb{C}_{\mathrm{spl},k} = \mathbb{R} \vec e_k$, and $\mathbb{C}_{\mathrm{spl},2} \cap \mathbb{C}_{\mathrm{spl},3} = S$, with $S$ inside both planes. The sums show that $V$ together with either split-complex plane spans the algebra, while the two planes together span only $\operatorname{span}\{1,\vec e_y,\vec e_z\}$. The involutions act on each subspace by the sign patterns tabulated above, and the composition rule ${}^{\natural} = \alpha\rho$ composes the multiplicities by symmetric difference. The product is closed on $S, \mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$, sends $V \cdot V$ into $S \oplus V$, and sends the products across the split-complex planes into the whole algebra; the commutator vanishes on the commutative pieces and makes $V$ the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $S = \langle 1\rangle$ | the scalar line | *Split-Quaternion Scalar and Vector Subspaces* |
 | $V = \langle \vec e_x,\vec e_y,\vec e_z\rangle$ | the vector subspace | *Split-Quaternion Scalar and Vector Subspaces* |
-| $\mathbb{C}^{\mathrm{spl}}_2 = \langle 1,\vec e_y\rangle$, $\mathbb{C}^{\mathrm{spl}}_3 = \langle 1,\vec e_z\rangle$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
+| $\mathbb{C}_{\mathrm{spl},2} = \langle 1,\vec e_y\rangle$, $\mathbb{C}_{\mathrm{spl},3} = \langle 1,\vec e_z\rangle$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 | $\langle \cdot \rangle$ | real span of the displayed elements | this article |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Subspaces and the Involutions* |
 | $B$, $\langle\cdot\rangle_{\natural}$ | the polarised form and the split-quaternion norm | *Split-Quaternion Norm and Invertibility* |

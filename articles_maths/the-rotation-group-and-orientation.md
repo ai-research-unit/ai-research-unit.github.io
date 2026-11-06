@@ -163,11 +163,11 @@ $$
 
 the unit circle, and $\operatorname{SO}(2)$ is abelian.
 
-**Proof.** Matrix multiplication gives $R(\theta)R(\theta^{\mathrm{rgp}}) = R(\theta + \theta^{\mathrm{rgp}})$ and $R(\theta)^{-1} = R(-\theta)$, so the map is a homomorphism; the kernel is the set of $\theta$ with $\cos\theta = 1$ and $\sin\theta = 0$, namely $2\pi\mathbb{Z}$. An orientation-preserving orthogonal $2 \times 2$ matrix has columns that are orthonormal and positively oriented, hence is of the form $R(\theta)$; this proves surjectivity.
+**Proof.** Matrix multiplication gives $R(\theta)R(\theta_{\mathrm{rgp}}) = R(\theta + \theta_{\mathrm{rgp}})$ and $R(\theta)^{-1} = R(-\theta)$, so the map is a homomorphism; the kernel is the set of $\theta$ with $\cos\theta = 1$ and $\sin\theta = 0$, namely $2\pi\mathbb{Z}$. An orientation-preserving orthogonal $2 \times 2$ matrix has columns that are orthonormal and positively oriented, hence is of the form $R(\theta)$; this proves surjectivity.
 
 **Proposition.** Every element of $SO(2)$ is a product of two reflections, and the angle of the rotation is twice the angle between the two mirror lines.
 
-**Proof.** Let $\tau_\theta^{\mathrm{rgp}}$ denote the reflection of the plane in the line at angle $\theta^{\mathrm{rgp}}$ from the positive $x$-axis. A computation gives $\tau_\theta^{\mathrm{rgp}} \tau_\psi = R(2(\theta^{\mathrm{rgp}} - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved.
+**Proof.** Let $\tau_{\mathrm{rgp},\theta}$ denote the reflection of the plane in the line at angle $\theta_{\mathrm{rgp}}$ from the positive $x$-axis. A computation gives $\tau_{\mathrm{rgp},\theta} \tau_\psi = R(2(\theta_{\mathrm{rgp}} - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved.
 
 The parametrisation by the circle is the plane case of the general fact that a compact connected abelian Lie group is a torus; the higher-dimensional tori appear.
 

@@ -68,7 +68,7 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 |---|---|---|---|---|
 | $\mathbb{C}$ | $U$ | $\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
 | $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
-| $\mathbb{H}^{\mathrm{spl}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$ |
+| $\mathbb{H}_{\mathrm{spl}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$ |
 | $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
 
 The real, split-complex, dual, reduced-biquaternion and split-biquaternion layers are tabulated in *Norm and Unitary Conventions*, §*The Unitary Convention*. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
@@ -112,9 +112,9 @@ A boost is a unit element and is not $*$-unitary: $\tilde U_{\mathrm b}$ is $N$-
 
 **The letter $u$ names a unit element and nothing else.** A velocity, a speed, a Lorentz factor and a rapidity are never written $u$ or $U$: the letter of a motion is $v$, and the four-velocity is the element $\tilde V$. A $*$-unitary group is written $\mathrm{U}(1)$, $SU(2)$, $SU(3)$, and its Lie algebra in the upright roman, $\mathrm{u}(1)$, $\mathrm{su}(2)$, $\mathrm{su}(3)$.
 
-**The boost is a unit element, not a letter.** The boost of rapidity $\theta^{\mathrm{rpd}}$ along the unit $\vec u_{\mathrm b}$ is
+**The boost is a unit element, not a letter.** The boost of rapidity $\theta_{\mathrm{rpd}}$ along the unit $\vec u_{\mathrm b}$ is
 $$
-\tilde U_{\mathrm b}=\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
 $$
 a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the **frame rotor**; the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ is a different object, and §*The Polar Word and the Three Pairings* separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_k$ and $\tfrac12 i\vec e_k$. No letter $K$ is introduced for the Lorentz boost.
 
@@ -130,7 +130,7 @@ The series writes one polar word and reads it in three bracketings. The word, it
 
 $$
 \tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
-\qquad r>0,\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \tilde{Ξ}^{\mathrm{sp}}_w\ge0,\qquad \theta\in[0,2\pi],
+\qquad r>0,\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \tilde{Ξ}_{\mathrm{sp},w}\ge0,\qquad \theta\in[0,2\pi],
 $$
 
 with the factors of the table. The order is forced: the scale and the phase are central, the Hermitian positive boost stands on the left of the real rotor, and the rotor is what remains after the Hermitian part is divided out.
@@ -139,7 +139,7 @@ with the factors of the table. The order is forced: the scale and the phase are 
 | --- | --- | --- | --- | --- | --- |
 | 1 | scale | $r$ | $r>0$ | real central scalar | dilation by $r^2$ |
 | 2 | central phase | $\exp(i\alpha)$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central unit | scalar multiplication |
-| 3 | boost | $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)=\cosh\frac{\theta^{\mathrm{rpd}}_w}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}_w}{2}\vec u_{\mathrm b}$ | $\tilde{Ξ}^{\mathrm{sp}}_w\ge0$, $\vec u_{\mathrm b}$ a unit real vector | Hermitian positive, $\det=1$ | congruence $X\mapsto\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)X\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_w)^{*}$ |
+| 3 | boost | $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})=\cosh\frac{\theta_{\mathrm{rpd},w}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}$ | $\tilde{Ξ}_{\mathrm{sp},w}\ge0$, $\vec u_{\mathrm b}$ a unit real vector | Hermitian positive, $\det=1$ | congruence $X\mapsto\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})X\tilde U_{\mathrm b}(\theta_{\mathrm{rpd},w})^{*}$ |
 | 4 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector | real unit quaternion | conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
 **The word is not the exponential.** The four factors are a section of the word map, not of the exponential map; the two coincide only when the exponents commute. The defect is the Baker–Campbell–Hausdorff term, and it is recorded in *The Exponential Word and Its Boundary*.
@@ -153,40 +153,40 @@ The modulus is the square root of the **quaternionic** norm, and it is not the s
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | quaternionic norm | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, complex | the modulus, $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch; multiplicative; vanishing is the cone |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$, real and non-negative | the total size; it carries the topology and never enters the existence condition of the word |
 
-**Two warnings.** First, a square root of the Hermitian norm is the **topological norm**, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\theta^{\mathrm{rpd}}$ in the notation below, not $m^2c^4\cosh^2\theta^{\mathrm{rpd}}$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.
+**Two warnings.** First, a square root of the Hermitian norm is the **topological norm**, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\theta_{\mathrm{rpd}}$ in the notation below, not $m^2c^4\cosh^2\theta_{\mathrm{rpd}}$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.
 
 ### The Four Objects Called a Boost
 
-Four different objects carry the word *boost*, and the factor of two between them is the most common error in the corpus. They are separated here once. The kinematic rapidity is $\theta^{\mathrm{rpd}}$; the word's parameter is $\theta^{\mathrm{rpd}}_w$.
+Four different objects carry the word *boost*, and the factor of two between them is the most common error in the corpus. They are separated here once. The kinematic rapidity is $\theta_{\mathrm{rpd}}$; the word's parameter is $\theta_{\mathrm{rpd},w}$.
 
 | object | glyph | formula | exponent angle | what it is |
 | --- | --- | --- | --- | --- |
-| frame rotor | $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ | $\cosh\frac{\theta^{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta^{\mathrm{rpd}}/2$ | the Lorentz rotor; its congruence is the boost of rapidity $\theta^{\mathrm{rpd}}$; linear in the spinor |
-| four-vector factor | $\mathcal B=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{-2}$ | $\cosh\theta^{\mathrm{rpd}}\,e_t-i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | $-\tilde{Ξ}^{\mathrm{sp}}$ | the inverse square of the frame rotor; the factor a four-vector element carries |
-| generator | $\tfrac12 i\tilde{Ξ}^{\mathrm{sp}}\vec u_{\mathrm b}$ | — | — | the Hermitian element whose exponential is $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ |
-| rapidities | $\tilde{Ξ}^{\mathrm{sp}},\ \tilde{Ξ}^{\mathrm{sp}}_w$ | real, $\tilde{Ξ}^{\mathrm{sp}}\ge0$ | — | $\tilde{Ξ}^{\mathrm{sp}}$ kinematic; $\tilde{Ξ}^{\mathrm{sp}}_w=2\tilde{Ξ}^{\mathrm{sp}}$ for a four-vector element, whose word axis is opposite the frame axis |
+| frame rotor | $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}/2$ | the Lorentz rotor; its congruence is the boost of rapidity $\theta_{\mathrm{rpd}}$; linear in the spinor |
+| four-vector factor | $\mathcal B=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{-2}$ | $\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | $-\tilde{Ξ}_{\mathrm{sp}}$ | the inverse square of the frame rotor; the factor a four-vector element carries |
+| generator | $\tfrac12 i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}$ | — | — | the Hermitian element whose exponential is $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ |
+| rapidities | $\tilde{Ξ}_{\mathrm{sp}},\ \tilde{Ξ}_{\mathrm{sp},w}$ | real, $\tilde{Ξ}_{\mathrm{sp}}\ge0$ | — | $\tilde{Ξ}_{\mathrm{sp}}$ kinematic; $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$ for a four-vector element, whose word axis is opposite the frame axis |
 
 The fourth factor of the word, $\tilde u_{\mathrm r}$, is a rotation and not a boost. The word *boost* alone is not a name: a statement must say whether it means the frame rotor, the four-vector factor, the generator or a rapidity. In the word table the letter $\vec u_{\mathrm b}$ names the axis of the word's factor; for a transformation it coincides with the frame axis, and for a four-vector it is opposite it.
 
-**Linear and bilinear.** The frame rotor acts on a spinor by left multiplication, $\xi\mapsto\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})\xi$, and on a four-vector by the congruence $X\mapsto\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})X\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{*}$. A four-vector is bilinear in the spinor, so the factor that the four-vector element itself carries is the inverse square, $\mathcal B=\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})^{-2}=e^{-i\tilde{Ξ}^{\mathrm{sp}}\vec u_{\mathrm b}}$: the same boost, read twice. The word stores the boost in the frame rotor and deposits it twice in the four-vector; its parameter is $\tilde{Ξ}^{\mathrm{sp}}_w=2\tilde{Ξ}^{\mathrm{sp}}$.
+**Linear and bilinear.** The frame rotor acts on a spinor by left multiplication, $\xi\mapsto\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})\xi$, and on a four-vector by the congruence $X\mapsto\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})X\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{*}$. A four-vector is bilinear in the spinor, so the factor that the four-vector element itself carries is the inverse square, $\mathcal B=\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})^{-2}=e^{-i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}}$: the same boost, read twice. The word stores the boost in the frame rotor and deposits it twice in the four-vector; its parameter is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$.
 
 ### The Four-Momentum
 
-Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta^{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta^{\mathrm{rpd}}\,\hat p$, so that $\theta^{\mathrm{rpd}}$ is the kinematic rapidity. Then
+Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\hat p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then
 
 $$
-\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}^{\mathrm{sp}}\hat p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}^{\mathrm{sp}},\qquad \vec U=\hat p,
+\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\tilde{Ξ}_{\mathrm{sp}}\hat p},\qquad \Rho=imc,\qquad \Theta=-i\tilde{Ξ}_{\mathrm{sp}},\qquad \vec U=\hat p,
 $$
 
 with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are
 
 $$
-\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\tilde{Ξ}^{\mathrm{sp}}}=\Rho\,e^{\pm i\Theta}.
+\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\tilde{Ξ}_{\mathrm{sp}}}=\Rho\,e^{\pm i\Theta}.
 $$
 
-The word's parameter here is $\tilde{Ξ}^{\mathrm{sp}}_w=2\tilde{Ξ}^{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\hat p$. The frame rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ has the axis $+\hat p$.
+The word's parameter here is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$, and the third factor of the word is $\mathcal B$, whose axis is $-\hat p$. The frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\hat p$.
 
-**Three errors to avoid.** Writing $\Theta=+i\theta^{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta^{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta^{\mathrm{rpd}})$, a four-vector of rapidity $\theta^{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta^{\mathrm{rpd}}\hat p}$ is a boost of rapidity $\theta^{\mathrm{rpd}}$ about $-\hat p$.
+**Three errors to avoid.** Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\theta_{\mathrm{rpd}}\hat p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\hat p$.
 
 ### The Trace and the Normalised State
 
@@ -212,19 +212,19 @@ The three pairings are three bracketings of the same word, and their domains dif
 | pairing | factorisation | factorisation exists | construction exists | witness of failure |
 | --- | --- | --- | --- | --- |
 | word | $r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
-| quaternion | $\tilde q\,e^{i\tilde{Ξ}^{\mathrm{sp}}}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | $\tilde q_r\neq0$ (on this domain) | $i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$ |
+| quaternion | $\tilde q\,e^{i\tilde{Ξ}_{\mathrm{sp}}}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | $\tilde q_r\neq0$ (on this domain) | $i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$ |
 | Hamilton | $\Rho\,e^{\vec U\Theta}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | same | $e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$ |
 | Cartan | $\tilde Q_H\tilde Q_0$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | $e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry |
 
 **The domains are not nested.** The quaternion construction fails at $\tilde q_r=0$; the Hamilton pairing fails when the vector part is null; the Cartan pairing is the widest and is total off the cone. The generalized polar decomposition extends the Cartan pairing to the cone with a partial isometry, and it is *The Polar Decomposition of a Biquaternion*.
 
-**The tangent equation on the domain of the word.** The equation $\tan\tilde{Ξ}^{\mathrm{sp}}=\tilde q_r^{-1}\tilde q_i$ fails to have a real solution in exactly one case, when $\tilde q_r^{-1}\tilde q_i$ is a unit pure quaternion. That case forces $\langle\tilde Q\rangle_{\natural}=0$: writing $\tilde q_i=\tilde q_rT$ with $T$ a unit pure quaternion makes the real inner product of $\tilde q_r$ and $\tilde q_i$ vanish and their norms equal, so the difference of the squared norms and the cross term both vanish. On the complement of the cone, therefore, the construction exists exactly when $\tilde q_r\neq0$. The condition $\tilde q_r\neq0$ alone is not sufficient on the whole algebra: $e_t+i\vec e_x$ has $\tilde q_r=e_t$ and lies on the cone, where the word does not exist. The article's "exactly" is correct on the word's domain; its claim that the set $\{\tilde q_r\neq0\}$ lies inside that domain is not.
+**The tangent equation on the domain of the word.** The equation $\tan\tilde{Ξ}_{\mathrm{sp}}=\tilde q_r^{-1}\tilde q_i$ fails to have a real solution in exactly one case, when $\tilde q_r^{-1}\tilde q_i$ is a unit pure quaternion. That case forces $\langle\tilde Q\rangle_{\natural}=0$: writing $\tilde q_i=\tilde q_rT$ with $T$ a unit pure quaternion makes the real inner product of $\tilde q_r$ and $\tilde q_i$ vanish and their norms equal, so the difference of the squared norms and the cross term both vanish. On the complement of the cone, therefore, the construction exists exactly when $\tilde q_r\neq0$. The condition $\tilde q_r\neq0$ alone is not sufficient on the whole algebra: $e_t+i\vec e_x$ has $\tilde q_r=e_t$ and lies on the cone, where the word does not exist. The article's "exactly" is correct on the word's domain; its claim that the set $\{\tilde q_r\neq0\}$ lies inside that domain is not.
 
 ## Summary
 
 Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $K$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.
 
-The polar word is $\tilde Q=r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\tilde{Ξ}^{\mathrm{sp}}$ and the word parameter is $\tilde{Ξ}^{\mathrm{sp}}_w=2\tilde{Ξ}^{\mathrm{sp}}$.
+The polar word is $\tilde Q=r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$ and the word parameter is $\tilde{Ξ}_{\mathrm{sp},w}=2\tilde{Ξ}_{\mathrm{sp}}$.
 
 The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has trace one. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.
 
@@ -236,8 +236,8 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | The biquaternion norm, the multiplicative one; its zero set is the zero-divisor cone |
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | The Hermitian norm, real and non-negative |
 | $Ξ$-regular, $Ξ$-degenerate | $Ξ(\tilde Q)\neq0$ and $Ξ(\tilde Q)=0$; only the $N$ pair is the unit partition |
-| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}^{\mathrm{sp}}$, $\vec U=\hat p$, $B=\lvert\vec p\rvert$ for a four-momentum |
-| $\theta^{\mathrm{rpd}}$, $\theta^{\mathrm{rpd}}_w$ | The kinematic rapidity and the word parameter, $\theta^{\mathrm{rpd}}_w=2\theta^{\mathrm{rpd}}$ for a four-vector |
+| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\tilde{Ξ}_{\mathrm{sp}}$, $\vec U=\hat p$, $B=\lvert\vec p\rvert$ for a four-momentum |
+| $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\mathrm b}$, $\mathcal B$ | The frame rotor and the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ |
 | $\operatorname{Tr}\tilde Q=2Q_t$ | The trace of the $2\times2$ image; a normalised state has trace one |
 | $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}\tilde{Ϛ}$ | The Born weight, a ratio in which the factor two cancels |

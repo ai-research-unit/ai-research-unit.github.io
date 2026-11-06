@@ -322,9 +322,9 @@ The quaternionic theory was built on an associative algebra, and the biquaternio
 
 The quaternion algebra is not replaced in the biquaternion theory; it is a real form of it. The complex algebra $M_{2}(\mathbb{C})$ has two real forms, the compact one and the split one, and correspondingly the real forms of the biquaternion algebra are the quaternions and the split quaternions:
 $$
-\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B},\qquad \mathbb{H}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B},
+\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B},\qquad \mathbb{H}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B},
 $$
-where $\mathbb{H}^{\mathrm{spl}}$ is the split quaternion algebra ($\mathbb{H}^{\mathrm{spl}}\cong M_{2}(\mathbb{R})$), in the notation of the mathematical corpus. The quaternions are therefore present twice over: as the compact real form, and concretely inside $\mathbb{B}$ as the four-dimensional real subalgebra $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$, the corpus's real-quaternion subspace, whose four coefficients are real and which carries the material space together with the informational time. The framework does not discard the quaternions; it stops using them as scalars. The two real forms are different real algebras with different physics: $\mathbb{H}$ carries the compact structure, and $\mathbb{H}^{\mathrm{spl}}$ the split one. The corpus works on both, so the quaternion algebra is present in the biquaternion theory under its own name, as one of the two real forms of the complexified algebra. The split branch is owned by the corpus's articles on complex split biquaternions, among them *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
+where $\mathbb{H}_{\mathrm{spl}}$ is the split quaternion algebra ($\mathbb{H}_{\mathrm{spl}}\cong M_{2}(\mathbb{R})$), in the notation of the mathematical corpus. The quaternions are therefore present twice over: as the compact real form, and concretely inside $\mathbb{B}$ as the four-dimensional real subalgebra $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$, the corpus's real-quaternion subspace, whose four coefficients are real and which carries the material space together with the informational time. The framework does not discard the quaternions; it stops using them as scalars. The two real forms are different real algebras with different physics: $\mathbb{H}$ carries the compact structure, and $\mathbb{H}_{\mathrm{spl}}$ the split one. The corpus works on both, so the quaternion algebra is present in the biquaternion theory under its own name, as one of the two real forms of the complexified algebra. The split branch is owned by the corpus's articles on complex split biquaternions, among them *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
 
 ### The Two-State Structure
 
@@ -386,7 +386,7 @@ Quaternionic quantum theory is the theory obtained by making the quaternion alge
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra; associative, non-commutative, a division ring |
 | $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | The real-quaternion subspace, the subalgebra of $\mathbb{B}$ isomorphic to $\mathbb{H}$ |
-| $\mathbb{H}^{\mathrm{spl}}$ | The split quaternion algebra, $\cong M_{2}(\mathbb{R})$; the second real form of $\mathbb{B}$ |
+| $\mathbb{H}_{\mathrm{spl}}$ | The split quaternion algebra, $\cong M_{2}(\mathbb{R})$; the second real form of $\mathbb{B}$ |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ | The biquaternion algebra; central simple over $\mathbb{C}$ |
 | $Z(\mathbb{B})=\mathbb{C}e_t$ | The centre; the scalar field of the biquaternion theory |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The basis, with $e_t=1$ and $\vec e_k^{2}=-e_t$ |

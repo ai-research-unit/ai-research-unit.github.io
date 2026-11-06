@@ -61,7 +61,7 @@ The step from a domain to a unique factorisation domain branches: the unique fac
 | $\mathcal{O}_K$ | integral domain | not a unique factorisation domain in general; Dedekind | *Algebraic Number Theory* |
 | $k[x_1, x_2, \ldots]$ in infinitely many variables | integral domain | not Noetherian | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]$, $\mathbb{Q}[x]$, $\mathbb{F}_p[x]$ | Euclidean domain | not a field: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
-| $\mathbb{Z}[\varkappa^{\mathrm{crd}}_n]$ | integral domain | Dedekind, not principal in general | *Cyclotomic Fields* |
+| $\mathbb{Z}[\varkappa_{\mathrm{crd},n}]$ | integral domain | Dedekind, not principal in general | *Cyclotomic Fields* |
 
 ## The Failure of Unique Factorisation
 
@@ -93,8 +93,8 @@ The quotient $\mathbb{Z}[\sqrt{-5}]/(2)$ records that $2$ is irreducible but not
 |---|---|---|
 | $\mathbb{Z}/6\mathbb{Z}$ | $2 \cdot 3 = 0$ with neither factor zero | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $2$ is a nonzero nilpotent, hence a zero divisor | *Reduced Rings and the Nilradical* |
-| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ | the idempotents $\Pi_{1,2}$ satisfy $\Pi_1\Pi_2 = 0$ | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dln}}$ | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |
+| $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ | the idempotents $\Pi_{1,2}$ satisfy $\Pi_1\Pi_2 = 0$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{dln}}$ | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |
 | $R \times S$ for nonzero $R, S$ | $(1,0)(0,1) = 0$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | not commutative, and it has zero divisors | *Matrix Algebras* |
 | $\mathbb{H}$ | a division ring, but not commutative, so not a commutative domain | *Quaternion Algebra* |
@@ -121,7 +121,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $k(x)$, $k((t))$ | Rational function field, Laurent series field |
 | $\mathbb{Z}_{(p)}$, $\mathbb{Z}_p$, $\mathbb{Q}_p$ | Localisation at $p$, $p$-adic integers, $p$-adic numbers |
 | $\operatorname{Frac}(R)$ | Field of fractions |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers, dual numbers; not domains |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Split-complex numbers, dual numbers; not domains |
 | $M_2(\mathbb{R})$, $\mathbb{H}$ | Matrix ring, quaternions; not commutative domains |
 
 ## Further Reading

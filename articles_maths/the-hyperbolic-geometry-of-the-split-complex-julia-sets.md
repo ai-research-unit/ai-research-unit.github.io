@@ -10,7 +10,7 @@ The article depends on *The Split-Complex Quadratic Family* and *The Split-Compl
 
 ### The Form and the Group
 
-**Definition.** The **Lorentzian form** of $\mathbb{C}^{\mathrm{spl}}$ is the polar form of the norm,
+**Definition.** The **Lorentzian form** of $\mathbb{C}_{\mathrm{spl}}$ is the polar form of the norm,
 
 $$
 B(z,w) = ab - a'b' , \qquad z = a+ja', \quad w = b+jb' ,
@@ -32,7 +32,7 @@ with identity component $SO^+(1,1) = \{z \mapsto \exp(js)z : s \in \mathbb{R}\}$
 
 **Proof.** Multiplication by $\exp(js)$ preserves $\langle\cdot\rangle_{*}$ and moves along the level set; conversely on $\langle z\rangle_{*} = 1$ with $z$ on the right branch one has $z = \exp(js)$ for the unique $s$ with $\cosh s = a$, $\sinh s = a'$, and $s$ is additive because $\exp(js)\exp(jt) = \exp(j(s+t))$. The parametrisation of the other branches is the same up to scale.
 
-**Definition (the null quadric).** The **null cone** is $\mathcal{N} = \{\langle z\rangle_{*} = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the two null lines of *Split-Complex Null Quadric and Projective Geometry*; in the projective line $\mathbb{P}(\mathbb{C}^{\mathrm{spl}})\cong\mathbb{RP}^1$ with affine coordinate $t = a'/a$, the **projective null quadric** is the pair of points at infinity $t = \pm1$. The identity component acts on the projective line by the projectivity
+**Definition (the null quadric).** The **null cone** is $\mathcal{N} = \{\langle z\rangle_{*} = 0\} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, the two null lines of *Split-Complex Null Quadric and Projective Geometry*; in the projective line $\mathbb{P}(\mathbb{C}_{\mathrm{spl}})\cong\mathbb{RP}^1$ with affine coordinate $t = a'/a$, the **projective null quadric** is the pair of points at infinity $t = \pm1$. The identity component acts on the projective line by the projectivity
 
 $$
 t \longmapsto \frac{t+\tanh s}{1+t\tanh s} ,
@@ -44,13 +44,13 @@ fixing each of the two points at infinity, and the **hyperbolic distance** betwe
 
 ## The Symmetries of the Family
 
-**Theorem (the affine automorphisms).** The only affine bijection of $\mathbb{C}^{\mathrm{spl}}$ commuting with $f_c(z) = z^2+c$ is the identity, for every $c$.
+**Theorem (the affine automorphisms).** The only affine bijection of $\mathbb{C}_{\mathrm{spl}}$ commuting with $f_c(z) = z^2+c$ is the identity, for every $c$.
 
 **Proof.** An affine bijection $h(z) = \alpha z+\beta$ with $h\circ f_c = f_c\circ h$ gives $\alpha(z^2+c)+\beta = (\alpha z+\beta)^2+c$, that is $\alpha z^2+\alpha c+\beta = \alpha^2z^2+2\alpha\beta z+\beta^2+c$. Comparing the coefficients of $z^2$ and of $z$ gives
 $$
 \alpha = \alpha^2, \qquad 2\alpha\beta = 0 .
 $$
-The solutions of $\alpha^2 = \alpha$ in $\mathbb{C}^{\mathrm{spl}}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{C}^{\mathrm{spl}}$ has no nonzero element of additive order two. Hence $h$ is the identity.
+The solutions of $\alpha^2 = \alpha$ in $\mathbb{C}_{\mathrm{spl}}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{C}_{\mathrm{spl}}$ has no nonzero element of additive order two. Hence $h$ is the identity.
 
 **Theorem (the even symmetries).** The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every unit with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
 $$
@@ -60,7 +60,7 @@ although none of the three nontrivial ones commutes with $f_c$. Among the hyperb
 
 **Proof.** $f_c(uz) = u^2z^2+c = z^2+c = f_c(z)$ when $u^2 = 1$, and then $f_c^n(uz) = f_c^n(z)$ for every $n$ by induction. Since $z \mapsto uz$ is a bi-Lipschitz bijection of the plane, the family $\{f_c^n\}$ is equicontinuous at $z$ if and only if it is at $uz$, so both sets are invariant. For a hyperbolic rotation $u = \exp(js)$ one has $u^2 = \exp(2js)$, which is $1$ only for $s = 0$.
 
-**Theorem (the scaling action).** Let $u \in \mathbb{C}^{\mathrm{spl}}$ be a unit and let $h(z) = uz$. Then
+**Theorem (the scaling action).** Let $u \in \mathbb{C}_{\mathrm{spl}}$ be a unit and let $h(z) = uz$. Then
 
 $$
 h^{-1}\circ f_c\circ h\,(z) = u z^2 + \frac{c}{u} ,
@@ -70,7 +70,7 @@ a quadratic polynomial with leading coefficient $u$, and its normalised paramete
 
 **Proof.** Substituting gives $h^{-1}f_c(h(z)) = u^{-1}((uz)^2+c) = uz^2+c/u$. The normalisation formula of *The Mandelbrot Set and the Quadratic Family*, $c' = ad - b^2/4 + b/2$ for $az^2+bz+d$, gives $c' = u\cdot(c/u) - 0 + 0 = c$. So the scaled map is conjugate to $f_c$, and the conjugacy is the affine normalisation of the scaled map, not an isometry of the split plane. The affine automorphisms of $f_c$ are trivial and the even symmetries of the previous theorem are the only set-theoretic symmetries coming from the algebra.
 
-**Corollary.** The hyperbolic rotations act trivially on the parameter plane: the connectedness locus $M_{\mathbb{C}^{\mathrm{spl}}}$ and the Julia set up to affine conjugacy are $SO(1,1)$-invariant as parameter data, but the plane is not acted on by $SO(1,1)$ in a way that preserves a given $J_c$. The Julia sets are read with the hyperbolic structure through the **foliation** by the level sets of the norm and the coordinates, not through a symmetry.
+**Corollary.** The hyperbolic rotations act trivially on the parameter plane: the connectedness locus $M_{\mathbb{C}_{\mathrm{spl}}}$ and the Julia set up to affine conjugacy are $SO(1,1)$-invariant as parameter data, but the plane is not acted on by $SO(1,1)$ in a way that preserves a given $J_c$. The Julia sets are read with the hyperbolic structure through the **foliation** by the level sets of the norm and the coordinates, not through a symmetry.
 
 ## The Foliation and the Dimension
 
@@ -86,7 +86,7 @@ a union of the two coordinate-line families restricted to the hyperbola. On the 
 
 **Proof.** Immediate from the product formula $J_c = \varphi^{-1}((J_+\times\mathbb{R})\cup(\mathbb{R}\times J_-))$ of *The Split-Complex Julia Sets* and from $N = z_+z_-$; the level set $\langle z\rangle_{*} = t$ in the coordinates is the hyperbola $z_+z_- = t$, which the two coordinate foliations cut into the two families, and its intersections with $J_c$ are exactly those on which a coordinate lies in the corresponding real Julia set.
 
-**Theorem (the dimension).** For every $c \in \mathbb{C}^{\mathrm{spl}}$ the Hausdorff dimension of the split Julia set is
+**Theorem (the dimension).** For every $c \in \mathbb{C}_{\mathrm{spl}}$ the Hausdorff dimension of the split Julia set is
 
 $$
 \boxed{\; \dim_H J_c = 1 + \max\{\dim_H J_+,\ \dim_H J_-\} \;},
@@ -102,7 +102,7 @@ whenever the two real Julia sets are nonempty, the product rule $\dim_H(A\times\
 
 ## The Hyperbolic Components and the Multiplier Metric
 
-**Definition.** A parameter of $M_{\mathbb{C}^{\mathrm{spl}}}$ is **hyperbolic** if both real maps $g_\pm$ have an attracting cycle, that is if both $c_+$ and $c_-$ lie in the union of the real hyperbolic intervals; a **hyperbolic component** of $M_{\mathbb{C}^{\mathrm{spl}}}$ is a connected component of the hyperbolic parameters. Since the condition is a product condition, a hyperbolic component of $M_{\mathbb{C}^{\mathrm{spl}}}$ is $\varphi^{-1}(I_+ \times I_-)$ with $I_\pm$ a real hyperbolic interval.
+**Definition.** A parameter of $M_{\mathbb{C}_{\mathrm{spl}}}$ is **hyperbolic** if both real maps $g_\pm$ have an attracting cycle, that is if both $c_+$ and $c_-$ lie in the union of the real hyperbolic intervals; a **hyperbolic component** of $M_{\mathbb{C}_{\mathrm{spl}}}$ is a connected component of the hyperbolic parameters. Since the condition is a product condition, a hyperbolic component of $M_{\mathbb{C}_{\mathrm{spl}}}$ is $\varphi^{-1}(I_+ \times I_-)$ with $I_\pm$ a real hyperbolic interval.
 
 **Theorem (the multiplier map).** Let $H = \varphi^{-1}(I_+\times I_-)$ be a hyperbolic component, where $I_\pm$ is a real hyperbolic interval of period $p_\pm$. Then the **multiplier map**
 

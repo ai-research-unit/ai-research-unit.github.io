@@ -161,7 +161,7 @@ that is $N^{2}(N-1)^{2}/4$ polynomial conditions, which define a variety of codi
 | a generic matrix of rank $1$ | $1$ | $4$ | $4$ |
 | a generic matrix | $4$ | $4$ | $4$ |
 
-**The lesson.** The ordinary rank of $M$ is a property of $M$ as a linear map of $\mathbb{C}^{n^{2}}$; the length is a property of $M$ as an element of $M_{n}\otimes M_{n}^{\mathrm{opp}}$. **The two are ranks of two different matrices attached to the same operator, and there is no inequality between them in either direction** — beyond the trivial bounds $0\le\ell\le n^{2}$ and $0\le\operatorname{rank}M\le n^{2}$, which are the dimensions of two unrelated spaces.
+**The lesson.** The ordinary rank of $M$ is a property of $M$ as a linear map of $\mathbb{C}^{n^{2}}$; the length is a property of $M$ as an element of $M_{n}\otimes M_{\mathrm{opp},n}$. **The two are ranks of two different matrices attached to the same operator, and there is no inequality between them in either direction** — beyond the trivial bounds $0\le\ell\le n^{2}$ and $0\le\operatorname{rank}M\le n^{2}$, which are the dimensions of two unrelated spaces.
 
 ### The Rank of a Product
 
@@ -189,17 +189,17 @@ $$
 
 ### The Commutative Case
 
-**The collapse.** Let $A$ be commutative. Then $A^{\mathrm{opp}}=A$ and $L_{A}R_{B}=L_{AB}$, so the product set is the one-sided family of dimension $N$, and every nonzero member has length one. The theorem $\ell=\operatorname{rank}c$ survives in the form "the length is $0$ or $1$", and it becomes empty.
+**The collapse.** Let $A$ be commutative. Then $A_{\mathrm{opp}}=A$ and $L_{A}R_{B}=L_{AB}$, so the product set is the one-sided family of dimension $N$, and every nonzero member has length one. The theorem $\ell=\operatorname{rank}c$ survives in the form "the length is $0$ or $1$", and it becomes empty.
 
 **The array is not well defined.** In the commutative case the map $A\otimes A\to\operatorname{End}(A)$ has kernel of dimension $N^{2}-N$, so an operator has many coefficient arrays, of different ranks. The dual numbers give the example: $\varepsilon X\varepsilon=0$ for every $X$, so the tensor $\varepsilon\otimes\varepsilon$ lies in the kernel, and the operator $L_{1}$ has the array of $1\otimes1$, of rank one, and also the array of $1\otimes1+\varepsilon\otimes\varepsilon$, of rank two. **The rank of the array is then a property of the chosen expansion and not of the operator.**
 
-**The criterion.** The identity $\ell(M)=\operatorname{rank}c(M)$ holds for an algebra $A$ exactly when the multiplication map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ is injective, that is exactly when $A$ is central simple. Over $\mathbb{C}$ these are the algebras $M_{n}(\mathbb{C})$, so **the theorem is a theorem about matrix algebras and about nothing else**: a split algebra, a commutative algebra or a product of two matrix algebras all fail it.
+**The criterion.** The identity $\ell(M)=\operatorname{rank}c(M)$ holds for an algebra $A$ exactly when the multiplication map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}(A)$ is injective, that is exactly when $A$ is central simple. Over $\mathbb{C}$ these are the algebras $M_{n}(\mathbb{C})$, so **the theorem is a theorem about matrix algebras and about nothing else**: a split algebra, a commutative algebra or a product of two matrix algebras all fail it.
 
 **The reduced biquaternion case.** The algebra $\mathbb{C}\times\mathbb{C}$ is commutative, of dimension two, and its operator space has dimension four. The products fill a two-dimensional subspace, every nonzero member has length one, and the length of the identity is one and not two. **The algebra has the same complex dimension as the dual numbers and the same failure of the theorem; the failure follows from the commutativity and not from the size.**
 
 ### The Two-Theory Reading
 
-**The array is the tensor.** The coefficient array is the tensor of $M$ in $A\otimes A^{\mathrm{opp}}$, read in the basis of the products. The length is the tensor rank. For a tensor with two factors the tensor rank is the rank of the flattening, and this is the whole content of the theorem. **For a tensor with three factors the two notions part company, and this is why the statement is not a general fact about tensor rank.**
+**The array is the tensor.** The coefficient array is the tensor of $M$ in $A\otimes A_{\mathrm{opp}}$, read in the basis of the products. The length is the tensor rank. For a tensor with two factors the tensor rank is the rank of the flattening, and this is the whole content of the theorem. **For a tensor with three factors the two notions part company, and this is why the statement is not a general fact about tensor rank.**
 
 **The place of the theorem.** The corpus uses the same identity three times: in the biquaternion Peirce frame with sixteen operators, in the canonical frame with the same sixteen in another basis, and here with $n^{4}$ operators. The three statements are one statement read in three frames, and the frame changes the array by a linear conjugation and not the rank.
 
@@ -209,7 +209,7 @@ The $n^{4}$ products $L_{E_{\mu}}R_{E_{\nu}}$ are an orthonormal basis of the en
 
 The length, the least number of products in a decomposition, equals the rank of $c(M)$. It takes the values $0,\dots,n^{2}$; the set of length at most $r$ is the determinantal variety of dimension $2rn^{2}-r^{2}$; a product is exactly a matrix of coefficient rank one; and a generic matrix has length $n^{2}$.
 
-The length and the ordinary rank are independent: a product of full rank has length one, and a generic matrix of rank one has length $n^{2}$. The theorem holds exactly for the central simple algebras, that is for $M_{n}(\mathbb{C})$; for a commutative or split algebra the coefficient array is not unique and the length collapses to $\{0,1\}$. **The length is the tensor rank in $M_{n}\otimes M_{n}^{\mathrm{opp}}$, exact because the tensor has two factors, and it is the only invariant of the endomorphism algebra that the ordinary rank does not see.**
+The length and the ordinary rank are independent: a product of full rank has length one, and a generic matrix of rank one has length $n^{2}$. The theorem holds exactly for the central simple algebras, that is for $M_{n}(\mathbb{C})$; for a commutative or split algebra the coefficient array is not unique and the length collapses to $\{0,1\}$. **The length is the tensor rank in $M_{n}\otimes M_{\mathrm{opp},n}$, exact because the tensor has two factors, and it is the only invariant of the endomorphism algebra that the ordinary rank does not see.**
 
 ## Summary of Notation
 

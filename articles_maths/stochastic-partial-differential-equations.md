@@ -31,7 +31,7 @@ $$
 W_t = \sum_{k\ge1}\beta_k(t)e_k ,
 $$
 
-which does not converge in $H$; the series converges in every larger Hilbert space $H^{\mathrm{ext}}\supset H$ for which the inclusion $H\to H^{\mathrm{ext}}$ is Hilbert–Schmidt.
+which does not converge in $H$; the series converges in every larger Hilbert space $H_{\mathrm{ext}}\supset H$ for which the inclusion $H\to H_{\mathrm{ext}}$ is Hilbert–Schmidt.
 
 **Definition.** Let $\Sigma$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a **trace-class covariance**), and let $(e_k)$ diagonalise $\Sigma$ with eigenvalues $q_k$: $\Sigma e_k=q_ke_k$, $\sum_kq_k<\infty$. A **$\Sigma$-Wiener process** is
 

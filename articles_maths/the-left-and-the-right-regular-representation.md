@@ -15,7 +15,7 @@ The Hilbert algebra is *Hilbert Algebras*; the completion on which the represent
 **Definition.** On $A$ the **left regular representation** and the **right regular representation** are
 
 $$
-L_x(y) = xy, \qquad R_x(y) = yx = L_x^{\mathrm{right}}(y).
+L_x(y) = xy, \qquad R_x(y) = yx = L_{\mathrm{right},x}(y).
 $$
 
 **Proposition (representation and antirepresentation).** $L$ is a representation, $L_{xy} = L_xL_y$; $R$ is an antirepresentation, $R_{xy} = R_yR_x$; and both are $\ast$-compatible on the left in the sense

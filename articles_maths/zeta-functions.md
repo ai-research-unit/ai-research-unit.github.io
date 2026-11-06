@@ -61,9 +61,9 @@ where $\gamma$ is Euler's constant. The continuation is unique.
 
 ### The Functional Equation
 
-**Definition.** The **theta function** is $\vartheta^{\mathrm{thf}}(t) = \sum_{n\in\mathbb{Z}} \exp(-\pi n^2 t)$ for $t>0$, and the **completed zeta function** is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.
+**Definition.** The **theta function** is $\vartheta_{\mathrm{thf}}(t) = \sum_{n\in\mathbb{Z}} \exp(-\pi n^2 t)$ for $t>0$, and the **completed zeta function** is $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$.
 
-**Theorem (Jacobi's functional equation for theta).** For $t > 0$, $\vartheta^{\mathrm{thf}}(1/t) = \sqrt{t}\,\vartheta^{\mathrm{thf}}(t)$.
+**Theorem (Jacobi's functional equation for theta).** For $t > 0$, $\vartheta_{\mathrm{thf}}(1/t) = \sqrt{t}\,\vartheta_{\mathrm{thf}}(t)$.
 
 **Proof sketch.** Both sides are the value at $0$ of the periodisation of the Gaussian $\exp(-\pi t x^2)$, and the Poisson summation formula on the real line identifies the periodisation with the sum of the Fourier transforms of the Gaussian at the integers; the Gaussian $\exp(-\pi t x^2)$ has Fourier transform $t^{-1/2}\exp(-\pi \zeta^2/t)$.
 
@@ -73,9 +73,9 @@ $$
 $$
 Moreover $\zeta(1-s)$ on the right is the analytic continuation, so the formula continues $\omega$ to the whole plane and exhibits the trivial zeros.
 
-**Proof sketch.** The Mellin transform of $(\vartheta^{\mathrm{thf}}(t)-1)/2$ is $\Lambda(s)$ for $\sigma>1$:
+**Proof sketch.** The Mellin transform of $(\vartheta_{\mathrm{thf}}(t)-1)/2$ is $\Lambda(s)$ for $\sigma>1$:
 $$
-\Lambda(s) = \int_0^\infty \frac{\vartheta^{\mathrm{thf}}(t)-1}{2}\, t^{s/2}\,\frac{dt}{t} .
+\Lambda(s) = \int_0^\infty \frac{\vartheta_{\mathrm{thf}}(t)-1}{2}\, t^{s/2}\,\frac{dt}{t} .
 $$
 Splitting the integral at $t=1$ and substituting $t\mapsto1/t$ in the part over $(0,1)$, the theta functional equation turns that part into the same expression with $s$ replaced by $1-s$, giving the invariance. The asymmetric form follows by substituting the reflection and duplication formulas for the Gamma function.
 
@@ -159,7 +159,7 @@ The rationality of the local factor is the first of the Weil conjectures; the fu
 
 A Dirichlet series $\sum a_nn^{-s}$ has an abscissa of convergence $\sigma_c$ and an abscissa of absolute convergence $\sigma_a$ with $\sigma_c\le\sigma_a\le\sigma_c+1$, it is holomorphic on the half-plane $\Re s>\sigma_c$, and a series with nonnegative coefficients has a singularity at its abscissa of convergence, by Landau's theorem. A series with multiplicative coefficients has an Euler product, which is the mechanism that puts the primes into the analytic function.
 
-The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta^{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta^{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\omega = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of *Adelic Analysis*. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.
+The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has the Euler product over the primes, and extends to a meromorphic function whose only pole is simple at $s=1$ with residue $1$; the completed function $\Lambda(s) = \pi^{-s/2}\Gamma(s/2)\zeta(s)$ satisfies $\Lambda(s) = \Lambda(1-s)$ and equivalently $\zeta(s) = 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\zeta(1-s)$, the proof being the Mellin transform of the theta function together with its functional equation $\vartheta_{\mathrm{thf}}(1/t) = \sqrt t\,\vartheta_{\mathrm{thf}}(t)$. The completions give the special values: $\zeta(2n)$ is a rational multiple of $\pi^{2n}$ with the Bernoulli numbers as coefficients, and $\omega = -B_{n+1}/(n+1)$ for $n\ge1$ with $\zeta(0) = -\tfrac12$, so that the negative even integers are simple zeros and all other nontrivial zeros lie in the critical strip. The Dedekind zeta function of a number field has an Euler product over the prime ideals, a meromorphic continuation whose only pole is simple at $s=1$, a functional equation for the completed function with the discriminant and the Gamma factors, and a residue at the pole that is the class number formula; the adelic proof of all of this is Tate's thesis, the local and global zeta integrals of *Adelic Analysis*. The zeta function of a variety over a finite field is rational, by Dwork's lemma, and the Hasse–Weil zeta function of a variety over $\mathbb{Z}$ is the product of the local factors.
 
 ## Summary of Notation
 
@@ -169,7 +169,7 @@ The Riemann zeta function $\zeta(s) = \sum n^{-s}$ converges for $\Re s>1$, has 
 | $\zeta(s)$ | Riemann zeta function, $\sum_{n\ge1}n^{-s}$ |
 | $\prod_p$ | Product over the primes |
 | $\Lambda(s)$ | Completed zeta, $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ |
-| $\vartheta^{\mathrm{thf}}(t)$ | Theta function, $\sum_{n\in\mathbb{Z}}\exp(-\pi n^2t)$ |
+| $\vartheta_{\mathrm{thf}}(t)$ | Theta function, $\sum_{n\in\mathbb{Z}}\exp(-\pi n^2t)$ |
 | $\Gamma$ | Gamma function, $\Gamma(s+1)=s\Gamma(s)$ |
 | $\gamma$ | Euler's constant |
 | $B_n$ | Bernoulli numbers, generating function $t/(\exp(t)-1)$ |

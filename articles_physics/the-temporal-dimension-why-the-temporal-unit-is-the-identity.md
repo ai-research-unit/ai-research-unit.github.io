@@ -44,10 +44,10 @@ $$
 \tilde u\,e_t\,\tilde u^{*} = e_t ,
 $$
 
-because $e_t$ is central and a unit real quaternion has $\tilde u^{*} = \tilde u^{\natural} = \tilde u^{-1}$; a rotation moves the three vector units among themselves and leaves $e_t$ where it is. A **boost** is the other kind of rotor, and on the temporal unit it is not trivial. A pure boost of rapidity $\theta^{\mathrm{rpd}}$ along the unit real vector $\vec u$ is $B(\theta^{\mathrm{rpd}},\vec u) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u$, and on the temporal unit it acts as
+because $e_t$ is central and a unit real quaternion has $\tilde u^{*} = \tilde u^{\natural} = \tilde u^{-1}$; a rotation moves the three vector units among themselves and leaves $e_t$ where it is. A **boost** is the other kind of rotor, and on the temporal unit it is not trivial. A pure boost of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$ is $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$, and on the temporal unit it acts as
 
 $$
-B\,e_t\,B^{*} = \cosh\theta^{\mathrm{rpd}}\,e_t + i\sinh\theta^{\mathrm{rpd}}\,\vec u \in \mathbb{M}_+ ,
+B\,e_t\,B^{*} = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u \in \mathbb{M}_+ ,
 $$
 
 which is Hermitian of unit biquaternion norm: the boost carries the unit out of the centre and into the informational sector. The temporal direction is therefore fixed by the rotations and moved by the boosts, and it is the axis the rotations share. The boost does not exchange $e_t$ for one of the vector units; it mixes the temporal direction with a spatial one, and that mixing is what makes the temporal direction a coordinate of the element rather than a parameter outside the algebra.
@@ -219,7 +219,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian (probability) form; positive definite, $\sum_\mu\lvert Q_\mu\rvert^2$ |
 | $\mathrm{Sc}(\tilde Q) = Q_t$ | Scalar part, the temporal coefficient of the element |
 | $\tilde U \in \mathbb{B}^\times_1$, $\langle\tilde U\rangle_{\natural} = e_t$ | Rotor of the Lorentz action $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$, which preserves $\langle\tilde Q\rangle_{\natural}$ |
-| $B(\theta^{\mathrm{rpd}},\vec u) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta^{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{M}_+$ |
+| $B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u$ | Boost rotor of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{M}_+$ |
 | $\partial/\partial R_t$ | The temporal derivative in the biquaternionic gradient |
 
 ## Further Reading

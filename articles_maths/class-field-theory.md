@@ -195,7 +195,7 @@ $$
 \boxed{\;\operatorname{gal}(K_{\mathrm{M}}/K) \cong \operatorname{Cl}_{\mathrm{M}}(K) = I_K^{\mathrm{M}}/P_\mathrm{M}\;} .
 $$
 
-**(c)** Every abelian extension of $K$ is contained in the ray class field of some modulus; equivalently, the union of the fields $K_{\mathrm{M}}$ over all moduli $\mathrm{M}$ is the maximal abelian extension $K^{\mathrm{ab}}$ of $K$.
+**(c)** Every abelian extension of $K$ is contained in the ray class field of some modulus; equivalently, the union of the fields $K_{\mathrm{M}}$ over all moduli $\mathrm{M}$ is the maximal abelian extension $K_{\mathrm{ab}}$ of $K$.
 
 **(d)** The correspondence reverses inclusion: $H_1 \supseteq H_2$ if and only if the field attached to $H_1$ is contained in the field attached to $H_2$, and $\left[I_K^{\mathrm{M}} : H\right] = [L:K]$ for the field $L$ attached to $H$.
 
@@ -327,7 +327,7 @@ The case $\mathrm{M} = (1)$ gives the Hilbert class field $H_K$, the maximal abe
 | $\operatorname{Cl}(\mathcal{O}_K)$, $h_K$ | Ideal class group and class number |
 | $K_\mathrm{M}$ | Ray class field of the modulus $\mathrm{M}$ |
 | $H_K$ | Hilbert class field, the ray class field of $(1)$ |
-| $K^{\mathrm{ab}}$ | Maximal abelian extension of $K$ |
+| $K_{\mathrm{ab}}$ | Maximal abelian extension of $K$ |
 | $\mathrm{F}(L/K)$, $\mathrm{F}(\chi)$ | Conductor of an extension, of a character |
 | $\mathrm{D}_{L/K}$ | Relative discriminant |
 | $\alpha_{L/K}$ | Fundamental class in $H^2(\operatorname{gal}(L/K),L^\times)$ |

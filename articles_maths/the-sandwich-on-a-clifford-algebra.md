@@ -45,10 +45,10 @@ $$
 The law is the semi-direct product of the two one-sided families and it is worth reading off its two consequences. The parameters multiply on the left and on the right **independently and without reversal**: the left factors compose as $a c$ and the right factors as $d b$. So the set of sandwiches is a monoid isomorphic to the direct product of the multiplicative monoids of the algebra with the reverse order on the second factor,
 
 $$
-\{L_{a}R_{b}\} \cong \mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q}) ,
+\{L_{a}R_{b}\} \cong \mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q}) ,
 $$
 
-where $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}}$ has the reversed product.
+where $\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}}$ has the reversed product.
 
 **Corollary (units).** $L_{a}R_{b}$ is a bijection if and only if $a$ and $b$ are units; then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$.
 
@@ -174,7 +174,7 @@ Let $x = 1 + e_1e_2e_3 = 1 + \omega$ in $\mathrm{Cl}_{0,3}$. Then $x^{2} = 1 + 2
 
 ## Summary
 
-The **sandwich** $L_{a}R_{b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{ db}$ with the left factors in the written order and the right factors reversed, and the sandwiches form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are units, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. It remembers the product $ab$ and the value $L_{a}R_{b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
+The **sandwich** $L_{a}R_{b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{ db}$ with the left factors in the written order and the right factors reversed, and the sandwiches form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are units, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. It remembers the product $ab$ and the value $L_{a}R_{b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
 
 Restricted to the quadratic space, the sandwich of a versor is the inner conjugation, and the correct action on $V$ is the **twisted conjugation** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the sandwich by $(x, \alpha(x)^{-1})$; the two differ by the parity sign, $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$, so they agree on the even part of the Clifford group and are negatives on the odd part. The twisted conjugation of a versor is an isometry of $V$, a vector gives the reflection $\rho_u = \chi_u$, and an even versor gives a rotation; the map $x \mapsto \chi_x\big|_V$ is the homomorphism $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ on which the pin and spin groups are built. The article owns the two-parameter product and the versor action alone; the general operator family is *Two-Sided Operators on a Clifford Algebra*, and the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 

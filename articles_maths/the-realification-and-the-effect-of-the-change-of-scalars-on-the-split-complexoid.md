@@ -2,32 +2,32 @@
 
 ## Introduction
 
-The split-complex algebra is one ring and it carries two scalar readings: the reading over itself, in which it is a module of rank one on the ring $\mathbb{C}^{\mathrm{spl}}$, and the reading over $\mathbb{R}$, in which it is a two-dimensional real algebra. The passage from the first to the second is the realification, the same construction that carries an algebra from its complex reading to its real reading, and this article reads that construction on $\mathbb{C}^{\mathrm{spl}}$: the doubling of the dimension, the **split complex structure** $J$, which is the multiplication by $j$ with $J^2=+\mathrm{id}$, the two kinds of real-linear map and the two block shapes they give, the realification of the two forms, and the dictionary of the statements that change and the statements that do not.
+The split-complex algebra is one ring and it carries two scalar readings: the reading over itself, in which it is a module of rank one on the ring $\mathbb{C}_{\mathrm{spl}}$, and the reading over $\mathbb{R}$, in which it is a two-dimensional real algebra. The passage from the first to the second is the realification, the same construction that carries an algebra from its complex reading to its real reading, and this article reads that construction on $\mathbb{C}_{\mathrm{spl}}$: the doubling of the dimension, the **split complex structure** $J$, which is the multiplication by $j$ with $J^2=+\mathrm{id}$, the two kinds of real-linear map and the two block shapes they give, the realification of the two forms, and the dictionary of the statements that change and the statements that do not.
 
-The general construction is *The Realification and the Effect of the Change of Scalars*, which owns the definitions of the realification of a vector space, of a linear map and of a form, the criteria $TJ=JT$ and $SJ=-JS$, the two realification rules and the four effects; none of that is reproved here, it is read on $\mathbb{C}^{\mathrm{spl}}$. The forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, the article preceding this one, and their reading on the subspaces is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*. The complex prototype, the first rung, is *The Realification and the Effect of the Change of Scalars* of the chapter `## Complex Numbers`.
+The general construction is *The Realification and the Effect of the Change of Scalars*, which owns the definitions of the realification of a vector space, of a linear map and of a form, the criteria $TJ=JT$ and $SJ=-JS$, the two realification rules and the four effects; none of that is reproved here, it is read on $\mathbb{C}_{\mathrm{spl}}$. The forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, the article preceding this one, and their reading on the subspaces is *Remarkable Subspaces of the Split-Complexoid and the Two Forms*. The complex prototype, the first rung, is *The Realification and the Effect of the Change of Scalars* of the chapter `## Complex Numbers`.
 
 **The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $Q_1=q_1+jq'_1$ and $Q_2=q_2+jq'_2$ are elements, so $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{*}$ name forms and norms only, and the structure is $J$, the multiplication by $j$.
 
 ## The Two Scalar Interpretations and the Doubling
 
-Read over itself, $\mathbb{C}^{\mathrm{spl}}$ is a free module of rank one on the basis $1$: every element is $\lambda\cdot1$ with $\lambda\in\mathbb{C}^{\mathrm{spl}}$, and the only $\mathbb{C}^{\mathrm{spl}}$-submodules are the ideals. Read over $\mathbb{R}$, it is a real vector space of dimension two on the basis $1,j$. The passage from the first reading to the second is restriction of scalars, and the dimension doubles:
+Read over itself, $\mathbb{C}_{\mathrm{spl}}$ is a free module of rank one on the basis $1$: every element is $\lambda\cdot1$ with $\lambda\in\mathbb{C}_{\mathrm{spl}}$, and the only $\mathbb{C}_{\mathrm{spl}}$-submodules are the ideals. Read over $\mathbb{R}$, it is a real vector space of dimension two on the basis $1,j$. The passage from the first reading to the second is restriction of scalars, and the dimension doubles:
 
 $$
 \boxed{\;
-\dim_{\mathbb{C}^{\mathrm{spl}}}\mathbb{C}^{\mathrm{spl}}=1,
+\dim_{\mathbb{C}_{\mathrm{spl}}}\mathbb{C}_{\mathrm{spl}}=1,
 \qquad
-\dim_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}=2
+\dim_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}=2
 \;},
 $$
 
-the real basis being $1,j$. The general proposition that the dimension doubles holds as stated, with a $\mathbb{C}^{\mathrm{spl}}$-basis $e_1$ giving the $\mathbb{R}$-basis $e_1,je_1$; the difference from the complex prototype is that the scalar algebra is the ring $\mathbb{C}^{\mathrm{spl}}$ rather than a field, so that the module theory over it is the theory of the ideals, not the theory of a vector space over a field. The rank-one module is $\mathbb{C}^{\mathrm{spl}}$ itself, and its proper non-zero submodules are the two idempotent lines.
+the real basis being $1,j$. The general proposition that the dimension doubles holds as stated, with a $\mathbb{C}_{\mathrm{spl}}$-basis $e_1$ giving the $\mathbb{R}$-basis $e_1,je_1$; the difference from the complex prototype is that the scalar algebra is the ring $\mathbb{C}_{\mathrm{spl}}$ rather than a field, so that the module theory over it is the theory of the ideals, not the theory of a vector space over a field. The rank-one module is $\mathbb{C}_{\mathrm{spl}}$ itself, and its proper non-zero submodules are the two idempotent lines.
 
 ## The Split Complex Structure
 
 The multiplication by $j$ is the real-linear map
 
 $$
-J:\mathbb{C}^{\mathrm{spl}}\longrightarrow\mathbb{C}^{\mathrm{spl}},
+J:\mathbb{C}_{\mathrm{spl}}\longrightarrow\mathbb{C}_{\mathrm{spl}},
 \qquad
 J(Q)=jQ,
 $$
@@ -35,7 +35,7 @@ $$
 and the whole of the difference from the complex prototype is in its square:
 
 $$
-J^2=+\mathrm{id}_{\mathbb{C}^{\mathrm{spl}}},
+J^2=+\mathrm{id}_{\mathbb{C}_{\mathrm{spl}}},
 $$
 
 against $J^2=-\mathrm{id}_{\mathbb{C}}$ for the multiplication by $i$ on $\mathbb{C}$. The general construction names the operator of square $-\mathrm{id}$ a **complex structure**; the operator of square $+\mathrm{id}$ is a **product structure**, and it is the second kind that the split sign produces.
@@ -43,26 +43,26 @@ against $J^2=-\mathrm{id}_{\mathbb{C}}$ for the multiplication by $i$ on $\mathb
 **Proposition (the structure is diagonalisable, and splits the algebra).** The operator $J$ is diagonalisable over $\mathbb{R}$, with eigenvalues $+1$ and $-1$ and eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and
 
 $$
-\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2.
+\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2.
 $$
 
 **Proof.** In the basis $1,j$ the matrix of $J$ is $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, with eigenvalues the roots of $t^2-1=(t-1)(t+1)$, namely $+1$ and $-1$; the $+1$ eigenline is $\mathbb{R}(1+j)=\mathbb{R}\Pi_1$ and the $-1$ eigenline is $\mathbb{R}(1-j)=\mathbb{R}\Pi_2$, and the two eigenvectors are independent, so the operator is diagonalisable.
 
-So the split complex structure does not make the space into a complex line; it **splits it into two real lines**, the two eigenspaces, which is the idempotent decomposition. On the complex field the corresponding operator has no real eigenvalue and no invariant real line; here the two eigenlines are real and are the two minimal ideals. The invariant subspaces of $J$ are exactly the real subspaces closed under $J$, and they are $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ and $\mathbb{C}^{\mathrm{spl}}$: the two minimal ideals with the zero and the whole, where on $\mathbb{C}$ the invariant subspaces are only $\{0\}$ and $\mathbb{C}$.
+So the split complex structure does not make the space into a complex line; it **splits it into two real lines**, the two eigenspaces, which is the idempotent decomposition. On the complex field the corresponding operator has no real eigenvalue and no invariant real line; here the two eigenlines are real and are the two minimal ideals. The invariant subspaces of $J$ are exactly the real subspaces closed under $J$, and they are $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ and $\mathbb{C}_{\mathrm{spl}}$: the two minimal ideals with the zero and the whole, where on $\mathbb{C}$ the invariant subspaces are only $\{0\}$ and $\mathbb{C}$.
 
 ## The Two Kinds of Real-Linear Map
 
-The criteria of the general construction read: a real-linear map is $\mathbb{C}^{\mathrm{spl}}$-linear exactly when it commutes with the structure, and conjugate-$\mathbb{C}^{\mathrm{spl}}$-linear exactly when it anticommutes,
+The criteria of the general construction read: a real-linear map is $\mathbb{C}_{\mathrm{spl}}$-linear exactly when it commutes with the structure, and conjugate-$\mathbb{C}_{\mathrm{spl}}$-linear exactly when it anticommutes,
 
 $$
 T J=J T
-\quad\text{for $\mathbb{C}^{\mathrm{spl}}$-linear }T,
+\quad\text{for $\mathbb{C}_{\mathrm{spl}}$-linear }T,
 \qquad
 S J=-J S
-\quad\text{for conjugate-}\mathbb{C}^{\mathrm{spl}}\text{-linear }S .
+\quad\text{for conjugate-}\mathbb{C}_{\mathrm{spl}}\text{-linear }S .
 $$
 
-On $\mathbb{C}^{\mathrm{spl}}$ the structure is $J=\operatorname{diag}(1,-1)$ in the eigenbasis $\Pi_1,\Pi_2$, so the two criteria become two block shapes, and they are the diagonal and the anti-diagonal matrix:
+On $\mathbb{C}_{\mathrm{spl}}$ the structure is $J=\operatorname{diag}(1,-1)$ in the eigenbasis $\Pi_1,\Pi_2$, so the two criteria become two block shapes, and they are the diagonal and the anti-diagonal matrix:
 
 $$
 TJ=JT\iff T=\begin{pmatrix}t_1&0\\0&t_2\end{pmatrix},
@@ -70,19 +70,19 @@ TJ=JT\iff T=\begin{pmatrix}t_1&0\\0&t_2\end{pmatrix},
 SJ=-JS\iff S=\begin{pmatrix}0&s_1\\s_2&0\end{pmatrix},
 $$
 
-with real $t_1,t_2,s_1,s_2$. The commuting maps are the multiplications by an element of $\mathbb{C}^{\mathrm{spl}}$, $T=\lambda\,\mathrm{id}$, $\lambda=\tfrac12(t_1+t_2)+\tfrac12(t_1-t_2)j$, a family of real dimension two isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself; the anticommuting maps are the conjugate-$\mathbb{C}^{\mathrm{spl}}$-linear maps, $S(Q)=\lambda\bar Q$, also of real dimension two. The two families span the four-dimensional space of $\mathbb{R}$-linear maps,
+with real $t_1,t_2,s_1,s_2$. The commuting maps are the multiplications by an element of $\mathbb{C}_{\mathrm{spl}}$, $T=\lambda\,\mathrm{id}$, $\lambda=\tfrac12(t_1+t_2)+\tfrac12(t_1-t_2)j$, a family of real dimension two isomorphic to $\mathbb{C}_{\mathrm{spl}}$ itself; the anticommuting maps are the conjugate-$\mathbb{C}_{\mathrm{spl}}$-linear maps, $S(Q)=\lambda\bar Q$, also of real dimension two. The two families span the four-dimensional space of $\mathbb{R}$-linear maps,
 
 $$
-\boxed{\; \operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})=\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(\mathbb{C}^{\mathrm{spl}})\oplus\operatorname{Ant}_{\mathbb{C}^{\mathrm{spl}}}(\mathbb{C}^{\mathrm{spl}}) \;},
+\boxed{\; \operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})=\operatorname{End}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{C}_{\mathrm{spl}})\oplus\operatorname{Ant}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{C}_{\mathrm{spl}}) \;},
 $$
 
 each summand of real dimension two. The shapes are the split reading of the complex blocks: there the commuting maps had the block $\begin{pmatrix}a_1&-a_2\\a_2&a_1\end{pmatrix}$ and the anticommuting ones $\begin{pmatrix}a_1&a_2\\a_2&-a_1\end{pmatrix}$, with real $a_1,a_2$; here the same two shapes, read in the eigenbasis, become the algebraic norm and the anti-algebraic norm, because $J$ has real eigenvalues rather than the pair $+i,-i$.
 
-**Remark (the Galois twist).** The real-algebra automorphisms of $\mathbb{C}^{\mathrm{spl}}$ are the identity and the bar, and the bar is conjugate-$\mathbb{C}^{\mathrm{spl}}$-linear, since $\overline{jQ}=-j\bar Q$. The automorphism group is therefore $\mathbb{Z}/2=\{1,\bar{\cdot}\}$, the group of the involution, and it is the conjugate-linear coset of the identity, exactly as the general construction describes the enlargement of the automorphisms by the Galois twist. On the complex field the corresponding twist is the conjugation of $\mathbb{C}$ over $\mathbb{R}$; here it is the conjugation of $\mathbb{C}^{\mathrm{spl}}$, which is the same involution that generates the whole of the remarkable-subspace content of the algebra.
+**Remark (the Galois twist).** The real-algebra automorphisms of $\mathbb{C}_{\mathrm{spl}}$ are the identity and the bar, and the bar is conjugate-$\mathbb{C}_{\mathrm{spl}}$-linear, since $\overline{jQ}=-j\bar Q$. The automorphism group is therefore $\mathbb{Z}/2=\{1,\bar{\cdot}\}$, the group of the involution, and it is the conjugate-linear coset of the identity, exactly as the general construction describes the enlargement of the automorphisms by the Galois twist. On the complex field the corresponding twist is the conjugation of $\mathbb{C}$ over $\mathbb{R}$; here it is the conjugation of $\mathbb{C}_{\mathrm{spl}}$, which is the same involution that generates the whole of the remarkable-subspace content of the algebra.
 
 ## The Two Realification Rules and the Two Signatures
 
-The realification of a form is its real part, read on $\mathbb{C}^{\mathrm{spl}}$ as a two-dimensional real space, and the two kinds of form realify by two rules: a form whose structure-action is $-1$ realifies to the **split signature** $(n,n)$, and a form whose structure-action is $+1$ realifies by **doubling its inertia**. The two signs are the ones of the proposition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*,
+The realification of a form is its real part, read on $\mathbb{C}_{\mathrm{spl}}$ as a two-dimensional real space, and the two kinds of form realify by two rules: a form whose structure-action is $-1$ realifies to the **split signature** $(n,n)$, and a form whose structure-action is $+1$ realifies by **doubling its inertia**. The two signs are the ones of the proposition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*,
 
 $$
 \boxed{\;
@@ -92,9 +92,9 @@ $$
 \;},
 $$
 
-so on $\mathbb{C}^{\mathrm{spl}}$ **the two forms take the two rules in the order opposite to the complex one**. The bilinear form has the $+1$ action, so it is the Hermitian rule that applies to it, and its realification is the definite form of signature $(2,0)$; the Hermitian form has the $-1$ action, so it is the bilinear rule that applies, and its realification is the indefinite form of signature $(1,1)$. The general corollary, read on the two forms, is
+so on $\mathbb{C}_{\mathrm{spl}}$ **the two forms take the two rules in the order opposite to the complex one**. The bilinear form has the $+1$ action, so it is the Hermitian rule that applies to it, and its realification is the definite form of signature $(2,0)$; the Hermitian form has the $-1$ action, so it is the bilinear rule that applies, and its realification is the indefinite form of signature $(1,1)$. The general corollary, read on the two forms, is
 
-| form | rule on $\mathbb{C}^{\mathrm{spl}}$ | realified signature on $\mathbb{C}^{\mathrm{spl}}$ | realified signature on $\mathbb{C}$ |
+| form | rule on $\mathbb{C}_{\mathrm{spl}}$ | realified signature on $\mathbb{C}_{\mathrm{spl}}$ | realified signature on $\mathbb{C}$ |
 |---|---|---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | Hermitian rule, doubling | $(2,0)$, definite | $(1,1)$, indefinite |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ | bilinear rule, split | $(1,1)$, indefinite | $(2,0)$, definite |
@@ -103,14 +103,14 @@ The split sign exchanges the two signatures with respect to the complex prototyp
 
 ## The Dictionary of the Split Statements Against the Real Ones
 
-The general construction distinguishes a statement **about the ring**, which is evaluated on the addition, the product and the identity alone and is unchanged by the passage, from a statement **about the scalars**, which names the field of scalars, a dimension, a tensor product or a scalar-linearity and may change. Read on $\mathbb{C}^{\mathrm{spl}}$, the dictionary is this.
+The general construction distinguishes a statement **about the ring**, which is evaluated on the addition, the product and the identity alone and is unchanged by the passage, from a statement **about the scalars**, which names the field of scalars, a dimension, a tensor product or a scalar-linearity and may change. Read on $\mathbb{C}_{\mathrm{spl}}$, the dictionary is this.
 
-| object or statement | over the ring $\mathbb{C}^{\mathrm{spl}}$ | over the reals $\mathbb{R}$ |
+| object or statement | over the ring $\mathbb{C}_{\mathrm{spl}}$ | over the reals $\mathbb{R}$ |
 |---|---|---|
-| the space | $\mathbb{C}^{\mathrm{spl}}$ as a module of rank $1$ over itself | the real plane on $1,j$ |
-| a $\mathbb{C}^{\mathrm{spl}}$-linear map | $T=\lambda\,\mathrm{id}$, $\lambda\in\mathbb{C}^{\mathrm{spl}}$ | commutes with $J$, diagonal shape |
-| a conjugate-$\mathbb{C}^{\mathrm{spl}}$-linear map | $S(Q)=\lambda\bar Q$ | anticommutes with $J$, anti-diagonal shape |
-| the invariant subspaces of $J$ | the ideals | $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, $\mathbb{C}^{\mathrm{spl}}$ |
+| the space | $\mathbb{C}_{\mathrm{spl}}$ as a module of rank $1$ over itself | the real plane on $1,j$ |
+| a $\mathbb{C}_{\mathrm{spl}}$-linear map | $T=\lambda\,\mathrm{id}$, $\lambda\in\mathbb{C}_{\mathrm{spl}}$ | commutes with $J$, diagonal shape |
+| a conjugate-$\mathbb{C}_{\mathrm{spl}}$-linear map | $S(Q)=\lambda\bar Q$ | anticommutes with $J$, anti-diagonal shape |
+| the invariant subspaces of $J$ | the ideals | $\{0\}$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, $\mathbb{C}_{\mathrm{spl}}$ |
 | a bilinear form | $\langle Q_1,Q_2\rangle=Q_1Q_2$, rank $1$ | realified signature $(2,0)$ |
 | a Hermitian form | $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$, rank $1$ | realified signature $(1,1)$ |
 | a subring or an ideal | the two ideals $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ | the same two real lines |
@@ -121,13 +121,13 @@ The two rows that matter are the last two. The zero divisors, the idempotents, t
 
 ## Comparison with the Complex Case
 
-On $\mathbb{C}$ the structure $J$ is the multiplication by $i$, of square $-\mathrm{id}$: a complex structure, irreducible over $\mathbb{R}$, with no real eigenvalue and no invariant real line, whose field of scalars is a field and whose Hermitian form is definite of signature $(2,0)$. On $\mathbb{C}^{\mathrm{spl}}$ the structure $J$ is the multiplication by $j$, of square $+\mathrm{id}$: a product structure, diagonalisable over $\mathbb{R}$, with the two real eigenvalues $+1$ and $-1$ and the two invariant real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, whose scalar algebra is the ring $\mathbb{R}\oplus\mathbb{R}$ and whose Hermitian form is indefinite of signature $(1,1)$.
+On $\mathbb{C}$ the structure $J$ is the multiplication by $i$, of square $-\mathrm{id}$: a complex structure, irreducible over $\mathbb{R}$, with no real eigenvalue and no invariant real line, whose field of scalars is a field and whose Hermitian form is definite of signature $(2,0)$. On $\mathbb{C}_{\mathrm{spl}}$ the structure $J$ is the multiplication by $j$, of square $+\mathrm{id}$: a product structure, diagonalisable over $\mathbb{R}$, with the two real eigenvalues $+1$ and $-1$ and the two invariant real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, whose scalar algebra is the ring $\mathbb{R}\oplus\mathbb{R}$ and whose Hermitian form is indefinite of signature $(1,1)$.
 
 The passage therefore has the same skeleton in the two cases and two different fillings. The skeleton is the same: the doubling of the dimension, the two kinds of real-linear map, the two block shapes, the two realification rules, and the general dictionary. The filling differs in the sign of the square of the structure, and that one sign flips the answer to three questions at once: whether the structure is irreducible over $\mathbb{R}$ or splits, whether the Hermitian form is definite or indefinite, and whether the surviving ring is a field or a ring with zero divisors. The split-complex numbers are thus the second rung of the ladder in which the complex field is the first, and the only difference between the two rungs is the sign that the whole chapter reads.
 
 ## Summary
 
-The split-complex algebra carries two scalar readings, over the ring $\mathbb{C}^{\mathrm{spl}}$ and over $\mathbb{R}$, and the passage between them doubles the dimension, from rank one over $\mathbb{C}^{\mathrm{spl}}$ to dimension two over $\mathbb{R}$. The structure of the passage is the multiplication by $j$, $J^2=+\mathrm{id}$, a product structure rather than a complex structure: it is diagonalisable over $\mathbb{R}$ with the two eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, it splits the algebra into its two minimal ideals, and its invariant subspaces are the ideals where the complex structure has only the trivial two. The two kinds of real-linear map are the commuting, $\mathbb{C}^{\mathrm{spl}}$-linear maps $\lambda\,\mathrm{id}$ and the anticommuting, conjugate-$\mathbb{C}^{\mathrm{spl}}$-linear maps $\lambda\bar{\cdot}$, of real dimension two each, with the algebraic norm and the anti-algebraic norm block shapes in the eigenbasis, and the Galois twist is the bar.
+The split-complex algebra carries two scalar readings, over the ring $\mathbb{C}_{\mathrm{spl}}$ and over $\mathbb{R}$, and the passage between them doubles the dimension, from rank one over $\mathbb{C}_{\mathrm{spl}}$ to dimension two over $\mathbb{R}$. The structure of the passage is the multiplication by $j$, $J^2=+\mathrm{id}$, a product structure rather than a complex structure: it is diagonalisable over $\mathbb{R}$ with the two eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, it splits the algebra into its two minimal ideals, and its invariant subspaces are the ideals where the complex structure has only the trivial two. The two kinds of real-linear map are the commuting, $\mathbb{C}_{\mathrm{spl}}$-linear maps $\lambda\,\mathrm{id}$ and the anticommuting, conjugate-$\mathbb{C}_{\mathrm{spl}}$-linear maps $\lambda\bar{\cdot}$, of real dimension two each, with the algebraic norm and the anti-algebraic norm block shapes in the eigenbasis, and the Galois twist is the bar.
 
 The two forms realify by the two general rules, taken in the order opposite to the complex one because the structure has square $+\mathrm{id}$: the bilinear form $\langle\cdot,\cdot\rangle$ takes the Hermitian rule and realifies to the definite $(2,0)$, and the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ takes the bilinear rule and realifies to the indefinite $(1,1)$. The split sign thus exchanges the two signatures with respect to the complex prototype, and the statements about the ring — the zero divisors, the idempotents, the ideals, the sign of the norm — are the ones the passage leaves unchanged. The whole difference between the split rung and the complex rung is the sign of the square of the structure.
 
@@ -135,11 +135,11 @@ The two forms realify by the two general rules, taken in the order opposite to t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | the split-complex ring, $j^2=+1$ |
+| $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | the split-complex ring, $j^2=+1$ |
 | $J$ | multiplication by $j$, $J^2=+\mathrm{id}$, the split complex structure |
 | $\Pi_1=\tfrac12(1+j)$, $\Pi_2=\tfrac12(1-j)$ | the eigenlines of $J$, the two minimal ideals |
-| $\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(\mathbb{C}^{\mathrm{spl}})$ | the commuting maps, $T=\lambda\,\mathrm{id}$ |
-| $\operatorname{Ant}_{\mathbb{C}^{\mathrm{spl}}}(\mathbb{C}^{\mathrm{spl}})$ | the anticommuting maps, $S(Q)=\lambda\bar Q$ |
+| $\operatorname{End}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{C}_{\mathrm{spl}})$ | the commuting maps, $T=\lambda\,\mathrm{id}$ |
+| $\operatorname{Ant}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{C}_{\mathrm{spl}})$ | the anticommuting maps, $S(Q)=\lambda\bar Q$ |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ | the two forms, of realified signatures $(2,0)$ and $(1,1)$ |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm, a statement about the ring |
 

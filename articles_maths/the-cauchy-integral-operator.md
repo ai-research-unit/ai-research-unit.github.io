@@ -111,7 +111,7 @@ values. The double-layer potentials of a monogenic function reproduce it, which 
 $\mathcal{C}^\pm$ as the projections of the trace space onto the two complementary subspaces; since
 $\mathcal{C}^\pm=\tfrac12(\mathcal{S}\pm I)$, idempotency of either projection is equivalent to
 $\mathcal{S}^2=I$. The Clifford proof is the one of the classical complex case, with the kernel and
-the conormal element in place of $dz/(z-\varkappa^{\mathrm{crd}})$.
+the conormal element in place of $dz/(z-\varkappa_{\mathrm{crd}})$.
 
 **Corollary (the projections).** The operators
 
@@ -127,7 +127,7 @@ monogenic functions on $\Omega$, and the image of $P^-$ is the space of boundary
 functions vanishing at infinity on the exterior.
 
 **Remark (the complex case).** For $m=1$ and $A\cong\mathbb{C}$ the surface is a contour, the kernel
-is $1/(2\pi i(\varkappa^{\mathrm{crd}}-z))$, the singular operator $\mathcal{S}$ is the classical Hilbert transform on
+is $1/(2\pi i(\varkappa_{\mathrm{crd}}-z))$, the singular operator $\mathcal{S}$ is the classical Hilbert transform on
 the contour, and the projections $P^\pm$ are the Szegő projections onto the boundary values of
 holomorphic functions inside and outside. The whole of the classical boundary theory of holomorphic
 functions is the case $m=1$ of the statements above.

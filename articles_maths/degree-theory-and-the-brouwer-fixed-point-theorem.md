@@ -45,7 +45,7 @@ $$
 
 For $n = 1$ the antipodal map of the circle has degree $(-1)^2 = 1$, the rotation by $\pi$, and indeed it is homotopic to the identity; for $n = 2$ it has degree $-1$.
 
-**Example (the circle and the winding number).** For $n = 1$ the degree of $f : S^1 \to S^1$ is the **winding number**: under the identification $\pi_1(S^1) \cong \mathbb{Z}$ of *The Fundamental Group and Covering Spaces*, the class of $f$ in $\pi_1(S^1)$ is $\deg f$, and the two agree by the Hurewicz theorem of *Homotopy Groups and Fibrations*, $H_1(S^1) \cong \pi_1(S^1)^{\mathrm{ab}} \cong \mathbb{Z}$. The map $z \mapsto z^k$ has degree $k$; a homeomorphism of the circle of geometric rotation angle $\theta$ has degree $1$; and a map that reverses orientation has degree $-1$.
+**Example (the circle and the winding number).** For $n = 1$ the degree of $f : S^1 \to S^1$ is the **winding number**: under the identification $\pi_1(S^1) \cong \mathbb{Z}$ of *The Fundamental Group and Covering Spaces*, the class of $f$ in $\pi_1(S^1)$ is $\deg f$, and the two agree by the Hurewicz theorem of *Homotopy Groups and Fibrations*, $H_1(S^1) \cong \pi_1(S^1)_{\mathrm{ab}} \cong \mathbb{Z}$. The map $z \mapsto z^k$ has degree $k$; a homeomorphism of the circle of geometric rotation angle $\theta$ has degree $1$; and a map that reverses orientation has degree $-1$.
 
 **Example (linear maps).** If $T \in O(n+1)$ is an orthogonal transformation, then the induced $f_T : S^n \to S^n$ has $\deg f_T = \det T$, the sign of the determinant being exactly the orientation behaviour. In particular the identity component $SO(n+1)$ acts by maps of degree $1$, and an orientation-reversing orthogonal map has degree $-1$.
 
@@ -264,13 +264,13 @@ Then $g$ is continuous and odd, $g(-x) = -g(x)$, so the restriction of $g$ to th
 
 **Theorem (the Jordan–Brouwer separation theorem).** Let $\Sigma \subseteq S^n$ be a subset homeomorphic to $S^{n-1}$, with $n \geq 2$. Then $S^n \setminus \Sigma$ has exactly two connected components, and $\Sigma$ is the boundary of each.
 
-*Proof sketch.* By **Alexander duality**, which for a compact subset $K \subseteq S^n$ states $H_{i,\mathrm{red}}(S^n\setminus K;\mathbb{Z}) \cong H^{n-i-1,\mathrm{red}}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of *Poincaré Duality* applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives
+*Proof sketch.* By **Alexander duality**, which for a compact subset $K \subseteq S^n$ states $H_{\mathrm{red},i}(S^n\setminus K;\mathbb{Z}) \cong H_{\mathrm{red}}^{n-i-1}(K;\mathbb{Z})$, and is a consequence of the Lefschetz duality of *Poincaré Duality* applied to a regular neighbourhood; applying it to $K = \Sigma \cong S^{n-1}$ gives
 
 $$
-\boxed{\;H_{0,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-1,\mathrm{red}}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{i,\mathrm{red}}(S^n\setminus\Sigma) \cong H^{n-i-1,\mathrm{red}}(S^{n-1}) = 0 \quad (i \neq 0)\;},
+\boxed{\;H_{\mathrm{red},0}(S^n\setminus\Sigma) \cong H_{\mathrm{red}}^{n-1}(S^{n-1}) \cong \mathbb{Z}, \qquad H_{\mathrm{red},i}(S^n\setminus\Sigma) \cong H_{\mathrm{red}}^{n-i-1}(S^{n-1}) = 0 \quad (i \neq 0)\;},
 $$
 
-where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{0,\mathrm{red}}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
+where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{\mathrm{red},0}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
 
 **Theorem (invariance of domain; Brouwer).** If $\Omega \subseteq \mathbb{R}^n$ is open and $f : \Omega \to \mathbb{R}^n$ is injective and continuous, then $f(\Omega)$ is open and $f$ is a homeomorphism onto its image.
 
@@ -305,7 +305,7 @@ Brouwer's fixed point theorem, that every continuous self-map of $D^{n+1}$ has a
 | $L(f) = \det(I - A)$ | Lefschetz number of a self-map of $T^n$, $A = f_*|H_1$ |
 | $X$, $\mathrm{ind}_x X$ | Vector field and index of a zero; $\sum\mathrm{ind}_x X = \chi(M)$ |
 | $g$ odd, $g(-x) = -g(x)$ | Odd map; odd degree (Borsuk) |
-| $H_{i,\mathrm{red}}(S^n\setminus K)$ | Alexander duality: $\cong H^{n-i-1,\mathrm{red}}(K)$ |
+| $H_{\mathrm{red},i}(S^n\setminus K)$ | Alexander duality: $\cong H_{\mathrm{red}}^{n-i-1}(K)$ |
 
 
 

@@ -2,23 +2,23 @@
 
 ## Introduction
 
-The split-biquaternion quadratic family is the map $\tilde Q\mapsto\tilde Q^2+\tilde Q_1$ in the split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, and it differs from the biquaternion family in one structural respect that decides everything: the idempotents of $\mathbb{B}^{\mathrm{spl}}$ are central, so they decompose the algebra, the map and the parameter at once, and the family is the product of two ordinary quaternion quadratic families. The biquaternion algebra, with its non-central idempotents, splits the dynamics only on a slice and couples the two halves through the off-diagonal blocks; the split-biquaternion algebra has no coupling at all. The whole of the split-biquaternion fractal theory is therefore the quaternion theory of the preceding thread, read on two factors, and the article states the reduction, the escape dichotomy, the filled Julia set and the Julia set as products, the norm and the zero divisors in the product picture, and the symmetry of the family.
+The split-biquaternion quadratic family is the map $\tilde Q\mapsto\tilde Q^2+\tilde Q_1$ in the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, and it differs from the biquaternion family in one structural respect that decides everything: the idempotents of $\mathbb{B}_{\mathrm{spl}}$ are central, so they decompose the algebra, the map and the parameter at once, and the family is the product of two ordinary quaternion quadratic families. The biquaternion algebra, with its non-central idempotents, splits the dynamics only on a slice and couples the two halves through the off-diagonal blocks; the split-biquaternion algebra has no coupling at all. The whole of the split-biquaternion fractal theory is therefore the quaternion theory of the preceding thread, read on two factors, and the article states the reduction, the escape dichotomy, the filled Julia set and the Julia set as products, the norm and the zero divisors in the product picture, and the symmetry of the family.
 
-The split-biquaternion algebra, its conjugations, its central idempotents and its isomorphism with $\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra*, *Split-Biquaternion Idempotents and Projections* and *Split-Biquaternion Ideals and Peirce Decomposition*; the $\mathbb{C}^{\mathrm{spl}}$-valued norm and the units are *Split-Biquaternion Norm and Invertibility*; the zero divisors are *Split-Biquaternion Zero Divisors*; the Clifford description is *Complex Split-Biquaternions and the Clifford Algebra Cl(3)*. The quaternion quadratic family and its theory are *The Quaternion Quadratic Map and Its Julia Sets*, *The Escape Radius and the Green's Function for Quaternions* and *The Quaternion Mandelbrot Set*; the indefinite four-dimensional neighbour is *The Split-Quaternion Quadratic Map and Its Julia Sets*. No physics is invoked.
+The split-biquaternion algebra, its conjugations, its central idempotents and its isomorphism with $\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra*, *Split-Biquaternion Idempotents and Projections* and *Split-Biquaternion Ideals and Peirce Decomposition*; the $\mathbb{C}_{\mathrm{spl}}$-valued norm and the units are *Split-Biquaternion Norm and Invertibility*; the zero divisors are *Split-Biquaternion Zero Divisors*; the Clifford description is *Complex Split-Biquaternions and the Clifford Algebra Cl(3)*. The quaternion quadratic family and its theory are *The Quaternion Quadratic Map and Its Julia Sets*, *The Escape Radius and the Green's Function for Quaternions* and *The Quaternion Mandelbrot Set*; the indefinite four-dimensional neighbour is *The Split-Quaternion Quadratic Map and Its Julia Sets*. No physics is invoked.
 
 The article owns the idempotent splitting of the family, the transport of the orbit to a pair of quaternion orbits, the escape dichotomy in product form, the filled Julia set and the Julia set of the split-biquaternion family, the critical orbit and the connectedness reduction, the norm and the zero divisors, and the symmetry. It does not re-derive the quaternion theory it quotes.
 
-**Standing convention.** $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, and
+**Standing convention.** $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, and
 
 $$
 \tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2, \qquad \tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H} .
 $$
 
-The quadratic family is $F_{\tilde Q_1}(\tilde Q)=\tilde Q^2+\tilde Q_1$ in the split-biquaternion product, $\tilde Q_{1,\pm}=\tilde Q_1\tilde\Pi_{1,2}$, and $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{R}^8$.
+The quadratic family is $F_{\tilde Q_1}(\tilde Q)=\tilde Q^2+\tilde Q_1$ in the split-biquaternion product, $\tilde Q_{1,\pm}=\tilde Q_1\tilde\Pi_{1,2}$, and $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{R}^8$.
 
 ## The Idempotent Splitting
 
-**Proposition (the splitting of the family).** The central idempotents give an algebra isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, $\tilde Q\mapsto(\tilde Q_+,\tilde Q_-)$, which is an isometry in the scaled sense
+**Proposition (the splitting of the family).** The central idempotents give an algebra isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, $\tilde Q\mapsto(\tilde Q_+,\tilde Q_-)$, which is an isometry in the scaled sense
 
 $$
 \|\tilde Q\|_E^2=\tfrac12\bigl(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2\bigr) ,
@@ -40,7 +40,7 @@ $$
 
 ## The Escape Lemma and the Filled Julia Set
 
-**Lemma (escape).** Let $\tilde Q_1\in\mathbb{B}^{\mathrm{spl}}$ and put $r_\pm=1+|\tilde Q_{1,\pm}|$, where $|\cdot|$ is the quaternion modulus. If $\|\tilde Q_+^{(n)}\|\geq r_+$ for some $n$, then $|\tilde Q_+^{(k)}|\to\infty$; the same with the minus sign.
+**Lemma (escape).** Let $\tilde Q_1\in\mathbb{B}_{\mathrm{spl}}$ and put $r_\pm=1+|\tilde Q_{1,\pm}|$, where $|\cdot|$ is the quaternion modulus. If $\|\tilde Q_+^{(n)}\|\geq r_+$ for some $n$, then $|\tilde Q_+^{(k)}|\to\infty$; the same with the minus sign.
 
 **Proof.** The quaternion escape lemma applied to the factor $\tilde Q_+$, whose orbit is $\tilde Q_+^{(n+1)}=(\tilde Q_+^{(n)})^2+\tilde Q_{1,+}$ (*The Quaternion Quadratic Map and Its Julia Sets*, §*The Escape Lemma*).
 
@@ -52,15 +52,15 @@ K_{\tilde Q_1}=K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}
 \;},
 $$
 
-under the isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, and the orbit of $\tilde Q$ is bounded in the Euclidean norm if and only if both quaternion orbits are bounded.
+under the isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, and the orbit of $\tilde Q$ is bounded in the Euclidean norm if and only if both quaternion orbits are bounded.
 
 **Proof.** The orbit is the pair of the quaternion orbits, and the Euclidean norm is comparable to the pair of the quaternion moduli by the norm identity of the proposition, so the orbit is bounded exactly when both quaternion orbits are; the filled Julia set is the set of bounded orbits, hence the product of the two.
 
-**Corollary (the escape criterion).** A point escapes the ball $B_{r_+}\times B_{r_-}$ of $\mathbb{B}^{\mathrm{spl}}$ (in the idempotent coordinates) only if its orbit escapes; equivalently, every bounded orbit remains in the product of the two quaternion escape balls.
+**Corollary (the escape criterion).** A point escapes the ball $B_{r_+}\times B_{r_-}$ of $\mathbb{B}_{\mathrm{spl}}$ (in the idempotent coordinates) only if its orbit escapes; equivalently, every bounded orbit remains in the product of the two quaternion escape balls.
 
 **Remark (the contrast with the biquaternion case).** The biquaternion escape radius fails for a non-real central parameter because the square can collapse towards the cone (*The Escape Radius and the Green's Function for the Biquaternions*). The split-biquaternion algebra has zero divisors as well, but they lie in the coordinate hyperplanes $\tilde Q_+=0$ or $\tilde Q_-=0$, and a zero divisor has a *coordinate* equal to zero, not a *collapse of the square*; the pair of quaternion escape lemmas is unaffected. **The zero divisors of the split-biquaternion algebra do not obstruct the escape radius in the Euclidean norm, and this is the technical difference between the two algebras.**
 
-**Remark (the failure of a single radius in the $\mathbb{C}^{\mathrm{spl}}$-valued norm).** The norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ is a split complex number, $\mathbb{R}$-valued only on the quaternion subspace and its translate $j\mathbb{H}$ and not comparable to the Euclidean norm elsewhere; its real part is $\|\tilde Q\|_E^2$ and its split part is $2j\sum_\mu\operatorname{Re}Q_\mu\operatorname{Im}Q_\mu$, which is indefinite. Because $\mathbb{C}^{\mathrm{spl}}$ is not ordered, there is no single number $R$ with a condition $\langle\tilde Q\rangle_{\natural}>R^2$ forcing escape, and no single escape radius exists in the $\mathbb{C}^{\mathrm{spl}}$-valued norm; the escape criterion of the family is the *pair* of the quaternion Euclidean radii $r_\pm=1+|\tilde Q_{1,\pm}|$. **The single escape radius exists in the Euclidean norm and fails in the split-complex-valued norm, and the honest statement of the escape theory here is the pair of componentwise criteria.**
+**Remark (the failure of a single radius in the $\mathbb{C}_{\mathrm{spl}}$-valued norm).** The norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ is a split complex number, $\mathbb{R}$-valued only on the quaternion subspace and its translate $j\mathbb{H}$ and not comparable to the Euclidean norm elsewhere; its real part is $\|\tilde Q\|_E^2$ and its split part is $2j\sum_\mu\operatorname{Re}Q_\mu\operatorname{Im}Q_\mu$, which is indefinite. Because $\mathbb{C}_{\mathrm{spl}}$ is not ordered, there is no single number $R$ with a condition $\langle\tilde Q\rangle_{\natural}>R^2$ forcing escape, and no single escape radius exists in the $\mathbb{C}_{\mathrm{spl}}$-valued norm; the escape criterion of the family is the *pair* of the quaternion Euclidean radii $r_\pm=1+|\tilde Q_{1,\pm}|$. **The single escape radius exists in the Euclidean norm and fails in the split-complex-valued norm, and the honest statement of the escape theory here is the pair of componentwise criteria.**
 
 ## The Julia Set
 
@@ -76,7 +76,7 @@ and it is non-empty whenever one of the two quaternion Julia sets is non-empty.
 
 **Proof.** The boundary of a product is the union of the products with one factor a boundary, $\partial(A\times B)=(\partial A\times B)\cup(A\times\partial B)$ for closed $A,B$ with the product topology; apply the previous theorem.
 
-**Remark (the fractal is a product, not a new object).** Every property of the split-biquaternion Julia set that is a product property — connectedness, local connectedness, the dimension of the product, the Hausdorff measure of a product — follows from the corresponding property of the quaternion factors. **The split-biquaternion thread of the category is a reduction, and the article states the reduction rather than reproving the quaternion theory.** The genuinely split-biquaternion questions are the ones the product structure does not answer: the behaviour with respect to the $\mathbb{C}^{\mathrm{spl}}$-valued norm, the Clifford grading and the two-sided structure of an iterated function system, treated in the companion articles.
+**Remark (the fractal is a product, not a new object).** Every property of the split-biquaternion Julia set that is a product property — connectedness, local connectedness, the dimension of the product, the Hausdorff measure of a product — follows from the corresponding property of the quaternion factors. **The split-biquaternion thread of the category is a reduction, and the article states the reduction rather than reproving the quaternion theory.** The genuinely split-biquaternion questions are the ones the product structure does not answer: the behaviour with respect to the $\mathbb{C}_{\mathrm{spl}}$-valued norm, the Clifford grading and the two-sided structure of an iterated function system, treated in the companion articles.
 
 ## The Norm, the Zero Divisors and the Critical Orbit
 
@@ -86,9 +86,9 @@ $$
 \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2 =\{\tilde Q_-=0\}\cup\{\tilde Q_+=0\} ,
 $$
 
-each of real dimension four. The $\mathbb{C}^{\mathrm{spl}}$-valued norm is $\tilde Q\tilde Q^{\natural}=\tilde Q_+\tilde Q_+^{\natural}\tilde\Pi_1+\tilde Q_-\tilde Q_-^{\natural}\tilde\Pi_2$.
+each of real dimension four. The $\mathbb{C}_{\mathrm{spl}}$-valued norm is $\tilde Q\tilde Q^{\natural}=\tilde Q_+\tilde Q_+^{\natural}\tilde\Pi_1+\tilde Q_-\tilde Q_-^{\natural}\tilde\Pi_2$.
 
-**Proof.** $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; an element of a product is a unit if and only if both components are, and it is a zero divisor if and only if one component is zero (*Split-Biquaternion Zero Divisors*). The norm computation is the idempotent-basis form of the norm (*Split-Biquaternion Norm and Invertibility*).
+**Proof.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; an element of a product is a unit if and only if both components are, and it is a zero divisor if and only if one component is zero (*Split-Biquaternion Zero Divisors*). The norm computation is the idempotent-basis form of the norm (*Split-Biquaternion Norm and Invertibility*).
 
 **Proposition (the derivative and the critical orbit).** The derivative of the split-biquaternion family is the block-diagonal pair of the derivatives of the two quaternion factors, so the family is a local diffeomorphism exactly where both quaternion factors are, that is, off the union of the two hyperplanes $\{\operatorname{Re}\tilde Q_+=0\}$ and $\{\operatorname{Re}\tilde Q_-=0\}$ (*The Quaternion Quadratic Map and Its Julia Sets*, §*The Critical Point*). The critical orbit used for the connectedness locus is the orbit of $\tilde Q=0$, which is the pair of the quaternion critical orbits $0,\tilde Q_{1,\pm},(\tilde Q_{1,\pm})^2+\tilde Q_{1,\pm},\dots$.
 
@@ -97,14 +97,14 @@ each of real dimension four. The $\mathbb{C}^{\mathrm{spl}}$-valued norm is $\ti
 **Theorem (the connectedness locus is a square).** Define the connectedness locus of the split-biquaternion family by the boundedness of its critical orbit,
 
 $$
-\mathcal{M}_{\mathbb{B}^{\mathrm{spl}}}=\{\tilde Q_1 : \text{the orbit of } 0 \text{ under } F_{\tilde Q_1} \text{ is bounded}\} ,
+\mathcal{M}_{\mathbb{B}_{\mathrm{spl}}}=\{\tilde Q_1 : \text{the orbit of } 0 \text{ under } F_{\tilde Q_1} \text{ is bounded}\} ,
 $$
 
 in agreement with the quaternion convention (*The Quaternion Mandelbrot Set*). Then it is the product of the two quaternion connectedness loci,
 
 $$
 \boxed{\;
-\mathcal{M}_{\mathbb{B}^{\mathrm{spl}}}=\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}
+\mathcal{M}_{\mathbb{B}_{\mathrm{spl}}}=\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}
 \;},
 $$
 
@@ -126,7 +126,7 @@ identified with the pairs $(\tilde Q_{1,+},\tilde Q_{1,-})$. Separately, the fil
 
 **Remark (the reading of the square).** The formula $\tilde Q\mapsto\tilde Q^2$ is read here with the split-biquaternion algebra product, the associative product of the algebra and the only reading under which the idempotents are central and the family factors into two quaternion families. The other bilinear products carried by the underlying real space give different maps, whose reading is the subject of the biquaternion thread and is not the family of this article; **the split-biquaternion family is defined by the algebra product, and the statement is the product decomposition proved above.**
 
-**Remark (the open questions).** The split-biquaternion thread is the least developed of the eight fractal threads of the corpus, and the article records what is open: the monogenic and regular function theory of the split-biquaternion maps, which would play the role of holomorphy for the biquaternion family; the Fatou theory of the family away from the two ideals; the exact dimension of the product fractal at a non-scalar parameter, which needs the dimension of the quaternion Julia sets; and the extension of the systems and the pluripotential theory to the split case, where the $\mathbb{C}^{\mathrm{spl}}$-valued norm replaces the complex norm.
+**Remark (the open questions).** The split-biquaternion thread is the least developed of the eight fractal threads of the corpus, and the article records what is open: the monogenic and regular function theory of the split-biquaternion maps, which would play the role of holomorphy for the biquaternion family; the Fatou theory of the family away from the two ideals; the exact dimension of the product fractal at a non-scalar parameter, which needs the dimension of the quaternion Julia sets; and the extension of the systems and the pluripotential theory to the split case, where the $\mathbb{C}_{\mathrm{spl}}$-valued norm replaces the complex norm.
 
 ## Summary
 
@@ -136,7 +136,7 @@ The split-biquaternion quadratic family is, by the centrality of the idempotents
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternion algebra |
+| $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternion algebra |
 | $j$, $j^2=+1$ | the central split unit |
 | $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$ | the central idempotents |
 | $\tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H}$ | the two quaternion components |

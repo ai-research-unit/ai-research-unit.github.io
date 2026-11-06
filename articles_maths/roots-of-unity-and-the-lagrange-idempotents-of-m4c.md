@@ -344,7 +344,7 @@ Hence $\operatorname{Ad}_H$ is diagonalizable with eigenvalues among the fourth 
 
 $$
 M_4(\mathbb{C})=\bigoplus_{r\in\mathbb{Z}/4\mathbb{Z}}\mathcal{M}^{(r)},\qquad
-\mathcal{M}^{(r)}=\bigoplus_{k-l\equiv r\ (\mathrm{mod}\ 4)}\mathcal{A}_{kl},
+\mathcal{M}^{(r)}=\bigoplus_{\mathrm{mod},k-l\equiv r\ (\ 4)}\mathcal{A}_{kl},
 $$
 
 with

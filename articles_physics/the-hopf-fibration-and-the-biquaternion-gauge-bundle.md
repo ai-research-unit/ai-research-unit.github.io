@@ -127,42 +127,42 @@ $$
 
 with the right action $\tilde U\mapsto Ug$. It is instructive to write its local data explicitly, because the local data are the framework's abelian gauge potential.
 
-Cover the base $S^2$ by the two patches $N=\{(\theta,\theta^{\mathrm{azm}}):\theta<\pi\}$ and $S=\{(\theta,\theta^{\mathrm{azm}}):\theta>0\}$, with the usual spherical angles. Local sections, written as unit quaternions, are built from the standard half-angle spinor sections $(z_0,z_1)\mapsto \mathrm{Re}(z_0)e_t+\mathrm{Im}(z_1)\vec e_x+\mathrm{Re}(z_1)\vec e_y+\mathrm{Im}(z_0)\vec e_z$:
+Cover the base $S^2$ by the two patches $N=\{(\theta,\theta_{\mathrm{azm}}):\theta<\pi\}$ and $S=\{(\theta,\theta_{\mathrm{azm}}):\theta>0\}$, with the usual spherical angles. Local sections, written as unit quaternions, are built from the standard half-angle spinor sections $(z_0,z_1)\mapsto \mathrm{Re}(z_0)e_t+\mathrm{Im}(z_1)\vec e_x+\mathrm{Re}(z_1)\vec e_y+\mathrm{Im}(z_0)\vec e_z$:
 
 $$
-\tilde u_N(\theta,\theta^{\mathrm{azm}})=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\bigl(\sin\theta^{\mathrm{azm}}\,\vec e_x+\cos\theta^{\mathrm{azm}}\,\vec e_y\bigr),
+\tilde u_N(\theta,\theta_{\mathrm{azm}})=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\bigl(\sin\theta_{\mathrm{azm}}\,\vec e_x+\cos\theta_{\mathrm{azm}}\,\vec e_y\bigr),
 \qquad
-\tilde u_S(\theta,\theta^{\mathrm{azm}})=\cos\tfrac{\theta}{2}\bigl(\cos\theta^{\mathrm{azm}}\,e_t-\sin\theta^{\mathrm{azm}}\,\vec e_z\bigr)+\sin\tfrac{\theta}{2}\,\vec e_y ,
+\tilde u_S(\theta,\theta_{\mathrm{azm}})=\cos\tfrac{\theta}{2}\bigl(\cos\theta_{\mathrm{azm}}\,e_t-\sin\theta_{\mathrm{azm}}\,\vec e_z\bigr)+\sin\tfrac{\theta}{2}\,\vec e_y ,
 $$
 
-where $\exp(\alpha\,\vec e_a)=\cos\alpha\,e_t+\sin\alpha\,\vec e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(\tilde u_N)=\pi(\tilde u_S)$; the $\theta^{\mathrm{azm}}$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\theta^{\mathrm{azm}}$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,
+where $\exp(\alpha\,\vec e_a)=\cos\alpha\,e_t+\sin\alpha\,\vec e_a$. Both are unit real quaternions, and both project to the same point of the base, $\pi(\tilde u_N)=\pi(\tilde u_S)$; the $\theta_{\mathrm{azm}}$-dependent part of each carries the factor $\sin\tfrac\theta2$ or $\cos\tfrac\theta2$ that vanishes at the pole where $\theta_{\mathrm{azm}}$ is undefined, which is exactly what makes each section regular on its own patch. The two are related on the overlap by a single-valued transition function,
 
 $$
-\tilde u_N(\theta,\theta^{\mathrm{azm}}) \;=\; \tilde u_S(\theta,\theta^{\mathrm{azm}})\,g_{SN}(\theta^{\mathrm{azm}}),
+\tilde u_N(\theta,\theta_{\mathrm{azm}}) \;=\; \tilde u_S(\theta,\theta_{\mathrm{azm}})\,g_{SN}(\theta_{\mathrm{azm}}),
 \qquad
-g_{SN}(\theta^{\mathrm{azm}})=\exp(\theta^{\mathrm{azm}} \vec e_z) ,
+g_{SN}(\theta_{\mathrm{azm}})=\exp(\theta_{\mathrm{azm}} \vec e_z) ,
 $$
 
-a $\mathrm{U}(1)$-valued function with winding number one around the equator, and $\tilde u_S^{-1}\tilde u_N=\exp(\theta^{\mathrm{azm}} \vec e_z)$ was verified to $3.3\times10^{-16}$ on the same sample. This winding is the bundle's classifying integer; a section with a singly-valued fibre is impossible globally, which is the algebraic content of the fact that the string cannot be removed.
+a $\mathrm{U}(1)$-valued function with winding number one around the equator, and $\tilde u_S^{-1}\tilde u_N=\exp(\theta_{\mathrm{azm}} \vec e_z)$ was verified to $3.3\times10^{-16}$ on the same sample. This winding is the bundle's classifying integer; a section with a singly-valued fibre is impossible globally, which is the algebraic content of the fact that the string cannot be removed.
 
 **The local connection.** The canonical invariant connection on the Hopf bundle is read from the Maurer–Cartan form $\tilde U^{-1}dU$ of $S^3$. Projected to the fibre direction $\vec e_z$ it gives the local one-forms
 
 $$
-a_N = \tfrac{1}{2}\bigl(1-\cos\theta\bigr)\,d\theta^{\mathrm{azm}} ,
+a_N = \tfrac{1}{2}\bigl(1-\cos\theta\bigr)\,d\theta_{\mathrm{azm}} ,
 \qquad
-a_S = -\tfrac{1}{2}\bigl(1+\cos\theta\bigr)\,d\theta^{\mathrm{azm}} ,
+a_S = -\tfrac{1}{2}\bigl(1+\cos\theta\bigr)\,d\theta_{\mathrm{azm}} ,
 $$
 
-which differ on the overlap by an exact form, $a_N-a_S=d\theta^{\mathrm{azm}}$, the Maurer–Cartan form of the transition function, since $g_{SN}^{-1}dg_{SN}=\vec e_z\,d\theta^{\mathrm{azm}}$. The $\vec e_z$-component of $\tilde u_N^{-1}dU_N$ was evaluated on the sections and equals $\tfrac12(1-\cos\theta)d\theta^{\mathrm{azm}}$ to $4\times10^{-9}$, which is the roundoff floor of a central difference of step $10^{-7}$, and the $\theta$-component vanishes to $8\times10^{-10}$. The curvature is patch-independent,
+which differ on the overlap by an exact form, $a_N-a_S=d\theta_{\mathrm{azm}}$, the Maurer–Cartan form of the transition function, since $g_{SN}^{-1}dg_{SN}=\vec e_z\,d\theta_{\mathrm{azm}}$. The $\vec e_z$-component of $\tilde u_N^{-1}dU_N$ was evaluated on the sections and equals $\tfrac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ to $4\times10^{-9}$, which is the roundoff floor of a central difference of step $10^{-7}$, and the $\theta$-component vanishes to $8\times10^{-10}$. The curvature is patch-independent,
 
 $$
-F = da_N = \tfrac{1}{2}\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}} = da_S ,
+F = da_N = \tfrac{1}{2}\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}} = da_S ,
 $$
 
 and its integral over the base is
 
 $$
-\boxed{\;\int_{S^2} F \;=\; \frac{1}{2}\int_0^{2\pi}\!\!d\theta^{\mathrm{azm}}\int_0^{\pi}\!\sin\theta\,d\theta
+\boxed{\;\int_{S^2} F \;=\; \frac{1}{2}\int_0^{2\pi}\!\!d\theta_{\mathrm{azm}}\int_0^{\pi}\!\sin\theta\,d\theta
 \;=\;\frac{1}{2}\,(2\pi)(2)=2\pi ,
 \qquad
 c_1=\frac{1}{2\pi}\int_{S^2}F=1\;}.
@@ -223,7 +223,7 @@ $$
 For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The gauge connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
 
 $$
-D_\mu \tilde{Ξ}^{\mathrm{sp}} = \partial/\partial x_\mu\tilde{Ξ}^{\mathrm{sp}} + i\kappa\,\mathcal A_\mu\tilde{Ξ}^{\mathrm{sp}} ,
+D_\mu \tilde{Ξ}_{\mathrm{sp}} = \partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal A_\mu\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
 which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the gauge principle, and the algebra supplies the module on which it acts.
@@ -266,9 +266,9 @@ The same manifold, read as the structure group $SU(2)$, classifies the instanton
 | $\pi(\tilde U)=U\vec e_z\bar{\tilde U}$ | Hopf map $S^3\to S^2$ |
 | $\mathrm{Stab}(\vec e_z)=\mathrm{U}(1)_{\vec e_z}=\{\cos\alpha\,e_t+\sin\alpha\,\vec e_z\}$ | Fibre of $\pi$; maximal torus of $SU(2)$ generated by $\vec e_z$ |
 | $\mathrm{U}(1)_{\mathbb C_{\mathbb B}}=\{\exp(i\alpha)e_t\}$ | Unit circle of the centre; abelian gauge factor, distinct from $\mathrm{Stab}(\vec e_z)$ |
-| $g_{SN}(\theta^{\mathrm{azm}})=\exp(\theta^{\mathrm{azm}} \vec e_z)$ | Transition function of the Hopf bundle, winding one |
-| $a=\tfrac12(1-\cos\theta)d\theta^{\mathrm{azm}}$ | Invariant local connection one-form |
-| $F=da=\tfrac12\sin\theta\,d\theta\wedge d\theta^{\mathrm{azm}}$ | Curvature; $\int_{S^2}F=2\pi$, $c_1=1$ |
+| $g_{SN}(\theta_{\mathrm{azm}})=\exp(\theta_{\mathrm{azm}} \vec e_z)$ | Transition function of the Hopf bundle, winding one |
+| $a=\tfrac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ | Invariant local connection one-form |
+| $F=da=\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$ | Curvature; $\int_{S^2}F=2\pi$, $c_1=1$ |
 | $\mathcal a=i\,a$, $\mathcal f=iF$ | Connection and curvature in the algebra |
 | $SU(2)=\mathrm{span}$-generated unit quaternions | Structure group; compact factor of $\mathbb M_-$ |
 | $[g_\infty]\in\pi_3(SU(2))\cong\mathbb Z$ | Instanton number; boundary winding |

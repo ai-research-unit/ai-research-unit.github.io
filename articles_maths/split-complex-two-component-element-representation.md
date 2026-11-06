@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{C}^{\mathrm{spl}}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after *Split-Complex Element Representations* and *Split-Complex Regular Element Representation*.
+The split-complex algebra $\mathbb{C}_{\mathrm{spl}}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after *Split-Complex Element Representations* and *Split-Complex Regular Element Representation*.
 
 The word *representation* is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Split-Complex Element Representations*, and the matrix of the action on this coefficient space is the subject of *Split-Complex Regular Element Representation*; this article supplies the coordinate space on which that operator is written.
 
@@ -19,11 +19,11 @@ $$
 
 The coefficient of the unit is written $Q_0$ and the coefficient of $j$ is written $Q_1$; the component $Q_0$ is the **real component** and $Q_1$ the **imaginary component**. These are the honest names, because they are the coefficients of the real and imaginary parts of $Q$ and nothing else.
 
-**Proposition.** The map $Q \mapsto Q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{C}^{\mathrm{spl}}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
+**Proposition.** The map $Q \mapsto Q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{C}_{\mathrm{spl}}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
 
 **Proof.** The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.
 
-The coefficient space $\mathbb{R}^2$ **is** the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{C}^{\mathrm{spl}}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of *Split-Complex Regular Element Representation*, and the dimension of the coefficient space are the same number for the same reason.
+The coefficient space $\mathbb{R}^2$ **is** the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{C}_{\mathrm{spl}}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of *Split-Complex Regular Element Representation*, and the dimension of the coefficient space are the same number for the same reason.
 
 ### Coordinates in the Idempotent Basis
 
@@ -63,7 +63,7 @@ $$
 
 so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(Q)B$.
 
-**Remark (the row is the dual).** The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{C}^{\mathrm{spl}}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.
+**Remark (the row is the dual).** The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{C}_{\mathrm{spl}}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.
 
 ## Multiplication in Two-Component Form
 
@@ -140,7 +140,7 @@ The conjugation splits the coefficient space into its fixed and anti-fixed subsp
 **Fixed subspace.** The condition $(q,-q') = (q,q')$ gives $q' = 0$, so
 
 $$
-\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(q, 0)\},
+\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(q, 0)\},
 $$
 
 the real axis, of real dimension $1$. It is the set of real components.
@@ -148,12 +148,12 @@ the real axis, of real dimension $1$. It is the set of real components.
 **Anti-fixed subspace.** The condition $(q,-q') = (-q,-q')$ gives $q = 0$, so
 
 $$
-j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(0, q')\},
+j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(0, q')\},
 $$
 
 the split imaginary axis, of real dimension $1$. Its elements are the pure imaginary components.
 
-So $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ as a direct sum of coordinate axes, and each coordinate $q, q'$ is the projection onto the corresponding axis:
+So $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ as a direct sum of coordinate axes, and each coordinate $q, q'$ is the projection onto the corresponding axis:
 
 $$
 q = \tfrac12(Q + \bar Q), \qquad q' = \tfrac12 j^{-1}(Q - \bar Q).
@@ -188,7 +188,7 @@ with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficie
 Restricted to the two fixed-point subspaces the norm is definite:
 
 $$
-\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
+\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
 $$
 
 so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in *Norm and Invertibility in the General Split-Complex Algebra*, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.
@@ -205,12 +205,12 @@ the **sum** of the two squares: positive definite, so the complex coefficient pl
 
 The complex field and the split-complex algebra are the two two-dimensional real algebras generated by an element of square $-1$ and $+1$ respectively, and their two-component realizations are parallel in every respect except the sign of the generator's square. The following table is the comparison in full.
 
-| feature | $\mathbb{C}$ ($i^2 = -1$) | $\mathbb{C}^{\mathrm{spl}}$ ($j^2 = +1$) |
+| feature | $\mathbb{C}$ ($i^2 = -1$) | $\mathbb{C}_{\mathrm{spl}}$ ($j^2 = +1$) |
 |---|---|---|
 | coefficient space | $\mathbb{R}^2$, components $(q,q')$ | $\mathbb{R}^2$, components $(q,q')$ |
 | product rule | $(q b-q' b', \, q b'+q' b)$ | $(q b+q' b', \, q b'+q' b)$ |
 | conjugation in coordinates | $(q,-q')$ | $(q,-q')$ |
-| fixed / anti-fixed subspaces | $\mathbb{R}$ and $i\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ |
+| fixed / anti-fixed subspaces | $\mathbb{R}$ and $i\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ |
 | norm | $q^2+q'^2$, positive definite | $q^2-q'^2$, signature $(1,1)$ |
 | isotropic set | $\{0\}$ | the two lines $q = \pm q'$ |
 | zero divisors | none | the two idempotent lines |
@@ -229,7 +229,7 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Q = q + j q'$ | General split complex number |
 | $Q_\mu = (Q_0, Q_1) = (q, q')$ | Two-component vector |
 | $Q_0 = q$, $Q_1 = q'$ | Real and imaginary components |
@@ -238,8 +238,8 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 | $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$ | Component product rule |
 | $\overline{(q,q')} = (q,-q')$ | Conjugation in coordinates |
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(q,0)\}$ | Fixed subspace, real axis |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(0,q')\}$ | Anti-fixed subspace, split imaginary axis |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(q,0)\}$ | Fixed subspace, real axis |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(0,q')\}$ | Anti-fixed subspace, split imaginary axis |
 | $\langle Q\rangle_{*} = q^2-q'^2$ | Norm, signature $(1,1)$ |
 | $g(Q,B) = q b-q' b'$ | Polarised form |
 | $(Q_+, Q_-) = (q+q', q-q')$ | Idempotent coordinates |

@@ -27,7 +27,7 @@ The Fock space of a field is the direct sum of the symmetric or antisymmetric te
 $$
 \mathcal{F}=\bigoplus_{n\ge0}\Big(\mathcal{H}_1^{\otimes n}\Big)_{\pm},\qquad |0\rangle\ \text{spans the } n=0 \text{ term},
 $$
-annihilated by every annihilation operator, $a^{\mathrm{fop}}_r|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.
+annihilated by every annihilation operator, $a_{\mathrm{fop},r}|0\rangle=0$. In the covariant Maxwell case the physical vacuum is additionally annihilated by the subsidiary combination $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})$ that removes the timelike and longitudinal excitations. None of this is specific to the biquaternion framework; it is the standard second-quantised vacuum, which the companion articles transcribe.
 
 The question that is specific to the framework is: **is the vacuum state an object of $\mathbb{B}$?** The answer has a positive part and a negative part, and they apply to different things.
 
@@ -51,7 +51,7 @@ $$
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.
 
-**The field vacuum is not.** For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the **photon vacuum is not an element of $\mathbb{B}$**, because there is no bosonic mode in the algebra at all: no pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\in\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of *Canonical Quantization of the Biquaternion Maxwell Field*; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.
+**The field vacuum is not.** For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the **photon vacuum is not an element of $\mathbb{B}$**, because there is no bosonic mode in the algebra at all: no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of *Canonical Quantization of the Biquaternion Maxwell Field*; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.
 
 The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For one fermionic mode it is an idempotent of $\mathbb{M}_+$; for a field it is a state in a module, and the algebra supplies neither the bosonic ladder that creates the photons nor, as the next section shows, a reason to prefer one regularisation of its energy over another.
 
@@ -60,24 +60,24 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
 A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\Big(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
-+a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
+\Big(a_{\mathrm{fop},r}(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x)
++a_{\mathrm{fop},r}^{\dagger}(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Big),
 \qquad
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]=\sigma^{\mathrm{met}}_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k_2),
+\big[a_{\mathrm{fop},r}(\vec k),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)\big]=\sigma_{\mathrm{met},r}\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k_2),
 $$
-with $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
+with $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma^{\mathrm{met}}_r\,\omega_k\,a^{\mathrm{fop}\dagger}_r(\vec k)a^{\mathrm{fop}}_r(\vec k),
+:\!H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\sigma_{\mathrm{met},r}\,\omega_k\,a_{\mathrm{fop},r}^{\dagger}(\vec k)a_{\mathrm{fop},r}(\vec k),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.
 
-**Its value.** Reordering the modes produces, per mode, the contribution $\sum_r\sigma^{\mathrm{met}}_r\,\tfrac12\hbar\omega_k$. Since
+**Its value.** Reordering the modes produces, per mode, the contribution $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12\hbar\omega_k$. Since
 $$
-\boxed{\;\sum_{r=0}^{3}\sigma^{\mathrm{met}}_r=-1+1+1+1=2\;},
+\boxed{\;\sum_{r=0}^{3}\sigma_{\mathrm{met},r}=-1+1+1+1=2\;},
 $$
 the zero-point constant of the covariant field is that of **two** transverse modes, $\hbar\omega_k$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
-E_0=\sum_{r=0}^{3}\sigma^{\mathrm{met}}_r\sum_{\text{modes}}\tfrac12\hbar\omega_k
+E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\hbar\omega_k
 =2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\hbar c\,\lvert\vec k\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;
 \frac{\hbar c\,\Lambda^{4}}{8\pi^{2}}\,V .
@@ -221,11 +221,11 @@ $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\Big)=-\frac{\pi^{2}\hbar c}{720\,a^{3}} .
 $$
 
-**From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma^{\mathrm{met}}_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
+**From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
 
-**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma^{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
+**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma_{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{M}_-$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
 
-The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\sigma^{\mathrm{met}}_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.
+The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\sigma_{\mathrm{met},r}=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.
 
 ## The Casimir Force: Sign Convention and Two Verifications
 
@@ -262,8 +262,8 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 | Fermion parity of the vacuum | Native | $(-1)^F=i\vec e_z$ |
 | Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde R_\psi$; commutes |
 | Two physical transverse polarisations | Native | $\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
-| Indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{M}_-$ |
-| Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\sigma^{\mathrm{met}}_r=2$; two transverse polarisations |
+| Indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{M}_-$ |
+| Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\sigma_{\mathrm{met},r}=2$; two transverse polarisations |
 | Photon Fock vacuum | Imported | no bosonic ladder in $\mathbb{B}$ |
 | Field mode algebra and Fock space | Imported | standard quantisation on a module |
 | Conducting plates and boundary conditions | Imported | no native description of a boundary |
@@ -299,13 +299,13 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 ## Summary
 
-The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.
+The **vacuum state** of the biquaternion framework is not a biquaternion. For a **single fermionic mode** it is genuinely algebraic: the vacuum idempotent is $|0\rangle_{*}\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\psi^{*})$. For a **field** it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.
 
 The **zero-point energy** of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.
 
 That remainder was obtained by two independent regularisations. The **spectral zeta function** route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The **heat-kernel** route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.
 
-The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma^{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.
+The **electromagnetic** result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\sigma_{\mathrm{met}}$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.
 
 The **force** per unit area, with the convention $F/A=-\partial/\partial a(E/A)$, is
 $$
@@ -330,8 +330,8 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | One-mode vacuum idempotent (in $\mathbb{M}_+$) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode) |
 | $\vert 0\rangle_{*}$ | Field vacuum, degree-zero term of the Fock space |
-| $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
-| $\sigma^{\mathrm{met}}=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{M}_-$ |
+| $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
+| $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{M}_-$ |
 | $\vec u_k$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$ |
 | $a$, $A$ | Plate separation and area |
 | $a,n,k_3=\pi n/a$ | Plate separation; mode index; quantized longitudinal wavevector |

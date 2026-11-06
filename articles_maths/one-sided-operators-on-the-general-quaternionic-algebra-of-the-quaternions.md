@@ -107,7 +107,7 @@ The one-sided operators of the block are the plain left and right multiplication
 | symbol | meaning |
 |---|---|
 | $L_{\tilde q_3}(\tilde q) = \tilde q_3\tilde q$, $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$ | the one-sided operators of the block |
-| $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}^{\mathrm{opp}}$ |
+| $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}_{\mathrm{opp}}$ |
 | $L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5}$, $R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4}$ | the composition laws, direct on the left and reversed on the right |
 | $L_{\tilde q_3}^{\sim} = R_{\tilde q_3}$, $R_{\tilde q_4}^{\sim} = L_{\tilde q_4}$ | the adjoints for the plain form $\mathrm B$ |
 | $L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}}$, $R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}}$ | the adjoints for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |

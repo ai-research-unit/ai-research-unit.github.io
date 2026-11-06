@@ -105,7 +105,7 @@ $$
 \boxed{\;S(ab) = S(b)S(a), \qquad S(1) = 1, \qquad \Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)}), \qquad \varepsilon(S(h)) = \varepsilon(h)\;} .
 $$
 
-*Proof.* 1: if $S'$ is another convolution inverse of $\mathrm{id}$ then $S = S * \eta\varepsilon = S * (\mathrm{id} * S') = (S*\mathrm{id})*S' = \eta\varepsilon * S' = S'$. 2: consider the convolution algebra $\operatorname{Hom}_k(H\otimes_k H, H)$ and the elements $\alpha = \mu\circ(S\otimes S)\circ\tau$ and $\beta = S\circ\mu$, where $\tau$ is the transposition. Both are convolution-inverses of $\mu$ in $\operatorname{Hom}_k(H\otimes_k H,H)$, since $S$ is a convolution inverse of $\mathrm{id}$ and convolution is compatible with the tensor algebra structure; by uniqueness of inverses in an associative algebra $\alpha = \beta$. The coalgebra statements are proved by the dual argument, or by applying the algebra statement to $H^{\mathrm{opp}}$ and $H^{\mathrm{cop}}$.
+*Proof.* 1: if $S'$ is another convolution inverse of $\mathrm{id}$ then $S = S * \eta\varepsilon = S * (\mathrm{id} * S') = (S*\mathrm{id})*S' = \eta\varepsilon * S' = S'$. 2: consider the convolution algebra $\operatorname{Hom}_k(H\otimes_k H, H)$ and the elements $\alpha = \mu\circ(S\otimes S)\circ\tau$ and $\beta = S\circ\mu$, where $\tau$ is the transposition. Both are convolution-inverses of $\mu$ in $\operatorname{Hom}_k(H\otimes_k H,H)$, since $S$ is a convolution inverse of $\mathrm{id}$ and convolution is compatible with the tensor algebra structure; by uniqueness of inverses in an associative algebra $\alpha = \beta$. The coalgebra statements are proved by the dual argument, or by applying the algebra statement to $H_{\mathrm{opp}}$ and $H_{\mathrm{cop}}$.
 
 ### Group-like and primitive elements
 
@@ -197,7 +197,7 @@ This is the theorem that makes the Hopf algebra Frobenius, and the integral is e
 2. there is a left integral $\Lambda$ with $\varepsilon(\Lambda) \neq 0$;
 3. $H$ is separable over $k$.
 
-*Proof (sketch).* If $\varepsilon(\Lambda) \neq 0$ then normalising $\Lambda$ to have $\varepsilon(\Lambda) = 1$ and averaging over $H$ with the aid of the comultiplication produces a projection onto the invariants, which is the Maschke argument: for any surjection $M \to N$ of $H$-modules and any $k$-linear splitting $\sigma$, the averaged map $\sigma^{\mathrm{av}}(n) = \Lambda_{(1)}\cdot\sigma(S(\Lambda_{(2)})\cdot n)$ is $H$-linear and still splits. Conversely, if $H$ is semisimple then the counit, which is a nonzero $H$-module map onto the trivial module, splits, and the image of $1$ under a splitting is a left integral with $\varepsilon(\Lambda)=1$. The equivalence with separability is the characterisation of separability by the splitting of the multiplication in *Separable Algebras*, applied to the Hopf algebra whose regular module is semisimple.
+*Proof (sketch).* If $\varepsilon(\Lambda) \neq 0$ then normalising $\Lambda$ to have $\varepsilon(\Lambda) = 1$ and averaging over $H$ with the aid of the comultiplication produces a projection onto the invariants, which is the Maschke argument: for any surjection $M \to N$ of $H$-modules and any $k$-linear splitting $\sigma$, the averaged map $\sigma_{\mathrm{av}}(n) = \Lambda_{(1)}\cdot\sigma(S(\Lambda_{(2)})\cdot n)$ is $H$-linear and still splits. Conversely, if $H$ is semisimple then the counit, which is a nonzero $H$-module map onto the trivial module, splits, and the image of $1$ under a splitting is a left integral with $\varepsilon(\Lambda)=1$. The equivalence with separability is the characterisation of separability by the splitting of the multiplication in *Separable Algebras*, applied to the Hopf algebra whose regular module is semisimple.
 
 **Corollary.** For a finite group $G$ and a field $k$, the group algebra $k[G]$ is semisimple as a Hopf algebra exactly when $\operatorname{char}k \nmid \lvert G\rvert$; the left integral is $\Lambda = \sum_{g\in G}g$ when $\operatorname{char}k = n \mid \lvert G\rvert$, and $\varepsilon(\Lambda) = \lvert G\rvert = 0$ in that case. This is Maschke's theorem in the form, and the integral is the element that would serve as a normalised average if $\lvert G\rvert$ were invertible. When $\operatorname{char}k = n \mid \lvert G\rvert$ the integral $\sum_g g$ lies in the socle of $k[G]$, which is the module-theoretic form of the failure of semisimplicity.
 
@@ -222,18 +222,18 @@ where $\delta(m) = m_{(-1)}\otimes m_{(0)}$ is the coaction. A Hopf module is **
 **Theorem (fundamental theorem of Hopf modules, standard).** Let $H$ be a Hopf algebra with antipode $S$. For a Hopf module $M$ let
 
 $$
-M^{\mathrm{co}H} = \{m \in M : \delta(m) = 1\otimes m\}
+M_{\mathrm{co}}^H = \{m \in M : \delta(m) = 1\otimes m\}
 $$
 
 be its space of **coinvariants**. Then the multiplication map
 
 $$
-\boxed{\;H\otimes_k M^{\mathrm{co}H} \longrightarrow M, \qquad h\otimes m \longmapsto h\cdot m\;}
+\boxed{\;H\otimes_k M_{\mathrm{co}}^H \longrightarrow M, \qquad h\otimes m \longmapsto h\cdot m\;}
 $$
 
 is an isomorphism of Hopf modules. Consequently every Hopf module is free over $H$ on its coinvariants.
 
-*Proof.* The map is a Hopf module homomorphism by the compatibility axiom. Its inverse is built from the antipode: $\Phi(m) = m_{(-1)}S(m_{(-2)})\otimes m_{(0)}$, which lands in $H\otimes M^{\mathrm{co}H}$ because the coaction on the first factor is balanced by $S$. Both composites are the identity by the antipode identity and the coassociativity and counit axioms.
+*Proof.* The map is a Hopf module homomorphism by the compatibility axiom. Its inverse is built from the antipode: $\Phi(m) = m_{(-1)}S(m_{(-2)})\otimes m_{(0)}$, which lands in $H\otimes M_{\mathrm{co}}^H$ because the coaction on the first factor is balanced by $S$. Both composites are the identity by the antipode identity and the coassociativity and counit axioms.
 
 The theorem is the Hopf-algebraic form of the statement that a module over a group algebra is free over the coinvariants, and it is the engine of the **Galois theory** of Hopf algebras: a Hopf algebra $H$ acting on an algebra $A$ gives a Galois extension precisely when the comparison map $A\otimes_{A^H}A \to A\otimes_k H$ is an isomorphism, and the fundamental theorem of Hopf modules is what makes the coinvariants the correct "fixed algebra". This is the algebraic counterpart of the Galois descent of *Group Cohomology*.
 
@@ -273,7 +273,7 @@ The **quantum plane** is the algebra $k_q[x,y]$ with the single relation $yx = q
 
 A **coalgebra** is the formal dual of an algebra: a space with a coassociative comultiplication $\Delta$ and a counit $\varepsilon$ satisfying $(\varepsilon\otimes\mathrm{id})\Delta = \mathrm{id} = (\mathrm{id}\otimes\varepsilon)\Delta$. A **bialgebra** is an algebra and a coalgebra whose comultiplication and counit are algebra homomorphisms, and the **convolution product** $(f*g)(h) = f(h_{(1)})g(h_{(2)})$ makes $\operatorname{Hom}_k(C,A)$ an algebra with identity $\eta\varepsilon$. A **Hopf algebra** is a bialgebra whose identity map is convolution-invertible; the inverse is the **antipode** $S$, characterised by $S(h_{(1)})h_{(2)} = \varepsilon(h)1 = h_{(1)}S(h_{(2)})$. The antipode is unique, it is an algebra and coalgebra anti-homomorphism, and $\Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)})$; the **group-like** elements $\Delta(g) = g\otimes g$ form a group, and the **primitive** elements $\Delta(x) = x\otimes 1 + 1\otimes x$ form a Lie algebra.
 
-The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $\mathrm{U}(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the **Larson–Sweedler theorem**; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic **Maschke theorem** and specialises to the classical one for $k[G]$; and it is a **Frobenius algebra** in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The **fundamental theorem of Hopf modules** identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.
+The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $\mathrm{U}(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the **Larson–Sweedler theorem**; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic **Maschke theorem** and specialises to the classical one for $k[G]$; and it is a **Frobenius algebra** in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The **fundamental theorem of Hopf modules** identifies every Hopf module with $H\otimes_k M_{\mathrm{co}}^H$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.
 
 ## Summary of Notation
 
@@ -294,7 +294,7 @@ The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g
 | $k^G = (k[G])^*$ | Hopf algebra of functions on a finite group |
 | $\int_H^\ell$, $\int_H^r$ | left and right integrals, one-dimensional |
 | $\varepsilon(\Lambda)\neq0$ | Maschke condition for semisimplicity |
-| $M^{\mathrm{co}H}$ | coinvariants of a Hopf module |
+| $M_{\mathrm{co}}^H$ | coinvariants of a Hopf module |
 | $m_{(-1)}\otimes m_{(0)}$ | coaction |
 | $\tau(x\otimes y) = y\otimes x$ | transposition; cocommutativity |
 | $A\# H$ | smash product, $(a\otimes h)(b\otimes g) = a(h_{(1)}\cdot b)\otimes h_{(2)}g$ |

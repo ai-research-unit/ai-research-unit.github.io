@@ -31,7 +31,7 @@ $$
 
 **Proof.** Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$.
 
-**Corollary.** The fixed algebra of $\alpha$ is the even part $A^{\mathrm{even}}$ and its anti-fixed part is the odd part $A^{\mathrm{odd}}$; $\alpha$ is the grade involution of the $\mathbb{Z}/2$-grading of $A$, in the sense of *Superalgebras and Graded Structures*.
+**Corollary.** The fixed algebra of $\alpha$ is the even part $A_{\mathrm{even}}$ and its anti-fixed part is the odd part $A_{\mathrm{odd}}$; $\alpha$ is the grade involution of the $\mathbb{Z}/2$-grading of $A$, in the sense of *Superalgebras and Graded Structures*.
 
 ## Reversion and the Reversal
 

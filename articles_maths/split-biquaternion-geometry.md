@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article is the geometry slot of the split biquaternion system. It describes the geometric structures that the algebra $\mathbb{B}^{\mathrm{spl}}$ carries in its own right: the two quadratic forms attached to it, the unit sphere and its metric, the zero divisor cone and its two ruling ideals, the quadric defined by the Hermitian form, and the incidence geometry of the neutral planes. The article is the geometric companion of the written algebraic articles of the same system and the split-biquaternion entry of the ladder that Part V traverses one number system at a time.
+This article is the geometry slot of the split biquaternion system. It describes the geometric structures that the algebra $\mathbb{B}_{\mathrm{spl}}$ carries in its own right: the two quadratic forms attached to it, the unit sphere and its metric, the zero divisor cone and its two ruling ideals, the quadric defined by the Hermitian form, and the incidence geometry of the neutral planes. The article is the geometric companion of the written algebraic articles of the same system and the split-biquaternion entry of the ladder that Part V traverses one number system at a time.
 
-The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: the tensor product $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, the basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the central split complex unit $j$ with $j^2 = +e_t$, the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$, the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$, its non-invertibility exactly on the zero divisors, and the idempotent description of invertibility, from *Split-Biquaternion Norm and Invertibility*; the description of the zero divisors as the union of the two ideals from *Split-Biquaternion Zero Divisors*; the classification of the roots of $-e_t$ from *Split-Biquaternion Roots of Minus One*; and the polar decomposition of the units from *Split-Biquaternion Polar Decomposition*, whose algebraic content is used here only as the input to a geometric statement and is not restated. The Hermitian scalar form and its two Lorentzian and neutral restrictions are established in *Split-Biquaternion Rotations and the Lorentz Group*, and are used here as the metric datum. The general theory of quadrics, of isotropic subspaces and of the isometry groups of forms is the subject of the Part II companion *Pseudo-Riemannian and Lorentzian Geometry* and of the Part I companions *Quadratic Forms and Polarisation*, *Bilinear Forms* and *Isometries and Orthogonal Transformations*, written in parallel; the present article treats only the structures of this one algebra.
+The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: the tensor product $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, the basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the central split complex unit $j$ with $j^2 = +e_t$, the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$, the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$, its non-invertibility exactly on the zero divisors, and the idempotent description of invertibility, from *Split-Biquaternion Norm and Invertibility*; the description of the zero divisors as the union of the two ideals from *Split-Biquaternion Zero Divisors*; the classification of the roots of $-e_t$ from *Split-Biquaternion Roots of Minus One*; and the polar decomposition of the units from *Split-Biquaternion Polar Decomposition*, whose algebraic content is used here only as the input to a geometric statement and is not restated. The Hermitian scalar form and its two Lorentzian and neutral restrictions are established in *Split-Biquaternion Rotations and the Lorentz Group*, and are used here as the metric datum. The general theory of quadrics, of isotropic subspaces and of the isometry groups of forms is the subject of the Part II companion *Pseudo-Riemannian and Lorentzian Geometry* and of the Part I companions *Quadratic Forms and Polarisation*, *Bilinear Forms* and *Isometries and Orthogonal Transformations*, written in parallel; the present article treats only the structures of this one algebra.
 
 Throughout, $\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu$ and $q_\mu, q'_\mu\in\mathbb{R}$, and the real coordinates of $\tilde Q$ are $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$. Two quadratic forms are used, both established in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group* and cited here rather than redefined: the **Euclidean form**
 
@@ -25,19 +25,19 @@ which is non-degenerate of signature $(4,4)$. In coordinates the split-biquatern
 
 ### The Split-Biquaternion Norm and Its Zero Set
 
-**Remark.** The **split-biquaternion norm** is the map $N : \mathbb{B}^{\mathrm{spl}}\to\mathbb{C}^{\mathrm{spl}}$, $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$; it is multiplicative and quadratic over $\mathbb{R}$, with $\langle\tilde Q\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2$, and it is anisotropic, so its proper zero set $\{\tilde Q : \langle\tilde Q\rangle_{\natural} = 0\}$ is the single point $\{0\}$. These properties are established in *Split-Biquaternion Norm and Invertibility*.
+**Remark.** The **split-biquaternion norm** is the map $N : \mathbb{B}_{\mathrm{spl}}\to\mathbb{C}_{\mathrm{spl}}$, $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$; it is multiplicative and quadratic over $\mathbb{R}$, with $\langle\tilde Q\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2$, and it is anisotropic, so its proper zero set $\{\tilde Q : \langle\tilde Q\rangle_{\natural} = 0\}$ is the single point $\{0\}$. These properties are established in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Zero Set
 
-**Definition.** The **zero divisor cone** is the set of non-invertible elements of $\mathbb{B}^{\mathrm{spl}}$, equivalently the set of elements whose split-biquaternion norm is a zero divisor of $\mathbb{C}^{\mathrm{spl}}$:
+**Definition.** The **zero divisor cone** is the set of non-invertible elements of $\mathbb{B}_{\mathrm{spl}}$, equivalently the set of elements whose split-biquaternion norm is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$:
 
 $$
-Z = \{\tilde Q\in\mathbb{B}^{\mathrm{spl}} : \langle\tilde Q\rangle_{\natural}\notin{\mathbb{C}^{\mathrm{spl}}}^\times\}.
+Z = \{\tilde Q\in\mathbb{B}_{\mathrm{spl}} : \langle\tilde Q\rangle_{\natural}\notin{\mathbb{C}_{\mathrm{spl}}}^\times\}.
 $$
 
 The name *null set of the split-biquaternion norm* attaches to $Z$ through the zero divisors of the coefficient algebra rather than through vanishing, since the split-biquaternion norm itself is anisotropic.
 
-**Theorem.** The element $\tilde Q$ lies in $Z$ if and only if the split complex number $\langle\tilde Q\rangle_{\natural}$ is a zero divisor of $\mathbb{C}^{\mathrm{spl}}$, equivalently if and only if one of the idempotent components $\tilde Q_\pm$ is the quaternion zero, in which case
+**Theorem.** The element $\tilde Q$ lies in $Z$ if and only if the split complex number $\langle\tilde Q\rangle_{\natural}$ is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$, equivalently if and only if one of the idempotent components $\tilde Q_\pm$ is the quaternion zero, in which case
 
 $$
 \boxed{\;
@@ -45,9 +45,9 @@ Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2 = \{\tilde Q : \tilde Q_+ = 0
 \;},
 $$
 
-the union of the two ideals, and each of the two sets is a real four-dimensional subspace; the two meet only at the origin, and $Z$ is the union of two four-dimensional subspaces of the eight-dimensional real space $\mathbb{B}^{\mathrm{spl}}$. In terms of the decomposition $N = R + jI$ the cone is the locus $\lvert I(\tilde Q)\rvert = R(\tilde Q)$, which for the two real forms $R$ and $I$ is the equality case of the Cauchy–Schwarz inequality.
+the union of the two ideals, and each of the two sets is a real four-dimensional subspace; the two meet only at the origin, and $Z$ is the union of two four-dimensional subspaces of the eight-dimensional real space $\mathbb{B}_{\mathrm{spl}}$. In terms of the decomposition $N = R + jI$ the cone is the locus $\lvert I(\tilde Q)\rvert = R(\tilde Q)$, which for the two real forms $R$ and $I$ is the equality case of the Cauchy–Schwarz inequality.
 
-*Proof.* In the split complex algebra an element $u = c + js$ is a zero divisor if and only if $c^2 = s^2$, that is, if and only if $u$ has the form $\lambda(1\pm j)$ with $\lambda\in\mathbb{R}$; equivalently $uu^{*} = 0$ (see *Split Complex Algebra*). Since $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q_+\rangle_{\natural}\tilde\Pi_1 + \langle\tilde Q_-\rangle_{\natural}\tilde\Pi_2$ under the idempotent decomposition, the split-biquaternion norm is a zero divisor of $\mathbb{C}^{\mathrm{spl}}$ exactly when one of the two quaternion norms vanishes, and a quaternion norm vanishes only at the quaternion zero. This gives the two ideals, and each ideal is four-dimensional over $\mathbb{R}$ because it is a copy of $\mathbb{H}$. They meet only at the origin because $\tilde Q_+ = 0$ and $\tilde Q_- = 0$ together give $\tilde Q = 0$. For the last statement, $\langle\tilde Q\rangle_{\natural} = R + jI$ with $R = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ and $I = 2\sum_\mu q_\mu q'_\mu$, so the idempotent components of $\langle\tilde Q\rangle_{\natural}$ are $R \pm I = \sum_\mu(q_\mu\pm q'_\mu)^2$, which vanish exactly when $q'_\mu = \mp q_\mu$ for all $\mu$; this is the equality case of $\lvert\sum_\mu q_\mu q'_\mu\rvert \leq \sqrt{\sum_\mu q_\mu^2}\sqrt{\sum_\mu (q'_\mu)^2}$.
+*Proof.* In the split complex algebra an element $u = c + js$ is a zero divisor if and only if $c^2 = s^2$, that is, if and only if $u$ has the form $\lambda(1\pm j)$ with $\lambda\in\mathbb{R}$; equivalently $uu^{*} = 0$ (see *Split Complex Algebra*). Since $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q_+\rangle_{\natural}\tilde\Pi_1 + \langle\tilde Q_-\rangle_{\natural}\tilde\Pi_2$ under the idempotent decomposition, the split-biquaternion norm is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ exactly when one of the two quaternion norms vanishes, and a quaternion norm vanishes only at the quaternion zero. This gives the two ideals, and each ideal is four-dimensional over $\mathbb{R}$ because it is a copy of $\mathbb{H}$. They meet only at the origin because $\tilde Q_+ = 0$ and $\tilde Q_- = 0$ together give $\tilde Q = 0$. For the last statement, $\langle\tilde Q\rangle_{\natural} = R + jI$ with $R = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ and $I = 2\sum_\mu q_\mu q'_\mu$, so the idempotent components of $\langle\tilde Q\rangle_{\natural}$ are $R \pm I = \sum_\mu(q_\mu\pm q'_\mu)^2$, which vanish exactly when $q'_\mu = \mp q_\mu$ for all $\mu$; this is the equality case of $\lvert\sum_\mu q_\mu q'_\mu\rvert \leq \sqrt{\sum_\mu q_\mu^2}\sqrt{\sum_\mu (q'_\mu)^2}$.
 
 The description of the zero divisor set is the geometric counterpart of the algebraic statement of *Split-Biquaternion Zero Divisors*: the set of non-invertible elements is a union of two subspaces, not a hypersurface, and it is not a cone in the sense of a single quadratic cone but the union of the two ruling subspaces.
 
@@ -62,7 +62,7 @@ The description of the zero divisor set is the geometric counterpart of the alge
 **Definition.** The **unit sphere** of the split biquaternion algebra is
 
 $$
-S(\mathbb{B}^{\mathrm{spl}}) = \{\tilde Q\in\mathbb{B}^{\mathrm{spl}} : \langle\tilde Q\rangle_{\natural} = e_t\}.
+S(\mathbb{B}_{\mathrm{spl}}) = \{\tilde Q\in\mathbb{B}_{\mathrm{spl}} : \langle\tilde Q\rangle_{\natural} = e_t\}.
 $$
 
 **Theorem.** The unit sphere is the product $S^3\times S^3$ of two round three-spheres, exhibited by the idempotent decomposition: an element $\tilde Q$ has norm $e_t$ if and only if $\lvert\tilde Q_+\rvert = \lvert\tilde Q_-\rvert = 1$, and the map
@@ -72,7 +72,7 @@ $$
 \tilde Q = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2\longmapsto(\tilde Q_+,\tilde Q_-)
 $$
 
-is a ring isomorphism carrying $S(\mathbb{B}^{\mathrm{spl}})$ onto $S^3\times S^3$. In particular $S(\mathbb{B}^{\mathrm{spl}})$ is a compact six-dimensional manifold, and it is a group under multiplication.
+is a ring isomorphism carrying $S(\mathbb{B}_{\mathrm{spl}})$ onto $S^3\times S^3$. In particular $S(\mathbb{B}_{\mathrm{spl}})$ is a compact six-dimensional manifold, and it is a group under multiplication.
 
 *Proof.* The split-biquaternion norm of $\tilde Q = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2$ is $\langle\tilde Q_+\rangle_{\natural}\tilde\Pi_1 + \langle\tilde Q_-\rangle_{\natural}\tilde\Pi_2$ because $\tilde\Pi_{1,2}$ are orthogonal idempotents, and this equals $e_t = \tilde\Pi_1 + \tilde\Pi_2$ exactly when both quaternion norms equal $1$. The identification $S^3\times S^3$ is then immediate.
 
@@ -80,7 +80,7 @@ The unit sphere is thus a compact Lie group of dimension six. It is not a hyperb
 
 ### The Product Metric
 
-**Definition.** The **product metric** on $S(\mathbb{B}^{\mathrm{spl}})\cong S^3\times S^3$ is
+**Definition.** The **product metric** on $S(\mathbb{B}_{\mathrm{spl}})\cong S^3\times S^3$ is
 
 $$
 d\left((u_+,u_-),(v_+,v_-)\right)^2 = d_{S^3}(u_+,v_+)^2 + d_{S^3}(u_-,v_-)^2,
@@ -124,10 +124,10 @@ These quotients are the split-biquaternion counterpart of the projective quotien
 
 The Hermitian scalar form defines a quadric, and its isotropic subspaces carry an incidence geometry.
 
-**Definition.** Let $\mathbb{P}(\mathbb{B}^{\mathrm{spl}})$ be the real projective space of seven dimensions on the real vector space $\mathbb{B}^{\mathrm{spl}}$. The **Hermitian quadric** is
+**Definition.** Let $\mathbb{P}(\mathbb{B}_{\mathrm{spl}})$ be the real projective space of seven dimensions on the real vector space $\mathbb{B}_{\mathrm{spl}}$. The **Hermitian quadric** is
 
 $$
-\mathcal{Q}(g) = \left\{[\tilde Q]\in\mathbb{P}(\mathbb{B}^{\mathrm{spl}}) : g(\tilde Q,\tilde Q) = 0\right\},
+\mathcal{Q}(g) = \left\{[\tilde Q]\in\mathbb{P}(\mathbb{B}_{\mathrm{spl}}) : g(\tilde Q,\tilde Q) = 0\right\},
 $$
 
 the projectivisation of the null cone of $g$; it is a non-degenerate quadric of dimension six and of signature $(4,4)$, called a quadric of Kleinian type.
@@ -140,11 +140,11 @@ The zero divisor set therefore has a projective interpretation: it is not a hype
 
 ### The Neutral Planes and Their Incidence
 
-**Definition.** A **neutral plane** in $\mathbb{B}^{\mathrm{spl}}$ is a four-dimensional real subspace on which $g$ has signature $(2,2)$. A neutral plane is **totally isotropic** if the restriction of $g$ to it is zero, which with dimension four is the maximal isotropic case.
+**Definition.** A **neutral plane** in $\mathbb{B}_{\mathrm{spl}}$ is a four-dimensional real subspace on which $g$ has signature $(2,2)$. A neutral plane is **totally isotropic** if the restriction of $g$ to it is zero, which with dimension four is the maximal isotropic case.
 
-**Proposition.** Let $\mu\neq\nu$ be distinct elements of $\{t,x,y,z\}$. The $\mathbb{C}^{\mathrm{spl}}$-span $\mathbb{C}^{\mathrm{spl}}e_\mu\oplus\mathbb{C}^{\mathrm{spl}}e_\nu$ is a neutral plane with $g$-orthonormal basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ and signature $(+1,-1,+1,-1)$; the group $O(2,2)$ is its isometry group. Two such planes intersect in the two-dimensional split complex line $\mathbb{C}^{\mathrm{spl}}e_\mu$ when they share exactly one index, and in the origin otherwise.
+**Proposition.** Let $\mu\neq\nu$ be distinct elements of $\{t,x,y,z\}$. The $\mathbb{C}_{\mathrm{spl}}$-span $\mathbb{C}_{\mathrm{spl}}e_\mu\oplus\mathbb{C}_{\mathrm{spl}}e_\nu$ is a neutral plane with $g$-orthonormal basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ and signature $(+1,-1,+1,-1)$; the group $O(2,2)$ is its isometry group. Two such planes intersect in the two-dimensional split complex line $\mathbb{C}_{\mathrm{spl}}e_\mu$ when they share exactly one index, and in the origin otherwise.
 
-*Proof.* The orthogonality and the diagonal values are the computation of *Split-Biquaternion Rotations and the Lorentz Group*; the intersection statement is immediate from the direct sum decomposition of $\mathbb{B}^{\mathrm{spl}}$ into the four split complex lines $\mathbb{C}^{\mathrm{spl}}e_\mu$.
+*Proof.* The orthogonality and the diagonal values are the computation of *Split-Biquaternion Rotations and the Lorentz Group*; the intersection statement is immediate from the direct sum decomposition of $\mathbb{B}_{\mathrm{spl}}$ into the four split complex lines $\mathbb{C}_{\mathrm{spl}}e_\mu$.
 
 The neutral planes are the geometric home of the hyperbolic rotations of the system: by the results of *Split-Biquaternion Rotations and the Lorentz Group*, left multiplication by a unit $\exp(\theta j)$ of the split complex part acts on each neutral plane as a simultaneous hyperbolic rotation in the two coordinate planes, giving a two-dimensional subgroup of $SO^{+}(2,2)$.
 
@@ -166,13 +166,13 @@ with identity component $SO^{+}(4,4)$ and maximal compact subgroup $O(4)\times O
 
 *Proof.* The dimension of $O(n,m)$ is $\tfrac{1}{2}(p+q)(p+q-1) = \tfrac{1}{2}\cdot 8\cdot 7 = 28$. The maximal compact subgroup is $O(p)\times O(q)$ for a form of signature $(n,m)$ with $p,q > 0$, giving $O(4)\times O(4)$; its identity component is $SO(4)\times SO(4)$. The symmetric space $SO^{+}(n,m)/(SO(n)\times SO(m))$ is the Grassmannian of maximal positive subspaces, of dimension $pq = 16$ and rank $\min(n,m) = 4$, and the quadric is its compact dual, the standard duality of the symmetric space and the quadric associated to a form of signature $(n,m)$ with $p = q$.
 
-**Proposition.** The subgroup of $GL_8(\mathbb{R})$ preserving the algebra structure of $\mathbb{B}^{\mathrm{spl}}$ and the Hermitian form $g$ is a closed subgroup of $O(4,4)$; it contains the compact group $Sp(1)\times Sp(1)$ of two-sided multiplication by unit quaternions, acting on the quaternion subspace and inducing $SO(4)$, and the split complex unit group $\exp(\theta j)$ of the neutral planes.
+**Proposition.** The subgroup of $GL_8(\mathbb{R})$ preserving the algebra structure of $\mathbb{B}_{\mathrm{spl}}$ and the Hermitian form $g$ is a closed subgroup of $O(4,4)$; it contains the compact group $Sp(1)\times Sp(1)$ of two-sided multiplication by unit quaternions, acting on the quaternion subspace and inducing $SO(4)$, and the split complex unit group $\exp(\theta j)$ of the neutral planes.
 
 *Proof.* The algebra automorphisms and the two-sided multiplications preserve the algebra structure, and the claim is that those among them preserve $g$. The two-sided multiplication by $\tilde S_+,\tilde S_-\in Sp(1)$ acts on the quaternion part by $SO(4)$, which preserves the definite form on the quaternion subspace of the algebra; combined with the identity action on the split partners it preserves $g$. The split complex units preserve $g$ on each neutral plane by the proposition of the previous article.
 
 ### The Algebra as a Normed Space
 
-The Euclidean form $\lvert\cdot\rvert^2$ gives $\mathbb{B}^{\mathrm{spl}}$ the structure of a normed real vector space of dimension eight, and the multiplication is continuous in that norm but not norm-multiplicative. The sharp inequality is
+The Euclidean form $\lvert\cdot\rvert^2$ gives $\mathbb{B}_{\mathrm{spl}}$ the structure of a normed real vector space of dimension eight, and the multiplication is continuous in that norm but not norm-multiplicative. The sharp inequality is
 
 $$
 \lvert\tilde Q_1\tilde Q_2\rvert \leq \sqrt{2}\,\lvert\tilde Q_1\rvert\lvert\tilde Q_2\rvert,
@@ -184,7 +184,7 @@ $$
 \tilde Q = \lvert\tilde Q\rvert\,\frac{\tilde Q}{\lvert\tilde Q\rvert},
 $$
 
-with the second factor a point of the Euclidean unit sphere of $\mathbb{B}^{\mathrm{spl}}$, not of the unit sphere $S(\mathbb{B}^{\mathrm{spl}})$; the two spheres are different, and the geometric content of the difference is exactly that the Euclidean sphere meets both the zero divisor cone and the algebraic unit sphere in lower-dimensional sets. The polar decomposition of the units of the algebra, established in *Split-Biquaternion Polar Decomposition*, describes which units occur; the geometric statement kept here is that the set of units is not the Euclidean unit sphere and not the algebraic unit sphere, but the complement of the zero divisor cone.
+with the second factor a point of the Euclidean unit sphere of $\mathbb{B}_{\mathrm{spl}}$, not of the unit sphere $S(\mathbb{B}_{\mathrm{spl}})$; the two spheres are different, and the geometric content of the difference is exactly that the Euclidean sphere meets both the zero divisor cone and the algebraic unit sphere in lower-dimensional sets. The polar decomposition of the units of the algebra, established in *Split-Biquaternion Polar Decomposition*, describes which units occur; the geometric statement kept here is that the set of units is not the Euclidean unit sphere and not the algebraic unit sphere, but the complement of the zero divisor cone.
 
 ## The Imaginary Span and the Split Form of Signature $(3,3)$
 
@@ -192,7 +192,7 @@ The two quadratic forms used in this article are the Euclidean form of signature
 
 ### The Scalar Plane and the Imaginary Span
 
-**Definition.** The **scalar plane** of $\mathbb{B}^{\mathrm{spl}}$ is the two-dimensional space
+**Definition.** The **scalar plane** of $\mathbb{B}_{\mathrm{spl}}$ is the two-dimensional space
 
 $$
 S = \mathbb{R}e_t\oplus\mathbb{R}je_t = \operatorname{span}\{e_t, je_t\},
@@ -212,7 +212,7 @@ $$
 
 so that $g$ restricted to $V$ has signature $(3,3)$ in the orthogonal basis $(\vec e_x,\vec e_y,\vec e_z,j\vec e_x,j\vec e_y,j\vec e_z)$, positive on the first three vectors and negative on the last three.
 
-*Proof.* Direct computation from $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, with ${}^{*}$ fixing $e_t$, negating each $e_r$, negating $j$ and fixing each $je_r$. On the first triple, $g(e_r,e_s) = \mathrm{Sc}(e_re_s^{\dagger}) = -\mathrm{Sc}(e_re_s) = \delta_{rs}$, since $e_re_s = -\delta_{rs}e_t + \sum_t\varepsilon_{rst}e_t$ has scalar part $-\delta_{rs}$. On the second, $g(je_r,je_s) = \mathrm{Sc}(je_r(je_s)^{\dagger}) = \mathrm{Sc}(je_rje_s) = \mathrm{Sc}(e_re_s) = -\delta_{rs}$. Across the two, $g(e_r,je_s) = \mathrm{Sc}(e_rje_s) = \mathrm{Sc}(je_re_s) = 0$, because the scalar part of $j$ times a quaternion vanishes. The statement for the scalar plane, and the two signatures together, follow by complementation: $\mathbb{B}^{\mathrm{spl}} = S\oplus V$ is an orthogonal direct sum, the signature $(1,1)$ of $S$ is read from $g(e_t,e_t) = +1$ and $g(je_t,je_t) = -1$, and $8 - 2 = 6$ with signature $(4,4) - (1,1) = (3,3)$.
+*Proof.* Direct computation from $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, with ${}^{*}$ fixing $e_t$, negating each $e_r$, negating $j$ and fixing each $je_r$. On the first triple, $g(e_r,e_s) = \mathrm{Sc}(e_re_s^{\dagger}) = -\mathrm{Sc}(e_re_s) = \delta_{rs}$, since $e_re_s = -\delta_{rs}e_t + \sum_t\varepsilon_{rst}e_t$ has scalar part $-\delta_{rs}$. On the second, $g(je_r,je_s) = \mathrm{Sc}(je_r(je_s)^{\dagger}) = \mathrm{Sc}(je_rje_s) = \mathrm{Sc}(e_re_s) = -\delta_{rs}$. Across the two, $g(e_r,je_s) = \mathrm{Sc}(e_rje_s) = \mathrm{Sc}(je_re_s) = 0$, because the scalar part of $j$ times a quaternion vanishes. The statement for the scalar plane, and the two signatures together, follow by complementation: $\mathbb{B}_{\mathrm{spl}} = S\oplus V$ is an orthogonal direct sum, the signature $(1,1)$ of $S$ is read from $g(e_t,e_t) = +1$ and $g(je_t,je_t) = -1$, and $8 - 2 = 6$ with signature $(4,4) - (1,1) = (3,3)$.
 
 **Remark (the same statement in the Clifford description).** Under the identification of the algebra with $\mathrm{Cl}_{0,3}$ recorded in *The Number Systems as Clifford Algebras*, the three elements $\vec e_x,\vec e_y,\vec e_z$ are the bivectors of the Clifford algebra and the three elements $j\vec e_x,j\vec e_y,j\vec e_z$ are its vectors, while $e_t$ is the scalar and $je_t$ the trivector. In that description the proposition says that $g$ is positive definite on the bivectors, negative definite on the vectors, and orthogonal across the two, so the split form of signature $(3,3)$ is the form of the Clifford algebra on the direct sum of its one- and two-vector parts. This is the same mechanism by which $\mathbb{M}_-$ and $\mathbb{M}_+$ acquire opposite Lorentzian signatures, applied one degree away: the sign of $g$ is carried by the conjugation ${}^{*}$, which fixes the vectors of the Clifford algebra and negates its bivectors.
 
@@ -246,13 +246,13 @@ the last step because $\mathrm{Sc}(e_re_s) = -\delta_{rs}$ and because the scala
 
 ### The Transformations the Algebra Realises
 
-**Proposition.** Let $\sigma$ be an automorphism of $\mathbb{B}^{\mathrm{spl}}$. Then $\sigma$ maps the imaginary span to itself, it either preserves each of the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ or interchanges them, and on $V$ it acts on the two isotropic three-planes by two rotations $\sigma_+,\sigma_-\in SO(3)$. It preserves the Hermitian form $g$ if and only if $\sigma_+ = \sigma_-$; in that case it acts on the two definite triples $\operatorname{span}\{e_r\}$ and $\operatorname{span}\{je_r\}$ by $\operatorname{diag}(R,R)$ when it preserves the ideals and by $\operatorname{diag}(R,-R)$ when it interchanges them, with $R = \sigma_+ = \sigma_-$.
+**Proposition.** Let $\sigma$ be an automorphism of $\mathbb{B}_{\mathrm{spl}}$. Then $\sigma$ maps the imaginary span to itself, it either preserves each of the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ or interchanges them, and on $V$ it acts on the two isotropic three-planes by two rotations $\sigma_+,\sigma_-\in SO(3)$. It preserves the Hermitian form $g$ if and only if $\sigma_+ = \sigma_-$; in that case it acts on the two definite triples $\operatorname{span}\{e_r\}$ and $\operatorname{span}\{je_r\}$ by $\operatorname{diag}(R,R)$ when it preserves the ideals and by $\operatorname{diag}(R,-R)$ when it interchanges them, with $R = \sigma_+ = \sigma_-$.
 
-*Proof.* An automorphism of $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ permutes the two simple summands, so it acts on the ideals by automorphisms $\sigma_\pm$ of $\mathbb{H}$, either with the labels preserved or with them exchanged; every automorphism of $\mathbb{H}$ is inner, hence a rotation of $\operatorname{Im}\mathbb{H}$, and this gives the first statement once $V\tilde\Pi_{1,2}$ is identified with $\operatorname{Im}\mathbb{H}$ through $e_r\tilde\Pi_{1,2}\leftrightarrow e_r$. On the imaginary span, the isotropic coordinates $c_{\pm}$ of an element are related to its two quaternion components by $a = c_++c_-$ and $b = c_+-c_-$, so that the form there is $g = 2\sum_r c_r^+c_r^-$. An automorphism sends $c_{\pm}\mapsto\sigma_{\pm}c_{\pm}$, or $c_{\pm}\mapsto\sigma_{\mp}c_{\pm}$ in the interchanged case, and the pairing $2\sum_rc^+_rc^-_r$ becomes $2\langle \sigma_+c^+,\sigma_-c^-\rangle = 2\langle c^+,\sigma_+^{-1}\sigma_-c^-\rangle$ in the first case and $2\langle \sigma_-c^-,\sigma_+c^+\rangle = 2\langle c^-,\sigma_-^{-1}\sigma_+c^+\rangle$ in the second. Either expression equals the pairing identically exactly when $\sigma_+ = \sigma_-$; then the automorphism is a conjugation by a unit quaternion in the first case and the interchange of the two ideals followed by such a conjugation in the second, and the change of coordinates $a = c_++c_-$, $b = c_+-c_-$ turns those two actions into $\operatorname{diag}(R,R)$ and $\operatorname{diag}(R,-R)$.
+*Proof.* An automorphism of $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ permutes the two simple summands, so it acts on the ideals by automorphisms $\sigma_\pm$ of $\mathbb{H}$, either with the labels preserved or with them exchanged; every automorphism of $\mathbb{H}$ is inner, hence a rotation of $\operatorname{Im}\mathbb{H}$, and this gives the first statement once $V\tilde\Pi_{1,2}$ is identified with $\operatorname{Im}\mathbb{H}$ through $e_r\tilde\Pi_{1,2}\leftrightarrow e_r$. On the imaginary span, the isotropic coordinates $c_{\pm}$ of an element are related to its two quaternion components by $a = c_++c_-$ and $b = c_+-c_-$, so that the form there is $g = 2\sum_r c_r^+c_r^-$. An automorphism sends $c_{\pm}\mapsto\sigma_{\pm}c_{\pm}$, or $c_{\pm}\mapsto\sigma_{\mp}c_{\pm}$ in the interchanged case, and the pairing $2\sum_rc^+_rc^-_r$ becomes $2\langle \sigma_+c^+,\sigma_-c^-\rangle = 2\langle c^+,\sigma_+^{-1}\sigma_-c^-\rangle$ in the first case and $2\langle \sigma_-c^-,\sigma_+c^+\rangle = 2\langle c^-,\sigma_-^{-1}\sigma_+c^+\rangle$ in the second. Either expression equals the pairing identically exactly when $\sigma_+ = \sigma_-$; then the automorphism is a conjugation by a unit quaternion in the first case and the interchange of the two ideals followed by such a conjugation in the second, and the change of coordinates $a = c_++c_-$, $b = c_+-c_-$ turns those two actions into $\operatorname{diag}(R,R)$ and $\operatorname{diag}(R,-R)$.
 
 **Corollary.** The automorphisms of the algebra that preserve the Hermitian form form a group isomorphic to $O(3)$, of dimension three: the identity component is the diagonal $SO(3)$ of the maps $\operatorname{diag}(R,R)$, which are the conjugations by unit quaternions, and the other component consists of the maps $\operatorname{diag}(R,-R)$, among them the interchange of the two ideals.
 
-**Remark (three of the fifteen dimensions).** The isometry group of $(V,g)$ is $O(3,3)$, of dimension $\tfrac{1}{2}\cdot6\cdot5 = 15$, with identity component $SO^{+}(3,3)$ and maximal compact subgroup $SO(3)\times SO(3)$ of dimension six. The automorphisms of the algebra supply only the three-dimensional group of the corollary, so an isometry of the form $\operatorname{diag}(R,S)$ of the two definite triples in which $S$ is neither $R$ nor $-R$ is one that no automorphism of $\mathbb{B}^{\mathrm{spl}}$ realises; these are three dimensions of the compact part, and every one of the nine dimensions of boosts is of the same kind.
+**Remark (three of the fifteen dimensions).** The isometry group of $(V,g)$ is $O(3,3)$, of dimension $\tfrac{1}{2}\cdot6\cdot5 = 15$, with identity component $SO^{+}(3,3)$ and maximal compact subgroup $SO(3)\times SO(3)$ of dimension six. The automorphisms of the algebra supply only the three-dimensional group of the corollary, so an isometry of the form $\operatorname{diag}(R,S)$ of the two definite triples in which $S$ is neither $R$ nor $-R$ is one that no automorphism of $\mathbb{B}_{\mathrm{spl}}$ realises; these are three dimensions of the compact part, and every one of the nine dimensions of boosts is of the same kind.
 
 **Remark (the boosts come from the split complex scalars).** A family of the missing non-compact directions is nevertheless available, and it comes from the split complex factor rather than from the automorphisms. Let $\sigma = \alpha+j\beta$ be a split complex unit, $\alpha^2-\beta^2 = 1$. Left multiplication by $\sigma$ satisfies ${}^{*}(\sigma)\sigma = e_t$, hence preserves $g$ on the whole algebra; it maps the imaginary span to itself, mixing the two definite triples, and in the isotropic coordinates it is the boost
 
@@ -268,7 +268,7 @@ It is not an automorphism of the algebra, because it does not fix $e_t$. The aut
 
 The geometry of the split biquaternions is best read against the two geometries it generalises and against the quaternion geometry it doubles.
 
-| Feature | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{H}$ | $\mathbb{B}^{\mathrm{spl}}$ |
+| Feature | $\mathbb{C}$ | $\mathbb{C}_{\mathrm{spl}}$ | $\mathbb{H}$ | $\mathbb{B}_{\mathrm{spl}}$ |
 |---|---|---|---|---|
 | Real dimension | $2$ | $2$ | $4$ | $8$ |
 | Norm | $A\bar A > 0$ | $c^2 - s^2$ indefinite | $qq^{\natural} > 0$ | $N = R + jI$ split complex |
@@ -279,13 +279,13 @@ The geometry of the split biquaternions is best read against the two geometries 
 | Signature of the ambient form | $(2,0)$ | $(1,1)$ | $(4,0)$ | $(4,4)$ |
 | Projective line | $\mathbb{C}P^1=S^2$ | — | $\mathbb{H}P^1 = S^4$ | quotient $S^3$ |
 
-Two features separate the split biquaternion system from both the complex and the quaternion systems. First, the split-biquaternion norm is not real-valued but split complex valued, so it does not define a distance; the metric that $\mathbb{B}^{\mathrm{spl}}$ carries is the Euclidean metric $\lvert\cdot\rvert^2$, and the split-biquaternion norm instead defines the zero divisor cone. Second, the zero divisor cone is not a hypersurface but a union of two linear subspaces; the geometry of the system is therefore affine and incidence-theoretic rather than conformal. Against the split complex system, the split biquaternion system replaces the two-branched hyperbola of units by the compact group $S^3\times S^3$: naively passing from $\mathbb{C}^{\mathrm{spl}}$ to $\mathbb{C}^{\mathrm{spl}}\otimes\mathbb{H}$ restores compactness, because the quaternion factor is definite even though the split complex factor is not.
+Two features separate the split biquaternion system from both the complex and the quaternion systems. First, the split-biquaternion norm is not real-valued but split complex valued, so it does not define a distance; the metric that $\mathbb{B}_{\mathrm{spl}}$ carries is the Euclidean metric $\lvert\cdot\rvert^2$, and the split-biquaternion norm instead defines the zero divisor cone. Second, the zero divisor cone is not a hypersurface but a union of two linear subspaces; the geometry of the system is therefore affine and incidence-theoretic rather than conformal. Against the split complex system, the split biquaternion system replaces the two-branched hyperbola of units by the compact group $S^3\times S^3$: naively passing from $\mathbb{C}_{\mathrm{spl}}$ to $\mathbb{C}_{\mathrm{spl}}\otimes\mathbb{H}$ restores compactness, because the quaternion factor is definite even though the split complex factor is not.
 
 ## Summary
 
-The split biquaternion algebra carries two quadratic forms used in this article, the Euclidean form and the Hermitian form, in addition to the split-complex-valued norms of the layer. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its proper zero set is the origin, while the set on which it is a zero divisor of $\mathbb{C}^{\mathrm{spl}}$ — the zero divisor set — is the union of the two ideals $\mathbb{H}\tilde\Pi_1$ and $\mathbb{H}\tilde\Pi_2$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.
+The split biquaternion algebra carries two quadratic forms used in this article, the Euclidean form and the Hermitian form, in addition to the split-complex-valued norms of the layer. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its proper zero set is the origin, while the set on which it is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ — the zero divisor set — is the union of the two ideals $\mathbb{H}\tilde\Pi_1$ and $\mathbb{H}\tilde\Pi_2$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.
 
-The unit sphere $\{\tilde Q : \langle\tilde Q\rangle_{\natural} = e_t\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian form $g=\langle\cdot,\cdot\rangle_{*}$, $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{C}^{\mathrm{spl}}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.
+The unit sphere $\{\tilde Q : \langle\tilde Q\rangle_{\natural} = e_t\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian form $g=\langle\cdot,\cdot\rangle_{*}$, $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{C}_{\mathrm{spl}}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.
 
 The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mathbb{H}$, the orthogonal complement of the scalar plane $\mathbb{R}e_t\oplus\mathbb{R}je_t$, is the split six-space of the system: $g$ restricts to it with signature $(3,3)$, positive on the triple $(\vec e_x,\vec e_y,\vec e_z)$ of bivectors and negative on the triple $(j\vec e_x,j\vec e_y,j\vec e_z)$ of vectors of the Clifford algebra $\mathrm{Cl}_{0,3}$, so the isometry group of the restriction is $O(3,3)$, of dimension fifteen, with identity component $SO^{+}(3,3)\cong SL(4,\mathbb{R})/\{\pm I\}$ and maximal compact subgroup $SO(3)\times SO(3)$. The idempotents give a second splitting, $V = V\tilde\Pi_1\oplus V\tilde\Pi_2$, into two maximal totally isotropic three-planes that are $g$-dual to one another, on which the restriction is the pairing $2\sum_rc_r^+c_r^-$ of the isotropic coordinates. The automorphisms of the algebra map $V$ to itself and rotate the two isotropic planes independently, with or without exchanging them, and they preserve $g$ exactly when the two rotations agree, so the realised group is $O(3)$, of dimension three, acting by $\operatorname{diag}(R,R)$ and $\operatorname{diag}(R,-R)$ on the two definite triples. None of the nine dimensions of boosts is an automorphism, though one family of them is reached by multiplication by the split complex units, acting as $c_+\mapsto\lambda c_+$, $c_-\mapsto\lambda^{-1}c_-$.
 
@@ -293,7 +293,7 @@ The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mat
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra, real dimension $8$ |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra, real dimension $8$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $j$ | Split complex unit, $j^2 = +e_t$, central |
 | $Q_\mu = q_\mu + jq'_\mu$ | Split complex coefficients, $q_\mu, q'_\mu\in\mathbb{R}$ |
@@ -305,11 +305,11 @@ The imaginary span $V = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mat
 | $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor cone, the two ideals |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, signature $(4,4)$ |
-| $S(\mathbb{B}^{\mathrm{spl}}) = \{\tilde Q : \langle\tilde Q\rangle_{\natural} = e_t\}\cong S^3\times S^3$ | Unit sphere, compact group |
+| $S(\mathbb{B}_{\mathrm{spl}}) = \{\tilde Q : \langle\tilde Q\rangle_{\natural} = e_t\}\cong S^3\times S^3$ | Unit sphere, compact group |
 | $d_{S^3}(u,v) = \arccos\mathrm{Sc}(uv^{\natural})$ | Geodesic distance on $S^3$ |
 | $\Delta S^3$ | Diagonal subgroup of $S^3\times S^3$ |
 | $\mathcal{Q}(g)$ | Hermitian quadric in $\mathbb{P}^7$, Kleinian type $(4,4)$ |
-| $\mathbb{C}^{\mathrm{spl}}e_\mu\oplus\mathbb{C}^{\mathrm{spl}}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
+| $\mathbb{C}_{\mathrm{spl}}e_\mu\oplus\mathbb{C}_{\mathrm{spl}}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
 | $O(4,4)$, $SO^{+}(4,4)$, $O(2,2)$ | Isometry groups of $g$ and of the neutral planes |
 | $S = \mathbb{R}e_t\oplus\mathbb{R}je_t$ | Scalar plane, signature $(1,1)$ |
 | $V = S^{\perp} = \operatorname{Im}\mathbb{H}\oplus j\operatorname{Im}\mathbb{H}$ | Imaginary span, six-dimensional, split form $(3,3)$; bivectors positive, vectors negative |

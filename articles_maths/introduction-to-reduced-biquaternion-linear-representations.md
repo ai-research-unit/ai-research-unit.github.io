@@ -8,31 +8,31 @@ An **element representation** writes the reduced biquaternion $\breve Q=Q_{\blac
 
 **A representation of the algebra is a homomorphism of $\mathbb{C}$-algebras into an endomorphism algebra, and a module is the same data read as an action.**
 
-**Definition.** A **representation** of $\mathbb{B}^{\mathrm{red}}$ on a complex vector space $V$ is a $\mathbb{C}$-linear map $\rho:\mathbb{B}^{\mathrm{red}}\to\operatorname{End}_{\mathbb{C}}(V)$ with
+**Definition.** A **representation** of $\mathbb{B}_{\mathrm{red}}$ on a complex vector space $V$ is a $\mathbb{C}$-linear map $\rho:\mathbb{B}_{\mathrm{red}}\to\operatorname{End}_{\mathbb{C}}(V)$ with
 $$
 \rho(\breve Q_{1}\breve Q_{2})=\rho(\breve Q_{1})\rho(\breve Q_{2}),\qquad \rho(1)=\operatorname{id}_{V}.
 $$
-A **(left) module** is a complex vector space $V$ with a multiplication $\mathbb{B}^{\mathrm{red}}\times V\to V$ that is bilinear and satisfies $1\cdot q=q$ and $(\breve Q_{1}\breve Q_{2})\cdot q=\breve Q_{1}\cdot(\breve Q_{2}\cdot q)$; a representation and a module are the same object, the map $\breve Q\cdot q=\rho(\breve Q)q$ passing from one to the other. A subspace $U\subset V$ is a **submodule** when $\breve Q\cdot U\subset U$ for every $\breve Q$. A module is **simple** when it has exactly two submodules, $0$ and $V$; **semisimple** when it is a direct sum of simple ones. The words **irreducible** and **completely reducible** say the same of a representation.
+A **(left) module** is a complex vector space $V$ with a multiplication $\mathbb{B}_{\mathrm{red}}\times V\to V$ that is bilinear and satisfies $1\cdot q=q$ and $(\breve Q_{1}\breve Q_{2})\cdot q=\breve Q_{1}\cdot(\breve Q_{2}\cdot q)$; a representation and a module are the same object, the map $\breve Q\cdot q=\rho(\breve Q)q$ passing from one to the other. A subspace $U\subset V$ is a **submodule** when $\breve Q\cdot U\subset U$ for every $\breve Q$. A module is **simple** when it has exactly two submodules, $0$ and $V$; **semisimple** when it is a direct sum of simple ones. The words **irreducible** and **completely reducible** say the same of a representation.
 
-**Definition (the regular representation).** The **regular representation** is $\rho^{\mathrm{reg}}(\breve Q)=L_{\breve Q}$, where $L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}$, acting on $\mathbb{B}^{\mathrm{red}}$ itself; the space is complex of dimension two on the basis $1,j$ and real of dimension four on the basis $1,i,j,ij$. The operator $L_{\breve Q}$ is read in coordinates in *Operators on the Reduced Biquaternions*.
+**Definition (the regular representation).** The **regular representation** is $\rho_{\mathrm{reg}}(\breve Q)=L_{\breve Q}$, where $L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}$, acting on $\mathbb{B}_{\mathrm{red}}$ itself; the space is complex of dimension two on the basis $1,j$ and real of dimension four on the basis $1,i,j,ij$. The operator $L_{\breve Q}$ is read in coordinates in *Operators on the Reduced Biquaternions*.
 
-**Theorem (the regular representation is faithful).** $L_{\breve Q}=0$ if and only if $\breve Q=0$, so $\rho^{\mathrm{reg}}$ is injective and its image is an algebra isomorphic to $\mathbb{B}^{\mathrm{red}}$,
+**Theorem (the regular representation is faithful).** $L_{\breve Q}=0$ if and only if $\breve Q=0$, so $\rho_{\mathrm{reg}}$ is injective and its image is an algebra isomorphic to $\mathbb{B}_{\mathrm{red}}$,
 $$
-\boxed{\;\rho^{\mathrm{reg}}(\mathbb{B}^{\mathrm{red}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}^{\mathrm{red}}\}\cong\mathbb{B}^{\mathrm{red}}\;},
+\boxed{\;\rho_{\mathrm{reg}}(\mathbb{B}_{\mathrm{red}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{red}}\}\cong\mathbb{B}_{\mathrm{red}}\;},
 $$
-a commutative two-dimensional subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}})\cong M_{2}(\mathbb{C})$.
+a commutative two-dimensional subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{red}})\cong M_{2}(\mathbb{C})$.
 
-*Proof.* $L_{\breve Q}(1)=\breve Q$, so $L_{\breve Q}=0$ forces $\breve Q=0$; and $\rho^{\mathrm{reg}}(\breve Q_{1}\breve Q_{2})=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{1}}L_{\breve Q_{2}}=\rho^{\mathrm{reg}}(\breve Q_{1})\rho^{\mathrm{reg}}(\breve Q_{2})$ is multiplicativity, because the multiplication is associative. The image is commutative because the multiplication is commutative, $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2}\breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}}$.
+*Proof.* $L_{\breve Q}(1)=\breve Q$, so $L_{\breve Q}=0$ forces $\breve Q=0$; and $\rho_{\mathrm{reg}}(\breve Q_{1}\breve Q_{2})=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{1}}L_{\breve Q_{2}}=\rho_{\mathrm{reg}}(\breve Q_{1})\rho_{\mathrm{reg}}(\breve Q_{2})$ is multiplicativity, because the multiplication is associative. The image is commutative because the multiplication is commutative, $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2}\breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}}$.
 
 ## The Algebra as a Module over Itself, over $\mathbb{C}$ and over $\mathbb{R}$
 
 **The algebra is a free module over itself and over the two base fields, of ranks two over $\mathbb{C}$ and four over $\mathbb{R}$, and the three readings carry the same module.**
 
-**Theorem (the ground fields).** The left regular module is $\mathbb{B}^{\mathrm{red}}$ acting on itself by left multiplication; over $\mathbb{C}$ it is free of rank two on the basis $1,j$, over $\mathbb{R}$ it is free of rank four on the basis $1,i,j,ij$, and as a module over the algebra itself it is free of rank one. Its composition length is two in every reading, with the same two composition factors, the two simple modules $\lambda_+$ and $\lambda_-$.
+**Theorem (the ground fields).** The left regular module is $\mathbb{B}_{\mathrm{red}}$ acting on itself by left multiplication; over $\mathbb{C}$ it is free of rank two on the basis $1,j$, over $\mathbb{R}$ it is free of rank four on the basis $1,i,j,ij$, and as a module over the algebra itself it is free of rank one. Its composition length is two in every reading, with the same two composition factors, the two simple modules $\lambda_+$ and $\lambda_-$.
 
 *Proof.* The ranks are the dimensions of the two bases of *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The chain
 $$
-0\subset\mathbb{C}\Pi_+\subset\mathbb{B}^{\mathrm{red}}
+0\subset\mathbb{C}\Pi_+\subset\mathbb{B}_{\mathrm{red}}
 $$
 is a composition series: the submodule $\mathbb{C}\Pi_+$ carries the character $\lambda_+$, and the quotient is isomorphic to $\mathbb{C}\Pi_-$ carrying $\lambda_-$, both simple by §*The Simple Modules and Complete Reducibility*.
 
@@ -56,11 +56,11 @@ Each is a $\mathbb{C}$-algebra homomorphism into the one-dimensional algebra $\m
 
 **Theorem (complete reducibility).** Every module is a direct sum of copies of $\lambda_+$ and $\lambda_-$; the regular representation is
 $$
-\boxed{\;\rho^{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-\;},
+\boxed{\;\rho_{\mathrm{reg}}\cong\lambda_+\oplus\lambda_-\;},
 $$
 each character with multiplicity one.
 
-*Proof.* The algebra is the product of the two fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, hence semisimple, and a module over a product of fields splits as the direct sum of its two components, each a complex vector space, that is a direct sum of copies of the corresponding character. On $\mathbb{B}^{\mathrm{red}}$ itself the two lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are submodules carrying $\lambda_+$ and $\lambda_-$, and they span the two-dimensional space, so each multiplicity is one.
+*Proof.* The algebra is the product of the two fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, hence semisimple, and a module over a product of fields splits as the direct sum of its two components, each a complex vector space, that is a direct sum of copies of the corresponding character. On $\mathbb{B}_{\mathrm{red}}$ itself the two lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are submodules carrying $\lambda_+$ and $\lambda_-$, and they span the two-dimensional space, so each multiplicity is one.
 
 **Corollary (the zero divisors carry the submodules).** The non-zero submodules of the regular module are the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ and the whole space, and the two lines are exactly the minimal ideals of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; every element of one line annihilates every element of the other, which is the module statement that the two simple components are mutually annihilating.
 
@@ -68,9 +68,9 @@ each character with multiplicity one.
 
 ## Schur's Lemma and the Intertwiners
 
-**Definition.** For two modules $V$ and $W$ an **intertwiner** is a $\mathbb{C}$-linear map $f:V\to W$ with $f(\breve Q\cdot q)=\breve Q\cdot f(q)$ for every $\breve Q$ and $q$; the space of intertwiners is $\operatorname{Hom}_{\mathbb{B}^{\mathrm{red}}}(V,W)$.
+**Definition.** For two modules $V$ and $W$ an **intertwiner** is a $\mathbb{C}$-linear map $f:V\to W$ with $f(\breve Q\cdot q)=\breve Q\cdot f(q)$ for every $\breve Q$ and $q$; the space of intertwiners is $\operatorname{Hom}_{\mathbb{B}_{\mathrm{red}}}(V,W)$.
 
-**Theorem (Schur).** If $V$ and $W$ are simple then every non-zero intertwiner is an isomorphism; consequently $\operatorname{End}_{\mathbb{B}^{\mathrm{red}}}(V)=\mathbb{C}\operatorname{id}_{V}$ and $\operatorname{Hom}_{\mathbb{B}^{\mathrm{red}}}(\lambda_+,\lambda_-)=0$.
+**Theorem (Schur).** If $V$ and $W$ are simple then every non-zero intertwiner is an isomorphism; consequently $\operatorname{End}_{\mathbb{B}_{\mathrm{red}}}(V)=\mathbb{C}\operatorname{id}_{V}$ and $\operatorname{Hom}_{\mathbb{B}_{\mathrm{red}}}(\lambda_+,\lambda_-)=0$.
 
 *Proof.* The kernel and the image of an intertwiner are submodules, so a non-zero one has zero kernel and full image, hence is an isomorphism. An endomorphism of the one-dimensional space $V$ is a scalar; and $\lambda_+\not\cong\lambda_-$, so there is no non-zero map between them.
 
@@ -91,7 +91,7 @@ each character with multiplicity one.
 | polar | the two polar complex forms of $Q_{+}$ and of $Q_{-}$ | *Modulus–Unit Polar Decomposition of Reduced Biquaternions* |
 | operator | the multiplication operator $L_{\breve Q}$ and its companions | *Operators on the Reduced Biquaternions* |
 
-**The idempotent coordinates are the universal representation.** Every other reading is the pair $(Q_{+},Q_{-})$ written in another alphabet: the four-vector splits each of $Q_{+}$ and $Q_{-}$ into two reals, the matrix puts them on the diagonal, the other algebraic representations formalise the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$, the polar writes each in polar form, and the operator representation is the regular representation of the same pair. A statement is written in the representation that makes it shortest, and the **two characters $\lambda_+,\lambda_-$ are the two coordinates of the universal one**.
+**The idempotent coordinates are the universal representation.** Every other reading is the pair $(Q_{+},Q_{-})$ written in another alphabet: the four-vector splits each of $Q_{+}$ and $Q_{-}$ into two reals, the matrix puts them on the diagonal, the other algebraic representations formalise the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$, the polar writes each in polar form, and the operator representation is the regular representation of the same pair. A statement is written in the representation that makes it shortest, and the **two characters $\lambda_+,\lambda_-$ are the two coordinates of the universal one**.
 
 ## The Representations of the Unit Group
 
@@ -99,7 +99,7 @@ each character with multiplicity one.
 
 **Theorem.** $U=Q_{+}\Pi_++Q_{-}\Pi_-$ is a unit if and only if $\langle U\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; the unit group is
 $$
-\boxed{\;{\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0})\;},
+\boxed{\;{\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0})\;},
 $$
 connected and abelian.
 
@@ -121,12 +121,12 @@ with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is **abelia
 
 **The reduced biquaternions are the commutative member of the semisimple family; the split biquaternions are its non-commutative member and the biquaternions the simple member.**
 
-The three algebras are the three ways of splitting a quaternionic algebra over $\mathbb{R}$: the biquaternions $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ are simple, the split biquaternions $\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\oplus\mathbb{H}$ are a product of two quaternion division algebras, and the reduced biquaternions $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ are a product of two complex fields, commutative.
+The three algebras are the three ways of splitting a quaternionic algebra over $\mathbb{R}$: the biquaternions $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ are simple, the split biquaternions $\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\oplus\mathbb{H}$ are a product of two quaternion division algebras, and the reduced biquaternions $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ are a product of two complex fields, commutative.
 
 | algebra | structure | simple modules | division ring of a simple | unit group | regular representation |
 |---|---|---|---|---|---|
-| $\mathbb{B}^{\mathrm{red}}$ | $\mathbb{C}\times\mathbb{C}$, commutative | two, of complex dimension one | $\mathbb{C}$ | $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | complex dimension two |
-| $\mathbb{B}^{\mathrm{spl}}$ | $\mathbb{H}\oplus\mathbb{H}$, non-commutative | two, of real dimension four | $\mathbb{H}$ | $\mathbb{H}^{\times}\times\mathbb{H}^{\times}$ | real dimension eight |
+| $\mathbb{B}_{\mathrm{red}}$ | $\mathbb{C}\times\mathbb{C}$, commutative | two, of complex dimension one | $\mathbb{C}$ | $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | complex dimension two |
+| $\mathbb{B}_{\mathrm{spl}}$ | $\mathbb{H}\oplus\mathbb{H}$, non-commutative | two, of real dimension four | $\mathbb{H}$ | $\mathbb{H}^{\times}\times\mathbb{H}^{\times}$ | real dimension eight |
 | $\mathbb{B}$ | $M_{2}(\mathbb{C})$, simple | one, of complex dimension two | $\mathbb{C}$ | essentially $GL_{2}(\mathbb{C})$ | complex dimension four |
 
 **Theorem (the passage).** The passage from the split biquaternions to the reduced biquaternions is the replacement of the division ring $\mathbb{H}$ by the field $\mathbb{C}$ in the two factors, together with the commutativity that this forces; the passage from the biquaternions to the reduced biquaternions is the splitting of the single simple module into the two characters.
@@ -139,17 +139,17 @@ The three algebras are the three ways of splitting a quaternionic algebra over $
 
 ## Summary
 
-The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}^{\mathrm{red}}$; the simple modules are exactly the two characters $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$ and $\lambda_-(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{-}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.
+The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}_{\mathrm{red}}$; the simple modules are exactly the two characters $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$ and $\lambda_-(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{-}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\rho$, $V$ | a representation and its module |
-| $L_{\breve Q}$, $\rho^{\mathrm{reg}}$ | left multiplication by $\breve Q$; the regular representation |
+| $L_{\breve Q}$, $\rho_{\mathrm{reg}}$ | left multiplication by $\breve Q$; the regular representation |
 | $\lambda_+,\lambda_-$ | the two characters, $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$, $\lambda_-=Q_{-}$ |
-| $\operatorname{Hom}_{\mathbb{B}^{\mathrm{red}}}(V,W)$ | the intertwiners between two modules |
-| ${\mathbb{B}^{\mathrm{red}}}^{\times}$ | the unit group, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |
+| $\operatorname{Hom}_{\mathbb{B}_{\mathrm{red}}}(V,W)$ | the intertwiners between two modules |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}$ | the unit group, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ |
 | $\chi_{m,n}(U)=Q_{+}^{m}Q_{-}^{n}$ | the holomorphic characters of the unit group |
 
 ## Further Reading

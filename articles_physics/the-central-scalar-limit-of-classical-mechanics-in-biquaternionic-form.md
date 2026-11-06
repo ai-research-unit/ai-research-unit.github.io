@@ -118,7 +118,7 @@ $$
 \boxed{\;\vec L = \vec r\times\vec p = \tfrac12[\vec r, \vec p]\;}.
 $$
 
-The three components $L_k^{\mathrm{orb}}$ are the three real coefficients of the commutator of the position and momentum quaternions. The product $\vec r\vec p$ contains both $\vec L$ and the scalar $-\vec r\cdot\vec p$,
+The three components $L_{\mathrm{orb},k}$ are the three real coefficients of the commutator of the position and momentum quaternions. The product $\vec r\vec p$ contains both $\vec L$ and the scalar $-\vec r\cdot\vec p$,
 
 $$
 \vec r\vec p = -\vec r\cdot\vec p\,e_t + \vec L ,
@@ -219,16 +219,16 @@ The rotation generators are the real vector directions themselves, up to the fac
 The components of $\vec L$ satisfy the angular-momentum algebra under the Poisson bracket,
 
 $$
-\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}} ,
+\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k} ,
 $$
 
 which is the classical form of the commutation relations of the quantum angular momentum. The bracket is a bracket on functions of the phase-space variables $(x_k, p_k)$, with $\{x_i, p_j\} = \delta_{ij}$ and $\{x_i, x_j\} = \{p_i, p_j\} = 0$; its conventions are those of the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*.
 
-It is important not to conflate two algebras that the notation makes look alike. The commutator $[\vec a,\vec b]$ of the quaternion algebra is a product in a three-dimensional subspace and equals twice the cross product; the Poisson bracket $\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\}$ is a derivative operation on the six-dimensional phase space. They produce the same three-dimensional algebra because the angular momentum is built from the cross product of the position and momentum, but they are different operations on different spaces. The algebra's commutator can be evaluated at a single instant and involves only the current vectors; the Poisson bracket relates the angular momentum to the Hamiltonian flow and requires the phase-space structure. The central-scalar limit uses both, and the companion article on the bracket treats their relation in detail.
+It is important not to conflate two algebras that the notation makes look alike. The commutator $[\vec a,\vec b]$ of the quaternion algebra is a product in a three-dimensional subspace and equals twice the cross product; the Poisson bracket $\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\}$ is a derivative operation on the six-dimensional phase space. They produce the same three-dimensional algebra because the angular momentum is built from the cross product of the position and momentum, but they are different operations on different spaces. The algebra's commutator can be evaluated at a single instant and involves only the current vectors; the Poisson bracket relates the angular momentum to the Hamiltonian flow and requires the phase-space structure. The central-scalar limit uses both, and the companion article on the bracket treats their relation in detail.
 
 ### Numerical Checks
 
-Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{*}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ was confirmed to rotate a vector by the angle $\theta$ about $\vec u$ while preserving the biquaternion norm.
+Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{*}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ was confirmed to rotate a vector by the angle $\theta$ about $\vec u$ while preserving the biquaternion norm.
 
 ## What the Limit Excludes
 
@@ -268,7 +268,7 @@ $$
 
 whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.
 
-The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.
+The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.
 
 ## Summary of Notation
 
@@ -294,7 +294,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 | $\frac{d^2u}{d\theta^2} + u = -F(1/u)/(mh^2u^2)$ | Binet's equation for a central force |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ | Rotation rotor; $\vec a\mapsto R\vec aR^{*}$ |
 | $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ | Rotation algebra in the real three-space |
-| $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ | Poisson-bracket angular-momentum algebra |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ | Poisson-bracket angular-momentum algebra |
 | $\{x_i,p_j\} = \delta_{ij}$ | Canonical Poisson brackets |
 
 ## Further Reading

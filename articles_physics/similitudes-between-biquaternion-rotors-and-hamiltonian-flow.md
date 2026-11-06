@@ -23,12 +23,12 @@ The article is organized as follows. First the two constructions are set down in
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j \vec e_k = \varepsilon_{jkl} \vec e_l$ for $j \neq k$, the scalar imaginary is $i$, and the two four-dimensional real subspaces are the anti-Hermitian material space $\mathbb{M}_-$ (imaginary scalar, real vector) and the Hermitian informational space $\mathbb{M}_+$ (real scalar, imaginary vector). The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre (the complex scalars) is $\mathbb{C}_{\mathbb{B}}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The rotor is fixed by the convention $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and $\tilde Q_3$ in the title map stands for $R^{*}$. For the boost, we use the **positive-rapidity convention**: the rotor built with $+V$ carries the laboratory frame to the moving frame, so that
 
 $$
-\Lambda = \exp\!\left(+\frac{\theta^{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right)
-= \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
-\qquad \Lambda\,\tilde{V}^{\mathrm{lab}}\,\Lambda^{*} = ic\,e_t ,
+\Lambda = \exp\!\left(+\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right)
+= \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},
+\qquad \Lambda\,\tilde{V}_{\mathrm{lab}}\,\Lambda^{*} = ic\,e_t ,
 $$
 
-with $\tilde{V}^{\mathrm{lab}} = \gamma(ic\,e_t + \vec v)$ and $\vec u_{\mathrm b} = \vec u_v$. This is the convention of the companion article on the Lorentz transformation, and it is used consistently below.
+with $\tilde{V}_{\mathrm{lab}} = \gamma(ic\,e_t + \vec v)$ and $\vec u_{\mathrm b} = \vec u_v$. This is the convention of the companion article on the Lorentz transformation, and it is used consistently below.
 
 ## The Rotor as a Group Action on the Algebra
 
@@ -40,7 +40,7 @@ $$
 
 This is a **group action**: $\rho(R_1)\rho(R_2) = \rho(R_1 R_2)$, because $R_2^\dagger R_1^\dagger = (R_1 R_2)^{*}$. It preserves $\mathbb{M}_-$ and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$.
 
-**The action is an inner automorphism only in the $*$-unitary sector.** If $R$ is $*$-unitary in the matrix sense, $R R^{*} = e_t$, then $R^{*} = R^{-1}$ and $\rho(R) = \mathrm{Ad}_R$ is conjugation, an algebra automorphism. A boost rotor, however, is **Hermitian**, $\Lambda^{*} = \Lambda$, with $\Lambda^2 = \cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} \neq e_t$, so $\rho(\Lambda)(XY) = \Lambda XY\Lambda$ while $\rho(\Lambda)(\tilde{Q})\rho(\Lambda)(Y) = \Lambda \tilde{Q} \Lambda^2 Y \Lambda$; the two differ whenever $\Lambda^2 \neq e_t$. So the rotor is a group action on the algebra in every case, but it is an action by **algebra automorphisms** only in the $*$-unitary subgroup, which for unit-norm biquaternions is exactly the rotation group $SU(2)$.
+**The action is an inner automorphism only in the $*$-unitary sector.** If $R$ is $*$-unitary in the matrix sense, $R R^{*} = e_t$, then $R^{*} = R^{-1}$ and $\rho(R) = \mathrm{Ad}_R$ is conjugation, an algebra automorphism. A boost rotor, however, is **Hermitian**, $\Lambda^{*} = \Lambda$, with $\Lambda^2 = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b} \neq e_t$, so $\rho(\Lambda)(XY) = \Lambda XY\Lambda$ while $\rho(\Lambda)(\tilde{Q})\rho(\Lambda)(Y) = \Lambda \tilde{Q} \Lambda^2 Y \Lambda$; the two differ whenever $\Lambda^2 \neq e_t$. So the rotor is a group action on the algebra in every case, but it is an action by **algebra automorphisms** only in the $*$-unitary subgroup, which for unit-norm biquaternions is exactly the rotation group $SU(2)$.
 
 Consider a one-parameter subgroup $R(r'_t) = \exp(r'_t\,G)$ with $\langle R(r'_t)\rangle_{\natural} = e_t$. Its infinitesimal generator is the vector field on $\mathbb{M}_-$ obtained by differentiating the action,
 
@@ -78,7 +78,7 @@ $$
 \tilde{Q}_H \;=\; \{\cdot, H\}, \qquad \frac{df}{dr'_t} = \{f, H\},
 $$
 
-and its flow ${\xi^{\mathrm{flw}}}^H_{r'_{t}}$ is a one-parameter group of canonical (Poisson) transformations. Its generator is the derivation $D_H(f) = \{f, H\}$ of the algebra $C^\infty(P)$ of functions. Every Hamiltonian defines such a flow; the group of Hamiltonian diffeomorphisms so obtained is infinite dimensional, since its generators $H$ range over all functions modulo the constants.
+and its flow ${\xi_{\mathrm{flw}}}_{r'_{t}}^H$ is a one-parameter group of canonical (Poisson) transformations. Its generator is the derivation $D_H(f) = \{f, H\}$ of the algebra $C^\infty(P)$ of functions. Every Hamiltonian defines such a flow; the group of Hamiltonian diffeomorphisms so obtained is infinite dimensional, since its generators $H$ range over all functions modulo the constants.
 
 The phase space relevant to the biquaternion rotor is the **coadjoint orbit of the symmetry group**. For the compact case take $\vec S = S_1 \vec e_x + S_2 \vec e_y + S_3 \vec e_z$, a real pure quaternion, with the Lie–Poisson bracket
 
@@ -96,8 +96,8 @@ Both constructions now present the same **shape**: a generator that is a derivat
 |---|---|---|
 | Generating object | $G \in \mathrm{SL}(2,\mathbb{C})$ | $H \in C^\infty(P)$ |
 | Generator (derivation) | $\zeta_G = [G,\cdot]$ on $\mathbb{B}$ ($*$-unitary sector) | $D_H = \{\cdot, H\}$ on $C^\infty(P)$ |
-| Exponential | $R = \exp(r'_t\,G)$ | flow ${\xi^{\mathrm{flw}}}^H_{r'_{t}}$ |
-| Finite transformation | $\tilde{Q} \mapsto R \tilde{Q} R^{*}$ | $x \mapsto {\xi^{\mathrm{flw}}}^H_{r'_{t}}(x)$ |
+| Exponential | $R = \exp(r'_t\,G)$ | flow ${\xi_{\mathrm{flw}}}_{r'_{t}}^H$ |
+| Finite transformation | $\tilde{Q} \mapsto R \tilde{Q} R^{*}$ | $x \mapsto {\xi_{\mathrm{flw}}}_{r'_{t}}^H(x)$ |
 | Carrier | finite-dimensional algebra $\mathbb{B}$ | infinite-dimensional space of functions |
 
 The resemblance is a resemblance of **generators and exponentials**. It is not an identification of the two structures, because the first column acts on a finite-dimensional algebra and the second on an infinite-dimensional algebra of functions, and because a general derivation in the second column — a general Hamiltonian vector field — need not be of the form $\zeta_G$. The next section isolates the class on which the two columns coincide exactly; the sections after it exhibit the failures.
@@ -130,7 +130,7 @@ $$
 \vec S(r'_t) \;=\; R(r'_t)\,\vec S\,R(r'_t)^\dagger ,
 $$
 
-which is rotation of $\vec S$ about $\vec u_{\mathrm r}$ by angle $\theta^{\mathrm{rat}}$. The generators agree **exactly**: with $\vec S$ treated as a pure quaternion,
+which is rotation of $\vec S$ about $\vec u_{\mathrm r}$ by angle $\theta_{\mathrm{rat}}$. The generators agree **exactly**: with $\vec S$ treated as a pure quaternion,
 
 $$
 \boxed{\;[G, \vec S] \;=\; 2\,G\times\vec S \;=\; \omega\,\vec u_{\mathrm r}\times\vec S \;=\; \{\vec S, H\}\;}
@@ -147,7 +147,7 @@ The factor $2$ is the spinor double cover: the rotor parameter is half the rotat
 Both sides of this identity are derivations of the algebra of functions on the orbit, and they agree on the coordinate functions $S_i$; hence they agree on the whole polynomial algebra they generate, and the agreement descends to the orbit because both annihilate the Casimir ($[G,\vec S^2] = 0$ and $\{\vec S^2, H\} = 0$). Consequently the flows agree as one-parameter groups,
 
 $$
-\boxed{\;\rho\big(\exp(r'_t\,G)\big) \;=\; {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}} \qquad \text{on the orbit, for all } r'_t\;}.
+\boxed{\;\rho\big(\exp(r'_t\,G)\big) \;=\; {\xi_{\mathrm{flw}}}_{r'_{t}}^{H_G} \qquad \text{on the orbit, for all } r'_t\;}.
 $$
 
 So: **on the coadjoint orbit, the rotor group action and the Hamiltonian flow of the corresponding linear Hamiltonian are the same one-parameter group.** The map $G \mapsto H_G$ is a linear isomorphism from the compact Lie algebra $\mathrm{SU}(2)$ (the traceless real pure quaternions) onto the space of linear functions $\mathrm{span}\{S_1, S_2, S_3\}$ on the orbit, and it intertwines the exponential map of the rotor group with the Hamiltonian flow. This is the exact sense of the similitude.
@@ -203,12 +203,12 @@ The spin orbit uses $*$-unitary rotors (rotations). The relativistic part of the
 In the positive-rapidity convention fixed in the Introduction, the boost rotor is
 
 $$
-\Lambda \;=\; \exp\!\left(+\frac{\theta^{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) \;=\; \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} ,
+\Lambda \;=\; \exp\!\left(+\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) \;=\; \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} ,
 $$
 
-which satisfies $\langle \Lambda\rangle_{\natural} = e_t$ and is Hermitian, $\Lambda^{*} = \Lambda$. Acting on the laboratory four-velocity $\tilde{V}^{\mathrm{lab}} = \gamma(ic\,e_t + \vec v)$ with $\vec u_{\mathrm b} = \vec u_v$, it gives the rest-frame four-velocity, $\Lambda\,\tilde{V}^{\mathrm{lab}}\,\Lambda^{*} = ic\,e_t$; verified at $v/c = 0.3$ and $v/c = 0.6$ (the transformed time component is $3.000i = ic$ with $c = 3$, and the spatial part vanishes at the $10^{-16}$ level). The rotor conjugation by a boost also preserves $\mathbb{M}_-$ and the biquaternion norm, as it must.
+which satisfies $\langle \Lambda\rangle_{\natural} = e_t$ and is Hermitian, $\Lambda^{*} = \Lambda$. Acting on the laboratory four-velocity $\tilde{V}_{\mathrm{lab}} = \gamma(ic\,e_t + \vec v)$ with $\vec u_{\mathrm b} = \vec u_v$, it gives the rest-frame four-velocity, $\Lambda\,\tilde{V}_{\mathrm{lab}}\,\Lambda^{*} = ic\,e_t$; verified at $v/c = 0.3$ and $v/c = 0.6$ (the transformed time component is $3.000i = ic$ with $c = 3$, and the spatial part vanishes at the $10^{-16}$ level). The rotor conjugation by a boost also preserves $\mathbb{M}_-$ and the biquaternion norm, as it must.
 
-The generator of this rotor is $G = \tfrac{1}{2} i\vec u_{\mathrm b}$ (so that $\Lambda = \exp(\theta^{\mathrm{rpd}} G)$), which lies in the **traceless part of $\mathbb{M}_+$**, not in $\mathbb{M}_-$. Its action on the algebra is the anticommutator $\zeta_G(\tilde{Q}) = GX + XG$, which, as computed above, is **not a derivation** of $\mathbb{B}$: the Leibniz defect is $0.51$ on a representative case, and the finite map $\rho(\Lambda)$ is not an algebra automorphism (defect $0.62$). So in the boost sector the rotor is still a group action on the algebra and still preserves the biquaternion norm, but it is an action by linear maps that are **not algebra automorphisms**, generated by a linear map that is **not a derivation**.
+The generator of this rotor is $G = \tfrac{1}{2} i\vec u_{\mathrm b}$ (so that $\Lambda = \exp(\theta_{\mathrm{rpd}} G)$), which lies in the **traceless part of $\mathbb{M}_+$**, not in $\mathbb{M}_-$. Its action on the algebra is the anticommutator $\zeta_G(\tilde{Q}) = GX + XG$, which, as computed above, is **not a derivation** of $\mathbb{B}$: the Leibniz defect is $0.51$ on a representative case, and the finite map $\rho(\Lambda)$ is not an algebra automorphism (defect $0.62$). So in the boost sector the rotor is still a group action on the algebra and still preserves the biquaternion norm, but it is an action by linear maps that are **not algebra automorphisms**, generated by a linear map that is **not a derivation**.
 
 The generator-level correspondence with Hamiltonian flow is **lost** in the boost sector, and for a sharper reason than a change of character: the infinitesimal boost is not a vector field on the spin orbit at all. For $G = \tfrac12 i\vec u_{\mathrm b}$ and $\vec S$ a point of the orbit,
 
@@ -251,7 +251,7 @@ So the resemblance is real, exact on a definite island, and not an isomorphism. 
 
 ## Summary
 
-A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^{*}$, with $\langle R\rangle_{\natural} = e_t$, and a Hamiltonian flow $\frac{dx}{dr'_t} = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its $*$-unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\vec S$, the two are the **same one-parameter group**: the generator identity $[G,\vec S] = \{\vec S, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(\exp(r'_t\,G)) = {\xi^{\mathrm{flw}}}^{H_G}_{r'_{t}}$ to $8\times10^{-15}$ out to $r'_t = 2$, with the rotor normalisation $\langle R\rangle_{\natural} = e_t$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
+A biquaternion rotor $\rho(R)(\tilde{Q}) = R \tilde{Q} R^{*}$, with $\langle R\rangle_{\natural} = e_t$, and a Hamiltonian flow $\frac{dx}{dr'_t} = \{x, H\}$ share a shape: each is the exponential of a derivation, the inner derivation $\mathrm{ad}_G = [G,\cdot]$ for the rotor (in its $*$-unitary sector), the Poisson derivation $\{\cdot,H\}$ for the flow. On the coadjoint orbit, and for the linear Hamiltonians $H_G = 2G\cdot\vec S$, the two are the **same one-parameter group**: the generator identity $[G,\vec S] = \{\vec S, H_G\}$ was verified to $2\times10^{-16}$ on three independent axes, and the flow identity $\rho(\exp(r'_t\,G)) = {\xi_{\mathrm{flw}}}_{r'_{t}}^{H_G}$ to $8\times10^{-15}$ out to $r'_t = 2$, with the rotor normalisation $\langle R\rangle_{\natural} = e_t$ respected throughout. The generator correspondence was checked on two independent Hamiltonians, $\omega_3 S_3$ and $\omega_1 S_1$.
 
 The resemblance is not an isomorphism, and each of its failures was verified. The rotor group is finite dimensional and acts on a finite-dimensional algebra; the Hamiltonian flows form an infinite-dimensional group acting on functions. A non-linear Hamiltonian such as $\lambda S_3^2$ has a field-dependent generator $G(\vec S) = \lambda S_3\vec u_z$ and is not the flow of any rotor; its angular velocity depends on latitude. In the boost sector the rotor generator is an anticommutator, not a derivation (Leibniz defect $0.51$), and the boost rotor is not an algebra automorphism (defect $0.62$), though it is unit-norm, Hermitian, and carries the laboratory frame to the moving frame in the positive-rapidity convention. A free-particle flow is a shear that does not preserve the biquaternion norm and is therefore not a rotor conjugation; translations are affine, and their generators are not inner derivations.
 
@@ -274,11 +274,11 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | $\zeta_G(\tilde{Q}) = GX + XG^\dagger$ | Infinitesimal rotor generator |
 | $\mathrm{ad}_G = [G,\cdot]$ | Inner derivation ($*$-unitary sector) |
 | $\{\cdot,\cdot\}$, $\tilde{Q}_H = \{\cdot,H\}$ | Poisson bracket; Hamiltonian vector field |
-| $H$, ${\xi^{\mathrm{flw}}}^H_{r'_{t}}$ | Hamiltonian; its flow |
+| $H$, ${\xi_{\mathrm{flw}}}_{r'_{t}}^H$ | Hamiltonian; its flow |
 | $D_H = \{\cdot,H\}$ | Hamiltonian (Poisson) derivation |
 | $\vec S$, $\{S_i,S_j\} = \varepsilon_{ijk}S_k$ | Coadjoint-orbit coordinate; Lie–Poisson bracket |
 | $H_G = 2G\cdot\vec S$ | Hamiltonian generating the rotor flow $G$ |
-| $\Lambda = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (positive rapidity, laboratory to moving frame) |
+| $\Lambda = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (positive rapidity, laboratory to moving frame) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

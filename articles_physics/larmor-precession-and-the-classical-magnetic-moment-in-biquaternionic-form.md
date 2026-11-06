@@ -197,10 +197,10 @@ $$
 \vec\mu(r'_t) = \mathcal{R}\!\left(-\gamma B r'_t,\;\vec u_B\right)\vec\mu(0),
 $$
 
-where $\mathcal{R}(\theta,\vec u)$ is the right-handed rotation through $\theta$ about $\vec u$. For a moment initially making an angle $\theta^{\mathrm{mgn}}$ with the field, the component along the field is constant, $\mu_\parallel = \mu\cos\theta^{\mathrm{mgn}}$, and the transverse component rotates uniformly,
+where $\mathcal{R}(\theta,\vec u)$ is the right-handed rotation through $\theta$ about $\vec u$. For a moment initially making an angle $\theta_{\mathrm{mgn}}$ with the field, the component along the field is constant, $\mu_\parallel = \mu\cos\theta_{\mathrm{mgn}}$, and the transverse component rotates uniformly,
 
 $$
-\mu_\perp(r'_t) = \mu\sin\theta^{\mathrm{mgn}}\left(\cos\gamma B r'_t,\;-\sin\gamma B r'_t\right)
+\mu_\perp(r'_t) = \mu\sin\theta_{\mathrm{mgn}}\left(\cos\gamma B r'_t,\;-\sin\gamma B r'_t\right)
 $$
 
 in a right-handed basis whose third axis is $\vec u_B$. The signed rate $\gamma B$ carries the sense of the rotation and the Larmor frequency $\omega_L = |\gamma|B$ its magnitude; the motion is the uniform precession of a cone at that frequency.

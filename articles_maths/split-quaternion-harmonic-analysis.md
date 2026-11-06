@@ -26,7 +26,7 @@ Pontryagin duality holds, and the dual group is equipped with the dual Haar meas
 **Corollary (The Space of Functions).** The algebra-valued functions with square-integrable components form the Hilbert space
 
 $$
-L^2(\mathbb{H}^{\mathrm{spl}}, \mathbb{H}^{\mathrm{spl}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
+L^2(\mathbb{H}_{\mathrm{spl}}, \mathbb{H}_{\mathrm{spl}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
 $$
 
 with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natural})$, and the algebra acts pointwise on it by left and right multiplication.
@@ -35,10 +35,10 @@ with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natura
 
 ## The Fourier Transform of the Group
 
-**Definition.** For $f \in L^1(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ the **Fourier transform** is
+**Definition.** For $f \in L^1(\mathbb{H}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}})$ the **Fourier transform** is
 
 $$
-(\mathcal F f)(\zeta) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}^{\mathrm{spl}} ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{H}_{\mathrm{spl}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}_{\mathrm{spl}} ,
 $$
 
 the transform of the four scalar components of $f$.
@@ -47,11 +47,11 @@ the transform of the four scalar components of $f$.
 
 $$
 \boxed{\;
-f(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} (\mathcal F f)(\zeta)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\zeta
+f(\tilde q) = \int_{\mathbb{H}_{\mathrm{spl}}} (\mathcal F f)(\zeta)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\zeta\rangle)\,\mathrm{d}\zeta
 \;},
 $$
 
-the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
+the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
 
 **Proof.** The scalar theory of *Fourier Analysis on Euclidean Spaces* applies componentwise; the unitarity is the Plancherel theorem in each component.
 
@@ -64,12 +64,12 @@ the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}^{\mathrm{spl}
 **Definition.** The **convolution** of two algebra-valued functions is
 
 $$
-(f * g)(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q_2)\,g(\tilde q-\tilde q_2)\,\mathrm{d}\tilde q_2 ,
+(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{spl}}} f(\tilde q_2)\,g(\tilde q-\tilde q_2)\,\mathrm{d}\tilde q_2 ,
 $$
 
 with the product of the algebra inside the integral.
 
-**Theorem (The Convolution Theorem).** For $f, g \in L^1(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ the convolution is well defined almost everywhere, and
+**Theorem (The Convolution Theorem).** For $f, g \in L^1(\mathbb{H}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}})$ the convolution is well defined almost everywhere, and
 
 $$
 \boxed{\;
@@ -106,7 +106,7 @@ The transform that uses the algebra itself as the kernel is the analogue of the 
 **Definition.** For a suitable function $f$ the **algebra-kernel transform** is
 
 $$
-\mathcal{F}f(\zeta) = \int_{\mathbb{H}^{\mathrm{spl}}} \exp(-\tilde q\zeta)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\zeta \text{ the algebra product},
+\mathcal{F}f(\zeta) = \int_{\mathbb{H}_{\mathrm{spl}}} \exp(-\tilde q\zeta)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\zeta \text{ the algebra product},
 $$
 
 the exponential being that of *Split-Quaternion Elementary Functions*.
@@ -173,7 +173,7 @@ The degeneracy of the harmonic analysis on the null cone is therefore read in th
 
 ## Comparison with the Quaternion and Split-Complex Transforms
 
-| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 |---|---|---|---|
 | additive group | locally compact abelian | locally compact abelian | locally compact abelian |
 | group transform | four-dimensional Fourier transform | four-dimensional Fourier transform | two-dimensional Fourier transform |
@@ -182,7 +182,7 @@ The degeneracy of the harmonic analysis on the null cone is therefore read in th
 | symbol $\zeta$ | invertible for every $\zeta \neq 0$ | invertible iff $\langle \zeta\rangle_{\natural} \neq 0$ | invertible iff $\langle \zeta\rangle_{\natural} \neq 0$ |
 | transformed fundamental solution | singular at the origin | singular on the null cone | singular on the two isotropic lines |
 
-The quaternion column is the content of *Quaternion Harmonic Analysis* and the split-complex column that of *Split-Complex Harmonic Analysis*. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
+The quaternion column is the content of *Quaternion Harmonic Analysis* and the split-complex column that of *Split-Complex Harmonic Analysis*. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{B}_{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 
 ## Summary
 

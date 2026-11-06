@@ -236,10 +236,10 @@ $$
 \partial/\partial r'_t \tilde{F} + c(I)\,\partial/\partial R_x \tilde{F} = 0,
 $$
 
-where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\xi^{\mathrm{scl}}$ satisfying $\partial/\partial r'_t\xi^{\mathrm{scl}} + c(\xi^{\mathrm{scl}})\partial/\partial R_x\xi^{\mathrm{scl}} = 0$, the equation can be written in conservation form
+where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\xi_{\mathrm{scl}}$ satisfying $\partial/\partial r'_t\xi_{\mathrm{scl}} + c(\xi_{\mathrm{scl}})\partial/\partial R_x\xi_{\mathrm{scl}} = 0$, the equation can be written in conservation form
 
 $$
-\partial/\partial r'_t\xi^{\mathrm{scl}} + \partial/\partial R_x f(\xi^{\mathrm{scl}}) = 0, \qquad \frac{df}{d\xi^{\mathrm{scl}}}(\xi^{\mathrm{scl}}) = c(\xi^{\mathrm{scl}}),
+\partial/\partial r'_t\xi_{\mathrm{scl}} + \partial/\partial R_x f(\xi_{\mathrm{scl}}) = 0, \qquad \frac{df}{d\xi_{\mathrm{scl}}}(\xi_{\mathrm{scl}}) = c(\xi_{\mathrm{scl}}),
 $$
 
 where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.

@@ -20,7 +20,7 @@ $$
 \psi^{(+)}=(Q_{+},0),\qquad \psi^{(-)}=(0,Q_{-}).
 $$
 
-Each column has one nonzero entry. The vanishing of the other entry is not a choice: it is the vanishing of the mixed Peirce component $\mathbb{C}^{\mathrm{spl}}_{+-}=0$.
+Each column has one nonzero entry. The vanishing of the other entry is not a choice: it is the vanishing of the mixed Peirce component $\mathbb{C}_{\mathrm{spl},+-}=0$.
 
 ## The Spinor
 
@@ -38,7 +38,7 @@ equivalently the single nonzero scalar $Q_{+}$ or $Q_{-}$.
 
 ## No Chirality
 
-A chiral split of a column requires two entries of the same column, one for each sign of a grading. Here each column has only one nonzero entry, so there is nothing to split. The two columns belong to the two factors of $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$; they are not two chiralities of one spinor.
+A chiral split of a column requires two entries of the same column, one for each sign of a grading. Here each column has only one nonzero entry, so there is nothing to split. The two columns belong to the two factors of $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$; they are not two chiralities of one spinor.
 
 **The element is not a two-component spinor.** The pair $(Q_{+},Q_{-})$ has two components, but it is the element of the algebra, not a column. Calling it a spinor would identify the element with one of its columns, which the decomposition does not do.
 
@@ -48,7 +48,7 @@ The family is a single unordered pair, with no continuous parameter: the only no
 
 ## What a Spinor Is Not
 
-A spinor is not an element of $\mathbb{C}^{\mathrm{spl}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.
+A spinor is not an element of $\mathbb{C}_{\mathrm{spl}}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.
 
 ## Summary
 

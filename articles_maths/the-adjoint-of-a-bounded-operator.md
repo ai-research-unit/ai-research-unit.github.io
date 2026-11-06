@@ -76,7 +76,7 @@ and $T$ is invertible exactly when $T^{*}$ is, with $(T^{-1})^{*} = (T^{*})^{-1}
 **Proposition (self-adjoint, skew, normal, unitary).** The involution splits $B(H)$ into the **self-adjoint** operators $T = T^{*}$ and the **skew-adjoint** operators $T = -T^{*}$, with
 
 $$
-B(H) = B(H)^{\mathrm{sa}} \oplus B(H)^{\mathrm{skew}} , \qquad T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*}) ,
+B(H) = B(H)_{\mathrm{sa}} \oplus B(H)_{\mathrm{skew}} , \qquad T = \tfrac12(T+T^{*}) + \tfrac12(T-T^{*}) ,
 $$
 
 when $2$ is invertible; $T$ is **normal** when $TT^{*} = T^{*}T$ and **unitary** when $T^{*}T = TT^{*} = \mathrm{id}$. The self-adjoint and skew-adjoint parts are real vector subspaces, and the unitary operators form a group.
@@ -104,7 +104,7 @@ For a bounded operator $T$ on a Hilbert space there is a unique $T^{*}$ with $\l
 | $\lVert T^{*}T\rVert = \lVert T\rVert^{2}$ | the $C^{*}$-identity |
 | $R : H \to H'$ | Riesz map, $T^{*} = R^{-1}T'R$ |
 | $\sigma(T^{*}) = \overline{\sigma(T)}$ | conjugation of the spectrum |
-| $B(H)^{\mathrm{sa}}$, $B(H)^{\mathrm{skew}}$ | self-adjoint and skew-adjoint operators |
+| $B(H)_{\mathrm{sa}}$, $B(H)_{\mathrm{skew}}$ | self-adjoint and skew-adjoint operators |
 | $T^{*}T = TT^{*} = \mathrm{id}$ | unitary operators |
 
 ## Further Reading

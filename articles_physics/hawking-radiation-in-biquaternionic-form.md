@@ -41,7 +41,7 @@ The article is organized as follows. The next section fixes the Schwarzschild ho
 
 ### The Metric and the Horizon
 
-The exterior Schwarzschild line element, in the coordinates $(r'_t,r,\theta,\xi^{\mathrm{scl}})$, is
+The exterior Schwarzschild line element, in the coordinates $(r'_t,r,\theta,\xi_{\mathrm{scl}})$, is
 
 $$
 ds^2 = -f c^2\,d{r'_{t}}^2 + f^{-1}dr^2 + r^2\,d\Omega^2,
@@ -237,7 +237,7 @@ $$
 and similarly for the $v_j$. The field expands equally well in either set,
 
 $$
-\xi^{\mathrm{scl}}=\sum_i\left(u_i\,a_i+u_i^*\,a_i^\dagger\right)
+\xi_{\mathrm{scl}}=\sum_i\left(u_i\,a_i+u_i^*\,a_i^\dagger\right)
 =\sum_j\left(v_j\,b_j+v_j^*\,b_j^\dagger\right),
 $$
 

@@ -56,7 +56,7 @@ $$
 with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the **volume cell**, acts by
 
 $$
-\mathsf{V}^{\mathrm{vol}}: X\mapsto -iX\vec e_z .
+\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z .
 $$
 
 Each frame cell carries exactly one factor of the central $i$, so a square spends $i^2=-1$ once, and the remaining signs come from the squares of the three spatial units:
@@ -90,12 +90,12 @@ The external states satisfy the massive Dirac equation, and in the biquaternion 
 **The chiral pair.** It is the pair of one-sided equations of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.
+with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value of the subscript. The mass is the only term that couples the two values. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate.
 
 **The two-sided form.** Read on the whole algebra rather than one-sidedly, the same physics is the single equation
 
@@ -105,7 +105,7 @@ $$
 
 with $\bar F$ the coefficient conjugate. The derivative acts on the left, the mass acts on the right by the unit $-i\vec e_z$, and the conjugation supplies the antilinear part. The two forms are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$.
 
-The subscript on an element takes the two values $L$ and $R$: the value of $\mathsf{V}^{\mathrm{vol}}$ is $-1$ on the $L$ part and $+1$ on the $R$ part. The conjugation takes each letter to the other, because it sends $-i\vec e_z$ to $+i\vec e_z$. The mass term carries $\bar F$ and is therefore the only term that relates the two parts: the conjugation plays the part of the second field of the pair, and the unit $-i\vec e_z$ the part of the mass. That is why the two-sided reading is one equation for one element rather than a pair, and why it is antilinear.
+The subscript on an element takes the two values $L$ and $R$: the value of $\mathsf{V}_{\mathrm{vol}}$ is $-1$ on the $L$ part and $+1$ on the $R$ part. The conjugation takes each letter to the other, because it sends $-i\vec e_z$ to $+i\vec e_z$. The mass term carries $\bar F$ and is therefore the only term that relates the two parts: the conjugation plays the part of the second field of the pair, and the unit $-i\vec e_z$ the part of the mass. That is why the two-sided reading is one equation for one element rather than a pair, and why it is antilinear.
 
 **The frame-cell reading.** In the frame cells the two states satisfy
 
@@ -271,7 +271,7 @@ As in the Møller case, each current is the set of components of the framework's
 
 ### The relative sign is the antisymmetry of the mode algebra
 
-The sign is the framework's **fermion sign**, and its algebraic source is one line. In the exchange channel the four external fermion fields are contracted in one order, in the annihilation channel in the other, and swapping two of them costs a minus. The electron and positron are not identical, but the antisymmetry does not distinguish them: every fermion field anticommutes with every other. The canonical-quantization article obtains this antisymmetry as the identity $(a^{\mathrm{fop}\dagger}_r)^2=0$ together with the fermion parity of the mode algebra. The Bhabha minus sign is therefore the Møller sign read in the annihilation channel, not a separate input.
+The sign is the framework's **fermion sign**, and its algebraic source is one line. In the exchange channel the four external fermion fields are contracted in one order, in the annihilation channel in the other, and swapping two of them costs a minus. The electron and positron are not identical, but the antisymmetry does not distinguish them: every fermion field anticommutes with every other. The canonical-quantization article obtains this antisymmetry as the identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$ together with the fermion parity of the mode algebra. The Bhabha minus sign is therefore the Møller sign read in the annihilation channel, not a separate input.
 
 ### The annihilation channel and charge conjugation
 
@@ -303,16 +303,16 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above reproduce, and nothing here is needed outside it.
 
-The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$.
+The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 Each $\gamma_\mu$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth cell is not independent, since
@@ -321,7 +321,7 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-These are the body's own cells — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\mathsf{V}^{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
+These are the body's own cells — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\mathsf{V}_{\mathrm{vol}}=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's trace $\operatorname{Tr}$ of the action on $\mathbb{B}$.
 
 **The trace identities.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
 
@@ -352,11 +352,11 @@ $$
 
 which is the algebra behind the cross section.
 
-The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the volume cell $\mathsf{V}^{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The volume cell $\mathsf{V}^{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
+The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object from the volume cell $\mathsf{V}_{\mathrm{vol}}$, and the two must not be read as one. Here $\tilde{Ζ}_{\mathrm{ad}}$ is a central root of $-e_t$, so $\tilde{Ζ}_{\mathrm{ad}}^2=-e_t$ and $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$; equivalently, $\xi_{\mathrm{ad}}$ is the difference of the two central idempotents of the complexified algebra. Being central, it acts on the Dirac module as a sign, and its representative there is $\gamma_5$. The volume cell $\mathsf{V}_{\mathrm{vol}}$ acts on that same module exactly as $\gamma_5$ acts; what the two-sided reading adds is not a second operator but the frame in which the mass can act by right multiplication.
 
 Read over $\mathbb{R}$ rather than $\mathbb{C}$, the cells generate a real Clifford algebra of sixteen dimensions, and its complexification is the whole of $M_4(\mathbb{C})$. The algebra $\mathbb{B}$ itself is the eight-dimensional real algebra $M_2(\mathbb{C})$, the complexified quaternions. That complexification is what lets the cells and the gammas be the same objects, and it is why no larger algebra is needed.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -378,7 +378,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
 | $\Gamma_t: X\mapsto iX\vec e_x$, $\Gamma_k: X\mapsto i\vec e_kX\vec e_y$ | Four frame cells |
-| $\mathsf{V}^{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume cell of the frame |
+| $\mathsf{V}_{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume cell of the frame |
 | $P(p): X\mapsto p_0iX\vec e_x-\sum_kp_ki\vec e_kX\vec e_y$ | Momentum cell; $P(p)^2=p_0^2-\vec p^2$ |
 | $J_\mu(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_k=\mathrm{Sc}(a^*\vec e_kb\vec e_z)$ |
 | $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_\mu\varepsilon_\mu J_\mu(a,b)J_\mu(c,d)$ |

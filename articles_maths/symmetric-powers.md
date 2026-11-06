@@ -54,10 +54,10 @@ $$
 \pi_n : M^n \longrightarrow \operatorname{sym}^n M
 $$
 
-such that for every $R$-module $P$ and every symmetric multilinear map $f : M^n \to P$ there is a unique $R$-linear map $f^{\mathrm{lin}} : \operatorname{sym}^n M \to P$ with
+such that for every $R$-module $P$ and every symmetric multilinear map $f : M^n \to P$ there is a unique $R$-linear map $f_{\mathrm{lin}} : \operatorname{sym}^n M \to P$ with
 
 $$
-f^{\mathrm{lin}} \circ \pi_n = f .
+f_{\mathrm{lin}} \circ \pi_n = f .
 $$
 
 The map $\pi_n$ is the **defining map**, and the element $\pi_n(x_1, \ldots, x_n)$ is written $x_1 \cdots x_n$; it is a class modulo the submodule $J_n$ of relations constructed in the next section, not a tensor, and the notation with the product sign keeps the two apart. The universal property says that the symmetric powers corepresent symmetric multilinear maps:
@@ -110,7 +110,7 @@ Equivalently, $J_n$ is spanned by the images of the maps $\sigma - 1$, $\sigma \
 
 *Proof.* Write $Q = M^{\otimes n}/J_n$ and let $q : M^{\otimes n} \to Q$ be the quotient map. The composite $\pi = q \circ \otimes^n$ is symmetric multilinear: it is multilinear because $\otimes^n$ is and $q$ is linear, and it is symmetric because $q$ kills every $J_n$, so $q(x_1 \otimes \cdots \otimes x_n) = q(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$.
 
-Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $f^{\mathrm{lin}} : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.
+Now let $f : M^n \to P$ be symmetric multilinear. By the universal property of the tensor power there is a unique $R$-linear $\bar f : M^{\otimes n} \to P$ with $\bar f(x_1 \otimes \cdots \otimes x_n) = f(x_1, \ldots, x_n)$. Symmetry of $f$ gives $\bar f(x_1 \otimes \cdots \otimes x_n) = \bar f(x_{\sigma(1)} \otimes \cdots \otimes x_{\sigma(n)})$, so $\bar f$ vanishes on the generators of $J_n$; hence $\bar f$ factors uniquely through a map $f_{\mathrm{lin}} : Q \to P$. This is the required factorisation, and uniqueness holds because the elementary tensors generate $M^{\otimes n}$, hence their images generate $Q$.
 
 Thus the symmetric power is exactly the **module of coinvariants** of the permutation action,
 

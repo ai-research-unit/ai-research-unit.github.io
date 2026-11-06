@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\tilde{Ξ}^{\mathrm{sp}}_0, \dots, \tilde{Ξ}^{\mathrm{sp}}_4$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
+The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\tilde{Ξ}_{\mathrm{sp},0}, \dots, \tilde{Ξ}_{\mathrm{sp},4}$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
 
 This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Material Sector: Four-Vectors, Interval and Lorentz Action*; *The Topology of the Zero-Divisor Cone*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
 
@@ -10,9 +10,9 @@ Three claims organise the discussion.
 
 **First, the null tetrad is algebraic and native.** The four legs are elements of $\mathbb{B}$ — $l$ and $n$ in the real material sector $\mathbb{M}_-$, with $m$ and $\bar m$ complex — and each is a zero divisor. Their inner products $l\cdot n = -1$ and $m\cdot\bar m = +1$, and their vanishing self-products, follow from the normalization of the spinor dyad and from the framework's biquaternion norm; the interval is recovered from the tetrad by the completeness relation.
 
-**Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}^{\mathrm{sp}}_{ABCD} \in \mathrm{sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
+**Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{\mathrm{sp},ABCD} \in \mathrm{sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
 
-**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\tilde{Ξ}^{\mathrm{sp}}_k \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\tilde{Ξ}^{\mathrm{sp}}_k$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\sum_{A,B,C,D}\tilde{Ξ}^{\mathrm{sp}}_{ABCD}k_Ak_Bk_Ck_D$.
+**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\tilde{Ξ}_{\mathrm{sp},k} \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\tilde{Ξ}_{\mathrm{sp},k}$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\sum_{A,B,C,D}\tilde{Ξ}_{\mathrm{sp},ABCD}k_Ak_Bk_Ck_D$.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
@@ -205,11 +205,11 @@ The Weyl tensor $C_{abcd}$ is the trace-free part of the Riemann tensor, the par
 
 $$
 \begin{aligned}
-\tilde{Ξ}^{\mathrm{sp}}_0 &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b l_c m_d, &\qquad
-\tilde{Ξ}^{\mathrm{sp}}_1 &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b l_c m_d, &\qquad
-\tilde{Ξ}^{\mathrm{sp}}_2 &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \\
-\tilde{Ξ}^{\mathrm{sp}}_3 &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b \bar m_c n_d, &\qquad
-\tilde{Ξ}^{\mathrm{sp}}_4 &= \sum_{a,b,c,d} C_{abcd}\,\bar m_a n_b \bar m_c n_d,
+\tilde{Ξ}_{\mathrm{sp},0} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b l_c m_d, &\qquad
+\tilde{Ξ}_{\mathrm{sp},1} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b l_c m_d, &\qquad
+\tilde{Ξ}_{\mathrm{sp},2} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \\
+\tilde{Ξ}_{\mathrm{sp},3} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b \bar m_c n_d, &\qquad
+\tilde{Ξ}_{\mathrm{sp},4} &= \sum_{a,b,c,d} C_{abcd}\,\bar m_a n_b \bar m_c n_d,
 \end{aligned}
 \tag{9}
 $$
@@ -220,14 +220,14 @@ The counting works, and the passage from ten real components to five complex one
 
 The scalars have a spinorial form that names them in the framework's own objects. The self-dual part of the Weyl tensor is the totally symmetric fourth-rank spinor
 $$
-\tilde{Ξ}^{\mathrm{sp}}_{ABCD} \in \mathrm{sym}^4 S,
+\tilde{Ξ}_{\mathrm{sp},ABCD} \in \mathrm{sym}^4 S,
 $$
 whose five independent components are the five scalars,
 $$
-\tilde{Ξ}^{\mathrm{sp}}_0 = \tilde{Ξ}^{\mathrm{sp}}_{0000}, \quad \tilde{Ξ}^{\mathrm{sp}}_1 = \tilde{Ξ}^{\mathrm{sp}}_{0001}, \quad \tilde{Ξ}^{\mathrm{sp}}_2 = \tilde{Ξ}^{\mathrm{sp}}_{0011}, \quad \tilde{Ξ}^{\mathrm{sp}}_3 = \tilde{Ξ}^{\mathrm{sp}}_{0111}, \quad \tilde{Ξ}^{\mathrm{sp}}_4 = \tilde{Ξ}^{\mathrm{sp}}_{1111},
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0000}, \quad \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},0001}, \quad \tilde{Ξ}_{\mathrm{sp},2} = \tilde{Ξ}_{\mathrm{sp},0011}, \quad \tilde{Ξ}_{\mathrm{sp},3} = \tilde{Ξ}_{\mathrm{sp},0111}, \quad \tilde{Ξ}_{\mathrm{sp},4} = \tilde{Ξ}_{\mathrm{sp},1111},
 \tag{10}
 $$
-where the index $0$ refers to the dyad element $o$ and $1$ to $o'$. Since $S$ is two-dimensional, $\mathrm{sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (9); the anti-self-dual part is the complex conjugate spinor $\bar{\tilde{Ξ}}^{\mathrm{sp}}_{\bar A\bar B\bar C\bar D} \in \mathrm{sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: **they are the five components of an element of $\mathrm{sym}^4 S$, the fourth symmetric power of the framework's spinor module.**
+where the index $0$ refers to the dyad element $o$ and $1$ to $o'$. Since $S$ is two-dimensional, $\mathrm{sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (9); the anti-self-dual part is the complex conjugate spinor $\bar{\tilde{Ξ}}_{\mathrm{sp},\bar A\bar B\bar C\bar D} \in \mathrm{sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: **they are the five components of an element of $\mathrm{sym}^4 S$, the fourth symmetric power of the framework's spinor module.**
 
 A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The Weyl spinor is $\mathrm{sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.
 
@@ -245,15 +245,15 @@ $$
 which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $o'\mapsto A^{-1/2}\exp(-i\theta/2)o'$. Substituting (11) into (9), each scalar picks up a monomial:
 
 $$
-\boxed{\;\tilde{Ξ}^{\mathrm{sp}}_k \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\tilde{Ξ}^{\mathrm{sp}}_k, \qquad k=0,\dots,4\;}.
+\boxed{\;\tilde{Ξ}_{\mathrm{sp},k} \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\tilde{Ξ}_{\mathrm{sp},k}, \qquad k=0,\dots,4\;}.
 \tag{12}
 $$
 
-The exponent $2-k$ is the **boost weight** of $\tilde{Ξ}^{\mathrm{sp}}_k$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.
+The exponent $2-k$ is the **boost weight** of $\tilde{Ξ}_{\mathrm{sp},k}$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.
 
-Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\tilde{Ξ}^{\mathrm{sp}}_{k,2}/\tilde{Ξ}^{\mathrm{sp}}_k$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\tilde{Ξ}^{\mathrm{sp}}_k$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\tilde{Ξ}^{\mathrm{sp}}_k$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
+Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\tilde{Ξ}_{\mathrm{sp},k,2}/\tilde{Ξ}_{\mathrm{sp},k}$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\tilde{Ξ}_{\mathrm{sp},k}$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\tilde{Ξ}_{\mathrm{sp},k}$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
 
-The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\tilde{Ξ}^{\mathrm{sp}}_k$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.
+The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\tilde{Ξ}_{\mathrm{sp},k}$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.
 
 The null rotations complete the group. A null rotation about $l$ fixes $l$ and shifts the other three legs,
 
@@ -262,16 +262,16 @@ l \mapsto l, \qquad m \mapsto m + \bar z\,l, \qquad \bar m \mapsto \bar m + z\,l
 \tag{13}
 $$
 
-which again preserves all the inner products (1). Under (13) the scalar $\tilde{Ξ}^{\mathrm{sp}}_0$ is invariant. This is forced by the index structure: $\tilde{Ξ}^{\mathrm{sp}}_0$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $\sum_{a,b,c,d}C_{abcd}l_al_bl_cm_d$ and $\sum_{a,b,c,d}C_{abcd}l_am_bl_cl_d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\tilde{Ξ}^{\mathrm{sp}}_4$ invariant by the same argument with $l\leftrightarrow n$.
+which again preserves all the inner products (1). Under (13) the scalar $\tilde{Ξ}_{\mathrm{sp},0}$ is invariant. This is forced by the index structure: $\tilde{Ξ}_{\mathrm{sp},0}$ contains $l$ twice, and the terms generated by $m\mapsto m+\bar z l$ involve the contractions $\sum_{a,b,c,d}C_{abcd}l_al_bl_cm_d$ and $\sum_{a,b,c,d}C_{abcd}l_am_bl_cl_d$, each of which has a repeated leg in a pair of antisymmetric slots and therefore vanishes for any tensor with the Riemann antisymmetries. A null rotation about $n$ leaves $\tilde{Ξ}_{\mathrm{sp},4}$ invariant by the same argument with $l\leftrightarrow n$.
 
-The invariance of the two extreme scalars is what makes the principal-null-direction conditions meaningful. The condition $\tilde{Ξ}^{\mathrm{sp}}_0=0$ is unchanged by a null rotation about $l$, so it is a property of the null direction $l$ rather than of the particular tetrad containing it: it says that $l$ is a principal null direction. The same holds for $\tilde{Ξ}^{\mathrm{sp}}_4=0$ and $n$. The remaining scalars shift under (13) by polynomial combinations of their partners, with the shifts graded by the boost weights; this is the mechanism by which a null rotation can align $l$ with a repeated principal null direction, as used in the classification below.
+The invariance of the two extreme scalars is what makes the principal-null-direction conditions meaningful. The condition $\tilde{Ξ}_{\mathrm{sp},0}=0$ is unchanged by a null rotation about $l$, so it is a property of the null direction $l$ rather than of the particular tetrad containing it: it says that $l$ is a principal null direction. The same holds for $\tilde{Ξ}_{\mathrm{sp},4}=0$ and $n$. The remaining scalars shift under (13) by polynomial combinations of their partners, with the shifts graded by the boost weights; this is the mechanism by which a null rotation can align $l$ with a repeated principal null direction, as used in the classification below.
 
 ## Petrov Types and the Vanishing Pattern
 
 The Petrov type of a Weyl tensor is the multiplicity pattern of its four principal null directions, and in the spinor form (10) this is a statement about a binary quartic. With $k_A = o_A + x\,o'_A$,
 
 $$
-q(x) \;=\; \sum_{A,B,C,D}\tilde{Ξ}^{\mathrm{sp}}_{ABCD}\,k_Ak_Bk_Ck_D \;=\; \tilde{Ξ}^{\mathrm{sp}}_0 + 4x\,\tilde{Ξ}^{\mathrm{sp}}_1 + 6x^2\,\tilde{Ξ}^{\mathrm{sp}}_2 + 4x^3\,\tilde{Ξ}^{\mathrm{sp}}_3 + x^4\,\tilde{Ξ}^{\mathrm{sp}}_4 .
+q(x) \;=\; \sum_{A,B,C,D}\tilde{Ξ}_{\mathrm{sp},ABCD}\,k_Ak_Bk_Ck_D \;=\; \tilde{Ξ}_{\mathrm{sp},0} + 4x\,\tilde{Ξ}_{\mathrm{sp},1} + 6x^2\,\tilde{Ξ}_{\mathrm{sp},2} + 4x^3\,\tilde{Ξ}_{\mathrm{sp},3} + x^4\,\tilde{Ξ}_{\mathrm{sp},4} .
 \tag{14}
 $$
 
@@ -279,10 +279,10 @@ The root $x=0$ represents the null direction $l$ (more precisely the spinor $o$)
 
 $$
 \begin{array}{ll}
-\tilde{Ξ}^{\mathrm{sp}}_0 = 0 & l \text{ is a principal null direction (PND)},\\
-\tilde{Ξ}^{\mathrm{sp}}_0 = \tilde{Ξ}^{\mathrm{sp}}_1 = 0 & l \text{ is a double PND},\\
-\tilde{Ξ}^{\mathrm{sp}}_0 = \tilde{Ξ}^{\mathrm{sp}}_1 = \tilde{Ξ}^{\mathrm{sp}}_2 = 0 & l \text{ is a triple PND},\\
-\tilde{Ξ}^{\mathrm{sp}}_0 = \tilde{Ξ}^{\mathrm{sp}}_1 = \tilde{Ξ}^{\mathrm{sp}}_2 = \tilde{Ξ}^{\mathrm{sp}}_3 = 0 & l \text{ is a quadruple PND}.
+\tilde{Ξ}_{\mathrm{sp},0} = 0 & l \text{ is a principal null direction (PND)},\\
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = 0 & l \text{ is a double PND},\\
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},2} = 0 & l \text{ is a triple PND},\\
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},2} = \tilde{Ξ}_{\mathrm{sp},3} = 0 & l \text{ is a quadruple PND}.
 \end{array}
 \tag{15}
 $$
@@ -291,14 +291,14 @@ The four roots of the quartic (14) are the four principal null directions, count
 
 | Type | Multiplicities | Principal null directions | Canonical form with $l$ repeated |
 |------|----------------|----------------------------|----------------------------------|
-| I | $1+1+1+1$ | four distinct | $\tilde{Ξ}^{\mathrm{sp}}_0=0$; with $n$ also a PND, $\tilde{Ξ}^{\mathrm{sp}}_0=\tilde{Ξ}^{\mathrm{sp}}_4=0$ |
-| II | $2+1+1$ | one double, two simple | $\tilde{Ξ}^{\mathrm{sp}}_0=\tilde{Ξ}^{\mathrm{sp}}_1=0$ |
-| D | $2+2$ | two double | $\tilde{Ξ}^{\mathrm{sp}}_0=\tilde{Ξ}^{\mathrm{sp}}_1=\tilde{Ξ}^{\mathrm{sp}}_3=\tilde{Ξ}^{\mathrm{sp}}_4=0$, $\tilde{Ξ}^{\mathrm{sp}}_2\neq0$ |
-| III | $3+1$ | one triple, one simple | $\tilde{Ξ}^{\mathrm{sp}}_0=\tilde{Ξ}^{\mathrm{sp}}_1=\tilde{Ξ}^{\mathrm{sp}}_2=0$ |
-| N | $4$ | one quadruple | $\tilde{Ξ}^{\mathrm{sp}}_0=\tilde{Ξ}^{\mathrm{sp}}_1=\tilde{Ξ}^{\mathrm{sp}}_2=\tilde{Ξ}^{\mathrm{sp}}_3=0$, $\tilde{Ξ}^{\mathrm{sp}}_4\neq0$ |
-| O | — | none (conformally flat) | all $\tilde{Ξ}^{\mathrm{sp}}_k=0$ |
+| I | $1+1+1+1$ | four distinct | $\tilde{Ξ}_{\mathrm{sp},0}=0$; with $n$ also a PND, $\tilde{Ξ}_{\mathrm{sp},0}=\tilde{Ξ}_{\mathrm{sp},4}=0$ |
+| II | $2+1+1$ | one double, two simple | $\tilde{Ξ}_{\mathrm{sp},0}=\tilde{Ξ}_{\mathrm{sp},1}=0$ |
+| D | $2+2$ | two double | $\tilde{Ξ}_{\mathrm{sp},0}=\tilde{Ξ}_{\mathrm{sp},1}=\tilde{Ξ}_{\mathrm{sp},3}=\tilde{Ξ}_{\mathrm{sp},4}=0$, $\tilde{Ξ}_{\mathrm{sp},2}\neq0$ |
+| III | $3+1$ | one triple, one simple | $\tilde{Ξ}_{\mathrm{sp},0}=\tilde{Ξ}_{\mathrm{sp},1}=\tilde{Ξ}_{\mathrm{sp},2}=0$ |
+| N | $4$ | one quadruple | $\tilde{Ξ}_{\mathrm{sp},0}=\tilde{Ξ}_{\mathrm{sp},1}=\tilde{Ξ}_{\mathrm{sp},2}=\tilde{Ξ}_{\mathrm{sp},3}=0$, $\tilde{Ξ}_{\mathrm{sp},4}\neq0$ |
+| O | — | none (conformally flat) | all $\tilde{Ξ}_{\mathrm{sp},k}=0$ |
 
-Two conventions are at work in such a table, and they must be separated. The **type** — the multiplicity pattern — is invariant. The **canonical vanishing list** is not: it depends on which principal null direction is aligned with $l$, and the table above aligns $l$ with the repeated direction. If instead $n$ is the repeated direction, the roles of the scalars are exchanged by $\tilde{Ξ}^{\mathrm{sp}}_k\leftrightarrow\tilde{Ξ}^{\mathrm{sp}}_{4-k}$, consistent with the weights $2-k$ and $-2+k$. The pattern in the table is stable under the residual boost–spin and null-rotation freedoms that preserve the alignment, which is why "the type" is well defined even though the individual scalars are not.
+Two conventions are at work in such a table, and they must be separated. The **type** — the multiplicity pattern — is invariant. The **canonical vanishing list** is not: it depends on which principal null direction is aligned with $l$, and the table above aligns $l$ with the repeated direction. If instead $n$ is the repeated direction, the roles of the scalars are exchanged by $\tilde{Ξ}_{\mathrm{sp},k}\leftrightarrow\tilde{Ξ}_{\mathrm{sp},4-k}$, consistent with the weights $2-k$ and $-2+k$. The pattern in the table is stable under the residual boost–spin and null-rotation freedoms that preserve the alignment, which is why "the type" is well defined even though the individual scalars are not.
 
 The framework does not derive the classification, and it does not need to: the classification is the multiplicity theory of the quartic (14), which lives in $\mathrm{sym}^4 S$, and $\mathrm{sym}^4 S$ is hosted by the algebra. What the algebra cannot do is produce the quartic for a given spacetime. That is the gap recorded above, and it is not closed here.
 
@@ -310,13 +310,13 @@ The construction separates cleanly into what is native to $\mathbb{B}$ and what 
 
 **Not native to the algebra.** Three items, in increasing order of severity. First, the **connection**: the spin coefficients exist once a metric-compatible connection is chosen, but the algebra does not select one. The parent article records the same for the frame, and it is the reason the spin coefficients are described here as components of a $\mathbb{B}$-valued 1-form rather than as objects the algebra produces. Second, the **curvature**: the Weyl tensor is a rank-four object outside $\mathbb{B}$, and the five scalars are its components in $\mathrm{sym}^4 S$. The algebra says what an element of $\mathrm{sym}^4 S$ is, but nothing in the algebra determines which element a spacetime produces. The gravity articles already record this as open, and it remains open; this article has made the statement of the gap precise by naming the object that is missing. Third, the **dynamics and the global structure**: there are no field equations here, so the algebra cannot say which Petrov types occur, and the construction is pointwise and linear, so it carries no topological or asymptotic information. The peeling behaviour of the scalars along a null direction, for instance, is a statement about a limit and lies outside the algebra.
 
-**On the two-sector decomposition.** The gravity articles raise the question whether the decomposition $\mathbb{M}_+\oplus\mathbb{M}_-$ organises the Weyl bivectors and the five scalars. The construction here answers it partially, and mostly negatively. The bivectors on which the self-dual Weyl tensor acts do have a native home: the algebra's bivector subspace is the six-real-dimensional traceless subspace of $\mathbb{B}$ that the parent identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, and the three-complex-dimensional self-dual bivector space sits inside its complexification. But the Weyl tensor is not a bivector; its self-dual part is a symmetric traceless map on the three-dimensional self-dual bivector space, equivalently the spin-two object $\tilde{Ξ}^{\mathrm{sp}}_{ABCD}\in\mathrm{sym}^4 S$, which is five complex dimensional. Since $\mathbb{B}$ itself is four complex dimensional, $\mathrm{sym}^4 S$ is not a subspace of $\mathbb{B}$, and the decomposition of $\mathbb{B}$ into $\mathbb{M}_+$ and $\mathbb{M}_-$ cannot organise $\mathrm{sym}^4 S$ as a decomposition into subspaces. The two-sector split does not, by itself, organise the Weyl scalars. Whether some finer correspondence exists — for instance between the self-dual/anti-self-dual split of the curvature and the complex structure that the algebra carries — is not settled here, and is left as an open question rather than forced.
+**On the two-sector decomposition.** The gravity articles raise the question whether the decomposition $\mathbb{M}_+\oplus\mathbb{M}_-$ organises the Weyl bivectors and the five scalars. The construction here answers it partially, and mostly negatively. The bivectors on which the self-dual Weyl tensor acts do have a native home: the algebra's bivector subspace is the six-real-dimensional traceless subspace of $\mathbb{B}$ that the parent identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, and the three-complex-dimensional self-dual bivector space sits inside its complexification. But the Weyl tensor is not a bivector; its self-dual part is a symmetric traceless map on the three-dimensional self-dual bivector space, equivalently the spin-two object $\tilde{Ξ}_{\mathrm{sp},ABCD}\in\mathrm{sym}^4 S$, which is five complex dimensional. Since $\mathbb{B}$ itself is four complex dimensional, $\mathrm{sym}^4 S$ is not a subspace of $\mathbb{B}$, and the decomposition of $\mathbb{B}$ into $\mathbb{M}_+$ and $\mathbb{M}_-$ cannot organise $\mathrm{sym}^4 S$ as a decomposition into subspaces. The two-sector split does not, by itself, organise the Weyl scalars. Whether some finer correspondence exists — for instance between the self-dual/anti-self-dual split of the curvature and the complex structure that the algebra carries — is not settled here, and is left as an open question rather than forced.
 
 ## Summary
 
 The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
 
-The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}^{\mathrm{sp}}_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}^{\mathrm{sp}}_k\mapsto A^{2-k}\exp(i(2-k)\theta)\tilde{Ξ}^{\mathrm{sp}}_k$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
+The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{\mathrm{sp},ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}_{\mathrm{sp},k}\mapsto A^{2-k}\exp(i(2-k)\theta)\tilde{Ξ}_{\mathrm{sp},k}$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
 
 The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the connection's home, and the spinor module that carries the Weyl spinor; it does not supply the connection, the Weyl tensor, or the dynamics that would select one. The two-sector decomposition does not organise the Weyl scalars, because $\mathrm{sym}^4 S$ is five complex dimensional and $\mathbb{B}$ is four. That is a negative structural finding, reported as such rather than closed.
 
@@ -343,8 +343,8 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\kappa,\sigma,\rho,\tau,\pi,\lambda,\mu,\nu,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
 | $D,\Delta,\delta,\bar\delta$ | directional derivatives along $l,n,m,\bar m$ |
 | $C_{abcd}$ | Weyl tensor |
-| $\tilde{Ξ}^{\mathrm{sp}}_0,\dots,\tilde{Ξ}^{\mathrm{sp}}_4$ | Weyl scalars, (9) |
-| $\tilde{Ξ}^{\mathrm{sp}}_{ABCD}$ | self-dual Weyl spinor in $\mathrm{sym}^4 S$ |
+| $\tilde{Ξ}_{\mathrm{sp},0},\dots,\tilde{Ξ}_{\mathrm{sp},4}$ | Weyl scalars, (9) |
+| $\tilde{Ξ}_{\mathrm{sp},ABCD}$ | self-dual Weyl spinor in $\mathrm{sym}^4 S$ |
 | $A,\theta$ | boost and spin parameters of the tetrad rotation |
 | $z$ | complex parameter of a null rotation |
 

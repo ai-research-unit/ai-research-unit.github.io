@@ -4,11 +4,11 @@
 
 The reduced biquaternion algebra is the commutative algebra
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 of dimension four over $\mathbb{R}$ and two over $\mathbb{C}$. This article fixes the **space**: the basis, the defining relations, the two idempotents and the isomorphism with the direct product of two copies of the complex field. It is the entry point of the category, and every later article reads its elements in the notation fixed here.
 
-The glyph $\mathbb{B}^{\mathrm{red}}$ and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are fixed in *Algebra and Element Conventions*, §*The Elements and their Coefficients*: a reduced biquaternion is written with an upper-case letter, with the breve and **no tilde**, with two complex coordinates, because its algebra has no quaternionic factor. The algebra is also the **tessarines** of Cockle, the **double-complex numbers** and the **commutative hypercomplex** algebra of the engineering literature; it is the complexification of the split-complex numbers, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}$, and the split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ is its quaternionic companion.
+The glyph $\mathbb{B}_{\mathrm{red}}$ and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are fixed in *Algebra and Element Conventions*, §*The Elements and their Coefficients*: a reduced biquaternion is written with an upper-case letter, with the breve and **no tilde**, with two complex coordinates, because its algebra has no quaternionic factor. The algebra is also the **tessarines** of Cockle, the **double-complex numbers** and the **commutative hypercomplex** algebra of the engineering literature; it is the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}$, and the split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is its quaternionic companion.
 
 Three warnings are stated at once and repeated wherever they bear on a result. The algebra is **commutative and associative**, so it is not a matrix algebra and not a quaternion algebra; it **has zero divisors**, so it is not a field and not a division algebra, and an element is invertible exactly when a single complex number, its reduced norm, is nonzero; and the **algebraic norm is an element of the algebra**, while the **topological norm is a positive real**. The two are different objects and are never conflated (*Norm and Invertibility in the Algebra of the Reduced Biquaternions*).
 
@@ -101,7 +101,7 @@ so the product is carried by two independent copies of the complex multiplicatio
 **Theorem (the component map).** The map
 
 $$
-\varphi:\mathbb{B}^{\mathrm{red}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
+\varphi:\mathbb{B}_{\mathrm{red}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
 \varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},\;Q_{\blacktriangle}-Q_{\blacktriangledown}),
 $$
 
@@ -113,7 +113,7 @@ $\varphi^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.
 **Corollary (the algebra is a direct product of two fields).** The reduced biquaternion algebra is the direct product of the fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$,
 
 $$
-\boxed{\; \mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_- \;},
+\boxed{\; \mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_- \;},
 $$
 
 each factor being a field isomorphic to $\mathbb{C}$, and the two projections are the idempotent coordinates.
@@ -138,9 +138,9 @@ The two conditions $Q_{+}=0$ and $Q_{-}=0$ are the two equations $Q_{\blacktrian
 
 The space stands in a family, and the comparisons are read from *Algebra and Element Conventions*.
 
-- The **split-complex numbers** $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^{2}-1)$ are the same algebra over the reals, $\mathbb{C}^{\mathrm{spl}}=\{a+bj\}$ with $j^{2}=1$; the reduced biquaternion algebra is their complexification, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}$, obtained by letting the real coefficients $a,a'$ become complex.
+- The **split-complex numbers** $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^{2}-1)$ are the same algebra over the reals, $\mathbb{C}_{\mathrm{spl}}=\{a+bj\}$ with $j^{2}=1$; the reduced biquaternion algebra is their complexification, $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}_{\mathrm{spl}}$, obtained by letting the real coefficients $a,a'$ become complex.
 - The **biquaternions** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ replace the hyperbolic unit $j$ by three quaternion units, so the space is four-dimensional over $\mathbb{C}$ and **non-commutative**; the reduced biquaternion algebra is the commutative two-parameter system obtained when the three quaternion units collapse to the single hyperbolic unit $j$.
-- The **split-biquaternions** $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ replace the complex coefficients by split-complex ones, so the space is four-dimensional over $\mathbb{C}^{\mathrm{spl}}$; the reduced biquaternion algebra is its commutative companion, with $\mathbb{H}$ replaced by $\mathbb{C}$.
+- The **split-biquaternions** $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ replace the complex coefficients by split-complex ones, so the space is four-dimensional over $\mathbb{C}_{\mathrm{spl}}$; the reduced biquaternion algebra is its commutative companion, with $\mathbb{H}$ replaced by $\mathbb{C}$.
 
 The algebra is associative and commutative throughout; it is **not** the algebra of a division structure, because of the two idempotent lines, and it is **not** the algebra of a quadratic space with a unique conjugation, because it carries two commuting conjugations, the bar and the tessarine sign (*The Two Involutions and the Group of Involutions*).
 
@@ -158,19 +158,19 @@ The three names denote one set with one product, and the corpus uses the first f
 
 The reduced biquaternion algebra is
 $$
-\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
-the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, its scalar part $Q_{\blacktriangle}$ and its $j$-part $jQ_{\blacktriangledown}$; the glyph $\mathbb{B}^{\mathrm{red}}$ and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are those of *Algebra and Element Conventions*. The algebra contains the two complementary idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$, and every element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$.
+the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$, its scalar part $Q_{\blacktriangle}$ and its $j$-part $jQ_{\blacktriangledown}$; the glyph $\mathbb{B}_{\mathrm{red}}$ and the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ are those of *Algebra and Element Conventions*. The algebra contains the two complementary idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$, and every element is $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$.
 
 The **component map** $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is **commutative and associative**, it **has zero divisors** — every element of $\mathbb{C}\Pi_+$ annihilates every element of $\mathbb{C}\Pi_-$ — and it is **not a field and not a division algebra**: an element is a unit exactly when both idempotent coordinates $Q_{+}$ and $Q_{-}$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$.
 
-The algebra is the complexification of the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ and the commutative companion of the split-biquaternions $\mathbb{B}^{\mathrm{spl}}$; it is the **tessarines** of Cockle and the **double-complex** or **commutative hypercomplex** algebra of the modern literature. The algebraic norm of a product (an element of the algebra) and the topological norm (a positive real) are distinct objects, and the warning is repeated in every article where it bears.
+The algebra is the complexification of the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ and the commutative companion of the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$; it is the **tessarines** of Cockle and the **double-complex** or **commutative hypercomplex** algebra of the modern literature. The algebraic norm of a product (an element of the algebra) and the topological norm (a positive real) are distinct objects, and the warning is repeated in every article where it bears.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra, equivalently the tessarines or the double-complex numbers |
+| $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra, equivalently the tessarines or the double-complex numbers |
 | $1,i,j,ij$ | the basis, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$ |
 | $ij$ | the second square root of $-1$, $(ij)^{2}=-1$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a general element, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex |
@@ -178,22 +178,22 @@ The algebra is the complexification of the split-complex numbers $\mathbb{C}^{\m
 | $q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}$ | the four real coordinates of $\breve Q$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two complementary idempotents |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the idempotent coordinates of $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |
-| $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ | the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ |
+| $\varphi(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ | the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ |
 | $\mathbb{C}\Pi_+,\mathbb{C}\Pi_-$ | the two idempotent lines, the components of the direct product |
 | $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | the reduced norm, the criterion of invertibility |
-| $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternions, the quaternionic companion |
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex numbers, the real companion |
+| $\mathbb{B}_{\mathrm{spl}}=\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternions, the quaternionic companion |
+| $\mathbb{C}_{\mathrm{spl}}$ | the split-complex numbers, the real companion |
 
 ## Further Reading
 
-- [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Elements and their Coefficients*, for the glyph $\mathbb{B}^{\mathrm{red}}$, the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and the idempotents $\Pi_{\pm}$.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Elements and their Coefficients*, for the glyph $\mathbb{B}_{\mathrm{red}}$, the element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and the idempotents $\Pi_{\pm}$.
 - [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), below this article in this category, for the two readings of the space and the change of scalars.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), below this article, for the bar, the tessarine sign, the star and the flat.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), below this article, for the four general products and the forms and norms they carry.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
-- [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{C}^{\mathrm{spl}}$, the same algebra over $\mathbb{R}$.
+- [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{C}_{\mathrm{spl}}$, the same algebra over $\mathbb{R}$.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
-- [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the split complex companion $\mathbb{B}^{\mathrm{spl}}$.
+- [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the split complex companion $\mathbb{B}_{\mathrm{spl}}$.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - James Cockle, "On a new imaginary in algebra", *Philosophical Magazine* **34** (1849) 37–47, for the tessarines.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra of the engineering literature.

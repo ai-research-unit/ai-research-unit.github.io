@@ -142,10 +142,10 @@ built from the equivariant Chern classes of the $G$-bundles and the Chern charac
 **Theorem.** For a compact connected Lie group $G$ acting on $X$, the equivariant Chern character is an isomorphism after tensoring with $\mathbb{Q}$ onto the Weyl-invariant part of the Borel cohomology,
 
 $$
-\mathrm{ch}_G : K_G^0(X)\otimes\mathbb{Q} \;\xrightarrow{\ \cong\ }\; H_G^{\mathrm{even}}(X;\mathbb{Q})^{W},
+\mathrm{ch}_G : K_G^0(X)\otimes\mathbb{Q} \;\xrightarrow{\ \cong\ }\; H_{\mathrm{even},G}(X;\mathbb{Q})^{W},
 $$
 
-with $W$ the Weyl group of $G$; for the torus $W$ acts trivially and the Chern character is the isomorphism $K_T^0(X)\otimes\mathbb{Q}\cong H_T^{\mathrm{even}}(X;\mathbb{Q})$. The theorem is the equivariant refinement of the Chern character isomorphism of *Topological K-Theory* and the bridge between the equivariant $K$-theory of this article and the equivariant cohomology of *Equivariant Cohomology*.
+with $W$ the Weyl group of $G$; for the torus $W$ acts trivially and the Chern character is the isomorphism $K_T^0(X)\otimes\mathbb{Q}\cong H_{\mathrm{even},T}(X;\mathbb{Q})$. The theorem is the equivariant refinement of the Chern character isomorphism of *Topological K-Theory* and the bridge between the equivariant $K$-theory of this article and the equivariant cohomology of *Equivariant Cohomology*.
 
 *Proof.* The ordinary Chern character is a rational isomorphism, and the equivariance restricts it to the invariants under the action of the Weyl group on the Borel cohomology; the statement is quoted, and it is the equivariant form of the Chern character theorem.
 

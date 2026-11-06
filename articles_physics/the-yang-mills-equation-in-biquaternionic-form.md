@@ -54,11 +54,11 @@ $$
 It is the unique first-order operator whose action on $\tilde{Q}$ is the commutator of the covariant derivative operator with multiplication by $\tilde{Q}$. Recomputing that commutator directly,
 
 $$
-[D_\lambda, \tilde{Q}]\tilde{Ξ}^{\mathrm{sp}} = D_\lambda(\tilde{Q}\tilde{Ξ}^{\mathrm{sp}}) - \tilde{Q}(D_\lambda\tilde{Ξ}^{\mathrm{sp}})
-= (\partial/\partial R_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}])\tilde{Ξ}^{\mathrm{sp}},
+[D_\lambda, \tilde{Q}]\tilde{Ξ}_{\mathrm{sp}} = D_\lambda(\tilde{Q}\tilde{Ξ}_{\mathrm{sp}}) - \tilde{Q}(D_\lambda\tilde{Ξ}_{\mathrm{sp}})
+= (\partial/\partial R_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}])\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-for every $\tilde{Ξ}^{\mathrm{sp}}$, so that as operators
+for every $\tilde{Ξ}_{\mathrm{sp}}$, so that as operators
 
 $$
 [D_\lambda, \tilde{Q}] = D_\lambda \tilde{Q},
@@ -102,7 +102,7 @@ is the Yang–Mills equation, and the two terms of its expansion are the whole o
 
 The two slots of the index structure are fixed. The derivative that acts is the one whose index is contracted, and it must be the same index that labels the connection inside the commutator; and the curvature is contracted in its first index by that derivative. Writing $[\mathcal{A}_\nu,F_{\mu\nu}]$ (connection index equal to the free index), or $[\mathcal{A}_\mu,F_{\nu\mu}]$ (the two curvature slots exchanged), or reversing the sign of the commutator term, each destroys the conservation law derived in the next section. This was checked directly on a generic non-commuting connection: the correct placement gives $\sum_\nu D_\nu(\sum_\mu D_\mu F_{\mu\nu}) = 0$ to $3\times10^{-15}$, while the three alternatives and the ordinary divergence give residuals of order $10$ — order unity on the same field. The reader who is unsure of a sign convention should repeat that one computation rather than consult memory.
 
-**Gauge covariance.** The equation is covariant without any gauge being chosen. With $F_{2,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D_{2,\mu}(\tilde U\tilde{Ξ}^{\mathrm{sp}}) = \tilde U D_\mu\tilde{Ξ}^{\mathrm{sp}}$, so the current transforms in the adjoint,
+**Gauge covariance.** The equation is covariant without any gauge being chosen. With $F_{2,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ and the transformation of the connection, the covariant derivative satisfies $D_{2,\mu}(\tilde U\tilde{Ξ}_{\mathrm{sp}}) = \tilde U D_\mu\tilde{Ξ}_{\mathrm{sp}}$, so the current transforms in the adjoint,
 
 $$
 J_{2,\nu} = \tilde U J_\nu \tilde U^{-1},
@@ -245,7 +245,7 @@ $$
 N_{a0}=A_a, \qquad N_{ab}=\delta_{ab}A_0-i\sum_c\varepsilon_{abc}A_c .
 $$
 
-Its strength $L_{\mu\nu}=\tfrac12\left(\partial/\partial R_\mu\,N_\nu-\partial/\partial R_\nu\,N_\mu\right)-[N_\mu,N_\nu]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\sum_\nu\partial/\partial R_\nu L_{\mu\nu}=\sum_\nu[N_\nu,L_{\mu\nu}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F^{\mathrm{em}}_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$ and the trace-free $L_{\mu\nu}$, and $\det \mathrm{Ric}_{\mu\nu}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L_{a\mu\nu})^2\propto(F^{\mathrm{em}}_{\mu\nu})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\mu\nu}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
+Its strength $L_{\mu\nu}=\tfrac12\left(\partial/\partial R_\mu\,N_\nu-\partial/\partial R_\nu\,N_\mu\right)-[N_\mu,N_\nu]$ is self-dual on the solutions of the programme's primary equation, and the Bianchi identity then gives the Yang–Mills equation $\sum_\nu\partial/\partial R_\nu L_{\mu\nu}=\sum_\nu[N_\nu,L_{\mu\nu}]$. The abelian–non-abelian link is a determinant: the curvature splits into a trace part proportional to the electromagnetic field strength $F_{\mathrm{em},\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$ and the trace-free $L_{\mu\nu}$, and $\det \mathrm{Ric}_{\mu\nu}=0$ — which holds because the non-trivial spinor lies in its kernel — makes the electromagnetic field strength the **modulus of the triplet**, $\sum_a(L_{a\mu\nu})^2\propto(F_{\mathrm{em},\mu\nu})^2$ (the constant is convention-dependent and is not reconciled; the superscript marks the abelian quantity, to be read apart from this article's $F_{\mu\nu}$). Here the Yang–Mills field has **no independent existence**, being a function of the electromagnetic potential, which is a different relation between the two fields from any construction in this article. It is a claim of that programme, conditional on its nonlinear primary equation, recorded there and not adopted here.
 
 ## A Biwave Equation with a Vector Structural Coefficient
 
@@ -273,11 +273,11 @@ $$
 so each component of $B$ solves a Klein–Gordon–Fock-type equation whose mass is the norm $(\vec F,\vec F)$ of the coefficient, plus one first-order directional term. *The Klein–Gordon Equation in Biquaternionic Form* treats that operator and the sense in which the vector coefficient makes it factor into first-order operators, which is the point of contrast with its scalar-coefficient case. The inhomogeneous equation is solved by convolution with the fundamental solution
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\left((1-a)\,\delta(\tau-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|) + a\,\delta(\tau+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)\right) + \tilde{Ξ}^{\mathrm{sp}0}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\tilde{Ξ}_{\mathrm{sp}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\left((1-a)\,\delta(\tau-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|) + a\,\delta(\tau+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)\right) + \tilde{Ξ}_{\mathrm{sp}}^0(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad a \in \mathbb{C},
 $$
 
-with $\tilde{Ξ}^{\mathrm{sp}0}$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\tilde{Ξ}^{\mathrm{sp}} * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
+with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, the constant $a$ choosing the branch. The published form of the solution is $B = (\nabla^- - \vec F)(\tilde{Ξ}_{\mathrm{sp}} * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
 
 **The characteristic surface, by case.** The homogeneous equation $\nabla^+ B + \vec F\circ B = 0$ has plane-wave solutions supported on
 
@@ -304,18 +304,18 @@ with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \
 **The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\vec F$ the compensated operator satisfies the exact identity
 
 $$
-\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\xi^{\mathrm{scl}}\right)
-= \exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\left(\Delta + \omega^2\right)\xi^{\mathrm{scl}} ,
+\left(\Delta + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\xi_{\mathrm{scl}}\right)
+= \exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\left(\Delta + \omega^2\right)\xi_{\mathrm{scl}} ,
 $$
 
 and it holds for the **upper** sign alone: checked on random complex coefficients and random smooth amplitudes, the residual is $1.6\times10^{-6}$ at a finite-difference step of $3\times10^{-4}$ for the upper sign and $O(50)$ for the lower. The directional term is therefore not obstinate — it is removed by the weight — and the complex amplitude of the stationary solution solves the ordinary Helmholtz equation. The kernel is the Helmholtz Green function times that weight,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_\omega(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\,\frac{\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}\left(a\,\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\,\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|)\right),
+\tilde{Ξ}_{\mathrm{sp},\omega}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\,\frac{\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}\left(a\,\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\,\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|)\right),
 \qquad a \in \mathbb{C},
 $$
 
-the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\nabla^{\mp}_{\omega} - \vec F)(\tilde{Ξ}^{\mathrm{sp}}_\omega * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\tilde{Ξ}^{\mathrm{sp}}_\omega$ with the sign its own Helmholtz formula $\xi = -\frac{1}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}(a\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|))$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta + \omega^2)\xi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
+the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\nabla^{\mp}_{\omega} - \vec F)(\tilde{Ξ}_{\mathrm{sp},\omega} * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\tilde{Ξ}_{\mathrm{sp},\omega}$ with the sign its own Helmholtz formula $\xi = -\frac{1}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}(a\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|))$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta + \omega^2)\xi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
 
 ## Open Questions
 
@@ -398,9 +398,9 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\vec F = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
 | $\nabla^\pm = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
-| $\tilde{Ξ}^{\mathrm{sp}}$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
+| $\tilde{Ξ}_{\mathrm{sp}}$, $K_F$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
 | $\nabla^\pm_\omega = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
-| $\tilde{Ξ}^{\mathrm{sp}}_\omega$, $\xi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$); the source's Helmholtz Green function |
+| $\tilde{Ξ}_{\mathrm{sp},\omega}$, $\xi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$); the source's Helmholtz Green function |
 | $T_\omega$ | Solution of the homogeneous stationary equation |
 
 ## Further Reading

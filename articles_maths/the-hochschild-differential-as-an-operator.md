@@ -6,7 +6,7 @@ A cochain complex is a graded module with an operator of degree one whose square
 
 This article studies the differential as an operator. It fixes the cochain module, defines $b$ on it, proves $b^2 = 0$ by a cancellation of the twelve terms, and reads the consequence — the cocycles, the coboundaries and the cohomology — as the kernel, the image and the quotient of the operator. The cohomology itself, its identification with the derived functors of the invariants, its low-dimensional interpretations and its products are the subject of *Hochschild Homology*, and the general theory of a cochain complex, its differential and its cohomology belongs to *Homological Algebra*; the present article is the operator layer of the first and cites the second for the ambient theory.
 
-Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.
+Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.
 
 ## The Cochain Module
 
@@ -174,11 +174,11 @@ is zero.
 
 The differential of the cochain complex is the transpose of the boundary of the chain complex, and the two readings of the algebra are dual.
 
-**Proposition.** Let $B_\bullet(A)$ be the bar resolution of *Hochschild Homology*, with boundary $b^{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$. Then the Hochschild differential on the cochains is the transpose of the chain boundary under the pairing
+**Proposition.** Let $B_\bullet(A)$ be the bar resolution of *Hochschild Homology*, with boundary $b_{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$. Then the Hochschild differential on the cochains is the transpose of the chain boundary under the pairing
 $\operatorname{Hom}_k(B_n(A), M) \times B_n(A) \to M$,
 
 $$
-\langle b f, x \rangle = \langle f, b^{\mathrm{chain}} x \rangle .
+\langle b f, x \rangle = \langle f, b_{\mathrm{chain}} x \rangle .
 $$
 
 In particular the cochain differential is determined by the chain boundary and vice versa, and the cochain complex is the dual of the chain complex.
@@ -232,14 +232,14 @@ In low degrees it is $b m = (a \mapsto am - ma)$ on $M$, the Leibniz operator $b
 | $k$ | the commutative base ring |
 | $A$ | a unital associative $k$-algebra |
 | $M$ | an $A$-bimodule |
-| $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$ | the enveloping algebra |
+| $A^{\mathrm{e}} = A \otimes_k A_{\mathrm{opp}}$ | the enveloping algebra |
 | $C^n(A,M) = \operatorname{Hom}_k(A^{\otimes n},M)$ | the $n$-cochains |
 | $C^{\bullet}(A,M)$ | the graded cochain module |
 | $b = b_n : C^n \to C^{n+1}$ | the Hochschild differential |
 | $Z^n = \ker b_n$ | the $n$-cocycles |
 | $B^n = \operatorname{im} b_{n-1}$ | the $n$-coboundaries |
 | $H^n(A,M) = Z^n/B^n$ | the Hochschild cohomology |
-| $b^{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$ | the chain boundary of the bar resolution |
+| $b_{\mathrm{chain}} : B_n(A) \to B_{n-1}(A)$ | the chain boundary of the bar resolution |
 | $\operatorname{Der}_k(A,M)$, $\operatorname{InnDer}_k(A,M)$ | derivations and inner derivations |
 
 ## Further Reading

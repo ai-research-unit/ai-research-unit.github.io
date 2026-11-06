@@ -7,13 +7,13 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 Two actions are compared throughout. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) reads the four-vector as an element of the anti-Hermitian sector $\mathbb{M}_-$ and the Lorentz group as acting on it by the **Hermitian sandwich**,
 
 $$
-\tilde Q\;\longmapsto\;\tilde U^{\mathrm{lor}}\,\tilde Q\,\tilde U^{\mathrm{lor}}{}^{*}.
+\tilde Q\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
 The action of this article is **one-sided**: the group multiplies the field on the left,
 
 $$
-\tilde X\;\longmapsto\;\tilde U^{\mathrm{lor}}\,\tilde X .
+\tilde X\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde X .
 $$
 
 The difference is not a matter of notation. The element $-e_t$ acts trivially by the sandwich on $\mathbb{M}_-$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
@@ -51,14 +51,14 @@ The isomorphism is named once, for those two facts, and it is not used. This art
 **The conjugate action.** On the conjugate module the group acts through the coefficient bar,
 
 $$
-\tilde X\;\longmapsto\;\bar{\tilde U}^{\mathrm{lor}}\,\tilde X .
+\tilde X\;\longmapsto\;\bar{\tilde U}_{\mathrm{lor}}\,\tilde X .
 $$
 
-The bar is an automorphism of the algebra, it conjugates the norm, and on an element of norm one its value is again of norm one; the assignment $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ is therefore an automorphism of the group, and the action is a genuine representation. The bar is the coefficient conjugation of *Algebra and Element Conventions*, and it is not the Hermitian conjugation: the star composes the bar with the natural sign.
+The bar is an automorphism of the algebra, it conjugates the norm, and on an element of norm one its value is again of norm one; the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ is therefore an automorphism of the group, and the action is a genuine representation. The bar is the coefficient conjugation of *Algebra and Element Conventions*, and it is not the Hermitian conjugation: the star composes the bar with the natural sign.
 
-**The two halves are not the two values.** The field is one element $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$, and its two parts are the two values. Both parts carry the same action of the group: a left multiplication multiplies both by $\tilde U^{\mathrm{lor}}$, so the two parts are two copies of one module. The inequivalence of the two labels belongs to the pair of modules $(S,\bar S)$ and not to the two values of one element.
+**The two halves are not the two values.** The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, and its two parts are the two values. Both parts carry the same action of the group: a left multiplication multiplies both by $\tilde U_{\mathrm{lor}}$, so the two parts are two copies of one module. The inequivalence of the two labels belongs to the pair of modules $(S,\bar S)$ and not to the two values of one element.
 
-**The algebra cannot see the difference.** The algebra is simple and has one simple module, so both values are copies of it; a difference between the two halves is not a property of the algebra and no subspace of the algebra carries it. The conjugate module is not a module for the algebra at all: the assignment $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ conjugates the scalar $i$, so it is not $\mathbb{C}$-linear in the algebra element, and the action is not the restriction of a $\mathbb{C}$-linear action of the algebra.
+**The algebra cannot see the difference.** The algebra is simple and has one simple module, so both values are copies of it; a difference between the two halves is not a property of the algebra and no subspace of the algebra carries it. The conjugate module is not a module for the algebra at all: the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ conjugates the scalar $i$, so it is not $\mathbb{C}$-linear in the algebra element, and the action is not the restriction of a $\mathbb{C}$-linear action of the algebra.
 
 **The four-dimensional module of the group.** The direct sum $S\oplus\bar S$ is a module for the group, of complex dimension four, and its two summands carry the two labels. It is not a module for the algebra. The field of this article also carries four complex numbers, but it carries them as one element of $\mathbb{B}$; the two objects have the same dimension and different structure.
 
@@ -76,7 +76,7 @@ The subgroups relevant to the series sit inside it as follows.
 |---|---|---|
 | Pure boost $\tilde U_{\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{M}_+$ |
 | Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{H}_{\mathbb{B}}$ |
-| General $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
+| General $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
 
 A boost is Hermitian and satisfies $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$; boosts do not form a subgroup, because the product of two non-collinear boosts is a boost and a rotation. A rotation is a real quaternion, and the rotations form the subgroup $SU(2)=SL(2,\mathbb{C})\cap U(2)$.
 
@@ -84,7 +84,7 @@ A boost is Hermitian and satisfies $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b
 
 $$
 \pi:\;SL(2,\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad
-\pi(\tilde U^{\mathrm{lor}}):\;\tilde Q\longmapsto\tilde U^{\mathrm{lor}}\,\tilde Q\,\tilde U^{\mathrm{lor}}{}^{*},\qquad \tilde Q\in\mathbb{M}_- .
+\pi(\tilde U_{\mathrm{lor}}):\;\tilde Q\longmapsto\tilde U_{\mathrm{lor}}\,\tilde Q\,\tilde U_{\mathrm{lor}}{}^{*},\qquad \tilde Q\in\mathbb{M}_- .
 $$
 
 It is well defined, because the Hermitian conjugate of an anti-Hermitian element is anti-Hermitian; it preserves the quaternionic norm; and it is a homomorphism, because the star reverses the order. Its kernel is
@@ -93,7 +93,7 @@ $$
 \ker\pi=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
 
-since $-e_t$ is central and the two signs cancel in the sandwich, $(-\tilde U^{\mathrm{lor}})\tilde Q(-\tilde U^{\mathrm{lor}})^{*}=\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$ for every $\tilde Q$. Hence $\pi$ is two-to-one onto the proper orthochronous Lorentz group, and $SL(2,\mathbb{C})$ is its double cover.
+since $-e_t$ is central and the two signs cancel in the sandwich, $(-\tilde U_{\mathrm{lor}})\tilde Q(-\tilde U_{\mathrm{lor}})^{*}=\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ for every $\tilde Q$. Hence $\pi$ is two-to-one onto the proper orthochronous Lorentz group, and $SL(2,\mathbb{C})$ is its double cover.
 
 **The one-sided action is faithful.** On the module the same element acts by
 
@@ -101,7 +101,7 @@ $$
 (-e_t)\tilde X=-\tilde X ,
 $$
 
-so $\tilde U^{\mathrm{lor}}$ and $-\tilde U^{\mathrm{lor}}$ act differently on every field. The defining representation therefore does not descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. That is the exact sense in which the one-sided action and the sandwich differ by the double cover.
+so $\tilde U_{\mathrm{lor}}$ and $-\tilde U_{\mathrm{lor}}$ act differently on every field. The defining representation therefore does not descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. That is the exact sense in which the one-sided action and the sandwich differ by the double cover.
 
 ## The Lorentz Action on the Module
 
@@ -110,13 +110,13 @@ so $\tilde U^{\mathrm{lor}}$ and $-\tilde U^{\mathrm{lor}}$ act differently on e
 The group acts on the module by left multiplication:
 
 $$
-\boxed{\;\tilde X\;\longmapsto\;\tilde U^{\mathrm{lor}}\,\tilde X,\qquad \tilde U^{\mathrm{lor}}\in SL(2,\mathbb{C}),\quad \tilde X\in\mathbb{B}\;}
+\boxed{\;\tilde X\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde X,\qquad \tilde U_{\mathrm{lor}}\in SL(2,\mathbb{C}),\quad \tilde X\in\mathbb{B}\;}
 $$
 
 The action is $\mathbb{C}$-linear in the field, it preserves each value, and it is a group action:
 
 $$
-\tilde U^{\mathrm{lor}}_{2}\bigl(\tilde U^{\mathrm{lor}}_{1}\tilde X\bigr)=\bigl(\tilde U^{\mathrm{lor}}_{2}\tilde U^{\mathrm{lor}}_{1}\bigr)\tilde X .
+\tilde U_{\mathrm{lor},2}\bigl(\tilde U_{\mathrm{lor},1}\tilde X\bigr)=\bigl(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1}\bigr)\tilde X .
 $$
 
 No two-sided action appears. That is the defining feature of the module: one factor of the group element multiplies the field, and it multiplies it on the left. On the conjugate module the same group acts through the bar, and the two actions are the two labels of §*The Two Halves*.
@@ -230,7 +230,7 @@ For two elements of one value, the Hermitian part of their product lands in the 
 $$
 \tilde R_\psi=\tfrac12\bigl(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*}\bigr)\in\mathbb{M}_+,
 \qquad
-\tilde R_\psi\longmapsto\tilde U^{\mathrm{lor}}\tilde R_\psi\tilde U^{\mathrm{lor}}{}^{*}.
+\tilde R_\psi\longmapsto\tilde U_{\mathrm{lor}}\tilde R_\psi\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
 The element $\tilde R_\psi$ is Hermitian for every pair, and the sandwich carries it to the sandwich of the transformed pair, so the map is equivariant under the whole group. It is the algebraic form of the map from a pair of fields to a four-vector, and the four-vector is the element $i\tilde R_\psi$ of $\mathbb{M}_-$.
@@ -258,24 +258,24 @@ The preceding sections separate two actions that are often conflated. The compar
 | Question | One-sided action | Hermitian sandwich |
 |---|---|---|
 | Object acted on | $\tilde X\in\mathbb{B}$ | $\tilde Q\in\mathbb{M}_-$ |
-| Action | $\tilde X\mapsto\tilde U^{\mathrm{lor}}\tilde X$ | $\tilde Q\mapsto\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$ |
-| Factors of $\tilde U^{\mathrm{lor}}$ | one | two |
+| Action | $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ |
+| Factors of $\tilde U_{\mathrm{lor}}$ | one | two |
 | Action of $-e_t$ | $-\mathrm{id}$ | $+\mathrm{id}$ |
 | Kernel | $\{e_t\}$ | $\{\pm e_t\}$ |
 | Image group | $SL(2,\mathbb{C})$ | $SO^{+}(1,3)$ |
 | Descends to $SO^{+}(1,3)$ | no | yes |
 
-The entries are not a list of conventions; they are the content of the double cover. The elements $\tilde U^{\mathrm{lor}}$ and $-\tilde U^{\mathrm{lor}}$ describe the same Lorentz transformation of every four-vector, and opposite transformations of every field. A representation of $SO^{+}(1,3)$ cannot see the sign; a representation of $SL(2,\mathbb{C})$ can.
+The entries are not a list of conventions; they are the content of the double cover. The elements $\tilde U_{\mathrm{lor}}$ and $-\tilde U_{\mathrm{lor}}$ describe the same Lorentz transformation of every four-vector, and opposite transformations of every field. A representation of $SO^{+}(1,3)$ cannot see the sign; a representation of $SL(2,\mathbb{C})$ can.
 
-A common mistake is to "fix" the one-sided action by composing it with the sandwich, in the hope of making it two-sided. That composition changes the representation: it multiplies the number of factors by two, and it carries the field into the algebra. The field transforms in $(\tfrac12,0)$; an element $\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$ transforms in $(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12)$, which is the complexified vector representation, and the four-vector is its Hermitian slice. The one-sided action is therefore not a vector action in disguise; it is the fundamental action from which the vector action is built by tensor product.
+A common mistake is to "fix" the one-sided action by composing it with the sandwich, in the hope of making it two-sided. That composition changes the representation: it multiplies the number of factors by two, and it carries the field into the algebra. The field transforms in $(\tfrac12,0)$; an element $\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ transforms in $(\tfrac12,0)\otimes(0,\tfrac12)=(\tfrac12,\tfrac12)$, which is the complexified vector representation, and the four-vector is its Hermitian slice. The one-sided action is therefore not a vector action in disguise; it is the fundamental action from which the vector action is built by tensor product.
 
 The composition laws make the same point. For elements of norm one,
 
 $$
-\tilde U^{\mathrm{lor}}_{2}\bigl(\tilde U^{\mathrm{lor}}_{1}\tilde X\bigr)=\bigl(\tilde U^{\mathrm{lor}}_{2}\tilde U^{\mathrm{lor}}_{1}\bigr)\tilde X,
+\tilde U_{\mathrm{lor},2}\bigl(\tilde U_{\mathrm{lor},1}\tilde X\bigr)=\bigl(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1}\bigr)\tilde X,
 \qquad
-\tilde U^{\mathrm{lor}}_{2}\bigl(\tilde U^{\mathrm{lor}}_{1}\tilde Q\tilde U^{\mathrm{lor}}_{1}{}^{*}\bigr)\tilde U^{\mathrm{lor}}_{2}{}^{*}
-=\bigl(\tilde U^{\mathrm{lor}}_{2}\tilde U^{\mathrm{lor}}_{1}\bigr)\tilde Q\bigl(\tilde U^{\mathrm{lor}}_{2}\tilde U^{\mathrm{lor}}_{1}\bigr)^{*}.
+\tilde U_{\mathrm{lor},2}\bigl(\tilde U_{\mathrm{lor},1}\tilde Q\tilde U_{\mathrm{lor},1}{}^{*}\bigr)\tilde U_{\mathrm{lor},2}{}^{*}
+=\bigl(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1}\bigr)\tilde Q\bigl(\tilde U_{\mathrm{lor},2}\tilde U_{\mathrm{lor},1}\bigr)^{*}.
 $$
 
 Both are group actions; they are actions on different objects, and neither reduces to the other.
@@ -299,18 +299,18 @@ The one-sided action is not a device of this article. It is the multiplication o
 2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
 
     $$
-    \tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+    \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
     \qquad
-    \tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R,
+    \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
     $$
 
-    in which the gradient acts by left multiplication on the field $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,
+    in which the gradient acts by left multiplication on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,
 
     $$
     \mathcal{N}F=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
     $$
 
-    in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}^{\mathrm{sp}}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication.
+    in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication.
 
 3. **The alternating pairing within a value.** The quaternionic form vanishes on each value and pairs the two values; an alternating scalar built from two fields of one value, the $\varepsilon$ of the older display, is not among the four forms of *Product and Form Conventions* and is not constructed here. Its expression in elements of the algebra is a matter of convention.
 
@@ -329,42 +329,42 @@ The gamma matrices are a **frame** of the same cell algebra, written as $4\times
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
+\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\qquad
+\gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\qquad
+\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-Each is a one-cell product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
+Each is a one-cell product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
 
-A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
+A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
 
 $$
-\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0\gamma_1=i^2L_{\mathrm{pau},e_t\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0\gamma_1=i^2L_{\mathrm{axf},e_t\vec e_x}R_{\mathrm{axf},\vec e_y\vec e_x}=-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y\vec e_x}=L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z},
 $$
 
 and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality cell.
 
 The dictionary is complex-linear: the five cells are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -372,9 +372,9 @@ The module is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$. It 
 
 - **The algebra is simple.** It has one simple module, of complex dimension two, and the regular module is the direct sum of two copies of it. The field of the article is an element of the algebra, and the algebra acts on it by the product $\tilde a\tilde X$.
 - **The two copies are the two values.** Every element is the sum of one part of each value, each part is of complex dimension two, and only the zero element is both. A product takes the value of its right factor, and a left multiplication keeps the value.
-- **The action is one-sided.** $\tilde X\mapsto\tilde U^{\mathrm{lor}}\tilde X$; the four-vector action is the sandwich $\tilde Q\mapsto\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$.
+- **The action is one-sided.** $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$; the four-vector action is the sandwich $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$.
 - **The double cover is the kernel.** $\ker\pi=\{\pm e_t\}$ acts trivially on $\mathbb{M}_-$ and as $-\mathrm{id}$ on the module; the one-sided action is faithful, the vector action is not.
-- **The two halves are $S$ and $\bar S$.** They are the two labels $(\tfrac12,0)$ and $(0,\tfrac12)$, the second carrying the action of $\bar{\tilde U}^{\mathrm{lor}}$. They are not the two values of one element: the algebra is simple, both values are copies of $S$, and the conjugate module is not a module for the algebra.
+- **The two halves are $S$ and $\bar S$.** They are the two labels $(\tfrac12,0)$ and $(0,\tfrac12)$, the second carrying the action of $\bar{\tilde U}_{\mathrm{lor}}$. They are not the two values of one element: the algebra is simple, both values are copies of $S$, and the conjugate module is not a module for the algebra.
 - **The module carries four invariant forms.** The quaternionic form is invariant under the whole group and pairs one value with the other; the Hermitian form $h$ is positive definite and invariant exactly on the compact $SU(2)$; the indefinite form $[\,\cdot\,|\,\cdot\,]$ is invariant exactly on the stabiliser of a direction, the group $SU(1,1)$; and $h$ with the conjugate action on the second factor pairs the two labels.
 - **The map to the Hermitian sector.** A pair of fields gives the Hermitian element $\tfrac12(\tilde X\tilde Y^{*}+\tilde Y\tilde X^{*})$, equivariant under the sandwich, and a single field gives a null Hermitian element whose scalar part is half its Hermitian norm. The vector action is the tensor square of the one-sided action.
 
@@ -391,10 +391,10 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian sectors; material and informational |
 | $\tilde X_L,\tilde X_R$ | The two values of the subscript; $L$ is the minus value; a product takes the value of its right factor, and a left multiplication keeps it |
 | $S$, $\bar S$ | The defining module $(\tfrac12,0)$ and its conjugate $(0,\tfrac12)$ |
-| $\tilde U^{\mathrm{lor}}$ | Element of norm one, $SL(2,\mathbb{C})$ |
-| $\tilde X\mapsto\tilde U^{\mathrm{lor}}\tilde X$ | The one-sided action on the module |
-| $\tilde X\mapsto\bar{\tilde U}^{\mathrm{lor}}\tilde X$ | The conjugate action on $\bar S$ |
-| $\tilde Q\mapsto\tilde U^{\mathrm{lor}}\tilde Q\tilde U^{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{M}_-$ |
+| $\tilde U_{\mathrm{lor}}$ | Element of norm one, $SL(2,\mathbb{C})$ |
+| $\tilde X\mapsto\tilde U_{\mathrm{lor}}\tilde X$ | The one-sided action on the module |
+| $\tilde X\mapsto\bar{\tilde U}_{\mathrm{lor}}\tilde X$ | The conjugate action on $\bar S$ |
+| $\tilde Q\mapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}$ | The Hermitian sandwich on $\mathbb{M}_-$ |
 | $\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic form; the invariant bilinear form of the module |
 | $h(\tilde X,\tilde Y)=2\,\mathrm{Sc}(\tilde X^{*}\tilde Y)$ | The positive definite Hermitian form of a value; invariant on $SU(2)$ |
 | $[X\,\vert\,Y]=2\,\mathrm{Sc}(\tilde X^{*}\tilde W\tilde Y)$, $\tilde W=i\vec e_z$ | The indefinite Hermitian form of a value; invariant on the stabiliser of $\tilde W$, $SU(1,1)$ |

@@ -353,15 +353,15 @@ $$
 The **unital embedding** is
 
 $$
-\operatorname{inc}^{\mathrm{un}}_k(A)=\begin{pmatrix}A&0\\0&I_{6-k}\end{pmatrix}.
+\operatorname{inc}_{\mathrm{un},k}(A)=\begin{pmatrix}A&0\\0&I_{6-k}\end{pmatrix}.
 $$
 
-**Proposition.** $\operatorname{inc}_k$ is an injective algebra homomorphism with unit $E_k$; $\operatorname{inc}^{\mathrm{un}}_k$ is an injective unital algebra homomorphism with unit $I_6$. On the images,
+**Proposition.** $\operatorname{inc}_k$ is an injective algebra homomorphism with unit $E_k$; $\operatorname{inc}_{\mathrm{un},k}$ is an injective unital algebra homomorphism with unit $I_6$. On the images,
 
 $$
 \operatorname{tr}_{M_6}\operatorname{inc}_k(A)=\operatorname{tr}_{M_k}A,
 \qquad
-\det\operatorname{inc}^{\mathrm{un}}_k(A)=\det_{M_k}A,
+\det\operatorname{inc}_{\mathrm{un},k}(A)=\det_{M_k}A,
 \qquad
 \det\operatorname{inc}_k(A)=0\ \text{for }k<6 .
 $$
@@ -463,7 +463,7 @@ the two traceless corner tori and the relative scale. The relative scale is the 
 | $N$ | the transpose mass block $FME$ |
 | $T_p,T_{6-p}$ | the traceless corner tori, of dimensions $p-1$ and $5-p$ |
 | $t/s$ | the relative scale |
-| $\operatorname{inc}_k,\operatorname{inc}^{\mathrm{un}}_k$ | the corner and unital embeddings of $M_k$ |
+| $\operatorname{inc}_k,\operatorname{inc}_{\mathrm{un},k}$ | the corner and unital embeddings of $M_k$ |
 
 ## Further Reading
 

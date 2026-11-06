@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The algebra article defined the split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$, its basis $1, \vec e_x, \vec e_y, \vec e_z$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}^{\mathrm{spl}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the direct sum decompositions they carry.
+The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$, its basis $1, \vec e_x, \vec e_y, \vec e_z$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{spl}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the direct sum decompositions they carry.
 
-An idempotent corresponds to a projector under its multiplication, and in $\mathbb{H}^{\mathrm{spl}}$ the idempotents do four jobs at once:
+An idempotent corresponds to a projector under its multiplication, and in $\mathbb{H}_{\mathrm{spl}}$ the idempotents do four jobs at once:
 
 1. they give direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals;
 2. they are the non-scalar solutions of the quadratic equation $\tilde\pi^2 = \tilde\pi$, and they are in bijection with the roots of $+1$ in the vector part;
@@ -34,9 +34,9 @@ $$
 e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
 $$
 
-The algebra $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ is simple, hence semisimple, so the criterion applies to it, and it is the reason the idempotent and the ideal theories of this category are two views of one subject.
+The algebra $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ is simple, hence semisimple, so the criterion applies to it, and it is the reason the idempotent and the ideal theories of this category are two views of one subject.
 
-## The Standard Idempotents of $\mathbb{H}^{\mathrm{spl}}$
+## The Standard Idempotents of $\mathbb{H}_{\mathrm{spl}}$
 
 Put
 
@@ -58,7 +58,7 @@ $$
 
 and the two differ, which is the non-centrality of $\tilde\pi_{1,2}$ in the algebra; the two idempotents are the idempotents of the split-complex subalgebra $\operatorname{span}\{1, \vec e_y\}$.
 
-Neither is central: an element commuting with $\tilde\pi_1$ commutes with $\vec e_y = 2\tilde\pi_1 - 1$, and the centraliser of $\vec e_y$ in $\mathbb{H}^{\mathrm{spl}}$ is the split-complex plane $\operatorname{span}\{1, \vec e_y\}$, since $\vec e_x$ and $\vec e_z$ anticommute with $\vec e_y$. Both idempotents are primitive: if $\tilde\pi_1 = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_1$ and so lie in $\operatorname{span}\{1, \vec e_y\}$, whose only idempotents are $0, 1, \tilde\pi_1, \tilde\pi_2$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_1$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $\vec e_y$, namely $\tilde\pi_1 \vec e_y = \tilde\pi_1$ and $\tilde\pi_2 \vec e_y = -\tilde\pi_2$.
+Neither is central: an element commuting with $\tilde\pi_1$ commutes with $\vec e_y = 2\tilde\pi_1 - 1$, and the centraliser of $\vec e_y$ in $\mathbb{H}_{\mathrm{spl}}$ is the split-complex plane $\operatorname{span}\{1, \vec e_y\}$, since $\vec e_x$ and $\vec e_z$ anticommute with $\vec e_y$. Both idempotents are primitive: if $\tilde\pi_1 = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_1$ and so lie in $\operatorname{span}\{1, \vec e_y\}$, whose only idempotents are $0, 1, \tilde\pi_1, \tilde\pi_2$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_1$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $\vec e_y$, namely $\tilde\pi_1 \vec e_y = \tilde\pi_1$ and $\tilde\pi_2 \vec e_y = -\tilde\pi_2$.
 
 Left multiplication by $\vec e_x, \vec e_y, \vec e_z$ acts on $\tilde\pi_1$ as
 
@@ -66,17 +66,17 @@ $$
 \vec e_y \tilde\pi_1 = \tilde\pi_1, \qquad \vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z), \qquad \vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1,
 $$
 
-so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $\vec e_x \tilde\pi_1$, and $\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$ spans $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_2$ read $\vec e_y \tilde\pi_2 = -\tilde\pi_2$ and $\vec e_z \tilde\pi_2 = -\tfrac{1}{2}(\vec e_x - \vec e_z) = -\vec e_x \tilde\pi_2$, so $\{\tilde\pi_2, \vec e_x \tilde\pi_2\}$ spans $\mathbb{H}^{\mathrm{spl}} \tilde\pi_2$.
+so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $\vec e_x \tilde\pi_1$, and $\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$ spans $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_2$ read $\vec e_y \tilde\pi_2 = -\tilde\pi_2$ and $\vec e_z \tilde\pi_2 = -\tfrac{1}{2}(\vec e_x - \vec e_z) = -\vec e_x \tilde\pi_2$, so $\{\tilde\pi_2, \vec e_x \tilde\pi_2\}$ spans $\mathbb{H}_{\mathrm{spl}} \tilde\pi_2$.
 
 ## The Classification of the Idempotents
 
-**Theorem.** Every idempotent of $\mathbb{H}^{\mathrm{spl}}$ is either trivial ($0$ or $1$) or of the form
+**Theorem.** Every idempotent of $\mathbb{H}_{\mathrm{spl}}$ is either trivial ($0$ or $1$) or of the form
 
 $$
 \boxed{\;\tilde\pi = \tfrac{1}{2}(1 + \eta)\;},
 $$
 
-where $\eta \in V$ is a root of $+1$, i.e. $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$. There are no other idempotents in $\mathbb{H}^{\mathrm{spl}}$.
+where $\eta \in V$ is a root of $+1$, i.e. $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$. There are no other idempotents in $\mathbb{H}_{\mathrm{spl}}$.
 
 **Proof.** Write $\tilde\pi = q_t + \vec q$ with $q_t \in \mathbb{R}$ and $\vec q \in V$. Since $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector,
 
@@ -110,7 +110,7 @@ $$
 \boxed{\;\eta \longmapsto \tilde\pi(\eta), \qquad \tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)\;},
 $$
 
-is a **bijection** from the set $\{\eta \in V : \eta^2 = 1\}$ of roots of $+1$ in the vector subspace onto the set of non-scalar idempotents of $\mathbb{H}^{\mathrm{spl}}$.
+is a **bijection** from the set $\{\eta \in V : \eta^2 = 1\}$ of roots of $+1$ in the vector subspace onto the set of non-scalar idempotents of $\mathbb{H}_{\mathrm{spl}}$.
 
 **Proof.** *Well defined:* if $\eta^2 = 1$, then
 
@@ -139,26 +139,26 @@ $$
 so the pair $\{\tilde\pi, 1 - \tilde\pi\}$ gives a **direct sum decomposition** of the underlying real vector space:
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \tilde\pi\,\mathbb{H}^{\mathrm{spl}} \oplus (1 - \tilde\pi)\,\mathbb{H}^{\mathrm{spl}},
+\mathbb{H}_{\mathrm{spl}} = \tilde\pi\,\mathbb{H}_{\mathrm{spl}} \oplus (1 - \tilde\pi)\,\mathbb{H}_{\mathrm{spl}},
 $$
 
-and equally $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi \oplus \mathbb{H}^{\mathrm{spl}}(1 - \tilde\pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projectors under multiplication: the multiplication by the idempotent is the projector, its complement gives the complementary projector, and the algebra splits as a module into the image of one and the image of the other.
+and equally $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi \oplus \mathbb{H}_{\mathrm{spl}}(1 - \tilde\pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projectors under multiplication: the multiplication by the idempotent is the projector, its complement gives the complementary projector, and the algebra splits as a module into the image of one and the image of the other.
 
 For the standard pair this reads
 
 $$
-\boxed{\;\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2, \qquad
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}, \qquad
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\}\;},
+\boxed{\;\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2, \qquad
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}, \qquad
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\}\;},
 $$
 
-each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_1$ is not central, the off-diagonal product $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ does not vanish. Indeed
+each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_1$ is not central, the off-diagonal product $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ does not vanish. Indeed
 
 $$
 \tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0,
 $$
 
-so an element of the first summand times an element of the second need not lie in either, and the sum is not closed as a product of subalgebras. This is the precise sense in which a non-central idempotent gives a module splitting without giving an algebra splitting; the algebra-level decomposition of a central idempotent, in which the off-diagonal corners vanish and the sum is a product of algebras, does not occur in the simple algebra $\mathbb{H}^{\mathrm{spl}}$.
+so an element of the first summand times an element of the second need not lie in either, and the sum is not closed as a product of subalgebras. This is the precise sense in which a non-central idempotent gives a module splitting without giving an algebra splitting; the algebra-level decomposition of a central idempotent, in which the off-diagonal corners vanish and the sum is a product of algebras, does not occur in the simple algebra $\mathbb{H}_{\mathrm{spl}}$.
 
 ## Idempotents and the Zero Divisors
 
@@ -187,24 +187,24 @@ so the whole idempotent family lies on the zero divisor set $\{\tilde q : \tilde
 **Proposition.** The left ideals
 
 $$
-\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \{\tilde q \tilde\pi_1 : \tilde q \in \mathbb{H}^{\mathrm{spl}}\}, \qquad \mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \{\tilde q \tilde\pi_2 : \tilde q \in \mathbb{H}^{\mathrm{spl}}\}
+\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 = \{\tilde q \tilde\pi_1 : \tilde q \in \mathbb{H}_{\mathrm{spl}}\}, \qquad \mathbb{H}_{\mathrm{spl}} \tilde\pi_2 = \{\tilde q \tilde\pi_2 : \tilde q \in \mathbb{H}_{\mathrm{spl}}\}
 $$
 
-satisfy $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ as left $\mathbb{H}^{\mathrm{spl}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
+satisfy $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ as left $\mathbb{H}_{\mathrm{spl}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
 
-**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2) = \tilde q \tilde\pi_1 + \tilde q \tilde\pi_2$, and the intersection of the two ideals is zero because $\tilde\pi_1 \tilde\pi_2 = 0$: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. For the dimension, the reduction $\vec e_z \tilde\pi_1 = \vec e_x \tilde\pi_1$ above shows that the four general products $e_\mu \tilde\pi_1$ lie in $\operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$, and the two are independent, so $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}^{\mathrm{spl}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_1$.
+**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2) = \tilde q \tilde\pi_1 + \tilde q \tilde\pi_2$, and the intersection of the two ideals is zero because $\tilde\pi_1 \tilde\pi_2 = 0$: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. For the dimension, the reduction $\vec e_z \tilde\pi_1 = \vec e_x \tilde\pi_1$ above shows that the four general products $e_\mu \tilde\pi_1$ lie in $\operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$, and the two are independent, so $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{spl}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_1$.
 
-**Proposition.** Each minimal left ideal is a two-dimensional real vector space, and the two ideals are isomorphic to one another as left $\mathbb{H}^{\mathrm{spl}}$-modules.
+**Proposition.** Each minimal left ideal is a two-dimensional real vector space, and the two ideals are isomorphic to one another as left $\mathbb{H}_{\mathrm{spl}}$-modules.
 
-**Proof.** Every element of $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$ is uniquely $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1 \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q_2$ sends $\tilde q_1 \tilde\pi_1$ to $(\tilde q_2 \tilde q_1) \tilde\pi_1$, again an element of $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}^{\mathrm{spl}}$-modules. The same argument applies to $\tilde\pi_2$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
+**Proof.** Every element of $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$ is uniquely $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1 \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q_2$ sends $\tilde q_1 \tilde\pi_1$ to $(\tilde q_2 \tilde q_1) \tilde\pi_1$, again an element of $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{spl}}$-modules. The same argument applies to $\tilde\pi_2$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
 
-The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}^{\mathrm{spl}}$.
+The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$.
 
 ## The Dimension of the Set of Idempotents
 
 The non-scalar idempotents correspond bijectively to the roots of $+1$ in $V$, namely the level set $\{\eta \in V : \eta^2 = 1\}$, equivalently $\{N = -1\}$. That level set has real dimension $2$; the complementation $\eta \mapsto -\eta$ acts on it freely with quotient the set of **pairs** of complementary idempotents. Hence the set of non-scalar idempotents has real dimension $2$, and the set of complementary pairs has dimension $2$ as well.
 
-The trivial idempotents $0$ and $1$ are the two isolated points of the idempotent set, and they are excluded from the non-scalar family. This is the first structural difference from the biquaternion case, where the idempotents correspond to roots of $-1$ and form a set of real dimension $4$. The reason is the opposite sign: in $\mathbb{H}^{\mathrm{spl}}$ the idempotents are parametrised by the level set $\eta^2 = 1$ of the vector subspace, which is not compact, while in $\mathbb{B}$ they are parametrised by a compact set of extra parameters.
+The trivial idempotents $0$ and $1$ are the two isolated points of the idempotent set, and they are excluded from the non-scalar family. This is the first structural difference from the biquaternion case, where the idempotents correspond to roots of $-1$ and form a set of real dimension $4$. The reason is the opposite sign: in $\mathbb{H}_{\mathrm{spl}}$ the idempotents are parametrised by the level set $\eta^2 = 1$ of the vector subspace, which is not compact, while in $\mathbb{B}$ they are parametrised by a compact set of extra parameters.
 
 ## Comparison With the Neighbouring Algebras
 
@@ -216,35 +216,35 @@ $$
 
 are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_t$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\tilde{Ζ} \mapsto \tfrac{1}{2}(e_t + \tilde{Ζ} i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$. $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{B}^{\mathrm{spl}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}^{\mathrm{spl}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{C}^{\mathrm{spl}}$ exhibits, and the split-quaternion idempotents $\tilde\pi_{1,2}$ are precisely the images of the idempotents of $\mathbb{C}^{\mathrm{spl}}$ inside the non-commutative algebra $\mathbb{H}^{\mathrm{spl}}$, where they cease to be central.
+The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{B}_{\mathrm{spl}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{spl}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{C}_{\mathrm{spl}}$ exhibits, and the split-quaternion idempotents $\tilde\pi_{1,2}$ are precisely the images of the idempotents of $\mathbb{C}_{\mathrm{spl}}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{spl}}$, where they cease to be central.
 
 ## Summary
 
-An idempotent of $\mathbb{H}^{\mathrm{spl}}$ is an element $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$. The algebra has the standard orthogonal idempotents
+An idempotent of $\mathbb{H}_{\mathrm{spl}}$ is an element $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$. The algebra has the standard orthogonal idempotents
 
 $$
 \tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y), \qquad \tilde\pi_1 \tilde\pi_2 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1,
 $$
 
-which are non-central and primitive, carrying opposite eigenvalues of $\vec e_y$. They give the module decomposition $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ into two minimal left ideals, each of real dimension $2$.
+which are non-central and primitive, carrying opposite eigenvalues of $\vec e_y$. They give the module decomposition $\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ into two minimal left ideals, each of real dimension $2$.
 
-Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $\langle\tilde\pi\rangle_{\natural} = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}^{\mathrm{spl}} = \tilde\pi\mathbb{H}^{\mathrm{spl}} \oplus (1-\tilde\pi)\mathbb{H}^{\mathrm{spl}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_{1,2}$ are the idempotents of the subalgebra $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}^{\mathrm{spl}}$.
+Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $\langle\tilde\pi\rangle_{\natural} = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}_{\mathrm{spl}} = \tilde\pi\mathbb{H}_{\mathrm{spl}} \oplus (1-\tilde\pi)\mathbb{H}_{\mathrm{spl}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_{1,2}$ are the idempotents of the subalgebra $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}_{\mathrm{spl}}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $\tilde\pi$ | a general idempotent, $\tilde\pi^2 = \tilde\pi$ | this article |
 | $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$, $\tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)$ | the standard orthogonal idempotents, $\tilde\pi_1 + \tilde\pi_2 = 1$ | this article |
 | $\eta$ | a root of $+1$ in $V$, $\eta^2 = 1$, $\langle \eta\rangle_{\natural} = -1$ | this article |
 | $\tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)$ | the idempotent of the root $\eta$; $\eta \mapsto \tilde\pi(\eta)$ is a bijection | this article |
-| $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
-| $\tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ | the off-diagonal Peirce corner, nonzero | this article |
+| $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
+| $\tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ | the off-diagonal Peirce corner, nonzero | this article |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
 | $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
-| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1, \vec e_y\}$ | the split-complex subalgebra carrying $\tilde\pi_{1,2}$ | *Split-Quaternion Algebra* |
-| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\}$ | the split-complex subalgebra carrying $\tilde\pi_{1,2}$ | *Split-Quaternion Algebra* |
+| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$ | *Split-Complex Algebra* |
 
 ## Further Reading
 

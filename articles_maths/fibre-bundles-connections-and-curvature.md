@@ -204,7 +204,7 @@ the $k$-fold substitution of the curvature.
 **Definition.** The **Chern–Weil homomorphism** is the algebra map
 
 $$
-S^\bullet(\mathrm{G}^*)^G \longrightarrow H^{\mathrm{ev}}_{dR}(M), \qquad f \longmapsto [f(\Omega)],
+S^\bullet(\mathrm{G}^*)^G \longrightarrow H_{\mathrm{ev},dR}(M), \qquad f \longmapsto [f(\Omega)],
 $$
 
 taking values in the even cohomology and independent of the connection. Its image consists of **characteristic classes** of the bundle.
@@ -287,7 +287,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 | $R' = g^{-1}Rg$ | Tensorial transformation of the curvature |
 | $d^\nabla R = 0$, $dR + [\omega,R] = 0$ | Bianchi identity |
 | Flat | $R = 0$; locally $\omega = 0$ (vector bundle) or $\omega = g^{-1}dg$ (principal bundle) |
-| $f(\Omega)$, $S^\bullet(\mathrm{G}^*)^G \to H^{\mathrm{ev}}_{dR}(M)$ | Chern–Weil form and homomorphism |
+| $f(\Omega)$, $S^\bullet(\mathrm{G}^*)^G \to H_{\mathrm{ev},dR}(M)$ | Chern–Weil form and homomorphism |
 | $c_1(L) = [\frac{i}{2\pi}\mathcal{F}]$, $n_j(E)$, $e(E)$ | First Chern, Pontryagin, and Euler classes |
 | $\operatorname{Pf}(R/2\pi)$ | Pfaffian form of a real oriented bundle of rank $2j$; its class is the Euler class |
 | $\int_M e(TM) = \chi(M)$ | Gauss–Bonnet |

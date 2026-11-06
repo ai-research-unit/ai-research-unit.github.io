@@ -15,7 +15,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 Two spin-$\tfrac{1}{2}$ particles are prepared in the **singlet state**
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
 $$
 
 Particle 1 is measured along a direction $\vec u_a$ that makes an angle $\theta_a$ with the $z$-axis, and particle 2 is measured along a direction $\vec u_b$ that makes an angle $\theta_b$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the **joint probability $p(+,+)$ of both outcomes being spin-up**?
@@ -29,10 +29,10 @@ This is the canonical **EPR/Bell** exercise. It illustrates that the two particl
 The singlet state is the antisymmetric combination of the two spin states in the 4-dimensional Hilbert space $\mathbb{C}^2\otimes\mathbb{C}^2$:
 
 $$
-|\tilde{Ξ}^{\mathrm{sp}-}\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle = \frac{1}{\sqrt{2}}\left(|\uparrow\downarrow\rangle - |\downarrow\uparrow\rangle\right).
 $$
 
-It is a **maximally entangled** state: it cannot be written as a product $|\tilde{Ξ}^{\mathrm{sp}}_1\rangle\otimes|\tilde{Ξ}^{\mathrm{sp}}_2\rangle$ for any single-qubit states $|\tilde{Ξ}^{\mathrm{sp}}_1\rangle, |\tilde{Ξ}^{\mathrm{sp}}_2\rangle$.
+It is a **maximally entangled** state: it cannot be written as a product $|\tilde{Ξ}_{\mathrm{sp},1}\rangle\otimes|\tilde{Ξ}_{\mathrm{sp},2}\rangle$ for any single-qubit states $|\tilde{Ξ}_{\mathrm{sp},1}\rangle, |\tilde{Ξ}_{\mathrm{sp},2}\rangle$.
 
 ### Step 2: The measurement operators
 
@@ -55,7 +55,7 @@ where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1,
 The joint probability is the Born rule applied to the two-qubit state:
 
 $$
-p(+,+) = \langle\tilde{Ξ}^{\mathrm{sp}-}|\,P_{++}(\vec u_a,\vec u_b)\,|\tilde{Ξ}^{\mathrm{sp}-}\rangle.
+p(+,+) = \langle\tilde{Ξ}_{\mathrm{sp}}^-|\,P_{++}(\vec u_a,\vec u_b)\,|\tilde{Ξ}_{\mathrm{sp}}^-\rangle.
 $$
 
 Expanding the product,
@@ -219,7 +219,7 @@ the natural pairing between the joint state and the joint measurement operator. 
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\tilde{Ξ}^{\mathrm{sp}-}\rangle\langle\tilde{Ξ}^{\mathrm{sp}-}|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{M}_+\otimes\mathbb{M}_+$, with the Born rule given by the tensor-product trace.**
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle\langle\tilde{Ξ}_{\mathrm{sp}}^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{M}_+\otimes\mathbb{M}_+$, with the Born rule given by the tensor-product trace.**
 
 ## Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin
 
@@ -253,7 +253,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $|\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | Singlet state |
+| $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | Singlet state |
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
 | $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
 | $\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint idempotent |

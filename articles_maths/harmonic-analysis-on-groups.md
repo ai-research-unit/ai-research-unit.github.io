@@ -231,8 +231,8 @@ The general theory above is instantiated, system by system, in the harmonic-anal
 |---|---|---|
 | $\mathbb{R}$ | $\mathbb{R}$ | the real transform |
 | $\mathbb{C}$ | $\mathbb{R}^2$ | the complex transform |
-| $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{R}^2$ | the split-complex transform |
-| $\mathbb{C}^{\mathrm{dln}}$ | $\mathbb{R}^2$ | the dual-number transform |
+| $\mathbb{C}_{\mathrm{spl}}$ | $\mathbb{R}^2$ | the split-complex transform |
+| $\mathbb{C}_{\mathrm{dln}}$ | $\mathbb{R}^2$ | the dual-number transform |
 | $\mathbb{H}$ | $\mathbb{R}^4$ | the quaternion transform |
 | $\mathbb{B}$ | $\mathbb{R}^8$ | the biquaternion transform |
 

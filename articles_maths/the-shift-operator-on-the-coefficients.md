@@ -45,7 +45,7 @@ On the Hilbert space $\mathcal{H}=\ell^2$ the section $D_m$ has operator norm $1
 
 ### The spectrum
 
-**Theorem.** On $\mathcal{H}=\ell^2(\mathbb{N})$, the spectrum of $D_m$ is the closed unit disk $\{|\varkappa^{\mathrm{crd}}|\le1\}$, and the spectrum of $S_m$ is the same disk. On $\mathcal{A}(\sigma)$ the spectrum of $D_m$ is the closed disk of radius $m^{-\sigma}$ and the spectrum of $S_m$ is the closed disk of radius $m^{\sigma}$.
+**Theorem.** On $\mathcal{H}=\ell^2(\mathbb{N})$, the spectrum of $D_m$ is the closed unit disk $\{|\varkappa_{\mathrm{crd}}|\le1\}$, and the spectrum of $S_m$ is the same disk. On $\mathcal{A}(\sigma)$ the spectrum of $D_m$ is the closed disk of radius $m^{-\sigma}$ and the spectrum of $S_m$ is the closed disk of radius $m^{\sigma}$.
 
 **Proof.** Decompose $\mathbb{N}$ into the chains $k,km,km^2,\ldots$ for the integers $k$ not divisible by $m$. Each chain is a copy of the additive monoid $\mathbb{N}_0$, and on it $D_m$ is the unilateral up-shift and $S_m$ the unilateral down-shift. Hence $D_m$ is the countable direct sum of copies of the up-shift on $\ell^2(\mathbb{N}_0)$, and $S_m$ the direct sum of copies of the down-shift. The up-shift on $\ell^2(\mathbb{N}_0)$ is an isometry whose spectrum is the closed unit disk, and a countable direct sum of copies has the same spectrum because it contains one copy as a direct summand and its norm is $1$. The rescaling to $\mathcal{A}(\sigma)$ multiplies the operators by $m^{-\sigma}$ and $m^{\sigma}$ after the substitution $f\mapsto(f(n)n^{-\sigma})$, which is an isometric identification of $\mathcal{A}(\sigma)$ with $\ell^1$ and preserves the spectral radius. The spectrum of a shift on $\ell^{n}(\mathbb{N}_0)$, $1\le p\le\infty$, is the closed unit disk; the standard computation is in *Spectral Theory*.
 
@@ -99,7 +99,7 @@ For $m\ge1$ the division $S_mf(n)=f(mn)$ and the section $D_mf(n)=f(n/m)$ for $m
 | $S_mD_m=\mathrm{id}$, $D_mS_m=P_m$ | The fundamental identities |
 | $D_m^*=S_m$, $S_m^*=D_m$ | Mutual adjointness |
 | $\|D_m\|_\sigma=m^{-\sigma}$, $\|S_m\|_\sigma=m^{\sigma}$ | Norms on $\mathcal{A}(\sigma)$ |
-| $\operatorname{spec}D_m=\{|\varkappa^{\mathrm{crd}}|\le1\}$ | Spectrum on $\mathcal{H}$ |
+| $\operatorname{spec}D_m=\{|\varkappa_{\mathrm{crd}}|\le1\}$ | Spectrum on $\mathcal{H}$ |
 | $L(D_mf,s)=m^{-s}L(f,s)$ | The shift equation |
 | $L^{(m)}(f,s)=\sum_{m\mid n}f(n)n^{-s}$ | The $m$-divisible section |
 | $\{\log n:f(n)\ne0\}$ | Bohr spectrum |

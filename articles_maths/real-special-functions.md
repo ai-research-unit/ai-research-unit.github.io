@@ -366,7 +366,7 @@ $$
 \eta(s) = \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n^s} = (1 - 2^{1-s}) \zeta(s), \qquad s > 0.
 $$
 
-This extends $\varkappa^{\mathrm{crd}}$ to $s > 0$.
+This extends $\varkappa_{\mathrm{crd}}$ to $s > 0$.
 
 ## The Bernoulli and Euler Numbers
 

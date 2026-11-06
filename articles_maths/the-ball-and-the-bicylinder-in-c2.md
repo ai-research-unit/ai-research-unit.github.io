@@ -24,7 +24,7 @@ This article treats the two domains, their automorphism groups, the proof that t
 $$
 \mathbb{B}^2=\{Q:H(Q,Q)<1\},\qquad
 \Delta^2=\Delta\times\Delta,\qquad
-\Delta=\{\varkappa^{\mathrm{crd}}\in\mathbb{C}:\lvert\varkappa^{\mathrm{crd}}\rvert<1\}.
+\Delta=\{\varkappa_{\mathrm{crd}}\in\mathbb{C}:\lvert\varkappa_{\mathrm{crd}}\rvert<1\}.
 $$
 
 **Proposition (inclusion and volume).** The ball is contained in the bicylinder, $\mathbb{B}^2\subset\Delta^2$, and the inclusion is strict. The volumes are

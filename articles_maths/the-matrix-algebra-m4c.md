@@ -61,7 +61,7 @@ $$
 
 This is the matrix product. It is the formula that the Peirce coordinates generalize to an arbitrary frame in *The Peirce Decomposition of $M_4(\mathbb{C})$*.
 
-**The opposite algebra.** The map $A\mapsto A^{\mathsf T}$ is an anti-automorphism, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and it is an isomorphism $M_4\to M_4^{\mathrm{opp}}$. The algebra is isomorphic to its opposite, as every matrix algebra is.
+**The opposite algebra.** The map $A\mapsto A^{\mathsf T}$ is an anti-automorphism, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and it is an isomorphism $M_4\to M_{\mathrm{opp},4}$. The algebra is isomorphic to its opposite, as every matrix algebra is.
 
 ## The Trace and the Determinant
 
@@ -329,17 +329,17 @@ and the image is a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic t
 
 ## A Construction from the Two-Sided Operators
 
-**The map.** For $a,b\in M_n(\mathbb{C})$ put $L_{a}R_{b}(X)=aXb$. The map $a\otimes b^{\mathrm{opp}}\mapsto L_{a}R_{b}$ is an algebra isomorphism
+**The map.** For $a,b\in M_n(\mathbb{C})$ put $L_{a}R_{b}(X)=aXb$. The map $a\otimes b_{\mathrm{opp}}\mapsto L_{a}R_{b}$ is an algebra isomorphism
 $$
-M_n(\mathbb{C})\otimes_\mathbb{C}M_n(\mathbb{C})^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))\cong M_{n^2}(\mathbb{C}),
+M_n(\mathbb{C})\otimes_\mathbb{C}M_n(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))\cong M_{n^2}(\mathbb{C}),
 $$
 because the images of the matrix-unit basis of the tensor product are the matrix units of $\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))$.
 
-**The case $n=2$.** With $\mathbb{B}\cong M_2(\mathbb{C})$ this gives $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. In the coefficient basis the images are the sixteen $L_\mu R_\nu$; they are not the matrix units, and every $E_{ij}$ is a sum of four of them. The construction reaches the square orders $n^2$ and, in the two-factor form, the products $mn$: it gives $M_4$ and $M_9$, and $M_6$ from $M_2$ and $M_3$, but not $M_3$ or $M_5$. It is one construction of the algebra, not a definition, and it chooses no gamma set: no five of the sixteen cells $L_\mu R_\nu$ are singled out up to $i$. The full account, with the sixteen matrices, the multiplication tables and the coefficient formula, is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
+**The case $n=2$.** With $\mathbb{B}\cong M_2(\mathbb{C})$ this gives $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$. In the coefficient basis the images are the sixteen $L_\mu R_\nu$; they are not the matrix units, and every $E_{ij}$ is a sum of four of them. The construction reaches the square orders $n^2$ and, in the two-factor form, the products $mn$: it gives $M_4$ and $M_9$, and $M_6$ from $M_2$ and $M_3$, but not $M_3$ or $M_5$. It is one construction of the algebra, not a definition, and it chooses no gamma set: no five of the sixteen cells $L_\mu R_\nu$ are singled out up to $i$. The full account, with the sixteen matrices, the multiplication tables and the coefficient formula, is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
+The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4(\mathbb{C})=16,\quad \dim_\mathbb{R}=32,\quad Z(M_4)=\mathbb{C}I,\quad \dim_\mathbb{C}PGL_4=15,\quad \dim_\mathbb{C}SL_4=15.\ }
@@ -389,7 +389,7 @@ $$
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $GL_4$, $SL_4$, $U(4)$ and their Lie algebras.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $L_\mu R_\nu$, their product tables, the coefficient formula and the length.
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices $L_\mu R_\nu$, the gamma set and the product question.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the four-dimensional regular model and its different trace and determinant.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.

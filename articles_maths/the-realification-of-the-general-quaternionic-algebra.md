@@ -84,7 +84,7 @@ The trace form of the product is
 $$
 \tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr).
 $$
-Since $L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}$, the composite is the plain left multiplication by $\tilde Q_1^{\natural}\tilde Q_2^{\natural}$, and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})=\mathrm{Sc}\bigl((\tilde Q_2\tilde Q_1)^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)=\langle\tilde Q_1,\tilde Q_2\rangle$, so
+Since $L_{\tilde Q_1}=L_{\mathrm{plain},\tilde Q_1^{\natural}}$, the composite is the plain left multiplication by $\tilde Q_1^{\natural}\tilde Q_2^{\natural}$, and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})=\mathrm{Sc}\bigl((\tilde Q_2\tilde Q_1)^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)=\langle\tilde Q_1,\tilde Q_2\rangle$, so
 $$
 \boxed{\; \tau(\tilde Q_1,\tilde Q_2)=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle \;},
 $$

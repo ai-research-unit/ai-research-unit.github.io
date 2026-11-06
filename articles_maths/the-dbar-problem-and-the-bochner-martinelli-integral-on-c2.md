@@ -110,25 +110,25 @@ and $h$ is holomorphic in $Q_{\blacktriangle}$, because $\bar\partial(h\,d\overl
 
 **The Bochner–Martinelli kernel is a $(2,1)$-form on the boundary that plays the role of the Cauchy kernel; it is not holomorphic in the interior variable, and its denominator is the fourth power of the distance.**
 
-**Definition.** For $Q,\varkappa^{\mathrm{crd}}\in\mathbb{C}^2$ with $\varkappa^{\mathrm{crd}}\neq Q$, the **Bochner–Martinelli kernel** is
+**Definition.** For $Q,\varkappa_{\mathrm{crd}}\in\mathbb{C}^2$ with $\varkappa_{\mathrm{crd}}\neq Q$, the **Bochner–Martinelli kernel** is
 $$
-K_{BM}(Q,\varkappa^{\mathrm{crd}})=\frac{1}{(2\pi i)^2}\,
-\frac{(\bar\varkappa^{\mathrm{crd}}_{\blacktriangle}-\bar Q_{\blacktriangle})\,d\bar\varkappa^{\mathrm{crd}}_{\blacktriangledown}-(\bar\varkappa^{\mathrm{crd}}_{\blacktriangledown}-\bar Q_{\blacktriangledown})\,d\bar\varkappa^{\mathrm{crd}}_{\blacktriangle}}{\lVert\varkappa^{\mathrm{crd}}-Q\rVert^4}
-\wedge d\varkappa^{\mathrm{crd}}_{\blacktriangle}\wedge d\varkappa^{\mathrm{crd}}_{\blacktriangledown}.
+K_{BM}(Q,\varkappa_{\mathrm{crd}})=\frac{1}{(2\pi i)^2}\,
+\frac{(\bar\varkappa_{\mathrm{crd},\blacktriangle}-\bar Q_{\blacktriangle})\,d\bar\varkappa_{\mathrm{crd},\blacktriangledown}-(\bar\varkappa_{\mathrm{crd},\blacktriangledown}-\bar Q_{\blacktriangledown})\,d\bar\varkappa_{\mathrm{crd},\blacktriangle}}{\lVert\varkappa_{\mathrm{crd}}-Q\rVert^4}
+\wedge d\varkappa_{\mathrm{crd},\blacktriangle}\wedge d\varkappa_{\mathrm{crd},\blacktriangledown}.
 $$
 
-**Proposition (the bidegree and the singularity).** The kernel is a form of type $(2,1)$ in $\varkappa^{\mathrm{crd}}$, of real degree $3$. Near the diagonal $\varkappa^{\mathrm{crd}}=Q$ its numerator vanishes to first order and its denominator is of order $\lVert\varkappa^{\mathrm{crd}}-Q\rVert^4$, so the kernel is of order $\lVert\varkappa^{\mathrm{crd}}-Q\rVert^{-3}$; the angular factor in the numerator has zero mean, so the boundary integral is defined as a Cauchy principal value.
+**Proposition (the bidegree and the singularity).** The kernel is a form of type $(2,1)$ in $\varkappa_{\mathrm{crd}}$, of real degree $3$. Near the diagonal $\varkappa_{\mathrm{crd}}=Q$ its numerator vanishes to first order and its denominator is of order $\lVert\varkappa_{\mathrm{crd}}-Q\rVert^4$, so the kernel is of order $\lVert\varkappa_{\mathrm{crd}}-Q\rVert^{-3}$; the angular factor in the numerator has zero mean, so the boundary integral is defined as a Cauchy principal value.
 
-*Proof.* The numerator is a $(0,1)$-form and $d\varkappa^{\mathrm{crd}}_{\blacktriangle}\wedge d\varkappa^{\mathrm{crd}}_{\blacktriangledown}$ is a $(2,0)$-form, so the type is $(2,1)$. The numerator is a sum of terms linear in $\bar\varkappa^{\mathrm{crd}}_{\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\varkappa^{\mathrm{crd}}_{\blacktriangledown}-\bar Q_{\blacktriangledown}$, and the denominator is the square of the squared norm; the quotient is of order $\lVert\varkappa^{\mathrm{crd}}-Q\rVert^{-3}$.
+*Proof.* The numerator is a $(0,1)$-form and $d\varkappa_{\mathrm{crd},\blacktriangle}\wedge d\varkappa_{\mathrm{crd},\blacktriangledown}$ is a $(2,0)$-form, so the type is $(2,1)$. The numerator is a sum of terms linear in $\bar\varkappa_{\mathrm{crd},\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\varkappa_{\mathrm{crd},\blacktriangledown}-\bar Q_{\blacktriangledown}$, and the denominator is the square of the squared norm; the quotient is of order $\lVert\varkappa_{\mathrm{crd}}-Q\rVert^{-3}$.
 
 **Theorem (the one-variable reduction).** For $n=1$ the same formula reduces to the Cauchy kernel,
 $$
-K_{BM}(z,\varkappa^{\mathrm{crd}})=\frac{1}{2\pi i}\,\frac{d\varkappa^{\mathrm{crd}}}{\varkappa^{\mathrm{crd}}-z}.
+K_{BM}(z,\varkappa_{\mathrm{crd}})=\frac{1}{2\pi i}\,\frac{d\varkappa_{\mathrm{crd}}}{\varkappa_{\mathrm{crd}}-z}.
 $$
 
-*Proof.* In one variable the numerator is $(\bar\varkappa^{\mathrm{crd}}-\bar z)\,d\varkappa^{\mathrm{crd}}$ and the denominator is $\lvert\varkappa^{\mathrm{crd}}-z\rvert^2=(\varkappa^{\mathrm{crd}}-z)(\bar\varkappa^{\mathrm{crd}}-\bar z)$, so the quotient is $d\varkappa^{\mathrm{crd}}/(\varkappa^{\mathrm{crd}}-z)$ times $1/(2\pi i)$.
+*Proof.* In one variable the numerator is $(\bar\varkappa_{\mathrm{crd}}-\bar z)\,d\varkappa_{\mathrm{crd}}$ and the denominator is $\lvert\varkappa_{\mathrm{crd}}-z\rvert^2=(\varkappa_{\mathrm{crd}}-z)(\bar\varkappa_{\mathrm{crd}}-\bar z)$, so the quotient is $d\varkappa_{\mathrm{crd}}/(\varkappa_{\mathrm{crd}}-z)$ times $1/(2\pi i)$.
 
-**Remark (why the kernel is not holomorphic).** The numerator contains $\bar\varkappa^{\mathrm{crd}}_{\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\varkappa^{\mathrm{crd}}_{\blacktriangledown}-\bar Q_{\blacktriangledown}$, so the kernel is not holomorphic in $\varkappa^{\mathrm{crd}}$. **It cannot be replaced by a kernel holomorphic in $\varkappa^{\mathrm{crd}}$ alone**: the boundary of a domain in $\mathbb{C}^2$ has real dimension three, while a holomorphic $2$-form integrates over a real two-dimensional set, so the one-variable contour integral has no direct analogue over the whole boundary. The Bochner–Martinelli kernel is the replacement, and its non-holomorphicity is exactly what allows it to reproduce a function from data on a three-dimensional boundary.
+**Remark (why the kernel is not holomorphic).** The numerator contains $\bar\varkappa_{\mathrm{crd},\blacktriangle}-\bar Q_{\blacktriangle}$ and $\bar\varkappa_{\mathrm{crd},\blacktriangledown}-\bar Q_{\blacktriangledown}$, so the kernel is not holomorphic in $\varkappa_{\mathrm{crd}}$. **It cannot be replaced by a kernel holomorphic in $\varkappa_{\mathrm{crd}}$ alone**: the boundary of a domain in $\mathbb{C}^2$ has real dimension three, while a holomorphic $2$-form integrates over a real two-dimensional set, so the one-variable contour integral has no direct analogue over the whole boundary. The Bochner–Martinelli kernel is the replacement, and its non-holomorphicity is exactly what allows it to reproduce a function from data on a three-dimensional boundary.
 
 ## The Bochner–Martinelli Formula
 
@@ -136,18 +136,18 @@ $$
 
 **Theorem (the Bochner–Martinelli formula).** Let $D\subset\mathbb{C}^2$ be a bounded domain with $C^1$ boundary, oriented as the boundary of $D$, and let $f\in C^1(\overline{D})$. Then for $Q\in D$,
 $$
-f(Q)=\int_{\partial D}f(\varkappa^{\mathrm{crd}})\,K_{BM}(Q,\varkappa^{\mathrm{crd}})-\int_{D}\bar\partial f(\varkappa^{\mathrm{crd}})\wedge K_{BM}(Q,\varkappa^{\mathrm{crd}}),
+f(Q)=\int_{\partial D}f(\varkappa_{\mathrm{crd}})\,K_{BM}(Q,\varkappa_{\mathrm{crd}})-\int_{D}\bar\partial f(\varkappa_{\mathrm{crd}})\wedge K_{BM}(Q,\varkappa_{\mathrm{crd}}),
 $$
 and for $Q\notin\overline{D}$,
 $$
-0=\int_{\partial D}f(\varkappa^{\mathrm{crd}})\,K_{BM}(Q,\varkappa^{\mathrm{crd}})-\int_{D}\bar\partial f(\varkappa^{\mathrm{crd}})\wedge K_{BM}(Q,\varkappa^{\mathrm{crd}}).
+0=\int_{\partial D}f(\varkappa_{\mathrm{crd}})\,K_{BM}(Q,\varkappa_{\mathrm{crd}})-\int_{D}\bar\partial f(\varkappa_{\mathrm{crd}})\wedge K_{BM}(Q,\varkappa_{\mathrm{crd}}).
 $$
 
-*Proof.* The proof is the application of Stokes' theorem to the form $fK_{BM}$ on $D$ with a small ball around $Q$ removed. The kernel is closed in $\varkappa^{\mathrm{crd}}$ off the diagonal, and the term $\partial f\wedge K_{BM}$ vanishes by type, so $d(fK_{BM})=\bar\partial f\wedge K_{BM}$ there; the boundary of the small ball contributes $f(z)$ in the limit, by the one-variable reduction and the Bochner–Martinelli computation. The details are in *Several Complex Variables*.
+*Proof.* The proof is the application of Stokes' theorem to the form $fK_{BM}$ on $D$ with a small ball around $Q$ removed. The kernel is closed in $\varkappa_{\mathrm{crd}}$ off the diagonal, and the term $\partial f\wedge K_{BM}$ vanishes by type, so $d(fK_{BM})=\bar\partial f\wedge K_{BM}$ there; the boundary of the small ball contributes $f(z)$ in the limit, by the one-variable reduction and the Bochner–Martinelli computation. The details are in *Several Complex Variables*.
 
 **Corollary (the Cauchy–Fantappiè formula).** If $f$ is holomorphic on a neighbourhood of $\overline{D}$, then for $Q\in D$,
 $$
-f(Q)=\int_{\partial D}f(\varkappa^{\mathrm{crd}})\,K_{BM}(Q,\varkappa^{\mathrm{crd}}).
+f(Q)=\int_{\partial D}f(\varkappa_{\mathrm{crd}})\,K_{BM}(Q,\varkappa_{\mathrm{crd}}).
 $$
 
 *Proof.* The second term vanishes because $\bar\partial f=0$ on $D$.
@@ -160,7 +160,7 @@ $$
 
 **Definition.** For $f\in C^1(\overline{D})$ and $Q\notin\partial D$, the **Bochner–Martinelli integral** is
 $$
-Sf(Q)=\int_{\partial D}f(\varkappa^{\mathrm{crd}})\,K_{BM}(Q,\varkappa^{\mathrm{crd}}).
+Sf(Q)=\int_{\partial D}f(\varkappa_{\mathrm{crd}})\,K_{BM}(Q,\varkappa_{\mathrm{crd}}).
 $$
 For $Q_0\in\partial D$, the **principal value** $\mathrm{PV}\,Sf(Q_0)$ is the limit of $Sf(Q)$ as $Q$ tends to $Q_0$ through a ball with a small piece of the boundary removed, averaged over the two sides.
 
@@ -176,11 +176,11 @@ $$
 
 *Proof.* The Bochner–Martinelli formula gives, for $Q\in D$,
 $$
-Sf(Q)=f(Q)+\int_{D}\bar\partial f\wedge K_{BM}(Q,\varkappa^{\mathrm{crd}}),
+Sf(Q)=f(Q)+\int_{D}\bar\partial f\wedge K_{BM}(Q,\varkappa_{\mathrm{crd}}),
 $$
 and for $Q\notin\overline{D}$,
 $$
-Sf(Q)=\int_{D}\bar\partial f\wedge K_{BM}(Q,\varkappa^{\mathrm{crd}}).
+Sf(Q)=\int_{D}\bar\partial f\wedge K_{BM}(Q,\varkappa_{\mathrm{crd}}).
 $$
 The domain integral is continuous across the boundary, because its kernel is integrable and the singularity lies on the boundary of the domain of integration; hence the two boundary values differ by $f(Q_0)$. The principal value is the average of the two.
 
@@ -234,7 +234,7 @@ In particular every $\bar\partial$-closed $(0,1)$-form on $\mathbb{C}^2$ is $\ba
 
 A $(p,q)$-form on $\mathbb{C}^2$ is a sum of terms with $p$ holomorphic and $q$ anti-holomorphic differentials, of dimension $\binom{2}{p}\binom{2}{q}$ at a point, and the Dolbeault operator $\bar\partial$ raises $q$ by one and squares to zero. The Dolbeault complex has length two in the anti-holomorphic direction, and its cohomology $H^{p,q}_{\bar\partial}$ is the obstruction to solving $\bar\partial u=g$; by the Dolbeault theorem it is the sheaf cohomology $H^q(D,\Omega^p)$.
 
-On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-closed $(0,1)$-form is exact, and the proof solves the equation one variable at a time. The solution on a general domain is given by the Bochner–Martinelli kernel, a $(2,1)$-form with denominator $\lVert\varkappa^{\mathrm{crd}}-Q\rVert^4$ that integrates over the three-dimensional boundary; the Bochner–Martinelli formula reproduces a $C^1$ function inside the domain up to the integral of $\bar\partial f$, and the jump formula states that the boundary integral has boundary values differing by $f$. The compactly supported $\bar\partial$-lemma, applied to a cutoff of a function holomorphic off a compact set, gives the Hartogs extension theorem. The space $\mathbb{C}^2$ is Stein, so $H^{p,q}_{\bar\partial}(\mathbb{C}^2)=0$ for $q\ge1$, and the $\bar\partial$-problem is solvable globally for every datum.
+On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-closed $(0,1)$-form is exact, and the proof solves the equation one variable at a time. The solution on a general domain is given by the Bochner–Martinelli kernel, a $(2,1)$-form with denominator $\lVert\varkappa_{\mathrm{crd}}-Q\rVert^4$ that integrates over the three-dimensional boundary; the Bochner–Martinelli formula reproduces a $C^1$ function inside the domain up to the integral of $\bar\partial f$, and the jump formula states that the boundary integral has boundary values differing by $f$. The compactly supported $\bar\partial$-lemma, applied to a cutoff of a function holomorphic off a compact set, gives the Hartogs extension theorem. The space $\mathbb{C}^2$ is Stein, so $H^{p,q}_{\bar\partial}(\mathbb{C}^2)=0$ for $q\ge1$, and the $\bar\partial$-problem is solvable globally for every datum.
 
 ## Summary of Notation
 
@@ -244,7 +244,7 @@ On a polydisc the $\bar\partial$-Poincaré lemma holds: every $\bar\partial$-clo
 | $\partial,\bar\partial$ | the Dolbeault operators, of bidegrees $(1,0)$ and $(0,1)$ |
 | $H^{p,q}_{\bar\partial}(D)$ | the Dolbeault cohomology |
 | $\Delta(Q_0,r)$ | the polydisc of multiradius $r$ about $Q_0$ |
-| $K_{BM}(Q,\varkappa^{\mathrm{crd}})$ | the Bochner–Martinelli kernel, a $(2,1)$-form in $\varkappa^{\mathrm{crd}}$ |
+| $K_{BM}(Q,\varkappa_{\mathrm{crd}})$ | the Bochner–Martinelli kernel, a $(2,1)$-form in $\varkappa_{\mathrm{crd}}$ |
 | $Sf(Q)$ | the Bochner–Martinelli integral of $f$ |
 | $\mathrm{PV}\,Sf$ | its principal value on the boundary |
 | $S^{+}f,S^{-}f$ | the boundary values from inside and outside |

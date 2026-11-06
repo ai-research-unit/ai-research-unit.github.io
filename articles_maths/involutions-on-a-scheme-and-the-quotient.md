@@ -15,7 +15,7 @@ Throughout $S$ is a base scheme, $X$ is an $S$-scheme, and $\sigma : X\to X$ is 
 
 **Definition.** A **fixed subscheme** of the involution $\sigma$ is a closed subscheme $Z\hookrightarrow X$ such that $\sigma|_Z = \mathrm{id}_Z$ and such that every closed subscheme $Z'$ with $\sigma|_{Z'} = \mathrm{id}_{Z'}$ factors through $Z$; equivalently, $Z$ is the **equaliser** of $\sigma$ and the identity, the fibre product
 $$
-X^\sigma = X\ \times_{X\times_SX,\ (\mathrm{id},\sigma)}\ X ,
+X^\sigma = X\ \times_{\mathrm{id},X\times_SX,\ (,\sigma)}\ X ,
 $$
 taken along the diagonal.
 

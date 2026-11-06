@@ -25,7 +25,7 @@ of the convolution algebra to the pointwise conjugation of the transforms.
 
 This article is the fourth of the `*` group of *Foundations of Analysis*. Its prerequisites are *Fourier
 Analysis on Euclidean Spaces* for the transform, the inversion and Plancherel theorems, the reflection
-$f^{\mathrm{refl}}(x)=f(-x)$, with $\mathcal F^2 f=f^{\mathrm{refl}}$, the multiplication formula and the
+$f_{\mathrm{refl}}(x)=f(-x)$, with $\mathcal F^2 f=f_{\mathrm{refl}}$, the multiplication formula and the
 Hilbert transform with symbol $-i\operatorname{sgn}(\zeta)$; and *Hermitian Measures and Complex Measures*,
 the previous article of this group, for the involution on the measures and its compatibility with the
 Fourier–Stieltjes transform. The transform is treated in the $L^1\cap L^2$ setting of the Fourier article,
@@ -43,16 +43,16 @@ this category, and the transform acts on them as multiplication by the symbol. N
 
 **Theorem (the transform of the conjugate).** For $f\in L^1(\mathbb R^n)$,
 $$
-\boxed{\;\widehat{\bar f}(\zeta)=\overline{(\mathcal F f)(-\zeta)},\qquad \widehat{\bar f}=(\overline{\mathcal F f})^{\mathrm{refl}}\;},
+\boxed{\;\widehat{\bar f}(\zeta)=\overline{(\mathcal F f)(-\zeta)},\qquad \widehat{\bar f}=(\overline{\mathcal F f})_{\mathrm{refl}}\;},
 $$
-where $g^{\mathrm{refl}}(x)=g(-x)$ is the reflection; equivalently, in the notation of the Fourier article,
+where $g_{\mathrm{refl}}(x)=g(-x)$ is the reflection; equivalently, in the notation of the Fourier article,
 $\mathcal F(\bar f)=\overline{\mathcal F f}\circ(-1)$.
 
 **Proof.** $\widehat{\bar f}(\zeta)=\int\overline{f(x)}\exp(-2\pi ix\cdot\zeta)dx
 =\overline{\int f(x)\exp(2\pi ix\cdot\zeta)dx}=\overline{(\mathcal F f)(-\zeta)}$, by the conjugation of the integral and
 the substitution $x\mapsto-x$.
 
-The reflection commutes with the transform, $\widehat{f^{\mathrm{refl}}}=(\mathcal F f)^{\mathrm{refl}}$, as recorded in the
+The reflection commutes with the transform, $\widehat{f_{\mathrm{refl}}}=(\mathcal F f)_{\mathrm{refl}}$, as recorded in the
 Fourier article, where it is also proved that $\mathcal F^2$ is the reflection and $\mathcal F^4=1$; the
 conjugate symmetry identity is therefore the statement that conjugation is carried by the transform to
 conjugation after the reflection, and, because $\mathcal F^2$ is the reflection,
@@ -189,7 +189,7 @@ which is the statement; the product statement is the convolution theorem of the 
 isomorphism statements are the Fourier inversion and Plancherel theorems.
 
 **Corollary (the algebraic reading of the conjugate symmetry).** The value-conjugation identity
-$\widehat{\bar f}=(\overline{\mathcal F f})^{\mathrm{refl}}$ and the involution identity
+$\widehat{\bar f}=(\overline{\mathcal F f})_{\mathrm{refl}}$ and the involution identity
 $\widehat{f^{*}}=\overline{\mathcal F f}$ differ by the reflection: $\bar f=f^{*}\circ(\text{reflection})$, and
 the transform commutes with the reflection. The conjugate symmetry of the previous sections is therefore the
 shadow, at the level of the involution of the algebra, of the elementary identity
@@ -215,7 +215,7 @@ and the inversion theorems read in two ways.
 | Symbol | Meaning |
 |---|---|
 | $\bar f$, $\bar\mu$ | Value-conjugation $f(x)\mapsto\overline{f(x)}$ and $\mu(A)\mapsto\overline{\mu(A)}$ |
-| $f^{\mathrm{refl}}(x)=f(-x)$ | Reflection, $\mathcal F^2 f=f^{\mathrm{refl}}$, $\mathcal F^4=1$ |
+| $f_{\mathrm{refl}}(x)=f(-x)$ | Reflection, $\mathcal F^2 f=f_{\mathrm{refl}}$, $\mathcal F^4=1$ |
 | $\widehat{\bar f}(\zeta)=\overline{(\mathcal F f)(-\zeta)}$ | Conjugate symmetry of the transform |
 | $f_{\mathrm e},f_{\mathrm o}$ | Even and odd parts, $\frac12(f(x)\pm f(-x))$ |
 | $Hf$, $H$ | Conjugate function, Hilbert transform, multiplier $-i\operatorname{sgn}$ |

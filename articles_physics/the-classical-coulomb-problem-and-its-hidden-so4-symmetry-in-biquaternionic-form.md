@@ -73,7 +73,7 @@ whose agreement with experiment established the nuclear model of the atom. The f
 The centrality of the force conserves the angular momentum,
 
 $$
-\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i^{\mathrm{orb}}, H\} = 0 ,
+\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_{\mathrm{orb},i}, H\} = 0 ,
 $$
 
 with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dr'_t = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
@@ -111,7 +111,7 @@ and on a fixed energy shell $E$ the second is a relation among the squares. The 
 The Poisson brackets of the six generators close on themselves:
 
 $$
-\boxed{\;\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}\;}.
+\boxed{\;\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}\;}.
 $$
 
 The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.
@@ -126,7 +126,7 @@ $$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
 $$
 
-so that $\{D_i, D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ and $\{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
+so that $\{D_i, D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ and $\{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
 
 $$
 \vec S^{\pm}_{\mathrm{tot}} = \frac{1}{2}\left(\vec L \pm \vec D\right) .
@@ -151,12 +151,12 @@ where the last equality uses $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$. For the repres
 For $E > 0$ the third bracket changes sign. Defining $\vec D = \vec A/\sqrt{2mE}$ gives
 
 $$
-\{D_i, D_j\} = -\epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k ,
+\{D_i, D_j\} = -\epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ijk}D_k ,
 $$
 
 which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\vec L\cdot\vec D$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
 
-At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i^{\mathrm{orb}},D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
+At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_{\mathrm{orb},i},D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
 
 | Energy | Rescaled vector | Algebra | Group |
 |---|---|---|---|
@@ -168,7 +168,7 @@ The bound case is the one that bears on the hydrogen spectrum, and it is the cas
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$, $\{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing section were checked at the same time on the elements themselves. The material sector was confirmed closed under the commutator, with $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$ and every element of $[\mathbb{M}_-,\mathbb{M}_-]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -262,8 +262,8 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 $$
 \begin{aligned}
-&\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\\
-&L_{\vec e_x}^{\mathrm{pau}}=\gamma_2\gamma_3,\quad L_{\vec e_y}^{\mathrm{pau}}=\gamma_3\gamma_1,\quad L_{\vec e_z}^{\mathrm{pau}}=\gamma_1\gamma_2,\quad R_{\vec e_x}^{\mathrm{pau}}=-i\gamma_0,\quad R_{\vec e_y}^{\mathrm{pau}}=i\gamma_1\gamma_2\gamma_3,\quad R_{\vec e_z}^{\mathrm{pau}}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
+&\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},\\
+&L_{\mathrm{pau},\vec e_x}=\gamma_2\gamma_3,\quad L_{\mathrm{pau},\vec e_y}=\gamma_3\gamma_1,\quad L_{\mathrm{pau},\vec e_z}=\gamma_1\gamma_2,\quad R_{\mathrm{pau},\vec e_x}=-i\gamma_0,\quad R_{\mathrm{pau},\vec e_y}=i\gamma_1\gamma_2\gamma_3,\quad R_{\mathrm{pau},\vec e_z}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 \end{aligned}
 $$
 
@@ -271,8 +271,8 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-&\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\\
-&L_{\vec e_x}^{\mathrm{axf}}=\gamma_2\gamma_3,\quad L_{\vec e_y}^{\mathrm{axf}}=\gamma_3\gamma_1,\quad L_{\vec e_z}^{\mathrm{axf}}=\gamma_1\gamma_2,\quad R_{\vec e_x}^{\mathrm{axf}}=-i\gamma_0,\quad R_{\vec e_y}^{\mathrm{axf}}=i\gamma_1\gamma_2\gamma_3,\quad R_{\vec e_z}^{\mathrm{axf}}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
+&\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},\\
+&L_{\mathrm{axf},\vec e_x}=\gamma_2\gamma_3,\quad L_{\mathrm{axf},\vec e_y}=\gamma_3\gamma_1,\quad L_{\mathrm{axf},\vec e_z}=\gamma_1\gamma_2,\quad R_{\mathrm{axf},\vec e_x}=-i\gamma_0,\quad R_{\mathrm{axf},\vec e_y}=i\gamma_1\gamma_2\gamma_3,\quad R_{\mathrm{axf},\vec e_z}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 \end{aligned}
 $$
 
@@ -280,7 +280,7 @@ $$
 
 **The boundary the gammas make plain.** The $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ of the symmetry section is the pair of multipliers, left against right, and the gamma dictionary shows that the two copies are of different kinds: the left multipliers are bivectors, and the right ones are not, $R_{\vec e_x}$ being the vector $\gamma_0$ up to $-i$, $R_{\vec e_y}$ a trivector and $R_{\vec e_z}$ the product of all four. The bivector space is six-dimensional over $\mathbb{C}$ and closed under the commutator, so the two $\mathrm{su}(2)$'s are not its self-dual and anti-self-dual halves; reading them so replaces the action of the algebra on itself by a split of the Lorentz generators, which is a different object. What the algebra reaches is the $\mathrm{so}(3,1)$ of its bivectors together with the $\mathrm{so}(4)$ of its own module structure, and the hidden symmetry of the Coulomb problem is in neither.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -297,7 +297,7 @@ The particle is structureless and carries no intrinsic magnetic moment; its orbi
 The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m|\kappa|e$. The six generators close under the Poisson bracket:
 
 $$
-\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}} .
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k} .
 $$
 
 Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy
@@ -333,9 +333,9 @@ The framework supplies the real three-space in which all six generators take the
 | $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m|\kappa|e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
-| $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Angular-momentum bracket |
-| $\{L_i^{\mathrm{orb}},A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\vec A$ |
-| $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Energy-dependent bracket |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | Angular-momentum bracket |
+| $\{L_{\mathrm{orb},i},A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\vec A$ |
+| $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ | Energy-dependent bracket |
 | $\vec D = \vec A/\sqrt{-2mE}$ $(E<0)$ | Rescaled generator |
 | $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$ | $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ generators |
 | $(\vec S^\pm_{\mathrm{tot}})^2 = m\kappa^2/(8|E|)$ | Equal Casimirs |

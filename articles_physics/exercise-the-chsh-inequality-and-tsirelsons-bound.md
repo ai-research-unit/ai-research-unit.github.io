@@ -123,10 +123,10 @@ for the Bell state with sign pattern $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3
 
 | Bell state | $\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$ | $T=-\mathrm{diag}(\epsilon)$ | $E(\vec a_1,\vec b_1)$ |
 |---|---|---|---|
-| $\lvert\tilde{Ξ}^{\mathrm{sp}-}\rangle$ | $(+1,+1,+1)$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec a_1\cdot\vec b_1$ |
+| $\lvert\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | $(+1,+1,+1)$ | $\mathrm{diag}(-1,-1,-1)$ | $-\vec a_1\cdot\vec b_1$ |
 | $\lvertΞ^{+}\rangle$ | $(-1,+1,-1)$ | $\mathrm{diag}(+1,-1,+1)$ | $a_{11}b_{11}-a_{12}b_{12}+a_{13}b_{13}$ |
 | $\lvertΞ^{-}\rangle$ | $(+1,-1,-1)$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_{11}b_{11}+a_{12}b_{12}+a_{13}b_{13}$ |
-| $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ | $(-1,-1,+1)$ | $\mathrm{diag}(+1,+1,-1)$ | $a_{11}b_{11}+a_{12}b_{12}-a_{13}b_{13}$ |
+| $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ | $(-1,-1,+1)$ | $\mathrm{diag}(+1,+1,-1)$ | $a_{11}b_{11}+a_{12}b_{12}-a_{13}b_{13}$ |
 
 Only the singlet has $T=-I$ and hence the rotationally invariant correlation $E=-\vec a_1\cdot\vec b_1$. The other three have a correlation matrix with one diagonal entry of the opposite sign; their correlations depend on the directions.
 
@@ -178,7 +178,7 @@ $$
 \vec b_1=\frac{\vec u_j+\vec u_k}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_k}{\sqrt{2}} .
 $$
 
-Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}^{\mathrm{sp}+}\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
+Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
 
 ### Step 5: Tsirelson's bound
 

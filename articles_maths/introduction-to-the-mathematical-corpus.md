@@ -318,12 +318,12 @@ A system carries those of them that exist for it, which is a fact about the syst
 | $\mathbb{Q}$ | division |
 | $\mathbb{R}$ | completeness |
 | $\mathbb{C}$ | a square root of $-1$ |
-| split-complex $\mathbb{C}^{\mathrm{spl}}$ | a hyperbola rather than a circle |
-| dual numbers $\mathbb{C}^{\mathrm{dln}}$ | a nilpotent direction |
+| split-complex $\mathbb{C}_{\mathrm{spl}}$ | a hyperbola rather than a circle |
+| dual numbers $\mathbb{C}_{\mathrm{dln}}$ | a nilpotent direction |
 | $\mathbb{H}$ | non-commutativity |
-| split-quaternions $\mathbb{H}^{\mathrm{spl}}$ | a matrix model; isotropic vectors |
+| split-quaternions $\mathbb{H}_{\mathrm{spl}}$ | a matrix model; isotropic vectors |
 | $\mathbb{B}$ (biquaternions) | complexification; zero divisors |
-| split-biquaternions $\mathbb{B}^{\mathrm{spl}}$ | an indefinite form |
+| split-biquaternions $\mathbb{B}_{\mathrm{spl}}$ | an indefinite form |
 | octonions $\mathbb{O}$ | non-associativity |
 
 The systems are listed in the order in which the corpus reaches them.

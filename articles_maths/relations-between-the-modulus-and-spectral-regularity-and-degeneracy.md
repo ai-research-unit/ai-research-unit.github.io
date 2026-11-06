@@ -121,10 +121,10 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 | $\mathbb{R}$ | $t^2$, definite | never holds (always degenerate) | empty | 2 |
 | $\mathbb{C}$ | $t^2+b^2$, definite | $b^2$ | empty | 3 |
 | $\mathbb{H}$ | $t^2+\lvert\vec v\rvert^2$, definite | $\lvert\vec v\rvert^2$ | empty | 3 |
-| $\mathbb{C}^{\mathrm{spl}}$ | $t^2-b^2$, indefinite | $b^2$ | non-empty | 4 |
+| $\mathbb{C}_{\mathrm{spl}}$ | $t^2-b^2$, indefinite | $b^2$ | non-empty | 4 |
 | $\mathbb{B}$ | $Q_t^2+B^2$, complex | $B^2$ | non-empty | 4 |
 
-*Proof.* In $\mathbb{R}$ the regular matrix is $(t)$, so the spectrum is $\{t\}$ and the spectral condition never holds. In $\mathbb{C}$ the criterion is this article. In $\mathbb{H}$ the eigenvalues of the regular representation are $t\pm i\lvert\vec v\rvert$, each twice, so the condition is $\vec v\neq0$ and the norm is definite. In $\mathbb{C}^{\mathrm{spl}}$ the norm is $t^2-b^2$, zero on the lines $t=\pm b$, and the spectral condition is $b\neq0$; the point $1+j$ has norm $0$ and $b=1$. In $\mathbb{B}$ the norm is $Q_t^2+B^2$, zero on non-zero elements, and the spectral condition is $B^2\neq0$; the details are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
+*Proof.* In $\mathbb{R}$ the regular matrix is $(t)$, so the spectrum is $\{t\}$ and the spectral condition never holds. In $\mathbb{C}$ the criterion is this article. In $\mathbb{H}$ the eigenvalues of the regular representation are $t\pm i\lvert\vec v\rvert$, each twice, so the condition is $\vec v\neq0$ and the norm is definite. In $\mathbb{C}_{\mathrm{spl}}$ the norm is $t^2-b^2$, zero on the lines $t=\pm b$, and the spectral condition is $b\neq0$; the point $1+j$ has norm $0$ and $b=1$. In $\mathbb{B}$ the norm is $Q_t^2+B^2$, zero on non-zero elements, and the spectral condition is $B^2\neq0$; the details are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
 **Corollary (the meaning of the empty cell).** A definite modulus forces $\Sigma_{01}$ to be empty; an indefinite or complex-valued modulus allows it to be non-empty. The complex algebra is definite, so it has three cells, and it is the first definite algebra in which the spectral condition is not automatic.
 

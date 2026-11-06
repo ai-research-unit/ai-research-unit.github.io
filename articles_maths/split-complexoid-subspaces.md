@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The distinguished subspaces of $\mathbb{C}^{\mathrm{spl}}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the remarkable-subspace lattice. The involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.
+The distinguished subspaces of $\mathbb{C}_{\mathrm{spl}}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the remarkable-subspace lattice. The involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.
 
 The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.
 
 ## The Two Involutions
 
-The algebra carries two involutions: the split-complex conjugation $\bar{Q} = q-jq'$ and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_1 + (q+q')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{C}^{\mathrm{spl}}$ they coincide:
+The algebra carries two involutions: the split-complex conjugation $\bar{Q} = q-jq'$ and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_1 + (q+q')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{C}_{\mathrm{spl}}$ they coincide:
 
 $$
 Q = (q-q')\Pi_1 + (q+q')\Pi_2 = (q-q')\tfrac{1+j}{2} + (q+q')\tfrac{1-j}{2} = q - j q' = \bar Q.
@@ -19,12 +19,12 @@ So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the 
 
 ## The Distinguished Subspaces at a Glance
 
-The involution $\bar{\cdot}$ splits $\mathbb{C}^{\mathrm{spl}}$ into its fixed line and its anti-fixed line, and the idempotent basis adds the two finer lines.
+The involution $\bar{\cdot}$ splits $\mathbb{C}_{\mathrm{spl}}$ into its fixed line and its anti-fixed line, and the idempotent basis adds the two finer lines.
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra? | restricted $\langle\cdot\rangle$ |
 |---|---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\bar Q = Q$ | $1$ | $1$ | yes, $\cong\mathbb{R}$ | $q^2$, positive definite |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\bar Q = -Q$ | $j$ | $1$ | no | $-q'^2$, negative definite |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\bar Q = Q$ | $1$ | $1$ | yes, $\cong\mathbb{R}$ | $q^2$, positive definite |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\bar Q = -Q$ | $j$ | $1$ | no | $-q'^2$, negative definite |
 | $\mathbb{R}\Pi_1$ | $q_- = 0$ | $\Pi_1$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
 | $\mathbb{R}\Pi_2$ | $q_+ = 0$ | $\Pi_2$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
 
@@ -36,17 +36,17 @@ The involution gives the **scalar–split-vector decomposition**
 
 $$
 \boxed{\;
-\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} \oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}, \qquad Q = q_r + j q_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q'
+\mathbb{C}_{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} \oplus j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}, \qquad Q = q_r + j q_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q'
 \;},
 $$
 
 and the idempotent basis gives the **idempotent decomposition**
 
 $$
-\mathbb{C}^{\mathrm{spl}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Q = q_+\Pi_1 + q_-\Pi_2, \qquad q_+ = Q\Pi_1 = q+q', \quad q_- = Q\Pi_2 = q-q'.
+\mathbb{C}_{\mathrm{spl}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Q = q_+\Pi_1 + q_-\Pi_2, \qquad q_+ = Q\Pi_1 = q+q', \quad q_- = Q\Pi_2 = q-q'.
 $$
 
-The two decompositions are related by the coefficient change-of-basis in the plane $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}^2$:
+The two decompositions are related by the coefficient change-of-basis in the plane $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}^2$:
 
 $$
 q_+ = q_r + q_i, \qquad q_- = q_r - q_i,
@@ -64,7 +64,7 @@ Here there are two such decompositions, and only the first is induced by an invo
 
 ## The Four Coordinate Lines
 
-The two real coordinates of $\mathbb{C}^{\mathrm{spl}}$ are $(q,q')$, in the basis $\{1,j\}$. They group into the two lines
+The two real coordinates of $\mathbb{C}_{\mathrm{spl}}$ are $(q,q')$, in the basis $\{1,j\}$. They group into the two lines
 
 $$
 \langle 1\rangle = \{(q,0)\}, \qquad \langle j\rangle = \{(0,q')\},
@@ -89,10 +89,10 @@ the two diagonal directions. The four lines are pairwise distinct: the coordinat
 
 With only four one-dimensional lines through the origin, the intersection table is immediate: distinct lines meet only at the origin, and each line meets itself in itself.
 
-| | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\mathbb{R}\Pi_1$ | $\mathbb{R}\Pi_2$ |
+| | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\mathbb{R}\Pi_1$ | $\mathbb{R}\Pi_2$ |
 |---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $1$ | $0$ | $0$ | $0$ |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $0$ | $1$ | $0$ | $0$ |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $1$ | $0$ | $0$ | $0$ |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $0$ | $1$ | $0$ | $0$ |
 | $\mathbb{R}\Pi_1$ | $0$ | $0$ | $1$ | $0$ |
 | $\mathbb{R}\Pi_2$ | $0$ | $0$ | $0$ | $1$ |
 
@@ -107,32 +107,32 @@ Two features are worth isolating:
 
 Every pair of distinct lines spans a plane, and every pair with a repeated line has the dimension of that line.
 
-| | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\mathbb{R}\Pi_1$ | $\mathbb{R}\Pi_2$ |
+| | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\mathbb{R}\Pi_1$ | $\mathbb{R}\Pi_2$ |
 |---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $1$ | $2$ | $2$ | $2$ |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $2$ | $1$ | $2$ | $2$ |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $1$ | $2$ | $2$ | $2$ |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $2$ | $1$ | $2$ | $2$ |
 | $\mathbb{R}\Pi_1$ | $2$ | $2$ | $1$ | $2$ |
 | $\mathbb{R}\Pi_2$ | $2$ | $2$ | $2$ | $1$ |
 
-Every off-diagonal sum has dimension $2 = \dim\mathbb{C}^{\mathrm{spl}}$, so **every pair of distinct distinguished lines spans the whole algebra**. This is the statement that any two of the four lines are complementary direct summands, and it is the reason $\mathbb{C}^{\mathrm{spl}}$ carries two decompositions into pairs of the four lines:
+Every off-diagonal sum has dimension $2 = \dim\mathbb{C}_{\mathrm{spl}}$, so **every pair of distinct distinguished lines spans the whole algebra**. This is the statement that any two of the four lines are complementary direct summands, and it is the reason $\mathbb{C}_{\mathrm{spl}}$ carries two decompositions into pairs of the four lines:
 
 $$
-\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} \oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2.
+\mathbb{C}_{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} \oplus j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2.
 $$
 
 In the four-dimensional case only the three decomposition pairs span the algebra; here all six pairs of distinct lines do, simply because there are only two dimensions to fill.
 
 ## The Failure of a Remarkable-Subspace Lattice
 
-In $\mathbb{C}^{\mathrm{spl}}$ the conjugation group is
+In $\mathbb{C}_{\mathrm{spl}}$ the conjugation group is
 
 $$
 \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2,
 $$
 
-with a single non-trivial element, so the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$. A remarkable-subspace lattice would require three independent involutions and their products; there is only one, and the idempotent conjugation does not add a second, since it equals the first.
+with a single non-trivial element, so the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$. A remarkable-subspace lattice would require three independent involutions and their products; there is only one, and the idempotent conjugation does not add a second, since it equals the first.
 
-There is, of course, a finer decomposition of the plane into the two idempotent lines, and in that sense one may say the plane carries four distinguished lines rather than two. But the four do not form a lattice under intersection and sum: they form the two bases of the two decompositions, with all cross-intersections zero and all cross-sums equal to the whole plane. The honest statement is that the involution lattice of $\mathbb{C}^{\mathrm{spl}}$ is the two-element chain of the single involution, and the idempotent lines are a second, non-involution decomposition.
+There is, of course, a finer decomposition of the plane into the two idempotent lines, and in that sense one may say the plane carries four distinguished lines rather than two. But the four do not form a lattice under intersection and sum: they form the two bases of the two decompositions, with all cross-intersections zero and all cross-sums equal to the whole plane. The honest statement is that the involution lattice of $\mathbb{C}_{\mathrm{spl}}$ is the two-element chain of the single involution, and the idempotent lines are a second, non-involution decomposition.
 
 ## The Action of the Involution
 
@@ -140,8 +140,8 @@ The conjugation $\bar{\cdot}$ preserves each of the four lines, acting on each b
 
 | line | $\bar{\cdot}$ action | eigenvalue |
 |---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\bar Q = Q$ | $+1$ |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\bar Q = -Q$ | $-1$ |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\bar Q = Q$ | $+1$ |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\bar Q = -Q$ | $-1$ |
 | $\mathbb{R}\Pi_1$ | $\overline{\lambda \Pi_1} = \lambda \Pi_2$ | swaps with $\mathbb{R}\Pi_2$ |
 | $\mathbb{R}\Pi_2$ | $\overline{\lambda \Pi_2} = \lambda \Pi_1$ | swaps with $\mathbb{R}\Pi_1$ |
 
@@ -161,8 +161,8 @@ The restricted norm is definite on the two eigenlines and identically zero on th
 
 | line | restricted $\langle\cdot\rangle$ | signature | zero divisors on the line |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\langle q\rangle = q^2$ | positive definite | none |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\langle j q'\rangle = -q'^2$ | negative definite | none |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\langle q\rangle = q^2$ | positive definite | none |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | $\langle j q'\rangle = -q'^2$ | negative definite | none |
 | $\mathbb{R}\Pi_1$ | $\langle \lambda \Pi_1\rangle = 0$ | zero | all nonzero elements |
 | $\mathbb{R}\Pi_2$ | $\langle \lambda \Pi_2\rangle = 0$ | zero | all nonzero elements |
 
@@ -178,12 +178,12 @@ $$
 \mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ia'\},
 $$
 
-exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{C}^{\mathrm{spl}}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ it is $-q'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\omega^2 = \omega$ in a field forces $\omega = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{C}^{\mathrm{spl}}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
+exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{C}_{\mathrm{spl}}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ it is $-q'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\omega^2 = \omega$ in a field forces $\omega = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{C}_{\mathrm{spl}}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
 
-| feature | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| feature | $\mathbb{C}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 |---|---|---|
 | non-trivial involutions | $1$ | $1$ |
-| involutive lines | $\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$ | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ |
+| involutive lines | $\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$ | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ |
 | norm on the anti-fixed line | $+a'^2$ (definite) | $-q'^2$ (definite) |
 | idempotents beyond $0,1$ | none | $\Pi_1, \Pi_2$ |
 | idempotent lines | none | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ |
@@ -209,7 +209,7 @@ both nonzero, so $Q$ is a unit; and $Q = 4 + 3 j = 7\Pi_1 + 1\Pi_2$, an identity
 
 ### A Pair of Lines That Spans the Plane
 
-The lines $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $Q = j q'$ along them,
+The lines $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $Q = j q'$ along them,
 
 $$
 j q' = -q' + 2q' \Pi_1,
@@ -223,7 +223,7 @@ For $Q = 4+3j$ the involution gives $\bar Q = 4-3j$; in the eigenbasis this flip
 
 ## Summary
 
-The split-complex algebra has one non-trivial involution, the conjugation $\bar Q = q-jq'$, which coincides with the idempotent conjugation. It defines the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.
+The split-complex algebra has one non-trivial involution, the conjugation $\bar Q = q-jq'$, which coincides with the idempotent conjugation. It defines the real line $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.
 
 There is no remarkable-subspace lattice, because there is only one non-trivial involution; the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ on the two eigenlines, and the idempotent lines form a second, non-involution decomposition. Compared with $\mathbb{C}$, the split-complex algebra has the same two involutive lines but with the imaginary line's norm reversed in sign, and it has in addition the two idempotent lines, which the field lacks because it has no nontrivial idempotents.
 
@@ -231,12 +231,12 @@ There is no remarkable-subspace lattice, because there is only one non-trivial i
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $Q = q + j q'$ | General split complex number |
 | $\bar{Q} = q - j q'$ | The unique non-trivial involution |
 | $\tilde{Q} = \bar{Q}$ | Idempotent conjugation; equal to $\bar{Q}$ |
-| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Real subspace, $+1$ eigenspace of $\bar{\cdot}$ |
-| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
+| $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | Real subspace, $+1$ eigenspace of $\bar{\cdot}$ |
+| $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
 | $\Pi_1 = \tfrac12(1+j)$, $\Pi_2 = \tfrac12(1-j)$ | Idempotents, basis of the finer decomposition |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two isotropic lines |
 | $q_r = q, q_i = q'$ | Eigenline coordinates |

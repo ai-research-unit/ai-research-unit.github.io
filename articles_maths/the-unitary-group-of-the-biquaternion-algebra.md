@@ -99,7 +99,7 @@ $$
 \pi_1(\mathbb{B}^{\times}_1)=0,\quad \pi_2(\mathbb{B}^{\times}_1)=0,\quad \pi_3(\mathbb{B}^{\times}_1)\cong\mathbb{Z},
 $$
 
-and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}(\mathbb{B})^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
+and the universal covers are $(\mathbb{B}^\times)_{\mathrm{cov}}\cong \mathrm{U}(\mathbb{B})_{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
 
 **Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_1=\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of units by the homotopy equivalence.
 
@@ -154,7 +154,7 @@ The **$*$-unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde Q^{*}\tilde Q
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
 | $\mathrm{Sd}_{\tilde Q}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
-| $(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
+| $(\mathbb{B}^\times)_{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
 
 ## Further Reading
 

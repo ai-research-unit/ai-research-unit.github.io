@@ -61,11 +61,11 @@ so the twist of the left regular module is the right regular module up to the co
 
 **Proof.** The map $\sigma$ is bijective, being an involution, hence of order two; for the right actions, $\sigma(\tilde Q_1\cdot\tilde Q)=\sigma(\sigma(\tilde Q)\tilde Q_1)=\sigma(\tilde Q_1)\sigma(\sigma(\tilde Q))=\sigma(\tilde Q_1)\tilde Q$, which is the ordinary right action on $\sigma(\tilde Q_1)$; and additivity is the additivity of $\sigma$.
 
-**Corollary (the two cases).** Through the star the twist of ${}_{\mathbb{B}}\mathbb{B}$ is the right regular module $\mathbb{B}_{\mathbb{B}}$ under the antilinear comparison $\tilde Q_1\mapsto\tilde Q_1^{*}$; through the natural sign it is the same statement under a $\mathbb{C}$-linear comparison. The two one-sided regular modules, which the module theory of *The Category of Modules* keeps apart as $\mathbb{B}$ and $\mathbb{B}^{\mathrm{opp}}$, are interchangeable through an involution, and the statement $\mathbb{B}\cong\mathbb{B}^{\mathrm{opp}}$ of the module theory is the twist read backwards.
+**Corollary (the two cases).** Through the star the twist of ${}_{\mathbb{B}}\mathbb{B}$ is the right regular module $\mathbb{B}_{\mathbb{B}}$ under the antilinear comparison $\tilde Q_1\mapsto\tilde Q_1^{*}$; through the natural sign it is the same statement under a $\mathbb{C}$-linear comparison. The two one-sided regular modules, which the module theory of *The Category of Modules* keeps apart as $\mathbb{B}$ and $\mathbb{B}_{\mathrm{opp}}$, are interchangeable through an involution, and the statement $\mathbb{B}\cong\mathbb{B}_{\mathrm{opp}}$ of the module theory is the twist read backwards.
 
 ## The Involution Is the Symmetry of the Bimodule
 
-**Definition.** Let $\sigma$ be an involution of $\mathbb{B}$. The **$\sigma$-swap** of the regular bimodule, written ${}^{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$, is the same additive group with the left and the right actions interchanged and read through $\sigma$:
+**Definition.** Let $\sigma$ be an involution of $\mathbb{B}$. The **$\sigma$-swap** of the regular bimodule, written ${}_{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$, is the same additive group with the left and the right actions interchanged and read through $\sigma$:
 
 $$
 \tilde Q_4\cdot\tilde Q_2=\tilde Q_2\sigma(\tilde Q_4),\qquad \tilde Q_2\cdot\tilde Q_3=\sigma(\tilde Q_3)\tilde Q_2 .
@@ -76,10 +76,10 @@ For the identity involution of a commutative ring the two actions are simply int
 **Proposition.** An involution $\sigma$ is an isomorphism of bimodules
 
 $$
-\sigma:{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\longrightarrow{}^{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma},\qquad \sigma(\tilde Q_4\tilde Q_1\tilde Q_3)=\sigma(\tilde Q_3)\sigma(\tilde Q_1)\sigma(\tilde Q_4),
+\sigma:{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\longrightarrow{}_{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma},\qquad \sigma(\tilde Q_4\tilde Q_1\tilde Q_3)=\sigma(\tilde Q_3)\sigma(\tilde Q_1)\sigma(\tilde Q_4),
 $$
 
-and conversely every bimodule isomorphism ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\to{}^{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$ is $\tilde Q_1\mapsto\tilde D\,\sigma(\tilde Q_1)$ with $\tilde D$ a central unit; it is an anti-automorphism, hence its own inverse when normalised at the unit, exactly when $\tilde D=e_t$. For the biquaternion algebra the central units are the non-zero complex scalars $\tilde D=\lambda e_t$, $\lambda\in\mathbb{C}^{\times}$, so each involution is one member of a one-parameter family of symmetries of the bimodule.
+and conversely every bimodule isomorphism ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\to{}_{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$ is $\tilde Q_1\mapsto\tilde D\,\sigma(\tilde Q_1)$ with $\tilde D$ a central unit; it is an anti-automorphism, hence its own inverse when normalised at the unit, exactly when $\tilde D=e_t$. For the biquaternion algebra the central units are the non-zero complex scalars $\tilde D=\lambda e_t$, $\lambda\in\mathbb{C}^{\times}$, so each involution is one member of a one-parameter family of symmetries of the bimodule.
 
 **Proof.** That $\sigma$ is bijective and additive is the definition of an involution. Inserting $\sigma$ into the target, $\tilde Q_4\cdot\sigma(\tilde Q_1)\cdot\tilde Q_3=\bigl(\sigma(\tilde Q_3)\sigma(\tilde Q_1)\bigr)\sigma(\tilde Q_4)=\sigma(\tilde Q_3)\sigma(\tilde Q_1)\sigma(\tilde Q_4)$, which is the anti-multiplicativity of $\sigma$ applied to $\tilde Q_4\tilde Q_1\tilde Q_3$; so $\sigma$ intertwines the two structures. For the converse, let $\varphi$ be such an isomorphism and put $\tilde D=\varphi(e_t)$. Left linearity gives $\varphi(\tilde Q_4)=\tilde Q_4\cdot\varphi(e_t)=\varphi(e_t)\sigma(\tilde Q_4)=\tilde D\sigma(\tilde Q_4)$, and right linearity gives $\varphi(\tilde Q_3)=\varphi(e_t)\cdot\tilde Q_3=\sigma(\tilde Q_3)\varphi(e_t)=\sigma(\tilde Q_3)\tilde D$; the two agree on every element exactly when $\tilde D$ commutes with every $\sigma(\tilde Q_3)$, that is when $\tilde D$ is central, and it is a unit because $\varphi$ is bijective. Then $\varphi(\tilde Q_4\tilde Q_3)=\tilde D\sigma(\tilde Q_4\tilde Q_3)$ while $\varphi(\tilde Q_3)\varphi(\tilde Q_4)=\tilde D\sigma(\tilde Q_3)\tilde D\sigma(\tilde Q_4)=\tilde D^2\sigma(\tilde Q_3)\sigma(\tilde Q_4)$, so $\varphi$ is an anti-homomorphism exactly when $\tilde D=e_t$, and then it is the involution $\sigma$. The central units are the non-zero complex scalars by the centre computation of *The Biquaternion Algebra*.
 
@@ -143,7 +143,7 @@ so that $h(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde Q_1+\tilde Q
 
 **Proposition.** The $\mathbb{B}$-linear automorphisms of $h$ are exactly the right multiplications $R_{\tilde Q}$ by the $*$-unitary elements $\tilde Q\in U_{{}^{*}}(\mathbb{B})$, and they form a group isomorphic to $U_{{}^{*}}(\mathbb{B})$. A left multiplication $L_{\tilde Q}$ is a form-preserving map exactly when $\tilde Q$ is a central $*$-unitary element, that is $\tilde Q=\lambda e_t$ with $|\lambda|=1$.
 
-**Proof.** The $\mathbb{B}$-linear endomorphisms of ${}_{\mathbb{B}}\mathbb{B}$ are the right multiplications $R_{\tilde Q_3}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$, by *The Category of Modules*. Now
+**Proof.** The $\mathbb{B}$-linear endomorphisms of ${}_{\mathbb{B}}\mathbb{B}$ are the right multiplications $R_{\tilde Q_3}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}_{\mathrm{opp}}$, by *The Category of Modules*. Now
 
 $$
 h(\tilde Q_1\tilde Q_3,\tilde Q_2\tilde Q_3)=\tilde Q_1\langle\tilde Q_2\tilde Q_3\rangle^{*}=\tilde Q_1\tilde Q_3\tilde Q_3^{*}\tilde Q_2^{*}=\tilde Q_1\,(\tilde Q_3\tilde Q_3^{*})\,\tilde Q_2^{*},
@@ -169,7 +169,7 @@ For an involution $\sigma$ of the biquaternion algebra and the left regular modu
 | $\bar{\tilde Q}_1\bar{\tilde Q_2}=\overline{\tilde Q_1\tilde Q_2}$ | the bar reverses nothing, an automorphism |
 | $({}_{\mathbb{B}}\mathbb{B})^{\sigma}$, $\tilde Q_1\cdot\tilde Q=\sigma(\tilde Q)\tilde Q_1$ | the twist of the left regular module |
 | $\sigma:({}_{\mathbb{B}}\mathbb{B})^{\sigma}\to\mathbb{B}_{\mathbb{B}}$ | the twist of the left regular module is the right one |
-| ${}^{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$ | the $\sigma$-swap of the regular bimodule |
+| ${}_{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}^{\sigma}$ | the $\sigma$-swap of the regular bimodule |
 | $\sigma(\tilde Q_4\tilde Q_1\tilde Q_3)=\sigma(\tilde Q_3)\sigma(\tilde Q_1)\sigma(\tilde Q_4)$ | the involution is the bimodule $\sigma$-swap isomorphism |
 | $\varphi(\tilde Q_1)=\tilde D\,\sigma(\tilde Q_1)$, $\tilde D$ central unit | every bimodule $\sigma$-swap isomorphism, $\tilde D=\lambda e_t$ |
 | $h(\tilde Q_1,\tilde Q_2)=\tilde Q_1\tilde Q_2^{*}$ | the canonical Hermitian form on ${}_{\mathbb{B}}\mathbb{B}$ |

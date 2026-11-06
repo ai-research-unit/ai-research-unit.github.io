@@ -51,7 +51,7 @@ There is no angle. The factor two is nevertheless the same factor two as in the 
 
 ### The Boost
 
-The exponent is $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the output is the rapidity $\theta^{\mathrm{rpd}}$. The parameter of the factor is half the parameter of its image, and the doubling is exact. The boost is Hermitian, so both slots carry the exponent with the same sign; the sandwich adds the two exponents instead of cancelling them, and the sum is $2\cdot\tfrac{\theta^{\mathrm{rpd}}}{2}=\theta^{\mathrm{rpd}}$.
+The exponent is $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the output is the rapidity $\theta_{\mathrm{rpd}}$. The parameter of the factor is half the parameter of its image, and the doubling is exact. The boost is Hermitian, so both slots carry the exponent with the same sign; the sandwich adds the two exponents instead of cancelling them, and the sum is $2\cdot\tfrac{\theta_{\mathrm{rpd}}}{2}=\theta_{\mathrm{rpd}}$.
 
 ### The Rotor
 
@@ -61,11 +61,11 @@ The exponent is $\tfrac{\theta}{2}\vec u_{\mathrm r}$ and the output is the rota
 
 For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\alpha)$ and products $\exp(i\alpha)\exp(-i\alpha)=1$. The boost has
 $$
-\lambda_+=e^{-\theta^{\mathrm{rpd}}/2},\qquad \lambda_-=e^{\theta^{\mathrm{rpd}}/2},
+\lambda_+=e^{-\theta_{\mathrm{rpd}}/2},\qquad \lambda_-=e^{\theta_{\mathrm{rpd}}/2},
 $$
 so its products are
 $$
-e^{-\theta^{\mathrm{rpd}}},\quad 1,\quad 1,\quad e^{\theta^{\mathrm{rpd}}}.
+e^{-\theta_{\mathrm{rpd}}},\quad 1,\quad 1,\quad e^{\theta_{\mathrm{rpd}}}.
 $$
 The rotor has
 $$
@@ -75,15 +75,15 @@ so its products are
 $$
 e^{i\theta},\quad 1,\quad 1,\quad e^{-i\theta}.
 $$
-The sandwich therefore carries the full rapidity $\theta^{\mathrm{rpd}}$ and the full angle $\theta$, while the one-sided operator carries the half-rapidity and the half-angle. The phase cancels and the scale doubles.
+The sandwich therefore carries the full rapidity $\theta_{\mathrm{rpd}}$ and the full angle $\theta$, while the one-sided operator carries the half-rapidity and the half-angle. The phase cancels and the scale doubles.
 
-**The one-sided operator is the spinor action.** The sandwich has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion*, §*The Exponential Polar Word on a Spinor*. The half-angle $\theta/2$ and the half-rapidity $\theta^{\mathrm{rpd}}/2$ live on a single slot; this article computes their products, which are the full angle $\theta$ and the full rapidity $\theta^{\mathrm{rpd}}$.
+**The one-sided operator is the spinor action.** The sandwich has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion*, §*The Exponential Polar Word on a Spinor*. The half-angle $\theta/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot; this article computes their products, which are the full angle $\theta$ and the full rapidity $\theta_{\mathrm{rpd}}$.
 
 | factor | one-slot pair $(\lambda_+,\lambda_-)$ | two-slot products | output |
 |---|---|---|---|
 | scale $r$ | $(r,r)$ | $r^{2},r^{2},r^{2},r^{2}$ | dilation $r^{2}$ |
 | phase $\exp(i\alpha)$ | $(e^{i\alpha},e^{i\alpha})$ | $1,1,1,1$ | identity |
-| boost $\tilde U_{\mathrm b}$ | $(e^{-\theta^{\mathrm{rpd}}/2},e^{\theta^{\mathrm{rpd}}/2})$ | $e^{-\theta^{\mathrm{rpd}}},1,1,e^{\theta^{\mathrm{rpd}}}$ | rapidity $\theta^{\mathrm{rpd}}$ |
+| boost $\tilde U_{\mathrm b}$ | $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ | $e^{-\theta_{\mathrm{rpd}}},1,1,e^{\theta_{\mathrm{rpd}}}$ | rapidity $\theta_{\mathrm{rpd}}$ |
 | rotor $\tilde u_{\mathrm r}$ | $(e^{i\theta/2},e^{-i\theta/2})$ | $e^{i\theta},1,1,e^{-i\theta}$ | angle $\theta$ |
 
 The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$ and the spectrum collapses to $Q_t\bar Q_t$.
@@ -104,9 +104,9 @@ $$
 $$
 so the sandwich is the vector and the one-sided operator, on one slot, is the spinor.
 
-The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta/2}$; the four sums are $\theta,0,0,-\theta$. For the boost, both slots carry $e^{\mp\theta^{\mathrm{rpd}}/2}$ because the boost is Hermitian; the four sums are $\theta^{\mathrm{rpd}},0,0,-\theta^{\mathrm{rpd}}$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
+The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta/2}$; the four sums are $\theta,0,0,-\theta$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian; the four sums are $\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}}$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
 
-**The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\theta^{\mathrm{rpd}}/2$ live on a single slot, in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion*, §*The Exponential Polar Word on a Spinor*. The sandwich is the double of the half-spin, not a half-spin itself.
+**The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot, in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion*, §*The Exponential Polar Word on a Spinor*. The sandwich is the double of the half-spin, not a half-spin itself.
 
 **The two Peirce copies are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
 
@@ -122,7 +122,7 @@ The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$
 |---|---|---|---|---|---|
 | scale $r$ | $\ln r$ | real scalar | $r^{2}\tilde X$ | $2\ln r$ | none |
 | phase $\exp(i\alpha)$ | $i\alpha$ | imaginary scalar | $\tilde X$ | $0$ | none |
-| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | imaginary vector | congruence | rapidity $\theta^{\mathrm{rpd}}$ | rapidity |
+| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | imaginary vector | congruence | rapidity $\theta_{\mathrm{rpd}}$ | rapidity |
 | rotor $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | real vector | automorphism | angle $\theta$ | rotation |
 
 The table is a table of exponents, not of angles alone. The scale doubles its exponent and produces no angle; the phase produces no exponent and no angle; the boost and the rotor double theirs and produce a rapidity and a rotation.
@@ -160,9 +160,9 @@ The doubling is therefore a property of the non-central factors, and of the Herm
 
 The one-parameter group of the sandwich is read on the spectrum. On $\Sigma_{11}$ the sandwich has the four eigenvalues $\lambda_i\bar\lambda_j$, and its exponential has their exponentials; its determinant is $\exp(4t\lvert Q_t\rvert^{2})$. There is no element identity $\exp(t\mathrm{Sd}_{\tilde Q})=\mathrm{Sd}_{\exp(t\tilde Q)}$, because the sandwich is quadratic; for a central element the two sides differ by the square of the modulus against twice its real part.
 
-The four factors give the table of exponents. The scale doubles $\ln r$ to $2\ln r$; the phase cancels $i\alpha$ to $0$; the boost doubles $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ to the rapidity $\theta^{\mathrm{rpd}}$; the rotor doubles $\tfrac{\theta}{2}\vec u_{\mathrm r}$ to the angle $\theta$. The rule is the number of slots: the Hermitian factors carry the same exponent twice, the $*$-unitary non-central factor carries opposite exponents whose conjugation produces the angle, and the central $*$-unitary factor cancels.
+The four factors give the table of exponents. The scale doubles $\ln r$ to $2\ln r$; the phase cancels $i\alpha$ to $0$; the boost doubles $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ to the rapidity $\theta_{\mathrm{rpd}}$; the rotor doubles $\tfrac{\theta}{2}\vec u_{\mathrm r}$ to the angle $\theta$. The rule is the number of slots: the Hermitian factors carry the same exponent twice, the $*$-unitary non-central factor carries opposite exponents whose conjugation produces the angle, and the central $*$-unitary factor cancels.
 
-The spectral reading is the product formula. The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-slot products are $e^{\pm i\theta}$; the one-slot pair of the boost is $(e^{-\theta^{\mathrm{rpd}}/2},e^{\theta^{\mathrm{rpd}}/2})$ and the products are $e^{\pm\theta^{\mathrm{rpd}}}$; the scale gives $r^{2}$ and the phase gives $1$. In representation-theoretic terms the sandwich is $\rho\otimes\bar\rho$, the complexified vector representation, and the vector weights are the sums of the two spinor weights. The one-sided operator is the spinor action, and the sandwich is its double.
+The spectral reading is the product formula. The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-slot products are $e^{\pm i\theta}$; the one-slot pair of the boost is $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ and the products are $e^{\pm\theta_{\mathrm{rpd}}}$; the scale gives $r^{2}$ and the phase gives $1$. In representation-theoretic terms the sandwich is $\rho\otimes\bar\rho$, the complexified vector representation, and the vector weights are the sums of the two spinor weights. The one-sided operator is the spinor action, and the sandwich is its double.
 
 ## Summary of Notation
 
@@ -172,9 +172,9 @@ The spectral reading is the product formula. The one-slot pair of the rotor is $
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $\tilde Q$ |
 | $\lambda_i\bar\lambda_j$ | the four eigenvalues of the sandwich |
 | $\Rho=r\exp(i\alpha)$ | the complex modulus |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
+| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotation angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotation angle |
 | $S,S^{*}$ | the spinor space and its dual, $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation and its conjugate |
 

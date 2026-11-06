@@ -189,7 +189,7 @@ At $\vec\Upsilon=0$ the element is $Q_t e_t$ and $L_{\tilde Q}=Q_t I_4$: spectru
 | $L_{\tilde Q},R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
 | $\Rho$ | the modulus |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\vec A,\vec B$ | the real and imaginary parts of $\vec\Upsilon$ |
 | $a$ | the null parameter, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$ |
 | $L_{\vec\Upsilon}$ | left multiplication by the null vector |

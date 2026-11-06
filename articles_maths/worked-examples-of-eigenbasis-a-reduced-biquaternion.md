@@ -110,18 +110,18 @@ $$
 The Peirce corners relative to $\Pi_+$ are
 
 $$
-\mathbb{B}^{\mathrm{red}}_{++}=\mathbb{C}\Pi_+,
+\mathbb{B}_{\mathrm{red},++}=\mathbb{C}\Pi_+,
 \qquad
-\mathbb{B}^{\mathrm{red}}_{--}=\mathbb{C}\Pi_-,
+\mathbb{B}_{\mathrm{red},--}=\mathbb{C}\Pi_-,
 \qquad
-\mathbb{B}^{\mathrm{red}}_{+-}=\mathbb{B}^{\mathrm{red}}_{-+}=0.
+\mathbb{B}_{\mathrm{red},+-}=\mathbb{B}_{\mathrm{red},-+}=0.
 $$
 
 The mixed corners vanish because the idempotents are central. The eigenvalue decomposition is the Peirce decomposition read on the element, and the two Peirce coordinates of $\breve Q$ are its two eigenvalues.
 
 ### The Eigenbasis
 
-The pair $(\Pi_+,\Pi_-)$ is a $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$, and in this basis multiplication by $\breve Q$ is diagonal:
+The pair $(\Pi_+,\Pi_-)$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{red}}$, and in this basis multiplication by $\breve Q$ is diagonal:
 
 $$
 \breve Q\Pi_+=\lambda_+\Pi_+,
@@ -824,11 +824,11 @@ and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spin
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{red}}$ | the reduced biquaternion algebra, $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ |
+| $\mathbb{B}_{\mathrm{red}}$ | the reduced biquaternion algebra, $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a reduced biquaternion |
 | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the two eigenvalues |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two eigenprojections |
-| $\mathbb{B}^{\mathrm{red}}_{\sigma\tau}$ | the Peirce corners |
+| $\mathbb{B}_{\mathrm{red},\sigma\tau}$ | the Peirce corners |
 | $S_\pm=\mathbb{C}\Pi_\pm$ | the two spinor spaces |
 | $\mathsf M(\breve Q)$ | the matrix of multiplication by $\breve Q$ in the basis $(1,j)$ |
 | $C$ | the change to the eigenbasis |

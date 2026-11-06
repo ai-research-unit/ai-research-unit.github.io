@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is about the polar decomposition in the split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$, the second of the four algebras whose polar decompositions this series treats. The result is that an invertible split quaternion is the product of three factors,
+This article is about the polar decomposition in the split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$, the second of the four algebras whose polar decompositions this series treats. The result is that an invertible split quaternion is the product of three factors,
 
 $$
 \tilde q = r\,b\,\tilde u_{\mathrm r},
@@ -67,7 +67,7 @@ The polar decomposition is a statement about the two invertible classes, and the
 
 ### The Matrix Model
 
-Under the isomorphism $\mathsf{M}_2 : \mathbb{H}^{\mathrm{spl}} \to M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, fixed on the basis by
+Under the isomorphism $\mathsf{M}_2 : \mathbb{H}_{\mathrm{spl}} \to M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, fixed on the basis by
 
 $$
 \mathsf{M}_2(1) = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}, \qquad
@@ -124,15 +124,15 @@ which is the algebra's name for $XX^{T}$ and which is symmetric and positive def
 
 ### The Definition
 
-**Definition.** Let $\tilde q \in \mathbb{H}^{\mathrm{spl}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar decomposition** of $\tilde q$ is the writing
+**Definition.** Let $\tilde q \in \mathbb{H}_{\mathrm{spl}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar decomposition** of $\tilde q$ is the writing
 
 $$
-\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}^{\mathrm{spl}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}^{\mathrm{spl}},\quad \tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1,
+\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{spl}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{spl}},\quad \tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1,
 $$
 
 in which $r$ is the **modulus**, $b$ the **unit boost** and $\tilde u_{\mathrm r}$ the **orthogonal factor**.
 
-Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of units** ${\mathbb{H}^{\mathrm{spl}}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
+Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of units** ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
 
 The definition is stated before its existence is proved, and it contains three conditions that are not independent: a symmetric element of the algebra is positive definite exactly when its two eigenvalues are positive, and the normalisation $\langle b\rangle_{\natural} = 1$ fixes the product of those eigenvalues. The conditions are collected in the proposition below.
 
@@ -276,7 +276,7 @@ with $\theta$ the rotation angle and the exponent $\theta/2$ read modulo $2\pi$;
 
 ### The Reflection Component
 
-Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}^{\mathrm{spl}}$ with $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is
+Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{spl}}$ with $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is
 
 $$
 \tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\,\vec e_y ,
@@ -348,7 +348,7 @@ The failure is characteristic of the null cone and not of a particular element: 
 
 The two decompositions differ in structure, and the difference is summarised by which of the four series slots are occupied. The counts are real dimensions of the corresponding factor sets.
 
-| slot | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$, timelike | $\mathbb{H}^{\mathrm{spl}}$, spacelike |
+| slot | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$, timelike | $\mathbb{H}_{\mathrm{spl}}$, spacelike |
 |---|---|---|---|
 | scale $r$ | $1$ | $1$ | $1$ |
 | central phase | $0$ | $0$ | $0$ |
@@ -358,11 +358,11 @@ The two decompositions differ in structure, and the difference is summarised by 
 
 Three points of the comparison are worth stating explicitly.
 
-**The modulus is still a real scale, but its formula is not.** In $\mathbb{H}$ the modulus is $\sqrt{\langle\tilde q\rangle_{\natural}}$ and needs no absolute value, because the quaternion norm is definite. In $\mathbb{H}^{\mathrm{spl}}$ it is $\sqrt{|\langle\tilde q\rangle_{\natural}|}$, and the absolute value is not a cosmetic convenience: it is the statement that the split-quaternion norm takes both signs.
+**The modulus is still a real scale, but its formula is not.** In $\mathbb{H}$ the modulus is $\sqrt{\langle\tilde q\rangle_{\natural}}$ and needs no absolute value, because the quaternion norm is definite. In $\mathbb{H}_{\mathrm{spl}}$ it is $\sqrt{|\langle\tilde q\rangle_{\natural}|}$, and the absolute value is not a cosmetic convenience: it is the statement that the split-quaternion norm takes both signs.
 
 **A boost appears, and a rotation direction disappears.** The quaternion algebra has three compact directions, the unit sphere $\mathrm{Sp}(1)$; the split-quaternion algebra has one, the circle generated by $\vec e_x$. The two directions lost from the compact part are exactly the two directions gained by the boost, and the total remains four. In the biquaternion algebra of the companion article both a three-dimensional boost and a three-parameter rotor are present, and both survive because the algebra is eight-dimensional.
 
-**The centre contributes nothing in either case.** The centre of $\mathbb{H}^{\mathrm{spl}}$ is $\mathbb{R}$, so there is no central phase factor, just as in $\mathbb{H}$. The centre-valued factor is of dimension one in the biquaternion algebra and provides the fourth factor there.
+**The centre contributes nothing in either case.** The centre of $\mathbb{H}_{\mathrm{spl}}$ is $\mathbb{R}$, so there is no central phase factor, just as in $\mathbb{H}$. The centre-valued factor is of dimension one in the biquaternion algebra and provides the fourth factor there.
 
 ## Summary
 
@@ -378,12 +378,12 @@ in which $b$ is the unique symmetric positive definite element with $b_{\tau} = 
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra, basis $1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$ |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, basis $1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$ |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a split quaternion |
 | $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | the conjugation that defines the split-quaternion norm |
 | $\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | the transpose involution, the image of the matrix transpose |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, of signature $(2,2)$ |
-| $\mathsf{M}_2$ | the isomorphism $\mathbb{H}^{\mathrm{spl}} \to M_2(\mathbb{R})$ |
+| $\mathsf{M}_2$ | the isomorphism $\mathbb{H}_{\mathrm{spl}} \to M_2(\mathbb{R})$ |
 | $\Sigma = \tilde q\tilde q_{\tau}$, $P = \sqrt{\Sigma}$ | the positive element and its symmetric positive definite square root |
 | $r = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |
 | $b = P/r$ | the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$ |

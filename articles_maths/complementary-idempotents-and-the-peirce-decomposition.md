@@ -250,7 +250,7 @@ and the two diagonal terms are positive. Hence the sum of the squares of the cor
 
 **Definition.** An **atom** of $B(A)$ is a minimal nonzero central idempotent.
 
-**Proposition.** In a finite-dimensional algebra, the atoms of $B(A)$ are pairwise orthogonal, finitely many, and sum to $1_A$. If $e$ is an atom, the two-sided ideal $Ae$ is indecomposable as a unital algebra, and $A\cong\prod_{e\ \mathrm{atom}}Ae$.
+**Proposition.** In a finite-dimensional algebra, the atoms of $B(A)$ are pairwise orthogonal, finitely many, and sum to $1_A$. If $e$ is an atom, the two-sided ideal $Ae$ is indecomposable as a unital algebra, and $A\cong\prod_{\mathrm{atom},e}Ae$.
 
 *Proof.* A finite-dimensional commutative algebra is a finite product of local algebras, and a local algebra has only the idempotents $0$ and $1$; hence $B(A)$ is finite, and a finite Boolean algebra is the power set of its atoms, whose join is $1_A$. A nontrivial central idempotent of $Ae$ would be a central idempotent of $A$ strictly below $e$, against the minimality of $e$.
 

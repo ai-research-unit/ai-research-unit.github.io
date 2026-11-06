@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Its general tessarine bilinear product carries the form
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Its general tessarine bilinear product carries the form
 
 $$
-\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown},
+\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown},
 $$
 
 whose quadratic form is the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, the multiplicative norm and the invertibility criterion. This form is non-degenerate, and it is the one form of the algebra whose isometry group is the subject of the article. The elements that act on the space by multiplication preserving the form are the versors, and they form a group; the article identifies that group, its action on the orthogonal group, and the part of the orthogonal group that the multiplication cannot reach.
@@ -16,7 +16,7 @@ The article owns the bilinear form $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$, it
 
 ## The Bilinear Form and Its Isometries
 
-**Proposition (the form is the hyperbolic plane).** The form $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ is a symmetric, non-degenerate $\mathbb{C}$-bilinear form on the two-complex-dimensional algebra; on the complex basis $1,j$ its Gram matrix is $\operatorname{diag}(1,-1)$, and on the idempotent basis $\Pi_+,\Pi_-$ it is
+**Proposition (the form is the hyperbolic plane).** The form $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ is a symmetric, non-degenerate $\mathbb{C}$-bilinear form on the two-complex-dimensional algebra; on the complex basis $1,j$ its Gram matrix is $\operatorname{diag}(1,-1)$, and on the idempotent basis $\Pi_+,\Pi_-$ it is
 
 $$
 \begin{pmatrix}0&\tfrac12\\[2pt]\tfrac12&0\end{pmatrix},
@@ -24,13 +24,13 @@ $$
 
 so the form is the split form of rank two, the hyperbolic plane.
 
-**Proof.** $\langle\Pi_+,\Pi_-\rangle_{\mathrm{ts}}=\mathrm{Sc}(\Pi_{+,\mathrm{ts}}\Pi_-)=\mathrm{Sc}\bigl(\tfrac12(1-j)\cdot\tfrac12(1-j)\bigr)=\mathrm{Sc}\bigl(\tfrac12(1-j)\bigr)=\tfrac12$, while $\langle\Pi_+,\Pi_+\rangle_{\mathrm{ts}}=\mathrm{Sc}\bigl(\tfrac14(1-j)(1+j)\bigr)=0$ and likewise for $\Pi_-$; the matrix is therefore the off-diagonal pair. The Gram matrix in the basis $1,j$ is $\operatorname{diag}(1,-1)$ by the same computation with $\langle1,1\rangle_{\mathrm{ts}}=1$ and $\langle j,j\rangle_{\mathrm{ts}}=-1$.
+**Proof.** $\langle\Pi_+,\Pi_-\rangle_{\mathrm{ts}}=\mathrm{Sc}(\Pi_{\mathrm{ts},+}\Pi_-)=\mathrm{Sc}\bigl(\tfrac12(1-j)\cdot\tfrac12(1-j)\bigr)=\mathrm{Sc}\bigl(\tfrac12(1-j)\bigr)=\tfrac12$, while $\langle\Pi_+,\Pi_+\rangle_{\mathrm{ts}}=\mathrm{Sc}\bigl(\tfrac14(1-j)(1+j)\bigr)=0$ and likewise for $\Pi_-$; the matrix is therefore the off-diagonal pair. The Gram matrix in the basis $1,j$ is $\operatorname{diag}(1,-1)$ by the same computation with $\langle1,1\rangle_{\mathrm{ts}}=1$ and $\langle j,j\rangle_{\mathrm{ts}}=-1$.
 
 **Corollary (the quadratic form is the reduced norm).** $\langle \breve Q,\breve Q\rangle_{\mathrm{ts}}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$.
 
 **Proof.** $\langle \breve Q,\breve Q\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{\mathrm{ts}}\breve Q)=\mathrm{Sc}(Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2})=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$.
 
-**Definition (isometry, versor).** An **isometry** of the form is a $\mathbb{C}$-linear map $g$ of the algebra with $\langle g\breve Q_{1},g\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}$ for all $\breve Q_{1},\breve Q_{2}$; the group of them is the **orthogonal group** $O(\mathbb{B}^{\mathrm{red}},\langle\cdot,\cdot\rangle_{\mathrm{ts}})$, denoted $O(2,\mathbb{C})$ for the hyperbolic plane. A **versor** is a unit $P$ with $\langle P\rangle_{\mathrm{ts}}=1$.
+**Definition (isometry, versor).** An **isometry** of the form is a $\mathbb{C}$-linear map $g$ of the algebra with $\langle g\breve Q_{1},g\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}$ for all $\breve Q_{1},\breve Q_{2}$; the group of them is the **orthogonal group** $O(\mathbb{B}_{\mathrm{red}},\langle\cdot,\cdot\rangle_{\mathrm{ts}})$, denoted $O(2,\mathbb{C})$ for the hyperbolic plane. A **versor** is a unit $P$ with $\langle P\rangle_{\mathrm{ts}}=1$.
 
 **Proposition (scaling of the form by a multiplication).** For every element $P$ and all $\breve Q_{1},\breve Q_{2}$,
 
@@ -40,7 +40,7 @@ $$
 \;}.
 $$
 
-**Proof.** $\mathrm{Sc}((P \breve Q_{1})_{\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}\breve Q_{1,\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}P\,\breve Q_{1,\mathrm{ts}}\breve Q_{2})=\langle P\rangle_{\mathrm{ts}}\,\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})$, using that the algebra is commutative and that $P_{\mathrm{ts}}P=\langle P\rangle_{\mathrm{ts}}$.
+**Proof.** $\mathrm{Sc}((P \breve Q_{1})_{\mathrm{ts}}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}\breve Q_{\mathrm{ts},1}P \breve Q_{2})=\mathrm{Sc}(P_{\mathrm{ts}}P\,\breve Q_{\mathrm{ts},1}\breve Q_{2})=\langle P\rangle_{\mathrm{ts}}\,\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2})$, using that the algebra is commutative and that $P_{\mathrm{ts}}P=\langle P\rangle_{\mathrm{ts}}$.
 
 **Corollary (the isometries among the multiplications).** The left multiplication $L_{P}$ by a unit is an isometry of the form exactly when $P$ is a versor; a general unit scales the form by $\langle P\rangle_{\mathrm{ts}}$, hence acts as a similitude of ratio $\langle P\rangle_{\mathrm{ts}}$.
 
@@ -50,7 +50,7 @@ $$
 
 $$
 \boxed{\;
-\mathrm{Vers}(\mathbb{B}^{\mathrm{red}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times}
+\mathrm{Vers}(\mathbb{B}_{\mathrm{red}})=\{P:\langle P\rangle_{\mathrm{ts}}=1\}=\{Q_{+}\Pi_++Q_{+}^{-1}\Pi_-:Q_{+}\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times}
 \;},
 $$
 
@@ -62,7 +62,7 @@ which is the split torus of real dimension two; it is non-compact and has fundam
 
 $$
 \boxed{\;
-\mathrm{Vers}(\mathbb{B}^{\mathrm{red}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times}
+\mathrm{Vers}(\mathbb{B}_{\mathrm{red}})\cong SO(2,\mathbb{C})\cong\mathbb{C}^{\times}
 \;},
 $$
 
@@ -70,15 +70,15 @@ sending the versor $Q_{+}\Pi_++Q_{+}^{-1}\Pi_-$ to the hyperbolic rotation of pa
 
 **Proof.** $L_{P}L_{W}=L_{PW}$, so the map is a homomorphism; it is an isometry by the corollary above and it is $\mathbb{C}$-linear, so its image lies in the orthogonal group, and its determinant is $\det L_{P}=\langle P\rangle_{\mathrm{ts}}=1$, since $L_{P}$ has the matrix $\left(\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}\right)$ on the basis $1,j$, so the image lies in the identity component. Its kernel is the set of $P$ with $L_{P}$ the identity; a unit acting trivially must satisfy $P=L_{P}(1)=1$, so the kernel is $\{1\}$ and the map is injective. It is also surjective: for the form $\operatorname{diag}(1,-1)$ an element of the identity component has the matrix $\left(\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}\right)$ with $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=1$, which is $L_{P}$ for the versor $P=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Both groups are isomorphic to $\mathbb{C}^{\times}$ and the map is that isomorphism. Because the algebra is commutative the conjugation $P \breve Q P^{-1}$ is the identity, so the standard spin action is trivial and the two-to-one covering is not the mechanism here: the versors are abstractly the spin group $\mathrm{Spin}(2,\mathbb{C})\cong\mathbb{C}^{\times}$ of the plane, but they act faithfully on the space, by left multiplication, and the realised map is an isomorphism rather than a double covering.
 
-**Corollary (the algebra is the even Clifford algebra of the form).** The algebra is isomorphic to the even Clifford algebra of the hyperbolic plane, $\mathbb{B}^{\mathrm{red}}\cong \mathrm{Cl}^{+}(\mathbb{C}^{2},\langle\cdot,\cdot\rangle_{\mathrm{ts}})\cong\mathbb{C}\oplus\mathbb{C}$, and the versors are its spin group.
+**Corollary (the algebra is the even Clifford algebra of the form).** The algebra is isomorphic to the even Clifford algebra of the hyperbolic plane, $\mathbb{B}_{\mathrm{red}}\cong \mathrm{Cl}^{+}(\mathbb{C}^{2},\langle\cdot,\cdot\rangle_{\mathrm{ts}})\cong\mathbb{C}\oplus\mathbb{C}$, and the versors are its spin group.
 
-**Proof.** The even Clifford algebra of a two-dimensional non-degenerate quadratic space is the sum of two copies of the base field, the two projections being the two idempotent coordinates; the identification is the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ of *Reduced Biquaternion Space*, and the versor group of the even Clifford algebra is its spin group.
+**Proof.** The even Clifford algebra of a two-dimensional non-degenerate quadratic space is the sum of two copies of the base field, the two projections being the two idempotent coordinates; the identification is the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ of *Reduced Biquaternion Space*, and the versor group of the even Clifford algebra is its spin group.
 
 ## What the Multiplication Does Not Reach
 
 **Proposition (the reflections are not multiplications).** The reflection of the hyperbolic plane that negates the $j$-direction, $Q_{\blacktriangle}+jQ_{\blacktriangledown}\mapsto Q_{\blacktriangle}-jQ_{\blacktriangledown}$, is the tessarine sign ${}_{\mathrm{ts}}$; it is a $\mathbb{C}$-linear isometry of the form with determinant $-1$, but it is not the left multiplication by any element.
 
-**Proof.** $\langle \breve Q_{1,\mathrm{ts}},\breve Q_{2,\mathrm{ts}}\rangle_{\mathrm{ts}}=\mathrm{Sc}((\breve Q_{1,\mathrm{ts}})_{\mathrm{ts}}\breve Q_{2,\mathrm{ts}})=\mathrm{Sc}(\breve Q_{1}\breve Q_{2,\mathrm{ts}})=\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})$ because the scalar part of the $\mathrm{ts}$-product is symmetric, so ${}_{\mathrm{ts}}$ preserves the form; in the basis $1,j$ it is $\operatorname{diag}(1,-1)$, of determinant $-1$. If it were $L_{P}$ for some $P=P_{0}+P_{1}j$, then $L_{P}$ would send $1$ to $P_{0}+P_{1}j$ and $j$ to $P_{1}+P_{0}j$, that is it would be the matrix $\left(\begin{smallmatrix}P_{0}&P_{1}\\ P_{1}&P_{0}\end{smallmatrix}\right)$ on the basis $(1,j)$, whereas ${}_{\mathrm{ts}}$ is $\operatorname{diag}(1,-1)$; the two agree only for $P_{1}=0$ with $P_{0}=1$ in the first column, which then gives the second column $(0,1)$ and not $(0,-1)$.
+**Proof.** $\langle \breve Q_{\mathrm{ts},1},\breve Q_{\mathrm{ts},2}\rangle_{\mathrm{ts}}=\mathrm{Sc}((\breve Q_{\mathrm{ts},1})_{\mathrm{ts}}\breve Q_{\mathrm{ts},2})=\mathrm{Sc}(\breve Q_{1}\breve Q_{\mathrm{ts},2})=\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2})$ because the scalar part of the $\mathrm{ts}$-product is symmetric, so ${}_{\mathrm{ts}}$ preserves the form; in the basis $1,j$ it is $\operatorname{diag}(1,-1)$, of determinant $-1$. If it were $L_{P}$ for some $P=P_{0}+P_{1}j$, then $L_{P}$ would send $1$ to $P_{0}+P_{1}j$ and $j$ to $P_{1}+P_{0}j$, that is it would be the matrix $\left(\begin{smallmatrix}P_{0}&P_{1}\\ P_{1}&P_{0}\end{smallmatrix}\right)$ on the basis $(1,j)$, whereas ${}_{\mathrm{ts}}$ is $\operatorname{diag}(1,-1)$; the two agree only for $P_{1}=0$ with $P_{0}=1$ in the first column, which then gives the second column $(0,1)$ and not $(0,-1)$.
 
 **Corollary (the algebra reaches the reflections only through the involutions).** The orthogonal group of the form is realised on the algebra, its identity component by the left multiplications and its other component by the reflections: the reflection of the $j$-direction is the involution ${}_{\mathrm{ts}}$, and the other involutions $\bar{\cdot}$ and ${}^{*}$ preserve the form only up to the coefficient conjugation. None of these reflections is a left multiplication. The Pin group, whose elements are the products of odd numbers of reflections, is not contained in the algebra either; it lies in the full Clifford algebra, whose odd part is a second copy of the algebra as a vector space.
 
@@ -110,19 +110,19 @@ The general tessarine bilinear form of the reduced biquaternion algebra, $\langl
 
 | Symbol | Meaning |
 |---|---|
-| $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{1,\mathrm{ts}}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the general tessarine bilinear form |
+| $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}}=\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2})=Q_{1\blacktriangle}Q_{2\blacktriangle}-Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the general tessarine bilinear form |
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$ | the reduced norm, the quadratic form of $\langle\cdot,\cdot\rangle_{\mathrm{ts}}$ |
 | $\langle\Pi_+,\Pi_-\rangle_{\mathrm{ts}}=\tfrac12$ | the hyperbolic Gram matrix in the idempotent basis |
-| $\mathrm{Vers}(\mathbb{B}^{\mathrm{red}})=\{\langle \breve Q\rangle_{\mathrm{ts}}=1\}$ | the versor group, $\cong\mathbb{C}^{\times}$ |
+| $\mathrm{Vers}(\mathbb{B}_{\mathrm{red}})=\{\langle \breve Q\rangle_{\mathrm{ts}}=1\}$ | the versor group, $\cong\mathbb{C}^{\times}$ |
 | $L_{P}$ | the left multiplication by $P$, an isometry exactly for a versor |
-| $\mathrm{Vers}(\mathbb{B}^{\mathrm{red}})\cong SO(2,\mathbb{C})$ | the versor group as the identity component, via $P\mapsto L_{P}$ |
+| $\mathrm{Vers}(\mathbb{B}_{\mathrm{red}})\cong SO(2,\mathbb{C})$ | the versor group as the identity component, via $P\mapsto L_{P}$ |
 | ${}_{\mathrm{ts}}$ | the tessarine sign, a reflection of the form, not a left multiplication |
 | $\mathbb{T}^{2}=\{\lvert Q_{+}\rvert=\lvert Q_{-}\rvert=1\}$ | the torus of multiplicative isometries of the definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ |
 | $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ | the positive definite norm, the topological norm |
 
 ## Further Reading
 
-- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the four forms, their Gram matrices and the reduced norm.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the bar, the tessarine sign, the star and the flat that realise the reflections.
 - [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the operators $L_{P}$ and $R_{P}$ and their norms.

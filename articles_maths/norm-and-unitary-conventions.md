@@ -29,16 +29,16 @@ The order is: the norm reading of the four letters, the qualified regular and de
 
 In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The plain norm is complex and anisotropic, $\langle Q\rangle=0$ only at $Q=0$; its real part is indefinite. The natural sign being the identity, the quaternionic bracket is the plain one and the Krein bracket the Hermitian one.
 
-**The split-complex numbers $\mathbb{C}^{\mathrm{spl}}$**, $Q=q+jq'$, $j^2=+1$.
+**The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$**, $Q=q+jq'$, $j^2=+1$.
 
 | bracket | form | algebraic norm | realified signature | role |
 |---|---|---|---|---|
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}^{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the units and is not a norm. Over the dual numbers $\mathbb{C}^{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the units and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
 
-**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}^{\mathrm{dln}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}^{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
+**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}_{\mathrm{dln}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}_{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
 
 **Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
 
@@ -56,7 +56,7 @@ $$
 
 defined modulo $2\pi$; the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.
 
-**The reduced biquaternions $\mathbb{B}^{\mathrm{red}}$**, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
+**The reduced biquaternions $\mathbb{B}_{\mathrm{red}}$**, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 
 | bracket | form | algebraic norm | value | role |
 |---|---|---|---|---|
@@ -76,7 +76,7 @@ The tessarine bracket carries the algebra and the tessarine-Hermitian bracket ca
 
 The coefficients are real and the only non-trivial involution is the natural sign, so the Hermitian form is the quaternionic one and the Krein form the plain one. The quaternionic form is definite and its norm is multiplicative, the usual quaternion norm $q_t^2+q_x^2+q_y^2+q_z^2$; the plain form is indefinite and its norm is not multiplicative.
 
-**The split-quaternions $\mathbb{H}^{\mathrm{spl}}$**, the same glyph over the units $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$.
+**The split-quaternions $\mathbb{H}_{\mathrm{spl}}$**, the same glyph over the units $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$.
 
 | bracket | form | algebraic norm | signature | role |
 |---|---|---|---|---|
@@ -94,9 +94,9 @@ The collapse of the names is the same. The quaternionic norm is the split-quater
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(8,0)$ | definite; topology |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | Krein | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
 
-The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}^{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
+The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}_{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
 
-**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}^{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}^{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$.
+**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}_{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{spl}}$.
 
 ### The Unitary Convention
 
@@ -110,15 +110,15 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 |---|---|---|---|---|
 | $\mathbb{R}$ | — | $\langle q\rangle=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
 | $\mathbb{C}$ | $U$ | $\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
-| $\mathbb{C}^{\mathrm{spl}}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
-| $\mathbb{C}^{\mathrm{dln}}$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
-| $\mathbb{B}^{\mathrm{red}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
+| $\mathbb{C}_{\mathrm{spl}}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
+| $\mathbb{C}_{\mathrm{dln}}$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
+| $\mathbb{B}_{\mathrm{red}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
 | $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
-| $\mathbb{H}^{\mathrm{spl}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$, non-compact |
+| $\mathbb{H}_{\mathrm{spl}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$, non-compact |
 | $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
-| $\mathbb{B}^{\mathrm{spl}}$, split-biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=e_t$ | $S^{3}\times S^{3}$ |
+| $\mathbb{B}_{\mathrm{spl}}$, split-biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=e_t$ | $S^{3}\times S^{3}$ |
 
-**Where the norm is indefinite, the sign is not part of the glyph.** In $\mathbb{C}^{\mathrm{spl}}$ the level set $Q\bar Q=1$ is the two-branched hyperbola; the polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* takes its unit factor on $\lvert Q\bar Q\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}^{\mathrm{red}}$ the reduced norm cuts the quadric of the table, while *Modulus–Unit Polar Decomposition of Reduced Biquaternions* puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.
+**Where the norm is indefinite, the sign is not part of the glyph.** In $\mathbb{C}_{\mathrm{spl}}$ the level set $Q\bar Q=1$ is the two-branched hyperbola; the polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* takes its unit factor on $\lvert Q\bar Q\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}_{\mathrm{red}}$ the reduced norm cuts the quadric of the table, while *Modulus–Unit Polar Decomposition of Reduced Biquaternions* puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.
 
 **The biquaternion layer uses $N$ and only $N$.** The glyph $\tilde U$ is the $N$-norm-one element,
 
@@ -151,7 +151,7 @@ of real dimension four, written upright because it is a group. Its elements are 
 
 A boost is a unit element and is not unitary. A unitary element whose determinant is not one is unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
 
-**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}^{\mathrm{red}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
+**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{red}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 

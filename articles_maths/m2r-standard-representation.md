@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The model is the algebra.** The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ is four-dimensional over $\mathbb{R}$ and so is $M_2(\mathbb{R})$, and the defining map of this article is an isomorphism between them. Nothing is lost and nothing is added: every split quaternion is a $2\times2$ real matrix, every such matrix is a split quaternion, and the two products are the same product. This is the sharpest contrast in the whole family of models. The quaternions embed in $M_2(\mathbb{C})$ as a four-real-dimensional subspace of an eight-dimensional algebra; the split-biquaternions embed in the diagonal of $M_2(\mathbb{H})$ and leave the off-diagonal entries empty; here the image fills the target.
+**The model is the algebra.** The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ is four-dimensional over $\mathbb{R}$ and so is $M_2(\mathbb{R})$, and the defining map of this article is an isomorphism between them. Nothing is lost and nothing is added: every split quaternion is a $2\times2$ real matrix, every such matrix is a split quaternion, and the two products are the same product. This is the sharpest contrast in the whole family of models. The quaternions embed in $M_2(\mathbb{C})$ as a four-real-dimensional subspace of an eight-dimensional algebra; the split-biquaternions embed in the diagonal of $M_2(\mathbb{H})$ and leave the off-diagonal entries empty; here the image fills the target.
 
 **Why the split case is where the model is transparent.** A matrix model of an algebra carries two structures at once, the algebra structure and the action on a plane. When the model is surjective the two coincide in the simplest possible way, because the plane is the algebra and the action is the product. Every invariant of the element becomes an invariant of its matrix with no remainder: the norm becomes the determinant, twice the scalar part becomes the trace, the conjugations become the adjugate and the transpose, the idempotents become the rank-one projections, and the zero divisors become the singular matrices. The article follows that correspondence section by section, and each section names what the correspondence does **not** preserve, since the exceptions are where the algebra differs from a generic matrix algebra.
 
@@ -27,7 +27,7 @@ The matrix units of $M_2(\mathbb{R})$ are $E_{ij}$, the identity is $I$, and $\o
 
 ## The Model
 
-**Definition.** The **defining representation** is the linear map $\mathsf{M}_2:\mathbb{H}^{\mathrm{spl}}\to M_2(\mathbb{R})$ fixed on the basis by
+**Definition.** The **defining representation** is the linear map $\mathsf{M}_2:\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb{R})$ fixed on the basis by
 
 $$
 \mathsf{M}_2(e_t)=I,\qquad
@@ -58,24 +58,24 @@ The two off-diagonal entries mix $q_x$ and $q_y$ with opposite signs, and that c
 **Theorem (the model is an isomorphism).** The map $\mathsf{M}_2$ is an isomorphism of real algebras,
 
 $$
-\mathbb{H}^{\mathrm{spl}}\;\cong\;M_2(\mathbb{R}),
+\mathbb{H}_{\mathrm{spl}}\;\cong\;M_2(\mathbb{R}),
 $$
 
 and in particular it is surjective.
 
 **Proof.** Linearity is by definition, multiplicativity follows from the multiplication table as checked above, injectivity from the linear independence of the four images, and surjectivity from the equality of the dimensions, $4=4$.
 
-**Corollary (the least degree).** The least degree of a faithful real matrix representation of $\mathbb{H}^{\mathrm{spl}}$ is two.
+**Corollary (the least degree).** The least degree of a faithful real matrix representation of $\mathbb{H}_{\mathrm{spl}}$ is two.
 
-**Proof.** A faithful representation of degree $n$ embeds a four-dimensional algebra into $M_n(\mathbb{R})$ of dimension $n^2$, so $n^2\ge4$; $n=1$ is excluded because $M_1(\mathbb{R})$ is commutative and $\mathbb{H}^{\mathrm{spl}}$ is not; degree two is attained by $\mathsf{M}_2$.
+**Proof.** A faithful representation of degree $n$ embeds a four-dimensional algebra into $M_n(\mathbb{R})$ of dimension $n^2$, so $n^2\ge4$; $n=1$ is excluded because $M_1(\mathbb{R})$ is commutative and $\mathbb{H}_{\mathrm{spl}}$ is not; degree two is attained by $\mathsf{M}_2$.
 
-**Uniqueness up to conjugacy.** Every unital algebra homomorphism $\Psi:\mathbb{H}^{\mathrm{spl}}\to M_2(\mathbb{R})$ is an isomorphism, and there is $P\in GL_2(\mathbb{R})$ with $\Psi(\tilde q)=P\mathsf{M}_2(\tilde q)P^{-1}$ for every $\tilde q$. The kernel of $\Psi$ is a two-sided ideal, the algebra is simple, so the kernel is zero; then $\Psi\mathsf{M}_2^{-1}$ is an automorphism of $M_2(\mathbb{R})$, and by Skolem–Noether every such automorphism is inner. The consequence is the rule of the whole category: **one model, and it is unique**, so every statement below is a statement about the algebra and not about a choice.
+**Uniqueness up to conjugacy.** Every unital algebra homomorphism $\Psi:\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb{R})$ is an isomorphism, and there is $P\in GL_2(\mathbb{R})$ with $\Psi(\tilde q)=P\mathsf{M}_2(\tilde q)P^{-1}$ for every $\tilde q$. The kernel of $\Psi$ is a two-sided ideal, the algebra is simple, so the kernel is zero; then $\Psi\mathsf{M}_2^{-1}$ is an automorphism of $M_2(\mathbb{R})$, and by Skolem–Noether every such automorphism is inner. The consequence is the rule of the whole category: **one model, and it is unique**, so every statement below is a statement about the algebra and not about a choice.
 
 **The automorphisms.** The same argument gives
 
 $$
-\operatorname{Aut}(\mathbb{H}^{\mathrm{spl}})\cong\mathrm{PGL}_2(\mathbb{R}),
-\qquad \alpha_g(\tilde q)=g\tilde qg^{-1},\quad g\in{\mathbb{H}^{\mathrm{spl}}}^{\times},
+\operatorname{Aut}(\mathbb{H}_{\mathrm{spl}})\cong\mathrm{PGL}_2(\mathbb{R}),
+\qquad \alpha_g(\tilde q)=g\tilde qg^{-1},\quad g\in{\mathbb{H}_{\mathrm{spl}}}^{\times},
 $$
 
 with $g$ and $\lambda g$ inducing the same automorphism because the centre is $\mathbb{R}e_t$.
@@ -101,7 +101,7 @@ $$
 
 where the tensor product is taken in the row-major vectorisation of $M_2(\mathbb{R})$, so that $\operatorname{vec}(AXB)=(A\otimes B^{\mathsf T})\operatorname{vec}X$.
 
-**The two copies.** The maps $\tilde q\mapsto L_{\tilde q}$ and $\tilde q\mapsto R_{\tilde q}$ are two isomorphisms of $\mathbb{H}^{\mathrm{spl}}$ onto two four-dimensional subalgebras of $M_4(\mathbb{R})$. They are different subalgebras, because the algebra is not commutative: $L_{\tilde q}=R_{\tilde q}$ holds exactly for the central elements, that is for the scalar multiples of $e_t$.
+**The two copies.** The maps $\tilde q\mapsto L_{\tilde q}$ and $\tilde q\mapsto R_{\tilde q}$ are two isomorphisms of $\mathbb{H}_{\mathrm{spl}}$ onto two four-dimensional subalgebras of $M_4(\mathbb{R})$. They are different subalgebras, because the algebra is not commutative: $L_{\tilde q}=R_{\tilde q}$ holds exactly for the central elements, that is for the scalar multiples of $e_t$.
 
 **The product rule.** For all $\tilde q,\tilde p,\tilde x$,
 
@@ -122,7 +122,7 @@ $$
 
 so the left and right matrices share the rank, and that rank is $4$ on the units, $2$ on the nonzero zero divisors and $0$ at the origin. The trace is $\operatorname{tr}L_{\tilde q}=2\operatorname{tr}M_{\tilde q}=4q_t$.
 
-**What the two copies buy.** They give the two-sided operators for free: an operator $X\mapsto AXB$ is $L_AR_B$, and the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}})$ is spanned by the sixteen products $L_{e_\mu}R_{e_\nu}$. The companion article develops that span, its cone of single products and its length; here only the two one-sided families are needed.
+**What the two copies buy.** They give the two-sided operators for free: an operator $X\mapsto AXB$ is $L_AR_B$, and the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$ is spanned by the sixteen products $L_{e_\mu}R_{e_\nu}$. The companion article develops that span, its cone of single products and its length; here only the two one-sided families are needed.
 
 ## The Product
 
@@ -317,18 +317,18 @@ so the transpose corresponds to the linear involution that negates the coefficie
 
 ## The Projective Line
 
-**The minimal left ideals.** For a nonzero element $\tilde x$ the left ideal $\mathbb{H}^{\mathrm{spl}}\tilde x$ is the set of all left multiples, and it is minimal exactly when $\tilde x$ is a zero divisor. In the model, multiplication on the left by arbitrary matrices gives every matrix whose image lies in the line spanned by the columns of $\mathsf{M}_2(\tilde x)$; so a minimal left ideal is the set of matrices with image in a fixed line,
+**The minimal left ideals.** For a nonzero element $\tilde x$ the left ideal $\mathbb{H}_{\mathrm{spl}}\tilde x$ is the set of all left multiples, and it is minimal exactly when $\tilde x$ is a zero divisor. In the model, multiplication on the left by arbitrary matrices gives every matrix whose image lies in the line spanned by the columns of $\mathsf{M}_2(\tilde x)$; so a minimal left ideal is the set of matrices with image in a fixed line,
 
 $$
-\mathbb{H}^{\mathrm{spl}}\tilde x=\{X:\operatorname{Im}X\subseteq L\},
+\mathbb{H}_{\mathrm{spl}}\tilde x=\{X:\operatorname{Im}X\subseteq L\},
 $$
 
 and the line $L$ depends only on the ideal. Such a set is two-dimensional, spanned by $u\zeta_1^{\mathsf T}$ and $u\zeta_2^{\mathsf T}$ for a generator $u$ of $L$, so it is a minimal left ideal; the minimal left ideals are therefore parametrised by the lines of $\mathbb{R}^2$, that is by $\mathbb{P}^1(\mathbb{R})$, and the same argument on the right gives the minimal right ideals, parametrised by the lines of the dual, which is again $\mathbb{P}^1(\mathbb{R})$.
 
-**The action.** The units act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of ${\mathbb{H}^{\mathrm{spl}}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is
+**The action.** The units act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of ${\mathbb{H}_{\mathrm{spl}}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is
 
 $$
-\mathrm{PGL}_2(\mathbb{R})=\operatorname{Aut}(\mathbb{H}^{\mathrm{spl}}),
+\mathrm{PGL}_2(\mathbb{R})=\operatorname{Aut}(\mathbb{H}_{\mathrm{spl}}),
 $$
 
 and the action of the algebra's automorphism group on its minimal left ideals is faithful. This is the geometric content of the previous section's abstract statement that the automorphisms are inner.
@@ -347,7 +347,7 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 
 ## Summary
 
-1. The model $\mathsf{M}_2$ is an isomorphism $\mathbb{H}^{\mathrm{spl}}\cong M_2(\mathbb{R})$, unique up to conjugacy, with $\operatorname{Aut}(\mathbb{H}^{\mathrm{spl}})\cong\mathrm{PGL}_2(\mathbb{R})$.
+1. The model $\mathsf{M}_2$ is an isomorphism $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb{R})$, unique up to conjugacy, with $\operatorname{Aut}(\mathbb{H}_{\mathrm{spl}})\cong\mathrm{PGL}_2(\mathbb{R})$.
 2. The left and right matrices are the two commuting copies $M_{\tilde q}\otimes I$ and $I\otimes M_{\tilde q}^{\mathsf T}$ inside $M_4(\mathbb{R})$, of rank $2\operatorname{rank}M_{\tilde q}$ each.
 3. The product is the matrix product, the image is the whole matrix algebra, and the Peirce corners are a full system of matrix units.
 4. The trace is twice the scalar part, and the traceless part is $\mathfrak{sl}_2(\mathbb{R})$.
@@ -362,7 +362,7 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathsf{M}_2$ | the defining isomorphism $\mathbb{H}^{\mathrm{spl}}\to M_2(\mathbb{R})$ | this article |
+| $\mathsf{M}_2$ | the defining isomorphism $\mathbb{H}_{\mathrm{spl}}\to M_2(\mathbb{R})$ | this article |
 | $J,K,D$ | the images of $\vec e_x,\vec e_y,\vec e_z$ | this article |
 | $\langle\tilde q\rangle_{\natural}$ | the natural norm $q_t^2+q_x^2-q_y^2-q_z^2$ | *Split-Quaternion Norm and Invertibility* |
 | $\tilde q^{\natural}$ | the conjugation $q_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ | *Split-Quaternion Subspaces and the Involutions* |

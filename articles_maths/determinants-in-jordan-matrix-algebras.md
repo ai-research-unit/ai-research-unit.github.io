@@ -302,7 +302,7 @@ $$
 T\bigl((xy^{*})z\bigr) = \bigl(T(x)T(y)^{*}\bigr)T(z),
 $$
 
-and it is **hermitian** if in addition $T(\overline x) = \overline{T(x)}$; it then preserves $\mathbb{O}$. A hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ induces a Jordan \*-automorphism $T^{\mathrm{aut}}$ of $C_6$ acting on the three off-diagonal octonion entries, and conjugating $T^{\mathrm{aut}}$ by the row and column exchanges $\mathrm{Jor}_{k,l}$ produces three further automorphisms $T^{\mathrm{aut}}_1,T^{\mathrm{aut}}_2,T^{\mathrm{aut}}_3$. These automorphisms normalise an octonion: for any nonzero $\tilde U\in\mathbb{O}$ there is an asymmetric triple isomorphism carrying $\tilde U$ into the real line $\operatorname{span}\{e_t\}$, an automorphism carrying $\tilde U$ into $\operatorname{span}\{e_t,e_1\}$, and an automorphism fixing $e_1$ and carrying $\tilde U$ into $\operatorname{span}\{e_t,e_1,e_2\}$. These are the normalisations used to bring a minimal projection of $C_6$ into one of the three canonical forms above.
+and it is **hermitian** if in addition $T(\overline x) = \overline{T(x)}$; it then preserves $\mathbb{O}$. A hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ induces a Jordan \*-automorphism $T_{\mathrm{aut}}$ of $C_6$ acting on the three off-diagonal octonion entries, and conjugating $T_{\mathrm{aut}}$ by the row and column exchanges $\mathrm{Jor}_{k,l}$ produces three further automorphisms $T_{\mathrm{aut},1},T_{\mathrm{aut},2},T_{\mathrm{aut},3}$. These automorphisms normalise an octonion: for any nonzero $\tilde U\in\mathbb{O}$ there is an asymmetric triple isomorphism carrying $\tilde U$ into the real line $\operatorname{span}\{e_t\}$, an automorphism carrying $\tilde U$ into $\operatorname{span}\{e_t,e_1\}$, and an automorphism fixing $e_1$ and carrying $\tilde U$ into $\operatorname{span}\{e_t,e_1,e_2\}$. These are the normalisations used to bring a minimal projection of $C_6$ into one of the three canonical forms above.
 
 ## The Determinant on the Cartan Factor
 
@@ -364,7 +364,7 @@ A determinant is defined on the Hermitian matrices of biquaternions $H_n(\mathbb
 | $\Delta_n$, $\Delta_{n,e}$ | Determinant on $H_n(\mathbb{B})$, and relative to a unitary $e$ |
 | $\Delta$, $\Delta_e$ | Determinant on $C_6$, and relative to a unitary $e$ |
 | $\mathrm{Jor}_{k,l}$ | Jordan \*-automorphism of $C_6$ exchanging rows and columns $k,l$ |
-| $T^{\mathrm{aut}}$ | Jordan \*-automorphism of $C_6$ induced by a hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ |
+| $T_{\mathrm{aut}}$ | Jordan \*-automorphism of $C_6$ induced by a hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ |
 
 ## Further Reading
 

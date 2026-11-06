@@ -14,7 +14,7 @@ $$
 $$
 so its vanishing set is the union of the two lines $Q_{+}=0$ and $Q_{-}=0$ and not an irreducible quadric cone. This is the geometric form of the fact that the algebra is a direct product of two fields: a product of two fields has zero divisors, and its zero divisors are the two factors.
 
-**The results.** The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}^{\mathrm{red}}\setminus\{0\}$ is the group of units.
+**The results.** The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$ is the group of units.
 
 ## The Null Cone
 
@@ -24,7 +24,7 @@ so its vanishing set is the union of the two lines $Q_{+}=0$ and $Q_{-}=0$ and n
 
 **Definition.** The **null cone** of the general plain algebra is
 $$
-\mathcal{N}=\bigl\{\breve Q\in\mathbb{B}^{\mathrm{red}}:\breve Q\neq0,\ \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=0\bigr\}.
+\mathcal{N}=\bigl\{\breve Q\in\mathbb{B}_{\mathrm{red}}:\breve Q\neq0,\ \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=0\bigr\}.
 $$
 
 **Theorem (the equation).** The null cone is the union of the two complex lines
@@ -94,7 +94,7 @@ so the cone together with $0$ is closed under multiplication, and the product of
 
 **The two lines are the two maximal ideals of the algebra, and they are the only ones.**
 
-**Theorem (the maximal ideals).** The two-sided ideals of the algebra are $0$, $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ and $\mathbb{B}^{\mathrm{red}}$; the two maximal ideals are the idempotent lines, and they are the annihilators of the two projections.
+**Theorem (the maximal ideals).** The two-sided ideals of the algebra are $0$, $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ and $\mathbb{B}_{\mathrm{red}}$; the two maximal ideals are the idempotent lines, and they are the annihilators of the two projections.
 
 *Proof.* The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two fields (*Reduced Biquaternion Space*); the ideals of a direct product of two fields are the products of an ideal of each factor, and a field has only $0$ and itself, so the four products are $0$, $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ and the whole algebra. The maximal ones are the two lines, the kernels of the two projections.
 
@@ -116,7 +116,7 @@ and the annihilator of a nonzero element of one line is exactly the other line.
 
 **Theorem (the complement).** The complement of the cone is the group of units,
 $$
-\boxed{\; {\mathbb{B}^{\mathrm{red}}}^{\times}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\}=\mathbb{B}^{\mathrm{red}}\setminus\bigl(\mathcal{N}\cup\{0\}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times} \;},
+\boxed{\; {\mathbb{B}_{\mathrm{red}}}^{\times}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\}=\mathbb{B}_{\mathrm{red}}\setminus\bigl(\mathcal{N}\cup\{0\}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times} \;},
 $$
 and it is **connected**.
 
@@ -134,7 +134,7 @@ the union of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ wi
 
 Each line is closed under multiplication, $(Q_{+}\Pi_+)(Q_{+}'\Pi_+)=(Q_{+}Q_{+}')\Pi_+$ and $(Q_{-}\Pi_-)(Q_{-}'\Pi_-)=(Q_{-}Q_{-}')\Pi_-$, and the product of two elements of different lines vanishes, $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$; the two lines are the two **maximal ideals** of the algebra, they are the annihilators of each other, and the algebra is not a field and not a division algebra. The complement of the cone in the nonzero elements is the group of units,
 $$
-{\mathbb{B}^{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+{\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
 and it is connected, the punctured complex planes being connected.
 
@@ -149,7 +149,7 @@ and it is connected, the punctured complex planes being connected.
 | $\mathrm{Re}N=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$, $\mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown})$ | the real and imaginary parts of the reduced norm |
 | $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ | the two maximal ideals |
 | $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$ | the mutual annihilation of the two lines |
-| ${\mathbb{B}^{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}$ | the complement of the cone, the group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}$ | the complement of the cone, the group of units |
 
 ## Further Reading
 

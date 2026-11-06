@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces harmonic analysis for split-biquaternion-valued functions of a real variable. It follows the article on split biquaternion discrete harmonic analysis, which defined the discrete split-biquaternion Fourier transform, and it uses the analysis article, which defined the split-biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{B}^{\mathrm{spl}}$.
+This article introduces harmonic analysis for split-biquaternion-valued functions of a real variable. It follows the article on split biquaternion discrete harmonic analysis, which defined the discrete split-biquaternion Fourier transform, and it uses the analysis article, which defined the split-biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{B}_{\mathrm{spl}}$.
 
 The treatment is purely mathematical. The goal is to define the continuous split-biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms via the idempotent decomposition, and identify the points where the split biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article.
 
@@ -45,7 +45,7 @@ $$
 W(t, \omega) = \exp(-2\pi \rho \omega t), \qquad t, \omega \in \mathbb{R},
 $$
 
-where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{B}^{\mathrm{spl}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{B}^{\mathrm{spl}}$.
+where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{B}_{\mathrm{spl}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{B}_{\mathrm{spl}}$.
 
 Because $\rho^2 = -1$, the kernel takes the closed form
 
@@ -83,7 +83,7 @@ The choice of root $\rho$ determines the **axis** of the Fourier transform. Diff
 
 ### Definition
 
-Let $f : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ be a split-biquaternion-valued function. The **continuous split-biquaternion Fourier transform** of $f$ is
+Let $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ be a split-biquaternion-valued function. The **continuous split-biquaternion Fourier transform** of $f$ is
 
 $$
 F(\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt = \int_{-\infty}^{\infty} \exp(-2\pi \rho \omega t) f(t) \, dt, \qquad \omega \in \mathbb{R},
@@ -129,7 +129,7 @@ Under these conditions, the inverse formula holds at every point of continuity o
 
 ### The Riemann–Lebesgue Lemma
 
-**Theorem (Riemann–Lebesgue).** If $f : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ is integrable, then
+**Theorem (Riemann–Lebesgue).** If $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ is integrable, then
 
 $$
 \lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
@@ -139,7 +139,7 @@ $$
 
 ### The Inversion Theorem
 
-**Theorem (inversion).** Let $f : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then
+**Theorem (inversion).** Let $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ be integrable and continuous at a point $t \in \mathbb{R}$, and let $F$ be integrable. Then
 
 $$
 \boxed{\;
@@ -151,7 +151,7 @@ $$
 
 ### The Plancherel Theorem
 
-**Theorem (Plancherel).** The transform extends uniquely to a $*$-unitary operator on the space $L^2(\mathbb{R}, \mathbb{B}^{\mathrm{spl}})$ of square-integrable split-biquaternion-valued functions, with
+**Theorem (Plancherel).** The transform extends uniquely to a $*$-unitary operator on the space $L^2(\mathbb{R}, \mathbb{B}_{\mathrm{spl}})$ of square-integrable split-biquaternion-valued functions, with
 
 $$
 \boxed{\;
@@ -161,7 +161,7 @@ $$
 
 **Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved.
 
-**Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{B}^{\mathrm{spl}})$,
+**Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{B}_{\mathrm{spl}})$,
 
 $$
 \int_{-\infty}^{\infty} \overline{f(t)} g(t) \, dt = \int_{-\infty}^{\infty} \overline{F(\omega)} G(\omega) \, d\omega.
@@ -227,7 +227,7 @@ The factorization shows that the split biquaternion Fourier transform is not a f
 
 ### Definition of Convolution
 
-Let $f, g : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ be two split-biquaternion-valued functions. The **convolution** of $f$ and $g$ is
+Let $f, g : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ be two split-biquaternion-valued functions. The **convolution** of $f$ and $g$ is
 
 $$
 (f * g)(t) = \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau,
@@ -237,7 +237,7 @@ provided the integral converges. The convolution is **not commutative** in gener
 
 ### The Convolution Theorem
 
-**Theorem (convolution theorem).** Let $f, g : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ be integrable, and let $\mathcal{F}$ denote the continuous split-biquaternion Fourier transform with the kernel on the left:
+**Theorem (convolution theorem).** Let $f, g : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ be integrable, and let $\mathcal{F}$ denote the continuous split-biquaternion Fourier transform with the kernel on the left:
 
 $$
 \mathcal{F}[f](\omega) = \int_{-\infty}^{\infty} W(t, \omega) f(t) \, dt.
@@ -297,10 +297,10 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}^{\mathrm{spl}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}^{\mathrm{spl}}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
+Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}_{\mathrm{spl}}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
 
 $$
-\mathcal{F}[\partial/\partial Q_t F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
+\mathcal{F}[\partial/\partial Q_t F_{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F_{\mathrm{fn}}](\omega),
 $$
 
 where the sign depends on the convention for the kernel.
@@ -318,7 +318,7 @@ where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conju
 The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
-\mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
+\mathcal{F}[\Box F_{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F_{\mathrm{fn}}](\omega).
 $$
 
 The multiplier is a scalar (times $e_t$), and it vanishes on the **null cone**
@@ -327,7 +327,7 @@ $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$
 
-So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone.
+So the Fourier transform of a solution of $\Box F_{\mathrm{fn}} = 0$ is supported on the null cone.
 
 ### The Square of the Gradient
 
@@ -355,10 +355,10 @@ The general principle is that the continuous Fourier transform **diagonalizes th
 
 ### The Operators in the Idempotent Basis
 
-In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F^{\mathrm{fn}} = F^{\mathrm{fn}}_+ \tilde\Pi_1 + F^{\mathrm{fn}}_- \tilde\Pi_2$ with $F^{\mathrm{fn}}_\pm \in \mathbb{H}$, the gradient acts as
+In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts as
 
 $$
-\tilde{\nabla} F^{\mathrm{fn}} = (\tilde{\nabla} F^{\mathrm{fn}}_+) \tilde\Pi_1 + (\tilde{\nabla} F^{\mathrm{fn}}_-) \tilde\Pi_2,
+\tilde{\nabla} F_{\mathrm{fn}} = (\tilde{\nabla} F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde{\nabla} F_{\mathrm{fn},-}) \tilde\Pi_2,
 $$
 
 where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
@@ -367,7 +367,7 @@ where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each co
 
 ### Functions of Vanishing Norm
 
-A function $f : \mathbb{R} \to \mathbb{B}^{\mathrm{spl}}$ may take values of vanishing norm on a set of positive measure. In the idempotent basis, such values are exactly those with a vanishing idempotent component: $f_+(t) = 0$ or $f_-(t) = 0$.
+A function $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ may take values of vanishing norm on a set of positive measure. In the idempotent basis, such values are exactly those with a vanishing idempotent component: $f_+(t) = 0$ or $f_-(t) = 0$.
 
 ### Consequences for the Transform
 
@@ -380,7 +380,7 @@ The precise condition under which the transform is invertible on a function with
 
 The vanishing-norm issue is a genuinely split biquaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split biquaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
-The issue can be avoided by restricting to functions whose values lie in a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.
+The issue can be avoided by restricting to functions whose values lie in a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.
 
 ## The Relation to the Discrete Transform
 
@@ -412,7 +412,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 1. **The precise invertibility condition.** Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.
 
-2. **The support of the transform of solutions of $\tilde{\nabla}F^{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F^{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
+2. **The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
 
 3. **The Plancherel theorem for general functions.** Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.
 
@@ -443,10 +443,10 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |

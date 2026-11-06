@@ -28,7 +28,7 @@ and the two composition factors are both the residue field $R$, on which $Q$ act
 
 **Boundaries.** The algebra, its product, its ideals and its maximal ideal are *Dual-Numbers Algebra*, *Dual-Numbers Ideals and the Maximal Ideal* and *Dual-Numbers Zero Divisors*; the norm, the unit criterion and the inverse are *Dual-Numbers Norm and Invertibility*; the distinguished submodules are *Dual-Number Subspaces*; the spectrum, the minimal polynomial and the Jordan form are *Spectral Regularity and Degeneracy in the Dual-Number Algebra*; the classification of the representations, the standard non-split extension and the Ext algebra are *Dual-Numbers Linear Representations*; the shears, the parabolic angle and the unit group are *Shears and Parabolic Rotations*; the automorphisms and the derivations are *Dual-Numbers Automorphisms and Derivations*; the polar decomposition is *Dual-Numbers Polar Decomposition*. The operators of this model are *$M_2(R)$ Triangular Representation : Operators*.
 
-**Conventions.** $R$ is a commutative ring with identity in which $2$ is invertible; the field statements are made over a field $K$, and the geometric case is $R=\mathbb{R}$, written $\mathbb{C}^{\mathrm{dln}}$. The natural basis is $(1,\varepsilon)$ and the reversed one, which gives the upper shape, is $(\varepsilon,1)$. The element is $Q=q+\varepsilon q'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Inf}Q$; the conjugate is $\bar Q=q-\varepsilon q'$; the norm is $\langle Q\rangle=Q\bar Q=q^{2}$; the maximal ideal is $\mathrm{M}=(\varepsilon)=\varepsilon R$; the real and infinitesimal submodules are $R_{\mathbb{C}^{\mathrm{dln}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$. The nilpotent matrix unit is $E=E_{12}$, the diagonal involution is $J=\operatorname{diag}(1,-1)$, and the swap is $S=\begin{pmatrix}0&1\\1&0\end{pmatrix}$. The transpose is written $^{\mathsf T}$, and it is taken in the basis $(1,\varepsilon)$.
+**Conventions.** $R$ is a commutative ring with identity in which $2$ is invertible; the field statements are made over a field $K$, and the geometric case is $R=\mathbb{R}$, written $\mathbb{C}_{\mathrm{dln}}$. The natural basis is $(1,\varepsilon)$ and the reversed one, which gives the upper shape, is $(\varepsilon,1)$. The element is $Q=q+\varepsilon q'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Inf}Q$; the conjugate is $\bar Q=q-\varepsilon q'$; the norm is $\langle Q\rangle=Q\bar Q=q^{2}$; the maximal ideal is $\mathrm{M}=(\varepsilon)=\varepsilon R$; the real and infinitesimal submodules are $R_{\mathbb{C}_{\mathrm{dln}}}$ and $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$. The nilpotent matrix unit is $E=E_{12}$, the diagonal involution is $J=\operatorname{diag}(1,-1)$, and the swap is $S=\begin{pmatrix}0&1\\1&0\end{pmatrix}$. The transpose is written $^{\mathsf T}$, and it is taken in the basis $(1,\varepsilon)$.
 
 ## The Frame
 
@@ -50,7 +50,7 @@ the reason being that reversing the order of a basis and transposing a matrix ar
 
 **The injectivity.** The map is injective by inspection, since $q$ is the diagonal entry and $q'$ the upper one; it is $R$-linear by construction and unital, with $\mathsf{M}_2(1)=I_2$ and $\mathsf{M}_2(\varepsilon)=E$.
 
-**The homomorphism is not an accident of the shape.** The classification of the representations of $\mathbb{C}^{\mathrm{dln}}_R$ says that the representations are the pairs $(V,E)$ with $E^{2}=0$, through the formula
+**The homomorphism is not an accident of the shape.** The classification of the representations of $\mathbb{C}_{\mathrm{dln},R}$ says that the representations are the pairs $(V,E)$ with $E^{2}=0$, through the formula
 
 $$
 \rho_E(q+\varepsilon q')=q\,\mathrm{id}_V+q'E,
@@ -61,7 +61,7 @@ and that the formula is multiplicative precisely because $E^{2}=0$. So the model
 **The flag.** The matrix $E$ satisfies $Ee_2=e_1$ and $Ee_1=0$, so the line $\langle e_1\rangle$ is invariant and is the image of $E$ and its kernel at once. A matrix fixes the flag $0\subset\langle e_1\rangle\subset R^{2}$ exactly when it is upper triangular, and the image is the subalgebra of the upper triangular matrices cut out by the single further equation $a=d$:
 
 $$
-\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R)=\left\{\begin{pmatrix}a&b\\ c&d\end{pmatrix}:c=0,\ a=d\right\}.
+\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R})=\left\{\begin{pmatrix}a&b\\ c&d\end{pmatrix}:c=0,\ a=d\right\}.
 $$
 
 The upper triangular matrices form the **parabolic** subalgebra of the flag, of dimension three; the image is a hyperplane in it, the hyperplane where the two graded pieces are acted on by the same scalar. This is the precise sense in which the model is not the full stabiliser of the flag: the stabiliser is the three-dimensional parabolic, and the algebra is the subalgebra of it whose two graded actions agree.
@@ -74,14 +74,14 @@ $$
 
 So the regular representation of the companion articles, written in the lower corner, and the model of this article are one representation in two bases. What the transpose does *not* do is stay inside the image: it exchanges the two conventions, and this is the fact behind the failure of the triple coincidence of the adjugate section.
 
-**The uniqueness.** Every faithful two-dimensional representation of $\mathbb{C}^{\mathrm{dln}}_K$ over a field is $\rho_E$ with $E$ a rank-one square-zero endomorphism, and all rank-one nilpotents of $M_2(K)$ are conjugate. So there is one model up to conjugacy, and the choice of corner is a choice of basis and not a second model. The category therefore has no family of models, in contrast to the quaternion category, where two inequivalent ones were needed.
+**The uniqueness.** Every faithful two-dimensional representation of $\mathbb{C}_{\mathrm{dln},K}$ over a field is $\rho_E$ with $E$ a rank-one square-zero endomorphism, and all rank-one nilpotents of $M_2(K)$ are conjugate. So there is one model up to conjugacy, and the choice of corner is a choice of basis and not a second model. The category therefore has no family of models, in contrast to the quaternion category, where two inequivalent ones were needed.
 
 **The membership test.** A matrix $M=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ is in the image exactly when $c=0$ and $a=d$: two linear equations, equivalently $M=aI_2+bE$. The test is **linear**, and its solution set is a linear subspace of dimension two. In the quaternion and split-quaternion categories the corresponding test was determinantal, a rank-one condition on a coefficient array; here it is a pair of equations, and the difference is the commutativity of the algebra.
 
 **The centraliser.** A matrix $A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ commutes with $E$ exactly when $AE=EA$, that is when $c=0$ and $a=d$. So
 
 $$
-C\bigl(\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R)\bigr)=\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R),
+C\bigl(\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R})\bigr)=\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R}),
 $$
 
 and the image is a **maximal commutative subalgebra** of $M_2(R)$: every matrix commuting with it lies in it, so no larger commutative subalgebra contains it. This is the same conclusion as in the complex category, and it is reached by the same computation, but the algebra it describes is now local rather than a field.
@@ -91,7 +91,7 @@ and the image is a **maximal commutative subalgebra** of $M_2(R)$: every matrix 
 **The two families coincide.** The algebra is commutative, so $L_Q=R_Q$ for every $Q$, and the two slots of the general theory hold one family:
 
 $$
-L_Q(X)=QX=XQ=R_Q(X),\qquad \dim_R L(\mathbb{C}^{\mathrm{dln}}_R)=2 .
+L_Q(X)=QX=XQ=R_Q(X),\qquad \dim_R L(\mathbb{C}_{\mathrm{dln},R})=2 .
 $$
 
 There is one copy of the algebra in the ambient, of dimension two, no anti-homomorphism, and no signed or conjugate transpose relating two families. The slot where those identities sit in the quaternion category is filled by the trivial statement $QX=XQ$.
@@ -99,7 +99,7 @@ There is one copy of the algebra in the ambient, of dimension two, no anti-homom
 **The regular module is not simple.** This is where the category differs from the field and matrix-algebra categories of the block: its regular module is neither simple nor a sum of simples. The invariant subspaces of the carrier under $L$ are the ideals of the algebra, and over a field they are
 
 $$
-0\ \subset\ \mathrm{M}\ \subset\ \mathbb{C}^{\mathrm{dln}}_K ,
+0\ \subset\ \mathrm{M}\ \subset\ \mathbb{C}_{\mathrm{dln},K} ,
 $$
 
 three in number, one for each element of the chain. So the regular representation is **reducible and indecomposable**: it has a composition series of length two, both factors are the residue field $K$ with the same action, and the series does not split, because a splitting would be a nontrivial idempotent and there is none. The classical name for this object is the **non-split extension** of the residue field by itself, and the classification article computes its class as the generator of $\operatorname{Ext}^{1}$.
@@ -109,24 +109,24 @@ three in number, one for each element of the chain. So the regular representatio
 **The double centraliser, in its degenerate form.** The endomorphisms of the regular module are the right multiplications, so
 
 $$
-\operatorname{End}_{\mathbb{C}^{\mathrm{dln}}_R}\bigl(\mathbb{C}^{\mathrm{dln}}_R\bigr)\cong\mathbb{C}^{\mathrm{dln}}_R,
+\operatorname{End}_{\mathbb{C}_{\mathrm{dln},R}}\bigl(\mathbb{C}_{\mathrm{dln},R}\bigr)\cong\mathbb{C}_{\mathrm{dln},R},
 $$
 
-the two roles fall on one algebra, and the theorem holds trivially. The degenerate form is the same as in the complex category, but the reason is different: there the algebra was a field, here it is commutative and local. In both cases the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_R(A)$ collapses to the multiplication, because the algebra is not central simple; the difference is that here the collapsed image is not semisimple.
+the two roles fall on one algebra, and the theorem holds trivially. The degenerate form is the same as in the complex category, but the reason is different: there the algebra was a field, here it is commutative and local. In both cases the map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}_R(A)$ collapses to the multiplication, because the algebra is not central simple; the difference is that here the collapsed image is not semisimple.
 
 **The kernel and the image.** For the left multiplication by $Q$,
 
 $$
-\ker L_Q=\{X:QX=0\},\qquad \operatorname{im}L_Q=Q\mathbb{C}^{\mathrm{dln}}_R ,
+\ker L_Q=\{X:QX=0\},\qquad \operatorname{im}L_Q=Q\mathbb{C}_{\mathrm{dln},R} ,
 $$
 
 and the two depend on the stratum:
 
 | $Q$ | $\ker L_Q$ | $\operatorname{im}L_Q$ | $\operatorname{rank}L_Q$ |
 |---|---|---|---|
-| $q\neq0$ | $0$ | $\mathbb{C}^{\mathrm{dln}}_R$ | $2$ |
+| $q\neq0$ | $0$ | $\mathbb{C}_{\mathrm{dln},R}$ | $2$ |
 | $q=0$, $q'\neq0$ | $\mathrm{M}$ | $\mathrm{M}$ | $1$ |
-| $Q=0$ | $\mathbb{C}^{\mathrm{dln}}_R$ | $0$ | $0$ |
+| $Q=0$ | $\mathbb{C}_{\mathrm{dln},R}$ | $0$ | $0$ |
 
 For a nilpotent parameter the kernel and the image are the *same* line, which is the statement that $L_\varepsilon$ is a single Jordan block of size two. Over $\mathbb{R}$ the rank drops on the maximal ideal minus the origin, which is a line, so the singular set of the family is one-dimensional and not a pair of lines as in the split category and not empty as in the complex one.
 
@@ -292,7 +292,7 @@ $$
 
 has a vanishing denominator and no limit, because the two roots have coalesced; the formula is not merely inconvenient here, it has no value, and the object it would produce does not exist.
 
-**No splitting field.** The absence is not repaired by extending scalars. For a field extension $L/K$, the algebra $\mathbb{C}^{\mathrm{dln}}_K\otimes_KL\cong L[\varepsilon]/(\varepsilon^{2})$ is again local with maximal ideal $(\varepsilon)$, and a local ring has no idempotent but $0$ and $1$. So there is no field over which the algebra splits, in contrast to the complex numbers, which split after one extension, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, and to the split-complex numbers, which are split from the start. The dual algebra is the one category of the block whose Peirce frame does not exist over any field.
+**No splitting field.** The absence is not repaired by extending scalars. For a field extension $L/K$, the algebra $\mathbb{C}_{\mathrm{dln},K}\otimes_KL\cong L[\varepsilon]/(\varepsilon^{2})$ is again local with maximal ideal $(\varepsilon)$, and a local ring has no idempotent but $0$ and $1$. So there is no field over which the algebra splits, in contrast to the complex numbers, which split after one extension, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, and to the split-complex numbers, which are split from the start. The dual algebra is the one category of the block whose Peirce frame does not exist over any field.
 
 **What replaces the projectors: the Jordan decomposition.** The element is a scalar plus a nilpotent,
 
@@ -305,7 +305,7 @@ and the decomposition is unique, because the scalar part is the residue and the 
 **The quotient map is the spectral projection.** The map
 
 $$
-\pi:\mathbb{C}^{\mathrm{dln}}_R\longrightarrow R,\qquad \pi(q+\varepsilon q')=q,
+\pi:\mathbb{C}_{\mathrm{dln},R}\longrightarrow R,\qquad \pi(q+\varepsilon q')=q,
 $$
 
 is a surjective homomorphism of $R$-algebras, split by the inclusion of the constants, and it is the spectral projection of the category: it sends $Q$ to its value at the one point of the spectrum. It is a projection of *algebras* and not an element of the algebra, and the difference is the whole content of the previous paragraph. In the matrix model it is the diagonal map
@@ -330,7 +330,7 @@ $$
 E_q(Q)=\ker L_{Q-q}=\ker L_{q'\varepsilon}=\mathrm{M},
 $$
 
-of dimension one, and it is a nilpotent line: every vector in it is killed by a further application of $Q-q$. The generalised eigenspace is the whole algebra. So the spectral decomposition of the carrier exists as a decomposition of vector spaces, $\mathbb{C}^{\mathrm{dln}}_R=R_{\mathbb{C}^{\mathrm{dln}}}\oplus\mathrm{M}$, and it is **not** a decomposition of modules, the second summand being the only proper submodule and the first being a complement that no projector produces. This is the precise reason the matrix is triangular and not diagonal: the generalised eigenspaces exist, and the projections onto them are not given by multiplication by an element.
+of dimension one, and it is a nilpotent line: every vector in it is killed by a further application of $Q-q$. The generalised eigenspace is the whole algebra. So the spectral decomposition of the carrier exists as a decomposition of vector spaces, $\mathbb{C}_{\mathrm{dln},R}=R_{\mathbb{C}_{\mathrm{dln}}}\oplus\mathrm{M}$, and it is **not** a decomposition of modules, the second summand being the only proper submodule and the first being a complement that no projector produces. This is the precise reason the matrix is triangular and not diagonal: the generalised eigenspaces exist, and the projections onto them are not given by multiplication by an element.
 
 ## The Adjugate and the Inverse
 
@@ -355,7 +355,7 @@ $$
 
 $$
 \operatorname{adj}\mathsf{M}_2(Q)=\mathsf{M}_2(\bar Q),\qquad
-\mathsf{M}_2(Q)^{\mathsf T}=\begin{pmatrix}q&0\\ q'&q\end{pmatrix}\notin\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R)\ \ (q'\neq0).
+\mathsf{M}_2(Q)^{\mathsf T}=\begin{pmatrix}q&0\\ q'&q\end{pmatrix}\notin\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R})\ \ (q'\neq0).
 $$
 
 The adjugate is the conjugate and conjugation by $J=\operatorname{diag}(1,-1)$ is the conjugate,
@@ -378,7 +378,7 @@ so the matrix is conformal exactly when $q'=0$, and then it is scalar. The only 
 **The transpose as the convention exchange.** Although the transpose leaves the image, it does not leave the ambient, and the two images it exchanges are conjugate:
 
 $$
-S\,\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R)\,S=\mathsf{M}_2(\mathbb{C}^{\mathrm{dln}}_R)^{\mathsf T},
+S\,\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R})\,S=\mathsf{M}_2(\mathbb{C}_{\mathrm{dln},R})^{\mathsf T},
 $$
 
 the lower triangular Toeplitz subalgebra. So the ambient carries two copies of the algebra, related by the swap, both faithful, both triangular, and the transpose is the map between them. This is the one place in the block where the transpose plays the role of a *change of model* rather than of an involution, and it is the reason the operator article has to say which copy it is working in.
@@ -412,7 +412,7 @@ positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, 
 
 | subspace | algebra condition | matrix condition | dimension |
 |---|---|---|---|
-| real line $R_{\mathbb{C}^{\mathrm{dln}}}$ | $q'=0$ | $qI_2$, scalar | $1$ |
+| real line $R_{\mathbb{C}_{\mathrm{dln}}}$ | $q'=0$ | $qI_2$, scalar | $1$ |
 | maximal ideal $\mathrm{M}$ | $q=0$ | $q'E$, strictly upper | $1$ |
 | the algebra | — | $c=0$, $a=d$ | $2$ |
 | the parabolic of the flag | — | $c=0$ | $3$ |
@@ -422,13 +422,13 @@ positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, 
 | the idempotents | $Q^{2}=Q$ | $0$ and $I_2$ | $0$ |
 | the nilpotents and zero divisors | $\mathrm{M}$ | $q'E$ | $1$ |
 
-**The flag and the graded pieces.** The two distinguished lines are the two graded pieces of the flag $0\subset\mathrm{M}\subset\mathbb{C}^{\mathrm{dln}}_R$, and the algebra acts on each by the same scalar: this is the content of $a=d$. The associated graded object is $R\oplus R$ with trivial multiplication, so the model sees the two lines and cannot see the extension between them; the off-diagonal entry is exactly the extension class, and it is the only entry that is not visible in the graded picture. In the language of the previous sections: the trace sees the graded pieces and the determinant sees their product, and neither sees the entry that glues them.
+**The flag and the graded pieces.** The two distinguished lines are the two graded pieces of the flag $0\subset\mathrm{M}\subset\mathbb{C}_{\mathrm{dln},R}$, and the algebra acts on each by the same scalar: this is the content of $a=d$. The associated graded object is $R\oplus R$ with trivial multiplication, so the model sees the two lines and cannot see the extension between them; the off-diagonal entry is exactly the extension class, and it is the only entry that is not visible in the graded picture. In the language of the previous sections: the trace sees the graded pieces and the determinant sees their product, and neither sees the entry that glues them.
 
 **The two involutions.** The algebra has two involutions, the identity and the dual conjugation, and they produce the two subspaces of the table,
 
 $$
-\mathbb{C}^{\mathrm{dln}}_R=R_{\mathbb{C}^{\mathrm{dln}}}\oplus\mathrm{M},\qquad
-\operatorname{Fix}(\bar\cdot)=R_{\mathbb{C}^{\mathrm{dln}}},\qquad \operatorname{Anti}(\bar\cdot)=\mathrm{M},
+\mathbb{C}_{\mathrm{dln},R}=R_{\mathbb{C}_{\mathrm{dln}}}\oplus\mathrm{M},\qquad
+\operatorname{Fix}(\bar\cdot)=R_{\mathbb{C}_{\mathrm{dln}}},\qquad \operatorname{Anti}(\bar\cdot)=\mathrm{M},
 $$
 
 the fixed space being the constants and the anti-fixed space the maximal ideal. The count is two, the same as for the complex and split categories and less than the six of the biquaternion algebra. The difference from the complex case is that here the anti-fixed space is an ideal, so the decomposition is not a decomposition into ideals: the constants are a complement and not a summand.
@@ -436,7 +436,7 @@ the fixed space being the constants and the anti-fixed space the maximal ideal. 
 **The units.** The unit group is
 
 $$
-(\mathbb{C}^{\mathrm{dln}}_R)^{\times}\cong R^{\times}\times(R,+),
+(\mathbb{C}_{\mathrm{dln},R})^{\times}\cong R^{\times}\times(R,+),
 $$
 
 the second factor being the shear group, and over $\mathbb{R}$ it is $\mathbb{R}^{\times}\times\mathbb{R}$: abelian, two-dimensional, with two contractible components and no compact part. The **norm-one set** is the kernel of the norm,
@@ -472,12 +472,12 @@ spanned by the traceless diagonal line and the lower corner. The two-dimensional
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathsf{M}_2$ | the triangular map $\mathbb{C}^{\mathrm{dln}}_R\to M_2(R)$ | this article |
+| $\mathsf{M}_2$ | the triangular map $\mathbb{C}_{\mathrm{dln},R}\to M_2(R)$ | this article |
 | $E=E_{12}$ | the nilpotent matrix unit $\mathsf{M}_2(\varepsilon)$, $E^{2}=0$ | this article |
 | $Q=q+\varepsilon q'$ | a dual number, with conjugate $\bar Q=q-\varepsilon q'$ | *Dual-Numbers Algebra* |
 | $\langle Q\rangle=q^{2}$ | the norm, equal to $\det\mathsf{M}_2(Q)$ | *Dual-Numbers Norm and Invertibility* |
 | $\mathrm{M}=(\varepsilon)$ | the maximal ideal, the nilpotent radical | *Dual-Numbers Ideals and the Maximal Ideal* |
-| $R_{\mathbb{C}^{\mathrm{dln}}},\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ | the constants and the infinitesimal line | *Dual-Number Subspaces* |
+| $R_{\mathbb{C}_{\mathrm{dln}}},\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ | the constants and the infinitesimal line | *Dual-Number Subspaces* |
 | $J=\operatorname{diag}(1,-1)$ | the involution realising the conjugate, $J\mathsf{M}_2(Q)J=\mathsf{M}_2(\bar Q)$ | this article |
 | $S$ | the swap, $S\mathsf{M}_2(Q)S=\mathsf{M}_2(Q)^{\mathsf T}$ | this article |
 | $\pi$ | the residue, the spectral projection $\mathsf{M}_2(Q)\mapsto qI_2$ | this article |

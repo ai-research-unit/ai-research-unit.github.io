@@ -121,7 +121,7 @@ $$
 
 so the function decays algebraically and not exponentially; for $1<\alpha<2$ the decay is algebraic with an oscillation. Near $t=0$, $E_\alpha(-\lambda t^\alpha) = 1 - \frac{\lambda t^\alpha}{\Gamma(\alpha+1)} + O(t^{2\alpha})$.
 
-*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{\exp(\varkappa^{\mathrm{crd}}){\varkappa^{\mathrm{crd}}}^{\alpha-1}}{{\varkappa^{\mathrm{crd}}}^\alpha+z}d\varkappa^{\mathrm{crd}}$ and the residue at the pole $\varkappa^{\mathrm{crd}}$ with ${\varkappa^{\mathrm{crd}}}^\alpha = -z$; the pole contributes $t^{-\alpha}$.
+*Proof.* Quoted as standard. The expansion follows from the integral representation $E_\alpha(-z) = \int_\gamma \frac{\exp(\varkappa_{\mathrm{crd}}){\varkappa_{\mathrm{crd}}}^{\alpha-1}}{{\varkappa_{\mathrm{crd}}}^\alpha+z}d\varkappa_{\mathrm{crd}}$ and the residue at the pole $\varkappa_{\mathrm{crd}}$ with ${\varkappa_{\mathrm{crd}}}^\alpha = -z$; the pole contributes $t^{-\alpha}$.
 
 The algebraic decay is the quantitative content of anomalous relaxation: a fractional relaxation equation relaxes to equilibrium as a power of the time rather than exponentially, and the fractional order $\alpha$ is the exponent.
 

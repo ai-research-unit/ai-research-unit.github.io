@@ -195,11 +195,11 @@ $$
 **Proposition.** The parity gives a $\mathbb{Z}/2$-grading
 
 $$
-M_5=M_{\mathrm{even}}\oplus M^{\mathrm{odd}},\qquad
-M_{\mathrm{even}}=M_2\oplus M_3,\quad M^{\mathrm{odd}}=\mathcal{M}\oplus\mathcal{M}^*,
+M_5=M_{\mathrm{even}}\oplus M_{\mathrm{odd}},\qquad
+M_{\mathrm{even}}=M_2\oplus M_3,\quad M_{\mathrm{odd}}=\mathcal{M}\oplus\mathcal{M}^*,
 $$
 
-with $M_{\mathrm{even}}M_{\mathrm{even}}\subseteq M_{\mathrm{even}}$, $M_{\mathrm{even}}M^{\mathrm{odd}}\subseteq M^{\mathrm{odd}}$, and $M^{\mathrm{odd}}M^{\mathrm{odd}}\subseteq M_{\mathrm{even}}$.
+with $M_{\mathrm{even}}M_{\mathrm{even}}\subseteq M_{\mathrm{even}}$, $M_{\mathrm{even}}M_{\mathrm{odd}}\subseteq M_{\mathrm{odd}}$, and $M_{\mathrm{odd}}M_{\mathrm{odd}}\subseteq M_{\mathrm{even}}$.
 
 **Proof.** The block parity is the parity of the number of off-diagonal blocks; the block product adds the parities.
 
@@ -318,7 +318,7 @@ The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, wit
 | $\mathcal{M}^*=QMP$ | The conjugate mass block, dimension $6$ |
 | $M_{2,3}$, $M_{3,2}$ | The rectangular matrix spaces |
 | $M_{\mathrm{even}}=M_2\oplus M_3$ | The even part of the $\mathbb{Z}/2$-grading |
-| $M^{\mathrm{odd}}=\mathcal{M}\oplus\mathcal{M}^*$ | The odd part |
+| $M_{\mathrm{odd}}=\mathcal{M}\oplus\mathcal{M}^*$ | The odd part |
 
 ## Further Reading
 

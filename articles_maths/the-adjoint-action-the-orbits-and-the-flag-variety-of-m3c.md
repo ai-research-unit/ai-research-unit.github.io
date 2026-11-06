@@ -258,7 +258,7 @@ and the characteristic polynomial is unchanged. This is the concrete form of the
 $PGL_3(\mathbb{C})$ acts on $M_3(\mathbb{C})$ by conjugation, of dimension $8$, and the orbits are the conjugacy classes, classified by the Jordan type. The regular semisimple orbit has dimension $6$ and stabiliser the maximal torus $(\mathbb{C}^{\times})^{2}$, so $8=6+2$; the gauge is the fibre of the frame bundle over the root orbit. The semisimple type $2+1$ and the minimal nilpotent orbit have dimension $4$; the scalar orbit has dimension $0$; the principal nilpotent orbit has dimension $6$. The nilpotent cone has dimension $6$ and three orbits, of dimensions $0,4,6$. The full flag variety $GL_3/B$ has dimension $3$, the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ have dimension $2$, and the flag is an incidence variety fibred over either Grassmannian with fibre $\mathbb{P}^{1}$. The root orbit maps to the flag variety with fibre $B/T$ of dimension $3$, and the dimension count $6=3+3$ is the orbit–stabiliser count read on the flag.
 
 $$
-\boxed{\ \dim PGL_3=8;\quad \dim\mathcal{O}^{\mathrm{reg}}=6,\ \operatorname{Stab}=T,\ 8=6+2;\quad \dim\mathcal{F}=3;\quad \dim\operatorname{Gr}(1,3)=\dim\operatorname{Gr}(2,3)=2.\ }
+\boxed{\ \dim PGL_3=8;\quad \dim\mathcal{O}_{\mathrm{reg}}=6,\ \operatorname{Stab}=T,\ 8=6+2;\quad \dim\mathcal{F}=3;\quad \dim\operatorname{Gr}(1,3)=\dim\operatorname{Gr}(2,3)=2.\ }
 $$
 
 | Orbit | Dimension | Stabiliser dimension |

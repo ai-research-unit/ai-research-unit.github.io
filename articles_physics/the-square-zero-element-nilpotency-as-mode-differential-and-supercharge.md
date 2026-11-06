@@ -223,7 +223,7 @@ $$
 
 This is a genuine $\mathbb{Z}/2$ grading of $\mathbb{B}$ as an associative algebra, and it is the grading the Fock-space article calls the parity grading. It is inner: the parity is conjugation by an element of the algebra, and its odd part is a two-dimensional subspace of the algebra itself. The mode's fermionic character is carried by that inner automorphism, and it is carried by nothing else.
 
-**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}^{\mathrm{sp}}_L$ or $\tilde{Ξ}^{\mathrm{sp}}_R$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a cell, and the chirality cell of the reference frame is the right multiplication by the unit with the phase,
+**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}_{\mathrm{sp},L}$ or $\tilde{Ξ}_{\mathrm{sp},R}$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a cell, and the chirality cell of the reference frame is the right multiplication by the unit with the phase,
 
 $$
 \Gamma=-iR_{\vec e_z}:\ \tilde Q\longmapsto-i\,\tilde Q\,\vec e_z ,
@@ -314,17 +314,17 @@ with $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\B
 **The one-sided pair.** The chiral pair is the definition:
 
 $$
-\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L,
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R .
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-Both gradients act from the left on the field $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
+Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=\Box\tilde{Ξ}^{\mathrm{sp}}_R=m^2\tilde{Ξ}^{\mathrm{sp}}_R,
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=\Box\tilde{Ξ}^{\mathrm{sp}}_L=m^2\tilde{Ξ}^{\mathrm{sp}}_L .
+\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=m^2\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two members of the chiral pair are one equation per chirality, not two different equations.
@@ -343,11 +343,11 @@ The two forms are set side by side once:
 
 | | one-sided form | two-sided form |
 |---|---|---|
-| equation | $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$ | $\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
-| field | $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R\in\mathbb{B}$ | $F\in\mathbb{B}$ |
+| equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
+| field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ | $F\in\mathbb{B}$ |
 | multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $\tilde\nabla^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
 | mass | exchange of the two chirality parts | the right-multiplied unit, with the conjugation |
-| chirality | the two parts $\tilde{Ξ}^{\mathrm{sp}}_L$ and $\tilde{Ξ}^{\mathrm{sp}}_R$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
+| chirality | the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
 | second order | $\Box$ on each part | $\tilde\nabla(\tilde\nabla^{\natural}F)=\Box F$ |
 
 Neither column needs an array: the field is an element of the algebra in both forms, and the two differ in the side on which the mass acts.
@@ -608,58 +608,58 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in cells.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{e_t}^{\mathrm{pau}}$ and $R_{e_t}^{\mathrm{pau}}$ are the identities of the left and right factors, two of the five cells collapse to one-sided multipliers: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{\mathrm{pau},e_t}$ and $R_{\mathrm{pau},e_t}$ are the identities of the left and right factors, two of the five cells collapse to one-sided multipliers: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
 The frame is a Clifford frame. Using $i^2=-1$, the cell rule and $\vec e_k^2=-e_t$, the squares are
 
 $$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)\bigl(-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^2}=(-1)\bigl(-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 \qquad
-\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)\bigl(+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)\bigl(-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^2}=(-1)\bigl(-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\bigr)=+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 \qquad
-\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)\bigl(+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\bigr)=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 $$
 
 for $k=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0,\gamma_j\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i,\gamma_j\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3
-=i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{pau}}
-=(+1)\,L_{-\vec e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
-=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+=i^4\,L_{\mathrm{pau},e_t\vec e_x\vec e_y\vec e_z}R_{\mathrm{pau},\vec e_y\vec e_y\vec e_y\vec e_x}
+=(+1)\,L_{\mathrm{pau},-\vec e_t}R_{\mathrm{pau},\vec e_z}
+=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 $$
 
 The same identities in the axis-free display:
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3
-=i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{axf}}
-=(+1)\,L_{-\vec e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
-=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+=i^4\,L_{\mathrm{axf},e_t\vec e_x\vec e_y\vec e_z}R_{\mathrm{axf},\vec e_y\vec e_y\vec e_y\vec e_x}
+=(+1)\,L_{\mathrm{axf},-\vec e_t}R_{\mathrm{axf},\vec e_z}
+=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
 
 with $i^4=(i^2)^2=(-1)^2=+1$, so that
 
 $$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 \qquad
-\gamma_5^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_5^2=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 \qquad
 \{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
@@ -667,22 +667,22 @@ $$
 Read in the axis-free display:
 
 $$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 \qquad
-\gamma_5^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_5^2=+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 \qquad
 \{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
 
 A single cell $L_aR_b$ is a pure tensor; the cells form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The parity of this frame is visible in the right factor. Every even product of the frame is a single cell $L_aR_b$ with $b\in\mathrm{span}\{e_t,\vec e_z\}$, and every odd product is a single cell with $b\in\mathrm{span}\{\vec e_x,\vec e_y\}$. The even part of the algebra generated by the frame is therefore $\mathbb{B}\otimes\mathrm{span}\{e_t,\vec e_z\}$, of complex dimension eight. The left multipliers $L_a=L_aR_{e_t}^{\mathrm{pau}}$ are the copy of $\mathbb{B}$ inside it. This is the complexified even Clifford algebra; the real one, of real dimension eight, is the $\mathbb{B}$ of §*The Occupation Parity*.
+The parity of this frame is visible in the right factor. Every even product of the frame is a single cell $L_aR_b$ with $b\in\mathrm{span}\{e_t,\vec e_z\}$, and every odd product is a single cell with $b\in\mathrm{span}\{\vec e_x,\vec e_y\}$. The even part of the algebra generated by the frame is therefore $\mathbb{B}\otimes\mathrm{span}\{e_t,\vec e_z\}$, of complex dimension eight. The left multipliers $L_a=L_aR_{\mathrm{pau},e_t}$ are the copy of $\mathbb{B}$ inside it. This is the complexified even Clifford algebra; the real one, of real dimension eight, is the $\mathbb{B}$ of §*The Occupation Parity*.
 
-$\gamma_5$ is the reference-frame cell of the chirality: $\gamma_5=\Gamma=\xi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality: $\gamma_5=\Gamma=\xi_{\mathrm{cell}}=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real cells $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -698,7 +698,7 @@ The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes
 
 The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the cell $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
 
-The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}^{\mathrm{sp}}_R=m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde\nabla^\natural\tilde{Ξ}^{\mathrm{sp}}_L=m\tilde{Ξ}^{\mathrm{sp}}_R$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
+The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 
@@ -729,7 +729,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H^0=\ker X$, $H^1=M/\mathrm{im}\,X$ | its cohomology |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its degree grading |
 | $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ | the biquaternion algebra as the even part of the real $\mathrm{Cl}_{1,3}$; real dimension eight |
-| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$, $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$; $L_{a}R_{b}\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}} b$; cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
+| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$, $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
 | $\mathrm{Cl}^1=\mathbb{B}_Lu$ | the odd slot, a rank-one left module; $u$ the odd unit of the reference frame |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |
@@ -743,9 +743,9 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H=\{Q,Q^\dagger\}$ | the supersymmetric Hamiltonian |
 | $\mathrm{Ind}=\mathrm{Tr}(-1)^F$ | the Witten index |
 | $\Gamma=-iR_{\vec e_z}$ | the chirality cell of the reference frame |
-| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\xi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
+| $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\xi_{\mathrm{cell}}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | $F$ | the algebra-valued field of the two-sided Dirac equation |
-| $\tilde{Ξ}^{\mathrm{sp}}_L,\tilde{Ξ}^{\mathrm{sp}}_R$ | the two chirality parts of the field element |
+| $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | the two chirality parts of the field element |
 | $\tilde P=iP_t e_t+\vec p$ | the physical four-momentum |
 | $\langle\tilde P\rangle_{\natural}$ | the quaternionic norm, the interval |
 | $h(k)$ | the chiral part of a symbol |

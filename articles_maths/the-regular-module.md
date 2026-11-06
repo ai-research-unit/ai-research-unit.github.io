@@ -193,7 +193,7 @@ An additive subgroup closed under left multiplication by $\mathbb{B}$ is automat
 
 **The endomorphism ring of the regular module is the algebra itself, and the bimodule endomorphisms are the centre.**
 
-**Proposition.** $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$ by left multiplications $\tilde Q\mapsto L_{\tilde Q}$, and $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$ by right multiplications $\tilde Q\mapsto R_{\tilde Q}$.
+**Proposition.** $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$ by left multiplications $\tilde Q\mapsto L_{\tilde Q}$, and $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}_{\mathrm{opp}}$ by right multiplications $\tilde Q\mapsto R_{\tilde Q}$.
 
 *Proof.* A right $\mathbb{B}$-linear $T$ satisfies $T(\tilde Q)=T(e_t\tilde Q)=T(e_t)\tilde Q$, so $T=L_{T(e_t)}$; conversely every left multiplication is right $\mathbb{B}$-linear. The left-handed case is the mirror, with the opposite multiplication.
 

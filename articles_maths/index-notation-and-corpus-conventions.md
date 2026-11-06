@@ -31,7 +31,7 @@ The article is the ninth of the ten and the index of the notation: the table bel
 
 **The object is not the role.** A coordinate, a basis vector, a gamma, an invariant symbol, a gauge generator, a component of a connection and a differential are seven kinds of object, and the low mark does one thing on all seven: it gives the index that names the slot of the family the glyph belongs to. The index says **which** member, never **what kind**, and the kind is carried by the glyph itself, $x_i$ against $\gamma_i$ against $\delta_{ij}$. A differential carries the same mark as the coordinate it differentiates, $x_i$ and $dx_i$, because the slot is the same in both. Nor does the alphabet divide the work: a letter is an index in $q_i$ and a number is an index in $Q_1$, and the two are of different kinds only where a coefficient and an element meet (§*The Subscripts*).
 
-**The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is. A label is a name of that kind, and the slot says what it names: on the caret it names the object the glyph denotes, $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, and low it names a part or a role of that object, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, and it is then a subscript label.
+**The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is. A label is a name of that kind, and the slot says what it names: on the caret it names the object the glyph denotes, $\mathbb{B}_{\mathrm{opp}}$, $a_{\mathrm{fop}}$, $L_{\mathrm{axf}}$, and low it names a part or a role of that object, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, and it is then a subscript label.
 
 ## The Superscripts
 
@@ -39,8 +39,8 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 
 | Token | Written on | Meaning |
 |---|---|---|
-| $^{\mathrm{fop}}$ | a Fock-operator glyph | an operator on the Fock space, the Fock-operator mark |
-| $^{\mathrm{opp}}$ | an algebra name, or an element naming a tensor factor | the opposite algebra, the algebra with the reversed product; never the two-letter $\mathrm{op}$ |
+| $_{\mathrm{fop}}$ | a Fock-operator glyph | an operator on the Fock space, the Fock-operator mark |
+| $_{\mathrm{opp}}$ | an algebra name, or an element naming a tensor factor | the opposite algebra, the algebra with the reversed product; never the two-letter $\mathrm{op}$ |
 
 Two further upright superscripts belong to objects outside the algebra — $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element. The first is a two-letter label and is indexed in §*The Two-Letter Labels*; the second is recorded in §*Summary of Notation*.
 
@@ -49,20 +49,20 @@ Two further upright superscripts belong to objects outside the algebra — $\mat
 **The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Operator and Calculus Conventions*, §*The Operators*). The single exception is the **Fock layer** of the physical corpus, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph:
 
 $$
-a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Q^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
+a_{\mathrm{fop}},\quad b_{\mathrm{fop}},\quad a_{\mathrm{fop}}^{\dagger},\quad \psi_{\mathrm{fop}},\quad N_{\mathrm{fop}},\quad H_{\mathrm{fop}},\quad F_{\mathrm{fop}},\quad Q_{\mathrm{fop}},\quad U_{\mathrm{fop}} .
 $$
 
 The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p$, the position $x$, the spin $S$ and the parity, charge-conjugation and reversal maps $P$, $C$ and $T$ carry no superscript, because each keeps the glyph of its element or is a map with a glyph of its own.
 
-**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Operator and Calculus Conventions*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
+**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Operator and Calculus Conventions*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a_{\mathrm{fop}})^{\dagger}$, contracted to $a_{\mathrm{fop}}^{\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
 
-**The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.
+**The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A_{\mathrm{opp}}$, $\mathbb{B}_{\mathrm{opp}}$, $M_n(D)_{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.
 
-**On an element the mark names a tensor factor.** Written on an element it means the same element read in the opposite algebra, $e_\nu^{\mathrm{opp}}$, and it is written there for that one purpose: to name the second factor of the tensor product $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, whose elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are the cells $L_{e_\mu}R_{e_\nu}$ of the two-sided operators. The element is not thereby an operator, the mark says nothing about a side, and on an operator glyph it is a defect. It marks an algebra, a module of one, and an element read in that algebra; it never marks a set or a bare vector space.
+**On an element the mark names a tensor factor.** Written on an element it means the same element read in the opposite algebra, $e_{\mathrm{opp},\nu}$, and it is written there for that one purpose: to name the second factor of the tensor product $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, whose elementary tensors $e_\mu\otimes e_{\mathrm{opp},\nu}$ are the cells $L_{e_\mu}R_{e_\nu}$ of the two-sided operators. The element is not thereby an operator, the mark says nothing about a side, and on an operator glyph it is a defect. It marks an algebra, a module of one, and an element read in that algebra; it never marks a set or a bare vector space.
 
 **The two-letter form $\mathrm{op}$ is forbidden in the caret.** Two letters are a length of the label in its own right (§*The Two-Letter Labels*), so the prohibition is not one of length: $\mathrm{op}$ differs from $\mathrm{opp}$ by one letter, at the size a superscript is set, and a page carrying both would be undecidable at reading speed. It is therefore not a caret token of the corpus in any sense, and the one place where it survives, the bar $\lVert A\rVert_{\mathrm{op}}$ of §*The Two-Letter Labels*, is a defect. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $-i\hbar\nabla$.
 
-**A caret carries a label as it carries a power.** Beyond the two tokens, the caret is the slot where the corpus names a variant of its object, in upright roman letters: $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, $\partial^{\mathrm{nil}}$, $\pi_1^{\mathrm{orb}}$. Italic is a power and upright is a name, so the two are told apart at sight, and a label is never read as an exponent: $L_{\vec e_x}^{\mathrm{axf}}$ is the matrix of $\vec e_x$ in the axis-free frame and not the $x$-th power of an operator. **The label is three lowercase letters by default, and two where the word shortens to two**, the two lengths fixed in §*The Two-Letter Labels*: one letter's difference, at the size a superscript is set, does not separate two meanings, and a pair that would differ by one letter is not written. A fourth letter is admitted where three do not carry the word, $\mathrm{lift}$, $\mathrm{dual}$, $\mathrm{deph}$, $\mathrm{refl}$. The table below is the index of the three-letter labels of the corpus.
+**A caret carries a label as it carries a power.** Beyond the two tokens, the caret is the slot where the corpus names a variant of its object, in upright roman letters: $\mathbb{B}_{\mathrm{opp}}$, $a_{\mathrm{fop}}$, $L_{\mathrm{axf}}$, $\partial_{\mathrm{nil}}$, $\pi_{\mathrm{orb},1}$. Italic is a power and upright is a name, so the two are told apart at sight, and a label is never read as an exponent: $L_{\mathrm{axf},\vec e_x}$ is the matrix of $\vec e_x$ in the axis-free frame and not the $x$-th power of an operator. **The label is three lowercase letters by default, and two where the word shortens to two**, the two lengths fixed in §*The Two-Letter Labels*: one letter's difference, at the size a superscript is set, does not separate two meanings, and a pair that would differ by one letter is not written. A fourth letter is admitted where three do not carry the word, $\mathrm{lift}$, $\mathrm{dual}$, $\mathrm{deph}$, $\mathrm{refl}$. The table below is the index of the three-letter labels of the corpus.
 
 ### The Two-Letter Labels
 
@@ -72,46 +72,46 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 **Two letters are the second length of the label, and they are made as the three are.** Either the initials of a two-word term — $\mathrm{sa}$ the self-adjoint part, $\mathrm{rs}$ the regular semisimple locus, $\mathrm{df}$ the discrete and faithful representations, $\mathrm{em}$ the electromagnetic part — or the consonants of a single word — $\mathrm{fn}$ a function, $\mathrm{sh}$ the sheafification, $\mathrm{bl}$ the blow-up, $\mathrm{cl}$ the classical value, $\mathrm{tr}$ the transpose, $\mathrm{gr}$ the gradient, $\mathrm{pf}$ the profinite completion, $\mathrm{sw}$ the swap. The three letters of the default are what a word that does not shorten gives, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$, and neither length is a shortening of the other: the index of the longer family is §*The Three-Letter Labels*.
 
-**A two-letter token is not a shortening of a three-letter one, and a pair that would be read for the other is forbidden.** $\mathrm{op}$ differs from $\mathrm{opp}$ by one letter and would name a variant of the same algebra on the same glyph, so it is not a token. The prefix relation alone is no defect: twenty-four two-letter tokens of the corpus begin a three-letter one — $\mathrm{sc}$ beside $\mathrm{scl}$, $\mathrm{st}$ beside $\mathrm{str}$, $\mathrm{sp}$ beside $\mathrm{spl}$, $\mathrm{ad}$ beside $\mathrm{adj}$ — and each pair is admitted because the two members never stand on one glyph in one role. What the rule forbids is a pair that names the same kind of object on the same glyph, and $\mathrm{cf}$ and $\mathrm{co}$ are outside it twice over, being operator names that carry their argument and never stand bare, $\kappa^{\mathrm{cf}(\kappa)}$ and $M^{\mathrm{co}H}$.
+**A two-letter token is not a shortening of a three-letter one, and a pair that would be read for the other is forbidden.** $\mathrm{op}$ differs from $\mathrm{opp}$ by one letter and would name a variant of the same algebra on the same glyph, so it is not a token. The prefix relation alone is no defect: twenty-four two-letter tokens of the corpus begin a three-letter one — $\mathrm{sc}$ beside $\mathrm{scl}$, $\mathrm{st}$ beside $\mathrm{str}$, $\mathrm{sp}$ beside $\mathrm{spl}$, $\mathrm{ad}$ beside $\mathrm{adj}$ — and each pair is admitted because the two members never stand on one glyph in one role. What the rule forbids is a pair that names the same kind of object on the same glyph, and $\mathrm{cf}$ and $\mathrm{co}$ are outside it twice over, being operator names that carry their argument and never stand bare, $\kappa_{\mathrm{cf}}^{(\kappa)}$ and $M_{\mathrm{co}}^H$.
 
-**$\mathrm{sp}$ is the one label of the spinor, and $\mathrm{pau}$ its Pauli counterpart.** $\mathrm{sp}$ marks the Dirac field, $\tilde\Xi^{\mathrm{sp}}=\tilde\Xi^{\mathrm{sp}}_L+\tilde\Xi^{\mathrm{sp}}_R$, the spinor role written low on its own density, $\rho_{\mathrm{sp}}=\lvert\tilde\Xi^{\mathrm{sp}}\rangle\langle\tilde\Xi^{\mathrm{sp}}\rvert$, and the spinor reading of a glyph whose Pauli reading is $\mathrm{pau}$, $\sigma_k^{\mathrm{sp}}$ beside $\sigma_k^{\mathrm{pau}}$. The two labels name a relation and not an object, so each is written on the glyph whose reading it fixes, and the article that writes it says what the reading carries. **The three-letter label `spn` is retired**: it stood one letter from $\mathrm{sp}$, on the same glyph, and named the same subject, which is the pair the rule above forbids; the form `\tilde\Xi^{\mathrm{spn}}` is now `\tilde\Xi^{\mathrm{sp}}` everywhere in the corpus.
+**$\mathrm{sp}$ is the one label of the spinor, and $\mathrm{pau}$ its Pauli counterpart.** $\mathrm{sp}$ marks the Dirac field, $\tilde\Xi_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp},L}+\tilde\Xi_{\mathrm{sp},R}$, the spinor role written low on its own density, $\rho_{\mathrm{sp}}=\lvert\tilde\Xi_{\mathrm{sp}}\rangle\langle\tilde\Xi_{\mathrm{sp}}\rvert$, and the spinor reading of a glyph whose Pauli reading is $\mathrm{pau}$, $\sigma_{\mathrm{sp},k}$ beside $\sigma_{\mathrm{pau},k}$. The two labels name a relation and not an object, so each is written on the glyph whose reading it fixes, and the article that writes it says what the reading carries. **The three-letter label `spn` is retired**: it stood one letter from $\mathrm{sp}$, on the same glyph, and named the same subject, which is the pair the rule above forbids; the form `\tilde\Xi^{\mathrm{spn}}` is now `\tilde\Xi^{\mathrm{sp}}` everywhere in the corpus.
 
-**A two-letter label is read in its slot, as a three-letter one is.** On the caret it names the object the glyph denotes, $G^{\mathrm{ab}}$, $X^{\mathrm{an}}$, $\hat G^{\mathrm{pf}}$; low it names a part or a role of that object, $G_{\mathrm{ad}}$, $G_{\mathrm{sc}}$, $\lVert f\rVert_{\mathrm{sp}}$, and §*The Subscripts* rules on the low slot. One token stands in both tables and the slot decides the word: $\mathrm{sp}$ in the caret, or low on a spinor density, is the spinor; $\mathrm{sp}$ on the bar, $\lVert f\rVert_{\mathrm{sp}}$, is the spectral norm. The bar is the discriminator, and no glyph carries the two readings at once.
+**A two-letter label is read in its slot, as a three-letter one is.** On the caret it names the object the glyph denotes, $G_{\mathrm{ab}}$, $X_{\mathrm{an}}$, $\hat G_{\mathrm{pf}}$; low it names a part or a role of that object, $G_{\mathrm{ad}}$, $G_{\mathrm{sc}}$, $\lVert f\rVert_{\mathrm{sp}}$, and §*The Subscripts* rules on the low slot. One token stands in both tables and the slot decides the word: $\mathrm{sp}$ in the caret, or low on a spinor density, is the spinor; $\mathrm{sp}$ on the bar, $\lVert f\rVert_{\mathrm{sp}}$, is the spectral norm. The bar is the discriminator, and no glyph carries the two readings at once.
 
 | Label | Names |
 |---|---|
-| $\mathrm{ab}$ | the abelianisation of a group, $G^{\mathrm{ab}}=G/[G,G]$ |
+| $\mathrm{ab}$ | the abelianisation of a group, $G_{\mathrm{ab}}=G/[G,G]$ |
 | $\mathrm{ad}$ | the adjoint of a prespectrum; the adic space |
-| $\mathrm{an}$ | the Berkovich analytification, $X^{\mathrm{an}}$ |
-| $\mathrm{av}$ | the averaged map, $\sigma^{\mathrm{av}}$ |
-| $\mathrm{ax}$ | the axial extension of a holomorphic function, $f^{\mathrm{ax}}_0$ |
-| $\mathrm{bl}$ | the blow-up, $X^{\mathrm{bl}}$ |
-| $\mathrm{cf}$ | the cofinality, written with its argument, $\kappa^{\mathrm{cf}(\kappa)}$ |
-| $\mathrm{cl}$ | the classical value, $\mathcal A^{\mathrm{cl}}$ |
-| $\mathrm{co}$ | the coinvariants of a comodule, written with its argument, $M^{\mathrm{co}H}$ |
-| $\mathrm{df}$ | the discrete and faithful representations, $\mathrm{Hom}^{\mathrm{df}}(\pi_1(S),PSL_2(\mathbb{R}))$ |
-| $\mathrm{em}$ | the electromagnetic part, $F^{\mathrm{em}}_{\mu\nu}$ |
-| $\mathrm{eq}$ | the equivalence relation generated by a relation, $R^{\mathrm{eq}}$ |
-| $\mathrm{ev}$ | the even part, $H^{\mathrm{ev}}$ |
-| $\mathrm{ex}$ | the exchange kernel, $K^{\mathrm{ex}}$ |
-| $\mathrm{fn}$ | a function from a domain into the algebra, $F^{\mathrm{fn}}:\Omega\to\mathbb{B}$ |
-| $\mathrm{gr}$ | the gradient index of a slowly changing medium, $\epsilon^{\mathrm{gr}}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$ |
-| $\mathrm{id}$ | the identity reading, the ordinary one: the left multiplication $\Lambda^{\mathrm{id}}_a=L_a$ |
-| $\mathrm{im}$ | the image of a domain under a diffeomorphism, $\Omega^{\mathrm{im}}$ |
-| $\mathrm{in}$ | the incoming field, $u^{\mathrm{in}}$ |
-| $\mathrm{io}$ | the monoid generated by the involution and the complement, $M^{\mathrm{io}}$ |
-| $\mathrm{pf}$ | the profinite completion, $\hat G^{\mathrm{pf}}$ |
-| $\mathrm{rs}$ | the regular semisimple locus, $M_5^{\mathrm{rs}}$ |
-| $\mathrm{sa}$ | the self-adjoint part, $B(H)^{\mathrm{sa}}$ |
-| $\mathrm{sc}$ | the scattered field, $u^{\mathrm{sc}}$ |
-| $\mathrm{sh}$ | the sheafification, $(M\otimes_A B)^{\mathrm{sh}}$ |
-| $\mathrm{si}$ | the signed inner conjugation, $\operatorname{Ad}^{\mathrm{si}}_v$ |
-| $\mathrm{sp}$ | the spinor: the Dirac field $\tilde\Xi^{\mathrm{sp}}$, its density $\rho_{\mathrm{sp}}$, and the spinor reading that pairs with $\mathrm{pau}$ for the Pauli matrices |
+| $\mathrm{an}$ | the Berkovich analytification, $X_{\mathrm{an}}$ |
+| $\mathrm{av}$ | the averaged map, $\sigma_{\mathrm{av}}$ |
+| $\mathrm{ax}$ | the axial extension of a holomorphic function, $f_{\mathrm{ax},0}$ |
+| $\mathrm{bl}$ | the blow-up, $X_{\mathrm{bl}}$ |
+| $\mathrm{cf}$ | the cofinality, written with its argument, $\kappa_{\mathrm{cf}}^{(\kappa)}$ |
+| $\mathrm{cl}$ | the classical value, $\mathcal A_{\mathrm{cl}}$ |
+| $\mathrm{co}$ | the coinvariants of a comodule, written with its argument, $M_{\mathrm{co}}^H$ |
+| $\mathrm{df}$ | the discrete and faithful representations, $\mathrm{Hom}_{\mathrm{df}}(\pi_1(S),PSL_2(\mathbb{R}))$ |
+| $\mathrm{em}$ | the electromagnetic part, $F_{\mathrm{em},\mu\nu}$ |
+| $\mathrm{eq}$ | the equivalence relation generated by a relation, $R_{\mathrm{eq}}$ |
+| $\mathrm{ev}$ | the even part, $H_{\mathrm{ev}}$ |
+| $\mathrm{ex}$ | the exchange kernel, $K_{\mathrm{ex}}$ |
+| $\mathrm{fn}$ | a function from a domain into the algebra, $F_{\mathrm{fn}}:\Omega\to\mathbb{B}$ |
+| $\mathrm{gr}$ | the gradient index of a slowly changing medium, $\epsilon_{\mathrm{gr}}=\mathrm{grad}\sqrt{\epsilon}/\sqrt{\epsilon}$ |
+| $\mathrm{id}$ | the identity reading, the ordinary one: the left multiplication $\Lambda_{\mathrm{id},a}=L_a$ |
+| $\mathrm{im}$ | the image of a domain under a diffeomorphism, $\Omega_{\mathrm{im}}$ |
+| $\mathrm{in}$ | the incoming field, $u_{\mathrm{in}}$ |
+| $\mathrm{io}$ | the monoid generated by the involution and the complement, $M_{\mathrm{io}}$ |
+| $\mathrm{pf}$ | the profinite completion, $\hat G_{\mathrm{pf}}$ |
+| $\mathrm{rs}$ | the regular semisimple locus, $M_{\mathrm{rs},5}$ |
+| $\mathrm{sa}$ | the self-adjoint part, $B(H)_{\mathrm{sa}}$ |
+| $\mathrm{sc}$ | the scattered field, $u_{\mathrm{sc}}$ |
+| $\mathrm{sh}$ | the sheafification, $(M\otimes_A B)_{\mathrm{sh}}$ |
+| $\mathrm{si}$ | the signed inner conjugation, $\operatorname{Ad}_{\mathrm{si},v}$ |
+| $\mathrm{sp}$ | the spinor: the Dirac field $\tilde\Xi_{\mathrm{sp}}$, its density $\rho_{\mathrm{sp}}$, and the spinor reading that pairs with $\mathrm{pau}$ for the Pauli matrices |
 | $\mathrm{st}$ | the supertranspose |
-| $\mathrm{sw}$ | the swap of the regular bimodule, ${}^{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ |
-| $\mathrm{tr}$ | the transpose, $T^{\mathrm{tr}}$ |
-| $\mathrm{tw}$ | the twisted local system, $\mathbb{Z}^{\mathrm{tw}}$ |
-| $\mathrm{un}$ | the unital one, $\operatorname{Aut}^{\mathrm{un}}_R$ |
+| $\mathrm{sw}$ | the swap of the regular bimodule, ${}_{\mathrm{sw}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ |
+| $\mathrm{tr}$ | the transpose, $T_{\mathrm{tr}}$ |
+| $\mathrm{tw}$ | the twisted local system, $\mathbb{Z}_{\mathrm{tw}}$ |
+| $\mathrm{un}$ | the unital one, $\operatorname{Aut}_{\mathrm{un},R}$ |
 
 **The second table is the norm bar.** Five labels stand on $\lVert\cdot\rVert$: four of them on the bar and on nothing else, and the fifth, $\mathrm{sp}$, on the bar and in its own row of the table above. None enters the caret but that one: the Frobenius norm $\lVert A\rVert_{\mathrm{F}}$, the Hilbert–Schmidt norm $\lVert A\rVert_{\mathrm{HS}}$, the nuclear norm $\lVert A\rVert_{\mathrm{nuc}}$, the spectral norm $\lVert f\rVert_{\mathrm{sp}}=\lim_m\lVert f^m\rVert^{1/m}$, and the sup norm $\lVert f\rVert_{\mathrm{sup}}$. **The operator norm is the bare bar:** $\lVert A\rVert$ unmarked is the operator norm by default and never by elimination, and the form $\lVert A\rVert_{\mathrm{op}}$, which fourteen formulas of the physical corpus still carry, says one norm twice and is a defect. The bar is the only slot where a capital stands, $\lVert A\rVert_{\mathrm{HS}}$.
 
@@ -137,13 +137,13 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 **Every label is written in lowercase.** The caret is set at superscript size, where the case of a two- or a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that forbids $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to spelling. The bar is the one place where a capital survives, and only there: the Hilbert–Schmidt label is $\lVert A\rVert_{\mathrm{HS}}$.
 
-**No three-letter token in the caret carries a capital.** The rule is total, and it reaches two families. A label, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$. And an **operator name** written in the caret with its argument, $\gamma_n^{\operatorname{sym}}$ on a divided-power structure, and the fixed field $K^{\operatorname{gal}(K/F)}$ — here the caret carries the acting group as $K^{\sigma}$ carries an automorphism, so the word does not name a variant of $K$ and stays out of the table below. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own. A code is written in the caret, on the object it qualifies: $h^{\mathrm{tpl}}$ the topological entropy, $\Lambda^{\mathrm{top}}$ the top exterior power. The low slot of a code is a defect, as a capital in the caret is. A capital in any of these positions is a defect. **Six codes of a second kind separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. The caret therefore carries six codes in all, and every one of them is lowercase.
+**No three-letter token in the caret carries a capital.** The rule is total, and it reaches two families. A label, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$. And an **operator name** written in the caret with its argument, $\gamma_n^{\operatorname{sym}}$ on a divided-power structure, and the fixed field $K^{\operatorname{gal}(K/F)}$ — here the caret carries the acting group as $K^{\sigma}$ carries an automorphism, so the word does not name a variant of $K$ and stays out of the table below. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own. A code is written in the caret, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy, $\Lambda_{\mathrm{top}}$ the top exterior power. The low slot of a code is a defect, as a capital in the caret is. A capital in any of these positions is a defect. **Six codes of a second kind separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. The caret therefore carries six codes in all, and every one of them is lowercase.
 
-**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K^{\mathrm{mod}}_{W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $E_{\mathrm{vac}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Thirteen qualifiers that already named the same object on the caret were written low as well, and they are now on the caret: $\mathrm{ret}$, $\mathrm{odd}$, $\mathrm{sgn}$, $\mathrm{opp}$, $\mathrm{fix}$, $\mathrm{lin}$, $\mathrm{nil}$, $\mathrm{wkb}$, $\mathrm{rep}$, $\mathrm{exp}$, $\mathrm{pol}$, $\mathrm{new}$, $\mathrm{imp}$. Six more carried two English words on one spelling; each took a code of its own and rose, and the six pairs are in §*The Three-Letter Labels*.
+**A label that names the object is written on the caret; a label that names a part stays low.** Three cases keep the low slot. One is the indexed label, where the label and an index are one field, $s_{\mathrm{tot},z}$, $\tilde K_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$. One is the part or the role, $\lVert A\rVert_{\mathrm{nuc}}$, $M_{\mathrm{tor}}$, $S_{\mathrm{int}}$, $E_{\mathrm{vac}}$. One is the operator name, $\operatorname{col}A$, $\operatorname{row}A$, $\sum_{\mathrm{cyc}}$. Fifteen labels name the object and were written low in the earlier corpus; each is now on the caret and each is in the table above: $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Thirteen qualifiers that already named the same object on the caret were written low as well, and they are now on the caret: $\mathrm{ret}$, $\mathrm{odd}$, $\mathrm{sgn}$, $\mathrm{opp}$, $\mathrm{fix}$, $\mathrm{lin}$, $\mathrm{nil}$, $\mathrm{wkb}$, $\mathrm{rep}$, $\mathrm{exp}$, $\mathrm{pol}$, $\mathrm{new}$, $\mathrm{imp}$. Six more carried two English words on one spelling; each took a code of its own and rose, and the six pairs are in §*The Three-Letter Labels*.
 
 | Label | Names |
 |---|---|
-| $\mathrm{adg}$ | the adjugate matrix, $A^{\mathrm{adg}}$, the reading that shared $\mathrm{adj}$ before the code was made |
+| $\mathrm{adg}$ | the adjugate matrix, $A_{\mathrm{adg}}$, the reading that shared $\mathrm{adj}$ before the code was made |
 | $\mathrm{adj}$ | the adjoint spin of a representation |
 | $\mathrm{aff}$ | the affine Weyl group of a root system |
 | $\mathrm{alg}$ | the algebraic left multiplication |
@@ -158,7 +158,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{cov}$ | the universal cover here, the covariant fundamental solution there |
 | $\mathrm{cts}$ | the continuous dual |
 | $\mathrm{def}$ | the defining spin; the deformation stratum |
-| $\mathrm{dfc}$ | the defective part, $\Sigma_{10}^{\mathrm{dfc}}$ |
+| $\mathrm{dfc}$ | the defective part, $\Sigma_{\mathrm{dfc},10}$ |
 | $\mathrm{dif}$ | the difference, or antisymmetrised, product |
 | $\mathrm{epr}$ | the value of the EPR steering parameter |
 | $\mathrm{est}$ | an unbiased estimator |
@@ -190,7 +190,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{mot}$ | the motional electric field |
 | $\mathrm{new}$ | the new subspace |
 | $\mathrm{nil}$ | the nilpotent direction |
-| $\mathrm{obf}$ | the orbifold Euler characteristic, $\chi^{\mathrm{obf}}$ |
+| $\mathrm{obf}$ | the orbifold Euler characteristic, $\chi_{\mathrm{obf}}$ |
 | $\mathrm{obs}$ | the observed frequency |
 | $\mathrm{odd}$ | the odd part of a graded algebra |
 | $\mathrm{old}$ | the old subspace |
@@ -202,15 +202,15 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{pol}$ | the polarisation vector |
 | $\mathrm{pot}$ | the potential energy |
 | $\mathrm{pre}$ | the presheaf |
-| $\mathrm{prm}$ | the perimeter coefficient, $\mu^{\mathrm{prm}}$ |
+| $\mathrm{prm}$ | the perimeter coefficient, $\mu_{\mathrm{prm}}$ |
 | $\mathrm{red}$ | the reduced object |
-| $\mathrm{reg}$ | the regular representation, $\rho^{\mathrm{reg}}$, $\operatorname{Tr}^{\mathrm{reg}}$, $\chi^{\mathrm{reg}}$ |
+| $\mathrm{reg}$ | the regular representation, $\rho_{\mathrm{reg}}$, $\operatorname{Tr}_{\mathrm{reg}}$, $\chi_{\mathrm{reg}}$ |
 | $\mathrm{rel}$ | the relative transfer |
 | $\mathrm{rep}$ | the representing function |
 | $\mathrm{res}$ | the residual part; the residue field |
 | $\mathrm{ret}$ | the retarded field |
 | $\mathrm{rev}$ | the reversed process |
-| $\mathrm{rgs}$ | the regularised kernel, $G_R^{\mathrm{rgs}}$ |
+| $\mathrm{rgs}$ | the regularised kernel, $G_{\mathrm{rgs},R}$ |
 | $\mathrm{set}$ | the underlying set of a structure |
 | $\mathrm{sgn}$ | the sign |
 | $\mathrm{src}$ | the source point of a short-time kernel |
@@ -219,54 +219,54 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{sym}$ | the symmetrised form; on a divided-power structure, the symmetric one |
 | $\mathrm{top}$ | the top exterior power |
 | $\mathrm{tot}$ | the total tensor |
-| $\mathrm{tpl}$ | the topological entropy and susceptibility, $h^{\mathrm{tpl}}$ |
-| $\mathrm{vol}$ | the volume cell of a frame, $\mathsf{V}^{\mathrm{vol}}$, the chirality operator of the frame |
+| $\mathrm{tpl}$ | the topological entropy and susceptibility, $h_{\mathrm{tpl}}$ |
+| $\mathrm{vol}$ | the volume cell of a frame, $\mathsf{V}_{\mathrm{vol}}$, the chirality operator of the frame |
 | $\mathrm{wkb}$ | the WKB approximation |
 
 **The second table is the angle family.** Each row is a role that a second angle plays in one formula, and the glyph is the same in every row: the label is what tells one angle from another. The table reads alphabetically by the label, and no angle label names an object — the object is the element and the angle is one of its coordinates.
 
 | Label | Names |
 |---|---|
-| $\theta^{\mathrm{axc}}$ | the axicon angle of a Bessel beam |
-| $\theta^{\mathrm{axr}}$ | the rotation angle about an arbitrary axis |
-| $\theta^{\mathrm{axs}}$ | the rotation angle about $\vec u_y$ in the Majorana chart |
-| $\theta^{\mathrm{azm}}$ | the azimuthal angle |
-| $\theta^{\mathrm{blc}}$ | the angle the Bloch vector turns |
-| $\theta^{\mathrm{btw}}$ | the angle between two directions |
-| $\theta^{\mathrm{dfl}}$ | the small deflection angle |
-| $\theta^{\mathrm{drb}}$ | the angle from the Darboux to the Frenet frame |
-| $\theta^{\mathrm{drc}}$ | the direction angle of a unit vector |
-| $\theta^{\mathrm{dua}}$ | the duality-rotation angle of an electromagnetic wave |
-| $\theta^{\mathrm{eul}}$ | the spin angle of a symmetric top |
-| $\theta^{\mathrm{foc}}$ | the colatitude of a point on the sphere |
-| $\theta^{\mathrm{hpa}}$ | the hyperbolic angle of a split-complex number |
-| $\theta^{\mathrm{intr}}$ | the rotation angle of the internal clock |
-| $\theta^{\mathrm{lna}}$ | the angle of the line $a$ |
-| $\theta^{\mathrm{lnb}}$ | the angle of the line $b$ |
-| $\theta^{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
-| $\theta^{\mathrm{pha}}$ | the phase angle of a complex number or of a gate, $\theta^{\mathrm{pha}}=\arg\omega$ |
-| $\theta^{\mathrm{pla}}$ | the angle in the first invariant plane |
-| $\theta^{\mathrm{plb}}$ | the angle in the second invariant plane |
-| $\theta^{\mathrm{prc}}$ | the precession angle of a gyroscope |
-| $\theta^{\mathrm{rat}}$ | the angle a rate forms with time, $\omega t'$ |
-| $\theta^{\mathrm{rgp}}$ | the second rotation angle about one axis |
-| $\theta^{\mathrm{sct}}$ | the scattering angle |
-| $\theta^{\mathrm{sol}}$ | the solid angle |
-| $\theta^{\mathrm{stk}}$ | the rotation angle in Stokes space |
-| $\theta^{\mathrm{tnp}}$ | the rotation angle in the tangent plane |
-| $\theta^{\mathrm{vac}}$ | the vacuum angle of a gauge field |
-| $\theta^{\mathrm{wav}}$ | the angle between a wave vector and a boost |
-| $\theta^{\mathrm{wgn}}$ | the Wigner angle of a boost product |
+| $\theta_{\mathrm{axc}}$ | the axicon angle of a Bessel beam |
+| $\theta_{\mathrm{axr}}$ | the rotation angle about an arbitrary axis |
+| $\theta_{\mathrm{axs}}$ | the rotation angle about $\vec u_y$ in the Majorana chart |
+| $\theta_{\mathrm{azm}}$ | the azimuthal angle |
+| $\theta_{\mathrm{blc}}$ | the angle the Bloch vector turns |
+| $\theta_{\mathrm{btw}}$ | the angle between two directions |
+| $\theta_{\mathrm{dfl}}$ | the small deflection angle |
+| $\theta_{\mathrm{drb}}$ | the angle from the Darboux to the Frenet frame |
+| $\theta_{\mathrm{drc}}$ | the direction angle of a unit vector |
+| $\theta_{\mathrm{dua}}$ | the duality-rotation angle of an electromagnetic wave |
+| $\theta_{\mathrm{eul}}$ | the spin angle of a symmetric top |
+| $\theta_{\mathrm{foc}}$ | the colatitude of a point on the sphere |
+| $\theta_{\mathrm{hpa}}$ | the hyperbolic angle of a split-complex number |
+| $\theta_{\mathrm{intr}}$ | the rotation angle of the internal clock |
+| $\theta_{\mathrm{lna}}$ | the angle of the line $a$ |
+| $\theta_{\mathrm{lnb}}$ | the angle of the line $b$ |
+| $\theta_{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
+| $\theta_{\mathrm{pha}}$ | the phase angle of a complex number or of a gate, $\theta_{\mathrm{pha}}=\arg\omega$ |
+| $\theta_{\mathrm{pla}}$ | the angle in the first invariant plane |
+| $\theta_{\mathrm{plb}}$ | the angle in the second invariant plane |
+| $\theta_{\mathrm{prc}}$ | the precession angle of a gyroscope |
+| $\theta_{\mathrm{rat}}$ | the angle a rate forms with time, $\omega t'$ |
+| $\theta_{\mathrm{rgp}}$ | the second rotation angle about one axis |
+| $\theta_{\mathrm{sct}}$ | the scattering angle |
+| $\theta_{\mathrm{sol}}$ | the solid angle |
+| $\theta_{\mathrm{stk}}$ | the rotation angle in Stokes space |
+| $\theta_{\mathrm{tnp}}$ | the rotation angle in the tangent plane |
+| $\theta_{\mathrm{vac}}$ | the vacuum angle of a gauge field |
+| $\theta_{\mathrm{wav}}$ | the angle between a wave vector and a boost |
+| $\theta_{\mathrm{wgn}}$ | the Wigner angle of a boost product |
 
-**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,457 occurrences in the two corpora; the largest, $\theta^{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
+**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,457 occurrences in the two corpora; the largest, $\theta_{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
 
-**A phase is written here and not in a letter of its own.** The 91 occurrences that $\phi$ carried as a phase are $\theta^{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.
+**A phase is written here and not in a letter of its own.** The 91 occurrences that $\phi$ carried as a phase are $\theta_{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.
 
 **A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$, and §*The Subscripts* rules on the low slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.
 
 ## The Subscripts
 
-A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}^{\mathrm{red}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§*The Three-Letter Labels*). The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.
+A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{red}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§*The Three-Letter Labels*). The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.
 
 **A subscript is never a partial derivative.** The subscript is an index or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Operator and Calculus Conventions*, §*Conventions for Derivation*.
 
@@ -274,7 +274,7 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **It is allowed to add subscripts when several elements of the same kind are used.** The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.
 
-**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}^{\mathrm{red}}$ and $\tilde U_{\mathrm b}$.
+**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{red}}$ and $\tilde U_{\mathrm b}$.
 
 **A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
 
@@ -290,10 +290,10 @@ The forms a subscript takes are these.
 | a letter | $Q_k$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
 | a sign | $\tilde\Pi_\pm$ |
-| an upright word | $\mathbb{B}^{\mathrm{red}}$, $\tilde U_{\mathrm b}$ |
+| an upright word | $\mathbb{B}_{\mathrm{red}}$, $\tilde U_{\mathrm b}$ |
 | a grouped expression | $Q_{n+1}$ |
 
-**The size and the family share one subscript.** A regular matrix carries the size of its array and the letters of its family in the same subscript, the size first and the family after it with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$ for the one-sided families, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$ for the two-sided one. The family letters keep the italic capitals of the operators $L$ and $R$, against the upright roman of a role label, and the caret is left free for the frame, $\mathsf M_{4L}^{\mathrm{pau}}$. A bare size, as in $M_4(\mathbb{C})$, names a matrix algebra and no family.
+**The size and the family share one subscript.** A regular matrix carries the size of its array and the letters of its family in the same subscript, the size first and the family after it with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$ for the one-sided families, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$ for the two-sided one. The family letters keep the italic capitals of the operators $L$ and $R$, against the upright roman of a role label, and the caret is left free for the frame, $\mathsf M_{\mathrm{pau},4L}$. A bare size, as in $M_4(\mathbb{C})$, names a matrix algebra and no family.
 
 
 The decorations that may stand in the subscript slot are these: all 451 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text.
@@ -406,7 +406,7 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
 
 ## Summary
 
-Two **superscript tokens** run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name or on an element that names a tensor factor. The Fock mark combines with the dagger, the mark first, $a^{\mathrm{fop}\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form. The caret also carries the corpus's **labels**, upright roman names of two or of three lowercase letters — $\mathrm{fn}$, $\mathrm{ab}$, $\mathrm{ax}$ and $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ — indexed in §*The Two-Letter Labels* and §*The Three-Letter Labels*; a label names the object the glyph denotes when it is written on the caret, and a part or a role of that object when it is written low, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$. **No token the caret carries begins with a capital**: a label, and an operator name such as $\operatorname{sym}$ or $\operatorname{gal}$, are both lowercase, and a capital in that position is a defect. A product is written with its two slots and not in the caret at all, so it raises no question of case: $\tilde Q_1\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
+Two **superscript tokens** run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name or on an element that names a tensor factor. The Fock mark combines with the dagger, the mark first, $a_{\mathrm{fop}}^{\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form. The caret also carries the corpus's **labels**, upright roman names of two or of three lowercase letters — $\mathrm{fn}$, $\mathrm{ab}$, $\mathrm{ax}$ and $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ — indexed in §*The Two-Letter Labels* and §*The Three-Letter Labels*; a label names the object the glyph denotes when it is written on the caret, and a part or a role of that object when it is written low, $s_{\mathrm{tot}}$, $S_{\mathrm{int}}$. **No token the caret carries begins with a capital**: a label, and an operator name such as $\operatorname{sym}$ or $\operatorname{gal}$, are both lowercase, and a capital in that position is a defect. A product is written with its two slots and not in the caret at all, so it raises no question of case: $\tilde Q_1\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$.
 
 A **subscript** is written with the underscore and takes a single token: one character bare, two or more in braces. It counts when it only distinguishes occurrences and names when it is a role label; a role-labelled element carries its label in its coefficients. The admitted forms are a digit, a letter, two indices, a sign, an upright word and a grouped expression, and the slot takes any KaTeX expression beyond them. A regular matrix puts the size and the family in one subscript, $\mathsf M_{4L}$ and $\mathsf M_{4LR\ast}$, the family in italic capitals after the size and the caret kept for the frame. A subscript is never a partial derivative. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the total generator carries the role subscript and then the vector index, $\tilde S_{\mathrm{tot},k}$; the orbital part is $L_k$ here and $\tilde L_k$ in the physical corpus.
 
@@ -418,15 +418,15 @@ The **category numbers** count the categories of the parts in menu order; the fr
 
 | Symbol | Meaning |
 |---|---|
-| $^{\mathrm{fop}}$ | A Fock operator, an operator on the Fock space and not an element of the algebra |
-| $^{\mathrm{opp}}$ | The opposite algebra, the algebra with the reversed product, and an element read in it where it names a tensor factor; the two-letter $\mathrm{op}$ is not a caret token |
+| $_{\mathrm{fop}}$ | A Fock operator, an operator on the Fock space and not an element of the algebra |
+| $_{\mathrm{opp}}$ | The opposite algebra, the algebra with the reversed product, and an element read in it where it names a tensor factor; the two-letter $\mathrm{op}$ is not a caret token |
 | $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ | The three-letter labels of a construction, a frame or a variant of an object; the full index is §*The Three-Letter Labels* |
-| $\mathrm{fn}$, $\mathrm{ab}$, $\mathrm{ax}$, $\mathrm{sp}$ | The two-letter labels of the same kind, the word shortened to its initials or to its consonants, $\mathrm{sa}$ the self-adjoint part, $\mathrm{bl}$ the blow-up; $\mathrm{sp}$ is the spinor, the Dirac field $\tilde\Xi^{\mathrm{sp}}$ and the reading that $\mathrm{pau}$ gives as the Pauli one, and it replaces the retired `spn`. The full index is §*The Two-Letter Labels* |
+| $\mathrm{fn}$, $\mathrm{ab}$, $\mathrm{ax}$, $\mathrm{sp}$ | The two-letter labels of the same kind, the word shortened to its initials or to its consonants, $\mathrm{sa}$ the self-adjoint part, $\mathrm{bl}$ the blow-up; $\mathrm{sp}$ is the spinor, the Dirac field $\tilde\Xi_{\mathrm{sp}}$ and the reading that $\mathrm{pau}$ gives as the Pauli one, and it replaces the retired `spn`. The full index is §*The Two-Letter Labels* |
 | $\operatorname{sym}$, $\operatorname{gal}$ | An operator name written in the caret with its argument, $\operatorname{sym}(P)$, $\gamma_n^{\operatorname{sym}}$, $K^{\operatorname{gal}(K/F)}$; lowercase, and read by its argument |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | The twelve products of the algebraic structures, written by their two slots and the conjugation each one carries, never by a code: four general products, their four symmetric parts with $\bullet$ and their four antisymmetric parts with $\wedge$, the class carried by the subscript ${}_{*}$, ${}_{\natural}$, ${}_{\natural*}$ |
-| $^{\mathrm{rgs}}$, $^{\mathrm{tpl}}$, $^{\mathrm{prm}}$, $^{\mathrm{dfc}}$, $^{\mathrm{obf}}$, $^{\mathrm{adg}}$ | The six codes that separate two words sharing one spelling: regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint; a code is cheaper than a second meaning on the same letters |
-| $^{\mathrm{fn}}$ | A function from a domain into the algebra; a two-letter label, §*The Two-Letter Labels* |
-| $^{\mathrm{spin}}$ | An element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle |
+| $_{\mathrm{rgs}}$, $_{\mathrm{tpl}}$, $_{\mathrm{prm}}$, $_{\mathrm{dfc}}$, $_{\mathrm{obf}}$, $_{\mathrm{adg}}$ | The six codes that separate two words sharing one spelling: regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint; a code is cheaper than a second meaning on the same letters |
+| $_{\mathrm{fn}}$ | A function from a domain into the algebra; a two-letter label, §*The Two-Letter Labels* |
+| $_{\mathrm{spin}}$ | An element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |
 | `- Applications` | The group that closes a category with the concrete instances of its structure |
 | `+` | A planned article, registered in the menu and not yet written |

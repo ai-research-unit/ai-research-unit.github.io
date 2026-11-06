@@ -83,7 +83,7 @@ $$
 are **central**, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,
 
 $$
-\boxed{\;\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}\;},
+\boxed{\;\mathbb{B}_{\mathrm{spl}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}\;},
 $$
 
 through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. **The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.** The contrast is developed in *The Clifford Decomposition of the Split-Biquaternion Fractals*.

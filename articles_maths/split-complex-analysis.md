@@ -31,7 +31,7 @@ $$
 d(Q, B) = \|Q - B\|_E.
 $$
 
-This makes $\mathbb{C}^{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.
+This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.
 
 The **split modulus** is
 
@@ -46,30 +46,30 @@ which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not su
 The **open ball** of radius $r > 0$ centred at $Q_0$ is
 
 $$
-B(Q_0, r) = \{Q \in \mathbb{C}^{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
 $$
 
-It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}^{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.
+It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.
 
 ### Open and Closed Sets
 
-A set $\Omega \subseteq \mathbb{C}^{\mathrm{spl}}$ is **open** if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.
+A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is **open** if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.
 
-A set $F \subseteq \mathbb{C}^{\mathrm{spl}}$ is **closed** if its complement $\mathbb{C}^{\mathrm{spl}} \setminus F$ is open.
+A set $F \subseteq \mathbb{C}_{\mathrm{spl}}$ is **closed** if its complement $\mathbb{C}_{\mathrm{spl}} \setminus F$ is open.
 
 Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.
 
 ### Connectedness and Domains
 
-A set $\Omega \subseteq \mathbb{C}^{\mathrm{spl}}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}^{\mathrm{spl}}$, connectedness and path-connectedness are equivalent.
+A set $\Omega \subseteq \mathbb{C}_{\mathrm{spl}}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}_{\mathrm{spl}}$, connectedness and path-connectedness are equivalent.
 
-A **domain** is a non-empty open connected subset of $\mathbb{C}^{\mathrm{spl}}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
+A **domain** is a non-empty open connected subset of $\mathbb{C}_{\mathrm{spl}}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
 ### Compactness
 
-A set $K \subseteq \mathbb{C}^{\mathrm{spl}}$ is **compact** if every open cover of $K$ has a finite subcover.
+A set $K \subseteq \mathbb{C}_{\mathrm{spl}}$ is **compact** if every open cover of $K$ has a finite subcover.
 
-**Theorem (Heine–Borel).** A subset of $\mathbb{C}^{\mathrm{spl}}$ is compact iff it is closed and bounded in the Euclidean norm.
+**Theorem (Heine–Borel).** A subset of $\mathbb{C}_{\mathrm{spl}}$ is compact iff it is closed and bounded in the Euclidean norm.
 
 **Theorem.** A continuous split-complex-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.
 
@@ -77,7 +77,7 @@ A set $K \subseteq \mathbb{C}^{\mathrm{spl}}$ is **compact** if every open cover
 
 ### Limits of Sequences
 
-A sequence $(Q_n)$ of split complex numbers **converges** to $L \in \mathbb{C}^{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(Q_n)$ of split complex numbers **converges** to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
 n \geq N \implies \|Q_n - L\|_E < \epsilon.
@@ -103,7 +103,7 @@ $$
 Q_n + B_n \to L + M, \qquad Q_n B_n \to L M.
 $$
 
-There is no quotient rule in general, because $\mathbb{C}^{\mathrm{spl}}$ has zero divisors.
+There is no quotient rule in general, because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors.
 
 ### Cauchy Sequences
 
@@ -113,11 +113,11 @@ $$
 m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
 $$
 
-**Theorem.** In $\mathbb{C}^{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}^{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.
+**Theorem.** In $\mathbb{C}_{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.
 
 ### Limits of Functions
 
-Let $f : D \to \mathbb{C}^{\mathrm{spl}}$ with $D \subseteq \mathbb{C}^{\mathrm{spl}}$, and let $Q_0$ be a limit point of $D$. We say
+Let $f : D \to \mathbb{C}_{\mathrm{spl}}$ with $D \subseteq \mathbb{C}_{\mathrm{spl}}$, and let $Q_0$ be a limit point of $D$. We say
 
 $$
 \lim_{Q \to Q_0} f(Q) = L
@@ -137,7 +137,7 @@ $$
 
 ### Continuity
 
-A function $f : D \to \mathbb{C}^{\mathrm{spl}}$ is **continuous at** $Q_0 \in D$ if
+A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is **continuous at** $Q_0 \in D$ if
 
 $$
 \lim_{Q \to Q_0} f(Q) = f(Q_0).
@@ -159,7 +159,7 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 ### Uniform Continuity
 
-A function $f : D \to \mathbb{C}^{\mathrm{spl}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
+A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
 Q, B \in D, \; \|Q - B\|_E < \delta \implies \|f(Q) - f(B)\|_E < \epsilon.
@@ -171,7 +171,7 @@ $$
 
 ### The Derivative
 
-Let $f : \Omega \to \mathbb{C}^{\mathrm{spl}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
+Let $f : \Omega \to \mathbb{C}_{\mathrm{spl}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
 
 $$
 f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
@@ -179,7 +179,7 @@ $$
 
 provided the limit exists. If it does, $f$ is **split complex differentiable** at $Q_0$, or **holomorphic** at $Q_0$ in the split sense.
 
-The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}^{\mathrm{spl}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.
+The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.
 
 **Theorem.** Split complex differentiability implies continuity. The converse fails.
 
@@ -247,7 +247,7 @@ $$
 
 ### Definition
 
-The **idempotents** of $\mathbb{C}^{\mathrm{spl}}$ are
+The **idempotents** of $\mathbb{C}_{\mathrm{spl}}$ are
 
 $$
 \Pi_+ = \frac{1 + j}{2}, \qquad \Pi_- = \frac{1 - j}{2}.
@@ -271,7 +271,7 @@ $$
 
 **Proof.** In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable.
 
-This is the **fundamental theorem of split complex analysis**: differentiability in $\mathbb{C}^{\mathrm{spl}}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.
+This is the **fundamental theorem of split complex analysis**: differentiability in $\mathbb{C}_{\mathrm{spl}}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.
 
 ### Consequences
 
@@ -279,13 +279,13 @@ This is the **fundamental theorem of split complex analysis**: differentiability
 
 **No Cauchy integral formula.** There is no single integral formula that reconstructs a split complex differentiable function from its boundary values, because the two components are independent.
 
-**No Liouville theorem.** A bounded split complex differentiable function on all of $\mathbb{C}^{\mathrm{spl}}$ need not be constant, because each component can be an arbitrary bounded differentiable function of one real variable.
+**No Liouville theorem.** A bounded split complex differentiable function on all of $\mathbb{C}_{\mathrm{spl}}$ need not be constant, because each component can be an arbitrary bounded differentiable function of one real variable.
 
 ## Integration
 
 ### Contour Integrals
 
-Let $\gamma : [a, b] \to \mathbb{C}^{\mathrm{spl}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
+Let $\gamma : [a, b] \to \mathbb{C}_{\mathrm{spl}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
 
 $$
 \int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
@@ -334,7 +334,7 @@ and similarly for $f_-$. But these are complex formulas applied to real function
 A **power series** centred at $Q_0$ is
 
 $$
-\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}^{\mathrm{spl}}.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
 In the idempotent basis $c_n = c_{n,+} \Pi_+ + c_{n,-} \Pi_-$, and the series is the pair of real power series
@@ -428,7 +428,7 @@ The article develops the subject in that basis: contour integrals along paths, p
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number |
 | $\bar{Q} = q - jq'$ | Split complex conjugate |

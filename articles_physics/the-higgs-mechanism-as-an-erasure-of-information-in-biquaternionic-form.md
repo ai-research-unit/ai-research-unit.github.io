@@ -42,7 +42,7 @@ $$
 \xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\exp(\,i\theta(\tilde{Q})/v),
 $$
 
-with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta^{\mathrm{fld}}$ the angular fluctuation, with no potential term at all.
+with $h$ and $\theta$ real, exhibits the two real fields: $h$ the radial fluctuation, with mass $m_h^2 = 2\beta v^2$ from the curvature of the potential, and $\vartheta_{\mathrm{fld}}$ the angular fluctuation, with no potential term at all.
 
 ### The Informational Status of the Phase
 
@@ -62,7 +62,7 @@ The information-theoretic interpretation of the erasure is sharpened by the curv
 
 ### The Hessian at the Minimum
 
-Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\vartheta^{\mathrm{fld}}/v)$, so that
+Write the scalar in the two real fields, $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\vartheta_{\mathrm{fld}}/v)$, so that
 
 $$
 \xi^*\xi = \tfrac{1}{2}(v+h)^2,
@@ -77,14 +77,14 @@ $$
 V(h) = \beta v^2h^2 + \beta v\,h^3 + \frac{\beta}{4}h^4 ,
 $$
 
-so the Hessian at the minimum, in the coordinates $(h,\vartheta^{\mathrm{fld}})$, is
+so the Hessian at the minimum, in the coordinates $(h,\vartheta_{\mathrm{fld}})$, is
 
 $$
-\boxed{\;H = \begin{pmatrix} \partial^2V/\partial h^2 & \partial^2V/\partial h\partial\vartheta^{\mathrm{fld}} \\[2pt] \partial^2V/\partial\vartheta^{\mathrm{fld}}\partial h & \partial^2V/\partial{\vartheta^{\mathrm{fld}}}^2 \end{pmatrix}_{h=\vartheta^{\mathrm{fld}}=0}
+\boxed{\;H = \begin{pmatrix} \partial^2V/\partial h^2 & \partial^2V/\partial h\partial\vartheta_{\mathrm{fld}} \\[2pt] \partial^2V/\partial\vartheta_{\mathrm{fld}}\partial h & \partial^2V/\partial{\vartheta_{\mathrm{fld}}}^2 \end{pmatrix}_{h=\vartheta_{\mathrm{fld}}=0}
 = \begin{pmatrix} 2\beta v^2 & 0 \\ 0 & 0 \end{pmatrix}\;}.
 $$
 
-The Hessian has rank one. The **massive direction** is the radial one, with $m_h^2 = 2\beta v^2$; the **flat direction** is the phase, with zero curvature. This was recomputed by finite differences: at $\beta = 1$ and $v = 1.3$, the second derivative of $V$ along $h$ came out as $3.38000000$ against the prediction $2\beta v^2 = 3.38000000$, while the curvature along $\vartheta^{\mathrm{fld}}$ is identically zero for every value of $\vartheta^{\mathrm{fld}}$, because $V$ does not depend on it.
+The Hessian has rank one. The **massive direction** is the radial one, with $m_h^2 = 2\beta v^2$; the **flat direction** is the phase, with zero curvature. This was recomputed by finite differences: at $\beta = 1$ and $v = 1.3$, the second derivative of $V$ along $h$ came out as $3.38000000$ against the prediction $2\beta v^2 = 3.38000000$, while the curvature along $\vartheta_{\mathrm{fld}}$ is identically zero for every value of $\vartheta_{\mathrm{fld}}$, because $V$ does not depend on it.
 
 ### The Count of Records and the Count of Erased Labels
 
@@ -113,23 +113,23 @@ $$
 \xi \;\longmapsto\; \exp(iϙ\Gamma/\hbar)\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)\exp(-i\theta/v) = \tfrac{1}{\sqrt{2}}(v+h),
 $$
 
-real. This is the **unitary gauge** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta^{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
+real. This is the **unitary gauge** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta_{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
 
 ### What the Transformation Does to the Connection
 
 The same gauge transformation shifts the connection,
 
 $$
-A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}} ,
+A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}} ,
 $$
 
 so that the combination
 
 $$
-\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}
+\mathcal{A}_\mu := A_\mu + \frac{\hbar}{ϙv}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}
 $$
 
-is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\vartheta^{\mathrm{fld}}$ and the modification of $A_\mu$ are the same operation seen from the two ends.
+is gauge invariant, and the mass term of the next section depends on it rather than on $A_\mu$ alone. The two terms are not separately physical. What appears as the removal of one field and the shift of another is a single gauge transformation; the erasure of $\vartheta_{\mathrm{fld}}$ and the modification of $A_\mu$ are the same operation seen from the two ends.
 
 This is the precise sense in which the Higgs mechanism **uses** the gauge redundancy rather than suffering it. In the companion article on the gauge orbit the redundancy was an inert overcompleteness: many descriptions, one configuration, no physical consequence. Here the redundancy is exploited: the phase is a coordinate along the orbit, the transformation that removes it shifts the connection by a gradient, and the shifted connection is the one whose kinetic term produces a mass. The erasure is the act of spending the redundancy.
 
@@ -278,13 +278,13 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $\xi^*\xi = \mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}] = |\xi|^2$ | Gauge-invariant content of the scalar |
 | $V = \beta(\xi^*\xi - v^2/2)^2$ | Potential; minimum the circle $|\xi| = v/\sqrt{2}$ |
 | $v$ | Vacuum expectation value; the gauge-invariant record of the breaking |
-| $h,\ \vartheta^{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
+| $h,\ \vartheta_{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative and coupling |
 | $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
-| $\Gamma = -(\hbar/ϙv)\vartheta^{\mathrm{fld}}$ | Gauge function of the unitary gauge |
-| $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\vartheta^{\mathrm{fld}}$ | Gauge-invariant combination carrying the mass |
+| $\Gamma = -(\hbar/ϙv)\vartheta_{\mathrm{fld}}$ | Gauge function of the unitary gauge |
+| $\mathcal{A}_\mu = A_\mu + (\hbar/ϙv)\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}$ | Gauge-invariant combination carrying the mass |
 | $M_A^2 = ϙ^2v^2/\hbar^2$, $M_A = ϙv/\hbar$ | Gauge-field (Proca) mass; the record |
 | $-\tfrac12 M_A^2\,\langle\tilde{A}\rangle_{\natural}$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |

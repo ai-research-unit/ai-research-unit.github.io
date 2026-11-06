@@ -3,30 +3,30 @@
 
 ## Introduction
 
-The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ carries four linear involutions, and each of them splits $\mathbb{B}^{\mathrm{spl}}$ into a fixed space and an anti-fixed space. Four of the resulting spaces — the split complex subspace, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace — are the distinguished real subspaces of the algebra and are the subject of the four single-subspace articles. This article treats the smallest of them, the **split complex subspace** $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$, on its own: its definition, its basis, its algebra structure, the restriction of the split-biquaternion norm to it, its idempotents and zero divisors, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are *Split-Biquaternion Quaternion Subspace*, *Split-Biquaternion Hermitian Subspace* and *Split-Biquaternion Anti-Hermitian Subspace*; their relations with one another are collected in *Split-Biquaternion Relations Between Subspaces*, and the involutions themselves in *Split-Biquaternion Involution Lattice*.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries four linear involutions, and each of them splits $\mathbb{B}_{\mathrm{spl}}$ into a fixed space and an anti-fixed space. Four of the resulting spaces — the split complex subspace, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace — are the distinguished real subspaces of the algebra and are the subject of the four single-subspace articles. This article treats the smallest of them, the **split complex subspace** $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, on its own: its definition, its basis, its algebra structure, the restriction of the split-biquaternion norm to it, its idempotents and zero divisors, the action of the four involutions upon it, and its intersections with the other subspaces. The companions are *Split-Biquaternion Quaternion Subspace*, *Split-Biquaternion Hermitian Subspace* and *Split-Biquaternion Anti-Hermitian Subspace*; their relations with one another are collected in *Split-Biquaternion Relations Between Subspaces*, and the involutions themselves in *Split-Biquaternion Involution Lattice*.
 
-The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.
+The treatment is purely mathematical. No physics is invoked. The split biquaternion algebra is assumed from the basic algebra article, the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ from the article on split complex algebra, and the quaternion algebra $\mathbb{H}$ from the article on quaternion algebra. The two idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ are assumed known.
 
-Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}^{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
+Throughout, elements are written $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}_{\mathrm{spl}}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian). The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 
 ## Definition and Basis
 
 **Definition.** The **split complex subspace** is the fixed space of quaternion conjugation,
 
 $$
-\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} = \left\{ \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : \tilde{Q}^{\natural} = \tilde{Q} \right\},
+\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \left\{ \tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : \tilde{Q}^{\natural} = \tilde{Q} \right\},
 $$
 
 where quaternion conjugation is $\tilde{Q}^{\natural} = Q_t e_t - Q_x \vec e_x - Q_y \vec e_y - Q_z \vec e_z$.
 
-Since ${}^{\natural}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{B}^{\mathrm{spl}}$ is the direct sum of its fixed space and its anti-fixed space. The anti-fixed space is the **vector subspace** $\mathrm{Vect}(\mathbb{B}^{\mathrm{spl}})$, the set of elements with vanishing split scalar part, of real dimension $6$; it has no dedicated article in this series, and is mentioned only where a relation requires it.
+Since ${}^{\natural}$ is an involution, it has eigenvalues $\pm 1$ and $\mathbb{B}_{\mathrm{spl}}$ is the direct sum of its fixed space and its anti-fixed space. The anti-fixed space is the **vector subspace** $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$, the set of elements with vanishing split scalar part, of real dimension $6$; it has no dedicated article in this series, and is mentioned only where a relation requires it.
 
 ### The Condition in Coordinates
 
 Comparing the two sides of $\tilde{Q}^{\natural} = \tilde{Q}$ coefficient by coefficient: the coefficient of $e_t$ gives $Q_t = Q_t$, no condition; the coefficient of $\vec e_\mu$ gives $-Q_\mu = Q_\mu$, that is $Q_\mu = 0$, for $\mu\in\{x,y,z\}$. The subspace is therefore the set of elements with **vanishing vector part**,
 
 $$
-\tilde{Q} = Q_t e_t, \qquad Q_t \in \mathbb{C}^{\mathrm{spl}}.
+\tilde{Q} = Q_t e_t, \qquad Q_t \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
 ### Basis and Dimension
@@ -35,35 +35,35 @@ $$
 
 **Proof.** The four split complex coefficients reduce to $Q_t$ alone, and a split complex number is a real pair $Q_t = q_t + j q'_t$; the elements $e_t$ and $j$ are linearly independent over $\mathbb{R}$ and span the set.
 
-Of the four distinguished subspaces, $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ is the only one of dimension $2$; the other three have dimension $4$.
+Of the four distinguished subspaces, $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the only one of dimension $2$; the other three have dimension $4$.
 
 ## Algebra Structure
 
 ### It Is the Centre of the Algebra
 
-**Theorem.** $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ is the centre of $\mathbb{B}^{\mathrm{spl}}$,
+**Theorem.** $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the centre of $\mathbb{B}_{\mathrm{spl}}$,
 
 $$
 \boxed{\;
-\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} = \left\{ \tilde{Q}_1 \in \mathbb{B}^{\mathrm{spl}} : \tilde{Q}_1\tilde{Q}_2 = \tilde{Q}_2\tilde{Q}_1 \ \text{for every} \ \tilde{Q}_2 \in \mathbb{B}^{\mathrm{spl}} \right\}
+\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \left\{ \tilde{Q}_1 \in \mathbb{B}_{\mathrm{spl}} : \tilde{Q}_1\tilde{Q}_2 = \tilde{Q}_2\tilde{Q}_1 \ \text{for every} \ \tilde{Q}_2 \in \mathbb{B}_{\mathrm{spl}} \right\}
 \;}.
 $$
 
-**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $\vec e_x, \vec e_y, \vec e_z$, and $Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ commutes with all three precisely when $Q_x = Q_y = Q_z = 0$, because $\sum_\mu Q_\mu \vec e_\mu$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{C}^{\mathrm{spl}}$-multiples of $e_t$, which is the fixed space of ${}^{\natural}$.
+**Proof.** An element commutes with every other element if and only if it commutes with the basis elements $\vec e_x, \vec e_y, \vec e_z$, and $Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ commutes with all three precisely when $Q_x = Q_y = Q_z = 0$, because $\sum_\mu Q_\mu \vec e_\mu$ anticommutes with the other quaternion units. The central elements are then the $\mathbb{C}_{\mathrm{spl}}$-multiples of $e_t$, which is the fixed space of ${}^{\natural}$.
 
-The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $Q_t e_t$ with $Q_t \in \mathbb{C}^{\mathrm{spl}}$.
+The subspace therefore has two descriptions: it is the fixed space of quaternion conjugation, and it is the centre of the algebra. Its elements are the **central elements**, written $Q_t e_t$ with $Q_t \in \mathbb{C}_{\mathrm{spl}}$.
 
 ### Subalgebra, Commutativity, and the Absence of a Field Structure
 
-**Proposition.** $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ is a subalgebra of $\mathbb{B}^{\mathrm{spl}}$, it is commutative, and as a real algebra it is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ via $Q_t e_t \mapsto Q_t$.
+**Proposition.** $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is a subalgebra of $\mathbb{B}_{\mathrm{spl}}$, it is commutative, and as a real algebra it is isomorphic to $\mathbb{C}_{\mathrm{spl}}$ via $Q_t e_t \mapsto Q_t$.
 
-**Proof.** For two central elements, $(Q_{1t} e_t)(Q_{2t} e_t) = (Q_{1t} Q_{2t}) e_t$, which lies in the subspace; commutativity is the commutativity of $\mathbb{C}^{\mathrm{spl}}$; and the displayed map is a bijective ring homomorphism because $e_t$ is the unit.
+**Proof.** For two central elements, $(Q_{1t} e_t)(Q_{2t} e_t) = (Q_{1t} Q_{2t}) e_t$, which lies in the subspace; commutativity is the commutativity of $\mathbb{C}_{\mathrm{spl}}$; and the displayed map is a bijective ring homomorphism because $e_t$ is the unit.
 
-The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_1$ and $\tilde\Pi_2$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of units is the four open quadrants of the plane, not the punctured plane.
+The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_1$ and $\tilde\Pi_2$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of units is the four open quadrants of the plane, not the punctured plane.
 
 ### Ideals
 
-Being the centre, $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ acts on $\mathbb{B}^{\mathrm{spl}}$ by scalar extension: $\mathbb{B}^{\mathrm{spl}}$ has $\mathbb{C}^{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The subspace is not a proper two-sided ideal of $\mathbb{B}^{\mathrm{spl}}$; the two coordinate lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$ inside it are two-sided ideals of the subalgebra $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$, and they are the intersections with the centre of the minimal ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ of the algebra. The ideal theory of the algebra is developed in *Split-Biquaternion Ideals and Peirce Decomposition*, and that of the centre is the ideal theory of $\mathbb{R} \oplus \mathbb{R}$.
+Being the centre, $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ acts on $\mathbb{B}_{\mathrm{spl}}$ by scalar extension: $\mathbb{B}_{\mathrm{spl}}$ has $\mathbb{C}_{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The subspace is not a proper two-sided ideal of $\mathbb{B}_{\mathrm{spl}}$; the two coordinate lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$ inside it are two-sided ideals of the subalgebra $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, and they are the intersections with the centre of the minimal ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ of the algebra. The ideal theory of the algebra is developed in *Split-Biquaternion Ideals and Peirce Decomposition*, and that of the centre is the ideal theory of $\mathbb{R} \oplus \mathbb{R}$.
 
 ### Multiplication Tables
 
@@ -75,7 +75,7 @@ The products within the subspace and with the vector units are
 | $j \cdot e_t$ | $j$ | $j \cdot \vec e_\mu$ | $j \vec e_\mu$ |
 | $e_t \cdot j$ | $j$ | $\vec e_\mu \cdot e_t$ | $\vec e_\mu$ |
 
-for $\mu\in\{x,y,z\}$. The table states that $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ multiplies into every subspace and is multiplied into by every subspace with no sign change: multiplication by a central element is a scalar extension, and the vector subspace is closed under multiplication by $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ in the same way.
+for $\mu\in\{x,y,z\}$. The table states that $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ multiplies into every subspace and is multiplied into by every subspace with no sign change: multiplication by a central element is a scalar extension, and the vector subspace is closed under multiplication by $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ in the same way.
 
 ## The Split-Biquaternion Norm
 
@@ -95,13 +95,13 @@ Two features are worth isolating. First, $\langle\cdot\rangle_{\natural}$ takes 
 
 **Theorem.** For $\tilde{Q} = Q_t e_t$, the following are equivalent:
 
-1. $\tilde{Q}$ is a unit of $\mathbb{B}^{\mathrm{spl}}$;
-2. $\langle\tilde{Q}\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}^{\mathrm{spl}}$;
-3. $Q_t$ is a unit of $\mathbb{C}^{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$.
+1. $\tilde{Q}$ is a unit of $\mathbb{B}_{\mathrm{spl}}$;
+2. $\langle\tilde{Q}\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}_{\mathrm{spl}}$;
+3. $Q_t$ is a unit of $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$.
 
 The inverse is $\tilde{Q}^{-1} = Q_t^{-1} e_t = \dfrac{\bar{Q_t}}{Q_t \bar{Q_t}} e_t = \dfrac{q_t - j q'_t}{q_t^2 - q'^2_0} e_t$.
 
-**Proof.** $\langle Q_t e_t\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}^{\mathrm{spl}}$ exactly when $Q_t$ is, since $\mathbb{C}^{\mathrm{spl}}$ is commutative; a split complex number is a unit precisely when its real form norm $q_t^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{C}^{\mathrm{spl}}$.
+**Proof.** $\langle Q_t e_t\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}_{\mathrm{spl}}$ exactly when $Q_t$ is, since $\mathbb{C}_{\mathrm{spl}}$ is commutative; a split complex number is a unit precisely when its real form norm $q_t^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{C}_{\mathrm{spl}}$.
 
 **Corollary.** The zero divisors of the split complex subspace are exactly the nonzero elements of the two **light lines**
 
@@ -119,15 +119,15 @@ This is the first sharp difference from the biquaternion centre: there the split
 
 ## The Idempotents of the Centre
 
-**Proposition.** The idempotents of $\mathbb{B}^{\mathrm{spl}}$ all lie in the split complex subspace, and they are exactly
+**Proposition.** The idempotents of $\mathbb{B}_{\mathrm{spl}}$ all lie in the split complex subspace, and they are exactly
 
 $$
 0, \qquad \tilde\Pi_1, \qquad \tilde\Pi_2, \qquad 1.
 $$
 
-**Proof.** Solve $Q_t^2 = Q_t$ in $\mathbb{C}^{\mathrm{spl}}$. In the idempotent basis $Q_t = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, so $Q_t^2 = \lambda_+^2 \tilde\Pi_1 + \lambda_-^2 \tilde\Pi_2$; the equation holds exactly when $\lambda_+, \lambda_- \in \{0, 1\}$. The four combinations are $0, \tilde\Pi_1, \tilde\Pi_2, 1$. Every idempotent of $\mathbb{B}^{\mathrm{spl}}$ is one of these, as proved in *Split-Biquaternion Idempotents and Projections*.
+**Proof.** Solve $Q_t^2 = Q_t$ in $\mathbb{C}_{\mathrm{spl}}$. In the idempotent basis $Q_t = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, so $Q_t^2 = \lambda_+^2 \tilde\Pi_1 + \lambda_-^2 \tilde\Pi_2$; the equation holds exactly when $\lambda_+, \lambda_- \in \{0, 1\}$. The four combinations are $0, \tilde\Pi_1, \tilde\Pi_2, 1$. Every idempotent of $\mathbb{B}_{\mathrm{spl}}$ is one of these, as proved in *Split-Biquaternion Idempotents and Projections*.
 
-The idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the two nontrivial ones, they are orthogonal and primitive, and they lie in the centre — unlike the biquaternion case, where the nontrivial idempotents are noncentral and lie outside the centre. Since they are central, the decomposition $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ generated by them is a decomposition into two-sided ideals. The idempotents are the only nonzero elements of the light lines that are idempotent; the remaining points of each light line are nilpotent-free zero divisors, and there are no nilpotents in the centre.
+The idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are the two nontrivial ones, they are orthogonal and primitive, and they lie in the centre — unlike the biquaternion case, where the nontrivial idempotents are noncentral and lie outside the centre. Since they are central, the decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ generated by them is a decomposition into two-sided ideals. The idempotents are the only nonzero elements of the light lines that are idempotent; the remaining points of each light line are nilpotent-free zero divisors, and there are no nilpotents in the centre.
 
 ## The Four Involutions on It
 
@@ -140,36 +140,36 @@ Each of the four involutions preserves the condition $Q_x = Q_y = Q_z = 0$, so t
 | ${}^{*}$ | $\bar{Q_t} e_t$ | $\operatorname{diag}(1, -1)$ |
 | ${}^{\flat}$ | $-\bar{Q_t} e_t$ | $\operatorname{diag}(-1, 1)$ |
 
-Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\natural}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{C}^{\mathrm{spl}}$, and anti-Hermitian conjugation is its negative. So of the four involutions only ${}^{\natural}$ acts trivially on the centre, and $\bar{\cdot}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$.
+Quaternion conjugation fixes the subspace pointwise — it is the defining involution — and Hermitian conjugation agrees with split complex conjugation there, because ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\natural}$ acts as the identity. Split complex conjugation acts as the exchange $j \mapsto -j$, the non-trivial involution of $\mathbb{C}_{\mathrm{spl}}$, and anti-Hermitian conjugation is its negative. So of the four involutions only ${}^{\natural}$ acts trivially on the centre, and $\bar{\cdot}$ is the one that swaps the two light lines $\mathbb{R} \tilde\Pi_1$ and $\mathbb{R} \tilde\Pi_2$.
 
 ## Relations to the Other Subspaces
 
-The intersections of $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ with the other distinguished subspaces are, with dimensions:
+The intersections of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ with the other distinguished subspaces are, with dimensions:
 
 | pair | intersection | $\dim_{\mathbb{R}}$ |
 |---|---|---|
-| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathrm{Vect}(\mathbb{B}^{\mathrm{spl}})$ | $\{0\}$ | $0$ |
-| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{M}_+$ | $\mathbb{R}$ | $1$ |
-| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{M}_-$ | $j\mathbb{R}$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | $\{0\}$ | $0$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | $\mathbb{R}$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+$ | $\mathbb{R}$ | $1$ |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-$ | $j\mathbb{R}$ | $1$ |
 
 The two lines $\mathbb{R}$ and $j\mathbb{R}$ are the **coordinate blocks** of the centre, and it is their direct sum:
 
 $$
-\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} = \mathbb{R} \oplus j\mathbb{R}, \qquad \mathbb{R} = \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}} = \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{M}_+, \qquad j\mathbb{R} = \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{M}_-.
+\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} = \mathbb{R} \oplus j\mathbb{R}, \qquad \mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_+, \qquad j\mathbb{R} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \cap \mathbb{M}_-.
 $$
 
-The intersection with the vector subspace is the origin, so $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \oplus \mathrm{Vect}(\mathbb{B}^{\mathrm{spl}})$ is the split scalar–vector decomposition of the algebra; with each of the other two subspaces the intersection is one-dimensional, so no pair among them spans $\mathbb{B}^{\mathrm{spl}}$. The same pattern is recorded for all four subspaces in *Split-Biquaternion Relations Between Subspaces*.
+The intersection with the vector subspace is the origin, so $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \oplus \mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ is the split scalar–vector decomposition of the algebra; with each of the other two subspaces the intersection is one-dimensional, so no pair among them spans $\mathbb{B}_{\mathrm{spl}}$. The same pattern is recorded for all four subspaces in *Split-Biquaternion Relations Between Subspaces*.
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}^{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a central element has image the pair of **real scalars**
+Under the idempotent-decomposition isomorphism $\varphi : \mathbb{B}_{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, a central element has image the pair of **real scalars**
 
 $$
 \varphi(Q_t e_t) = (Q_t^+, Q_t^-), \qquad Q_t^\pm = q_t \pm q'_t \in \mathbb{R}.
 $$
 
-The image of $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The split-biquaternion norm has the matching description
+The image of $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is therefore the set $\mathbb{R} \oplus \mathbb{R}$ of pairs of real scalars, the centre of $\mathbb{H} \oplus \mathbb{H}$. The split-biquaternion norm has the matching description
 
 $$
 \langle Q_t e_t\rangle_{\natural} = (Q_t^+)^2 \tilde\Pi_1 + (Q_t^-)^2 \tilde\Pi_2,
@@ -179,34 +179,34 @@ the pair of squares of the two real scalars. The two light lines are the loci $Q
 
 ## The Analysis on the Split Complex Subspace
 
-The centre is a copy of the split complex algebra $\mathbb{C}^{\mathrm{spl}}$, so the function theory it carries is the one-variable split complex analysis of *Split-Complex Analysis*. A differentiable function of the centre variable $Q_t = q_t + jq'_t$, written $f = u + jv$, satisfies the Cauchy–Riemann pair
+The centre is a copy of the split complex algebra $\mathbb{C}_{\mathrm{spl}}$, so the function theory it carries is the one-variable split complex analysis of *Split-Complex Analysis*. A differentiable function of the centre variable $Q_t = q_t + jq'_t$, written $f = u + jv$, satisfies the Cauchy–Riemann pair
 
 $$
 \partial/\partial q_t\,u = \partial/\partial q'_t\,v, \qquad \partial/\partial q'_t\,u = \partial/\partial q_t\,v,
 $$
 
-and the twice differentiable functions that are harmonic in the split complex sense solve the wave equation $\partial^2/\partial q_t^2 f - \partial^2/\partial {q'_t}^2 f = 0$ rather than the Laplace equation. Embedded in $\mathbb{B}^{\mathrm{spl}}$, the centre inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the centre that operator is the split complex Cauchy–Riemann operator above. The absence of an elliptic harmonic theory on the centre is the analytic expression of the indefiniteness of its split-biquaternion norm: the restricted form is $q_t^2 - q'^2_0$, of signature $(1,1)$, and its isotropic directions are the two null lines of the zero divisors.
+and the twice differentiable functions that are harmonic in the split complex sense solve the wave equation $\partial^2/\partial q_t^2 f - \partial^2/\partial {q'_t}^2 f = 0$ rather than the Laplace equation. Embedded in $\mathbb{B}_{\mathrm{spl}}$, the centre inherits the restriction of the ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis*, and on the centre that operator is the split complex Cauchy–Riemann operator above. The absence of an elliptic harmonic theory on the centre is the analytic expression of the indefiniteness of its split-biquaternion norm: the restricted form is $q_t^2 - q'^2_0$, of signature $(1,1)$, and its isotropic directions are the two null lines of the zero divisors.
 
 ## The Geometry of the Split Complex Subspace
 
-As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_t^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $Q_t\mapsto \exp(\theta j)Q_t$ of $\mathbb{C}^{\mathrm{spl}}$, the identity component of the group of units of $\mathbb{C}^{\mathrm{spl}}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the split form $q_t^2 - q'^2_0$ of signature $(1,1)$, so the centre is an indefinite slice of the ambient algebra carrying the same null lines as the split complex plane.
+As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_t^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $Q_t\mapsto \exp(\theta j)Q_t$ of $\mathbb{C}_{\mathrm{spl}}$, the identity component of the group of units of $\mathbb{C}_{\mathrm{spl}}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the split form $q_t^2 - q'^2_0$ of signature $(1,1)$, so the centre is an indefinite slice of the ambient algebra carrying the same null lines as the split complex plane.
 
 ## Summary
 
-The split complex subspace $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The units are the elements with $Q_t$ a unit of $\mathbb{C}^{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
+The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The units are the elements with $Q_t$ a unit of $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, real dimension $8$ |
-| $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | General element, $Q_\mu \in \mathbb{C}^{\mathrm{spl}}$ |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, real dimension $8$ |
+| $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | General element, $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$ |
 | $Q_\mu = q_\mu + j q'_\mu$ | Real and split-imaginary parts of a coefficient |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents, giving the light lines $\mathbb{R} \tilde\Pi_{1,2}$ |
-| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ | Split complex subspace, the centre, fixed space of ${}^{\natural}$ |
-| $\mathrm{Vect}(\mathbb{B}^{\mathrm{spl}})$ | Vector subspace, the anti-fixed space of ${}^{\natural}$, $\dim 6$ |
-| $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | Quaternion, Hermitian, anti-Hermitian subspaces |
+| $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ | Split complex subspace, the centre, fixed space of ${}^{\natural}$ |
+| $\mathrm{Vect}(\mathbb{B}_{\mathrm{spl}})$ | Vector subspace, the anti-fixed space of ${}^{\natural}$, $\dim 6$ |
+| $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | Quaternion, Hermitian, anti-Hermitian subspaces |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, restricting to $Q_t^2$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |

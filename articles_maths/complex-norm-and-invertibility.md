@@ -195,7 +195,7 @@ It is a group under multiplication with identity $1$.
 ### Basic Properties
 
 - **Open and dense.** $\mathbb{C}^\times$ is the complement of the single point $0$, hence open and dense in $\mathbb{C}$; its complement is the point $\{0\}$, of real dimension $0$.
-- **Connected and non-compact.** $\mathbb{C}^\times$ is path-connected, and it is not compact since it is unbounded; it has one component, where ${\mathbb{C}^{\mathrm{spl}}}^\times$ has four.
+- **Connected and non-compact.** $\mathbb{C}^\times$ is path-connected, and it is not compact since it is unbounded; it has one component, where ${\mathbb{C}_{\mathrm{spl}}}^\times$ has four.
 - **Infinite.** $\mathbb{C}^\times$ is uncountable and contains the infinite cyclic group of powers of any non-root-of-unity element.
 - **Dimension.** $\mathbb{C}^\times$ is a topological group whose underlying space is a manifold of real dimension $2$; its Lie group and Lie algebra structure are the subject of the companion article *Complex Exponential and Lie Group Structure*.
 
@@ -294,7 +294,7 @@ The norm series of the corpus records, for each algebra of the family, whether i
 | $\mathbb{R}$ | $a^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{C}$ | $q^2+q'^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{H}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
-| $\mathbb{B}^{\mathrm{spl}}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{C}^{\mathrm{spl}}$ | no | the elements whose norm is a zero divisor of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{C}_{\mathrm{spl}}$ | no | the elements whose norm is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ |
 
 The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$. The norm is multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$, and because the form is definite the vanishing locus stays a single point.
 

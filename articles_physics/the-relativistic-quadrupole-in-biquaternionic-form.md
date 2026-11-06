@@ -73,9 +73,9 @@ The quadrupole is therefore a tensor over the vector part, not a value of the al
 The field of a moving source is obtained from the retarded potentials. For a point charge the Liénard–Wiechert potential is the standard result, and for an extended distribution the four-potential is the retarded integral
 
 $$
-\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\int \frac{[\tilde{J}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_{t,\mathrm{ret}})]_{ret}}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}\,d^3r_2 ,
+\tilde{A}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\int \frac{[\tilde{J}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_{\mathrm{ret},t})]_{ret}}{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}\,d^3r_2 ,
 \qquad
-r'_{t,\mathrm{ret}} = r'_t - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}{c} ,
+r'_{\mathrm{ret},t} = r'_t - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}{c} ,
 $$
 
 with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{M}_-$ the four-current and the subscript *ret* denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.

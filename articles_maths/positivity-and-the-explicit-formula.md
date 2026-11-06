@@ -53,9 +53,9 @@ Moreover, $W(h*h^*)\ge0$ for all $h$ is equivalent to the positive definiteness 
 
 ## Worked Examples
 
-**Example (the pole term).** The term $\widehat h(1)+\widehat h(0)$ is the contribution of the pole of $\varkappa^{\mathrm{crd}}$ at $s=1$ and the pole of the completion at $s=0$; it is the source of the prime number theorem, which follows from the explicit formula by choosing $h$ with $\widehat h$ supported near the real axis and separating the pole contribution.
+**Example (the pole term).** The term $\widehat h(1)+\widehat h(0)$ is the contribution of the pole of $\varkappa_{\mathrm{crd}}$ at $s=1$ and the pole of the completion at $s=0$; it is the source of the prime number theorem, which follows from the explicit formula by choosing $h$ with $\widehat h$ supported near the real axis and separating the pole contribution.
 
-**Example (the trivial zeros).** The term $\sum_j\widehat h(-\mu_j)$ is the contribution of the archimedean places; for $\varkappa^{\mathrm{crd}}$ it is $\widehat h$ at the negative even integers, and for a general $L$-function it is the sum over the archimedean parameters.
+**Example (the trivial zeros).** The term $\sum_j\widehat h(-\mu_j)$ is the contribution of the archimedean places; for $\varkappa_{\mathrm{crd}}$ it is $\widehat h$ at the negative even integers, and for a general $L$-function it is the sum over the archimedean parameters.
 
 **Example (the prime side).** The prime side $\sum_n\frac{\Lambda(n)}{\sqrt n}(g(\log n)+g(-\log n))$ is the arithmetic input; it is the reason the explicit formula is a relation between the zeros and the primes, and the positivity of its combination with the archimedean term is the content of the criterion.
 

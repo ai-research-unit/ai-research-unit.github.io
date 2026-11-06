@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
+This article develops integration for functions of one split complex variable. It follows *Split-Complex Analysis*, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows *Split-Complex Algebra* for the ring $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.
 
-The base ring throughout is $\mathbb{C}^{\mathrm{spl}}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\omega - Q)$ of the formula is defined only where $\omega - Q$ is a unit, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.
+The base ring throughout is $\mathbb{C}_{\mathrm{spl}}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\omega - Q)$ of the formula is defined only where $\omega - Q$ is a unit, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.
 
 No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
@@ -21,9 +21,9 @@ and $\langle Q\rangle_{*} = Q_+ Q_-$.
 
 ### Paths and Contours
 
-**Definition.** A **path** is a continuous map $\gamma : [a,b] \to \mathbb{C}^{\mathrm{spl}}$. It is **piecewise continuously differentiable**, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is **closed** if $\gamma(a) = \gamma(b)$ and **simple** if it is injective on $[a,b)$; a simple closed path is a **contour**.
+**Definition.** A **path** is a continuous map $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$. It is **piecewise continuously differentiable**, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is **closed** if $\gamma(a) = \gamma(b)$ and **simple** if it is injective on $[a,b)$; a simple closed path is a **contour**.
 
-The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}^{\mathrm{spl}}$ and $\gamma_2 : [b,c] \to \mathbb{C}^{\mathrm{spl}}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
+The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ and $\gamma_2 : [b,c] \to \mathbb{C}_{\mathrm{spl}}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
 
 $$
 L(\gamma) = \int_a^b \|\gamma'(t)\|_E \, dt,
@@ -31,7 +31,7 @@ $$
 
 finite because $\gamma'$ is piecewise continuous on a compact interval.
 
-**Example.** For $Q_0 \in \mathbb{C}^{\mathrm{spl}}$ and $r > 0$, the curve
+**Example.** For $Q_0 \in \mathbb{C}_{\mathrm{spl}}$ and $r > 0$, the curve
 
 $$
 \gamma(t) = Q_0 + r \exp(jt) = Q_0 + r(\cosh t + j \sinh t), \qquad t \in \mathbb{R},
@@ -41,7 +41,7 @@ is a hyperbola and is not closed, because the split complex exponential is injec
 
 ### Construction from the Riemann Sum
 
-**Definition.** Let $\gamma : [a,b] \to \mathbb{C}^{\mathrm{spl}}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the **Riemann sum**
+**Definition.** Let $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the **Riemann sum**
 
 $$
 S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(Q_k - Q_{k-1}).
@@ -59,7 +59,7 @@ $$
 \int_\gamma f(Q)\,dQ = \int_a^b f(\gamma(t))\,\gamma'(t)\,dt.
 $$
 
-**Proof.** The product in $\mathbb{C}^{\mathrm{spl}}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece
+**Proof.** The product in $\mathbb{C}_{\mathrm{spl}}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece
 
 $$
 Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
@@ -67,11 +67,11 @@ $$
 
 with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
 
-The integral exists because $\mathbb{C}^{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|_E$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
+The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|_E$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
 
 ### Basic Properties
 
-**Linearity.** For $\alpha, \beta \in \mathbb{C}^{\mathrm{spl}}$,
+**Linearity.** For $\alpha, \beta \in \mathbb{C}_{\mathrm{spl}}$,
 
 $$
 \int_\gamma (\alpha f + \beta g)(Q)\,dQ = \alpha \int_\gamma f(Q)\,dQ + \beta \int_\gamma g(Q)\,dQ.
@@ -89,7 +89,7 @@ $$
 \left\|\int_\gamma f(Q)\,dQ\right\|_E \leq \sqrt{2}\,m\,L(\gamma).
 $$
 
-**Proof.** The Euclidean norm on $\mathbb{C}^{\mathrm{spl}}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has
+**Proof.** The Euclidean norm on $\mathbb{C}_{\mathrm{spl}}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has
 
 $$
 \|QB\|_E^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
@@ -101,9 +101,9 @@ and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^
 
 ### The Idempotent Decomposition of the Integral
 
-The reason the split complex integral is tractable is that $Q \mapsto (Q_+, Q_-)$ is an algebra isomorphism $\mathbb{C}^{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}$.
+The reason the split complex integral is tractable is that $Q \mapsto (Q_+, Q_-)$ is an algebra isomorphism $\mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}$.
 
-**Theorem.** Let $f : \Omega \to \mathbb{C}^{\mathrm{spl}}$ be written in the idempotent basis as $f = f_+ \Pi_+ + f_- \Pi_-$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
+**Theorem.** Let $f : \Omega \to \mathbb{C}_{\mathrm{spl}}$ be written in the idempotent basis as $f = f_+ \Pi_+ + f_- \Pi_-$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
 
 $$
 \boxed{\; \int_\gamma f(Q)\,dQ = \Pi_+ \int_{\gamma_+} f_+(Q_+)\,dQ_+ + \Pi_- \int_{\gamma_-} f_-(Q_-)\,dQ_- \;},
@@ -153,7 +153,7 @@ So the split Cauchy–Riemann operator factors the wave operator, not the Laplac
 
 ### The Cauchy–Riemann Equations
 
-**Theorem.** For a real differentiable $f : \Omega \to \mathbb{C}^{\mathrm{spl}}$ with $f = f_+ \Pi_+ + f_- \Pi_-$, the following are equivalent.
+**Theorem.** For a real differentiable $f : \Omega \to \mathbb{C}_{\mathrm{spl}}$ with $f = f_+ \Pi_+ + f_- \Pi_-$, the following are equivalent.
 
 1. $f$ is split complex differentiable on $\Omega$.
 2. $\partial/\partial\bar Q f = 0$, that is $D f = 0$.
@@ -229,16 +229,16 @@ $$
 
 **Proof.** By the primitive theorem the integral equals $F(\gamma(b)) - F(\gamma(a))$, and for a closed path $\gamma(b) = \gamma(a)$.
 
-**Remark (softness).** The theorem holds in $\mathbb{C}^{\mathrm{spl}}$ for a reason that gives it no force: every pair of one-variable functions is split complex differentiable, so the class of integrands for which closed integrals vanish is the class of *all* differentiable functions, and the vanishing is not a restriction. In $\mathbb{C}$ the same statement is the origin of the whole theory — it forces primitives, the Cauchy integral formula, the maximum principle and the identity theorem. In $\mathbb{C}^{\mathrm{spl}}$ it forces none of these, because nothing is excluded. The mean value property likewise fails: a split complex differentiable function is a pair of arbitrary one-variable functions, and its average over a circle need not equal its centre value.
+**Remark (softness).** The theorem holds in $\mathbb{C}_{\mathrm{spl}}$ for a reason that gives it no force: every pair of one-variable functions is split complex differentiable, so the class of integrands for which closed integrals vanish is the class of *all* differentiable functions, and the vanishing is not a restriction. In $\mathbb{C}$ the same statement is the origin of the whole theory — it forces primitives, the Cauchy integral formula, the maximum principle and the identity theorem. In $\mathbb{C}_{\mathrm{spl}}$ it forces none of these, because nothing is excluded. The mean value property likewise fails: a split complex differentiable function is a pair of arbitrary one-variable functions, and its average over a circle need not equal its centre value.
 
-**Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{C}^{\mathrm{spl}}$, the following are equivalent.
+**Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{C}_{\mathrm{spl}}$, the following are equivalent.
 
 1. $\oint_{\partial R} f(Q)\,dQ = 0$ for every axis-parallel rectangle $R \subseteq \Omega$.
 2. $f$ has the separated form $f = f_+(Q_+)\Pi_+ + f_-(Q_-)\Pi_-$ with $f_\pm$ continuous functions of one variable.
 
 **Proof.** If (2) holds, $\oint_{\partial R} f\,dQ = \Pi_+\oint_{\partial R} f_+(Q_+)\,dQ_+ + \Pi_-\oint_{\partial R} f_-(Q_-)\,dQ_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $\Omega$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $\Omega$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(Q_+)\Pi_+ + F_-(Q_-)\Pi_-$, so $f = F' = F_+'(Q_+)\Pi_+ + F_-'(Q_-)\Pi_-$ has the separated form.
 
-**Remark (no regularity upgrade).** In $\mathbb{C}$ the same rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. In $\mathbb{C}^{\mathrm{spl}}$ no such upgrade is available: the components $f_\pm = F_\pm'$ are derivatives of one-variable functions and are continuous by hypothesis, but a continuous function of one real variable need not be differentiable. The hypothesis of the theorem therefore stops at the separated form, one step short of differentiability, and this gap is a further face of the failure of the representation half of the theory. In particular there is no Morera theorem in $\mathbb{C}^{\mathrm{spl}}$ of the classical strength; the rectangle condition characterises the class of continuous separated densities, not the class of split complex differentiable functions.
+**Remark (no regularity upgrade).** In $\mathbb{C}$ the same rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. In $\mathbb{C}_{\mathrm{spl}}$ no such upgrade is available: the components $f_\pm = F_\pm'$ are derivatives of one-variable functions and are continuous by hypothesis, but a continuous function of one real variable need not be differentiable. The hypothesis of the theorem therefore stops at the separated form, one step short of differentiability, and this gap is a further face of the failure of the representation half of the theory. In particular there is no Morera theorem in $\mathbb{C}_{\mathrm{spl}}$ of the classical strength; the rectangle condition characterises the class of continuous separated densities, not the class of split complex differentiable functions.
 
 ## The Obstruction to the Cauchy Theorem
 
@@ -246,7 +246,7 @@ The Cauchy–Goursat theorem is the vanishing half of the Cauchy theory. The oth
 
 ### The Cauchy Kernel and the Null Cone
 
-**Proposition.** Let $Q_0 \in \mathbb{C}^{\mathrm{spl}}$. The element $\omega - Q_0$ is a unit if and only if $\omega$ lies off the **null cone** through $Q_0$, that is, off the union of the two lines $\omega_+ = Q_{0+}$ and $\omega_- = Q_{0-}$. For $\omega - Q_0$ a unit,
+**Proposition.** Let $Q_0 \in \mathbb{C}_{\mathrm{spl}}$. The element $\omega - Q_0$ is a unit if and only if $\omega$ lies off the **null cone** through $Q_0$, that is, off the union of the two lines $\omega_+ = Q_{0+}$ and $\omega_- = Q_{0-}$. For $\omega - Q_0$ a unit,
 
 $$
 (\omega - Q_0)^{-1} = \frac{\overline{\omega - Q_0}}{\langle \omega - Q_0\rangle_{*}} = \frac{\Pi_+}{\omega_+ - Q_{0+}} + \frac{\Pi_-}{\omega_- - Q_{0-}}.
@@ -254,17 +254,17 @@ $$
 
 **Proof.** The inverse formula $B^{-1} = \bar B / \langle B\rangle_{*}$ is valid whenever $\langle B\rangle_{*} \neq 0$, and $\langle \omega - Q_0\rangle_{*} = (\omega_+ - Q_{0+})(\omega_- - Q_{0-})$, which vanishes exactly on the two stated lines.
 
-**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{C}^{\mathrm{spl}}$: there is no constant $c \in \mathbb{C}^{\mathrm{spl}}$ such that
+**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{C}_{\mathrm{spl}}$: there is no constant $c \in \mathbb{C}_{\mathrm{spl}}$ such that
 
 $$
 \boxed{\;f(Q_0) = c \oint_\gamma \frac{f(\omega)}{\omega - Q_0}\,d\omega\;}
 $$
 
-holds for every split complex differentiable $f$, every $Q_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{C}^{\mathrm{spl}}$ at all; but no constant whatever serves, because the kernel $(\omega - Q_0)^{-1}$ is undefined on the null cone through $Q_0$, and every closed curve whose winding number about $Q_0$ is non-zero meets that cone.
+holds for every split complex differentiable $f$, every $Q_0$ in the domain of $f$ and every closed piecewise $C^1$ path $\gamma$ in that domain. The constant of the classical formula, $1/(2\pi i)$, is not an element of $\mathbb{C}_{\mathrm{spl}}$ at all; but no constant whatever serves, because the kernel $(\omega - Q_0)^{-1}$ is undefined on the null cone through $Q_0$, and every closed curve whose winding number about $Q_0$ is non-zero meets that cone.
 
-**Proof.** The complement of the two lines $\omega_+ = Q_{0+}$ and $\omega_- = Q_{0-}$ has four connected components, the open sectors determined by the signs of $\omega_+ - Q_{0+}$ and $\omega_- - Q_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $Q_0$, hence is null-homotopic in $\mathbb{C}^{\mathrm{spl}} \setminus \{Q_0\}$ and has winding number zero about $Q_0$. So a curve of non-zero winding about $Q_0$ must leave every component, that is, must meet the cone, where the integrand is not defined.
+**Proof.** The complement of the two lines $\omega_+ = Q_{0+}$ and $\omega_- = Q_{0-}$ has four connected components, the open sectors determined by the signs of $\omega_+ - Q_{0+}$ and $\omega_- - Q_{0-}$, and each is convex. A closed curve lying in one component lies in a convex set omitting $Q_0$, hence is null-homotopic in $\mathbb{C}_{\mathrm{spl}} \setminus \{Q_0\}$ and has winding number zero about $Q_0$. So a curve of non-zero winding about $Q_0$ must leave every component, that is, must meet the cone, where the integrand is not defined.
 
-This is the precise sense in which the Cauchy theorem of a ring with zero divisors is obstructed: the kernel of the would-be formula is not a function on the punctured neighbourhood of $Q_0$, because the punctured neighbourhood is not the set on which $\omega - Q_0$ is invertible. In $\mathbb{C}$ the two sets coincide and the formula holds; in $\mathbb{C}^{\mathrm{spl}}$ the invertible set is the complement of a pair of lines.
+This is the precise sense in which the Cauchy theorem of a ring with zero divisors is obstructed: the kernel of the would-be formula is not a function on the punctured neighbourhood of $Q_0$, because the punctured neighbourhood is not the set on which $\omega - Q_0$ is invertible. In $\mathbb{C}$ the two sets coincide and the formula holds; in $\mathbb{C}_{\mathrm{spl}}$ the invertible set is the complement of a pair of lines.
 
 ### The Fundamental Solution Is Not Point-Supported
 
@@ -292,14 +292,14 @@ $$
 
 the cross terms vanishing as before. Taking $E_+ = H(Q_-)\delta(Q_+)$ and $E_- = H(Q_+)\delta(Q_-)$ gives $\partial/\partial Q_- E_+ = \delta(Q_-)\delta(Q_+)$ and $\partial/\partial Q_+ E_- = \delta(Q_+)\delta(Q_-)$; with $\lvert\partial(Q_+,Q_-)/\partial(q,q')\rvert = 2$, so that $\delta(Q_+)\delta(Q_-) = \tfrac12\delta_0$, one has $2\,\delta(Q_+)\delta(Q_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
 
-The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic operator, and it is the same contrast as that of a field with a ring having zero divisors. In $\mathbb{C}$ the principal symbol never vanishes off the origin, the fundamental solution is a function singular at a point, and the boundary integral of the Cauchy formula is meaningful on any small circle. In $\mathbb{C}^{\mathrm{spl}}$ the principal symbol degenerates on the real characteristics, the fundamental solution is a distribution carried by those characteristics, and a boundary integral can represent an interior value only if the contour is allowed to meet the singular support — which the definition of the integral forbids.
+The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic operator, and it is the same contrast as that of a field with a ring having zero divisors. In $\mathbb{C}$ the principal symbol never vanishes off the origin, the fundamental solution is a function singular at a point, and the boundary integral of the Cauchy formula is meaningful on any small circle. In $\mathbb{C}_{\mathrm{spl}}$ the principal symbol degenerates on the real characteristics, the fundamental solution is a distribution carried by those characteristics, and a boundary integral can represent an interior value only if the contour is allowed to meet the singular support — which the definition of the integral forbids.
 
 ### What Fails
 
 The following are consequences of the obstruction, and they are recorded here to delimit the theory precisely. None of these failures occurs in $\mathbb{C}$, where each of the listed results holds.
 
-- **No Cauchy integral formula.** No constant $c \in \mathbb{C}^{\mathrm{spl}}$ makes $f(Q_0) = c\oint_\gamma f(\omega)(\omega - Q_0)^{-1}\,d\omega$ hold for all $f$ and all $Q_0$, by the obstruction theorem above.
-- **No Cauchy estimates and no Liouville theorem.** A bounded split complex differentiable function on $\mathbb{C}^{\mathrm{spl}}$ need not be constant: for instance $f(Q) = \tanh(Q_+) \Pi_+ + \tanh(Q_-) \Pi_-$ is split complex differentiable, bounded, and non-constant.
+- **No Cauchy integral formula.** No constant $c \in \mathbb{C}_{\mathrm{spl}}$ makes $f(Q_0) = c\oint_\gamma f(\omega)(\omega - Q_0)^{-1}\,d\omega$ hold for all $f$ and all $Q_0$, by the obstruction theorem above.
+- **No Cauchy estimates and no Liouville theorem.** A bounded split complex differentiable function on $\mathbb{C}_{\mathrm{spl}}$ need not be constant: for instance $f(Q) = \tanh(Q_+) \Pi_+ + \tanh(Q_-) \Pi_-$ is split complex differentiable, bounded, and non-constant.
 - **No mean value property and no maximum principle.** Both would be consequences of the integral formula.
 - **No Laurent expansion at a point.** The negative powers $(Q - Q_0)^{-n}$ for $n \geq 1$ are undefined on the null cone through $Q_0$, so a Laurent series in $(Q - Q_0)$ does not exist; a power series in non-negative powers does exist wherever the components are real-analytic, by the corresponding one-variable expansions.
 - **No analytic-continuation rigidity.** The identity theorem fails: the function $f(Q) = Q_+\Pi_+$ is split complex differentiable and vanishes on the whole line $Q_+ = 0$, every point of which is an accumulation point of its zero set, yet $f$ is not identically zero.
@@ -310,7 +310,7 @@ The common cause of all five is the same: the two idempotent components are inde
 
 ### The Characteristic Lines
 
-**Definition.** The **null directions** of $\mathbb{C}^{\mathrm{spl}}$ are the two directions spanned by $\Pi_+$ and by $\Pi_-$, equivalently the level lines of $Q_+$ and of $Q_-$. They are the characteristics of the operator $\Box$, and their union through the origin is the zero-divisor cone.
+**Definition.** The **null directions** of $\mathbb{C}_{\mathrm{spl}}$ are the two directions spanned by $\Pi_+$ and by $\Pi_-$, equivalently the level lines of $Q_+$ and of $Q_-$. They are the characteristics of the operator $\Box$, and their union through the origin is the zero-divisor cone.
 
 The behaviour of the integral along a null line is instructive. Let $f$ be split complex differentiable and let $\gamma$ run along a line on which $Q_+$ is constant. Then $dQ_+ = 0$, so $dQ = \Pi_-\,dQ_-$ and
 
@@ -348,7 +348,7 @@ Thus path independence does hold within each sector bounded by the null lines; i
 
 **Proof.** $f$ is of the form $f_+(Q_+)\Pi_+$ with $f_+(t) = (t-a)^{-1}$, so it is split complex differentiable by the Cauchy–Riemann theorem, and $f\,dQ = \Pi_+\,dQ_+/(Q_+ - a)$ has the primitive $\Pi_+\log|Q_+ - a|$ on each of the two half-planes $Q_+ > a$ and $Q_+ < a$. The line $Q_+ = a$ is exactly the set on which $f$ is undefined, and it separates the two half-planes.
 
-The failure of path independence is therefore not the appearance of a non-zero period, as it is in $\mathbb{C}$, where $\oint Q^{-1}dQ = 2\pi i$. The split complex form $f\,dQ$ is closed and has zero integral over every closed path in each component; indeed no closed path in the domain can leave a single half-plane. What fails is the *extension* of path independence across the null direction: the characteristic is an impenetrable cut, and the fundamental group that controls the complex case is replaced by a purely local, sector-wise statement. In $\mathbb{C}$ the singular set of $(\omega - Q_0)^{-1}$ is a point, whose complement is connected, so a contour can encircle it and produce the residue $2\pi i$; in $\mathbb{C}^{\mathrm{spl}}$ the singular set is a line, whose complement has two components, and no contour can encircle it at all.
+The failure of path independence is therefore not the appearance of a non-zero period, as it is in $\mathbb{C}$, where $\oint Q^{-1}dQ = 2\pi i$. The split complex form $f\,dQ$ is closed and has zero integral over every closed path in each component; indeed no closed path in the domain can leave a single half-plane. What fails is the *extension* of path independence across the null direction: the characteristic is an impenetrable cut, and the fundamental group that controls the complex case is replaced by a purely local, sector-wise statement. In $\mathbb{C}$ the singular set of $(\omega - Q_0)^{-1}$ is a point, whose complement is connected, so a contour can encircle it and produce the residue $2\pi i$; in $\mathbb{C}_{\mathrm{spl}}$ the singular set is a line, whose complement has two components, and no contour can encircle it at all.
 
 **Remark.** The absence of periods for split complex differentiable forms is a general feature of the idempotent decomposition: each component is integrated over the projection $\gamma_\pm$, which is a closed path in the real line, and a continuous one-variable function integrates to zero over a closed real path. A non-vanishing closed integral therefore requires a density that is not split complex differentiable, as in $\oint_\gamma \bar Q\,dQ = 2j\,\mathrm{Area}(\gamma)$, where the detecting device is the failure of $\bar Q\,dQ$ to be closed.
 
@@ -356,7 +356,7 @@ The failure of path independence is therefore not the appearance of a non-zero p
 
 ### Why the Point Residue Fails
 
-In $\mathbb{C}$ the residue of $f$ at an isolated singularity $Q_0$ is defined as the integral over a small positively oriented circle, and its independence of the radius is proved by Cauchy–Goursat applied to the annulus between two circles. In $\mathbb{C}^{\mathrm{spl}}$ the same construction fails at its first step: a small circle about $Q_0$ meets the null cone through $Q_0$ at four points, where the integrand is not defined, and no contour with non-zero winding about $Q_0$ avoids the cone. Consequently there is no point residue defined as a contour integral.
+In $\mathbb{C}$ the residue of $f$ at an isolated singularity $Q_0$ is defined as the integral over a small positively oriented circle, and its independence of the radius is proved by Cauchy–Goursat applied to the annulus between two circles. In $\mathbb{C}_{\mathrm{spl}}$ the same construction fails at its first step: a small circle about $Q_0$ meets the null cone through $Q_0$ at four points, where the integrand is not defined, and no contour with non-zero winding about $Q_0$ avoids the cone. Consequently there is no point residue defined as a contour integral.
 
 ### The Algebraic Residue of a Null-Line Singularity
 
@@ -396,7 +396,7 @@ so the residue reappears as a measure carried by the null line: it is the densit
 
 ## Comparison with Complex Integration
 
-The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1$, which makes $\mathbb{C}$ a field and $\mathbb{C}^{\mathrm{spl}}$ a ring with zero divisors.
+The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1$, which makes $\mathbb{C}$ a field and $\mathbb{C}_{\mathrm{spl}}$ a ring with zero divisors.
 
 | Property | Complex | Split complex |
 |---|---|---|
@@ -424,13 +424,13 @@ $$
 D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad B_j B_k + B_k B_j = -2\delta_{jk}, \qquad B_k^2 = -1,
 $$
 
-whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that $Q$ contains square roots of $-1$ and that the system is elliptic, and it is exactly what fails for $\mathbb{C}^{\mathrm{spl}}$.
+whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that $Q$ contains square roots of $-1$ and that the system is elliptic, and it is exactly what fails for $\mathbb{C}_{\mathrm{spl}}$.
 
-**Proposition.** There is no element $B \in \mathbb{C}^{\mathrm{spl}}$ with $B^2 = -1$. Hence the split complex system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
+**Proposition.** There is no element $B \in \mathbb{C}_{\mathrm{spl}}$ with $B^2 = -1$. Hence the split complex system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
 **Proof.** Write $B = b + jb'$. Then $B^2 = (b^2 + b'^2) + 2bb'\,j$. The equation $B^2 = -1$ requires $bb' = 0$ and $b^2 + b'^2 = -1$, impossible for real $b, b'$ since $b^2 + b'^2 \geq 0$.
 
-The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{C}^{\mathrm{spl}}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{C}^{\mathrm{spl}}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.
+The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{C}_{\mathrm{spl}}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{C}_{\mathrm{spl}}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.
 
 ## Summary
 
@@ -440,13 +440,13 @@ In the idempotent coordinates the operator factorises as $\partial/\partial\bar 
 
 The **obstruction to the Cauchy theorem** is the zero divisor. The element $\omega - Q_0$ is a unit exactly off the null cone through $Q_0$, so the Cauchy kernel is undefined there and no contour of non-zero winding about $Q_0$ avoids the cone; the **Cauchy integral formula** therefore does not exist, and with it the Cauchy estimates, the mean value property, the maximum principle, Liouville's theorem and the Laurent expansion all fail. The same obstruction appears analytically as the **fundamental solution** of the split Cauchy–Riemann operator, which is a distribution supported on the null rays rather than a function singular at the origin.
 
-**Integration along the null directions** reproduces only one idempotent component at a time. **Path independence** is global — $f\,dQ$ is exact on every domain — so the null lines create no periods to replace the complex winding number; what they do is cut the domain into sectors, so a path that would cross a characteristic is not available inside the domain at all. The residue datum that **survives** is attached to a null line rather than a point: it is the coefficient of the simple pole of an idempotent component, realised distributionally as the Sokhotski–Plemelj jump across the characteristic. Finally, the split complex system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{C}^{\mathrm{spl}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to its vanishing half.
+**Integration along the null directions** reproduces only one idempotent component at a time. **Path independence** is global — $f\,dQ$ is exact on every domain — so the null lines create no periods to replace the complex winding number; what they do is cut the domain into sectors, so a path that would cross a characteristic is not available inside the domain at all. The residue datum that **survives** is attached to a null line rather than a point: it is the coefficient of the simple pole of an idempotent component, realised distributionally as the Sokhotski–Plemelj jump across the characteristic. Finally, the split complex system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to its vanishing half.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
+| $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
 | $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
@@ -454,7 +454,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
-| $\gamma : [a,b] \to \mathbb{C}^{\mathrm{spl}}$ | Piecewise $C^1$ path |
+| $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ | Piecewise $C^1$ path |
 | $\gamma_\pm(t) = Q_\pm(\gamma(t))$ | Projections of a path to the two null coordinates |
 | $\gamma^*$, $-\gamma$, $\gamma_1 + \gamma_2$ | Trace, opposite path, concatenation |
 | $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
@@ -475,7 +475,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 ## Further Reading
 
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometry of the split complex plane and its null directions.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the identification of $\mathbb{C}^{\mathrm{spl}}$ with a Clifford algebra and the role of the zero divisors.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the identification of $\mathbb{C}_{\mathrm{spl}}$ with a Clifford algebra and the role of the zero divisors.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, 2012), for the hyperbolic analysis in which the null cone is the characteristic set.
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the Cauchy–Goursat theorem, the Cauchy kernel and the residue theory that the elliptic case supports.
 - Lars V. Ahlfors, *Complex Analysis* (McGraw-Hill, 3rd ed. 1979), for the classical Cauchy theory and the residue calculus with which the split complex theory is compared.

@@ -78,17 +78,17 @@ $$
 -\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}
 =-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu^2\langle\tilde A,\tilde\nabla\xi\rangle_{\natural}-\tfrac12\mu^2\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi ,
 $$
-shows the three pieces: the Proca mass, a derivative mixing between the vector and the scalar, and the scalar's kinetic term — the last being $-\tfrac12(\partial\xi^{\mathrm{scl}})^2$ after rescaling, the healthy sign of the Klein–Gordon companion. Rescaling the scalar to canonical normalization,
+shows the three pieces: the Proca mass, a derivative mixing between the vector and the scalar, and the scalar's kinetic term — the last being $-\tfrac12(\partial\xi_{\mathrm{scl}})^2$ after rescaling, the healthy sign of the Klein–Gordon companion. Rescaling the scalar to canonical normalization,
 $$
-\xi=\frac{\xi^{\mathrm{scl}}}{\mu},
+\xi=\frac{\xi_{\mathrm{scl}}}{\mu},
 \qquad
--\tfrac12\mu^2\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^{\mathrm{scl}}\,\partial/\partial R_\mu\,\xi^{\mathrm{scl}} ,
+-\tfrac12\mu^2\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi_{\mathrm{scl}}\,\partial/\partial R_\mu\,\xi_{\mathrm{scl}} ,
 \qquad
-+\mu^2\sum_\mu A_\mu\partial/\partial R_\mu\,\xi=+\mu\sum_\mu A_\mu\partial/\partial R_\mu\,\xi^{\mathrm{scl}} ,
++\mu^2\sum_\mu A_\mu\partial/\partial R_\mu\,\xi=+\mu\sum_\mu A_\mu\partial/\partial R_\mu\,\xi_{\mathrm{scl}} ,
 $$
 puts the Lagrangian in the form of a massless vector, a massless scalar and a derivative mixing of strength $\mu$:
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu\langle\tilde A,\tilde\nabla\xi\rangle_{\natural}-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi^{\mathrm{scl}}\,\partial/\partial R_\mu\,\xi^{\mathrm{scl}} .
+\mathcal{L}_{\mathrm{S}}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\langle\tilde A\rangle_{\natural}+\mu\langle\tilde A,\tilde\nabla\xi\rangle_{\natural}-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi_{\mathrm{scl}}\,\partial/\partial R_\mu\,\xi_{\mathrm{scl}} .
 $$
 The mixing is removed by the gauge transformation that the symmetry permits, and the result is the massive vector alone; this is the content of the gauge fixing below. The Lagrangian has five field components and one gauge symmetry, and it describes three physical polarizations because the scalar and the longitudinal vector are one mode in two variables.
 
@@ -270,7 +270,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$ | Scalar equation; the divergence of the vector equation |
 | $\xi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
 | $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\zeta\mu^2\xi$ | $R_\zeta$ gauge-fixing condition |
-| $\xi=\xi^{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
+| $\xi=\xi_{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
 | $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\dfrac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right)$ | Vector propagator in the $R_\zeta$ gauge; Proca at $\zeta\to\infty$ |
 | $m_\xi^2=\zeta\mu^2$ | Gauge-dependent scalar mass |
 | $V=\beta(\xi^*\xi-v^2/2)^2$, $\vert\xi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |

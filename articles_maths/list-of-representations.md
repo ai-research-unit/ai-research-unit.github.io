@@ -62,7 +62,7 @@ A representation of an associative algebra $A$ is a left $A$-module, and the str
 | Representations of a matrix algebra | the modules over $M_n(k)$, all of the form $k^n \otimes W$ | *Representations of Algebras* |
 | Semisimple algebra | an algebra whose every module is semisimple; a product of matrix algebras | *Simple and Semisimple Modules* |
 | Group algebra representation | the case $A = F[G]$, reducing to group representations | *Representations of Algebras* |
-| Non-example: a representation of the dual numbers $\mathbb{C}^{\mathrm{dln}}$ | fails semisimplicity: the module $k[x]/x^2$ is not a direct sum of simples | *Simple and Semisimple Modules* |
+| Non-example: a representation of the dual numbers $\mathbb{C}_{\mathrm{dln}}$ | fails semisimplicity: the module $k[x]/x^2$ is not a direct sum of simples | *Simple and Semisimple Modules* |
 | Non-example: a module over a non-semisimple algebra | fails to be a direct sum of simples: the radical is nonzero | *Simple and Semisimple Modules* |
 
 ## Representations over the Number Systems
@@ -73,7 +73,7 @@ The corpus also develops the representation theory of the real, complex, split-c
 |---|---|---|
 | Real representation | a representation over $\mathbb{R}$, with the real character theory | *Real Element Representations* |
 | Complex representation | a representation over $\mathbb{C}$, the algebraically closed case | *Complex Element Representations* |
-| Split-complex representation | a module over the ring with zero divisors $\mathbb{C}^{\mathrm{spl}}$ | *Split-Complex Element Representations* |
+| Split-complex representation | a module over the ring with zero divisors $\mathbb{C}_{\mathrm{spl}}$ | *Split-Complex Element Representations* |
 | Quaternion representation | a module over the division ring $\mathbb{H}$ | *Quaternion Linear Representations* |
 | Biquaternion representation | a module over $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with the complex-linear and biquaternion-linear cases separated | *The Category of Modules* |
 | Non-example: a biquaternion module treated as a vector space | fails to have a basis: $\mathbb{B}$ has zero divisors, so a $\mathbb{B}$-module need not be free | *The Category of Modules* |
@@ -110,7 +110,7 @@ The article denotes its representations by name; the symbols appearing in the ta
 | $\operatorname{ad}$ | adjoint representation |
 | $M_n(k)$ | matrix algebra |
 | $\operatorname{End}_A(S)$, $\operatorname{End}_A(M)$ | endomorphism ring of a simple module, of a module |
-| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion and biquaternion scalars |
+| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion and biquaternion scalars |
 | $\operatorname{Rep}_F(G)$, $\operatorname{Mod}(A)$ | categories of representations and modules |
 
 ## Further Reading

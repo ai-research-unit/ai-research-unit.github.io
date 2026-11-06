@@ -159,7 +159,7 @@ With cardinals identified as initial ordinals, the arithmetic of *Cardinality an
 
 **Theorem.** For infinite cardinals $\kappa$ and $\lambda$, $\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa,\lambda)$, and $\kappa^{\lambda} > \kappa$ when $\lambda \geq 2$.
 
-**Theorem (König).** For any family $(\kappa_i)$ of cardinals, $\sum_i \kappa_i < \prod_i \lambda_i$ whenever $\kappa_i < \lambda_i$ for all $i$. In particular $\kappa^{\mathrm{cf}(\kappa)} > \kappa$ for every infinite $\kappa$, and $2^{\aleph_0}$ is not the sum of countably many smaller cardinals.
+**Theorem (König).** For any family $(\kappa_i)$ of cardinals, $\sum_i \kappa_i < \prod_i \lambda_i$ whenever $\kappa_i < \lambda_i$ for all $i$. In particular $\kappa_{\mathrm{cf}}^{(\kappa)} > \kappa$ for every infinite $\kappa$, and $2^{\aleph_0}$ is not the sum of countably many smaller cardinals.
 
 **Definition.** The **cofinality** $\mathrm{cf}(\kappa)$ of a cardinal $\kappa$ is the least cardinality of a subset of $\kappa$ that is unbounded in $\kappa$. A cardinal is **regular** if $\mathrm{cf}(\kappa) = \kappa$ and **singular** otherwise. A cardinal $\kappa$ is a **strong limit** if $2^{\lambda} < \kappa$ for every $\lambda < \kappa$.
 

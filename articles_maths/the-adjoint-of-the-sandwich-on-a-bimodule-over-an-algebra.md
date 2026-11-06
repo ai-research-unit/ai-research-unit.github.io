@@ -113,7 +113,7 @@ So the sandwich span is not merely a submodule of $E$ but an **involutive subalg
 
 ### Compatibility with the representation
 
-**Proposition.** The map $A\otimes_R A^{\mathrm{opp}}\to E$, $a\otimes b\mapsto L_{a}R_{b}$ of *Left and Right Multiplication of a Module*, is compatible with the involutions: the involution $\sigma\otimes\sigma$ on the source and the involution ${}^{*}$ on the target satisfy
+**Proposition.** The map $A\otimes_R A_{\mathrm{opp}}\to E$, $a\otimes b\mapsto L_{a}R_{b}$ of *Left and Right Multiplication of a Module*, is compatible with the involutions: the involution $\sigma\otimes\sigma$ on the source and the involution ${}^{*}$ on the target satisfy
 
 $$
 (a\otimes b)^{*} \longmapsto (L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)} .
@@ -121,7 +121,7 @@ $$
 
 *Proof.* Immediate from the theorem and the definition of the map.
 
-Consequently the image of the algebra of two-sided operators is an involutive quotient of $A\otimes_RA^{\mathrm{opp}}$ with the involution $\sigma\otimes\sigma$; the kernel of the map is an involutive ideal.
+Consequently the image of the algebra of two-sided operators is an involutive quotient of $A\otimes_RA_{\mathrm{opp}}$ with the involution $\sigma\otimes\sigma$; the kernel of the map is an involutive ideal.
 
 ## Degenerate Cases
 
@@ -145,7 +145,7 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 ## Examples
 
-**(a) The regular bimodule.** For $M={}_A A_A$ with the balanced pairing $\langle m,n\rangle=\sigma(m)n$, the adjoint of $L_{a}R_{b}$ is $L_{\sigma(a)}R_{\sigma(b)}$; the sandwich span is all of $E\cong A^{\mathrm{opp}}$ when $A$ is a division ring, and the involution is $\sigma$.
+**(a) The regular bimodule.** For $M={}_A A_A$ with the balanced pairing $\langle m,n\rangle=\sigma(m)n$, the adjoint of $L_{a}R_{b}$ is $L_{\sigma(a)}R_{\sigma(b)}$; the sandwich span is all of $E\cong A_{\mathrm{opp}}$ when $A$ is a division ring, and the involution is $\sigma$.
 
 **(b) Matrix algebras.** For $A=M_n(\mathbb{C})$ with $\sigma$ the conjugate transpose and $M=A$ the regular bimodule, $L_{A}R_{B}(X)=AXB$ and $(L_{A}R_{B})^{*}=L_{A^{*}}R_{B^{*}}$ with $A^{*}=\overline{A}^{\mathsf{T}}$; self-adjoint sandwiches are those with $A,B$ hermitian.
 
@@ -155,7 +155,7 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 ## Summary
 
-On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the sandwich is $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The sandwich parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the sandwiches is an involutive submodule of $E$, and the map $A\otimes_RA^{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint sandwiches are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary sandwiches are the isometries; they are exactly the sandwiches with unitary parameters when the sandwich map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*.
+On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquilinear pairing, the adjoints of the one-sided multiplications are $(L_a)^{*}=L_{\sigma(a)}$ and $(R_b)^{*}=R_{\sigma(b)}$, and the adjoint of the sandwich is $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$. The sandwich parameters are transformed by the involution of the algebra, and the operator involution of the endomorphism ring is the same operation in operator coordinates; the span of the sandwiches is an involutive submodule of $E$, and the map $A\otimes_RA_{\mathrm{opp}}\to E$ is compatible with $\sigma\otimes\sigma$. The self-adjoint sandwiches are those with both parameters symmetric, the skew-adjoint those with both parameters antisymmetric, and the unitary sandwiches are the isometries; they are exactly the sandwiches with unitary parameters when the sandwich map is injective. The general kernel, image and length statements for the adjoint apply, so $\ker(L_{a}R_{b})^{*}=(\operatorname{im}L_{a}R_{b})^{\mathrm{c}}$ and the lengths of the kernel, image and cokernel are preserved. The construction fails when the pairing is not balanced on the right and degenerates when the module is not faithful or is zero. The signed version, with the grade involution in the middle, is *The Signed Adjoint Sandwich on a Bimodule over an Algebra*.
 
 ## Summary of Notation
 
@@ -169,7 +169,7 @@ On an $(A,A)$-bimodule with a non-degenerate reflexive balanced $\sigma$-sesquil
 | $L_{x}R_{y}L_{u}R_{v}=L_{xu}R_{vy}$ | composition of sandwiches |
 | $(L_{a}R_{b})^{*}=L_{\sigma(a)}R_{\sigma(b)}$ | the adjoint of the sandwich |
 | $\operatorname{im}(L_{a}R_{b})^{\mathrm{c}}$ | paired complement of the image |
-| $A\otimes_RA^{\mathrm{opp}}\to E$ | the sandwich representation, compatible with $\sigma\otimes\sigma$ |
+| $A\otimes_RA_{\mathrm{opp}}\to E$ | the sandwich representation, compatible with $\sigma\otimes\sigma$ |
 
 ## Further Reading
 

@@ -75,7 +75,7 @@ No observed elementary particle carries another spin. Four boundaries keep the t
 Two further physical qualifications belong to the carrier, not to the table.
 
 - **The massless spin-$1$ count is two.** $V$ has three states. For a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate input.
-- **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, not the copy index.
+- **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, not the copy index.
 
 ## The Results It Uses
 
@@ -132,11 +132,11 @@ Three module-theoretic facts carry the reading.
 
 - **The module is simple and unique.** $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and finite-dimensional, so its modules are completely reducible and there is, up to isomorphism, exactly one simple module. By Schur's lemma $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$.
 - **The algebra is the endomorphism algebra.** $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, and the left regular module splits as $\mathbb{B}\cong S\oplus S$. The algebra is the algebra of all linear maps of the carrier, and the regular module is two copies of it.
-- **The Lorentz action is the left action.** A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}^{\mathrm{sp}}$, and the action is the defining representation of $SL(2,\mathbb{C})$.
+- **The Lorentz action is the left action.** A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$, and the action is the defining representation of $SL(2,\mathbb{C})$.
 
 The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{M}_-$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
 
-One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the chirality. The chirality is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, whose two eigenspaces on $\Delta$ are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
+One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the chirality. The chirality is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, whose two eigenspaces on $\Delta$ are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
 
 ## The Probability Structure: the Second Slot
 
@@ -153,15 +153,15 @@ $$
 =\tfrac12 I_2\;}.
 $$
 
-The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ}^{\mathrm{sp}},\xi^{\mathrm{alt}})=\tfrac12\tilde{Ξ}^{\mathrm{sp}\dagger}\xi^{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
+The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tfrac12\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
 
 $$
 \operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\operatorname{Sc}(\tilde\Pi\tilde R_\psi),
 $$
 
-which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{M}_+$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}^{\mathrm{sp}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
+which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{M}_+$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
 
-The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}^{\mathrm{sp}}$ and $e^{i\alpha}\tilde{Ξ}^{\mathrm{sp}}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
+The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}_{\mathrm{sp}}$ and $e^{i\alpha}\tilde{Ξ}_{\mathrm{sp}}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
 
 The sharpest way to see that this is a second structure and not a second view is the behaviour of the **algebra's own form** on the same carrier. The symmetric bilinear form
 
@@ -263,7 +263,7 @@ The reading has a boundary that must be stated in the same breath. **The article
 
 **The chiral mass is a different coupling.** It is the invariant sesquilinear pairing $\beta:S\times S^{\mathrm{c}}\to\mathbb{C}$ of *The Unpolarized Module of the Biquaternion Algebra*, off-diagonal in the grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ and odd under it. It is not $\mathbb{B}_{\mathbb{R}}$-linear, so it is not a right multiplication and not an element of the algebra; it exists because $S$ and $S^{\mathrm{c}}$ are real-isomorphic and complex-inequivalent. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair in $\Delta=S\oplus S^{\mathrm{c}}$. The two couplings must not be identified: the copy flip is $\mathbb{B}$-linear and moves between isomorphic copies, while the chiral mass is not $\mathbb{B}_{\mathbb{R}}$-linear and moves between inequivalent halves.
 
-A convention warning belongs here, because the corpus once used the word *chirality* in two ways. The two ideals were sometimes called the two chiralities; they are the two **Peirce copies**, a copy index, and they are not a chirality. The chirality is the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, whose two eigenspaces on $\Delta$ are $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The copy flip of this section moves between the two **ideals**, and it is the column flip of the first convention. It is not the passage to the conjugate representation, and it is not the chiral mass.
+A convention warning belongs here, because the corpus once used the word *chirality* in two ways. The two ideals were sometimes called the two chiralities; they are the two **Peirce copies**, a copy index, and they are not a chirality. The chirality is the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, whose two eigenspaces on $\Delta$ are $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The copy flip of this section moves between the two **ideals**, and it is the column flip of the first convention. It is not the passage to the conjugate representation, and it is not the chiral mass.
 
 ## Three Complements
 
@@ -312,7 +312,7 @@ The three-way table is the sharpest statement of the article about the word *com
 Three negative statements keep the reading exact.
 
 - **It is not the dual.** The dual of $S$ is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}$, the first row of the matrix model, reached by the Hermitian conjugation ${}^{*}$. The complement is a left ideal reached by right multiplication. A bra is not an antiparticle.
-- **It is not a second representation.** The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiralities are the two eigenspaces of the cell $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ on $\Delta$, that is $S$ and its conjugate $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling is a **copy**, not a second representation.
+- **It is not a second representation.** The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiralities are the two eigenspaces of the cell $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ on $\Delta$, that is $S$ and its conjugate $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling is a **copy**, not a second representation.
 - **It is not a second sector.** Each ideal meets each sector in exactly one real dimension: $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, and similarly for the complement. Neither ideal is material or informational, and the sector split cuts across both. There is, in particular, no nonzero idempotent in $\mathbb{M}_-$, so the complement cannot be the material sector.
 
 The independence is sharper than the dimension count. Multiplication by the central imaginary exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so a complex subspace contained in one sector is zero; the two ideals are complex two-dimensional and can never be split along $\mathbb{M}_\pm$. The sector content of an ideal sits entirely on its **diagonal** corner: $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent line $\mathbb{C}\vec\Upsilon_y$ meets both sectors in $\{0\}$. The sector label therefore attaches to the idempotent and not to the ladder: the doubling is an **informational** doubling, two idempotents of $\mathbb{M}_+$, and not a material–informational pair.
@@ -359,7 +359,7 @@ The two structures separate the two physical data of a spinor.
 - **The spin is read on the module.** The double cover acts faithfully on the module, $-e_t$ acts as $-\mathrm{id}$, and that is where spin-$\tfrac12$ lives.
 - **The ray is a Hilbert datum.** The form is blind to the sign and to the phase, so the state is a ray and not a vector.
 - **The vacuum is a module datum.** The choice of idempotent $\tilde\Pi_+$ selects the module, and the module is fixed only up to the equivalence of idempotents.
-- **The normalisation is a Hilbert datum.** $\langle\tilde{Ξ}^{\mathrm{sp}},\tilde{Ξ}^{\mathrm{sp}}\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.
+- **The normalisation is a Hilbert datum.** $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.
 
 The state space is normalised by the metric and selected by the vacuum, and the two acts are of different kinds: one is a pairing, the other is a choice of generator. The two structures also meet the corpus's word **quantisation**. The insertion of the star into the second slot, the step from $\tilde Q_1\tilde Q_2$ to $\tilde Q_1\tilde Q_2^{*}$, is what turns the composition pairing into the probability pairing. Read on the carrier, the spinor space is **compositional before the step and probabilistic after it**. The step is not an added axiom; it is the choice of what to put in the second slot.
 
@@ -370,7 +370,7 @@ The physics corpus states the same three values through different constructions.
 | reading | construction | carrier | value |
 |---|---|---|---|
 | the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
-| the adjoint integer | the halved inner derivations $\tilde S^{(\mathrm{adj})}_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
+| the adjoint integer | the halved inner derivations $\tilde S_{\mathrm{adj},k}^{()}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
 | the tensor powers of the spinor | the symmetric part of $S^{\otimes 2s}$ | $S^{\otimes 2s}$ | $s$ |

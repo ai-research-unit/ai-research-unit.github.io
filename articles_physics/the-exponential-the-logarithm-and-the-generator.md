@@ -146,7 +146,7 @@ The logarithm is defined on the units and nowhere else. The cone is the boundary
 | Point | In the image of $\exp$? | Logarithm? | How it is reached |
 | --- | --- | --- | --- |
 | interior, $\langle\tilde Q\rangle_{\natural}\neq0$ | yes | yes | a value |
-| idempotent stratum, $Q_t\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ | no | no | limit with $r\to0$, $\tilde{Ξ}^{\mathrm{sp}}\to\infty$ |
+| idempotent stratum, $Q_t\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ | no | no | limit with $r\to0$, $\tilde{Ξ}_{\mathrm{sp}}\to\infty$ |
 | nilpotent stratum, $Q_t=0$, $\langle\tilde Q\rangle_{\natural}=0$ | no | no | rescaled limit of the unipotent line |
 
 The idempotent stratum is reached by the polar word with the scale collapsing and the boost diverging at the same rate. The nilpotent stratum is reached by the rescaled unipotent line,

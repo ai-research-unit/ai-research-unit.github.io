@@ -17,17 +17,17 @@ The prerequisites are *Analytic Number Theory*, written immediately above, for t
 
 **Definition.** The **Chebyshev functions** are
 $$
-\psi(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p, \qquad \vartheta^{\mathrm{chb}}(x) = \sum_{p\leq x}\log p,
+\psi(x) = \sum_{n\leq x}\Lambda(n) = \sum_{p^k\leq x}\log p, \qquad \vartheta_{\mathrm{chb}}(x) = \sum_{p\leq x}\log p,
 $$
 and $\mathrm{Li}(x) = \int_2^x\frac{dt}{\log t}$ is the logarithmic integral.
 
 **Theorem (the prime number theorem; Hadamard and de la Vallée Poussin).** As $x\to\infty$,
 $$
-\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \vartheta^{\mathrm{chb}}(x)\sim x, \qquad p_n \sim n\log n\;} .
+\boxed{\;\pi(x) \sim \frac{x}{\log x}, \qquad \psi(x)\sim x, \qquad \vartheta_{\mathrm{chb}}(x)\sim x, \qquad p_n \sim n\log n\;} .
 $$
 All four statements are equivalent.
 
-**Proof of the equivalence.** This is the theorem on the equivalent forms in *Analytic Number Theory*: $\psi-\vartheta^{\mathrm{chb}} = \sum_{k\geq2}\vartheta^{\mathrm{chb}}(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\vartheta^{\mathrm{chb}}\sim x$ are the same statement; Abel summation converts $\vartheta^{\mathrm{chb}}(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.
+**Proof of the equivalence.** This is the theorem on the equivalent forms in *Analytic Number Theory*: $\psi-\vartheta_{\mathrm{chb}} = \sum_{k\geq2}\vartheta_{\mathrm{chb}}(x^{1/k})=O(x^{1/2}\log x)=o(x)$, so $\psi\sim x$ and $\vartheta_{\mathrm{chb}}\sim x$ are the same statement; Abel summation converts $\vartheta_{\mathrm{chb}}(x)\sim x$ into $\pi(x)\sim x/\log x$ and back, by the two identities displayed there; and $p_n\sim n\log n$ is the same statement evaluated at $x = p_n$.
 
 **Remark (what the theorem does not say).** The statement is a one-term asymptotic. It does not say that $\pi(x)-\mathrm{Li}(x)$ is small, that the primes are equidistributed in short intervals without a lower bound on the length, or that the gaps between consecutive primes are small; each of these is a separate problem, and the last is discussed below. The sharper asymptotic $\pi(x) = \mathrm{Li}(x) + O(x\exp(-c\sqrt{\log x}))$ proved below is stronger than the theorem and is the form in which the result is used.
 
@@ -35,9 +35,9 @@ All four statements are equivalent.
 
 ### The Elementary Inequality
 
-**Lemma.** For every real $\vartheta^{\mathrm{chb}}$, $3 + 4\cos\theta + \cos2\theta = 2(1+\cos\theta)^2 \geq 0$.
+**Lemma.** For every real $\vartheta_{\mathrm{chb}}$, $3 + 4\cos\theta + \cos2\theta = 2(1+\cos\theta)^2 \geq 0$.
 
-**Proof.** $\cos2\theta = 2\cos^2\vartheta^{\mathrm{chb}}-1$, so the left side is $2\cos^2\vartheta^{\mathrm{chb}} + 4\cos\theta + 2 = 2(\cos\theta+1)^2$.
+**Proof.** $\cos2\theta = 2\cos^2\vartheta_{\mathrm{chb}}-1$, so the left side is $2\cos^2\vartheta_{\mathrm{chb}} + 4\cos\theta + 2 = 2(\cos\theta+1)^2$.
 
 **Theorem.** $\zeta(\sigma+it)\neq0$ for every $\sigma\geq1$ and every real $t$.
 
@@ -182,11 +182,11 @@ and more precisely $\pi(x;q,a) = \mathrm{Li}(x)/\varphi(q) + O(x\exp(-c\sqrt{\lo
 
 **Proof sketch.** The same proof with $\zeta_K$ in place of $\zeta$: the Dedekind zeta function has a simple pole at $s=1$ with residue the class number formula, it has no zeros on the line $\Re s=1$, by the same inequality applied to its Euler product over the prime ideals, and the Tauberian theorem applied to $-\zeta_K'/\zeta_K$ gives $\psi_K(x)\sim x$.
 
-**Theorem (primes in short intervals; Baker–Harman–Pintz).** For every $\vartheta^{\mathrm{chb}}>0.525$ and all sufficiently large $x$,
+**Theorem (primes in short intervals; Baker–Harman–Pintz).** For every $\vartheta_{\mathrm{chb}}>0.525$ and all sufficiently large $x$,
 $$
-\pi(x+x^{\vartheta^{\mathrm{chb}}}) - \pi(x) \sim \frac{x^{\vartheta^{\mathrm{chb}}}}{\log x},
+\pi(x+x^{\vartheta_{\mathrm{chb}}}) - \pi(x) \sim \frac{x^{\vartheta_{\mathrm{chb}}}}{\log x},
 $$
-so the interval $[x,x+x^{\vartheta^{\mathrm{chb}}}]$ contains about its expected number of primes; under the Riemann hypothesis the same holds for every $\vartheta^{\mathrm{chb}}>\tfrac12$.
+so the interval $[x,x+x^{\vartheta_{\mathrm{chb}}}]$ contains about its expected number of primes; under the Riemann hypothesis the same holds for every $\vartheta_{\mathrm{chb}}>\tfrac12$.
 
 **Theorem (the number of primes and the nth prime).** The theorem gives $\pi(x)\sim x/\log x$ and $p_n\sim n\log n$; the sharper forms are $\pi(x) = \mathrm{Li}(x)+O(x\exp(-c\sqrt{\log x}))$ and, with the sharp zero-free region, $p_n = n(\log n + \log\log n - 1 + o(1))$.
 
@@ -196,7 +196,7 @@ so the interval $[x,x+x^{\vartheta^{\mathrm{chb}}}]$ contains about its expected
 
 ## Summary
 
-The prime number theorem is the statement $\pi(x)\sim x/\log x$, equivalently $\psi(x)\sim x$ for the Chebyshev function $\psi(x) = \sum_{n\leq x}\Lambda(n)$, equivalently $\vartheta^{\mathrm{chb}}(x)\sim x$ for the sum of $\log p$ over the primes, equivalently $p_n\sim n\log n$ for the $n$-th prime. The proof rests on two theorems, one analytic and one tauberian. The analytic theorem is the nonvanishing $\zeta(\sigma+it)\neq0$ for $\sigma\geq1$, proved by applying the nonnegative trigonometric combination $3+4\cos\theta+\cos2\theta = 2(1+\cos\theta)^2$ to the Dirichlet series $\log\zeta$ with nonnegative coefficients and comparing the pole at $s=1$ with a hypothetical zero; it implies that $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on the closed half-plane. The tauberian theorem, in the Wiener–Ikehara form and in Newman's short form, converts the Mellin transform of a nondecreasing function, with a simple pole of residue $c$ at $s=1$ and continuous remainder on the closed half-plane, into the asymptotic $A(x)\sim cx$; applied to the Mellin transform of $\psi$, which is exactly $-\zeta'/(s\zeta)$, it gives $\psi(x)\sim x$.
+The prime number theorem is the statement $\pi(x)\sim x/\log x$, equivalently $\psi(x)\sim x$ for the Chebyshev function $\psi(x) = \sum_{n\leq x}\Lambda(n)$, equivalently $\vartheta_{\mathrm{chb}}(x)\sim x$ for the sum of $\log p$ over the primes, equivalently $p_n\sim n\log n$ for the $n$-th prime. The proof rests on two theorems, one analytic and one tauberian. The analytic theorem is the nonvanishing $\zeta(\sigma+it)\neq0$ for $\sigma\geq1$, proved by applying the nonnegative trigonometric combination $3+4\cos\theta+\cos2\theta = 2(1+\cos\theta)^2$ to the Dirichlet series $\log\zeta$ with nonnegative coefficients and comparing the pole at $s=1$ with a hypothetical zero; it implies that $-\zeta'(s)/(s\zeta(s)) = \frac{1}{s-1}+h(s)$ with $h$ continuous on the closed half-plane. The tauberian theorem, in the Wiener–Ikehara form and in Newman's short form, converts the Mellin transform of a nondecreasing function, with a simple pole of residue $c$ at $s=1$ and continuous remainder on the closed half-plane, into the asymptotic $A(x)\sim cx$; applied to the Mellin transform of $\psi$, which is exactly $-\zeta'/(s\zeta)$, it gives $\psi(x)\sim x$.
 
 The rate is governed by the zeros. The zero-free region of de la Vallée Poussin, $\sigma > 1-c/\log(\lvert t\rvert+2)$, gives $\psi(x) = x + O(x\exp(-c'\sqrt{\log x}))$; the Vinogradov–Korobov region gives $x\exp(-c'(\log x)^{3/5}/(\log\log x)^{1/5})$; and the Riemann hypothesis would give the optimal $O(\sqrt x\log^2x)$. The prime number theorem is equivalent to the vanishing of the summatory Möbius function, $\sum_{n\leq x}\mu(n)=o(x)$, and to the nonvanishing of $\zeta$ on the line $\Re s=1$; it was proved by Hadamard and de la Vallée Poussin in 1896 and, without complex analysis, by Erdős and Selberg in 1949, the elementary method supplying the main term but no error term, from the identity $\sum_{p\leq x}(\log p)^2+\sum_{pq\leq x}\log p\log q = 2x\log x+O(x)$. The same proof applies to the arithmetic progressions, giving $\pi(x;q,a)\sim \mathrm{Li}(x)/\varphi(q)$ for fixed $q$, and to a number field, giving the prime ideal theorem $\psi_K(x)\sim x$ from the Dedekind zeta function; in short intervals the theorem is known for intervals of length $x^{0.525}$ and, conditionally, for $x^{1/2+\epsilon}$.
 
@@ -207,7 +207,7 @@ The rate is governed by the zeros. The zero-free region of de la Vallée Poussin
 | $\pi(x)$ | Number of primes $\leq x$ |
 | $\pi(x;q,a)$ | Number of primes $\leq x$ in the progression $a \bmod q$ |
 | $\Lambda(n)$ | Von Mangoldt function |
-| $\psi(x)$, $\vartheta^{\mathrm{chb}}(x)$ | Chebyshev functions $\sum_{n\leq x}\Lambda(n)$, $\sum_{p\leq x}\log p$ |
+| $\psi(x)$, $\vartheta_{\mathrm{chb}}(x)$ | Chebyshev functions $\sum_{n\leq x}\Lambda(n)$, $\sum_{p\leq x}\log p$ |
 | $\mathrm{Li}(x)$ | Logarithmic integral $\int_2^x dt/\log t$ |
 | $p_n$ | The $n$-th prime |
 | $\rho = \beta+i\gamma$ | Nontrivial zero of $\zeta$ |

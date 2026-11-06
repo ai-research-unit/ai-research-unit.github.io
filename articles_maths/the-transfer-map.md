@@ -36,22 +36,22 @@ The singular complex of the base is the coinvariant complex of the cover. The re
 
 ### The Transfer of a Simplex
 
-**Definition.** Let $\sigma : \Delta_n \to B$ be a singular $n$-simplex and let $\sigma^{\mathrm{lift}} : \Delta_n \to E$ be a lift of $\sigma$. The **transfer** of $\sigma$ is the chain
+**Definition.** Let $\sigma : \Delta_n \to B$ be a singular $n$-simplex and let $\sigma_{\mathrm{lift}} : \Delta_n \to E$ be a lift of $\sigma$. The **transfer** of $\sigma$ is the chain
 
 $$
-\tau_n(\sigma) = \sum_{g \in G} g_\#(\sigma^{\mathrm{lift}}) = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}} \;\in\; C_n(E;R),
+\tau_n(\sigma) = \sum_{g \in G} g_\#(\sigma_{\mathrm{lift}}) = \sum_{g \in G} g \circ \sigma_{\mathrm{lift}} \;\in\; C_n(E;R),
 $$
 
 and $\tau_n : C_n(B;R) \to C_n(E;R)$ is its $R$-linear extension.
 
-A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\sigma^{\mathrm{lift}}$ and, by the homotopy lifting property of *The Fundamental Group and Covering Spaces*, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.
+A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\sigma_{\mathrm{lift}}$ and, by the homotopy lifting property of *The Fundamental Group and Covering Spaces*, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.
 
-**Lemma.** $\tau_n$ is well defined: it does not depend on the choice of the lift $\sigma^{\mathrm{lift}}$.
+**Lemma.** $\tau_n$ is well defined: it does not depend on the choice of the lift $\sigma_{\mathrm{lift}}$.
 
-*Proof.* Let ${\sigma^{\mathrm{lift}}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with ${\sigma^{\mathrm{lift}}}' = h \circ \sigma^{\mathrm{lift}}$. Then
+*Proof.* Let ${\sigma_{\mathrm{lift}}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with ${\sigma_{\mathrm{lift}}}' = h \circ \sigma_{\mathrm{lift}}$. Then
 
 $$
-\sum_{g \in G} g \circ {\sigma^{\mathrm{lift}}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
+\sum_{g \in G} g \circ {\sigma_{\mathrm{lift}}}' = \sum_{g \in G} g \circ h \circ \sigma_{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma_{\mathrm{lift}},
 $$
 
 the last equality because $g \mapsto gh$ is a bijection of $G$.
@@ -65,7 +65,7 @@ $$
 \tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R)\;}.
 $$
 
-*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \sigma^{\mathrm{lift}} = \sum_g (hg)_\# \sigma^{\mathrm{lift}} = \sum_g g_\# \sigma^{\mathrm{lift}}$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \sigma^{\mathrm{lift}} = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \sigma^{\mathrm{lift}} = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
+*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \sigma_{\mathrm{lift}} = \sum_g (hg)_\# \sigma_{\mathrm{lift}} = \sum_g g_\# \sigma_{\mathrm{lift}}$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \sigma_{\mathrm{lift}} = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \sigma_{\mathrm{lift}} = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
 
 The second identity is the **multiplicity** of the covering: the composite $p_\# \tau_n$ is multiplication by the number of sheets. The third is the **norm** operator $N = \sum_{g} g_\#$, whose image lies in the invariant subcomplex and whose square is $dN$.
 
@@ -83,17 +83,17 @@ $$
 \tau_* : H_n(B;R) \longrightarrow H_n(E;R).
 $$
 
-*Proof.* Let $\sigma : \Delta_n \to B$ and let $\sigma^{\mathrm{lift}}$ be a lift. The faces of $\sigma^{\mathrm{lift}}$ are the lifts of the corresponding faces of $\sigma$, and the deck action commutes with taking faces because $g \circ \sigma \circ \delta^i = (g \circ \sigma) \circ \delta^i$ with $\delta^i$ the face maps of *Simplicial and Singular Homology*. Hence
+*Proof.* Let $\sigma : \Delta_n \to B$ and let $\sigma_{\mathrm{lift}}$ be a lift. The faces of $\sigma_{\mathrm{lift}}$ are the lifts of the corresponding faces of $\sigma$, and the deck action commutes with taking faces because $g \circ \sigma \circ \delta^i = (g \circ \sigma) \circ \delta^i$ with $\delta^i$ the face maps of *Simplicial and Singular Homology*. Hence
 
 $$
-\partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\sigma^{\mathrm{lift}}) = \sum_g g_\# \partial_n(\sigma^{\mathrm{lift}}) = \sum_g g_\#\Bigl(\sum_i (-1)^i \sigma^{\mathrm{lift}} \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
+\partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\sigma_{\mathrm{lift}}) = \sum_g g_\# \partial_n(\sigma_{\mathrm{lift}}) = \sum_g g_\#\Bigl(\sum_i (-1)^i \sigma_{\mathrm{lift}} \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
 $$
 
 so the two sides agree on the generators and therefore on all chains. A chain map carries cycles to cycles and boundaries to boundaries, whence the induced map on homology.
 
 The proof uses only that the deck action is by homeomorphisms and that lifts of faces are faces of lifts; no smoothness and no analytic structure is involved.
 
-**Corollary (reduced homology).** The transfer descends to reduced homology, $\tau_* : H_{n,\mathrm{red}}(B;R) \to H_{n,\mathrm{red}}(E;R)$, and the identities of the previous proposition hold with $H^{\mathrm{red}}$ in place of $H$.
+**Corollary (reduced homology).** The transfer descends to reduced homology, $\tau_* : H_{\mathrm{red},n}(B;R) \to H_{\mathrm{red},n}(E;R)$, and the identities of the previous proposition hold with $H_{\mathrm{red}}$ in place of $H$.
 
 *Proof.* The augmentation $\varepsilon : C_0 \to R$ of *Simplicial and Singular Homology* satisfies $\varepsilon p_\# = \varepsilon$ on $C_0(E;R)$, so $\tau$ carries the augmented complex of the base to the augmented complex of the cover; the induced map is the reduced transfer.
 
@@ -152,10 +152,10 @@ with $p_* \tau_* = d$ and $\tau_* p_* = \sum_g g_*$ on relative homology.
 **Theorem.** The transfer is compatible with the connecting homomorphism. Write the long exact sequences of *Simplicial and Singular Homology* for the pair $(B,A)$ and for the pair $(E,E_A)$ in the same degrees; the transfer acts on the four absolute and relative homology groups in each degree, and every square of the resulting ladder commutes. In particular the connecting homomorphisms satisfy
 
 $$
-\partial \,\tau_*^{\mathrm{rel}} = \tau_*^{A}\,\partial ,
+\partial \,\tau_{\mathrm{rel},*} = \tau_*^{A}\,\partial ,
 $$
 
-where $\tau_*^{A}$ is the transfer of the restricted covering on $A$ and $\tau_*^{\mathrm{rel}}$ is the relative transfer. The absolute and relative transfers are the one chain map $\tau$ restricted to the appropriate complex.
+where $\tau_*^{A}$ is the transfer of the restricted covering on $A$ and $\tau_{\mathrm{rel},*}$ is the relative transfer. The absolute and relative transfers are the one chain map $\tau$ restricted to the appropriate complex.
 
 *Proof.* The chain-level squares commute because $\tau$ is a chain map of the complexes of the pairs and the inclusions of the two pairs are natural; the snake lemma of *Exact Sequences* is natural in a map of short exact sequences of complexes, so the induced connecting maps commute with the induced maps on homology. Concretely, a relative cycle in $H_n(B,A;R)$ is represented by a chain whose boundary lies in $A$; its transfer has boundary the transfer of that boundary, which lies in $E_A$, so the transfer of a relative cycle is a relative cycle, and the two ways of taking the connecting class agree.
 
@@ -191,7 +191,7 @@ so that $\tau^*$ is the adjoint of $\tau_*$ with respect to the evaluation pairi
 
 **Example (the double cover of the projective space).** Let $p : S^n \to \mathbb{RP}^n$ for $n \geq 1$, the two-sheeted covering with deck group $\mathbb{Z}/2$ generated by the antipodal map $T$. Over $\mathbb{Z}$, the top homology is $H_n(\mathbb{RP}^n;\mathbb{Z}) \cong \mathbb{Z}$ for $n$ odd and $0$ for $n$ even, while $H_n(S^n;\mathbb{Z}) \cong \mathbb{Z}$; for $n$ odd, $p_*$ is multiplication by $2$ and $\tau_*$ is an isomorphism onto $H_n(S^n;\mathbb{Z})^{T}$, on which $T_* = \mathrm{id}$ because $T$ is the antipodal map of odd sphere degree $(-1)^{n+1} = 1$. For $n$ even the antipodal map has degree $-1$, the fixed part of $H_n(S^n;\mathbb{Z})$ is zero, and $p_* = 0$, in agreement with $H_n(\mathbb{RP}^n;\mathbb{Z}) = 0$. Over $\mathbb{F}_2$ the identities read $p_*\tau_* = 2 = 0$ and $\tau_* p_* = 1 + T_* = 0$, both sides being zero, so the transfer carries no information over $\mathbb{F}_2$; this vanishing is exactly the mechanism of the mod-2 Smith theory.
 
-**Example (the universal cover of a finite complex).** Let $X$ be a finite connected CW complex with finite fundamental group $\Gamma$ and universal cover $X^{\mathrm{cov}}$, so that $p : X^{\mathrm{cov}} \to X$ is a regular covering with deck group $\Gamma$ and $d = |\Gamma|$. If $\Gamma$ is finite and the coefficient ring is $\mathbb{Q}$, then $H_n(X;\mathbb{Q}) \cong H_n(X^{\mathrm{cov}};\mathbb{Q})^\Gamma$ and the rational homology of $X$ is the invariant part of that of its universal cover. For the lens space $L(n;1) = S^3/(\mathbb{Z}/n)$ this reads $H_*(L(n;1);\mathbb{Q}) = H_*(S^3;\mathbb{Q})^{\mathbb{Z}/n}$, which is $\mathbb{Q}$ in degrees $0$ and $3$ and zero between, the rational homology of the sphere, as the integral computation of *Cohomology and the Universal Coefficient Theorem* confirms up to the torsion that the rational passage erases.
+**Example (the universal cover of a finite complex).** Let $X$ be a finite connected CW complex with finite fundamental group $\Gamma$ and universal cover $X_{\mathrm{cov}}$, so that $p : X_{\mathrm{cov}} \to X$ is a regular covering with deck group $\Gamma$ and $d = |\Gamma|$. If $\Gamma$ is finite and the coefficient ring is $\mathbb{Q}$, then $H_n(X;\mathbb{Q}) \cong H_n(X_{\mathrm{cov}};\mathbb{Q})^\Gamma$ and the rational homology of $X$ is the invariant part of that of its universal cover. For the lens space $L(n;1) = S^3/(\mathbb{Z}/n)$ this reads $H_*(L(n;1);\mathbb{Q}) = H_*(S^3;\mathbb{Q})^{\mathbb{Z}/n}$, which is $\mathbb{Q}$ in degrees $0$ and $3$ and zero between, the rational homology of the sphere, as the integral computation of *Cohomology and the Universal Coefficient Theorem* confirms up to the torsion that the rational passage erases.
 
 ## Summary
 
@@ -208,12 +208,12 @@ The transfer of a regular finite covering $p : E \to B$ with deck group $G$ of o
 | $A, E_A$ | Subspace of $B$ and its preimage $p^{-1}(A)$; a covering of pairs |
 | $C_n(X;R)$, $\partial_n$ | Singular chains and boundary, as in *Simplicial and Singular Homology* |
 | $g_\#$, $g_*$ | Chain map and homology map induced by a deck transformation $g$ |
-| $\tau_n$, $\tau_*$ | Transfer on chains and on homology: $\tau_n(\sigma) = \sum_{g \in G} g_\# \sigma^{\mathrm{lift}}$ |
+| $\tau_n$, $\tau_*$ | Transfer on chains and on homology: $\tau_n(\sigma) = \sum_{g \in G} g_\# \sigma_{\mathrm{lift}}$ |
 | $N = \sum_{g \in G} g_\#$ | Norm (symmetrisation) operator; $N^2 = dN$ |
 | $M^G$, $M_G$ | Invariant and coinvariant parts of a complex of $R[G]$-modules |
 | $\tau^*$ | Cohomology transfer, the dual of $\tau_*$; adjoint under the evaluation pairing |
 | $p_*$, $p^*$ | Projection on homology; pullback on cohomology |
-| $H_{n,\mathrm{red}}$ | Reduced homology; the transfer preserves the augmentation |
+| $H_{\mathrm{red},n}$ | Reduced homology; the transfer preserves the augmentation |
 | $p_*\tau_* = d$, $\tau_* p_* = \sum_g g_*$ | The two composite laws; the composition with the projection |
 | $\partial$ | Boundary operator and connecting homomorphism of a pair; $\partial\tau = \tau\partial$ |
 

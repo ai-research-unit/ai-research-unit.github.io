@@ -102,7 +102,7 @@ $$
 L_{\tilde A}\circ L_{\tilde B}=L_{\tilde A\tilde B},
 $$
 
-so the left multiplications form a **monoid** under composition, with identity $L_{e_t}^{\mathrm{axf}}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
+so the left multiplications form a **monoid** under composition, with identity $L_{\mathrm{axf},e_t}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
 
 A unit is a **reversible process**: the map is a bijection, and it can be run backwards. A zero divisor is a **process that forgets**: its map has a nonzero kernel, the annihilator, and the kernel is the direction it loses. The cone is the boundary between the two.
 
@@ -150,7 +150,7 @@ $$
 \qquad
 \pi_3(\mathbb{B}^{\times})\cong\mathbb{Z},
 $$
-with $(\mathbb{B}^{\times})^{\mathrm{cov}}\simeq\mathbb{R}\times S^{3}$.
+with $(\mathbb{B}^{\times})_{\mathrm{cov}}\simeq\mathbb{R}\times S^{3}$.
 
 **The kernel is not discrete.** The exponential is onto the group. Its kernel meets the diagonal part in the parity-matched lattice $L=\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$ (*Biquaternion Elementary Functions*), but the full kernel also contains continuous families of logarithms. It is therefore not a discrete set and not a covering group, and its lattice part is not the fundamental group. The loops and the third homotopy group are those of the compact core, by the polar retraction of the preceding paragraph; the kernel is the fibre of the exponential over the identity, a gauge ambiguity of the logarithm rather than a set of components of the group. *The Exponential, the Logarithm and the Generator* reads it as such.
 

@@ -208,13 +208,13 @@ structure.
 
 **Definition.** Let $f : \mathcal{A} \to \mathcal{B}$ be a homomorphism. Its **kernel** is the
 equivalence relation $\ker f = \{(x,y) : f(x) = f(y)\}$ on $A$. A **congruence** of $\mathcal{A}$ is
-an equivalence relation $\vartheta^{\mathrm{cng}}$ on $A$ that is compatible with every relation: if $x \mathrel{\vartheta^{\mathrm{cng}}}
-x'$, $y \mathrel{\vartheta^{\mathrm{cng}}} y'$ and $(x,y) \in R_i$, then $(x',y') \in R_i$.
+an equivalence relation $\vartheta_{\mathrm{cng}}$ on $A$ that is compatible with every relation: if $x \mathrel{\vartheta_{\mathrm{cng}}}
+x'$, $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ and $(x,y) \in R_i$, then $(x',y') \in R_i$.
 
 **Proposition.** The kernel of a strong homomorphism is a congruence. The kernel of a homomorphism
 that is not strong need not be a congruence.
 
-**Proof.** Let $f$ be strong, let $x \mathrel{\vartheta^{\mathrm{cng}}} x'$ and $y \mathrel{\vartheta^{\mathrm{cng}}} y'$ with $\vartheta^{\mathrm{cng}} =
+**Proof.** Let $f$ be strong, let $x \mathrel{\vartheta_{\mathrm{cng}}} x'$ and $y \mathrel{\vartheta_{\mathrm{cng}}} y'$ with $\vartheta_{\mathrm{cng}} =
 \ker f$, and let $(x,y) \in R_i$. Then $f(x) = f(x')$ and $f(y) = f(y')$, so $(f(x'), f(y')) =
 (f(x), f(y)) \in S_i$, and strength gives $(x',y') \in R_i$. For the failure, take $A = \{1,2,3\}$
 with $R = \{(1,2)\}$, $B = \{u,v\}$ with $S = \{(u,v)\}$, and $f(1) = u$, $f(2) = v$, $f(3) = u$.
@@ -222,21 +222,21 @@ The map is a homomorphism and is not strong, since $(f(3), f(2)) = (u,v) \in S$ 
 R$. Its kernel identifies $1$ with $3$, and the pair $(1,2) \in R$ is not accompanied by $(3,2) \in
 R$, so $\ker f$ is not compatible with $R$ and is not a congruence.
 
-**Definition.** For a congruence $\vartheta^{\mathrm{cng}}$ of $\mathcal{A}$ the **quotient structure** $\mathcal{A}/
-\vartheta^{\mathrm{cng}}$ has domain the set $A/\vartheta^{\mathrm{cng}}$ of classes, with relations
+**Definition.** For a congruence $\vartheta_{\mathrm{cng}}$ of $\mathcal{A}$ the **quotient structure** $\mathcal{A}/
+\vartheta_{\mathrm{cng}}$ has domain the set $A/\vartheta_{\mathrm{cng}}$ of classes, with relations
 
 $$
-([x], [y]) \in R_i/\vartheta^{\mathrm{cng}} \quad\Longleftrightarrow\quad (x', y') \in R_i
-\text{ for some } x' \mathrel{\vartheta^{\mathrm{cng}}} x, \ y' \mathrel{\vartheta^{\mathrm{cng}}} y .
+([x], [y]) \in R_i/\vartheta_{\mathrm{cng}} \quad\Longleftrightarrow\quad (x', y') \in R_i
+\text{ for some } x' \mathrel{\vartheta_{\mathrm{cng}}} x, \ y' \mathrel{\vartheta_{\mathrm{cng}}} y .
 $$
 
-**Proposition.** The relation $R_i/\vartheta^{\mathrm{cng}}$ is well defined, and the quotient map $\pi : A \to
-A/\vartheta^{\mathrm{cng}}$ is a strong homomorphism $\mathcal{A} \to \mathcal{A}/\vartheta^{\mathrm{cng}}$.
+**Proposition.** The relation $R_i/\vartheta_{\mathrm{cng}}$ is well defined, and the quotient map $\pi : A \to
+A/\vartheta_{\mathrm{cng}}$ is a strong homomorphism $\mathcal{A} \to \mathcal{A}/\vartheta_{\mathrm{cng}}$.
 
-**Proof.** Well-definedness is the compatibility of $\vartheta^{\mathrm{cng}}$ with $R_i$: if $x' \mathrel{\vartheta^{\mathrm{cng}}} x$
-and $y' \mathrel{\vartheta^{\mathrm{cng}}} y$ both satisfy $(x',y') \in R_i$, then by symmetry and transitivity any
+**Proof.** Well-definedness is the compatibility of $\vartheta_{\mathrm{cng}}$ with $R_i$: if $x' \mathrel{\vartheta_{\mathrm{cng}}} x$
+and $y' \mathrel{\vartheta_{\mathrm{cng}}} y$ both satisfy $(x',y') \in R_i$, then by symmetry and transitivity any
 other representatives do too. The map $\pi$ is a homomorphism because $(x,y) \in R_i$ gives $([x],
-[y]) \in R_i/\vartheta^{\mathrm{cng}}$ directly; it is strong because $([x],[y]) \in R_i/\vartheta^{\mathrm{cng}}$ means precisely that
+[y]) \in R_i/\vartheta_{\mathrm{cng}}$ directly; it is strong because $([x],[y]) \in R_i/\vartheta_{\mathrm{cng}}$ means precisely that
 some related representatives exist, and compatibility moves the relation to $x$ and $y$.
 
 ### The First Isomorphism Theorem
@@ -359,8 +359,8 @@ homomorphisms while irreflexivity and antisymmetry are reflected by strong ones.
 | $\operatorname{sym}(A)$ | Group of all bijections of $A$; $\operatorname{Aut}(\mathcal{A}) \leq \operatorname{sym}(A)$ |
 | $G \cdot x$, $G_x$ | Orbit and stabiliser of $x$ under $G = \operatorname{Aut}(\mathcal{A})$ |
 | $\ker f$ | Kernel of a homomorphism, $\{(x,y) : f(x) = f(y)\}$ |
-| congruence $\vartheta^{\mathrm{cng}}$ | Equivalence relation compatible with every $R_i$ |
-| $\mathcal{A}/\vartheta^{\mathrm{cng}}$ | Quotient structure |
+| congruence $\vartheta_{\mathrm{cng}}$ | Equivalence relation compatible with every $R_i$ |
+| $\mathcal{A}/\vartheta_{\mathrm{cng}}$ | Quotient structure |
 
 ## Further Reading
 

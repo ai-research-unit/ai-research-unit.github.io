@@ -129,27 +129,27 @@ is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphi
 
 ### Path Lifting
 
-**Theorem (path lifting).** Let $p : E \to B$ be a covering, let $\gamma : I \to B$ be a path, and let $e_0 \in E$ with $p(e_0) = \gamma(0)$. Then there is exactly one path $\gamma^{\mathrm{lift}} : I \to E$ with $\gamma^{\mathrm{lift}}(0) = e_0$ and $p \circ \gamma^{\mathrm{lift}} = \gamma$.
+**Theorem (path lifting).** Let $p : E \to B$ be a covering, let $\gamma : I \to B$ be a path, and let $e_0 \in E$ with $p(e_0) = \gamma(0)$. Then there is exactly one path $\gamma_{\mathrm{lift}} : I \to E$ with $\gamma_{\mathrm{lift}}(0) = e_0$ and $p \circ \gamma_{\mathrm{lift}} = \gamma$.
 
-*Proof.* Cover $B$ by evenly covered open sets and pull the cover back to a cover of the compact interval $I$; by the Lebesgue number lemma for the metric space $I$ there is $n$ such that each subinterval $[k/n, (k+1)/n]$ lies in an evenly covered set $\Omega_k$. Construct $\gamma^{\mathrm{lift}}$ inductively on the subintervals: on $[0, 1/n]$ take the sheet over $\Omega_0$ through $e_0$ and set $\gamma^{\mathrm{lift}} = (p|_{V_0})^{-1} \circ \gamma$; the endpoint $\gamma^{\mathrm{lift}}(1/n)$ lies over $\gamma(1/n)$, so it lies in some sheet over $\Omega_1$, and the construction continues. Uniqueness: two lifts agreeing at a point agree on a neighbourhood of it by uniqueness of the local inverse, so the set where they agree is open; it is also closed, because by continuity both maps land in one sheet near a limit point, and $I$ is connected.
+*Proof.* Cover $B$ by evenly covered open sets and pull the cover back to a cover of the compact interval $I$; by the Lebesgue number lemma for the metric space $I$ there is $n$ such that each subinterval $[k/n, (k+1)/n]$ lies in an evenly covered set $\Omega_k$. Construct $\gamma_{\mathrm{lift}}$ inductively on the subintervals: on $[0, 1/n]$ take the sheet over $\Omega_0$ through $e_0$ and set $\gamma_{\mathrm{lift}} = (p|_{V_0})^{-1} \circ \gamma$; the endpoint $\gamma_{\mathrm{lift}}(1/n)$ lies over $\gamma(1/n)$, so it lies in some sheet over $\Omega_1$, and the construction continues. Uniqueness: two lifts agreeing at a point agree on a neighbourhood of it by uniqueness of the local inverse, so the set where they agree is open; it is also closed, because by continuity both maps land in one sheet near a limit point, and $I$ is connected.
 
-**Theorem (homotopy lifting).** Let $p : E \to B$ be a covering and let $H : I \times I \to B$ be a homotopy with $H(0,0) = b_0$. Given $e_0 \in E$ over $b_0$ there is exactly one $H^{\mathrm{lift}} : I \times I \to E$ with $p \circ H^{\mathrm{lift}} = H$ and $H^{\mathrm{lift}}(0,0) = e_0$.
+**Theorem (homotopy lifting).** Let $p : E \to B$ be a covering and let $H : I \times I \to B$ be a homotopy with $H(0,0) = b_0$. Given $e_0 \in E$ over $b_0$ there is exactly one $H_{\mathrm{lift}} : I \times I \to E$ with $p \circ H_{\mathrm{lift}} = H$ and $H_{\mathrm{lift}}(0,0) = e_0$.
 
 *Proof.* The argument is that of path lifting with the Lebesgue number lemma applied to the compact square, subdividing into small squares each carried into an evenly covered set, and extending over the squares in lexicographic order; uniqueness is again by connectedness of the square.
 
-**Corollary (monodromy).** If $\gamma_0, \gamma_1 : I \to B$ are path homotopic and have the same initial point $b_0$, and if $e_0$ lies over $b_0$, then the lifts $\gamma^{\mathrm{lift}}_0, \gamma^{\mathrm{lift}}_1$ from $e_0$ have the same endpoint and are path homotopic.
+**Corollary (monodromy).** If $\gamma_0, \gamma_1 : I \to B$ are path homotopic and have the same initial point $b_0$, and if $e_0$ lies over $b_0$, then the lifts $\gamma_{\mathrm{lift},0}, \gamma_{\mathrm{lift},1}$ from $e_0$ have the same endpoint and are path homotopic.
 
-*Proof.* Let $H$ be the path homotopy; lift it to $H^{\mathrm{lift}}$ with $H^{\mathrm{lift}}(0,0) = e_0$. For each $t$ the path $s \mapsto H^{\mathrm{lift}}(s,t)$ lifts the path $s \mapsto H(s,t)$ with the same initial point $e_0$, so by uniqueness it is the lift of that path. Since $H(0,t)$ and $H(1,t)$ are constant in $t$ and the lifted endpoints vary continuously in a discrete fibre, they are constant. Thus $H^{\mathrm{lift}}$ is a path homotopy between the lifts.
+*Proof.* Let $H$ be the path homotopy; lift it to $H_{\mathrm{lift}}$ with $H_{\mathrm{lift}}(0,0) = e_0$. For each $t$ the path $s \mapsto H_{\mathrm{lift}}(s,t)$ lifts the path $s \mapsto H(s,t)$ with the same initial point $e_0$, so by uniqueness it is the lift of that path. Since $H(0,t)$ and $H(1,t)$ are constant in $t$ and the lifted endpoints vary continuously in a discrete fibre, they are constant. Thus $H_{\mathrm{lift}}$ is a path homotopy between the lifts.
 
 ### The Lifting Criterion
 
-**Theorem (lifting criterion).** Let $p : (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0) \to (X, x_0)$ be a covering with $X^{\mathrm{cov}}$ and $X$ path-connected and locally path-connected, and let $f : (Y, y_0) \to (X, x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then a lift $f^{\mathrm{lift}} : (Y,y_0) \to (X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)$ with $p \circ f^{\mathrm{lift}} = f$ exists if and only if
+**Theorem (lifting criterion).** Let $p : (X_{\mathrm{cov}}, x_{\mathrm{lift},0}) \to (X, x_0)$ be a covering with $X_{\mathrm{cov}}$ and $X$ path-connected and locally path-connected, and let $f : (Y, y_0) \to (X, x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then a lift $f_{\mathrm{lift}} : (Y,y_0) \to (X_{\mathrm{cov}}, x_{\mathrm{lift},0})$ with $p \circ f_{\mathrm{lift}} = f$ exists if and only if
 
 $$
-\boxed{\;f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr)\;}.
+\boxed{\;f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X_{\mathrm{cov}}, x_{\mathrm{lift},0})\bigr)\;}.
 $$
 
-*Proof.* Necessity: if $f^{\mathrm{lift}}$ exists then $f_* = p_* f^{\mathrm{lift}}_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f^{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x^{\mathrm{lift}}_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$, hence lifts to a loop at $x^{\mathrm{lift}}_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $\Omega$ about $f(y)$, the lift over the sheet through $f^{\mathrm{lift}}(y)$ composed with $f$ agrees with $f^{\mathrm{lift}}$ on $V$, and hence $f^{\mathrm{lift}}$ is continuous there.
+*Proof.* Necessity: if $f_{\mathrm{lift}}$ exists then $f_* = p_* f_{\mathrm{lift},*}$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f_{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x_{\mathrm{lift},0}$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X_{\mathrm{cov}},x_{\mathrm{lift},0})$, hence lifts to a loop at $x_{\mathrm{lift},0}$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $\Omega$ about $f(y)$, the lift over the sheet through $f_{\mathrm{lift}}(y)$ composed with $f$ agrees with $f_{\mathrm{lift}}$ on $V$, and hence $f_{\mathrm{lift}}$ is continuous there.
 
 **Corollary.** With the same hypotheses, two lifts of $f$ that agree at one point of a connected $Y$ agree everywhere.
 
@@ -161,21 +161,21 @@ Fix a path-connected, locally path-connected and semilocally simply connected sp
 
 **Theorem.** The assignment $p \mapsto p_*\bigl(\pi_1(E,e_0)\bigr)$ is a bijection between the isomorphism classes of connected coverings $p : E \to X$ and the subgroups of $\pi_1(X,x_0)$.
 
-*Proof sketch.* Given a subgroup $H \leq \pi_1(X,x_0)$, let $X^{\mathrm{cov}}_H$ be the set of path-homotopy classes of paths in $X$ issuing from $x_0$, modulo the equivalence $\alpha \sim \beta$ when $\alpha(1) = \beta(1)$ and $[\alpha \ast \bar\beta] \in H$; topologise it by the sets of classes extending a path into a fixed open set, and let $p$ send a class to its endpoint. Then $p$ is a covering, and its image subgroup is $H$. Conversely, given a covering, the image $p_*\pi_1(E,e_0)$ is a subgroup, and two coverings with the same image subgroup are isomorphic by the lifting criterion applied in both directions. The map is injective because the isomorphism class determines the conjugacy class of the image, and for a fixed basepoint the conjugacy is removed by the choice of $e_0$.
+*Proof sketch.* Given a subgroup $H \leq \pi_1(X,x_0)$, let $X_{\mathrm{cov},H}$ be the set of path-homotopy classes of paths in $X$ issuing from $x_0$, modulo the equivalence $\alpha \sim \beta$ when $\alpha(1) = \beta(1)$ and $[\alpha \ast \bar\beta] \in H$; topologise it by the sets of classes extending a path into a fixed open set, and let $p$ send a class to its endpoint. Then $p$ is a covering, and its image subgroup is $H$. Conversely, given a covering, the image $p_*\pi_1(E,e_0)$ is a subgroup, and two coverings with the same image subgroup are isomorphic by the lifting criterion applied in both directions. The map is injective because the isomorphism class determines the conjugacy class of the image, and for a fixed basepoint the conjugacy is removed by the choice of $e_0$.
 
 **Corollary.** The covering corresponds to the whole group $\pi_1(X,x_0)$ exactly when $E$ is simply connected; it corresponds to the trivial subgroup exactly when $p$ is a homeomorphism.
 
 ### The Universal Cover
 
-**Definition.** A covering $p : X^{\mathrm{cov}} \to X$ with $X^{\mathrm{cov}}$ simply connected is a **universal cover** of $X$. When it exists it is unique up to isomorphism over $X$, and it is the covering corresponding to the trivial subgroup.
+**Definition.** A covering $p : X_{\mathrm{cov}} \to X$ with $X_{\mathrm{cov}}$ simply connected is a **universal cover** of $X$. When it exists it is unique up to isomorphism over $X$, and it is the covering corresponding to the trivial subgroup.
 
 **Theorem.** If $X$ is path-connected, locally path-connected and semilocally simply connected, then $X$ admits a universal cover.
 
-*Proof.* Apply the construction of the previous theorem with $H$ the trivial subgroup. Equivalently, take $X^{\mathrm{cov}}$ to be the set of path-homotopy classes of paths issuing from $x_0$ with the endpoint map, as above.
+*Proof.* Apply the construction of the previous theorem with $H$ the trivial subgroup. Equivalently, take $X_{\mathrm{cov}}$ to be the set of path-homotopy classes of paths issuing from $x_0$ with the endpoint map, as above.
 
-**Theorem (lifting to the universal cover).** Let $p : X^{\mathrm{cov}} \to X$ be the universal cover and let $f : (Y,y_0) \to (X,x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then there is a lift $f^{\mathrm{lift}}$ for every choice of $x^{\mathrm{lift}}_0$ over $x_0$.
+**Theorem (lifting to the universal cover).** Let $p : X_{\mathrm{cov}} \to X$ be the universal cover and let $f : (Y,y_0) \to (X,x_0)$ be continuous with $Y$ path-connected and locally path-connected. Then there is a lift $f_{\mathrm{lift}}$ for every choice of $x_{\mathrm{lift},0}$ over $x_0$.
 
-*Proof.* The condition of the lifting criterion holds because $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$ is trivial, so every subgroup is contained in it.
+*Proof.* The condition of the lifting criterion holds because $p_*\pi_1(X_{\mathrm{cov}},x_{\mathrm{lift},0})$ is trivial, so every subgroup is contained in it.
 
 **Example.** The universal cover of $S^1$ is $p : \mathbb{R} \to S^1$, $t \mapsto \exp(2\pi i t)$; the universal cover of the torus $S^1 \times S^1$ is $\mathbb{R}^2 \to S^1 \times S^1$; the universal cover of $\mathbb{RP}^n$ for $n \geq 2$ is $S^n$, with two sheets.
 
@@ -193,7 +193,7 @@ Fix a path-connected, locally path-connected and semilocally simply connected sp
 
 **Example.** For $S^1$, the deck group of $\mathbb{R} \to S^1$ is $\mathbb{Z}$, generated by $t \mapsto t+1$; for $\mathbb{RP}^n$, the deck group of $S^n \to \mathbb{RP}^n$ is $\mathbb{Z}/2$.
 
-**Remark.** The quotient $X = X^{\mathrm{cov}}/\Gamma$ of a simply connected space by a group $\Gamma$ acting freely and properly discontinuously is a covering with deck group $\Gamma$ and fundamental group $\Gamma$. This is the standard construction of the lens spaces and of the flat manifolds, and it is stated here without the general theory of properly discontinuous actions, which requires the compactness and separation machinery of *Topological Spaces*.
+**Remark.** The quotient $X = X_{\mathrm{cov}}/\Gamma$ of a simply connected space by a group $\Gamma$ acting freely and properly discontinuously is a covering with deck group $\Gamma$ and fundamental group $\Gamma$. This is the standard construction of the lens spaces and of the flat manifolds, and it is stated here without the general theory of properly discontinuous actions, which requires the compactness and separation machinery of *Topological Spaces*.
 
 ## Computations
 
@@ -265,7 +265,7 @@ A covering space is a map that is locally a disjoint union of homeomorphisms ont
 | $X \simeq Y$ | Homotopy equivalence; contractible if $\simeq$ a point |
 | $p : E \to X$ | Covering space; evenly covered sets, sheets, degree |
 | $\operatorname{Deck}(E/X)$, $\operatorname{Aut}(E/X)$ | Group of deck transformations, $p \circ \tau = p$ |
-| $X^{\mathrm{cov}}$ | Universal cover; $\pi_1(X,x_0) \cong \operatorname{Deck}(X^{\mathrm{cov}}/X)$ |
+| $X_{\mathrm{cov}}$ | Universal cover; $\pi_1(X,x_0) \cong \operatorname{Deck}(X_{\mathrm{cov}}/X)$ |
 | $\operatorname{id}_X$ | Identity map of $X$ |
 | $D^n, S^n$ | Closed unit ball and unit sphere in $\mathbb{R}^{n+1}$ |
 | $\mathbb{RP}^n$ | Real projective space |

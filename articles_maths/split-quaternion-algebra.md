@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the split-quaternion algebra as an algebraic structure. It defines the algebra, describes the conjugations and their fixed-point subspaces, the idempotents and the distinguished subspaces, and the Lie algebra structure. It closes with a comparison with the quaternions $\mathbb{H}$ and with the split-biquaternions $\mathbb{B}^{\mathrm{spl}}$.
+This article introduces the split-quaternion algebra as an algebraic structure. It defines the algebra, describes the conjugations and their fixed-point subspaces, the idempotents and the distinguished subspaces, and the Lie algebra structure. It closes with a comparison with the quaternions $\mathbb{H}$ and with the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The inner product of the algebra is formed and evaluated here as an algebraic pairing — its scalar, its vanishing and its non-degeneracy; nothing is measured with it, and the theory of norms, forms and signatures belongs to the Topology group (*Split-Quaternion Norm and Invertibility*). The quaternion algebra is assumed from *Quaternion Algebra*; the split-complex algebra and its idempotents from *Split-Complex Algebra*; the Clifford algebra $\mathrm{Cl}_{n,m}$ and its low-dimensional classification from *Clifford Algebras in Finite Dimensions* and *The Number Systems as Clifford Algebras*. The rotations, the Lorentz group and the hyperbolic geometry that the algebra carries are not treated here; they belong to *Split-Quaternion Rotations and the Lorentz Group*, *Split-Quaternion Geometry* and *Split-Quaternions and Hyperbolic Geometry*.
 
@@ -11,7 +11,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 ### Definition
 
-The **split-quaternion algebra** $\mathbb{H}^{\mathrm{spl}}$ is the four-dimensional real algebra with basis
+The **split-quaternion algebra** $\mathbb{H}_{\mathrm{spl}}$ is the four-dimensional real algebra with basis
 
 $$
 1, \qquad \vec e_x, \qquad \vec e_y, \qquad \vec e_z,
@@ -43,7 +43,7 @@ $$
 
 and we write $\operatorname{Sc}(\tilde q) = q_t$ and $\operatorname{Vec}(\tilde q) = \vec v$ for the two components.
 
-The four elements $1, \vec e_x, \vec e_y, \vec e_z$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}^{\mathrm{spl}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.
+The four elements $1, \vec e_x, \vec e_y, \vec e_z$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}_{\mathrm{spl}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.
 
 ### The Multiplication Table
 
@@ -89,7 +89,7 @@ so $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero zero divisors. The algebra ther
 **The matrix model.** The algebra is isomorphic to the algebra of $2\times2$ real matrices: the low-dimensional Clifford classification gives
 
 $$
-\boxed{\;\mathbb{H}^{\mathrm{spl}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;}
+\boxed{\;\mathbb{H}_{\mathrm{spl}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})\;}
 $$
 
 (*The Number Systems as Clifford Algebras*), and this abstract identification is used throughout the category, in the ideal theory of *Split-Quaternion Ideals and Peirce Decomposition*, in the idempotent theory of *Split-Quaternion Idempotents and Projections*, and in the spectral and exponential theory of the later articles.
@@ -115,7 +115,7 @@ It negates the three vector basis elements and fixes the scalars.
 Since ${}^{\natural}$ is an involutive linear map, the algebra decomposes into its $+1$ and $-1$ eigenspaces:
 
 $$
-\mathbb{H}^{\mathrm{spl}} = S \oplus V, \qquad
+\mathbb{H}_{\mathrm{spl}} = S \oplus V, \qquad
 S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R} \cdot 1, \qquad
 V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\} = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}.
 $$
@@ -145,7 +145,7 @@ $$
 Both are involutions, they commute, and their composite is the conjugation: $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$. Because they commute, each preserves the eigenspaces of the other, and the algebra decomposes into their common eigenspaces. The two involutions do not separate $\vec e_x$ from $\vec e_y$, however: $\alpha$ acts as $-1$ on the whole plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ acts as $+1$ on that plane, so the common eigenspaces are
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{R} \cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z,
+\mathbb{H}_{\mathrm{spl}} = \mathbb{R} \cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$
 
 of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb{R}\cdot 1$, $(-,+)$ on $\operatorname{span}\{\vec e_x,\vec e_y\}$ and $(+,-)$ on $\mathbb{R}\vec e_z$. This is the finest decomposition produced by the three involutions: on $\operatorname{span}\{\vec e_x,\vec e_y\}$ all three act as $-1$, so no eigenspace of any of them splits that plane. The eigenspaces of the involutions taken one at a time are the ones used in *Split-Quaternion Analysis*: the principal involution has $+1$ on $\operatorname{span}\{1,\vec e_z\}$ and $-1$ on $\operatorname{span}\{\vec e_x,\vec e_y\}$; the reversal has $+1$ on $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ and $-1$ on $\mathbb{R}\vec e_z$; and the conjugation has $+1$ on $\mathbb{R}\cdot 1$ and $-1$ on $V$.
@@ -189,10 +189,10 @@ $$
 and they are not central. Moreover
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2
+\mathbb{H}_{\mathrm{spl}} = \mathbb{H}_{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{spl}} \tilde\pi_2
 $$
 
-is a direct sum of two minimal left ideals of real dimension $2$, and the corresponding statement holds on the right, $\mathbb{H}^{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}^{\mathrm{spl}} \oplus \tilde\pi_2 \mathbb{H}^{\mathrm{spl}}$. The decomposition is a decomposition of left modules and not of algebras: the subalgebra generated by $\tilde\pi_1$ and $\tilde\pi_2$ is two-dimensional and is not the whole algebra.
+is a direct sum of two minimal left ideals of real dimension $2$, and the corresponding statement holds on the right, $\mathbb{H}_{\mathrm{spl}} = \tilde\pi_1 \mathbb{H}_{\mathrm{spl}} \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{spl}}$. The decomposition is a decomposition of left modules and not of algebras: the subalgebra generated by $\tilde\pi_1$ and $\tilde\pi_2$ is two-dimensional and is not the whole algebra.
 
 **Proof.** The four identities are the computation
 
@@ -200,31 +200,31 @@ $$
 \tilde\pi_1^2 = \tfrac{1}{4}(1 + 2\vec e_y + \vec e_y^2) = \tfrac{1}{4}(2 + 2\vec e_y) = \tilde\pi_1,
 $$
 
-and its analogue for $\tilde\pi_2$, together with $\tilde\pi_1\tilde\pi_2 = \tfrac14(1 - \vec e_y^2) = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$. For non-centrality, $\vec e_x \tilde\pi_1 = \tfrac12(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac12(\vec e_x - \vec e_z)$, so $\vec e_x \tilde\pi_1 \neq \tilde\pi_1 \vec e_x$. An element $\tilde q \tilde\pi_1$ of the first summand is fixed by right multiplication by $\tilde\pi_1$, since $\tilde q \tilde\pi_1 \tilde\pi_1 = \tilde q \tilde\pi_1$, and the map $\tilde q \mapsto \tilde q \tilde\pi_1$ has image of dimension $2$ because its kernel is $\mathbb{H}^{\mathrm{spl}} \tilde\pi_2$. The sum $\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 + \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$ is all of $\mathbb{H}^{\mathrm{spl}}$, since $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2)$, and the intersection is zero: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_1 \tilde\pi_2 = 0$ and the span of $\tilde\pi_1, \tilde\pi_2$ has dimension $2$.
+and its analogue for $\tilde\pi_2$, together with $\tilde\pi_1\tilde\pi_2 = \tfrac14(1 - \vec e_y^2) = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$. For non-centrality, $\vec e_x \tilde\pi_1 = \tfrac12(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac12(\vec e_x - \vec e_z)$, so $\vec e_x \tilde\pi_1 \neq \tilde\pi_1 \vec e_x$. An element $\tilde q \tilde\pi_1$ of the first summand is fixed by right multiplication by $\tilde\pi_1$, since $\tilde q \tilde\pi_1 \tilde\pi_1 = \tilde q \tilde\pi_1$, and the map $\tilde q \mapsto \tilde q \tilde\pi_1$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{spl}} \tilde\pi_2$. The sum $\mathbb{H}_{\mathrm{spl}} \tilde\pi_1 + \mathbb{H}_{\mathrm{spl}} \tilde\pi_2$ is all of $\mathbb{H}_{\mathrm{spl}}$, since $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2)$, and the intersection is zero: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of *Split-Quaternion Idempotents and Projections* shows. The final claim holds because $\tilde\pi_1 \tilde\pi_2 = 0$ and the span of $\tilde\pi_1, \tilde\pi_2$ has dimension $2$.
 
 ### The Split-Complex Subspaces
 
-The line $\mathbb{R} \cdot 1$ together with either of the two square-$+1$ generators spans a copy of the split-complex algebra inside $\mathbb{H}^{\mathrm{spl}}$:
+The line $\mathbb{R} \cdot 1$ together with either of the two square-$+1$ generators spans a copy of the split-complex algebra inside $\mathbb{H}_{\mathrm{spl}}$:
 
 $$
-\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}^{\mathrm{spl}}, \qquad
-\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1, \vec e_z\} \cong \mathbb{C}^{\mathrm{spl}},
+\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}_{\mathrm{spl}}, \qquad
+\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1, \vec e_z\} \cong \mathbb{C}_{\mathrm{spl}},
 $$
 
-where $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ is the split-complex algebra of *Split-Complex Algebra*. Both are commutative subalgebras, both have the two idempotents $\tfrac12(1 \pm \vec e_y)$ and $\tfrac12(1 \pm \vec e_z)$ respectively, and both carry the zero divisors $1 \pm \vec e_y$ and $1 \pm \vec e_z$. The whole algebra is generated by $\mathbb{C}^{\mathrm{spl}}_2$ together with the single element $\vec e_x$:
+where $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ is the split-complex algebra of *Split-Complex Algebra*. Both are commutative subalgebras, both have the two idempotents $\tfrac12(1 \pm \vec e_y)$ and $\tfrac12(1 \pm \vec e_z)$ respectively, and both carry the zero divisors $1 \pm \vec e_y$ and $1 \pm \vec e_z$. The whole algebra is generated by $\mathbb{C}_{\mathrm{spl},2}$ together with the single element $\vec e_x$:
 
 $$
-\mathbb{H}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}_2 \oplus \mathbb{C}^{\mathrm{spl}}_2 \vec e_x , \qquad \vec e_x d = \bar{d} \vec e_x \ \ (d \in \mathbb{C}^{\mathrm{spl}}_2),
+\mathbb{H}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},2} \oplus \mathbb{C}_{\mathrm{spl},2} \vec e_x , \qquad \vec e_x d = \bar{d} \vec e_x \ \ (d \in \mathbb{C}_{\mathrm{spl},2}),
 $$
 
-which exhibits $\mathbb{H}^{\mathrm{spl}}$ as a two-dimensional module over the split-complex algebra with a conjugation-twisted multiplication. The idempotents $\tilde\pi_{1,2}$ of the algebra are the idempotents of the subalgebra $\mathbb{C}^{\mathrm{spl}}_2$; they are non-central in $\mathbb{H}^{\mathrm{spl}}$ precisely because $\vec e_x$ does not commute with $\vec e_y$.
+which exhibits $\mathbb{H}_{\mathrm{spl}}$ as a two-dimensional module over the split-complex algebra with a conjugation-twisted multiplication. The idempotents $\tilde\pi_{1,2}$ of the algebra are the idempotents of the subalgebra $\mathbb{C}_{\mathrm{spl},2}$; they are non-central in $\mathbb{H}_{\mathrm{spl}}$ precisely because $\vec e_x$ does not commute with $\vec e_y$.
 
 ## The Centre and Simplicity
 
-**Theorem (The Centre).** The centre of $\mathbb{H}^{\mathrm{spl}}$ is the scalar line:
+**Theorem (The Centre).** The centre of $\mathbb{H}_{\mathrm{spl}}$ is the scalar line:
 
 $$
-\boxed{\;Z(\mathbb{H}^{\mathrm{spl}}) = \{\tilde q_1 : \tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 \ \text{for all} \ \tilde q_2\} = \mathbb{R} \cdot 1\;}.
+\boxed{\;Z(\mathbb{H}_{\mathrm{spl}}) = \{\tilde q_1 : \tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 \ \text{for all} \ \tilde q_2\} = \mathbb{R} \cdot 1\;}.
 $$
 
 **Proof.** The scalars are central. Conversely, suppose $\tilde q = q_t + \vec v$ is central. Commuting $\tilde q$ with $\vec e_x$ gives
@@ -243,13 +243,13 @@ so $\vec v \vec e_x - \vec e_x \vec v = -2q_y \vec e_z + 2q_z \vec e_y = 0$, giv
 
 **Theorem (Simplicity).** The split-quaternion algebra is **simple**: it has no two-sided ideal other than $0$ and the algebra itself.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}^{\mathrm{spl}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and
+**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{spl}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and
 
 $$
 (\tilde q + \lambda)\overline{(\tilde q + \lambda)} = \tilde q \tilde{q}^{\natural} + 2\lambda \operatorname{Sc}(\tilde q) + \lambda^2 = \lambda\big(2\operatorname{Sc}(\tilde q) + \lambda\big),
 $$
 
-which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(\tilde q)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}^{\mathrm{spl}}$. Hence the only two-sided ideals are $0$ and the algebra.
+which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(\tilde q)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{spl}}$. Hence the only two-sided ideals are $0$ and the algebra.
 
 The algebra is thus **associative, non-commutative, simple**, with centre $\mathbb{R}$, and it is **not** a division algebra. The combination — associative, non-commutative, simple, centre $\mathbb{R}$, and not a division algebra — is the one the comparisons below set against the quaternions and the split-biquaternions.
 
@@ -261,17 +261,17 @@ $$
 \boxed{\;[\vec e_x, \vec e_y] = 2 \vec e_z, \qquad [\vec e_y, \vec e_z] = -2 \vec e_x, \qquad [\vec e_z, \vec e_x] = 2 \vec e_y\;}.
 $$
 
-So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}^{\mathrm{spl}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathrm{SL}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of *Split-Quaternion Rotations and the Lorentz Group*.
+So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}_{\mathrm{spl}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathrm{SL}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of *Split-Quaternion Rotations and the Lorentz Group*.
 
-The scalar line $S$ is the centre of $\mathbb{H}^{\mathrm{spl}}$ and therefore contributes nothing to the bracket. The full Lie algebra $\mathbb{H}^{\mathrm{spl}}$ is the direct sum of the bracket algebra on $V$ and a central scalar line.
+The scalar line $S$ is the centre of $\mathbb{H}_{\mathrm{spl}}$ and therefore contributes nothing to the bracket. The full Lie algebra $\mathbb{H}_{\mathrm{spl}}$ is the direct sum of the bracket algebra on $V$ and a central scalar line.
 
-## Comparison with $\mathbb{H}$ and with $\mathbb{B}^{\mathrm{spl}}$
+## Comparison with $\mathbb{H}$ and with $\mathbb{B}_{\mathrm{spl}}$
 
 ### Comparison with the Quaternions
 
 The split-quaternions and the quaternions are the two real forms of the same complexified algebra, and they differ in the sign of one generator. The following table collects the contrast; the quaternion column is supported by *Quaternion Algebra*.
 
-| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ |
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$ |
 |---|---|---|
 | basis and squares | $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ | $\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$ |
 | diagonal product $\tilde q\tilde{q}^{\natural}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $q_t^2+q_x^2-q_y^2-q_z^2$ |
@@ -286,36 +286,36 @@ The decisive difference is the sign in the diagonal product. For a nonzero quate
 
 ### Comparison with the Split-Biquaternions
 
-The name *split quaternions* is used in the classical literature for the four-dimensional algebra $\mathrm{Cl}_{1,1}$ of this article, and it is not the algebra that the corpus writes $\mathbb{B}^{\mathrm{spl}}$. The corpus reserves $\mathbb{B}^{\mathrm{spl}}$ for the eight-dimensional tensor product $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$, the **split-biquaternions**; the distinction is stated once, in *The Number Systems as Clifford Algebras*, and is recorded again in *Examples of Algebras* and in *List of Algebras by Dimension*. The two algebras must not be identified, and the following table records why.
+The name *split quaternions* is used in the classical literature for the four-dimensional algebra $\mathrm{Cl}_{1,1}$ of this article, and it is not the algebra that the corpus writes $\mathbb{B}_{\mathrm{spl}}$. The corpus reserves $\mathbb{B}_{\mathrm{spl}}$ for the eight-dimensional tensor product $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$, the **split-biquaternions**; the distinction is stated once, in *The Number Systems as Clifford Algebras*, and is recorded again in *Examples of Algebras* and in *List of Algebras by Dimension*. The two algebras must not be identified, and the following table records why.
 
-| | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{B}^{\mathrm{spl}}$ |
+| | $\mathbb{H}_{\mathrm{spl}}$ | $\mathbb{B}_{\mathrm{spl}}$ |
 |---|---|---|
 | dimension over $\mathbb{R}$ | $4$ | $8$ |
 | isomorphic to | $\mathrm{Cl}_{1,1}$ | $\mathrm{Cl}_{0,3}$ |
 | simple | yes | no |
-| centre | $\mathbb{R}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| centre | $\mathbb{R}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 | idempotents | non-central only | central, $\tilde\Pi_{1,2}$ |
 | nonzero nilpotents | yes | no |
 
-The two rows that separate the algebras most sharply are the last two. A nilpotent is an element $\tilde q \neq 0$ with $\tilde q^2 = 0$, and the split-quaternion algebra has them: $(\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -e_t + 0 + e_t = 0$, since $\vec e_x \vec e_z = -\vec e_z \vec e_x$. An algebra that is a product of two division algebras, as $\mathbb{B}^{\mathrm{spl}}$ is by the dictionary of *The Number Systems as Clifford Algebras*, has no nilpotents at all, because a nilpotent would have a nilpotent component in one of the factors and a division algebra has none. Simultaneously, the split-quaternion algebra is **simple**, while a product of two algebras is not. A **simple** algebra with nilpotents and non-central idempotents is therefore entirely different from a **semisimple, non-simple** product of two division algebras with central idempotents and no nilpotents.
+The two rows that separate the algebras most sharply are the last two. A nilpotent is an element $\tilde q \neq 0$ with $\tilde q^2 = 0$, and the split-quaternion algebra has them: $(\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -e_t + 0 + e_t = 0$, since $\vec e_x \vec e_z = -\vec e_z \vec e_x$. An algebra that is a product of two division algebras, as $\mathbb{B}_{\mathrm{spl}}$ is by the dictionary of *The Number Systems as Clifford Algebras*, has no nilpotents at all, because a nilpotent would have a nilpotent component in one of the factors and a division algebra has none. Simultaneously, the split-quaternion algebra is **simple**, while a product of two algebras is not. A **simple** algebra with nilpotents and non-central idempotents is therefore entirely different from a **semisimple, non-simple** product of two division algebras with central idempotents and no nilpotents.
 
-The eight-dimensional relative of the corpus is treated later in Part V, under Split-Biquaternions; nothing in it is used here. What is stated here is stated from the algebra of this article and from the conventions: a four-dimensional simple real algebra with zero divisors and non-central idempotents, on the one hand, and the eight-dimensional $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, on the other.
+The eight-dimensional relative of the corpus is treated later in Part V, under Split-Biquaternions; nothing in it is used here. What is stated here is stated from the algebra of this article and from the conventions: a four-dimensional simple real algebra with zero divisors and non-central idempotents, on the one hand, and the eight-dimensional $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, on the other.
 
 ## Summary
 
-The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, the products $\vec e_x^2 = -e_t$, $\vec e_y^2 = \vec e_z^2 = +e_t$, the anticommutation $\vec e_x \vec e_y = -\vec e_y \vec e_x$ and $\vec e_z = \vec e_x \vec e_y$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero and multiply to zero.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, the products $\vec e_x^2 = -e_t$, $\vec e_y^2 = \vec e_z^2 = +e_t$, the anticommutation $\vec e_x \vec e_y = -\vec e_y \vec e_x$ and $\vec e_z = \vec e_x \vec e_y$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero and multiply to zero.
 
 The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\tilde{q}^{\natural}$ is the Clifford conjugation. The diagonal product $\tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of units and the action of the group on $V$ are treated in *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-The conjugation $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,\vec e_y\}$ and $\operatorname{span}\{1,\vec e_z\}$ are copies of $\mathbb{C}^{\mathrm{spl}}$ and carry the zero divisors of the algebra.
+The conjugation $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,\vec e_y\}$ and $\operatorname{span}\{1,\vec e_z\}$ are copies of $\mathbb{C}_{\mathrm{spl}}$ and carry the zero divisors of the algebra.
 
-The system is not the eight-dimensional $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, which is neither simple nor free of nilpotents; the two are distinguished once, in *The Number Systems as Clifford Algebras*.
+The system is not the eight-dimensional $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, which is neither simple nor free of nilpotents; the two are distinguished once, in *The Number Systems as Clifford Algebras*.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1}$ | this article |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1}$ | this article |
 | $1, \vec e_x, \vec e_y, \vec e_z$ | the basis, with $\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$, $\vec e_z=\vec e_x \vec e_y$ | this article |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | this article |
 | $q_t = \operatorname{Sc}(\tilde q)$ | the scalar part | this article |
@@ -328,12 +328,12 @@ The system is not the eight-dimensional $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^
 | $\langle\tilde q_1,\tilde q_2\rangle = \operatorname{Sc}(\tilde q_1 \tilde q_2^{\natural}) = q_{1t}q_{2t}+q_{1x}q_{2x}-q_{1y}q_{2y}-q_{1z}q_{2z}$ | the inner product, formed and evaluated algebraically | this article |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, named here only by forward reference | *Split-Quaternion Norm and Invertibility* |
 | $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | this article |
-| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | the split-complex subalgebras | this article |
+| $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | the split-complex subalgebras | this article |
 | $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ | the commutator bracket | this article |
 | $\mathrm{SL}_2(\mathbb{R})$ | the three-dimensional simple Lie algebra of $V$ | this article |
-| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex numbers, $j^2=+1$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{spl}}$ | the split-complex numbers, $j^2=+1$ | *Split-Complex Algebra* |
 | $\mathbb{H}$ | the real quaternions | *Quaternion Algebra* |
-| $\mathbb{B}^{\mathrm{spl}}$ | the split-biquaternions, $\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, a later Part V system | *The Number Systems as Clifford Algebras* |
+| $\mathbb{B}_{\mathrm{spl}}$ | the split-biquaternions, $\mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, a later Part V system | *The Number Systems as Clifford Algebras* |
 
 ## Further Reading
 

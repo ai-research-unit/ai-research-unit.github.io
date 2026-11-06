@@ -23,7 +23,7 @@ $$
 
 **Corollary (the unsigned case).** For $\alpha=\mathrm{id}$ the signed left multiplication is the left multiplication and the statement reads $(L_a)^{\dagger}=R_a$, the trace-adjointness of *The Adjoint of the Left Multiplication on a Linear Space*; the signed statement is the image of the unsigned one under the grade involution.
 
-**Proof.** $\mathrm{Sd}^{\mathrm{id}}^{\mathrm{id}}_{1,a}=R_a$ and $\Lambda^{\mathrm{id}}_{a}=L_a$.
+**Proof.** $\mathrm{Sd}_{\mathrm{id}}_{\mathrm{id},1,a}=R_a$ and $\Lambda_{\mathrm{id},a}=L_a$.
 
 **Corollary (self-adjointness).** $\Lambda^{\alpha}_{a}$ is self-adjoint, $(\Lambda^{\alpha}_{a})^{\dagger}=\Lambda^{\alpha}_{a}$, if and only if $a$ is central and even, $a \in Z(E)$ and $\alpha(a)=a$.
 

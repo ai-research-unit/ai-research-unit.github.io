@@ -8,11 +8,11 @@ $$
 w^{(r)}(\vec p)\,\exp(-ip\cdot x),\qquad v^{(r)}(\vec p)\,\exp(+ip\cdot x),\qquad r=1,2 .
 $$
 
-The second is an **excitation**: one quantum occupying such a mode, the state $a^{\mathrm{fop}\dagger}_r(\vec p)|0\rangle$, or a superposition of occupations. The mode function says *which* mode; the excitation says *how many* quanta the mode contains. The subject of this article is where each of the two lives in the biquaternion algebra $\mathbb{B}$, and in particular whether the informational sector $\mathbb{M}_+$ is their natural home.
+The second is an **excitation**: one quantum occupying such a mode, the state $a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle$, or a superposition of occupations. The mode function says *which* mode; the excitation says *how many* quanta the mode contains. The subject of this article is where each of the two lives in the biquaternion algebra $\mathbb{B}$, and in particular whether the informational sector $\mathbb{M}_+$ is their natural home.
 
 The answer has two parts, and the parts should be separated before any algebra is written.
 
-1. **The occupation state is in $\mathbb{M}_+$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde\Pi_-=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ and the density matrix $\tilde{Ϛ}$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
+1. **The occupation state is in $\mathbb{M}_+$, and this can be checked.** For one fermionic mode the occupation-number operator $\tilde\Pi_-=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ and the density matrix $\tilde{Ϛ}$ of the mode are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly. This is the assertion that "the informational sector carries the state", stated in the only form in which it is true.
 
 2. **The mode function is not in $\mathbb{M}_+$.** A mode function is a definite solution: one element of the space of solutions of the free equation. That solution space is a module over $\mathbb{B}$ (the spinor module, for the Dirac field) or, for the Maxwell potential and its polarizations, a subspace of the material sector $\mathbb{M}_-$. The only spinor of the Dirac solution space that is Hermitian is the Hermitian idempotent itself, a one-dimensional ray.
 
@@ -40,34 +40,34 @@ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ for $\mathbb{B}\tilde\Pi_+$, where th
 The Dirac field of the companion articles expands on the spinor module as
 
 $$
-\tilde{Ξ}^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
-\Big[a^{\mathrm{fop}}_r(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
-+b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
+\tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[a_{\mathrm{fop},r}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
 with the mode operators and spinors of the parent article. Each term of the expansion is a **mode function**: the positive-frequency mode functions are $w^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency ones $v^{(r)}(\vec p)\exp(+ip\cdot x)$. Three labels specify a mode function completely — the momentum $\vec p$, the spin index $r$, and the sign of the frequency — and the mode function is a solution of the free equation with those labels.
 
-The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}^{\mathrm{sp}}_0\exp(\tilde P\tilde{Q})$: the four-wavevector $\tilde P=i\omega/c\,e_t+\vec k$ is an element of the material sector $\mathbb{M}_-$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}^{\mathrm{sp}}_0$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{M}_+$.
+The word *definite* in "definite solution" means that the mode function is a single element of the solution space, not a general superposition. The general solution is the integral over all modes; a mode function is one basis vector of that integral. In the biquaternion interpretation of the parent article, a mode function is the module representative of a biquaternion plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp(\tilde P\tilde{Q})$: the four-wavevector $\tilde P=i\omega/c\,e_t+\vec k$ is an element of the material sector $\mathbb{M}_-$ (it appears in the table of four-vectors of *The Material Sector: Four-Vectors, Interval and Lorentz Action*), and the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is a spinor, i.e. an element of the module $\mathbb{B}\tilde\Pi_+$. Both pieces are therefore objects attached to the material sector and to the module. Neither is an element of the Hermitian subspace $\mathbb{M}_+$.
 
 The Maxwell case is structurally the same and algebraically simpler. The one-particle space at fixed momentum is the space of transverse polarization amplitudes, two real dimensions, and the companion photon article identifies the polarization directions with the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to the propagation direction $\vec u_k$. The mode function of the potential, $\varepsilon_\mu(\vec k)\exp(-ik\cdot x)$, is a four-vector with a definite **linear** polarization; its polarization vector is then a direction in $\mathbb{M}_-$. Again the definite solution lives on the material side. The photon article states the structural reason: the polarization directions are real spatial vectors and sit in the material sector, while the helicity operator is represented by the Hermitian element $i\vec u_k$ of $\mathbb{M}_+$ and is an *observable* of the mode, not the mode function itself.
 
-It is worth stating plainly what a mode function does not carry. It carries no occupation number. A single mode function is consistent with the vacuum, with one quantum, with two quanta (for a boson), and with any superposition of these; the expansion coefficient $a^{\mathrm{fop}}_r(\vec p)$ is precisely the datum that the mode function omits and the operator supplies. The mode function is the *label*; the occupation is the *coordinate* attached to the label. The two must be assigned to sectors separately, and the rest of the article does that.
+It is worth stating plainly what a mode function does not carry. It carries no occupation number. A single mode function is consistent with the vacuum, with one quantum, with two quanta (for a boson), and with any superposition of these; the expansion coefficient $a_{\mathrm{fop},r}(\vec p)$ is precisely the datum that the mode function omits and the operator supplies. The mode function is the *label*; the occupation is the *coordinate* attached to the label. The two must be assigned to sectors separately, and the rest of the article does that.
 
 ## The Excitation Is an Occupation
 
 An excitation is an occupation. Acting on the vacuum with a creation operator produces the state with one quantum in the chosen mode,
 
 $$
-|1_{\vec p,r}\rangle=a^{\mathrm{fop}\dagger}_r(\vec p)|0\rangle,
+|1_{\vec p,r}\rangle=a_{\mathrm{fop},r}^{\dagger}(\vec p)|0\rangle,
 $$
 
 and the occupation-number operator
 
 $$
-N=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\ a^{\mathrm{fop}\dagger}_r(\vec p)\,a^{\mathrm{fop}}_r(\vec p)
+N=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\ a_{\mathrm{fop},r}^{\dagger}(\vec p)\,a_{\mathrm{fop},r}(\vec p)
 $$
 
-counts the quanta, with $[N,a^{\mathrm{fop}\dagger}_r]=+a^{\mathrm{fop}\dagger}_r$ and $[N,a^{\mathrm{fop}}_r]=-a^{\mathrm{fop}}_r$. The excitation is not a solution of the wave equation and is not a mode function; it is a state in the many-particle space, and its defining datum is the integer eigenvalue of $N$.
+counts the quanta, with $[N,a_{\mathrm{fop},r}^{\dagger}]=+a_{\mathrm{fop},r}^{\dagger}$ and $[N,a_{\mathrm{fop},r}]=-a_{\mathrm{fop},r}$. The excitation is not a solution of the wave equation and is not a mode function; it is a state in the many-particle space, and its defining datum is the integer eigenvalue of $N$.
 
 For a single fermionic mode this can be reduced to an object of the finite-dimensional algebra, because $\mathbb{B}\cong M_2(\mathbb{C})$ is exactly the operator algebra of one fermionic mode. The parent Fock-space article exhibits the ladder operators in the algebra as the matrix units
 
@@ -99,10 +99,10 @@ The phrase "an excitation and its state" packs three different objects together,
 | Object | Definition | Algebraic home |
 |---|---|---|
 | Mode function | A definite solution $w^{(r)}(\vec p)\exp(-ip\cdot x)$ | Spinor module $\mathbb{B}\tilde\Pi_+$ (Dirac); $\mathrm{Vect}(\mathbb{M}_-)$ (Maxwell polarization) |
-| Excitation operator | $\vec\Upsilon_y$ (or $a^{\mathrm{fop}\dagger}_r(\vec p)$) | Neither $\mathbb{M}_+$ nor $\mathbb{M}_-$; not Hermitian |
+| Excitation operator | $\vec\Upsilon_y$ (or $a_{\mathrm{fop},r}^{\dagger}(\vec p)$) | Neither $\mathbb{M}_+$ nor $\mathbb{M}_-$; not Hermitian |
 | Occupation state | $\vert n\rangle$, or the density matrix $\tilde{Ϛ}$ | State vector: the module; density matrix and $\tilde\Pi_-$: $\mathbb{M}_+$ (one fermionic mode) |
 
-The third row is the assertion that needs care. The **state vector** $|\tilde{Ξ}^{\mathrm{sp}}\rangle=\alpha|0\rangle+\beta|1\rangle$ of one mode is an element of the two-dimensional occupation Hilbert space, which is the fundamental module $S\cong\mathbb{C}^2$, not the algebra; it is not an element of $\mathbb{M}_+$. It is the **density matrix**
+The third row is the assertion that needs care. The **state vector** $|\tilde{Ξ}_{\mathrm{sp}}\rangle=\alpha|0\rangle+\beta|1\rangle$ of one mode is an element of the two-dimensional occupation Hilbert space, which is the fundamental module $S\cong\mathbb{C}^2$, not the algebra; it is not an element of $\mathbb{M}_+$. It is the **density matrix**
 
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r\in\mathbb{R}^3,\quad |\vec r|\leq 1,
@@ -183,10 +183,10 @@ The mismatch is a real finding and is stated as one. It does not contradict the 
 
 The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{M}_+$.
 
-The spinor module is realized inside the algebra as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_1\tilde\Pi_++\tilde{Ξ}^{\mathrm{sp}}_2\vec\Upsilon_y$ with $\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde{Ξ}^{\mathrm{sp}*}=\overline{\tilde{Ξ}^{\mathrm{sp}}_1}\,\tilde\Pi_++\overline{\tilde{Ξ}^{\mathrm{sp}}_2}\,\vec\Upsilon_x$, using $\vec\Upsilon_y^{*}=\vec\Upsilon_x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde{Ξ}^{\mathrm{sp}*}=\tilde{Ξ}^{\mathrm{sp}}$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y$,
+The spinor module is realized inside the algebra as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},1}\tilde\Pi_++\tilde{Ξ}_{\mathrm{sp},2}\vec\Upsilon_y$ with $\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde{Ξ}_{\mathrm{sp}}^*=\overline{\tilde{Ξ}_{\mathrm{sp},1}}\,\tilde\Pi_++\overline{\tilde{Ξ}_{\mathrm{sp},2}}\,\vec\Upsilon_x$, using $\vec\Upsilon_y^{*}=\vec\Upsilon_x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde{Ξ}_{\mathrm{sp}}^*=\tilde{Ξ}_{\mathrm{sp}}$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y$,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_2=0\qquad\text{and}\qquad \tilde{Ξ}^{\mathrm{sp}}_1=\overline{\tilde{Ξ}^{\mathrm{sp}}_1}\ \ (\tilde{Ξ}^{\mathrm{sp}}_1\in\mathbb{R}).
+\tilde{Ξ}_{\mathrm{sp},2}=0\qquad\text{and}\qquad \tilde{Ξ}_{\mathrm{sp},1}=\overline{\tilde{Ξ}_{\mathrm{sp},1}}\ \ (\tilde{Ξ}_{\mathrm{sp},1}\in\mathbb{R}).
 $$
 
 So the intersection of the definite-solution space with the informational sector is
@@ -195,7 +195,7 @@ $$
 \boxed{\;\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\,\tilde\Pi_+\;},
 $$
 
-a single real line, spanned by the idempotent itself. This was checked directly on real, imaginary, and generic complex $(\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2)$: the only Hermitian spinors are the real multiples of $\tilde\Pi_+$. The upshot is sharp: away from the idempotent ray, a mode function is not an element of $\mathbb{M}_+$, and the representable definite solution that is Hermitian is exactly the pure state whose density matrix is $\tilde\Pi_+$.
+a single real line, spanned by the idempotent itself. This was checked directly on real, imaginary, and generic complex $(\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2})$: the only Hermitian spinors are the real multiples of $\tilde\Pi_+$. The upshot is sharp: away from the idempotent ray, a mode function is not an element of $\mathbb{M}_+$, and the representable definite solution that is Hermitian is exactly the pure state whose density matrix is $\tilde\Pi_+$.
 
 The Maxwell case is the same conclusion with a different home. The polarization vector of a **linearly polarized** mode function is a real spatial direction in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\vec u_k$, so it is in the material sector; the helicity observable, by contrast, is the Hermitian element $i\vec u_k\in\mathbb{M}_+$. Once more the definite solution is material and the operator is informational. The division is consistent across the two fields: the *solution* is on the configuration side (the module, or $\mathbb{M}_-$ for vectors), and the *operator* is on the Hermitian side.
 
@@ -222,9 +222,9 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal idempotents, Peirce idempotents; $i\vec e_z$ is a root of $+1$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Matrix units, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$ |
-| $\mathbb{B}\tilde\Pi_+=\{ \tilde{Ξ}^{\mathrm{sp}}_1\tilde\Pi_++\tilde{Ξ}^{\mathrm{sp}}_2\vec\Upsilon_y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$ |
+| $\mathbb{B}\tilde\Pi_+=\{ \tilde{Ξ}_{\mathrm{sp},1}\tilde\Pi_++\tilde{Ξ}_{\mathrm{sp},2}\vec\Upsilon_y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$ |
 | $w^{(r)}(\vec p)\exp(-ip\cdot x)$, $v^{(r)}(\vec p)\exp(+ip\cdot x)$ | Mode functions (positive/negative frequency) |
-| $a^{\mathrm{fop}\dagger}_r(\vec p)$, $a^{\mathrm{fop}}_r(\vec p)$ | Excitation (creation) and annihilation operators |
+| $a_{\mathrm{fop},r}^{\dagger}(\vec p)$, $a_{\mathrm{fop},r}(\vec p)$ | Excitation (creation) and annihilation operators |
 | $\vec\Upsilon_x=x$, $\vec\Upsilon_y=y$ | One-mode ladder operators in $\mathbb{B}$ |
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Occupation-number operator (idempotent, in $\mathbb{M}_+$) |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | Density matrix of one mode (Bloch ball $\subset\mathbb{M}_+$) |

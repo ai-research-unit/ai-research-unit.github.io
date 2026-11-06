@@ -7,7 +7,7 @@ Two orthonormal bases of a $d$-dimensional complex vector space are **mutually u
 In the biquaternion framework the bases of the defining module are the idempotent bases of the Hermitian subspace. A basis of rays is a complete family of orthogonal rank-one idempotents, $\{\tilde\Pi_i\}$ with $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$, and the Hilbert-space overlap between two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,
 
 $$
-\bigl|\langle \tilde{Ξ}^{\mathrm{sp}}|\xi^{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{sp}})\,\tilde\Pi(\xi^{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}^{\mathrm{sp}})\tilde\Pi(\xi^{\mathrm{alt}})\bigr).
+\bigl|\langle \tilde{Ξ}_{\mathrm{sp}}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\,\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}})\tilde\Pi(\xi_{\mathrm{alt}})\bigr).
 $$
 
 The mutual-unbiasedness condition therefore reads, in the algebra,
@@ -53,7 +53,7 @@ $$
 using $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}(i\vec e_\mu)=0$ and $\mathrm{Tr}((i\vec e_\mu)(i\vec e_\nu)) = 2\delta_{\mu\nu}$. In Hilbert-space terms this is the squared overlap
 
 $$
-\bigl|\langle \tilde{Ξ}^{\mathrm{sp}}(\vec u)|\tilde{Ξ}^{\mathrm{sp}}(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
+\bigl|\langle \tilde{Ξ}_{\mathrm{sp}}(\vec u)|\tilde{Ξ}_{\mathrm{sp}}(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
 $$
 
 which vanishes for antipodal directions and equals one for coincident directions. The normalised Hermitian form, read through the trace, is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
@@ -98,7 +98,7 @@ $$
 independently of the signs. In the Hilbert-space language,
 
 $$
-\bigl|\langle \tilde{Ξ}^{\mathrm{sp}}_s(\vec u_j)|\tilde{Ξ}^{\mathrm{sp}}_{s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
+\bigl|\langle \tilde{Ξ}_{\mathrm{sp},s}(\vec u_j)|\tilde{Ξ}_{\mathrm{sp},s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
 \qquad d=2 ,
 $$
 
@@ -220,7 +220,7 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\tilde\Pi_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
 $$
 
-not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}^{\mathrm{sp}}\rangle\otimes|\tilde{Ξ}^{\mathrm{sp}}\rangle|^2 = \tfrac12$ for any product state. Hence **the Bell basis is not mutually unbiased with respect to the product basis**, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally *biased* with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.
+not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}_{\mathrm{sp}}\rangle\otimes|\tilde{Ξ}_{\mathrm{sp}}\rangle|^2 = \tfrac12$ for any product state. Hence **the Bell basis is not mutually unbiased with respect to the product basis**, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally *biased* with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.
 
 ## What the Framework Does and Does Not Add
 

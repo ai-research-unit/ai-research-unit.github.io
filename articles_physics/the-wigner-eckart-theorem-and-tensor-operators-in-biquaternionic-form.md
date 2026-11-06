@@ -180,17 +180,17 @@ $$
 \mathrm{ad}_{\tilde S_k}(i\vec e_l)=[\tilde S_k,i\vec e_l]=i\hbar\,\epsilon_{klm}\,(ie_m),
 $$
 
-so that $\tilde S^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$ on $W$ is a spin-$1$ angular momentum. The vector element $i\vec e_k$ acts on $W$ by its own adjoint action, and
+so that $\tilde S_{\mathrm{adj},k}^{()}=\mathrm{ad}_{\tilde S_k}$ on $W$ is a spin-$1$ angular momentum. The vector element $i\vec e_k$ acts on $W$ by its own adjoint action, and
 
 $$
 \mathrm{ad}_{i\vec e_k}(i\vec e_l)=[i\vec e_k,i\vec e_l]=i^2[\vec e_k,\vec e_l]=-2\epsilon_{klm}e_m=2i\,\epsilon_{klm}(ie_m)
-=\frac{2}{\hbar}\,\tilde S^{(\mathrm{adj})}_k(i\vec e_l),
+=\frac{2}{\hbar}\,\tilde S_{\mathrm{adj},k}^{()}(i\vec e_l),
 $$
 
-that is, $\mathrm{ad}_{i\vec e_k}=\frac{2}{\hbar}\tilde S^{(\mathrm{adj})}_k$ as operators on $W$. The vector element $i\vec e_k$ is therefore a rank-$1$ tensor operator on $W$, proportional to the angular momentum, and the Wigner–Eckart theorem gives its reduced matrix element with no further input:
+that is, $\mathrm{ad}_{i\vec e_k}=\frac{2}{\hbar}\tilde S_{\mathrm{adj},k}^{()}$ as operators on $W$. The vector element $i\vec e_k$ is therefore a rank-$1$ tensor operator on $W$, proportional to the angular momentum, and the Wigner–Eckart theorem gives its reduced matrix element with no further input:
 
 $$
-\langle 1\|\,\mathrm{ad}_{ie}\,\|1\rangle=\frac{2}{\hbar}\,\langle 1\|\tilde S^{(\mathrm{adj})}\|1\rangle=\frac{2}{\hbar}\cdot\sqrt2\,\hbar=2\sqrt2 .
+\langle 1\|\,\mathrm{ad}_{ie}\,\|1\rangle=\frac{2}{\hbar}\,\langle 1\|\tilde S_{\mathrm{adj}}^{()}\|1\rangle=\frac{2}{\hbar}\cdot\sqrt2\,\hbar=2\sqrt2 .
 $$
 
 A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_3}$, with the spherical components $(\tilde V)^{(1)}_{\mu}$ of the previous section and the $1\otimes1$ Clebsch–Gordan coefficients, confirms that the ratio of every matrix element to its Clebsch–Gordan coefficient takes the constant value $2\sqrt2$ in the Condon–Shortley $m$-basis of the adjoint multiplet; a different phase convention for the $|m\rangle$ would flip signs while leaving the modulus fixed. This is the framework's own worked example of the theorem: the operator and the multiplet lie inside the algebra and its adjoint action, and only the Clebsch–Gordan coefficients are imported.
@@ -278,7 +278,7 @@ The article established the following.
 - **The algebra's own tensor operator.** The adjoint action $x\mapsto[\tilde S_i,x]$ is a derivation; on the imaginary units $[\tilde S_i,i\vec e_k]=i\hbar\epsilon_{ikl}(i\vec e_l)$, so $\tilde V_k=i\vec e_k$ is a rank-$1$ tensor operator with $(\tilde V)^{(1)}_{\pm1}=\mp\tfrac{\sqrt2}{\hbar}\tilde S_\pm$. A Hermitian element splits as $\tilde R_\psi=c r_t\,e_t+iv_k\vec e_k$, a rank-$0$ plus a rank-$1$ piece, and $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ under the adjoint action.
 - **The ceiling.** A single factor of $\mathbb{B}$ carries only tensor operators of ranks $0$ and $1$; rank $k\ge2$ requires a product of $k$ vector operators, hence a tensor power of the algebra.
 - **The theorem.** $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}=\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$, with selection rules $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$ and $|s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
-- **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(s_{\mathrm{fin}},s_{\mathrm{tot}})=(1,1),(0,1),(1,0)$ in units $\hbar=1$, independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\hbar$. For the algebra's own vector operator $i\vec e_k$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{i\vec e_k}=\tfrac{2}{\hbar}\tilde S^{(\mathrm{adj})}_k$ and the reduced matrix element is $2\sqrt2$ (units $\hbar=1$).
+- **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(s_{\mathrm{fin}},s_{\mathrm{tot}})=(1,1),(0,1),(1,0)$ in units $\hbar=1$, independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\hbar$. For the algebra's own vector operator $i\vec e_k$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{i\vec e_k}=\tfrac{2}{\hbar}\tilde S_{\mathrm{adj},k}^{()}$ and the reduced matrix element is $2\sqrt2$ (units $\hbar=1$).
 - **Examples.** Within a multiplet a vector operator is proportional to $\tilde S_{\mathrm{tot}}$, with the constant fixed by the ratio of reduced matrix elements; coupling two vector operators by the $1\otimes1\to2$ coefficients produces a rank-$2$ tensor operator, whose $\mu=0$ member for the spin is the quadrupole $\tfrac{1}{\sqrt6}(3\tilde S_3^2-\tilde S^2)$, with coherent-state expectation $\tfrac{1}{\sqrt6}P_2(\cos\theta)$.
 - **Trace form.** The Born rule $\mathrm{Tr}(\tilde\Pi\tilde R_\psi^{*})=2\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*})$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
 

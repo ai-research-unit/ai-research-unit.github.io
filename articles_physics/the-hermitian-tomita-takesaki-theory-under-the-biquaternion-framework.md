@@ -159,28 +159,28 @@ $$
 $$
 is
 $$
-S_0^*(\tilde Q_1) = e^{-\tilde K^{\mathrm{mod}}}\,\tilde Q_1^{*}\,e^{\tilde K^{\mathrm{mod}}},
+S_0^*(\tilde Q_1) = e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1^{*}\,e^{\tilde K_{\mathrm{mod}}},
 $$
 whence
 $$
-\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = e^{-\tilde K^{\mathrm{mod}}}\,\tilde{Q}_3\,e^{\tilde K^{\mathrm{mod}}}, \qquad
-\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K^{\mathrm{mod}}/2}\;}.
+\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = e^{-\tilde K_{\mathrm{mod}}}\,\tilde{Q}_3\,e^{\tilde K_{\mathrm{mod}}}, \qquad
+\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}/2}\;}.
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{Q}_3) = e^{-\tilde K^{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K^{\mathrm{mod}}/2}.
+J(\tilde{Q}_3) = e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2}.
 $$
 The **modular flow** is
 $$
-\boxed{\;\sigma_{r'_{t}}(\tilde{Q}_3) = \Delta^{ir'_t}\tilde{Q}_3\Delta^{ir'_t*} = e^{-ir'_t\tilde K^{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K^{\mathrm{mod}}}\;},
+\boxed{\;\sigma_{r'_{t}}(\tilde{Q}_3) = \Delta^{ir'_t}\tilde{Q}_3\Delta^{ir'_t*} = e^{-ir'_t\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K_{\mathrm{mod}}}\;},
 $$
 which is an **inner** automorphism of $\mathbb{B}$, implemented by the $*$-unitary $\tilde{Ϛ}^{ir'_t}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{r'_{t}}(\tilde{Q}_3^{*})=\sigma_{r'_{t}}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
-\tilde{K}^{\mathrm{mod}} := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
+\tilde{K}_{\mathrm{mod}} := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
 $$
-one has $\tilde{Ϛ}^{ir'_t}=\exp(-ir'_t\tilde{K}^{\mathrm{mod}})$ and
+one has $\tilde{Ϛ}^{ir'_t}=\exp(-ir'_t\tilde{K}_{\mathrm{mod}})$ and
 $$
-\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-ir'_t\tilde{K}^{\mathrm{mod}})\tilde{Q}_3\,\exp(ir'_t\tilde{K}^{\mathrm{mod}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde{Q}_3].
+\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-ir'_t\tilde{K}_{\mathrm{mod}})\tilde{Q}_3\,\exp(ir'_t\tilde{K}_{\mathrm{mod}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3].
 $$
 
 ### The Identities, Verified
@@ -195,7 +195,7 @@ $$
 $$
 Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
-\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
+\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
@@ -203,7 +203,7 @@ with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is delibera
 
 A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde R_\psi=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde R_\psi+(\log Z)e_t,
+\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde R_\psi+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.
 
@@ -225,13 +225,13 @@ for which
 $$
 \Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_{r'_{t}}=\mathrm{id} :
 $$
-the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta H)/\mathrm{Tr}(\exp(-\beta H))$ with $\tilde R_\psi\in\mathbb{M}_+$, and for those $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
+the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta H)/\mathrm{Tr}(\exp(-\beta H))$ with $\tilde R_\psi\in\mathbb{M}_+$, and for those $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
 ## The Type of the Algebra and Inner Versus Outer Modular Flow
 
 The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the $*$-unitary $\tilde{Ϛ}^{ir'_t}$ inside $\mathbb{B}$,
 $$
-\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K^{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K^{\mathrm{mod}}},\qquad \tilde{Ϛ}^{ir'_t}\in\mathbb{B}.
+\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K_{\mathrm{mod}}},\qquad \tilde{Ϛ}^{ir'_t}\in\mathbb{B}.
 $$
 No object outside the algebra is needed to implement it. This is the generic behavior of a semifinite factor: **for a semifinite factor the modular flow of any faithful normal state is inner for every $r'_t$.**
 
@@ -264,9 +264,9 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 **Established (recomputed here).**
 
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
-- $\Delta(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K^{\mathrm{mod}}}$, $\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K^{\mathrm{mod}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K^{\mathrm{mod}}/2}$, $\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K^{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K^{\mathrm{mod}}}$.
-- $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde{K}^{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
-- $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}^{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$, matching the parent and partition-function articles.
+- $\Delta(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}}$, $\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2}$, $\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K_{\mathrm{mod}}}$.
+- $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
+- $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}_{\mathrm{mod}}=\beta\tilde R_\psi+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{ir'_t}\in\mathbb{B}$.
 
 **Interpretation.**
@@ -290,9 +290,9 @@ S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},
 $$
 and the polar decomposition is
 $$
-\boxed{\;\Delta(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K^{\mathrm{mod}}},\qquad
-J(\tilde{Q}_3)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K^{\mathrm{mod}}/2},\qquad
-\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K^{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K^{\mathrm{mod}}}\;}.
+\boxed{\;\Delta(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}},\qquad
+J(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2},\qquad
+\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{ir'_t\tilde K_{\mathrm{mod}}}\;}.
 $$
 The identities $J^2=1$, $J\Delta J\Delta=1$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
@@ -317,7 +317,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $\sigma_{r'_{t}}(A)=\Delta^{ir'_t}A\Delta^{ir'_t*}$ | Modular automorphism group |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
 | $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
-| $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
+| $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(r'_t+i)=F_{BA}(-r'_t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $r'_t\mapsto[\sigma_{r'_{t}}]$ |
 

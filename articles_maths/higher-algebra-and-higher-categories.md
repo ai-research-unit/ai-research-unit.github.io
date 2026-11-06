@@ -29,13 +29,13 @@ Throughout, $\infty$-category means $(\infty,1)$-category: all $k$-morphisms for
 
 ### Complete Segal Spaces
 
-**Definition.** A **Segal space** is a simplicial space $X : \Delta^{\mathrm{opp}} \to \mathbf{sSet}$, $[n]\mapsto X_n$, such that the **Segal maps**
+**Definition.** A **Segal space** is a simplicial space $X : \Delta_{\mathrm{opp}} \to \mathbf{sSet}$, $[n]\mapsto X_n$, such that the **Segal maps**
 
 $$
 \boxed{\;X_n \longrightarrow X_1 \times_{X_0} X_1 \times_{X_0} \cdots \times_{X_0} X_1 \qquad (n \text{ factors})\;}
 $$
 
-are weak equivalences of simplicial sets for $n \geq 2$, the fibre products being taken over the face maps $X_1 \to X_0$. A **complete Segal space** is a Segal space such that the map $X_0 \to X_1^{\mathrm{eq}}$, from the objects to the space of equivalences, is a weak equivalence, where $X_1^{\mathrm{eq}} \subseteq X_1$ is the union of the components of $X_1$ whose images in $\pi_0$ are isomorphisms.
+are weak equivalences of simplicial sets for $n \geq 2$, the fibre products being taken over the face maps $X_1 \to X_0$. A **complete Segal space** is a Segal space such that the map $X_0 \to X_{\mathrm{eq},1}$, from the objects to the space of equivalences, is a weak equivalence, where $X_{\mathrm{eq},1} \subseteq X_1$ is the union of the components of $X_1$ whose images in $\pi_0$ are isomorphisms.
 
 **Remark.** The Segal condition says that an $n$-simplex of the $\infty$-category is precisely a composable chain of $n$ morphisms together with the composites and their higher coherence; the completeness condition says that the only invertible $1$-morphisms between a given pair are the ones exhibiting an identity, which is what forces the objects to be recovered from the morphisms.
 
@@ -79,7 +79,7 @@ are weak equivalences of simplicial sets for $n \geq 2$, the fibre products bein
 
 ### Monoidal Structures
 
-**Definition.** A **monoidal $\infty$-category** is a coCartesian fibration $\mathcal{C}^\otimes \to \Delta^{\mathrm{opp}}$ satisfying the Segal conditions, whose fibre over $[1]$ is $\mathcal{C}$ and over $[0]$ a point; this packages the tensor product, its unit, associativity and the coherence data of the associator, unitors and higher coherences of Mac Lane. A **symmetric monoidal** structure replaces $\Delta^{\mathrm{opp}}$ by the category $\mathbf{Fin}_*$ of finite pointed sets.
+**Definition.** A **monoidal $\infty$-category** is a coCartesian fibration $\mathcal{C}^\otimes \to \Delta_{\mathrm{opp}}$ satisfying the Segal conditions, whose fibre over $[1]$ is $\mathcal{C}$ and over $[0]$ a point; this packages the tensor product, its unit, associativity and the coherence data of the associator, unitors and higher coherences of Mac Lane. A **symmetric monoidal** structure replaces $\Delta_{\mathrm{opp}}$ by the category $\mathbf{Fin}_*$ of finite pointed sets.
 
 **Example.** The $\infty$-category of spectra with the smash product is symmetric monoidal; so is the $\infty$-category of chain complexes with the tensor product, and the $\infty$-category of spaces with the cartesian product. The homotopy category of a symmetric monoidal $\infty$-category is a symmetric monoidal category in the ordinary sense, but the converse fails: symmetric monoidal structures do not in general lift from homotopy categories, and the obstruction is the higher coherence.
 

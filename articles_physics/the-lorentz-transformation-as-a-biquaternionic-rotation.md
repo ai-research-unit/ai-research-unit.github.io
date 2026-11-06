@@ -12,7 +12,7 @@ This article develops the biquaternionic formulation of the Lorentz transformati
 
 The article is organized as follows. First the $i c r'_t$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities. A pure boost is written $\tilde U_{\mathrm b}$, the rotation factor $\tilde u_{\mathrm r}$, and the general rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost formulas below are the case $\tilde u_{\mathrm r}=e_t$, and a general transformation is recovered by multiplying the boost on the right by the rotation.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities. A pure boost is written $\tilde U_{\mathrm b}$, the rotation factor $\tilde u_{\mathrm r}$, and the general rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost formulas below are the case $\tilde u_{\mathrm r}=e_t$, and a general transformation is recovered by multiplying the boost on the right by the rotation.
 
 ## The $i c r'_t$ Convention and the Euclidean Metric
 
@@ -46,7 +46,7 @@ This is the precise sense in which the Lorentz transformation is a rotation: it 
 
 The statement "the Lorentz transformation is a rotation" requires care, because we are working over the complex numbers. The key points:
 
-**1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x_0, x_1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x_0, x_1)$ plane. Substituting $\theta = i\theta^{\mathrm{rpd}}$ (imaginary angle) gives $\cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{01}$, which is the **boost** rotor in the $(x_0, x_1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\theta^{\mathrm{rpd}}$ (the rapidity) is the "imaginary angle" of the rotation.
+**1. The rotation angle is imaginary.** A boost is a rotation by an **imaginary angle** in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x_0, x_1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x_0, x_1)$ plane. Substituting $\theta = i\theta_{\mathrm{rpd}}$ (imaginary angle) gives $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{01}$, which is the **boost** rotor in the $(x_0, x_1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\theta_{\mathrm{rpd}}$ (the rapidity) is the "imaginary angle" of the rotation.
 
 **2. The bilinear form is complex.** The quantity preserved by the rotation is the general plain bilinear form $(x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
 
@@ -59,12 +59,12 @@ The biquaternion algebra $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ is the natural h
 The Lorentz boost is generated by the **boost biquaternion**
 
 $$
-\boxed{\;\tilde U_{\mathrm b} = \exp\!\left(\frac{\theta^{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\;}
+\boxed{\;\tilde U_{\mathrm b} = \exp\!\left(\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\;}
 $$
 
 where:
 
-- $\theta^{\mathrm{rpd}}$ is the **rapidity** of the boost,
+- $\theta_{\mathrm{rpd}}$ is the **rapidity** of the boost,
 - $\vec u_{\mathrm b}$ is the unit vector in the direction of the boost,
 - $i$ is the scalar imaginary,
 - the exponential is taken in the biquaternion algebra.
@@ -72,7 +72,7 @@ where:
 The rapidity is related to the velocity $\vec v_b = v_b\,\vec u_{\mathrm b}$ of the boost by
 
 $$
-\cosh\theta^{\mathrm{rpd}} = \gamma, \qquad \sinh\theta^{\mathrm{rpd}} = \gamma\frac{v_b}{c}, \qquad \tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
+\cosh\theta_{\mathrm{rpd}} = \gamma, \qquad \sinh\theta_{\mathrm{rpd}} = \gamma\frac{v_b}{c}, \qquad \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
 where
@@ -87,36 +87,36 @@ is the Lorentz factor.
 
 The boost biquaternion $\tilde U_{\mathrm b}$ has the following properties.
 
-**1. It lies in the Hermitian subspace $\mathbb{M}_+$.** The scalar part $\cosh(\theta^{\mathrm{rpd}}/2)$ is **real**, and the vector part $i\sinh(\theta^{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is **purely imaginary**. So $\tilde U_{\mathrm b} \in \mathbb{M}_+$.
+**1. It lies in the Hermitian subspace $\mathbb{M}_+$.** The scalar part $\cosh(\theta_{\mathrm{rpd}}/2)$ is **real**, and the vector part $i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is **purely imaginary**. So $\tilde U_{\mathrm b} \in \mathbb{M}_+$.
 
 **2. It is Hermitian.** Since $\tilde U_{\mathrm b} \in \mathbb{M}_+$, its Hermitian conjugate is
 
 $$
-\tilde U_{\mathrm b}^{*} = \overline{\tilde U_{\mathrm b}^{\natural}} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = \tilde U_{\mathrm b}.
+\tilde U_{\mathrm b}^{*} = \overline{\tilde U_{\mathrm b}^{\natural}} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = \tilde U_{\mathrm b}.
 $$
 
 **3. It has unit norm.** The biquaternion norm is
 
 $$
-\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \left(\cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right)\left(\cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right) = \cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - \left(i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\right)^2\vec u_{\mathrm b}^2.
+\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \left(\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right)\left(\cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right) = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - \left(i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\right)^2\vec u_{\mathrm b}^2.
 $$
 
-Since $\vec u_{\mathrm b}^2 = -e_t$ and $(i\sinh\frac{\theta^{\mathrm{rpd}}}{2})^2 = -\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}$, the second term is $-\left(-\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\right)(-e_t) = -\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}e_t$. So
+Since $\vec u_{\mathrm b}^2 = -e_t$ and $(i\sinh\frac{\theta_{\mathrm{rpd}}}{2})^2 = -\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}$, the second term is $-\left(-\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\right)(-e_t) = -\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}e_t$. So
 
 $$
-\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \left(\cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta^{\mathrm{rpd}}}{2}\right)e_t = e_t.
+\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \left(\cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta_{\mathrm{rpd}}}{2}\right)e_t = e_t.
 $$
 
 **4. It is a rotor.** In geometric algebra, a **rotor** is an even element that generates a rotation by conjugation. The boost biquaternion $\tilde U_{\mathrm b}$ is the biquaternion form of the Lorentz rotor, and its conjugation action $\tilde{Q} \mapsto \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$ implements the Lorentz transformation on four-vectors.
 
 ### Why the Imaginary Unit Appears
 
-The key feature of the boost biquaternion is that the vector part is **purely imaginary** — it is $i\sinh(\theta^{\mathrm{rpd}}/2)\vec u_{\mathrm b}$, not $\sinh(\theta^{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. The imaginary unit $i$ is what makes the transformation a **boost** rather than a **spatial rotation**.
+The key feature of the boost biquaternion is that the vector part is **purely imaginary** — it is $i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$, not $\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. The imaginary unit $i$ is what makes the transformation a **boost** rather than a **spatial rotation**.
 
 Compare:
 
 - **Spatial rotation** about an axis $\vec u_{\mathrm r}$ by angle $\theta$: the rotor is $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, with a **real** vector part.
-- **Boost** along a direction $\vec u_{\mathrm b}$ with rapidity $\theta^{\mathrm{rpd}}$: the rotor is $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, with a **purely imaginary** vector part.
+- **Boost** along a direction $\vec u_{\mathrm b}$ with rapidity $\theta_{\mathrm{rpd}}$: the rotor is $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, with a **purely imaginary** vector part.
 
 Both are rotors in the sense of geometric algebra, both satisfy the unit-norm condition, and both act by conjugation. The difference is the **sign** of the vector part squared:
 
@@ -133,7 +133,7 @@ $$
 \boxed{\;\tilde{Q}_2 = \tilde U_{\mathrm b}\,\tilde{Q}\,\tilde U_{\mathrm b}^{*}\;}
 $$
 
-For a pure boost, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ (Hermitian rotor), so the conjugation reduces to $\tilde{Q}_2 = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$. For a general Lorentz transformation (boost plus spatial rotation), $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is not Hermitian and the formula $\tilde{Q}_2 = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ must be used.
+For a pure boost, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ (Hermitian rotor), so the conjugation reduces to $\tilde{Q}_2 = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$. For a general Lorentz transformation (boost plus spatial rotation), $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is not Hermitian and the formula $\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ must be used.
 
 The same conjugation applies to any four-vector, i.e., to any element of the anti-Hermitian subspace $\mathbb{M}_-$:
 
@@ -166,7 +166,7 @@ so the product of two rotors generates the composition of the two Lorentz transf
 The rotor conjugation is written above for four-vectors, and it is worth stating that it is defined on **every** biquaternion, because that is what the field-theory articles need. Put
 
 $$
-Ξ_{\tilde U^{\mathrm{lor}}}(\tilde{Q}_1) := \tilde U^{\mathrm{lor}}\,\tilde{Q}_1\,\tilde U^{\mathrm{lor}}{}^{*}
+Ξ_{\tilde U_{\mathrm{lor}}}(\tilde{Q}_1) := \tilde U_{\mathrm{lor}}\,\tilde{Q}_1\,\tilde U_{\mathrm{lor}}{}^{*}
 \qquad\text{for any } \tilde{Q}_1 \in \mathbb{B}.
 $$
 
@@ -175,28 +175,28 @@ Three properties follow from the fact that ${}^{*}$ is an involution and reverse
 **It preserves both sectors.** If $\tilde{Q}_1^{*} = \pm\tilde{Q}_1$ then
 
 $$
-\bigl(\tilde U^{\mathrm{lor}}\tilde{Q}_1\tilde U^{\mathrm{lor}}{}^{*}\bigr)^{\dagger}
-= \tilde U^{\mathrm{lor}}\,\tilde{Q}_1^{*}\,\tilde U^{\mathrm{lor}}{}^{*}
-= \pm\,\tilde U^{\mathrm{lor}}\tilde{Q}_1\tilde U^{\mathrm{lor}}{}^{*},
+\bigl(\tilde U_{\mathrm{lor}}\tilde{Q}_1\tilde U_{\mathrm{lor}}{}^{*}\bigr)^{\dagger}
+= \tilde U_{\mathrm{lor}}\,\tilde{Q}_1^{*}\,\tilde U_{\mathrm{lor}}{}^{*}
+= \pm\,\tilde U_{\mathrm{lor}}\tilde{Q}_1\tilde U_{\mathrm{lor}}{}^{*},
 $$
 
-so $Ξ_{\tilde U^{\mathrm{lor}}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself.
+so $Ξ_{\tilde U_{\mathrm{lor}}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself.
 
 **It is not an algebra automorphism.** For a product,
 
 $$
-Ξ_{\tilde U^{\mathrm{lor}}}(\tilde{Q}_1\tilde{Q}_2) = \tilde U^{\mathrm{lor}}\tilde{Q}_1\tilde{Q}_2\tilde U^{\mathrm{lor}}{}^{*},
+Ξ_{\tilde U_{\mathrm{lor}}}(\tilde{Q}_1\tilde{Q}_2) = \tilde U_{\mathrm{lor}}\tilde{Q}_1\tilde{Q}_2\tilde U_{\mathrm{lor}}{}^{*},
 \qquad
-Ξ_{\tilde U^{\mathrm{lor}}}(\tilde{Q}_1)\,Ξ_{\tilde U^{\mathrm{lor}}}(\tilde{Q}_2) = \tilde U^{\mathrm{lor}}\tilde{Q}_1\,\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}\,\tilde{Q}_2\tilde U^{\mathrm{lor}}{}^{*},
+Ξ_{\tilde U_{\mathrm{lor}}}(\tilde{Q}_1)\,Ξ_{\tilde U_{\mathrm{lor}}}(\tilde{Q}_2) = \tilde U_{\mathrm{lor}}\tilde{Q}_1\,\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}\,\tilde{Q}_2\tilde U_{\mathrm{lor}}{}^{*},
 $$
 
-and these differ by the insertion of $\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}$. They agree exactly when $\tilde U^{\mathrm{lor}}{}^{*} = \tilde U^{\mathrm{lor}}{}^{-1}$, that is, when $\tilde U^{\mathrm{lor}}$ is a **real** quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{Q}_1\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}_1\tilde U^{\mathrm{lor}}{}^{-1}$.
+and these differ by the insertion of $\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}$. They agree exactly when $\tilde U_{\mathrm{lor}}{}^{*} = \tilde U_{\mathrm{lor}}{}^{-1}$, that is, when $\tilde U_{\mathrm{lor}}$ is a **real** quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{Q}_1\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}_1\tilde U_{\mathrm{lor}}{}^{-1}$.
 
-**It does not fix the centre.** The same fact shows where the formula must not be used. On a central scalar, $Ξ_{\tilde U^{\mathrm{lor}}}(b\,e_t) = b\,\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{*}$, which is not central in general; for a boost $\tilde U_{\mathrm b}$ it equals $b\,\tilde U_{\mathrm b}^2$ and has a vector part proportional to $\vec u_{\mathrm b}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.
+**It does not fix the centre.** The same fact shows where the formula must not be used. On a central scalar, $Ξ_{\tilde U_{\mathrm{lor}}}(b\,e_t) = b\,\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{*}$, which is not central in general; for a boost $\tilde U_{\mathrm b}$ it equals $b\,\tilde U_{\mathrm b}^2$ and has a vector part proportional to $\vec u_{\mathrm b}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.
 
 ### Verification Against Component Formulas
 
-The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A$, and apply the rotor conjugation with $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$.
+The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\,a'_t\,e_t + \vec A$, and apply the rotor conjugation with $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$.
 
 The scalar part of $\tilde{A}_2$ is
 
@@ -204,7 +204,7 @@ $$
 \mathrm{Sc}(\tilde U_{\mathrm b}\tilde{A}\tilde U_{\mathrm b}^{*}) = i\gamma\left(\frac{\xi}{c} - \frac{\vec v_b\cdot\vec A}{c}\right) = i\frac{\xi_2}{c},
 $$
 
-where the standard relations $\cosh\theta^{\mathrm{rpd}} = \gamma$ and $\sinh\theta^{\mathrm{rpd}} = \gamma v_b/c$ have been used. This gives
+where the standard relations $\cosh\theta_{\mathrm{rpd}} = \gamma$ and $\sinh\theta_{\mathrm{rpd}} = \gamma v_b/c$ have been used. This gives
 
 $$
 \xi_2 = \gamma(\xi - \vec v_b\cdot\vec A),
@@ -249,10 +249,10 @@ $$
 On the other hand, the square of the boost biquaternion is
 
 $$
-\tilde U_{\mathrm b}^2 = \exp\!\left(\theta^{\mathrm{rpd}}\,i\vec u_{\mathrm b}\right) = \cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u_{\mathrm b} = \gamma + i\gamma\frac{\vec v}{c},
+\tilde U_{\mathrm b}^2 = \exp\!\left(\theta_{\mathrm{rpd}}\,i\vec u_{\mathrm b}\right) = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b} = \gamma + i\gamma\frac{\vec v}{c},
 $$
 
-where the identification $\vec u_{\mathrm b} = \vec u_v$ (boost direction aligned with particle velocity) and the relations $\cosh\theta^{\mathrm{rpd}} = \gamma$, $\sinh\theta^{\mathrm{rpd}} = \gamma v/c$ have been used.
+where the identification $\vec u_{\mathrm b} = \vec u_v$ (boost direction aligned with particle velocity) and the relations $\cosh\theta_{\mathrm{rpd}} = \gamma$, $\sinh\theta_{\mathrm{rpd}} = \gamma v/c$ have been used.
 
 Comparing the two expressions,
 
@@ -273,7 +273,7 @@ The formula $\tilde U_{\mathrm b} = \sqrt{-i\tilde{V}^{\natural}/c}$ says:
 - The **four-velocity** $\tilde{V}$ describes the state of motion of a particle or frame.
 - The **boost biquaternion** $\tilde U_{\mathrm b}$ is the "square root" of the (quaternion conjugate of the) unit four-velocity, up to a factor of $-i/c$.
 
-The square root is **multivalued by sign**: both $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ square to the same biquaternion. The two branches implement the **same** Lorentz transformation, since $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ differ by the kernel element $-1$ of the two-to-one map $SL(2,\mathbb{C}) \to SO^+(1,3)$; the boost by $-\theta^{\mathrm{rpd}}$ is a different element, the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$. The conventional branch is selected by requiring the real scalar part of $\tilde U_{\mathrm b}$ to be positive, i.e., $\cosh(\theta^{\mathrm{rpd}}/2) > 0$.
+The square root is **multivalued by sign**: both $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ square to the same biquaternion. The two branches implement the **same** Lorentz transformation, since $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ differ by the kernel element $-1$ of the two-to-one map $SL(2,\mathbb{C}) \to SO^+(1,3)$; the boost by $-\theta_{\mathrm{rpd}}$ is a different element, the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$. The conventional branch is selected by requiring the real scalar part of $\tilde U_{\mathrm b}$ to be positive, i.e., $\cosh(\theta_{\mathrm{rpd}}/2) > 0$.
 
 ### The Closed-Form Rotor and the Bisector Property
 
@@ -323,13 +323,13 @@ The general Lorentz transformation is the product of a boost and a rotation, and
 
 The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three interpretations, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.
 
-**Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}_2 = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$, with $\tilde U^{\mathrm{lor}}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde U^{\mathrm{lor}}{}^{-1}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{-{}^{*}}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors, the Lorentz rotors $\tilde U^{\mathrm{lor}}_{1}$ and $\tilde U^{\mathrm{lor}}_{2}$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
+**Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$, with $\tilde U_{\mathrm{lor}}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde U_{\mathrm{lor}}{}^{-1}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{-{}^{*}}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors, the Lorentz rotors $\tilde U_{\mathrm{lor},1}$ and $\tilde U_{\mathrm{lor},2}$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
 
 $$
 \tilde U_{\mathrm b,2\leftarrow1} = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}^{-1}
 $$
 
-carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U^{\mathrm{lor}}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
+carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U_{\mathrm{lor}}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
 **The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\hat{\mathcal E}_\mu\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are
 
@@ -339,12 +339,12 @@ $$
 \hat{\mathcal E}_0 = e_t,\quad \hat{\mathcal E}_k = -\vec e_k,
 $$
 
-the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $i c r'_t$, the pair $(q_0, q_k) = (i c r'_t, x_k)$ is the coordinate quadruple. Given a rotor $\tilde U^{\mathrm{lor}}$, the components transform as
+the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $i c r'_t$, the pair $(q_0, q_k) = (i c r'_t, x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm{lor}}$, the components transform as
 
 $$
 q_{2\mu} = \sum_{\nu} \Lambda_{\mu\nu}\, q_{\nu},
 \qquad
-\Lambda_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U^{\mathrm{lor}}\,\mathcal{E}_{\nu}\,\tilde U^{\mathrm{lor}}{}^{*}\right),
+\Lambda_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm{lor}}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm{lor}}{}^{*}\right),
 $$
 
 and the matrix $\Lambda_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis, the same one the opening line calls $\Lambda_{\mu\nu}$.
@@ -388,7 +388,7 @@ That sentence is the one that matters for the corpus. The two postulates of 1905
 The formal derivation above decides neither of the two things the experiments decide:
 
 1. **The angle.** Nothing in the algebra forces the boost's rotation angle to be imaginary; that is what the constancy of $c$ forces, at second order, and the first-order experiments place the same constraint on the velocity-addition law.
-2. **The parameterisation.** The rapidity $\theta^{\mathrm{rpd}}$, with $\tanh\theta^{\mathrm{rpd}} = v_b/c$ and the $\cosh(\theta^{\mathrm{rpd}}/2)$ and $\sinh(\theta^{\mathrm{rpd}}/2)$ of the boost biquaternion, is an interpretation of the experiments and not of the algebra.
+2. **The parameterisation.** The rapidity $\theta_{\mathrm{rpd}}$, with $\tanh\theta_{\mathrm{rpd}} = v_b/c$ and the $\cosh(\theta_{\mathrm{rpd}}/2)$ and $\sinh(\theta_{\mathrm{rpd}}/2)$ of the boost biquaternion, is an interpretation of the experiments and not of the algebra.
 
 Conversely, the experiments do not decide between the biquaternion formulation and the matrix one. They are experiments on the group, and a faithful representation cannot fail them; a reformulation must be judged by what it predicts beyond the group. That is the same point the empirical-status article makes from the other direction.
 
@@ -402,9 +402,9 @@ The Lorentz transformation is a **real** transformation of the real coordinates 
 
 The complex nature of the rotation appears in the following places:
 
-1. **The rotation angle is imaginary.** A boost is a rotation by an imaginary angle $i\theta^{\mathrm{rpd}}$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a **hyperbolic rotation**. The Lorentz boost is precisely this: a hyperbolic rotation in the $(i c r'_t, r_x)$ plane.
+1. **The rotation angle is imaginary.** A boost is a rotation by an imaginary angle $i\theta_{\mathrm{rpd}}$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a **hyperbolic rotation**. The Lorentz boost is precisely this: a hyperbolic rotation in the $(i c r'_t, r_x)$ plane.
 
-2. **The rotor has an imaginary vector part.** The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.
+2. **The rotor has an imaginary vector part.** The boost biquaternion $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.
 
 3. **The bilinear form is complex.** The quantity preserved by the rotation is not the real Euclidean norm (which is positive-definite), but the **general plain bilinear form** $(x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative, positive, or zero.
 
@@ -416,7 +416,7 @@ The Lorentz group $SO(1,3)$ acts on this slice as the subgroup of $SO(4, \mathbb
 
 ## The Local Complex Structure
 
-The boost biquaternion $\tilde U_{\mathrm b}$ uses the speed of light $c$ through the rapidity $\theta^{\mathrm{rpd}}$: $\tanh\theta^{\mathrm{rpd}} = v_b/c$. In a material medium with permittivity $\epsilon$ and permeability $\mu$, the local speed of light is $c = 1/\sqrt{\epsilon\mu}$, which may differ from the vacuum speed $c_0$.
+The boost biquaternion $\tilde U_{\mathrm b}$ uses the speed of light $c$ through the rapidity $\theta_{\mathrm{rpd}}$: $\tanh\theta_{\mathrm{rpd}} = v_b/c$. In a material medium with permittivity $\epsilon$ and permeability $\mu$, the local speed of light is $c = 1/\sqrt{\epsilon\mu}$, which may differ from the vacuum speed $c_0$.
 
 This means that the rapidity and the boost biquaternion are **local** quantities: they depend on the local electromagnetic properties of the medium. In vacuum, $c = c_0$ and the rapidity is a fixed function of the velocity. In a medium, $c$ varies from point to point, and the boost biquaternion varies accordingly.
 
@@ -424,7 +424,7 @@ This is consistent with the program of the companion articles on the $i c r'_t$ 
 
 ## Open Questions
 
-1. **Higher-rank tensors.** The rotor conjugation $\tilde{Q}_2 = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F_{\mu\nu}$ and the energy–momentum tensor $T_{\mu\nu}$?
+1. **Higher-rank tensors.** The rotor conjugation $\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ applies to four-vectors. How does the biquaternion formulation extend to higher-rank tensors, such as the field-strength tensor $F_{\mu\nu}$ and the energy–momentum tensor $T_{\mu\nu}$?
 
 2. **Spinor transformations.** A spinor transforms under the Lorentz group by a **one-sided** multiplication, not by a rotor conjugation. What is the precise biquaternion form of the spinor transformation, and how does it relate to the Dirac equation?
 
@@ -432,7 +432,7 @@ This is consistent with the program of the companion articles on the $i c r'_t$ 
 
 4. **The relation to the twistor program.** Penrose's twistor theory uses the complexified spinor space $\mathbb{C}^4$, which is closely related to the biquaternion algebra. How does the biquaternion formulation of the Lorentz transformation relate to the twistor formulation?
 
-5. **The general transformation.** The article has focused primarily on pure boosts. What is the biquaternion form of the general Lorentz transformation (boost plus spatial rotation), and how does the non-Hermiticity of $\tilde U^{\mathrm{lor}}$ manifest physically?
+5. **The general transformation.** The article has focused primarily on pure boosts. What is the biquaternion form of the general Lorentz transformation (boost plus spatial rotation), and how does the non-Hermiticity of $\tilde U_{\mathrm{lor}}$ manifest physically?
 
 These questions are open.
 
@@ -447,10 +447,10 @@ $$
 where $\tilde U_{\mathrm b}$ is the **boost biquaternion**
 
 $$
-\tilde U_{\mathrm b} = \exp\!\left(\frac{\theta^{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}.
+\tilde U_{\mathrm b} = \exp\!\left(\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}.
 $$
 
-For a pure boost, $\tilde U_{\mathrm b} \in \mathbb{M}_+$ (Hermitian, unit norm). The rapidity $\theta^{\mathrm{rpd}}$ is related to the velocity $\vec v_b$ by $\tanh\theta^{\mathrm{rpd}} = v_b/c$.
+For a pure boost, $\tilde U_{\mathrm b} \in \mathbb{M}_+$ (Hermitian, unit norm). The rapidity $\theta_{\mathrm{rpd}}$ is related to the velocity $\vec v_b$ by $\tanh\theta_{\mathrm{rpd}} = v_b/c$.
 
 The **four-velocity biquaternion** $\tilde{V} = \gamma(ic\,e_t + \vec v)$, which lives in $\mathbb{M}_-$, is related to the boost biquaternion by
 
@@ -479,8 +479,8 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 | $\beta = v/c$ | Velocity ratio of a frame or particle |
 | $\gamma = 1/\sqrt{1-\beta^2}$ | Lorentz factor |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost biquaternion (Hermitian for pure boosts) |
-| $\theta^{\mathrm{rpd}}$ | Rapidity, $\tanh\theta^{\mathrm{rpd}} = v_b/c$ |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost biquaternion (Hermitian for pure boosts) |
+| $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}} = v_b/c$ |
 | $\vec u_{\mathrm b}$ | Unit vector in boost direction |
 | $\tilde{Q}_2 = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$ | Rotor conjugation |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

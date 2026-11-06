@@ -74,7 +74,7 @@ The rule explains both structural facts of the algebra. Multiplication is commut
 
 ### Definition
 
-The **reduced biquaternion exponential** is defined for $\breve Q\in\mathbb{B}^{\mathrm{red}}$ by the power series
+The **reduced biquaternion exponential** is defined for $\breve Q\in\mathbb{B}_{\mathrm{red}}$ by the power series
 
 $$
 \exp\breve Q=\sum_{n=0}^{\infty}\frac{\breve Q^{n}}{n!}.
@@ -109,7 +109,7 @@ It is the bridge between the exponential and the trigonometric and hyperbolic fu
 $$
 \exp(i\theta)=\cos\theta+i\sin\theta,\qquad
 \exp(ij\beta)=\cos\beta+ij\sin\beta,\qquad
-\exp(j\theta^{\mathrm{rpd}})=\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}.
+\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}.
 $$
 
 The first two are the elliptic directions, the third the hyperbolic direction.
@@ -128,7 +128,7 @@ In particular $\exp(\breve Q+2\pi i)=\exp\breve Q$ and $\exp(\breve Q+\pi i(1+j)
 | Quantity | Value |
 |---|---|
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
-| Image | the unit group ${\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
+| Image | the unit group ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
 | Periods | the kernel |
 | Injective | no |
 | Surjective onto the image | yes |
@@ -233,27 +233,27 @@ where $\operatorname{Log}$ on the right is the principal complex logarithm, with
 
 For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm.
 
-| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\rho,\theta^{\mathrm{rpd}},\alpha,\beta)$ |
+| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ |
 |---|---|---|---|
 | $q_{\log\blacktriangle}$ | logarithmic scale | $\tfrac12\ln\lvert \lambda_1\lambda_2\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$ | $\ln\rho$ |
 | $q'_{\log\blacktriangle}$ | scalar phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)+\operatorname{Arg}(\lambda_2)\bigr)$ | $\alpha$ |
-| $q_{\log\blacktriangledown}$ | boost | $\tfrac12\ln\lvert \lambda_1/\lambda_2\rvert$ | $\theta^{\mathrm{rpd}}$ |
+| $q_{\log\blacktriangledown}$ | boost | $\tfrac12\ln\lvert \lambda_1/\lambda_2\rvert$ | $\theta_{\mathrm{rpd}}$ |
 | $q'_{\log\blacktriangledown}$ | split phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)-\operatorname{Arg}(\lambda_2)\bigr)$ | $\beta$ |
 
 Here $\rho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,
 
 $$
 \breve Q_{\log}=q_{\log\blacktriangle}+jq_{\log\blacktriangledown}+iq'_{\log\blacktriangle}+ijq'_{\log\blacktriangledown}
-=\ln\rho+j\theta^{\mathrm{rpd}}+i\alpha+ij\beta,
+=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
 $$
 
 and the exponential reassembles them:
 
 $$
-\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\theta^{\mathrm{rpd}}+j\sinh\theta^{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
 $$
 
-The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
+The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
 
 **Example.** For $\breve Q=3+4i+j(1-i)$ the coefficients are $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$, so $\lambda_1=4+3i$ and $\lambda_2=2+5i$. The principal complex logarithms are
 
@@ -276,7 +276,7 @@ The logarithm exists on the whole unit group and is never unique. The general so
 
 | Quantity | Value |
 |---|---|
-| Domain | the units ${\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
+| Domain | the units ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
 | Fibre over a point | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ |
 | Principal domain | $\lvert\operatorname{Im}\lambda_1\rvert\le\pi$ and $\lvert\operatorname{Im}\lambda_2\rvert\le\pi$, boundary half-open |
@@ -424,7 +424,7 @@ where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.
 
 ### The Roots
 
-**Theorem (the roots).** Let $n\ge1$ and let $\breve Q\in\mathbb{B}^{\mathrm{red}}$.
+**Theorem (the roots).** Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{red}}$.
 
 1. If $\breve Q$ is a unit, the equation $\breve R^{n}=\breve Q$ has exactly $n^{2}$ solutions: the elements whose eigenvalues are
    $$
@@ -582,7 +582,7 @@ The full set of logarithms of a scalar is larger: it is $\operatorname{Log}\brev
 
 ### The Split-Complex Plane
 
-If both coefficients are real, the element lies in the split-complex plane $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{1,j\}$; write $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$. Then $\lambda_1=q_{\blacktriangle}+q_{\blacktriangledown}$ and $\lambda_2=q_{\blacktriangle}-q_{\blacktriangledown}$ are real. The exponential is
+If both coefficients are real, the element lies in the split-complex plane $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\{1,j\}$; write $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$. Then $\lambda_1=q_{\blacktriangle}+q_{\blacktriangledown}$ and $\lambda_2=q_{\blacktriangle}-q_{\blacktriangledown}$ are real. The exponential is
 
 $$
 \exp(q_{\blacktriangle}+jq_{\blacktriangledown})=\exp(q_{\blacktriangle})\bigl(\cosh q_{\blacktriangledown}+j\sinh q_{\blacktriangledown}\bigr).
@@ -620,7 +620,7 @@ $$
 
 ### The Relation Between the Two
 
-The complex line $\mathbb{R}\{1,i\}$ and the split-complex plane $\mathbb{R}\{1,j\}$ are two real two-planes in $\mathbb{B}^{\mathrm{red}}$, and they intersect in the real axis $\mathbb{R}$. In the eigenvalue coordinates the complex line is the diagonal
+The complex line $\mathbb{R}\{1,i\}$ and the split-complex plane $\mathbb{R}\{1,j\}$ are two real two-planes in $\mathbb{B}_{\mathrm{red}}$, and they intersect in the real axis $\mathbb{R}$. In the eigenvalue coordinates the complex line is the diagonal
 
 $$
 \{(\lambda_1,\lambda_2):\lambda_1=\lambda_2\},
@@ -656,9 +656,9 @@ The trigonometric and hyperbolic functions are read at the two eigenvalues. Thei
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Idempotent Principle | $f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every complex power series |
 | Exponential | $\exp\breve Q=\exp(\lambda_1)\Pi_++\exp(\lambda_2)\Pi_-=\exp Q_{\blacktriangle}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ |
-| Kernel and image | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)\cong\mathbb{Z}^{2}$; $\operatorname{im}\exp={\mathbb{B}^{\mathrm{red}}}^{\times}$ |
+| Kernel and image | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)\cong\mathbb{Z}^{2}$; $\operatorname{im}\exp={\mathbb{B}_{\mathrm{red}}}^{\times}$ |
 | Logarithm | $\operatorname{Log}\breve Q=\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$ on the units |
-| Principal domain | every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to{\mathbb{B}^{\mathrm{red}}}^{\times}$ is bijective |
+| Principal domain | every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to{\mathbb{B}_{\mathrm{red}}}^{\times}$ is bijective |
 | Fibre | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
 | Derivative of the logarithm | $d\operatorname{Log}_{\breve Q}(\breve H)=\breve Q^{-1}\breve H$ |
 | Powers | $\breve Q^{s}=\lambda_1^{s}\Pi_++\lambda_2^{s}\Pi_-$; $n^{2}$ values for $s=m/n$ in lowest terms |
@@ -712,7 +712,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{red}}$ | the reduced biquaternion algebra, basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ij=ji$ |
+| $\mathbb{B}_{\mathrm{red}}$ | the reduced biquaternion algebra, basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ij=ji$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | an element, $Q_{\blacktriangle}$ scalar part, $Q_{\blacktriangledown}$ split part |
 | $Q_{+}$, $Q_{-}$ | the eigenvalues $\lambda_1=Q_+$, $\lambda_2=Q_-$, read also as idempotent coordinates |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the central idempotents, $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ |
@@ -720,8 +720,8 @@ The table compares the elementary functions across the three algebras; in the bi
 | $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$ | the bar |
 | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm |
 | $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ | the squared Euclidean norm |
-| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta^{\mathrm{rpd}}+i\beta$ |
-| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\rho,\alpha,\theta^{\mathrm{rpd}},\beta$ |
+| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$ |
+| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\rho,\alpha,\theta_{\mathrm{rpd}},\beta$ |
 | $\exp\breve Q=\exp(Q_{\blacktriangle})(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ | the exponential |
 | $\operatorname{Log}\breve Q$ | the principal logarithm |
 | $D$ | the principal diamond $\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$ |

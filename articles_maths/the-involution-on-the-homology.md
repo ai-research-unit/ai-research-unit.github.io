@@ -36,9 +36,9 @@ $$
 
 **Proof.** The statement that the fixed part is the homology of the quotient is the transfer theorem of *The Involution as an Operator on the Homology*; the anti-fixed part is its complementary summand and hence the kernel of the transfer, by the same splitting.
 
-**Remark (the anti-fixed part as the sign representation).** The anti-fixed part is the part of the homology on which $\mathbb{Z}/2$ acts by the sign representation. Writing $k^{\mathrm{sgn}}$ for the module $k$ with $t$ acting by $-1$, one has
+**Remark (the anti-fixed part as the sign representation).** The anti-fixed part is the part of the homology on which $\mathbb{Z}/2$ acts by the sign representation. Writing $k_{\mathrm{sgn}}$ for the module $k$ with $t$ acting by $-1$, one has
 $$
-H_*^{-} \;\cong\; H_*(M;k\otimes_{\mathbb{Z}} k^{\mathrm{sgn}})^{\mathbb{Z}/2},
+H_*^{-} \;\cong\; H_*(M;k\otimes_{\mathbb{Z}} k_{\mathrm{sgn}})^{\mathbb{Z}/2},
 $$
 the invariants of the homology with coefficients in the sign representation; equivalently, the anti-fixed part is the "twisted" or sign-isotypic component of the module. This is the module-theoretic way to state that $H_*^{-}$ is not computed by the ordinary quotient but by the quotient twisted by the orientation.
 
@@ -157,7 +157,7 @@ An involution of a manifold induces an involution of the homology and of the coh
 | $Q = Q^{+}\oplus Q^{-}$, $\sigma(M) = \sigma(M^{+})+\sigma(M^{-})$ | the orientation-preserving case |
 | $\mathfrak{Q}(H_m^{\pm},H_m^{\pm}) = 0$, $\sigma(M) = 0$ | the orientation-reversing case |
 | $\langle x,y\rangle = \mathfrak{Q}(x,T_*y)$ | the Hermitian (or anti-Hermitian) form twisted by the involution |
-| $k^{\mathrm{sgn}}$ | the coefficient module on which $\mathbb{Z}/2$ acts by $-1$ |
+| $k_{\mathrm{sgn}}$ | the coefficient module on which $\mathbb{Z}/2$ acts by $-1$ |
 
 ## Further Reading
 

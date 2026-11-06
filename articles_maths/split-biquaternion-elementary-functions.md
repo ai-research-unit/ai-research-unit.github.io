@@ -5,7 +5,7 @@
 
 This article introduces the elementary functions of a split biquaternion variable. It follows the article on the split biquaternion exponential, which defined the exponential and the polar decomposition of the algebra, and it uses the article on split biquaternion roots of minus one, which classified the roots of $-1$.
 
-The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its three decompositions. The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$, and the idempotent decomposition of a split biquaternion is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$.
+The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its three decompositions. The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$, and the idempotent decomposition of a split biquaternion is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ with $\tilde{Q}_\pm \in \mathbb{H}$.
 
 The key structural fact is that the elementary functions of a split biquaternion are determined by the **idempotent decomposition** and by the **powers** of the split biquaternion. Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the elementary functions of a split biquaternion reduce to the elementary functions of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case, where the elementary functions involve a complex angle and the roots of $-1$.
 
@@ -43,7 +43,7 @@ $$
 \exp(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^n}{n!}.
 $$
 
-The series converges for every $\tilde{Q} \in \mathbb{B}^{\mathrm{spl}}$, because the algebra is finite-dimensional and the Euclidean norm grows at most exponentially with $n$. So the exponential is an entire function on $\mathbb{B}^{\mathrm{spl}}$.
+The series converges for every $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$, because the algebra is finite-dimensional and the Euclidean norm grows at most exponentially with $n$. So the exponential is an entire function on $\mathbb{B}_{\mathrm{spl}}$.
 
 ### Computation via the Idempotent Decomposition
 
@@ -71,7 +71,7 @@ This is the cleanest form of the exponential, and it is the reason the split biq
 
 ### Computation via the Exponential Polar Form
 
-The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}^{\mathrm{spl}}$ and $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The scalar part commutes with everything, so
+The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}_{\mathrm{spl}}$ and $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The scalar part commutes with everything, so
 
 $$
 \exp(\tilde{Q}) = \exp(Q_t) \exp(\vec Q),
@@ -101,7 +101,7 @@ where $\cos$ and $\sin$ are the power series functions of a split complex argume
 
 ### The Nilpotent Case
 
-If the vector part is nilpotent, i.e., $\vec Q^2 = 0$, then $\lVert\vec Q\rVert = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\vec Q = 0$: since $\vec Q^2 = -\lVert\vec Q\rVert^2 e_t$ and the real part of $\lVert\vec Q\rVert^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, the equation $\vec Q^2 = 0$ forces $\vec Q = 0$, and then $\exp(\vec Q) = e_t$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\vec Q = (1 - j)\vec e_x \in Z_+$ one has $\vec Q^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{B}^{\mathrm{spl}}$ has no nonzero nilpotent vector part.
+If the vector part is nilpotent, i.e., $\vec Q^2 = 0$, then $\lVert\vec Q\rVert = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\vec Q = 0$: since $\vec Q^2 = -\lVert\vec Q\rVert^2 e_t$ and the real part of $\lVert\vec Q\rVert^2$ is $Q_x^2 + Q_y^2 + Q_z^2$, the equation $\vec Q^2 = 0$ forces $\vec Q = 0$, and then $\exp(\vec Q) = e_t$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\vec Q = (1 - j)\vec e_x \in Z_+$ one has $\vec Q^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{B}_{\mathrm{spl}}$ has no nonzero nilpotent vector part.
 
 ### Properties
 
@@ -161,9 +161,9 @@ $$
 \sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
 $$
 
-which reduces the computation of the hyperbolic functions to the exponential formula. The trigonometric functions are not obtained this way: since $j$ is central with $j^2 = +1$, the combinations $\frac{\exp(j\tilde{Q}) \mp \exp(-j\tilde{Q})}{2}$ are $\cosh \tilde{Q} \mp j \sinh\tilde{Q}$, that is, the hyperbolic functions again, and there is no central element of $\mathbb{B}^{\mathrm{spl}}$ with square $-1$ that could produce $\sin$ and $\cos$. The trigonometric functions are defined by their power series, equivalently as the ordinary quaternion trigonometric functions of the two idempotent components.
+which reduces the computation of the hyperbolic functions to the exponential formula. The trigonometric functions are not obtained this way: since $j$ is central with $j^2 = +1$, the combinations $\frac{\exp(j\tilde{Q}) \mp \exp(-j\tilde{Q})}{2}$ are $\cosh \tilde{Q} \mp j \sinh\tilde{Q}$, that is, the hyperbolic functions again, and there is no central element of $\mathbb{B}_{\mathrm{spl}}$ with square $-1$ that could produce $\sin$ and $\cos$. The trigonometric functions are defined by their power series, equivalently as the ordinary quaternion trigonometric functions of the two idempotent components.
 
-Note: in the biquaternion case, the trigonometric functions are defined using the scalar imaginary $i$, which satisfies $i^2 = -1$. In the split biquaternion case, the centre is $\mathbb{C}^{\mathrm{spl}}$, and $(a + bj)^2 = a^2 + b^2 + 2abj$ is never $-1$, so no such scalar imaginary exists. This is a fundamental difference: the split complex unit does not produce trigonometric functions, it produces hyperbolic functions.
+Note: in the biquaternion case, the trigonometric functions are defined using the scalar imaginary $i$, which satisfies $i^2 = -1$. In the split biquaternion case, the centre is $\mathbb{C}_{\mathrm{spl}}$, and $(a + bj)^2 = a^2 + b^2 + 2abj$ is never $-1$, so no such scalar imaginary exists. This is a fundamental difference: the split complex unit does not produce trigonometric functions, it produces hyperbolic functions.
 
 ### Properties
 
@@ -225,7 +225,7 @@ The logarithm is defined when both idempotent components are nonzero, i.e., when
 
 ### Definition
 
-For $\tilde{Q} \in \mathbb{B}^{\mathrm{spl}}$ and $\alpha \in \mathbb{C}^{\mathrm{spl}}$, the **power function** is defined by
+For $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$ and $\alpha \in \mathbb{C}_{\mathrm{spl}}$, the **power function** is defined by
 
 $$
 \tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
@@ -265,7 +265,7 @@ When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power fu
 
 ### The Quaternion Case
 
-The split biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $\tilde q = q_t + \vec q$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = \tilde q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
+The split biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $\tilde q = q_t + \vec q$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = \tilde q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
 
 $$
 \exp(\tilde{Q}) = \exp(\tilde q) \tilde\Pi_1 + \exp(\tilde q) \tilde\Pi_2 = \exp(\tilde q),
@@ -279,7 +279,7 @@ and so on. So the elementary functions of a split biquaternion that lies in the 
 
 ### The Split Complex Case
 
-The split biquaternion algebra contains the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ as the subspace $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$, which is the fixed-point set of quaternion conjugation. For a split complex scalar $Q_t = q_t + j q'_t$, the idempotent components are the real scalars
+The split biquaternion algebra contains the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ as the subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$, which is the fixed-point set of quaternion conjugation. For a split complex scalar $Q_t = q_t + j q'_t$, the idempotent components are the real scalars
 
 $$
 \tilde{Q}_+ = q_t + q'_t, \qquad \tilde{Q}_- = q_t - q'_t.
@@ -327,7 +327,7 @@ The idempotent form is the primary one, because it reduces the elementary functi
 
 ## Comparison with the Biquaternion Case
 
-| | $\mathbb{B}$ (biquaternion) | $\mathbb{B}^{\mathrm{spl}}$ (split biquaternion) |
+| | $\mathbb{B}$ (biquaternion) | $\mathbb{B}_{\mathrm{spl}}$ (split biquaternion) |
 |---|---|---|
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Primary decomposition | Quaternion decomposition | Idempotent decomposition |
@@ -401,11 +401,11 @@ The elementary functions of several split biquaternion variables are largely ope
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\mathbb{H}$ | Quaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}_{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components, real quaternions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |

@@ -297,11 +297,11 @@ The trace of the square and the linear entropy are the same two numbers read fro
 $$
 \mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)=\tfrac{1}{2}\bigl(1+\lvert\vec r\rvert^{2}\bigr)=2P,
 \qquad
-S^{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
+S_{\mathrm{lin}}\bigl(\tilde{Ϛ}\bigr)=1-\mathrm{Tr}\bigl(\tilde{Ϛ}^{2}\bigr)
 =\tfrac{1}{2}\bigl(1-\lvert\vec r\rvert^{2}\bigr)=2I .
 $$
 
-The gap is therefore $P-I=\tfrac{1}{2}-S^{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S^{\mathrm{lin}}$. The pure state has $S^{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S^{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.
+The gap is therefore $P-I=\tfrac{1}{2}-S_{\mathrm{lin}}$, and the half-gap is $\tfrac{1}{4}-\tfrac{1}{2}S_{\mathrm{lin}}$. The pure state has $S_{\mathrm{lin}}=0$ and the maximal gap; the maximally mixed element has $S_{\mathrm{lin}}=\tfrac{1}{2}$ and no gap. The purity gap is the probability metric's excess over the interval, and mixedness is the interval itself.
 
 **The interpretation.** The probability norm is definite on the algebra; the interval is indefinite there and non-negative on the state slice. On a state their difference is the purity gap, an affine image of the trace purity; the half-difference is the information content, maximal for the pure states and vanishing at the maximally mixed element.
 
@@ -391,11 +391,11 @@ The sign is the sector. On the material sector the plain square is negative semi
 
 ### The Amplitude and Its Two Parts
 
-Let $\tilde{Ξ}^{\mathrm{sp}}_1$ and $\tilde{Ξ}^{\mathrm{sp}}_2$ be two spinors of the module, and let the amplitude be the band's pairing,
+Let $\tilde{Ξ}_{\mathrm{sp},1}$ and $\tilde{Ξ}_{\mathrm{sp},2}$ be two spinors of the module, and let the amplitude be the band's pairing,
 
 $$
-A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
-=\mathrm{Sc}\bigl(\tilde{Ξ}^{\mathrm{sp}}_1\tilde{Ξ}^{\mathrm{sp}*}_2\bigr).
+A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
+=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}^*\bigr).
 $$
 
 The squared modulus is the probability of the transition, and the argument is the phase. The amplitude is a complex number; the phase is its argument, and the axis about which it turns is a property of the two rays, not of the amplitude.
@@ -403,9 +403,9 @@ The squared modulus is the probability of the transition, and the argument is th
 Under a central phase on each spinor,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}_1\mapsto e^{i\alpha_1}\tilde{Ξ}^{\mathrm{sp}}_1,
+\tilde{Ξ}_{\mathrm{sp},1}\mapsto e^{i\alpha_1}\tilde{Ξ}_{\mathrm{sp},1},
 \qquad
-\tilde{Ξ}^{\mathrm{sp}}_2\mapsto e^{i\alpha_2}\tilde{Ξ}^{\mathrm{sp}}_2,
+\tilde{Ξ}_{\mathrm{sp},2}\mapsto e^{i\alpha_2}\tilde{Ξ}_{\mathrm{sp},2},
 $$
 
 the amplitude transforms as
@@ -433,12 +433,12 @@ For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta
 
 ### The Loop Is the Gauge-Invariant Phase
 
-Take a closed sequence of states $\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2,\dots,\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1$ and the product of the overlaps around the loop,
+Take a closed sequence of states $\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2},\dots,\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}$ and the product of the overlaps around the loop,
 
 $$
-\Gamma=\arg\Bigl(\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}
-\langle\tilde{Ξ}^{\mathrm{sp}}_2,\tilde{Ξ}^{\mathrm{sp}}_3\rangle_{*}\cdots
-\langle\tilde{Ξ}^{\mathrm{sp}}_n,\tilde{Ξ}^{\mathrm{sp}}_1\rangle_{*}\Bigr).
+\Gamma=\arg\Bigl(\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
+\langle\tilde{Ξ}_{\mathrm{sp},2},\tilde{Ξ}_{\mathrm{sp},3}\rangle_{*}\cdots
+\langle\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}\rangle_{*}\Bigr).
 $$
 
 Under a change of representative the factors shift by the telescoping phases $\alpha_{k}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
@@ -488,7 +488,7 @@ The three grades of coefficient reality are the complex, central and real specie
 | $\{Q_1,Q_2,Q_3\}=Q_1Q_2^{*}Q_3$ | the ternary product of the band |
 | $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |
 | $P$, $I$ | the probability norm and the interval norm on the state slice |
-| $A=\langle\tilde{Ξ}^{\mathrm{sp}}_1,\tilde{Ξ}^{\mathrm{sp}}_2\rangle_{*}$ | the amplitude |
+| $A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}$ | the amplitude |
 | $\Gamma$ | the Pancharatnam phase of a closed circuit |
 
 ## Further Reading

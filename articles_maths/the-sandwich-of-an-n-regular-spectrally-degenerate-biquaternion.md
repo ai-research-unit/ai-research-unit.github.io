@@ -110,7 +110,7 @@ $$
 
 The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a $*$-unitary operator, because $\tilde V$ is $*$-unitary. This is the polar decomposition of the operator $\mathrm{Sd}_{\tilde Q}$.
 
-The product $\mathrm{Sd}_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\theta^{\mathrm{rpd}}}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.
+The product $\mathrm{Sd}_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd}}}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.
 
 ## The Two Slots
 
@@ -236,7 +236,7 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 | $\mathrm{Sd}_{\tilde Q}$ | the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | left and right multiplication |
 | $\tilde H,\tilde V$ | the positive and $*$-unitary Cartan factors |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\vec A,\vec B$ | the real and imaginary parts of $\vec\Upsilon$; the arrows distinguish them from the operators $A,B$ |
 | $a$ | the null parameter, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$ |
 | $\vec c$ | $\vec A\times\vec B/a^2$, the unit vector of the fixed null direction |

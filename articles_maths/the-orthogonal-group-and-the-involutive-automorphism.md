@@ -15,7 +15,7 @@ The article has four sections: the quadratic form and the orthogonal group; the 
 
 **Definition.** The **quadratic form** of signature $(n,m)$ on $V$ is $\mathfrak{Q}(x) = \sum_{i \leq n}x_i^2 - \sum_{i>n}x_i^2$ in a suitable basis, with polar form $B(u,v) = \frac12(\mathfrak{Q}(u+v) - \mathfrak{Q}(u) - \mathfrak{Q}(v))$ of matrix $J$; a **definite decomposition** is an orthogonal decomposition $V = V_+\oplus V_-$ with $Q$ positive definite on $V_+$ and negative definite on $V_-$, of dimensions $n$ and $m$.
 
-**Definition.** The **transpose-adjoint** of $T \in \operatorname{End}(V)$ with respect to $Q$ is the map $T^{t}$ with $B(Tu,v) = B(u,T^{t}v)$; it satisfies $(ST)^{t} = T^{t}S^{t}$, $(T^{t})^{t} = T$, and for the diagonal form it is the ordinary transpose with respect to the indefinite pairing, $T^{t} = J^{-1}T^{\mathrm{tr}}J$.
+**Definition.** The **transpose-adjoint** of $T \in \operatorname{End}(V)$ with respect to $Q$ is the map $T^{t}$ with $B(Tu,v) = B(u,T^{t}v)$; it satisfies $(ST)^{t} = T^{t}S^{t}$, $(T^{t})^{t} = T$, and for the diagonal form it is the ordinary transpose with respect to the indefinite pairing, $T^{t} = J^{-1}T_{\mathrm{tr}}J$.
 
 **Proposition.** The isometry group of $Q$ is
 

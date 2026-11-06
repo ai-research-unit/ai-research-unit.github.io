@@ -14,7 +14,7 @@ are complex-linear, so they are operators of the ambient space of *The Endomorph
 
 **Why they are one subject.** The two families are the same construction read from the two sides, and every statement about the one is the mirror of a statement about the other: the same injectivity with the unit as probe, the same dimension, the same three ranks, the same invertibility criterion, the same inverse. The one place where the mirror fails is the law — one family is multiplicative and the other anti-multiplicative — and that failure is exactly what the last section measures, when the two families are put in one operator space and asked which operators commute with which.
 
-**What the article proves.** Five things, in this order. The two maps are injective and complex-linear. The left one is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, and the right one is anti-multiplicative, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$; the two images are copies of $\mathbb{B}$ and of $\mathbb{B}^{\mathrm{opp}}$, each of complex dimension four. The kernel and the image of a single operator are the annihilator and the ideal of the element, on the opposite side of the multiplication, and the rank takes the three values $4,2,0$. The operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and the inverse is the operator of the inverse element. Finally, the two families commute element by element, each is the exact commutant of the other, and they meet in the scalars.
+**What the article proves.** Five things, in this order. The two maps are injective and complex-linear. The left one is multiplicative, $L_{\tilde Q}L_{\tilde P}=L_{\tilde Q\tilde P}$, and the right one is anti-multiplicative, $R_{\tilde Q}R_{\tilde P}=R_{\tilde P\tilde Q}$; the two images are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four. The kernel and the image of a single operator are the annihilator and the ideal of the element, on the opposite side of the multiplication, and the rank takes the three values $4,2,0$. The operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and the inverse is the operator of the inverse element. Finally, the two families commute element by element, each is the exact commutant of the other, and they meet in the scalars.
 
 **What the article does not do.** The matrices of the two families are the subject of the three matrix articles of the group, where the exchange of §*The Exchange $S$* is verified entry by entry. The products $L_{\tilde Q}R_{\tilde P}$ are *Two-Sided Operators on the Biquaternion Algebra*; the sandwiches $\mathrm{Sd}_{\tilde Q}$ are Part V; the association of the two families with the four forms is *The Four Adjoints of the Biquaternion Algebra in Examples*; the enveloping algebra in which the pair of actions lives is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. This article states no adjoint identity, no product of the two families and no form.
 
@@ -81,11 +81,11 @@ $$
 
 ### The Two Copies
 
-**Theorem (the two images).** $\operatorname{End}_L(\mathbb{B})$ is a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}$, and $\operatorname{End}_R(\mathbb{B})$ is a subalgebra isomorphic to $\mathbb{B}^{\mathrm{opp}}$. Each has complex dimension four.
+**Theorem (the two images).** $\operatorname{End}_L(\mathbb{B})$ is a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}$, and $\operatorname{End}_R(\mathbb{B})$ is a subalgebra isomorphic to $\mathbb{B}_{\mathrm{opp}}$. Each has complex dimension four.
 
 *Proof.* Each image is closed under addition and scalar multiplication by the linearity of the two maps, and under composition by its law; each contains the identity $L_{e_t}=R_{e_t}$; each map is injective, so it is an isomorphism onto its image. The complex dimension is that of the algebra, which is four.
 
-**The opposite algebra.** The **opposite algebra** $\mathbb{B}^{\mathrm{opp}}$ is the algebra with the same underlying vector space and the product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$. The identity map on the underlying space turns the anti-homomorphism $\tilde Q\mapsto R_{\tilde Q}$ into a homomorphism $\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the second half of the theorem is the first half read through it.
+**The opposite algebra.** The **opposite algebra** $\mathbb{B}_{\mathrm{opp}}$ is the algebra with the same underlying vector space and the product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$. The identity map on the underlying space turns the anti-homomorphism $\tilde Q\mapsto R_{\tilde Q}$ into a homomorphism $\mathbb{B}_{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the second half of the theorem is the first half read through it.
 
 **What a copy preserves.** Each copy preserves every polynomial relation of its algebra, with the order of the factors reversed in the right copy: a relation holds in $\mathbb{B}$ exactly when the relation with the factors reversed holds in $\operatorname{End}_R(\mathbb{B})$. Neither copy preserves the trace or the determinant of an element: both regular matrices have trace $2\operatorname{tr}\mathsf M_2(\tilde Q)$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$, because each is the identity on one tensor factor and the $2\times2$ model on the other. The spectrum is the one invariant that survives, as a set with every multiplicity doubled, and the matrix articles compute the rest.
 
@@ -234,20 +234,20 @@ $$
 
 so the element $S\tilde Q$ is the element whose matrix is the transpose of the matrix of $\tilde Q$. The norm is unchanged, $\langle S\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, because a determinant does not see the transpose.
 
-### The Matrix Identity $\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}=R^{\mathrm{pau}}(\tilde Q)$
+### The Matrix Identity $\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}=R_{\mathrm{pau}}(\tilde Q)$
 
 **Theorem (the exchange).** In the canonical Peirce frame, for every $\tilde Q\in\mathbb{B}$,
 
 $$
-R^{\mathrm{pau}}(\tilde Q)=\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1},
+R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1},
 $$
 
 with $\mathsf P$ the Peirce display of the exchange, the permutation of the second and third coordinates.
 
-*Proof.* In this frame $L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, by §*The One-Sided Operators* of *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The transpose of a tensor product is the tensor product of the transposes, and $\mathrm I_2^{\mathsf T}=\mathrm I_2$, so $L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip conjugates $A\otimes B$ to $B\otimes A$, so
+*Proof.* In this frame $L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, by §*The One-Sided Operators* of *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The transpose of a tensor product is the tensor product of the transposes, and $\mathrm I_2^{\mathsf T}=\mathrm I_2$, so $L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The flip conjugates $A\otimes B$ to $B\otimes A$, so
 
 $$
-\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2=R^{\mathrm{pau}}(\tilde Q),
+\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2=R_{\mathrm{pau}}(\tilde Q),
 $$
 
 the last equality being the matrix of a right multiplication in the same frame.
@@ -255,15 +255,15 @@ the last equality being the matrix of a right multiplication in the same frame.
 **The transpose is a frame-dependent reading.** A transpose is not an invariant of an operator: it depends on the frame. Each frame of the group carries its own involution and its own stitch, and the two pairs are the two readings of one fact:
 
 $$
-L^{\mathrm{pau}}(\tilde X)^{\mathsf T}=L^{\mathrm{pau}}(S\tilde X),\qquad
-L^{\mathrm{axf}}(\tilde X)^{\mathsf T}=L^{\mathrm{axf}}(\tilde X^{\natural}),
+L_{\mathrm{pau}}(\tilde X)^{\mathsf T}=L_{\mathrm{pau}}(S\tilde X),\qquad
+L_{\mathrm{axf}}(\tilde X)^{\mathsf T}=L_{\mathrm{axf}}(\tilde X^{\natural}),
 $$
 
 and
 
 $$
-R^{\mathrm{pau}}(\tilde Q)=\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1},\qquad
-R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
+R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\,\mathsf P^{-1},\qquad
+R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
 $$
 
 with $\mathsf P$ the permutation above and $D=\operatorname{diag}(1,-1,-1,-1)$ the display of the natural conjugation in the coefficient basis. **The conjugating matrix is the involution that the transpose implements there:** the Peirce transpose implements the exchange and conjugates by $\mathsf P$, the coefficient transpose implements the natural conjugation and conjugates by $D$. The coefficient frame therefore does not serve the exchange, because $\operatorname{diag}(1,1,-1,1)$ is the display of $S$ there and not the matrix of the coefficient transpose. The matrix articles call this passage the stitch; §*The Stitch Between the Copies* of *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* proves the coefficient pair entry by entry, and §*The One-Sided Operators* of *$M_4(\mathbb{C})$ Pauli Representation : Operators* proves the Peirce pair.
@@ -284,7 +284,7 @@ $$
 S\,L_{\tilde Q}\,S^{-1}=R_{S\tilde Q}.
 $$
 
-*Proof.* In the Peirce frame the display of $S$ is the permutation $\mathsf P$, and the flip conjugates $A\otimes B$ to $B\otimes A$, so $\mathsf P\,L^{\mathrm{pau}}(\tilde Q)\,\mathsf P^{-1}=\mathsf M_2(\tilde Q)\otimes\mathrm I_2$. The matrix of $S\tilde Q$ is $\mathsf M_2(\tilde Q)^{\mathsf T}$ by §*The Flip of the Two Mixed Units*, so $\mathsf M_2(\tilde Q)\otimes\mathrm I_2=\mathsf M_2(S\tilde Q)^{\mathsf T}\otimes\mathrm I_2=R^{\mathrm{pau}}(S\tilde Q)$.
+*Proof.* In the Peirce frame the display of $S$ is the permutation $\mathsf P$, and the flip conjugates $A\otimes B$ to $B\otimes A$, so $\mathsf P\,L_{\mathrm{pau}}(\tilde Q)\,\mathsf P^{-1}=\mathsf M_2(\tilde Q)\otimes\mathrm I_2$. The matrix of $S\tilde Q$ is $\mathsf M_2(\tilde Q)^{\mathsf T}$ by §*The Flip of the Two Mixed Units*, so $\mathsf M_2(\tilde Q)\otimes\mathrm I_2=\mathsf M_2(S\tilde Q)^{\mathsf T}\otimes\mathrm I_2=R_{\mathrm{pau}}(S\tilde Q)$.
 
 **The reading.** The exchange carries the left family onto the right family and back, conjugating each left multiplier into a right multiplier of the transposed element. It is a conjugacy of the two sets and not of the two algebras: it does not turn the representation into the anti-representation by an algebra map, and $S\tilde Q$ is not $\tilde Q$ in general. The two families are therefore the same set of operators seen through a fixed involution of the carrier.
 
@@ -394,15 +394,15 @@ Both are diagonal and their diagonals differ, so the two operators agree on $\ti
 
 **The rank and the inverse.** Both matrices have rank $2$ and determinant $0$, consistent with $\operatorname{rank}=2$ and $\langle\tilde\Pi_+\rangle_{\natural}=0$; nullity and rank add to $4$ on each side. Neither operator is invertible, and neither has an inverse in its family, because the element is not a unit.
 
-**The exchange on the example.** The element is fixed by $S$, so the conjugation of §*What the Exchange Does to the Families* reads $SL_{\tilde\Pi_+}S^{-1}=R_{\tilde\Pi_+}$. On the matrices the same statement is the exchange of the second and third diagonal entries: $S\operatorname{diag}(1,0,1,0)S^{-1}=\operatorname{diag}(1,1,0,0)$, which is the transpose identity of §*The Matrix Identity $R^{\mathrm{pau}}(\tilde Q)=\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$* on a diagonal matrix.
+**The exchange on the example.** The element is fixed by $S$, so the conjugation of §*What the Exchange Does to the Families* reads $SL_{\tilde\Pi_+}S^{-1}=R_{\tilde\Pi_+}$. On the matrices the same statement is the exchange of the second and third diagonal entries: $S\operatorname{diag}(1,0,1,0)S^{-1}=\operatorname{diag}(1,1,0,0)$, which is the transpose identity of §*The Matrix Identity $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$* on a diagonal matrix.
 
 ## Summary
 
-The two regular operators of $\tilde Q$ are $L_{\tilde Q}(X)=\tilde QX$ and $R_{\tilde Q}(X)=X\tilde Q$. Each assignment is complex-linear and injective, the unit returning the parameter; the left one is multiplicative and the right one anti-multiplicative, so the images are copies of $\mathbb{B}$ and of $\mathbb{B}^{\mathrm{opp}}$, each of complex dimension four, preserving the algebra relations and nothing else.
+The two regular operators of $\tilde Q$ are $L_{\tilde Q}(X)=\tilde QX$ and $R_{\tilde Q}(X)=X\tilde Q$. Each assignment is complex-linear and injective, the unit returning the parameter; the left one is multiplicative and the right one anti-multiplicative, so the images are copies of $\mathbb{B}$ and of $\mathbb{B}_{\mathrm{opp}}$, each of complex dimension four, preserving the algebra relations and nothing else.
 
 The kernel of $L_{\tilde Q}$ is the right annihilator and its image the right ideal $\tilde Q\mathbb{B}$; the kernel of $R_{\tilde Q}$ is the left annihilator and its image the left ideal $\mathbb{B}\tilde Q$. The annihilators have complex dimensions $0,2,4$ and so do the ideals, and the rank is $4$, $2$ or $0$, the same on both sides: four for a unit, two for a nonzero zero divisor, zero for the zero element. Each operator is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, with inverse the operator of $\tilde Q^{-1}$, and $\det=\langle\tilde Q\rangle_{\natural}^{2}$.
 
-In the Peirce frame the display of $S$ is the permutation $\mathsf P$ and the right matrix is the transpose of the left one conjugated by it: $R^{\mathrm{pau}}(\tilde Q)=\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. In the coefficient frame the display of $S$ is the reflection $\operatorname{diag}(1,1,-1,1)$, and there the transpose implements the natural conjugation instead, $R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The exchange is an involution of trace $2$ and determinant $-1$; it is not multiplicative, it is in neither family, and it conjugates each family onto the other, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$.
+In the Peirce frame the display of $S$ is the permutation $\mathsf P$ and the right matrix is the transpose of the left one conjugated by it: $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. In the coefficient frame the display of $S$ is the reflection $\operatorname{diag}(1,1,-1,1)$, and there the transpose implements the natural conjugation instead, $R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$. The exchange is an involution of trace $2$ and determinant $-1$; it is not multiplicative, it is in neither family, and it conjugates each family onto the other, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$.
 
 The two families commute element by element, $L_{\tilde Q}R_{\tilde P}=R_{\tilde P}L_{\tilde Q}$, each is the exact commutant of the other, $L(\mathbb{B})'=R(\mathbb{B})$ and $R(\mathbb{B})'=L(\mathbb{B})$, and they meet in the scalars, $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$. The two copies are incomparable and their sum is the complex seven-dimensional subspace that the two families span.
 
@@ -413,13 +413,13 @@ The two families commute element by element, $L_{\tilde Q}R_{\tilde P}=R_{\tilde
 | $L_{\tilde Q}(X)=\tilde QX$ | The left regular operator |
 | $R_{\tilde Q}(X)=X\tilde Q$ | The right regular operator |
 | $\operatorname{End}_L(\mathbb{B})=L(\mathbb{B})$ | The set of the left regular operators, a copy of $\mathbb{B}$ |
-| $\operatorname{End}_R(\mathbb{B})=R(\mathbb{B})$ | The set of the right regular operators, a copy of $\mathbb{B}^{\mathrm{opp}}$ |
-| $\mathbb{B}^{\mathrm{opp}}$ | The opposite algebra, product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$ |
+| $\operatorname{End}_R(\mathbb{B})=R(\mathbb{B})$ | The set of the right regular operators, a copy of $\mathbb{B}_{\mathrm{opp}}$ |
+| $\mathbb{B}_{\mathrm{opp}}$ | The opposite algebra, product $\tilde Q\cdot\tilde P=\tilde P\tilde Q$ |
 | $\operatorname{Ann}_r(\tilde Q)$, $\operatorname{Ann}_l(\tilde Q)$ | The right and the left annihilators, the kernels of $L$ and $R$ |
 | $\tilde Q\mathbb{B}$, $\mathbb{B}\tilde Q$ | The right and the left ideals, the images of $L$ and $R$ |
 | $\operatorname{rank}L_{\tilde Q}=\operatorname{rank}R_{\tilde Q}$ | $4$, $2$ or $0$ according to the three cases |
 | $S$ | The exchange, fixing $\tilde\Pi_\pm$ and swapping $\vec\Upsilon_\pm$; $\operatorname{diag}(1,1,-1,1)$ in the coefficient frame |
-| $R^{\mathrm{pau}}(\tilde Q)=\mathsf P\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The exchange, in the Peirce frame |
+| $R_{\mathrm{pau}}(\tilde Q)=\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The exchange, in the Peirce frame |
 | $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$ | The conjugation of the two families |
 | $\mathcal{S}'$ | The commutant of the set $\mathcal{S}$ |
 | $L(\mathbb{B})'=R(\mathbb{B})$ | The first centraliser |

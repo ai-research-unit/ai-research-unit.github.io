@@ -237,7 +237,7 @@ $$
 A \cong \prod_{i=1}^{r} A e_i,
 $$
 
-with $A e_i$ the algebra of the $i$-th component. The split-complex algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ with $a = j$ is an example: the idempotents $(1 \pm j)/2$ are central, and $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$. In a noncommutative algebra, a central split separable element is precisely one whose eigenvalue decomposition is a product decomposition of the whole algebra.
+with $A e_i$ the algebra of the $i$-th component. The split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ with $a = j$ is an example: the idempotents $(1 \pm j)/2$ are central, and $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$. In a noncommutative algebra, a central split separable element is precisely one whose eigenvalue decomposition is a product decomposition of the whole algebra.
 
 ## Summary
 

@@ -68,19 +68,19 @@ Nothing forced $\vec e_z$. The same construction runs on $\vec e_x$ or on $\vec 
 The four-dimensional Pauli array of the same element is the two-dimensional image in both slots, because left multiplication does not mix the two Peirce components:
 
 $$
-L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q).
+L_{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q).
 $$
 
 The arrays of the four units show the direction twice. The time unit is the identity, the $\vec e_z$ array is diagonal, and the other two are off-diagonal inside each of the two identical blocks:
 
 $$
-L^{\mathrm{pau}}_{e_t}=\mathrm I_4,\qquad
-L^{\mathrm{pau}}_{\vec e_z}=\begin{pmatrix}-i&0&0&0\\ 0&i&0&0\\ 0&0&-i&0\\ 0&0&0&i\end{pmatrix},
+L_{\mathrm{pau},e_t}=\mathrm I_4,\qquad
+L_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\\ 0&i&0&0\\ 0&0&-i&0\\ 0&0&0&i\end{pmatrix},
 $$
 
 $$
-L^{\mathrm{pau}}_{\vec e_x}=\begin{pmatrix}0&-i&0&0\\ -i&0&0&0\\ 0&0&0&-i\\ 0&0&-i&0\end{pmatrix},\qquad
-L^{\mathrm{pau}}_{\vec e_y}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
+L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i&0&0\\ -i&0&0&0\\ 0&0&0&-i\\ 0&0&-i&0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
 $$
 
 Three statements follow, and each is a statement about the page and not about the algebra.
@@ -130,7 +130,7 @@ The two-component column, and the spinor. A column of two components is an eleme
 
 The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth cell. Neither fact is stated anywhere on a page that prints the five matrices.
 
-The Dirac adjoint. The adjoint $\tilde{Ξ}^{\mathrm{sp}\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
+The Dirac adjoint. The adjoint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0[\mathbb{M}_-]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
 
 The charge conjugation. The cell $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one cell serves is a fact of the frame; which cell it is, is a choice.
 
@@ -236,7 +236,7 @@ An equation of general physics therefore does not contain a spatial direction. I
 
 A display is a function of a basis. Written in a basis, an operator becomes numbers, and a rotation of the basis becomes a conjugation of the array. The pair (operator, array) is therefore covariant: the operator is fixed and the array moves.
 
-The standard Pauli display breaks the covariance of the page. The array $L^{\mathrm{pau}}(\tilde Q)$ is written in a basis fixed by a root, and the rotation that exchanges $\vec e_z$ with $\vec e_x$ does not produce another array of the same shape: it produces an array in another frame. So the sentence "$\sigma_3$ is diagonal" is not a statement that survives the symmetry. It is a statement about the frame, printed in the grammar of a statement about the algebra.
+The standard Pauli display breaks the covariance of the page. The array $L_{\mathrm{pau}}(\tilde Q)$ is written in a basis fixed by a root, and the rotation that exchanges $\vec e_z$ with $\vec e_x$ does not produce another array of the same shape: it produces an array in another frame. So the sentence "$\sigma_3$ is diagonal" is not a statement that survives the symmetry. It is a statement about the frame, printed in the grammar of a statement about the algebra.
 
 The defect is not that the display has a direction. The defect is that the direction is unmarked. A sentence $\sigma_3[u]$, with $u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.
 
@@ -305,8 +305,8 @@ The claim is narrower and it is about the page. A fundamental equation should no
 The coefficient basis is $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and it is the basis the multiplication table already provides. The $\nu$-th column of the left array is the coordinate column of the product $\tilde Qe_\nu$:
 
 $$
-L^{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
-L^{\mathrm{axf}}(\tilde Q)=
+L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
+L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
 Q_t&-Q_x&-Q_y&-Q_z\\
 Q_x&Q_t&-Q_z&Q_y\\
@@ -320,13 +320,13 @@ Every entry is a structure constant of the algebra or a coefficient of the eleme
 The four unit arrays show why no direction can enter.
 
 $$
-L^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
-L^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix},
+L_{\mathrm{axf},e_t}=\mathrm I_4,\qquad
+L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix},
 $$
 
 $$
-L^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\qquad
-L^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\ 0&0&-1&0\\ 0&1&0&0\\ 1&0&0&0\end{pmatrix}.
+L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\qquad
+L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\ 0&0&-1&0\\ 0&1&0&0\\ 1&0&0&0\end{pmatrix}.
 $$
 
 All three spatial arrays have zero diagonal. Not one of them is preferred, and none of them can be read as "the diagonal one".
@@ -354,8 +354,8 @@ The four unit arrays and their negatives form a group of order eight isomorphic 
 The invariants are read directly, from the array's own entries:
 
 $$
-\operatorname{Tr}L^{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
-\det L^{\mathrm{axf}}(\tilde Q)=\bigl\langle\tilde Q\bigr\rangle_{\natural}^{2},
+\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
+\det L_{\mathrm{axf}}(\tilde Q)=\bigl\langle\tilde Q\bigr\rangle_{\natural}^{2},
 $$
 
 where $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. Both were verified on random elements. The trace is four times the scalar coefficient and the determinant is the square of the natural norm, so the two invariants a physicist needs come out of the display's own structure.
@@ -363,7 +363,7 @@ where $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. Both were verif
 The transpose is the natural conjugation:
 
 $$
-L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L^{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
+L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
 \tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
 $$
 
@@ -372,7 +372,7 @@ The Pauli display has no such rule: the transpose of its array is not the array 
 The right family is the transpose of the left one between a fixed diagonal sign matrix:
 
 $$
-R^{\mathrm{axf}}(\tilde Q)=\mathsf D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D,\qquad
+R_{\mathrm{axf}}(\tilde Q)=\mathsf D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}\mathsf D,\qquad
 \mathsf D=\operatorname{diag}(1,-1,-1,-1).
 $$
 
@@ -405,7 +405,7 @@ That trade is the whole content of the choice between the two displays. The Paul
 A matrix display is already a compromise. The object an equation of the corpus names is not an array but an action on an element:
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}^{\mathrm{sp}}\,b.
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}_{\mathrm{sp}}\,b.
 $$
 
 The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.
@@ -464,8 +464,8 @@ The order of preference is therefore four-level: the action first, a cell when t
 |---|---|---|---|
 | the action | the pair $(a,b)$ | no | the operator is the subject |
 | the cell | $L_aR_b$ as one element of a basis of operators | no | the operator must be one symbol |
-| the array | $L^{\mathrm{axf}}(\tilde Q)$ | yes, the coefficient basis | an array is the object of the sentence |
-| the Pauli array | $L^{\mathrm{pau}}(\tilde Q)$ | yes, the Peirce frame | a block, an ideal or a gamma is the subject |
+| the array | $L_{\mathrm{axf}}(\tilde Q)$ | yes, the coefficient basis | an array is the object of the sentence |
+| the Pauli array | $L_{\mathrm{pau}}(\tilde Q)$ | yes, the Peirce frame | a block, an ideal or a gamma is the subject |
 
 ## Migrating from the Pauli Framework
 
@@ -484,16 +484,16 @@ During this pass an array may stay only where the array is the object: a compari
 Replace every cell by what it does. The rule is one line, and it is the whole pass:
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}^{\mathrm{sp}}\,b.
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}_{\mathrm{sp}}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $m\tilde{Ξ}^{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication.
+The pass removes the operator symbol as well. A mass term is $m\tilde{Ξ}_{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 
 ### The Third Pass: Keep the Axis-Free Array Where an Array Is Required
 
-The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label in the caret: $L^{\mathrm{axf}}(\tilde Q)$ and $L^{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent.
+The remaining arrays are the ones the sentence is about. Write them in $\mathrm{axf}$, and put the frame label in the caret: $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{pau}}(\tilde Q)$. The label is a name and not an exponent.
 
 A section that survives all three passes has no Pauli object in its body, and any Pauli object it keeps is inside a closing block whose subject is the dictionary.
 
@@ -503,13 +503,13 @@ The three passes need a table, and one table serves all three. Each row gives th
 
 | Pauli or gamma name | object | $\mathrm{axf}$ array | action |
 |---|---|---|---|
-| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tilde{Ξ}^{\mathrm{sp}}$ |
+| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
-| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $iR^{\mathrm{axf}}_{\vec e_x}$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto i\tilde{Ξ}^{\mathrm{sp}}\vec e_x$ |
-| $\gamma_k[\mathbb{M}_-]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL^{\mathrm{axf}}_{\vec e_k}R^{\mathrm{axf}}_{\vec e_y}$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}^{\mathrm{sp}}\vec e_y$ |
-| $\gamma_5[\mathbb{M}_-]$ | $-iR_{\vec e_z}$ | $-iR^{\mathrm{axf}}_{\vec e_z}$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z$ |
-| the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto m\tilde{Ξ}^{\mathrm{sp}}$ |
-| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR^{\mathrm{axf}}_{\vec e_z}\bigr)$ | $\tilde{Ξ}^{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}^{\mathrm{sp}}-i\tilde{Ξ}^{\mathrm{sp}}\vec e_z\bigr)$ |
+| $\gamma_0[\mathbb{M}_-]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
+| $\gamma_k[\mathbb{M}_-]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
+| $\gamma_5[\mathbb{M}_-]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
+| the mass term | $mL_{e_t}R_{e_t}$ | $m\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto m\tilde{Ξ}_{\mathrm{sp}}$ |
+| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 
 The last row is the one that has no action, and that is the honest answer: the adjoint is not an operator on the element but a pairing of two elements.
@@ -520,7 +520,7 @@ The two displays are related by one matrix. With the Peirce vectors as columns,
 
 $$
 C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr),\qquad
-L^{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L^{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
+L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
 $$
 
 and $\det C_{\Pi}=-\tfrac14$. Every invariant survives the change: products, anticommutators, traces, determinants, spectra, ranks and the eigenvalue count. This is why the migration cannot change a result, and why it must be checked on invariants rather than on entries.
@@ -555,7 +555,7 @@ The link test. Every cited title must resolve, and a rewritten section must not 
 
 ### The Rules of Use
 
-Write the action first, $\tilde{Ξ}^{\mathrm{sp}}\mapsto a\tilde{Ξ}^{\mathrm{sp}} b$, and name the operator only when the operator is the subject.
+Write the action first, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, and name the operator only when the operator is the subject.
 
 Write one term per line. A sum is a sum of terms, and each term is a pair.
 
@@ -583,7 +583,7 @@ The defect is a formal defect, and its source is physical. Physical space has no
 
 The $\mathrm{axf}$ display writes no direction. Its diagonal cells are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every cell is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the natural norm, and the transpose is the natural conjugation.
 
-The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}^{\mathrm{sp}}\mapsto a\tilde{Ξ}^{\mathrm{sp}} b$, with no basis in the definition.
+The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, with no basis in the definition.
 
 The migration has three passes — arrays to cells, cells to actions, keep the axis-free array where an array is required — a dictionary, four traps and five checks.
 
@@ -603,10 +603,10 @@ The migration has three passes — arrays to cells, cells to actions, keep the a
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
 | the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the diagonal cells of the coefficient basis, a set unchanged by a permutation of the three spatial units |
-| $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}}$ and $R_b\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}} b$ |
-| $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}^{\mathrm{sp}}=a\tilde{Ξ}^{\mathrm{sp}} b$ |
-| $L^{\mathrm{axf}}(\tilde Q)$, $L^{\mathrm{pau}}(\tilde Q)$ | the left array of $\tilde Q$ in the axis-free and in the Pauli display; the label is a name, not an exponent |
-| $L^{\mathrm{axf}}_{e_\mu}$, $R^{\mathrm{axf}}_{e_\mu}$ | the arrays of the units in the axis-free display |
+| $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ |
+| $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$ |
+| $L_{\mathrm{axf}}(\tilde Q)$, $L_{\mathrm{pau}}(\tilde Q)$ | the left array of $\tilde Q$ in the axis-free and in the Pauli display; the label is a name, not an exponent |
+| $L_{\mathrm{axf},e_\mu}$, $R_{\mathrm{axf},e_\mu}$ | the arrays of the units in the axis-free display |
 | $C_{\Pi}$ | the change of basis from the coefficient basis to the Peirce frame, $\det C_{\Pi}=-\tfrac14$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; the diagonal one is the mark of the declared unit |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |

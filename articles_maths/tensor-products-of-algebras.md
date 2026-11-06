@@ -117,13 +117,13 @@ $$
 
 of real dimension $2 \cdot 4 = 8$. The copy of $\mathbb{C}$ given by $\mathbb{C} \otimes 1$ is the central scalar imaginary $i$ with $i^2 = -1$, and it commutes with the quaternion units $1 \otimes e_\mu$. This is the definition of $\mathbb{B}$ used in *Biquaternion Algebra ($\mathbb{B}$)*.
 
-**Example (the split biquaternions).** With $A = \mathbb{C}^{\mathrm{spl}}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,
+**Example (the split biquaternions).** With $A = \mathbb{C}_{\mathrm{spl}}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,
 
 $$
-\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H},
+\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{C}^{\mathrm{spl}}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of *Split-Biquaternion Algebra*, and the ideals and the Peirce decomposition of *Split-Biquaternion Ideals and Peirce Decomposition*.
+the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{C}_{\mathrm{spl}}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of *Split-Biquaternion Algebra*, and the ideals and the Peirce decomposition of *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 **Example (matrix algebras).** For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras
 
@@ -167,7 +167,7 @@ $$
 (a,b)_F = F\langle i,j\rangle\big/\bigl(i^2 - a,\; j^2 - b,\; ij + ji\bigr),
 $$
 
-so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_\mu$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in *Central Simple Algebras and the Brauer Group*.
+so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{C}_{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_\mu$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in *Central Simple Algebras and the Brauer Group*.
 
 ## Functoriality and Base Change
 
@@ -187,7 +187,7 @@ $$
 
 an $S$-algebra with product $(a \otimes s)(a' \otimes s') = aa' \otimes ss'$. Every $R$-algebra homomorphism $A \to B$ induces an $S$-algebra homomorphism $A \otimes_R S \to B \otimes_R S$, so base change is a functor from $R$-algebras to $S$-algebras. It is left adjoint to the functor from $S$-algebras to $R$-algebras that regards an $S$-algebra as an $R$-algebra along $R \to S$.
 
-**Example.** Over $\mathbb{R}$, complexification sends $\mathbb{H}$ to $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ and $\mathbb{C}^{\mathrm{spl}}$ to $\mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$; the second is a splitting of the split complex numbers into two copies of $\mathbb{C}$, and it is the complex analogue of $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$.
+**Example.** Over $\mathbb{R}$, complexification sends $\mathbb{H}$ to $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ and $\mathbb{C}_{\mathrm{spl}}$ to $\mathbb{C}_{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$; the second is a splitting of the split complex numbers into two copies of $\mathbb{C}$, and it is the complex analogue of $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$.
 
 **Proposition (base change commutes with quotients).** Let $I \subseteq A$ be a two-sided ideal and let $R \to S$ be a ring homomorphism. Then the image of $I \otimes_R S$ in $A \otimes_R S$ is a two-sided ideal, and
 
@@ -229,7 +229,7 @@ The tensor product has one structural property, the reason for the name of this 
 
 *Proof (sketch).* The centre is computed by the proposition on centres: extending scalars to an algebraic closure, where $A$ and $B$ become matrix algebras, the tensor product becomes a matrix algebra and is central simple. Descent along the finite Galois extension then gives the result in general.
 
-So the tensor product makes the similarity classes of central simple algebras into an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra. For a quaternion algebra the opposite algebra is isomorphic to it, by the map that fixes $i$ and negates $j$: it sends the defining relations $i^2 = a$, $j^2 = b$, $ji = -ij$ to $i^2 = a$, $(-j)^2 = b$, $(-j)i = -ji = ij$, so the class of $(a,b)_F$ has order dividing $2$ and $(a,b)_F \otimes_F (a,b)_F \cong (a,b)_F \otimes_F (a,b)_F^{\mathrm{opp}} \cong M_4(F)$. Wedderburn's structure theorem, the index and the exponent, and the Clifford invariant that identifies the $2$-torsion of the Brauer group with the quadratic forms, are the subject of *Central Simple Algebras and the Brauer Group*, and are not developed further here.
+So the tensor product makes the similarity classes of central simple algebras into an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra. For a quaternion algebra the opposite algebra is isomorphic to it, by the map that fixes $i$ and negates $j$: it sends the defining relations $i^2 = a$, $j^2 = b$, $ji = -ij$ to $i^2 = a$, $(-j)^2 = b$, $(-j)i = -ji = ij$, so the class of $(a,b)_F$ has order dividing $2$ and $(a,b)_F \otimes_F (a,b)_F \cong (a,b)_F \otimes_F (a,b)_{\mathrm{opp},F} \cong M_4(F)$. Wedderburn's structure theorem, the index and the exponent, and the Clifford invariant that identifies the $2$-torsion of the Brauer group with the quadratic forms, are the subject of *Central Simple Algebras and the Brauer Group*, and are not developed further here.
 
 ## Tensor Powers of an Algebra
 
@@ -267,7 +267,7 @@ Each $\sigma$ acts by an algebra automorphism, because the product is componentw
 
 The **tensor product of algebras** $A \otimes_R B$ is the module tensor product with the componentwise product $(a\otimes b)(a'\otimes b') = aa' \otimes bb'$. It is associative and unital when its factors are, commutative when its factors are, and its centre contains $Z(A) \otimes_R Z(B)$, with equality when $R$ is a field. Its universal property is that algebra homomorphisms $A \otimes_R B \to C$ correspond to pairs of homomorphisms $A \to C$, $B \to C$ with commuting images; for commutative algebras this makes $\otimes_R$ the coproduct, not the product, and in general $A \otimes B$ is the quotient of the free product $A \sqcup B$ by the relations $ab = ba$. Over a common algebra $A$ the tensor product of two quotients is the pushout of the diagram $A/I \leftarrow A \rightarrow A/J$ in commutative $A$-algebras, with $(A/I) \otimes_A (A/J) \cong A/(I+J)$.
 
-The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; their similarity classes form the Brauer group $\mathrm{Br}(F)$, and the class of a quaternion algebra has order dividing $2$, so $(a,b)_F \otimes_F (a,b)_F \cong M_4(F)$.
+The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; their similarity classes form the Brauer group $\mathrm{Br}(F)$, and the class of a quaternion algebra has order dividing $2$, so $(a,b)_F \otimes_F (a,b)_F \cong M_4(F)$.
 
 ## Summary of Notation
 
@@ -282,9 +282,9 @@ The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \math
 | $A \otimes_R S$ | Base change along $R \to S$ |
 | $M_n(R)$ | Matrix algebra; $M_m \otimes M_n \cong M_{mn}$ |
 | $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ | Biquaternions |
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$ | Split biquaternions |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$ | Split biquaternions |
 | $(a,b)_F$ | Quaternion algebra over $F$ |
-| $A^{\mathrm{opp}}$ | Opposite algebra |
+| $A_{\mathrm{opp}}$ | Opposite algebra |
 | $\mathrm{Br}(F)$ | Brauer group of $F$ |
 | $A^{\otimes n}$ | $n$-th tensor power of the algebra $A$ |
 | $S_n$ | Symmetric group acting by permutations of factors |

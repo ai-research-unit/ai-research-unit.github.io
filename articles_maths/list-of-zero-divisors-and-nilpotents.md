@@ -23,7 +23,7 @@ Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{
 
 | Ring | The nilpotent | Its index | Introduced in |
 |---|---|---|---|
-| $\mathbb{C}^{\mathrm{dln}}$, the dual numbers | $\varepsilon$, with $\varepsilon^2 = 0$ | $2$ | *Dual-Numbers Algebra* |
+| $\mathbb{C}_{\mathrm{dln}}$, the dual numbers | $\varepsilon$, with $\varepsilon^2 = 0$ | $2$ | *Dual-Numbers Algebra* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $2$, with $2^2 = 0$ | $2$ | *Reduced Rings and the Nilradical* |
 | $\mathbb{Z}/8\mathbb{Z}$ | $2$, with $2^3 = 0$ | $3$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/p^n\mathbb{Z}$ | $p$, with $p^n = 0$ | $n$ | *Modular Arithmetic and the Ring of Residues* |
@@ -39,10 +39,10 @@ The nilpotents of a commutative ring form an ideal, the nilradical, which is the
 
 | Ring | The nontrivial idempotents | The decomposition they induce | Introduced in |
 |---|---|---|---|
-| $\mathbb{C}^{\mathrm{spl}}$, the split-complex numbers | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{spl}}$, the split-complex numbers | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | the images of $(1,0)$ and $(0,1)$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
 | $R \times S$ | $(1,0)$ and $(0,1)$ | the ring is the product by construction | *Examples of Rings and Fields* |
-| $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | $\pi_x$, $\pi_y$ | $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | $\pi_x$, $\pi_y$ | $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ | *Split-Biquaternion Zero Divisors* |
 | $M_2(\mathbb{R})$ | $E_{11}$, $E_{22}$ | the column decomposition $\mathbb{R}^2 = \mathbb{R}\vec e_x \oplus \mathbb{R}\vec e_y$ | *Matrix Algebras* |
 | a Boolean ring $B$ | every element | $B$ is a product of copies of $\mathbb{F}_2$ | *Von Neumann Regular Rings* |
 | $\mathbb{Q}[C_3]$ | the orbit sums of the components | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\omega_3)$ | *Examples of Rings and Fields* |
@@ -68,12 +68,12 @@ The torsion case is where the three kinds of zero divisor separate most cleanly:
 |---|---|---|---|
 | $M_2(\mathbb{R})$ | yes: the nilpotent matrices with $N^2 = 0$ | yes: $E_{11}$, $E_{22}$ | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
-| $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | no nonzero nilpotents | yes: $\pi_x$, $\pi_y$ | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | no nonzero nilpotents | yes: $\pi_x$, $\pi_y$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{H}$ | none | none | *Quaternion Algebra* |
 | the upper triangular matrices | yes: the strictly upper triangular matrices | yes: the diagonal idempotents | *Matrix Algebras* |
 | $k[G]$ for $G$ with torsion | when the characteristic divides the order | from the idempotents of the group algebra | *Group Algebras* |
 
-The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}$ has both kinds, since the vanishing of its norm produces nilpotents as well as idempotents, while $\mathbb{B}^{\mathrm{spl}}$ has only the idempotents, since it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two division rings and a product of division rings has no nonzero nilpotents. The matrix ring $M_2(\mathbb{R})$ is semisimple and has no nonzero nilpotent ideal, yet it has nilpotent elements: semisimplicity forbids a nilpotent ideal and not a nilpotent element.
+The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}$ has both kinds, since the vanishing of its norm produces nilpotents as well as idempotents, while $\mathbb{B}_{\mathrm{spl}}$ has only the idempotents, since it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two division rings and a product of division rings has no nonzero nilpotents. The matrix ring $M_2(\mathbb{R})$ is semisimple and has no nonzero nilpotent ideal, yet it has nilpotent elements: semisimplicity forbids a nilpotent ideal and not a nilpotent element.
 
 ## The Reduced Rings
 
@@ -84,9 +84,9 @@ The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}
 | $\mathbb{Z}/6\mathbb{Z}$ | the modulus is squarefree, so no nonzero element has a zero power | *Reduced Rings and the Nilradical* |
 | a product of reduced rings | the nilpotents of a product are the tuples of nilpotents | *Reduced Rings and the Nilradical* |
 | a Boolean ring | every element is idempotent, so $a^n = a \neq 0$ for $a \neq 0$ | *Von Neumann Regular Rings* |
-| $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | isomorphic to $\mathbb{H} \oplus \mathbb{H}$, a product of division rings | *Split-Biquaternion Zero Divisors* |
+| $\mathbb{B}_{\mathrm{spl}}$, the split-biquaternions | isomorphic to $\mathbb{H} \oplus \mathbb{H}$, a product of division rings | *Split-Biquaternion Zero Divisors* |
 
-A ring is reduced when it has no nonzero nilpotent, equivalently when its nilradical is zero. The reduced rings may still have zero divisors, and $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{B}^{\mathrm{spl}}$ are the two standard cases of that phenomenon in the corpus: the first by torsion and the second by idempotents.
+A ring is reduced when it has no nonzero nilpotent, equivalently when its nilradical is zero. The reduced rings may still have zero divisors, and $\mathbb{Z}/6\mathbb{Z}$ and $\mathbb{B}_{\mathrm{spl}}$ are the two standard cases of that phenomenon in the corpus: the first by torsion and the second by idempotents.
 
 ## Warnings
 
@@ -111,10 +111,10 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{Z}/n\mathbb{Z}$ | The residue ring; $\mathbb{Z}/6\mathbb{Z}$ reduced, $\mathbb{Z}/4\mathbb{Z}$ not |
 | $\varepsilon$ | The nilpotent generator of the dual numbers, $\varepsilon^2 = 0$ |
-| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{C}^{\mathrm{spl}}$, $\tilde\Pi_{1,2}$ in $\mathbb{B}^{\mathrm{spl}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
+| $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{C}_{\mathrm{spl}}$, $\tilde\Pi_{1,2}$ in $\mathbb{B}_{\mathrm{spl}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $E_{11}$, $E_{22}$, $E_{12}$ | Matrix units; $E_{12}$ is nilpotent |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers, dual numbers |
-| $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$ | Biquaternions with nilpotents, split-biquaternions without |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Split-complex numbers, dual numbers |
+| $\mathbb{B}$, $\mathbb{B}_{\mathrm{spl}}$ | Biquaternions with nilpotents, split-biquaternions without |
 | $\mathbb{H}$ | The quaternions, with neither |
 | $\tilde{Q}$ | A biquaternion |
 | $B$ | A Boolean ring |

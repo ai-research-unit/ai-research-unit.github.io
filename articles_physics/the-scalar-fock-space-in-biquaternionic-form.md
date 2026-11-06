@@ -7,7 +7,7 @@ The companion article *Canonical Quantization of the Biquaternion Klein–Gordon
 The general construction is not in question and is not re-derived. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* fixes it once for the whole series: a one-particle space $\mathcal{H}_1$, the direct sum of its tensor powers projected onto the symmetry type selected by the statistics, creation and annihilation operators raising and lowering the degree, and a number operator whose eigenvalues are the occupation numbers. For bosons the projection is symmetric and the bracket is a commutator. What is specific to the scalar sector is which module the construction starts from and what the algebra contributes to it. Three answers organise the article.
 
 1. **The one-particle space is a module over the centre of the algebra, and carries the trivial action of its spin part.** The positive-frequency solutions of the parent equation transform in the trivial representation of the Lorentz group; no spinor index is carried. The trace-free part of $\mathbb{B}$, which carries the Lorentz/spin content, therefore annihilates a spin-$0$ state, and only the central scalars act nontrivially. The irreducible modules of $\mathbb{B}\cong M_2(\mathbb{C})$ are the spinor modules, and the scalar state space is not one of them: it is a module for the centre, in contrast with the spinor module, on which the whole algebra acts. This is the state-space form of the statement that spin $0$ escapes the biquaternion state module.
-2. **The Fock space is the symmetric algebra of that module, and it is not an object of $\mathbb{B}$.** The occupation basis is the standard bosonic one; the vacuum is the degree-zero term; the number operator grades by total occupation. None of these is a subalgebra or a subspace of the four-dimensional algebra, and the companion Fock-space article proves the exclusion by the trace of a commutator: no pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\in\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$.
+2. **The Fock space is the symmetric algebra of that module, and it is not an object of $\mathbb{B}$.** The occupation basis is the standard bosonic one; the vacuum is the degree-zero term; the number operator grades by total occupation. None of these is a subalgebra or a subspace of the four-dimensional algebra, and the companion Fock-space article proves the exclusion by the trace of a commutator: no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ satisfies $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$.
 3. **The state space carries a $\mathbb{N}$-grading by number and a $\mathbb{Z}$-grading by charge, and no $\mathbb{Z}/2$ parity grading.** The scalar Fock space is graded by particle number and, for the complex field, by the $\mathrm{U}(1)$ charge, whose sectors are the fixed-particle-number, fixed-charge subspaces. There is no bosonic analogue of the fermion parity that the Dirac case needs, because the bosonic operators commute and no graded-commutativity is imposed.
 
 The article is organised as follows. The next section fixes the one-particle space and its module structure. The following section builds the symmetric algebra and the occupation basis. The next section treats the vacuum. The section after that treats the number operator and the two gradings. The next section states the obstruction to a Fock space inside $\mathbb{B}$, verifies the dimension count, and contrasts it with the bounded fermionic case. A section connects the Fock construction to the informational sector and the trace formula. A short section treats coherent states and the central phase. The article closes with the standard/open separation.
@@ -47,7 +47,7 @@ The complex structure that makes $\mathcal{H}_1$ a complex vector space is the c
 The one-particle space is fixed up to $*$-unitary equivalence by two inputs: the mass shell and the little-group representation. The on-shell momenta of mass $\mu$ form the orbit of a representative momentum under the orthochronous Lorentz group, and the stability group of that representative is the rotation group $SO(3)$, the little group of a massive particle. A particle of spin $s$ transforms in the $(2s+1)$-dimensional irreducible representation of the little group, and the one-particle space is the space of square-integrable functions on the mass shell with values in that representation. For the scalar field $s=0$, and the little-group representation is the **trivial** one,
 
 $$
-|\vec p\rangle={a^{\mathrm{fop}}_{\vec p}}^\dagger|0\rangle,
+|\vec p\rangle={a_{\mathrm{fop},\vec p}}^\dagger|0\rangle,
 \qquad
 U(\Lambda)|\vec p\rangle=|\Lambda\vec p\rangle ,
 $$
@@ -73,19 +73,19 @@ $$
 the subscript denoting the projection onto the totally symmetric tensors. Creation and annihilation operators act by
 
 $$
-a^{\mathrm{fop}\dagger}(\vec p):\ \mathrm{sym}^n\to\mathrm{sym}^{n+1},
+a_{\mathrm{fop}}^{\dagger}(\vec p):\ \mathrm{sym}^n\to\mathrm{sym}^{n+1},
 \qquad
-a^{\mathrm{fop}}(\vec p):\ \mathrm{sym}^n\to\mathrm{sym}^{n-1},
+a_{\mathrm{fop}}(\vec p):\ \mathrm{sym}^n\to\mathrm{sym}^{n-1},
 $$
 
-and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $N_a=\int\frac{d^3p}{(2\pi)^3}a^{\mathrm{fop}\dagger}_{\vec p}a^{\mathrm{fop}}_{\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
+and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $N_a=\int\frac{d^3p}{(2\pi)^3}a_{\mathrm{fop},\vec p}^{\dagger}a_{\mathrm{fop},\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
 
 $$
 |n_{\vec p_1},n_{\vec p_2},\dots\rangle
-=\prod_i\frac{\big(a^{\mathrm{fop}\dagger}_{\vec p_i}\big)^{n_i}}{\sqrt{n_i!}}\,|0\rangle ,
+=\prod_i\frac{\big(a_{\mathrm{fop},\vec p_i}^{\dagger}\big)^{n_i}}{\sqrt{n_i!}}\,|0\rangle ,
 $$
 
-and the normalization is the standard bosonic one, with $n_i\in\mathbb{N}$ unbounded above. For the complex field the creation operators come in two families, $a^{\mathrm{fop}\dagger}$ for particles and $b^{\mathrm{fop}\dagger}$ for antiparticles, and the basis is labelled by both occupations.
+and the normalization is the standard bosonic one, with $n_i\in\mathbb{N}$ unbounded above. For the complex field the creation operators come in two families, $a_{\mathrm{fop}}^{\dagger}$ for particles and $b_{\mathrm{fop}}^{\dagger}$ for antiparticles, and the basis is labelled by both occupations.
 
 The one-particle space carries the representation content of the field, and the symmetric algebra inherits it: the $n$-particle sector is the symmetric part of the $n$-fold tensor power of the trivial spin-$0$ representation, hence again trivial, and the $\mathrm{U}(1)$ charge of an $n$-particle state is $n$ (or $n_a-n_b$ for the complex field). The Fock space is a module for the CCR algebra generated by the modes, not for $\mathbb{B}$; the centre acts on it by scalars, and the spin part of the algebra acts trivially on it, so the whole apparatus of the spinor sectors is absent.
 
@@ -115,7 +115,7 @@ so that the truncation to total occupation at most $n_{\max}$ has dimension $\su
 The vacuum $|0\rangle$ spans the degree-zero term $\mathrm{sym}^0\mathcal{H}_1=\mathbb{C}$ and is annihilated by every annihilation operator,
 
 $$
-a^{\mathrm{fop}}_{\vec p}|0\rangle=0\quad\forall\vec p,
+a_{\mathrm{fop},\vec p}|0\rangle=0\quad\forall\vec p,
 \qquad
 \langle0|0\rangle=1 ,
 $$
@@ -131,23 +131,23 @@ One point of contact survives and is treated in a later section: a **truncated**
 The number operator grades the Fock space by total occupation,
 
 $$
-N=\int\!\frac{d^3p}{(2\pi)^3}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}+{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right),
+N=\int\!\frac{d^3p}{(2\pi)^3}\left({a_{\mathrm{fop},\vec p}}^\dagger a_{\mathrm{fop},\vec p}+{b_{\mathrm{fop},\vec p}}^\dagger b_{\mathrm{fop},\vec p}\right),
 \qquad
 \mathcal{F}=\bigoplus_{n\ge0}\mathcal{F}_n,
 \qquad
 N\big|_{\mathcal{F}_n}=n ,
 $$
 
-and its commutators with the modes are $[N,a^{\mathrm{fop}\dagger}_{\vec p}]=+a^{\mathrm{fop}\dagger}_{\vec p}$ and $[N,a^{\mathrm{fop}}_{\vec p}]=-a^{\mathrm{fop}}_{\vec p}$, in the bosonic case exactly as in the fermionic one. The number grading is the $\mathbb{N}$-grading of the symmetric algebra.
+and its commutators with the modes are $[N,a_{\mathrm{fop},\vec p}^{\dagger}]=+a_{\mathrm{fop},\vec p}^{\dagger}$ and $[N,a_{\mathrm{fop},\vec p}]=-a_{\mathrm{fop},\vec p}$, in the bosonic case exactly as in the fermionic one. The number grading is the $\mathbb{N}$-grading of the symmetric algebra.
 
 The complex scalar field carries a second grading, by the conserved charge,
 
 $$
-Ϙ^{\mathrm{fop}}=\int\!\frac{d^3p}{(2\pi)^3}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}-{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right),
+Ϙ_{\mathrm{fop}}=\int\!\frac{d^3p}{(2\pi)^3}\left({a_{\mathrm{fop},\vec p}}^\dagger a_{\mathrm{fop},\vec p}-{b_{\mathrm{fop},\vec p}}^\dagger b_{\mathrm{fop},\vec p}\right),
 \qquad
 \mathcal{F}=\bigoplus_{Ϙ\in\mathbb{Z}}\mathcal{F}_Ϙ,
 \qquad
-Ϙ^{\mathrm{fop}}\big|_{\mathcal{F}_Ϙ}=Ϙ .
+Ϙ_{\mathrm{fop}}\big|_{\mathcal{F}_Ϙ}=Ϙ .
 $$
 
 The charge grading is a $\mathbb{Z}$-grading, and it is the grading that separates the particle from the antiparticle sectors; a state of charge $Ϙ$ contains, in the simplest case, $Ϙ$ more particles than antiparticles. It is a superselection rule: the charge is central and conserved, so no local operator of the theory connects different $\mathcal{F}_Ϙ$, and the relative phase between charge sectors is unobservable. This is the bosonic counterpart of the fermionic charge; a process that creates a particle–antiparticle pair changes the total number by two and the charge by zero, so it moves within a fixed $\mathcal{F}_Ϙ$.
@@ -159,32 +159,32 @@ The two gradings are distinct and neither is the fermion parity. The parity grad
 The number operator of a mode is obtained from the field by normal ordering, and the construction makes the positivity of the spectrum explicit. With the positive- and negative-frequency parts of the companion field article,
 
 $$
-:\!\xi^{\mathrm{fop}\dagger}(x)\xi^{\mathrm{fop}}(x)\!:
-\,=\,\xi^{\mathrm{fop}{}(+){}^{*}}(x)\,\xi^{\mathrm{fop}(+)}(x)
-+\xi^{\mathrm{fop}(-)}(x)\,\xi^{\mathrm{fop}{}(-){}^{*}}(x)
-+\xi^{\mathrm{fop}{}(+){}^{*}}(x)\,\xi^{\mathrm{fop}(-)}(x)
-+\xi^{\mathrm{fop}{}(-){}^{*}}(x)\,\xi^{\mathrm{fop}(+)}(x),
+:\!\xi_{\mathrm{fop}}^{\dagger}(x)\xi_{\mathrm{fop}}(x)\!:
+\,=\,\xi_{\mathrm{fop}}^{{}(+){}^{*}}(x)\,\xi_{\mathrm{fop}}^{(+)}(x)
++\xi_{\mathrm{fop}}^{(-)}(x)\,\xi_{\mathrm{fop}}^{{}(-){}^{*}}(x)
++\xi_{\mathrm{fop}}^{{}(+){}^{*}}(x)\,\xi_{\mathrm{fop}}^{(-)}(x)
++\xi_{\mathrm{fop}}^{{}(-){}^{*}}(x)\,\xi_{\mathrm{fop}}^{(+)}(x),
 $$
 
-the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\xi^{\mathrm{fop}\dagger}\xi^{\mathrm{fop}}$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\xi^{\mathrm{fop}{}(-){}^{*}}\xi^{\mathrm{fop}(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\xi^{\mathrm{fop}{}(-){}^{*}},\xi^{\mathrm{fop}(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
+the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\xi_{\mathrm{fop}}^{{}(-){}^{*}}\xi_{\mathrm{fop}}^{(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\xi_{\mathrm{fop}}^{{}(-){}^{*}},\xi_{\mathrm{fop}}^{(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
 
 $$
-N_{\vec p}={a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p} ,
+N_{\vec p}={a_{\mathrm{fop},\vec p}}^\dagger a_{\mathrm{fop},\vec p} ,
 \qquad
-\langle\tilde{Ξ}^{\mathrm{sp}}|N_{\vec p}|\tilde{Ξ}^{\mathrm{sp}}\rangle
-=\big\|a^{\mathrm{fop}}_{\vec p}\tilde{Ξ}^{\mathrm{sp}}\big\|^2\ge0 ,
+\langle\tilde{Ξ}_{\mathrm{sp}}|N_{\vec p}|\tilde{Ξ}_{\mathrm{sp}}\rangle
+=\big\|a_{\mathrm{fop},\vec p}\tilde{Ξ}_{\mathrm{sp}}\big\|^2\ge0 ,
 $$
 
-so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.
+so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.
 
 ## Why There Is No Scalar Fock Space Inside Biquaternions
 
 The obstruction has two forms, a trace identity and a dimension count, and they are the same statement seen twice.
 
-**The trace identity.** If $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ were elements of $\mathbb{B}$ satisfying the canonical relation $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$, then taking the trace would give
+**The trace identity.** If $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ were elements of $\mathbb{B}$ satisfying the canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$, then taking the trace would give
 
 $$
-\boxed{\;0=\mathrm{Tr}\big([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]\big)
+\boxed{\;0=\mathrm{Tr}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)
 =c\,\mathrm{Tr}(e_t)=2c ,
 \qquad\text{hence}\qquad c=0\;}.
 $$
@@ -232,10 +232,10 @@ Although no oscillator lives in $\mathbb{B}$, the Fock space does carry the stan
 $$
 |\alpha\rangle=\exp(-|\alpha|^2/2)\sum_{n\ge0}\frac{\alpha^n}{\sqrt{n!}}\,|n\rangle,
 \qquad
-a^{\mathrm{fop}}|\alpha\rangle=\alpha|\alpha\rangle,
+a_{\mathrm{fop}}|\alpha\rangle=\alpha|\alpha\rangle,
 $$
 
-and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U^{\mathrm{fop}}_{\alpha_0}=\exp(i\alpha_0Ϙ^{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=+a^{\mathrm{fop}\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central $*$-unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
+and the **displacement** $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\alpha^*a_{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U_{\mathrm{fop},\alpha_0}=\exp(i\alpha_0Ϙ_{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=+a_{\mathrm{fop}}^{\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central $*$-unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
 
 ## What Is Standard and What Is Open
 
@@ -253,7 +253,7 @@ and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*
 
 The scalar Fock space is the symmetric algebra of the one-particle space, $\mathcal{F}=\bigoplus_{n\ge0}\mathrm{sym}^n\mathcal{H}_1$, with $\mathcal{H}_1=L^2(\mathbb{R}^3,d^3p/(2\pi)^3 2E_{\vec p})$; its occupation basis, creation and annihilation operators, vacuum and number operator are the standard bosonic ones. The one-particle space is a module for the centre: no non-central element acts on a spin-$0$ state without mixing it into another spin sector, so the whole algebra cannot act on it, in contrast with the spinor module that carries the fermionic sectors. The state space is a module for the CCR algebra, not for $\mathbb{B}$.
 
-The scalar Fock space is not an object of $\mathbb{B}$. The obstruction is the trace of a commutator: a canonical relation $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ inside the algebra would force $2c=\mathrm{Tr}([a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}])=0$, hence $c=0$, so no bosonic mode exists in the four-dimensional algebra; the companion Fock-space article's fermionic one-mode result is the contrasting case, in which the vacuum is the idempotent $\tfrac12(e_t+i\vec e_z)$. The dimension count says the same thing: the $d$-mode truncation to total occupation $n_{\max}$ has dimension $\binom{d+n_{\max}}{n_{\max}}$, which for a single mode reaches $4$ at $n_{\max}=3$ and exceeds it from $n_{\max}=4$ onward, and the symmetric algebra is infinite-dimensional.
+The scalar Fock space is not an object of $\mathbb{B}$. The obstruction is the trace of a commutator: a canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ inside the algebra would force $2c=\mathrm{Tr}([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}])=0$, hence $c=0$, so no bosonic mode exists in the four-dimensional algebra; the companion Fock-space article's fermionic one-mode result is the contrasting case, in which the vacuum is the idempotent $\tfrac12(e_t+i\vec e_z)$. The dimension count says the same thing: the $d$-mode truncation to total occupation $n_{\max}$ has dimension $\binom{d+n_{\max}}{n_{\max}}$, which for a single mode reaches $4$ at $n_{\max}=3$ and exceeds it from $n_{\max}=4$ onward, and the symmetric algebra is infinite-dimensional.
 
 The state space carries two gradings, an $\mathbb{N}$-grading by total number and, for the complex field, a $\mathbb{Z}$-grading by charge whose sectors are the superselection sectors of the $\mathrm{U}(1)$; there is no $\mathbb{Z}/2$ parity grading, because the bosonic modes commute and no graded-commutativity is imposed. The informational sector's trace formula applies to finite truncations only; the scalar vacuum is not a density operator in $\mathbb{M}_+$, and the coherent states are the imported bosonic construction on the module the algebra supplies.
 
@@ -268,16 +268,16 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; its scalars are the only elements acting on the scalar one-particle space |
 | $\mathcal{H}_1=L^2(\mathbb{R}^3,\frac{d^3p}{(2\pi)^3 2E_{\vec p}})$ | Scalar one-particle space |
 | $\mathcal{F}=\bigoplus_n\mathrm{sym}^n\mathcal{H}_1$ | Scalar Fock space (symmetric algebra) |
-| $a^{\mathrm{fop}}_{\vec p},a^{\mathrm{fop}\dagger}_{\vec p},b^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}\dagger}_{\vec p}$ | Mode operators (particle and antiparticle) |
+| $a_{\mathrm{fop},\vec p},a_{\mathrm{fop},\vec p}^{\dagger},b_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}^{\dagger}$ | Mode operators (particle and antiparticle) |
 | $\vert n_{\vec p_1},n_{\vec p_2},\dots\rangle$ | Occupation basis; $n_i\in\mathbb{N}$ |
-| $N=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Number operator ($\mathbb{N}$-grading) |
-| $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
+| $N=\int\frac{d^3p}{(2\pi)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Number operator ($\mathbb{N}$-grading) |
+| $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
 | $\mathrm{sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
 | $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied idempotents (contrast case) |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ | Trace reading at normalisation (Born rule), for finite truncations |
-| $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
-| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
+| $D(\alpha)=\exp(\alpha a_{\mathrm{fop}}^{\dagger}-\alpha^*a_{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
+| $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
 
 ## Further Reading
 

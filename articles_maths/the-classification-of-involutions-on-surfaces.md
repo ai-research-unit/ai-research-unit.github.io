@@ -27,11 +27,11 @@ Let $S = S_g$ be the closed orientable surface of genus $g$, and let $T$ be an o
 
 **Definition.** The **quotient orbifold** $O = S/T$ is the orbit space, a surface with finitely many **cone points** of order $2$, the images of the fixed points; its underlying surface is orientable of some genus $\gamma$, and the number of cone points is the number $r$ of fixed points of $T$. The **orbifold Euler characteristic** is
 $$
-\chi^{\mathrm{obf}}(O) = 2 - 2\gamma - \tfrac{r}{2},
+\chi_{\mathrm{obf}}(O) = 2 - 2\gamma - \tfrac{r}{2},
 $$
 and the quotient map is a $2$-fold cover branched at the cone points.
 
-**Theorem (Riemann–Hurwitz).** The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi^{\mathrm{obf}}(O)$, that is,
+**Theorem (Riemann–Hurwitz).** The Euler characteristics of $S$ and of the quotient orbifold are related by $\chi(S) = 2\,\chi_{\mathrm{obf}}(O)$, that is,
 $$
 \boxed{\;2 - 2g = 2\Bigl(2 - 2\gamma - \tfrac{r}{2}\Bigr) = 4 - 4\gamma - r\;},
 $$
@@ -90,13 +90,13 @@ the reflection swapping the two copies is an orientation-reversing involution, a
 
 ## The Quotient Orbifold and its Fundamental Group
 
-**Definition.** A **$2$-orbifold** is a surface together with a finite set of marked points, each with a cyclic group of orders $\geq2$ ("cone points"), and a finite set of marked boundary circles, each with a cyclic group acting by reflection ("mirror circles"); the orbifold fundamental group $\pi_1^{\mathrm{orb}}(O)$ is the fundamental group of the complement of the singular locus to which the local groups are adjoined, so that a loop around a cone point of order $n$ contributes a generator of order $n$ and a loop running to a mirror circle contributes an involution.
+**Definition.** A **$2$-orbifold** is a surface together with a finite set of marked points, each with a cyclic group of orders $\geq2$ ("cone points"), and a finite set of marked boundary circles, each with a cyclic group acting by reflection ("mirror circles"); the orbifold fundamental group $\pi_{\mathrm{orb},1}(O)$ is the fundamental group of the complement of the singular locus to which the local groups are adjoined, so that a loop around a cone point of order $n$ contributes a generator of order $n$ and a loop running to a mirror circle contributes an involution.
 
 **Proposition (the orbifold fundamental group of the quotient).** Let $T$ be an orientation-preserving involution of $S_g$ with $r$ fixed points; then there is an extension
 $$
-1\longrightarrow \pi_1(S_g)\longrightarrow \pi_1^{\mathrm{orb}}(O)\longrightarrow \mathbb{Z}/2\longrightarrow 1,
+1\longrightarrow \pi_1(S_g)\longrightarrow \pi_{\mathrm{orb},1}(O)\longrightarrow \mathbb{Z}/2\longrightarrow 1,
 $$
-and $\pi_1^{\mathrm{orb}}(O)$ has a presentation with the $r$ generators of order two for the cone points; the extension is the one describing the branched cover. For an orientation-reversing involution the analogous extension describes the cover branched along the mirror circles, with the mirror circles contributing involutions.
+and $\pi_{\mathrm{orb},1}(O)$ has a presentation with the $r$ generators of order two for the cone points; the extension is the one describing the branched cover. For an orientation-reversing involution the analogous extension describes the cover branched along the mirror circles, with the mirror circles contributing involutions.
 
 **Proof sketch.** The quotient map away from the singular locus is a covering, giving the first map; the local group at a cone point provides the element of order two over it, and the composition onto $\mathbb{Z}/2$ records the sheet. The presentations are read off a triangulation of the orbifold. The orbifold groups are developed in the hyperbolic-geometry and low-dimensional articles, and the statement here is the bookkeeping needed for the classification.
 
@@ -138,7 +138,7 @@ An involution of a closed orientable surface either preserves the orientation, i
 | $k$ | the number of fixed circles of an orientation-reversing involution |
 | $k\leq g+1$, $k\equiv g+1\pmod2$ | the range and parity of $k$ in the nonempty case |
 | $\Sigma\cup_{\partial\Sigma}\Sigma$, $g=2\gamma+k-1$ | the double construction realising the reversing involutions |
-| $\chi^{\mathrm{obf}} = 2-2\gamma-r/2$ | the orbifold Euler characteristic; Riemann–Hurwitz $\chi(S)=2\chi^{\mathrm{obf}}$ |
+| $\chi_{\mathrm{obf}} = 2-2\gamma-r/2$ | the orbifold Euler characteristic; Riemann–Hurwitz $\chi(S)=2\chi_{\mathrm{obf}}$ |
 | $N(T) = \#\mathrm{Fix}(T)$ | the Nielsen number of an involution with isolated fixed points |
 | $N_{g+1}$ | the non-orientable closed surface, $\chi = 1-g$, the quotient in the free case |
 

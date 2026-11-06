@@ -203,13 +203,13 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 ### The Profinite Completion
 
-**Definition.** The **profinite completion** of an abstract group $G$ is $\hat G^{\mathrm{pf}} = \varprojlim_{N \trianglelefteq G, \ [G:N] < \infty} G/N$, with the natural map $G \to \hat G^{\mathrm{pf}}$; it is injective exactly when $G$ is **residually finite**. A group is residually finite if every nontrivial element survives in some finite quotient. The hat carries two meanings in this article and they are kept apart: $\hat G$ is the completion of a topological group in its two-sided uniformity, while $\hat G^{\mathrm{pf}}$ is the profinite completion of an abstract group.
+**Definition.** The **profinite completion** of an abstract group $G$ is $\hat G_{\mathrm{pf}} = \varprojlim_{N \trianglelefteq G, \ [G:N] < \infty} G/N$, with the natural map $G \to \hat G_{\mathrm{pf}}$; it is injective exactly when $G$ is **residually finite**. A group is residually finite if every nontrivial element survives in some finite quotient. The hat carries two meanings in this article and they are kept apart: $\hat G$ is the completion of a topological group in its two-sided uniformity, while $\hat G_{\mathrm{pf}}$ is the profinite completion of an abstract group.
 
-**Theorem.** The profinite completion $\hat G^{\mathrm{pf}}$ is profinite, $\hat G^{\mathrm{pf}}$ contains $G$ as a dense subgroup, and the assignment is functorial: a homomorphism $G \to H$ induces $\hat G^{\mathrm{pf}} \to H^{\mathrm{pf}}$, continuous. Free groups, finitely generated linear groups and finitely generated abelian groups are residually finite.
+**Theorem.** The profinite completion $\hat G_{\mathrm{pf}}$ is profinite, $\hat G_{\mathrm{pf}}$ contains $G$ as a dense subgroup, and the assignment is functorial: a homomorphism $G \to H$ induces $\hat G_{\mathrm{pf}} \to H_{\mathrm{pf}}$, continuous. Free groups, finitely generated linear groups and finitely generated abelian groups are residually finite.
 
-**Proof.** Density: an element of $\hat G^{\mathrm{pf}}$ is a compatible family of cosets, and any basic neighbourhood fixes finitely many coordinates, hence contains an element of the image of $G$ by compatibility and the Chinese remainder-type argument. Functoriality: a homomorphism carries each finite-index normal subgroup of $H$ to one of $G$ after intersection, so it induces maps on the finite quotients, compatible with the system. Residual finiteness of free groups is the standard consequence of their linearity; of finitely generated abelian groups, by reduction modulo primes.
+**Proof.** Density: an element of $\hat G_{\mathrm{pf}}$ is a compatible family of cosets, and any basic neighbourhood fixes finitely many coordinates, hence contains an element of the image of $G$ by compatibility and the Chinese remainder-type argument. Functoriality: a homomorphism carries each finite-index normal subgroup of $H$ to one of $G$ after intersection, so it induces maps on the finite quotients, compatible with the system. Residual finiteness of free groups is the standard consequence of their linearity; of finitely generated abelian groups, by reduction modulo primes.
 
-**Example.** $\hat{\mathbb{Z}} = \mathbb{Z}^{\mathrm{pf}} \cong \prod_p \mathbb{Z}_p$, and the natural map $\mathbb{Z} \to \hat{\mathbb{Z}}$ has dense image. For $GL_n(\mathbb{Z})$, the congruence subgroups give the profinite completion $\varprojlim_m GL_n(\mathbb{Z}/m\mathbb{Z})$.
+**Example.** $\hat{\mathbb{Z}} = \mathbb{Z}_{\mathrm{pf}} \cong \prod_p \mathbb{Z}_p$, and the natural map $\mathbb{Z} \to \hat{\mathbb{Z}}$ has dense image. For $GL_n(\mathbb{Z})$, the congruence subgroups give the profinite completion $\varprojlim_m GL_n(\mathbb{Z}/m\mathbb{Z})$.
 
 ## The Structure of Locally Compact Abelian Groups
 
@@ -278,7 +278,7 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $\mu$, $\Delta$ | Part III: Haar measure and modular function, named here only |
 | unimodular | Part III: $\Delta \equiv 1$; left Haar measure is right-invariant |
 | $\mathbb{Z}_p$, $\mathbb{Q}_p$ | $p$-adic integers and numbers |
-| $\hat G^{\mathrm{pf}}$, $\hat{\mathbb{Z}}$ | Profinite completion of an abstract group; $\hat{\mathbb{Z}} = \mathbb{Z}^{\mathrm{pf}}$ |
+| $\hat G_{\mathrm{pf}}$, $\hat{\mathbb{Z}}$ | Profinite completion of an abstract group; $\hat{\mathbb{Z}} = \mathbb{Z}_{\mathrm{pf}}$ |
 | $\varprojlim$ | Inverse limit of finite groups |
 | residually finite | Every nontrivial element survives in a finite quotient |
 | $G^\vee$, $\chi$, $\chi_k$ | Pontryagin dual and a character; characters of $\mathbb{Z}/n\mathbb{Z}$ |

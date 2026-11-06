@@ -484,11 +484,11 @@ where $\tilde U$ is the unit-norm biquaternion of the boost, and $\tilde{K}_{\ma
 For a pure boost with velocity $\vec v_b$ — a frame boost, distinct from the particle velocity $\vec v$ — the boost biquaternion is
 
 $$
-\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u,
+\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
-\tanh\theta^{\mathrm{rpd}} = \frac{v_b}{c},
+\tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 \qquad
-\gamma_b = \cosh\theta^{\mathrm{rpd}} = \frac{1}{\sqrt{1 - \vec v_b^2/c^2}},
+\gamma_b = \cosh\theta_{\mathrm{rpd}} = \frac{1}{\sqrt{1 - \vec v_b^2/c^2}},
 $$
 
 an element of $\mathbb{M}_+$ (Hermitian, unit norm). The rotor conjugation then reproduces the standard component transformation
@@ -667,7 +667,7 @@ At the level of densities the companion programme replaces the per-particle forc
 | $P_{\text{mech}} = ϙ\,\vec E\cdot\vec v$ | Mechanical power |
 | $I_1 = \vec E^2 - c^2\vec B^2$ | First field invariant |
 | $I_2 = \vec E\cdot\vec B$ | Second field invariant |
-| $\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
+| $\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

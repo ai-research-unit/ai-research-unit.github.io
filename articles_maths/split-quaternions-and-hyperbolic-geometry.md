@@ -56,12 +56,12 @@ An explicit map identifies the sheet with the upper half-plane.
 **Definition.** For $\tilde\zeta = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ in the timelike sheet define
 
 $$
-\varkappa^{\mathrm{crd}} = \frac{q_y - q_x}{q_z + i} = \frac{(q_y-q_x)(q_z-i)}{1 + q_z^2} \in \mathbb{C},
+\varkappa_{\mathrm{crd}} = \frac{q_y - q_x}{q_z + i} = \frac{(q_y-q_x)(q_z-i)}{1 + q_z^2} \in \mathbb{C},
 $$
 
 the ratio of the components of a complex eigenvector of $\tilde\zeta$ for the eigenvalue $i$.
 
-**Theorem (The Eigenline Model).** The map $\varkappa^{\mathrm{crd}}$ is a bijection from the timelike sheet onto the upper half-plane
+**Theorem (The Eigenline Model).** The map $\varkappa_{\mathrm{crd}}$ is a bijection from the timelike sheet onto the upper half-plane
 
 $$
 \mathbb{H} = \{A \in \mathbb{C} : \operatorname{Im} A > 0\},
@@ -70,30 +70,30 @@ $$
 with
 
 $$
-\operatorname{Im}\varkappa^{\mathrm{crd}} = \frac{q_x - q_y}{1 + q_z^2} > 0,
+\operatorname{Im}\varkappa_{\mathrm{crd}} = \frac{q_x - q_y}{1 + q_z^2} > 0,
 $$
 
 and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ acting by the fractional linear transformation $A \mapsto (\alpha A + \beta)/(\gamma A + \delta)$,
 
 $$
 \boxed{\;
-\varkappa^{\mathrm{crd}}(g \tilde\zeta g^{-1}) = \frac{\alpha\,\varkappa^{\mathrm{crd}} + \beta}{\gamma\,\varkappa^{\mathrm{crd}} + \delta}
+\varkappa_{\mathrm{crd}}(g \tilde\zeta g^{-1}) = \frac{\alpha\,\varkappa_{\mathrm{crd}} + \beta}{\gamma\,\varkappa_{\mathrm{crd}} + \delta}
 \;}.
 $$
 
-The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\varkappa^{\mathrm{crd}}|^2/(\operatorname{Im}\varkappa^{\mathrm{crd}})^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
+The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\varkappa_{\mathrm{crd}}|^2/(\operatorname{Im}\varkappa_{\mathrm{crd}})^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
 
-**Proof.** *Positivity.* On the sheet, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, so $q_x - q_y > 0$ and the displayed formula gives $\operatorname{Im}\varkappa^{\mathrm{crd}} > 0$. *Bijectivity.* Given $A = a + ia' \in \mathbb{H}$, put
+**Proof.** *Positivity.* On the sheet, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, so $q_x - q_y > 0$ and the displayed formula gives $\operatorname{Im}\varkappa_{\mathrm{crd}} > 0$. *Bijectivity.* Given $A = a + ia' \in \mathbb{H}$, put
 
 $$
 M(A) = \begin{pmatrix} a/a' & -(a^2+a'^2)/a' \\ 1/a' & -a/a' \end{pmatrix},
 $$
 
-which is traceless with determinant $1$; the element $\tilde\zeta \in V$ associated with $M(A)$ then has $\langle\tilde\zeta\rangle_{\natural} = \det M(A) = 1$ and $q_x > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\tilde\zeta$ for $i$, so $\varkappa^{\mathrm{crd}} = A$. The two constructions are inverse, so $\varkappa^{\mathrm{crd}}$ is a bijection. *Equivariance.* The eigenvector of $g\tilde\zeta g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\tilde\zeta$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\varkappa^{\mathrm{crd}} = i$, so they agree.
+which is traceless with determinant $1$; the element $\tilde\zeta \in V$ associated with $M(A)$ then has $\langle\tilde\zeta\rangle_{\natural} = \det M(A) = 1$ and $q_x > 0$, so it lies in the sheet, and $(A,1)$ is an eigenvector of $\tilde\zeta$ for $i$, so $\varkappa_{\mathrm{crd}} = A$. The two constructions are inverse, so $\varkappa_{\mathrm{crd}}$ is a bijection. *Equivariance.* The eigenvector of $g\tilde\zeta g^{-1}$ for the eigenvalue $i$ is $g$ applied to the eigenvector of $\tilde\zeta$, and the action of $g$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\varkappa_{\mathrm{crd}} = i$, so they agree.
 
-The formula for $\varkappa^{\mathrm{crd}}$ is the explicit form of the general statement of *Split-Quaternion Roots of Minus One*, §*The Root Set as a Homogeneous Space*: the root set is the homogeneous space ${\mathbb{H}^{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, whose two components are the two copies of the hyperbolic plane, here presented as the upper and lower half-planes.
+The formula for $\varkappa_{\mathrm{crd}}$ is the explicit form of the general statement of *Split-Quaternion Roots of Minus One*, §*The Root Set as a Homogeneous Space*: the root set is the homogeneous space ${\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$, whose two components are the two copies of the hyperbolic plane, here presented as the upper and lower half-planes.
 
-**Corollary (The Sheet as the Quotient).** The sheet is the quotient $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the coset description $\varkappa^{\mathrm{crd}}$, and the isotropy group of the point $i$ is the group of elliptic elements fixing $i$, namely the image of $SO(2)$.
+**Corollary (The Sheet as the Quotient).** The sheet is the quotient $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the coset description $\varkappa_{\mathrm{crd}}$, and the isotropy group of the point $i$ is the group of elliptic elements fixing $i$, namely the image of $SO(2)$.
 
 **Proof.** The action on $\mathbb{H}$ is transitive because $\mathrm{SL}_2(\mathbb{R})$ contains the translations and the dilations, and the stabiliser of $i$ is the group of matrices with $(\alpha i + \beta)/(\gamma i + \delta) = i$, which is the rotation group $SO(2)$.
 
@@ -102,7 +102,7 @@ The formula for $\varkappa^{\mathrm{crd}}$ is the explicit form of the general s
 **Definition.** The **Cayley transform** is
 
 $$
-w(\varkappa^{\mathrm{crd}}) = \frac{\varkappa^{\mathrm{crd}} - i}{\varkappa^{\mathrm{crd}} + i},
+w(\varkappa_{\mathrm{crd}}) = \frac{\varkappa_{\mathrm{crd}} - i}{\varkappa_{\mathrm{crd}} + i},
 $$
 
 a biholomorphic map from the upper half-plane onto the unit disc
@@ -151,9 +151,9 @@ The model is therefore a realisation of the homogeneous space of *Split-Quaterni
 
 ## The Relation to the Hyperbolic Geometry of Part II
 
-**Theorem (Dictionary with Part II).** Under the identification of the sheet with the hyperbolic plane, the following objects correspond: the geodesics of the model are the intersections of the sheet with the central planes of $V$, and under $\varkappa^{\mathrm{crd}}$ they are the vertical lines and the semicircles orthogonal to the real axis of the half-plane; the ideal points are the isotropic lines of the form, that is the points of the null cone, and under $\varkappa^{\mathrm{crd}}$ they are the real axis together with the point at infinity; the angle between two geodesics is the angle measured by the metric $-B$ on the sheet and by the hyperbolic metric in the half-plane; the area element is the invariant measure $\mathrm{d}a\,\mathrm{d}a'/(a')^2$; and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$.
+**Theorem (Dictionary with Part II).** Under the identification of the sheet with the hyperbolic plane, the following objects correspond: the geodesics of the model are the intersections of the sheet with the central planes of $V$, and under $\varkappa_{\mathrm{crd}}$ they are the vertical lines and the semicircles orthogonal to the real axis of the half-plane; the ideal points are the isotropic lines of the form, that is the points of the null cone, and under $\varkappa_{\mathrm{crd}}$ they are the real axis together with the point at infinity; the angle between two geodesics is the angle measured by the metric $-B$ on the sheet and by the hyperbolic metric in the half-plane; the area element is the invariant measure $\mathrm{d}a\,\mathrm{d}a'/(a')^2$; and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$.
 
-**Proof.** The geodesics of a hyperboloid model are the central sections by *Split-Quaternion Geometry*, §*The Lorentzian Geometry of the Vector Subspace*, and their images under the biholomorphism $\varkappa^{\mathrm{crd}}$ are the standard geodesics of the half-plane; the identification of the boundary with the null cone is the statement that the boundary of the hyperbolic plane in this model is the set of isotropic directions, which is the null cone; the remaining identifications are those of *Hyperbolic Geometry*.
+**Proof.** The geodesics of a hyperboloid model are the central sections by *Split-Quaternion Geometry*, §*The Lorentzian Geometry of the Vector Subspace*, and their images under the biholomorphism $\varkappa_{\mathrm{crd}}$ are the standard geodesics of the half-plane; the identification of the boundary with the null cone is the statement that the boundary of the hyperbolic plane in this model is the set of isotropic directions, which is the null cone; the remaining identifications are those of *Hyperbolic Geometry*.
 
 **Corollary (The Boundary Is the Projective Null Quadric of the Subspace).** The ideal boundary of the hyperbolic plane in this model is the projective null cone of the restricted form, a circle; the full projective null quadric $\mathcal{Q}$ of the algebra, a torus, is a different object, the boundary being the projection of the cone of $V$ only.
 
@@ -181,7 +181,7 @@ The hyperbolic plane is realised on the split-quaternion algebra by the timelike
 
 The unit condition is $N = 1$ together with a choice of sheet; the level set has two sheets, exchanged by $v \mapsto -v$, by the conjugation and by any unit of norm $-1$, and preserved by the identity component of the isometry group. The two sheets correspond to the upper and the lower half-planes.
 
-The models are explicit. The eigenline map $\varkappa^{\mathrm{crd}} = (q_y-q_x)/(q_z+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(A)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\varkappa^{\mathrm{crd}}|^2/(\operatorname{Im}\varkappa^{\mathrm{crd}})^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
+The models are explicit. The eigenline map $\varkappa_{\mathrm{crd}} = (q_y-q_x)/(q_z+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one element $M(A)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\varkappa_{\mathrm{crd}}|^2/(\operatorname{Im}\varkappa_{\mathrm{crd}})^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
 
 ## Summary of Notation
 
@@ -191,10 +191,10 @@ The models are explicit. The eigenline map $\varkappa^{\mathrm{crd}} = (q_y-q_x)
 | $-B$ on $\mathbb{H}^{+}$ | the hyperbolic metric of curvature $-1$ | *Split-Quaternion Geometry* |
 | $\cosh d(v,w) = \langle v,w\rangle$ | the hyperbolic distance on the sheet | this article |
 | $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isometry group | *Split-Quaternion Rotations and the Lorentz Group* |
-| $\varkappa^{\mathrm{crd}} = (q_y-q_x)/(q_z+i)$ | the eigenline map to the upper half-plane | this article |
+| $\varkappa_{\mathrm{crd}} = (q_y-q_x)/(q_z+i)$ | the eigenline map to the upper half-plane | this article |
 | $\mathbb{H}$ | the upper half-plane | *Hyperbolic Geometry* |
 | $M(A)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
-| $w = (\varkappa^{\mathrm{crd}}-i)/(\varkappa^{\mathrm{crd}}+i)$ | the Cayley transform to the disc | this article |
+| $w = (\varkappa_{\mathrm{crd}}-i)/(\varkappa_{\mathrm{crd}}+i)$ | the Cayley transform to the disc | this article |
 | $\mathbb{U}$ | the unit disc, with metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ | this article |
 | elliptic, hyperbolic, parabolic | the three types of isometry, by the trace | *Hyperbolic Geometry* |
 | ideal boundary | the projective null cone of $V$, a circle | this article |

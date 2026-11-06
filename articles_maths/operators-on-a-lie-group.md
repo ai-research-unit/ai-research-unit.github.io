@@ -48,16 +48,16 @@ The letters $D_L$ record the side on which the invariance is imposed; the two-si
 **Definition.** For $X \in \mathrm{G}$ the **left-invariant vector field** determined by $X$ is the operator on $C^\infty(G)$
 
 $$
-X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} f(\exp(-tX)\,x) .
+X_{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} f(\exp(-tX)\,x) .
 $$
 
-It is the derivation of $C^\infty(G)$ determined by the left-invariant field of *The Lie Algebra and the Exponential Map*, and the assignment $X \mapsto X^{\mathrm{lift}}$ is an injective $\mathbb{C}$-linear map $\mathrm{G} \to D_L(G)$ with
+It is the derivation of $C^\infty(G)$ determined by the left-invariant field of *The Lie Algebra and the Exponential Map*, and the assignment $X \mapsto X_{\mathrm{lift}}$ is an injective $\mathbb{C}$-linear map $\mathrm{G} \to D_L(G)$ with
 
 $$
-[X^{\mathrm{lift}}, Y^{\mathrm{lift}}] = [X,Y]^{\mathrm{lift}} .
+[X_{\mathrm{lift}}, Y_{\mathrm{lift}}] = [X,Y]_{\mathrm{lift}} .
 $$
 
-*Proof.* The field is left-invariant by construction, the bracket identity is the naturality of the commutator of vector fields, and injectivity follows because $X^{\mathrm{lift}}$ determines $X$ from the coordinate functions at $e$.
+*Proof.* The field is left-invariant by construction, the bracket identity is the naturality of the commutator of vector fields, and injectivity follows because $X_{\mathrm{lift}}$ determines $X$ from the coordinate functions at $e$.
 
 ### The Algebra of Left-Invariant Differential Operators
 
@@ -66,14 +66,14 @@ A **differential operator of order at most $k$** on $G$ is a $\mathbb{C}$-linear
 **Theorem (the universal enveloping algebra).** Evaluation at the identity gives an isomorphism of filtered $\mathbb{C}$-algebras
 
 $$
-\boxed{\;\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}}\;} ,
+\boxed{\;\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_{\mathrm{lift},1} \cdots X_{\mathrm{lift},k}\;} ,
 $$
 
 from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $\mathrm{U}(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.
 
-*Proof.* The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x_1, \ldots, x_n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.
+*Proof.* The assignment $X \mapsto X_{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x_1, \ldots, x_n$ of a chart at $e$, the monomials in the $X_{\mathrm{lift},i}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_{\mathrm{lift},i}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.
 
-**Corollary.** $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $\mathrm{U}(\mathrm{G})$ and $D_L(G)$ are isomorphic.
+**Corollary.** $D_L(G)$ is generated as an algebra by the first-order operators $X_{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $\mathrm{U}(\mathrm{G})$ and $D_L(G)$ are isomorphic.
 
 *Proof.* Generation and the filtration are the content of the theorem; the associated graded statement is the Poincaré--Birkhoff--Witt theorem.
 
@@ -175,7 +175,7 @@ Let $G$ be a compact connected Lie group, such as $SU(2)$ or $SO(3)$. The bi-inv
 
 ## Summary
 
-A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto X^{\mathrm{lift}}$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(\mathrm{U}(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $\mathrm{U}(\mathrm{G})$.
+A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto X_{\mathrm{lift}}$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(\mathrm{U}(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $\mathrm{U}(\mathrm{G})$.
 
 ## Summary of Notation
 
@@ -186,7 +186,7 @@ A Lie group carries the monoid of its smooth self-maps, whose units are the diff
 | $L_g$, $R_g$, $\Psi_g = L_gR_{g^{-1}}$ | left translation, right translation and inner automorphism |
 | $C^\infty(G)$ | the algebra of smooth functions, with the action $L_gf(x) = f(g^{-1}x)$ |
 | $D_L(G)$, $D_R(G)$ | the left- and right-invariant operators |
-| $X^{\mathrm{lift}}$ | the left-invariant vector field determined by $X$ |
+| $X_{\mathrm{lift}}$ | the left-invariant vector field determined by $X$ |
 | $\mathrm{U}(\mathrm{G}) \cong D_L(G)$ | the isomorphism of the enveloping algebra with the left-invariant operators |
 | $Z(\mathrm{U}(\mathrm{G})) = D_L(G) \cap D_R(G)$ | the centre, the bi-invariant operators |
 | $\Omega = \sum_i X_i \check X_i$ | the Casimir element of a semisimple algebra |

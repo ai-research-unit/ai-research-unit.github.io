@@ -71,7 +71,7 @@ $$
 F[G] \cong \prod_{i=1}^{r} M_{n_i}(D_i),
 $$
 
-where $D_i$ is a finite-dimensional division algebra over $F$, the simple $F[G]$-modules are $S_1,\dots,S_r$ up to isomorphism, and $n_i=\dim_{D_i}S_i$. The number $r$ is the number of isomorphism classes of simple $F[G]$-modules, and $\operatorname{End}_{F[G]}(S_i)\cong D_i^{\mathrm{opp}}$. Taking dimensions,
+where $D_i$ is a finite-dimensional division algebra over $F$, the simple $F[G]$-modules are $S_1,\dots,S_r$ up to isomorphism, and $n_i=\dim_{D_i}S_i$. The number $r$ is the number of isomorphism classes of simple $F[G]$-modules, and $\operatorname{End}_{F[G]}(S_i)\cong D_{\mathrm{opp},i}$. Taking dimensions,
 
 $$
 |G|=\dim_F F[G]=\sum_{i=1}^{r} n_i^2 \dim_F D_i.
@@ -160,22 +160,22 @@ This is the computational heart of the subject: entire representation-theoretic 
 Let $G$ be finite and let $F=\mathbb{C}$. The character of the left regular representation is
 
 $$
-\chi^{\mathrm{reg}}(g)=\begin{cases} |G|, & g=1,\\ 0, & g \neq 1,\end{cases}
+\chi_{\mathrm{reg}}(g)=\begin{cases} |G|, & g=1,\\ 0, & g \neq 1,\end{cases}
 $$
 
 because the matrix of left multiplication by $g$ in the basis $G$ is a permutation matrix with no fixed point for $g\neq1$, and the number of fixed points is $|G|\delta_{g,1}$. Its decomposition follows by computing multiplicities:
 
 $$
-\langle \chi^{\mathrm{reg}}, \chi_i \rangle_G=\frac{1}{|G|}|G|\,\overline{\chi_i(1)}=d_i,
+\langle \chi_{\mathrm{reg}}, \chi_i \rangle_G=\frac{1}{|G|}|G|\,\overline{\chi_i(1)}=d_i,
 $$
 
 so that
 
 $$
-F[G] \cong \bigoplus_{i=1}^{r} V_i^{\oplus d_i}, \qquad \chi^{\mathrm{reg}}=\sum_{i=1}^{r} d_i\chi_i.
+F[G] \cong \bigoplus_{i=1}^{r} V_i^{\oplus d_i}, \qquad \chi_{\mathrm{reg}}=\sum_{i=1}^{r} d_i\chi_i.
 $$
 
-Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete Reducibility. The regular representation therefore contains every irreducible exactly as many times as its degree, and it is the representation-theoretic embodiment of the group algebra; its endomorphism ring is $(F[G])^{\mathrm{opp}}\cong F[G]$, by the theorem on the regular module of *Modules over an Algebra*, and the Wedderburn decomposition of the group algebra is read off from the isotypic decomposition of the regular module.
+Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete Reducibility. The regular representation therefore contains every irreducible exactly as many times as its degree, and it is the representation-theoretic embodiment of the group algebra; its endomorphism ring is $(F[G])_{\mathrm{opp}}\cong F[G]$, by the theorem on the regular module of *Modules over an Algebra*, and the Wedderburn decomposition of the group algebra is read off from the isotypic decomposition of the regular module.
 
 ## Tensor Products and Clebsch–Gordan
 
@@ -263,7 +263,7 @@ $$
 
 with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8|$. Over $\mathbb{R}$ the two-dimensional factor is replaced by the division algebra $\mathbb{H}$, as in *Morita Equivalence*; the contrast between $\mathbb{C}$ and $\mathbb{R}$ here is not pursued further.
 
-**(c) The regular representation of a finite cyclic group.** For $G=\mathbb{Z}/n\mathbb{Z}$ the regular representation is $\mathbb{C}[G]$ acting on itself; its character is $n$ at the identity and $0$ elsewhere, and its decomposition $\bigoplus_\omega V_\omega$ has each one-dimensional character with multiplicity $1$, matching $\chi^{\mathrm{reg}}=\sum_\omega\omega$.
+**(c) The regular representation of a finite cyclic group.** For $G=\mathbb{Z}/n\mathbb{Z}$ the regular representation is $\mathbb{C}[G]$ acting on itself; its character is $n$ at the identity and $0$ elsewhere, and its decomposition $\bigoplus_\omega V_\omega$ has each one-dimensional character with multiplicity $1$, matching $\chi_{\mathrm{reg}}=\sum_\omega\omega$.
 
 **(d) Semidirect products.** For a semidirect product $G=N\rtimes H$ with $N$ normal, the irreducible representations are constructed by Clifford theory from the orbits of $H$ on the irreducibles of $N$ and the projective representations of the inertia groups; the group algebra is Morita equivalent to a crossed product of $F[N]$ by $H$, and the simple modules and their endomorphism division rings are computed from that equivalence. This is the standard application of *Morita Equivalence* to group representations and is treated in the sources cited below.
 
@@ -294,7 +294,7 @@ Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class
 | $V^*$, $i^*$ | dual representation $V^*=\operatorname{Hom}_F(V,F)$ and the dual label |
 | $W^G$ | subspace of $G$-invariant vectors of a representation $W$ |
 | $R(G)$ | representation ring |
-| $\chi^{\mathrm{reg}}$ | character of the regular representation |
+| $\chi_{\mathrm{reg}}$ | character of the regular representation |
 | $\operatorname{Ind}_H^G$, $\operatorname{Res}_H^G$ | induction and restriction |
 | $J(F[G])$ | Jacobson radical in the modular case |
 | $\widehat{G}$ | character group of an abelian group |

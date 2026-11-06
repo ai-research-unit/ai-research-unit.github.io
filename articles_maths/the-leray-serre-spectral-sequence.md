@@ -124,7 +124,7 @@ Geometrically, the transgression is the obstruction to extending a class of the 
 
 **Remark.** The transgression is the spectral-sequence generalisation of the connecting homomorphism of the long exact sequence of a fibration; for a fibration with fibre an Eilenberg–MacLane space it computes the $k$-invariants, and for the path–loop fibration it produces the suspension isomorphism. It is natural in maps of fibrations.
 
-**Corollary (the exact sequence of a fibration on homology, low degrees).** Comparing the five-term sequence above with the Hurewicz isomorphism $\pi_1^{\mathrm{ab}} \cong H_1$ of *Homotopy Groups and Fibrations* recovers the exactness of the homotopy sequence in degrees one and two; the spectral sequence is thus strictly stronger than the homotopy sequence, since it computes all degrees at once.
+**Corollary (the exact sequence of a fibration on homology, low degrees).** Comparing the five-term sequence above with the Hurewicz isomorphism $\pi_{\mathrm{ab},1} \cong H_1$ of *Homotopy Groups and Fibrations* recovers the exactness of the homotopy sequence in degrees one and two; the spectral sequence is thus strictly stronger than the homotopy sequence, since it computes all degrees at once.
 
 ## Computations
 

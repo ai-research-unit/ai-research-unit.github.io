@@ -19,7 +19,7 @@ This article collects the consequences. The projector criterion becomes "(the co
 **Proposition (the left multiplications are plain ones).** For every $\tilde Q_1$,
 
 $$
-\boxed{\; L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}},\qquad
+\boxed{\; L_{\tilde Q_1}=L_{\mathrm{plain},\tilde Q_1^{\natural}},\qquad
 L_{\tilde Q_1}L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} \;}.
 $$
 
@@ -29,7 +29,7 @@ The composition law is the reversed one, and it is stated with the monoid it def
 
 **Corollary (linearity and the unit).** The operators $L_{\tilde Q_1}$ are $\mathbb{C}$-linear and faithful in $\tilde Q_1$; $e_t$ is a left unit of $\star$ and there is no right one, the right action being the conjugation $\tilde Q_2\star e_t=\tilde Q_2^{\natural}$, and the centre of $\star$ is trivial (*Introduction to the General Quaternionic Algebra*).
 
-**Proof.** $L^{\mathrm{plain}}$ is $\mathbb{C}$-linear, and it is faithful because $L^{\mathrm{plain}}_{\tilde Q_2}=0$ forces $\tilde Q_2=L^{\mathrm{plain}}_{\tilde Q_2}(e_t)=0$. The unit statements are the displays $e_t\star\tilde Q=\tilde Q$ and $\tilde Q\star e_t=\tilde Q^{\natural}$, and the triviality of the centre is the companion article's proposition.
+**Proof.** $L_{\mathrm{plain}}$ is $\mathbb{C}$-linear, and it is faithful because $L_{\mathrm{plain},\tilde Q_2}=0$ forces $\tilde Q_2=L_{\mathrm{plain},\tilde Q_2}(e_t)=0$. The unit statements are the displays $e_t\star\tilde Q=\tilde Q$ and $\tilde Q\star e_t=\tilde Q^{\natural}$, and the triviality of the centre is the companion article's proposition.
 
 The faithfulness is what makes the dictionary invertible: an operator identity of $\star$ is an element identity of the plain product, with no loss. It is used at every step below.
 
@@ -37,7 +37,7 @@ The faithfulness is what makes the dictionary invertible: an operator identity o
 
 **Theorem (the projector criterion).** The operator $L_{\tilde Q_1}$ is a projector if and only if $\tilde Q_1^{\natural}$ is an idempotent of the plain product.
 
-**Proof.** By §*The Isotope Identity* $L_{\tilde Q_1}^{2}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}{}^{2}=L^{\mathrm{plain}}_{(\tilde Q_1^{\natural})^{2}}$, and $L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}$. By the faithfulness the two are equal exactly when $(\tilde Q_1^{\natural})^{2}=\tilde Q_1^{\natural}$, which is the stated condition.
+**Proof.** By §*The Isotope Identity* $L_{\tilde Q_1}^{2}=L_{\mathrm{plain},\tilde Q_1^{\natural}}{}^{2}=L_{\mathrm{plain},(\tilde Q_1^{\natural})^{2}}$, and $L_{\tilde Q_1}=L_{\mathrm{plain},\tilde Q_1^{\natural}}$. By the faithfulness the two are equal exactly when $(\tilde Q_1^{\natural})^{2}=\tilde Q_1^{\natural}$, which is the stated condition.
 
 **Corollary (the family of projectors).** The elements whose left multiplication is a projector are exactly the plain idempotents. Their number is two trivial ones, $0$ and $e_t$, and a family of complex dimension two; the element $\tilde\Pi$ gives a projector for $\star$ exactly when $\tilde\Pi^{2}=\tilde\Pi$ for the plain product.
 
@@ -66,7 +66,7 @@ $$
 
 and each summand is a minimal left ideal of the plain algebra of complex dimension two.
 
-**Proof.** The operators are plain left multiplications by $\tilde\Pi_1^{\natural}$ and $\tilde\Pi_2^{\natural}$ by §*The Isotope Identity*, and $L^{\mathrm{plain}}$ is additive and multiplicative, so $L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{e_t}=\mathrm{Id}$ and $L_{\tilde\Pi_1}L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}}$. The two idempotents are orthogonal and their sum is $e_t$, so $\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}=0$ and the images are complementary; being the minimal left ideals of *The Polarized Module of the Biquaternion Algebra* they have complex dimension two.
+**Proof.** The operators are plain left multiplications by $\tilde\Pi_1^{\natural}$ and $\tilde\Pi_2^{\natural}$ by §*The Isotope Identity*, and $L_{\mathrm{plain}}$ is additive and multiplicative, so $L_{\tilde\Pi_1}+L_{\tilde\Pi_2}=L_{\mathrm{plain},e_t}=\mathrm{Id}$ and $L_{\tilde\Pi_1}L_{\tilde\Pi_2}=L_{\mathrm{plain},\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}}$. The two idempotents are orthogonal and their sum is $e_t$, so $\tilde\Pi_1^{\natural}\tilde\Pi_2^{\natural}=0$ and the images are complementary; being the minimal left ideals of *The Polarized Module of the Biquaternion Algebra* they have complex dimension two.
 
 **Remark (a real form from an involution, not from an idempotent).** In the sesquilinear structures the left multiplication of the unit is conjugate-linear and is not a projector; for the general plain, the general quaternionic and the symmetric quaternionic sesquilinear products it is an involution, $L_{e_t}^{2}=\mathrm{Id}$, and it splits the space into its fixed and its minus-one eigenspaces with no idempotent at all. The pair of the proposition is of the other kind: two genuine projectors, each of complex rank two, indexed by $\star$-nilpotents. The involution and the projector are the two mechanisms of the block and they are kept apart: an involution splits the space by its eigenvalues $\pm1$ and needs no idempotent, while a projector splits it by its image and kernel, and only the projector needs the criterion.
 
@@ -91,7 +91,7 @@ of complex dimension two and one respectively. The first is the plain right idea
 
 **Theorem (the square-zero criterion).** The operator $L_{\tilde Q}$ is square-zero if and only if $\tilde Q^{\natural}$ is a nilpotent of the plain product, that is if and only if $\tilde Q$ is pure and isotropic.
 
-**Proof.** $L_{\tilde Q}^{2}=L^{\mathrm{plain}}_{(\tilde Q^{\natural})^{2}}$ by §*The Isotope Identity*, and the plain left multiplications are faithful, so $L_{\tilde Q}^{2}=0$ exactly when $(\tilde Q^{\natural})^{2}=0$: exactly when $\tilde Q^{\natural}$ is a plain nilpotent. The plain nilpotents are the pure isotropic elements (*Nilpotents of the General Plain Algebra*), and the natural conjugation fixes the scalar part and negates the vector part, so purity is preserved in both directions and $(\tilde{Ζ},\tilde{Ζ})$ is invariant; hence $\tilde Q^{\natural}$ is pure isotropic exactly when $\tilde Q$ is.
+**Proof.** $L_{\tilde Q}^{2}=L_{\mathrm{plain},(\tilde Q^{\natural})^{2}}$ by §*The Isotope Identity*, and the plain left multiplications are faithful, so $L_{\tilde Q}^{2}=0$ exactly when $(\tilde Q^{\natural})^{2}=0$: exactly when $\tilde Q^{\natural}$ is a plain nilpotent. The plain nilpotents are the pure isotropic elements (*Nilpotents of the General Plain Algebra*), and the natural conjugation fixes the scalar part and negates the vector part, so purity is preserved in both directions and $(\tilde{Ζ},\tilde{Ζ})$ is invariant; hence $\tilde Q^{\natural}$ is pure isotropic exactly when $\tilde Q$ is.
 
 **Remark (the nilpotent cone is bigger than the square-zero set).** The nilpotents of $\star$ are the elements of vanishing central square, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, that is the whole zero-divisor cone, a complex cone of complex dimension three; the square-zero operators exist only on its pure part, the isotropic cone of complex dimension two. The gap is not empty: a complex multiple $\lambda\tilde\Pi$ with $\lambda\neq0$ of a nontrivial idempotent has $\langle\lambda\tilde\Pi\rangle_{\natural}=\lambda^{2}\langle\tilde\Pi\rangle_{\natural}=0$, so it is a nilpotent of $\star$, and at $\lambda=1$ its operator is a projector rather than a square-zero operator, while at $\lambda\neq1$ it is neither. This is the second specificity of the algebra: the nilpotent cone is product-defined and does not match the set of elements whose operator vanishes twice.
 
@@ -121,7 +121,7 @@ The three losses are the reason the dictionary of §*The Isotope Identity* is on
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ is the isotope of the plain product by the anti-automorphism in the first slot, so its left multiplication is the plain one with the conjugated index, $L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}$, and its operators are faithful linear images of the plain ones. Three consequences follow and constitute the specificities of the algebra. The operator $L_{\tilde Q_1}$ is a projector exactly when $\tilde Q_1$ is a plain idempotent, so the algebra has a family of projectors of complex dimension two while its own idempotents are $0$ and $e_t$ alone: it disowns them. The left ideals of the product coincide with the left ideals of the plain product, the minimal ones of complex dimension two, with the right and the two-sided theory absent. The square-zero operators are exactly those of the pure isotropic elements, while the nilpotents of the algebra are the whole zero-divisor cone of complex dimension three; the gap contains the plain idempotents, which are $\star$-nilpotents whose left multiplication is a projector, a combination the plain product forbids. At the operator level the algebra keeps the monoid and the operator calculus of the associative theory; at the element level it keeps its left unit, loses the right one, the centre and every associativity law.
+The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ is the isotope of the plain product by the anti-automorphism in the first slot, so its left multiplication is the plain one with the conjugated index, $L_{\tilde Q_1}=L_{\mathrm{plain},\tilde Q_1^{\natural}}$, and its operators are faithful linear images of the plain ones. Three consequences follow and constitute the specificities of the algebra. The operator $L_{\tilde Q_1}$ is a projector exactly when $\tilde Q_1$ is a plain idempotent, so the algebra has a family of projectors of complex dimension two while its own idempotents are $0$ and $e_t$ alone: it disowns them. The left ideals of the product coincide with the left ideals of the plain product, the minimal ones of complex dimension two, with the right and the two-sided theory absent. The square-zero operators are exactly those of the pure isotropic elements, while the nilpotents of the algebra are the whole zero-divisor cone of complex dimension three; the gap contains the plain idempotents, which are $\star$-nilpotents whose left multiplication is a projector, a combination the plain product forbids. At the operator level the algebra keeps the monoid and the operator calculus of the associative theory; at the element level it keeps its left unit, loses the right one, the centre and every associativity law.
 
 ## Summary of Notation
 

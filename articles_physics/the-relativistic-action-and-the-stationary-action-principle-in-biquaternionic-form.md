@@ -226,11 +226,11 @@ so that the real and imaginary parts of the single complex invariant carry the t
 
 ### The first-order actions
 
-The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}^{\mathrm{sp}}$ with $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}$,
+The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$,
 $$
-\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}^{\mathrm{sp}*}\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
+\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}_{\mathrm{sp}}^*\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
 $$
-with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde{\nabla}$, the second-order action inverts $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $\tilde{\nabla}^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
+with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde{\nabla}$, the second-order action inverts $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $\tilde{\nabla}^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
 
 ## Symmetries of the Action
 
@@ -255,7 +255,7 @@ $$
 \qquad
 \tilde U\,\tilde U^{\natural} = e_t ,
 $$
-the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde U^{*}\overline{\tilde U} = e_t$, which is a separate statement and not the same one: for the boost rotor $\tilde U = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde U^{*} = \tilde U$ while $\tilde U^{\natural} = \tilde U^{-1}$, so $\tilde U^{*}\tilde U = \tilde U^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
+the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde U^{*}\overline{\tilde U} = e_t$, which is a separate statement and not the same one: for the boost rotor $\tilde U = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde U^{*} = \tilde U$ while $\tilde U^{\natural} = \tilde U^{-1}$, so $\tilde U^{*}\tilde U = \tilde U^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
 $$
 \langle\tilde U\tilde R_\varphi\tilde U^{*}\rangle_{\natural} = \langle\tilde R_\varphi\rangle_{\natural} ,
 $$

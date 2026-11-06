@@ -34,11 +34,11 @@ The associative algebras of the corpus are the field itself, the matrix algebras
 | Matrix algebra $M_n(k)$ | dimension $n^2$; centre $k$; two-sided ideals only $0$ and $M_n(k)$; simple | *Examples of Algebras* |
 | Group algebra $k[G]$ | dimension $|G|$; centre spanned by the conjugacy-class sums; the augmentation ideal is nontrivial | *Group Algebras* |
 | Quaternions $\mathbb{H}$ | dimension $4$ over $\mathbb{R}$; centre $\mathbb{R}$; no nontrivial ideals; division algebra | *Quaternion Algebra* |
-| Split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ | dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field | *Split-Complex Algebra* |
-| Dual numbers $\mathbb{C}^{\mathrm{dln}}$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
+| Split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ | dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field | *Split-Complex Algebra* |
+| Dual numbers $\mathbb{C}_{\mathrm{dln}}$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
 | Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *The Biquaternion Algebra* |
 | Central simple algebra | finite-dimensional, centre the field, no nontrivial two-sided ideals | *Central Simple Algebras and the Brauer Group* |
-| Non-example: $\mathbb{C}^{\mathrm{spl}}$ as a field | fails: it has zero divisors $(1-t)(1+t)=0$ | *Split-Complex Algebra* |
+| Non-example: $\mathbb{C}_{\mathrm{spl}}$ as a field | fails: it has zero divisors $(1-t)(1+t)=0$ | *Split-Complex Algebra* |
 | Non-example: $\mathbb{H}$ as a field | fails: it is a division ring but not commutative | *Quaternion Algebra* |
 
 ## Simple, Semisimple and Central Simple Algebras
@@ -69,7 +69,7 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 | Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
 | Universal enveloping algebra $\mathrm{U}(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
-| Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
+| Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
 | Clifford algebras in finite dimensions | the real Clifford algebras of dimension $2^n$, with their centre and periodicity | *Clifford Algebras in Finite Dimensions* |
 | Path algebra $kQ$ of a quiver | the algebra with the paths as a basis; finite-dimensional exactly when $Q$ has no oriented cycle | *Quiver Representations and Representation Type* |
 | Non-example: the free algebra as a commutative algebra | fails commutativity: $xy \neq yx$ for the generators | *Tensor Powers and the Free Algebra* |
@@ -82,7 +82,7 @@ The number systems give the corpus its chain of non-associative algebras: $\math
 | Algebra | Dimension, centre, ideals | Introduced in |
 |---|---|---|
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ | dimensions $1$, $2$, $4$; centres $\mathbb{R}$, $\mathbb{C}$, $\mathbb{R}$; associative division algebras | *Division Algebras* |
-| Split biquaternions $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{C}^{\mathrm{spl}}$; associative with zero divisors, isomorphic to $\mathbb{H}\oplus\mathbb{H}$; not a division algebra | *Split-Biquaternion Algebra* |
+| Split biquaternions $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{C}_{\mathrm{spl}}$; associative with zero divisors, isomorphic to $\mathbb{H}\oplus\mathbb{H}$; not a division algebra | *Split-Biquaternion Algebra* |
 | Lie algebra $\mathrm{GL}_n(k)$ | dimension $n^2$; centre the scalar matrices; non-associative, with the bracket | *Lie Algebras* |
 | Jordan algebra | commutative and non-associative, with the Jordan identity; the spin factors as examples | *Jordan Algebras* |
 | The number systems as Clifford algebras | the realisation of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ inside Clifford algebras of a form | *The Number Systems as Clifford Algebras* |
@@ -107,8 +107,8 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $\mathbb{Z}$ | the integers, as in the $\mathbb{Z}/2$-grading of a Clifford algebra |
 | $\operatorname{Br}(F)$ | Brauer group |
 | $k[G]$ | group algebra |
-| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{O}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion, octonion and biquaternion algebras |
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | split biquaternions, of real dimension $8$ |
+| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{O}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion, octonion and biquaternion algebras |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | split biquaternions, of real dimension $8$ |
 
 ## Further Reading
 

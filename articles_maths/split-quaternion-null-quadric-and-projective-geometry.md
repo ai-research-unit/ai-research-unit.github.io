@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$. Its zero set, the **null cone**, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$. Its zero set, the **null cone**, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.
 
 The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the units, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
 
@@ -12,7 +12,7 @@ The article owns the projective and quadric structure of the algebra. It relies 
 **Definition.** The **null cone** is the quadric
 
 $$
-\mathcal{N} = \{\, \tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 0 \,\} = \{\, q_t^2 + q_x^2 = q_y^2 + q_z^2 \,\},
+\mathcal{N} = \{\, \tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 0 \,\} = \{\, q_t^2 + q_x^2 = q_y^2 + q_z^2 \,\},
 $$
 
 the union of the origin and the zero divisors.
@@ -49,7 +49,7 @@ is a member of one family, with both generators null and mutually $B$-orthogonal
 
 ## The Rank-One Description
 
-**Theorem.** Under the identification $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, the nonzero null elements are exactly the matrices of rank one:
+**Theorem.** Under the identification $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, the nonzero null elements are exactly the matrices of rank one:
 
 $$
 \boxed{\;
@@ -99,7 +99,7 @@ Thus the projective quadric is determined by its two rulings, and the parametris
 
 ## The Relation to the Projective Geometry of $\mathbb{B}$
 
-The split-quaternion quadric is a real form of the complex quadric of $M_2(\mathbb{C})$: the algebra $\mathbb{H}^{\mathrm{spl}}$ is a real form of $M_2(\mathbb{C})$ under complexification, and the real quadric $\mathcal{Q} = \mathbb{P}(\mathcal{N})$ is the real locus of the complex quadric. The Segre embedding, the two rulings and the ruled-surface description are common to both; what differs is the reality condition — the split-quaternion quadric is a real doubly ruled surface with real lines, whereas the complex quadric carries a conjugation. No biquaternion-specific object — the central imaginary unit $i$, the Hermitian reality condition, the definite form on the quaternion half — is imported; only the projective shape is shared.
+The split-quaternion quadric is a real form of the complex quadric of $M_2(\mathbb{C})$: the algebra $\mathbb{H}_{\mathrm{spl}}$ is a real form of $M_2(\mathbb{C})$ under complexification, and the real quadric $\mathcal{Q} = \mathbb{P}(\mathcal{N})$ is the real locus of the complex quadric. The Segre embedding, the two rulings and the ruled-surface description are common to both; what differs is the reality condition — the split-quaternion quadric is a real doubly ruled surface with real lines, whereas the complex quadric carries a conjugation. No biquaternion-specific object — the central imaginary unit $i$, the Hermitian reality condition, the definite form on the quaternion half — is imported; only the projective shape is shared.
 
 ## The Relation to the Lorentzian Geometry
 
@@ -111,13 +111,13 @@ The same form determines two geometries, and the two-dimensional isotropic struc
 
 ## Summary
 
-The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ is a form of signature $(2,2)$, with polarisation $\langle\cdot,\cdot\rangle_{\natural}$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$; the conjugation is the antiautomorphism with $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$. Its zero set is the null cone, a three-dimensional cone singular at the origin and smooth elsewhere, whose projectivisation $\mathcal{Q} \subset \mathbb{P}^3$ is a smooth quadric surface. Under the identification $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ the nonzero null elements are exactly the rank-one matrices, each an outer product $uv^{\mathsf{T}}$ of nonzero columns, determined up to $(\lambda u, \lambda^{-1}v)$. The form has Witt index $2$: the maximal isotropic subspaces are two-dimensional, forming the two families of isotropic planes, each parametrised by a projective line and each becoming a family of isotropic *lines* on $\mathcal{Q}$. The quadric is the image of the Segre embedding $\mathbb{P}^1\times\mathbb{P}^1 \to \mathbb{P}^3$, hence $\cong\mathbb{P}^1\times\mathbb{P}^1$, and equivalently it is the doubly ruled surface $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings being the two factors. The group $O(2,2)$ acts on the quadric and permutes the rulings, with the algebra automorphisms $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ as the subgroup fixing the scalar point; the restriction to $V$ gives the Lorentzian conic and the geometry of the hyperbolic plane. The projective structure is the real form of the biquaternion quadric, differing only in the reality condition.
+The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ is a form of signature $(2,2)$, with polarisation $\langle\cdot,\cdot\rangle_{\natural}$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$; the conjugation is the antiautomorphism with $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$. Its zero set is the null cone, a three-dimensional cone singular at the origin and smooth elsewhere, whose projectivisation $\mathcal{Q} \subset \mathbb{P}^3$ is a smooth quadric surface. Under the identification $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ the nonzero null elements are exactly the rank-one matrices, each an outer product $uv^{\mathsf{T}}$ of nonzero columns, determined up to $(\lambda u, \lambda^{-1}v)$. The form has Witt index $2$: the maximal isotropic subspaces are two-dimensional, forming the two families of isotropic planes, each parametrised by a projective line and each becoming a family of isotropic *lines* on $\mathcal{Q}$. The quadric is the image of the Segre embedding $\mathbb{P}^1\times\mathbb{P}^1 \to \mathbb{P}^3$, hence $\cong\mathbb{P}^1\times\mathbb{P}^1$, and equivalently it is the doubly ruled surface $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings being the two factors. The group $O(2,2)$ acts on the quadric and permutes the rulings, with the algebra automorphisms $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ as the subgroup fixing the scalar point; the restriction to $V$ gives the Lorentzian conic and the geometry of the hyperbolic plane. The projective structure is the real form of the biquaternion quadric, differing only in the reality condition.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\langle\tilde q,\tilde q_2\rangle$, $G = \operatorname{diag}(1,1,-1,-1)$ | the polarisation and its matrix | this article |
 | $\mathcal{N} = \{N=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |

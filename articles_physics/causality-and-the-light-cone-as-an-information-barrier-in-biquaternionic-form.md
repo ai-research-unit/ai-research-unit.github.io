@@ -12,7 +12,7 @@ The interval $\langle\tilde{Q}_{qp}\rangle_{\natural}$ classifies each pair of e
 - the complement of the cone has exactly three connected components, so a continuous worldline crosses from the future to the past or to the spacelike region only through the cone;
 - the causal relation is a partial order, with transitivity proved by the triangle inequality in the algebra;
 - the contraction of two future timelike four-velocities bounds the relative Lorentz factor below by unity, so no two observers can have a relative speed at or above $c$;
-- the boosts form a one-parameter family with additive rapidity $\theta^{\mathrm{rpd}}$ and velocity $\beta=\tanh\theta^{\mathrm{rpd}}$, so the barrier at $\beta=1$ lies at infinite rapidity and is not attained by any finite composition;
+- the boosts form a one-parameter family with additive rapidity $\theta_{\mathrm{rpd}}$ and velocity $\beta=\tanh\theta_{\mathrm{rpd}}$, so the barrier at $\beta=1$ lies at infinite rapidity and is not attained by any finite composition;
 - a causal bijection of Minkowski space is a Lorentz transformation composed with a translation and a positive dilation, so the cone and its time orientation characterize the relativity group rather than merely being preserved by it.
 
 The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.
@@ -110,23 +110,23 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 
 ### Invariance of the Biquaternion Norm
 
-The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
+The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
 
 $$
-\tilde R_\varphi \;\longmapsto\; \tilde{R}_{\varphi,2} = \tilde U^{\mathrm{lor}}\,\tilde R_\varphi\,\tilde U^{\mathrm{lor}}{}^{*},
+\tilde R_\varphi \;\longmapsto\; \tilde{R}_{\varphi,2} = \tilde U_{\mathrm{lor}}\,\tilde R_\varphi\,\tilde U_{\mathrm{lor}}{}^{*},
 \qquad
-\tilde U^{\mathrm{lor}} \in \mathbb{B}, \quad \tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t,
+\tilde U_{\mathrm{lor}} \in \mathbb{B}, \quad \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t,
 $$
 
-as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}^*$. Hence
+as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}^*$. Hence
 
 $$
-\boxed{\;\langle\tilde{R}_{\varphi,2}\rangle_{\natural} = \langle\tilde U^{\mathrm{lor}}\rangle_{\natural} \, \langle\tilde R_\varphi\rangle_{\natural} \, \langle\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural}
-= \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde R_\varphi\rangle_{\natural}\,\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}^*
+\boxed{\;\langle\tilde{R}_{\varphi,2}\rangle_{\natural} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} \, \langle\tilde R_\varphi\rangle_{\natural} \, \langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural}
+= \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde R_\varphi\rangle_{\natural}\,\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}^*
 = \langle\tilde R_\varphi\rangle_{\natural}\;}
 $$
 
-because $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = e_t$ as a coefficient, that is $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.
+because $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ as a coefficient, that is $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.
 
 ### The Three Regions Are Orbits
 
@@ -247,49 +247,49 @@ $$
 v_{\mathrm{rel}} = c\sqrt{1-\frac{256}{625}} = \frac{\sqrt{369}}{25}\,c \approx 0.7683749\,c .
 $$
 
-This is the equal-rapidity orthogonal instance worked in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, which obtains the same $0.7683749\,c$ both as the composed speed $c\tanh\theta^{\mathrm{rpd}}$ of the product rotor and from the velocity-addition formula applied twice. For equal orthogonal rapidities the relative speed and the composed speed coincide, $\gamma_{\mathrm{rel}} = \cosh\theta^{\mathrm{rpd}}$, so the agreement of the invariant contraction with the explicitly composed rotor is a check on the sign and direction conventions of the boost.
+This is the equal-rapidity orthogonal instance worked in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, which obtains the same $0.7683749\,c$ both as the composed speed $c\tanh\theta_{\mathrm{rpd}}$ of the product rotor and from the velocity-addition formula applied twice. For equal orthogonal rapidities the relative speed and the composed speed coincide, $\gamma_{\mathrm{rel}} = \cosh\theta_{\mathrm{rpd}}$, so the agreement of the invariant contraction with the explicitly composed rotor is a check on the sign and direction conventions of the boost.
 
 ## The Rapidity Barrier
 
 The barrier at $v = c$ has a second, group-theoretic expression, and it is the one that shows why the speed of light is unreachable rather than merely unexceeded. A boost is generated by the Hermitian unit-norm biquaternion
 
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\,\vec u,
+\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
-\tanh\theta^{\mathrm{rpd}} = \frac{v}{c},
+\tanh\theta_{\mathrm{rpd}} = \frac{v}{c},
 \qquad
-\cosh\theta^{\mathrm{rpd}} = \gamma,
+\cosh\theta_{\mathrm{rpd}} = \gamma,
 \qquad
-\sinh\theta^{\mathrm{rpd}} = \gamma\beta,
+\sinh\theta_{\mathrm{rpd}} = \gamma\beta,
 $$
 
-where $\theta^{\mathrm{rpd}}$ is the **rapidity** and $\vec u$ the boost direction. The rapidity is an additive coordinate on the boost group: two boosts along a common direction compose to a boost of summed rapidity,
+where $\theta_{\mathrm{rpd}}$ is the **rapidity** and $\vec u$ the boost direction. The rapidity is an additive coordinate on the boost group: two boosts along a common direction compose to a boost of summed rapidity,
 
 $$
 \tilde U_2\tilde U_1
-= \cosh\frac{\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2}{2}\vec u,
+= \cosh\frac{\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}}{2}\vec u,
 $$
 
 as verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. The corresponding velocities compose by the hyperbolic addition law
 
 $$
-w = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2)
+w = c\tanh(\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2})
 = \frac{v_1+v_2}{1+v_1v_2/c^2} .
 $$
 
 The velocity is therefore a bounded, monotone function of the rapidity,
 
 $$
-\frac{v}{c} = \beta = \tanh\theta^{\mathrm{rpd}} \in (-1,1) \quad \text{for every finite } \theta^{\mathrm{rpd}} \in \mathbb{R},
+\frac{v}{c} = \beta = \tanh\theta_{\mathrm{rpd}} \in (-1,1) \quad \text{for every finite } \theta_{\mathrm{rpd}} \in \mathbb{R},
 $$
 
-and the bound is approached only as $\theta^{\mathrm{rpd}} \to \infty$:
+and the bound is approached only as $\theta_{\mathrm{rpd}} \to \infty$:
 
 $$
-1 - \tanh\theta^{\mathrm{rpd}} = \frac{2}{\exp(2\theta^{\mathrm{rpd}})+1} \;\longrightarrow\; 0 .
+1 - \tanh\theta_{\mathrm{rpd}} = \frac{2}{\exp(2\theta_{\mathrm{rpd}})+1} \;\longrightarrow\; 0 .
 $$
 
-A finite composition of boosts has a finite total rapidity $\theta^{\mathrm{rpd}}_1+\cdots+\theta^{\mathrm{rpd}}_n$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2\exp(-2n\,\mathrm{atanh}\,0.9)$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
+A finite composition of boosts has a finite total rapidity $\theta_{\mathrm{rpd},1}+\cdots+\theta_{\mathrm{rpd},n}$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2\exp(-2n\,\mathrm{atanh}\,0.9)$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
 
 The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ is strictly positive for every future timelike $\tilde{V}$ and every future null $\tilde P$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $\langle\tilde P\rangle_{\natural}$ are three faces of the same cone.
 
@@ -329,15 +329,15 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde R_\varphi \mapsto \tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}$ with $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde{R}_{\varphi,\mathrm d} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde R_\varphi \mapsto \tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde{R}_{\varphi,\mathrm d} \in \mathbb{M}_-$:
 
 $$
-\tilde R_\varphi \;\longmapsto\; \tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*} + \tilde{R}_{\varphi,\mathrm d}.
+\tilde R_\varphi \;\longmapsto\; \tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*} + \tilde{R}_{\varphi,\mathrm d}.
 $$
 
 The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
 
-Within the full Lorentz group, the proper orthochronous component is the one realized by the rotor conjugation with $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = e_t$, namely $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$. This is the identity component, and it is the component that preserves the distinction between future and past: a composition of boosts and spatial rotations maps a future-directed timelike displacement to a future-directed timelike displacement, never to a past-directed one. The discrete transformations that exchange the sheets — time reversal and the combined parity–time reversal — are not rotor conjugations, and in the biquaternion interpretation they are not elements of the connected group at all. The immediate physical consequence is that a process built from continuous changes of frame cannot reverse a causal arrow, and the two timelike components of the complement of $\mathcal{Z}$, though related by an inadmissible reflection, are not connected by any allowed motion.
+Within the full Lorentz group, the proper orthochronous component is the one realized by the rotor conjugation with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$, namely $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$. This is the identity component, and it is the component that preserves the distinction between future and past: a composition of boosts and spatial rotations maps a future-directed timelike displacement to a future-directed timelike displacement, never to a past-directed one. The discrete transformations that exchange the sheets — time reversal and the combined parity–time reversal — are not rotor conjugations, and in the biquaternion interpretation they are not elements of the connected group at all. The immediate physical consequence is that a process built from continuous changes of frame cannot reverse a causal arrow, and the two timelike components of the complement of $\mathcal{Z}$, though related by an inadmissible reflection, are not connected by any allowed motion.
 
 ## The Barrier in Information-Theoretic Form
 
@@ -385,13 +385,13 @@ The causal structure of the material sector $\mathbb{M}_-$ is the structure of t
 
 2. **The causal order.** The relation $p \preceq q$, defined by $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\Delta r'_t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $\langle\cdot\rangle_{\natural}$ only for null segments that are parallel and equally oriented.
 
-3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $\langle\tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde R_\varphi\rangle_{\natural}$ for $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = e_t$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
+3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $\langle\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde R_\varphi\rangle_{\natural}$ for $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $\langle\cdot\rangle_{\natural}$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
 5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
 
-6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\theta^{\mathrm{rpd}}$, so the barrier $\beta = 1$ lies at $\theta^{\mathrm{rpd}} = \infty$ and is attained by no finite composition.
+6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\theta_{\mathrm{rpd}}$, so the barrier $\beta = 1$ lies at $\theta_{\mathrm{rpd}} = \infty$ and is attained by no finite composition.
 
 7. **The analytic barrier.** The cone is the characteristic cone of $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and the standard finite-speed-of-propagation theorem confines the support of a solution to the causal future of its source.
 
@@ -418,11 +418,11 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{M}_-$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta r'_t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
-| $\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |
-| $\tilde R_\varphi\mapsto\tilde U^{\mathrm{lor}}\tilde R_\varphi\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation |
+| $\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |
+| $\tilde R_\varphi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Four-velocity |
 | $\beta = |\vec v|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
-| $\theta^{\mathrm{rpd}}$, $\tanh\theta^{\mathrm{rpd}}=\beta$ | Rapidity |
+| $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
 | $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_{1t}^2+\Delta$ | d'Alembertian, series convention |

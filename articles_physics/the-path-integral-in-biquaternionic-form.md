@@ -101,14 +101,14 @@ $$
 \exp(iS/\hbar)\,\big(\exp(iS/\hbar)\big)^\dagger=e_t.
 $$
 
-It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
 \exp(iS/\hbar)\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(2iS/\hbar)\neq e_t
 \qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
 $$
 
-So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
+So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
 
 ### Consequences of centrality
 
@@ -118,15 +118,15 @@ Because each phase factor is central, it commutes with every element of $\mathbb
 $$K(x_f,r'_{t,f};x_i,r'_{t,i})=\mathcal{K}\,e_t,\qquad \mathcal{K}\in\mathbb{C},$$
 a complex number times the identity. It is not a general biquaternion.
 
-2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(iS/\hbar)\tilde{Ξ}^{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
+2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}$. A non-central phase would mix or relatively phase the components; a central one does not.
 
-3. **The overall phase cancels in the state.** With $\tilde{Ξ}^{\mathrm{sp}}\mapsto \exp(iS/\hbar)\tilde{Ξ}^{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})\in\mathbb{M}_+$, centrality gives
-$$\tilde{Ϛ}\;\longmapsto\;\frac{\exp(iS/\hbar)\tilde{Ξ}^{\mathrm{sp}}\,\tilde{Ξ}^{\mathrm{sp}\dagger} \exp(-iS/\hbar)}{\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})}=\tilde{Ϛ},$$
+3. **The overall phase cancels in the state.** With $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})\in\mathbb{M}_+$, centrality gives
+$$\tilde{Ϛ}\;\longmapsto\;\frac{\exp(iS/\hbar)\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \exp(-iS/\hbar)}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})}=\tilde{Ϛ},$$
 so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde R_\psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
 
-The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **centre** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dr'_t$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
+The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **centre** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dr'_t$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
 
 That chain is a structural interpretation of the algebra, not a derivation of anything. The algebra does not say that the action *must* be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{M}_-$.
 
@@ -137,7 +137,7 @@ The phase could be written with any root of $-1$ in place of $i$. The alternativ
 **The generator need not be anti-Hermitian.** Taking $J\tilde R_\psi$ in place of $i\tilde R_\psi$ changes the generator of the flow from $-i H/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde R_\psi/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde R_\psi$. With $J=\vec e_z$ and $\tilde R_\psi=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde R_\psi=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
 which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-r'_t J\tilde R_\psi/\hbar)$ is then not $*$-unitary; at $r'_t=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
-$$\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
+$$\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 
 **The phase is not a global phase.** Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_\mu\mapsto-i\sigma_\mu$ of the companion articles, the phase $\exp(\vec e_z\theta)$ maps to
@@ -177,7 +177,7 @@ $$
 
 gives $A+B=\frac{im}{2\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B}=\frac{im}{2\hbar(T_1+T_2)}$, so the convolution of $K_0(\cdot,T_2)$ with $K_0(\cdot,T_1)$ is exactly $K_0(\cdot,T_1+T_2)$, prefactor included. The phase that survives is the classical action of the longer free flight, and the branch of every square root is fixed by the requirement that the product reproduce the single kernel. The composition was checked numerically on a case chosen for the purpose: with $m=\hbar=1$, $T_1=0.6$, $T_2=0.9$, $x=1.1$, the convolution and the single kernel agree to a relative $1.8\times10^{-16}$.
 
-**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $i\hbar\,\partial/\partial r'_t\,\tilde{Ξ}^{\mathrm{sp}}=-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2\tilde{Ξ}^{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-i\varepsilon V/\hbar)$, again central.
+**The single-step kernel and the Schrödinger equation.** Expanding $K_\varepsilon$ about $x$ and performing the Gaussian integral over the displacement returns the free Schrödinger equation $i\hbar\,\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}=-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2\tilde{Ξ}_{\mathrm{sp}}$, with the central $i$. The path integral therefore reproduces the state-vector equation of the Schrödinger article, and does not introduce a second imaginary unit: the $i$ of the exponent and the $i$ of the resulting equation are the same central element. The potential term enters through the factor $\exp(-i\varepsilon V/\hbar)$, again central.
 
 The distance between this and a genuinely biquaternionic path integral should be stated plainly. The kernel above is a complex scalar times $e_t$; the paths are real-valued trajectories; and the algebra has entered only through the identification of the phase's imaginary unit and the location of its exponent. No element of $\mathbb{M}_+$ has been used to *define* the sum, and no non-central element appears at all.
 
@@ -242,9 +242,9 @@ For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathr
 
 $$
 \frac{1}{\sqrt{2\pi i\hbar}}\sqrt{\big|\det\nolimits\delta^2S\big|}
-=\frac{A^{\mathrm{wkb}}}{\sqrt{2\pi i\hbar}},
+=\frac{A_{\mathrm{wkb}}}{\sqrt{2\pi i\hbar}},
 \qquad
-A^{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
+A_{\mathrm{wkb}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
 $$
 
 so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
@@ -290,7 +290,7 @@ Both ambiguities that the flat time slicing conceals appear when the configurati
 $$
 [p,[p,g]]=-\hbar^2\,\frac{d^2g}{dx^2} ,
 $$
-verified here numerically on $g(x)=1+x^2$ and a test function: with $\hbar=1$, the commutator reproduces $-\hbar^2\frac{d^2g}{dx^2}\tilde{Ξ}^{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
+verified here numerically on $g(x)=1+x^2$ and a test function: with $\hbar=1$, the commutator reproduces $-\hbar^2\frac{d^2g}{dx^2}\tilde{Ξ}_{\mathrm{sp}}$ to six decimal places at $x=-0.7,0,0.4,1.2$. The identity shows that the ordering ambiguity is proportional to the curvature — the second derivative of the coefficient, which for a metric is the Riemann tensor — and cannot be removed by a normalisation of the path integral. The flat case escapes it only because $g$ is constant and the commutator vanishes.
 
 **The measure-theoretic factor.** The second ambiguity is in the measure. For a particle in curved space the functional integral carries, in addition to $\mathcal{D}x$, a factor
 $$
@@ -338,13 +338,13 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 The path integral $K=\int\mathcal{D}x\,\exp(iS[x]/\hbar)$ is a sum over paths weighted by the phase $\exp(iS/\hbar)$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $iS/\hbar$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{M}_-$, along the $i c r'_t$ direction; and the phase factor $\exp(iS/\hbar)$ is a **central $*$-unitary** element of $\mathbb{C}_{\mathbb{B}}$, satisfying $(\exp(iS/\hbar))(\exp(iS/\hbar))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(iS/\hbar)\overline{\exp(iS/\hbar)}=\exp(2iS/\hbar)$.
 
-Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(iS_1/\hbar)+\exp(iS_2/\hbar)|=2|\cos(\Delta S/2\hbar)|$, with nodes at $\Delta S=(2n+1)\pi\hbar$.
+Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(iS_1/\hbar)+\exp(iS_2/\hbar)|=2|\cos(\Delta S/2\hbar)|$, with nodes at $\Delta S=(2n+1)\pi\hbar$.
 
 A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-J\tilde R_\psi/\hbar$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde R_\psi=i\vec e_x$ one has $J\tilde R_\psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
 
 The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is central, its phase the classical action over $\hbar$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $r'_t\mapsto-i\tau$ gives $S=iS_E$ and hence $\exp(iS/\hbar)=\exp(-S_E/\hbar)$; in the interpretation of the companion article this is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
-The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A^{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
+The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$. Its phase is the same central $*$-unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{wkb}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
 
 The canonical commutator is not visible in the commuting sum over paths, but its right-hand side is: the free trajectory is not differentiable, the forward and backward derivatives of its two-point function differ by the contact term $\hbar/m$ (checked to be exactly $1$ with $\hbar=m=1$, independent of the step), and the time order becomes the operator order, giving $[x,p]=i\hbar$. The algebra supplies $i\hbar$ as a **central** element of the **material sector** $\mathbb{M}_-$ — the same sector as the phase exponent — and not the ordering, which belongs to the operator algebra on the state module. In curved space two further external objects appear: the **operator ordering**, whose ambiguity is the curvature, $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ (checked numerically), and the **measure factor** $\prod_x\sqrt g$, one volume element per slice, needed to restore unitarity and of the same class as $\mathcal{D}x$. The algebra supplies the central $i\hbar$ and the determinant language; it supplies neither the curvature, the ordering, nor the volume element.
 
@@ -357,7 +357,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $i$ | Scalar imaginary, central, $i^2=-e_t$ |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; home of the path-integral phase |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; home of the phase exponent $iS/\hbar$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace; image of the Wick rotation |
 | $K(x_f,r'_{t,f};x_i,r'_{t,i})$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
 | $S[r_x]=\int \mathrm{Lag}\,dr'_t$ | Action; real scalar |
@@ -367,13 +367,13 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=m/2\pi\hbar T$ |
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
-| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A^{\mathrm{wkb}}$ |
+| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
 | $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
 | $\langle x_jx_k\rangle=(\hbar/m)\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\hbar/m$ |
 | $[x,p]=i\hbar$ | Canonical commutator; the value $i\hbar$ is central and in $\mathbb{M}_-$ |
 | $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
-| $\tilde{Ϛ}=\tilde{Ξ}^{\mathrm{sp}}\tilde{Ξ}^{\mathrm{sp}\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ | State from a spinor; global phase cancels |
+| $\tilde{Ϛ}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | State from a spinor; global phase cancels |
 | $\operatorname{Tr}(\tilde\Pi\tilde R_\psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\psi^{*}) = 2\langle\tilde\Pi,\tilde R_\psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $r'_t\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |

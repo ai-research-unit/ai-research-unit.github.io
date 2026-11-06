@@ -133,9 +133,9 @@ The inverse of the photon equation is built from the fundamental solution of the
 that satisfies the radiation condition,
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = -\frac{\exp(\,i\omega r)}{4\pi r},
+\tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = -\frac{\exp(\,i\omega r)}{4\pi r},
 \qquad r = \|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\| ,
-\qquad \left(\Delta + \omega^{2}\right)\tilde{Ξ}^{\mathrm{sp}} = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+\qquad \left(\Delta + \omega^{2}\right)\tilde{Ξ}_{\mathrm{sp}} = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
 the outgoing spherical kernel, whose flux through a small sphere was computed and is exactly $+1$,
@@ -145,7 +145,7 @@ monochromatic source,
 
 $$
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}^{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
+= i\,\nabla^{+}_{\omega}\left\{\tilde J_{\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
 $$
 
 so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
@@ -378,7 +378,7 @@ $\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$ with
 $\nabla^{\pm}_{\omega} = \omega \pm \nabla$, and the factorisation
 $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
-$\tilde{Ξ}^{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the **elementary photon** of a concentrated
+$\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the **elementary photon** of a concentrated
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
@@ -415,7 +415,7 @@ clearest statement of what the programme assumes.
 | $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
 | $\nabla^{-}_{\omega}\tilde{Ξ} = i\tilde J_{\mathrm{eg}}$ | The photon equation |
 | $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$ | Helmholtz factorisation of the photon equation |
-| $\tilde{Ξ}^{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}^{\mathrm{sp}} = \delta$ |
+| $\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}_{\mathrm{sp}} = \delta$ |
 | $\tilde{Ξ}^{0}$ | Elementary photon, the kernel of the source-to-field map |
 | $\alpha_{0}$, $\tilde F_{0}$ | Scalar amplitude and field-strength amplitude of the elementary photon (the paper writes $\rho_{0}$ and $\|Ξ_{0}\|$) |
 | $\tilde{Ξ}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |

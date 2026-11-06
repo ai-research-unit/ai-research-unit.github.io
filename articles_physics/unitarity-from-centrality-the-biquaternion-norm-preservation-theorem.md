@@ -39,7 +39,7 @@ $$
 \|\tilde Q_1\|_{\dagger}^2
 =2\bigl(|Q_{1t}|^2+|Q_{1x}|^2+|Q_{1y}|^2+|Q_{1z}|^2\bigr)>0\quad(\tilde Q_1\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde R_\psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde R_\psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -119,13 +119,13 @@ $$
 =\mathrm{Tr}\bigl(\tilde Q\tilde Q_1^{*}\tilde Q^{*}\tilde Q\tilde Q_1\tilde Q^{*}\bigr)
 =\mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle\,|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|$ and
+using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde Q_1$ and take $\tilde Q_1$ rank one, $\tilde Q_1=|\xi_{\mathrm{alt}}\rangle\langle\xi_{\mathrm{alt}}|$ in the matrix model. Then $\tilde Q_1^{*}\tilde Q_4\tilde Q_1=\langle\xi_{\mathrm{alt}}|\tilde Q_4\xi_{\mathrm{alt}}\rangle\,|\xi_{\mathrm{alt}}\rangle\langle\xi_{\mathrm{alt}}|$ and
 $$
 \mathrm{Tr}\bigl(\tilde Q_1^{*}\tilde Q_4\tilde Q_1\tilde Q_4\bigr)
-=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle\,\mathrm{Tr}\bigl(|\xi^{\mathrm{alt}}\rangle\langle\xi^{\mathrm{alt}}|\tilde Q_4\bigr)
-=\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle^2 .
+=\langle\xi_{\mathrm{alt}}|\tilde Q_4\xi_{\mathrm{alt}}\rangle\,\mathrm{Tr}\bigl(|\xi_{\mathrm{alt}}\rangle\langle\xi_{\mathrm{alt}}|\tilde Q_4\bigr)
+=\langle\xi_{\mathrm{alt}}|\tilde Q_4\xi_{\mathrm{alt}}\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle^2=1$ for every unit $\xi^{\mathrm{alt}}$; positivity gives $\langle\xi^{\mathrm{alt}}|\tilde Q_4\xi^{\mathrm{alt}}\rangle=1$ for all unit $\xi^{\mathrm{alt}}$, hence $\tilde Q_4=e_t$.
+The preserved value is $\mathrm{Tr}(\tilde Q_1^{*}\tilde Q_1)=1$, so $\langle\xi_{\mathrm{alt}}|\tilde Q_4\xi_{\mathrm{alt}}\rangle^2=1$ for every unit $\xi_{\mathrm{alt}}$; positivity gives $\langle\xi_{\mathrm{alt}}|\tilde Q_4\xi_{\mathrm{alt}}\rangle=1$ for all unit $\xi_{\mathrm{alt}}$, hence $\tilde Q_4=e_t$.
 
 The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_1^{*})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde Q}$ exactly when $\tilde Q$ is $*$-unitary, which is the standard statement of unitarity in the framework's language.
 
@@ -173,9 +173,9 @@ $$
 $$
 By Theorem 1 these are exactly the elements for which $\Gamma_{\tilde Q}$ preserves the Hermitian norm, and for which $\Gamma_{\tilde Q}$ is an algebra automorphism fixing the unit. In the matrix model they are the $*$-unitary $2\times 2$ matrices; on the state module they are the norm-preserving linear maps; on the Bloch sphere their conjugation image is the rotation group $SO(3)$, with kernel $\{\pm e_t\}$, the double cover of the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
-**The unit-norm elements.** A unit-norm biquaternion is a Lorentz rotor, written $\tilde U^{\mathrm{lor}}$, and the group is
+**The unit-norm elements.** A unit-norm biquaternion is a Lorentz rotor, written $\tilde U_{\mathrm{lor}}$, and the group is
 $$
-SL(2,\mathbb{C})=\bigl\{\tilde U^{\mathrm{lor}}\in\mathbb{B}:\ \langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = \langle\tilde U^{\mathrm{lor}},\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t\bigr\}=\bigl\{\tilde U^{\mathrm{lor}}:\ \det M(\tilde U^{\mathrm{lor}})=1\bigr\},
+SL(2,\mathbb{C})=\bigl\{\tilde U_{\mathrm{lor}}\in\mathbb{B}:\ \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = \langle\tilde U_{\mathrm{lor}},\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\bigr\}=\bigl\{\tilde U_{\mathrm{lor}}:\ \det M(\tilde U_{\mathrm{lor}})=1\bigr\},
 $$
 the elements of unit norm. By Theorem 2 these preserve the biquaternion norm, with the scaling factor exactly $1$; they need not be $*$-unitary, and they need not be norm-preserving for the Hermitian norm. This is the group that acts on the biquaternion norm, and it is the group that the companion articles on the algebra's real structure identify with the determinant-preserving transformations.
 
@@ -187,11 +187,11 @@ It contains $SL(2,\mathbb{C})$ as the subgroup with phase $1$, and every element
 $$
 G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C}),
 \qquad
-\tilde Q=\lambda\,\tilde U^{\mathrm{lor}},\quad |\lambda|=1,\quad \langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t ,
+\tilde Q=\lambda\,\tilde U_{\mathrm{lor}},\quad |\lambda|=1,\quad \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t ,
 $$
 because if $\langle\tilde Q\rangle_{\natural}=\mu e_t$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $\langle\tilde Q/\lambda\rangle_{\natural}=e_t$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_t$, and $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$, so $|\lambda^2|=1$ gives $|\lambda|=1$ while $\lambda^2=1$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_t\}$.
 
-The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $\mathrm{U}(2)$ is four-real-dimensional. The inclusions are
+The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $\mathrm{U}(2)$ is four-real-dimensional. The inclusions are
 $$
 SU(2)=\mathrm{U}(2)\cap SL(2,\mathbb{C})\ \subset\ \mathrm{U}(2)\ \subset\ G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C}),
 $$
@@ -221,7 +221,7 @@ both resting on the identity $\tilde Q^{*}\bar{\tilde Q}=\overline{\langle\tilde
 $$
 \mathrm{Sc}\bigl(\tilde Q\tilde Q_1\tilde Q^{*}(\tilde Q\tilde Q_2\tilde Q^{*})^{*}\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\,(\tilde Q^{*}\tilde Q)\,\tilde Q_2^{*}\,(\tilde Q^{*}\tilde Q)\bigr),
 $$
-which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $\tilde Q_2$ only when $\tilde Q^{*}\tilde Q=e_t$ — setting $\tilde Q_2=e_t$ already forces $(\tilde Q^{*}\tilde Q)^{2}=e_t$, and a Hermitian positive $\tilde Q^{*}\tilde Q$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde U^{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ has $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
+which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $\tilde Q_2$ only when $\tilde Q^{*}\tilde Q=e_t$ — setting $\tilde Q_2=e_t$ already forces $(\tilde Q^{*}\tilde Q)^{2}=e_t$, and a Hermitian positive $\tilde Q^{*}\tilde Q$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde U_{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ has $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
 
 **A caution on the word isometry.** The isometry group of a form, read in the standard linear sense as the full group of linear maps that preserve it, is far larger than the $*$-unitary group, and it is not one group but three: $O_4(\mathbb{C})$ of real dimension twelve for the two bilinear forms, $\mathrm{U}(4)$ of real dimension sixteen and compact for the general plain sesquilinear form, and $\mathrm{U}(1,3)$ of real dimension sixteen and non-compact for the Krein form. What the unitaries supply is not one of those groups but the **inner isometries**, the conjugations by an element of the algebra, and because the central phase acts trivially the acting group is $PU(2)\cong SO(3)$, of real dimension three. The two statements do not compete, and a reader should hold both: every conjugation by a $*$-unitary is an isometry of each of the four forms, and the isometry group of each form is very much larger than the image of the $*$-unitary group. The sharper form of the first statement is that these inner isometries are exactly the isometries that also preserve the algebra's multiplication — the $\mathbb{C}$-linear isometries preserving the product are the inner ones and no others. That is why the four forms survive a $*$-unitary conjugation together: the reason is not an accident of the coefficients, it is that the conjugation is an automorphism of the algebra as well as an isometry of the forms, and the four forms are four dressings of the one product that the automorphism preserves.
 
@@ -231,11 +231,11 @@ which returns $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ for all $\tilde Q_1$ and $
 
 The following computations exhibit each hypothesis failing when it is dropped.
 
-**Example 1: a non-$*$-unitary element of unit norm.** Take $\tilde U^{\mathrm{lor}}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde U^{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
+**Example 1: a non-$*$-unitary element of unit norm.** Take $\tilde U_{\mathrm{lor}}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde U_{\mathrm{lor}}=\cosh r_t\,e_t+i\sinh r_t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$
-\tilde U^{\mathrm{lor}}{}^{*}\tilde U^{\mathrm{lor}}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
+\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
-which is not central for $\lambda\neq1$, so $\Gamma_{\tilde U^{\mathrm{lor}}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde\Pi=\tfrac12(e_t+i \vec e_x)$ the trace pairing of $\tilde\Pi$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde U^{\mathrm{lor}}}\tilde\Pi)^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
+which is not central for $\lambda\neq1$, so $\Gamma_{\tilde U_{\mathrm{lor}}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde\Pi=\tfrac12(e_t+i \vec e_x)$ the trace pairing of $\tilde\Pi$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde U_{\mathrm{lor}}}\tilde\Pi)^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
 
 **Example 2: a central scaling.** Take $\tilde Q=\lambda_t e_t$ with $\lambda_t>0$, $\lambda_t\neq1$. This defect is central, $\tilde Q^{*}\tilde Q=\lambda_t^2e_t$, so $\Gamma_{\tilde Q}$ is a homomorphism up to the central scalar $\lambda_t^2$: for all $\tilde Q_1,\tilde Q_1$,
 $$
@@ -269,21 +269,21 @@ The norm-preservation theorem of the preceding sections is algebraic: it is abou
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
-i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}^{\mathrm{sp}} ,
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde R_\psi\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
 \tilde{Ζ}^2=-e_t,\quad \tilde R_\psi\in\mathbb{M}_+,
 $$
 with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde R_\psi$ Hermitian. The solution, for constant $\tilde R_\psi$, is
 $$
-\tilde{Ξ}^{\mathrm{sp}}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}^{\mathrm{sp}}(0),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}_{\mathrm{sp}}(0),
 \qquad
 G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi.
 $$
-The norm $\mathrm{Tr}(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}})$ is preserved for all $r'_t$ and all $\tilde{Ξ}^{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
+The norm $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is preserved for all $r'_t$ and all $\tilde{Ξ}_{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
 $$
-\frac{d}{dr'_t}\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{sp}\dagger}\tilde{Ξ}^{\mathrm{sp}}\bigr)
-=\mathrm{Tr}\bigl(\tilde{Ξ}^{\mathrm{sp}\dagger}(G^{*}+G)\tilde{Ξ}^{\mathrm{sp}}\bigr)
-=0\ \ \text{for all }\tilde{Ξ}^{\mathrm{sp}}
+\frac{d}{dr'_t}\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\bigr)
+=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}(G^{*}+G)\tilde{Ξ}_{\mathrm{sp}}\bigr)
+=0\ \ \text{for all }\tilde{Ξ}_{\mathrm{sp}}
 \iff G^{*}=-G .
 $$
 
@@ -347,7 +347,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$.
 | $\Gamma_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ | Conjugation action |
 | $\tilde Q_4=\tilde Q^{*}\tilde Q$ | Defect of the action |
 | $\mathrm{U}(2)=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | $*$-Unitary group; preserves the Hermitian norm |
-| $SL(2,\mathbb{C})=\{\tilde U^{\mathrm{lor}}:\langle\tilde U^{\mathrm{lor}}\rangle_{\natural}=e_t\}$ | Unit-norm group; the Lorentz rotor |
+| $SL(2,\mathbb{C})=\{\tilde U_{\mathrm{lor}}:\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\}$ | Unit-norm group; the Lorentz rotor |
 | $G_N=\{\tilde Q:|\langle\tilde Q\rangle_{\natural}|=1\}=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
 | $\tilde{Ζ}$ | Root of $-e_t$, $\tilde{Ζ}^2=-e_t$ |
 | $G=-\hbar^{-1}\tilde{Ζ}\tilde R_\psi$ | Generator of the state-vector flow |

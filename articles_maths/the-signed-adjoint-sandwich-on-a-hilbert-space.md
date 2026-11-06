@@ -22,7 +22,7 @@ $$
 (L_{A}R_{B})^*=L_{A^*}R_{B^*},
 $$
 
-so the adjoint of an unsigned sandwich is the unsigned sandwich of the adjoints, and the map $A\mapsto L_A$ together with $B\mapsto R_B$ gives a $*$-representation of $B(H)\times B(H)^{\mathrm{opp}}$.
+so the adjoint of an unsigned sandwich is the unsigned sandwich of the adjoints, and the map $A\mapsto L_A$ together with $B\mapsto R_B$ gives a $*$-representation of $B(H)\times B(H)_{\mathrm{opp}}$.
 
 *Proof.* $\langle L_{A}R_{B}X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(AXBY^*)=\operatorname{tr}(XA^*YB^*)=\langle X,A^*YB^*\rangle_{\mathrm{HS}}=\langle X,L_{A^*}R_{B^*}Y\rangle_{\mathrm{HS}}$, using the ciclicity of the trace; uniqueness of the adjoint gives the identity.
 

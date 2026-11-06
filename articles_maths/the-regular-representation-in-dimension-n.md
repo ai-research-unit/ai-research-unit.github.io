@@ -50,7 +50,7 @@ and it is injective.
 
 *Proof.* $R_{B}R_{C}(X)=(XC)B=X(CB)=R_{CB}(X)$, and the injectivity is the argument of the left case with $X=I$.
 
-**The order is reversed, and the reversal is the whole difference between the two sides.** The image $\operatorname{End}_{R}(A)=\{R_{B}\}$ is a subalgebra isomorphic to the **opposite algebra** $A^{\mathrm{opp}}$, which is the same vector space with the product $B\cdot C=CB$. For a commutative algebra the two copies coincide; for a matrix algebra they do not, and the failure of coincidence is what the two-sided products measure.
+**The order is reversed, and the reversal is the whole difference between the two sides.** The image $\operatorname{End}_{R}(A)=\{R_{B}\}$ is a subalgebra isomorphic to the **opposite algebra** $A_{\mathrm{opp}}$, which is the same vector space with the product $B\cdot C=CB$. For a commutative algebra the two copies coincide; for a matrix algebra they do not, and the failure of coincidence is what the two-sided products measure.
 
 ### The Two Copies Commute
 
@@ -103,7 +103,7 @@ for $A=M_{n}(\mathbb{C})$, whose centre is $\mathbb{C}I$.
 
 ### The Two Slots
 
-**The pair is read in two slots, and the slots are not interchangeable.** The left slot carries an element of $A$ and the right slot an element of $A^{\mathrm{opp}}$; the product $L_{A}R_{B}$ is bilinear in the pair and satisfies
+**The pair is read in two slots, and the slots are not interchangeable.** The left slot carries an element of $A$ and the right slot an element of $A_{\mathrm{opp}}$; the product $L_{A}R_{B}$ is bilinear in the pair and satisfies
 $$
 L_{\lambda A}R_{B}=L_{A}R_{\lambda B}=\lambda L_{A}R_{B}
 $$
@@ -115,22 +115,22 @@ for every scalar $\lambda$. **The scalar can be moved from one slot to the other
 
 **Theorem (the two-sided operators are the tensor square of the algebra).** The linear map
 $$
-A\otimes A^{\mathrm{opp}}\longrightarrow\operatorname{End}(A),\qquad A\otimes B^{\mathrm{opp}}\longmapsto L_{A}R_{B},
+A\otimes A_{\mathrm{opp}}\longrightarrow\operatorname{End}(A),\qquad A\otimes B_{\mathrm{opp}}\longmapsto L_{A}R_{B},
 $$
 is a homomorphism of algebras, and for $A=M_{n}(\mathbb{C})$ it is an isomorphism.
 
-*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A^{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$; the image of each is the product $L_{E_{ij}}R_{E_{kl}}$, whose coefficient array is the elementary array with the single entry $1$ in the row $(i,j)$ and the column $(k,l)$. These $n^{4}$ elementary arrays are a basis of the space of $n^{2}\times n^{2}$ arrays, so the images are independent and the dimensions agree:
+*Proof.* The product rule is $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, which is the product in $A\otimes A_{\mathrm{opp}}$ read on the two factors. For the bijectivity, take the $n^{4}$ tensors $E_{ij}\otimes E_{\mathrm{opp},kl}$; the image of each is the product $L_{E_{ij}}R_{E_{kl}}$, whose coefficient array is the elementary array with the single entry $1$ in the row $(i,j)$ and the column $(k,l)$. These $n^{4}$ elementary arrays are a basis of the space of $n^{2}\times n^{2}$ arrays, so the images are independent and the dimensions agree:
 $$
-\dim\bigl(A\otimes A^{\mathrm{opp}}\bigr)=N^{2}=\dim\operatorname{End}(A).
+\dim\bigl(A\otimes A_{\mathrm{opp}}\bigr)=N^{2}=\dim\operatorname{End}(A).
 $$
 
 **Two readings of one statement.** The isomorphism says that **an endomorphism of a matrix algebra is a sum of two-sided multiplications**, and it says that **the operator space is the tensor square of the algebra**. The second reading is the one that makes the coefficient array of the companion articles natural: the array is the tensor, and the length is its rank.
 
 ### What the Isomorphism Requires
 
-**The isomorphism is a property of the algebra and not of the notation.** For a commutative algebra $A^{\mathrm{opp}}=A$ and $L_{A}R_{B}=L_{AB}$, so the image is the one-sided family alone, of dimension $N$ and not $N^{2}$; the kernel of the map is then of dimension $N^{2}-N$, and the tensor form loses all its information.
+**The isomorphism is a property of the algebra and not of the notation.** For a commutative algebra $A_{\mathrm{opp}}=A$ and $L_{A}R_{B}=L_{AB}$, so the image is the one-sided family alone, of dimension $N$ and not $N^{2}$; the kernel of the map is then of dimension $N^{2}-N$, and the tensor form loses all its information.
 
-**The criterion.** The map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ is injective exactly when $A$ is a **central simple algebra**, and every such algebra is a matrix algebra over a division ring. Over $\mathbb{C}$ the central simple algebras are the algebras $M_{n}(\mathbb{C})$, so **the exactness of the construction is the exactness of the matrix case**: it holds for $M_{n}(\mathbb{C})$ at every $n$ and fails for every algebra that is a product of two factors.
+**The criterion.** The map $A\otimes A_{\mathrm{opp}}\to\operatorname{End}(A)$ is injective exactly when $A$ is a **central simple algebra**, and every such algebra is a matrix algebra over a division ring. Over $\mathbb{C}$ the central simple algebras are the algebras $M_{n}(\mathbb{C})$, so **the exactness of the construction is the exactness of the matrix case**: it holds for $M_{n}(\mathbb{C})$ at every $n$ and fails for every algebra that is a product of two factors.
 
 **The three algebras to keep apart.** The scalars $\mathbb{C}$ have $N=1$ and no room for a failure. The dual numbers and the split-complex numbers are commutative and collapse to the one-sided family. The biquaternion algebra $\mathbb{B}$ is $M_{2}(\mathbb{C})$, so it is central simple and does not collapse; the reduced biquaternion algebra is $\mathbb{C}\times\mathbb{C}$, so it does. **The same complex dimension four is carried by two algebras of which one is central simple and the other is not, and the operator theory of the two differs at its first theorem.**
 
@@ -155,9 +155,9 @@ $$
 
 The left multiplications $L_{A}(X)=AX$ form a copy of the algebra $A$ inside $\operatorname{End}(A)$, faithful and of dimension $N=\dim A$; the right multiplications $R_{B}(X)=XB$ form a copy of the opposite algebra, and the two copies commute, each being the commutant of the other, with intersection the scalars. The product $L_{A}R_{B}$ is the single operator $X\mapsto AXB$, bilinear in the pair, constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$, and the set of products is a cone of dimension $2N-1$ inside the ambient space of dimension $N^{2}$.
 
-For $A=M_{n}(\mathbb{C})$ the numbers are $N=n^{2}$ and $N^{2}=n^{4}$, and the ladder is $1,n^{2},2n^{2}-1,n^{4}$: the scalars, the one-sided family, the cone, the ambient. At $n=2$ the ladder is $1,4,7,16$, the biquaternion ladder, and the two-sided products are the pure tensors of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
+For $A=M_{n}(\mathbb{C})$ the numbers are $N=n^{2}$ and $N^{2}=n^{4}$, and the ladder is $1,n^{2},2n^{2}-1,n^{4}$: the scalars, the one-sided family, the cone, the ambient. At $n=2$ the ladder is $1,4,7,16$, the biquaternion ladder, and the two-sided products are the pure tensors of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$.
 
-The isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ holds exactly for the central simple algebras, that is for the matrix algebras; for a commutative or split algebra the image falls back to the one-sided family, the tensor form loses its information, and the two-sided operator is the multiplication by the product of the two parameters. **The exactness of the operator theory of a category is the centrality and simplicity of its algebra, and not the size of its dimension.**
+The isomorphism $A\otimes A_{\mathrm{opp}}\to\operatorname{End}(A)$ holds exactly for the central simple algebras, that is for the matrix algebras; for a commutative or split algebra the image falls back to the one-sided family, the tensor form loses its information, and the two-sided operator is the multiplication by the product of the two parameters. **The exactness of the operator theory of a category is the centrality and simplicity of its algebra, and not the size of its dimension.**
 
 ## Summary of Notation
 
@@ -171,8 +171,8 @@ The isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}(A)$ holds exactl
 | $R_{B}$ | the right multiplication $X\mapsto XB$ |
 | $L_{A}R_{B}$ | the two-sided operator $X\mapsto AXB$ |
 | $\operatorname{End}_{L}(A)$ | the set of left multiplications, a copy of $A$ |
-| $\operatorname{End}_{R}(A)$ | the set of right multiplications, a copy of $A^{\mathrm{opp}}$ |
-| $A^{\mathrm{opp}}$ | the opposite algebra |
+| $\operatorname{End}_{R}(A)$ | the set of right multiplications, a copy of $A_{\mathrm{opp}}$ |
+| $A_{\mathrm{opp}}$ | the opposite algebra |
 | $\mathrm I_{N}$ | the identity of $\operatorname{End}(A)$ |
 | $\operatorname{vec}X$ | the column of the $N$ coordinates of $X$ |
 | $c(M)$ | the coefficient array of an operator |

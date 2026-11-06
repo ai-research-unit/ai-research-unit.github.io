@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The harmonic oscillator is the simplest quantum system with an infinite spectrum, and its algebra is completely explicit. A single mode is one complex degree of freedom, created and destroyed by operators $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ with $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=1$; the Hamiltonian is $H=\hbar\omega(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+\tfrac12)$, and the spectrum is $(n+\tfrac12)\hbar\omega$. The single complex degree of freedom is two real degrees of freedom, the two quadratures; the phase is a $\mathrm{U}(1)$, and the quadratic symmetries are the squeezing transformations forming the symplectic group $Sp(2,\mathbb{R})$.
+The harmonic oscillator is the simplest quantum system with an infinite spectrum, and its algebra is completely explicit. A single mode is one complex degree of freedom, created and destroyed by operators $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ with $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=1$; the Hamiltonian is $H=\hbar\omega(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+\tfrac12)$, and the spectrum is $(n+\tfrac12)\hbar\omega$. The single complex degree of freedom is two real degrees of freedom, the two quadratures; the phase is a $\mathrm{U}(1)$, and the quadratic symmetries are the squeezing transformations forming the symplectic group $Sp(2,\mathbb{R})$.
 
 The biquaternion framework is built by complexifying the quaternions, $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and the complexification splits the algebra into the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$. Because the oscillator's single complex degree of freedom is two real degrees of freedom, and because the framework's central structural device is a complexification with two sectors, there is a natural claim to test rather than assume:
 
@@ -180,13 +180,13 @@ $$
 
 Both $\tilde{Q}_{\mathrm{osc},1}$ and $\tilde{Q}_{\mathrm{osc},2}$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(r'_t,r_x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $c r'_{t}\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)\,e_t+i\sinh(\theta^{\mathrm{rpd}}/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(r'_t,r_x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $c r'_{t}\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)\,e_t+i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde R_\varphi=i c r'_t\,e_t+r_x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde R_\varphi\mapsto\tilde U_{\mathrm b}\tilde R_\varphi\tilde U_{\mathrm b}^{*}$; computing the result gives
 
 $$
-c r'_{t}_2=\cosh\theta^{\mathrm{rpd}}\,c r'_{t}-\sinh\theta^{\mathrm{rpd}}\,x,\qquad x_2=\cosh\theta^{\mathrm{rpd}}\,x-\sinh\theta^{\mathrm{rpd}}\,c r'_{t},
+c r'_{t}_2=\cosh\theta_{\mathrm{rpd}}\,c r'_{t}-\sinh\theta_{\mathrm{rpd}}\,x,\qquad x_2=\cosh\theta_{\mathrm{rpd}}\,x-\sinh\theta_{\mathrm{rpd}}\,c r'_{t},
 $$
 
-so the null combinations scale as $c r'_{t}\pm x\mapsto \exp(\mp\theta^{\mathrm{rpd}})(c r'_{t}\pm x)$. Identifying the oscillator's phase plane with the $(c r'_{t},x)$ plane of $\mathbb{M}_-$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow c r'_{t}\pm x$ makes the squeeze a boost, term for term.
+so the null combinations scale as $c r'_{t}\pm x\mapsto \exp(\mp\theta_{\mathrm{rpd}})(c r'_{t}\pm x)$. Identifying the oscillator's phase plane with the $(c r'_{t},x)$ plane of $\mathbb{M}_-$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow c r'_{t}\pm x$ makes the squeeze a boost, term for term.
 
 At the group level the identification is the standard one: the oscillator's dynamical group $Sp(2,\mathbb{R})$ is isomorphic to $SU(1,1)$, which is the subgroup of $SL(2,\mathbb{C})$ fixing a space-like direction, equivalently the double cover of the $SO(1,2)$ subgroup of the Lorentz group. Its compact $\mathrm{U}(1)$ is the phase; its two non-compact directions are the squeezes, realized as boosts. So the framework supplies a Lorentzian interpretation of squeezing: the phase is the compact rotation and the squeezes are the non-compact boosts in the same $su(1,1)$.
 
@@ -232,7 +232,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2},\tilde{Q}_{\mathrm{osc},3}$ | Quadratic generators (squeezes and phase), $[\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2}]=2i\tilde{Q}_{\mathrm{osc},3}$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
-| $\tilde U_{\mathrm b}=\cosh\frac\theta^{\mathrm{rpd}}2\,e_t+i\sinh\frac\theta^{\mathrm{rpd}}2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
+| $\tilde U_{\mathrm b}=\cosh\frac\theta_{\mathrm{rpd}}2\,e_t+i\sinh\frac\theta_{\mathrm{rpd}}2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | Sector exchange by the scalar imaginary |

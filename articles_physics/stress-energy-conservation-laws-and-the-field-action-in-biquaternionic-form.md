@@ -7,7 +7,7 @@ The preceding articles of this subcategory treat the particle's kinematics, the 
 The organizing fact is that in a Lagrangian field theory the stress–energy tensor is not an independent input. It is the Noether current of translation invariance of the action,
 
 $$
-S[\tilde{Ξ}^{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
+S[\tilde{Ξ}_{\mathrm{sp}}] = \int \mathcal{L}(\tilde{Ξ}_{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}})\,d^4r ,
 $$
 
 so that the same action that yields the field equations through the Euler–Lagrange equations also yields the ten components of $T_{\mu\nu}$ through Noether's theorem, and the conservation law
@@ -37,16 +37,16 @@ The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},
 The action of a field theory is a functional of the field and its first derivatives,
 
 $$
-S = \int \mathcal{L}(\tilde{Ξ}^{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}})\,d^4r ,
+S = \int \mathcal{L}(\tilde{Ξ}_{\mathrm{sp}},\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}})\,d^4r ,
 \qquad
 d^4r = c\,dr'_t\,dr_x\,dr_y\,dr_z ,
 $$
 
-and the field equation is its stationarity condition. For each field component $\tilde{Ξ}^{\mathrm{sp}}_a$ the **Euler–Lagrange equation** is
+and the field equation is its stationarity condition. For each field component $\tilde{Ξ}_{\mathrm{sp},a}$ the **Euler–Lagrange equation** is
 
 $$
-\frac{\partial\mathcal{L}}{\partial\tilde{Ξ}^{\mathrm{sp}}_a}
-- \partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}}_a)} = 0 ,
+\frac{\partial\mathcal{L}}{\partial\tilde{Ξ}_{\mathrm{sp},a}}
+- \partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})} = 0 ,
 $$
 
 and the statement that a continuous transformation of the field leaves $S$ unchanged yields a **conserved current** by Noether's theorem. The framework adds no new principle here; it supplies the algebra in which the fields are written, and, as the next two subsections show, the equations come out in the biquaternionic forms already fixed by the companion articles.
@@ -118,13 +118,13 @@ The stress–energy tensor is the Noether current of invariance under spacetime 
 
 $$
 \delta\mathcal{L} = \epsilon_\nu\partial/\partial R_\nu\,\mathcal{L}
-= \epsilon_\nu\partial/\partial R_\mu\,\left(\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}}_a)}\partial/\partial R_\nu\,\tilde{Ξ}^{\mathrm{sp}}_a\right),
+= \epsilon_\nu\partial/\partial R_\mu\,\left(\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a}\right),
 $$
 
-where the second equality uses the Euler–Lagrange equation to replace the derivative with respect to $\tilde{Ξ}^{\mathrm{sp}}_a$. Bringing the Lagrangian term to the left gives the divergence of the **canonical stress–energy tensor**
+where the second equality uses the Euler–Lagrange equation to replace the derivative with respect to $\tilde{Ξ}_{\mathrm{sp},a}$. Bringing the Lagrangian term to the left gives the divergence of the **canonical stress–energy tensor**
 
 $$
-\mathsf{T}_{\mu\nu} = \sum_a \frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}}_a)}\,\partial/\partial R_\nu\,\tilde{Ξ}^{\mathrm{sp}}_a - \delta_{\mu\nu}\,\mathcal{L},
+\mathsf{T}_{\mu\nu} = \sum_a \frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\,\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a} - \delta_{\mu\nu}\,\mathcal{L},
 \qquad
 \partial/\partial R_\mu \mathsf{T}_{\mu\nu} = 0 \ \text{on shell} .
 $$
@@ -275,7 +275,7 @@ The identity was verified off shell: for random arbitrary fields the divergence 
 The conservation law of the preceding section is not closed: the field's four-momentum changes in the presence of charges. The total energy–momentum of field and matter,
 
 $$
-T^{(\mathrm{tot})}_{\mu\nu} = T^{(\mathrm{em})}_{\mu\nu} + T^{(\mathrm{matter})}_{\mu\nu} ,
+T_{\mathrm{tot},\mu\nu}^{()} = T_{\mathrm{em},\mu\nu}^{()} + T^{(\mathrm{matter})}_{\mu\nu} ,
 $$
 
 is conserved. The matter tensor of a pressureless dust of proper density $n$ and four-velocity $\tilde{V}$ is the tensor form of the particle flux,
@@ -291,7 +291,7 @@ whose divergence is the negative of the field's:
 $$
 \sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{matter}} = +f_\nu
 \qquad\Longleftrightarrow\qquad
-\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{tot}} = 0 .
+\sum_\mu\partial/\partial R_\mu T_{\mathrm{tot},\mu\nu} = 0 .
 $$
 
 The component $\nu=0$ of this statement is the **Poynting theorem**,
@@ -356,7 +356,7 @@ S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 $$
 
-has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}^{\mathrm{sp}}_a)}\partial/\partial R_\nu\,\tilde{Ξ}^{\mathrm{sp}}_a-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
+has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a}-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
 
 The scalar stress–energy is $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$, with
 
@@ -378,7 +378,7 @@ T_{tj}=\frac1cS_j,
 T_{jk}=W\delta_{jk}-\epsilon E_jE_k-\mu H_jH_k ,
 $$
 
-symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{em}}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{matter}}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
+symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mathrm{em},\mu\nu}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}^{\mathrm{matter}}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
 
 ## Summary of Notation
 

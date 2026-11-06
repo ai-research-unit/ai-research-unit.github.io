@@ -133,12 +133,12 @@ The scaling was checked further at a step of $10^{-4}$, where $\delta S-\delta\l
 The deficit in the exact identity has its own operator, and it is the one introduced in the relative-entropy companion article. On the algebra the relative modular operator of two states is
 $$
 \Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
-=e^{-\tilde K^{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K^{\mathrm{mod}}_{0}},
+=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K_{\mathrm{mod},0}},
 \qquad
 \log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
 =\log\tilde{Ϛ}\,\tilde Q_1-\tilde Q_1\log\tilde{Ϛ}_0,
 $$
-with $\tilde K^{\mathrm{mod}}=-\log\tilde{Ϛ}$ and $\tilde K^{\mathrm{mod}}_{0}=-\log\tilde{Ϛ}_0$ the two modular Hamiltonians, and with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
+with $\tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}$ and $\tilde K_{\mathrm{mod},0}=-\log\tilde{Ϛ}_0$ the two modular Hamiltonians, and with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
 $$
 S(\tilde{Ϛ}\|\tilde{Ϛ}_0)
 =\big\langle\Omega_{\tilde{Ϛ}},\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\Omega_{\tilde{Ϛ}}\big\rangle,
@@ -182,7 +182,7 @@ The framework's terms make the mechanism transparent, and it is worth stating be
 
 ## The Entanglement Hamiltonian of a Subsystem
 
-The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}^{\mathrm{sp}}$ is the reduced state of a subsystem $A$ of a larger system. Then $K_A=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
+The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}_{\mathrm{sp}}$ is the reduced state of a subsystem $A$ of a larger system. Then $K_A=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
 $$
 \sigma_A=\frac{\exp(-K_A)}{\mathrm{Tr}\,\exp(-K_A)},
 $$

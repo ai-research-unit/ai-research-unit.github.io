@@ -152,7 +152,7 @@ $$
 
 **The real structures on the algebra.** The antilinear involutions of $M_4$ fall into two classes, according to whether the square is the identity or an inner automorphism of order two. The first class gives the real form $M_4(\mathbb{R})$, the second the quaternionic form $M_2(\mathbb{H})$. The classification of the classes is the classification of the real forms, and the two are exchanged by no automorphism of the complex algebra: they are the two elements of $Br(\mathbb{R})$.
 
-**The physical interpretation.** A Majorana condition is a real structure on the spinor module, $\psi=C\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ with $C^{2}=\pm1$; a quaternionic structure is the same condition with the opposite sign. The two signs are the two real forms of the algebra, and the choice is a choice of the reality layer, not of the gamma set — five of the sixteen cells, up to $i$ — of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*.
+**The physical interpretation.** A Majorana condition is a real structure on the spinor module, $\psi=C\psi^{\dagger}iR_{\mathrm{axf},\vec e_x}$ with $C^{2}=\pm1$; a quaternionic structure is the same condition with the opposite sign. The two signs are the two real forms of the algebra, and the choice is a choice of the reality layer, not of the gamma set — five of the sixteen cells, up to $i$ — of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*.
 
 ## Summary
 

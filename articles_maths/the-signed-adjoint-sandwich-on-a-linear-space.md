@@ -25,7 +25,7 @@ $$
 
 **Corollary (the adjoint of the unsigned sandwich).** For $\alpha=\mathrm{id}$ the statement is $(\Phi_{a,b})^{\dagger}=\Phi_{b,a}$, the adjoint of an unsigned sandwich being the sandwich with the two factors exchanged; in particular the inner automorphism $\mathrm{Ad}_a=\Phi_{a,a^{-1}}$ has adjoint $\Phi_{a^{-1},a}=\mathrm{Ad}_{a^{-1}}$.
 
-**Proof.** Setting $\alpha=\mathrm{id}$ gives $\mathrm{Sd}^{\mathrm{id}}^{\mathrm{id}}_{b,a}=\Phi_{b,a}$; the inner case is $b=a^{-1}$.
+**Proof.** Setting $\alpha=\mathrm{id}$ gives $\mathrm{Sd}_{\mathrm{id}}_{\mathrm{id},b,a}=\Phi_{b,a}$; the inner case is $b=a^{-1}$.
 
 **Corollary (self-adjointness).** $\mathrm{Sd}^{\alpha}_{a,b}$ is self-adjoint, $(\mathrm{Sd}^{\alpha}_{a,b})^{\dagger}=\mathrm{Sd}^{\alpha}_{a,b}$, exactly when $b=\alpha(a)$; the self-adjoint signed sandwiches are those of the form $\mathrm{Sd}^{\alpha}_{a,\alpha(a)}$.
 
@@ -44,7 +44,7 @@ $$
 
 **Corollary (the unsigned case).** For $\alpha=\mathrm{id}$ the signed left multiplication is the left multiplication and the adjoint is the right multiplication, $(\Phi_{a,1})^{\dagger}=\Phi_{1,a}=R_a$; the signed case is the image of the unsigned one under the grade involution, $(\Lambda^{\alpha}_{a})^{\dagger}=\mathrm{Sd}^{\alpha}_{1,\alpha(a)}$.
 
-**Proof.** Immediate from the proposition and $\mathrm{Sd}^{\mathrm{id}}^{\mathrm{id}}_{a,1}=L_a$.
+**Proof.** Immediate from the proposition and $\mathrm{Sd}_{\mathrm{id}}_{\mathrm{id},a,1}=L_a$.
 
 **Corollary (self-adjointness of the one-sided operators).** $\Lambda^{\alpha}_{a}$ is self-adjoint if and only if $a$ is central and even, $a\in Z(E)$ and $\alpha(a)=a$.
 

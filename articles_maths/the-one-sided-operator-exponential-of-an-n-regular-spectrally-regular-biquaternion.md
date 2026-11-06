@@ -71,9 +71,9 @@ The numbers $\mu_\pm$ are the eigenvalues of the unit factor $\tilde U_{\mathrm 
 
 For each pure factor, read with the other factors absent, the pair is elementary. The scale $r$ gives $\mu_+=\mu_-=1$. The central phase $\exp(i\alpha)$ gives $\mu_+=\mu_-=1$ and multiplies both coordinates by $\exp(i\alpha)$. The boost gives
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \quad\Longrightarrow\quad
-\mu_+=e^{-\theta^{\mathrm{rpd}}/2},\qquad \mu_-=e^{\theta^{\mathrm{rpd}}/2},
+\mu_+=e^{-\theta_{\mathrm{rpd}}/2},\qquad \mu_-=e^{\theta_{\mathrm{rpd}}/2},
 $$
 and the rotor gives
 $$
@@ -94,10 +94,10 @@ $$
 The exponent is $\tfrac{\theta}{2}$ in both readings. The exponent $\tfrac{\theta}{2}$ of $L_{\tilde u_{\mathrm r}}$ multiplies the two spinor coordinates by $e^{i\theta/2}$ and $e^{-i\theta/2}$, hence the output is the half-angle; the same $\tfrac{\theta}{2}$ in $\mathrm{ad}_{\vec u}(X)=[\vec u,X]$ gives the rotation of angle $\theta$, because $\mathrm{ad}_{\vec u}=2\,[\vec u\times]$ and the factor $2$ doubles it. The boost is the same:
 $$
 \boxed{\;
-L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\theta^{\mathrm{rpd}}}{2}\,L_{\vec u_{\mathrm b}}\Bigr)
-\ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{-\theta^{\mathrm{rpd}}/2}\alpha,\ e^{\theta^{\mathrm{rpd}}/2}\beta),
+L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\,L_{\vec u_{\mathrm b}}\Bigr)
+\ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{-\theta_{\mathrm{rpd}}/2}\alpha,\ e^{\theta_{\mathrm{rpd}}/2}\beta),
 \qquad
-\mathrm{Sd}_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\theta^{\mathrm{rpd}}
+\mathrm{Sd}_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\theta_{\mathrm{rpd}}
 \; }.
 $$
 A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* of *The Sandwich of an N-Regular, Spectrally Regular Biquaternion* and §*The Pure Factors and the Full Spin* of *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
@@ -108,7 +108,7 @@ The following table collects the pure factors. The last column is the nontrivial
 |---|---|---|---|---|
 | scale $r$ | $1,1$ | $rI_2$ | $\ln r$ | $r^{2}$ |
 | phase $\exp(i\alpha)$ | $1,1$ | $\exp(i\alpha)I_2$ | $i\alpha$ | $1$ |
-| boost $\tilde U_{\mathrm b}$ | $e^{-\theta^{\mathrm{rpd}}/2},e^{\theta^{\mathrm{rpd}}/2}$ | $\operatorname{diag}(e^{-\theta^{\mathrm{rpd}}/2},e^{\theta^{\mathrm{rpd}}/2})$ | $\mp\theta^{\mathrm{rpd}}/2$ | $e^{\pm\theta^{\mathrm{rpd}}}$ |
+| boost $\tilde U_{\mathrm b}$ | $e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2}$ | $\operatorname{diag}(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ | $\mp\theta_{\mathrm{rpd}}/2$ | $e^{\pm\theta_{\mathrm{rpd}}}$ |
 | rotor $\tilde u_{\mathrm r}$ | $e^{i\theta/2},e^{-i\theta/2}$ | $\operatorname{diag}(e^{i\theta/2},e^{-i\theta/2})$ | $\pm i\theta/2$ | $e^{\pm i\theta}$ |
 
 The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$, every basis is an eigenbasis, and the single eigenvalue is $Q_t$.
@@ -141,7 +141,7 @@ $$
 -\tfrac{\theta}{2}-\tfrac{\theta}{2}=-\theta,\qquad
 -\tfrac{\theta}{2}+\tfrac{\theta}{2}=0,
 $$
-that is $(\theta,0,0,-\theta)$. For the boost, both slots carry $e^{\mp\theta^{\mathrm{rpd}}/2}$ because the boost is Hermitian, and the sums are $(\theta^{\mathrm{rpd}},0,0,-\theta^{\mathrm{rpd}})$. These are the weights of the vector. The invariant statement is that the weights of $S\otimes S^{*}$ are the pairwise sums of the weights of $S$ and $S^{*}$; the factor two sits in the pairing, not in a rescaling of the angle.
+that is $(\theta,0,0,-\theta)$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian, and the sums are $(\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}})$. These are the weights of the vector. The invariant statement is that the weights of $S\otimes S^{*}$ are the pairwise sums of the weights of $S$ and $S^{*}$; the factor two sits in the pairing, not in a rescaling of the angle.
 
 **"Half" is relative.** The angle $\theta$ is defined by the vector action, as the rotation of $\mathbb{R}^{3}$. The spinor weight is $\theta/2$ because the rotor is $\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$. A different normalisation of the angle would change the number and not the relation.
 
@@ -153,7 +153,7 @@ each weight twice. The one-sided operator is $2\rho$ as a left module: two copie
 
 **The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\rho$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
 
-**Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta/2}$ or $e^{\mp\theta^{\mathrm{rpd}}/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
+**Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta/2}$ or $e^{\mp\theta_{\mathrm{rpd}}/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
 
 **The whole of $L$ is twisted.** $L_{\tilde Q}$ also carries the scale $r$ and the phase $e^{i\alpha}$. The spinor statement concerns the norm-one, phase-one part $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the full operator is the twisted spinor representation of the module.
 
@@ -169,10 +169,10 @@ The following table collects the exponents. The **exponent** is the element $A$ 
 |---|---|---|---|
 | scale $r$ | $\ln r$ | $\ln r$ | $2\ln r$ |
 | phase $\exp(i\alpha)$ | $i\alpha$ | $\alpha$ | $0$ |
-| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta^{\mathrm{rpd}}}{2}$ | $\theta^{\mathrm{rpd}}$ |
+| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta_{\mathrm{rpd}}}{2}$ | $\theta_{\mathrm{rpd}}$ |
 | rotor $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\tfrac{\theta}{2}$ | $\theta$ |
 
-The rule is the number of slots. A one-sided operator is one factor of the word, so its exponent is the exponent of that factor: the scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps the half-rapidity in $i\theta^{\mathrm{rpd}}/2\,\vec u_{\mathrm b}$, the rotor keeps the half-angle in $\theta/2\,\vec u_{\mathrm r}$. A two-sided operator uses two slots, the parameter and its Hermitian conjugate. For the Hermitian factors the two exponents are equal and add, giving $2\ln r$ for the scale and $\theta^{\mathrm{rpd}}$ for the boost; for the $*$-unitary rotor they are opposite and the conjugation gives the angle $\theta$; for the central imaginary phase they cancel to $0$. The doubling of the companion article is therefore a two-slot phenomenon for the scale, the boost and the rotor, and the phase is its exceptional case.
+The rule is the number of slots. A one-sided operator is one factor of the word, so its exponent is the exponent of that factor: the scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps the half-rapidity in $i\theta_{\mathrm{rpd}}/2\,\vec u_{\mathrm b}$, the rotor keeps the half-angle in $\theta/2\,\vec u_{\mathrm r}$. A two-sided operator uses two slots, the parameter and its Hermitian conjugate. For the Hermitian factors the two exponents are equal and add, giving $2\ln r$ for the scale and $\theta_{\mathrm{rpd}}$ for the boost; for the $*$-unitary rotor they are opposite and the conjugation gives the angle $\theta$; for the central imaginary phase they cancel to $0$. The doubling of the companion article is therefore a two-slot phenomenon for the scale, the boost and the rotor, and the phase is its exceptional case.
 
 ## Summary
 
@@ -186,11 +186,11 @@ $$
 
 On $\Sigma_{11}$ it is diagonalisable, with the eigenvalues $e^{t\lambda_\pm}$, each twice, where $\lambda_\pm=Q_t\pm iB$; its determinant is $\exp(4tQ_t)$ and its trace is $4e^{tQ_t}\cos(tB)$. The one-sided rate is the eigenvalue $\lambda_\pm$, not its square.
 
-The one-sided operator is the spinor action. On one Peirce column the operator is the Weyl spinor $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the rotor carries $e^{\pm i\theta/2}$ and the boost $e^{\mp\theta^{\mathrm{rpd}}/2}$, so the slot carries the half-angle and the half-rapidity. The whole of $L$ is two copies of that spinor, one per Peirce column, and the two Lorentz chiralities are the two tensor slots of $\mathbb{B}\cong S\otimes S^{*}$, not the two Peirce columns.
+The one-sided operator is the spinor action. On one Peirce column the operator is the Weyl spinor $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the rotor carries $e^{\pm i\theta/2}$ and the boost $e^{\mp\theta_{\mathrm{rpd}}/2}$, so the slot carries the half-angle and the half-rapidity. The whole of $L$ is two copies of that spinor, one per Peirce column, and the two Lorentz chiralities are the two tensor slots of $\mathbb{B}\cong S\otimes S^{*}$, not the two Peirce columns.
 
-The weights add on the tensor product. For the rotor they are $(\theta,0,0,-\theta)$ and for the boost $(\theta^{\mathrm{rpd}},0,0,-\theta^{\mathrm{rpd}})$; the factor two sits in the pairing of the two slots, not in a rescaling of the angle. The one-sided operator sees one slot and does not double.
+The weights add on the tensor product. For the rotor they are $(\theta,0,0,-\theta)$ and for the boost $(\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}})$; the factor two sits in the pairing of the two slots, not in a rescaling of the angle. The one-sided operator sees one slot and does not double.
 
-The four factors give the table of exponents. The scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps $i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the rotor keeps $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two-sided output is $2\ln r$, $0$, $\theta^{\mathrm{rpd}}$ and $\theta$; the doubling and the cancellation are the subject of *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The four factors give the table of exponents. The scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the rotor keeps $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two-sided output is $2\ln r$, $0$, $\theta_{\mathrm{rpd}}$ and $\theta$; the doubling and the cancellation are the subject of *The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
 ## Summary of Notation
 
@@ -204,9 +204,9 @@ The four factors give the table of exponents. The scale keeps $\ln r$, the phase
 | $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two Peirce spinor spaces |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation and its conjugate |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
+| $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotation angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotation angle |
 
 ## Further Reading
 

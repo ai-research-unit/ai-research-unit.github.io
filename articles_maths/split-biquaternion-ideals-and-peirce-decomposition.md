@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The algebra article defined the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ and established the isomorphism $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$. This article treats the **ideals** of $\mathbb{B}^{\mathrm{spl}}$, the decomposition of the algebra into its two quaternion halves, and the **Peirce decomposition** attached to the idempotents.
+The algebra article defined the split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ and established the isomorphism $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$. This article treats the **ideals** of $\mathbb{B}_{\mathrm{spl}}$, the decomposition of the algebra into its two quaternion halves, and the **Peirce decomposition** attached to the idempotents.
 
-The treatment is purely mathematical. Every claim is either proved or stated as a definition. No physics is invoked. The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ is assumed from the basic algebra article, its four conjugations and its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ are assumed from the article on split complex algebra and the basic algebra article, and the quaternion algebra $\mathbb{H}$ is assumed to be a division algebra.
+The treatment is purely mathematical. Every claim is either proved or stated as a definition. No physics is invoked. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is assumed from the basic algebra article, its four conjugations and its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ are assumed from the article on split complex algebra and the basic algebra article, and the quaternion algebra $\mathbb{H}$ is assumed to be a division algebra.
 
 Throughout, a split biquaternion is written $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$, and the idempotent components are $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$. The four conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$.
 
@@ -25,25 +25,25 @@ and that $Ae$ is a minimal left ideal exactly when $e$ is primitive.
 
 ## The Two-Sided Ideals: Simplicity Fails
 
-**Theorem.** The proper nonzero two-sided ideals of $\mathbb{B}^{\mathrm{spl}}$ are exactly $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$. Consequently $\mathbb{B}^{\mathrm{spl}}$ is not simple.
+**Theorem.** The proper nonzero two-sided ideals of $\mathbb{B}_{\mathrm{spl}}$ are exactly $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$. Consequently $\mathbb{B}_{\mathrm{spl}}$ is not simple.
 
-**Proof.** Let $I$ be a two-sided ideal. In the idempotent basis $I = I_+ \tilde\Pi_1 \oplus I_- \tilde\Pi_2$ with $I_\pm \subseteq \mathbb{H}$. Because $\tilde\Pi_{1,2}$ is central, $I$ being an ideal is equivalent to each $I_\pm$ being an ideal of the quaternion algebra $\mathbb{H}$. But $\mathbb{H}$ is a division algebra and has no proper nonzero ideal: if $\tilde q \neq 0$ lies in an ideal $J$ of $\mathbb{H}$, then $1 = \tilde q^{-1} \tilde q \in J$, so $J = \mathbb{H}$. Hence for each sign either $I_\pm = 0$ or $I_\pm = \mathbb{H}$. The proper nonzero possibilities are therefore $I = \mathbb{H} \tilde\Pi_1$ and $I = \mathbb{H} \tilde\Pi_2$. Since these are proper and nonzero, $\mathbb{B}^{\mathrm{spl}}$ is not simple.
+**Proof.** Let $I$ be a two-sided ideal. In the idempotent basis $I = I_+ \tilde\Pi_1 \oplus I_- \tilde\Pi_2$ with $I_\pm \subseteq \mathbb{H}$. Because $\tilde\Pi_{1,2}$ is central, $I$ being an ideal is equivalent to each $I_\pm$ being an ideal of the quaternion algebra $\mathbb{H}$. But $\mathbb{H}$ is a division algebra and has no proper nonzero ideal: if $\tilde q \neq 0$ lies in an ideal $J$ of $\mathbb{H}$, then $1 = \tilde q^{-1} \tilde q \in J$, so $J = \mathbb{H}$. Hence for each sign either $I_\pm = 0$ or $I_\pm = \mathbb{H}$. The proper nonzero possibilities are therefore $I = \mathbb{H} \tilde\Pi_1$ and $I = \mathbb{H} \tilde\Pi_2$. Since these are proper and nonzero, $\mathbb{B}_{\mathrm{spl}}$ is not simple.
 
-**Corollary.** $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ is the unique decomposition of $\mathbb{B}^{\mathrm{spl}}$ as a direct sum of two proper nonzero two-sided ideals, and the two summands are isomorphic to $\mathbb{H}$.
+**Corollary.** $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ is the unique decomposition of $\mathbb{B}_{\mathrm{spl}}$ as a direct sum of two proper nonzero two-sided ideals, and the two summands are isomorphic to $\mathbb{H}$.
 
 **Proof.** The decomposition follows from $\tilde\Pi_1 + \tilde\Pi_2 = 1$; uniqueness from the theorem, since any decomposition into two nonzero two-sided ideals must consist of the two listed ideals. Each summand $\mathbb{H} \tilde\Pi_{1,2}$ is identified with $\mathbb{H}$ by the projection $\tilde{Q} \mapsto \tilde{Q}_\pm$.
 
 ## The Algebra Is Semisimple
 
-**Proposition.** The Jacobson radical of $\mathbb{B}^{\mathrm{spl}}$ is zero, so $\mathbb{B}^{\mathrm{spl}}$ is semisimple.
+**Proposition.** The Jacobson radical of $\mathbb{B}_{\mathrm{spl}}$ is zero, so $\mathbb{B}_{\mathrm{spl}}$ is semisimple.
 
 **Proof.** By the theorem, the only proper nonzero two-sided ideals are $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$; their intersection is $\mathbb{H} \tilde\Pi_1 \cap \mathbb{H} \tilde\Pi_2 = 0$, so the radical, being the intersection of the maximal two-sided ideals, is zero.
 
-The algebra is thus semisimple but not simple, and its two simple components are both the same division algebra $\mathbb{H}$. This is the algebraic content of the isomorphism $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$: the right-hand side is a product of two division algebras.
+The algebra is thus semisimple but not simple, and its two simple components are both the same division algebra $\mathbb{H}$. This is the algebraic content of the isomorphism $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$: the right-hand side is a product of two division algebras.
 
 ## The Idempotents Revisited
 
-The four idempotents of $\mathbb{B}^{\mathrm{spl}}$ are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$ and $1$, and all of them are central; this is proved in *Split-Biquaternion Idempotents and Projections*. Here only the following facts are used: $\{\tilde\Pi_1, \tilde\Pi_2\}$ is a **complete** family of **orthogonal**, **primitive**, **central** idempotents, with
+The four idempotents of $\mathbb{B}_{\mathrm{spl}}$ are $0$, $\tilde\Pi_1$, $\tilde\Pi_2$ and $1$, and all of them are central; this is proved in *Split-Biquaternion Idempotents and Projections*. Here only the following facts are used: $\{\tilde\Pi_1, \tilde\Pi_2\}$ is a **complete** family of **orthogonal**, **primitive**, **central** idempotents, with
 
 $$
 \tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1 \tilde\Pi_2 = \tilde\Pi_2 \tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
@@ -59,25 +59,25 @@ $$
 A = eAe \oplus eA(1 - e) \oplus (1 - e)Ae \oplus (1 - e)A(1 - e).
 $$
 
-**Theorem.** For $e = \tilde\Pi_1$ in $\mathbb{B}^{\mathrm{spl}}$ the Peirce decomposition is
+**Theorem.** For $e = \tilde\Pi_1$ in $\mathbb{B}_{\mathrm{spl}}$ the Peirce decomposition is
 
 $$
 \boxed{\;
-\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus 0 \oplus 0 \oplus \mathbb{H} \tilde\Pi_2
+\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus 0 \oplus 0 \oplus \mathbb{H} \tilde\Pi_2
 \;},
 $$
 
-the two **off-diagonal** Peirce spaces $\tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_2$ and $\tilde\Pi_2 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1$ both vanishing.
+the two **off-diagonal** Peirce spaces $\tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_2$ and $\tilde\Pi_2 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1$ both vanishing.
 
 **Proof.** Since $\tilde\Pi_1$ is central,
 
 $$
-\tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 = \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 = \mathbb{H} \tilde\Pi_1, \qquad \tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_2 = \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 \tilde\Pi_2 = 0,
+\tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 = \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 = \mathbb{H} \tilde\Pi_1, \qquad \tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_2 = \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 \tilde\Pi_2 = 0,
 $$
 
-and similarly $(1 - \tilde\Pi_1) \mathbb{B}^{\mathrm{spl}} (1 - \tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$ and the other off-diagonal space vanishes. The direct sum is the whole algebra because $\tilde\Pi_1 + \tilde\Pi_2 = 1$.
+and similarly $(1 - \tilde\Pi_1) \mathbb{B}_{\mathrm{spl}} (1 - \tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$ and the other off-diagonal space vanishes. The direct sum is the whole algebra because $\tilde\Pi_1 + \tilde\Pi_2 = 1$.
 
-The vanishing of the off-diagonal Peirce spaces is the algebraic statement that the two halves of $\mathbb{B}^{\mathrm{spl}}$ do not mix: no element of one half acts on the other. This is the sharpest contrast with the biquaternion algebra, where the Peirce spaces relative to a noncentral primitive idempotent have nonzero off-diagonal parts and carry off-diagonal elements $E_{12}$, $E_{21}$.
+The vanishing of the off-diagonal Peirce spaces is the algebraic statement that the two halves of $\mathbb{B}_{\mathrm{spl}}$ do not mix: no element of one half acts on the other. This is the sharpest contrast with the biquaternion algebra, where the Peirce spaces relative to a noncentral primitive idempotent have nonzero off-diagonal parts and carry off-diagonal elements $E_{12}$, $E_{21}$.
 
 ## The Decomposition into Minimal Ideals
 
@@ -85,84 +85,84 @@ The Peirce decomposition can be read as the sum of the two minimal ideals. For t
 
 $$
 \boxed{\;
-\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2
+\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2
 \;},
 $$
 
 and each summand is a **minimal** two-sided ideal, equivalently a minimal left ideal and a minimal right ideal, isomorphic to $\mathbb{H}$. Summing over the family, the algebra is the direct sum of its minimal ideals, one for each idempotent of the complete family:
 
-**Proposition.** $\mathbb{B}^{\mathrm{spl}}$ is the direct sum of its two minimal ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$, and every minimal left ideal of $\mathbb{B}^{\mathrm{spl}}$ is one of these two.
+**Proposition.** $\mathbb{B}_{\mathrm{spl}}$ is the direct sum of its two minimal ideals $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$, and every minimal left ideal of $\mathbb{B}_{\mathrm{spl}}$ is one of these two.
 
 **Proof.** The direct-sum statement is the corollary above. For the second statement, let $L$ be a minimal left ideal. If $L$ contains an element with a nonzero $\tilde\Pi_1$-component, then that component lies in $L \cap \mathbb{H} \tilde\Pi_1$, a nonzero left ideal contained in the minimal ideal $\mathbb{H} \tilde\Pi_1$, hence equal to it; otherwise $L \subseteq \mathbb{H} \tilde\Pi_2$. Minimality then forces $L$ to equal $\mathbb{H} \tilde\Pi_1$ or $\mathbb{H} \tilde\Pi_2$.
 
 ## Minimal Left and Right Ideals
 
-Because the idempotents are central, the left ideal, the right ideal and the two-sided ideal generated by an idempotent coincide. Hence the minimal left ideals, the minimal right ideals and the minimal two-sided ideals of $\mathbb{B}^{\mathrm{spl}}$ are the **same two objects**, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$, each isomorphic to the division algebra $\mathbb{H}$.
+Because the idempotents are central, the left ideal, the right ideal and the two-sided ideal generated by an idempotent coincide. Hence the minimal left ideals, the minimal right ideals and the minimal two-sided ideals of $\mathbb{B}_{\mathrm{spl}}$ are the **same two objects**, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$, each isomorphic to the division algebra $\mathbb{H}$.
 
 $$
 \boxed{\;
-\mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 = \tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} = \tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 = \mathbb{H} \tilde\Pi_1 \cong \mathbb{H}
+\mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 = \tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} = \tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 = \mathbb{H} \tilde\Pi_1 \cong \mathbb{H}
 \;},
 $$
 
-and likewise for $\tilde\Pi_2$. Each summand is annihilated by the complementary idempotent — $\mathbb{H} \tilde\Pi_1$ by $\tilde\Pi_2$ and $\mathbb{H} \tilde\Pi_2$ by $\tilde\Pi_1$ — so the two ideals are disjoint, and together they fill the algebra: $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2 \cong \mathbb{H} \oplus \mathbb{H}$, both summands isomorphic to the division algebra $\mathbb{H}$ as rings.
+and likewise for $\tilde\Pi_2$. Each summand is annihilated by the complementary idempotent — $\mathbb{H} \tilde\Pi_1$ by $\tilde\Pi_2$ and $\mathbb{H} \tilde\Pi_2$ by $\tilde\Pi_1$ — so the two ideals are disjoint, and together they fill the algebra: $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2 \cong \mathbb{H} \oplus \mathbb{H}$, both summands isomorphic to the division algebra $\mathbb{H}$ as rings.
 
 In the biquaternion algebra the corresponding statement is different in every respect: the minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are not two-sided, are not right ideals, and are isomorphic to $\mathbb{C}^2$ rather than to a division algebra.
 
 ## The Lattice of Left Ideals
 
-**Proposition.** The left ideals of $\mathbb{B}^{\mathrm{spl}}$ are exactly
+**Proposition.** The left ideals of $\mathbb{B}_{\mathrm{spl}}$ are exactly
 
 $$
-0, \qquad \mathbb{H} \tilde\Pi_1, \qquad \mathbb{H} \tilde\Pi_2, \qquad \mathbb{B}^{\mathrm{spl}}.
+0, \qquad \mathbb{H} \tilde\Pi_1, \qquad \mathbb{H} \tilde\Pi_2, \qquad \mathbb{B}_{\mathrm{spl}}.
 $$
 
-They form a lattice that is the diamond: $0$ is contained in $\mathbb{H} \tilde\Pi_{1,2}$, each of these is contained in $\mathbb{B}^{\mathrm{spl}}$, and $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$ are incomparable. The same description holds for the right ideals and for the two-sided ideals.
+They form a lattice that is the diamond: $0$ is contained in $\mathbb{H} \tilde\Pi_{1,2}$, each of these is contained in $\mathbb{B}_{\mathrm{spl}}$, and $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$ are incomparable. The same description holds for the right ideals and for the two-sided ideals.
 
 **Proof.** A left ideal $L$ is contained in $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$. Its intersections $L \cap \mathbb{H} \tilde\Pi_1$ and $L \cap \mathbb{H} \tilde\Pi_2$ are each either $0$ or the whole summand, since each summand is minimal. The four combinations give the four listed ideals, and no second idempotent pair occurs, so there are no further left ideals.
 
-**Corollary.** Every left ideal of $\mathbb{B}^{\mathrm{spl}}$ is two-sided, and $\mathbb{B}^{\mathrm{spl}}$ has exactly two maximal left ideals, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$.
+**Corollary.** Every left ideal of $\mathbb{B}_{\mathrm{spl}}$ is two-sided, and $\mathbb{B}_{\mathrm{spl}}$ has exactly two maximal left ideals, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$.
 
-The contrast with $\mathbb{B}$ is extreme. In $\mathbb{B} \cong M_2(\mathbb{C})$ the left ideals form a lattice isomorphic to the projective line $\mathbb{P}^1$, with infinitely many maximal left ideals; in $\mathbb{B}^{\mathrm{spl}}$ the lattice has four elements and the two maximal left ideals are the two halves. The reduction is a direct consequence of the vanishing of the off-diagonal Peirce spaces.
+The contrast with $\mathbb{B}$ is extreme. In $\mathbb{B} \cong M_2(\mathbb{C})$ the left ideals form a lattice isomorphic to the projective line $\mathbb{P}^1$, with infinitely many maximal left ideals; in $\mathbb{B}_{\mathrm{spl}}$ the lattice has four elements and the two maximal left ideals are the two halves. The reduction is a direct consequence of the vanishing of the off-diagonal Peirce spaces.
 
 ## The Radical
 
 The **Jacobson radical** $J(A)$ of a finite-dimensional algebra $A$ is the intersection of its maximal left ideals, equivalently of its maximal right ideals, equivalently the largest nilpotent two-sided ideal; in particular $J(A) = 0$ if and only if $A$ is semisimple.
 
-**Proposition.** $J(\mathbb{B}^{\mathrm{spl}}) = 0$. Moreover $J(\mathbb{B}^{\mathrm{spl}}) = \mathbb{H} \tilde\Pi_1 \cap \mathbb{H} \tilde\Pi_2$.
+**Proposition.** $J(\mathbb{B}_{\mathrm{spl}}) = 0$. Moreover $J(\mathbb{B}_{\mathrm{spl}}) = \mathbb{H} \tilde\Pi_1 \cap \mathbb{H} \tilde\Pi_2$.
 
 **Proof.** The maximal left ideals are $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ by the corollary above, and their intersection is $0$ because $\tilde\Pi_1 \tilde\Pi_2 = 0$ and the two ideals are complementary summands.
 
-So $\mathbb{B}^{\mathrm{spl}}$ is semisimple in the strongest sense: its radical vanishes. This is one of the senses in which $\mathbb{B}^{\mathrm{spl}}$ is *smaller* and better behaved than a general associative algebra — it is a product of two division algebras, and products of division algebras have vanishing radical and only finitely many ideals.
+So $\mathbb{B}_{\mathrm{spl}}$ is semisimple in the strongest sense: its radical vanishes. This is one of the senses in which $\mathbb{B}_{\mathrm{spl}}$ is *smaller* and better behaved than a general associative algebra — it is a product of two division algebras, and products of division algebras have vanishing radical and only finitely many ideals.
 
 ## The Real Structure
 
-The algebra $\mathbb{B}^{\mathrm{spl}}$ is an eight-dimensional real algebra and a four-dimensional algebra over $\mathbb{C}^{\mathrm{spl}}$. The ideals $\mathbb{H} \tilde\Pi_{1,2}$ are real vector subspaces of dimension $4$ and are closed under multiplication by $\mathbb{C}^{\mathrm{spl}}$; neither is a free $\mathbb{C}^{\mathrm{spl}}$-span, since $j - 1$ annihilates $\mathbb{H} \tilde\Pi_1$ and $j + 1$ annihilates $\mathbb{H} \tilde\Pi_2$, whereas a free $\mathbb{C}^{\mathrm{spl}}$-span has no such annihilator. The whole algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ has $\mathbb{C}^{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$.
+The algebra $\mathbb{B}_{\mathrm{spl}}$ is an eight-dimensional real algebra and a four-dimensional algebra over $\mathbb{C}_{\mathrm{spl}}$. The ideals $\mathbb{H} \tilde\Pi_{1,2}$ are real vector subspaces of dimension $4$ and are closed under multiplication by $\mathbb{C}_{\mathrm{spl}}$; neither is a free $\mathbb{C}_{\mathrm{spl}}$-span, since $j - 1$ annihilates $\mathbb{H} \tilde\Pi_1$ and $j + 1$ annihilates $\mathbb{H} \tilde\Pi_2$, whereas a free $\mathbb{C}_{\mathrm{spl}}$-span has no such annihilator. The whole algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ has $\mathbb{C}_{\mathrm{spl}}$-basis $e_t, \vec e_x, \vec e_y, \vec e_z$.
 
-The $\mathbb{R}$-automorphisms and $\mathbb{R}$-derivations of $\mathbb{B}^{\mathrm{spl}}$ act on this two-term decomposition. Because the two simple factors are isomorphic, the automorphism group contains the exchange of the factors, and the derivations contain the corresponding off-diagonal maps; the precise statements, together with the comparison with the biquaternion case, are the subject of *Split-Biquaternion Automorphisms and Derivations*. The splitting $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ established here is the object on which those automorphisms act.
+The $\mathbb{R}$-automorphisms and $\mathbb{R}$-derivations of $\mathbb{B}_{\mathrm{spl}}$ act on this two-term decomposition. Because the two simple factors are isomorphic, the automorphism group contains the exchange of the factors, and the derivations contain the corresponding off-diagonal maps; the precise statements, together with the comparison with the biquaternion case, are the subject of *Split-Biquaternion Automorphisms and Derivations*. The splitting $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ established here is the object on which those automorphisms act.
 
 ## Summary
 
-The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ has exactly two proper nonzero two-sided ideals, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$; it is therefore not simple, but it is semisimple, with vanishing radical. The two ideals are the two quaternion halves of the decomposition $\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2 \cong \mathbb{H} \oplus \mathbb{H}$, each isomorphic to the division algebra $\mathbb{H}$.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ has exactly two proper nonzero two-sided ideals, $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$; it is therefore not simple, but it is semisimple, with vanishing radical. The two ideals are the two quaternion halves of the decomposition $\mathbb{B}_{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2 \cong \mathbb{H} \oplus \mathbb{H}$, each isomorphic to the division algebra $\mathbb{H}$.
 
 The minimal left ideals, the minimal right ideals and the minimal two-sided ideals coincide and are exactly $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$, because the underlying idempotents are central. The Peirce decomposition relative to $\tilde\Pi_1$ has vanishing off-diagonal spaces,
 
 $$
-\mathbb{B}^{\mathrm{spl}} = \tilde\Pi_1 \mathbb{B}^{\mathrm{spl}} \tilde\Pi_1 \oplus (1 - \tilde\Pi_1) \mathbb{B}^{\mathrm{spl}} (1 - \tilde\Pi_1) = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
+\mathbb{B}_{\mathrm{spl}} = \tilde\Pi_1 \mathbb{B}_{\mathrm{spl}} \tilde\Pi_1 \oplus (1 - \tilde\Pi_1) \mathbb{B}_{\mathrm{spl}} (1 - \tilde\Pi_1) = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
 $$
 
-so the two halves do not mix. The left ideals are exactly $0$, $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$, $\mathbb{B}^{\mathrm{spl}}$, forming a diamond lattice with two maximal ideals, in contrast with the projective line of left ideals of the simple biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$. The idempotents themselves, their classification, their role in the multiplication projectors and their relation to the roots of $-1$, are the subject of *Split-Biquaternion Idempotents and Projections*.
+so the two halves do not mix. The left ideals are exactly $0$, $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$, $\mathbb{B}_{\mathrm{spl}}$, forming a diamond lattice with two maximal ideals, in contrast with the projective line of left ideals of the simple biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$. The idempotents themselves, their classification, their role in the multiplication projectors and their relation to the roots of $-1$, are the subject of *Split-Biquaternion Idempotents and Projections*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
+| $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | The complete family of primitive central idempotents |
 | $\mathbb{H} \tilde\Pi_1, \mathbb{H} \tilde\Pi_2$ | The two minimal (left, right and two-sided) ideals, each $\cong \mathbb{H}$ |
 | $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition, $\tilde{Q}_\pm \in \mathbb{H}$ |
 | $eAe$, $eA(1-e)$, $(1-e)Ae$, $(1-e)A(1-e)$ | Peirce spaces relative to an idempotent $e$ |
-| $J(\mathbb{B}^{\mathrm{spl}})$ | Jacobson radical, equal to $0$ |
+| $J(\mathbb{B}_{\mathrm{spl}})$ | Jacobson radical, equal to $0$ |
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, simple |
 
 ## Further Reading

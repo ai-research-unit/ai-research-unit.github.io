@@ -59,9 +59,9 @@ is finite of degree two and is ramified exactly at the origin $\{x_1=\dots=x_n=0
 
 ## The Berkovich Interpretation
 
-**Theorem.** The involution extends to the Berkovich space $X^{\mathrm{an}}$, the quotient $X^{\mathrm{an}}/\sigma$ exists and equals $(X/\sigma)^{\mathrm{an}}$ for the good spaces, and the fixed locus $X^{\mathrm{an},\sigma}$ contains the fixed locus $X^\sigma$ strictly in general, because the non-classical points can be fixed; the additional fixed points are the points in the closure of the fixed locus of the reduction.
+**Theorem.** The involution extends to the Berkovich space $X_{\mathrm{an}}$, the quotient $X_{\mathrm{an}}/\sigma$ exists and equals $(X/\sigma)_{\mathrm{an}}$ for the good spaces, and the fixed locus $X_{\mathrm{an}}^{\sigma}$ contains the fixed locus $X^\sigma$ strictly in general, because the non-classical points can be fixed; the additional fixed points are the points in the closure of the fixed locus of the reduction.
 
-**Proof.** The Berkovich space is the set of multiplicative seminorms bounded by the spectral norm, and $\sigma$ acts on it by precomposition; the quotient of the spectral norm under the invariant seminorm $|\cdot|^G$ gives the identification $(X/G)^{\mathrm{an}}=X^{\mathrm{an}}/G$. The extra fixed points are those seminorms invariant under $\sigma$ without being the kernel of a maximal ideal. This is the theory of *Berkovich Spaces*.
+**Proof.** The Berkovich space is the set of multiplicative seminorms bounded by the spectral norm, and $\sigma$ acts on it by precomposition; the quotient of the spectral norm under the invariant seminorm $|\cdot|^G$ gives the identification $(X/G)_{\mathrm{an}}=X_{\mathrm{an}}/G$. The extra fixed points are those seminorms invariant under $\sigma$ without being the kernel of a maximal ideal. This is the theory of *Berkovich Spaces*.
 
 ## Failure of the Degenerate Cases
 
@@ -83,7 +83,7 @@ An involution of a rigid analytic space over a complete non-Archimedean field is
 | $X/\sigma$, $A^\sigma$ | Quotient space and invariant ring |
 | $\pi:X\to X/\sigma$ | Quotient map |
 | $f-\sigma(f)$ | Generators of the fixed ideal |
-| $(X/G)^{\mathrm{an}}=X^{\mathrm{an}}/G$ | Berkovich quotient |
+| $(X/G)_{\mathrm{an}}=X_{\mathrm{an}}/G$ | Berkovich quotient |
 
 ## Further Reading
 

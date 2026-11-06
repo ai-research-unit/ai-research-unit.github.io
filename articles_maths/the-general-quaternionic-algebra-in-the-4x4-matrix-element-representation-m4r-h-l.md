@@ -116,7 +116,7 @@ so that the image of $\mathbb{H}^1$ is the intersection of the image with the sp
 | form | $\tfrac14\operatorname{tr}(XY)$, Gram $D$, signature $(1,3)$ | $\tfrac14\operatorname{tr}(XY^{\mathsf T})$, Gram $\mathbb{1}_4$, signature $(4,0)$ |
 | square | $\det = \langle\tilde q\rangle_{\natural}^2$ | $\mathsf M_4(\tilde q \star \tilde q) = \langle\tilde q\rangle_{\natural}\mathrm I_4$ |
 | shell | the unit sphere, read in $SO(4)$ | the same sphere, read in $SO(4)$ |
-| centraliser | the right regular copy $\cong \mathbb{H}^{\mathrm{opp}}$ | the same |
+| centraliser | the right regular copy $\cong \mathbb{H}_{\mathrm{opp}}$ | the same |
 
 ## Summary
 

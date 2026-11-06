@@ -470,7 +470,7 @@ $$
 Cl(M, \mathfrak{Q}) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q)).
 $$
 
-The non-degenerate factor is a Clifford algebra of rank $\dim(M/\mathrm{rad}(Q))$, and the nilpotent factor is an exterior algebra of rank $2^{\dim \mathrm{rad}(Q)}$. The total rank is $2^{\dim M}$, and the algebra is semisimple iff the form is non-degenerate. Over a general commutative ring, the decomposition requires the radical to be a direct summand.
+The non-degenerate factor is a Clifford algebra of rank $\dim(M/\mathrm{rad}(Q))$, and the nilpotent factor is an exterior algebra of rank $2_{\mathrm{rad}}^{\dim (Q)}$. The total rank is $2^{\dim M}$, and the algebra is semisimple iff the form is non-degenerate. Over a general commutative ring, the decomposition requires the radical to be a direct summand.
 
 **The rank** of $Cl(M, \mathfrak{Q})$ over $R$ is $2^n$, where $n = \operatorname{rank} M$. A basis is given by the products of generators with strictly increasing indices.
 

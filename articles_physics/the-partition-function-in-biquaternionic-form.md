@@ -103,7 +103,7 @@ $$
 \qquad \vec u_\psi=\frac{\vec r_\psi}{|\vec r_\psi|}\;}.
 $$
 
-This is the **thermal operator**. It is Hermitian, since $\tilde R_\psi^{*}=\tilde R_\psi$ implies $(\exp(-\beta H))^\dagger=\exp(-\beta H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta c r_t)$ times the unit-norm element $\tilde U_{\mathrm b}=\cosh(\beta|\vec r_\psi|)e_t-i\sinh(\beta|\vec r_\psi|)\vec u_\psi$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec r_\psi|$ in the parametrization $\tilde U_{\mathrm b}=\cosh(\theta^{\mathrm{rpd}}/2)+i\sinh(\theta^{\mathrm{rpd}}/2)\vec u$, with $\vec u=-\vec u_\psi$.
+This is the **thermal operator**. It is Hermitian, since $\tilde R_\psi^{*}=\tilde R_\psi$ implies $(\exp(-\beta H))^\dagger=\exp(-\beta H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta c r_t)$ times the unit-norm element $\tilde U_{\mathrm b}=\cosh(\beta|\vec r_\psi|)e_t-i\sinh(\beta|\vec r_\psi|)\vec u_\psi$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec r_\psi|$ in the parametrization $\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$, with $\vec u=-\vec u_\psi$.
 
 Applying the Hermitian form, with its trace reading at normalisation, to $\tilde{R}_{\psi,1}=e_t$ (the identity, which lies in $\mathbb{M}_+$) and $\tilde{R}_{\psi,2}=\exp(-\beta H)$, which also lies in $\mathbb{M}_+$,
 
@@ -195,10 +195,10 @@ $$
 \tilde R_\psi=i a_0e_t-\vec a,\qquad a_0\in\mathbb{R},\quad \vec a\in\mathbb{R}^3,
 $$
 
-which is an element of $\mathbb{M}_-$ (imaginary scalar part $ia_0$, real vector part $-\vec a$). Because $\vec a$ is a pure real quaternion, $\exp(\beta\vec a)=\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a^{\mathrm{fop}}$, and the scalar part of the thermal operator is no longer real:
+which is an element of $\mathbb{M}_-$ (imaginary scalar part $ia_0$, real vector part $-\vec a$). Because $\vec a$ is a pure real quaternion, $\exp(\beta\vec a)=\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a_{\mathrm{fop}}$, and the scalar part of the thermal operator is no longer real:
 
 $$
-\exp(-\beta H)=\exp(-i\beta a_0)\Big(\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a^{\mathrm{fop}}\Big),
+\exp(-\beta H)=\exp(-i\beta a_0)\Big(\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a_{\mathrm{fop}}\Big),
 \qquad
 Z=2\exp(-i\beta a_0)\cos(\beta|\vec a|).
 $$

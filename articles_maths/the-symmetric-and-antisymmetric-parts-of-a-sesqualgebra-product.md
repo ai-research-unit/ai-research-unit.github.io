@@ -56,10 +56,10 @@ $$
 
 *Proof.* The first display is the second scalar rule of $\star$ read in the exchanged slots, $E(f)(\lambda x,y) = f(y,\lambda x) = \varsigma(\lambda) f(y,x)$, and the second is the first scalar rule, $E(f)(x,\lambda y) = f(\lambda y, x) = \lambda f(y,x)$.
 
-**Remark.** Write $\mathrm{Sesq}(A)$ for the $R$-module of the $\varsigma$-sesquilinear products and $\mathrm{Sesq}^{\mathrm{opp}}(A)$ for the $R$-module of the additive maps that are $\varsigma$-semilinear in the first variable and $R$-linear in the second, the products of the **opposite parity**. The proposition says that the transposition is a bijection
+**Remark.** Write $\mathrm{Sesq}(A)$ for the $R$-module of the $\varsigma$-sesquilinear products and $\mathrm{Sesq}_{\mathrm{opp}}(A)$ for the $R$-module of the additive maps that are $\varsigma$-semilinear in the first variable and $R$-linear in the second, the products of the **opposite parity**. The proposition says that the transposition is a bijection
 
 $$
-E : \mathrm{Sesq}(A) \longrightarrow \mathrm{Sesq}^{\mathrm{opp}}(A),
+E : \mathrm{Sesq}(A) \longrightarrow \mathrm{Sesq}_{\mathrm{opp}}(A),
 $$
 
 so **the transposition does not preserve the class of the product**, and no construction made of it alone can stay inside the sesqualgebra. The two classes coincide exactly in the degenerate case $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, x, y$, which contains the case $\varsigma = \mathrm{id}$ of the bilinear theory and the case of a product that is identically zero. The obstruction is the reason the exchange is adapted below, and it is the subject of the opening section of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*, §*The Obstruction*.
@@ -141,10 +141,10 @@ $$
 **Proposition (the polarisation of the square).** For all $x, y \in A$,
 
 $$
-\boxed{\;f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f^{\mathrm{sym}}(x,y)\;},
+\boxed{\;f(x+y, x+y) - f(x,x) - f(y,y) = f(x,y) + f(y,x) = 2\,f_{\mathrm{sym}}(x,y)\;},
 $$
 
-where $f^{\mathrm{sym}}(x,y) = \tfrac12\bigl(f(x,y) + f(y,x)\bigr)$ is the **plain** symmetrisation, the half of the bare transposition.
+where $f_{\mathrm{sym}}(x,y) = \tfrac12\bigl(f(x,y) + f(y,x)\bigr)$ is the **plain** symmetrisation, the half of the bare transposition.
 
 *Proof.* Expand the left-hand side by the additivity in each variable and cancel the two squares:
 
@@ -331,13 +331,13 @@ Two facts of the bilinear theory are paid for by the adaptation. The polarisatio
 | $c$ | A conjugation of $A$: additive, involutive, $c(\lambda x) = \varsigma(\lambda)c(x)$ |
 | $E(f)(x,y) = f(y,x)$ | The bare transposition; additive and involutive; it reverses the parity |
 | $f^{c}(x,y) = c\bigl(f(y,x)\bigr)$ | The adapted exchange; an involution of the class of products |
-| $\mathrm{Sesq}(A)$, $\mathrm{Sesq}^{\mathrm{opp}}(A)$ | The products of the class and the products of the opposite parity; the transposition is a bijection between them |
+| $\mathrm{Sesq}(A)$, $\mathrm{Sesq}_{\mathrm{opp}}(A)$ | The products of the class and the products of the opposite parity; the transposition is a bijection between them |
 | $f^{\mathrm s} = \tfrac12(f + f^{c})$ | The symmetric part of $f$, the conjugate-symmetric part |
 | $f^{\mathrm a} = \tfrac12(f - f^{c})$ | The antisymmetric part of $f$, the skew-conjugate-symmetric part |
 | $f = f^{\mathrm s} + f^{\mathrm a}$ | The reconstruction; the two parts determine the product |
 | $f^{\mathrm s}(x,y) = c(f^{\mathrm s}(y,x))$, $f^{\mathrm a}(x,y) = -c(f^{\mathrm a}(y,x))$ | The two exchange-symmetries the parts satisfy |
 | $f^{\mathrm s}(x,x) = \tfrac12(x \star x + c(x \star x))$ | The diagonal of the symmetric part: the fixed part of the square |
-| $f(x{+}y,x{+}y) - f(x,x) - f(y,y) = 2f^{\mathrm{sym}}(x,y)$ | The polarisation of the square: it recovers the plain symmetrisation |
+| $f(x{+}y,x{+}y) - f(x,x) - f(y,y) = 2f_{\mathrm{sym}}(x,y)$ | The polarisation of the square: it recovers the plain symmetrisation |
 | $x \circ y = \tfrac12(x \star y + y \star x)$ | The symmetrised sesquilinear product, the half of the bare transpose (*The Sesquilinear Symmetrised Product*) |
 | $[x,y]_{\varsigma} = x \star y - y \star x$ | The sesquilinear commutator, the other half of the bare transpose (*The Sesquilinear Commutator*) |
 | $x \star y = x y^{*}$ | The derived operation of an associative algebra with a $\varsigma$-semilinear involution $*$ |

@@ -11,10 +11,10 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 ### Additive Structure
 
-The split complex plane $\mathbb{C}^{\mathrm{spl}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
+The split complex plane $\mathbb{C}_{\mathrm{spl}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(2\pi i \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}_{\mathrm{spl}},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
@@ -23,16 +23,16 @@ $$
 \langle \zeta, Q \rangle = \operatorname{Re}(\bar{\zeta} Q) = u q - v q', \qquad \zeta = u + jv, \quad Q = q + jq'.
 $$
 
-Note the minus sign: it comes from the split complex conjugation $\bar{\zeta} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}^{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}^{\mathrm{spl}}$ itself, but the pairing is indefinite.
+Note the minus sign: it comes from the split complex conjugation $\bar{\zeta} = u - jv$ and the fact that $j^2 = +1$. The dual group $\hat{\mathbb{C}_{\mathrm{spl}}}$ is isomorphic to $\mathbb{C}_{\mathrm{spl}}$ itself, but the pairing is indefinite.
 
 So at the level of the additive group, split complex harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a Lorentzian pairing instead of a Euclidean one.
 
 ### The Split Complex Characters
 
-The **split complex characters** are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{spl}}$:
+The **split complex characters** are the homomorphisms into the multiplicative monoid of $\mathbb{C}_{\mathrm{spl}}$:
 
 $$
-\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}^{\mathrm{spl}},
+\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q)), \qquad \zeta \in \mathbb{C}_{\mathrm{spl}},
 $$
 
 where the exponential is the split complex exponential. Explicitly,
@@ -47,13 +47,13 @@ These characters are **unbounded**: as $|\operatorname{Re}(\bar{\zeta} Q)| \to \
 
 ### Definition
 
-The **split complex Fourier transform** of a function $f : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is
+The **split complex Fourier transform** of a function $f : \mathbb{C}_{\mathrm{spl}} \to \mathbb{C}_{\mathrm{spl}}$ is
 
 $$
-(\mathcal F f)(\zeta) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ,
+(\mathcal F f)(\zeta) = \int_{\mathbb{C}_{\mathrm{spl}}} f(Q) \exp(-j \operatorname{Re}(\bar{\zeta} Q)) \, dQ,
 $$
 
-where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
+where $dQ$ is Lebesgue measure on $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R}^2$, and the exponential is the split complex exponential.
 
 **Caution.** The integral converges only for functions $f$ that decay faster than any exponential in both directions. This is the fundamental difference from the complex case.
 
@@ -79,7 +79,7 @@ This is the precise sense in which split complex harmonic analysis is the Laplac
 
 The split complex Fourier transform is defined on the class of functions $f$ for which both idempotent components are integrable against the corresponding exponential. This is a very restrictive class, essentially the functions that decay faster than any exponential at both ends of each null line.
 
-The transform is **not** defined on $L^1(\mathbb{C}^{\mathrm{spl}})$ or $L^2(\mathbb{C}^{\mathrm{spl}})$, because the characters are unbounded. This is the obstruction that cannot be removed.
+The transform is **not** defined on $L^1(\mathbb{C}_{\mathrm{spl}})$ or $L^2(\mathbb{C}_{\mathrm{spl}})$, because the characters are unbounded. This is the obstruction that cannot be removed.
 
 ## The Laplace Transform
 
@@ -143,13 +143,13 @@ The split complex Fourier transform on a bounded interval is used in the analysi
 
 ### Definition
 
-The **convolution** of $f, g : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is
+The **convolution** of $f, g : \mathbb{C}_{\mathrm{spl}} \to \mathbb{C}_{\mathrm{spl}}$ is
 
 $$
-(f * g)(Q) = \int_{\mathbb{C}^{\mathrm{spl}}} f(Q - B) g(B) \, dB,
+(f * g)(Q) = \int_{\mathbb{C}_{\mathrm{spl}}} f(Q - B) g(B) \, dB,
 $$
 
-whenever the integral converges. This is the convolution on the additive group $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}^2$.
+whenever the integral converges. This is the convolution on the additive group $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R}^2$.
 
 ### Basic Properties
 
@@ -190,7 +190,7 @@ the ordinary convolution on $\mathbb{R}$. So the split complex convolution is th
 The **split complex delta distribution** $\delta$ is the distribution
 
 $$
-\langle \delta, \phi \rangle = \phi(0), \qquad \phi \in C_c^\infty(\mathbb{C}^{\mathrm{spl}}).
+\langle \delta, \phi \rangle = \phi(0), \qquad \phi \in C_c^\infty(\mathbb{C}_{\mathrm{spl}}).
 $$
 
 It satisfies $\delta * f = f$ for every function $f$, and its split complex Fourier transform is the constant function $1$.
@@ -217,9 +217,9 @@ $$
 
 where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on each idempotent component separately.
 
-### The Split Complex Hilbert Transform on $\mathbb{C}^{\mathrm{spl}}$
+### The Split Complex Hilbert Transform on $\mathbb{C}_{\mathrm{spl}}$
 
-For $f : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$, the split complex Hilbert transform is defined by
+For $f : \mathbb{C}_{\mathrm{spl}} \to \mathbb{C}_{\mathrm{spl}}$, the split complex Hilbert transform is defined by
 
 $$
 Hf(Q) = Hf_+(Q_+) \Pi_+ + Hf_-(Q_-) \Pi_-.
@@ -229,7 +229,7 @@ So the split complex Hilbert transform is the pair of ordinary real Hilbert tran
 
 ### Basic Properties
 
-**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{spl}})$ for $1 < p < \infty$, with
+**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p < \infty$, with
 
 $$
 \|Hf\|_p \leq C_p \|f\|_p.
@@ -247,7 +247,7 @@ where $\operatorname{sgn}$ is the sign function on each idempotent component.
 
 ### The Split Complex Maximal Function
 
-The **split complex Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}^{\mathrm{spl}})$ is
+The **split complex Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}_{\mathrm{spl}})$ is
 
 $$
 Mf(Q) = \sup_{r > 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\|_E \, dB,
@@ -257,13 +257,13 @@ where $B(Q, r)$ is the Euclidean ball of radius $r$ centred at $Q$, and $|B(Q, r
 
 ### The Maximal Inequality
 
-**Theorem (Hardy–Littlewood, split version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}^{\mathrm{spl}})$ and every $\lambda > 0$,
+**Theorem (Hardy–Littlewood, split version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}_{\mathrm{spl}})$ and every $\lambda > 0$,
 
 $$
 |\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
 $$
 
-This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{spl}})$ for $1 < p \leq \infty$.
+This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p \leq \infty$.
 
 **Theorem.** For $1 < p \leq \infty$, there exists $C_p > 0$ such that
 
@@ -281,10 +281,10 @@ In the idempotent basis, the split complex maximal function decomposes as the pa
 
 ### Singular Integrals
 
-A **split complex Calderón–Zygmund operator** is a bounded operator $T : L^2(\mathbb{C}^{\mathrm{spl}}) \to L^2(\mathbb{C}^{\mathrm{spl}})$ with a kernel $K : \mathbb{C}^{\mathrm{spl}} \times \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ such that
+A **split complex Calderón–Zygmund operator** is a bounded operator $T : L^2(\mathbb{C}_{\mathrm{spl}}) \to L^2(\mathbb{C}_{\mathrm{spl}})$ with a kernel $K : \mathbb{C}_{\mathrm{spl}} \times \mathbb{C}_{\mathrm{spl}} \to \mathbb{C}_{\mathrm{spl}}$ such that
 
 $$
-Tf(Q) = \int_{\mathbb{C}^{\mathrm{spl}}} K(Q, B) f(B) \, dB
+Tf(Q) = \int_{\mathbb{C}_{\mathrm{spl}}} K(Q, B) f(B) \, dB
 $$
 
 for $Q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
@@ -299,7 +299,7 @@ $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.
 
-**Theorem (Calderón–Zygmund, split version).** Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}^{\mathrm{spl}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
+**Theorem (Calderón–Zygmund, split version).** Every split complex Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}_{\mathrm{spl}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
 
 **Examples.** The split complex Hilbert transform, the split complex Riesz transforms, and the Beurling–Ahlfors transform are split complex Calderón–Zygmund operators.
 
@@ -311,7 +311,7 @@ In the idempotent basis, every split complex Calderón–Zygmund operator decomp
 
 ### Definition
 
-The **split complex Mellin transform** of a function $f : (0, \infty) \to \mathbb{C}^{\mathrm{spl}}$ is
+The **split complex Mellin transform** of a function $f : (0, \infty) \to \mathbb{C}_{\mathrm{spl}}$ is
 
 $$
 \mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
@@ -355,7 +355,7 @@ which is the multiplicative analogue of the convolution theorem.
 
 ### Definition
 
-The **split complex Radon transform** of a function $f : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is
+The **split complex Radon transform** of a function $f : \mathbb{C}_{\mathrm{spl}} \to \mathbb{C}_{\mathrm{spl}}$ is
 
 $$
 Rf(\theta, t) = \int_{L(\theta, t)} f(Q) \, ds,
@@ -418,14 +418,14 @@ The inversion formula reconstructs $f$ from its wavelet transform.
 In the split complex setting, the wavelet $\psi$ is allowed to be split-complex-valued, and the transform becomes
 
 $$
-W_\psi f(Q_2, b) = \frac{1}{\sqrt{|\langle Q_2\rangle_{*}|}} \int_{\mathbb{C}^{\mathrm{spl}}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in {\mathbb{C}^{\mathrm{spl}}}^\times, \; b \in \mathbb{C}^{\mathrm{spl}}.
+W_\psi f(Q_2, b) = \frac{1}{\sqrt{|\langle Q_2\rangle_{*}|}} \int_{\mathbb{C}_{\mathrm{spl}}} f(Q) \overline{\psi\left( \frac{Q - b}{Q_2} \right)} \, dQ, \qquad Q_2 \in {\mathbb{C}_{\mathrm{spl}}}^\times, \; b \in \mathbb{C}_{\mathrm{spl}}.
 $$
 
 The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.
 
 ## Summary
 
-Harmonic analysis on the split complex plane $\mathbb{C}^{\mathrm{spl}}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the decomposition of the algebra into idempotents in an essential role. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $j$, which are unbounded because $j^2 = +1$.
+Harmonic analysis on the split complex plane $\mathbb{C}_{\mathrm{spl}}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the decomposition of the algebra into idempotents in an essential role. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $j$, which are unbounded because $j^2 = +1$.
 
 The split complex Fourier transform is defined with a kernel built from the split complex exponential, and it is developed on the full plane and on a bounded interval, together with the Laplace transform, convolution and the delta distribution, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along lines, and the continuous wavelet transform.
 
@@ -433,7 +433,7 @@ The split complex Fourier transform is defined with a kernel built from the spli
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
+| $\mathbb{C}_{\mathrm{spl}}$ | Split complex algebra |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\chi_\zeta(Q) = \exp(j \operatorname{Re}(\bar{\zeta} Q))$ | Split complex character |

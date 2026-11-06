@@ -194,7 +194,7 @@ with $\tilde R_\psi \in \mathbb{M}_+$ Hermitian, the jump operators $\tilde K_k 
 Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\vec u$ be a unit pure real quaternion and $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$, $\tilde\Pi_2(\vec u) = \tfrac{1}{2}(e_t - i\vec u)$ the complementary idempotents along $\vec u$. For $p \in [0,1]$, the **dephasing channel** along $\vec u$ is
 
 $$
-\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ})
+\boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ})
 = (1-p)\,\tilde{Ϛ}
 + p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right)\;}.
 $$
@@ -219,7 +219,7 @@ $$
 so the fully dephasing map *projects the Bloch vector onto the $\vec u$ axis*. Including the mixture with weight $1-p$,
 
 $$
-\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
+\boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_2\right),
 \qquad
 \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$
@@ -228,15 +228,15 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 
 ### Limiting Cases, Measurement, and Irreversibility
 
-At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ^{\mathrm{deph}}_1)^2 = Ξ^{\mathrm{deph}}_1$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
+At $p = 0$ the channel is the identity, a reversible $*$-unitary evolution. At $p = 1$ it is **full dephasing**, $Ξ_{\mathrm{deph},1}(\tilde{Ϛ}) = \tfrac{1}{2}(e_t + i(\vec u\cdot\vec r)\vec u)$, whose image is the diameter of the Bloch ball along $\vec u$; it is idempotent, $(Ξ_{\mathrm{deph},1})^2 = Ξ_{\mathrm{deph},1}$, and non-$*$-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\vec u$ and discarding the outcome leaves the average state
 
 $$
-p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ^{\mathrm{deph}}_1(\tilde{Ϛ}),
+p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = Ξ_{\mathrm{deph},1}(\tilde{Ϛ}),
 \qquad
 p_\pm = \frac{\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$
 
-as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
+as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $Ξ_{\mathrm{deph},p}$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
 
 Write $r_\parallel = \vec u\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,
 
@@ -331,7 +331,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $Ξ^{*}(\tilde R_\psi) = \sum_l \tilde{K}_l^{*}\tilde R_\psi\tilde{K}_l$ | Dual (Heisenberg-picture) map |
 | $\tilde Q(r'_t) = \exp(-i Hr'_t/\hbar)$ | One-parameter $*$-unitary group |
 | $-i H/\hbar \in \mathbb{M}_-$ | Generator of reversible evolution |
-| $Ξ^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ |
+| $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u$ |
 | $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing action on the Bloch vector |
 | $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

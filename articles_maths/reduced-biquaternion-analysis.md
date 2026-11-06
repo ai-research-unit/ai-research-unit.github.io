@@ -8,7 +8,7 @@ Reduced biquaternion analysis is the study of functions of a reduced biquaternio
 
 **The analysis is done in the metric space of the Euclidean norm, on an open set of the space.**
 
-**Definition.** An **open set** $\Omega$ is a union of open balls of the Euclidean metric; a **domain** is a non-empty connected open set. A function is studied on a domain $\Omega\subset\mathbb{B}^{\mathrm{red}}$, with the induced metric $d$ and the induced topology.
+**Definition.** An **open set** $\Omega$ is a union of open balls of the Euclidean metric; a **domain** is a non-empty connected open set. A function is studied on a domain $\Omega\subset\mathbb{B}_{\mathrm{red}}$, with the induced metric $d$ and the induced topology.
 
 **Theorem (the setting).** On a domain the metric is complete on the closed balls, the balls are convex, and every element of the domain has a ball neighbourhood contained in the domain; the four products are continuous, so all the algebra operations are defined and continuous on the domain and its functions.
 
@@ -16,7 +16,7 @@ Reduced biquaternion analysis is the study of functions of a reduced biquaternio
 
 ## Limits and Continuity
 
-**Definition.** For a function $f:\Omega\to\mathbb{B}^{\mathrm{red}}$, a point $\breve Q_{0}\in\Omega$ and an element $L$, the **limit** is $f(\breve Q)\to L$ as $\breve Q\to \breve Q_{0}$ when for every $\varepsilon>0$ there is $\delta>0$ with $\lVert f(\breve Q)-L\rVert<\varepsilon$ whenever $0<\lVert \breve Q-\breve Q_{0}\rVert<\delta$; the function is **continuous** at $\breve Q_{0}$ when $f(\breve Q)\to f(\breve Q_{0})$.
+**Definition.** For a function $f:\Omega\to\mathbb{B}_{\mathrm{red}}$, a point $\breve Q_{0}\in\Omega$ and an element $L$, the **limit** is $f(\breve Q)\to L$ as $\breve Q\to \breve Q_{0}$ when for every $\varepsilon>0$ there is $\delta>0$ with $\lVert f(\breve Q)-L\rVert<\varepsilon$ whenever $0<\lVert \breve Q-\breve Q_{0}\rVert<\delta$; the function is **continuous** at $\breve Q_{0}$ when $f(\breve Q)\to f(\breve Q_{0})$.
 
 **Theorem (continuity is coordinatewise).** A function $f$ is continuous at $\breve Q_{0}$ if and only if its two idempotent-coordinate functions
 $$
@@ -38,7 +38,7 @@ are continuous at $\breve Q_{0}$ as complex-valued functions of $\breve Q$. The 
 $$
 \frac{f(\breve Q+\breve Q_{H})-f(\breve Q)}{\breve Q_{H}},
 $$
-defined when $\breve Q_{H}$ is invertible. The function is **differentiable** at $\breve Q$ when the quotient tends to a limit $f'(\breve Q)\in\mathbb{B}^{\mathrm{red}}$ as $\breve Q_{H}\to0$ through the invertible increments.
+defined when $\breve Q_{H}$ is invertible. The function is **differentiable** at $\breve Q$ when the quotient tends to a limit $f'(\breve Q)\in\mathbb{B}_{\mathrm{red}}$ as $\breve Q_{H}\to0$ through the invertible increments.
 
 **Theorem (the obstacle).** The increments range over the unit group, which is open and dense but not all of the space; the increments that are excluded are the zero divisors, and the division by them is impossible. The quotient is therefore defined on a dense subset of the increments and not on all of them.
 
@@ -60,7 +60,7 @@ as $\breve Q_{H}\to0$, the inner sum being a polynomial in $\breve Q_{H}$.
 
 **A differentiable function of the reduced variable decouples into two holomorphic functions, one in each idempotent coordinate.**
 
-**Theorem (the reduction).** Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}^{\mathrm{red}}$ differentiable in the sense above at every point, with the derivative continuous. Then, writing
+**Theorem (the reduction).** Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}_{\mathrm{red}}$ differentiable in the sense above at every point, with the derivative continuous. Then, writing
 $$
 f(\breve Q)=g_{1}(\breve Q)\,\Pi_++g_{2}(\breve Q)\,\Pi_-,
 $$

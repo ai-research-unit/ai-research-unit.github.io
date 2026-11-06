@@ -52,7 +52,7 @@ so that $\langle L_\varphi f,g\rangle=\langle f,U_\varphi g\rangle$ for all $f,g
 
 **Definition.** Let $R$ be the involution of *Reversible Iterated Function Systems and the Involution* and let $R_*f=f\circ R$ be the induced operator on functions, a unitary self-adjoint involution because $R_*\mu=\mu$. The **reversed transfer operator** is
 $$
-L_\varphi^{\mathrm{rev}}=R_*\,L_\varphi^{\,*}\,R_*=R_*U_\varphi R_* ,
+L_{\mathrm{rev},\varphi}=R_*\,L_\varphi^{\,*}\,R_*=R_*U_\varphi R_* ,
 $$
 the transfer operator read through the reversal of the kernel.
 
@@ -130,7 +130,7 @@ The transfer operator $L_\varphi f(x)=\sum_{\varphi(y)=x}\delta(y)f(y)$ is bound
 | $L_\varphi^*=U_\varphi$, $f\mapsto f\circ\varphi$ | The adjoint, the Koopman operator |
 | $L_\varphi U_\varphi=d$ on the fibres | The failure of the isometry |
 | $R_*f=f\circ R$ | The operator of the involution |
-| $L_\varphi^{\mathrm{rev}}=R_*L_\varphi^*R_*$ | The reversed kernel |
+| $L_{\mathrm{rev},\varphi}=R_*L_\varphi^*R_*$ | The reversed kernel |
 | $\langle f,g\rangle_R=\langle R_*f,g\rangle$ | The twisted Hermitian form |
 | $\operatorname{spec}L_\varphi=\overline{\operatorname{spec}U_\varphi}$ | The conjugate spectra |
 | $C_n(f,g)=\langle L_\varphi^{\,n}f,g\rangle-\ldots$ | The correlation and its decay |

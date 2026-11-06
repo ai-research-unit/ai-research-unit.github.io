@@ -129,7 +129,7 @@ the inner parameter running over an interval of length $1-z$.
 This reduction was verified numerically, and it is exactly what makes the leading value
 $$\boxed{\;a=\frac{\alpha}{2\pi}=1.1614097329\times10^{-3}\;}$$
 for $\alpha=1/137.035999084$. The number is Schwinger's, the first radiative correction ever computed, and it sits above the measured electron anomaly
-$$a_e^{\mathrm{exp}}=1.15965218073\times10^{-3}$$
+$$a_{\mathrm{exp},e}=1.15965218073\times10^{-3}$$
 with a relative excess of $1.5156\times10^{-3}$, of the order of the two-loop correction.
 
 **The higher orders.** The perturbative series is conventionally written
@@ -248,7 +248,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $F_2(k^2)=\frac{\alpha}{2\pi}\int\!dx\,dy\,dz\,\delta(x+y+z-1)\frac{2m^2z(1-z)}{m^2(1-z)^2-xyk^2}$ | One-loop parameter representation |
 | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ | Leading (Schwinger) anomaly |
 | $A_2=-0.328478965579$ | Two-loop coefficient (recomputed) |
-| $a_e^{\mathrm{exp}}=1.15965218073\times10^{-3}$ | Measured electron anomaly |
+| $a_{\mathrm{exp},e}=1.15965218073\times10^{-3}$ | Measured electron anomaly |
 
 ## Further Reading
 

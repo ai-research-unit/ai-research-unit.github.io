@@ -17,13 +17,13 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{Q}$ | $\mathbb{Q}\setminus\{0\}$ | none | $0,\ \mathbb{Q}$; Noetherian and Artinian | *The Rational Numbers* |
 | $\mathbb{R}$ | $\mathbb{R}\setminus\{0\}$ | none | $0,\ \mathbb{R}$; Noetherian and Artinian | *The Real Numbers* |
 | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | none | $0,\ \mathbb{C}$; Noetherian and Artinian | *The Complex Numbers* |
-| $\mathbb{C}^{\mathrm{spl}}$ | $\langle u\rangle_{*} \neq 0$ | the null cone $\{\langle u\rangle_{*} = 0\}$ | $0,\ \mathbb{C}^{\mathrm{spl}}\Pi_{1,2},\ \mathbb{C}^{\mathrm{spl}}$; Artinian | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dln}}$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | the powers $(\varepsilon^m)$; local, Artinian | *Dual-Numbers Algebra* |
+| $\mathbb{C}_{\mathrm{spl}}$ | $\langle u\rangle_{*} \neq 0$ | the null cone $\{\langle u\rangle_{*} = 0\}$ | $0,\ \mathbb{C}_{\mathrm{spl}}\Pi_{1,2},\ \mathbb{C}_{\mathrm{spl}}$; Artinian | *Split-Complex Algebra* |
+| $\mathbb{C}_{\mathrm{dln}}$ | $x \neq 0$ | the maximal ideal $\mathrm{M} = (\varepsilon)$ | the powers $(\varepsilon^m)$; local, Artinian | *Dual-Numbers Algebra* |
 | $\mathbb{H}$ | $\mathbb{H}\setminus\{0\}$ | none | only $0$ and $\mathbb{H}$; simple | *Quaternion Algebra* |
-| $\mathbb{B}^{\mathrm{spl}}$ | $\langle u\rangle_{\natural} \in {\mathbb{C}^{\mathrm{spl}}}^{\times}$ | yes | two maximal ideals | *Split-Biquaternion Algebra* |
+| $\mathbb{B}_{\mathrm{spl}}$ | $\langle u\rangle_{\natural} \in {\mathbb{C}_{\mathrm{spl}}}^{\times}$ | yes | two maximal ideals | *Split-Biquaternion Algebra* |
 | $\mathbb{B}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | only $0$ and $\mathbb{B}$; simple, not division | *The Biquaternion Algebra* |
 
-The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{B}^{\mathrm{spl}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ and the dual numbers $\mathbb{C}^{\mathrm{dln}}$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
+The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ and the dual numbers $\mathbb{C}_{\mathrm{dln}}$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
 
 ## Residue Rings, Finite Rings and Products
 
@@ -46,7 +46,7 @@ The characteristic is that of *Rings*, §1: the least $n \geq 1$ with $n \cdot 1
 
 | Characteristic | Rings | Introduced in |
 |---|---|---|
-| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$ | *Rings*, §1; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *The Biquaternion Algebra* |
+| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$ | *Rings*, §1; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *The Biquaternion Algebra* |
 | $0$ | $R[x]$, $R[[x]]$, $k(x)$, $k((t))$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | *Polynomial Rings and Rational Functions*, *Formal Power Series and Completion*, *Fields*, §19, *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Algebraic Number Theory*, *Bézout Domains* |
 | $p$ | $\mathbb{F}_p$, $\mathbb{F}_{p^n}$ | *Finite Fields* |
 | $p$ | $\mathbb{F}_p[[t]]$ | *Local Fields* |
@@ -72,7 +72,7 @@ A finite ring has nonzero characteristic, and a ring of characteristic $0$ conta
 | $\mathbb{Z}[\sqrt{2}]$ | $\pm(1+\sqrt{2})^m$ | none | Euclidean, hence every ideal principal | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-2}]$ | $\pm 1$ | none | Euclidean | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-5}]$ | $\pm 1$ | none | Noetherian, not principal | *Examples of Rings and Fields* |
-| $\mathbb{Z}[\varkappa^{\mathrm{crd}}_n]$ | finite rank, by Dirichlet's unit theorem | none | Dedekind, not principal in general | *Cyclotomic Fields* |
+| $\mathbb{Z}[\varkappa_{\mathrm{crd},n}]$ | finite rank, by Dirichlet's unit theorem | none | Dedekind, not principal in general | *Cyclotomic Fields* |
 | $\mathcal{O}_K$ | by Dirichlet's unit theorem | none | Dedekind, so nonzero ideals factor uniquely | *Algebraic Number Theory* |
 | $\overline{\mathbb{Z}}$ | the roots of unity it contains | none | not Noetherian, but Bézout | *Bézout Domains* |
 
@@ -134,8 +134,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | The number systems |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$, $\mathbb{F}_q$ | Residue ring, prime field, finite field |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers and dual numbers |
-| $\mathbb{H}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $\mathbb{O}$ | Quaternions, split-biquaternions, biquaternions, octonions |
+| $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$ | Split-complex numbers and dual numbers |
+| $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$, $\mathbb{O}$ | Quaternions, split-biquaternions, biquaternions, octonions |
 | $R[x]$, $R[x_1,\dots,x_n]$, $R[[x]]$ | Polynomial and power series rings |
 | $k(x)$, $k((t))$ | Rational function field, Laurent series field |
 | $\mathbb{Z}_{(p)}$ | Localisation of $\mathbb{Z}$ at the prime $p$ |

@@ -185,7 +185,7 @@ The same element carries five descriptions, and they are worth setting side by s
 **The complex angle.** The element is central, so the Hamilton pairing does not apply. Its vector part is zero, $B=0$, while the pairing's domain is $B\neq0$ (*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Domain*); a central element has no axis and no Hamilton angle. The angle that remains is the exponent of the central evolution,
 
 $$
-\boxed{\;\mathrm{H}^{\mathrm{hvs}}(r'_t)=-\frac{i}{\hbar}z_\star r'_t=-\frac{\Gamma r'_t}{2\hbar}-\frac{iE_Rr'_t}{\hbar}\;}
+\boxed{\;\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{i}{\hbar}z_\star r'_t=-\frac{\Gamma r'_t}{2\hbar}-\frac{iE_Rr'_t}{\hbar}\;}
 $$
 
 a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imaginary part is the phase. Its real part is not an angle: it is the decay exponent, the logarithm of the scale. In the Hamilton chart a real angle gives a periodic exponential and a purely imaginary one gives a monotone exponential. The resonance's exponent is central and complex: its imaginary part is the phase, its real part the decay. This is the non-compact regime of *The Exponential Word and Its Boundary*, §*The Two Regimes*, read on the centre.
@@ -193,7 +193,7 @@ a complex number of the centre rather than a pair $(\vec U,\Theta)$. Its imagina
 **The mass scale.** The pole is an energy, so it becomes a dimensionless angle only after a scale is chosen. In units of the mass $m$ of the decaying state, $\theta_\star=z_\star/(mc^2)$ and
 
 $$
-\mathrm{H}^{\mathrm{hvs}}(r'_t)=-i\,\theta_\star\,\frac{mc^2r'_t}{\hbar},
+\mathrm{H}_{\mathrm{hvs}}(r'_t)=-i\,\theta_\star\,\frac{mc^2r'_t}{\hbar},
 $$
 
 so $\theta_\star$ is the complex angle per unit of the mass time. Its imaginary part is $-\Gamma/(2mc^2)$, the half-width in mass units, and its real part is the energy in mass units. The half-width is therefore the imaginary part of the mass-unit angle, and it appears with a minus sign in the real part of the exponent $\Theta$; the factor $-i$ between them swaps the two readings. Neither part is a Lorentz scalar; both are central, as the pole is.
@@ -222,7 +222,7 @@ The damping is the Hermitian part and the energy is the anti-Hermitian part. A s
 
 **The reading.** The pole term is a central element of the non-compact regime: a complex angle whose real part is a scale and whose imaginary part is a phase, with the Cartan amplitude equal to the survival amplitude. The width is not a second energy and not a rapidity; it is the Hermitian part of one central generator, and the lifetime is $\hbar/\Gamma$.
 
-**The boundary.** The identification of the complex angle with the pole is exact for the central element $\exp(-iz_\star r'_t/\hbar)$; it does not make the resonance an eigenstate of a Hermitian Hamiltonian, and it does not give the pole a module vector. The element is central, so the Hamilton pairing is undefined and the complex angle is the exponent, not a Hamilton angle. If the pole is attached to a complex four-momentum, the complex rapidity $\theta^{\mathrm{rpd}}$ with $\Theta=-i\theta^{\mathrm{rpd}}$ is a model-dependent reading; the algebra supplies the central exponent exactly, and the rapidity only through that model. The decaying state is not normalisable, as §*Open Questions* records, and the word describes the evolution element, not the state that carries it.
+**The boundary.** The identification of the complex angle with the pole is exact for the central element $\exp(-iz_\star r'_t/\hbar)$; it does not make the resonance an eigenstate of a Hermitian Hamiltonian, and it does not give the pole a module vector. The element is central, so the Hamilton pairing is undefined and the complex angle is the exponent, not a Hamilton angle. If the pole is attached to a complex four-momentum, the complex rapidity $\theta_{\mathrm{rpd}}$ with $\Theta=-i\theta_{\mathrm{rpd}}$ is a model-dependent reading; the algebra supplies the central exponent exactly, and the rapidity only through that model. The decaying state is not normalisable, as §*Open Questions* records, and the word describes the evolution element, not the state that carries it.
 
 **A check.** For $E_R=2$, $\Gamma=0.5$ and $r'_t=1$ in units $\hbar=1$, the amplitude is $e^{-0.25}=0.778800783\ldots$, the survival probability $e^{-0.5}=0.606530660\ldots$, and $\Theta=-0.25-2i$; the generator's Hermitian and anti-Hermitian parts are $-0.25$ and $-2i$, and the two bracket readings reproduce the amplitude and the probability to machine precision.
 
@@ -362,7 +362,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\Delta(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\Delta-\tfrac{i}{2}\Gamma$ |
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
-| $\mathrm{H}^{\mathrm{hvs}}(r'_t)=-iz_\star r'_t/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
+| $\mathrm{H}_{\mathrm{hvs}}(r'_t)=-iz_\star r'_t/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
 | $\tilde A(r'_t)=e^{-\Gamma r'_t/2\hbar}e_t$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
 | $\tilde U_\star(r'_t)=\exp(-iz_\star r'_t/\hbar)$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
 | $\tau=\hbar/\Gamma$ | Lifetime |

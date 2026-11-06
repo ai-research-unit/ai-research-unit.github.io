@@ -58,7 +58,7 @@ A profinite group is the inverse limit of an inverse system of finite groups wit
 | $\hat{\mathbb{Z}} = \varprojlim_n \mathbb{Z}/n\mathbb{Z}$ | the inverse-limit topology; $\hat{\mathbb{Z}} \cong \prod_p \mathbb{Z}_p$ | the profinite completion of $\mathbb{Z}$ | *Profinite Groups and the Krull Topology* |
 | $\operatorname{gal}(L/K)$ | the Krull topology, with the subgroups $\operatorname{gal}(L/M)$ for $M/K$ finite Galois as a base | the Galois correspondence holds for the closed subgroups | *Galois Theory*; *Profinite Groups and the Krull Topology* |
 | $\operatorname{gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p)$ | the Krull topology; $\hat{\mathbb{Z}}$, with the Frobenius as topological generator | the absolute Galois group of a finite field | *Galois Theory*; *Galois Cohomology* |
-| the profinite completion $\hat G^{\mathrm{pf}}$ | the inverse limit over the finite-index normal subgroups; $G$ embeds exactly when $G$ is residually finite | the profinite completion of an abstract group | *Profinite Groups and the Krull Topology* |
+| the profinite completion $\hat G_{\mathrm{pf}}$ | the inverse limit over the finite-index normal subgroups; $G$ embeds exactly when $G$ is residually finite | the profinite completion of an abstract group | *Profinite Groups and the Krull Topology* |
 | a pro-$p$ group | the inverse limit of finite $p$-groups; compact, totally disconnected | the Sylow $p$-subgroups of a profinite group | *Profinite Groups and the Krull Topology*; *Combinatorial Group Theory* |
 | a compact $p$-adic analytic group | the $p$-adic manifold topology; contains a uniformly powerful open pro-$p$ subgroup | the $p$-adic Lie groups of the next table | *$p$-adic Lie Groups* |
 | the Galois group of a local field | the Krull topology; a Demushkin pro-$p$ group of finite rank, hence $p$-adic analytic | the input to local class field theory | *Galois Cohomology*; *$p$-adic Lie Groups* |
@@ -124,7 +124,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $G$, $H$, $e$ | a topological group, a subgroup, the identity |
 | $L_g$, $R_g$, $\operatorname{Ad}_g$ | left and right translations and the inner automorphism |
 | $\mathcal{N}$, $\mathcal{U}_L$, $\mathcal{U}_R$ | a neighbourhood base at $e$; the left and right uniformities |
-| $\hat G$, $\hat G^{\mathrm{pf}}$ | the completion in the two-sided uniformity; the profinite completion |
+| $\hat G$, $\hat G_{\mathrm{pf}}$ | the completion in the two-sided uniformity; the profinite completion |
 | $G_0$, $G/H$ | the identity component; a coset space with the quotient topology |
 | $\mu$, $\Delta$, $\mu_R$ | a left Haar measure; the modular function; the right Haar measure $\Delta^{-1}\mu$ |
 | unimodular | $\Delta \equiv 1$ |

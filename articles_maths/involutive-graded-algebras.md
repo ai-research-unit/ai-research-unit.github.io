@@ -89,10 +89,10 @@ for the same graded commutator; on the even part, and on any pair with one even 
 Let $A = M_{p|q}(k)$ be the matrix superalgebra with the even part $M_p \oplus M_q$ and the odd part the off-diagonal block, written in blocks as $\begin{pmatrix} A & B \\ C & D \end{pmatrix}$. The **supertranspose** is
 
 $$
-\begin{pmatrix} A & B \\ C & D \end{pmatrix}^{\mathrm{st}} = \begin{pmatrix} D^{\mathsf{T}} & -B^{\mathsf{T}} \\ C^{\mathsf{T}} & A^{\mathsf{T}} \end{pmatrix},
+\begin{pmatrix} A & B \\ C & D \end{pmatrix}_{\mathrm{st}} = \begin{pmatrix} D^{\mathsf{T}} & -B^{\mathsf{T}} \\ C^{\mathsf{T}} & A^{\mathsf{T}} \end{pmatrix},
 $$
 
-the two diagonal blocks exchanged and the upper odd block negated; the construction needs $p = q$, since the two diagonal blocks must be interchangeable, and it is the balanced case that is treated here. Its square is the identity, because applying it twice transposes each block twice and the two minus signs cancel; it preserves the even and the odd parts; and for homogeneous $P$ and $Q$ it satisfies $(PQ)^{\mathrm{st}} = (-1)^{|P||Q|}Q^{\mathrm{st}}P^{\mathrm{st}}$, which is checked on the blocks: the two products $\sigma(PQ)$ and $\sigma(Q)\sigma(P)$ differ in the even blocks by the terms $F^{\mathsf{T}}C^{\mathsf{T}}$ and $G^{\mathsf{T}}B^{\mathsf{T}}$, and these terms involve one odd block of $P$ and one of $Q$, so they are absent unless both factors are odd — exactly where the Koszul sign is $-1$. Hence the supertranspose is a superinvolution, while the ordinary transpose is a graded involution, because it has no sign, and the two differ exactly on the products of two odd matrices. The grade involution is conjugation by the diagonal matrix with entries $+1$ on the first block and $-1$ on the second; other sign conventions for the supertranspose appear in the literature.
+the two diagonal blocks exchanged and the upper odd block negated; the construction needs $p = q$, since the two diagonal blocks must be interchangeable, and it is the balanced case that is treated here. Its square is the identity, because applying it twice transposes each block twice and the two minus signs cancel; it preserves the even and the odd parts; and for homogeneous $P$ and $Q$ it satisfies $(PQ)_{\mathrm{st}} = (-1)^{|P||Q|}Q_{\mathrm{st}}P_{\mathrm{st}}$, which is checked on the blocks: the two products $\sigma(PQ)$ and $\sigma(Q)\sigma(P)$ differ in the even blocks by the terms $F^{\mathsf{T}}C^{\mathsf{T}}$ and $G^{\mathsf{T}}B^{\mathsf{T}}$, and these terms involve one odd block of $P$ and one of $Q$, so they are absent unless both factors are odd — exactly where the Koszul sign is $-1$. Hence the supertranspose is a superinvolution, while the ordinary transpose is a graded involution, because it has no sign, and the two differ exactly on the products of two odd matrices. The grade involution is conjugation by the diagonal matrix with entries $+1$ on the first block and $-1$ on the second; other sign conventions for the supertranspose appear in the literature.
 
 ### The Exterior Algebra
 
@@ -120,7 +120,7 @@ A superinvolution satisfies $\sigma([x,y]) = -[\sigma(x),\sigma(y)]$ for the gra
 | $\sigma(xy) = \sigma(y)\sigma(x)$ | a graded involution |
 | $\sigma(xy) = (-1)^{|x||y|}\sigma(y)\sigma(x)$ | a superinvolution |
 | $[x,y] = xy - (-1)^{|x||y|}yx$ | the graded commutator |
-| $X^{\mathrm{st}} = \begin{pmatrix} D^{\mathsf{T}} & -B^{\mathsf{T}} \\ C^{\mathsf{T}} & A^{\mathsf{T}}\end{pmatrix}$ | the supertranspose of a matrix |
+| $X_{\mathrm{st}} = \begin{pmatrix} D^{\mathsf{T}} & -B^{\mathsf{T}} \\ C^{\mathsf{T}} & A^{\mathsf{T}}\end{pmatrix}$ | the supertranspose of a matrix |
 
 ## Further Reading
 

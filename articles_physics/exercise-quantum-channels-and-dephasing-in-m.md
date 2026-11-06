@@ -15,7 +15,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 
 The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ with real $c r_t$ and $\vec r_\psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*}) = c r_t + \vec r\cdot\vec r_\psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the Choi matrix is $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
 $$
-Ξ^{\mathrm{deph}}_p(\tilde{Ϛ})
+Ξ_{\mathrm{deph},p}(\tilde{Ϛ})
 := (1-p)\,\tilde{Ϛ}
 + p\left(\tilde\Pi_1\,\tilde{Ϛ}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Ϛ}\,\tilde\Pi_2\right),
 \qquad
@@ -25,11 +25,11 @@ Throughout, $\log$ denotes the natural logarithm.
 
 ## Problem 1: Dephasing as a Kraus Sum
 
-**Problem.** Verify that the dephasing channel $Ξ^{\mathrm{deph}}_p$ is trace preserving with the three Kraus operators
+**Problem.** Verify that the dephasing channel $Ξ_{\mathrm{deph},p}$ is trace preserving with the three Kraus operators
 $$
 \tilde{K}_0 = \sqrt{1-p}\,e_t, \qquad \tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u_x), \qquad \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u_x),
 $$
-and compute $Ξ^{\mathrm{deph}}_p(\tilde{Ϛ})$ for the general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.
+and compute $Ξ_{\mathrm{deph},p}(\tilde{Ϛ})$ for the general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.
 
 **Solution.** Put $\alpha = i\vec u_x$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \alpha)$. Since $\vec u_x^2 = -e_t$,
 $$
@@ -76,7 +76,7 @@ $$
 $$
 Combining with the mixture,
 $$
-\boxed{\;Ξ^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_{\mathrm{out}}\right),
+\boxed{\;Ξ_{\mathrm{deph},p}(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_{\mathrm{out}}\right),
 \qquad
 \vec r_{\mathrm{out}} = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x\;}.
 $$
@@ -86,7 +86,7 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 
 ## Problem 2: The Kraus Rank of Dephasing
 
-**Problem.** Compute the Choi matrix of $Ξ^{\mathrm{deph}}_p$ in the computational basis and determine its rank. Deduce the minimal Kraus rank, exhibit a minimal Kraus representation, and decide whether the three-operator representation of Problem 1 is minimal.
+**Problem.** Compute the Choi matrix of $Ξ_{\mathrm{deph},p}$ in the computational basis and determine its rank. Deduce the minimal Kraus rank, exhibit a minimal Kraus representation, and decide whether the three-operator representation of Problem 1 is minimal.
 
 **Solution.** The rank of the Choi matrix is invariant under $*$-unitary conjugation, and dephasing along any unit axis is unitarily equivalent to dephasing along $\vec e_z$; we therefore fix $\vec u_x = \vec e_z$. Let $E_{jk} = |j\rangle\langle k|$ be the matrix units of the computational basis, expressed in the algebra as
 $$
@@ -116,7 +116,7 @@ The only nonzero block is $\begin{pmatrix}1 & 1-p\\ 1-p & 1\end{pmatrix}$, whose
 $$
 \mathrm{spec}\,J = \{\,2-p,\; p,\; 0,\; 0\,\}.
 $$
-Thus $J \succeq 0$ for $0 \leq p \leq 2$, confirming complete positivity (the parent restricts to the sub-range $0 \leq p \leq 1$, where $Ξ^{\mathrm{deph}}_p$ is a convex mixture of the identity and the full-dephasing measurement channel), and
+Thus $J \succeq 0$ for $0 \leq p \leq 2$, confirming complete positivity (the parent restricts to the sub-range $0 \leq p \leq 1$, where $Ξ_{\mathrm{deph},p}$ is a convex mixture of the identity and the full-dephasing measurement channel), and
 $$
 \boxed{\;\mathrm{rank}\,J = 2 \text{ for } 0 < p < 2, \qquad \mathrm{rank}\,J = 1 \text{ at } p=0 \text{ and at } p=2\;} .
 $$
@@ -230,7 +230,7 @@ $$
 $$
 so $\{B_l A_m\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(Ξ_2\circΞ_1) \leq \mathrm{rank}(Ξ_1)\,\mathrm{rank}(Ξ_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
 
-**Composition of dephasings.** The Bloch map of $Ξ^{\mathrm{deph}}_p$ along $\vec u_x$ is the linear map $D(\vec u_x,p) = (1-p)I + p\,\vec u_x\vec u_x^{\mathsf{T}}$ acting on $\mathbb{R}^3$. Composing two of them,
+**Composition of dephasings.** The Bloch map of $Ξ_{\mathrm{deph},p}$ along $\vec u_x$ is the linear map $D(\vec u_x,p) = (1-p)I + p\,\vec u_x\vec u_x^{\mathsf{T}}$ acting on $\mathbb{R}^3$. Composing two of them,
 $$
 D(\vec u_y,q)\,D(\vec u_x,p)
 = (1-p)(1-q)\,I
@@ -300,7 +300,7 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 
 We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.
 
-1. **Dephasing as a Kraus sum.** The channel $Ξ^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
+1. **Dephasing as a Kraus sum.** The channel $Ξ_{\mathrm{deph},p}$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
 2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_t$, $\sqrt{\tfrac{p}{2}}\,i\vec u_x$ is a minimal set.
 3. **Positive but not completely positive.** The transpose map acts on the Bloch ball as $(r_1,r_2,r_3)\mapsto(r_1,-r_2,r_3)$, is positive and trace preserving, and has Choi matrix equal to the swap operator, with spectrum $\{1,1,1,-1\}$. It is not a channel.
 4. **Amplitude damping.** With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_t + i\tfrac{1-s}{2}\vec e_z$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(i\vec e_x - \vec e_y)$; the channel is non-unital, has the unique fixed state $\tilde\Pi_1(\vec u_z)$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.
@@ -324,7 +324,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $J(Ξ) = \sum_{jk}\tilde{E}_{jk}\otimesΞ(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
-| $Ξ^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u_x$ |
+| $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u_x$ |
 | $\vec r \mapsto (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$ | Dephasing Bloch map |
 | $E_{jk} = \lvert j\rangle\langle k\rvert$ | Matrix units of the computational basis |
 | $\gamma$ | Amplitude-damping parameter |

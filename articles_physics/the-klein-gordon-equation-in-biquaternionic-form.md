@@ -141,11 +141,11 @@ which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\vec F,\
 **Fundamental solution.** The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_A$, gives
 
 $$
-\tilde{Ξ}^{\mathrm{sp}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\left((1-a)\,\delta(\tau-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|) + a\,\delta(\tau+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)\right) + \tilde{Ξ}^{\mathrm{sp}0}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\tilde{Ξ}_{\mathrm{sp}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\left((1-a)\,\delta(\tau-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|) + a\,\delta(\tau+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)\right) + \tilde{Ξ}_{\mathrm{sp}}^0(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad a \in \mathbb{C},
 $$
 
-with $\tilde{Ξ}^{\mathrm{sp}0}$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\tilde{Ξ}^{\mathrm{sp}} * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
+with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\tilde{Ξ}_{\mathrm{sp}} * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
 
 **Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + \mu^2$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - \mu^2$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + \mu^2$ but $\Box_A + \mu^2$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
 
@@ -261,7 +261,7 @@ What, then, is the doubling that the second-order structure actually needs? Two 
 
 The first is the **Hamiltonian doubling** of the second-order equation: to write it as a first-order system one introduces the conjugate momentum, so the state becomes a pair (field, rate of change of field). This is a genuine enlargement of the state space by a factor of two, and it cannot be avoided. Its relation to the sector split is only the intertwiner of the parent article: the rate $\partial/\partial R_t\,\tilde{Ξ}\in\mathbb{M}_\pm$ stays in the sector of $\tilde{Ξ}$, while $i\partial/\partial R_t\,\tilde{Ξ}$ moves to the other sector. That is the observable/generator structure of the Schrödinger article reappearing — the central $i$ converts a Hermitian object into a generator in the material sector — and it does not produce a particle–antiparticle pair. It is the same $i$-intertwiner, not a new algebraic ingredient.
 
-The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{Ξ}^{\mathrm{sp}}_R = m\tilde{Ξ}^{\mathrm{sp}}_L$, $\tilde{\nabla}^{\natural}\tilde{Ξ}^{\mathrm{sp}}_L = m\tilde{Ξ}^{\mathrm{sp}}_R$.
+The second candidate is the one the Dirac article already identifies: the **spinor-module doubling**. The scalar Klein–Gordon operator has no scalar square root (the cross term above), but it does have a first-order *spinor* square root, the biquaternion Dirac operator $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = m\tilde{Ξ}_{\mathrm{sp},R}$.
 
 The square root acts on the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here, and on its complex conjugate, whose direct sum is the four-component Dirac spinor — two spin states for the particle and two for the antiparticle. *This* is the doubling that the second-order structure needs, and it is a representation-theoretic doubling of a complex module, not the real vector-space decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$.
 
@@ -272,22 +272,22 @@ So the verdict on the framework's own question is the following. The second-orde
 There is a check that the biquaternion Klein–Gordon equation is consistent with the parent article rather than merely alongside it. For the central field, remove the rest energy by the substitution
 
 $$
-\tilde{Ξ} = \exp(-imc^2r'_t/\hbar)\,\tilde{Ξ}^{\mathrm{sp}},
+\tilde{Ξ} = \exp(-imc^2r'_t/\hbar)\,\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}^{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}^{\mathrm{sp}} - 2i\frac{mc^2}{\hbar}\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} - \frac{m^2c^4}{\hbar^2}\tilde{Ξ}^{\mathrm{sp}}\right)$ gives
+with the exponential central. Substituting into $\left(\Box-\mu^2\right)\tilde{Ξ}=0$ and using $\partial^2/\partial {r'_{t}}^2\!\left(\exp(-imc^2r'_t/\hbar)\tilde{Ξ}_{\mathrm{sp}}\right) = \exp(-imc^2r'_t/\hbar)\left(\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - 2i\frac{mc^2}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \frac{m^2c^4}{\hbar^2}\tilde{Ξ}_{\mathrm{sp}}\right)$ gives
 
 $$
-\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}^{\mathrm{sp}} - \frac{2im}{\hbar}\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} - \Delta\tilde{Ξ}^{\mathrm{sp}} = 0 ,
+\frac{1}{c^2}\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}} - \frac{2im}{\hbar}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} - \Delta\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
 
-in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}^{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $\hbar/(mc^2)$, leaves
+in which the two mass terms have cancelled exactly. Dropping the term $\partial^2/\partial {r'_{t}}^2\tilde{Ξ}_{\mathrm{sp}}/c^2$, which is small when the field varies slowly on the time scale $\hbar/(mc^2)$, leaves
 
 $$
-i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = -\frac{\hbar^2}{2m}\Delta\tilde{Ξ}^{\mathrm{sp}},
+i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{\hbar^2}{2m}\Delta\tilde{Ξ}_{\mathrm{sp}},
 $$
 
-the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{M}_+$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}^{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}^{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = mc^2/\hbar + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
+the free Schrödinger equation. Its Hamiltonian $-\hbar^2\Delta/2m$ is a real scalar, hence an element of $\mathbb{M}_+$, and the equation is of the parent article's form $i\hbar\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\psi\tilde{Ξ}_{\mathrm{sp}}$ with the same central scalar imaginary $i$. The two articles use the same complex structure, as they must. The check is independent of the plane-wave route: expanding $\omega = mc^2/\hbar + \Omega$ in the dispersion relation gives $\hbar\Omega \to \hbar^2\vec k^2/2m$ as $c\to\infty$, which I verified numerically for increasing $c$. What the limit shows is that the biquaternion Klein–Gordon equation does not introduce a second, competing imaginary unit; the $i$ of the parent is the $i$ here.
 
 One qualification belongs with the limit. The field reduced here is a **scalar**, so the limit lands on the scalar Schrödinger equation, which is the spin-$0$ special case of the parent article's two-component spinor equation, not an identification of the full spinor module. The scalar sector is consistent with the parent, not identical to it.
 

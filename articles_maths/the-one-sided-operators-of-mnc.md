@@ -4,7 +4,7 @@
 
 **The question.** A matrix $A$ acts on the matrix algebra by left multiplication, $X\mapsto AX$, and a matrix $B$ acts by right multiplication, $X\mapsto XB$. Both are operators on the $n^{2}$ complex dimensions of $M_{n}(\mathbb{C})$, hence matrices of size $n^{2}$. This article computes those matrices, their rank, their trace and their determinant, and describes the two subsets of $\operatorname{End}(M_{n})$ that they fill.
 
-**The result in one line.** Left multiplication is $\mathrm I_{n}\otimes A$, right multiplication is $B^{\mathsf T}\otimes\mathrm I_{n}$, the two subsets are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$ that commute and meet in the scalars, and each is the commutant of the other.
+**The result in one line.** Left multiplication is $\mathrm I_{n}\otimes A$, right multiplication is $B^{\mathsf T}\otimes\mathrm I_{n}$, the two subsets are copies of $M_{n}$ and of $M_{\mathrm{opp},n}$ that commute and meet in the scalars, and each is the commutant of the other.
 
 **Why the article is needed.** The two-sided operators are built from the two one-sided families, and every count of the companion articles starts from the dimensions $n^{2}+n^{2}-1=2n^{2}-1$ and $n^{4}$. The one-sided case is also the only case in which the invariants of the operator are read off the parameter without any tensor rank computation: the rank of $L_{A}$ is $n$ times the rank of $A$, and the determinant is the $n$-th power.
 
@@ -101,7 +101,7 @@ $$
 
 *Proof.* The matrix $B^{\mathsf T}\otimes\mathrm I_{n}$ has $n^{2}$ blocks, each a scalar multiple of $\mathrm I_{n}$. Its rank, trace and determinant are the same functions of $B^{\mathsf T}$ as those of $\mathrm I_{n}\otimes B$ are of $B$, and $\operatorname{rank}B^{\mathsf T}=\operatorname{rank}B$, $\operatorname{tr}B^{\mathsf T}=\operatorname{tr}B$, $\det B^{\mathsf T}=\det B$.
 
-**The right copy is an anti-representation.** The composition is $R_{B}R_{C}=R_{CB}$, so the map $B\mapsto R_{B}$ reverses the order. The set $\{R_{B}\}$ is a subalgebra of $\operatorname{End}(M_{n})$, isomorphic to $M_{n}^{\mathrm{opp}}$, and $M_{n}^{\mathrm{opp}}\cong M_{n}$ through the transpose. **The transpose is therefore the canonical comparison between the two copies, and it is an isomorphism of algebras and not an identification of subsets.**
+**The right copy is an anti-representation.** The composition is $R_{B}R_{C}=R_{CB}$, so the map $B\mapsto R_{B}$ reverses the order. The set $\{R_{B}\}$ is a subalgebra of $\operatorname{End}(M_{n})$, isomorphic to $M_{\mathrm{opp},n}$, and $M_{\mathrm{opp},n}\cong M_{n}$ through the transpose. **The transpose is therefore the canonical comparison between the two copies, and it is an isomorphism of algebras and not an identification of subsets.**
 
 ### The Flip
 
@@ -113,7 +113,7 @@ $$
 
 *Proof.* The flip sends $\mathrm I_{n}\otimes A$ to $A\otimes\mathrm I_{n}$, and $A\otimes\mathrm I_{n}=(A^{\mathsf T})^{\mathsf T}\otimes\mathrm I_{n}=[R_{A^{\mathsf T}}]$. The second identity is the first applied to $B^{\mathsf T}$.
 
-**The flip is an operator and not an element.** It lives in $\operatorname{End}(M_{n}(\mathbb{C}))$ and not in the algebra, it exchanges the two copies, and it preserves neither the product of the algebra nor a single letter of the two families. In the biquaternion case the same role is played by the permutation $\mathsf S$ of the second and third coordinates of the frame, and the identity there reads $R^{\mathrm{pau}}(\tilde Q)=\mathsf S\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, which is the frame form of the proposition above.
+**The flip is an operator and not an element.** It lives in $\operatorname{End}(M_{n}(\mathbb{C}))$ and not in the algebra, it exchanges the two copies, and it preserves neither the product of the algebra nor a single letter of the two families. In the biquaternion case the same role is played by the permutation $\mathsf S$ of the second and third coordinates of the frame, and the identity there reads $R_{\mathrm{pau}}(\tilde Q)=\mathsf S\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, which is the frame form of the proposition above.
 
 ## The Two Copies
 
@@ -170,7 +170,7 @@ and $F$ commutes with $L_{A}$ exactly when $\sum_{i}(Y_{i}A-AY_{i})\otimes Z_{i}
 
 Left multiplication by $A$ is the block-diagonal matrix $\mathrm I_{n}\otimes A$ with $n$ copies of $A$; right multiplication by $B$ is the block-scalar matrix $B^{\mathsf T}\otimes\mathrm I_{n}$. Both have rank $n\operatorname{rank}$, trace $n\operatorname{tr}$ and determinant $(\det)^{n}$ of the parameter, and both have the spectrum of the parameter repeated $n$ times.
 
-The two families are copies of $M_{n}$ and of $M_{n}^{\mathrm{opp}}$; they commute, they meet in the scalars, their sum has dimension $2n^{2}-1$, and each is the commutant of the other. The commutant of a single left multiplication is $C(A)\otimes M_{n}$, of dimension $n^{2}\dim C(A)$: $n^{3}$ for a cyclic element and $n^{4}$ for a scalar one.
+The two families are copies of $M_{n}$ and of $M_{\mathrm{opp},n}$; they commute, they meet in the scalars, their sum has dimension $2n^{2}-1$, and each is the commutant of the other. The commutant of a single left multiplication is $C(A)\otimes M_{n}$, of dimension $n^{2}\dim C(A)$: $n^{3}$ for a cyclic element and $n^{4}$ for a scalar one.
 
 The regular matrix is never nonderogatory for $n\ge2$, because its minimal polynomial has degree at most $n$ against a size of $n^{2}$. **The one-sided operators are the two ends of the construction, and the two-sided products of the next article are the smallest family that reaches the rest of the ambient space.**
 

@@ -57,7 +57,7 @@ the invariants of the semilinear action are the cohomology of the descended shea
 
 **Corollary (the trivial part and the higher parts).** The invariant subspace is the "trivial part" of the cohomology,
 $$
-H^i(X_L,\mathcal{F})^G = H^i(X_L,\mathcal{F})^{\mathrm{triv}} ,
+H^i(X_L,\mathcal{F})^G = H^i(X_L,\mathcal{F})_{\mathrm{triv}} ,
 $$
 and it is exactly the image of the pullback $H^i(X,\mathcal{F}_0)\to H^i(X_L,\mathcal{F})$ when the pullback is injective. The cohomology of the descended variety thus sits inside the cohomology of the extension as the fixed elements, and the remaining elements are the higher cohomology of the group.
 

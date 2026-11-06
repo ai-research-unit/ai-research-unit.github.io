@@ -164,7 +164,7 @@ $$
 
 which is trivial exactly on $U$.
 
-*Proof.* On $U$ one has $x^{\dagger}=x^{-1}$ by definition, giving the first identity; the second is the horizontal defect of *Mixed Inner Conjugation and Hermitian Adjoint*, $\Phi^{\theta,\bar{\cdot}}_x=R_{xx^{\dagger}}\circ\Phi^{\theta,\mathrm{inv}}_x$, applied to $\theta=\alpha$.
+*Proof.* On $U$ one has $x^{\dagger}=x^{-1}$ by definition, giving the first identity; the second is the horizontal defect of *Mixed Inner Conjugation and Hermitian Adjoint*, $\Phi^{\theta,\bar{\cdot}}_x=R_{xx^{\dagger}}\circ\Phi_{\mathrm{inv},x}^{\theta}$, applied to $\theta=\alpha$.
 
 **Remark.** The slice is the locus where the Hermitian operator and the inverse operator coincide, and it is a slice of the *parameter* and not of the algebra: off it the operator is still defined, but it is no longer an automorphism of the algebra and no longer a function of the inverse. This is the structural difference between the two families: the signed inner conjugation is defined only where the inverse is, and is an automorphism of the algebra there; the signed Hermitian sandwich is defined everywhere, and is an automorphism only where the dagger happens to be the inverse.
 

@@ -7,7 +7,7 @@ Local fields are the completions of a global field at its places, and the arithm
 
 The construction belongs to this article: the **restricted product** and the ring of adeles with its topology, the idele group with its topology (which is not the subspace topology from $\mathbb{A}_K$), the embedding of $K$ as a discrete co-compact subgroup, and the compactness of the norm-one idele class group. The *analysis* on the adeles — additive and multiplicative Fourier transform, the Poisson summation formula, the Tamagawa measure and Tamagawa numbers, zeta integrals and the adelic theory of automorphic forms — belongs to Part III, where the measure and the limit are available, and is treated in that Part. The Haar measure that the analytic theory uses belongs to *Locally Compact Groups and Haar Measure* in Part III, which is also where the integration theory on the locally compact groups constructed here belongs; this article constructs the topological groups and states no more about measure than the compactness results that the topology itself supplies.
 
-The article assumes *Local Fields* for the local theory at each place, *Topological Rings and Fields* and *Topological Groups* for the general theory of topological rings and locally compact groups, and the algebraic number theory of Part I for the class number, the unit theorem and the product formula, which are cited rather than reproved. Throughout, $K$ is a global field, that is, a finite extension of $\mathbb{Q}$ (a **number field**) or a finite extension of $\mathbb{F}_p(t)$ (a **function field**); $V_K$ is its set of places, $V_K^\infty$ the Archimedean ones and $V_K^{\mathrm{fin}}$ the non-Archimedean ones. For a place $v$, the completion is written $K_v$, its valuation ring $\mathcal{O}_v$, its maximal ideal $\mathrm{M}_v$, its residue field $k_v$ and its normalised absolute value $\lvert \cdot \rvert_v$, in the notation of *Local Fields*. The symbol $S$ always denotes a finite set of places containing $V_K^\infty$ when $K$ is a number field, and the phrase "almost all $v$" means all but finitely many.
+The article assumes *Local Fields* for the local theory at each place, *Topological Rings and Fields* and *Topological Groups* for the general theory of topological rings and locally compact groups, and the algebraic number theory of Part I for the class number, the unit theorem and the product formula, which are cited rather than reproved. Throughout, $K$ is a global field, that is, a finite extension of $\mathbb{Q}$ (a **number field**) or a finite extension of $\mathbb{F}_p(t)$ (a **function field**); $V_K$ is its set of places, $V_K^\infty$ the Archimedean ones and $V_{\mathrm{fin},K}$ the non-Archimedean ones. For a place $v$, the completion is written $K_v$, its valuation ring $\mathcal{O}_v$, its maximal ideal $\mathrm{M}_v$, its residue field $k_v$ and its normalised absolute value $\lvert \cdot \rvert_v$, in the notation of *Local Fields*. The symbol $S$ always denotes a finite set of places containing $V_K^\infty$ when $K$ is a number field, and the phrase "almost all $v$" means all but finitely many.
 
 ---
 
@@ -60,10 +60,10 @@ $$
 Thus an adele is a tuple $x = (x_v)_{v}$ with $x_v \in K_v$ for all $v$ and $x_v \in \mathcal{O}_v$ for almost all $v$. Addition and multiplication are coordinatewise, and $K$ embeds diagonally as the **principal adeles**: $K \hookrightarrow \mathbb{A}_K$, $a \mapsto (a)_v$. The **finite adeles** are the restricted product over the non-Archimedean places alone,
 
 $$
-\mathbb{A}_K^{\mathrm{fin}} = \prod_{v \in V_K^{\mathrm{fin}}}{}' (K_v, \mathcal{O}_v),
+\mathbb{A}_{\mathrm{fin},K} = \prod_{v \in V_{\mathrm{fin},K}}{}' (K_v, \mathcal{O}_v),
 $$
 
-and the **integral adeles** are the compact open subring $\widehat{\mathcal{O}}_K = \prod_{v}\bigl(\mathcal{O}_v \text{ for } v \in V_K^{\mathrm{fin}}\bigr)$, that is, the product of the valuation rings with the identity as defining subgroups; for number fields one defines $\widehat{\mathcal{O}}_K$ for the finite places only, and its product with the Archimedean factor is written $\mathbb{A}_K^\infty = \prod_{v \in V_K^\infty} K_v$ when $V_K^\infty$ is nonempty.
+and the **integral adeles** are the compact open subring $\widehat{\mathcal{O}}_K = \prod_{v}\bigl(\mathcal{O}_v \text{ for } v \in V_{\mathrm{fin},K}\bigr)$, that is, the product of the valuation rings with the identity as defining subgroups; for number fields one defines $\widehat{\mathcal{O}}_K$ for the finite places only, and its product with the Archimedean factor is written $\mathbb{A}_K^\infty = \prod_{v \in V_K^\infty} K_v$ when $V_K^\infty$ is nonempty.
 
 **Theorem.** The adele ring $\mathbb{A}_K$ is a topological ring: the coordinatewise addition and multiplication are continuous for the restricted product topology.
 
@@ -80,7 +80,7 @@ $$
 
 and the integral adeles over the finite places are the profinite ring $\widehat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$. The diagonal copy of $\mathbb{Q}$ consists of the tuples with a single rational number in each coordinate. A fundamental observation is that $\mathbb{A}_\mathbb{Q} = \mathbb{Q} + (\mathbb{R} \times \widehat{\mathbb{Z}})$: every adele is the sum of a rational number and a tuple whose Archimedean coordinate lies in $[0,1)$ and whose non-Archimedean coordinates are integral. This identity is what makes the quotient compact, and it is the arithmetic content of the Chinese remainder theorem applied at all primes at once.
 
-**Example ($K$ a number field).** The Archimedean factor is $\prod_{v \mid \infty} K_v = \mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ for the signature $(r_1, r_2)$ of $K$, and it is a finite-dimensional real vector space. The adele ring is the product of this vector space with the finite adeles $\mathbb{A}_K^{\mathrm{fin}}$.
+**Example ($K$ a number field).** The Archimedean factor is $\prod_{v \mid \infty} K_v = \mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ for the signature $(r_1, r_2)$ of $K$, and it is a finite-dimensional real vector space. The adele ring is the product of this vector space with the finite adeles $\mathbb{A}_{\mathrm{fin},K}$.
 
 **Example ($K = \mathbb{F}_p(t)$).** There are no Archimedean places and the adele ring is purely non-Archimedean and totally disconnected. The analogue of the integral adeles is again the infinite product of the local valuation rings.
 
@@ -96,7 +96,7 @@ $$
 D = D_\infty \times \widehat{\mathcal{O}}_K , \qquad D_\infty \subseteq \prod_{v \in V_K^\infty} K_v ,
 $$
 
-with $D_\infty$ a bounded fundamental domain for the action of the image of $\mathcal{O}_K$ on the Archimedean factor $\prod_{v \in V_K^\infty} K_v$ — an image which is a lattice there by the Minkowski embedding — and $\widehat{\mathcal{O}}_K$ the integral adeles at the finite places, is compact and satisfies $K + D = \mathbb{A}_K$. Given an adele $x$, the density of $K$ in the finite adeles supplies $a \in K$ with $x_v - a \in \mathcal{O}_v$ for every $v \in V_K^{\mathrm{fin}}$, so $x - a$ lies in $\mathbb{A}_K^\infty \times \widehat{\mathcal{O}}_K$; subtracting a further element of $\mathcal{O}_K = K \cap \widehat{\mathcal{O}}_K$ leaves the finite part integral and translates the Archimedean part by the lattice image of $\mathcal{O}_K$, so that the Archimedean coordinate may be brought into $D_\infty$.
+with $D_\infty$ a bounded fundamental domain for the action of the image of $\mathcal{O}_K$ on the Archimedean factor $\prod_{v \in V_K^\infty} K_v$ — an image which is a lattice there by the Minkowski embedding — and $\widehat{\mathcal{O}}_K$ the integral adeles at the finite places, is compact and satisfies $K + D = \mathbb{A}_K$. Given an adele $x$, the density of $K$ in the finite adeles supplies $a \in K$ with $x_v - a \in \mathcal{O}_v$ for every $v \in V_{\mathrm{fin},K}$, so $x - a$ lies in $\mathbb{A}_K^\infty \times \widehat{\mathcal{O}}_K$; subtracting a further element of $\mathcal{O}_K = K \cap \widehat{\mathcal{O}}_K$ leaves the finite part integral and translates the Archimedean part by the lattice image of $\mathcal{O}_K$, so that the Archimedean coordinate may be brought into $D_\infty$.
 
 **Remark.** For a function field $K$, the group $K$ is discrete in $\mathbb{A}_K$ but the quotient $\mathbb{A}_K/K$ is not compact; it is the subgroup of **degree zero** adeles $\mathbb{A}_K^0$, the kernel of the degree map on the adeles, that contains $K$ as a discrete co-compact subgroup. The degree of an adele is the sum of the local degrees weighted by the residues; this is the global degree of a divisor, transferred to the adeles.
 
@@ -215,7 +215,7 @@ obtained by choosing a place $v_0$ and sending $x$ to $(x \cdot c(x)^{-1}, \lver
 **Theorem (statement of the idelic reciprocity law).** Let $K$ be a global field. There is a continuous homomorphism
 
 $$
-\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{gal}(K^{\mathrm{ab}}/K)\;},
+\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{gal}(K_{\mathrm{ab}}/K)\;},
 $$
 
 the **global reciprocity map**, whose kernel is the connected component of the identity in the number field case and the closure of the image of the norm subgroups in general, and which induces a bijection between the open subgroups of $C_K$ of finite index and the finite abelian extensions of $K$, sending an extension $L/K$ to the quotient $C_K / N_{L/K}(C_L)$.
@@ -239,7 +239,7 @@ The ring of adeles, its topology, its locally compactness and the discreteness a
 | Symbol | Meaning |
 |---|---|
 | $K$ | A global field |
-| $V_K$, $V_K^\infty$, $V_K^{\mathrm{fin}}$ | Places of $K$, Archimedean and finite places |
+| $V_K$, $V_K^\infty$, $V_{\mathrm{fin},K}$ | Places of $K$, Archimedean and finite places |
 | $K_v$, $\mathcal{O}_v$, $\mathrm{M}_v$, $k_v$ | Completion at $v$, its valuation ring, maximal ideal, residue field |
 | $\mathcal{O}_K$ | The ring of integers of the number field $K$ |
 | $D$, $D_\infty$ | A compact subset with $\mathbb{A}_K = K + D$, and its Archimedean factor |
@@ -248,8 +248,8 @@ The ring of adeles, its topology, its locally compactness and the discreteness a
 | $\prod'_v (G_v, H_v)$ | Restricted product with defining subgroups $H_v$ |
 | $G_S = \prod_{v \in S} G_v \times \prod_{v \notin S} H_v$ | The open locally compact pieces of the direct limit |
 | $\mathbb{A}_K = \prod'_v (K_v, \mathcal{O}_v)$ | Adele ring |
-| $\mathbb{A}_K^{\mathrm{fin}}$ | Finite adeles, over $V_K^{\mathrm{fin}}$ |
-| $\widehat{\mathcal{O}}_K = \prod_{v \in V_K^{\mathrm{fin}}} \mathcal{O}_v$ | Integral adeles, a compact open subring |
+| $\mathbb{A}_{\mathrm{fin},K}$ | Finite adeles, over $V_{\mathrm{fin},K}$ |
+| $\widehat{\mathcal{O}}_K = \prod_{v \in V_{\mathrm{fin},K}} \mathcal{O}_v$ | Integral adeles, a compact open subring |
 | $\mathbb{A}_K^0$ | Degree-zero adeles (function field case) |
 | $\mathbb{I}_K = \prod'_v (K_v^\times, \mathcal{O}_v^\times)$ | Idele group, with the idele topology |
 | $\lvert x \rvert = \prod_v \lvert x_v \rvert_v$ | Idele norm |

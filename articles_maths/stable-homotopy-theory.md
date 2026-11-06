@@ -15,7 +15,7 @@ Throughout, spectra are written $E$, their homotopy groups $\pi_k E$, and the su
 
 ### Definitions
 
-**Definition.** A **prespectrum** is a sequence of pointed topological spaces $E_n$ for $n \geq 0$ together with pointed maps $\sigma_n : \Sigma E_n \to E_{n+1}$, the **structure maps**. A **spectrum** is a prespectrum whose adjoints $\sigma_n^{\mathrm{ad}} : E_n \to \Omega E_{n+1}$ are homeomorphisms. A **CW spectrum** is a spectrum whose spaces are CW complexes and whose structure maps are cellular inclusions; the **homotopy groups** are
+**Definition.** A **prespectrum** is a sequence of pointed topological spaces $E_n$ for $n \geq 0$ together with pointed maps $\sigma_n : \Sigma E_n \to E_{n+1}$, the **structure maps**. A **spectrum** is a prespectrum whose adjoints $\sigma_{\mathrm{ad},n} : E_n \to \Omega E_{n+1}$ are homeomorphisms. A **CW spectrum** is a spectrum whose spaces are CW complexes and whose structure maps are cellular inclusions; the **homotopy groups** are
 
 $$
 \pi_k(E) = \operatorname{colim}_n\ \pi_{k+n}(E_n), \qquad \text{the colimit along } \pi_{k+n}(E_n) \xrightarrow{\ \cong\ } \pi_{k+n}(\Omega E_{n+1}) \to \pi_{k+n+1}(E_{n+1}).
@@ -68,14 +68,14 @@ This is standard mathematics (Toda, *Composition Methods in Homotopy Groups of S
 **Theorem (Brown representability; the homotopy-theoretic form).** Every reduced cohomology theory on pointed CW complexes is representable: there is a spectrum $E$ with
 
 $$
-\boxed{\;E^{k,\mathrm{red}}(X) \cong [\Sigma^\infty X, \Sigma^k E]_{\mathcal{SH}} = \operatorname{colim}_n\bigl[\Sigma^n X, E_{k+n}\bigr]\;}
+\boxed{\;E_{\mathrm{red}}^k(X) \cong [\Sigma^\infty X, \Sigma^k E]_{\mathcal{SH}} = \operatorname{colim}_n\bigl[\Sigma^n X, E_{k+n}\bigr]\;}
 $$
 
 naturally in $X$; and every spectrum defines a reduced cohomology theory by this formula. The corresponding homology theory is $E_k(X) = \pi_k(E\wedge \Sigma^\infty X)$.
 
 *Proof sketch.* The representing objects are the values of the theory on spheres, $E_n = $ a space representing $E^n(S^0)$ in the appropriate sense, and the structure maps come from the suspension isomorphisms; the argument is the classical Brown representability theorem applied to the homotopy functor on CW complexes.
 
-**Example.** The spectrum $\mathbb{S}$ represents stable cohomotopy, $\mathbb{S}^{k}_{\mathrm{red}}(X) \cong \operatorname{colim}_n[\Sigma^nX, S^{k+n}]$; the Eilenberg–MacLane spectrum $H\pi$ represents ordinary cohomology $H^{k,\mathrm{red}}(X;\pi)$; the spectrum $MU$ represents complex cobordism, with $\pi_*MU$ the Lazard ring of formal group laws, and $KO$, $KU$ represent real and complex topological $K$-theory.
+**Example.** The spectrum $\mathbb{S}$ represents stable cohomotopy, $\mathbb{S}^{k}_{\mathrm{red}}(X) \cong \operatorname{colim}_n[\Sigma^nX, S^{k+n}]$; the Eilenberg–MacLane spectrum $H\pi$ represents ordinary cohomology $H_{\mathrm{red}}^k(X;\pi)$; the spectrum $MU$ represents complex cobordism, with $\pi_*MU$ the Lazard ring of formal group laws, and $KO$, $KU$ represent real and complex topological $K$-theory.
 
 **Remark.** The unity of the subject is the consequence of this theorem: homology and cohomology theories *are* spectra, the natural transformations between them are stable maps, and the cohomology operations are elements of $E^*(E)$. Ordinary cohomology is the case $\pi = \mathbb{Z}$, and every generalised theory is obtained from ordinary cohomology by a sequence of extensions, which is the content of the Atiyah–Hirzebruch spectral sequence below.
 

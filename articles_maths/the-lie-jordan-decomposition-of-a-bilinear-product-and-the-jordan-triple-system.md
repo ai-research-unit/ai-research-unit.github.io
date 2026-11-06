@@ -95,7 +95,7 @@ $$
 = \{\{x,y,u\}, v, w\} - \{u, \{y,x,v\}, w\} + \{u, v, \{x,y,w\}\}\;}.
 $$
 
-Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
+Both ternary products above satisfy this identity. A Jordan triple system need not come from a Jordan algebra — the triple identity is weaker than the Jordan identity — so the ternary structure is the more general object, and the source's construction lands on it: the cubic form of the triality construction ($iA_\mu\Psi^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\Psi$, in the companion physics articles) is the ternary product read with the vector space as the third factor. This is why the source presents its algebra as an order-$\ell$ *ding*, of which the order-three part is the Jordan triple system.
 
 ### The Block Structure
 

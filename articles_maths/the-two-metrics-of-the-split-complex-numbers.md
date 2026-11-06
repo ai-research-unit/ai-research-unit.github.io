@@ -8,7 +8,7 @@ The word **metric** is used in the sense of the menu, for the quadratic function
 
 The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, nor the two algebraic norms $\langle Q\rangle=Q^{2}$ and $\langle Q\rangle_{*}=Q\bar Q$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion, the group of units and the modulus $\rho$ are *Norm and Invertibility in the General Split-Complex Algebra*, where the polarisation $g$ of the norm and the Euclidean form $\langle\cdot,\cdot\rangle$ are also defined; the topology is *Split-Complex Topology*. The hyperbolic rotations, the unit hyperbola and the classification of the maps preserving the form are *Hyperbolic Rotations*, below this article in this category. The group preserving the form, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category; the null quadric and its projectivity are *Split-Complex Null Quadric and Projective Geometry*, below this article in this category. The realification rule is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
-**The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{C}^{\mathrm{spl}}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $\langle\cdot,\cdot\rangle=QC$ realifies to the definite Euclidean metric, and the **Hermitian** form $\langle\cdot,\cdot\rangle_{*}=Q\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $\langle\cdot\rangle_{*}$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
+**The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{C}_{\mathrm{spl}}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $\langle\cdot,\cdot\rangle=QC$ realifies to the definite Euclidean metric, and the **Hermitian** form $\langle\cdot,\cdot\rangle_{*}=Q\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $\langle\cdot\rangle_{*}$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 ## The Two Forms and Their Realifications
 
@@ -18,15 +18,15 @@ $$
 \langle Q,C\rangle=QC, \qquad \langle Q,C\rangle_{*}=Q\bar C,
 $$
 
-the first the multiplication of the commutative ring, symmetric, and the second the derived operation of the algebra with its involution $j\mapsto-j$, conjugate-symmetric; both are $\mathbb{C}^{\mathrm{spl}}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}^{\mathrm{spl}}$ (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). Their diagonals are the two algebraic norms,
+the first the multiplication of the commutative ring, symmetric, and the second the derived operation of the algebra with its involution $j\mapsto-j$, conjugate-symmetric; both are $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and both have Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$ (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*). Their diagonals are the two algebraic norms,
 
 $$
 \langle Q,Q\rangle=Q^{2}, \qquad \langle Q,Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}=\langle Q\rangle_{*},
 $$
 
-the first $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, vanishing only at the origin, the second real and indefinite, vanishing on the two null lines.
+the first $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, vanishing only at the origin, the second real and indefinite, vanishing on the two null lines.
 
-Both forms are $\mathbb{C}^{\mathrm{spl}}$-valued, and a real function is obtained from each by **realification**, the scalar part in the real basis $1$, $j$. With $Q=q+jq'$ and $C=c+jc'$,
+Both forms are $\mathbb{C}_{\mathrm{spl}}$-valued, and a real function is obtained from each by **realification**, the scalar part in the real basis $1$, $j$. With $Q=q+jq'$ and $C=c+jc'$,
 
 $$
 \operatorname{Re}\langle Q,C\rangle=qc+q'c', \qquad \operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'.
@@ -64,7 +64,7 @@ It is the diagonal of the realified bilinear form read on the difference $Q-C$, 
 
 The level sets are the circles: $d_{B}(Q,C)=r$ is the Euclidean circle of radius $r$ about $C$. The form is definite, so there is no null cone beyond the point $Q=C$.
 
-**The group of maps preserving the form.** The $\mathbb{R}$-linear maps preserving the realified form are those whose matrix $M$ in the basis $1$, $j$ satisfies $M^{\mathsf T}M=\mathrm{I}_{2}$, that is the group $O(2)$. Its intersection with the $\mathbb{C}^{\mathrm{spl}}$-linear maps $Q\mapsto uQ$ is the four-element group $\{\pm1,\pm j\}$, since such a map preserves $\operatorname{Re}B$ exactly when $u^{2}=1$. That four-element group is also the shell of the plain algebraic norm, $\{Q:Q^{2}=\pm1\}$, and it is read again in *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
+**The group of maps preserving the form.** The $\mathbb{R}$-linear maps preserving the realified form are those whose matrix $M$ in the basis $1$, $j$ satisfies $M^{\mathsf T}M=\mathrm{I}_{2}$, that is the group $O(2)$. Its intersection with the $\mathbb{C}_{\mathrm{spl}}$-linear maps $Q\mapsto uQ$ is the four-element group $\{\pm1,\pm j\}$, since such a map preserves $\operatorname{Re}B$ exactly when $u^{2}=1$. That four-element group is also the shell of the plain algebraic norm, $\{Q:Q^{2}=\pm1\}$, and it is read again in *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
 
 ## The Indefinite Metric
 
@@ -102,7 +102,7 @@ $$
 t\longmapsto\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix},
 $$
 
-which fixes the form and preserves its null pair as a set while moving it. The group has four components, and the $\mathbb{C}^{\mathrm{spl}}$-linear maps among its elements are the multiplications $Q\mapsto uQ$ with $\langle u\rangle_{*}=1$; the classification, the four components and the parametrisation are *Hyperbolic Rotations*, below this article in this category, and the group itself, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
+which fixes the form and preserves its null pair as a set while moving it. The group has four components, and the $\mathbb{C}_{\mathrm{spl}}$-linear maps among its elements are the multiplications $Q\mapsto uQ$ with $\langle u\rangle_{*}=1$; the classification, the four components and the parametrisation are *Hyperbolic Rotations*, below this article in this category, and the group itself, its algebraic name and its cover are *The Versors and the Orthogonal Group of the Split-Complex Numbers*, below this article in this category.
 
 ## The Two Metrics Compared
 
@@ -138,13 +138,13 @@ $$
 
 So multiplication by $j$ is a map preserving the Euclidean metric and reversing the sign of the indefinite one. The split complex structure is thus the operator that distinguishes the two metrics on the one space, exactly as the complex structure does on $\mathbb{C}$.
 
-**Proposition (the two groups meet only in the centre).** The $\mathbb{C}^{\mathrm{spl}}$-linear maps preserving both realified forms are the two multiplications $\pm\mathrm{id}$.
+**Proposition (the two groups meet only in the centre).** The $\mathbb{C}_{\mathrm{spl}}$-linear maps preserving both realified forms are the two multiplications $\pm\mathrm{id}$.
 
-*Proof.* A $\mathbb{C}^{\mathrm{spl}}$-linear map is $Q\mapsto uQ$. It preserves $\operatorname{Re}B$ exactly when $u^{2}=1$, since $\operatorname{Re}\langle uQ,uC\rangle=\operatorname{Re}(u^{2}QC)$ and testing the two arguments $1$ and $j$ gives $p^{2}+q^{2}=1$ and $pq=0$ for $u=p+jq$. It preserves $\operatorname{Re}H$ exactly when $\langle u\rangle_{*}=1$, since $\operatorname{Re}\langle uQ,uC\rangle_{*}=\langle u\rangle_{*}\operatorname{Re}\langle Q,C\rangle_{*}$. Both conditions hold exactly for $u=\pm1$, because $\pm j$ satisfies the first and not the second.
+*Proof.* A $\mathbb{C}_{\mathrm{spl}}$-linear map is $Q\mapsto uQ$. It preserves $\operatorname{Re}B$ exactly when $u^{2}=1$, since $\operatorname{Re}\langle uQ,uC\rangle=\operatorname{Re}(u^{2}QC)$ and testing the two arguments $1$ and $j$ gives $p^{2}+q^{2}=1$ and $pq=0$ for $u=p+jq$. It preserves $\operatorname{Re}H$ exactly when $\langle u\rangle_{*}=1$, since $\operatorname{Re}\langle uQ,uC\rangle_{*}=\langle u\rangle_{*}\operatorname{Re}\langle Q,C\rangle_{*}$. Both conditions hold exactly for $u=\pm1$, because $\pm j$ satisfies the first and not the second.
 
-So the definite group and the indefinite group of $\mathbb{C}^{\mathrm{spl}}$-linear maps share only the central pair: the Euclidean metric keeps the four elements $\{\pm1,\pm j\}$ and the indefinite metric keeps the hyperbola, and the two families meet only in $\{\pm1\}$. On $\mathbb{C}$ the two families are the circle and the pair $\{\pm1\}$; here they are the four-element group $\{\pm1,\pm j\}$ and the hyperbola, and the swap of their shapes is again the split sign.
+So the definite group and the indefinite group of $\mathbb{C}_{\mathrm{spl}}$-linear maps share only the central pair: the Euclidean metric keeps the four elements $\{\pm1,\pm j\}$ and the indefinite metric keeps the hyperbola, and the two families meet only in $\{\pm1\}$. On $\mathbb{C}$ the two families are the circle and the pair $\{\pm1\}$; here they are the four-element group $\{\pm1,\pm j\}$ and the hyperbola, and the swap of their shapes is again the split sign.
 
-**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $\langle\cdot,\cdot\rangle$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{C}^{\mathrm{spl}}$ the plain form realifies to $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
+**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $\langle\cdot,\cdot\rangle$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{C}_{\mathrm{spl}}$ the plain form realifies to $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 **Remark (the realified signatures).** **The split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**: the definite slot is occupied by the bilinear form.
 
@@ -176,10 +176,10 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 
 | Symbol | Meaning |
 |---|---|
-| $Q=q+jq'$, $C=c+jc'$ | two elements of $\mathbb{C}^{\mathrm{spl}}$, with $q,q',c,c'\in\mathbb{R}$ |
+| $Q=q+jq'$, $C=c+jc'$ | two elements of $\mathbb{C}_{\mathrm{spl}}$, with $q,q',c,c'\in\mathbb{R}$ |
 | $\bar Q=q-jq'$ | the conjugation, the involution $j\mapsto-j$ |
-| $\langle Q,C\rangle=QC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{C}^{\mathrm{spl}}$; diagonal $\langle Q\rangle=Q^{2}$, anisotropic |
-| $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}^{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$, indefinite |
+| $\langle Q,C\rangle=QC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle=Q^{2}$, anisotropic |
+| $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$, indefinite |
 | $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ | the realified bilinear form, the Euclidean form $\langle Q,C\rangle$; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
 | $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
 | $d_{B}^{2}(Q,C)=\lVert Q-C\rVert_{E}^{2}$ | Euclidean metric; positive definite; level sets the circles |
@@ -188,7 +188,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}B$; the group $O(2)$ |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}H$ |
 | $J(Q)=jQ$ | the split complex structure, $J^{2}=+\mathrm{id}$; preserves $d_{B}^{2}$, reverses $d_{H}^{2}$ |
-| $\{\pm1,\pm j\}$, $\{\langle Q\rangle_{*}=1\}$ | the $\mathbb{C}^{\mathrm{spl}}$-linear preservers of $d_{B}^{2}$ and of $d_{H}^{2}$ |
+| $\{\pm1,\pm j\}$, $\{\langle Q\rangle_{*}=1\}$ | the $\mathbb{C}_{\mathrm{spl}}$-linear preservers of $d_{B}^{2}$ and of $d_{H}^{2}$ |
 
 ## Further Reading
 

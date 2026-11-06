@@ -4,11 +4,11 @@
 
 This is one of the exercises in the relativity series. It applies the apparatus of two companion articles: *The Lorentz Transformation as a Biquaternionic Rotation*, which defines the boost biquaternion, the rotor conjugation, and the square-root relation between the rotor and the four-velocity; and *Relativistic Mechanics in Biquaternionic Form*, which fixes the four-velocity and the four-momentum in $\mathbb{M}_-$. Those two articles are the parents of this exercise: every result below is obtained from the tools already defined there, and no new formalism is introduced. The sequence is: boost a general four-velocity (Problem 1); compose two collinear boosts and recover rapidity addition and velocity addition (Problem 2); compose two non-collinear boosts and extract the Thomas–Wigner rotation (Problem 3); and examine the parent's square-root relation between the four-velocity and the boost rotor, whose direction the parent does not state (Problem 4). A set of further problems is left to the reader.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the rotor conjugation are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here. The pure boost is written $\tilde U_{\mathrm b}$ and the rotation factor $\tilde u_{\mathrm r}$, with $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. No object of the informational sector arises below, so the trace formula of *Norm and Pairing Conventions* is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
+**What is assumed.** The algebra, the sectors, the conjugations, the biquaternion norm and the rotor conjugation are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Operator and Calculus Conventions*, and none is restated here. The pure boost is written $\tilde U_{\mathrm b}$ and the rotation factor $\tilde u_{\mathrm r}$, with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. No object of the informational sector arises below, so the trace formula of *Norm and Pairing Conventions* is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
 $$
-\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u_x,
+\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x,
 \qquad
-\tanh\theta^{\mathrm{rpd}}_b = \frac{v_b}{c},
+\tanh\theta_{\mathrm{rpd},b} = \frac{v_b}{c},
 $$
 which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\vec u_x, \vec u_y$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
@@ -16,7 +16,7 @@ which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\
 
 ## Problem 1: The Boost of a General Four-Velocity
 
-**Statement.** Let $\tilde{V} = \gamma(ic\,e_t + \vec v)$ be the four-velocity of a particle, and let $\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u_x$, with $\tanh\theta^{\mathrm{rpd}}_b = v_b/c$, be a boost biquaternion. Compute $\tilde{V}_2 = \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ and show that:
+**Statement.** Let $\tilde{V} = \gamma(ic\,e_t + \vec v)$ be the four-velocity of a particle, and let $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$, with $\tanh\theta_{\mathrm{rpd},b} = v_b/c$, be a boost biquaternion. Compute $\tilde{V}_2 = \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ and show that:
 
 **(a)** $\tilde{V}_2$ lies in $\mathbb{M}_-$ and has $\langle\tilde{V}_2\rangle_{\natural} = -c^2$;
 
@@ -26,7 +26,7 @@ which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\
 
 **(d)** in the collinear case $\vec v\parallel\vec v_b$ the induced velocity is $v_2 = (v-v_b)/(1-v_b v/c^2)$, i.e. the rapidities subtract.
 
-**Solution.** Because a pure-boost rotor is Hermitian, $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$, and the transformation is the two-sided product $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}$. Write $a = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}$, $b = \sinh\frac{\theta^{\mathrm{rpd}}_b}{2}$, and $\vec{Ζ} = \vec u_x$, a real unit pure quaternion with $\vec{Ζ}^2 = -e_t$. Split the velocity into parts parallel and perpendicular to $\vec{Ζ}$,
+**Solution.** Because a pure-boost rotor is Hermitian, $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$, and the transformation is the two-sided product $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}$. Write $a = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}$, $b = \sinh\frac{\theta_{\mathrm{rpd},b}}{2}$, and $\vec{Ζ} = \vec u_x$, a real unit pure quaternion with $\vec{Ζ}^2 = -e_t$. Split the velocity into parts parallel and perpendicular to $\vec{Ζ}$,
 $$
 \vec v = \vec v_\parallel + \vec v_\perp, \qquad \vec v_\parallel = v_\parallel \vec{Ζ}, \qquad \vec{Ζ}\,\vec v_\parallel = -v_\parallel, \qquad \vec{Ζ}\,\vec v_\perp = \vec{Ζ}\times\vec v_\perp, \qquad \vec v_\perp \vec{Ζ} = -\vec{Ζ}\times\vec v_\perp .
 $$
@@ -42,7 +42,7 @@ $$
 + \gamma\left[\vec v + (\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b\right]\;}
 \tag{1}
 $$
-The identity $\sinh\theta^{\mathrm{rpd}}_b = \gamma_b v_b/c$ and the expansion of the parallel component have been used. The result is the biquaternion form of the standard Lorentz transformation of a four-velocity from the lab to the frame moving with velocity $\vec v_b$.
+The identity $\sinh\theta_{\mathrm{rpd},b} = \gamma_b v_b/c$ and the expansion of the parallel component have been used. The result is the biquaternion form of the standard Lorentz transformation of a four-velocity from the lab to the frame moving with velocity $\vec v_b$.
 
 **(a)** In (1) the scalar coefficient is purely imaginary and the vector coefficient is real, so $\tilde{V}_2\in\mathbb{M}_-$. Its biquaternion norm is preserved because $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\vec v_b}\rangle_{\natural} = 1$:
 $$
@@ -64,7 +64,7 @@ which is the standard transformation. The second equality uses $\vec v_\parallel
 $$
 v_2 = \frac{v-v_b}{1-v_b v/c^2},
 $$
-so that in rapidities $v_2 = c\tanh(\theta^{\mathrm{rpd}}_v - \theta^{\mathrm{rpd}}_b)$: **a boost subtracts its rapidity from the rapidity of the four-velocity it acts on.** This is the statement that the transformation (1) is the lab-to-moving-frame map, and it fixes the direction convention used throughout: the rotor $\tilde U_{\vec v_b}$ carries the lab to the frame moving with $+\vec v_b$, so the particle's speed is reduced by $v_b$.
+so that in rapidities $v_2 = c\tanh(\theta_{\mathrm{rpd},v} - \theta_{\mathrm{rpd},b})$: **a boost subtracts its rapidity from the rapidity of the four-velocity it acts on.** This is the statement that the transformation (1) is the lab-to-moving-frame map, and it fixes the direction convention used throughout: the rotor $\tilde U_{\vec v_b}$ carries the lab to the frame moving with $+\vec v_b$, so the particle's speed is reduced by $v_b$.
 
 **Numerical instance.** Take $\vec v = 0.6c\,\vec e_x$ and $\vec v_b = 0.5c\,\vec e_y$, orthogonal. Then $\gamma = 1.25$, $\gamma_b = 1.1547005$, $\vec v_b\cdot\vec v = 0$, and from (1)
 $$
@@ -75,15 +75,15 @@ The norm is preserved: $\langle\tilde{V}_2\rangle_{\natural} = -1$ in units $c=1
 
 ## Problem 2: Collinear Boosts and Rapidity Addition
 
-**Statement.** Let $\tilde U_{\mathrm b,1} = \cosh\frac{\theta^{\mathrm{rpd}}_1}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\vec u_y$ and $\tilde U_{\mathrm b,2} = \cosh\frac{\theta^{\mathrm{rpd}}_2}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\vec u_y$ be two boost rotors along the same direction $\vec u_y$.
+**Statement.** Let $\tilde U_{\mathrm b,1} = \cosh\frac{\theta_{\mathrm{rpd},1}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\vec u_y$ and $\tilde U_{\mathrm b,2} = \cosh\frac{\theta_{\mathrm{rpd},2}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\vec u_y$ be two boost rotors along the same direction $\vec u_y$.
 
-**(a)** Show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is itself a pure boost along $\vec u_y$, of rapidity $\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2$.
+**(a)** Show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is itself a pure boost along $\vec u_y$, of rapidity $\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$.
 
 **(b)** Deduce the velocity-addition formula $w = \dfrac{v_{b_1}+v_{b_2}}{1+v_{b_1}v_{b_2}/c^2}$.
 
 **(c)** Reconcile the addition here with the subtraction found in Problem 1.
 
-**Solution. (a)** Put $\vec{Ζ} = \vec u_y$, $c_i = \cosh\frac{\theta^{\mathrm{rpd}}_i}{2}$, $s_i = \sinh\frac{\theta^{\mathrm{rpd}}_i}{2}$. Since $\vec{Ζ}^2 = -e_t$, the product of the two scalar-imaginary vector parts is
+**Solution. (a)** Put $\vec{Ζ} = \vec u_y$, $c_i = \cosh\frac{\theta_{\mathrm{rpd},i}}{2}$, $s_i = \sinh\frac{\theta_{\mathrm{rpd},i}}{2}$. Since $\vec{Ζ}^2 = -e_t$, the product of the two scalar-imaginary vector parts is
 $$
 (i\vec{Ζ})(i\vec{Ζ}) = i^2\vec{Ζ}^2 = (-1)(-1) = +e_t,
 $$
@@ -91,45 +91,45 @@ so the two boosts in the same direction multiply hyperbolically:
 $$
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
 = \left(c_1c_2 + s_1s_2\right) + i\left(c_1s_2 + s_1c_2\right)\vec{Ζ}
-= \cosh\frac{\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2}{2}\vec u_y
-= \tilde U_{\mathrm b}(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2).
+= \cosh\frac{\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}}{2} + i\sinh\frac{\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}}{2}\vec u_y
+= \tilde U_{\mathrm b}(\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}).
 \tag{3}
 $$
 The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\vec u_y$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
 
-**(b)** The product rotor has rapidity $\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2$, and the velocity it represents is $w = c\tanh(\theta^{\mathrm{rpd}}_1+\theta^{\mathrm{rpd}}_2)$. Using $\tanh\theta^{\mathrm{rpd}}_i = v_{b_i}/c$,
+**(b)** The product rotor has rapidity $\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2}$, and the velocity it represents is $w = c\tanh(\theta_{\mathrm{rpd},1}+\theta_{\mathrm{rpd},2})$. Using $\tanh\theta_{\mathrm{rpd},i} = v_{b_i}/c$,
 $$
-\boxed{\;w = c\,\frac{\tanh\theta^{\mathrm{rpd}}_1 + \tanh\theta^{\mathrm{rpd}}_2}{1 + \tanh\theta^{\mathrm{rpd}}_1\tanh\theta^{\mathrm{rpd}}_2}
+\boxed{\;w = c\,\frac{\tanh\theta_{\mathrm{rpd},1} + \tanh\theta_{\mathrm{rpd},2}}{1 + \tanh\theta_{\mathrm{rpd},1}\tanh\theta_{\mathrm{rpd},2}}
 = \frac{v_{b_1}+v_{b_2}}{1 + v_{b_1}v_{b_2}/c^2}\;}
 \tag{4}
 $$
 For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is $\tanh(\operatorname{atanh}0.5 + \operatorname{atanh}0.6)$ to machine precision.
 
-**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v_2 = c\tanh(\theta^{\mathrm{rpd}}_v-\theta^{\mathrm{rpd}}_b)$.
+**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v_2 = c\tanh(\theta_{\mathrm{rpd},v}-\theta_{\mathrm{rpd},b})$.
 
 ## Problem 3: Non-Collinear Boosts and the Thomas–Wigner Rotation
 
-**Statement.** Let $\tilde U_{\mathrm b,1}$ have rapidity $\theta^{\mathrm{rpd}}_1$ along $\vec u_y$ and $\tilde U_{\mathrm b,2}$ rapidity $\theta^{\mathrm{rpd}}_2$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\theta^{\mathrm{btw}}$ and $0<\theta^{\mathrm{btw}}<\pi$.
+**Statement.** Let $\tilde U_{\mathrm b,1}$ have rapidity $\theta_{\mathrm{rpd},1}$ along $\vec u_y$ and $\tilde U_{\mathrm b,2}$ rapidity $\theta_{\mathrm{rpd},2}$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\theta_{\mathrm{btw}}$ and $0<\theta_{\mathrm{btw}}<\pi$.
 
-**(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\theta^{\mathrm{btw}}\in\{0,\pi\}$; for $0<\theta^{\mathrm{btw}}<\pi$ it is not a pure boost.
+**(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\theta_{\mathrm{btw}}\in\{0,\pi\}$; for $0<\theta_{\mathrm{btw}}<\pi$ it is not a pure boost.
 
-**(b)** Show that $P$ admits the decomposition $P = \tilde R_\psi\tilde u_{\mathrm r}$ with $\tilde R_\psi$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\theta^{\mathrm{rpd}}$, the Wigner angle $\theta_W$, and the rotation axis.
+**(b)** Show that $P$ admits the decomposition $P = \tilde R_\psi\tilde u_{\mathrm r}$ with $\tilde R_\psi$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\theta_{\mathrm{rpd}}$, the Wigner angle $\theta_W$, and the rotation axis.
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
-**Solution. (a)** With $c_i = \cosh\frac{\theta^{\mathrm{rpd}}_i}{2}$, $s_i = \sinh\frac{\theta^{\mathrm{rpd}}_i}{2}$, $\vec{Ζ}_i = \vec {u_y}_i$, and the quaternion product identity $\vec{Ζ}_2\vec{Ζ}_1 = -\vec{Ζ}_2\cdot \vec{Ζ}_1 + \vec{Ζ}_2\times \vec{Ζ}_1$ for unit pure quaternions,
+**Solution. (a)** With $c_i = \cosh\frac{\theta_{\mathrm{rpd},i}}{2}$, $s_i = \sinh\frac{\theta_{\mathrm{rpd},i}}{2}$, $\vec{Ζ}_i = \vec {u_y}_i$, and the quaternion product identity $\vec{Ζ}_2\vec{Ζ}_1 = -\vec{Ζ}_2\cdot \vec{Ζ}_1 + \vec{Ζ}_2\times \vec{Ζ}_1$ for unit pure quaternions,
 $$
-(i\vec{Ζ}_2)(i\vec{Ζ}_1) = -\vec{Ζ}_2\vec{Ζ}_1 = \cos\theta^{\mathrm{btw}} + \vec{Ζ}_1\times \vec{Ζ}_2 .
+(i\vec{Ζ}_2)(i\vec{Ζ}_1) = -\vec{Ζ}_2\vec{Ζ}_1 = \cos\theta_{\mathrm{btw}} + \vec{Ζ}_1\times \vec{Ζ}_2 .
 $$
 Hence
 $$
 P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
-= \underbrace{\left(c_1c_2 + s_1s_2\cos\theta^{\mathrm{btw}}\right)}_{a}
+= \underbrace{\left(c_1c_2 + s_1s_2\cos\theta_{\mathrm{btw}}\right)}_{a}
 + \underbrace{s_1s_2\,\vec u_y\times\vec u_z}_{\vec q}
 + i\underbrace{\left(c_2s_1\vec u_y + c_1s_2\vec u_z\right)}_{\vec w},
 \tag{5}
 $$
-where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\theta^{\mathrm{btw}}$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\theta^{\mathrm{btw}} = 0$. For nonzero rapidities this means $\sin\theta^{\mathrm{btw}} = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
+where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\theta_{\mathrm{btw}}$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec v_{b_2}\times\vec v_{b_3}$ is orthogonal to both $\vec u_y$ and $\vec u_z$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\theta_{\mathrm{btw}} = 0$. For nonzero rapidities this means $\sin\theta_{\mathrm{btw}} = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
 
 **(b)** Write $P = a + \vec q + i\vec w$. Its biquaternion norm is, using $\vec q\cdot\vec w=0$,
 $$
@@ -148,46 +148,46 @@ P P^\dagger = \left(a^2 + |\vec q|^2 + |\vec w|^2\right) + 2i\left(a\vec w + \ve
 $$
 The element $PP^\dagger$ is Hermitian and positive (it is $\tilde{R}_\psi^2$ for the required boost), so it has a unique positive Hermitian square root
 $$
-\tilde R_\psi = \sqrt{PP^\dagger} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_4,
+\tilde R_\psi = \sqrt{PP^\dagger} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
 \qquad
-\cosh\theta^{\mathrm{rpd}} = \Sigma, \quad \sinh\theta^{\mathrm{rpd}}\,\vec u_4 = \vec T.
+\cosh\theta_{\mathrm{rpd}} = \Sigma, \quad \sinh\theta_{\mathrm{rpd}}\,\vec u_4 = \vec T.
 $$
 Expanding $\Sigma = a^2 + |\vec q|^2 + |\vec w|^2$ with the definitions (5) and simplifying gives the standard total rapidity
 $$
-\cosh\theta^{\mathrm{rpd}} = \cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2 + \sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2\cos\theta^{\mathrm{btw}} .
+\cosh\theta_{\mathrm{rpd}} = \cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2} + \sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2}\cos\theta_{\mathrm{btw}} .
 \tag{8}
 $$
 The residual element
 $$
 \tilde u_{\mathrm r} = \tilde R_\psi^{-1}P = \tilde R_\psi^{\natural}P
-= \left(\cosh\frac{\theta^{\mathrm{rpd}}}{2} - i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
+= \left(\cosh\frac{\theta_{\mathrm{rpd}}}{2} - i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
 $$
 is the $*$-unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde R_\psi\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
 $$
-\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\theta^{\mathrm{rpd}}}{2} - \sinh\frac{\theta^{\mathrm{rpd}}}{2}\left(\vec u_4\cdot\vec w\right),
+\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\theta_{\mathrm{rpd}}}{2} - \sinh\frac{\theta_{\mathrm{rpd}}}{2}\left(\vec u_4\cdot\vec w\right),
 $$
-where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\vec u_4\perp\vec q$. Now $\vec u_4\cdot\vec w = \vec T\cdot\vec w/\sinh\theta^{\mathrm{rpd}} = 2a|\vec w|^2/\sinh\theta^{\mathrm{rpd}}$, so
+where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\vec u_4\perp\vec q$. Now $\vec u_4\cdot\vec w = \vec T\cdot\vec w/\sinh\theta_{\mathrm{rpd}} = 2a|\vec w|^2/\sinh\theta_{\mathrm{rpd}}$, so
 $$
-\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\theta^{\mathrm{rpd}}}{2} - \frac{a|\vec w|^2}{\cosh\frac{\theta^{\mathrm{rpd}}}{2}}
-= \frac{a\left(\cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - |\vec w|^2\right)}{\cosh\frac{\theta^{\mathrm{rpd}}}{2}} .
+\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\theta_{\mathrm{rpd}}}{2} - \frac{a|\vec w|^2}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}
+= \frac{a\left(\cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - |\vec w|^2\right)}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}} .
 $$
-From (6) and $\Sigma$ one has $\cosh^2\frac{\theta^{\mathrm{rpd}}}{2} = \frac{1+\Sigma}{2} = a^2 + |\vec q|^2 = 1 + |\vec w|^2$, so $\cosh^2\frac{\theta^{\mathrm{rpd}}}{2} - |\vec w|^2 = 1$ and
+From (6) and $\Sigma$ one has $\cosh^2\frac{\theta_{\mathrm{rpd}}}{2} = \frac{1+\Sigma}{2} = a^2 + |\vec q|^2 = 1 + |\vec w|^2$, so $\cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - |\vec w|^2 = 1$ and
 $$
-\mathrm{Sc}(\tilde u_{\mathrm r}) = \frac{a}{\cosh\frac{\theta^{\mathrm{rpd}}}{2}}.
+\mathrm{Sc}(\tilde u_{\mathrm r}) = \frac{a}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}.
 $$
 Because $\tilde u_{\mathrm r}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
 $$
-\cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\theta^{\mathrm{rpd}}}{2}}
-= \frac{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2} + \sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta^{\mathrm{btw}}}{\cosh\frac{\theta^{\mathrm{rpd}}}{2}},
+\cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}
+= \frac{\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2} + \sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\cos\theta_{\mathrm{btw}}}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}},
 \tag{9}
 $$
-and, since $|\vec q|^2 = \sinh^2\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh^2\frac{\theta^{\mathrm{rpd}}_2}{2}\sin^2\theta^{\mathrm{btw}}$ and $\sin\frac{\theta_W}{2} = |\vec q|/\cosh\frac{\theta^{\mathrm{rpd}}}{2}$,
+and, since $|\vec q|^2 = \sinh^2\frac{\theta_{\mathrm{rpd},1}}{2}\sinh^2\frac{\theta_{\mathrm{rpd},2}}{2}\sin^2\theta_{\mathrm{btw}}$ and $\sin\frac{\theta_W}{2} = |\vec q|/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$,
 $$
 \boxed{\;\tan\frac{\theta_W}{2} = \frac{|\vec q|}{a}
-= \frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta^{\mathrm{btw}}}{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2} + \sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta^{\mathrm{btw}}}\;}
+= \frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta_{\mathrm{btw}}}{\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2} + \sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\cos\theta_{\mathrm{btw}}}\;}
 \tag{10}
 $$
-The numerator is non-negative for $0<\theta^{\mathrm{btw}}<\pi$ and the denominator $a$ is positive for every $\theta^{\mathrm{btw}}$, since $a\ge\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2} - \sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2} = \cosh\frac{\theta^{\mathrm{rpd}}_1-\theta^{\mathrm{rpd}}_2}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
+The numerator is non-negative for $0<\theta_{\mathrm{btw}}<\pi$ and the denominator $a$ is positive for every $\theta_{\mathrm{btw}}$, since $a\ge\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2} - \sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2} = \cosh\frac{\theta_{\mathrm{rpd},1}-\theta_{\mathrm{rpd},2}}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
 $$
 \vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}},
 \tag{11}
@@ -196,25 +196,25 @@ which we verified numerically in several non-coplanar configurations; it is the 
 $$
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde R_\psi\tilde u_{\mathrm r},
 \qquad
-\tilde R_\psi = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_4,
+\tilde R_\psi = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_4,
 \qquad
 \tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
 \tag{12}
 $$
-The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde{R}_{\psi,2}$ with $\tilde{R}_{\psi,2} = \tilde u_{\mathrm r}^{-1}\tilde R_\psi\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\theta^{\mathrm{rpd}}$ but a different axis; only $\theta^{\mathrm{rpd}}$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
+The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde{R}_{\psi,2}$ with $\tilde{R}_{\psi,2} = \tilde u_{\mathrm r}^{-1}\tilde R_\psi\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\theta_{\mathrm{rpd}}$ but a different axis; only $\theta_{\mathrm{rpd}}$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
-**(c)** For equal orthogonal rapidities, $\theta^{\mathrm{rpd}}_1 = \theta^{\mathrm{rpd}}_2 = \theta^{\mathrm{rpd}}$ and $\theta^{\mathrm{btw}} = \pi/2$, so $\cosh\theta^{\mathrm{rpd}} = \cosh^2\theta^{\mathrm{rpd}}$ and $a = \cosh^2\frac{\theta^{\mathrm{rpd}}}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\theta^{\mathrm{rpd}}}{2}\big/\cosh\frac{\theta^{\mathrm{rpd}}}{2}$, and (10) collapses to
+**(c)** For equal orthogonal rapidities, $\theta_{\mathrm{rpd},1} = \theta_{\mathrm{rpd},2} = \theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{btw}} = \pi/2$, so $\cosh\theta_{\mathrm{rpd}} = \cosh^2\theta_{\mathrm{rpd}}$ and $a = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2}\big/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, and (10) collapses to
 $$
-\tan\frac{\theta_W}{2} = \frac{\sinh^2\frac{\theta^{\mathrm{rpd}}}{2}}{\cosh^2\frac{\theta^{\mathrm{rpd}}}{2}} = \tanh^2\frac{\theta^{\mathrm{rpd}}}{2}.
+\tan\frac{\theta_W}{2} = \frac{\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}}{\cosh^2\frac{\theta_{\mathrm{rpd}}}{2}} = \tanh^2\frac{\theta_{\mathrm{rpd}}}{2}.
 \tag{13}
 $$
-This is exact; it was checked numerically for $\theta^{\mathrm{rpd}} = 0.5, 1, 1.5, 2, 3$ to $10^{-12}$.
+This is exact; it was checked numerically for $\theta_{\mathrm{rpd}} = 0.5, 1, 1.5, 2, 3$ to $10^{-12}$.
 
-**Numerical instance.** Take $\theta^{\mathrm{rpd}}_1 = \theta^{\mathrm{rpd}}_2 = \operatorname{atanh}0.6 = 0.6931472$ along $\vec u_y = \vec u_{e,1}$ and $\vec u_z = \vec u_{e,2}$, so that each boost has speed $0.6c$. Then (5) gives, in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
+**Numerical instance.** Take $\theta_{\mathrm{rpd},1} = \theta_{\mathrm{rpd},2} = \operatorname{atanh}0.6 = 0.6931472$ along $\vec u_y = \vec u_{e,1}$ and $\vec u_z = \vec u_{e,2}$, so that each boost has speed $0.6c$. Then (5) gives, in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
 $$
 P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = 1.125 + 0.375\,i\,\vec e_x + 0.375\,i\,\vec e_y + 0.125\,\vec e_z,
 $$
-which is not Hermitian: the real $\vec e_z$ term $s_1s_2 = 0.125$ is the antisymmetric part. From (8), $\theta^{\mathrm{rpd}} = 1.0163481$ and the composed frame has speed $c\tanh\theta^{\mathrm{rpd}} = 0.7683749c$; the velocity-addition formula (2) applied twice gives the same speed. The Wigner angle (9)–(10) is $\theta_W = 12.68038^{\circ} = 0.2213144$ rad, with
+which is not Hermitian: the real $\vec e_z$ term $s_1s_2 = 0.125$ is the antisymmetric part. From (8), $\theta_{\mathrm{rpd}} = 1.0163481$ and the composed frame has speed $c\tanh\theta_{\mathrm{rpd}} = 0.7683749c$; the velocity-addition formula (2) applied twice gives the same speed. The Wigner angle (9)–(10) is $\theta_W = 12.68038^{\circ} = 0.2213144$ rad, with
 $$
 \tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
 $$
@@ -242,32 +242,32 @@ $$
 -\frac{i}{c}\tilde{V}^{\natural} = -\frac{i}{c}\gamma\left(ic\,e_t - \vec v\right)
 = \gamma\,e_t + i\gamma\frac{\vec v}{c}.
 $$
-Writing $\gamma = \cosh\theta^{\mathrm{rpd}}$, $\gamma v/c = \sinh\theta^{\mathrm{rpd}}$, this is
+Writing $\gamma = \cosh\theta_{\mathrm{rpd}}$, $\gamma v/c = \sinh\theta_{\mathrm{rpd}}$, this is
 $$
--\frac{i}{c}\tilde{V}^{\natural} = \cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u_6
-= \exp\!\left(\theta^{\mathrm{rpd}}\,i\vec u_6\right),
+-\frac{i}{c}\tilde{V}^{\natural} = \cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u_6
+= \exp\!\left(\theta_{\mathrm{rpd}}\,i\vec u_6\right),
 $$
 where the exponential is hyperbolic because $(i\vec u_6)^2 = i^2\vec u_6^2 = (-1)(-1) = +e_t$. Its positive Hermitian square root is
 $$
-\tilde U_{\mathrm b} = \cosh\frac{\theta^{\mathrm{rpd}}}{2} + i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_6,
+\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_6,
 $$
-which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\vec u_x = \vec u_6$ and rapidity $\theta^{\mathrm{rpd}} = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $\exp(\pm\theta^{\mathrm{rpd}})>0$ in the matrix representation, so its two square roots are $\pm\tilde U_{\mathrm b}$; the choice $\mathrm{Sc}>0$ selects $+\tilde U_{\mathrm b}$. Note that the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$, the boost of rapidity $-\theta^{\mathrm{rpd}}$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\theta^{\mathrm{rpd}} - i\sinh\theta^{\mathrm{rpd}}\vec u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
+which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\vec u_x = \vec u_6$ and rapidity $\theta_{\mathrm{rpd}} = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $\exp(\pm\theta_{\mathrm{rpd}})>0$ in the matrix representation, so its two square roots are $\pm\tilde U_{\mathrm b}$; the choice $\mathrm{Sc}>0$ selects $+\tilde U_{\mathrm b}$. Note that the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$, the boost of rapidity $-\theta_{\mathrm{rpd}}$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\theta_{\mathrm{rpd}} - i\sinh\theta_{\mathrm{rpd}}\vec u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
 
-**(b)** Since $\tilde U_{\mathrm b}$ is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec v_b = \vec v$ and $\theta^{\mathrm{rpd}}_b = \theta^{\mathrm{rpd}}_v$; by part (d) there, the rapidities subtract, $\theta^{\mathrm{rpd}}_v-\theta^{\mathrm{rpd}}_v = 0$, giving
+**(b)** Since $\tilde U_{\mathrm b}$ is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec v_b = \vec v$ and $\theta_{\mathrm{rpd},b} = \theta_{\mathrm{rpd},v}$; by part (d) there, the rapidities subtract, $\theta_{\mathrm{rpd},v}-\theta_{\mathrm{rpd},v} = 0$, giving
 $$
 \boxed{\;\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t\;}
 $$
-Equivalently, directly: $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\gamma\tilde U_{\mathrm b}^2 + \gamma v\,\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b}$, and since $\tilde U_{\mathrm b}$ commutes with $\vec u_6$, $\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b} = \vec u_6\tilde U_{\mathrm b}^2 = \cosh\theta^{\mathrm{rpd}}\,\vec u_6 - i\sinh\theta^{\mathrm{rpd}}$. Hence the vector part is $\gamma v\cosh\theta^{\mathrm{rpd}} - c\gamma\sinh\theta^{\mathrm{rpd}} = c\gamma\sinh\theta^{\mathrm{rpd}} - c\gamma\sinh\theta^{\mathrm{rpd}} = 0$ and the scalar part is $ic\gamma(\cosh\theta^{\mathrm{rpd}} - \tanh\theta^{\mathrm{rpd}}\sinh\theta^{\mathrm{rpd}}) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
+Equivalently, directly: $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\gamma\tilde U_{\mathrm b}^2 + \gamma v\,\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b}$, and since $\tilde U_{\mathrm b}$ commutes with $\vec u_6$, $\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b} = \vec u_6\tilde U_{\mathrm b}^2 = \cosh\theta_{\mathrm{rpd}}\,\vec u_6 - i\sinh\theta_{\mathrm{rpd}}$. Hence the vector part is $\gamma v\cosh\theta_{\mathrm{rpd}} - c\gamma\sinh\theta_{\mathrm{rpd}} = c\gamma\sinh\theta_{\mathrm{rpd}} - c\gamma\sinh\theta_{\mathrm{rpd}} = 0$ and the scalar part is $ic\gamma(\cosh\theta_{\mathrm{rpd}} - \tanh\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
 
 **(c)** Conjugating the rest four-velocity by $\tilde U_{\mathrm b}$ instead gives
 $$
 \tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*} = ic\,\tilde U_{\mathrm b}^2
-= ic\left(\cosh\theta^{\mathrm{rpd}} + i\sinh\theta^{\mathrm{rpd}}\,\vec u_6\right)
-= ic\cosh\theta^{\mathrm{rpd}}\,e_t - c\sinh\theta^{\mathrm{rpd}}\,\vec u_6,
+= ic\left(\cosh\theta_{\mathrm{rpd}} + i\sinh\theta_{\mathrm{rpd}}\,\vec u_6\right)
+= ic\cosh\theta_{\mathrm{rpd}}\,e_t - c\sinh\theta_{\mathrm{rpd}}\,\vec u_6,
 $$
-whose induced velocity is $-c\tanh\theta^{\mathrm{rpd}}\,\vec u_6 = -\vec v$. Thus the rotor built from $\tilde{V}$ carries the lab to the rest frame and, applied in the opposite direction, produces the *negative* of the particle's velocity. The rotor that carries the rest frame to $\tilde{V}$ is the inverse, i.e. the quaternion conjugate:
+whose induced velocity is $-c\tanh\theta_{\mathrm{rpd}}\,\vec u_6 = -\vec v$. Thus the rotor built from $\tilde{V}$ carries the lab to the rest frame and, applied in the opposite direction, produces the *negative* of the particle's velocity. The rotor that carries the rest frame to $\tilde{V}$ is the inverse, i.e. the quaternion conjugate:
 $$
-\tilde U_{\mathrm b}^{\natural}\,(ic\,e_t)\,\overline{\tilde U_{\mathrm b}} = ic\,(\tilde U_{\mathrm b}^{\natural})^2 = ic\cosh\theta^{\mathrm{rpd}}\,e_t + c\sinh\theta^{\mathrm{rpd}}\,\vec u_6,
+\tilde U_{\mathrm b}^{\natural}\,(ic\,e_t)\,\overline{\tilde U_{\mathrm b}} = ic\,(\tilde U_{\mathrm b}^{\natural})^2 = ic\cosh\theta_{\mathrm{rpd}}\,e_t + c\sinh\theta_{\mathrm{rpd}}\,\vec u_6,
 \qquad \text{velocity} = +\vec v.
 $$
 The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ (as the parent does) or $\tilde{V}$ in (14): the conjugate in the formula is what makes (14) the lab-to-rest rotor. The parent writes the formula but does not state the direction; a reader who reads "the boost biquaternion associated with $\tilde{V}$" as the rotor that *produces* $\tilde{V}$ will use $\tilde U_{\mathrm b}$ where $\tilde U_{\mathrm b}^{\natural}$ is required and obtain $-\vec v$ instead of $+\vec v$. This is a genuine gap in the parent's statement, although the formula itself is correct and its displayed verification (the four-potential transformation with $\vec v_b$ the boost velocity) is in the consistent direction.
@@ -288,7 +288,7 @@ $$
 \beta(\tau) = \frac{\tanh\xi + \tau\frac{d\xi}{d\tau}}{1 + \tau\frac{d\xi}{d\tau}\tanh\xi}.
 $$
 
-**(b)** Show that while $|\tau\frac{d\xi}{d\tau}| < 1$ this is a rapidity addition, $\beta = \tanh(\xi+\theta^{\mathrm{rpd}})$ with $\tanh\theta^{\mathrm{rpd}} = \tau\frac{d\xi}{d\tau}$, and that for $|\tau\frac{d\xi}{d\tau}| > 1$ no real $\theta^{\mathrm{rpd}}$ exists, so $|\beta|$ need not stay below $1$.
+**(b)** Show that while $|\tau\frac{d\xi}{d\tau}| < 1$ this is a rapidity addition, $\beta = \tanh(\xi+\theta_{\mathrm{rpd}})$ with $\tanh\theta_{\mathrm{rpd}} = \tau\frac{d\xi}{d\tau}$, and that for $|\tau\frac{d\xi}{d\tau}| > 1$ no real $\theta_{\mathrm{rpd}}$ exists, so $|\beta|$ need not stay below $1$.
 
 **(c)** Show the interval identity
 $$
@@ -310,7 +310,7 @@ Both carry the same factor $\tau\frac{d\xi}{d\tau}$ that a fixed rapidity would 
 $$
 \beta(\tau) = \frac{\tanh\xi + \tau\frac{d\xi}{d\tau}}{1 + \tau\frac{d\xi}{d\tau}\tanh\xi},
 $$
-which is the same rational form as the addition law of Problem 2(b), with $\tau\frac{d\xi}{d\tau}$ in the place of $\tanh\theta^{\mathrm{rpd}}_2$. Whenever $|\tau\frac{d\xi}{d\tau}| < 1$ it is exactly $\tanh(\xi + \operatorname{atanh}(\tau\frac{d\xi}{d\tau}))$, so the acceleration acts as an added rapidity and the bound $\beta < 1$ holds. For $|\tau\frac{d\xi}{d\tau}| > 1$ no real rapidity has that tangent, and the bound is no longer forced: $\beta$ can pass through $1$.
+which is the same rational form as the addition law of Problem 2(b), with $\tau\frac{d\xi}{d\tau}$ in the place of $\tanh\theta_{\mathrm{rpd},2}$. Whenever $|\tau\frac{d\xi}{d\tau}| < 1$ it is exactly $\tanh(\xi + \operatorname{atanh}(\tau\frac{d\xi}{d\tau}))$, so the acceleration acts as an added rapidity and the bound $\beta < 1$ holds. For $|\tau\frac{d\xi}{d\tau}| > 1$ no real rapidity has that tangent, and the bound is no longer forced: $\beta$ can pass through $1$.
 
 **(c)** With $A = \cosh\xi$, $B = \sinh\xi$, $p = \tau\frac{d\xi}{d\tau}$, the two derivatives are $c(B + pA)$ and $A + pB$, so
 $$
@@ -332,7 +332,7 @@ The following are left to the reader; they extend the same tools and use the sam
 
 1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{V}$ and Problem 1, show that $\tilde U_{\vec v_b}\tilde{P}\tilde U_{\vec v_b}^{*} = iE_2/c\,e_t + \vec p_2$ with $E_2 = \gamma_b(E-\vec v_b\cdot\vec p)$ and $\vec p_2 = \vec p + (\gamma_b-1)\frac{\vec v_b\cdot\vec p}{v_b^2}\vec v_b - \gamma_b\frac{E}{c^2}\vec v_b$. Verify the mass shell $\tilde P_2{\tilde P_2^{\natural}} = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
-2. **Antiparallel boosts.** For $\vec u_z = -\vec u_y$, show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is a pure boost of rapidity $|\theta^{\mathrm{rpd}}_1-\theta^{\mathrm{rpd}}_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |v_{b_1}-v_{b_2}|/(1-v_{b_1}v_{b_2}/c^2)$ and compare with Problem 1(d).
+2. **Antiparallel boosts.** For $\vec u_z = -\vec u_y$, show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is a pure boost of rapidity $|\theta_{\mathrm{rpd},1}-\theta_{\mathrm{rpd},2}|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |v_{b_1}-v_{b_2}|/(1-v_{b_1}v_{b_2}/c^2)$ and compare with Problem 1(d).
 
 3. **The two orderings.** Show that $\tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2}$ and $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ are related by conjugation with a unit quaternion, and determine the relative rotation. For equal projected rapidities show that the relative rotation is by $2\theta_W$ about $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$.
 
@@ -346,13 +346,13 @@ The following are left to the reader; they extend the same tools and use the sam
 
 We have applied the boost biquaternion and the rotor conjugation to four-velocities and to the composition of boosts.
 
-1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v_2 = (v-v_b)/(1-v_b v/c^2)$.
+1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v_2 = (v-v_b)/(1-v_b v/c^2)$.
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (v_{b_1}+v_{b_2})/(1+v_{b_1}v_{b_2}/c^2)$.
 
-3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\sin\theta^{\mathrm{btw}}}{\cosh\frac{\theta^{\mathrm{rpd}}_1}{2}\cosh\frac{\theta^{\mathrm{rpd}}_2}{2}+\sinh\frac{\theta^{\mathrm{rpd}}_1}{2}\sinh\frac{\theta^{\mathrm{rpd}}_2}{2}\cos\theta^{\mathrm{btw}}}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\theta^{\mathrm{rpd}}}{2}$ exactly. The numerical instance $\theta^{\mathrm{rpd}}_1=\theta^{\mathrm{rpd}}_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
+3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta_{\mathrm{btw}}}{\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2}+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\cos\theta_{\mathrm{btw}}}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\theta_{\mathrm{rpd}}}{2}$ exactly. The numerical instance $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
 
-4. **The parent's square-root relation.** $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\theta^{\mathrm{rpd}}}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t$ and $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde U_{\mathrm b}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
+4. **The parent's square-root relation.** $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t$ and $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde U_{\mathrm b}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
 
 5. **A varying rapidity.** When the boost parameter is a function $\xi(\tau)$ of a scalar trajectory parameter, the coordinate velocity (Problem 5) is $\beta = (\tanh\xi + \tau\frac{d\xi}{d\tau})/(1 + \tau\frac{d\xi}{d\tau}\tanh\xi)$, the same rational form as the addition law with $\tau\frac{d\xi}{d\tau}$ replacing a second rapidity, and the worldline is timelike exactly while $|\tau\frac{d\xi}{d\tau}| < 1$. For $\xi = \alpha\tau$ the velocity reaches $1$ at $\alpha\tau = 1$ and peaks at $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$. This is not a counterexample to Problem 2: it composes a *varying* rotor, not two fixed rapidities, and past $|\tau\frac{d\xi}{d\tau}| = 1$ the worldline is no longer timelike.
 
@@ -373,14 +373,14 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t+\vec p$ | Four-momentum |
 | $\gamma = (1-\vec v^2/c^2)^{-1/2}$, $\gamma_b$ | Lorentz factors |
-| $\tilde U_{\vec v_b} = \cosh\frac{\theta^{\mathrm{rpd}}_b}{2}+i\sinh\frac{\theta^{\mathrm{rpd}}_b}{2}\vec u_x$ | Boost biquaternion, $\tanh\theta^{\mathrm{rpd}}_b = v_b/c$ |
-| $\theta^{\mathrm{rpd}}_v$, $\theta^{\mathrm{rpd}}_1$, $\theta^{\mathrm{rpd}}_2$ | Rapidities |
+| $\tilde U_{\vec v_b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u_x$ | Boost biquaternion, $\tanh\theta_{\mathrm{rpd},b} = v_b/c$ |
+| $\theta_{\mathrm{rpd},v}$, $\theta_{\mathrm{rpd},1}$, $\theta_{\mathrm{rpd},2}$ | Rapidities |
 | $\vec v_b$, $\vec {u_y}_i$ | Boost velocity, boost directions |
-| $\theta^{\mathrm{btw}}$ | Angle between $\vec u_y$ and $\vec u_z$ |
+| $\theta_{\mathrm{btw}}$ | Angle between $\vec u_y$ and $\vec u_z$ |
 | $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
 | $\tilde R_\psi$, $\tilde u_{\mathrm r}$ | Boost part and rotation part of $P = \tilde R_\psi\tilde u_{\mathrm r}$ |
-| $\theta^{\mathrm{rpd}}$ | Total rapidity, $\cosh\theta^{\mathrm{rpd}} = \cosh\theta^{\mathrm{rpd}}_1\cosh\theta^{\mathrm{rpd}}_2+\sinh\theta^{\mathrm{rpd}}_1\sinh\theta^{\mathrm{rpd}}_2\cos\theta^{\mathrm{btw}}$ |
+| $\theta_{\mathrm{rpd}}$ | Total rapidity, $\cosh\theta_{\mathrm{rpd}} = \cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2}+\sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2}\cos\theta_{\mathrm{btw}}$ |
 | $\theta_W$ | Thomas–Wigner angle |
 | $\vec u_4$ | Axis of the boost part $\tilde R_\psi$ |
 | $\vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ | Axis of the Wigner rotation |

@@ -9,7 +9,7 @@ $$
 \qquad
 \tilde q=r\tilde u_{\mathrm r},
 \qquad
-\tilde{Ξ}=\alpha+\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}',
+\tilde{Ξ}=\alpha+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}',
 \qquad
 \vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}.
 $$
@@ -31,7 +31,7 @@ $$
 \qquad
 \tilde q=r\tilde u_{\mathrm r},
 \qquad
-\tilde{Ξ}=\alpha+\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}',
+\tilde{Ξ}=\alpha+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}',
 $$
 
 with $\tilde q$ a real quaternion of norm $r$ and $\tilde{Ξ}$ a real quaternion. The vector part of $\tilde{Ξ}$ is orthogonal to $\tilde q$.
@@ -57,24 +57,24 @@ The construction is partial. The factorisation exists on all of $\Sigma_{10}$; t
 The word of the sector is rigid:
 
 $$
-\cosh\frac{\theta^{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
 \qquad
-\sinh\frac{\theta^{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0.
+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0.
 $$
 
-On the Jordan part the second equation gives $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, and the first gives $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta^{\mathrm{rpd}}}{2}$ with $\varepsilon=\operatorname{sgn}\cos\frac{\theta}{2}$. The pairing reads these relations on its two factors:
+On the Jordan part the second equation gives $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, and the first gives $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ with $\varepsilon=\operatorname{sgn}\cos\frac{\theta}{2}$. The pairing reads these relations on its two factors:
 
 | Pairing datum | Word datum | Sector condition |
 |---|---|---|
 | $\tilde q=r\tilde u_{\mathrm r}$ | $r,\theta,\vec u_{\mathrm r}$ | $\lvert\tilde q\rvert=r>0$ |
 | $\operatorname{Sc}\tilde{Ξ}=\alpha$ | $\alpha$ | none beyond the branch |
-| $\operatorname{Vect}\tilde{Ξ}=\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | $\theta^{\mathrm{rpd}},\vec u_{\mathrm b}$ | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$ |
-| $\cos\tilde{Ξ}=\cos\alpha\cosh\frac{\theta^{\mathrm{rpd}}}{2}-\sin\alpha\sinh\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | the phase and the boost | $\operatorname{Sc}\cos\tilde{Ξ}=\cos\alpha\cosh\frac{\theta^{\mathrm{rpd}}}{2}$ |
+| $\operatorname{Vect}\tilde{Ξ}=\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | $\theta_{\mathrm{rpd}},\vec u_{\mathrm b}$ | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$ |
+| $\cos\tilde{Ξ}=\cos\alpha\cosh\frac{\theta_{\mathrm{rpd}}}{2}-\sin\alpha\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | the phase and the boost | $\operatorname{Sc}\cos\tilde{Ξ}=\cos\alpha\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
 
 The last row separates the phase from the boost. The rigidity is not read from $\cos\tilde{Ξ}$ alone; it relates the boost angle to the scalar part of the rotor,
 
 $$
-\cosh\frac{\theta^{\mathrm{rpd}}}{2}\,\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon.
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon.
 $$
 
 This is the same wall as $\operatorname{Sc}\tilde U=\pm1$, read in the pairing: $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta}{2}$.
@@ -87,7 +87,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\vec e_y.
 $$
 
-The polar data are $r=1$, $\alpha=0$, $\theta^{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta=\frac{\pi}{2}$,
+The polar data are $r=1$, $\alpha=0$, $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta=\frac{\pi}{2}$,
 
 $$
 \vec u_{\mathrm b}=\frac{\vec e_y+\vec e_z}{\sqrt2},
@@ -111,7 +111,7 @@ $$
 and the exponent is
 
 $$
-\tilde{Ξ}=\frac{\theta^{\mathrm{rpd}}}{2}\frac{\vec e_y-\vec e_z}{\sqrt2}
+\tilde{Ξ}=\frac{\theta_{\mathrm{rpd}}}{2}\frac{\vec e_y-\vec e_z}{\sqrt2}
 =\beta\vec u,
 \qquad
 \beta=\operatorname{arcosh}\sqrt2,
@@ -150,7 +150,7 @@ as the construction requires. The modulus and the vector part of the exponent ar
 |---|---|---|
 | axes | not orthogonal in general | orthogonal on the Jordan part |
 | modulus and exponent | no orthogonality in general | $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$ |
-| scalar part of $\cos\tilde{Ξ}$ | $\cos\alpha\cosh\frac{\theta^{\mathrm{rpd}}}{2}$, arbitrary | $\cos\alpha\cosh\frac{\theta^{\mathrm{rpd}}}{2}$; the rigidity uses $\operatorname{Sc}\tilde u_{\mathrm r}$ |
+| scalar part of $\cos\tilde{Ξ}$ | $\cos\alpha\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, arbitrary | $\cos\alpha\cosh\frac{\theta_{\mathrm{rpd}}}{2}$; the rigidity uses $\operatorname{Sc}\tilde u_{\mathrm r}$ |
 | construction domain | $\tilde q_r\neq0$, plus $N\neq0$ | $\tilde q_r\neq0$, plus $N\neq0$ |
 | factorisation | all of $\Sigma_{11}$ | all of $\Sigma_{10}$ |
 
@@ -164,9 +164,9 @@ The pairing is therefore the same regrouping on both sides of the wall. The wall
 |---|---|
 | equation | $\tilde Q=\tilde q\exp(i\tilde{Ξ})$ |
 | modulus | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion of norm $r$ |
-| exponent | $\tilde{Ξ}=\alpha+\frac{\theta^{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$, a real quaternion |
+| exponent | $\tilde{Ξ}=\alpha+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$, a real quaternion |
 | sector signature | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$, hence $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$ |
-| rigidity | $\cosh\frac{\theta^{\mathrm{rpd}}}{2}\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon=\pm1$ on the Jordan part |
+| rigidity | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon=\pm1$ on the Jordan part |
 | construction | $\tan\tilde{Ξ}=\tilde q_r^{-1}\tilde q_i$, $\tilde q=\tilde q_r(\cos\tilde{Ξ})^{-1}$ |
 | domain | factorisation on $\Sigma_{10}$; construction where $\tilde q_r\neq0$ |
 
@@ -181,7 +181,7 @@ The pairing is therefore the same regrouping on both sides of the wall. The wall
 | $\Rho=r e^{i\alpha}$ | the modulus |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
-| $\theta^{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
+| $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | the orthogonal axes of the Jordan part |
 | $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ | the conjugated boost axis |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the quaternion modulus |

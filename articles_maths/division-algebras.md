@@ -21,7 +21,7 @@ For a finite-dimensional $D$ this is equivalent to the absence of zero divisors,
 
 *Proof.* If $I \neq 0$ is a left ideal and $0 \neq a \in I$, then $1 = a^{-1}a \in I$, so $I = A$. Injectivity of a homomorphism $\varphi$ follows because $\ker\varphi$ is a proper two-sided ideal, hence $0$. The last statement is Wedderburn–Artin: a simple finite-dimensional algebra is $M_n(D)$ for a division algebra $D$, and $M_n(D)$ is a division algebra only for $n = 1$.
 
-**Example.** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and every field are division algebras. The algebras $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for nontrivial finite $G$ are not, by the zero divisors listed in *Examples of Algebras*. The pattern is instructive: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are the division algebras among the number systems.
+**Example.** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and every field are division algebras. The algebras $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for nontrivial finite $G$ are not, by the zero divisors listed in *Examples of Algebras*. The pattern is instructive: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are the division algebras among the number systems.
 
 ## Finite-Dimensional Division Algebras over $\mathbb{R}$: Frobenius
 
@@ -127,13 +127,13 @@ $$
 \boxed{\;g(b) = a\,f(b)\,a^{-1} \qquad \text{for all } b \in B\;} .
 $$
 
-*Proof (sketch).* Write $L = Z(B)$ for the centre of $B$. The tensor product $B \otimes_k A^{\mathrm{opp}}$ is a finite-dimensional simple ring: it is $B \otimes_L (L \otimes_k A^{\mathrm{opp}})$ by the base-change identity $B\otimes_k M \cong B \otimes_L (L \otimes_k M)$, the algebra $L \otimes_k A^{\mathrm{opp}}$ is central simple over $L$ because $A^{\mathrm{opp}}$ is central simple over $k$, and $B$ is central simple over $L$; a tensor product of central simple algebras being central simple, $B \otimes_k A^{\mathrm{opp}}$ is central simple over $L$, hence simple as a ring. Such an algebra has a unique simple module up to isomorphism, because Wedderburn–Artin writes it as $M_n(D)$ for a division algebra $D$ and the unique simple module of $M_n(D)$ is $D^n$. Now $A$ carries two $B \otimes_k A^{\mathrm{opp}}$-module structures,
+*Proof (sketch).* Write $L = Z(B)$ for the centre of $B$. The tensor product $B \otimes_k A_{\mathrm{opp}}$ is a finite-dimensional simple ring: it is $B \otimes_L (L \otimes_k A_{\mathrm{opp}})$ by the base-change identity $B\otimes_k M \cong B \otimes_L (L \otimes_k M)$, the algebra $L \otimes_k A_{\mathrm{opp}}$ is central simple over $L$ because $A_{\mathrm{opp}}$ is central simple over $k$, and $B$ is central simple over $L$; a tensor product of central simple algebras being central simple, $B \otimes_k A_{\mathrm{opp}}$ is central simple over $L$, hence simple as a ring. Such an algebra has a unique simple module up to isomorphism, because Wedderburn–Artin writes it as $M_n(D)$ for a division algebra $D$ and the unique simple module of $M_n(D)$ is $D^n$. Now $A$ carries two $B \otimes_k A_{\mathrm{opp}}$-module structures,
 
 $$
 (b \otimes a')\cdot_f x = f(b)\,x\,a', \qquad (b \otimes a')\cdot_g x = g(b)\,x\,a' ,
 $$
 
-and each is a direct sum of copies of the unique simple module with the same multiplicity, by dimension count; hence there is a $k$-linear isomorphism $\psi$ of $A$ intertwining $\cdot_f$ with $\cdot_g$. Being a $B \otimes_k A^{\mathrm{opp}}$-module isomorphism, $\psi$ is in particular $A^{\mathrm{opp}}$-linear, that is $\psi(xa') = \psi(x)a'$, so it is an isomorphism of $A$ as a free right $A$-module of rank one. Therefore $a = \psi(1)$ generates $A$ as a right $A$-module and is a unit, and combining $A^{\mathrm{opp}}$-linearity at $x = 1$ with the intertwining relation at $x = 1$ gives
+and each is a direct sum of copies of the unique simple module with the same multiplicity, by dimension count; hence there is a $k$-linear isomorphism $\psi$ of $A$ intertwining $\cdot_f$ with $\cdot_g$. Being a $B \otimes_k A_{\mathrm{opp}}$-module isomorphism, $\psi$ is in particular $A_{\mathrm{opp}}$-linear, that is $\psi(xa') = \psi(x)a'$, so it is an isomorphism of $A$ as a free right $A$-module of rank one. Therefore $a = \psi(1)$ generates $A$ as a right $A$-module and is a unit, and combining $A_{\mathrm{opp}}$-linearity at $x = 1$ with the intertwining relation at $x = 1$ gives
 
 $$
 \psi(f(b)) = \psi(1)f(b) = a f(b), \qquad \psi(f(b)) = g(b)\psi(1) = g(b)a ,
@@ -181,7 +181,7 @@ A **biquaternion algebra** over a field is the tensor product of two quaternion 
 | $(a,b)_k$ | Quaternion (symbol) algebra over $k$, generators $u, v$ with $u^2=a$, $v^2=b$ |
 | $\operatorname{Br}(k)$ | Brauer group |
 | $M_n(D)$ | Matrix algebra over $D$ |
-| $A^{\mathrm{opp}}$ | Opposite algebra, $a\cdot b = ba$ |
+| $A_{\mathrm{opp}}$ | Opposite algebra, $a\cdot b = ba$ |
 | $\operatorname{Aut}_k(A) \cong A^\times/k^\times$ | Automorphisms of $A$, all inner for $A$ central simple |
 | $\mathrm{PGL}_n(k)$ | Projective general linear group $\mathrm{GL}_n(k)/k^\times$ |
 | $Q \otimes_k Q'$ | Biquaternion algebra, central simple of degree $4$, index $1$, $2$ or $4$ |

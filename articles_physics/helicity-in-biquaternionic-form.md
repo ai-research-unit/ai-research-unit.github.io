@@ -75,10 +75,10 @@ This is the proposition of *Spinors and Dirac Spinors in the Biquaternion Algebr
 
 **One refinement, on the word eigenvector.** The operator is a left multiplication, and on the whole algebra its eigenspaces are not the left ideals but the right ideals $\tilde\Pi_\pm(\vec u_p)\mathbb{B}$, each of complex dimension two. The left ideals are the eigenspaces of the right multiplier $R(i\vec u_p)$, with the value $+1$ on $S_+(\vec u_p)$ and $-1$ on $S_-(\vec u_p)$ (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). A state lives in a left ideal, so the statement above is the physical one: inside its own carrier the state's operator has the two values, and their vectors are the pure state and its companion nilpotent.
 
-**The Dirac carrier.** A Dirac spinor is $\tilde{Ξ}^{\mathrm{sp}}=\tilde{Ξ}^{\mathrm{sp}}_L+\tilde{Ξ}^{\mathrm{sp}}_R$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
+**The Dirac carrier.** A Dirac spinor is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ with its two parts in the two left ideals at a declared axis (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Dirac Spinor*). Two things follow, and the second is the one usually got wrong.
 
 - The two parts are two copies of one carrier, not two different carriers: the index that separates them is a copy index, and in adapted bases the same left multiplication has the same matrix on both.
-- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde{Ξ}^{\mathrm{sp}}_L$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}^{\mathrm{sp}}_R$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
+- The two helicity values **cut each part into two lines**; they do not name the two parts. Inside $\tilde{Ξ}_{\mathrm{sp},L}$, which is two-dimensional, the operator has the values $\pm\tfrac{\hbar}{2}$ once each, and the same inside $\tilde{Ξ}_{\mathrm{sp},R}$. The parts are separated by the side of a multiplication, the right multiplier $R(i\vec u_p)$; the helicity by a left multiplier. **A helicity eigenstate is a line in a part, not a part.**
 
 **Why the mass does not undo the cut.** The mass term is the only term of the Dirac equation that names the other part, and it does so on the right, while the helicity element multiplies on the left (*Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation*, §*The Gradient and the Two Parts*). Left and right multiplications commute, so the mass couples the two parts and leaves the helicity split of each intact. At $m=0$ the parts decouple altogether into two Weyl equations, one per part, and the helicity is then locked to the part.
 
@@ -100,11 +100,11 @@ $$
 \lambda=\hbar\cdot\tfrac{i}{2}\,\mathrm{ad}_{\vec u_p},
 $$
 
-whose representative is the Hermitian element $\hbar\,i\vec u_p\in\mathbb{M}_+$, with the spectrum $\{+\hbar,0,-\hbar\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (*The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*) or $\tilde S^{(\mathrm{adj})}_3$ (*Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*); the two are the same operator in different units, and the $\hbar$ above restores the units of the spin-$\tfrac12$ case. The $\pm\hbar$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{M}_+$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.
+whose representative is the Hermitian element $\hbar\,i\vec u_p\in\mathbb{M}_+$, with the spectrum $\{+\hbar,0,-\hbar\}$ on the complexified vector part. The corpus states this spectrum in natural units, as $\{+1,0,-1\}$, and writes the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}$ (*The Photon in Biquaternionic Form*, §*Helicity as an Observable in the Informational Sector*) or $\tilde S_{\mathrm{adj},3}^{()}$ (*Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*); the two are the same operator in different units, and the $\hbar$ above restores the units of the spin-$\tfrac12$ case. The $\pm\hbar$ eigenvectors are the two circular polarizations, and the $0$ eigenvector is the direction $\vec u_p$ itself, since $\mathrm{ad}_{\vec u_p}(\vec u_p)=0$. The one qualification is a matter of sides: the observable is an element of $\mathbb{M}_+$ and the carrier is the vector part, so the operator is a left multiplication on the algebra of which the carrier is a subspace, and it is not itself a state.
 
 **The massive field.** The same carrier carries the Proca field, and there all three states are physical. Along the momentum the two transverse states carry $\pm1$ and the longitudinal one carries $0$, and a boost rotates a transverse polarization into the longitudinal one. The label is therefore not invariant at $m\neq0$, which is the massive case of the boost law below (*The Proca Equation: Massive Spin 1 in Biquaternionic Form*, §*The Massive Field Strength and the Self-Dual Split*). The algebra represents both cases on the same carrier, and the value of $m$ decides which states are physical.
 
-**The self-dual split.** For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_k\times\vec E$ and $\vec u_k\times\varepsilon^{\mathrm{fop}}_\pm=\mp i\varepsilon^{\mathrm{fop}}_\pm$, so each half carries one sign of $\lambda$ (*The Photon in Biquaternionic Form*, §*Helicity and the Self-Dual Split of the Field Strength*). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.
+**The self-dual split.** For the massless field the two nonzero labels are the two self-dual halves of the field strength. With $\vec N=\vec E+ic\vec B$ the self-dual half and $\vec N^*$ its conjugate, Faraday's law gives $\vec B=\vec u_k\times\vec E$ and $\vec u_k\times\varepsilon_{\mathrm{fop},\pm}=\mp i\varepsilon_{\mathrm{fop},\pm}$, so each half carries one sign of $\lambda$ (*The Photon in Biquaternionic Form*, §*Helicity and the Self-Dual Split of the Field Strength*). That is the field-theoretic face of the same operator: the weight of the little group is the label of one of the two complex three-dimensional representations of the Lorentz group.
 
 **Spin two.** On the symmetric traceless square the spectrum is $\{-2,-1,0,1,2\}$ in units of $\hbar$, and the gauge and trace removals leave the two of $\pm2$ (*Canonical Quantization of the Biquaternion Graviton Field*, §*Helicity and the Massless Little Group*). The algebra supplies the five-dimensional carrier and the projector; it does not supply the removal.
 
@@ -194,7 +194,7 @@ which is the reality condition of the real slice. For a complexified momentum th
 
 ## The Brackets as the Invariant Pairing
 
-The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ}^{\mathrm{sp}},\xi^{\mathrm{alt}})=\tilde{Ξ}^{\mathrm{sp}T}\epsilon\,\xi^{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
+The spinor module carries the invariant symplectic form $\varepsilon(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^T\epsilon\,\xi_{\mathrm{alt}}$ (*The Spinor Module in Biquaternionic Form and Its Lorentz Action*), and the two brackets of the formalism are that form applied to the factors of two different momenta:
 
 $$
 \langle ij\rangle=\lambda_i^{T}\epsilon\,\lambda_j=-\langle ji\rangle,
@@ -248,7 +248,7 @@ The operator, by contrast, is continuous through the limit: it never divides by 
 
 The two words name different things and coincide at one mass.
 
-**Chirality** is the eigenvalue of the chirality cell $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz cells (*Chiral Fermions in the Biquaternion Framework*).
+**Chirality** is the eigenvalue of the chirality cell $\xi=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier that carries one chiral half to minus itself and the other to plus itself. It is not a central sign but a slot: it acts on the right, a product takes the value of its right factor, and a left multiplication keeps the value. It is Lorentz invariant with or without a mass, because it commutes with the six Lorentz cells (*Chiral Fermions in the Biquaternion Framework*).
 
 **Helicity** is the eigenvalue of $\lambda$, a projection on the momentum, fixed by the little group and dependent on it.
 
@@ -303,7 +303,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\langle ij\rangle,\ [ij]$ | The brackets, the symplectic pairing on $S$ and on $\bar S$ |
 | $r'_t$ | The little-group scaling, $\lambda\mapsto r'_t\lambda$, $\bar\lambda\mapsto {r'_{t}}^{-1}\bar\lambda$; $\lvert r'_t\rvert=1$ for a real momentum |
 | $h$ | The helicity, the weight; the operator's eigenvalue is $\hbar h$ |
-| $\xi=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell, a pure right multiplier; not the helicity |
+| $\xi=-iR_{\mathrm{axf},\vec e_z}$ | The chirality cell, a pure right multiplier; not the helicity |
 
 ## Further Reading
 
