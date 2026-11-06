@@ -314,26 +314,26 @@ $$</p>
 <p>The factor $|\sigma|$ is the <strong>ramp filter</strong>, and it is the source of the high-frequency amplification in tomography.</p>
 <h2 id="the-wavelet-transform">The Wavelet Transform</h2>
 <h3 id="definition_4">Definition</h3>
-<p>The <strong>continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is</p>
+<p>The <strong>continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\gamma \in L^2(\mathbb{R})$ is</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\gamma\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
 $$</p>
-<p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
+<p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\gamma$ is assumed to satisfy the <strong>admissibility condition</strong></p>
 <p>$$
-C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty.
+C_\gamma = \int_{\mathbb{R}} \frac{|\hat{\gamma}(\zeta)|^2}{|\zeta|} \, d\zeta < \infty.
 $$</p>
 <h3 id="the-inversion-formula_1">The Inversion Formula</h3>
-<p><strong>Theorem.</strong> If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then</p>
+<p><strong>Theorem.</strong> If $\gamma$ is admissible and $f \in L^2(\mathbb{R})$, then</p>
 <p>$$
-f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+f(t) = \frac{1}{C_\gamma} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\gamma f(a, b) \frac{1}{\sqrt{|a|}} \gamma\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
 $$</p>
 <p>The inversion formula reconstructs $f$ from its wavelet transform.</p>
 <h3 id="relation-to-the-fourier-transform_1">Relation to the Fourier Transform</h3>
 <p>The wavelet transform localizes in both frequency and position, unlike the Fourier transform, which localizes only in frequency. This is the source of its usefulness in signal processing and image analysis. The <strong>uncertainty principle</strong> states that no transform can localize perfectly in both, and the wavelet transform achieves the optimal trade-off.</p>
 <h3 id="the-complex-wavelet-transform">The Complex Wavelet Transform</h3>
-<p>In the complex setting, the wavelet $\psi$ is allowed to be complex-valued, and the transform becomes</p>
+<p>In the complex setting, the wavelet $\gamma$ is allowed to be complex-valued, and the transform becomes</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
+W_\gamma f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(Q) \overline{\gamma\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
 $$</p>
 <p>The complex wavelet transform is used in image processing, where it provides both magnitude and phase information, and in the analysis of oriented textures.</p>
 <h2 id="summary">Summary</h2>
@@ -414,7 +414,7 @@ $$</p>
 <td>Radon transform</td>
 </tr>
 <tr>
-<td>$W_\psi f$</td>
+<td>$W_\gamma f$</td>
 <td>Wavelet transform</td>
 </tr>
 </tbody>

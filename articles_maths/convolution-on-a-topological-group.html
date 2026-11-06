@@ -119,14 +119,14 @@ $$</p>
 <p><strong>Corollary.</strong> The convolution operators by deltas are exactly the translation operators, and they are homeomorphisms of $C(G)$ for the topology of uniform convergence on compacta.</p>
 <p><strong>Proof.</strong> The first statement is the proposition, read for every $a$; for the second, $L_a$ carries a function to a function whose values are those of $f$ at points translated by $a$, so it preserves the supremum on each compact set and its inverse is $L_{a^{-1}}$.</p>
 <h3 id="convolution-as-an-operator">Convolution as an Operator</h3>
-<p><strong>Definition.</strong> For a finitely supported $\phi$ the <strong>convolution operator</strong> $T_\phi$ is the map $f \mapsto \phi * f$ on functions.</p>
-<p><strong>Proposition.</strong> $T_\phi$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,</p>
+<p><strong>Definition.</strong> For a finitely supported $\mu$ the <strong>convolution operator</strong> $T_\mu$ is the map $f \mapsto \mu * f$ on functions.</p>
+<p><strong>Proposition.</strong> $T_\mu$ is a continuous linear operator on $C(G)$, and it is a finite linear combination of translations,</p>
 <p>$$
-\boxed{\;T_\phi = \sum_{a} \phi(a)\,L_a\;} .
+\boxed{\;T_\mu = \sum_{a} \mu(a)\,L_a\;} .
 $$</p>
-<p><strong>Proof.</strong> $\phi = \sum_a \phi(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\phi * f = \sum_a \phi(a)(\delta_a * f) = \sum_a \phi(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.</p>
-<p><strong>Corollary.</strong> The assignment $\phi \mapsto T_\phi$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\phi*\psi} = T_\phi \circ T_\psi$.</p>
-<p><strong>Proof.</strong> $T_{\phi*\psi}(f) = (\phi*\psi)*f = \phi*(\psi*f) = T_\phi(T_\psi f)$ by associativity, and injectivity follows from $T_\phi(\delta_e) = \phi$.</p>
+<p><strong>Proof.</strong> $\mu = \sum_a \mu(a)\delta_a$ as a finite sum, and convolution is bilinear, so $\mu * f = \sum_a \mu(a)(\delta_a * f) = \sum_a \mu(a) L_a f$, a finite linear combination of the continuous operators $L_a$; a finite linear combination of continuous operators is continuous.</p>
+<p><strong>Corollary.</strong> The assignment $\mu \mapsto T_\mu$ is an injective algebra homomorphism from $k[G]$ into the algebra of continuous operators on $C(G)$; its image is the algebra of finite linear combinations of translations, and $T_{\mu*\nu} = T_\mu \circ T_\nu$.</p>
+<p><strong>Proof.</strong> $T_{\mu*\nu}(f) = (\mu*\nu)*f = \mu*(\nu*f) = T_\mu(T_\nu f)$ by associativity, and injectivity follows from $T_\mu(\delta_e) = \mu$.</p>
 <h2 id="continuity">Continuity</h2>
 <h3 id="what-the-finitely-supported-case-proves">What the Finitely Supported Case Proves</h3>
 <p><strong>Theorem.</strong> The map $k[G] \times k[G] \to k[G]$, $(f,g) \mapsto f*g$, is continuous for the topology of uniform convergence on compacta restricted to the finitely supported functions, and for each fixed $f$ the operator $T_f$ is continuous on $C(G)$.</p>
@@ -144,7 +144,7 @@ $$</p>
 <p><strong>Remark.</strong> The finitely supported functions are the intersection of the two treatments: $k[G] \subseteq C_c(G)$ when $G$ is discrete, and each finitely supported function is integrable for the counting measure, so the algebra of the first sections is the subalgebra of the cited $C_c(G)$-algebra spanned by the deltas. The continuity of the finitely supported product is thus a special case of the cited continuity, recovered without the integral.</p>
 <p><strong>Remark (compact groups).</strong> On a compact group with the normalised Haar measure the integral of the constant $1$ is $1$, and the pointwise estimate $\lvert(f*g)(x)\rvert \le \sup_y \lvert f(y)\rvert \sup_z\lvert g(z)\rvert$ shows that convolution is continuous on $C(G)$ with the supremum metric; this is the finite-measure case of the cited theorem, and the measure is still Part III's.</p>
 <h2 id="summary">Summary</h2>
-<p>Convolution of finitely supported functions on a topological group is the product $(f*g)(x) = \sum_{yz=x}f(y)g(z)$; it is bilinear and associative, the deltas satisfy $\delta_a*\delta_b = \delta_{ab}$, and the algebra it generates is the group algebra $k[G]$, commutative exactly when the group is abelian, with centre the class functions and augmentation the sum of the coefficients. Left and right convolution by a delta are the translations, $\delta_a*f = L_af$ and $f*\delta_b = R_{b^{-1}}f$, so the algebra acts on the functions by finite linear combinations of translations, and the assignment $\phi\mapsto T_\phi$ is an injective homomorphism into the continuous operators on $C(G)$. On the finitely supported functions the product is continuous for the topology of uniform convergence on compacta without any hypothesis, while for general continuous functions on a locally compact group the definition uses the Haar integral and the associativity, the continuity and the algebra $L^1(G)$ are Part III's <em>The Convolution Algebra $L^1(G)$</em>, cited here and not reproved.</p>
+<p>Convolution of finitely supported functions on a topological group is the product $(f*g)(x) = \sum_{yz=x}f(y)g(z)$; it is bilinear and associative, the deltas satisfy $\delta_a*\delta_b = \delta_{ab}$, and the algebra it generates is the group algebra $k[G]$, commutative exactly when the group is abelian, with centre the class functions and augmentation the sum of the coefficients. Left and right convolution by a delta are the translations, $\delta_a*f = L_af$ and $f*\delta_b = R_{b^{-1}}f$, so the algebra acts on the functions by finite linear combinations of translations, and the assignment $\mu\mapsto T_\mu$ is an injective homomorphism into the continuous operators on $C(G)$. On the finitely supported functions the product is continuous for the topology of uniform convergence on compacta without any hypothesis, while for general continuous functions on a locally compact group the definition uses the Haar integral and the associativity, the continuity and the algebra $L^1(G)$ are Part III's <em>The Convolution Algebra $L^1(G)$</em>, cited here and not reproved.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -191,8 +191,8 @@ $$</p>
 <td>convolution by a delta is a translation</td>
 </tr>
 <tr>
-<td>$T_\phi$, $T_\phi = \sum_a\phi(a)L_a$</td>
-<td>the convolution operator by a finitely supported $\phi$</td>
+<td>$T_\mu$, $T_\mu = \sum_a\mu(a)L_a$</td>
+<td>the convolution operator by a finitely supported $\mu$</td>
 </tr>
 <tr>
 <td>$dx$</td>

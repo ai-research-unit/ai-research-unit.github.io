@@ -109,11 +109,11 @@ $$</p>
 <p><strong>Proof.</strong> $\langle L_xy, z\rangle = \langle xy, z\rangle = \langle y, x^{\dagger}z\rangle = \langle y, L_{x^{\dagger}}z\rangle$ for all $y, z$, which is the defining relation of the adjoint, and non-degeneracy makes the adjoint unique. The right multiplication is subtler: the identity $R_{x^{\dagger}} = R_x^{*}$ is the third identity $\langle yx,z\rangle = \langle y,zx^{\dagger}\rangle$ refused above, it holds for the trace form $\langle x,y\rangle = \tau(x^{\dagger}y)$ because $\tau$ is cyclic, and in general the adjoint of $R_x$ is the right multiplication by the <strong>transpose</strong> $x^{t}$, defined by $\langle yx,z\rangle = \langle y,zx^{t}\rangle$ and equal to $x^{\dagger}$ only for the trace form; the computation is in <em>The Form-Adjoint of the Multiplications</em>.</p>
 <p>The two identities are the adjoint axiom in operator form, and they are the origin of the operator theory of the layer. They hold for a form of any signature and over any commutative base with an involution.</p>
 <h3 id="the-correspondence">The Correspondence</h3>
-<p><strong>Proposition.</strong> The form and the involution determine each other through the functional $\varphi = \langle \cdot, 1\rangle$:</p>
+<p><strong>Proposition.</strong> The form and the involution determine each other through the functional $\ell = \langle \cdot, 1\rangle$:</p>
 <p>$$
 \boxed{\;\langle x, y \rangle = \langle x^{\dagger}y, 1 \rangle\;} .
 $$</p>
-<p><strong>Proof.</strong> Apply the adjoint axiom with $y$ replaced by $x^{\dagger}y$ and $z = 1$, and use $(x^{\dagger}y)^{\dagger} = y^{\dagger}x$. Conversely, a $\sigma$-linear functional $\varphi$ on $A$ produces the Hermitian form $h_\varphi(x, y) = \varphi(y^{\dagger}x)$, and the two constructions are inverse. This is the correspondence of <em>The Sesquilinear Form and the Conjugation</em>, stated here for the involution of the algebra; it uses neither positivity nor completeness.</p>
+<p><strong>Proof.</strong> Apply the adjoint axiom with $y$ replaced by $x^{\dagger}y$ and $z = 1$, and use $(x^{\dagger}y)^{\dagger} = y^{\dagger}x$. Conversely, a $\sigma$-linear functional $\ell$ on $A$ produces the Hermitian form $h_\ell(x, y) = \ell(y^{\dagger}x)$, and the two constructions are inverse. This is the correspondence of <em>The Sesquilinear Form and the Conjugation</em>, stated here for the involution of the algebra; it uses neither positivity nor completeness.</p>
 <h2 id="the-dagger-of-a-clifford-algebra">The Dagger of a Clifford Algebra</h2>
 <p>The algebras of the category carry their involution intrinsically. With the $\mathbb{Z}/2$-grading $A = A^0 \oplus A^1$ and the grade involution $\alpha$ acting by $\alpha(x) = (-1)^k x$ on the degree-$k$ part, two anti-involutions are defined on every coefficient ring:</p>
 <ul>
@@ -168,7 +168,7 @@ $$</p>
 <ul>
 <li>A <strong>Hermitian algebra</strong> is an associative algebra with an involution $\bar{\cdot}$ and a non-degenerate Hermitian form tied by the adjoint axiom $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$.</li>
 <li>The axiom is $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$, equivalently $\langle x^{\dagger}y, z\rangle = \langle y, xz\rangle$; it says that $L_{x^{\dagger}} = L_x^{*}$. The third identity $\langle xy, z\rangle = \langle x, zy^{\dagger}\rangle$, equivalently $R_{x^{\dagger}} = R_x^{*}$, is not a consequence: it is the cyclicity of the functional of the form, and it holds for the trace form.</li>
-<li>The form and the involution determine each other through $\varphi = \langle \cdot, 1\rangle$, with $\langle x, y\rangle = \langle x^{\dagger}y, 1\rangle$.</li>
+<li>The form and the involution determine each other through $\ell = \langle \cdot, 1\rangle$, with $\langle x, y\rangle = \langle x^{\dagger}y, 1\rangle$.</li>
 <li>The dagger of a Clifford algebra is the composite $x^{\dagger} = \sigma(\alpha(x^{r}))$ of reversion and the involution of the base, available with no positivity.</li>
 <li>Every element splits as $x = \tfrac12(x + x^{\dagger}) + \tfrac12(x - x^{\dagger})$ into a self-adjoint and a skew-adjoint part, and the Hermitian squares $x^{\dagger}x$ generate the algebraic positive cone.</li>
 <li>The left and the right radicals are a left and a right ideal, and they coincide and are two-sided when the form is associative; the form descends to a non-degenerate form on the quotient.</li>
@@ -217,7 +217,7 @@ $$</p>
 <td>the value at the two equal arguments $\langle x, x\rangle$, valued in $F^\sigma$</td>
 </tr>
 <tr>
-<td>$\varphi$</td>
+<td>$\ell$</td>
 <td>the functional $\langle \cdot, 1\rangle$ of the correspondence</td>
 </tr>
 <tr>

@@ -77,11 +77,11 @@
 <h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
 <p>An element of $\mathbb{B}_{\Psi}$ has the form</p>
 <p>$$
-\tilde R_\psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad c r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
+\tilde R_\Psi = c r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad c r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
 $$</p>
 <p>The <strong>real scalar part</strong> is $c r_t e_t$, and the <strong>imaginary vector part</strong> is $i(r'_x \vec e_x + r'_y \vec e_y + r'_z \vec e_z)$. In compact form,</p>
 <p>$$
-\tilde R_\psi = c r_t\, e_t + i\,\vec r_\psi, \qquad \vec r_\psi = (r'_x, r'_y, r'_z) \in \mathbb{R}^3.
+\tilde R_\Psi = c r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi = (r'_x, r'_y, r'_z) \in \mathbb{R}^3.
 $$</p>
 <p>The subspace $\mathbb{B}_{\Psi}$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation ${}^{*}$).</p>
 <p><strong>Hermitian form and Hermitian norm.</strong> The Hermitian form pairs two elements by the scalar part of the first with the Hermitian conjugate of the second, and its diagonal is the Hermitian norm:</p>
@@ -89,45 +89,45 @@ $$</p>
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\qquad
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}.
 $$</p>
-<p>On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_k^{*}=\tilde Q_k$ and the form equals the plain form $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})$; it is positive definite of signature $(4,0)$ there and on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The <strong>scalar part</strong> is the form against the unit, $\mathrm{Sc}(\tilde R_\psi)=\langle\tilde R_\psi,e_t\rangle_{*}$, and the <strong>trace</strong> is its reading in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\psi)=2\langle\tilde R_\psi,e_t\rangle_{*}=2c r_t$.</p>
+<p>On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_k^{*}=\tilde Q_k$ and the form equals the plain form $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$; it is positive definite of signature $(4,0)$ there and on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The <strong>scalar part</strong> is the form against the unit, $\mathrm{Sc}(\tilde R_\Psi)=\langle\tilde R_\Psi,e_t\rangle_{*}$, and the <strong>trace</strong> is its reading in the $2\times2$ image, $\operatorname{Tr}(\tilde R_\Psi)=2\langle\tilde R_\Psi,e_t\rangle_{*}=2c r_t$.</p>
 <p><strong>Biquaternion norm.</strong> The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{B}_{\Psi}$:</p>
 <p>$$
-\langle\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural} = \tilde R_\psi\tilde R_\psi^{\natural} = (c^2 r_t^2 - |\vec r_\psi|^2) e_t.
+\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural} = (c^2 r_t^2 - |\vec r_\Psi|^2) e_t.
 $$</p>
 <p>This is the form whose vanishing defines the light cone in $\mathbb{B}_{\Psi}$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{B}_{\Psi}$.</p>
 <h3 id="the-forms-on-math35">The Forms on $\mathbb{B}_{\Psi}$</h3>
 <p>The algebra carries four forms, the scalar parts of the four general products of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>; on $\mathbb{B}_{\Psi}$ they pair off and coincide, so two remain. They are the <strong>Hermitian form</strong>, which here equals the <strong>general plain bilinear form</strong>, and the <strong>bilinear form</strong> $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the <strong>general quaternionic sesquilinear form</strong> $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the <em>quadratic</em> form of $\langle\cdot,\cdot\rangle_{\natural}$.</p>
-<p><strong>The plain form.</strong> For two Hermitian elements $\tilde{R}_{\psi,1} = c r_{t,1}\,e_t + i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2} = c r_{t,2}\,e_t + i\vec r_{\psi,2}$, the plain form is</p>
+<p><strong>The plain form.</strong> For two Hermitian elements $\tilde{R}_{\Psi,1} = c r_{t,1}\,e_t + i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2} = c r_{t,2}\,e_t + i\vec r_{\Psi,2}$, the plain form is</p>
 <p>$$
-\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle = \mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}) = c r_{t,1} c r_{t,2} + \vec r_{\psi,1}\cdot\vec r_{\psi,2}.
+\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}.
 $$</p>
-<p>It is symmetric and positive definite, of signature $(4,0)$: the <strong>Euclidean</strong> pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical <strong>Hermitian form</strong> of the algebra, $\langle\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\psi,1}\cdot\vec r_{\psi,2}$, because $\tilde{R}_{\psi,2}^{*}=\tilde{R}_{\psi,2}$ there. In the $2\times2$ image it reads $\operatorname{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}) = 2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}$.</p>
+<p>It is symmetric and positive definite, of signature $(4,0)$: the <strong>Euclidean</strong> pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical <strong>Hermitian form</strong> of the algebra, $\langle\tilde{R}_{\Psi,1}, \tilde{R}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, because $\tilde{R}_{\Psi,2}^{*}=\tilde{R}_{\Psi,2}$ there. In the $2\times2$ image it reads $\operatorname{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}) = 2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$.</p>
 <p><strong>The biquaternion norm.</strong> The biquaternion norm is the quadratic form</p>
 <p>$$
-\langle\tilde R_\psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\psi|^2,
+\langle\tilde R_\Psi\rangle_{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2,
 $$</p>
-<p>of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.</p>
-<p><strong>The polarization of the biquaternion norm.</strong> The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural}$:</p>
+<p>of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.</p>
+<p><strong>The polarization of the biquaternion norm.</strong> The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural}$:</p>
 <p>$$
-\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural} + \tilde{R}_{\psi,2}\tilde{R}_{\psi,1}^{\natural}\right).
+\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural} + \tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural}\right).
 $$</p>
-<p>Computing directly, using $\tilde{R}_{\psi,1}^{\natural} = c r_{t,1} e_t - i\vec r_{\psi,1}$ and the quaternion product of pure vector parts,</p>
+<p>Computing directly, using $\tilde{R}_{\Psi,1}^{\natural} = c r_{t,1} e_t - i\vec r_{\Psi,1}$ and the quaternion product of pure vector parts,</p>
 <p>$$
-\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2})\,e_t + i(c r_{t,2}\vec r_{\psi,1} - c r_{t,1}\vec r_{\psi,2}) + \vec r_{\psi,1}\times\vec r_{\psi,2},
+\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})\,e_t + i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2},
 $$</p>
 <p>$$
-\tilde{R}_{\psi,2}\tilde{R}_{\psi,1}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2})\,e_t - i(c r_{t,2}\vec r_{\psi,1} - c r_{t,1}\vec r_{\psi,2}) - \vec r_{\psi,1}\times\vec r_{\psi,2}.
+\tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})\,e_t - i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) - \vec r_{\Psi,1}\times\vec r_{\Psi,2}.
 $$</p>
 <p>The sum is scalar:</p>
 <p>$$
-\boxed{\;\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2}\;}.
+\boxed{\;\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\;}.
 $$</p>
-<p>This is the <strong>Lorentzian</strong> bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,1}\rangle_{\natural} = \langle\tilde{R}_{\psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the <strong>Krein form</strong> $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{R}_{\psi,1}^{\natural}\tilde{R}_{\psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{R}_{\psi,1}^{\natural} = \bar{\tilde R_\psi}_1$ and $\tilde{R}_{\psi,2}^{*} = \tilde{R}_{\psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde R_\psi}_1\tilde{R}_{\psi,2}) = c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.</p>
+<p>This is the <strong>Lorentzian</strong> bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,1}\rangle_{\natural} = \langle\tilde{R}_{\Psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the <strong>Krein form</strong> $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{R}_{\Psi,1}^{\natural}\tilde{R}_{\Psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{R}_{\Psi,1}^{\natural} = \bar{\tilde R_\Psi}_1$ and $\tilde{R}_{\Psi,2}^{*} = \tilde{R}_{\Psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde R_\Psi}_1\tilde{R}_{\Psi,2}) = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.</p>
 <p>The antisymmetric combination contains the vector part:</p>
 <p>$$
-\tfrac{1}{2}\left(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{\natural} - \tilde{R}_{\psi,2}\tilde{R}_{\psi,1}^{\natural}\right) = i(c r_{t,2}\vec r_{\psi,1} - c r_{t,1}\vec r_{\psi,2}) + \vec r_{\psi,1}\times\vec r_{\psi,2}.
+\tfrac{1}{2}\left(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural} - \tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural}\right) = i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2}.
 $$</p>
-<p>This is not a symmetric bilinear form; it is the antisymmetric part of the product $\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^\natural$, and it plays a role in the commutator structure of the algebra.</p>
+<p>This is not a symmetric bilinear form; it is the antisymmetric part of the product $\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^\natural$, and it plays a role in the commutator structure of the algebra.</p>
 <p><strong>Summary of the two forms.</strong> On $\mathbb{B}_{\Psi}$ two of the four forms of the algebra remain distinct, one Euclidean and one Lorentzian:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -140,17 +140,17 @@ $$</p>
 <tbody>
 <tr>
 <td>Hermitian form (the plain form on $\mathbb{B}_{\Psi}$)</td>
-<td>$\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\psi,1}\cdot\vec r_{\psi,2} = \tfrac{1}{2}\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2})$</td>
+<td>$\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2} = \tfrac{1}{2}\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})$</td>
 <td>$(4,0)$, Euclidean</td>
 </tr>
 <tr>
 <td>Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{B}_{\Psi}$)</td>
-<td>$\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2}$</td>
+<td>$\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$</td>
 <td>$(1,3)$, Lorentzian</td>
 </tr>
 </tbody>
 </table></div>
-<p>The Hermitian form is the natural inner product on the space of operators, and on $\mathbb{B}_{\Psi}$ its restriction is the plain form; the Born rule and the $*$-unitary evolution use the Hermitian form there. The bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is the one whose quadratic form is the biquaternion norm, $\langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi\rangle_{\natural}$, and whose future light cone defines the state space. The antisymmetric combination displayed above is not a third form.</p>
+<p>The Hermitian form is the natural inner product on the space of operators, and on $\mathbb{B}_{\Psi}$ its restriction is the plain form; the Born rule and the $*$-unitary evolution use the Hermitian form there. The bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is the one whose quadratic form is the biquaternion norm, $\langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi\rangle_{\natural}$, and whose future light cone defines the state space. The antisymmetric combination displayed above is not a third form.</p>
 <h2 id="states">States</h2>
 <h3 id="pure-states">Pure States</h3>
 <p>A <strong>pure state</strong> of a qubit is a rank-one projection operator. In the biquaternion framework, the rank-one projections in $\mathbb{B}_{\Psi}$ are the <strong>idempotents</strong>:</p>
@@ -199,73 +199,73 @@ $$</p>
 <h3 id="general-observables">General Observables</h3>
 <p>A <strong>general observable</strong> is a Hermitian element of $\mathbb{B}_{\Psi}$:</p>
 <p>$$
-\tilde R_\psi = c r_t\, e_t + i\,\vec r_\psi, \qquad \vec r_\psi = (r'_x, r'_y, r'_z) \in \mathbb{R}^3.
+\tilde R_\Psi = c r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi = (r'_x, r'_y, r'_z) \in \mathbb{R}^3.
 $$</p>
 <p>It is the representative $iA$ of a <strong>material element</strong> $A\in\mathbb{B}_{\Phi}$; the material element is what is observed, and the eigenvalues of $iA$ are the readings.</p>
-<p>The <strong>scalar part</strong> $c r_t e_t$ is the trace part: $\mathrm{Tr}(\tilde R_\psi) = 2 c r_t$. The <strong>imaginary vector part</strong> $i\vec r_\psi$ is the traceless part.</p>
-<p>The <strong>spectral decomposition</strong> of $\tilde R_\psi$ is</p>
+<p>The <strong>scalar part</strong> $c r_t e_t$ is the trace part: $\mathrm{Tr}(\tilde R_\Psi) = 2 c r_t$. The <strong>imaginary vector part</strong> $i\vec r_\Psi$ is the traceless part.</p>
+<p>The <strong>spectral decomposition</strong> of $\tilde R_\Psi$ is</p>
 <p>$$
-\tilde R_\psi = \lambda_+ \tilde\Pi_1(\vec u_\psi) + \lambda_- \tilde\Pi_2(\vec u_\psi),
+\tilde R_\Psi = \lambda_+ \tilde\Pi_1(\vec u_\Psi) + \lambda_- \tilde\Pi_2(\vec u_\Psi),
 $$</p>
 <p>with</p>
 <p>$$
-\vec u_\psi = \frac{\vec r_\psi}{|\vec r_\psi|}, \qquad \lambda_\pm = c r_t \pm |\vec r_\psi|.
+\vec u_\Psi = \frac{\vec r_\Psi}{|\vec r_\Psi|}, \qquad \lambda_\pm = c r_t \pm |\vec r_\Psi|.
 $$</p>
-<p>The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{1,2}(\vec u_\psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
-<p><strong>Traceless observables.</strong> The traceless Hermitian elements $i\vec r_\psi$ (with $c r_t = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec r_\psi|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_\psi)$.</p>
+<p>The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.</p>
+<p><strong>Traceless observables.</strong> The traceless Hermitian elements $i\vec r_\Psi$ (with $c r_t = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec r_\Psi|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_\Psi)$.</p>
 <h3 id="compatibility">Compatibility</h3>
-<p>Two observables $\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2} \in \mathbb{B}_{\Psi}$ are <strong>compatible</strong> (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec r_{\psi,1}$ and $\vec r_{\psi,2}$ are parallel or one of them vanishes.</p>
-<p>In the general case (non-parallel, nonzero $\vec r_{\psi,1}$ and $\vec r_{\psi,2}$), the observables are incompatible, and their commutator is</p>
+<p>Two observables $\tilde{R}_{\Psi,1}, \tilde{R}_{\Psi,2} \in \mathbb{B}_{\Psi}$ are <strong>compatible</strong> (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec r_{\Psi,1}$ and $\vec r_{\Psi,2}$ are parallel or one of them vanishes.</p>
+<p>In the general case (non-parallel, nonzero $\vec r_{\Psi,1}$ and $\vec r_{\Psi,2}$), the observables are incompatible, and their commutator is</p>
 <p>$$
-[\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}] = -2\left(\vec r_{\psi,1} \times \vec r_{\psi,2}\right),
+[\tilde{R}_{\Psi,1}, \tilde{R}_{\Psi,2}] = -2\left(\vec r_{\Psi,1} \times \vec r_{\Psi,2}\right),
 $$</p>
-<p>where $\vec r_{\psi,1}\times\vec r_{\psi,2}$ is the ordinary cross product.</p>
+<p>where $\vec r_{\Psi,1}\times\vec r_{\Psi,2}$ is the ordinary cross product.</p>
 <p><strong>Derivation.</strong> We compute</p>
 <p>$$
-\tilde{R}_{\psi,1}\tilde{R}_{\psi,2} = (c^2 r_{t,1}r_{t,2} + \vec r_{\psi,1}\cdot\vec r_{\psi,2})e_t + i(c r_{t,1}\vec r_{\psi,2} + c r_{t,2}\vec r_{\psi,1}) - \vec r_{\psi,1}\times\vec r_{\psi,2},
+\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2} = (c^2 r_{t,1}r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t + i(c r_{t,1}\vec r_{\Psi,2} + c r_{t,2}\vec r_{\Psi,1}) - \vec r_{\Psi,1}\times\vec r_{\Psi,2},
 $$</p>
 <p>$$
-\tilde{R}_{\psi,2}\tilde{R}_{\psi,1} = (c^2 r_{t,1}r_{t,2} + \vec r_{\psi,1}\cdot\vec r_{\psi,2})e_t + i(c r_{t,1}\vec r_{\psi,2} + c r_{t,2}\vec r_{\psi,1}) + \vec r_{\psi,1}\times\vec r_{\psi,2},
+\tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1} = (c^2 r_{t,1}r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t + i(c r_{t,1}\vec r_{\Psi,2} + c r_{t,2}\vec r_{\Psi,1}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2},
 $$</p>
 <p>so</p>
 <p>$$
-[\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}] = -2(\vec r_{\psi,1}\times\vec r_{\psi,2}).
+[\tilde{R}_{\Psi,1}, \tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2}).
 $$</p>
 <p>The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{B}_{\Phi} \cap \mathbb{B}_{H}$, where $\mathbb{B}_{H} = \operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ is the real quaternion subspace, and this intersection is the real span of $\vec e_x, \vec e_y, \vec e_z$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.</p>
 <h2 id="the-born-rule">The Born Rule</h2>
 <p>The <strong>Born rule</strong> gives the probability of an outcome of a measurement. In the biquaternion framework, it is a consequence of the Hermitian form, the positive-definite form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ of the whole algebra. Every probability formula below is written with the star. On $\mathbb{B}_{\Psi}$ the arguments are Hermitian, so the conjugation acts as the identity on them, but it is not omitted: it names the form that is positive definite on the whole algebra. The trace is its matrix reading; in this section it is used only at the end, where normalisation is stated.</p>
 <h3 id="expectation-values">Expectation Values</h3>
-<p>For an observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ and a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the state is normalised by the form against the unit,</p>
+<p>For an observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ and a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the state is normalised by the form against the unit,</p>
 <p>$$
 \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},\qquad \langle e_t\rangle_{*}=1,
 $$</p>
 <p>and the <strong>expectation value</strong> is the normalised Hermitian form,</p>
 <p>$$
-\langle \tilde R_\psi\rangle_{\tilde{Ϛ},*} = \frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
-= c r_t + \vec r\cdot\vec r_\psi.
+\langle \tilde R_\Psi\rangle_{\tilde{Ϛ},*} = \frac{\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+= c r_t + \vec r\cdot\vec r_\Psi.
 $$</p>
 <p><strong>Derivation.</strong> We compute</p>
 <p>$$
-\tilde{Ϛ}\tilde R_\psi^{*} = \tfrac{1}{2}(e_t + i\vec r)(c r_t e_t + i\vec r_\psi) = \tfrac{1}{2}\left(c r_t e_t + i\vec r_\psi + i c r_t \vec r + (i\vec r)(i\vec r_\psi)\right),
+\tilde{Ϛ}\tilde R_\Psi^{*} = \tfrac{1}{2}(e_t + i\vec r)(c r_t e_t + i\vec r_\Psi) = \tfrac{1}{2}\left(c r_t e_t + i\vec r_\Psi + i c r_t \vec r + (i\vec r)(i\vec r_\Psi)\right),
 $$</p>
-<p>where $\tilde R_\psi^{*}=\tilde R_\psi$ and $\tilde{Ϛ}^{*}=\tilde{Ϛ}$ have been used. For pure quaternions, $(i\vec r)(i\vec r_\psi) = -\vec r\vec r_\psi = \vec r\cdot\vec r_\psi - \vec r\times\vec r_\psi$. Taking the scalar part,</p>
+<p>where $\tilde R_\Psi^{*}=\tilde R_\Psi$ and $\tilde{Ϛ}^{*}=\tilde{Ϛ}$ have been used. For pure quaternions, $(i\vec r)(i\vec r_\Psi) = -\vec r\vec r_\Psi = \vec r\cdot\vec r_\Psi - \vec r\times\vec r_\Psi$. Taking the scalar part,</p>
 <p>$$
-\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*}) = \tfrac{1}{2}(c r_t + \vec r\cdot\vec r_\psi),
+\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*}) = \tfrac{1}{2}(c r_t + \vec r\cdot\vec r_\Psi),
 $$</p>
-<p>so $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = \tfrac12(c r_t + \vec r\cdot\vec r_\psi)$, and dividing by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ gives the expectation value $c r_t + \vec r\cdot\vec r_\psi$. The star is present in every step; it acts as the identity because both arguments are Hermitian.</p>
-<p>On $\mathbb{B}_{\Psi}$ the star is inert, so the same number is $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. So the Born rule follows from the Hermitian form once the states and observables are placed in $\mathbb{B}_{\Psi}$. It is not an independent postulate. The density-matrix form of the statement is recorded with the other normalisation statements at the end of the section.</p>
+<p>so $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*} = \tfrac12(c r_t + \vec r\cdot\vec r_\Psi)$, and dividing by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ gives the expectation value $c r_t + \vec r\cdot\vec r_\Psi$. The star is present in every step; it acts as the identity because both arguments are Hermitian.</p>
+<p>On $\mathbb{B}_{\Psi}$ the star is inert, so the same number is $\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi)/\mathrm{Sc}(\tilde{Ϛ})$, the plain scalar. So the Born rule follows from the Hermitian form once the states and observables are placed in $\mathbb{B}_{\Psi}$. It is not an independent postulate. The density-matrix form of the statement is recorded with the other normalisation statements at the end of the section.</p>
 <h3 id="probabilities">Probabilities</h3>
-<p>For a projective measurement of an observable $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = c r_t \pm |\vec r_\psi|$, with probabilities</p>
+<p>For a projective measurement of an observable $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = c r_t \pm |\vec r_\Psi|$, with probabilities</p>
 <p>$$
-\boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_\psi\cdot\vec r\right)\;},
+\boxed{\;p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec r\right)\;},
 $$</p>
-<p>where $\vec u_\psi = \vec r_\psi/|\vec r_\psi|$. The probabilities depend only on the angle between the measurement direction $\vec u_\psi$ and the Bloch vector $\vec r$.</p>
-<p>The derivation is direct: $p_+ = \langle\tilde\Pi_1(\vec u_\psi),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_1(\vec u_\psi)\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\psi)\tilde{Ϛ}^{*})$, and this is $\tfrac{1}{2}(1 + \vec u_\psi\cdot\vec r)$.</p>
+<p>where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$. The probabilities depend only on the angle between the measurement direction $\vec u_\Psi$ and the Bloch vector $\vec r$.</p>
+<p>The derivation is direct: $p_+ = \langle\tilde\Pi_1(\vec u_\Psi),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}^{*})$, and this is $\tfrac{1}{2}(1 + \vec u_\Psi\cdot\vec r)$.</p>
 <h3 id="measurement-update">Measurement Update</h3>
-<p>After a measurement of $\tilde R_\psi$ with outcome $+$, the state is updated by the von Neumann–Lüders rule:</p>
+<p>After a measurement of $\tilde R_\Psi$ with outcome $+$, the state is updated by the von Neumann–Lüders rule:</p>
 <p>$$
-\tilde{Ϛ}_{\mathrm{out}} = \frac{\tilde\Pi_1(\vec u_\psi)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_\psi)}{2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\psi)\tilde{Ϛ}^{*})}.
+\tilde{Ϛ}_{\mathrm{out}} = \frac{\tilde\Pi_1(\vec u_\Psi)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_\Psi)}{2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}^{*})}.
 $$</p>
 <p>Since $\tilde\Pi_1$ is idempotent, the sandwich $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1$ is Hermitian, has its range in the line of $\tilde\Pi_1$, and vanishes on the kernel of $\tilde\Pi_1$; it is therefore a real multiple of $\tilde\Pi_1$:</p>
 <p>$$
@@ -273,7 +273,7 @@ $$</p>
 $$</p>
 <p>where $p_+ = 2\,\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})$. Hence the post-measurement state is simply</p>
 <p>$$
-\boxed{\;\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_\psi)\;}.
+\boxed{\;\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1(\vec u_\Psi)\;}.
 $$</p>
 <p>So the state collapses to the idempotent associated with the outcome. This is the standard collapse, expressed as a composition of algebraic operations.</p>
 <h3 id="normalisation-and-the-trace-reading">Normalisation and the Trace Reading</h3>
@@ -281,13 +281,13 @@ $$</p>
 <p>$$
 \operatorname{Tr}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{Ϛ})=1,
 \qquad
-\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi),
+\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi),
 $$</p>
 <p>and the weight reads</p>
 <p>$$
-p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})}{\operatorname{Tr}(\tilde{Ϛ})}.
+p=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})}{\operatorname{Tr}(\tilde{Ϛ})}.
 $$</p>
-<p>The factor $2$ is the dimension of the image and cancels in the ratio; it is not part of the form. Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\psi$. On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde R_\psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\psi$.</p>
+<p>The factor $2$ is the dimension of the image and cancels in the ratio; it is not part of the form. Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\Psi$. On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde R_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ})\in[0,1]$.Written this way the Born rule has the standard density-matrix form $\mathrm{Tr}(\rho H)=c r_t+\vec r\cdot\vec r_\Psi$.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
 <p><strong>Time evolution of a pure state.</strong> A pure state is an idempotent $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec u)$. It evolves in time by conjugation with a one-parameter group of $*$-unitary elements:</p>
@@ -296,20 +296,20 @@ $$</p>
 $$</p>
 <p>where $\tilde Q(r'_t)$ is a <strong>$*$-unitary biquaternion</strong>, $\tilde Q\tilde Q^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
 <p>$$
-i\hbar\, \frac{d}{dr'_t}\tilde Q(r'_t) = \tilde R_\psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
+i\hbar\, \frac{d}{dr'_t}\tilde Q(r'_t) = \tilde R_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
 $$</p>
-<p>with $\tilde R_\psi = c r_t e_t + i\vec r_\psi \in \mathbb{B}_{\Psi}$ a Hermitian element (the Hamiltonian).</p>
-<p><strong>The solution.</strong> We have $-i\tilde R_\psi = -ic r_t e_t + \vec r_\psi$. The scalar part and the vector part commute, so</p>
+<p>with $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ a Hermitian element (the Hamiltonian).</p>
+<p><strong>The solution.</strong> We have $-i\tilde R_\Psi = -ic r_t e_t + \vec r_\Psi$. The scalar part and the vector part commute, so</p>
 <p>$$
-\boxed{\;\tilde Q(r'_t) = \exp(-i Hr'_t/\hbar) = \exp(-ic r_t r'_t/\hbar)\left(\cos(|\vec r_\psi|r'_t/\hbar)\,e_t + \sin(|\vec r_\psi|r'_t/\hbar)\,\vec u_\psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-i Hr'_t/\hbar) = \exp(-ic r_t r'_t/\hbar)\left(\cos(|\vec r_\Psi|r'_t/\hbar)\,e_t + \sin(|\vec r_\Psi|r'_t/\hbar)\,\vec u_\Psi\right)\;},
 $$</p>
-<p>where $\vec u_\psi = \vec r_\psi/|\vec r_\psi|$ (for $\vec r_\psi \neq 0$). The exponential of the vector part uses $\vec u_\psi^2 = -e_t$, which gives the trigonometric form.</p>
-<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec r_\psi|r'_t/\hbar$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $c r_t\,r'_t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $c r_t\,r'_t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $c r_t = 0$ only the first case survives, at the isolated times $r'_t = n\pi\hbar/|\vec r_\psi|$. For $c r_t \neq 0$ and $\vec r_\psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $c r_t/|\vec r_\psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
+<p>where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$ (for $\vec r_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.</p>
+<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec r_\Psi|r'_t/\hbar$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $c r_t\,r'_t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $c r_t\,r'_t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $c r_t = 0$ only the first case survives, at the isolated times $r'_t = n\pi\hbar/|\vec r_\Psi|$. For $c r_t \neq 0$ and $\vec r_\Psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $c r_t/|\vec r_\Psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
 <p><strong>The trace part of the Hamiltonian does not affect the state.</strong> Since $\exp(-ic r_t r'_t/\hbar)$ is a central complex scalar, and since the conjugation</p>
 <p>$$
 \tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-ic r_t r'_t/\hbar)\tilde u\,\tilde\Pi\,\exp(+ic r_t r'_t/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$</p>
-<p>(with $\tilde u = \cos(|\vec r_\psi|r'_t/\hbar)e_t + \sin(|\vec r_\psi|r'_t/\hbar)\vec u_\psi$ a unit real quaternion), the phase $\exp(-ic r_t r'_t/\hbar)$ cancels out. So only the traceless part $\vec r_\psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
+<p>(with $\tilde u = \cos(|\vec r_\Psi|r'_t/\hbar)e_t + \sin(|\vec r_\Psi|r'_t/\hbar)\vec u_\Psi$ a unit real quaternion), the phase $\exp(-ic r_t r'_t/\hbar)$ cancels out. So only the traceless part $\vec r_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
 <p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:</p>
 <p>$$
 \tilde{Ϛ}(r'_t) = \tilde Q(r'_t)\,\tilde{Ϛ}(0)\,\tilde Q(r'_t)^{*}.
@@ -323,20 +323,20 @@ $$</p>
 <h3 id="the-heisenberg-picture">The Heisenberg Picture</h3>
 <p>In the <strong>Heisenberg picture</strong>, the state is fixed and the observables evolve:</p>
 <p>$$
-\tilde R_\psi_{\mathrm{H}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde R_\psi\,\tilde Q(r'_t).
+\tilde R_\Psi_{\mathrm{H}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde R_\Psi\,\tilde Q(r'_t).
 $$</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong></p>
 <p>$$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\psi_{\mathrm{H}}(r'_t) = [\tilde R_\psi_{\mathrm{H}}(r'_t), \tilde{R}_{\psi,0}],
+i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}}(r'_t) = [\tilde R_\Psi_{\mathrm{H}}(r'_t), \tilde{R}_{\Psi,0}],
 $$</p>
-<p>where $\tilde{R}_{\psi,0}$ is the Hamiltonian.</p>
-<p><strong>Derivation.</strong> We compute the time derivative of $\tilde R_\psi_{\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\psi\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde{R}_{\psi,0}\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde{R}_{\psi,0}$:</p>
+<p>where $\tilde{R}_{\Psi,0}$ is the Hamiltonian.</p>
+<p><strong>Derivation.</strong> We compute the time derivative of $\tilde R_\Psi_{\mathrm{H}}(r'_t) = \tilde Q^{*}\tilde R_\Psi\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde{R}_{\Psi,0}\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde{R}_{\Psi,0}$:</p>
 <p>$$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\psi_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\psi\tilde Q + \tilde Q^{*}\tilde R_\psid\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde{R}_{\psi,0}\tilde R_\psi\tilde Q + \tilde Q^{*}\tilde R_\psi\tilde{R}_{\psi,0}\tilde Q = \tilde Q^{*}[\tilde R_\psi, \tilde{R}_{\psi,0}]\tilde Q.
+i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\psid\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde{R}_{\Psi,0}\tilde R_\Psi\tilde Q + \tilde Q^{*}\tilde R_\Psi\tilde{R}_{\Psi,0}\tilde Q = \tilde Q^{*}[\tilde R_\Psi, \tilde{R}_{\Psi,0}]\tilde Q.
 $$</p>
-<p>Since $\tilde Q(r'_t) = \exp(-i H_{0} r'_t/\hbar)$ is a function of $\tilde{R}_{\psi,0}$, it <strong>commutes with $\tilde{R}_{\psi,0}$</strong>. This is what makes the last expression equal to $[\tilde R_\psi_{\mathrm{H}}, \tilde Q^{*}\tilde{R}_{\psi,0}\tilde Q] = [\tilde R_\psi_{\mathrm{H}}, \tilde{R}_{\psi,0}]$. So</p>
+<p>Since $\tilde Q(r'_t) = \exp(-i H_{0} r'_t/\hbar)$ is a function of $\tilde{R}_{\Psi,0}$, it <strong>commutes with $\tilde{R}_{\Psi,0}$</strong>. This is what makes the last expression equal to $[\tilde R_\Psi_{\mathrm{H}}, \tilde Q^{*}\tilde{R}_{\Psi,0}\tilde Q] = [\tilde R_\Psi_{\mathrm{H}}, \tilde{R}_{\Psi,0}]$. So</p>
 <p>$$
-i\hbar\, \frac{d}{dr'_t}\tilde R_\psi_{\mathrm{H}}(r'_t) = [\tilde R_\psi_{\mathrm{H}}(r'_t), \tilde{R}_{\psi,0}].
+i\hbar\, \frac{d}{dr'_t}\tilde R_\Psi_{\mathrm{H}}(r'_t) = [\tilde R_\Psi_{\mathrm{H}}(r'_t), \tilde{R}_{\Psi,0}].
 $$</p>
 <p>The two pictures are related by a $*$-unitary transformation and give the same physical predictions.</p>
 <h3 id="reversibility">Reversibility</h3>
@@ -344,7 +344,7 @@ $$</p>
 <p>Reversibility is one of the structural features of the biquaternion formulation. The $*$-unitary elements form the group $\mathrm{U}(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{B}_{\Psi}$ preserves the Hermitian form and the biquaternion norm.</p>
 <h2 id="measurement-as-an-algebraic-operation">Measurement as an Algebraic Operation</h2>
 <p>In the standard framework, the measurement postulate is stated separately from the $*$-unitary evolution. In the biquaternion framework, both are consequences of the same structure, the Hermitian form on $\mathbb{B}$, which restricts to the plain form on $\mathbb{B}_{\Psi}$.</p>
-<p><strong>Projective measurement.</strong> A projective measurement of $\tilde R_\psi = c r_t e_t + i\vec r_\psi$ is specified by the spectral decomposition $\tilde R_\psi = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\psi)$. The outcome $+$ has:</p>
+<p><strong>Projective measurement.</strong> A projective measurement of $\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$ is specified by the spectral decomposition $\tilde R_\Psi = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$. The outcome $+$ has:</p>
 <ul>
 <li><strong>Probability</strong> $p_+=\langle\tilde\Pi_1,\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_1\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_1\tilde{Ϛ}) = 2\langle\tilde\Pi_1,\tilde{Ϛ}\rangle_{*}$.</li>
 <li><strong>Post-measurement state</strong> $\tilde{Ϛ}_{\mathrm{out}} = \tilde\Pi_1$, from the sandwich operation.</li>
@@ -405,7 +405,7 @@ $$</p>
 <p>The companion article listed ten structural requirements for a comprehensive quantum theory. We now assess the biquaternion framework against each.</p>
 <p><strong>1. State space.</strong> The states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), i.e., the Bloch ball. This is a canonical object of the algebra, not a postulate.</p>
 <p><strong>2. Observables.</strong> The observables are the Hermitian elements of $\mathbb{B}_{\Psi}$. The spectral decomposition is in terms of idempotents. Each Hermitian element is the representative $iA$ of a <strong>material element</strong> $A\in\mathbb{B}_{\Phi}$, the object observed; the readings are the eigenvalues of $iA$.</p>
-<p><strong>3. Born rule.</strong> The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. It is a consequence of the Hermitian form, positive definite on the whole algebra and equal to the plain form on $\mathbb{B}_{\Psi}$, not an independent postulate; the trace formula $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ is its $2\times2$ reading.</p>
+<p><strong>3. Born rule.</strong> The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. It is a consequence of the Hermitian form, positive definite on the whole algebra and equal to the plain form on $\mathbb{B}_{\Psi}$, not an independent postulate; the trace formula $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$ is its $2\times2$ reading.</p>
 <p><strong>4. Dynamics.</strong> The dynamics is generated by $*$-unitary biquaternions via rotor conjugation, with the Schrödinger equation for the $*$-unitary and the von Neumann equation for the state. This matches the standard formalism.</p>
 <p><strong>5. Measurement rule.</strong> Projective measurement and state update are expressed as algebraic operations: probability from the normalised Hermitian form, state update from the sandwich operation. The reversible–irreversible distinction is algebraic ($*$-unitary vs. idempotent).</p>
 <p><strong>6. Composition rule.</strong> The tensor product of two qubits corresponds to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B} \cong M_4(\mathbb{C})$ (tensor product over $\mathbb{C}$, treating $\mathbb{B}$ as a $\mathbb{C}$-algebra), and the partial trace is defined in terms of the standard trace on the tensor product. This is a natural extension of the framework.</p>
@@ -430,12 +430,12 @@ $$</p>
 \tilde Q\left(\tilde{Q}_1\tilde{Q}_2\right)\tilde Q^{*} = \left(\tilde Q\tilde{Q}_1\tilde Q^{*}\right)\left(\tilde Q\tilde{Q}_2\tilde Q^{*}\right), \qquad \tilde Q \in \mathrm{U}(2),
 $$</p>
 <p>so it is an <strong>automorphism</strong> of $\mathbb{B}$; the map $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$ for a non-$*$-unitary element has no such property, and is only a <strong>congruence</strong>. The difference is visible in the quadratic forms each conjugation leaves invariant.</p>
-<p>The <strong>Hermitian form</strong> $\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}$, equivalently $\mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}^{*})=2\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{*}$ in the $2\times2$ image, is the Euclidean Hilbert–Schmidt form on $\mathbb{B}_{\Psi}$ on which the Born rule rests; it is preserved by <strong>exactly</strong> the $*$-unitary group:</p>
+<p>The <strong>Hermitian form</strong> $\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$, equivalently $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$ in the $2\times2$ image, is the Euclidean Hilbert–Schmidt form on $\mathbb{B}_{\Psi}$ on which the Born rule rests; it is preserved by <strong>exactly</strong> the $*$-unitary group:</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde Q\tilde{R}_{\psi,1}\tilde Q^{*}\,\tilde Q\tilde{R}_{\psi,2}\tilde Q^{*}\right) = \mathrm{Tr}(\tilde{R}_{\psi,1}\tilde{R}_{\psi,2}) \ \ \text{for all Hermitian } \tilde{R}_{\psi,1},\tilde{R}_{\psi,2}
+\mathrm{Tr}\!\left(\tilde Q\tilde{R}_{\Psi,1}\tilde Q^{*}\,\tilde Q\tilde{R}_{\Psi,2}\tilde Q^{*}\right) = \mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}) \ \ \text{for all Hermitian } \tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}
 \quad \Longleftrightarrow \quad \tilde Q \in \mathrm{U}(2),
 $$</p>
-<p>since the left-hand side is $\mathrm{Tr}\big((\tilde Q^{*}\tilde Q)\tilde{R}_{\psi,2}(\tilde Q^{*}\tilde Q)\tilde{R}_{\psi,1}\big)$; setting $S=\tilde Q^{*}\tilde Q$ and taking $\tilde{R}_{\psi,2}=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.</p>
+<p>since the left-hand side is $\mathrm{Tr}\big((\tilde Q^{*}\tilde Q)\tilde{R}_{\Psi,2}(\tilde Q^{*}\tilde Q)\tilde{R}_{\Psi,1}\big)$; setting $S=\tilde Q^{*}\tilde Q$ and taking $\tilde{R}_{\Psi,2}=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.</p>
 <p>The <strong>biquaternion norm</strong> $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{B}_{\Phi}$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}} = 1$:</p>
 <p>$$
 \langle\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm{lor}} \in SL(2,\mathbb{C}).
@@ -456,13 +456,13 @@ $$</p>
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde{W}\,\tilde U_{\mathrm b}, \qquad \tilde{W} \in SU(2),
 $$</p>
 <p>separates a $*$-unitary factor $\tilde{W}$ — the <strong>Thomas–Wigner rotation</strong> — from a positive-definite Hermitian boost factor $\tilde U_{\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in the companion article on the Lorentz group.</p>
-<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde R_\psi\tilde Q$, the $i$ of the phase $\exp(-i Hr'_t/\hbar)$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.</p>
+<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $i\hbar\,d\tilde Q/dr'_t = \tilde R_\Psi\tilde Q$, the $i$ of the phase $\exp(-i Hr'_t/\hbar)$, and the $i$ of the material coordinate $i c r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.</p>
 <p><strong>What the compatibility does and does not provide.</strong> The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.</p>
 <h2 id="what-is-structural-and-what-is-new">What Is Structural and What Is New</h2>
 <p><strong>What is standard QM, reformulated.</strong></p>
 <ul>
 <li>The qubit state space (Bloch ball) is recovered.</li>
-<li>The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$.</li>
+<li>The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde R_\Psi)=2\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\Psi^{*})$.</li>
 <li>The $*$-unitary dynamics is rotor conjugation.</li>
 <li>The projective measurement rule is the sandwich operation.</li>
 <li>The spectral decomposition is in terms of idempotents.</li>
@@ -503,7 +503,7 @@ $$</p>
 <p><strong>7. Empirical content.</strong> The reformulation reproduces standard quantum physics for a single qubit. Does it predict anything new, or does it only reinterpret? If it predicts new physics, at what scale does the deviation from standard QM appear?</p>
 <p><strong>8. The path integral.</strong> The standard path integral formulation of quantum physics is not obviously expressible in the biquaternion framework. Is there a natural path integral in the biquaternion algebra, with a natural measure inherited from the algebra?</p>
 <h2 id="summary">Summary</h2>
-<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The <strong>states</strong> are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), i.e., the Bloch ball, the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, the <strong>dynamics</strong> is rotor conjugation by $*$-unitary biquaternions, and <strong>measurement</strong> is the sandwich operation $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$.</p>
+<p>Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The <strong>states</strong> are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), i.e., the Bloch ball, the <strong>pure states</strong> are the idempotents (the Bloch sphere), and the <strong>observables</strong> are the general Hermitian elements. The <strong>Born rule</strong> is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, the <strong>dynamics</strong> is rotor conjugation by $*$-unitary biquaternions, and <strong>measurement</strong> is the sandwich operation $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$.</p>
 <p>The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the Hermitian form, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.</p>
 <p>The biquaternion space carries the structures the relativistic side reads — the bilinear ones, the spinor module, and the material sector of four-vectors, with the Lorentz group in the invertible elements through the double cover $SL(2,\mathbb{C})$ — and the quantum formalism presented here and the relativistic structure coexist within the same biquaternion space. The full relativistic quantum theory of spinor fields is the natural continuation of the framework: the classical precursor is the biquaternion Dirac equation treated in the companion article, and the quantization of the spinor field is a natural direction for future work.</p>
 <p>The extension to many qubits, the second-quantized version, the connection to quantum field theory, and the question of empirical content are open.</p>
@@ -533,7 +533,7 @@ $$</p>
 <td>Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ (unit elements: $SU(2)$)</td>
 </tr>
 <tr>
-<td>$\tilde R_\psi = c r_t e_t + i\vec r_\psi$</td>
+<td>$\tilde R_\Psi = c r_t e_t + i\vec r_\Psi$</td>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>
@@ -545,27 +545,27 @@ $$</p>
 <td>Idempotent (pure state)</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = \tfrac12(c r_t + \vec r\cdot\vec r_\psi)$, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$</td>
+<td>$\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*} = \tfrac12(c r_t + \vec r\cdot\vec r_\Psi)$, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$</td>
 <td>Hermitian form on a state</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\psi$</td>
+<td>$\langle\tilde{Ϛ},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = c r_t + \vec r\cdot\vec r_\Psi$</td>
 <td>Born rule, the normalised Hermitian form</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde R_\psi) = 2 c r_t$, $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*}) = c r_t + \vec r\cdot\vec r_\psi$</td>
+<td>$\mathrm{Tr}(\tilde R_\Psi) = 2 c r_t$, $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\Psi^{*}) = c r_t + \vec r\cdot\vec r_\Psi$</td>
 <td>Trace, the $2\times2$ reading of the Hermitian form</td>
 </tr>
 <tr>
-<td>$\langle\tilde R_\psi\rangle_{\natural} = \langle\tilde R_\psi,\tilde R_\psi\rangle_{\natural} = \tilde R_\psi\tilde R_\psi^{\natural} = c^2 r_t^2 - |\vec r_\psi|^2$</td>
+<td>$\langle\tilde R_\Psi\rangle_{\natural} = \langle\tilde R_\Psi,\tilde R_\Psi\rangle_{\natural} = \tilde R_\Psi\tilde R_\Psi^{\natural} = c^2 r_t^2 - |\vec r_\Psi|^2$</td>
 <td>Biquaternion norm, signature $(1,3)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\psi,1}\cdot\vec r_{\psi,2}$</td>
+<td>$\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$</td>
 <td>Polarization of the biquaternion norm</td>
 </tr>
 <tr>
-<td>$[\tilde{R}_{\psi,1}, \tilde{R}_{\psi,2}] = -2(\vec r_{\psi,1}\times\vec r_{\psi,2})$</td>
+<td>$[\tilde{R}_{\Psi,1}, \tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$</td>
 <td>Commutator</td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ $$</p>
 <td>Projective measurement</td>
 </tr>
 <tr>
-<td>$\tilde Q(r'_t) = \exp(-ic r_t\,r'_t/\hbar)(\cos(|\vec r_\psi|r'_t/\hbar)e_t + \sin(|\vec r_\psi|r'_t/\hbar)\vec u_\psi)$</td>
+<td>$\tilde Q(r'_t) = \exp(-ic r_t\,r'_t/\hbar)(\cos(|\vec r_\Psi|r'_t/\hbar)e_t + \sin(|\vec r_\Psi|r'_t/\hbar)\vec u_\Psi)$</td>
 <td>$*$-Unitary evolution</td>
 </tr>
 <tr>
