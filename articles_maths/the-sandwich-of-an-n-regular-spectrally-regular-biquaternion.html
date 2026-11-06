@@ -83,7 +83,7 @@ $$</p>
 \qquad \Rho=r\exp(i\alpha),
 $$</p>
 <p>the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: <strong>what does each factor do to the operator?</strong> The answer is read one factor at a time, and the phase does nothing.</p>
-<p>The article is the vector-side companion of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is <em>The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</em>: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>.</p>
+<p>The article is the vector-side companion of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is <em>The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</em>: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi,\Phi}$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>.</p>
 <p>The plan is the following. §<em>The Sandwich of the Word</em> proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §<em>The Scale</em> to §<em>The Rotor</em> take the four factors in the order of the word. §<em>The Eigenbasis and the Two Spinor Slots</em> reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in <em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em>. §<em>The Image and the Kernel</em> identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §<em>The Vanishing of the Modulus</em> records the degenerate case. The article closes with the summary, the notation and the readings.</p>
 <h2 id="conventions">Conventions</h2>
 <p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$ and the squares $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The scalar imaginary is $i$, central, $i^{2}=-1$. An element is $\tilde Q=Q_te_t+\vec Q$ with the four coefficients $Q_\mu$ complex.</p>
@@ -93,9 +93,9 @@ $$</p>
 $$</p>
 <p>The Hermitian and anti-Hermitian subspaces are</p>
 <p>$$
-\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+\mathbb{B}_{\Psi,\Phi}=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
 $$</p>
-<p>On $\mathbb{M}_-$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{M}_+$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central.</p>
+<p>On $\mathbb{B}_{\Phi}$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{B}_{\Psi}$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central.</p>
 <p>The <strong>norm</strong> of the polar series is the complex number</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,e_t ,
@@ -119,7 +119,7 @@ $$</p>
 <p><strong>(a)</strong> $\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}$;</p>
 <p><strong>(b)</strong> $\mathrm{Sd}_{\tilde Q}$ is $\mathbb{C}$-linear in $\tilde X$;</p>
 <p><strong>(c)</strong> $\mathrm{Sd}_{\tilde Q}$ is invertible if and only if $\tilde Q$ is invertible, and then $\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}$;</p>
-<p><strong>(d)</strong> $\mathrm{Sd}_{\tilde Q}$ preserves each of $\mathbb{M}_+$ and $\mathbb{M}_-$;</p>
+<p><strong>(d)</strong> $\mathrm{Sd}_{\tilde Q}$ preserves each of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$;</p>
 <p><strong>(e)</strong> $\mathrm{Sd}_{\tilde Q}(e_t)=\tilde Q\tilde Q^{*}$.</p>
 <p><em>Proof.</em> (a) $(\tilde Q\tilde Q')\tilde X(\tilde Q\tilde Q')^{*}=\tilde Q(\tilde Q'\tilde X\tilde Q'^{*})\tilde Q^{*}$. (b) The multiplication and the right factor are $\mathbb{C}$-linear. (c) The inverse of $\mathrm{Sd}_{\tilde Q}$ is $\mathrm{Sd}_{\tilde Q^{-1}}$, because $\tilde Q^{-1}\tilde Q\tilde X\tilde Q^{*}\tilde Q^{-*}=\tilde X$ and $(\tilde Q^{-1})^{*}=(\tilde Q^{*})^{-1}$. (d) If $\tilde X^{*}=\pm\tilde X$, then</p>
 <p>$$
@@ -163,7 +163,7 @@ $$</p>
 <p>$$
 \mathrm{Sd}_r(\tilde X)=r\tilde Xr^{*}=r^{2}\tilde X .
 $$</p>
-<p>On $\mathbb{M}_-$ and on $\mathbb{M}_+$ alike, every coordinate is multiplied by $r^{2}$: $a\mapsto r^{2}a$ and $\vec b\mapsto r^{2}\vec b$. The scale is a dilation of ratio $r^{2}$ of the whole algebra, and the only factor that changes the norm of the argument,</p>
+<p>On $\mathbb{B}_{\Phi}$ and on $\mathbb{B}_{\Psi}$ alike, every coordinate is multiplied by $r^{2}$: $a\mapsto r^{2}a$ and $\vec b\mapsto r^{2}\vec b$. The scale is a dilation of ratio $r^{2}$ of the whole algebra, and the only factor that changes the norm of the argument,</p>
 <p>$$
 \langle\mathrm{Sd}_r(\tilde X)\rangle_{\natural}=r^{4}\langle \tilde X\rangle_{\natural}.
 $$</p>
@@ -223,7 +223,7 @@ $$</p>
 \mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\,\tilde X\,\tilde U_{\mathrm b},
 $$</p>
 <p>and not a conjugation. Write $b_\parallel=\vec u_{\mathrm b}\cdot\vec b$ and $\vec b_\perp=\vec b-b_\parallel\vec u_{\mathrm b}$.</p>
-<p>On $\mathbb{M}_-$, for $\tilde X=ia\,e_t+\vec b$,</p>
+<p>On $\mathbb{B}_{\Phi}$, for $\tilde X=ia\,e_t+\vec b$,</p>
 <p>$$
 \mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=ia'\,e_t+\vec b',
 \qquad
@@ -231,7 +231,7 @@ a'=a\cosh\theta_{\mathrm{rpd}}-b_\parallel\sinh\theta_{\mathrm{rpd}},\qquad
 b_\parallel'=b_\parallel\cosh\theta_{\mathrm{rpd}}-a\sinh\theta_{\mathrm{rpd}},\qquad
 \vec b_\perp'=\vec b_\perp .
 $$</p>
-<p>On $\mathbb{M}_+$, for $\tilde X=a\,e_t+i\vec b$,</p>
+<p>On $\mathbb{B}_{\Psi}$, for $\tilde X=a\,e_t+i\vec b$,</p>
 <p>$$
 \mathrm{Sd}_{\tilde U_{\mathrm b}}(\tilde X)=a'\,e_t+i\vec b',
 \qquad
@@ -291,7 +291,7 @@ $$</p>
 =\vec X\cos\theta+(\vec u_{\mathrm r}\times\vec X)\sin\theta
 +\vec u_{\mathrm r}(\vec u_{\mathrm r}\cdot\vec X)(1-\cos\theta).
 $$</p>
-<p>On $\mathbb{M}_-$ the rotor fixes the time direction $ie_t$ and rotates $\vec b$; on $\mathbb{M}_+$ it fixes $e_t$ and rotates $i\vec b$. The formula is the same on the two sectors because $i$ is central.</p>
+<p>On $\mathbb{B}_{\Phi}$ the rotor fixes the time direction $ie_t$ and rotates $\vec b$; on $\mathbb{B}_{\Psi}$ it fixes $e_t$ and rotates $i\vec b$. The formula is the same on the two sectors because $i$ is central.</p>
 <h2 id="the-eigenbasis-and-the-two-spinor-slots">The Eigenbasis and the Two Spinor Slots</h2>
 <h3 id="the-two-slots-of-the-sandwich">The Two Slots of the Sandwich</h3>
 <p>Assume $B\neq0$ throughout this section. The sandwich is the composite of two one-sided operators,
@@ -343,7 +343,7 @@ $$
 \overline{\lambda_+\bar\lambda_-}=\lambda_-\bar\lambda_+.
 $$</p>
 <p>This is the precise sense in which the sandwich uses <strong>two slots</strong>. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is the square root of the corresponding product; the exponent reading of that relation is in the companion.</p>
-<p>The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{M}_\pm$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a real splitting into Hermitian sectors, and they are different decompositions.</p>
+<p>The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{B}_{\Psi,\Phi}$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a real splitting into Hermitian sectors, and they are different decompositions.</p>
 <h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
 <p><strong>Theorem.</strong> Let $\mathrm{J}:\mathbb{B}^{\times}\to GL_{\mathbb{R}}(\mathbb{B})$ be the sandwich map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$.</p>
 <p><strong>(a)</strong> The kernel is the central unit circle,
@@ -354,7 +354,7 @@ $$</p>
 $$
 \boxed{\;\operatorname{im}\Theta\cong CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)\;},
 $$
-acting on $\mathbb{M}_-$ by a dilation of ratio $r^{2}$ composed with a proper orthochronous Lorentz transformation.</p>
+acting on $\mathbb{B}_{\Phi}$ by a dilation of ratio $r^{2}$ composed with a proper orthochronous Lorentz transformation.</p>
 <p><strong>(c)</strong> On the modulus-one slice $r=1$, the image is $SO^{+}(1,3)$ and the kernel is $U(1)$.</p>
 <p><strong>(d)</strong> On the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, the image is $SO^{+}(1,3)$ and the kernel is $\{\pm e_t\}$; the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.</p>
 <p><em>Proof.</em> (a) If $\mathrm{Sd}_{\tilde Q}=\mathrm{id}$, then $\tilde Q\tilde Q^{*}=e_t$ by evaluating at $e_t$, so $\tilde Q^{*}=\tilde Q^{-1}$ and $\tilde Q\tilde X\tilde Q^{-1}=\tilde X$ for every $\tilde X$. Hence $\tilde Q$ is central, $\tilde Q=\lambda e_t$, and $\lvert\lambda\rvert=1$. Conversely, a central $\lambda e_t$ with $\lvert\lambda\rvert=1$ gives the identity, by the computation of §<em>The Central Phase</em>.</p>
@@ -363,8 +363,8 @@ acting on $\mathbb{M}_-$ by a dilation of ratio $r^{2}$ composed with a proper o
 \operatorname{im}\Theta\cong\mathbb{R}_{>0}\times SO^{+}(1,3)=CO^{+}(1,3).
 $$</p>
 <p>(c) At $r=1$ the element is $\exp(i\alpha)U$ with $U\in SL(2,\mathbb{C})$, the pair unique up to $(\alpha,U)\mapsto(\alpha+\pi,-U)$. The kernel is still $U(1)$, and the quotient is $SO^{+}(1,3)$.</p>
-<p>(d) At $\langle\tilde Q\rangle_{\natural}=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{M}_-$ is $\{\pm e_t\}$.</p>
-<p><strong>Corollary (the isometry slice).</strong> The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,</p>
+<p>(d) At $\langle\tilde Q\rangle_{\natural}=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{B}_{\Phi}$ is $\{\pm e_t\}$.</p>
+<p><strong>Corollary (the isometry slice).</strong> The sandwich is an isometry of the Lorentzian norm on $\mathbb{B}_{\Phi}$ exactly when $r=1$. For general $r$,</p>
 <p>$$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$</p>
 <p>so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.</p>
 <p><strong>Remark (what the image is not).</strong> The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>, and of this article.</p>
@@ -430,7 +430,7 @@ The sandwich is therefore the two-slot operator: its spectrum is the four produc
 <td>the quaternion and coefficient conjugations</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_\pm$</td>
+<td>$\mathbb{B}_{\Psi,\Phi}$</td>
 <td>the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$</td>
 </tr>
 <tr>
@@ -499,7 +499,7 @@ The sandwich is therefore the two-slot operator: its spectrum is the four produc
 </tr>
 <tr>
 <td>$B_\pm$</td>
-<td>the $4\times4$ matrices of the boost on $\mathbb{M}_\pm$</td>
+<td>the $4\times4$ matrices of the boost on $\mathbb{B}_{\Psi,\Phi}$</td>
 </tr>
 <tr>
 <td>$\mathsf R(\theta,\vec u_{\mathrm r})$</td>
@@ -525,7 +525,7 @@ The sandwich is therefore the two-slot operator: its spectrum is the four produc
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</a>, for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.</li>
+<li><a href="the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</a>, for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ by the phase $i$.</li>
 <li><a href="the-sandwich-exponential-of-an-n-regular-spectrally-regular-biquaternion.html">The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</a>, for the operator exponential, the doubling rule and the cancellation of the phase.</li>
 <li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.</li>
 <li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-regular-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Regular Biquaternion</a>, for the general dictionary between the spectral data and the polar angles when the axes do not commute.</li>

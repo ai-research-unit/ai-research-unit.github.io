@@ -75,7 +75,7 @@
 \rho = \frac{M_W^2}{M_Z^2\cos^2\theta_W} ,
 $$</p>
 <p>and its measured value is one to better than a part in a thousand. In the Standard Model this is not an accident of the numbers: it follows from a symmetry of the scalar sector called <strong>custodial symmetry</strong>, an approximate global $SU(2)$ that rotates the components of the scalar multiplet and is broken only by the weak hypercharge coupling and by the mass splittings within multiplets. The custodial symmetry is the diagonal of an $SU(2)_L\times SU(2)_R$ that acts on the scalar doublet, and the vacuum expectation value of that doublet is invariant under the diagonal, so the diagonal survives and ties the charged and neutral mass matrices together. The $\rho$ parameter is the precise measure of how well it survives.</p>
-<p>This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contributes to custodial symmetry and to $\rho$. The algebra's multiplication carries exactly the structure that custodial symmetry uses: a scalar field valued in the real quaternions $\mathbb{H}_{\mathbb{B}}$ admits a <strong>left and a right</strong> action of $SU(2)$,</p>
+<p>This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contributes to custodial symmetry and to $\rho$. The algebra's multiplication carries exactly the structure that custodial symmetry uses: a scalar field valued in the real quaternions $\mathbb{B}_{H}$ admits a <strong>left and a right</strong> action of $SU(2)$,</p>
 <p>$$
 \tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{*},
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
@@ -83,7 +83,7 @@ $$</p>
 <p>and a central vacuum expectation value $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $g_L = g_R$. That is the custodial mechanism in the framework's own multiplication. The framework's actual scalar, however, is the central field $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t$, which is a singlet of every non-abelian group and cannot be the doublet that the construction requires. The algebra therefore supplies the custodial action, and the framework's scalar sector does not supply the field on which it would act. On the unit real quaternions the adjoint ${}^{*}$ is the group inverse, so the right factor $g_R^{*}$ is the usual right factor of the chiral action and no operator inverse is written.</p>
 <p>The findings are the following.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The quaternion-valued scalar $\tilde Q\in\mathbb{H}_{\mathbb{B}}$ carries the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
+<li><strong>Established, and recomputed below.</strong> The quaternion-valued scalar $\tilde Q\in\mathbb{B}_{H}$ carries the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
 $$
 \rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2v_i^2\,T_{3i}^2}
 $$
@@ -141,9 +141,9 @@ $$</p>
 <p>With $g_{\mathrm Y}\neq0$ the equality is violated only through the mixing with the hypercharge field, which is a subgroup of the broken $SU(2)_R$, and the violation is a loop effect and a multiplet-splitting effect, not a tree-level one. This is the standard custodial mechanism (Weinberg 1976; Sikivie, Susskind, Voloshin, and Zakharov 1980), and it is imported.</p>
 <h2 id="the-custodial-action-in-the-biquaternion-algebra">The Custodial Action in the Biquaternion Algebra</h2>
 <p>The structure above is a left and a right multiplication of a two-by-two matrix, and that is exactly what the biquaternion algebra's multiplication is. This section makes the identification precise.</p>
-<p><strong>The scalar as a quaternion.</strong> A complex doublet has four real components, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has four real dimensions. The natural carrier is therefore the real quaternion</p>
+<p><strong>The scalar as a quaternion.</strong> A complex doublet has four real components, and the real-quaternion subspace $\mathbb{B}_{H}$ has four real dimensions. The natural carrier is therefore the real quaternion</p>
 <p>$$
-\tilde Q = Q_t\,e_t + Q_x\,\vec e_x + Q_y\,\vec e_y + Q_z\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
+\tilde Q = Q_t\,e_t + Q_x\,\vec e_x + Q_y\,\vec e_y + Q_z\,\vec e_z \in \mathbb{B}_{H} ,
 \qquad Q_k\in\mathbb{R},
 $$</p>
 <p>on which the unit real quaternions act on the left and on the right,</p>
@@ -163,7 +163,7 @@ $$</p>
 <p>which is the framework's similarity transformation, and it is the algebraic image of $SU(2)_V$.</p>
 <p><strong>The central vacuum.</strong> A vacuum expectation value that is central,</p>
 <p>$$
-\langle\tilde Q\rangle = \frac{v}{\sqrt2}\,e_t \in \mathbb{C}_{\mathbb{B}} ,
+\langle\tilde Q\rangle = \frac{v}{\sqrt2}\,e_t \in \mathbb{B}_{C} ,
 $$</p>
 <p>is invariant under the diagonal because it commutes with every $g$, so</p>
 <p>$$
@@ -241,7 +241,7 @@ $$</p>
 <p><strong>The oblique parameters.</strong> The custodial-violating corrections of the Standard Model are collected in the oblique parameters $S$, $T$ and $U$, of which $T$ is essentially the deviation of $\rho$ from one, $\rho-1\approx\alpha T$. These are standard electroweak observables (Peskin and Takeuchi 1990; Altarelli and Grunewald 2004) and are quoted, not derived here; they require the same multiplet content and hypercharge assignments that the framework does not supply, and their computation is therefore outside what the framework can currently address. What the framework supplies is the group-theoretic reason why $T$ is small at tree level: the diagonal of the chiral group is unbroken in both the scalar and the fermion sectors, and the breaking that produces the Goldstone bosons leaves it intact.</p>
 <h2 id="what-the-framework-supplies-and-what-it-does-not">What the Framework Supplies and What It Does Not</h2>
 <p>The construction above is the standard custodial mechanism written in the framework's multiplication. The framework's own scalar sector is smaller, and the difference should be stated without softening.</p>
-<p><strong>The framework's scalar is central.</strong> The scalar of <em>The Higgs Mechanism in Biquaternionic Form</em> is $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a <strong>singlet</strong> of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde{Ξ}\,g^{*} = \tilde{Ξ}$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde Q$ of the previous sections is a <strong>different object</strong> from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.</p>
+<p><strong>The framework's scalar is central.</strong> The scalar of <em>The Higgs Mechanism in Biquaternionic Form</em> is $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a <strong>singlet</strong> of the compact $SU(2)\subset\mathbb{B}_{\Phi}$: the left and right actions both act trivially on it, $g\,\tilde{Ξ}\,g^{*} = \tilde{Ξ}$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde Q$ of the previous sections is a <strong>different object</strong> from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.</p>
 <p><strong>The non-abelian action is vector-like.</strong> Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion agendas show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.</p>
 <p><strong>Hypercharge is not supplied.</strong> The custodial group's right factor is broken to its $T_3^R$ subgroup by the hypercharge interaction, and the framework derives no hypercharge, no assignment of it, and no mixing angle. The $\rho$ parameter's custodial protection is a statement about the relative size of the charged and neutral mass matrices, and it presupposes an abelian factor whose charge assignment is fixed; the framework supplies the central abelian factor but not the assignment that makes it hypercharge.</p>
 <p><strong>What is genuinely the framework's.</strong> Two things are. First, the custodial action is the algebra's left–right multiplication, so the framework supplies the <strong>action</strong> on the real-quaternion space rather than borrowing it: given a quaternion-valued scalar, the custodial $SU(2)_L\times SU(2)_R$, its diagonal, and its central-invariant vacuum are all there. Second, the relation between the custodial triplet and the pion triplet is a statement about adjoints of the framework's compact group, and the framework supplies both. The gap is the field content, not the group theory, and it is the same gap that the Higgs-mechanism and agenda articles leave open.</p>
@@ -250,7 +250,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
-<p><strong>Can a quaternion-valued scalar be built in the framework?</strong> The carrier of the custodial action is $\mathbb{H}_{\mathbb{B}}$, and a scalar potential on it that is invariant under $SU(2)_L\times SU(2)_R$ and has a central minimum is not constructed. Whether such a potential exists and whether its scalar is the framework's natural doublet is open.</p>
+<p><strong>Can a quaternion-valued scalar be built in the framework?</strong> The carrier of the custodial action is $\mathbb{B}_{H}$, and a scalar potential on it that is invariant under $SU(2)_L\times SU(2)_R$ and has a central minimum is not constructed. Whether such a potential exists and whether its scalar is the framework's natural doublet is open.</p>
 </li>
 <li>
 <p><strong>Does the framework's scalar sector admit a doublet at all?</strong> The central scalar is a singlet; a doublet would have to be a different field. The agenda's classification is "known route, blocked" and the block is the chiral action and the hypercharge, not the algebra.</p>
@@ -302,15 +302,15 @@ $$</p>
 <td>Central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$</td>
 <td>Informational (Hermitian) and material (anti-Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$, $\mathbb{H}^1_{\mathbb{B}}$</td>
 <td>Real quaternions; unit real quaternions $\cong SU(2)$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>Centre; home of the central vacuum</td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ $$</p>
 <td>Standard Hermitian generators of the compact group</td>
 </tr>
 <tr>
-<td>$\tilde Q = Q_te_t + \sum_k Q_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde Q = Q_te_t + \sum_k Q_k\vec e_k\in\mathbb{B}_{H}$</td>
 <td>Quaternion-valued scalar (carrier of the custodial action)</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ $$</p>
 <td>Central vacuum; custodial invariant</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$</td>
 <td>Framework's actual scalar; a singlet</td>
 </tr>
 <tr>

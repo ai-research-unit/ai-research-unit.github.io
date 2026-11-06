@@ -71,7 +71,7 @@
         <h1 id="exercise-the-bloch-ball-and-the-geometry-of-mixed-states"><strong>Exercise: The Bloch Ball and the Geometry of Mixed States</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article is a <strong>worked exercise</strong> on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, and $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$ and the centre is $\mathbb{B}_{C}$. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
 <p><strong>Assumed results.</strong> From the parent article we take, without rederivation, the following. A state is an element</p>
 <p>$$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
@@ -185,7 +185,7 @@ $$</p>
 <p><strong>Problem.</strong> (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.</p>
 <p><strong>Solution.</strong> (a) The difference of two states is</p>
 <p>$$
-\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{H}_{\mathbb{B}} \text{ a pure real quaternion.}
+\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{B}_{H} \text{ a pure real quaternion.}
 $$</p>
 <p>For a pure real quaternion $\vec q = \vec r - \vec s$ one has $\vec q^2 = -|\vec q|^2 e_t$, hence</p>
 <p>$$
@@ -196,7 +196,7 @@ $$</p>
 <p>$$
 |\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \sqrt{(\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2} = \tfrac12|\vec r-\vec s|\,e_t,
 $$</p>
-<p>the positive square root in $\mathbb{M}_+$. Hence</p>
+<p>the positive square root in $\mathbb{B}_{\Psi}$. Hence</p>
 <p>$$
 \boxed{\;D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|
 = \tfrac12\cdot\tfrac12|\vec r-\vec s|\cdot\mathrm{Tr}(e_t)
@@ -309,20 +309,20 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>Centre of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (states and observables)</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
-<td>Anti-Hermitian subspace, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>Anti-Hermitian subspace, $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$</td>

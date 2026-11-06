@@ -193,13 +193,13 @@ $$</p>
 \boxed{\;\tilde{Ϛ}_1=\mathrm{Tr}_2(\tilde\Pi_\theta)=\tfrac12 e_t+\tfrac{i\cos2\theta}{2}\vec e_z
 =\tfrac12\left(e_t+i\cos2\theta\,\vec e_z\right)\;}.
 $$</p>
-<p>This is a state of $\mathbb{M}_+$ of the standard form $\tfrac12(e_t+i\vec r)$ with Bloch vector</p>
+<p>This is a state of $\mathbb{B}_{\Psi}$ of the standard form $\tfrac12(e_t+i\vec r)$ with Bloch vector</p>
 <p>$$
 \vec r=\cos2\theta\,\vec e_z,\qquad |\vec r|=|\cos2\theta| .
 $$</p>
 <p>The mechanism is worth naming precisely, because it corrects an interpretation that the Bell case invites. The terms that survive the partial trace are those with $e_t$ in the <strong>second</strong> factor. For the Bell idempotents the only such term is $e_t\otimes e_t$, which is why their reduced state is scalar; but the general entangled state also carries terms $e_\mu\otimes e_t$ with $\mu\in\{x,y,z\}$, and those survive and make the reduced state non-scalar. Here the term $i\cos2\theta\,\vec e_z\otimes e_t$ is exactly what turns $\tfrac12 e_t$ into $\tfrac12(e_t+i\cos2\theta\,\vec e_z)$. The rule is not "only $e_t\otimes e_t$ survives"; it is "only terms with $e_t$ in the traced factor survive".</p>
 <h3 id="the-entropy-from-the-single-qubit-formula">The entropy from the single-qubit formula</h3>
-<p>The reduced state is an element of $\mathbb{M}_+$ with Bloch vector of length $|\cos2\theta|$. The parent article <em>Quantum Physics in Biquaternionic Form</em> gives the spectral decomposition and entropy of such a state:</p>
+<p>The reduced state is an element of $\mathbb{B}_{\Psi}$ with Bloch vector of length $|\cos2\theta|$. The parent article <em>Quantum Physics in Biquaternionic Form</em> gives the spectral decomposition and entropy of such a state:</p>
 <p>$$
 \lambda_\pm=\tfrac12\left(1\pm|\vec r|\right),
 \qquad
@@ -215,7 +215,7 @@ $$</p>
 \boxed{\;S(\tilde{Ϛ}_1)=-\cos^2\theta\,\log\cos^2\theta-\sin^2\theta\,\log\sin^2\theta
 =h(\cos^2\theta)\;}.
 $$</p>
-<p>This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{M}_+$.</p>
+<p>This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ are $(\cos\theta,\sin\theta)$, and $h(\cos^2\theta)=h(s_1^2)$. The biquaternion route reaches the same number by a different mechanism — it never diagonalises $M$; it reads the Bloch vector off the partial trace and then uses the single-qubit entropy formula on $\mathbb{B}_{\Psi}$.</p>
 <p>At the endpoints:</p>
 <p>$$
 \theta=0:\quad \tilde{Ϛ}_1=\tilde\Pi_1,\quad \vec r=\vec e_z,\quad S=0;
@@ -231,7 +231,7 @@ $$</p>
 \qquad
 \tilde{Ϛ}_2=\mathrm{Tr}_1(\tilde\Pi)=\tfrac12\left(e_t+i\vec r_2\right)
 $$</p>
-<p>be its reduced states. Then $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ are states of $\mathbb{M}_+$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence</p>
+<p>be its reduced states. Then $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ are states of $\mathbb{B}_{\Psi}$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence</p>
 <p>$$
 \boxed{\;|\vec r_1|=|\vec r_2|,
 \qquad
@@ -239,7 +239,7 @@ S(\tilde{Ϛ}_1)=S(\tilde{Ϛ}_2)
 =h\!\left(\frac{1+|\vec r_1|}{2}\right)\;}.
 $$</p>
 <p>So the entanglement entropy of a pure two-qubit state is a function of a single invariant, the <strong>length of either reduced Bloch vector</strong>. Maximal entanglement is $|\vec r_1|=0$; a product state is $|\vec r_1|=1$. The reduced Bloch vectors may point in different directions — they do, in general, since they live on different factors — but their lengths agree.</p>
-<h2 id="the-entropy-functional-on-math164">The Entropy Functional on $\mathbb{M}_+$</h2>
+<h2 id="the-entropy-functional-on-math164">The Entropy Functional on $\mathbb{B}_{\Psi}$</h2>
 <p>The parent article <em>The Informational Sector: States, Observables and Probability</em> closes its list of open questions with the following: the logarithm on $\mathbb{B}$ exists but is multivalued, the trace is available but is a scalar, and "a natural candidate would be $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, but this needs verification." The candidate can now be checked.</p>
 <p>Let $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ be a state with $0<|\vec r|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, both positive, and its spectral decomposition is</p>
 <p>$$
@@ -311,7 +311,7 @@ $$</p>
 $$</p>
 <p>which tends to $-\infty$ as $p\to1$. Interpret: as entanglement is switched on from a product state the entropy rises with an infinite slope in $p$, whereas at maximal entanglement ($p=\tfrac12$) the slope vanishes; the last increment of entanglement is entropically the cheapest.</p>
 <p><strong>P5 (the mixed-state question, unresolved).</strong> For the Bell-diagonal mixture $\tilde{Ϛ}_p=p\tilde\Pi_{Ξ^+}+(1-p)\tilde\Pi_{Ξ^-}$, show that $\tilde{Ϛ}_1=\tfrac12 e_t$ and $S(\tilde{Ϛ}_1)=\log2$ for every $p\in[0,1]$, while the joint state is separable at least at $p=\tfrac12$. Determine the set of $p$ for which $\tilde{Ϛ}_p$ is entangled, and show that no function of $\tilde{Ϛ}_1$ can reproduce that set. What extra data about $\tilde{Ϛ}$ is needed? (The answer is the subject of the entanglement-of-formation literature; it is not developed in this series.)</p>
-<p><strong>P6 (purification).</strong> Show that for any state $\tilde{Ϛ}_1$ of $\mathbb{M}_+$ there is a pure two-qubit idempotent $\tilde\Pi$ in $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Tr}_2(\tilde\Pi)=\tilde{Ϛ}_1$, and that the entanglement entropy of $\tilde\Pi$ equals $S(\tilde{Ϛ}_1)$. Conclude that the partial-trace entropy of a mixed state is the entanglement entropy of its <strong>purification</strong>, not of the state itself. This is the precise sense in which the partial trace does measure entanglement — of a larger, pure system.</p>
+<p><strong>P6 (purification).</strong> Show that for any state $\tilde{Ϛ}_1$ of $\mathbb{B}_{\Psi}$ there is a pure two-qubit idempotent $\tilde\Pi$ in $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Tr}_2(\tilde\Pi)=\tilde{Ϛ}_1$, and that the entanglement entropy of $\tilde\Pi$ equals $S(\tilde{Ϛ}_1)$. Conclude that the partial-trace entropy of a mixed state is the entanglement entropy of its <strong>purification</strong>, not of the state itself. This is the precise sense in which the partial trace does measure entanglement — of a larger, pure system.</p>
 <h2 id="relation-to-the-other-exercises">Relation to the Other Exercises</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -365,7 +365,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The entanglement entropy of a pure two-qubit state is the von Neumann entropy of either reduced state, $S=-\mathrm{Tr}(\rho_1\log\rho_1)$, and it is computed from the partial trace. The exercise worked the computation by two routes and reached the same number both times.</p>
 <p><strong>The Schmidt route.</strong> Writing $|\tilde{Ξ}_{\mathrm{sp}}\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives $\rho_1=MM^\dagger$ and $\rho_2=M^\dagger M$. The singular values of $M$ are the Schmidt coefficients $s_1,s_2$, and the reduced states have the common spectrum $s_1^2,s_2^2$. Hence $S(\rho_1)=S(\rho_2)=h(s_1^2)$: the entropy depends on the Schmidt data alone, vanishes exactly on product states, and equals $\log2$ exactly on maximally entangled states.</p>
-<p><strong>The biquaternion route.</strong> For the family $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $\tilde\Pi_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\tilde{Ϛ}_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.</p>
+<p><strong>The biquaternion route.</strong> For the family $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $\tilde\Pi_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\tilde{Ϛ}_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{B}_{\Psi}$ then gives $S=h(\cos^2\theta)$.</p>
 <p><strong>The entropy functional.</strong> The candidate of <em>The Informational Sector: States, Observables and Probability</em>, $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, is correct for states in the interior of the Bloch ball when the principal branch of the biquaternion logarithm is used. It is the trace formula in disguise, since $\mathrm{Tr}=2\,\mathrm{Sc}$. Two qualifications are recorded: the branch must be the principal one, and the logarithm — hence the formula — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension.</p>
 <p><strong>The limit of the interpretation.</strong> For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $\tilde\Pi_{Ξ^+}$ and $\tilde\Pi_{Ξ^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -394,11 +394,11 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (states, observables)</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace (material sector)</td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
-<td>General state of $\mathbb{M}_+$, $|\vec r|\le1$</td>
+<td>General state of $\mathbb{B}_{\Psi}$, $|\vec r|\le1$</td>
 </tr>
 <tr>
 <td>$\tilde{Ϛ}_1=\mathrm{Tr}_2\tilde\Pi$</td>

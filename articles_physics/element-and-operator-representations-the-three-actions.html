@@ -207,26 +207,26 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Material $\mathbb{M}_-$</td>
+<td>Material $\mathbb{B}_{\Phi}$</td>
 <td>$Q_t$ purely imaginary, $Q_k$ real</td>
 <td>$(i c r'_t, r_x, r_y, r_z)$</td>
 <td>four-position, four-momentum, four-velocity</td>
 </tr>
 <tr>
-<td>Informational $\mathbb{M}_+$</td>
+<td>Informational $\mathbb{B}_{\Psi}$</td>
 <td>$Q_t$ real, $Q_k$ purely imaginary</td>
 <td>$(c t, i r'_{x}, i r'_{y}, i r'_{z})$</td>
 <td>state, observable, field strength</td>
 </tr>
 <tr>
-<td>Real quaternion $\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real quaternion $\mathbb{B}_{H}$</td>
 <td>all four coefficients real</td>
 <td>$(q_t, q_x, q_y, q_z)$</td>
 <td>rotor, scale, ordinary quaternion</td>
 </tr>
 </tbody>
 </table></div>
-<p>The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{M}_-$ and to its negative on $\mathbb{M}_+$.</p>
+<p>The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{B}_{\Phi}$ and to its negative on $\mathbb{B}_{\Psi}$.</p>
 <h2 id="the-element-representations">The Element Representations</h2>
 <h3 id="the-four-vector">The Four-Vector</h3>
 <p>The four-vector is the coefficient list</p>
@@ -249,7 +249,7 @@ $$</p>
 <p>$$
 \operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t, \qquad \det\mathsf{M}_2(\tilde Q)=N.
 $$</p>
-<p>In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{M}_+$ and $\mathbb{M}_-$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.</p>
+<p>In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.</p>
 <p>The matrix acts on a two-component column. That column is the <strong>spinor</strong>, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus reads as the two <strong>Peirce copies</strong>; the older name <strong>column index</strong>, kept below as a label for the column index, is a copy index and not the chirality. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.</p>
 <h3 id="the-math65-left-regular-element">The $4\times4$ Left Regular Element</h3>
 <p>The left regular matrix $\mathsf{M}_{4L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the axis-free frame of <em>Matrix Representations Conventions</em>, §<em>The 4×4 Matrix Representation</em>. Its invariants are the doubled invariants:</p>
@@ -299,7 +299,7 @@ $$</p>
 <h3 id="the-four-vector-operator">The Four-Vector Operator</h3>
 <p>On the material sector the sandwich is the frame action</p>
 <p>$$
-\operatorname{H}_{\tilde Q}(\tilde W)=\tilde Q\tilde W\tilde Q^{*}, \qquad \tilde W\in\mathbb{M}_-.
+\operatorname{H}_{\tilde Q}(\tilde W)=\tilde Q\tilde W\tilde Q^{*}, \qquad \tilde W\in\mathbb{B}_{\Phi}.
 $$</p>
 <p>It is linear in the four-vector and quadratic in the frame. On the identity it returns $\tilde Q\tilde Q^{*}$, whose scalar part is $\sum_\mu|Q_\mu|^2$, the Euclidean square of the Born form, and not the indefinite interval $\sum_\mu Q_\mu^2$. The two numbers answer different questions: the positive one is a probability weight, the indefinite one a spacetime length. The operator carries the positive one because it acts on the algebra and not on the metric.</p>
 <p>A boost mixes time and space, a rotation does not; on the cone the operator collapses to a projection or a nilpotent. The absence of a rest frame for a null four-vector is the physical face of the collapse. These are the coordinate forms of the $2\times2$ statements, and the article on the four-vector operator owns the computations.</p>
@@ -381,7 +381,7 @@ $$</p>
 <p>The identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$. A frame change is specified by an operand and its adjoint operand, and a common central phase cancels between them. The pair, not either member, is the physical object. The operator is invertible exactly when both parameters are units; if either is a zero divisor, the kernel is nontrivial. This is the operator-level form of the cone: the non-invertible two-sided maps are exactly those whose pair meets it.</p>
 <h3 id="the-sandwich-sectors-congruence-self-adjointness">The Sandwich: Sectors, Congruence, Self-Adjointness</h3>
 <p>The sandwich has three properties that the general two-sided operator does not.</p>
-<p><strong>It preserves the two sectors.</strong> For $X\in\mathbb{M}_\pm$,</p>
+<p><strong>It preserves the two sectors.</strong> For $X\in\mathbb{B}_{\Psi,\Phi}$,</p>
 <p>$$
 (\tilde QX\tilde Q^{*})^{*}=\tilde QX^{*}\tilde Q^{*}=\pm\,\tilde QX\tilde Q^{*},
 $$</p>
@@ -391,7 +391,7 @@ $$</p>
 <p>$$
 \bigl(\operatorname{H}_{\tilde Q}\bigr)^{\dagger}=\operatorname{H}_{\tilde Q^{*}},
 $$</p>
-<p>so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.</p>
+<p>so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.</p>
 <p>On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.</p>
 <h3 id="the-monoid-of-acting-maps">The Monoid of Acting Maps</h3>
 <p>The left multiplications form a monoid under composition, isomorphic to the multiplicative monoid of $\mathbb{B}$:</p>
@@ -488,14 +488,14 @@ $$</p>
 <td>Material sector</td>
 <td>$i\mathbb{R}\oplus\mathbb{R}^3$</td>
 <td>anti-Hermitian matrices</td>
-<td>the subspace $Q\,\mathbb{M}_-$</td>
+<td>the subspace $Q\,\mathbb{B}_{\Phi}$</td>
 <td>invariant subspace</td>
 </tr>
 <tr>
 <td>Informational sector</td>
 <td>$\mathbb{R}\oplus i\mathbb{R}^3$</td>
 <td>Hermitian matrices</td>
-<td>the subspace $Q\,\mathbb{M}_+$</td>
+<td>the subspace $Q\,\mathbb{B}_{\Psi}$</td>
 <td>invariant subspace</td>
 </tr>
 <tr>
@@ -537,7 +537,7 @@ $$</p>
 <li>The one-sided composition laws are $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.</li>
 <li>The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.</li>
 <li>A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.</li>
-<li>The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the $*$-unitary slice it is an inner automorphism.</li>
+<li>The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$. On the $*$-unitary slice it is an inner automorphism.</li>
 <li>The acting maps form a monoid; the reversible maps are the units off the cone, the states are the idempotents, and the cone is the boundary between them.</li>
 <li>The Peirce decomposition gives the four corners: populations on the diagonal, coherences off it.</li>
 <li>No picture is more fundamental than another; each is a choice of what to make visible, and the correspondence table is the translation between them.</li>
@@ -596,11 +596,11 @@ $$</p>
 <td>the Hermitian adjoint, the adjoint for $\langle X,Y\rangle_{*}=\operatorname{Sc}(X^{*}Y)$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
 <td>the material and informational sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$, $\mathbb{B}_{iH}$</td>
 <td>the real quaternion and imaginary quaternion subspaces</td>
 </tr>
 <tr>

@@ -165,7 +165,7 @@ $$</p>
 $$
 D_\mu\tilde{Q} = \partial/\partial R_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*} ,
 $$
-because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.</p>
+because the infinitesimal Lorentz action on $\mathbb{B}_{\Phi}$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.</p>
 <h2 id="the-bianchi-identity">The Bianchi Identity</h2>
 <p>The field strength is built from the connection by differentiation, so it cannot be arbitrary: it satisfies a differential identity. With the adjoint covariant derivative defined above, the <strong>Bianchi identity</strong> is</p>
 <p>$$
@@ -277,10 +277,10 @@ $$</p>
 <p><strong>The curvature as one commutator.</strong> The reduction "$[D_\mu,D_\nu] = $ multiplication by $i\kappa F_{\mu\nu}$" is exact, but $F_{\mu\nu}$ itself is a curl plus a commutator, and is a single algebra commutator only when the curl $\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu$ vanishes. Is there a gauge-covariant way to write the full $F_{\mu\nu}$ as a single commutator of algebra-valued objects, or is the split into curl and commutator intrinsic?</p>
 </li>
 <li>
-<p><strong>The reality class of the connection.</strong> Inherited from the non-abelian article, unchanged: because $\partial/\partial R_t = -i\partial/\partial r'_t$, no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, and the consistent mixed assignment (time in $\mathrm{SU}(2)\subset\mathbb{M}_-$, space in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$) is not shown to be the intended one.</p>
+<p><strong>The reality class of the connection.</strong> Inherited from the non-abelian article, unchanged: because $\partial/\partial R_t = -i\partial/\partial r'_t$, no single Hermitian-conjugation eigenspace is preserved by the gauge transformation across all four components, and the consistent mixed assignment (time in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$, space in $i\,\mathrm{SU}(2)\subset\mathbb{B}_{\Psi}$) is not shown to be the intended one.</p>
 </li>
 <li>
-<p><strong>Which compact gauge algebra.</strong> Also inherited: the framework exhibits $\mathrm{SU}(2)$ in the vector part of $\mathbb{M}_-$, and the material sector decomposes as $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. Whether a larger compact algebra is available, and which the framework selects, is open.</p>
+<p><strong>Which compact gauge algebra.</strong> Also inherited: the framework exhibits $\mathrm{SU}(2)$ in the vector part of $\mathbb{B}_{\Phi}$, and the material sector decomposes as $\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$. Whether a larger compact algebra is available, and which the framework selects, is open.</p>
 </li>
 <li>
 <p><strong>The matter representation.</strong> The covariant derivative here acts on matter by left multiplication and on the curvature by the commutator. For a non-abelian connection the left and right actions on a matter field differ, and which representation the matter field carries is not fixed here.</p>
@@ -293,7 +293,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ and $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa = ϙ/\hbar$,</p>
+<p>The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa = ϙ/\hbar$,</p>
 <p>$$
 [D_\mu,D_\nu] = i\kappa\,F_{\mu\nu},
 \qquad
@@ -329,11 +329,11 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$, central</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}, \mathbb{B}_{C}$</td>
 <td>Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$</td>
 </tr>
 <tr>
@@ -342,11 +342,11 @@ $$</p>
 </tr>
 <tr>
 <td>$[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
-<td>Commutator on the vector part of $\mathbb{M}_-$</td>
+<td>Commutator on the vector part of $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
-<td>Gauge algebra inside $\mathbb{M}_-$</td>
+<td>Gauge algebra inside $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$T_a=\tfrac12 \vec e_a$</td>

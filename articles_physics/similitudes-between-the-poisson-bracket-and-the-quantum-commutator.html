@@ -326,14 +326,14 @@ where $\operatorname{weyl}^{-1}$ is the Weyl symbol, read off the operator, and 
 $$
 \tilde R_\psi = c r_t\,e_t + i\,\vec r_\psi, \qquad c r_t\in\mathbb{R}, \quad \vec r_\psi=(r'_x,r'_y,r'_z)\in\mathbb{R}^3,
 $$
-of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$, their <strong>commutator</strong> is
+of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. For two such elements $\tilde{R}_{\psi,1}=c r_{t,1}\,e_t+i\vec r_{\psi,1}$ and $\tilde{R}_{\psi,2}=c r_{t,2}\,e_t+i\vec r_{\psi,2}$, their <strong>commutator</strong> is
 $$
 \boxed{\;[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}] = -2\,(\vec r_{\psi,1}\times\vec r_{\psi,2})\;},
 $$
-a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and drop out. This bracket is a statement of the algebra alone: <strong>it contains no $\hbar$.</strong> The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.</p>
+a pure real quaternion lying in $\mathbb{B}_{\Phi}\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and drop out. This bracket is a statement of the algebra alone: <strong>it contains no $\hbar$.</strong> The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.</p>
 <p><strong>The angular-momentum resemblance, made exact.</strong> The spin observables are the Hermitian elements
 $$
-\tilde S_k = \frac{\hbar}{2}\,i\,\vec e_k \in \mathbb{M}_+ \quad(\text{spin-}\tfrac12),
+\tilde S_k = \frac{\hbar}{2}\,i\,\vec e_k \in \mathbb{B}_{\Psi} \quad(\text{spin-}\tfrac12),
 $$
 whose matrix images under $\vec e_k\mapsto-i\sigma_k$ are $S_k=(\hbar/2)\sigma_k$. Direct computation from the commutator of two Hermitian elements gives
 $$
@@ -346,7 +346,7 @@ which is term for term the operator image of the classical bracket $\{L_{\mathrm
 $$
 [\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}] = i\hbar\,e_t
 $$
-has <strong>no solution</strong> with $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{M}_+$: the commutator of two Hermitian elements of $\mathbb{B}$ is a pure real quaternion and has no scalar part, whereas $i\hbar e_t$ is purely scalar. Equivalently, the trace of the left side vanishes while $\mathrm{Tr}(i\hbar e_t)=2i\hbar\neq0$. The obstruction is not special to the biquaternion notation: it is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, and the finite-dimensional matrix algebra $M_2(\mathbb{C})$ is exactly the setting in which no such representation exists. The framework therefore carries the <strong>compact $\mathrm{SU}(2)$ sector</strong> of the correspondence — the angular-momentum bracket, with no $\hbar$ in the algebra and no deformation — and not the <strong>Heisenberg sector</strong>, in which the correspondence has a parameter to expand in. Of the two independent checks that opened the article, one lives inside $\mathbb{B}$ and one does not.</p>
+has <strong>no solution</strong> with $\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}\in\mathbb{B}_{\Psi}$: the commutator of two Hermitian elements of $\mathbb{B}$ is a pure real quaternion and has no scalar part, whereas $i\hbar e_t$ is purely scalar. Equivalently, the trace of the left side vanishes while $\mathrm{Tr}(i\hbar e_t)=2i\hbar\neq0$. The obstruction is not special to the biquaternion notation: it is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, and the finite-dimensional matrix algebra $M_2(\mathbb{C})$ is exactly the setting in which no such representation exists. The framework therefore carries the <strong>compact $\mathrm{SU}(2)$ sector</strong> of the correspondence — the angular-momentum bracket, with no $\hbar$ in the algebra and no deformation — and not the <strong>Heisenberg sector</strong>, in which the correspondence has a parameter to expand in. Of the two independent checks that opened the article, one lives inside $\mathbb{B}$ and one does not.</p>
 <p><strong>What this does and does not show.</strong> It shows that the resemblance between the Poisson bracket and the commutator is not a story that must be told about infinite-dimensional operator algebras from the start: a finite-dimensional algebra already realizes it exactly on the compact, quadratic sector, with the $\hbar$ supplied by the physical identification. It does not show that the framework realizes the correspondence in general, and it cannot: the deformation that replaces the isomorphism is a statement about a family of products indexed by $\hbar$, and a single fixed finite-dimensional algebra is not such a family. The order-$\hbar^2$ terms of the previous sections have no home in $\mathbb{B}$; they belong to the canonical sector that $\mathbb{B}$ excludes. Reading the correspondence into the biquaternion framework is therefore legitimate for the angular-momentum algebra and unsupported for anything beyond it.</p>
 <h2 id="summary">Summary</h2>
 <p>The Poisson bracket and the normalized commutator have the same Lie-algebraic shape, and the standard assignment
@@ -363,7 +363,7 @@ $$
 \operatorname{weyl}\big(L_{\mathrm{orb},z}\big)\operatorname{weyl}\big(L_{\mathrm{orb},z}\big) = \operatorname{weyl}\Big(\big(L_{\mathrm{orb},z}\big)^2\Big) - \tfrac{\hbar^2}{2},
 $$
 so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.</p>
-<p>In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.</p>
+<p>In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{B}_{\Psi}$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -438,11 +438,11 @@ so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl 
 <td>Quaternion basis ($\vec e_k^2=-e_t$); scalar imaginary ($i^2=-1$)</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
 <td>Hermitian (observables) and anti-Hermitian (generators) subspaces</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
@@ -466,11 +466,11 @@ so that the sum over the three components lies $\tfrac32\hbar^2$ below the Weyl 
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>, for the commutator $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=-2(\vec r_{\psi,1}\times\vec r_{\psi,2})$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.</li>
-<li><a href="quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.</li>
-<li><a href="spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a>, for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.</li>
-<li><a href="the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a>, for the proof that $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.</li>
+<li><a href="quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, for the observables in $\mathbb{B}_{\Psi}$, the trace formula, and the dynamics that supply the quantum side of the correspondence.</li>
+<li><a href="spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a>, for the identification of $\mathbb{B}_{\Psi}$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.</li>
+<li><a href="the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a>, for the proof that $[\tilde{R}_{\psi,1},\tilde{R}_{\psi,2}]=i\hbar e_t$ has no solution in $\mathbb{B}_{\Psi}$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.</li>
 <li><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.</li>
-<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the role of $\mathbb{B}_{\Psi}$ as the operator space and the reversible/irreversible dichotomy.</li>
 <li><a href="quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a>, for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.</li>
 <li><a href="the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a>, for the Heisenberg-picture dynamics $df/dr'_t=(1/i\hbar)[f,H]$ and the observable/generator split inside the algebra.</li>
 <li><a href="../articles_maths/deformation-quantization.html">Deformation Quantization</a>, for the star product as a formal associative deformation and for the Moyal product as the closed-form constant-coefficient case.</li>

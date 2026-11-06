@@ -78,7 +78,7 @@ to first order in the perturbation, where $K_0$ is the modular Hamiltonian of th
 <p>This article asks what the modular Hamiltonian and the first law of entanglement are in the biquaternion framework. The answer is exact, and the exactness is the framework's contribution.</p>
 <ol>
 <li>
-<p><strong>The modular Hamiltonian is a closed-form element of the informational sector.</strong> For a faithful biquaternion state, $K_0=-\log\tilde{Ϛ}_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, so $K_0\in\mathbb{M}_+$. Its expectation in any state is a closed-form real number, computed below.</p>
+<p><strong>The modular Hamiltonian is a closed-form element of the informational sector.</strong> For a faithful biquaternion state, $K_0=-\log\tilde{Ϛ}_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, so $K_0\in\mathbb{B}_{\Psi}$. Its expectation in any state is a closed-form real number, computed below.</p>
 </li>
 <li>
 <p><strong>The first law is the vanishing of a relative entropy to first order, and the framework writes it exactly.</strong> For any two faithful biquaternion states,
@@ -113,9 +113,9 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 $$
 \boxed{\;K_0=-\log\tilde{Ϛ}_0
 =\tfrac12\log\frac{4}{1-r_0^2}\,e_t-i\,b\,\gamma_0
-\ \in\ \mathbb{M}_+\;}.
+\ \in\ \mathbb{B}_{\Psi}\;}.
 $$
-Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{M}_-$.</p>
+Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{B}_{\Phi}$.</p>
 <p>The expectation of $K_0$ in an arbitrary state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\vec u_r\cdot\vec {u_r}_0$,
 $$
 \langle K_0\rangle_{\tilde{Ϛ}}
@@ -241,7 +241,7 @@ The splitting vanishes at the trace state, where the entanglement Hamiltonian is
 $$
 \tilde{Ϛ}_0=\exp(-K_0)
 $$
-holds exactly, so the state is the thermal state of its own entanglement Hamiltonian at unit modular temperature, and the trace condition $\mathrm{Tr}\,\tilde{Ϛ}_0=1$ is the normalisation of that thermal state. The framework's entanglement Hamiltonian is thus an ordinary $\mathbb{M}_+$ element with a two-point spectrum, and the first law relates the entropy of the state to its expectation; the field-theoretic entanglement Hamiltonian of a region is the infinite-dimensional analogue of this object, with continuous spectrum and a geometric generator.</p>
+holds exactly, so the state is the thermal state of its own entanglement Hamiltonian at unit modular temperature, and the trace condition $\mathrm{Tr}\,\tilde{Ϛ}_0=1$ is the normalisation of that thermal state. The framework's entanglement Hamiltonian is thus an ordinary $\mathbb{B}_{\Psi}$ element with a two-point spectrum, and the first law relates the entropy of the state to its expectation; the field-theoretic entanglement Hamiltonian of a region is the infinite-dimensional analogue of this object, with continuous spectrum and a geometric generator.</p>
 <h2 id="why-the-law-is-exact-to-first-order">Why the Law Is Exact to First Order</h2>
 <p>The framework's terms make the mechanism transparent, and it is worth stating because it is the reason the law is universal.</p>
 <p><strong>The modular energy is linear in the state.</strong> The quantity $\delta\langle K_0\rangle=\mathrm{Tr}(\delta\rho\,K_0)$ is the Hermitian form of the perturbation with a fixed algebra element, read through the trace. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle K_0\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.</p>
@@ -254,7 +254,7 @@ $$
 $$
 so the reduced state is the thermal state of its own entanglement Hamiltonian. In the biquaternion framework the reduced states of the tensor powers $\mathbb{B}^{\otimes n}$ are the partial traces of the strong-subadditivity companion article, and the entanglement Hamiltonian of a subsystem is
 $$
-K_A=-\log\tilde{Ϛ}_A\in\mathbb{M}_+^{\otimes n_A},
+K_A=-\log\tilde{Ϛ}_A\in\mathbb{B}_{\Psi}^{\otimes n_A},
 $$
 an informational-sector element of the subsystem's algebra, obtained from the biquaternion logarithm of the reduced state. The first law for the reduced state, $\delta S_A=\delta\langle K_A\rangle-S(\tilde{Ϛ}_A\|\tilde{Ϛ}_{A,0})$, is then the statement that the subsystem's entropy and its entanglement energy move together at first order — the local form of the law that the applications in the next section use.</p>
 <p>The finite framework cannot supply the field-theoretic entanglement Hamiltonian of a region: the local algebra is type III, its reduced state does not exist as a density matrix, and $K_A$ is a formal operator affiliated with the algebra rather than an element of it. What the framework supplies is the exact finite model, in which the entanglement Hamiltonian is an element and the first law is an identity.</p>
@@ -268,8 +268,8 @@ an informational-sector element of the subsystem's algebra, obtained from the bi
 <p>The biquaternion framework's role is to make the finite-dimensional prototype of the law exact and closed-form. It does not supply the geometric modular Hamiltonians that the applications need; those are the field-theoretic ones of the Bisognano–Wichmann companion article.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (theorem, imported).</strong> The first law of entanglement; its derivation from the vanishing of the linear term of relative entropy; the identification of the modular Hamiltonian as the entanglement Hamiltonian of a reduced state; the applications to linearized gravity, black-hole mechanics, and entanglement equilibrium; the Kubo–Mori–Bogoliubov form of the second-order term. All standard.</p>
-<p><strong>Established (recomputed here).</strong> The closed form $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0\in\mathbb{M}_+$; its expectation $\langle K_0\rangle_{\tilde{Ϛ}}=-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$; the exact identity $\delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)$; and its verification to machine precision on the explicit perturbation, with the quadratic scaling of the deficit.</p>
-<p><strong>Interpretation.</strong> That the modular Hamiltonian's being an element of $\mathbb{M}_+$ is read as the first law's being a relation between an entropy (a scalar) and the expectation of an informational-sector element, and that the exact identity is read as the framework's sharp form of the law.</p>
+<p><strong>Established (recomputed here).</strong> The closed form $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0\in\mathbb{B}_{\Psi}$; its expectation $\langle K_0\rangle_{\tilde{Ϛ}}=-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$; the exact identity $\delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)$; and its verification to machine precision on the explicit perturbation, with the quadratic scaling of the deficit.</p>
+<p><strong>Interpretation.</strong> That the modular Hamiltonian's being an element of $\mathbb{B}_{\Psi}$ is read as the first law's being a relation between an entropy (a scalar) and the expectation of an informational-sector element, and that the exact identity is read as the framework's sharp form of the law.</p>
 <p><strong>Gaps, left visible.</strong> The finite algebra cannot supply a field-theoretic entanglement Hamiltonian or a geometric region; the applications are to type III local algebras. The framework supplies no dynamics and no state selection, and no empirical consequence is derived.</p>
 <h2 id="open-questions">Open Questions</h2>
 <p><strong>1. The entanglement Hamiltonian in the tensor power.</strong> For a reduced state of $\mathbb{B}^{\otimes n}$, $K_A=-\log\tilde{Ϛ}_A$ is a biquaternion element by the closed form of the companion article. Is the map from the region $A$ to $K_A$ compatible with the partial-trace structure, in the sense of a conditional modular Hamiltonian?</p>
@@ -307,7 +307,7 @@ which follows from $K_0=-\log\tilde{Ϛ}_0$ and the definition of relative entrop
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$</td>
 <td>Informational (Hermitian) and material (anti-Hermitian) subspaces</td>
 </tr>
 <tr>
@@ -324,7 +324,7 @@ which follows from $K_0=-\log\tilde{Ϛ}_0$ and the definition of relative entrop
 </tr>
 <tr>
 <td>$K_0=-\log\tilde{Ϛ}_0$</td>
-<td>Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$</td>
+<td>Modular Hamiltonian of a biquaternion state $\in\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
 <td>$r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$</td>

@@ -75,7 +75,7 @@
 <ol>
 <li><strong>The idempotent.</strong> For spin-1/2 the Majorana star is the unit vector $\vec u_x$ of the idempotent $\tilde\Pi_1(\vec u_x) = \tfrac12(e_t+i\vec u_x)$; the Bloch vector and the single Majorana star are the same object.</li>
 <li><strong>The spinor and its stereographic coordinate.</strong> The star is the image of the ratio $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ of the two spinor components under inverse stereographic projection. The map from spinor to star is two-to-one, and the lost phase is exactly the geometric phase of the preceding articles.</li>
-<li><strong>The rotor.</strong> The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\varkappa_{\mathrm{stg}}$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{H}_{\mathbb{B}}$.</li>
+<li><strong>The rotor.</strong> The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\varkappa_{\mathrm{stg}}$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{B}_{H}$.</li>
 </ol>
 <p>The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.</p>
 <p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.</p>
@@ -144,8 +144,8 @@ g = \begin{pmatrix} \cos\tfrac{\theta_{\mathrm{axs}}}{2} & -\sin\tfrac{\theta_{\
 $$</p>
 <p>and the Möbius image of $\varkappa_{\mathrm{stg}}$ reconstructs the vector obtained by applying the $SO(3)$ rotation about $\vec u_y$ by $\theta_{\mathrm{axs}}$ to $\vec u_x$, to machine precision, for $\theta_{\mathrm{axs}} = 0.9$ and several initial states.</p>
 <h3 id="the-rotor-and-its-two-faces">The Rotor and Its Two Faces</h3>
-<p>In the biquaternion algebra the same rotation is a unit real quaternion $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ acting by conjugation on the idempotent and by left multiplication on the spinor. The Möbius action on the star is the induced action on $\mathbb{CP}^1$; the phase of the spinor under the rotation is the central part, which the star does not see. The double cover $\mathbb{H}_{\mathbb{B}}\to SO(3)$ appears here in the same way as in the geometric-phase article: the rotor $\tilde{u}$ and $-\tilde{u}$ induce the same rotation of the star and differ by the phase $-e_t$ on the spinor.</p>
-<p>The rotational covariance of the star map is its defining property. It says that the geometry of the state space is the geometry of the sphere acted on by rotations, with the spinor as the double cover; the algebra's $\mathbb{H}_{\mathbb{B}}$ is the group of those rotations, and the idempotent is the point.</p>
+<p>In the biquaternion algebra the same rotation is a unit real quaternion $\tilde{u}\in\mathbb{B}_{H}$ acting by conjugation on the idempotent and by left multiplication on the spinor. The Möbius action on the star is the induced action on $\mathbb{CP}^1$; the phase of the spinor under the rotation is the central part, which the star does not see. The double cover $\mathbb{B}_{H}\to SO(3)$ appears here in the same way as in the geometric-phase article: the rotor $\tilde{u}$ and $-\tilde{u}$ induce the same rotation of the star and differ by the phase $-e_t$ on the spinor.</p>
+<p>The rotational covariance of the star map is its defining property. It says that the geometry of the state space is the geometry of the sphere acted on by rotations, with the spinor as the double cover; the algebra's $\mathbb{B}_{H}$ is the group of those rotations, and the idempotent is the point.</p>
 <h2 id="the-multi-spin-12-case">The Multi-Spin-1/2 Case</h2>
 <h3 id="symmetric-states-and-the-constellation">Symmetric States and the Constellation</h3>
 <p>The natural extension of the construction is to $N$ spin-1/2 particles in the <strong>symmetric</strong> subspace, which is the subspace of states invariant under exchange of the particles. Such a state is a spin $N/2$ state — that is, it has total angular momentum $s = N/2$ — but its constituents are spin-1/2, and the $2s = N$ Majorana stars are the $N$ roots of the degree-$N$ polynomial. The constellation picture is thus a picture of a symmetric many-spin-1/2 state, and its rotationally covariant content is the geometry of $N$ points on the Bloch sphere. The representation theory of the total angular momentum $s\ge1$ — the Wigner–Eckart theorem and the generalized Bloch ball — belongs to the neighbouring subcategory on particles of spin $1$ and above; what is treated here is the spin-1/2 construction and its many-particle symmetric extension.</p>
@@ -173,7 +173,7 @@ $$</p>
 <h3 id="what-the-star-cannot-see">What the Star Cannot See</h3>
 <p>Because the star is the idempotent's axis, it cannot see the phase; the connection is defined on the spinor, not on the star. The Majorana representation is thus a representation of the state space as a configuration space of points, and it is precisely the geometric phase that it discards. The two pictures — the constellation on the sphere and the spinor with its holonomy — are the two levels of the double cover: the sphere of stars below, the spinor above.</p>
 <h3 id="the-state-module-and-the-idempotent">The State Module and the Idempotent</h3>
-<p>The spinor is not an element of $\mathbb{B}$ itself: as the companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{M}_+$:</p>
+<p>The spinor is not an element of $\mathbb{B}$ itself: as the companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{B}_{\Psi}$:</p>
 <p>$$
 \tilde\Pi(\tilde{Ξ}_{\mathrm{sp}}) = \frac{\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
 $$</p>
@@ -214,7 +214,7 @@ $$</p>
 <p><strong>What the algebra organises.</strong></p>
 <ul>
 <li><strong>The star is an idempotent axis.</strong> For spin-1/2 the Majorana star is the vector $\vec u_x$ of $\tilde\Pi_1(\vec u_x)$; the idempotent, the Bloch vector and the star are one object in three names. The framework does not add a new representation for spin-1/2; it identifies the standard one with its own fundamental object.</li>
-<li><strong>The two-to-one map is the double cover.</strong> The spinor-to-star map loses the phase, and the phase is the central part of the rotor; the covering $\mathbb{H}_{\mathbb{B}}\to SO(3)$ is the algebraic form of the two-to-one correspondence.</li>
+<li><strong>The two-to-one map is the double cover.</strong> The spinor-to-star map loses the phase, and the phase is the central part of the rotor; the covering $\mathbb{B}_{H}\to SO(3)$ is the algebraic form of the two-to-one correspondence.</li>
 <li><strong>Covariance is rotor conjugation.</strong> The rigid rotation of the constellation is conjugation of the idempotent by a unit real quaternion; the Möbius action on $\varkappa_{\mathrm{stg}}$ is its coordinate expression.</li>
 <li><strong>The many-spin constellation is symmetric states of spin-1/2 constituents.</strong> The degree-$N$ polynomial of a symmetric $N$-spin-1/2 state is the algebraic home of the constellation picture, and the associated total-spin representation theory is delegated to the neighbouring subcategory.</li>
 </ul>
@@ -225,7 +225,7 @@ $$</p>
 <p><strong>Constellations and entanglement.</strong> For symmetric multi-spin-1/2 states the Majorana constellation encodes the entanglement of the constituents in a geometric way. Does the biquaternion framework's idempotent structure, which is natural for a single spin, extend to a natural multi-idempotent object for the constellation? The question borders on the informational subcategory and is left there.</p>
 </li>
 <li>
-<p><strong>The antisymmetric sector.</strong> The singlet has no Majorana constellation. Is there an algebraic representation of the antisymmetric sector of $N$ spin-1/2 particles that is the counterpart of the constellation picture, and does it use the material sector $\mathbb{M}_-$ rather than $\mathbb{M}_+$?</p>
+<p><strong>The antisymmetric sector.</strong> The singlet has no Majorana constellation. Is there an algebraic representation of the antisymmetric sector of $N$ spin-1/2 particles that is the counterpart of the constellation picture, and does it use the material sector $\mathbb{B}_{\Phi}$ rather than $\mathbb{B}_{\Psi}$?</p>
 </li>
 <li>
 <p><strong>Degenerate constellations.</strong> When all the stars coincide the state is the coherent state along that axis, a highest-weight state of the corresponding component; for partial coincidences the polynomial has a multiple root, so the individual stars are no longer resolved by the roots on their own. How does the algebra handle the degeneration of the idempotents?</p>
@@ -245,7 +245,7 @@ $$</p>
 \vec u_x = \frac{1}{1+|\varkappa_{\mathrm{stg}}|^2}\left(2\,\mathrm{Re}\,\varkappa_{\mathrm{stg}},\,2\,\mathrm{Im}\,\varkappa_{\mathrm{stg}},\,1-|\varkappa_{\mathrm{stg}}|^2\right)\;}.
 $$</p>
 <p>The star <strong>is</strong> the Bloch vector; the state is $\tilde\Pi_1(\vec u_x) = \tfrac12(e_t+i\vec u_x)$. The map from spinor to star is two-to-one: the overall phase of the spinor, which is the geometric phase, is discarded, and the star is blind to it.</p>
-<p>Under a rotation, the spinor transforms by $SU(2)$ and the star by the Möbius transformation $\varkappa_{\mathrm{stg}}\mapsto(a^*\varkappa_{\mathrm{stg}}-b^*)/(b\varkappa_{\mathrm{stg}}+a)$; the constellation rotates rigidly, and this covariance is the defining property of the representation. In the algebra the rotation is conjugation by a unit real quaternion $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, with the star as the image of the idempotent and the spinor phase as the central part.</p>
+<p>Under a rotation, the spinor transforms by $SU(2)$ and the star by the Möbius transformation $\varkappa_{\mathrm{stg}}\mapsto(a^*\varkappa_{\mathrm{stg}}-b^*)/(b\varkappa_{\mathrm{stg}}+a)$; the constellation rotates rigidly, and this covariance is the defining property of the representation. In the algebra the rotation is conjugation by a unit real quaternion $\tilde{u}\in\mathbb{B}_{H}$, with the star as the image of the idempotent and the spinor phase as the central part.</p>
 <p>For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ stars, and the picture is the standard one for symmetric multi-qubit states; the singlet, being antisymmetric with total spin $0$, has no constellation. The Berry connection in the stereographic coordinate is $\mathcal{A} = -\sin^2(\theta/2)\,d\theta_{\mathrm{azm}}$, whose loop integral is the solid-angle phase of the preceding articles.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -269,11 +269,11 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian (informational) subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Unit real quaternions; the rotation rotors</td>
 </tr>
 <tr>

@@ -78,7 +78,7 @@
 <li><strong>The phase-space coordinate is one biquaternion.</strong> The position and the momentum assemble into $\tilde Q_3=\tilde q+i\tilde p$, whose anti-Hermitian part is the position and whose Hermitian part is $i$ times the momentum. The algebra's two sectors thus separate a kinematic configuration from its conjugate momentum, and the algebra's complex structure is the phase-space complex structure.</li>
 <li><strong>The boundary is finite-dimensional.</strong> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is eight-dimensional over $\mathbb{R}$. It carries the configuration of a system with at most four real degrees of freedom, and it carries the <em>rotational</em> bracket exactly; it does not carry the canonical Heisenberg structure, as the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em> establishes and as the companion article <em>The Harmonic Oscillator in Biquaternionic Form</em> confirms. This article is classical throughout: no commutator is introduced, and no canonical relation of the form $[\tilde q,\tilde p]=i\hbar$ is used or needed.</li>
 </ol>
-<p>The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) is the material sector, and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector) is the informational sector, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace is normalized by $\mathrm{Tr}(e_t)=2$. The symbol $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $c_0$ its vacuum value. Throughout, $\tilde q$ denotes a configuration quaternion, $\tilde p$ its conjugate momentum, and the scalar pairing of two real quaternions $\tilde q_1,\tilde q_2$ is $\mathrm{Sc}(\tilde q_1^{\natural}\,\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$.</p>
+<p>The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector) is the material sector, and the Hermitian subspace $\mathbb{B}_{\Psi}$ (real scalar, imaginary vector) is the informational sector, with $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The real-quaternion subspace is $\mathbb{B}_{H}$, and the trace is normalized by $\mathrm{Tr}(e_t)=2$. The symbol $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $c_0$ its vacuum value. Throughout, $\tilde q$ denotes a configuration quaternion, $\tilde p$ its conjugate momentum, and the scalar pairing of two real quaternions $\tilde q_1,\tilde q_2$ is $\mathrm{Sc}(\tilde q_1^{\natural}\,\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>, for the material sector, the biquaternion norm, and the four-vectors.
 - Companion article <em>The Informational Sector: States, Observables and Probability</em>, for the Hermitian sector, the trace formula, and the conjugation action.
@@ -139,10 +139,10 @@ $$</p>
 <h3 id="coordinates-and-the-gradient">Coordinates and the Gradient</h3>
 <p>Assemble the generalized coordinates of a system with at most four degrees of freedom into a <strong>real quaternion</strong></p>
 <p>$$
-\tilde q=q_t\,e_t+q_x\,\vec e_x+q_y\,\vec e_y+q_z\,\vec e_z\in\mathbb{H}_{\mathbb{B}} ,
+\tilde q=q_t\,e_t+q_x\,\vec e_x+q_y\,\vec e_y+q_z\,\vec e_z\in\mathbb{B}_{H} ,
 $$</p>
-<p>with real components $q_\mu$. The physical three-space is the pure real part $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and the central coordinate $q_te_t\in\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_t=0$; the pure-vector configuration is the one that carries the spatial interpretation.</p>
-<p>For a central-valued function $F(\tilde q)$ — a function taking values in $\mathbb{C}_{\mathbb{B}}$ — define the <strong>quaternion gradient</strong> componentwise,</p>
+<p>with real components $q_\mu$. The physical three-space is the pure real part $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, and the central coordinate $q_te_t\in\mathbb{B}_{C}\cap\mathbb{B}_{H}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_t=0$; the pure-vector configuration is the one that carries the spatial interpretation.</p>
+<p>For a central-valued function $F(\tilde q)$ — a function taking values in $\mathbb{B}_{C}$ — define the <strong>quaternion gradient</strong> componentwise,</p>
 <p>$$
 \partial F/\partial\tilde q=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial F}{\partial q_\mu}.
 $$</p>
@@ -157,7 +157,7 @@ $$</p>
 <p>$$
 \boxed{\;T=\tfrac{1}{2}m\,\langle\,d\tilde q/dr'_t\rangle_{\natural}=\tfrac{1}{2}m\,d\tilde q/dr'_t\,(d\tilde q/dr'_t)^{\natural}=\tfrac{1}{2}m\sum_{\mu\in\{t,x,y,z\}}\left(dq_{\mu}/dr'_t\right)^{2}\;}.
 $$</p>
-<p>For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|d\vec q/dr'_t|^2$, the familiar kinetic energy. The kinetic energy is therefore the <strong>biquaternion norm</strong> of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $d\tilde q/dr'_t=0$; no sign choice has to be made.</p>
+<p>For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|d\vec q/dr'_t|^2$, the familiar kinetic energy. The kinetic energy is therefore the <strong>biquaternion norm</strong> of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{B}_{H}$ is positive definite, so $T\ge0$ with equality only for $d\tilde q/dr'_t=0$; no sign choice has to be made.</p>
 <p>The free Lagrangian is</p>
 <p>$$
 L_0=\tfrac{1}{2}m\,\langle\,d\tilde q/dr'_t\rangle_{\natural},
@@ -247,17 +247,17 @@ md^2r/d{r'_{t}}^2=-dV/dr(r)+\frac{\ell^2}{mr^3},
 $$</p>
 <p>the centrifugal term appearing as a consequence of the transform rather than as an inserted fictitious force. The partition is arbitrary — nothing requires the transformed coordinates to be the cyclic ones, and choosing them so is a convenience. This article applies the transform to the whole configuration, which is the case $s=n$; the partial case is recorded because it is the general form, and because it shows that which variable is eliminated is a choice of description and not of physics. The other classical reformulation worth naming is <strong>Appell's</strong>, whose equations of motion are written in the <strong>generalized accelerations</strong> $\alpha_r=d^2q_{r}/d{r'_{t}}^2$ rather than in the generalized velocities, with the generalized forces of D'Alembert's principle.</p>
 <h2 id="phase-space-as-a-single-biquaternion">Phase Space as a Single Biquaternion</h2>
-<p>For a system with three degrees of freedom the position and momentum are pure real quaternions, $\tilde q,\tilde p\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and they combine into the single biquaternion</p>
+<p>For a system with three degrees of freedom the position and momentum are pure real quaternions, $\tilde q,\tilde p\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, and they combine into the single biquaternion</p>
 <p>$$
 \boxed{\;\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}\;}.
 $$</p>
 <p>Its anti-Hermitian and Hermitian parts are</p>
 <p>$$
-\tilde Q_{3-}=\tfrac{1}{2}\!\left(\tilde Q_3-\tilde Q_3^{*}\right)=\tilde q\in\mathbb{M}_-,\qquad
-\tilde Q_{3+}=\tfrac{1}{2}\!\left(\tilde Q_3+\tilde Q_3^{*}\right)=i\tilde p\in\mathbb{M}_+,
+\tilde Q_{3-}=\tfrac{1}{2}\!\left(\tilde Q_3-\tilde Q_3^{*}\right)=\tilde q\in\mathbb{B}_{\Phi},\qquad
+\tilde Q_{3+}=\tfrac{1}{2}\!\left(\tilde Q_3+\tilde Q_3^{*}\right)=i\tilde p\in\mathbb{B}_{\Psi},
 $$</p>
-<p>as follows from $\tilde q^{*}=-\tilde q$ and $(i\tilde p)^{*}=i\tilde p$ for pure real $\tilde q,\tilde p$. The phase-space coordinate is thus a general biquaternion; its <strong>material part is the configuration</strong> and its <strong>informational part is $i$ times the momentum</strong>. The two sectors of the algebra separate position from conjugate momentum, and the decomposition $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ is the algebraic form of the split of the phase space into configuration and momentum.</p>
-<p>The algebra's <strong>complex structure</strong> is the map $\tilde Q_3\mapsto i\tilde Q_3$. Since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, it exchanges the two parts; explicitly,</p>
+<p>as follows from $\tilde q^{*}=-\tilde q$ and $(i\tilde p)^{*}=i\tilde p$ for pure real $\tilde q,\tilde p$. The phase-space coordinate is thus a general biquaternion; its <strong>material part is the configuration</strong> and its <strong>informational part is $i$ times the momentum</strong>. The two sectors of the algebra separate position from conjugate momentum, and the decomposition $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ is the algebraic form of the split of the phase space into configuration and momentum.</p>
+<p>The algebra's <strong>complex structure</strong> is the map $\tilde Q_3\mapsto i\tilde Q_3$. Since $i\mathbb{B}_{\Psi,\Phi}=\mathbb{B}_{\Phi,\Psi}$, it exchanges the two parts; explicitly,</p>
 <p>$$
 i\tilde Q_3=i\tilde q-\tilde p .
 $$</p>
@@ -341,7 +341,7 @@ $$</p>
 <p><strong>Time translation.</strong> If $\mathrm{Lag}$ has no explicit time dependence, Noether's theorem gives the conserved energy $E=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dr'_t)-\mathrm{Lag}=H$.</p>
 <p><strong>Configuration-space rotations.</strong> A rotation of the configuration acts by the <strong>rotor conjugation</strong></p>
 <p>$$
-\tilde q\longmapsto \tilde u\,\tilde q\,\tilde u^{*},\qquad \tilde u\in\mathbb{H}_{\mathbb{B}},\quad \tilde u\tilde u^{\natural}=e_t .
+\tilde q\longmapsto \tilde u\,\tilde q\,\tilde u^{*},\qquad \tilde u\in\mathbb{B}_{H},\quad \tilde u\tilde u^{\natural}=e_t .
 $$</p>
 <p>The biquaternion norm is invariant, $\langle\tilde u\tilde q\tilde u^{*}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\vec L=\vec q\times\vec p$ of the previous section. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em> develops the rotor-flow correspondence, and the companion article <em>Noether's Theorem in Biquaternionic Form</em> develops the general current construction.</p>
 <p><strong>The central phase.</strong> Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto \exp(i\alpha)\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $\exp(i\alpha)\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $\mathrm{U}(1)$ of the companion article <em>The Gauge Principle in Biquaternionic Form</em>. It also acts on the free Lagrangian, $\mathrm{Lag}=\tfrac12m\langle d\tilde q/dr'_t\rangle_{\natural}\mapsto \exp(2i\alpha)\mathrm{Lag}$, so a real Lagrangian is invariant only for $\exp(2i\alpha)=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Q_3$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles <em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em> and <em>The Symplectic Form and the Biquaternion Norm Cone</em>.</p>
@@ -353,7 +353,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Lagrangian and Hamiltonian formulations of classical mechanics take the following form in the biquaternion algebra.</p>
 <ul>
-<li>The configuration is a real quaternion $\tilde q\in\mathbb{H}_{\mathbb{B}}$, with the physical three-space as its pure-vector part; the kinetic energy is the biquaternion norm, $T=\tfrac{1}{2}m\langle d\tilde q/dr'_t\rangle_{\natural}$.</li>
+<li>The configuration is a real quaternion $\tilde q\in\mathbb{B}_{H}$, with the physical three-space as its pure-vector part; the kinetic energy is the biquaternion norm, $T=\tfrac{1}{2}m\langle d\tilde q/dr'_t\rangle_{\natural}$.</li>
 <li>The action $S[\tilde q]=\int \mathrm{Lag}\,dr'_t$ is stationary at the physical path, and stationarity gives the single quaternion Euler–Lagrange equation $\frac{d}{dr'_t}\partial \mathrm{Lag}/\partial\left(d\tilde q/dr'_t\right)-\partial \mathrm{Lag}/\partial\tilde q=0$, equivalent to the four real equations.</li>
 <li>The conjugate momentum is $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dr'_t\right)$, and the Hamiltonian is the Legendre transform $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dr'_t)-\mathrm{Lag}$. For a free particle $H=\langle\tilde p\rangle_{\natural}/2m$: the free Hamiltonian is the biquaternion norm of the momentum.</li>
 <li>Hamilton's equations are $d\tilde q/dr'_t=\partial H/\partial\tilde p$, $d\tilde p/dr'_t=-\partial H/\partial\tilde q$.</li>
@@ -389,11 +389,11 @@ $$</p>
 <td>Central scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$</td>
 <td>Anti-Hermitian (material) and Hermitian (informational) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
@@ -465,7 +465,7 @@ $$</p>
 <td>Angular momentum</td>
 </tr>
 <tr>
-<td>$\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$</td>
+<td>$\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$</td>
 <td>Rotation rotor</td>
 </tr>
 <tr>

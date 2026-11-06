@@ -75,7 +75,7 @@
 \tilde{F} = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 $$</p>
 <p>as the single biquaternionic object that carries the electromagnetic field, and showed that, in a medium with permittivity $\epsilon$ and permeability $\mu$, the four Maxwell equations collapse into a single equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. In that article $\tilde{F}$ appears as a means to an end: the compact rewriting of the field equations. This article studies $\tilde{F}$ for its own sake.</p>
-<p>Two features make the field strength worth treating separately. First, $\tilde{F}$ is <em>not</em> a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has <strong>vanishing scalar part</strong> and a <strong>mixed real/imaginary vector part</strong>: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the <strong>biquaternion norm</strong> (the quaternionic norm of the conventions) evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $\vec E^2 - c^2\vec B^2$ and $\vec E\cdot\vec B$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.</p>
+<p>Two features make the field strength worth treating separately. First, $\tilde{F}$ is <em>not</em> a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has <strong>vanishing scalar part</strong> and a <strong>mixed real/imaginary vector part</strong>: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{B}_{\Phi}$, and its Lorentz transformation law is correspondingly different. Second, the <strong>biquaternion norm</strong> (the quaternionic norm of the conventions) evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $\vec E^2 - c^2\vec B^2$ and $\vec E\cdot\vec B$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.</p>
 <p>This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The <strong>canonical objects</strong> are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.</p>
 <p>The conventions are those of the read-list articles throughout: the algebra, the units, the conjugations and the product form are those of <em>Algebra and Element Conventions</em>, <em>Unit, Index and Notation Conventions</em> and <em>Product and Form Conventions</em>; the gradient, the d'Alembertian and the derivative marks are those of <em>Operator and Calculus Conventions</em>; and none of them is restated here. The three-dimensional complex <strong>vector part</strong> of $\mathbb{B}$ is denoted by its components $\vec F=\sum_k F_k \vec e_k$. The symbol $c$ always denotes the <strong>speed of light in the medium</strong>, $c=1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0=1/\sqrt{\epsilon_0\mu_0}$.</p>
 <h2 id="the-field-strength-biquaternion">The Field-Strength Biquaternion</h2>
@@ -110,18 +110,18 @@ $$</p>
 <p>The biquaternion algebra decomposes in several ways, and it is worth locating $\tilde{F}$ precisely in these decompositions, because its peculiar properties are consequences of its position.</p>
 <p><strong>The vector part.</strong> The pure-vector biquaternions form the complex three-dimensional subspace</p>
 <p>$$
-\mathrm{Vect}(\mathbb{B}) = \mathbb{C}\vec e_x \oplus \mathbb{C}\vec e_y \oplus \mathbb{C}\vec e_z,
+\mathbb{B}_{V} = \mathbb{C}\vec e_x \oplus \mathbb{C}\vec e_y \oplus \mathbb{C}\vec e_z,
 $$</p>
-<p>of real dimension six. It is <em>not</em> one of the fixed-point subspaces of the conjugations, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$: each of those contains the scalar line, whereas the vector subspace contains no scalar at all. The field strength lies entirely in this subspace, and the classical statement that the electromagnetic field has six independent components is exactly the statement that $\tilde{F}$ is a general element of $\mathrm{Vect}(\mathbb{B})$.</p>
-<p><strong>The Hermitian decomposition.</strong> The vector part intersects the two complementary subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ in the three-dimensional real subspaces</p>
+<p>of real dimension six. It is <em>not</em> one of the fixed-point subspaces of the conjugations, $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$: each of those contains the scalar line, whereas the vector subspace contains no scalar at all. The field strength lies entirely in this subspace, and the classical statement that the electromagnetic field has six independent components is exactly the statement that $\tilde{F}$ is a general element of $\mathbb{B}_{V}$.</p>
+<p><strong>The Hermitian decomposition.</strong> The vector part intersects the two complementary subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ in the three-dimensional real subspaces</p>
 <p>$$
-\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_+ = \mathrm{span}_{\mathbb{R}}\{i\vec e_x, i\vec e_y, i\vec e_z\},
+\mathbb{B}_{V} \cap \mathbb{B}_{\Psi} = \mathrm{span}_{\mathbb{R}}\{i\vec e_x, i\vec e_y, i\vec e_z\},
 \qquad
-\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_- = \mathrm{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z\}.
+\mathbb{B}_{V} \cap \mathbb{B}_{\Phi} = \mathrm{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z\}.
 $$</p>
 <p>The first consists of the pure <strong>imaginary</strong> vectors and the second of the pure <strong>real</strong> vectors. The two pieces of $\tilde{F}$ fall into these two intersections:</p>
 <p>$$
-\tilde{F} = \underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{M}_+} \;+\; \underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{M}_-}.
+\tilde{F} = \underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{B}_{\Psi}} \;+\; \underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{B}_{\Phi}}.
 $$</p>
 <p>The electric part is therefore <strong>Hermitian</strong> and the magnetic part <strong>anti-Hermitian</strong>, and $\tilde{F}$ is neither. Explicitly,</p>
 <p>$$
@@ -133,29 +133,29 @@ $$</p>
 \qquad
 \tfrac{1}{2}\left(\tilde{F} - \tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H.
 $$</p>
-<p>The split holds in the frame in which the decomposition is taken and is not Lorentz invariant: a boost mixes the two sectors. The same display shows why $\tilde{F}$ cannot lie in $\mathbb{M}_-$: the material subspace contains the real vectors but not the imaginary ones, and the electric half of the field strength uses the imaginary vector directions.</p>
-<p><strong>The real/complex decomposition.</strong> Equivalently, with respect to the complex conjugation $\bar{\cdot}$ that fixes $\mathbb{H}_{\mathbb{B}}$,</p>
+<p>The split holds in the frame in which the decomposition is taken and is not Lorentz invariant: a boost mixes the two sectors. The same display shows why $\tilde{F}$ cannot lie in $\mathbb{B}_{\Phi}$: the material subspace contains the real vectors but not the imaginary ones, and the electric half of the field strength uses the imaginary vector directions.</p>
+<p><strong>The real/complex decomposition.</strong> Equivalently, with respect to the complex conjugation $\bar{\cdot}$ that fixes $\mathbb{B}_{H}$,</p>
 <p>$$
-\tilde{F} = \underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{H}_{\mathbb{B}}} \;+\; \underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,i\mathbb{H}_{\mathbb{B}}}.
+\tilde{F} = \underbrace{\left(-\sqrt{\mu}\,\vec H\right)}_{\in\,\mathbb{B}_{H}} \;+\; \underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{B}_{iH}}.
 $$</p>
-<p>The scalar subspace $\mathbb{C}_{\mathbb{B}}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$. The decomposition used is $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. Thus the field strength uses the vector parts of $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the electric and magnetic halves of $\mathbb{M}_+$ and $\mathbb{M}_-$, and it touches $\mathbb{C}_{\mathbb{B}}$ not at all.</p>
+<p>The scalar subspace $\mathbb{B}_{C}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$. The decomposition used is $\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH}$. Thus the field strength uses the vector parts of $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, and the electric and magnetic halves of $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, and it touches $\mathbb{B}_{C}$ not at all.</p>
 <p><strong>The biparavector interpretation: the field as two families of planes.</strong> The two halves just separated are not merely subspaces; each is a <strong>family of planes</strong>. The separation of the field into an electric and a magnetic part is the separation of the biparavector into a timelike and a spacelike part. In the paravector presentation of the algebra (<em>Paravectors and the Geometry of Spacetime</em>), a <strong>biparavector</strong> is the product of two orthogonal paravectors and represents a plane in spacetime. With the paravector directions $i\vec e_k$ there are six independent planes,</p>
 <p>$$
 \{e_t\,i\vec e_k\}_{k=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
 \{(i\vec e_j)(i\vec e_k)\}_{(j,k)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
 $$</p>
-<p>using $(i\vec e_j)(i\vec e_k)=-\vec e_j\vec e_k$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_k = i\vec e_k$ and are the pure <strong>imaginary</strong> vectors, that is the real span of $\{i\vec e_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_+$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_k)$ and are the pure <strong>real</strong> vectors, that is the real span of $\{\vec e_k\} = \mathrm{Vect}(\mathbb{B})\cap\mathbb{M}_-$.</p>
+<p>using $(i\vec e_j)(i\vec e_k)=-\vec e_j\vec e_k$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_k = i\vec e_k$ and are the pure <strong>imaginary</strong> vectors, that is the real span of $\{i\vec e_k\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_k)$ and are the pure <strong>real</strong> vectors, that is the real span of $\{\vec e_k\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Phi}$.</p>
 <p>Comparing with the decomposition above, the electric and magnetic halves of the field are exactly the two families of planes:</p>
 <p>$$
-\tilde{F} \;=\; \underbrace{i\sqrt{\epsilon}\,\vec E}_{\text{timelike planes}\;\in\,\mathbb{M}_+} \;-\; \underbrace{\sqrt{\mu}\,\vec H}_{\text{spacelike planes}\;\in\,\mathbb{M}_-}.
+\tilde{F} \;=\; \underbrace{i\sqrt{\epsilon}\,\vec E}_{\text{timelike planes}\;\in\,\mathbb{B}_{\Psi}} \;-\; \underbrace{\sqrt{\mu}\,\vec H}_{\text{spacelike planes}\;\in\,\mathbb{B}_{\Phi}}.
 $$</p>
 <p>The electric part is a real-linear combination of the three planes that contain the time direction, and the magnetic part a real-linear combination of the three that do not. This is the plane-geometric form of the algebra asymmetry: the electric part lies in the timelike-plane family and the magnetic part in the spacelike-plane family, the two families that generate the Lorentz boosts and the rotations respectively (<em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>). The six components of the field are the six planes, and a general field is a real-linear combination of all six.</p>
 <p>Two familiar facts are read off from the plane type. The <strong>quaternion conjugate</strong> of the field reverses the electric planes and fixes the magnetic ones,</p>
 <p>$$
 \tilde{F}^{\natural} = -i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H,
 $$</p>
-<p>because the conjugate negates the vector part of each coefficient and the electric part is the imaginary vector while the magnetic part is the real vector. Read on the fields this is $\vec E\to-\vec E$ and $\vec H\to\vec H$: the conjugate reverses the electric field and keeps the magnetic one. The <strong>duality rotation</strong> of the later section, $\tilde{F}\mapsto \exp(-i\theta_{\mathrm{pha}})\tilde{F}$, turns the electric planes into the magnetic ones and back. At $\theta_{\mathrm{pha}} = \pi/2$ the factor is $-i$, which carries $\mathbb{M}_+$ to $\mathbb{M}_-$ and back, so the two families are exchanged: with unit impedance the exchange is the exact swap $\vec E\mapsto\vec H$, $\vec H\mapsto-\vec E$, and in a general medium the impedance factor $Z=\sqrt{\mu/\epsilon}$ enters. This is why the duality rotation is a symmetry of the source-free vacuum equations and not of the equations with electric sources: it moves the field along a circle in the $(I_1,\,2cI_2)$-plane, at constant $I_1^2+4c^2I_2^2$, without preserving the planes separately.</p>
+<p>because the conjugate negates the vector part of each coefficient and the electric part is the imaginary vector while the magnetic part is the real vector. Read on the fields this is $\vec E\to-\vec E$ and $\vec H\to\vec H$: the conjugate reverses the electric field and keeps the magnetic one. The <strong>duality rotation</strong> of the later section, $\tilde{F}\mapsto \exp(-i\theta_{\mathrm{pha}})\tilde{F}$, turns the electric planes into the magnetic ones and back. At $\theta_{\mathrm{pha}} = \pi/2$ the factor is $-i$, which carries $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$ and back, so the two families are exchanged: with unit impedance the exchange is the exact swap $\vec E\mapsto\vec H$, $\vec H\mapsto-\vec E$, and in a general medium the impedance factor $Z=\sqrt{\mu/\epsilon}$ enters. This is why the duality rotation is a symmetry of the source-free vacuum equations and not of the equations with electric sources: it moves the field along a circle in the $(I_1,\,2cI_2)$-plane, at constant $I_1^2+4c^2I_2^2$, without preserving the planes separately.</p>
 <h2 id="the-biquaternion-norm-and-the-two-invariants">The Biquaternion Norm and the Two Invariants</h2>
 <p>The biquaternion norm on $\mathbb{B}$ is the quaternionic norm of <em>Product and Form Conventions</em>, §<em>The Form Convention</em>,</p>
 <p>$$
@@ -210,9 +210,9 @@ I_1 = 0 \ \text{ and }\ I_2 = 0
 \quad\Longleftrightarrow\quad
 \tilde{F} \text{ is a zero divisor}.
 $$</p>
-<p>The vanishing of the biquaternion norm is therefore the algebraic statement that the field is a <strong>null (radiative) field</strong>: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. This is the same zero-divisor cone that underlies the light cone of $\mathbb{M}_-$, now realized inside the field-strength space. It is the algebraic seed of the radiation theory and will reappear in the later article on radiation from accelerated charges.</p>
+<p>The vanishing of the biquaternion norm is therefore the algebraic statement that the field is a <strong>null (radiative) field</strong>: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. This is the same zero-divisor cone that underlies the light cone of $\mathbb{B}_{\Phi}$, now realized inside the field-strength space. It is the algebraic seed of the radiation theory and will reappear in the later article on radiation from accelerated charges.</p>
 <h2 id="the-polar-reading-of-the-field">The Polar Reading of the Field</h2>
-<p>The electric half of the field strength lies in $\mathbb{M}_+$ and its magnetic half in $\mathbb{M}_-$, and that mixed case is exactly the one in which the Cartan pairing carries information. The pairing gives a reading of the field that the invariants alone do not.</p>
+<p>The electric half of the field strength lies in $\mathbb{B}_{\Psi}$ and its magnetic half in $\mathbb{B}_{\Phi}$, and that mixed case is exactly the one in which the Cartan pairing carries information. The pairing gives a reading of the field that the invariants alone do not.</p>
 <p>Write the general polar decomposition of the field as</p>
 <p>$$
 \tilde F=\tilde F_H\tilde F_0,\qquad
@@ -373,7 +373,7 @@ W = \frac{1}{2}\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right) = \frac{1}{2}\lef
 \qquad
 \vec S = \vec E\times\vec H.
 $$</p>
-<p>The scalar part of $\tilde{F}\tilde{F}^{*}$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\vec S$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the biquaternion norm is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is non-negative — and positive unless the field vanishes — and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.</p>
+<p>The scalar part of $\tilde{F}\tilde{F}^{*}$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\vec S$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form must be. The contrast is instructive: the biquaternion norm is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{B}_{\Psi}$-valued object whose scalar part is non-negative — and positive unless the field vanishes — and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.</p>
 <p><strong>The energy–momentum biquaternion, and the second route to the invariants.</strong> Half the Hermitian form is itself an element of the algebra, and it is the object the electro-gravimagnetic programme calls the <strong>energy–momentum biquaternion</strong>:</p>
 <p>$$
 \tilde{\Sigma} = \tfrac{1}{2}\,\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\,\vec S .
@@ -460,7 +460,7 @@ $$</p>
 <p><strong>Checks.</strong> Over $100$ random fields with $c$ drawn from $[0.6,1.8]$ and $t=0.4,0.9$, the trace of $\Lambda(t)$ agreed with $2\cosh(t\sigma/c)+2\cos(t\omega/c)$ to $3\times10^{-15}$ and $\det\Lambda(t)=1$ held to $8\times10^{-15}$; the coefficient of $\lambda^2$ in the characteristic polynomial agreed with $-I_1/c^2$ to $2\times10^{-15}$; and $\tilde F^2=\epsilon(\sigma+i\omega)^2e_t$ held in the algebra in every case, so that $\omega$ was positive exactly when $I_2$ was positive. A pure electric field of unit magnitude along $(1,2,2)$ gave a boost along that axis with $\operatorname{Tr}\Lambda=2\cosh(0.5)+2$, and a pure magnetic field of magnitude two along $(2,2,1)$ a rotation fixing that axis with $\operatorname{Tr}\Lambda=2+2\cos(0.8)$, each to machine precision. A null field gave $\tilde F^2=0$ with $\tilde F\neq0$ and a rotor $e_t+\tfrac12t\tilde F$ truncating after the linear term, while the deviation of its display from the identity was nilpotent and nonzero; a generic field gave four distinct eigenvalues. For the rotor the congruence was checked directly: the display of $\tilde X\mapsto U(s)\tilde XU(s)^{*}$ with $U(s)=\exp(s\tilde F)$ has trace $2\cosh(2s\sigma)+2\cos(2s\omega)$ at $c=1$ to $5\times10^{-15}$, which is the factor of two displayed.</p>
 <p><strong>Boundary.</strong> The section adds an interpretation and no dynamics. It does not refine the classification of the paragraphs above, and it computes no flow that the field equations ask for. What it records is that the pair which already fixed the frame displaying the field also fixes what the field generates: the invariants are the spectral data of the flow. The standard forms of the four types, their normalisations and their classification up to conjugacy are not developed here; they are Minguzzi's, and <em>Further Reading</em> cites them.</p>
 <h2 id="summary">Summary</h2>
-<p>The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{M}_+$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{M}_-$. This is why the field strength is neither a four-vector nor an element of $\mathbb{M}_-$: it is an antisymmetric rank-two tensor, whose electric and magnetic pieces occupy the two complementary sectors of the algebra.</p>
+<p>The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{B}_{\Psi}$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. This is why the field strength is neither a four-vector nor an element of $\mathbb{B}_{\Phi}$: it is an antisymmetric rank-two tensor, whose electric and magnetic pieces occupy the two complementary sectors of the algebra.</p>
 <p>The biquaternion norm of the field strength is the complex scalar</p>
 <p>$$
 \boxed{\;\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \mathrm{Sc}\bigl(\tilde{F}\tilde{F}^{\natural}\bigr) = \sum_{k=1}^{3} F_k^2
@@ -497,19 +497,19 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>Complex (scalar) subspace</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>Complex three-dimensional vector part</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+, \mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$</td>
 <td>Hermitian and anti-Hermitian subspaces</td>
 </tr>
 <tr>

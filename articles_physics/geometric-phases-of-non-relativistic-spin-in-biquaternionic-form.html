@@ -107,7 +107,7 @@ $$</p>
 \langle\tilde R_\psi\rangle = \frac{\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})}{\operatorname{Tr}(\tilde{Ϛ})}, \qquad
 \theta_{\mathrm{pha},\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}(0)^\dagger\tilde{Ξ}_{\mathrm{sp}}(T)) .
 $$</p>
-<p>The star in the first trace is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\tilde R_\psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.</p>
+<p>The star in the first trace is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\tilde R_\psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.</p>
 <h3 id="the-berry-phase-as-the-adiabatic-limit">The Berry Phase as the Adiabatic Limit</h3>
 <p>If the Hamiltonian is transported slowly around a loop in parameter space and the system follows the instantaneous eigenstate, the AA phase becomes the <strong>Berry phase</strong></p>
 <p>$$
@@ -183,8 +183,8 @@ $$</p>
 $$</p>
 <p>for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde R_\psi\rangle dr'_t)$. The two faces are:</p>
 <ul>
-<li>the <strong>rotor</strong> $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;</li>
-<li>the <strong>central phase</strong> $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.</li>
+<li>the <strong>rotor</strong> $\tilde{u}\in\mathbb{B}_{H}$, which rotates the Bloch vector and is observable through the orientation of the state;</li>
+<li>the <strong>central phase</strong> $\exp(i\alpha)\in\mathbb{B}_{C}$, which multiplies the spinor and is observable only through interference with another amplitude.</li>
 </ul>
 <p>The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.</p>
 <h3 id="gauge-freedom-and-the-pancharatnam-connection">Gauge Freedom and the Pancharatnam Connection</h3>
@@ -222,9 +222,9 @@ $$</p>
 <p><strong>Standard physics, transcribed.</strong> The dynamical/geometric split, the AA phase, the Berry phase, the solid-angle formula, the $4\pi$ periodicity, and the rotating-field effective Hamiltonian are all standard. The article claims no deviation.</p>
 <p><strong>What the algebra organises.</strong></p>
 <ul>
-<li><strong>The double cover is explicit.</strong> The rotor group is $\mathbb{H}_{\mathbb{B}}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.</li>
+<li><strong>The double cover is explicit.</strong> The rotor group is $\mathbb{B}_{H}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.</li>
 <li><strong>The phase lives in the spinor.</strong> The idempotent contains no phase, as the Berry article records; the Hermitian form on the spinor, read through the trace, carries the Pancharatnam connection. The geometric phase is thus a property of the lift of the Bloch vector, not of the Bloch vector.</li>
-<li><strong>The holonomy is a rotor with two faces.</strong> The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{H}_{\mathbb{B}}\to SO(3)$.</li>
+<li><strong>The holonomy is a rotor with two faces.</strong> The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{B}_{H}\to SO(3)$.</li>
 <li><strong>A common rotating-frame structure.</strong> The rotating-field problem has the same effective Hamiltonian form as the Rabi problem, with the detuning replaced by $\omega_L\cos\theta_0-\omega$ and the transverse coupling by $\omega_L\sin\theta_0$. The framework makes the identity of the two problems visible.</li>
 </ul>
 <p><strong>What the algebra does not supply.</strong> The field amplitude, the gyromagnetic ratio and the rate $\omega$ are external data. The algebra does not select the loop or the protocol; it describes the holonomy of whatever spinor path the protocol produces. And the numerical value of the geometric phase, being an angle, is defined modulo $2\pi$; the framework does not remove that ambiguity, which is physical.</p>
@@ -256,9 +256,9 @@ $$</p>
 <p>$$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
 $$</p>
-<p>in the corpus Larmor sense (clockwise about $+\vec u_z$), which agrees with the general formula because the oriented solid angle is $-\theta_{\mathrm{sol}}$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{u}(2\pi) = -e_t$, the nontrivial element of the kernel of the double cover $\mathbb{H}_{\mathbb{B}}\to SO(3)$.</p>
+<p>in the corpus Larmor sense (clockwise about $+\vec u_z$), which agrees with the general formula because the oriented solid angle is $-\theta_{\mathrm{sol}}$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{u}(2\pi) = -e_t$, the nontrivial element of the kernel of the double cover $\mathbb{B}_{H}\to SO(3)$.</p>
 <p>The <strong>Berry phase</strong> is the adiabatic limit of the same holonomy. For the field rotating about $\vec u_z$ at rate $\omega$, the rotating frame gives the static effective spin field $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ with gap $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$; in the limit $\omega\ll\omega_L$ the holonomy is $-\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}$ with the sign fixed by the traversal, and at $\omega = \omega_L\cos\theta_0$ the effective field is purely transverse.</p>
-<p>The geometric phase is carried by the spinor, not by the idempotent: the density matrix is quadratic in the spinor and the phase cancels in it. The holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ whose rotation angle is twice the spinor phase, and this factor of two is the statement that the spinor representation is the double cover of the rotation group.</p>
+<p>The geometric phase is carried by the spinor, not by the idempotent: the density matrix is quadratic in the spinor and the phase cancels in it. The holonomy is a rotor in $\mathbb{B}_{H}$ whose rotation angle is twice the spinor phase, and this factor of two is the statement that the spinor representation is the double cover of the rotation group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -281,11 +281,11 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian (informational) subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Unit real quaternions; the rotation/holonomy rotors</td>
 </tr>
 <tr>

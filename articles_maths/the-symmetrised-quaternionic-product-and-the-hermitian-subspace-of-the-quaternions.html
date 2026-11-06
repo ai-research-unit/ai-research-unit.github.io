@@ -94,17 +94,17 @@ $$</p>
 <h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
 <p><strong>Definition.</strong> The <strong>Hermitian subspace</strong> and the <strong>anti-Hermitian subspace</strong> of the conjugation ${}^{\natural}$ are</p>
 <p>$$
-\mathbb{M}_+ = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = \tilde q\} , \qquad \mathbb{M}_- = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = -\tilde q\} .
+\mathbb{B}_{\Psi} = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = \tilde q\} , \qquad \mathbb{B}_{\Phi} = \{\tilde q \in \mathbb{H} : \tilde q^{\natural} = -\tilde q\} .
 $$</p>
-<p><strong>Theorem (the two subspaces).</strong> $\mathbb{M}_+$ is the scalar line $\mathbb{R}e_t$, of real dimension one; $\mathbb{M}_-$ is the vector subspace $\mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting</p>
+<p><strong>Theorem (the two subspaces).</strong> $\mathbb{B}_{\Psi}$ is the scalar line $\mathbb{R}e_t$, of real dimension one; $\mathbb{B}_{\Phi}$ is the vector subspace $\mathrm{Vect}(\vec e_x,\vec e_y,\vec e_z)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting</p>
 <p>$$
-\boxed{\;\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde q = q_te_t + \vec q\;},
+\boxed{\;\mathbb{H} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} , \qquad \tilde q = q_te_t + \vec q\;},
 $$</p>
 <p>the scalar part being Hermitian and the vector part anti-Hermitian.</p>
 <p><em>Proof.</em> The conjugation acts by $q_te_t + \vec q \mapsto q_te_t - \vec q$, so its fixed subspace is the scalar line and its negated one the vector subspace; an involution of a real vector space splits the space into its two eigenspaces.</p>
 <p>Over $\mathbb{R}$ the scalar sector has <strong>no</strong> nontrivial involution — the bar is the identity by the conventions of the corpus — so ${}^{\natural}$ is the only involution at hand, it has two eigenspaces, and the four-subspace lattice collapses to two. The subspace and its companion are therefore the scalar line and the vector subspace, and no other.</p>
 <h2 id="positivity-on-the-hermitian-subspace">Positivity on the Hermitian Subspace</h2>
-<p><strong>Theorem (positivity).</strong> The symmetrised product is positive definite: $\tilde q \bullet \tilde q = \langle\tilde q\rangle_{\natural}e_t$, which is a non-negative multiple of $e_t$ vanishing only at $\tilde q = 0$. On the Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = q_{1t}q_{2t}e_t$, positive definite there; on the anti-Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = (\vec q_1 \cdot \vec q_2)e_t$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.</p>
+<p><strong>Theorem (positivity).</strong> The symmetrised product is positive definite: $\tilde q \bullet \tilde q = \langle\tilde q\rangle_{\natural}e_t$, which is a non-negative multiple of $e_t$ vanishing only at $\tilde q = 0$. On the Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = q_{1t}q_{2t}e_t$, positive definite there; on the anti-Hermitian subspace it reads $\tilde q_1 \bullet \tilde q_2 = (\vec q_1 \cdot \vec q_2)e_t$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}) = 0$.</p>
 <p><em>Proof.</em> On the scalar line $\vec q_1 = \vec q_2 = 0$, so $\beta = q_{1t}q_{2t}$; on the vector subspace $q_{1t} = q_{2t} = 0$, so $\beta = \vec q_1 \cdot \vec q_2$; the mixed value has $q_{1t} = 0$ or $q_{2t} = 0$ together with the corresponding vector part zero, so it vanishes.</p>
 <p>Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)e_t$ vanishes exactly on the pairs with $\beta(\tilde q_1,\tilde q_2) = 0$, and those pairs are abundant, $\vec e_x \bullet \vec e_y = 0$ for two orthogonal pure elements and $e_t \bullet \vec e_x = 0$ for a scalar and a vector. What definiteness removes is the zero divisor <strong>against itself</strong>: $\tilde q \bullet \tilde q = \langle\tilde q\rangle_{\natural}e_t$ never vanishes for $\tilde q \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (<em>The Specificities of the General Quaternionic Algebra</em>, above this article in this category).</p>
 <h2 id="summary">Summary</h2>
@@ -127,11 +127,11 @@ $$</p>
 <td>the quaternion form, the central coefficient</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+ = \{\tilde q : \tilde q^{\natural} = \tilde q\}$</td>
+<td>$\mathbb{B}_{\Psi} = \{\tilde q : \tilde q^{\natural} = \tilde q\}$</td>
 <td>the Hermitian subspace, the scalar line $\mathbb{R}e_t$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_- = \{\tilde q : \tilde q^{\natural} = -\tilde q\}$</td>
+<td>$\mathbb{B}_{\Phi} = \{\tilde q : \tilde q^{\natural} = -\tilde q\}$</td>
 <td>the anti-Hermitian subspace, the vector subspace</td>
 </tr>
 <tr>

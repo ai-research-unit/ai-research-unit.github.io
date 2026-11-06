@@ -177,33 +177,33 @@ $$</p>
 <h2 id="functions-on-a-four-dimensional-subspace">Functions on a Four-Dimensional Subspace</h2>
 <h3 id="the-four-named-subspaces">The Four Named Subspaces</h3>
 <p>In each of the four subspaces treated in this section, the complex coefficients $Q_t, Q_x, Q_y, Q_z$ of a general element take specific forms.</p>
-<p><strong>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</strong> An element is written</p>
+<p><strong>The quaternion subspace $\mathbb{B}_{H}$.</strong> An element is written</p>
 <p>$$
 \tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R},
 $$</p>
 <p>so the complex coefficients are $Q_t = q_t$, $Q_x = q_x$, $Q_y = q_y$, $Q_z = q_z$. All four coefficients are <strong>real</strong>.</p>
-<p><strong>The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$.</strong> An element is written</p>
+<p><strong>The anti-quaternion subspace $\mathbb{B}_{iH}$.</strong> An element is written</p>
 <p>$$
 \tilde{Q} = i q'_t\, e_t + i q'_x\, \vec e_x + i q'_y\, \vec e_y + i q'_z\, \vec e_z, \qquad q'_t, q'_x, q'_y, q'_z \in \mathbb{R},
 $$</p>
-<p>so the complex coefficients are $Q_t = i q'_t$, $Q_x = i q'_x$, $Q_y = i q'_y$, $Q_z = i q'_z$. All four coefficients are <strong>purely imaginary</strong>. Every partial derivative on this subspace therefore carries a factor of $-i$, and the d'Alembertian is the negative of the Euclidean Laplacian — the mirror of the situation on $\mathbb{H}_{\mathbb{B}}$.</p>
-<p><strong>The anti-Hermitian subspace $\mathbb{M}_-$.</strong> An element is written</p>
+<p>so the complex coefficients are $Q_t = i q'_t$, $Q_x = i q'_x$, $Q_y = i q'_y$, $Q_z = i q'_z$. All four coefficients are <strong>purely imaginary</strong>. Every partial derivative on this subspace therefore carries a factor of $-i$, and the d'Alembertian is the negative of the Euclidean Laplacian — the mirror of the situation on $\mathbb{B}_{H}$.</p>
+<p><strong>The anti-Hermitian subspace $\mathbb{B}_{\Phi}$.</strong> An element is written</p>
 <p>$$
 \tilde{Q} = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R},
 $$</p>
 <p>so the complex coefficients are $Q_t = i q'_t$, $Q_x = q_x$, $Q_y = q_y$, $Q_z = q_z$. The <strong>first coefficient is purely imaginary</strong>, and the three spatial coefficients are <strong>real</strong>.</p>
-<p><strong>The Hermitian subspace $\mathbb{M}_+$.</strong> An element is written</p>
+<p><strong>The Hermitian subspace $\mathbb{B}_{\Psi}$.</strong> An element is written</p>
 <p>$$
 \tilde{Q} = q_t\, e_t + i q'_x\, \vec e_x + i q'_y\, \vec e_y + i q'_z\, \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R},
 $$</p>
 <p>so the complex coefficients are $Q_t = q_t$, $Q_x = i q'_x$, $Q_y = i q'_y$, $Q_z = i q'_z$. The <strong>first coefficient is real</strong>, and the three spatial coefficients are <strong>purely imaginary</strong>.</p>
-<p>In each case, the four real parameters ($q_t, q_x, q_y, q_z$ for $\mathbb{H}_{\mathbb{B}}$; $q'_t, q'_x, q'_y, q'_z$ for $i\mathbb{H}_{\mathbb{B}}$; $q'_t, q_x, q_y, q_z$ for $\mathbb{M}_-$; $q_t, q'_x, q'_y, q'_z$ for $\mathbb{M}_+$) are the independent variables.</p>
+<p>In each case, the four real parameters ($q_t, q_x, q_y, q_z$ for $\mathbb{B}_{H}$; $q'_t, q'_x, q'_y, q'_z$ for $\mathbb{B}_{iH}$; $q'_t, q_x, q_y, q_z$ for $\mathbb{B}_{\Phi}$; $q_t, q'_x, q'_y, q'_z$ for $\mathbb{B}_{\Psi}$) are the independent variables.</p>
 <h3 id="functions-on-a-subspace">Functions on a Subspace</h3>
 <p>A <strong>biquaternion-valued function on a four-dimensional subspace</strong> is a map</p>
 <p>$$
 F_{\mathrm{fn}} : V \to \mathbb{B}, \qquad \tilde{Q} \mapsto F_{\mathrm{fn}}(\tilde{Q}),
 $$</p>
-<p>where $V$ is one of the four subspaces above. Because $V$ is four-dimensional, the function $F_{\mathrm{fn}}$ is determined by four complex-valued functions of the four real parameters that parametrize $V$. For example, on $\mathbb{M}_-$,</p>
+<p>where $V$ is one of the four subspaces above. Because $V$ is four-dimensional, the function $F_{\mathrm{fn}}$ is determined by four complex-valued functions of the four real parameters that parametrize $V$. For example, on $\mathbb{B}_{\Phi}$,</p>
 <p>$$
 F_{\mathrm{fn}}(\tilde{Q}) = F_0(q'_t, q_x, q_y, q_z) e_t + F_1(q'_t, q_x, q_y, q_z) \vec e_x + F_2(q'_t, q_x, q_y, q_z) \vec e_y + F_3(q'_t, q_x, q_y, q_z) \vec e_z.
 $$</p>
@@ -224,22 +224,22 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>$\partial/\partial q_t$</td>
 <td>$\partial/\partial q_\mu$</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 <td>$-i\,\partial/\partial q'_t$</td>
 <td>$-i\,\partial/\partial q'_\mu$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$-i\,\partial/\partial q'_t$</td>
 <td>$\partial/\partial q_\mu$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$\partial/\partial q_t$</td>
 <td>$-i\,\partial/\partial q'_\mu$</td>
 </tr>
@@ -306,15 +306,15 @@ $$</p>
 \Box = \frac{\partial^2}{\partial Q_t^2} + \Delta_Q.
 $$</p>
 <p>The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the identity $e_t$. It acts component-wise on the coefficients of $F_{\mathrm{fn}}$.</p>
-<p><strong>Remark on the signature.</strong> The formal expression $\partial^2/\partial Q_t^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{M}_-$, where $Q_t = iq'_t$ and $Q_\mu = q_\mu$, the derivative $\partial^2/\partial Q_t^2 = -\partial^2/\partial (q'_t)^2$, so</p>
+<p><strong>Remark on the signature.</strong> The formal expression $\partial^2/\partial Q_t^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{B}_{\Phi}$, where $Q_t = iq'_t$ and $Q_\mu = q_\mu$, the derivative $\partial^2/\partial Q_t^2 = -\partial^2/\partial (q'_t)^2$, so</p>
 <p>$$
-\boxed{\; \Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_t)^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} \;},
+\boxed{\; \Box\big|_{\mathbb{B}_{\Phi}} = -\frac{\partial^2}{\partial (q'_t)^2} + \frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} \;},
 $$</p>
-<p>which is the Lorentzian wave operator (the d'Alembertian) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_t = q_t$ and $Q_\mu = iq'_\mu$, we have</p>
+<p>which is the Lorentzian wave operator (the d'Alembertian) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{B}_{\Psi}$, where $Q_t = q_t$ and $Q_\mu = iq'_\mu$, we have</p>
 <p>$$
-\Box\big|_{\mathbb{M}_+} = \frac{\partial^2}{\partial q_t^2} - \frac{\partial^2}{\partial (q'_x)^2} - \frac{\partial^2}{\partial (q'_y)^2} - \frac{\partial^2}{\partial (q'_z)^2},
+\Box\big|_{\mathbb{B}_{\Psi}} = \frac{\partial^2}{\partial q_t^2} - \frac{\partial^2}{\partial (q'_x)^2} - \frac{\partial^2}{\partial (q'_y)^2} - \frac{\partial^2}{\partial (q'_z)^2},
 $$</p>
-<p>which is also Lorentzian, with the opposite sign convention. On $\mathbb{H}_{\mathbb{B}}$, where all $Q_\mu$ are real, $\Box$ is the ordinary Euclidean four-dimensional Laplacian.</p>
+<p>which is also Lorentzian, with the opposite sign convention. On $\mathbb{B}_{H}$, where all $Q_\mu$ are real, $\Box$ is the ordinary Euclidean four-dimensional Laplacian.</p>
 <p>The d'Alembertian is the <strong>natural second-order operator</strong> in the biquaternion framework: it is symmetric under the exchange of $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, it is scalar-valued, and it is the operator that appears in the second-order equations, in the Cauchy integral formula, and in the factorization of the Cauchy–Riemann operator.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>The <strong>square of the gradient</strong> is the second-order operator</p>
@@ -411,7 +411,7 @@ $$</p>
 <p><strong>The general case.</strong> Can the analysis be extended from a four-dimensional subspace to the full biquaternion algebra $\mathbb{B}$, with a precise definition of the partial derivatives with respect to genuinely complex coefficients?</p>
 </li>
 <li>
-<p><strong>Differentiability on other subspaces.</strong> How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{M}_+$ and $\mathbb{M}_-$?</p>
+<p><strong>Differentiability on other subspaces.</strong> How does the analysis extend to the other fixed-point subspaces, and in particular to the relation between $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$?</p>
 </li>
 <li>
 <p><strong>The square of the gradient.</strong> The square $\tilde{\nabla}^2$ appears when the gradient is applied twice without conjugation. The identity $\tilde{\nabla}^2 = 2\partial/\partial Q_t\,\tilde{\nabla} - \Box$ expresses it in terms of $\Box$ and the first derivative. What is the natural setting in which the square $\tilde{\nabla}^2$ (as opposed to $\Box$) is the operator that appears?</p>
@@ -420,10 +420,10 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension 8, with a Euclidean norm and the associated metric topology. Limits and continuity are defined in the usual way, and the basic properties hold: uniqueness of limits, the sequential criterion, the algebra of limits, continuity of sums, products, and compositions, component-wise continuity, and uniform continuity on compact sets.</p>
 <p>A direct definition of differentiability with respect to the biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace of $\mathbb{B}$, with four real parameters as independent variables, and to define the differential operators on this subspace.</p>
-<p>The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary; and the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.</p>
-<p>The <strong>biquaternionic gradient</strong> $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The <strong>d'Alembertian</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta_Q$ is the <strong>natural second-order operator</strong>: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The <strong>square of the gradient</strong> $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta_Q) + 2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t \partial Q_\mu)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial/\partial Q_t\,\tilde{\nabla} - \Box$. The <strong>convective derivative</strong> $\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.</p>
+<p>The four subspaces used here are the quaternion subspace $\mathbb{B}_{H}$, with all complex coefficients real; the anti-quaternion subspace $\mathbb{B}_{iH}$, with all complex coefficients purely imaginary; the Hermitian subspace $\mathbb{B}_{\Psi}$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary; and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.</p>
+<p>The <strong>biquaternionic gradient</strong> $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The <strong>d'Alembertian</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta_Q$ is the <strong>natural second-order operator</strong>: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{B}_{H}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $\mathbb{B}_{iH}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ it takes a Lorentzian form in the underlying real coordinates. The <strong>square of the gradient</strong> $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta_Q) + 2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t \partial Q_\mu)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial/\partial Q_t\,\tilde{\nabla} - \Box$. The <strong>convective derivative</strong> $\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.</p>
 <p>The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.</p>
-<p>The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is treated in <em>Remarkable Subspaces and the Analysis</em>, where these four are the real forms beside the two complex subspaces. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.</p>
+<p>The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{B}_{H}$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}$, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, is treated in <em>Remarkable Subspaces and the Analysis</em>, where these four are the real forms beside the two complex subspaces. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -438,19 +438,19 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Quaternion subspace: all coefficients real</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 <td>Anti-quaternion subspace: all coefficients purely imaginary</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace: $Q_t$ imaginary, $Q_\mu$ real</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace: $Q_t$ real, $Q_\mu$ imaginary</td>
 </tr>
 <tr>

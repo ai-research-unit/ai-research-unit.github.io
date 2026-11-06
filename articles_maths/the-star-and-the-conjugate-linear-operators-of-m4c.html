@@ -87,7 +87,7 @@ It is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, involutive, and multiplic
 $$
 \overline{ab}=\bar a\,\bar b .
 $$
-It fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and anti-fixes its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$.</p>
+It fixes the real quaternion subspace $\mathbb{B}_{H}$ and anti-fixes its imaginary multiple $\mathbb{B}_{iH}$.</p>
 <p><strong>The quaternion conjugation.</strong> The <strong>natural</strong> conjugation is
 $$
 b^{\natural}=b_0\,e_t-b_1\,\vec e_x-b_2\,\vec e_y-b_3\,\vec e_z .
@@ -96,7 +96,7 @@ It is $\mathbb{C}$-linear and involutive, and it is an antiautomorphism:
 $$
 (ab)^{\natural}=b^{\natural}a^{\natural}.
 $$
-It fixes the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\operatorname{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$.</p>
+It fixes the centre $\mathbb{B}_{C}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$.</p>
 <p><strong>The star.</strong> The <strong>star</strong> is the composite
 $$
 b^{*}=\overline{b^{\natural}}=\bar b_0\,e_t-\bar b_1\,\vec e_x-\bar b_2\,\vec e_y-\bar b_3\,\vec e_z .
@@ -105,7 +105,7 @@ It is $\mathbb{C}$-antilinear, involutive, and an antiautomorphism:
 $$
 (ab)^{*}=b^{*}a^{*}.
 $$
-It fixes the Hermitian subspace $\mathbb{M}_+$ and anti-fixes the anti-Hermitian subspace $\mathbb{M}_-$.</p>
+It fixes the Hermitian subspace $\mathbb{B}_{\Psi}$ and anti-fixes the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.</p>
 <p><strong>The table.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -122,22 +122,22 @@ It fixes the Hermitian subspace $\mathbb{M}_+$ and anti-fixes the anti-Hermitian
 <td>bar $\bar{\cdot}$</td>
 <td>antilinear</td>
 <td>automorphism</td>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 </tr>
 <tr>
 <td>natural ${}^{\natural}$</td>
 <td>linear</td>
 <td>antiautomorphism</td>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>$\operatorname{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{C}$</td>
+<td>$\mathbb{B}_{V}$</td>
 </tr>
 <tr>
 <td>star $*$</td>
 <td>antilinear</td>
 <td>antiautomorphism</td>
-<td>$\mathbb{M}_+$</td>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -476,7 +476,7 @@ $$
 for the complex-linear frame, with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ in the latter.</p>
 <p>The difference between the frames is the difference between the bar and the cell: the first is antilinear with even part $L(\mathbb{B})$, the second is linear with even part $M_2\oplus M_2$. Over $\mathbb{R}$ the first spans $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the second spans $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ on the same carrier.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra carries three involutions: the bar (antilinear automorphism, fixed space $\mathbb{H}_{\mathbb{B}}$), the natural conjugation (linear antiautomorphism, fixed space $\mathbb{C}_{\mathbb{B}}$) and the star (antilinear antiautomorphism, fixed space $\mathbb{M}_+$). The star is the composite of the bar and the natural conjugation. In the real basis the bar is $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$ and the star is $S=D_8J$; both have trace zero and determinant one. In the complex coefficient basis the natural conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and it has the two-sided expansion
+<p>The biquaternion algebra carries three involutions: the bar (antilinear automorphism, fixed space $\mathbb{B}_{H}$), the natural conjugation (linear antiautomorphism, fixed space $\mathbb{B}_{C}$) and the star (antilinear antiautomorphism, fixed space $\mathbb{B}_{\Psi}$). The star is the composite of the bar and the natural conjugation. In the real basis the bar is $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$ and the star is $S=D_8J$; both have trace zero and determinant one. In the complex coefficient basis the natural conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and it has the two-sided expansion
 $$
 {}^{\natural}=-\tfrac12(L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}+L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}+L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_z}).
 $$

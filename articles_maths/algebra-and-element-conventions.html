@@ -73,7 +73,7 @@
 <p>This article is the first of the ten conventions articles of the mathematical corpus, and the one that fixes the base: the base and its units, the shape of a generic element and its coefficients, the remarkable subspaces and the conjugations. It assumes nothing beyond the vocabulary of a set, a group and a ring, which it recalls only where a convention depends on it.</p>
 <p>It states conventions only. The proofs and the properties of the objects it names belong to the articles cited beside them. A convention recorded here is not a claim that the alternative is wrong: several of these choices are freely made where either choice would be defensible, and what is not free is <em>consistency</em>, since every later article inherits them.</p>
 <p>The word <em>metric</em> has one meaning in the corpus, and there is one metric. It is the <strong>unit metric</strong> $\delta_{\mu\nu}=(1,1,1,1)$: diagonal, all four coefficients $+1$, the matrix of the interval $\sum_\mu Q_\mu^2$. A frame carries a coordinate, not a metric. The minus of the material sector is not a metric: it is the square of the $i$ in $Q_t=iq'_t$, $i^2=-1$, made once on the time slot. The Clifford tool is a translation of the algebra and never a reason to change it.</p>
-<p>The nine companion articles carry the rest, in dependency order: <em>Product and Form Conventions</em>, <em>Norm and Unitary Conventions</em>, <em>Special Element and Peirce Conventions</em>, <em>Frame and Metric Conventions</em>, <em>Matrix Representations Conventions</em>, <em>Operator and Calculus Conventions</em>, <em>Operator Family Conventions</em>, <em>Index, Notation and Corpus Conventions</em>, and <em>Conceptual Conventions</em>. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the $\mathbb{B}$ and $\mathbb{M}_-$ frames, the one metric they share, and the Clifford map, the fifth the two matrix models, the sixth the operators and the calculus, the seventh the four letters, the names of the sets and the four adjoint signs of the operator families, the eighth the indices, the working conventions of the corpus and the typography, and the ninth the rule that decides which concepts the corpus uses, with the concepts it prefers and the concepts it prefers not to use.</p>
+<p>The nine companion articles carry the rest, in dependency order: <em>Product and Form Conventions</em>, <em>Norm and Unitary Conventions</em>, <em>Special Element and Peirce Conventions</em>, <em>Frame and Metric Conventions</em>, <em>Matrix Representations Conventions</em>, <em>Operator and Calculus Conventions</em>, <em>Operator Family Conventions</em>, <em>Index, Notation and Corpus Conventions</em>, and <em>Conceptual Conventions</em>. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the $\mathbb{B}$ and $\mathbb{B}_{\Phi}$ frames, the one metric they share, and the Clifford map, the fifth the two matrix models, the sixth the operators and the calculus, the seventh the four letters, the names of the sets and the four adjoint signs of the operator families, the eighth the indices, the working conventions of the corpus and the typography, and the ninth the rule that decides which concepts the corpus uses, with the concepts it prefers and the concepts it prefers not to use.</p>
 <p>The order is the order of dependence. The base is read first; the products come before the forms, the forms before the norms; the special elements follow the base and precede the frames, which precede the representations, whose canonical frame is their Peirce frame; the calculus follows the products and the forms, the operator families follow the calculus; and the indices come last because they index the eight. The table at the end of the article is the index of the glyphs of the whole series.</p>
 <h2 id="groups-rings-and-operations">Groups, Rings and Operations</h2>
 <p>A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector. The <strong>symmetrised (Jordan) product</strong> is written with a bullet, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and the circle $\circ$ is kept for the <strong>composition of maps</strong>, as in $\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\sqrt{\mu}\,\tilde J}$.</p>
@@ -266,32 +266,32 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
+<td>$\mathbb{B}_{C}$, the centre</td>
 <td>$\tilde{Q}^{\natural} = \tilde{Q}$</td>
 <td>$2$</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
+<td>$\mathbb{B}_{V}$, the vector subspace</td>
 <td>$\tilde{Q}^{\natural} = -\tilde{Q}$</td>
 <td>$6$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
+<td>$\mathbb{B}_{H}$, the quaternion subspace</td>
 <td>$\bar{\tilde{Q}} = \tilde{Q}$</td>
 <td>$4$</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace</td>
+<td>$\mathbb{B}_{iH}$, the antiquaternion subspace</td>
 <td>$\bar{\tilde{Q}} = -\tilde{Q}$</td>
 <td>$4$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$, the Hermitian subspace</td>
+<td>$\mathbb{B}_{\Psi}$, the Hermitian subspace</td>
 <td>$\tilde{Q}^{*} = \tilde{Q}$</td>
 <td>$4$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$, the anti-Hermitian subspace</td>
+<td>$\mathbb{B}_{\Phi}$, the anti-Hermitian subspace</td>
 <td>$\tilde{Q}^{\flat} = \tilde{Q}$</td>
 <td>$4$</td>
 </tr>
@@ -301,7 +301,7 @@ $$</p>
 <h3 id="the-centre-and-the-vector-subspace">The Centre and the Vector Subspace</h3>
 <p>The algebra is the direct sum</p>
 <p>$$
-\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}),
+\mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V},
 $$</p>
 <p>the centre with the traceless part.</p>
 <p><strong>The centre and the vector subspace carry a glyph each.</strong> The centre is written with the tilde-free coefficient of $e_t$, $Q_te_t$, a complex scalar times the unit; the vector subspace is written $\vec Q$, the pure element, with the arrow and without the tilde.</p>
@@ -365,25 +365,25 @@ $$</p>
 <h3 id="the-quaternion-and-antiquaternion-subspaces">The Quaternion and Antiquaternion Subspaces</h3>
 <p>The algebra is the direct sum</p>
 <p>$$
-\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}},
+\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH},
 $$</p>
-<p>the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, whose elements carry real coefficients throughout, with the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, whose elements carry purely imaginary ones: the two are the <strong>real and imaginary halves</strong> of the algebra. The prime splits the element into the two parts,</p>
+<p>the quaternion subspace $\mathbb{B}_{H}$, whose elements carry real coefficients throughout, with the antiquaternion subspace $\mathbb{B}_{iH}$, whose elements carry purely imaginary ones: the two are the <strong>real and imaginary halves</strong> of the algebra. The prime splits the element into the two parts,</p>
 <p>$$
 \tilde Q = \tilde q + i\tilde q',\qquad
-\tilde q = q_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{H}_{\mathbb{B}},\qquad
-\tilde q' = q'_t\,e_t + q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z \in \mathbb{H}_{\mathbb{B}}.
+\tilde q = q_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{B}_{H},\qquad
+\tilde q' = q'_t\,e_t + q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z \in \mathbb{B}_{H}.
 $$</p>
 <p>The prime marks the second glyph and the split is uniform: $\tilde q$ takes the unprimed parameters and $\tilde q'$ the primed ones.</p>
 <h3 id="the-hermitian-and-anti-hermitian-subspaces">The Hermitian and Anti-Hermitian Subspaces</h3>
 <p>The algebra is the direct sum</p>
 <p>$$
-\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi},
 $$</p>
 <p>the Hermitian subspace with the anti-Hermitian one. The element splits across the coefficient slots,</p>
 <p>$$
 \tilde Q = \tilde Q_\psi + \tilde Q_\varphi,\qquad
-\tilde Q_\psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr)\in\mathbb{M}_+,\qquad
-\tilde Q_\varphi = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\in\mathbb{M}_-.
+\tilde Q_\psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr)\in\mathbb{B}_{\Psi},\qquad
+\tilde Q_\varphi = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\in\mathbb{B}_{\Phi}.
 $$</p>
 <p>$\tilde Q_\psi$ takes the real scalar slot with the imaginary vector slots, and $\tilde Q_\varphi$ the imaginary scalar slot with the real vector slots. The two tokens are those of the two sectors — $\psi$ informational, $\varphi$ material — and not two fields, so no label passes into the coefficients.</p>
 <h2 id="the-conjugations">The Conjugations</h2>
@@ -447,7 +447,7 @@ $$</p>
 <p>The maps of the layer are the bar, the tessarine sign, the star that is their composite, and the derived anti-Hermitian sign; the natural sign is not written on it.</p>
 <h2 id="summary">Summary</h2>
 <p>The base is written with the letter $e$, one unit to a direction: the scalar unit $e_t=1$ and the three vector units $\vec e_x,\vec e_y,\vec e_z$. A generic element is $\tilde Q=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, a coefficient carrying the name of the direction it multiplies and an element a number. The <strong>case</strong> records whether the scalar sector is larger than the reals and the <strong>tilde</strong> the presence of the quaternionic factor, and the two are read independently: $q$ is real, $Q$ complex, split-complex or dual, $\breve Q$ reduced biquaternion, $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion. A matrix and an array carry no tilde.</p>
-<p>The biquaternion algebra splits into the centre $\mathbb{C}_{\mathbb{B}}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, the fixed and anti-fixed spaces of the intrinsic conjugate; into the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, the real and imaginary halves; and into the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$, the fixed and anti-fixed spaces of the star. A pure element carries the arrow and no tilde, and the arrow takes priority where the two marks could fall on one glyph.</p>
+<p>The biquaternion algebra splits into the centre $\mathbb{B}_{C}$ and the vector subspace $\mathbb{B}_{V}$, the fixed and anti-fixed spaces of the intrinsic conjugate; into the quaternion and antiquaternion subspaces $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, the real and imaginary halves; and into the Hermitian and anti-Hermitian subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the fixed and anti-fixed spaces of the star. A pure element carries the arrow and no tilde, and the arrow takes priority where the two marks could fall on one glyph.</p>
 <p>The biquaternion algebra carries three involutions — the coefficient bar, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the natural sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.</p>
 <p>The angle follows the same rule as the element: one letter in two cases, $\theta$ real and $\Theta=\theta+i\theta'$ complex, so that a rotation and a boost are the real and the pure imaginary readings of one symbol. This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families and the indices are the subjects of the eight companions, and the table below is the index of the glyphs they share.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -561,20 +561,20 @@ $$</p>
 <td>A pure element of the biquaternion or split-biquaternion layer</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{C}$, $\mathbb{B}_{V}$</td>
 <td>The centre and the vector subspace of the biquaternion algebra, the fixed and anti-fixed spaces of the intrinsic conjugate (§<em>The Remarkable Subspaces of Biquaternions</em>)</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$, $\mathbb{B}_{iH}$</td>
 <td>The quaternion and antiquaternion subspaces, the real and imaginary halves of the biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
 <td>The Hermitian and anti-Hermitian subspaces, the fixed and anti-fixed spaces of the star</td>
 </tr>
 <tr>
 <td>$\tilde Q_\psi$, $\tilde Q_\varphi$</td>
-<td>The informational and material parts of an element, $\tilde Q=\tilde Q_\psi+\tilde Q_\varphi$, in $\mathbb{M}_+$ and $\mathbb{M}_-$ (§<em>The Hermitian and Anti-Hermitian Subspaces</em>)</td>
+<td>The informational and material parts of an element, $\tilde Q=\tilde Q_\psi+\tilde Q_\varphi$, in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ (§<em>The Hermitian and Anti-Hermitian Subspaces</em>)</td>
 </tr>
 <tr>
 <td>$G$; $R$; $k$, $F$; $V$; $M$; $A$</td>

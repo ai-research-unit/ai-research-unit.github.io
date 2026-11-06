@@ -93,7 +93,7 @@ structures in which some element multiplies as the projection onto the vector su
 element is necessarily $e_t$, and it is uniquely determined. Equivalently, the block is the only
 one in which the canonical splitting
 $$
-\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}
+\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}
 $$
 is realised by the multiplication by a single element, the element being the unit of the ambient
 algebra, which is not a unit of the block. The criterion is stated as the identity
@@ -117,9 +117,9 @@ subspace.</p>
 $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The operation of the block is $\diamond$,
 $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$;
 the parent product is $\tilde Q_1^{\natural}\tilde Q_2$ and the symmetric half is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$. An element
-is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\mathrm{Vect}(\mathbb{B})$ is the
+is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\mathbb{B}_{V}$ is the
 vector subspace of the pure elements, of complex dimension three, and
-$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the centre. The <strong>left multiplication</strong> of the block
+$\mathbb{B}_{C}=\mathbb{C}e_t$ is the centre. The <strong>left multiplication</strong> of the block
 is $L_{\tilde Q_4}\tilde Q_1=\tilde Q_4\diamond\tilde Q_1$, and $L_{\tilde Q_4}^{2}=L_{\tilde Q_4}L_{\tilde Q_4}$
 is the composite. A <strong>projector</strong> is an idempotent operator, and an <strong>idempotent</strong> is an element
 equal to its own square; the two levels are never interchanged, and the block is the example
@@ -131,13 +131,13 @@ $\tilde Q_1$,
 $$
 \boxed{\; L_{e_t}\tilde Q_1=\vec Q_1 , \qquad R_{e_t}\tilde Q_1=-\vec Q_1 , \qquad L_{e_t}^{2}=L_{e_t} \;}.
 $$
-The image of $L_{e_t}$ is $\mathrm{Vect}(\mathbb{B})$, its kernel is $\mathbb{C}_{\mathbb{B}}$,
-and $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$.</p>
+The image of $L_{e_t}$ is $\mathbb{B}_{V}$, its kernel is $\mathbb{B}_{C}$,
+and $\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}$.</p>
 <p><em>Proof.</em> The explicit form at $\tilde Q_1=e_t$, where $Q_{1t}=1$ and $\vec Q_1=\mathbf 0$, gives
 $e_t\diamond\tilde Q_1=\vec Q_1$, and at $\tilde Q=e_t$ it gives
 $\tilde Q_1\diamond e_t=-\vec Q_1$. The map $\tilde Q_1\mapsto\vec Q_1$ is the identity on the
 vector subspace and vanishes on the centre, so it is a projector, its square is itself, its
-image is $\mathrm{Vect}(\mathbb{B})$ and its kernel is $\mathbb{C}_{\mathbb{B}}$; the two are
+image is $\mathbb{B}_{V}$ and its kernel is $\mathbb{B}_{C}$; the two are
 complementary because every element is the sum of its scalar and vector parts.</p>
 <p><strong>Remark (the element is not a unit).</strong> The element $e_t$ satisfies $e_t\diamond\tilde Q_1=\vec Q_1$,
 which is $\tilde Q_1$ only when $\tilde Q_1$ is pure; at a non-pure element the scalar part is
@@ -174,17 +174,17 @@ the vector subspace and the centre is realised by the multiplication of the sing
 $e_t$:
 $$
 \boxed{\;
-\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}},
+\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C},
 \qquad
-\mathrm{Vect}(\mathbb{B})=\operatorname{im}L_{e_t},
+\mathbb{B}_{V}=\operatorname{im}L_{e_t},
 \qquad
-\mathbb{C}_{\mathbb{B}}=\ker L_{e_t}
+\mathbb{B}_{C}=\ker L_{e_t}
 \;}.
 $$
 The vector subspace is the image of the block and a left ideal of the block, and the centre is
 the kernel of $L_{e_t}$.</p>
 <p><em>Proof.</em> The splitting and the identifications are the governing identity. The image of the
-block is $\mathrm{Vect}(\mathbb{B})$, and it is a left ideal because for $\vec A$ pure and
+block is $\mathbb{B}_{V}$, and it is a left ideal because for $\vec A$ pure and
 any $\tilde Q_2$ the value $\vec A\diamond\tilde Q_2=-Q_{2t}\vec A-\vec A\times\vec Q_2$ is
 pure; the centre is the kernel of $L_{e_t}$ by the same identity.</p>
 <p>The corollary is the useful form of the criterion. In the block the two subspaces the theory
@@ -250,7 +250,7 @@ is the following short list, and the block carries nothing more.</p>
 <ul>
 <li><strong>Two projectors.</strong> The zero operator and the projection onto the vector subspace, the latter
     at the element $e_t$.</li>
-<li><strong>One splitting.</strong> $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$, the
+<li><strong>One splitting.</strong> $\mathbb{B}=\mathbb{B}_{V}\oplus\mathbb{B}_{C}$, the
     image and the kernel of $L_{e_t}$.</li>
 <li><strong>One left ideal.</strong> The vector subspace, which is the whole image of the block as well as a
     left ideal.</li>
@@ -266,7 +266,7 @@ the exact sense of its isolation among the twelve: the unit carries the projecto
 multiplication by the algebra unit is the projection onto the vector subspace,
 $L_{e_t}\tilde Q_1=\vec Q_1$, $L_{e_t}^{2}=L_{e_t}$, with $R_{e_t}=-L_{e_t}$; the projector
 classification of the block is the pair $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}\Leftrightarrow\tilde Q_1\in\{0,e_t\}$, so the projector class is the smallest a structure with a nonzero projector can
-have. The projection is the canonical splitting $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus \mathbb{C}_{\mathbb{B}}$ realised by the multiplication of one element, the vector subspace
+have. The projection is the canonical splitting $\mathbb{B}=\mathbb{B}_{V}\oplus \mathbb{B}_{C}$ realised by the multiplication of one element, the vector subspace
 being the image of the block and a left ideal and the centre its kernel. The block is the only
 one of the twelve in which the algebra unit multiplies as the projection onto the vector
 subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde Q_1=\vec Q_1$
@@ -300,11 +300,11 @@ no Peirce calculus.</p>
 <td>the projector equation; its solutions are $0$ and $e_t$</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>the vector subspace, the image of $L_{e_t}$ and of the block, a left ideal</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$</td>
+<td>$\mathbb{B}_{C}=\mathbb{C}e_t$</td>
 <td>the centre, the kernel of $L_{e_t}$</td>
 </tr>
 <tr>

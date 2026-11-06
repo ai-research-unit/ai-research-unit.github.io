@@ -125,38 +125,38 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Centre $\mathbb{C}_{\mathbb{B}}$</td>
+<td>Centre $\mathbb{B}_{C}$</td>
 <td>$\lvert c\rvert^2$</td>
 <td>$(1,0)$ over $\mathbb{C}$</td>
 </tr>
 <tr>
-<td>Vector space $\mathrm{Vect}(\mathbb{B})$</td>
+<td>Vector space $\mathbb{B}_{V}$</td>
 <td>$-\lVert v\rVert^2$</td>
 <td>$(0,3)$ over $\mathbb{C}$</td>
 </tr>
 <tr>
-<td>Informational sector $\mathbb{M}_+$</td>
+<td>Informational sector $\mathbb{B}_{\Psi}$</td>
 <td>the interval $\langle\tilde Q\rangle_{\natural}$</td>
 <td>$(1,3)$ over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>Material sector $\mathbb{M}_-$</td>
+<td>Material sector $\mathbb{B}_{\Phi}$</td>
 <td>minus the interval $-\langle\tilde Q\rangle_{\natural}$</td>
 <td>$(1,3)$ over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>Real quaternion space $\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real quaternion space $\mathbb{B}_{H}$</td>
 <td>$c^2 r_t^2-\lVert\vec r_\psi\rVert^2$</td>
 <td>$(1,3)$ over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>Imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>Imaginary quaternion space $\mathbb{B}_{iH}$</td>
 <td>$c^2 r_t^2-\lVert\vec r_\psi\rVert^2$</td>
 <td>$(1,3)$ over $\mathbb{R}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the whole of the sign story. The centre is positive, the vector space is negative, and on each of the two sectors the form is the interval read with a sign. On the material sector the sign is minus; on the informational sector it is plus. On the two quaternion subspaces, for $h=c r_t e_t+\vec r_\psi\in\mathbb{H}_{\mathbb{B}}$, the restricted form is the Lorentzian quadratic form $c^2 r_t^2-\lVert\vec r_\psi\rVert^2$ itself: the quaternionic norm there is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, so it is not the form the table records. All four real restrictions carry the signature $(1,3)$, and the sign in the material row records the relation to the quaternionic norm, not a different inertia. The form is real at equal arguments because it is Hermitian, $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, and it is indefinite because the two contributions have opposite signs.</p>
+<p>The table is the whole of the sign story. The centre is positive, the vector space is negative, and on each of the two sectors the form is the interval read with a sign. On the material sector the sign is minus; on the informational sector it is plus. On the two quaternion subspaces, for $h=c r_t e_t+\vec r_\psi\in\mathbb{B}_{H}$, the restricted form is the Lorentzian quadratic form $c^2 r_t^2-\lVert\vec r_\psi\rVert^2$ itself: the quaternionic norm there is positive definite on $\mathbb{B}_{H}$ and negative definite on $\mathbb{B}_{iH}$, so it is not the form the table records. All four real restrictions carry the signature $(1,3)$, and the sign in the material row records the relation to the quaternionic norm, not a different inertia. The form is real at equal arguments because it is Hermitian, $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, and it is indefinite because the two contributions have opposite signs.</p>
 <p>The indefiniteness is what makes the form unable to normalise. A definite Hermitian form has a compact unit sphere and a trace-one slice; the Krein form has neither. Its "unit" level set is a hyperboloid, non-compact and of real dimension seven. A state that needs a normalised representative must use the definite Born form, not this one.</p>
 <h2 id="the-fundamental-symmetry">The Fundamental Symmetry</h2>
 <p>The indefinite form is a definite form in disguise. Let $J={}^{\natural}$ be the natural conjugation, fixing the central $i$ and negating the three vector units. Then</p>
@@ -168,7 +168,7 @@ $$</p>
 <p>and $J^2=\mathrm{id}$. The operator $J$ is the <strong>fundamental symmetry</strong> of the form: it is a $\mathbb{C}$-linear involution with eigenvalue $+1$ on the centre and $-1$ on the vector space, and it is an isometry of the Krein form.</p>
 <p>The decomposition into the two eigenspaces,</p>
 <p>$$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B}),
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V},
 $$</p>
 <p>is the <strong>fundamental decomposition</strong>. The form is positive definite on the first summand and negative definite on the second, and the two summands are Krein-orthogonal. Every statement about the indefinite form can be read as a statement about the definite form together with the involution $J$; the indefinite structure is the twist.</p>
 <p>Physically, $J$ is the spatial reflection of the frame: it fixes the clock direction and reverses every spatial direction. It is the parity of the coefficient frame, not the spacetime parity operator of the spinor theory, which is not an element of the algebra. That the algebra carries this involution on its own is the statement that the frame's parity is not an extra choice. The sign vector $\varepsilon$ inside the product is the same object in coordinates.</p>
@@ -178,7 +178,7 @@ $$</p>
 U_J(\mathbb{B})=\{T:T^{\mathsf T}E\bar T=E\}.
 $$</p>
 <p>In the coefficient basis the group is $\mathrm{U}(1,3)$. It has real dimension $16$, it is non-compact, its centre is the circle $\mathrm{U}(1)$ of scalar matrices of modulus one, and its maximal compact subgroup is $\mathrm{U}(1)\times\mathrm{U}(3)$, the group preserving the canonical fundamental decomposition.</p>
-<p>The group is not the Lorentz group. It is larger: it maps the centre to itself and the vector space to itself only in its compact part, and its general element mixes the two. The proper orthochronous Lorentz group of the material sector is the subgroup that preserves the real form $\mathbb{M}_-$, its time orientation and its orientation; it has dimension $6$ inside the $16$ of $\mathrm{U}(1,3)$. The extra dimensions are the gauge directions that the Lorentz group does not see.</p>
+<p>The group is not the Lorentz group. It is larger: it maps the centre to itself and the vector space to itself only in its compact part, and its general element mixes the two. The proper orthochronous Lorentz group of the material sector is the subgroup that preserves the real form $\mathbb{B}_{\Phi}$, its time orientation and its orientation; it has dimension $6$ inside the $16$ of $\mathrm{U}(1,3)$. The extra dimensions are the gauge directions that the Lorentz group does not see.</p>
 <p>The boosts are the simplest non-compact elements. On the Krein-orthogonal sum of a positive and a negative line,</p>
 <p>$$
 T_t e_t=\cosh r_t\,e_t+\sinh r_t\,\vec e_x, \qquad
@@ -188,7 +188,7 @@ $$</p>
 <p>$$
 \operatorname{spec}(T_t)=\{e^{t},e^{-t},1,1\}.
 $$</p>
-<p>The restriction of $T_t$ to the Lorentzian slice $\mathbb{H}_{\mathbb{B}}$ is the Lorentz boost of rapidity $t$ along $\vec e_x$.</p>
+<p>The restriction of $T_t$ to the Lorentzian slice $\mathbb{B}_{H}$ is the Lorentz boost of rapidity $t$ along $\vec e_x$.</p>
 <p>The spectrum of a general Krein isometry obeys the inversion symmetry</p>
 <p>$$
 \lambda\in\operatorname{spec}(T)\iff\frac{1}{\bar\lambda}\in\operatorname{spec}(T),
@@ -393,7 +393,7 @@ $$</p>
 <td>the projections onto the centre and the vector space</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_\pm$</td>
+<td>$\mathbb{B}_{\Psi,\Phi}$</td>
 <td>the informational and material sectors</td>
 </tr>
 </tbody>

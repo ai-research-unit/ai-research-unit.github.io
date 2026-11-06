@@ -75,7 +75,7 @@
 \tilde\Pi_{\mathrm{singlet}}=\tfrac{1}{4}\left(e_t\otimes e_t+\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z\right).
 $$</p>
 <p>The companion <em>Exercise: The Correlation Function of the Bell States</em> then wrote all four Bell states as idempotents $\tilde\Pi_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ and computed their correlation functions.</p>
-<p>This article develops the structure that those two articles use but do not make explicit: <strong>the four Bell states form a distinguished idempotent basis of the two-qubit algebra.</strong> Each Bell state is an idempotent, Hermitian element of $\mathbb{M}_+\otimes\mathbb{M}_+$. The four are pairwise orthogonal, of trace one, and sum to the identity $e_t\otimes e_t$ of the algebra. They are, at the same time, the joint eigen-idempotents of two commuting Hermitian involutions — the <strong>stabiliser operators</strong> of the Bell basis — and the partial trace of each is the maximally mixed qubit state $\tfrac{1}{2}e_t$.</p>
+<p>This article develops the structure that those two articles use but do not make explicit: <strong>the four Bell states form a distinguished idempotent basis of the two-qubit algebra.</strong> Each Bell state is an idempotent, Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The four are pairwise orthogonal, of trace one, and sum to the identity $e_t\otimes e_t$ of the algebra. They are, at the same time, the joint eigen-idempotents of two commuting Hermitian involutions — the <strong>stabiliser operators</strong> of the Bell basis — and the partial trace of each is the maximally mixed qubit state $\tfrac{1}{2}e_t$.</p>
 <p>The mathematics is standard finite-dimensional algebra, recomputed here in the language of $\mathbb{B}\otimes\mathbb{B}$. The article claims no physics beyond the companion articles. What it makes visible is a structural fact: the two-qubit algebra carries a canonical, discrete idempotent basis whose members are the four Bell states; and the Bell states are singled out from the continuum of maximally entangled states by a particular <strong>tensor structure</strong> — by being diagonal in the tensor-product basis.</p>
 <p>The article is organised as follows. The next section recalls the conventions and states precisely what an idempotent basis is. A short section then separates the two-qubit <strong>state vector</strong> from the two-qubit <strong>state operator</strong>, records the identification $\mathbb{C}^4\cong\mathbb{B}$ that the vector makes available, and notes the two cautions it carries: the vector is not the state, and a single quaternion is not an entangled state. Then the four Bell idempotents are introduced and identified with the standard Bell states. Orthogonality and completeness are proved, first from the stabiliser operators and then from the Hadamard structure of the sign patterns. The following section shows that the Bell basis is the joint eigenbasis of the stabiliser operators. Then maximal entanglement and the diagonal tensor structure are characterised, and a further section examines a claimed finite enumeration of the maximally entangled states and shows why the exhaustiveness claim fails. The partial traces are computed next. A closing remark discusses the status of the tensor product in the framework, which is an open question inherited from the companion articles.</p>
 <p>One caveat is stated at the outset and revisited in the closing remark. Everything below is a construction <strong>inside</strong> the algebra $\mathbb{B}\otimes\mathbb{B}$. The companion article <em>Quantum Physics in Biquaternionic Form</em> lists among its open questions whether the tensor product is natural in the biquaternion framework or whether it requires additional structure, while the entangled-subsystems article simply uses $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. We follow the latter and do not resolve the tension: the Bell basis is canonical relative to the tensor-product structure that is assumed, and whether that structure is itself canonical for the framework is exactly what remains open.</p>
@@ -93,7 +93,7 @@ $$</p>
 \mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b),\qquad
 \mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a),
 $$</p>
-<p>extended linearly. The Hermitian elements of $\mathbb{M}_+\otimes\mathbb{M}_+$ are the observables and states of the two-qubit system; in particular, a <strong>pure state</strong> is an idempotent of $\mathbb{B}\otimes\mathbb{B}$ that is Hermitian and of trace one.</p>
+<p>extended linearly. The Hermitian elements of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ are the observables and states of the two-qubit system; in particular, a <strong>pure state</strong> is an idempotent of $\mathbb{B}\otimes\mathbb{B}$ that is Hermitian and of trace one.</p>
 <p>Throughout, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
 <p>$$
 e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
@@ -153,7 +153,7 @@ $$</p>
 </table></div>
 <p>At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,\vec e_z\}$ and $\{\vec e_x,\vec e_y\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article <em>Entangled Subsystems in the Biquaternion Framework</em>, where the state is created by a split and the split is a division in the sense of <em>Mereology and Collective Set Theory</em>.</p>
 <p>Two cautions follow from the identification, and both are used by the literature that motivates this section.</p>
-<p><strong>The vector is not the state.</strong> The combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{M}_+$ and they are not states in the framework's sense. The state <em>object</em> is the idempotent $\tilde\Pi_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state <strong>is</strong> the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are interpretations of the same tensor-product state, but only the second is a state in the algebra.</p>
+<p><strong>The vector is not the state.</strong> The combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{B}_{\Psi}$ and they are not states in the framework's sense. The state <em>object</em> is the idempotent $\tilde\Pi_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state <strong>is</strong> the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are interpretations of the same tensor-product state, but only the second is a state in the algebra.</p>
 <p><strong>A single quaternion is not an entangled state.</strong> The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_t e_t+\sum_\mu Q_\mu \vec e_\mu$ and let $\mathbf c=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when</p>
 <p>$$
 c_1c_4-c_2c_3=0 ,
@@ -211,11 +211,11 @@ $$</p>
 (\vec e_\mu\otimes \vec e_\mu)^{*}=(-\vec e_\mu)\otimes(-\vec e_\mu)=\vec e_\mu\otimes \vec e_\mu .
 $$</p>
 <p>The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_\mu$ and $\tfrac14$ are real, and $\tilde\Pi_\epsilon^{*}=\tilde\Pi_\epsilon$. Each $\tilde\Pi_\epsilon$ is a legitimate state, not merely an algebraic idempotent.</p>
-<p><strong>The $\tilde\Pi_\epsilon$ lie in the physical subspace.</strong> The Hermitian subspace $\mathbb{M}_+$ has real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$. Hence</p>
+<p><strong>The $\tilde\Pi_\epsilon$ lie in the physical subspace.</strong> The Hermitian subspace $\mathbb{B}_{\Psi}$ has real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$. Hence</p>
 <p>$$
-\vec e_\mu\otimes \vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)\in\mathbb{M}_+\otimes\mathbb{M}_+ .
+\vec e_\mu\otimes \vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} .
 $$</p>
-<p>So every $\tilde\Pi_\epsilon$ is an element of $\mathbb{M}_+\otimes\mathbb{M}_+$, the space of two-qubit states and observables, as required.</p>
+<p>So every $\tilde\Pi_\epsilon$ is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the space of two-qubit states and observables, as required.</p>
 <p><strong>Identification with the standard Bell states.</strong> Under the isomorphism, $\vec e_\mu$ corresponds to $-i\sigma_\mu$, so $\vec e_\mu\otimes \vec e_\mu$ corresponds to $-\sigma_\mu\otimes\sigma_\mu$. Writing $\tilde\Pi_\epsilon$ in the Pauli-string basis gives</p>
 <p>$$
 \tilde\Pi_\epsilon\;\longmapsto\;\tfrac{1}{4}\left(I\otimes I-\epsilon_1\,\sigma_1\otimes\sigma_1-\epsilon_2\,\sigma_2\otimes\sigma_2-\epsilon_3\,\sigma_3\otimes\sigma_3\right),
@@ -484,7 +484,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace: real scalar, imaginary vector</td>
 </tr>
 <tr>

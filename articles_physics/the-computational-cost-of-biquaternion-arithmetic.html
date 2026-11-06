@@ -87,7 +87,7 @@ $$</p>
 <li>a <strong>real product</strong> is one multiplication of two real numbers, which is what a scalar product of two complex numbers costs in the naive scheme.</li>
 </ul>
 <p>A complex multiplication costs four real multiplications and two real additions in the naive scheme, and three real multiplications and five real additions under Gauss's rule. The naive count for a biquaternion product is therefore four times its coefficient count; the reduced count exploits both the algebra and the complex arithmetic. Both reductions are exact: no approximation and no special case is involved.</p>
-<p>The slice structure of <em>Algebra and Element Conventions</em> fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real, and an element of the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.</p>
+<p>The slice structure of <em>Algebra and Element Conventions</em> fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{B}_{H}$ has all four coefficients real, and an element of the antiquaternion subspace $\mathbb{B}_{iH}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.</p>
 <h2 id="the-naive-count">The Naive Count</h2>
 <p>Write the two factors as scalar part plus vector part, $\tilde{Q}_1 = S_1 + \vec V_1$ and $\tilde{Q}_2 = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is</p>
 <p>$$
@@ -225,7 +225,7 @@ $$</p>
 <p>$$
 \boxed{\;M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
 $$</p>
-<p>In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.</p>
+<p>In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi,\Phi}$ split, a point returned to below.</p>
 <h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
 <p>The most expensive routine of the source's library is not the product but the diagonalisation of a Hermitian matrix-valued biquaternion, and the arithmetic of the two is coupled through the image. LAPACK and its GPU counterparts provide no eigensolver for biquaternion matrices, so a Hermitian biquaternion array is mapped to its complex Hermitian image and handed to the standard complex Hermitian routine. The mapping costs no information: the image of a Hermitian biquaternion array is a Hermitian complex matrix, because the dagger of the array is the conjugate transpose of its image.</p>
 <p>The economy comes from the blocks. When the image is <strong>block diagonal</strong>,</p>
@@ -244,7 +244,7 @@ $$</p>
 <p>It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.</p>
 <h2 id="the-cost-in-the-frameworks-terms">The Cost in the Framework's Terms</h2>
 <p>The two splits of the algebra do not align, and the arithmetic makes the misalignment concrete.</p>
-<p>The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ cuts across it, as <em>Algebra and Element Conventions</em> records: an element of $\mathbb{M}_-$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore <strong>not</strong> automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.</p>
+<p>The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ cuts across it, as <em>Algebra and Element Conventions</em> records: an element of $\mathbb{B}_{\Phi}$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore <strong>not</strong> automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.</p>
 <p>The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is the trace formula on which the Born rule is written; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.</p>
 <p>Beyond the trace and the block structure, the framework enters the cost accounting only through the problem's symmetry. The source's whole construction rests on the fact, developed in the corpus's articles on Kramers degeneracy, that in a time-reversal symmetric problem the Hamiltonian is real-quaternion and in a time-reversal antisymmetric problem it is purely imaginary-quaternion; and it is precisely those two restricted classes that the eight-multiplication regime serves. A problem with both, such as a magnetic perturbation or an open-shell non-collinear system, is the twenty-four-multiplication case. The cost therefore organises itself along the corpus's symmetry classes rather than along its sectors.</p>
 <h2 id="the-benchmarks">The Benchmarks</h2>
@@ -337,7 +337,7 @@ $$</p>
 <p>Multiplying two general biquaternions naively costs sixteen complex multiplications, that is sixty-four real multiplications. The bilinear scheme of the source — the general quaternionic bilinear identity evaluated in eight intermediate products, combined with Gauss's three-multiplication rule for each complex product — brings the count to twenty-four: eight Hadamard products of the two coefficient vectors, four corner products, and Gauss's rule, with no further reduction possible for the full algebra. On the real-quaternion and antiquaternion halves the scheme stops at eight real multiplications against the naive sixteen, because the coefficients are already real or purely imaginary.</p>
 <p>The same scheme applies unchanged to matrix-valued biquaternions, because it is bilinear with scalar coefficients and never uses commutativity: a fully populated matrix-valued product costs twenty-four real matrix-matrix multiplications instead of sixty-four, and a real-quaternion one eight instead of sixteen. The memory of the array form equals that of its $2n\times2n$ complex image, and the array form reaches roughly twice the dimension before a 32-bit workspace limit binds.</p>
 <p>The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type $*$-unitary rotation.</p>
-<p>The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, not the sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the two cuts cross, so a sector-restricted problem need not be the cheap one. The source's measurements on modern CPU and GPU systems show the count turning into speed, by factors from about $1.2$ to about $7.3$ on multiplication and by about $12$ and $61$ on diagonalisation, at dimensions in the tens of thousands. All of it is arithmetic about an algebra: it neither supports nor threatens the claim that the algebra is the world's.</p>
+<p>The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, not the sector split $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$; the two cuts cross, so a sector-restricted problem need not be the cheap one. The source's measurements on modern CPU and GPU systems show the count turning into speed, by factors from about $1.2$ to about $7.3$ on multiplication and by about $12$ and $61$ on diagonalisation, at dimensions in the tens of thousands. All of it is arithmetic about an algebra: it neither supports nor threatens the claim that the algebra is the world's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -364,11 +364,11 @@ $$</p>
 <td>Complex coefficients; the eight real parameters are $q_\mu,q'_\mu$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$, $\mathbb{B}_{iH}$</td>
 <td>Real-quaternion and antiquaternion halves, the complex-conjugation split</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
 <td>Material and informational sectors, the dagger split, crossing the halves</td>
 </tr>
 <tr>
@@ -397,7 +397,7 @@ $$</p>
 </tr>
 <tr>
 <td>$8$</td>
-<td>the count on either half, $\mathbb{H}_{\mathbb{B}}$ or $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the count on either half, $\mathbb{B}_{H}$ or $\mathbb{B}_{iH}$</td>
 </tr>
 <tr>
 <td>$\tilde{Q}\in\mathbb{B}^{n\times m}$</td>

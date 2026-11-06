@@ -98,7 +98,7 @@ $$</p>
 <p>$$
 \boxed{\;
 \ker L_{\tilde Q_3}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3},\qquad
-\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec Q_3,\vec V)=0\}
+\mathrm{im}\,L_{\tilde Q_3}=\{\vec V\in\mathbb{B}_{V}:(\vec Q_3,\vec V)=0\}
 \;},
 $$</p>
 <p>the centre direct sum a complex line in the kernel, and the complex two-dimensional subspace orthogonal to $\vec Q_3$ for the bilinear dot product in the image. The rank of $L_{\tilde Q_3}$ over $\mathbb{R}$ is $4$, its nullity is $4$, and its trace is $0$.</p>
@@ -123,7 +123,7 @@ D(\tilde Q_1\diamond\tilde Q_2)=D\tilde Q_1\diamond\tilde Q_2+\tilde Q_1\diamond
 \qquad\text{for all }\tilde Q_1,\tilde Q_2 .
 $$</p>
 <p><strong>Theorem (the derivations).</strong> The derivations of the block form a real vector space of dimension $7$, the direct sum</p>
-<p>$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$</p>
+<p>$$ \boxed{\; \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R}) \;}, $$</p>
 <p>where the first summand consists of the maps $\tilde Q_2\mapsto\lambda(Q_{2t})e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.</p>
 <p><em>Proof.</em> Let $D\tilde Q_2=\lambda(Q_{2t})e_t+D_V(\vec Q_2)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec Q_1\times\overline{\vec Q_2})=D_V\vec Q_1\times\overline{\vec Q_2}+\vec Q_1\times\overline{D_V\vec Q_2}$; taking $\vec Q_1,\vec Q_2$ real reduces it to $D_V(\vec Q_1\times\vec Q_2)=D_V\vec Q_1\times\vec Q_2+\vec Q_1\times D_V\vec Q_2$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.</p>
 <p><strong>Theorem (the structure group).</strong> The group of invertible real-linear maps preserving the block contains the subgroup</p>
@@ -157,7 +157,7 @@ $$</p>
 <p><em>Proof.</em> The self-pairing of the pure vector $\vec Q_3\times\overline{\vec R}$ under the form, as in <em>The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra</em>.</p>
 <p><strong>Remark (the invariants are conjugate-linear).</strong> The invariant $\langle L_{\tilde Q_3}\tilde Q_2,L_{\tilde Q_3}\tilde Q_2\rangle_{\natural*}$ is a quadratic form in $\tilde Q_2$ read through the conjugation of the second slot, and it is the operator form of the negative definiteness of the form on the vector subspace. The block carries no invariant of the ordinary polynomial kind, since its second slot is conjugate-linear; the invariants are the conjugate-linear ones, and the operator admits the real structure of the space and no complex polynomial identity beyond the square above.</p>
 <h2 id="summary">Summary</h2>
-<p>The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ and image the complex plane orthogonal to $\vec Q_3$; its adjoint with respect to the Krein form is its negative, $L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec Q_3}(\vec Q_3,\vec R)-(\vec Q_3,\overline{\vec Q_3})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde Q_3}\tilde Q_2,L_{\tilde Q_3}\tilde Q_2\rangle_{\natural*}=-|\vec Q_3\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.</p>
+<p>The left multiplication $L_{\tilde Q_3}\tilde Q_2=\vec Q_3\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ and image the complex plane orthogonal to $\vec Q_3$; its adjoint with respect to the Krein form is its negative, $L_{\tilde Q_3}^{\dagger}=-L_{\tilde Q_3}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec Q_3}(\vec Q_3,\vec R)-(\vec Q_3,\overline{\vec Q_3})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde Q_3}\tilde Q_2,L_{\tilde Q_3}\tilde Q_2\rangle_{\natural*}=-|\vec Q_3\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -188,7 +188,7 @@ $$</p>
 <td>the adjoint, conjugate-linear</td>
 </tr>
 <tr>
-<td>$\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$</td>
+<td>$\mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{B}_{C})\oplus\mathfrak{so}(3,\mathbb{R})$</td>
 <td>the derivations, of real dimension $7$</td>
 </tr>
 <tr>

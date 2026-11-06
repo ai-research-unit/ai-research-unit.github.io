@@ -73,7 +73,7 @@
 <p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. The pedagogical value is in seeing the same physical result emerge from both frameworks, and in observing how the algebraic structure of the biquaternion framework handles the objects of quantum physics.</p>
 <p>To keep the two solutions strictly parallel, each is presented in the same four steps: <strong>the state</strong>, <strong>the measurement operator</strong>, <strong>the outcome object</strong>, and <strong>the probability</strong>. The final result is stated in the same form in both solutions.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. We measure the spin along a direction $\vec u_x$ that makes an angle $\theta$ with the $z$-axis, in the $xz$-plane. What is the probability of finding the particle spin-up along $\vec u_x$?</p>
 <p>This is the canonical "rotate the Stern–Gerlach apparatus" exercise. It involves states, observables, and the Born rule, but no dynamics and no interactions.</p>
@@ -113,7 +113,7 @@ $$</p>
 $$</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
-<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
+<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form</p>
 <p>$$
 \tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$</p>
@@ -122,7 +122,7 @@ $$</p>
 \tilde\Pi_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
 $$</p>
 <h3 id="step-2-the-measurement-operator_1">Step 2: The measurement operator</h3>
-<p>The same measurement direction $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{M}_+$ corresponding to the spin projection along $\vec u_x$:</p>
+<p>The same measurement direction $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{B}_{\Psi}$ corresponding to the spin projection along $\vec u_x$:</p>
 <p>$$
 \tilde R_\psi = \frac{\hbar}{2}\, i\vec u_x.
 $$</p>
@@ -163,8 +163,8 @@ $$</p>
 </ul>
 <p>These agree with the physical expectation.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. States and observables are elements of the same subspace.</strong> The state $\tilde\Pi_z$ and the outcome idempotent $\tilde\Pi_n$ are both idempotents of $\mathbb{M}_+$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.</p>
-<p><strong>2. The Born rule is the normalised Hermitian form.</strong> The probability is $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$; on $\mathbb{M}_+$ the star is inert, so this is $\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z)/\mathrm{Sc}(\tilde\Pi_z)$, and in the $2\times2$ image, with $\operatorname{Tr}(\tilde\Pi_z)=1$, it reads $p_+ = \operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})$, the star being inert and the unstarred trace real and non-negative. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the Hermitian form. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.</p>
+<p><strong>1. States and observables are elements of the same subspace.</strong> The state $\tilde\Pi_z$ and the outcome idempotent $\tilde\Pi_n$ are both idempotents of $\mathbb{B}_{\Psi}$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.</p>
+<p><strong>2. The Born rule is the normalised Hermitian form.</strong> The probability is $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$; on $\mathbb{B}_{\Psi}$ the star is inert, so this is $\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z)/\mathrm{Sc}(\tilde\Pi_z)$, and in the $2\times2$ image, with $\operatorname{Tr}(\tilde\Pi_z)=1$, it reads $p_+ = \operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})$, the star being inert and the unstarred trace real and non-negative. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the Hermitian form. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.</p>
 <p><strong>3. No complex vectors are needed.</strong> In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, and the trace reading at normalisation. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.</p>
 <p><strong>4. The geometry enters through the algebra.</strong> The angle $\theta$ enters through the unit vector $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\vec u_x\cdot \vec e_z = \cos\theta$, which appears in the Hermitian form through the product $\vec u_x\,\vec e_z$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.</p>
 <p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $\tilde\Pi(\vec u_x) = \tfrac{1}{2}(e_t + i\vec u_x)$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \vec u_x\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.</p>
@@ -200,7 +200,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a simple exercise in quantum physics — the probability of measuring spin-up along an arbitrary direction, given a spin-up state along $z$ — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle_{*}|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.</p>
-<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents of $\mathbb{M}_+$ and the normalised Hermitian form $p_+=\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$, giving the same result.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents of $\mathbb{B}_{\Psi}$ and the normalised Hermitian form $p_+=\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the qubit: states and observables are elements of the same subspace, the Born rule is the natural pairing given by the trace, and the geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -216,11 +216,11 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (states, observables)</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace (generators)</td>
 </tr>
 <tr>
@@ -245,7 +245,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$</td>
-<td>Trace of an element of $\mathbb{M}_+$</td>
+<td>Trace of an element of $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
 <td>$p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$</td>

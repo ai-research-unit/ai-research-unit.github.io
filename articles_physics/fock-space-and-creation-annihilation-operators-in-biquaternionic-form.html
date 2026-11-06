@@ -145,18 +145,18 @@ $$</p>
 <p>which is non-negative on the physical subspace. The negative-norm states that the timelike mode builds are removed by the subsidiary condition; on the physical subspace the number operator is the transverse sum above.</p>
 <p>None of the operators in this section is new. They are displayed together for one reason: every one of them acts on a module or on a Fock space built from a module, and the question "in biquaternionic form" is the question of which of them, if any, is an element of $\mathbb{B}$.</p>
 <h2 id="the-number-operator-and-the-born-rule">The Number Operator and the Born Rule</h2>
-<p>For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the normalised Hermitian form, read as the trace formula, gives</p>
+<p>For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{B}_{\Psi}$ is Hermitian; $N=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}\in\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the normalised Hermitian form, read as the trace formula, gives</p>
 <p>$$
 \langle N\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},N\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde{Ϛ}\,N^{*})}{\mathrm{Sc}(\tilde{Ϛ})}=\frac{\mathrm{Sc}(\tilde{Ϛ}\,N)}{\mathrm{Sc}(\tilde{Ϛ})},\qquad\text{with trace reading } \frac{\operatorname{Tr}(\tilde{Ϛ}\,N^{*})}{\operatorname{Tr}(\tilde{Ϛ})}=\frac{\operatorname{Tr}(\tilde{Ϛ}\,N)}{\operatorname{Tr}(\tilde{Ϛ})},
 $$</p>
-<p>the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative because $N\ge0$. For one fermionic mode, whose explicit realization is given in the next section, $N$ is an <strong>idempotent</strong> rather than a counting operator: its spectrum is $\{0,1\}$, and $N^2=N$ is the algebraic statement that a mode is either empty or occupied. The trace formula then returns the occupation probability of the mode, which is the Born rule for the two-valued observable "is the mode occupied". For a field, $N$ acts on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$; the trace formula applies to its finite-dimensional truncations only. The distinction is the same one the whole article turns on, and it is visible here in the simplest possible object.</p>
+<p>the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative because $N\ge0$. For one fermionic mode, whose explicit realization is given in the next section, $N$ is an <strong>idempotent</strong> rather than a counting operator: its spectrum is $\{0,1\}$, and $N^2=N$ is the algebraic statement that a mode is either empty or occupied. The trace formula then returns the occupation probability of the mode, which is the Born rule for the two-valued observable "is the mode occupied". For a field, $N$ acts on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$; the trace formula applies to its finite-dimensional truncations only. The distinction is the same one the whole article turns on, and it is visible here in the simplest possible object.</p>
 <h2 id="three-gradings">Three Gradings</h2>
-<p>The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{M}_\pm$ grading by ${}^{*}$; a third grading, the fermion parity, is a third thing again.</p>
-<p><strong>1. The fixed-point splitting.</strong> The decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation ${}^{*}$. It is a splitting of $\mathbb{B}$ as a real vector space, and it is <strong>not an algebra grading</strong>: the product of two Hermitian elements need not be Hermitian. The smallest counterexample is the one the informational-space article uses to show that $\mathbb{M}_+$ is not a subalgebra,</p>
+<p>The word "grading" is used in this corpus for three different structures, and they must not be conflated. The exercise article on the non-relativistic limit already warns that the Foldy–Wouthuysen grading by $\beta$ is not the $\mathbb{B}_{\Psi,\Phi}$ grading by ${}^{*}$; a third grading, the fermion parity, is a third thing again.</p>
+<p><strong>1. The fixed-point splitting.</strong> The decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is the $\pm1$ eigenspace splitting of the Hermitian conjugation ${}^{*}$. It is a splitting of $\mathbb{B}$ as a real vector space, and it is <strong>not an algebra grading</strong>: the product of two Hermitian elements need not be Hermitian. The smallest counterexample is the one the informational-space article uses to show that $\mathbb{B}_{\Psi}$ is not a subalgebra,</p>
 <p>$$
-(i\vec e_x)(i\vec e_y)=i^2\vec e_x\vec e_y=-\vec e_z\in\mathbb{M}_-,
+(i\vec e_x)(i\vec e_y)=i^2\vec e_x\vec e_y=-\vec e_z\in\mathbb{B}_{\Phi},
 $$</p>
-<p>whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting <em>does</em> grade is the <strong>symmetrized</strong> product: for $\tilde Q_1,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q_1,\tilde Q_2\}$ is Hermitian, for $\tilde Q_1,\tilde Q_2$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.</p>
+<p>whereas a grading would require $\mathbb{B}_{\Psi}\cdot\mathbb{B}_{\Psi}\subseteq\mathbb{B}_{\Psi}$. What the splitting <em>does</em> grade is the <strong>symmetrized</strong> product: for $\tilde Q_1,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q_1,\tilde Q_2\}$ is Hermitian, for $\tilde Q_1,\tilde Q_2$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{B}_{\Psi,\Phi}$ grading" is a phrase the corpus uses loosely.</p>
 <p><strong>2. The number grading.</strong> The Fock space is $\mathbb{N}$-graded by total particle number, with $N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.</p>
 <p><strong>3. The parity grading.</strong> The fermion parity $(-1)^F$ makes the <strong>operator algebra</strong> $\mathbb{Z}/2$-graded: it is $+1$ on states of even total fermion number and $-1$ on states of odd total fermion number, and</p>
 <p>$$
@@ -206,7 +206,7 @@ $$</p>
 <p>$$
 \boxed{\;(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z\;}
 $$</p>
-<p>which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde\Pi_-(-1)^F=\tilde\Pi_-$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
+<p>which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde\Pi_-(-1)^F=\tilde\Pi_-$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{B}_{\Psi}$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
 - <strong>The grading is not unique.</strong> The choice $i\vec e_z$ is the choice of a mode; for any unit pure quaternion $\vec u$ the element $i\vec u$ is Hermitian, squares to $e_t$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$. This was checked on $\vec u=(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$, a direction chosen after the claim rather than the $\vec e_z$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\vec u$ and $-\vec u$ giving the same grading.</p>
 <h3 id="what-the-creation-operator-creates">What the Creation Operator Creates</h3>
 <p><strong>The pair is a creator and an annihilator of one occupation quantum. The creator moves the vacuum rung to the occupied rung; it creates neither a particle with quantum numbers nor a second nilpotent.</strong></p>
@@ -316,10 +316,10 @@ $$</p>
 <li>The single fermionic mode is realized in $\mathbb{B}$: $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and are nilpotent, with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ idempotent.</li>
 <li>The matrix model fixes the roles: $\mathsf{M}_2(\vec\Upsilon_x)=|0\rangle\langle1|$ and $\mathsf{M}_2(\vec\Upsilon_y)=|1\rangle\langle0|$, so $\vec\Upsilon_y$ creates the occupation rung and $\vec\Upsilon_x$ annihilates it, and the created object is a state in the module rather than an algebra element. The reciprocal rescaling preserves the rungs and the roles; it preserves adjointness only for $|\mu|=1$.</li>
 <li>The one-mode Fock space is the fundamental module of $\mathbb{B}$, and $\mathbb{B}$ is its endomorphism algebra.</li>
-<li>Fermion parity for one mode is the element $(-1)^F=i\vec e_z\in\mathbb{M}_+$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.</li>
+<li>Fermion parity for one mode is the element $(-1)^F=i\vec e_z\in\mathbb{B}_{\Psi}$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.</li>
 <li>The capacity of $\mathbb{B}$ is one fermionic mode: $m$ modes generate $M_{2^m}(\mathbb{C})$, of dimension $4^m$, which exceeds four for $m\ge2$.</li>
 <li>No bosonic mode exists in $\mathbb{B}$, by the trace of a commutator; the obstruction is the finite dimension, not the sector structure.</li>
-<li>The fixed-point splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is not an associative-algebra grading, though it grades the symmetrized product.</li>
+<li>The fixed-point splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is not an associative-algebra grading, though it grades the symmetrized product.</li>
 </ul>
 <p><strong>Standard, and inherited from the parents.</strong> The Fock-space construction, the exterior and symmetric algebras, the Dirac and Maxwell mode algebras, Pauli exclusion as $(a_{\mathrm{fop}}^{\dagger})^2=0$, the charge $Ϙ_{\mathrm{fop}}=N_a-N_b$, the Gupta–Bleuler subsidiary condition and the two transverse polarizations. None of this is rederived here and none of it depends on the biquaternion structure beyond the kinematical conventions.</p>
 <p><strong>Open.</strong></p>
@@ -355,11 +355,11 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) subspaces</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>

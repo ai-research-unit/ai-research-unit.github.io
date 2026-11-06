@@ -101,9 +101,9 @@ $$</p>
 <p><strong>Proposition.</strong> The single invariant form $\varphi$ is symmetric, and there is no nonzero alternating invariant form; the space of invariant forms splits as one dimension symmetric and zero alternating, and the two parts are invariant subspaces of the condition.</p>
 <p><em>Proof.</em> $\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}=\varphi(\tilde Q_2,\tilde Q_1)$, so $\varphi$ is symmetric. The solution of the same linear system with the added antisymmetry $G^{\mathsf T}=-G$ is $G=0$: the solution space of the system without the added symmetry is one-dimensional and its basis is symmetric, so its only antisymmetric element is zero. The condition is preserved by the transposition of $\beta$, so the symmetric and the alternating forms may be searched for separately, and the search returns one dimension and zero.</p>
 <h2 id="the-radical">The Radical</h2>
-<p><strong>Proposition (the radical).</strong> The radical of $\varphi$, the set of $\tilde Q_3$ with $\varphi(\tilde Q_3,\tilde Q_2)=0$ for all $\tilde Q_2$, is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three; the isotropic elements of $\varphi$, those with $\varphi(\tilde Q_3,\tilde Q_3)=0$, are the same set.</p>
+<p><strong>Proposition (the radical).</strong> The radical of $\varphi$, the set of $\tilde Q_3$ with $\varphi(\tilde Q_3,\tilde Q_2)=0$ for all $\tilde Q_2$, is the vector subspace $\mathbb{B}_{V}$, of complex dimension three; the isotropic elements of $\varphi$, those with $\varphi(\tilde Q_3,\tilde Q_3)=0$, are the same set.</p>
 <p><em>Proof.</em> $\varphi(\tilde Q_3,\tilde Q_2)=Q_{3t}Q_{2t}$ vanishes for all $\tilde Q_2$ exactly when $Q_{3t}=0$, that is when $\tilde Q_3$ is a pure vector; and $\varphi(\tilde Q_3,\tilde Q_3)=Q_{3t}^2$ vanishes exactly when $Q_{3t}=0$. The radical and the isotropic cone therefore coincide with the kernel of the scalar part.</p>
-<p>The form is thus as degenerate as it can be without being zero: its rank is one, its radical is the three-dimensional image of the block, and the isotropic elements are exactly the elements the block produces. The form reads only the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ and is non-degenerate there, so it is the pull-back of a one-dimensional form along the scalar-part map.</p>
+<p>The form is thus as degenerate as it can be without being zero: its rank is one, its radical is the three-dimensional image of the block, and the isotropic elements are exactly the elements the block produces. The form reads only the one-dimensional quotient $\mathbb{B}/\mathbb{B}_{V}$ and is non-degenerate there, so it is the pull-back of a one-dimensional form along the scalar-part map.</p>
 <h2 id="the-adjoint-of-the-operator-with-respect-to-a-form">The Adjoint of the Operator with Respect to a Form</h2>
 <p><strong>Proposition (the adjoint is undetermined).</strong> With respect to the invariant form $\varphi$ the adjoint of a multiplication operator is not determined: $\varphi(L_{\tilde Q_7}\tilde Q_3,\tilde Q_2)=0$ for all $\tilde Q_3,\tilde Q_2$, so every operator is adjoint to $0$ modulo the radical, and the form is too degenerate to define the adjoint uniquely.</p>
 <p><em>Proof.</em> $L_{\tilde Q_7}\tilde Q_3=\tilde Q_7\diamond\tilde Q_3$ is a pure vector, so its scalar part is zero, and $\varphi(L_{\tilde Q_7}\tilde Q_3,\tilde Q_2)=(L_{\tilde Q_7}\tilde Q_3)_tQ_{2t}=0$. The adjoint $(L_{\tilde Q_7})^*$ is defined by $\varphi(L_{\tilde Q_7}\tilde Q_3,\tilde Q_2)=\varphi(\tilde Q_3,(L_{\tilde Q_7})^*\tilde Q_2)$; the left side vanishes for all $\tilde Q_3$, so $(L_{\tilde Q_7})^*\tilde Q_2$ lies in the radical for every $\tilde Q_2$, and the freedom in the adjoint is the freedom of the radical.</p>
@@ -137,42 +137,42 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>$Q_{7t}\in\mathbb{C}$</td>
 <td>$Q_{7t}Q_{1t}$</td>
 <td>$(1,1)$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>none</td>
 <td>$0$</td>
 <td>$(0,0)$</td>
 <td>all</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>$a_t\in\mathbb{R}$</td>
 <td>$a_tb_t$</td>
 <td>$(1,0)$</td>
 <td>$\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 <td>$ia_t$, $a_t\in\mathbb{R}$</td>
 <td>$-a_tb_t$</td>
 <td>$(0,1)$</td>
 <td>$\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_{+}$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$a_t\in\mathbb{R}$</td>
 <td>$a_tb_t$</td>
 <td>$(1,0)$</td>
 <td>$\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_{-}$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$ia_t$, $a_t\in\mathbb{R}$</td>
 <td>$-a_tb_t$</td>
 <td>$(0,1)$</td>
@@ -180,8 +180,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><em>Proof.</em> The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (<em>Subspaces and Decompositions</em>). The centre has the scalar line $e_t,ie_t$ and no vector line, so the form is the complex product $Q_{7t}Q_{1t}$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_tb_t$, positive for $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}$, whose scalar line is real, and negative for $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{-}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_tb_t$ on the one-dimensional scalar line.</p>
-<p>The restriction is therefore definite wherever it is not zero, and the two negative cases are the two subspaces on which the scalar line is imaginary. The radical of the restriction is the vector part of the subspace in every case in which the subspace has a vector part, and the whole subspace in the case of $\mathrm{Vect}(\mathbb{B})$.</p>
+<p><em>Proof.</em> The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (<em>Subspaces and Decompositions</em>). The centre has the scalar line $e_t,ie_t$ and no vector line, so the form is the complex product $Q_{7t}Q_{1t}$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_tb_t$, positive for $\mathbb{B}_{H}$ and $\mathbb{B}_{\Psi}$, whose scalar line is real, and negative for $\mathbb{B}_{iH}$ and $\mathbb{B}_{\Phi}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_tb_t$ on the one-dimensional scalar line.</p>
+<p>The restriction is therefore definite wherever it is not zero, and the two negative cases are the two subspaces on which the scalar line is imaginary. The radical of the restriction is the vector part of the subspace in every case in which the subspace has a vector part, and the whole subspace in the case of $\mathbb{B}_{V}$.</p>
 <h2 id="the-comparison-with-the-lie-case">The Comparison with the Lie Case</h2>
 <p><strong>Remark.</strong> The adjacent block $\tilde Q_1\wedge\tilde Q_2$ is the antisymmetrisation of the plain product, $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$, and it is a Lie algebra; it carries the Killing form $K_{\mathrm{A}}(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}(\operatorname{ad}_{\tilde Q_1}\operatorname{ad}_{\tilde Q_2})$, computed on the cross product and non-degenerate on the vector subspace (<em>The Killing Form of the Antisymmetric Plain Algebra</em>). The block of this article has no such form. Its only invariant form is the degenerate $\varphi$, its coefficient form vanishes, and the trace form of its operators, $\langle\tilde Q_7,\tilde Q_1\rangle_{\natural*}=3Q_{7t}Q_{1t}-2(\vec Q_7,\vec Q_1)$, is non-degenerate but not invariant. The comparison is the exact measure of the loss: the Killing form exists in $\tilde Q_1\wedge\tilde Q_2$ because the Jacobi identity holds, and it fails to have an analogue here because the Jacobi identity does not. On the vector subspace, where the block is the cross product up to sign, both $K_{\mathrm A}$ and the operator trace form restrict to multiples of the same complex bilinear form $(\vec Q_7,\vec Q_1)$ — for $K$ the multiple is $-2$ — so the two differ only in the scalar factor, and neither is an invariant form of the block.</p>
 <p><strong>Remark (the two form theories).</strong> The block is thus the first of the twelve operations for which the invariant-form theory is degenerate and the Killing construction is unavailable. The plain antisymmetrisation is a Lie algebra and has its invariant forms; the block of this article is a deformation of it in which the two mixed terms $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ survive, and the deformation destroys both the Jacobi identity and the invariance of the trace form. What survives is the one-dimensional form $\varphi$ on the scalar line, and it survives for the trivial reason that the block never leaves the vector subspace.</p>
@@ -213,7 +213,7 @@ $$</p>
 <td>the Gram matrix of $\varphi$ in the coefficient basis</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>the radical and the isotropic cone of $\varphi$</td>
 </tr>
 <tr>

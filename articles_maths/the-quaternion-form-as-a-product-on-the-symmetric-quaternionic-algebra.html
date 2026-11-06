@@ -124,14 +124,14 @@ realification of $\langle\cdot,\cdot\rangle_{\natural}$ is the diagonal form</p>
 \operatorname{diag}(I_4,-I_4),
 $$</p>
 <p>of signature $(4,4)$ and index $4$; in the interleaved basis $e_t,ie_t,\vec e_x,i\vec e_x,\vec e_y,i\vec e_y,\vec e_z,i\vec e_z$ it is
-$\operatorname{diag}(1,-1,1,-1,1,-1,1,-1)$. The restriction to the quaternion subspace $\mathbb{H}_{\mathbb{B}}$
+$\operatorname{diag}(1,-1,1,-1,1,-1,1,-1)$. The restriction to the quaternion subspace $\mathbb{B}_{H}$
 is positive definite of signature $(4,0)$, and the restriction to the anti-quaternion subspace
-$i\mathbb{H}_{\mathbb{B}}$ is negative definite of signature $(0,4)$.</p>
+$\mathbb{B}_{iH}$ is negative definite of signature $(0,4)$.</p>
 <p><em>Proof.</em> The form is $\mathbb{C}$-bilinear and $i$ is central, so the pairing of a real direction with its
 imaginary companion is purely imaginary and drops from the realification, while $\langle ie_\mu,ie_\nu\rangle_{\natural}=-\langle e_\mu,e_\nu\rangle_{\natural}$;
 the two blocks are $+I_4$ and $-I_4$ and the interleaved reading is the same matrix permuted. On
-$\mathbb{H}_{\mathbb{B}}$ the form is $\sum_\mu q_\mu^2$ with $q_\mu$ real, positive definite; on
-$i\mathbb{H}_{\mathbb{B}}$ it is the negative. The computation is the one of <em>Remarkable Subspaces under the
+$\mathbb{B}_{H}$ the form is $\sum_\mu q_\mu^2$ with $q_\mu$ real, positive definite; on
+$\mathbb{B}_{iH}$ it is the negative. The computation is the one of <em>Remarkable Subspaces under the
 General Quaternionic Algebra of Biquaternions</em>.</p>
 <p><strong>Remark (a complex form, read twice over the reals).</strong> The signature $(4,4)$ is that of a complex bilinear
 form of rank four on a complex space of dimension four, read as a real form on $\mathbb{R}^8$; the index $4$ is
@@ -206,7 +206,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>$Ae_t$, $Be_t$</td>
 <td>$AB$</td>
 <td>$2$</td>
@@ -214,7 +214,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 <td>none (complex form)</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>$\vec Q_1$, $\vec Q_2$</td>
 <td>$(\vec Q_1,\vec Q_2)$</td>
 <td>$6$</td>
@@ -222,7 +222,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 <td>the pure zero divisors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>$h$, $g$</td>
 <td>$h_tg_t+h_xg_x+h_yg_y+h_zg_z$</td>
 <td>$4$</td>
@@ -230,7 +230,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 <td>none</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 <td>$ih$, $ig$</td>
 <td>$-(h_tg_t+h_xg_x+h_yg_y+h_zg_z)$</td>
 <td>$4$</td>
@@ -238,7 +238,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 <td>none</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$a_te_t+i\vec p$, $b_te_t+i\vec q$</td>
 <td>$a_tb_t-(\vec p,\vec q)$</td>
 <td>$4$</td>
@@ -246,7 +246,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 <td>the elements $a_te_t+i\vec p$ with $a_t^2=(\vec p,\vec p)$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$ia_te_t+\vec p$, $ib_te_t+\vec q$</td>
 <td>$(\vec p,\vec q)-a_tb_t$</td>
 <td>$4$</td>
@@ -266,13 +266,13 @@ any of the remarkable subspaces, since it has none on the whole algebra.</p>
 drawn from the quaternion subspace, the form $\langle\cdot,\cdot\rangle_{\natural}$ coincides with the Hermitian form of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>,</p>
 <p>$$
 \boxed{\;
-\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}} \quad\Longrightarrow\quad
+\tilde Q_1,\tilde Q_2\in\mathbb{B}_{H} \quad\Longrightarrow\quad
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_2\rangle_{*}
 \;}.
 $$</p>
 <p>For general complex elements the two differ: writing
 $\tilde Q_1=\tilde Q_{1,\mathrm{Re}}+i\tilde Q_{1,\mathrm{Im}}$ and $\tilde Q_2=\tilde Q_{\mathrm{Re}}+i\tilde Q_{\mathrm{Im}}$ with $\tilde Q_{1,\mathrm{Re}},\tilde Q_{1,\mathrm{Im}},\tilde Q_{\mathrm{Re}},\tilde Q_{\mathrm{Im}}$ in
-$\mathbb{H}_{\mathbb{B}}$, the real part of $\langle\cdot,\cdot\rangle_{\natural}$ is
+$\mathbb{B}_{H}$, the real part of $\langle\cdot,\cdot\rangle_{\natural}$ is
 $\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_{1,\mathrm{Re}},\tilde Q_{\mathrm{Re}}\rangle_{\natural}-\langle\tilde Q_{1,\mathrm{Im}},\tilde Q_{\mathrm{Im}}\rangle_{\natural}$, which is $H$ on the real
 block and $-H$ on the imaginary block, the two cross blocks being purely imaginary. Taking $\tilde Q_1=e_t$ and
 $\tilde Q=ie_t$ exhibits the difference of the two forms.</p>

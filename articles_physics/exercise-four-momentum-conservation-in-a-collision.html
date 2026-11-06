@@ -71,11 +71,11 @@
         <h1 id="exercise-four-momentum-conservation-in-a-collision"><strong>Exercise: Four-Momentum Conservation in a Collision</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is one of the exercises in the relativity series. It is a set of worked problems in four-momentum conservation for a collision, using the framework and the notation of the companion article <em>Relativistic Mechanics in Biquaternionic Form</em>. That article is the parent of this exercise: it defines the four-velocity, the four-momentum, and the mass-shell relation, and what follows applies them. The frame transformations used below are those of <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, and the frame-and-translation structure is that of <em>The Poincaré Group and the Biquaternion Frame</em>. Nothing new is introduced; every result below is obtained from the tools already defined in those articles.</p>
-<p><strong>What is assumed.</strong> The algebra, the sectors, the conjugations and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The invariant pairing on $\mathbb{M}_-$,
+<p><strong>What is assumed.</strong> The algebra, the sectors, the conjugations and the biquaternion norm are those of <em>Algebra and Element Conventions</em> and <em>Norm and Pairing Conventions</em>, and none is restated here. The invariant pairing on $\mathbb{B}_{\Phi}$,
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{B}_{\Phi}$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
@@ -97,13 +97,13 @@ Starred quantities refer to the centre-of-momentum (COM) frame, the inertial fra
 $$
 \tilde{P}_{\rm in} = \tilde{P}_1 + \tilde{P}_2,
 $$
-and that of the final system is $\tilde{P}_{\rm out} = \sum_{f\ge3}\tilde{P}_f$. Each summand lies in $\mathbb{M}_-$, and $\mathbb{M}_-$ is a real vector space, so both sums lie in $\mathbb{M}_-$. The conservation law is the single equation
+and that of the final system is $\tilde{P}_{\rm out} = \sum_{f\ge3}\tilde{P}_f$. Each summand lies in $\mathbb{B}_{\Phi}$, and $\mathbb{B}_{\Phi}$ is a real vector space, so both sums lie in $\mathbb{B}_{\Phi}$. The conservation law is the single equation
 $$
 \boxed{\ \tilde{P}_1 + \tilde{P}_2 = \tilde{P}_3 + \dots + \tilde{P}_n\ }
 \qquad\Longleftrightarrow\qquad
 \tilde{P}_{\rm in} - \tilde{P}_{\rm out} = 0 .
 $$
-Write the difference as $i\Delta_0\,e_t + \vec\Delta$, with $\Delta_0$ real and $\vec\Delta = \sum_k\Delta_k \vec e_k$ a real three-vector, by the membership condition of $\mathbb{M}_-$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{M}_-$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
+Write the difference as $i\Delta_0\,e_t + \vec\Delta$, with $\Delta_0$ real and $\vec\Delta = \sum_k\Delta_k \vec e_k$ a real three-vector, by the membership condition of $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{B}_{\Phi}$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
 $$
 \mathrm{Sc}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
 \iff \sum_a E_a = \sum_f E_f,
@@ -111,20 +111,20 @@ $$
 \mathrm{Vect}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
 \iff \sum_a \vec p_a = \sum_f \vec p_f .
 $$
-These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $i c r'_t$ convention is what puts them there.</p>
-<p><strong>Remark on counting.</strong> A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional <em>complex</em> algebra while the difference lies in the four-dimensional <em>real</em> subspace $\mathbb{M}_-$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{M}_-$-valued equation, and since $\mathbb{M}_-$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.</p>
+These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{B}_{\Phi}$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $i c r'_t$ convention is what puts them there.</p>
+<p><strong>Remark on counting.</strong> A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional <em>complex</em> algebra while the difference lies in the four-dimensional <em>real</em> subspace $\mathbb{B}_{\Phi}$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{B}_{\Phi}$-valued equation, and since $\mathbb{B}_{\Phi}$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.</p>
 <p><strong>Solution (b).</strong> The law is linear in the four-momenta: it equates sums, not products or norms. The biquaternion norm is not additive, and it does not commute with the sum. Applying $\langle\cdot\rangle_{\natural}$ to the law gives only
 $$
 \langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural} = \langle\tilde{P}_3+\dots+\tilde{P}_n\rangle_{\natural},
 $$
-which is the invariance of the total invariant mass (Problem 2). This consequence is strictly weaker than the law: equality of the total norms fixes one number, while four-momentum conservation fixes four. Two final configurations with the same total invariant mass but different total three-momentum can both satisfy the norm condition, and at most one of them conserves four-momentum. (For a $2\to2$ elastic collision at fixed $s$, all COM scattering angles share the same $s$ and the same $t+u$, but only the value of $\theta^*$ determines the split $t,u$; see Problem 2.) The conservation law is thus a linear constraint on $\mathbb{M}_-$-valued data, and it must be imposed as such.</p>
-<p><strong>Solution (c).</strong> <em>Lorentz rotor.</em> Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U_{\mathrm{lor}}$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
+which is the invariance of the total invariant mass (Problem 2). This consequence is strictly weaker than the law: equality of the total norms fixes one number, while four-momentum conservation fixes four. Two final configurations with the same total invariant mass but different total three-momentum can both satisfy the norm condition, and at most one of them conserves four-momentum. (For a $2\to2$ elastic collision at fixed $s$, all COM scattering angles share the same $s$ and the same $t+u$, but only the value of $\theta^*$ determines the split $t,u$; see Problem 2.) The conservation law is thus a linear constraint on $\mathbb{B}_{\Phi}$-valued data, and it must be imposed as such.</p>
+<p><strong>Solution (c).</strong> <em>Lorentz rotor.</em> Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U_{\mathrm{lor}}$. The conjugation is real-linear on $\mathbb{B}_{\Phi}$ and distributive over addition, so
 $$
 \tilde{P}_{\rm in,2} - \tilde{P}_{\rm out,2}
 = \sum_a \tilde U_{\mathrm{lor}}\tilde{P}_a\tilde U_{\mathrm{lor}}{}^{*} - \sum_f \tilde U_{\mathrm{lor}}\tilde{P}_f\tilde U_{\mathrm{lor}}{}^{*}
 = \tilde U_{\mathrm{lor}}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U_{\mathrm{lor}}{}^{*} .
 $$
-If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the <em>element</em> $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.</p>
+If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the <em>element</em> $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{B}_{\Phi}$, which transforms as a whole.</p>
 <p><em>Translation.</em> A Poincaré translation $(\tilde U_{\mathrm{lor}},\tilde{R}_{\varphi,0})$ acts on the four-position by $\tilde R_\varphi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}+\tilde{R}_{\varphi,0}$. The four-momentum of a free body is built from its four-velocity, $d\tilde R_\varphi/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.</p>
 <p><strong>Solution (d).</strong> Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
@@ -222,7 +222,7 @@ $$
 \qquad
 \tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t,
 $$
-where $\theta_{\mathrm{rpd}}$ is the rapidity of the COM frame in the laboratory, $\tanh\theta_{\mathrm{rpd}} = V/c$. This is the biquaternion form of the standard construction, and it is a Hermitian element of $\mathbb{M}_+$. A direct substitution shows that
+where $\theta_{\mathrm{rpd}}$ is the rapidity of the COM frame in the laboratory, $\tanh\theta_{\mathrm{rpd}} = V/c$. This is the biquaternion form of the standard construction, and it is a Hermitian element of $\mathbb{B}_{\Psi}$. A direct substitution shows that
 $$
 \tilde U_{\rm CM}\,\tilde{P}\,\tilde U_{\rm CM}^{*}
 = i\,M_{\rm tot}c\,e_t = i\frac{W}{c}\,e_t ,
@@ -368,7 +368,7 @@ as the sum rule requires.</p>
 $$
 \tilde{P}_a = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_t + m_a\vec v_a + O(v^3/c^3).
 $$
-The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i c r'_t$ convention packing them into one element of $\mathbb{M}_-$.</p>
+The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $i c r'_t$ convention packing them into one element of $\mathbb{B}_{\Phi}$.</p>
 <p><strong>Solution (b).</strong> In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+K_1$ gives $s = (m_1+m_2)^2c^4 + 2K_1m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
 $$
 K_1^{\rm thr} = \frac{M_{\rm out}^2 - (m_1+m_2)^2}{2m_2}\,c^2,
@@ -390,7 +390,7 @@ so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final part
 <p>We have worked four-momentum conservation for a collision as an application of the parent article's four-momentum and mass-shell relation, with the frame tools of the Lorentz and Poincaré companions.</p>
 <ol>
 <li>
-<p><strong>The law.</strong> An isolated collision satisfies the single $\mathbb{M}_-$-valued equation $\tilde{P}_1+\tilde{P}_2 = \sum_f\tilde{P}_f$, which is exactly the separate conservation of total energy and total three-momentum, because the scalar and vector parts are real-linear projections. The law is linear, is preserved by every Lorentz rotor, and is invariant under translations. Its norm consequence, the invariance of $s$, is strictly weaker than the law itself.</p>
+<p><strong>The law.</strong> An isolated collision satisfies the single $\mathbb{B}_{\Phi}$-valued equation $\tilde{P}_1+\tilde{P}_2 = \sum_f\tilde{P}_f$, which is exactly the separate conservation of total energy and total three-momentum, because the scalar and vector parts are real-linear projections. The law is linear, is preserved by every Lorentz rotor, and is invariant under translations. Its norm consequence, the invariance of $s$, is strictly weaker than the law itself.</p>
 </li>
 <li>
 <p><strong>Invariants.</strong> With $s = -c^2\langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$ and $t = -c^2\langle\tilde{P}_1-\tilde{P}_3\rangle_{\natural}$, $u = -c^2\langle\tilde{P}_1-\tilde{P}_4\rangle_{\natural}$, the sum rule $s+t+u = (m_1^2+m_2^2+m_3^2+m_4^2)c^4$ holds exactly; for elastic scattering with $m_1=m_3$ it gives $t = -2c^2p^{*2}(1-\cos\theta^*)$. The crossed invariants $t,u$ can be spacelike and define no real mass.</p>
@@ -430,19 +430,19 @@ so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final part
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace (material sector): imaginary scalar, real vector</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (informational sector): real scalar, imaginary vector</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$</td>
+<td>$\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$</td>
 <td>Complex scalar subspace (centre of the algebra)</td>
 </tr>
 <tr>
@@ -451,7 +451,7 @@ so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final part
 </tr>
 <tr>
 <td>$\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$</td>
-<td>Invariant pairing on $\mathbb{M}_-$</td>
+<td>Invariant pairing on $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_t+\vec p_a$</td>

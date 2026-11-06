@@ -76,7 +76,7 @@
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 $$</p>
 <p>was shown to have a biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. A null field strength is a <strong>zero divisor</strong> of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.</p>
-<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $ϙ$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
+<p>The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $ϙ$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles).</p>
 <p>The article is organized as follows. The first section recalls the retarded solution of the Maxwell article and specializes it to a point charge. The second introduces the retarded null biquaternion and writes the Liénard–Wiechert potentials in biquaternion form, and adds the source's spinor square root and invariant retarded distance. The third computes the field and splits it into a velocity part and an acceleration part. The fourth identifies the acceleration part as the radiation field, and the fifth and sixth extract the radiated power and the angular distribution. A short section treats the radiation-reaction problem, and a closing section records how the two downstream exercises are applications of the construction.</p>
 <p>Two later exercises use this article as their declared foundation: <em>Exercise: The Electromagnetic Field of a Moving Charge</em> and <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>. The construction below is worked out explicitly enough that both are applications of it, R4 being the case of vanishing acceleration and E1 the general case.</p>
 <h2 id="the-retarded-solution-for-a-point-source">The Retarded Solution for a Point Source</h2>
@@ -125,16 +125,16 @@ $$</p>
 <p>$$
 iR\,e_t + \vec R,
 $$</p>
-<p>which is an element of the material subspace $\mathbb{M}_-$: its scalar part is imaginary and its vector part real. Its biquaternion norm is</p>
+<p>which is an element of the material subspace $\mathbb{B}_{\Phi}$: its scalar part is imaginary and its vector part real. Its biquaternion norm is</p>
 <p>$$
 \langle iR\,e_t+\vec R\rangle_{\natural} = (iR\,e_t+\vec R)(iR\,e_t+\vec R)^{\natural} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0 .
 $$</p>
-<p>The retarded separation is therefore a <strong>null</strong> element of $\mathbb{M}_-$ — a point of the light cone, and hence a zero divisor of $\mathbb{B}$. This is the biquaternion expression of the elementary fact that the separation between an emission event and a later observation event on the light cone is null. The whole radiation problem is built on a zero divisor.</p>
+<p>The retarded separation is therefore a <strong>null</strong> element of $\mathbb{B}_{\Phi}$ — a point of the light cone, and hence a zero divisor of $\mathbb{B}$. This is the biquaternion expression of the elementary fact that the separation between an emission event and a later observation event on the light cone is null. The whole radiation problem is built on a zero divisor.</p>
 <p>The second is the <strong>four-velocity biquaternion</strong>, written in coordinate form as the coordinate velocity divided by $\gamma$</p>
 <p>$$
-\tilde{V}/\gamma = ic\,e_t + \vec v(r'_{\mathrm{ret},t}) = \frac{d\tilde{Q}_q}{dr'_t}\bigg|_{\mathrm{ret}} \in \mathbb{M}_- ,
+\tilde{V}/\gamma = ic\,e_t + \vec v(r'_{\mathrm{ret},t}) = \frac{d\tilde{Q}_q}{dr'_t}\bigg|_{\mathrm{ret}} \in \mathbb{B}_{\Phi} ,
 \qquad
-\tilde{V} = \gamma\left(ic\,e_t + \vec v(r'_{\mathrm{ret},t})\right) = \frac{d\tilde{Q}_q}{d\tau}\bigg|_{\mathrm{ret}} \in \mathbb{M}_- ,
+\tilde{V} = \gamma\left(ic\,e_t + \vec v(r'_{\mathrm{ret},t})\right) = \frac{d\tilde{Q}_q}{d\tau}\bigg|_{\mathrm{ret}} \in \mathbb{B}_{\Phi} ,
 $$</p>
 <p>with biquaternion norms</p>
 <p>$$
@@ -143,7 +143,7 @@ $$</p>
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\,\langle\tilde{V}/\gamma\rangle_{\natural} = -c^2 ,
 \qquad \gamma = \frac{1}{\sqrt{1 - \beta^2}} .
 $$</p>
-<p>The four-velocity $\tilde{V}$ carries the standard invariant $\langle\tilde{V}\rangle_{\natural} = -c^2$ of the companion article on $\mathbb{M}_-$. The retarded separation and the four-velocity together determine the potential through a single scalar:</p>
+<p>The four-velocity $\tilde{V}$ carries the standard invariant $\langle\tilde{V}\rangle_{\natural} = -c^2$ of the companion article on $\mathbb{B}_{\Phi}$. The retarded separation and the four-velocity together determine the potential through a single scalar:</p>
 <p>$$
 D \equiv R - \vec R\cdot\vec\beta = R\left(1 - \vec u_R\cdot\vec\beta\right) = R\kappa, \qquad \kappa \equiv 1 - \vec u_R\cdot\vec\beta.
 $$</p>
@@ -172,7 +172,7 @@ $$</p>
 \xi_{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon D}, \qquad
 \vec A = \frac{\mu ϙ\,\vec v}{4\pi D} = \frac{\vec v}{c^2}\,\xi_{\mathrm{scp}} .
 $$</p>
-<p>The relation $\vec A = (\vec v/c^2)\xi_{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{M}_-$</strong>, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
+<p>The relation $\vec A = (\vec v/c^2)\xi_{\mathrm{scp}}$ is the standard one and uses $\epsilon\mu c^2 = 1$. The potential is thus a <strong>single biquaternion built from two elements of $\mathbb{B}_{\Phi}$</strong>, one null ($iR\,e_t+\vec R$) and one timelike ($\tilde{V}/\gamma$), with the invariant denominator $D$ that measures their biquaternion pairing. In covariant language this is the familiar statement that the four-potential is proportional to the four-velocity divided by the invariant $\tilde V\cdot R$; the biquaternion form makes the pairing explicit as the scalar part of a biquaternion product.</p>
 <h2 id="the-spinor-square-root-and-the-invariant-retarded-distance">The Spinor Square Root and the Invariant Retarded Distance</h2>
 <p>Every zero divisor factorises, and the source's spinor treatment of the retarded field is such a factorisation, written in objects that this article has already defined. Three of them are the source's, and it is worth naming each once against the conventions here.</p>
 <p><strong>The invariant retarded distance.</strong> The source's scalar is</p>
@@ -418,7 +418,7 @@ $$</p>
 D = R - \vec R\cdot\vec\beta
 = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)(iR\,e_t+\vec R)^{\natural}\right),
 $$</p>
-<p>built from the null retarded separation $iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(r'_{\mathrm{ret},t})\right)$, both in $\mathbb{M}_-$.</p>
+<p>built from the null retarded separation $iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(r'_{\mathrm{ret},t})\right)$, both in $\mathbb{B}_{\Phi}$.</p>
 <p>The same potential can be written with the invariant retarded distance $\zeta = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}(iR\,e_t+\vec R)^{\natural}\right) = \gamma D$ and the spinor square root of the four-velocity, $B = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,B^2$:</p>
 <p>$$
 \tilde{A} = \frac{\mu ϙ}{4\pi\zeta}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\zeta}\,B^2,
@@ -453,11 +453,11 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) subspaces</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}, \mathbb{B}_{C}$</td>
 <td>Real-quaternion and scalar subspaces</td>
 </tr>
 <tr>

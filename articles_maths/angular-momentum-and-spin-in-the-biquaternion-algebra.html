@@ -89,19 +89,19 @@ e_t^*=e_t,\qquad \vec e_k^*=-\vec e_k,\qquad i^*=-i,
 $$</p>
 <p>and $\mathsf{M}_2(X^*)=\mathsf{M}_2(X)^\dagger$. The two sectors are</p>
 <p>$$
-\mathbb{M}_+=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad
-\mathbb{M}_-=\operatorname{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Psi}=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad
+\mathbb{B}_{\Phi}=\operatorname{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$</p>
-<p>the Hermitian and anti-Hermitian subspaces; $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_+=\mathbb{M}_-$.</p>
+<p>the Hermitian and anti-Hermitian subspaces; $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$.</p>
 <p>The trace form is</p>
 <p>$$
 \langle X,Y\rangle=\operatorname{tr}(X^*Y),
 $$</p>
 <p>with $\operatorname{tr}$ the matrix trace. It is positive definite and $\mathbb{C}$-linear in $Y$. The group of unit real quaternions is</p>
 <p>$$
-G=\{u\in\mathbb{H}_{\mathbb{B}}:uu^*=e_t\},
+G=\{u\in\mathbb{B}_{H}:uu^*=e_t\},
 $$</p>
-<p>which is $SU(2)$; its Lie algebra is $\mathfrak{g}=\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. The complexification $\mathfrak{g}_{\mathbb{C}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is $\mathfrak{sl}_2(\mathbb{C})$, the traceless part under $\mathsf{M}_2$.</p>
+<p>which is $SU(2)$; its Lie algebra is $\mathfrak{g}=\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, with bracket $[\vec e_\mu,\vec e_\nu]=2\epsilon_{\mu\nu\lambda}\vec e_\lambda$. The complexification $\mathfrak{g}_{\mathbb{C}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is $\mathfrak{sl}_2(\mathbb{C})$, the traceless part under $\mathsf{M}_2$.</p>
 <p><strong>Proposition.</strong> $\mathsf{M}_2$ is an isomorphism of complex algebras, carries $*$ to the conjugate transpose, and carries the trace form to the Hilbert–Schmidt form.</p>
 <p><em>Proof.</em> The map is defined on the basis; on products of basis elements it is the standard Pauli multiplication, so it is an algebra homomorphism. The correspondence $*$ to the conjugate transpose is checked on the basis: $\mathsf{M}_2(\vec e_k^*)=\mathsf{M}_2(-\vec e_k)=i\sigma_k=(-i\sigma_k)^\dagger$. The trace form is then $\operatorname{tr}(\mathsf{M}_2(X)^\dagger\mathsf{M}_2(Y))$, the Hilbert–Schmidt form.</p>
 <h2 id="the-rotation-generators">The Rotation Generators</h2>
@@ -111,7 +111,7 @@ g_k=-\tfrac12\vec e_k\in\mathfrak{g},\qquad [g_i,g_j]=-\epsilon_{ijk}g_k,\qquad 
 $$</p>
 <p>and the Hermitian basis</p>
 <p>$$
-\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
+\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{B}_{\Psi},\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$</p>
 <p>They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (<em>Algebra and Element Conventions</em>, §<em>The Centre and the Vector Subspace</em>).</p>
 <p><strong>Proposition (the exponential).</strong> For a unit $\vec u\in\mathfrak{g}$ and real $\theta$, the rotation through $\theta$ about $\vec u$ is</p>
@@ -330,7 +330,7 @@ $$</p>
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde{Ζ}_{\mathrm{ad}},\qquad \chi^2=+e_t.
 $$</p>
 <p>The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in <em>The Unpolarized Module of the Biquaternion Algebra</em>. Its central root of $-1$ is $\tilde{Ζ}_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.</p>
-<p>The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing in the present article depends on them.</p>
+<p>The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{B}_{\Psi,\Phi}$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in <em>Biquaternion Rotations and Lorentz Transformations</em> and in <em>The Unpolarized Module of the Biquaternion Algebra</em>; nothing in the present article depends on them.</p>
 <h2 id="the-four-uses-of-the-word-spin">The Four Uses of the Word Spin</h2>
 <p>Four objects in this corpus are called a spin. They are one definition applied to two module structures, and two signs that carry no weight at all.</p>
 <div class="table-scroll"><table>
@@ -458,7 +458,7 @@ $$</p>
 <td>Its basis; $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_\pm$</td>
+<td>$\mathbb{B}_{\Psi,\Phi}$</td>
 <td>The Hermitian and anti-Hermitian sectors</td>
 </tr>
 <tr>

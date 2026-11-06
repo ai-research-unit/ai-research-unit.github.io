@@ -190,7 +190,7 @@ $$</p>
 <p><strong>What the conservation uses, and what it does not.</strong> It is often said that the current is conserved "by the Bianchi identity". In this derivation the differential Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$ is <em>not</em> used. What is used is the field equation, the antisymmetry of $F_{\mu\nu}$, and the curvature identity $[D_\nu,D_\mu] = i\kappa F_{\nu\mu}$; the vanishing commutator $\sum_{\mu,\nu}[F_{\nu\mu},F_{\mu\nu}] = 0$ is an algebraic consequence of antisymmetry, not the differential identity. (That algebraic identity is itself sometimes called a Bianchi identity, being the contracted statement that the curvature is an algebra element; the differential identity is a different object, and it is the differential one that is not needed here.) The differential Bianchi identity is the independent <em>homogeneous</em> half of the non-abelian system, treated in its own section below. The two are sometimes conflated because both are identities of the curvature and both trace back to the Jacobi identity at the level of operators; the reader is entitled to know which one does the work. The claim to be verified for the conservation is therefore field equation plus antisymmetry, and that is what was checked.</p>
 <p><strong>Consistency, not an extra condition.</strong> In the abelian case the analogous statement $\sum_{\mu,\nu}\partial/\partial R_\nu\,\partial/\partial R_\mu F_{\mu\nu} = 0$ is automatic, and charge conservation is recovered from the field equation rather than imposed. In the non-abelian case the same logic gives the covariant law; the current defined by the field equation is covariantly conserved automatically, and no independent condition on $\rho$ and $\vec J$ is added. In this sense $\sum_\nu D_\nu J_\nu = 0$ is the integrability condition of the Yang–Mills system, exactly as ordinary conservation is the integrability condition of Maxwell's system.</p>
 <h2 id="the-abelian-limit">The Abelian Limit</h2>
-<p>The abelian case is the case of a <strong>commuting generator set</strong>: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{C}_{\mathbb{B}}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.</p>
+<p>The abelian case is the case of a <strong>commuting generator set</strong>: the connection takes values in a one-dimensional subalgebra, so that all its coefficients commute. Two settings realise it in the framework. The parent's abelian connection lies in the centre $\mathbb{B}_{C}$, whose imaginary scalar $ie_t$ commutes with every biquaternion; and any connection proportional to a single fixed generator, $\mathcal{A}_\mu = a_\mu(\tilde{Q})\,\vec e_x$, has commuting coefficients even though $\vec e_x$ is not central. The reduction to Maxwell is the same in both, and it is worth saying exactly which terms vanish and why.</p>
 <p>Write $\mathcal{A}_\mu = a_\mu\,g$ for a fixed generator $g$ with $a_\mu$ scalar functions (for the centre, $g = ie_t$; for a single spatial generator, $g = \vec e_x$). Then</p>
 <p>$$
 [\mathcal{A}_\mu,\mathcal{A}_\nu] = a_\mu a_\nu\,[g,g] = 0,
@@ -349,7 +349,7 @@ $$</p>
 <li>The field equation acquires the commutator term $i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$, with the derivative index contracted with the first index of the curvature and with the connection of the same index inside the commutator. This is the only placement that makes the equation covariant and the current conserved; the three alternatives tested fail at order unity.</li>
 <li>The current is <strong>covariantly</strong> conserved, $\sum_\nu D_\nu J_\nu = 0$, not ordinarily conserved: $\langle\tilde\nabla,\tilde J\rangle_{\natural} = -i\kappa[\mathcal{A}_\nu,J_\nu] \neq 0$. The conservation follows from the field equation and the antisymmetry of the curvature, through $\tfrac12\sum_{\mu,\nu}[D_\nu,D_\mu]F_{\mu\nu} = \tfrac12 i\kappa\sum_{\mu,\nu}[F_{\nu\mu},F_{\mu\nu}] = 0$; the differential Bianchi identity is the independent homogeneous half and is not what makes it true.</li>
 </ul>
-<p>In the abelian limit — a commuting generator set, whether the centre $\mathbb{C}_{\mathbb{B}}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F_{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J_\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = J_\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.</p>
+<p>In the abelian limit — a commuting generator set, whether the centre $\mathbb{B}_{C}$ of the parent or a single fixed generator — every commutator vanishes: $[\mathcal{A}_\mu,\mathcal{A}_\nu] = 0$ removes the curvature's commutator term, $[\mathcal{A}_\mu,F_{\mu\nu}] = 0$ removes the field equation's, and $[\mathcal{A}_\nu,J_\nu] = 0$ removes the one separating covariant from ordinary conservation. The equation reduces to Maxwell's, $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = J_\nu$, with an ordinarily conserved current that is invariant under the abelian gauge transformations preserving the generator set. Nothing cancels; the abelian connection commutes with everything it meets.</p>
 <p>The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J_{2,\nu} = \tilde UJ_\nu \tilde U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.</p>
 <p>A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\nabla^\pm B + F\circ B = G$ with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\vec F,\vec F)$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -374,15 +374,15 @@ $$</p>
 <td>Scalar imaginary, $i^2 = -1$, central</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$</td>
+<td>$\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$</td>
 <td>Centre of the algebra; abelian gauge factor</td>
 </tr>
 <tr>
@@ -399,11 +399,11 @@ $$</p>
 </tr>
 <tr>
 <td>$[e_a,e_b] = 2\varepsilon_{abc}e_c$</td>
-<td>Commutator on the vector part of $\mathbb{M}_-$</td>
+<td>Commutator on the vector part of $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
-<td>Compact gauge algebra inside $\mathbb{M}_-$</td>
+<td>Compact gauge algebra inside $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$</td>

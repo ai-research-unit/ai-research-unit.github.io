@@ -98,7 +98,7 @@ so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The representation is called Pauli b
 $$
 \vec{Ζ}=i\vec e_z
 $$
-is a vector, not a scalar: it lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$. Its square is the unit,
+is a vector, not a scalar: it lies in the vector subspace $\mathbb{B}_{V}$. Its square is the unit,
 $$
 \vec{Ζ}^2=i^2\vec e_z^2=(-1)(-e_t)=e_t,
 $$
@@ -780,7 +780,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>$\tilde Q^{\natural}=\tilde Q$</td>
 <td>$M=\lambda\mathrm I_4$</td>
 <td>$2$</td>
@@ -788,7 +788,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 <td>$Q_t^2$</td>
 </tr>
 <tr>
-<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{V}$</td>
 <td>$\tilde Q^{\natural}=-\tilde Q$</td>
 <td>$\operatorname{Tr}M=0$</td>
 <td>$6$</td>
@@ -796,7 +796,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 <td>$B^2$</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>$\overline{\tilde Q}=\tilde Q$</td>
 <td>$M=\mathrm I_2\otimes A_{\mathbb{H}}(a,b)$</td>
 <td>$4$</td>
@@ -804,7 +804,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 <td>$\sum q_\mu^2$</td>
 </tr>
 <tr>
-<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{iH}$</td>
 <td>$\overline{\tilde Q}=-\tilde Q$</td>
 <td>$M=\mathrm I_2\otimes A_{i\mathbb{H}}(a,b)$</td>
 <td>$4$</td>
@@ -812,7 +812,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 <td>$-\sum(q'_\mu)^2$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$\tilde Q^{*}=\tilde Q$</td>
 <td>$M=M^{\dagger}$</td>
 <td>$4$</td>
@@ -820,7 +820,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 <td>$q_t^2-\lvert\vec q'\rvert^2$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$\tilde Q^{\flat}=\tilde Q$</td>
 <td>$M=-M^{\dagger}$</td>
 <td>$4$</td>
@@ -830,7 +830,7 @@ Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$, and recall $Q_\mu=q
 </tbody>
 </table></div>
 <p><strong>The determinant of $M$.</strong> On every row the determinant of the $4\times4$ matrix is the square of the last column, $\det M=(\det\mathsf M_2(\tilde Q))^2$. The last column is the quadratic determinant of the $2\times2$ image; the determinant of the regular matrix is the quartic obtained by squaring it.</p>
-<p><strong>The warning.</strong> Apart from the centre, the conditions in the third column are exact only inside the image. The Hermitian matrices of the ambient $M_4(\mathbb{C})$ form a real space of dimension $16$, the anti-Hermitian another, the traceless matrices a complex space of dimension $15$. The real form $\mathbb{H}_{\mathbb{B}}$ is not the space of entrywise real matrices in this frame: the frame vectors are complex, and the quaternion-shaped block $A_{\mathbb{H}}(a,b)$ is the correct condition. The conditions select the correct subspaces only when read on $M=L(\tilde Q)$.</p>
+<p><strong>The warning.</strong> Apart from the centre, the conditions in the third column are exact only inside the image. The Hermitian matrices of the ambient $M_4(\mathbb{C})$ form a real space of dimension $16$, the anti-Hermitian another, the traceless matrices a complex space of dimension $15$. The real form $\mathbb{B}_{H}$ is not the space of entrywise real matrices in this frame: the frame vectors are complex, and the quaternion-shaped block $A_{\mathbb{H}}(a,b)$ is the correct condition. The conditions select the correct subspaces only when read on $M=L(\tilde Q)$.</p>
 <h3 id="the-centre-subspace">The Centre Subspace</h3>
 <p><strong>The scalar matrices.</strong> For $\tilde Q=Q_te_t$,
 $$
@@ -839,7 +839,7 @@ L(Q_te_t)=Q_t\mathrm I_4,\qquad
 \det M=Q_t^4,\qquad
 \det\mathsf M_2(\tilde Q)=Q_t^2.
 $$
-The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It meets $\mathbb{M}_+$ in the real line $\mathbb{R}\mathrm I_4$ and $\mathbb{M}_-$ in the imaginary line $i\mathbb{R}\mathrm I_4$. It is the only subspace of real dimension $2$ and the only commutative one.</p>
+The image is the complex line $\mathbb{C}\mathrm I_4$, of real dimension $2$. It meets $\mathbb{B}_{\Psi}$ in the real line $\mathbb{R}\mathrm I_4$ and $\mathbb{B}_{\Phi}$ in the imaginary line $i\mathbb{R}\mathrm I_4$. It is the only subspace of real dimension $2$ and the only commutative one.</p>
 <h3 id="the-vector-subspace">The Vector Subspace</h3>
 <p><strong>The traceless matrices.</strong> For $\tilde Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$,
 $$
@@ -902,13 +902,13 @@ The image is the space of anti-Hermitian matrices of the regular form, of real d
 <h3 id="the-three-splits">The Three Splits</h3>
 <p><strong>The three decompositions.</strong> The six subspaces pair into the three decompositions
 $$
-\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
-=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
-=\mathbb{M}_+\oplus\mathbb{M}_-,
+\mathbb{B}=\mathbb{B}_{C}\oplus\mathbb{B}_{V}
+=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}
+=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},
 $$
 of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector split. The second is the real–imaginary split. The third is the Hermitian–anti-Hermitian split. No one of the three refines another.</p>
-<p><strong>The intersections.</strong> The centre meets $\mathbb{M}_+$ in $\mathbb{R}\mathrm I_4$ and $\mathbb{M}_-$ in $i\mathbb{R}\mathrm I_4$. The vector subspace meets $\mathbb{H}_{\mathbb{B}}$ in the real pure quaternions, of real dimension $3$, and $i\mathbb{H}_{\mathbb{B}}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{M}_+$ in $i$ times the real vector triple, and $\mathbb{M}_-$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.</p>
-<p><strong>The closure.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and it exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<p><strong>The intersections.</strong> The centre meets $\mathbb{B}_{\Psi}$ in $\mathbb{R}\mathrm I_4$ and $\mathbb{B}_{\Phi}$ in $i\mathbb{R}\mathrm I_4$. The vector subspace meets $\mathbb{B}_{H}$ in the real pure quaternions, of real dimension $3$, and $\mathbb{B}_{iH}$ in the imaginary pure quaternions, of real dimension $3$. It meets $\mathbb{B}_{\Psi}$ in $i$ times the real vector triple, and $\mathbb{B}_{\Phi}$ in the real vector triple. The quaternion and anti-quaternion subspaces meet only at $0$, and so do the Hermitian and anti-Hermitian subspaces.</p>
+<p><strong>The closure.</strong> The centre and the quaternion subspace are subalgebras. The vector subspace is a Lie subalgebra under the commutator, not a subalgebra under the product. The anti-quaternion subspace and the two Hermitian subspaces are neither. Multiplication by $i$ exchanges $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, and it exchanges $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.</p>
 <h2 id="the-comparison-table">The Comparison Table</h2>
 <p><strong>The three frames.</strong> The table sets the Peirce frame beside the coefficient basis, which is the frame of <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>, and beside a generic frame $C^{-1}L(\tilde Q)C$ with $C\in GL_4(\mathbb{C})$. It is stated here, at the end of this article, because the Peirce frame is the one this article builds; the coefficient article lists its own properties and does not compare them.</p>
 <div class="table-scroll"><table>

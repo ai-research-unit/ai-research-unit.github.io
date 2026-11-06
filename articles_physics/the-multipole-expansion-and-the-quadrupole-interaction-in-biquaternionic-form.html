@@ -74,9 +74,9 @@
 <p>This article develops the multipole expansion in the biquaternion framework and treats the <strong>quadrupole interaction</strong> as the first order above the dipole. The treatment is <strong>non-relativistic</strong> and classical throughout: the sources are at rest or move slowly compared with the speed of light, the fields are computed in the static or quasi-static limit, and neither retardation nor the relativistic multipole structure enters. The relativistic quadrupole is a separate subject.</p>
 <p>The biquaternion framework is set in the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, over complex coefficients, and central scalar imaginary $i$, $i^2 = -1$. The material sector is the anti-Hermitian subspace</p>
 <p>$$
-\mathbb{M}_- = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
+\mathbb{B}_{\Phi} = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
 $$</p>
-<p>with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has signature $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{M}_+$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternionic gradient is</p>
+<p>with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has signature $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The biquaternionic gradient is</p>
 <p>$$
 \tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,
 \qquad
@@ -88,7 +88,7 @@ $$</p>
 - Companion article <em>Algebra and Element Conventions</em>, for the trace, the metric (its three levels are ruled on in <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>), and the sector conventions.
 - Companion article <em>Modules over the Biquaternion Algebra</em>, for the algebra as a complex algebra and its modules, whose $V$-modules are a different family from the rotation representations $D^{(l)}$ used here.
 - Companion article <em>The Field-Strength Biquaternion and Its Invariants</em>, for the field-strength biquaternion and the fields $\vec E$ and $\vec H$.</p>
-<p>The article's thesis can be stated at once. The biquaternion algebra, regarded as a representation space of the rotation group — the group acting by rotor conjugation — is the direct sum $D^{(0)}\oplus D^{(1)}$ of the trivial representation and the vector representation, and nothing more. Its <strong>elements</strong> can therefore carry the monopole (a central scalar) and the dipole (a vector), and its <strong>product</strong> never leaves that sum either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the dot and the cross product. The <strong>quadrupole</strong> is the first moment that is not an algebra element: it is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it lives in the symmetric traceless square of the vector part rather than in the algebra itself. The quadrupole <strong>interaction energy</strong>, by contrast, is a scalar, and therefore is always an element of the centre $\mathbb{C}_{\mathbb{B}}$. The distinction between the moment, which is a tensor, and its interaction, which is a scalar, organises the article and the two that follow it.</p>
+<p>The article's thesis can be stated at once. The biquaternion algebra, regarded as a representation space of the rotation group — the group acting by rotor conjugation — is the direct sum $D^{(0)}\oplus D^{(1)}$ of the trivial representation and the vector representation, and nothing more. Its <strong>elements</strong> can therefore carry the monopole (a central scalar) and the dipole (a vector), and its <strong>product</strong> never leaves that sum either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the dot and the cross product. The <strong>quadrupole</strong> is the first moment that is not an algebra element: it is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it lives in the symmetric traceless square of the vector part rather than in the algebra itself. The quadrupole <strong>interaction energy</strong>, by contrast, is a scalar, and therefore is always an element of the centre $\mathbb{B}_{C}$. The distinction between the moment, which is a tensor, and its interaction, which is a scalar, organises the article and the two that follow it.</p>
 <h2 id="the-multipole-expansion-of-a-localised-source">The Multipole Expansion of a Localised Source</h2>
 <h3 id="from-the-coulomb-integral-to-the-series">From the Coulomb Integral to the Series</h3>
 <p>Let a charge distribution of density $\rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the Coulomb integral</p>
@@ -140,7 +140,7 @@ $$</p>
 <h3 id="the-representations-math72">The Representations $D^{(l)}$</h3>
 <p>The rotation group $SO(3)$ has, up to equivalence, exactly one irreducible real representation of each odd dimension $2l+1$, $l = 0, 1, 2, \dots$; its double cover $SU(2)$ has exactly one irreducible complex representation of each dimension $2l+1$, written $D^{(l)}$ after Wigner's rotation matrices, so that $\dim_{\mathbb{C}}D^{(l)} = 2l+1$. The label $l$ is the angular momentum and $D^{(l)}$ is the standard rotation-group representation of that angular momentum; the representation-theory companion uses the letter $V$ for the polynomial modules of the complex algebra, a different family, and the present notation is the rotation-group one. In the biquaternion framework the rotation rotors are the real unit quaternions, a group isomorphic to $SU(2)$,</p>
 <p>$$
-\mathbb{H}_{\mathbb{B}}^1 = \{\tilde{U}\in\mathbb{H}_{\mathbb{B}} : \tilde{U}\tilde{U}^{\natural} = e_t\},
+\mathbb{B}_{H}^1 = \{\tilde{U}\in\mathbb{B}_{H} : \tilde{U}\tilde{U}^{\natural} = e_t\},
 $$</p>
 <p>acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$. The multipole moment of order $l$ is a tensor in $D^{(l)}$: the monopole is $D^{(0)}$, the dipole is $D^{(1)}$, the quadrupole is $D^{(2)}$, and so on.</p>
 <h3 id="why-the-order-is-an-angular-momentum">Why the Order Is an Angular Momentum</h3>
@@ -154,10 +154,10 @@ $$</p>
 <h3 id="the-potential-and-the-field">The Potential and the Field</h3>
 <p>In the $i c r'_t$ convention the four-potential is an element of the material sector,</p>
 <p>$$
-\tilde{A} = i\,a'_t\,e_t + \vec A \in \mathbb{M}_- ,
+\tilde{A} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi} ,
 \qquad \vec A = A_1\vec e_x + A_2\vec e_y + A_3\vec e_z ,
 $$</p>
-<p>whose scalar coefficient is imaginary and whose vector part is real. In the electrostatic limit $\vec A = 0$, and the four-potential reduces to the purely imaginary central element $(i\,a'_t)\,e_t$, still an element of $\mathbb{M}_-$: the scalar part of a four-potential is imaginary, and it is that imaginary scalar coefficient that marks the sector. The constant factor $i/c$ plays no role in the statics, and it is convenient to work with the rescaled central element</p>
+<p>whose scalar coefficient is imaginary and whose vector part is real. In the electrostatic limit $\vec A = 0$, and the four-potential reduces to the purely imaginary central element $(i\,a'_t)\,e_t$, still an element of $\mathbb{B}_{\Phi}$: the scalar part of a four-potential is imaginary, and it is that imaginary scalar coefficient that marks the sector. The constant factor $i/c$ plays no role in the statics, and it is convenient to work with the rescaled central element</p>
 <p>$$
 \tilde{Ξ} = Ξ\,e_t ,
 $$</p>
@@ -170,7 +170,7 @@ $$</p>
 <p>$$
 \vec\nabla(Ξ\,e_t) = (\partial/\partial R_x\,Ξ)\vec e_x + (\partial/\partial R_y\,Ξ)\vec e_y + (\partial/\partial R_z\,Ξ)\vec e_z ,
 $$</p>
-<p>which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nablaΞ$, the object computed is $\vec\nablaΞ = -\vec E$, a pure real vector, an element of the vector part of $\mathbb{H}_{\mathbb{B}}$, and hence of $\mathbb{M}_-$.</p>
+<p>which is $-\vec E$ in biquaternion form: since $\vec E = -\vec\nablaΞ$, the object computed is $\vec\nablaΞ = -\vec E$, a pure real vector, an element of the vector part of $\mathbb{B}_{H}$, and hence of $\mathbb{B}_{\Phi}$.</p>
 <p><strong>The spatial Laplacian.</strong> A fact used twice below is that the second power of the vector gradient is minus the Laplacian,</p>
 <p>$$
 \vec\nabla\,\vec\nabla = \sum_{i,j}e_i e_j\,\partial^2/\partial R_i\partial R_j = -\sum_i \partial^2/\partial R_i^2\,e_t = -\Delta\,e_t .
@@ -184,10 +184,10 @@ $$</p>
 $$</p>
 <p>a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\sqrt{\epsilon}\,\vec E$. The conventions and the derivation are those of
 - Companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$.</p>
-<p>For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{H}_{\mathbb{B}}$.</p>
+<p>For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{B}_{H}$.</p>
 <h2 id="the-monopole-and-the-dipole-as-algebra-elements">The Monopole and the Dipole as Algebra Elements</h2>
 <h3 id="the-monopole">The Monopole</h3>
-<p>The monopole moment is a scalar, and in the algebra it is the central element $ϙ\,e_t \in \mathbb{C}_{\mathbb{B}}$. Under a rotation the centre is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $ϙΞ(0)$ is likewise a central scalar.</p>
+<p>The monopole moment is a scalar, and in the algebra it is the central element $ϙ\,e_t \in \mathbb{B}_{C}$. Under a rotation the centre is pointwise fixed, which is the algebraic statement that the monopole is the $D^{(0)}$ representation. The monopole interaction energy $ϙΞ(0)$ is likewise a central scalar.</p>
 <h3 id="the-dipole">The Dipole</h3>
 <p>The dipole moment is a vector,</p>
 <p>$$
@@ -243,7 +243,7 @@ $$</p>
 <p>$$
 \boxed{\;W_{quad} = -\tfrac16\,\mathcal{Q}_{ij}T_{ij} = \tfrac16\,\mathcal{Q}_{ij}\,\partial^2/\partial R_i\partial R_j\,Ξ(0)\;}.
 $$</p>
-<p><strong>It is a scalar.</strong> Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{C}_{\mathbb{B}}$. The algebra has no difficulty with the <em>value</em> of the quadrupole interaction. Its difficulty is with the <em>moment</em>, and that is the subject of the next section.</p>
+<p><strong>It is a scalar.</strong> Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{B}_{C}$. The algebra has no difficulty with the <em>value</em> of the quadrupole interaction. Its difficulty is with the <em>moment</em>, and that is the subject of the next section.</p>
 <h2 id="why-the-quadrupole-is-not-an-algebra-element">Why the Quadrupole Is Not an Algebra Element</h2>
 <h3 id="the-product-of-two-vectors-stops-at-math188">The Product of Two Vectors Stops at $D^{(1)}$</h3>
 <p>The biquaternion product of two spatial vectors is fixed by the quaternion relations. For pure real vectors $\vec q, \vec v$,</p>
@@ -283,7 +283,7 @@ $$</p>
 - Companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>, for the trace obstruction that blocks the canonical bracket inside the finite-dimensional algebra.</p>
 <p>The algebra is a <strong>value algebra</strong> of finite dimension, and it carries exactly the spin-$0$ and spin-$1$ content of a scalar and a three-vector. The multipole tower is a property of the <strong>field space</strong>, which is infinite-dimensional. The two are different objects, and no finite algebra can play the role of the infinite-dimensional function space. The closing article of this sequence turns that observation into a general statement.</p>
 <h2 id="summary">Summary</h2>
-<p>The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{M}_-$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.</p>
+<p>The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.</p>
 <p>The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are <strong>elements of the algebra</strong>, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is <strong>not</strong> an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.</p>
 <p>The quadrupole <strong>interaction</strong> is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial R_i\partial R_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.</p>
 <p>The multipole tower is infinite because the angular structure of a field on the sphere is infinite-dimensional; the algebra is finite because it is the value algebra of a two-state, four-vector structure. The first order at which the difference shows is the quadrupole.</p>
@@ -309,19 +309,19 @@ $$</p>
 <td>Central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$</td>
+<td>$\mathbb{B}_{C} = \{Q_te_t\}$</td>
 <td>Centre of $\mathbb{B}$ (the scalars)</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\tilde{U}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$</td>
+<td>$\tilde{U}\in\mathbb{B}_{H}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$</td>
 <td>Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$</td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{A} = i\,a'_t\,e_t + \vec A$</td>
-<td>Four-potential, an element of $\mathbb{M}_-$</td>
+<td>Four-potential, an element of $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$</td>

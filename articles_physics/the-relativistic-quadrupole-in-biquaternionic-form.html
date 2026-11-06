@@ -83,7 +83,7 @@
 <li>Companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>, for the potential and field-strength biquaternions.</li>
 <li>Companion article <em>The Field-Strength Biquaternion and Its Invariants</em>, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.</li>
 </ul>
-<p>Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.</p>
+<p>Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.</p>
 <h2 id="the-quadrupole-as-a-higher-multipole">The Quadrupole as a Higher Multipole</h2>
 <h3 id="the-moment-and-its-definition">The Moment and Its Definition</h3>
 <p>Let a charge distribution of density $\rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)$ be confined to a bounded region. Its <strong>quadrupole tensor</strong> is</p>
@@ -104,7 +104,7 @@ $$</p>
 <h3 id="why-the-moment-is-not-an-algebra-element">Why the Moment Is Not an Algebra Element</h3>
 <p>The biquaternion algebra, regarded as a module for the rotation group acting by rotor conjugation, decomposes as</p>
 <p>$$
-\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}) = D^{(0)} \oplus D^{(1)} ,
+\mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V} = D^{(0)} \oplus D^{(1)} ,
 $$</p>
 <p>the centre being the trivial representation and the vector part the vector representation. The reason is a dimension count: a four-dimensional complex space decomposes into representations of dimensions $1, 3, 5, \ldots$, and the only partitions of $4$ are $4 = 1 + 3$ and $4 = 1 + 1 + 1 + 1$. A $D^{(2)}$ alone would already require dimension five. More than that, the algebra cannot <em>reach</em> the quadrupole by multiplication either: the quaternion product of two vectors,</p>
 <p>$$
@@ -120,7 +120,7 @@ $$</p>
 \qquad
 r'_{\mathrm{ret},t} = r'_t - \frac{|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)|}{c} ,
 $$</p>
-<p>with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{M}_-$ the four-current and the subscript <em>ret</em> denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.</p>
+<p>with $\tilde{J} = ic\rho\,e_t + \vec J\in\mathbb{B}_{\Phi}$ the four-current and the subscript <em>ret</em> denoting evaluation at the retarded time. This is the standard retarded solution, transcribed into the material sector; no biquaternion input is needed to write it, and none is used.</p>
 <p>For a source with a single frequency $\omega$, the current is $\vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r'_t) = \vec J(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\exp(-i\omega r'_t)$, and in the far zone $r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\to\infty$ the retarded integral reduces to</p>
 <p>$$
 \vec A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu_0}{4\pi}\,\frac{\exp(i(kr-\omega r'_t))}{r}\,\vec F(\vec u) ,
@@ -212,7 +212,7 @@ $$</p>
 <p>$$
 \tilde{F}_2 = \tilde{U}^{\natural}\,\tilde{F}\,\tilde{U} ,
 $$</p>
-<p>with $\tilde{U}$ the boost biquaternion of $\mathbb{M}_+$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.</p>
+<p>with $\tilde{U}$ the boost biquaternion of $\mathbb{B}_{\Psi}$. The two multipole types are parity classes — an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$ — and a boost does not preserve parity, so it rotates the two types into one another. What it does leave alone is the chiral splitting: the two halves of the self-dual field strength are the two helicities, and they transform independently.</p>
 <p>The <strong>order</strong> $l$ is a different matter, and here the boost does not behave simply. The order is a label of the angular decomposition in a fixed frame; the rotation subgroup preserves it, but a boost does not. The reason is that a boost acts on the field in two ways at once — it mixes the field components <strong>and</strong> it transforms the argument, so the field is read on another time slice and at an aberrated direction — and a pure multipole of one frame therefore acquires other orders in another. The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $Ξ \propto (3z^2-r^2)/r^5$, and a boost along $z$ turns it into</p>
 <p>$$
 Ξ_2(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\big|_{r=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
@@ -267,7 +267,7 @@ $$</p>
 <h3 id="the-field-value-and-the-angular-content">The Field Value and the Angular Content</h3>
 <p>The resolution of the apparent paradox — that the quadrupole is not an algebra element yet its field is biquaternion-valued — is the separation of two spaces. At each point of space–time the field strength takes a value in the algebra,</p>
 <p>$$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathrm{Vect}(\mathbb{B}) ,
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = i\sqrt{\epsilon}\,\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) - \sqrt{\mu}\,\vec H(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) \in \mathbb{B}_{V} ,
 $$</p>
 <p>a pure-vector biquaternion, and the <strong>value</strong> is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The <strong>angular content</strong> of the field, however, is a property of the function $\tilde{F}(\cdot,r'_t)$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.</p>
 <p>The same separation explains the fate of the quadrupole under the algebra's own operations. The product of two field values, or the composition of two gradients, discards the symmetric traceless part — the quaternion product keeps only $D^{(0)}\oplus D^{(1)}$, and $\vec\nabla\vec\nabla = -\Delta\,e_t$ keeps only the trace — so no local algebraic operation performed on the field at a point can manufacture a quadrupole. What produces the quadrupole is the integration against the source, that is, the <em>retarded solution</em>, which is a non-local operation; and the angular degree two is produced by the source's angular structure, not by the multiplication of values.</p>
@@ -275,9 +275,9 @@ $$</p>
 <p>Two algebraic decompositions of $\tilde{F}$ organise the multipole series, and both are visible already at the quadrupole.</p>
 <p>The <strong>Hermitian decomposition</strong> separates the electric and magnetic halves,</p>
 <p>$$
-\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{M}_+ ,
+\tfrac{1}{2}\left(\tilde{F}+\tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\vec E\in\mathbb{B}_{\Psi} ,
 \qquad
-\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{M}_- .
+\tfrac{1}{2}\left(\tilde{F}-\tilde{F}^{*}\right) = -\sqrt{\mu}\,\vec H\in\mathbb{B}_{\Phi} .
 $$</p>
 <p>The electric and magnetic quadrupole <strong>fields</strong> are the two summands. For a static source the correspondence with the quadrupole types is exact — a static charge distribution gives a purely Hermitian field strength, so the electric quadrupole field is Hermitian, and a stationary current gives a purely anti-Hermitian one, so the magnetic quadrupole field is anti-Hermitian. A radiating quadrupole of either type has both a Hermitian and an anti-Hermitian part. A boost does not preserve this split: it mixes the electric and magnetic fields. The same boost mixes the multipole types, and that is a statement about parity rather than about the two fields: $E_2$ and $\mathsf{M}_2$ have opposite parity, and a boost does not preserve parity.</p>
 <p>The <strong>self-dual decomposition</strong> combines the two halves into the two chiralities,</p>
@@ -342,11 +342,11 @@ $$</p>
 <td>Central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$</td>
+<td>$\mathbb{B}_{C}, \mathbb{B}_{V}$</td>
 <td>Centre and complex vector part of $\mathbb{B}$</td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{A} = i\,a'_t\,e_t+\vec A$</td>
-<td>Four-potential, an element of $\mathbb{M}_-$</td>
+<td>Four-potential, an element of $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$</td>
@@ -426,7 +426,7 @@ $$</p>
 <td>Lorentz factor and speed ratio</td>
 </tr>
 <tr>
-<td>$\tilde{U}\in\mathbb{M}_+$</td>
+<td>$\tilde{U}\in\mathbb{B}_{\Psi}$</td>
 <td>Boost biquaternion, $\tilde{F}_2 = \tilde{U}^{\natural}\tilde{F}\tilde{U}$</td>
 </tr>
 <tr>

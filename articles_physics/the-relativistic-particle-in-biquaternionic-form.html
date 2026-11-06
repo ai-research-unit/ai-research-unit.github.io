@@ -72,17 +72,17 @@
 <h2 id="introduction">Introduction</h2>
 <p>The relativistic particle is the simplest physical object the biquaternion framework has to describe: a single point mass with no structure, moving on a worldline. Everything about it is kinematic. It has a position, a four-velocity, a four-momentum and a mass-shell relation; it has no spin, no internal coordinates, and no field of its own. This makes it the natural first object of the non-quantum theory, and it is the object against which every later construction is calibrated.</p>
 <p>Two facts from the algebra organize the whole account, and they are worth stating at the outset.</p>
-<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm</p>
+<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, and the Minkowski interval of a displacement is the biquaternion norm</p>
 <p>$$
 \langle d\tilde R_\varphi\rangle_{\natural} = d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural} = (ic\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -c^2d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 .
 $$</p>
-<p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Algebra and Element Conventions</em>, and no metric is introduced here beyond them.</p>
+<p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{B}_{\Phi}$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 Minkowski interval, tuple $(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Algebra and Element Conventions</em>, and no metric is introduced here beyond them.</p>
 <p><strong>The three causal types are the three signs of the biquaternion norm.</strong> A displacement is timelike, null or spacelike according to whether $\langle\cdot\rangle_{\natural}$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
 <p>The article is organized as follows. The next section fixes the worldline and the proper time from the biquaternion norm. The third introduces the four-velocity and the rapidity. The fourth gives the four-momentum and the mass shell. The fifth treats composition of velocities. The sixth derives the free action and its equation of motion. The seventh takes the non-relativistic limit. The closing sections separate what the algebra supplies from what is transcribed, collect the open questions, and record the summary, the notation and the external literature.</p>
 <h2 id="the-worldline-and-the-biquaternion-norm">The Worldline and the Biquaternion Norm</h2>
 <p>A relativistic particle is described by a curve in the material sector,</p>
 <p>$$
-\tilde R_\varphi(\lambda) : \lambda \longmapsto \tilde R_\varphi(\lambda) = i c r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{M}_- ,
+\tilde R_\varphi(\lambda) : \lambda \longmapsto \tilde R_\varphi(\lambda) = i c r'_{t}(\lambda)\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)(\lambda) \in \mathbb{B}_{\Phi} ,
 $$</p>
 <p>with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form</p>
 <p>$$
@@ -118,15 +118,15 @@ $$</p>
 \qquad
 \gamma = \frac{dr'_t}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$</p>
-<p>It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:</p>
+<p>It lies in $\mathbb{B}_{\Phi}$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:</p>
 <p>$$
 \langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\tilde{V}^{\natural}
 = \gamma^2\left[(ic)^2 + \vec v^2\right]
 = \gamma^2\left(-c^2 + \vec v^2\right)
 = -c^2\gamma^2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
 $$</p>
-<p>The four-velocity is therefore a <strong>unit timelike vector</strong>: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$ inside $\mathbb{M}_-$.</p>
-<p>The relation between the four-velocity and the ordinary velocity is worth reading as a statement about the algebra rather than about motion. The two real data $\gamma$ and $\vec v$ combine into one element of $\mathbb{M}_-$; the constraint $N = -c^2$ removes one real degree of freedom, leaving the three components of $\vec v$ as the independent data, exactly as it must. The time component is then not independent: it is fixed by the three-velocity through</p>
+<p>The four-velocity is therefore a <strong>unit timelike vector</strong>: its tip runs over the future sheet of the hyperboloid $\langle\tilde{V}\rangle_{\natural} = -c^2$ inside $\mathbb{B}_{\Phi}$.</p>
+<p>The relation between the four-velocity and the ordinary velocity is worth reading as a statement about the algebra rather than about motion. The two real data $\gamma$ and $\vec v$ combine into one element of $\mathbb{B}_{\Phi}$; the constraint $N = -c^2$ removes one real degree of freedom, leaving the three components of $\vec v$ as the independent data, exactly as it must. The time component is then not independent: it is fixed by the three-velocity through</p>
 <p>$$
 \mathrm{Sc}(\tilde{V}) = ic\,\gamma = ic\,\frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$</p>
@@ -160,7 +160,7 @@ E = \gamma mc^2,
 \qquad
 \vec p = \gamma m\vec v,
 $$</p>
-<p>so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{M}_-$. Its biquaternion norm is the <strong>mass-shell relation</strong>:</p>
+<p>so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{B}_{\Phi}$. Its biquaternion norm is the <strong>mass-shell relation</strong>:</p>
 <p>$$
 \boxed{\; \langle\tilde{P}\rangle_{\natural} = \tilde{P}\,\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
 \qquad\Longleftrightarrow\qquad
@@ -187,7 +187,7 @@ $$</p>
 \qquad
 \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t,
 $$</p>
-<p>with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a <strong>pure boost</strong> the rotor is Hermitian and lives in $\mathbb{M}_+$,</p>
+<p>with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a <strong>pure boost</strong> the rotor is Hermitian and lives in $\mathbb{B}_{\Psi}$,</p>
 <p>$$
 \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,
 \qquad
@@ -233,7 +233,7 @@ $$</p>
 <p>$$
 \frac{d\tilde{P}}{d\tau} = m\frac{d^2\tilde R_\varphi}{d\tau^2} = 0 ,
 $$</p>
-<p>the geodesic of flat $\mathbb{M}_-$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article <em>Noether's Theorem in Biquaternionic Form</em> derives the charge from the translation invariance of this action.</p>
+<p>the geodesic of flat $\mathbb{B}_{\Phi}$. In the algebra the action is exactly the length functional of the biquaternion norm, and the four-momentum is exactly its Noether charge under translations; the companion article <em>Noether's Theorem in Biquaternionic Form</em> derives the charge from the translation invariance of this action.</p>
 <p>The action has the two properties that make it the starting point of the theory. It is a Lorentz scalar, because $\langle d\tilde R_\varphi\rangle_{\natural}$ is preserved by rotor conjugation and $d\tau$ is the invariant parameter; and it is reparametrization invariant, so it depends on the worldline and not on the choice of $\lambda$. A particle with charge, or in an external field, adds the minimal-coupling term to this action, which is the content of <em>The Relativistic Particle in an External Field, in Biquaternionic Form</em>.</p>
 <h2 id="the-non-relativistic-limit">The Non-Relativistic Limit</h2>
 <p>Expanding the four-velocity and the energy in powers of $\vec v^2/c^2$ recovers the non-relativistic description as the leading term of the algebra. The spatial part of the four-velocity is</p>
@@ -264,16 +264,16 @@ $$</p>
 $$</p>
 <p>The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\vec v^2$ in $E$ and the momentum $\vec p = m\vec v$ are the two halves of the same invariant. The biquaternion norm does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> draws from the momentum-space side.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-transcribes">What the Algebra Supplies and What It Transcribes</h2>
-<p><strong>Supplied by the algebra.</strong> The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.</p>
+<p><strong>Supplied by the algebra.</strong> The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{B}_{\Phi}$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.</p>
 <p><strong>Transcribed from standard physics.</strong> The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $\mathrm{Lag} = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.</p>
-<p><strong>Interpretation.</strong> The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles <em>Introduction to the Biquaternion Universe</em> and <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.</p>
+<p><strong>Interpretation.</strong> The interpretation of $\mathbb{B}_{\Phi}$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles <em>Introduction to the Biquaternion Universe</em> and <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
 <p><strong>The action's normalization in a medium.</strong> The medium speed $c = 1/\sqrt{\epsilon\mu}$ enters the proper time and the action as the local scale. Is the free-particle action in a medium strictly the length functional of the local biquaternion norm, or does a dispersive medium require the particle's mass to be renormalized to the local $c$? The framework treats $c$ as local but does not fix the dynamical origin of the medium.</p>
 </li>
 <li>
-<p><strong>Accelerated worldlines and the cone.</strong> A uniformly accelerated worldline has a horizon — the Rindler horizon — which is a null surface. Does the zero-divisor cone of the next article acquire a distinguished role for accelerated observers, and can the horizon be written as a level set of a Killing biquaternion norm in $\mathbb{M}_-$?</p>
+<p><strong>Accelerated worldlines and the cone.</strong> A uniformly accelerated worldline has a horizon — the Rindler horizon — which is a null surface. Does the zero-divisor cone of the next article acquire a distinguished role for accelerated observers, and can the horizon be written as a level set of a Killing biquaternion norm in $\mathbb{B}_{\Phi}$?</p>
 </li>
 <li>
 <p><strong>The many-particle problem.</strong> The four-velocity and four-momentum here are those of a single particle. The proper-time normalization does not sum across particles with different Lorentz factors; the multi-particle conservation statement requires the coordinate-time form of the companion article <em>Exercise: Four-Momentum Conservation in a Collision</em>, and a clean biquaternion many-body kinematics is not developed here.</p>
@@ -282,7 +282,7 @@ $$</p>
 <p><strong>Rest mass as a norm.</strong> The identity $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?</p>
 </li>
 <li>
-<p><strong>Coupling to the informational sector.</strong> The particle is described entirely in $\mathbb{M}_-$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{M}_+$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article <em>The Informational Sector: States, Observables and Probability</em>, and it is outside the scope of a classical kinematic account.</p>
+<p><strong>Coupling to the informational sector.</strong> The particle is described entirely in $\mathbb{B}_{\Phi}$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{B}_{\Psi}$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article <em>The Informational Sector: States, Observables and Probability</em>, and it is outside the scope of a classical kinematic account.</p>
 </li>
 </ol>
 <p>The conventions of the construction are those of the following companion articles:</p>
@@ -296,7 +296,7 @@ $$</p>
 <li>Companion article <em>Exercise: Four-Momentum Conservation in a Collision</em>, for the conservation kinematics used above.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The relativistic particle is a timelike worldline in the material sector $\mathbb{M}_-$,</p>
+<p>The relativistic particle is a timelike worldline in the material sector $\mathbb{B}_{\Phi}$,</p>
 <p>$$
 \tilde R_\varphi(\tau) = i c r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,
 \qquad
@@ -343,11 +343,11 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$, central</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}, \mathbb{B}_{C}$</td>
 <td>Real-quaternion subspace; complex scalar line (centre)</td>
 </tr>
 <tr>
@@ -360,7 +360,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde R_\varphi = i c r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$</td>
-<td>Four-position, in $\mathbb{M}_-$</td>
+<td>Four-position, in $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$d\tau^2 = -\langle d\tilde R_\varphi\rangle_{\natural}/c^2$</td>
@@ -392,11 +392,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde U_{\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$</td>
-<td>Boost rotor, in $\mathbb{M}_+$</td>
+<td>Boost rotor, in $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
 <td>$\tilde R_\varphi\mapsto\tilde U_{\mathrm{lor}}\tilde R_\varphi\tilde U_{\mathrm{lor}}{}^{*}$</td>
-<td>Rotor conjugation on $\mathbb{M}_-$</td>
+<td>Rotor conjugation on $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$S = -mc\int\sqrt{-d\tilde R_\varphi\,d\tilde{R}_\varphi^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$</td>

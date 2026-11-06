@@ -73,11 +73,11 @@
 <p>One-dimensional scattering is the simplest problem in which a quantum system meets a potential it cannot be confined by: a wave comes in from the left, and part of it is reflected and part transmitted. It is also the problem in which the two quantities that every later scattering article of this subcategory uses — the <strong>flux</strong> and the <strong>scattering matrix</strong> — are constructed from scratch, in the clearest possible setting. This article treats the one-dimensional biquaternion Schrödinger equation for a piecewise-constant potential, obtains the reflection and transmission amplitudes for the step, the rectangular barrier, the delta potential, and the square well, and reads the results in the algebra.</p>
 <p>The biquaternion content is again a consequence of centrality. For an external potential $V(x)$ the Hamiltonian is</p>
 <p>$$
-H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{C}_{\mathbb{B}},
+H = \left[-\frac{\hbar^2}{2m}\partial^2/\partial R_x^2 + V(r_x)\right]e_t \in \mathbb{B}_{C},
 $$</p>
 <p>a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is <strong>no spin-flip channel</strong>, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.</p>
 <p>The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the Hermitian form, read through the trace. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde R_\psi)=2\,\mathrm{Sc}(\tilde R_\psi)$. The coordinate $x$ is the argument of the field, not an algebraic observable.</p>
 <h2 id="the-one-dimensional-biquaternion-schrodinger-equation">The One-Dimensional Biquaternion Schrödinger Equation</h2>
 <h3 id="the-equation-and-its-reduction">The equation and its reduction</h3>
 <p>For a particle of mass $m$ in a real potential $V(x)$, the stationary equation is</p>
@@ -122,7 +122,7 @@ $$</p>
 <p>$$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$</p>
-<p>The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ with $\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.</p>
+<p>The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ with $\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{B}_{\Phi}$; the density $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ is the trace of an element of $\mathbb{B}_{\Psi}$. As in the free case, the continuity equation pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
 <h2 id="the-scattering-problem">The Scattering Problem</h2>
 <h3 id="amplitudes-and-the-scattering-matrix">Amplitudes and the scattering matrix</h3>
 <p>Consider a potential that vanishes outside a finite interval, $V(x)\to0$ as $|x|\to\infty$. A stationary state at energy $E = \hbar^2k^2/2m > 0$ has the asymptotic form</p>
@@ -383,11 +383,11 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{C}$</td>
 <td>Centre; the Hamiltonian multiplies $e_t$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
 <td>Hermitian and anti-Hermitian sectors</td>
 </tr>
 <tr>

@@ -71,7 +71,7 @@
         <h1 id="exercise-duality-rotation-and-the-riemannsilberstein-vector"><strong>Exercise: Duality Rotation and the Riemann–Silberstein Vector</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is an exercise in the electromagnetism series. It applies <em>The Field-Strength Biquaternion and Its Invariants</em> and its parent <em>Maxwell's Equations in the Biquaternionic Formulation</em>: the field-strength biquaternion, the Riemann–Silberstein vector, the two invariants, the duality rotation, the energy density and the Poynting vector are inherited from those articles unchanged. The universal three — <em>Introduction to the Biquaternion Universe</em>, <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and <em>The Informational Sector: States, Observables and Probability</em> — supply the algebra and the fixed-point subspace names.</p>
-<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and the product rule $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{M}_-$ (material) and the Hermitian subspace $\mathbb{M}_+$ (informational), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex-scalar subspace $\mathbb{C}_{\mathbb{B}}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $\tilde\nabla^{\natural}$ and the d'Alembertian $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$; the field-strength biquaternion
+<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and the product rule $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$, $i^2 = -1$, commuting with the quaternion units; the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ (material) and the Hermitian subspace $\mathbb{B}_{\Psi}$ (informational), with $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the real-quaternion subspace $\mathbb{B}_{H}$ and the complex-scalar subspace $\mathbb{B}_{C}$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex) and ${}^{*} = ({}^{\natural})^{\,*}$; the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, its quaternion conjugate $\tilde\nabla^{\natural}$ and the d'Alembertian $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$; the field-strength biquaternion
 $$
 \tilde F = \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 \qquad \mathrm{Sc}(\tilde F)=0,
@@ -86,7 +86,7 @@ $$
 W = \tfrac12\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad \vec S = \vec E\times\vec H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde R_\psi$, $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the star is inert on $\mathbb{M}_+$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ is real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.</p>
+with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the Hermitian form, for a state $\tilde{Ϛ}$ and an observable $\tilde R_\psi$, $\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$ of the informational sector, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}\tilde R_\psi^{*})=2\langle\tilde{Ϛ},\tilde R_\psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde R_\psi^{*})$; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}\tilde R_\psi)$ is real, and non-negative when $\tilde R_\psi\ge0$. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.</p>
 <p><strong>What is to be shown.</strong> (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec N\mapsto \exp(-i\theta)\vec N$, hence $\tilde F\mapsto \exp(-i\theta)\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $\exp(-2i\theta)$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph pairs $\vec N$ with its complex conjugate $\vec N^*$ and not with the quaternion conjugate $\vec N^{\natural}$; the two carry opposite duality phases and must not be interchanged. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.</p>
 <p><strong>The result.</strong> Duality is the central phase
 $$
@@ -267,7 +267,7 @@ $$
 The duality rotation is thus an internal $\mathrm{U}(1)$ symmetry generated by the scalar imaginary $i$, not a spacetime symmetry. It cannot be absorbed into a Lorentz transformation: a Lorentz transformation preserves $\langle\tilde F\rangle_{\natural}$ exactly, whereas duality multiplies it by $\exp(-2i\theta)$. This is the biquaternion form of the statement that duality is not a Lorentz transformation.</p>
 <p><strong>Solution (c).</strong> With sources, the equation is $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$, where the electric four-current is
 $$
-\tilde J = ic\rho\,e_t + \vec J \in \mathbb M_- .
+\tilde J = ic\rho\,e_t + \vec J \in \mathbb{B}_{\Phi} .
 $$
 If $\tilde F\mapsto \exp(-i\theta)\tilde F$ is to solve the sourced equation, the source must transform as $\sqrt{\mu}\,\tilde J\mapsto \exp(-i\theta)\sqrt{\mu}\,\tilde J$, since
 $$
@@ -416,11 +416,11 @@ which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i
 <td>Scalar imaginary, $i^2 = -1$, central</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-, \mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$</td>
 <td>Anti-Hermitian (material) and Hermitian (informational) subspaces</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}, \mathbb{B}_{C}$</td>
 <td>Real-quaternion subspace; complex-scalar subspace (centre)</td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ which is exactly $\vec N\mapsto \exp(-i\theta)\vec N$ and, because $\tilde F = i
 </tr>
 <tr>
 <td>$\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$</td>
-<td>Hermitian form (in $\mathbb{M}_+$)</td>
+<td>Hermitian form (in $\mathbb{B}_{\Psi}$)</td>
 </tr>
 <tr>
 <td>$\tilde J = ic\rho\,e_t + \vec J$</td>

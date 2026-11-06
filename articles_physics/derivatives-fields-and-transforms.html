@@ -249,7 +249,7 @@ $$</p>
 $$</p>
 <p>Convolution in the coordinate becomes biquaternion multiplication in the frequency, and the non-commutativity of the algebra means that the order of the factors is part of the statement.</p>
 <h3 id="the-factorization">The Factorization</h3>
-<p>In a basis adapted to the root, the transform splits into four ordinary complex Fourier transforms, one for each coefficient. For a non-trivial root and a signal that takes values in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in its imaginary translate $i\mathbb{H}_{\mathbb{B}}$, two complex transforms suffice; for a general biquaternion signal, four are required. The factorization is the precise sense in which the biquaternion transform is ordinary complex analysis applied entrywise, dressed in the algebra; the genuinely biquaternionic content is the choice of root and the basis change it induces.</p>
+<p>In a basis adapted to the root, the transform splits into four ordinary complex Fourier transforms, one for each coefficient. For a non-trivial root and a signal that takes values in the real quaternion subspace $\mathbb{B}_{H}$ or in its imaginary translate $\mathbb{B}_{iH}$, two complex transforms suffice; for a general biquaternion signal, four are required. The factorization is the precise sense in which the biquaternion transform is ordinary complex analysis applied entrywise, dressed in the algebra; the genuinely biquaternionic content is the choice of root and the basis change it induces.</p>
 <h3 id="the-symbol">The Symbol</h3>
 <p>The transform diagonalizes the constant-coefficient differential operators. The derivative becomes multiplication by the root times the frequency,</p>
 <p>$$
@@ -263,7 +263,7 @@ $$</p>
 <h3 id="the-discrete-case">The Discrete Case</h3>
 <p>The discrete transform replaces the integral by a sum over $N$ samples, with kernel $W_N(n,\ell)=\exp(-2\pi\rho n\ell/N)$, and the inverse carries the factor $1/N$. The inversion, the factorization and the convolution theorem have the same shape. The sampling theorem and the periodization formula relate the discrete and continuous transforms; both are componentwise, because the kernel is the ordinary complex kernel in the direction $\rho$. The discrete article adds the $\mathrm Z$ transform, whose region of convergence is read coefficientwise.</p>
 <h3 id="the-vanishing-norm-and-the-measure">The Vanishing Norm and the Measure</h3>
-<p>Two features of the transform are genuinely biquaternionic. The first is the <strong>vanishing norm</strong>: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{H}_{\mathbb{B}}$ is sufficient, and on $\mathbb{M}_-$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.</p>
+<p>Two features of the transform are genuinely biquaternionic. The first is the <strong>vanishing norm</strong>: a function may take zero-divisor values on a set of positive measure, and the transform is then not guaranteed to be invertible. The transform is invertible on functions whose values have non-vanishing norm; restricting to $\mathbb{B}_{H}$ is sufficient, and on $\mathbb{B}_{\Phi}$ the transform is invertible exactly for values off the cone, but the precise condition for a general function that takes zero-divisor values on a set of positive measure is open.</p>
 <p>The second is the <strong>positivity of the transform of a measure</strong>. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_k$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity</p>
 <p>$$
 \sum_{k,l}A_kA_l\,G(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu,\qquad
@@ -311,7 +311,7 @@ $$</p>
 <p><strong>The positivity of the transform is the positivity of the Hermitian form, not of the norm.</strong> With the biquaternion norm the value at the central coefficient $i$ is $\langle i\rangle_{\natural}=-1$, for every root, so the norm is indefinite and negative on the centre. With the Hermitian form the quadratic form of the transform is positive definite exactly for the degenerate roots, and it fails for every genuinely complex root. Boundary: the repair is a definite form and not the norm of the product; the criterion needs central coefficients and a single root; the norm failure and the root failure are different statements.</p>
 </li>
 <li>
-<p><strong>The vanishing norm is where the transform ceases to be invertible.</strong> The transform is invertible on functions of non-vanishing norm; on functions that take zero-divisor values on a set of positive measure, invertibility is not guaranteed. The zero-divisor cone is therefore the locus where the Fourier description can lose information. Boundary: restricting to $\mathbb{H}_{\mathbb{B}}$ is sufficient, and on $\mathbb{M}_-$ the transform is invertible exactly for values off the cone; the precise condition for a general function that takes zero-divisor values on a set of positive measure is open, and the article does not claim the transform is non-invertible on every cone-valued function.</p>
+<p><strong>The vanishing norm is where the transform ceases to be invertible.</strong> The transform is invertible on functions of non-vanishing norm; on functions that take zero-divisor values on a set of positive measure, invertibility is not guaranteed. The zero-divisor cone is therefore the locus where the Fourier description can lose information. Boundary: restricting to $\mathbb{B}_{H}$ is sufficient, and on $\mathbb{B}_{\Phi}$ the transform is invertible exactly for values off the cone; the precise condition for a general function that takes zero-divisor values on a set of positive measure is open, and the article does not claim the transform is non-invertible on every cone-valued function.</p>
 </li>
 </ul>
 <h2 id="limits">Limits</h2>
@@ -324,7 +324,7 @@ $$</p>
 <li><strong>The transform is not a measurement.</strong> It is invertible where the transform pair holds, it loses no information there, and it does not make the informational sector the Fourier dual of the material one.</li>
 <li><strong>The imaginary directions are conjugate, not spatial.</strong> The article does not add dimensions and does not identify an imaginary direction with a direction of propagation.</li>
 <li><strong>The positivity repair is a form, not the norm.</strong> The Hermitian form is definite; the biquaternion norm is indefinite, and the two failures are distinct.</li>
-<li><strong>The vanishing-norm condition is open in general.</strong> The article states the $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$ restrictions and does not claim a necessary and sufficient criterion for a general function that takes zero-divisor values on a set of positive measure.</li>
+<li><strong>The vanishing-norm condition is open in general.</strong> The article states the $\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$ restrictions and does not claim a necessary and sufficient criterion for a general function that takes zero-divisor values on a set of positive measure.</li>
 <li><strong>The discrete case is cited, not developed.</strong> The interpretations are the continuous ones; the discrete transform has the same shape, and the $\mathrm Z$ transform is left to its mathematics article.</li>
 </ul>
 <h2 id="summary">Summary</h2>
@@ -392,7 +392,7 @@ $$</p>
 <td>Transform and inverse transform</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$</td>
+<td>$\mathbb{B}_{\Phi}$, $\tilde R_\varphi=i c r'_t\,e_t+\vec r$</td>
 <td>Material sector and material coordinate</td>
 </tr>
 <tr>
@@ -400,7 +400,7 @@ $$</p>
 <td>Frequencies conjugate to $Q_\mu$; physical frequency and wavevector</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$, $\mathbb{B}_{iH}$</td>
 <td>Real quaternion subspace and its imaginary translate</td>
 </tr>
 </tbody>

@@ -185,7 +185,7 @@ $$</p>
 <td>$q_t^2 - \sum_k q_k^2$ $(1,3)$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>$q'_t = 0$, $q_k = 0$</td>
 <td>$q_t^2 - \sum_k q'^2_k$ $(1,3)$</td>
 <td>$q_t^2 + \sum_k q'^2_k$ $(4,0)$</td>
@@ -193,7 +193,7 @@ $$</p>
 <td>$q_t^2 + \sum_k q'^2_k$ $(4,0)$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>$q_t = 0$, $q'_k = 0$</td>
 <td>$q'^2_t - \sum_k q_k^2$ $(1,3)$</td>
 <td>$q'^2_t + \sum_k q_k^2$ $(4,0)$</td>
@@ -202,7 +202,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, while the Krein form is $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on $\mathbb{M}_-$.</p>
+<p>On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, while the Krein form is $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$.</p>
 <h2 id="the-hermitian-and-krein-forms">The Hermitian and Krein Forms</h2>
 <h3 id="the-hermitian-form">The Hermitian Form</h3>
 <p><strong>The Hermitian form</strong> is the sesquilinear form of the corpus, with the star in the second slot:</p>
@@ -253,7 +253,7 @@ $$</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
 $$</p>
-<p>which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{M}_+$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{M}_-$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.</p>
+<p>which is real of signature $(4,4)$. It is the natural-sign partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.</p>
 <h3 id="the-four-forms-and-their-norms">The Four Forms and Their Norms</h3>
 <p>The four forms are one pattern, $\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\mathrm{Sc}(X_1^{\sigma_1}X_2^{\sigma_2})$, with each $\sigma$ the identity, ${}^{\natural}$ or ${}^{*}$:</p>
 <div class="table-scroll"><table>
@@ -482,8 +482,8 @@ $$</p>
 \langle\tilde{Q}\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2.
 $$</p>
 <p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a copy of the division algebra $\mathbb{H}$.</p>
-<h3 id="the-hermitian-subspace-math403">The Hermitian Subspace $\mathbb{M}_+$</h3>
-<p>An element of $\mathbb{M}_+$ has the form</p>
+<h3 id="the-hermitian-subspace-math403">The Hermitian Subspace $\mathbb{B}_{\Psi}$</h3>
+<p>An element of $\mathbb{B}_{\Psi}$ has the form</p>
 <p>$$
 \tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
 $$</p>
@@ -492,13 +492,13 @@ $$</p>
 \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = q_t^2 + (j q'_x)^2 + (j q'_y)^2 + (j q'_z)^2 = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2.
 $$</p>
 <p>Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$.</p>
-<p>So the split-biquaternion norm on $\mathbb{M}_+$ is</p>
+<p>So the split-biquaternion norm on $\mathbb{B}_{\Psi}$ is</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2,
 $$</p>
-<p>which is a <strong>real</strong>, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_+$ contains no zero divisors and every nonzero element of $\mathbb{M}_+$ is invertible.</p>
-<h3 id="the-anti-hermitian-subspace-math416">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
-<p>An element of $\mathbb{M}_-$ has the form</p>
+<p>which is a <strong>real</strong>, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Psi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Psi}$ is invertible.</p>
+<h3 id="the-anti-hermitian-subspace-math416">The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$</h3>
+<p>An element of $\mathbb{B}_{\Phi}$ has the form</p>
 <p>$$
 \tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad r_0, q_x, q_y, q_z \in \mathbb{R}.
 $$</p>
@@ -506,14 +506,14 @@ $$</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = (j r_0)^2 + q_x^2 + q_y^2 + q_z^2 = r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$</p>
-<p>which is a <strong>real</strong>, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{M}_-$ contains no zero divisors and every nonzero element of $\mathbb{M}_-$ is invertible.</p>
+<p>which is a <strong>real</strong>, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Phi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Phi}$ is invertible.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Of the four fixed-point subspaces:</p>
 <ul>
 <li>$\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ contains zero divisors (inherited from $\mathbb{C}_{\mathrm{spl}}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{C}_{\mathrm{spl}}$.</li>
 <li>$\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a division algebra: every nonzero element is invertible.</li>
-<li>$\mathbb{M}_+$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.</li>
-<li>$\mathbb{M}_-$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.</li>
+<li>$\mathbb{B}_{\Psi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.</li>
+<li>$\mathbb{B}_{\Phi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is the quaternionic norm of the layer, a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1\mu} Q_{2\mu}$.</p>
@@ -632,11 +632,11 @@ $$</p>
 <td>Quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace</td>
 </tr>
 </tbody>

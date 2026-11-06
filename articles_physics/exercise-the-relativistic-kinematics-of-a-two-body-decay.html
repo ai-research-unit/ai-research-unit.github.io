@@ -81,7 +81,7 @@ In the rest frame of the parent the total four-momentum is $\tilde{P}_A = iMc\,e
 <p>This exercise also serves to test the parent. The direction of the boost biquaternion that carries the COM frame to the laboratory — a point that repays care — is worked out explicitly in Problem 2.</p>
 <h2 id="problem-1-daughter-energies-and-momentum-in-the-com-frame">Problem 1: Daughter Energies and Momentum in the COM Frame</h2>
 <p><strong>Statement.</strong> For $A \to 1+2$ with the parent at rest, derive the daughter energies $E_1^*, E_2^*$, the common momentum magnitude $p^*$, the speeds $v_a^*$, and the released energy $Q$. Show that the decay is allowed exactly when $M \ge m_1 + m_2$.</p>
-<p><strong>Solution.</strong> The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^{\rm CM} = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
+<p><strong>Solution.</strong> The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^{\rm CM} = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{B}_{\Phi}$, into
 $$
 E_1^* + E_2^* = Mc^2, \qquad \vec p_1^* + \vec p_2^* = 0 .
 $$
@@ -152,7 +152,7 @@ $$
 = \frac{E}{Mc^2}e_t + i\frac{\vec P}{Mc}
 = \cosh\theta_{\mathrm{rpd}}\,e_t + i\sinh\theta_{\mathrm{rpd}}\,\vec u_V,
 $$
-with $\cosh\theta_{\mathrm{rpd}} = E/(Mc^2) = \Gamma$, $\sinh\theta_{\mathrm{rpd}} = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\theta_{\mathrm{rpd}} = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
+with $\cosh\theta_{\mathrm{rpd}} = E/(Mc^2) = \Gamma$, $\sinh\theta_{\mathrm{rpd}} = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\theta_{\mathrm{rpd}} = V/c$. This is an element of $\mathbb{B}_{\Psi}$ of unit norm, since $\cosh^2\theta_{\mathrm{rpd}} - \sinh^2\theta_{\mathrm{rpd}} = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
 $$
 \tilde U_{\rm CM} = \sqrt{-\frac{i}{Mc}\tilde{P}^{\natural}_A}
 = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_V,
@@ -222,7 +222,7 @@ and with $\langle\tilde{P}_i\rangle_{\natural} = -m_i^2c^2$ this gives
 $$
 M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle \tilde{P}_i, \tilde{P}_j\rangle .
 $$
-This is the parent's definition of the invariant mass of a pair, applied to a partial sum of three four-momenta. It requires only that $\mathbb{M}_-$ is a real vector space closed under addition and that $\langle\cdot\rangle_{\natural}$ be a quadratic form; no new primitive is needed. (The parent defines the pair mass for a two-body total; the same definition applied to a subset of a three-body system is the natural extension used in Dalitz-plot kinematics.)</p>
+This is the parent's definition of the invariant mass of a pair, applied to a partial sum of three four-momenta. It requires only that $\mathbb{B}_{\Phi}$ is a real vector space closed under addition and that $\langle\cdot\rangle_{\natural}$ be a quadratic form; no new primitive is needed. (The parent defines the pair mass for a two-body total; the same definition applied to a subset of a three-body system is the natural extension used in Dalitz-plot kinematics.)</p>
 <p><strong>Solution (b).</strong> In the parent rest frame the three momenta sum to zero, $\vec p_1^* + \vec p_2^* + \vec p_3^* = 0$, so with $\tilde{P}_{12} = \tilde{P}_1 + \tilde{P}_2$,
 $$
 N\!\left(\tilde{P}_{12}\right) = \left(i\frac{E_1^* + E_2^*}{c}\right)^2 + \left(\vec p_1^* + \vec p_2^*\right)^2
@@ -454,11 +454,11 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{B}_{\Phi}$</td>
 <td>Anti-Hermitian subspace (material sector): imaginary scalar, real vector</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (informational sector)</td>
 </tr>
 <tr>
@@ -479,7 +479,7 @@ because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ a
 </tr>
 <tr>
 <td>$\langle\tilde Q_2,\tilde{Q}_1\rangle = \mathrm{Sc}(\tilde Q_2\tilde{Q}_1^{\natural})$</td>
-<td>Invariant pairing on $\mathbb{M}_-$</td>
+<td>Invariant pairing on $\mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
 <td>$\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$</td>

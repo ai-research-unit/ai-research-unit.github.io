@@ -73,7 +73,7 @@
 <p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats <strong>successive measurements</strong>: what happens when a spin state is measured twice in a row, along different directions.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. It is then measured along a direction $\vec u_x$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\vec u_y$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the <strong>joint probability of both outcomes being spin-up</strong>?</p>
 <p>This exercise illustrates two structural features of quantum physics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement <strong>changes the state</strong>, so that successive measurements are not independent.</p>
@@ -120,7 +120,7 @@ p(+,+) = \cos^2(\theta_1/2) \cdot \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
 $$</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
 <h3 id="step-1-the-initial-state_1">Step 1: The initial state</h3>
-<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
+<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{B}_{\Psi}$, of the form</p>
 <p>$$
 \tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$</p>
@@ -194,7 +194,7 @@ $$</p>
 <p>$$
 p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
 $$</p>
-<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{M}_+$, whose trace reading is the final step at normalisation.</p>
+<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{B}_{\Psi}$, whose trace reading is the final step at normalisation.</p>
 <p><strong>2. Measurement is a projection onto an idempotent.</strong> After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a <strong>change of the idempotent</strong>: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.</p>
 <p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.</p>
 <p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
@@ -236,7 +236,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>These exercises illustrate three fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction), <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field), and <strong>sequential measurement</strong> (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.</p>
+<p>These exercises illustrate three fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction), <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field), and <strong>sequential measurement</strong> (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a third exercise in quantum physics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.</p>
@@ -256,7 +256,7 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
 <td>Hermitian subspace (states, observables)</td>
 </tr>
 <tr>

@@ -177,11 +177,11 @@ where the last form is for $N_f$ Dirac quark flavours; the coefficient is positi
 </ul>
 <h2 id="the-obstructions-to-the-octet">The Obstructions to the Octet</h2>
 <h3 id="the-dimension-of-the-compact-algebra">The Dimension of the Compact Algebra</h3>
-<p>The decisive obstruction is the dimension of the compact part. The algebra is eight-dimensional over the reals, but its elements do not all generate compact one-parameter subgroups. The anti-Hermitian part of $\mathbb{B}$ is the material sector $\mathbb{M}_-$ of real dimension four,
+<p>The decisive obstruction is the dimension of the compact part. The algebra is eight-dimensional over the reals, but its elements do not all generate compact one-parameter subgroups. The anti-Hermitian part of $\mathbb{B}$ is the material sector $\mathbb{B}_{\Phi}$ of real dimension four,
 $$
-\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
-\dim_\mathbb{R}\mathbb{M}_-=4 ,
+\dim_\mathbb{R}\mathbb{B}_{\Phi}=4 ,
 $$
 and the maximal compact subalgebra of $\mathbb{B}$ under the commutator is
 $$
@@ -199,7 +199,7 @@ and a compact Lie algebra of dimension eight cannot embed in a compact Lie algeb
 <p>The second obstruction is on the matter side, and it is stated precisely because it is sometimes overextended. A module over $\mathbb{B}\cong M_2(\mathbb{C})$ is a complex vector space on which the algebra acts linearly, and the algebra's simple module is $\mathbb{C}^2$; every module is a direct sum of copies of it, so every $\mathbb{B}$-module has <strong>even complex dimension</strong>. The colour triplet of the quarks is three-dimensional over $\mathbb{C}$, so it cannot be an intrinsic $\mathbb{B}$-module: the quarks cannot be coloured by the algebra. This is the module-side statement of the ceiling.</p>
 <p>The octet itself, however, has complex dimension eight, which is even, so the module obstruction does <strong>not</strong> exclude the adjoint representation by itself. This distinction matters: the gluon's failure is not that its representation has odd dimension but that the group whose adjoint it is cannot be realized. The module obstruction and the group obstruction are different, and only the first is a counting argument on the representation.</p>
 <h3 id="the-symmetric-invariant">The Symmetric Invariant</h3>
-<p>The third obstruction is the invariant tensor. The framework's products supply the antisymmetric structure constants and only those. The commutator of two generators is antisymmetric by construction, and its coefficients are the $f_{abc}$, read off in the compact factor as $f_{abc}=2\varepsilon_{abc}$ in the unnormalized basis $e_a$ in which the connection components are taken, equivalently $f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12e_a$, and $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ for the Hermitian generators $T_a=ie_a\in\mathbb{M}_+$; there is no symmetric object in a commutator. The anticommutator can in principle carry a symmetric part, but for the algebra's compact factor it does not: with $T_a=\tfrac12 e_a$ one has
+<p>The third obstruction is the invariant tensor. The framework's products supply the antisymmetric structure constants and only those. The commutator of two generators is antisymmetric by construction, and its coefficients are the $f_{abc}$, read off in the compact factor as $f_{abc}=2\varepsilon_{abc}$ in the unnormalized basis $e_a$ in which the connection components are taken, equivalently $f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12e_a$, and $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c$ for the Hermitian generators $T_a=ie_a\in\mathbb{B}_{\Psi}$; there is no symmetric object in a commutator. The anticommutator can in principle carry a symmetric part, but for the algebra's compact factor it does not: with $T_a=\tfrac12 e_a$ one has
 $$
 \{T_a,T_b\}=\tfrac14\big(e_ae_b+e_be_a\big)=-\tfrac12\delta_{ab}\,e_t=\mathrm{Tr}(T_aT_b)\,e_t ,
 $$
@@ -266,7 +266,7 @@ which is the electroweak factor of the Standard Model's gauge group $SU(3)\times
 </ul>
 <p>The interpretation of the strong-sector results is not this article's. Confinement — the area law of the Wilson loop, the loss of partonic information at long distances, the informational interpretation of the deconfinement transition — belongs to the informational subcategory, and the lattice regularization in which the area law is established belongs to the massive-vector and lattice part of the present subcategory. What this article establishes is the algebraic ceiling: the algebra carries the electroweak factor exactly, carries a single gluon's free kinematics, and does not carry the octet.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-imports">What the Algebra Supplies and What It Imports</h2>
-<p><strong>Supplied by the algebra, and recomputed here.</strong> The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathrm{U}(2)$ of real dimension four, computed from $\mathbb{B}=\mathrm{U}(2)\oplus i\mathrm{U}(2)$ and from $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, against $\dim_\mathbb{R}\mathrm{SU}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ and hence $d_{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.</p>
+<p><strong>Supplied by the algebra, and recomputed here.</strong> The free kinematics of a colour-fixed gluon, as a massless material vector with the self-dual/anti-self-dual helicity split and the field-strength invariants of the companion articles. The form of the non-abelian self-couplings, as the expansion of the commutator with structure constants $f_{abc}=2\varepsilon_{abc}$ of the compact factor. The obstruction: the maximal compact subalgebra of $\mathbb{B}$ is $\mathrm{U}(2)$ of real dimension four, computed from $\mathbb{B}=\mathrm{U}(2)\oplus i\mathrm{U}(2)$ and from $\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, against $\dim_\mathbb{R}\mathrm{SU}(3)=8$; the module dimension, every $\mathbb{B}$-module being a sum of copies of $\mathbb{C}^2$ and hence even-dimensional over $\mathbb{C}$; the vanishing of the symmetric invariant, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ and hence $d_{abc}=0$ for the compact factor; and the non-associativity of the octonions, which removes the Jacobi identity on which the curvature and the Bianchi identity depend.</p>
 <p><strong>Imported, and left visible.</strong> The group $SU(3)$ and its adjoint octet; the Gell-Mann matrices, the tensors $f_{abc}$ and $d_{abc}$ and their values; the colour triplet of the quarks; the QCD action, the self-couplings and the beta function; asymptotic freedom and confinement; the enlarged-carrier embedding $SU(3)\subset \mathrm{U}(3)\subset \mathrm{U}(4)$ of $M_4(\mathbb{C})$; and the explicit closed forms of the embedded $\mathrm{SU}(3)$ elements in biquaternion parameters, which write $\mathcal{A}_\mu$ and the finite gauge transformations out but do not put them in $\mathbb{B}$. The algebra supplies the ceiling and the free kinematics; the colour data are standard and external.</p>
 <p><strong>Not supplied.</strong> The colour group, the octet, the triplet, the symmetric invariant, the colour factors, the running of the strong coupling and the confinement dynamics. The framework reaches the electroweak factor of the Standard Model gauge group and not the colour factor. As everywhere in the series, no empirical content is added.</p>
 <h2 id="summary">Summary</h2>
@@ -281,7 +281,7 @@ self-coupling through $f_{abc}$, asymptotically free with $b_0=11-\frac23N_f$, a
 $$
 \dim_\mathbb{R}\mathbb{B}=8,
 \qquad
-\dim_\mathbb{R}\mathrm{U}(2)=4=\dim_\mathbb{R}\mathbb{M}_-,
+\dim_\mathbb{R}\mathrm{U}(2)=4=\dim_\mathbb{R}\mathbb{B}_{\Phi},
 \qquad
 \dim_\mathbb{R}\mathrm{SU}(3)=8,
 $$
@@ -316,11 +316,11 @@ of complex dimension $64$; in this algebra the commutator is a Lie bracket, the 
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$</td>
+<td>$\mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$</td>
 <td>Compact part of the algebra; real dimension 4</td>
 </tr>
 <tr>

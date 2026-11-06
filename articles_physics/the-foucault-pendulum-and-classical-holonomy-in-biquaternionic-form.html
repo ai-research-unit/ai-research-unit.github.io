@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>In 1851 Léon Foucault suspended a long pendulum in the Panthéon and watched its plane of oscillation turn. The pendulum is the simplest device that reveals the rotation of the Earth without any reference to the stars, and the angle through which its plane turns in a sidereal day is $2\pi\sin\theta_{\mathrm{foc}}$, where $\theta_{\mathrm{foc}}$ is the latitude of the laboratory. The rate is $\Omega\sin\theta_{\mathrm{foc}}$, with $\Omega$ the angular speed of the Earth.</p>
 <p>The effect is peculiar among the systems of this subcategory in that it is <strong>geometric</strong>. The precession angle does not depend on the mass of the bob, on the length of the wire, on the local value of $g$, or on the amplitude of the swing, as long as the pendulum is long and the amplitude small. It depends only on the path that the pivot is carried along by the rotating Earth — a circle of latitude — and on nothing else. It is a <strong>holonomy</strong>: the net rotation accumulated by a frame when it is carried around a closed loop, an angle fixed by the geometry of the loop rather than by the details of the transport.</p>
-<p>This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(r'_t)$ acting on it by the adjoint action. The <strong>Coriolis and centrifugal forces are commutators</strong> with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dr'_t]$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\theta_{\mathrm{foc}}$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.</p>
+<p>This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{B}_{\Phi}$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(r'_t)$ acting on it by the adjoint action. The <strong>Coriolis and centrifugal forces are commutators</strong> with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,d\vec\rho/dr'_t]$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\theta_{\mathrm{foc}}$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.</p>
 <p>The treatment is classical and non-quantum. The geometric phase of a quantum system, the Berry phase, and its biquaternion formulation belong to the companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>; the classical Hannay angle is a separate construction. What is used here is the elementary holonomy of a frame carried around a loop on a sphere, and the pendulum that realizes it. The particle is structureless — the bob carries no intrinsic angular momentum and no magnetic moment — so the effect is one of the spin-zero subcategory, and it is the purely geometric end of it.</p>
 <p>$$
 \vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
@@ -82,7 +82,7 @@ $$</p>
 <h3 id="the-rotor-of-the-frame">The Rotor of the Frame</h3>
 <p>Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family</p>
 <p>$$
-R(r'_t) = \cos\frac{\theta_{\mathrm{rat}}}{2} + \sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(r'_t) = R^{\natural}(r'_t) = R^{-1}(r'_t) ,
+R(r'_t) = \cos\frac{\theta_{\mathrm{rat}}}{2} + \sin\frac{\theta_{\mathrm{rat}}}{2}\,\vec u \in \mathbb{B}_{H}, \qquad R^{*}(r'_t) = R^{\natural}(r'_t) = R^{-1}(r'_t) ,
 $$</p>
 <p>so that after a time $r'_t$ the frame has turned by the angle $\theta_{\mathrm{rat}}$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components</p>
 <p>$$
@@ -112,7 +112,7 @@ $$</p>
 <p>$$
 \boxed{\;-m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right]\;},
 $$</p>
-<p>since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.</p>
+<p>since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{B}_{\Phi}$, and the adjoint action of its exponential produces the correction terms.</p>
 <h2 id="the-pendulum-in-the-rotating-frame">The Pendulum in the Rotating Frame</h2>
 <h3 id="the-geometry-of-the-local-frame">The Geometry of the Local Frame</h3>
 <p>Place the origin at the point of suspension, taken to be fixed in the rotating frame, and choose local axes with $\vec u_z$ along the local vertical (the outward radial direction), $\vec u_x$ pointing east and $\vec u_y$ pointing north. At latitude $\theta_{\mathrm{foc}}$ the Earth's angular velocity has components</p>
@@ -271,11 +271,11 @@ $$</p>
 <td>Central scalar imaginary, $i^2 = -e_t$</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
 <td>Material (anti-Hermitian), informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\mathbb{B}_{H}$</td>
 <td>Real-quaternion subalgebra (rotation rotors)</td>
 </tr>
 <tr>
