@@ -14,7 +14,7 @@ Four results are established.
 $$
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12\lambda_m^{-2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-\lambda_m^{-2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\lambda_m^{-2}$ and range $\lambda_m$.
+has the Euler–Lagrange equation $(\Box-\lambda_m^{-2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-\lambda_m^{-2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2\lambda_m^{-2}$ and range $\lambda_m$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\lambda_m)/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
 - **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\lambda_m)/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.

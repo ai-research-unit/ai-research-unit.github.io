@@ -93,7 +93,7 @@ $$
 \qquad
 \Box \to \frac{\omega^2}{c^2} - \vec k^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \lambda_m^{-2}$ is the shifted cone.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \lambda_m^{-2}$ is the shifted cone. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -\frac{i}{c}\partial/\partial r'_t$, the operator above is $\Box = \Delta - c^{-2}\partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$

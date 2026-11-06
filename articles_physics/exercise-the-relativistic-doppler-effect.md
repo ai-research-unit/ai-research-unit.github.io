@@ -20,8 +20,6 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 **Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_0 = (\omega_0/c)\vec {u_k}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
-
 ## Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant
 
 **Statement.** (a) Write $\tilde P$ and show that light has $\langle\tilde P\rangle_{\natural} = 0$. (b) Define the phase of the plane wave and show that it is invariant under a rotor conjugation. (c) Show that an observer of four-velocity $\tilde{V}$ measures the frequency
@@ -46,7 +44,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 \langle\tilde P\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural} = -\lambda_m^{-2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
+the four-wavevector of light is a **null** element of $\mathbb{B}_{\Phi}$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Material Sector: Four-Vectors, Interval and Lorentz Action* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural} = -\lambda_m^{-2}$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(iΞ)$ with
 $$

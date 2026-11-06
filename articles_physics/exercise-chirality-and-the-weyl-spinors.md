@@ -14,8 +14,6 @@ The following are assumed.
 
 Seven problems are worked below, one per section.
 
-Here $\lambda_m=\hbar/(mc)$, $\lambda_p=\hbar/p$ and $\lambda_E=\hbar c/E$ are the mass, momentum and energy lengths.
-
 ## Problem 1: The Two Values of the Chirality
 
 **One declared direction, and nothing else.** A frame is declared once, by a unit vector $\vec u$ of the algebra, real and of square $\vec u^2=-e_t$. It is the only datum the exercise adds to the algebra, it is a property of the frame, and no element of any problem carries it.
@@ -68,7 +66,7 @@ $$
 \left(\Box - m^2\right)\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \left(\Box - m^2\right)\tilde{Ξ}_{\mathrm{sp},L} = 0,
 $$
 
-and with $\hbar$ and $c$ restored the same statement is $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation.
+and with $\hbar$ and $c$ restored the same statement is $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, couples the two values: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 **Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_0x_0+i\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = c r'_{t}$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + \lambda_m^{-2}$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k = P/\hbar$, whose components are $(k_0,\vec k) = (\lambda_E^{-1},\vec p\,\lambda_p^{-1})$,
 
@@ -76,7 +74,7 @@ $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
 $$
 
-i.e. $E^2 = \vec p^2c^2 + m^2c^4$.
+i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $\lambda_p=\hbar/p$ and $\lambda_E=\hbar c/E$ are the momentum and energy lengths.
 
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 

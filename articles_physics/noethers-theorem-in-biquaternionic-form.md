@@ -79,7 +79,7 @@ $$
 \left(\Box - \lambda_m^{-2}\right)\tilde{Ξ} = 0,
 $$
 
-the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian.
+the overall sign of $\mathcal{L}$ being immaterial for the equation and fixed here by the positivity of the energy density. Both the action and the equation are those of the read list; $\mathcal{L}$ is exhibited only because a Noether current is read off a Lagrangian. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ### Symmetries of the Action and of the Equations
 

@@ -14,7 +14,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0,
 $$
 
-one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term.
+one equation per value of the chirality. Each part satisfies the Klein–Gordon equation $(\Box - \lambda_m^{-2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$, with $\hbar$ and $c$ restored. The algebra's real structure is the involution $\flat=-{}^{*}$ (*Algebra and Element Conventions*); it is a map of the algebra and not of a carrier, and it is not the mass term. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 A framework that reformulates known physics can be read in two very different ways. Read generously, every correct statement about the electron becomes a statement the framework "contains"; read carefully, most of those statements are properties of the Dirac equation that the framework merely transcribes, and the specific numbers attached to the electron must be inserted by hand. This article takes the second interpretation and asks a single question: **which properties of the electron are consequences of the biquaternion structure, which are consequences of the Dirac equation the framework contains, which are parameters inserted from outside, and which lie outside the framework altogether?**
 
@@ -23,8 +23,6 @@ The answer, stated plainly at the outset, is the following. The framework *force
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the electron" is a statement about a general structureless spin-$\tfrac{1}{2}$ field. The algebra does not single the electron out. Its mass, its charge, and the identity of its antiparticle are the inputs that make the general field into *this* field.
 
 **The form of the writing.** Every equation below is an equation between elements of the algebra, and every operator is written as the act it performs. A one-sided action is written by position, $a\tilde Q$ and $\tilde Qb$; a two-sided action is written out, $\tilde Q\mapsto a\tilde Qb$; and an operator is named only where the operator itself is the subject of the sentence. The one display of the older formulation is kept in a closing section, for the reader who wants the standard notation.
-
-Here $\lambda_m=\hbar/(mc)$, $\lambda_p=\hbar/p$ and $\lambda_E=\hbar c/E$ are the mass, momentum and energy lengths.
 
 ## The Electron as a Biquaternion Field
 
@@ -133,7 +131,7 @@ $$
 \langle\tilde P\,\lambda_p^{-1}\rangle_{\natural} = \tilde P\tilde P^{\natural}\lambda_p^{-2} = -\frac{\omega^2}{c^2} + \vec k^2 = -\lambda_m^{-2},
 $$
 
-with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$, and it is the form used by the companion solutions article and by the parent Dirac article.
+with $\vec k^2$ the Euclidean square $k_x^2+k_y^2+k_z^2$, which is what the norm of a vector part produces. This is $E^2 = \vec p^2c^2 + m_e^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$, and it is the form used by the companion solutions article and by the parent Dirac article. Here $\lambda_p=\hbar/p$ is the momentum length.
 
 **Antiparticle.** The two frequency branches are exchanged by charge conjugation, and in the quantized interpretation the negative-frequency branch describes the positron. The framework represents the electron and the positron on the same algebraic footing; which branch is called the electron is fixed by the charge convention of the previous section, not by the algebra.
 
@@ -206,7 +204,7 @@ $$
 \qquad \frac{\hbar}{2m_ec} = 193.1\ \text{fm},
 $$
 
-half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung.
+half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung. Here $\lambda_E=\hbar c/E$ is the energy length.
 
 The framework's temptation is to read the trembling as the observable face of the complexification — positive- and negative-energy branches being the two sectors. The companion article tests that identification and refutes it. The energy sign is the sign of the eigenvalue of a Hamiltonian whose terms multiply the field on the right, through the action $\tilde Q\mapsto i\tilde Q\vec e_x$, and no element of $\mathbb{B}$ does that by left multiplication, while the sectors are the two signs of the star. The two are also splits of different objects: a family of solutions and the values it takes. What survives is a relation of scale and phase: at rest the trembling frequency is exactly twice the rest-energy sector-rotation frequency $c\lambda_m^{-1}$, because the trembling phase is the square of the free-evolution phase. For the electron this means that its rest energy sets both the rate at which the sectors rotate into one another and the frequency of the trembling, without the trembling being an informational-sector effect.
 

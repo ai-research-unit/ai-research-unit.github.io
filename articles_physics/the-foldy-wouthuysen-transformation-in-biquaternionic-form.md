@@ -64,8 +64,6 @@ $$
 
 both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla\tilde\nabla^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
-
 ## The Dirac Hamiltonian and the Odd/Even Split
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion
@@ -330,7 +328,7 @@ $$
 \vec q-\vec X=\frac{\lambda_m}{2}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
 $$
 
-The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters.
+The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-i\hbar\vec pc^2/E$ on a function of the momentum alone, so no derivative of the field enters. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 

@@ -26,8 +26,6 @@ The article is organized as follows. First the gradient and the equation are sta
 
 The conventions are those of the companion articles: the algebra and its units are those of *Algebra and Element Conventions*, the coordinates, the metric and the frame those of *Frame and Metric Conventions*, and the units and the two writings of the temporal slot those of *Unit, Index and Notation Conventions*. No formula of theirs is repeated here. Two points are this article's own. The symbol $c$ is the speed of light **in the medium** and $c_0$ the vacuum speed, so that $c=c_0$ only in vacuum and a result quoted with $c$ is a result in the medium. A squared three-vector such as $\vec v^2$ or $\vec p^2$ is the Euclidean square, not the quaternion square, which is its negative; the symbol $v$ is kept for particle and frame velocities.
 
-Here $\lambda_m=\hbar/(mc)$ and $\lambda_E=\hbar c/E$ are the mass and energy lengths.
-
 ## The Gradient and the Equation
 
 ### The Units and the Gradient
@@ -47,7 +45,7 @@ $$
 \;}
 $$
 
-for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_\mu$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $\dfrac{1}{\lambda_m}$ carries the inverse length. In the units $\hbar=c=1$ used below, $\lambda_m$ is the inverse mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and it writes them as $\lambda_E^{-1}$ and $\dfrac{1}{\lambda_m}$.
+for a field of mass $m$. The gradient differentiates with respect to the coordinates $R_\mu$ and carries the unit of an inverse length, so the term it is equated to carries that unit as well: $m$ alone carries a mass, and $\dfrac{1}{\lambda_m}$ carries the inverse length. In the units $\hbar=c=1$ used below, $\lambda_m$ is the inverse mass. The parameter $\alpha$ of the harmonic amplitude equation is an inverse length in both entries, and it writes them as $\lambda_E^{-1}$ and $\dfrac{1}{\lambda_m}$. Here $\lambda_E=\hbar c/E$ is the energy length.
 
 The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts carry the two values of the subscript. Each line multiplies the part with one value by the gradient and pairs it with the part with the other value; the mass is the term that carries the value across, and it is the only such term in the equation.
 

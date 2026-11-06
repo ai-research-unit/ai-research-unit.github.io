@@ -44,8 +44,6 @@ and it acts on the right, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp
 
 **Coordinates and frames.** The displays are written in the $\mathbb{B}_{\Phi}$ frame, with $\partial/\partial x_\mu$ the derivative in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$. The algebra's own coordinate is $Q_t=i c r'_t$, and $\partial/\partial r'_t=i\partial/\partial R_t$; the reading of the gradient on that sector is the one of *Operator and Calculus Conventions*, §*The Gradient*, and $c=1$ in what follows until the dispersion relation restores it. A display that mixes the algebra's time derivative with the frame's spatial derivatives is not a frame, and none is used. The covariant divergence of the family is $\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$, written $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}$ below: four coordinate derivatives with the metric weights $\varepsilon_\mu$ and no unit attached, because the four components carry the four directions as an index and not as an algebra unit. It is a contraction of the family, not a further operator, and it is not the gradient: the gradient carries a unit on each term and an $i$ on the time one.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
-
 ## The Standard Rarita–Schwinger Field
 
 ### The field and its equation
@@ -263,7 +261,7 @@ $$
 \qquad\text{i.e.}\qquad
 \varpi^2 = c^2\vec k^2 + c^2\lambda_m^{-2},
 $$
-the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure.
+the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ## Comparison with Spin One and Spin One-Half
 

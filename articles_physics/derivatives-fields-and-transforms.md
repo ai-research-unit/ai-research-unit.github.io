@@ -8,8 +8,6 @@ The article states these results in brief and gives the physical interpretations
 
 The article is the analysis article of *Biquaternion Physical Interpretation of Mathematics*. It links the mathematics, not the physics companions. The interpretations it states are the ones the physics corpus has built, restated as interpretations of the mathematics, each with its boundary.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -167,7 +165,7 @@ $$
 \frac{\omega^2}{c^2}-\lvert\vec k\rvert^2,
 $$
 
-with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $\lambda_m^{-2}$ is the shell of mass $m$.
+with the constant and the sign fixed by the transform convention. It vanishes on the light cone $\omega^2=c^2\lvert\vec k\rvert^2$, so the transform of a solution of $\Box\tilde F=0$ is supported on the cone. Its level sets are the mass shells: the zero level is the massless shell, and the level $\lambda_m^{-2}$ is the shell of mass $m$. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 ### The Discrete Case
 

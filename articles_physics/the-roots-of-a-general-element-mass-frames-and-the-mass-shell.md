@@ -18,8 +18,6 @@ The article interprets five physical consequences. The mass shell is a propagato
 
 The article owns no theorem. It states the algebraic classification, with its source, and interprets it. The proofs, the case distinctions and the examples are in the mathematics article.
 
-Here $\lambda_p=\hbar/p$ is the momentum length.
-
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
@@ -205,7 +203,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $i\tilde P\,\lambda_p^{-1}$, so the mass shell above is the level set of $\langle\tilde P\rangle_{\natural}$.
+with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $i\tilde P\,\lambda_p^{-1}$, so the mass shell above is the level set of $\langle\tilde P\rangle_{\natural}$. Here $\lambda_p=\hbar/p$ is the momentum length.
 
 The **pair equation** is the same dynamics written once on the pair of fields,
 

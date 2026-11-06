@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field.
+The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.
 
@@ -19,8 +19,6 @@ The article is organised as follows. The next section fixes the classical field,
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the choice of bracket.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the contrasting first-class constraints and the gauge redundancy the algebra does not remove.
-
-Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -81,6 +79,8 @@ $$
 \qquad
 \langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
 $$
+
+Here $\lambda_p=\hbar/p$ is the momentum length.
 
 and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t$. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar)e_t$ into $\left(\Box-\lambda_m^{-2}\right)\tilde{Ξ}=0$ gives $\omega^2/c^2-\vec k^2=\lambda_m^{-2}$, which is the mass-shell condition
 

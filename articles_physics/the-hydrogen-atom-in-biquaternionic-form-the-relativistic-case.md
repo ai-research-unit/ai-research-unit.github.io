@@ -19,8 +19,6 @@ The article asks what the biquaternion framework contributes to this problem, an
 
 The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.
 
-Here $\lambda_m=\hbar/(mc)$ is the mass length.
-
 ## The Dirac–Coulomb Problem
 
 ### The potential in the framework's notation
@@ -349,7 +347,7 @@ $$
 \frac{1}{2mc}\,\vec p\,f_\mu\,\vec e_z .
 $$
 
-The condition is called **kinetic balance** when the small set is any set that can represent those images, and **restricted kinetic balance** when it is taken to be exactly the images (Stanton and Havriliak 1984; Dyall and Fægri 2007). In the framework's words it is the non-relativistic relation of the companion exercise read as a condition on the basis rather than as a limit.
+The condition is called **kinetic balance** when the small set is any set that can represent those images, and **restricted kinetic balance** when it is taken to be exactly the images (Stanton and Havriliak 1984; Dyall and Fægri 2007). In the framework's words it is the non-relativistic relation of the companion exercise read as a condition on the basis rather than as a limit. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The framework's contribution is one identification and no more. The operator is the momentum's vector part — the gradient's, up to the constant $i$ — so the balance is a statement in the algebra's own slots; that the operator is spin-type is the corpus's placement of the spin in those same vector slots, since $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$; and that it is first order in the gradient is why the small functions carry one derivative more than the large. Nothing else in the condition is algebraic: the basis sets, and the variational argument that makes the condition necessary, belong to the literature quoted.
 

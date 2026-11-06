@@ -16,8 +16,6 @@ which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. 
 
 **The seven problems** are: **(1)** the solutions at rest and at general momentum; **(2)** the covariant normalisation and the orthogonality; **(3)** the spin sums; **(4)** the massless limit and the locking of helicity to the member; **(5)** the two parts and the change of the reading; **(6)** the biquaternionic mass shell; **(7)** the helicity pieces and the piece determinant. Problems 1, 2, 4 and 6 use the action on elements, Problems 3 and 7 the wave element read with it, and Problem 5 the two parts themselves.
 
-Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
-
 ## The Gradient and the Two Parts
 
 **The gradient.** It is the element-valued operator of *Operator and Calculus Conventions*, §*The Gradient*, and it is written out here once, because the exercise uses no other derivative:
@@ -333,7 +331,7 @@ $$
 \boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2\;}.
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-\lambda_m^{-2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-\lambda_m^{-2}$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{B}_{\Phi}$ with the same quaternionic norm as the four-momentum. Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
 
 The two roots $\omega=\pm\sqrt{c^2\vec k^2+c^2\lambda_m^{-2}}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two helicity values within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $\lvert\vec p\rvert=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P\,\lambda_p^{-1}\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-\lambda_m^{-2}$ to the digits shown.
 

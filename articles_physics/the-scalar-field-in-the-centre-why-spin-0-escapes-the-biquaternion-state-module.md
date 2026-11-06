@@ -28,8 +28,6 @@ The conventions are those of the series: the algebra and the element glyphs of *
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the biquaternion norm.
 - Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pure states, and the trace formula.
 
-Here $\lambda_m=\hbar/(mc)$ and $\lambda_p=\hbar/p$ are the mass and momentum lengths.
-
 ## The Carrier of States and the Spin It Carries
 
 ### A State Is an Element
@@ -203,7 +201,7 @@ $$
 \left(\Box-\lambda_m^{-2}\right)\xi_{\mathrm{scl}}=0,
 $$
 
-with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on.
+with the biquaternion writing carrying no additional content. This is the honest verdict of the companion article, and the algebra of the present article says why it must be so: there is no axis in the field for any non-central algebraic structure to act on. Here $\lambda_m=\hbar/(mc)$ is the mass length.
 
 The plane-wave solutions exhibit the same point. With the four-position $\tilde R_\Phi$ and the four-wavevector $\tilde P\,\lambda_p^{-1}$ in the material sector, the phase is the real scalar $\mathrm{Sc}(\tilde P\tilde{R}_\Phi^{\natural})/\hbar=\vec k\cdot\vec r-\omega r'_t$, and the positive-frequency solution is
 
@@ -226,7 +224,7 @@ $$
 \omega^2=c^2\left(k_x^2+k_y^2+k_z^2\right)+c^2\lambda_m^{-2},
 $$
 
-which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
+which is the standard relativistic dispersion relation. It is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not the action of the algebra on a state. The conserved current $\tilde{J}$ lies in $\mathbb{B}_{\Phi}$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics. Here $\lambda_p=\hbar/p$ is the momentum length.
 
 One structural remark belongs with the equation. The first-order operators of the framework act on states and change their content. The scalar field has no such action. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of state operators without ever being a state; it is the trivial channel appearing in the composition, not an element of the carrier.
 

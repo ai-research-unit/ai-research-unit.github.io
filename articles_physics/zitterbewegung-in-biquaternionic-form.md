@@ -2,15 +2,13 @@
 
 ## Introduction
 
-The **Zitterbewegung** — the "trembling motion" — is the oscillatory part of the position of a Dirac particle. It was found by Schrödinger in 1930, in the course of solving the free Dirac equation. In the single-particle theory the velocity operator has eigenvalues $\pm c$, so a Dirac particle cannot have a sharp velocity; a wave packet assembled from positive- and negative-frequency plane waves has a mean position whose expectation value carries a rapid oscillation. Its angular frequency is $2c\lambda_E^{-1}$, which equals $2c\lambda_m^{-1}$ for a particle at rest, and its amplitude is of the order of half the reduced Compton wavelength $\lambda_m/2$.
+The **Zitterbewegung** — the "trembling motion" — is the oscillatory part of the position of a Dirac particle. It was found by Schrödinger in 1930, in the course of solving the free Dirac equation. In the single-particle theory the velocity operator has eigenvalues $\pm c$, so a Dirac particle cannot have a sharp velocity; a wave packet assembled from positive- and negative-frequency plane waves has a mean position whose expectation value carries a rapid oscillation. Its angular frequency is $2c\lambda_E^{-1}$, which equals $2c\lambda_m^{-1}$ for a particle at rest, and its amplitude is of the order of half the reduced Compton wavelength $\lambda_m/2$. Here $\lambda_m=\hbar/(mc)$ and $\lambda_E=\hbar c/E$ are the mass and energy lengths.
 
 The biquaternion framework of these articles splits $\mathbb{B}$ by Hermitian conjugation into two sectors, $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$, which multiplication by the central $i$ exchanges. The natural suggestion is that this is the same split the Zitterbewegung exploits: that the positive- and negative-energy parts of the field *are* its $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ parts, and that the trembling is therefore the observable face of the complexification.
 
 This article tests that suggestion rather than assuming it. The finding is mixed, and it is stated plainly from the outset. The oscillation can be derived and its frequency checked, and the mass does set the sector rotation: the rest-energy phase turns the two sectors into one another at $c\lambda_m^{-1}$; but the identification of the $\pm$-energy parts with the two sectors does **not** hold, because the energy sign is fixed by a map that multiplies the field on the right, while the sector is fixed by a conjugation of its value. The two splits have the same physical scale — the mass — and that is why the suggestion is tempting, but they are splits of different objects by different operations. Section *Does the Sector Split Do Real Work?* gives the argument, and Section *What Survives* separates the claims that hold from the one that does not.
 
 The article is organised as follows. The next section recalls the standard picture, writes the Heisenberg velocity identity, and records the three contested readings of the effect. The section after fixes the biquaternion setting and the plane-wave branches, following the parent. The following section recomputes the oscillation with the maps written out, reduces every factor of $i$ with $i^2=-1$, and checks the frequency and the amplitude on cases chosen independently of the rest case. A short section then isolates the genuinely algebraic content — the real structure as a diagonal action with opposite signs on the sectors, and the rest-energy phase as a rotation between them — and shows that the Zitterbewegung phase is the square of the free-evolution phase, so its frequency is twice the sector-rotation frequency. The central section tests the sector identification and reports its failure. The closing sections record the relation to the companion article on the electron, set the cell notation alongside the standard Dirac notation in one place and for comparison only, and summarise the statements that survive. Nothing here depends on the electron article; the connection is noted where relevant.
-
-Here $\lambda_m=\hbar/(mc)$, $\lambda_p=\hbar/p$ and $\lambda_E=\hbar c/E$ are the mass, momentum and energy lengths.
 
 ## The Standard Picture
 
@@ -269,6 +267,8 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\omega_Z = 2c\lambda_E^{-1}$ | Zitterbewegung angular frequency |
 | $\lambda_m/2$ | Zitterbewegung amplitude (order) |
 | $c(M)$, $\ell(M)$ | Coefficient matrix of an element in the sixteen products, and its rank (length) |
+
+Here $\lambda_p=\hbar/p$ is the momentum length.
 
 ## Further Reading
 
